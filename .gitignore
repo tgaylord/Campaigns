@@ -1,0 +1,15 @@
+# Game saves and zipped saves: too large; commit extracted data instead
+*.eu5
+*.eu4
+*.zip
+*.7z
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Build output
+node_modules/
+dist/
+.cache/
