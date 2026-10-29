@@ -75,5 +75,19 @@
   "nameChronicle": "Janawa",
   "nameArabic": "جنوة",
   "color": "#b3a06b"
+ },
+ {
+  "tag": "VAL",
+  "name": "Valencia",
+  "nameChronicle": "the Ṭāʾifa of Balansiyya",
+  "nameArabic": "طائفة بلنسية",
+  "color": "#e6c77e"
+ },
+ {
+  "tag": "MUC",
+  "name": "Murcia",
+  "nameChronicle": "the Ṭāʾifa of Mursiyya",
+  "nameArabic": "طائفة مرسية",
+  "color": "#b99248"
  }
 ]

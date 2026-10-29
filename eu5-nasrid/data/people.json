@@ -591,5 +591,41 @@
    "bold_fighter"
   ],
   "note": "A Zenata Berber, founder and head of the house of Raḥḥū; general from 1 September 1339 at the head of the Volunteers of the Faith. The game calls him 'a competent yet fickle figure'."
+ },
+ {
+  "id": "joan-doriola",
+  "name": "Joan d'Oriola",
+  "nameGame": "Joan",
+  "gameId": 27869,
+  "dynasty": "Oriola",
+  "born": "1315-05-21",
+  "roles": [
+   "ruler of the Ṭāʾifa of Balansiyya"
+  ],
+  "stats": {
+   "adm": 46,
+   "dip": 27,
+   "mil": 52
+  },
+  "traits": [],
+  "note": "Ruler of Valencia from its release as a ṭāʾifa on 23 August 1340: a Catalan, Sunni, of the house the game calls Orihuela. Name as the game gives it; the chronicle's form is not yet settled."
+ },
+ {
+  "id": "juan-manuel-enriquez",
+  "name": "Juan Manuel Enríquez",
+  "nameGame": "Juan Manuel",
+  "gameId": 27873,
+  "dynasty": "Enríquez",
+  "born": "1313-03-29",
+  "roles": [
+   "ruler of the Ṭāʾifa of Mursiyya"
+  ],
+  "stats": {
+   "adm": 78,
+   "dip": 14,
+   "mil": 83
+  },
+  "traits": [],
+  "note": "Ruler of Murcia from its release as a ṭāʾifa on 23 August 1340: a Castilian, Sunni. Name as the game gives it; the chronicle's form is not yet settled."
  }
 ]

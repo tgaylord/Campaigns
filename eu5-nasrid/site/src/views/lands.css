@@ -59,3 +59,8 @@
 .lands-page .num { font-variant-numeric: tabular-nums; }
 .lands-page .flag-new { white-space: nowrap; }
 @media (max-width: 75rem) { .lands-table .ctl { display: none; } }
+.area-card.subject { background: rgba(20, 29, 64, 0.35); }
+.lens-bar .legend .hatch-key { background: repeating-linear-gradient(45deg, #2a78d6 0 3px, #f4ead2 3px 5px); }
+.lands-table .area-row.subject th { color: var(--plaster); }
+.lands-table .area-row.subject .ar { font-family: var(--naskh); color: var(--gilt); margin-right: 0.6rem; }
+.lands-table .area-row .sub-note { margin-left: 0.8rem; font-family: var(--sans); font-size: 0.78rem; color: var(--mist); }

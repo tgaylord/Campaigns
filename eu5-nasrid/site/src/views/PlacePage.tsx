@@ -1,5 +1,5 @@
 import { Link, useParams } from "react-router-dom";
-import { placeById, places, mentionsOf, latest, snapshots, isHeld, hijri, western, year, yearFrac, nf, faithName, cultureName, rankName } from "../lib/data";
+import { placeById, places, mentionsOf, latest, snapshots, isHeld, hijri, western, year, yearFrac, nf, faithName, cultureName, rankName, countryByTag } from "../lib/data";
 import { latestLand, CULTURE_COLOR, FAITH_COLOR, provinceName, areaName } from "./Lands";
 import MiniChart from "../components/MiniChart";
 import { Mentions } from "./PersonPage";
@@ -13,6 +13,7 @@ export default function PlacePage() {
   const { story, events } = mentionsOf("places", p.id);
   const now = latest?.date ?? "9999-12-31";
   const ours = isHeld(p, now);
+  const viaNow = p.held.find((h) => h.from <= now && (h.to === null || h.to > now))?.via;
   const neighbours = places.filter((q) => q.id !== p.id && Math.hypot(q.x - p.x, q.y - p.y) < 70);
 
   // Held periods drawn against the span of the checkpoints.
@@ -25,7 +26,7 @@ export default function PlacePage() {
       <header className="record-head">
         {p.nameArabic && <div className="record-ar ar">{p.nameArabic}</div>}
         <h1>{p.name}</h1>
-        <p className="record-sub">{p.nameGame} in the game. {ours ? "In Naṣrid hands." : p.held.length ? "Once Naṣrid, now lost." : "Never yet in Naṣrid hands."}</p>
+        <p className="record-sub">{p.nameGame} in the game. {ours ? (viaNow ? `In Naṣrid hands, through ${countryByTag.get(viaNow)?.nameChronicle ?? viaNow}.` : "In Naṣrid hands.") : p.held.length ? "Once Naṣrid, now lost." : "Never yet in Naṣrid hands."}</p>
       </header>
 
       <MiniChart marks={[{ place: p, tone: "focus" as const }, ...neighbours.map((q) => ({ place: q, tone: isHeld(q, now) ? "ours" as const : "theirs" as const }))]} height={340} minSpan={150} />
@@ -35,12 +36,12 @@ export default function PlacePage() {
           <h2 className="section-title">In Naṣrid hands</h2>
           <div className="track" role="img" aria-label={p.held.length ? p.held.map((h) => `${year(h.from)} to ${h.to ? year(h.to) : "now"}`).join(", ") : "Never held"}>
             {p.held.map((h) => (
-              <span key={h.from} className="span" style={{ left: `${pct(h.from)}%`, width: `${pct(h.to ?? now) - pct(h.from)}%` }} />
+              <span key={h.from} className={`span ${h.via ? "via" : ""}`} style={{ left: `${pct(h.from)}%`, width: `${pct(h.to ?? now) - pct(h.from)}%` }} />
             ))}
           </div>
           <div className="track-ends ui"><span>{year(snapshots[0].date)}</span><span>{year(now)}</span></div>
           <ul className="held-list ui">
-            {p.held.map((h) => <li key={h.from}>From {hijri(h.from).text} AH ({western(h.from)}) to {h.to ? `${western(h.to)}` : "the present"}</li>)}
+            {p.held.map((h) => <li key={h.from}>From {hijri(h.from).text} AH ({western(h.from)}) to {h.to ? `${western(h.to)}` : "the present"}{h.via ? `, through ${countryByTag.get(h.via)?.nameChronicle ?? h.via}` : ", held directly"}</li>)}
             {p.held.length === 0 && <li>Never held.</li>}
           </ul>
         </section>

@@ -1,6 +1,6 @@
 import { Fragment, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import { snapshots, lands, places, western, hijri, nf, compact, faithName, cultureName, rankName } from "../lib/data";
+import { snapshots, lands, subjectLands, places, western, hijri, nf, compact, faithName, cultureName, rankName, countryByTag, personById } from "../lib/data";
 import type { Land } from "../lib/data";
 import { gameMap } from "../lib/map";
 import { PageHead, CheckpointSelect, StarRule } from "../components/bits";
@@ -69,7 +69,7 @@ function legend(lens: Lens, rows: Land[]) {
 
 /* ------------------------------------------------------------ the map */
 
-function LandsMap({ rows, lens }: { rows: Land[]; lens: Lens }) {
+function LandsMap({ rows, lens }: { rows: (Land & { holder?: string })[]; lens: Lens }) {
   const [hover, setHover] = useState<{ l: Land; x: number; y: number } | null>(null);
   const box = useMemo(() => {
     const cs = rows.map((r) => gameMap.locations[r.key]?.c).filter(Boolean) as [number, number][];
@@ -88,6 +88,11 @@ function LandsMap({ rows, lens }: { rows: Land[]; lens: Lens }) {
     <div className="lands-map">
       <svg viewBox={`${box.x0} ${box.y0} ${box.w} ${box.h}`} role="img" aria-label={`Granada's lands coloured by ${lens}; the table below has every value`}
         onMouseLeave={() => setHover(null)}>
+        <defs>
+          <pattern id="subj-hatch" width={6 * k} height={6 * k} patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <line x1={0} y1={0} x2={0} y2={6 * k} stroke="#f4ead2" strokeWidth={1.6 * k} strokeOpacity={0.75} />
+          </pattern>
+        </defs>
         <rect x={box.x0} y={box.y0} width={box.w} height={box.h} className="sea" />
         <path d={gameMap.coast} className="land" />
         {Object.entries(gameMap.locations).filter(([key, l]) => !ours.has(key) && l.kind === "land").map(([key, l]) => (
@@ -97,14 +102,18 @@ function LandsMap({ rows, lens }: { rows: Land[]; lens: Lens }) {
           const l = gameMap.locations[r.key];
           if (!l) return null;
           const nm = landName(r.key);
+          const subj = r.holder && r.holder !== "GRA";
           return (
-            <path key={r.key} d={l.d} className={`mine ${hover?.l.key === r.key ? "on" : ""}`} style={{ fill: fill(r, lens) }} strokeWidth={1.4 * k}
+            <g key={r.key}>
+            <path d={l.d} className={`mine ${hover?.l.key === r.key ? "on" : ""}`} style={{ fill: fill(r, lens) }} strokeWidth={1.4 * k}
               tabIndex={0} aria-label={`${nm.name}: ${lensValue(r, lens)}`}
               onMouseMove={(e) => {
                 const host = (e.currentTarget.ownerSVGElement as SVGSVGElement).getBoundingClientRect();
                 setHover({ l: r, x: e.clientX - host.left, y: e.clientY - host.top });
               }}
               onFocus={() => setHover({ l: r, x: 20, y: 20 })} onBlur={() => setHover(null)} />
+            {subj && <path d={l.d} fill="url(#subj-hatch)" pointerEvents="none" />}
+            </g>
           );
         })}
         <path d={gameMap.coast} className="coast" strokeWidth={1.3 * k} />
@@ -115,7 +124,7 @@ function LandsMap({ rows, lens }: { rows: Land[]; lens: Lens }) {
           <div className="lands-tip ui" style={{ left: hover.x + 14, top: hover.y + 14 }}>
             <div className="t">{nm.ar && <span className="ar">{nm.ar}</span>} {nm.name}</div>
             <div>{lensValue(hover.l, lens)}</div>
-            <div className="m">{provinceName(hover.l.province)}, {compact(hover.l.population)} people</div>
+            <div className="m">{provinceName(hover.l.province)}, {compact(hover.l.population)} people{(hover.l as Land & { holder?: string }).holder && (hover.l as Land & { holder?: string }).holder !== "GRA" ? `, held through ${countryByTag.get((hover.l as Land & { holder?: string }).holder!)?.nameChronicle}` : ""}</div>
           </div>
         );
       })()}
@@ -144,10 +153,15 @@ export default function Lands() {
   const [lens, setLens] = useState<Lens>("control");
   const snap = withLands[i];
   const rows = lands[snap.id] ?? [];
-  const prev = i > 0 ? new Set((lands[withLands[i - 1].id] ?? []).map((l) => l.key)) : null;
+  const subjects = Object.entries(subjectLands[snap.id] ?? {});
+  const allRows = [...rows.map((r) => ({ ...r, holder: "GRA" })), ...subjects.flatMap(([tag, s]) => s.lands.map((r) => ({ ...r, holder: tag })))];
+  const keysAt = (id: string) => [...(lands[id] ?? []), ...Object.values(subjectLands[id] ?? {}).flatMap((s) => s.lands)].map((l) => l.key);
+  const prev = i > 0 ? new Set(keysAt(withLands[i - 1].id)) : null;
 
   // Area → province → locations, largest first.
-  const groups = useMemo(() => {
+  const groups = useMemo(() => groupLands(rows), [rows]);
+  const subjectGroups = useMemo(() => subjects.map(([tag, s]) => ({ tag, s, provinces: groupLands(s.lands).flatMap((g) => g.provinces) })), [snap.id]);
+  function groupLands(rows: Land[]) {
     const areas = new Map<string, Map<string, Land[]>>();
     for (const r of rows) {
       const a = r.area ?? "?", p = r.province ?? "?";
@@ -162,7 +176,7 @@ export default function Lands() {
       provinces: [...m.entries()].map(([p, ls]) => ({ province: p, lands: ls.sort((x, y) => y.population - x.population) }))
         .sort((x, y) => pop(y.lands) - pop(x.lands)),
     })).sort((x, y) => pop(y.provinces.flatMap((p) => p.lands)) - pop(x.provinces.flatMap((p) => p.lands)));
-  }, [rows]);
+  }
 
   const sum = (ls: Land[], f: (l: Land) => number) => ls.reduce((s, l) => s + f(l), 0);
   const wmean = (ls: Land[], f: (l: Land) => number | null) => {
@@ -171,17 +185,55 @@ export default function Lands() {
   };
   const muslims = (ls: Land[]) => sum(ls, (l) => l.religions.sunni ?? 0);
 
+  const renderProvince = (p: { province: string; lands: Land[] }, holder: string) => (
+    <Fragment key={p.province}>
+      <tr className="prov-row">
+        <th scope="rowgroup" className="place">{provinceName(p.province)}</th>
+        <td />
+        <td className="num">{nf.format(sum(p.lands, (l) => l.population))}</td>
+        <td colSpan={2} className="sub">{p.lands.length} {p.lands.length === 1 ? "location" : "locations"}</td>
+        <td className="num">{pct(wmean(p.lands, (l) => l.control))}</td>
+        <td className="num">{wmean(p.lands, (l) => l.development)?.toFixed(1)}</td>
+        <td /><td className="num">{sum(p.lands, (l) => l.tax ?? 0).toFixed(1)}</td><td />
+      </tr>
+      {p.lands.map((l) => {
+        const nm = landName(l.key);
+        const isNew = prev && !prev.has(l.key);
+        return (
+          <tr key={l.key} className={isNew ? "new" : ""}>
+            <th scope="row" className="place">
+              {nm.id ? <Link to={`/places/${nm.id}`} data-kind="place" data-id={nm.id}>{nm.ar && <span className="ar">{nm.ar}</span>}{nm.name}</Link>
+                : <span>{nm.name}</span>}
+              {isNew && <span className="flag-new">New</span>}
+            </th>
+            <td>{rankName(l.rank)}</td>
+            <td className="num">{nf.format(l.population)}</td>
+            <td><Shares parts={l.cultures} total={l.population} colors={CULTURE_COLOR} name={cultureName} /></td>
+            <td><Shares parts={l.religions} total={l.population} colors={FAITH_COLOR} name={faithName} /></td>
+            <td className="num"><span className="ctl"><i style={{ width: pct(l.control) }} /></span>{pct(l.control)}</td>
+            <td className="num">{l.development?.toFixed(1)}</td>
+            <td>{holder === "GRA" ? (l.core ? "Core" : "Conquered") : (l.core ? `Core of ${countryByTag.get(holder)?.name ?? holder}` : "Not yet a core")}{l.controller && l.controller !== holder ? `, held by ${l.controller}` : ""}</td>
+            <td className="num" title={l.possibleTax != null ? `${l.tax?.toFixed(2)} of a possible ${l.possibleTax.toFixed(2)}` : ""}>
+              {l.tax?.toFixed(1)}<span className="of"> of {l.possibleTax?.toFixed(1)}</span>
+            </td>
+            <td>{l.goods ? l.goods.replace(/_/g, " ") : ""}</td>
+          </tr>
+        );
+      })}
+    </Fragment>
+  );
+
   return (
     <div className="page lands-page">
       <PageHead
         title="The Provinces"
         ar="الكور"
-        lede="Every town and district under the sultan, by the province (the kūra) it belongs to: who lives there, what they believe, how firmly the crown holds it, and how far it has become Granada's own."
+        lede="Every town and district under the sultan and his ṭāʾifas, by the province (the kūra) it belongs to: who lives there, what they believe, how firmly it is held, and how far it has become its ruler's own."
       />
 
       <div className="lands-date">
         <span className="ar">{hijri(snap.date).arabic}</span>
-        <span className="ui">{western(snap.date)}: {rows.length} locations, {nf.format(sum(rows, (l) => l.population))} people</span>
+        <span className="ui">{western(snap.date)}: {rows.length} locations, {nf.format(sum(rows, (l) => l.population))} people{subjects.length ? `; through ${subjects.length === 1 ? "a ṭāʾifa" : `${subjects.length} ṭāʾifas`}, ${allRows.length - rows.length} more locations and ${nf.format(sum(subjects.flatMap(([, s]) => s.lands), (l) => l.population))} more people` : ""}</span>
       </div>
       <CheckpointSelect value={i} onChange={setI} />
 
@@ -198,6 +250,18 @@ export default function Lands() {
             </div>
           );
         })}
+        {subjectGroups.map(({ tag, s }) => {
+          const ls = s.lands, pop = sum(ls, (l) => l.population);
+          const c = countryByTag.get(tag);
+          return (
+            <div key={tag} className="area-card subject" style={{ borderLeftColor: c?.color }}>
+              <span className="an">{c?.nameChronicle ?? tag}</span>
+              <span className="row">Ṭāʾifa since {western(s.since ?? snap.date)}{s.ruler ? <>, under <b>{personById.get(s.ruler)?.name}</b></> : null}</span>
+              <span className="row"><b>{ls.length}</b> {ls.length === 1 ? "location" : "locations"}, <b>{compact(pop)}</b> people, <b>{pct(muslims(ls) / (pop || 1))}</b> Muslim</span>
+              <span className="row">Control <b>{pct(wmean(ls, (l) => l.control))}</b>; a {faithName(s.religion ?? "")}, {cultureName(s.culture ?? "")} {s.rank ?? ""}</span>
+            </div>
+          );
+        })}
       </section>
 
       <div className="lens-bar ui" role="radiogroup" aria-label="Colour the map by">
@@ -205,10 +269,11 @@ export default function Lands() {
           <button key={l.id} type="button" role="radio" aria-checked={lens === l.id} className={lens === l.id ? "on" : ""} onClick={() => setLens(l.id)}>{l.label}</button>
         ))}
         <span className="legend">
-          {legend(lens, rows).map(([t, c]) => <span key={t}><i style={{ background: c }} />{t}</span>)}
+          {legend(lens, allRows).map(([t, c]) => <span key={t}><i style={{ background: c }} />{t}</span>)}
+          {subjects.length > 0 && <span><i className="hatch-key" />held through a ṭāʾifa</span>}
         </span>
       </div>
-      <LandsMap rows={rows} lens={lens} />
+      <LandsMap rows={allRows} lens={lens} />
 
       <StarRule />
       <h2 className="section-title">Province by province</h2>
@@ -228,45 +293,21 @@ export default function Lands() {
           {groups.map((g) => (
             <tbody key={g.area}>
               <tr className="area-row"><th colSpan={10} scope="colgroup">{areaName(g.area)}</th></tr>
-              {g.provinces.map((p) => (
-                <Fragment key={p.province}>
-                  <tr className="prov-row">
-                    <th scope="rowgroup" className="place">{provinceName(p.province)}</th>
-                    <td />
-                    <td className="num">{nf.format(sum(p.lands, (l) => l.population))}</td>
-                    <td colSpan={2} className="sub">{p.lands.length} {p.lands.length === 1 ? "location" : "locations"}</td>
-                    <td className="num">{pct(wmean(p.lands, (l) => l.control))}</td>
-                    <td className="num">{wmean(p.lands, (l) => l.development)?.toFixed(1)}</td>
-                    <td /><td className="num">{sum(p.lands, (l) => l.tax ?? 0).toFixed(1)}</td><td />
-                  </tr>
-                  {p.lands.map((l) => {
-                    const nm = landName(l.key);
-                    const isNew = prev && !prev.has(l.key);
-                    return (
-                      <tr key={l.key} className={isNew ? "new" : ""}>
-                        <th scope="row" className="place">
-                          {nm.id ? <Link to={`/places/${nm.id}`} data-kind="place" data-id={nm.id}>{nm.ar && <span className="ar">{nm.ar}</span>}{nm.name}</Link>
-                            : <span>{nm.name}</span>}
-                          {isNew && <span className="flag-new">New</span>}
-                        </th>
-                        <td>{rankName(l.rank)}</td>
-                        <td className="num">{nf.format(l.population)}</td>
-                        <td><Shares parts={l.cultures} total={l.population} colors={CULTURE_COLOR} name={cultureName} /></td>
-                        <td><Shares parts={l.religions} total={l.population} colors={FAITH_COLOR} name={faithName} /></td>
-                        <td className="num"><span className="ctl"><i style={{ width: pct(l.control) }} /></span>{pct(l.control)}</td>
-                        <td className="num">{l.development?.toFixed(1)}</td>
-                        <td>{l.core ? "Core" : "Conquered"}{l.controller && l.controller !== "GRA" ? `, held by ${l.controller}` : ""}</td>
-                        <td className="num" title={l.possibleTax != null ? `${l.tax?.toFixed(2)} of a possible ${l.possibleTax.toFixed(2)}` : ""}>
-                          {l.tax?.toFixed(1)}<span className="of"> of {l.possibleTax?.toFixed(1)}</span>
-                        </td>
-                        <td>{l.goods ? l.goods.replace(/_/g, " ") : ""}</td>
-                      </tr>
-                    );
-                  })}
-                </Fragment>
-              ))}
+              {g.provinces.map((p) => renderProvince(p, "GRA"))}
             </tbody>
           ))}
+          {subjectGroups.map(({ tag, s, provinces }) => {
+            const c = countryByTag.get(tag);
+            return (
+              <tbody key={tag} className="subject-body">
+                <tr className="area-row subject"><th colSpan={10} scope="colgroup">
+                  {c?.nameArabic && <span className="ar">{c.nameArabic}</span>}{c?.nameChronicle ?? tag}
+                  <span className="sub-note">a ṭāʾifa of Granada since {western(s.since ?? snap.date)}{s.ruler ? `, under ${personById.get(s.ruler)?.name}` : ""}</span>
+                </th></tr>
+                {provinces.map((p) => renderProvince(p, tag))}
+              </tbody>
+            );
+          })}
         </table>
       </div>
       <p className="muted ui foot">

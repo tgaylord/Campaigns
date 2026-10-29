@@ -30,3 +30,4 @@
 .standing-shares .n { color: var(--mist); font-variant-numeric: tabular-nums; }
 .standing-shares .bld { margin: 0; color: var(--mist); line-height: 1.6; }
 .standing-shares .bld::first-letter { text-transform: uppercase; }
+.held-track .track .span.via { background: repeating-linear-gradient(45deg, var(--gilt) 0 6px, var(--gilt-lo) 6px 10px); }

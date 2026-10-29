@@ -202,7 +202,16 @@ for m in re.finditer(r'\n(\d+)=\{\n(.*?)\n\}', rd('population'), re.S):
     POP[int(m.group(1))] = (f('type'), f('culture'), f('religion'), float(f('size') or 0))
 
 # ---------- locations: owner and population of every owned location ----------
-def land_facts(b):
+# Our subjects (dependencies where we are first), found early so their lands are kept too.
+_dip0 = rd('diplomacy_manager')
+SUBJ = {}  # country id -> {'type', 'since'}
+for mm in re.finditer(r'\n\tdependency=\{\n\t\tfirst=%d\n\t\tsecond=(\d+)(.*?)\n\t\}' % CID, _dip0, re.S):
+    st = re.search(r'object=(\w+)', mm.group(2)); sd = re.search(r'start_date=([\d.]+)', mm.group(2))
+    SUBJ[int(mm.group(1))] = {'type': st.group(1) if st else None, 'since': sd.group(1) if sd else None}
+del _dip0
+
+
+def land_facts(b, owner=None):
     """How settled and how governed an owned location is: control, development, prosperity,
     cultural and religious unity, its goods, tax (actual and possible, and by estate), whether it
     is our core, and how far its integration has gone."""
@@ -216,7 +225,7 @@ def land_facts(b):
     if im:
         for blk in re.findall(r'\{([^{}]*)\}', im.group(1)):
             d = dict(re.findall(r'(\w+)=([^\s]+)', blk))
-            if d.get('integration_owner') == str(CID):
+            if d.get('integration_owner') == str(owner or CID):
                 integ = {'stage': d.get('integration'), 'progress': round(float(d.get('integration_progress', 0)), 2)}
     rm = re.search(r'\n\t\t\traw_material=(\w+)', b)
     lc = re.search(r'\n\t\t\tlast_owner_change=([\d.]+)', b)
@@ -225,7 +234,8 @@ def land_facts(b):
         'cultural_unity': num('cultural_unity'), 'religious_unity': num('religious_unity'),
         'raw_material': rm.group(1) if rm else None, 'tax': num('tax'), 'possible_tax': num('possible_tax'),
         'estate_tax': {k.replace('_estate', ''): round(float(v), 4) for k, v in re.findall(r'(\w+)=(-?[\d.]+)', et.group(1))} if et else {},
-        'core': bool(cores and str(CID) in cores.group(1).split()),
+        'core': bool(cores and str(owner or CID) in cores.group(1).split()),
+        **({'core_of_overlord': bool(cores and str(CID) in cores.group(1).split())} if owner else {}),
         'integration': integ,
         'last_owner_change': lc.group(1) if lc else None,
     }
@@ -235,6 +245,7 @@ PROV = {m.group(1): m.group(2) for m in re.finditer(r'\n(\d+)=\{\n\tcapital=\d+\
 ltxt = rd('locations')
 starts = [(int(m.group(1)), m.start()) for m in re.finditer(r'\n\t\t(\d+)=\{', ltxt)]
 owners, mine = {}, {}
+sub_lands = {i: {} for i in SUBJ}
 cul_tot, rel_tot, typ_tot = collections.Counter(), collections.Counter(), collections.Counter()
 for k, (lid, s) in enumerate(starts):
     e = starts[k + 1][1] if k + 1 < len(starts) else len(ltxt)
@@ -244,17 +255,19 @@ for k, (lid, s) in enumerate(starts):
     if own is None: continue
     key = locname(lid)
     owners[key] = TAGS.get(int(own))
-    if int(own) != CID: continue
+    if int(own) != CID and int(own) not in SUBJ: continue
+    ours = int(own) == CID
     pm = re.search(r'\n\t\t\t\tpops=\{([^}]*)\}', b)
     pops = [int(x) for x in pm.group(1).split()] if pm else []
     lc, lr, lt, size = collections.Counter(), collections.Counter(), collections.Counter(), 0.0
     for p in pops:
         if p in POP:
             t, c, r, sz = POP[p]; size += sz
-            lc[keyof(CUL, c)] += sz; lr[keyof(REL, r, ('key', 'name'))] += sz; typ_tot[t] += sz; lt[t] += sz
-    cul_tot.update(lc); rel_tot.update(lr)
+            lc[keyof(CUL, c)] += sz; lr[keyof(REL, r, ('key', 'name'))] += sz; lt[t] += sz
+            if ours: typ_tot[t] += sz
+    if ours: cul_tot.update(lc); rel_tot.update(lr)
     nm = re.search(r'\n\t\t\tname="?([^"\n]*)"?\n', b)
-    mine[key] = {'id': lid, 'province': PROV.get(f('province') or '', f('province')), 'rank': f('rank'),
+    (mine if ours else sub_lands[int(own)])[key] = {'id': lid, 'province': PROV.get(f('province') or '', f('province')), 'rank': f('rank'),
                  'controller': TAGS.get(int(f('controller'))) if f('controller') else None,
                  'culture': keyof(CUL, f('culture')), 'religion': keyof(REL, f('religion'), ('key', 'name')),
                  'custom_name': nm.group(1) if nm else None,
@@ -262,17 +275,20 @@ for k, (lid, s) in enumerate(starts):
                  'cultures_k': {c: round(v, 3) for c, v in lc.most_common()},
                  'religions_k': {r: round(v, 3) for r, v in lr.most_common()},
                  'pop_types_k': {x: round(v, 3) for x, v in lt.most_common()},
-                 **land_facts(b)}
+                 **land_facts(b, None if ours else int(own))}
 del ltxt
 # Buildings in owned locations: type and level.
-_own_ids = {v['id']: k for k, v in mine.items()}
-for v in mine.values(): v['buildings'] = []
+_own_ids = {v['id']: (mine, k) for k, v in mine.items()}
+for sid, ls in sub_lands.items(): _own_ids.update({v['id']: (ls, k) for k, v in ls.items()})
+for v in [*mine.values(), *(v for ls in sub_lands.values() for v in ls.values())]: v['buildings'] = []
 for m in re.finditer(r'\n\d+=\{\n(.*?)\n\}', rd('building_manager'), re.S):
     bb = '\n' + m.group(1)
     lo = re.search(r'\n\tlocation=(\d+)', bb)
     if not lo or int(lo.group(1)) not in _own_ids: continue
     ty = re.search(r'\n\ttype=(\w+)', bb); lv = re.search(r'\n\tlevel=(\d+)', bb)
-    if ty: mine[_own_ids[int(lo.group(1))]]['buildings'].append({'type': ty.group(1), 'level': int(lv.group(1)) if lv else 1})
+    if ty:
+        tgt, kk = _own_ids[int(lo.group(1))]
+        tgt[kk]['buildings'].append({'type': ty.group(1), 'level': int(lv.group(1)) if lv else 1})
 R['realm'] = {
     'locations': mine,
     'population_k': round(sum(cul_tot.values()), 3),
@@ -281,6 +297,31 @@ R['realm'] = {
     'pop_types_k': {t: round(v, 3) for t, v in typ_tot.most_common()},
 }
 R['world_owners'] = owners  # location key -> owner tag, for the map
+
+
+def _sum(ls, field):
+    c = collections.Counter()
+    for v in ls.values(): c.update(v[field])
+    return {k: round(x, 3) for k, x in c.most_common()}
+
+
+R['subjects'] = {}
+for sid, info in SUBJ.items():
+    sraw = CDB.raw(sid); s = CDB.get(sid) or []
+    sg = get(s, 'government') or []
+    ls = sub_lands[sid]
+    R['subjects'][TAGS.get(sid)] = {
+        'id': sid, 'type': info['type'], 'since': info['since'],
+        'rank': (re.findall(r'country_rank=(\w+)', sraw) or [None])[-1] if sraw else None,
+        'primary_culture': keyof(CUL, get(s, 'primary_culture')),
+        'primary_religion': keyof(REL, get(s, 'primary_religion'), ('key', 'name')),
+        'capital': locname(get(s, 'capital')) if get(s, 'capital') else None,
+        'ruler': person(get(sg, 'ruler')) if get(sg, 'ruler') else None,
+        'heir': person(get(sg, 'heir')) if get(sg, 'heir') else None,
+        'locations': ls,
+        'population_k': round(sum(v['population_k'] for v in ls.values()), 3),
+        'cultures_k': _sum(ls, 'cultures_k'), 'religions_k': _sum(ls, 'religions_k'),
+    }
 
 # ---------- diplomacy: dependencies touching us ----------
 dip = rd('diplomacy_manager')

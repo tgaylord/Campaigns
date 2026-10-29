@@ -14,7 +14,7 @@ export type Place = {
   id: string; name: string; nameArabic?: string; nameGame: string; kind: string;
   /** the game's location key; x, y are its centre on the game map (map pixels) */
   key: string; x: number; y: number; major: boolean;
-  held: { from: string; to: string | null }[]; note?: string; sample: boolean;
+  held: { from: string; to: string | null; via?: string }[]; note?: string; sample: boolean;
 };
 export type Country = { tag: string; name: string; nameChronicle: string; nameArabic?: string; color: string };
 export type War = {
@@ -81,17 +81,23 @@ export type Land = {
   cultures: Record<string, number>; religions: Record<string, number>; popTypes: Record<string, number>;
   control: number | null; development: number | null; prosperity: number | null; culturalUnity: number | null; religiousUnity: number | null;
   goods: string | null; tax: number | null; possibleTax: number | null; estateTax: Record<string, number>;
-  core: boolean | null; integration: { stage: string; progress: number } | null; since: string | null; buildings: { type: string; level: number }[];
+  core: boolean | null; coreOfOverlord?: boolean | null; integration: { stage: string; progress: number } | null; since: string | null; buildings: { type: string; level: number }[];
 };
 
 type Campaign = {
   generated: string; sample: boolean; eras: Era[]; people: Person[]; places: Place[]; wars: War[];
   countries: Country[]; snapshots: Snapshot[]; events: CampaignEvent[]; story: StoryEntry[]; catalog: Catalog;
   lands: Record<string, Land[]>;
+  /** checkpoint id → subject tag → the subject and its lands */
+  subjectLands: Record<string, Record<string, SubjectLands>>;
+};
+export type SubjectLands = {
+  type: string; since: string | null; rank: string | null; culture: string | null; religion: string | null;
+  capital: string | null; ruler: string | null; population: number; lands: Land[];
 };
 
 export const campaign = raw as unknown as Campaign;
-export const { eras, people, places, wars, countries, snapshots, events, story, catalog, lands } = campaign;
+export const { eras, people, places, wars, countries, snapshots, events, story, catalog, lands, subjectLands } = campaign;
 
 /** Names of peoples and faiths as the rest of the site writes them. */
 const FAITH: Record<string, string> = { judaism: "Jewish", nyama_religion: "Nyama" };

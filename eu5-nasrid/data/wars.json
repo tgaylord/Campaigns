@@ -40,7 +40,7 @@
   "name": "The Moroccan War on Castile",
   "gameName": "Moroccan-Castilian War",
   "start": "1337-07-31",
-  "end": null,
+  "end": "1340-10-28",
   "goal": "Reclaim Andalusia",
   "allies": [
    "Morocco",
@@ -55,7 +55,7 @@
   "enemies": [
    "Castile"
   ],
-  "outcome": null,
+  "outcome": "Defeat for Morocco: it gives up all its land on the Iberian side of the Strait (Trent's account).",
   "involvement": "potential",
   "sides": {
    "attackers": [

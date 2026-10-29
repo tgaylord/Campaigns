@@ -356,5 +356,156 @@
    "balance": -4.87
   },
   "source": "Trent's account and his budget screenshot of 14 August 1340"
+ },
+ {
+  "id": "1340-08-14-cb-independence",
+  "date": "1340-08-14",
+  "type": "diplomacy",
+  "title": "Granada begins building a casus belli for a war of independence against Castile",
+  "data": {
+   "casus_belli": "cb_independence_war",
+   "target": "Castile"
+  },
+  "source": "checkpoint 1340-08-28 (treaty record started 14 August 1340)"
+ },
+ {
+  "id": "1340-08-23-taifas",
+  "date": "1340-08-23",
+  "type": "territory_change",
+  "title": "Valencia and Murcia released as ṭāʾifas of Granada: Balansiyya takes the twelve Valencian towns, Mursiyya takes Jumalla; both are Sunni and of duchy rank",
+  "people": [
+   "yusuf-i",
+   "joan-doriola",
+   "juan-manuel-enriquez"
+  ],
+  "places": [
+   "balansiyya",
+   "shatiba",
+   "daniya",
+   "al-qant",
+   "alsh",
+   "qandiya",
+   "al-quy",
+   "ayura",
+   "bunyul",
+   "shalba",
+   "liriya",
+   "uryula",
+   "jumalla"
+  ],
+  "data": {
+   "subjects": {
+    "VAL": {
+     "type": "taifa",
+     "rank": "duchy",
+     "culture": "catalan",
+     "religion": "sunni",
+     "locations": 12,
+     "population": 189682
+    },
+    "MUC": {
+     "type": "taifa",
+     "rank": "duchy",
+     "culture": "castilian",
+     "religion": "sunni",
+     "locations": 1,
+     "population": 8283
+    }
+   },
+   "locations": {
+    "from": 31,
+    "to": 18
+   },
+   "population": {
+    "from": 683503,
+    "to": 490028
+   }
+  },
+  "source": "Trent's account; checkpoint 1340-08-28"
+ },
+ {
+  "id": "1340-08-23-taifa-rulers",
+  "date": "1340-08-23",
+  "type": "appointment",
+  "title": "Joan d'Oriola rules the Ṭāʾifa of Balansiyya, Juan Manuel Enríquez the Ṭāʾifa of Mursiyya; Granada sets out to improve relations with both",
+  "people": [
+   "joan-doriola",
+   "juan-manuel-enriquez"
+  ],
+  "places": [
+   "balansiyya",
+   "jumalla"
+  ],
+  "data": {},
+  "source": "checkpoint 1340-08-28"
+ },
+ {
+  "id": "1340-08-23-strengthen-government",
+  "date": "1340-08-23",
+  "type": "appointment",
+  "title": "Yūsuf ibn Muḥammad turns from promoting Granadan sovereignty to strengthening the government",
+  "people": [
+   "yusuf-ibn-muhammad"
+  ],
+  "data": {
+   "from": "gra_promote_sovereignty",
+   "to": "strengthen_government"
+  },
+  "source": "checkpoint 1340-08-28"
+ },
+ {
+  "id": "1340-08-28-loans-repaid",
+  "date": "1340-08-28",
+  "type": "estate_change",
+  "title": "Five of the estate loans repaid: the debt falls from 964 to 843 ducats, and the treasury to 107",
+  "data": {
+   "debt": {
+    "from": 963.9,
+    "to": 843.2
+   },
+   "loans": {
+    "from": 38,
+    "to": 33
+   },
+   "treasury": 106.7
+  },
+  "source": "checkpoint 1340-08-28"
+ },
+ {
+  "id": "1340-08-28-demobilised",
+  "date": "1340-08-28",
+  "type": "player_note",
+  "title": "The host stands down: three regiments remain of nineteen",
+  "data": {
+   "regiments": {
+    "from": 19,
+    "to": 3
+   }
+  },
+  "source": "checkpoint 1340-08-28"
+ },
+ {
+  "id": "1340-10-28-moroccan-peace",
+  "date": "1340-10-28",
+  "type": "peace",
+  "wars": [
+   "moroccan-castilian-war"
+  ],
+  "title": "Morocco loses its war on Castile and gives up all its land on the Iberian side of the Strait",
+  "places": [
+   "runda",
+   "marballa",
+   "al-jazira-al-khadra",
+   "jabal-tariq"
+  ],
+  "data": {
+   "held_by_morocco_at_last_checkpoint": [
+    "ronda",
+    "marbella",
+    "algeciras",
+    "gibraltar"
+   ]
+  },
+  "source": "Trent's account (the towns are those Morocco held at the 28 August 1340 checkpoint)"
  }
 ]

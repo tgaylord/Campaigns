@@ -180,6 +180,7 @@ Every person, place and war name anywhere on the site shows a card on hover and 
 - Vassals are normally **counties or duchies**, unless a specific exception is agreed.
   - The Script Runner rank fix (`set_country_rank = country_rank:rank_duchy`) was a workaround for the custom-nation mod in Rome. It's a tool to reach for if that bug shows up again, not a standing rule.
 - Claude only ever works on copies of saves, never the originals.
+- **Ṭāʾifas and other subjects:** released through the game's own tags where one exists (VAL, MUC), so they keep their historical claims. The extractor records each subject's type, rank, state culture and faith, ruler and lands; the Provinces hall shows them beside Granada's own, and the Atlas draws them in a lighter gold. A place a subject holds stays "in Naṣrid hands" in the gazetteer, with `via` naming the subject. Subject loyalty isn't in the save (the game computes it), so it comes from Trent's screenshots when it matters.
 
 ---
 

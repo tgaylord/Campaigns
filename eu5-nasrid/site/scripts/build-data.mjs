@@ -76,7 +76,8 @@ const Place = z.object({
   key: z.string(),
   /** named on the wider views of the Atlas; the rest only close up */
   major: z.boolean().default(false),
-  held: z.array(z.object({ from: isoDate, to: isoDate.nullable() })).default([]),
+  /** periods in Naṣrid hands; `via` is the tag of the subject that held it for Granada */
+  held: z.array(z.object({ from: isoDate, to: isoDate.nullable(), via: z.string().optional() })).default([]),
   note: z.string().optional(),
   sample,
 });
@@ -356,14 +357,26 @@ for (const p of places) {
 // Granada's own locations stood: people, faith, control, integration, tax and buildings.
 const owners = {};
 const lands = {};
-const iso = (d) => (d ? d.split(".").map((x, i) => (i ? x.padStart(2, "0") : x)).join("-") : null);
+const subjectLands = {};
+function iso(d) { return d ? d.split(".").map((x, i) => (i ? x.padStart(2, "0") : x)).join("-") : null; }
 for (const s of snapshots) {
   if (!s.source?.extracted) continue;
   const ex = await readJson(path.join(CAMPAIGN, "data", s.source.extracted));
   const o = {};
   for (const [k, tag] of Object.entries(ex.world_owners ?? {})) if (inFrame.has(k)) o[k] = tag;
   owners[s.id] = o;
-  lands[s.id] = Object.entries(ex.realm?.locations ?? {}).map(([key, v]) => ({
+  lands[s.id] = landRows(ex.realm?.locations);
+  // Granada's subjects at this checkpoint, with their own lands.
+  subjectLands[s.id] = Object.fromEntries(Object.entries(ex.subjects ?? {}).map(([tag, sj]) => [tag, {
+    type: sj.type, since: iso(sj.since), rank: sj.rank?.replace(/^rank_/, "") ?? null,
+    culture: sj.primary_culture ?? null, religion: sj.primary_religion ?? null, capital: sj.capital ?? null,
+    ruler: sj.ruler ? (people.find((p) => p.gameId === sj.ruler.id)?.id ?? null) : null,
+    population: Math.round((sj.population_k ?? 0) * 1000),
+    lands: landRows(sj.locations),
+  }]));
+}
+function landRows(locs) {
+  return Object.entries(locs ?? {}).map(([key, v]) => ({
     key, province: v.province ?? null, area: gameMap.locations[key]?.area ?? null, region: gameMap.locations[key]?.region ?? null,
     rank: v.rank ?? null, controller: v.controller ?? null, culture: v.culture ?? null, religion: v.religion ?? null,
     population: Math.round((v.population_k ?? 0) * 1000),
@@ -373,7 +386,7 @@ for (const s of snapshots) {
     control: v.control ?? null, development: v.development ?? null, prosperity: v.prosperity ?? null,
     culturalUnity: v.cultural_unity ?? null, religiousUnity: v.religious_unity ?? null,
     goods: v.raw_material ?? null, tax: v.tax ?? null, possibleTax: v.possible_tax ?? null, estateTax: v.estate_tax ?? {},
-    core: v.core ?? null, integration: v.integration ?? null, since: iso(v.last_owner_change), buildings: v.buildings ?? [],
+    core: v.core ?? null, coreOfOverlord: v.core_of_overlord ?? null, integration: v.integration ?? null, since: iso(v.last_owner_change), buildings: v.buildings ?? [],
   }));
 }
 const names = await readJson(path.join(CAMPAIGN, "data/map/names.json"));
@@ -400,7 +413,7 @@ const mapOut = { frame: gameMap.frame, coast: gameMap.coast, locations: drawn, o
 /* ------------------------------------------------------------ write */
 
 await mkdir(OUT, { recursive: true });
-const campaign = { generated: new Date().toISOString(), sample: sampleData, eras, people, places, wars, countries, snapshots, events, story, catalog, lands };
+const campaign = { generated: new Date().toISOString(), sample: sampleData, eras, people, places, wars, countries, snapshots, events, story, catalog, lands, subjectLands };
 await writeFile(path.join(OUT, "campaign.json"), JSON.stringify(campaign));
 await writeFile(path.join(OUT, "map.json"), JSON.stringify(mapOut));
 console.log(

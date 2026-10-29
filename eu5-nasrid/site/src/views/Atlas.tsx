@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import {
   snapshots, places, personById, events, countries, countryByTag, countryName, isHeld, hijri, western,
-  compact, nf, signed, EVENT_LABEL,
+  compact, nf, signed, EVENT_LABEL, subjectLands,
 } from "../lib/data";
 import type { Place } from "../lib/data";
 import { gameMap, keyLabel, MAP_W, MAP_H } from "../lib/map";
@@ -61,6 +61,8 @@ export default function Atlas() {
   const prevDate = i > 0 ? snapshots[i - 1].date : "0000-00-00";
   const lately = events.filter((e) => e.date > prevDate && e.date <= snap.date).slice(-5).reverse();
   const held = places.filter((p) => isHeld(p, snap.date));
+  // Granada's ṭāʾifas and other subjects at this checkpoint: drawn as Granada's, in a lighter wash.
+  const subj = new Set(Object.keys(subjectLands[snap.id] ?? {}));
   // Close up, every place is named; further out, only the major ones (and every place of ours stays marked).
   const shown = view === "realm" ? places : places.filter((p) => p.major || isHeld(p, snap.date));
   const labels = useMemo(() => placeLabels(shown, snap.date, snap.capital, k, view === "realm" ? () => true : (p) => p.major),
@@ -123,7 +125,7 @@ export default function Atlas() {
           {/* every realm washed in its colour; ours in gold */}
           {Object.entries(realms).map(([tag, r]) => {
             const c = countryByTag.get(tag);
-            return <path key={tag} d={r.d} className={`realm ${tag === OURS ? "ours" : ""}`} style={{ fill: c?.color ?? "#cbb894" }} />;
+            return <path key={tag} d={r.d} className={`realm ${tag === OURS ? "ours" : subj.has(tag) ? "ours subj" : ""}`} style={{ fill: subj.has(tag) ? countryByTag.get(OURS)?.color : c?.color ?? "#cbb894" }} />;
           })}
           {/* mountains and wastes in hachures, lakes in water */}
           {locs.filter(([, l]) => l.kind === "waste").map(([key, l]) => <path key={key} d={l.d} className="waste" />)}
@@ -136,7 +138,7 @@ export default function Atlas() {
           {locs.filter(([, l]) => l.kind === "land").map(([key, l]) => {
             const tag = owners[key];
             return (
-              <path key={key} d={l.d} className={tag === OURS ? "loc ours" : "loc"}>
+              <path key={key} d={l.d} className={tag === OURS ? "loc ours" : subj.has(tag) ? "loc ours subj" : "loc"}>
                 <title>{`${keyLabel(key)}${tag ? `, ${countryName(tag)}` : ""}`}</title>
               </path>
             );
@@ -144,7 +146,7 @@ export default function Atlas() {
         </g>
 
         {Object.entries(realms).map(([tag, r]) => tag !== OURS && countryByTag.has(tag) && (
-          <path key={tag} d={r.d} className="realm-edge" style={{ stroke: countryByTag.get(tag)!.color }} />
+          <path key={tag} d={r.d} className={`realm-edge ${subj.has(tag) ? "subj" : ""}`} style={{ stroke: subj.has(tag) ? undefined : countryByTag.get(tag)!.color }} />
         ))}
         <path d={gameMap.coast} className="coast" />
         {realms[OURS] && <path d={realms[OURS].d} className="realm-edge ours" filter="url(#glow)" />}

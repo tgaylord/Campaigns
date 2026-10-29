@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import type { Place } from "../lib/data";
-import { countryByTag, latest } from "../lib/data";
+import { countryByTag, latest, subjectLands } from "../lib/data";
 import { gameMap } from "../lib/map";
 import "./minichart.css";
 
@@ -24,6 +24,7 @@ export default function MiniChart({ marks, height = 360, minSpan = 160, checkpoi
   const vw = span, vh = span * (H / W);
   const k = vw / W; // one screen pixel, in map units
   const realms = gameMap.realms[checkpoint ?? latest?.id ?? ""] ?? {};
+  const subj = new Set(Object.keys(subjectLands[checkpoint ?? latest?.id ?? ""] ?? {}));
   const labels = layout(pts, k);
 
   return (
@@ -37,11 +38,11 @@ export default function MiniChart({ marks, height = 360, minSpan = 160, checkpoi
       <path d={gameMap.coast} className="land" />
       <g clipPath="url(#mc-land)">
         {Object.entries(realms).map(([tag, r]) => (
-          <path key={tag} d={r.d} className={`realm ${tag === "GRA" ? "ours" : ""}`} style={{ fill: countryByTag.get(tag)?.color ?? "#cbb894" }} />
+          <path key={tag} d={r.d} className={`realm ${tag === "GRA" ? "ours" : subj.has(tag) ? "ours subj" : ""}`} style={{ fill: subj.has(tag) ? countryByTag.get("GRA")?.color : countryByTag.get(tag)?.color ?? "#cbb894" }} />
         ))}
       </g>
       {Object.entries(realms).map(([tag, r]) => countryByTag.has(tag) && (
-        <path key={tag} d={r.d} className="realm-edge" style={{ stroke: tag === "GRA" ? "#8e6b26" : countryByTag.get(tag)!.color }} strokeWidth={1.1 * k} />
+        <path key={tag} d={r.d} className={`realm-edge ${subj.has(tag) ? "subj" : ""}`} style={{ stroke: tag === "GRA" || subj.has(tag) ? "#8e6b26" : countryByTag.get(tag)!.color }} strokeWidth={1.1 * k} strokeDasharray={subj.has(tag) ? `${4 * k} ${3 * k}` : undefined} />
       ))}
       <path d={gameMap.coast} className="coast" strokeWidth={1.2 * k} />
       {labels.map(({ m, pos }) => {

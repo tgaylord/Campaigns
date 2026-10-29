@@ -18,3 +18,4 @@
 
 /* On a phone the chart keeps a readable height and crops its sides instead of shrinking its names. */
 @media (max-width: 40rem) { .minichart { height: 300px; } }
+.minichart .realm.ours.subj { fill-opacity: 0.3; }
