@@ -417,5 +417,39 @@
   "kind": "location",
   "nameArabic": "قرمونة",
   "note": "Carmona, east of Ishbīliyya."
+ },
+ {
+  "id": "jumalla",
+  "key": "jumilla",
+  "name": "Jumalla",
+  "nameGame": "Jmalla",
+  "kind": "location",
+  "nameArabic": "جملة",
+  "note": "Jumilla, in the Murcia area on the road to Aragon."
+ },
+ {
+  "id": "muntil",
+  "key": "montiel",
+  "name": "Munṭīl",
+  "nameGame": "Mnṭil",
+  "kind": "location",
+  "note": "Montiel, in La Mancha. The game gives no Arabic script."
+ },
+ {
+  "id": "al-karash",
+  "key": "alcaraz",
+  "name": "al-Karash",
+  "nameGame": "Alcaraz",
+  "kind": "location",
+  "note": "Alcaraz, in La Mancha. The game's Arabic name is Al-Karaš, with no script."
+ },
+ {
+  "id": "uryula",
+  "key": "orihuela",
+  "name": "Uryūla",
+  "nameGame": "Oriola",
+  "kind": "location",
+  "nameArabic": "أوريولة",
+  "note": "Orihuela, in the Valencia area, held by Aragon. The game shows Aragon's form, Oriola; its Arabic name is 'Uryūla."
  }
 ]

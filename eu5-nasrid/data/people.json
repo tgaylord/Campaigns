@@ -569,5 +569,27 @@
   ],
   "note": "A Sephardi Jew of Gharnāṭa, of the burghers' estate; at court by 16 November 1337. Died on 14 May 1339: he fell down the stairs.",
   "died": "1339-05-14"
+ },
+ {
+  "id": "yahya-rahhu",
+  "name": "Yaḥyā Raḥḥū",
+  "nameArabic": "يحيى بن رحو",
+  "nameGame": "Yahya Raḥḥu",
+  "gameId": 26562,
+  "dynasty": "Raḥḥū",
+  "born": "1300-04-03",
+  "roles": [
+   "general",
+   "commander of the Ghuzāt"
+  ],
+  "stats": {
+   "adm": 60,
+   "dip": 72,
+   "mil": 78
+  },
+  "traits": [
+   "bold_fighter"
+  ],
+  "note": "A Zenata Berber, founder and head of the house of Raḥḥū; general from 1 September 1339 at the head of the Volunteers of the Faith. The game calls him 'a competent yet fickle figure'."
  }
 ]

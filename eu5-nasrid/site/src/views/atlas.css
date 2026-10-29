@@ -126,3 +126,8 @@
   .atlas .drawer { position: relative; inset: auto; width: auto; margin: 1rem; }
   .atlas-foot { position: relative; }
 }
+
+.drawer .armies { list-style: none; margin: 0 0 0.75rem; padding: 0; }
+.drawer .armies li { display: grid; grid-template-columns: 4.2rem 1fr; gap: 0.5rem; padding: 0.35rem 0; border-bottom: 1px solid rgba(158,167,199,0.15); font-size: 0.85rem; }
+.drawer .armies .men { color: var(--gilt); }
+.drawer .armies small { display: block; color: var(--mist); font-size: 0.75rem; margin-top: 0.15rem; }

@@ -137,6 +137,8 @@ const Snapshot = z.object({
   estates: z.array(Estate).default([]),
   economy: z.object({ treasury: z.number(), income: z.number(), expenses: z.number(), debt: z.number().default(0) }).nullable().default(null),
   military: z.object({ manpower: z.number(), maxManpower: z.number(), regiments: z.number(), ships: z.number() }).nullable().default(null),
+  /** armies in the field at the checkpoint (not yet named armies; see SYSTEMS.md §5) */
+  armies: z.array(z.object({ leader: id.optional(), men: z.number(), at: z.string(), makeup: z.string(), source: z.string().default("save") })).default([]),
   stability: z.number().optional(),
   prestige: z.number().optional(),
   source: z.object({ save: z.string(), gameVersion: z.string(), extracted: z.string() }).optional(),
@@ -277,6 +279,7 @@ for (const s of snapshots) {
   ["ruler", "heir", "regent"].forEach((k) => ref("person", s[k], `${w}.${k}`));
   ref("place", s.capital, `${w}.capital`);
   s.cabinet.forEach((c) => ref("person", c.person, `${w}.cabinet`));
+  s.armies.forEach((a) => ref("person", a.leader, `${w}.armies`));
   s.wars.forEach((x) => ref("war", x, `${w}.wars`));
 }
 for (const e of events) {

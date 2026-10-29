@@ -37,6 +37,7 @@ export type Snapshot = {
   economy: { treasury: number; income: number; expenses: number; debt: number } | null;
   military: { manpower: number; maxManpower: number; regiments: number; ships: number } | null;
   stability?: number; prestige?: number;
+  armies: { leader?: string; men: number; at: string; makeup: string; source: string }[];
   source?: { save: string; gameVersion: string; extracted: string };
   government?: {
     type: string; heirSelection: string; laws: { slot: string; law: string }[]; reforms: string[]; privileges: string[];

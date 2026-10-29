@@ -124,6 +124,23 @@
   "source": "checkpoint 1339-05-24"
  },
  {
+  "id": "1339-05-24-aragon-allies",
+  "date": "1339-05-24",
+  "type": "war_joined",
+  "title": "Majorca, Navarre and Cagliari join Aragon against Granada",
+  "wars": [
+   "war-on-aragon"
+  ],
+  "data": {
+   "countries": [
+    "MLL",
+    "NAV",
+    "CAG"
+   ]
+  },
+  "source": "checkpoint 1339-09-02"
+ },
+ {
   "id": "1339-05-24-cb-aragon",
   "date": "1339-05-24",
   "type": "diplomacy",
@@ -136,6 +153,26 @@
    "target": "ARA"
   },
   "source": "checkpoint 1339-05-24"
+ },
+ {
+  "id": "1339-05-24-ibn-al-khatib-commands",
+  "date": "1339-05-24",
+  "type": "appointment",
+  "title": "Ibn al-Khaṭīb given command of the host: 9,500 levies, 900 regulars, 400 mercenaries and 350 in the baggage train",
+  "people": [
+   "ibn-al-khatib"
+  ],
+  "wars": [
+   "war-on-aragon"
+  ],
+  "data": {
+   "levies": 9500,
+   "regulars": 900,
+   "mercenaries": 400,
+   "baggage": 350,
+   "savedLater": "The 2 September 1339 save shows the 'levies' were mostly mutaṭawwiʿa (20 regiments, 9,890 men), with 1,200 regulars and 1,200 mercenaries."
+  },
+  "source": "Trent's account"
  },
  {
   "id": "1339-05-24-murcia-held",
@@ -158,29 +195,207 @@
   "id": "1339-05-24-war-on-aragon",
   "date": "1339-05-24",
   "type": "war_declared",
-  "title": "Granada goes to war with Aragon",
+  "title": "Granada declares war on Aragon",
   "wars": [
    "war-on-aragon"
   ],
-  "source": "Trent's account"
+  "source": "checkpoint 1339-09-02"
  },
  {
-  "id": "1339-05-24-ibn-al-khatib-commands",
-  "date": "1339-05-24",
-  "type": "appointment",
-  "title": "Ibn al-Khaṭīb given command of the host: 9,500 levies, 900 regulars, 400 mercenaries and 350 in the baggage train",
-  "people": [
-   "ibn-al-khatib"
+  "id": "1339-06-13-battle-shaluqa",
+  "date": "1339-06-13",
+  "type": "battle",
+  "title": "Morocco wins at last, at Shalūqa",
+  "places": [
+   "shaluqa"
+  ],
+  "wars": [
+   "moroccan-castilian-war"
+  ],
+  "data": {
+   "result": "victory",
+   "ours": 6056,
+   "theirs": 5432,
+   "ourLosses": 372,
+   "theirLosses": 2735,
+   "side": "Morocco's side (Granada not engaged)"
+  },
+  "source": "checkpoint 1339-09-02"
+ },
+ {
+  "id": "1339-08-12-battle-muntil",
+  "date": "1339-08-12",
+  "type": "battle",
+  "title": "A Tunisian column broken at Munṭīl",
+  "places": [
+   "muntil"
+  ],
+  "wars": [
+   "moroccan-castilian-war"
+  ],
+  "data": {
+   "result": "defeat",
+   "ours": 327,
+   "theirs": 2692,
+   "ourLosses": 229,
+   "theirLosses": 118,
+   "side": "Tunis (Granada not engaged)"
+  },
+  "source": "checkpoint 1339-09-02"
+ },
+ {
+  "id": "1339-08-18-battle-jumalla",
+  "date": "1339-08-18",
+  "type": "battle",
+  "title": "First blood at Jumalla",
+  "places": [
+   "jumalla"
   ],
   "wars": [
    "war-on-aragon"
   ],
   "data": {
-   "levies": 9500,
-   "regulars": 900,
-   "mercenaries": 400,
-   "baggage": 350
+   "result": "victory",
+   "ours": 500,
+   "theirs": 5,
+   "ourLosses": 0,
+   "theirLosses": 5
+  },
+  "source": "checkpoint 1339-09-02"
+ },
+ {
+  "id": "1339-08-23-battle-al-karash",
+  "date": "1339-08-23",
+  "type": "battle",
+  "title": "Tlemcen holds al-Karash against Castile",
+  "places": [
+   "al-karash"
+  ],
+  "wars": [
+   "moroccan-castilian-war"
+  ],
+  "data": {
+   "result": "victory",
+   "ours": 443,
+   "theirs": 2572,
+   "ourLosses": 88,
+   "theirLosses": 132,
+   "side": "Tlemcen (Granada not engaged)"
+  },
+  "source": "checkpoint 1339-09-02"
+ },
+ {
+  "id": "1339-09-01-ghuzat",
+  "date": "1339-09-01",
+  "type": "situation",
+  "title": "The Ghuzāt al-Mujāhidīn: Amazigh volunteers come to Granada; the sultan lets them all serve",
+  "people": [
+   "yahya-rahhu"
+  ],
+  "data": {
+   "event": "Al-Ghuzāt al-Mujāhidīn",
+   "choice": "Let these men serve, all of them."
   },
   "source": "Trent's account"
+ },
+ {
+  "id": "1339-09-01-yahya-general",
+  "date": "1339-09-01",
+  "type": "appointment",
+  "title": "Yaḥyā Raḥḥū made general of the Volunteers of the Faith",
+  "people": [
+   "yahya-rahhu"
+  ],
+  "data": {
+   "role": "GENERAL"
+  },
+  "source": "checkpoint 1339-09-02"
+ },
+ {
+  "id": "1339-09-02-catalan-privileges-lapse",
+  "date": "1339-09-02",
+  "type": "reform",
+  "title": "The Catalan merchant privileges are no longer in force",
+  "data": {
+   "reform": "catalan_merchant_privileges",
+   "between": [
+    "1339-05-24",
+    "1339-09-02"
+   ]
+  },
+  "source": "checkpoint 1339-09-02"
+ },
+ {
+  "id": "1339-09-02-volunteers-hired",
+  "date": "1339-09-02",
+  "type": "appointment",
+  "title": "The Volunteers of the Faith taken into pay: 10,000 foot and 1,200 tornadizo horse",
+  "people": [
+   "yahya-rahhu"
+  ],
+  "wars": [
+   "war-on-aragon"
+  ],
+  "data": {
+   "footmen": 10000,
+   "tornadizos": 1200
+  },
+  "source": "Trent's account"
+ },
+ {
+  "id": "1339-11-01-shadhili-order",
+  "date": "1339-11-01",
+  "type": "situation",
+  "title": "The Shādhilī order arrives at court, sent from the zāwiyas of Salā and Tiṭwān with the Marīnid sultan's letters, and is welcomed",
+  "data": {
+   "event": "The Shadhili Order Arrives",
+   "choice": "Welcome them to our Court.",
+   "effect": "unlocks Patronization of the Shadhili Order in the Battle for the Strait; mysticism +33"
+  },
+  "source": "Trent's screenshots"
+ },
+ {
+  "id": "1339-11-08-battle-uryula",
+  "date": "1339-11-08",
+  "type": "battle",
+  "title": "The Day of Uryūla: Ibn al-Khaṭīb routs the Aragonese",
+  "people": [
+   "ibn-al-khatib"
+  ],
+  "places": [
+   "uryula"
+  ],
+  "wars": [
+   "war-on-aragon"
+  ],
+  "data": {
+   "result": "victory",
+   "ours": 24342,
+   "theirs": 11217,
+   "ourLosses": 4502,
+   "theirLosses": 6025,
+   "warScore": 25,
+   "onTheMap": {
+    "ours": 20971,
+    "theirs": 8071
+   }
+  },
+  "source": "Trent's screenshots"
+ },
+ {
+  "id": "1339-11-08-siege-uryula",
+  "date": "1339-11-08",
+  "type": "siege",
+  "title": "The siege of Uryūla goes on",
+  "places": [
+   "uryula"
+  ],
+  "wars": [
+   "war-on-aragon"
+  ],
+  "data": {
+   "result": "under way"
+  },
+  "source": "Trent's screenshots"
  }
 ]

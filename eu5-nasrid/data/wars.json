@@ -72,7 +72,7 @@
     "Castile"
    ]
   },
-  "note": "Tunis and its vassals (Tripoli, Gabès, Gafsa, Touggourt, Bijaya) joined Morocco on 9 November 1338. Castile has won all five battles so far. By 24 May 1339 Morocco's side holds Ishbīliyya and the whole Murcia area (Mursiyya, Siyāsa, Qarṭājanna, Lawraqa, Mūla); Trent's account has Tunisian troops taking Murcia. Granada can still be called in and has not been."
+  "note": "Tunis and its vassals (Tripoli, Gabès, Gafsa, Touggourt, Bijaya) joined Morocco on 9 November 1338. Castile won the first five battles; Morocco took the sixth at Shalūqa in June 1339, and Tlemcen held al-Karash in August. Morocco's side holds Ishbīliyya and the whole Murcia area (Mursiyya, Siyāsa, Qarṭājanna, Lawraqa, Mūla); Trent's account has Tunisian troops taking Murcia. Granada can still be called in and has not been."
  },
  {
   "id": "war-on-aragon",
@@ -82,10 +82,39 @@
   "goal": "Reclaim Andalusia (Granada's casus belli against Aragon)",
   "allies": [],
   "enemies": [
-   "Aragon"
+   "Aragon",
+   "Majorca",
+   "Navarre",
+   "Cagliari"
   ],
   "outcome": null,
   "involvement": "belligerent",
-  "note": "Granada's first war. The casus belli is dated 24 May 1339 in the save; the declaration and the host's mustering are Trent's account, and the next save will confirm the date and both sides. Granada's road to Aragon runs through the Murcia area, held for now by its allies against Castile."
+  "note": "Declared on 24 May 1339 (confirmed by the save). Majorca, Navarre and Cagliari joined Aragon at once. Morocco and Tunis can be called in and have not been. The first fighting was a skirmish at Jumalla in August; on 8 November Ibn al-Khaṭīb won a great victory at Uryūla (Orihuela), worth 25 war score (Trent's screenshots), and laid siege to the town.",
+  "gameName": "1st Granada–Aragon War",
+  "sides": {
+   "attackers": [
+    "Granada"
+   ],
+   "defenders": [
+    "Aragon",
+    "Majorca",
+    "Navarre",
+    "Cagliari"
+   ]
+  },
+  "score": [
+   {
+    "date": "1339-05-24",
+    "value": 0
+   },
+   {
+    "date": "1339-09-02",
+    "value": 1
+   },
+   {
+    "date": "1339-11-08",
+    "value": 26
+   }
+  ]
  }
 ]

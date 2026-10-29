@@ -27,7 +27,7 @@ export default function WarPage() {
         <p className="record-sub">War goal: {w.goal.charAt(0).toLowerCase() + w.goal.slice(1)}. {w.involvement === "potential"
           ? `${againstLine(w)}.`
           : `Against ${and(w.enemies)}${w.allies.length ? `, with ${and(w.allies)} at our side` : ""}.`}</p>
-        {w.sides && w.involvement === "belligerent" && <p className="record-sub">{and(w.sides.attackers)} against {and(w.sides.defenders)}.</p>}
+        {w.sides && w.involvement === "belligerent" && w.sides.attackers.join() !== "Granada" && <p className="record-sub">{and(w.sides.attackers)} against {and(w.sides.defenders)}.</p>}
         {w.joined && <p className="record-sub">Granada was in it from {western(w.joined.from)}{w.joined.to ? ` to ${western(w.joined.to)}` : ""}.</p>}
         <p className="war-outcome">{w.outcome ? `Ended in ${w.outcome.charAt(0).toLowerCase() + w.outcome.slice(1)}.` : w.involvement === "potential" ? "Still being fought, without us." : "Still being fought."}</p>
         {w.note && <p className="muted">{w.note}</p>}

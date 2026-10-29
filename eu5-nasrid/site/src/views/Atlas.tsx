@@ -232,6 +232,21 @@ export default function Atlas() {
             {snap.prestige != null && <div><dt>Prestige</dt><dd>{snap.prestige}</dd></div>}
           </dl>
           {!snap.economy && <p className="quiet">The treasury, manpower and estates aren't recorded at this checkpoint. The game settles them over its first few months.</p>}
+          {snap.armies.length > 0 && <>
+            <h3>Armies in the field</h3>
+            <ul className="armies">
+              {snap.armies.map((a, k) => {
+                const who = a.leader ? personById.get(a.leader) : undefined;
+                const where = places.find((p) => p.key === a.at);
+                return (
+                  <li key={k}>
+                    <span className="men num">{nf.format(a.men)}</span>
+                    <span>{who ? <Link to={`/people/${who.id}`} className="entity" data-kind="person" data-id={who.id} data-router="1">{who.name}</Link> : "Unled"}{", at "}{where ? where.name : keyLabel(a.at)}{a.source !== "save" ? " (Trent's account)" : ""}<small>{a.makeup}</small></span>
+                  </li>
+                );
+              })}
+            </ul>
+          </>}
           {snap.strait ? (
             <Link to="/strait" className="strait-mini">
               <span>The Strait</span>
