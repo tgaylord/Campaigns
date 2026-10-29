@@ -1,0 +1,23 @@
+[
+ {
+  "id": "1342-01-01-renaissance",
+  "date": "1342-01-01",
+  "type": "situation",
+  "title": "The Age of the Renaissance begins",
+  "data": {
+   "age": "age_2_renaissance"
+  },
+  "source": "Trent's account"
+ },
+ {
+  "id": "1342-05-02-hafsid-gift",
+  "date": "1342-05-02",
+  "type": "diplomacy",
+  "title": "The Ḥafṣid sultan of Tūnis sends a gift of 258 gold",
+  "data": {
+   "from": "TUN",
+   "gold": 258
+  },
+  "source": "Trent's account"
+ }
+]
