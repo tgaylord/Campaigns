@@ -116,5 +116,55 @@
     "value": 26
    }
   ]
+ },
+ {
+  "id": "second-moroccan-war",
+  "name": "The Second Moroccan War on Castile",
+  "start": "1346-10-16",
+  "end": null,
+  "goal": "Reclaim Andalusia",
+  "allies": [
+   "Morocco",
+   "Tafilalt",
+   "Touat",
+   "Tlemcen",
+   "Tunis",
+   "Tripoli",
+   "Gabès",
+   "Gafsa",
+   "Bijaya",
+   "Sahel"
+  ],
+  "enemies": [
+   "Castile",
+   "Portugal",
+   "Aragon",
+   "Majorca",
+   "Cagliari"
+  ],
+  "involvement": "potential",
+  "sides": {
+   "attackers": [
+    "Morocco",
+    "Tafilalt",
+    "Touat",
+    "Tlemcen",
+    "Tunis",
+    "Tripoli",
+    "Gabès",
+    "Gafsa",
+    "Bijaya",
+    "Sahel"
+   ],
+   "defenders": [
+    "Castile",
+    "Portugal",
+    "Aragon",
+    "Majorca",
+    "Cagliari"
+   ]
+  },
+  "note": "Six years after its defeat of 1340, Morocco declares war again under the game's scripted Marinid casus belli to reclaim al-Andalus. Castile's alliances bring in Portugal and Aragon, with Majorca and Cagliari, so all three crowns of Iberia stand together. Tafilalt, Touat and Tlemcen march with Morocco at once; Tunis and its marches (Tripoli, Gabès, Gafsa, Bijaya and the Sahel) join on 18 October. Granada, Castile's tributary and alone on the Iberian shore, is called and has not answered (save of 18 October 1346; Trent's account).",
+  "outcome": null
  }
 ]

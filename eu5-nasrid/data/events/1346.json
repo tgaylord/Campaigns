@@ -83,5 +83,119 @@
    }
   },
   "source": "checkpoint 1346-08-01"
+ },
+ {
+  "id": "1346-10-16-moroccan-war",
+  "date": "1346-10-16",
+  "type": "war_declared",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "title": "Morocco declares war again to reclaim al-Andalus, and Castile's alliances bring Portugal and Aragon in beside it: all three crowns of Iberia",
+  "data": {
+   "casusBelli": "cb_reclaim_andalucia",
+   "attacker": "MOR",
+   "defenders": [
+    "CAS",
+    "POR",
+    "ARA",
+    "MLL",
+    "CAG"
+   ]
+  },
+  "source": "checkpoint 1346-10-18"
+ },
+ {
+  "id": "1346-10-18-hospitals",
+  "date": "1346-10-18",
+  "type": "player_note",
+  "people": [
+   "yusuf-i"
+  ],
+  "places": [
+   "gharnata",
+   "malaqa",
+   "al-mariyya"
+  ],
+  "title": "Against the rumoured pestilence the amir is building hospitals in the three great cities, Gharnāṭa, Mālaqa and al-Mariyya",
+  "data": {
+   "building": "hospital",
+   "locations": [
+    "granada",
+    "malaga",
+    "almeria"
+   ]
+  },
+  "source": "Trent's account; checkpoint 1346-10-18"
+ },
+ {
+  "id": "1346-10-18-debt",
+  "date": "1346-10-18",
+  "type": "estate_change",
+  "title": "One loan of 24 ducats is all that is left of the debt",
+  "data": {
+   "debt": {
+    "from": 95.7,
+    "to": 23.9
+   },
+   "loans": {
+    "from": 4,
+    "to": 1
+   }
+  },
+  "source": "checkpoint 1346-10-18"
+ },
+ {
+  "id": "1346-10-18-tunis-joins",
+  "date": "1346-10-18",
+  "type": "war_joined",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "title": "Tunis and its marches join Morocco's war",
+  "data": {
+   "joined": [
+    "TUN",
+    "TRP",
+    "GBS",
+    "GFS",
+    "BIJ",
+    "AAA73"
+   ]
+  },
+  "source": "checkpoint 1346-10-18"
+ },
+ {
+  "id": "1346-10-18-call-to-arms",
+  "date": "1346-10-18",
+  "type": "player_note",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "people": [
+   "yusuf-i"
+  ],
+  "title": "Morocco calls Granada to war, though Granada stands alone on this side of the Strait",
+  "data": {
+   "status": "potential"
+  },
+  "source": "Trent's account: \"The Moroccans are insane. Madness. They have declared another war, dragging all three crowns into the war against the Castilians. And they expect us to join, when we are the only ones on this side of the strait.\""
+ },
+ {
+  "id": "1346-10-18-sovereignty",
+  "date": "1346-10-18",
+  "type": "strait_change",
+  "title": "Sovereignty 48.4, influence −6.8",
+  "data": {
+   "sovereignty": {
+    "from": 48.65,
+    "to": 48.36
+   },
+   "influence": {
+    "from": -6.5,
+    "to": -6.8
+   }
+  },
+  "source": "checkpoint 1346-10-18"
  }
 ]
