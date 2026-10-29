@@ -91,6 +91,14 @@ const War = z.object({
   enemies: z.array(z.string()),
   outcome: z.string().nullable(),
   score: z.array(z.object({ date: isoDate, value: z.number() })).default([]),
+  /** belligerent: Granada fights in it; potential: Granada stands outside it but can be called in */
+  involvement: z.enum(["belligerent", "potential"]).default("belligerent"),
+  /** when Granada was in the war, if not the whole of it */
+  joined: z.object({ from: isoDate, to: isoDate.nullable() }).optional(),
+  /** both sides as the game lists them, for wars Granada did not lead */
+  sides: z.object({ attackers: z.array(z.string()), defenders: z.array(z.string()) }).optional(),
+  gameName: z.string().optional(),
+  note: z.string().optional(),
   sample,
 });
 
@@ -99,7 +107,8 @@ const Country = z.object({
   color: z.string().regex(/^#[0-9a-f]{6}$/i),
 });
 
-const Estate = z.object({ id, name: z.string(), power: z.number(), satisfaction: z.number().nullable() });
+/** power is the estate's share of power (%); the save doesn't store it, so it comes from Trent's estates screen or stays null */
+const Estate = z.object({ id, name: z.string(), power: z.number().nullable(), satisfaction: z.number().nullable() });
 
 const Snapshot = z.object({
   date: isoDate,
@@ -126,7 +135,9 @@ const Snapshot = z.object({
   /** empty, and economy/military null, until a checkpoint the game has ticked through records them */
   estates: z.array(Estate).default([]),
   economy: z.object({ treasury: z.number(), income: z.number(), expenses: z.number(), debt: z.number().default(0) }).nullable().default(null),
-  military: z.object({ levies: z.number(), regiments: z.number(), ships: z.number() }).nullable().default(null),
+  military: z.object({ manpower: z.number(), maxManpower: z.number(), regiments: z.number(), ships: z.number() }).nullable().default(null),
+  stability: z.number().optional(),
+  prestige: z.number().optional(),
   source: z.object({ save: z.string(), gameVersion: z.string(), extracted: z.string() }).optional(),
   government: z.object({
     type: z.string(), heirSelection: z.string(),
@@ -134,13 +145,17 @@ const Snapshot = z.object({
     culture: z.string(), tolerated: z.array(z.string()), religion: z.string(),
   }).optional(),
   wars: z.array(id).default([]),
-  strait: z.object({ active: z.boolean(), influence: z.number(), sovereignty: z.number(), yearsSubject: z.number() }).nullable(),
+  strait: z.object({
+    active: z.boolean(), influence: z.number(), sovereignty: z.number(), yearsSubject: z.number(),
+    /** locations of the Granada, Andalusia and Murcia areas held by Granada or its subjects, of all of them */
+    areas: z.object({ held: z.number(), total: z.number() }).optional(),
+  }).nullable(),
   goldenCentury: z.object({ european: z.number(), colonial: z.number(), flashpoint: z.number() }).nullable().default(null),
   sample,
 });
 
 const EVENT_TYPES = [
-  "war_declared", "battle", "siege", "peace", "ruler_change", "birth", "death", "marriage",
+  "war_declared", "war_joined", "battle", "siege", "peace", "ruler_change", "birth", "death", "marriage",
   "estate_change", "law_change", "reform", "territory_change", "strait_change", "gc_change",
   "situation", "formable", "player_note",
 ];
@@ -276,6 +291,9 @@ for (const s of story) {
   s.places.forEach((x) => ref("place", x, w));
   s.wars.forEach((x) => ref("war", x, w));
   s.refs.forEach((r) => ref(r.kind, r.ref, `${w} (link in text)`));
+  s.sources.forEach((x) => {
+    if (x !== "player" && !events.some((e) => e.id === x) && !snapshots.some((n) => n.id === x)) errors.push(`${w}.sources: unknown event or checkpoint "${x}"`);
+  });
 }
 const dupes = (arr, what) => {
   const seen = new Set();

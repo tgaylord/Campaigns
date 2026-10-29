@@ -7,6 +7,7 @@
   overflow: hidden;
 }
 .war-banners a:hover { border-color: var(--cinnabar-hi); }
+.war-banners a.potential { border-style: dashed; border-left-style: solid; border-left-color: var(--mist); background: transparent; }
 .war-banners .years { grid-area: years; color: var(--mist); display: grid; align-content: start; }
 .war-banners .years .ar { text-align: left; font-size: 1.8rem; color: var(--gilt); line-height: 1.2; }
 .war-banners .name { grid-area: name; font-size: 1.6rem; font-weight: 700; }

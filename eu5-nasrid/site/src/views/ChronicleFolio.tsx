@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { chronicle, notes, storyById, eraById, hijri, western, personById, placeById, warById, eras } from "../lib/data";
+import { chronicle, notes, storyById, eraById, hijri, western, personById, placeById, warById, eras, events, snapshots } from "../lib/data";
 import { EntityLink } from "../components/bits";
 import { folioOf } from "./ChronicleIndex";
 import "./chronicle.css";
@@ -75,7 +75,14 @@ export default function ChronicleFolio() {
             )}
             {target.sources.length > 0 && (
               <div className="sources ui">
-                From {target.sources.map((s) => (s === "player" ? "Trent's account" : `checkpoint ${s}`)).join(", ")}
+                <div className="named-head">Drawn from</div>
+                <ul>
+                  {target.sources.map((s) => {
+                    const ev = events.find((e) => e.id === s);
+                    const sn = snapshots.find((x) => x.id === s);
+                    return <li key={s}>{s === "player" ? "Trent's account" : ev ? <><span className="d">{western(ev.date)}</span> {ev.title}</> : sn ? `The checkpoint of ${western(sn.date)}` : s}</li>;
+                  })}
+                </ul>
               </div>
             )}
           </aside>

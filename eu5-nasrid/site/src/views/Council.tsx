@@ -44,17 +44,20 @@ export default function Council() {
   // Largest-remainder allocation of 100 seats by share of power.
   const present = ARC_ORDER.filter((id) => snap.estates.some((e) => e.id === id))
     .concat(snap.estates.map((e) => e.id).filter((id) => !ARC_ORDER.includes(id)));
-  const powers = present.map((id) => snap.estates.find((e) => e.id === id)!.power);
+  // The save doesn't store power shares; without them the seats stay empty and only the moods show.
+  const hasPower = snap.estates.some((e) => e.power != null);
+  const powers = present.map((id) => (hasPower ? snap.estates.find((e) => e.id === id)!.power ?? 0 : 0));
   const sum = powers.reduce((a, b) => a + b, 0) || 1;
   const raw = powers.map((p) => (p / sum) * SEATS);
   const alloc = raw.map(Math.floor);
-  raw.map((r, k) => ({ k, f: r - Math.floor(r) })).sort((a, b) => b.f - a.f)
+  if (hasPower) raw.map((r, k) => ({ k, f: r - Math.floor(r) })).sort((a, b) => b.f - a.f)
     .slice(0, SEATS - alloc.reduce((a, b) => a + b, 0)).forEach(({ k }) => alloc[k]++);
   const owner: string[] = [];
   present.forEach((id, k) => { for (let j = 0; j < alloc[k]; j++) owner.push(id); });
 
-  const estates = present.map((id) => snap.estates.find((e) => e.id === id)!);
+  const estates = present.map((id) => snap.estates.find((e) => e.id === id)!).filter((e) => hasPower || e.id !== "crown");
   const crown = snap.estates.find((e) => e.id === "crown");
+  const pct = (v: number | null) => (v == null ? "" : `${v}%`);
 
   return (
     <div className="page council-page">
@@ -66,15 +69,15 @@ export default function Council() {
 
       <div className="council-stage">
         <svg viewBox="-340 -330 680 380" className="hemi" role="img"
-          aria-label={`The council at ${western(snap.date)}: ${estates.map((e) => `${e.name} ${e.power}%`).join(", ")}`}>
-          {seats.map((s, k) => (
-            <circle key={k} className="seat" r={9.5} style={{ transform: `translate(${s.x}px, ${s.y}px)`, fill: estateColor(owner[k] ?? "", "night") }} />
-          ))}
+          aria-label={hasPower ? `The council at ${western(snap.date)}: ${estates.map((e) => `${e.name} ${pct(e.power)}`).join(", ")}` : `The council at ${western(snap.date)}: shares of power not recorded`}>
+          {seats.map((s, k) => owner[k]
+            ? <circle key={k} className="seat" r={9.5} style={{ transform: `translate(${s.x}px, ${s.y}px)`, fill: estateColor(owner[k], "night") }} />
+            : <circle key={k} className="seat empty" r={9.5} style={{ transform: `translate(${s.x}px, ${s.y}px)` }} />)}
           <g className="throne" transform="translate(0,-20)">
             <path d="M-34,10 v-46 a34,34 0 0 1 68,0 v46 Z" />
             <path d="M-20,10 v-30 a20,20 0 0 1 40,0 v30" className="arch" />
-            <text y={48} textAnchor="middle" className="crown-pct">{crown ? `${crown.power}%` : ""}</text>
-            <text y={68} textAnchor="middle" className="crown-label">power of the crown</text>
+            <text y={48} textAnchor="middle" className="crown-pct">{crown ? pct(crown.power) : ""}</text>
+            {hasPower && <text y={68} textAnchor="middle" className="crown-label">power of the crown</text>}
           </g>
         </svg>
 
@@ -85,7 +88,7 @@ export default function Council() {
               <li key={e.id}>
                 <span className="swatch" style={{ background: estateColor(e.id, "night") }} />
                 <span className="name">{e.name}</span>
-                <span className="pow num">{e.power}%</span>
+                <span className="pow num">{pct(e.power)}</span>
                 <span className={`mood ${m.cls}`}>
                   {e.satisfaction != null && <span className="meter" aria-hidden="true"><i style={{ width: `${e.satisfaction}%` }} /></span>}
                   {m.word}{e.satisfaction != null ? `, ${e.satisfaction}` : ""}
@@ -95,6 +98,12 @@ export default function Council() {
           })}
         </ul>
       </div>
+      {!hasPower && (
+        <p className="council-note muted">
+          The seats wait to be filled: the save records each estate's mood but not its share of power, which the game
+          works out as it runs. The shares come from the estates screen at a checkpoint.
+        </p>
+      )}
 
       <div className="council-date">
         <span className="ar">{hijri(snap.date).arabic}</span>
@@ -103,8 +112,7 @@ export default function Council() {
       <CheckpointSelect value={i} onChange={setI} />
 
       <StarRule />
-      <Stream />
-      <StarRule />
+      {snapshots.filter((s) => s.estates.some((e) => e.power != null)).length >= 2 && <><Stream /><StarRule /></>}
       <MoodGrid />
     </div>
   );
@@ -113,9 +121,10 @@ export default function Council() {
 /** Share of power over the whole campaign, with the reforms and quarrels that moved it. */
 function Stream() {
   const W = 1300, H = 340, padL = 40, padR = 150, padT = 24, padB = 34;
-  const ids = ESTATE_ORDER.filter((id) => snapshots.some((s) => s.estates.some((e) => e.id === id)));
-  if (snapshots.length < 2) return null;
-  const rows = snapshots.map((s) => {
+  const withPower = snapshots.filter((s) => s.estates.some((e) => e.power != null));
+  const ids = ESTATE_ORDER.filter((id) => withPower.some((s) => s.estates.some((e) => e.id === id)));
+  if (withPower.length < 2) return null;
+  const rows = withPower.map((s) => {
     const r: Record<string, number> = { t: yearFrac(s.date) };
     ids.forEach((id) => { r[id] = s.estates.find((e) => e.id === id)?.power ?? 0; });
     return r;
@@ -152,7 +161,7 @@ function Stream() {
           const last = l[l.length - 1];
           const mid = (y(last[0]) + y(last[1])) / 2;
           if (y(last[0]) - y(last[1]) < 12) return null;
-          return <text key={l.key} x={W - padR + 10} y={mid + 4} className="end-label">{snapshots[snapshots.length - 1].estates.find((e) => e.id === l.key)?.name}</text>;
+          return <text key={l.key} x={W - padR + 10} y={mid + 4} className="end-label">{withPower[withPower.length - 1].estates.find((e) => e.id === l.key)?.name}</text>;
         })}
         {years.map((yy) => (
           <text key={yy} x={x(yy)} y={H - 10} textAnchor="middle" className="tick">{yy} <tspan className="ah">{arabicDigits(hijri(`${yy}-06-01`).y)}</tspan></text>
@@ -167,7 +176,8 @@ function Stream() {
 
 /** Satisfaction of every estate at every checkpoint: red is unhappy, blue content, grey indifferent. */
 function MoodGrid() {
-  const ids = ESTATE_ORDER.filter((id) => id !== "crown" && snapshots.some((s) => s.estates.some((e) => e.id === id && e.satisfaction != null)));
+  const cols = snapshots.filter((s) => s.estates.length);
+  const ids = ESTATE_ORDER.filter((id) => id !== "crown" && cols.some((s) => s.estates.some((e) => e.id === id && e.satisfaction != null)));
   const color = (v: number) => {
     // Diverging around 50: red #c0442e ← grey #4a5070 → blue #3987e5
     const t = Math.max(-1, Math.min(1, (v - 50) / 25));
@@ -180,14 +190,14 @@ function MoodGrid() {
     <section>
       <h2 className="section-title">The temper of the estates</h2>
       <p className="muted" style={{ maxWidth: "44rem" }}>Satisfaction at each checkpoint. Red runs below 50 toward revolt; blue runs above it toward loyalty.</p>
-      <div className="mood-grid ui" style={{ gridTemplateColumns: `9rem repeat(${snapshots.length}, minmax(3.2rem, 1fr))` }}>
+      <div className="mood-grid ui" style={{ gridTemplateColumns: `9rem repeat(${cols.length}, minmax(3.2rem, 1fr))` }}>
         <span />
-        {snapshots.map((s) => <span key={s.id} className="col-head">{year(s.date)}</span>)}
+        {cols.map((s) => <span key={s.id} className="col-head">{western(s.date)}</span>)}
         {ids.map((id) => {
           const name = snapshots.flatMap((s) => s.estates).find((e) => e.id === id)!.name;
           return [
             <span key={`${id}-n`} className="row-head"><i style={{ background: estateColor(id, "night") }} />{name}</span>,
-            ...snapshots.map((s) => {
+            ...cols.map((s) => {
               const v = s.estates.find((e) => e.id === id)?.satisfaction;
               return <span key={`${id}-${s.id}`} className="cell" style={{ background: v != null ? color(v) : "transparent" }}>{v ?? ""}</span>;
             }),

@@ -143,13 +143,50 @@ R = {
     'court': court,
 }
 
+def fx(v):
+    """A script value stored as a 64-bit fixed-point integer (5 decimal places); missing means 0."""
+    if v is None: return 0.0
+    v = int(v)
+    if v >= 2 ** 63: v -= 2 ** 64
+    return v / 100000
+
+
 if not a.no_computed:
     cd = dict(get(me, 'currency_data') or [])
+    eco = get(me, 'economy') or []
+    # Estates: satisfaction (0..1) and gold. The save holds no share of power; that comes from the estates screen.
+    EST = DB(os.path.join(D, 'estate_manager.txt'))
+    estates = {}
+    for k, v in (get(gov, 'estates') or []):
+        e = EST.get(int(v))
+        if e and get(e, 'existence') == 'yes':
+            estates[k] = {'satisfaction': get(e, 'satisfaction'), 'gold': get(e, 'gold'), 'tax_rate': get(get(eco, 'tax_rates') or [], k)}
+    # Cabinet: who holds each seat and the action it is set to
+    CAB = DB(os.path.join(D, 'cabinet_manager.txt'))
+    cabinet = []
+    for cid in vals(get(gov, 'cabinet_entries') or []):
+        c = CAB.get(int(cid))
+        if c:
+            act = get(c, 'implemented_government_action') or []
+            cabinet.append({'character': get(c, 'character'), 'action': get(act, 'object'), 'since': get(act, 'date')})
+    # Forces: every regiment and ship the country owns
+    raw = CDB.raw(CID)
+    m = re.search(r'\n\towned_subunits=\{([^}]*)\}', raw)
+    SUB = DB(os.path.join(D, 'subunit_manager.txt'))
+    units = []
+    for sid in (m.group(1).split() if m else []):
+        u = SUB.get(int(sid))
+        if u: units.append({'type': get(u, 'type'), 'unit': get(u, 'unit'), 'strength': get(u, 'strength'), 'morale': get(u, 'morale')})
     R['computed'] = {
         'currency': cd,
         'max_manpower': get(me, 'max_manpower'), 'max_sailors': get(me, 'max_sailors'),
-        'cabinet_entries': vals(get(gov, 'cabinet_entries') or []),
-        # estates, economy and levies: add here once a ticked save is in hand and the fields are checked
+        'economy': {'income': get(eco, 'income'), 'expense': get(eco, 'expense'), 'loan_capacity': get(eco, 'loan_capacity'),
+                    'last_months_tax_income': get(me, 'last_months_tax_income'), 'monthly_trade_balance': get(me, 'monthly_trade_balance')},
+        'estates': estates,
+        'cabinet': cabinet,
+        'subunits': units,
+        'regiments': sum(1 for u in units if (u['type'] or '').startswith('a_')),
+        'ships': sum(1 for u in units if (u['type'] or '').startswith('n_')),
     }
 
 # ---------- populations ----------
@@ -215,6 +252,44 @@ del dip
 # ---------- situations ----------
 sit = rd('situation_manager')
 R['situations'] = {k: (body.strip() != '') for k, body in re.findall(r'\b(\w+)=\{(.*?)\n?\t?\}', sit, re.S) if k != 'situation_manager'}
+# The Battle for the Strait: influence runs from -100 (Castile) to +100 (Morocco)
+i = sit.find('\tbattle_for_the_strait={')
+if i >= 0:
+    j = sit.find('\n\t}', i); blk = sit[i:j]
+    var = lambda f: (re.search(r'flag=' + f + r'\n\t*data=\{\n\t*type=value(?:\n\t*identity=(\d+))?', blk) or [None, None])[1]
+    st = re.search(r'status=(\w+)', blk); sd = re.search(r'start=([\d.]+)', blk)
+    R['strait'] = None if not st else {'status': st.group(1) if st else None, 'start': sd.group(1) if sd else None,
+                   'influence_over_granada': round(fx(var('influence_over_granada')), 3),
+                   'granadan_sovereignty': round(fx(var('granadan_sovereignty')), 3),
+                   'years_subject_under_CAS': round(fx(var('GRA_years_subject_under_CAS_variable')), 3),
+                   'years_as_subject': round(fx(var('GRA_years_as_subject_variable')), 3)}
+del sit
+
+# ---------- wars that involve us, as a party or as an ally who can be called ----------
+W = rd('war_manager'); W = W[W.find('\tdatabase={'):]
+starts = [(int(mm.group(1)), mm.start()) for mm in re.finditer(r'\n(\d+)=\{', W)]
+wars = []
+for k, (wid, s0) in enumerate(starts):
+    b = W[s0:starts[k + 1][1] if k + 1 < len(starts) else len(W)]
+    parts = []
+    for blockname in ('all', 'potential_for_diplomacy'):
+        bi = b.find('\n\t' + blockname + '={')
+        if bi < 0: continue
+        bj = b.find('\n\t}', bi)
+        for c, body in re.findall(r'\n\t\t\tcountry=(\d+)\n(.*?)\n\t\t\tstatus=\w+', b[bi:bj], re.S):
+            sd = re.search(r'side=(\w+)', body); jd = re.search(r'joined=\{.*?\n\t+date=([\d.]+)', body, re.S)
+            ld = re.search(r'left=\{.*?\n\t+date=([\d.]+)', body, re.S)
+            stt = re.search(r'\n\t\t\tstatus=(\w+)', b[bi:bj][b[bi:bj].find('country=' + c):])
+            parts.append({'tag': TAGS.get(int(c)), 'side': sd.group(1) if sd else None, 'status': stt.group(1) if stt else None,
+                          'joined': jd.group(1) if jd else None, 'left': ld.group(1) if ld else None})
+    if not any(p['tag'] == a.tag for p in parts): continue
+    nm = re.search(r'war_name=\{\n\t\tname=(\w+)', b); cb = re.search(r'casus_belli=(\w+)', b)
+    g = lambda key: (re.search(r'\n\t' + key + r'=([^\n]+)', b) or [None, None])[1]
+    wars.append({'id': wid, 'name': nm.group(1) if nm else None, 'casus_belli': cb.group(1) if cb else None,
+                 'start': g('start_date'), 'end': g('end_date'), 'ended': g('previous') == 'yes', 'participants': parts,
+                 'battles': re.findall(r'\n\tbattle=\{\n\t\tlocation=(\d+)\n\t\tdate=([\d.]+)\n\t\tresult=(\w+)', b)})
+R['wars'] = wars
+del W
 
 json.dump(R, open(a.out, 'w'), indent=1, ensure_ascii=False, default=str)
 print('ok', date, version, a.tag, len(mine), 'locations', R['realm']['population_k'], 'k people,', len(court), 'characters')

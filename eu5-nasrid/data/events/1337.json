@@ -1,0 +1,93 @@
+[
+ {
+  "id": "1337-04-03-death-fatima",
+  "date": "1337-04-03",
+  "type": "death",
+  "title": "Death of Fāṭima bint al-Aḥmar, of old age, aged 76",
+  "people": [
+   "fatima-bint-al-ahmar"
+  ],
+  "data": {
+   "reason": "old_age"
+  },
+  "source": "checkpoint 1337-08-18"
+ },
+ {
+  "id": "1337-04-22-joins-tlemcen-war",
+  "date": "1337-04-22",
+  "type": "war_joined",
+  "title": "Granada answers Morocco's call against Tlemcen",
+  "wars": [
+   "fate-of-tlemcen"
+  ],
+  "source": "checkpoint 1337-08-18"
+ },
+ {
+  "id": "1337-04-25-peace-tlemcen",
+  "date": "1337-04-25",
+  "type": "peace",
+  "title": "The Fate of Tlemcen ends: Tlemcen becomes a fiefdom of Morocco",
+  "wars": [
+   "fate-of-tlemcen"
+  ],
+  "source": "checkpoint 1337-08-18"
+ },
+ {
+  "id": "1337-05-01-strait-begins",
+  "date": "1337-05-01",
+  "type": "situation",
+  "title": "The Battle for the Strait begins",
+  "data": {
+   "situation": "battle_for_the_strait"
+  },
+  "source": "checkpoint 1337-08-18"
+ },
+ {
+  "id": "1337-05-01-parias",
+  "date": "1337-05-01",
+  "type": "strait_change",
+  "title": "Parias to Castile begin",
+  "data": {
+   "treaty": "parias_payments",
+   "from": "CAS"
+  },
+  "source": "checkpoint 1337-08-18"
+ },
+ {
+  "id": "1337-05-03-tunis-marriage",
+  "date": "1337-05-03",
+  "type": "marriage",
+  "title": "A royal marriage binds Granada to the Ḥafṣids of Tunis",
+  "data": {
+   "with": "TUN"
+  },
+  "source": "checkpoint 1337-08-18"
+ },
+ {
+  "id": "1337-07-09-promote-sovereignty",
+  "date": "1337-07-09",
+  "type": "strait_change",
+  "title": "Yūsuf ibn Muḥammad set to promoting Granadan sovereignty",
+  "people": [
+   "yusuf-ibn-muhammad"
+  ],
+  "data": {
+   "action": "gra_promote_sovereignty"
+  },
+  "source": "checkpoint 1337-08-18"
+ },
+ {
+  "id": "1337-07-31-morocco-war-on-castile",
+  "date": "1337-07-31",
+  "type": "war_declared",
+  "title": "Morocco declares war on Castile to reclaim Andalusia",
+  "wars": [
+   "moroccan-castilian-war"
+  ],
+  "data": {
+   "casusBelli": "cb_reclaim_andalucia",
+   "granada": "can be called by Morocco"
+  },
+  "source": "checkpoint 1337-08-18"
+ }
+]

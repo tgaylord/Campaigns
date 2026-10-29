@@ -1,1 +1,65 @@
-[]
+[
+ {
+  "id": "fate-of-tlemcen",
+  "name": "The Fate of Tlemcen",
+  "gameName": "Fate of Tlemcen",
+  "start": "1335-01-01",
+  "end": "1337-04-25",
+  "goal": "Conquer the province of Tlemcen",
+  "allies": [
+   "Morocco",
+   "Tafilalt",
+   "Tunis",
+   "Gafsa"
+  ],
+  "enemies": [
+   "Tlemcen"
+  ],
+  "outcome": "Tlemcen made a fiefdom of Morocco",
+  "involvement": "belligerent",
+  "joined": {
+   "from": "1337-04-22",
+   "to": "1337-04-25"
+  },
+  "sides": {
+   "attackers": [
+    "Morocco",
+    "Tafilalt",
+    "Tunis",
+    "Gafsa",
+    "Granada"
+   ],
+   "defenders": [
+    "Tlemcen"
+   ]
+  },
+  "note": "Morocco's war, begun two years before the campaign. Granada answered Morocco's call three days before it ended, and lost no one."
+ },
+ {
+  "id": "moroccan-castilian-war",
+  "name": "The Moroccan War on Castile",
+  "gameName": "Moroccan-Castilian War",
+  "start": "1337-07-31",
+  "end": null,
+  "goal": "Reclaim Andalusia",
+  "allies": [
+   "Morocco",
+   "Tlemcen"
+  ],
+  "enemies": [
+   "Castile"
+  ],
+  "outcome": null,
+  "involvement": "potential",
+  "sides": {
+   "attackers": [
+    "Morocco",
+    "Tlemcen"
+   ],
+   "defenders": [
+    "Castile"
+   ]
+  },
+  "note": "Morocco can call Granada and Tunis in under their alliances; neither has been called. Castile is Granada's overlord. No battles by 18 August 1337."
+ }
+]

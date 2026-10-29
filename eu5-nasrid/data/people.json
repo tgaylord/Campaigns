@@ -154,7 +154,8 @@
   },
   "traits": [
    "architectural_visionary"
-  ]
+  ],
+  "died": "1337-04-03"
  },
  {
   "id": "ibn-al-hakim",
@@ -286,7 +287,9 @@
   "dynasty": "Naṣrid",
   "born": "1301-01-01",
   "father": "muhammad-ibn-faraj",
-  "roles": [],
+  "roles": [
+   "in the dīwān"
+  ],
   "stats": {
    "adm": 33.0,
    "dip": 70.0,
@@ -408,7 +411,10 @@
   "born": "1317-01-01",
   "father": "ismail-i",
   "mother": "alwa",
-  "roles": [],
+  "roles": [
+   "in the dīwān",
+   "heir"
+  ],
   "stats": {
    "adm": 51.0,
    "dip": 32.0,

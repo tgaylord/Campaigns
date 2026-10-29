@@ -83,7 +83,7 @@ Each campaign gets its own top-level folder; Rome or any other campaign would si
 - **Ruler, heir, consort, regent;** the cabinet and the head of the cabinet.
 - **Realm:** locations, areas and provinces held; capital; subjects and ṭā'ifas.
 - **Population:** total, by culture, by religion.
-- **Estates:** power and satisfaction for each estate, crown power, privileges held.
+- **Estates:** power and satisfaction for each estate, crown power, privileges held. Satisfaction, gold and tax rates come from the save; **share of power does not** (the game computes it as it runs), so it comes from Trent's estates screen or stays empty, and the Council shows only moods until then.
 - **Government:** laws, reforms, policies, bureaucracies, political influence.
 - **Economy:** treasury, income and expenses, debt, main goods.
 - **Military:** levies, regiments, fleets and their locations. Named armies come later (see §5).
@@ -166,7 +166,7 @@ Every person, place and war name anywhere on the site shows a card on hover and 
 
 ## 7. A session, step by step
 
-1. Trent plays, makes a checkpoint save in text mode, and zips it.
+1. Trent plays and makes an ordinary checkpoint save (compressed). If the estates matter at that checkpoint, he notes each estate's share of power from the estates screen, since the save doesn't store it.
 2. He opens the chat on the gaming PC (or links that computer) and gives his account of what happened, including anything screenshots show that a save can't.
 3. Claude parses the save into a snapshot and new events, then checks them against the previous snapshot.
 4. Claude drafts the story entries and Trent corrects them.
@@ -197,4 +197,5 @@ This campaign follows the repo-wide rules in `/CLAUDE.md`:
 2. ~~Publishing~~: settled. The repo is public and the site is published to an unlisted Pages address.
 3. ~~Decoder for 1.4~~: settled. A separate shared tool, `shared/tools/eu5-save-decoder-1.4/`; the 1.3.11 one stays unchanged for Rome.
 4. Place names the game files leave doubtful: Órgiva (the game has "Yuz Aryuba"), Olvera (no Arabic script), and the Arabic script for Gérgal, Mojácar, Vélez-Rubio, Adra, Íllora, Píñar, Antequera and Vélez-Málaga, which the chronicle supplies itself. Each is marked in `data/gazetteer.json`.
-5. No heir is named in the start save; the game picks one once it runs.
+5. ~~Heir~~: settled. Faraj ibn Ismāʿīl, Yūsuf's elder half-brother, is heir from the August 1337 save.
+6. Estate shares of power for the August 1337 checkpoint: wanted from Trent's estates screen, if he has them.

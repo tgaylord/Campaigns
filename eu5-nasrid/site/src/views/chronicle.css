@@ -71,6 +71,9 @@
 .named-head { color: var(--sepia); font-size: 0.75rem; margin-bottom: 0.2rem; }
 .named a { color: var(--ink); text-decoration-color: rgba(192, 68, 46, 0.6); }
 .sources { margin-top: 1.25rem; font-size: 0.75rem; color: var(--sepia); }
+.sources ul { list-style: none; margin: 0.3rem 0 0; padding: 0; }
+.sources li { margin: 0 0 0.35rem; line-height: 1.35; }
+.sources .d { display: block; color: var(--cinnabar, #b8432c); }
 .folio-no { text-align: center; font-size: 0.8rem; color: var(--sepia); margin-top: 1.5rem; }
 
 .turns { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem; max-width: 78rem; }

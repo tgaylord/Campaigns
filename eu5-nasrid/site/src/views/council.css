@@ -47,4 +47,5 @@
 .mood-grid .cell { text-align: center; padding: 0.5rem 0; color: #fff; font-variant-numeric: tabular-nums; border-radius: 2px; }
 
 .hemi .seat.empty { fill: none; stroke: rgba(212, 171, 85, 0.35); stroke-width: 1.2; }
+.council-note { max-width: 44rem; margin: 0.75rem 0 0; }
 .council-empty { max-width: 34rem; color: var(--mist); font-size: 1.05rem; align-self: center; }

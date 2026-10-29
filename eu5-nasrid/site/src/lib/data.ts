@@ -21,8 +21,10 @@ export type War = {
   id: string; name: string; start: string; end: string | null; goal: string;
   allies: string[]; enemies: string[]; outcome: string | null;
   score: { date: string; value: number }[]; sample: boolean;
+  involvement: "belligerent" | "potential"; joined?: { from: string; to: string | null };
+  sides?: { attackers: string[]; defenders: string[] }; gameName?: string; note?: string;
 };
-export type Estate = { id: string; name: string; power: number; satisfaction: number | null };
+export type Estate = { id: string; name: string; power: number | null; satisfaction: number | null };
 export type Snapshot = {
   id: string; date: string; checkpoint: string; note?: string;
   ruler: string; heir: string | null; regent: string | null; capital: string; rank: string; locations: number;
@@ -33,14 +35,15 @@ export type Snapshot = {
   /** empty / null until a checkpoint the game has ticked through records them */
   estates: Estate[];
   economy: { treasury: number; income: number; expenses: number; debt: number } | null;
-  military: { levies: number; regiments: number; ships: number } | null;
+  military: { manpower: number; maxManpower: number; regiments: number; ships: number } | null;
+  stability?: number; prestige?: number;
   source?: { save: string; gameVersion: string; extracted: string };
   government?: {
     type: string; heirSelection: string; laws: { slot: string; law: string }[]; reforms: string[]; privileges: string[];
     culture: string; tolerated: string[]; religion: string;
   };
   wars: string[];
-  strait: { active: boolean; influence: number; sovereignty: number; yearsSubject: number } | null;
+  strait: { active: boolean; influence: number; sovereignty: number; yearsSubject: number; areas?: { held: number; total: number } } | null;
   sample: boolean;
 };
 export type CampaignEvent = {
@@ -135,7 +138,7 @@ export function estateColor(id: string, surface: "night" | "folio" = "night"): s
 }
 
 export const EVENT_LABEL: Record<string, string> = {
-  war_declared: "War declared", battle: "Battle", siege: "Siege", peace: "Peace",
+  war_declared: "War declared", war_joined: "Joined a war", battle: "Battle", siege: "Siege", peace: "Peace",
   ruler_change: "Succession", birth: "Birth", death: "Death", marriage: "Marriage",
   estate_change: "Estates", law_change: "Law", reform: "Reform", territory_change: "Territory",
   strait_change: "The Strait", gc_change: "Golden Century", situation: "Situation",

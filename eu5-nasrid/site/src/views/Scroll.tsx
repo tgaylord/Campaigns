@@ -73,8 +73,8 @@ export default function Scroll() {
   const sy = scaleLinear().domain([-100, 100]).range([tops.strait + 12, tops.strait + BANDS[4].h - 12]);
   const straitPath = line<(typeof straitSnaps)[number]>().x((s) => x(yearFrac(s.date))).y((s) => sy(s.strait!.influence)).curve(curveMonotoneX)(straitSnaps);
 
-  const ids = ESTATE_ORDER.filter((id) => snapshots.some((s) => s.estates.some((e) => e.id === id)));
-  const rows = snapshots.map((s) => {
+  const ids = ESTATE_ORDER.filter((id) => snapshots.some((s) => s.estates.some((e) => e.id === id && e.power != null)));
+  const rows = snapshots.filter((s) => s.estates.some((e) => e.power != null)).map((s) => {
     const r: Record<string, number> = { t: yearFrac(s.date) };
     ids.forEach((id) => { r[id] = s.estates.find((e) => e.id === id)?.power ?? 0; });
     return r;

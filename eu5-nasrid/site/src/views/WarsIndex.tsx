@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { scaleLinear } from "d3-scale";
 import { area, curveMonotoneX } from "d3-shape";
 import { wars, events, year, hijri, arabicDigits, yearFrac } from "../lib/data";
+import type { War } from "../lib/data";
 import { PageHead } from "../components/bits";
 import "./wars.css";
 
@@ -9,7 +10,7 @@ export default function WarsIndex() {
   const sorted = [...wars].sort((a, b) => b.start.localeCompare(a.start));
   return (
     <div className="page wars-page">
-      <PageHead title="Wars" ar="الحروب" lede="Every war the kingdom has fought, newest first. The ribbon under each is its war score: gold when the war ran our way, red when it ran against us." />
+      <PageHead title="Wars" ar="الحروب" lede="Every war the kingdom has fought, and those it may be drawn into, newest first. The ribbon under each is its war score: gold when the war ran our way, red when it ran against us." />
       {sorted.length === 0 && <p className="muted">No wars yet. May it stay so.</p>}
       <ul className="war-banners">
         {sorted.map((w) => {
@@ -17,11 +18,11 @@ export default function WarsIndex() {
           const won = fights.filter((f) => ["victory", "taken"].includes(String(f.data.result))).length;
           return (
             <li key={w.id}>
-              <Link to={`/wars/${w.id}`} data-kind="war" data-id={w.id}>
+              <Link to={`/wars/${w.id}`} data-kind="war" data-id={w.id} className={w.involvement === "potential" ? "potential" : undefined}>
                 <span className="years"><span className="ar">{arabicDigits(hijri(w.start).y)}</span>{year(w.start)}–{w.end ? year(w.end) : ""}</span>
                 <span className="name">{w.name}</span>
-                <span className="against ui">Against {w.enemies.join(", ")}{w.allies.length ? `, with ${w.allies.join(", ")}` : ""}</span>
-                <span className="outcome ui">{w.outcome ?? "Still being fought"}{fights.length ? `. ${fights.length} engagements, ${won} won` : ""}</span>
+                <span className="against ui">{againstLine(w)}</span>
+                <span className="outcome ui">{w.outcome ?? (w.involvement === "potential" ? "Being fought without us" : "Still being fought")}{fights.length ? `. ${fights.length} engagements, ${won} won` : ""}</span>
                 <Tide score={w.score} />
               </Link>
             </li>
@@ -31,6 +32,15 @@ export default function WarsIndex() {
     </div>
   );
 }
+
+/** Who the war is against, from Granada's side; a war we stand outside names both sides instead. */
+export function againstLine(w: War) {
+  if (w.involvement === "potential" && w.sides) return `${and(w.sides.attackers)} against ${and(w.sides.defenders)}. Granada stands outside it, and can be called in`;
+  return `Against ${and(w.enemies)}${w.allies.length ? `, with ${and(w.allies)}` : ""}`;
+}
+
+/** "A", "A and B", "A, B and C" */
+export const and = (xs: string[]) => (xs.length < 2 ? xs.join("") : `${xs.slice(0, -1).join(", ")} and ${xs[xs.length - 1]}`);
 
 export function Tide({ score, big = false }: { score: { date: string; value: number }[]; big?: boolean }) {
   if (score.length < 2) return null;

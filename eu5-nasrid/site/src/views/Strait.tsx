@@ -188,7 +188,8 @@ export function Conditions() {
     { label: "Independent", met: !s.overlord, detail: s.overlord ? `Tributary of ${s.overlord.country}` : "No overlord" },
     { label: "Influence within the channel", met: Math.abs(s.strait.influence) < 50, detail: `${signed(s.strait.influence)} (needs −50 to +50)` },
     { label: "Sovereignty above 50", met: s.strait.sovereignty > 50, detail: `${s.strait.sovereignty} now` },
-    { label: "Hold the Granada, Andalusia and Murcia areas", met: null, detail: "Read from saves once the parser exists" },
+    { label: "Hold the Granada, Andalusia and Murcia areas", met: s.strait.areas ? s.strait.areas.held === s.strait.areas.total : null,
+      detail: s.strait.areas ? `${s.strait.areas.held} of ${s.strait.areas.total} locations, ours or our subjects'` : "Not recorded at this checkpoint" },
   ];
   return (
     <ul className="conditions ui">

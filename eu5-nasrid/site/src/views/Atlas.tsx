@@ -225,11 +225,13 @@ export default function Atlas() {
               <div><dt>Monthly balance</dt><dd>{signed(Math.round((snap.economy.income - snap.economy.expenses) * 10) / 10)}</dd></div>
             </>}
             {snap.military && <>
-              <div><dt>Levies</dt><dd>{nf.format(snap.military.levies)}</dd></div>
+              <div><dt>Manpower</dt><dd>{nf.format(snap.military.manpower)}<small> of {nf.format(snap.military.maxManpower)}</small></dd></div>
               <div><dt>Regiments, ships</dt><dd>{snap.military.regiments}, {snap.military.ships}</dd></div>
             </>}
+            {snap.stability != null && <div><dt>Stability</dt><dd>{snap.stability}</dd></div>}
+            {snap.prestige != null && <div><dt>Prestige</dt><dd>{snap.prestige}</dd></div>}
           </dl>
-          {!snap.economy && <p className="quiet">The treasury, levies and estates aren't recorded at this checkpoint. The game settles them over its first few months.</p>}
+          {!snap.economy && <p className="quiet">The treasury, manpower and estates aren't recorded at this checkpoint. The game settles them over its first few months.</p>}
           {snap.strait ? (
             <Link to="/strait" className="strait-mini">
               <span>The Strait</span>

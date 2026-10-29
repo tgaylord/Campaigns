@@ -15002,5 +15002,7 @@
   "treaty_of_tordesillas": false,
   "war_of_religions": false,
   "western_schism": false
- }
+ },
+ "strait": null,
+ "wars": []
 }

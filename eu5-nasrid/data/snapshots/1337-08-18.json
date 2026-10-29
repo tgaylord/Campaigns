@@ -1,0 +1,230 @@
+{
+ "date": "1337-08-18",
+ "checkpoint": "Morocco's war on Castile",
+ "note": "Four and a half months in, three weeks after Morocco declared war on Castile. Granada is not in the war; Morocco can call us in under our alliance. The save records each estate's satisfaction but not its share of power, so the Council's seats stay empty until the shares are read off the estates screen.",
+ "source": {
+  "save": "SP_GRA_1337_08_18 (compressed)",
+  "gameVersion": "1.4.5",
+  "extracted": "extracted/1337-08-18.json"
+ },
+ "ruler": "yusuf-i",
+ "heir": "faraj-ibn-ismail",
+ "regent": null,
+ "capital": "gharnata",
+ "rank": "duchy",
+ "locations": 18,
+ "overlord": {
+  "country": "Castile",
+  "type": "tributary"
+ },
+ "subjects": [],
+ "allies": [
+  "Morocco"
+ ],
+ "rivals": [],
+ "cabinet": [
+  {
+   "person": "faraj-ibn-ismail",
+   "role": "Strengthen the government"
+  },
+  {
+   "person": "yusuf-ibn-muhammad",
+   "role": "Promote Granadan sovereignty"
+  }
+ ],
+ "politicalInfluence": 37,
+ "stability": 30,
+ "prestige": 26,
+ "population": {
+  "total": 465078,
+  "cultures": {
+   "Andalusi": 451536,
+   "Sephardi": 12336,
+   "Ligurian": 1207
+  },
+  "religions": {
+   "Sunni": 451536,
+   "Jewish": 12335,
+   "Catholic": 1207
+  }
+ },
+ "estates": [
+  {
+   "id": "nobles",
+   "name": "Nobles",
+   "power": null,
+   "satisfaction": 53
+  },
+  {
+   "id": "clergy",
+   "name": "Clergy",
+   "power": null,
+   "satisfaction": 50
+  },
+  {
+   "id": "burghers",
+   "name": "Burghers",
+   "power": null,
+   "satisfaction": 53
+  },
+  {
+   "id": "peasants",
+   "name": "Peasants",
+   "power": null,
+   "satisfaction": 61
+  },
+  {
+   "id": "dhimmi",
+   "name": "Dhimmī",
+   "power": null,
+   "satisfaction": 50
+  }
+ ],
+ "economy": {
+  "treasury": 166,
+  "income": 43.6,
+  "expenses": 34.4,
+  "debt": 0
+ },
+ "military": {
+  "manpower": 3207,
+  "maxManpower": 3413,
+  "regiments": 3,
+  "ships": 5
+ },
+ "wars": [],
+ "strait": {
+  "active": true,
+  "influence": -24.2,
+  "sovereignty": 50.1,
+  "yearsSubject": 16,
+  "areas": {
+   "held": 18,
+   "total": 72
+  }
+ },
+ "government": {
+  "type": "monarchy",
+  "heirSelection": "cognatic_primogeniture",
+  "laws": [
+   {
+    "slot": "feudal_de_jure_law",
+    "law": "by_tradition"
+   },
+   {
+    "slot": "medieval_levy_law",
+    "law": "peasant_levies"
+   },
+   {
+    "slot": "royal_court_customs_law",
+    "law": "aristocratic_court_policy"
+   },
+   {
+    "slot": "iqta_law",
+    "law": "efficient_tax_farming"
+   },
+   {
+    "slot": "censorship",
+    "law": "limited_censorship"
+   },
+   {
+    "slot": "slave_conversion",
+    "law": "allow_slave_religion"
+   },
+   {
+    "slot": "education_masses_law",
+    "law": "basic_religious_education"
+   },
+   {
+    "slot": "administrative_system",
+    "law": "feudal_administration"
+   },
+   {
+    "slot": "cultural_traditions_law",
+    "law": "martial_society"
+   },
+   {
+    "slot": "marriage_law",
+    "law": "muslim_marriage"
+   },
+   {
+    "slot": "heir_religion_law",
+    "law": "heir_same_religion"
+   },
+   {
+    "slot": "coin_laws",
+    "law": "gold_and_silver_coins"
+   },
+   {
+    "slot": "mining_law",
+    "law": "nobles_mining_law"
+   },
+   {
+    "slot": "immigration_law",
+    "law": "open_borders_law"
+   },
+   {
+    "slot": "legal_code_law",
+    "law": "sharia_law_policy"
+   },
+   {
+    "slot": "sharia_law",
+    "law": "maliki_policy"
+   },
+   {
+    "slot": "maritime_law",
+    "law": "protect_trade_routes"
+   },
+   {
+    "slot": "piracy_law",
+    "law": "anti_piracy_policy"
+   },
+   {
+    "slot": "distribution_of_power_law",
+    "law": "dop_traditional_distribution_of_power"
+   },
+   {
+    "slot": "dhimmi_regulations_law",
+    "law": "dhimmi_status_policy"
+   }
+  ],
+  "reforms": [
+   "the_jewel_of_alandalus_reform",
+   "gra_hajib_reform",
+   "catalan_merchant_privileges"
+  ],
+  "privileges": [
+   "feudal_mercenary_contracts",
+   "nobles_land_rights",
+   "primacy_of_nobility",
+   "noble_marriage_rights",
+   "clergy_literacy_rights",
+   "clerical_advisory_council",
+   "clergy_land_rights",
+   "building_rights",
+   "market_fairs",
+   "sponsor_maritime_contracts",
+   "communal_lands",
+   "peasants_allowed_weapons_privilege",
+   "peasants_free_peasantry",
+   "dhimmi_military_service",
+   "dhimmi_promote_tolerance",
+   "dhimmi_administrative_posts",
+   "noble_sponsored_navy",
+   "jewish_court_financier_charter",
+   "jewish_physician_exemption",
+   "dhimmi_pact_of_umar",
+   "al_caid",
+   "andalusi_elite",
+   "treasury_rights",
+   "gra_visirate",
+   "gra_ulema_council",
+   "gra_volunteers_of_faith"
+  ],
+  "culture": "andalusi",
+  "tolerated": [
+   "sephardi"
+  ],
+  "religion": "sunni"
+ }
+}
