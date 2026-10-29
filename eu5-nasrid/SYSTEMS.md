@@ -72,6 +72,7 @@ Each campaign gets its own top-level folder; Rome or any other campaign would si
   - a major reform or law, or an estate privilege granted or revoked
   - forming Al-Andalus; Golden Century thresholds
   - otherwise about every 10–15 in-game years
+- **Not every save is a checkpoint.** A save that meets none of the triggers above is a *reading*: Claude decodes it, logs what it shows as events (sourced "save of <date>"), and adds no snapshot, extracted file or realm map. Snapshots are what the timelines plot (the Atlas slider, the Strait's banners, the Council's trails, the Provinces), so they should mark turning points, not every glance at the game. While saves come quickly, a reading is the default; when one changes the story enough (by Trent's account or by what it shows), it becomes a checkpoint after all. The checkpoints already recorded stay.
 - **Patches:** when a save edit is needed, Claude writes a verified patch script (with SHA-256 checks) and Trent runs it. Claude never overwrites a save, and works on copies only.
 
 ---
