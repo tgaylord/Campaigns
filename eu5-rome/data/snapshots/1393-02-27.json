@@ -1,0 +1,4816 @@
+{
+ "date": "1393.2.27.10",
+ "save_label": "1393.2.27.10 - Byzantium",
+ "country": {
+  "id": 203,
+  "tag": "BYZ",
+  "name": "BYZ"
+ },
+ "original_tag": "BYZ",
+ "level": "4",
+ "formed_from": null,
+ "great_power_rank": "5",
+ "starting_technology_level": "3",
+ "last_months_population": "2399.84444",
+ "previous_tags": [],
+ "capital": "constantinople",
+ "primary_culture": "greek_culture",
+ "accepted_cultures": [
+  "venetian"
+ ],
+ "tolerated_cultures": [
+  "aromanian"
+ ],
+ "primary_religion": "orthodox",
+ "court_language": "greek_language",
+ "liturgical_language": "koine_dialect",
+ "currency": {
+  "manpower": "3.46624",
+  "sailors": "9.8994",
+  "gold": "934.03643",
+  "stability": "-25.44953",
+  "war_exhaustion": "3.04836",
+  "inflation": "0.06393",
+  "prestige": "46.14266",
+  "army_tradition": "49.36636",
+  "navy_tradition": "3.39141",
+  "government_power": "99.21369",
+  "karma": "-27.07578",
+  "religious_influence": "40.3243",
+  "purity": "60",
+  "righteousness": "90",
+  "complacency": "1.89464"
+ },
+ "economy": {
+  "income": "293.22194",
+  "expense": "303.02091",
+  "creditworthiness": "0.53595",
+  "loan_capacity": "23965.34998",
+  "tax_rates": {
+   "crown_estate": "0.26596",
+   "nobles_estate": "0.46037",
+   "burghers_estate": "0.31926",
+   "peasants_estate": "0.45734"
+  }
+ },
+ "historical_population": [
+  1216.39801,
+  1217.31169,
+  1220.26637,
+  1224.47389,
+  1204.24314,
+  2132.62725,
+  2482.03699,
+  2495.30081,
+  2508.75704,
+  2522.48359,
+  2534.97871,
+  2534.27567,
+  2246.65646,
+  1856.75533,
+  1883.37867,
+  1903.63371,
+  1901.92993,
+  1927.44887,
+  1937.80429,
+  1951.28089,
+  1873.26747,
+  1833.30827,
+  1998.8218,
+  1998.47218,
+  1993.13193,
+  2010.86378,
+  2020.17409,
+  2048.09644,
+  2067.14104,
+  2086.47493,
+  2105.83752,
+  2102.3532,
+  2097.26832,
+  2115.9969,
+  2132.748,
+  2151.50843,
+  2170.88974,
+  2190.8582,
+  2176.36216,
+  2195.80714,
+  2436.67801,
+  2648.58055,
+  2669.85321,
+  2461.58056,
+  2344.61958,
+  2337.47215,
+  2358.25788,
+  2380.27406,
+  2400.20912,
+  2422.65452,
+  2444.76522,
+  2323.0987,
+  2348.20888,
+  2372.63499,
+  2396.9097,
+  2421.28063,
+  2399.84444
+ ],
+ "historical_tax_base": [
+  46.29698,
+  74.44999,
+  58.70422,
+  54.02688,
+  44.74285,
+  71.48132,
+  79.86044,
+  85.39055,
+  97.27586,
+  108.57866,
+  107.43591,
+  132.36339,
+  127.8538,
+  101.55573,
+  107.47931,
+  128.43432,
+  137.15404,
+  162.40712,
+  162.9843,
+  166.60503,
+  157.54947,
+  160.00065,
+  191.53424,
+  177.51393,
+  170.24554,
+  212.90271,
+  198.75569,
+  197.1782,
+  224.42025,
+  229.00751,
+  223.39388,
+  208.24237,
+  248.95287,
+  247.0006,
+  253.44554,
+  247.70571,
+  257.41724,
+  260.24371,
+  235.62533,
+  236.36788,
+  247.53232,
+  294.22815,
+  301.23717,
+  317.05055,
+  320.61197,
+  323.16449,
+  375.06062,
+  408.23203,
+  399.99184,
+  413.75531,
+  445.66083,
+  464.81885,
+  498.40001,
+  505.20434,
+  520.76186,
+  502.18015,
+  449.09677
+ ],
+ "historical_economical_base": [
+  73.59122,
+  128.9293,
+  115.10414,
+  109.43688,
+  93.90181,
+  195.05295,
+  214.14345,
+  213.36417,
+  225.83186,
+  230.31736,
+  214.31631,
+  242.4255,
+  230.88308,
+  181.61242,
+  197.81711,
+  235.27221,
+  226.63625,
+  246.69254,
+  238.57111,
+  243.55624,
+  219.25778,
+  217.07228,
+  269.37765,
+  242.00371,
+  241.56388,
+  282.9046,
+  266.05768,
+  260.63512,
+  294.75665,
+  298.43072,
+  300.41151,
+  270.45024,
+  333.69883,
+  335.34118,
+  343.56701,
+  345.95336,
+  351.97335,
+  350.9059,
+  311.73528,
+  313.30631,
+  327.21549,
+  428.68482,
+  437.47443,
+  454.04765,
+  443.54627,
+  441.36153,
+  458.74453,
+  479.4773,
+  482.52493,
+  489.3468,
+  504.61583,
+  507.80554,
+  509.88774,
+  518.29828,
+  527.08251,
+  532.85497,
+  498.06332
+ ],
+ "manpower": {
+  "max_manpower": "0.924",
+  "max_sailors": "9.8604",
+  "monthly_manpower": "-0.16174"
+ },
+ "government": {
+  "type": "monarchy",
+  "heir_selection": "byzantine_succession"
+ },
+ "laws": [
+  {
+   "slot": "feudal_de_jure_law",
+   "object": "by_blood",
+   "date": "1333.4.1"
+  },
+  {
+   "slot": "medieval_levy_law",
+   "object": "peasant_levies",
+   "date": "1372.1.16.14"
+  },
+  {
+   "slot": "royal_court_customs_law",
+   "object": "byz_porphyrogennetos_court_policy",
+   "date": "1333.4.1"
+  },
+  {
+   "slot": "patriarchate_law",
+   "object": "state_patriarchate_policy",
+   "date": "1333.4.1"
+  },
+  {
+   "slot": "censorship",
+   "object": "no_censorship",
+   "date": "1355.8.10.16"
+  },
+  {
+   "slot": "slave_conversion",
+   "object": "allow_slave_religion",
+   "date": "1342.11.11"
+  },
+  {
+   "slot": "education_elites_law",
+   "object": "education_of_the_people",
+   "date": "1378.8.28"
+  },
+  {
+   "slot": "education_masses_law",
+   "object": "basic_religious_education",
+   "date": "1333.4.1"
+  },
+  {
+   "slot": "administrative_system",
+   "object": "komnenian_formalization",
+   "date": "1363.5.1"
+  },
+  {
+   "slot": "bureaucracy_law",
+   "object": "centralized_bureaucracy_policy",
+   "date": "1393.1.13.16"
+  },
+  {
+   "slot": "cultural_traditions_law",
+   "object": "martial_society",
+   "date": "1333.4.1"
+  },
+  {
+   "slot": "marriage_law",
+   "object": "monogamous_marriage",
+   "date": "1333.4.1"
+  },
+  {
+   "slot": "heir_religion_law",
+   "object": "heir_any_religion",
+   "date": "1351.1.2.2"
+  },
+  {
+   "slot": "coin_laws",
+   "object": "gold_and_silver_coins",
+   "date": "1333.4.1"
+  },
+  {
+   "slot": "precious_metal_distribution_law",
+   "object": "gold_export_ban",
+   "date": "1337.4.1"
+  },
+  {
+   "slot": "mining_law",
+   "object": "nobles_mining_law",
+   "date": "1333.4.1"
+  },
+  {
+   "slot": "immigration_law",
+   "object": "open_borders_law",
+   "date": "1333.4.1"
+  },
+  {
+   "slot": "legal_code_law",
+   "object": "byzantine_law",
+   "date": "1333.4.1"
+  },
+  {
+   "slot": "maritime_law",
+   "object": "protect_trade_routes",
+   "date": "1333.4.1"
+  },
+  {
+   "slot": "piracy_law",
+   "object": "anti_piracy_policy",
+   "date": "1333.4.1"
+  },
+  {
+   "slot": "distribution_of_power_law",
+   "object": "dop_favor_the_ruler",
+   "date": "1390.11.16.10"
+  },
+  {
+   "slot": "nobles_rights_laws",
+   "object": "curtail_nobles_policy",
+   "date": "1387.4.5.10"
+  }
+ ],
+ "privileges": [
+  {
+   "object": "clergy_literacy_rights",
+   "date": "1333.4.1"
+  },
+  {
+   "object": "noble_marriage_rights",
+   "date": "1333.4.1"
+  },
+  {
+   "object": "clergy_enforced_unity",
+   "date": "1333.4.1"
+  },
+  {
+   "object": "building_roads_rights",
+   "date": "1333.4.1"
+  },
+  {
+   "object": "market_fairs",
+   "date": "1333.4.1"
+  },
+  {
+   "object": "formal_guilds",
+   "date": "1333.4.1"
+  },
+  {
+   "object": "control_over_monetary_policy",
+   "date": "1333.4.1"
+  },
+  {
+   "object": "clergy_powerful_dioceses",
+   "date": "1333.4.1"
+  },
+  {
+   "object": "land_of_commerce",
+   "date": "1333.4.1"
+  },
+  {
+   "object": "clergy_strengthen_faith",
+   "date": "1333.4.1"
+  },
+  {
+   "object": "elaborate_court_ceremonies",
+   "date": "1333.4.1"
+  },
+  {
+   "object": "control_over_the_coinage",
+   "date": "1333.4.1"
+  },
+  {
+   "object": "sponsor_maritime_contracts",
+   "date": "1333.4.1"
+  },
+  {
+   "object": "embellish_great_works_of_faith",
+   "date": "1333.4.1"
+  },
+  {
+   "object": "access_to_royal_and_ecclesiastical_courts",
+   "date": "1333.4.1"
+  },
+  {
+   "object": "clergy_religious_state",
+   "date": "1337.4.1"
+  },
+  {
+   "object": "noble_sponsored_navy",
+   "date": "1343.7.1"
+  },
+  {
+   "object": "shipwright_contracts",
+   "date": "1345.3.16.10"
+  },
+  {
+   "object": "peasants_allowed_weapons_privilege",
+   "date": "1390.10.1.20"
+  }
+ ],
+ "reforms": [
+  {
+   "object": "theme_system",
+   "date": "1333.4.1"
+  },
+  {
+   "object": "katepanata",
+   "date": "1333.4.1"
+  },
+  {
+   "object": "kritai_katholikoi_reformed",
+   "date": "1337.12.1"
+  },
+  {
+   "object": "harbor_administration",
+   "date": "1351.4.12.14"
+  },
+  {
+   "object": "everyone_serves_reform",
+   "date": "1372.1.16.14"
+  }
+ ],
+ "societal_values": {
+  "centralization_vs_decentralization": "51.55897",
+  "traditionalist_vs_innovative": "21.51375",
+  "spiritualist_vs_humanist": "-31.94407",
+  "aristocracy_vs_plutocracy": "-62",
+  "serfdom_vs_free_subjects": "-55",
+  "mercantilism_vs_free_trade": "-999",
+  "belligerent_vs_conciliatory": "-41.20092",
+  "quality_vs_quantity": "61",
+  "offensive_vs_defensive": "34.08266",
+  "land_vs_naval": "75",
+  "capital_economy_vs_traditional_economy": "77.91294",
+  "individualism_vs_communalism": "90.20606",
+  "outward_vs_inward": "-999",
+  "sinicized_vs_unsinicized": "-999",
+  "absolutism_vs_liberalism": "-999",
+  "mysticism_vs_jurisprudence": "-999",
+  "latinization_vs_hellenization": "98.11124"
+ },
+ "gov_keys": [
+  "type",
+  "heir_selection",
+  "start_regency_date",
+  "ruler",
+  "consort",
+  "heir",
+  "parliament",
+  "cabinet_entries",
+  "ruler_terms",
+  "regnal_numbers",
+  "implemented_laws",
+  "implemented_privileges",
+  "societal_values",
+  "estates",
+  "implemented_reforms",
+  "T_3d95"
+ ],
+ "ruler_terms": [
+  {
+   "char": "655",
+   "regnal_number": "2",
+   "regnal_name": null,
+   "title": null,
+   "start": "1320.10.12",
+   "end": "1328.5.24",
+   "info": {
+    "id": 655,
+    "name": "name_andronikos",
+    "nickname": null,
+    "dynasty": "palaiologos_dynasty",
+    "female": false,
+    "born": "1259.3.25",
+    "died": "1332.3.13",
+    "death_reason": null,
+    "stats": [
+     "45",
+     "45",
+     "39"
+    ],
+    "traits": [
+     "babbling_buffoon",
+     "embezzler"
+    ],
+    "general_trait": null,
+    "culture": "greek_culture",
+    "religion": "orthodox",
+    "country": "BYZ",
+    "father": "654",
+    "mother": "642",
+    "spouses": [],
+    "children": [
+     "658",
+     "666",
+     "669",
+     "670",
+     "671",
+     "811"
+    ],
+    "roles": []
+   }
+  },
+  {
+   "char": "660",
+   "regnal_number": "3",
+   "regnal_name": null,
+   "title": null,
+   "start": "1328.5.24",
+   "end": "1338.3.17",
+   "info": {
+    "id": 660,
+    "name": "name_andronikos",
+    "nickname": null,
+    "dynasty": "palaiologos_dynasty",
+    "female": false,
+    "born": "1297.3.25",
+    "died": "1338.3.17",
+    "death_reason": "disease",
+    "stats": [
+     "49",
+     "75",
+     "39"
+    ],
+    "traits": [
+     "greedy"
+    ],
+    "general_trait": null,
+    "culture": "greek_culture",
+    "religion": "orthodox",
+    "country": "BYZ",
+    "father": "658",
+    "mother": "659",
+    "spouses": [
+     "1916"
+    ],
+    "children": [
+     "661",
+     "662",
+     "844",
+     "5573"
+    ],
+    "roles": []
+   }
+  },
+  {
+   "char": "666",
+   "regnal_number": "1",
+   "regnal_name": "name_demetrius",
+   "title": "rank_empire_byzantine_ruler_male",
+   "start": "1342.7.31",
+   "end": "1356.4.2",
+   "info": {
+    "id": 666,
+    "name": "name_demetrius",
+    "nickname": null,
+    "dynasty": "palaiologos_dynasty",
+    "female": false,
+    "born": "1295.1.1",
+    "died": "1356.4.2",
+    "death_reason": "at_sea",
+    "stats": [
+     "43",
+     "29",
+     "64"
+    ],
+    "traits": [
+     "tolerant",
+     "bold_fighter"
+    ],
+    "general_trait": null,
+    "culture": "greek_culture",
+    "religion": "orthodox",
+    "country": "BYZ",
+    "father": "655",
+    "mother": "2171",
+    "spouses": [
+     "667"
+    ],
+    "children": [
+     "668",
+     "23245"
+    ],
+    "roles": [
+     [
+      "REBEL",
+      "1337.8.1",
+      "1342.7.31"
+     ],
+     [
+      "ADMIRAL",
+      "1352.4.19",
+      "1356.4.2"
+     ]
+    ]
+   }
+  },
+  {
+   "char": "23245",
+   "regnal_number": "2",
+   "regnal_name": "name_philip",
+   "title": "rank_empire_byzantine_ruler_male",
+   "start": "1356.4.2",
+   "end": "1389.7.11",
+   "info": {
+    "id": 23245,
+    "name": "name_philip",
+    "nickname": null,
+    "dynasty": "palaiologos_dynasty",
+    "female": false,
+    "born": "1337.12.31",
+    "died": "1389.7.11",
+    "death_reason": "at_sea",
+    "stats": [
+     "49.78218",
+     "69.80094",
+     "46.02191"
+    ],
+    "traits": [
+     "righteous",
+     "tolerant",
+     "embezzler"
+    ],
+    "general_trait": "goal_oriented",
+    "culture": "greek_culture",
+    "religion": "orthodox",
+    "country": "BYZ",
+    "father": "666",
+    "mother": "667",
+    "spouses": [
+     "5577"
+    ],
+    "children": [
+     "33574405",
+     "42889",
+     "16820233",
+     "46935"
+    ],
+    "roles": [
+     [
+      "CABINET",
+      "1354.2.27.10",
+      "1356.4.2"
+     ],
+     [
+      "GENERAL",
+      "1367.9.29.12",
+      "1367.9.29.12"
+     ],
+     [
+      "ADMIRAL",
+      "1370.10.6.18",
+      "1389.7.11"
+     ]
+    ]
+   }
+  },
+  {
+   "char": "42889",
+   "regnal_number": "5",
+   "regnal_name": "name_john",
+   "title": "rank_empire_byzantine_ruler_male",
+   "start": "1389.7.11",
+   "end": null,
+   "info": {
+    "id": 42889,
+    "name": "name_john",
+    "nickname": null,
+    "dynasty": "palaiologos_dynasty",
+    "female": false,
+    "born": "1356.12.20",
+    "died": null,
+    "death_reason": null,
+    "stats": [
+     "72.04",
+     "45.35",
+     "76.44"
+    ],
+    "traits": [
+     "intricate_web_weaver"
+    ],
+    "general_trait": "ruthless",
+    "culture": "greek_culture",
+    "religion": "orthodox",
+    "country": "BYZ",
+    "father": "23245",
+    "mother": "5577",
+    "spouses": [
+     "16817844"
+    ],
+    "children": [
+     "57280",
+     "50359425"
+    ],
+    "roles": [
+     [
+      "CABINET",
+      "1373.12.19",
+      "1389.7.11"
+     ],
+     [
+      "GENERAL",
+      "1391.7.29.18",
+      null
+     ]
+    ]
+   }
+  }
+ ],
+ "family": {
+  "ruler": {
+   "id": 42889,
+   "name": "name_john",
+   "nickname": null,
+   "dynasty": "palaiologos_dynasty",
+   "female": false,
+   "born": "1356.12.20",
+   "died": null,
+   "death_reason": null,
+   "stats": [
+    "72.04",
+    "45.35",
+    "76.44"
+   ],
+   "traits": [
+    "intricate_web_weaver"
+   ],
+   "general_trait": "ruthless",
+   "culture": "greek_culture",
+   "religion": "orthodox",
+   "country": "BYZ",
+   "father": "23245",
+   "mother": "5577",
+   "spouses": [
+    "16817844"
+   ],
+   "children": [
+    "57280",
+    "50359425"
+   ],
+   "roles": [
+    [
+     "CABINET",
+     "1373.12.19",
+     "1389.7.11"
+    ],
+    [
+     "GENERAL",
+     "1391.7.29.18",
+     null
+    ]
+   ]
+  },
+  "consort": {
+   "id": 16817844,
+   "name": "name_desislava",
+   "nickname": null,
+   "dynasty": "sratsimir_dynasty",
+   "female": true,
+   "born": "1355.1.4",
+   "died": null,
+   "death_reason": null,
+   "stats": [
+    "36.6",
+    "43.75",
+    "55.16"
+   ],
+   "traits": [],
+   "general_trait": null,
+   "culture": "bulgarian",
+   "religion": "orthodox",
+   "country": "BYZ",
+   "father": "843",
+   "mother": "844",
+   "spouses": [
+    "42889"
+   ],
+   "children": [
+    "57280",
+    "50359425"
+   ],
+   "roles": []
+  },
+  "heir": {
+   "id": 57280,
+   "name": "name_basil",
+   "nickname": null,
+   "dynasty": "palaiologos_dynasty",
+   "female": false,
+   "born": "1376.8.29",
+   "died": null,
+   "death_reason": null,
+   "stats": [
+    "56.25",
+    "58.75",
+    "69.05"
+   ],
+   "traits": [],
+   "general_trait": null,
+   "culture": "greek_culture",
+   "religion": "orthodox",
+   "country": "BYZ",
+   "father": "42889",
+   "mother": "16817844",
+   "spouses": [
+    "55477"
+   ],
+   "children": [],
+   "roles": [
+    [
+     "CABINET",
+     "1392.12.24",
+     null
+    ]
+   ]
+  },
+  "ruler_children": [
+   {
+    "id": 57280,
+    "name": "name_basil",
+    "nickname": null,
+    "dynasty": "palaiologos_dynasty",
+    "female": false,
+    "born": "1376.8.29",
+    "died": null,
+    "death_reason": null,
+    "stats": [
+     "56.25",
+     "58.75",
+     "69.05"
+    ],
+    "traits": [],
+    "general_trait": null,
+    "culture": "greek_culture",
+    "religion": "orthodox",
+    "country": "BYZ",
+    "father": "42889",
+    "mother": "16817844",
+    "spouses": [
+     "55477"
+    ],
+    "children": [],
+    "roles": [
+     [
+      "CABINET",
+      "1392.12.24",
+      null
+     ]
+    ]
+   },
+   {
+    "id": 50359425,
+    "name": "name_andronikos",
+    "nickname": null,
+    "dynasty": "palaiologos_dynasty",
+    "female": false,
+    "born": "1383.5.11",
+    "died": null,
+    "death_reason": null,
+    "stats": [
+     "21.85",
+     "36.65",
+     "32.05"
+    ],
+    "traits": [],
+    "general_trait": null,
+    "culture": "greek_culture",
+    "religion": "orthodox",
+    "country": "BYZ",
+    "father": "42889",
+    "mother": "16817844",
+    "spouses": [],
+    "children": [],
+    "roles": []
+   }
+  ],
+  "ruler_spouses": [
+   {
+    "id": 16817844,
+    "name": "name_desislava",
+    "nickname": null,
+    "dynasty": "sratsimir_dynasty",
+    "female": true,
+    "born": "1355.1.4",
+    "died": null,
+    "death_reason": null,
+    "stats": [
+     "36.6",
+     "43.75",
+     "55.16"
+    ],
+    "traits": [],
+    "general_trait": null,
+    "culture": "bulgarian",
+    "religion": "orthodox",
+    "country": "BYZ",
+    "father": "843",
+    "mother": "844",
+    "spouses": [
+     "42889"
+    ],
+    "children": [
+     "57280",
+     "50359425"
+    ],
+    "roles": []
+   }
+  ],
+  "heir_children": []
+ },
+ "estates": {
+  "crown_estate": {
+   "satisfaction": "1",
+   "power": null,
+   "gold": null,
+   "raw_keys": null
+  },
+  "nobles_estate": {
+   "satisfaction": "0.36647",
+   "power": null,
+   "gold": "27476.01954",
+   "raw_keys": null
+  },
+  "clergy_estate": {
+   "satisfaction": "0.70684",
+   "power": null,
+   "gold": "321.63256",
+   "raw_keys": null
+  },
+  "burghers_estate": {
+   "satisfaction": "0.61896",
+   "power": null,
+   "gold": "1747.68635",
+   "raw_keys": null
+  },
+  "peasants_estate": {
+   "satisfaction": "0.2889",
+   "power": null,
+   "gold": "428.20883",
+   "raw_keys": null
+  },
+  "dhimmi_estate": {
+   "satisfaction": null,
+   "power": null,
+   "gold": "12.92355",
+   "raw_keys": null
+  },
+  "tribes_estate": {
+   "satisfaction": "0.48974",
+   "power": null,
+   "gold": "27.59578",
+   "raw_keys": null
+  },
+  "cossacks_estate": {
+   "satisfaction": null,
+   "power": null,
+   "gold": null,
+   "raw_keys": null
+  }
+ },
+ "realm": {
+  "locations": 181,
+  "population_k": 2405.1,
+  "cultures": [
+   [
+    "greek_culture",
+    1763.1,
+    73.31
+   ],
+   [
+    "bulgarian",
+    257.2,
+    10.69
+   ],
+   [
+    "turkish_culture",
+    100.4,
+    4.17
+   ],
+   [
+    "venetian",
+    73.0,
+    3.03
+   ],
+   [
+    "aromanian",
+    55.1,
+    2.29
+   ],
+   [
+    "turkoman_culture",
+    52.2,
+    2.17
+   ],
+   [
+    "dalmatian",
+    35.5,
+    1.48
+   ],
+   [
+    "albanian",
+    26.7,
+    1.11
+   ],
+   [
+    "serbian",
+    20.1,
+    0.84
+   ],
+   [
+    "armenian_culture",
+    14.9,
+    0.62
+   ],
+   [
+    "sclavene",
+    2.0,
+    0.08
+   ],
+   [
+    "wallachian",
+    1.2,
+    0.05
+   ],
+   [
+    "romanyoti",
+    1.1,
+    0.05
+   ],
+   [
+    "croatian",
+    0.7,
+    0.03
+   ],
+   [
+    "french",
+    0.7,
+    0.03
+   ]
+  ],
+  "religions": [
+   [
+    "orthodox",
+    2040.0,
+    84.82
+   ],
+   [
+    "catholic",
+    182.1,
+    7.57
+   ],
+   [
+    "sunni",
+    116.5,
+    4.85
+   ],
+   [
+    "shia",
+    51.1,
+    2.12
+   ],
+   [
+    "paulicianism",
+    13.7,
+    0.57
+   ],
+   [
+    "bogomilism",
+    1.5,
+    0.06
+   ],
+   [
+    "judaism",
+    0.3,
+    0.01
+   ]
+  ],
+  "pop_types": {
+   "nobles": 11.6,
+   "clergy": 31.6,
+   "burghers": 69.9,
+   "laborers": 442.2,
+   "soldiers": 36.6,
+   "peasants": 1777.5,
+   "tribesmen": 35.6,
+   "slaves": 0.0
+  },
+  "ranks": {
+   "city": 6,
+   "rural_settlement": 158,
+   "town": 16,
+   "megalopolis": 1
+  },
+  "provinces": {
+   "venice_province": 1,
+   "north_dalmatia_province": 1,
+   "south_dalmatia_province": 3,
+   "central_macedonia_province": 6,
+   "chalkidiki_province": 4,
+   "lower_macedonia_province": 5,
+   "pirin_province": 5,
+   "prilep_province": 6,
+   "upper_macedonia_province": 5,
+   "vardar_province": 8,
+   "constantinople_province": 5,
+   "dardanelles_province": 6,
+   "edirne_province": 5,
+   "evros_province": 4,
+   "rhodopes_province": 7,
+   "sliven_province": 1,
+   "zagore_province": 2,
+   "albania_province": 3,
+   "south_epirus_province": 1,
+   "thessaly_province": 8,
+   "arcadia_province": 3,
+   "argolis_province": 1,
+   "laconia_province": 4,
+   "messenia_province": 2,
+   "chios_province": 3,
+   "crete_province": 8,
+   "lemnos_province": 5,
+   "naxos_province": 3,
+   "rodos_province": 1,
+   "biga_province": 8,
+   "hudavendigar_province": 5,
+   "karasi_province": 9,
+   "kocaeli_province": 4,
+   "sultanonu_province": 7,
+   "bolu_province": 6,
+   "aydin_province": 8,
+   "mugla_province": 8,
+   "saruhan_province": 5,
+   "smyrna_province": 5
+  },
+  "tax": 640.8
+ },
+ "owned_locations": [
+  [
+   3291,
+   "venice",
+   "venice_province",
+   "city",
+   "1376.12.25"
+  ],
+  [
+   5671,
+   "zadar",
+   "north_dalmatia_province",
+   "rural_settlement",
+   "1376.12.25"
+  ],
+  [
+   5673,
+   "dubrovnik",
+   "south_dalmatia_province",
+   "city",
+   "1376.12.25"
+  ],
+  [
+   5678,
+   "slano",
+   "south_dalmatia_province",
+   "town",
+   "1376.12.25"
+  ],
+  [
+   5679,
+   "split",
+   "south_dalmatia_province",
+   "rural_settlement",
+   "1376.12.25"
+  ],
+  [
+   5811,
+   "edessa",
+   "central_macedonia_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5812,
+   "giannitsa",
+   "central_macedonia_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5813,
+   "gynaikokastro",
+   "central_macedonia_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5814,
+   "hatera",
+   "central_macedonia_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5815,
+   "kilkis",
+   "central_macedonia_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5816,
+   "veria",
+   "central_macedonia_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5817,
+   "thessaloniki",
+   "chalkidiki_province",
+   "city",
+   "1337.4.1"
+  ],
+  [
+   5818,
+   "kassandreia",
+   "chalkidiki_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5819,
+   "mount_athos",
+   "chalkidiki_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5820,
+   "polygyros",
+   "chalkidiki_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5822,
+   "serres",
+   "lower_macedonia_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5823,
+   "drama",
+   "lower_macedonia_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5824,
+   "kavala",
+   "lower_macedonia_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5825,
+   "rentina",
+   "lower_macedonia_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5826,
+   "thasos",
+   "lower_macedonia_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5828,
+   "melnik",
+   "pirin_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5829,
+   "bansko",
+   "pirin_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5830,
+   "krupnik",
+   "pirin_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5831,
+   "dospat",
+   "pirin_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5832,
+   "nevrokop",
+   "pirin_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5837,
+   "prilep",
+   "prilep_province",
+   "rural_settlement",
+   "1358.9.29"
+  ],
+  [
+   5838,
+   "bitola",
+   "prilep_province",
+   "rural_settlement",
+   "1358.9.29"
+  ],
+  [
+   5839,
+   "florina",
+   "prilep_province",
+   "rural_settlement",
+   "1358.9.29"
+  ],
+  [
+   5840,
+   "kicevo",
+   "prilep_province",
+   "rural_settlement",
+   "1358.9.29"
+  ],
+  [
+   5841,
+   "ohrid",
+   "prilep_province",
+   "town",
+   "1358.9.29"
+  ],
+  [
+   5842,
+   "tetovo",
+   "prilep_province",
+   "rural_settlement",
+   "1358.9.29"
+  ],
+  [
+   5850,
+   "grevena",
+   "upper_macedonia_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5851,
+   "kastoria",
+   "upper_macedonia_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5852,
+   "servia",
+   "upper_macedonia_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5853,
+   "siatista",
+   "upper_macedonia_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5854,
+   "ostrovo",
+   "upper_macedonia_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5858,
+   "skopje",
+   "vardar_province",
+   "town",
+   "1358.9.29"
+  ],
+  [
+   5859,
+   "prosek",
+   "vardar_province",
+   "rural_settlement",
+   "1358.9.29"
+  ],
+  [
+   5860,
+   "kocani",
+   "vardar_province",
+   "rural_settlement",
+   "1358.9.29"
+  ],
+  [
+   5861,
+   "kratovo",
+   "vardar_province",
+   "rural_settlement",
+   "1358.9.29"
+  ],
+  [
+   5862,
+   "kumanovo",
+   "vardar_province",
+   "rural_settlement",
+   "1358.9.29"
+  ],
+  [
+   5863,
+   "shtip",
+   "vardar_province",
+   "rural_settlement",
+   "1358.9.29"
+  ],
+  [
+   5864,
+   "strumica",
+   "vardar_province",
+   "rural_settlement",
+   "1358.9.29"
+  ],
+  [
+   5865,
+   "veles",
+   "vardar_province",
+   "rural_settlement",
+   "1358.9.29"
+  ],
+  [
+   5872,
+   "constantinople",
+   "constantinople_province",
+   "megalopolis",
+   "1337.4.1"
+  ],
+  [
+   5873,
+   "vize",
+   "constantinople_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5874,
+   "catalca",
+   "constantinople_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5875,
+   "silivri",
+   "constantinople_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5876,
+   "corlu",
+   "constantinople_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5877,
+   "gallipoli",
+   "dardanelles_province",
+   "town",
+   "1337.4.1"
+  ],
+  [
+   5878,
+   "enez",
+   "dardanelles_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5879,
+   "hayrabolu",
+   "dardanelles_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5880,
+   "malgara",
+   "dardanelles_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5881,
+   "rodoscuk",
+   "dardanelles_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5882,
+   "kesan",
+   "dardanelles_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5883,
+   "edirne",
+   "edirne_province",
+   "town",
+   "1337.4.1"
+  ],
+  [
+   5884,
+   "ahtopol",
+   "edirne_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5885,
+   "luleburgaz",
+   "edirne_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5886,
+   "kiyikoy",
+   "edirne_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5887,
+   "kirklareli",
+   "edirne_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5888,
+   "demotica",
+   "evros_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5889,
+   "komotini",
+   "evros_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5890,
+   "traianopolis",
+   "evros_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5891,
+   "xanthia",
+   "evros_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5892,
+   "stanimaka",
+   "rhodopes_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5893,
+   "beden",
+   "rhodopes_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5894,
+   "haskovo",
+   "rhodopes_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5895,
+   "ormenio",
+   "rhodopes_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5896,
+   "perperek",
+   "rhodopes_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5897,
+   "smolyan",
+   "rhodopes_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5898,
+   "ustra",
+   "rhodopes_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5903,
+   "bukelon",
+   "sliven_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5907,
+   "plovdiv",
+   "zagore_province",
+   "town",
+   "1337.4.1"
+  ],
+  [
+   5912,
+   "tsepina",
+   "zagore_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5915,
+   "berat",
+   "albania_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5916,
+   "debar",
+   "albania_province",
+   "rural_settlement",
+   "1358.9.29"
+  ],
+  [
+   5917,
+   "devol",
+   "albania_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5960,
+   "pyli",
+   "south_epirus_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5962,
+   "larissa",
+   "thessaly_province",
+   "town",
+   "1337.4.1"
+  ],
+  [
+   5963,
+   "demetrias",
+   "thessaly_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5964,
+   "elassona",
+   "thessaly_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5965,
+   "farsala",
+   "thessaly_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5966,
+   "karditsa",
+   "thessaly_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5967,
+   "stomio",
+   "thessaly_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5968,
+   "trikala",
+   "thessaly_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5969,
+   "tyrnavos",
+   "thessaly_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5975,
+   "tripolitsa",
+   "arcadia_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5976,
+   "karytaina",
+   "arcadia_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5977,
+   "veligosti",
+   "arcadia_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5979,
+   "astros",
+   "argolis_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5989,
+   "mystras",
+   "laconia_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5990,
+   "kythira",
+   "laconia_province",
+   "rural_settlement",
+   "1376.12.25"
+  ],
+  [
+   5991,
+   "monemvasia",
+   "laconia_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5992,
+   "oitylo",
+   "laconia_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5995,
+   "leuktron",
+   "messenia_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5996,
+   "modon",
+   "messenia_province",
+   "rural_settlement",
+   "1376.12.25"
+  ],
+  [
+   5998,
+   "chios",
+   "chios_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   5999,
+   "ikaria",
+   "chios_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   6000,
+   "samos",
+   "chios_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   6001,
+   "candia",
+   "crete_province",
+   "town",
+   "1376.12.25"
+  ],
+  [
+   6002,
+   "chania",
+   "crete_province",
+   "rural_settlement",
+   "1376.12.25"
+  ],
+  [
+   6003,
+   "elounda",
+   "crete_province",
+   "rural_settlement",
+   "1376.12.25"
+  ],
+  [
+   6004,
+   "gergeri",
+   "crete_province",
+   "rural_settlement",
+   "1376.12.25"
+  ],
+  [
+   6005,
+   "hagios_pavlos",
+   "crete_province",
+   "rural_settlement",
+   "1376.12.25"
+  ],
+  [
+   6006,
+   "rethymno",
+   "crete_province",
+   "rural_settlement",
+   "1376.12.25"
+  ],
+  [
+   6007,
+   "siteia",
+   "crete_province",
+   "rural_settlement",
+   "1376.12.25"
+  ],
+  [
+   6008,
+   "viannos",
+   "crete_province",
+   "rural_settlement",
+   "1376.12.25"
+  ],
+  [
+   6015,
+   "mitilene",
+   "lemnos_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   6016,
+   "molyvos",
+   "lemnos_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   6017,
+   "imbros",
+   "lemnos_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   6018,
+   "lemnos",
+   "lemnos_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   6019,
+   "sporades",
+   "lemnos_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   6021,
+   "amorgos",
+   "naxos_province",
+   "rural_settlement",
+   "1376.12.25"
+  ],
+  [
+   6022,
+   "andros",
+   "naxos_province",
+   "rural_settlement",
+   "1376.12.25"
+  ],
+  [
+   6025,
+   "mykonos",
+   "naxos_province",
+   "rural_settlement",
+   "1376.12.25"
+  ],
+  [
+   6027,
+   "karpathos",
+   "rodos_province",
+   "rural_settlement",
+   "1376.12.25"
+  ],
+  [
+   6794,
+   "biga",
+   "biga_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   6795,
+   "ayvacik",
+   "biga_province",
+   "rural_settlement",
+   "1341.8.1"
+  ],
+  [
+   6796,
+   "bandirma",
+   "biga_province",
+   "rural_settlement",
+   "1341.8.1"
+  ],
+  [
+   6797,
+   "bayramic",
+   "biga_province",
+   "rural_settlement",
+   "1341.2.1"
+  ],
+  [
+   6798,
+   "can",
+   "biga_province",
+   "rural_settlement",
+   "1341.8.1"
+  ],
+  [
+   6799,
+   "canakkale",
+   "biga_province",
+   "rural_settlement",
+   "1341.8.1"
+  ],
+  [
+   6800,
+   "gonen",
+   "biga_province",
+   "rural_settlement",
+   "1341.8.1"
+  ],
+  [
+   6801,
+   "lapseki",
+   "biga_province",
+   "rural_settlement",
+   "1341.8.1"
+  ],
+  [
+   6802,
+   "bursa",
+   "hudavendigar_province",
+   "city",
+   "1341.8.1"
+  ],
+  [
+   6803,
+   "adranos",
+   "hudavendigar_province",
+   "rural_settlement",
+   "1341.8.1"
+  ],
+  [
+   6804,
+   "dursunbey",
+   "hudavendigar_province",
+   "rural_settlement",
+   "1341.8.1"
+  ],
+  [
+   6805,
+   "harmancik",
+   "hudavendigar_province",
+   "rural_settlement",
+   "1341.8.1"
+  ],
+  [
+   6806,
+   "iznik",
+   "hudavendigar_province",
+   "town",
+   "1341.8.1"
+  ],
+  [
+   6808,
+   "balikesir",
+   "karasi_province",
+   "town",
+   "1341.2.1"
+  ],
+  [
+   6809,
+   "balya",
+   "karasi_province",
+   "rural_settlement",
+   "1341.2.1"
+  ],
+  [
+   6810,
+   "bergama",
+   "karasi_province",
+   "town",
+   "1341.2.1"
+  ],
+  [
+   6811,
+   "bigadic",
+   "karasi_province",
+   "rural_settlement",
+   "1341.2.1"
+  ],
+  [
+   6812,
+   "edremit",
+   "karasi_province",
+   "rural_settlement",
+   "1341.2.1"
+  ],
+  [
+   6813,
+   "manyas",
+   "karasi_province",
+   "rural_settlement",
+   "1341.2.1"
+  ],
+  [
+   6814,
+   "mihalic",
+   "karasi_province",
+   "rural_settlement",
+   "1341.2.1"
+  ],
+  [
+   6815,
+   "soma",
+   "karasi_province",
+   "rural_settlement",
+   "1341.2.1"
+  ],
+  [
+   6816,
+   "susurluk",
+   "karasi_province",
+   "rural_settlement",
+   "1341.2.1"
+  ],
+  [
+   6819,
+   "izmit",
+   "kocaeli_province",
+   "city",
+   "1341.8.1"
+  ],
+  [
+   6820,
+   "atpazari",
+   "kocaeli_province",
+   "rural_settlement",
+   "1341.8.1"
+  ],
+  [
+   6821,
+   "uskudar",
+   "kocaeli_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   6822,
+   "silli",
+   "kocaeli_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   6829,
+   "sultanonu",
+   "sultanonu_province",
+   "rural_settlement",
+   "1346.11.3"
+  ],
+  [
+   6830,
+   "bilecik",
+   "sultanonu_province",
+   "rural_settlement",
+   "1341.8.1"
+  ],
+  [
+   6831,
+   "goynuk",
+   "sultanonu_province",
+   "rural_settlement",
+   "1341.8.1"
+  ],
+  [
+   6832,
+   "eynegol",
+   "sultanonu_province",
+   "rural_settlement",
+   "1341.8.1"
+  ],
+  [
+   6833,
+   "inonu",
+   "sultanonu_province",
+   "rural_settlement",
+   "1346.11.3"
+  ],
+  [
+   6834,
+   "nalli",
+   "sultanonu_province",
+   "rural_settlement",
+   "1346.11.3"
+  ],
+  [
+   6835,
+   "sogut",
+   "sultanonu_province",
+   "rural_settlement",
+   "1341.8.1"
+  ],
+  [
+   6836,
+   "bolu",
+   "bolu_province",
+   "rural_settlement",
+   "1341.8.1"
+  ],
+  [
+   6837,
+   "akcasehir",
+   "bolu_province",
+   "town",
+   "1341.8.1"
+  ],
+  [
+   6838,
+   "akyazi",
+   "bolu_province",
+   "rural_settlement",
+   "1341.8.1"
+  ],
+  [
+   6839,
+   "eregli",
+   "bolu_province",
+   "rural_settlement",
+   "1337.4.1"
+  ],
+  [
+   6840,
+   "konrapa",
+   "bolu_province",
+   "rural_settlement",
+   "1341.8.1"
+  ],
+  [
+   6841,
+   "mudurnu",
+   "bolu_province",
+   "rural_settlement",
+   "1346.11.3"
+  ],
+  [
+   6889,
+   "tire",
+   "aydin_province",
+   "rural_settlement",
+   "1350.2.14"
+  ],
+  [
+   6890,
+   "alasehir",
+   "aydin_province",
+   "town",
+   "1337.4.1"
+  ],
+  [
+   6891,
+   "balat",
+   "aydin_province",
+   "rural_settlement",
+   "1342.5.2"
+  ],
+  [
+   6892,
+   "birgi",
+   "aydin_province",
+   "town",
+   "1342.5.2"
+  ],
+  [
+   6893,
+   "cine",
+   "aydin_province",
+   "rural_settlement",
+   "1342.5.2"
+  ],
+  [
+   6894,
+   "guzelhisar",
+   "aydin_province",
+   "rural_settlement",
+   "1342.5.2"
+  ],
+  [
+   6895,
+   "milas",
+   "aydin_province",
+   "town",
+   "1342.5.2"
+  ],
+  [
+   6896,
+   "nazilli",
+   "aydin_province",
+   "rural_settlement",
+   "1342.5.2"
+  ],
+  [
+   6906,
+   "mugla",
+   "mugla_province",
+   "rural_settlement",
+   "1342.5.2"
+  ],
+  [
+   6907,
+   "bodrum",
+   "mugla_province",
+   "rural_settlement",
+   "1342.5.2"
+  ],
+  [
+   6908,
+   "gokabat",
+   "mugla_province",
+   "rural_settlement",
+   "1342.5.2"
+  ],
+  [
+   6909,
+   "golhisar",
+   "mugla_province",
+   "rural_settlement",
+   "1360.12.1"
+  ],
+  [
+   6910,
+   "marmaris",
+   "mugla_province",
+   "rural_settlement",
+   "1342.5.2"
+  ],
+  [
+   6911,
+   "megri",
+   "mugla_province",
+   "rural_settlement",
+   "1342.5.2"
+  ],
+  [
+   6912,
+   "tavas",
+   "mugla_province",
+   "rural_settlement",
+   "1342.5.2"
+  ],
+  [
+   6913,
+   "yuksekkum",
+   "mugla_province",
+   "rural_settlement",
+   "1342.5.2"
+  ],
+  [
+   6917,
+   "manisa",
+   "saruhan_province",
+   "town",
+   "1341.8.1"
+  ],
+  [
+   6918,
+   "akhisar",
+   "saruhan_province",
+   "rural_settlement",
+   "1341.8.1"
+  ],
+  [
+   6919,
+   "demirci",
+   "saruhan_province",
+   "rural_settlement",
+   "1341.8.1"
+  ],
+  [
+   6921,
+   "gordes",
+   "saruhan_province",
+   "rural_settlement",
+   "1341.8.1"
+  ],
+  [
+   6922,
+   "kula",
+   "saruhan_province",
+   "rural_settlement",
+   "1341.8.1"
+  ],
+  [
+   6924,
+   "smyrna",
+   "smyrna_province",
+   "city",
+   "1350.2.14"
+  ],
+  [
+   6925,
+   "ayasuluk",
+   "smyrna_province",
+   "rural_settlement",
+   "1350.2.14"
+  ],
+  [
+   6926,
+   "cesme",
+   "smyrna_province",
+   "rural_settlement",
+   "1350.2.14"
+  ],
+  [
+   6927,
+   "menemen",
+   "smyrna_province",
+   "rural_settlement",
+   "1341.8.1"
+  ],
+  [
+   6928,
+   "urla",
+   "smyrna_province",
+   "rural_settlement",
+   "1350.2.14"
+  ]
+ ],
+ "renamed_locations": [
+  [
+   8630,
+   "nanjing",
+   "shangyuan",
+   "CHI"
+  ],
+  [
+   9524,
+   "hanseong",
+   "namgyeong",
+   "KOR"
+  ],
+  [
+   14726,
+   "ayutthaya",
+   "ayodhya",
+   "KHM"
+  ]
+ ],
+ "cities": [
+  [
+   "constantinople",
+   "megalopolis",
+   113.4,
+   "greek_culture",
+   "orthodox"
+  ],
+  [
+   "venice",
+   "city",
+   59.8,
+   "venetian",
+   "catholic"
+  ],
+  [
+   "thessaloniki",
+   "city",
+   44.2,
+   "greek_culture",
+   "orthodox"
+  ],
+  [
+   "bursa",
+   "city",
+   28.5,
+   "greek_culture",
+   "orthodox"
+  ],
+  [
+   "izmit",
+   "city",
+   26.2,
+   "greek_culture",
+   "orthodox"
+  ],
+  [
+   "smyrna",
+   "city",
+   16.1,
+   "greek_culture",
+   "sunni"
+  ],
+  [
+   "dubrovnik",
+   "city",
+   10.8,
+   "dalmatian",
+   "catholic"
+  ]
+ ],
+ "occupied_by_others": [
+  [
+   "zadar",
+   "HUN"
+  ]
+ ],
+ "rivals": [
+  [
+   {
+    "id": 382,
+    "tag": "WAL",
+    "name": "WAL"
+   },
+   "1360.11.5"
+  ],
+  [
+   {
+    "id": 1588,
+    "tag": "TUN",
+    "name": "TUN"
+   },
+   "1368.4.20.8"
+  ],
+  [
+   {
+    "id": 1523,
+    "tag": "VEN",
+    "name": "VEN"
+   },
+   "1377.10.5.2"
+  ],
+  [
+   {
+    "id": 20,
+    "tag": "CIL",
+    "name": "CIL"
+   },
+   "1382.6.3.18"
+  ]
+ ],
+ "enemies": [
+  {
+   "id": 1498,
+   "tag": "PAP",
+   "name": "PAP"
+  },
+  {
+   "id": 1252,
+   "tag": "ARA",
+   "name": "ARA"
+  }
+ ],
+ "last_war": "1393.2.1",
+ "last_peace": "1392.1.1",
+ "relations_last_war": [
+  {
+   "other": {
+    "id": 33,
+    "tag": "KRD",
+    "name": "KRD"
+   },
+   "last_war": "1341.2.1",
+   "war_score": "61",
+   "trust": "54.45976"
+  },
+  {
+   "other": {
+    "id": 36,
+    "tag": "SRU",
+    "name": "SRU"
+   },
+   "last_war": "1341.8.1",
+   "war_score": "96",
+   "trust": "52.52606"
+  },
+  {
+   "other": {
+    "id": 34,
+    "tag": "MEN",
+    "name": "MEN"
+   },
+   "last_war": "1342.5.2",
+   "war_score": "76",
+   "trust": "53.04294"
+  },
+  {
+   "other": {
+    "id": 59,
+    "tag": "TVS",
+    "name": "TVS"
+   },
+   "last_war": "1342.5.2",
+   "war_score": "76",
+   "trust": "54.46008"
+  },
+  {
+   "other": {
+    "id": 41,
+    "tag": "TUR",
+    "name": "TUR"
+   },
+   "last_war": "1346.11.3",
+   "war_score": "70",
+   "trust": "50.53442"
+  },
+  {
+   "other": {
+    "id": 28,
+    "tag": "HCI",
+    "name": "HCI"
+   },
+   "last_war": "1348.4.29",
+   "war_score": "40",
+   "trust": "54.6595"
+  },
+  {
+   "other": {
+    "id": 38,
+    "tag": "TDJ",
+    "name": "TDJ"
+   },
+   "last_war": "1348.8.7",
+   "war_score": "53",
+   "trust": "21.69876"
+  },
+  {
+   "other": {
+    "id": 18,
+    "tag": "AYD",
+    "name": "AYD"
+   },
+   "last_war": "1350.2.14",
+   "war_score": "13",
+   "trust": "55.29368"
+  },
+  {
+   "other": {
+    "id": 27,
+    "tag": "HMD",
+    "name": "HMD"
+   },
+   "last_war": "1350.2.14",
+   "war_score": "13",
+   "trust": "42.16652"
+  },
+  {
+   "other": {
+    "id": 214,
+    "tag": "BUL",
+    "name": "BUL"
+   },
+   "last_war": "1351.4.1",
+   "war_score": "66",
+   "trust": "62.34172"
+  },
+  {
+   "other": {
+    "id": 37,
+    "tag": "SUT",
+    "name": "SUT"
+   },
+   "last_war": "1353.2.9",
+   "war_score": "53",
+   "trust": "58.36985"
+  },
+  {
+   "other": {
+    "id": 26,
+    "tag": "GRM",
+    "name": "GRM"
+   },
+   "last_war": "1357.1.3",
+   "war_score": "43",
+   "trust": "46.84079"
+  },
+  {
+   "other": {
+    "id": 382,
+    "tag": "WAL",
+    "name": "WAL"
+   },
+   "last_war": "1358.7.31",
+   "war_score": "50",
+   "trust": "61.70948"
+  },
+  {
+   "other": {
+    "id": 206,
+    "tag": "SER",
+    "name": "SER"
+   },
+   "last_war": "1358.9.29",
+   "war_score": "100",
+   "trust": "54.77304"
+  },
+  {
+   "other": {
+    "id": 16,
+    "tag": "ALY",
+    "name": "ALY"
+   },
+   "last_war": "1360.12.1",
+   "war_score": "95",
+   "trust": "28.21865"
+  },
+  {
+   "other": {
+    "id": 198,
+    "tag": "ATH",
+    "name": "ATH"
+   },
+   "last_war": "1363.12.1",
+   "war_score": "80",
+   "trust": "56.41541"
+  },
+  {
+   "other": {
+    "id": 1514,
+    "tag": "SIC",
+    "name": "SIC"
+   },
+   "last_war": "1363.12.1",
+   "war_score": "80",
+   "trust": "30.86086"
+  },
+  {
+   "other": {
+    "id": 21,
+    "tag": "CND",
+    "name": "CND"
+   },
+   "last_war": "1368.3.12",
+   "war_score": "88",
+   "trust": "48.53128"
+  },
+  {
+   "other": {
+    "id": 32,
+    "tag": "KBD",
+    "name": "KBD"
+   },
+   "last_war": "1374.7.2",
+   "war_score": "70",
+   "trust": "44.80036"
+  },
+  {
+   "other": {
+    "id": 213,
+    "tag": "RAG",
+    "name": "RAG"
+   },
+   "last_war": "1376.12.25",
+   "war_score": "100",
+   "trust": "50.48008"
+  },
+  {
+   "other": {
+    "id": 221,
+    "tag": "CRT",
+    "name": "CRT"
+   },
+   "last_war": "1376.12.25",
+   "war_score": "100",
+   "trust": "14.97027"
+  },
+  {
+   "other": {
+    "id": 1523,
+    "tag": "VEN",
+    "name": "VEN"
+   },
+   "last_war": "1376.12.25",
+   "war_score": "100",
+   "trust": "60.32236"
+  },
+  {
+   "other": {
+    "id": 25,
+    "tag": "ERE",
+    "name": "ERE"
+   },
+   "last_war": "1382.4.1",
+   "war_score": "43",
+   "trust": "50.03874"
+  },
+  {
+   "other": {
+    "id": 31,
+    "tag": "KAR",
+    "name": "KAR"
+   },
+   "last_war": "1389.1.7",
+   "war_score": "70",
+   "trust": "47.18486"
+  },
+  {
+   "other": {
+    "id": 197,
+    "tag": "ACH",
+    "name": "ACH"
+   },
+   "last_war": "1392.8.29",
+   "war_score": null,
+   "trust": "54.21388"
+  },
+  {
+   "other": {
+    "id": 201,
+    "tag": "NAX",
+    "name": "NAX"
+   },
+   "last_war": "1392.8.29",
+   "war_score": null,
+   "trust": "54.16072"
+  },
+  {
+   "other": {
+    "id": 207,
+    "tag": "ALB",
+    "name": "ALB"
+   },
+   "last_war": "1392.8.29",
+   "war_score": null,
+   "trust": "47.06793"
+  },
+  {
+   "other": {
+    "id": 209,
+    "tag": "MZK",
+    "name": "MZK"
+   },
+   "last_war": "1392.8.29",
+   "war_score": null,
+   "trust": "59.24726"
+  },
+  {
+   "other": {
+    "id": 210,
+    "tag": "ANT",
+    "name": "ANT"
+   },
+   "last_war": "1392.8.29",
+   "war_score": null,
+   "trust": "53.88078"
+  },
+  {
+   "other": {
+    "id": 211,
+    "tag": "MTR",
+    "name": "MTR"
+   },
+   "last_war": "1392.8.29",
+   "war_score": null,
+   "trust": "55.5089"
+  },
+  {
+   "other": {
+    "id": 212,
+    "tag": "BOS",
+    "name": "BOS"
+   },
+   "last_war": "1392.8.29",
+   "war_score": null,
+   "trust": "24.02364"
+  },
+  {
+   "other": {
+    "id": 381,
+    "tag": "HUN",
+    "name": "HUN"
+   },
+   "last_war": "1392.8.29",
+   "war_score": null,
+   "trust": "57.76646"
+  },
+  {
+   "other": {
+    "id": 1453,
+    "tag": "ARB",
+    "name": "ARB"
+   },
+   "last_war": "1392.8.29",
+   "war_score": null,
+   "trust": "23.16779"
+  },
+  {
+   "other": {
+    "id": 1495,
+    "tag": "NAP",
+    "name": "NAP"
+   },
+   "last_war": "1392.8.29",
+   "war_score": null,
+   "trust": "50.29246"
+  },
+  {
+   "other": {
+    "id": 1515,
+    "tag": "SIE",
+    "name": "SIE"
+   },
+   "last_war": "1392.8.29",
+   "war_score": null,
+   "trust": "38.06537"
+  },
+  {
+   "other": {
+    "id": 1849,
+    "tag": "KOL",
+    "name": "KOL"
+   },
+   "last_war": "1392.8.29",
+   "war_score": null,
+   "trust": "58.17044"
+  }
+ ],
+ "treaties": {
+  "scripted_oneway": [
+   {
+    "first": {
+     "id": 1506,
+     "tag": "PIS",
+     "name": "PIS"
+    },
+    "second": {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    "objects": [
+     "fleet_basing_rights"
+    ],
+    "start": "1348.7.15"
+   }
+  ],
+  "dependency": [
+   {
+    "first": {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    "second": {
+     "id": 214,
+     "tag": "BUL",
+     "name": "BUL"
+    },
+    "objects": [
+     "vassal"
+    ],
+    "start": "1351.4.1"
+   },
+   {
+    "first": {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    "second": {
+     "id": 33556774,
+     "tag": "AAA27",
+     "name": "usak_province"
+    },
+    "objects": [
+     "fiefdom"
+    ],
+    "start": "1357.1.3"
+   },
+   {
+    "first": {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    "second": {
+     "id": 2373,
+     "tag": "AAA33",
+     "name": "illyria_province"
+    },
+    "objects": [
+     "fiefdom"
+    ],
+    "start": "1358.9.29"
+   },
+   {
+    "first": {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    "second": {
+     "id": 16779590,
+     "tag": "AAA19",
+     "name": "alaiye_province"
+    },
+    "objects": [
+     "fiefdom"
+    ],
+    "start": "1360.12.1"
+   },
+   {
+    "first": {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    "second": {
+     "id": 16779121,
+     "tag": "AAA28",
+     "name": "kayseri_province"
+    },
+    "objects": [
+     "fiefdom"
+    ],
+    "start": "1363.8.11"
+   },
+   {
+    "first": {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    "second": {
+     "id": 1514,
+     "tag": "SIC",
+     "name": "SIC"
+    },
+    "objects": [
+     "vassal"
+    ],
+    "start": "1363.12.1"
+   },
+   {
+    "first": {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    "second": {
+     "id": 198,
+     "tag": "ATH",
+     "name": "ATH"
+    },
+    "objects": [
+     "vassal"
+    ],
+    "start": "1363.12.1"
+   },
+   {
+    "first": {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    "second": {
+     "id": 50334028,
+     "tag": "AAA45",
+     "name": "sinop_province"
+    },
+    "objects": [
+     "vassal"
+    ],
+    "start": "1368.3.15"
+   },
+   {
+    "first": {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    "second": {
+     "id": 16779613,
+     "tag": "AAA04",
+     "name": "aksaray_province"
+    },
+    "objects": [
+     "fiefdom"
+    ],
+    "start": "1379.5.10"
+   },
+   {
+    "first": {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    "second": {
+     "id": 33556368,
+     "tag": "AAA34",
+     "name": "konya_province"
+    },
+    "objects": [
+     "dominion"
+    ],
+    "start": "1380.4.3"
+   },
+   {
+    "first": {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    "second": {
+     "id": 134220081,
+     "tag": "AAA94",
+     "name": "sivas_province"
+    },
+    "objects": [
+     "fiefdom"
+    ],
+    "start": "1382.4.1"
+   },
+   {
+    "first": {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    "second": {
+     "id": 33556195,
+     "tag": "AAA21",
+     "name": "ankara_province"
+    },
+    "objects": [
+     "dominion"
+    ],
+    "start": "1383.11.23"
+   }
+  ],
+  "royal_marriage": [
+   {
+    "first": {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    "second": {
+     "id": 214,
+     "tag": "BUL",
+     "name": "BUL"
+    },
+    "objects": [],
+    "start": "1373.1.13"
+   },
+   {
+    "first": {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    "second": {
+     "id": 198,
+     "tag": "ATH",
+     "name": "ATH"
+    },
+    "objects": [],
+    "start": "1392.8.29"
+   }
+  ],
+  "building_spy_network": [
+   {
+    "first": {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    "second": {
+     "id": 381,
+     "tag": "HUN",
+     "name": "HUN"
+    },
+    "objects": [],
+    "start": "1389.3.28"
+   }
+  ],
+  "casus_belli": [
+   {
+    "first": {
+     "id": 198,
+     "tag": "ATH",
+     "name": "ATH"
+    },
+    "second": {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    "objects": [
+     "cb_resist_annexation"
+    ],
+    "start": "1390.7.1"
+   },
+   {
+    "first": {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    "second": {
+     "id": 220,
+     "tag": "KNI",
+     "name": "KNI"
+    },
+    "objects": [
+     "cb_insulted_us"
+    ],
+    "start": "1391.1.1"
+   },
+   {
+    "first": {
+     "id": 381,
+     "tag": "HUN",
+     "name": "HUN"
+    },
+    "second": {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    "objects": [
+     "cb_insulted_us"
+    ],
+    "start": "1391.8.14"
+   },
+   {
+    "first": {
+     "id": 1523,
+     "tag": "VEN",
+     "name": "VEN"
+    },
+    "second": {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    "objects": [
+     "cb_coalition"
+    ],
+    "start": "1392.3.7"
+   },
+   {
+    "first": {
+     "id": 382,
+     "tag": "WAL",
+     "name": "WAL"
+    },
+    "second": {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    "objects": [
+     "cb_coalition"
+    ],
+    "start": "1392.3.30"
+   }
+  ],
+  "annex": [
+   {
+    "first": {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    "second": {
+     "id": 198,
+     "tag": "ATH",
+     "name": "ATH"
+    },
+    "objects": [],
+    "start": "1390.7.1"
+   }
+  ],
+  "T_30b3": [
+   {
+    "first": {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    "second": {
+     "id": 33556368,
+     "tag": "AAA34",
+     "name": "konya_province"
+    },
+    "objects": [],
+    "start": "1390.9.19"
+   }
+  ],
+  "opinion_improvement": [
+   {
+    "first": {
+     "id": 220,
+     "tag": "KNI",
+     "name": "KNI"
+    },
+    "second": {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    "objects": [],
+    "start": "1391.10.17"
+   },
+   {
+    "first": {
+     "id": 16779566,
+     "tag": "MEDIC",
+     "name": "MEDICI"
+    },
+    "second": {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    "objects": [],
+    "start": "1392.1.15"
+   },
+   {
+    "first": {
+     "id": 1528,
+     "tag": "ACC",
+     "name": "ACC"
+    },
+    "second": {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    "objects": [],
+    "start": "1392.9.16"
+   }
+  ]
+ },
+ "subjects": [
+  {
+   "id": 214,
+   "tag": "BUL",
+   "name": "BUL",
+   "type": "vassal",
+   "since": "1351.4.1",
+   "capital": "tarnovo",
+   "culture": "bulgarian",
+   "religion": "orthodox",
+   "gov": "monarchy",
+   "ruler": "name_keratsa [sratsimir_dynasty]",
+   "locations": 60,
+   "population_k": 681.0,
+   "cultures": [
+    [
+     "bulgarian",
+     608.3,
+     89.33
+    ],
+    [
+     "greek_culture",
+     42.8,
+     6.28
+    ],
+    [
+     "serbian",
+     17.2,
+     2.53
+    ],
+    [
+     "wallachian",
+     6.7,
+     0.98
+    ],
+    [
+     "aromanian",
+     5.2,
+     0.77
+    ],
+    [
+     "armenian_culture",
+     0.7,
+     0.1
+    ],
+    [
+     "acciaioli_bank_culture",
+     0.1,
+     0.01
+    ],
+    [
+     "moldovan",
+     0.0,
+     0.0
+    ]
+   ],
+   "religions": [
+    [
+     "orthodox",
+     680.9,
+     99.99
+    ],
+    [
+     "catholic",
+     0.1,
+     0.01
+    ]
+   ]
+  },
+  {
+   "id": 33556774,
+   "tag": "AAA27",
+   "name": "usak_province",
+   "type": "fiefdom",
+   "since": "1357.1.3",
+   "capital": "lazkiye",
+   "culture": "greek_culture",
+   "religion": "orthodox",
+   "gov": "monarchy",
+   "ruler": "name_john [palaiologos_dynasty]",
+   "locations": 18,
+   "population_k": 248.6,
+   "cultures": [
+    [
+     "greek_culture",
+     104.6,
+     42.08
+    ],
+    [
+     "turkoman_culture",
+     72.6,
+     29.22
+    ],
+    [
+     "turkish_culture",
+     70.4,
+     28.34
+    ],
+    [
+     "romanyoti",
+     0.6,
+     0.25
+    ],
+    [
+     "cappadocian_greek_culture",
+     0.2,
+     0.09
+    ],
+    [
+     "domari_culture",
+     0.1,
+     0.02
+    ]
+   ],
+   "religions": [
+    [
+     "sunni",
+     95.1,
+     38.27
+    ],
+    [
+     "orthodox",
+     89.9,
+     36.16
+    ],
+    [
+     "shia",
+     63.6,
+     25.57
+    ]
+   ]
+  },
+  {
+   "id": 2373,
+   "tag": "AAA33",
+   "name": "illyria_province",
+   "type": "fiefdom",
+   "since": "1358.9.29",
+   "capital": "koman",
+   "culture": "albanian",
+   "religion": "orthodox",
+   "gov": "monarchy",
+   "ruler": "name_john [palaiologos_dynasty]",
+   "locations": 13,
+   "population_k": 157.5,
+   "cultures": [
+    [
+     "serbian",
+     85.8,
+     54.46
+    ],
+    [
+     "albanian",
+     69.9,
+     44.37
+    ],
+    [
+     "german_transylvanian",
+     1.6,
+     1.04
+    ],
+    [
+     "dalmatian",
+     0.1,
+     0.05
+    ],
+    [
+     "bulgarian",
+     0.1,
+     0.05
+    ],
+    [
+     "aromanian",
+     0.1,
+     0.03
+    ]
+   ],
+   "religions": [
+    [
+     "orthodox",
+     155.0,
+     98.46
+    ],
+    [
+     "catholic",
+     2.4,
+     1.54
+    ]
+   ]
+  },
+  {
+   "id": 16779590,
+   "tag": "AAA19",
+   "name": "alaiye_province",
+   "type": "fiefdom",
+   "since": "1360.12.1",
+   "capital": "alaiye",
+   "culture": "turkish_culture",
+   "religion": "orthodox",
+   "gov": "monarchy",
+   "ruler": "name_john [palaiologos_dynasty]",
+   "locations": 13,
+   "population_k": 131.7,
+   "cultures": [
+    [
+     "greek_culture",
+     82.6,
+     62.66
+    ],
+    [
+     "turkish_culture",
+     40.0,
+     30.36
+    ],
+    [
+     "turkoman_culture",
+     9.0,
+     6.84
+    ],
+    [
+     "cappadocian_greek_culture",
+     0.1,
+     0.09
+    ],
+    [
+     "romanyoti",
+     0.0,
+     0.03
+    ],
+    [
+     "syriac_culture",
+     0.0,
+     0.01
+    ],
+    [
+     "armenian_culture",
+     0.0,
+     0.0
+    ],
+    [
+     "mizrahi",
+     0.0,
+     0.0
+    ]
+   ],
+   "religions": [
+    [
+     "orthodox",
+     82.6,
+     62.71
+    ],
+    [
+     "sunni",
+     40.1,
+     30.47
+    ],
+    [
+     "shia",
+     9.0,
+     6.8
+    ],
+    [
+     "miaphysite",
+     0.0,
+     0.01
+    ],
+    [
+     "nestorianism",
+     0.0,
+     0.0
+    ],
+    [
+     "judaism",
+     0.0,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": 16779121,
+   "tag": "AAA28",
+   "name": "kayseri_province",
+   "type": "fiefdom",
+   "since": "1363.8.11",
+   "capital": "kayseri",
+   "culture": "turkish_culture",
+   "religion": "orthodox",
+   "gov": "monarchy",
+   "ruler": "name_john [palaiologos_dynasty]",
+   "locations": 15,
+   "population_k": 190.4,
+   "cultures": [
+    [
+     "turkish_culture",
+     130.5,
+     68.52
+    ],
+    [
+     "armenian_culture",
+     34.4,
+     18.04
+    ],
+    [
+     "turkoman_culture",
+     14.6,
+     7.68
+    ],
+    [
+     "mongolian_culture",
+     9.3,
+     4.9
+    ],
+    [
+     "cappadocian_greek_culture",
+     0.7,
+     0.38
+    ],
+    [
+     "greek_culture",
+     0.4,
+     0.21
+    ],
+    [
+     "laz_culture",
+     0.1,
+     0.08
+    ],
+    [
+     "syriac_culture",
+     0.1,
+     0.06
+    ],
+    [
+     "circassian_culture",
+     0.1,
+     0.05
+    ],
+    [
+     "kurdish_culture",
+     0.1,
+     0.04
+    ],
+    [
+     "pontic_greek_culture",
+     0.0,
+     0.02
+    ],
+    [
+     "zaza_culture",
+     0.0,
+     0.0
+    ],
+    [
+     "mizrahi",
+     0.0,
+     0.0
+    ],
+    [
+     "romanyoti",
+     0.0,
+     0.0
+    ]
+   ],
+   "religions": [
+    [
+     "sunni",
+     114.7,
+     60.23
+    ],
+    [
+     "orthodox",
+     34.6,
+     18.16
+    ],
+    [
+     "miaphysite",
+     19.0,
+     9.99
+    ],
+    [
+     "shia",
+     13.3,
+     6.97
+    ],
+    [
+     "tengri",
+     8.9,
+     4.65
+    ]
+   ]
+  },
+  {
+   "id": 1514,
+   "tag": "SIC",
+   "name": "SIC",
+   "type": "vassal",
+   "since": "1363.12.1",
+   "capital": "messina",
+   "culture": "sicilian",
+   "religion": "catholic",
+   "gov": "monarchy",
+   "ruler": "name_hugh [burgundy_dynasty]",
+   "locations": 4,
+   "population_k": 191.3,
+   "cultures": [
+    [
+     "sicilian",
+     181.8,
+     95.02
+    ],
+    [
+     "griko_culture",
+     5.8,
+     3.05
+    ],
+    [
+     "southern_gallo_italic",
+     2.3,
+     1.18
+    ],
+    [
+     "greek_culture",
+     0.9,
+     0.49
+    ],
+    [
+     "french",
+     0.3,
+     0.14
+    ],
+    [
+     "acciaioli_bank_culture",
+     0.1,
+     0.05
+    ],
+    [
+     "moravian",
+     0.1,
+     0.04
+    ],
+    [
+     "catalan",
+     0.1,
+     0.03
+    ]
+   ],
+   "religions": [
+    [
+     "catholic",
+     187.6,
+     98.08
+    ],
+    [
+     "catharism",
+     3.7,
+     1.92
+    ]
+   ]
+  },
+  {
+   "id": 198,
+   "tag": "ATH",
+   "name": "ATH",
+   "type": "vassal",
+   "since": "1363.12.1",
+   "capital": "athens",
+   "culture": "greek_culture",
+   "religion": "orthodox",
+   "gov": "monarchy",
+   "ruler": "name_constance [barcelona_dynasty]",
+   "locations": 28,
+   "population_k": 341.6,
+   "cultures": [
+    [
+     "greek_culture",
+     317.5,
+     92.94
+    ],
+    [
+     "maltese",
+     10.2,
+     2.99
+    ],
+    [
+     "aromanian",
+     9.9,
+     2.89
+    ],
+    [
+     "albanian",
+     2.3,
+     0.67
+    ],
+    [
+     "griko_culture",
+     1.1,
+     0.31
+    ],
+    [
+     "romanyoti",
+     0.5,
+     0.15
+    ],
+    [
+     "catalan",
+     0.1,
+     0.03
+    ],
+    [
+     "venetian",
+     0.1,
+     0.02
+    ],
+    [
+     "sicilian",
+     0.0,
+     0.0
+    ],
+    [
+     "serbian",
+     0.0,
+     0.0
+    ]
+   ],
+   "religions": [
+    [
+     "catholic",
+     172.8,
+     50.59
+    ],
+    [
+     "orthodox",
+     168.6,
+     49.36
+    ],
+    [
+     "bogomilism",
+     0.2,
+     0.05
+    ]
+   ]
+  },
+  {
+   "id": 50334028,
+   "tag": "AAA45",
+   "name": "sinop_province",
+   "type": "vassal",
+   "since": "1368.3.15",
+   "capital": "sinop",
+   "culture": "pontic_greek_culture",
+   "religion": "orthodox",
+   "gov": "monarchy",
+   "ruler": "name_nikephoros [kantakouzenos_dynasty]",
+   "locations": 28,
+   "population_k": 434.7,
+   "cultures": [
+    [
+     "turkish_culture",
+     218.1,
+     50.19
+    ],
+    [
+     "pontic_greek_culture",
+     106.0,
+     24.39
+    ],
+    [
+     "turkoman_culture",
+     72.1,
+     16.59
+    ],
+    [
+     "greek_culture",
+     26.9,
+     6.18
+    ],
+    [
+     "laz_culture",
+     3.7,
+     0.85
+    ],
+    [
+     "armenian_culture",
+     3.4,
+     0.78
+    ],
+    [
+     "mongolian_culture",
+     2.4,
+     0.56
+    ],
+    [
+     "kurdish_culture",
+     0.8,
+     0.19
+    ],
+    [
+     "zaza_culture",
+     0.3,
+     0.07
+    ],
+    [
+     "syriac_culture",
+     0.3,
+     0.06
+    ],
+    [
+     "domari_culture",
+     0.2,
+     0.05
+    ],
+    [
+     "cappadocian_greek_culture",
+     0.2,
+     0.04
+    ],
+    [
+     "romanyoti",
+     0.2,
+     0.04
+    ]
+   ],
+   "religions": [
+    [
+     "sunni",
+     261.2,
+     60.1
+    ],
+    [
+     "orthodox",
+     105.3,
+     24.22
+    ],
+    [
+     "shia",
+     65.3,
+     15.03
+    ],
+    [
+     "tengri",
+     2.4,
+     0.56
+    ],
+    [
+     "miaphysite",
+     0.4,
+     0.1
+    ],
+    [
+     "nestorianism",
+     0.0,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": 16779613,
+   "tag": "AAA04",
+   "name": "aksaray_province",
+   "type": "fiefdom",
+   "since": "1379.5.10",
+   "capital": "aksaray",
+   "culture": "turkish_culture",
+   "religion": "orthodox",
+   "gov": "monarchy",
+   "ruler": "name_john [palaiologos_dynasty]",
+   "locations": 15,
+   "population_k": 130.1,
+   "cultures": [
+    [
+     "turkish_culture",
+     75.1,
+     57.71
+    ],
+    [
+     "cappadocian_greek_culture",
+     33.9,
+     26.05
+    ],
+    [
+     "turkoman_culture",
+     9.2,
+     7.11
+    ],
+    [
+     "mongolian_culture",
+     6.7,
+     5.16
+    ],
+    [
+     "armenian_culture",
+     4.0,
+     3.08
+    ],
+    [
+     "greek_culture",
+     0.9,
+     0.7
+    ],
+    [
+     "domari_culture",
+     0.2,
+     0.16
+    ],
+    [
+     "romanyoti",
+     0.0,
+     0.02
+    ],
+    [
+     "zaza_culture",
+     0.0,
+     0.0
+    ]
+   ],
+   "religions": [
+    [
+     "sunni",
+     77.6,
+     59.63
+    ],
+    [
+     "orthodox",
+     39.6,
+     30.41
+    ],
+    [
+     "shia",
+     7.4,
+     5.73
+    ],
+    [
+     "tengri",
+     5.5,
+     4.24
+    ]
+   ]
+  },
+  {
+   "id": 33556368,
+   "tag": "AAA34",
+   "name": "konya_province",
+   "type": "dominion",
+   "since": "1380.4.3",
+   "capital": "konya",
+   "culture": "greek_culture",
+   "religion": "orthodox",
+   "gov": "monarchy",
+   "ruler": "name_john [palaiologos_dynasty]",
+   "locations": 16,
+   "population_k": 143.0,
+   "cultures": [
+    [
+     "turkish_culture",
+     66.2,
+     46.3
+    ],
+    [
+     "turkoman_culture",
+     35.6,
+     24.88
+    ],
+    [
+     "greek_culture",
+     28.0,
+     19.58
+    ],
+    [
+     "cappadocian_greek_culture",
+     12.6,
+     8.78
+    ],
+    [
+     "romanyoti",
+     0.4,
+     0.31
+    ],
+    [
+     "domari_culture",
+     0.2,
+     0.14
+    ]
+   ],
+   "religions": [
+    [
+     "orthodox",
+     65.1,
+     45.51
+    ],
+    [
+     "sunni",
+     46.7,
+     32.65
+    ],
+    [
+     "shia",
+     31.2,
+     21.84
+    ]
+   ]
+  },
+  {
+   "id": 134220081,
+   "tag": "AAA94",
+   "name": "sivas_province",
+   "type": "fiefdom",
+   "since": "1382.4.1",
+   "capital": "deliktash",
+   "culture": "armenian_culture",
+   "religion": "orthodox",
+   "gov": "monarchy",
+   "ruler": "name_john [palaiologos_dynasty]",
+   "locations": 10,
+   "population_k": 158.4,
+   "cultures": [
+    [
+     "armenian_culture",
+     80.7,
+     50.97
+    ],
+    [
+     "turkish_culture",
+     47.3,
+     29.87
+    ],
+    [
+     "turkoman_culture",
+     25.3,
+     15.96
+    ],
+    [
+     "mongolian_culture",
+     3.0,
+     1.88
+    ],
+    [
+     "kurdish_culture",
+     0.8,
+     0.5
+    ],
+    [
+     "zaza_culture",
+     0.7,
+     0.46
+    ],
+    [
+     "laz_culture",
+     0.3,
+     0.17
+    ],
+    [
+     "pontic_greek_culture",
+     0.2,
+     0.11
+    ],
+    [
+     "domari_culture",
+     0.1,
+     0.09
+    ],
+    [
+     "syriac_culture",
+     0.0,
+     0.01
+    ]
+   ],
+   "religions": [
+    [
+     "sunni",
+     93.1,
+     58.74
+    ],
+    [
+     "orthodox",
+     51.2,
+     32.29
+    ],
+    [
+     "shia",
+     11.6,
+     7.29
+    ],
+    [
+     "tengri",
+     2.6,
+     1.67
+    ],
+    [
+     "miaphysite",
+     0.0,
+     0.01
+    ]
+   ]
+  },
+  {
+   "id": 33556195,
+   "tag": "AAA21",
+   "name": "ankara_province",
+   "type": "dominion",
+   "since": "1383.11.23",
+   "capital": "ankara",
+   "culture": "greek_culture",
+   "religion": "orthodox",
+   "gov": "monarchy",
+   "ruler": "name_john [palaiologos_dynasty]",
+   "locations": 19,
+   "population_k": 194.1,
+   "cultures": [
+    [
+     "turkish_culture",
+     111.1,
+     57.24
+    ],
+    [
+     "greek_culture",
+     52.9,
+     27.24
+    ],
+    [
+     "turkoman_culture",
+     29.6,
+     15.23
+    ],
+    [
+     "domari_culture",
+     0.3,
+     0.16
+    ],
+    [
+     "romanyoti",
+     0.2,
+     0.11
+    ],
+    [
+     "cappadocian_greek_culture",
+     0.1,
+     0.04
+    ]
+   ],
+   "religions": [
+    [
+     "orthodox",
+     94.5,
+     48.69
+    ],
+    [
+     "sunni",
+     50.7,
+     26.14
+    ],
+    [
+     "shia",
+     48.8,
+     25.16
+    ]
+   ]
+  }
+ ],
+ "overlord": [],
+ "active_wars": [
+  {
+   "name": "NORMAL_WAR_NAME",
+   "bases": [
+    [
+     "First",
+     "BYZ"
+    ],
+    [
+     "Second",
+     "HUN"
+    ]
+   ],
+   "attacker": {
+    "id": 203,
+    "tag": "BYZ",
+    "name": "BYZ"
+   },
+   "defenders": [
+    {
+     "id": 381,
+     "tag": "HUN",
+     "name": "HUN"
+    }
+   ],
+   "participants": [
+    {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    {
+     "id": 381,
+     "tag": "HUN",
+     "name": "HUN"
+    },
+    {
+     "id": 1849,
+     "tag": "KOL",
+     "name": "KOL"
+    },
+    {
+     "id": 212,
+     "tag": "BOS",
+     "name": "BOS"
+    },
+    {
+     "id": 1495,
+     "tag": "NAP",
+     "name": "NAP"
+    },
+    {
+     "id": 197,
+     "tag": "ACH",
+     "name": "ACH"
+    },
+    {
+     "id": 201,
+     "tag": "NAX",
+     "name": "NAX"
+    },
+    {
+     "id": 207,
+     "tag": "ALB",
+     "name": "ALB"
+    },
+    {
+     "id": 209,
+     "tag": "MZK",
+     "name": "MZK"
+    },
+    {
+     "id": 210,
+     "tag": "ANT",
+     "name": "ANT"
+    },
+    {
+     "id": 211,
+     "tag": "MTR",
+     "name": "MTR"
+    },
+    {
+     "id": 1515,
+     "tag": "SIE",
+     "name": "SIE"
+    },
+    {
+     "id": 1453,
+     "tag": "ARB",
+     "name": "ARB"
+    },
+    {
+     "id": 198,
+     "tag": "ATH",
+     "name": "ATH"
+    },
+    {
+     "id": 214,
+     "tag": "BUL",
+     "name": "BUL"
+    },
+    {
+     "id": 1514,
+     "tag": "SIC",
+     "name": "SIC"
+    },
+    {
+     "id": 16779121,
+     "tag": "AAA28",
+     "name": "kayseri_province"
+    },
+    {
+     "id": 33556774,
+     "tag": "AAA27",
+     "name": "usak_province"
+    },
+    {
+     "id": 2373,
+     "tag": "AAA33",
+     "name": "illyria_province"
+    },
+    {
+     "id": 16779590,
+     "tag": "AAA19",
+     "name": "alaiye_province"
+    },
+    {
+     "id": 50334028,
+     "tag": "AAA45",
+     "name": "sinop_province"
+    },
+    {
+     "id": 16779613,
+     "tag": "AAA04",
+     "name": "aksaray_province"
+    },
+    {
+     "id": 33556368,
+     "tag": "AAA34",
+     "name": "konya_province"
+    },
+    {
+     "id": 134220081,
+     "tag": "AAA94",
+     "name": "sivas_province"
+    },
+    {
+     "id": 33556195,
+     "tag": "AAA21",
+     "name": "ankara_province"
+    },
+    {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    {
+     "id": 207,
+     "tag": "ALB",
+     "name": "ALB"
+    },
+    {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    {
+     "id": 197,
+     "tag": "ACH",
+     "name": "ACH"
+    },
+    {
+     "id": 1495,
+     "tag": "NAP",
+     "name": "NAP"
+    },
+    {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    {
+     "id": 197,
+     "tag": "ACH",
+     "name": "ACH"
+    },
+    {
+     "id": 198,
+     "tag": "ATH",
+     "name": "ATH"
+    },
+    {
+     "id": 197,
+     "tag": "ACH",
+     "name": "ACH"
+    },
+    {
+     "id": 198,
+     "tag": "ATH",
+     "name": "ATH"
+    },
+    {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    {
+     "id": 212,
+     "tag": "BOS",
+     "name": "BOS"
+    },
+    {
+     "id": 198,
+     "tag": "ATH",
+     "name": "ATH"
+    },
+    {
+     "id": 197,
+     "tag": "ACH",
+     "name": "ACH"
+    },
+    {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    {
+     "id": 1495,
+     "tag": "NAP",
+     "name": "NAP"
+    },
+    {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    {
+     "id": 1495,
+     "tag": "NAP",
+     "name": "NAP"
+    },
+    {
+     "id": 209,
+     "tag": "MZK",
+     "name": "MZK"
+    },
+    {
+     "id": 211,
+     "tag": "MTR",
+     "name": "MTR"
+    },
+    {
+     "id": 207,
+     "tag": "ALB",
+     "name": "ALB"
+    },
+    {
+     "id": 210,
+     "tag": "ANT",
+     "name": "ANT"
+    },
+    {
+     "id": 2373,
+     "tag": "AAA33",
+     "name": "illyria_province"
+    },
+    {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    {
+     "id": 1515,
+     "tag": "SIE",
+     "name": "SIE"
+    },
+    {
+     "id": 2373,
+     "tag": "AAA33",
+     "name": "illyria_province"
+    },
+    {
+     "id": 210,
+     "tag": "ANT",
+     "name": "ANT"
+    },
+    {
+     "id": 1495,
+     "tag": "NAP",
+     "name": "NAP"
+    },
+    {
+     "id": 16779590,
+     "tag": "AAA19",
+     "name": "alaiye_province"
+    },
+    {
+     "id": 1495,
+     "tag": "NAP",
+     "name": "NAP"
+    },
+    {
+     "id": 1514,
+     "tag": "SIC",
+     "name": "SIC"
+    },
+    {
+     "id": 381,
+     "tag": "HUN",
+     "name": "HUN"
+    },
+    {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    {
+     "id": 1495,
+     "tag": "NAP",
+     "name": "NAP"
+    },
+    {
+     "id": 1514,
+     "tag": "SIC",
+     "name": "SIC"
+    },
+    {
+     "id": 16779590,
+     "tag": "AAA19",
+     "name": "alaiye_province"
+    },
+    {
+     "id": 50334028,
+     "tag": "AAA45",
+     "name": "sinop_province"
+    },
+    {
+     "id": 201,
+     "tag": "NAX",
+     "name": "NAX"
+    },
+    {
+     "id": 2373,
+     "tag": "AAA33",
+     "name": "illyria_province"
+    },
+    {
+     "id": 381,
+     "tag": "HUN",
+     "name": "HUN"
+    },
+    {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    {
+     "id": 381,
+     "tag": "HUN",
+     "name": "HUN"
+    },
+    {
+     "id": 1495,
+     "tag": "NAP",
+     "name": "NAP"
+    },
+    {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    {
+     "id": 212,
+     "tag": "BOS",
+     "name": "BOS"
+    },
+    {
+     "id": 381,
+     "tag": "HUN",
+     "name": "HUN"
+    },
+    {
+     "id": 1495,
+     "tag": "NAP",
+     "name": "NAP"
+    },
+    {
+     "id": 50334028,
+     "tag": "AAA45",
+     "name": "sinop_province"
+    },
+    {
+     "id": 134220081,
+     "tag": "AAA94",
+     "name": "sivas_province"
+    },
+    {
+     "id": 203,
+     "tag": "BYZ",
+     "name": "BYZ"
+    },
+    {
+     "id": 1495,
+     "tag": "NAP",
+     "name": "NAP"
+    }
+   ],
+   "casus_belli": "cb_restore_roman_borders",
+   "start_dates": [
+    "1387.11.17",
+    "1390.11.27",
+    "1391.10.7"
+   ],
+   "attacker_score": null,
+   "defender_score": "13"
+  }
+ ],
+ "war_name_register_size": 0,
+ "great_powers": [
+  [
+   {
+    "id": 899,
+    "tag": "TIM",
+    "name": "TIM"
+   },
+   "1368.10.1"
+  ],
+  [
+   {
+    "id": 203,
+    "tag": "BYZ",
+    "name": "BYZ"
+   },
+   "1358.10.1"
+  ],
+  [
+   {
+    "id": 1142,
+    "tag": "FRA",
+    "name": "FRA"
+   },
+   "1337.4.1"
+  ],
+  [
+   {
+    "id": 611,
+    "tag": "JAP",
+    "name": "ASK"
+   },
+   "1337.4.1"
+  ],
+  [
+   {
+    "id": 289,
+    "tag": "ENG",
+    "name": "ENG"
+   },
+   "1337.4.1"
+  ],
+  [
+   {
+    "id": 1138,
+    "tag": "MAM",
+    "name": "MAM"
+   },
+   "1337.4.1"
+  ],
+  [
+   {
+    "id": 766,
+    "tag": "CHI",
+    "name": "WUU"
+   },
+   "1358.7.1"
+  ],
+  [
+   {
+    "id": 2148,
+    "tag": "BOH",
+    "name": "BOH"
+   },
+   "1337.4.1"
+  ],
+  [
+   {
+    "id": 381,
+    "tag": "HUN",
+    "name": "HUN"
+   },
+   "1360.9.1"
+  ],
+  [
+   {
+    "id": 1253,
+    "tag": "CAS",
+    "name": "CAS"
+   },
+   "1367.12.1"
+  ],
+  [
+   {
+    "id": 607,
+    "tag": "KOR",
+    "name": "KOR"
+   },
+   "1392.3.1"
+  ]
+ ],
+ "hegemons": [],
+ "situations": []
+}

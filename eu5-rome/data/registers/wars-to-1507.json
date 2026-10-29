@@ -1,0 +1,8274 @@
+[
+ {
+  "other": {
+   "id": 1473,
+   "tag": "CRR",
+   "name": "CRR"
+  },
+  "date": "2.1.1",
+  "score": null,
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1486,
+   "tag": "LUC",
+   "name": "LUC"
+  },
+  "date": "2.1.1",
+  "score": null,
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1490,
+   "tag": "MND",
+   "name": "MND"
+  },
+  "date": "2.1.1",
+  "score": null,
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1523,
+   "tag": "VEN",
+   "name": "VEN"
+  },
+  "date": "2.1.1",
+  "score": null,
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 33,
+   "tag": "KRD",
+   "name": "KRD"
+  },
+  "date": "1341.2.1",
+  "score": "61",
+  "in_progress": false,
+  "seen": "1349.10.31.12"
+ },
+ {
+  "other": {
+   "id": 36,
+   "tag": "SRU",
+   "name": "SRU"
+  },
+  "date": "1341.8.1",
+  "score": "96",
+  "in_progress": false,
+  "seen": "1349.10.31.12"
+ },
+ {
+  "other": {
+   "id": 34,
+   "tag": "MEN",
+   "name": "MEN"
+  },
+  "date": "1342.5.2",
+  "score": "76",
+  "in_progress": false,
+  "seen": "1349.10.31.12"
+ },
+ {
+  "other": {
+   "id": 59,
+   "tag": "TVS",
+   "name": "TVS"
+  },
+  "date": "1342.5.2",
+  "score": "76",
+  "in_progress": false,
+  "seen": "1349.10.31.12"
+ },
+ {
+  "other": {
+   "id": 32,
+   "tag": "KBD",
+   "name": "KBD"
+  },
+  "date": "1346.11.3",
+  "score": "70",
+  "in_progress": false,
+  "seen": "1349.10.31.12"
+ },
+ {
+  "other": {
+   "id": 41,
+   "tag": "TUR",
+   "name": "TUR"
+  },
+  "date": "1346.11.3",
+  "score": "70",
+  "in_progress": false,
+  "seen": "1349.10.31.12"
+ },
+ {
+  "other": {
+   "id": 28,
+   "tag": "HCI",
+   "name": "HCI"
+  },
+  "date": "1348.4.29",
+  "score": "40",
+  "in_progress": false,
+  "seen": "1349.10.31.12"
+ },
+ {
+  "other": {
+   "id": 38,
+   "tag": "TDJ",
+   "name": "TDJ"
+  },
+  "date": "1348.8.7",
+  "score": "53",
+  "in_progress": false,
+  "seen": "1349.10.31.12"
+ },
+ {
+  "other": {
+   "id": 18,
+   "tag": "AYD",
+   "name": "AYD"
+  },
+  "date": "1349.10.6",
+  "score": null,
+  "in_progress": true,
+  "seen": "1349.10.31.12"
+ },
+ {
+  "other": {
+   "id": 27,
+   "tag": "HMD",
+   "name": "HMD"
+  },
+  "date": "1349.10.6",
+  "score": null,
+  "in_progress": true,
+  "seen": "1349.10.31.12"
+ },
+ {
+  "other": {
+   "id": 18,
+   "tag": "AYD",
+   "name": "AYD"
+  },
+  "date": "1350.2.14",
+  "score": "13",
+  "in_progress": false,
+  "seen": "1365.5.19.12"
+ },
+ {
+  "other": {
+   "id": 27,
+   "tag": "HMD",
+   "name": "HMD"
+  },
+  "date": "1350.2.14",
+  "score": "13",
+  "in_progress": false,
+  "seen": "1365.5.19.12"
+ },
+ {
+  "other": {
+   "id": 214,
+   "tag": "BUL",
+   "name": "BUL"
+  },
+  "date": "1351.4.1",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1365.5.19.12"
+ },
+ {
+  "other": {
+   "id": 37,
+   "tag": "SUT",
+   "name": "SUT"
+  },
+  "date": "1353.2.9",
+  "score": "53",
+  "in_progress": false,
+  "seen": "1365.5.19.12"
+ },
+ {
+  "other": {
+   "id": 21,
+   "tag": "CND",
+   "name": "CND"
+  },
+  "date": "1357.1.3",
+  "score": "10",
+  "in_progress": false,
+  "seen": "1365.5.19.12"
+ },
+ {
+  "other": {
+   "id": 26,
+   "tag": "GRM",
+   "name": "GRM"
+  },
+  "date": "1357.1.3",
+  "score": "43",
+  "in_progress": false,
+  "seen": "1365.5.19.12"
+ },
+ {
+  "other": {
+   "id": 382,
+   "tag": "WAL",
+   "name": "WAL"
+  },
+  "date": "1358.7.31",
+  "score": "50",
+  "in_progress": false,
+  "seen": "1365.5.19.12"
+ },
+ {
+  "other": {
+   "id": 206,
+   "tag": "SER",
+   "name": "SER"
+  },
+  "date": "1358.9.29",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1365.5.19.12"
+ },
+ {
+  "other": {
+   "id": 16,
+   "tag": "ALY",
+   "name": "ALY"
+  },
+  "date": "1360.12.1",
+  "score": "95",
+  "in_progress": false,
+  "seen": "1365.5.19.12"
+ },
+ {
+  "other": {
+   "id": 31,
+   "tag": "KAR",
+   "name": "KAR"
+  },
+  "date": "1360.12.1",
+  "score": "95",
+  "in_progress": false,
+  "seen": "1365.5.19.12"
+ },
+ {
+  "other": {
+   "id": 25,
+   "tag": "ERE",
+   "name": "ERE"
+  },
+  "date": "1363.8.9",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1365.5.19.12"
+ },
+ {
+  "other": {
+   "id": 198,
+   "tag": "ATH",
+   "name": "ATH"
+  },
+  "date": "1363.12.1",
+  "score": "80",
+  "in_progress": false,
+  "seen": "1365.5.19.12"
+ },
+ {
+  "other": {
+   "id": 1514,
+   "tag": "SIC",
+   "name": "SIC"
+  },
+  "date": "1363.12.1",
+  "score": "80",
+  "in_progress": false,
+  "seen": "1365.5.19.12"
+ },
+ {
+  "other": {
+   "id": 16779595,
+   "tag": "AAA39",
+   "name": "CIVILWAR_FACTION_nobles_estate_NAME"
+  },
+  "date": "1364.12.1",
+  "score": null,
+  "in_progress": true,
+  "seen": "1365.5.19.12"
+ },
+ {
+  "other": {
+   "id": 117442877,
+   "tag": "AAA25",
+   "name": "CIVILWAR_FACTION_clergy_estate_NAME"
+  },
+  "date": "1365.5.15",
+  "score": null,
+  "in_progress": true,
+  "seen": "1365.5.19.12"
+ },
+ {
+  "other": {
+   "id": 21,
+   "tag": "CND",
+   "name": "CND"
+  },
+  "date": "1368.3.12",
+  "score": "88",
+  "in_progress": false,
+  "seen": "1369.5.1"
+ },
+ {
+  "other": {
+   "id": 32,
+   "tag": "KBD",
+   "name": "KBD"
+  },
+  "date": "1368.3.12",
+  "score": "88",
+  "in_progress": false,
+  "seen": "1369.5.1"
+ },
+ {
+  "other": {
+   "id": 32,
+   "tag": "KBD",
+   "name": "KBD"
+  },
+  "date": "1374.7.2",
+  "score": "70",
+  "in_progress": false,
+  "seen": "1393.2.27.10"
+ },
+ {
+  "other": {
+   "id": 213,
+   "tag": "RAG",
+   "name": "RAG"
+  },
+  "date": "1376.12.25",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1393.2.27.10"
+ },
+ {
+  "other": {
+   "id": 221,
+   "tag": "CRT",
+   "name": "CRT"
+  },
+  "date": "1376.12.25",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1393.2.27.10"
+ },
+ {
+  "other": {
+   "id": 1523,
+   "tag": "VEN",
+   "name": "VEN"
+  },
+  "date": "1376.12.25",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1393.2.27.10"
+ },
+ {
+  "other": {
+   "id": 25,
+   "tag": "ERE",
+   "name": "ERE"
+  },
+  "date": "1382.4.1",
+  "score": "43",
+  "in_progress": false,
+  "seen": "1393.2.27.10"
+ },
+ {
+  "other": {
+   "id": 31,
+   "tag": "KAR",
+   "name": "KAR"
+  },
+  "date": "1389.1.7",
+  "score": "70",
+  "in_progress": false,
+  "seen": "1393.2.27.10"
+ },
+ {
+  "other": {
+   "id": 197,
+   "tag": "ACH",
+   "name": "ACH"
+  },
+  "date": "1392.8.29",
+  "score": null,
+  "in_progress": true,
+  "seen": "1393.2.27.10"
+ },
+ {
+  "other": {
+   "id": 201,
+   "tag": "NAX",
+   "name": "NAX"
+  },
+  "date": "1392.8.29",
+  "score": null,
+  "in_progress": true,
+  "seen": "1393.2.27.10"
+ },
+ {
+  "other": {
+   "id": 207,
+   "tag": "ALB",
+   "name": "ALB"
+  },
+  "date": "1392.8.29",
+  "score": null,
+  "in_progress": true,
+  "seen": "1393.2.27.10"
+ },
+ {
+  "other": {
+   "id": 209,
+   "tag": "MZK",
+   "name": "MZK"
+  },
+  "date": "1392.8.29",
+  "score": null,
+  "in_progress": true,
+  "seen": "1393.2.27.10"
+ },
+ {
+  "other": {
+   "id": 210,
+   "tag": "ANT",
+   "name": "ANT"
+  },
+  "date": "1392.8.29",
+  "score": null,
+  "in_progress": true,
+  "seen": "1393.2.27.10"
+ },
+ {
+  "other": {
+   "id": 211,
+   "tag": "MTR",
+   "name": "MTR"
+  },
+  "date": "1392.8.29",
+  "score": null,
+  "in_progress": true,
+  "seen": "1393.2.27.10"
+ },
+ {
+  "other": {
+   "id": 212,
+   "tag": "BOS",
+   "name": "BOS"
+  },
+  "date": "1392.8.29",
+  "score": null,
+  "in_progress": true,
+  "seen": "1393.2.27.10"
+ },
+ {
+  "other": {
+   "id": 381,
+   "tag": "HUN",
+   "name": "HUN"
+  },
+  "date": "1392.8.29",
+  "score": null,
+  "in_progress": true,
+  "seen": "1393.2.27.10"
+ },
+ {
+  "other": {
+   "id": 1453,
+   "tag": "ARB",
+   "name": "ARB"
+  },
+  "date": "1392.8.29",
+  "score": null,
+  "in_progress": true,
+  "seen": "1393.2.27.10"
+ },
+ {
+  "other": {
+   "id": 1495,
+   "tag": "NAP",
+   "name": "NAP"
+  },
+  "date": "1392.8.29",
+  "score": null,
+  "in_progress": true,
+  "seen": "1393.2.27.10"
+ },
+ {
+  "other": {
+   "id": 1515,
+   "tag": "SIE",
+   "name": "SIE"
+  },
+  "date": "1392.8.29",
+  "score": null,
+  "in_progress": true,
+  "seen": "1393.2.27.10"
+ },
+ {
+  "other": {
+   "id": 1849,
+   "tag": "KOL",
+   "name": "KOL"
+  },
+  "date": "1392.8.29",
+  "score": null,
+  "in_progress": true,
+  "seen": "1393.2.27.10"
+ },
+ {
+  "other": {
+   "id": 197,
+   "tag": "ACH",
+   "name": "ACH"
+  },
+  "date": "1394.7.1",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1415.3.27.10"
+ },
+ {
+  "other": {
+   "id": 201,
+   "tag": "NAX",
+   "name": "NAX"
+  },
+  "date": "1394.7.1",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1415.3.27.10"
+ },
+ {
+  "other": {
+   "id": 207,
+   "tag": "ALB",
+   "name": "ALB"
+  },
+  "date": "1394.7.1",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1415.3.27.10"
+ },
+ {
+  "other": {
+   "id": 209,
+   "tag": "MZK",
+   "name": "MZK"
+  },
+  "date": "1394.7.1",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1415.3.27.10"
+ },
+ {
+  "other": {
+   "id": 210,
+   "tag": "ANT",
+   "name": "ANT"
+  },
+  "date": "1394.7.1",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1415.3.27.10"
+ },
+ {
+  "other": {
+   "id": 211,
+   "tag": "MTR",
+   "name": "MTR"
+  },
+  "date": "1394.7.1",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1415.3.27.10"
+ },
+ {
+  "other": {
+   "id": 212,
+   "tag": "BOS",
+   "name": "BOS"
+  },
+  "date": "1394.7.1",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1415.3.27.10"
+ },
+ {
+  "other": {
+   "id": 381,
+   "tag": "HUN",
+   "name": "HUN"
+  },
+  "date": "1394.7.1",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1415.3.27.10"
+ },
+ {
+  "other": {
+   "id": 382,
+   "tag": "WAL",
+   "name": "WAL"
+  },
+  "date": "1394.7.1",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1415.3.27.10"
+ },
+ {
+  "other": {
+   "id": 1453,
+   "tag": "ARB",
+   "name": "ARB"
+  },
+  "date": "1394.7.1",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1415.3.27.10"
+ },
+ {
+  "other": {
+   "id": 1495,
+   "tag": "NAP",
+   "name": "NAP"
+  },
+  "date": "1394.7.1",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1415.3.27.10"
+ },
+ {
+  "other": {
+   "id": 1515,
+   "tag": "SIE",
+   "name": "SIE"
+  },
+  "date": "1394.7.1",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1415.3.27.10"
+ },
+ {
+  "other": {
+   "id": 1849,
+   "tag": "KOL",
+   "name": "KOL"
+  },
+  "date": "1394.7.1",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1415.3.27.10"
+ },
+ {
+  "other": {
+   "id": 25,
+   "tag": "ERE",
+   "name": "ERE"
+  },
+  "date": "1403.1.1",
+  "score": "70",
+  "in_progress": false,
+  "seen": "1415.3.27.10"
+ },
+ {
+  "other": {
+   "id": 20,
+   "tag": "CIL",
+   "name": "CIL"
+  },
+  "date": "1407.5.25",
+  "score": "53",
+  "in_progress": false,
+  "seen": "1415.3.27.10"
+ },
+ {
+  "other": {
+   "id": 387,
+   "tag": "MOL",
+   "name": "MOL"
+  },
+  "date": "1416.11.6",
+  "score": "41",
+  "in_progress": false,
+  "seen": "1421.1.25"
+ },
+ {
+  "other": {
+   "id": 137,
+   "tag": "MEC",
+   "name": "MEC"
+  },
+  "date": "1420.8.5",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1421.1.25"
+ },
+ {
+  "other": {
+   "id": 150,
+   "tag": "MDA",
+   "name": "MDA"
+  },
+  "date": "1420.8.5",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1421.1.25"
+ },
+ {
+  "other": {
+   "id": 510,
+   "tag": "AMR",
+   "name": "AMR"
+  },
+  "date": "1420.8.5",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1421.1.25"
+ },
+ {
+  "other": {
+   "id": 1135,
+   "tag": "BQA",
+   "name": "BQA"
+  },
+  "date": "1420.8.5",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1421.1.25"
+ },
+ {
+  "other": {
+   "id": 1136,
+   "tag": "BKZ",
+   "name": "BKZ"
+  },
+  "date": "1420.8.5",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1421.1.25"
+ },
+ {
+  "other": {
+   "id": 1138,
+   "tag": "MAM",
+   "name": "MAM"
+  },
+  "date": "1420.8.5",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1421.1.25"
+ },
+ {
+  "other": {
+   "id": 1140,
+   "tag": "TRP",
+   "name": "TRP"
+  },
+  "date": "1420.8.5",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1421.1.25"
+ },
+ {
+  "other": {
+   "id": 1574,
+   "tag": "GBS",
+   "name": "GBS"
+  },
+  "date": "1420.8.5",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1421.1.25"
+ },
+ {
+  "other": {
+   "id": 1576,
+   "tag": "KUK",
+   "name": "KUK"
+  },
+  "date": "1420.8.5",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1421.1.25"
+ },
+ {
+  "other": {
+   "id": 1577,
+   "tag": "MOR",
+   "name": "MOR"
+  },
+  "date": "1420.8.5",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1421.1.25"
+ },
+ {
+  "other": {
+   "id": 1583,
+   "tag": "TAT",
+   "name": "TAT"
+  },
+  "date": "1420.8.5",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1421.1.25"
+ },
+ {
+  "other": {
+   "id": 1585,
+   "tag": "TFL",
+   "name": "TFL"
+  },
+  "date": "1420.8.5",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1421.1.25"
+ },
+ {
+  "other": {
+   "id": 1586,
+   "tag": "TGT",
+   "name": "TGT"
+  },
+  "date": "1420.8.5",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1421.1.25"
+ },
+ {
+  "other": {
+   "id": 1587,
+   "tag": "TLE",
+   "name": "TLE"
+  },
+  "date": "1420.8.5",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1421.1.25"
+ },
+ {
+  "other": {
+   "id": 1588,
+   "tag": "TUN",
+   "name": "TUN"
+  },
+  "date": "1420.8.5",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1421.1.25"
+ },
+ {
+  "other": {
+   "id": 33556814,
+   "tag": "AAA30",
+   "name": "demena_province"
+  },
+  "date": "1420.8.5",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1421.1.25"
+ },
+ {
+  "other": {
+   "id": 381,
+   "tag": "HUN",
+   "name": "HUN"
+  },
+  "date": "1423.6.13",
+  "score": "99",
+  "in_progress": false,
+  "seen": "1423.11.1"
+ },
+ {
+  "other": {
+   "id": 382,
+   "tag": "RMN",
+   "name": "RMN"
+  },
+  "date": "1423.6.13",
+  "score": "99",
+  "in_progress": false,
+  "seen": "1423.11.1"
+ },
+ {
+  "other": {
+   "id": 387,
+   "tag": "MOL",
+   "name": "MOL"
+  },
+  "date": "1423.6.13",
+  "score": "99",
+  "in_progress": false,
+  "seen": "1423.11.1"
+ },
+ {
+  "other": {
+   "id": 1453,
+   "tag": "ARB",
+   "name": "ARB"
+  },
+  "date": "1423.6.13",
+  "score": "99",
+  "in_progress": false,
+  "seen": "1423.11.1"
+ },
+ {
+  "other": {
+   "id": 1495,
+   "tag": "NAP",
+   "name": "NAP"
+  },
+  "date": "1423.6.13",
+  "score": "99",
+  "in_progress": false,
+  "seen": "1423.11.1"
+ },
+ {
+  "other": {
+   "id": 1515,
+   "tag": "SIE",
+   "name": "SIE"
+  },
+  "date": "1423.6.13",
+  "score": "99",
+  "in_progress": false,
+  "seen": "1423.11.1"
+ },
+ {
+  "other": {
+   "id": 1966,
+   "tag": "SSK",
+   "name": "SSK"
+  },
+  "date": "1425.11.10",
+  "score": "70",
+  "in_progress": false,
+  "seen": "1428.4.22.16"
+ },
+ {
+  "other": {
+   "id": 1970,
+   "tag": "NRK",
+   "name": "NRK"
+  },
+  "date": "1425.11.10",
+  "score": "70",
+  "in_progress": false,
+  "seen": "1428.4.22.16"
+ },
+ {
+  "other": {
+   "id": 31,
+   "tag": "KAR",
+   "name": "KAR"
+  },
+  "date": "1429.5.6",
+  "score": "70",
+  "in_progress": false,
+  "seen": "1437.2.27.4"
+ },
+ {
+  "other": {
+   "id": 22,
+   "tag": "CYP",
+   "name": "CYP"
+  },
+  "date": "1430.10.15",
+  "score": "43",
+  "in_progress": false,
+  "seen": "1437.2.27.4"
+ },
+ {
+  "other": {
+   "id": 245,
+   "tag": "LIT",
+   "name": "LIT"
+  },
+  "date": "1431.4.3",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1437.2.27.4"
+ },
+ {
+  "other": {
+   "id": 1964,
+   "tag": "TUV",
+   "name": "TUV"
+  },
+  "date": "1431.4.3",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1437.2.27.4"
+ },
+ {
+  "other": {
+   "id": 1969,
+   "tag": "MIS",
+   "name": "MIS"
+  },
+  "date": "1431.4.3",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1437.2.27.4"
+ },
+ {
+  "other": {
+   "id": 1977,
+   "tag": "SIL",
+   "name": "SIL"
+  },
+  "date": "1431.4.3",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1437.2.27.4"
+ },
+ {
+  "other": {
+   "id": 1967,
+   "tag": "VBK",
+   "name": "VBK"
+  },
+  "date": "1435.12.25",
+  "score": "99",
+  "in_progress": false,
+  "seen": "1437.2.27.4"
+ },
+ {
+  "other": {
+   "id": 1971,
+   "tag": "DRU",
+   "name": "DRU"
+  },
+  "date": "1435.12.25",
+  "score": "99",
+  "in_progress": false,
+  "seen": "1437.2.27.4"
+ },
+ {
+  "other": {
+   "id": 2024,
+   "tag": "SMO",
+   "name": "SMO"
+  },
+  "date": "1435.12.25",
+  "score": "99",
+  "in_progress": false,
+  "seen": "1437.2.27.4"
+ },
+ {
+  "other": {
+   "id": 2046,
+   "tag": "CHR",
+   "name": "CHR"
+  },
+  "date": "1435.12.25",
+  "score": "99",
+  "in_progress": false,
+  "seen": "1437.2.27.4"
+ },
+ {
+  "other": {
+   "id": 2050,
+   "tag": "NSL",
+   "name": "NSL"
+  },
+  "date": "1435.12.25",
+  "score": "99",
+  "in_progress": false,
+  "seen": "1437.2.27.4"
+ },
+ {
+  "other": {
+   "id": 220,
+   "tag": "KNI",
+   "name": "KNI"
+  },
+  "date": "1437.2.1",
+  "score": "68",
+  "in_progress": false,
+  "seen": "1437.2.27.4"
+ },
+ {
+  "other": {
+   "id": 1481,
+   "tag": "GEN",
+   "name": "GEN"
+  },
+  "date": "1437.2.1",
+  "score": "68",
+  "in_progress": false,
+  "seen": "1437.2.27.4"
+ },
+ {
+  "other": {
+   "id": 2256,
+   "tag": "GAZ",
+   "name": "GAZ"
+  },
+  "date": "1437.2.1",
+  "score": "68",
+  "in_progress": false,
+  "seen": "1437.2.27.4"
+ },
+ {
+  "other": {
+   "id": 1140,
+   "tag": "TRP",
+   "name": "TRP"
+  },
+  "date": "1441.2.16",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1442.2.4.16"
+ },
+ {
+  "other": {
+   "id": 1586,
+   "tag": "TGT",
+   "name": "TGT"
+  },
+  "date": "1441.2.16",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1442.2.4.16"
+ },
+ {
+  "other": {
+   "id": 1588,
+   "tag": "TUN",
+   "name": "TUN"
+  },
+  "date": "1441.2.16",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1442.2.4.16"
+ },
+ {
+  "other": {
+   "id": 33556814,
+   "tag": "AAA30",
+   "name": "demena_province"
+  },
+  "date": "1441.2.16",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1442.2.4.16"
+ },
+ {
+  "other": {
+   "id": 137,
+   "tag": "MEC",
+   "name": "MEC"
+  },
+  "date": "1441.2.17",
+  "score": "99",
+  "in_progress": false,
+  "seen": "1442.2.4.16"
+ },
+ {
+  "other": {
+   "id": 150,
+   "tag": "MDA",
+   "name": "MDA"
+  },
+  "date": "1441.2.17",
+  "score": "99",
+  "in_progress": false,
+  "seen": "1442.2.4.16"
+ },
+ {
+  "other": {
+   "id": 510,
+   "tag": "AMR",
+   "name": "AMR"
+  },
+  "date": "1441.2.17",
+  "score": "99",
+  "in_progress": false,
+  "seen": "1442.2.4.16"
+ },
+ {
+  "other": {
+   "id": 1135,
+   "tag": "BQA",
+   "name": "BQA"
+  },
+  "date": "1441.2.17",
+  "score": "99",
+  "in_progress": false,
+  "seen": "1442.2.4.16"
+ },
+ {
+  "other": {
+   "id": 1136,
+   "tag": "BKZ",
+   "name": "BKZ"
+  },
+  "date": "1441.2.17",
+  "score": "99",
+  "in_progress": false,
+  "seen": "1442.2.4.16"
+ },
+ {
+  "other": {
+   "id": 1138,
+   "tag": "MAM",
+   "name": "MAM"
+  },
+  "date": "1441.2.17",
+  "score": "99",
+  "in_progress": false,
+  "seen": "1442.2.4.16"
+ },
+ {
+  "other": {
+   "id": 1576,
+   "tag": "KUK",
+   "name": "KUK"
+  },
+  "date": "1441.2.17",
+  "score": "99",
+  "in_progress": false,
+  "seen": "1442.2.4.16"
+ },
+ {
+  "other": {
+   "id": 1577,
+   "tag": "MOR",
+   "name": "MOR"
+  },
+  "date": "1441.2.17",
+  "score": "99",
+  "in_progress": false,
+  "seen": "1442.2.4.16"
+ },
+ {
+  "other": {
+   "id": 1583,
+   "tag": "TAT",
+   "name": "TAT"
+  },
+  "date": "1441.2.17",
+  "score": "99",
+  "in_progress": false,
+  "seen": "1442.2.4.16"
+ },
+ {
+  "other": {
+   "id": 1587,
+   "tag": "TLE",
+   "name": "TLE"
+  },
+  "date": "1441.2.17",
+  "score": "99",
+  "in_progress": false,
+  "seen": "1442.2.4.16"
+ },
+ {
+  "other": {
+   "id": 24,
+   "tag": "DUL",
+   "name": "DUL"
+  },
+  "date": "1443.11.26",
+  "score": "14",
+  "in_progress": false,
+  "seen": "1448.1.17.6"
+ },
+ {
+  "other": {
+   "id": 140,
+   "tag": "HUT",
+   "name": "HUT"
+  },
+  "date": "1443.11.26",
+  "score": "14",
+  "in_progress": false,
+  "seen": "1448.1.17.6"
+ },
+ {
+  "other": {
+   "id": 397,
+   "tag": "TRK",
+   "name": "TRK"
+  },
+  "date": "1443.11.26",
+  "score": "14",
+  "in_progress": false,
+  "seen": "1448.1.17.6"
+ },
+ {
+  "other": {
+   "id": 398,
+   "tag": "ARM",
+   "name": "ARM"
+  },
+  "date": "1443.11.26",
+  "score": "14",
+  "in_progress": false,
+  "seen": "1448.1.17.6"
+ },
+ {
+  "other": {
+   "id": 411,
+   "tag": "ALN",
+   "name": "ALN"
+  },
+  "date": "1443.11.26",
+  "score": "14",
+  "in_progress": false,
+  "seen": "1448.1.17.6"
+ },
+ {
+  "other": {
+   "id": 511,
+   "tag": "DGE",
+   "name": "DGE"
+  },
+  "date": "1443.11.26",
+  "score": "14",
+  "in_progress": false,
+  "seen": "1448.1.17.6"
+ },
+ {
+  "other": {
+   "id": 533,
+   "tag": "AQQ",
+   "name": "AQQ"
+  },
+  "date": "1443.11.26",
+  "score": "14",
+  "in_progress": false,
+  "seen": "1448.1.17.6"
+ },
+ {
+  "other": {
+   "id": 534,
+   "tag": "QAR",
+   "name": "QAR"
+  },
+  "date": "1443.11.26",
+  "score": "14",
+  "in_progress": false,
+  "seen": "1448.1.17.6"
+ },
+ {
+  "other": {
+   "id": 899,
+   "tag": "IRA",
+   "name": "IRA"
+  },
+  "date": "1443.11.26",
+  "score": "14",
+  "in_progress": false,
+  "seen": "1448.1.17.6"
+ },
+ {
+  "other": {
+   "id": 67109862,
+   "tag": "AAA58",
+   "name": "baghdad_province"
+  },
+  "date": "1443.11.26",
+  "score": "14",
+  "in_progress": false,
+  "seen": "1448.1.17.6"
+ },
+ {
+  "other": {
+   "id": 2344,
+   "tag": "AAA03",
+   "name": "julfar_province"
+  },
+  "date": "1443.11.26",
+  "score": "14",
+  "in_progress": false,
+  "seen": "1448.1.17.6"
+ },
+ {
+  "other": {
+   "id": 83888436,
+   "tag": "AAA60",
+   "name": "kufa_province"
+  },
+  "date": "1443.11.26",
+  "score": "14",
+  "in_progress": false,
+  "seen": "1448.1.17.6"
+ },
+ {
+  "other": {
+   "id": 16779589,
+   "tag": "AAA73",
+   "name": "basra_province"
+  },
+  "date": "1443.11.26",
+  "score": "14",
+  "in_progress": false,
+  "seen": "1448.1.17.6"
+ },
+ {
+  "other": {
+   "id": 1138,
+   "tag": "MAM",
+   "name": "MAM"
+  },
+  "date": "1445.11.6",
+  "score": "70",
+  "in_progress": false,
+  "seen": "1448.1.17.6"
+ },
+ {
+  "other": {
+   "id": 382,
+   "tag": "RMN",
+   "name": "RMN"
+  },
+  "date": "1447.11.23",
+  "score": "64",
+  "in_progress": false,
+  "seen": "1448.1.17.6"
+ },
+ {
+  "other": {
+   "id": 387,
+   "tag": "MOL",
+   "name": "MOL"
+  },
+  "date": "1447.11.23",
+  "score": "64",
+  "in_progress": false,
+  "seen": "1448.1.17.6"
+ },
+ {
+  "other": {
+   "id": 381,
+   "tag": "HUN",
+   "name": "HUN"
+  },
+  "date": "1448.1.17",
+  "score": "80",
+  "in_progress": false,
+  "seen": "1448.1.17.6"
+ },
+ {
+  "other": {
+   "id": 1495,
+   "tag": "NAP",
+   "name": "NAP"
+  },
+  "date": "1448.1.17",
+  "score": "80",
+  "in_progress": false,
+  "seen": "1448.1.17.6"
+ },
+ {
+  "other": {
+   "id": 1515,
+   "tag": "SIE",
+   "name": "SIE"
+  },
+  "date": "1448.1.17",
+  "score": "80",
+  "in_progress": false,
+  "seen": "1448.1.17.6"
+ },
+ {
+  "other": {
+   "id": 1953,
+   "tag": "POL",
+   "name": "POL"
+  },
+  "date": "1448.1.17",
+  "score": "80",
+  "in_progress": false,
+  "seen": "1448.1.17.6"
+ },
+ {
+  "other": {
+   "id": 1955,
+   "tag": "LCZ",
+   "name": "LCZ"
+  },
+  "date": "1448.1.17",
+  "score": "80",
+  "in_progress": false,
+  "seen": "1448.1.17.6"
+ },
+ {
+  "other": {
+   "id": 1956,
+   "tag": "PLK",
+   "name": "PLK"
+  },
+  "date": "1448.1.17",
+  "score": "80",
+  "in_progress": false,
+  "seen": "1448.1.17.6"
+ },
+ {
+  "other": {
+   "id": 1959,
+   "tag": "INO",
+   "name": "INO"
+  },
+  "date": "1448.1.17",
+  "score": "80",
+  "in_progress": false,
+  "seen": "1448.1.17.6"
+ },
+ {
+  "other": {
+   "id": 58,
+   "tag": "KIL",
+   "name": "KIL"
+  },
+  "date": "1450.2.10",
+  "score": "11",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1191,
+   "tag": "MTB",
+   "name": "MTB"
+  },
+  "date": "1450.2.10",
+  "score": "11",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1849,
+   "tag": "KOL",
+   "name": "KOL"
+  },
+  "date": "1450.2.10",
+  "score": "11",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2182,
+   "tag": "PAL",
+   "name": "PAL"
+  },
+  "date": "1450.2.10",
+  "score": "11",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2222,
+   "tag": "GRY",
+   "name": "GRY"
+  },
+  "date": "1450.2.10",
+  "score": "11",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2235,
+   "tag": "GRK",
+   "name": "GRK"
+  },
+  "date": "1450.2.10",
+  "score": "11",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2247,
+   "tag": "LEU",
+   "name": "LEU"
+  },
+  "date": "1450.2.10",
+  "score": "11",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2050,
+   "tag": "NSL",
+   "name": "NSL"
+  },
+  "date": "1455.12.4",
+  "score": "40",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1971,
+   "tag": "DRU",
+   "name": "DRU"
+  },
+  "date": "1455.12.15",
+  "score": "31",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2024,
+   "tag": "SMO",
+   "name": "SMO"
+  },
+  "date": "1456.2.6",
+  "score": "72",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1967,
+   "tag": "VBK",
+   "name": "VBK"
+  },
+  "date": "1457.2.23",
+  "score": "45",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2046,
+   "tag": "CHR",
+   "name": "CHR"
+  },
+  "date": "1457.2.23",
+  "score": "45",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1478,
+   "tag": "FLO",
+   "name": "FLO"
+  },
+  "date": "1457.12.14",
+  "score": "88",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1487,
+   "tag": "MAN",
+   "name": "MAN"
+  },
+  "date": "1457.12.14",
+  "score": "88",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1497,
+   "tag": "PAD",
+   "name": "PAD"
+  },
+  "date": "1457.12.14",
+  "score": "88",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1502,
+   "tag": "PEA",
+   "name": "PEA"
+  },
+  "date": "1457.12.14",
+  "score": "88",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1523,
+   "tag": "VEN",
+   "name": "VEN"
+  },
+  "date": "1457.12.14",
+  "score": "88",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1566,
+   "tag": "BLL",
+   "name": "BLL"
+  },
+  "date": "1457.12.14",
+  "score": "88",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1776,
+   "tag": "BRA",
+   "name": "BRA"
+  },
+  "date": "1457.12.14",
+  "score": "88",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1802,
+   "tag": "SPB",
+   "name": "SPB"
+  },
+  "date": "1457.12.14",
+  "score": "88",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1803,
+   "tag": "SAX",
+   "name": "SAX"
+  },
+  "date": "1457.12.14",
+  "score": "88",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1818,
+   "tag": "BBG",
+   "name": "BBG"
+  },
+  "date": "1457.12.14",
+  "score": "88",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1819,
+   "tag": "ANH",
+   "name": "ANH"
+  },
+  "date": "1457.12.14",
+  "score": "88",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1828,
+   "tag": "SHS",
+   "name": "SHS"
+  },
+  "date": "1457.12.14",
+  "score": "88",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1856,
+   "tag": "GMK",
+   "name": "GMK"
+  },
+  "date": "1457.12.14",
+  "score": "88",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1879,
+   "tag": "RTB",
+   "name": "RTB"
+  },
+  "date": "1457.12.14",
+  "score": "88",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1882,
+   "tag": "BLB",
+   "name": "BLB"
+  },
+  "date": "1457.12.14",
+  "score": "88",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1885,
+   "tag": "BSK",
+   "name": "BSK"
+  },
+  "date": "1457.12.14",
+  "score": "88",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2147,
+   "tag": "HAB",
+   "name": "HAB"
+  },
+  "date": "1457.12.14",
+  "score": "88",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2153,
+   "tag": "BAV",
+   "name": "BAV"
+  },
+  "date": "1457.12.14",
+  "score": "88",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2184,
+   "tag": "ANS",
+   "name": "ANS"
+  },
+  "date": "1457.12.14",
+  "score": "88",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2213,
+   "tag": "ORT",
+   "name": "ORT"
+  },
+  "date": "1457.12.14",
+  "score": "88",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2341,
+   "tag": "AAA00",
+   "name": "aargau_province"
+  },
+  "date": "1457.12.14",
+  "score": "88",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1481,
+   "tag": "GEN",
+   "name": "GEN"
+  },
+  "date": "1458.12.23",
+  "score": "77",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2256,
+   "tag": "GAZ",
+   "name": "GAZ"
+  },
+  "date": "1458.12.23",
+  "score": "77",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1461,
+   "tag": "CAG",
+   "name": "CAG"
+  },
+  "date": "1459.3.18",
+  "score": "9",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1839,
+   "tag": "TRI",
+   "name": "TRI"
+  },
+  "date": "1459.3.18",
+  "score": "9",
+  "in_progress": false,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 510,
+   "tag": "AMR",
+   "name": "AMR"
+  },
+  "date": "1460.4.26",
+  "score": "99",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1153,
+   "tag": "DAU",
+   "name": "DAU"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1163,
+   "tag": "PRO",
+   "name": "PRO"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1189,
+   "tag": "BSC",
+   "name": "BSC"
+  },
+  "date": "1460.4.26",
+  "score": null,
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1190,
+   "tag": "ALS",
+   "name": "ALS"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1194,
+   "tag": "MTZ",
+   "name": "MTZ"
+  },
+  "date": "1460.4.26",
+  "score": null,
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1209,
+   "tag": "SAV",
+   "name": "SAV"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1253,
+   "tag": "SPA",
+   "name": "SPA"
+  },
+  "date": "1460.4.26",
+  "score": null,
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1450,
+   "tag": "ABA",
+   "name": "ABA"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1452,
+   "tag": "AQU",
+   "name": "AQU"
+  },
+  "date": "1460.4.26",
+  "score": null,
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1456,
+   "tag": "ASD",
+   "name": "ASD"
+  },
+  "date": "1460.4.26",
+  "score": null,
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1473,
+   "tag": "CRR",
+   "name": "CRR"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1486,
+   "tag": "LUC",
+   "name": "LUC"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1489,
+   "tag": "MLO",
+   "name": "MLO"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1490,
+   "tag": "MND",
+   "name": "MND"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1493,
+   "tag": "MSP",
+   "name": "MSP"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1498,
+   "tag": "PAP",
+   "name": "PAP"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1506,
+   "tag": "PIS",
+   "name": "PIS"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1524,
+   "tag": "VER",
+   "name": "VER"
+  },
+  "date": "1460.4.26",
+  "score": "88",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1788,
+   "tag": "KTZ",
+   "name": "KTZ"
+  },
+  "date": "1460.4.26",
+  "score": null,
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1795,
+   "tag": "HNB",
+   "name": "HNB"
+  },
+  "date": "1460.4.26",
+  "score": null,
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1796,
+   "tag": "SPY",
+   "name": "SPY"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1797,
+   "tag": "PLN",
+   "name": "PLN"
+  },
+  "date": "1460.4.26",
+  "score": null,
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1824,
+   "tag": "QUB",
+   "name": "QUB"
+  },
+  "date": "1460.4.26",
+  "score": null,
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1826,
+   "tag": "SWZ",
+   "name": "SWZ"
+  },
+  "date": "1460.4.26",
+  "score": null,
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1843,
+   "tag": "WRM",
+   "name": "WRM"
+  },
+  "date": "1460.4.26",
+  "score": null,
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1844,
+   "tag": "SYE",
+   "name": "SYE"
+  },
+  "date": "1460.4.26",
+  "score": null,
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1845,
+   "tag": "ZWE",
+   "name": "ZWE"
+  },
+  "date": "1460.4.26",
+  "score": null,
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2150,
+   "tag": "PSS",
+   "name": "PSS"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2152,
+   "tag": "AGC",
+   "name": "AGC"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2155,
+   "tag": "SLZ",
+   "name": "SLZ"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2156,
+   "tag": "BAM",
+   "name": "BAM"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2160,
+   "tag": "WER",
+   "name": "WER"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2161,
+   "tag": "MBZ",
+   "name": "MBZ"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2162,
+   "tag": "MFK",
+   "name": "MFK"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2163,
+   "tag": "BCH",
+   "name": "BCH"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2164,
+   "tag": "STG",
+   "name": "STG"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2165,
+   "tag": "ZUR",
+   "name": "ZUR"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2166,
+   "tag": "SYZ",
+   "name": "SYZ"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2168,
+   "tag": "URI",
+   "name": "URI"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2169,
+   "tag": "OBW",
+   "name": "OBW"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2170,
+   "tag": "LCU",
+   "name": "LCU"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2171,
+   "tag": "SIT",
+   "name": "SIT"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2173,
+   "tag": "BRN",
+   "name": "BRN"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2174,
+   "tag": "SLT",
+   "name": "SLT"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2175,
+   "tag": "NEU",
+   "name": "NEU"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2176,
+   "tag": "BAS",
+   "name": "BAS"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2177,
+   "tag": "LSA",
+   "name": "LSA"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2178,
+   "tag": "KYB",
+   "name": "KYB"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2183,
+   "tag": "REG",
+   "name": "REG"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2185,
+   "tag": "FRE",
+   "name": "FRE"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2186,
+   "tag": "EIC",
+   "name": "EIC"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2187,
+   "tag": "WEI",
+   "name": "WEI"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2188,
+   "tag": "NUR",
+   "name": "NUR"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2189,
+   "tag": "WBG",
+   "name": "WBG"
+  },
+  "date": "1460.4.26",
+  "score": null,
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2190,
+   "tag": "RIE",
+   "name": "RIE"
+  },
+  "date": "1460.4.26",
+  "score": null,
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2192,
+   "tag": "UFF",
+   "name": "UFF"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2193,
+   "tag": "ROT",
+   "name": "ROT"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2199,
+   "tag": "SWA",
+   "name": "SWA"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2201,
+   "tag": "SWH",
+   "name": "SWH"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2203,
+   "tag": "BDE",
+   "name": "BDE"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2209,
+   "tag": "FBG",
+   "name": "FBG"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2210,
+   "tag": "OFB",
+   "name": "OFB"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2211,
+   "tag": "WLD",
+   "name": "WLD"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2214,
+   "tag": "BXN",
+   "name": "BXN"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2218,
+   "tag": "FLK",
+   "name": "FLK"
+  },
+  "date": "1460.4.26",
+  "score": null,
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2220,
+   "tag": "LDA",
+   "name": "LDA"
+  },
+  "date": "1460.4.26",
+  "score": null,
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2223,
+   "tag": "TGG",
+   "name": "TGG"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2226,
+   "tag": "SFC",
+   "name": "SFC"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2227,
+   "tag": "CFC",
+   "name": "CFC"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2228,
+   "tag": "MUR",
+   "name": "MUR"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2230,
+   "tag": "MUL",
+   "name": "MUL"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2231,
+   "tag": "LIC",
+   "name": "LIC"
+  },
+  "date": "1460.4.26",
+  "score": null,
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2232,
+   "tag": "BLM",
+   "name": "BLM"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2233,
+   "tag": "DIS",
+   "name": "DIS"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2236,
+   "tag": "HAC",
+   "name": "HAC"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2238,
+   "tag": "SAB",
+   "name": "SAB"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2239,
+   "tag": "THD",
+   "name": "THD"
+  },
+  "date": "1460.4.26",
+  "score": null,
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 2248,
+   "tag": "TNT",
+   "name": "TNT"
+  },
+  "date": "1460.4.26",
+  "score": "11",
+  "in_progress": true,
+  "seen": "1460.6.29.16"
+ },
+ {
+  "other": {
+   "id": 1253,
+   "tag": "SPA",
+   "name": "SPA"
+  },
+  "date": "1460.9.16",
+  "score": "72",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 289,
+   "tag": "ENG",
+   "name": "ENG"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 294,
+   "tag": "CWM",
+   "name": "CWM"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 296,
+   "tag": "ORD",
+   "name": "ORD"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 297,
+   "tag": "DMS",
+   "name": "DMS"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 306,
+   "tag": "DHM",
+   "name": "DHM"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 312,
+   "tag": "PLE",
+   "name": "PLE"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 313,
+   "tag": "WLS",
+   "name": "WLS"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 337,
+   "tag": "GWR",
+   "name": "GWR"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 338,
+   "tag": "GMG",
+   "name": "GMG"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 341,
+   "tag": "BRO",
+   "name": "BRO"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 343,
+   "tag": "EWY",
+   "name": "EWY"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 510,
+   "tag": "AMR",
+   "name": "AMR"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1142,
+   "tag": "FRA",
+   "name": "FRA"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1145,
+   "tag": "AQN",
+   "name": "AQN"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1150,
+   "tag": "AUV",
+   "name": "AUV"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1151,
+   "tag": "BOU",
+   "name": "BOU"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1153,
+   "tag": "DAU",
+   "name": "DAU"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1163,
+   "tag": "PRO",
+   "name": "PRO"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1183,
+   "tag": "VLN",
+   "name": "VLN"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1184,
+   "tag": "PER",
+   "name": "PER"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1185,
+   "tag": "TON",
+   "name": "TON"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1189,
+   "tag": "BSC",
+   "name": "BSC"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1190,
+   "tag": "ALS",
+   "name": "ALS"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1194,
+   "tag": "MTZ",
+   "name": "MTZ"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1199,
+   "tag": "BRR",
+   "name": "BRR"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1203,
+   "tag": "VNT",
+   "name": "VNT"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1206,
+   "tag": "ANG",
+   "name": "ANG"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1209,
+   "tag": "SAV",
+   "name": "SAV"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1450,
+   "tag": "ABA",
+   "name": "ABA"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1452,
+   "tag": "AQU",
+   "name": "AQU"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1456,
+   "tag": "ASD",
+   "name": "ASD"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1473,
+   "tag": "CRR",
+   "name": "CRR"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1486,
+   "tag": "LUC",
+   "name": "LUC"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1489,
+   "tag": "MLO",
+   "name": "MLO"
+  },
+  "date": "1461.10.18",
+  "score": "59",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1490,
+   "tag": "MND",
+   "name": "MND"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1493,
+   "tag": "MSP",
+   "name": "MSP"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1498,
+   "tag": "PAP",
+   "name": "PAP"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1506,
+   "tag": "PIS",
+   "name": "PIS"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1524,
+   "tag": "VER",
+   "name": "VER"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1788,
+   "tag": "KTZ",
+   "name": "KTZ"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1795,
+   "tag": "HNB",
+   "name": "HNB"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1796,
+   "tag": "SPY",
+   "name": "SPY"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1797,
+   "tag": "PLN",
+   "name": "PLN"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1824,
+   "tag": "QUB",
+   "name": "QUB"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1826,
+   "tag": "SWZ",
+   "name": "SWZ"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1843,
+   "tag": "WRM",
+   "name": "WRM"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1844,
+   "tag": "SYE",
+   "name": "SYE"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1845,
+   "tag": "ZWE",
+   "name": "ZWE"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2148,
+   "tag": "BOH",
+   "name": "BOH"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2150,
+   "tag": "PSS",
+   "name": "PSS"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2152,
+   "tag": "AGC",
+   "name": "AGC"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2155,
+   "tag": "SLZ",
+   "name": "SLZ"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2156,
+   "tag": "BAM",
+   "name": "BAM"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2160,
+   "tag": "WER",
+   "name": "WER"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2161,
+   "tag": "MBZ",
+   "name": "MBZ"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2162,
+   "tag": "MFK",
+   "name": "MFK"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2163,
+   "tag": "BCH",
+   "name": "BCH"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2164,
+   "tag": "STG",
+   "name": "STG"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2165,
+   "tag": "ZUR",
+   "name": "ZUR"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2166,
+   "tag": "SYZ",
+   "name": "SYZ"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2168,
+   "tag": "URI",
+   "name": "URI"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2169,
+   "tag": "OBW",
+   "name": "OBW"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2170,
+   "tag": "LCU",
+   "name": "LCU"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2171,
+   "tag": "SIT",
+   "name": "SIT"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2173,
+   "tag": "BRN",
+   "name": "BRN"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2174,
+   "tag": "SLT",
+   "name": "SLT"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2175,
+   "tag": "NEU",
+   "name": "NEU"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2176,
+   "tag": "BAS",
+   "name": "BAS"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2177,
+   "tag": "LSA",
+   "name": "LSA"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2178,
+   "tag": "KYB",
+   "name": "KYB"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2183,
+   "tag": "REG",
+   "name": "REG"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2185,
+   "tag": "FRE",
+   "name": "FRE"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2186,
+   "tag": "EIC",
+   "name": "EIC"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2187,
+   "tag": "WEI",
+   "name": "WEI"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2188,
+   "tag": "NUR",
+   "name": "NUR"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2189,
+   "tag": "WBG",
+   "name": "WBG"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2190,
+   "tag": "RIE",
+   "name": "RIE"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2192,
+   "tag": "UFF",
+   "name": "UFF"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2193,
+   "tag": "ROT",
+   "name": "ROT"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2199,
+   "tag": "SWA",
+   "name": "SWA"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2201,
+   "tag": "SWH",
+   "name": "SWH"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2203,
+   "tag": "BDE",
+   "name": "BDE"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2209,
+   "tag": "FBG",
+   "name": "FBG"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2210,
+   "tag": "OFB",
+   "name": "OFB"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2211,
+   "tag": "WLD",
+   "name": "WLD"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2214,
+   "tag": "BXN",
+   "name": "BXN"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2218,
+   "tag": "FLK",
+   "name": "FLK"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2220,
+   "tag": "LDA",
+   "name": "LDA"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2223,
+   "tag": "TGG",
+   "name": "TGG"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2226,
+   "tag": "SFC",
+   "name": "SFC"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2227,
+   "tag": "CFC",
+   "name": "CFC"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2228,
+   "tag": "MUR",
+   "name": "MUR"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2230,
+   "tag": "MUL",
+   "name": "MUL"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2231,
+   "tag": "LIC",
+   "name": "LIC"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2232,
+   "tag": "BLM",
+   "name": "BLM"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2233,
+   "tag": "DIS",
+   "name": "DIS"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2236,
+   "tag": "HAC",
+   "name": "HAC"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2238,
+   "tag": "SAB",
+   "name": "SAB"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2239,
+   "tag": "THD",
+   "name": "THD"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 2248,
+   "tag": "TNT",
+   "name": "TNT"
+  },
+  "date": "1461.10.18",
+  "score": "66",
+  "in_progress": false,
+  "seen": "1462.5.2.6"
+ },
+ {
+  "other": {
+   "id": 1142,
+   "tag": "FRA",
+   "name": "FRA"
+  },
+  "date": "1465.3.10",
+  "score": "62",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1150,
+   "tag": "AUV",
+   "name": "AUV"
+  },
+  "date": "1465.3.10",
+  "score": "62",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1153,
+   "tag": "DAU",
+   "name": "DAU"
+  },
+  "date": "1465.3.10",
+  "score": "62",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1183,
+   "tag": "VLN",
+   "name": "VLN"
+  },
+  "date": "1465.3.10",
+  "score": "62",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1184,
+   "tag": "PER",
+   "name": "PER"
+  },
+  "date": "1465.3.10",
+  "score": "62",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1185,
+   "tag": "TON",
+   "name": "TON"
+  },
+  "date": "1465.3.10",
+  "score": "62",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1203,
+   "tag": "VNT",
+   "name": "VNT"
+  },
+  "date": "1465.3.10",
+  "score": "62",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1773,
+   "tag": "HSA",
+   "name": "HSA"
+  },
+  "date": "1465.3.10",
+  "score": "62",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1774,
+   "tag": "LUB",
+   "name": "LUB"
+  },
+  "date": "1465.3.10",
+  "score": "62",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1781,
+   "tag": "BRM",
+   "name": "BRM"
+  },
+  "date": "1465.3.10",
+  "score": "62",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1816,
+   "tag": "HAM",
+   "name": "HAM"
+  },
+  "date": "1465.3.10",
+  "score": "62",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1839,
+   "tag": "TRI",
+   "name": "TRI"
+  },
+  "date": "1465.3.10",
+  "score": "62",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 2148,
+   "tag": "BOH",
+   "name": "BOH"
+  },
+  "date": "1465.3.10",
+  "score": "62",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1450,
+   "tag": "ABA",
+   "name": "ABA"
+  },
+  "date": "1467.5.10",
+  "score": "42",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1456,
+   "tag": "ASD",
+   "name": "ASD"
+  },
+  "date": "1467.5.10",
+  "score": "42",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1473,
+   "tag": "CRR",
+   "name": "CRR"
+  },
+  "date": "1467.5.10",
+  "score": "42",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1481,
+   "tag": "GEN",
+   "name": "GEN"
+  },
+  "date": "1467.5.10",
+  "score": "42",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1486,
+   "tag": "LUC",
+   "name": "LUC"
+  },
+  "date": "1467.5.10",
+  "score": "42",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1487,
+   "tag": "MAN",
+   "name": "MAN"
+  },
+  "date": "1467.5.10",
+  "score": "42",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1489,
+   "tag": "MLO",
+   "name": "MLO"
+  },
+  "date": "1467.5.10",
+  "score": "42",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1490,
+   "tag": "MND",
+   "name": "MND"
+  },
+  "date": "1467.5.10",
+  "score": "42",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1493,
+   "tag": "MSP",
+   "name": "MSP"
+  },
+  "date": "1467.5.10",
+  "score": "42",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1498,
+   "tag": "PAP",
+   "name": "PAP"
+  },
+  "date": "1467.5.10",
+  "score": "42",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1502,
+   "tag": "PEA",
+   "name": "PEA"
+  },
+  "date": "1467.5.10",
+  "score": "42",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1506,
+   "tag": "PIS",
+   "name": "PIS"
+  },
+  "date": "1467.5.10",
+  "score": "42",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1523,
+   "tag": "VEN",
+   "name": "VEN"
+  },
+  "date": "1467.5.10",
+  "score": "42",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1524,
+   "tag": "VER",
+   "name": "VER"
+  },
+  "date": "1467.5.10",
+  "score": "42",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 2256,
+   "tag": "GAZ",
+   "name": "GAZ"
+  },
+  "date": "1467.5.10",
+  "score": "42",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1969,
+   "tag": "MIS",
+   "name": "MIS"
+  },
+  "date": "1468.2.8",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 245,
+   "tag": "LIT",
+   "name": "LIT"
+  },
+  "date": "1468.3.29",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1964,
+   "tag": "TUV",
+   "name": "TUV"
+  },
+  "date": "1468.3.29",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 2021,
+   "tag": "NOV",
+   "name": "NOV"
+  },
+  "date": "1468.3.29",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 201327619,
+   "tag": "AAA45",
+   "name": "abruzzo_citra_province"
+  },
+  "date": "1473.7.24",
+  "score": null,
+  "in_progress": true,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1140,
+   "tag": "TRP",
+   "name": "TRP"
+  },
+  "date": "1473.7.24",
+  "score": "86",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1515,
+   "tag": "SIE",
+   "name": "SIE"
+  },
+  "date": "1473.7.24",
+  "score": "80",
+  "in_progress": true,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1586,
+   "tag": "TGT",
+   "name": "TGT"
+  },
+  "date": "1473.7.24",
+  "score": "86",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1588,
+   "tag": "TUN",
+   "name": "TUN"
+  },
+  "date": "1473.7.24",
+  "score": "86",
+  "in_progress": false,
+  "seen": "1473.7.24"
+ },
+ {
+  "other": {
+   "id": 1515,
+   "tag": "SIE",
+   "name": "SIE"
+  },
+  "date": "1473.8.27",
+  "score": "70",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 382,
+   "tag": "RMN",
+   "name": "RMN"
+  },
+  "date": "1477.6.29",
+  "score": "92",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 1450,
+   "tag": "ABA",
+   "name": "ABA"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 1452,
+   "tag": "AQU",
+   "name": "AQU"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 1456,
+   "tag": "ASD",
+   "name": "ASD"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 1473,
+   "tag": "CRR",
+   "name": "CRR"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 1478,
+   "tag": "FLO",
+   "name": "FLO"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 1481,
+   "tag": "GEN",
+   "name": "GEN"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 1486,
+   "tag": "LUC",
+   "name": "LUC"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 1489,
+   "tag": "MLO",
+   "name": "MLO"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 1490,
+   "tag": "MND",
+   "name": "MND"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 1493,
+   "tag": "MSP",
+   "name": "MSP"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 1498,
+   "tag": "PAP",
+   "name": "PAP"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 1502,
+   "tag": "PEA",
+   "name": "PEA"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 1506,
+   "tag": "PIS",
+   "name": "PIS"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 1523,
+   "tag": "VEN",
+   "name": "VEN"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 1524,
+   "tag": "VER",
+   "name": "VER"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 1784,
+   "tag": "NSH",
+   "name": "NSH"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 1796,
+   "tag": "SPY",
+   "name": "SPY"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 1849,
+   "tag": "KOL",
+   "name": "KOL"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 2147,
+   "tag": "HAB",
+   "name": "HAB"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 2150,
+   "tag": "PSS",
+   "name": "PSS"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 2152,
+   "tag": "AGC",
+   "name": "AGC"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 2155,
+   "tag": "SLZ",
+   "name": "SLZ"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 2160,
+   "tag": "WER",
+   "name": "WER"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 2161,
+   "tag": "MBZ",
+   "name": "MBZ"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 2162,
+   "tag": "MFK",
+   "name": "MFK"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 2164,
+   "tag": "STG",
+   "name": "STG"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 2165,
+   "tag": "ZUR",
+   "name": "ZUR"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 2166,
+   "tag": "SYZ",
+   "name": "SYZ"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 2168,
+   "tag": "URI",
+   "name": "URI"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 2169,
+   "tag": "OBW",
+   "name": "OBW"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 2170,
+   "tag": "LCU",
+   "name": "LCU"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 2171,
+   "tag": "SIT",
+   "name": "SIT"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 2173,
+   "tag": "BRN",
+   "name": "BRN"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 2177,
+   "tag": "LSA",
+   "name": "LSA"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 2178,
+   "tag": "KYB",
+   "name": "KYB"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 2185,
+   "tag": "FRE",
+   "name": "FRE"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 2214,
+   "tag": "BXN",
+   "name": "BXN"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 2223,
+   "tag": "TGG",
+   "name": "TGG"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 2232,
+   "tag": "BLM",
+   "name": "BLM"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 2233,
+   "tag": "DIS",
+   "name": "DIS"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 2235,
+   "tag": "GRK",
+   "name": "GRK"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 2238,
+   "tag": "SAB",
+   "name": "SAB"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 2248,
+   "tag": "TNT",
+   "name": "TNT"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 2256,
+   "tag": "GAZ",
+   "name": "GAZ"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 2341,
+   "tag": "AAA00",
+   "name": "aargau_province"
+  },
+  "date": "1477.10.31",
+  "score": "44",
+  "in_progress": false,
+  "seen": "1479.6.16.2"
+ },
+ {
+  "other": {
+   "id": 1568,
+   "tag": "AIT",
+   "name": "AIT"
+  },
+  "date": "1482.7.10",
+  "score": "70",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1142,
+   "tag": "FRA",
+   "name": "FRA"
+  },
+  "date": "1482.11.24",
+  "score": "97",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1145,
+   "tag": "AQN",
+   "name": "AQN"
+  },
+  "date": "1482.11.24",
+  "score": "97",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1150,
+   "tag": "AUV",
+   "name": "AUV"
+  },
+  "date": "1482.11.24",
+  "score": "97",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1151,
+   "tag": "BOU",
+   "name": "BOU"
+  },
+  "date": "1482.11.24",
+  "score": "97",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1153,
+   "tag": "DAU",
+   "name": "DAU"
+  },
+  "date": "1482.11.24",
+  "score": "97",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1183,
+   "tag": "VLN",
+   "name": "VLN"
+  },
+  "date": "1482.11.24",
+  "score": "97",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1184,
+   "tag": "PER",
+   "name": "PER"
+  },
+  "date": "1482.11.24",
+  "score": "97",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1199,
+   "tag": "BRR",
+   "name": "BRR"
+  },
+  "date": "1482.11.24",
+  "score": "97",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1203,
+   "tag": "VNT",
+   "name": "VNT"
+  },
+  "date": "1482.11.24",
+  "score": "97",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1206,
+   "tag": "ANG",
+   "name": "ANG"
+  },
+  "date": "1482.11.24",
+  "score": "97",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1515,
+   "tag": "SIE",
+   "name": "SIE"
+  },
+  "date": "1483.2.5",
+  "score": "70",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2173,
+   "tag": "BRN",
+   "name": "BRN"
+  },
+  "date": "1484.5.7",
+  "score": null,
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2210,
+   "tag": "OFB",
+   "name": "OFB"
+  },
+  "date": "1484.6.13",
+  "score": "31",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1552,
+   "tag": "LIM",
+   "name": "LIM"
+  },
+  "date": "1484.7.6",
+  "score": "54",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1787,
+   "tag": "BRG",
+   "name": "BRG"
+  },
+  "date": "1484.7.6",
+  "score": "54",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1829,
+   "tag": "NHS",
+   "name": "NHS"
+  },
+  "date": "1484.7.6",
+  "score": "54",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1839,
+   "tag": "TRI",
+   "name": "TRI"
+  },
+  "date": "1484.7.6",
+  "score": "54",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1840,
+   "tag": "DIE",
+   "name": "DIE"
+  },
+  "date": "1484.7.6",
+  "score": "54",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1851,
+   "tag": "APR",
+   "name": "APR"
+  },
+  "date": "1484.7.6",
+  "score": "54",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1853,
+   "tag": "JUL",
+   "name": "JUL"
+  },
+  "date": "1484.7.6",
+  "score": "54",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1869,
+   "tag": "LUN",
+   "name": "LUN"
+  },
+  "date": "1484.7.6",
+  "score": "54",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1870,
+   "tag": "BRU",
+   "name": "BRU"
+  },
+  "date": "1484.7.6",
+  "score": "54",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1877,
+   "tag": "DPH",
+   "name": "DPH"
+  },
+  "date": "1484.7.6",
+  "score": "54",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2164,
+   "tag": "STG",
+   "name": "STG"
+  },
+  "date": "1484.7.6",
+  "score": "54",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2166,
+   "tag": "SYZ",
+   "name": "SYZ"
+  },
+  "date": "1484.7.6",
+  "score": "54",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2192,
+   "tag": "UFF",
+   "name": "UFF"
+  },
+  "date": "1484.7.6",
+  "score": "54",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2235,
+   "tag": "GRK",
+   "name": "GRK"
+  },
+  "date": "1484.7.6",
+  "score": "67",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2238,
+   "tag": "SAB",
+   "name": "SAB"
+  },
+  "date": "1484.7.6",
+  "score": "54",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1163,
+   "tag": "PRO",
+   "name": "PRO"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1189,
+   "tag": "BSC",
+   "name": "BSC"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1190,
+   "tag": "ALS",
+   "name": "ALS"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1192,
+   "tag": "TUL",
+   "name": "TUL"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1209,
+   "tag": "SAV",
+   "name": "SAV"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1253,
+   "tag": "SPA",
+   "name": "SPA"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1450,
+   "tag": "ABA",
+   "name": "ABA"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1452,
+   "tag": "AQU",
+   "name": "AQU"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1478,
+   "tag": "FLO",
+   "name": "FLO"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1498,
+   "tag": "PAP",
+   "name": "PAP"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1506,
+   "tag": "PIS",
+   "name": "PIS"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1528,
+   "tag": "ACC",
+   "name": "ACC"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1550,
+   "tag": "LIE",
+   "name": "LIE"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1772,
+   "tag": "DIT",
+   "name": "DIT"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1776,
+   "tag": "BRA",
+   "name": "BRA"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1784,
+   "tag": "NSH",
+   "name": "NSH"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1788,
+   "tag": "KTZ",
+   "name": "KTZ"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1789,
+   "tag": "MAI",
+   "name": "MAI"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1790,
+   "tag": "SAA",
+   "name": "SAA"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1795,
+   "tag": "HNB",
+   "name": "HNB"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1796,
+   "tag": "SPY",
+   "name": "SPY"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1802,
+   "tag": "SPB",
+   "name": "SPB"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1803,
+   "tag": "SAX",
+   "name": "SAX"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1819,
+   "tag": "ANH",
+   "name": "ANH"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1824,
+   "tag": "QUB",
+   "name": "QUB"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1826,
+   "tag": "SWZ",
+   "name": "SWZ"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1832,
+   "tag": "HSF",
+   "name": "HSF"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1833,
+   "tag": "HES",
+   "name": "HES"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1837,
+   "tag": "BUD",
+   "name": "BUD"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1838,
+   "tag": "WTZ",
+   "name": "WTZ"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1841,
+   "tag": "FRN",
+   "name": "FRN"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1843,
+   "tag": "WRM",
+   "name": "WRM"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1844,
+   "tag": "SYE",
+   "name": "SYE"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1845,
+   "tag": "ZWE",
+   "name": "ZWE"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1847,
+   "tag": "SPO",
+   "name": "SPO"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1856,
+   "tag": "GMK",
+   "name": "GMK"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1882,
+   "tag": "BLB",
+   "name": "BLB"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1885,
+   "tag": "BSK",
+   "name": "BSK"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1888,
+   "tag": "GLN",
+   "name": "GLN"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1891,
+   "tag": "NSW",
+   "name": "NSW"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1892,
+   "tag": "NSI",
+   "name": "NSI"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1897,
+   "tag": "WIE",
+   "name": "WIE"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1977,
+   "tag": "SIL",
+   "name": "SIL"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2147,
+   "tag": "HAB",
+   "name": "HAB"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2148,
+   "tag": "BOH",
+   "name": "BOH"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2150,
+   "tag": "PSS",
+   "name": "PSS"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2153,
+   "tag": "BAV",
+   "name": "BAV"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2161,
+   "tag": "MBZ",
+   "name": "MBZ"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2163,
+   "tag": "BCH",
+   "name": "BCH"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2165,
+   "tag": "ZUR",
+   "name": "ZUR"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2171,
+   "tag": "SIT",
+   "name": "SIT"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2174,
+   "tag": "SLT",
+   "name": "SLT"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2175,
+   "tag": "NEU",
+   "name": "NEU"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2176,
+   "tag": "BAS",
+   "name": "BAS"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2178,
+   "tag": "KYB",
+   "name": "KYB"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2183,
+   "tag": "REG",
+   "name": "REG"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2184,
+   "tag": "ANS",
+   "name": "ANS"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2186,
+   "tag": "EIC",
+   "name": "EIC"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2187,
+   "tag": "WEI",
+   "name": "WEI"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2188,
+   "tag": "NUR",
+   "name": "NUR"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2189,
+   "tag": "WBG",
+   "name": "WBG"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2190,
+   "tag": "RIE",
+   "name": "RIE"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2193,
+   "tag": "ROT",
+   "name": "ROT"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2201,
+   "tag": "SWH",
+   "name": "SWH"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2203,
+   "tag": "BDE",
+   "name": "BDE"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2209,
+   "tag": "FBG",
+   "name": "FBG"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2211,
+   "tag": "WLD",
+   "name": "WLD"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2218,
+   "tag": "FLK",
+   "name": "FLK"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2219,
+   "tag": "MDS",
+   "name": "MDS"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2220,
+   "tag": "LDA",
+   "name": "LDA"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2226,
+   "tag": "SFC",
+   "name": "SFC"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2227,
+   "tag": "CFC",
+   "name": "CFC"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2228,
+   "tag": "MUR",
+   "name": "MUR"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2230,
+   "tag": "MUL",
+   "name": "MUL"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2236,
+   "tag": "HAC",
+   "name": "HAC"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2239,
+   "tag": "THD",
+   "name": "THD"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2341,
+   "tag": "AAA00",
+   "name": "aargau_province"
+  },
+  "date": "1485.9.3",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 83886214,
+   "tag": "SPINL",
+   "name": "SPINOLA"
+  },
+  "date": "1486.7.21",
+  "score": "46",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1481,
+   "tag": "GEN",
+   "name": "GEN"
+  },
+  "date": "1486.7.21",
+  "score": "46",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2156,
+   "tag": "BAM",
+   "name": "BAM"
+  },
+  "date": "1486.7.21",
+  "score": "46",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2217,
+   "tag": "AOS",
+   "name": "AOS"
+  },
+  "date": "1486.7.21",
+  "score": "46",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 2256,
+   "tag": "GAZ",
+   "name": "GAZ"
+  },
+  "date": "1486.7.21",
+  "score": "46",
+  "in_progress": false,
+  "seen": "1486.7.23.20"
+ },
+ {
+  "other": {
+   "id": 1140,
+   "tag": "TRP",
+   "name": "TRP"
+  },
+  "date": "1488.2.20",
+  "score": "64",
+  "in_progress": false,
+  "seen": "1495.4.15.6"
+ },
+ {
+  "other": {
+   "id": 1586,
+   "tag": "TGT",
+   "name": "TGT"
+  },
+  "date": "1488.2.20",
+  "score": "64",
+  "in_progress": false,
+  "seen": "1495.4.15.6"
+ },
+ {
+  "other": {
+   "id": 1588,
+   "tag": "TUN",
+   "name": "TUN"
+  },
+  "date": "1488.2.20",
+  "score": "64",
+  "in_progress": false,
+  "seen": "1495.4.15.6"
+ },
+ {
+  "other": {
+   "id": 1489,
+   "tag": "MLO",
+   "name": "MLO"
+  },
+  "date": "1489.8.29",
+  "score": "70",
+  "in_progress": false,
+  "seen": "1495.4.15.6"
+ },
+ {
+  "other": {
+   "id": 1502,
+   "tag": "PEA",
+   "name": "PEA"
+  },
+  "date": "1490.1.16",
+  "score": "70",
+  "in_progress": false,
+  "seen": "1495.4.15.6"
+ },
+ {
+  "other": {
+   "id": 1458,
+   "tag": "BLG",
+   "name": "BLG"
+  },
+  "date": "1491.12.23",
+  "score": "70",
+  "in_progress": false,
+  "seen": "1495.4.15.6"
+ },
+ {
+  "other": {
+   "id": 1574,
+   "tag": "GBS",
+   "name": "GBS"
+  },
+  "date": "1491.12.29",
+  "score": "70",
+  "in_progress": false,
+  "seen": "1495.4.15.6"
+ },
+ {
+  "other": {
+   "id": 1575,
+   "tag": "GFS",
+   "name": "GFS"
+  },
+  "date": "1492.8.11",
+  "score": "70",
+  "in_progress": false,
+  "seen": "1495.4.15.6"
+ },
+ {
+  "other": {
+   "id": 1487,
+   "tag": "MAN",
+   "name": "MAN"
+  },
+  "date": "1493.4.1",
+  "score": "70",
+  "in_progress": false,
+  "seen": "1495.4.15.6"
+ },
+ {
+  "other": {
+   "id": 1478,
+   "tag": "FLO",
+   "name": "FLO"
+  },
+  "date": "1493.8.1",
+  "score": "70",
+  "in_progress": false,
+  "seen": "1495.4.15.6"
+ },
+ {
+  "other": {
+   "id": 1493,
+   "tag": "MSP",
+   "name": "MSP"
+  },
+  "date": "1493.8.1",
+  "score": "70",
+  "in_progress": false,
+  "seen": "1495.4.15.6"
+ },
+ {
+  "other": {
+   "id": 1577,
+   "tag": "MOR",
+   "name": "MOR"
+  },
+  "date": "1495.4.15",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1495.4.15.6"
+ },
+ {
+  "other": {
+   "id": 1583,
+   "tag": "TAT",
+   "name": "TAT"
+  },
+  "date": "1495.4.15",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1495.4.15.6"
+ },
+ {
+  "other": {
+   "id": 1587,
+   "tag": "TLE",
+   "name": "TLE"
+  },
+  "date": "1495.4.15",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1495.4.15.6"
+ },
+ {
+  "other": {
+   "id": 382,
+   "tag": "RMN",
+   "name": "RMN"
+  },
+  "date": "1497.3.21",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1500.8.5.20"
+ },
+ {
+  "other": {
+   "id": 391,
+   "tag": "GEO",
+   "name": "GEO"
+  },
+  "date": "1497.3.21",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1500.8.5.20"
+ },
+ {
+  "other": {
+   "id": 16779621,
+   "tag": "AAA84",
+   "name": "majar_province"
+  },
+  "date": "1497.3.21",
+  "score": "100",
+  "in_progress": false,
+  "seen": "1500.8.5.20"
+ },
+ {
+  "other": {
+   "id": 28,
+   "tag": "HCI",
+   "name": "HCI"
+  },
+  "date": "1497.11.29",
+  "score": "3",
+  "in_progress": false,
+  "seen": "1500.8.5.20"
+ },
+ {
+  "other": {
+   "id": 24,
+   "tag": "DUL",
+   "name": "DUL"
+  },
+  "date": "1498.9.26",
+  "score": "41",
+  "in_progress": false,
+  "seen": "1500.8.5.20"
+ },
+ {
+  "other": {
+   "id": 398,
+   "tag": "ARM",
+   "name": "ARM"
+  },
+  "date": "1498.9.26",
+  "score": "41",
+  "in_progress": false,
+  "seen": "1500.8.5.20"
+ },
+ {
+  "other": {
+   "id": 511,
+   "tag": "DGE",
+   "name": "DGE"
+  },
+  "date": "1498.9.26",
+  "score": "41",
+  "in_progress": false,
+  "seen": "1500.8.5.20"
+ },
+ {
+  "other": {
+   "id": 533,
+   "tag": "AQQ",
+   "name": "AQQ"
+  },
+  "date": "1498.9.26",
+  "score": "41",
+  "in_progress": false,
+  "seen": "1500.8.5.20"
+ },
+ {
+  "other": {
+   "id": 534,
+   "tag": "QAR",
+   "name": "QAR"
+  },
+  "date": "1498.9.26",
+  "score": "41",
+  "in_progress": false,
+  "seen": "1500.8.5.20"
+ },
+ {
+  "other": {
+   "id": 1569,
+   "tag": "ALG",
+   "name": "ALG"
+  },
+  "date": "1498.12.10",
+  "score": "70",
+  "in_progress": false,
+  "seen": "1500.8.5.20"
+ },
+ {
+  "other": {
+   "id": 33556893,
+   "tag": "AAA28",
+   "name": "monza_province"
+  },
+  "date": "1500.3.1",
+  "score": "70",
+  "in_progress": false,
+  "seen": "1500.8.5.20"
+ },
+ {
+  "other": {
+   "id": 1587,
+   "tag": "TLE",
+   "name": "TLE"
+  },
+  "date": "1500.5.2",
+  "score": "70",
+  "in_progress": false,
+  "seen": "1500.8.5.20"
+ },
+ {
+  "other": {
+   "id": 33556385,
+   "tag": "AAA18",
+   "name": "azghar_province"
+  },
+  "date": "1500.7.1",
+  "score": null,
+  "in_progress": true,
+  "seen": "1500.8.5.20"
+ },
+ {
+  "other": {
+   "id": 33556385,
+   "tag": "AAA18",
+   "name": "azghar_province"
+  },
+  "date": "1500.11.5",
+  "score": "70",
+  "in_progress": false,
+  "seen": "1501.6.28.22"
+ },
+ {
+  "other": {
+   "id": 381,
+   "tag": "HUN",
+   "name": "HUN"
+  },
+  "date": "1501.6.1",
+  "score": "80",
+  "in_progress": true,
+  "seen": "1501.6.28.22"
+ },
+ {
+  "other": {
+   "id": 1583,
+   "tag": "TAT",
+   "name": "TAT"
+  },
+  "date": "1501.6.1",
+  "score": "100",
+  "in_progress": true,
+  "seen": "1501.6.28.22"
+ },
+ {
+  "other": {
+   "id": 67110627,
+   "tag": "AAA21",
+   "name": "tamasna_province"
+  },
+  "date": "1501.6.1",
+  "score": null,
+  "in_progress": true,
+  "seen": "1501.6.28.22"
+ },
+ {
+  "other": {
+   "id": 2021,
+   "tag": "NOV",
+   "name": "NOV"
+  },
+  "date": "1501.6.1",
+  "score": "100",
+  "in_progress": true,
+  "seen": "1501.6.28.22"
+ },
+ {
+  "other": {
+   "id": 83888504,
+   "tag": "AAA30",
+   "name": "kemi_lappmark_province"
+  },
+  "date": "1501.6.1",
+  "score": null,
+  "in_progress": true,
+  "seen": "1501.6.28.22"
+ },
+ {
+  "other": {
+   "id": 33556889,
+   "tag": "MOR",
+   "name": "MOR"
+  },
+  "date": "1501.6.1",
+  "score": null,
+  "in_progress": true,
+  "seen": "1501.6.28.22"
+ },
+ {
+  "other": {
+   "id": 1583,
+   "tag": "TAT",
+   "name": "TAT"
+  },
+  "date": "1501.11.17",
+  "score": "95",
+  "in_progress": false,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 33556889,
+   "tag": "MOR",
+   "name": "MOR"
+  },
+  "date": "1501.11.17",
+  "score": "95",
+  "in_progress": false,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 381,
+   "tag": "HUN",
+   "name": "HUN"
+  },
+  "date": "1503.11.15",
+  "score": "81",
+  "in_progress": false,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2021,
+   "tag": "NOV",
+   "name": "NOV"
+  },
+  "date": "1503.11.15",
+  "score": "81",
+  "in_progress": false,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 83888504,
+   "tag": "AAA30",
+   "name": "kemi_lappmark_province"
+  },
+  "date": "1503.11.15",
+  "score": "81",
+  "in_progress": false,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 245,
+   "tag": "LIT",
+   "name": "LIT"
+  },
+  "date": "1506.1.25",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 1959,
+   "tag": "INO",
+   "name": "INO"
+  },
+  "date": "1506.1.25",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2193,
+   "tag": "ROT",
+   "name": "ROT"
+  },
+  "date": "1506.3.15",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2201,
+   "tag": "SWH",
+   "name": "SWH"
+  },
+  "date": "1506.5.15",
+  "score": "75",
+  "in_progress": false,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 83886214,
+   "tag": "SPINL",
+   "name": "SPINOLA"
+  },
+  "date": "1506.8.1",
+  "score": "46",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 16777978,
+   "tag": "SAGEO",
+   "name": "SAINT_GEORGE"
+  },
+  "date": "1506.8.1",
+  "score": null,
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 184550515,
+   "tag": "MTPSC",
+   "name": "MONTE_PASCHI"
+  },
+  "date": "1506.8.1",
+  "score": null,
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 1163,
+   "tag": "PRO",
+   "name": "PRO"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 1189,
+   "tag": "BSC",
+   "name": "BSC"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 1190,
+   "tag": "ALS",
+   "name": "ALS"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 1192,
+   "tag": "TUL",
+   "name": "TUL"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 1209,
+   "tag": "SAV",
+   "name": "SAV"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 134219102,
+   "tag": "FUGGE",
+   "name": "THE_FUGGERS"
+  },
+  "date": "1506.8.1",
+  "score": null,
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 1452,
+   "tag": "AQU",
+   "name": "AQU"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 1498,
+   "tag": "PAP",
+   "name": "PAP"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 1523,
+   "tag": "VEN",
+   "name": "VEN"
+  },
+  "date": "1506.8.1",
+  "score": null,
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 1528,
+   "tag": "ACC",
+   "name": "ACC"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 1570,
+   "tag": "BTL",
+   "name": "BTL"
+  },
+  "date": "1506.8.1",
+  "score": null,
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 1573,
+   "tag": "FEZ",
+   "name": "FEZ"
+  },
+  "date": "1506.8.1",
+  "score": null,
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 1776,
+   "tag": "BRA",
+   "name": "BRA"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 1790,
+   "tag": "SAA",
+   "name": "SAA"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 1802,
+   "tag": "SPB",
+   "name": "SPB"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 1803,
+   "tag": "SAX",
+   "name": "SAX"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 1807,
+   "tag": "WRN",
+   "name": "WRN"
+  },
+  "date": "1506.8.1",
+  "score": null,
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 1813,
+   "tag": "KMM",
+   "name": "KMM"
+  },
+  "date": "1506.8.1",
+  "score": null,
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 1819,
+   "tag": "ANH",
+   "name": "ANH"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 1829,
+   "tag": "NHS",
+   "name": "NHS"
+  },
+  "date": "1506.8.1",
+  "score": "54",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 1843,
+   "tag": "WRM",
+   "name": "WRM"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 1844,
+   "tag": "SYE",
+   "name": "SYE"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 1845,
+   "tag": "ZWE",
+   "name": "ZWE"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 1882,
+   "tag": "BLB",
+   "name": "BLB"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 1885,
+   "tag": "BSK",
+   "name": "BSK"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2147,
+   "tag": "HAB",
+   "name": "HAB"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2148,
+   "tag": "BOH",
+   "name": "BOH"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2150,
+   "tag": "PSS",
+   "name": "PSS"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2152,
+   "tag": "AGC",
+   "name": "AGC"
+  },
+  "date": "1506.8.1",
+  "score": "44",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2153,
+   "tag": "BAV",
+   "name": "BAV"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2155,
+   "tag": "SLZ",
+   "name": "SLZ"
+  },
+  "date": "1506.8.1",
+  "score": "44",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2156,
+   "tag": "BAM",
+   "name": "BAM"
+  },
+  "date": "1506.8.1",
+  "score": "46",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2160,
+   "tag": "WER",
+   "name": "WER"
+  },
+  "date": "1506.8.1",
+  "score": "44",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2161,
+   "tag": "MBZ",
+   "name": "MBZ"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2162,
+   "tag": "MFK",
+   "name": "MFK"
+  },
+  "date": "1506.8.1",
+  "score": "44",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2163,
+   "tag": "BCH",
+   "name": "BCH"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2164,
+   "tag": "STG",
+   "name": "STG"
+  },
+  "date": "1506.8.1",
+  "score": "54",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2165,
+   "tag": "ZUR",
+   "name": "ZUR"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2166,
+   "tag": "SYZ",
+   "name": "SYZ"
+  },
+  "date": "1506.8.1",
+  "score": "54",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2168,
+   "tag": "URI",
+   "name": "URI"
+  },
+  "date": "1506.8.1",
+  "score": "44",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2169,
+   "tag": "OBW",
+   "name": "OBW"
+  },
+  "date": "1506.8.1",
+  "score": "44",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2170,
+   "tag": "LCU",
+   "name": "LCU"
+  },
+  "date": "1506.8.1",
+  "score": "44",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2171,
+   "tag": "SIT",
+   "name": "SIT"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2173,
+   "tag": "BRN",
+   "name": "BRN"
+  },
+  "date": "1506.8.1",
+  "score": null,
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2174,
+   "tag": "SLT",
+   "name": "SLT"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2176,
+   "tag": "BAS",
+   "name": "BAS"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2177,
+   "tag": "LSA",
+   "name": "LSA"
+  },
+  "date": "1506.8.1",
+  "score": "44",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2178,
+   "tag": "KYB",
+   "name": "KYB"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2183,
+   "tag": "REG",
+   "name": "REG"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2184,
+   "tag": "ANS",
+   "name": "ANS"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2185,
+   "tag": "FRE",
+   "name": "FRE"
+  },
+  "date": "1506.8.1",
+  "score": "44",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2186,
+   "tag": "EIC",
+   "name": "EIC"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2187,
+   "tag": "WEI",
+   "name": "WEI"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2188,
+   "tag": "NUR",
+   "name": "NUR"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2192,
+   "tag": "UFF",
+   "name": "UFF"
+  },
+  "date": "1506.8.1",
+  "score": "54",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2203,
+   "tag": "BDE",
+   "name": "BDE"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2209,
+   "tag": "FBG",
+   "name": "FBG"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2211,
+   "tag": "WLD",
+   "name": "WLD"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2214,
+   "tag": "BXN",
+   "name": "BXN"
+  },
+  "date": "1506.8.1",
+  "score": "44",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2217,
+   "tag": "AOS",
+   "name": "AOS"
+  },
+  "date": "1506.8.1",
+  "score": "46",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2220,
+   "tag": "LDA",
+   "name": "LDA"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2226,
+   "tag": "SFC",
+   "name": "SFC"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2227,
+   "tag": "CFC",
+   "name": "CFC"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2228,
+   "tag": "MUR",
+   "name": "MUR"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2230,
+   "tag": "MUL",
+   "name": "MUL"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2232,
+   "tag": "BLM",
+   "name": "BLM"
+  },
+  "date": "1506.8.1",
+  "score": "44",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2233,
+   "tag": "DIS",
+   "name": "DIS"
+  },
+  "date": "1506.8.1",
+  "score": "44",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2236,
+   "tag": "HAC",
+   "name": "HAC"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2237,
+   "tag": "SAW",
+   "name": "SAW"
+  },
+  "date": "1506.8.1",
+  "score": null,
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2238,
+   "tag": "SAB",
+   "name": "SAB"
+  },
+  "date": "1506.8.1",
+  "score": "54",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2248,
+   "tag": "TNT",
+   "name": "TNT"
+  },
+  "date": "1506.8.1",
+  "score": "44",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 2341,
+   "tag": "AAA00",
+   "name": "aargau_province"
+  },
+  "date": "1506.8.1",
+  "score": "75",
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 16779566,
+   "tag": "MEDIC",
+   "name": "MEDICI"
+  },
+  "date": "1506.8.1",
+  "score": null,
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 100665699,
+   "tag": "WELSE",
+   "name": "THE_WELSER"
+  },
+  "date": "1506.8.1",
+  "score": null,
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 16779657,
+   "tag": "AAA32",
+   "name": "errif_province"
+  },
+  "date": "1506.8.1",
+  "score": null,
+  "in_progress": true,
+  "seen": "1506.8.1"
+ },
+ {
+  "other": {
+   "id": 1573,
+   "tag": "FEZ",
+   "name": "FEZ"
+  },
+  "date": "1506.10.11",
+  "score": "70",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 16779657,
+   "tag": "AAA32",
+   "name": "errif_province"
+  },
+  "date": "1506.10.11",
+  "score": "70",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 83886214,
+   "tag": "SPINL",
+   "name": "SPINOLA"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 16777978,
+   "tag": "SAGEO",
+   "name": "SAINT_GEORGE"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 184550515,
+   "tag": "MTPSC",
+   "name": "MONTE_PASCHI"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 1163,
+   "tag": "PRO",
+   "name": "PRO"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 1189,
+   "tag": "BSC",
+   "name": "BSC"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 1190,
+   "tag": "ALS",
+   "name": "ALS"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 1192,
+   "tag": "TUL",
+   "name": "TUL"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 1209,
+   "tag": "SAV",
+   "name": "SAV"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 134219102,
+   "tag": "FUGGE",
+   "name": "THE_FUGGERS"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 1452,
+   "tag": "AQU",
+   "name": "AQU"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 1498,
+   "tag": "PAP",
+   "name": "PAP"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 1523,
+   "tag": "VEN",
+   "name": "VEN"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 1528,
+   "tag": "ACC",
+   "name": "ACC"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 1570,
+   "tag": "BTL",
+   "name": "BTL"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 1776,
+   "tag": "BRA",
+   "name": "BRA"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 1790,
+   "tag": "SAA",
+   "name": "SAA"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 1802,
+   "tag": "SPB",
+   "name": "SPB"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 1803,
+   "tag": "SAX",
+   "name": "SAX"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 1806,
+   "tag": "SWR",
+   "name": "SWR"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 1807,
+   "tag": "WRN",
+   "name": "WRN"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 1813,
+   "tag": "KMM",
+   "name": "KMM"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 1819,
+   "tag": "ANH",
+   "name": "ANH"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 1829,
+   "tag": "NHS",
+   "name": "NHS"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 1843,
+   "tag": "WRM",
+   "name": "WRM"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 1844,
+   "tag": "SYE",
+   "name": "SYE"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 1845,
+   "tag": "ZWE",
+   "name": "ZWE"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 1882,
+   "tag": "BLB",
+   "name": "BLB"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 1885,
+   "tag": "BSK",
+   "name": "BSK"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2147,
+   "tag": "HAB",
+   "name": "HAB"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2148,
+   "tag": "BOH",
+   "name": "BOH"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2150,
+   "tag": "PSS",
+   "name": "PSS"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2152,
+   "tag": "AGC",
+   "name": "AGC"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2153,
+   "tag": "BAV",
+   "name": "BAV"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2155,
+   "tag": "SLZ",
+   "name": "SLZ"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2156,
+   "tag": "BAM",
+   "name": "BAM"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2160,
+   "tag": "WER",
+   "name": "WER"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2161,
+   "tag": "MBZ",
+   "name": "MBZ"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2162,
+   "tag": "MFK",
+   "name": "MFK"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2163,
+   "tag": "BCH",
+   "name": "BCH"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2164,
+   "tag": "STG",
+   "name": "STG"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2165,
+   "tag": "ZUR",
+   "name": "ZUR"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2166,
+   "tag": "SYZ",
+   "name": "SYZ"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2168,
+   "tag": "URI",
+   "name": "URI"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2169,
+   "tag": "OBW",
+   "name": "OBW"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2170,
+   "tag": "LCU",
+   "name": "LCU"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2171,
+   "tag": "SIT",
+   "name": "SIT"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2173,
+   "tag": "BRN",
+   "name": "BRN"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2174,
+   "tag": "SLT",
+   "name": "SLT"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2176,
+   "tag": "BAS",
+   "name": "BAS"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2177,
+   "tag": "LSA",
+   "name": "LSA"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2178,
+   "tag": "KYB",
+   "name": "KYB"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2183,
+   "tag": "REG",
+   "name": "REG"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2184,
+   "tag": "ANS",
+   "name": "ANS"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2185,
+   "tag": "FRE",
+   "name": "FRE"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2186,
+   "tag": "EIC",
+   "name": "EIC"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2187,
+   "tag": "WEI",
+   "name": "WEI"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2188,
+   "tag": "NUR",
+   "name": "NUR"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2192,
+   "tag": "UFF",
+   "name": "UFF"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2203,
+   "tag": "BDE",
+   "name": "BDE"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2209,
+   "tag": "FBG",
+   "name": "FBG"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2211,
+   "tag": "WLD",
+   "name": "WLD"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2214,
+   "tag": "BXN",
+   "name": "BXN"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2217,
+   "tag": "AOS",
+   "name": "AOS"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2220,
+   "tag": "LDA",
+   "name": "LDA"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2226,
+   "tag": "SFC",
+   "name": "SFC"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2227,
+   "tag": "CFC",
+   "name": "CFC"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2228,
+   "tag": "MUR",
+   "name": "MUR"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2230,
+   "tag": "MUL",
+   "name": "MUL"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2232,
+   "tag": "BLM",
+   "name": "BLM"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2233,
+   "tag": "DIS",
+   "name": "DIS"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2236,
+   "tag": "HAC",
+   "name": "HAC"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2237,
+   "tag": "SAW",
+   "name": "SAW"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2238,
+   "tag": "SAB",
+   "name": "SAB"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2248,
+   "tag": "TNT",
+   "name": "TNT"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 2341,
+   "tag": "AAA00",
+   "name": "aargau_province"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 16779566,
+   "tag": "MEDIC",
+   "name": "MEDICI"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ },
+ {
+  "other": {
+   "id": 100665699,
+   "tag": "WELSE",
+   "name": "THE_WELSER"
+  },
+  "date": "1507.1.12",
+  "score": "93",
+  "in_progress": false,
+  "seen": "1507.1.13"
+ }
+]

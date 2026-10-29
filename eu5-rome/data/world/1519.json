@@ -1,0 +1,5156 @@
+{
+ "date": "1519.11.14.22",
+ "top": [
+  {
+   "id": 766,
+   "tag": "CHI",
+   "name": null,
+   "capital": "gaoyou",
+   "culture": "wu_culture",
+   "religion": "sanjiao",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_qi",
+    "dynasty": "name_zhang1",
+    "born": "1490.2.23",
+    "stats": [
+     "53",
+     "55.35",
+     "59.4"
+    ]
+   },
+   "gp_rank": "2",
+   "level": null,
+   "locations": 2027,
+   "pop_k": 96858.8,
+   "overlord": null,
+   "subjects": 27,
+   "subject_pop_k": 3159.6,
+   "subject_locations": 125,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 16779594,
+     "tag": "AAA26",
+     "name": null
+    },
+    {
+     "id": 117441774,
+     "tag": "AAA13",
+     "name": null
+    },
+    {
+     "id": 682,
+     "tag": "ANM",
+     "name": null
+    },
+    {
+     "id": 1436,
+     "tag": "KIM",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 203,
+   "tag": "ROM",
+   "name": "ROM",
+   "capital": "constantinople",
+   "culture": "greek_culture",
+   "religion": "hellenism_religion",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_theophilos",
+    "dynasty": "palaiologos_dynasty",
+    "born": "1463.9.30",
+    "stats": [
+     "81.46",
+     "47.25",
+     "57.82"
+    ]
+   },
+   "gp_rank": "1",
+   "level": "4",
+   "locations": 673,
+   "pop_k": 25400.4,
+   "overlord": null,
+   "subjects": 33,
+   "subject_pop_k": 23083.8,
+   "subject_locations": 717,
+   "allies": [
+    {
+     "id": 1962,
+     "tag": "UKR",
+     "name": "UKR"
+    },
+    {
+     "id": 1143,
+     "tag": "BUR",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 1588,
+     "tag": "TUN",
+     "name": null
+    },
+    {
+     "id": 899,
+     "tag": "IRA",
+     "name": "IRA"
+    },
+    {
+     "id": 1253,
+     "tag": "SPA",
+     "name": "SPA"
+    },
+    {
+     "id": 1142,
+     "tag": "FRA",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1353,
+   "tag": "MUG",
+   "name": "MUG",
+   "capital": "delhi",
+   "culture": "afghan_culture",
+   "religion": "sunni",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Mirwais",
+    "dynasty": "borjigin_dynasty",
+    "born": "1461.10.4",
+    "stats": [
+     "80.4",
+     "100",
+     "100"
+    ]
+   },
+   "gp_rank": "4",
+   "level": null,
+   "locations": 545,
+   "pop_k": 22052.8,
+   "overlord": null,
+   "subjects": 1,
+   "subject_pop_k": 17.5,
+   "subject_locations": 3,
+   "allies": [
+    {
+     "id": 249,
+     "tag": "BNG",
+     "name": "BNG"
+    },
+    {
+     "id": 1302,
+     "tag": "CMN",
+     "name": null
+    }
+   ],
+   "rivals": [],
+   "previous_tags": []
+  },
+  {
+   "id": 1302,
+   "tag": "CMN",
+   "name": null,
+   "capital": "champaner",
+   "culture": "gujarati",
+   "religion": "hindu",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Jay-Singh",
+    "dynasty": "champaner_dynasty",
+    "born": "1464.10.26",
+    "stats": [
+     "80",
+     "40",
+     "39"
+    ]
+   },
+   "gp_rank": "8",
+   "level": null,
+   "locations": 156,
+   "pop_k": 14523.5,
+   "overlord": null,
+   "subjects": 1,
+   "subject_pop_k": 708.0,
+   "subject_locations": 10,
+   "allies": [
+    {
+     "id": 1353,
+     "tag": "MUG",
+     "name": "MUG"
+    },
+    {
+     "id": 1326,
+     "tag": "DHU",
+     "name": null
+    },
+    {
+     "id": 249,
+     "tag": "BNG",
+     "name": "BNG"
+    }
+   ],
+   "rivals": [
+    {
+     "id": 1320,
+     "tag": "BWL",
+     "name": null
+    },
+    {
+     "id": 1299,
+     "tag": "MEW",
+     "name": null
+    },
+    {
+     "id": 1334,
+     "tag": "RTP",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 249,
+   "tag": "BNG",
+   "name": "BNG",
+   "capital": "pandua",
+   "culture": "bengali",
+   "religion": "sunni",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Pratapnarayan",
+    "dynasty": "ilyas_shahi_dynasty",
+    "born": "1487.10.29",
+    "stats": [
+     "50.75",
+     "45",
+     "55.23"
+    ]
+   },
+   "gp_rank": "11",
+   "level": null,
+   "locations": 174,
+   "pop_k": 14005.8,
+   "overlord": null,
+   "subjects": 1,
+   "subject_pop_k": 33.1,
+   "subject_locations": 1,
+   "allies": [
+    {
+     "id": 1353,
+     "tag": "MUG",
+     "name": "MUG"
+    },
+    {
+     "id": 1286,
+     "tag": "ORI",
+     "name": null
+    },
+    {
+     "id": 1302,
+     "tag": "CMN",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 260,
+     "tag": "UJJ",
+     "name": null
+    },
+    {
+     "id": 33556696,
+     "tag": "AAA53",
+     "name": null
+    },
+    {
+     "id": 1284,
+     "tag": "MSN",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1284,
+   "tag": "MSN",
+   "name": null,
+   "capital": "warangal",
+   "culture": "telugu",
+   "religion": "hindu",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Apara_Gangeya",
+    "dynasty": "Shaja'atid",
+    "born": "1465.4.8",
+    "stats": [
+     "39.36",
+     "52.4",
+     "51.25"
+    ]
+   },
+   "gp_rank": "555",
+   "level": null,
+   "locations": 128,
+   "pop_k": 9613.1,
+   "overlord": null,
+   "subjects": 2,
+   "subject_pop_k": 137.4,
+   "subject_locations": 3,
+   "allies": [
+    {
+     "id": 1285,
+     "tag": "RCH",
+     "name": null
+    },
+    {
+     "id": 1265,
+     "tag": "VIJ",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 260,
+     "tag": "UJJ",
+     "name": null
+    },
+    {
+     "id": 249,
+     "tag": "BNG",
+     "name": "BNG"
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1253,
+   "tag": "SPA",
+   "name": "SPA",
+   "capital": "toledo",
+   "culture": "castilian",
+   "religion": "catholic",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_hedwig",
+    "dynasty": "butler_dynasty",
+    "born": "1459.5.22",
+    "stats": [
+     "42.5",
+     "60.75",
+     "38.75"
+    ]
+   },
+   "gp_rank": "6",
+   "level": null,
+   "locations": 410,
+   "pop_k": 8999.5,
+   "overlord": null,
+   "subjects": 2,
+   "subject_pop_k": 13.4,
+   "subject_locations": 5,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 1588,
+     "tag": "TUN",
+     "name": null
+    },
+    {
+     "id": 203,
+     "tag": "ROM",
+     "name": "ROM"
+    },
+    {
+     "id": 33556889,
+     "tag": "MOR",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 33556799,
+   "tag": "AAA05",
+   "name": null,
+   "capital": "puddokothai",
+   "culture": "tamil",
+   "religion": "hindu",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Indhang",
+    "dynasty": "chand_dynasty",
+    "born": "1481.10.22",
+    "stats": [
+     "47.5",
+     "38.75",
+     "62.25"
+    ]
+   },
+   "gp_rank": "16",
+   "level": null,
+   "locations": 88,
+   "pop_k": 8384.1,
+   "overlord": null,
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 1285,
+     "tag": "RCH",
+     "name": null
+    },
+    {
+     "id": 1273,
+     "tag": "VND",
+     "name": null
+    },
+    {
+     "id": 1284,
+     "tag": "MSN",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1265,
+   "tag": "VIJ",
+   "name": null,
+   "capital": "vijayanagar",
+   "culture": "kannadiga",
+   "religion": "hindu",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Viranarasimha",
+    "dynasty": "sangama_dynasty",
+    "born": "1477.4.27",
+    "stats": [
+     "63",
+     "71",
+     "41.25"
+    ]
+   },
+   "gp_rank": "553",
+   "level": null,
+   "locations": 95,
+   "pop_k": 7695.8,
+   "overlord": null,
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [
+    {
+     "id": 1329,
+     "tag": "BND",
+     "name": null
+    },
+    {
+     "id": 1310,
+     "tag": "JNG",
+     "name": null
+    },
+    {
+     "id": 1299,
+     "tag": "MEW",
+     "name": null
+    },
+    {
+     "id": 1273,
+     "tag": "VND",
+     "name": null
+    },
+    {
+     "id": 1284,
+     "tag": "MSN",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 899,
+     "tag": "IRA",
+     "name": "IRA"
+    },
+    {
+     "id": 273,
+     "tag": "DGL",
+     "name": null
+    },
+    {
+     "id": 260,
+     "tag": "UJJ",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1366,
+   "tag": "MAJ",
+   "name": null,
+   "capital": "trowulan",
+   "culture": "javanese_culture",
+   "religion": "hindu",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Raden_Wijaya",
+    "dynasty": "rajasa_dynasty",
+    "born": "1486.2.25",
+    "stats": [
+     "36.37",
+     "48.89",
+     "58.18"
+    ]
+   },
+   "gp_rank": "19",
+   "level": null,
+   "locations": 108,
+   "pop_k": 7422.7,
+   "overlord": null,
+   "subjects": 5,
+   "subject_pop_k": 2000.1,
+   "subject_locations": 81,
+   "allies": [
+    {
+     "id": 1430,
+     "tag": "TDO",
+     "name": null
+    },
+    {
+     "id": 1386,
+     "tag": "BEI",
+     "name": null
+    },
+    {
+     "id": 2105,
+     "tag": "PIN",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 1419,
+     "tag": "LRT",
+     "name": null
+    },
+    {
+     "id": 1420,
+     "tag": "WHL",
+     "name": null
+    },
+    {
+     "id": 2092,
+     "tag": "DAI",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1142,
+   "tag": "FRA",
+   "name": null,
+   "capital": "paris",
+   "culture": "french",
+   "religion": "catholic",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_john",
+    "dynasty": "valois_dynasty",
+    "born": "1481.4.5",
+    "stats": [
+     "31",
+     "59",
+     "60"
+    ]
+   },
+   "gp_rank": "3",
+   "level": "3",
+   "locations": 201,
+   "pop_k": 6819.4,
+   "overlord": null,
+   "subjects": 6,
+   "subject_pop_k": 970.9,
+   "subject_locations": 45,
+   "allies": [
+    {
+     "id": 1773,
+     "tag": "HSA",
+     "name": null
+    },
+    {
+     "id": 1789,
+     "tag": "MAI",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 289,
+     "tag": "GBR",
+     "name": "GBR"
+    },
+    {
+     "id": 1550,
+     "tag": "LIE",
+     "name": null
+    },
+    {
+     "id": 1549,
+     "tag": "LUX",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 289,
+   "tag": "GBR",
+   "name": "GBR",
+   "capital": "london",
+   "culture": "english",
+   "religion": "catholic",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_edward",
+    "dynasty": "lancaster",
+    "born": "1483.6.29",
+    "stats": [
+     "48.75",
+     "57.07",
+     "59.9"
+    ]
+   },
+   "gp_rank": "5",
+   "level": "2",
+   "locations": 236,
+   "pop_k": 5997.6,
+   "overlord": null,
+   "subjects": 2,
+   "subject_pop_k": 1696.7,
+   "subject_locations": 71,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 1142,
+     "tag": "FRA",
+     "name": null
+    },
+    {
+     "id": 1773,
+     "tag": "HSA",
+     "name": null
+    },
+    {
+     "id": 134219102,
+     "tag": "FUGGE",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 2105,
+   "tag": "PIN",
+   "name": null,
+   "capital": "pinya",
+   "culture": "burmese_culture",
+   "religion": "theravada",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Uzana",
+    "dynasty": "ann",
+    "born": "1480.8.23",
+    "stats": [
+     "45",
+     "69.75",
+     "40"
+    ]
+   },
+   "gp_rank": "10",
+   "level": null,
+   "locations": 241,
+   "pop_k": 5727.1,
+   "overlord": null,
+   "subjects": 3,
+   "subject_pop_k": 342.1,
+   "subject_locations": 11,
+   "allies": [
+    {
+     "id": 2090,
+     "tag": "KHM",
+     "name": null
+    },
+    {
+     "id": 1366,
+     "tag": "MAJ",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 1284,
+     "tag": "MSN",
+     "name": null
+    },
+    {
+     "id": 16779594,
+     "tag": "AAA26",
+     "name": null
+    },
+    {
+     "id": 2092,
+     "tag": "DAI",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1962,
+   "tag": "UKR",
+   "name": "UKR",
+   "capital": "kyiv",
+   "culture": "ruthenian",
+   "religion": "orthodox",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_demetrius",
+    "dynasty": "name_roderick",
+    "born": "1502.8.15",
+    "stats": [
+     "64.25",
+     "28.75",
+     "52.5"
+    ]
+   },
+   "gp_rank": "15",
+   "level": null,
+   "locations": 387,
+   "pop_k": 5674.3,
+   "overlord": null,
+   "subjects": 3,
+   "subject_pop_k": 759.3,
+   "subject_locations": 47,
+   "allies": [
+    {
+     "id": 203,
+     "tag": "ROM",
+     "name": "ROM"
+    },
+    {
+     "id": 391,
+     "tag": "GEO",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 2021,
+     "tag": "NOV",
+     "name": null
+    },
+    {
+     "id": 381,
+     "tag": "HUN",
+     "name": null
+    },
+    {
+     "id": 2148,
+     "tag": "BOH",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 2090,
+   "tag": "KHM",
+   "name": null,
+   "capital": "angkor",
+   "culture": "khmer_culture",
+   "religion": "theravada",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Binnya_Ran",
+    "dynasty": "pathein",
+    "born": "1467.9.22",
+    "stats": [
+     "53",
+     "34",
+     "63"
+    ]
+   },
+   "gp_rank": "13",
+   "level": null,
+   "locations": 154,
+   "pop_k": 5655.9,
+   "overlord": null,
+   "subjects": 2,
+   "subject_pop_k": 549.3,
+   "subject_locations": 24,
+   "allies": [
+    {
+     "id": 2105,
+     "tag": "PIN",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 1430,
+     "tag": "TDO",
+     "name": null
+    },
+    {
+     "id": 1366,
+     "tag": "MAJ",
+     "name": null
+    },
+    {
+     "id": 50334050,
+     "tag": "MSA",
+     "name": "MSA"
+    },
+    {
+     "id": 2092,
+     "tag": "DAI",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1286,
+   "tag": "ORI",
+   "name": null,
+   "capital": "kataka",
+   "culture": "orissan",
+   "religion": "sunni",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Gangadar",
+    "dynasty": "kataka",
+    "born": "1469.11.15",
+    "stats": [
+     "40",
+     "73.75",
+     "41.25"
+    ]
+   },
+   "gp_rank": "557",
+   "level": null,
+   "locations": 48,
+   "pop_k": 4308.4,
+   "overlord": null,
+   "subjects": 1,
+   "subject_pop_k": 43.0,
+   "subject_locations": 1,
+   "allies": [
+    {
+     "id": 249,
+     "tag": "BNG",
+     "name": "BNG"
+    }
+   ],
+   "rivals": [
+    {
+     "id": 260,
+     "tag": "UJJ",
+     "name": null
+    },
+    {
+     "id": 1334,
+     "tag": "RTP",
+     "name": null
+    },
+    {
+     "id": 1285,
+     "tag": "RCH",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 899,
+   "tag": "IRA",
+   "name": "IRA",
+   "capital": "rey",
+   "culture": "farsi_culture",
+   "religion": "sunni",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Karaca",
+    "dynasty": "borjigin_dynasty",
+    "born": "1476.5.29",
+    "stats": [
+     "40",
+     "69.75",
+     "41.25"
+    ]
+   },
+   "gp_rank": "12",
+   "level": "3",
+   "locations": 271,
+   "pop_k": 4186.3,
+   "overlord": null,
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [
+    {
+     "id": 398,
+     "tag": "ARM",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 391,
+     "tag": "GEO",
+     "name": null
+    },
+    {
+     "id": 136,
+     "tag": "OMA",
+     "name": null
+    },
+    {
+     "id": 2429,
+     "tag": "AAA91",
+     "name": null
+    },
+    {
+     "id": 67111271,
+     "tag": "AAA19",
+     "name": "Transoxiana"
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 2026,
+   "tag": "MOS",
+   "name": null,
+   "capital": "moscow",
+   "culture": "muscovite",
+   "religion": "orthodox",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_basil",
+    "dynasty": "name_roderick",
+    "born": "1459.4.21",
+    "stats": [
+     "28",
+     "62",
+     "52"
+    ]
+   },
+   "gp_rank": "18",
+   "level": null,
+   "locations": 260,
+   "pop_k": 4018.8,
+   "overlord": null,
+   "subjects": 5,
+   "subject_pop_k": 1476.0,
+   "subject_locations": 120,
+   "allies": [
+    {
+     "id": 2046,
+     "tag": "CHR",
+     "name": null
+    },
+    {
+     "id": 2021,
+     "tag": "NOV",
+     "name": null
+    },
+    {
+     "id": 391,
+     "tag": "GEO",
+     "name": null
+    },
+    {
+     "id": 382,
+     "tag": "RMN",
+     "name": "RMN"
+    }
+   ],
+   "rivals": [
+    {
+     "id": 4,
+     "tag": "DAN",
+     "name": null
+    },
+    {
+     "id": 1773,
+     "tag": "HSA",
+     "name": null
+    },
+    {
+     "id": 2417,
+     "tag": "AAA79",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 67111271,
+   "tag": "AAA19",
+   "name": "Transoxiana",
+   "capital": "samarkand",
+   "culture": "khorezmian_culture",
+   "religion": "sunni",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Morokha",
+    "dynasty": "borjigin_dynasty",
+    "born": "1485.3.17",
+    "stats": [
+     "46.8",
+     "73.7",
+     "48.1"
+    ]
+   },
+   "gp_rank": "21",
+   "level": null,
+   "locations": 205,
+   "pop_k": 3733.7,
+   "overlord": null,
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [
+    {
+     "id": 2251,
+     "tag": "NOG",
+     "name": null
+    },
+    {
+     "id": 2429,
+     "tag": "AAA91",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 899,
+     "tag": "IRA",
+     "name": "IRA"
+    },
+    {
+     "id": 33556825,
+     "tag": "AAA47",
+     "name": null
+    },
+    {
+     "id": 16779468,
+     "tag": "AAA76",
+     "name": null
+    },
+    {
+     "id": 100665666,
+     "tag": "AAA44",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 607,
+   "tag": "KOR",
+   "name": null,
+   "capital": "namgyeong",
+   "culture": "korean_culture",
+   "religion": "mahayana",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_yun",
+    "dynasty": "wang_dynasty",
+    "born": "1464.8.14",
+    "stats": [
+     "49.5",
+     "54.5",
+     "52.5"
+    ]
+   },
+   "gp_rank": "7",
+   "level": null,
+   "locations": 116,
+   "pop_k": 3429.1,
+   "overlord": null,
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [
+    {
+     "id": 2092,
+     "tag": "DAI",
+     "name": null
+    },
+    {
+     "id": 612,
+     "tag": "YMT",
+     "name": "YMT"
+    }
+   ],
+   "rivals": [
+    {
+     "id": 647,
+     "tag": "KII",
+     "name": null
+    },
+    {
+     "id": 1366,
+     "tag": "MAJ",
+     "name": null
+    },
+    {
+     "id": 1430,
+     "tag": "TDO",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 2311,
+   "tag": "SKO",
+   "name": "SKO",
+   "capital": "alkalawa",
+   "culture": "hausa",
+   "religion": "sunni",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_abdullah",
+    "dynasty": "zliten",
+    "born": "1478.12.19",
+    "stats": [
+     "79.8",
+     "37.7",
+     "59.8"
+    ]
+   },
+   "gp_rank": "47",
+   "level": null,
+   "locations": 75,
+   "pop_k": 3280.1,
+   "overlord": null,
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [
+    {
+     "id": 2313,
+     "tag": "KBO",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 2268,
+     "tag": "OYO",
+     "name": null
+    },
+    {
+     "id": 2267,
+     "tag": "BEN",
+     "name": null
+    },
+    {
+     "id": 2262,
+     "tag": "BON",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 2147,
+   "tag": "HAB",
+   "name": null,
+   "capital": "vienna",
+   "culture": "danube_bavarian",
+   "religion": "hussite",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_elizabeth",
+    "dynasty": "name_luxemburg",
+    "born": "1502.2.22",
+    "stats": [
+     "43.2",
+     "44.55",
+     "60.4"
+    ]
+   },
+   "gp_rank": "793",
+   "level": "2",
+   "locations": 131,
+   "pop_k": 2922.4,
+   "overlord": {
+    "id": 2148,
+    "tag": "BOH",
+    "name": null,
+    "type": "fiefdom"
+   },
+   "subjects": 1,
+   "subject_pop_k": 41.1,
+   "subject_locations": 3,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 212,
+     "tag": "BOS",
+     "name": null
+    },
+    {
+     "id": 206,
+     "tag": "SER",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1545,
+   "tag": "NED",
+   "name": "NED",
+   "capital": "the_hague",
+   "culture": "low_franconian",
+   "religion": "catholic",
+   "gov": "monarchy",
+   "ruler": null,
+   "gp_rank": "17",
+   "level": null,
+   "locations": 84,
+   "pop_k": 2915.8,
+   "overlord": null,
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 1559,
+     "tag": "FRI",
+     "name": null
+    },
+    {
+     "id": 1773,
+     "tag": "HSA",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 2092,
+   "tag": "DAI",
+   "name": null,
+   "capital": "thang_long",
+   "culture": "vietnamese_culture",
+   "religion": "mahayana",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Chakhayakh",
+    "dynasty": "geziyandun",
+    "born": "1490.3.17",
+    "stats": [
+     "46.34",
+     "46.84",
+     "46.93"
+    ]
+   },
+   "gp_rank": "26",
+   "level": null,
+   "locations": 79,
+   "pop_k": 2858.4,
+   "overlord": null,
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [
+    {
+     "id": 607,
+     "tag": "KOR",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 2105,
+     "tag": "PIN",
+     "name": null
+    },
+    {
+     "id": 249,
+     "tag": "BNG",
+     "name": "BNG"
+    },
+    {
+     "id": 1437,
+     "tag": "LNO",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 74,
+   "tag": "LUP",
+   "name": null,
+   "capital": "chucuito",
+   "culture": "aimara_culture",
+   "religion": "inti",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_mayta",
+    "dynasty": "contornasa",
+    "born": "1490.11.10",
+    "stats": [
+     "43.75",
+     "46.25",
+     "72"
+    ]
+   },
+   "gp_rank": "72",
+   "level": null,
+   "locations": 62,
+   "pop_k": 2740.8,
+   "overlord": null,
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 65,
+     "tag": "ICM",
+     "name": null
+    },
+    {
+     "id": 16779620,
+     "tag": "XLL",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 2290,
+   "tag": "MAL",
+   "name": null,
+   "capital": "niani",
+   "culture": "mandinka",
+   "religion": "sunni",
+   "gov": "monarchy",
+   "ruler": null,
+   "gp_rank": "20",
+   "level": "2",
+   "locations": 102,
+   "pop_k": 2720.6,
+   "overlord": null,
+   "subjects": 8,
+   "subject_pop_k": 2654.6,
+   "subject_locations": 90,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 2262,
+     "tag": "BON",
+     "name": null
+    },
+    {
+     "id": 2268,
+     "tag": "OYO",
+     "name": null
+    },
+    {
+     "id": 2311,
+     "tag": "SKO",
+     "name": "SKO"
+    },
+    {
+     "id": 2313,
+     "tag": "KBO",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 33555359,
+   "tag": "YEM",
+   "name": null,
+   "capital": "musaymir",
+   "culture": "yemeni_culture",
+   "religion": "shia",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_abd_al_aziz",
+    "dynasty": "ibb",
+    "born": "1488.1.31",
+    "stats": [
+     "26.32",
+     "24.46",
+     "34.84"
+    ]
+   },
+   "gp_rank": "32",
+   "level": null,
+   "locations": 76,
+   "pop_k": 2704.5,
+   "overlord": null,
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 156,
+     "tag": "DHF",
+     "name": null
+    },
+    {
+     "id": 1214,
+     "tag": "ETH",
+     "name": null
+    },
+    {
+     "id": 1223,
+     "tag": "DHK",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 2148,
+   "tag": "BOH",
+   "name": null,
+   "capital": "prague",
+   "culture": "czech",
+   "religion": "hussite",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_elizabeth",
+    "dynasty": "name_luxemburg",
+    "born": "1502.2.22",
+    "stats": [
+     "43.2",
+     "44.55",
+     "60.4"
+    ]
+   },
+   "gp_rank": "9",
+   "level": "2",
+   "locations": 73,
+   "pop_k": 2597.6,
+   "overlord": null,
+   "subjects": 1,
+   "subject_pop_k": 2922.4,
+   "subject_locations": 131,
+   "allies": [
+    {
+     "id": 1977,
+     "tag": "SIL",
+     "name": "SIL"
+    }
+   ],
+   "rivals": [
+    {
+     "id": 2182,
+     "tag": "PAL",
+     "name": null
+    },
+    {
+     "id": 2187,
+     "tag": "WEI",
+     "name": null
+    },
+    {
+     "id": 50334066,
+     "tag": "POL",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 153,
+   "tag": "BNL",
+   "name": null,
+   "capital": "unaizah",
+   "culture": "najdi_culture",
+   "religion": "sunni",
+   "gov": "tribe",
+   "ruler": {
+    "name": "name_idris",
+    "dynasty": "ramah",
+    "born": "1485.10.26",
+    "stats": [
+     "51.67",
+     "45",
+     "57.07"
+    ]
+   },
+   "gp_rank": "45",
+   "level": null,
+   "locations": 138,
+   "pop_k": 2536.9,
+   "overlord": null,
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 137,
+     "tag": "MEC",
+     "name": null
+    },
+    {
+     "id": 83888436,
+     "tag": "AAA60",
+     "name": null
+    },
+    {
+     "id": 67109862,
+     "tag": "AAA58",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 50334066,
+   "tag": "POL",
+   "name": null,
+   "capital": "opatow",
+   "culture": "lesser_polish",
+   "religion": "catholic",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_david",
+    "dynasty": "Gosiewski",
+    "born": "1468.7.14",
+    "stats": [
+     "63",
+     "37",
+     "62"
+    ]
+   },
+   "gp_rank": "37",
+   "level": "2",
+   "locations": 164,
+   "pop_k": 2483.7,
+   "overlord": null,
+   "subjects": 1,
+   "subject_pop_k": 48.5,
+   "subject_locations": 4,
+   "allies": [
+    {
+     "id": 1791,
+     "tag": "STE",
+     "name": null
+    },
+    {
+     "id": 234,
+     "tag": "TEU",
+     "name": null
+    },
+    {
+     "id": 382,
+     "tag": "RMN",
+     "name": "RMN"
+    }
+   ],
+   "rivals": [
+    {
+     "id": 2021,
+     "tag": "NOV",
+     "name": null
+    },
+    {
+     "id": 1528,
+     "tag": "ACC",
+     "name": null
+    },
+    {
+     "id": 1821,
+     "tag": "MFE",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 2021,
+   "tag": "NOV",
+   "name": null,
+   "capital": "novgorod",
+   "culture": "novgorodian",
+   "religion": "orthodox",
+   "gov": "republic",
+   "ruler": null,
+   "gp_rank": "31",
+   "level": null,
+   "locations": 370,
+   "pop_k": 2468.9,
+   "overlord": null,
+   "subjects": 11,
+   "subject_pop_k": 1.4,
+   "subject_locations": 1,
+   "allies": [
+    {
+     "id": 2026,
+     "tag": "MOS",
+     "name": null
+    },
+    {
+     "id": 234,
+     "tag": "TEU",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 1773,
+     "tag": "HSA",
+     "name": null
+    },
+    {
+     "id": 3,
+     "tag": "SWE",
+     "name": null
+    },
+    {
+     "id": 134220096,
+     "tag": "PRM",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1143,
+   "tag": "BUR",
+   "name": null,
+   "capital": "dijon",
+   "culture": "burgundian",
+   "religion": "catholic",
+   "gov": "monarchy",
+   "ruler": null,
+   "gp_rank": "14",
+   "level": null,
+   "locations": 81,
+   "pop_k": 2404.5,
+   "overlord": null,
+   "subjects": 1,
+   "subject_pop_k": 808.4,
+   "subject_locations": 27,
+   "allies": [
+    {
+     "id": 203,
+     "tag": "ROM",
+     "name": "ROM"
+    }
+   ],
+   "rivals": [
+    {
+     "id": 1550,
+     "tag": "LIE",
+     "name": null
+    },
+    {
+     "id": 2148,
+     "tag": "BOH",
+     "name": null
+    },
+    {
+     "id": 1845,
+     "tag": "ZWE",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1214,
+   "tag": "ETH",
+   "name": null,
+   "capital": "debra_berhan",
+   "culture": "amhara",
+   "religion": "miaphysite",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Ilgazi",
+    "dynasty": "solomonid_dynasty",
+    "born": "1481.12.24",
+    "stats": [
+     "36.25",
+     "58.25",
+     "38.75"
+    ]
+   },
+   "gp_rank": "43",
+   "level": "3",
+   "locations": 86,
+   "pop_k": 2335.6,
+   "overlord": null,
+   "subjects": 1,
+   "subject_pop_k": 178.6,
+   "subject_locations": 8,
+   "allies": [
+    {
+     "id": 1244,
+     "tag": "DAJ",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 1231,
+     "tag": "AJU",
+     "name": null
+    },
+    {
+     "id": 1223,
+     "tag": "DHK",
+     "name": null
+    },
+    {
+     "id": 899,
+     "tag": "IRA",
+     "name": "IRA"
+    },
+    {
+     "id": 1238,
+     "tag": "MAK",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1329,
+   "tag": "BND",
+   "name": null,
+   "capital": "kundar",
+   "culture": "bundeli",
+   "religion": "hindu",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_sayyid.name_khidr",
+    "dynasty": "bundela_dynasty",
+    "born": "1468.1.15",
+    "stats": [
+     "48.75",
+     "58.5",
+     "43.75"
+    ]
+   },
+   "gp_rank": "567",
+   "level": null,
+   "locations": 30,
+   "pop_k": 2306.2,
+   "overlord": null,
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [
+    {
+     "id": 1265,
+     "tag": "VIJ",
+     "name": null
+    },
+    {
+     "id": 1285,
+     "tag": "RCH",
+     "name": null
+    },
+    {
+     "id": 1315,
+     "tag": "JSL",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 33556696,
+     "tag": "AAA53",
+     "name": null
+    },
+    {
+     "id": 260,
+     "tag": "UJJ",
+     "name": null
+    },
+    {
+     "id": 893,
+     "tag": "TIB",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 117441774,
+   "tag": "AAA13",
+   "name": null,
+   "capital": "khobootsar",
+   "culture": "mongolian_culture",
+   "religion": "tengri",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Darayisung",
+    "dynasty": "zhavklant_khairkhan",
+    "born": "1471.11.16",
+    "stats": [
+     "77.4",
+     "70.2",
+     "80.7"
+    ]
+   },
+   "gp_rank": "44",
+   "level": null,
+   "locations": 102,
+   "pop_k": 2301.8,
+   "overlord": null,
+   "subjects": 1,
+   "subject_pop_k": 451.2,
+   "subject_locations": 39,
+   "allies": [
+    {
+     "id": 16779641,
+     "tag": "BGT",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 16779601,
+     "tag": "AAA56",
+     "name": null
+    },
+    {
+     "id": 33556813,
+     "tag": "AAA43",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 2268,
+   "tag": "OYO",
+   "name": null,
+   "capital": "oyo_ile",
+   "culture": "yoruba",
+   "religion": "isese_religion",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Gbekelolu",
+    "dynasty": "saki",
+    "born": "1488.9.10",
+    "stats": [
+     "59",
+     "42.5",
+     "38.75"
+    ]
+   },
+   "gp_rank": "60",
+   "level": null,
+   "locations": 55,
+   "pop_k": 2267.0,
+   "overlord": null,
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 2262,
+     "tag": "BON",
+     "name": null
+    },
+    {
+     "id": 2311,
+     "tag": "SKO",
+     "name": "SKO"
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1977,
+   "tag": "SIL",
+   "name": "SIL",
+   "capital": "opole",
+   "culture": "silesian",
+   "religion": "catholic",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_agnes",
+    "dynasty": "piast_dynasty",
+    "born": "1470.8.2",
+    "stats": [
+     "48.58",
+     "62.73",
+     "50"
+    ]
+   },
+   "gp_rank": "25",
+   "level": null,
+   "locations": 89,
+   "pop_k": 2208.1,
+   "overlord": null,
+   "subjects": 1,
+   "subject_pop_k": 125.7,
+   "subject_locations": 6,
+   "allies": [
+    {
+     "id": 2148,
+     "tag": "BOH",
+     "name": null
+    },
+    {
+     "id": 1803,
+     "tag": "SAX",
+     "name": "SAX"
+    }
+   ],
+   "rivals": [
+    {
+     "id": 1870,
+     "tag": "BRU",
+     "name": null
+    },
+    {
+     "id": 1776,
+     "tag": "BRA",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1237,
+   "tag": "ALO",
+   "name": null,
+   "capital": "soba",
+   "culture": "nubian",
+   "religion": "miaphysite",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_gebre_mesqel",
+    "dynasty": "solomonid_dynasty",
+    "born": "1464.6.9",
+    "stats": [
+     "40",
+     "48.75",
+     "47"
+    ]
+   },
+   "gp_rank": "42",
+   "level": null,
+   "locations": 39,
+   "pop_k": 2195.4,
+   "overlord": null,
+   "subjects": 2,
+   "subject_pop_k": 1509.8,
+   "subject_locations": 35,
+   "allies": [
+    {
+     "id": 1238,
+     "tag": "MAK",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 1223,
+     "tag": "DHK",
+     "name": null
+    },
+    {
+     "id": 203,
+     "tag": "ROM",
+     "name": "ROM"
+    },
+    {
+     "id": 33555359,
+     "tag": "YEM",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 137,
+   "tag": "MEC",
+   "name": null,
+   "capital": "mecca",
+   "culture": "hijazi_culture",
+   "religion": "sunni",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_jabir",
+    "dynasty": "qatadid_dynasty",
+    "born": "1475.4.4",
+    "stats": [
+     "69.45",
+     "67.25",
+     "72.85"
+    ]
+   },
+   "gp_rank": "112",
+   "level": null,
+   "locations": 95,
+   "pop_k": 2112.3,
+   "overlord": null,
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 510,
+     "tag": "AMR",
+     "name": null
+    },
+    {
+     "id": 1237,
+     "tag": "ALO",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 260,
+   "tag": "UJJ",
+   "name": null,
+   "capital": "buxar",
+   "culture": "bhojpuri_culture",
+   "religion": "hindu",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Ramachandra",
+    "dynasty": "tomara_dynasty",
+    "born": "1454.1.30",
+    "stats": [
+     "47.92",
+     "37.5",
+     "65.63"
+    ]
+   },
+   "gp_rank": "153",
+   "level": null,
+   "locations": 16,
+   "pop_k": 2011.8,
+   "overlord": null,
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 1329,
+     "tag": "BND",
+     "name": null
+    },
+    {
+     "id": 893,
+     "tag": "TIB",
+     "name": null
+    },
+    {
+     "id": 1326,
+     "tag": "DHU",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 391,
+   "tag": "GEO",
+   "name": null,
+   "capital": "tbilisi",
+   "culture": "georgian_culture",
+   "religion": "orthodox",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_om_arm_toros",
+    "dynasty": "om_dyn_adh_sajid",
+    "born": "1477.1.4",
+    "stats": [
+     "53.05",
+     "73.75",
+     "78.15"
+    ]
+   },
+   "gp_rank": "22",
+   "level": "2",
+   "locations": 132,
+   "pop_k": 1951.4,
+   "overlord": null,
+   "subjects": 3,
+   "subject_pop_k": 306.9,
+   "subject_locations": 24,
+   "allies": [
+    {
+     "id": 1962,
+     "tag": "UKR",
+     "name": "UKR"
+    },
+    {
+     "id": 2026,
+     "tag": "MOS",
+     "name": null
+    },
+    {
+     "id": 382,
+     "tag": "RMN",
+     "name": "RMN"
+    }
+   ],
+   "rivals": [
+    {
+     "id": 398,
+     "tag": "ARM",
+     "name": null
+    },
+    {
+     "id": 50334030,
+     "tag": "ATR",
+     "name": null
+    },
+    {
+     "id": 2417,
+     "tag": "AAA79",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1750,
+   "tag": "MAY",
+   "name": "MAY",
+   "capital": "mayapan",
+   "culture": "yucatec_culture",
+   "religion": "mayan",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Quitza",
+    "dynasty": "chorti_province",
+    "born": "1488.2.16",
+    "stats": [
+     "37.5",
+     "72",
+     "41.25"
+    ]
+   },
+   "gp_rank": "38",
+   "level": null,
+   "locations": 54,
+   "pop_k": 1874.7,
+   "overlord": null,
+   "subjects": 2,
+   "subject_pop_k": 763.3,
+   "subject_locations": 18,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 1676,
+     "tag": "CTL",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 50334050,
+   "tag": "MSA",
+   "name": "MSA",
+   "capital": "malacca",
+   "culture": "malay_culture",
+   "religion": "sunni",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Parang",
+    "dynasty": "butuan",
+    "born": "1466.10.7",
+    "stats": [
+     "35",
+     "56.25",
+     "63.75"
+    ]
+   },
+   "gp_rank": "36",
+   "level": "2",
+   "locations": 70,
+   "pop_k": 1717.8,
+   "overlord": null,
+   "subjects": 1,
+   "subject_pop_k": 169.6,
+   "subject_locations": 9,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 2092,
+     "tag": "DAI",
+     "name": null
+    },
+    {
+     "id": 1368,
+     "tag": "SUN",
+     "name": null
+    },
+    {
+     "id": 100665205,
+     "tag": "AAA45",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 612,
+   "tag": "YMT",
+   "name": "YMT",
+   "capital": "kyoto",
+   "culture": "saigoku_culture",
+   "religion": "shinto",
+   "gov": "monarchy",
+   "ruler": null,
+   "gp_rank": "337",
+   "level": null,
+   "locations": 50,
+   "pop_k": 1712.5,
+   "overlord": null,
+   "subjects": 7,
+   "subject_pop_k": 637.2,
+   "subject_locations": 37,
+   "allies": [
+    {
+     "id": 651,
+     "tag": "KDO",
+     "name": null
+    },
+    {
+     "id": 607,
+     "tag": "KOR",
+     "name": null
+    },
+    {
+     "id": 685,
+     "tag": "HIE",
+     "name": null
+    },
+    {
+     "id": 693,
+     "tag": "MIU",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 637,
+     "tag": "ENY",
+     "name": null
+    },
+    {
+     "id": 625,
+     "tag": "CBA",
+     "name": null
+    },
+    {
+     "id": 640,
+     "tag": "MNM",
+     "name": null
+    },
+    {
+     "id": 616,
+     "tag": "HSK",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 184551735,
+   "tag": "ABA01",
+   "name": "Africa Proconsularis",
+   "capital": "tunis",
+   "culture": "Afri",
+   "religion": "hellenism_religion",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_nicholas",
+    "dynasty": "Kalognomos",
+    "born": "1456.8.4",
+    "stats": [
+     "40",
+     "40",
+     "40"
+    ]
+   },
+   "gp_rank": "1002",
+   "level": null,
+   "locations": 44,
+   "pop_k": 1709.0,
+   "overlord": {
+    "id": 203,
+    "tag": "ROM",
+    "name": "ROM",
+    "type": "vassal"
+   },
+   "subjects": 1,
+   "subject_pop_k": 644.4,
+   "subject_locations": 20,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 1145,
+     "tag": "AQN",
+     "name": null
+    },
+    {
+     "id": 1258,
+     "tag": "MLL",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1310,
+   "tag": "JNG",
+   "name": null,
+   "capital": "junagarh",
+   "culture": "gujarati",
+   "religion": "hindu",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Sidhraj",
+    "dynasty": "chudasama_dynasty",
+    "born": "1493.9.5",
+    "stats": [
+     "66.75",
+     "90.25",
+     "83"
+    ]
+   },
+   "gp_rank": "562",
+   "level": null,
+   "locations": 16,
+   "pop_k": 1695.3,
+   "overlord": null,
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [
+    {
+     "id": 1265,
+     "tag": "VIJ",
+     "name": null
+    },
+    {
+     "id": 1299,
+     "tag": "MEW",
+     "name": null
+    },
+    {
+     "id": 1285,
+     "tag": "RCH",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 1284,
+     "tag": "MSN",
+     "name": null
+    },
+    {
+     "id": 1304,
+     "tag": "KUT",
+     "name": null
+    },
+    {
+     "id": 1286,
+     "tag": "ORI",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 33556842,
+   "tag": "ABA07",
+   "name": "Tingitana",
+   "capital": "fez",
+   "culture": "sanhaja",
+   "religion": "sunni",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_basil",
+    "dynasty": "Nafpliotis",
+    "born": "1478.4.15",
+    "stats": [
+     "40",
+     "40",
+     "40"
+    ]
+   },
+   "gp_rank": "942",
+   "level": null,
+   "locations": 37,
+   "pop_k": 1603.5,
+   "overlord": {
+    "id": 203,
+    "tag": "ROM",
+    "name": "ROM",
+    "type": "pronoia"
+   },
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 1583,
+     "tag": "TAT",
+     "name": null
+    },
+    {
+     "id": 50333898,
+     "tag": "TAUBL",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 2267,
+   "tag": "BEN",
+   "name": null,
+   "capital": "benin",
+   "culture": "edo",
+   "religion": "isese_religion",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Olasunkanmi",
+    "dynasty": "borgu_province",
+    "born": "1473.7.24",
+    "stats": [
+     "56.15",
+     "52.66",
+     "47.5"
+    ]
+   },
+   "gp_rank": "40",
+   "level": null,
+   "locations": 26,
+   "pop_k": 1573.0,
+   "overlord": null,
+   "subjects": 1,
+   "subject_pop_k": 203.3,
+   "subject_locations": 4,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 2311,
+     "tag": "SKO",
+     "name": "SKO"
+    },
+    {
+     "id": 2262,
+     "tag": "BON",
+     "name": null
+    },
+    {
+     "id": 2307,
+     "tag": "KTS",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 535,
+   "tag": "ZAN",
+   "name": null,
+   "capital": "kilwa_kisiwani",
+   "culture": "swahili_culture",
+   "religion": "sunni",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_abdullah",
+    "dynasty": "mahdali_dynasty",
+    "born": "1469.9.20",
+    "stats": [
+     "77.35",
+     "85.45",
+     "100"
+    ]
+   },
+   "gp_rank": "50",
+   "level": null,
+   "locations": 39,
+   "pop_k": 1562.7,
+   "overlord": null,
+   "subjects": 9,
+   "subject_pop_k": 408.5,
+   "subject_locations": 11,
+   "allies": [
+    {
+     "id": 543,
+     "tag": "LAM",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 1214,
+     "tag": "ETH",
+     "name": null
+    },
+    {
+     "id": 558,
+     "tag": "ZMW",
+     "name": null
+    },
+    {
+     "id": 556,
+     "tag": "AGH",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 312,
+   "tag": "IRE",
+   "name": "IRE",
+   "capital": "dublin",
+   "culture": "english",
+   "religion": "catholic",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_edward",
+    "dynasty": "lancaster",
+    "born": "1483.6.29",
+    "stats": [
+     "48.75",
+     "57.07",
+     "59.9"
+    ]
+   },
+   "gp_rank": "173",
+   "level": null,
+   "locations": 68,
+   "pop_k": 1560.8,
+   "overlord": {
+    "id": 289,
+    "tag": "GBR",
+    "name": "GBR",
+    "type": "dominion"
+   },
+   "subjects": 1,
+   "subject_pop_k": 53.1,
+   "subject_locations": 2,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 354,
+     "tag": "ORK",
+     "name": null
+    },
+    {
+     "id": 50333898,
+     "tag": "TAUBL",
+     "name": null
+    },
+    {
+     "id": 1816,
+     "tag": "HAM",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 625,
+   "tag": "CBA",
+   "name": null,
+   "capital": "chiba",
+   "culture": "tougoku_culture",
+   "religion": "shinto",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Yorimasa",
+    "dynasty": "utsunomiya_dynasty",
+    "born": "1492.12.9",
+    "stats": [
+     "66.75",
+     "69.5",
+     "57.5"
+    ]
+   },
+   "gp_rank": "342",
+   "level": null,
+   "locations": 27,
+   "pop_k": 1527.8,
+   "overlord": null,
+   "subjects": 4,
+   "subject_pop_k": 873.8,
+   "subject_locations": 19,
+   "allies": [
+    {
+     "id": 616,
+     "tag": "HSK",
+     "name": null
+    },
+    {
+     "id": 693,
+     "tag": "MIU",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 658,
+     "tag": "YUK",
+     "name": "YUK"
+    },
+    {
+     "id": 653,
+     "tag": "MGM",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 693,
+   "tag": "MIU",
+   "name": null,
+   "capital": "kamakura",
+   "culture": "tougoku_culture",
+   "religion": "shinto",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Hikaru",
+    "dynasty": "hekikai",
+    "born": "1484.3.25",
+    "stats": [
+     "55.5",
+     "51.25",
+     "40"
+    ]
+   },
+   "gp_rank": "376",
+   "level": null,
+   "locations": 26,
+   "pop_k": 1487.9,
+   "overlord": null,
+   "subjects": 7,
+   "subject_pop_k": 395.5,
+   "subject_locations": 10,
+   "allies": [
+    {
+     "id": 625,
+     "tag": "CBA",
+     "name": null
+    },
+    {
+     "id": 612,
+     "tag": "YMT",
+     "name": "YMT"
+    }
+   ],
+   "rivals": [
+    {
+     "id": 725,
+     "tag": "OBA",
+     "name": null
+    },
+    {
+     "id": 705,
+     "tag": "ODA",
+     "name": "ODA"
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 382,
+   "tag": "RMN",
+   "name": "RMN",
+   "capital": "targoviste",
+   "culture": "wallachian",
+   "religion": "orthodox",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_vlad",
+    "dynasty": "basarab_dynasty",
+    "born": "1471.1.14",
+    "stats": [
+     "48",
+     "55",
+     "67"
+    ]
+   },
+   "gp_rank": "29",
+   "level": null,
+   "locations": 86,
+   "pop_k": 1425.6,
+   "overlord": null,
+   "subjects": 1,
+   "subject_pop_k": 128.8,
+   "subject_locations": 7,
+   "allies": [
+    {
+     "id": 2026,
+     "tag": "MOS",
+     "name": null
+    },
+    {
+     "id": 391,
+     "tag": "GEO",
+     "name": null
+    },
+    {
+     "id": 50334066,
+     "tag": "POL",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 1977,
+     "tag": "SIL",
+     "name": "SIL"
+    },
+    {
+     "id": 381,
+     "tag": "HUN",
+     "name": null
+    },
+    {
+     "id": 1142,
+     "tag": "FRA",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 3,
+   "tag": "SWE",
+   "name": null,
+   "capital": "stockholm",
+   "culture": "swedish",
+   "religion": "catholic",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_ctibor",
+    "dynasty": "von_Sigmaringen_dynasty",
+    "born": "1475.8.1",
+    "stats": [
+     "41.25",
+     "69.25",
+     "50"
+    ]
+   },
+   "gp_rank": "28",
+   "level": "2",
+   "locations": 171,
+   "pop_k": 1392.1,
+   "overlord": null,
+   "subjects": 1,
+   "subject_pop_k": 219.2,
+   "subject_locations": 10,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 1773,
+     "tag": "HSA",
+     "name": null
+    },
+    {
+     "id": 1528,
+     "tag": "ACC",
+     "name": null
+    },
+    {
+     "id": 50334066,
+     "tag": "POL",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 67111315,
+   "tag": "ABA13",
+   "name": "Mauretania",
+   "capital": "marrakesh",
+   "culture": "Afri",
+   "religion": "hellenism_religion",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_cosmas",
+    "dynasty": "Chrysaphes",
+    "born": "1478.4.15",
+    "stats": [
+     "40",
+     "40",
+     "40"
+    ]
+   },
+   "gp_rank": "973",
+   "level": null,
+   "locations": 43,
+   "pop_k": 1354.3,
+   "overlord": {
+    "id": 203,
+    "tag": "ROM",
+    "name": "ROM",
+    "type": "pronoia"
+   },
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 1583,
+     "tag": "TAT",
+     "name": null
+    },
+    {
+     "id": 1199,
+     "tag": "BRR",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1244,
+   "tag": "DAJ",
+   "name": null,
+   "capital": "uri",
+   "culture": "daju_culture",
+   "religion": "miaphysite",
+   "gov": "tribe",
+   "ruler": null,
+   "gp_rank": "547",
+   "level": null,
+   "locations": 29,
+   "pop_k": 1347.6,
+   "overlord": {
+    "id": 1237,
+    "tag": "ALO",
+    "name": null,
+    "type": "tributary"
+   },
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [
+    {
+     "id": 1214,
+     "tag": "ETH",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 1136,
+     "tag": "BKZ",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1285,
+   "tag": "RCH",
+   "name": null,
+   "capital": "golconda",
+   "culture": "telugu",
+   "religion": "hindu",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Achyutadeva",
+    "dynasty": "recherla_nayakas_dynasty",
+    "born": "1483.7.28",
+    "stats": [
+     "57.5",
+     "46.34",
+     "48.58"
+    ]
+   },
+   "gp_rank": "556",
+   "level": null,
+   "locations": 12,
+   "pop_k": 1322.4,
+   "overlord": null,
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [
+    {
+     "id": 1329,
+     "tag": "BND",
+     "name": null
+    },
+    {
+     "id": 1310,
+     "tag": "JNG",
+     "name": null
+    },
+    {
+     "id": 1284,
+     "tag": "MSN",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 33556799,
+     "tag": "AAA05",
+     "name": null
+    },
+    {
+     "id": 1286,
+     "tag": "ORI",
+     "name": null
+    },
+    {
+     "id": 899,
+     "tag": "IRA",
+     "name": "IRA"
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1400,
+   "tag": "GOW",
+   "name": null,
+   "capital": "gowa",
+   "culture": "makassarese_culture",
+   "religion": "tolotang_religion",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Makalalo",
+    "dynasty": "cenrana",
+    "born": "1468.3.3",
+    "stats": [
+     "50.16",
+     "41.25",
+     "52.99"
+    ]
+   },
+   "gp_rank": "580",
+   "level": null,
+   "locations": 39,
+   "pop_k": 1272.1,
+   "overlord": null,
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 167774551,
+     "tag": "GRT",
+     "name": null
+    },
+    {
+     "id": 1386,
+     "tag": "BEI",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1345,
+   "tag": "DBD",
+   "name": null,
+   "capital": "kurunegala",
+   "culture": "sinhalese",
+   "religion": "theravada",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Dharmapala",
+    "dynasty": "chittagong_province",
+    "born": "1481.2.19",
+    "stats": [
+     "51.5",
+     "43.75",
+     "47.5"
+    ]
+   },
+   "gp_rank": "46",
+   "level": null,
+   "locations": 25,
+   "pop_k": 1262.3,
+   "overlord": null,
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 273,
+     "tag": "DGL",
+     "name": null
+    },
+    {
+     "id": 1273,
+     "tag": "VND",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1231,
+   "tag": "AJU",
+   "name": null,
+   "capital": "merca",
+   "culture": "somali_culture",
+   "religion": "sunni",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Naleye",
+    "dynasty": "merca",
+    "born": "1475.3.22",
+    "stats": [
+     "55",
+     "43.75",
+     "69"
+    ]
+   },
+   "gp_rank": "33",
+   "level": null,
+   "locations": 28,
+   "pop_k": 1256.1,
+   "overlord": null,
+   "subjects": 1,
+   "subject_pop_k": 82.8,
+   "subject_locations": 1,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 543,
+     "tag": "LAM",
+     "name": null
+    },
+    {
+     "id": 535,
+     "tag": "ZAN",
+     "name": null
+    },
+    {
+     "id": 1235,
+     "tag": "TDE",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 616,
+   "tag": "HSK",
+   "name": null,
+   "capital": "izumi",
+   "culture": "saigoku_culture",
+   "religion": "shinto",
+   "gov": "monarchy",
+   "ruler": null,
+   "gp_rank": "339",
+   "level": null,
+   "locations": 24,
+   "pop_k": 1250.6,
+   "overlord": null,
+   "subjects": 4,
+   "subject_pop_k": 350.6,
+   "subject_locations": 9,
+   "allies": [
+    {
+     "id": 647,
+     "tag": "KII",
+     "name": null
+    },
+    {
+     "id": 675,
+     "tag": "ASO",
+     "name": "ASO"
+    },
+    {
+     "id": 651,
+     "tag": "KDO",
+     "name": null
+    },
+    {
+     "id": 625,
+     "tag": "CBA",
+     "name": null
+    },
+    {
+     "id": 611,
+     "tag": "ASK",
+     "name": "ASK"
+    }
+   ],
+   "rivals": [
+    {
+     "id": 730,
+     "tag": "YAB",
+     "name": "YAB"
+    },
+    {
+     "id": 705,
+     "tag": "ODA",
+     "name": "ODA"
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 4,
+   "tag": "DAN",
+   "name": null,
+   "capital": "kobenhavn",
+   "culture": "danish",
+   "religion": "catholic",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_ctibor",
+    "dynasty": "von_Sigmaringen_dynasty",
+    "born": "1475.8.1",
+    "stats": [
+     "41.25",
+     "69.25",
+     "50"
+    ]
+   },
+   "gp_rank": "30",
+   "level": "2",
+   "locations": 48,
+   "pop_k": 1243.9,
+   "overlord": null,
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 2021,
+     "tag": "NOV",
+     "name": null
+    },
+    {
+     "id": 1773,
+     "tag": "HSA",
+     "name": null
+    },
+    {
+     "id": 1528,
+     "tag": "ACC",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1599,
+   "tag": "TEP",
+   "name": null,
+   "capital": "azcapotzalco",
+   "culture": "nahua_culture",
+   "religion": "nahuatl",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Tlaco",
+    "dynasty": "tepanecatl_dynasty",
+    "born": "1461.3.15",
+    "stats": [
+     "42",
+     "57",
+     "47"
+    ]
+   },
+   "gp_rank": "23",
+   "level": null,
+   "locations": 46,
+   "pop_k": 1220.7,
+   "overlord": null,
+   "subjects": 9,
+   "subject_pop_k": 3446.7,
+   "subject_locations": 143,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 167773796,
+     "tag": "THT",
+     "name": null
+    },
+    {
+     "id": 167774550,
+     "tag": "AAA57",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 67109862,
+   "tag": "AAA58",
+   "name": null,
+   "capital": "baghdad",
+   "culture": "kurdish_culture",
+   "religion": "sunni",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_osman",
+    "dynasty": "om_dyn_ku_ardalan",
+    "born": "1477.8.8",
+    "stats": [
+     "67.4",
+     "64.2",
+     "73.05"
+    ]
+   },
+   "gp_rank": "39",
+   "level": null,
+   "locations": 55,
+   "pop_k": 1179.0,
+   "overlord": null,
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 83888436,
+     "tag": "AAA60",
+     "name": null
+    },
+    {
+     "id": 534,
+     "tag": "QAR",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 2029,
+   "tag": "VLR",
+   "name": null,
+   "capital": "vladimir",
+   "culture": "muscovite",
+   "religion": "orthodox",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_basil",
+    "dynasty": "name_roderick",
+    "born": "1459.4.21",
+    "stats": [
+     "28",
+     "62",
+     "52"
+    ]
+   },
+   "gp_rank": "758",
+   "level": null,
+   "locations": 97,
+   "pop_k": 1172.5,
+   "overlord": {
+    "id": 2026,
+    "tag": "MOS",
+    "name": null,
+    "type": "dominion"
+   },
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 50334067,
+     "tag": "AAA31",
+     "name": null
+    },
+    {
+     "id": 233,
+     "tag": "LIV",
+     "name": null
+    },
+    {
+     "id": 16779588,
+     "tag": "AAA52",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1639,
+   "tag": "TTC",
+   "name": null,
+   "capital": "tamtoc",
+   "culture": "huastec_culture",
+   "religion": "nahuatl",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Batz",
+    "dynasty": "Camal",
+    "born": "1479.12.25",
+    "stats": [
+     "44.76",
+     "70.96",
+     "43.75"
+    ]
+   },
+   "gp_rank": "631",
+   "level": null,
+   "locations": 27,
+   "pop_k": 1150.4,
+   "overlord": {
+    "id": 1599,
+    "tag": "TEP",
+    "name": null,
+    "type": "vassal"
+   },
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 1635,
+     "tag": "PPT",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 33555453,
+   "tag": "AAA72",
+   "name": "Caesariensis",
+   "capital": "nedroma",
+   "culture": "Afri",
+   "religion": "hellenism_religion",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_cyriacus",
+    "dynasty": "Zagarommates",
+    "born": "1478.4.15",
+    "stats": [
+     "40",
+     "40",
+     "40"
+    ]
+   },
+   "gp_rank": "932",
+   "level": null,
+   "locations": 30,
+   "pop_k": 1131.1,
+   "overlord": {
+    "id": 203,
+    "tag": "ROM",
+    "name": "ROM",
+    "type": "pronoia"
+   },
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 1199,
+     "tag": "BRR",
+     "name": null
+    },
+    {
+     "id": 2453,
+     "tag": "ABA09",
+     "name": "Transpadana"
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1377,
+   "tag": "PLB",
+   "name": null,
+   "capital": "palembang",
+   "culture": "malay_culture",
+   "religion": "hindu",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "om7_kut_mulawarman",
+    "dynasty": "krui",
+    "born": "1471.4.1",
+    "stats": [
+     "52.33",
+     "49.5",
+     "41.25"
+    ]
+   },
+   "gp_rank": "574",
+   "level": null,
+   "locations": 40,
+   "pop_k": 1102.2,
+   "overlord": {
+    "id": 1366,
+    "tag": "MAJ",
+    "name": null,
+    "type": "vassal"
+   },
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 50333991,
+     "tag": "BUS",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1803,
+   "tag": "SAX",
+   "name": "SAX",
+   "capital": "wittenberg",
+   "culture": "saxon",
+   "religion": "catholic",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_berthold",
+    "dynasty": "askanier_dynasty",
+    "born": "1462.8.21",
+    "stats": [
+     "53",
+     "49",
+     "54"
+    ]
+   },
+   "gp_rank": "666",
+   "level": null,
+   "locations": 34,
+   "pop_k": 1066.0,
+   "overlord": null,
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [
+    {
+     "id": 1870,
+     "tag": "BRU",
+     "name": null
+    },
+    {
+     "id": 1791,
+     "tag": "STE",
+     "name": null
+    },
+    {
+     "id": 2153,
+     "tag": "BAV",
+     "name": "BAV"
+    },
+    {
+     "id": 1869,
+     "tag": "LUN",
+     "name": null
+    },
+    {
+     "id": 1849,
+     "tag": "KOL",
+     "name": null
+    },
+    {
+     "id": 2199,
+     "tag": "SWA",
+     "name": "SWA"
+    },
+    {
+     "id": 1776,
+     "tag": "BRA",
+     "name": null
+    },
+    {
+     "id": 1974,
+     "tag": "JAW",
+     "name": null
+    },
+    {
+     "id": 2184,
+     "tag": "ANS",
+     "name": null
+    },
+    {
+     "id": 1797,
+     "tag": "PLN",
+     "name": null
+    },
+    {
+     "id": 1977,
+     "tag": "SIL",
+     "name": "SIL"
+    },
+    {
+     "id": 2203,
+     "tag": "BDE",
+     "name": null
+    },
+    {
+     "id": 1815,
+     "tag": "LAU",
+     "name": null
+    },
+    {
+     "id": 1833,
+     "tag": "HES",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 1773,
+     "tag": "HSA",
+     "name": null
+    },
+    {
+     "id": 1143,
+     "tag": "BUR",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 2153,
+   "tag": "BAV",
+   "name": "BAV",
+   "capital": "munich",
+   "culture": "danube_bavarian",
+   "religion": "catholic",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_gilbert",
+    "dynasty": "la_roche",
+    "born": "1466.2.24",
+    "stats": [
+     "53.75",
+     "40.68",
+     "52.66"
+    ]
+   },
+   "gp_rank": "27",
+   "level": null,
+   "locations": 48,
+   "pop_k": 1026.5,
+   "overlord": null,
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [
+    {
+     "id": 2199,
+     "tag": "SWA",
+     "name": "SWA"
+    },
+    {
+     "id": 1803,
+     "tag": "SAX",
+     "name": "SAX"
+    },
+    {
+     "id": 1776,
+     "tag": "BRA",
+     "name": null
+    },
+    {
+     "id": 1849,
+     "tag": "KOL",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 234,
+     "tag": "TEU",
+     "name": null
+    },
+    {
+     "id": 1523,
+     "tag": "VEN",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  }
+ ],
+ "great_powers": [
+  {
+   "id": 2090,
+   "tag": "KHM",
+   "name": null,
+   "capital": "angkor",
+   "culture": "khmer_culture",
+   "religion": "theravada",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Binnya_Ran",
+    "dynasty": "pathein",
+    "born": "1467.9.22",
+    "stats": [
+     "53",
+     "34",
+     "63"
+    ]
+   },
+   "gp_rank": "13",
+   "level": null,
+   "locations": 154,
+   "pop_k": 5655.9,
+   "overlord": null,
+   "subjects": 2,
+   "subject_pop_k": 549.3,
+   "subject_locations": 24,
+   "allies": [
+    {
+     "id": 2105,
+     "tag": "PIN",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 1430,
+     "tag": "TDO",
+     "name": null
+    },
+    {
+     "id": 1366,
+     "tag": "MAJ",
+     "name": null
+    },
+    {
+     "id": 50334050,
+     "tag": "MSA",
+     "name": "MSA"
+    },
+    {
+     "id": 2092,
+     "tag": "DAI",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 203,
+   "tag": "ROM",
+   "name": "ROM",
+   "capital": "constantinople",
+   "culture": "greek_culture",
+   "religion": "hellenism_religion",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_theophilos",
+    "dynasty": "palaiologos_dynasty",
+    "born": "1463.9.30",
+    "stats": [
+     "81.46",
+     "47.25",
+     "57.82"
+    ]
+   },
+   "gp_rank": "1",
+   "level": "4",
+   "locations": 673,
+   "pop_k": 25400.4,
+   "overlord": null,
+   "subjects": 33,
+   "subject_pop_k": 23083.8,
+   "subject_locations": 717,
+   "allies": [
+    {
+     "id": 1962,
+     "tag": "UKR",
+     "name": "UKR"
+    },
+    {
+     "id": 1143,
+     "tag": "BUR",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 1588,
+     "tag": "TUN",
+     "name": null
+    },
+    {
+     "id": 899,
+     "tag": "IRA",
+     "name": "IRA"
+    },
+    {
+     "id": 1253,
+     "tag": "SPA",
+     "name": "SPA"
+    },
+    {
+     "id": 1142,
+     "tag": "FRA",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1142,
+   "tag": "FRA",
+   "name": null,
+   "capital": "paris",
+   "culture": "french",
+   "religion": "catholic",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_john",
+    "dynasty": "valois_dynasty",
+    "born": "1481.4.5",
+    "stats": [
+     "31",
+     "59",
+     "60"
+    ]
+   },
+   "gp_rank": "3",
+   "level": "3",
+   "locations": 201,
+   "pop_k": 6819.4,
+   "overlord": null,
+   "subjects": 6,
+   "subject_pop_k": 970.9,
+   "subject_locations": 45,
+   "allies": [
+    {
+     "id": 1773,
+     "tag": "HSA",
+     "name": null
+    },
+    {
+     "id": 1789,
+     "tag": "MAI",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 289,
+     "tag": "GBR",
+     "name": "GBR"
+    },
+    {
+     "id": 1550,
+     "tag": "LIE",
+     "name": null
+    },
+    {
+     "id": 1549,
+     "tag": "LUX",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 607,
+   "tag": "KOR",
+   "name": null,
+   "capital": "namgyeong",
+   "culture": "korean_culture",
+   "religion": "mahayana",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_yun",
+    "dynasty": "wang_dynasty",
+    "born": "1464.8.14",
+    "stats": [
+     "49.5",
+     "54.5",
+     "52.5"
+    ]
+   },
+   "gp_rank": "7",
+   "level": null,
+   "locations": 116,
+   "pop_k": 3429.1,
+   "overlord": null,
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [
+    {
+     "id": 2092,
+     "tag": "DAI",
+     "name": null
+    },
+    {
+     "id": 612,
+     "tag": "YMT",
+     "name": "YMT"
+    }
+   ],
+   "rivals": [
+    {
+     "id": 647,
+     "tag": "KII",
+     "name": null
+    },
+    {
+     "id": 1366,
+     "tag": "MAJ",
+     "name": null
+    },
+    {
+     "id": 1430,
+     "tag": "TDO",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 289,
+   "tag": "GBR",
+   "name": "GBR",
+   "capital": "london",
+   "culture": "english",
+   "religion": "catholic",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_edward",
+    "dynasty": "lancaster",
+    "born": "1483.6.29",
+    "stats": [
+     "48.75",
+     "57.07",
+     "59.9"
+    ]
+   },
+   "gp_rank": "5",
+   "level": "2",
+   "locations": 236,
+   "pop_k": 5997.6,
+   "overlord": null,
+   "subjects": 2,
+   "subject_pop_k": 1696.7,
+   "subject_locations": 71,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 1142,
+     "tag": "FRA",
+     "name": null
+    },
+    {
+     "id": 1773,
+     "tag": "HSA",
+     "name": null
+    },
+    {
+     "id": 134219102,
+     "tag": "FUGGE",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1253,
+   "tag": "SPA",
+   "name": "SPA",
+   "capital": "toledo",
+   "culture": "castilian",
+   "religion": "catholic",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_hedwig",
+    "dynasty": "butler_dynasty",
+    "born": "1459.5.22",
+    "stats": [
+     "42.5",
+     "60.75",
+     "38.75"
+    ]
+   },
+   "gp_rank": "6",
+   "level": null,
+   "locations": 410,
+   "pop_k": 8999.5,
+   "overlord": null,
+   "subjects": 2,
+   "subject_pop_k": 13.4,
+   "subject_locations": 5,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 1588,
+     "tag": "TUN",
+     "name": null
+    },
+    {
+     "id": 203,
+     "tag": "ROM",
+     "name": "ROM"
+    },
+    {
+     "id": 33556889,
+     "tag": "MOR",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 766,
+   "tag": "CHI",
+   "name": null,
+   "capital": "gaoyou",
+   "culture": "wu_culture",
+   "religion": "sanjiao",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_qi",
+    "dynasty": "name_zhang1",
+    "born": "1490.2.23",
+    "stats": [
+     "53",
+     "55.35",
+     "59.4"
+    ]
+   },
+   "gp_rank": "2",
+   "level": null,
+   "locations": 2027,
+   "pop_k": 96858.8,
+   "overlord": null,
+   "subjects": 27,
+   "subject_pop_k": 3159.6,
+   "subject_locations": 125,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 16779594,
+     "tag": "AAA26",
+     "name": null
+    },
+    {
+     "id": 117441774,
+     "tag": "AAA13",
+     "name": null
+    },
+    {
+     "id": 682,
+     "tag": "ANM",
+     "name": null
+    },
+    {
+     "id": 1436,
+     "tag": "KIM",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1302,
+   "tag": "CMN",
+   "name": null,
+   "capital": "champaner",
+   "culture": "gujarati",
+   "religion": "hindu",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Jay-Singh",
+    "dynasty": "champaner_dynasty",
+    "born": "1464.10.26",
+    "stats": [
+     "80",
+     "40",
+     "39"
+    ]
+   },
+   "gp_rank": "8",
+   "level": null,
+   "locations": 156,
+   "pop_k": 14523.5,
+   "overlord": null,
+   "subjects": 1,
+   "subject_pop_k": 708.0,
+   "subject_locations": 10,
+   "allies": [
+    {
+     "id": 1353,
+     "tag": "MUG",
+     "name": "MUG"
+    },
+    {
+     "id": 1326,
+     "tag": "DHU",
+     "name": null
+    },
+    {
+     "id": 249,
+     "tag": "BNG",
+     "name": "BNG"
+    }
+   ],
+   "rivals": [
+    {
+     "id": 1320,
+     "tag": "BWL",
+     "name": null
+    },
+    {
+     "id": 1299,
+     "tag": "MEW",
+     "name": null
+    },
+    {
+     "id": 1334,
+     "tag": "RTP",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1353,
+   "tag": "MUG",
+   "name": "MUG",
+   "capital": "delhi",
+   "culture": "afghan_culture",
+   "religion": "sunni",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Mirwais",
+    "dynasty": "borjigin_dynasty",
+    "born": "1461.10.4",
+    "stats": [
+     "80.4",
+     "100",
+     "100"
+    ]
+   },
+   "gp_rank": "4",
+   "level": null,
+   "locations": 545,
+   "pop_k": 22052.8,
+   "overlord": null,
+   "subjects": 1,
+   "subject_pop_k": 17.5,
+   "subject_locations": 3,
+   "allies": [
+    {
+     "id": 249,
+     "tag": "BNG",
+     "name": "BNG"
+    },
+    {
+     "id": 1302,
+     "tag": "CMN",
+     "name": null
+    }
+   ],
+   "rivals": [],
+   "previous_tags": []
+  },
+  {
+   "id": 33556799,
+   "tag": "AAA05",
+   "name": null,
+   "capital": "puddokothai",
+   "culture": "tamil",
+   "religion": "hindu",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Indhang",
+    "dynasty": "chand_dynasty",
+    "born": "1481.10.22",
+    "stats": [
+     "47.5",
+     "38.75",
+     "62.25"
+    ]
+   },
+   "gp_rank": "16",
+   "level": null,
+   "locations": 88,
+   "pop_k": 8384.1,
+   "overlord": null,
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [],
+   "rivals": [
+    {
+     "id": 1285,
+     "tag": "RCH",
+     "name": null
+    },
+    {
+     "id": 1273,
+     "tag": "VND",
+     "name": null
+    },
+    {
+     "id": 1284,
+     "tag": "MSN",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 2105,
+   "tag": "PIN",
+   "name": null,
+   "capital": "pinya",
+   "culture": "burmese_culture",
+   "religion": "theravada",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Uzana",
+    "dynasty": "ann",
+    "born": "1480.8.23",
+    "stats": [
+     "45",
+     "69.75",
+     "40"
+    ]
+   },
+   "gp_rank": "10",
+   "level": null,
+   "locations": 241,
+   "pop_k": 5727.1,
+   "overlord": null,
+   "subjects": 3,
+   "subject_pop_k": 342.1,
+   "subject_locations": 11,
+   "allies": [
+    {
+     "id": 2090,
+     "tag": "KHM",
+     "name": null
+    },
+    {
+     "id": 1366,
+     "tag": "MAJ",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 1284,
+     "tag": "MSN",
+     "name": null
+    },
+    {
+     "id": 16779594,
+     "tag": "AAA26",
+     "name": null
+    },
+    {
+     "id": 2092,
+     "tag": "DAI",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 899,
+   "tag": "IRA",
+   "name": "IRA",
+   "capital": "rey",
+   "culture": "farsi_culture",
+   "religion": "sunni",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Karaca",
+    "dynasty": "borjigin_dynasty",
+    "born": "1476.5.29",
+    "stats": [
+     "40",
+     "69.75",
+     "41.25"
+    ]
+   },
+   "gp_rank": "12",
+   "level": "3",
+   "locations": 271,
+   "pop_k": 4186.3,
+   "overlord": null,
+   "subjects": 0,
+   "subject_pop_k": 0,
+   "subject_locations": 0,
+   "allies": [
+    {
+     "id": 398,
+     "tag": "ARM",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 391,
+     "tag": "GEO",
+     "name": null
+    },
+    {
+     "id": 136,
+     "tag": "OMA",
+     "name": null
+    },
+    {
+     "id": 2429,
+     "tag": "AAA91",
+     "name": null
+    },
+    {
+     "id": 67111271,
+     "tag": "AAA19",
+     "name": "Transoxiana"
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 249,
+   "tag": "BNG",
+   "name": "BNG",
+   "capital": "pandua",
+   "culture": "bengali",
+   "religion": "sunni",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "Pratapnarayan",
+    "dynasty": "ilyas_shahi_dynasty",
+    "born": "1487.10.29",
+    "stats": [
+     "50.75",
+     "45",
+     "55.23"
+    ]
+   },
+   "gp_rank": "11",
+   "level": null,
+   "locations": 174,
+   "pop_k": 14005.8,
+   "overlord": null,
+   "subjects": 1,
+   "subject_pop_k": 33.1,
+   "subject_locations": 1,
+   "allies": [
+    {
+     "id": 1353,
+     "tag": "MUG",
+     "name": "MUG"
+    },
+    {
+     "id": 1286,
+     "tag": "ORI",
+     "name": null
+    },
+    {
+     "id": 1302,
+     "tag": "CMN",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 260,
+     "tag": "UJJ",
+     "name": null
+    },
+    {
+     "id": 33556696,
+     "tag": "AAA53",
+     "name": null
+    },
+    {
+     "id": 1284,
+     "tag": "MSN",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1962,
+   "tag": "UKR",
+   "name": "UKR",
+   "capital": "kyiv",
+   "culture": "ruthenian",
+   "religion": "orthodox",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_demetrius",
+    "dynasty": "name_roderick",
+    "born": "1502.8.15",
+    "stats": [
+     "64.25",
+     "28.75",
+     "52.5"
+    ]
+   },
+   "gp_rank": "15",
+   "level": null,
+   "locations": 387,
+   "pop_k": 5674.3,
+   "overlord": null,
+   "subjects": 3,
+   "subject_pop_k": 759.3,
+   "subject_locations": 47,
+   "allies": [
+    {
+     "id": 203,
+     "tag": "ROM",
+     "name": "ROM"
+    },
+    {
+     "id": 391,
+     "tag": "GEO",
+     "name": null
+    }
+   ],
+   "rivals": [
+    {
+     "id": 2021,
+     "tag": "NOV",
+     "name": null
+    },
+    {
+     "id": 381,
+     "tag": "HUN",
+     "name": null
+    },
+    {
+     "id": 2148,
+     "tag": "BOH",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 1143,
+   "tag": "BUR",
+   "name": null,
+   "capital": "dijon",
+   "culture": "burgundian",
+   "religion": "catholic",
+   "gov": "monarchy",
+   "ruler": null,
+   "gp_rank": "14",
+   "level": null,
+   "locations": 81,
+   "pop_k": 2404.5,
+   "overlord": null,
+   "subjects": 1,
+   "subject_pop_k": 808.4,
+   "subject_locations": 27,
+   "allies": [
+    {
+     "id": 203,
+     "tag": "ROM",
+     "name": "ROM"
+    }
+   ],
+   "rivals": [
+    {
+     "id": 1550,
+     "tag": "LIE",
+     "name": null
+    },
+    {
+     "id": 2148,
+     "tag": "BOH",
+     "name": null
+    },
+    {
+     "id": 1845,
+     "tag": "ZWE",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  },
+  {
+   "id": 2148,
+   "tag": "BOH",
+   "name": null,
+   "capital": "prague",
+   "culture": "czech",
+   "religion": "hussite",
+   "gov": "monarchy",
+   "ruler": {
+    "name": "name_elizabeth",
+    "dynasty": "name_luxemburg",
+    "born": "1502.2.22",
+    "stats": [
+     "43.2",
+     "44.55",
+     "60.4"
+    ]
+   },
+   "gp_rank": "9",
+   "level": "2",
+   "locations": 73,
+   "pop_k": 2597.6,
+   "overlord": null,
+   "subjects": 1,
+   "subject_pop_k": 2922.4,
+   "subject_locations": 131,
+   "allies": [
+    {
+     "id": 1977,
+     "tag": "SIL",
+     "name": "SIL"
+    }
+   ],
+   "rivals": [
+    {
+     "id": 2182,
+     "tag": "PAL",
+     "name": null
+    },
+    {
+     "id": 2187,
+     "tag": "WEI",
+     "name": null
+    },
+    {
+     "id": 50334066,
+     "tag": "POL",
+     "name": null
+    }
+   ],
+   "previous_tags": []
+  }
+ ],
+ "wars": [
+  {
+   "attacker": {
+    "id": 2417,
+    "tag": "AAA79",
+    "name": null
+   },
+   "defenders": [
+    {
+     "id": 50334030,
+     "tag": "ATR",
+     "name": null
+    }
+   ],
+   "participants": 13,
+   "cb": "cb_following_through_on_threat"
+  },
+  {
+   "attacker": {
+    "id": 1302,
+    "tag": "CMN",
+    "name": null
+   },
+   "defenders": [
+    {
+     "id": 1315,
+     "tag": "JSL",
+     "name": null
+    }
+   ],
+   "participants": 8,
+   "cb": "cb_parliament_conquer_province"
+  },
+  {
+   "attacker": {
+    "id": 67111292,
+    "tag": "AAA89",
+    "name": "horde_civil_war_pretender_country"
+   },
+   "defenders": [
+    {
+     "id": 2251,
+     "tag": "NOG",
+     "name": null
+    }
+   ],
+   "participants": 3,
+   "cb": null
+  },
+  {
+   "attacker": {
+    "id": 16779672,
+    "tag": "AAA92",
+    "name": "CIVILWAR_FACTION_religious_NAME"
+   },
+   "defenders": [
+    {
+     "id": 382,
+     "tag": "RMN",
+     "name": "RMN"
+    }
+   ],
+   "participants": 2,
+   "cb": null
+  },
+  {
+   "attacker": {
+    "id": 50332546,
+    "tag": "HLG",
+    "name": null
+   },
+   "defenders": [
+    {
+     "id": 1353,
+     "tag": "MUG",
+     "name": "MUG"
+    }
+   ],
+   "participants": 7,
+   "cb": "cb_independence_war"
+  }
+ ],
+ "orgs": [
+  {
+   "type": "hre",
+   "leader": {
+    "id": 1803,
+    "tag": "SAX",
+    "name": "SAX"
+   },
+   "n_members": 174
+  },
+  {
+   "type": "catholic_church",
+   "leader": {
+    "id": 1498,
+    "tag": "PAP",
+    "name": null
+   },
+   "n_members": 178
+  },
+  {
+   "type": "middle_kingdom",
+   "leader": {
+    "id": 766,
+    "tag": "CHI",
+    "name": null
+   },
+   "n_members": 42
+  },
+  {
+   "type": "marriage_union",
+   "leader": null,
+   "n_members": 3
+  },
+  {
+   "type": "japanese_shogunate",
+   "leader": {
+    "id": 611,
+    "tag": "ASK",
+    "name": "ASK"
+   },
+   "n_members": 74
+  },
+  {
+   "type": "shinto",
+   "leader": null,
+   "n_members": 68
+  },
+  {
+   "type": "autocephalous_patriarchate",
+   "leader": {
+    "id": 16779621,
+    "tag": "AAA84",
+    "name": null
+   },
+   "n_members": 7
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "swiss_confederation",
+   "leader": {
+    "id": 2173,
+    "tag": "BRN",
+    "name": null
+   },
+   "n_members": 17
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "autocephalous_patriarchate",
+   "leader": {
+    "id": 391,
+    "tag": "GEO",
+    "name": null
+   },
+   "n_members": 13
+  },
+  {
+   "type": "autocephalous_patriarchate",
+   "leader": null,
+   "n_members": 0
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "autocephalous_patriarchate",
+   "leader": null,
+   "n_members": 0
+  },
+  {
+   "type": "autocephalous_patriarchate",
+   "leader": {
+    "id": 1214,
+    "tag": "ETH",
+    "name": null
+   },
+   "n_members": 3
+  },
+  {
+   "type": "autocephalous_patriarchate",
+   "leader": null,
+   "n_members": 0
+  },
+  {
+   "type": "autocephalous_patriarchate",
+   "leader": null,
+   "n_members": 0
+  },
+  {
+   "type": "tribal_confederation",
+   "leader": {
+    "id": 1094,
+    "tag": "ONO",
+    "name": null
+   },
+   "n_members": 22
+  },
+  {
+   "type": "tribal_confederation",
+   "leader": {
+    "id": 1246,
+    "tag": "AFR",
+    "name": null
+   },
+   "n_members": 3
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "sect",
+   "leader": null,
+   "n_members": 28
+  },
+  {
+   "type": "sect",
+   "leader": null,
+   "n_members": 27
+  },
+  {
+   "type": "sect",
+   "leader": null,
+   "n_members": 12
+  },
+  {
+   "type": "sect",
+   "leader": null,
+   "n_members": 0
+  },
+  {
+   "type": "sect",
+   "leader": null,
+   "n_members": 0
+  },
+  {
+   "type": "sect",
+   "leader": null,
+   "n_members": 0
+  },
+  {
+   "type": "sect",
+   "leader": null,
+   "n_members": 1
+  },
+  {
+   "type": "sect",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "sect",
+   "leader": null,
+   "n_members": 0
+  },
+  {
+   "type": "sect",
+   "leader": null,
+   "n_members": 0
+  },
+  {
+   "type": "sect",
+   "leader": null,
+   "n_members": 0
+  },
+  {
+   "type": "sect",
+   "leader": null,
+   "n_members": 0
+  },
+  {
+   "type": "sect",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "sect",
+   "leader": null,
+   "n_members": 0
+  },
+  {
+   "type": "sect",
+   "leader": null,
+   "n_members": 0
+  },
+  {
+   "type": "sect",
+   "leader": null,
+   "n_members": 1
+  },
+  {
+   "type": "sect",
+   "leader": null,
+   "n_members": 3
+  },
+  {
+   "type": "sect",
+   "leader": null,
+   "n_members": 1
+  },
+  {
+   "type": "sect",
+   "leader": null,
+   "n_members": 1
+  },
+  {
+   "type": "sect",
+   "leader": null,
+   "n_members": 3
+  },
+  {
+   "type": "sect",
+   "leader": null,
+   "n_members": 1
+  },
+  {
+   "type": "sect",
+   "leader": null,
+   "n_members": 0
+  },
+  {
+   "type": "sect",
+   "leader": null,
+   "n_members": 1
+  },
+  {
+   "type": "hindu_branch",
+   "leader": null,
+   "n_members": 21
+  },
+  {
+   "type": "hindu_branch",
+   "leader": null,
+   "n_members": 17
+  },
+  {
+   "type": "hindu_branch",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "hindu_branch",
+   "leader": null,
+   "n_members": 0
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 3
+  },
+  {
+   "type": "marriage_union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "autocephalous_patriarchate",
+   "leader": {
+    "id": 1227,
+    "tag": "IFA",
+    "name": null
+   },
+   "n_members": 2
+  },
+  {
+   "type": "marriage_union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "marriage_union",
+   "leader": null,
+   "n_members": 5
+  },
+  {
+   "type": "marriage_union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "marriage_union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "marriage_union",
+   "leader": null,
+   "n_members": 3
+  },
+  {
+   "type": "marriage_union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 3
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 4
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "marriage_union",
+   "leader": null,
+   "n_members": 3
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "marriage_union",
+   "leader": null,
+   "n_members": 3
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "marriage_union",
+   "leader": null,
+   "n_members": 5
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 4
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 3
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "marriage_union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "marriage_union",
+   "leader": null,
+   "n_members": 4
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 5
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 3
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "autocephalous_patriarchate",
+   "leader": {
+    "id": 1211,
+    "tag": "ENN",
+    "name": null
+   },
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "sikhism",
+   "leader": {
+    "id": 16779681,
+    "tag": "SIKH",
+    "name": null
+   },
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "marriage_union",
+   "leader": null,
+   "n_members": 5
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 5
+  },
+  {
+   "type": "marriage_union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 3
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 3
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 4
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  },
+  {
+   "type": "union",
+   "leader": null,
+   "n_members": 2
+  }
+ ]
+}

@@ -1,0 +1,1507 @@
+{
+ "202": {
+  "tag": "EPI",
+  "names": [
+   "EPI"
+  ],
+  "types": [
+   "vassal"
+  ],
+  "since": null,
+  "first": "1349.10.31.12",
+  "last": "1369.5.1",
+  "seat": [
+   "arta"
+  ],
+  "cul": [
+   "greek_culture"
+  ],
+  "rel": [
+   "orthodox"
+  ],
+  "locs": [
+   10,
+   10,
+   10
+  ]
+ },
+ "214": {
+  "tag": "BUL",
+  "names": [
+   "BUL"
+  ],
+  "types": [
+   "vassal"
+  ],
+  "since": "1351.4.1",
+  "first": "1365.5.19.12",
+  "last": "1464.1.10.18",
+  "seat": [
+   "tarnovo"
+  ],
+  "cul": [
+   "bulgarian"
+  ],
+  "rel": [
+   "orthodox",
+   "hellenism_religion"
+  ],
+  "locs": [
+   57,
+   57,
+   60,
+   60,
+   60,
+   62,
+   62,
+   62,
+   62,
+   62,
+   62,
+   62,
+   62,
+   62,
+   62,
+   62
+  ]
+ },
+ "33556774": {
+  "tag": "AAA27",
+  "names": [
+   "usak_province"
+  ],
+  "types": [
+   "fiefdom"
+  ],
+  "since": "1357.1.3",
+  "first": "1365.5.19.12",
+  "last": "1507.1.13",
+  "seat": [
+   "lazkiye"
+  ],
+  "cul": [
+   "greek_culture"
+  ],
+  "rel": [
+   "orthodox",
+   "hellenism_religion"
+  ],
+  "locs": [
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18
+  ]
+ },
+ "2373": {
+  "tag": "AAA33",
+  "names": [
+   "illyria_province"
+  ],
+  "types": [
+   "fiefdom"
+  ],
+  "since": "1358.9.29",
+  "first": "1365.5.19.12",
+  "last": "1423.11.1",
+  "seat": [
+   "koman"
+  ],
+  "cul": [
+   "albanian"
+  ],
+  "rel": [
+   "orthodox"
+  ],
+  "locs": [
+   11,
+   13,
+   13,
+   12,
+   12,
+   12
+  ]
+ },
+ "16779590": {
+  "tag": "AAA19",
+  "names": [
+   "alaiye_province"
+  ],
+  "types": [
+   "fiefdom",
+   "dominion"
+  ],
+  "since": "1360.12.1",
+  "first": "1365.5.19.12",
+  "last": "1415.3.27.10",
+  "seat": [
+   "alaiye"
+  ],
+  "cul": [
+   "turkish_culture",
+   "greek_culture"
+  ],
+  "rel": [
+   "orthodox"
+  ],
+  "locs": [
+   16,
+   13,
+   13,
+   13
+  ]
+ },
+ "33556195": {
+  "tag": "AAA21",
+  "names": [
+   "ankara_province"
+  ],
+  "types": [
+   "fiefdom",
+   "dominion"
+  ],
+  "since": "1360.12.4",
+  "first": "1365.5.19.12",
+  "last": "1495.4.15.6",
+  "seat": [
+   "ankara"
+  ],
+  "cul": [
+   "turkish_culture",
+   "greek_culture"
+  ],
+  "rel": [
+   "orthodox",
+   "hellenism_religion"
+  ],
+  "locs": [
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19,
+   19
+  ]
+ },
+ "33556368": {
+  "tag": "AAA34",
+  "names": [
+   "konya_province"
+  ],
+  "types": [
+   "fiefdom",
+   "dominion"
+  ],
+  "since": "1360.12.4",
+  "first": "1365.5.19.12",
+  "last": "1495.4.15.6",
+  "seat": [
+   "konya"
+  ],
+  "cul": [
+   "turkish_culture",
+   "greek_culture"
+  ],
+  "rel": [
+   "orthodox",
+   "hellenism_religion"
+  ],
+  "locs": [
+   16,
+   16,
+   16,
+   16,
+   16,
+   16,
+   16,
+   16,
+   16,
+   16,
+   16,
+   16,
+   16,
+   16,
+   16,
+   16,
+   16,
+   16,
+   16,
+   16
+  ]
+ },
+ "16779121": {
+  "tag": "AAA28",
+  "names": [
+   "kayseri_province"
+  ],
+  "types": [
+   "fiefdom",
+   "dominion"
+  ],
+  "since": "1363.8.11",
+  "first": "1365.5.19.12",
+  "last": "1495.4.15.6",
+  "seat": [
+   "kayseri"
+  ],
+  "cul": [
+   "turkish_culture",
+   "greek_culture"
+  ],
+  "rel": [
+   "orthodox",
+   "hellenism_religion"
+  ],
+  "locs": [
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15
+  ]
+ },
+ "1514": {
+  "tag": "SIC",
+  "names": [
+   "SIC"
+  ],
+  "types": [
+   "vassal"
+  ],
+  "since": "1363.12.1",
+  "first": "1365.5.19.12",
+  "last": "1507.1.13",
+  "seat": [
+   "messina",
+   "palermo"
+  ],
+  "cul": [
+   "sicilian",
+   "roman_culture"
+  ],
+  "rel": [
+   "catholic",
+   "hellenism_religion"
+  ],
+  "locs": [
+   4,
+   4,
+   4,
+   4,
+   4,
+   17,
+   17,
+   17,
+   17,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35
+  ]
+ },
+ "198": {
+  "tag": "ATH",
+  "names": [
+   "ATH"
+  ],
+  "types": [
+   "vassal"
+  ],
+  "since": "1363.12.1",
+  "first": "1365.5.19.12",
+  "last": "1393.2.27.10",
+  "seat": [
+   "athens"
+  ],
+  "cul": [
+   "catalan",
+   "greek_culture"
+  ],
+  "rel": [
+   "catholic",
+   "orthodox"
+  ],
+  "locs": [
+   14,
+   14,
+   28
+  ]
+ },
+ "50334028": {
+  "tag": "AAA45",
+  "names": [
+   "sinop_province"
+  ],
+  "types": [
+   "vassal"
+  ],
+  "since": "1368.3.15",
+  "first": "1369.5.1",
+  "last": "1442.2.4.16",
+  "seat": [
+   "sinop"
+  ],
+  "cul": [
+   "pontic_greek_culture",
+   "greek_culture"
+  ],
+  "rel": [
+   "orthodox",
+   "sunni",
+   "hellenism_religion",
+   "sunni",
+   "hellenism_religion"
+  ],
+  "locs": [
+   28,
+   28,
+   28,
+   28,
+   28,
+   28,
+   28,
+   28,
+   28
+  ]
+ },
+ "16779613": {
+  "tag": "AAA04",
+  "names": [
+   "aksaray_province"
+  ],
+  "types": [
+   "fiefdom",
+   "dominion"
+  ],
+  "since": "1379.5.10",
+  "first": "1393.2.27.10",
+  "last": "1495.4.15.6",
+  "seat": [
+   "aksaray"
+  ],
+  "cul": [
+   "turkish_culture",
+   "greek_culture"
+  ],
+  "rel": [
+   "orthodox",
+   "hellenism_religion"
+  ],
+  "locs": [
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15
+  ]
+ },
+ "134220081": {
+  "tag": "AAA94",
+  "names": [
+   "sivas_province"
+  ],
+  "types": [
+   "fiefdom"
+  ],
+  "since": "1382.4.1",
+  "first": "1393.2.27.10",
+  "last": "1507.1.13",
+  "seat": [
+   "deliktash"
+  ],
+  "cul": [
+   "armenian_culture"
+  ],
+  "rel": [
+   "orthodox",
+   "hellenism_religion"
+  ],
+  "locs": [
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   10,
+   29,
+   29,
+   27,
+   27,
+   27
+  ]
+ },
+ "201": {
+  "tag": "NAX",
+  "names": [
+   "NAX"
+  ],
+  "types": [
+   "vassal"
+  ],
+  "since": "1394.7.1",
+  "first": "1415.3.27.10",
+  "last": "1415.3.27.10",
+  "seat": [
+   "naxos"
+  ],
+  "cul": [
+   "venetian"
+  ],
+  "rel": [
+   "catholic"
+  ],
+  "locs": [
+   3
+  ]
+ },
+ "206": {
+  "tag": "SER",
+  "names": [
+   "SER"
+  ],
+  "types": [
+   "vassal",
+   "pronoia"
+  ],
+  "since": "1394.9.16",
+  "first": "1415.3.27.10",
+  "last": "1507.1.13",
+  "seat": [
+   "prokuplje",
+   "belgrad"
+  ],
+  "cul": [
+   "serbian"
+  ],
+  "rel": [
+   "orthodox",
+   "hellenism_religion"
+  ],
+  "locs": [
+   2,
+   2,
+   31,
+   31,
+   31,
+   31,
+   31,
+   31,
+   31,
+   31,
+   31,
+   31,
+   31,
+   31,
+   33,
+   33,
+   33,
+   33,
+   33,
+   33,
+   33,
+   33
+  ]
+ },
+ "20": {
+  "tag": "CIL",
+  "names": [
+   "CIL"
+  ],
+  "types": [
+   "fiefdom"
+  ],
+  "since": "1407.5.25",
+  "first": "1415.3.27.10",
+  "last": "1415.3.27.10",
+  "seat": [
+   "sis"
+  ],
+  "cul": [
+   "armenian_culture"
+  ],
+  "rel": [
+   "orthodox"
+  ],
+  "locs": [
+   12
+  ]
+ },
+ "212": {
+  "tag": "BOS",
+  "names": [
+   "BOS"
+  ],
+  "types": [
+   "vassal",
+   "pronoia"
+  ],
+  "since": "1423.6.13",
+  "first": "1423.11.1",
+  "last": "1507.1.13",
+  "seat": [
+   "zenica"
+  ],
+  "cul": [
+   "bosnian"
+  ],
+  "rel": [
+   "catholic",
+   "hellenism_religion"
+  ],
+  "locs": [
+   17,
+   17,
+   17,
+   17,
+   17,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18,
+   18
+  ]
+ },
+ "1470": {
+  "tag": "COR",
+  "names": [
+   "COR",
+   "SAR"
+  ],
+  "types": [
+   "vassal"
+  ],
+  "since": "1437.3.12",
+  "first": "1442.2.4.16",
+  "last": "1507.1.13",
+  "seat": [
+   "ajaccio"
+  ],
+  "cul": [
+   "corsican",
+   "roman_culture"
+  ],
+  "rel": [
+   "catholic",
+   "hellenism_religion"
+  ],
+  "locs": [
+   11,
+   11,
+   11,
+   11,
+   11,
+   32,
+   31,
+   31,
+   31,
+   31,
+   31,
+   31,
+   31,
+   31,
+   31,
+   31
+  ]
+ },
+ "40": {
+  "tag": "TRE",
+  "names": [
+   "TRE"
+  ],
+  "types": [
+   "vassal"
+  ],
+  "since": "1443.11.26",
+  "first": "1448.1.17.6",
+  "last": "1507.1.13",
+  "seat": [
+   "trebizond"
+  ],
+  "cul": [
+   "pontic_greek_culture"
+  ],
+  "rel": [
+   "orthodox"
+  ],
+  "locs": [
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   15,
+   22,
+   22,
+   22,
+   22,
+   22
+  ]
+ },
+ "100665688": {
+  "tag": "AAA08",
+  "names": [
+   "bafra"
+  ],
+  "types": [
+   "vassal"
+  ],
+  "since": "1446.1.19",
+  "first": "1448.1.17.6",
+  "last": "1507.1.13",
+  "seat": [
+   "bafra"
+  ],
+  "cul": [
+   "greek_culture"
+  ],
+  "rel": [
+   "hellenism_religion"
+  ],
+  "locs": [
+   28,
+   28,
+   28,
+   28,
+   28,
+   28,
+   28,
+   28,
+   28,
+   28,
+   29,
+   29,
+   29,
+   29,
+   29
+  ]
+ },
+ "67111244": {
+  "tag": "AAA50",
+  "names": [
+   "Pannonia Superior"
+  ],
+  "types": [
+   "vassal"
+  ],
+  "since": "1448.1.17",
+  "first": "1448.1.20.18",
+  "last": "1507.1.13",
+  "seat": [
+   "csurgo"
+  ],
+  "cul": [
+   "hungarian"
+  ],
+  "rel": [
+   "hellenism_religion"
+  ],
+  "locs": [
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35,
+   35
+  ]
+ },
+ "83888437": {
+  "tag": "AAA87",
+  "names": [
+   "Apulia"
+  ],
+  "types": [
+   "vassal"
+  ],
+  "since": "1448.1.20",
+  "first": "1448.2.4.18",
+  "last": "1507.1.13",
+  "seat": [
+   "lecce"
+  ],
+  "cul": [
+   "neapolitan",
+   "roman_culture",
+   "neapolitan"
+  ],
+  "rel": [
+   "hellenism_religion"
+  ],
+  "locs": [
+   17,
+   17,
+   17,
+   17,
+   17,
+   17,
+   17,
+   17,
+   17,
+   17,
+   17,
+   17,
+   17
+  ]
+ },
+ "33556860": {
+  "tag": "AAA89",
+  "names": [
+   "Campania"
+  ],
+  "types": [
+   "vassal"
+  ],
+  "since": "1448.3.17",
+  "first": "1460.6.29.16",
+  "last": "1507.1.13",
+  "seat": [
+   "salerno"
+  ],
+  "cul": [
+   "neapolitan",
+   "roman_culture"
+  ],
+  "rel": [
+   "hellenism_religion"
+  ],
+  "locs": [
+   15,
+   22,
+   22,
+   22,
+   22,
+   22,
+   22,
+   22,
+   22,
+   22,
+   22,
+   22
+  ]
+ },
+ "1258": {
+  "tag": "MLL",
+  "names": [
+   "MLL"
+  ],
+  "types": [
+   "vassal"
+  ],
+  "since": "1461.10.18",
+  "first": "1462.5.2.6",
+  "last": "1507.1.13",
+  "seat": [
+   "palma"
+  ],
+  "cul": [
+   "catalan"
+  ],
+  "rel": [
+   "hellenism_religion"
+  ],
+  "locs": [
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5
+  ]
+ },
+ "33556862": {
+  "tag": "AAA67",
+  "names": [
+   "Samnium"
+  ],
+  "types": [
+   "vassal"
+  ],
+  "since": "1467.6.1",
+  "first": "1473.7.24",
+  "last": "1507.1.13",
+  "seat": [
+   "aquila"
+  ],
+  "cul": [
+   "neapolitan",
+   "roman_culture"
+  ],
+  "rel": [
+   "hellenism_religion"
+  ],
+  "locs": [
+   4,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20,
+   20
+  ]
+ },
+ "184551735": {
+  "tag": "ABA01",
+  "names": [
+   "Africa Proconsularis"
+  ],
+  "types": [
+   "vassal"
+  ],
+  "since": "1473.8.4",
+  "first": "1479.6.16.2",
+  "last": "1507.1.13",
+  "seat": [
+   "tunis"
+  ],
+  "cul": [
+   "tunisian",
+   "Afri",
+   "roman_culture"
+  ],
+  "rel": [
+   "hellenism_religion"
+  ],
+  "locs": [
+   44,
+   44,
+   44,
+   44,
+   44,
+   44,
+   44,
+   44
+  ]
+ },
+ "184550515": {
+  "tag": "MTPSC",
+  "names": [
+   "MONTE_PASCHI"
+  ],
+  "types": [
+   "state_bank"
+  ],
+  "since": "1486.7.23",
+  "first": "1486.7.23.20",
+  "last": "1495.4.15.6",
+  "seat": [
+   "siena"
+  ],
+  "cul": [
+   "tuscan"
+  ],
+  "rel": [
+   "catholic"
+  ],
+  "locs": [
+   0,
+   0
+  ]
+ },
+ "2455": {
+  "tag": "ABA11",
+  "names": [
+   "Etruria Minor"
+  ],
+  "types": [
+   "vassal"
+  ],
+  "since": "1486.7.23",
+  "first": "1495.4.15.6",
+  "last": "1507.1.13",
+  "seat": [
+   "spoleto"
+  ],
+  "cul": [
+   "roman_culture",
+   "median"
+  ],
+  "rel": [
+   "hellenism_religion"
+  ],
+  "locs": [
+   9,
+   8,
+   8,
+   8,
+   8,
+   8
+  ]
+ },
+ "33556875": {
+  "tag": "ABA04",
+  "names": [
+   "parma_province"
+  ],
+  "types": [
+   "vassal"
+  ],
+  "since": "1486.7.23",
+  "first": "1495.4.15.6",
+  "last": "1507.1.13",
+  "seat": [
+   "parma"
+  ],
+  "cul": [
+   "emilian"
+  ],
+  "rel": [
+   "hellenism_religion"
+  ],
+  "locs": [
+   14,
+   14,
+   14,
+   14,
+   14,
+   14
+  ]
+ },
+ "2452": {
+  "tag": "ABA08",
+  "names": [
+   "Mediolanion"
+  ],
+  "types": [
+   "vassal"
+  ],
+  "since": "1486.7.23",
+  "first": "1495.4.15.6",
+  "last": "1507.1.13",
+  "seat": [
+   "milano"
+  ],
+  "cul": [
+   "roman_culture",
+   "lombard",
+   "roman_culture"
+  ],
+  "rel": [
+   "hellenism_religion"
+  ],
+  "locs": [
+   12,
+   12,
+   12,
+   12,
+   12,
+   12
+  ]
+ },
+ "2453": {
+  "tag": "ABA09",
+  "names": [
+   "Transpadana"
+  ],
+  "types": [
+   "vassal"
+  ],
+  "since": "1486.7.23",
+  "first": "1495.4.15.6",
+  "last": "1507.1.13",
+  "seat": [
+   "asti"
+  ],
+  "cul": [
+   "piedmontese"
+  ],
+  "rel": [
+   "hellenism_religion"
+  ],
+  "locs": [
+   8,
+   8,
+   8,
+   8,
+   8,
+   21
+  ]
+ },
+ "2450": {
+  "tag": "ABA06",
+  "names": [
+   "Liguria"
+  ],
+  "types": [
+   "vassal"
+  ],
+  "since": "1486.7.23",
+  "first": "1495.4.15.6",
+  "last": "1507.1.13",
+  "seat": [
+   "genoa"
+  ],
+  "cul": [
+   "ligurian",
+   "roman_culture"
+  ],
+  "rel": [
+   "hellenism_religion"
+  ],
+  "locs": [
+   12,
+   12,
+   12,
+   12,
+   12,
+   12
+  ]
+ },
+ "2459": {
+  "tag": "ABA15",
+  "names": [
+   "Numidia Militiana"
+  ],
+  "types": [
+   "vassal"
+  ],
+  "since": "1488.2.20",
+  "first": "1495.4.15.6",
+  "last": "1507.1.13",
+  "seat": [
+   "sbiba"
+  ],
+  "cul": [
+   "chaoui",
+   "roman_culture"
+  ],
+  "rel": [
+   "hellenism_religion"
+  ],
+  "locs": [
+   11,
+   11,
+   11,
+   11,
+   11,
+   11
+  ]
+ },
+ "2458": {
+  "tag": "ABA14",
+  "names": [
+   "Africa Byzacena"
+  ],
+  "types": [
+   "vassal"
+  ],
+  "since": "1488.2.20",
+  "first": "1495.4.15.6",
+  "last": "1506.8.1",
+  "seat": [
+   "mahdia"
+  ],
+  "cul": [
+   "tunisian"
+  ],
+  "rel": [
+   "hellenism_religion"
+  ],
+  "locs": [
+   20,
+   20,
+   20,
+   20,
+   20
+  ]
+ },
+ "16779524": {
+  "tag": "ABA10",
+  "names": [
+   "Africa Tripolitania"
+  ],
+  "types": [
+   "vassal"
+  ],
+  "since": "1488.2.20",
+  "first": "1495.4.15.6",
+  "last": "1507.1.13",
+  "seat": [
+   "tripoli"
+  ],
+  "cul": [
+   "libyan_arabic_culture"
+  ],
+  "rel": [
+   "hellenism_religion"
+  ],
+  "locs": [
+   17,
+   17,
+   17,
+   17,
+   17,
+   17
+  ]
+ },
+ "67111291": {
+  "tag": "ABA03",
+  "names": [
+   "Aemilia"
+  ],
+  "types": [
+   "pronoia"
+  ],
+  "since": "1489.11.5",
+  "first": "1495.4.15.6",
+  "last": "1507.1.13",
+  "seat": [
+   "ferrara"
+  ],
+  "cul": [
+   "venetian",
+   "roman_culture"
+  ],
+  "rel": [
+   "hellenism_religion"
+  ],
+  "locs": [
+   18,
+   18,
+   18,
+   18,
+   18,
+   18
+  ]
+ },
+ "33556838": {
+  "tag": "AAA96",
+  "names": [
+   "Pataouion"
+  ],
+  "types": [
+   "pronoia"
+  ],
+  "since": "1489.11.5",
+  "first": "1495.4.15.6",
+  "last": "1507.1.13",
+  "seat": [
+   "padova"
+  ],
+  "cul": [
+   "roman_culture",
+   "venetian"
+  ],
+  "rel": [
+   "hellenism_religion"
+  ],
+  "locs": [
+   10,
+   10,
+   10,
+   10,
+   10,
+   10
+  ]
+ },
+ "16779611": {
+  "tag": "AAA86",
+  "names": [
+   "Venetia"
+  ],
+  "types": [
+   "pronoia"
+  ],
+  "since": "1489.11.5",
+  "first": "1495.4.15.6",
+  "last": "1507.1.13",
+  "seat": [
+   "aquileia"
+  ],
+  "cul": [
+   "venetian",
+   "roman_culture"
+  ],
+  "rel": [
+   "hellenism_religion"
+  ],
+  "locs": [
+   16,
+   16,
+   16,
+   16,
+   16,
+   16
+  ]
+ },
+ "2449": {
+  "tag": "ABA05",
+  "names": [
+   "Kremone"
+  ],
+  "types": [
+   "pronoia"
+  ],
+  "since": "1489.11.5",
+  "first": "1495.4.15.6",
+  "last": "1507.1.13",
+  "seat": [
+   "cremona"
+  ],
+  "cul": [
+   "lombard"
+  ],
+  "rel": [
+   "hellenism_religion"
+  ],
+  "locs": [
+   17,
+   17,
+   17,
+   17,
+   17,
+   17
+  ]
+ },
+ "67111315": {
+  "tag": "ABA13",
+  "names": [
+   "Mauretania"
+  ],
+  "types": [
+   "pronoia"
+  ],
+  "since": "1495.4.15",
+  "first": "1500.8.5.20",
+  "last": "1507.1.13",
+  "seat": [
+   "marrakesh"
+  ],
+  "cul": [
+   "moroccan"
+  ],
+  "rel": [
+   "hellenism_religion"
+  ],
+  "locs": [
+   33,
+   33,
+   17,
+   33,
+   33
+  ]
+ },
+ "33556842": {
+  "tag": "ABA07",
+  "names": [
+   "Tingitana"
+  ],
+  "types": [
+   "pronoia"
+  ],
+  "since": "1495.4.15",
+  "first": "1500.8.5.20",
+  "last": "1507.1.13",
+  "seat": [
+   "meknes",
+   "fez"
+  ],
+  "cul": [
+   "moroccan"
+  ],
+  "rel": [
+   "hellenism_religion"
+  ],
+  "locs": [
+   27,
+   27,
+   35,
+   24,
+   35
+  ]
+ },
+ "33555453": {
+  "tag": "AAA72",
+  "names": [
+   "Caesariensis"
+  ],
+  "types": [
+   "pronoia"
+  ],
+  "since": "1495.4.15",
+  "first": "1500.8.5.20",
+  "last": "1507.1.13",
+  "seat": [
+   "nedroma"
+  ],
+  "cul": [
+   "algerian"
+  ],
+  "rel": [
+   "hellenism_religion"
+  ],
+  "locs": [
+   30,
+   30,
+   30,
+   30,
+   30
+  ]
+ },
+ "50333192": {
+  "tag": "AAA80",
+  "names": [
+   "Sitifensis"
+  ],
+  "types": [
+   "pronoia"
+  ],
+  "since": "1495.4.15",
+  "first": "1500.8.5.20",
+  "last": "1507.1.13",
+  "seat": [
+   "tissemsilt"
+  ],
+  "cul": [
+   "zenati"
+  ],
+  "rel": [
+   "hellenism_religion"
+  ],
+  "locs": [
+   17,
+   17,
+   17,
+   17,
+   17
+  ]
+ },
+ "33556009": {
+  "tag": "AAA62",
+  "names": [
+   "Narbonensis Secunda"
+  ],
+  "types": [
+   "vassal"
+  ],
+  "since": "1507.1.13",
+  "first": "1507.1.13",
+  "last": "1507.1.13",
+  "seat": [
+   "aix_en_provence"
+  ],
+  "cul": [
+   "provencal"
+  ],
+  "rel": [
+   "hellenism_religion"
+  ],
+  "locs": [
+   16
+  ]
+ }
+}
