@@ -71,3 +71,16 @@
 .area-card .loyalty.disloyal .lbar i { background: #c0442e; }
 .area-card .lbar em { position: absolute; left: 50%; top: -3px; bottom: -3px; width: 1px; background: var(--mist); }
 .area-card .muted-s { color: var(--dusk); }
+.lands-table td.tb { min-width: 8.5rem; }
+.wbar { display: block; height: 7px; min-width: 2px; background: rgba(85, 152, 231, 0.28); border-radius: 2px; overflow: hidden; }
+.wbar-wrap { display: inline-block; width: 5rem; margin-right: 0.5rem; vertical-align: middle; }
+.wbar i { display: block; height: 100%; background: #5598e7; }
+.untaxed { margin: 1.4rem 0 0.4rem; max-width: 40rem; }
+.untaxed .sub-title { margin-bottom: 0.3rem; }
+.untaxed p { font-size: 0.85rem; margin: 0 0 0.6rem; }
+.untaxed ol { margin: 0; padding-left: 1.4rem; display: grid; gap: 0.3rem; font-size: 0.9rem; color: var(--plaster); }
+.untaxed li { display: grid; grid-template-columns: 1fr auto 6.5rem; gap: 1rem; align-items: baseline; }
+.untaxed li .nm a { color: var(--plaster); text-decoration-color: rgba(212, 171, 85, 0.5); }
+.untaxed li b { color: var(--gilt-hi); font-weight: 600; }
+@media (max-width: 40rem) { .untaxed li { grid-template-columns: 1fr auto; } .untaxed li .muted-s { display: none; } }
+.untaxed .muted-s { color: var(--dusk); }

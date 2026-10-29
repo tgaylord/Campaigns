@@ -14,9 +14,11 @@ const OTHER = "#a39a86";
 const RAMP = ["#5598e7", "#2a78d6", "#1c5cab", "#0d366b"];
 const INTEG_COLOR = { core: "#2a78d6", conquered: "#eb6834" };
 
-type Lens = "control" | "culture" | "faith" | "integration" | "development";
+type Lens = "control" | "wealth" | "untaxed" | "culture" | "faith" | "integration" | "development";
 const LENSES: { id: Lens; label: string }[] = [
   { id: "control", label: "Control" },
+  { id: "wealth", label: "Wealth" },
+  { id: "untaxed", label: "Untaxed wealth" },
   { id: "culture", label: "Peoples" },
   { id: "faith", label: "Faiths" },
   { id: "integration", label: "Integration" },
@@ -24,6 +26,14 @@ const LENSES: { id: Lens; label: string }[] = [
 ];
 const CONTROL_BINS = [0.25, 0.5, 0.75];
 const DEV_BINS = [10, 20, 30];
+const WEALTH_BINS = [1, 3, 8];
+const UNTAXED_BINS = [0.5, 1.5, 3];
+/* The game's own definitions: a location's wealth is what its goods and buildings earn at market;
+   wealth times control is its tax base, the part the crown can tax. The rest goes to the estates. */
+const wealthOf = (l: Land) => l.possibleTax ?? 0;
+const taxBaseOf = (l: Land) => l.tax ?? 0;
+const untaxedOf = (l: Land) => Math.max(0, wealthOf(l) - taxBaseOf(l));
+const g1 = (v: number) => (v >= 10 ? v.toFixed(0) : v.toFixed(1));
 const bin = (v: number, edges: number[]) => edges.filter((e) => v >= e).length;
 
 const byKey = new Map(places.map((p) => [p.key, p]));
@@ -41,6 +51,8 @@ function fill(l: Land, lens: Lens) {
   switch (lens) {
     case "control": return l.control == null ? OTHER : RAMP[bin(l.control, CONTROL_BINS)];
     case "development": return l.development == null ? OTHER : RAMP[bin(l.development, DEV_BINS)];
+    case "wealth": return l.possibleTax == null ? OTHER : RAMP[bin(wealthOf(l), WEALTH_BINS)];
+    case "untaxed": return l.possibleTax == null ? OTHER : RAMP[bin(untaxedOf(l), UNTAXED_BINS)];
     case "culture": return CULTURE_COLOR[l.culture ?? ""] ?? OTHER;
     case "faith": return FAITH_COLOR[l.religion ?? ""] ?? OTHER;
     case "integration": return INTEG_COLOR[integrated(l)];
@@ -50,6 +62,8 @@ function lensValue(l: Land, lens: Lens) {
   switch (lens) {
     case "control": return `Control ${pct(l.control)}`;
     case "development": return `Development ${l.development?.toFixed(1) ?? "?"}`;
+    case "wealth": return `Wealth ${wealthOf(l).toFixed(2)}, of which ${taxBaseOf(l).toFixed(2)} is taxable at ${pct(l.control)} control`;
+    case "untaxed": return `${untaxedOf(l).toFixed(2)} of its ${wealthOf(l).toFixed(2)} wealth is beyond the crown's control`;
     case "culture": return `Mostly ${cultureName(l.culture ?? "")} (${pct((l.cultures[l.culture ?? ""] ?? 0) / (l.population || 1))})`;
     case "faith": return `Mostly ${faithName(l.religion ?? "")} (${pct((l.religions[l.religion ?? ""] ?? 0) / (l.population || 1))})`;
     case "integration": return l.core ? "Core of Granada" : "Conquered, not yet a core";
@@ -58,6 +72,8 @@ function lensValue(l: Land, lens: Lens) {
 function legend(lens: Lens, rows: Land[]) {
   if (lens === "control") return [["below 25%", RAMP[0]], ["25–50%", RAMP[1]], ["50–75%", RAMP[2]], ["75% or more", RAMP[3]]];
   if (lens === "development") return [["below 10", RAMP[0]], ["10–20", RAMP[1]], ["20–30", RAMP[2]], ["30 or more", RAMP[3]]];
+  if (lens === "wealth") return [["below 1", RAMP[0]], ["1–3", RAMP[1]], ["3–8", RAMP[2]], ["8 or more", RAMP[3]]];
+  if (lens === "untaxed") return [["below 0.5", RAMP[0]], ["0.5–1.5", RAMP[1]], ["1.5–3", RAMP[2]], ["3 or more", RAMP[3]]];
   if (lens === "integration") return [["Core", INTEG_COLOR.core], ["Conquered", INTEG_COLOR.conquered]];
   const colors = lens === "culture" ? CULTURE_COLOR : FAITH_COLOR;
   const name = lens === "culture" ? cultureName : faithName;
@@ -124,6 +140,7 @@ function LandsMap({ rows, lens }: { rows: (Land & { holder?: string })[]; lens: 
           <div className="lands-tip ui" style={{ left: hover.x + 14, top: hover.y + 14 }}>
             <div className="t">{nm.ar && <span className="ar">{nm.ar}</span>} {nm.name}</div>
             <div>{lensValue(hover.l, lens)}</div>
+            {lens !== "wealth" && lens !== "untaxed" && hover.l.possibleTax != null && <div className="m">Wealth {wealthOf(hover.l).toFixed(1)}, tax base {taxBaseOf(hover.l).toFixed(1)}</div>}
             <div className="m">{provinceName(hover.l.province)}, {compact(hover.l.population)} people{(hover.l as Land & { holder?: string }).holder && (hover.l as Land & { holder?: string }).holder !== "GRA" ? `, held through ${countryByTag.get((hover.l as Land & { holder?: string }).holder!)?.nameChronicle}` : ""}</div>
           </div>
         );
@@ -144,6 +161,21 @@ function Shares({ parts, total, colors, name }: { parts: Record<string, number>;
   );
 }
 
+/* ------------------------------------------------------------ wealth bar */
+
+/** The bar's length is the location's wealth; the solid part is the tax base, the pale rest goes to the estates. */
+function WealthBar({ l, max }: { l: Land; max: number }) {
+  if (l.possibleTax == null) return null;
+  const w = wealthOf(l), t = taxBaseOf(l);
+  return (
+    <span className="wbar-wrap" aria-hidden="true">
+      <span className="wbar" style={{ width: `${Math.max(2, (100 * w) / (max || 1))}%` }}>
+        <i style={{ width: `${(100 * t) / (w || 1)}%` }} />
+      </span>
+    </span>
+  );
+}
+
 /* ------------------------------------------------------------ the page */
 
 export default function Lands() {
@@ -157,6 +189,9 @@ export default function Lands() {
   const allRows = [...rows.map((r) => ({ ...r, holder: "GRA" })), ...subjects.flatMap(([tag, s]) => s.lands.map((r) => ({ ...r, holder: tag })))];
   const keysAt = (id: string) => [...(lands[id] ?? []), ...Object.values(subjectLands[id] ?? {}).flatMap((s) => s.lands)].map((l) => l.key);
   const prev = i > 0 ? new Set(keysAt(withLands[i - 1].id)) : null;
+  const maxWealth = Math.max(0, ...allRows.map(wealthOf));
+  // Where a firmer grip would pay most: the most wealth slipping past the crown.
+  const untaxedTop = rows.filter((l) => l.possibleTax != null).sort((a, b) => untaxedOf(b) - untaxedOf(a)).slice(0, 5);
 
   // Area → province → locations, largest first.
   const groups = useMemo(() => groupLands(rows), [rows]);
@@ -194,7 +229,7 @@ export default function Lands() {
         <td colSpan={2} className="sub">{p.lands.length} {p.lands.length === 1 ? "location" : "locations"}</td>
         <td className="num">{pct(wmean(p.lands, (l) => l.control))}</td>
         <td className="num">{wmean(p.lands, (l) => l.development)?.toFixed(1)}</td>
-        <td /><td className="num">{sum(p.lands, (l) => l.tax ?? 0).toFixed(1)}</td><td />
+        <td /><td className="num">{g1(sum(p.lands, wealthOf))}</td><td className="num">{g1(sum(p.lands, taxBaseOf))}</td><td />
       </tr>
       {p.lands.map((l) => {
         const nm = landName(l.key);
@@ -213,8 +248,9 @@ export default function Lands() {
             <td className="num"><span className="ctl"><i style={{ width: pct(l.control) }} /></span>{pct(l.control)}</td>
             <td className="num">{l.development?.toFixed(1)}</td>
             <td>{holder === "GRA" ? (l.core ? "Core" : "Conquered") : (l.core ? `Core of ${countryByTag.get(holder)?.name ?? holder}` : "Not yet a core")}{l.controller && l.controller !== holder ? `, held by ${l.controller}` : ""}</td>
-            <td className="num" title={l.possibleTax != null ? `${l.tax?.toFixed(2)} of a possible ${l.possibleTax.toFixed(2)}` : ""}>
-              {l.tax?.toFixed(1)}<span className="of"> of {l.possibleTax?.toFixed(1)}</span>
+            <td className="num">{l.possibleTax != null ? wealthOf(l).toFixed(1) : ""}</td>
+            <td className="num tb" title={l.possibleTax != null ? `Tax base ${taxBaseOf(l).toFixed(2)} of ${wealthOf(l).toFixed(2)} wealth` : ""}>
+              <WealthBar l={l} max={maxWealth} />{l.tax?.toFixed(1)}
             </td>
             <td>{l.goods ? l.goods.replace(/_/g, " ") : ""}</td>
           </tr>
@@ -247,6 +283,7 @@ export default function Lands() {
               <span className="row"><b>{ls.length}</b> {ls.length === 1 ? "location" : "locations"}, <b>{compact(pop)}</b> people</span>
               <span className="row"><b>{pct(muslims(ls) / (pop || 1))}</b> Muslim, control <b>{pct(wmean(ls, (l) => l.control))}</b></span>
               <span className="row">{ls.filter((l) => l.core).length} of {ls.length} {ls.filter((l) => l.core).length === 1 ? "is a core" : "are cores"}</span>
+              <span className="row">Wealth <b>{g1(sum(ls, wealthOf))}</b>, tax base <b>{g1(sum(ls, taxBaseOf))}</b> ({pct(sum(ls, taxBaseOf) / (sum(ls, wealthOf) || 1))})</span>
             </div>
           );
         })}
@@ -259,6 +296,7 @@ export default function Lands() {
               <span className="row">Ṭāʾifa since {western(s.since ?? snap.date)}{s.ruler ? <>, under <b>{personById.get(s.ruler)?.name}</b></> : null}</span>
               <span className="row"><b>{ls.length}</b> {ls.length === 1 ? "location" : "locations"}, <b>{compact(pop)}</b> people, <b>{pct(muslims(ls) / (pop || 1))}</b> Muslim</span>
               <span className="row">Control <b>{pct(wmean(ls, (l) => l.control))}</b>; a {faithName(s.religion ?? "")}, {cultureName(s.culture ?? "")} {s.rank ?? ""}</span>
+              <span className="row">Wealth <b>{g1(sum(ls, wealthOf))}</b>, taxed by the ṭāʾifa, not by Granada</span>
               {(() => {
                 const ly = snap.subjects.find((x) => x.country === c?.name)?.loyalty;
                 if (!ly) return <span className="row muted-s">Loyalty not read at this checkpoint</span>;
@@ -285,24 +323,48 @@ export default function Lands() {
       </div>
       <LandsMap rows={allRows} lens={lens} />
 
+      {untaxedTop.length > 0 && untaxedOf(untaxedTop[0]) > 0.05 && (
+        <section className="untaxed ui" aria-labelledby="untaxed-h">
+          <h3 id="untaxed-h" className="sub-title">Where a firmer grip would pay most</h3>
+          <p className="muted-s">
+            The wealth each location earns that its control leaves to the estates. Raising control on a rich location
+            gains the most, and needs no new buildings or people.
+          </p>
+          <ol>
+            {untaxedTop.map((l) => {
+              const nm = landName(l.key);
+              return (
+                <li key={l.key}>
+                  <span className="nm">{nm.id ? <Link to={`/places/${nm.id}`} data-kind="place" data-id={nm.id}>{nm.name}</Link> : nm.name}</span>
+                  <span className="num"><b>{untaxedOf(l).toFixed(1)}</b> untaxed of {wealthOf(l).toFixed(1)}</span>
+                  <span className="num muted-s">control {pct(l.control)}</span>
+                </li>
+              );
+            })}
+          </ol>
+        </section>
+      )}
+
       <StarRule />
       <h2 className="section-title">Province by province</h2>
       <p className="muted lede-s">
         Control is how firmly the crown's writ runs; a conquered location becomes a core only after it is integrated.
-        Tax is what the location yields now, of what it could yield at full control. The bars show each location's
-        peoples and faiths; hover one for the shares.
+        Wealth is what a location's goods and workshops earn at market. Its tax base is that wealth times control: the
+        part the crown can tax. The rest goes to the estates untaxed. In the tax base bar, the length is the
+        wealth (on one scale for every location) and the solid part the tax base. The other bars show each
+        location's peoples and faiths; hover one for the shares.
       </p>
       <div className="lands-table-wrap">
         <table className="lands-table ui">
           <thead>
             <tr>
               <th className="place">Place</th><th>Rank</th><th className="num">People</th><th>Peoples</th><th>Faiths</th>
-              <th className="num">Control</th><th className="num"><abbr title="Development">Dev.</abbr></th><th>Standing</th><th className="num">Tax</th><th>Goods</th>
+              <th className="num">Control</th><th className="num"><abbr title="Development">Dev.</abbr></th><th>Standing</th><th className="num">Wealth</th><th className="num">Tax base</th><th>Goods</th>
             </tr>
           </thead>
           {groups.map((g) => (
             <tbody key={g.area}>
-              <tr className="area-row"><th colSpan={10} scope="colgroup">{areaName(g.area)}</th></tr>
+              <tr className="area-row"><th colSpan={11} scope="colgroup">{areaName(g.area)}</th></tr>
               {g.provinces.map((p) => renderProvince(p, "GRA"))}
             </tbody>
           ))}
@@ -310,7 +372,7 @@ export default function Lands() {
             const c = countryByTag.get(tag);
             return (
               <tbody key={tag} className="subject-body">
-                <tr className="area-row subject"><th colSpan={10} scope="colgroup">
+                <tr className="area-row subject"><th colSpan={11} scope="colgroup">
                   {c?.nameArabic && <span className="ar">{c.nameArabic}</span>}{c?.nameChronicle ?? tag}
                   <span className="sub-note">a ṭāʾifa of Granada since {western(s.since ?? snap.date)}{s.ruler ? `, under ${personById.get(s.ruler)?.name}` : ""}</span>
                 </th></tr>

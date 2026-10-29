@@ -73,7 +73,8 @@ function Standing({ placeKey }: { placeKey: string }) {
         <div><dt>Control</dt><dd>{pct(l.control)}</dd></div>
         <div><dt>Development</dt><dd>{l.development?.toFixed(1)}</dd></div>
         <div><dt>Standing</dt><dd>{l.core ? "Core of Granada" : "Conquered, not yet a core"}</dd></div>
-        <div><dt>Tax</dt><dd>{l.tax?.toFixed(2)} of a possible {l.possibleTax?.toFixed(2)}</dd></div>
+        <div><dt>Wealth</dt><dd>{l.possibleTax?.toFixed(2)}</dd></div>
+        <div><dt>Tax base</dt><dd>{l.tax?.toFixed(2)}, the wealth under the crown's control</dd></div>
         {l.goods && <div><dt>Goods</dt><dd>{l.goods.replace(/_/g, " ")}</dd></div>}
       </dl>
       <div className="standing-shares ui">
