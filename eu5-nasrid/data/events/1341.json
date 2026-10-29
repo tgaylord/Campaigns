@@ -1,0 +1,103 @@
+[
+ {
+  "id": "1341-07-08-ibn-al-khatib-castile",
+  "date": "1341-07-08",
+  "type": "player_note",
+  "people": [
+   "ibn-al-khatib"
+  ],
+  "title": "Ibn al-Khaṭīb, the victor of Uryūla, is found in Castilian service: Catholic, Castilian, named Frederick, an admiral of Qashtāla from 8 July 1341",
+  "data": {
+   "left_granada": "between 30 October 1340 and 8 July 1341",
+   "now": {
+    "country": "CAS",
+    "religion": "catholic",
+    "culture": "castilian",
+    "first_name": "Frederick",
+    "role": "admiral",
+    "since": "1341-07-08"
+   }
+  },
+  "source": "checkpoint 1341-09-08 (character record; how and why he left is not in the save)"
+ },
+ {
+  "id": "1341-09-08-cabinet",
+  "date": "1341-09-08",
+  "type": "appointment",
+  "people": [
+   "ismail-ibn-ismail",
+   "yusuf-ibn-muhammad"
+  ],
+  "title": "By this checkpoint Ismāʿīl ibn Ismāʿīl holds the dīwān's seat for strengthening the government, in place of Yūsuf ibn Muḥammad",
+  "data": {},
+  "source": "checkpoint 1341-09-08"
+ },
+ {
+  "id": "1341-09-08-loans",
+  "date": "1341-09-08",
+  "type": "estate_change",
+  "title": "Three more estate loans repaid: the debt is down to 764 ducats, and the treasury to 10",
+  "data": {
+   "debt": {
+    "from": 843.2,
+    "to": 763.6
+   },
+   "loans": {
+    "from": 33,
+    "to": 30
+   },
+   "treasury": 10.1
+  },
+  "source": "checkpoint 1341-09-08"
+ },
+ {
+  "id": "1341-09-08-burghers",
+  "date": "1341-09-08",
+  "type": "estate_change",
+  "title": "The burghers sour: satisfaction falls from 59 to 38 since the autumn",
+  "data": {
+   "satisfaction": {
+    "from": 59,
+    "to": 38
+   }
+  },
+  "source": "checkpoint 1341-09-08 (the cause is not in the save)"
+ },
+ {
+  "id": "1341-09-08-sovereignty",
+  "date": "1341-09-08",
+  "type": "strait_change",
+  "title": "Granadan sovereignty slips to 51.6, close to the line of 50; influence drifts back toward Morocco, to −20",
+  "data": {
+   "sovereignty": {
+    "from": 54.2,
+    "to": 51.6
+   },
+   "influence": {
+    "from": -24.3,
+    "to": -20.2
+   }
+  },
+  "source": "checkpoint 1341-09-08"
+ },
+ {
+  "id": "1341-09-08-valencia-conversion",
+  "date": "1341-09-08",
+  "type": "player_note",
+  "places": [
+   "balansiyya"
+  ],
+  "title": "In the Ṭāʾifa of Balansiyya the Muslims grow from 45,000 to 52,000 and the Christians fall from 138,000 to 130,000",
+  "data": {
+   "sunni": {
+    "from": 45398,
+    "to": 52233
+   },
+   "catholic": {
+    "from": 138005,
+    "to": 129809
+   }
+  },
+  "source": "checkpoints 1340-08-28 and 1341-09-08"
+ }
+]

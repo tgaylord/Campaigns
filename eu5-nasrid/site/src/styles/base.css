@@ -182,3 +182,6 @@ details.numbers summary { cursor: pointer; color: var(--gilt); }
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
+.cp-select .ticks button.dot { padding-top: 0.35rem; }
+.cp-select .ticks .pip { display: block; width: 5px; height: 5px; border-radius: 50%; background: var(--dusk); }
+.cp-select .ticks button.dot:hover .pip, .cp-select .ticks button.dot:focus-visible .pip { background: var(--gilt-hi); }

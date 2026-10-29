@@ -513,7 +513,7 @@
   "wars": [
    "moroccan-castilian-war"
   ],
-  "title": "Morocco loses its war on Castile and gives up all its land on the Iberian side of the Strait",
+  "title": "Morocco loses its war on Castile and gives up all its land on the Iberian side of the Strait: Runda, Marballa, al-Jazīra al-Khaḍrāʾ and Jabal Ṭāriq pass to Castile",
   "places": [
    "runda",
    "marballa",
@@ -521,13 +521,27 @@
    "jabal-tariq"
   ],
   "data": {
-   "held_by_morocco_at_last_checkpoint": [
+   "to": "Castile",
+   "locations": [
     "ronda",
     "marbella",
     "algeciras",
     "gibraltar"
    ]
   },
-  "source": "Trent's account (the towns are those Morocco held at the 28 August 1340 checkpoint)"
+  "source": "Trent's account; checkpoint 1340-10-30 (all four Castilian)"
+ },
+ {
+  "id": "1340-11-22-royal-marriage-valencia",
+  "date": "1340-11-22",
+  "type": "marriage",
+  "places": [
+   "balansiyya"
+  ],
+  "title": "A royal marriage binds Granada to the house of the Ṭāʾifa of Balansiyya",
+  "data": {
+   "with": "VAL"
+  },
+  "source": "checkpoint 1341-09-08 (treaty record of 22 November 1340)"
  }
 ]

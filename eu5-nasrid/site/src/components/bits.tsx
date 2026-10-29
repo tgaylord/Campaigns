@@ -40,6 +40,24 @@ export function CheckpointSelect({ value, onChange, label = "Checkpoint" }: { va
   if (n < 2) return null;
   const y0 = year(snapshots[0].date), y1 = year(snapshots[n - 1].date);
   const pos = (i: number) => (n === 1 ? 50 : (i / (n - 1)) * 100);
+  // A tick is labelled when its year differs from the last labelled one (the selected and last are always
+  // labelled), and, on a narrow screen, only when it isn't crowded against the previous label.
+  const narrow = typeof window !== "undefined" && window.matchMedia("(max-width: 40rem)").matches;
+  const minGap = narrow ? 18 : 6;
+  const labelled: boolean[] = [];
+  let lastPos = -100, lastYear = -1;
+  snapshots.forEach((s, i) => {
+    const must = i === value || i === n - 1 || i === 0;
+    const ok = year(s.date) !== lastYear && pos(i) - lastPos >= minGap;
+    labelled[i] = must || ok;
+    if (labelled[i]) { lastPos = pos(i); lastYear = year(s.date); }
+  });
+  // the selected or last label may crowd the one before it: drop the earlier unless it is required
+  for (let i = n - 1; i > 0; i--) {
+    if (!labelled[i]) continue;
+    let j = i - 1; while (j >= 0 && !labelled[j]) j--;
+    if (j >= 0 && pos(i) - pos(j) < minGap && j !== value && j !== 0) labelled[j] = false;
+  }
   return (
     <div className="cp-select">
       <label className="visually-hidden" htmlFor="cp-range">{label}</label>
@@ -48,10 +66,9 @@ export function CheckpointSelect({ value, onChange, label = "Checkpoint" }: { va
         aria-valuetext={`${western(snapshots[value].date)}`} />
       <div className="ticks">
         {snapshots.map((s, i) => (
-          <button key={s.id} type="button" className={i === value ? "on" : ""} style={{ left: `${pos(i)}%` }}
-            onClick={() => onChange(i)} aria-label={western(s.date)}>
-            <span className="ah">{arabicDigits(hijri(s.date).y)}</span>
-            {year(s.date)}
+          <button key={s.id} type="button" className={`${i === value ? "on" : ""} ${labelled[i] ? "" : "dot"}`} style={{ left: `${pos(i)}%` }}
+            onClick={() => onChange(i)} aria-label={western(s.date)} title={western(s.date)}>
+            {labelled[i] ? <><span className="ah">{arabicDigits(hijri(s.date).y)}</span>{year(s.date)}</> : <span className="pip" aria-hidden="true" />}
           </button>
         ))}
       </div>
