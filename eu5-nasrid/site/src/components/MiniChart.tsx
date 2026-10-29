@@ -1,45 +1,54 @@
-import { useMemo } from "react";
 import { Link } from "react-router-dom";
-import { geoMercator, geoPath } from "d3-geo";
-import land from "../generated/land.json";
 import type { Place } from "../lib/data";
+import { countryByTag, latest } from "../lib/data";
+import { gameMap } from "../lib/map";
 import "./minichart.css";
 
+/** `named` forces a label even when crowded (the capital, say). */
+export type Mark = { place: Place; tone?: "ours" | "theirs" | "battle" | "focus"; label?: string; named?: boolean };
+
 /**
- * A small portolan chart: the coast, a few wind lines, and a set of marks.
- * Frames itself around the marks it is given (with a minimum span).
+ * A small chart cut from the game map: the coast, the realms of a checkpoint
+ * (the latest by default) as faint washes, and a set of marks. Frames itself
+ * around the marks, at least `minSpan` map pixels wide.
  */
-export default function MiniChart({ marks, height = 360, minSpan = 4.5 }: {
-  marks: Mark[];
-  height?: number; minSpan?: number;
+export default function MiniChart({ marks, height = 360, minSpan = 160, checkpoint }: {
+  marks: Mark[]; height?: number; minSpan?: number; checkpoint?: string;
 }) {
   const W = 900, H = height;
-  const pts = marks.filter((m) => m.place.lat != null && m.place.lon != null);
-  const { path, proj } = useMemo(() => {
-    const lons = pts.map((m) => m.place.lon!), lats = pts.map((m) => m.place.lat!);
-    const cx = lons.length ? (Math.min(...lons) + Math.max(...lons)) / 2 : -4;
-    const cy = lats.length ? (Math.min(...lats) + Math.max(...lats)) / 2 : 36.5;
-    const span = Math.max(minSpan, ...(lons.length ? [Math.max(...lons) - Math.min(...lons) + 1, (Math.max(...lats) - Math.min(...lats) + 1) * 1.6] : []));
-    const frame = { type: "Feature", geometry: { type: "MultiPoint", coordinates: [[cx - span / 2, cy + span / 3.2], [cx + span / 2, cy - span / 3.2]] } } as any;
-    const proj = geoMercator().fitExtent([[20, 20], [W - 20, H - 20]], frame);
-    return { proj, path: geoPath(proj) };
-  }, [pts.map((m) => m.place.id).join(","), H, minSpan]);
-  const landPath = useMemo(() => path(land as any) ?? "", [path]);
-  const labels = layout(pts.map((m) => ({ m, xy: proj([m.place.lon!, m.place.lat!])! })));
+  const pts = marks.filter((m) => Number.isFinite(m.place.x));
+  const xs = pts.map((m) => m.place.x), ys = pts.map((m) => m.place.y);
+  const cx = xs.length ? (Math.min(...xs) + Math.max(...xs)) / 2 : 400;
+  const cy = ys.length ? (Math.min(...ys) + Math.max(...ys)) / 2 : 450;
+  const span = Math.max(minSpan, xs.length ? Math.max(...xs) - Math.min(...xs) + 60 : 0, ys.length ? (Math.max(...ys) - Math.min(...ys) + 60) * (W / H) : 0);
+  const vw = span, vh = span * (H / W);
+  const k = vw / W; // one screen pixel, in map units
+  const realms = gameMap.realms[checkpoint ?? latest?.id ?? ""] ?? {};
+  const labels = layout(pts, k);
 
   return (
-    <svg className="minichart" viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="xMidYMid slice" role="img" aria-label="Chart of the places named here">
-      <rect width={W} height={H} className="sea" />
-      {Array.from({ length: 16 }, (_, k) => {
-        const a = (k / 16) * Math.PI * 2;
-        return <line key={k} x1={W / 2} y1={H / 2} x2={W / 2 + 1200 * Math.cos(a)} y2={H / 2 + 1200 * Math.sin(a)} className={`wind w${k % 2}`} />;
+    <svg className="minichart" viewBox={`${cx - vw / 2} ${cy - vh / 2} ${vw} ${vh}`} preserveAspectRatio="xMidYMid slice" role="img" aria-label="Chart of the places named here">
+      <defs><clipPath id="mc-land"><path d={gameMap.coast} /></clipPath></defs>
+      <rect x={cx - vw} y={cy - vh} width={vw * 2} height={vh * 2} className="sea" />
+      {Array.from({ length: 16 }, (_, n) => {
+        const a = (n / 16) * Math.PI * 2;
+        return <line key={n} x1={cx} y1={cy} x2={cx + vw * 1.5 * Math.cos(a)} y2={cy + vw * 1.5 * Math.sin(a)} className={`wind w${n % 2}`} strokeWidth={0.7 * k} />;
       })}
-      <path d={landPath} className="land" />
-      {labels.map(({ m, xy: [x, y], pos }) => {
+      <path d={gameMap.coast} className="land" />
+      <g clipPath="url(#mc-land)">
+        {Object.entries(realms).map(([tag, r]) => (
+          <path key={tag} d={r.d} className={`realm ${tag === "GRA" ? "ours" : ""}`} style={{ fill: countryByTag.get(tag)?.color ?? "#cbb894" }} />
+        ))}
+      </g>
+      {Object.entries(realms).map(([tag, r]) => countryByTag.has(tag) && (
+        <path key={tag} d={r.d} className="realm-edge" style={{ stroke: tag === "GRA" ? "#8e6b26" : countryByTag.get(tag)!.color }} strokeWidth={1.1 * k} />
+      ))}
+      <path d={gameMap.coast} className="coast" strokeWidth={1.2 * k} />
+      {labels.map(({ m, pos }) => {
         const tone = m.tone ?? "theirs";
         return (
           <Link key={m.place.id} to={`/places/${m.place.id}`} data-kind="place" data-id={m.place.id} className={`mk ${tone}`}>
-            <g transform={`translate(${x},${y})`}>
+            <g transform={`translate(${m.place.x},${m.place.y}) scale(${k})`}>
               {tone === "battle" ? <path d="M-7,-7 L7,7 M7,-7 L-7,7" className="swords" /> : <circle r={tone === "focus" ? 9 : 6} />}
               {pos ? (
                 <>
@@ -55,29 +64,26 @@ export default function MiniChart({ marks, height = 360, minSpan = 4.5 }: {
   );
 }
 
-/** `named` forces a label even when crowded (the capital, say). */
-export type Mark = { place: Place; tone?: "ours" | "theirs" | "battle" | "focus"; label?: string; named?: boolean };
 type Pos = { dx: number; dy: number; anchor: "start" | "end" | "middle" };
 const RANK = { focus: 0, battle: 1, ours: 2, theirs: 3 } as const;
 
-/** Greedy label placement: the most important marks choose first; a mark with no room keeps only its marker (and a hover title). */
-function layout(items: { m: Mark; xy: [number, number] }[]) {
-  const boxes = items.map(({ xy: [x, y] }) => ({ x0: x - 9, y0: y - 9, x1: x + 9, y1: y + 9 }));
+/** Greedy label placement in screen pixels; a mark with no room keeps only its marker (and a hover title). */
+function layout(items: Mark[], k: number) {
+  const P = items.map((m) => ({ m, x: m.place.x / k, y: m.place.y / k, pos: null as Pos | null }));
+  const boxes = P.map(({ x, y }) => ({ x0: x - 9, y0: y - 9, x1: x + 9, y1: y + 9 }));
   const hit = (b: (typeof boxes)[number]) => boxes.some((o) => b.x0 < o.x1 && b.x1 > o.x0 && b.y0 < o.y1 && b.y1 > o.y0);
-  const out = items.map((it) => ({ ...it, pos: null as Pos | null }));
-  const order = [...out].sort((a, b) => Number(!!b.m.named) - Number(!!a.m.named) || RANK[a.m.tone ?? "theirs"] - RANK[b.m.tone ?? "theirs"]);
+  const order = [...P].sort((a, b) => Number(!!b.m.named) - Number(!!a.m.named) || RANK[a.m.tone ?? "theirs"] - RANK[b.m.tone ?? "theirs"]);
   for (const it of order) {
-    const [x, y] = it.xy;
     const w = Math.max((it.m.place.nameArabic ?? "").length * 11, (it.m.label ?? it.m.place.name).length * 7.4);
     const tries: Pos[] = [
       { dx: 13, dy: -2, anchor: "start" }, { dx: -13, dy: -2, anchor: "end" },
       { dx: 0, dy: -28, anchor: "middle" }, { dx: 0, dy: 30, anchor: "middle" },
     ];
     for (const t of tries) {
-      const left = t.anchor === "start" ? x + t.dx : t.anchor === "end" ? x + t.dx - w : x - w / 2;
-      const box = { x0: left - 3, y0: y + t.dy - 20, x1: left + w + 3, y1: y + t.dy + 20 };
+      const left = t.anchor === "start" ? it.x + t.dx : t.anchor === "end" ? it.x + t.dx - w : it.x - w / 2;
+      const box = { x0: left - 3, y0: it.y + t.dy - 20, x1: left + w + 3, y1: it.y + t.dy + 20 };
       if (!hit(box) || it.m.tone === "focus" || it.m.named) { it.pos = t; boxes.push(box); break; }
     }
   }
-  return out;
+  return P;
 }

@@ -1,0 +1,79 @@
+[
+ {
+  "tag": "GRA",
+  "name": "Granada",
+  "nameChronicle": "Naṣrid Granada",
+  "nameArabic": "غرناطة",
+  "color": "#d4ab55"
+ },
+ {
+  "tag": "CAS",
+  "name": "Castile",
+  "nameChronicle": "Qashtāla",
+  "nameArabic": "قشتالة",
+  "color": "#c0442e"
+ },
+ {
+  "tag": "ARA",
+  "name": "Aragon",
+  "nameChronicle": "Arghūn",
+  "nameArabic": "أرغون",
+  "color": "#c8823c"
+ },
+ {
+  "tag": "POR",
+  "name": "Portugal",
+  "nameChronicle": "al-Burtughāl",
+  "nameArabic": "البرتغال",
+  "color": "#3c6ebe"
+ },
+ {
+  "tag": "MOR",
+  "name": "Morocco",
+  "nameChronicle": "Banū Marīn",
+  "nameArabic": "بنو مرين",
+  "color": "#2f8a6a"
+ },
+ {
+  "tag": "TLE",
+  "name": "Tlemcen",
+  "nameChronicle": "Banū ʿAbd al-Wād",
+  "nameArabic": "بنو عبد الواد",
+  "color": "#79b39a"
+ },
+ {
+  "tag": "TUN",
+  "name": "Tunis",
+  "nameChronicle": "Banū Ḥafṣ",
+  "nameArabic": "بنو حفص",
+  "color": "#8d7bb8"
+ },
+ {
+  "tag": "NAV",
+  "name": "Navarre",
+  "nameChronicle": "Nabarra",
+  "nameArabic": "نبرة",
+  "color": "#a8566e"
+ },
+ {
+  "tag": "FRA",
+  "name": "France",
+  "nameChronicle": "Ifranja",
+  "nameArabic": "إفرنجة",
+  "color": "#5d76a8"
+ },
+ {
+  "tag": "MLL",
+  "name": "Mallorca",
+  "nameChronicle": "Mayūrqa",
+  "nameArabic": "ميورقة",
+  "color": "#d38a6a"
+ },
+ {
+  "tag": "GEN",
+  "name": "Genoa",
+  "nameChronicle": "Janawa",
+  "nameArabic": "جنوة",
+  "color": "#b3a06b"
+ }
+]

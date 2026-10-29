@@ -1,9 +1,13 @@
 .minichart { display: block; width: 100%; height: auto; border: 1px solid rgba(212, 171, 85, 0.35); border-radius: 3px; }
 .minichart .sea { fill: #15204a; }
-.minichart .wind { stroke-width: 0.7; }
+.minichart .wind {}
 .minichart .wind.w0 { stroke: #d4ab55; stroke-opacity: 0.25; }
 .minichart .wind.w1 { stroke: #e0654c; stroke-opacity: 0.15; }
-.minichart .land { fill: #e3d2ad; stroke: #3a2814; stroke-width: 1.2; }
+.minichart .land { fill: #e3d2ad; }
+.minichart .coast { fill: none; stroke: #3a2814; stroke-linejoin: round; }
+.minichart .realm { fill-opacity: 0.18; }
+.minichart .realm.ours { fill-opacity: 0.5; }
+.minichart .realm-edge { fill: none; stroke-opacity: 0.7; stroke-linejoin: round; }
 .minichart .mk circle { fill: #e3d2ad; stroke: #3a2814; stroke-width: 1.8; }
 .minichart .mk.ours circle { fill: #d4ab55; stroke: #5c3b0c; }
 .minichart .mk.focus circle { fill: #c0442e; stroke: #fff3cf; stroke-width: 2.5; }

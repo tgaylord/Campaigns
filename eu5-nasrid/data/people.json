@@ -1,150 +1,521 @@
 [
-  {
-    "id": "ismail-i",
-    "name": "Abū al-Walīd Ismāʿīl I",
-    "nameArabic": "إسماعيل الأول",
-    "nameGame": "Ismail I",
-    "dynasty": "Naṣrid",
-    "born": "1279-03-03",
-    "died": "1325-07-08",
-    "roles": [
-      "sultan"
-    ],
-    "reigns": [
-      {
-        "from": "1314-02-16",
-        "to": "1325-07-08"
-      }
-    ],
-    "note": "Sample record.",
-    "sample": true
-  },
-  {
-    "id": "yusuf-i",
-    "name": "Abū al-Ḥajjāj Yūsuf I",
-    "nameArabic": "يوسف الأول",
-    "nameGame": "Yusuf I",
-    "dynasty": "Naṣrid",
-    "born": "1318-06-29",
-    "died": "1354-10-19",
-    "father": "ismail-i",
-    "roles": [
-      "sultan"
-    ],
-    "reigns": [
-      {
-        "from": "1333-08-25",
-        "to": "1354-10-19"
-      }
-    ],
-    "note": "Sample record.",
-    "sample": true
-  },
-  {
-    "id": "muhammad-v",
-    "name": "Abū ʿAbd Allāh Muḥammad V",
-    "nameArabic": "محمد الخامس",
-    "nameGame": "Muhammad V",
-    "dynasty": "Naṣrid",
-    "born": "1338-01-04",
-    "father": "yusuf-i",
-    "roles": [
-      "sultan"
-    ],
-    "reigns": [
-      {
-        "from": "1354-10-19",
-        "to": null
-      }
-    ],
-    "note": "Sample record.",
-    "sample": true
-  },
-  {
-    "id": "ismail-ii",
-    "name": "Ismāʿīl b. Yūsuf",
-    "nameArabic": "إسماعيل بن يوسف",
-    "dynasty": "Naṣrid",
-    "born": "1339-10-04",
-    "father": "yusuf-i",
-    "roles": [
-      "prince"
-    ],
-    "note": "Sample record.",
-    "sample": true
-  },
-  {
-    "id": "qays",
-    "name": "Qays b. Yūsuf",
-    "nameArabic": "قيس بن يوسف",
-    "dynasty": "Naṣrid",
-    "born": "1343-02-11",
-    "father": "yusuf-i",
-    "roles": [
-      "prince"
-    ],
-    "note": "Sample record.",
-    "sample": true
-  },
-  {
-    "id": "yusuf-b-muhammad",
-    "name": "Yūsuf b. Muḥammad",
-    "nameArabic": "يوسف بن محمد",
-    "dynasty": "Naṣrid",
-    "born": "1356-06-17",
-    "father": "muhammad-v",
-    "roles": [
-      "heir"
-    ],
-    "note": "Sample record.",
-    "sample": true
-  },
-  {
-    "id": "ridwan",
-    "name": "Riḍwān",
-    "nameArabic": "رضوان",
-    "roles": [
-      "ḥājib"
-    ],
-    "born": "1300-01-01",
-    "died": "1359-08-24",
-    "note": "Sample record.",
-    "sample": true
-  },
-  {
-    "id": "ibn-al-khatib",
-    "name": "Lisān al-Dīn ibn al-Khaṭīb",
-    "nameArabic": "لسان الدين ابن الخطيب",
-    "born": "1313-11-16",
-    "roles": [
-      "kātib",
-      "vizier",
-      "chronicler"
-    ],
-    "note": "Sample record.",
-    "sample": true
-  },
-  {
-    "id": "ibn-al-jayyab",
-    "name": "ʿAlī ibn al-Jayyāb",
-    "nameArabic": "ابن الجياب",
-    "born": "1274-01-01",
-    "died": "1349-01-20",
-    "roles": [
-      "kātib",
-      "poet"
-    ],
-    "note": "Sample record.",
-    "sample": true
-  },
-  {
-    "id": "uthman-b-yahya",
-    "name": "ʿUthmān b. Yaḥyā",
-    "nameArabic": "عثمان بن يحيى",
-    "roles": [
-      "shaykh al-ghuzāt"
-    ],
-    "note": "Sample record.",
-    "sample": true
+ {
+  "id": "yusuf-ibn-nasr",
+  "name": "Yūsuf ibn Naṣr",
+  "nameArabic": "يوسف بن نصر",
+  "nameGame": "Yusuf",
+  "gameId": 3523,
+  "dynasty": "Naṣrid",
+  "born": "1175-01-01",
+  "died": "1232-01-01",
+  "roles": [],
+  "stats": {
+   "adm": 68.0,
+   "dip": 48.0,
+   "mil": 42.0
   }
+ },
+ {
+  "id": "muhammad-i",
+  "name": "Muḥammad I al-Aḥmar",
+  "nameArabic": "محمد الأول الأحمر",
+  "nameGame": "Muhammad",
+  "gameId": 3524,
+  "dynasty": "Naṣrid",
+  "born": "1195-12-01",
+  "died": "1273-01-20",
+  "father": "yusuf-ibn-nasr",
+  "reigns": [
+   {
+    "from": "1238-05-01",
+    "to": "1273-01-20"
+   }
+  ],
+  "roles": [
+   "sultan"
+  ],
+  "stats": {
+   "adm": 66.0,
+   "dip": 66.0,
+   "mil": 66.0
+  },
+  "traits": [
+   "architectural_visionary",
+   "expansionist",
+   "intricate_web_weaver"
+  ]
+ },
+ {
+  "id": "ismail-ibn-nasr",
+  "name": "Ismāʿīl ibn Naṣr",
+  "nameArabic": "إسماعيل بن نصر",
+  "nameGame": "Ismail",
+  "gameId": 3529,
+  "dynasty": "Naṣrid",
+  "born": "1200-01-01",
+  "died": "1250-01-01",
+  "father": "yusuf-ibn-nasr",
+  "roles": [],
+  "stats": {
+   "adm": 43.0,
+   "dip": 62.0,
+   "mil": 70.0
+  }
+ },
+ {
+  "id": "muhammad-ii",
+  "name": "Muḥammad II al-Faqīh",
+  "nameArabic": "محمد الثاني الفقيه",
+  "nameGame": "Muhammad",
+  "gameId": 3525,
+  "dynasty": "Naṣrid",
+  "born": "1236-10-08",
+  "died": "1302-04-07",
+  "father": "muhammad-i",
+  "reigns": [
+   {
+    "from": "1273-01-20",
+    "to": "1302-01-20"
+   }
+  ],
+  "roles": [
+   "sultan"
+  ],
+  "stats": {
+   "adm": 50.0,
+   "dip": 50.0,
+   "mil": 55.0
+  },
+  "traits": [
+   "lawgiver",
+   "intricate_web_weaver"
+  ]
+ },
+ {
+  "id": "abu-said-faraj",
+  "name": "Abū Saʿīd Faraj",
+  "nameArabic": "أبو سعيد فرج",
+  "nameGame": "Faraj",
+  "gameId": 3530,
+  "dynasty": "Naṣrid",
+  "born": "1248-01-01",
+  "died": "1320-04-24",
+  "father": "ismail-ibn-nasr",
+  "roles": [],
+  "stats": {
+   "adm": 75.0,
+   "dip": 39.0,
+   "mil": 66.0
+  },
+  "traits": [
+   "intricate_web_weaver"
+  ]
+ },
+ {
+  "id": "muhammad-iii",
+  "name": "Muḥammad III al-Makhlūʿ",
+  "nameArabic": "محمد الثالث المخلوع",
+  "nameGame": "Muhammad",
+  "gameId": 3526,
+  "dynasty": "Naṣrid",
+  "born": "1257-08-15",
+  "died": "1314-01-24",
+  "father": "muhammad-ii",
+  "reigns": [
+   {
+    "from": "1302-01-20",
+    "to": "1309-03-14"
+   }
+  ],
+  "roles": [
+   "sultan"
+  ],
+  "stats": {
+   "adm": 43.0,
+   "dip": 37.0,
+   "mil": 58.0
+  }
+ },
+ {
+  "id": "fatima-bint-al-ahmar",
+  "name": "Fāṭima bint al-Aḥmar",
+  "nameArabic": "فاطمة بنت الأحمر",
+  "nameGame": "Fatima",
+  "gameId": 3527,
+  "dynasty": "Naṣrid",
+  "born": "1261-01-01",
+  "father": "muhammad-ii",
+  "female": true,
+  "roles": [],
+  "stats": {
+   "adm": 50.0,
+   "dip": 26.0,
+   "mil": 13.0
+  },
+  "traits": [
+   "architectural_visionary"
+  ]
+ },
+ {
+  "id": "ibn-al-hakim",
+  "name": "Ibn al-Ḥakīm al-Rundī",
+  "nameArabic": "ابن الحكيم الرندي",
+  "nameGame": "Muhammad",
+  "gameId": 3548,
+  "born": "1261-01-01",
+  "died": "1309-03-14",
+  "roles": [],
+  "stats": {
+   "adm": 85.0,
+   "dip": 70.0,
+   "mil": 79.0
+  }
+ },
+ {
+  "id": "ismail-i",
+  "name": "Ismāʿīl I",
+  "nameArabic": "إسماعيل الأول",
+  "nameGame": "Ismail",
+  "gameId": 3531,
+  "dynasty": "Naṣrid",
+  "born": "1279-03-03",
+  "died": "1325-07-08",
+  "father": "abu-said-faraj",
+  "mother": "fatima-bint-al-ahmar",
+  "reigns": [
+   {
+    "from": "1314-02-08",
+    "to": "1325-07-08"
+   }
+  ],
+  "roles": [
+   "sultan"
+  ],
+  "stats": {
+   "adm": 50.0,
+   "dip": 39.0,
+   "mil": 66.0
+  },
+  "traits": [
+   "architectural_visionary"
+  ]
+ },
+ {
+  "id": "muhammad-ibn-faraj",
+  "name": "Muḥammad ibn Faraj",
+  "nameArabic": "محمد بن فرج",
+  "nameGame": "Muhammad",
+  "gameId": 3541,
+  "dynasty": "Naṣrid",
+  "born": "1281-01-01",
+  "died": "1328-01-01",
+  "father": "abu-said-faraj",
+  "mother": "fatima-bint-al-ahmar",
+  "roles": [],
+  "stats": {
+   "adm": 50.0,
+   "dip": 39.0,
+   "mil": 45.0
+  }
+ },
+ {
+  "id": "nasr",
+  "name": "Naṣr",
+  "nameArabic": "نصر",
+  "nameGame": "Nasr",
+  "gameId": 3528,
+  "dynasty": "Naṣrid",
+  "born": "1287-01-01",
+  "died": "1322-11-16",
+  "father": "muhammad-ii",
+  "reigns": [
+   {
+    "from": "1309-03-14",
+    "to": "1314-02-08"
+   }
+  ],
+  "roles": [
+   "sultan"
+  ],
+  "stats": {
+   "adm": 39.0,
+   "dip": 39.0,
+   "mil": 55.0
+  }
+ },
+ {
+  "id": "alwa",
+  "name": "ʿAlwa",
+  "nameArabic": "علوة",
+  "nameGame": "Alodia",
+  "gameId": 3532,
+  "born": "1298-01-01",
+  "female": true,
+  "roles": [
+   "mother of Muḥammad IV, Faraj ibn Ismāʿīl, Fāṭima bint Ismāʿīl, Maryam bint Ismāʿīl"
+  ],
+  "stats": {
+   "adm": 62.0,
+   "dip": 73.0,
+   "mil": 48.0
+  }
+ },
+ {
+  "id": "bahar",
+  "name": "Bahār",
+  "nameArabic": "بهار",
+  "nameGame": "Spring",
+  "gameId": 3533,
+  "born": "1301-01-01",
+  "female": true,
+  "roles": [
+   "mother of Yūsuf I"
+  ],
+  "stats": {
+   "adm": 39.0,
+   "dip": 45.0,
+   "mil": 13.0
+  }
+ },
+ {
+  "id": "yusuf-ibn-muhammad",
+  "name": "Yūsuf ibn Muḥammad",
+  "nameArabic": "يوسف بن محمد",
+  "nameGame": "Yusuf",
+  "gameId": 3542,
+  "dynasty": "Naṣrid",
+  "born": "1301-01-01",
+  "father": "muhammad-ibn-faraj",
+  "roles": [],
+  "stats": {
+   "adm": 33.0,
+   "dip": 70.0,
+   "mil": 49.0
+  }
+ },
+ {
+  "id": "faraj-ibn-muhammad",
+  "name": "Faraj ibn Muḥammad",
+  "nameArabic": "فرج بن محمد",
+  "nameGame": "Faraj",
+  "gameId": 3543,
+  "dynasty": "Naṣrid",
+  "born": "1303-01-01",
+  "father": "muhammad-ibn-faraj",
+  "roles": [],
+  "stats": {
+   "adm": 49.0,
+   "dip": 63.0,
+   "mil": 69.0
+  }
+ },
+ {
+  "id": "muhammad-ibn-muhammad",
+  "name": "Muḥammad ibn Muḥammad",
+  "nameArabic": "محمد بن محمد",
+  "nameGame": "Muhammad",
+  "gameId": 3544,
+  "dynasty": "Naṣrid",
+  "born": "1305-01-01",
+  "father": "muhammad-ibn-faraj",
+  "roles": [],
+  "stats": {
+   "adm": 35.0,
+   "dip": 29.0,
+   "mil": 50.0
+  }
+ },
+ {
+  "id": "ismail-ibn-muhammad",
+  "name": "Ismāʿīl ibn Muḥammad",
+  "nameArabic": "إسماعيل بن محمد",
+  "nameGame": "Ismail",
+  "gameId": 3545,
+  "dynasty": "Naṣrid",
+  "born": "1307-01-01",
+  "father": "muhammad-ibn-faraj",
+  "roles": [],
+  "stats": {
+   "adm": 68.0,
+   "dip": 50.0,
+   "mil": 48.0
+  }
+ },
+ {
+  "id": "qamar",
+  "name": "Qamar",
+  "nameArabic": "قمر",
+  "nameGame": "Moon",
+  "gameId": 3534,
+  "born": "1308-01-01",
+  "female": true,
+  "roles": [
+   "mother of Ismāʿīl ibn Ismāʿīl"
+  ],
+  "stats": {
+   "adm": 58.0,
+   "dip": 55.0,
+   "mil": 35.0
+  }
+ },
+ {
+  "id": "ibn-al-khatib",
+  "name": "Ibn al-Khaṭīb",
+  "nameArabic": "ابن الخطيب",
+  "nameGame": "Muhammad",
+  "gameId": 3547,
+  "born": "1313-11-16",
+  "roles": [],
+  "stats": {
+   "adm": 88.0,
+   "dip": 79.0,
+   "mil": 84.0
+  }
+ },
+ {
+  "id": "muhammad-iv",
+  "name": "Muḥammad IV",
+  "nameArabic": "محمد الرابع",
+  "nameGame": "Muhammad",
+  "gameId": 3535,
+  "dynasty": "Naṣrid",
+  "born": "1315-04-14",
+  "died": "1333-08-25",
+  "father": "ismail-i",
+  "mother": "alwa",
+  "reigns": [
+   {
+    "from": "1325-07-08",
+    "to": "1333-08-25"
+   }
+  ],
+  "roles": [
+   "sultan"
+  ],
+  "stats": {
+   "adm": 41.0,
+   "dip": 50.0,
+   "mil": 25.0
+  }
+ },
+ {
+  "id": "faraj-ibn-ismail",
+  "name": "Faraj ibn Ismāʿīl",
+  "nameArabic": "فرج بن إسماعيل",
+  "nameGame": "Faraj",
+  "gameId": 3536,
+  "dynasty": "Naṣrid",
+  "born": "1317-01-01",
+  "father": "ismail-i",
+  "mother": "alwa",
+  "roles": [],
+  "stats": {
+   "adm": 51.0,
+   "dip": 32.0,
+   "mil": 46.0
+  }
+ },
+ {
+  "id": "yusuf-i",
+  "name": "Yūsuf I",
+  "nameArabic": "يوسف الأول",
+  "nameGame": "Yusuf",
+  "gameId": 3537,
+  "dynasty": "Naṣrid",
+  "born": "1318-06-29",
+  "father": "ismail-i",
+  "mother": "bahar",
+  "reigns": [
+   {
+    "from": "1333-08-25",
+    "to": null
+   }
+  ],
+  "roles": [
+   "sultan"
+  ],
+  "stats": {
+   "adm": 78.0,
+   "dip": 71.0,
+   "mil": 63.0
+  },
+  "traits": [
+   "architectural_visionary"
+  ]
+ },
+ {
+  "id": "fatima-bint-ismail",
+  "name": "Fāṭima bint Ismāʿīl",
+  "nameArabic": "فاطمة بنت إسماعيل",
+  "nameGame": "Fatima",
+  "gameId": 3538,
+  "dynasty": "Naṣrid",
+  "born": "1319-01-01",
+  "father": "ismail-i",
+  "mother": "alwa",
+  "female": true,
+  "roles": [],
+  "stats": {
+   "adm": 64.0,
+   "dip": 74.0,
+   "mil": 55.0
+  }
+ },
+ {
+  "id": "maryam-bint-ismail",
+  "name": "Maryam bint Ismāʿīl",
+  "nameArabic": "مريم بنت إسماعيل",
+  "nameGame": "Mary",
+  "gameId": 3539,
+  "dynasty": "Naṣrid",
+  "born": "1320-01-01",
+  "father": "ismail-i",
+  "mother": "alwa",
+  "female": true,
+  "roles": [],
+  "stats": {
+   "adm": 48.0,
+   "dip": 54.0,
+   "mil": 61.0
+  }
+ },
+ {
+  "id": "ismail-ibn-ismail",
+  "name": "Ismāʿīl ibn Ismāʿīl",
+  "nameArabic": "إسماعيل بن إسماعيل",
+  "nameGame": "Ismail",
+  "gameId": 3540,
+  "dynasty": "Naṣrid",
+  "born": "1325-01-01",
+  "father": "ismail-i",
+  "mother": "qamar",
+  "roles": [],
+  "stats": {
+   "adm": 37.5,
+   "dip": 30.75,
+   "mil": 50.25
+  },
+  "traits": [
+   "child_gregarious"
+  ]
+ },
+ {
+  "id": "muhammad-ibn-ismail",
+  "name": "Muḥammad ibn Ismāʿīl al-Aḥmar",
+  "nameArabic": "محمد بن إسماعيل الأحمر",
+  "nameGame": "Muhammad",
+  "gameId": 3546,
+  "dynasty": "Naṣrid",
+  "born": "1333-03-18",
+  "father": "ismail-ibn-muhammad",
+  "roles": [],
+  "stats": {
+   "adm": 10.0,
+   "dip": 11.75,
+   "mil": 10.25
+  },
+  "traits": [
+   "child_gifted"
+  ]
+ }
 ]

@@ -1,213 +1,403 @@
 [
-  {
-    "id": "gharnata",
-    "name": "Gharnāṭa",
-    "nameArabic": "غرناطة",
-    "nameGame": "Granada",
-    "kind": "location",
-    "lat": 37.177,
-    "lon": -3.599,
-    "held": [
-      {
-        "from": "1337-04-01",
-        "to": null
-      }
-    ],
-    "sample": true
-  },
-  {
-    "id": "malaqa",
-    "name": "Mālaqa",
-    "nameArabic": "مالقة",
-    "nameGame": "Málaga",
-    "kind": "location",
-    "lat": 36.721,
-    "lon": -4.421,
-    "held": [
-      {
-        "from": "1337-04-01",
-        "to": null
-      }
-    ],
-    "sample": true
-  },
-  {
-    "id": "al-mariyya",
-    "name": "al-Mariyya",
-    "nameArabic": "المرية",
-    "nameGame": "Almería",
-    "kind": "location",
-    "lat": 36.834,
-    "lon": -2.464,
-    "held": [
-      {
-        "from": "1337-04-01",
-        "to": null
-      }
-    ],
-    "sample": true
-  },
-  {
-    "id": "wadi-ash",
-    "name": "Wādī Āsh",
-    "nameArabic": "وادي آش",
-    "nameGame": "Guadix",
-    "kind": "location",
-    "lat": 37.3,
-    "lon": -3.135,
-    "held": [
-      {
-        "from": "1337-04-01",
-        "to": null
-      }
-    ],
-    "sample": true
-  },
-  {
-    "id": "lawsha",
-    "name": "Lawsha",
-    "nameArabic": "لوشة",
-    "nameGame": "Loja",
-    "kind": "location",
-    "lat": 37.168,
-    "lon": -4.15,
-    "held": [
-      {
-        "from": "1337-04-01",
-        "to": null
-      }
-    ],
-    "sample": true
-  },
-  {
-    "id": "al-hamma",
-    "name": "al-Ḥāmma",
-    "nameArabic": "الحامة",
-    "nameGame": "Alhama de Granada",
-    "kind": "location",
-    "lat": 37.006,
-    "lon": -3.989,
-    "held": [
-      {
-        "from": "1337-04-01",
-        "to": null
-      }
-    ],
-    "sample": true
-  },
-  {
-    "id": "rundah",
-    "name": "Runda",
-    "nameArabic": "رندة",
-    "nameGame": "Ronda",
-    "kind": "location",
-    "lat": 36.742,
-    "lon": -5.165,
-    "held": [
-      {
-        "from": "1362-05-01",
-        "to": null
-      }
-    ],
-    "sample": true
-  },
-  {
-    "id": "al-jazira",
-    "name": "al-Jazīra al-Khaḍrāʾ",
-    "nameArabic": "الجزيرة الخضراء",
-    "nameGame": "Algeciras",
-    "kind": "location",
-    "lat": 36.133,
-    "lon": -5.453,
-    "held": [],
-    "sample": true
-  },
-  {
-    "id": "jabal-tariq",
-    "name": "Jabal Ṭāriq",
-    "nameArabic": "جبل طارق",
-    "nameGame": "Gibraltar",
-    "kind": "location",
-    "lat": 36.14,
-    "lon": -5.353,
-    "held": [],
-    "sample": true
-  },
-  {
-    "id": "tarifa",
-    "name": "Ṭarīf",
-    "nameArabic": "طريف",
-    "nameGame": "Tarifa",
-    "kind": "location",
-    "lat": 36.014,
-    "lon": -5.604,
-    "held": [],
-    "sample": true
-  },
-  {
-    "id": "jayyan",
-    "name": "Jayyān",
-    "nameArabic": "جيان",
-    "nameGame": "Jaén",
-    "kind": "location",
-    "lat": 37.779,
-    "lon": -3.785,
-    "held": [],
-    "sample": true
-  },
-  {
-    "id": "qurtuba",
-    "name": "Qurṭuba",
-    "nameArabic": "قرطبة",
-    "nameGame": "Córdoba",
-    "kind": "location",
-    "lat": 37.888,
-    "lon": -4.779,
-    "held": [],
-    "sample": true
-  },
-  {
-    "id": "ishbiliya",
-    "name": "Ishbīliya",
-    "nameArabic": "إشبيلية",
-    "nameGame": "Seville",
-    "kind": "location",
-    "lat": 37.389,
-    "lon": -5.984,
-    "held": [],
-    "sample": true
-  },
-  {
-    "id": "sabta",
-    "name": "Sabta",
-    "nameArabic": "سبتة",
-    "nameGame": "Ceuta",
-    "kind": "location",
-    "lat": 35.889,
-    "lon": -5.32,
-    "held": [],
-    "sample": true
-  },
-  {
-    "id": "fas",
-    "name": "Fās",
-    "nameArabic": "فاس",
-    "nameGame": "Fez",
-    "kind": "location",
-    "lat": 34.033,
-    "lon": -5.0,
-    "held": [],
-    "sample": true
-  },
-  {
-    "id": "tilimsan",
-    "name": "Tilimsān",
-    "nameArabic": "تلمسان",
-    "nameGame": "Tlemcen",
-    "kind": "location",
-    "lat": 34.878,
-    "lon": -1.315,
-    "held": [],
-    "sample": true
-  }
+ {
+  "id": "gharnata",
+  "key": "granada",
+  "name": "Gharnāṭa",
+  "nameGame": "Ḡrnaṭa",
+  "kind": "location",
+  "nameArabic": "غرناطة",
+  "held": [
+   {
+    "from": "1337-04-01",
+    "to": null
+   }
+  ],
+  "major": true
+ },
+ {
+  "id": "al-mariyya",
+  "key": "almeria",
+  "name": "al-Mariyya",
+  "nameGame": "El-Mariyya",
+  "kind": "location",
+  "nameArabic": "المرية",
+  "held": [
+   {
+    "from": "1337-04-01",
+    "to": null
+   }
+  ],
+  "major": true
+ },
+ {
+  "id": "al-mansura",
+  "key": "almanzora",
+  "name": "al-Manṣūra",
+  "nameGame": "El-Mnṣura",
+  "kind": "location",
+  "nameArabic": "المنصورة",
+  "held": [
+   {
+    "from": "1337-04-01",
+    "to": null
+   }
+  ]
+ },
+ {
+  "id": "basta",
+  "key": "baza",
+  "name": "Basṭa",
+  "nameGame": "Mdina Bstha",
+  "kind": "location",
+  "nameArabic": "بسطة",
+  "held": [
+   {
+    "from": "1337-04-01",
+    "to": null
+   }
+  ],
+  "note": "The game writes Madīna Basṭa (the city of Basṭa).",
+  "major": true
+ },
+ {
+  "id": "jarghal",
+  "key": "gergal",
+  "name": "Jarghāl",
+  "nameGame": "Jrgal",
+  "kind": "location",
+  "nameArabic": "جرغال",
+  "held": [
+   {
+    "from": "1337-04-01",
+    "to": null
+   }
+  ],
+  "note": "Arabic script written for the chronicle; the game files have none."
+ },
+ {
+  "id": "washqa",
+  "key": "huescar",
+  "name": "Washqa",
+  "nameGame": "Wšqa",
+  "kind": "location",
+  "nameArabic": "وشقة",
+  "held": [
+   {
+    "from": "1337-04-01",
+    "to": null
+   }
+  ]
+ },
+ {
+  "id": "muyaqar",
+  "key": "mojacar",
+  "name": "Muyaqar",
+  "nameGame": "Myaqar",
+  "kind": "location",
+  "nameArabic": "مويقر",
+  "held": [
+   {
+    "from": "1337-04-01",
+    "to": null
+   }
+  ],
+  "note": "Arabic script written for the chronicle; the game files have none."
+ },
+ {
+  "id": "ballish-al-ahmar",
+  "key": "velez_rubio",
+  "name": "Ballish al-Aḥmar",
+  "nameGame": "Blliš el-Aḥmar",
+  "kind": "location",
+  "nameArabic": "بلش الأحمر",
+  "held": [
+   {
+    "from": "1337-04-01",
+    "to": null
+   }
+  ],
+  "note": "Arabic script written for the chronicle; the game files have none."
+ },
+ {
+  "id": "abdara",
+  "key": "adra",
+  "name": "Abdara",
+  "nameGame": "Bdara",
+  "kind": "location",
+  "nameArabic": "أبدرة",
+  "held": [
+   {
+    "from": "1337-04-01",
+    "to": null
+   }
+  ],
+  "note": "Arabic script written for the chronicle; the game files have none."
+ },
+ {
+  "id": "hisn-al-munakkab",
+  "key": "almunecar",
+  "name": "Ḥiṣn al-Munakkab",
+  "nameGame": "Ḥṣn el-Mnakkab",
+  "kind": "location",
+  "nameArabic": "حصن المنكب",
+  "held": [
+   {
+    "from": "1337-04-01",
+    "to": null
+   }
+  ]
+ },
+ {
+  "id": "wadi-ash",
+  "key": "guadix",
+  "name": "Wādī Āsh",
+  "nameGame": "Wadi Aš",
+  "kind": "location",
+  "nameArabic": "وادي آش",
+  "held": [
+   {
+    "from": "1337-04-01",
+    "to": null
+   }
+  ],
+  "major": true
+ },
+ {
+  "id": "illura",
+  "key": "illora",
+  "name": "Illūra",
+  "nameGame": "Llura",
+  "kind": "location",
+  "nameArabic": "إلورة",
+  "held": [
+   {
+    "from": "1337-04-01",
+    "to": null
+   }
+  ],
+  "note": "Arabic script written for the chronicle; the game files have none."
+ },
+ {
+  "id": "lawsha",
+  "key": "loja",
+  "name": "Lawsha",
+  "nameGame": "Lawša",
+  "kind": "location",
+  "nameArabic": "لوشة",
+  "held": [
+   {
+    "from": "1337-04-01",
+    "to": null
+   }
+  ],
+  "major": true
+ },
+ {
+  "id": "binar",
+  "key": "pinar",
+  "name": "Bīnār",
+  "nameGame": "Bnar",
+  "kind": "location",
+  "nameArabic": "بينار",
+  "held": [
+   {
+    "from": "1337-04-01",
+    "to": null
+   }
+  ],
+  "note": "Arabic script written for the chronicle; the game files have none."
+ },
+ {
+  "id": "urjuba",
+  "key": "orgiva",
+  "name": "Yuz Aryuba",
+  "nameGame": "Yuz Aryuba",
+  "kind": "location",
+  "held": [
+   {
+    "from": "1337-04-01",
+    "to": null
+   }
+  ],
+  "note": "The game's Arabic form, Yuz Aryuba, looks garbled; Oikoumenē has Ujrība. Chronicle form not settled."
+ },
+ {
+  "id": "malaqa",
+  "key": "malaga",
+  "name": "Mālaqa",
+  "nameGame": "Malaqa",
+  "kind": "location",
+  "nameArabic": "مالقة",
+  "held": [
+   {
+    "from": "1337-04-01",
+    "to": null
+   }
+  ],
+  "major": true
+ },
+ {
+  "id": "antaqira",
+  "key": "antequera",
+  "name": "Antaqīra",
+  "nameGame": "Mdina Ntakira",
+  "kind": "location",
+  "nameArabic": "أنتقيرة",
+  "held": [
+   {
+    "from": "1337-04-01",
+    "to": null
+   }
+  ],
+  "note": "The game writes Madīnah Antakira. Arabic script written for the chronicle; the game files have none."
+ },
+ {
+  "id": "ballash",
+  "key": "velez_malaga",
+  "name": "Ballash",
+  "nameGame": "Ballax",
+  "kind": "location",
+  "nameArabic": "بلش",
+  "held": [
+   {
+    "from": "1337-04-01",
+    "to": null
+   }
+  ],
+  "note": "The game writes Ballax. Arabic script written for the chronicle; the game files have none."
+ },
+ {
+  "id": "marballa",
+  "key": "marbella",
+  "name": "Marballa",
+  "nameGame": "Marballa",
+  "kind": "location",
+  "nameArabic": "مربلة"
+ },
+ {
+  "id": "runda",
+  "key": "ronda",
+  "name": "Runda",
+  "nameGame": "Ḥṣn er-Runda",
+  "kind": "location",
+  "nameArabic": "رندة",
+  "note": "The game writes Ḥiṣn al-Runda (the fortress of Runda).",
+  "major": true
+ },
+ {
+  "id": "jabal-tariq",
+  "key": "gibraltar",
+  "name": "Jabal Ṭāriq",
+  "nameGame": "Jbal Ṭariq",
+  "kind": "location",
+  "nameArabic": "جبل طارق",
+  "major": true
+ },
+ {
+  "id": "al-jazira-al-khadra",
+  "key": "algeciras",
+  "name": "al-Jazīra al-Khaḍrāʾ",
+  "nameGame": "El-Jzira el-Ḵaḍra",
+  "kind": "location",
+  "nameArabic": "الجزيرة الخضراء",
+  "major": true
+ },
+ {
+  "id": "tarifa",
+  "key": "tarifa",
+  "name": "Ṭarīfa",
+  "nameGame": "Ṭrifa",
+  "kind": "location",
+  "nameArabic": "طريفة",
+  "major": true
+ },
+ {
+  "id": "wubira",
+  "key": "olvera",
+  "name": "Wubīra",
+  "nameGame": "Wbira",
+  "kind": "location",
+  "note": "No Arabic script in the game files; Wubīra follows the game's Wubira. A Granadan claim held by Castile at the start."
+ },
+ {
+  "id": "qadis",
+  "key": "cadiz",
+  "name": "Qādis",
+  "nameGame": "Qadis",
+  "kind": "location",
+  "nameArabic": "قادس",
+  "major": true
+ },
+ {
+  "id": "ishbiliyya",
+  "key": "sevilla",
+  "name": "Ishbīliyya",
+  "nameGame": "Šbilya",
+  "kind": "location",
+  "nameArabic": "إشبيلية",
+  "major": true
+ },
+ {
+  "id": "qurtuba",
+  "key": "cordoba",
+  "name": "Qurṭuba",
+  "nameGame": "Qrṭuba",
+  "kind": "location",
+  "nameArabic": "قرطبة",
+  "major": true
+ },
+ {
+  "id": "jayyan",
+  "key": "jaen",
+  "name": "Jayyān",
+  "nameGame": "Jayyan",
+  "kind": "location",
+  "nameArabic": "جيان",
+  "major": true
+ },
+ {
+  "id": "mursiyya",
+  "key": "murcia",
+  "name": "Mursiyya",
+  "nameGame": "Mursiyya",
+  "kind": "location",
+  "nameArabic": "مرسية",
+  "major": true
+ },
+ {
+  "id": "sabta",
+  "key": "ceuta",
+  "name": "Sabta",
+  "nameGame": "Sabta",
+  "kind": "location",
+  "nameArabic": "سبتة",
+  "major": true
+ },
+ {
+  "id": "tanja",
+  "key": "tangier",
+  "name": "Ṭanja",
+  "nameGame": "Ṭanja",
+  "kind": "location",
+  "nameArabic": "طنجة",
+  "major": true
+ },
+ {
+  "id": "fas",
+  "key": "fez",
+  "name": "Fās",
+  "nameGame": "Fas",
+  "kind": "location",
+  "nameArabic": "فاس",
+  "major": true
+ },
+ {
+  "id": "tilimsan",
+  "key": "tlemcen",
+  "name": "Tilimsān",
+  "nameGame": "Tlemsan",
+  "kind": "location",
+  "nameArabic": "تلمسان",
+  "major": true
+ }
 ]

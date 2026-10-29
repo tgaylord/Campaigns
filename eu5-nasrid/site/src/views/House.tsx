@@ -17,10 +17,13 @@ export default function House() {
   const roots = family.filter((p) => !p.father || !ids.has(p.father));
   const build = (p: Person): Node => ({ person: p, children: family.filter((c) => c.father === p.id).sort((a, b) => (a.born ?? "").localeCompare(b.born ?? "")).map(build) });
   const others = people.filter((p) => !ids.has(p.id));
+  // Wives and mothers who married into the house, then everyone else in its service.
+  const mothers = others.filter((p) => people.some((c) => c.mother === p.id));
+  const servants = others.filter((p) => !mothers.includes(p));
 
   const layout = useMemo(() => {
     if (!roots.length) return null;
-    const rootNode: Node = roots.length === 1 ? build(roots[0]) : { person: { id: "_", name: "", roles: [], reigns: [], sample: false } as Person, children: roots.map(build) };
+    const rootNode: Node = roots.length === 1 ? build(roots[0]) : { person: { id: "_", name: "", roles: [], reigns: [], female: false, traits: [], sample: false } as unknown as Person, children: roots.map(build) };
     const h = hierarchy(rootNode, (d) => d.children);
     const dx = 220, dy = 250;
     tree<Node>().nodeSize([dx, dy])(h);
@@ -67,19 +70,36 @@ export default function House() {
         </div>
       ) : <p className="muted">No members of the house recorded yet.</p>}
 
-      <StarRule />
-      <h2 className="section-title">Servants of the house</h2>
-      <ul className="servants">
-        {others.map((p) => (
-          <li key={p.id}>
-            <Link to={`/people/${p.id}`} data-kind="person" data-id={p.id} data-router="1" className="entity">
-              {p.nameArabic && <span className="ar">{p.nameArabic}</span>}
-              <span className="nm">{p.name}</span>
-            </Link>
-            <span className="roles ui">{p.roles.join(", ")}</span>
-          </li>
-        ))}
-      </ul>
+      {mothers.length > 0 && <>
+        <StarRule />
+        <h2 className="section-title">Mothers of the house</h2>
+        <ul className="servants">
+          {mothers.map((p) => (
+            <li key={p.id}>
+              <Link to={`/people/${p.id}`} data-kind="person" data-id={p.id} data-router="1" className="entity">
+                {p.nameArabic && <span className="ar">{p.nameArabic}</span>}
+                <span className="nm">{p.name}</span>
+              </Link>
+              <span className="roles ui">Mother of {people.filter((c) => c.mother === p.id).map((c) => c.name).join(", ")}</span>
+            </li>
+          ))}
+        </ul>
+      </>}
+      {servants.length > 0 && <>
+        <StarRule />
+        <h2 className="section-title">Servants of the house</h2>
+        <ul className="servants">
+          {servants.map((p) => (
+            <li key={p.id}>
+              <Link to={`/people/${p.id}`} data-kind="person" data-id={p.id} data-router="1" className="entity">
+                {p.nameArabic && <span className="ar">{p.nameArabic}</span>}
+                <span className="nm">{p.name}</span>
+              </Link>
+              <span className="roles ui">{[p.roles.join(", "), p.born ? `born ${year(p.born)}` : "", p.died ? `died ${year(p.died)}` : ""].filter(Boolean).join(", ")}</span>
+            </li>
+          ))}
+        </ul>
+      </>}
     </div>
   );
 }

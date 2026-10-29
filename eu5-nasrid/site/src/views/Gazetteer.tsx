@@ -21,7 +21,7 @@ export default function Gazetteer() {
   return (
     <div className="page gazetteer-page">
       <PageHead title="The Gazetteer" ar="البلدان" lede="Every place the chronicle names, written as the court wrote it, with the name the game gives it and whether it is ours." />
-      <MiniChart marks={places.map((p) => ({ place: p, tone: isHeld(p, now) ? "ours" as const : "theirs" as const, named: p.id === latest?.capital }))} height={420} minSpan={7} />
+      <MiniChart marks={places.map((p) => ({ place: p, tone: isHeld(p, now) ? "ours" as const : "theirs" as const, named: p.id === latest?.capital }))} height={420} minSpan={420} />
 
       <div className="filters ui" role="group" aria-label="Show places">
         {FILTERS.map((x) => (

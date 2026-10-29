@@ -1,40 +1,51 @@
 .atlas { position: relative; height: 100vh; min-height: 40rem; overflow: hidden; background: #0b1128; }
 .atlas .chart { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
 
-.atlas .wind { stroke-width: 0.7; }
+.atlas .wind { stroke-width: 0.45; }
 .atlas .wind.t0 { stroke: #d4ab55; stroke-opacity: 0.28; }
 .atlas .wind.t1 { stroke: #57b892; stroke-opacity: 0.2; }
 .atlas .wind.t2 { stroke: #e0654c; stroke-opacity: 0.14; }
-.atlas .wind-on-land { stroke: #8e6b26; stroke-opacity: 0.18; stroke-width: 0.7; }
+.atlas .wind-on-land { stroke: #8e6b26; stroke-opacity: 0.16; stroke-width: 0.45; }
 
 .atlas .land { fill: #e3d2ad; }
-.atlas .coast-shadow { fill: none; stroke: #c7ae7c; stroke-opacity: 0.35; stroke-width: 9; stroke-linejoin: round; }
-.atlas .coast { fill: none; stroke: #3a2814; stroke-width: 1.4; stroke-linejoin: round; }
+.atlas .coast-shadow { fill: none; stroke: #c7ae7c; stroke-opacity: 0.3; stroke-width: 5; stroke-linejoin: round; }
+.atlas .coast { fill: none; stroke: #3a2814; stroke-width: 0.8; stroke-linejoin: round; }
 
-.atlas .region-label .ar { font-family: var(--naskh); font-weight: 700; }
-.atlas .region-label .tr { font-family: var(--serif); font-style: italic; }
-.atlas .region-label.on-land .ar { fill: #7a5a34; fill-opacity: 0.55; }
-.atlas .region-label.on-land .tr { fill: #5a4630; fill-opacity: 0.7; }
-.atlas .region-label.on-sea .ar { fill: #d4ab55; fill-opacity: 0.55; }
-.atlas .region-label.on-sea .tr { fill: #ece6d8; fill-opacity: 0.6; }
+/* realms: a wash of the owner's colour; ours in gold */
+.atlas .realm { fill-opacity: 0.2; stroke: none; }
+.atlas .realm.ours { fill-opacity: 0.62; }
+.atlas .realm-edge { fill: none; stroke-width: 0.9; stroke-opacity: 0.75; stroke-linejoin: round; }
+.atlas .realm-edge.ours { stroke: #f2d58e; stroke-width: 1.4; stroke-opacity: 1; }
+.atlas .waste { fill: url(#peaks); }
+.atlas .lake { fill: #1a2756; stroke: #3a2814; stroke-width: 0.4; }
+.atlas .locations .loc { fill: transparent; stroke: #5a4630; stroke-opacity: 0.16; stroke-width: 0.3; }
+.atlas .locations .loc.ours { stroke: #5c3b0c; stroke-opacity: 0.45; stroke-width: 0.4; }
+.atlas .locations .loc:hover { fill: rgba(192, 68, 46, 0.22); }
 
-.atlas .rose .ring { fill: none; stroke: #d4ab55; stroke-opacity: 0.7; stroke-width: 1.2; }
-.atlas .rose .ring.thin { stroke-opacity: 0.4; stroke-width: 0.8; }
+.atlas .realm-label .ar { font-family: var(--naskh); font-weight: 700; fill: color-mix(in srgb, var(--rc) 55%, #3a2814); fill-opacity: 0.72; }
+.atlas .realm-label .tr { font-family: var(--serif); font-style: italic; fill: #3a2814; fill-opacity: 0.7; }
+.atlas .realm-label { pointer-events: none; }
+.atlas .sea-label { pointer-events: none; }
+.atlas .sea-label .ar { font-family: var(--naskh); font-weight: 700; fill: #d4ab55; fill-opacity: 0.55; }
+.atlas .sea-label .tr { font-family: var(--serif); font-style: italic; fill: #ece6d8; fill-opacity: 0.6; }
+
+.atlas .rose .ring { fill: none; stroke: #d4ab55; stroke-opacity: 0.7; stroke-width: 0.7; }
+.atlas .rose .ring.thin { stroke-opacity: 0.4; stroke-width: 0.45; }
 .atlas .rose .p16 { fill: #57b892; fill-opacity: 0.55; }
 .atlas .rose .p8b { fill: #c0442e; fill-opacity: 0.75; }
-.atlas .rose .p4 { fill: #d4ab55; stroke: #8e6b26; stroke-width: 1; }
-.atlas .rose .hub { fill: #0d1430; stroke: #f2d58e; stroke-width: 2; }
-.atlas .rose .north { fill: #f2d58e; font-size: 30px; }
+.atlas .rose .p4 { fill: #d4ab55; stroke: #8e6b26; stroke-width: 0.5; }
+.atlas .rose .hub { fill: #0d1430; stroke: #f2d58e; stroke-width: 1; }
+.atlas .rose .north { fill: #f2d58e; font-family: var(--naskh); }
 
 .atlas .place { cursor: pointer; }
 .atlas .place .ar { font-family: var(--naskh); font-weight: 700; paint-order: stroke; stroke-linejoin: round; }
 .atlas .place .tr { font-family: var(--serif); font-style: italic; paint-order: stroke; stroke-linejoin: round; }
-.atlas .place.ours .ar { fill: #5c3b0c; stroke: #ecdcb6; stroke-width: 5px; }
-.atlas .place.ours .tr { fill: #3a2814; stroke: #ecdcb6; stroke-width: 4px; }
-.atlas .place.theirs .ar { fill: #5a4630; fill-opacity: 0.85; stroke: #e3d2ad; stroke-width: 4px; }
-.atlas .place.theirs .tr { fill: #5a4630; stroke: #e3d2ad; stroke-width: 3px; }
-.atlas .place.theirs .mark { fill: #e3d2ad; stroke: #3a2814; stroke-width: 1.6; }
-.atlas .place .tower path:first-child { fill: #d4ab55; stroke: #5c3b0c; stroke-width: 1; }
+.atlas .place.ours .ar { fill: #4a2f08; stroke: #f0e2c0; stroke-width: 0.22em; }
+.atlas .place.ours .tr { fill: #3a2814; stroke: #f0e2c0; stroke-width: 0.25em; }
+.atlas .place.theirs .ar { fill: #5a4630; stroke: #e3d2ad; stroke-width: 0.2em; }
+.atlas .place.theirs .tr { fill: #5a4630; stroke: #e3d2ad; stroke-width: 0.22em; }
+.atlas .place.theirs .mark { fill: #e3d2ad; stroke: #3a2814; stroke-width: 0.9; }
+.atlas .place .tower path:first-child { fill: #d4ab55; stroke: #3a2208; stroke-width: 1.2; }
 .atlas .place .tower .door { fill: #5c3b0c; }
 .atlas .place:hover .ar, .atlas .place:focus-visible .ar { fill: #c0442e; }
 
@@ -54,6 +65,12 @@
 .atlas .medallion .wdate { font-family: var(--sans); font-size: 0.82rem; color: var(--mist); }
 .atlas .medallion .line { margin-top: 0.6rem; font-size: 0.95rem; color: var(--mist); text-align: right; }
 .atlas .medallion .line a { color: var(--plaster); }
+
+.atlas .views { position: absolute; left: 50%; transform: translateX(-50%); top: 1.5rem; z-index: 3; display: flex; gap: 0; border: 1px solid rgba(212, 171, 85, 0.5); border-radius: 3px; overflow: hidden; background: rgba(11, 17, 40, 0.86); }
+.atlas .views button { font: inherit; font-size: 0.82rem; color: var(--mist); background: transparent; border: 0; padding: 0.35rem 0.85rem; cursor: pointer; display: grid; line-height: 1.2; }
+.atlas .views button + button { border-left: 1px solid rgba(212, 171, 85, 0.3); }
+.atlas .views button .ar { font-size: 1.05rem; color: var(--gilt); }
+.atlas .views button[aria-pressed="true"] { background: rgba(212, 171, 85, 0.18); color: var(--plaster); }
 
 .atlas .drawer-toggle {
   position: absolute; top: 1.5rem; right: 1.5rem; z-index: 3;
@@ -99,7 +116,13 @@
   .atlas { height: auto; min-height: 0; overflow: visible; }
   .atlas .chart { position: relative; height: 70vh; }
   .atlas .medallion { position: relative; top: 0; left: 0; max-width: none; margin: -3rem 1rem 0; }
-  .atlas .drawer-toggle { display: none; }
+  .atlas .views { position: absolute; left: 50%; transform: translateX(-50%); top: 1.5rem; z-index: 3; display: flex; gap: 0; border: 1px solid rgba(212, 171, 85, 0.5); border-radius: 3px; overflow: hidden; background: rgba(11, 17, 40, 0.86); }
+.atlas .views button { font: inherit; font-size: 0.82rem; color: var(--mist); background: transparent; border: 0; padding: 0.35rem 0.85rem; cursor: pointer; display: grid; line-height: 1.2; }
+.atlas .views button + button { border-left: 1px solid rgba(212, 171, 85, 0.3); }
+.atlas .views button .ar { font-size: 1.05rem; color: var(--gilt); }
+.atlas .views button[aria-pressed="true"] { background: rgba(212, 171, 85, 0.18); color: var(--plaster); }
+
+.atlas .drawer-toggle { display: none; }
   .atlas .drawer { position: relative; inset: auto; width: auto; margin: 1rem; }
   .atlas-foot { position: relative; }
 }

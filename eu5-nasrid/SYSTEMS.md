@@ -13,8 +13,8 @@ Working rules for the Granada campaign. Every chat in this Project should read t
 | Game | Europa Universalis V, patch 1.4 "Rio Salado" |
 | DLC | Across the Pillars (plus whatever else is owned) |
 | Country | Granada (`GRA`), Nasrid dynasty, 1 April 1337 start |
-| Mode | **Non-Ironman.** Text saves via debug mode; mods and save patches allowed; no achievements |
-| Mods | To confirm against 1.4: Oikoumenē (likely), National Destinies (maybe), others TBD |
+| Mode | **Non-Ironman.** Ordinary compressed saves, read with the shared decoder; mods and save patches allowed; no achievements |
+| Mods | Playset "Granada": Community Mod Framework, Free Console Access, National Destinies, Custom Nation Designer Revived (for custom vassals; built for 1.3, test it before first use). **Not** Oikoumenē: it overwrites 64 of 1.4's place-name files and seven language files, and its ship names break in 1.4. Revisit before the first colony, and once added, keep it (§10). |
 | Long arc | Survive and win the Battle for the Strait → form Al-Andalus → Golden Century (Andalusi path) → colonial empire |
 
 ### Strategic anchors (from eu5db 1.4.5)
@@ -61,9 +61,10 @@ Each campaign gets its own top-level folder; Rome or any other campaign would si
 
 ## 3. Saves: getting them to Claude
 
-- **Source:** the gaming PC (Windows), at `C:\Users\trent\Documents\Paradox Interactive\Europa Universalis V\save games`. That computer has to be linked to the chat (open the chat in the Claude desktop app there), with this folder connected.
-- **Format:** plain-text saves via debug mode. They're about 500–900 MB, and Claude can pull 400 MB at most, so **zip each checkpoint save** (Send to → Compressed folder) in the same folder.
-- **Naming:** `GRA_YYYY_MM_DD_short-slug`, e.g. `GRA_1340_10_30_rio-salado`.
+- **Source:** the gaming PC (Windows), the game's `save games` folder under `Documents\Paradox Interactive\Europa Universalis V`. That computer has to be linked to the chat (open the chat in the Claude desktop app there), with this folder connected.
+- **Format:** ordinary compressed saves (tens of MB, no zipping). The shared decoder turns them into text; 1.4 needs the patch in `tools/b2t-1.4.patch` (checked against the start saves: identical content). Text saves via debug mode are only needed when the game version changes: save once as text and once normally at the same moment, so the decoder can be checked again.
+- **Naming:** `GRA_YYYY_MM_DD_short-slug`, e.g. `GRA_1340_10_30_rio-salado`. The game's own `SP_GRA_YYYY_MM_DD_…` names also work.
+- **Don't switch playsets inside the game.** Quit and relaunch instead: the one crash so far came after eight in-game playset reloads in a row.
 - **When to save a checkpoint:**
   - the start of a war, and its peace
   - a ruler's death or accession; a regency
@@ -148,13 +149,13 @@ The site should feel like being at the Naṣrid court, not like reading a dashbo
 
 Every person, place and war name anywhere on the site shows a card on hover and links to its page.
 
-**Phase 2:**
-- A **real map** built from the game's own map files on the gaming PC, replacing the coastline charts: ownership at each checkpoint, borders, battle sites.
+**Next:**
+- The map already comes from the game's own files (the Strait theatre, about 1,000 locations). Still to add: battle sites, and further frames as the realm grows.
 - The colonies, and an armies view once tracking starts.
 
 **Stack:** React, React Router, Vite and D3 in `site/`, built to a static site.
 - `site/scripts/build-data.mjs` reads `data/` and `story/`, checks every record against its schema and every reference (person, place, war, era, story entry), renders the Markdown and writes the bundle the site reads. **A bad record or a broken reference fails the build.**
-- Coastlines come from Natural Earth (`world-atlas`), clipped to the western Mediterranean.
+- The Atlas and every small chart are drawn from the game's own map: `tools/build_map.py` traces each location from `locations.png`, and realm outlines are rebuilt for each checkpoint.
 - Hijri dates come from `site/src/lib/hijri.ts`.
 - Story entries link to records with `[name](person:id)`, `place:`, `war:` and `era:`.
 - See `site/README.md` for running it locally and for the story-entry format.
@@ -192,5 +193,8 @@ This campaign follows the repo-wide rules in `/CLAUDE.md`:
 
 ## 10. Open questions
 
-1. Final mod list, checked against 1.4.
+1. ~~Mod list~~: settled (§1).
 2. ~~Publishing~~: settled. The repo is public and the site is published to an unlisted Pages address.
+3. Updating the shared decoder for 1.4 (the patch in `tools/b2t-1.4.patch`): needs Trent's approval, since it changes `shared/`.
+4. Place names the game files leave doubtful: Órgiva (the game has "Yuz Aryuba"), Olvera (no Arabic script), and the Arabic script for Gérgal, Mojácar, Vélez-Rubio, Adra, Íllora, Píñar, Antequera and Vélez-Málaga, which the chronicle supplies itself. Each is marked in `data/gazetteer.json`.
+5. No heir is named in the start save; the game picks one once it runs.

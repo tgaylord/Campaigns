@@ -1,5 +1,5 @@
 .roll-tree { padding: 2rem 1rem; overflow-x: auto; }
-.roll-tree svg { display: block; margin: 0 auto; max-width: 100%; min-width: 34rem; height: auto; }
+.roll-tree svg { display: block; margin: 0 auto; max-width: none; height: auto; }
 .roll-tree .branch { fill: none; stroke: #7a5a34; stroke-width: 2.5; stroke-opacity: 0.6; }
 .roll-tree .roundel { fill: #e1cfa9; stroke: #7a5a34; stroke-width: 2; }
 .roll-tree .inner { fill: none; stroke: #7a5a34; stroke-opacity: 0.4; }

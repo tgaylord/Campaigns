@@ -8,10 +8,13 @@
  *   ../data/people.json      characters
  *   ../data/gazetteer.json   places
  *   ../data/wars.json        wars
+ *   ../data/countries.json   countries the views name and colour
+ *   ../data/map/*.json       location shapes traced from the game's map (tools/build_map.py)
+ *   ../data/extracted/*.json facts pulled from each checkpoint save (tools/extract_checkpoint.py)
  *
  * Validates every record, checks every cross-reference, renders the story's
- * Markdown, and writes src/generated/campaign.json. Also cuts the coastline
- * of the western Mediterranean out of Natural Earth into src/generated/land.json.
+ * Markdown, and writes src/generated/campaign.json and src/generated/map.json
+ * (the game map plus who owned each location at each checkpoint).
  * Any error stops the build.
  */
 import { readFile, readdir, writeFile, mkdir } from "node:fs/promises";
@@ -24,7 +27,6 @@ import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
 import { visit } from "unist-util-visit";
-import { feature } from "topojson-client";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const CAMPAIGN = path.resolve(here, "../..");
@@ -55,6 +57,11 @@ const Person = z.object({
   mother: id.optional(),
   roles: z.array(z.string()).default([]),
   reigns: z.array(z.object({ from: isoDate, to: isoDate.nullable() })).default([]),
+  female: z.boolean().default(false),
+  /** the character's id in the save */
+  gameId: z.number().optional(),
+  stats: z.object({ adm: z.number(), dip: z.number(), mil: z.number() }).optional(),
+  traits: z.array(z.string()).default([]),
   note: z.string().optional(),
   sample,
 });
@@ -65,8 +72,10 @@ const Place = z.object({
   nameArabic: z.string().optional(),
   nameGame: z.string(),
   kind: z.enum(["location", "province", "area", "region"]),
-  lat: z.number().optional(),
-  lon: z.number().optional(),
+  /** the game's location key, e.g. "granada"; places it on the map */
+  key: z.string(),
+  /** named on the wider views of the Atlas; the rest only close up */
+  major: z.boolean().default(false),
   held: z.array(z.object({ from: isoDate, to: isoDate.nullable() })).default([]),
   note: z.string().optional(),
   sample,
@@ -83,6 +92,11 @@ const War = z.object({
   outcome: z.string().nullable(),
   score: z.array(z.object({ date: isoDate, value: z.number() })).default([]),
   sample,
+});
+
+const Country = z.object({
+  tag: z.string().regex(/^[A-Z0-9]{3}$/), name: z.string(), nameChronicle: z.string(), nameArabic: z.string().optional(),
+  color: z.string().regex(/^#[0-9a-f]{6}$/i),
 });
 
 const Estate = z.object({ id, name: z.string(), power: z.number(), satisfaction: z.number().nullable() });
@@ -109,9 +123,16 @@ const Snapshot = z.object({
     cultures: z.record(z.string(), z.number()),
     religions: z.record(z.string(), z.number()),
   }),
-  estates: z.array(Estate),
-  economy: z.object({ treasury: z.number(), income: z.number(), expenses: z.number(), debt: z.number().default(0) }),
-  military: z.object({ levies: z.number(), regiments: z.number(), ships: z.number() }),
+  /** empty, and economy/military null, until a checkpoint the game has ticked through records them */
+  estates: z.array(Estate).default([]),
+  economy: z.object({ treasury: z.number(), income: z.number(), expenses: z.number(), debt: z.number().default(0) }).nullable().default(null),
+  military: z.object({ levies: z.number(), regiments: z.number(), ships: z.number() }).nullable().default(null),
+  source: z.object({ save: z.string(), gameVersion: z.string(), extracted: z.string() }).optional(),
+  government: z.object({
+    type: z.string(), heirSelection: z.string(),
+    laws: z.array(z.object({ slot: z.string(), law: z.string() })), reforms: z.array(z.string()), privileges: z.array(z.string()),
+    culture: z.string(), tolerated: z.array(z.string()), religion: z.string(),
+  }).optional(),
   wars: z.array(id).default([]),
   strait: z.object({ active: z.boolean(), influence: z.number(), sovereignty: z.number(), yearsSubject: z.number() }).nullable(),
   goldenCentury: z.object({ european: z.number(), colonial: z.number(), flashpoint: z.number() }).nullable().default(null),
@@ -188,6 +209,7 @@ const eras = (await readJson(path.join(CAMPAIGN, "data/eras.json"))).map((e, i) 
 const people = (await readJson(path.join(CAMPAIGN, "data/people.json"))).map((e, i) => check(Person, e, `people.json[${i}]`)).filter(Boolean);
 const places = (await readJson(path.join(CAMPAIGN, "data/gazetteer.json"))).map((e, i) => check(Place, e, `gazetteer.json[${i}]`)).filter(Boolean);
 const wars = (await readJson(path.join(CAMPAIGN, "data/wars.json"))).map((e, i) => check(War, e, `wars.json[${i}]`)).filter(Boolean);
+const countries = (await readJson(path.join(CAMPAIGN, "data/countries.json"))).map((e, i) => check(Country, e, `countries.json[${i}]`)).filter(Boolean);
 
 const snapshots = [];
 for (const f of await listJson(path.join(CAMPAIGN, "data/snapshots"))) {
@@ -277,59 +299,53 @@ for (const note of story.filter((s) => s.kind === "ooc")) {
 
 const sampleData = [eras, people, places, wars, snapshots, events, story].some((list) => list.some((x) => x.sample));
 
-/* ------------------------------------------------------------ coastline */
+/* ------------------------------------------------------------ map */
 
-// Western Mediterranean, Atlantic approaches and the Maghreb.
-const BBOX = { w: -20, e: 16, s: 24, n: 48 };
-function clipRing(ring) {
-  // Sutherland–Hodgman against the bbox, in lon/lat.
-  const edges = [
-    (p) => p[0] >= BBOX.w, (p) => p[0] <= BBOX.e, (p) => p[1] >= BBOX.s, (p) => p[1] <= BBOX.n,
-  ];
-  const inter = [
-    (a, b) => [BBOX.w, a[1] + ((b[1] - a[1]) * (BBOX.w - a[0])) / (b[0] - a[0])],
-    (a, b) => [BBOX.e, a[1] + ((b[1] - a[1]) * (BBOX.e - a[0])) / (b[0] - a[0])],
-    (a, b) => [a[0] + ((b[0] - a[0]) * (BBOX.s - a[1])) / (b[1] - a[1]), BBOX.s],
-    (a, b) => [a[0] + ((b[0] - a[0]) * (BBOX.n - a[1])) / (b[1] - a[1]), BBOX.n],
-  ];
-  let out = ring;
-  for (let k = 0; k < 4; k++) {
-    const input = out; out = [];
-    for (let i = 0; i < input.length; i++) {
-      const cur = input[i], prev = input[(i + input.length - 1) % input.length];
-      const ci = edges[k](cur), pi = edges[k](prev);
-      if (ci) { if (!pi) out.push(inter[k](prev, cur)); out.push(cur); }
-      else if (pi) out.push(inter[k](prev, cur));
-    }
-    if (!out.length) break;
-  }
-  return out.map(([x, y]) => [Math.round(x * 1000) / 1000, Math.round(y * 1000) / 1000]);
+// One traced map for now (the Strait theatre); more frames can sit beside it later.
+const MAP_FILE = path.join(CAMPAIGN, "data/map/strait-region.json");
+const gameMap = await readJson(MAP_FILE);
+const inFrame = new Set(Object.keys(gameMap.locations));
+for (const p of places) {
+  const loc = gameMap.locations[p.key];
+  if (!loc) { errors.push(`gazetteer ${p.id}: location "${p.key}" is not on the map`); continue; }
+  p.x = loc.c[0]; p.y = loc.c[1];
 }
-const landTopo = JSON.parse(await readFile(path.resolve(here, "../node_modules/world-atlas/land-10m.json"), "utf8"));
-const land = feature(landTopo, landTopo.objects.land);
-const polys = [];
-for (const f of land.features) {
-  const g = f.geometry;
-  const list = g.type === "Polygon" ? [g.coordinates] : g.coordinates;
-  for (const poly of list) {
-    const outer = clipRing(poly[0]);
-    if (outer.length < 4) continue;
-    // drop specks
-    const xs = outer.map((p) => p[0]), ys = outer.map((p) => p[1]);
-    if ((Math.max(...xs) - Math.min(...xs)) * (Math.max(...ys) - Math.min(...ys)) < 0.002) continue;
-    polys.push([outer.concat([outer[0]])]);
-  }
+// Who owned each location at each checkpoint, from the extracted facts.
+const owners = {};
+for (const s of snapshots) {
+  if (!s.source?.extracted) continue;
+  const ex = await readJson(path.join(CAMPAIGN, "data", s.source.extracted));
+  const o = {};
+  for (const [k, tag] of Object.entries(ex.world_owners ?? {})) if (inFrame.has(k)) o[k] = tag;
+  owners[s.id] = o;
 }
-const landOut = { type: "Feature", properties: {}, geometry: { type: "MultiPolygon", coordinates: polys }, bbox: [BBOX.w, BBOX.s, BBOX.e, BBOX.n] };
+// Realm outlines per checkpoint (tools/build_map.py --owners).
+const realms = {};
+for (const s of snapshots) {
+  try { realms[s.id] = await readJson(path.join(CAMPAIGN, `data/map/realms-${s.id}.json`)); }
+  catch { errors.push(`snapshots/${s.id}: no data/map/realms-${s.id}.json (run tools/build_map.py --owners)`); }
+}
+for (const c of countries) if (![...Object.values(owners)].some((o) => Object.values(o).includes(c.tag))) {
+  // a country no checkpoint shows on the map is harmless, but say so
+  console.warn(`note: country ${c.tag} owns nothing on the map at any checkpoint`);
+}
+if (errors.length) {
+  console.error(`\nCampaign data has ${errors.length} problem(s):\n  - ${errors.join("\n  - ")}\n`);
+  process.exit(1);
+}
+// Sea zones aren't drawn one by one; the sea is the ground the land sits on.
+const drawn = Object.fromEntries(Object.entries(gameMap.locations).filter(([, l]) => l.kind !== "sea")
+  .map(([k, l]) => [k, { kind: l.kind, d: l.d, c: l.c, province: l.province, area: l.area }]));
+const mapOut = { frame: gameMap.frame, coast: gameMap.coast, locations: drawn, owners, realms };
 
 /* ------------------------------------------------------------ write */
 
 await mkdir(OUT, { recursive: true });
-const campaign = { generated: new Date().toISOString(), sample: sampleData, eras, people, places, wars, snapshots, events, story };
+const campaign = { generated: new Date().toISOString(), sample: sampleData, eras, people, places, wars, countries, snapshots, events, story };
 await writeFile(path.join(OUT, "campaign.json"), JSON.stringify(campaign));
-await writeFile(path.join(OUT, "land.json"), JSON.stringify(landOut));
+await writeFile(path.join(OUT, "map.json"), JSON.stringify(mapOut));
 console.log(
   `campaign data: ${snapshots.length} checkpoints, ${events.length} events, ${story.length} story entries, ` +
   `${people.length} people, ${places.length} places, ${wars.length} wars${sampleData ? " (includes sample data)" : ""}; ` +
-  `coastline: ${polys.length} polygons`,
+  `map: ${inFrame.size} locations, owners at ${Object.keys(owners).length} checkpoint(s)`,
 );

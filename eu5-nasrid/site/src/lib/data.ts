@@ -7,12 +7,16 @@ export type Era = { id: string; title: string; start: string; end: string | null
 export type Person = {
   id: string; name: string; nameArabic?: string; nameGame?: string; dynasty?: string;
   born?: string; died?: string; father?: string; mother?: string; roles: string[];
-  reigns: { from: string; to: string | null }[]; note?: string; sample: boolean;
+  reigns: { from: string; to: string | null }[]; female: boolean; gameId?: number;
+  stats?: { adm: number; dip: number; mil: number }; traits: string[]; note?: string; sample: boolean;
 };
 export type Place = {
   id: string; name: string; nameArabic?: string; nameGame: string; kind: string;
-  lat?: number; lon?: number; held: { from: string; to: string | null }[]; note?: string; sample: boolean;
+  /** the game's location key; x, y are its centre on the game map (map pixels) */
+  key: string; x: number; y: number; major: boolean;
+  held: { from: string; to: string | null }[]; note?: string; sample: boolean;
 };
+export type Country = { tag: string; name: string; nameChronicle: string; nameArabic?: string; color: string };
 export type War = {
   id: string; name: string; start: string; end: string | null; goal: string;
   allies: string[]; enemies: string[]; outcome: string | null;
@@ -26,9 +30,15 @@ export type Snapshot = {
   allies: string[]; rivals: string[]; cabinet: { person: string; role: string }[];
   crownPower?: number; politicalInfluence?: number;
   population: { total: number; cultures: Record<string, number>; religions: Record<string, number> };
+  /** empty / null until a checkpoint the game has ticked through records them */
   estates: Estate[];
-  economy: { treasury: number; income: number; expenses: number; debt: number };
-  military: { levies: number; regiments: number; ships: number };
+  economy: { treasury: number; income: number; expenses: number; debt: number } | null;
+  military: { levies: number; regiments: number; ships: number } | null;
+  source?: { save: string; gameVersion: string; extracted: string };
+  government?: {
+    type: string; heirSelection: string; laws: { slot: string; law: string }[]; reforms: string[]; privileges: string[];
+    culture: string; tolerated: string[]; religion: string;
+  };
   wars: string[];
   strait: { active: boolean; influence: number; sovereignty: number; yearsSubject: number } | null;
   sample: boolean;
@@ -45,11 +55,11 @@ export type StoryEntry = {
 
 type Campaign = {
   generated: string; sample: boolean; eras: Era[]; people: Person[]; places: Place[]; wars: War[];
-  snapshots: Snapshot[]; events: CampaignEvent[]; story: StoryEntry[];
+  countries: Country[]; snapshots: Snapshot[]; events: CampaignEvent[]; story: StoryEntry[];
 };
 
 export const campaign = raw as unknown as Campaign;
-export const { eras, people, places, wars, snapshots, events, story } = campaign;
+export const { eras, people, places, wars, countries, snapshots, events, story } = campaign;
 export const chronicle = story.filter((s) => s.kind === "chronicle");
 export const notes = story.filter((s) => s.kind === "ooc");
 
@@ -59,6 +69,12 @@ export const placeById = index(places);
 export const warById = index(wars);
 export const eraById = index(eras);
 export const storyById = index(story);
+export const countryByTag = new Map(countries.map((c) => [c.tag, c]));
+/** The chronicle's name for a country, by tag or by its game name. */
+export function countryName(tagOrName: string) {
+  const c = countryByTag.get(tagOrName) ?? countries.find((x) => x.name === tagOrName);
+  return c?.nameChronicle ?? tagOrName;
+}
 
 export const latest = snapshots[snapshots.length - 1];
 

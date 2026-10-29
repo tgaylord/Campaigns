@@ -12,7 +12,7 @@ export default function PlacePage() {
   const { story, events } = mentionsOf("places", p.id);
   const now = latest?.date ?? "9999-12-31";
   const ours = isHeld(p, now);
-  const neighbours = places.filter((q) => q.id !== p.id && q.lat != null && p.lat != null && Math.hypot(q.lat! - p.lat!, q.lon! - p.lon!) < 1.6);
+  const neighbours = places.filter((q) => q.id !== p.id && Math.hypot(q.x - p.x, q.y - p.y) < 70);
 
   // Held periods drawn against the span of the checkpoints.
   const t0 = snapshots.length ? yearFrac(snapshots[0].date) : 0;
@@ -27,7 +27,7 @@ export default function PlacePage() {
         <p className="record-sub">{p.nameGame} in the game. {ours ? "In Naṣrid hands." : p.held.length ? "Once Naṣrid, now lost." : "Never yet in Naṣrid hands."}</p>
       </header>
 
-      <MiniChart marks={[{ place: p, tone: "focus" as const }, ...neighbours.map((q) => ({ place: q, tone: isHeld(q, now) ? "ours" as const : "theirs" as const }))]} height={340} minSpan={2.6} />
+      <MiniChart marks={[{ place: p, tone: "focus" as const }, ...neighbours.map((q) => ({ place: q, tone: isHeld(q, now) ? "ours" as const : "theirs" as const }))]} height={340} minSpan={150} />
 
       {snapshots.length > 1 && (
         <section className="held-track">

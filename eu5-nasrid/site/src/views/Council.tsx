@@ -39,6 +39,8 @@ export default function Council() {
   const snap = snapshots[i];
   const seats = useMemo(() => hemicycle(SEATS, 150, 300), []);
 
+  if (!snapshots.some((s) => s.estates.length)) return <CouncilWaiting seats={seats} />;
+
   // Largest-remainder allocation of 100 seats by share of power.
   const present = ARC_ORDER.filter((id) => snap.estates.some((e) => e.id === id))
     .concat(snap.estates.map((e) => e.id).filter((id) => !ARC_ORDER.includes(id)));
@@ -193,5 +195,32 @@ function MoodGrid() {
         })}
       </div>
     </section>
+  );
+}
+
+/** Before any checkpoint has recorded the estates: the chamber stands empty. */
+function CouncilWaiting({ seats }: { seats: { x: number; y: number }[] }) {
+  return (
+    <div className="page council-page">
+      <PageHead
+        title="The Council"
+        ar="الديوان"
+        lede="A hundred seats, divided as power is divided, with the crown at the centre of the arc. The chamber fills once a checkpoint records the estates."
+      />
+      <div className="council-stage">
+        <svg viewBox="-340 -330 680 380" className="hemi" role="img" aria-label="The council chamber, empty">
+          {seats.map((s, k) => <circle key={k} cx={s.x} cy={s.y} r={9.5} className="seat empty" />)}
+          <g className="throne" transform="translate(0,-20)">
+            <path d="M-34,10 v-46 a34,34 0 0 1 68,0 v46 Z" />
+            <path d="M-20,10 v-30 a20,20 0 0 1 40,0 v30" className="arch" />
+          </g>
+        </svg>
+        <p className="council-empty">
+          No estate figures yet. The start-date save was taken before the game's first months had run, and the game only
+          settles each estate's power and satisfaction after a few monthly ticks. The first checkpoint after that fills
+          this chamber, and every one after it moves the seats.
+        </p>
+      </div>
+    </div>
   );
 }
