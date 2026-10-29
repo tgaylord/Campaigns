@@ -112,4 +112,4 @@ Then grep the staged files for `Users`, `trent`, `C:\`, `/home/`, `/mnt/`, `stea
 | Campaign | Status | Date | Notes |
 |---|---|---|---|
 | eu5-nasrid | adopted | 2026-10-28 | origin; will adopt the decoder and extend it to 1.4 |
-| Rome (EU5) | pending | | onboarding plus publishing the decoder |
+| eu5-rome | adopted | 2026-10-28 | folder `eu5-rome/` with SYSTEMS.md, snapshots, registers and tools; decoder published at `shared/tools/eu5-save-decoder/` (1.3.11 table); chronicle stays in Claude Docs for now |
