@@ -14,5 +14,21 @@
    "intervener": "CAS"
   },
   "source": "Trent's account (late April; the exact day isn't given)"
+ },
+ {
+  "id": "1344-05-29-jamaa-called",
+  "date": "1344-05-29",
+  "type": "law_change",
+  "people": [
+   "yusuf-i"
+  ],
+  "title": "The Jamāʿa is called, opening the change of the Distribution of Power from the traditional settlement to one that favours the amir",
+  "data": {
+   "law": "distribution_of_power_law",
+   "from": "dop_traditional_distribution_of_power",
+   "to": "dop_favor_the_ruler",
+   "status": "in progress"
+  },
+  "source": "Trent's account; the law options from the game files"
  }
 ]
