@@ -263,9 +263,9 @@ export default function Lands() {
                 const ly = snap.subjects.find((x) => x.country === c?.name)?.loyalty;
                 if (!ly) return <span className="row muted-s">Loyalty not read at this checkpoint</span>;
                 return (
-                  <span className={`row loyalty ${ly.value < 50 ? "disloyal" : ""}`}>
-                    <span>Loyalty <b>{ly.value}</b>{ly.trend ? `, ${ly.trend}` : ""}{ly.value < 50 ? "; disloyal below 50" : ""}</span>
-                    <span className="lbar" aria-hidden="true"><i style={{ width: `${ly.value}%` }} /><em /></span>
+                  <span className={`row loyalty ${(ly.value ?? 100) < 50 || ly.status === "disloyal" ? "disloyal" : ""}`}>
+                    <span>{ly.value != null ? <>Loyalty <b>{ly.value}</b>{ly.trend ? `, ${ly.trend}` : ""}{ly.value < 50 ? "; disloyal below 50" : ""}</> : <>A <b>{ly.status ?? "loyal"}</b> subject</>}</span>
+                    {ly.value != null && <span className="lbar" aria-hidden="true"><i style={{ width: `${ly.value}%` }} /><em /></span>}
                   </span>
                 );
               })()}

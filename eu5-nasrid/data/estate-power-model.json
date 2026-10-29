@@ -272,6 +272,12 @@
    "estate": "crown",
    "delta": 0.1,
    "source": "royal_decree reform, 27 January 1343: crown power +10% (game files)."
+  },
+  {
+   "from": "1344-05-29",
+   "estate": "crown",
+   "delta": 0.43,
+   "source": "distribution_of_power_law: dop_traditional_distribution_of_power (crown power -10%) replaced by dop_favor_the_ruler (crown power +33%) on 29 May 1344 (game files)."
   }
  ]
 }

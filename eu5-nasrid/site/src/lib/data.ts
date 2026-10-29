@@ -28,7 +28,7 @@ export type Estate = { id: string; name: string; power: number | null; satisfact
 export type Snapshot = {
   id: string; date: string; checkpoint: string; note?: string;
   ruler: string; heir: string | null; regent: string | null; capital: string; rank: string; locations: number;
-  overlord: { country: string; type: string } | null; subjects: { country: string; type: string; loyalty?: { value: number; trend?: string; source: string } }[];
+  overlord: { country: string; type: string } | null; subjects: { country: string; type: string; loyalty?: { value: number | null; status?: "loyal" | "disloyal"; trend?: string; source: string } }[];
   allies: string[]; rivals: string[]; cabinet: { person: string; role: string }[];
   crownPower?: number; politicalInfluence?: number;
   population: { total: number; cultures: Record<string, number>; religions: Record<string, number> };

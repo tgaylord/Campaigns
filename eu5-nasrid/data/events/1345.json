@@ -1,0 +1,102 @@
+[
+ {
+  "id": "1345-01-27-stability",
+  "date": "1345-01-27",
+  "type": "player_note",
+  "title": "Stability has fallen from 34 to 7 since May 1343",
+  "data": {
+   "stability": {
+    "from": 34.3,
+    "to": 6.6
+   }
+  },
+  "source": "checkpoint 1345-01-27 (the cause is not in the save)"
+ },
+ {
+  "id": "1345-01-27-loans",
+  "date": "1345-01-27",
+  "type": "estate_change",
+  "title": "Six more estate loans repaid: the debt is down to 288 ducats, with a surplus of 9 a month",
+  "data": {
+   "debt": {
+    "from": 436.8,
+    "to": 287.8
+   },
+   "loans": {
+    "from": 18,
+    "to": 12
+   }
+  },
+  "source": "checkpoint 1345-01-27"
+ },
+ {
+  "id": "1345-01-27-sovereignty",
+  "date": "1345-01-27",
+  "type": "strait_change",
+  "title": "Sovereignty stands at 50.15, the barest margin above the line; influence is almost at the middle of the channel, −3.6",
+  "data": {
+   "sovereignty": {
+    "from": 50.7,
+    "to": 50.15
+   },
+   "influence": {
+    "from": -10.4,
+    "to": -3.6
+   }
+  },
+  "source": "checkpoint 1345-01-27"
+ },
+ {
+  "id": "1345-01-27-taifa-loyalty",
+  "date": "1345-01-27",
+  "type": "diplomacy",
+  "places": [
+   "balansiyya",
+   "jumalla"
+  ],
+  "people": [
+   "joan-doriola",
+   "juan-manuel-enriquez"
+  ],
+  "title": "The Ṭāʾifa of Balansiyya is now a loyal subject; Mursiyya, at 35, is still disloyal",
+  "data": {
+   "VAL": "loyal",
+   "MUC": 35
+  },
+  "source": "Trent's account"
+ },
+ {
+  "id": "1345-01-27-court",
+  "date": "1345-01-27",
+  "type": "marriage",
+  "people": [
+   "yusuf-i",
+   "sayyida-of-fezzan",
+   "najib"
+  ],
+  "title": "By this checkpoint Yūsuf has married Sayyida of Fezzan, and Najīb of the ʿulamāʾ, a man of rare gifts, is at court",
+  "data": {},
+  "source": "checkpoint 1345-01-27"
+ },
+ {
+  "id": "1345-01-27-conversion",
+  "date": "1345-01-27",
+  "type": "player_note",
+  "places": [
+   "balansiyya",
+   "jumalla"
+  ],
+  "title": "Balansiyya now 80,000 Muslims to 101,000 Christians; Mursiyya two-thirds Muslim",
+  "data": {
+   "VAL": {
+    "sunni": 80278,
+    "catholic": 101116
+   },
+   "MUC": {
+    "sunni": 6088,
+    "catholic": 2683
+   }
+  },
+  "source": "checkpoint 1345-01-27"
+ }
+]

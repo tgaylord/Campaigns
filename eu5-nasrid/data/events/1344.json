@@ -1,5 +1,20 @@
 [
  {
+  "id": "1344-03-23-castile-aragon-alliance",
+  "date": "1344-03-23",
+  "type": "diplomacy",
+  "people": [
+   "alfonso-xi",
+   "maria-of-portugal"
+  ],
+  "title": "Castile and Aragon announce an alliance, and Castile and Portugal seal an Iberian wedding pact the same day: the three crowns of Iberia stand together",
+  "data": {
+   "CAS-ARA": "alliance",
+   "CAS-POR": "iberian_wedding_pact"
+  },
+  "source": "checkpoint 1345-01-27; Trent's account"
+ },
+ {
   "id": "1344-04-castile-intervenes-portugal",
   "date": "1344-04-30",
   "type": "war_joined",
@@ -16,36 +31,41 @@
   "source": "Trent's account (late April; the exact day isn't given)"
  },
  {
-  "id": "1344-05-29-jamaa-called",
+  "id": "1344-05-12-jamaa-sits",
+  "date": "1344-05-12",
+  "type": "player_note",
+  "title": "The Jamāʿa sits. It was called to seize the moment in the north, but with the three crowns allied and the realm still in debt, the sultan turns it to strengthening the crown and paying what is owed",
+  "data": {},
+  "source": "Trent's account; the sitting date from checkpoint 1345-01-27"
+ },
+ {
+  "id": "1344-05-29-favor-the-ruler",
   "date": "1344-05-29",
   "type": "law_change",
   "people": [
    "yusuf-i"
   ],
-  "title": "The Jamāʿa is called, opening the change of the Distribution of Power from the traditional settlement to one that favours the amir",
+  "title": "The Distribution of Power now favours the ruler: crown power +33% in place of −10%, the estates' satisfaction target lower, a pull toward absolutism",
   "data": {
    "law": "distribution_of_power_law",
    "from": "dop_traditional_distribution_of_power",
-   "to": "dop_favor_the_ruler",
-   "status": "in progress"
+   "to": "dop_favor_the_ruler"
   },
-  "source": "Trent's account; the law options from the game files"
+  "source": "checkpoint 1345-01-27; effects from the game files"
  },
  {
-  "id": "1344-05-29-jamaa-harem",
-  "date": "1344-05-29",
+  "id": "1344-10-11-royal-harem",
+  "date": "1344-10-11",
   "type": "law_change",
   "people": [
    "yusuf-i"
   ],
-  "title": "The same Jamāʿa begins to enshrine the royal harem in the customs of the court, the first step toward entrenching the state's offices within the sultan's household",
+  "title": "The royal harem enters the customs of the court in place of the aristocratic court, opening the harem laws",
   "data": {
    "law": "royal_court_customs_law",
    "from": "aristocratic_court_policy",
-   "to": "harem_policy",
-   "unlocks": "harem_law",
-   "status": "in progress"
+   "to": "harem_policy"
   },
-  "source": "Trent's account; the law options from the game files"
+  "source": "checkpoint 1345-01-27; effects from the game files"
  }
 ]

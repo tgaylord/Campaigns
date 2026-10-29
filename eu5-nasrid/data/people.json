@@ -539,7 +539,7 @@
   "born": "1328-10-27",
   "female": true,
   "roles": [
-   "betrothed of Yūsuf I"
+   "wife of Yūsuf I"
   ],
   "stats": {
    "adm": 17,
@@ -549,7 +549,7 @@
   "traits": [
    "child_gregarious"
   ],
-  "note": "Daughter of the ruler of Fezzan, of the house of Murzuq. Betrothed to Yūsuf on 16 November 1337, aged nine. Her father's name is the game's (name_salmama); its proper form is unconfirmed."
+  "note": "Daughter of the ruler of Fezzan, of the house of Murzuq. Betrothed to Yūsuf on 16 November 1337, aged nine. Her father's name is the game's (name_salmama); its proper form is unconfirmed. Married to Yūsuf I by January 1345."
  },
  {
   "id": "gideon-ben-joshua",
@@ -724,5 +724,26 @@
   },
   "traits": [],
   "note": "Queen Maria's younger brother; leads the revolt against her that began on 25 October 1340."
+ },
+ {
+  "id": "najib",
+  "name": "Najīb",
+  "nameArabic": "نجيب",
+  "nameGame": "Najib",
+  "gameId": 33001,
+  "born": "1317-01-15",
+  "roles": [
+   "of the ʿulamāʾ"
+  ],
+  "stats": {
+   "adm": 85,
+   "dip": 96,
+   "mil": 76
+  },
+  "traits": [
+   "entrepreneur",
+   "stubborn"
+  ],
+  "note": "A man of the ʿulamāʾ who appears at court by January 1345, with gifts to rival any in the realm (85/96/76)."
  }
 ]
