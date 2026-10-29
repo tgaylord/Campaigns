@@ -24,6 +24,8 @@ Crown, over every pop in every owned location:
                 x (1 + 0.5 x (mean control - 0.5))
 Each estate's figure is then multiplied by its correction from the reading
 (screen / model at that moment), and shares are taken of the total.
+Dated 'adjustments' in the model file (such as the crown-power penalty for debt
+to the estates) are added to the country modifiers for saves after their date.
 """
 import argparse, collections, json, os, re, sys
 
@@ -42,7 +44,8 @@ W, LOCAL = M['powerPerPop'], M['localBonus']
 P_SHARE, P_EFF = M['promotionShare'], M['promotionEffect']
 key = a.calibrate or a.reading or sorted(M['readings'])[-1]
 R = M['readings'][key]
-CM, TOL = R['countryModifiers'], R.get('tolerance', 0.0)
+CM, TOL = dict(R['countryModifiers']), R.get('tolerance', 0.0)
+ADJ = []  # dated changes to the country modifiers since the reading (e.g. debt to the estates)
 ESTATES = ['crown', 'nobles', 'clergy', 'burghers', 'peasants', 'dhimmi']
 
 
@@ -52,6 +55,10 @@ def rd(name):
 
 meta = rd('metadata')
 date = re.search(r'\n\tdate=([\d.]+)', meta).group(1)
+iso = '-'.join(f'{int(x):02d}' if k else x for k, x in enumerate(date.split('.')))
+for adj in M.get('adjustments', []):
+    if key < adj['from'] <= iso:
+        CM[adj['estate']] = CM.get(adj['estate'], 0) + adj['delta']; ADJ.append(adj)
 ct = rd('countries')
 i = ct.find('\n\ttags={'); j = ct.find('\n\t}', i)
 TAGS = {int(k): v for k, v in re.findall(r'\n\t\t(\d+)=([A-Za-z0-9_]+)(?=\n)', ct[i:j])}
@@ -118,7 +125,7 @@ if a.calibrate:
 corr = R.get('corrections', {e: 1.0 for e in ESTATES})
 power = {e: model[e] * corr[e] for e in ESTATES}
 tot = sum(power.values())
-out = {'date': date, 'reading': key, 'mean_control': round(mean_c, 4),
+out = {'date': date, 'reading': key, 'adjustments': ADJ, 'mean_control': round(mean_c, 4),
        'model': {e: round(v, 2) for e, v in model.items()},
        'power': {e: round(v, 2) for e, v in power.items()},
        'shares': {e: round(100 * v / tot, 2) for e, v in power.items()},

@@ -179,5 +179,13 @@
    },
    "calibratedOn": "1337.11.16"
   }
- }
+ },
+ "adjustments": [
+  {
+   "from": "1340-03-09",
+   "estate": "crown",
+   "delta": -0.6581,
+   "source": "Trent's screenshot: 'Impact of Debt to the Estate', crown power -65.81% with 1,351.73 owed to the estates. Scales with the debt; replace with the figure at each later reading."
+  }
+ ]
 }

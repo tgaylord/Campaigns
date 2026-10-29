@@ -2,16 +2,30 @@
  {
   "id": "1340-03-09-estate-loans",
   "date": "1340-03-09",
-  "type": "player_note",
-  "title": "The war is paid for with loans from the estates: 1,359 ducats owed, and the estates willing to lend 2,300 more",
+  "type": "estate_change",
+  "title": "The war is paid for with loans from the estates: about 1,350 ducats owed, and the estates willing to lend more; the debt cuts the crown's power by two thirds",
   "wars": [
    "war-on-aragon"
   ],
   "data": {
-   "debt": 1359,
-   "furtherCredit": 2300,
-   "lenders": "the estates"
+   "debt": 1351.73,
+   "interestPerMonth": 7.43,
+   "bankInterest": "9.35%",
+   "bondInterest": "5.28%",
+   "creditworthiness": {
+    "rating": 42,
+    "target": 51,
+    "monthly": 0.86
+   },
+   "furtherCredit": "2,300 offered (Trent's account); 25.67 borrowable on the credit screen",
+   "foreignLoans": 0,
+   "bonds": 0,
+   "impactOfDebtToTheEstate": {
+    "crownPower": "-65.81%",
+    "monthlyRighteousness": -0.02,
+    "monthlyDoom": 0.13
+   }
   },
-  "source": "Trent's account"
+  "source": "Trent's account and screenshots"
  }
 ]
