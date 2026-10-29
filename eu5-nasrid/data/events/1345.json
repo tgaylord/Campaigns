@@ -68,13 +68,11 @@
  {
   "id": "1345-01-27-court",
   "date": "1345-01-27",
-  "type": "marriage",
+  "type": "player_note",
   "people": [
-   "yusuf-i",
-   "sayyida-of-fezzan",
    "najib"
   ],
-  "title": "By this checkpoint Yūsuf has married Sayyida of Fezzan, and Najīb of the ʿulamāʾ, a man of rare gifts, is at court",
+  "title": "Najīb of the ʿulamāʾ, a man of rare gifts, is at court",
   "data": {},
   "source": "checkpoint 1345-01-27"
  },

@@ -39,6 +39,18 @@
   "source": "Trent's account; the sitting date from checkpoint 1345-01-27"
  },
  {
+  "id": "1344-jamaa-marriage",
+  "date": "1344-05-12",
+  "type": "marriage",
+  "people": [
+   "yusuf-i",
+   "sayyida-of-fezzan"
+  ],
+  "title": "While the Jamāʿa sits, Yūsuf marries Sayyida of Fezzan, betrothed to him since 1337",
+  "data": {},
+  "source": "Trent's account (during the Jamāʿa; the exact day isn't given). The 1343 save has Yūsuf unmarried, the 1345 save married."
+ },
+ {
   "id": "1344-05-29-favor-the-ruler",
   "date": "1344-05-29",
   "type": "law_change",
@@ -58,14 +70,15 @@
   "date": "1344-10-11",
   "type": "law_change",
   "people": [
-   "yusuf-i"
+   "yusuf-i",
+   "sayyida-of-fezzan"
   ],
-  "title": "The royal harem enters the customs of the court in place of the aristocratic court, opening the harem laws",
+  "title": "The royal harem enters the customs of the court in place of the aristocratic court, opening the harem laws; the sultan's own marriage that year was part of the inspiration",
   "data": {
    "law": "royal_court_customs_law",
    "from": "aristocratic_court_policy",
    "to": "harem_policy"
   },
-  "source": "checkpoint 1345-01-27; effects from the game files"
+  "source": "checkpoint 1345-01-27; effects from the game files; the link to the marriage is Trent's account"
  }
 ]
