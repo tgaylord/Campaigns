@@ -485,6 +485,28 @@
   "source": "checkpoint 1340-08-28"
  },
  {
+  "id": "1340-08-28-taifa-loyalty",
+  "date": "1340-08-28",
+  "type": "diplomacy",
+  "title": "Both ṭāʾifas begin below 50 loyalty, and so as disloyal subjects: Balansiyya at 47 and rising, Mursiyya at 27 and rising more slowly",
+  "places": [
+   "balansiyya",
+   "jumalla"
+  ],
+  "people": [
+   "joan-doriola",
+   "juan-manuel-enriquez"
+  ],
+  "data": {
+   "loyalty": {
+    "VAL": 47,
+    "MUC": 27
+   },
+   "disloyal_below": 50
+  },
+  "source": "Trent's account (loyalty is not in the save)"
+ },
+ {
   "id": "1340-10-28-moroccan-peace",
   "date": "1340-10-28",
   "type": "peace",

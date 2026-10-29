@@ -123,7 +123,9 @@ const Snapshot = z.object({
   rank: z.string(),
   locations: z.number(),
   overlord: z.object({ country: z.string(), type: z.string() }).nullable(),
-  subjects: z.array(z.object({ country: z.string(), type: z.string() })).default([]),
+  subjects: z.array(z.object({ country: z.string(), type: z.string(),
+    /** 0–100; below 50 the subject is disloyal. Not in the save: read off the game by Trent. */
+    loyalty: z.object({ value: z.number(), trend: z.string().optional(), source: z.string() }).optional() })).default([]),
   allies: z.array(z.string()).default([]),
   rivals: z.array(z.string()).default([]),
   cabinet: z.array(z.object({ person: id, role: z.string() })).default([]),

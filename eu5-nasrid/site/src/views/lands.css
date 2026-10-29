@@ -64,3 +64,10 @@
 .lands-table .area-row.subject th { color: var(--plaster); }
 .lands-table .area-row.subject .ar { font-family: var(--naskh); color: var(--gilt); margin-right: 0.6rem; }
 .lands-table .area-row .sub-note { margin-left: 0.8rem; font-family: var(--sans); font-size: 0.78rem; color: var(--mist); }
+.area-card .loyalty { display: grid; gap: 0.25rem; margin-top: 0.15rem; }
+.area-card .loyalty.disloyal { color: #f0a090; }
+.area-card .lbar { position: relative; height: 6px; background: rgba(158, 167, 199, 0.15); border-radius: 3px; }
+.area-card .lbar i { display: block; height: 100%; border-radius: 3px; background: #5598e7; }
+.area-card .loyalty.disloyal .lbar i { background: #c0442e; }
+.area-card .lbar em { position: absolute; left: 50%; top: -3px; bottom: -3px; width: 1px; background: var(--mist); }
+.area-card .muted-s { color: var(--dusk); }

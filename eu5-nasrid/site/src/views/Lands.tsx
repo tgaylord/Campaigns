@@ -259,6 +259,16 @@ export default function Lands() {
               <span className="row">Ṭāʾifa since {western(s.since ?? snap.date)}{s.ruler ? <>, under <b>{personById.get(s.ruler)?.name}</b></> : null}</span>
               <span className="row"><b>{ls.length}</b> {ls.length === 1 ? "location" : "locations"}, <b>{compact(pop)}</b> people, <b>{pct(muslims(ls) / (pop || 1))}</b> Muslim</span>
               <span className="row">Control <b>{pct(wmean(ls, (l) => l.control))}</b>; a {faithName(s.religion ?? "")}, {cultureName(s.culture ?? "")} {s.rank ?? ""}</span>
+              {(() => {
+                const ly = snap.subjects.find((x) => x.country === c?.name)?.loyalty;
+                if (!ly) return <span className="row muted-s">Loyalty not read at this checkpoint</span>;
+                return (
+                  <span className={`row loyalty ${ly.value < 50 ? "disloyal" : ""}`}>
+                    <span>Loyalty <b>{ly.value}</b>{ly.trend ? `, ${ly.trend}` : ""}{ly.value < 50 ? "; disloyal below 50" : ""}</span>
+                    <span className="lbar" aria-hidden="true"><i style={{ width: `${ly.value}%` }} /><em /></span>
+                  </span>
+                );
+              })()}
             </div>
           );
         })}

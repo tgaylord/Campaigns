@@ -20,11 +20,21 @@
  "subjects": [
   {
    "country": "Valencia",
-   "type": "taifa"
+   "type": "taifa",
+   "loyalty": {
+    "value": 47,
+    "trend": "rising",
+    "source": "Trent's reading"
+   }
   },
   {
    "country": "Murcia",
-   "type": "taifa"
+   "type": "taifa",
+   "loyalty": {
+    "value": 27,
+    "trend": "rising more slowly",
+    "source": "Trent's reading"
+   }
   }
  ],
  "allies": [
