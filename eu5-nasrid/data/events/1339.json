@@ -397,5 +397,25 @@
    "result": "under way"
   },
   "source": "Trent's screenshots"
+ },
+ {
+  "id": "1339-11-08-volunteers-withdraw",
+  "date": "1339-11-08",
+  "type": "player_note",
+  "title": "Short of supply, the Volunteers of the Faith fall back while the main army keeps the siege of Uryūla; more baggage mercenaries are raised to feed the host",
+  "people": [
+   "yahya-rahhu",
+   "ibn-al-khatib"
+  ],
+  "places": [
+   "uryula"
+  ],
+  "wars": [
+   "war-on-aragon"
+  ],
+  "data": {
+   "after": "the Day of Uryūla; exact date to come from the next save"
+  },
+  "source": "Trent's account"
  }
 ]
