@@ -9,7 +9,7 @@ import {
 import { PageHead } from "../components/bits";
 import "./scroll.css";
 
-const PX_PER_YEAR = 70;
+const PX_PER_YEAR = 150; // the campaign moves a few months per session: give each year room
 const BANDS = [
   { id: "years", h: 54 },
   { id: "eras", h: 46, label: "Books of the chronicle" },
@@ -17,7 +17,7 @@ const BANDS = [
   { id: "wars", h: 64, label: "Wars" },
   { id: "strait", h: 90, label: "The Strait" },
   { id: "estates", h: 90, label: "The estates" },
-  { id: "chronicle", h: 70, label: "The chronicle" },
+  { id: "chronicle", h: 100, label: "The chronicle" },
   { id: "events", h: 56, label: "Events" },
 ];
 
@@ -27,6 +27,9 @@ const EVENT_GROUP: Record<string, string> = {
   estate_change: "realm", law_change: "realm", reform: "realm", territory_change: "realm",
   strait_change: "strait", gc_change: "strait", situation: "strait", formable: "strait", player_note: "court",
 };
+
+/** The illuminated initial: the first letter after the chronicle's "Of the". */
+const initialOf = (title: string) => title.replace(/^Of (the )?/, "").replace(/^(The|A)\s+/, "")[0]?.toUpperCase() ?? "";
 
 export default function Scroll() {
   const ref = useRef<HTMLDivElement>(null);
@@ -45,6 +48,22 @@ export default function Scroll() {
   BANDS.forEach((b) => { tops[b.id] = acc; acc += b.h; });
   const H = acc;
   const end = snapshots.length ? snapshots[snapshots.length - 1].date : `${t1}-01-01`;
+
+  // Chronicle titles take the first of three lines where they don't overlap a neighbour;
+  // a title with no room shows on hover only.
+  const chronLabels = useMemo(() => {
+    const used: [number, number][][] = [[], [], []];
+    // Newest first, so the latest entries are the ones that keep their titles.
+    return [...chronicle].reverse().map((c) => {
+      const xx = x(yearFrac(c.date));
+      const short = c.title.replace(/^Of (the )?/, "");
+      const label = short.length > 30 ? short.slice(0, 29).replace(/[\s,]+\S*$/, "") + "…" : short;
+      const half = (label.length * 5.7) / 2 + 6;
+      const lane = used.findIndex((l) => l.every(([a, b]) => xx + half < a || xx - half > b));
+      if (lane >= 0) used[lane].push([xx - half, xx + half]);
+      return { c, xx, lane, label: label[0].toUpperCase() + label.slice(1) };
+    });
+  }, [x]);
 
   // Vertical wheel scrolls the roll sideways.
   useEffect(() => {
@@ -177,14 +196,13 @@ export default function Scroll() {
 
             {layers.map((l) => <path key={l.key} d={estArea(l as any) ?? ""} fill={estateColor(l.key, "folio")} fillOpacity={0.85} stroke="#eadcbf" strokeWidth={1} />)}
 
-            {chronicle.map((c, k) => {
-              const xx = x(yearFrac(c.date));
+            {chronLabels.map(({ c, xx, lane, label }) => {
               return (
                 <Link key={c.id} to={`/chronicle/${c.id}`} className="chron">
                   <g transform={`translate(${xx},${tops.chronicle + 24})`}>
                     <circle r={10} />
-                    <text y={4} textAnchor="middle" className="initial">{c.title.replace(/^(The|A)\s+/, "")[0]}</text>
-                    <text y={k % 2 ? 36 : 30} x={0} textAnchor="middle" className="chron-title">{c.title.length > 28 ? c.title.slice(0, 27) + "…" : c.title}</text>
+                    <text y={4} textAnchor="middle" className="initial">{initialOf(c.title)}</text>
+                    {lane >= 0 && <text y={30 + lane * 17} x={0} textAnchor="middle" className="chron-title">{label}</text>}
                     <title>{`${hijri(c.date).text} AH: ${c.title}`}</title>
                   </g>
                 </Link>

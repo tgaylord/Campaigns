@@ -36,8 +36,9 @@ export default function ChronicleIndex() {
                 <span className="book-no">Book {b + 1}</span>
                 <h2>{era.title}</h2>
                 <span className="span">
-                  <span className="ar">{arabicDigits(hijri(era.start).y)}–{era.end ? arabicDigits(hijri(era.end).y) : ""}</span>
-                  {" "}{year(era.start)}–{era.end ? year(era.end) : "the present"}
+                  {/* Isolated right-to-left, so the dash of an open range can't jump to the wrong side. */}
+                  <bdi className="ar" dir="rtl">{arabicDigits(hijri(era.start).y)}{era.end ? `–${arabicDigits(hijri(era.end).y)}` : ""}</bdi>
+                  {" "}{era.end ? `${year(era.start)}–${year(era.end)}` : `${year(era.start)} to the present`}
                 </span>
               </header>
               {era.summary && <p className="summary">{era.summary}</p>}

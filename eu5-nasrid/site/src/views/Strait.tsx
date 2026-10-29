@@ -24,6 +24,14 @@ export default function Strait() {
   const snaps = snapshots.filter((s) => s.strait);
   const [hover, setHover] = useState<number | null>(null);
   const pan = useRef<HTMLDivElement>(null);
+  // On a phone the chart is drawn wider and its labels larger, so lanes must allow for wider text.
+  const [narrow, setNarrow] = useState(() => typeof window !== "undefined" && window.matchMedia("(max-width: 40rem)").matches);
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 40rem)");
+    const on = () => setNarrow(mq.matches);
+    mq.addEventListener("change", on);
+    return () => mq.removeEventListener("change", on);
+  }, []);
   // On a narrow screen the channel scrolls sideways; open it at the present.
   useEffect(() => { if (pan.current) pan.current.scrollLeft = pan.current.scrollWidth; }, []);
   const t0 = snaps.length ? yearFrac(snaps[0].date) : 0;
@@ -38,18 +46,25 @@ export default function Strait() {
   const marks = events.filter((e) => ["strait_change", "war_declared", "peace", "situation"].includes(e.type)
     && yearFrac(e.date) >= t0 - 0.8 && yearFrac(e.date) <= t1 + 0.8);
 
-  // Event labels sit in lanes in the southern water, each lane taking the next label that fits.
+  // Event labels sit in lanes in the southern water. A label that would run off the right edge
+  // is set to the left of its buoy; each lane takes the next label that doesn't overlap.
+  const MAX_CHARS = narrow ? 46 : 70;
   const lanes = useMemo(() => {
-    const ends: number[] = [];
-    return marks.map((e) => {
+    const used: [number, number][][] = [];
+    const charW = narrow ? 8.4 : 6.3;
+    return [...marks].reverse().map((e) => {
       const xx = x(yearFrac(e.date));
-      const w = 9 + (EVENT_LABEL[e.type].length + e.title.length + 2) * 6.3;
-      let lane = ends.findIndex((end) => end < xx - 6);
-      if (lane === -1) { lane = ends.length; ends.push(0); }
-      ends[lane] = xx + w;
-      return { e, lane, xx };
+      const full = `${EVENT_LABEL[e.type]}: ${e.title}`;
+      const text = full.length > MAX_CHARS ? full.slice(0, MAX_CHARS - 1).replace(/[\s,;:]+\S*$/, "") + "…" : full;
+      const w = 9 + text.length * charW;
+      const left = xx + w > W - 12;
+      const span: [number, number] = left ? [xx - w - 6, xx + 6] : [xx - 6, xx + w + 6];
+      let lane = used.findIndex((l) => l.every(([a, b]) => span[1] < a || span[0] > b));
+      if (lane === -1) { lane = used.length; used.push([]); }
+      used[lane].push(span);
+      return { e, lane, xx, left, text, full };
     });
-  }, [marks, x]);
+  }, [marks, x, narrow, MAX_CHARS]);
 
   const years: number[] = [];
   const step = Math.max(1, Math.ceil((t1 - t0) / 10));
@@ -84,7 +99,7 @@ export default function Strait() {
             <rect x={0} y={y(-50)} width={W} height={y(50) - y(-50)} className="channel" />
             <rect width={W} height={H} fill="url(#swell)" />
             <line x1={0} x2={W} y1={y(0)} y2={y(0)} className="midline" />
-            <text x={W - 70} y={y(-50) + 18} className="channel-label" textAnchor="end">The channel: influence between −50 and +50</text>
+            <text x={W - 24} y={y(50) - 10} className="channel-label" textAnchor="end">The channel: influence between −50 and +50</text>
 
             <path d={coast(SHORE, 1, 1.3)} className="shore" />
             <path d={coast(H - SHORE, -1, 4.1)} className="shore" />
@@ -98,21 +113,21 @@ export default function Strait() {
             </g>
 
             {years.map((yy) => (
-              <g key={yy} className="year" transform={`translate(${x(yy)},${TOP - 26})`}>
-                <line y1={18} y2={BOTTOM - TOP + 52} />
+              <g key={yy} className="year" transform={`translate(${x(yy)},${TOP + 2})`}>
+                <line y1={20} y2={BOTTOM - TOP + 24} />
                 <text textAnchor="middle" className="ar">{arabicDigits(hijri(`${yy}-06-01`).y)}</text>
                 <text textAnchor="middle" y={14} className="g">{yy}</text>
               </g>
             ))}
 
-            {lanes.filter((l) => l.lane < 3).map(({ e, lane, xx }) => {
-              const ly = y(62) + lane * 26;
+            {lanes.filter((l) => l.lane < 4).map(({ e, lane, xx, left, text, full }) => {
+              const ly = y(60) + lane * (narrow ? 30 : 26);
               return (
                 <g key={e.id} className="buoy">
                   <line x1={xx} x2={xx} y1={y(0) + 4} y2={ly - 4} />
                   <circle cx={xx} cy={y(0)} r={3.5} />
                   <path d={`M${xx},${ly - 5} l5,5 l-5,5 l-5,-5 Z`} />
-                  <text x={xx + 9} y={ly + 4}>{EVENT_LABEL[e.type]}: {e.title}</text>
+                  <text x={left ? xx - 9 : xx + 9} y={ly + 4} textAnchor={left ? "end" : "start"}><title>{full}</title>{text}</text>
                 </g>
               );
             })}
@@ -132,6 +147,8 @@ export default function Strait() {
                   <line y1={0} y2={-m} className="mast" />
                   <path d={`M0,${-m} l22,6 l-22,8 Z`} className="flag" />
                   <ellipse rx={9} ry={3.5} className="hull" />
+                  <text y={-m - 8} textAnchor="middle" className="val sov">{Math.round(s.strait!.sovereignty)}</text>
+                  <text y={20} textAnchor="middle" className="val inf">{signed(Math.round(s.strait!.influence))}</text>
                 </g>
               );
             })}
@@ -150,6 +167,7 @@ export default function Strait() {
             <span><i className="k-banner" /> Granada's banner at a checkpoint: its height is sovereignty</span>
             <span><i className="k-needed" /> The height it must clear: sovereignty 50</span>
             <span><i className="k-channel" /> The channel Granada must keep to</span>
+            <span>Above each mast, sovereignty; below each hull, influence (minus leans to Castile)</span>
           </figcaption>
         </figure>
       )}

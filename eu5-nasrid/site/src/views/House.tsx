@@ -1,7 +1,7 @@
-import { useMemo } from "react";
+import { useEffect, useMemo, useRef } from "react";
 import { Link } from "react-router-dom";
 import { hierarchy, tree } from "d3-hierarchy";
-import { people, year, arabicDigits, hijri } from "../lib/data";
+import { people, year, arabicDigits, hijri, latest, rulerAt } from "../lib/data";
 import type { Person } from "../lib/data";
 import { PageHead, StarRule } from "../components/bits";
 import "./house.css";
@@ -21,6 +21,12 @@ export default function House() {
   const mothers = others.filter((p) => people.some((c) => c.mother === p.id));
   const servants = others.filter((p) => !mothers.includes(p));
 
+  const reigning = rulerAt(latest.date);
+  // The line from the founder down to the reigning sultan, drawn heavier.
+  const line = new Set<string>();
+  for (let p = reigning; p; p = p.father ? people.find((q) => q.id === p!.father) : undefined) line.add(p.id);
+  const box = useRef<HTMLDivElement>(null);
+
   const layout = useMemo(() => {
     if (!roots.length) return null;
     const rootNode: Node = roots.length === 1 ? build(roots[0]) : { person: { id: "_", name: "", roles: [], reigns: [], female: false, traits: [], sample: false } as unknown as Person, children: roots.map(build) };
@@ -32,6 +38,15 @@ export default function House() {
     return { h, x0, x1, y1, skipRoot: roots.length !== 1 };
   }, [roots.length]);
 
+  // The tree is wider than the page: open it centred on the reigning sultan.
+  useEffect(() => {
+    const el = box.current;
+    const node = el?.querySelector<SVGGElement>(".member.reigning g");
+    if (!el || !node) return;
+    const r = node.getBoundingClientRect(), b = el.getBoundingClientRect();
+    el.scrollLeft += r.left + r.width / 2 - (b.left + b.width / 2);
+  }, [layout]);
+
   return (
     <div className="page house-page">
       <PageHead
@@ -41,17 +56,18 @@ export default function House() {
       />
 
       {layout ? (
-        <div className="roll-tree folio">
+        <>
+        <div className="roll-tree folio" ref={box} tabIndex={0} aria-label="Family tree; scroll sideways to see the whole house">
           <svg width={layout.x1 - layout.x0 + 260} viewBox={`${layout.x0 - 130} ${layout.skipRoot ? 60 : -90} ${layout.x1 - layout.x0 + 260} ${layout.y1 + (layout.skipRoot ? 140 : 290)}`} role="img" aria-label="Family tree of the Naṣrid house">
             {layout.h.links().filter((l) => !(layout.skipRoot && l.source.depth === 0)).map((l, k) => (
-              <path key={k} className="branch"
+              <path key={k} className={`branch ${line.has(l.target.data.person.id) ? "line" : ""}`}
                 d={`M${l.source.x},${l.source.y! + 118} C${l.source.x},${(l.source.y! + l.target.y!) / 2 + 40} ${l.target.x},${(l.source.y! + l.target.y!) / 2 + 10} ${l.target.x},${l.target.y! - 78}`} />
             ))}
             {layout.h.descendants().filter((n) => !(layout.skipRoot && n.depth === 0)).map((n) => {
               const p = n.data.person;
               const ruled = p.reigns.length > 0;
               return (
-                <Link key={p.id} to={`/people/${p.id}`} data-kind="person" data-id={p.id} className={`member ${ruled ? "sultan" : ""}`}>
+                <Link key={p.id} to={`/people/${p.id}`} data-kind="person" data-id={p.id} className={`member ${ruled ? "sultan" : ""} ${p.id === reigning?.id ? "reigning" : ""}`}>
                   <g transform={`translate(${n.x},${n.y})`}>
                     <circle r={52} className="roundel" />
                     <circle r={45} className="inner" />
@@ -68,6 +84,8 @@ export default function House() {
             })}
           </svg>
         </div>
+        {layout.x1 - layout.x0 + 260 > 900 && <p className="tree-hint ui muted">The house is wider than the page: scroll the roll sideways to see every branch. The heavier line runs from the founder to {reigning?.name ?? "the reigning sultan"}.</p>}
+        </>
       ) : <p className="muted">No members of the house recorded yet.</p>}
 
       {mothers.length > 0 && <>

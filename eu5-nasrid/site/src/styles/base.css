@@ -154,6 +154,9 @@ h1, h2, h3 { line-height: 1.15; font-weight: 700; text-wrap: balance; margin: 0;
   font: inherit; cursor: pointer; padding: 0.2rem 0.3rem; line-height: 1.2; text-align: center; white-space: nowrap;
 }
 .cp-select .ticks button.on { color: var(--gilt-hi); }
+/* the end ticks sit inside the track, so they never hang past the page edge on a phone */
+.cp-select .ticks button:first-child { transform: none; text-align: left; padding-left: 0; }
+.cp-select .ticks button:last-child { transform: translateX(-100%); text-align: right; padding-right: 0; }
 .cp-select .ticks .ah { display: block; font-family: var(--naskh); font-size: 0.95rem; }
 
 /* entity hover card */

@@ -20,6 +20,8 @@
 .strait-figure .course { fill: none; stroke: #f2d58e; stroke-width: 2; stroke-dasharray: 6 5; }
 
 .strait-figure .banner { cursor: pointer; outline: none; }
+.strait-figure .banner .val { font-family: var(--sans); font-size: 12px; fill: #ece6d8; font-variant-numeric: tabular-nums; }
+.strait-figure .banner .val.sov { fill: #f2d58e; }
 .strait-figure .banner .mast { stroke: #ece6d8; stroke-width: 2; }
 .strait-figure .banner .needed { stroke: #57b892; stroke-width: 6; stroke-opacity: 0.35; }
 .strait-figure .banner .flag { fill: #c0442e; stroke: #f2d58e; stroke-width: 1; }
@@ -58,5 +60,11 @@
 /* On a phone the channel keeps its size and scrolls sideways, opening at the present. */
 @media (max-width: 40rem) {
   .strait-pan { overflow-x: auto; }
-  .strait-pan svg { width: 900px; max-width: none; }
+  .strait-pan svg { width: 1150px; max-width: none; }
+  .strait-figure .buoy text { font-size: 16px; }
+  .strait-figure .banner .val { font-size: 15px; }
+  .strait-figure .channel-label { font-size: 15px; }
+  .strait-figure .year .ar { font-size: 21px; }
+  .strait-figure .year .g { font-size: 14px; }
+  .strait-tip { position: static; transform: none; margin-top: 0.5rem; white-space: normal; }
 }

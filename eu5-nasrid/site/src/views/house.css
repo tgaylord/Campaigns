@@ -1,4 +1,6 @@
-.roll-tree { padding: 2rem 1rem; overflow-x: auto; }
+.roll-tree { padding: 1.5rem 1rem 0.5rem; overflow-x: auto; scroll-behavior: auto; }
+.roll-tree:focus-visible { outline: 2px solid var(--gilt); outline-offset: 3px; }
+.tree-hint { font-size: 0.85rem; margin: 0.6rem 0 0; }
 .roll-tree svg { display: block; margin: 0 auto; max-width: none; height: auto; }
 .roll-tree .branch { fill: none; stroke: #7a5a34; stroke-width: 2.5; stroke-opacity: 0.6; }
 .roll-tree .roundel { fill: #e1cfa9; stroke: #7a5a34; stroke-width: 2; }
@@ -17,3 +19,5 @@
 .servants .ar { font-size: 1.6rem; color: var(--gilt); line-height: 1.3; }
 .servants .nm { font-size: 1.1rem; }
 .servants .roles { font-size: 0.8rem; color: var(--dusk); }
+.roll-tree .branch.line { stroke: #7a5a1c; stroke-width: 4; stroke-opacity: 0.85; }
+.roll-tree .reigning .roundel { stroke: #c0442e; stroke-width: 4; }

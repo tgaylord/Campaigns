@@ -16,6 +16,10 @@ const OFFICE: Record<string, string> = {
 export default function Court() {
   const [i, setI] = useState(snapshots.length - 1);
   const s = snapshots[i];
+  // One source for the crown's share: the estates panel (read or estimated), as on the Council.
+  const crownEstate = s.estates.find((e) => e.id === "crown");
+  const crown = crownEstate?.power ?? s.crownPower ?? null;
+  const crownEst = crownEstate?.power != null ? crownEstate.estimated : false;
   const prev = i > 0 ? snapshots[i - 1] : undefined;
   const ruler = personById.get(s.ruler);
   const heir = s.heir ? personById.get(s.heir) : undefined;
@@ -77,11 +81,11 @@ export default function Court() {
             </p>
           )}
           <div className="meters ui">
-            {s.crownPower != null && (
+            {crown != null && (
               <div className="meter-block">
-                <span className="k">Power of the crown{s.estates.find((e) => e.id === "crown")?.estimated ? ", estimated" : ""}</span>
-                <span className="v">{s.crownPower}%</span>
-                <span className="bar"><i style={{ width: `${s.crownPower}%` }} /></span>
+                <span className="k">Power of the crown{crownEst ? ", estimated" : ""}</span>
+                <span className="v">{crownEst ? "≈ " : ""}{crown}%</span>
+                <span className="bar"><i style={{ width: `${crown}%` }} /></span>
               </div>
             )}
             {s.politicalInfluence != null && (
