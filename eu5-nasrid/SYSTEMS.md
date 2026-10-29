@@ -83,7 +83,7 @@ Each campaign gets its own top-level folder; Rome or any other campaign would si
 - **Ruler, heir, consort, regent;** the cabinet and the head of the cabinet.
 - **Realm:** locations, areas and provinces held; capital; subjects and ṭā'ifas.
 - **Population:** total, by culture, by religion.
-- **Estates:** power and satisfaction for each estate, crown power, privileges held. Satisfaction, gold and tax rates come from the save; **share of power does not** (the game computes it as it runs). It comes from Trent's estate power panel where he has one, and otherwise from `tools/estate_power.py`, calibrated on the latest reading and marked as estimated on the site.
+- **Estates:** power and satisfaction for each estate, crown power, privileges held. Satisfaction, gold and tax rates come from the save; **share of power does not** (the game computes it as it runs). It comes from Trent's estate power panel where he has one, and otherwise from `tools/estate_power.py`, calibrated on the latest reading and marked as estimated on the site. A single estate's tooltip is enough for a partial reading: that estate is shown as read and the rest are scaled to the tooltip's total. Reforms, privileges and modifiers the save names but doesn't define are looked up on eu5db.com (1.4.5) and cited in the event or model entry.
 - **Government:** laws, reforms, policies, bureaucracies, political influence.
 - **Economy:** treasury, income and expenses, debt, main goods.
 - **Military:** levies, regiments, fleets and their locations. Named armies come later (see §5).

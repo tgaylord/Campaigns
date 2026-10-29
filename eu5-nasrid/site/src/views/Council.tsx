@@ -100,9 +100,23 @@ export default function Council() {
       </div>
       {hasPower && snap.estates.some((e) => e.estimated) && (
         <p className="council-note muted">
-          <span className="est-tag ui">Estimated</span> No estates screen was read at this checkpoint, so the shares are
-          worked out from the save by the game's own rules, calibrated on the nearest reading. Expect them within a point
-          or so of the game's figures.
+          <span className="est-tag ui">Estimated</span>{" "}
+          {snap.estates.some((e) => !e.estimated && e.power != null) ? (
+            <>
+              Only the{" "}
+              {snap.estates
+                .filter((e) => !e.estimated && e.power != null)
+                .map((e) => e.name)
+                .join(" and ")}{" "}
+              share was read off the screen at this checkpoint. The rest, marked ≈, are worked out from the save by the
+              game's own rules and scaled to that screen's total.
+            </>
+          ) : (
+            <>
+              No estates screen was read at this checkpoint, so the shares are worked out from the save by the game's
+              own rules, calibrated on the nearest reading. Expect them within a point or so of the game's figures.
+            </>
+          )}
         </p>
       )}
       {!hasPower && (

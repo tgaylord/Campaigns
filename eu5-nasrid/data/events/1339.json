@@ -202,6 +202,21 @@
   "source": "checkpoint 1339-09-02"
  },
  {
+  "id": "1339-05-24-catalan-privileges-lost",
+  "date": "1339-05-24",
+  "type": "reform",
+  "title": "War with Aragon ends the Catalan Merchant Privileges, held since the start of the game",
+  "wars": [
+   "war-on-aragon"
+  ],
+  "data": {
+   "reform": "catalan_merchant_privileges",
+   "implemented": "1337-04-01",
+   "effects": "nobles power -20%, burghers power -10%, crown power +30% scaled by Farfanes in the army (Granada had none); needs peace with Aragon"
+  },
+  "source": "Trent's account; the reform is in the save of 24 May 1339 and gone by 2 September 1339, still absent at the peace; effects from eu5db.com (1.4.5)"
+ },
+ {
   "id": "1339-06-13-battle-shaluqa",
   "date": "1339-06-13",
   "type": "battle",
@@ -308,20 +323,6 @@
   ],
   "data": {
    "role": "GENERAL"
-  },
-  "source": "checkpoint 1339-09-02"
- },
- {
-  "id": "1339-09-02-catalan-privileges-lapse",
-  "date": "1339-09-02",
-  "type": "reform",
-  "title": "The Catalan merchant privileges are no longer in force",
-  "data": {
-   "reform": "catalan_merchant_privileges",
-   "between": [
-    "1339-05-24",
-    "1339-09-02"
-   ]
   },
   "source": "checkpoint 1339-09-02"
  },

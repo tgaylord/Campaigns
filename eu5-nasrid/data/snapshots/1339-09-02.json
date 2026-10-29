@@ -78,42 +78,42 @@
   {
    "id": "crown",
    "name": "Crown",
-   "power": 25.16,
+   "power": 24.76,
    "satisfaction": null,
    "estimated": true
   },
   {
    "id": "nobles",
    "name": "Nobility",
-   "power": 45.07,
+   "power": 45.62,
    "satisfaction": 51,
    "estimated": true
   },
   {
    "id": "clergy",
    "name": "ʿUlamāʾ",
-   "power": 12.59,
+   "power": 12.38,
    "satisfaction": 50,
    "estimated": true
   },
   {
    "id": "burghers",
    "name": "Burghers",
-   "power": 10.59,
+   "power": 10.76,
    "satisfaction": 51,
    "estimated": true
   },
   {
    "id": "peasants",
    "name": "Commoners",
-   "power": 4.41,
+   "power": 4.34,
    "satisfaction": 59,
    "estimated": true
   },
   {
    "id": "dhimmi",
    "name": "Dhimmī",
-   "power": 2.17,
+   "power": 2.13,
    "satisfaction": 50,
    "estimated": true
   }

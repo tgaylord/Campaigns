@@ -180,12 +180,12 @@
    "calibratedOn": "1337.11.16"
   },
   "1340-05-02": {
-   "source": "Trent's estate power panel on 2 May 1340 (shares only), calibrated on the 1 May 1340 autosave. Country modifiers are those of the 16 November 1337 tooltips with the debt penalty (crown -65.81%) folded in; not re-read.",
+   "source": "Trent's estate power panel on 2 May 1340 (shares only), calibrated on the 1 May 1340 autosave. Country modifiers are those of the 16 November 1337 tooltips with the debt penalty (crown -65.81%) folded in; not re-read. The loss of the Catalan Merchant Privileges at the declaration of war (nobles +20%, burghers +10%) is folded in as well.",
    "countryModifiers": {
     "crown": -0.0381,
-    "nobles": 4.6247,
+    "nobles": 4.8247,
     "clergy": 1.1131,
-    "burghers": 2.0896,
+    "burghers": 2.1896,
     "peasants": 1.58,
     "dhimmi": 0.73
    },
@@ -201,13 +201,39 @@
    "screenIsShares": true,
    "corrections": {
     "crown": 0.1033,
-    "nobles": 0.1121,
+    "nobles": 0.1089,
     "clergy": 0.1084,
-    "burghers": 0.1154,
+    "burghers": 0.1118,
     "peasants": 0.1002,
     "dhimmi": 0.1072
    },
    "calibratedOn": "1340.5.1"
+  },
+  "1340-08-11": {
+   "source": "Trent's Dhimmī power tooltip on 11 August 1340, the day of the peace save: 140.53 of a total 961.60 political power (14.61%). The per-group breakdown matches powerPerPop x (1 + 0.73) exactly (Allow Military Service +10%, Promote Tolerance +20%, Grant Administrative Posts +10%, Pact of Umar +33%), with no local or promotion term. Other estates not read: they keep the relative corrections of 1340-05-02, scaled so the total matches.",
+   "countryModifiers": {
+    "crown": -0.0381,
+    "nobles": 4.8247,
+    "clergy": 1.1131,
+    "burghers": 2.1896,
+    "peasants": 1.58,
+    "dhimmi": 0.73
+   },
+   "tolerance": 0.0087,
+   "screen": {
+    "dhimmi": 140.53
+   },
+   "screenTotal": 961.6,
+   "baseReading": "1340-05-02",
+   "corrections": {
+    "crown": 0.8443,
+    "nobles": 0.8901,
+    "clergy": 0.886,
+    "burghers": 0.9138,
+    "peasants": 0.819,
+    "dhimmi": 0.9904
+   },
+   "calibratedOn": "1340.8.11"
   }
  },
  "adjustments": [
@@ -216,6 +242,18 @@
    "estate": "crown",
    "delta": -0.6581,
    "source": "Trent's screenshot: 'Impact of Debt to the Estate', crown power -65.81% with 1,351.73 owed to the estates. Scales with the debt; replace with the figure at each later reading."
+  },
+  {
+   "from": "1339-05-25",
+   "estate": "nobles",
+   "delta": 0.2,
+   "source": "eu5db.com (1.4.5): catalan_merchant_privileges gives nobles power -20% and burghers power -10% and needs peace with Aragon; Granada had it until the declaration of 24 May 1339 (in that day's save, gone by 2 September 1339). Its crown term scales with Farfanes in the army and Granada had none."
+  },
+  {
+   "from": "1339-05-25",
+   "estate": "burghers",
+   "delta": 0.1,
+   "source": "eu5db.com (1.4.5): catalan_merchant_privileges gives nobles power -20% and burghers power -10% and needs peace with Aragon; Granada had it until the declaration of 24 May 1339 (in that day's save, gone by 2 September 1339). Its crown term scales with Farfanes in the army and Granada had none."
   }
  ]
 }

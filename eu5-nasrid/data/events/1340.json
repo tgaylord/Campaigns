@@ -340,5 +340,21 @@
    }
   },
   "source": "checkpoint 1340-08-11"
+ },
+ {
+  "id": "1340-08-14-demobilised",
+  "date": "1340-08-14",
+  "type": "player_note",
+  "title": "The mercenaries are paid off early and dismissed and the army returns to peacetime pay: the treasury falls to 469 and the monthly deficit narrows from 24 to under 5",
+  "wars": [
+   "war-on-aragon"
+  ],
+  "data": {
+   "treasury": 468.87,
+   "income": 30.66,
+   "expenses": 35.54,
+   "balance": -4.87
+  },
+  "source": "Trent's account and his budget screenshot of 14 August 1340"
  }
 ]

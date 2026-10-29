@@ -79,21 +79,21 @@
   {
    "id": "nobles",
    "name": "Nobility",
-   "power": 52.79,
+   "power": 52.78,
    "satisfaction": 33,
    "estimated": true
   },
   {
    "id": "clergy",
    "name": "ʿUlamāʾ",
-   "power": 14.21,
+   "power": 14.22,
    "satisfaction": 50,
    "estimated": true
   },
   {
    "id": "burghers",
    "name": "Burghers",
-   "power": 11.54,
+   "power": 11.55,
    "satisfaction": 63,
    "estimated": true
   },

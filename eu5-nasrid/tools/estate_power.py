@@ -113,7 +113,23 @@ model = {e: est[e] * (1 + TOL) for e in ESTATES if e != 'crown'}
 mean_c = sum(control.values()) / len(control)
 model['crown'] = sum(v * max(0.0, 1 + CM['crown'] - (1 - control[l]) + local[('crown', l)]) for l, v in crown_raw.items()) * (1 + 0.5 * (mean_c - 0.5))
 
-if a.calibrate:
+if a.calibrate and 'screenTotal' in R:
+    # Partial reading: one or more estates' absolute power plus the total. The
+    # estates read get screen / model; the rest keep the relative corrections of
+    # the base reading, scaled together so the total matches the screen.
+    base = M['readings'][R['baseReading']]['corrections']
+    read = {e: R['screen'][e] / model[e] for e in R['screen']}
+    rest = [e for e in ESTATES if e not in read]
+    k = (R['screenTotal'] - sum(R['screen'].values())) / sum(model[e] * base[e] for e in rest)
+    corr = {**read, **{e: base[e] * k for e in rest}}
+    R['corrections'] = {e: round(corr[e], 4) for e in ESTATES}
+    R['calibratedOn'] = date
+    json.dump(M, open(a.model, 'w', encoding='utf8'), indent=1, ensure_ascii=False)
+    print(f'partial calibration on {date} (reading {key}): read {sorted(read)}, the rest scaled by {k:.3f} from {R["baseReading"]}')
+    for e in ESTATES:
+        s = R['screen'].get(e)
+        print(f"  {e:9s} model {model[e]:7.2f}  correction {corr[e]:.4f}" + (f"  screen {s:7.2f}" if s is not None else ''))
+elif a.calibrate:
     corr = {e: R['screen'][e] / model[e] for e in ESTATES}
     R['corrections'] = {e: round(v, 4) for e, v in corr.items()}
     R['calibratedOn'] = date
