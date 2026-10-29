@@ -15,6 +15,13 @@ import "@fontsource/reem-kufi/latin-ext-500.css";
 import "./styles/base.css";
 import App from "./App";
 
+// GitHub Pages serves one 404 page for the whole repo. It sends deep links
+// (…/eu5-nasrid/people/yusuf-i) back here as ?p=/people/yusuf-i; restore the path.
+{
+  const p = new URLSearchParams(location.search).get("p");
+  if (p) history.replaceState(null, "", import.meta.env.BASE_URL.replace(/\/$/, "") + p + location.hash);
+}
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, "")}>
