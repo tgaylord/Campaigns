@@ -507,6 +507,21 @@
   "source": "Trent's account (loyalty is not in the save)"
  },
  {
+  "id": "1340-10-25-portuguese-civil-war",
+  "date": "1340-10-25",
+  "type": "situation",
+  "people": [
+   "peter-of-portugal",
+   "maria-of-portugal"
+  ],
+  "title": "Civil war in Portugal: Peter, the queen's younger brother, rises against Queen Maria",
+  "data": {
+   "rebels": "AAA49",
+   "target": "POR"
+  },
+  "source": "checkpoint 1343-05-20 (war record)"
+ },
+ {
   "id": "1340-10-28-moroccan-peace",
   "date": "1340-10-28",
   "type": "peace",

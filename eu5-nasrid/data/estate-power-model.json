@@ -254,6 +254,24 @@
    "estate": "burghers",
    "delta": 0.1,
    "source": "eu5db.com (1.4.5): catalan_merchant_privileges gives nobles power -20% and burghers power -10% and needs peace with Aragon; Granada had it until the declaration of 24 May 1339 (in that day's save, gone by 2 September 1339). Its crown term scales with Farfanes in the army and Granada had none."
+  },
+  {
+   "from": "1342-08-14",
+   "estate": "nobles",
+   "delta": -0.2,
+   "source": "catalan_merchant_privileges re-enacted 14 August 1340 (two years to implement), in force by the 1343 save: nobles power -20%, burghers -10% again (game files)."
+  },
+  {
+   "from": "1342-08-14",
+   "estate": "burghers",
+   "delta": -0.1,
+   "source": "catalan_merchant_privileges re-enacted 14 August 1340 (two years to implement), in force by the 1343 save: nobles power -20%, burghers -10% again (game files)."
+  },
+  {
+   "from": "1343-01-27",
+   "estate": "crown",
+   "delta": 0.1,
+   "source": "royal_decree reform, 27 January 1343: crown power +10% (game files)."
   }
  ]
 }

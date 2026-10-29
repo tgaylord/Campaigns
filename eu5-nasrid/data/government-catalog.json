@@ -1369,6 +1369,49 @@
    "satisfaction": {},
    "years": 2.0
   },
+  "royal_decree": {
+   "name": "Royal Decree",
+   "desc": "The monarch rules supreme in this country, and loyalty is valued above all else. We must ensure that decrees from the royal court are followed to the letter, and in all parts of our country.",
+   "modifiers": [
+    {
+     "key": "global_estate_satisfaction_decay",
+     "label": "Estates Satisfaction Decay",
+     "value": 0.025,
+     "text": "Estates Satisfaction Decay +2.5%",
+     "percent": true,
+     "good": false
+    },
+    {
+     "key": "global_crown_estate_power",
+     "label": "Crown Power",
+     "value": 0.1,
+     "text": "Crown Power +10%",
+     "percent": true,
+     "good": true
+    },
+    {
+     "key": "monthly_towards_centralization",
+     "label": "Monthly Progress to Centralization",
+     "value": 0.1,
+     "text": "Monthly Progress to Centralization +0.1",
+     "percent": false,
+     "good": true
+    },
+    {
+     "key": "monthly_towards_absolutism",
+     "label": "Monthly Progress to Absolutism",
+     "value": 0.05,
+     "text": "Monthly Progress to Absolutism +0.05",
+     "percent": false,
+     "good": true
+    }
+   ],
+   "power": {
+    "crown": 0.1
+   },
+   "satisfaction": {},
+   "years": 2.0
+  },
   "the_jewel_of_alandalus_reform": {
    "name": "The Jewel of Al-'Andalus",
    "desc": "We are the only surviving member of the formerly Muslim realms that populated Al-'Andalus in the past. Huge Muslim empires have risen and fallen throughout Iberia, fragmenting in the process. As one of those fragmented parts, it is our destiny to reunify the people of Iberia under our banner.",
@@ -5041,9 +5084,9 @@
       },
       {
        "key": "increase_literacy_from_religious_sects_cost_modifier",
-       "label": "Cost of increase_literacy_from_religious_sects Action",
+       "label": "Cost of Increase Literacy Action",
        "value": -0.5,
-       "text": "Cost of increase_literacy_from_religious_sects Action -50%",
+       "text": "Cost of Increase Literacy Action -50%",
        "percent": true,
        "good": false
       },

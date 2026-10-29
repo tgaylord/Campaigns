@@ -1,0 +1,18 @@
+[
+ {
+  "id": "1344-04-castile-intervenes-portugal",
+  "date": "1344-04-30",
+  "type": "war_joined",
+  "people": [
+   "alfonso-xi",
+   "maria-of-portugal",
+   "peter-of-portugal"
+  ],
+  "title": "Late in April 1344 Castile intervenes in the Portuguese civil war",
+  "data": {
+   "approximate_date": "late April 1344",
+   "intervener": "CAS"
+  },
+  "source": "Trent's account (late April; the exact day isn't given)"
+ }
+]

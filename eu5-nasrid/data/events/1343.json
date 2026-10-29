@@ -1,0 +1,80 @@
+[
+ {
+  "id": "1343-01-27-royal-decree",
+  "date": "1343-01-27",
+  "type": "reform",
+  "title": "The Royal Decree: crown power +10%, and a steady pull toward centralisation and absolutism",
+  "data": {
+   "reform": "royal_decree"
+  },
+  "source": "checkpoint 1343-05-20; effects from the game files"
+ },
+ {
+  "id": "1343-05-20-loans",
+  "date": "1343-05-20",
+  "type": "estate_change",
+  "title": "Twelve more estate loans repaid: the debt falls from 764 to 437 ducats, with the treasury near empty at 4",
+  "data": {
+   "debt": {
+    "from": 763.6,
+    "to": 436.8
+   },
+   "loans": {
+    "from": 30,
+    "to": 18
+   }
+  },
+  "source": "checkpoint 1343-05-20"
+ },
+ {
+  "id": "1343-05-20-sovereignty",
+  "date": "1343-05-20",
+  "type": "strait_change",
+  "title": "Sovereignty stands at 50.7, a hair above the line; influence swings toward the middle of the channel, to −10",
+  "data": {
+   "sovereignty": {
+    "from": 51.6,
+    "to": 50.7
+   },
+   "influence": {
+    "from": -20.2,
+    "to": -10.4
+   }
+  },
+  "source": "checkpoint 1343-05-20"
+ },
+ {
+  "id": "1343-05-20-shared-heir",
+  "date": "1343-05-20",
+  "type": "player_note",
+  "people": [
+   "maria-of-portugal",
+   "alfonso-xi",
+   "peter-of-castile"
+  ],
+  "title": "The emirate's eyes turn to Portugal and its civil war; but Queen Maria is the wife of Alfonso of Castile, and their son Peter is heir to both crowns",
+  "data": {},
+  "source": "Trent's account; heirs from checkpoint 1343-05-20"
+ },
+ {
+  "id": "1343-05-20-conversion",
+  "date": "1343-05-20",
+  "type": "player_note",
+  "places": [
+   "balansiyya",
+   "jumalla"
+  ],
+  "title": "Conversion runs on in the ṭāʾifas: Balansiyya now 66,000 Muslims to 116,000 Christians, Mursiyya nearly half Muslim",
+  "data": {
+   "VAL": {
+    "sunni": 65674,
+    "catholic": 115856
+   },
+   "MUC": {
+    "sunni": 4023,
+    "catholic": 4447
+   }
+  },
+  "source": "checkpoint 1343-05-20"
+ }
+]

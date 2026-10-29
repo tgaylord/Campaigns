@@ -104,7 +104,7 @@ const War = z.object({
 });
 
 const Country = z.object({
-  tag: z.string().regex(/^[A-Z0-9]{3}$/), name: z.string(), nameChronicle: z.string(), nameArabic: z.string().optional(),
+  tag: z.string().regex(/^[A-Z][A-Z0-9]{2,5}$/), name: z.string(), nameChronicle: z.string(), nameArabic: z.string().optional(),
   color: z.string().regex(/^#[0-9a-f]{6}$/i),
 });
 

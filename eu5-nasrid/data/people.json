@@ -628,5 +628,101 @@
   },
   "traits": [],
   "note": "Ruler of Murcia from its release as a ṭāʾifa on 23 August 1340: a Castilian, Sunni. The chronicle keeps the Christian name he was born with, as the game does (Trent's decision), so he stays recognisable later."
+ },
+ {
+  "id": "khalid-ibn-yahya",
+  "name": "Khālid ibn Yaḥyā",
+  "nameArabic": "خالد بن يحيى",
+  "nameGame": "Khalid",
+  "gameId": 31219,
+  "dynasty": "Raḥḥū",
+  "born": "1342-12-30",
+  "father": "yahya-rahhu",
+  "mother": "qamar",
+  "roles": [],
+  "stats": {
+   "adm": 1,
+   "dip": 2,
+   "mil": 0
+  },
+  "traits": [],
+  "note": "Son of Yaḥyā Raḥḥū and Qamar, the mother of Ismāʿīl ibn Ismāʿīl: born into the Raḥḥū house on 30 December 1342."
+ },
+ {
+  "id": "alfonso-xi",
+  "name": "Alfonso XI of Castile",
+  "nameGame": "Alfonso",
+  "gameId": 1193,
+  "dynasty": "Castilian royal house",
+  "born": "1311-08-13",
+  "roles": [
+   "king of Castile"
+  ],
+  "stats": {
+   "adm": 66,
+   "dip": 55,
+   "mil": 80
+  },
+  "traits": [],
+  "note": "King of Castile, Granada's overlord; husband of Maria, queen of Portugal."
+ },
+ {
+  "id": "maria-of-portugal",
+  "name": "Maria of Portugal",
+  "nameGame": "Maria",
+  "gameId": 1119,
+  "female": true,
+  "dynasty": "Portuguese royal house",
+  "born": "1313-02-09",
+  "roles": [
+   "queen of Portugal",
+   "queen consort of Castile"
+  ],
+  "stats": {
+   "adm": 40,
+   "dip": 50,
+   "mil": 20
+  },
+  "traits": [],
+  "note": "Queen of Portugal in her own right and consort of Alfonso XI of Castile; their son Peter is heir to both crowns."
+ },
+ {
+  "id": "peter-of-castile",
+  "name": "Peter of Castile",
+  "nameGame": "Peter",
+  "gameId": 1198,
+  "dynasty": "Castilian royal house",
+  "born": "1334-08-30",
+  "father": "alfonso-xi",
+  "mother": "maria-of-portugal",
+  "roles": [
+   "heir of Castile",
+   "heir of Portugal"
+  ],
+  "stats": {
+   "adm": 21,
+   "dip": 21,
+   "mil": 28
+  },
+  "traits": [],
+  "note": "Son of Alfonso XI and Queen Maria, heir to both Castile and Portugal (the 20 May 1343 save)."
+ },
+ {
+  "id": "peter-of-portugal",
+  "name": "Peter, the Portuguese pretender",
+  "nameGame": "Peter",
+  "gameId": 1117,
+  "dynasty": "Portuguese royal house",
+  "born": "1320-04-08",
+  "roles": [
+   "pretender to Portugal"
+  ],
+  "stats": {
+   "adm": 47,
+   "dip": 36,
+   "mil": 34
+  },
+  "traits": [],
+  "note": "Queen Maria's younger brother; leads the revolt against her that began on 25 October 1340."
  }
 ]

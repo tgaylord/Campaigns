@@ -10,6 +10,19 @@
   "source": "Trent's account"
  },
  {
+  "id": "1342-02-07-promote-sovereignty",
+  "date": "1342-02-07",
+  "type": "appointment",
+  "people": [
+   "ismail-ibn-ismail"
+  ],
+  "title": "Ismāʿīl ibn Ismāʿīl turns the dīwān's second seat back to promoting Granadan sovereignty",
+  "data": {
+   "action": "gra_promote_sovereignty"
+  },
+  "source": "checkpoint 1343-05-20"
+ },
+ {
   "id": "1342-05-02-hafsid-gift",
   "date": "1342-05-02",
   "type": "diplomacy",
@@ -19,5 +32,42 @@
    "gold": 258
   },
   "source": "Trent's account"
+ },
+ {
+  "id": "1342-08-14-catalan-privileges-restored",
+  "date": "1342-08-14",
+  "type": "reform",
+  "title": "The Catalan Merchant Privileges, re-enacted after the peace with Aragon, come back into force",
+  "data": {
+   "reform": "catalan_merchant_privileges",
+   "enacted": "1340-08-14",
+   "effects": "nobles power -20%, burghers power -10%"
+  },
+  "source": "checkpoint 1343-05-20 (reform dated 14 August 1340, two years to implement)"
+ },
+ {
+  "id": "1342-10-01-independence-cb",
+  "date": "1342-10-01",
+  "type": "diplomacy",
+  "title": "The casus belli for a war of independence against Castile is ready",
+  "data": {
+   "casus_belli": "cb_independence_war",
+   "target": "Castile",
+   "begun": "1340-08-14"
+  },
+  "source": "checkpoint 1343-05-20"
+ },
+ {
+  "id": "1342-12-30-birth-khalid",
+  "date": "1342-12-30",
+  "type": "birth",
+  "people": [
+   "khalid-ibn-yahya",
+   "yahya-rahhu",
+   "qamar"
+  ],
+  "title": "Khālid is born to Yaḥyā Raḥḥū and Qamar, mother of Ismāʿīl ibn Ismāʿīl",
+  "data": {},
+  "source": "checkpoint 1343-05-20"
  }
 ]
