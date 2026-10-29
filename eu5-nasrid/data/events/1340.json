@@ -1,0 +1,17 @@
+[
+ {
+  "id": "1340-03-09-estate-loans",
+  "date": "1340-03-09",
+  "type": "player_note",
+  "title": "The war is paid for with loans from the estates: 1,359 ducats owed, and the estates willing to lend 2,300 more",
+  "wars": [
+   "war-on-aragon"
+  ],
+  "data": {
+   "debt": 1359,
+   "furtherCredit": 2300,
+   "lenders": "the estates"
+  },
+  "source": "Trent's account"
+ }
+]
