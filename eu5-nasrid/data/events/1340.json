@@ -92,5 +92,36 @@
    "monthlyBalanceAfter": -21.21
   },
   "source": "Trent's screenshots"
+ },
+ {
+  "id": "1340-07-27-hunger",
+  "date": "1340-07-27",
+  "type": "player_note",
+  "title": "Cut off from home, the host holds off starvation, but only barely",
+  "wars": [
+   "war-on-aragon"
+  ],
+  "data": {},
+  "source": "Trent's account"
+ },
+ {
+  "id": "1340-07-27-jumalla-falls",
+  "date": "1340-07-27",
+  "type": "siege",
+  "title": "Jumalla falls to the main army",
+  "people": [
+   "ibn-al-khatib"
+  ],
+  "places": [
+   "jumalla"
+  ],
+  "wars": [
+   "war-on-aragon"
+  ],
+  "data": {
+   "result": "taken",
+   "owner": "ARA"
+  },
+  "source": "Trent's account"
  }
 ]
