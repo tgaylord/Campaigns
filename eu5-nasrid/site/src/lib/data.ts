@@ -142,7 +142,7 @@ export const EVENT_LABEL: Record<string, string> = {
   ruler_change: "Succession", birth: "Birth", death: "Death", marriage: "Marriage",
   estate_change: "Estates", law_change: "Law", reform: "Reform", territory_change: "Territory",
   strait_change: "The Strait", gc_change: "Golden Century", situation: "Situation",
-  formable: "Formable", player_note: "Note",
+  formable: "Formable", appointment: "Appointment", diplomacy: "Diplomacy", player_note: "Note",
 };
 
 export const nf = new Intl.NumberFormat("en-GB");

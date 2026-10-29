@@ -157,7 +157,7 @@ const Snapshot = z.object({
 const EVENT_TYPES = [
   "war_declared", "war_joined", "battle", "siege", "peace", "ruler_change", "birth", "death", "marriage",
   "estate_change", "law_change", "reform", "territory_change", "strait_change", "gc_change",
-  "situation", "formable", "player_note",
+  "situation", "formable", "appointment", "diplomacy", "player_note",
 ];
 const Event = z.object({
   id,

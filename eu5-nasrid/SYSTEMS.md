@@ -166,7 +166,7 @@ Every person, place and war name anywhere on the site shows a card on hover and 
 
 ## 7. A session, step by step
 
-1. Trent plays and makes an ordinary checkpoint save (compressed). If the estates matter at that checkpoint, he notes each estate's share of power from the estates screen, since the save doesn't store it.
+1. Trent plays and makes an ordinary checkpoint save (compressed). If the estates matter at that checkpoint, he screenshots the estate power panel at the same moment, since the save doesn't store the shares.
 2. He opens the chat on the gaming PC (or links that computer) and gives his account of what happened, including anything screenshots show that a save can't.
 3. Claude parses the save into a snapshot and new events, then checks them against the previous snapshot.
 4. Claude drafts the story entries and Trent corrects them.
@@ -198,4 +198,4 @@ This campaign follows the repo-wide rules in `/CLAUDE.md`:
 3. ~~Decoder for 1.4~~: settled. A separate shared tool, `shared/tools/eu5-save-decoder-1.4/`; the 1.3.11 one stays unchanged for Rome.
 4. Place names the game files leave doubtful: Órgiva (the game has "Yuz Aryuba"), Olvera (no Arabic script), and the Arabic script for Gérgal, Mojácar, Vélez-Rubio, Adra, Íllora, Píñar, Antequera and Vélez-Málaga, which the chronicle supplies itself. Each is marked in `data/gazetteer.json`.
 5. ~~Heir~~: settled. Faraj ibn Ismāʿīl, Yūsuf's elder half-brother, is heir from the August 1337 save.
-6. Estate shares of power for the August 1337 checkpoint: wanted from Trent's estates screen, if he has them.
+6. ~~Deriving estate power~~: tried against the 16 November 1337 save and tooltips; the crown's share and two town-level effects can't be reproduced (see `tools/README.md`). Shares are read off the estates power panel at each checkpoint where they matter; August 1337 has none.

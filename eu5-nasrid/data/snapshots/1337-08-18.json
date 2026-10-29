@@ -51,13 +51,13 @@
  "estates": [
   {
    "id": "nobles",
-   "name": "Nobles",
+   "name": "Nobility",
    "power": null,
    "satisfaction": 53
   },
   {
    "id": "clergy",
-   "name": "Clergy",
+   "name": "ʿUlamāʾ",
    "power": null,
    "satisfaction": 50
   },
@@ -69,7 +69,7 @@
   },
   {
    "id": "peasants",
-   "name": "Peasants",
+   "name": "Commoners",
    "power": null,
    "satisfaction": 61
   },

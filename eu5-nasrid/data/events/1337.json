@@ -33,16 +33,6 @@
   "source": "checkpoint 1337-08-18"
  },
  {
-  "id": "1337-05-01-strait-begins",
-  "date": "1337-05-01",
-  "type": "situation",
-  "title": "The Battle for the Strait begins",
-  "data": {
-   "situation": "battle_for_the_strait"
-  },
-  "source": "checkpoint 1337-08-18"
- },
- {
   "id": "1337-05-01-parias",
   "date": "1337-05-01",
   "type": "strait_change",
@@ -50,6 +40,16 @@
   "data": {
    "treaty": "parias_payments",
    "from": "CAS"
+  },
+  "source": "checkpoint 1337-08-18"
+ },
+ {
+  "id": "1337-05-01-strait-begins",
+  "date": "1337-05-01",
+  "type": "situation",
+  "title": "The Battle for the Strait begins",
+  "data": {
+   "situation": "battle_for_the_strait"
   },
   "source": "checkpoint 1337-08-18"
  },
@@ -62,6 +62,19 @@
    "with": "TUN"
   },
   "source": "checkpoint 1337-08-18"
+ },
+ {
+  "id": "1337-05-30-yusuf-takes-command",
+  "date": "1337-05-30",
+  "type": "appointment",
+  "title": "Yūsuf takes command of the army himself",
+  "people": [
+   "yusuf-i"
+  ],
+  "data": {
+   "role": "GENERAL"
+  },
+  "source": "checkpoint 1337-11-16"
  },
  {
   "id": "1337-07-09-promote-sovereignty",
@@ -89,5 +102,47 @@
    "granada": "can be called by Morocco"
   },
   "source": "checkpoint 1337-08-18"
+ },
+ {
+  "id": "1337-08-25-spies-in-castile",
+  "date": "1337-08-25",
+  "type": "diplomacy",
+  "title": "A spy network is begun in Castile",
+  "data": {
+   "treaty": "building_spy_network",
+   "target": "CAS"
+  },
+  "source": "checkpoint 1337-11-16"
+ },
+ {
+  "id": "1337-11-16-betrothal-fezzan",
+  "date": "1337-11-16",
+  "type": "marriage",
+  "title": "Yūsuf betrothed to Sayyida, daughter of the lord of Fezzan",
+  "people": [
+   "yusuf-i",
+   "sayyida-of-fezzan"
+  ],
+  "data": {
+   "kind": "betrothal",
+   "with": "FZA"
+  },
+  "source": "checkpoint 1337-11-16"
+ },
+ {
+  "id": "1337-11-16-ulama-discontent",
+  "date": "1337-11-16",
+  "type": "estate_change",
+  "title": "The ʿulamāʾ's satisfaction has fallen from 50 to 41 since August",
+  "data": {
+   "estate": "clergy",
+   "from": 50,
+   "to": 41,
+   "between": [
+    "1337-08-18",
+    "1337-11-16"
+   ]
+  },
+  "source": "checkpoint 1337-11-16"
  }
 ]

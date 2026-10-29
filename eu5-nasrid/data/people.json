@@ -438,6 +438,7 @@
    }
   ],
   "roles": [
+   "commander of the army",
    "sultan"
   ],
   "stats": {
@@ -523,5 +524,46 @@
   "traits": [
    "child_gifted"
   ]
+ },
+ {
+  "id": "sayyida-of-fezzan",
+  "name": "Sayyida of Fezzan",
+  "nameArabic": "سيدة",
+  "nameGame": "Sayyida",
+  "gameId": 15115,
+  "dynasty": "Murzuq",
+  "born": "1328-10-27",
+  "female": true,
+  "roles": [
+   "betrothed of Yūsuf I"
+  ],
+  "stats": {
+   "adm": 17,
+   "dip": 45,
+   "mil": 23
+  },
+  "traits": [
+   "child_gregarious"
+  ],
+  "note": "Daughter of the ruler of Fezzan, of the house of Murzuq. Betrothed to Yūsuf on 16 November 1337, aged nine. Her father's name is the game's (name_salmama); its proper form is unconfirmed."
+ },
+ {
+  "id": "gideon-ben-joshua",
+  "name": "Gideon ben Joshua",
+  "nameGame": "Gideon",
+  "gameId": 22954,
+  "born": "1287-02-23",
+  "roles": [
+   "of the burghers"
+  ],
+  "stats": {
+   "adm": 68,
+   "dip": 74,
+   "mil": 11
+  },
+  "traits": [
+   "drunkard"
+  ],
+  "note": "A Sephardi Jew of Gharnāṭa, of the burghers' estate; at court by 16 November 1337."
  }
 ]

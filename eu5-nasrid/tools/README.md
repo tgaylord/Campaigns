@@ -27,6 +27,17 @@ python3 tools/build_map.py GAME/in_game/map_data data/map/strait-region.json --f
 - Estate satisfaction is 0–1 in the save; snapshots store it as 0–100.
 - `max_manpower` and `manpower` are in thousands of men.
 
+## Estate power
+
+The save holds each estate's satisfaction, gold and tax rate, but not its share of power, so shares come from Trent's estates screen at the moment of a save. An attempt to derive them (16 November 1337, save plus every tooltip) found:
+
+- An estate's power is the sum over its pops of size × the pop type's `power_per_pop` (`common/pop_types`: nobles 25, clergy 10, burghers 4, soldiers 0.0625, labourers 0.0375, peasants 0.025 per thousand) × (1 + the country modifiers in the tooltip + the town's own modifiers), then × (1 + tolerance).
+- The dhimmī estate matches this exactly (no town modifiers apply to it).
+- Town modifiers come from estate buildings and castles (`local_<estate>_estate_power` in `common/building_types`). With them the nobles come within 1% and the ʿulamāʾ within 3%.
+- Not reproducible from the files and save: `possible_promotion_percentage` (a town modifier giving commoners 10× and taking 1× from the upper estates; the percentage isn't saved), Andalusi burghers abroad who count for Granada's burghers (Lisbon, Fez, Timbuktu…; 1,791 at that checkpoint, and the save has no link from pop to country), and nearly half of the crown's power (130 of 241 from population; the rest isn't itemised anywhere).
+
+So shares stay a reading from the screen: the estate power panel (one screenshot) is enough.
+
 ## Compressed saves in 1.4
 
 1.4 stores almost every field name as an index into the save's string table instead of a numeric token. The 1.3.11 decoder (`shared/tools/eu5-save-decoder/`) crashes on these saves, so this campaign uses `shared/tools/eu5-save-decoder-1.4/`, which this campaign adapted from it. Its README covers the format change and the validation: the compressed start save decodes to the same content as the text save made at the same moment, 31.6 million tokens compared.
