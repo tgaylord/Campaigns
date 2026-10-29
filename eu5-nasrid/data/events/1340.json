@@ -27,5 +27,41 @@
    }
   },
   "source": "Trent's account and screenshots"
+ },
+ {
+  "id": "1340-05-30-road-cut",
+  "date": "1340-05-30",
+  "type": "player_note",
+  "title": "Castile besieges Mursiyya, cutting the road home: the host must stand and fight in Aragon",
+  "places": [
+   "mursiyya",
+   "uryula"
+  ],
+  "wars": [
+   "war-on-aragon",
+   "moroccan-castilian-war"
+  ],
+  "data": {},
+  "source": "Trent's account"
+ },
+ {
+  "id": "1340-05-30-uryula-falls",
+  "date": "1340-05-30",
+  "type": "siege",
+  "title": "Uryūla falls to Ibn al-Khaṭīb after a siege of nearly seven months",
+  "people": [
+   "ibn-al-khatib"
+  ],
+  "places": [
+   "uryula"
+  ],
+  "wars": [
+   "war-on-aragon"
+  ],
+  "data": {
+   "result": "taken",
+   "begun": "1339-11-08"
+  },
+  "source": "Trent's account"
  }
 ]
