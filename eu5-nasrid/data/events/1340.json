@@ -63,5 +63,34 @@
    "begun": "1339-11-08"
   },
   "source": "Trent's account"
+ },
+ {
+  "id": "1340-06-20-second-battle-uryula",
+  "date": "1340-06-20",
+  "type": "battle",
+  "title": "The second battle of Uryūla: Navarre, Majorca and Aragon fail to throw the host into the sea",
+  "people": [
+   "ibn-al-khatib"
+  ],
+  "places": [
+   "uryula"
+  ],
+  "wars": [
+   "war-on-aragon"
+  ],
+  "data": {
+   "result": "victory",
+   "defending": true,
+   "ended": "1340-07-01",
+   "ours": 18028,
+   "theirs": 13071,
+   "ourLosses": 2304,
+   "theirLosses": 7539,
+   "warScore": 25,
+   "enemyLead": "Navarre",
+   "treasuryAfter": 65.7,
+   "monthlyBalanceAfter": -21.21
+  },
+  "source": "Trent's screenshots"
  }
 ]
