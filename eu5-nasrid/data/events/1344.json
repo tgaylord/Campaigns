@@ -30,5 +30,22 @@
    "status": "in progress"
   },
   "source": "Trent's account; the law options from the game files"
+ },
+ {
+  "id": "1344-05-29-jamaa-harem",
+  "date": "1344-05-29",
+  "type": "law_change",
+  "people": [
+   "yusuf-i"
+  ],
+  "title": "The same Jamāʿa begins to enshrine the royal harem in the customs of the court, the first step toward entrenching the state's offices within the sultan's household",
+  "data": {
+   "law": "royal_court_customs_law",
+   "from": "aristocratic_court_policy",
+   "to": "harem_policy",
+   "unlocks": "harem_law",
+   "status": "in progress"
+  },
+  "source": "Trent's account; the law options from the game files"
  }
 ]
