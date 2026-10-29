@@ -1,7 +1,7 @@
 {
  "date": "1337-08-18",
  "checkpoint": "Morocco's war on Castile",
- "note": "Four and a half months in, three weeks after Morocco declared war on Castile. Granada is not in the war; Morocco can call us in under our alliance. The save records each estate's satisfaction but not its share of power, so the Council's seats stay empty until the shares are read off the estates screen.",
+ "note": "Four and a half months in, three weeks after Morocco declared war on Castile. Granada is not in the war; Morocco can call us in under our alliance. Shares of power are estimated (tools/estate_power.py, calibrated on the 16 November reading); satisfaction comes from the save.",
  "source": {
   "save": "SP_GRA_1337_08_18 (compressed)",
   "gameVersion": "1.4.5",
@@ -50,34 +50,46 @@
  },
  "estates": [
   {
+   "id": "crown",
+   "name": "Crown",
+   "power": 23.05,
+   "satisfaction": null,
+   "estimated": true
+  },
+  {
    "id": "nobles",
    "name": "Nobility",
-   "power": null,
-   "satisfaction": 53
+   "power": 47.44,
+   "satisfaction": 53,
+   "estimated": true
   },
   {
    "id": "clergy",
    "name": "ʿUlamāʾ",
-   "power": null,
-   "satisfaction": 50
+   "power": 12.07,
+   "satisfaction": 50,
+   "estimated": true
   },
   {
    "id": "burghers",
    "name": "Burghers",
-   "power": null,
-   "satisfaction": 53
+   "power": 11.13,
+   "satisfaction": 53,
+   "estimated": true
   },
   {
    "id": "peasants",
    "name": "Commoners",
-   "power": null,
-   "satisfaction": 61
+   "power": 4.17,
+   "satisfaction": 61,
+   "estimated": true
   },
   {
    "id": "dhimmi",
    "name": "Dhimmī",
-   "power": null,
-   "satisfaction": 50
+   "power": 2.14,
+   "satisfaction": 50,
+   "estimated": true
   }
  ],
  "economy": {
@@ -226,5 +238,6 @@
    "sephardi"
   ],
   "religion": "sunni"
- }
+ },
+ "crownPower": 23.05
 }

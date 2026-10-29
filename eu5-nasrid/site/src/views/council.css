@@ -31,14 +31,16 @@
 
 .stream { width: 100%; height: auto; display: block; margin-top: 0.5rem; }
 .stream .move line { stroke: var(--gilt-hi); stroke-width: 1.5; stroke-dasharray: 3 3; }
+.stream .ckpt circle { fill: var(--gilt); stroke: var(--gilt); stroke-width: 1.5; }
+.stream .ckpt.est circle { fill: var(--night); }
 .stream .end-label { font-family: var(--sans); font-size: 13px; fill: var(--plaster); }
 .stream .tick { font-family: var(--sans); font-size: 12px; fill: var(--dusk); }
 .stream .tick .ah { font-family: var(--naskh); fill: var(--gilt); font-size: 14px; }
 
 .moves-list { list-style: none; padding: 0; margin: 1rem 0 0; font-size: 0.88rem; columns: 2 22rem; column-gap: 2.5rem; }
-.moves-list li { break-inside: avoid; padding: 0.3rem 0; color: var(--plaster); }
-.moves-list .d { display: inline-block; width: 3rem; color: var(--gilt); }
-.moves-list .t { display: inline-block; width: 6rem; color: var(--dusk); }
+.moves-list li { break-inside: avoid; padding: 0.3rem 0; color: var(--plaster); display: grid; grid-template-columns: 3rem 6rem 1fr; }
+.moves-list .d { color: var(--gilt); }
+.moves-list .t { color: var(--dusk); }
 
 .mood-grid { display: grid; gap: 3px; font-size: 0.85rem; margin-top: 1rem; overflow-x: auto; }
 .mood-grid .col-head { text-align: center; color: var(--dusk); font-size: 0.78rem; }
@@ -48,4 +50,5 @@
 
 .hemi .seat.empty { fill: none; stroke: rgba(212, 171, 85, 0.35); stroke-width: 1.2; }
 .council-note { max-width: 44rem; margin: 0.75rem 0 0; }
+.est-tag { display: inline-block; padding: 0.05rem 0.45rem; margin-right: 0.4rem; border: 1px dashed var(--gilt); border-radius: 3px; color: var(--gilt); font-size: 0.78rem; font-style: normal; }
 .council-empty { max-width: 34rem; color: var(--mist); font-size: 1.05rem; align-self: center; }

@@ -1,0 +1,183 @@
+{
+ "about": "Inputs for tools/estate_power.py. Pop weights and building bonuses are from the 1.4.5 game files; the country modifiers are read off Trent's estate-power tooltips at a reading; the promotion term is fitted. See tools/README.md, 'Estate power'.",
+ "gameVersion": "1.4.5",
+ "powerPerPop": {
+  "nobles": 25,
+  "clergy": 10,
+  "burghers": 4,
+  "laborers": 0.0375,
+  "soldiers": 0.0625,
+  "peasants": 0.025,
+  "tribesmen": 0.25,
+  "slaves": 0
+ },
+ "localBonus": {
+  "castle": {
+   "nobles": 1.0
+  },
+  "stockade": {
+   "nobles": 0.5
+  },
+  "toll_castle": {
+   "nobles": 0.5
+  },
+  "rotten_borough": {
+   "nobles": 0.5
+  },
+  "noble_villa": {
+   "nobles": 0.2
+  },
+  "local_estates": {
+   "nobles": 0.1
+  },
+  "noble_courts": {
+   "nobles": 0.5
+  },
+  "nobles_mansion": {
+   "nobles": 0.5
+  },
+  "nobled_sponsored_temple": {
+   "nobles": 0.5
+  },
+  "nobility_fortifications": {
+   "nobles": 0.5,
+   "crown": -0.1
+  },
+  "local_noble_delegation": {
+   "nobles": 1.0
+  },
+  "nobles_recruitment_center": {
+   "nobles": 0.5
+  },
+  "bailiff": {
+   "nobles": 1.0
+  },
+  "cathedral": {
+   "clergy": 1.0
+  },
+  "parish_church": {
+   "clergy": 0.25,
+   "peasants": 0.75
+  },
+  "local_shrine": {
+   "clergy": 0.1
+  },
+  "clerical_archives": {
+   "clergy": 0.5
+  },
+  "spiritual_retreat": {
+   "clergy": 0.1
+  },
+  "warrior_monks_training_grounds": {
+   "clergy": 0.5
+  },
+  "fortress_church": {
+   "clergy": 0.2
+  },
+  "temple_militia": {
+   "clergy": 0.25
+  },
+  "guild_hall": {
+   "burghers": 0.5
+  },
+  "merchants_guild": {
+   "burghers": 0.5
+  },
+  "local_markets": {
+   "burghers": 0.25
+  },
+  "burgher_mansion": {
+   "burghers": 0.5
+  },
+  "artisan_guilds": {
+   "burghers": 0.1
+  },
+  "city_walls": {
+   "burghers": 0.1,
+   "crown": -0.1
+  },
+  "local_newspaper": {
+   "burghers": 0.5
+  },
+  "fishing_village": {
+   "peasants": 0.25
+  },
+  "farming_village": {
+   "peasants": 0.25
+  },
+  "forest_village": {
+   "peasants": 0.25
+  },
+  "market_village": {
+   "peasants": 0.25
+  },
+  "local_assembly": {
+   "peasants": 1.0
+  },
+  "peasants_training_grounds": {
+   "peasants": 1.0
+  },
+  "festival_grounds": {
+   "peasants": 0.2
+  },
+  "peasants_hunting_grounds": {
+   "peasants": 0.5
+  },
+  "local_schools": {
+   "peasants": 0.5
+  },
+  "free_village": {
+   "peasants": 0.2
+  },
+  "tax_assessor": {
+   "crown": 0.25
+  },
+  "minting_office": {
+   "crown": 0.25
+  },
+  "counting_house": {
+   "crown": 0.33
+  },
+  "sergeantry": {
+   "crown": 0.25
+  }
+ },
+ "promotionShare": 0.08,
+ "promotionEffect": {
+  "peasants": 10,
+  "nobles": -1,
+  "clergy": -1,
+  "burghers": -1
+ },
+ "readings": {
+  "1337-11-16": {
+   "source": "Trent's estate-power tooltips at the moment of SP_GRA_1337_11_16",
+   "countryModifiers": {
+    "crown": 0.62,
+    "nobles": 4.6247,
+    "clergy": 1.1131,
+    "burghers": 2.0896,
+    "peasants": 1.58,
+    "dhimmi": 0.73
+   },
+   "tolerance": 0.0087,
+   "screen": {
+    "crown": 241.13,
+    "nobles": 500.55,
+    "clergy": 126.86,
+    "burghers": 112.68,
+    "peasants": 44.91,
+    "dhimmi": 22.34
+   },
+   "corrections": {
+    "crown": 1.0515,
+    "nobles": 1.0016,
+    "clergy": 0.9993,
+    "burghers": 1.1008,
+    "peasants": 1.0538,
+    "dhimmi": 0.9908
+   },
+   "calibratedOn": "1337.11.16"
+  }
+ }
+}

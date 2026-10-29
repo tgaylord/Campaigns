@@ -5,6 +5,7 @@ Run by Claude in the workspace when a checkpoint save comes in. Inputs come from
 | Tool | What it does |
 |---|---|
 | `extract_checkpoint.py` | Pulls the facts the campaign tracks out of a save already split by the shared decoder: the realm's locations and population by culture and religion, the court and the dynasty, laws, reforms and privileges, treaties, situations, the Battle for the Strait (influence, sovereignty, years as a subject), every war Granada is in or can be called into, and the owner of every location in the world. Unless `--no-computed` is given, also the treasury, income and expenses, manpower, estates (satisfaction, gold, tax rate), the cabinet and its actions, and every regiment and ship. Use `--no-computed` for a start-date save, whose computed values aren't settled yet. Writes `data/extracted/<date>.json`. |
+| `estate_power.py` | Estimates each estate's share of power from a decoded save, using `data/estate-power-model.json`; `--calibrate DATE` fits it to a screen reading. See 'Estate power' below. |
 | `build_map.py` | Traces every location in a frame of the game map from `locations.png` into SVG paths, plus the coastline. With `--owners`, also writes the outline of every realm at each checkpoint (`data/map/realms-<date>.json`). |
 
 ## A checkpoint, step by step
@@ -29,14 +30,18 @@ python3 tools/build_map.py GAME/in_game/map_data data/map/strait-region.json --f
 
 ## Estate power
 
-The save holds each estate's satisfaction, gold and tax rate, but not its share of power, so shares come from Trent's estates screen at the moment of a save. An attempt to derive them (16 November 1337, save plus every tooltip) found:
+The save holds each estate's satisfaction, gold and tax rate, but not its share of power. `estate_power.py` rebuilds the shares from the game's own rules, worked out from Trent's tooltips against the 16 November 1337 save. `data/estate-power-model.json` holds the inputs.
 
-- An estate's power is the sum over its pops of size × the pop type's `power_per_pop` (`common/pop_types`: nobles 25, clergy 10, burghers 4, soldiers 0.0625, labourers 0.0375, peasants 0.025 per thousand) × (1 + the country modifiers in the tooltip + the town's own modifiers), then × (1 + tolerance).
-- The dhimmī estate matches this exactly (no town modifiers apply to it).
-- Town modifiers come from estate buildings and castles (`local_<estate>_estate_power` in `common/building_types`). With them the nobles come within 1% and the ʿulamāʾ within 3%.
-- Not reproducible from the files and save: `possible_promotion_percentage` (a town modifier giving commoners 10× and taking 1× from the upper estates; the percentage isn't saved), Andalusi burghers abroad who count for Granada's burghers (Lisbon, Fez, Timbuktu…; 1,791 at that checkpoint, and the save has no link from pop to country), and nearly half of the crown's power (130 of 241 from population; the rest isn't itemised anywhere).
+**The estates.** Each pop counts for its own estate (the pop record says which): size × its type's `power_per_pop` (`common/pop_types`: nobles 25, clergy 10, burghers 4, soldiers 0.0625, labourers 0.0375, peasants 0.025 per thousand) × (1 + country modifiers + the town's own bonuses), then × (1 + tolerance).
+- Country modifiers are the tooltip's list (privileges, laws, societal values, cabinet, wealth), stored per reading.
+- Town bonuses: estate buildings and castles (`local_<estate>_estate_power` in `common/building_types`), and the peasant-promotion term (`possible_promotion_percentage`: +10× for commoners, −1× for nobles, clergy and burghers). The promotion percentage isn't saved; one share of 8% fits the nobles, ʿulamāʾ and commoners together.
+- The burghers also count Andalusi Sunni burghers abroad (merchants in Lisbon, Fez, Timbuktu and so on), at the country rate with no town bonuses. This is the least certain part: the save doesn't link a pop to a country.
 
-So shares stay a reading from the screen: the estate power panel (one screenshot) is enough.
+**The crown.** Every pop in every owned town counts for the crown too, at the same weights: × max(0, 1 + crown modifiers − (1 − control) + the town's crown bonuses) — "Lack of Control" adds, it doesn't multiply — then the whole × (1 + 0.5 × (mean control − 0.5)), the "Crown power from population" line (`average_control_50`).
+
+**Calibration.** At a checkpoint with an estates screen, `estate_power.py SECTIONS --calibrate DATE` compares model and screen and stores a correction per estate. On 16 November 1337 the uncalibrated model was within 1.1 points of every share (crown 22.4% against 23.0%); the corrections were crown 1.05, nobles 1.00, ʿulamāʾ 1.00, burghers 1.10, commoners 1.05, dhimmī 0.99. The crown's gap probably comes from a crown bonus in Málaga that the save doesn't show.
+
+**Using it.** Checkpoints with a screen reading use the screen's figures. Others use `estate_power.py SECTIONS --out FILE` (the latest reading's modifiers and corrections) and are marked `estimated: true`. A new reading is worth taking after any change of privilege, law, cabinet or ruler, since the stored modifiers then go stale.
 
 ## Compressed saves in 1.4
 

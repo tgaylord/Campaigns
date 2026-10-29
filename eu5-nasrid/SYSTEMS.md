@@ -83,7 +83,7 @@ Each campaign gets its own top-level folder; Rome or any other campaign would si
 - **Ruler, heir, consort, regent;** the cabinet and the head of the cabinet.
 - **Realm:** locations, areas and provinces held; capital; subjects and ṭā'ifas.
 - **Population:** total, by culture, by religion.
-- **Estates:** power and satisfaction for each estate, crown power, privileges held. Satisfaction, gold and tax rates come from the save; **share of power does not** (the game computes it as it runs), so it comes from Trent's estates screen or stays empty, and the Council shows only moods until then.
+- **Estates:** power and satisfaction for each estate, crown power, privileges held. Satisfaction, gold and tax rates come from the save; **share of power does not** (the game computes it as it runs). It comes from Trent's estate power panel where he has one, and otherwise from `tools/estate_power.py`, calibrated on the latest reading and marked as estimated on the site.
 - **Government:** laws, reforms, policies, bureaucracies, political influence.
 - **Economy:** treasury, income and expenses, debt, main goods.
 - **Military:** levies, regiments, fleets and their locations. Named armies come later (see §5).
@@ -198,4 +198,4 @@ This campaign follows the repo-wide rules in `/CLAUDE.md`:
 3. ~~Decoder for 1.4~~: settled. A separate shared tool, `shared/tools/eu5-save-decoder-1.4/`; the 1.3.11 one stays unchanged for Rome.
 4. Place names the game files leave doubtful: Órgiva (the game has "Yuz Aryuba"), Olvera (no Arabic script), and the Arabic script for Gérgal, Mojácar, Vélez-Rubio, Adra, Íllora, Píñar, Antequera and Vélez-Málaga, which the chronicle supplies itself. Each is marked in `data/gazetteer.json`.
 5. ~~Heir~~: settled. Faraj ibn Ismāʿīl, Yūsuf's elder half-brother, is heir from the August 1337 save.
-6. ~~Deriving estate power~~: tried against the 16 November 1337 save and tooltips; the crown's share and two town-level effects can't be reproduced (see `tools/README.md`). Shares are read off the estates power panel at each checkpoint where they matter; August 1337 has none.
+6. ~~Deriving estate power~~: settled. `tools/estate_power.py` rebuilds the shares from the save, within about a point uncalibrated; readings from the estate power panel calibrate it (see `tools/README.md`).

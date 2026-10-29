@@ -79,7 +79,7 @@ export default function Court() {
           <div className="meters ui">
             {s.crownPower != null && (
               <div className="meter-block">
-                <span className="k">Power of the crown</span>
+                <span className="k">Power of the crown{s.estates.find((e) => e.id === "crown")?.estimated ? ", estimated" : ""}</span>
                 <span className="v">{s.crownPower}%</span>
                 <span className="bar"><i style={{ width: `${s.crownPower}%` }} /></span>
               </div>

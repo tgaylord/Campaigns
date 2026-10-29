@@ -108,7 +108,8 @@ const Country = z.object({
 });
 
 /** power is the estate's share of power (%); the save doesn't store it, so it comes from Trent's estates screen or stays null */
-const Estate = z.object({ id, name: z.string(), power: z.number().nullable(), satisfaction: z.number().nullable() });
+/** estimated: power comes from tools/estate_power.py, not from Trent's screen */
+const Estate = z.object({ id, name: z.string(), power: z.number().nullable(), satisfaction: z.number().nullable(), estimated: z.boolean().default(false) });
 
 const Snapshot = z.object({
   date: isoDate,

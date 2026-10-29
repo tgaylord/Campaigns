@@ -6,6 +6,7 @@
 | `map/strait-region.json` | Every location in the Strait theatre, traced from the game map, plus the coast | `tools/build_map.py` |
 | `map/realms-<date>.json` | The outline of each realm at a checkpoint | `tools/build_map.py --owners` |
 | `snapshots/<date>.json` | The checkpoint as the views use it: ruler, realm, people, government, and (once ticked) estates, economy, levies, the Strait | by hand from `extracted/` |
+| `estate-power-model.json` | Inputs for estimating estate power: pop weights and building bonuses (game files), country modifiers and screen readings (Trent's tooltips), the fitted promotion share, per-estate corrections | by hand, and `tools/estate_power.py --calibrate` |
 | `people.json` | The court and the house of Naṣr, with the chronicle's names and the game's ids | by hand from `extracted/` |
 | `gazetteer.json` | Places the chronicle names: chronicle form, Arabic script, the game's form, map key | by hand, from the game's 1.4 place-name files |
 | `countries.json` | Countries the views name and colour, with the court's names for them | by hand |

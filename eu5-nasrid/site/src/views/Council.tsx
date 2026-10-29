@@ -88,7 +88,7 @@ export default function Council() {
               <li key={e.id}>
                 <span className="swatch" style={{ background: estateColor(e.id, "night") }} />
                 <span className="name">{e.name}</span>
-                <span className="pow num">{pct(e.power)}</span>
+                <span className="pow num">{e.estimated && e.power != null ? "≈ " : ""}{pct(e.power)}</span>
                 <span className={`mood ${m.cls}`}>
                   {e.satisfaction != null && <span className="meter" aria-hidden="true"><i style={{ width: `${e.satisfaction}%` }} /></span>}
                   {m.word}{e.satisfaction != null ? `, ${e.satisfaction}` : ""}
@@ -98,6 +98,13 @@ export default function Council() {
           })}
         </ul>
       </div>
+      {hasPower && snap.estates.some((e) => e.estimated) && (
+        <p className="council-note muted">
+          <span className="est-tag ui">Estimated</span> No estates screen was read at this checkpoint, so the shares are
+          worked out from the save by the game's own rules, calibrated on the nearest reading. Expect them within a point
+          or so of the game's figures.
+        </p>
+      )}
       {!hasPower && (
         <p className="council-note muted">
           The seats wait to be filled: the save records each estate's mood but not its share of power, which the game
@@ -142,7 +149,7 @@ function Stream() {
   return (
     <section>
       <h2 className="section-title">Power across the reigns</h2>
-      <p className="muted" style={{ maxWidth: "44rem" }}>Each band is one estate's share of all power, checkpoint to checkpoint. The gold lines mark the moments that moved them.</p>
+      <p className="muted" style={{ maxWidth: "44rem" }}>Each band is one estate's share of all power, checkpoint to checkpoint. The gold lines mark the moments that moved them. A solid dot above a checkpoint means its shares were read off the estates screen; a hollow one, that they were estimated from the save.</p>
       <svg viewBox={`0 0 ${W} ${H}`} className="stream" role="img" aria-label="Share of power by estate over time">
         {layers.map((l) => (
           <path key={l.key} d={shape(l as any) ?? ""} fill={estateColor(l.key, "night")} fillOpacity={0.85} />
@@ -162,6 +169,15 @@ function Stream() {
           const mid = (y(last[0]) + y(last[1])) / 2;
           if (y(last[0]) - y(last[1]) < 12) return null;
           return <text key={l.key} x={W - padR + 10} y={mid + 4} className="end-label">{withPower[withPower.length - 1].estates.find((e) => e.id === l.key)?.name}</text>;
+        })}
+        {withPower.map((s) => {
+          const est = s.estates.some((e) => e.estimated);
+          return (
+            <g key={s.id} className={`ckpt ${est ? "est" : ""}`}>
+              <circle cx={x(yearFrac(s.date))} cy={padT - 12} r={5} />
+              <title>{`${western(s.date)}: ${est ? "estimated from the save" : "read off the estates screen"}`}</title>
+            </g>
+          );
         })}
         {years.map((yy) => (
           <text key={yy} x={x(yy)} y={H - 10} textAnchor="middle" className="tick">{yy} <tspan className="ah">{arabicDigits(hijri(`${yy}-06-01`).y)}</tspan></text>

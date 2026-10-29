@@ -24,7 +24,7 @@ export type War = {
   involvement: "belligerent" | "potential"; joined?: { from: string; to: string | null };
   sides?: { attackers: string[]; defenders: string[] }; gameName?: string; note?: string;
 };
-export type Estate = { id: string; name: string; power: number | null; satisfaction: number | null };
+export type Estate = { id: string; name: string; power: number | null; satisfaction: number | null; estimated: boolean };
 export type Snapshot = {
   id: string; date: string; checkpoint: string; note?: string;
   ruler: string; heir: string | null; regent: string | null; capital: string; rank: string; locations: number;
