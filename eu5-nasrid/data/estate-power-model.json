@@ -178,6 +178,36 @@
     "dhimmi": 0.9908
    },
    "calibratedOn": "1337.11.16"
+  },
+  "1340-05-02": {
+   "source": "Trent's estate power panel on 2 May 1340 (shares only), calibrated on the 1 May 1340 autosave. Country modifiers are those of the 16 November 1337 tooltips with the debt penalty (crown -65.81%) folded in; not re-read.",
+   "countryModifiers": {
+    "crown": -0.0381,
+    "nobles": 4.6247,
+    "clergy": 1.1131,
+    "burghers": 2.0896,
+    "peasants": 1.58,
+    "dhimmi": 0.73
+   },
+   "tolerance": 0.0087,
+   "screen": {
+    "crown": 14.71,
+    "nobles": 52.78,
+    "clergy": 14.22,
+    "burghers": 11.54,
+    "peasants": 4.33,
+    "dhimmi": 2.42
+   },
+   "screenIsShares": true,
+   "corrections": {
+    "crown": 0.1033,
+    "nobles": 0.1121,
+    "clergy": 0.1084,
+    "burghers": 0.1154,
+    "peasants": 0.1002,
+    "dhimmi": 0.1072
+   },
+   "calibratedOn": "1340.5.1"
   }
  },
  "adjustments": [

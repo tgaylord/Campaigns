@@ -1,0 +1,264 @@
+{
+ "date": "1340-08-11",
+ "checkpoint": "The peace with Aragon",
+ "note": "The day of the peace with Aragon: thirteen locations ceded, from Balansiyya south, and war reparations for ten years. Shares of power are estimated from the 2 May 1340 reading; the dhimmī share, swollen by Valencia's Christians, is the least certain.",
+ "source": {
+  "save": "SP_GRA_1340_08_11 (compressed)",
+  "gameVersion": "1.4.5",
+  "extracted": "extracted/1340-08-11.json"
+ },
+ "ruler": "yusuf-i",
+ "heir": "faraj-ibn-ismail",
+ "regent": null,
+ "capital": "gharnata",
+ "rank": "duchy",
+ "locations": 31,
+ "overlord": {
+  "country": "Castile",
+  "type": "tributary"
+ },
+ "subjects": [],
+ "allies": [
+  "Morocco",
+  "Tunis"
+ ],
+ "rivals": [],
+ "cabinet": [
+  {
+   "person": "faraj-ibn-ismail",
+   "role": "Increase control in Mālaqa"
+  },
+  {
+   "person": "yusuf-ibn-muhammad",
+   "role": "Promote Granadan sovereignty"
+  }
+ ],
+ "crownPower": 14.4,
+ "politicalInfluence": 25,
+ "stability": 32,
+ "prestige": 25,
+ "armies": [
+  {
+   "leader": "ibn-al-khatib",
+   "men": 5748,
+   "at": "jumilla",
+   "makeup": "3,937 mutaṭawwiʿa, about 680 regulars, 730 mercenary camel riders and knights, 400 levies",
+   "source": "save"
+  },
+  {
+   "leader": "yahya-rahhu",
+   "men": 9978,
+   "at": "elche",
+   "makeup": "the Volunteers of the Faith: 8,748 footmen, 1,050 tornadizo horse, 181 camel auxiliaries",
+   "source": "save"
+  }
+ ],
+ "population": {
+  "total": 683503,
+  "cultures": {
+   "Andalusi": 527035,
+   "Catalan": 96249,
+   "Aragonese": 25489,
+   "Sephardi": 19045,
+   "Castilian": 13875,
+   "Ligurian": 1799,
+   "Mandinka": 12
+  },
+  "religions": {
+   "Sunni": 517395,
+   "Catholic": 147290,
+   "Jewish": 18806,
+   "Nyama": 12
+  }
+ },
+ "estates": [
+  {
+   "id": "crown",
+   "name": "Crown",
+   "power": 14.4,
+   "satisfaction": null,
+   "estimated": true
+  },
+  {
+   "id": "nobles",
+   "name": "Nobility",
+   "power": 45.97,
+   "satisfaction": 34,
+   "estimated": true
+  },
+  {
+   "id": "clergy",
+   "name": "ʿUlamāʾ",
+   "power": 12.34,
+   "satisfaction": 50,
+   "estimated": true
+  },
+  {
+   "id": "burghers",
+   "name": "Burghers",
+   "power": 10.05,
+   "satisfaction": 60,
+   "estimated": true
+  },
+  {
+   "id": "peasants",
+   "name": "Commoners",
+   "power": 4.1,
+   "satisfaction": 57,
+   "estimated": true
+  },
+  {
+   "id": "dhimmi",
+   "name": "Dhimmī",
+   "power": 13.15,
+   "satisfaction": 50,
+   "estimated": true
+  }
+ ],
+ "economy": {
+  "treasury": 674,
+  "income": 29.9,
+  "expenses": 54.0,
+  "debt": 964
+ },
+ "military": {
+  "manpower": 4322,
+  "maxManpower": 4241,
+  "regiments": 19,
+  "ships": 5
+ },
+ "wars": [],
+ "strait": {
+  "active": true,
+  "influence": -24.1,
+  "sovereignty": 54.7,
+  "yearsSubject": 19,
+  "areas": {
+   "held": 19,
+   "total": 72
+  }
+ },
+ "government": {
+  "type": "monarchy",
+  "heirSelection": "cognatic_primogeniture",
+  "laws": [
+   {
+    "slot": "feudal_de_jure_law",
+    "law": "by_tradition"
+   },
+   {
+    "slot": "medieval_levy_law",
+    "law": "peasant_levies"
+   },
+   {
+    "slot": "royal_court_customs_law",
+    "law": "aristocratic_court_policy"
+   },
+   {
+    "slot": "iqta_law",
+    "law": "efficient_tax_farming"
+   },
+   {
+    "slot": "censorship",
+    "law": "limited_censorship"
+   },
+   {
+    "slot": "slave_conversion",
+    "law": "allow_slave_religion"
+   },
+   {
+    "slot": "education_masses_law",
+    "law": "basic_religious_education"
+   },
+   {
+    "slot": "administrative_system",
+    "law": "feudal_administration"
+   },
+   {
+    "slot": "cultural_traditions_law",
+    "law": "martial_society"
+   },
+   {
+    "slot": "marriage_law",
+    "law": "muslim_marriage"
+   },
+   {
+    "slot": "heir_religion_law",
+    "law": "heir_same_religion"
+   },
+   {
+    "slot": "coin_laws",
+    "law": "gold_and_silver_coins"
+   },
+   {
+    "slot": "mining_law",
+    "law": "nobles_mining_law"
+   },
+   {
+    "slot": "immigration_law",
+    "law": "open_borders_law"
+   },
+   {
+    "slot": "legal_code_law",
+    "law": "sharia_law_policy"
+   },
+   {
+    "slot": "sharia_law",
+    "law": "maliki_policy"
+   },
+   {
+    "slot": "maritime_law",
+    "law": "protect_trade_routes"
+   },
+   {
+    "slot": "piracy_law",
+    "law": "anti_piracy_policy"
+   },
+   {
+    "slot": "distribution_of_power_law",
+    "law": "dop_traditional_distribution_of_power"
+   },
+   {
+    "slot": "dhimmi_regulations_law",
+    "law": "dhimmi_status_policy"
+   }
+  ],
+  "reforms": [
+   "the_jewel_of_alandalus_reform",
+   "gra_hajib_reform"
+  ],
+  "privileges": [
+   "feudal_mercenary_contracts",
+   "nobles_land_rights",
+   "primacy_of_nobility",
+   "noble_marriage_rights",
+   "clergy_literacy_rights",
+   "clerical_advisory_council",
+   "clergy_land_rights",
+   "building_rights",
+   "market_fairs",
+   "sponsor_maritime_contracts",
+   "communal_lands",
+   "peasants_allowed_weapons_privilege",
+   "peasants_free_peasantry",
+   "dhimmi_military_service",
+   "dhimmi_promote_tolerance",
+   "dhimmi_administrative_posts",
+   "noble_sponsored_navy",
+   "jewish_court_financier_charter",
+   "jewish_physician_exemption",
+   "dhimmi_pact_of_umar",
+   "al_caid",
+   "andalusi_elite",
+   "treasury_rights",
+   "gra_visirate",
+   "gra_ulema_council",
+   "gra_volunteers_of_faith"
+  ],
+  "culture": "andalusi",
+  "tolerated": [
+   "sephardi"
+  ],
+  "religion": "sunni"
+ }
+}

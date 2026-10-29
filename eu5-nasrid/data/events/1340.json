@@ -29,6 +29,104 @@
   "source": "Trent's account and screenshots"
  },
  {
+  "id": "1340-04-16-battle-jerez",
+  "date": "1340-04-16",
+  "type": "battle",
+  "title": "Morocco holds at Jerez",
+  "places": [],
+  "wars": [
+   "moroccan-castilian-war"
+  ],
+  "data": {
+   "result": "victory",
+   "ours": 5156,
+   "theirs": 12837,
+   "ourLosses": 1252,
+   "theirLosses": 1807,
+   "side": "Morocco (Granada not engaged)"
+  },
+  "source": "checkpoint 1340-08-11"
+ },
+ {
+  "id": "1340-04-17-battle-ishbiliyya",
+  "date": "1340-04-17",
+  "type": "battle",
+  "title": "Tlemcen wins before Ishbīliyya",
+  "places": [
+   "ishbiliyya"
+  ],
+  "wars": [
+   "moroccan-castilian-war"
+  ],
+  "data": {
+   "result": "victory",
+   "ours": 1797,
+   "theirs": 1500,
+   "ourLosses": 45,
+   "theirLosses": 735,
+   "side": "Tlemcen (Granada not engaged)"
+  },
+  "source": "checkpoint 1340-08-11"
+ },
+ {
+  "id": "1340-04-30-battle-ishbiliyya",
+  "date": "1340-04-30",
+  "type": "battle",
+  "title": "Castile scatters the men of Gabès at Ishbīliyya",
+  "places": [
+   "ishbiliyya"
+  ],
+  "wars": [
+   "moroccan-castilian-war"
+  ],
+  "data": {
+   "result": "defeat",
+   "ours": 970,
+   "theirs": 11024,
+   "ourLosses": 205,
+   "theirLosses": 11,
+   "side": "Gabès (Granada not engaged)"
+  },
+  "source": "checkpoint 1340-08-11"
+ },
+ {
+  "id": "1340-05-26-battle-mursiyya",
+  "date": "1340-05-26",
+  "type": "battle",
+  "title": "Castile destroys the Tlemceni garrison of Mursiyya",
+  "places": [
+   "mursiyya"
+  ],
+  "wars": [
+   "moroccan-castilian-war"
+  ],
+  "data": {
+   "result": "defeat",
+   "ours": 716,
+   "theirs": 6710,
+   "ourLosses": 716,
+   "theirLosses": 55,
+   "side": "Tlemcen (Granada not engaged)"
+  },
+  "source": "checkpoint 1340-08-11"
+ },
+ {
+  "id": "1340-05-30-nobles-discontent",
+  "date": "1340-05-30",
+  "type": "estate_change",
+  "title": "The nobility grow restless: satisfaction down to 33",
+  "data": {
+   "estate": "nobles",
+   "from": 51,
+   "to": 33,
+   "between": [
+    "1339-09-02",
+    "1340-05-30"
+   ]
+  },
+  "source": "checkpoint 1340-05-30"
+ },
+ {
   "id": "1340-05-30-road-cut",
   "date": "1340-05-30",
   "type": "player_note",
@@ -62,7 +160,26 @@
    "result": "taken",
    "begun": "1339-11-08"
   },
-  "source": "Trent's account"
+  "source": "Trent's account; the 30 May 1340 save has both armies at Uryūla"
+ },
+ {
+  "id": "1340-06-07-battle-moron",
+  "date": "1340-06-07",
+  "type": "battle",
+  "title": "Morocco wins at Morón",
+  "places": [],
+  "wars": [
+   "moroccan-castilian-war"
+  ],
+  "data": {
+   "result": "victory",
+   "ours": 5442,
+   "theirs": 11012,
+   "ourLosses": 2071,
+   "theirLosses": 4309,
+   "side": "Morocco (Granada not engaged)"
+  },
+  "source": "checkpoint 1340-08-11"
  },
  {
   "id": "1340-06-20-second-battle-uryula",
@@ -94,6 +211,25 @@
   "source": "Trent's screenshots"
  },
  {
+  "id": "1340-07-04-battle-siyasa",
+  "date": "1340-07-04",
+  "type": "battle",
+  "title": "Tunis beaten at Siyāsa",
+  "places": [],
+  "wars": [
+   "moroccan-castilian-war"
+  ],
+  "data": {
+   "result": "defeat",
+   "ours": 2521,
+   "theirs": 6161,
+   "ourLosses": 1155,
+   "theirLosses": 221,
+   "side": "Tunis (Granada not engaged)"
+  },
+  "source": "checkpoint 1340-08-11"
+ },
+ {
   "id": "1340-07-27-hunger",
   "date": "1340-07-27",
   "type": "player_note",
@@ -123,5 +259,86 @@
    "owner": "ARA"
   },
   "source": "Trent's account"
+ },
+ {
+  "id": "1340-08-11-bluff",
+  "date": "1340-08-11",
+  "type": "player_note",
+  "title": "The bluff: the sultan threatens to march on Barcelona, though the host could scarcely have passed Shāṭiba",
+  "wars": [
+   "war-on-aragon"
+  ],
+  "places": [
+   "shatiba"
+  ],
+  "data": {
+   "ours": 16000,
+   "theirs": 6000
+  },
+  "source": "Trent's account"
+ },
+ {
+  "id": "1340-08-11-peace-aragon",
+  "date": "1340-08-11",
+  "type": "peace",
+  "title": "Peace with Aragon: thirteen locations ceded from Balansiyya south, and reparations for ten years",
+  "wars": [
+   "war-on-aragon"
+  ],
+  "places": [
+   "balansiyya",
+   "shatiba",
+   "daniya",
+   "al-qant",
+   "alsh",
+   "qandiya",
+   "al-quy",
+   "ayura",
+   "bunyul",
+   "shalba",
+   "liriya",
+   "uryula",
+   "jumalla"
+  ],
+  "data": {
+   "ceded": [
+    "valencia",
+    "jativa",
+    "denia",
+    "alicante",
+    "elche",
+    "gandia",
+    "alcoy",
+    "ayora",
+    "bunol",
+    "chelva",
+    "lliria",
+    "orihuela",
+    "jumilla"
+   ],
+   "reparationsUntil": "1350-08-11",
+   "treasury": {
+    "before": 121,
+    "after": 674
+   }
+  },
+  "source": "checkpoint 1340-08-11"
+ },
+ {
+  "id": "1340-08-11-territory",
+  "date": "1340-08-11",
+  "type": "territory_change",
+  "title": "Granada grows from 18 locations to 31 and from 485,000 souls to 683,500, with 96,000 Catalans, 25,000 Aragonese and 147,000 Christians",
+  "data": {
+   "locations": {
+    "from": 18,
+    "to": 31
+   },
+   "population": {
+    "from": 485485,
+    "to": 683503
+   }
+  },
+  "source": "checkpoint 1340-08-11"
  }
 ]

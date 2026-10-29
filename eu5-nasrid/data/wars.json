@@ -78,7 +78,7 @@
   "id": "war-on-aragon",
   "name": "The War on Aragon",
   "start": "1339-05-24",
-  "end": null,
+  "end": "1340-08-11",
   "goal": "Reclaim Andalusia (Granada's casus belli against Aragon)",
   "allies": [],
   "enemies": [
@@ -87,9 +87,9 @@
    "Navarre",
    "Cagliari"
   ],
-  "outcome": null,
+  "outcome": "Victory: Aragon cedes thirteen locations south of Castellón and Teruel, from Balansiyya and Shāṭiba to Uryūla and Jumalla, and pays war reparations for ten years",
   "involvement": "belligerent",
-  "note": "Declared on 24 May 1339 (confirmed by the save). Majorca, Navarre and Cagliari joined Aragon at once. Morocco and Tunis can be called in and have not been. The first fighting was a skirmish at Jumalla in August; on 8 November Ibn al-Khaṭīb won a great victory at Uryūla (Orihuela), worth 25 war score (Trent's screenshots), and laid siege to the town. Uryūla fell on 30 May 1340, as Castile laid siege to Mursiyya and cut the road home (Trent's account).",
+  "note": "Declared on 24 May 1339 (confirmed by the save). Majorca, Navarre and Cagliari joined Aragon at once. Morocco and Tunis can be called in and have not been. The first fighting was a skirmish at Jumalla in August; on 8 November Ibn al-Khaṭīb won a great victory at Uryūla (Orihuela), worth 25 war score (Trent's screenshots), and laid siege to the town. Uryūla fell on 30 May 1340, as Castile laid siege to Mursiyya and cut the road home (Trent's account). Peace was made on 11 August 1340. Trent's account: with Aragon's field army down to some 6,000 against our 16,000, and our own supply in doubt, the sultan threatened to march on Barcelona; Aragon conceded everything south of Castellón de la Plana and Teruel, with a large indemnity.",
   "gameName": "1st Granada–Aragon War",
   "sides": {
    "attackers": [

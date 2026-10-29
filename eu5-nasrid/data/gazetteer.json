@@ -425,7 +425,13 @@
   "nameGame": "Jmalla",
   "kind": "location",
   "nameArabic": "جملة",
-  "note": "Jumilla, in the Murcia area on the road to Aragon."
+  "note": "Jumilla, in the Murcia area on the road to Aragon.",
+  "held": [
+   {
+    "from": "1340-08-11",
+    "to": null
+   }
+  ]
  },
  {
   "id": "muntil",
@@ -450,6 +456,178 @@
   "nameGame": "Oriola",
   "kind": "location",
   "nameArabic": "أوريولة",
-  "note": "Orihuela, in the Valencia area, held by Aragon. The game shows Aragon's form, Oriola; its Arabic name is 'Uryūla."
+  "note": "Orihuela, in the Valencia area, held by Aragon. The game shows Aragon's form, Oriola; its Arabic name is 'Uryūla.",
+  "held": [
+   {
+    "from": "1340-08-11",
+    "to": null
+   }
+  ],
+  "major": true
+ },
+ {
+  "id": "balansiyya",
+  "key": "valencia",
+  "name": "Balansiyya",
+  "nameGame": "Blansiya",
+  "kind": "location",
+  "nameArabic": "بلنسية",
+  "held": [
+   {
+    "from": "1340-08-11",
+    "to": null
+   }
+  ],
+  "major": true
+ },
+ {
+  "id": "shatiba",
+  "key": "jativa",
+  "name": "Shāṭiba",
+  "nameGame": "Šaṭba",
+  "kind": "location",
+  "nameArabic": "شاطبة",
+  "held": [
+   {
+    "from": "1340-08-11",
+    "to": null
+   }
+  ],
+  "major": true,
+  "note": "The fortress-town of Xàtiva."
+ },
+ {
+  "id": "daniya",
+  "key": "denia",
+  "name": "Dāniya",
+  "nameGame": "Daniyya",
+  "kind": "location",
+  "nameArabic": "دانية",
+  "held": [
+   {
+    "from": "1340-08-11",
+    "to": null
+   }
+  ],
+  "major": true
+ },
+ {
+  "id": "al-qant",
+  "key": "alicante",
+  "name": "al-Qant",
+  "nameGame": "Al-Qant",
+  "kind": "location",
+  "nameArabic": "لقنت",
+  "held": [
+   {
+    "from": "1340-08-11",
+    "to": null
+   }
+  ],
+  "major": true,
+  "note": "The game's form is Al-Qant; the Arabic script is the chronicle's (Laqant)."
+ },
+ {
+  "id": "alsh",
+  "key": "elche",
+  "name": "Alsh",
+  "nameGame": "Alš",
+  "kind": "location",
+  "nameArabic": "ألش",
+  "held": [
+   {
+    "from": "1340-08-11",
+    "to": null
+   }
+  ]
+ },
+ {
+  "id": "qandiya",
+  "key": "gandia",
+  "name": "Qandiya",
+  "nameGame": "Qandia",
+  "kind": "location",
+  "nameArabic": "قندية",
+  "held": [
+   {
+    "from": "1340-08-11",
+    "to": null
+   }
+  ]
+ },
+ {
+  "id": "al-quy",
+  "key": "alcoy",
+  "name": "al-Qūy",
+  "nameGame": "Al-Quy",
+  "kind": "location",
+  "nameArabic": "القوي",
+  "held": [
+   {
+    "from": "1340-08-11",
+    "to": null
+   }
+  ],
+  "note": "The Arabic script is the chronicle's; the game gives none."
+ },
+ {
+  "id": "ayura",
+  "key": "ayora",
+  "name": "Ayūra",
+  "nameGame": "Ayūra",
+  "kind": "location",
+  "nameArabic": "أيورة",
+  "held": [
+   {
+    "from": "1340-08-11",
+    "to": null
+   }
+  ],
+  "note": "The Arabic script is the chronicle's; the game gives none."
+ },
+ {
+  "id": "bunyul",
+  "key": "bunol",
+  "name": "Bunyūl",
+  "nameGame": "Bnyul",
+  "kind": "location",
+  "nameArabic": "بنيول",
+  "held": [
+   {
+    "from": "1340-08-11",
+    "to": null
+   }
+  ],
+  "note": "The Arabic script is the chronicle's; the game gives none."
+ },
+ {
+  "id": "shalba",
+  "key": "chelva",
+  "name": "Shalba",
+  "nameGame": "Šalba",
+  "kind": "location",
+  "nameArabic": "شلبة",
+  "held": [
+   {
+    "from": "1340-08-11",
+    "to": null
+   }
+  ],
+  "note": "The Arabic script is the chronicle's; the game gives none."
+ },
+ {
+  "id": "liriya",
+  "key": "lliria",
+  "name": "Līriya",
+  "nameGame": "Līriya",
+  "kind": "location",
+  "nameArabic": "ليرية",
+  "held": [
+   {
+    "from": "1340-08-11",
+    "to": null
+   }
+  ],
+  "note": "The Arabic script is the chronicle's; the game gives none."
  }
 ]
