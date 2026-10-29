@@ -260,6 +260,28 @@
    "latinization_vs_hellenization": "-999",
    "nd_old_world_vs_nd_new_world": "-999"
   },
+  "parliament": {
+   "type": "jamaa_parliament",
+   "last_called": "1339.5.24",
+   "agenda": [
+    {
+     "estate": "nobles_estate",
+     "type": "pa_move_towards_aristocracy"
+    },
+    {
+     "estate": "clergy_estate",
+     "type": "pa_move_towards_communalism_clergy"
+    }
+   ],
+   "possible_debates": [
+    "new_model_army_pi",
+    "declare_war_taxes",
+    "expand_diplomatic_corps_minors",
+    "fortify_frontier_passes",
+    "launch_religious_missions",
+    "promote_clergy_member"
+   ]
+  },
   "ruler_terms": [
    {
     "character": "3524",

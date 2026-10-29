@@ -42,6 +42,9 @@ export type Snapshot = {
   government?: {
     type: string; heirSelection: string; laws: { slot: string; law: string }[]; reforms: string[]; privileges: string[];
     culture: string; tolerated: string[]; religion: string;
+    societalValues: Record<string, number>;
+    parliament: { type: string; lastCalled: string | null; agenda: { estate: string; type: string }[] } | null;
+    privilegeDates: Record<string, string>;
   };
   wars: string[];
   strait: { active: boolean; influence: number; sovereignty: number; yearsSubject: number; areas?: { held: number; total: number } } | null;
@@ -57,13 +60,27 @@ export type StoryEntry = {
   html: string; sample: boolean;
 };
 
+export type Mod = { key: string; label: string; value: number | string; text: string; percent: boolean; good: boolean; size?: string };
+export type CatEntry = {
+  name: string; desc?: string | null; modifiers: Mod[]; power: Record<string, number>; satisfaction: Record<string, number>;
+  estate?: string; revoke?: string | null; years?: number | null; favouredBy?: string[];
+};
+export type Catalog = {
+  gameVersion: string;
+  privileges: Record<string, CatEntry>; reforms: Record<string, CatEntry>;
+  laws: Record<string, { name: string; category: string | null; options: Record<string, CatEntry> }>;
+  societalValues: Record<string, { name: string; left: string; right: string; leftModifiers: Mod[]; rightModifiers: Mod[] }>;
+  agendas: Record<string, { name: string; desc: string | null; estate: string; moves: { value: string | null; direction: string }[] }>;
+  parliaments: Record<string, { name: string; desc: string | null; nameIsOurs?: boolean }>;
+};
+
 type Campaign = {
   generated: string; sample: boolean; eras: Era[]; people: Person[]; places: Place[]; wars: War[];
-  countries: Country[]; snapshots: Snapshot[]; events: CampaignEvent[]; story: StoryEntry[];
+  countries: Country[]; snapshots: Snapshot[]; events: CampaignEvent[]; story: StoryEntry[]; catalog: Catalog;
 };
 
 export const campaign = raw as unknown as Campaign;
-export const { eras, people, places, wars, countries, snapshots, events, story } = campaign;
+export const { eras, people, places, wars, countries, snapshots, events, story, catalog } = campaign;
 export const chronicle = story.filter((s) => s.kind === "chronicle");
 export const notes = story.filter((s) => s.kind === "ooc");
 

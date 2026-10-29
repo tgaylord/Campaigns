@@ -3,6 +3,7 @@ import { scaleLinear } from "d3-scale";
 import { area, stack, stackOrderNone, stackOffsetExpand, curveMonotoneX } from "d3-shape";
 import { snapshots, events, estateColor, ESTATE_ORDER, yearFrac, year, hijri, arabicDigits, western, EVENT_LABEL } from "../lib/data";
 import { PageHead, CheckpointSelect, StarRule } from "../components/bits";
+import { Charters, Laws, Values, Assembly } from "./Charters";
 import "./council.css";
 
 /** Seat order around the arc: the crown sits in the middle of the council. */
@@ -131,6 +132,14 @@ export default function Council() {
         <span className="ui">{western(snap.date)}</span>
       </div>
       <CheckpointSelect value={i} onChange={setI} />
+
+      <StarRule />
+      <Charters snap={snap} />
+      <div className="council-pair">
+        <Assembly snap={snap} />
+        <Values snap={snap} />
+      </div>
+      <Laws snap={snap} />
 
       <StarRule />
       {snapshots.filter((s) => s.estates.some((e) => e.power != null)).length >= 2 && <><Stream /><StarRule /></>}

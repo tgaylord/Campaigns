@@ -47,6 +47,14 @@ The save holds each estate's satisfaction, gold and tax rate, but not its share 
 
 **Using it.** Checkpoints with a screen reading use the screen's figures. Others use `estate_power.py SECTIONS --out FILE` (the latest reading's modifiers and corrections) and are marked `estimated: true`. A new reading is worth taking after any change of privilege, law, cabinet or ruler, since the stored modifiers then go stale.
 
+## What the privileges and laws do
+
+The save names privileges, laws, reforms, societal values and parliament agendas by key only. `government_catalog.py GAME_DIR` reads their definitions from the game's own files (base game and the Across the Pillars DLC, with English localization) and writes `data/government-catalog.json`: each entry's name, the estate it belongs to, its modifiers with the game's own labels and percent/flat formatting, and summaries of the estate power and satisfaction it changes. Only what some checkpoint has held is written, plus every option of each law held, so the Council can show the alternatives.
+
+Run it again when a checkpoint brings a privilege, law or agenda not seen before (it prints anything it can't find). The game files come from the PC's install (`game/in_game/common/...`, `game/dlc/*/in_game/common/...`, `game/main_menu/common/{modifier_type_definitions,script_values}`, `game/main_menu/localization/english`). A few keys have no English name in the game; the tool gives them the chronicle's own (`OWN_NAMES`) and marks them `nameIsOurs`.
+
+The snapshots carry `government.societalValues`, `government.parliament` (type, when last called, each estate's agenda) and `government.privilegeDates`, copied from the extracted facts.
+
 ## Compressed saves in 1.4
 
 1.4 stores almost every field name as an index into the save's string table instead of a numeric token. The 1.3.11 decoder (`shared/tools/eu5-save-decoder/`) crashes on these saves, so this campaign uses `shared/tools/eu5-save-decoder-1.4/`, which this campaign adapted from it. Its README covers the format change and the validation: the compressed start save decodes to the same content as the text save made at the same moment, 31.6 million tokens compared.

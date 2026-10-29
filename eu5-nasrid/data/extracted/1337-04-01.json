@@ -260,6 +260,19 @@
    "latinization_vs_hellenization": "-999",
    "nd_old_world_vs_nd_new_world": "-999"
   },
+  "parliament": {
+   "type": "jamaa_parliament",
+   "last_called": "1334.8.1",
+   "agenda": [],
+   "possible_debates": [
+    "new_model_army_pi",
+    "crown_expel_order_holding",
+    "monopolize_land_trade_routes",
+    "establish_military_exercises",
+    "establish_parish_waypoints",
+    "establish_clergy_charity"
+   ]
+  },
   "ruler_terms": [
    {
     "character": "3524",

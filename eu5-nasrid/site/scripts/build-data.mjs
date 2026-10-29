@@ -146,6 +146,10 @@ const Snapshot = z.object({
     type: z.string(), heirSelection: z.string(),
     laws: z.array(z.object({ slot: z.string(), law: z.string() })), reforms: z.array(z.string()), privileges: z.array(z.string()),
     culture: z.string(), tolerated: z.array(z.string()), religion: z.string(),
+    /** −100 (left pole) to +100 (right pole); values the country doesn't have are left out */
+    societalValues: z.record(z.string(), z.number()).default({}),
+    parliament: z.object({ type: z.string(), lastCalled: isoDate.nullable(), agenda: z.array(z.object({ estate: z.string(), type: z.string() })) }).nullable().default(null),
+    privilegeDates: z.record(z.string(), isoDate).default({}),
   }).optional(),
   wars: z.array(id).default([]),
   strait: z.object({
@@ -227,6 +231,22 @@ const eras = (await readJson(path.join(CAMPAIGN, "data/eras.json"))).map((e, i) 
 const people = (await readJson(path.join(CAMPAIGN, "data/people.json"))).map((e, i) => check(Person, e, `people.json[${i}]`)).filter(Boolean);
 const places = (await readJson(path.join(CAMPAIGN, "data/gazetteer.json"))).map((e, i) => check(Place, e, `gazetteer.json[${i}]`)).filter(Boolean);
 const wars = (await readJson(path.join(CAMPAIGN, "data/wars.json"))).map((e, i) => check(War, e, `wars.json[${i}]`)).filter(Boolean);
+// What each privilege, law, reform, societal value and agenda does (tools/government_catalog.py).
+const Mod = z.object({ key: z.string(), label: z.string(), value: z.union([z.number(), z.string()]), text: z.string(), percent: z.boolean(), good: z.boolean(), size: z.string().optional() });
+const CatEntry = z.object({
+  name: z.string(), desc: z.string().nullable().optional(), modifiers: z.array(Mod), power: z.record(z.string(), z.number()),
+  satisfaction: z.record(z.string(), z.number()), estate: z.string().optional(), revoke: z.string().nullable().optional(),
+  years: z.number().nullable().optional(), favouredBy: z.array(z.string()).optional(), nameIsOurs: z.boolean().optional(),
+});
+const Catalog = z.object({
+  gameVersion: z.string(),
+  privileges: z.record(z.string(), CatEntry), reforms: z.record(z.string(), CatEntry),
+  laws: z.record(z.string(), z.object({ name: z.string(), category: z.string().nullable(), options: z.record(z.string(), CatEntry) })),
+  societalValues: z.record(z.string(), z.object({ name: z.string(), left: z.string(), right: z.string(), leftModifiers: z.array(Mod), rightModifiers: z.array(Mod) })),
+  agendas: z.record(z.string(), z.object({ name: z.string(), desc: z.string().nullable(), estate: z.string(), moves: z.array(z.object({ value: z.string().nullable(), direction: z.string() })) })),
+  parliaments: z.record(z.string(), z.object({ name: z.string(), desc: z.string().nullable(), nameIsOurs: z.boolean().optional() })),
+});
+const catalog = check(Catalog, await readJson(path.join(CAMPAIGN, "data/government-catalog.json")), "government-catalog.json");
 const countries = (await readJson(path.join(CAMPAIGN, "data/countries.json"))).map((e, i) => check(Country, e, `countries.json[${i}]`)).filter(Boolean);
 
 const snapshots = [];
@@ -363,7 +383,7 @@ const mapOut = { frame: gameMap.frame, coast: gameMap.coast, locations: drawn, o
 /* ------------------------------------------------------------ write */
 
 await mkdir(OUT, { recursive: true });
-const campaign = { generated: new Date().toISOString(), sample: sampleData, eras, people, places, wars, countries, snapshots, events, story };
+const campaign = { generated: new Date().toISOString(), sample: sampleData, eras, people, places, wars, countries, snapshots, events, story, catalog };
 await writeFile(path.join(OUT, "campaign.json"), JSON.stringify(campaign));
 await writeFile(path.join(OUT, "map.json"), JSON.stringify(mapOut));
 console.log(

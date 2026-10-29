@@ -138,6 +138,11 @@ R = {
         'privileges': [{'object': get(v, 'object'), 'date': get(v, 'date')} for v in vals(get(gov, 'implemented_privileges') or [])],
         'reforms': [{'object': get(v, 'object'), 'date': get(v, 'date')} for v in vals(get(gov, 'implemented_reforms') or [])],
         'societal_values': dict(get(gov, 'societal_values') or []),
+        'parliament': (lambda pm: pm and {
+            'type': get(pm, 'parliament_type'), 'last_called': get(pm, 'last_parliament_called'),
+            'agenda': [{'estate': get(x, 'estate'), 'type': get(x, 'type')} for x in vals(get(pm, 'parliament_agenda') or [])],
+            'possible_debates': vals(get(pm, 'possible_debates') or []),
+        })(get(gov, 'parliament')),
         'ruler_terms': terms,
     },
     'court': court,
