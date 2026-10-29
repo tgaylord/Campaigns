@@ -1,0 +1,65 @@
+# Builds every campaign that has a site (any <campaign>/site/package.json) and
+# publishes them together on GitHub Pages:
+#   https://tgaylord.github.io/Campaigns/<campaign>/
+name: Build and publish campaign sites
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Build each campaign site
+        run: |
+          mkdir -p _site
+          echo '<!doctype html><meta charset="utf-8"><title>Campaigns</title><h1>Campaigns</h1><ul>' > _site/index.html
+          for pkg in */site/package.json; do
+            [ -e "$pkg" ] || continue
+            campaign="${pkg%%/*}"
+            echo "::group::$campaign"
+            (cd "$campaign/site" && npm ci && npm run build)
+            mkdir -p "_site/$campaign"
+            cp -r "$campaign/site/dist/." "_site/$campaign/"
+            echo "<li><a href=\"$campaign/\">$campaign</a></li>" >> _site/index.html
+            echo "::endgroup::"
+          done
+          echo '</ul>' >> _site/index.html
+          # Pages has one 404 page per repo. Send deep links in a campaign's site back to
+          # that site's index as ?p=<path>; the site restores the path and routes it.
+          cat > _site/404.html <<'HTML'
+          <!doctype html><meta charset="utf-8"><title>Not found</title>
+          <script>
+            var s = location.pathname.split("/");
+            if (s.length > 3 && s[2]) location.replace("/" + s[1] + "/" + s[2] + "/?p=" + encodeURIComponent("/" + s.slice(3).join("/")) + location.hash);
+          </script>
+          <p>Nothing here. <a href="./">Back to the campaigns</a>.</p>
+          HTML
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
