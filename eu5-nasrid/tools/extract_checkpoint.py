@@ -2,8 +2,7 @@
 """Extract the facts the Nasrid campaign tracks from one EU5 save.
 
 The save must already be split into sections by
-shared/tools/eu5-save-decoder/decode.py (text saves are only split; compressed
-1.4 saves need the 1.4 patch to b2t, see tools/README.md).
+shared/tools/eu5-save-decoder-1.4/decode.py (text saves are only split).
 
 usage:
   extract_checkpoint.py SECTIONS_DIR OUT.json [--tag GRA] [--no-computed]
@@ -19,7 +18,7 @@ that names and story ids stay under the chronicle's control.
 import argparse, collections, json, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.join(HERE, '..', '..', 'shared', 'tools', 'eu5-save-decoder'))
+sys.path.insert(0, os.path.join(HERE, '..', '..', 'shared', 'tools', 'eu5-save-decoder-1.4'))
 from jomini import DB, get, parse, vals  # noqa: E402
 
 ap = argparse.ArgumentParser()

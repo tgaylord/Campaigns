@@ -62,7 +62,7 @@ Each campaign gets its own top-level folder; Rome or any other campaign would si
 ## 3. Saves: getting them to Claude
 
 - **Source:** the gaming PC (Windows), the game's `save games` folder under `Documents\Paradox Interactive\Europa Universalis V`. That computer has to be linked to the chat (open the chat in the Claude desktop app there), with this folder connected.
-- **Format:** ordinary compressed saves (tens of MB, no zipping). The shared decoder turns them into text; 1.4 needs the patch in `tools/b2t-1.4.patch` (checked against the start saves: identical content). Text saves via debug mode are only needed when the game version changes: save once as text and once normally at the same moment, so the decoder can be checked again.
+- **Format:** ordinary compressed saves (tens of MB, no zipping). The shared 1.4 decoder (`shared/tools/eu5-save-decoder-1.4/`) turns them into text (checked against the start saves: identical content). The 1.3.11 decoder beside it crashes on 1.4 saves. Text saves via debug mode are only needed when the game version changes: save once as text and once normally at the same moment, so the decoder can be checked again.
 - **Naming:** `GRA_YYYY_MM_DD_short-slug`, e.g. `GRA_1340_10_30_rio-salado`. The game's own `SP_GRA_YYYY_MM_DD_…` names also work.
 - **Don't switch playsets inside the game.** Quit and relaunch instead: the one crash so far came after eight in-game playset reloads in a row.
 - **When to save a checkpoint:**
@@ -195,6 +195,6 @@ This campaign follows the repo-wide rules in `/CLAUDE.md`:
 
 1. ~~Mod list~~: settled (§1).
 2. ~~Publishing~~: settled. The repo is public and the site is published to an unlisted Pages address.
-3. Updating the shared decoder for 1.4 (the patch in `tools/b2t-1.4.patch`): needs Trent's approval, since it changes `shared/`.
+3. ~~Decoder for 1.4~~: settled. A separate shared tool, `shared/tools/eu5-save-decoder-1.4/`; the 1.3.11 one stays unchanged for Rome.
 4. Place names the game files leave doubtful: Órgiva (the game has "Yuz Aryuba"), Olvera (no Arabic script), and the Arabic script for Gérgal, Mojácar, Vélez-Rubio, Adra, Íllora, Píñar, Antequera and Vélez-Málaga, which the chronicle supplies itself. Each is marked in `data/gazetteer.json`.
 5. No heir is named in the start save; the game picks one once it runs.
