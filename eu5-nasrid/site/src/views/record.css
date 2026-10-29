@@ -18,3 +18,15 @@
 .m-list.ui .d { color: var(--dusk); font-size: 0.82rem; }
 .m-list .t { color: var(--dusk); font-size: 0.8rem; }
 .m-list a { color: var(--plaster); }
+
+.standing { margin-top: 2rem; }
+.standing-facts { display: grid; grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); gap: 0.6rem 1.5rem; margin: 0 0 1.2rem; }
+.standing-facts dt { font-size: 0.75rem; color: var(--dusk); }
+.standing-facts dd { margin: 0.1rem 0 0; color: var(--plaster); font-size: 0.95rem; text-transform: none; }
+.standing-shares { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 1rem 2rem; font-size: 0.85rem; }
+.standing-shares h3 { font-size: 0.8rem; font-weight: 500; color: var(--dusk); margin: 0 0 0.35rem; }
+.standing-shares ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.2rem; color: var(--plaster); }
+.standing-shares i { display: inline-block; width: 0.7rem; height: 0.7rem; border-radius: 2px; margin-right: 0.45rem; vertical-align: -0.05rem; }
+.standing-shares .n { color: var(--mist); font-variant-numeric: tabular-nums; }
+.standing-shares .bld { margin: 0; color: var(--mist); line-height: 1.6; }
+.standing-shares .bld::first-letter { text-transform: uppercase; }

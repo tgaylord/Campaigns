@@ -15,12 +15,14 @@ import WarsIndex from "./views/WarsIndex";
 import WarPage from "./views/WarPage";
 import Gazetteer from "./views/Gazetteer";
 import PlacePage from "./views/PlacePage";
+import Lands from "./views/Lands";
 
 const NAV = [
   { to: "/", latin: "The Atlas", ar: "الأطلس", end: true },
   { to: "/chronicle", latin: "The Chronicle", ar: "الأخبار" },
   { to: "/strait", latin: "The Strait", ar: "الزقاق" },
   { to: "/council", latin: "The Council", ar: "الديوان" },
+  { to: "/provinces", latin: "The Provinces", ar: "الكور" },
   { to: "/scroll", latin: "The Long Scroll", ar: "الدرج" },
   { to: "/court", latin: "The Court", ar: "البلاط" },
   { to: "/house", latin: "House of Naṣr", ar: "بنو نصر" },
@@ -69,6 +71,7 @@ export default function App() {
           <Route path="/chronicle/:id" element={<ChronicleFolio />} />
           <Route path="/strait" element={<Strait />} />
           <Route path="/council" element={<Council />} />
+          <Route path="/provinces" element={<Lands />} />
           <Route path="/scroll" element={<Scroll />} />
           <Route path="/court" element={<Court />} />
           <Route path="/house" element={<House />} />

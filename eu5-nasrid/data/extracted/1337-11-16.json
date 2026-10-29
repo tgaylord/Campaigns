@@ -1207,7 +1207,107 @@
      "sunni": 19.934,
      "judaism": 1.726,
      "catholic": 0.25
-    }
+    },
+    "pop_types_k": {
+     "peasants": 15.816,
+     "laborers": 1.806,
+     "burghers": 1.8,
+     "soldiers": 1.6,
+     "clergy": 0.535,
+     "nobles": 0.224,
+     "slaves": 0.129
+    },
+    "control": 0.1951,
+    "development": 26.2739,
+    "prosperity": 0.0294,
+    "cultural_unity": 0.9098,
+    "religious_unity": 0.9098,
+    "raw_material": "fiber_crops",
+    "tax": 1.2828,
+    "possible_tax": 6.4125,
+    "estate_tax": {
+     "nobles": 0.4027,
+     "clergy": 0.1617,
+     "burghers": 0.6094,
+     "peasants": 0.0989,
+     "dhimmi": 0.0102
+    },
+    "core": true,
+    "integration": {
+     "stage": "core",
+     "progress": 0.0
+    },
+    "last_owner_change": "1337.4.1",
+    "buildings": [
+     {
+      "type": "temple",
+      "level": 1
+     },
+     {
+      "type": "marketplace",
+      "level": 3
+     },
+     {
+      "type": "tools_guild",
+      "level": 3
+     },
+     {
+      "type": "weapon_guild",
+      "level": 1
+     },
+     {
+      "type": "mason",
+      "level": 1
+     },
+     {
+      "type": "pottery_guild",
+      "level": 2
+     },
+     {
+      "type": "paper_guild",
+      "level": 1
+     },
+     {
+      "type": "castle",
+      "level": 1
+     },
+     {
+      "type": "granary",
+      "level": 1
+     },
+     {
+      "type": "brewery",
+      "level": 1
+     },
+     {
+      "type": "tannery",
+      "level": 1
+     },
+     {
+      "type": "wharf",
+      "level": 1
+     },
+     {
+      "type": "fine_cloth_guild",
+      "level": 2
+     },
+     {
+      "type": "naval_supplies_guild",
+      "level": 1
+     },
+     {
+      "type": "tali_a_watchtower",
+      "level": 1
+     },
+     {
+      "type": "nobled_sponsored_temple",
+      "level": 1
+     },
+     {
+      "type": "noble_courts",
+      "level": 1
+     }
+    ]
    },
    "almanzora": {
     "id": 2887,
@@ -1225,7 +1325,46 @@
     "religions_k": {
      "sunni": 13.937,
      "judaism": 0.085
-    }
+    },
+    "pop_types_k": {
+     "peasants": 12.854,
+     "laborers": 1.008,
+     "clergy": 0.073,
+     "soldiers": 0.042,
+     "nobles": 0.035,
+     "burghers": 0.01
+    },
+    "control": 0.1689,
+    "development": 20.0163,
+    "prosperity": 0.0292,
+    "cultural_unity": 0.9939,
+    "religious_unity": 0.9939,
+    "raw_material": "marble",
+    "tax": 0.4894,
+    "possible_tax": 2.814,
+    "estate_tax": {
+     "nobles": 0.3843,
+     "clergy": 0.0452,
+     "burghers": 0.01,
+     "peasants": 0.0496,
+     "dhimmi": 0.0003
+    },
+    "core": true,
+    "integration": {
+     "stage": "core",
+     "progress": 0.0
+    },
+    "last_owner_change": "1337.4.1",
+    "buildings": [
+     {
+      "type": "market_village",
+      "level": 1
+     },
+     {
+      "type": "nobled_sponsored_temple",
+      "level": 1
+     }
+    ]
    },
    "baza": {
     "id": 2888,
@@ -1243,7 +1382,62 @@
     "religions_k": {
      "sunni": 16.387,
      "judaism": 0.1
-    }
+    },
+    "pop_types_k": {
+     "peasants": 15.287,
+     "laborers": 1.009,
+     "clergy": 0.086,
+     "soldiers": 0.05,
+     "nobles": 0.045,
+     "burghers": 0.01
+    },
+    "control": 0.1689,
+    "development": 21.0195,
+    "prosperity": 0.0293,
+    "cultural_unity": 0.9939,
+    "religious_unity": 0.9939,
+    "raw_material": "saffron",
+    "tax": 0.5174,
+    "possible_tax": 2.9743,
+    "estate_tax": {
+     "nobles": 0.4125,
+     "clergy": 0.0475,
+     "burghers": 0.0089,
+     "peasants": 0.0483,
+     "dhimmi": 0.0003
+    },
+    "core": true,
+    "integration": {
+     "stage": "core",
+     "progress": 0.0
+    },
+    "last_owner_change": "1337.4.1",
+    "buildings": [
+     {
+      "type": "thagr_fort",
+      "level": 2
+     },
+     {
+      "type": "market_village",
+      "level": 1
+     },
+     {
+      "type": "nobled_sponsored_temple",
+      "level": 1
+     },
+     {
+      "type": "toll_castle",
+      "level": 1
+     },
+     {
+      "type": "rotten_borough",
+      "level": 1
+     },
+     {
+      "type": "local_estates",
+      "level": 1
+     }
+    ]
    },
    "gergal": {
     "id": 2889,
@@ -1261,7 +1455,47 @@
     "religions_k": {
      "sunni": 7.005,
      "judaism": 0.042
-    }
+    },
+    "pop_types_k": {
+     "peasants": 5.932,
+     "laborers": 1.003,
+     "clergy": 0.035,
+     "soldiers": 0.027,
+     "slaves": 0.021,
+     "nobles": 0.018,
+     "burghers": 0.01
+    },
+    "control": 0.1664,
+    "development": 18.0163,
+    "prosperity": 0.0289,
+    "cultural_unity": 0.994,
+    "religious_unity": 0.994,
+    "raw_material": "dyes",
+    "tax": 0.4553,
+    "possible_tax": 2.6559,
+    "estate_tax": {
+     "nobles": 0.3513,
+     "clergy": 0.0398,
+     "burghers": 0.0194,
+     "peasants": 0.0447,
+     "dhimmi": 0.0001
+    },
+    "core": true,
+    "integration": {
+     "stage": "core",
+     "progress": 0.0
+    },
+    "last_owner_change": "1337.4.1",
+    "buildings": [
+     {
+      "type": "market_village",
+      "level": 1
+     },
+     {
+      "type": "rotten_borough",
+      "level": 1
+     }
+    ]
    },
    "huescar": {
     "id": 2890,
@@ -1279,7 +1513,48 @@
     "religions_k": {
      "sunni": 17.032,
      "judaism": 0.104
-    }
+    },
+    "pop_types_k": {
+     "peasants": 15.909,
+     "laborers": 1.061,
+     "clergy": 0.086,
+     "nobles": 0.044,
+     "soldiers": 0.036
+    },
+    "control": 0.1665,
+    "development": 19.0192,
+    "prosperity": 0.0289,
+    "cultural_unity": 0.9939,
+    "religious_unity": 0.9939,
+    "raw_material": "wool",
+    "tax": 0.2411,
+    "possible_tax": 1.4064,
+    "estate_tax": {
+     "nobles": 0.1963,
+     "clergy": 0.022,
+     "peasants": 0.0227,
+     "dhimmi": 0.0001
+    },
+    "core": true,
+    "integration": {
+     "stage": "core",
+     "progress": 0.0
+    },
+    "last_owner_change": "1337.4.1",
+    "buildings": [
+     {
+      "type": "thagr_fort",
+      "level": 2
+     },
+     {
+      "type": "farming_village",
+      "level": 1
+     },
+     {
+      "type": "local_estates",
+      "level": 1
+     }
+    ]
    },
    "mojacar": {
     "id": 2891,
@@ -1297,7 +1572,48 @@
     "religions_k": {
      "sunni": 22.804,
      "judaism": 0.139
-    }
+    },
+    "pop_types_k": {
+     "peasants": 19.73,
+     "laborers": 2.039,
+     "soldiers": 1.0,
+     "clergy": 0.117,
+     "nobles": 0.057
+    },
+    "control": 0.1664,
+    "development": 20.0181,
+    "prosperity": 0.0289,
+    "cultural_unity": 0.9939,
+    "religious_unity": 0.9939,
+    "raw_material": "alum",
+    "tax": 0.4439,
+    "possible_tax": 2.5899,
+    "estate_tax": {
+     "nobles": 0.3588,
+     "clergy": 0.0412,
+     "peasants": 0.0437,
+     "dhimmi": 0.0003
+    },
+    "core": true,
+    "integration": {
+     "stage": "core",
+     "progress": 0.0
+    },
+    "last_owner_change": "1337.4.1",
+    "buildings": [
+     {
+      "type": "tali_a_watchtower",
+      "level": 1
+     },
+     {
+      "type": "fishing_village",
+      "level": 1
+     },
+     {
+      "type": "local_shrine",
+      "level": 1
+     }
+    ]
    },
    "velez_rubio": {
     "id": 2892,
@@ -1315,7 +1631,60 @@
     "religions_k": {
      "sunni": 12.016,
      "judaism": 0.073
-    }
+    },
+    "pop_types_k": {
+     "peasants": 10.877,
+     "laborers": 1.065,
+     "clergy": 0.062,
+     "soldiers": 0.053,
+     "nobles": 0.032
+    },
+    "control": 0.1439,
+    "development": 18.016,
+    "prosperity": 0.0289,
+    "cultural_unity": 0.994,
+    "religious_unity": 0.994,
+    "raw_material": "fruit",
+    "tax": 0.1617,
+    "possible_tax": 1.0861,
+    "estate_tax": {
+     "nobles": 0.1341,
+     "clergy": 0.015,
+     "peasants": 0.0126,
+     "dhimmi": 0.0001
+    },
+    "core": true,
+    "integration": {
+     "stage": "core",
+     "progress": 0.0
+    },
+    "last_owner_change": "1337.4.1",
+    "buildings": [
+     {
+      "type": "thagr_fort",
+      "level": 2
+     },
+     {
+      "type": "farming_village",
+      "level": 1
+     },
+     {
+      "type": "toll_castle",
+      "level": 1
+     },
+     {
+      "type": "noble_villa",
+      "level": 1
+     },
+     {
+      "type": "noble_courts",
+      "level": 1
+     },
+     {
+      "type": "nobled_sponsored_temple",
+      "level": 1
+     }
+    ]
    },
    "granada": {
     "id": 2894,
@@ -1333,7 +1702,127 @@
     "religions_k": {
      "sunni": 150.402,
      "judaism": 6.053
-    }
+    },
+    "pop_types_k": {
+     "peasants": 138.729,
+     "laborers": 6.151,
+     "burghers": 4.0,
+     "clergy": 2.987,
+     "slaves": 2.252,
+     "nobles": 1.586,
+     "soldiers": 0.75
+    },
+    "control": 1.0,
+    "development": 33.0272,
+    "prosperity": 0.0333,
+    "cultural_unity": 0.9613,
+    "religious_unity": 0.9613,
+    "raw_material": "clay",
+    "tax": 14.9383,
+    "possible_tax": 14.9383,
+    "estate_tax": {
+     "nobles": 4.7702,
+     "clergy": 2.2474,
+     "burghers": 3.4979,
+     "peasants": 4.3083,
+     "dhimmi": 0.1146
+    },
+    "core": true,
+    "integration": {
+     "stage": "core",
+     "progress": 0.0
+    },
+    "last_owner_change": "1337.4.1",
+    "buildings": [
+     {
+      "type": "temple",
+      "level": 1
+     },
+     {
+      "type": "tools_guild",
+      "level": 4
+     },
+     {
+      "type": "mason",
+      "level": 2
+     },
+     {
+      "type": "pottery_guild",
+      "level": 3
+     },
+     {
+      "type": "furniture_guild",
+      "level": 1
+     },
+     {
+      "type": "distillers_guild",
+      "level": 1
+     },
+     {
+      "type": "weapon_guild",
+      "level": 2
+     },
+     {
+      "type": "brewery",
+      "level": 1
+     },
+     {
+      "type": "cloth_guild",
+      "level": 1
+     },
+     {
+      "type": "fine_cloth_guild",
+      "level": 4
+     },
+     {
+      "type": "paper_guild",
+      "level": 2
+     },
+     {
+      "type": "scriptorium",
+      "level": 3
+     },
+     {
+      "type": "castle",
+      "level": 1
+     },
+     {
+      "type": "jewelry_guild",
+      "level": 2
+     },
+     {
+      "type": "glass_guild",
+      "level": 1
+     },
+     {
+      "type": "granary",
+      "level": 3
+     },
+     {
+      "type": "tannery",
+      "level": 3
+     },
+     {
+      "type": "marketplace",
+      "level": 3
+     },
+     {
+      "type": "dyes_guild",
+      "level": 1
+     },
+     {
+      "type": "alhambra",
+      "level": 1
+     },
+     {
+      "type": "funduq",
+      "level": 1
+     },
+     {
+      "type": "nobled_sponsored_temple",
+      "level": 1
+     }
+    ]
    },
    "adra": {
     "id": 2895,
@@ -1351,7 +1840,48 @@
     "religions_k": {
      "sunni": 6.634,
      "judaism": 0.062
-    }
+    },
+    "pop_types_k": {
+     "peasants": 4.534,
+     "laborers": 1.072,
+     "soldiers": 1.034,
+     "clergy": 0.033,
+     "nobles": 0.022
+    },
+    "control": 0.3385,
+    "development": 20.0181,
+    "prosperity": 0.0324,
+    "cultural_unity": 0.9908,
+    "religious_unity": 0.9908,
+    "raw_material": "sugar",
+    "tax": 0.6839,
+    "possible_tax": 1.9914,
+    "estate_tax": {
+     "nobles": 0.5223,
+     "clergy": 0.0549,
+     "peasants": 0.1058,
+     "dhimmi": 0.001
+    },
+    "core": true,
+    "integration": {
+     "stage": "core",
+     "progress": 0.0
+    },
+    "last_owner_change": "1337.4.1",
+    "buildings": [
+     {
+      "type": "tali_a_watchtower",
+      "level": 1
+     },
+     {
+      "type": "fishing_village",
+      "level": 1
+     },
+     {
+      "type": "local_estates",
+      "level": 1
+     }
+    ]
    },
    "almunecar": {
     "id": 2896,
@@ -1369,7 +1899,58 @@
     "religions_k": {
      "sunni": 10.258,
      "judaism": 0.062
-    }
+    },
+    "pop_types_k": {
+     "peasants": 8.069,
+     "laborers": 1.101,
+     "soldiers": 1.05,
+     "clergy": 0.054,
+     "nobles": 0.026,
+     "burghers": 0.02
+    },
+    "control": 0.6777,
+    "development": 21.2687,
+    "prosperity": 0.0335,
+    "cultural_unity": 0.994,
+    "religious_unity": 0.994,
+    "raw_material": "fish",
+    "tax": 0.7956,
+    "possible_tax": 1.1736,
+    "estate_tax": {
+     "nobles": 0.4639,
+     "clergy": 0.0706,
+     "burghers": 0.0427,
+     "peasants": 0.2171,
+     "dhimmi": 0.0013
+    },
+    "core": true,
+    "integration": {
+     "stage": "core",
+     "progress": 0.0
+    },
+    "last_owner_change": "1337.4.1",
+    "buildings": [
+     {
+      "type": "tali_a_watchtower",
+      "level": 1
+     },
+     {
+      "type": "market_village",
+      "level": 1
+     },
+     {
+      "type": "nobled_sponsored_temple",
+      "level": 1
+     },
+     {
+      "type": "spiritual_retreat",
+      "level": 1
+     },
+     {
+      "type": "burgher_mansion",
+      "level": 1
+     }
+    ]
    },
    "guadix": {
     "id": 2897,
@@ -1387,7 +1968,46 @@
     "religions_k": {
      "sunni": 25.994,
      "judaism": 0.133
-    }
+    },
+    "pop_types_k": {
+     "peasants": 23.911,
+     "laborers": 2.007,
+     "clergy": 0.111,
+     "nobles": 0.056,
+     "soldiers": 0.033,
+     "burghers": 0.01
+    },
+    "control": 0.4079,
+    "development": 21.0195,
+    "prosperity": 0.0322,
+    "cultural_unity": 0.9949,
+    "religious_unity": 0.9949,
+    "raw_material": "saffron",
+    "tax": 2.7397,
+    "possible_tax": 6.6346,
+    "estate_tax": {
+     "nobles": 1.9868,
+     "clergy": 0.2176,
+     "burghers": 0.0376,
+     "peasants": 0.4952,
+     "dhimmi": 0.0025
+    },
+    "core": true,
+    "integration": {
+     "stage": "core",
+     "progress": 0.0
+    },
+    "last_owner_change": "1337.4.1",
+    "buildings": [
+     {
+      "type": "market_village",
+      "level": 1
+     },
+     {
+      "type": "noble_villa",
+      "level": 1
+     }
+    ]
    },
    "illora": {
     "id": 2898,
@@ -1405,7 +2025,54 @@
     "religions_k": {
      "sunni": 23.392,
      "judaism": 0.117
-    }
+    },
+    "pop_types_k": {
+     "peasants": 22.199,
+     "laborers": 1.1,
+     "clergy": 0.098,
+     "nobles": 0.052,
+     "soldiers": 0.05,
+     "burghers": 0.01
+    },
+    "control": 0.8358,
+    "development": 19.0208,
+    "prosperity": 0.0332,
+    "cultural_unity": 0.995,
+    "religious_unity": 0.995,
+    "raw_material": "stone",
+    "tax": 1.0651,
+    "possible_tax": 1.2739,
+    "estate_tax": {
+     "nobles": 0.6094,
+     "clergy": 0.0822,
+     "burghers": 0.0136,
+     "peasants": 0.3581,
+     "dhimmi": 0.0018
+    },
+    "core": true,
+    "integration": {
+     "stage": "core",
+     "progress": 0.0
+    },
+    "last_owner_change": "1337.4.1",
+    "buildings": [
+     {
+      "type": "thagr_fort",
+      "level": 2
+     },
+     {
+      "type": "market_village",
+      "level": 1
+     },
+     {
+      "type": "noble_villa",
+      "level": 1
+     },
+     {
+      "type": "rotten_borough",
+      "level": 1
+     }
+    ]
    },
    "loja": {
     "id": 2899,
@@ -1423,7 +2090,48 @@
     "religions_k": {
      "sunni": 20.373,
      "judaism": 0.099
-    }
+    },
+    "pop_types_k": {
+     "peasants": 19.251,
+     "laborers": 1.061,
+     "clergy": 0.081,
+     "nobles": 0.042,
+     "soldiers": 0.037
+    },
+    "control": 0.8226,
+    "development": 18.0117,
+    "prosperity": 0.0332,
+    "cultural_unity": 0.9952,
+    "religious_unity": 0.9952,
+    "raw_material": "legumes",
+    "tax": 0.5729,
+    "possible_tax": 0.6962,
+    "estate_tax": {
+     "nobles": 0.3273,
+     "clergy": 0.0522,
+     "peasants": 0.1922,
+     "dhimmi": 0.0012
+    },
+    "core": true,
+    "integration": {
+     "stage": "core",
+     "progress": 0.0
+    },
+    "last_owner_change": "1337.4.1",
+    "buildings": [
+     {
+      "type": "thagr_fort",
+      "level": 2
+     },
+     {
+      "type": "farming_village",
+      "level": 1
+     },
+     {
+      "type": "toll_castle",
+      "level": 1
+     }
+    ]
    },
    "pinar": {
     "id": 2900,
@@ -1441,7 +2149,52 @@
     "religions_k": {
      "sunni": 21.424,
      "judaism": 0.105
-    }
+    },
+    "pop_types_k": {
+     "peasants": 20.33,
+     "laborers": 1.014,
+     "clergy": 0.088,
+     "soldiers": 0.051,
+     "nobles": 0.046
+    },
+    "control": 0.6701,
+    "development": 19.0149,
+    "prosperity": 0.0322,
+    "cultural_unity": 0.9951,
+    "religious_unity": 0.9951,
+    "raw_material": "wheat",
+    "tax": 0.6774,
+    "possible_tax": 1.0034,
+    "estate_tax": {
+     "nobles": 0.4268,
+     "clergy": 0.0525,
+     "peasants": 0.197,
+     "dhimmi": 0.001
+    },
+    "core": true,
+    "integration": {
+     "stage": "core",
+     "progress": 0.0
+    },
+    "last_owner_change": "1337.4.1",
+    "buildings": [
+     {
+      "type": "farming_village",
+      "level": 1
+     },
+     {
+      "type": "noble_courts",
+      "level": 1
+     },
+     {
+      "type": "nobles_mansion",
+      "level": 1
+     },
+     {
+      "type": "local_estates",
+      "level": 1
+     }
+    ]
    },
    "orgiva": {
     "id": 2901,
@@ -1459,7 +2212,54 @@
     "religions_k": {
      "sunni": 13.298,
      "judaism": 0.055
-    }
+    },
+    "pop_types_k": {
+     "peasants": 12.218,
+     "laborers": 1.008,
+     "clergy": 0.047,
+     "soldiers": 0.045,
+     "nobles": 0.025,
+     "burghers": 0.01
+    },
+    "control": 0.6657,
+    "development": 17.0068,
+    "prosperity": 0.0322,
+    "cultural_unity": 0.9959,
+    "religious_unity": 0.9959,
+    "raw_material": "silk",
+    "tax": 2.8559,
+    "possible_tax": 4.2578,
+    "estate_tax": {
+     "nobles": 1.7886,
+     "clergy": 0.1941,
+     "burghers": 0.0661,
+     "peasants": 0.8037,
+     "dhimmi": 0.0033
+    },
+    "core": true,
+    "integration": {
+     "stage": "core",
+     "progress": 0.0
+    },
+    "last_owner_change": "1337.4.1",
+    "buildings": [
+     {
+      "type": "market_village",
+      "level": 1
+     },
+     {
+      "type": "noble_villa",
+      "level": 1
+     },
+     {
+      "type": "rotten_borough",
+      "level": 1
+     },
+     {
+      "type": "local_estates",
+      "level": 1
+     }
+    ]
    },
    "malaga": {
     "id": 2904,
@@ -1479,7 +2279,135 @@
      "sunni": 40.62,
      "judaism": 3.122,
      "catholic": 0.957
-    }
+    },
+    "pop_types_k": {
+     "peasants": 30.94,
+     "laborers": 5.151,
+     "burghers": 3.91,
+     "soldiers": 2.75,
+     "clergy": 0.994,
+     "slaves": 0.513,
+     "nobles": 0.44
+    },
+    "control": 0.4786,
+    "development": 33.2814,
+    "prosperity": 0.0304,
+    "cultural_unity": 0.9087,
+    "religious_unity": 0.9087,
+    "raw_material": "sugar",
+    "tax": 15.479,
+    "possible_tax": 32.3065,
+    "estate_tax": {
+     "nobles": 4.0158,
+     "clergy": 1.8301,
+     "burghers": 7.4281,
+     "peasants": 2.0095,
+     "dhimmi": 0.1953
+    },
+    "core": true,
+    "integration": {
+     "stage": "core",
+     "progress": 0.0
+    },
+    "last_owner_change": "1337.4.1",
+    "buildings": [
+     {
+      "type": "temple",
+      "level": 1
+     },
+     {
+      "type": "tools_guild",
+      "level": 4
+     },
+     {
+      "type": "mason",
+      "level": 2
+     },
+     {
+      "type": "pottery_guild",
+      "level": 2
+     },
+     {
+      "type": "furniture_guild",
+      "level": 1
+     },
+     {
+      "type": "weapon_guild",
+      "level": 2
+     },
+     {
+      "type": "cloth_guild",
+      "level": 1
+     },
+     {
+      "type": "fine_cloth_guild",
+      "level": 3
+     },
+     {
+      "type": "paper_guild",
+      "level": 1
+     },
+     {
+      "type": "scriptorium",
+      "level": 1
+     },
+     {
+      "type": "castle",
+      "level": 1
+     },
+     {
+      "type": "jewelry_guild",
+      "level": 1
+     },
+     {
+      "type": "glass_guild",
+      "level": 2
+     },
+     {
+      "type": "granary",
+      "level": 3
+     },
+     {
+      "type": "marketplace",
+      "level": 4
+     },
+     {
+      "type": "tannery",
+      "level": 3
+     },
+     {
+      "type": "naval_supplies_guild",
+      "level": 2
+     },
+     {
+      "type": "wharf",
+      "level": 1
+     },
+     {
+      "type": "winery",
+      "level": 2
+     },
+     {
+      "type": "dock",
+      "level": 1
+     },
+     {
+      "type": "tali_a_watchtower",
+      "level": 1
+     },
+     {
+      "type": "toll_castle",
+      "level": 1
+     },
+     {
+      "type": "cathedral",
+      "level": 1
+     },
+     {
+      "type": "artisan_guilds",
+      "level": 1
+     }
+    ]
    },
    "antequera": {
     "id": 2905,
@@ -1497,7 +2425,58 @@
     "religions_k": {
      "sunni": 22.313,
      "judaism": 0.136
-    }
+    },
+    "pop_types_k": {
+     "peasants": 20.109,
+     "laborers": 2.101,
+     "clergy": 0.118,
+     "nobles": 0.062,
+     "soldiers": 0.05,
+     "burghers": 0.01
+    },
+    "control": 0.1929,
+    "development": 20.0123,
+    "prosperity": 0.0304,
+    "cultural_unity": 0.9939,
+    "religious_unity": 0.9939,
+    "raw_material": "horses",
+    "tax": 1.4052,
+    "possible_tax": 7.2788,
+    "estate_tax": {
+     "nobles": 1.1021,
+     "clergy": 0.1297,
+     "burghers": 0.0177,
+     "peasants": 0.1547,
+     "dhimmi": 0.0009
+    },
+    "core": true,
+    "integration": {
+     "stage": "core",
+     "progress": 0.0
+    },
+    "last_owner_change": "1337.4.1",
+    "buildings": [
+     {
+      "type": "thagr_fort",
+      "level": 2
+     },
+     {
+      "type": "market_village",
+      "level": 1
+     },
+     {
+      "type": "nobled_sponsored_temple",
+      "level": 1
+     },
+     {
+      "type": "toll_castle",
+      "level": 1
+     },
+     {
+      "type": "nobles_mansion",
+      "level": 1
+     }
+    ]
    },
    "velez_malaga": {
     "id": 2908,
@@ -1515,7 +2494,59 @@
     "religions_k": {
      "sunni": 20.61,
      "judaism": 0.126
-    }
+    },
+    "pop_types_k": {
+     "peasants": 17.334,
+     "laborers": 2.1,
+     "soldiers": 1.05,
+     "clergy": 0.104,
+     "slaves": 0.064,
+     "nobles": 0.062,
+     "burghers": 0.022
+    },
+    "control": 0.5418,
+    "development": 24.0261,
+    "prosperity": 0.0299,
+    "cultural_unity": 0.9939,
+    "religious_unity": 0.9939,
+    "raw_material": "sugar",
+    "tax": 2.3386,
+    "possible_tax": 4.3148,
+    "estate_tax": {
+     "nobles": 1.5878,
+     "clergy": 0.2012,
+     "burghers": 0.0639,
+     "peasants": 0.4843,
+     "dhimmi": 0.0014
+    },
+    "core": true,
+    "integration": {
+     "stage": "core",
+     "progress": 0.0
+    },
+    "last_owner_change": "1337.4.1",
+    "buildings": [
+     {
+      "type": "tali_a_watchtower",
+      "level": 1
+     },
+     {
+      "type": "market_village",
+      "level": 1
+     },
+     {
+      "type": "nobles_mansion",
+      "level": 1
+     },
+     {
+      "type": "noble_villa",
+      "level": 1
+     },
+     {
+      "type": "local_markets",
+      "level": 1
+     }
+    ]
    }
   },
   "population_k": 477.976,

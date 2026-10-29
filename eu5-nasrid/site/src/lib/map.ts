@@ -11,6 +11,8 @@ type GameMap = {
   owners: Record<string, Record<string, string>>;
   /** checkpoint id → owner tag → outline of everything it owns */
   realms: Record<string, Record<string, Realm>>;
+  /** the game's English names (tools/place_names.py); the gazetteer's names win where a place has an entry */
+  names: { locations: Record<string, string>; provinces: Record<string, string>; areas: Record<string, string> };
 };
 export const gameMap = raw as unknown as GameMap;
 export const MAP_W = gameMap.frame.width;

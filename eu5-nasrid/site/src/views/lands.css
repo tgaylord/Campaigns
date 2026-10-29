@@ -1,0 +1,61 @@
+.lands-date { display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; margin: 0.5rem 0 0.5rem; }
+.lands-date .ar { font-size: 1.8rem; color: var(--gilt); }
+.lands-date .ui { color: var(--mist); }
+
+.area-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 0.8rem; margin: 1.6rem 0 1.4rem; }
+.area-card { display: grid; gap: 0.2rem; padding: 0.85rem 1rem; border-left: 3px solid var(--gilt); background: rgba(20, 29, 64, 0.55); font-size: 0.85rem; color: var(--mist); }
+.area-card .an { font-family: var(--serif); font-size: 1.25rem; color: var(--plaster); margin-bottom: 0.15rem; }
+.area-card b { color: var(--plaster); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+.lens-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.4rem; margin-bottom: 0.6rem; }
+.lens-bar button {
+  font: inherit; font-size: 0.85rem; color: var(--mist); background: none; cursor: pointer;
+  border: 1px solid rgba(158, 167, 199, 0.3); border-radius: 2px; padding: 0.3rem 0.75rem;
+}
+.lens-bar button.on { color: var(--night); background: var(--gilt-hi); border-color: var(--gilt-hi); }
+.lens-bar button:focus-visible { outline: 2px solid var(--gilt); outline-offset: 2px; }
+.lens-bar .legend { display: flex; flex-wrap: wrap; gap: 0.3rem 1rem; margin-left: auto; font-size: 0.8rem; color: var(--mist); }
+.lens-bar .legend i { display: inline-block; width: 0.8rem; height: 0.8rem; border-radius: 2px; margin-right: 0.35rem; vertical-align: -0.1rem; }
+@media (max-width: 40rem) { .lens-bar .legend { margin-left: 0; flex-basis: 100%; } }
+
+.lands-map { position: relative; }
+.lands-map svg { display: block; width: 100%; height: auto; border: 1px solid rgba(212, 171, 85, 0.35); border-radius: 3px; }
+.lands-map .sea { fill: #1a2a5e; }
+.lands-map .land { fill: #e1cfa9; }
+.lands-map .other { fill: #e1cfa9; stroke: #c7ae7c; }
+.lands-map .mine { stroke: #f4ead2; stroke-linejoin: round; cursor: pointer; outline: none; }
+.lands-map .mine.on, .lands-map .mine:focus-visible { stroke: #2b1d10; }
+.lands-map .coast { fill: none; stroke: #3a2814; stroke-opacity: 0.7; }
+.lands-tip {
+  position: absolute; pointer-events: none; z-index: 2; max-width: 16rem;
+  background: var(--night); border: 1px solid rgba(212, 171, 85, 0.5); border-radius: 3px; padding: 0.5rem 0.7rem;
+  font-size: 0.82rem; line-height: 1.45; color: var(--plaster);
+}
+.lands-tip .t { color: var(--gilt-hi); font-size: 0.95rem; }
+.lands-tip .ar { font-family: var(--naskh); margin-right: 0.2rem; }
+.lands-tip .m { color: var(--dusk); }
+
+.lands-table-wrap { overflow-x: auto; margin-top: 0.5rem; border-top: 1px solid rgba(158, 167, 199, 0.2); }
+.lands-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; min-width: 52rem; }
+.lands-table thead th { text-align: left; font-weight: 500; color: var(--dusk); padding: 0.55rem 0.5rem; border-bottom: 1px solid rgba(158, 167, 199, 0.2); white-space: nowrap; }
+.lands-table td, .lands-table tbody th { padding: 0.42rem 0.4rem; border-bottom: 1px solid rgba(158, 167, 199, 0.09); color: var(--plaster); vertical-align: middle; }
+.lands-table .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.lands-table .place { text-align: left; font-weight: 400; min-width: 9.5rem; position: sticky; left: 0; background: var(--night); }
+.lands-table .place a { color: var(--plaster); text-decoration-color: rgba(212, 171, 85, 0.5); }
+.lands-table .place .ar { font-family: var(--naskh); color: var(--gilt); margin-right: 0.45rem; font-size: 1.05rem; }
+.lands-table .area-row th { text-align: left; font-family: var(--serif); font-size: 1.25rem; font-weight: 400; color: var(--gilt-hi); padding: 1.2rem 0.5rem 0.35rem; border-bottom: 1px solid rgba(212, 171, 85, 0.35); position: sticky; left: 0; background: var(--night); }
+.lands-table .prov-row th, .lands-table .prov-row td { color: var(--mist); font-size: 0.8rem; border-bottom-color: rgba(158, 167, 199, 0.18); background: rgba(20, 29, 64, 0.6); }
+.lands-table .prov-row th.place { font-family: var(--serif); font-size: 1rem; color: var(--plaster); background: #141d40; }
+.lands-table .prov-row .sub { color: var(--dusk); }
+.lands-table tr.new th.place { box-shadow: inset 3px 0 0 var(--gilt-hi); }
+.lands-table .flag-new { margin-left: 0.4rem; font-size: 0.68rem; color: var(--night); background: var(--gilt-hi); padding: 0 0.35rem; border-radius: 2px; }
+.lands-table .of { color: var(--dusk); }
+.lands-table .ctl { display: inline-block; width: 1.8rem; height: 5px; margin-right: 0.4rem; vertical-align: middle; background: rgba(158, 167, 199, 0.15); border-radius: 2px; }
+.lands-table .ctl i { display: block; height: 100%; background: #5598e7; border-radius: 2px; }
+.shares { display: flex; width: 4.8rem; height: 9px; gap: 1px; border-radius: 2px; overflow: hidden; background: rgba(158, 167, 199, 0.1); }
+.shares i { display: block; height: 100%; }
+.lands-page .foot { font-size: 0.8rem; margin-top: 1rem; }
+.lands-page .lede-s { max-width: 44rem; margin: 0 0 1rem; }
+.lands-page .num { font-variant-numeric: tabular-nums; }
+.lands-page .flag-new { white-space: nowrap; }
+@media (max-width: 75rem) { .lands-table .ctl { display: none; } }

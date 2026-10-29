@@ -74,13 +74,31 @@ export type Catalog = {
   parliaments: Record<string, { name: string; desc: string | null; nameIsOurs?: boolean }>;
 };
 
+/** One of Granada's own locations at a checkpoint (from the extracted facts). */
+export type Land = {
+  key: string; province: string | null; area: string | null; region: string | null; rank: string | null; controller: string | null;
+  culture: string | null; religion: string | null; population: number;
+  cultures: Record<string, number>; religions: Record<string, number>; popTypes: Record<string, number>;
+  control: number | null; development: number | null; prosperity: number | null; culturalUnity: number | null; religiousUnity: number | null;
+  goods: string | null; tax: number | null; possibleTax: number | null; estateTax: Record<string, number>;
+  core: boolean | null; integration: { stage: string; progress: number } | null; since: string | null; buildings: { type: string; level: number }[];
+};
+
 type Campaign = {
   generated: string; sample: boolean; eras: Era[]; people: Person[]; places: Place[]; wars: War[];
   countries: Country[]; snapshots: Snapshot[]; events: CampaignEvent[]; story: StoryEntry[]; catalog: Catalog;
+  lands: Record<string, Land[]>;
 };
 
 export const campaign = raw as unknown as Campaign;
-export const { eras, people, places, wars, countries, snapshots, events, story, catalog } = campaign;
+export const { eras, people, places, wars, countries, snapshots, events, story, catalog, lands } = campaign;
+
+/** Names of peoples and faiths as the rest of the site writes them. */
+const FAITH: Record<string, string> = { judaism: "Jewish", nyama_religion: "Nyama" };
+const title = (k: string) => k.replace(/_(religion|culture)$/, "").replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+export const faithName = (k: string) => FAITH[k] ?? title(k);
+export const cultureName = (k: string) => title(k);
+export const rankName = (k: string | null) => ({ city: "City", town: "Town", rural_settlement: "Rural" } as Record<string, string>)[k ?? ""] ?? (k ? title(k) : "");
 export const chronicle = story.filter((s) => s.kind === "chronicle");
 export const notes = story.filter((s) => s.kind === "ooc");
 

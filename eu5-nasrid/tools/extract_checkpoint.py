@@ -202,6 +202,35 @@ for m in re.finditer(r'\n(\d+)=\{\n(.*?)\n\}', rd('population'), re.S):
     POP[int(m.group(1))] = (f('type'), f('culture'), f('religion'), float(f('size') or 0))
 
 # ---------- locations: owner and population of every owned location ----------
+def land_facts(b):
+    """How settled and how governed an owned location is: control, development, prosperity,
+    cultural and religious unity, its goods, tax (actual and possible, and by estate), whether it
+    is our core, and how far its integration has gone."""
+    def num(key):
+        m = re.search(r'\n\t\t\t' + key + r'=(-?[\d.]+)\n', b)
+        return round(float(m.group(1)), 4) if m else None
+    et = re.search(r'\n\t\t\testate_tax=\{(.*?)\n\t\t\t\}', b, re.S)
+    cores = re.search(r'\n\t\t\tcores=\{([^}]*)\}', b)
+    integ = None
+    im = re.search(r'\n\t\t\tintegration_data=\{(.*?)\n\t\t\t\}', b, re.S)
+    if im:
+        for blk in re.findall(r'\{([^{}]*)\}', im.group(1)):
+            d = dict(re.findall(r'(\w+)=([^\s]+)', blk))
+            if d.get('integration_owner') == str(CID):
+                integ = {'stage': d.get('integration'), 'progress': round(float(d.get('integration_progress', 0)), 2)}
+    rm = re.search(r'\n\t\t\traw_material=(\w+)', b)
+    lc = re.search(r'\n\t\t\tlast_owner_change=([\d.]+)', b)
+    return {
+        'control': num('control'), 'development': num('development'), 'prosperity': num('prosperity'),
+        'cultural_unity': num('cultural_unity'), 'religious_unity': num('religious_unity'),
+        'raw_material': rm.group(1) if rm else None, 'tax': num('tax'), 'possible_tax': num('possible_tax'),
+        'estate_tax': {k.replace('_estate', ''): round(float(v), 4) for k, v in re.findall(r'(\w+)=(-?[\d.]+)', et.group(1))} if et else {},
+        'core': bool(cores and str(CID) in cores.group(1).split()),
+        'integration': integ,
+        'last_owner_change': lc.group(1) if lc else None,
+    }
+
+
 PROV = {m.group(1): m.group(2) for m in re.finditer(r'\n(\d+)=\{\n\tcapital=\d+\n\tprovince_definition="?([^"\n]+)"?\n', rd('provinces'))}
 ltxt = rd('locations')
 starts = [(int(m.group(1)), m.start()) for m in re.finditer(r'\n\t\t(\d+)=\{', ltxt)]
@@ -218,11 +247,11 @@ for k, (lid, s) in enumerate(starts):
     if int(own) != CID: continue
     pm = re.search(r'\n\t\t\t\tpops=\{([^}]*)\}', b)
     pops = [int(x) for x in pm.group(1).split()] if pm else []
-    lc, lr, size = collections.Counter(), collections.Counter(), 0.0
+    lc, lr, lt, size = collections.Counter(), collections.Counter(), collections.Counter(), 0.0
     for p in pops:
         if p in POP:
             t, c, r, sz = POP[p]; size += sz
-            lc[keyof(CUL, c)] += sz; lr[keyof(REL, r, ('key', 'name'))] += sz; typ_tot[t] += sz
+            lc[keyof(CUL, c)] += sz; lr[keyof(REL, r, ('key', 'name'))] += sz; typ_tot[t] += sz; lt[t] += sz
     cul_tot.update(lc); rel_tot.update(lr)
     nm = re.search(r'\n\t\t\tname="?([^"\n]*)"?\n', b)
     mine[key] = {'id': lid, 'province': PROV.get(f('province') or '', f('province')), 'rank': f('rank'),
@@ -231,8 +260,19 @@ for k, (lid, s) in enumerate(starts):
                  'custom_name': nm.group(1) if nm else None,
                  'population_k': round(size, 3),
                  'cultures_k': {c: round(v, 3) for c, v in lc.most_common()},
-                 'religions_k': {r: round(v, 3) for r, v in lr.most_common()}}
+                 'religions_k': {r: round(v, 3) for r, v in lr.most_common()},
+                 'pop_types_k': {x: round(v, 3) for x, v in lt.most_common()},
+                 **land_facts(b)}
 del ltxt
+# Buildings in owned locations: type and level.
+_own_ids = {v['id']: k for k, v in mine.items()}
+for v in mine.values(): v['buildings'] = []
+for m in re.finditer(r'\n\d+=\{\n(.*?)\n\}', rd('building_manager'), re.S):
+    bb = '\n' + m.group(1)
+    lo = re.search(r'\n\tlocation=(\d+)', bb)
+    if not lo or int(lo.group(1)) not in _own_ids: continue
+    ty = re.search(r'\n\ttype=(\w+)', bb); lv = re.search(r'\n\tlevel=(\d+)', bb)
+    if ty: mine[_own_ids[int(lo.group(1))]]['buildings'].append({'type': ty.group(1), 'level': int(lv.group(1)) if lv else 1})
 R['realm'] = {
     'locations': mine,
     'population_k': round(sum(cul_tot.values()), 3),

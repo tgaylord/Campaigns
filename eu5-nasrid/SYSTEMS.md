@@ -81,10 +81,10 @@ Each campaign gets its own top-level folder; Rome or any other campaign would si
 ### Snapshot (one per checkpoint)
 - **Date:** Gregorian (from the game) and Hijri (computed).
 - **Ruler, heir, consort, regent;** the cabinet and the head of the cabinet.
-- **Realm:** locations, areas and provinces held; capital; subjects and ṭā'ifas.
+- **Realm:** locations, areas and provinces held; capital; subjects and ṭā'ifas. For each location the extracted facts keep its control, development, prosperity, cultural and religious unity, goods, tax (actual, possible, by estate), core and integration, peoples, faiths and buildings; the Provinces hall reads them straight from `data/extracted/`. Names fall back to the game's (`tools/place_names.py`, data/map/names.json) where the gazetteer has none.
 - **Population:** total, by culture, by religion.
 - **Estates:** power and satisfaction for each estate, crown power, privileges held. Satisfaction, gold and tax rates come from the save; **share of power does not** (the game computes it as it runs). It comes from Trent's estate power panel where he has one, and otherwise from `tools/estate_power.py`, calibrated on the latest reading and marked as estimated on the site. A single estate's tooltip is enough for a partial reading: that estate is shown as read and the rest are scaled to the tooltip's total. Reforms, privileges and modifiers the save names but doesn't define are looked up on eu5db.com (1.4.5) and cited in the event or model entry.
-- **Government:** laws, reforms, policies, bureaucracies, political influence.
+- **Government:** laws, reforms, privileges (with the date each was granted), societal values, the parliament and each estate's agenda in it, policies, bureaucracies, political influence. What each of these does comes from the game's own definition files, through `tools/government_catalog.py` (data/government-catalog.json); rerun it when a checkpoint brings one not seen before. A privilege granted or revoked, or a law changed, gets an event.
 - **Economy:** treasury, income and expenses, debt, main goods.
 - **Military:** levies, regiments, fleets and their locations. Named armies come later (see §5).
 - **Diplomacy:** overlord, allies, rivals, truces, active wars with their war score.
@@ -140,12 +140,13 @@ The site should feel like being at the Naṣrid court, not like reading a dashbo
 | **The Atlas** (الأطلس), the home page | A full-screen portolan chart of the realm at any checkpoint: held places as towers, a medallion with the ruler and the date, and a drawer with the state of the realm and what changed since the last checkpoint. |
 | **The Chronicle** (الأخبار) | A *fihris* (table of books) by era, and each entry as a folio with an illuminated initial, Trent's own notes as glosses in the margin, the people and places it names, and page turns (arrow keys work). |
 | **The Strait** (الزقاق) | The Battle for the Strait as a ship's course between the shores of Castile and Morocco: height of the banner is sovereignty, position in the channel is influence; the events that moved it; the win conditions as they stand. |
-| **The Council** (الديوان) | A hundred-seat hemicycle split as power is split, the crown at the centre; each estate's mood; power across the reigns as a stream; satisfaction as a grid. |
+| **The Council** (الديوان) | A hundred-seat hemicycle split as power is split, the crown at the centre; each estate's mood; the charters of the estates (every privilege held, ranked by the power it gives, with its effects from the game files) and the reforms of the state; the Jamāʿa's agenda; where the realm stands on each societal value, with a trail of earlier checkpoints; every law with its alternatives; power across the reigns as a stream; satisfaction as a grid. |
+| **The Provinces** (الكور) | Granada's own lands at any checkpoint, by area and province (the *kūra*): a map coloured by control, peoples, faiths, integration or development; area totals; and a table of every location with its rank, people, peoples and faiths, control, development, core or conquered, and tax against what it could yield. |
 | **The Long Scroll** (الدرج) | The whole campaign on one sideways roll: books, reigns, wars, the Strait, the estates, chronicle entries and events, year by year. |
 | **The Court** (البلاط) | The sultan on his throne, the heir and regent, the dīwān and who joined or left it, crown power and political influence, friends and enemies of the throne. |
 | **House of Naṣr** (بنو نصر) | The family tree as roundels, sultans in gold with their reign years in both calendars, and the servants of the house. |
 | **Wars** (الحروب) | Each war with its tide of war score; a war's page has the tide, a chart of where it was fought, and every battle and siege with its two hosts drawn man by man (one figure for 500). |
-| **Gazetteer** (البلدان) | Every place on a chart and as a tile, filterable by held, lost and never held; each place's page has its neighbourhood, its time in Naṣrid hands and every mention. |
+| **Gazetteer** (البلدان) | Every place on a chart and as a tile, filterable by held, lost and never held; each place's page has its neighbourhood, its time in Naṣrid hands, how it stood at the latest checkpoint that held it (people, faiths, control, tax, buildings) and every mention. |
 
 Every person, place and war name anywhere on the site shows a card on hover and links to its page.
 

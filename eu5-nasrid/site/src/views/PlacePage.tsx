@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom";
-import { placeById, places, mentionsOf, latest, snapshots, isHeld, hijri, western, year, yearFrac } from "../lib/data";
+import { placeById, places, mentionsOf, latest, snapshots, isHeld, hijri, western, year, yearFrac, nf, faithName, cultureName, rankName } from "../lib/data";
+import { latestLand, CULTURE_COLOR, FAITH_COLOR, provinceName, areaName } from "./Lands";
 import MiniChart from "../components/MiniChart";
 import { Mentions } from "./PersonPage";
 import "./record.css";
@@ -44,8 +45,43 @@ export default function PlacePage() {
           </ul>
         </section>
       )}
+      <Standing placeKey={p.key} />
       {p.note && <p className="muted">{p.note}</p>}
       <Mentions story={story} events={events} />
     </div>
+  );
+}
+
+/** How the place stood at the latest checkpoint that has it among Granada's own lands. */
+function Standing({ placeKey }: { placeKey: string }) {
+  const got = latestLand(placeKey);
+  if (!got) return null;
+  const { land: l, date } = got;
+  const share = (parts: Record<string, number>, name: (k: string) => string, colors: Record<string, string>) =>
+    Object.entries(parts).sort((a, b) => b[1] - a[1]).filter(([, v]) => v / (l.population || 1) >= 0.005).map(([k, v]) => (
+      <li key={k}><i style={{ background: colors[k] ?? "#a39a86" }} />{name(k)} <span className="n">{Math.round((100 * v) / (l.population || 1))}%</span></li>
+    ));
+  const pct = (v: number | null) => (v == null ? "?" : `${Math.round(v * 100)}%`);
+  return (
+    <section className="standing">
+      <h2 className="section-title">As it stood, {western(date)}</h2>
+      <dl className="standing-facts ui">
+        <div><dt>Province</dt><dd>{provinceName(l.province)}, in {areaName(l.area)}</dd></div>
+        <div><dt>Rank</dt><dd>{rankName(l.rank)}</dd></div>
+        <div><dt>People</dt><dd>{nf.format(l.population)}</dd></div>
+        <div><dt>Control</dt><dd>{pct(l.control)}</dd></div>
+        <div><dt>Development</dt><dd>{l.development?.toFixed(1)}</dd></div>
+        <div><dt>Standing</dt><dd>{l.core ? "Core of Granada" : "Conquered, not yet a core"}</dd></div>
+        <div><dt>Tax</dt><dd>{l.tax?.toFixed(2)} of a possible {l.possibleTax?.toFixed(2)}</dd></div>
+        {l.goods && <div><dt>Goods</dt><dd>{l.goods.replace(/_/g, " ")}</dd></div>}
+      </dl>
+      <div className="standing-shares ui">
+        <div><h3>Peoples</h3><ul>{share(l.cultures, cultureName, CULTURE_COLOR)}</ul></div>
+        <div><h3>Faiths</h3><ul>{share(l.religions, faithName, FAITH_COLOR)}</ul></div>
+        {l.buildings.length > 0 && (
+          <div><h3>Buildings</h3><p className="bld">{l.buildings.map((b) => `${b.type.replace(/_/g, " ")}${b.level > 1 ? ` (${b.level})` : ""}`).join(", ")}</p></div>
+        )}
+      </div>
+    </section>
   );
 }

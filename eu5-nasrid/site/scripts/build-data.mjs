@@ -352,15 +352,31 @@ for (const p of places) {
   if (!loc) { errors.push(`gazetteer ${p.id}: location "${p.key}" is not on the map`); continue; }
   p.x = loc.c[0]; p.y = loc.c[1];
 }
-// Who owned each location at each checkpoint, from the extracted facts.
+// Who owned each location at each checkpoint, from the extracted facts, and how each of
+// Granada's own locations stood: people, faith, control, integration, tax and buildings.
 const owners = {};
+const lands = {};
+const iso = (d) => (d ? d.split(".").map((x, i) => (i ? x.padStart(2, "0") : x)).join("-") : null);
 for (const s of snapshots) {
   if (!s.source?.extracted) continue;
   const ex = await readJson(path.join(CAMPAIGN, "data", s.source.extracted));
   const o = {};
   for (const [k, tag] of Object.entries(ex.world_owners ?? {})) if (inFrame.has(k)) o[k] = tag;
   owners[s.id] = o;
+  lands[s.id] = Object.entries(ex.realm?.locations ?? {}).map(([key, v]) => ({
+    key, province: v.province ?? null, area: gameMap.locations[key]?.area ?? null, region: gameMap.locations[key]?.region ?? null,
+    rank: v.rank ?? null, controller: v.controller ?? null, culture: v.culture ?? null, religion: v.religion ?? null,
+    population: Math.round((v.population_k ?? 0) * 1000),
+    cultures: Object.fromEntries(Object.entries(v.cultures_k ?? {}).map(([c, n]) => [c, Math.round(n * 1000)])),
+    religions: Object.fromEntries(Object.entries(v.religions_k ?? {}).map(([c, n]) => [c, Math.round(n * 1000)])),
+    popTypes: Object.fromEntries(Object.entries(v.pop_types_k ?? {}).map(([c, n]) => [c, Math.round(n * 1000)])),
+    control: v.control ?? null, development: v.development ?? null, prosperity: v.prosperity ?? null,
+    culturalUnity: v.cultural_unity ?? null, religiousUnity: v.religious_unity ?? null,
+    goods: v.raw_material ?? null, tax: v.tax ?? null, possibleTax: v.possible_tax ?? null, estateTax: v.estate_tax ?? {},
+    core: v.core ?? null, integration: v.integration ?? null, since: iso(v.last_owner_change), buildings: v.buildings ?? [],
+  }));
 }
+const names = await readJson(path.join(CAMPAIGN, "data/map/names.json"));
 // Realm outlines per checkpoint (tools/build_map.py --owners).
 const realms = {};
 for (const s of snapshots) {
@@ -378,12 +394,13 @@ if (errors.length) {
 // Sea zones aren't drawn one by one; the sea is the ground the land sits on.
 const drawn = Object.fromEntries(Object.entries(gameMap.locations).filter(([, l]) => l.kind !== "sea")
   .map(([k, l]) => [k, { kind: l.kind, d: l.d, c: l.c, province: l.province, area: l.area }]));
-const mapOut = { frame: gameMap.frame, coast: gameMap.coast, locations: drawn, owners, realms };
+const mapOut = { frame: gameMap.frame, coast: gameMap.coast, locations: drawn, owners, realms,
+  names: { locations: names.locations, provinces: names.provinces, areas: names.areas } };
 
 /* ------------------------------------------------------------ write */
 
 await mkdir(OUT, { recursive: true });
-const campaign = { generated: new Date().toISOString(), sample: sampleData, eras, people, places, wars, countries, snapshots, events, story, catalog };
+const campaign = { generated: new Date().toISOString(), sample: sampleData, eras, people, places, wars, countries, snapshots, events, story, catalog, lands };
 await writeFile(path.join(OUT, "campaign.json"), JSON.stringify(campaign));
 await writeFile(path.join(OUT, "map.json"), JSON.stringify(mapOut));
 console.log(
