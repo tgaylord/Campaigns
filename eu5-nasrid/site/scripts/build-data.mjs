@@ -43,7 +43,7 @@ const isoDate = z.preprocess(
 const id = z.string().regex(/^[a-z0-9-]+$/, "ids are lowercase-with-dashes");
 const sample = z.boolean().default(false);
 
-const Era = z.object({ id, title: z.string(), start: isoDate, end: isoDate.nullable(), summary: z.string().optional(), sample });
+const Era = z.object({ id, title: z.string(), titleArabic: z.string().optional(), start: isoDate, end: isoDate.nullable(), summary: z.string().optional(), sample });
 
 const Person = z.object({
   id,

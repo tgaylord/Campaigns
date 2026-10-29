@@ -1,7 +1,7 @@
 ---
 title: Of the Day of Uryūla
 date: 1339-11-08
-era: book-of-yusuf
+era: book-of-mending
 kind: chronicle
 people: [ibn-al-khatib, yusuf-i]
 places: [uryula, gharnata]

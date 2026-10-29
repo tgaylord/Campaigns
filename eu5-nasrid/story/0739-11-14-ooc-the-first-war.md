@@ -1,7 +1,7 @@
 ---
 title: The first war
 date: 1339-05-24
-era: book-of-yusuf
+era: book-of-mending
 kind: ooc
 about: 0739-11-14-the-road-through-mursiyya
 sources: [1339-05-24-war-on-aragon]

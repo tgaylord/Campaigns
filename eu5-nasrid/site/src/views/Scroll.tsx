@@ -10,9 +10,21 @@ import { PageHead } from "../components/bits";
 import "./scroll.css";
 
 const PX_PER_YEAR = 150; // the campaign moves a few months per session: give each year room
+/** Books may overlap: each takes the first row free when it opens. */
+const ERA_ROW = new Map<string, number>();
+{
+  const rowEnds: string[] = [];
+  [...eras].sort((a, b) => a.start.localeCompare(b.start)).forEach((e) => {
+    let r = rowEnds.findIndex((end) => end !== "open" && end <= e.start);
+    if (r < 0) r = rowEnds.length;
+    rowEnds[r] = e.end ?? "open";
+    ERA_ROW.set(e.id, r);
+  });
+}
+const ERA_ROWS = Math.max(1, ...[...ERA_ROW.values()].map((r) => r + 1));
 const BANDS = [
   { id: "years", h: 54 },
-  { id: "eras", h: 46, label: "Books of the chronicle" },
+  { id: "eras", h: 16 + 30 * ERA_ROWS, label: "Books of the chronicle" },
   { id: "reigns", h: 70, label: "Reigns" },
   { id: "wars", h: 64, label: "Wars" },
   { id: "strait", h: 90, label: "The Strait" },
@@ -154,8 +166,8 @@ export default function Scroll() {
               return (
                 <Link key={e.id} to={`/chronicle#era-${e.id}`}>
                   <g className="era">
-                    <rect x={a} y={tops.eras + 10} width={Math.max(2, b - a)} height={26} />
-                    <text x={pin(a, b)} y={tops.eras + 28}>{e.title}</text>
+                    <rect x={a} y={tops.eras + 10 + 30 * (ERA_ROW.get(e.id) ?? 0)} width={Math.max(2, b - a)} height={26} />
+                    <text x={pin(a, b)} y={tops.eras + 28 + 30 * (ERA_ROW.get(e.id) ?? 0)}>{e.title}</text>
                   </g>
                 </Link>
               );

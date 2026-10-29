@@ -1,7 +1,7 @@
 ---
 title: The peace
 date: 1340-08-11
-era: book-of-yusuf
+era: book-of-mending
 kind: ooc
 about: 0741-02-16-the-peace-of-balansiyya
 sources: [1340-08-11-peace-aragon, 1340-08-11-territory]

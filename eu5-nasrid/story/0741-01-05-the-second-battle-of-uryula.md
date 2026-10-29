@@ -1,7 +1,7 @@
 ---
 title: Of the Winter before Uryūla, the Closing of the Road, and the Second Battle
 date: 1340-07-01
-era: book-of-yusuf
+era: book-of-mending
 kind: chronicle
 people: [ibn-al-khatib, yahya-rahhu, yusuf-i]
 places: [uryula, mursiyya, gharnata]

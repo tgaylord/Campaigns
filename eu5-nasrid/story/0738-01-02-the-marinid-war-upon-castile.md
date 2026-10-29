@@ -1,7 +1,7 @@
 ---
 title: Of the Spring of the Year 737, and the Marīnid War upon Qashtāla
 date: 1337-07-31
-era: book-of-yusuf
+era: book-of-mending
 kind: chronicle
 people: [yusuf-i, fatima-bint-al-ahmar, faraj-ibn-ismail, yusuf-ibn-muhammad, ismail-i]
 places: [gharnata, tilimsan, fas]

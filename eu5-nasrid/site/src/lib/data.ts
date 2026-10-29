@@ -3,7 +3,7 @@ import { toHijri, HIJRI_MONTHS, HIJRI_MONTHS_AR, WESTERN_MONTHS, parseDate } fro
 
 /* ------------------------------------------------------------ types */
 
-export type Era = { id: string; title: string; start: string; end: string | null; summary?: string; sample: boolean };
+export type Era = { id: string; title: string; titleArabic?: string; start: string; end: string | null; summary?: string; sample: boolean };
 export type Person = {
   id: string; name: string; nameArabic?: string; nameGame?: string; dynasty?: string;
   born?: string; died?: string; father?: string; mother?: string; roles: string[];

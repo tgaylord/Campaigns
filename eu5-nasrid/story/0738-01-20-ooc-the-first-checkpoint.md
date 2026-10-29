@@ -1,7 +1,7 @@
 ---
 title: The first ticked checkpoint
 date: 1337-08-18
-era: book-of-yusuf
+era: book-of-mending
 kind: ooc
 about: 0738-01-02-the-marinid-war-upon-castile
 sources: [1337-07-31-morocco-war-on-castile]

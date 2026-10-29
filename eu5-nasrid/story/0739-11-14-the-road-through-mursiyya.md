@@ -1,7 +1,7 @@
 ---
 title: Of the Road through Mursiyya, and the Host of Ibn al-Khaṭīb
 date: 1339-05-24
-era: book-of-yusuf
+era: book-of-mending
 kind: chronicle
 people: [yusuf-i, ibn-al-khatib, faraj-ibn-ismail, gideon-ben-joshua]
 places: [gharnata, mursiyya, ishbiliyya, qarmuna, shaluqa]

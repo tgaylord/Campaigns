@@ -1,9 +1,26 @@
 [
  {
-  "id": "book-of-yusuf",
-  "title": "The Book of Abū al-Ḥajjāj Yūsuf",
+  "id": "book-of-mending",
+  "title": "The Mending of the State",
+  "titleArabic": "كتاب الإصلاح",
   "start": "1337-04-01",
+  "end": "1346-10-16",
+  "summary": "The calm before the storm. A young sultan, tributary to Castile and deep in debt, sets the state in order: the Catalan privileges, the war on Aragon and the peace of Balansiyya, the two ṭāʾifas of the east, Morocco's defeat of 1340, the Jamāʿa of 1344 and the crown it strengthened, and the debt paid down. It ends the day Morocco declares war again."
+ },
+ {
+  "id": "book-of-balance",
+  "title": "The Balance",
+  "titleArabic": "كتاب الميزان",
+  "start": "1346-08-01",
   "end": null,
-  "summary": "The reign of Yūsuf I from the opening of the chronicle: a young sultan, tributary to Castile, allied to the Marīnids, with the contest for the Strait just begun."
+  "summary": "Granada on the scales between the three crowns of Iberia and the Marīnids, from the season sovereignty first slipped below 50. It closes when Castile is pushed back for good, or when the scale tips the other way. Written as it happens."
+ },
+ {
+  "id": "book-of-pestilence",
+  "title": "The Pestilence",
+  "titleArabic": "كتاب الوباء",
+  "start": "1346-08-01",
+  "end": null,
+  "summary": "The Black Death, from the first rumours out of the east and the hospitals the amir raised against it in Gharnāṭa, Mālaqa and al-Mariyya. Runs beside the Book of the Balance. Written as it happens."
  }
 ]

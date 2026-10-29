@@ -34,7 +34,7 @@ export default function ChronicleIndex() {
             <section key={era.id} id={`era-${era.id}`} className="book">
               <header>
                 <span className="book-no">Book {b + 1}</span>
-                <h2>{era.title}</h2>
+                <h2>{era.title}{era.titleArabic && <bdi className="book-ar" lang="ar" dir="rtl">{era.titleArabic}</bdi>}</h2>
                 <span className="span">
                   {/* Isolated right-to-left, so the dash of an open range can't jump to the wrong side. */}
                   <bdi className="ar" dir="rtl">{arabicDigits(hijri(era.start).y)}{era.end ? `–${arabicDigits(hijri(era.end).y)}` : ""}</bdi>

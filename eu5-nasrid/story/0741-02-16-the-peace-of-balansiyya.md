@@ -1,7 +1,7 @@
 ---
 title: Of the Bluff before Shāṭiba, and the Peace of Balansiyya
 date: 1340-08-11
-era: book-of-yusuf
+era: book-of-mending
 kind: chronicle
 people: [yusuf-i, ibn-al-khatib, yahya-rahhu]
 places: [jumalla, shatiba, balansiyya, daniya, al-qant, alsh, qandiya, al-quy, ayura, bunyul, shalba, liriya, uryula, gharnata]

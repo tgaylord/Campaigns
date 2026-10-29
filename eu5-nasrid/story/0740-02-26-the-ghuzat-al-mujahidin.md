@@ -1,7 +1,7 @@
 ---
 title: Of the First Blood at Jumalla, and the Coming of the Ghuzāt
 date: 1339-09-02
-era: book-of-yusuf
+era: book-of-mending
 kind: chronicle
 people: [yusuf-i, ibn-al-khatib, yahya-rahhu]
 places: [gharnata, mursiyya, jumalla, shaluqa, muntil, al-karash]
