@@ -1,0 +1,53 @@
+.court-stage { display: grid; grid-template-columns: minmax(18rem, 0.9fr) 1.1fr; gap: 2.5rem; align-items: start; margin-bottom: 1.5rem; }
+@media (max-width: 60rem) { .court-stage { grid-template-columns: 1fr; } }
+
+.arch-frame {
+  position: relative; text-align: center; padding: 3.5rem 1.5rem 1.75rem;
+  border: 1px solid rgba(212, 171, 85, 0.55); border-radius: 50% 50% 4px 4px / 32% 32% 4px 4px;
+  background: radial-gradient(ellipse at 50% 15%, rgba(47, 85, 168, 0.45), rgba(13, 20, 48, 0.9) 70%);
+  box-shadow: inset 0 0 0 6px rgba(13, 20, 48, 0.8), inset 0 0 0 7px rgba(212, 171, 85, 0.3);
+}
+.arch-frame .sultan { font-size: clamp(2.8rem, 6vw, 4.4rem); color: var(--gilt); line-height: 1.2; font-weight: 700; }
+.arch-frame .sultan-latin { font-size: 1.35rem; font-weight: 700; margin-top: 0.25rem; }
+.arch-frame .sultan-latin a { color: var(--plaster); text-decoration: none; }
+.arch-frame .sultan-sub { color: var(--mist); font-style: italic; }
+.arch-frame .date { margin-top: 1rem; }
+.arch-frame .date .ar { color: var(--gilt-hi); font-size: 1.3rem; }
+.arch-frame .date .ui { color: var(--dusk); font-size: 0.85rem; }
+
+.succession { margin-top: 1rem; display: grid; gap: 0.4rem; font-size: 0.95rem; }
+.succession .k { display: inline-block; width: 6rem; color: var(--dusk); font-size: 0.82rem; }
+.succession a { color: var(--plaster); }
+
+.seats { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 1rem; }
+.seats li {
+  display: grid; gap: 0.15rem; padding: 1rem 1.1rem;
+  border: 1px solid rgba(158, 167, 199, 0.2); border-top: 3px solid var(--gilt-lo); border-radius: 3px;
+  background: rgba(20, 29, 64, 0.65);
+}
+.seats li.new { border-top-color: var(--zellij-hi); }
+.seats .role { font-family: var(--serif); font-style: italic; color: var(--gilt-hi); font-size: 1.15rem; }
+.seats .office { font-size: 0.78rem; color: var(--dusk); }
+.seats .who { margin-top: 0.4rem; display: grid; }
+.seats .who .ar { font-size: 1.5rem; color: var(--plaster); line-height: 1.3; text-align: right; }
+.seats .who a { color: var(--plaster); }
+.seats .tag { font-size: 0.75rem; color: var(--zellij-hi); }
+.left { font-size: 0.85rem; color: var(--mist); }
+.left a { color: var(--plaster); }
+
+.meters { display: flex; flex-wrap: wrap; gap: 1rem 3rem; margin-top: 1.5rem; }
+.meter-block { display: grid; gap: 0.2rem; min-width: 12rem; }
+.meter-block .k { font-size: 0.8rem; color: var(--dusk); }
+.meter-block .v { font-size: 1.7rem; color: var(--plaster); }
+.meter-block .bar { height: 6px; background: rgba(158, 167, 199, 0.15); border-radius: 3px; }
+.meter-block .bar i { display: block; height: 100%; background: var(--gilt); border-radius: 3px; }
+
+.friends { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+@media (max-width: 48rem) { .friends { grid-template-columns: 1fr; } }
+.banners { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.banners li {
+  padding: 0.6rem 1.4rem 1.1rem; font-family: var(--serif); font-size: 1.15rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
+}
+.banners .ally { background: linear-gradient(#2f8a6a, #1f6650); color: #f2fff8; }
+.banners .rival { background: linear-gradient(#c0442e, #8f2c1b); color: #fff2ec; }

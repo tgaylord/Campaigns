@@ -1,4 +1,47 @@
 [
-  { "id": "sample-1337-start", "date": "1337-04-01", "type": "situation", "title": "The Battle for the Strait begins", "people": ["yusuf-i"], "places": ["gharnata"], "data": {}, "source": "sample", "sample": true },
-  { "id": "sample-1338-parias", "date": "1338-07-12", "type": "strait_change", "title": "Castile demands the parias", "data": { "influence": -8 }, "source": "sample", "sample": true }
+  {
+    "id": "s-1337-start",
+    "date": "1337-04-01",
+    "type": "situation",
+    "title": "The Battle for the Strait begins",
+    "people": [
+      "yusuf-i"
+    ],
+    "places": [
+      "gharnata"
+    ],
+    "wars": [],
+    "data": {},
+    "source": "sample",
+    "sample": true
+  },
+  {
+    "id": "s-1338-parias",
+    "date": "1338-07-12",
+    "type": "strait_change",
+    "title": "Castile demands the parias",
+    "people": [],
+    "places": [],
+    "wars": [],
+    "data": {
+      "influence": -8
+    },
+    "source": "sample",
+    "sample": true
+  },
+  {
+    "id": "s-1338-birth",
+    "date": "1338-01-04",
+    "type": "birth",
+    "title": "Birth of Muḥammad, son of Yūsuf",
+    "people": [
+      "muhammad-v",
+      "yusuf-i"
+    ],
+    "places": [],
+    "wars": [],
+    "data": {},
+    "source": "sample",
+    "sample": true
+  }
 ]

@@ -66,6 +66,11 @@ export const HIJRI_MONTHS = [
   "Ramaḍān", "Shawwāl", "Dhū al-Qaʿda", "Dhū al-Ḥijja",
 ];
 
+export const HIJRI_MONTHS_AR = [
+  "محرم", "صفر", "ربيع الأول", "ربيع الآخر", "جمادى الأولى", "جمادى الآخرة",
+  "رجب", "شعبان", "رمضان", "شوال", "ذو القعدة", "ذو الحجة",
+];
+
 export const WESTERN_MONTHS = [
   "January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December",

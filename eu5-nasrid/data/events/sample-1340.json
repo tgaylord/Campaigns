@@ -1,7 +1,105 @@
 [
-  { "id": "sample-1340-war", "date": "1340-04-02", "type": "war_declared", "title": "War for Ṭarīf declared, with Morocco", "wars": ["sample-war-tarifa"], "places": ["tarifa"], "data": {}, "source": "sample", "sample": true },
-  { "id": "sample-1340-tarifa-siege", "date": "1340-09-15", "type": "siege", "title": "Siege of Ṭarīf", "wars": ["sample-war-tarifa"], "places": ["tarifa"], "data": { "result": "ongoing", "warScore": 5 }, "source": "sample", "sample": true },
-  { "id": "sample-1340-salado", "date": "1340-10-30", "type": "battle", "title": "Battle of the Río Salado", "people": ["yusuf-i"], "wars": ["sample-war-tarifa"], "places": ["tarifa"], "data": { "result": "defeat", "ours": 22000, "theirs": 21000, "ourLosses": 7400, "theirLosses": 2100, "warScore": -25 }, "source": "sample", "sample": true },
-  { "id": "sample-1340-nobles", "date": "1340-11-20", "type": "estate_change", "title": "The ʿumarāʾ demand a share of the frontier commands", "data": { "estate": "nobles", "power": 5 }, "source": "sample", "sample": true },
-  { "id": "sample-1341-peace", "date": "1341-02-10", "type": "peace", "title": "Peace with Castile", "wars": ["sample-war-tarifa"], "data": {}, "source": "sample", "sample": true }
+  {
+    "id": "s-1340-war",
+    "date": "1340-04-02",
+    "type": "war_declared",
+    "title": "War for Ṭarīf declared, with Morocco",
+    "people": [],
+    "places": [
+      "tarifa"
+    ],
+    "wars": [
+      "sample-war-tarifa"
+    ],
+    "data": {},
+    "source": "sample",
+    "sample": true
+  },
+  {
+    "id": "s-1340-siege",
+    "date": "1340-09-15",
+    "type": "siege",
+    "title": "Siege of Ṭarīf",
+    "people": [],
+    "places": [
+      "tarifa"
+    ],
+    "wars": [
+      "sample-war-tarifa"
+    ],
+    "data": {
+      "result": "ongoing",
+      "warScore": 5
+    },
+    "source": "sample",
+    "sample": true
+  },
+  {
+    "id": "s-1340-salado",
+    "date": "1340-10-30",
+    "type": "battle",
+    "title": "Battle of the Río Salado",
+    "people": [
+      "yusuf-i"
+    ],
+    "places": [
+      "tarifa"
+    ],
+    "wars": [
+      "sample-war-tarifa"
+    ],
+    "data": {
+      "result": "defeat",
+      "ours": 22000,
+      "theirs": 21000,
+      "ourLosses": 7400,
+      "theirLosses": 2100,
+      "warScore": -25
+    },
+    "source": "sample",
+    "sample": true
+  },
+  {
+    "id": "s-1340-nobles",
+    "date": "1340-11-20",
+    "type": "estate_change",
+    "title": "The ʿumarāʾ demand a share of the frontier commands",
+    "people": [],
+    "places": [],
+    "wars": [],
+    "data": {
+      "estate": "nobles",
+      "power": 5
+    },
+    "source": "sample",
+    "sample": true
+  },
+  {
+    "id": "s-1341-peace",
+    "date": "1341-02-10",
+    "type": "peace",
+    "title": "Peace with Castile",
+    "people": [],
+    "places": [],
+    "wars": [
+      "sample-war-tarifa"
+    ],
+    "data": {},
+    "source": "sample",
+    "sample": true
+  },
+  {
+    "id": "s-1344-tribute",
+    "date": "1344-03-26",
+    "type": "strait_change",
+    "title": "The tribute to Castile is ended",
+    "people": [],
+    "places": [],
+    "wars": [],
+    "data": {
+      "influence": 12
+    },
+    "source": "sample",
+    "sample": true
+  }
 ]

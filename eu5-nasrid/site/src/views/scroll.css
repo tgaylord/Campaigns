@@ -1,0 +1,52 @@
+.roll-wrap { position: relative; display: grid; grid-template-columns: 26px 1fr 26px; margin: 0 clamp(0.5rem, 2vw, 2rem); }
+.roll { overflow-x: auto; overflow-y: hidden; box-shadow: inset 0 10px 18px -12px rgba(0, 0, 0, 0.5), inset 0 -10px 18px -12px rgba(0, 0, 0, 0.5); scrollbar-color: var(--gilt-lo) transparent; }
+.roll svg { display: block; }
+.roller { border-radius: 12px; background: linear-gradient(90deg, #3a2410, #8a5a2a 40%, #c8924c 55%, #6b4319 80%, #2c1a0a); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); margin: -12px 0; }
+
+.roll .band-rule { stroke: #7a5a34; stroke-opacity: 0.35; }
+.roll .band-label { font-family: var(--serif); font-style: italic; font-size: 14px; fill: #7a5a34; }
+.roll .yr line { stroke: #7a5a34; stroke-opacity: 0.1; }
+.roll .yr.decade line { stroke-opacity: 0.28; }
+.roll .yr .ah { font-family: var(--naskh); font-size: 17px; fill: #8e6b26; }
+.roll .yr .g { font-family: var(--sans); font-size: 11px; fill: #7a5a34; }
+
+.roll .era rect { fill: #c0442e; fill-opacity: 0.12; stroke: #c0442e; stroke-opacity: 0.5; }
+.roll .era text { font-family: var(--serif); font-style: italic; font-size: 14px; fill: #8f2c1b; }
+.roll .era:hover rect { fill-opacity: 0.22; }
+
+.roll .reign rect { fill: #d4ab55; stroke: #8e6b26; }
+.roll .reign:hover rect { fill: #f2d58e; }
+.roll .reign .ar-name { font-family: var(--naskh); font-size: 18px; fill: #3a2814; }
+.roll .reign .la-name { font-family: var(--serif); font-size: 12.5px; fill: #3a2814; }
+
+.roll .war rect { fill: #c0442e; fill-opacity: 0.85; }
+.roll .war:hover rect { fill: #e0654c; }
+.roll .war text { font-family: var(--serif); font-style: italic; font-size: 13px; fill: #8f2c1b; }
+
+.roll .strait-channel { fill: #2f8a6a; fill-opacity: 0.12; }
+.roll .strait-mid { stroke: #7a5a34; stroke-opacity: 0.35; stroke-dasharray: 3 4; }
+.roll .axis-note { font-family: var(--sans); font-size: 11px; fill: #7a5a34; }
+.roll .strait-line { fill: none; stroke: #1f3d7a; stroke-width: 2; }
+.roll .strait-dot { fill: #1f3d7a; stroke: #eadcbf; stroke-width: 2; }
+
+.roll .chron circle { fill: #b8862e; stroke: #7a5a1c; stroke-width: 1.5; }
+.roll .chron:hover circle { fill: #c0442e; }
+.roll .chron .initial { font-family: var(--serif); font-weight: 700; font-size: 13px; fill: #fff6dc; }
+.roll .chron .chron-title { font-family: var(--serif); font-style: italic; font-size: 12px; fill: #3a2814; }
+
+.roll .ev line { stroke-width: 3; stroke-linecap: round; }
+.roll .ev.war line { stroke: #c0442e; }
+.roll .ev.court line { stroke: #8e6b26; }
+.roll .ev.realm line { stroke: #2a78d6; }
+.roll .ev.strait line { stroke: #2f8a6a; }
+.roll .ev:hover line { stroke-width: 5; }
+
+.scroll-key { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; font-size: 0.85rem; color: var(--mist); }
+.scroll-key .k { display: inline-block; width: 4px; height: 14px; border-radius: 2px; margin-right: 0.4rem; vertical-align: middle; }
+.scroll-key .k.war { background: #e0654c; }
+.scroll-key .k.court { background: #d4ab55; }
+.scroll-key .k.realm { background: #3987e5; }
+.scroll-key .k.strait { background: #57b892; }
+
+.roll .gutter rect { fill: #e3d3b0; }
+.roll .gutter line { stroke: #7a5a34; stroke-opacity: 0.4; }

@@ -1,0 +1,16 @@
+.minichart { display: block; width: 100%; height: auto; border: 1px solid rgba(212, 171, 85, 0.35); border-radius: 3px; }
+.minichart .sea { fill: #15204a; }
+.minichart .wind { stroke-width: 0.7; }
+.minichart .wind.w0 { stroke: #d4ab55; stroke-opacity: 0.25; }
+.minichart .wind.w1 { stroke: #e0654c; stroke-opacity: 0.15; }
+.minichart .land { fill: #e3d2ad; stroke: #3a2814; stroke-width: 1.2; }
+.minichart .mk circle { fill: #e3d2ad; stroke: #3a2814; stroke-width: 1.8; }
+.minichart .mk.ours circle { fill: #d4ab55; stroke: #5c3b0c; }
+.minichart .mk.focus circle { fill: #c0442e; stroke: #fff3cf; stroke-width: 2.5; }
+.minichart .mk .swords { stroke: #c0442e; stroke-width: 3.5; stroke-linecap: round; }
+.minichart .mk .ar { direction: ltr; unicode-bidi: normal; font-family: var(--naskh); font-weight: 700; font-size: 22px; fill: #3a2814; paint-order: stroke; stroke: #e3d2ad; stroke-width: 4px; }
+.minichart .mk .tr { font-family: var(--serif); font-style: italic; font-size: 14px; fill: #3a2814; paint-order: stroke; stroke: #e3d2ad; stroke-width: 3px; }
+.minichart .mk:hover .ar { fill: #c0442e; }
+
+/* On a phone the chart keeps a readable height and crops its sides instead of shrinking its names. */
+@media (max-width: 40rem) { .minichart { height: 300px; } }

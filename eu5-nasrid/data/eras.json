@@ -1,10 +1,18 @@
 [
   {
-    "id": "sample-era-strait",
-    "title": "Between the Lion and the Lions (sample era)",
+    "id": "sample-era-lions",
+    "title": "Between the Lion and the Lions",
     "start": "1337-04-01",
+    "end": "1354-10-19",
+    "summary": "Sample era. A tributary kingdom between the Castilian crown and the Marinid sultan, ending with the murder of Yūsuf I in the Great Mosque.",
+    "sample": true
+  },
+  {
+    "id": "sample-era-ghani",
+    "title": "The Reign of al-Ghanī bi-llāh",
+    "start": "1354-10-19",
     "end": null,
-    "summary": "Sample era for the site scaffold. Granada, a tributary of Castile, between the Castilian crown and the Marinid sultan.",
+    "summary": "Sample era. Muḥammad V comes to the throne a boy of sixteen.",
     "sample": true
   }
 ]

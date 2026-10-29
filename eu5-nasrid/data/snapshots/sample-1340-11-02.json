@@ -1,22 +1,109 @@
 {
-  "date": "1340-11-02", "checkpoint": "sample-rio-salado", "note": "Sample snapshot.",
-  "ruler": "yusuf-i", "heir": null, "regent": null, "capital": "gharnata",
-  "rank": "duchy", "locations": 18,
-  "overlord": null, "subjects": [],
-  "population": { "total": 405000,
-    "cultures": { "Andalusi": 366000, "Castilian": 20000, "Sephardi": 12000, "Other": 7000 },
-    "religions": { "Sunni": 373000, "Catholic": 20000, "Jewish": 12000 } },
-  "estates": [
-    { "id": "crown", "name": "Crown", "power": 27, "satisfaction": null },
-    { "id": "nobles", "name": "ʿUmarāʾ", "power": 39, "satisfaction": 44 },
-    { "id": "clergy", "name": "ʿUlamāʾ", "power": 16, "satisfaction": 58 },
-    { "id": "burghers", "name": "Burghers", "power": 11, "satisfaction": 47 },
-    { "id": "peasants", "name": "Commoners", "power": 5, "satisfaction": 41 },
-    { "id": "dhimmi", "name": "Ḏimmī", "power": 2, "satisfaction": 49 }
+  "date": "1340-11-02",
+  "checkpoint": "sample-rio-salado",
+  "note": "Sample snapshot.",
+  "ruler": "yusuf-i",
+  "heir": "muhammad-v",
+  "regent": null,
+  "capital": "gharnata",
+  "rank": "duchy",
+  "locations": 18,
+  "overlord": null,
+  "subjects": [],
+  "allies": [
+    "Morocco"
   ],
-  "economy": { "treasury": 61, "income": 9.1, "expenses": 11.4, "debt": 40 },
-  "military": { "levies": 4100, "regiments": 2, "ships": 3 },
-  "wars": ["sample-war-tarifa"],
-  "strait": { "active": true, "influence": 21, "sovereignty": 30, "yearsSubject": 18 },
+  "rivals": [
+    "Castile",
+    "Portugal"
+  ],
+  "cabinet": [
+    {
+      "person": "ridwan",
+      "role": "ḥājib"
+    },
+    {
+      "person": "ibn-al-jayyab",
+      "role": "kātib"
+    },
+    {
+      "person": "uthman-b-yahya",
+      "role": "shaykh al-ghuzāt"
+    }
+  ],
+  "crownPower": 27,
+  "politicalInfluence": 9,
+  "population": {
+    "total": 405000,
+    "cultures": {
+      "Andalusi": 366525,
+      "Castilian": 19440,
+      "Sephardi": 12555,
+      "Other": 6480
+    },
+    "religions": {
+      "Sunni": 373410,
+      "Catholic": 19440,
+      "Jewish": 12150
+    }
+  },
+  "estates": [
+    {
+      "id": "crown",
+      "name": "Crown",
+      "power": 27,
+      "satisfaction": null
+    },
+    {
+      "id": "nobles",
+      "name": "ʿUmarāʾ",
+      "power": 39,
+      "satisfaction": 44
+    },
+    {
+      "id": "clergy",
+      "name": "ʿUlamāʾ",
+      "power": 16,
+      "satisfaction": 58
+    },
+    {
+      "id": "burghers",
+      "name": "Burghers",
+      "power": 11,
+      "satisfaction": 47
+    },
+    {
+      "id": "peasants",
+      "name": "Commoners",
+      "power": 5,
+      "satisfaction": 41
+    },
+    {
+      "id": "dhimmi",
+      "name": "Ḏimmī",
+      "power": 2,
+      "satisfaction": 49
+    }
+  ],
+  "economy": {
+    "treasury": 61,
+    "income": 9.1,
+    "expenses": 11.4,
+    "debt": 40
+  },
+  "military": {
+    "levies": 4100,
+    "regiments": 2,
+    "ships": 3
+  },
+  "wars": [
+    "sample-war-tarifa"
+  ],
+  "strait": {
+    "active": true,
+    "influence": 21,
+    "sovereignty": 30,
+    "yearsSubject": 18
+  },
   "sample": true
 }

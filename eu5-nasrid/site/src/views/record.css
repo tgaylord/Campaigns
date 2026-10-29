@@ -1,0 +1,20 @@
+.record-page { max-width: 76rem; }
+.record-head { margin-bottom: 1.5rem; }
+.record-ar { font-size: clamp(3.2rem, 9vw, 6.5rem); line-height: 1.1; color: var(--gilt); text-align: left; direction: rtl; }
+.record-head h1 { font-size: clamp(2rem, 4vw, 3rem); }
+.record-sub { color: var(--mist); font-style: italic; font-size: 1.2rem; margin: 0.3rem 0 0; }
+
+.record-facts { display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: 1.25rem 2.5rem; margin: 1.5rem 0; }
+.record-facts dt { font-size: 0.78rem; color: var(--dusk); }
+.record-facts dd { margin: 0.15rem 0 0; font-size: 1.05rem; color: var(--plaster); }
+.record-facts dd .ar { display: block; font-size: 1.25rem; color: var(--gilt); text-align: left; }
+.record-facts a { color: var(--plaster); }
+
+.mentions { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+@media (max-width: 52rem) { .mentions { grid-template-columns: 1fr; } }
+.m-list { list-style: none; margin: 0; padding: 0; }
+.m-list li { display: grid; grid-template-columns: 9.5rem 1fr; gap: 1rem; padding: 0.55rem 0; border-top: 1px solid rgba(158, 167, 199, 0.15); }
+.m-list .d { color: var(--gilt); font-size: 0.95rem; text-align: left; }
+.m-list.ui .d { color: var(--dusk); font-size: 0.82rem; }
+.m-list .t { color: var(--dusk); font-size: 0.8rem; }
+.m-list a { color: var(--plaster); }

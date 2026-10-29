@@ -1,0 +1,132 @@
+import raw from "../generated/campaign.json";
+import { toHijri, HIJRI_MONTHS, HIJRI_MONTHS_AR, WESTERN_MONTHS, parseDate } from "./hijri";
+
+/* ------------------------------------------------------------ types */
+
+export type Era = { id: string; title: string; start: string; end: string | null; summary?: string; sample: boolean };
+export type Person = {
+  id: string; name: string; nameArabic?: string; nameGame?: string; dynasty?: string;
+  born?: string; died?: string; father?: string; mother?: string; roles: string[];
+  reigns: { from: string; to: string | null }[]; note?: string; sample: boolean;
+};
+export type Place = {
+  id: string; name: string; nameArabic?: string; nameGame: string; kind: string;
+  lat?: number; lon?: number; held: { from: string; to: string | null }[]; note?: string; sample: boolean;
+};
+export type War = {
+  id: string; name: string; start: string; end: string | null; goal: string;
+  allies: string[]; enemies: string[]; outcome: string | null;
+  score: { date: string; value: number }[]; sample: boolean;
+};
+export type Estate = { id: string; name: string; power: number; satisfaction: number | null };
+export type Snapshot = {
+  id: string; date: string; checkpoint: string; note?: string;
+  ruler: string; heir: string | null; regent: string | null; capital: string; rank: string; locations: number;
+  overlord: { country: string; type: string } | null; subjects: { country: string; type: string }[];
+  allies: string[]; rivals: string[]; cabinet: { person: string; role: string }[];
+  crownPower?: number; politicalInfluence?: number;
+  population: { total: number; cultures: Record<string, number>; religions: Record<string, number> };
+  estates: Estate[];
+  economy: { treasury: number; income: number; expenses: number; debt: number };
+  military: { levies: number; regiments: number; ships: number };
+  wars: string[];
+  strait: { active: boolean; influence: number; sovereignty: number; yearsSubject: number } | null;
+  sample: boolean;
+};
+export type CampaignEvent = {
+  id: string; date: string; type: string; title: string;
+  people: string[]; places: string[]; wars: string[]; data: Record<string, any>; source: string; sample: boolean;
+};
+export type StoryEntry = {
+  id: string; title: string; date: string; endDate?: string; era: string; kind: "chronicle" | "ooc";
+  about?: string | null; people: string[]; places: string[]; wars: string[]; sources: string[];
+  html: string; sample: boolean;
+};
+
+type Campaign = {
+  generated: string; sample: boolean; eras: Era[]; people: Person[]; places: Place[]; wars: War[];
+  snapshots: Snapshot[]; events: CampaignEvent[]; story: StoryEntry[];
+};
+
+export const campaign = raw as unknown as Campaign;
+export const { eras, people, places, wars, snapshots, events, story } = campaign;
+export const chronicle = story.filter((s) => s.kind === "chronicle");
+export const notes = story.filter((s) => s.kind === "ooc");
+
+const index = <T extends { id: string }>(xs: T[]) => new Map(xs.map((x) => [x.id, x]));
+export const personById = index(people);
+export const placeById = index(places);
+export const warById = index(wars);
+export const eraById = index(eras);
+export const storyById = index(story);
+
+export const latest = snapshots[snapshots.length - 1];
+
+/* ------------------------------------------------------------ dates */
+
+const AR_DIGITS = "٠١٢٣٤٥٦٧٨٩";
+export const arabicDigits = (n: number | string) => String(n).replace(/\d/g, (d) => AR_DIGITS[+d]);
+
+export function hijri(date: string) {
+  const h = toHijri(date);
+  return {
+    ...h, month: HIJRI_MONTHS[h.m - 1], text: `${h.d} ${HIJRI_MONTHS[h.m - 1]} ${h.y}`,
+    /** fully Arabic: "٢ جمادى الآخرة ٧٧١" */
+    arabic: `${arabicDigits(h.d)} ${HIJRI_MONTHS_AR[h.m - 1]} ${arabicDigits(h.y)}`,
+  };
+}
+export function western(date: string) {
+  const g = parseDate(date);
+  return `${g.d} ${WESTERN_MONTHS[g.m - 1]} ${g.y}`;
+}
+export const year = (date: string) => parseDate(date).y;
+export const hijriYear = (date: string) => toHijri(date).y;
+
+/** Fractional year, for laying dates on a time axis. */
+export function yearFrac(date: string): number {
+  const g = parseDate(date);
+  return g.y + (g.m - 1) / 12 + (g.d - 1) / 365;
+}
+
+/* ------------------------------------------------------------ lookups */
+
+export const isHeld = (p: Place, date: string) =>
+  p.held.some((h) => h.from <= date && (h.to === null || h.to > date));
+
+export function rulerAt(date: string): Person | undefined {
+  return people.find((p) => p.reigns.some((r) => r.from <= date && (r.to === null || r.to > date)));
+}
+
+export function mentionsOf(kind: "people" | "places" | "wars", id: string) {
+  return {
+    story: story.filter((s) => s.kind === "chronicle" && (s[kind] as string[]).includes(id)),
+    events: events.filter((e) => (e[kind] as string[]).includes(id)),
+  };
+}
+
+export const ESTATE_ORDER = ["crown", "nobles", "clergy", "burghers", "peasants", "tribes", "dhimmi", "cossacks"];
+/**
+ * Each estate keeps one colour everywhere (colour follows the entity, never its rank).
+ * The dataviz reference categorical order, validated: `night` for the lapis ground,
+ * `folio` for parchment. Gilt stays an interface colour, never a series colour.
+ */
+const SLOTS_NIGHT = ["#3987e5", "#d95926", "#199e70", "#c98500", "#d55181", "#008300", "#9085e9", "#e66767"];
+const SLOTS_FOLIO = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300", "#6250d6", "#e34948"];
+export function estateColor(id: string, surface: "night" | "folio" = "night"): string {
+  const i = ESTATE_ORDER.indexOf(id);
+  const slots = surface === "night" ? SLOTS_NIGHT : SLOTS_FOLIO;
+  return slots[i >= 0 ? i : 7];
+}
+
+export const EVENT_LABEL: Record<string, string> = {
+  war_declared: "War declared", battle: "Battle", siege: "Siege", peace: "Peace",
+  ruler_change: "Succession", birth: "Birth", death: "Death", marriage: "Marriage",
+  estate_change: "Estates", law_change: "Law", reform: "Reform", territory_change: "Territory",
+  strait_change: "The Strait", gc_change: "Golden Century", situation: "Situation",
+  formable: "Formable", player_note: "Note",
+};
+
+export const nf = new Intl.NumberFormat("en-GB");
+export const compact = (n: number) =>
+  new Intl.NumberFormat("en-GB", { notation: "compact", maximumFractionDigits: 1 }).format(n);
+export const signed = (n: number) => (n > 0 ? `+${n}` : `${n}`);

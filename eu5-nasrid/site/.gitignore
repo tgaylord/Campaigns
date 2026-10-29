@@ -1,4 +1,4 @@
-# Astro build cache and generated types
-.astro/
-dist/
+# build output and generated data
 node_modules/
+dist/
+src/generated/

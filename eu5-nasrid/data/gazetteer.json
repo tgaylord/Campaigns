@@ -1,8 +1,213 @@
 [
-  { "id": "gharnata", "name": "Gharnāṭa", "nameGame": "Granada", "kind": "location", "held": [{ "from": "1337-04-01", "to": null }], "sample": true },
-  { "id": "malaqa", "name": "Mālaqa", "nameGame": "Málaga", "kind": "location", "held": [{ "from": "1337-04-01", "to": null }], "sample": true },
-  { "id": "al-mariyya", "name": "al-Mariyya", "nameGame": "Almería", "kind": "location", "held": [{ "from": "1337-04-01", "to": null }], "sample": true },
-  { "id": "wadi-ash", "name": "Wādī Āsh", "nameGame": "Guadix", "kind": "location", "held": [{ "from": "1337-04-01", "to": null }], "sample": true },
-  { "id": "tarifa", "name": "Ṭarīf", "nameGame": "Tarifa", "kind": "location", "held": [], "sample": true },
-  { "id": "qurtuba", "name": "Qurṭuba", "nameGame": "Córdoba", "kind": "location", "held": [], "sample": true }
+  {
+    "id": "gharnata",
+    "name": "Gharnāṭa",
+    "nameArabic": "غرناطة",
+    "nameGame": "Granada",
+    "kind": "location",
+    "lat": 37.177,
+    "lon": -3.599,
+    "held": [
+      {
+        "from": "1337-04-01",
+        "to": null
+      }
+    ],
+    "sample": true
+  },
+  {
+    "id": "malaqa",
+    "name": "Mālaqa",
+    "nameArabic": "مالقة",
+    "nameGame": "Málaga",
+    "kind": "location",
+    "lat": 36.721,
+    "lon": -4.421,
+    "held": [
+      {
+        "from": "1337-04-01",
+        "to": null
+      }
+    ],
+    "sample": true
+  },
+  {
+    "id": "al-mariyya",
+    "name": "al-Mariyya",
+    "nameArabic": "المرية",
+    "nameGame": "Almería",
+    "kind": "location",
+    "lat": 36.834,
+    "lon": -2.464,
+    "held": [
+      {
+        "from": "1337-04-01",
+        "to": null
+      }
+    ],
+    "sample": true
+  },
+  {
+    "id": "wadi-ash",
+    "name": "Wādī Āsh",
+    "nameArabic": "وادي آش",
+    "nameGame": "Guadix",
+    "kind": "location",
+    "lat": 37.3,
+    "lon": -3.135,
+    "held": [
+      {
+        "from": "1337-04-01",
+        "to": null
+      }
+    ],
+    "sample": true
+  },
+  {
+    "id": "lawsha",
+    "name": "Lawsha",
+    "nameArabic": "لوشة",
+    "nameGame": "Loja",
+    "kind": "location",
+    "lat": 37.168,
+    "lon": -4.15,
+    "held": [
+      {
+        "from": "1337-04-01",
+        "to": null
+      }
+    ],
+    "sample": true
+  },
+  {
+    "id": "al-hamma",
+    "name": "al-Ḥāmma",
+    "nameArabic": "الحامة",
+    "nameGame": "Alhama de Granada",
+    "kind": "location",
+    "lat": 37.006,
+    "lon": -3.989,
+    "held": [
+      {
+        "from": "1337-04-01",
+        "to": null
+      }
+    ],
+    "sample": true
+  },
+  {
+    "id": "rundah",
+    "name": "Runda",
+    "nameArabic": "رندة",
+    "nameGame": "Ronda",
+    "kind": "location",
+    "lat": 36.742,
+    "lon": -5.165,
+    "held": [
+      {
+        "from": "1362-05-01",
+        "to": null
+      }
+    ],
+    "sample": true
+  },
+  {
+    "id": "al-jazira",
+    "name": "al-Jazīra al-Khaḍrāʾ",
+    "nameArabic": "الجزيرة الخضراء",
+    "nameGame": "Algeciras",
+    "kind": "location",
+    "lat": 36.133,
+    "lon": -5.453,
+    "held": [],
+    "sample": true
+  },
+  {
+    "id": "jabal-tariq",
+    "name": "Jabal Ṭāriq",
+    "nameArabic": "جبل طارق",
+    "nameGame": "Gibraltar",
+    "kind": "location",
+    "lat": 36.14,
+    "lon": -5.353,
+    "held": [],
+    "sample": true
+  },
+  {
+    "id": "tarifa",
+    "name": "Ṭarīf",
+    "nameArabic": "طريف",
+    "nameGame": "Tarifa",
+    "kind": "location",
+    "lat": 36.014,
+    "lon": -5.604,
+    "held": [],
+    "sample": true
+  },
+  {
+    "id": "jayyan",
+    "name": "Jayyān",
+    "nameArabic": "جيان",
+    "nameGame": "Jaén",
+    "kind": "location",
+    "lat": 37.779,
+    "lon": -3.785,
+    "held": [],
+    "sample": true
+  },
+  {
+    "id": "qurtuba",
+    "name": "Qurṭuba",
+    "nameArabic": "قرطبة",
+    "nameGame": "Córdoba",
+    "kind": "location",
+    "lat": 37.888,
+    "lon": -4.779,
+    "held": [],
+    "sample": true
+  },
+  {
+    "id": "ishbiliya",
+    "name": "Ishbīliya",
+    "nameArabic": "إشبيلية",
+    "nameGame": "Seville",
+    "kind": "location",
+    "lat": 37.389,
+    "lon": -5.984,
+    "held": [],
+    "sample": true
+  },
+  {
+    "id": "sabta",
+    "name": "Sabta",
+    "nameArabic": "سبتة",
+    "nameGame": "Ceuta",
+    "kind": "location",
+    "lat": 35.889,
+    "lon": -5.32,
+    "held": [],
+    "sample": true
+  },
+  {
+    "id": "fas",
+    "name": "Fās",
+    "nameArabic": "فاس",
+    "nameGame": "Fez",
+    "kind": "location",
+    "lat": 34.033,
+    "lon": -5.0,
+    "held": [],
+    "sample": true
+  },
+  {
+    "id": "tilimsan",
+    "name": "Tilimsān",
+    "nameArabic": "تلمسان",
+    "nameGame": "Tlemcen",
+    "kind": "location",
+    "lat": 34.878,
+    "lon": -1.315,
+    "held": [],
+    "sample": true
+  }
 ]

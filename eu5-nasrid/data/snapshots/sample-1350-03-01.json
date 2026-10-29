@@ -1,0 +1,104 @@
+{
+  "date": "1350-03-01",
+  "checkpoint": "sample-1350",
+  "note": "Sample snapshot.",
+  "ruler": "yusuf-i",
+  "heir": "muhammad-v",
+  "regent": null,
+  "capital": "gharnata",
+  "rank": "duchy",
+  "locations": 18,
+  "overlord": null,
+  "subjects": [],
+  "allies": [],
+  "rivals": [
+    "Castile"
+  ],
+  "cabinet": [
+    {
+      "person": "ridwan",
+      "role": "ḥājib"
+    },
+    {
+      "person": "ibn-al-khatib",
+      "role": "kātib"
+    },
+    {
+      "person": "uthman-b-yahya",
+      "role": "shaykh al-ghuzāt"
+    }
+  ],
+  "crownPower": 38,
+  "politicalInfluence": 24,
+  "population": {
+    "total": 388000,
+    "cultures": {
+      "Andalusi": 351140,
+      "Castilian": 18624,
+      "Sephardi": 12028,
+      "Other": 6208
+    },
+    "religions": {
+      "Sunni": 357736,
+      "Catholic": 18624,
+      "Jewish": 11640
+    }
+  },
+  "estates": [
+    {
+      "id": "crown",
+      "name": "Crown",
+      "power": 38,
+      "satisfaction": null
+    },
+    {
+      "id": "nobles",
+      "name": "ʿUmarāʾ",
+      "power": 28,
+      "satisfaction": 47
+    },
+    {
+      "id": "clergy",
+      "name": "ʿUlamāʾ",
+      "power": 14,
+      "satisfaction": 60
+    },
+    {
+      "id": "burghers",
+      "name": "Burghers",
+      "power": 14,
+      "satisfaction": 61
+    },
+    {
+      "id": "peasants",
+      "name": "Commoners",
+      "power": 4,
+      "satisfaction": 44
+    },
+    {
+      "id": "dhimmi",
+      "name": "Ḏimmī",
+      "power": 2,
+      "satisfaction": 55
+    }
+  ],
+  "economy": {
+    "treasury": 176,
+    "income": 11.9,
+    "expenses": 10.1,
+    "debt": 0
+  },
+  "military": {
+    "levies": 6900,
+    "regiments": 5,
+    "ships": 6
+  },
+  "wars": [],
+  "strait": {
+    "active": true,
+    "influence": -12,
+    "sovereignty": 53,
+    "yearsSubject": 18
+  },
+  "sample": true
+}

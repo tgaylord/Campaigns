@@ -1,0 +1,62 @@
+.strait-figure { position: relative; margin: 0; }
+.strait-figure svg { display: block; width: 100%; height: auto; border: 1px solid rgba(212, 171, 85, 0.3); border-radius: 3px; }
+
+.strait-figure .channel { fill: #57b892; fill-opacity: 0.08; stroke: #57b892; stroke-opacity: 0.35; stroke-dasharray: 2 6; }
+.strait-figure .channel-label { fill: #57b892; fill-opacity: 0.8; font-family: var(--sans); font-size: 13px; }
+.strait-figure .midline { stroke: #9ea7c7; stroke-opacity: 0.25; }
+.strait-figure .shore { fill: #e3d2ad; stroke: #3a2814; stroke-width: 1.5; }
+.strait-figure .shore-name .ar { font-family: var(--naskh); font-size: 34px; fill: #7a5a34; font-weight: 700; }
+.strait-figure .shore-name .tr { font-family: var(--serif); font-style: italic; font-size: 15px; fill: #5a4630; }
+
+.strait-figure .year line { stroke: #9ea7c7; stroke-opacity: 0.08; }
+.strait-figure .year .ar { font-family: var(--naskh); font-size: 17px; fill: #d4ab55; }
+.strait-figure .year .g { font-family: var(--sans); font-size: 11px; fill: #6d7697; }
+
+.strait-figure .buoy circle, .strait-figure .buoy path { fill: #ece6d8; fill-opacity: 0.8; }
+.strait-figure .buoy line { stroke: #ece6d8; stroke-opacity: 0.18; }
+.strait-figure .buoy text { font-family: var(--sans); font-size: 12px; fill: #9ea7c7; }
+
+.strait-figure .wake { fill: none; stroke: #f2d58e; stroke-opacity: 0.18; stroke-width: 10; stroke-linecap: round; }
+.strait-figure .course { fill: none; stroke: #f2d58e; stroke-width: 2; stroke-dasharray: 6 5; }
+
+.strait-figure .banner { cursor: pointer; outline: none; }
+.strait-figure .banner .mast { stroke: #ece6d8; stroke-width: 2; }
+.strait-figure .banner .needed { stroke: #57b892; stroke-width: 6; stroke-opacity: 0.35; }
+.strait-figure .banner .flag { fill: #c0442e; stroke: #f2d58e; stroke-width: 1; }
+.strait-figure .banner.free .flag { fill: #d4ab55; stroke: #fff3cf; }
+.strait-figure .banner .hull { fill: #0d1430; stroke: #f2d58e; stroke-width: 1.5; }
+.strait-figure .banner.on .mast, .strait-figure .banner:focus-visible .mast { stroke: #f2d58e; stroke-width: 3; }
+
+.strait-tip {
+  position: absolute; top: 0.75rem; transform: translateX(-50%); pointer-events: none;
+  background: var(--night); border: 1px solid rgba(212, 171, 85, 0.5); padding: 0.55rem 0.75rem; border-radius: 3px;
+  font-size: 0.82rem; line-height: 1.45; white-space: nowrap; color: var(--plaster);
+}
+.strait-tip .d { color: var(--gilt); }
+
+.key { display: flex; flex-wrap: wrap; gap: 0.5rem 1.75rem; font-size: 0.82rem; color: var(--mist); margin-top: 0.75rem; }
+.key i { display: inline-block; vertical-align: middle; margin-right: 0.45rem; }
+.k-banner { width: 12px; height: 9px; background: #c0442e; clip-path: polygon(0 0, 100% 40%, 0 100%); }
+.k-needed { width: 6px; height: 14px; background: rgba(87, 184, 146, 0.45); }
+.k-channel { width: 18px; height: 10px; border: 1px dashed #57b892; background: rgba(87, 184, 146, 0.1); }
+
+.conditions { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; }
+.conditions li {
+  display: grid; grid-template-columns: 2.2rem 1fr; grid-template-rows: auto auto auto; gap: 0 0.5rem;
+  padding: 1rem 1.1rem; border: 1px solid rgba(158, 167, 199, 0.2); border-radius: 3px; background: rgba(20, 29, 64, 0.6);
+}
+.conditions .icon { grid-row: 1 / span 3; font-size: 1.5rem; font-weight: 700; line-height: 1.2; }
+.conditions .met { border-color: rgba(87, 184, 146, 0.5); }
+.conditions .met .icon { color: var(--zellij-hi); }
+.conditions .unmet { border-color: rgba(224, 101, 76, 0.5); }
+.conditions .unmet .icon { color: var(--cinnabar-hi); }
+.conditions .unknown .icon { color: var(--dusk); }
+.conditions .label { color: var(--plaster); font-weight: 600; }
+.conditions .state { font-size: 0.85rem; color: var(--mist); }
+.conditions .detail { font-size: 0.8rem; color: var(--dusk); }
+
+/* On a phone the channel keeps its size and scrolls sideways, opening at the present. */
+@media (max-width: 40rem) {
+  .strait-pan { overflow-x: auto; }
+  .strait-pan svg { width: 900px; max-width: none; }
+}

@@ -1,0 +1,104 @@
+{
+  "date": "1362-05-02",
+  "checkpoint": "sample-runda",
+  "note": "Sample snapshot.",
+  "ruler": "muhammad-v",
+  "heir": "yusuf-b-muhammad",
+  "regent": null,
+  "capital": "gharnata",
+  "rank": "duchy",
+  "locations": 21,
+  "overlord": null,
+  "subjects": [],
+  "allies": [
+    "Castile"
+  ],
+  "rivals": [
+    "Morocco"
+  ],
+  "cabinet": [
+    {
+      "person": "ibn-al-khatib",
+      "role": "vizier"
+    },
+    {
+      "person": "uthman-b-yahya",
+      "role": "shaykh al-ghuzāt"
+    }
+  ],
+  "crownPower": 33,
+  "politicalInfluence": 22,
+  "population": {
+    "total": 418000,
+    "cultures": {
+      "Andalusi": 378290,
+      "Castilian": 20064,
+      "Sephardi": 12958,
+      "Other": 6688
+    },
+    "religions": {
+      "Sunni": 385396,
+      "Catholic": 20064,
+      "Jewish": 12540
+    }
+  },
+  "estates": [
+    {
+      "id": "crown",
+      "name": "Crown",
+      "power": 33,
+      "satisfaction": null
+    },
+    {
+      "id": "nobles",
+      "name": "ʿUmarāʾ",
+      "power": 33,
+      "satisfaction": 55
+    },
+    {
+      "id": "clergy",
+      "name": "ʿUlamāʾ",
+      "power": 16,
+      "satisfaction": 57
+    },
+    {
+      "id": "burghers",
+      "name": "Burghers",
+      "power": 13,
+      "satisfaction": 58
+    },
+    {
+      "id": "peasants",
+      "name": "Commoners",
+      "power": 3,
+      "satisfaction": 49
+    },
+    {
+      "id": "dhimmi",
+      "name": "Ḏimmī",
+      "power": 2,
+      "satisfaction": 52
+    }
+  ],
+  "economy": {
+    "treasury": 143,
+    "income": 13.2,
+    "expenses": 12.0,
+    "debt": 15
+  },
+  "military": {
+    "levies": 7400,
+    "regiments": 8,
+    "ships": 7
+  },
+  "wars": [
+    "sample-war-runda"
+  ],
+  "strait": {
+    "active": true,
+    "influence": -6,
+    "sovereignty": 58,
+    "yearsSubject": 18
+  },
+  "sample": true
+}

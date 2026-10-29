@@ -33,7 +33,7 @@ Working rules for the Granada campaign. Every chat in this Project should read t
 2. **The story log**, written by hand. This is the point of truth for the narrative: Nasrid court chronicle entries plus out-of-character notes, each tagged with dates and with links to people, places, wars and eras.
 3. **The views**, a static website built from layers 1 and 2. They can be redesigned freely without touching the history.
 
-**Home:** GitHub repo `tgaylord/Campaigns`, published with GitHub Pages. It's private to Trent in practice (just for him), so there's no need to design for other readers.
+**Home:** the public GitHub repo `tgaylord/Campaigns`, published with GitHub Pages at an unlisted address, `tgaylord.github.io/Campaigns/eu5-nasrid/`. It's just for Trent, so there's no need to design for other readers.
 
 ### Repo layout
 ```
@@ -44,9 +44,11 @@ Campaigns/
     SYSTEMS.md            ← this document
     data/
       snapshots/          ← one JSON per checkpoint, e.g. 1337-04-01.json
-      events/             ← event log, one file per year (1337.jsonl …)
+      events/             ← event log, one JSON array per year (1337.json …)
+      eras.json           ← the books of the chronicle
       people.json         ← characters: Nasrids, viziers, generals, notables
-      gazetteer.json      ← places: game name ↔ Arabic name, held from/to
+      gazetteer.json      ← places: game name ↔ Arabic name, coordinates, held from/to
+      wars.json           ← wars, sides, goals, war score over time
     story/                ← the story log: one Markdown file per entry
     tools/                ← save parser, Hijri converter, map builder
     map/                  ← phase 2: geometry built from game map files
@@ -86,6 +88,7 @@ Each campaign gets its own top-level folder; Rome or any other campaign would si
 - **Military:** levies, regiments, fleets and their locations. Named armies come later (see §5).
 - **Diplomacy:** overlord, allies, rivals, truces, active wars with their war score.
 - **The Strait:** influence over Granada, Granadan sovereignty, years as a subject (overall, under Castile, under Morocco).
+- **The court (for the views):** `cabinet` as `{person, role}` pairs, `crownPower`, `politicalInfluence`, `allies` and `rivals`.
 - **Golden Century (later):** European and Colonial Dominance, flashpoint meter, Grand Alliance members.
 
 ### Event log entries
@@ -97,6 +100,11 @@ Each entry has a date, a type, references to the entities involved and source de
 - `strait_change`, `gc_change`
 - `situation`, `formable`
 - `player_note`
+
+### Records
+- **People:** `nameArabic` (in Arabic script), `father`, `reigns` (`from`/`to`), born and died, roles, dynasty.
+- **Places:** `nameArabic`, `nameGame`, `lat`/`lon` (for the charts until the real map exists), `held` periods.
+- Anything made up for testing carries `"sample": true`; the site flags it, and the first real checkpoint replaces it.
 
 ### Rules
 - Facts come from saves, or from Trent's account labelled as his account. Nothing is invented.
@@ -118,32 +126,40 @@ Each entry has a date, a type, references to the entities involved and source de
   - **The crown and the estates**, a running thread. Each swing in power or privilege is recorded and explained.
   - **The Strait**: the balance between Castile and Morocco.
   - **Armies:** none at the start. Named-army tracking begins once Granada has a significant professional force, and that moment becomes part of the story of the Nasrid state. A destroyed army stays dead unless it's revived in-game.
-- **File format:** one Markdown file per entry in `story/`, with front matter for the id, dates, era, title, kind (`chronicle` or `ooc`) and linked people, places and wars.
+- **File format:** one Markdown file per entry in `story/`, with front matter for the id, dates, era, title, kind (`chronicle` or `ooc`) and linked people, places and wars. An `ooc` note can name the chronicle entry it comments on with `about: <entry-id>`; otherwise it attaches to the nearest earlier entry. Either way it appears as a gloss in that folio's margin.
 
 ---
 
 ## 6. The views (the site)
 
-The first build will have:
-- **Timeline scrubber:** the realm at any checkpoint.
-- **Chronicle reader:** by era, with linked names.
-- **Estates:** power and satisfaction over time, annotated with causes.
-- **The Strait:** its values over time, with the actions and wars that moved them.
-- **Wars:** one page per war, with the war score curve and battle tables.
-- **People:** the Nasrid family tree, plus pages for courtiers and generals.
-- **Gazetteer:** places, names, and when each was gained or lost.
+The site should feel like being at the Naṣrid court, not like reading a dashboard. The ground is night lapis with a faint zellij lattice; documents are parchment folios in iron-gall ink with cinnabar rubrics and gilt initials; maps are drawn in the manner of the Catalan Atlas (1375), with wind lines, a 32-point rose and Arabic region names. Each hall has an Arabic name beside its English one.
+
+| Hall | What it shows |
+|---|---|
+| **The Atlas** (الأطلس), the home page | A full-screen portolan chart of the realm at any checkpoint: held places as towers, a medallion with the ruler and the date, and a drawer with the state of the realm and what changed since the last checkpoint. |
+| **The Chronicle** (الأخبار) | A *fihris* (table of books) by era, and each entry as a folio with an illuminated initial, Trent's own notes as glosses in the margin, the people and places it names, and page turns (arrow keys work). |
+| **The Strait** (الزقاق) | The Battle for the Strait as a ship's course between the shores of Castile and Morocco: height of the banner is sovereignty, position in the channel is influence; the events that moved it; the win conditions as they stand. |
+| **The Council** (الديوان) | A hundred-seat hemicycle split as power is split, the crown at the centre; each estate's mood; power across the reigns as a stream; satisfaction as a grid. |
+| **The Long Scroll** (الدرج) | The whole campaign on one sideways roll: books, reigns, wars, the Strait, the estates, chronicle entries and events, year by year. |
+| **The Court** (البلاط) | The sultan on his throne, the heir and regent, the dīwān and who joined or left it, crown power and political influence, friends and enemies of the throne. |
+| **House of Naṣr** (بنو نصر) | The family tree as roundels, sultans in gold with their reign years in both calendars, and the servants of the house. |
+| **Wars** (الحروب) | Each war with its tide of war score; a war's page has the tide, a chart of where it was fought, and every battle and siege with its two hosts drawn man by man (one figure for 500). |
+| **Gazetteer** (البلدان) | Every place on a chart and as a tile, filterable by held, lost and never held; each place's page has its neighbourhood, its time in Naṣrid hands and every mention. |
+
+Every person, place and war name anywhere on the site shows a card on hover and links to its page.
 
 **Phase 2:**
-- A **real map** built from the game's own map files on the gaming PC. It would show ownership at each checkpoint and battle sites.
+- A **real map** built from the game's own map files on the gaming PC, replacing the coastline charts: ownership at each checkpoint, borders, battle sites.
 - The colonies, and an armies view once tracking starts.
 
-**Stack:** Astro (static build) in `site/`.
-- The data model lives in `site/src/content.config.ts`. A build fails if any record breaks its schema or points at a missing person, place, war or era.
+**Stack:** React, React Router, Vite and D3 in `site/`, built to a static site.
+- `site/scripts/build-data.mjs` reads `data/` and `story/`, checks every record against its schema and every reference (person, place, war, era, story entry), renders the Markdown and writes the bundle the site reads. **A bad record or a broken reference fails the build.**
+- Coastlines come from Natural Earth (`world-atlas`), clipped to the western Mediterranean.
 - Hijri dates come from `site/src/lib/hijri.ts`.
 - Story entries link to records with `[name](person:id)`, `place:`, `war:` and `era:`.
 - See `site/README.md` for running it locally and for the story-entry format.
 
-**Publishing:** a root workflow builds every campaign's site for GitHub Pages, at `tgaylord.github.io/Campaigns/eu5-nasrid/`. Its status is still to be decided (see §10).
+**Publishing:** the root workflow (`.github/workflows/pages.yml`) builds every campaign's site on each push to `main` and deploys them to GitHub Pages. Pages has to be set to deploy from GitHub Actions in the repo settings.
 
 ---
 
@@ -177,4 +193,4 @@ This campaign follows the repo-wide rules in `/CLAUDE.md`:
 ## 10. Open questions
 
 1. Final mod list, checked against 1.4.
-2. Publishing: the repo is private, but a GitHub Pages site is public on the web, and Pages from a private repo needs a paid GitHub plan. The choice is between publishing anyway (an unlisted but public URL) or viewing the site locally only.
+2. ~~Publishing~~: settled. The repo is public and the site is published to an unlisted Pages address.

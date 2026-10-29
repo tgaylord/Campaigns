@@ -1,27 +1,149 @@
 [
   {
+    "id": "ismail-i",
+    "name": "Abū al-Walīd Ismāʿīl I",
+    "nameArabic": "إسماعيل الأول",
+    "nameGame": "Ismail I",
+    "dynasty": "Naṣrid",
+    "born": "1279-03-03",
+    "died": "1325-07-08",
+    "roles": [
+      "sultan"
+    ],
+    "reigns": [
+      {
+        "from": "1314-02-16",
+        "to": "1325-07-08"
+      }
+    ],
+    "note": "Sample record.",
+    "sample": true
+  },
+  {
     "id": "yusuf-i",
     "name": "Abū al-Ḥajjāj Yūsuf I",
+    "nameArabic": "يوسف الأول",
     "nameGame": "Yusuf I",
-    "dynasty": "Nasrid",
+    "dynasty": "Naṣrid",
     "born": "1318-06-29",
-    "roles": ["sultan"],
+    "died": "1354-10-19",
+    "father": "ismail-i",
+    "roles": [
+      "sultan"
+    ],
+    "reigns": [
+      {
+        "from": "1333-08-25",
+        "to": "1354-10-19"
+      }
+    ],
+    "note": "Sample record.",
+    "sample": true
+  },
+  {
+    "id": "muhammad-v",
+    "name": "Abū ʿAbd Allāh Muḥammad V",
+    "nameArabic": "محمد الخامس",
+    "nameGame": "Muhammad V",
+    "dynasty": "Naṣrid",
+    "born": "1338-01-04",
+    "father": "yusuf-i",
+    "roles": [
+      "sultan"
+    ],
+    "reigns": [
+      {
+        "from": "1354-10-19",
+        "to": null
+      }
+    ],
+    "note": "Sample record.",
+    "sample": true
+  },
+  {
+    "id": "ismail-ii",
+    "name": "Ismāʿīl b. Yūsuf",
+    "nameArabic": "إسماعيل بن يوسف",
+    "dynasty": "Naṣrid",
+    "born": "1339-10-04",
+    "father": "yusuf-i",
+    "roles": [
+      "prince"
+    ],
+    "note": "Sample record.",
+    "sample": true
+  },
+  {
+    "id": "qays",
+    "name": "Qays b. Yūsuf",
+    "nameArabic": "قيس بن يوسف",
+    "dynasty": "Naṣrid",
+    "born": "1343-02-11",
+    "father": "yusuf-i",
+    "roles": [
+      "prince"
+    ],
+    "note": "Sample record.",
+    "sample": true
+  },
+  {
+    "id": "yusuf-b-muhammad",
+    "name": "Yūsuf b. Muḥammad",
+    "nameArabic": "يوسف بن محمد",
+    "dynasty": "Naṣrid",
+    "born": "1356-06-17",
+    "father": "muhammad-v",
+    "roles": [
+      "heir"
+    ],
     "note": "Sample record.",
     "sample": true
   },
   {
     "id": "ridwan",
     "name": "Riḍwān",
-    "dynasty": "",
-    "roles": ["ḥājib"],
+    "nameArabic": "رضوان",
+    "roles": [
+      "ḥājib"
+    ],
+    "born": "1300-01-01",
+    "died": "1359-08-24",
     "note": "Sample record.",
     "sample": true
   },
   {
     "id": "ibn-al-khatib",
     "name": "Lisān al-Dīn ibn al-Khaṭīb",
+    "nameArabic": "لسان الدين ابن الخطيب",
     "born": "1313-11-16",
-    "roles": ["secretary", "vizier", "chronicler"],
+    "roles": [
+      "kātib",
+      "vizier",
+      "chronicler"
+    ],
+    "note": "Sample record.",
+    "sample": true
+  },
+  {
+    "id": "ibn-al-jayyab",
+    "name": "ʿAlī ibn al-Jayyāb",
+    "nameArabic": "ابن الجياب",
+    "born": "1274-01-01",
+    "died": "1349-01-20",
+    "roles": [
+      "kātib",
+      "poet"
+    ],
+    "note": "Sample record.",
+    "sample": true
+  },
+  {
+    "id": "uthman-b-yahya",
+    "name": "ʿUthmān b. Yaḥyā",
+    "nameArabic": "عثمان بن يحيى",
+    "roles": [
+      "shaykh al-ghuzāt"
+    ],
     "note": "Sample record.",
     "sample": true
   }

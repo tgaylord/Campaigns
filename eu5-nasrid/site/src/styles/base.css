@@ -1,0 +1,181 @@
+/*
+ * The Nasrid Chronicle: a palace at night.
+ *
+ * Ground: lapis night, faint zellij lattice in gilt.
+ * Folios: parchment, iron-gall ink, cinnabar rubrics, gilt initials.
+ * Maps: drawn like the Catalan Atlas (Mallorca, 1375): ink coasts, wind lines,
+ * gold for what is ours.
+ */
+
+:root {
+  --night: #0d1430;
+  --night-2: #141d40;
+  --night-3: #1c2753;
+  --lapis: #2f55a8;
+  --gilt: #d4ab55;
+  --gilt-hi: #f2d58e;
+  --gilt-lo: #8e6b26;
+  --cinnabar: #c0442e;
+  --cinnabar-hi: #e0654c;
+  --zellij: #2f8a6a;
+  --zellij-hi: #57b892;
+  --plaster: #ece6d8;         /* text on night */
+  --mist: #9ea7c7;            /* secondary text on night */
+  --dusk: #6d7697;            /* tertiary on night */
+  --parchment: #eadcbf;
+  --parchment-2: #e1cfa9;
+  --parchment-edge: #c7ae7c;
+  --ink: #2b1d10;             /* iron-gall */
+  --ink-2: #5a4630;
+  --sepia: #7a5a34;
+
+  --serif: "Gentium Book Plus", "Gentium Plus", Georgia, serif;
+  --kufi: "Reem Kufi", "Gentium Book Plus", serif;
+  --naskh: "Amiri", "Noto Naskh Arabic", serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --rail: 15.5rem;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+
+body {
+  margin: 0;
+  background-color: var(--night);
+  background-image:
+    radial-gradient(ellipse at 20% -10%, rgba(47, 85, 168, 0.35), transparent 55%),
+    radial-gradient(ellipse at 110% 120%, rgba(212, 171, 85, 0.10), transparent 50%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='none' stroke='%23d4ab55' stroke-opacity='0.07' stroke-width='1'%3E%3Cpath d='M48 14 L58 38 L82 48 L58 58 L48 82 L38 58 L14 48 L38 38 Z'/%3E%3Crect x='28' y='28' width='40' height='40' transform='rotate(45 48 48)'/%3E%3Crect x='28' y='28' width='40' height='40'/%3E%3Cpath d='M0 0 L14 14 M96 0 L82 14 M0 96 L14 82 M96 96 L82 82'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  color: var(--plaster);
+  font-family: var(--serif);
+  font-size: 1.125rem;
+  line-height: 1.6;
+  font-kerning: normal;
+}
+
+a { color: var(--gilt-hi); text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
+a:hover { color: #fff3cf; }
+:focus-visible { outline: 2px solid var(--gilt-hi); outline-offset: 3px; border-radius: 2px; }
+
+h1, h2, h3 { line-height: 1.15; font-weight: 700; text-wrap: balance; margin: 0; }
+
+.ar { font-family: var(--naskh); direction: rtl; unicode-bidi: isolate; }
+.kufi { font-family: var(--kufi); }
+.ui { font-family: var(--sans); }
+.num { font-variant-numeric: tabular-nums; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---------------------------------------------------------- shell */
+
+.shell { display: grid; grid-template-columns: var(--rail) 1fr; min-height: 100%; }
+
+.rail {
+  position: sticky; top: 0; height: 100vh; overflow-y: auto;
+  display: flex; flex-direction: column; gap: 0.25rem;
+  padding: 1.5rem 1rem 1rem 1.25rem;
+  border-right: 1px solid rgba(212, 171, 85, 0.22);
+  background: linear-gradient(180deg, rgba(13, 20, 48, 0.92), rgba(13, 20, 48, 0.75));
+}
+.rail-mark { text-decoration: none; color: var(--plaster); display: block; margin-bottom: 1.25rem; }
+.rail-mark .ar { display: block; font-size: 2.1rem; line-height: 1.3; color: var(--gilt); font-weight: 700; text-align: right; }
+.rail-mark .latin { display: block; font-family: var(--kufi); font-size: 0.95rem; letter-spacing: 0.02em; color: var(--mist); text-align: right; }
+.rail nav ul { list-style: none; margin: 0; padding: 0; }
+.rail nav a {
+  display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: 0.75rem;
+  padding: 0.45rem 0.6rem; border-radius: 3px; text-decoration: none; color: var(--mist);
+}
+.rail nav a .latin { font-size: 0.98rem; }
+.rail nav a .ar { font-size: 1.15rem; color: var(--dusk); }
+.rail nav a:hover { color: var(--plaster); background: rgba(212, 171, 85, 0.07); }
+.rail nav a:hover .ar { color: var(--gilt); }
+.rail nav a.active { color: var(--plaster); background: rgba(212, 171, 85, 0.12); box-shadow: inset 2px 0 0 var(--gilt); }
+.rail nav a.active .ar { color: var(--gilt-hi); }
+.rail-foot { margin-top: auto; padding-top: 1rem; font-size: 0.8rem; color: var(--dusk); }
+.sample-tag {
+  display: block; margin-top: 0.75rem; padding: 0.5rem 0.6rem; border: 1px dashed var(--cinnabar);
+  color: #f0b3a5; font-size: 0.78rem; line-height: 1.4; border-radius: 3px;
+}
+
+.main { min-width: 0; }
+
+@media (max-width: 52rem) {
+  .shell { grid-template-columns: 1fr; align-content: start; }
+  .rail { position: static; height: auto; flex-direction: row; flex-wrap: wrap; align-items: center; padding: 0.75rem 1rem; border-right: 0; border-bottom: 1px solid rgba(212, 171, 85, 0.22); }
+  .rail-mark { margin: 0 1rem 0 0; }
+  .rail-mark .ar { font-size: 1.5rem; text-align: left; }
+  .rail-mark .latin { display: none; }
+  .rail nav ul { display: flex; flex-wrap: wrap; gap: 0.15rem; }
+  .rail nav a { display: block; padding: 0.3rem 0.5rem; }
+  .rail nav a .ar { display: none; }
+  .rail-foot { display: none; }
+}
+
+/* ---------------------------------------------------------- page furniture */
+
+.page { padding: 2.5rem clamp(1rem, 4vw, 3.5rem) 5rem; max-width: 92rem; }
+
+.page-head { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 1rem 2rem; margin-bottom: 2rem; }
+.page-head h1 { font-size: clamp(2.2rem, 4vw, 3.4rem); color: var(--plaster); }
+.page-head .ar-title { font-family: var(--naskh); font-size: clamp(2.6rem, 6vw, 4.6rem); color: var(--gilt); line-height: 1.1; direction: rtl; }
+.page-head .lede { grid-column: 1 / -1; max-width: 46rem; color: var(--mist); font-size: 1.2rem; margin: 0; }
+@media (max-width: 40rem) { .page-head { grid-template-columns: 1fr; } .page-head .ar-title { order: -1; } }
+
+/* parchment folio */
+.folio {
+  position: relative;
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(255, 250, 235, 0.55), transparent 60%),
+    radial-gradient(ellipse at 80% 90%, rgba(150, 110, 50, 0.18), transparent 55%),
+    var(--parchment);
+  color: var(--ink);
+  border-radius: 2px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 30px 60px -20px rgba(0, 0, 0, 0.65), 0 0 0 1px var(--parchment-edge);
+}
+.folio a { color: var(--cinnabar); }
+.folio a:hover { color: #8f2c1b; }
+
+/* gold rule with a star at its centre */
+.star-rule { display: flex; align-items: center; gap: 0.75rem; color: var(--gilt); margin: 2.5rem 0 1.25rem; }
+.star-rule::before, .star-rule::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, transparent, var(--gilt-lo), transparent); }
+
+.section-title { font-size: 1.6rem; color: var(--plaster); margin: 0 0 0.75rem; }
+.muted { color: var(--mist); }
+
+/* checkpoint selector, shared by several views */
+.cp-select { font-family: var(--sans); }
+.cp-select .track { position: relative; height: 3rem; }
+.cp-select input[type="range"] { width: 100%; accent-color: var(--gilt); margin: 0; }
+.cp-select .ticks { position: relative; height: 2.2rem; font-size: 0.75rem; color: var(--dusk); }
+.cp-select .ticks button {
+  position: absolute; transform: translateX(-50%); background: none; border: 0; color: inherit;
+  font: inherit; cursor: pointer; padding: 0.2rem 0.3rem; line-height: 1.2; text-align: center; white-space: nowrap;
+}
+.cp-select .ticks button.on { color: var(--gilt-hi); }
+.cp-select .ticks .ah { display: block; font-family: var(--naskh); font-size: 0.95rem; }
+
+/* entity hover card */
+.entity-card {
+  position: fixed; z-index: 50; pointer-events: none; width: 17rem;
+  background: var(--night-2); color: var(--plaster);
+  border: 1px solid rgba(212, 171, 85, 0.45); border-radius: 4px; padding: 0.75rem 0.9rem;
+  box-shadow: 0 18px 40px -12px rgba(0, 0, 0, 0.7); font-size: 0.95rem; line-height: 1.4;
+}
+.entity-card .ar { font-size: 1.6rem; color: var(--gilt); display: block; line-height: 1.2; }
+.entity-card .kind { font-family: var(--sans); font-size: 0.75rem; color: var(--dusk); }
+.entity-card .sub { color: var(--mist); font-size: 0.85rem; margin-top: 0.3rem; }
+
+/* tables on night */
+table.ledger { border-collapse: collapse; width: 100%; font-family: var(--sans); font-size: 0.92rem; }
+table.ledger th, table.ledger td { text-align: left; padding: 0.5rem 0.9rem 0.5rem 0; border-bottom: 1px solid rgba(158, 167, 199, 0.18); vertical-align: top; }
+table.ledger th { color: var(--mist); font-weight: 600; }
+table.ledger td.num, table.ledger th.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+details.numbers { margin-top: 1rem; font-family: var(--sans); font-size: 0.92rem; }
+details.numbers summary { cursor: pointer; color: var(--gilt); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}

@@ -1,0 +1,19 @@
+.roll-tree { padding: 2rem 1rem; overflow-x: auto; }
+.roll-tree svg { display: block; margin: 0 auto; max-width: 100%; min-width: 34rem; height: auto; }
+.roll-tree .branch { fill: none; stroke: #7a5a34; stroke-width: 2.5; stroke-opacity: 0.6; }
+.roll-tree .roundel { fill: #e1cfa9; stroke: #7a5a34; stroke-width: 2; }
+.roll-tree .inner { fill: none; stroke: #7a5a34; stroke-opacity: 0.4; }
+.roll-tree .sultan .roundel { fill: #d4ab55; stroke: #7a5a1c; stroke-width: 3; }
+.roll-tree .sultan .inner { stroke: #fff3cf; stroke-opacity: 0.8; }
+.roll-tree .ar { font-family: var(--naskh); font-weight: 700; fill: #3a2814; }
+.roll-tree .name { font-family: var(--serif); font-weight: 700; font-size: 16px; fill: #2b1d10; }
+.roll-tree .life { font-family: var(--sans); font-size: 11.5px; fill: #7a5a34; }
+.roll-tree .reign-ah { font-family: var(--naskh); font-size: 16px; fill: #c0442e; }
+.roll-tree .member:hover .roundel { stroke: #c0442e; }
+
+.servants { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); gap: 0.75rem 1.5rem; }
+.servants li { padding: 0.75rem 0; border-bottom: 1px solid rgba(158, 167, 199, 0.15); }
+.servants a { display: grid; text-decoration: none; color: var(--plaster); }
+.servants .ar { font-size: 1.6rem; color: var(--gilt); line-height: 1.3; }
+.servants .nm { font-size: 1.1rem; }
+.servants .roles { font-size: 0.8rem; color: var(--dusk); }

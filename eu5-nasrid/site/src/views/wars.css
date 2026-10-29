@@ -1,0 +1,52 @@
+.war-banners { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.25rem; }
+.war-banners a {
+  display: grid; grid-template-columns: 9rem 1fr; grid-template-areas: "years name" "years against" "years outcome" "tide tide";
+  gap: 0.15rem 1.5rem; padding: 1.25rem 1.5rem 0; text-decoration: none; color: var(--plaster);
+  border: 1px solid rgba(192, 68, 46, 0.4); border-left: 6px solid var(--cinnabar); border-radius: 3px;
+  background: linear-gradient(90deg, rgba(192, 68, 46, 0.12), rgba(20, 29, 64, 0.5) 40%);
+  overflow: hidden;
+}
+.war-banners a:hover { border-color: var(--cinnabar-hi); }
+.war-banners .years { grid-area: years; color: var(--mist); display: grid; align-content: start; }
+.war-banners .years .ar { text-align: left; font-size: 1.8rem; color: var(--gilt); line-height: 1.2; }
+.war-banners .name { grid-area: name; font-size: 1.6rem; font-weight: 700; }
+.war-banners .against { grid-area: against; color: var(--mist); font-size: 0.9rem; }
+.war-banners .outcome { grid-area: outcome; color: var(--dusk); font-size: 0.85rem; }
+.war-banners .tide { grid-area: tide; margin: 0.9rem -1.5rem 0; }
+
+.tide { display: block; width: 100%; height: 56px; }
+.tide.big { height: auto; aspect-ratio: 1200 / 260; border: 1px solid rgba(158, 167, 199, 0.15); border-radius: 3px; background: rgba(20, 29, 64, 0.5); }
+.tide .ours { fill: #d4ab55; fill-opacity: 0.85; }
+.tide .theirs { fill: #c0442e; fill-opacity: 0.85; }
+.tide .zero { stroke: var(--mist); stroke-opacity: 0.4; vector-effect: non-scaling-stroke; }
+.tide .tick { font-family: var(--sans); font-size: 12px; fill: var(--dusk); }
+.tide .pt { fill: var(--night); stroke: var(--gilt-hi); stroke-width: 2; }
+
+.war-years .ar { font-size: 1.6rem; color: var(--gilt); }
+.war-years .ui { color: var(--mist); font-size: 0.9rem; }
+.war-outcome { font-size: 1.15rem; color: var(--plaster); margin: 0.4rem 0 0; }
+.war-page section { margin-top: 2rem; }
+
+.fights { align-items: start; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(24rem, 100%), 1fr)); gap: 1.25rem; }
+.fight { padding: 1.1rem 1.25rem; border: 1px solid rgba(158, 167, 199, 0.2); border-top: 3px solid var(--dusk); border-radius: 3px; background: rgba(20, 29, 64, 0.6); }
+.fight.good { border-top-color: var(--gilt); }
+.fight.bad { border-top-color: var(--cinnabar); }
+.fight header { display: grid; gap: 0.15rem; }
+.fight .kind, .fight .when { font-size: 0.8rem; color: var(--dusk); }
+.fight h3 { font-size: 1.35rem; color: var(--plaster); }
+.fight .result { font-size: 0.9rem; color: var(--plaster); }
+.fight.good .result span { color: var(--gilt-hi); }
+.fight.bad .result span { color: var(--cinnabar-hi); }
+.hosts { margin-top: 0.9rem; display: grid; gap: 0.75rem; }
+.host .hl { display: flex; justify-content: space-between; font-size: 0.82rem; color: var(--mist); }
+.host .hl span:first-child { color: var(--plaster); font-weight: 600; }
+.figures { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 0.3rem; }
+.figures i { width: 7px; height: 12px; border-radius: 3px 3px 1px 1px; background: var(--plaster); opacity: 0.85; }
+.figures i.fell { background: var(--cinnabar); opacity: 1; }
+.per { font-size: 0.75rem; color: var(--dusk); margin: 0; }
+
+@media (max-width: 40rem) {
+  .war-banners a { grid-template-columns: 1fr; grid-template-areas: "years" "name" "against" "outcome" "tide"; padding: 1rem 1rem 0; }
+  .war-banners .years { display: flex; gap: 0.75rem; align-items: baseline; }
+  .war-banners .tide { margin: 0.9rem -1rem 0; }
+}

@@ -1,0 +1,47 @@
+.council-stage { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(16rem, 0.8fr); gap: 2rem; align-items: center; }
+@media (max-width: 60rem) { .council-stage { grid-template-columns: 1fr; } }
+
+.hemi { width: 100%; height: auto; display: block; overflow: visible; }
+.hemi .seat { stroke: var(--night); stroke-width: 2.5; transition: transform 0.7s cubic-bezier(.2,.7,.2,1), fill 0.7s; }
+.hemi .throne path:first-child { fill: #1c2753; stroke: var(--gilt); stroke-width: 2; }
+.hemi .throne .arch { fill: none; stroke: var(--gilt-lo); stroke-width: 1.5; }
+.hemi .crown-pct { font-family: var(--serif); font-size: 34px; font-weight: 700; fill: var(--gilt-hi); }
+.hemi .crown-label { font-family: var(--sans); font-size: 12px; fill: var(--mist); }
+
+.estates-list { list-style: none; margin: 0; padding: 0; }
+.estates-list li {
+  display: grid; grid-template-columns: 1rem 1fr auto; grid-template-rows: auto auto; gap: 0.1rem 0.75rem; align-items: baseline;
+  padding: 0.65rem 0; border-bottom: 1px solid rgba(158, 167, 199, 0.15);
+}
+.estates-list .swatch { width: 0.85rem; height: 0.85rem; border-radius: 50%; align-self: center; grid-row: 1 / span 2; }
+.estates-list .name { font-family: var(--serif); font-size: 1.2rem; color: var(--plaster); }
+.estates-list .pow { font-size: 1.15rem; color: var(--plaster); }
+.estates-list .mood { grid-column: 2 / span 2; font-size: 0.82rem; color: var(--mist); display: flex; align-items: center; gap: 0.5rem; }
+.estates-list .meter { position: relative; width: 6rem; height: 5px; background: rgba(158, 167, 199, 0.15); border-radius: 3px; }
+.estates-list .meter::after { content: ""; position: absolute; left: 50%; top: -3px; bottom: -3px; width: 1px; background: var(--mist); }
+.estates-list .meter i { display: block; height: 100%; border-radius: 3px; background: var(--mist); }
+.estates-list .content .meter i { background: #3987e5; }
+.estates-list .uneasy .meter i { background: #8a90ad; }
+.estates-list .restless .meter i, .estates-list .mutinous .meter i { background: #c0442e; }
+.estates-list .mutinous { color: #f0a090; font-weight: 600; }
+
+.council-date { display: flex; align-items: baseline; gap: 1rem; margin: 1rem 0 0.5rem; }
+.council-date .ar { font-size: 1.8rem; color: var(--gilt); }
+.council-date .ui { color: var(--mist); }
+
+.stream { width: 100%; height: auto; display: block; margin-top: 0.5rem; }
+.stream .move line { stroke: var(--gilt-hi); stroke-width: 1.5; stroke-dasharray: 3 3; }
+.stream .end-label { font-family: var(--sans); font-size: 13px; fill: var(--plaster); }
+.stream .tick { font-family: var(--sans); font-size: 12px; fill: var(--dusk); }
+.stream .tick .ah { font-family: var(--naskh); fill: var(--gilt); font-size: 14px; }
+
+.moves-list { list-style: none; padding: 0; margin: 1rem 0 0; font-size: 0.88rem; columns: 2 22rem; column-gap: 2.5rem; }
+.moves-list li { break-inside: avoid; padding: 0.3rem 0; color: var(--plaster); }
+.moves-list .d { display: inline-block; width: 3rem; color: var(--gilt); }
+.moves-list .t { display: inline-block; width: 6rem; color: var(--dusk); }
+
+.mood-grid { display: grid; gap: 3px; font-size: 0.85rem; margin-top: 1rem; overflow-x: auto; }
+.mood-grid .col-head { text-align: center; color: var(--dusk); font-size: 0.78rem; }
+.mood-grid .row-head { display: flex; align-items: center; gap: 0.5rem; color: var(--plaster); }
+.mood-grid .row-head i { width: 0.6rem; height: 0.6rem; border-radius: 50%; }
+.mood-grid .cell { text-align: center; padding: 0.5rem 0; color: #fff; font-variant-numeric: tabular-nums; border-radius: 2px; }
