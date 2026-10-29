@@ -1,0 +1,186 @@
+[
+ {
+  "id": "1339-02-03-alliance-tunis",
+  "date": "1339-02-03",
+  "type": "diplomacy",
+  "title": "Alliance with the Ḥafṣids of Tunis",
+  "data": {
+   "treaty": "alliance",
+   "with": "TUN"
+  },
+  "source": "checkpoint 1339-05-24"
+ },
+ {
+  "id": "1339-02-28-battle-shaluqa",
+  "date": "1339-02-28",
+  "type": "battle",
+  "title": "Morocco repulsed at Shalūqa",
+  "places": [
+   "shaluqa"
+  ],
+  "wars": [
+   "moroccan-castilian-war"
+  ],
+  "data": {
+   "result": "defeat",
+   "ours": 4011,
+   "theirs": 9817,
+   "side": "Morocco's side (Granada not engaged)"
+  },
+  "source": "checkpoint 1339-05-24"
+ },
+ {
+  "id": "1339-03-10-battle-ishbiliyya",
+  "date": "1339-03-10",
+  "type": "battle",
+  "title": "Castile defeats Morocco again at Ishbīliyya",
+  "places": [
+   "ishbiliyya"
+  ],
+  "wars": [
+   "moroccan-castilian-war"
+  ],
+  "data": {
+   "result": "defeat",
+   "ours": 6053,
+   "theirs": 5970,
+   "side": "Morocco's side (Granada not engaged)"
+  },
+  "source": "checkpoint 1339-05-24"
+ },
+ {
+  "id": "1339-03-25-battle-qarmuna",
+  "date": "1339-03-25",
+  "type": "battle",
+  "title": "Castile defeats Morocco at Qarmūna",
+  "places": [
+   "qarmuna"
+  ],
+  "wars": [
+   "moroccan-castilian-war"
+  ],
+  "data": {
+   "result": "defeat",
+   "ours": 663,
+   "theirs": 12837,
+   "side": "Morocco's side (Granada not engaged)"
+  },
+  "source": "checkpoint 1339-05-24"
+ },
+ {
+  "id": "1339-04-06-battle-shaluqa",
+  "date": "1339-04-06",
+  "type": "battle",
+  "title": "Morocco repulsed again at Shalūqa",
+  "places": [
+   "shaluqa"
+  ],
+  "wars": [
+   "moroccan-castilian-war"
+  ],
+  "data": {
+   "result": "defeat",
+   "ours": 5503,
+   "theirs": 8113,
+   "side": "Morocco's side (Granada not engaged)"
+  },
+  "source": "checkpoint 1339-05-24"
+ },
+ {
+  "id": "1339-04-06-faraj-control",
+  "date": "1339-04-06",
+  "type": "appointment",
+  "title": "Faraj turns the dīwān to tightening control of the provinces",
+  "people": [
+   "faraj-ibn-ismail"
+  ],
+  "data": {
+   "action": "increase_control_province"
+  },
+  "source": "checkpoint 1339-05-24"
+ },
+ {
+  "id": "1339-04-21-food-access-tunis",
+  "date": "1339-04-21",
+  "type": "diplomacy",
+  "title": "Food access agreed with Tunis",
+  "data": {
+   "treaty": "food_access",
+   "with": "TUN"
+  },
+  "source": "checkpoint 1339-05-24"
+ },
+ {
+  "id": "1339-05-14-death-gideon",
+  "date": "1339-05-14",
+  "type": "death",
+  "title": "Gideon ben Joshua dies, having fallen down the stairs",
+  "people": [
+   "gideon-ben-joshua"
+  ],
+  "data": {
+   "reason": "fell_down_stairs"
+  },
+  "source": "checkpoint 1339-05-24"
+ },
+ {
+  "id": "1339-05-24-cb-aragon",
+  "date": "1339-05-24",
+  "type": "diplomacy",
+  "title": "A claim on Aragon: the casus belli to reclaim Andalusia",
+  "wars": [
+   "war-on-aragon"
+  ],
+  "data": {
+   "casusBelli": "cb_reclaim_andalucia",
+   "target": "ARA"
+  },
+  "source": "checkpoint 1339-05-24"
+ },
+ {
+  "id": "1339-05-24-murcia-held",
+  "date": "1339-05-24",
+  "type": "player_note",
+  "title": "Tunisian troops hold Mursiyya and its countryside, opening a road from Granada to Aragon",
+  "places": [
+   "mursiyya"
+  ],
+  "wars": [
+   "moroccan-castilian-war",
+   "war-on-aragon"
+  ],
+  "data": {
+   "save": "the Murcia area is controlled by Morocco's side"
+  },
+  "source": "Trent's account"
+ },
+ {
+  "id": "1339-05-24-war-on-aragon",
+  "date": "1339-05-24",
+  "type": "war_declared",
+  "title": "Granada goes to war with Aragon",
+  "wars": [
+   "war-on-aragon"
+  ],
+  "source": "Trent's account"
+ },
+ {
+  "id": "1339-05-24-ibn-al-khatib-commands",
+  "date": "1339-05-24",
+  "type": "appointment",
+  "title": "Ibn al-Khaṭīb given command of the host: 9,500 levies, 900 regulars, 400 mercenaries and 350 in the baggage train",
+  "people": [
+   "ibn-al-khatib"
+  ],
+  "wars": [
+   "war-on-aragon"
+  ],
+  "data": {
+   "levies": 9500,
+   "regulars": 900,
+   "mercenaries": 400,
+   "baggage": 350
+  },
+  "source": "Trent's account"
+ }
+]

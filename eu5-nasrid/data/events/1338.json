@@ -1,0 +1,63 @@
+[
+ {
+  "id": "1338-01-22-food-access-morocco",
+  "date": "1338-01-22",
+  "type": "diplomacy",
+  "title": "Food access agreed with Morocco",
+  "data": {
+   "treaty": "food_access",
+   "with": "MOR"
+  },
+  "source": "checkpoint 1339-05-24"
+ },
+ {
+  "id": "1338-03-12-ottoman-relations",
+  "date": "1338-03-12",
+  "type": "diplomacy",
+  "title": "Envoys sent to improve relations with the Ottomans",
+  "data": {
+   "treaty": "opinion_improvement",
+   "with": "TUR"
+  },
+  "source": "checkpoint 1339-05-24"
+ },
+ {
+  "id": "1338-11-01-battle-ishbiliyya",
+  "date": "1338-11-01",
+  "type": "battle",
+  "title": "Castile defeats Morocco at Ishbīliyya",
+  "places": [
+   "ishbiliyya"
+  ],
+  "wars": [
+   "moroccan-castilian-war"
+  ],
+  "data": {
+   "result": "defeat",
+   "ours": 3704,
+   "theirs": 17786,
+   "side": "Morocco's side (Granada not engaged)"
+  },
+  "source": "checkpoint 1339-05-24"
+ },
+ {
+  "id": "1338-11-09-tunis-joins",
+  "date": "1338-11-09",
+  "type": "war_joined",
+  "title": "Tunis and its vassals join Morocco's war on Castile",
+  "wars": [
+   "moroccan-castilian-war"
+  ],
+  "data": {
+   "countries": [
+    "TUN",
+    "TRP",
+    "GBS",
+    "GFS",
+    "TGT",
+    "BIJ"
+   ]
+  },
+  "source": "checkpoint 1339-05-24"
+ }
+]

@@ -68,9 +68,9 @@ export default function WarPage() {
               </header>
               {(d.ours != null || d.ourLosses != null) && (
                 <div className="hosts ui">
-                  <Host label="Ours" men={d.ours} lost={d.ourLosses} />
-                  <Host label="Theirs" men={d.theirs} lost={d.theirLosses} />
-                  <p className="per">Each figure is {PER} men; the red ones fell.</p>
+                  <Host label={w.involvement === "potential" ? "Our allies" : "Ours"} men={d.ours} lost={d.ourLosses} />
+                  <Host label={w.involvement === "potential" ? (w.sides?.defenders.join(", ") ?? "Theirs") : "Theirs"} men={d.theirs} lost={d.theirLosses} />
+                  <p className="per">Each figure is {PER} men{d.ourLosses != null || d.theirLosses != null ? "; the red ones fell" : ""}.</p>
                 </div>
               )}
             </article>
@@ -87,7 +87,7 @@ function Host({ label, men, lost }: { label: string; men?: number; lost?: number
   const n = Math.round((men ?? 0) / PER), dead = Math.round((lost ?? 0) / PER);
   return (
     <div className="host">
-      <div className="hl"><span>{label}</span><span>{men != null ? nf.format(men) : "?"} men, {lost != null ? nf.format(lost) : "?"} lost</span></div>
+      <div className="hl"><span>{label}</span><span>{men != null ? nf.format(men) : "?"} men{lost != null ? `, ${nf.format(lost)} lost` : ""}</span></div>
       <div className="figures" aria-hidden="true">
         {Array.from({ length: n }, (_, k) => <i key={k} className={k < dead ? "fell" : ""} />)}
       </div>

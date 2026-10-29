@@ -368,12 +368,15 @@
   "nameGame": "Muhammad",
   "gameId": 3547,
   "born": "1313-11-16",
-  "roles": [],
+  "roles": [
+   "general"
+  ],
   "stats": {
-   "adm": 88.0,
-   "dip": 79.0,
-   "mil": 84.0
-  }
+   "adm": 88,
+   "dip": 79,
+   "mil": 84
+  },
+  "note": "In the game the ablest man at court (88/79/84). Given command of the host against Aragon in May 1339 (Trent's account)."
  },
  {
   "id": "muhammad-iv",
@@ -564,6 +567,7 @@
   "traits": [
    "drunkard"
   ],
-  "note": "A Sephardi Jew of Gharnāṭa, of the burghers' estate; at court by 16 November 1337."
+  "note": "A Sephardi Jew of Gharnāṭa, of the burghers' estate; at court by 16 November 1337. Died on 14 May 1339: he fell down the stairs.",
+  "died": "1339-05-14"
  }
 ]

@@ -399,5 +399,23 @@
   "kind": "location",
   "nameArabic": "تلمسان",
   "major": true
+ },
+ {
+  "id": "shaluqa",
+  "key": "sanlucar",
+  "name": "Shalūqa",
+  "nameGame": "Šaluqa",
+  "kind": "location",
+  "nameArabic": "شلوقة",
+  "note": "Sanlúcar de Barrameda, at the mouth of the Guadalquivir."
+ },
+ {
+  "id": "qarmuna",
+  "key": "carmona",
+  "name": "Qarmūna",
+  "nameGame": "Qrmuna",
+  "kind": "location",
+  "nameArabic": "قرمونة",
+  "note": "Carmona, east of Ishbīliyya."
  }
 ]

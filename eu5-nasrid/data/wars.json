@@ -44,7 +44,13 @@
   "goal": "Reclaim Andalusia",
   "allies": [
    "Morocco",
-   "Tlemcen"
+   "Tlemcen",
+   "Tunis",
+   "Tripoli",
+   "Gabès",
+   "Gafsa",
+   "Touggourt",
+   "Bijaya"
   ],
   "enemies": [
    "Castile"
@@ -54,12 +60,32 @@
   "sides": {
    "attackers": [
     "Morocco",
-    "Tlemcen"
+    "Tlemcen",
+    "Tunis",
+    "Tripoli",
+    "Gabès",
+    "Gafsa",
+    "Touggourt",
+    "Bijaya"
    ],
    "defenders": [
     "Castile"
    ]
   },
-  "note": "Morocco can call Granada and Tunis in under their alliances; neither has been called. Castile is Granada's overlord. No battles by 18 August 1337."
+  "note": "Tunis and its vassals (Tripoli, Gabès, Gafsa, Touggourt, Bijaya) joined Morocco on 9 November 1338. Castile has won all five battles so far. By 24 May 1339 Morocco's side holds Ishbīliyya and the whole Murcia area (Mursiyya, Siyāsa, Qarṭājanna, Lawraqa, Mūla); Trent's account has Tunisian troops taking Murcia. Granada can still be called in and has not been."
+ },
+ {
+  "id": "war-on-aragon",
+  "name": "The War on Aragon",
+  "start": "1339-05-24",
+  "end": null,
+  "goal": "Reclaim Andalusia (Granada's casus belli against Aragon)",
+  "allies": [],
+  "enemies": [
+   "Aragon"
+  ],
+  "outcome": null,
+  "involvement": "belligerent",
+  "note": "Granada's first war. The casus belli is dated 24 May 1339 in the save; the declaration and the host's mustering are Trent's account, and the next save will confirm the date and both sides. Granada's road to Aragon runs through the Murcia area, held for now by its allies against Castile."
  }
 ]
