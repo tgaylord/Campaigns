@@ -1,5 +1,7 @@
 # EU5 save decoder
 
+> **Game version 1.3.11. Deprecated for 1.4.** This decoder crashes on 1.4 compressed saves, which moved field names into the string table. For 1.4 saves use [`../eu5-save-decoder-1.4/`](../eu5-save-decoder-1.4/). This folder stays unchanged for campaigns still on 1.3.11, such as Rome.
+
 Turns a compressed Europa Universalis V save (`.eu5`) into the same Jomini-style text the game writes in debug mode, split into one file per top-level section. Any EU5 campaign can then work from the small compressed saves (about 80 MB) instead of 500–900 MB text saves.
 
 - **Origin:** the Rome campaign (`eu5-rome`), October 2026.

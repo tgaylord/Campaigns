@@ -111,5 +111,5 @@ Then grep the staged files for `Users`, `trent`, `C:\`, `/home/`, `/mnt/`, `stea
 
 | Campaign | Status | Date | Notes |
 |---|---|---|---|
-| eu5-nasrid | adopted | 2026-10-28 | origin; will adopt the decoder and extend it to 1.4 |
+| eu5-nasrid | adopted (decoder adapted) | 2026-10-28 | origin. Decoder adapted for 1.4 as a separate tool at `shared/tools/eu5-save-decoder-1.4/` (field names via the string table, 25-entry token table, quoted strings escaped); validated token by token against a 1.4.5 text save. The 1.3.11 decoder is left unchanged and marked deprecated for 1.4. |
 | eu5-rome | adopted | 2026-10-28 | folder `eu5-rome/` with SYSTEMS.md, snapshots, registers and tools; decoder published at `shared/tools/eu5-save-decoder/` (1.3.11 table); chronicle stays in Claude Docs for now |
