@@ -1,0 +1,122 @@
+---
+import "@fontsource/gentium-book-plus/latin-400.css";
+import "@fontsource/gentium-book-plus/latin-400-italic.css";
+import "@fontsource/gentium-book-plus/latin-700.css";
+import "@fontsource/gentium-book-plus/latin-ext-400.css";
+import "@fontsource/gentium-book-plus/latin-ext-400-italic.css";
+import "@fontsource/gentium-book-plus/latin-ext-700.css";
+import "@fontsource/amiri/arabic-400.css";
+import "@fontsource/amiri/arabic-700.css";
+import "../styles/global.css";
+import { url, hasSampleData } from "../lib/site";
+
+interface Props { title: string }
+const { title } = Astro.props;
+const sample = await hasSampleData();
+
+const nav = [
+  { href: "/chronicle/", label: "Chronicle" },
+  { href: "/realm/", label: "The realm" },
+  { href: "/estates/", label: "Estates" },
+  { href: "/strait/", label: "The Strait" },
+  { href: "/wars/", label: "Wars" },
+  { href: "/people/", label: "People" },
+  { href: "/places/", label: "Places" },
+  { href: "/map/", label: "Map" },
+];
+const here = Astro.url.pathname;
+const isHome = here === url("/");
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{isHome ? "The Nasrid Chronicle" : `${title} · The Nasrid Chronicle`}</title>
+    <script is:inline>
+      try {
+        const t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+      } catch {}
+    </script>
+  </head>
+  <body>
+    <a class="skip visually-hidden" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-row">
+        <a class="site-name" href={url("/")}>The Nasrid Chronicle</a>
+        <nav aria-label="Sections">
+          <ul>
+            {nav.map((n) => {
+              const href = url(n.href);
+              const current = here.startsWith(href);
+              return <li><a href={href} aria-current={current ? "page" : undefined}>{n.label}</a></li>;
+            })}
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    {sample && (
+      <div class="sample-banner ui" role="note">
+        <div class="wrap">
+          Sample data. Everything shown is scaffolding to test the site, not campaign history.
+          It goes away with the first real checkpoint.
+        </div>
+      </div>
+    )}
+
+    <main id="main" class="wrap">
+      <slot />
+    </main>
+
+    <footer class="site-footer ui">
+      <div class="wrap footer-row">
+        <span>Europa Universalis V, played as Granada with Across the Pillars</span>
+        <button class="theme-toggle" type="button" aria-label="Switch light or dark theme">Theme</button>
+      </div>
+    </footer>
+
+    <script is:inline>
+      document.querySelector(".theme-toggle")?.addEventListener("click", () => {
+        const root = document.documentElement;
+        const dark = root.dataset.theme
+          ? root.dataset.theme === "dark"
+          : matchMedia("(prefers-color-scheme: dark)").matches;
+        root.dataset.theme = dark ? "light" : "dark";
+        try { localStorage.setItem("theme", root.dataset.theme); } catch {}
+      });
+    </script>
+  </body>
+</html>
+
+<style>
+  .skip:focus { position: static; width: auto; height: auto; clip: auto; }
+  .site-header { border-bottom: 1px solid var(--rule); }
+  .header-row {
+    display: flex; flex-wrap: wrap; align-items: baseline;
+    gap: 0.5rem 2rem; padding-block: 1rem;
+  }
+  .site-name {
+    font-family: var(--serif); font-weight: 700; font-size: 1.25rem;
+    color: var(--ink); text-decoration: none;
+  }
+  nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; margin: 0; padding: 0; }
+  nav a { color: var(--ink-2); text-decoration: none; font-size: 0.95rem; padding-block: 0.25rem; }
+  nav a:hover { color: var(--lapis); }
+  nav a[aria-current="page"] { color: var(--ink); box-shadow: inset 0 -2px 0 var(--gold); }
+
+  .sample-banner {
+    background: var(--sample); color: var(--sample-ink);
+    font-size: 0.9rem; padding-block: 0.55rem;
+  }
+  main { padding-block: 2.5rem 4rem; }
+
+  .site-footer { border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.85rem; }
+  .footer-row { display: flex; justify-content: space-between; align-items: center; padding-block: 1.25rem; gap: 1rem; }
+  .theme-toggle {
+    font: inherit; color: var(--ink-2); background: none;
+    border: 1px solid var(--rule); border-radius: 4px; padding: 0.3rem 0.7rem; cursor: pointer;
+  }
+  .theme-toggle:hover { color: var(--lapis); border-color: var(--lapis); }
+</style>

@@ -137,7 +137,13 @@ The first build will have:
 - A **real map** built from the game's own map files on the gaming PC. It would show ownership at each checkpoint and battle sites.
 - The colonies, and an armies view once tracking starts.
 
-The site's stack hasn't been decided. It will be a static build so GitHub Pages can host it.
+**Stack:** Astro (static build) in `site/`.
+- The data model lives in `site/src/content.config.ts`. A build fails if any record breaks its schema or points at a missing person, place, war or era.
+- Hijri dates come from `site/src/lib/hijri.ts`.
+- Story entries link to records with `[name](person:id)`, `place:`, `war:` and `era:`.
+- See `site/README.md` for running it locally and for the story-entry format.
+
+**Publishing:** a root workflow builds every campaign's site for GitHub Pages, at `tgaylord.github.io/Campaigns/eu5-nasrid/`. Its status is still to be decided (see §10).
 
 ---
 
@@ -170,5 +176,5 @@ This campaign follows the repo-wide rules in `/CLAUDE.md`:
 
 ## 10. Open questions
 
-1. The site's stack (decided at build time).
-2. Final mod list, checked against 1.4.
+1. Final mod list, checked against 1.4.
+2. Publishing: the repo is private, but a GitHub Pages site is public on the web, and Pages from a private repo needs a paid GitHub plan. The choice is between publishing anyway (an unlisted but public URL) or viewing the site locally only.

@@ -1,0 +1,77 @@
+---
+import Base from "../../layouts/Base.astro";
+import LineChart from "../../components/LineChart.astro";
+import DualDate from "../../components/DualDate.astro";
+import Mentions from "../../components/Mentions.astro";
+import { getCollection } from "astro:content";
+import { nf, eventsSorted, signed } from "../../lib/site";
+
+export async function getStaticPaths() {
+  return (await getCollection("wars")).map((war) => ({ params: { id: war.id }, props: { war } }));
+}
+const { war } = Astro.props;
+const w = war.data;
+const fights = (await eventsSorted()).filter(
+  (e) => ["battle", "siege"].includes(e.data.type) && e.data.wars.some((r) => r.id === war.id),
+);
+const d = (e: (typeof fights)[number]) => e.data.data as Record<string, any>;
+---
+<Base title={w.name}>
+  <header class="prose">
+    <h1>{w.name}</h1>
+    <p class="date"><DualDate date={w.start} /> to {w.end ? <DualDate date={w.end} /> : "the present"}</p>
+  </header>
+
+  <dl class="facts ui">
+    <div><dt>War goal</dt><dd>{w.goal}</dd></div>
+    <div><dt>With us</dt><dd>{w.allies.length ? w.allies.join(", ") : "No allies"}</dd></div>
+    <div><dt>Against us</dt><dd>{w.enemies.join(", ")}</dd></div>
+    <div><dt>Outcome</dt><dd>{w.outcome ?? "Ongoing"}</dd></div>
+  </dl>
+
+  {w.score.length > 1 && (
+    <>
+      <h2>War score</h2>
+      <p class="prose">From Granada's side: above zero, the war is going our way.</p>
+      <LineChart title={`War score, ${w.name}`} series={[{ id: "score", label: "War score", color: "var(--s1)", points: w.score }]}
+        yMin={-100} yMax={100} yTicks={[-100, -50, 0, 50, 100]} refs={[{ value: 0, label: "Even" }]} />
+      <details class="table-view">
+        <summary>Show the war score as a table</summary>
+        <table><thead><tr><th>Date</th><th class="num">War score</th></tr></thead>
+          <tbody>{w.score.map((p) => <tr><td>{p.date}</td><td class="num">{signed(p.value)}</td></tr>)}</tbody></table>
+      </details>
+    </>
+  )}
+
+  <h2>Battles and sieges</h2>
+  {fights.length ? (
+    <table class="ui">
+      <thead><tr><th>Date</th><th>Engagement</th><th>Result</th><th class="num">Our men</th><th class="num">Theirs</th><th class="num">Our losses</th><th class="num">Their losses</th><th class="num">War score</th></tr></thead>
+      <tbody>
+        {fights.map((e) => (
+          <tr>
+            <td>{e.data.date}</td>
+            <td>{e.data.title}</td>
+            <td>{d(e).result ?? ""}</td>
+            <td class="num">{d(e).ours != null ? nf.format(d(e).ours) : ""}</td>
+            <td class="num">{d(e).theirs != null ? nf.format(d(e).theirs) : ""}</td>
+            <td class="num">{d(e).ourLosses != null ? nf.format(d(e).ourLosses) : ""}</td>
+            <td class="num">{d(e).theirLosses != null ? nf.format(d(e).theirLosses) : ""}</td>
+            <td class="num">{d(e).warScore != null ? signed(d(e).warScore) : ""}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  ) : <p>No battles or sieges logged.</p>}
+
+  <Mentions kind="wars" id={war.id} />
+</Base>
+
+<style>
+  .date { font-size: 1.05rem; }
+  .facts { display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 1rem 2rem; margin: 1.5rem 0; }
+  .facts dt { font-size: 0.8rem; color: var(--muted); }
+  .facts dd { margin: 0.15rem 0 0; font-size: 1.05rem; }
+  table.ui { font-size: 0.9rem; }
+  @media (max-width: 48rem) { table.ui { display: block; overflow-x: auto; } }
+</style>

@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "anyOf": [
+    {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "start": {
+            "type": "string",
+            "pattern": "^\\d{3,4}-\\d{2}-\\d{2}$"
+          },
+          "end": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^\\d{3,4}-\\d{2}-\\d{2}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "summary": {
+            "type": "string"
+          },
+          "sample": {
+            "default": false,
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "title",
+          "start"
+        ]
+      }
+    },
+    {
+      "type": "object",
+      "properties": {
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "start": {
+            "type": "string",
+            "pattern": "^\\d{3,4}-\\d{2}-\\d{2}$"
+          },
+          "end": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^\\d{3,4}-\\d{2}-\\d{2}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "summary": {
+            "type": "string"
+          },
+          "sample": {
+            "default": false,
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "title",
+          "start"
+        ]
+      }
+    }
+  ]
+}

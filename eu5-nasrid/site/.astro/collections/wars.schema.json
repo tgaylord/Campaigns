@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "anyOf": [
+    {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "start": {
+            "type": "string",
+            "pattern": "^\\d{3,4}-\\d{2}-\\d{2}$"
+          },
+          "end": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^\\d{3,4}-\\d{2}-\\d{2}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "goal": {
+            "type": "string"
+          },
+          "allies": {
+            "default": [],
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "enemies": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "outcome": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "score": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "date": {
+                  "type": "string",
+                  "pattern": "^\\d{3,4}-\\d{2}-\\d{2}$"
+                },
+                "value": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "date",
+                "value"
+              ]
+            }
+          },
+          "sample": {
+            "default": false,
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "name",
+          "start",
+          "goal",
+          "enemies",
+          "outcome"
+        ]
+      }
+    },
+    {
+      "type": "object",
+      "properties": {
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "start": {
+            "type": "string",
+            "pattern": "^\\d{3,4}-\\d{2}-\\d{2}$"
+          },
+          "end": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^\\d{3,4}-\\d{2}-\\d{2}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "goal": {
+            "type": "string"
+          },
+          "allies": {
+            "default": [],
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "enemies": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "outcome": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "score": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "date": {
+                  "type": "string",
+                  "pattern": "^\\d{3,4}-\\d{2}-\\d{2}$"
+                },
+                "value": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "date",
+                "value"
+              ]
+            }
+          },
+          "sample": {
+            "default": false,
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "name",
+          "start",
+          "goal",
+          "enemies",
+          "outcome"
+        ]
+      }
+    }
+  ]
+}

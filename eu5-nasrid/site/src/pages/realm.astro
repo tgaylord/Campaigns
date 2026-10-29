@@ -1,0 +1,137 @@
+---
+import Base from "../layouts/Base.astro";
+import DualDate from "../components/DualDate.astro";
+import { getEntry } from "astro:content";
+import { url, nf, compact, snapshotsSorted } from "../lib/site";
+
+const snaps = await snapshotsSorted();
+const rows = await Promise.all(snaps.map(async (s) => ({
+  s,
+  ruler: await getEntry(s.data.ruler),
+  heir: s.data.heir ? await getEntry(s.data.heir) : null,
+  regent: s.data.regent ? await getEntry(s.data.regent) : null,
+  capital: await getEntry(s.data.capital),
+})));
+const last = rows.length - 1;
+
+const shares = (rec: Record<string, number>, total: number) =>
+  Object.entries(rec).sort((a, b) => b[1] - a[1]).map(([k, v]) => ({ k, v, pct: (v / total) * 100 }));
+---
+<Base title="The realm">
+  <header class="prose">
+    <h1>The realm</h1>
+    <p class="intro">The kingdom as each checkpoint save found it. Move the slider to step through the checkpoints.</p>
+  </header>
+
+  {rows.length === 0 ? <p>No checkpoints yet.</p> : (
+    <div class="scrubber ui">
+      <label for="cp">Checkpoint</label>
+      <input id="cp" type="range" min="0" max={last} value={last} step="1" list="cp-ticks" />
+      <datalist id="cp-ticks">{rows.map((_, i) => <option value={i}></option>)}</datalist>
+      <output for="cp" id="cp-out">{rows[last].s.data.date}</output>
+    </div>
+  )}
+
+  {rows.map(({ s, ruler, heir, regent, capital }, i) => {
+    const d = s.data;
+    return (
+      <section class="panel" data-index={i} hidden={i !== last} aria-label={`Checkpoint ${d.date}`}>
+        <h2><DualDate date={d.date} /></h2>
+        <p class="meta">Checkpoint {d.checkpoint}{d.note ? `. ${d.note}` : ""}</p>
+
+        <div class="grid">
+          <div class="block">
+            <h3>Court</h3>
+            <dl class="ui">
+              <dt>Sultan</dt><dd><a href={url(`/people/${d.ruler.id}/`)}>{ruler?.data.name}</a></dd>
+              <dt>Heir</dt><dd>{heir ? <a href={url(`/people/${heir.id}/`)}>{heir.data.name}</a> : "None named"}</dd>
+              {regent && <><dt>Regent</dt><dd><a href={url(`/people/${regent.id}/`)}>{regent.data.name}</a></dd></>}
+              <dt>Capital</dt><dd><a href={url(`/places/${d.capital.id}/`)}>{capital?.data.name}</a></dd>
+              <dt>Rank</dt><dd>{d.rank[0].toUpperCase() + d.rank.slice(1)}</dd>
+              <dt>Standing</dt><dd>{d.overlord ? `${d.overlord.type[0].toUpperCase() + d.overlord.type.slice(1)} of ${d.overlord.country}` : "Independent"}</dd>
+              <dt>Subjects</dt><dd>{d.subjects.length ? d.subjects.map((x) => `${x.country} (${x.type})`).join(", ") : "None"}</dd>
+            </dl>
+          </div>
+
+          <div class="block">
+            <h3>Treasury and arms</h3>
+            <dl class="ui">
+              <dt>Treasury</dt><dd>{nf.format(d.economy.treasury)} ducats</dd>
+              <dt>Monthly income</dt><dd>{d.economy.income}</dd>
+              <dt>Monthly expenses</dt><dd>{d.economy.expenses}</dd>
+              <dt>Debt</dt><dd>{nf.format(d.economy.debt)}</dd>
+              <dt>Levies</dt><dd>{nf.format(d.military.levies)}</dd>
+              <dt>Regiments</dt><dd>{d.military.regiments}</dd>
+              <dt>Ships</dt><dd>{d.military.ships}</dd>
+            </dl>
+          </div>
+
+          <div class="block">
+            <h3>People of the realm, {compact(d.population.total)}</h3>
+            <h4 class="ui">By culture</h4>
+            <ul class="shares ui">
+              {shares(d.population.cultures, d.population.total).map((r) => (
+                <li><span>{r.k}</span><span class="bar" style={`--w:${r.pct}%`}></span><span class="num">{r.pct.toFixed(1)}%</span></li>
+              ))}
+            </ul>
+            <h4 class="ui">By faith</h4>
+            <ul class="shares ui">
+              {shares(d.population.religions, d.population.total).map((r) => (
+                <li><span>{r.k}</span><span class="bar" style={`--w:${r.pct}%`}></span><span class="num">{r.pct.toFixed(1)}%</span></li>
+              ))}
+            </ul>
+          </div>
+
+          <div class="block">
+            <h3>Estates</h3>
+            <table>
+              <thead><tr><th>Estate</th><th class="num">Power</th><th class="num">Satisfaction</th></tr></thead>
+              <tbody>
+                {d.estates.map((e) => (
+                  <tr><td>{e.name}</td><td class="num">{e.power}%</td><td class="num">{e.satisfaction ?? "n/a"}</td></tr>
+                ))}
+              </tbody>
+            </table>
+            <p class="ui more"><a href={url("/estates/")}>The estates over time</a></p>
+          </div>
+        </div>
+      </section>
+    );
+  })}
+</Base>
+
+<style>
+  .intro { font-size: var(--step-1); line-height: 1.45; color: var(--ink-2); }
+  .scrubber {
+    position: sticky; top: 0; z-index: 3; background: var(--plaster);
+    display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 1rem;
+    padding-block: 1rem; border-bottom: 1px solid var(--rule); margin-top: 1.5rem;
+  }
+  .scrubber label { font-size: 0.9rem; color: var(--ink-2); }
+  .scrubber input { width: 100%; accent-color: var(--gold); }
+  .scrubber output { font-variant-numeric: tabular-nums; min-width: 6.5rem; text-align: right; }
+  .panel h2 { margin-top: 1.5rem; font-size: var(--step-1); }
+  .grid { display: grid; gap: 1.5rem 3rem; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); margin-top: 1.5rem; }
+  .block h3 { margin-top: 0; font-size: 1.15rem; }
+  h4 { font-size: 0.85rem; color: var(--muted); font-weight: 600; margin: 1rem 0 0.35rem; }
+  dl { display: grid; grid-template-columns: 9rem 1fr; gap: 0.35rem 1rem; margin: 0; font-size: 0.95rem; }
+  dt { color: var(--muted); }
+  dd { margin: 0; }
+  .shares { list-style: none; padding: 0; margin: 0; font-size: 0.9rem; }
+  .shares li { display: grid; grid-template-columns: 7rem 1fr 3.5rem; align-items: center; gap: 0.75rem; padding-block: 0.2rem; }
+  .bar { height: 8px; border-radius: 0 4px 4px 0; background: linear-gradient(var(--zellij), var(--zellij)) left / var(--w) 100% no-repeat; }
+  .shares .num { text-align: right; font-variant-numeric: tabular-nums; color: var(--ink-2); }
+  .more { font-size: 0.9rem; margin-top: 0.75rem; }
+</style>
+
+<script>
+  const input = document.querySelector<HTMLInputElement>("#cp");
+  const out = document.querySelector<HTMLOutputElement>("#cp-out");
+  const panels = [...document.querySelectorAll<HTMLElement>(".panel[data-index]")];
+  input?.addEventListener("input", () => {
+    const i = Number(input.value);
+    panels.forEach((p) => (p.hidden = Number(p.dataset.index) !== i));
+    const t = panels[i]?.querySelector("time")?.getAttribute("datetime");
+    if (out && t) out.textContent = t;
+  });
+</script>

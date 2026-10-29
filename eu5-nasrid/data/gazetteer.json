@@ -1,0 +1,8 @@
+[
+  { "id": "gharnata", "name": "Gharnāṭa", "nameGame": "Granada", "kind": "location", "held": [{ "from": "1337-04-01", "to": null }], "sample": true },
+  { "id": "malaqa", "name": "Mālaqa", "nameGame": "Málaga", "kind": "location", "held": [{ "from": "1337-04-01", "to": null }], "sample": true },
+  { "id": "al-mariyya", "name": "al-Mariyya", "nameGame": "Almería", "kind": "location", "held": [{ "from": "1337-04-01", "to": null }], "sample": true },
+  { "id": "wadi-ash", "name": "Wādī Āsh", "nameGame": "Guadix", "kind": "location", "held": [{ "from": "1337-04-01", "to": null }], "sample": true },
+  { "id": "tarifa", "name": "Ṭarīf", "nameGame": "Tarifa", "kind": "location", "held": [], "sample": true },
+  { "id": "qurtuba", "name": "Qurṭuba", "nameGame": "Córdoba", "kind": "location", "held": [], "sample": true }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "yusuf-i",
+    "name": "Abū al-Ḥajjāj Yūsuf I",
+    "nameGame": "Yusuf I",
+    "dynasty": "Nasrid",
+    "born": "1318-06-29",
+    "roles": ["sultan"],
+    "note": "Sample record.",
+    "sample": true
+  },
+  {
+    "id": "ridwan",
+    "name": "Riḍwān",
+    "dynasty": "",
+    "roles": ["ḥājib"],
+    "note": "Sample record.",
+    "sample": true
+  },
+  {
+    "id": "ibn-al-khatib",
+    "name": "Lisān al-Dīn ibn al-Khaṭīb",
+    "born": "1313-11-16",
+    "roles": ["secretary", "vizier", "chronicler"],
+    "note": "Sample record.",
+    "sample": true
+  }
+]

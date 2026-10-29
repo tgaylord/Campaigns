@@ -1,0 +1,22 @@
+{
+  "date": "1345-06-01", "checkpoint": "sample-1345", "note": "Sample snapshot.",
+  "ruler": "yusuf-i", "heir": null, "regent": null, "capital": "gharnata",
+  "rank": "duchy", "locations": 18,
+  "overlord": null, "subjects": [],
+  "population": { "total": 421000,
+    "cultures": { "Andalusi": 381000, "Castilian": 20000, "Sephardi": 13000, "Other": 7000 },
+    "religions": { "Sunni": 388000, "Catholic": 20000, "Jewish": 13000 } },
+  "estates": [
+    { "id": "crown", "name": "Crown", "power": 35, "satisfaction": null },
+    { "id": "nobles", "name": "ʿUmarāʾ", "power": 31, "satisfaction": 51 },
+    { "id": "clergy", "name": "ʿUlamāʾ", "power": 14, "satisfaction": 54 },
+    { "id": "burghers", "name": "Burghers", "power": 13, "satisfaction": 57 },
+    { "id": "peasants", "name": "Commoners", "power": 5, "satisfaction": 50 },
+    { "id": "dhimmi", "name": "Ḏimmī", "power": 2, "satisfaction": 53 }
+  ],
+  "economy": { "treasury": 118, "income": 10.6, "expenses": 9.7, "debt": 10 },
+  "military": { "levies": 6400, "regiments": 3, "ships": 5 },
+  "wars": [],
+  "strait": { "active": true, "influence": 4, "sovereignty": 46, "yearsSubject": 18 },
+  "sample": true
+}

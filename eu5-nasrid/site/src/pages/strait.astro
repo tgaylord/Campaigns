@@ -1,0 +1,66 @@
+---
+import Base from "../layouts/Base.astro";
+import LineChart from "../components/LineChart.astro";
+import DualDate from "../components/DualDate.astro";
+import StraitStatus from "../components/StraitStatus.astro";
+import { snapshotsSorted, eventsSorted, signed } from "../lib/site";
+
+const snaps = (await snapshotsSorted()).filter((s) => s.data.strait);
+const now = snaps.at(-1);
+const influence = snaps.map((s) => ({ date: s.data.date, value: s.data.strait!.influence }));
+const sovereignty = snaps.map((s) => ({ date: s.data.date, value: s.data.strait!.sovereignty }));
+const events = (await eventsSorted()).filter((e) => ["strait_change", "situation"].includes(e.data.type) || e.data.type === "war_declared" || e.data.type === "peace");
+---
+<Base title="The Strait">
+  <header class="prose">
+    <h1>The Battle for the Strait</h1>
+    <p class="intro">
+      Castile pulls from the north and the Marinid sultan from across the water. Granada wins by standing between
+      them on its own feet: holding its lands, keeping both powers' influence within bounds, and raising its own sovereignty.
+    </p>
+  </header>
+
+  {now && <StraitStatus snapshot={now.data} />}
+
+  {snaps.length < 2 ? <p>The charts need at least two checkpoints.</p> : (
+    <>
+      <h2>Influence over Granada</h2>
+      <p class="prose">Below zero, Castile has the upper hand at court; above zero, Morocco does. Granada needs it inside the shaded band.</p>
+      <LineChart title="Influence over Granada" series={[{ id: "influence", label: "Influence", color: "var(--s1)", points: influence }]}
+        yMin={-100} yMax={100} yTicks={[-100, -50, 0, 50, 100]}
+        bands={[{ from: -50, to: 50, label: "Granada's win zone" }]}
+        refs={[{ value: 0, label: "Even" }]} yEndLabels={{ low: "Castile", high: "Morocco" }} />
+
+      <h2>Granadan sovereignty</h2>
+      <p class="prose">How freely Granada governs itself. It has to be above 50 when the situation ends.</p>
+      <LineChart title="Granadan sovereignty" series={[{ id: "sovereignty", label: "Sovereignty", color: "var(--s3)", points: sovereignty }]}
+        yMin={0} yMax={100} yTicks={[0, 50, 100]} bands={[{ from: 50, to: 100, label: "Win zone" }]} />
+
+      <details class="table-view">
+        <summary>Show the numbers as a table</summary>
+        <table>
+          <thead><tr><th>Checkpoint</th><th class="num">Influence</th><th class="num">Sovereignty</th><th class="num">Years as a subject</th></tr></thead>
+          <tbody>
+            {snaps.map((s) => (
+              <tr><td>{s.data.date}</td><td class="num">{signed(s.data.strait!.influence)}</td><td class="num">{s.data.strait!.sovereignty}</td><td class="num">{s.data.strait!.yearsSubject}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </details>
+    </>
+  )}
+
+  <h2>What moved it</h2>
+  {events.length ? (
+    <ul class="moves">
+      {events.map((e) => <li><DualDate date={e.data.date} short /><span class="ui">{e.data.title}</span></li>)}
+    </ul>
+  ) : <p>No Strait events logged yet.</p>}
+</Base>
+
+<style>
+  .intro { font-size: var(--step-1); line-height: 1.45; color: var(--ink-2); }
+  .moves { list-style: none; padding: 0; margin: 0; max-width: 52rem; }
+  .moves li { display: grid; grid-template-columns: 1fr; gap: 0.1rem 2rem; padding-block: 0.6rem; border-top: 1px solid var(--rule); }
+  @media (min-width: 48rem) { .moves li { grid-template-columns: 20rem 1fr; } }
+</style>

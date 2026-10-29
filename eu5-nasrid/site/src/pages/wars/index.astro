@@ -1,0 +1,35 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCollection } from "astro:content";
+import { url } from "../../lib/site";
+import { hijriYear, parseDate } from "../../lib/hijri";
+
+const wars = (await getCollection("wars")).sort((a, b) => a.data.start.localeCompare(b.data.start));
+const years = (s: string, e: string | null) =>
+  `${parseDate(s).y}–${e ? parseDate(e).y : ""} (${hijriYear(s)}–${e ? hijriYear(e) : ""} AH)`;
+---
+<Base title="Wars">
+  <header class="prose">
+    <h1>Wars</h1>
+    <p class="intro">Every war the kingdom has fought, with its battles, sieges and the run of the war score.</p>
+  </header>
+  {wars.length ? (
+    <table class="ui">
+      <thead><tr><th>War</th><th>Years</th><th>Against</th><th>Outcome</th></tr></thead>
+      <tbody>
+        {wars.map((w) => (
+          <tr>
+            <td><a href={url(`/wars/${w.id}/`)}>{w.data.name}</a></td>
+            <td>{years(w.data.start, w.data.end)}</td>
+            <td>{w.data.enemies.join(", ")}</td>
+            <td>{w.data.outcome ?? "Ongoing"}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  ) : <p>No wars yet.</p>}
+</Base>
+
+<style>
+  .intro { font-size: var(--step-1); line-height: 1.45; color: var(--ink-2); }
+</style>

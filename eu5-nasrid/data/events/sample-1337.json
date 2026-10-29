@@ -1,0 +1,4 @@
+[
+  { "id": "sample-1337-start", "date": "1337-04-01", "type": "situation", "title": "The Battle for the Strait begins", "people": ["yusuf-i"], "places": ["gharnata"], "data": {}, "source": "sample", "sample": true },
+  { "id": "sample-1338-parias", "date": "1338-07-12", "type": "strait_change", "title": "Castile demands the parias", "data": { "influence": -8 }, "source": "sample", "sample": true }
+]

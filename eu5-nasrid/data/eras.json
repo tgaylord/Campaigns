@@ -1,0 +1,10 @@
+[
+  {
+    "id": "sample-era-strait",
+    "title": "Between the Lion and the Lions (sample era)",
+    "start": "1337-04-01",
+    "end": null,
+    "summary": "Sample era for the site scaffold. Granada, a tributary of Castile, between the Castilian crown and the Marinid sultan.",
+    "sample": true
+  }
+]

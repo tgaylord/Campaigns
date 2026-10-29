@@ -1,0 +1,10 @@
+---
+/** A game date shown the chronicle's way: Hijri first, the Western date beside it. */
+import { formatHijri, formatWestern } from "../lib/hijri";
+
+interface Props { date: string; short?: boolean }
+const { date, short = false } = Astro.props;
+---
+<time datetime={date} class="dual-date">
+  <span class="date-hijri">{formatHijri(date)}{short ? "" : " AH"}</span>{" "}<span class="date-western">({formatWestern(date)})</span>
+</time>

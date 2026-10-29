@@ -1,0 +1,33 @@
+---
+import Base from "../../layouts/Base.astro";
+import DualDate from "../../components/DualDate.astro";
+import Mentions from "../../components/Mentions.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  return (await getCollection("people")).map((person) => ({ params: { id: person.id }, props: { person } }));
+}
+const { person } = Astro.props;
+const p = person.data;
+---
+<Base title={p.name}>
+  <header class="prose">
+    <h1>{p.name}</h1>
+    {p.roles.length > 0 && <p class="roles">{p.roles.join(", ")}</p>}
+  </header>
+  <dl class="facts ui">
+    {p.dynasty && <div><dt>House</dt><dd>{p.dynasty}</dd></div>}
+    {p.born && <div><dt>Born</dt><dd><DualDate date={p.born} /></dd></div>}
+    {p.died && <div><dt>Died</dt><dd><DualDate date={p.died} /></dd></div>}
+    {p.nameGame && p.nameGame !== p.name && <div><dt>Name in the game</dt><dd>{p.nameGame}</dd></div>}
+  </dl>
+  {p.note && <p class="prose">{p.note}</p>}
+  <Mentions kind="people" id={person.id} />
+</Base>
+
+<style>
+  .roles { font-size: var(--step-1); color: var(--ink-2); margin-top: -0.25rem; }
+  .facts { display: grid; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); gap: 1rem 2rem; margin: 1.5rem 0; }
+  .facts dt { font-size: 0.8rem; color: var(--muted); }
+  .facts dd { margin: 0.15rem 0 0; }
+</style>
