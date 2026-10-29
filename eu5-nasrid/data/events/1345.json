@@ -98,5 +98,25 @@
    }
   },
   "source": "checkpoint 1345-01-27"
+ },
+ {
+  "id": "1345-07-23-betrothal-tunis",
+  "date": "1345-07-23",
+  "type": "diplomacy",
+  "title": "A Naṣrid betrothal is agreed with the Ḥafṣids of Tunis",
+  "data": {
+   "with": "TUN"
+  },
+  "source": "checkpoint 1346-08-01"
+ },
+ {
+  "id": "1345-09-08-betrothal-ghana",
+  "date": "1345-09-08",
+  "type": "diplomacy",
+  "title": "A second betrothal is agreed, with Ghana beyond the desert",
+  "data": {
+   "with": "GHA"
+  },
+  "source": "checkpoint 1346-08-01"
  }
 ]

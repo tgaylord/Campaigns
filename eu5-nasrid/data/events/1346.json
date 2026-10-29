@@ -1,0 +1,87 @@
+[
+ {
+  "id": "1346-08-01-debt",
+  "date": "1346-08-01",
+  "type": "estate_change",
+  "title": "The debt is mostly paid: 122 ducats remain by Trent's reading, four loans in the save",
+  "data": {
+   "debt": {
+    "from": 287.8,
+    "to": 95.7,
+    "trent": 122
+   },
+   "loans": {
+    "from": 12,
+    "to": 4
+   }
+  },
+  "source": "Trent's account; checkpoint 1346-08-01"
+ },
+ {
+  "id": "1346-08-01-stability",
+  "date": "1346-08-01",
+  "type": "player_note",
+  "people": [
+   "yusuf-i"
+  ],
+  "title": "The realm begins to steady as the reforms gather power to the crown: stability back up to 10",
+  "data": {
+   "stability": {
+    "from": 7,
+    "to": 10
+   }
+  },
+  "source": "Trent's account; checkpoint 1346-08-01"
+ },
+ {
+  "id": "1346-08-01-black-death",
+  "date": "1346-08-01",
+  "type": "situation",
+  "title": "The Black Death: a great pestilence breaks out at Yaik, in the lands of the Golden Horde, and rumours of it run west",
+  "data": {
+   "situation": "black_death",
+   "origin": "yaik",
+   "originOwner": "GLH",
+   "disease": "bubonic_plague"
+  },
+  "source": "Trent's account; checkpoint 1346-08-01"
+ },
+ {
+  "id": "1346-08-01-sovereignty",
+  "date": "1346-08-01",
+  "type": "strait_change",
+  "title": "Sovereignty slips below 50 for the first time, to 48.6; influence drifts back toward Castile, −6.5",
+  "data": {
+   "sovereignty": {
+    "from": 50.15,
+    "to": 48.65
+   },
+   "influence": {
+    "from": -3.6,
+    "to": -6.5
+   }
+  },
+  "source": "checkpoint 1346-08-01"
+ },
+ {
+  "id": "1346-08-01-conversion",
+  "date": "1346-08-01",
+  "type": "player_note",
+  "places": [
+   "balansiyya",
+   "jumalla"
+  ],
+  "title": "Balansiyya now has more Muslims than Christians, 92,000 to 90,000; Mursiyya is nineteen parts in twenty Muslim",
+  "data": {
+   "VAL": {
+    "sunni": 92275,
+    "catholic": 90110
+   },
+   "MUC": {
+    "sunni": 8496,
+    "catholic": 567
+   }
+  },
+  "source": "checkpoint 1346-08-01"
+ }
+]
