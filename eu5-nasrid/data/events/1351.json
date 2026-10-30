@@ -135,17 +135,18 @@
   "date": "1351-08-09",
   "type": "player_note",
   "people": [
-   "yusuf-i"
+   "yusuf-i",
+   "faraj-ibn-ismail"
   ],
   "places": [
    "gharnata"
   ],
-  "title": "The amir sets out east to make the Hajj, half a year ahead of the pilgrimage season in Dhū al-Ḥijja (about 2 February 1352), for the road is long. A regency governs in his absence; the caravan is stocked and guarded, and it bears the maḥmal in all manner of splendour",
+  "title": "The amir sets out east to make the Hajj, half a year ahead of the pilgrimage season in Dhū al-Ḥijja (about 2 February 1352), for the road is long. His elder brother Faraj ibn Ismāʿīl governs as regent in his absence; the caravan is stocked and guarded, and it bears the maḥmal in all manner of splendour",
   "data": {
    "departs": "1351-08-09",
    "hajjDay": "1352-02-02",
-   "regency": true
+   "regent": "faraj-ibn-ismail"
   },
-  "source": "Trent's account"
+  "source": "Trent's account. The game names a Naṣr al-Stijjai as regent; the chronicle makes Faraj the regent at Trent's direction"
  }
 ]
