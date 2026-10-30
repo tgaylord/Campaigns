@@ -1,0 +1,24 @@
+[
+ {
+  "id": "1359-03-15-castile-aragon-war",
+  "date": "1359-03-15",
+  "type": "diplomacy",
+  "people": [
+   "yusuf-i"
+  ],
+  "title": "The Christian crowns turn on each other: Qashtāla and Portugal march east into Arghūn, which has Savoy and Sicily beside it. The court sees in it the fruit of its long work to split the Iberians, and an opportunity",
+  "data": {
+   "attackers": [
+    "CAS",
+    "POR"
+   ],
+   "defenders": [
+    "ARA",
+    "SAV",
+    "SIC"
+   ],
+   "granada": "not involved"
+  },
+  "source": "Trent's account"
+ }
+]
