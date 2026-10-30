@@ -38,5 +38,21 @@
    "event": "black_death.1020 (Plague Scapegoats)"
   },
   "source": "Trent's account (after the plague's arrival; the exact day isn't given)"
+ },
+ {
+  "id": "1348-06-01-assassination-attempt",
+  "date": "1348-06-01",
+  "type": "player_note",
+  "people": [
+   "yusuf-i"
+  ],
+  "title": "After prayers at El-Mnṣura a madman falls on the amir with a blade. Yūsuf survives, scarred; some at court whisper that his guards were drawn away by those who oppose his rule",
+  "data": {
+   "event": "Assassination of ʿAmīr Yūsuf Nasrid",
+   "outcome": "survives, gains the Scarred trait",
+   "sovereignty": -15,
+   "place": "El-Mnṣura (the game's spelling)"
+  },
+  "source": "Trent's account and his screenshot of the event"
  }
 ]
