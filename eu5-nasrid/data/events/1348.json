@@ -1,0 +1,21 @@
+[
+ {
+  "id": "1348-05-15-black-death-arrives",
+  "date": "1348-05-15",
+  "type": "situation",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "title": "The Black Death arrives: the pestilence rumoured out of the east two years before comes to the realm, in the middle of the war with the three crowns",
+  "data": {
+   "situation": "black_death",
+   "disease": "bubonic_plague",
+   "hospitalsBuilding": [
+    "granada",
+    "malaga",
+    "almeria"
+   ]
+  },
+  "source": "Trent's account (the year follows from the saves: in September 1347 the plague had touched nowhere in Iberia)"
+ }
+]
