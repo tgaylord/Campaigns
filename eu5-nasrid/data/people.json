@@ -688,7 +688,8 @@
    "mil": 80
   },
   "traits": [],
-  "note": "King of Castile, Granada's overlord; husband of Maria, queen of Portugal."
+  "note": "King of Castile, Granada's overlord; husband of Maria, queen of Portugal. He died on campaign on 29 March 1366, a week before the peace that freed Granada (save of 13 September 1370), and his son Jerónimo succeeded him.",
+  "died": "1366-03-29"
  },
  {
   "id": "maria-of-portugal",
@@ -708,7 +709,8 @@
    "mil": 20
   },
   "traits": [],
-  "note": "Queen of Portugal in her own right and consort of Alfonso XI of Castile; their son Peter is heir to both crowns."
+  "note": "Queen of Portugal in her own right (from 29 January 1342) and consort of Alfonso XI of Castile, the two crowns joined by their marriage. She died of a sudden illness on 4 October 1367, and her son Jerónimo, already king of Castile, inherited Portugal (save of 13 September 1370).",
+  "died": "1367-10-04"
  },
  {
   "id": "peter-of-castile",
@@ -729,7 +731,8 @@
    "mil": 28
   },
   "traits": [],
-  "note": "Son of Alfonso XI and Queen Maria, heir to both Castile and Portugal (the 20 May 1343 save)."
+  "note": "Son of Alfonso XI and Queen Maria, heir to both Castile and Portugal (the 20 May 1343 save). He died of a fever on 11 August 1351, and the double inheritance passed in time to his younger brother Jerónimo.",
+  "died": "1351-08-11"
  },
  {
   "id": "peter-of-portugal",
@@ -1154,5 +1157,242 @@
    "level_headed"
   ],
   "note": "The Marīnid general of the 1369 counterattack. He relieved Cádiz and threw Khālid back before it (2 and 26 June 1369). Then he marched on the heart of the realm and was stopped at Antequera (15 October 1369)."
+ },
+ {
+  "id": "jeronimo-of-castile",
+  "name": "Jerónimo of Castile",
+  "nameGame": "Jerónimo",
+  "gameId": 33577055,
+  "dynasty": "Castilian royal house",
+  "born": "1343-01-15",
+  "father": "alfonso-xi",
+  "mother": "maria-of-portugal",
+  "roles": [
+   "king of Castile",
+   "king of Portugal"
+  ],
+  "stats": {
+   "adm": 53,
+   "dip": 42,
+   "mil": 42
+  },
+  "traits": [
+   "worldly"
+  ],
+  "note": "King of Castile from his father's death on 29 March 1366, and of Portugal from his mother's on 4 October 1367: the two crowns in a personal union, each keeping its own government. In September 1370 he had no army in the field (save of 13 September 1370)."
+ },
+ {
+  "id": "fernando-of-castile",
+  "name": "Fernando of Castile",
+  "nameGame": "Fernando",
+  "gameId": 52443,
+  "dynasty": "Castilian royal house",
+  "born": "1364-10-11",
+  "father": "jeronimo-of-castile",
+  "roles": [
+   "heir of Castile and Portugal"
+  ],
+  "traits": [
+   "child_gallant"
+  ],
+  "note": "Jerónimo's son and heir, six years old in September 1370."
+ },
+ {
+  "id": "joan-of-aragon",
+  "name": "Joan of Aragon",
+  "nameGame": "Joan",
+  "gameId": 37633,
+  "dynasty": "House of Barcelona",
+  "born": "1349-11-02",
+  "roles": [
+   "king of Aragon",
+   "king of Sicily"
+  ],
+  "stats": {
+   "adm": 48,
+   "dip": 61,
+   "mil": 53
+  },
+  "traits": [
+   "greedy"
+  ],
+  "note": "King of Aragon and of Sicily (the two crowns in a union since 1343) from 24 April 1368; the game gives him the Catalan form of Juan. His heir in 1370 is his infant daughter Violant."
+ },
+ {
+  "id": "abu-ishaq-ibrahim",
+  "name": "Ibrāhīm II of Tūnis",
+  "nameArabic": "إبراهيم",
+  "nameGame": "Ibrahim",
+  "gameId": 3338,
+  "dynasty": "Ḥafṣid",
+  "born": "1336-01-01",
+  "roles": [
+   "sultan of Tunis"
+  ],
+  "stats": {
+   "adm": 34,
+   "dip": 32,
+   "mil": 80
+  },
+  "traits": [
+   "industrious",
+   "battlefield_medic",
+   "sinner"
+  ],
+  "note": "Ḥafṣid sultan of Tūnis, in his current reign from 6 November 1358. In 1370 he ruled the third Regional Power of the Maghrib, with nine subjects, a realm close to disorder (stability near zero), and the Marīnids' fief of Tlemcen as his rival."
+ },
+ {
+  "id": "bolot-mamluk",
+  "name": "Būlād",
+  "nameArabic": "بولاد",
+  "nameGame": "Bolot",
+  "gameId": 32892,
+  "dynasty": "Baḥrī",
+  "born": "1344-08-29",
+  "roles": [
+   "Mamlūk sultan of Egypt"
+  ],
+  "stats": {
+   "adm": 37,
+   "dip": 70,
+   "mil": 37
+  },
+  "traits": [
+   "loose_lips"
+  ],
+  "note": "Sultan of Egypt from the death of his father Jamāl on 3 October 1368, and half-brother of Aiman, Saʿd's Mamlūk wife: Granada's one ally is ruled by the sultan's brother-in-law. In 1370 his realm was the world's seventh power, with some 60,000 men under arms (save of 13 September 1370)."
+ },
+ {
+  "id": "muhammad-ottoman",
+  "name": "Muḥammad of the Ottomans",
+  "nameArabic": "محمد",
+  "nameGame": "Muhammad",
+  "gameId": 36567,
+  "dynasty": "Ottoman",
+  "born": "1348-09-15",
+  "roles": [
+   "Ottoman sultan"
+  ],
+  "stats": {
+   "adm": 83,
+   "dip": 38,
+   "mil": 46
+  },
+  "traits": [
+   "craven",
+   "offensive_planner"
+  ],
+  "note": "Ottoman sultan from 15 September 1364, at sixteen, ruling from Constantinople. In 1370 he was at war with the Anatolian beyliks, with 27,000 men under arms and 73 ships; his brother Murād is his heir."
+ },
+ {
+  "id": "jean-of-france",
+  "name": "Jean II of France",
+  "nameGame": "Jehan",
+  "gameId": 924,
+  "dynasty": "Valois",
+  "born": "1319-04-26",
+  "roles": [
+   "king of France"
+  ],
+  "stats": {
+   "adm": 49,
+   "dip": 49,
+   "mil": 29
+  },
+  "traits": [
+   "obsessive_perfectionist",
+   "malevolent",
+   "greedy"
+  ],
+  "note": "King of France from 17 May 1342. By 1370 England's vassals hold much of the old kingdom, his own realm is in disorder (stability below zero), and Castile is his rival."
+ },
+ {
+  "id": "edward-of-england",
+  "name": "Edward IV of England",
+  "nameGame": "Edward",
+  "gameId": 98,
+  "dynasty": "Plantagenet",
+  "born": "1330-06-15",
+  "roles": [
+   "king of England"
+  ],
+  "stats": {
+   "adm": 55,
+   "dip": 51,
+   "mil": 67
+  },
+  "traits": [
+   "embezzler",
+   "battlefield_medic",
+   "silver_tongue"
+  ],
+  "note": "King of England from 18 July 1370. His crown holds more land through its subjects (Wales, Ireland, Aquitaine, Burgundy, Flanders, Brittany and more) than in England itself."
+ },
+ {
+  "id": "charles-of-bohemia",
+  "name": "Charles of Bohemia, Emperor",
+  "nameGame": "Charles",
+  "gameId": 6172,
+  "dynasty": "Luxembourg",
+  "born": "1316-05-22",
+  "roles": [
+   "king of Bohemia",
+   "Holy Roman Emperor"
+  ],
+  "stats": {
+   "adm": 90,
+   "dip": 90,
+   "mil": 85
+  },
+  "traits": [
+   "lawgiver",
+   "bold_fighter",
+   "inspirational_leader_general",
+   "just"
+  ],
+  "note": "King of Bohemia from 31 May 1340 and Emperor of the 319 members of the Empire. The ablest ruler of Christendom by the game's measure."
+ },
+ {
+  "id": "robert-of-anjou",
+  "name": "Robert of Anjou",
+  "nameGame": "Róbert",
+  "gameId": 16814624,
+  "dynasty": "Anjou",
+  "born": "1351-01-05",
+  "roles": [
+   "king of Hungary",
+   "king of Naples"
+  ],
+  "stats": {
+   "adm": 37,
+   "dip": 65,
+   "mil": 42
+  },
+  "traits": [
+   "scholar"
+  ],
+  "note": "King of Hungary, Naples and Croatia, three crowns in one union, from 5 January 1367. Naples leads the Guelph league of Italy; in 1370 his crowns are at war with Halych and Volhynia."
+ },
+ {
+  "id": "pope-abundius",
+  "name": "Pope Abundius",
+  "nameGame": "Bondio",
+  "gameId": 55520,
+  "born": "1310-10-22",
+  "roles": [
+   "Pope"
+  ],
+  "stats": {
+   "adm": 18,
+   "dip": 48,
+   "mil": 50
+  },
+  "traits": [
+   "inspiring_leader",
+   "obsessive_perfectionist",
+   "well_advised",
+   "naive"
+  ],
+  "note": "Pope from 1 November 1367, sitting at Avignon. Castile's one ally in 1370."
  }
 ]

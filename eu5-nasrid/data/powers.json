@@ -1,0 +1,82 @@
+{
+ "circles": [
+  {
+   "id": "peninsula",
+   "name": "The Peninsula",
+   "nameArabic": "الجزيرة",
+   "note": "The kingdoms of the north and the ṭāʾifas of the frontier: the marches of Book V.",
+   "tags": [
+    "CAS",
+    "POR",
+    "ARA",
+    "NAV",
+    "VAL",
+    "MUC",
+    "ALV"
+   ],
+   "ring": 1
+  },
+  {
+   "id": "maghrib",
+   "name": "The Maghrib",
+   "nameArabic": "المغرب",
+   "note": "The Muslim West across the water: the Marīnids twice beaten, Tlemcen their fief, the Ḥafṣids of Tunis.",
+   "tags": [
+    "MOR",
+    "TLE",
+    "TUN"
+   ],
+   "ring": 2
+  },
+  {
+   "id": "mashriq",
+   "name": "The Mashriq",
+   "nameArabic": "المشرق",
+   "note": "The Muslim East: the Mamlūk sultan, Granada's one ally, and the Ottomans who have taken Constantinople.",
+   "tags": [
+    "MAM",
+    "TUR"
+   ],
+   "ring": 4
+  },
+  {
+   "id": "franks",
+   "name": "The Lands of the Franks",
+   "nameArabic": "بلاد الإفرنج",
+   "note": "Latin Christendom beyond the Pyrenees and across the sea: the war of France and England, the Emperor, the Pope and the cities of Italy.",
+   "tags": [
+    "FRA",
+    "ENG",
+    "BOH",
+    "HUN",
+    "PAP",
+    "NAP",
+    "SIC",
+    "GEN",
+    "VEN",
+    "MLO",
+    "FLO",
+    "PRO",
+    "BYZ"
+   ],
+   "ring": 3
+  },
+  {
+   "id": "sudan",
+   "name": "The Land of the Blacks",
+   "nameArabic": "بلاد السودان",
+   "note": "Beyond the Sahara, where the gold comes from: the mansā of Mālī.",
+   "tags": [
+    "MAL"
+   ],
+   "ring": 4
+  }
+ ],
+ "farCapitals": {
+  "_note": "Capitals beyond the wide chart's frame, in its coordinates (game pixels from its top-left corner), measured from the game's locations.png.",
+  "old_manding_province": [
+   240,
+   2524
+  ]
+ }
+}

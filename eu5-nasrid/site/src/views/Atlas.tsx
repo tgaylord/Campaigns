@@ -8,6 +8,7 @@ import {
 import type { Place, CampaignEvent } from "../lib/data";
 import { gameMap, keyLabel, MAP_W, MAP_H } from "../lib/map";
 import { CheckpointSelect } from "../components/bits";
+import SeaChart, { SeaFolio } from "./SeaChart";
 import "./atlas.css";
 
 /* ------------------------------------------------------------------ setup */
@@ -160,6 +161,9 @@ export default function Atlas() {
   const [opened, setOpened] = useState(false);
   const [hover, setHover] = useState<{ prov: string; loc?: string; x: number; y: number } | null>(null);
   const [playing, setPlaying] = useState(false);
+  /** the Middle Sea: the wide chart of the powers, drawn in its own frame */
+  const [sea, setSea] = useState(() => typeof window !== "undefined" && new URLSearchParams(window.location.search).get("view") === "sea");
+  const [seaSel, setSeaSel] = useState<string | null>(null);
   const snap = snapshots[i];
   const prevSnap = i > 0 ? snapshots[i - 1] : undefined;
   const layer = useLayer(snap.id);
@@ -372,8 +376,9 @@ export default function Atlas() {
   })() : null;
 
   return (
-    <div className={`atlas lens-${lens} ${sel ? "has-sel" : ""} ${drawer ? "has-drawer" : ""}`} onMouseLeave={() => setHover(null)}>
-      <svg ref={svgRef} className="chart" viewBox={`${vx} ${vy} ${vw} ${vh}`} preserveAspectRatio="xMidYMid slice" role="img"
+    <div className={`atlas lens-${lens} ${sel && !sea ? "has-sel" : ""} ${drawer ? "has-drawer" : ""} ${sea ? "at-sea" : ""}`} onMouseLeave={() => setHover(null)}>
+      {sea && <SeaChart snapId={snap.id} selected={seaSel} onSelect={(t) => { setSeaSel(t); if (t) setDrawer(true); }} />}
+      <svg ref={svgRef} className="chart" style={sea ? { display: "none" } : undefined} viewBox={`${vx} ${vy} ${vw} ${vh}`} preserveAspectRatio="xMidYMid slice" role="img"
         aria-label={`The game map at ${western(snap.date)}, coloured by ${LENSES[lens].label.toLowerCase()}`}
         onPointerDown={onDown} onPointerMove={onMove} onPointerUp={onUp} onPointerCancel={onUp}
         onDoubleClick={(e) => zoomAt(e.clientX, e.clientY, 0.55)}
@@ -536,7 +541,7 @@ export default function Atlas() {
         ))}
       </svg>
 
-      {hover && hoverInfo && !drag.current?.moved && !(sel && hover.prov === sel.prov && !hover.loc) && (
+      {!sea && hover && hoverInfo && !drag.current?.moved && !(sel && hover.prov === sel.prov && !hover.loc) && (
         <div className="hovercard ui" style={{ left: hover.x + 16, top: hover.y + 14 }} role="tooltip">
           {hoverInfo.name.ar && <div className="ar">{hoverInfo.name.ar}</div>}
           <div className="nm">{hoverInfo.name.tr}{!hover.loc && <span className="kind"> · province</span>}</div>
@@ -566,27 +571,30 @@ export default function Atlas() {
         </div>
       </section>
 
-      <div className="lenses ui" role="group" aria-label="Colour the land by">
+      {!sea && <div className="lenses ui" role="group" aria-label="Colour the land by">
         {(Object.keys(LENSES) as LensId[]).map((l) => (
           <button key={l} type="button" aria-pressed={lens === l} onClick={() => setLens(l)}>
             <span className="ar">{LENSES[l].ar}</span>{LENSES[l].label}
           </button>
         ))}
-      </div>
+      </div>}
 
       <div className="voyage ui" role="group" aria-label="Where to look">
         {(Object.keys(VIEWS) as ViewId[]).map((v) => (
-          <button key={v} type="button" onClick={() => { setSel(null); flyTo(VIEWS[v].box, 700); }} title={VIEWS[v].label}>
+          <button key={v} type="button" onClick={() => { setSel(null); if (sea) { setSea(false); setVb(VIEWS[v].box); } else flyTo(VIEWS[v].box, 700); }} title={VIEWS[v].label}>
             <span className="ar">{VIEWS[v].ar}</span><span className="lt">{VIEWS[v].label}</span>
           </button>
         ))}
-        <span className="zoom">
+        <button type="button" className="to-sea" aria-pressed={sea} onClick={() => { setSel(null); setHover(null); setSea(true); }} title="The Middle Sea: the powers from Lisbon to Alexandria">
+          <span className="ar">بحر الروم</span><span className="lt">The Middle Sea</span>
+        </button>
+        {!sea && <span className="zoom">
           <button type="button" aria-label="Zoom in" onClick={() => { const r = svgRef.current!.getBoundingClientRect(); zoomAt(r.left + r.width / 2, r.top + r.height / 2, 0.6); }}>+</button>
           <button type="button" aria-label="Zoom out" onClick={() => { const r = svgRef.current!.getBoundingClientRect(); zoomAt(r.left + r.width / 2, r.top + r.height / 2, 1.6); }}>−</button>
-        </span>
+        </span>}
       </div>
 
-      {lens !== "realms" && (
+      {lens !== "realms" && !sea && (
         <div className="legend ui" aria-label="Legend">
           <span className="t">{LEGEND[lens].title}</span>
           <span className="ramp">{LEGEND[lens].ramp.map((c, n) => <i key={n} style={{ background: c }} />)}</span>
@@ -597,11 +605,13 @@ export default function Atlas() {
       )}
 
       <button className="drawer-toggle ui" type="button" aria-expanded={drawer} aria-controls="realm-drawer" onClick={() => setDrawer(!drawer)}>
-        {drawer ? "Hide the folio" : sel ? "Open the folio" : "The state of the realm"}
+        {drawer ? "Hide the folio" : sea ? "The powers" : sel ? "Open the folio" : "The state of the realm"}
       </button>
       {drawer && (
-        <aside id="realm-drawer" className="drawer ui" aria-label={sel ? "The province" : "The state of the realm"}>
-          {sel ? (
+        <aside id="realm-drawer" className="drawer ui" aria-label={sea ? "The powers of the Middle Sea" : sel ? "The province" : "The state of the realm"}>
+          {sea ? (
+            <SeaFolio snapId={snap.id} selected={seaSel} onSelect={setSeaSel} />
+          ) : sel ? (
             <ProvinceFolio prov={sel.prov} loc={sel.loc} snapId={snap.id} date={snap.date} since={since}
               layer={layer} prevLayer={prevLayer} owners={owners} subj={subj} realmFill={realmFill}
               onLoc={(lk) => setSel({ prov: sel.prov, loc: lk })} onClose={() => setSel(null)} />
@@ -620,8 +630,10 @@ export default function Atlas() {
           {snapshots.length > 1 && <CheckpointSelect value={i} onChange={(n) => { setPlaying(false); setI(n); }} />}
         </div>
         <p className="caption ui">
-          Drag to move, scroll or pinch to zoom, and click a province to split it into its towns.
-          {pins.length > 0 && ` Crossed swords mark the ${pins.length} battle${pins.length > 1 ? "s" : ""} since the last checkpoint.`}
+          {sea ? "The Middle Sea, from Lisbon to Alexandria: every realm at this checkpoint, the powers the dīwān follows in their own colours and Granada in gold. Click a realm for its dispatch." : <>
+            Drag to move, scroll or pinch to zoom, and click a province to split it into its towns.
+            {pins.length > 0 && ` Crossed swords mark the ${pins.length} battle${pins.length > 1 ? "s" : ""} since the last checkpoint.`}
+          </>}
         </p>
       </div>
     </div>

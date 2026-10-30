@@ -111,5 +111,103 @@
   "nameChronicle": "the Ṭāʾifa of al-Gharb",
   "nameArabic": "طائفة الغرب",
   "color": "#4f7a5a"
+ },
+ {
+  "tag": "MAM",
+  "name": "Egypt",
+  "nameChronicle": "the Mamlūks of Miṣr",
+  "nameArabic": "مصر",
+  "color": "#b07a3f"
+ },
+ {
+  "tag": "TUR",
+  "name": "Ottomans",
+  "nameChronicle": "Banū ʿUthmān",
+  "nameArabic": "بنو عثمان",
+  "color": "#6e9c5a"
+ },
+ {
+  "tag": "ENG",
+  "name": "England",
+  "nameChronicle": "Inkiltira",
+  "nameArabic": "إنكلترة",
+  "color": "#a83a4a"
+ },
+ {
+  "tag": "BOH",
+  "name": "Bohemia",
+  "nameChronicle": "Buwayma",
+  "nameArabic": "بويمة",
+  "color": "#8a7a3a"
+ },
+ {
+  "tag": "HUN",
+  "name": "Hungary",
+  "nameChronicle": "Ankariyya",
+  "nameArabic": "أنكرية",
+  "color": "#7a5a8a"
+ },
+ {
+  "tag": "PAP",
+  "name": "Papal States",
+  "nameChronicle": "the Pope of Rūmiya",
+  "nameArabic": "البابا",
+  "color": "#d9d2c0"
+ },
+ {
+  "tag": "NAP",
+  "name": "Naples",
+  "nameChronicle": "Nābulī",
+  "nameArabic": "نابلي",
+  "color": "#4f6f9a"
+ },
+ {
+  "tag": "SIC",
+  "name": "Sicily",
+  "nameChronicle": "Ṣiqilliya",
+  "nameArabic": "صقلية",
+  "color": "#9a8f45"
+ },
+ {
+  "tag": "VEN",
+  "name": "Venice",
+  "nameChronicle": "al-Bunduqiyya",
+  "nameArabic": "البندقية",
+  "color": "#3f8f86"
+ },
+ {
+  "tag": "MLO",
+  "name": "Milan",
+  "nameChronicle": "Mīlān",
+  "nameArabic": "ميلان",
+  "color": "#7b6aa8"
+ },
+ {
+  "tag": "FLO",
+  "name": "Florence",
+  "nameChronicle": "Fulūrinsa",
+  "nameArabic": "فلورنسة",
+  "color": "#b0504a"
+ },
+ {
+  "tag": "PRO",
+  "name": "Provence",
+  "nameChronicle": "Brūfāns",
+  "nameArabic": "بروفانس",
+  "color": "#6a9aa0"
+ },
+ {
+  "tag": "BYZ",
+  "name": "Byzantium",
+  "nameChronicle": "the Rūm",
+  "nameArabic": "الروم",
+  "color": "#6b3f7a"
+ },
+ {
+  "tag": "MAL",
+  "name": "Mali",
+  "nameChronicle": "Mālī",
+  "nameArabic": "مالي",
+  "color": "#c9a86a"
  }
 ]

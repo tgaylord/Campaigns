@@ -264,3 +264,52 @@
 @media (max-width: 52rem) { .atlas.has-sel .medallion { opacity: 1; transform: none; } .atlas.has-sel .medallion a { pointer-events: auto; } }
 
 .atlas .grain path { fill: none; stroke: #5a4630; stroke-opacity: 0.4; stroke-width: 0.7; stroke-dasharray: 3 2; vector-effect: non-scaling-stroke; pointer-events: none; }
+
+/* ---------------------------------------------------------- the Middle Sea */
+.atlas .voyage .to-sea[aria-pressed="true"] { background: rgba(212, 171, 85, 0.18); color: var(--plaster); }
+.atlas .sea-chart .sea-realm { fill-opacity: 0.55; cursor: pointer; transition: fill-opacity 0.15s; }
+.atlas .sea-chart .sea-realm.followed { fill-opacity: 0.42; }
+.atlas .sea-chart .sea-realm.ours { fill-opacity: 0.7; }
+.atlas .sea-chart .sea-realm.hot { fill-opacity: 0.85; }
+.atlas .sea-chart .sea-realm.sel { fill-opacity: 0.9; }
+.atlas .sea-chart .sea-provs path { fill: none; stroke: #5a4630; stroke-opacity: 0.18; pointer-events: none; }
+.atlas .sea-chart .realm-edge { fill: none; stroke-opacity: 0.85; stroke-linejoin: round; pointer-events: none; }
+.atlas .sea-chart .realm-edge.sel { stroke-opacity: 1; }
+.atlas .sea-chart .realm-edge.ours { stroke: #f2d58e; stroke-opacity: 1; }
+.atlas .sea-chart .realm-edge.ours.subj { stroke: #b88d30; }
+.atlas .sea-chart .coast-shadow { fill: none; }
+.atlas .sea-chart .realm-label.other .tr { fill: #5a4630; fill-opacity: 0.62; font-style: italic; }
+.atlas .sea-chart .realm-label.ours .ar { fill: #6b4a12; fill-opacity: 0.9; }
+.atlas .sea-chart .realm-label .tr { paint-order: stroke; stroke: #ecdfc0; stroke-opacity: 0.55; stroke-width: 0.22em; }
+.atlas .sea-chart .sea-capital path { fill: #e3d2ad; stroke: #3a2814; stroke-width: 1.3; }
+.atlas .sea-chart .sea-capital.ours path { fill: #d4ab55; stroke: #3a2208; }
+.atlas .sea-tools {
+  position: absolute; left: 50%; transform: translateX(-50%); top: 1.5rem; z-index: 3; display: flex;
+  border: 1px solid rgba(212, 171, 85, 0.5); border-radius: 3px; overflow: hidden; background: rgba(11, 17, 40, 0.86);
+}
+.atlas .sea-tools button { font: inherit; font-size: 0.82rem; color: var(--mist); background: transparent; border: 0; padding: 0.45rem 0.85rem; cursor: pointer; }
+.atlas .sea-tools button + button, .atlas .sea-tools .zoom { border-left: 1px solid rgba(212, 171, 85, 0.3); }
+.atlas .sea-tools .zoom { display: flex; }
+.atlas .sea-tools .zoom button { font-size: 1.1rem; color: var(--gilt-hi); padding: 0 0.75rem; }
+.atlas .sea-tools button:hover { background: rgba(212, 171, 85, 0.1); color: var(--plaster); }
+.atlas.at-sea .medallion { opacity: 0.0; pointer-events: none; }
+.atlas .sea-folio { position: relative; }
+.atlas .sea-folio .close { position: absolute; right: 0; top: -0.3rem; z-index: 1; background: none; border: 0; color: var(--mist); font-size: 1.4rem; cursor: pointer; }
+.atlas .sea-folio h2 { margin-bottom: 0.4rem; }
+.atlas .sea-ladder { list-style: none; margin: 0.75rem 0 0; padding: 0; }
+.atlas .sea-ladder button {
+  width: 100%; display: grid; grid-template-columns: 1.8rem 0.7rem 1fr auto; gap: 0.5rem; align-items: center;
+  background: none; border: 0; border-top: 1px solid rgba(158, 167, 199, 0.12); padding: 0.4rem 0; color: var(--plaster); font: inherit; font-size: 0.88rem; text-align: left; cursor: pointer;
+}
+.atlas .sea-ladder button:hover { background: rgba(212, 171, 85, 0.07); }
+.atlas .sea-ladder .rk { color: var(--dusk); text-align: right; font-variant-numeric: tabular-nums; }
+.atlas .sea-ladder i { width: 0.7rem; height: 0.7rem; border-radius: 2px; border: 1px solid rgba(0, 0, 0, 0.4); }
+.atlas .sea-ladder .pt { color: var(--mist); font-variant-numeric: tabular-nums; }
+.atlas .sea-ladder .ours .nm { color: var(--gilt-hi); }
+@media (max-width: 52rem) {
+  .atlas .sea-tools { position: relative; left: auto; transform: none; top: auto; margin: 0.75rem 1rem 0; overflow-x: auto; }
+  .atlas .sea-tools button { flex: 1 0 auto; }
+  .atlas.at-sea .medallion { display: none; }
+}
+.atlas .sea-chart .neat { fill: none; stroke: #d4ab55; stroke-opacity: 0.85; pointer-events: none; }
+.atlas .sea-chart .neat.thin { stroke-opacity: 0.5; }

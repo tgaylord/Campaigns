@@ -285,6 +285,138 @@
   "source": "the extracted checkpoints of 4 June 1349 to 13 September 1370"
  },
  {
+  "id": "1370-09-13-the-world",
+  "date": "1370-09-13",
+  "type": "diplomacy",
+  "people": [
+   "saad-ibn-yusuf",
+   "bolot-mamluk",
+   "jeronimo-of-castile",
+   "abu-inan-faris",
+   "muhammad-ottoman",
+   "charles-of-bohemia"
+  ],
+  "title": "The world at the peace of Fās: Granada stands 13th among the powers of the world and is a Regional Power, 16 points short of the last Great Power (Bohemia, 46). Castile is 8th, its ally Egypt 7th, Morocco 11th; France and England, 4th and 5th, lead Christendom. The Ottomans hold Constantinople, and no war touches Iberia or the Maghrib",
+  "data": {
+   "ladder": {
+    "MNG": [
+     1,
+     164
+    ],
+    "CHI": [
+     2,
+     153
+    ],
+    "JAP": [
+     3,
+     102
+    ],
+    "FRA": [
+     4,
+     85
+    ],
+    "ENG": [
+     5,
+     83
+    ],
+    "WUU": [
+     6,
+     60
+    ],
+    "MAM": [
+     7,
+     54
+    ],
+    "CAS": [
+     8,
+     53
+    ],
+    "BOH": [
+     9,
+     46
+    ],
+    "HUN": [
+     10,
+     36
+    ],
+    "MOR": [
+     11,
+     35
+    ],
+    "DLH": [
+     12,
+     31
+    ],
+    "GRA": [
+     13,
+     30
+    ],
+    "MAL": [
+     16,
+     27
+    ],
+    "NAP": [
+     17,
+     26
+    ],
+    "TUN": [
+     21,
+     22
+    ],
+    "TUR": [
+     27,
+     17
+    ],
+    "ARA": [
+     47,
+     8
+    ],
+    "POR": [
+     48,
+     8
+    ]
+   },
+   "greatPowers": "the nine ranked above the first Regional Power",
+   "unions": [
+    "Castile and Portugal (from 4 October 1367)",
+    "Aragon and Sicily",
+    "Hungary, Naples and Croatia",
+    "France and the Dauphiné"
+   ],
+   "emperor": "Charles of Bohemia",
+   "pope": "Abundius, at Avignon",
+   "wars": [
+    "Hungary and Naples against Halych and Volhynia (from 14 October 1369)",
+    "the Ottomans against Karaman and the Anatolian beyliks (from 10 October 1369)",
+    "Mali against Ouagadougou (from 4 September 1369)"
+   ],
+   "menUnderArms": {
+    "MAM": 60599,
+    "TUR": 27569,
+    "NAP": 16695,
+    "HUN": 13763,
+    "TLE": 11340,
+    "MAL": 10456,
+    "GRA": 3382,
+    "MOR": 1495,
+    "POR": 1050,
+    "CAS": 0
+   },
+   "ships": {
+    "MOR": 80,
+    "TUR": 73,
+    "NAP": 32,
+    "MAM": 25,
+    "ENG": 25,
+    "TUN": 12,
+    "CAS": 9,
+    "POR": 6,
+    "GRA": 4
+   }
+  },
+  "source": "save of 13 September 1370 (tools/world_powers.py)"
+ },
+ {
   "id": "1370-09-14-strait-ends",
   "date": "1370-09-14",
   "type": "situation",

@@ -11,6 +11,8 @@
  *   ../data/countries.json   countries the views name and colour
  *   ../data/map/*.json       location shapes traced from the game's map (tools/build_map.py)
  *   ../data/extracted/*.json facts pulled from each checkpoint save (tools/extract_checkpoint.py)
+ *   ../data/powers.json      the powers beyond the realm the chronicle follows, in circles
+ *   ../data/world/*.json     the world at each checkpoint (tools/world_powers.py)
  *
  * Validates every record, checks every cross-reference, renders the story's
  * Markdown, and writes src/generated/campaign.json and src/generated/map.json
@@ -408,7 +410,68 @@ for (const s of snapshots) {
   try { realms[s.id] = await readJson(path.join(CAMPAIGN, `data/map/realms-${s.id}.json`)); }
   catch { errors.push(`snapshots/${s.id}: no data/map/realms-${s.id}.json (run tools/build_map.py --owners)`); }
 }
-for (const c of countries) if (![...Object.values(owners)].some((o) => Object.values(o).includes(c.tag))) {
+/* ------------------------------------------------------------ the wider world */
+// The circles of powers the chronicle follows (data/powers.json), and the world at each checkpoint
+// (tools/world_powers.py). The bundle carries a small series for the charts; the full files are
+// fetched by the Kingdoms page when a checkpoint is shown.
+const Circle = z.object({ id, name: z.string(), nameArabic: z.string(), note: z.string(), ring: z.number().int().min(1).max(4), tags: z.array(z.string()) });
+const powersFile = check(z.object({ circles: z.array(Circle), farCapitals: z.record(z.string(), z.union([z.tuple([z.number(), z.number()]), z.string()])).default({}) }),
+  await readJson(path.join(CAMPAIGN, "data/powers.json")), "powers.json");
+const circles = powersFile?.circles ?? [];
+for (const c of circles) for (const t of c.tags) if (!countries.some((x) => x.tag === t)) errors.push(`powers.json: circle ${c.id} follows ${t}, which data/countries.json doesn't name`);
+const Ruler = z.object({ gameId: z.number(), name: z.string().nullable(), born: isoDate.nullable(), female: z.boolean(), stats: z.array(z.number()), since: isoDate.nullable().optional(), regnal: z.number().nullable().optional() });
+const WorldPower = z.object({
+  name: z.string(), rank: z.number().nullable(), points: z.number().nullable(), regional: z.boolean(), level: z.number(),
+  locations: z.number(), people: z.number(), subjectLocations: z.number(), subjectPeople: z.number(),
+  tax: z.number(), trade: z.number(), gold: z.number(), stability: z.number(), prestige: z.number(),
+  men: z.number(), regulars: z.number(), levies: z.number(), ships: z.number(),
+  capital: z.string().nullable(), culture: z.string().nullable(), religion: z.string().nullable(),
+  ruler: Ruler.nullable(), heir: Ruler.nullable(), overlord: z.tuple([z.string(), z.string().nullable()]).nullable(),
+  subjects: z.array(z.tuple([z.string(), z.string().nullable()])), allies: z.array(z.string()), rivals: z.array(z.string()), guarantees: z.array(z.string()),
+});
+const World = z.object({
+  date: isoDate, ladder: z.array(z.tuple([z.string(), z.number(), z.number(), z.boolean()])), powers: z.record(z.string(), WorldPower),
+  unions: z.array(z.object({ members: z.array(z.string()), leader: z.string().nullable(), kind: z.string(), since: isoDate.nullable() })),
+  orders: z.object({}).passthrough(),
+  wars: z.array(z.object({ started: isoDate.nullable(), attacker: z.string().nullable(), defender: z.string().nullable(), cb: z.string().nullable(),
+    revolt: z.boolean(), attackers: z.array(z.string()), defenders: z.array(z.string()), score: z.number().nullable() })),
+});
+const followed = new Set(["GRA", ...circles.flatMap((c) => c.tags)]);
+const worldSeries = [];
+for (const s of snapshots) {
+  let w;
+  try { w = check(World, await readJson(path.join(CAMPAIGN, `data/world/${s.id}.json`)), `world/${s.id}.json`); }
+  catch { errors.push(`snapshots/${s.id}: no data/world/${s.id}.json (run tools/world_powers.py)`); continue; }
+  if (!w) continue;
+  if (w.date !== s.date) errors.push(`world/${s.id}.json: dated ${w.date}, but the checkpoint is ${s.date}`);
+  // per followed power: [rank, points, own locations, people (k), men under arms, overlord]
+  const of = Object.fromEntries([...followed].filter((t) => w.powers[t]).map((t) => {
+    const p = w.powers[t]; return [t, [p.rank, p.points, p.locations, p.people, p.men, p.overlord?.[0] ?? null]];
+  }));
+  const lad = w.ladder;
+  worldSeries.push({ id: s.id, date: s.date, powers: of,
+    // the points of the last Great Power: the game's Great Powers are the ranked powers above the first Regional Power
+    // (seven to ten of them so far)
+    greatLine: (() => { const fr = Math.min(...lad.filter((r) => r[3]).map((r) => r[1]), 999); const g = lad.filter((r) => !r[3] && r[1] < fr); return g.length ? g[g.length - 1][2] : null; })(),
+  });
+}
+// Where each followed power's capital lies on the wide chart (data/map/sea.json), from its latest checkpoint,
+// for the Kingdoms' circle of the world and the chart's towers.
+const seaChart = await readJson(path.join(CAMPAIGN, "data/map/sea.json"));
+const capitals = {};
+for (const s of [...snapshots].reverse()) {
+  let w; try { w = await readJson(path.join(CAMPAIGN, `data/world/${s.id}.json`)); } catch { continue; }
+  for (const t of followed) {
+    const p = w.powers[t];
+    if (capitals[t] || !p?.capitalProvince) continue;
+    const at = seaChart.provinces[p.capitalProvince]?.c ?? powersFile?.farCapitals[p.capitalProvince];
+    if (Array.isArray(at)) capitals[t] = { x: at[0], y: at[1], province: p.capitalProvince, location: p.capital, onChart: !!seaChart.provinces[p.capitalProvince] };
+  }
+}
+for (const t of followed) if (!capitals[t]) errors.push(`world: no capital on the wide chart for ${t} (add it to farCapitals in data/powers.json)`);
+const world = { circles, series: worldSeries, capitals, frame: seaChart.frame };
+
+for (const c of countries) if (!followed.has(c.tag) && ![...Object.values(owners)].some((o) => Object.values(o).includes(c.tag))) {
   // a country no checkpoint shows on the map is harmless, but say so
   console.warn(`note: country ${c.tag} owns nothing on the map at any checkpoint`);
 }
@@ -429,7 +492,7 @@ const mapOut = { frame: gameMap.frame, coast: gameMap.coast, locations: drawn, o
 /* ------------------------------------------------------------ write */
 
 await mkdir(OUT, { recursive: true });
-const campaign = { generated: new Date().toISOString(), sample: sampleData, eras, people, places, wars, countries, snapshots, events, story, catalog, lands, subjectLands, devastation };
+const campaign = { generated: new Date().toISOString(), sample: sampleData, eras, people, places, wars, countries, snapshots, events, story, catalog, lands, subjectLands, devastation, world };
 await writeFile(path.join(OUT, "campaign.json"), JSON.stringify(campaign));
 await writeFile(path.join(OUT, "map.json"), JSON.stringify(mapOut));
 // The Atlas's lenses (tools/map_layers.py), one file per checkpoint, fetched when a checkpoint is shown.
@@ -440,8 +503,20 @@ for (const f of await listJson(LAYERS_IN)) {
   if (!snapshots.some((s) => `${s.id}.json` === f)) continue;
   await copyFile(path.join(LAYERS_IN, f), path.join(LAYERS_OUT, f)); nLayers++;
 }
+// The world at each checkpoint, and the wide chart of the Middle Sea (tools/build_map.py --lite), fetched when shown.
+const PUB = path.resolve(here, "../public");
+await mkdir(path.join(PUB, "world"), { recursive: true });
+await mkdir(path.join(PUB, "sea"), { recursive: true });
+for (const s of snapshots) await copyFile(path.join(CAMPAIGN, `data/world/${s.id}.json`), path.join(PUB, "world", `${s.id}.json`));
+await copyFile(path.join(CAMPAIGN, "data/world/tags.json"), path.join(PUB, "world", "tags.json"));
+await copyFile(path.join(CAMPAIGN, "data/map/sea.json"), path.join(PUB, "sea", "chart.json"));
+let nSea = 0;
+for (const s of snapshots) {
+  try { await copyFile(path.join(CAMPAIGN, `data/map/sea/realms-${s.id}.json`), path.join(PUB, "sea", `realms-${s.id}.json`)); nSea++; }
+  catch { console.warn(`note: no wide chart of the realms at ${s.id} (tools/build_map.py --lite --owners)`); }
+}
 console.log(
   `campaign data: ${snapshots.length} checkpoints, ${events.length} events, ${story.length} story entries, ` +
   `${people.length} people, ${places.length} places, ${wars.length} wars${sampleData ? " (includes sample data)" : ""}; ` +
-  `map: ${inFrame.size} locations, ${Object.keys(provinces).length} provinces, owners at ${Object.keys(owners).length} checkpoint(s), lenses for ${nLayers}`,
+  `map: ${inFrame.size} locations, ${Object.keys(provinces).length} provinces, owners at ${Object.keys(owners).length} checkpoint(s), lenses for ${nLayers}, the world at ${worldSeries.length}, the Middle Sea at ${nSea}`,
 );

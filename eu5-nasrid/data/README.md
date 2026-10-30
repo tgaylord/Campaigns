@@ -5,6 +5,9 @@
 | `extracted/<date>.json` | Raw facts from one checkpoint save, keyed by the game's own ids | `tools/extract_checkpoint.py` |
 | `map/strait-region.json` | Every location in the Strait theatre, traced from the game map, plus the coast | `tools/build_map.py` |
 | `map/realms-<date>.json` | The outline of each realm at a checkpoint | `tools/build_map.py --owners` |
+| `map/sea.json`, `map/sea/realms-<date>.json` | The wide chart of the Middle Sea (Lisbon to Alexandria): coast, provinces, and each realm's outline at a checkpoint | `tools/build_map.py --lite` |
+| `world/<date>.json`, `world/tags.json` | The world beyond the realm at a checkpoint: the great-power ladder, the followed powers, their rulers, strength and ties; every landed country's name and colour | `tools/world_powers.py` |
+| `powers.json` | The powers the chronicle follows, in circles around Granada (the Peninsula, the Maghrib, the Lands of the Franks, the Mashriq, the Land of the Blacks), and capitals beyond the wide chart | by hand |
 | `snapshots/<date>.json` | The checkpoint as the views use it: ruler, realm, people, government, and (once ticked) estates, economy, levies, the Strait | by hand from `extracted/` |
 | `estate-power-model.json` | Inputs for estimating estate power: pop weights and building bonuses (game files), country modifiers and screen readings (Trent's tooltips), the fitted promotion share, per-estate corrections | by hand, and `tools/estate_power.py --calibrate` |
 | `people.json` | The court and the house of Naṣr, with the chronicle's names and the game's ids | by hand from `extracted/` |

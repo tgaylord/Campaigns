@@ -28,5 +28,28 @@
    "expires": "1382-08-01"
   },
   "source": "autosave of 1 July 1368"
+ },
+ {
+  "id": "1367-10-04-castile-portugal-union",
+  "date": "1367-10-04",
+  "type": "diplomacy",
+  "title": "Queen Maria of Portugal dies of a sudden illness, and her son Jerónimo, king of Castile since his father Alfonso fell on the march in March 1366, inherits her crown. Qashtāla and al-Burtughāl pass under one king. The two realms keep their own governments (federal status, each crown's own succession), but the frontier from the Tagus to the hills of Mursiyya now answers to one court",
+  "data": {
+   "union": [
+    "CAS",
+    "POR"
+   ],
+   "ruler": "Jerónimo of Castile (born 1343), son of Alfonso of Castile and Maria of Portugal",
+   "died": "Maria of Portugal (born 1313; queen from 29 January 1342)",
+   "heir": "Fernando (born 1364)",
+   "before": "a marriage union of the two crowns, Alfonso and Maria, from 29 January 1342 until Alfonso's death on 29 March 1366",
+   "policies": [
+    "union_maintain_federal_status_policy",
+    "union_sovereign_succession_law",
+    "iu_tanto_monta_policy"
+   ],
+   "since": "1367-10-04"
+  },
+  "source": "save of 13 September 1370"
  }
 ]

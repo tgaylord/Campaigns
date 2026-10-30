@@ -1,0 +1,122 @@
+/* The Kingdoms: the world as the dīwān reckons it. */
+.kingdoms-page .k-when { margin-bottom: 0.25rem; }
+.kingdoms-page .k-when .ar { font-size: 1.4rem; color: var(--gilt-hi); }
+.kingdoms-page .small { font-size: 0.82rem; }
+
+.k-stage { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 0.75fr); gap: 2rem; align-items: start; margin-top: 1.5rem; }
+@media (max-width: 64rem) { .k-stage { grid-template-columns: 1fr; } }
+.k-side { position: sticky; top: 1.5rem; }
+@media (max-width: 64rem) { .k-side { position: static; } }
+
+/* the circle of the world */
+.k-circle { width: 100%; height: auto; display: block; max-height: 82vh; }
+.k-circle .kw { stroke-width: 0.8; }
+.k-circle .kw.t0 { stroke: #d4ab55; stroke-opacity: 0.22; }
+.k-circle .kw.t1 { stroke: #57b892; stroke-opacity: 0.14; }
+.k-circle .kw.t2 { stroke: #e0654c; stroke-opacity: 0.09; }
+.k-circle .k-ring { fill: none; stroke: #d4ab55; stroke-opacity: 0.32; stroke-width: 1; }
+.k-circle .k-ring-name { font-family: var(--serif); font-style: italic; font-size: 16px; fill: var(--dusk); letter-spacing: 0.04em; }
+.k-circle .k-cardinal { font-size: 24px; fill: var(--gilt); fill-opacity: 0.7; }
+.k-circle .k-edge { fill: none; stroke-linecap: round; transition: stroke-opacity 0.2s; }
+.k-circle .k-edge.ally { stroke: #57b892; stroke-width: 2.4; }
+.k-circle .k-edge.rival { stroke: #e0654c; stroke-width: 1.8; stroke-dasharray: 7 5; }
+.k-circle .k-edge.rival.both { stroke-width: 2.6; }
+.k-circle .k-edge.union { stroke: #f2d58e; stroke-width: 4.5; }
+.k-circle .k-edge.over { stroke: #9ea7c7; stroke-width: 1.2; stroke-dasharray: 2 4; }
+.k-circle .k-edge.off { stroke-opacity: 0.1; }
+.k-circle .k-edge.on { stroke-opacity: 0.95; }
+.k-circle .k-node { cursor: pointer; outline: none; }
+.k-circle .k-node .hit { fill: transparent; }
+.k-circle .k-node .disc { stroke: #0b1128; stroke-width: 2; transition: opacity 0.2s; }
+.k-circle .k-node.subj .disc { stroke: #ece6d8; stroke-dasharray: 3 3; stroke-width: 1.5; }
+.k-circle .k-node.dim .disc { opacity: 0.45; }
+.k-circle .k-node.dim .lbl { fill-opacity: 0.5; }
+.k-circle .k-node.sel .disc, .k-circle .k-node:focus-visible .disc { stroke: #f2d58e; stroke-width: 3.5; }
+.k-circle .k-node .lbl { font-family: var(--serif); font-size: 19px; fill: var(--plaster); paint-order: stroke; stroke: #0d1430; stroke-width: 4px; stroke-linejoin: round; }
+.k-circle .k-node.sel .lbl { fill: var(--gilt-hi); }
+.k-circle .k-node .ar.in { fill: #0d1430; fill-opacity: 0.8; font-family: var(--naskh); font-weight: 700; pointer-events: none; }
+.k-circle .home .halo { fill: none; stroke: #d4ab55; stroke-opacity: 0.5; stroke-width: 1.5; stroke-dasharray: 2 5; }
+.k-circle .home .disc { fill: #d4ab55; stroke: #f2d58e; stroke-width: 2; }
+.k-circle .home.sel .disc { stroke: #fff3cf; stroke-width: 4; }
+.k-circle .home .ar { font-family: var(--naskh); font-weight: 700; font-size: 26px; fill: #3a2208; pointer-events: none; }
+
+.k-key { list-style: none; margin: 0.5rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem 1.4rem; font-size: 0.82rem; color: var(--mist); }
+.k-key li { display: flex; align-items: center; gap: 0.45rem; }
+.k-key i { display: inline-block; width: 1.8rem; height: 0; border-top: 2.5px solid; }
+.k-key i.ally { border-color: #57b892; }
+.k-key i.rival { border-color: #e0654c; border-top-style: dashed; }
+.k-key i.union { border-color: #f2d58e; border-top-width: 4px; }
+.k-key i.over { border-color: #9ea7c7; border-top-style: dotted; }
+.k-note { font-size: 0.82rem; color: var(--dusk); max-width: 44rem; margin: 0.4rem 0 0; }
+
+/* the ladder and the chart, side by side */
+.k-pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 2.5rem; align-items: start; }
+@media (max-width: 64rem) { .k-pair { grid-template-columns: 1fr; } }
+
+.rungs { list-style: none; margin: 0.75rem 0; padding: 0; font-size: 0.86rem; }
+.rungs li { display: grid; grid-template-columns: 1.8rem minmax(7rem, 11rem) 1fr 2rem 4.6rem; gap: 0.6rem; align-items: center; padding: 0.18rem 0; color: var(--dusk); }
+.rungs li.mine { color: var(--plaster); }
+.rungs li.ours { color: var(--gilt-hi); background: linear-gradient(90deg, rgba(212, 171, 85, 0.14), transparent); }
+.rungs li.last-great { border-bottom: 1px solid var(--gilt); padding-bottom: 0.35rem; margin-bottom: 0.3rem; }
+.rungs .rk, .rungs .pt { text-align: right; font-variant-numeric: tabular-nums; }
+.rungs .nm { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rungs button.nm { font: inherit; color: inherit; background: none; border: 0; padding: 0; text-align: left; cursor: pointer; text-decoration: underline; text-decoration-color: rgba(212, 171, 85, 0.35); text-underline-offset: 0.2em; }
+.rungs button.nm:hover { color: var(--gilt-hi); }
+.rungs .bar { height: 0.55rem; background: rgba(158, 167, 199, 0.08); border-radius: 0 2px 2px 0; }
+.rungs .bar i { display: block; height: 100%; background: rgba(158, 167, 199, 0.35); border-radius: 0 2px 2px 0; }
+.rungs .kind { font-size: 0.72rem; color: var(--dusk); white-space: nowrap; }
+.rungs .kind small { margin-left: 0.35rem; }
+.rungs .up { color: var(--zellij-hi); }
+.rungs .down { color: var(--cinnabar-hi); }
+
+.k-rise .k-legend { list-style: none; margin: 0.5rem 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; font-size: 0.82rem; color: var(--mist); }
+.k-rise .k-legend li { display: flex; align-items: center; gap: 0.4rem; }
+.k-rise .k-legend i { display: inline-block; width: 1.4rem; border-radius: 2px; }
+.k-rise .k-legend i.dash { height: 0; border-top: 2px dashed var(--mist); border-radius: 0; }
+.k-chart { position: relative; background: var(--night-2); border: 1px solid rgba(158, 167, 199, 0.18); border-radius: 3px; padding: 0.5rem 0.25rem 0.25rem; }
+.k-chart svg { width: 100%; height: auto; display: block; touch-action: pan-y; }
+.k-chart .grid { stroke: rgba(158, 167, 199, 0.12); }
+.k-chart .axis { stroke: rgba(158, 167, 199, 0.35); }
+.k-chart .tick { font-family: var(--sans); font-size: 11px; fill: var(--dusk); }
+.k-chart .subject-span { fill: rgba(192, 68, 46, 0.09); }
+.k-chart .span-label { font-family: var(--serif); font-style: italic; font-size: 12px; fill: #e0654c; fill-opacity: 0.75; }
+.k-chart .great { fill: none; stroke: var(--mist); stroke-width: 1.5; stroke-dasharray: 5 4; stroke-opacity: 0.8; }
+.k-chart .now { stroke: var(--gilt); stroke-opacity: 0.45; stroke-width: 1; stroke-dasharray: 1 3; }
+.k-chart .cross { stroke: var(--plaster); stroke-opacity: 0.4; }
+.k-chart .dot { stroke: var(--night-2); stroke-width: 2; }
+.k-chart .end { font-family: var(--sans); font-size: 11.5px; fill: var(--mist); }
+.k-tip {
+  position: absolute; top: 0.5rem; transform: translateX(-50%); pointer-events: none; z-index: 2;
+  background: rgba(11, 17, 40, 0.95); border: 1px solid rgba(212, 171, 85, 0.5); border-radius: 3px; padding: 0.45rem 0.6rem; font-size: 0.78rem; color: var(--plaster); white-space: nowrap;
+}
+.k-tip .d { color: var(--gilt-hi); margin-bottom: 0.2rem; }
+.k-tip .d .ar { margin-left: 0.3rem; }
+.k-tip i { display: inline-block; width: 0.6rem; height: 0.6rem; border-radius: 2px; margin-right: 0.35rem; }
+.k-tip .g { color: var(--mist); margin-top: 0.15rem; }
+
+/* the circles' dispatches */
+.k-circle-sec { margin-bottom: 2.5rem; }
+.k-circle-head { display: grid; grid-template-columns: auto 1fr; align-items: baseline; gap: 0 1rem; margin-bottom: 1rem; }
+.k-circle-head .section-title { margin: 0; }
+.k-circle-head .ar { font-size: 1.8rem; color: var(--gilt); justify-self: end; }
+.k-circle-head p { grid-column: 1 / -1; margin: 0.2rem 0 0; max-width: 46rem; }
+.k-dispatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr)); gap: 1.25rem; }
+
+.k-wars, .k-unions { list-style: none; margin: 0; padding: 0; font-size: 0.9rem; }
+.k-wars li { display: grid; gap: 0.1rem; padding: 0.55rem 0; border-top: 1px solid rgba(158, 167, 199, 0.15); }
+.k-wars .t { font-size: 0.75rem; color: var(--dusk); }
+.k-wars em { color: var(--cinnabar-hi); font-style: italic; }
+.k-unions li { padding: 0.3rem 0; border-top: 1px solid rgba(158, 167, 199, 0.12); }
+.k-orders { margin: 0; display: grid; gap: 0.6rem; font-size: 0.9rem; }
+.k-orders dt { font-size: 0.75rem; color: var(--dusk); }
+.k-orders dd { margin: 0; }
+.k-sub { font-size: 1.15rem; margin: 1.4rem 0 0.5rem; }
+.k-source { margin-top: 2rem; max-width: 52rem; }
+@media (max-width: 40rem) {
+  .k-circle .k-node .lbl { font-size: 27px; stroke-width: 5px; }
+  .k-circle .k-ring-name { font-size: 22px; }
+  .k-circle .k-cardinal { font-size: 30px; }
+  .rungs li { grid-template-columns: 1.6rem minmax(0, 1fr) 2rem 4.4rem; }
+  .rungs .bar { display: none; }
+  .k-dispatches { grid-template-columns: 1fr; }
+}

@@ -32,6 +32,9 @@ ap.add_argument('--eps', type=float, default=0.7, help='polygon simplification, 
 ap.add_argument('--owners', nargs='*', default=[], help='extracted checkpoint files (tools/extract_checkpoint.py); '
                 'for each, the outline of every realm is written to --realms-dir')
 ap.add_argument('--realms-dir', help='where to write realms-<checkpoint>.json')
+ap.add_argument('--realm-eps', type=float, help='simplification for realm outlines (default: --eps)')
+ap.add_argument('--lite', action='store_true', help='a wide, coarse chart: only the coast, provinces (outline, centre, '
+                'region, owner-free) and realm outlines; no location shapes and no areas')
 a = ap.parse_args()
 M = a.map_data
 
@@ -85,21 +88,25 @@ else:
 crop = key[y0:y1 + 1, x0:x1 + 1]
 H, W = crop.shape
 
-def trace(mask, min_area=2):
+def trace(mask, min_area=2, eps=None):
     """SVG path of a 0/1 mask. Traced on a 2x grid so shared edges between neighbours line up."""
     big = cv2.resize(mask, (W * 2, H * 2), interpolation=cv2.INTER_NEAREST)
     cs, _ = cv2.findContours(big, cv2.RETR_CCOMP, cv2.CHAIN_APPROX_SIMPLE)
     parts = []
     for cn in cs:
         if cv2.contourArea(cn) < min_area: continue
-        pts = cv2.approxPolyDP(cn, a.eps * 2, True).reshape(-1, 2) / 2.0
+        pts = cv2.approxPolyDP(cn, (eps or a.eps) * 2, True).reshape(-1, 2) / 2.0
+        if a.lite: pts = np.round(pts)
         parts.append('M' + 'L'.join(f'{x:g},{y:g}' for x, y in pts) + 'Z')
     return ''.join(parts)
 
 
 out = {'frame': {'x': int(x0), 'y': int(y0), 'width': int(W), 'height': int(H)}, 'locations': {}}
 landmask = np.zeros((H, W), np.uint8)
-for c in np.unique(crop):
+if a.lite:
+    landcols = np.array([c for c in np.unique(crop) if bycol.get(int(c)) and kind(bycol[int(c)]) in ('land', 'waste')], dtype=np.uint32)
+    landmask = np.isin(crop, landcols).astype(np.uint8)
+for c in ([] if a.lite else np.unique(crop)):
     k = bycol.get(int(c))
     if k is None: continue
     mask = (crop == c).astype(np.uint8)
@@ -138,11 +145,15 @@ def divisions(level):
         if level == 3: res[name].pop('area')
     return res
 out['provinces'] = divisions(4)
-out['areas'] = {k: {kk: v[kk] for kk in ('d', 'c', 'region', 'locations')} for k, v in divisions(3).items()}
+if a.lite:
+    out.pop('locations')
+    out['provinces'] = {k: {'d': v['d'], 'c': v['c'], 'region': v['region']} for k, v in out['provinces'].items()}
+else:
+    out['areas'] = {k: {kk: v[kk] for kk in ('d', 'c', 'region', 'locations')} for k, v in divisions(3).items()}
 
 json.dump(out, open(a.out, 'w'), separators=(',', ':'))
-n = len(out['locations'])
-print(f'frame x{x0}-{x1} y{y0}-{y1} ({W}x{H}), {n} locations, {os.path.getsize(a.out) // 1024} KB')
+n = len(out.get('locations') or out['provinces'])
+print(f"frame x{x0}-{x1} y{y0}-{y1} ({W}x{H}), {n} {'provinces' if a.lite else 'locations'}, {os.path.getsize(a.out) // 1024} KB")
 
 # ---------- realm outlines, one file per checkpoint ----------
 if a.owners:
@@ -159,7 +170,7 @@ if a.owners:
             cs = np.array([c for c, t in lab.items() if t == tag], dtype=np.uint32)
             m = np.isin(crop, cs).astype(np.uint8)
             yy, xx = np.nonzero(m)
-            realms[tag] = {'d': trace(m, min_area=4), 'px': int(m.sum()),
+            realms[tag] = {'d': trace(m, min_area=16 if a.lite else 4, eps=a.realm_eps), 'px': int(m.sum()),
                            'c': [round(float(xx.mean()), 1), round(float(yy.mean()), 1)]}
         name = os.path.splitext(os.path.basename(f))[0]
         dst = os.path.join(a.realms_dir, f'realms-{name}.json')
