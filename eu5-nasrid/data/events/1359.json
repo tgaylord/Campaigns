@@ -42,5 +42,22 @@
    "stability": 30.9
   },
   "source": "save of 15 March 1359"
+ },
+ {
+  "id": "1359-ismail-to-aydin",
+  "date": "1359-03-15",
+  "type": "marriage",
+  "people": [
+   "ismail-ibn-ismail",
+   "yusuf-i"
+  ],
+  "title": "Ismāʿīl ibn Ismāʿīl, the amir's brother and his minister, marries his Aydınid bride and goes to live at her father's court in Anatolia. After Faraj, it is the second brother of the amir to leave Gharnāṭa by marriage, and the court whispers that the harem prefers the throne to have no grown brothers about it",
+  "data": {
+   "with": "AYD",
+   "betrothed": "1354-03-16",
+   "residence": "Aydın",
+   "cabinetSeatVacated": true
+  },
+  "source": "Trent's account (about March 1359); the harem as the cause is the chronicle's reading, at Trent's direction"
  }
 ]
