@@ -112,5 +112,80 @@
    "stability": -1.6
   },
   "source": "checkpoint 1349-01-27"
+ },
+ {
+  "id": "1349-alhambra-foundations",
+  "date": "1349-06-01",
+  "type": "reform",
+  "people": [
+   "yusuf-i"
+  ],
+  "places": [
+   "gharnata"
+  ],
+  "title": "With the gold of the peace, Yūsuf lays the foundations of a new wing of al-Ḥamrāʾ on the Sabīka hill, its vaults in muqarnas and its walls cut with verse, to tell Castile and Morocco alike that the house of Naṣr means to stay",
+  "data": {
+   "event": "Expand the Al-Ḥamrāʾ",
+   "choice": "Lay the foundations.",
+   "construction": "Al-Ḥamrāʾ in Gharnāṭa",
+   "strait": "each completed tier adds 0.05 sovereignty a month (game files)"
+  },
+  "source": "Trent's account and screenshots (under construction by 1 June 1349; the day the works began isn't given)"
+ },
+ {
+  "id": "1349-06-01-embassy-to-cairo",
+  "date": "1349-06-01",
+  "type": "diplomacy",
+  "people": [
+   "yusuf-i"
+  ],
+  "title": "An Embassy to al-Qāhira: Yūsuf sends an envoy across the sea to Sultan Jamāl al-Dīn of Egypt, keeper of the holy cities, at the cost of a quarter of a year's income",
+  "data": {
+   "event": "battle_for_the_strait_events.55",
+   "choice": "Send an envoy across the sea to Al-Qāhira.",
+   "gold": -107.13,
+   "followUp": "A Plea from the West (Egypt's answer pending)"
+  },
+  "source": "Trent's screenshot of his choice"
+ },
+ {
+  "id": "1349-06-01-estates-reading",
+  "date": "1349-06-01",
+  "type": "estate_change",
+  "title": "The estates read off the panel after the peace: the crown at 27%, the nobility down to 31%, and the Dhimmī, swollen by the Christians of the new lands, at 21%",
+  "data": {
+   "power": {
+    "crown": 27,
+    "nobles": 31,
+    "clergy": 8,
+    "burghers": 5,
+    "peasants": 6,
+    "dhimmi": 21
+   },
+   "satisfaction": {
+    "nobles": 40.78,
+    "clergy": 50.01,
+    "burghers": 50.02,
+    "peasants": 45.49,
+    "dhimmi": 50.02
+   },
+   "note": "screen values; the first full reading since 11 August 1340"
+  },
+  "source": "Trent's screenshot of the estates panel, 1 June 1349"
+ },
+ {
+  "id": "1349-06-01-castilian-patriots",
+  "date": "1349-06-01",
+  "type": "player_note",
+  "title": "In the conquered lands Castilian patriots are gathering in rebellion, while the dīwān works to integrate Jayyān and Ishbīliyya and the plague goes on taking the people",
+  "data": {
+   "rebels": "Castilian Patriots",
+   "cabinet": [
+    "Integrating Jaén",
+    "Integrating Sevilla"
+   ],
+   "population": 663000
+  },
+  "source": "Trent's screenshot, 1 June 1349"
  }
 ]
