@@ -1,0 +1,46 @@
+[
+ {
+  "id": "1352-01-01-hajj-makka",
+  "date": "1352-01-01",
+  "type": "player_note",
+  "people": [
+   "yusuf-i"
+  ],
+  "title": "The Royal Hajj reaches Makka and the Kaʿba. The amir distributes gold freely, that no pilgrim there go hungry, and remains in the holy city for the pilgrimage itself, the days of Dhū al-Ḥijja at the end of January, before turning for home",
+  "data": {
+   "event": "The Royal Ḥajj: The Kaʿba",
+   "choice": "Distribute gold freely. Let no pilgrim here go hungry.",
+   "gold": -39.16,
+   "toMeccaCommoners": 39.16,
+   "prestige": 15,
+   "legitimacy": 10,
+   "chronicleNote": "The game resumes the expedition at once; the chronicle has him stay about a month for the rites (8–13 Dhū al-Ḥijja 752, about 26–31 January 1352 by the tabular calendar)"
+  },
+  "source": "Trent's screenshot of the event, with the chosen option's tooltip open (game date 1 January 1352); the month in Makka is Trent's direction"
+ },
+ {
+  "id": "1352-01-01-hall-of-ambassadors",
+  "date": "1352-01-01",
+  "type": "player_note",
+  "people": [
+   "faraj-ibn-ismail"
+  ],
+  "places": [
+   "gharnata"
+  ],
+  "title": "The Hall of the Ambassadors: within the great tower of the palace on the Sabīka, the regent Faraj raises a throne hall to receive the envoys of kings, its cedar ceiling carved with the seven heavens above the throne",
+  "data": {
+   "event": "The Hall of the Ambassadors",
+   "choice": "Raise the hall and seat our throne beneath it.",
+   "gold": -100.48,
+   "modifier": {
+    "name": "Hall of the Ambassadors",
+    "years": 20,
+    "monthlyPoliticalInfluence": 0.1,
+    "monthlyDiplomats": 0.2,
+    "monthlySovereignty": 0.1
+   }
+  },
+  "source": "Trent's screenshot of the event, with the chosen option's tooltip open"
+ }
+]
