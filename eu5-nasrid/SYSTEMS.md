@@ -109,6 +109,7 @@ Each entry has a date, a type, references to the entities involved and source de
 - Anything made up for testing carries `"sample": true`; the site flags it, and the first real checkpoint replaces it.
 
 ### Rules
+- **Strength means men under arms.** When comparing sides, count regulars plus raised levies: the sum of each country's army subunits' strength (a missing strength is full; 1.0 is 1,000 men). The manpower pool only reinforces regulars, so it is never the measure of an army (Trent, October 1368). In the game this is the Army Strength figure on the war screen (levies / regulars per country). A save taken before levies are called up shows only the regulars, so for a war in progress Trent's war screen or a later save is the better source.
 - Facts come from saves, or from Trent's account labelled as his account. Nothing is invented.
 - If a save and the story disagree, the save is right about facts and the story gets corrected. The story decides voice, emphasis and interpretation.
 

@@ -1,0 +1,65 @@
+[
+ {
+  "id": "1369-03-the-south-subdued",
+  "date": "1369-03-01",
+  "type": "player_note",
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "By March the Marīnids' lands on this shore are subdued, all but the fortress of Qādis, and the first Marīnid landing has been thrown back into the sea",
+  "data": {
+   "holdsOut": "Cádiz"
+  },
+  "source": "Trent's account (by March 1369; no save)"
+ },
+ {
+  "id": "1369-03-strength",
+  "date": "1369-03-01",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "The two sides in March 1369. Fās and its allies field 47,000 men, 23,600 of them Moroccan. The Mamlūk alliance fields 113,000, but 71,600 of those are Egyptian and far to the east. On this shore Granada has 8,800 (5,500 levies and 3,300 regulars) and its ṭāʾifas 2,700. The war score stands at +31% for Granada",
+  "data": {
+   "warScore": 30.9,
+   "attackers": {
+    "total": 47081,
+    "Morocco": 23596,
+    "Tlemcen": 12235,
+    "Tafilalt": 10501,
+    "Touat": 749,
+    "Kingdom of Sevilla": 0
+   },
+   "defenders": {
+    "total": 113000,
+    "Mamluks": 71600,
+    "Granada": {
+     "total": 8839,
+     "levies": 5539,
+     "regulars": 3300
+    },
+    "Mecca": 5317,
+    "Āl Faḍl": 4198,
+    "Barqa": 3546,
+    "Al Mira": 3465,
+    "Döger": 3256,
+    "Dulkadirids": 2565,
+    "Banu Kanz": 2525,
+    "Medina": 1887,
+    "Al ʿAlī": 1881,
+    "Valencia": 1876,
+    "Western Oases": 1007,
+    "Murcia": 778
+   },
+   "ships": {
+    "attackers": 77,
+    "defenders": 59
+   },
+   "granadaManpower": 2603
+  },
+  "source": "Trent's screenshots of the war screen and army strength (March 1369)"
+ }
+]

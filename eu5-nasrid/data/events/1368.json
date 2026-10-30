@@ -25,22 +25,26 @@
   "title": "The Marīnids grow hostile. They break the trade agreements, insult the sultan's envoys, and murmur about the claims of their puppet, the 'Kingdom of Sevilla'. If they mean to throw themselves against our shores again, the court will remind them what happened last time, with interest",
   "data": {
    "forces": {
+    "note": "men under arms: regulars plus raised levies",
     "GRA": {
-     "manpower": 2798,
-     "maxManpower": 6547,
-     "regiments": 5,
-     "ships": 5,
-     "gold": 120
+     "men": 3300,
+     "regulars": 3300,
+     "levies": 0,
+     "ships": 5
     },
     "MOR": {
-     "manpower": 2506,
-     "maxManpower": 2503,
-     "regiments": 4,
-     "ships": 29,
-     "gold": 397
+     "men": 800,
+     "regulars": 800,
+     "levies": 0,
+     "ships": 29
     },
-    "SEV": {
-     "ships": 1
+    "TFL": {
+     "men": 550,
+     "ships": 0
+    },
+    "MAM": {
+     "men": 3000,
+     "ships": 4
     }
    }
   },
@@ -128,5 +132,44 @@
    ]
   },
   "source": "save of 24 October 1368; Trent's account"
+ },
+ {
+  "id": "1368-11-11-battle-cadiz",
+  "date": "1368-11-11",
+  "type": "battle",
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "The first battle of the war, at Qādis. 3,300 Granadans fall on a Marīnid force of 800 and destroy it: 740 killed and 60 taken, for 65 of ours",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 3300
+   },
+   "oursTotal": 3300,
+   "oursLost": 65,
+   "theirs": {
+    "Morocco": 800
+   },
+   "theirsTotal": 800,
+   "theirsLost": 800,
+   "theirsTaken": 60,
+   "warScore": 2.84,
+   "location": "Cádiz",
+   "composition": {
+    "ours": {
+     "infantry": 2000,
+     "lightCavalry": 800,
+     "heavyCavalry": 500
+    },
+    "theirs": {
+     "archers": 500,
+     "lightCavalry": 200,
+     "supply": 100
+    }
+   }
+  },
+  "source": "Trent's screenshot of the battle report (11 November 1368)"
  }
 ]
