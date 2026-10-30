@@ -45,5 +45,43 @@
    ]
   },
   "source": "Trent's account (soon after Naṣr's death; exact date not given)"
+ },
+ {
+  "id": "1364-05-19-ulama-displeased",
+  "date": "1364-05-19",
+  "type": "estate_change",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "wars": [
+   "war-of-independence"
+  ],
+  "title": "The ʿulamāʾ are displeased with the young sultan: their satisfaction stands at 37% in the middle of the war",
+  "data": {
+   "estate": "clergy",
+   "satisfaction": 37
+  },
+  "source": "Trent's account (19 May 1364)"
+ },
+ {
+  "id": "1364-05-19-jamaa-summoned",
+  "date": "1364-05-19",
+  "type": "reform",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "wars": [
+   "war-of-independence"
+  ],
+  "title": "Saʿd summons the Jamāʿa and brings in reforms for the ʿulamāʾ. The tax on the dhimmīs, remitted since 1352, is collected again, and a new campaign of conversion begins. It is enough to keep the clergy from mutiny while the war goes on",
+  "data": {
+   "reforms": [
+    "dhimmi tax restored",
+    "conversion campaign"
+   ],
+   "ends": "1352-04-jizya-remitted",
+   "estate": "clergy"
+  },
+  "source": "Trent's account (by 19 May 1364)"
  }
 ]
