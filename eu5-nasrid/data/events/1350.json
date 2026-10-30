@@ -73,5 +73,22 @@
    "influence": 11.8
   },
   "source": "save of 1350-09-02"
+ },
+ {
+  "id": "1350-12-aragon-peace",
+  "date": "1350-12-01",
+  "type": "player_note",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "title": "Aragon makes peace with the Moorish powers: Morocco takes the Balearic Islands and Tunis subjugates Aragon's Sardinian vassal, the County of Cagliari. All eyes turn to the Strait, where Castile has pushed south to Cádiz",
+  "data": {
+   "gains": {
+    "MOR": "Balearic Islands",
+    "TUN": "County of Cagliari (as subject)"
+   },
+   "castileFront": "Cádiz"
+  },
+  "source": "Trent's account (early December 1350; day approximate)"
  }
 ]
