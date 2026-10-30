@@ -108,5 +108,35 @@
    }
   },
   "source": "Trent's screenshot of the Harem Laws screen and his account (late 1355; the exact day isn't given)"
+ },
+ {
+  "id": "1355-yahya-dies",
+  "date": "1355-11-19",
+  "type": "death",
+  "people": [
+   "yahya-rahhu"
+  ],
+  "title": "Yaḥyā Raḥḥū dies of an illness, aged 54, only lately seated in the dīwān. The court calls it a coincidence",
+  "data": {
+   "cause": "illness",
+   "age": 54
+  },
+  "source": "Trent's account (late 1355; the exact day isn't given)"
+ },
+ {
+  "id": "1355-dua-council",
+  "date": "1355-11-19",
+  "type": "appointment",
+  "people": [
+   "dua-marinid",
+   "yahya-rahhu",
+   "yusuf-i"
+  ],
+  "title": "Duʿāʾ, the Marīnid wife and the most capable of the amir's wives, takes the empty seat in the dīwān: the first woman of the harem to sit in the council",
+  "data": {
+   "replaces": "yahya-rahhu",
+   "law": "powerful_harem"
+  },
+  "source": "Trent's account (late 1355)"
  }
 ]

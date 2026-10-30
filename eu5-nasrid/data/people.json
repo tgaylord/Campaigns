@@ -596,11 +596,12 @@
   "traits": [
    "bold_fighter"
   ],
-  "note": "A Zenata Berber, founder and head of the house of Raḥḥū; general from 1 September 1339 at the head of the Volunteers of the Faith. The game calls him 'a competent yet fickle figure'. He led the Volunteers of the Faith again from 18 October 1346, when they rose against the united crowns (in the game files his second command is a separate character with the same name, house and birth date; the chronicle keeps them one man). Took Faraj ibn Ismāʿīl's seat in the dīwān in 1355, after Faraj went to Ghana.",
+  "note": "A Zenata Berber, founder and head of the house of Raḥḥū; general from 1 September 1339 at the head of the Volunteers of the Faith. The game calls him 'a competent yet fickle figure'. He led the Volunteers of the Faith again from 18 October 1346, when they rose against the united crowns (in the game files his second command is a separate character with the same name, house and birth date; the chronicle keeps them one man). Took Faraj ibn Ismāʿīl's seat in the dīwān in 1355, after Faraj went to Ghana. Died of illness in late 1355, aged 54 by the game's reckoning, soon after taking the seat; the court called it coincidence. (Exact date not yet given.)",
   "gameIds": [
    26562,
    34868
-  ]
+  ],
+  "died": "1355-11-19"
  },
  {
   "id": "joan-doriola",
@@ -792,7 +793,7 @@
   "dynasty": "Marīnid",
   "female": true,
   "roles": [],
-  "note": "A princess of the Marīnid house of Fās, betrothed to Granada on 18 January 1348 and married to Yūsuf I about 12 August 1355: the one Marīnid bond that outlived Morocco's annulment of its treaties with Granada in 1351."
+  "note": "A princess of the Marīnid house of Fās, betrothed to Granada on 18 January 1348 and married to Yūsuf I about 12 August 1355: the one Marīnid bond that outlived Morocco's annulment of its treaties with Granada in 1351. The most capable of the amir's wives, she took Yaḥyā Raḥḥū's seat in the dīwān after his death in late 1355, under the Powerful Harem law that let women sit in the cabinet."
  },
  {
   "id": "tizemt-hafsid",
