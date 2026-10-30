@@ -317,7 +317,13 @@
   "name": "Wubīra",
   "nameGame": "Wbira",
   "kind": "location",
-  "note": "No Arabic script in the game files; Wubīra follows the game's Wubira. A Granadan claim held by Castile at the start."
+  "note": "No Arabic script in the game files; Wubīra follows the game's Wubira. A Granadan claim held by Castile at the start.",
+  "held": [
+   {
+    "from": "1349-01-27",
+    "to": null
+   }
+  ]
  },
  {
   "id": "qadis",
@@ -335,7 +341,13 @@
   "nameGame": "Šbilya",
   "kind": "location",
   "nameArabic": "إشبيلية",
-  "major": true
+  "major": true,
+  "held": [
+   {
+    "from": "1349-01-27",
+    "to": null
+   }
+  ]
  },
  {
   "id": "qurtuba",
@@ -344,7 +356,13 @@
   "nameGame": "Qrṭuba",
   "kind": "location",
   "nameArabic": "قرطبة",
-  "major": true
+  "major": true,
+  "held": [
+   {
+    "from": "1349-01-27",
+    "to": null
+   }
+  ]
  },
  {
   "id": "jayyan",
@@ -353,7 +371,13 @@
   "nameGame": "Jayyan",
   "kind": "location",
   "nameArabic": "جيان",
-  "major": true
+  "major": true,
+  "held": [
+   {
+    "from": "1349-01-27",
+    "to": null
+   }
+  ]
  },
  {
   "id": "mursiyya",
@@ -362,7 +386,14 @@
   "nameGame": "Mursiyya",
   "kind": "location",
   "nameArabic": "مرسية",
-  "major": true
+  "major": true,
+  "held": [
+   {
+    "from": "1349-01-27",
+    "to": null,
+    "via": "MUC"
+   }
+  ]
  },
  {
   "id": "sabta",

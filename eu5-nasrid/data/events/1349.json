@@ -1,0 +1,116 @@
+[
+ {
+  "id": "1349-01-27-peace-of-qurtuba",
+  "date": "1349-01-27",
+  "type": "peace",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "people": [
+   "yusuf-i",
+   "alfonso-xi"
+  ],
+  "places": [
+   "qurtuba",
+   "ishbiliyya",
+   "jayyan"
+  ],
+  "title": "The Peace of Qurṭuba: Castile, its armies and its spirit broken by the plague, begs a separate peace of Granada alone, and to the court's surprise accepts its sharp demands",
+  "data": {
+   "terms": [
+    "Granada takes 23 locations, from Qurṭuba and Ishbīliyya to Jayyān, Úbeda, Baeza and Écija",
+    "the Ṭāʾifa of Mursiyya takes the Murcia area, eleven more locations",
+    "Castile pays war reparations to Granada",
+    "Castile annuls all treaties with Aragon",
+    "Granada returns to the name of Castile's tributary"
+   ],
+   "gold": 844.83,
+   "locationsGained": [
+    "cordoba",
+    "sevilla",
+    "sanlucar_la_mayor",
+    "carpio",
+    "cazorla",
+    "santa_eufemia",
+    "coria_del_rio",
+    "espiel",
+    "ubeda",
+    "ecija",
+    "jaen",
+    "lucena",
+    "martos",
+    "osuna",
+    "andujar",
+    "olvera",
+    "moron",
+    "baena",
+    "baeza",
+    "fuenteovejuna",
+    "pedroche",
+    "palma_del_rio",
+    "jodar"
+   ]
+  },
+  "source": "Trent's account and screenshot; checkpoint 1349-01-27 (saves before and after the peace)"
+ },
+ {
+  "id": "1349-01-27-tributary-in-name",
+  "date": "1349-01-27",
+  "type": "strait_change",
+  "title": "Granada is again Castile's tributary, though only in name: it holds 53 of the 72 locations of the Strait's three areas, against 19 before the war",
+  "data": {
+   "overlord": {
+    "from": null,
+    "to": "CAS"
+   },
+   "areasHeld": {
+    "from": 19,
+    "to": 53,
+    "total": 72
+   },
+   "influence": 13.3,
+   "sovereignty": 41.6
+  },
+  "source": "Trent's account; checkpoint 1349-01-27"
+ },
+ {
+  "id": "1349-01-27-realm-doubled",
+  "date": "1349-01-27",
+  "type": "territory_change",
+  "places": [
+   "qurtuba",
+   "ishbiliyya",
+   "jayyan",
+   "wubira"
+  ],
+  "title": "The realm doubles: 754,000 souls in 41 locations, and nearly half of them Castilian Christians; the Ṭāʾifa of Mursiyya now holds Mursiyya, Qarṭājanna, Lawraqa and the whole Murcia area",
+  "data": {
+   "locations": {
+    "from": 18,
+    "to": 41
+   },
+   "population": {
+    "from": 376661,
+    "to": 754263
+   },
+   "catholic": 341068,
+   "MUC": {
+    "locations": {
+     "from": 1,
+     "to": 12
+    }
+   }
+  },
+  "source": "checkpoint 1349-01-27"
+ },
+ {
+  "id": "1349-01-27-unrest",
+  "date": "1349-01-27",
+  "type": "player_note",
+  "title": "Plague and war have left the realm unsettled: stability stands below zero, at −1.6",
+  "data": {
+   "stability": -1.6
+  },
+  "source": "checkpoint 1349-01-27"
+ }
+]
