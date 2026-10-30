@@ -59,5 +59,51 @@
    "cabinetSeatVacated": true
   },
   "source": "Trent's account (about March 1359); the harem as the cause is the chronicle's reading, at Trent's direction"
+ },
+ {
+  "id": "1359-07-01-funduq",
+  "date": "1359-07-01",
+  "type": "reform",
+  "people": [
+   "yusuf-i"
+  ],
+  "places": [
+   "malaqa",
+   "gharnata",
+   "qurtuba"
+  ],
+  "title": "The New Caravanserai: at the merchants' pressing, above all the Italians who carry the better part of the realm's trade, the amir has a funduq built beside the silk market, a walled inn where wares are kept under lock and traders lodged under guard. The burghers are delighted, and the trade of Gharnāṭa and Qurṭuba flows more freely",
+  "data": {
+   "event": "The New Caravanserai",
+   "choice": "Build it, and let the trade flow through our gates.",
+   "cost": 44.4,
+   "building": "funduq",
+   "location": "malaqa (per the tooltip)",
+   "burghersSatisfaction": "+20%",
+   "modifier": {
+    "name": "Trade Infrastructure",
+    "years": 20,
+    "locations": [
+     "granada",
+     "cordoba"
+    ],
+    "localTradeCapacity": 5,
+    "marketAccess": "+25%",
+    "burghersUnrest": "-10%"
+   },
+   "historical": "al-Funduq al-Jadīda (the Corral del Carbón) in Granada, held by the wives of the Naṣrid sultans"
+  },
+  "source": "Trent's screenshot of the event, with the option's tooltip open"
+ },
+ {
+  "id": "1359-07-01-spies",
+  "date": "1359-07-01",
+  "type": "diplomacy",
+  "title": "The dīwān is building a network of spies; a Castilian army of 6,000 stands on the frontier, with 500 Portuguese",
+  "data": {
+   "castileArmy": 6056,
+   "portugalArmy": 500
+  },
+  "source": "Trent's screenshot, 1 July 1359"
  }
 ]
