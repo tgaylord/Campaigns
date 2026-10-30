@@ -311,7 +311,7 @@
   "wars": [
    "war-of-independence"
   ],
-  "title": "Portugal is dealt with first. On the day its last army is destroyed before Lisbon it makes a separate peace and gives up its south: thirteen towns of the Algarve and the lower Alentejo, from Silves and Faro to Beja and Mértola, with 83,000 people. The court means to make them a new vassal state once the war is won",
+  "title": "Portugal is dealt with first. On the day its last army is destroyed before Lisbon it makes a separate peace and gives up its south: thirteen towns of the Algarve and the lower Alentejo, from Silves and Faro to Beja and Mértola, with 83,000 people. The court means to make them a new vassal state once the war is won. Portugal is also to pay reparations for ten years",
   "data": {
    "with": "POR",
    "ceded": [
@@ -330,7 +330,11 @@
     "Sines"
    ],
    "population": 82741,
-   "plan": "release as a vassal after the war"
+   "plan": "release as a vassal after the war",
+   "reparations": {
+    "from": "1364-09-11",
+    "to": "1374-09-11"
+   }
   },
   "source": "autosave of 1 July 1365 (Portugal left the war on 11 September 1364; the thirteen towns are Granada's); Trent's account"
  },
@@ -342,9 +346,9 @@
   "wars": [
    "war-of-independence"
   ],
-  "title": "In the gulf of Valencia an Aragonese squadron attacks the Valencian fleet and is beaten off",
+  "title": "In the gulf of Valencia a single Aragonese ship falls on the Valencian squadron of five and sinks one of them",
   "data": {
-   "result": "allied victory",
+   "result": "allied defeat",
    "naval": true,
    "ours": {
     "Valencia": 5000

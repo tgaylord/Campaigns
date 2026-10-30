@@ -95,5 +95,70 @@
    "expenses": 93.3
   },
   "source": "autosave of 1 July 1365"
+ },
+ {
+  "id": "1365-07-13-peace-cilicia",
+  "date": "1365-07-13",
+  "type": "peace",
+  "wars": [
+   "mamluk-cilician-war"
+  ],
+  "title": "The Mamlūk war on Cilicia ends in the Mamlūks' favour: twelve Cilician towns pass to Cairo",
+  "data": {
+   "with": "CIL",
+   "leader": "MAM",
+   "locationsToMAM": 12
+  },
+  "source": "save of 5 April 1366 (the towns' change of owner)"
+ },
+ {
+  "id": "1365-07-14-battle-canete",
+  "date": "1365-07-14",
+  "type": "battle",
+  "people": [
+   "murad"
+  ],
+  "wars": [
+   "war-of-independence"
+  ],
+  "title": "At Cañete, 1,600 Aragonese attack Murād's army of 5,700 and are thrown back: 1,260 of theirs lost for 190 of ours",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 5692
+   },
+   "oursTotal": 5692,
+   "oursLost": 186,
+   "theirs": {
+    "Aragon": 1571
+   },
+   "theirsTotal": 1571,
+   "theirsLost": 1257,
+   "location": "Cañete",
+   "side": "Granada defending"
+  },
+  "source": "save of 5 April 1366 (before the peace)"
+ },
+ {
+  "id": "1365-09-02-peace-aragon",
+  "date": "1365-09-02",
+  "type": "peace",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "wars": [
+   "war-of-independence"
+  ],
+  "title": "Aragon makes a separate peace and leaves the war, agreeing to pay Granada reparations for ten years",
+  "data": {
+   "with": "ARA",
+   "reparations": {
+    "from": "1365-09-02",
+    "to": "1375-09-02"
+   },
+   "ceded": []
+  },
+  "source": "save of 5 April 1366 (before the peace)"
  }
 ]

@@ -248,7 +248,7 @@
   "id": "war-of-independence",
   "name": "The War of Independence",
   "start": "1363-05-20",
-  "end": null,
+  "end": "1366-04-05",
   "goal": "Independence from Castile",
   "allies": [
    "Valencia",
@@ -268,15 +268,15 @@
    ],
    "defenders": [
     "Castile",
-    "Aragon",
-    "Portugal"
+    "Portugal",
+    "Aragon"
    ]
   },
-  "note": "On 20 May 1363, the day the truce with Castile ran out, Granada went to war for its independence and the amir marched north. The court had begun the claim on 31 December 1361; the casus belli the game gives is 'reclaim al-Andalus'. Castile came to it with only 183 men in its pool and 58 towns, Toledo among them, occupied by the Marīnids, with whom its war went on (Aragon now on Castile's side there). Portugal, which had made its own peace with Morocco, stood with Castile; the court's first aim was to knock it out of the war (save of 20 May 1363; Trent's account). The ṭāʾifas of Balansiyya and Mursiyya came to it untouched, having been kept out of the Marīnid war. Aragon joined Castile against Granada on 27 July 1363. Valencia and Murcia march with Granada; the Mamlūks could be called. On 1 August 1363 Yūsuf I died at Ayamonte on the march into Portugal; the war passed to his son Saʿd and the regent Naṣr al-Istijjī. Saʿd's army struck first into Portugal and laid siege to Lisbon, but the Portuguese army was not there. In the east Portugal and Aragon had joined forces and twice beaten the ṭāʾifas, at Cañete (1 March 1364) and Castellón de la Plana (5 April). The Granadan army marched east and chased them halfway across Iberia. It caught them at Zafra, Castilian land held by the Marīnids, and broke them on 3 August. It then destroyed what was left of the Portuguese and the Aragonese, one after the other, before Lisbon on 10 and 11 September (save of 11 September 1364; Trent's account). Portugal made a separate peace that same day, 11 September 1364. It gave up thirteen towns of the Algarve and the lower Alentejo, 83,000 people, which the court means to make a vassal state once the war is won. Castile and Aragon fight on. The ṭāʾifas held the line in the east: Valencia beat off an Aragonese squadron in the gulf of Valencia (25 September 1364) and a raid at Tortosa (9 March 1365), but the Murcian host was destroyed at Cuenca (27 June 1365) (autosave of 1 July 1365; Trent's account).",
-  "outcome": null,
+  "note": "On 20 May 1363, the day the truce with Castile ran out, Granada went to war for its independence and the amir marched north. The court had begun the claim on 31 December 1361; the casus belli the game gives is 'reclaim al-Andalus'. Castile came to it with only 183 men in its pool and 58 towns, Toledo among them, occupied by the Marīnids, with whom its war went on (Aragon now on Castile's side there). Portugal, which had made its own peace with Morocco, stood with Castile; the court's first aim was to knock it out of the war (save of 20 May 1363; Trent's account). The ṭāʾifas of Balansiyya and Mursiyya came to it untouched, having been kept out of the Marīnid war. Aragon joined Castile against Granada on 27 July 1363. Valencia and Murcia march with Granada; the Mamlūks could be called. On 1 August 1363 Yūsuf I died at Ayamonte on the march into Portugal; the war passed to his son Saʿd and the regent Naṣr al-Istijjī. Saʿd's army struck first into Portugal and laid siege to Lisbon, but the Portuguese army was not there. In the east Portugal and Aragon had joined forces and twice beaten the ṭāʾifas, at Cañete (1 March 1364) and Castellón de la Plana (5 April). The Granadan army marched east and chased them halfway across Iberia. It caught them at Zafra, Castilian land held by the Marīnids, and broke them on 3 August. It then destroyed what was left of the Portuguese and the Aragonese, one after the other, before Lisbon on 10 and 11 September (save of 11 September 1364; Trent's account). Portugal made a separate peace that same day, 11 September 1364. It gave up thirteen towns of the Algarve and the lower Alentejo, 83,000 people, which the court means to make a vassal state once the war is won. Castile and Aragon fight on. The ṭāʾifas held the line in the east: Valencia beat off an Aragonese squadron in the gulf of Valencia (25 September 1364) and a raid at Tortosa (9 March 1365), but the Murcian host was destroyed at Cuenca (27 June 1365) (autosave of 1 July 1365; Trent's account). Murād beat the Aragonese again at Cañete on 14 July 1365, and Aragon made its own peace on 2 September. On 6 January 1366 he destroyed the last Castilian army in the field, under the renegade Ibn al-Khaṭīb, at San Clemente. Castile made peace on 5 April 1366 (saves of 5 April 1366).",
+  "outcome": "Victory. Granada declared its independence from Castile. Portugal (11 September 1364) gave up the Algarve and the lower Alentejo, thirteen towns. Aragon (2 September 1365) paid reparations. Castile (5 April 1366) gave up Niebla and Huelva, six towns. All three are to pay reparations for ten years. The game put Granada back under Castile as a tributary after the peace; Trent will remove that with the console.",
   "joined": {
    "from": "1363-05-20",
-   "to": null
+   "to": "1366-04-05"
   }
  },
  {
@@ -284,7 +284,7 @@
   "name": "The Mamlūk War on Cilicia",
   "gameName": "Mamluk–Cilicia war",
   "start": "1364-06-18",
-  "end": null,
+  "end": "1365-07-13",
   "goal": "Conquer a province of Cilicia (the Mamlūk sultan's casus belli from his council)",
   "allies": [
    "Mamluks"
@@ -305,10 +305,10 @@
    ]
   },
   "note": "The Mamlūks, Granada's allies since 1349, went to war with Armenian Cilicia on 18 June 1364 with their subjects, and Granada and its ṭāʾifas were drawn in as allies. It is a war at the far end of the sea, fought in the middle of Granada's own (save of 11 September 1364).",
-  "outcome": null,
+  "outcome": "Mamlūk victory. Twelve Cilician towns passed to the Mamlūks on 13 July 1365 (save of 5 April 1366, from the towns' change of owner).",
   "joined": {
    "from": "1364-06-18",
-   "to": null
+   "to": "1365-07-13"
   }
  }
 ]

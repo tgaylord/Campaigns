@@ -1,0 +1,83 @@
+[
+ {
+  "id": "1366-01-06-battle-san-clemente",
+  "date": "1366-01-06",
+  "type": "battle",
+  "people": [
+   "murad",
+   "ibn-al-khatib"
+  ],
+  "wars": [
+   "war-of-independence"
+  ],
+  "title": "At San Clemente, Murād's army of 6,250 destroys the last Castilian field army, 950 men under Ibn al-Khaṭīb, the renegade vizier. 840 of them are killed and 105 taken, for 31 of ours",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 6250
+   },
+   "oursTotal": 6250,
+   "oursLost": 31,
+   "theirs": {
+    "Castile": 947
+   },
+   "theirsTotal": 947,
+   "theirsLost": 947,
+   "theirsTaken": 105,
+   "location": "San Clemente",
+   "commanderTheirs": "Ibn al-Khaṭīb (Frederick of Castile)"
+  },
+  "source": "save of 5 April 1366 (before the peace)"
+ },
+ {
+  "id": "1366-04-05-peace-castile",
+  "date": "1366-04-05",
+  "type": "peace",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "wars": [
+   "war-of-independence"
+  ],
+  "title": "Peace with Castile. Granada declares its independence, and Castile gives up the land of Niebla and Huelva, six towns from Ayamonte, where Yūsuf died, to Aracena. It also pays a sum into the treasury and owes reparations for ten years. The War of Independence is over",
+  "data": {
+   "with": "CAS",
+   "independence": true,
+   "ceded": [
+    "Ayamonte",
+    "Huelva",
+    "Aroche",
+    "Aracena",
+    "Puebla de Guzmán",
+    "Almonaster la Real"
+   ],
+   "population": 27523,
+   "gold": 787,
+   "reparations": {
+    "from": "1366-04-05",
+    "to": "1376-04-05"
+   },
+   "gameGlitch": "The game put Granada back under Castile as a tributary after the peace; Trent will remove that with the console"
+  },
+  "source": "save of 5 April 1366 (after the peace); Trent's account"
+ },
+ {
+  "id": "1366-04-05-state",
+  "date": "1366-04-05",
+  "type": "estate_change",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "At the peace the realm holds 62 towns and 732,000 people, 61 of the 72 towns of the Strait's three lands with its ṭāʾifas. The treasury stands at 1,131, with Portugal, Aragon and Castile all paying reparations",
+  "data": {
+   "locations": 62,
+   "population": 731723,
+   "straitHeld": 61,
+   "treasury": 1131,
+   "income": 53.1,
+   "expenses": 88.3
+  },
+  "source": "save of 5 April 1366 (after the peace)"
+ }
+]
