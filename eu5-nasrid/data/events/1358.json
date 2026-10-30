@@ -16,5 +16,48 @@
    "status": "under construction"
   },
   "source": "Trent's account (February 1358; the exact day isn't given)"
+ },
+ {
+  "id": "1358-08-08-foreign-wisdom",
+  "date": "1358-08-08",
+  "type": "player_note",
+  "people": [
+   "dua-marinid"
+  ],
+  "title": "Foreign Wisdom: Duʿāʾ, the Zenata minister of the Marīnid house, is widely praised for bringing fresh ideas and practices to the court, though the nobility are perturbed that a foreigner serves their amir",
+  "data": {
+   "event": "Foreign Wisdom",
+   "effects": "nobility perturbed"
+  },
+  "source": "Trent's screenshot of the event"
+ },
+ {
+  "id": "1358-08-08-works",
+  "date": "1358-08-08",
+  "type": "player_note",
+  "places": [
+   "qurtuba",
+   "jayyan",
+   "gharnata",
+   "istijja",
+   "ishbiliyya",
+   "malaqa",
+   "urjuba"
+  ],
+  "title": "Works under way across the realm: the Great Madrasa of Qurṭuba and a madrasa in Jayyān, a spinners' guild in Gharnāṭa, marketplaces in Istijja, Ishbīliyya and Mālaqa, and a gravel road to Yuz Aryuba; the dīwān funds the bureaucracy from the crown's coffers",
+  "data": {
+   "constructions": [
+    "Great Madrasa, Qurṭuba",
+    "Madrasa, Jayyān",
+    "Spinners' Guild, Gharnāṭa",
+    "Marketplace, Istijja",
+    "Marketplace, Ishbīliyya",
+    "Marketplace, Mālaqa",
+    "Gravel road to Yuz Aryuba"
+   ],
+   "policy": "Bureaucratic Funding: Crown Coffers",
+   "population": 623000
+  },
+  "source": "Trent's screenshot (the construction and government panels, 8 August 1358)"
  }
 ]
