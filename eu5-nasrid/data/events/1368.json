@@ -140,7 +140,7 @@
   "wars": [
    "second-marinid-submission-war"
   ],
-  "title": "The first battle of the war, at Qādis. 3,300 Granadans fall on a Marīnid force of 800 and destroy it: 740 killed and 60 taken, for 65 of ours",
+  "title": "The first battle of the war, at Qādis. Murād's 3,300 Granadans fall on 800 Marīnids led by the sultan of Fās himself, Abū ʿInān Fāris, and destroy them: 740 killed and 60 taken, for 65 of ours",
   "data": {
    "result": "victory",
    "naval": false,
@@ -170,6 +170,104 @@
     }
    }
   },
-  "source": "Trent's screenshot of the battle report (11 November 1368)"
+  "source": "Trent's screenshot of the battle report (11 November 1368); save of 18 November 1369",
+  "people": [
+   "murad",
+   "abu-inan-faris"
+  ]
+ },
+ {
+  "id": "1368-12-01-battle-marbella",
+  "date": "1368-12-01",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "Marbella falls to the sultan's army: its garrison of 13 is overwhelmed without loss",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 2830
+   },
+   "oursTotal": 2830,
+   "oursLost": 0,
+   "theirs": {
+    "Morocco": 13
+   },
+   "theirsTotal": 13,
+   "theirsLost": 13,
+   "location": "Marbella",
+   "side": "Granada attacking"
+  },
+  "source": "save of 18 November 1369"
+ },
+ {
+  "id": "1368-12-13-birth-jadila-bint-saad",
+  "date": "1368-12-13",
+  "type": "birth",
+  "people": [
+   "jadila-bint-saad",
+   "saad-ibn-yusuf",
+   "aiman-mamluk"
+  ],
+  "title": "Aiman bears Sultan Saʿd a second daughter, Jadīla",
+  "data": {},
+  "source": "save of 18 November 1369"
+ },
+ {
+  "id": "1368-12-15-battle-gibraltar",
+  "date": "1368-12-15",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "At Jabal Ṭāriq the Granadans break the army of the so-called Kingdom of Sevilla: 480 of its 800 lost for 120 of ours",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 2830
+   },
+   "oursTotal": 2830,
+   "oursLost": 120,
+   "theirs": {
+    "Kingdom of Sevilla": 800
+   },
+   "theirsTotal": 800,
+   "theirsLost": 478,
+   "location": "Gibraltar",
+   "side": "Granada attacking"
+  },
+  "source": "save of 18 November 1369"
+ },
+ {
+  "id": "1368-12-25-battle-tarifa",
+  "date": "1368-12-25",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "At Ṭarīf the last Sevillan army, 320 men, is destroyed to a man, for 13 of ours",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 2135
+   },
+   "oursTotal": 2135,
+   "oursLost": 13,
+   "theirs": {
+    "Kingdom of Sevilla": 322
+   },
+   "theirsTotal": 322,
+   "theirsLost": 322,
+   "location": "Tarifa",
+   "side": "Granada attacking"
+  },
+  "source": "save of 18 November 1369"
  }
 ]

@@ -1,5 +1,88 @@
 [
  {
+  "id": "1369-01-31-battle-costa-blanca",
+  "date": "1369-01-31",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "Off the Costa Blanca a Mamlūk squadron from Barqa, ten ships, sinks a Tilimsānī ship. The first Mamlūk force to reach the western sea",
+  "data": {
+   "result": "allied victory",
+   "naval": true,
+   "ours": {
+    "Barqa": 10000
+   },
+   "oursTotal": 10000,
+   "oursLost": 0,
+   "theirs": {
+    "Tlemcen": 1000
+   },
+   "theirsTotal": 1000,
+   "theirsLost": 1000,
+   "location": "off the Costa Blanca",
+   "side": "Granada attacking"
+  },
+  "source": "save of 18 November 1369"
+ },
+ {
+  "id": "1369-02-08-battle-marbella",
+  "date": "1369-02-08",
+  "type": "battle",
+  "people": [
+   "murad"
+  ],
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "The first Marīnid landing: 2,600 Moroccans come ashore at Marbella and fall on Murād's army of 6,400. They are thrown back into the sea, 1,540 lost against 570 of ours",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 6357
+   },
+   "oursTotal": 6357,
+   "oursLost": 569,
+   "theirs": {
+    "Morocco": 2593
+   },
+   "theirsTotal": 2593,
+   "theirsLost": 1537,
+   "location": "Marbella",
+   "side": "Granada defending"
+  },
+  "source": "save of 18 November 1369"
+ },
+ {
+  "id": "1369-02-15-battle-ronda",
+  "date": "1369-02-15",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "At Ronda the last of the landing, 1,050 Moroccans, attacks 575 Granadans and is destroyed to a man",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 575
+   },
+   "oursTotal": 575,
+   "oursLost": 0,
+   "theirs": {
+    "Morocco": 1051
+   },
+   "theirsTotal": 1051,
+   "theirsLost": 1051,
+   "location": "Ronda",
+   "side": "Granada defending"
+  },
+  "source": "save of 18 November 1369"
+ },
+ {
   "id": "1369-03-the-south-subdued",
   "date": "1369-03-01",
   "type": "player_note",
@@ -61,5 +144,299 @@
    "granadaManpower": 2603
   },
   "source": "Trent's screenshots of the war screen and army strength (March 1369)"
+ },
+ {
+  "id": "1369-04-05-battle-jerez-de-la-frontera",
+  "date": "1369-04-05",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "The Moroccan counterattack begins. At Jerez a Granadan column of 2,100 attacks 2,000 Moroccans and is wiped out, for 140 of theirs",
+  "data": {
+   "result": "defeat",
+   "naval": false,
+   "ours": {
+    "Granada": 2095
+   },
+   "oursTotal": 2095,
+   "oursLost": 2095,
+   "theirs": {
+    "Morocco": 2000
+   },
+   "theirsTotal": 2000,
+   "theirsLost": 140,
+   "location": "Jerez",
+   "side": "Granada attacking"
+  },
+  "source": "save of 18 November 1369"
+ },
+ {
+  "id": "1369-04-28-battle-jerez-de-la-frontera",
+  "date": "1369-04-28",
+  "type": "battle",
+  "people": [
+   "murad"
+  ],
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "Murād takes Jerez back: 7,250 Granadans and Gharbīs against 1,860 Moroccans, 1,350 of them lost for 960 of ours",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 6744,
+    "Taifa of the Algarve": 504
+   },
+   "oursTotal": 7248,
+   "oursLost": 961,
+   "theirs": {
+    "Morocco": 1858
+   },
+   "theirsTotal": 1858,
+   "theirsLost": 1351,
+   "location": "Jerez",
+   "side": "Granada attacking"
+  },
+  "source": "save of 18 November 1369"
+ },
+ {
+  "id": "1369-05-12-battle-sanlucar",
+  "date": "1369-05-12",
+  "type": "battle",
+  "people": [
+   "murad"
+  ],
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "At Sanlúcar Murād destroys a Moroccan force of 500, for 24 of ours",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 3685
+   },
+   "oursTotal": 3685,
+   "oursLost": 24,
+   "theirs": {
+    "Morocco": 502
+   },
+   "theirsTotal": 502,
+   "theirsLost": 502,
+   "location": "Sanlúcar",
+   "side": "Granada attacking"
+  },
+  "source": "save of 18 November 1369"
+ },
+ {
+  "id": "1369-06-02-battle-cadiz",
+  "date": "1369-06-02",
+  "type": "battle",
+  "people": [
+   "osman-marinid"
+  ],
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "Under Osman the Marīnids relieve Cádiz. A Granadan force of 580 before the fortress is wiped out",
+  "data": {
+   "result": "defeat",
+   "naval": false,
+   "ours": {
+    "Granada": 582
+   },
+   "oursTotal": 582,
+   "oursLost": 582,
+   "theirs": {
+    "Morocco": 2194
+   },
+   "theirsTotal": 2194,
+   "theirsLost": 14,
+   "location": "Cádiz",
+   "side": "Granada defending"
+  },
+  "source": "save of 18 November 1369"
+ },
+ {
+  "id": "1369-06-26-battle-cadiz",
+  "date": "1369-06-26",
+  "type": "battle",
+  "people": [
+   "khalid-ibn-yahya",
+   "osman-marinid"
+  ],
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "The disaster before Cádiz. Khālid ibn Yaḥyā leads 6,460 Granadans, Gharbīs and Murcians against Osman's 4,770 in the fortress lines and is thrown back. 3,860 are lost against 1,420 of theirs",
+  "data": {
+   "result": "defeat",
+   "naval": false,
+   "ours": {
+    "Granada": 5365,
+    "Taifa of the Algarve": 318,
+    "Murcia": 777
+   },
+   "oursTotal": 6460,
+   "oursLost": 3860,
+   "theirs": {
+    "Morocco": 4773
+   },
+   "theirsTotal": 4773,
+   "theirsLost": 1422,
+   "location": "Cádiz",
+   "side": "Granada attacking"
+  },
+  "source": "save of 18 November 1369"
+ },
+ {
+  "id": "1369-estate-loans",
+  "date": "1369-07-18",
+  "type": "estate_change",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "To hire mercenaries the crown borrows from the estates: seven loans of 67 dīnārs each, 469 in all, at nearly 9% over five years. A mercenary company of 4,800 men marches under the Granadan banner",
+  "data": {
+   "loans": 7,
+   "each": 67.03,
+   "total": 469,
+   "interest": 0.087,
+   "months": 60,
+   "mercenaries": 4786
+  },
+  "source": "save of 18 November 1369 (the loans were about four months into their five years, so taken around July 1369); Trent's account"
+ },
+ {
+  "id": "1369-09-16-battle-malaga",
+  "date": "1369-09-16",
+  "type": "battle",
+  "people": [
+   "juan-manuel-enriquez"
+  ],
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "A Moroccan army of 4,800 under Aghlab lands at Málaga and destroys the Murcian host of 410 under Juan Manuel",
+  "data": {
+   "result": "defeat",
+   "naval": false,
+   "ours": {
+    "Murcia": 408
+   },
+   "oursTotal": 408,
+   "oursLost": 408,
+   "theirs": {
+    "Morocco": 4791
+   },
+   "theirsTotal": 4791,
+   "theirsLost": 0,
+   "location": "Málaga",
+   "side": "Granada defending"
+  },
+  "source": "save of 18 November 1369"
+ },
+ {
+  "id": "1369-10-15-battle-antequera",
+  "date": "1369-10-15",
+  "type": "battle",
+  "people": [
+   "khalid-ibn-yahya",
+   "osman-marinid"
+  ],
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "The pitched battle at Antequera. Osman marches inland with 8,040 Moroccans and falls on Khālid's 6,200. The line holds, barely. 4,090 Moroccans fall against 960 of ours, and the Marīnid tide is turned back from the heart of the realm",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 6195
+   },
+   "oursTotal": 6195,
+   "oursLost": 964,
+   "theirs": {
+    "Morocco": 8036
+   },
+   "theirsTotal": 8036,
+   "theirsLost": 4087,
+   "location": "Antequera",
+   "side": "Granada defending"
+  },
+  "source": "save of 18 November 1369"
+ },
+ {
+  "id": "1369-11-08-battle-almunecar",
+  "date": "1369-11-08",
+  "type": "battle",
+  "people": [
+   "khalid-ibn-yahya"
+  ],
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "At Almuñécar Khālid's 7,880 crush 1,870 Moroccans besieging the town, 1,110 of them lost for 200 of ours",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 7877
+   },
+   "oursTotal": 7877,
+   "oursLost": 197,
+   "theirs": {
+    "Morocco": 1871
+   },
+   "theirsTotal": 1871,
+   "theirsLost": 1114,
+   "location": "Almuñécar",
+   "side": "Granada attacking"
+  },
+  "source": "save of 18 November 1369"
+ },
+ {
+  "id": "1369-11-18-state",
+  "date": "1369-11-18",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf",
+   "khalid-ibn-yahya"
+  ],
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "A year into the war. The Moroccan counterattack has won back the north shore: of the towns taken that first winter, only Niebla is still held, and Moroccan armies stand at Ronda, Adra and Málaga. Khālid's army of 7,700 holds at Almuñécar, and the first Mamlūk troops, 5,700, have come ashore at Gérgal. Expenses are 176 a month against an income of 76, with 770 in the treasury",
+  "data": {
+   "forces": {
+    "GRA": {
+     "men": 7679,
+     "of which mercenaries": 4786
+    },
+    "MAM in Iberia": 5696,
+    "MOR in Iberia": {
+     "Ronda": 3923,
+     "Adra": 970,
+     "Málaga": 753
+    },
+    "MOR in Africa": 8886,
+    "TLE in Africa": 12235,
+    "TFL in Africa": 5746
+   },
+   "treasury": 770,
+   "income": 76.2,
+   "expenses": 175.7,
+   "manpower": 1789,
+   "occupied": [
+    "Almuñécar"
+   ]
+  },
+  "source": "save of 18 November 1369"
  }
 ]

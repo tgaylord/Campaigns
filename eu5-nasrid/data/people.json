@@ -646,7 +646,7 @@
    "mil": 83
   },
   "traits": [],
-  "note": "Ruler of Murcia from its release as a ṭāʾifa on 23 August 1340: a Castilian, Sunni. The chronicle keeps the Christian name he was born with, as the game does (Trent's decision), so he stays recognisable later."
+  "note": "Ruler of Murcia from its release as a ṭāʾifa on 23 August 1340: a Castilian, Sunni. The chronicle keeps the Christian name he was born with, as the game does (Trent's decision), so he stays recognisable later. His host of 410 was destroyed by a Moroccan landing at Málaga on 16 September 1369."
  },
  {
   "id": "khalid-ibn-yahya",
@@ -658,16 +658,19 @@
   "born": "1342-12-30",
   "father": "yahya-rahhu",
   "mother": "qamar",
-  "roles": [],
+  "roles": [
+   "general"
+  ],
   "stats": {
    "adm": 80.7,
    "dip": 85.2,
    "mil": 78.4
   },
   "traits": [
-   "architect"
+   "architect",
+   "hardy_warrior"
   ],
-  "note": "Son of Yaḥyā Raḥḥū and Qamar, the mother of Ismāʿīl ibn Ismāʿīl: born into the Raḥḥū house on 30 December 1342. Took his seat in the dīwān on 2 April 1359, at sixteen, after Ismāʿīl ibn Ismāʿīl left for the Aydınid court; set to promoting Andalusī culture. One of the ablest men at court (80/85/78), an architect. Left the dīwān on 10 April 1366, when Maryam bint Ismāʿīl took his seat."
+  "note": "Son of Yaḥyā Raḥḥū and Qamar, the mother of Ismāʿīl ibn Ismāʿīl: born into the Raḥḥū house on 30 December 1342. Took his seat in the dīwān on 2 April 1359, at sixteen, after Ismāʿīl ibn Ismāʿīl left for the Aydınid court; set to promoting Andalusī culture. One of the ablest men at court (80/85/78), an architect. Left the dīwān on 10 April 1366, when Maryam bint Ismāʿīl took his seat. A general in the Second Marīnid War: he was thrown back before Cádiz on 26 June 1369, held the line at Antequera on 15 October and won at Almuñécar on 8 November (save of 18 November 1369)."
  },
  {
   "id": "alfonso-xi",
@@ -803,7 +806,7 @@
   "nameGame": "Aiman",
   "female": true,
   "roles": [],
-  "note": "Daughter of the Mamluk Sultan, betrothed to Saʿd ibn Yūsuf, heir of Granada, on 19 January 1351. Married to Saʿd before he came of age; at his majority in January 1364 she was his only wife, until he also married Duʿāʾ. Mother of Saʿd's first child, Umm al-Fatḥ (born 13 December 1364).",
+  "note": "Daughter of the Mamluk Sultan, betrothed to Saʿd ibn Yūsuf, heir of Granada, on 19 January 1351. Married to Saʿd before he came of age; at his majority in January 1364 she was his only wife, until he also married Duʿāʾ. Mother of Saʿd's first child, Umm al-Fatḥ (born 13 December 1364). Mother of Jadīla bint Saʿd (born 13 December 1368).",
   "born": "1344-04-06",
   "gameId": 32464,
   "dynasty": "Baḥrī"
@@ -1043,7 +1046,7 @@
    "hermit",
    "offensive_planner"
   ],
-  "note": "Granadan general in the War of Independence. He chased the joined armies of Portugal and Aragon halfway across Iberia and broke them at Zafra on 3 August 1364. Then, on 10 and 11 September, he destroyed their remnants one after the other before Lisbon (save of 11 September 1364). He threw back the Aragonese at Cañete (14 July 1365). At San Clemente (6 January 1366) he destroyed the last Castilian army in the field, commanded by the renegade Ibn al-Khaṭīb (save of 5 April 1366)."
+  "note": "Granadan general in the War of Independence. He chased the joined armies of Portugal and Aragon halfway across Iberia and broke them at Zafra on 3 August 1364. Then, on 10 and 11 September, he destroyed their remnants one after the other before Lisbon (save of 11 September 1364). He threw back the Aragonese at Cañete (14 July 1365). At San Clemente (6 January 1366) he destroyed the last Castilian army in the field, commanded by the renegade Ibn al-Khaṭīb (save of 5 April 1366). In the Second Marīnid War he destroyed the sultan of Fās's own force at Cádiz (11 November 1368), threw the first Marīnid landing back into the sea at Marbella (8 February 1369) and retook Jerez (28 April)."
  },
  {
   "id": "umm-al-fath-bint-saad",
@@ -1093,5 +1096,63 @@
   },
   "traits": [],
   "note": "A Portuguese lord, now a Muslim, set over the Ṭāʾifa of al-Gharb when Granada released the Portuguese south as its vassal on 13 April 1366 (save of 6 November 1366). In September 1368 Castile guaranteed his ṭāʾifa's independence, and Granada backed the loyalists against it."
+ },
+ {
+  "id": "jadila-bint-saad",
+  "name": "Jadīla bint Saʿd",
+  "nameArabic": "جديلة بنت سعد",
+  "nameGame": "Jadila",
+  "gameId": 56604,
+  "dynasty": "Naṣrid",
+  "born": "1368-12-13",
+  "father": "saad-ibn-yusuf",
+  "mother": "aiman-mamluk",
+  "female": true,
+  "roles": [],
+  "traits": []
+ },
+ {
+  "id": "abu-inan-faris",
+  "name": "Abū ʿInān Fāris",
+  "nameArabic": "أبو عنان فارس",
+  "nameGame": "Faris",
+  "gameId": 3321,
+  "dynasty": "Marīnid",
+  "born": "1329-01-01",
+  "roles": [
+   "sultan of Morocco"
+  ],
+  "stats": {
+   "adm": 49.7,
+   "dip": 44.8,
+   "mil": 68.3
+  },
+  "traits": [
+   "zealot",
+   "offensive_planner",
+   "calm",
+   "bubonic_plague_trait"
+  ],
+  "note": "Marīnid sultan of Fās. He declared the Second War for the Submission of Granada on 24 October 1368 and led the first Marīnid force across the Strait himself. Murād destroyed it at Cádiz on 11 November 1368 (save of 18 November 1369)."
+ },
+ {
+  "id": "osman-marinid",
+  "name": "ʿUthmān",
+  "nameGame": "Osman",
+  "gameId": 24671,
+  "born": "1338-06-29",
+  "roles": [
+   "Marīnid general"
+  ],
+  "stats": {
+   "adm": 68.9,
+   "dip": 40.5,
+   "mil": 49.8
+  },
+  "traits": [
+   "born_to_the_saddle",
+   "level_headed"
+  ],
+  "note": "The Marīnid general of the 1369 counterattack. He relieved Cádiz and threw Khālid back before it (2 and 26 June 1369). Then he marched on the heart of the realm and was stopped at Antequera (15 October 1369)."
  }
 ]
