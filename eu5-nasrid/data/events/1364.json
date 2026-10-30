@@ -1,0 +1,49 @@
+[
+ {
+  "id": "1364-01-18-saad-of-age",
+  "date": "1364-01-18",
+  "type": "ruler_change",
+  "people": [
+   "saad-ibn-yusuf",
+   "nasr-al-istijji"
+  ],
+  "title": "Saʿd ibn Yūsuf comes of age at sixteen and takes the government into his own hands. The regency of Naṣr al-Istijjī ends",
+  "data": {
+   "regencyEnds": true,
+   "regent": "nasr-al-istijji"
+  },
+  "source": "Trent's account"
+ },
+ {
+  "id": "1364-01-death-nasr",
+  "date": "1364-01-22",
+  "type": "death",
+  "people": [
+   "nasr-al-istijji"
+  ],
+  "title": "Naṣr al-Istijjī, regent for barely half a year, dies of 'sickness' in the days after the young sultan comes of age",
+  "data": {
+   "cause": "sickness"
+  },
+  "source": "Trent's account (in the days after 18 January 1364; exact date not given)"
+ },
+ {
+  "id": "1364-01-saad-marries-dua",
+  "date": "1364-01-25",
+  "type": "marriage",
+  "people": [
+   "saad-ibn-yusuf",
+   "dua-marinid",
+   "aiman-mamluk"
+  ],
+  "title": "Sultan Saʿd takes a second wife: Duʿāʾ of the Marīnid house, twice widowed, his father's widow and minister. He comes to the throne with two wives, Aiman the Mamlūk and Duʿāʾ the Marīnid",
+  "data": {
+   "with": "MOR",
+   "wives": [
+    "aiman-mamluk",
+    "dua-marinid"
+   ]
+  },
+  "source": "Trent's account (soon after Naṣr's death; exact date not given)"
+ }
+]
