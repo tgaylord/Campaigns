@@ -475,7 +475,8 @@
    "adm": 64.0,
    "dip": 74.0,
    "mil": 55.0
-  }
+  },
+  "note": "Married into the ruling house of the Ṭāʾifa of Balansiyya (royal marriage of 22 November 1340)."
  },
  {
   "id": "maryam-bint-ismail",
@@ -493,7 +494,8 @@
    "adm": 48.0,
    "dip": 54.0,
    "mil": 61.0
-  }
+  },
+  "note": "Married into the Karasids of Anatolia (royal marriage of 2 August 1353)."
  },
  {
   "id": "ismail-ibn-ismail",
@@ -513,7 +515,8 @@
   },
   "traits": [
    "child_gregarious"
-  ]
+  ],
+  "note": "Betrothed on 16 March 1354 to a daughter of the Aydınids of Anatolia."
  },
  {
   "id": "muhammad-ibn-ismail",

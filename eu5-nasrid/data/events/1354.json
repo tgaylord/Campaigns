@@ -13,11 +13,14 @@
   "id": "1354-03-16-betrothal-aydinids",
   "date": "1354-03-16",
   "type": "diplomacy",
-  "title": "A Naṣrid betrothal is agreed with the Aydınids of Anatolia",
+  "title": "Ismāʿīl ibn Ismāʿīl, the amir's brother, is betrothed to a daughter of the Aydınids of Anatolia",
   "data": {
    "with": "AYD"
   },
-  "source": "save of 16 June 1355 (treaty record)"
+  "source": "save of 16 June 1355 (treaty record); who married is Trent's account",
+  "people": [
+   "ismail-ibn-ismail"
+  ]
  },
  {
   "id": "1354-07-governor-begun",

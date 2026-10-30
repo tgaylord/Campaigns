@@ -199,10 +199,13 @@
   "id": "1353-08-02-royal-marriage-karasids",
   "date": "1353-08-02",
   "type": "diplomacy",
-  "title": "A royal marriage binds the house of Naṣr to the Karasids of Anatolia",
+  "title": "Maryam, the amir's younger sister, is married into the Karasids of Anatolia",
   "data": {
    "with": "KRD"
   },
-  "source": "save of 16 June 1355 (treaty record)"
+  "source": "save of 16 June 1355 (treaty record); who married is Trent's account",
+  "people": [
+   "maryam-bint-ismail"
+  ]
  }
 ]
