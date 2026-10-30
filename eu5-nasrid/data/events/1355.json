@@ -148,6 +148,19 @@
   "source": "Trent's account"
  },
  {
+  "id": "1355-03-28-birth-aisha",
+  "date": "1355-03-28",
+  "type": "birth",
+  "people": [
+   "aisha-bint-faraj",
+   "faraj-ibn-ismail",
+   "shama-sahara"
+  ],
+  "title": "A daughter, ʿĀʾisha, is born in Granada to Shamʿa, the wife Faraj left behind when he went south to Ghana",
+  "data": {},
+  "source": "save of 16 June 1355; that Shamʿa stayed is Trent's account"
+ },
+ {
   "id": "1355-06-16-state",
   "date": "1355-06-16",
   "type": "strait_change",

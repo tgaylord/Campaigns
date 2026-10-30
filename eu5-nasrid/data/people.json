@@ -824,6 +824,22 @@
   "nameGame": "Sham'a",
   "female": true,
   "roles": [],
-  "note": "Of a ruling house of the central Sahara (the game's AAA43). First wife of Faraj ibn Ismāʿīl, by the royal marriage of 1 March 1354, before his second marriage to Fatiu of Ghana."
+  "note": "Of a ruling house of the central Sahara (the game's AAA43). First wife of Faraj ibn Ismāʿīl, by the royal marriage of 1 March 1354, before his second marriage to Fatiu of Ghana. When Faraj went south to Ghana she stayed in Granada with his child.",
+  "born": "1334-07-05",
+  "gameId": 26774
+ },
+ {
+  "id": "aisha-bint-faraj",
+  "name": "ʿĀʾisha bint Faraj",
+  "nameArabic": "عائشة بنت فرج",
+  "nameGame": "Aisha",
+  "dynasty": "Naṣrid",
+  "female": true,
+  "born": "1355-03-28",
+  "father": "faraj-ibn-ismail",
+  "mother": "shama-sahara",
+  "gameId": 16790542,
+  "roles": [],
+  "note": "Daughter of Faraj ibn Ismāʿīl and Shamʿa, born 28 March 1355 in Granada, about three months after her father had gone south to Ghana."
  }
 ]
