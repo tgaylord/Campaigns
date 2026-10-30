@@ -125,5 +125,53 @@
    "leaves": "GRA"
   },
   "source": "Trent's account (about June 1362, after the save of 10 June; the exact day isn't given)"
+ },
+ {
+  "id": "1362-11-01-qasr-al-riyad",
+  "date": "1362-11-01",
+  "type": "reform",
+  "people": [
+   "yusuf-i"
+  ],
+  "places": [
+   "gharnata"
+  ],
+  "title": "Qaṣr al-Riyāḍ al-Saʿīd: not content with the glory al-Ḥamrāʾ already brings, the amir hires the finest architects to raise a palace in its heart, filled with lion statues and muqarnas vaults, to show the glory of the house of Naṣr to the whole Muslim world",
+  "data": {
+   "event": "Qaṣr ar-Riyāḍ as-Saʿīd",
+   "choice": "Let the world behold the glory of the Nasrid!",
+   "alhambraMaxLevel": "+1",
+   "gold": -9.1,
+   "prestige": 10,
+   "innovative": 5,
+   "historical": "the Palace of the Lions, begun under Muḥammad V"
+  },
+  "source": "Trent's screenshot of the event, with the option's tooltip open"
+ },
+ {
+  "id": "1362-11-01-state",
+  "date": "1362-11-01",
+  "type": "player_note",
+  "places": [
+   "ishbiliyya",
+   "qurtuba",
+   "qusantina"
+  ],
+  "title": "Peace at home: the dīwān works to assimilate Ishbīliyya and Qurṭuba, the mines of Qusanṭīna are being expanded, and the diplomats are at work on the matter of independence",
+  "data": {
+   "cabinet": [
+    "assimilating Sevilla",
+    "assimilating Córdoba"
+   ],
+   "constructions": [
+    "mines, Qusanṭīna",
+    "farms, Yuz Aryuba, Basṭa, Wādī Āsh"
+   ],
+   "diplomacy": [
+    "Independence",
+    "Building Spy Network"
+   ]
+  },
+  "source": "Trent's screenshot, 1 November 1362"
  }
 ]
