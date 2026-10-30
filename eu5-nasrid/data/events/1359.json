@@ -105,5 +105,21 @@
    "portugalArmy": 500
   },
   "source": "Trent's screenshot, 1 July 1359"
+ },
+ {
+  "id": "1359-07-noble-to-council",
+  "date": "1359-07-01",
+  "type": "appointment",
+  "people": [
+   "ismail-ibn-ismail",
+   "sayyida-of-fezzan"
+  ],
+  "title": "Ismāʿīl's empty seat in the dīwān goes to a noble of the court. The amir would have given it to Sayyida, his first wife, but it was not to be",
+  "data": {
+   "replaces": "ismail-ibn-ismail",
+   "wanted": "sayyida-of-fezzan",
+   "note": "the game would not allow Sayyida"
+  },
+  "source": "Trent's account (about July 1359)"
  }
 ]
