@@ -55,5 +55,21 @@
    "influence": -3.07
   },
   "source": "save of 26 June 1360"
+ },
+ {
+  "id": "1360-06-26-chance-lost",
+  "date": "1360-06-26",
+  "type": "player_note",
+  "people": [
+   "yusuf-i"
+  ],
+  "wars": [
+   "marinid-submission-war"
+  ],
+  "title": "The court's bitterness: Qashtāla and Portugal had bled in Arghūn (their losses reckoned at 10,000 and 30,000) and lay open to a war of independence. Instead Gharnāṭa must spend its own men throwing back the Marīnids until Qashtāla can send its levies south",
+  "data": {
+   "castilePortugalLossesInAragon": "10k/30k (Trent's figures)"
+  },
+  "source": "Trent's account"
  }
 ]
