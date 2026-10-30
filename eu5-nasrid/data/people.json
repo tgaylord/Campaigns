@@ -793,5 +793,14 @@
   "female": true,
   "roles": [],
   "note": "A princess of the Marīnid house of Fās, betrothed to Granada on 18 January 1348 and married to Yūsuf I about 12 August 1355: the one Marīnid bond that outlived Morocco's annulment of its treaties with Granada in 1351."
+ },
+ {
+  "id": "tizemt-hafsid",
+  "name": "Tizemt",
+  "nameGame": "Tizemt",
+  "dynasty": "Ḥafṣid",
+  "female": true,
+  "roles": [],
+  "note": "A princess of the Ḥafṣid house of Tūnis, betrothed to Granada on 23 July 1345 and married to Yūsuf I on 19 November 1355, three months after his Marīnid marriage. Her name is Berber (Amazigh)."
  }
 ]
