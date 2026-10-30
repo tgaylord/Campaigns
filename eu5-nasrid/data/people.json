@@ -785,7 +785,7 @@
   "traits": [
    "prodigy"
   ],
-  "note": "First son of Yūsuf I and Sayyida of Fezzan, born 18 January 1348 in the second year of the war with the three crowns. Betrothed on 19 January 1351 to Aiman, daughter of the Mamluk Sultan. The same winter the Chancellor reported him a Prodigy: a child predestined, the court said, to leave his name in the history books. His father brought the finest tutors of the Islamic world to Gharnāṭa for him, several Christians among them. Succeeded his father on 1 August 1363 at fifteen, under the regency of Naṣr al-Istijjī until he came of age on 18 January 1364. At his accession his abilities stood at 100/69/100, the prodigy fulfilled. His accession was not clean. Naṣr died of 'sickness' in the days after the regency ended, and Saʿd then married Naṣr's widow Duʿāʾ, his father's Marīnid widow and minister. He began his personal rule with two wives, Aiman the Mamlūk and Duʿāʾ the Marīnid.",
+  "note": "First son of Yūsuf I and Sayyida of Fezzan, born 18 January 1348 in the second year of the war with the three crowns. Betrothed on 19 January 1351 to Aiman, daughter of the Mamluk Sultan. The same winter the Chancellor reported him a Prodigy: a child predestined, the court said, to leave his name in the history books. His father brought the finest tutors of the Islamic world to Gharnāṭa for him, several Christians among them. Succeeded his father on 1 August 1363 at fifteen, under the regency of Naṣr al-Istijjī until he came of age on 18 January 1364. At his accession his abilities stood at 100/69/100, the prodigy fulfilled. His accession was not clean. Naṣr died on the very day the regency ended, of 'sickness' as the court gave out (a hunting accident, the game says), and Saʿd then married Naṣr's widow Duʿāʾ, his father's Marīnid widow and minister. He began his personal rule with two wives, Aiman the Mamlūk and Duʿāʾ the Marīnid.",
   "reigns": [
    {
     "from": "1363-08-01",
@@ -799,7 +799,10 @@
   "nameGame": "Aiman",
   "female": true,
   "roles": [],
-  "note": "Daughter of the Mamluk Sultan, betrothed to Saʿd ibn Yūsuf, heir of Granada, on 19 January 1351. Married to Saʿd before he came of age; at his majority in January 1364 she was his only wife, until he also married Duʿāʾ."
+  "note": "Daughter of the Mamluk Sultan, betrothed to Saʿd ibn Yūsuf, heir of Granada, on 19 January 1351. Married to Saʿd before he came of age; at his majority in January 1364 she was his only wife, until he also married Duʿāʾ.",
+  "born": "1344-04-06",
+  "gameId": 32464,
+  "dynasty": "Baḥrī"
  },
  {
   "id": "dua-marinid",
@@ -887,8 +890,8 @@
   "traits": [
    "babbling_buffoon"
   ],
-  "note": "A noble of the house of Istijja (Écija). The game made him regent during Yūsuf I's Hajj (the chronicle gave that regency to Faraj); on Yūsuf's death in August 1363 he became regent for the young Saʿd, and at once married Duʿāʾ, the late amir's Marīnid widow and minister. The game calls him a babbling buffoon. His regency ended when Saʿd came of age on 18 January 1364, and he died of 'sickness' a few days later (exact date not given). Duʿāʾ, his widow, married the young sultan soon after.",
-  "died": "1364-01-22"
+  "note": "A noble of the house of Istijja (Écija). The game made him regent during Yūsuf I's Hajj (the chronicle gave that regency to Faraj); on Yūsuf's death in August 1363 he became regent for the young Saʿd, and at once married Duʿāʾ, the late amir's Marīnid widow and minister. The game calls him a babbling buffoon. His regency ended when Saʿd came of age on 18 January 1364, and he died that same day. The court called it 'sickness'; the game records a hunting accident. Duʿāʾ, his widow, married the young sultan soon after.",
+  "died": "1364-01-18"
  },
  {
   "id": "ismail-ibn-yusuf",
@@ -901,10 +904,13 @@
   "father": "yusuf-i",
   "mother": "sayyida-of-fezzan",
   "female": false,
-  "roles": [],
+  "roles": [
+   "heir"
+  ],
   "traits": [
    "child_gallant"
-  ]
+  ],
+  "note": "Heir to his half-brother Saʿd while Saʿd has no son (save of 11 September 1364)."
  },
  {
   "id": "ali-ibn-yusuf",
@@ -1016,5 +1022,25 @@
   "female": true,
   "roles": [],
   "traits": []
+ },
+ {
+  "id": "murad",
+  "name": "Murād",
+  "nameGame": "Murad",
+  "gameId": 16806806,
+  "born": "1332-03-14",
+  "roles": [
+   "general"
+  ],
+  "stats": {
+   "adm": 59,
+   "dip": 54,
+   "mil": 79
+  },
+  "traits": [
+   "hermit",
+   "offensive_planner"
+  ],
+  "note": "Granadan general in the War of Independence. He chased the joined armies of Portugal and Aragon halfway across Iberia and broke them at Zafra on 3 August 1364. Then, on 10 and 11 September, he destroyed their remnants one after the other before Lisbon (save of 11 September 1364)."
  }
 ]

@@ -15,17 +15,18 @@
   "source": "Trent's account"
  },
  {
-  "id": "1364-01-death-nasr",
-  "date": "1364-01-22",
+  "id": "1364-01-18-death-nasr",
+  "date": "1364-01-18",
   "type": "death",
   "people": [
    "nasr-al-istijji"
   ],
-  "title": "Naṣr al-Istijjī, regent for barely half a year, dies of 'sickness' in the days after the young sultan comes of age",
+  "title": "Naṣr al-Istijjī, regent for barely half a year, dies on the very day the young sultan comes of age. The court gives out that it was 'sickness'; the game records a hunting accident",
   "data": {
-   "cause": "sickness"
+   "cause": "hunting_accident",
+   "causeGiven": "sickness"
   },
-  "source": "Trent's account (in the days after 18 January 1364; exact date not given)"
+  "source": "save of 11 September 1364 (died 18 January 1364, hunting accident); Trent's account ('sickness')"
  },
  {
   "id": "1364-01-saad-marries-dua",
@@ -44,7 +45,66 @@
     "dua-marinid"
    ]
   },
-  "source": "Trent's account (soon after Naṣr's death; exact date not given)"
+  "source": "Trent's account (after Naṣr's death on 18 January 1364; exact date not given)"
+ },
+ {
+  "id": "1364-03-01-battle-canete",
+  "date": "1364-03-01",
+  "type": "battle",
+  "people": [
+   "joan-doriola"
+  ],
+  "wars": [
+   "war-of-independence"
+  ],
+  "title": "A Portuguese army of 4,200 falls on the Valencian host at Cañete and breaks it: 1,100 of the 2,400 men of Balansiyya are lost, for 300 Portuguese",
+  "data": {
+   "result": "defeat",
+   "naval": false,
+   "ours": {
+    "Valencia": 2365
+   },
+   "oursTotal": 2365,
+   "oursLost": 1129,
+   "theirs": {
+    "Portugal": 4240
+   },
+   "theirsTotal": 4240,
+   "theirsLost": 296,
+   "location": "Cañete",
+   "side": "Valencia defending"
+  },
+  "source": "save of 11 September 1364"
+ },
+ {
+  "id": "1364-04-05-battle-castellon",
+  "date": "1364-04-05",
+  "type": "battle",
+  "people": [
+   "juan-manuel-enriquez"
+  ],
+  "wars": [
+   "war-of-independence"
+  ],
+  "title": "The ṭāʾifas of Balansiyya and Mursiyya attack the joined armies of Portugal and Aragon at Castellón de la Plana and are thrown back: 2,800 against 7,600, and 1,200 lost for 340",
+  "data": {
+   "result": "defeat",
+   "naval": false,
+   "ours": {
+    "Murcia": 1538,
+    "Valencia": 1235
+   },
+   "oursTotal": 2773,
+   "oursLost": 1189,
+   "theirs": {
+    "Portugal": 4065,
+    "Aragon": 3513
+   },
+   "theirsTotal": 7578,
+   "theirsLost": 337,
+   "location": "Castellón de la Plana"
+  },
+  "source": "save of 11 September 1364"
  },
  {
   "id": "1364-05-19-ulama-displeased",
@@ -83,5 +143,162 @@
    "estate": "clergy"
   },
   "source": "Trent's account (by 19 May 1364)"
+ },
+ {
+  "id": "1364-06-18-mamluk-war",
+  "date": "1364-06-18",
+  "type": "war_joined",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "wars": [
+   "mamluk-cilician-war"
+  ],
+  "title": "Granada is drawn in as an ally when the Mamlūks go to war with Cilicia",
+  "data": {
+   "leader": "MAM",
+   "target": "CIL",
+   "cb": "cb_parliament_conquer_province"
+  },
+  "source": "save of 11 September 1364"
+ },
+ {
+  "id": "1364-08-03-battle-zafra",
+  "date": "1364-08-03",
+  "type": "battle",
+  "people": [
+   "murad"
+  ],
+  "wars": [
+   "war-of-independence"
+  ],
+  "title": "After chasing it halfway across Iberia, the Granadan army under Murād catches the joined host of Portugal and Aragon at Zafra, in Castilian land held by the Marīnids, and breaks it: 9,800 against 6,750, and 3,350 of theirs lost for 2,200 of ours",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 8583,
+    "Valencia": 1235
+   },
+   "oursTotal": 9818,
+   "oursLost": 2197,
+   "theirs": {
+    "Portugal": 3721,
+    "Aragon": 3033
+   },
+   "theirsTotal": 6754,
+   "theirsLost": 3355,
+   "location": "Zafra",
+   "commanderTheirs": "Anthony of Portugal (86/46/62)"
+  },
+  "source": "save of 11 September 1364"
+ },
+ {
+  "id": "1364-09-10-battle-lisbon",
+  "date": "1364-09-10",
+  "type": "battle",
+  "people": [
+   "murad"
+  ],
+  "wars": [
+   "war-of-independence"
+  ],
+  "title": "Before the walls of Lisbon the Granadan army destroys the Portuguese remnant of Zafra: all 1,620 killed or taken, for none of ours",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 6612,
+    "Valencia": 1009
+   },
+   "oursTotal": 7621,
+   "oursLost": 0,
+   "theirs": {
+    "Portugal": 1623
+   },
+   "theirsTotal": 1623,
+   "theirsLost": 1623,
+   "location": "Lisbon",
+   "theirsTaken": 319
+  },
+  "source": "save of 11 September 1364"
+ },
+ {
+  "id": "1364-09-11-battle-lisbon",
+  "date": "1364-09-11",
+  "type": "battle",
+  "people": [
+   "murad"
+  ],
+  "wars": [
+   "war-of-independence"
+  ],
+  "title": "The next day, at Lisbon again, the Aragonese remnant is destroyed in its turn: 1,770 killed or taken, for none of ours",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 6932,
+    "Valencia": 1009
+   },
+   "oursTotal": 7941,
+   "oursLost": 0,
+   "theirs": {
+    "Aragon": 1772
+   },
+   "theirsTotal": 1772,
+   "theirsLost": 1772,
+   "location": "Lisbon",
+   "theirsTaken": 85,
+   "commanderTheirs": "Arnold of Aragon"
+  },
+  "source": "save of 11 September 1364"
+ },
+ {
+  "id": "1364-09-11-andalusi-majority",
+  "date": "1364-09-11",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "The realm's people are quickly going back to their Andalusī roots. Andalusīs are now 54% and Castilians 40%, where in March 1359 the two had been nearly equal. In faith the realm is still split, 302,000 Sunnī to 291,000 Catholic",
+  "data": {
+   "cultures": {
+    "1359-03-15": {
+     "Andalusi": 292304,
+     "Castilian": 289985
+    },
+    "1363-08-02": {
+     "Andalusi": 325449,
+     "Castilian": 263999
+    },
+    "1364-09-11": {
+     "Andalusi": 341323,
+     "Castilian": 248208
+    }
+   },
+   "religions": {
+    "Sunni": 302136,
+    "Catholic": 291135
+   }
+  },
+  "source": "save of 11 September 1364; Trent's account"
+ },
+ {
+  "id": "1364-09-11-state",
+  "date": "1364-09-11",
+  "type": "estate_change",
+  "wars": [
+   "war-of-independence"
+  ],
+  "title": "The treasury holds 522, but the deficit remains (income 55 against expenses 94 a month). The ʿulamāʾ stand at 47% and the dhimmīs, taxed again, at 66%, down from 84%",
+  "data": {
+   "treasury": 522,
+   "income": 54.8,
+   "expenses": 93.5,
+   "clergy": 47,
+   "dhimmi": 66
+  },
+  "source": "save of 11 September 1364"
  }
 ]
