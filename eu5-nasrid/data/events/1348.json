@@ -337,5 +337,35 @@
    }
   },
   "source": "Trent's screenshot of the peace"
+ },
+ {
+  "id": "1348-11-01-maid-draft",
+  "date": "1348-11-01",
+  "type": "estate_change",
+  "title": "The Maid Draft: no wage will tempt servants into the houses of sick noblemen, and the nobility demand the right to draft commoners into service; the amir grants it",
+  "data": {
+   "event": "The Maid Draft",
+   "choice": "Institute the draft!",
+   "favours": "nobles",
+   "against": "peasants"
+  },
+  "source": "Trent's screenshot of his choice"
+ },
+ {
+  "id": "1348-11-02-plague-toll",
+  "date": "1348-11-02",
+  "type": "situation",
+  "title": "The pestilence has now struck 11 of the realm's locations and killed 9,055 of its people; across the known world it has carried off more than twenty million since it rose at Yaik",
+  "data": {
+   "affectedLocations": 11,
+   "countryDeaths": 9055,
+   "worldDeaths": 20256000,
+   "origin": "yaik",
+   "start": "1346-08-01",
+   "responses": [
+    "segregate_the_infected"
+   ]
+  },
+  "source": "Trent's screenshot of the Black Death panel"
  }
 ]
