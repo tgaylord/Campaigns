@@ -1,0 +1,19 @@
+[
+ {
+  "id": "1356-06-09-textile-charter",
+  "date": "1356-06-09",
+  "type": "reform",
+  "people": [
+   "yusuf-i"
+  ],
+  "places": [
+   "gharnata"
+  ],
+  "title": "A formal textile charter is granted to Gharnāṭa: the silk and cloth of the city have become a pillar of the realm's economy",
+  "data": {
+   "charter": "textile",
+   "location": "granada"
+  },
+  "source": "Trent's account"
+ }
+]
