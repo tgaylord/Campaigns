@@ -139,5 +139,41 @@
    "stability": 17.5
   },
   "source": "save of 3 July 1353"
+ },
+ {
+  "id": "1353-07-05-revolt-ends",
+  "date": "1353-07-05",
+  "type": "peace",
+  "people": [
+   "yusuf-i",
+   "alfonso-xi"
+  ],
+  "places": [
+   "qurtuba",
+   "ishbiliyya",
+   "jayyan",
+   "qusantina",
+   "qarmuna"
+  ],
+  "wars": [
+   "sevillan-revolt"
+  ],
+  "title": "The Kingdom of Sevilla is no more. The revolt ends with the rebels crushed before the Castilians could come, and Qashtāla reaffirms the old border: all 25 locations, Qurṭuba, Ishbīliyya, Jayyān and the silver of Qusanṭīna among them, return to Granada",
+  "data": {
+   "locations": {
+    "from": 18,
+    "to": 43
+   },
+   "population": {
+    "from": 270227,
+    "to": 600584
+   },
+   "straitAreasHeld": {
+    "from": 30,
+    "to": 55
+   },
+   "border": "Peace of Qurṭuba (1349) and the cession of 1351"
+  },
+  "source": "save of 5 July 1353; Trent's account"
  }
 ]
