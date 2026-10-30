@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom";
-import { warById, events, placeById, mentionsOf, hijri, western, year, nf, signed } from "../lib/data";
+import { warById, events, placeById, mentionsOf, hijri, western, year, nf, signed, devastation, snapshots } from "../lib/data";
+import Devastation from "../components/Devastation";
 import MiniChart from "../components/MiniChart";
 import { StarRule } from "../components/bits";
 import { Tide, againstLine, and } from "./WarsIndex";
@@ -47,6 +48,10 @@ export default function WarPage() {
           <h2 className="section-title">Where it was fought</h2>
           <MiniChart marks={sites.map((p) => ({ place: p, tone: "battle" as const }))} height={340} />
         </section>
+      )}
+
+      {devastation[w.id] && (
+        <Devastation d={devastation[w.id]} checkpoint={snapshots.find((s) => s.date === devastation[w.id].dates.peace)?.id} />
       )}
 
       <StarRule />

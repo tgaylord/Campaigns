@@ -1,0 +1,30 @@
+.devastation .dv-lede { max-width: 46rem; color: var(--plaster); font-size: 1.1rem; }
+.devastation .dv-lede strong { color: var(--cinnabar-hi); font-weight: 700; }
+.dv-figure { margin: 1rem 0 0; }
+.dv-figure svg { display: block; width: 100%; height: auto; max-height: 78vh; border: 1px solid rgba(212, 171, 85, 0.35); border-radius: 3px; }
+.dv-figure .sea { fill: #15204a; }
+.dv-figure .land { fill: #cdbb94; }
+.dv-figure .coast { fill: none; stroke: #3a2814; stroke-linejoin: round; }
+.dv-figure .loc { stroke: #6b5232; stroke-opacity: 0.35; stroke-linejoin: round; }
+.dv-figure .loc:hover { stroke: #fff3cf; stroke-opacity: 1; }
+.dv-figure .ours-edge { fill: none; stroke: #f2d58e; stroke-linejoin: round; stroke-dasharray: 6 3; }
+.dv-figure .looted { fill: #1a0d06; stroke: #f2d58e; }
+/* People lost, palest to deepest; the land that held is the parchment ground, the land that grew a cool green. */
+.d0 { --dv: #a9c49a; } .d1 { --dv: #e3d2ad; } .d2 { --dv: #e9b48e; } .d3 { --dv: #da7f5c; } .d4 { --dv: #b8402b; } .d5 { --dv: #6e1d10; }
+.dv-figure .loc { fill: var(--dv); }
+.dv-legend { display: flex; flex-wrap: wrap; gap: 0.35rem 1.1rem; margin-top: 0.6rem; font-size: 0.85rem; color: var(--mist); }
+.dv-legend .dv-key-title { width: 100%; color: var(--plaster); }
+.dv-key { display: inline-flex; align-items: center; gap: 0.4rem; }
+.dv-key i { display: inline-block; width: 0.95rem; height: 0.95rem; border-radius: 2px; background: var(--dv); border: 1px solid rgba(0, 0, 0, 0.3); }
+.dv-key i.dot { border-radius: 50%; width: 0.6rem; height: 0.6rem; background: #1a0d06; border: 1.5px solid #f2d58e; }
+.dv-key i.edge { width: 1.4rem; height: 0; border: 0; border-top: 2px dashed #f2d58e; border-radius: 0; background: none; }
+.dv-tables { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: 1.5rem 2.5rem; margin-top: 1.5rem; }
+.dv-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; color: var(--plaster); }
+.dv-table caption { text-align: left; color: var(--gilt); font-size: 1rem; padding-bottom: 0.4rem; }
+.dv-table th { text-align: left; color: var(--mist); font-weight: 500; border-bottom: 1px solid rgba(158, 167, 199, 0.3); padding: 0.3rem 0.4rem; }
+.dv-table td { padding: 0.28rem 0.4rem; border-bottom: 1px solid rgba(158, 167, 199, 0.1); }
+.dv-table .n { text-align: right; font-variant-numeric: tabular-nums; }
+.dv-table tbody tr td:first-child { border-left: 4px solid var(--dv, transparent); }
+.dv-scroll { overflow-x: auto; }
+.dv-table .n { white-space: nowrap; }
+@media (max-width: 40rem) { .dv-table { font-size: 0.8rem; } .dv-table th, .dv-table td { padding: 0.25rem 0.3rem; } }

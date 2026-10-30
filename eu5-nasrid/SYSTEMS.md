@@ -161,6 +161,7 @@ Every person, place and war name anywhere on the site shows a card on hover and 
 
 **Stack:** React, React Router, Vite and D3 in `site/`, built to a static site.
 - `site/scripts/build-data.mjs` reads `data/` and `story/`, checks every record against its schema and every reference (person, place, war, era, story entry), renders the Markdown and writes the bundle the site reads. **A bad record or a broken reference fails the build.**
+- A war page can carry a devastation reading (`tools/devastation.py`, `data/devastation/<war-id>.json`). It shows a map of population change by town between a save before the fighting and the peace save, with the towns looted in between, and tables by land and by the worst-hit towns. The first covers 1359–1366, on the War of Independence.
 - The Atlas and every small chart are drawn from the game's own map: `tools/build_map.py` traces each location from `locations.png`, and realm outlines are rebuilt for each checkpoint.
 - Hijri dates come from `site/src/lib/hijri.ts`.
 - Story entries link to records with `[name](person:id)`, `place:`, `war:` and `era:`.

@@ -1,0 +1,49 @@
+[
+ {
+  "id": "1368-05-10-moroccan-insult",
+  "date": "1368-05-10",
+  "type": "diplomacy",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "Morocco insults Granada's ambassadors. Granada has the right to answer with war until 1378",
+  "data": {
+   "cb": "cb_insulted_us",
+   "holder": "GRA",
+   "target": "MOR",
+   "expires": "1378-05-10"
+  },
+  "source": "autosave of 1 July 1368; Trent's account"
+ },
+ {
+  "id": "1368-07-moroccan-hostility",
+  "date": "1368-07-01",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "The Marīnids grow hostile. They break the trade agreements, insult the sultan's envoys, and murmur about the claims of their puppet, the 'Kingdom of Sevilla'. If they mean to throw themselves against our shores again, the court will remind them what happened last time, with interest",
+  "data": {
+   "forces": {
+    "GRA": {
+     "manpower": 2798,
+     "maxManpower": 6547,
+     "regiments": 5,
+     "ships": 5,
+     "gold": 120
+    },
+    "MOR": {
+     "manpower": 2506,
+     "maxManpower": 2503,
+     "regiments": 4,
+     "ships": 29,
+     "gold": 397
+    },
+    "SEV": {
+     "ships": 1
+    }
+   }
+  },
+  "source": "Trent's account; forces from the autosave of 1 July 1368"
+ }
+]

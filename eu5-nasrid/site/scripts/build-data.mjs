@@ -286,6 +286,14 @@ for (const f of storyFiles) {
 }
 story.sort((a, b) => a.date.localeCompare(b.date));
 
+// Devastation readings (tools/devastation.py): how a run of wars left the land, by location.
+const devastation = {};
+for (const f of await listJson(path.join(CAMPAIGN, "data/devastation"))) {
+  const d = await readJson(path.join(CAMPAIGN, "data/devastation", f));
+  if (!wars.some((w) => w.id === d.war)) errors.push(`devastation/${f}: unknown war "${d.war}"`);
+  devastation[d.war] = d;
+}
+
 /* ------------------------------------------------------------ cross-references */
 
 const ids = {
@@ -417,7 +425,7 @@ const mapOut = { frame: gameMap.frame, coast: gameMap.coast, locations: drawn, o
 /* ------------------------------------------------------------ write */
 
 await mkdir(OUT, { recursive: true });
-const campaign = { generated: new Date().toISOString(), sample: sampleData, eras, people, places, wars, countries, snapshots, events, story, catalog, lands, subjectLands };
+const campaign = { generated: new Date().toISOString(), sample: sampleData, eras, people, places, wars, countries, snapshots, events, story, catalog, lands, subjectLands, devastation };
 await writeFile(path.join(OUT, "campaign.json"), JSON.stringify(campaign));
 await writeFile(path.join(OUT, "map.json"), JSON.stringify(mapOut));
 console.log(

@@ -120,6 +120,29 @@
   "source": "save of 5 April 1366 (after the peace)"
  },
  {
+  "id": "1366-04-05-the-south-burned",
+  "date": "1366-04-05",
+  "type": "player_note",
+  "wars": [
+   "war-of-independence"
+  ],
+  "title": "The reckoning of the burned south. Between March 1359 and the peace, the lands the armies crossed lost 203,000 people and 125 of Iberia's 424 towns were looted. Extremadura and the lands of Ṭulayṭula each lost nearly a fifth of their people, and the city of Ṭulayṭula a third. The north, which no army reached, grew by 4%",
+  "data": {
+   "before": "1359-03-15",
+   "lost": 202983,
+   "looted": 125,
+   "towns": 424,
+   "worst": {
+    "extremadura_area": -18.9,
+    "toledo_area": -18.8,
+    "granada_area": -6.6
+   },
+   "spared": 3.7,
+   "reading": "data/devastation/war-of-independence.json"
+  },
+  "source": "saves of 15 March 1359 and 5 April 1366 (tools/devastation.py); Trent asked for the reckoning"
+ },
+ {
   "id": "1366-04-10-maryam-diwan",
   "date": "1366-04-10",
   "type": "appointment",

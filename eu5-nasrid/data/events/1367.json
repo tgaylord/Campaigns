@@ -1,0 +1,15 @@
+[
+ {
+  "id": "1367-08-01-moroccan-claim",
+  "date": "1367-08-01",
+  "type": "diplomacy",
+  "title": "Fās takes up its old claim again: the casus belli to demand Andalusī submission, the same one it used in 1360, is Morocco's against Granada until 1382",
+  "data": {
+   "cb": "cb_demand_andalusi_submission",
+   "holder": "MOR",
+   "target": "GRA",
+   "expires": "1382-08-01"
+  },
+  "source": "autosave of 1 July 1368"
+ }
+]

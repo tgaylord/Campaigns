@@ -90,6 +90,18 @@ type Campaign = {
   lands: Record<string, Land[]>;
   /** checkpoint id → subject tag → the subject and its lands */
   subjectLands: Record<string, Record<string, SubjectLands>>;
+  /** war id → how the land stood before and at the peace (tools/devastation.py) */
+  devastation: Record<string, Devastation>;
+};
+export type DevastationLoc = {
+  area: string | null; pop0: number; pop1: number; pop2: number | null; prosperity0: number; prosperity1: number;
+  owner0: string | null; owner1: string | null; controller1: string | null; looted: string | null;
+};
+export type Devastation = {
+  war: string; title: string; note: string; region: string;
+  dates: { before: string; peace: string; after: string | null };
+  areas: Record<string, { pop0: number; pop1: number; pop2: number; locations: number; looted: number }>;
+  locations: Record<string, DevastationLoc>;
 };
 export type SubjectLands = {
   type: string; since: string | null; rank: string | null; culture: string | null; religion: string | null;
@@ -97,7 +109,7 @@ export type SubjectLands = {
 };
 
 export const campaign = raw as unknown as Campaign;
-export const { eras, people, places, wars, countries, snapshots, events, story, catalog, lands, subjectLands } = campaign;
+export const { eras, people, places, wars, countries, snapshots, events, story, catalog, lands, subjectLands, devastation } = campaign;
 
 /** Names of peoples and faiths as the rest of the site writes them. */
 const FAITH: Record<string, string> = { judaism: "Jewish", nyama_religion: "Nyama" };
