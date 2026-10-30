@@ -216,5 +216,33 @@
    "pausedDays": 10
   },
   "source": "Trent's screenshot of the event, with the chosen option's tooltip open"
+ },
+ {
+  "id": "1351-11-08-unlimited-export",
+  "date": "1351-11-08",
+  "type": "law_change",
+  "people": [
+   "faraj-ibn-ismail"
+  ],
+  "places": [
+   "qusantina"
+  ],
+  "title": "With the silver of Qusanṭīna now the Emirate's own, the court sets its first policy for precious metals: Unlimited Export, opening the floodgates for gold and silver to flow to foreign markets",
+  "data": {
+   "law": "precious_metal_distribution",
+   "from": null,
+   "to": "unlimited_export",
+   "effects": {
+    "tradeAdvantage": "+10%",
+    "goldOutput": "+5%",
+    "silverOutput": "+5%",
+    "incomeFromMinting": "-33%"
+   },
+   "alternatives": {
+    "export_ban": "gold and silver output −5%, export impact on demand +5%, minting income +33%",
+    "regulated_export": "selling efficiency +2%"
+   }
+  },
+  "source": "Trent's screenshot of the policy screen and confirmation"
  }
 ]
