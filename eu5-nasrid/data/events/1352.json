@@ -42,5 +42,22 @@
    }
   },
   "source": "Trent's screenshot of the event, with the chosen option's tooltip open"
+ },
+ {
+  "id": "1352-01-27-plague-gone",
+  "date": "1352-01-27",
+  "type": "situation",
+  "title": "The pestilence has left the realm: no town of Granada is touched any longer. It killed 221,000 of the realm's people, and 52 million across the known world since it rose at Yāyiq. The Black Death has not yet formally ended",
+  "data": {
+   "affectedLocations": 0,
+   "countryDeaths": 221000,
+   "worldDeaths": 52006000,
+   "situationOpen": true,
+   "responses": [
+    "segregate_the_infected",
+    "present_scapegoats"
+   ]
+  },
+  "source": "Trent's screenshot of the Black Death panel"
  }
 ]
