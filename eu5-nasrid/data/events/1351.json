@@ -199,5 +199,22 @@
    "gameName": "Abuna Najīb al-ʿĀbidīn"
   },
   "source": "Trent's screenshots of Castile's event and its breakdown; Trent calls him a traitor"
+ },
+ {
+  "id": "1351-10-07-hajj-al-qahira",
+  "date": "1351-10-07",
+  "type": "player_note",
+  "people": [
+   "yusuf-i"
+  ],
+  "title": "The Royal Hajj reaches al-Qāhira, the City of a Thousand Minarets, under the shadow of al-Azhar. The amir has the caravan adorned in banners and silk and waits ten days in the city, so that Cairo may see the splendour of the Emirate",
+  "data": {
+   "event": "The Royal Ḥajj: The City of a Thousand Minarets",
+   "choice": "Adorn the caravan in banners and silk, then wait.",
+   "gold": -13.06,
+   "splendor": 20,
+   "pausedDays": 10
+  },
+  "source": "Trent's screenshot of the event, with the chosen option's tooltip open"
  }
 ]
