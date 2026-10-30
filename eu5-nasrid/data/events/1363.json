@@ -11,9 +11,55 @@
   ],
   "title": "The truce with Qashtāla runs out, Gharnāṭa holds a just cause, and the amir declares war for the realm's independence and marches north",
   "data": {
-   "casusBelli": "independence",
+   "casusBelli": "cb_reclaim_andalucia",
+   "claimBegun": "1361-12-31",
    "target": "CAS"
   },
+  "source": "Trent's account; the casus belli from the save of 20 May 1363"
+ },
+ {
+  "id": "1363-05-20-state",
+  "date": "1363-05-20",
+  "type": "strait_change",
+  "wars": [
+   "war-of-independence"
+  ],
+  "title": "At the outbreak: the Marīnids hold 58 Castilian towns as far as Toledo, and Qashtāla has 183 men in its pool; Portugal 3,700. Gharnāṭa has 1,900 of 6,400 and only 57 in the treasury. Sovereignty 100, influence −12.2",
+  "data": {
+   "manpower": {
+    "GRA": [
+     1946,
+     6361
+    ],
+    "CAS": [
+     183,
+     2759
+    ],
+    "POR": [
+     3687,
+     4550
+    ],
+    "MOR": [
+     2486,
+     2486
+    ]
+   },
+   "moroccanOccupation": 58,
+   "treasury": 57,
+   "sovereignty": 100,
+   "influence": -12.2
+  },
+  "source": "save of 20 May 1363"
+ },
+ {
+  "id": "1363-05-20-portugal-first",
+  "date": "1363-05-20",
+  "type": "player_note",
+  "wars": [
+   "war-of-independence"
+  ],
+  "title": "The court's first aim in the war: to knock Portugal out, as it had already made its own peace with the Marīnids",
+  "data": {},
   "source": "Trent's account"
  }
 ]
