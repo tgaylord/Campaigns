@@ -746,5 +746,49 @@
     "to": null
    }
   ]
+ },
+ {
+  "id": "al-qusayr",
+  "key": "carpio",
+  "name": "al-Quṣayr",
+  "nameGame": "El-Qṣayr",
+  "kind": "location",
+  "nameArabic": "القصير",
+  "note": "El Carpio, on the Guadalquivir above Qurṭuba. Arabic script written for the chronicle; the game files have none.",
+  "held": [
+   {
+    "from": "1349-01-27",
+    "to": null
+   }
+  ]
+ },
+ {
+  "id": "balma",
+  "key": "palma_del_rio",
+  "name": "Balma",
+  "nameGame": "Balma",
+  "kind": "location",
+  "note": "Palma del Río, where the Genil meets the Guadalquivir. The game's Arabic form; no script in the game files, and the chronicle keeps the game's spelling for now.",
+  "held": [
+   {
+    "from": "1349-01-27",
+    "to": null
+   }
+  ]
+ },
+ {
+  "id": "istijja",
+  "key": "ecija",
+  "name": "Istijja",
+  "nameGame": "Stijja",
+  "kind": "location",
+  "nameArabic": "إستجة",
+  "note": "Écija, on the Genil.",
+  "held": [
+   {
+    "from": "1349-01-27",
+    "to": null
+   }
+  ]
  }
 ]
