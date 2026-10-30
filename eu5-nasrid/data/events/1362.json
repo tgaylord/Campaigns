@@ -104,5 +104,26 @@
    ]
   },
   "source": "save of 10 June 1362; Trent's account"
+ },
+ {
+  "id": "1362-06-white-peace-morocco",
+  "date": "1362-06-10",
+  "type": "peace",
+  "people": [
+   "yusuf-i"
+  ],
+  "wars": [
+   "marinid-submission-war"
+  ],
+  "title": "A separate peace with the Marīnids. The court lets Fās understand that if Gharnāṭa throws its full weight into the war, Fās will lose it; if Gharnāṭa stands aside, Fās will win against Qashtāla. The Marīnids take the point: a white peace for Gharnāṭa, and their promise to respect its lands. Qashtāla is left to fight on alone",
+  "data": {
+   "terms": [
+    "white peace",
+    "Morocco promises to respect Granada's territory"
+   ],
+   "method": "threat of full intervention",
+   "leaves": "GRA"
+  },
+  "source": "Trent's account (about June 1362, after the save of 10 June; the exact day isn't given)"
  }
 ]
