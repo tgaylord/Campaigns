@@ -1,0 +1,15 @@
+[
+ {
+  "id": "1350-07-the-war-turns",
+  "date": "1350-07-01",
+  "type": "player_note",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "title": "The war shifts: Castile has raised some 5,000 men and drives the Moroccans back from raiding its heartlands, while in Aragon and on the islands Tunisian and other Moorish raiders sack the countryside freely",
+  "data": {
+   "castileRaised": 5000
+  },
+  "source": "Trent's account (by July 1350; the exact day isn't given)"
+ }
+]
