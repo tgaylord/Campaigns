@@ -1,0 +1,20 @@
+[
+ {
+  "id": "1358-02-great-madrasa-qurtuba",
+  "date": "1358-02-01",
+  "type": "reform",
+  "people": [
+   "yusuf-i"
+  ],
+  "places": [
+   "qurtuba"
+  ],
+  "title": "Work begins on a Great Madrasa at Qurṭuba, to serve the city's new worshippers as Islam returns to the old seat of the caliphs",
+  "data": {
+   "building": "great madrasa",
+   "location": "cordoba",
+   "status": "under construction"
+  },
+  "source": "Trent's account (February 1358; the exact day isn't given)"
+ }
+]
