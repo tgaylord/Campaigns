@@ -1,0 +1,32 @@
+[
+ {
+  "id": "1354-08-12-marinid-marriage",
+  "date": "1354-08-12",
+  "type": "marriage",
+  "people": [
+   "yusuf-i",
+   "dua-marinid"
+  ],
+  "title": "The amir marries his Marīnid bride, Duʿāʾ, fulfilling the betrothal agreed with the house of Fās in January 1348",
+  "data": {
+   "with": "MOR",
+   "betrothed": "1348-01-18"
+  },
+  "source": "Trent's account (about 12 August 1354)"
+ },
+ {
+  "id": "1354-11-19-hafsid-marriage",
+  "date": "1354-11-19",
+  "type": "marriage",
+  "people": [
+   "yusuf-i",
+   "tizemt-hafsid"
+  ],
+  "title": "The amir marries his Ḥafṣid bride, Tizemt, fulfilling the betrothal agreed with Tūnis in July 1345: his third wife, and his second bride from the Maghrib in three months",
+  "data": {
+   "with": "TUN",
+   "betrothed": "1345-07-23"
+  },
+  "source": "Trent's account"
+ }
+]

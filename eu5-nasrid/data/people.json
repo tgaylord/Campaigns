@@ -424,7 +424,7 @@
    "dip": 32.0,
    "mil": 46.0
   },
-  "note": "Elder brother of Yūsuf I. Regent of Granada from 9 August 1351 until the sultan's return on 7 April 1352, while he made the Hajj (the chronicle's choice; the game named a Naṣr al-Stijjai). By November 1355 he had married Fatiu, daughter of the old ruler of Ghana, fulfilling the Ghana betrothal of 1345, and gone south across the desert to live there."
+  "note": "Elder brother of Yūsuf I. Regent of Granada from 9 August 1351 until the sultan's return on 7 April 1352, while he made the Hajj (the chronicle's choice; the game named a Naṣr al-Stijjai). Around the new year of 1355 he married Fatiu, daughter of the old ruler of Ghana, fulfilling the Ghana betrothal of 1345, and went south across the desert to live there."
  },
  {
   "id": "yusuf-i",
@@ -596,12 +596,12 @@
   "traits": [
    "bold_fighter"
   ],
-  "note": "A Zenata Berber, founder and head of the house of Raḥḥū; general from 1 September 1339 at the head of the Volunteers of the Faith. The game calls him 'a competent yet fickle figure'. He led the Volunteers of the Faith again from 18 October 1346, when they rose against the united crowns (in the game files his second command is a separate character with the same name, house and birth date; the chronicle keeps them one man). Took Faraj ibn Ismāʿīl's seat in the dīwān in 1355, after Faraj went to Ghana. Died of illness in late 1355, aged 54 by the game's reckoning, soon after taking the seat; the court called it coincidence. (Exact date not yet given.)",
+  "note": "A Zenata Berber, founder and head of the house of Raḥḥū; general from 1 September 1339 at the head of the Volunteers of the Faith. The game calls him 'a competent yet fickle figure'. He led the Volunteers of the Faith again from 18 October 1346, when they rose against the united crowns (in the game files his second command is a separate character with the same name, house and birth date; the chronicle keeps them one man). Took Faraj ibn Ismāʿīl's seat in the dīwān in 1355, after Faraj went to Ghana. Died of illness in early 1355, before March, aged 54 by the game's reckoning, soon after taking the seat; the court called it coincidence. (Exact date not yet given.)",
   "gameIds": [
    26562,
    34868
   ],
-  "died": "1355-11-19"
+  "died": "1355-03-01"
  },
  {
   "id": "joan-doriola",
@@ -793,7 +793,7 @@
   "dynasty": "Marīnid",
   "female": true,
   "roles": [],
-  "note": "A princess of the Marīnid house of Fās, betrothed to Granada on 18 January 1348 and married to Yūsuf I about 12 August 1355: the one Marīnid bond that outlived Morocco's annulment of its treaties with Granada in 1351. The most capable of the amir's wives, she took Yaḥyā Raḥḥū's seat in the dīwān after his death in late 1355, under the Powerful Harem law that let women sit in the cabinet."
+  "note": "A princess of the Marīnid house of Fās, betrothed to Granada on 18 January 1348 and married to Yūsuf I about 12 August 1354: the one Marīnid bond that outlived Morocco's annulment of its treaties with Granada in 1351. The most capable of the amir's wives, she took Yaḥyā Raḥḥū's seat in the dīwān after his death in early 1355, under the Powerful Harem law that let women sit in the cabinet."
  },
  {
   "id": "tizemt-hafsid",
@@ -802,7 +802,7 @@
   "dynasty": "Ḥafṣid",
   "female": true,
   "roles": [],
-  "note": "A princess of the Ḥafṣid house of Tūnis, betrothed to Granada on 23 July 1345 and married to Yūsuf I on 19 November 1355, three months after his Marīnid marriage. Her name is Berber (Amazigh)."
+  "note": "A princess of the Ḥafṣid house of Tūnis, betrothed to Granada on 23 July 1345 and married to Yūsuf I on 19 November 1354, three months after his Marīnid marriage. Her name is Berber (Amazigh)."
  },
  {
   "id": "fatiu-ghana",
@@ -810,6 +810,6 @@
   "nameGame": "Fatiu",
   "female": true,
   "roles": [],
-  "note": "Daughter of the old ruler of Ghana. The Ghana betrothal of 8 September 1345 was fulfilled by her marriage to Faraj ibn Ismāʿīl, the amir's elder brother, who went south to live in Ghana with her (by November 1355)."
+  "note": "Daughter of the old ruler of Ghana. The Ghana betrothal of 8 September 1345 was fulfilled by her marriage to Faraj ibn Ismāʿīl, the amir's elder brother, who went south to live in Ghana with her (around the new year of 1355)."
  }
 ]

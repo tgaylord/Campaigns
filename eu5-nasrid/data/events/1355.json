@@ -1,57 +1,7 @@
 [
  {
-  "id": "1355-03-15-governor-qurtuba",
-  "date": "1355-03-15",
-  "type": "reform",
-  "people": [
-   "yusuf-i"
-  ],
-  "places": [
-   "qurtuba"
-  ],
-  "title": "A local governor is founded and seated at Qurṭuba, the old seat of the caliphs, to carry the crown's authority up and down the great river through the lands won in 1349",
-  "data": {
-   "building": "local_governor",
-   "location": "cordoba",
-   "modifier": {
-    "localProximitySource": 80
-   }
-  },
-  "source": "Trent's account"
- },
- {
-  "id": "1355-08-12-marinid-marriage",
-  "date": "1355-08-12",
-  "type": "marriage",
-  "people": [
-   "yusuf-i",
-   "dua-marinid"
-  ],
-  "title": "The amir marries his Marīnid bride, Duʿāʾ, fulfilling the betrothal agreed with the house of Fās in January 1348",
-  "data": {
-   "with": "MOR",
-   "betrothed": "1348-01-18"
-  },
-  "source": "Trent's account (about 12 August 1355)"
- },
- {
-  "id": "1355-11-19-hafsid-marriage",
-  "date": "1355-11-19",
-  "type": "marriage",
-  "people": [
-   "yusuf-i",
-   "tizemt-hafsid"
-  ],
-  "title": "The amir marries his Ḥafṣid bride, Tizemt, fulfilling the betrothal agreed with Tūnis in July 1345: his third wife, and his second bride from the Maghrib in three months",
-  "data": {
-   "with": "TUN",
-   "betrothed": "1345-07-23"
-  },
-  "source": "Trent's account"
- },
- {
   "id": "1355-ghana-marriage",
-  "date": "1355-11-19",
+  "date": "1355-01-01",
   "type": "marriage",
   "people": [
    "faraj-ibn-ismail",
@@ -63,11 +13,11 @@
    "betrothed": "1345-09-08",
    "residence": "Ghana"
   },
-  "source": "Trent's account (the exact date isn't given; reported by 19 November 1355)"
+  "source": "Trent's account (around the new year of 1355; the exact day isn't given)"
  },
  {
   "id": "1355-yahya-council",
-  "date": "1355-11-19",
+  "date": "1355-01-15",
   "type": "appointment",
   "people": [
    "yahya-rahhu",
@@ -77,11 +27,11 @@
   "data": {
    "replaces": "faraj-ibn-ismail"
   },
-  "source": "Trent's account (by November 1355)"
+  "source": "Trent's account (early 1355; the exact day isn't given)"
  },
  {
   "id": "1355-powerful-harem",
-  "date": "1355-11-19",
+  "date": "1355-02-01",
   "type": "law_change",
   "people": [
    "yusuf-i",
@@ -107,11 +57,11 @@
     "secluded_harem": "counterespionage +20%, court spending efficiency +10%, toward traditionalist"
    }
   },
-  "source": "Trent's screenshot of the Harem Laws screen and his account (late 1355; the exact day isn't given)"
+  "source": "Trent's screenshot of the Harem Laws screen and his account (early 1355; the exact day isn't given)"
  },
  {
   "id": "1355-yahya-dies",
-  "date": "1355-11-19",
+  "date": "1355-03-01",
   "type": "death",
   "people": [
    "yahya-rahhu"
@@ -121,11 +71,11 @@
    "cause": "illness",
    "age": 54
   },
-  "source": "Trent's account (late 1355; the exact day isn't given)"
+  "source": "Trent's account (before March 1355; the exact day isn't given)"
  },
  {
   "id": "1355-dua-council",
-  "date": "1355-11-19",
+  "date": "1355-03-01",
   "type": "appointment",
   "people": [
    "dua-marinid",
@@ -137,6 +87,26 @@
    "replaces": "yahya-rahhu",
    "law": "powerful_harem"
   },
-  "source": "Trent's account (late 1355)"
+  "source": "Trent's account (before March 1355; the exact day isn't given)"
+ },
+ {
+  "id": "1355-03-15-governor-qurtuba",
+  "date": "1355-03-15",
+  "type": "reform",
+  "people": [
+   "yusuf-i"
+  ],
+  "places": [
+   "qurtuba"
+  ],
+  "title": "A local governor is founded and seated at Qurṭuba, the old seat of the caliphs, to carry the crown's authority up and down the great river through the lands won in 1349",
+  "data": {
+   "building": "local_governor",
+   "location": "cordoba",
+   "modifier": {
+    "localProximitySource": 80
+   }
+  },
+  "source": "Trent's account"
  }
 ]
