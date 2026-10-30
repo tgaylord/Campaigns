@@ -783,5 +783,15 @@
   "female": true,
   "roles": [],
   "note": "Daughter of the Mamluk Sultan, betrothed to Saʿd ibn Yūsuf, heir of Granada, on 19 January 1351."
+ },
+ {
+  "id": "dua-marinid",
+  "name": "Duʿāʾ",
+  "nameArabic": "دعاء",
+  "nameGame": "Dua",
+  "dynasty": "Marīnid",
+  "female": true,
+  "roles": [],
+  "note": "A princess of the Marīnid house of Fās, betrothed to Granada on 18 January 1348 and married to Yūsuf I about 12 August 1355: the one Marīnid bond that outlived Morocco's annulment of its treaties with Granada in 1351."
  }
 ]
