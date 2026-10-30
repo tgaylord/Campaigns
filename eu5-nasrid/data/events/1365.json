@@ -1,0 +1,99 @@
+[
+ {
+  "id": "1365-03-09-battle-tortosa",
+  "date": "1365-03-09",
+  "type": "battle",
+  "people": [
+   "joan-doriola"
+  ],
+  "wars": [
+   "war-of-independence"
+  ],
+  "title": "A small Aragonese company of 55 attacks the Valencian army at Tortosa and is wiped out",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Valencia": 1001
+   },
+   "oursLost": 0,
+   "theirs": {
+    "Aragon": 55
+   },
+   "theirsLost": 55,
+   "location": "Tortosa"
+  },
+  "source": "autosave of 1 July 1365"
+ },
+ {
+  "id": "1365-03-saad-conqueror",
+  "date": "1365-03-11",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "wars": [
+   "war-of-independence"
+  ],
+  "title": "The chancellor reports that the sultan has earned the name of Conqueror",
+  "data": {
+   "trait": "conqueror",
+   "effects": {
+    "commanderCombatBonus": 1,
+    "separatism": -0.1,
+    "monthlyProgressToBelligerent": 0.1
+   }
+  },
+  "source": "Trent's account (about half a year after the Portuguese peace; the exact date isn't given). The autosave of 1 July 1365 has the trait"
+ },
+ {
+  "id": "1365-06-27-battle-cuenca",
+  "date": "1365-06-27",
+  "type": "battle",
+  "people": [
+   "juan-manuel-enriquez"
+  ],
+  "wars": [
+   "war-of-independence"
+  ],
+  "title": "The Murcian host, 330 men, attacks 1,600 Aragonese at Cuenca and is destroyed",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Murcia": 330
+   },
+   "oursLost": 330,
+   "theirs": {
+    "Aragon": 1589
+   },
+   "theirsLost": 18,
+   "location": "Cuenca"
+  },
+  "source": "autosave of 1 July 1365"
+ },
+ {
+  "id": "1365-07-01-state",
+  "date": "1365-07-01",
+  "type": "estate_change",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "wars": [
+   "war-of-independence"
+  ],
+  "title": "With the Portuguese south the realm is 56 towns and 709,000 people, and Catholics outnumber Sunnīs again, 360,000 to 312,000. The treasury has fallen to 169 against a deficit of 43 a month",
+  "data": {
+   "locations": 56,
+   "population": 708707,
+   "religions": {
+    "Catholic": 359960,
+    "Sunni": 311921
+   },
+   "treasury": 169,
+   "income": 50.5,
+   "expenses": 93.3
+  },
+  "source": "autosave of 1 July 1365"
+ }
+]

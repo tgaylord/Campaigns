@@ -783,9 +783,10 @@
    "mil": 100
   },
   "traits": [
+   "conqueror",
    "prodigy"
   ],
-  "note": "First son of Yūsuf I and Sayyida of Fezzan, born 18 January 1348 in the second year of the war with the three crowns. Betrothed on 19 January 1351 to Aiman, daughter of the Mamluk Sultan. The same winter the Chancellor reported him a Prodigy: a child predestined, the court said, to leave his name in the history books. His father brought the finest tutors of the Islamic world to Gharnāṭa for him, several Christians among them. Succeeded his father on 1 August 1363 at fifteen, under the regency of Naṣr al-Istijjī until he came of age on 18 January 1364. At his accession his abilities stood at 100/69/100, the prodigy fulfilled. His accession was not clean. Naṣr died on the very day the regency ended, of 'sickness' as the court gave out (a hunting accident, the game says), and Saʿd then married Naṣr's widow Duʿāʾ, his father's Marīnid widow and minister. He began his personal rule with two wives, Aiman the Mamlūk and Duʿāʾ the Marīnid.",
+  "note": "First son of Yūsuf I and Sayyida of Fezzan, born 18 January 1348 in the second year of the war with the three crowns. Betrothed on 19 January 1351 to Aiman, daughter of the Mamluk Sultan. The same winter the Chancellor reported him a Prodigy: a child predestined, the court said, to leave his name in the history books. His father brought the finest tutors of the Islamic world to Gharnāṭa for him, several Christians among them. Succeeded his father on 1 August 1363 at fifteen, under the regency of Naṣr al-Istijjī until he came of age on 18 January 1364. At his accession his abilities stood at 100/69/100, the prodigy fulfilled. His accession was not clean. Naṣr died on the very day the regency ended, of 'sickness' as the court gave out (a hunting accident, the game says), and Saʿd then married Naṣr's widow Duʿāʾ, his father's Marīnid widow and minister. He began his personal rule with two wives, Aiman the Mamlūk and Duʿāʾ the Marīnid. He knocked Portugal out of the War of Independence on 11 September 1364 and took its south, and by 1365 the court called him Conqueror. His first child, Umm al-Fatḥ, was born to Aiman on 13 December 1364.",
   "reigns": [
    {
     "from": "1363-08-01",
@@ -799,7 +800,7 @@
   "nameGame": "Aiman",
   "female": true,
   "roles": [],
-  "note": "Daughter of the Mamluk Sultan, betrothed to Saʿd ibn Yūsuf, heir of Granada, on 19 January 1351. Married to Saʿd before he came of age; at his majority in January 1364 she was his only wife, until he also married Duʿāʾ.",
+  "note": "Daughter of the Mamluk Sultan, betrothed to Saʿd ibn Yūsuf, heir of Granada, on 19 January 1351. Married to Saʿd before he came of age; at his majority in January 1364 she was his only wife, until he also married Duʿāʾ. Mother of Saʿd's first child, Umm al-Fatḥ (born 13 December 1364).",
   "born": "1344-04-06",
   "gameId": 32464,
   "dynasty": "Baḥrī"
@@ -1042,5 +1043,20 @@
    "offensive_planner"
   ],
   "note": "Granadan general in the War of Independence. He chased the joined armies of Portugal and Aragon halfway across Iberia and broke them at Zafra on 3 August 1364. Then, on 10 and 11 September, he destroyed their remnants one after the other before Lisbon (save of 11 September 1364)."
+ },
+ {
+  "id": "umm-al-fath-bint-saad",
+  "name": "Umm al-Fatḥ bint Saʿd",
+  "nameArabic": "أم الفتح بنت سعد",
+  "nameGame": "Umm al-Fath",
+  "gameId": 52696,
+  "dynasty": "Naṣrid",
+  "born": "1364-12-13",
+  "father": "saad-ibn-yusuf",
+  "mother": "aiman-mamluk",
+  "female": true,
+  "roles": [],
+  "traits": [],
+  "note": "First child of Sultan Saʿd, born to Aiman the Mamlūk three months after the Portuguese peace. She shares her name, 'mother of victory', with her aunt, Yūsuf I's youngest daughter."
  }
 ]
