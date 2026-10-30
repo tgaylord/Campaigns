@@ -11,5 +11,67 @@
    "castileRaised": 5000
   },
   "source": "Trent's account (by July 1350; the exact day isn't given)"
+ },
+ {
+  "id": "1350-09-02-great-dying-census",
+  "date": "1350-09-02",
+  "type": "situation",
+  "title": "As the pestilence fades, the reckoning: the old lands of Granada have lost 42% of their people since August 1346, among the worst in the world; Iberia as a whole a third, Castile 35%, Aragon 33%, Portugal 30%; Morocco only 19% and Tunis 7%; the world some 46 million souls",
+  "data": {
+   "sameLandsSince": "1346-08-01",
+   "granadaOldLands": {
+    "from": 489.6,
+    "to": 284.3,
+    "pct": -41.9
+   },
+   "iberia": {
+    "from": 8334,
+    "to": 5476,
+    "pct": -34.3
+   },
+   "byCountry": {
+    "CAS": -35.1,
+    "ARA": -33.3,
+    "POR": -29.8,
+    "NAV": -28.1,
+    "MLL": -39.3,
+    "VAL": -30.4,
+    "MOR": -18.5,
+    "TLE": -17.7,
+    "TUN": -7.4,
+    "MAM": -15.1,
+    "FRA": -33.3,
+    "ENG": -31.0,
+    "NAP": -35.7,
+    "BYZ": -26.3,
+    "TUR": -23.0,
+    "GLH": -32.7
+   },
+   "world": {
+    "from": 396116,
+    "to": 350008,
+    "unit": "thousands, every location"
+   },
+   "realmNow": {
+    "population": 595292,
+    "sinceJan1349": 754263
+   },
+   "affectedLocations": 4,
+   "countryDeaths": 221000,
+   "worldDeaths": 47460000
+  },
+  "source": "saves of 1346-08-01 and 1350-09-02 (same lands compared); Trent's screenshot of the Black Death panel"
+ },
+ {
+  "id": "1350-09-02-recovery",
+  "date": "1350-09-02",
+  "type": "strait_change",
+  "title": "The realm steadies as the plague passes: stability back to 12.6, and sovereignty climbing to 58.8",
+  "data": {
+   "stability": 12.6,
+   "sovereignty": 58.76,
+   "influence": 11.8
+  },
+  "source": "save of 1350-09-02"
  }
 ]
