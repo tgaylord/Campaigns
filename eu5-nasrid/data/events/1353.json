@@ -1,0 +1,38 @@
+[
+ {
+  "id": "1353-02-02-kingdom-of-sevilla",
+  "date": "1353-02-02",
+  "type": "war_declared",
+  "people": [
+   "yusuf-i"
+  ],
+  "places": [
+   "ishbiliyya"
+  ],
+  "title": "The Castilian peasants of the new lands rise in rebellion, and declare a so-called Kingdom of Sevilla. The remission of the jizya was not enough, as the amir had feared",
+  "data": {
+   "rebels": "Castilian Patriots",
+   "declared": "Kingdom of Sevilla"
+  },
+  "source": "Trent's account"
+ },
+ {
+  "id": "1353-02-02-castile-answers",
+  "date": "1353-02-02",
+  "type": "war_joined",
+  "people": [
+   "alfonso-xi"
+  ],
+  "places": [
+   "qurtuba",
+   "ishbiliyya",
+   "jayyan"
+  ],
+  "title": "Qashtāla answers the rebels' call. The question now is whether the tyrant means to take back what he gave up at the Peace of Qurṭuba",
+  "data": {
+   "joins": "CAS",
+   "side": "rebels"
+  },
+  "source": "Trent's account"
+ }
+]
