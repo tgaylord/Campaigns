@@ -815,7 +815,7 @@
   "nameGame": "Fatiu",
   "female": true,
   "roles": [],
-  "note": "Daughter of the old ruler of Ghana. The Ghana betrothal of 8 September 1345 was fulfilled by her marriage to Faraj ibn Ismāʿīl, the amir's elder brother, who went south to live in Ghana with her (around the new year of 1355)."
+  "note": "Daughter of the old ruler of Ghana. The Ghana betrothal of 8 September 1345 was fulfilled by her marriage to Faraj ibn Ismāʿīl, the amir's elder brother, who went south to live in Ghana with her (around the new year of 1355). Mother of Zineb, Faraj's daughter born in Ghana."
  },
  {
   "id": "shama-sahara",
@@ -841,5 +841,17 @@
   "gameId": 16790542,
   "roles": [],
   "note": "Daughter of Faraj ibn Ismāʿīl and Shamʿa, born 28 March 1355 in Granada, about three months after her father had gone south to Ghana."
+ },
+ {
+  "id": "zineb-bint-faraj",
+  "name": "Zineb bint Faraj",
+  "nameArabic": "زينب بنت فرج",
+  "nameGame": "Zineb",
+  "dynasty": "Naṣrid",
+  "female": true,
+  "father": "faraj-ibn-ismail",
+  "mother": "fatiu-ghana",
+  "roles": [],
+  "note": "Daughter of Faraj ibn Ismāʿīl and Fatiu, born in Ghana after her father went south (Fatiu was pregnant in the save of 16 June 1355; the birth date isn't recorded yet)."
  }
 ]
