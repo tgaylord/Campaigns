@@ -224,7 +224,7 @@
   "wars": [
    "second-moroccan-war"
   ],
-  "title": "In taking up arms against Castile, Granada casts off its tribute: the bond of a tributary and the parias are ended, and Aragon's reparations cease",
+  "title": "In taking up arms against Castile, Granada breaks with its overlord: the tributary bond and the parias are suspended while the war decides its independence, and Aragon's reparations cease",
   "data": {
    "overlord": {
     "from": "CAS",
@@ -235,9 +235,10 @@
    "yearsSubject": {
     "from": 25,
     "to": 0
-   }
+   },
+   "status": "fighting for independence (the war lists Granada among subjects fighting for independence)"
   },
-  "source": "checkpoint 1346-11-08"
+  "source": "checkpoint 1346-11-08; the save of 1347-09-14"
  },
  {
   "id": "1346-10-18-volunteers-rise",
@@ -274,5 +275,83 @@
    "expenses": 40.9
   },
   "source": "Trent's account; checkpoint 1346-11-08"
+ },
+ {
+  "id": "1346-11-22-battle-bay-palma",
+  "date": "1346-11-22",
+  "type": "battle",
+  "title": "Aragon sinks the fleets of Bijaya and Tlemcen in the bay of Palma",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "data": {
+   "result": "defeat",
+   "naval": true,
+   "ours": {
+    "Tlemcen": 1000,
+    "Bijaya": 13000
+   },
+   "oursTotal": 14000,
+   "oursLost": 14000,
+   "theirs": {
+    "Aragon": 7000
+   },
+   "theirsTotal": 7000,
+   "theirsLost": 0,
+   "location": "the bay of Palma",
+   "side": "Granada not engaged"
+  },
+  "source": "save of 1347-09-14"
+ },
+ {
+  "id": "1346-12-02-battle-gulf-of-almeria",
+  "date": "1346-12-02",
+  "type": "battle",
+  "title": "Balansiyya's fleet worsted by Portugal in the gulf of al-Mariyya",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "data": {
+   "result": "defeat",
+   "naval": true,
+   "ours": {
+    "Balansiyya": 11000
+   },
+   "oursTotal": 11000,
+   "oursLost": 3000,
+   "theirs": {
+    "Portugal": 6000
+   },
+   "theirsTotal": 6000,
+   "theirsLost": 0,
+   "location": "the gulf of al-Mariyya"
+  },
+  "source": "save of 1347-09-14"
+ },
+ {
+  "id": "1346-12-24-battle-cagliari",
+  "date": "1346-12-24",
+  "type": "battle",
+  "title": "A Tunisian landing at Cagliari thrown back",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "data": {
+   "result": "defeat",
+   "naval": false,
+   "ours": {
+    "Tunis": 150
+   },
+   "oursTotal": 150,
+   "oursLost": 93,
+   "theirs": {
+    "Cagliari": 1340
+   },
+   "theirsTotal": 1340,
+   "theirsLost": 29,
+   "location": "Cagliari",
+   "side": "Granada not engaged"
+  },
+  "source": "save of 1347-09-14"
  }
 ]

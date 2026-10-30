@@ -1,0 +1,311 @@
+[
+ {
+  "id": "1347-01-16-battle-bay-alcudia",
+  "date": "1347-01-16",
+  "type": "battle",
+  "title": "Aragon sinks the fleet of Gabès off Alcúdia",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "data": {
+   "result": "defeat",
+   "naval": true,
+   "ours": {
+    "Gabès": 6000
+   },
+   "oursTotal": 6000,
+   "oursLost": 6000,
+   "theirs": {
+    "Aragon": 7000
+   },
+   "theirsTotal": 7000,
+   "theirsLost": 0,
+   "location": "the bay of Alcúdia",
+   "side": "Granada not engaged"
+  },
+  "source": "save of 1347-09-14"
+ },
+ {
+  "id": "1347-02-09-battle-cagliari",
+  "date": "1347-02-09",
+  "type": "battle",
+  "title": "A second Tunisian landing at Cagliari thrown back",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "data": {
+   "result": "defeat",
+   "naval": false,
+   "ours": {
+    "Tunis": 260
+   },
+   "oursTotal": 260,
+   "oursLost": 242,
+   "theirs": {
+    "Cagliari": 1366
+   },
+   "theirsTotal": 1366,
+   "theirsLost": 102,
+   "location": "Cagliari",
+   "side": "Granada not engaged"
+  },
+  "source": "save of 1347-09-14"
+ },
+ {
+  "id": "1347-02-13-battle-castellon-de-la-plana",
+  "date": "1347-02-13",
+  "type": "battle",
+  "title": "Balansiyya's army of 2,100 destroyed by Aragon at Castellón de la Plana",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "data": {
+   "result": "defeat",
+   "naval": false,
+   "ours": {
+    "Balansiyya": 2126
+   },
+   "oursTotal": 2126,
+   "oursLost": 2126,
+   "theirs": {
+    "Aragon": 8290
+   },
+   "theirsTotal": 8290,
+   "theirsLost": 162,
+   "location": "Castellón de la Plana"
+  },
+  "source": "save of 1347-09-14"
+ },
+ {
+  "id": "1347-03-17-battle-sevilla",
+  "date": "1347-03-17",
+  "type": "battle",
+  "title": "Morocco beaten before Ishbīliyya by a Castilian army four times its size",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "data": {
+   "result": "defeat",
+   "naval": false,
+   "ours": {
+    "Morocco": 2758
+   },
+   "oursTotal": 2758,
+   "oursLost": 1188,
+   "theirs": {
+    "Castile": 11864
+   },
+   "theirsTotal": 11864,
+   "theirsLost": 1219,
+   "location": "Ishbīliyya",
+   "side": "Granada not engaged"
+  },
+  "source": "save of 1347-09-14",
+  "places": [
+   "ishbiliyya"
+  ]
+ },
+ {
+  "id": "1347-05-18-battle-jaen",
+  "date": "1347-05-18",
+  "type": "battle",
+  "title": "Yūsuf breaks Alfonso XI at Jayyān: the king of Castile leads 13,000 against 22,000 Granadans and 3,500 Moroccans, and loses 7,500 of them",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 22107,
+    "Morocco": 3513
+   },
+   "oursTotal": 25620,
+   "oursLost": 4265,
+   "theirs": {
+    "Castile": 13012
+   },
+   "theirsTotal": 13012,
+   "theirsLost": 7522,
+   "location": "Jayyān"
+  },
+  "source": "save of 1347-09-14",
+  "places": [
+   "jayyan"
+  ],
+  "people": [
+   "yusuf-i",
+   "alfonso-xi"
+  ]
+ },
+ {
+  "id": "1347-05-29-battle-gulf-cagliari",
+  "date": "1347-05-29",
+  "type": "battle",
+  "title": "Aragon sinks the fleet of Tripoli in the gulf of Cagliari",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "data": {
+   "result": "defeat",
+   "naval": true,
+   "ours": {
+    "Tripoli": 11000
+   },
+   "oursTotal": 11000,
+   "oursLost": 11000,
+   "theirs": {
+    "Aragon": 8000
+   },
+   "theirsTotal": 8000,
+   "theirsLost": 0,
+   "location": "the gulf of Cagliari",
+   "side": "Granada not engaged"
+  },
+  "source": "save of 1347-09-14"
+ },
+ {
+  "id": "1347-06-17-battle-jerez-de-la-frontera",
+  "date": "1347-06-17",
+  "type": "battle",
+  "title": "Morocco beaten again at Jerez",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "data": {
+   "result": "defeat",
+   "naval": false,
+   "ours": {
+    "Morocco": 2447
+   },
+   "oursTotal": 2447,
+   "oursLost": 1244,
+   "theirs": {
+    "Castile": 10640
+   },
+   "theirsTotal": 10640,
+   "theirsLost": 912,
+   "location": "Jerez",
+   "side": "Granada not engaged"
+  },
+  "source": "save of 1347-09-14"
+ },
+ {
+  "id": "1347-06-21-battle-carpio",
+  "date": "1347-06-21",
+  "type": "battle",
+  "title": "Victory at Carpio: Yūsuf's 18,000 rout a Castilian army of 7,000, killing more than 4,000",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 17871
+   },
+   "oursTotal": 17871,
+   "oursLost": 1446,
+   "theirs": {
+    "Castile": 7034
+   },
+   "theirsTotal": 7034,
+   "theirsLost": 4355,
+   "location": "Carpio"
+  },
+  "source": "save of 1347-09-14",
+  "people": [
+   "yusuf-i"
+  ]
+ },
+ {
+  "id": "1347-07-13-battle-sevilla",
+  "date": "1347-07-13",
+  "type": "battle",
+  "title": "A Moroccan column destroyed before Ishbīliyya",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "data": {
+   "result": "defeat",
+   "naval": false,
+   "ours": {
+    "Morocco": 935
+   },
+   "oursTotal": 935,
+   "oursLost": 935,
+   "theirs": {
+    "Castile": 9724
+   },
+   "theirsTotal": 9724,
+   "theirsLost": 0,
+   "location": "Ishbīliyya",
+   "side": "Granada not engaged"
+  },
+  "source": "save of 1347-09-14",
+  "places": [
+   "ishbiliyya"
+  ]
+ },
+ {
+  "id": "1347-08-31-battle-palma-del-rio",
+  "date": "1347-08-31",
+  "type": "battle",
+  "title": "Victory at Palma del Río: Castile's southern army, fresh from beating Morocco at Ishbīliyya, attacks Yūsuf's 16,000 and 4,000 Moroccans and loses 5,300 men for 700",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Morocco": 4240,
+    "Granada": 16407
+   },
+   "oursTotal": 20647,
+   "oursLost": 675,
+   "theirs": {
+    "Castile": 9724
+   },
+   "theirsTotal": 9724,
+   "theirsLost": 5332,
+   "location": "Palma del Río"
+  },
+  "source": "save of 1347-09-14",
+  "people": [
+   "yusuf-i"
+  ]
+ },
+ {
+  "id": "1347-09-14-the-war-so-far",
+  "date": "1347-09-14",
+  "type": "player_note",
+  "people": [
+   "yusuf-i"
+  ],
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "title": "A year into the war: the Moroccans smashed again and again south of Ishbīliyya while the Granadan army burns its way north, then swings west to relieve them, winning every battle it fights",
+  "data": {
+   "warContribution": {
+    "Granada": 13.2,
+    "Morocco": 7.1,
+    "Castile": 14.9
+   },
+   "losses": {
+    "Granada": {
+     "battle": 5560
+    },
+    "Morocco": {
+     "battle": 3658,
+     "attrition": 5985
+    },
+    "Castile": {
+     "battle": 18681
+    }
+   }
+  },
+  "source": "Trent's account; the save of 1347-09-14"
+ }
+]
