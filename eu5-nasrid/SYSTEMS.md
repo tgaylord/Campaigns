@@ -164,6 +164,7 @@ Every person, place and war name anywhere on the site shows a card on hover and 
 **Stack:** React, React Router, Vite and D3 in `site/`, built to a static site.
 - `site/scripts/build-data.mjs` reads `data/` and `story/`, checks every record against its schema and every reference (person, place, war, era, story entry), renders the Markdown and writes the bundle the site reads. **A bad record or a broken reference fails the build.**
 - A war page can carry a devastation reading (`tools/devastation.py`, `data/devastation/<war-id>.json`). It shows a map of population change by town between a save before the fighting and the peace save, with the towns looted in between, and tables by land and by the worst-hit towns. The first covers 1359–1366, on the War of Independence.
+- **The Atlas** is province-first. Each province is one shape, coloured by a lens: Realms, Faith, Tongue, People, Ruin (people gained or lost since the previous checkpoint, with towns looted in between hatched) or Hold (control). Clicking a province flies to it and splits it into its locations, with a folio of its towns, people, faith and tongue and its entries in the record. The map pans and zooms (drag, wheel, pinch), shows the battles since the previous checkpoint as pins, and can play through the checkpoints. The lenses come from `tools/map_layers.py`, one file per checkpoint, fetched when needed.
 - The Atlas and every small chart are drawn from the game's own map: `tools/build_map.py` traces each location from `locations.png`, and realm outlines are rebuilt for each checkpoint.
 - Hijri dates come from `site/src/lib/hijri.ts`.
 - Story entries link to records with `[name](person:id)`, `place:`, `war:` and `era:`.
@@ -177,7 +178,7 @@ Every person, place and war name anywhere on the site shows a card on hover and 
 
 1. Trent plays and makes an ordinary checkpoint save (compressed). If the estates matter at that checkpoint, he screenshots the estate power panel at the same moment, since the save doesn't store the shares.
 2. He opens the chat on the gaming PC (or links that computer) and gives his account of what happened, including anything screenshots show that a save can't. When a screenshot shows an event with several options, the option whose tooltip is open is the one he picked (nine times in ten; he says when it isn't).
-3. Claude parses the save into a snapshot and new events, then checks them against the previous snapshot.
+3. Claude parses the save into a snapshot and new events, then checks them against the previous snapshot. For each new checkpoint it also redraws the realm outlines (`tools/build_map.py --owners`) and writes the Atlas's lenses (`tools/map_layers.py`).
 4. Claude drafts the story entries and Trent corrects them.
 5. Claude commits the data and story to the repo, and the site rebuilds.
 

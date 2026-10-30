@@ -17,7 +17,7 @@
  * (the game map plus who owned each location at each checkpoint).
  * Any error stops the build.
  */
-import { readFile, readdir, writeFile, mkdir } from "node:fs/promises";
+import { readFile, readdir, writeFile, mkdir, copyFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { z } from "zod";
@@ -419,7 +419,11 @@ if (errors.length) {
 // Sea zones aren't drawn one by one; the sea is the ground the land sits on.
 const drawn = Object.fromEntries(Object.entries(gameMap.locations).filter(([, l]) => l.kind !== "sea")
   .map(([k, l]) => [k, { kind: l.kind, d: l.d, c: l.c, province: l.province, area: l.area }]));
-const mapOut = { frame: gameMap.frame, coast: gameMap.coast, locations: drawn, owners, realms,
+// Provinces and areas: outlines and members, so the Atlas can draw a province at a time.
+const provinces = Object.fromEntries(Object.entries(gameMap.provinces ?? {}).map(([k, v]) => [k, { d: v.d, c: v.c, px: v.px, area: v.area, region: v.region, locations: v.locations }]));
+const areas = Object.fromEntries(Object.entries(gameMap.areas ?? {}).map(([k, v]) => [k, { d: v.d, c: v.c, region: v.region }]));
+const px = Object.fromEntries(Object.entries(gameMap.locations).filter(([, l]) => l.kind === "land").map(([k, l]) => [k, l.px]));
+const mapOut = { frame: gameMap.frame, coast: gameMap.coast, locations: drawn, owners, realms, provinces, areas, px,
   names: { locations: names.locations, provinces: names.provinces, areas: names.areas } };
 
 /* ------------------------------------------------------------ write */
@@ -428,8 +432,16 @@ await mkdir(OUT, { recursive: true });
 const campaign = { generated: new Date().toISOString(), sample: sampleData, eras, people, places, wars, countries, snapshots, events, story, catalog, lands, subjectLands, devastation };
 await writeFile(path.join(OUT, "campaign.json"), JSON.stringify(campaign));
 await writeFile(path.join(OUT, "map.json"), JSON.stringify(mapOut));
+// The Atlas's lenses (tools/map_layers.py), one file per checkpoint, fetched when a checkpoint is shown.
+const LAYERS_IN = path.join(CAMPAIGN, "data/map/layers"), LAYERS_OUT = path.resolve(here, "../public/layers");
+await mkdir(LAYERS_OUT, { recursive: true });
+let nLayers = 0;
+for (const f of await listJson(LAYERS_IN)) {
+  if (!snapshots.some((s) => `${s.id}.json` === f)) continue;
+  await copyFile(path.join(LAYERS_IN, f), path.join(LAYERS_OUT, f)); nLayers++;
+}
 console.log(
   `campaign data: ${snapshots.length} checkpoints, ${events.length} events, ${story.length} story entries, ` +
   `${people.length} people, ${places.length} places, ${wars.length} wars${sampleData ? " (includes sample data)" : ""}; ` +
-  `map: ${inFrame.size} locations, owners at ${Object.keys(owners).length} checkpoint(s)`,
+  `map: ${inFrame.size} locations, ${Object.keys(provinces).length} provinces, owners at ${Object.keys(owners).length} checkpoint(s), lenses for ${nLayers}`,
 );

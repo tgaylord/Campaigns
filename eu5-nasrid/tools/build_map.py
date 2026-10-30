@@ -118,6 +118,28 @@ for c in np.unique(crop):
 # the coast: outline of all land, wastelands included
 out['coast'] = trace(landmask, min_area=8)
 
+# provinces and areas: the outline of each, from its land locations, so the Atlas can draw
+# the country a province at a time and split a province into its locations on demand
+def divisions(level):
+    groups = {}
+    for c in np.unique(crop):
+        k = bycol.get(int(c))
+        h = hier.get(k or '', [])
+        if not k or kind(k) != 'land' or len(h) <= level: continue
+        groups.setdefault(h[level], []).append((int(c), k))
+    res = {}
+    for name, members in groups.items():
+        m = np.isin(crop, np.array([c for c, _ in members], dtype=np.uint32)).astype(np.uint8)
+        yy, xx = np.nonzero(m)
+        h = hier[members[0][1]]
+        res[name] = {'d': trace(m, min_area=4), 'c': [round(float(xx.mean()), 1), round(float(yy.mean()), 1)],
+                     'px': int(m.sum()), 'area': h[3] if len(h) > 3 else None, 'region': h[2] if len(h) > 2 else None,
+                     'locations': sorted(k for _, k in members)}
+        if level == 3: res[name].pop('area')
+    return res
+out['provinces'] = divisions(4)
+out['areas'] = {k: {kk: v[kk] for kk in ('d', 'c', 'region', 'locations')} for k, v in divisions(3).items()}
+
 json.dump(out, open(a.out, 'w'), separators=(',', ':'))
 n = len(out['locations'])
 print(f'frame x{x0}-{x1} y{y0}-{y1} ({W}x{H}), {n} locations, {os.path.getsize(a.out) // 1024} KB')

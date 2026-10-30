@@ -6,8 +6,9 @@ Run by Claude in the workspace when a checkpoint save comes in. Inputs come from
 |---|---|
 | `extract_checkpoint.py` | Pulls the facts the campaign tracks out of a save already split by the shared decoder: the realm's locations and population by culture and religion, the court and the dynasty, laws, reforms and privileges, treaties, situations, the Battle for the Strait (influence, sovereignty, years as a subject), every war Granada is in or can be called into, and the owner of every location in the world. Unless `--no-computed` is given, also the treasury, income and expenses, manpower, estates (satisfaction, gold, tax rate), the cabinet and its actions, and every regiment and ship. Use `--no-computed` for a start-date save, whose computed values aren't settled yet. Writes `data/extracted/<date>.json`. |
 | `estate_power.py` | Estimates each estate's share of power from a decoded save, using `data/estate-power-model.json`; `--calibrate DATE` fits it to a screen reading. See 'Estate power' below. |
-| `build_map.py` | Traces every location in a frame of the game map from `locations.png` into SVG paths, plus the coastline. With `--owners`, also writes the outline of every realm at each checkpoint (`data/map/realms-<date>.json`). |
+| `build_map.py` | Traces every location in a frame of the game map from `locations.png` into SVG paths, plus the coastline and the outline of every province and area. With `--owners`, also writes the outline of every realm at each checkpoint (`data/map/realms-<date>.json`). |
 | `devastation.py` | Compares the people, prosperity and looting of every location in a game region between a save before a run of wars and a save at the peace (and optionally one after). Writes `data/devastation/<war-id>.json`, which the war's page draws as a map and tables. |
+| `map_layers.py` | Writes the Atlas's lenses for one checkpoint (`data/map/layers/<checkpoint>.json`): people, Muslim/Christian/Jewish and Andalusī/Castilian shares, prosperity, control, occupier and last looting for every land location in the map frame. Run it on each new checkpoint's decoded save. |
 
 ## A checkpoint, step by step
 
