@@ -64,5 +64,19 @@
    "residence": "Ghana"
   },
   "source": "Trent's account (the exact date isn't given; reported by 19 November 1355)"
+ },
+ {
+  "id": "1355-yahya-council",
+  "date": "1355-11-19",
+  "type": "appointment",
+  "people": [
+   "yahya-rahhu",
+   "faraj-ibn-ismail"
+  ],
+  "title": "With Faraj gone south, his seat in the dīwān goes to Yaḥyā Raḥḥū, the Zenata general who led the Volunteers of the Faith against Arghūn and the three crowns",
+  "data": {
+   "replaces": "faraj-ibn-ismail"
+  },
+  "source": "Trent's account (by November 1355)"
  }
 ]
