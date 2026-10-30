@@ -11059,6 +11059,12 @@
   }
  },
  "agendas": {
+  "pa_add_privilege": {
+   "name": "Grant Privilege",
+   "desc": "Sometimes you have to give permanent benefits to an estate to gain their support for something in the shorter term.",
+   "estate": "nobles",
+   "moves": []
+  },
   "pa_move_towards_aristocracy": {
    "name": "Aristocratic Support",
    "desc": "Our society requires constant reminding what our ideals represent. We must reinforce our values and elevate the nobility as the highest societal strata.",
@@ -11080,6 +11086,12 @@
      "direction": "right"
     }
    ]
+  },
+  "pa_raise_opinion": {
+   "name": "Increase Opinion",
+   "desc": "This estate would prefer if we establish relations with this country to whatever purpose they have in mind.",
+   "estate": "nobles",
+   "moves": []
   }
  },
  "parliaments": {

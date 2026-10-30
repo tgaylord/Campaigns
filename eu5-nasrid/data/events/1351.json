@@ -1,5 +1,15 @@
 [
  {
+  "id": "1351-01-01-majorca-mainland",
+  "date": "1351-01-01",
+  "type": "territory_change",
+  "title": "The Kingdom of Majorca's lands on the mainland (Perpinyà, Prades, Puigcerdà and Montpellier) pass to Aragon; with the Balearics gone to Morocco, the kingdom is no more",
+  "data": {
+   "to": "ARA"
+  },
+  "source": "save of 3 June 1351"
+ },
+ {
   "id": "1351-01-19-mamluk-betrothal",
   "date": "1351-01-19",
   "type": "diplomacy",
@@ -63,8 +73,61 @@
      "raw": "silver"
     }
    },
-   "status": "offered"
+   "status": "accepted 21 May 1351"
   },
   "source": "Trent's account (January 1351, day approximate); tax figures from the save of 1350-09-02"
+ },
+ {
+  "id": "1351-05-21-qarmuna-qusantina",
+  "date": "1351-05-21",
+  "type": "territory_change",
+  "places": [
+   "qarmuna",
+   "qusantina"
+  ],
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "title": "Castile pays for Granada's silence: Qarmūna and the silver mines of Qusanṭīna are ceded to Gharnāṭa, moving the border down the river toward Ishbīliyya. Granada now holds 55 of the 72 locations of the Strait",
+  "data": {
+   "from": "CAS",
+   "locations": [
+    "carmona",
+    "constantina"
+   ],
+   "straitAreas": {
+    "held": 55,
+    "total": 72
+   }
+  },
+  "source": "save of 3 June 1351; Trent's account"
+ },
+ {
+  "id": "1351-06-03-moroccan-surrender",
+  "date": "1351-06-03",
+  "type": "peace",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "title": "Morocco surrenders to Castile, ending the Second Moroccan War. By the peace's terms Morocco gives up its treaties with Granada: Castile has done Granada's dirty work, and the alliance with the Marīnids is ended without Granada breaking it",
+  "data": {
+   "annulled": "MOR–GRA treaties",
+   "granadaAllies": [
+    "MAM"
+   ]
+  },
+  "source": "save of 3 June 1351; Trent's account"
+ },
+ {
+  "id": "1351-06-03-state",
+  "date": "1351-06-03",
+  "type": "strait_change",
+  "title": "After the war: sovereignty 61.2 and Morocco's influence over Granada 11.1; stability 13.9, the treasury 912 and no debt; the Mamlūks the only ally",
+  "data": {
+   "sovereignty": 61.24,
+   "influence": 11.14,
+   "stability": 13.9
+  },
+  "source": "save of 3 June 1351"
  }
 ]

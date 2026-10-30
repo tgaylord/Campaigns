@@ -447,7 +447,13 @@
   "nameGame": "Qrmuna",
   "kind": "location",
   "nameArabic": "قرمونة",
-  "note": "Carmona, east of Ishbīliyya."
+  "note": "Carmona, east of Ishbīliyya.",
+  "held": [
+   {
+    "from": "1351-05-21",
+    "to": null
+   }
+  ]
  },
  {
   "id": "jumalla",
@@ -733,6 +739,12 @@
   "kind": "location",
   "nameArabic": "قسنطينة",
   "note": "Constantina, in the Sierra Morena north of Qarmūna; its silver mines yield more tax than Ishbīliyya itself.",
-  "nameGame": "Qsanṭina"
+  "nameGame": "Qsanṭina",
+  "held": [
+   {
+    "from": "1351-05-21",
+    "to": null
+   }
+  ]
  }
 ]
