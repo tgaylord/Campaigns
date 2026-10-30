@@ -1,0 +1,21 @@
+[
+ {
+  "id": "1357-07-northern-madrasas",
+  "date": "1357-07-01",
+  "type": "reform",
+  "people": [
+   "yusuf-i"
+  ],
+  "places": [
+   "qurtuba",
+   "ishbiliyya",
+   "jayyan"
+  ],
+  "title": "The next stage of the reform: madrasas are founded in the northern cities as well, carrying the learning of Gharnāṭa into the lands won from Qashtāla",
+  "data": {
+   "building": "madrasa",
+   "region": "the northern cities"
+  },
+  "source": "Trent's account (July 1357; the exact day isn't given)"
+ }
+]
