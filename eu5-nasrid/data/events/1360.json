@@ -71,5 +71,38 @@
    "castilePortugalLossesInAragon": "10k/30k (Trent's figures)"
   },
   "source": "Trent's account"
+ },
+ {
+  "id": "1360-11-14-diwan-al-mustakhlas",
+  "date": "1360-11-14",
+  "type": "reform",
+  "people": [
+   "yusuf-i"
+  ],
+  "places": [
+   "gharnata"
+  ],
+  "title": "The Dīwān al-Mustakhlaṣ is founded to administer the sultan's private domain, the estates, mills and revenues set apart from the public treasury to fund the court and al-Ḥamrāʾ. A new bureaucracy grows from the harem's widening influence, in the middle of the Marīnid war",
+  "data": {
+   "bureaucracy": "Dīwān al-Mustakhlaṣ",
+   "cost": "43.58 political influence",
+   "positive": {
+    "crownPower": "+10%"
+   },
+   "constant": {
+    "taxEfficiency": "+5%"
+   },
+   "negative": {
+    "estateEnrichment": "+15%"
+   },
+   "likes": {
+    "burghers": "+1% satisfaction equilibrium"
+   },
+   "dislikes": {
+    "nobles": "-1% satisfaction equilibrium"
+   },
+   "maxCost": 5.45
+  },
+  "source": "Trent's screenshot of the bureaucracy choice and his account"
  }
 ]
