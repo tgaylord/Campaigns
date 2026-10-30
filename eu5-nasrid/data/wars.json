@@ -173,5 +173,38 @@
    "from": "1346-10-18",
    "to": "1349-01-27"
   }
+ },
+ {
+  "id": "sevillan-revolt",
+  "name": "The Revolt of the Kingdom of Sevilla",
+  "start": "1353-02-01",
+  "end": null,
+  "goal": "Independence for the Kingdom of Sevilla",
+  "allies": [
+   "Castile",
+   "Valencia",
+   "Murcia"
+  ],
+  "enemies": [
+   "Kingdom of Sevilla"
+  ],
+  "involvement": "belligerent",
+  "sides": {
+   "attackers": [
+    "Kingdom of Sevilla"
+   ],
+   "defenders": [
+    "Granada",
+    "Castile",
+    "Valencia",
+    "Murcia"
+   ]
+  },
+  "note": "The Castilian peasants of the lands won at the Peace of Qurṭuba and in 1351 rose and declared a Kingdom of Sevilla, taking all 25 of those locations (Qurṭuba, Ishbīliyya, Jayyān, Qarmūna, Qusanṭīna and the rest) in a war of independence. Qashtāla, Granada's overlord, joined on Granada's side, with the ṭāʾifas of Balansiyya and Mursiyya (save of 2 February 1353; Trent's account). The rebels raise few men (their manpower is about 360 against Granada's 3,100), but they hold the land.",
+  "outcome": null,
+  "joined": {
+   "from": "1353-02-01",
+   "to": null
+  }
  }
 ]

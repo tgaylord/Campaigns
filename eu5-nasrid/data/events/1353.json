@@ -1,38 +1,74 @@
 [
  {
-  "id": "1353-02-02-kingdom-of-sevilla",
-  "date": "1353-02-02",
+  "id": "1353-02-01-kingdom-of-sevilla",
+  "date": "1353-02-01",
   "type": "war_declared",
   "people": [
    "yusuf-i"
   ],
   "places": [
-   "ishbiliyya"
+   "ishbiliyya",
+   "qurtuba",
+   "jayyan",
+   "qusantina",
+   "qarmuna"
   ],
-  "title": "The Castilian peasants of the new lands rise in rebellion, and declare a so-called Kingdom of Sevilla. The remission of the jizya was not enough, as the amir had feared",
+  "wars": [
+   "sevillan-revolt"
+  ],
+  "title": "The Castilian peasants of the new lands rise and declare a so-called Kingdom of Sevilla. All 25 locations won in 1349 and 1351 go over to it, among them Qurṭuba, Ishbīliyya, Jayyān and the silver of Qusanṭīna, and Granada is left with its 18 old locations. The remission of the jizya was not enough, as the amir feared",
   "data": {
-   "rebels": "Castilian Patriots",
-   "declared": "Kingdom of Sevilla"
+   "rebels": "SEV",
+   "locations": 25,
+   "population": 327800,
+   "granada": {
+    "locations": {
+     "from": 43,
+     "to": 18
+    },
+    "population": 274147
+   },
+   "straitAreasHeld": {
+    "from": 55,
+    "to": 30
+   }
   },
-  "source": "Trent's account"
+  "source": "save of 2 February 1353 (war dated 1 February); Trent's account"
  },
  {
-  "id": "1353-02-02-castile-answers",
-  "date": "1353-02-02",
+  "id": "1353-02-01-castile-answers",
+  "date": "1353-02-01",
   "type": "war_joined",
   "people": [
    "alfonso-xi"
   ],
-  "places": [
-   "qurtuba",
-   "ishbiliyya",
-   "jayyan"
+  "wars": [
+   "sevillan-revolt"
   ],
-  "title": "Qashtāla answers the rebels' call. The question now is whether the tyrant means to take back what he gave up at the Peace of Qurṭuba",
+  "title": "Qashtāla, Granada's overlord, answers the call and takes the field on Granada's side against the rebels, with the ṭāʾifas of Balansiyya and Mursiyya. The court is amused, and alarmed: will the tyrant help put down the revolt, or use it to take back what he gave up at the Peace of Qurṭuba?",
   "data": {
-   "joins": "CAS",
-   "side": "rebels"
+   "defenders": [
+    "GRA",
+    "CAS",
+    "VAL",
+    "MUC"
+   ],
+   "attackers": [
+    "SEV"
+   ]
   },
-  "source": "Trent's account"
+  "source": "save of 2 February 1353; Trent's account"
+ },
+ {
+  "id": "1353-02-02-state",
+  "date": "1353-02-02",
+  "type": "strait_change",
+  "title": "Sovereignty stands at 69.8, the highest of the reign, and Morocco's influence at 7.5; but Granada now holds only 30 of the Strait's 72 locations",
+  "data": {
+   "sovereignty": 69.85,
+   "influence": 7.5,
+   "areasHeld": 30
+  },
+  "source": "save of 2 February 1353"
  }
 ]

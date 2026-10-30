@@ -96,5 +96,12 @@
   "nameChronicle": "the rebels of Burtuqāl",
   "nameArabic": "ثوار البرتغال",
   "color": "#7d8f4a"
+ },
+ {
+  "tag": "SEV",
+  "name": "Kingdom of Sevilla",
+  "nameChronicle": "the so-called Kingdom of Ishbīliyya",
+  "nameArabic": "مملكة إشبيلية",
+  "color": "#8c3a52"
  }
 ]

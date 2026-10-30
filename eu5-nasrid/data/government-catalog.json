@@ -8767,6 +8767,152 @@
     }
    }
   },
+  "precious_metal_distribution_law": {
+   "name": "Precious Metal Distribution",
+   "category": "socioeconomic",
+   "options": {
+    "gold_export_ban": {
+     "name": "Export Ban",
+     "desc": "We will enforce strict prohibition on the export of our precious and reserves to foreign lands. This preserves our wealth for domestic use, shielding our treasures from the greedy eyes of other nations. While this measure may safeguard our riches, it comes at the cost of international trade opportunities. A solemn decision for those who prioritize the sanctity of our vaults over global commerce...",
+     "modifiers": [
+      {
+       "key": "ban_exports_of_goods_gold",
+       "label": "Ban Exports of Gold",
+       "value": "yes",
+       "text": "Ban Exports of Gold",
+       "percent": false,
+       "good": true
+      },
+      {
+       "key": "ban_exports_of_silver",
+       "label": "Ban Exports of Silver",
+       "value": "yes",
+       "text": "Ban Exports of Silver",
+       "percent": false,
+       "good": true
+      },
+      {
+       "key": "global_goods_gold_output_modifier",
+       "label": "Gold Output",
+       "value": -0.05,
+       "text": "Gold Output -5%",
+       "percent": true,
+       "good": true
+      },
+      {
+       "key": "global_silver_output_modifier",
+       "label": "Silver Output",
+       "value": -0.05,
+       "text": "Silver Output -5%",
+       "percent": true,
+       "good": true
+      },
+      {
+       "key": "minting_income_factor",
+       "label": "Income from Minting",
+       "value": 0.33,
+       "text": "Income from Minting +33%",
+       "percent": true,
+       "good": true
+      },
+      {
+       "key": "monthly_towards_mercantilism",
+       "label": "Monthly Progress to Mercantilism",
+       "value": 0.025,
+       "text": "Monthly Progress to Mercantilism +0.025",
+       "percent": false,
+       "good": true
+      },
+      {
+       "key": "export_impact_on_demand",
+       "label": "Export Impact on Demand",
+       "value": 0.05,
+       "text": "Export Impact on Demand +5%",
+       "percent": true,
+       "good": true
+      }
+     ],
+     "power": {},
+     "satisfaction": {},
+     "years": 2.0,
+     "favouredBy": [
+      "nobles"
+     ]
+    },
+    "regulated_gold_export": {
+     "name": "Regulated Export",
+     "desc": "The trade of our valuable and resources is managed with a watchful eye. This balanced approach limits the quantity of these precious metals that can be traded, ensuring that our wealth remains largely within our borders. By doing so, we strike a compromise between bolstering our economy and protecting our national riches. A prudent choice for rulers who seek both financial stability and regional influence.",
+     "modifiers": [
+      {
+       "key": "selling_efficiency",
+       "label": "Selling Efficiency",
+       "value": 0.02,
+       "text": "Selling Efficiency +2%",
+       "percent": true,
+       "good": true
+      }
+     ],
+     "power": {},
+     "satisfaction": {},
+     "years": 2.0,
+     "favouredBy": [
+      "crown"
+     ]
+    },
+    "unlimited_gold_export": {
+     "name": "Unlimited Export",
+     "desc": "We shall open the floodgates and allow unrestricted trade of our and reserves with foreign nations. With this bold step, we embrace the potential for unparalleled wealth accumulation through international commerce. However, this policy exposes our treasures to the risk of being dispersed across the world, making them vulnerable to the greed of rival powers. A daring option for rulers who seek to dominate the global market and reap the rewards of boundless riches.",
+     "modifiers": [
+      {
+       "key": "global_merchant_power",
+       "label": "Trade Advantage",
+       "value": 0.1,
+       "text": "Trade Advantage +10%",
+       "percent": true,
+       "good": true
+      },
+      {
+       "key": "global_goods_gold_output_modifier",
+       "label": "Gold Output",
+       "value": 0.05,
+       "text": "Gold Output +5%",
+       "percent": true,
+       "good": true
+      },
+      {
+       "key": "global_silver_output_modifier",
+       "label": "Silver Output",
+       "value": 0.05,
+       "text": "Silver Output +5%",
+       "percent": true,
+       "good": true
+      },
+      {
+       "key": "minting_income_factor",
+       "label": "Income from Minting",
+       "value": -0.33,
+       "text": "Income from Minting -33%",
+       "percent": true,
+       "good": true
+      },
+      {
+       "key": "monthly_towards_free_trade",
+       "label": "Monthly Progress to Free Trade",
+       "value": 0.025,
+       "text": "Monthly Progress to Free Trade +0.025",
+       "percent": false,
+       "good": true
+      }
+     ],
+     "power": {},
+     "satisfaction": {},
+     "years": 2.0,
+     "favouredBy": [
+      "burghers"
+     ]
+    }
+   }
+  },
   "royal_court_customs_law": {
    "name": "Royal Court Customs",
    "category": "administrative",
