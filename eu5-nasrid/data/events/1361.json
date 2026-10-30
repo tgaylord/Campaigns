@@ -1,0 +1,35 @@
+[
+ {
+  "id": "1361-02-03-castile-turns-south",
+  "date": "1361-02-03",
+  "type": "peace",
+  "wars": [
+   "marinid-submission-war"
+  ],
+  "title": "Qashtāla ends its war in Arghūn and turns its armies south against the Marīnids",
+  "data": {},
+  "source": "Trent's account"
+ },
+ {
+  "id": "1361-02-03-marinid-landings",
+  "date": "1361-02-03",
+  "type": "player_note",
+  "wars": [
+   "marinid-submission-war"
+  ],
+  "places": [
+   "qadis",
+   "al-mariyya"
+  ],
+  "title": "Four Marīnid armies of some 2,000 men each have crossed the Strait: one at Qādis and two at Walba on the Castilian coast, which the court watches closely, and one at al-Mariyya, which was thrown back into the sea",
+  "data": {
+   "landings": {
+    "Qādis (CAS)": 1,
+    "Walba / Huelva (CAS)": 2,
+    "al-Mariyya (GRA)": "1, defeated"
+   },
+   "armySize": 2000
+  },
+  "source": "Trent's account (by 3 February 1361; the battle at al-Mariyya isn't dated yet)"
+ }
+]
