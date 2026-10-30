@@ -255,5 +255,19 @@
    "overLimitPenalty": "half the overage: crown power −37.6% falls to about −18.8%"
   },
   "source": "Trent's account and screenshot of the diplomatic capacity (the exact day isn't given; just after 4 June 1349)"
+ },
+ {
+  "id": "1349-11-07-plague-toll",
+  "date": "1349-11-07",
+  "type": "situation",
+  "title": "The Great Dying: the pestilence has now killed 210,000 of the realm's people, against 9,000 a year before, and lies over 17 locations, worst across the newly won lands of Andalusia; across the known world nearly 44 million are dead",
+  "data": {
+   "affectedLocations": 17,
+   "countryDeaths": 210000,
+   "worldDeaths": 43853000,
+   "population": 612000,
+   "populationChangePerMonth": -5938
+  },
+  "source": "Trent's screenshot of the Black Death panel"
  }
 ]
