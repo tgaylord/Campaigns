@@ -3,14 +3,15 @@
   "id": "1345-01-27-stability",
   "date": "1345-01-27",
   "type": "player_note",
-  "title": "Stability has fallen from 34 to 7 since May 1343",
+  "title": "Stability has fallen from 34 to 7 since May 1343: the reforms of the Jamāʿa remake the state while the debt chips away at the crown's authority",
   "data": {
    "stability": {
     "from": 34.3,
     "to": 6.6
-   }
+   },
+   "cause": "the Jamāʿa's reforms of 1344 (Distribution of Power, royal harem) and the debt to the estates"
   },
-  "source": "checkpoint 1345-01-27 (the cause is not in the save)"
+  "source": "checkpoint 1345-01-27; the cause is Trent's account"
  },
  {
   "id": "1345-01-27-loans",

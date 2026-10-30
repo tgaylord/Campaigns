@@ -54,14 +54,15 @@
   "id": "1341-09-08-burghers",
   "date": "1341-09-08",
   "type": "estate_change",
-  "title": "The burghers sour: satisfaction falls from 59 to 38 since the autumn",
+  "title": "The burghers sour, satisfaction falling from 59 to 38 since the autumn: the crown squeezes every source of revenue (higher tariffs, small cuts), and the merchants have not forgiven the break with the Catalan traders in the war with Aragon",
   "data": {
    "satisfaction": {
     "from": 59,
     "to": 38
-   }
+   },
+   "cause": "revenue drive (tariffs raised, minor reductions) and the Catalan trade ties broken during the Aragonese war, only starting to recover by 1346"
   },
-  "source": "checkpoint 1341-09-08 (the cause is not in the save)"
+  "source": "checkpoint 1341-09-08; the cause is Trent's account"
  },
  {
   "id": "1341-09-08-sovereignty",
