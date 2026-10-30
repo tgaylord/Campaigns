@@ -7,12 +7,12 @@
    "saad-ibn-yusuf",
    "aiman-mamluk"
   ],
-  "title": "The alliance with the Mamlūks, lapsed in 1366, is renewed. Cairo stands with Gharnāṭa again",
+  "title": "The alliance with the Mamlūks, lost in the autumn of 1366, is renewed. Cairo stands with Gharnāṭa again",
   "data": {
    "with": "MAM",
    "alliance": true,
    "since": "1367-01-30",
-   "lapsed": "between April and November 1366"
+   "lapsed": "between 2 October and 6 November 1366, most likely with the console fix"
   },
   "source": "save of 24 October 1368"
  },

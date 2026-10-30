@@ -204,13 +204,24 @@
   "source": "save of 6 November 1366; Trent's plan of September 1364"
  },
  {
+  "id": "1366-05-12-castile-courts",
+  "date": "1366-05-12",
+  "type": "diplomacy",
+  "title": "Five weeks after the peace, Castile begins courting Granada's favour",
+  "data": {
+   "from": "CAS",
+   "relation": "opinion_improvement"
+  },
+  "source": "save of 2 October 1366"
+ },
+ {
   "id": "1366-11-06-state",
   "date": "1366-11-06",
   "type": "estate_change",
   "people": [
    "saad-ibn-yusuf"
   ],
-  "title": "The independent realm, seven months on. The army is stood down from fifteen regiments to five and the budget balances (income 67 against expenses 66). The treasury has gone into the land: the silver mines of Qusanṭīna, the farms of Úbeda, and a Great Madrasa rising at Ishbīliyya. Sunnīs and Catholics are exactly even, 308,000 each. The Mamlūk alliance of 1349 is no longer in force",
+  "title": "The independent realm, seven months on. The army is stood down from fifteen regiments to five and the budget balances (income 67 against expenses 66). The treasury has gone into the land: the silver mines of Qusanṭīna, the farms of Úbeda, and a Great Madrasa rising at Ishbīliyya. Sunnīs and Catholics are exactly even, 308,000 each. The Mamlūk alliance of 1349 is no longer in force. It was still in place on 2 October and disappeared along with the tributary link Trent removed with the console, so it was most likely lost in the fix",
   "data": {
    "treasury": 177,
    "income": 67.4,
@@ -227,7 +238,7 @@
     "Jewish": 42000
    },
    "straitInfluence": 2.8,
-   "mamlukAlliance": "lapsed between 5 April and 6 November 1366"
+   "mamlukAlliance": "lapsed between 2 October and 6 November 1366, most likely with the console fix"
   },
   "source": "save of 6 November 1366"
  }
