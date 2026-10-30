@@ -31,7 +31,7 @@
  },
  {
   "id": "1355-powerful-harem",
-  "date": "1355-02-01",
+  "date": "1355-02-06",
   "type": "law_change",
   "people": [
    "yusuf-i",
@@ -57,11 +57,11 @@
     "secluded_harem": "counterespionage +20%, court spending efficiency +10%, toward traditionalist"
    }
   },
-  "source": "Trent's screenshot of the Harem Laws screen and his account (early 1355; the exact day isn't given)"
+  "source": "Trent's screenshot of the Harem Laws screen and his account; date from the save of 16 June 1355"
  },
  {
   "id": "1355-yahya-dies",
-  "date": "1355-03-01",
+  "date": "1355-02-18",
   "type": "death",
   "people": [
    "yahya-rahhu"
@@ -71,7 +71,7 @@
    "cause": "illness",
    "age": 54
   },
-  "source": "Trent's account (shortly before 10 March 1355; the exact day isn't given)"
+  "source": "Trent's account; date from the save of 16 June 1355"
  },
  {
   "id": "1355-dua-council",
@@ -146,5 +146,17 @@
   "title": "The remission of the jizya and the new governor at Qurṭuba stop a second Castilian rising in its tracks. The realm is stable, control is growing, and the reconquered lands are being integrated",
   "data": {},
   "source": "Trent's account"
+ },
+ {
+  "id": "1355-06-16-state",
+  "date": "1355-06-16",
+  "type": "strait_change",
+  "title": "Sovereignty reaches 81, Morocco's influence 4.5; stability 28, income 54 against expenses 45, and the treasury owes nothing",
+  "data": {
+   "sovereignty": 81.1,
+   "influence": 4.54,
+   "stability": 28.0
+  },
+  "source": "save of 16 June 1355"
  }
 ]

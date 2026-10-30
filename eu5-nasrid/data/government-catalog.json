@@ -5285,6 +5285,213 @@
     }
    }
   },
+  "harem_law": {
+   "name": "Harem Laws",
+   "category": "administrative",
+   "options": {
+    "dispersed_harem_policy": {
+     "name": "Dispersed Harem",
+     "desc": "The harem is scattered over several locations, and the concubines as itinerant as the royal court. When a concubine has given birth to a son, she is sent with him to a provincial location to oversee his education and train him for future governorship.",
+     "modifiers": [
+      {
+       "key": "court_spending_efficiency",
+       "label": "Court Spending Efficiency",
+       "value": 0.2,
+       "text": "Court Spending Efficiency +20%",
+       "percent": true,
+       "good": true
+      },
+      {
+       "key": "monthly_towards_decentralization",
+       "label": "Monthly Progress to Decentralization",
+       "value": 0.05,
+       "text": "Monthly Progress to Decentralization +0.05",
+       "percent": false,
+       "good": true
+      },
+      {
+       "key": "country_child_education",
+       "label": "Education of Heirs",
+       "value": 0.05,
+       "text": "Education of Heirs +5%",
+       "percent": true,
+       "good": true
+      }
+     ],
+     "power": {},
+     "satisfaction": {},
+     "years": 2.0,
+     "favouredBy": [
+      "peasants"
+     ]
+    },
+    "secluded_harem_policy": {
+     "name": "Secluded Harem",
+     "desc": "Our harem is not for the eyes of the masses outside the royal court. As such, it holds a more secluded role within the household, and is strictly forbidden to directly interfere in the affairs of the monarch.",
+     "modifiers": [
+      {
+       "key": "court_spending_efficiency",
+       "label": "Court Spending Efficiency",
+       "value": 0.1,
+       "text": "Court Spending Efficiency +10%",
+       "percent": true,
+       "good": true
+      },
+      {
+       "key": "counter_espionage",
+       "label": "Counterespionage",
+       "value": 0.2,
+       "text": "Counterespionage +20%",
+       "percent": true,
+       "good": true
+      },
+      {
+       "key": "monthly_towards_traditionalist",
+       "label": "Monthly Progress to Traditionalist",
+       "value": 0.05,
+       "text": "Monthly Progress to Traditionalist +0.05",
+       "percent": false,
+       "good": true
+      }
+     ],
+     "power": {},
+     "satisfaction": {},
+     "years": 2.0,
+     "favouredBy": [
+      "clergy"
+     ]
+    },
+    "public_harem_policy": {
+     "name": "Public Harem",
+     "desc": "Our harem does not only provide legitimate heirs, but is also a symbol of the royal family's wealth, power, and prestige. The beauty and talents of the harem's members are therefore proudly displayed to the public eye.",
+     "modifiers": [
+      {
+       "key": "counter_espionage",
+       "label": "Counterespionage",
+       "value": -0.2,
+       "text": "Counterespionage -20%",
+       "percent": true,
+       "good": true
+      },
+      {
+       "key": "monthly_towards_aristocracy",
+       "label": "Monthly Progress to Aristocracy",
+       "value": 0.05,
+       "text": "Monthly Progress to Aristocracy +0.05",
+       "percent": false,
+       "good": true
+      },
+      {
+       "key": "monthly_legitimacy",
+       "label": "Monthly Legitimacy",
+       "value": 0.1,
+       "text": "Monthly Legitimacy +0.1",
+       "percent": false,
+       "good": true
+      }
+     ],
+     "power": {},
+     "satisfaction": {},
+     "years": 2.0,
+     "favouredBy": [
+      "nobles"
+     ]
+    },
+    "powerful_harem_policy": {
+     "name": "Powerful Harem",
+     "desc": "The monarch is a mere puppet, dancing at the fingertips of cunning concubines and eunuchs. The true power of the state lies in the hands of the harem, and state affairs are handled by the women of the royal court.",
+     "modifiers": [
+      {
+       "key": "nobles_estate_target_satisfaction",
+       "label": "Noble Estate Satisfaction Equilibrium",
+       "value": -0.05,
+       "text": "Noble Estate Satisfaction Equilibrium -5%",
+       "percent": true,
+       "good": true,
+       "size": "medium"
+      },
+      {
+       "key": "monthly_towards_conciliatory",
+       "label": "Monthly Progress to Conciliatory",
+       "value": 0.05,
+       "text": "Monthly Progress to Conciliatory +0.05",
+       "percent": false,
+       "good": true
+      },
+      {
+       "key": "global_crown_estate_power",
+       "label": "Crown Power",
+       "value": 0.1,
+       "text": "Crown Power +10%",
+       "percent": true,
+       "good": true
+      },
+      {
+       "key": "allow_female_cabinet",
+       "label": "Allow Females in Cabinet",
+       "value": "yes",
+       "text": "Allow Females in Cabinet",
+       "percent": false,
+       "good": true
+      }
+     ],
+     "power": {
+      "crown": 0.1
+     },
+     "satisfaction": {
+      "nobles": -0.05
+     },
+     "years": 2.0,
+     "favouredBy": [
+      "burghers"
+     ]
+    },
+    "luxurious_harem_policy": {
+     "name": "Extravagant Harem",
+     "desc": "The harem is a glittering, ostentatious display of wealth, and focused primarily on the ruler's personal pleasure. The concubines must be the most exquisite lineages, and they spend their days lounging in the pinnacle of luxury.",
+     "modifiers": [
+      {
+       "key": "court_spending_efficiency",
+       "label": "Court Spending Efficiency",
+       "value": -0.1,
+       "text": "Court Spending Efficiency -10%",
+       "percent": true,
+       "good": true
+      },
+      {
+       "key": "skill_of_new_artists",
+       "label": "Skill of New Artists",
+       "value": 0.1,
+       "text": "Skill of New Artists +10%",
+       "percent": true,
+       "good": true
+      },
+      {
+       "key": "monthly_prestige",
+       "label": "Monthly Prestige",
+       "value": 0.1,
+       "text": "Monthly Prestige +0.1",
+       "percent": false,
+       "good": true
+      },
+      {
+       "key": "monthly_towards_inward",
+       "label": "Monthly Progress to Inward",
+       "value": 0.05,
+       "text": "Monthly Progress to Inward +0.05",
+       "percent": false,
+       "good": true
+      }
+     ],
+     "power": {},
+     "satisfaction": {},
+     "years": 2.0,
+     "favouredBy": [
+      "nobles"
+     ]
+    }
+   }
+  },
   "heir_religion_law": {
    "name": "Heir Religion",
    "category": "religious",
@@ -11230,6 +11437,28 @@
     {
      "value": "individualism_vs_communalism",
      "direction": "right"
+    }
+   ]
+  },
+  "pa_move_towards_decentralized_nobles": {
+   "name": "Autonomy Support",
+   "desc": "Our society requires constant reminding what our ideals represent. We must reinforce our values and elevate the nobility as the autonomous rulers of our land",
+   "estate": "nobles",
+   "moves": [
+    {
+     "value": "centralization_vs_decentralization",
+     "direction": "right"
+    }
+   ]
+  },
+  "pa_move_towards_spiritualist_clergy": {
+   "name": "Support of Spiritualist Ideas",
+   "desc": "Our society requires constant reminding what our ideals represent. We must reinforce our values and nurture our spiritualist roots.",
+   "estate": "clergy",
+   "moves": [
+    {
+     "value": "spiritualist_vs_humanist",
+     "direction": "left"
     }
    ]
   },

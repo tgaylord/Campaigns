@@ -1,5 +1,25 @@
 [
  {
+  "id": "1354-03-01-royal-marriage-central-sahara",
+  "date": "1354-03-01",
+  "type": "diplomacy",
+  "title": "A royal marriage with a house of the central Sahara (the game's AAA43)",
+  "data": {
+   "with": "AAA43"
+  },
+  "source": "save of 16 June 1355 (treaty record)"
+ },
+ {
+  "id": "1354-03-16-betrothal-aydinids",
+  "date": "1354-03-16",
+  "type": "diplomacy",
+  "title": "A Naṣrid betrothal is agreed with the Aydınids of Anatolia",
+  "data": {
+   "with": "AYD"
+  },
+  "source": "save of 16 June 1355 (treaty record)"
+ },
+ {
   "id": "1354-07-governor-begun",
   "date": "1354-07-08",
   "type": "reform",
