@@ -148,5 +148,34 @@
    "regent": "faraj-ibn-ismail"
   },
   "source": "Trent's account. The game names a Naṣr al-Stijjai as regent; the chronicle makes Faraj the regent at Trent's direction"
+ },
+ {
+  "id": "1351-10-01-great-madrasa",
+  "date": "1351-10-01",
+  "type": "player_note",
+  "people": [
+   "faraj-ibn-ismail",
+   "yusuf-i"
+  ],
+  "places": [
+   "gharnata"
+  ],
+  "title": "A House of Learning: while the amir is on the Hajj, the regent Faraj founds the Great Madrasa of Gharnāṭa beside the great mosque, where the law will be taught under one roof as in the cities of the East, to draw students and jurists from across the Strait and bind the learning of the cities to the service of the amir",
+  "data": {
+   "event": "A House of Learning",
+   "choice": "Found the Great Madrasa beside the great mosque.",
+   "cost": 218,
+   "building": "Great Madrasa in Gharnāṭa",
+   "modifier": {
+    "name": "Center of Higher Learning",
+    "years": 20,
+    "researchProgress": "+10%",
+    "monthlyLiteracy": "+0.02%",
+    "monthlySovereignty": 0.1
+   },
+   "politicalInfluence": -10,
+   "historical": "Yūsuf I founded the Madrasa Yūsufiyya beside the great mosque in 1349"
+  },
+  "source": "Trent's screenshot of the event, with the chosen option's tooltip open"
  }
 ]
