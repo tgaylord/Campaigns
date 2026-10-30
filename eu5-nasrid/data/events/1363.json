@@ -90,5 +90,70 @@
    "side": "Castile"
   },
   "source": "Trent's account; by the save of 20 May 1363 Aragon was already fighting beside Castile against Morocco"
+ },
+ {
+  "id": "1363-08-01-death-yusuf",
+  "date": "1363-08-01",
+  "type": "death",
+  "people": [
+   "yusuf-i"
+  ],
+  "wars": [
+   "war-of-independence"
+  ],
+  "title": "Al-Ḥājj Yūsuf I dies at Ayamonte on the march into Portugal, ten weeks into the war for the realm's independence, aged forty-five, after thirty years on the throne",
+  "data": {
+   "cause": "marching",
+   "place": "Ayamonte",
+   "age": 45
+  },
+  "source": "save of 2 August 1363 (death dated 1 August); Trent's account"
+ },
+ {
+  "id": "1363-08-01-saad-succeeds",
+  "date": "1363-08-01",
+  "type": "ruler_change",
+  "people": [
+   "saad-ibn-yusuf",
+   "nasr-al-istijji"
+  ],
+  "title": "Saʿd ibn Yūsuf, fifteen, succeeds his father. Naṣr al-Istijjī of the house of Istijja is made regent until the young sultan comes of age on 18 January 1364",
+  "data": {
+   "regent": "nasr-al-istijji",
+   "ofAge": "1364-01-18",
+   "abilities": [
+    100,
+    68.6,
+    100
+   ]
+  },
+  "source": "save of 2 August 1363; Trent's account"
+ },
+ {
+  "id": "1363-08-dua-marries-nasr",
+  "date": "1363-08-02",
+  "type": "marriage",
+  "people": [
+   "nasr-al-istijji",
+   "dua-marinid"
+  ],
+  "title": "The regent Naṣr al-Istijjī marries Duʿāʾ, the late amir's Marīnid widow and minister, within days of Yūsuf's death",
+  "data": {},
+  "source": "save of 2 August 1363 (already married); Trent's account"
+ },
+ {
+  "id": "1363-08-02-state",
+  "date": "1363-08-02",
+  "type": "estate_change",
+  "wars": [
+   "war-of-independence"
+  ],
+  "title": "The treasury holds 24 against expenses of 89 a month and an income of 52",
+  "data": {
+   "treasury": 24,
+   "income": 51.5,
+   "expenses": 89.3
+  },
+  "source": "save of 2 August 1363"
  }
 ]

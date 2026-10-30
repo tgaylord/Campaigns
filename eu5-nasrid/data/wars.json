@@ -250,7 +250,10 @@
   "start": "1363-05-20",
   "end": null,
   "goal": "Independence from Castile",
-  "allies": [],
+  "allies": [
+   "Valencia",
+   "Murcia"
+  ],
   "enemies": [
    "Castile",
    "Portugal",
@@ -259,7 +262,9 @@
   "involvement": "belligerent",
   "sides": {
    "attackers": [
-    "Granada"
+    "Granada",
+    "Valencia",
+    "Murcia"
    ],
    "defenders": [
     "Castile",
@@ -267,7 +272,7 @@
     "Aragon"
    ]
   },
-  "note": "On 20 May 1363, the day the truce with Castile ran out, Granada went to war for its independence and the amir marched north. The court had begun the claim on 31 December 1361; the casus belli the game gives is 'reclaim al-Andalus'. Castile came to it with only 183 men in its pool and 58 towns, Toledo among them, occupied by the Marīnids, with whom its war went on (Aragon now on Castile's side there). Portugal, which had made its own peace with Morocco, stood with Castile; the court's first aim was to knock it out of the war (save of 20 May 1363; Trent's account). The ṭāʾifas of Balansiyya and Mursiyya came to it untouched, having been kept out of the Marīnid war. Aragon joined Castile against Granada on 27 July 1363.",
+  "note": "On 20 May 1363, the day the truce with Castile ran out, Granada went to war for its independence and the amir marched north. The court had begun the claim on 31 December 1361; the casus belli the game gives is 'reclaim al-Andalus'. Castile came to it with only 183 men in its pool and 58 towns, Toledo among them, occupied by the Marīnids, with whom its war went on (Aragon now on Castile's side there). Portugal, which had made its own peace with Morocco, stood with Castile; the court's first aim was to knock it out of the war (save of 20 May 1363; Trent's account). The ṭāʾifas of Balansiyya and Mursiyya came to it untouched, having been kept out of the Marīnid war. Aragon joined Castile against Granada on 27 July 1363. Valencia and Murcia march with Granada; the Mamlūks could be called. On 1 August 1363 Yūsuf I died at Ayamonte on the march into Portugal; the war passed to his son Saʿd and the regent Naṣr al-Istijjī.",
   "outcome": null,
   "joined": {
    "from": "1363-05-20",

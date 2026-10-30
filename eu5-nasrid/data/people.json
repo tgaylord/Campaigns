@@ -439,7 +439,7 @@
   "reigns": [
    {
     "from": "1333-08-25",
-    "to": null
+    "to": "1363-08-01"
    }
   ],
   "roles": [
@@ -447,17 +447,20 @@
    "sultan"
   ],
   "stats": {
-   "adm": 78.0,
-   "dip": 71.0,
-   "mil": 63.0
+   "adm": 87,
+   "dip": 71,
+   "mil": 63
   },
   "traits": [
    "architectural_visionary",
    "scarred",
    "fierce_negotiator",
    "battlefield_medic",
-   "hajji"
-  ]
+   "hajji",
+   "benevolent"
+  ],
+  "died": "1363-08-01",
+  "note": "Died on 1 August 1363 at Ayamonte, on the march into Portugal in the War of Independence, aged 45, after a reign of thirty years. Father of Saʿd, Ismāʿīl, Abū al-Ḥasan ʿAlī, Muḥammad, Jadīla, Maryam, Fāṭima, ʿĀʾisha and Umm al-Fatḥ."
  },
  {
   "id": "fatima-bint-ismail",
@@ -771,16 +774,24 @@
   "born": "1348-01-18",
   "father": "yusuf-i",
   "mother": "sayyida-of-fezzan",
-  "roles": [],
+  "roles": [
+   "sultan"
+  ],
   "stats": {
-   "adm": 2,
-   "dip": 2,
-   "mil": 0
+   "adm": 100,
+   "dip": 68.6,
+   "mil": 100
   },
   "traits": [
    "prodigy"
   ],
-  "note": "First son of Yūsuf I and Sayyida of Fezzan, born 18 January 1348 in the second year of the war with the three crowns. Betrothed on 19 January 1351 to Aiman, daughter of the Mamluk Sultan. The same winter the Chancellor reported him a Prodigy: a child predestined, the court said, to leave his name in the history books. His father brought the finest tutors of the Islamic world to Gharnāṭa for him, several Christians among them."
+  "note": "First son of Yūsuf I and Sayyida of Fezzan, born 18 January 1348 in the second year of the war with the three crowns. Betrothed on 19 January 1351 to Aiman, daughter of the Mamluk Sultan. The same winter the Chancellor reported him a Prodigy: a child predestined, the court said, to leave his name in the history books. His father brought the finest tutors of the Islamic world to Gharnāṭa for him, several Christians among them. Succeeded his father on 1 August 1363 at fifteen, under the regency of Naṣr al-Istijjī until he came of age on 18 January 1364. At his accession his abilities stood at 100/69/100, the prodigy fulfilled.",
+  "reigns": [
+   {
+    "from": "1363-08-01",
+    "to": null
+   }
+  ]
  },
  {
   "id": "aiman-mamluk",
@@ -798,7 +809,7 @@
   "dynasty": "Marīnid",
   "female": true,
   "roles": [],
-  "note": "A princess of the Marīnid house of Fās, betrothed to Granada on 18 January 1348 and married to Yūsuf I about 12 August 1354: the one Marīnid bond that outlived Morocco's annulment of its treaties with Granada in 1351. The most capable of the amir's wives, she took Yaḥyā Raḥḥū's seat in the dīwān about 10 March 1355, after his death, under the Powerful Harem law that let women sit in the cabinet. By August 1358 she was widely praised for bringing fresh ideas and practices to the court (the game's 'Foreign Wisdom'), to the nobility's displeasure.",
+  "note": "A princess of the Marīnid house of Fās, betrothed to Granada on 18 January 1348 and married to Yūsuf I about 12 August 1354: the one Marīnid bond that outlived Morocco's annulment of its treaties with Granada in 1351. The most capable of the amir's wives, she took Yaḥyā Raḥḥū's seat in the dīwān about 10 March 1355, after his death, under the Powerful Harem law that let women sit in the cabinet. By August 1358 she was widely praised for bringing fresh ideas and practices to the court (the game's 'Foreign Wisdom'), to the nobility's displeasure. Mother of Yūsuf's son Muḥammad (1356–1358). Widowed on 1 August 1363, she married the regent Naṣr al-Istijjī within days.",
   "born": "1338-08-10",
   "gameId": 24887
  },
@@ -809,7 +820,9 @@
   "dynasty": "Ḥafṣid",
   "female": true,
   "roles": [],
-  "note": "A princess of the Ḥafṣid house of Tūnis, betrothed to Granada on 23 July 1345 and married to Yūsuf I on 19 November 1354, three months after his Marīnid marriage. Her name is Berber (Amazigh)."
+  "note": "A princess of the Ḥafṣid house of Tūnis, betrothed to Granada on 23 July 1345 and married to Yūsuf I on 19 November 1354, three months after his Marīnid marriage. Her name is Berber (Amazigh).",
+  "born": "1338-11-16",
+  "gameId": 25379
  },
  {
   "id": "fatiu-ghana",
@@ -855,5 +868,152 @@
   "mother": "fatiu-ghana",
   "roles": [],
   "note": "Daughter of Faraj ibn Ismāʿīl and Fatiu, born in Ghana after her father went south (Fatiu was pregnant in the save of 16 June 1355; the birth date isn't recorded yet)."
+ },
+ {
+  "id": "nasr-al-istijji",
+  "name": "Naṣr al-Istijjī",
+  "nameGame": "Naṣr al-Stijjai",
+  "dynasty": "of Istijja",
+  "born": "1316-08-09",
+  "gameId": 39104,
+  "roles": [
+   "regent"
+  ],
+  "stats": {
+   "adm": 38,
+   "dip": 57,
+   "mil": 34
+  },
+  "traits": [
+   "babbling_buffoon"
+  ],
+  "note": "A noble of the house of Istijja (Écija). The game made him regent during Yūsuf I's Hajj (the chronicle gave that regency to Faraj); on Yūsuf's death in August 1363 he became regent for the young Saʿd, and at once married Duʿāʾ, the late amir's Marīnid widow and minister. The game calls him a babbling buffoon."
+ },
+ {
+  "id": "ismail-ibn-yusuf",
+  "name": "Ismāʿīl ibn Yūsuf",
+  "nameArabic": "إسماعيل بن يوسف",
+  "nameGame": "Ismail",
+  "gameId": 41904,
+  "dynasty": "Naṣrid",
+  "born": "1354-05-05",
+  "father": "yusuf-i",
+  "mother": "sayyida-of-fezzan",
+  "female": false,
+  "roles": [],
+  "traits": [
+   "child_gallant"
+  ]
+ },
+ {
+  "id": "ali-ibn-yusuf",
+  "name": "Abū al-Ḥasan ʿAlī ibn Yūsuf",
+  "nameArabic": "أبو الحسن علي بن يوسف",
+  "nameGame": "Abu al-Hasan Ali",
+  "gameId": 43177,
+  "dynasty": "Naṣrid",
+  "born": "1355-09-06",
+  "father": "yusuf-i",
+  "mother": "tizemt-hafsid",
+  "female": false,
+  "roles": [],
+  "traits": [
+   "child_gregarious"
+  ]
+ },
+ {
+  "id": "muhammad-ibn-yusuf",
+  "name": "Muḥammad ibn Yūsuf",
+  "nameArabic": "محمد بن يوسف",
+  "nameGame": "Muhammad",
+  "gameId": 16799810,
+  "dynasty": "Naṣrid",
+  "born": "1356-02-26",
+  "father": "yusuf-i",
+  "mother": "dua-marinid",
+  "female": false,
+  "roles": [],
+  "traits": [
+   "sickly"
+  ],
+  "died": "1358-03-15"
+ },
+ {
+  "id": "jadila-bint-yusuf",
+  "name": "Jadīla bint Yūsuf",
+  "nameArabic": "جديلة بنت يوسف",
+  "nameGame": "Jadila",
+  "gameId": 16796753,
+  "dynasty": "Naṣrid",
+  "born": "1356-03-20",
+  "father": "yusuf-i",
+  "mother": "sayyida-of-fezzan",
+  "female": true,
+  "roles": [],
+  "traits": [
+   "child_rowdy"
+  ]
+ },
+ {
+  "id": "maryam-bint-yusuf",
+  "name": "Maryam bint Yūsuf",
+  "nameArabic": "مريم بنت يوسف",
+  "nameGame": "Mary",
+  "gameId": 44417,
+  "dynasty": "Naṣrid",
+  "born": "1357-01-01",
+  "father": "yusuf-i",
+  "mother": "tizemt-hafsid",
+  "female": true,
+  "roles": [],
+  "traits": [
+   "child_prodigy"
+  ]
+ },
+ {
+  "id": "fatima-bint-yusuf",
+  "name": "Fāṭima bint Yūsuf",
+  "nameArabic": "فاطمة بنت يوسف",
+  "nameGame": "Fatima",
+  "gameId": 16797380,
+  "dynasty": "Naṣrid",
+  "born": "1358-03-03",
+  "father": "yusuf-i",
+  "mother": "tizemt-hafsid",
+  "female": true,
+  "roles": [],
+  "traits": [
+   "child_gallant"
+  ]
+ },
+ {
+  "id": "aisha-bint-yusuf",
+  "name": "ʿĀʾisha bint Yūsuf",
+  "nameArabic": "عائشة بنت يوسف",
+  "nameGame": "Aisha",
+  "gameId": 47424,
+  "dynasty": "Naṣrid",
+  "born": "1359-12-03",
+  "father": "yusuf-i",
+  "mother": "sayyida-of-fezzan",
+  "female": true,
+  "roles": [],
+  "traits": [
+   "child_intelligent"
+  ]
+ },
+ {
+  "id": "umm-al-fath-bint-yusuf",
+  "name": "Umm al-Fatḥ bint Yūsuf",
+  "nameArabic": "أم الفتح بنت يوسف",
+  "nameGame": "Umm al-Fath",
+  "gameId": 49910,
+  "dynasty": "Naṣrid",
+  "born": "1362-07-07",
+  "father": "yusuf-i",
+  "mother": "tizemt-hafsid",
+  "female": true,
+  "roles": [],
+  "traits": []
  }
 ]
