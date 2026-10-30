@@ -412,7 +412,7 @@
   "wars": [
    "second-marinid-submission-war"
   ],
-  "title": "A year into the war. The Moroccan counterattack has won back the north shore: of the towns taken that first winter, only Niebla is still held, and Moroccan armies stand at Ronda, Adra and Málaga. Khālid's army of 7,700 holds at Almuñécar, and the first Mamlūk troops, 5,700, have come ashore at Gérgal. Expenses are 176 a month against an income of 76, with 770 in the treasury",
+  "title": "A year into the war. The Moroccan counterattack has won back the north shore: of the towns taken that first winter, only Niebla is still held, and Moroccan armies stand at Ronda, Adra and Málaga. Khālid's army of 7,700 holds at Almuñécar, and the first Mamlūk troops, 5,700, have come ashore at Gérgal. Expenses are 176 a month against an income of 76, with 770 in the treasury. The money came mainly from squeezing the estates, Moroccan concessions, squeezing the ṭāʾifas, and Egypt",
   "data": {
    "forces": {
     "GRA": {
@@ -437,6 +437,66 @@
     "Almuñécar"
    ]
   },
-  "source": "save of 18 November 1369"
+  "source": "save of 18 November 1369; Trent's account of where the gold came from"
+ },
+ {
+  "id": "1369-11-21-battle-adra",
+  "date": "1369-11-21",
+  "type": "battle",
+  "people": [
+   "khalid-ibn-yahya"
+  ],
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "At Adra Khālid's 7,180 fall on the Marīnid landing force of 970 and destroy it, for 5 of ours",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 7178
+   },
+   "oursTotal": 7178,
+   "oursLost": 5,
+   "theirs": {
+    "Morocco": 970
+   },
+   "theirsTotal": 970,
+   "theirsLost": 970,
+   "location": "Adra"
+  },
+  "source": "autosave of 1 July 1370"
+ },
+ {
+  "id": "1369-12-16-battle-malaga",
+  "date": "1369-12-16",
+  "type": "battle",
+  "people": [
+   "khalid-ibn-yahya"
+  ],
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "At Málaga a Marīnid force of 750 attacks the joined army of Granada, the Mamlūks and Valencia, 15,700 strong, and is destroyed. The first battle where Egyptian soldiers stand in the Granadan line",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 8130,
+    "Mamluks": 5687,
+    "Valencia": 1851,
+    "Taifa of the Algarve": 23
+   },
+   "oursTotal": 15691,
+   "oursLost": 0,
+   "theirs": {
+    "Morocco": 753
+   },
+   "theirsTotal": 753,
+   "theirsLost": 753,
+   "location": "Málaga",
+   "side": "Granada defending"
+  },
+  "source": "autosave of 1 July 1370"
  }
 ]

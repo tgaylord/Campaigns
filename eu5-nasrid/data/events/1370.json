@@ -1,5 +1,121 @@
 [
  {
+  "id": "1370-03-08-battle-malaga",
+  "date": "1370-03-08",
+  "type": "battle",
+  "people": [
+   "khalid-ibn-yahya"
+  ],
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "A second Marīnid army, 3,300 under Muṣliḥ al-Dīn, attacks Khālid's 8,100 at Málaga and is broken: 2,440 of theirs lost for 370 of ours",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 8127
+   },
+   "oursTotal": 8127,
+   "oursLost": 373,
+   "theirs": {
+    "Morocco": 3315
+   },
+   "theirsTotal": 3315,
+   "theirsLost": 2436,
+   "location": "Málaga",
+   "side": "Granada defending"
+  },
+  "source": "autosave of 1 July 1370"
+ },
+ {
+  "id": "1370-03-31-battle-jerez",
+  "date": "1370-03-31",
+  "type": "battle",
+  "people": [
+   "osman-marinid"
+  ],
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "The Mamlūk army, 5,650 with Valencians beside them, attacks Osman's 3,870 at Jerez and is thrown back: 3,110 lost against 845",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Mamluks": 5653,
+    "Valencia": 1850,
+    "Taifa of the Algarve": 23
+   },
+   "oursTotal": 7526,
+   "oursLost": 3110,
+   "theirs": {
+    "Morocco": 3869
+   },
+   "theirsTotal": 3869,
+   "theirsLost": 845,
+   "location": "Jerez"
+  },
+  "source": "autosave of 1 July 1370"
+ },
+ {
+  "id": "1370-04-06-battle-jerez",
+  "date": "1370-04-06",
+  "type": "battle",
+  "people": [
+   "khalid-ibn-yahya",
+   "osman-marinid"
+  ],
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "Six days later Khālid avenges the Mamlūks at Jerez: 7,260 Granadans against Osman's 3,015, of whom 1,870 fall, for 173 of ours",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 7261
+   },
+   "oursTotal": 7261,
+   "oursLost": 173,
+   "theirs": {
+    "Morocco": 3015
+   },
+   "theirsTotal": 3015,
+   "theirsLost": 1870,
+   "location": "Jerez"
+  },
+  "source": "autosave of 1 July 1370"
+ },
+ {
+  "id": "1370-05-31-battle-beja",
+  "date": "1370-05-31",
+  "type": "battle",
+  "people": [
+   "khalid-ibn-yahya"
+  ],
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "A Marīnid army of 3,380 under Aghlab lands in al-Gharb. Khālid marches west and destroys it at Beja: 2,260 of theirs lost for 480 of ours",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 7088
+   },
+   "oursTotal": 7088,
+   "oursLost": 480,
+   "theirs": {
+    "Morocco": 3382
+   },
+   "theirsTotal": 3382,
+   "theirsLost": 2262,
+   "location": "Beja"
+  },
+  "source": "autosave of 1 July 1370"
+ },
+ {
   "id": "1370-06-morocco-near-defeat",
   "date": "1370-06-01",
   "type": "player_note",
@@ -12,5 +128,134 @@
   "title": "After several more battles, Morocco is nearly beaten by June 1370. The victory has cost a great many lives",
   "data": {},
   "source": "Trent's account (by June 1370; no save yet; the battles will be filled in from the save at the peace)"
+ },
+ {
+  "id": "1370-09-12-battle-malaga",
+  "date": "1370-09-12",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "The last battle of the war, at Mālaqa. 8,370 Granadans meet 2,890 Moroccans and break them: 1,040 of theirs lost for 154 of ours",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 8366
+   },
+   "oursTotal": 8366,
+   "oursLost": 154,
+   "theirs": {
+    "Morocco": 2887
+   },
+   "theirsTotal": 2887,
+   "theirsLost": 1036,
+   "location": "Málaga",
+   "warScore": 4.2,
+   "composition": {
+    "ours": {
+     "archers": 1214,
+     "infantry": 2000,
+     "lightCavalry": 1580,
+     "heavyCavalry": 3430,
+     "supply": 142
+    },
+    "theirs": {
+     "archers": 1108,
+     "lightCavalry": 1752,
+     "heavyCavalry": 27,
+     "supply": 50
+    }
+   }
+  },
+  "source": "Trent's screenshot of the battle report (12 September 1370)"
+ },
+ {
+  "id": "1370-09-12-peace-morocco",
+  "date": "1370-09-12",
+  "type": "peace",
+  "people": [
+   "saad-ibn-yusuf",
+   "abu-inan-faris"
+  ],
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "Peace with Fās. Morocco gives up the whole north shore of the Strait, eleven towns: Ronda and Marbella, and the nine of its puppet Kingdom of Sevilla, which ceases to exist, from Cádiz and Jerez to Gibraltar, Tarifa and Algeciras. Morocco also pays reparations and signs an agreement against piracy. With its ṭāʾifas, Granada now holds all 72 towns of the Strait's three lands",
+  "data": {
+   "with": "MOR",
+   "ceded": [
+    "Ronda",
+    "Marbella",
+    "Cádiz",
+    "Gibraltar",
+    "Tarifa",
+    "Algeciras",
+    "Jerez de la Frontera",
+    "Niebla",
+    "Sanlúcar",
+    "Medina Sidonia",
+    "Arcos de la Frontera"
+   ],
+   "population": 84370,
+   "reparations": true,
+   "antiPiracy": true,
+   "straitHeld": 72,
+   "warDead": {
+    "granadaSide": 14154,
+    "of which Granada": 9915,
+    "Mamluks": 2336,
+    "moroccanSide": 22942,
+    "of which Morocco": 22142,
+    "note": "battle losses only, 22 battles; attrition not counted"
+   }
+  },
+  "source": "saves of 13 September 1370 and 1 July 1370; Trent's screenshot of the terms"
+ },
+ {
+  "id": "1370-09-13-state",
+  "date": "1370-09-13",
+  "type": "estate_change",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "After the peace the realm is 60 towns and 749,000 people, 368,000 Sunnīs to 333,000 Catholics. The estate loans of 1369, 469 dīnārs, are still owed. Expenses are 144 a month against an income of 63 while the mercenaries are still on the books",
+  "data": {
+   "locations": 60,
+   "population": 748976,
+   "religions": {
+    "Sunni": 368000,
+    "Catholic": 333000
+   },
+   "loans": 469,
+   "income": 62.8,
+   "expenses": 144.5,
+   "treasurySources": "Trent: the war chest came mainly from bullying the estates, Moroccan concessions, bullying the vassals, and Egypt"
+  },
+  "source": "save of 13 September 1370"
+ },
+ {
+  "id": "1370-09-14-strait-ends",
+  "date": "1370-09-14",
+  "type": "situation",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "The Battle for the Strait is over: the Throne of Granada endures. Qashtāla has stopped sending demands, Fās has failed to cross, and the throne in Gharnāṭa has the same occupant it began with. Granada stands free",
+  "data": {
+   "situation": "battle_for_the_strait",
+   "ending": "The Throne of Granada Endures",
+   "option": "Granada stands free",
+   "effects": [
+    "Consolidated Governance for 100 years: +0.5% monthly control, +25% speed of integration",
+    "Al-Andalus can be formed while holding fewer Iberian territories",
+    "the Reconquest of Iberia can be fabricated at reduced cost",
+    "every location held in Granada, Andalusia and Murcia raised to core integration",
+    "every ṭāʾifa being annexed gains 25% annexation progress",
+    "enables the decision Usher in the Golden Century, which starts the Golden Century situation"
+   ]
+  },
+  "source": "Trent's screenshots of the event (14 September 1370)"
  }
 ]
