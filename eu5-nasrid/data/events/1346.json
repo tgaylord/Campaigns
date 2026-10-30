@@ -197,5 +197,82 @@
    }
   },
   "source": "checkpoint 1346-10-18"
+ },
+ {
+  "id": "1346-10-18-granada-joins",
+  "date": "1346-10-18",
+  "type": "war_joined",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "people": [
+   "yusuf-i"
+  ],
+  "title": "Granada answers Morocco's call and goes to war with Castile, Portugal and Aragon, and the Ṭāʾifa of Balansiyya marches with it",
+  "data": {
+   "joined": [
+    "GRA",
+    "VAL"
+   ]
+  },
+  "source": "checkpoint 1346-11-08 (joined 18 October 1346)"
+ },
+ {
+  "id": "1346-10-18-tributary-ends",
+  "date": "1346-10-18",
+  "type": "strait_change",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "title": "In taking up arms against Castile, Granada casts off its tribute: the bond of a tributary and the parias are ended, and Aragon's reparations cease",
+  "data": {
+   "overlord": {
+    "from": "CAS",
+    "to": null
+   },
+   "parias": "ended",
+   "warReparationsFromARA": "ended",
+   "yearsSubject": {
+    "from": 25,
+    "to": 0
+   }
+  },
+  "source": "checkpoint 1346-11-08"
+ },
+ {
+  "id": "1346-10-18-volunteers-rise",
+  "date": "1346-10-18",
+  "type": "player_note",
+  "people": [
+   "yahya-rahhu"
+  ],
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "title": "The Volunteers of the Faith rise again: the Ghuzāt who broke Aragon return under Yaḥyā Raḥḥū to stand against the united crowns",
+  "data": {
+   "regiments": 24
+  },
+  "source": "Trent's account; the company's strength and its hire date from checkpoint 1346-11-08"
+ },
+ {
+  "id": "1346-11-08-mobilisation",
+  "date": "1346-11-08",
+  "type": "player_note",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "title": "The army is raised: seventeen regiments of mutaṭawwiʿa beside the feudal levies, the knights and the jinetes, and a second company hired on 6 November",
+  "data": {
+   "mutatawwia": 17,
+   "secondCompany": {
+    "hired": "1346-11-06",
+    "regiments": 8
+   },
+   "treasury": 55,
+   "income": 26.9,
+   "expenses": 40.9
+  },
+  "source": "Trent's account; checkpoint 1346-11-08"
  }
 ]

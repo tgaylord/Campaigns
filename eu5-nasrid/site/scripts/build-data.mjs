@@ -60,6 +60,8 @@ const Person = z.object({
   female: z.boolean().default(false),
   /** the character's id in the save */
   gameId: z.number().optional(),
+  /** further game characters the chronicle treats as this same person */
+  gameIds: z.array(z.number()).optional(),
   stats: z.object({ adm: z.number(), dip: z.number(), mil: z.number() }).optional(),
   traits: z.array(z.string()).default([]),
   note: z.string().optional(),

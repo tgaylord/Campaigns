@@ -591,7 +591,11 @@
   "traits": [
    "bold_fighter"
   ],
-  "note": "A Zenata Berber, founder and head of the house of Raḥḥū; general from 1 September 1339 at the head of the Volunteers of the Faith. The game calls him 'a competent yet fickle figure'."
+  "note": "A Zenata Berber, founder and head of the house of Raḥḥū; general from 1 September 1339 at the head of the Volunteers of the Faith. The game calls him 'a competent yet fickle figure'. He led the Volunteers of the Faith again from 18 October 1346, when they rose against the united crowns (in the game files his second command is a separate character with the same name, house and birth date; the chronicle keeps them one man).",
+  "gameIds": [
+   26562,
+   34868
+  ]
  },
  {
   "id": "joan-doriola",

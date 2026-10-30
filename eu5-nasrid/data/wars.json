@@ -133,7 +133,8 @@
    "Gabès",
    "Gafsa",
    "Bijaya",
-   "Sahel"
+   "Sahel",
+   "Valencia"
   ],
   "enemies": [
    "Castile",
@@ -142,7 +143,7 @@
    "Majorca",
    "Cagliari"
   ],
-  "involvement": "potential",
+  "involvement": "belligerent",
   "sides": {
    "attackers": [
     "Morocco",
@@ -154,7 +155,9 @@
     "Gabès",
     "Gafsa",
     "Bijaya",
-    "Sahel"
+    "Sahel",
+    "Granada",
+    "Valencia"
    ],
    "defenders": [
     "Castile",
@@ -164,7 +167,11 @@
     "Cagliari"
    ]
   },
-  "note": "Six years after its defeat of 1340, Morocco declares war again under the game's scripted Marinid casus belli to reclaim al-Andalus. Castile's alliances bring in Portugal and Aragon, with Majorca and Cagliari, so all three crowns of Iberia stand together. Tafilalt, Touat and Tlemcen march with Morocco at once; Tunis and its marches (Tripoli, Gabès, Gafsa, Bijaya and the Sahel) join on 18 October. Granada, Castile's tributary and alone on the Iberian shore, is called and has not answered (save of 18 October 1346; Trent's account).",
-  "outcome": null
+  "note": "Six years after its defeat of 1340, Morocco declares war again under the game's scripted Marinid casus belli to reclaim al-Andalus. Castile's alliances bring in Portugal and Aragon, with Majorca and Cagliari, so all three crowns of Iberia stand together. Tafilalt, Touat and Tlemcen march with Morocco at once; Tunis and its marches (Tripoli, Gabès, Gafsa, Bijaya and the Sahel) join on 18 October. Granada, Castile's tributary and alone on the Iberian shore, answered the call on 18 October and brought the Ṭāʾifa of Balansiyya with it; going to war with its overlord ended the tributary bond. The Volunteers of the Faith rose again under Yaḥyā Raḥḥū (saves of 18 October and 8 November 1346; Trent's account).",
+  "outcome": null,
+  "joined": {
+   "from": "1346-10-18",
+   "to": null
+  }
  }
 ]
