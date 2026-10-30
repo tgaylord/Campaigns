@@ -1,0 +1,36 @@
+[
+ {
+  "id": "1355-03-15-governor-qurtuba",
+  "date": "1355-03-15",
+  "type": "reform",
+  "people": [
+   "yusuf-i"
+  ],
+  "places": [
+   "qurtuba"
+  ],
+  "title": "A local governor is founded and seated at Qurṭuba, the old seat of the caliphs, to carry the crown's authority up and down the great river through the lands won in 1349",
+  "data": {
+   "building": "local_governor",
+   "location": "cordoba",
+   "modifier": {
+    "localProximitySource": 80
+   }
+  },
+  "source": "Trent's account"
+ },
+ {
+  "id": "1355-08-12-marinid-marriage",
+  "date": "1355-08-12",
+  "type": "marriage",
+  "people": [
+   "yusuf-i"
+  ],
+  "title": "The amir marries his Marīnid bride, fulfilling the betrothal agreed with the house of Fās in January 1348",
+  "data": {
+   "with": "MOR",
+   "betrothed": "1348-01-18"
+  },
+  "source": "Trent's account (about 12 August 1355)"
+ }
+]
