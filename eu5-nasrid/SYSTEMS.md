@@ -172,7 +172,7 @@ Every person, place and war name anywhere on the site shows a card on hover and 
 ## 7. A session, step by step
 
 1. Trent plays and makes an ordinary checkpoint save (compressed). If the estates matter at that checkpoint, he screenshots the estate power panel at the same moment, since the save doesn't store the shares.
-2. He opens the chat on the gaming PC (or links that computer) and gives his account of what happened, including anything screenshots show that a save can't.
+2. He opens the chat on the gaming PC (or links that computer) and gives his account of what happened, including anything screenshots show that a save can't. When a screenshot shows an event with several options, the option whose tooltip is open is the one he picked (nine times in ten; he says when it isn't).
 3. Claude parses the save into a snapshot and new events, then checks them against the previous snapshot.
 4. Claude drafts the story entries and Trent corrects them.
 5. Claude commits the data and story to the repo, and the site rebuilds.

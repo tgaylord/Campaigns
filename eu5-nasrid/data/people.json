@@ -452,7 +452,9 @@
   },
   "traits": [
    "architectural_visionary",
-   "scarred"
+   "scarred",
+   "fierce_negotiator",
+   "battlefield_medic"
   ]
  },
  {
@@ -750,5 +752,24 @@
    "stubborn"
   ],
   "note": "A man of the ʿulamāʾ who appears at court by January 1345, with gifts to rival any in the realm (85/96/76)."
+ },
+ {
+  "id": "saad-ibn-yusuf",
+  "name": "Saʿd ibn Yūsuf",
+  "nameArabic": "سعد بن يوسف",
+  "nameGame": "Saad",
+  "gameId": 16811483,
+  "dynasty": "Naṣrid",
+  "born": "1348-01-18",
+  "father": "yusuf-i",
+  "mother": "sayyida-of-fezzan",
+  "roles": [],
+  "stats": {
+   "adm": 2,
+   "dip": 2,
+   "mil": 0
+  },
+  "traits": [],
+  "note": "First son of Yūsuf I and Sayyida of Fezzan, born 18 January 1348 in the second year of the war with the three crowns."
  }
 ]

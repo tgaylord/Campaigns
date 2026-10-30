@@ -248,6 +248,18 @@
   ]
  },
  {
+  "id": "1347-08-08-constantinople-falls",
+  "date": "1347-08-08",
+  "type": "diplomacy",
+  "title": "Constantinople falls to the Ottomans: the Queen of Cities becomes Kostantîniyye",
+  "data": {
+   "location": "constantinople",
+   "from": "BYZ",
+   "to": "TUR"
+  },
+  "source": "checkpoint 1348-07-01"
+ },
+ {
   "id": "1347-08-31-battle-palma-del-rio",
   "date": "1347-08-31",
   "type": "battle",
@@ -307,5 +319,91 @@
    }
   },
   "source": "Trent's account; the save of 1347-09-14"
+ },
+ {
+  "id": "1347-10-04-battle-montiel",
+  "date": "1347-10-04",
+  "type": "battle",
+  "title": "Morocco beaten at Montiel",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "data": {
+   "result": "defeat",
+   "naval": false,
+   "ours": {
+    "Morocco": 3916,
+    "Tunis": 179
+   },
+   "oursTotal": 4095,
+   "oursLost": 1191,
+   "theirs": {
+    "Castile": 8288
+   },
+   "theirsTotal": 8288,
+   "theirsLost": 3823,
+   "location": "Montiel",
+   "side": "Granada not engaged"
+  },
+  "source": "checkpoint 1348-07-01"
+ },
+ {
+  "id": "1347-10-30-battle-montiel",
+  "date": "1347-10-30",
+  "type": "battle",
+  "title": "Victory at Montiel: Yūsuf's 16,000 avenge the Moroccans on the same field, killing 3,100 Castilians for 500",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 16257
+   },
+   "oursTotal": 16257,
+   "oursLost": 513,
+   "theirs": {
+    "Castile": 4458
+   },
+   "theirsTotal": 4458,
+   "theirsLost": 3147,
+   "location": "Montiel"
+  },
+  "source": "checkpoint 1348-07-01",
+  "people": [
+   "yusuf-i"
+  ]
+ },
+ {
+  "id": "1347-12-13-battle-cordoba",
+  "date": "1347-12-13",
+  "type": "battle",
+  "title": "Victory before Qurṭuba: Yūsuf breaks Castile's southern army again, 3,350 Castilians lost for 250",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 15744
+   },
+   "oursTotal": 15744,
+   "oursLost": 256,
+   "theirs": {
+    "Castile": 4383
+   },
+   "theirsTotal": 4383,
+   "theirsLost": 3352,
+   "location": "Qurṭuba"
+  },
+  "source": "checkpoint 1348-07-01",
+  "places": [
+   "qurtuba"
+  ],
+  "people": [
+   "yusuf-i"
+  ]
  }
 ]

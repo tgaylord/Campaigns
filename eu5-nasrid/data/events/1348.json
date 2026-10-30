@@ -1,5 +1,107 @@
 [
  {
+  "id": "1348-01-18-birth-saad",
+  "date": "1348-01-18",
+  "type": "birth",
+  "people": [
+   "saad-ibn-yusuf",
+   "yusuf-i",
+   "sayyida-of-fezzan"
+  ],
+  "title": "A son, Saʿd, is born to Yūsuf and Sayyida of Fezzan",
+  "data": {},
+  "source": "checkpoint 1348-07-01"
+ },
+ {
+  "id": "1348-01-18-betrothal-morocco",
+  "date": "1348-01-18",
+  "type": "diplomacy",
+  "title": "The same day a Naṣrid betrothal is agreed with the Marīnids of Morocco",
+  "data": {
+   "with": "MOR"
+  },
+  "source": "checkpoint 1348-07-01"
+ },
+ {
+  "id": "1348-04-21-battle-cagliari",
+  "date": "1348-04-21",
+  "type": "battle",
+  "title": "Another landing at Cagliari thrown back",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "data": {
+   "result": "defeat",
+   "naval": false,
+   "ours": {
+    "Gabès": 225,
+    "Tunis": 202
+   },
+   "oursTotal": 426,
+   "oursLost": 111,
+   "theirs": {
+    "Cagliari": 1240
+   },
+   "theirsTotal": 1240,
+   "theirsLost": 592,
+   "location": "Cagliari",
+   "side": "Granada not engaged"
+  },
+  "source": "checkpoint 1348-07-01"
+ },
+ {
+  "id": "1348-04-23-battle-gulf-cagliari",
+  "date": "1348-04-23",
+  "type": "battle",
+  "title": "Aragon sinks the fleet of the Sahel in the gulf of Cagliari",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "data": {
+   "result": "defeat",
+   "naval": true,
+   "ours": {
+    "the Sahel": 11000
+   },
+   "oursTotal": 11000,
+   "oursLost": 11000,
+   "theirs": {
+    "Aragon": 13000
+   },
+   "theirsTotal": 13000,
+   "theirsLost": 0,
+   "location": "the gulf of Cagliari",
+   "side": "Granada not engaged"
+  },
+  "source": "checkpoint 1348-07-01"
+ },
+ {
+  "id": "1348-05-13-battle-cape-ben-sakka",
+  "date": "1348-05-13",
+  "type": "battle",
+  "title": "A Tunisian squadron worsted off Cape Ben Sakka",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "data": {
+   "result": "defeat",
+   "naval": true,
+   "ours": {
+    "Tunis": 4000
+   },
+   "oursTotal": 4000,
+   "oursLost": 519,
+   "theirs": {
+    "Aragon": 14000
+   },
+   "theirsTotal": 14000,
+   "theirsLost": 0,
+   "location": "Cape Ben Sakka",
+   "side": "Granada not engaged"
+  },
+  "source": "checkpoint 1348-07-01"
+ },
+ {
   "id": "1348-05-15-black-death-arrives",
   "date": "1348-05-15",
   "type": "situation",
@@ -40,6 +142,37 @@
   "source": "Trent's account (after the plague's arrival; the exact day isn't given)"
  },
  {
+  "id": "1348-05-30-battle-cordoba",
+  "date": "1348-05-30",
+  "type": "battle",
+  "title": "A Castilian force of 2,750 destroyed before Qurṭuba",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 10530
+   },
+   "oursTotal": 10530,
+   "oursLost": 219,
+   "theirs": {
+    "Castile": 2753
+   },
+   "theirsTotal": 2753,
+   "theirsLost": 2080,
+   "location": "Qurṭuba"
+  },
+  "source": "checkpoint 1348-07-01",
+  "places": [
+   "qurtuba"
+  ],
+  "people": [
+   "yusuf-i"
+  ]
+ },
+ {
   "id": "1348-06-01-assassination-attempt",
   "date": "1348-06-01",
   "type": "player_note",
@@ -54,5 +187,155 @@
    "place": "El-Mnṣura (the game's spelling)"
   },
   "source": "Trent's account and his screenshot of the event"
+ },
+ {
+  "id": "1348-06-12-battle-cape-ben-sakka",
+  "date": "1348-06-12",
+  "type": "battle",
+  "title": "Morocco's great fleet of 54 ships falls on Aragon off Cape Ben Sakka and sinks 13 of its 16",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "data": {
+   "result": "victory",
+   "naval": true,
+   "ours": {
+    "Morocco": 54000
+   },
+   "oursTotal": 54000,
+   "oursLost": 4000,
+   "theirs": {
+    "Aragon": 16000
+   },
+   "theirsTotal": 16000,
+   "theirsLost": 13000,
+   "location": "Cape Ben Sakka",
+   "side": "Granada not engaged"
+  },
+  "source": "checkpoint 1348-07-01"
+ },
+ {
+  "id": "1348-07-01-help-from-the-east",
+  "date": "1348-07-01",
+  "type": "diplomacy",
+  "people": [
+   "yusuf-i"
+  ],
+  "title": "Yūsuf sends a delegation to Kostantîniyye to congratulate the Ottomans and ask for soldiers against the crowns of Iberia; after a decade of friendship, Süleyman Bey refuses: 'Why should we try to rekindle a nearly extinguished flame?'",
+  "data": {
+   "event": "flavor_gra.1300 / flavor_gra.1301",
+   "answer": "refused"
+  },
+  "source": "Trent's account and his screenshots"
+ },
+ {
+  "id": "1348-07-01-influence-crosses",
+  "date": "1348-07-01",
+  "type": "strait_change",
+  "title": "For the first time Morocco's influence over Granada passes Castile's (+8.8), while the attempt on the amir, the war and the plague drive sovereignty down to 39.7",
+  "data": {
+   "influence": {
+    "from": -6.4,
+    "to": 8.8
+   },
+   "sovereignty": {
+    "from": 48.65,
+    "to": 39.68
+   }
+  },
+  "source": "checkpoint 1348-07-01"
+ },
+ {
+  "id": "1348-07-01-plague-spread",
+  "date": "1348-07-01",
+  "type": "situation",
+  "places": [
+   "urjuba"
+  ],
+  "title": "The plague is in Huéscar, Yuz Aryuba and Antaqīra, and in Shāṭiba and Gandia of Balansiyya; the realm has lost 17,000 souls since September",
+  "data": {
+   "infected": [
+    "huescar",
+    "orgiva",
+    "antequera",
+    "jativa",
+    "gandia"
+   ],
+   "population": {
+    "from": 472247,
+    "to": 455174
+   }
+  },
+  "source": "checkpoint 1348-07-01"
+ },
+ {
+  "id": "1348-07-01-war-chest",
+  "date": "1348-07-01",
+  "type": "estate_change",
+  "title": "The war is costing 50 a month against an income of 19; five loans are owed, 127 in all, and the treasury holds 819",
+  "data": {
+   "treasury": 819,
+   "income": 19.0,
+   "expenses": 49.7,
+   "debt": 126.7,
+   "loans": 5
+  },
+  "source": "checkpoint 1348-07-01"
+ },
+ {
+  "id": "1348-07-01-wage-fixing",
+  "date": "1348-07-01",
+  "type": "player_note",
+  "places": [],
+  "title": "The Plague of Wage Fixing: with labour short, the guilds hold wages down and their members grumble; the crown sides with the guilds, and the ungrateful labourers are shown their place",
+  "data": {
+   "event": "black_death.102",
+   "choice": "The ungrateful laborers must be shown their place",
+   "effects": "pop satisfaction −10% in Muyaqar and its neighbours, and (hidden) across the realm"
+  },
+  "source": "Trent's screenshot of his choice; effects from the game files"
+ },
+ {
+  "id": "1348-09-01-expired-medicaments",
+  "date": "1348-09-01",
+  "type": "player_note",
+  "title": "Physicians warn that half the medicaments in the markets are expired or cut with filler and may spread the plague; the amir orders them burned",
+  "data": {
+   "event": "Expired Medicaments",
+   "choice": "Burn the expired medicine!",
+   "gold": -19.28,
+   "sevillaMarketMedicaments": -45
+  },
+  "source": "Trent's screenshot of his choice"
+ },
+ {
+  "id": "1348-09-02-portugal-peace",
+  "date": "1348-09-02",
+  "type": "diplomacy",
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "title": "Portugal makes a separate peace with Morocco and leaves the war: it annuls every treaty with Castile for ten years, pays war reparations, and gives 142 gold to Morocco and its allies",
+  "data": {
+   "leaves": "POR",
+   "terms": [
+    "Portugal annuls all treaties with Castile for 120 months",
+    "Portugal pays war reparations to Morocco",
+    "Portugal gives 142.03 gold to Morocco and its allies"
+   ],
+   "sideCasualties": {
+    "ours": {
+     "army": 25423,
+     "navy": 5,
+     "civil": 34871
+    },
+    "portugal": {
+     "army": 0,
+     "navy": 1,
+     "civil": 55154
+    }
+   }
+  },
+  "source": "Trent's screenshot of the peace"
  }
 ]
