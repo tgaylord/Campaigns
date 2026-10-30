@@ -424,7 +424,7 @@
    "dip": 32.0,
    "mil": 46.0
   },
-  "note": "Elder brother of Yūsuf I. Regent of Granada from 9 August 1351 until the sultan's return on 7 April 1352, while he made the Hajj (the chronicle's choice; the game named a Naṣr al-Stijjai). Around the new year of 1355 he married Fatiu, daughter of the old ruler of Ghana, fulfilling the Ghana betrothal of 1345, and went south across the desert to live there."
+  "note": "Elder brother of Yūsuf I. Regent of Granada from 9 August 1351 until the sultan's return on 7 April 1352, while he made the Hajj (the chronicle's choice; the game named a Naṣr al-Stijjai). Around the new year of 1355 he married Fatiu, daughter of the old ruler of Ghana, fulfilling the Ghana betrothal of 1345, and went south across the desert to live there. His first wife was Shamʿa, of a ruling house of the central Sahara (married 1 March 1354)."
  },
  {
   "id": "yusuf-i",
@@ -816,5 +816,14 @@
   "female": true,
   "roles": [],
   "note": "Daughter of the old ruler of Ghana. The Ghana betrothal of 8 September 1345 was fulfilled by her marriage to Faraj ibn Ismāʿīl, the amir's elder brother, who went south to live in Ghana with her (around the new year of 1355)."
+ },
+ {
+  "id": "shama-sahara",
+  "name": "Shamʿa",
+  "nameArabic": "شمعة",
+  "nameGame": "Sham'a",
+  "female": true,
+  "roles": [],
+  "note": "Of a ruling house of the central Sahara (the game's AAA43). First wife of Faraj ibn Ismāʿīl, by the royal marriage of 1 March 1354, before his second marriage to Fatiu of Ghana."
  }
 ]

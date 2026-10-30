@@ -3,11 +3,15 @@
   "id": "1354-03-01-royal-marriage-central-sahara",
   "date": "1354-03-01",
   "type": "diplomacy",
-  "title": "A royal marriage with a house of the central Sahara (the game's AAA43)",
+  "title": "Faraj ibn Ismāʿīl, the amir's elder brother, takes his first wife, Shamʿa, of a ruling house of the central Sahara",
   "data": {
    "with": "AAA43"
   },
-  "source": "save of 16 June 1355 (treaty record)"
+  "source": "save of 16 June 1355 (treaty record); who married is Trent's account",
+  "people": [
+   "faraj-ibn-ismail",
+   "shama-sahara"
+  ]
  },
  {
   "id": "1354-03-16-betrothal-aydinids",
