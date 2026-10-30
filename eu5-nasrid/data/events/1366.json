@@ -156,6 +156,20 @@
   "source": "saves of 15 March 1359 and 5 April 1366 (tools/devastation.py); Trent asked for the reckoning"
  },
  {
+  "id": "1366-04-qurtuba-andalusi",
+  "date": "1366-04-05",
+  "type": "player_note",
+  "places": [
+   "qurtuba"
+  ],
+  "title": "Qurṭuba becomes an Andalusī city again. In 1349 it held 34,000 Castilians and 6,000 Andalusīs. By the peace the Andalusīs are the larger people, though the city is still mostly Christian",
+  "data": {
+   "location": "cordoba",
+   "culture": "andalusi"
+  },
+  "source": "save of 5 April 1366 (between the saves of 1 July 1365 and 5 April 1366)"
+ },
+ {
   "id": "1366-04-10-maryam-diwan",
   "date": "1366-04-10",
   "type": "appointment",
@@ -213,6 +227,27 @@
    "relation": "opinion_improvement"
   },
   "source": "save of 2 October 1366"
+ },
+ {
+  "id": "1366-qurtuba-muslim",
+  "date": "1366-10-02",
+  "type": "player_note",
+  "places": [
+   "qurtuba"
+  ],
+  "title": "Qurṭuba of the caliphs is a Muslim city again, the first of the reconquered towns where Islam is the faith of the majority",
+  "data": {
+   "location": "cordoba",
+   "religion": "sunni",
+   "sunniShare": {
+    "1349-06-04": 27,
+    "1363-05-20": 37,
+    "1366-04-05": 46,
+    "1368-05-13": 52,
+    "1370-09-13": 59
+   }
+  },
+  "source": "save of 2 October 1366 (between the saves of 5 April and 2 October 1366)"
  },
  {
   "id": "1366-11-06-state",

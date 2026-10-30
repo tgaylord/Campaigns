@@ -237,6 +237,54 @@
   "source": "save of 13 September 1370"
  },
  {
+  "id": "1370-09-conversion-reading",
+  "date": "1370-09-13",
+  "type": "player_note",
+  "title": "Twenty-one years after the Peace of Qurṭuba, the lands of the great river are coming back: Andalusīs have gone from 7% to 33% of their people, and Muslims from 8% to 25%. Twelve towns of the valley are Andalusī by culture, and Qurṭuba is Muslim by faith. Ishbīliyya has gone from 14% Muslim to 31%, Jayyān from none to 30%",
+  "data": {
+   "area": "andalusia_area",
+   "andalusi": {
+    "1349-06-04": 6.7,
+    "1360-06-26": 12.8,
+    "1364-09-11": 24.9,
+    "1368-10-24": 32.6,
+    "1370-09-13": 33.3
+   },
+   "sunni": {
+    "1349-06-04": 7.9,
+    "1360-06-26": 11.2,
+    "1364-09-11": 13.4,
+    "1368-10-24": 18.7,
+    "1370-09-13": 24.6
+   },
+   "cities": {
+    "Qurṭuba": [
+     27,
+     59
+    ],
+    "Ishbīliyya": [
+     14,
+     31
+    ],
+    "Jayyān": [
+     0,
+     30
+    ],
+    "Qarmūna": [
+     6,
+     16
+    ],
+    "Úbeda": [
+     0,
+     10
+    ]
+   },
+   "andalusiTowns": 12,
+   "note": "the 1370 figures include the north shore, taken from Morocco and already mostly Muslim"
+  },
+  "source": "the extracted checkpoints of 4 June 1349 to 13 September 1370"
+ },
+ {
   "id": "1370-09-14-strait-ends",
   "date": "1370-09-14",
   "type": "situation",

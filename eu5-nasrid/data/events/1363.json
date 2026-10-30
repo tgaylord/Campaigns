@@ -78,6 +78,18 @@
   "source": "Trent's account"
  },
  {
+  "id": "1363-05-baena-andalusi",
+  "date": "1363-05-20",
+  "type": "player_note",
+  "title": "Baena becomes the first town of the reconquered valley whose people count themselves Andalusī again. They are still Christian",
+  "data": {
+   "location": "baena",
+   "culture": "andalusi",
+   "religion": "catholic"
+  },
+  "source": "save of 20 May 1363 (the change falls between the saves of 26 June 1360 and 20 May 1363)"
+ },
+ {
   "id": "1363-07-27-aragon-joins",
   "date": "1363-07-27",
   "type": "war_joined",

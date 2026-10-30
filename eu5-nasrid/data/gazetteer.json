@@ -272,7 +272,13 @@
   "name": "Marballa",
   "nameGame": "Marballa",
   "kind": "location",
-  "nameArabic": "مربلة"
+  "nameArabic": "مربلة",
+  "held": [
+   {
+    "from": "1370-09-12",
+    "to": null
+   }
+  ]
  },
  {
   "id": "runda",
@@ -282,7 +288,13 @@
   "kind": "location",
   "nameArabic": "رندة",
   "note": "The game writes Ḥiṣn al-Runda (the fortress of Runda).",
-  "major": true
+  "major": true,
+  "held": [
+   {
+    "from": "1370-09-12",
+    "to": null
+   }
+  ]
  },
  {
   "id": "jabal-tariq",
@@ -291,7 +303,13 @@
   "nameGame": "Jbal Ṭariq",
   "kind": "location",
   "nameArabic": "جبل طارق",
-  "major": true
+  "major": true,
+  "held": [
+   {
+    "from": "1370-09-12",
+    "to": null
+   }
+  ]
  },
  {
   "id": "al-jazira-al-khadra",
@@ -300,7 +318,13 @@
   "nameGame": "El-Jzira el-Ḵaḍra",
   "kind": "location",
   "nameArabic": "الجزيرة الخضراء",
-  "major": true
+  "major": true,
+  "held": [
+   {
+    "from": "1370-09-12",
+    "to": null
+   }
+  ]
  },
  {
   "id": "tarifa",
@@ -309,7 +333,13 @@
   "nameGame": "Ṭrifa",
   "kind": "location",
   "nameArabic": "طريفة",
-  "major": true
+  "major": true,
+  "held": [
+   {
+    "from": "1370-09-12",
+    "to": null
+   }
+  ]
  },
  {
   "id": "wubira",
@@ -336,7 +366,13 @@
   "nameGame": "Qadis",
   "kind": "location",
   "nameArabic": "قادس",
-  "major": true
+  "major": true,
+  "held": [
+   {
+    "from": "1370-09-12",
+    "to": null
+   }
+  ]
  },
  {
   "id": "ishbiliyya",
@@ -454,7 +490,13 @@
   "nameGame": "Šaluqa",
   "kind": "location",
   "nameArabic": "شلوقة",
-  "note": "Sanlúcar de Barrameda, at the mouth of the Guadalquivir."
+  "note": "Sanlúcar de Barrameda, at the mouth of the Guadalquivir.",
+  "held": [
+   {
+    "from": "1370-09-12",
+    "to": null
+   }
+  ]
  },
  {
   "id": "qarmuna",
@@ -826,5 +868,177 @@
     "to": null
    }
   ]
+ },
+ {
+  "id": "sharish",
+  "key": "jerez_de_la_frontera",
+  "name": "Sharīsh",
+  "nameGame": "Jerez de la Frontera",
+  "kind": "location",
+  "nameArabic": "شريش",
+  "note": "Jerez de la Frontera. The game name is from the base localization.",
+  "major": true,
+  "held": [
+   {
+    "from": "1370-09-12",
+    "to": null
+   }
+  ]
+ },
+ {
+  "id": "labla",
+  "key": "niebla",
+  "name": "Labla",
+  "nameGame": "Niebla",
+  "kind": "location",
+  "nameArabic": "لبلة",
+  "note": "Niebla. The game name is from the base localization.",
+  "held": [
+   {
+    "from": "1370-09-12",
+    "to": null
+   }
+  ]
+ },
+ {
+  "id": "shidhuna",
+  "key": "medina_sidonia",
+  "name": "Shidhūna",
+  "nameGame": "Medina Sidonia",
+  "kind": "location",
+  "nameArabic": "شذونة",
+  "note": "Medina Sidonia. The game name is from the base localization.",
+  "held": [
+   {
+    "from": "1370-09-12",
+    "to": null
+   }
+  ]
+ },
+ {
+  "id": "arkush",
+  "key": "arcos_de_la_frontera",
+  "name": "Arkush",
+  "nameGame": "Arcos de la Frontera",
+  "kind": "location",
+  "nameArabic": "أركش",
+  "note": "Arcos de la Frontera. The game name is from the base localization.",
+  "held": [
+   {
+    "from": "1370-09-12",
+    "to": null
+   }
+  ]
+ },
+ {
+  "id": "ayamunt",
+  "key": "ayamonte",
+  "name": "Ayamūnt",
+  "nameGame": "Ayamonte",
+  "kind": "location",
+  "nameArabic": "أيامونت",
+  "note": "Ayamonte, at the mouth of the Guadiana, where Yūsuf I died on the march in 1363. The game name is from the base localization.",
+  "held": [
+   {
+    "from": "1366-04-05",
+    "to": null
+   }
+  ]
+ },
+ {
+  "id": "walba",
+  "key": "huelva",
+  "name": "Walba",
+  "nameGame": "Huelva",
+  "kind": "location",
+  "nameArabic": "ولبة",
+  "note": "Huelva. The game name is from the base localization.",
+  "held": [
+   {
+    "from": "1366-04-05",
+    "to": null
+   }
+  ]
+ },
+ {
+  "id": "shilb",
+  "key": "silves",
+  "name": "Shilb",
+  "nameGame": "Silves",
+  "kind": "location",
+  "nameArabic": "شلب",
+  "note": "Silves, the old capital of al-Gharb. The game name is from the base localization.",
+  "major": true,
+  "held": [
+   {
+    "from": "1364-09-11",
+    "to": "1366-04-13"
+   },
+   {
+    "from": "1366-04-13",
+    "to": null,
+    "via": "ALV"
+   }
+  ]
+ },
+ {
+  "id": "ukshunuba",
+  "key": "faro",
+  "name": "Ukshūnuba",
+  "nameGame": "Faro",
+  "kind": "location",
+  "nameArabic": "أكشونبة",
+  "note": "Faro, seat of the Ṭāʾifa of al-Gharb. The game name is from the base localization.",
+  "held": [
+   {
+    "from": "1364-09-11",
+    "to": "1366-04-13"
+   },
+   {
+    "from": "1366-04-13",
+    "to": null,
+    "via": "ALV"
+   }
+  ]
+ },
+ {
+  "id": "baja",
+  "key": "beja",
+  "name": "Bāja",
+  "nameGame": "Beja",
+  "kind": "location",
+  "nameArabic": "باجة",
+  "note": "Beja. The game name is from the base localization.",
+  "held": [
+   {
+    "from": "1364-09-11",
+    "to": "1366-04-13"
+   },
+   {
+    "from": "1366-04-13",
+    "to": null,
+    "via": "ALV"
+   }
+  ]
+ },
+ {
+  "id": "al-ushbuna",
+  "key": "lisbon",
+  "name": "al-Ushbūna",
+  "nameGame": "Lisbon",
+  "kind": "location",
+  "nameArabic": "الأشبونة",
+  "note": "Lisbon, capital of Portugal. The game name is from the base localization.",
+  "major": true
+ },
+ {
+  "id": "tulaytula",
+  "key": "toledo",
+  "name": "Ṭulayṭula",
+  "nameGame": "Toledo",
+  "kind": "location",
+  "nameArabic": "طليطلة",
+  "note": "Toledo, the old Visigothic capital and the heart of the Middle March. The game name is from the base localization.",
+  "major": true
  }
 ]
