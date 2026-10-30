@@ -1,0 +1,16 @@
+[
+ {
+  "id": "1351-01-19-mamluk-betrothal",
+  "date": "1351-01-19",
+  "type": "diplomacy",
+  "people": [
+   "saad-ibn-yusuf",
+   "aiman-mamluk"
+  ],
+  "title": "The Sultan of the Mamluks agrees to betroth his daughter Aiman to Saʿd, heir of Granada: the alliance with Cairo is now a bond of blood",
+  "data": {
+   "with": "MAM"
+  },
+  "source": "Trent's account"
+ }
+]

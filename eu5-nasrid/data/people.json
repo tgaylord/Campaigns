@@ -770,6 +770,14 @@
    "mil": 0
   },
   "traits": [],
-  "note": "First son of Yūsuf I and Sayyida of Fezzan, born 18 January 1348 in the second year of the war with the three crowns."
+  "note": "First son of Yūsuf I and Sayyida of Fezzan, born 18 January 1348 in the second year of the war with the three crowns. Betrothed on 19 January 1351 to Aiman, daughter of the Mamluk Sultan."
+ },
+ {
+  "id": "aiman-mamluk",
+  "name": "Aiman",
+  "nameGame": "Aiman",
+  "female": true,
+  "roles": [],
+  "note": "Daughter of the Mamluk Sultan, betrothed to Saʿd ibn Yūsuf, heir of Granada, on 19 January 1351."
  }
 ]
