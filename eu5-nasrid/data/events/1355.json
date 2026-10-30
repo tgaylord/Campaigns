@@ -78,5 +78,35 @@
    "replaces": "faraj-ibn-ismail"
   },
   "source": "Trent's account (by November 1355)"
+ },
+ {
+  "id": "1355-powerful-harem",
+  "date": "1355-11-19",
+  "type": "law_change",
+  "people": [
+   "yusuf-i",
+   "sayyida-of-fezzan",
+   "dua-marinid",
+   "tizemt-hafsid"
+  ],
+  "title": "The Powerful Harem: as the harem grows with the amir's Marīnid and Ḥafṣid brides, it becomes an institution of the crown. The amir is no puppet of it, but cunning concubines flood the court and draw power inward around the throne, to the nobles' chagrin; women may now sit in the dīwān",
+  "data": {
+   "law": "harem_laws",
+   "from": null,
+   "to": "powerful_harem",
+   "effects": {
+    "crownPower": "+10%",
+    "nobleSatisfactionEquilibrium": "-5%",
+    "femalesInCabinet": true,
+    "societalDrift": "conciliatory +0.05/month"
+   },
+   "alternatives": {
+    "dispersed_harem": "education of heirs +5%, court spending efficiency +20%, toward decentralization",
+    "extravagant_harem": "prestige +0.10/month, new artists' skill +10%, court spending efficiency −10%",
+    "public_harem": "legitimacy +0.10/month, counterespionage −20%, toward aristocracy",
+    "secluded_harem": "counterespionage +20%, court spending efficiency +10%, toward traditionalist"
+   }
+  },
+  "source": "Trent's screenshot of the Harem Laws screen and his account (late 1355; the exact day isn't given)"
  }
 ]
