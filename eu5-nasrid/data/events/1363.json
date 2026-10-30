@@ -61,5 +61,34 @@
   "title": "The court's first aim in the war: to knock Portugal out, as it had already made its own peace with the Marīnids",
   "data": {},
   "source": "Trent's account"
+ },
+ {
+  "id": "1363-05-20-taifas-untouched",
+  "date": "1363-05-20",
+  "type": "player_note",
+  "wars": [
+   "war-of-independence"
+  ],
+  "places": [
+   "balansiyya",
+   "mursiyya"
+  ],
+  "title": "The gain of the Marīnid war: the court kept the ṭāʾifas of Balansiyya and Mursiyya out of it, and they come to the war of independence untouched",
+  "data": {},
+  "source": "Trent's account"
+ },
+ {
+  "id": "1363-07-27-aragon-joins",
+  "date": "1363-07-27",
+  "type": "war_joined",
+  "wars": [
+   "war-of-independence"
+  ],
+  "title": "Arghūn joins the war against Gharnāṭa on Qashtāla's side, though only months before it had been Qashtāla's enemy",
+  "data": {
+   "joins": "ARA",
+   "side": "Castile"
+  },
+  "source": "Trent's account; by the save of 20 May 1363 Aragon was already fighting beside Castile against Morocco"
  }
 ]
