@@ -55,6 +55,19 @@
   "source": "save of 5 April 1366"
  },
  {
+  "id": "1366-02-06-death-qamar",
+  "date": "1366-02-06",
+  "type": "death",
+  "people": [
+   "qamar"
+  ],
+  "title": "Qamar, mother of Ismāʿīl ibn Ismāʿīl and of Khālid ibn Yaḥyā, dies of a sudden illness at about fifty-eight",
+  "data": {
+   "cause": "sudden_illness"
+  },
+  "source": "save of 24 October 1368"
+ },
+ {
   "id": "1366-03-08-birth-ismail-ibn-saad",
   "date": "1366-03-08",
   "type": "birth",

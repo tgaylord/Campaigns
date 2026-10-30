@@ -310,5 +310,60 @@
    "from": "1364-06-18",
    "to": "1365-07-13"
   }
+ },
+ {
+  "id": "second-marinid-submission-war",
+  "name": "The Second Marīnid War for the Submission of Granada",
+  "gameName": "1st War for the Submission of Granada",
+  "start": "1368-10-24",
+  "end": null,
+  "goal": "Morocco demands Granada's submission as its subject",
+  "allies": [
+   "Taifa of the Algarve",
+   "Valencia",
+   "Murcia",
+   "Mamluks"
+  ],
+  "enemies": [
+   "Morocco",
+   "Tlemcen",
+   "Tafilalt",
+   "Touat",
+   "Kingdom of Sevilla"
+  ],
+  "involvement": "belligerent",
+  "sides": {
+   "attackers": [
+    "Morocco",
+    "Tlemcen",
+    "Tafilalt",
+    "Touat",
+    "Kingdom of Sevilla"
+   ],
+   "defenders": [
+    "Granada",
+    "Taifa of the Algarve",
+    "Valencia",
+    "Murcia",
+    "Mamluks",
+    "Dulkadirids",
+    "Mecca",
+    "Medina",
+    "Al ʿAlī",
+    "Al Mira",
+    "Döger",
+    "Āl Faḍl",
+    "Barqa",
+    "Banu Kanz",
+    "Suakin",
+    "Western Oases"
+   ]
+  },
+  "note": "On 24 October 1368 Morocco declared war again under the Battle for the Strait's casus belli, which it had held again since 1 August 1367, to demand Andalusī submission. With it came its subjects Tlemcen, Tafilalt and Touat and its new fiefdom on the north shore, the Kingdom of Sevilla. In May Morocco had insulted Granada's envoys and broken the trade agreements. Granada fights with its three ṭāʾifas, and with the Mamlūks and their eleven vassals, allies again since January 1367. At the declaration Granada had 5 regiments and 5 ships against Morocco's 4 regiments and 29 ships. The game counts this as the first war for the submission, although Morocco fought one in 1360 (save of 24 October 1368; Trent's account).",
+  "outcome": null,
+  "joined": {
+   "from": "1368-10-24",
+   "to": null
+  }
  }
 ]

@@ -45,5 +45,88 @@
    }
   },
   "source": "Trent's account; forces from the autosave of 1 July 1368"
+ },
+ {
+  "id": "1368-07-26-castile-markets",
+  "date": "1368-07-26",
+  "type": "diplomacy",
+  "title": "Castile and Granada close their markets to each other",
+  "data": {
+   "between": [
+    "CAS",
+    "GRA"
+   ],
+   "relation": "deny_market_access"
+  },
+  "source": "save of 24 October 1368"
+ },
+ {
+  "id": "1368-07-30-spies-in-fas",
+  "date": "1368-07-30",
+  "type": "diplomacy",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "The sultan's agents begin building a spy network in Morocco",
+  "data": {
+   "target": "MOR"
+  },
+  "source": "save of 24 October 1368"
+ },
+ {
+  "id": "1368-09-26-castile-guarantees-al-gharb",
+  "date": "1368-09-26",
+  "type": "diplomacy",
+  "people": [
+   "rodrigo-of-silves"
+  ],
+  "title": "Castile meddles in the west. It guarantees the independence of the Ṭāʾifa of al-Gharb, Granada's vassal, and the next day Gharnāṭa answers by backing the loyalists there",
+  "data": {
+   "castile": "guarantee_vassal_independence",
+   "granada": "support_loyalists",
+   "target": "ALV"
+  },
+  "source": "save of 24 October 1368"
+ },
+ {
+  "id": "1368-10-24-marinid-war",
+  "date": "1368-10-24",
+  "type": "war_declared",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "wars": [
+   "second-marinid-submission-war"
+  ],
+  "title": "Fās declares war again to demand Gharnāṭa's submission, with Tilimsān, Tafilalt, Touat and its puppet 'Kingdom of Sevilla'. Granada's three ṭāʾifas stand with it, and so do the Mamlūk sultan and all his vassals from Mecca to the Western Oases",
+  "data": {
+   "cb": "cb_demand_andalusi_submission",
+   "attackers": [
+    "MOR",
+    "TLE",
+    "TFL",
+    "TAT",
+    "SEV"
+   ],
+   "defenders": [
+    "GRA",
+    "ALV",
+    "VAL",
+    "MUC",
+    "MAM",
+    "Dulkadirids",
+    "Mecca",
+    "Medina",
+    "Al ʿAlī",
+    "Al Mira",
+    "Döger",
+    "Āl Faḍl",
+    "Barqa",
+    "Banu Kanz",
+    "Suakin",
+    "Western Oases"
+   ]
+  },
+  "source": "save of 24 October 1368; Trent's account"
  }
 ]

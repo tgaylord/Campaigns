@@ -1,5 +1,22 @@
 [
  {
+  "id": "1367-01-30-mamluk-alliance",
+  "date": "1367-01-30",
+  "type": "diplomacy",
+  "people": [
+   "saad-ibn-yusuf",
+   "aiman-mamluk"
+  ],
+  "title": "The alliance with the Mamlūks, lapsed in 1366, is renewed. Cairo stands with Gharnāṭa again",
+  "data": {
+   "with": "MAM",
+   "alliance": true,
+   "since": "1367-01-30",
+   "lapsed": "between April and November 1366"
+  },
+  "source": "save of 24 October 1368"
+ },
+ {
   "id": "1367-08-01-moroccan-claim",
   "date": "1367-08-01",
   "type": "diplomacy",
