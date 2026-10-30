@@ -15,5 +15,46 @@
    "location": "granada"
   },
   "source": "Trent's account"
+ },
+ {
+  "id": "1356-10-roads",
+  "date": "1356-10-01",
+  "type": "reform",
+  "people": [
+   "yusuf-i"
+  ],
+  "places": [
+   "gharnata",
+   "al-mariyya",
+   "basta",
+   "wadi-ash"
+  ],
+  "title": "Roads are built through the mountains around Gharnāṭa: south to al-Mariyya, and north-east to the saffron fields of Wādī Āsh and Basṭa",
+  "data": {
+   "roads": [
+    "Gharnāṭa–al-Mariyya",
+    "Gharnāṭa–Wādī Āsh–Basṭa (saffron)"
+   ]
+  },
+  "source": "Trent's account (late 1356; the exact day isn't given)"
+ },
+ {
+  "id": "1356-10-libraries",
+  "date": "1356-10-01",
+  "type": "reform",
+  "people": [
+   "yusuf-i"
+  ],
+  "places": [
+   "gharnata",
+   "malaqa",
+   "al-mariyya",
+   "qurtuba"
+  ],
+  "title": "Libraries rise in the cities of the south, and soon will in the north, to carry Islam and Andalusī learning back into Qurṭuba and the lands purged of them during the Castilian occupation",
+  "data": {
+   "aim": "spread Islam and Andalusi culture northward"
+  },
+  "source": "Trent's account (late 1356)"
  }
 ]

@@ -59,7 +59,8 @@ export default function Scroll() {
   let acc = 0;
   BANDS.forEach((b) => { tops[b.id] = acc; acc += b.h; });
   const H = acc;
-  const end = snapshots.length ? snapshots[snapshots.length - 1].date : `${t1}-01-01`;
+  // "Now" is the latest thing recorded: a checkpoint, an event or an entry, whichever is newest.
+  const end = dates.length ? dates.reduce((m, d) => (yearFrac(d) > yearFrac(m) ? d : m)) : `${t1}-01-01`;
 
   // Chronicle titles take the first of three lines where they don't overlap a neighbour;
   // a title with no room shows on hover only.
