@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef } from "react";
 import { Link } from "react-router-dom";
 import { scaleLinear } from "d3-scale";
 import { line, area, stack, stackOffsetExpand, curveMonotoneX } from "d3-shape";
@@ -46,7 +46,9 @@ const initialOf = (title: string) => title.replace(/^Of (the )?/, "").replace(/^
 export default function Scroll() {
   const ref = useRef<HTMLDivElement>(null);
   // How far the roll is scrolled: the band names and bar labels stay pinned to the left edge.
-  const [sl, setSl] = useState(0);
+  const GUT = 150;
+  const gutterRef = useRef<SVGGElement>(null);
+  const frame = useRef(0);
   const dates = [
     ...snapshots.map((s) => s.date), ...events.map((e) => e.date), ...chronicle.map((c) => c.date),
     ...eras.map((e) => e.start),
@@ -78,18 +80,39 @@ export default function Scroll() {
     });
   }, [x]);
 
-  // Vertical wheel scrolls the roll sideways.
+  /** Keep the gutter and the pinned bar labels in place as the roll scrolls. This writes to the
+   *  DOM directly, once per frame, instead of re-rendering the whole roll on every scroll event. */
+  const placePinned = () => {
+    const el = ref.current;
+    if (!el) return;
+    const s = el.scrollLeft;
+    gutterRef.current?.setAttribute("transform", `translate(${s},0)`);
+    el.querySelectorAll<SVGTextElement>("text.pinned").forEach((t) => {
+      const a = +(t.dataset.a ?? 0), b = +(t.dataset.b ?? 0);
+      t.setAttribute("x", String(Math.max(a + 8, Math.min(s + GUT + 12, b - 60))));
+    });
+  };
+  const onScroll = () => {
+    if (frame.current) return;
+    frame.current = requestAnimationFrame(() => { frame.current = 0; placePinned(); });
+  };
+
+  // Vertical wheel scrolls the roll sideways (line- and page-mode wheels are converted to pixels).
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
     const wheel = (e: WheelEvent) => {
-      if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) { el.scrollLeft += e.deltaY; e.preventDefault(); }
+      if (Math.abs(e.deltaY) <= Math.abs(e.deltaX)) return;
+      const unit = e.deltaMode === 1 ? 16 : e.deltaMode === 2 ? el.clientWidth : 1;
+      el.scrollLeft += e.deltaY * unit;
+      e.preventDefault();
     };
     el.addEventListener("wheel", wheel, { passive: false });
     el.scrollLeft = el.scrollWidth;
-    setSl(el.scrollLeft);
-    return () => el.removeEventListener("wheel", wheel);
+    placePinned();
+    return () => { el.removeEventListener("wheel", wheel); cancelAnimationFrame(frame.current); };
   }, []);
+  useLayoutEffect(() => { placePinned(); });
 
   const reigns = people.flatMap((p) => p.reigns.map((r) => ({ p, from: r.from, to: r.to ?? end })));
   const warLanes: number[] = [];
@@ -115,9 +138,9 @@ export default function Scroll() {
   const layers = rows.length > 1 ? stack<Record<string, number>>().keys(ids).offset(stackOffsetExpand)(rows) : [];
   const estArea = area<any>().x((d) => x(d.data.t)).y0((d) => ey(d[0])).y1((d) => ey(d[1])).curve(curveMonotoneX);
 
-  const GUT = 150;
-  /** Where a bar's label goes: at its start, or pinned just right of the gutter while the bar runs on. */
-  const pin = (a: number, b: number) => Math.max(a + 8, Math.min(sl + GUT + 12, b - 60));
+  /** A bar's label sits at its start, or pinned just right of the gutter while the bar runs on;
+   *  placePinned() moves it as the roll scrolls. */
+  const pin = (a: number, b: number) => ({ className: "pinned", "data-a": a, "data-b": b, x: a + 8 });
 
   const years: number[] = [];
   for (let yy = Math.ceil(t0); yy <= t1; yy++) years.push(yy);
@@ -134,7 +157,7 @@ export default function Scroll() {
 
       <div className="roll-wrap">
         <div className="roller left" aria-hidden="true" />
-        <div className="roll" ref={ref} tabIndex={0} onScroll={(e) => setSl(e.currentTarget.scrollLeft)} aria-label="The long scroll of the campaign, scrollable sideways">
+        <div className="roll" ref={ref} tabIndex={0} onScroll={onScroll} aria-label="The long scroll of the campaign, scrollable sideways">
           <svg width={W} height={H} role="img" aria-label="Timeline of the campaign">
             <defs>
               <pattern id="roll-grain" width="7" height="7" patternUnits="userSpaceOnUse">
@@ -168,7 +191,7 @@ export default function Scroll() {
                 <Link key={e.id} to={`/chronicle#era-${e.id}`}>
                   <g className="era">
                     <rect x={a} y={tops.eras + 10 + 30 * (ERA_ROW.get(e.id) ?? 0)} width={Math.max(2, b - a)} height={26} />
-                    <text x={pin(a, b)} y={tops.eras + 28 + 30 * (ERA_ROW.get(e.id) ?? 0)}>{e.title}</text>
+                    <text {...pin(a, b)} y={tops.eras + 28 + 30 * (ERA_ROW.get(e.id) ?? 0)}>{e.title}</text>
                   </g>
                 </Link>
               );
@@ -182,8 +205,8 @@ export default function Scroll() {
                 <Link key={`${p.id}-${from}`} to={`/people/${p.id}`} data-kind="person" data-id={p.id}>
                   <g className="reign">
                     <rect x={aa} y={tops.reigns + 12} width={Math.max(2, b - aa)} height={46} />
-                    <text x={pin(aa, b)} y={tops.reigns + 36} className="ar-name">{p.nameArabic}</text>
-                    <text x={pin(aa, b)} y={tops.reigns + 52} className="la-name">{p.name}</text>
+                    <text {...pin(aa, b)} y={tops.reigns + 36} className="pinned ar-name">{p.nameArabic}</text>
+                    <text {...pin(aa, b)} y={tops.reigns + 52} className="pinned la-name">{p.name}</text>
                   </g>
                 </Link>
               );
@@ -193,7 +216,7 @@ export default function Scroll() {
               <Link key={w.id} to={`/wars/${w.id}`} data-kind="war" data-id={w.id}>
                 <g className="war">
                   <rect x={x(a)} y={tops.wars + 22 + lane * 26} width={Math.max(4, x(b) - x(a))} height={8} rx={2} />
-                  <text x={pin(x(a) - 6, x(b))} y={tops.wars + 17 + lane * 26}>{w.name}</text>
+                  <text {...pin(x(a) - 6, x(b))} y={tops.wars + 17 + lane * 26}>{w.name}</text>
                 </g>
               </Link>
             ))}
@@ -232,7 +255,7 @@ export default function Scroll() {
               );
             })}
 
-            <g className="gutter" transform={`translate(${sl},0)`}>
+            <g className="gutter" ref={gutterRef}>
               <rect width={GUT} height={H} />
               <line x1={GUT} x2={GUT} y1={0} y2={H} />
               {BANDS.map((b) => b.label && (
