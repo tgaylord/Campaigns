@@ -769,8 +769,10 @@
    "dip": 2,
    "mil": 0
   },
-  "traits": [],
-  "note": "First son of Yūsuf I and Sayyida of Fezzan, born 18 January 1348 in the second year of the war with the three crowns. Betrothed on 19 January 1351 to Aiman, daughter of the Mamluk Sultan."
+  "traits": [
+   "prodigy"
+  ],
+  "note": "First son of Yūsuf I and Sayyida of Fezzan, born 18 January 1348 in the second year of the war with the three crowns. Betrothed on 19 January 1351 to Aiman, daughter of the Mamluk Sultan. The same winter the Chancellor reported him a Prodigy: a child predestined, the court said, to leave his name in the history books."
  },
  {
   "id": "aiman-mamluk",

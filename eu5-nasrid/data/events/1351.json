@@ -12,5 +12,20 @@
    "with": "MAM"
   },
   "source": "Trent's account"
+ },
+ {
+  "id": "1351-01-saad-prodigy",
+  "date": "1351-01-19",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "The Chancellor reports that the heir Saʿd, not yet three, is a Prodigy, and the court begins to whisper that he may be the ruler to lead the Emirate out of the darkness",
+  "data": {
+   "trait": "prodigy",
+   "educationAbilityIncrease": 0.55,
+   "educationGrowthRate": 0.25
+  },
+  "source": "Trent's screenshot of the event and his account (January 1351)"
  }
 ]
