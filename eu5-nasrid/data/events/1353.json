@@ -70,5 +70,74 @@
    "areasHeld": 30
   },
   "source": "save of 2 February 1353"
+ },
+ {
+  "id": "1353-06-06-battle-jerez",
+  "date": "1353-06-06",
+  "type": "battle",
+  "people": [
+   "yusuf-i"
+  ],
+  "wars": [
+   "sevillan-revolt"
+  ],
+  "title": "The rebels of the Kingdom of Sevilla fall on the Granadan army at Sharīsh and are thrown back: 4,400 rebels against 6,250 Granadans, and 2,300 of them lost for 1,700 of ours",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 6252
+   },
+   "oursTotal": 6252,
+   "oursLost": 1674,
+   "theirs": {
+    "Kingdom of Sevilla": 4425
+   },
+   "theirsTotal": 4425,
+   "theirsLost": 2292,
+   "location": "Sharīsh (Jerez)",
+   "side": "Granada defending"
+  },
+  "source": "save of 3 July 1353"
+ },
+ {
+  "id": "1353-06-27-battle-sanlucar-la-mayor",
+  "date": "1353-06-27",
+  "type": "battle",
+  "people": [
+   "yusuf-i"
+  ],
+  "wars": [
+   "sevillan-revolt"
+  ],
+  "title": "The rebel army is destroyed at Shalūqa al-Kubrā: 4,600 Granadans fall on the last 2,100 rebels and kill or take every one, for 13 of their own",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 4577
+   },
+   "oursTotal": 4577,
+   "oursLost": 13,
+   "theirs": {
+    "Kingdom of Sevilla": 2126
+   },
+   "theirsTotal": 2126,
+   "theirsLost": 2126,
+   "location": "Shalūqa al-Kubrā (Sanlúcar la Mayor)"
+  },
+  "source": "save of 3 July 1353"
+ },
+ {
+  "id": "1353-07-03-state",
+  "date": "1353-07-03",
+  "type": "strait_change",
+  "title": "Days before the end, the rebels still hold their 25 locations but have no army left; sovereignty 71.3, Morocco's influence 7.0, stability 17.5",
+  "data": {
+   "sovereignty": 71.34,
+   "influence": 7.02,
+   "stability": 17.5
+  },
+  "source": "save of 3 July 1353"
  }
 ]
