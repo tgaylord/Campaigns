@@ -235,7 +235,7 @@
   "places": [
    "qurtuba"
   ],
-  "title": "Qurṭuba of the caliphs is a Muslim city again, the first of the reconquered towns where Islam is the faith of the majority",
+  "title": "In Qurṭuba of the caliphs Muslims outnumber Christians again, 18,200 to 18,000, the first of the reconquered towns where Islam is the larger faith. By May 1368 they are an outright majority",
   "data": {
    "location": "cordoba",
    "religion": "sunni",
@@ -245,6 +245,13 @@
     "1366-04-05": 46,
     "1368-05-13": 52,
     "1370-09-13": 59
+   },
+   "counts": {
+    "1366-10-02": {
+     "sunni": 18239,
+     "catholic": 17968,
+     "jewish": 3428
+    }
    }
   },
   "source": "save of 2 October 1366 (between the saves of 5 April and 2 October 1366)"
