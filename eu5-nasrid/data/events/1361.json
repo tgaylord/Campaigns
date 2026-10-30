@@ -21,7 +21,7 @@
    "qadis",
    "al-mariyya"
   ],
-  "title": "Four Marīnid armies of some 2,000 men each have crossed the Strait: one at Qādis and two at Walba on the Castilian coast, which the court watches closely, and one at al-Mariyya, which was thrown back into the sea",
+  "title": "Four Marīnid armies of some 2,000 men each have crossed the Strait: one at Qādis and two at Walba on the Castilian coast, which the court watches closely, while the one that landed at al-Mariyya in November had been thrown back into the sea",
   "data": {
    "landings": {
     "Qādis (CAS)": 1,
@@ -30,6 +30,162 @@
    },
    "armySize": 2000
   },
-  "source": "Trent's account (by 3 February 1361; the battle at al-Mariyya isn't dated yet)"
+  "source": "Trent's account; the al-Mariyya battle (7 November 1360, a Tilimsānī landing) from the save of 10 June 1362"
+ },
+ {
+  "id": "1361-02-16-battle-almonaster",
+  "date": "1361-02-16",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "marinid-submission-war"
+  ],
+  "title": "A Portuguese column is cut up by the Marīnids at Almonaster in the hills of Walba",
+  "data": {
+   "result": "defeat",
+   "naval": false,
+   "ours": {
+    "Portugal": 500
+   },
+   "oursLost": 388,
+   "theirs": {
+    "Morocco": 2617
+   },
+   "theirsLost": 8,
+   "location": "Almonaster la Real"
+  },
+  "source": "save of 10 June 1362"
+ },
+ {
+  "id": "1361-03-09-battle-bay-cadiz",
+  "date": "1361-03-09",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "marinid-submission-war"
+  ],
+  "title": "Another Castilian squadron lost to Tilimsān in the bay of Qādis",
+  "data": {
+   "result": "defeat",
+   "naval": true,
+   "ours": {
+    "Castile": 1000
+   },
+   "oursLost": 1000,
+   "theirs": {
+    "Tlemcen": 44000
+   },
+   "theirsLost": 1000,
+   "location": "the bay of Qādis"
+  },
+  "source": "save of 10 June 1362"
+ },
+ {
+  "id": "1361-03-23-battle-jerez",
+  "date": "1361-03-23",
+  "type": "battle",
+  "people": [
+   "yusuf-i"
+  ],
+  "places": [],
+  "wars": [
+   "marinid-submission-war"
+  ],
+  "title": "Victory at Sharīsh: a Marīnid army of 2,200 attacks 9,700 Granadans and loses 1,500 men to our 560",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 9701
+   },
+   "oursLost": 564,
+   "theirs": {
+    "Morocco": 2218
+   },
+   "theirsLost": 1543,
+   "location": "Sharīsh"
+  },
+  "source": "save of 10 June 1362"
+ },
+ {
+  "id": "1361-10-21-battle-herrera",
+  "date": "1361-10-21",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "marinid-submission-war"
+  ],
+  "title": "At Herrera, deep in Castile, the Marīnids attack a Castilian army and are thrown back, though Castile loses more men (3,600) than Morocco (2,600)",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Castile": 9663
+   },
+   "oursLost": 3637,
+   "theirs": {
+    "Morocco": 5617
+   },
+   "theirsLost": 2580,
+   "location": "Herrera"
+  },
+  "source": "save of 10 June 1362"
+ },
+ {
+  "id": "1361-12-10-battle-escurial",
+  "date": "1361-12-10",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "marinid-submission-war"
+  ],
+  "title": "The Marīnids break a Castilian army of 6,000 at El Escorial in the heart of Castile; 4,000 Castilians fall",
+  "data": {
+   "result": "defeat",
+   "naval": false,
+   "ours": {
+    "Castile": 6019
+   },
+   "oursLost": 4017,
+   "theirs": {
+    "Morocco": 4777
+   },
+   "theirsLost": 323,
+   "location": "El Escorial"
+  },
+  "source": "save of 10 June 1362"
+ },
+ {
+  "id": "1361-12-13-battle-sevilla",
+  "date": "1361-12-13",
+  "type": "battle",
+  "people": [
+   "yusuf-i"
+  ],
+  "places": [
+   "ishbiliyya"
+  ],
+  "wars": [
+   "marinid-submission-war"
+  ],
+  "title": "Victory before Ishbīliyya: 2,200 Marīnids attack 9,300 Granadans and lose 1,300 to our 1,100",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 9304
+   },
+   "oursLost": 1138,
+   "theirs": {
+    "Morocco": 2179
+   },
+   "theirsLost": 1331,
+   "location": "Ishbīliyya"
+  },
+  "source": "save of 10 June 1362"
  }
 ]

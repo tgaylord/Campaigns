@@ -1,0 +1,108 @@
+[
+ {
+  "id": "1362-03-11-battle-bay-cadiz",
+  "date": "1362-03-11",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "marinid-submission-war"
+  ],
+  "title": "At last a Castilian squadron sinks a Tilimsānī one in the bay of Qādis",
+  "data": {
+   "result": "allied victory",
+   "naval": true,
+   "ours": {
+    "Castile": 2000
+   },
+   "oursLost": 0,
+   "theirs": {
+    "Tlemcen": 2000
+   },
+   "theirsLost": 2000,
+   "location": "the bay of Qādis"
+  },
+  "source": "save of 10 June 1362"
+ },
+ {
+  "id": "1362-04-08-battle-sevilla",
+  "date": "1362-04-08",
+  "type": "battle",
+  "people": [
+   "yusuf-i"
+  ],
+  "places": [
+   "ishbiliyya"
+  ],
+  "wars": [
+   "marinid-submission-war"
+  ],
+  "title": "Victory before Ishbīliyya again: 2,300 Marīnids throw themselves at 17,000 Granadans and lose 1,750",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 16938
+   },
+   "oursLost": 1133,
+   "theirs": {
+    "Morocco": 2328
+   },
+   "theirsLost": 1757,
+   "location": "Ishbīliyya"
+  },
+  "source": "save of 10 June 1362"
+ },
+ {
+  "id": "1362-05-09-battle-caceres",
+  "date": "1362-05-09",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "marinid-submission-war"
+  ],
+  "title": "The Marīnids rout a Castilian army at Cáceres in Extremadura, 1,500 Castilians lost for 80",
+  "data": {
+   "result": "defeat",
+   "naval": false,
+   "ours": {
+    "Castile": 2122
+   },
+   "oursLost": 1540,
+   "theirs": {
+    "Morocco": 5248
+   },
+   "theirsLost": 81,
+   "location": "Cáceres"
+  },
+  "source": "save of 10 June 1362"
+ },
+ {
+  "id": "1362-06-10-state",
+  "date": "1362-06-10",
+  "type": "strait_change",
+  "wars": [
+   "marinid-submission-war"
+  ],
+  "title": "Two years into the war: every Marīnid attempt on Granada has broken (four defeats at al-Mariyya, Sharīsh and twice before Ishbīliyya, 6,300 of their men lost to our 3,860), while the Marīnids range through Castile to El Escorial and Cáceres and rule the sea. The war costs 76 a month against an income of 60; sovereignty 99.7, Morocco's influence −13.4",
+  "data": {
+   "granadaBattles": {
+    "won": 4,
+    "lost": 0,
+    "enemyLosses": 6296,
+    "ourLosses": 3858
+   },
+   "sovereignty": 99.74,
+   "influence": -13.44,
+   "income": 59.8,
+   "expenses": 76.5,
+   "regiments": 15,
+   "manpower": [
+    2226,
+    6482
+   ]
+  },
+  "source": "save of 10 June 1362; Trent's account"
+ }
+]

@@ -73,6 +73,135 @@
   "source": "Trent's account"
  },
  {
+  "id": "1360-08-13-battle-strait",
+  "date": "1360-08-13",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "marinid-submission-war"
+  ],
+  "title": "A Castilian squadron beats off a Marīnid one in the Strait",
+  "data": {
+   "result": "allied victory",
+   "naval": true,
+   "ours": {
+    "Castile": 7000
+   },
+   "oursLost": 1000,
+   "theirs": {
+    "Morocco": 4000
+   },
+   "theirsLost": 1000,
+   "location": "the Strait"
+  },
+  "source": "save of 10 June 1362"
+ },
+ {
+  "id": "1360-09-01-battle-strait",
+  "date": "1360-09-01",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "marinid-submission-war"
+  ],
+  "title": "The Marīnid fleet, 17,000 strong, worsts the Castilians in the Strait",
+  "data": {
+   "result": "defeat",
+   "naval": true,
+   "ours": {
+    "Castile": 6000
+   },
+   "oursLost": 1000,
+   "theirs": {
+    "Morocco": 17000
+   },
+   "theirsLost": 0,
+   "location": "the Strait"
+  },
+  "source": "save of 10 June 1362"
+ },
+ {
+  "id": "1360-09-13-battle-costa-sol",
+  "date": "1360-09-13",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "marinid-submission-war"
+  ],
+  "title": "Off the coast of Mālaqa the great Marīnid fleet of 61,000 destroys a Portuguese squadron",
+  "data": {
+   "result": "defeat",
+   "naval": true,
+   "ours": {
+    "Portugal": 2000
+   },
+   "oursLost": 2000,
+   "theirs": {
+    "Morocco": 61000
+   },
+   "theirsLost": 1000,
+   "location": "the Costa del Sol"
+  },
+  "source": "save of 10 June 1362"
+ },
+ {
+  "id": "1360-10-28-battle-bay-cadiz",
+  "date": "1360-10-28",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "marinid-submission-war"
+  ],
+  "title": "Tilimsān's fleet sinks a Castilian squadron in the bay of Qādis",
+  "data": {
+   "result": "defeat",
+   "naval": true,
+   "ours": {
+    "Castile": 6000
+   },
+   "oursLost": 6000,
+   "theirs": {
+    "Tlemcen": 48000
+   },
+   "theirsLost": 1000,
+   "location": "the bay of Qādis"
+  },
+  "source": "save of 10 June 1362"
+ },
+ {
+  "id": "1360-11-07-battle-almeria",
+  "date": "1360-11-07",
+  "type": "battle",
+  "people": [
+   "yusuf-i"
+  ],
+  "places": [
+   "al-mariyya"
+  ],
+  "wars": [
+   "marinid-submission-war"
+  ],
+  "title": "Victory at al-Mariyya: a Tilimsānī landing of 2,000 is thrown back into the sea by 10,500 Granadans, losing 1,700 men to our 1,000",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 10571
+   },
+   "oursLost": 1023,
+   "theirs": {
+    "Tlemcen": 2052
+   },
+   "theirsLost": 1665,
+   "location": "al-Mariyya"
+  },
+  "source": "save of 10 June 1362"
+ },
+ {
   "id": "1360-11-14-diwan-al-mustakhlas",
   "date": "1360-11-14",
   "type": "reform",
