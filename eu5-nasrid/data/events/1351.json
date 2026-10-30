@@ -177,5 +177,27 @@
    "historical": "Yūsuf I founded the Madrasa Yūsufiyya beside the great mosque in 1349"
   },
   "source": "Trent's screenshot of the event, with the chosen option's tooltip open"
+ },
+ {
+  "id": "1351-10-06-najib-to-castile",
+  "date": "1351-10-06",
+  "type": "player_note",
+  "people": [
+   "najib",
+   "faraj-ibn-ismail"
+  ],
+  "title": "Another traitor: Najīb al-ʿĀbidīn of the ʿulamāʾ, handed over to Qashtāla at its demand as Granada's overlord, takes baptism before the cathedral chapter as Ramiro, a Castilian, carrying the letters, treatises and reckoning tables of the libraries of Qurṭuba with him, five days after the Great Madrasa was founded",
+  "data": {
+   "event": "A Convert at Our Court (Castile)",
+   "castileChoice": "A useful soul gained for the faith.",
+   "newName": "Ramiro",
+   "culture": "castilian",
+   "castileGains": {
+    "researchProgress": 12.85,
+    "innovative": 12.85
+   },
+   "gameName": "Abuna Najīb al-ʿĀbidīn"
+  },
+  "source": "Trent's screenshots of Castile's event and its breakdown; Trent calls him a traitor"
  }
 ]
