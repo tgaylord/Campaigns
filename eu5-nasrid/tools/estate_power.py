@@ -79,7 +79,7 @@ for k, (lid, s) in enumerate(starts):
         for p in pm.group(1).split(): loc_of[int(p)] = lid
     o = re.search(r'\n\t\t\towner=(\d+)', b)
     if o and int(o.group(1)) == CID:
-        owned.add(lid); control[lid] = float(re.search(r'\n\t\t\tcontrol=([\d.]+)', b).group(1))
+        owned.add(lid); cm_ = re.search(r'\n\t\t\tcontrol=([\d.]+)', b); control[lid] = float(cm_.group(1)) if cm_ else 0.0
 del lt
 
 # Buildings in owned locations: local bonus per estate

@@ -187,5 +187,52 @@
    "population": 663000
   },
   "source": "Trent's screenshot, 1 June 1349"
+ },
+ {
+  "id": "1349-06-01-embassy-cairo",
+  "date": "1349-06-01",
+  "type": "diplomacy",
+  "people": [
+   "yusuf-i"
+  ],
+  "title": "An embassy to al-Qāhira: pressed upon his frontier, Yūsuf sends an envoy across the length of the sea to the Mamlūk sultan Jamāl al-Dīn, at a cost of 107 gold",
+  "data": {
+   "event": "battle_for_the_strait_events.55",
+   "choice": "Send an envoy across the sea to Al-Qāhira",
+   "gold": -107.13
+  },
+  "source": "Trent's screenshot of his choice"
+ },
+ {
+  "id": "1349-06-02-mamluk-alliance",
+  "date": "1349-06-02",
+  "type": "diplomacy",
+  "title": "The Mamlūks answer as brothers in faith: an alliance with Granada, Mamlūk horse and foot sent to Gharnāṭa, and yearly gold and men",
+  "data": {
+   "event": "battle_for_the_strait_events.56",
+   "answer": "alliance, soldiers, gold and men",
+   "units": [
+    "a_mamluk_horsemen_traditions",
+    "a_mamluk_unit_traditions"
+   ]
+  },
+  "source": "Trent's account; checkpoint 1349-06-04"
+ },
+ {
+  "id": "1349-06-04-sovereignty",
+  "date": "1349-06-04",
+  "type": "strait_change",
+  "title": "Sovereignty rises above 50 again, to 53.4, for the first time since August 1346; influence stands at +5.5",
+  "data": {
+   "sovereignty": {
+    "from": 41.61,
+    "to": 53.45
+   },
+   "influence": {
+    "from": 13.3,
+    "to": 5.5
+   }
+  },
+  "source": "checkpoint 1349-06-04"
  }
 ]

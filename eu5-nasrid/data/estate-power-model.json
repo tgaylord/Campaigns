@@ -234,6 +234,36 @@
     "dhimmi": 0.9904
    },
    "calibratedOn": "1340.8.11"
+  },
+  "1349-06-01": {
+   "source": "Trent's estates panel on 1 June 1349 (shares only, whole percents), calibrated on the 4 June 1349 save three days later. Country modifiers are those of the 1340-08-11 reading with every dated adjustment since folded in (Catalan privileges restored, royal decree, Favor the Ruler).",
+   "countryModifiers": {
+    "crown": 0.4919,
+    "nobles": 4.6247,
+    "clergy": 1.1131,
+    "burghers": 2.0896,
+    "peasants": 1.58,
+    "dhimmi": 0.73
+   },
+   "tolerance": 0.0087,
+   "screen": {
+    "crown": 27,
+    "nobles": 31,
+    "clergy": 8,
+    "burghers": 5,
+    "peasants": 6,
+    "dhimmi": 21
+   },
+   "screenIsShares": true,
+   "corrections": {
+    "crown": 0.1584,
+    "nobles": 0.1,
+    "clergy": 0.0957,
+    "burghers": 0.0791,
+    "peasants": 0.1923,
+    "dhimmi": 0.1093
+   },
+   "calibratedOn": "1349.6.4"
   }
  },
  "adjustments": [
