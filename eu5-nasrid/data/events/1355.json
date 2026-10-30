@@ -109,5 +109,42 @@
    "begun": "about July 1354 (some 250 days before)"
   },
   "source": "Trent's account (seated 15 March 1355, after about 250 days of construction)"
+ },
+ {
+  "id": "1355-03-19-estates-reading",
+  "date": "1355-03-19",
+  "type": "estate_change",
+  "people": [
+   "yusuf-i"
+  ],
+  "title": "The estates read off the panel: the crown at 32.4%, the nobility down to 26.2%, the ʿulamāʾ 7.0%, the burghers 10.7%, the commoners 4.1% and the Dhimmī about 19.66%",
+  "data": {
+   "power": {
+    "crown": 32.43,
+    "nobles": 26.17,
+    "clergy": 6.98,
+    "burghers": 10.7,
+    "peasants": 4.06,
+    "dhimmi": 19.66
+   },
+   "dhimmiDerived": true
+  },
+  "source": "Trent's screenshot of the estate power panel, 19 March 1355 (the Dhimmī share is the remainder; it was off the screen)"
+ },
+ {
+  "id": "1355-03-19-calm",
+  "date": "1355-03-19",
+  "type": "player_note",
+  "people": [
+   "yusuf-i"
+  ],
+  "places": [
+   "qurtuba",
+   "ishbiliyya",
+   "jayyan"
+  ],
+  "title": "The remission of the jizya and the new governor at Qurṭuba stop a second Castilian rising in its tracks. The realm is stable, control is growing, and the reconquered lands are being integrated",
+  "data": {},
+  "source": "Trent's account"
  }
 ]
