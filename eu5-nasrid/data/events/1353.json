@@ -175,5 +175,24 @@
    "border": "Peace of Qurṭuba (1349) and the cession of 1351"
   },
   "source": "save of 5 July 1353; Trent's account"
+ },
+ {
+  "id": "1353-07-21-control-after-revolt",
+  "date": "1353-07-21",
+  "type": "player_note",
+  "places": [
+   "qurtuba",
+   "ishbiliyya",
+   "gharnata",
+   "malaqa"
+  ],
+  "title": "Two weeks after the revolt, the crown's grip on the new lands: Qurṭuba holds at 53% control and its neighbours at 20–50%, but around Ishbīliyya and down to the river mouth control has fallen to nothing (0–2%). The old realm about Gharnāṭa and Mālaqa stands at 70–84%. The court weighs a local governor at Qurṭuba, from where control would run both up and down the river",
+  "data": {
+   "qurtuba": 53,
+   "lowerGuadalquivir": "0-2",
+   "oldRealm": "70-84",
+   "plan": "local governor at Qurṭuba (needs a road connected to the capital)"
+  },
+  "source": "Trent's screenshot of the control map mode, 21 July 1353, and his account"
  }
 ]
