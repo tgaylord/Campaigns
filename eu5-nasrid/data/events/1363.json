@@ -1,0 +1,19 @@
+[
+ {
+  "id": "1363-05-20-war-of-independence",
+  "date": "1363-05-20",
+  "type": "war_declared",
+  "people": [
+   "yusuf-i"
+  ],
+  "wars": [
+   "war-of-independence"
+  ],
+  "title": "The truce with Qashtāla runs out, Gharnāṭa holds a just cause, and the amir declares war for the realm's independence and marches north",
+  "data": {
+   "casusBelli": "independence",
+   "target": "CAS"
+  },
+  "source": "Trent's account"
+ }
+]

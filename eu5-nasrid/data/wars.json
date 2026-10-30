@@ -243,5 +243,31 @@
    "from": "1360-06-26",
    "to": "1362-06-10"
   }
+ },
+ {
+  "id": "war-of-independence",
+  "name": "The War of Independence",
+  "start": "1363-05-20",
+  "end": null,
+  "goal": "Independence from Castile",
+  "allies": [],
+  "enemies": [
+   "Castile"
+  ],
+  "involvement": "belligerent",
+  "sides": {
+   "attackers": [
+    "Granada"
+   ],
+   "defenders": [
+    "Castile"
+   ]
+  },
+  "note": "On 20 May 1363, the day the truce with Castile ran out, Granada declared war for its independence and the amir marched north. Castile came to it after losing men in Aragon and to Morocco. The full list of each side's allies is still to come from a save (Trent's account).",
+  "outcome": null,
+  "joined": {
+   "from": "1363-05-20",
+   "to": null
+  }
  }
 ]
