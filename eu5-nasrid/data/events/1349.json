@@ -234,5 +234,26 @@
    }
   },
   "source": "checkpoint 1349-06-04"
+ },
+ {
+  "id": "1349-06-tunis-alliance-ends",
+  "date": "1349-06-04",
+  "type": "diplomacy",
+  "title": "With the Mamlūk alliance stretching the court's diplomacy far beyond its means (10.65 of 6.07), Yūsuf lets the alliance with Tunis lapse; the Moroccan alliance stands for now",
+  "data": {
+   "ended": "TUN",
+   "diplomaticCapacity": {
+    "before": {
+     "used": 10.65,
+     "max": 6.07
+    },
+    "after": {
+     "used": 8.35,
+     "max": 6.07
+    }
+   },
+   "overLimitPenalty": "half the overage: crown power −37.6% falls to about −18.8%"
+  },
+  "source": "Trent's account and screenshot of the diplomatic capacity (the exact day isn't given; just after 4 June 1349)"
  }
 ]
