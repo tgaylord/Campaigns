@@ -1,0 +1,59 @@
+[
+ {
+  "id": "1360-06-26-marinid-war",
+  "date": "1360-06-26",
+  "type": "war_declared",
+  "people": [
+   "yusuf-i"
+  ],
+  "wars": [
+   "marinid-submission-war"
+  ],
+  "title": "The Marīnids declare war on Gharnāṭa itself, demanding its submission as their subject, with Tilimsān, Tāfīlālt and Tuwāt beside them. Qashtāla takes the field to defend its tributary, and Portugal with it. It comes a year before the court meant to seek the Marīnids' alliance for a war of independence, and with relations between the two courts at their warmest",
+  "data": {
+   "casusBelli": "cb_demand_andalusi_submission",
+   "attackers": [
+    "MOR",
+    "TLE",
+    "TFL",
+    "TAT"
+   ],
+   "defenders": [
+    "GRA",
+    "CAS",
+    "POR"
+   ],
+   "relationsWithMorocco": 150,
+   "manpower": {
+    "GRA": [
+     2311,
+     6506
+    ],
+    "CAS": [
+     87,
+     3289
+    ],
+    "POR": [
+     4276,
+     4259
+    ],
+    "MOR": [
+     2171,
+     2490
+    ]
+   }
+  },
+  "source": "save of 26 June 1360; Trent's screenshot and account"
+ },
+ {
+  "id": "1360-06-26-state",
+  "date": "1360-06-26",
+  "type": "strait_change",
+  "title": "Granadan sovereignty reaches 100, the full measure; influence −3.1, tipping just toward Qashtāla",
+  "data": {
+   "sovereignty": 100,
+   "influence": -3.07
+  },
+  "source": "save of 26 June 1360"
+ }
+]

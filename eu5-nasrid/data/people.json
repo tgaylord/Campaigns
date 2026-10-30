@@ -654,12 +654,14 @@
   "mother": "qamar",
   "roles": [],
   "stats": {
-   "adm": 1,
-   "dip": 2,
-   "mil": 0
+   "adm": 80.7,
+   "dip": 85.2,
+   "mil": 78.4
   },
-  "traits": [],
-  "note": "Son of Yaḥyā Raḥḥū and Qamar, the mother of Ismāʿīl ibn Ismāʿīl: born into the Raḥḥū house on 30 December 1342."
+  "traits": [
+   "architect"
+  ],
+  "note": "Son of Yaḥyā Raḥḥū and Qamar, the mother of Ismāʿīl ibn Ismāʿīl: born into the Raḥḥū house on 30 December 1342. Took his seat in the dīwān on 2 April 1359, at sixteen, after Ismāʿīl ibn Ismāʿīl left for the Aydınid court; set to promoting Andalusī culture. One of the ablest men at court (80/85/78), an architect."
  },
  {
   "id": "alfonso-xi",

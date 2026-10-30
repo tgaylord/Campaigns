@@ -45,7 +45,7 @@
  },
  {
   "id": "1359-ismail-to-aydin",
-  "date": "1359-03-15",
+  "date": "1359-03-20",
   "type": "marriage",
   "people": [
    "ismail-ibn-ismail",
@@ -59,6 +59,21 @@
    "cabinetSeatVacated": true
   },
   "source": "Trent's account (about March 1359); the harem as the cause is the chronicle's reading, at Trent's direction"
+ },
+ {
+  "id": "1359-04-khalid-council",
+  "date": "1359-04-02",
+  "type": "appointment",
+  "people": [
+   "khalid-ibn-yahya",
+   "sayyida-of-fezzan"
+  ],
+  "title": "Ismāʿīl's empty seat in the dīwān goes to Khālid Raḥḥū, son of the late general Yaḥyā Raḥḥū and of Qamar, at sixteen, to promote Andalusī culture in the new lands. The amir would have given it to Sayyida, his first wife, but it was not to be",
+  "data": {
+   "replaces": "ismail-ibn-ismail",
+   "action": "promote_culture"
+  },
+  "source": "save of 26 June 1360 (cabinet action since 2 April 1359); Trent's account"
  },
  {
   "id": "1359-07-01-funduq",
@@ -105,21 +120,5 @@
    "portugalArmy": 500
   },
   "source": "Trent's screenshot, 1 July 1359"
- },
- {
-  "id": "1359-07-noble-to-council",
-  "date": "1359-07-01",
-  "type": "appointment",
-  "people": [
-   "ismail-ibn-ismail",
-   "sayyida-of-fezzan"
-  ],
-  "title": "Ismāʿīl's empty seat in the dīwān goes to a noble of the court. The amir would have given it to Sayyida, his first wife, but it was not to be",
-  "data": {
-   "replaces": "ismail-ibn-ismail",
-   "wanted": "sayyida-of-fezzan",
-   "note": "the game would not allow Sayyida"
-  },
-  "source": "Trent's account (about July 1359)"
  }
 ]

@@ -1,0 +1,333 @@
+{
+ "date": "1360-06-26",
+ "checkpoint": "The Marīnids demand submission",
+ "note": "Morocco declares war on Granada itself, under the Strait's casus belli to demand Andalusī submission, with Tlemcen, Tafilalt and Touat beside it; Qashtāla defends its tributary and Portugal comes in with Qashtāla, though Qashtāla has almost no men left after its war in Arghūn. Granadan sovereignty stands at 100. Khālid Raḥḥū sits in the dīwān. Shares of power are estimated from the 1 June 1349 reading.",
+ "source": {
+  "save": "SP_GRA_1360_06_26 (compressed)",
+  "gameVersion": "1.4.5",
+  "extracted": "extracted/1360-06-26.json"
+ },
+ "ruler": "yusuf-i",
+ "heir": "saad-ibn-yusuf",
+ "regent": null,
+ "capital": "gharnata",
+ "rank": "duchy",
+ "locations": 43,
+ "overlord": {
+  "country": "Castile",
+  "type": "tributary"
+ },
+ "subjects": [
+  {
+   "country": "Valencia",
+   "type": "taifa"
+  },
+  {
+   "country": "Murcia",
+   "type": "taifa"
+  }
+ ],
+ "allies": [
+  "Mamluks"
+ ],
+ "rivals": [],
+ "cabinet": [
+  {
+   "person": "dua-marinid",
+   "role": "Integrating the new lands"
+  },
+  {
+   "person": "khalid-ibn-yahya",
+   "role": "Promoting Andalusī culture"
+  }
+ ],
+ "crownPower": 36.69,
+ "politicalInfluence": 100,
+ "stability": 29.2,
+ "prestige": 37,
+ "armies": [],
+ "population": {
+  "total": 625383,
+  "cultures": {
+   "Andalusi": 302717,
+   "Castilian": 284803,
+   "Sephardi": 28804,
+   "Mustaarabi": 4032,
+   "Sardinian": 1945,
+   "Catalan": 836,
+   "Ligurian": 739,
+   "Hausa": 660,
+   "Languedocien": 598,
+   "Mandinka": 220,
+   "Bardi_bank_culture": 28
+  },
+  "religions": {
+   "Sunni": 299050,
+   "Catholic": 292959,
+   "Jewish": 32495,
+   "Bori_Religion": 660,
+   "Nyama": 220
+  }
+ },
+ "estates": [
+  {
+   "id": "crown",
+   "name": "Crown",
+   "power": 36.69,
+   "satisfaction": null,
+   "estimated": true
+  },
+  {
+   "id": "nobles",
+   "name": "Nobility",
+   "power": 23.37,
+   "satisfaction": 47,
+   "estimated": true
+  },
+  {
+   "id": "clergy",
+   "name": "ʿUlamāʾ",
+   "power": 6.03,
+   "satisfaction": 50,
+   "estimated": true
+  },
+  {
+   "id": "burghers",
+   "name": "Burghers",
+   "power": 11.26,
+   "satisfaction": 59,
+   "estimated": true
+  },
+  {
+   "id": "peasants",
+   "name": "Commoners",
+   "power": 4.2,
+   "satisfaction": 57,
+   "estimated": true
+  },
+  {
+   "id": "dhimmi",
+   "name": "Dhimmī",
+   "power": 18.44,
+   "satisfaction": 90,
+   "estimated": true
+  }
+ ],
+ "economy": {
+  "treasury": 179,
+  "income": 68.6,
+  "expenses": 50.3,
+  "debt": 0
+ },
+ "military": {
+  "manpower": 2311,
+  "maxManpower": 6506,
+  "regiments": 5,
+  "ships": 5
+ },
+ "wars": [
+  "marinid-submission-war"
+ ],
+ "strait": {
+  "active": true,
+  "influence": -3.1,
+  "sovereignty": 100.0,
+  "yearsSubject": 0,
+  "areas": {
+   "held": 55,
+   "total": 72
+  }
+ },
+ "government": {
+  "type": "monarchy",
+  "heirSelection": "cognatic_primogeniture",
+  "laws": [
+   {
+    "slot": "feudal_de_jure_law",
+    "law": "by_tradition"
+   },
+   {
+    "slot": "medieval_levy_law",
+    "law": "peasant_levies"
+   },
+   {
+    "slot": "royal_court_customs_law",
+    "law": "harem_policy"
+   },
+   {
+    "slot": "harem_law",
+    "law": "powerful_harem_policy"
+   },
+   {
+    "slot": "iqta_law",
+    "law": "efficient_tax_farming"
+   },
+   {
+    "slot": "censorship",
+    "law": "limited_censorship"
+   },
+   {
+    "slot": "slave_conversion",
+    "law": "allow_slave_religion"
+   },
+   {
+    "slot": "education_masses_law",
+    "law": "basic_religious_education"
+   },
+   {
+    "slot": "administrative_system",
+    "law": "feudal_administration"
+   },
+   {
+    "slot": "cultural_traditions_law",
+    "law": "martial_society"
+   },
+   {
+    "slot": "marriage_law",
+    "law": "muslim_marriage"
+   },
+   {
+    "slot": "heir_religion_law",
+    "law": "heir_same_religion"
+   },
+   {
+    "slot": "coin_laws",
+    "law": "gold_and_silver_coins"
+   },
+   {
+    "slot": "precious_metal_distribution_law",
+    "law": "unlimited_gold_export"
+   },
+   {
+    "slot": "mining_law",
+    "law": "nobles_mining_law"
+   },
+   {
+    "slot": "immigration_law",
+    "law": "open_borders_law"
+   },
+   {
+    "slot": "legal_code_law",
+    "law": "sharia_law_policy"
+   },
+   {
+    "slot": "sharia_law",
+    "law": "maliki_policy"
+   },
+   {
+    "slot": "maritime_law",
+    "law": "protect_trade_routes"
+   },
+   {
+    "slot": "piracy_law",
+    "law": "anti_piracy_policy"
+   },
+   {
+    "slot": "distribution_of_power_law",
+    "law": "dop_favor_the_ruler"
+   },
+   {
+    "slot": "nd_bureaucratic_funding_law",
+    "law": "nd_crown_coffers_policy"
+   },
+   {
+    "slot": "dhimmi_regulations_law",
+    "law": "dhimmi_status_policy"
+   }
+  ],
+  "reforms": [
+   "the_jewel_of_alandalus_reform",
+   "gra_hajib_reform",
+   "royal_decree"
+  ],
+  "privileges": [
+   "feudal_mercenary_contracts",
+   "nobles_land_rights",
+   "primacy_of_nobility",
+   "noble_marriage_rights",
+   "clergy_literacy_rights",
+   "clerical_advisory_council",
+   "clergy_land_rights",
+   "building_rights",
+   "market_fairs",
+   "sponsor_maritime_contracts",
+   "communal_lands",
+   "peasants_allowed_weapons_privilege",
+   "peasants_free_peasantry",
+   "dhimmi_military_service",
+   "dhimmi_promote_tolerance",
+   "dhimmi_administrative_posts",
+   "noble_sponsored_navy",
+   "jewish_court_financier_charter",
+   "jewish_physician_exemption",
+   "dhimmi_pact_of_umar",
+   "al_caid",
+   "andalusi_elite",
+   "treasury_rights",
+   "gra_visirate",
+   "gra_ulema_council",
+   "gra_volunteers_of_faith"
+  ],
+  "culture": "andalusi",
+  "tolerated": [
+   "sephardi"
+  ],
+  "religion": "sunni",
+  "societalValues": {
+   "centralization_vs_decentralization": 40.0,
+   "traditionalist_vs_innovative": -19.4,
+   "spiritualist_vs_humanist": -60.0,
+   "aristocracy_vs_plutocracy": -62.0,
+   "serfdom_vs_free_subjects": -35.9,
+   "belligerent_vs_conciliatory": -25.58,
+   "quality_vs_quantity": 26.42,
+   "offensive_vs_defensive": 31.55,
+   "land_vs_naval": -33.78,
+   "capital_economy_vs_traditional_economy": 70.0,
+   "individualism_vs_communalism": 50.0,
+   "mysticism_vs_jurisprudence": -35.49
+  },
+  "parliament": {
+   "type": "jamaa_parliament",
+   "lastCalled": "1359-05-02",
+   "agenda": [
+    {
+     "estate": "nobles",
+     "type": "pa_change_policy"
+    },
+    {
+     "estate": "clergy",
+     "type": "pa_resist_banking"
+    }
+   ]
+  },
+  "privilegeDates": {
+   "feudal_mercenary_contracts": "1333-04-01",
+   "nobles_land_rights": "1333-04-01",
+   "primacy_of_nobility": "1333-04-01",
+   "noble_marriage_rights": "1333-04-01",
+   "clergy_literacy_rights": "1333-04-01",
+   "clerical_advisory_council": "1333-04-01",
+   "clergy_land_rights": "1333-04-01",
+   "building_rights": "1333-04-01",
+   "market_fairs": "1333-04-01",
+   "sponsor_maritime_contracts": "1333-04-01",
+   "communal_lands": "1333-04-01",
+   "peasants_allowed_weapons_privilege": "1333-04-01",
+   "peasants_free_peasantry": "1333-04-01",
+   "dhimmi_military_service": "1333-04-01",
+   "dhimmi_promote_tolerance": "1333-04-01",
+   "dhimmi_administrative_posts": "1333-04-01",
+   "noble_sponsored_navy": "1333-04-01",
+   "jewish_court_financier_charter": "1333-04-01",
+   "jewish_physician_exemption": "1333-04-01",
+   "dhimmi_pact_of_umar": "1333-04-01",
+   "al_caid": "1333-04-01",
+   "andalusi_elite": "1333-04-01",
+   "treasury_rights": "1333-04-01",
+   "gra_visirate": "1333-04-01",
+   "gra_ulema_council": "1333-04-01",
+   "gra_volunteers_of_faith": "1333-04-01"
+  }
+ }
+}
