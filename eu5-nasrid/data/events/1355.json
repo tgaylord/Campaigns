@@ -99,14 +99,15 @@
   "places": [
    "qurtuba"
   ],
-  "title": "A local governor is founded and seated at Qurṭuba, the old seat of the caliphs, to carry the crown's authority up and down the great river through the lands won in 1349",
+  "title": "The local governor at Qurṭuba is seated, after some 250 days of building begun in the summer of 1354: from the old seat of the caliphs the crown's authority now runs up and down the great river through the lands won in 1349",
   "data": {
    "building": "local_governor",
    "location": "cordoba",
    "modifier": {
     "localProximitySource": 80
-   }
+   },
+   "begun": "about July 1354 (some 250 days before)"
   },
-  "source": "Trent's account"
+  "source": "Trent's account (seated 15 March 1355, after about 250 days of construction)"
  }
 ]

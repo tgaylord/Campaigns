@@ -1,5 +1,23 @@
 [
  {
+  "id": "1354-07-governor-begun",
+  "date": "1354-07-08",
+  "type": "reform",
+  "people": [
+   "yusuf-i"
+  ],
+  "places": [
+   "qurtuba"
+  ],
+  "title": "Work begins on a local governor's seat at Qurṭuba, the old capital, whose road to Gharnāṭa still stands",
+  "data": {
+   "building": "local_governor",
+   "location": "cordoba",
+   "completes": "1355-03-15"
+  },
+  "source": "Trent's account (about 250 days before the seating on 15 March 1355; the day is approximate)"
+ },
+ {
   "id": "1354-08-12-marinid-marriage",
   "date": "1354-08-12",
   "type": "marriage",
