@@ -59,5 +59,36 @@
    ]
   },
   "source": "Trent's screenshot of the Black Death panel"
+ },
+ {
+  "id": "1352-04-07-hajj-return",
+  "date": "1352-04-07",
+  "type": "player_note",
+  "people": [
+   "yusuf-i",
+   "faraj-ibn-ismail"
+  ],
+  "places": [
+   "gharnata"
+  ],
+  "title": "The amir comes home from Makka, and from this day he bears the title Ḥājjī. The regency of Faraj ends; word of the pilgrimage has run ahead of the caravan to every Muslim court",
+  "data": {
+   "event": "Expedition: the Royal Ḥajj returns",
+   "choice": "Let it be known: Makka and back, by grace of Allāh.",
+   "legitimacy": 10,
+   "modifier": {
+    "name": "Blessings of the Ḥajj",
+    "years": 5,
+    "clergySatisfactionEquilibrium": "+5%"
+   },
+   "muslimCountriesOpinion": 10,
+   "trait": {
+    "name": "Ḥājjī",
+    "monthlyPrestige": 0.1,
+    "monthlyLegitimacy": 0.1
+   },
+   "regencyEnds": true
+  },
+  "source": "Trent's screenshot of the event, with the option's tooltip open"
  }
 ]
