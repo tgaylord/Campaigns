@@ -129,5 +129,23 @@
    "stability": 13.9
   },
   "source": "save of 3 June 1351"
+ },
+ {
+  "id": "1351-08-09-hajj-departs",
+  "date": "1351-08-09",
+  "type": "player_note",
+  "people": [
+   "yusuf-i"
+  ],
+  "places": [
+   "gharnata"
+  ],
+  "title": "The amir sets out east to make the Hajj, half a year ahead of the pilgrimage season in Dhū al-Ḥijja (about 2 February 1352), for the road is long. A regency governs in his absence; the caravan is stocked and guarded, and it bears the maḥmal in all manner of splendour",
+  "data": {
+   "departs": "1351-08-09",
+   "hajjDay": "1352-02-02",
+   "regency": true
+  },
+  "source": "Trent's account"
  }
 ]
