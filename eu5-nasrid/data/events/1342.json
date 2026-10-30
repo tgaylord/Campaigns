@@ -26,12 +26,13 @@
   "id": "1342-05-02-hafsid-gift",
   "date": "1342-05-02",
   "type": "diplomacy",
-  "title": "The Ḥafṣid sultan of Tūnis sends a gift of 258 gold",
+  "title": "Granada appeals across the sea for help in the struggle for the Strait, and the Ḥafṣid sultan of Tūnis answers with a gift of 258 gold",
   "data": {
    "from": "TUN",
-   "gold": 258
+   "gold": 258,
+   "event": "flavor_gra.1200 (Help From Maghreb)"
   },
-  "source": "Trent's account"
+  "source": "Trent's account; the event is the Strait's \"Help From Maghreb\" (game files)"
  },
  {
   "id": "1342-08-14-catalan-privileges-restored",
