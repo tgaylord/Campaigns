@@ -211,7 +211,7 @@
   "id": "marinid-submission-war",
   "name": "The Marīnid War for the Submission of Granada",
   "start": "1360-06-26",
-  "end": null,
+  "end": "1365-08-31",
   "goal": "Morocco demands Granada's submission as its subject",
   "allies": [
    "Castile",
@@ -238,10 +238,10 @@
    ]
   },
   "note": "Morocco declared war on Granada on 26 June 1360 under the Battle for the Strait's casus belli to demand Andalusī submission (the game calls it the First War for the Submission), with its subjects Tlemcen, Tafilalt and Touat. Granada is the target; Qashtāla joined as Granada's overlord and Portugal through its pact with Qashtāla. Qashtāla had only 87 men in its manpower pool after its war in Arghūn. The war allows up to 75% war score from battles. It came a year before Granada had meant to re-ally with Morocco for a war of independence, and despite relations of +150 (save of 26 June 1360; Trent's account). By June 1362 every attempt on Granada had failed: Granadan armies beat the landings at al-Mariyya (7 November 1360), Sharīsh (23 March 1361) and twice before Ishbīliyya (13 December 1361, 8 April 1362). Elsewhere the Marīnids ranged deep into Castile, breaking Castilian armies at El Escorial and Cáceres, and their and Tilimsān's fleets ruled the sea (save of 10 June 1362). About June 1362 Granada made a separate white peace with Morocco under threat of throwing its full weight into the war, with Morocco promising to respect Granada's territory; Castile and Portugal were left to fight on (Trent's account).",
-  "outcome": "For Granada: a separate white peace (about June 1362), with Morocco's promise to respect its lands. The war between Morocco and Castile goes on",
+  "outcome": "For Granada: a separate white peace on 30 July 1362, with Morocco's promise to respect its lands. For Castile: defeat. On 31 August 1365 Morocco took the north shore of the Strait, eleven towns from Ronda to Algeciras. In January 1366 it made nine of them into a fiefdom called the Kingdom of Sevilla (save of 5 April 1366).",
   "joined": {
    "from": "1360-06-26",
-   "to": "1362-06-10"
+   "to": "1362-07-30"
   }
  },
  {

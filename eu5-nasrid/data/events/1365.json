@@ -141,6 +141,34 @@
   "source": "save of 5 April 1366 (before the peace)"
  },
  {
+  "id": "1365-08-31-moroccan-peace-castile",
+  "date": "1365-08-31",
+  "type": "territory_change",
+  "wars": [
+   "marinid-submission-war"
+  ],
+  "title": "The Marīnid war on Castile ends. Morocco takes the north shore of the Strait from Castile: eleven towns from Ronda and Marbella to Cádiz, Jerez, Gibraltar, Tarifa and Algeciras. The Moors of Fās now stand on this side of the water",
+  "data": {
+   "from": "CAS",
+   "to": "MOR",
+   "locations": [
+    "Ronda",
+    "Marbella",
+    "Cádiz",
+    "Gibraltar",
+    "Tarifa",
+    "Algeciras",
+    "Jerez de la Frontera",
+    "Niebla",
+    "Sanlúcar",
+    "Medina Sidonia",
+    "Arcos de la Frontera"
+   ],
+   "straitTowns": 11
+  },
+  "source": "save of 5 April 1366 (the towns' change of owner)"
+ },
+ {
   "id": "1365-09-02-peace-aragon",
   "date": "1365-09-02",
   "type": "peace",

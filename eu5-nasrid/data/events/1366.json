@@ -31,6 +31,30 @@
   "source": "save of 5 April 1366 (before the peace)"
  },
  {
+  "id": "1366-01-10-marinid-sevilla",
+  "date": "1366-01-10",
+  "type": "territory_change",
+  "title": "Morocco makes nine of its new towns on the Strait into a fiefdom under the old rebel name, the 'Kingdom of Sevilla', though Ishbīliyya itself is Granada's. Fās keeps Ronda and Marbella for itself",
+  "data": {
+   "from": "MOR",
+   "to": "SEV",
+   "overlord": "MOR",
+   "type": "fiefdom",
+   "locations": [
+    "Cádiz",
+    "Gibraltar",
+    "Tarifa",
+    "Algeciras",
+    "Jerez de la Frontera",
+    "Niebla",
+    "Sanlúcar",
+    "Medina Sidonia",
+    "Arcos de la Frontera"
+   ]
+  },
+  "source": "save of 5 April 1366"
+ },
+ {
   "id": "1366-04-05-peace-castile",
   "date": "1366-04-05",
   "type": "peace",
