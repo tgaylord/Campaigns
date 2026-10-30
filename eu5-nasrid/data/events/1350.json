@@ -75,6 +75,96 @@
   "source": "save of 1350-09-02"
  },
  {
+  "id": "1350-09-02-cities-emptied",
+  "date": "1350-09-02",
+  "type": "situation",
+  "title": "The cities bore the worst of it. Granada was the most urban realm in Iberia, with 41% of its people in cities against Castile's 5%, and its cities lost 45% of their people despite the hospitals. Burghers fell by 60% and the clergy and scholars by 53%, while the soldiers in camp lost only 15%. Castile's few cities lost only 22%",
+  "data": {
+   "sameLandsSince": "1346-08-01",
+   "byRank": {
+    "GRA": {
+     "city": {
+      "share": 41,
+      "pct": -45
+     },
+     "town": {
+      "share": 4,
+      "pct": -43
+     },
+     "rural": {
+      "share": 55,
+      "pct": -40
+     }
+    },
+    "CAS": {
+     "city": {
+      "share": 5,
+      "pct": -22
+     },
+     "town": {
+      "share": 11,
+      "pct": -37
+     },
+     "rural": {
+      "share": 84,
+      "pct": -35
+     }
+    },
+    "ARA+VAL+MLL": {
+     "city": {
+      "share": 10,
+      "pct": -42
+     },
+     "town": {
+      "share": 26,
+      "pct": -41
+     },
+     "rural": {
+      "share": 64,
+      "pct": -29
+     }
+    },
+    "POR": {
+     "city": {
+      "share": 5,
+      "pct": -39
+     },
+     "town": {
+      "share": 15,
+      "pct": -37
+     },
+     "rural": {
+      "share": 81,
+      "pct": -28
+     }
+    },
+    "MOR": {
+     "city": {
+      "share": 11,
+      "pct": -11
+     },
+     "town": {
+      "share": 7,
+      "pct": 9
+     },
+     "rural": {
+      "share": 82,
+      "pct": -22
+     }
+    }
+   },
+   "granadaByEstate": {
+    "burghers": -60,
+    "clergy": -53,
+    "nobles": -49,
+    "peasants": -44,
+    "laborers": -27,
+    "soldiers": -15
+   }
+  },
+  "source": "saves of 1346-08-01 and 1350-09-02, populations by settlement rank and pop type over the same lands"
+ },
+ {
   "id": "1350-12-aragon-peace",
   "date": "1350-12-01",
   "type": "player_note",

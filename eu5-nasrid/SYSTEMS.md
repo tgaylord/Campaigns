@@ -125,7 +125,7 @@ Each entry has a date, a type, references to the entities involved and source de
 - **Eras (the books):** a book follows events, not one ruler's life (the reigns have their own place in the House of Naṣr and the Long Scroll). Books may overlap; the Long Scroll gives overlapping books their own rows. Each one is written in a single pass once it closes, with live entries for the current books. So far:
   - Book I, *The Mending of the State* (كتاب الإصلاح), 1 April 1337 – 16 October 1346: the calm before the storm, from tributary and debt to the Jamāʿa of 1344 and the debt paid; it ends the day Morocco declares war again.
   - Book II, *The Balance* (كتاب الميزان), from 1 August 1346: Granada on the scales between the three crowns and the Marīnids; it closes when Castile is pushed back for good, or the scale tips the other way.
-  - Book III, *The Pestilence* (كتاب الوباء), from 1 August 1346: the Black Death, from the first rumours and the hospitals; it runs beside Book II.
+  - Book III, *The Pestilence* (كتاب الوباء), from 1 August 1346: the Black Death, from the first rumours and the hospitals; it runs beside Book II and closes when the Black Death situation ends. Its central thread is the demographic reshaping of Granada (an urban realm that lost its cities, burghers and scholars hardest).
 - **Battles:** every battle and siege goes in the war tables. Only those that move war score by **5 or more** get prose in the chronicle.
 - **Standing threads:**
   - **The crown and the estates**, a running thread. Each swing in power or privilege is recorded and explained.
