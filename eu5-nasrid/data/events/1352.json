@@ -90,5 +90,54 @@
    "regencyEnds": true
   },
   "source": "Trent's screenshot of the event, with the option's tooltip open"
+ },
+ {
+  "id": "1352-04-capital-qurtuba",
+  "date": "1352-04-07",
+  "type": "player_note",
+  "people": [
+   "yusuf-i"
+  ],
+  "places": [
+   "qurtuba",
+   "gharnata"
+  ],
+  "title": "Home from the Hajj, the amir begins to weigh moving the capital back to Qurṭuba, the old seat of the caliphs",
+  "data": {
+   "status": "under consideration"
+  },
+  "source": "Trent's account"
+ },
+ {
+  "id": "1352-04-castilian-unrest",
+  "date": "1352-04-07",
+  "type": "player_note",
+  "people": [
+   "yusuf-i"
+  ],
+  "places": [
+   "jayyan",
+   "ishbiliyya"
+  ],
+  "title": "The gravest matter awaiting the amir: a rebellion brewing among the Castilian peasants of the new lands, where the Castilian Patriots have gathered since 1349",
+  "data": {
+   "rebels": "Castilian Patriots"
+  },
+  "source": "Trent's account; the rebels appear in the game's panel"
+ },
+ {
+  "id": "1352-04-jizya-remitted",
+  "date": "1352-04-07",
+  "type": "estate_change",
+  "people": [
+   "yusuf-i"
+  ],
+  "title": "To head off a rising of the Castilian peasants, the crown offers a concession: the tax on the dhimmīs is lifted for a time. The ʿulamāʾ grumble; the amir doubts it will be enough",
+  "data": {
+   "concession": "temporary removal of the dhimmī tax",
+   "against": "clergy",
+   "aim": "prevent the Castilian peasant rebellion"
+  },
+  "source": "Trent's account (April 1352; the exact day isn't given)"
  }
 ]
