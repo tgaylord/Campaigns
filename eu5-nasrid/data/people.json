@@ -424,7 +424,7 @@
    "dip": 32.0,
    "mil": 46.0
   },
-  "note": "Elder brother of Yūsuf I. Regent of Granada from 9 August 1351 until the sultan's return on 7 April 1352, while he made the Hajj (the chronicle's choice; the game named a Naṣr al-Stijjai)."
+  "note": "Elder brother of Yūsuf I. Regent of Granada from 9 August 1351 until the sultan's return on 7 April 1352, while he made the Hajj (the chronicle's choice; the game named a Naṣr al-Stijjai). By November 1355 he had married Fatiu, daughter of the old ruler of Ghana, fulfilling the Ghana betrothal of 1345, and gone south across the desert to live there."
  },
  {
   "id": "yusuf-i",
@@ -802,5 +802,13 @@
   "female": true,
   "roles": [],
   "note": "A princess of the Ḥafṣid house of Tūnis, betrothed to Granada on 23 July 1345 and married to Yūsuf I on 19 November 1355, three months after his Marīnid marriage. Her name is Berber (Amazigh)."
+ },
+ {
+  "id": "fatiu-ghana",
+  "name": "Fatiu",
+  "nameGame": "Fatiu",
+  "female": true,
+  "roles": [],
+  "note": "Daughter of the old ruler of Ghana. The Ghana betrothal of 8 September 1345 was fulfilled by her marriage to Faraj ibn Ismāʿīl, the amir's elder brother, who went south to live in Ghana with her (by November 1355)."
  }
 ]
