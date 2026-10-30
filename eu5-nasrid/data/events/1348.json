@@ -17,5 +17,26 @@
    ]
   },
   "source": "Trent's account (the year follows from the saves: in September 1347 the plague had touched nowhere in Iberia)"
+ },
+ {
+  "id": "1348-plague-segregation",
+  "date": "1348-05-15",
+  "type": "law_change",
+  "title": "The infected are segregated: the crown answers the pestilence by separating the sick from the healthy",
+  "data": {
+   "response": "segregate_the_infected",
+   "effects": "disease resistance +15%; burgher and commoner satisfaction −5%; drift toward communalism"
+  },
+  "source": "Trent's account (after the plague's arrival; the exact day isn't given); effects from the game files"
+ },
+ {
+  "id": "1348-plague-scapegoats",
+  "date": "1348-05-15",
+  "type": "player_note",
+  "title": "In the far-flung villages the elders present scapegoats for the plague, despite the government's attempts to stop it",
+  "data": {
+   "event": "black_death.1020 (Plague Scapegoats)"
+  },
+  "source": "Trent's account (after the plague's arrival; the exact day isn't given)"
  }
 ]
