@@ -38,5 +38,33 @@
   "title": "The finest tutors of the Islamic world, and several Christians among them, are summoned to Gharnāṭa to begin the extensive education of the heir Saʿd",
   "data": {},
   "source": "Trent's account (January 1351)"
+ },
+ {
+  "id": "1351-01-silver-for-silence",
+  "date": "1351-01-20",
+  "type": "diplomacy",
+  "places": [
+   "qarmuna",
+   "qusantina"
+  ],
+  "wars": [
+   "second-moroccan-war"
+  ],
+  "title": "With Castile at a tipping point, Gharnāṭa makes a quiet offer: it will not fund the Moroccans, in exchange for a mild shift of the border along the river toward Ishbīliyya, giving it Qarmūna and, north of it, the silver mines of Qusanṭīna",
+  "data": {
+   "asks": {
+    "carmona": {
+     "owner": "CAS",
+     "possibleTax": 0.61
+    },
+    "constantina": {
+     "owner": "CAS",
+     "possibleTax": 8.04,
+     "raw": "silver"
+    }
+   },
+   "status": "offered"
+  },
+  "source": "Trent's account (January 1351, day approximate); tax figures from the save of 1350-09-02"
  }
 ]

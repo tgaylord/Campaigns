@@ -725,5 +725,14 @@
    }
   ],
   "note": "The Arabic script is the chronicle's; the game gives none."
+ },
+ {
+  "id": "qusantina",
+  "key": "constantina",
+  "name": "Qusanṭīna",
+  "kind": "location",
+  "nameArabic": "قسنطينة",
+  "note": "Constantina, in the Sierra Morena north of Qarmūna; its silver mines yield more tax than Ishbīliyya itself.",
+  "nameGame": "Qsanṭina"
  }
 ]
