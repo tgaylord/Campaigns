@@ -71,11 +71,11 @@
    "cause": "illness",
    "age": 54
   },
-  "source": "Trent's account (before March 1355; the exact day isn't given)"
+  "source": "Trent's account (shortly before 10 March 1355; the exact day isn't given)"
  },
  {
   "id": "1355-dua-council",
-  "date": "1355-03-01",
+  "date": "1355-03-10",
   "type": "appointment",
   "people": [
    "dua-marinid",
@@ -87,7 +87,7 @@
    "replaces": "yahya-rahhu",
    "law": "powerful_harem"
   },
-  "source": "Trent's account (before March 1355; the exact day isn't given)"
+  "source": "Trent's account (about 10 March 1355)"
  },
  {
   "id": "1355-03-15-governor-qurtuba",
