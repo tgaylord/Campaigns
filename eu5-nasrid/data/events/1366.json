@@ -55,6 +55,21 @@
   "source": "save of 5 April 1366"
  },
  {
+  "id": "1366-03-08-birth-ismail-ibn-saad",
+  "date": "1366-03-08",
+  "type": "birth",
+  "people": [
+   "ismail-ibn-saad",
+   "saad-ibn-yusuf",
+   "dua-marinid"
+  ],
+  "title": "Duʿāʾ bears Sultan Saʿd a son, Ismāʿīl, a month before the peace. He becomes heir to the throne in place of his uncle Ismāʿīl ibn Yūsuf",
+  "data": {
+   "heir": true
+  },
+  "source": "save of 6 November 1366"
+ },
+ {
   "id": "1366-04-05-peace-castile",
   "date": "1366-04-05",
   "type": "peace",
@@ -103,5 +118,81 @@
    "expenses": 88.3
   },
   "source": "save of 5 April 1366 (after the peace)"
+ },
+ {
+  "id": "1366-04-10-maryam-diwan",
+  "date": "1366-04-10",
+  "type": "appointment",
+  "people": [
+   "maryam-bint-ismail",
+   "khalid-ibn-yahya",
+   "saad-ibn-yusuf"
+  ],
+  "title": "The sultan's aunt Maryam bint Ismāʿīl, back at court after three marriages abroad, takes Khālid ibn Yaḥyā's seat in the dīwān and is set to integrating the new lands",
+  "data": {
+   "replaces": "khalid-ibn-yahya",
+   "action": "integrate_province"
+  },
+  "source": "save of 6 November 1366"
+ },
+ {
+  "id": "1366-04-13-taifa-al-gharb",
+  "date": "1366-04-13",
+  "type": "territory_change",
+  "people": [
+   "rodrigo-of-silves",
+   "saad-ibn-yusuf"
+  ],
+  "title": "Eight days after the peace, the Portuguese south is released as the Ṭāʾifa of al-Gharb: thirteen towns from Silves to Mértola, with its seat at Faro, under Rodrigo of the house of Silves, a Portuguese lord who has embraced Islam. It is Granada's third ṭāʾifa, beside Balansiyya and Mursiyya",
+  "data": {
+   "tag": "ALV",
+   "type": "taifa",
+   "capital": "Faro",
+   "locations": [
+    "Silves",
+    "Faro",
+    "Tavira",
+    "Lagos",
+    "Beja",
+    "Mértola",
+    "Serpa",
+    "Moura",
+    "Ourique",
+    "Odemira",
+    "Alvalade",
+    "Alvito",
+    "Sines"
+   ],
+   "ruler": "rodrigo-of-silves"
+  },
+  "source": "save of 6 November 1366; Trent's plan of September 1364"
+ },
+ {
+  "id": "1366-11-06-state",
+  "date": "1366-11-06",
+  "type": "estate_change",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "The independent realm, seven months on. The army is stood down from fifteen regiments to five and the budget balances (income 67 against expenses 66). The treasury has gone into the land: the silver mines of Qusanṭīna, the farms of Úbeda, and a Great Madrasa rising at Ishbīliyya. Sunnīs and Catholics are exactly even, 308,000 each. The Mamlūk alliance of 1349 is no longer in force",
+  "data": {
+   "treasury": 177,
+   "income": 67.4,
+   "expenses": 66.0,
+   "regiments": 5,
+   "construction": {
+    "great_madrasa": "Ishbīliyya (79%)",
+    "silver_mines": "Qusanṭīna",
+    "farmland": "Úbeda"
+   },
+   "religions": {
+    "Sunni": 308000,
+    "Catholic": 308000,
+    "Jewish": 42000
+   },
+   "straitInfluence": 2.8,
+   "mamlukAlliance": "lapsed between 5 April and 6 November 1366"
+  },
+  "source": "save of 6 November 1366"
  }
 ]

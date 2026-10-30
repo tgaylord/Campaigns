@@ -492,13 +492,15 @@
   "father": "ismail-i",
   "mother": "alwa",
   "female": true,
-  "roles": [],
+  "roles": [
+   "in the dīwān"
+  ],
   "stats": {
    "adm": 48.0,
    "dip": 54.0,
    "mil": 61.0
   },
-  "note": "Married into the Karasids of Anatolia (royal marriage of 2 August 1353)."
+  "note": "Married into the Karasids of Anatolia (royal marriage of 2 August 1353). Married three times. Back at the court of Gharnāṭa, she took a seat in the dīwān on 10 April 1366, in place of Khālid ibn Yaḥyā, and was set to integrating the new lands (save of 6 November 1366)."
  },
  {
   "id": "ismail-ibn-ismail",
@@ -664,7 +666,7 @@
   "traits": [
    "architect"
   ],
-  "note": "Son of Yaḥyā Raḥḥū and Qamar, the mother of Ismāʿīl ibn Ismāʿīl: born into the Raḥḥū house on 30 December 1342. Took his seat in the dīwān on 2 April 1359, at sixteen, after Ismāʿīl ibn Ismāʿīl left for the Aydınid court; set to promoting Andalusī culture. One of the ablest men at court (80/85/78), an architect."
+  "note": "Son of Yaḥyā Raḥḥū and Qamar, the mother of Ismāʿīl ibn Ismāʿīl: born into the Raḥḥū house on 30 December 1342. Took his seat in the dīwān on 2 April 1359, at sixteen, after Ismāʿīl ibn Ismāʿīl left for the Aydınid court; set to promoting Andalusī culture. One of the ablest men at court (80/85/78), an architect. Left the dīwān on 10 April 1366, when Maryam bint Ismāʿīl took his seat."
  },
  {
   "id": "alfonso-xi",
@@ -786,7 +788,7 @@
    "conqueror",
    "prodigy"
   ],
-  "note": "First son of Yūsuf I and Sayyida of Fezzan, born 18 January 1348 in the second year of the war with the three crowns. Betrothed on 19 January 1351 to Aiman, daughter of the Mamluk Sultan. The same winter the Chancellor reported him a Prodigy: a child predestined, the court said, to leave his name in the history books. His father brought the finest tutors of the Islamic world to Gharnāṭa for him, several Christians among them. Succeeded his father on 1 August 1363 at fifteen, under the regency of Naṣr al-Istijjī until he came of age on 18 January 1364. At his accession his abilities stood at 100/69/100, the prodigy fulfilled. His accession was not clean. Naṣr died on the very day the regency ended, of 'sickness' as the court gave out (a hunting accident, the game says), and Saʿd then married Naṣr's widow Duʿāʾ, his father's Marīnid widow and minister. He began his personal rule with two wives, Aiman the Mamlūk and Duʿāʾ the Marīnid. He knocked Portugal out of the War of Independence on 11 September 1364 and took its south, and by 1365 the court called him Conqueror. His first child, Umm al-Fatḥ, was born to Aiman on 13 December 1364.",
+  "note": "First son of Yūsuf I and Sayyida of Fezzan, born 18 January 1348 in the second year of the war with the three crowns. Betrothed on 19 January 1351 to Aiman, daughter of the Mamluk Sultan. The same winter the Chancellor reported him a Prodigy: a child predestined, the court said, to leave his name in the history books. His father brought the finest tutors of the Islamic world to Gharnāṭa for him, several Christians among them. Succeeded his father on 1 August 1363 at fifteen, under the regency of Naṣr al-Istijjī until he came of age on 18 January 1364. At his accession his abilities stood at 100/69/100, the prodigy fulfilled. His accession was not clean. Naṣr died on the very day the regency ended, of 'sickness' as the court gave out (a hunting accident, the game says), and Saʿd then married Naṣr's widow Duʿāʾ, his father's Marīnid widow and minister. He began his personal rule with two wives, Aiman the Mamlūk and Duʿāʾ the Marīnid. He knocked Portugal out of the War of Independence on 11 September 1364 and took its south, and by 1365 the court called him Conqueror. His first child, Umm al-Fatḥ, was born to Aiman on 13 December 1364. His son and heir Ismāʿīl was born to Duʿāʾ on 8 March 1366. He won the War of Independence on 5 April 1366.",
   "reigns": [
    {
     "from": "1363-08-01",
@@ -813,7 +815,7 @@
   "dynasty": "Marīnid",
   "female": true,
   "roles": [],
-  "note": "A princess of the Marīnid house of Fās, betrothed to Granada on 18 January 1348 and married to Yūsuf I about 12 August 1354: the one Marīnid bond that outlived Morocco's annulment of its treaties with Granada in 1351. The most capable of the amir's wives, she took Yaḥyā Raḥḥū's seat in the dīwān about 10 March 1355, after his death, under the Powerful Harem law that let women sit in the cabinet. By August 1358 she was widely praised for bringing fresh ideas and practices to the court (the game's 'Foreign Wisdom'), to the nobility's displeasure. Mother of Yūsuf's son Muḥammad (1356–1358). Widowed on 1 August 1363, she married the regent Naṣr al-Istijjī within days. Widowed again a few days after 18 January 1364, when Naṣr died of 'sickness', she then married the young Sultan Saʿd, her late husband Yūsuf's son. That made her his second wife, beside Aiman the Mamlūk.",
+  "note": "A princess of the Marīnid house of Fās, betrothed to Granada on 18 January 1348 and married to Yūsuf I about 12 August 1354: the one Marīnid bond that outlived Morocco's annulment of its treaties with Granada in 1351. The most capable of the amir's wives, she took Yaḥyā Raḥḥū's seat in the dīwān about 10 March 1355, after his death, under the Powerful Harem law that let women sit in the cabinet. By August 1358 she was widely praised for bringing fresh ideas and practices to the court (the game's 'Foreign Wisdom'), to the nobility's displeasure. Mother of Yūsuf's son Muḥammad (1356–1358). Widowed on 1 August 1363, she married the regent Naṣr al-Istijjī within days. Widowed again a few days after 18 January 1364, when Naṣr died of 'sickness', she then married the young Sultan Saʿd, her late husband Yūsuf's son. That made her his second wife, beside Aiman the Mamlūk. Mother of Saʿd's son and heir Ismāʿīl (born 8 March 1366).",
   "born": "1338-08-10",
   "gameId": 24887
  },
@@ -905,13 +907,11 @@
   "father": "yusuf-i",
   "mother": "sayyida-of-fezzan",
   "female": false,
-  "roles": [
-   "heir"
-  ],
+  "roles": [],
   "traits": [
    "child_gallant"
   ],
-  "note": "Heir to his half-brother Saʿd while Saʿd has no son (save of 11 September 1364)."
+  "note": "Heir to his half-brother Saʿd until Saʿd's son Ismāʿīl was born on 8 March 1366 (saves of 11 September 1364 and 6 November 1366)."
  },
  {
   "id": "ali-ibn-yusuf",
@@ -1058,5 +1058,39 @@
   "roles": [],
   "traits": [],
   "note": "First child of Sultan Saʿd, born to Aiman the Mamlūk three months after the Portuguese peace. She shares her name, 'mother of victory', with her aunt, Yūsuf I's youngest daughter."
+ },
+ {
+  "id": "ismail-ibn-saad",
+  "name": "Ismāʿīl ibn Saʿd",
+  "nameArabic": "إسماعيل بن سعد",
+  "nameGame": "Ismail",
+  "gameId": 16803514,
+  "dynasty": "Naṣrid",
+  "born": "1366-03-08",
+  "father": "saad-ibn-yusuf",
+  "mother": "dua-marinid",
+  "roles": [
+   "heir"
+  ],
+  "traits": [],
+  "note": "Son and heir of Sultan Saʿd, born to Duʿāʾ the Marīnid on 8 March 1366, a month before the Peace of Independence."
+ },
+ {
+  "id": "rodrigo-of-silves",
+  "name": "Rodrigo of Silves",
+  "nameGame": "Roderick",
+  "gameId": 16791515,
+  "dynasty": "of Silves",
+  "born": "1332-10-22",
+  "roles": [
+   "ruler of the Ṭāʾifa of al-Gharb"
+  ],
+  "stats": {
+   "adm": 68,
+   "dip": 58,
+   "mil": 88
+  },
+  "traits": [],
+  "note": "A Portuguese lord, now a Muslim, set over the Ṭāʾifa of al-Gharb when Granada released the Portuguese south as its vassal on 13 April 1366 (save of 6 November 1366)."
  }
 ]
