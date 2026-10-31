@@ -438,5 +438,106 @@
    ]
   },
   "source": "Trent's screenshots of the event (14 September 1370)"
+ },
+ {
+  "id": "1370-09-14-ismail-marries",
+  "date": "1370-09-14",
+  "type": "marriage",
+  "people": [
+   "ismail-ibn-yusuf",
+   "hippolyte-of-villa-di-chiesa"
+  ],
+  "title": "The day the Strait is won, the sultan's brother Ismāʿīl ibn Yūsuf, sixteen, is married to Hippolyte of Villa di Chiesa, eighteen, a Sunnī Sardinian, daughter of Xavier, lord of Cagliari, a vassal of Tūnis. The old royal marriage of 1354 has lapsed, and this one takes its place",
+  "data": {
+   "with": "CAG",
+   "overlordOfBride": "TUN",
+   "bride": "Hippolyte (game name), born 1352, Sardinian culture, Sunni",
+   "replaces": "the royal marriage with AAA43 of 1 March 1354"
+  },
+  "source": "save of 1 November 1370"
+ },
+ {
+  "id": "1370-09-20-murcia-annexation",
+  "date": "1370-09-20",
+  "type": "diplomacy",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "The sultan begins to absorb the Ṭāʾifa of Mursiyya into the realm. The annexation runs at 1.4 a month and stands at 2.8 on 1 November. Qashtāla takes a claim to prevent it, and Mursiyya one to resist it",
+  "data": {
+   "target": "MUC",
+   "monthly": 1.4039,
+   "progress": 2.80491,
+   "counterClaims": {
+    "CAS": "cb_prevent_annexation",
+    "MUC": "cb_resist_annexation"
+   }
+  },
+  "source": "save of 1 November 1370"
+ },
+ {
+  "id": "1370-09-26-reconquest-claim",
+  "date": "1370-09-26",
+  "type": "diplomacy",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "The dīwān begins to draw up the claim for the Reconquest of Iberia against Qashtāla, the war goal the victory in the Strait opened. By 1 November it is 44% made",
+  "data": {
+   "cb": "cb_reconquer_iberia",
+   "name": "Reconquest of Iberia",
+   "target": "CAS",
+   "progress": 43.57,
+   "speed": 10,
+   "unlockedBy": "the variable can_reconquer_iberia, set by the outcome of the Battle for the Strait (Across the Pillars)"
+  },
+  "source": "save of 1 November 1370"
+ },
+ {
+  "id": "1370-10-01-maryam-culture",
+  "date": "1370-10-01",
+  "type": "appointment",
+  "people": [
+   "maryam-bint-ismail",
+   "dua-marinid"
+  ],
+  "title": "Maryam bint Ismāʿīl leaves the integration of the new lands and joins Duʿā in promoting Andalusī culture: both seats of the dīwān now work for the Call",
+  "data": {
+   "from": "integrate_province",
+   "to": "promote_culture"
+  },
+  "source": "save of 1 November 1370"
+ },
+ {
+  "id": "1370-11-01-state",
+  "date": "1370-11-01",
+  "type": "estate_change",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "Seven weeks after the peace the mercenaries are paid off: expenses fall from 144 a month to 71, against an income of 73, and the treasury holds 156. The seven estate loans are still owed. Granada has opened its granaries to Egypt and the three ṭāʾifas, and rises to 12th in the world",
+  "data": {
+   "income": 72.9,
+   "expenses": 71.1,
+   "treasury": 156.4,
+   "mercenaryCompanies": {
+    "1370-09-13": 3,
+    "1370-11-01": 0
+   },
+   "loans": 7,
+   "foodAccess": {
+    "MAM": "1370-09-23",
+    "VAL": "1370-10-12",
+    "ALV": "1370-10-13",
+    "MUC": "1370-10-14"
+   },
+   "rank": [
+    12,
+    31
+   ],
+   "world": "Morocco rises to 10th (37 points); Egypt and Tlemcen have stood down the hosts raised for the war (Egypt from 60,600 men under arms to 1,700, Tlemcen from 11,300 to 30)",
+   "gameVersion": "1.4.6"
+  },
+  "source": "save of 1 November 1370"
  }
 ]

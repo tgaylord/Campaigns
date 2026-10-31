@@ -918,7 +918,7 @@
   "traits": [
    "child_gallant"
   ],
-  "note": "Heir to his half-brother Saʿd until Saʿd's son Ismāʿīl was born on 8 March 1366 (saves of 11 September 1364 and 6 November 1366)."
+  "note": "Heir to his half-brother Saʿd until Saʿd's son Ismāʿīl was born on 8 March 1366 (saves of 11 September 1364 and 6 November 1366). Married Hippolyte of Villa di Chiesa, a Sardinian of Cagliari, on 14 September 1370."
  },
  {
   "id": "ali-ibn-yusuf",
@@ -1394,5 +1394,24 @@
    "naive"
   ],
   "note": "Pope from 1 November 1367, sitting at Avignon. Castile's one ally in 1370."
+ },
+ {
+  "id": "hippolyte-of-villa-di-chiesa",
+  "name": "Hippolyte of Villa di Chiesa",
+  "nameGame": "Hippolyte",
+  "gameId": 39896,
+  "female": true,
+  "dynasty": "Villa di Chiesa",
+  "born": "1352-06-20",
+  "roles": [
+   "wife of Ismāʿīl ibn Yūsuf"
+  ],
+  "stats": {
+   "adm": 76,
+   "dip": 32,
+   "mil": 36
+  },
+  "traits": [],
+  "note": "Daughter of Xavier, lord of Cagliari in Sardinia, a vassal of Tūnis; Sardinian by culture and Sunnī by faith. Married to the sultan's brother Ismāʿīl on 14 September 1370 (save of 1 November 1370)."
  }
 ]
