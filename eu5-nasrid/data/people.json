@@ -1216,7 +1216,7 @@
   "traits": [
    "worldly"
   ],
-  "note": "King of Castile from his father's death on 29 March 1366, and of Portugal from his mother's on 4 October 1367: the two crowns in a personal union, each keeping its own government. In September 1370 he had no army in the field (save of 13 September 1370)."
+  "note": "King of Castile from his father's death on 29 March 1366, and of Portugal from his mother's on 4 October 1367: the two crowns in a personal union, each keeping its own government. In September 1370 he had no army in the field (save of 13 September 1370). When the union broke in 1389 he kept Portugal. In the war of 796 he stood with Castile, and at the peace of 22 June 1395 he gave up Lisbon and 19 other towns to al-Andalus (save of 22 June 1395)."
  },
  {
   "id": "fernando-of-castile",
@@ -1696,6 +1696,27 @@
   },
   "traits": [],
   "note": "An Ottoman princess, Turkish by culture, married in May 1391 to the crown prince Ismāʿīl ibn Saʿd as his second wife. Mother of Saʿd (born 17 June 1392) and Aḥmad (born 21 October 1393) (save of 2 January 1394)."
+ },
+ {
+  "id": "pedro-of-castile",
+  "name": "Pedro of Castile",
+  "nameGame": "Peter",
+  "gameId": 58799,
+  "dynasty": "Castilian royal house",
+  "born": "1370-12-03",
+  "roles": [
+   "king of Castile"
+  ],
+  "stats": {
+   "adm": 44,
+   "dip": 51,
+   "mil": 61
+  },
+  "traits": [
+   "stubborn",
+   "drunkard"
+  ],
+  "note": "Son of King Fernando, king of Castile from his father's death on 6 January 1394, two months before the Emperor's declaration. He lost the war of 796 and on 22 June 1395 surrendered 51 towns, Madrid, Salamanca, Ávila and Cuenca among them, with reparations for ten years (saves of 4 March 1394 and 22 June 1395)."
  },
  {
   "id": "agustin-arce",

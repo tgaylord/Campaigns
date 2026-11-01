@@ -32,6 +32,61 @@
   "source": "Trent's account and battle breakdown, 4 February 1395"
  },
  {
+  "id": "1395-03-17-battle-berlengas",
+  "date": "1395-03-17",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "war-of-796"
+  ],
+  "title": "Off the Berlengas islands the Castilian squadron, 10 sail, attacks the Valencian fleet of 12 and sinks four without loss",
+  "data": {
+   "result": "allied defeat",
+   "naval": true,
+   "ours": {
+    "Valencia": 12
+   },
+   "oursTotal": 12,
+   "oursLost": 4,
+   "theirs": {
+    "Castile": 10
+   },
+   "theirsTotal": 10,
+   "theirsLost": 0,
+   "location": "the Berlengas islands, off Portugal",
+   "side": "Castile attacking",
+   "units": "ships"
+  },
+  "source": "save of 22 June 1395 (the war's battle list)"
+ },
+ {
+  "id": "1395-05-24-battle-montalcino",
+  "date": "1395-05-24",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "war-of-796"
+  ],
+  "title": "At Montalcino in Tuscany a Mamlūk detachment of 1,200 attacks a papal and Sienese army of 9,900 and is destroyed, 1,109 lost for 89",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Mamluks": 1195
+   },
+   "oursTotal": 1195,
+   "oursLost": 1109,
+   "theirs": {
+    "Papal States and Siena": 9871
+   },
+   "theirsTotal": 9871,
+   "theirsLost": 89,
+   "location": "Montalcino, Tuscany",
+   "side": "the Mamlūks attacking"
+  },
+  "source": "save of 22 June 1395 (the war's battle list)"
+ },
+ {
   "id": "1395-06-18-battle-portalegre",
   "date": "1395-06-18",
   "type": "battle",
@@ -109,5 +164,171 @@
    "alsoUnderWay": "explorations being prepared to the Canary Islands and southern Macaronesia (Trent's screen)"
   },
   "source": "Trent's account and battle screens, 31 May to 18 June 1395"
+ },
+ {
+  "id": "1395-06-22-peace-castile-portugal",
+  "date": "1395-06-22",
+  "type": "peace",
+  "people": [
+   "saad-ibn-yusuf",
+   "pedro-of-castile",
+   "jeronimo-of-castile"
+  ],
+  "wars": [
+   "war-of-796"
+  ],
+  "title": "Peace with Castile and Portugal. Four days after Portalegre, with the war score at a hundred, King Pedro of Castile surrenders, and King Jerónimo of Portugal must follow him. Castile gives up 51 towns, from Salamanca, Ávila and Ciudad Rodrigo in the west through Madrid, Alcalá and Guadalajara to Cuenca, Molina and Requena in the east, with the Cáceres and Plasencia country of upper Extremadura; Portugal gives up 20, Lisbon, Setúbal, Santarém and Évora among them, all the land south of the Tagus mouth and the Alentejo. Castile pays reparations for ten years. All 71 towns pass directly to the crown; the realm grows from 118 towns to 189 and from 1,291,000 people to 2,334,000",
+  "data": {
+   "with": [
+    "CAS",
+    "POR"
+   ],
+   "fromCastile": [
+    "Salamanca",
+    "Arévalo",
+    "Ávila",
+    "Villatoro",
+    "Ledesma",
+    "Buitrago del Lozoya",
+    "Madrid",
+    "Yecla de Yeltes",
+    "Alba de Tormes",
+    "Matilla de Caños",
+    "Molina de Aragón",
+    "Ciudad Rodrigo",
+    "Jaraicejo",
+    "Huete",
+    "Las Navas",
+    "San Felices",
+    "Coria",
+    "La Adrada",
+    "Valencia de Alcántara",
+    "Béjar",
+    "Piedrahíta",
+    "Cañete",
+    "San Clemente",
+    "Guadalajara",
+    "Pareja",
+    "Torralba",
+    "Galisteo",
+    "Valverde",
+    "Cáceres",
+    "Alcalá de Henares",
+    "Maqueda",
+    "Cobeta",
+    "Cuenca",
+    "El Escorial",
+    "Brihuega",
+    "Plasencia",
+    "Requena",
+    "Zorita",
+    "Colmenar",
+    "Iniesta",
+    "Moya",
+    "Sigüenza",
+    "Brozas",
+    "Alarcón",
+    "Beteta",
+    "Granadilla",
+    "Arroyo del Fresno",
+    "Alcántara",
+    "Oropesa",
+    "Jorquera",
+    "Belmonte"
+   ],
+   "fromPortugal": [
+    "Lisbon",
+    "Torres Vedras",
+    "Setúbal",
+    "Alcobaça",
+    "Alcácer do Sal",
+    "Tomar",
+    "Avis",
+    "Salvaterra",
+    "Santarém",
+    "Évora",
+    "Torres Novas",
+    "Mora",
+    "Montemor",
+    "Ponte de Sor",
+    "Elvas",
+    "Crato",
+    "Vila Viçosa",
+    "Portalegre",
+    "Estremoz",
+    "Portel"
+   ],
+   "populationToAlAndalus": 1042600,
+   "cededPeople": {
+    "from Castile": {
+     "Castilian": 486200,
+     "Leonese": 215000,
+     "Sephardi": 8300,
+     "Catholic": 704100,
+     "Jewish": 7800,
+     "total": 711900
+    },
+    "from Portugal": {
+     "Portuguese": 297300,
+     "Andalusi": 18700,
+     "Sephardi": 9600,
+     "Leonese": 4700,
+     "Catholic": 321100,
+     "Jewish": 9500,
+     "total": 330700
+    }
+   },
+   "reparations": "Castile pays war reparations to al-Andalus until 22 June 1405",
+   "warScore": 100,
+   "truces": "with Castile, Portugal, the Papal States, Faenza, Siena and Andorra; the save records the last war with each as 22 June 1395 at +100%",
+   "castile": {
+    "towns": [
+     159,
+     108
+    ],
+    "king": "Pedro (born 1370), stubborn and a drunkard by the game's traits"
+   },
+   "portugal": {
+    "towns": [
+     54,
+     34
+    ],
+    "king": "Jerónimo (born 1343), king of Portugal since 1367 and of Castile until the split of 1389",
+    "note": "the save still gives Lisbon as Portugal's capital on the day of the peace"
+   },
+   "realm": {
+    "towns": [
+     118,
+     189
+    ],
+    "population": [
+     1291477,
+     2333984
+    ],
+    "populationAtDeclaration": 1438319,
+    "catholic": 1678186,
+    "sunni": 532662,
+    "jewish": 122309,
+    "castilian": 1106751,
+    "andalusi": 510415,
+    "portuguese": 297822,
+    "leonese": 286212
+   },
+   "rank": {
+    "before": 9,
+    "after": 12,
+    "note": "the game's great-power ladder at the declaration and the day after the peace (47 points, then 40)"
+   },
+   "battleDead": {
+    "ourSide": 19128,
+    "theirSide": 32085,
+    "note": "losses in the war's twelve land battles from the save's battle list, ours with the ṭāʾifas, Morocco and the Mamlūks (Italy included); attrition, sieges and the sea fights not counted"
+   },
+   "treasury": [
+    129,
+    235
+   ]
+  },
+  "source": "saves of 22 June 1395 before and after the peace; Trent's account"
  }
 ]

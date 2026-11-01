@@ -534,7 +534,7 @@
   "name": "The War of 796",
   "gameName": "Reconquest of Iberia",
   "start": "1394-03-04",
-  "end": null,
+  "end": "1395-06-22",
   "goal": "The Reconquest of Iberia against Castile (cb_reconquer_iberia, ready from 1 January 1394)",
   "allies": [
    "Aragon",
@@ -553,8 +553,8 @@
    "Andorra"
   ],
   "involvement": "belligerent",
-  "note": "On 4 March 1394 (1 Jumādā al-Ūlā 796) al-Andalus declared war on Castile for the third time, a year after the truce of 1378 ran out. Castile had broken its union with Portugal in 1389, though the two stayed allied, and its king Fernando had died on 6 January; his son Pedro, twenty-three, faced the war. Castile, Portugal and Andorra had formed a coalition against al-Andalus in 1393. Portugal, the Papal States with Faenza and Siena, and Andorra joined Castile; the four ṭāʾifas, Morocco and its vassals, and the Mamlūks and theirs joined al-Andalus. At the declaration al-Andalus had 4,900 regulars and 16 ships; Castile 750 men and 19 ships, Portugal 1,550 and 7, Rome 1,750 and 14; Morocco 1,900 and 30 ships, the Mamlūks 4,050 (save of 4 March 1394; Trent's account). Castile's main host of some 24,000 fell first on the small ṭāʾifa armies around Sigüenza in August 1394. The Emperor's 17,650 chased it north through August and September, and on 12 October cut off its pursuit of an Aragonese army at Pamplona and beat it, 2,441 of theirs for 1,450 of ours (+5); Castile retreated in haste, and the war stood at +37% (Trent's account and screens). The Castilian host came back south in November, and on 5–14 December 1394 the Emperor caught it at Ejea de los Caballeros on unfavourable ground. Against Agustín Arce, Grand Master of Alcántara, he won anyway: 10,808 Castilians lost to 4,664 of ours (+20), and the war stood at +64% (Trent's account and battle screens). On 4 February 1395, 897 Aragonese riders caught the 10,886 survivors of Ejea at Peñafiel on the Duero and destroyed them, 10,564 lost without a single Aragonese casualty (+14). Portugal made its stand at Portalegre from 31 May 1395; on 18 June it broke, 7,087 lost to 3,744 of ours (+14), and the war score stood at +100% (Trent's account and battle screens).",
-  "outcome": null,
+  "note": "On 4 March 1394 (1 Jumādā al-Ūlā 796) al-Andalus declared war on Castile for the third time, a year after the truce of 1378 ran out. Castile had broken its union with Portugal in 1389, though the two stayed allied, and its king Fernando had died on 6 January; his son Pedro, twenty-three, faced the war. Castile, Portugal and Andorra had formed a coalition against al-Andalus in 1393. Portugal, the Papal States with Faenza and Siena, and Andorra joined Castile; the four ṭāʾifas, Morocco and its vassals, and the Mamlūks and theirs joined al-Andalus. At the declaration al-Andalus had 4,900 regulars and 16 ships; Castile 750 men and 19 ships, Portugal 1,550 and 7, Rome 1,750 and 14; Morocco 1,900 and 30 ships, the Mamlūks 4,050 (save of 4 March 1394; Trent's account). Castile's main host of some 24,000 fell first on the small ṭāʾifa armies around Sigüenza in August 1394. The Emperor's 17,650 chased it north through August and September, and on 12 October cut off its pursuit of an Aragonese army at Pamplona and beat it, 2,441 of theirs for 1,450 of ours (+5); Castile retreated in haste, and the war stood at +37% (Trent's account and screens). The Castilian host came back south in November, and on 5–14 December 1394 the Emperor caught it at Ejea de los Caballeros on unfavourable ground. Against Agustín Arce, Grand Master of Alcántara, he won anyway: 10,808 Castilians lost to 4,664 of ours (+20), and the war stood at +64% (Trent's account and battle screens). On 4 February 1395, 897 Aragonese riders caught the 10,886 survivors of Ejea at Peñafiel on the Duero and destroyed them, 10,564 lost without a single Aragonese casualty (+14). Portugal made its stand at Portalegre from 31 May 1395; on 18 June it broke, 7,087 lost to 3,744 of ours (+14), and the war score stood at +100% (Trent's account and battle screens). On 22 June 1395 (3 Ramaḍān 797) King Pedro surrendered, and Portugal was made to follow (saves of 22 June 1395).",
+  "outcome": "Castile gave up 51 towns, Madrid, Salamanca, Ávila, Cuenca and Cáceres among them, and paid reparations for ten years; Portugal gave up 20, Lisbon, Setúbal, Santarém and Évora among them (peace of 22 June 1395, war score +100%).",
   "score": [
    {
     "date": "1394-03-04",
@@ -594,6 +594,10 @@
    },
    {
     "date": "1395-06-18",
+    "value": 100
+   },
+   {
+    "date": "1395-06-22",
     "value": 100
    }
   ]

@@ -1028,8 +1028,14 @@
   "nameGame": "Lisbon",
   "kind": "location",
   "nameArabic": "الأشبونة",
-  "note": "Lisbon, capital of Portugal. The game name is from the base localization.",
-  "major": true
+  "note": "Lisbon at the mouth of the Tagus, capital of Portugal until the peace of 1395, when it passed to al-Andalus. The game name is from the base localization.",
+  "major": true,
+  "held": [
+   {
+    "from": "1395-06-22",
+    "to": null
+   }
+  ]
  },
  {
   "id": "tulaytula",
@@ -1140,5 +1146,50 @@
   "kind": "location",
   "nameArabic": "بنبلونة",
   "note": "Pamplona, the old capital of Navarre under the western Pyrenees, held by Castile in 1394. The game name is from the base localization."
+ },
+ {
+  "id": "majrit",
+  "key": "madrid",
+  "name": "Majrīṭ",
+  "nameGame": "Madrid",
+  "kind": "location",
+  "nameArabic": "مجريط",
+  "note": "Madrid, the fortress the amīr Muḥammad I built on the Manzanares in the ninth century to guard the road to Ṭulayṭula; taken from Castile at the peace of 1395. The game name is from the base localization."
+ },
+ {
+  "id": "shalamanka",
+  "key": "salamanca",
+  "name": "Shalamanka",
+  "nameGame": "Salamanca",
+  "kind": "location",
+  "nameArabic": "شلمنقة",
+  "note": "Salamanca on the Tormes, the largest of the towns taken from Castile at the peace of 1395. The game name is from the base localization."
+ },
+ {
+  "id": "qunka",
+  "key": "cuenca",
+  "name": "Qūnka",
+  "nameGame": "Cuenca",
+  "kind": "location",
+  "nameArabic": "قونكة",
+  "note": "Cuenca above its gorges, a fortress of the Upper March under the caliphs; taken from Castile at the peace of 1395. The game name is from the base localization."
+ },
+ {
+  "id": "yabura",
+  "key": "evora",
+  "name": "Yābura",
+  "nameGame": "Évora",
+  "kind": "location",
+  "nameArabic": "يابرة",
+  "note": "Évora in the Alentejo, taken from Portugal at the peace of 1395. The game name is from the base localization."
+ },
+ {
+  "id": "shantarin",
+  "key": "santarem",
+  "name": "Shantarīn",
+  "nameGame": "Santarém",
+  "kind": "location",
+  "nameArabic": "شنترين",
+  "note": "Santarém on the Tagus above Lisbon, taken from Portugal at the peace of 1395. The game name is from the base localization."
  }
 ]

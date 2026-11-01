@@ -100,24 +100,291 @@
   "source": "save of 4 March 1394; Trent's account"
  },
  {
+  "id": "1394-05-01-battle-mouths-rhone",
+  "date": "1394-05-01",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "war-of-796"
+  ],
+  "title": "At the mouths of the Rhône a papal squadron of 15 galleys sinks a lone Catalan ship",
+  "data": {
+   "result": "allied defeat",
+   "naval": true,
+   "ours": {
+    "Catalonia": 1
+   },
+   "oursTotal": 1,
+   "oursLost": 1,
+   "theirs": {
+    "Papal States": 15
+   },
+   "theirsTotal": 15,
+   "theirsLost": 0,
+   "location": "the mouths of the Rhône",
+   "side": "Papal States attacking",
+   "units": "ships"
+  },
+  "source": "save of 22 June 1395 (the war's battle list)"
+ },
+ {
+  "id": "1394-06-13-battle-mouths-rhone-ii",
+  "date": "1394-06-13",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "war-of-796"
+  ],
+  "title": "Six weeks later the Moroccan fleet, 72 sail, catches the same papal squadron at the mouths of the Rhône and sinks all 14 of its ships for the loss of four",
+  "data": {
+   "result": "allied victory",
+   "naval": true,
+   "ours": {
+    "Morocco and its vassals": 72
+   },
+   "oursTotal": 72,
+   "oursLost": 4,
+   "theirs": {
+    "Papal States": 14
+   },
+   "theirsTotal": 14,
+   "theirsLost": 14,
+   "location": "the mouths of the Rhône",
+   "side": "Morocco attacking",
+   "units": "ships"
+  },
+  "source": "save of 22 June 1395 (the war's battle list)"
+ },
+ {
+  "id": "1394-06-25-battle-gulf-talamone",
+  "date": "1394-06-25",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "war-of-796"
+  ],
+  "title": "In the gulf of Talamone a papal galley attacks three ships of Noto, the Sicilian state fighting on our side, and is driven off; Noto loses one",
+  "data": {
+   "result": "allied victory",
+   "naval": true,
+   "ours": {
+    "Noto": 3
+   },
+   "oursTotal": 3,
+   "oursLost": 1,
+   "theirs": {
+    "Papal States": 1
+   },
+   "theirsTotal": 1,
+   "theirsLost": 0,
+   "location": "the gulf of Talamone, Tuscany",
+   "side": "Papal States attacking",
+   "units": "ships"
+  },
+  "source": "save of 22 June 1395 (the war's battle list)"
+ },
+ {
+  "id": "1394-07-03-battle-atlantic",
+  "date": "1394-07-03",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "war-of-796"
+  ],
+  "title": "Out in the Atlantic a Castilian squadron of 11 falls on the Catalan fleet of 33 and sinks six without loss",
+  "data": {
+   "result": "allied defeat",
+   "naval": true,
+   "ours": {
+    "Catalonia": 33
+   },
+   "oursTotal": 33,
+   "oursLost": 6,
+   "theirs": {
+    "Castile": 11
+   },
+   "theirsTotal": 11,
+   "theirsLost": 0,
+   "location": "the north-eastern Atlantic, off Galicia",
+   "side": "Castile attacking",
+   "units": "ships"
+  },
+  "source": "save of 22 June 1395 (the war's battle list)"
+ },
+ {
+  "id": "1394-07-10-battle-gulf-policastro",
+  "date": "1394-07-10",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "war-of-796"
+  ],
+  "title": "In the gulf of Policastro a papal galley throws itself on the Moroccan fleet of 68 and is sunk",
+  "data": {
+   "result": "allied victory",
+   "naval": true,
+   "ours": {
+    "Morocco and its vassals": 68
+   },
+   "oursTotal": 68,
+   "oursLost": 0,
+   "theirs": {
+    "Papal States": 1
+   },
+   "theirsTotal": 1,
+   "theirsLost": 1,
+   "location": "the gulf of Policastro, Campania",
+   "side": "Papal States attacking",
+   "units": "ships"
+  },
+  "source": "save of 22 June 1395 (the war's battle list)"
+ },
+ {
+  "id": "1394-07-11-battle-george-bay",
+  "date": "1394-07-11",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "war-of-796"
+  ],
+  "title": "Off Māliṭa, in St George's Bay, eleven ships of Barqa sink a papal galley",
+  "data": {
+   "result": "allied victory",
+   "naval": true,
+   "ours": {
+    "Barqa": 11
+   },
+   "oursTotal": 11,
+   "oursLost": 0,
+   "theirs": {
+    "Papal States": 1
+   },
+   "theirsTotal": 1,
+   "theirsLost": 1,
+   "location": "St George's Bay, Malta",
+   "side": "Barqa attacking",
+   "units": "ships"
+  },
+  "source": "save of 22 June 1395 (the war's battle list)"
+ },
+ {
+  "id": "1394-07-14-battle-mouth-douro",
+  "date": "1394-07-14",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "war-of-796"
+  ],
+  "title": "At the mouth of the Douro the same Castilian squadron catches the Catalan fleet again, 29 sail, and sinks nine more without loss",
+  "data": {
+   "result": "allied defeat",
+   "naval": true,
+   "ours": {
+    "Catalonia": 29
+   },
+   "oursTotal": 29,
+   "oursLost": 9,
+   "theirs": {
+    "Castile": 11
+   },
+   "theirsTotal": 11,
+   "theirsLost": 0,
+   "location": "the mouth of the Douro",
+   "side": "Castile attacking",
+   "units": "ships"
+  },
+  "source": "save of 22 June 1395 (the war's battle list)"
+ },
+ {
   "id": "1394-08-siguenza",
   "date": "1394-08-09",
-  "type": "player_note",
+  "type": "battle",
   "people": [
    "alfons-de-borja"
   ],
   "wars": [
    "war-of-796"
   ],
-  "title": "The first battles. Castile's great army, some 24,300 men, comes down on the small armies of the ṭāʾifas around Sigüenza, beyond the Aragonese border: Aragon's 1,840 fall back, and Valencia's 1,740 are caught and engaged on 9 August",
+  "title": "The first battle. Castile's great army, some 24,300 men, comes down on the small armies of the ṭāʾifas around Sigüenza, beyond the Aragonese border. Aragon's 1,840 fall back; Valencia's army is caught on 9 August and by the next day it is gone, all 3,958 men lost for 140 Castilians",
   "data": {
-   "castile": "24,336 on 3 August, 24,208 on 9 August",
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Valencia": 3958
+   },
+   "oursTotal": 3958,
+   "oursLost": 3958,
+   "theirs": {
+    "Castile": 24336
+   },
+   "theirsTotal": 24336,
+   "theirsLost": 140,
+   "location": "Sigüenza",
+   "side": "Valencia attacking",
+   "castileOnScreens": "24,336 on 3 August, 24,208 on 9 August",
    "aragon": "1,840, retreating",
-   "valencia": "1,743, in battle on 9 August",
-   "warScore": 35,
-   "result": "not on Trent's screens"
+   "valenciaOnScreens": "1,743 on 9 August; the save's battle list counts 3,958 engaged by the end",
+   "warScore": 35
   },
-  "source": "Trent's screenshots of 3 and 9 August 1394"
+  "source": "Trent's screenshots of 3 and 9 August 1394; save of 22 June 1395 (the war's battle list)"
+ },
+ {
+  "id": "1394-08-14-algarve-armies",
+  "date": "1394-08-14",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "war-of-796"
+  ],
+  "title": "The Portuguese host of 15,550 comes down into the Alentejo and destroys the two small armies of the Ṭāʾifa of the Algarve, 692 men at Setúbal on 10 August and 2,167 at Montemor on the 14th, for 225 Portuguese",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Taifa of the Algarve": 2859
+   },
+   "oursTotal": 2859,
+   "oursLost": 2859,
+   "theirs": {
+    "Portugal": 15549
+   },
+   "theirsTotal": 15549,
+   "theirsLost": 225,
+   "location": "Setúbal and Montemor, Portugal",
+   "side": "the Algarve attacking",
+   "battles": {
+    "Setúbal, 10 August": "692 of the Algarve lost, no Portuguese",
+    "Montemor, 14 August": "2,167 of the Algarve lost, 225 Portuguese"
+   }
+  },
+  "source": "save of 22 June 1395 (the war's battle list)"
+ },
+ {
+  "id": "1394-08-18-battle-grosseto",
+  "date": "1394-08-18",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "war-of-796"
+  ],
+  "title": "In Tuscany a Sienese and papal army of 10,300 beats 1,370 men of Barqa at Grosseto, 899 of theirs lost for 471",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Barqa": 1372
+   },
+   "oursTotal": 1372,
+   "oursLost": 899,
+   "theirs": {
+    "Siena and the Papal States": 10303
+   },
+   "theirsTotal": 10303,
+   "theirsLost": 471,
+   "location": "Grosseto, Tuscany",
+   "side": "Siena attacking"
+  },
+  "source": "save of 22 June 1395 (the war's battle list)"
  },
  {
   "id": "1394-09-the-chase",
@@ -137,6 +404,116 @@
    "aragon": 1840
   },
   "source": "Trent's account and map screenshot, August–September 1394"
+ },
+ {
+  "id": "1394-09-02-battle-bay-setubal",
+  "date": "1394-09-02",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "war-of-796"
+  ],
+  "title": "In the bay of Setúbal a single Castilian ship attacks the joined fleets of Catalonia and the Algarve, 32 sail, and gets away; the allies lose one",
+  "data": {
+   "result": "allied victory",
+   "naval": true,
+   "ours": {
+    "Catalonia and the Algarve": 32
+   },
+   "oursTotal": 32,
+   "oursLost": 1,
+   "theirs": {
+    "Castile": 1
+   },
+   "theirsTotal": 1,
+   "theirsLost": 0,
+   "location": "the bay of Setúbal",
+   "side": "Castile attacking",
+   "units": "ships"
+  },
+  "source": "save of 22 June 1395 (the war's battle list)"
+ },
+ {
+  "id": "1394-09-07-battle-roncesvalles",
+  "date": "1394-09-07",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "war-of-796"
+  ],
+  "title": "At Roncesvalles in the Pyrenees the Catalan army of 7,070 wipes out Andorra's 158 men without loss",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Catalonia": 7072
+   },
+   "oursTotal": 7072,
+   "oursLost": 0,
+   "theirs": {
+    "Andorra": 158
+   },
+   "theirsTotal": 158,
+   "theirsLost": 158,
+   "location": "Roncesvalles, Navarre",
+   "side": "Catalonia attacking"
+  },
+  "source": "save of 22 June 1395 (the war's battle list)"
+ },
+ {
+  "id": "1394-09-11-battle-piombino",
+  "date": "1394-09-11",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "war-of-796"
+  ],
+  "title": "At Piombino the Sienese beat 470 men of Barqa again, 186 lost for 100",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Barqa": 472
+   },
+   "oursTotal": 472,
+   "oursLost": 186,
+   "theirs": {
+    "Siena": 1237
+   },
+   "theirsTotal": 1237,
+   "theirsLost": 100,
+   "location": "Piombino, Tuscany",
+   "side": "Siena attacking"
+  },
+  "source": "save of 22 June 1395 (the war's battle list)"
+ },
+ {
+  "id": "1394-09-18-battle-bay-setubal-ii",
+  "date": "1394-09-18",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "war-of-796"
+  ],
+  "title": "In the bay of Setúbal the Castilian squadron of 11 meets the Catalan fleet for the third time, now 19 sail, and sinks or takes 16 of them without loss. Of the 33 ships Catalonia sent out, three are left",
+  "data": {
+   "result": "allied defeat",
+   "naval": true,
+   "ours": {
+    "Catalonia": 19
+   },
+   "oursTotal": 19,
+   "oursLost": 16,
+   "theirs": {
+    "Castile": 11
+   },
+   "theirsTotal": 11,
+   "theirsLost": 0,
+   "location": "the bay of Setúbal",
+   "side": "Castile attacking",
+   "units": "ships"
+  },
+  "source": "save of 22 June 1395 (the war's battle list)"
  },
  {
   "id": "1394-10-12-battle-pamplona",
@@ -214,6 +591,33 @@
    }
   },
   "source": "Trent's account and battle screens, 9–12 October 1394"
+ },
+ {
+  "id": "1394-11-15-battle-grosseto-ii",
+  "date": "1394-11-15",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "war-of-796"
+  ],
+  "title": "At Grosseto the Sienese destroy the last 258 men of Barqa in Tuscany without loss",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Barqa": 258
+   },
+   "oursTotal": 258,
+   "oursLost": 258,
+   "theirs": {
+    "Siena": 1136
+   },
+   "theirsTotal": 1136,
+   "theirsLost": 0,
+   "location": "Grosseto, Tuscany",
+   "side": "Siena attacking"
+  },
+  "source": "save of 22 June 1395 (the war's battle list)"
  },
  {
   "id": "1394-11-17-return-from-the-north",
