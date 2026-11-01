@@ -1,7 +1,7 @@
 ---
 title: Of the Mansa's Merchants, and the Ships Sent into the Western Ocean
 date: 1392-02-21
-era: book-of-the-marches
+era: book-of-the-encircling-sea
 kind: chronicle
 people: [ismail-ibn-saad, khayr-al-din-al-jayyani, saad-ibn-yusuf]
 places: [ishbiliyya, jayyan, washqa]

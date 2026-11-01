@@ -134,5 +134,21 @@
    "outcome": "put off again by rebellion; the pilgrimage of 785 did not take place (Trent, May 1385)"
   },
   "source": "Trent's account, April 1383"
+ },
+ {
+  "id": "1383-06-17-ismail-admiral",
+  "date": "1383-06-17",
+  "type": "appointment",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "title": "The crown prince Ismāʿīl, seventeen, takes his first command, as admiral of the fleet. He holds it for three and a half years, until he takes the Ḥijāba seat in the dīwān in January 1387",
+  "data": {
+   "role": "admiral",
+   "from": "1383-06-17",
+   "to": "1387-01-22",
+   "note": "the date is the game's leader date for him in the save of 1 October 1387; he was not yet a commander in the save of 8 December 1382"
+  },
+  "source": "saves of 8 December 1382 and 1 October 1387; Trent's account"
  }
 ]

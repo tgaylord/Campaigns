@@ -330,5 +330,109 @@
    ]
   },
   "source": "saves of 22 June 1395 before and after the peace; Trent's account"
+ },
+ {
+  "id": "1395-06-22-fifteen-years-of-building",
+  "date": "1395-06-22",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf",
+   "ismail-ibn-saad"
+  ],
+  "title": "Fifteen years of building. In the 118 towns the crown held from December 1379 to the eve of the Peace of Ramaḍān, its buildings grew from 598 levels to 698: lumber mills from 9 to 22, eight new bog-iron smelters on the coast of Walba with eight charcoal burners to feed them, banking offices from 1 to 8, jewellers' guilds from 7 to 15, nine more marketplaces and three market warehouses at Ishbīliya, eleven hammams, cotton fields at Sharīsh, Baṭalyaws and Mursiyya, and two slave markets at Ishbīliya. The fleet grew from 4 ships to 16",
+  "data": {
+   "towns": 118,
+   "buildingLevels": [
+    598,
+    698
+   ],
+   "changes": {
+    "lumber mills": [
+     9,
+     22
+    ],
+    "Andalusī hammams": [
+     0,
+     11
+    ],
+    "marketplaces": [
+     32,
+     41
+    ],
+    "jewellers' guilds": [
+     7,
+     15
+    ],
+    "charcoal makers": [
+     1,
+     9
+    ],
+    "bog-iron smelters": [
+     0,
+     8
+    ],
+    "banking offices": [
+     1,
+     8
+    ],
+    "libraries": [
+     5,
+     11
+    ],
+    "cloth guilds": [
+     16,
+     21
+    ],
+    "tool guilds": [
+     22,
+     26
+    ],
+    "market warehouses": [
+     0,
+     3
+    ],
+    "madrasas": [
+     4,
+     7
+    ],
+    "fibre-crop (cotton) farms": [
+     0,
+     3
+    ],
+    "hospitals": [
+     3,
+     5
+    ],
+    "slave markets": [
+     0,
+     2
+    ],
+    "wharves": [
+     3,
+     4
+    ],
+    "the royal court, chancery and royal garden at Ishbīliya": [
+     0,
+     3
+    ]
+   },
+   "where": {
+    "lumber mills": "Ishbīliya, Istija, Qusanṭīna, Qarmūna, Sanlúcar la Mayor, Gharnāṭa and others",
+    "bog-iron smelters": "Qādis, Coria del Río, Labla, Walba, Ayamunt",
+    "banking offices": "Qurṭuba, Gharnāṭa, Ishbīliya, Mālaqa, Ṭulayṭula",
+    "hammams": "al-Mariyya, Ṭulayṭula, Baṭalyaws, Sharīsh, Jayyān, Ishbīliya and others"
+   },
+   "roads": "road segments touching the realm's towns: 45 in December 1379, 53 in June 1395",
+   "ships": [
+    4,
+    16
+   ],
+   "income": [
+    101.4,
+    145.1
+   ],
+   "note": "building levels counted from the saves of 2 December 1379 and 22 June 1395 (before the peace) over the same 118 towns; mines and the silver of Qusanṭīna are worked as the towns' raw materials, not buildings, and are not counted here"
+  },
+  "source": "saves of 2 December 1379 and 22 June 1395; Trent's account"
  }
 ]

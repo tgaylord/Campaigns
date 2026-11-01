@@ -1,7 +1,7 @@
 ---
 title: Of the Jamāʿa of 781, and the Court's Removal to Ishbīliya
 date: 1379-11-24
-era: book-of-the-call
+era: book-of-the-encircling-sea
 kind: chronicle
 people: [saad-ibn-yusuf]
 places: [gharnata, qurtuba, ishbiliyya, sharish, malaqa, batalyaws, tulaytula]
