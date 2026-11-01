@@ -11,7 +11,7 @@
    "qurtuba",
    "ishbiliyya"
   ],
-  "title": "The Jamāʿa of 1379 takes up the question of the capital. The expansion north has left Gharnāṭa isolated, a long ride from the frontier, and the court finds itself cut off from its slowly integrating lands. The old idea of a capital at Qurṭuba is raised again, and then a second proposal: invest in the sea, set the Catalan shipwrights, now the Emperor's subjects, to building a trading fleet, and move the capital to Ishbīliya, where its power would reach furthest",
+  "title": "The Jamāʿa of 1379 takes up the question of the capital. The expansion north has left Gharnāṭa isolated, a long ride from the frontier, and the court finds itself cut off from its slowly integrating lands. The old idea of a capital at Qurṭuba is raised again, and then a second proposal: invest in the sea, set the Catalan shipwrights, now the Emperor's subjects, to building a trading fleet, and move the capital to Ishbīliya, where its power would reach furthest. The assembly and the Emperor choose Ishbīliya",
   "data": {
    "assembly": "Jamāʿa of 1379",
    "proposals": {
@@ -19,7 +19,38 @@
     "Ishbīliya": "a capital on the river and the sea, with a trading fleet built by the Catalan shipwrights"
    },
    "why": "Gharnāṭa is far from the northern frontier and from the new lands; the court is decentralised from them",
-   "outcome": "under discussion (Trent's account)",
+   "outcome": "the assembly and the Emperor decide to move the capital to Ishbīliya by the end of the year (Trent's account)",
+   "date": "1379; the day awaits a save or screen"
+  },
+  "source": "Trent's account, 1379"
+ },
+ {
+  "id": "1379-roads-to-ishbiliya",
+  "date": "1379-01-01",
+  "type": "reform",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "ishbiliyya",
+   "sharish",
+   "malaqa",
+   "batalyaws",
+   "tulaytula",
+   "gharnata"
+  ],
+  "title": "Ishbīliya will be the capital by the year's end. To tie it into the realm the Emperor orders new roads at great cost, to Sharīsh and Mālaqa and north to Baṭalyaws and Ṭulayṭula, and borrows from the estates to pay for them",
+  "data": {
+   "newCapital": "Seville (Ishbīliya)",
+   "oldCapital": "Granada (Gharnāṭa)",
+   "by": "the end of 1379",
+   "roads": [
+    "Jerez (Sharīsh)",
+    "Málaga (Mālaqa)",
+    "Badajoz (Baṭalyaws)",
+    "Toledo (Ṭulayṭula)"
+   ],
+   "funding": "loans from the estates",
    "date": "1379; the day awaits a save or screen"
   },
   "source": "Trent's account, 1379"
