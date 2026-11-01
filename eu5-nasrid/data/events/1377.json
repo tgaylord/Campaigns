@@ -62,9 +62,13 @@
    "theirsTotal": 7402,
    "theirsLost": 5675,
    "location": "Zaragoza",
-   "warScore": 7.82
+   "warScore": 7.82,
+   "commanders": {
+    "al-Andalus": "the Emperor Saʿd (100/68/100)",
+    "Castile": "Alfonso Yáñez (84/63/47)"
+   }
   },
-  "source": "Trent's account and battle breakdown, 31 January 1377"
+  "source": "Trent's account and battle breakdown, 31 January 1377; save of 6 April 1378"
  },
  {
   "id": "1377-06-13-battle-calatayud",
@@ -142,9 +146,45 @@
     "warScore": 10,
     "treasury": 1060,
     "manpower": 165
+   },
+   "commanders": {
+    "al-Andalus": "the Emperor Saʿd (100/68/100)",
+    "Castile": "Alfonso Yáñez (84/63/47)"
    }
   },
-  "source": "Trent's account and battle screen, 13 June 1377"
+  "source": "Trent's account and battle screen, 13 June 1377; save of 6 April 1378"
+ },
+ {
+  "id": "1377-06-24-calatayud-remnant",
+  "date": "1377-06-24",
+  "type": "battle",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "qalat-ayyub"
+  ],
+  "wars": [
+   "war-of-the-aragonese-restoration"
+  ],
+  "title": "At Qalʿat Ayyūb the Emperor runs down the last 314 Castilians of Alfonso Yáñez's army, who had fallen on a handful of Algarvian stragglers there six days before",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "al-Andalus": 10511
+   },
+   "oursTotal": 10511,
+   "oursLost": 0,
+   "theirs": {
+    "Castile": 314
+   },
+   "theirsTotal": 314,
+   "theirsLost": 156,
+   "location": "Calatayud",
+   "side": "al-Andalus attacking"
+  },
+  "source": "save of 6 April 1378 (the war's battle list)"
  },
  {
   "id": "1377-09-30-morocco-joins",
@@ -166,5 +206,124 @@
    "alliance": "since 16 January 1376"
   },
   "source": "Trent's account, 30 September 1377"
+ },
+ {
+  "id": "1377-10-19-battle-cape-sao-vicente",
+  "date": "1377-10-19",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "war-of-the-aragonese-restoration"
+  ],
+  "title": "Three weeks after Fās enters the war, the Moroccan fleet, 18 sail under Abū Ḥammū, meets 5 Castilian ships off Cape São Vicente and sinks them all without loss. The Moors begin to clear a path through the sea",
+  "data": {
+   "result": "allied victory",
+   "naval": true,
+   "ours": {
+    "Morocco": 18
+   },
+   "oursTotal": 18,
+   "oursLost": 0,
+   "theirs": {
+    "Castile": 5
+   },
+   "theirsTotal": 5,
+   "theirsLost": 5,
+   "location": "Cape São Vicente",
+   "side": "Castile attacking",
+   "units": "ships",
+   "commanders": {
+    "Morocco": "Abū Ḥammū",
+    "Castile": "Félix Godoy"
+   }
+  },
+  "source": "save of 6 April 1378 (the war's battle list)"
+ },
+ {
+  "id": "1377-11-01-battle-coast-lazio",
+  "date": "1377-11-01",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "war-of-the-aragonese-restoration"
+  ],
+  "title": "Off the coast of Lazio two ships of Barqa, raiding toward Rome, are lost to two papal galleys",
+  "data": {
+   "result": "allied defeat",
+   "naval": true,
+   "ours": {
+    "Barqa": 2
+   },
+   "oursTotal": 2,
+   "oursLost": 2,
+   "theirs": {
+    "Papal States": 2
+   },
+   "theirsTotal": 2,
+   "theirsLost": 0,
+   "location": "the coast of Lazio",
+   "side": "Barqa attacking",
+   "units": "ships"
+  },
+  "source": "save of 6 April 1378 (the war's battle list)"
+ },
+ {
+  "id": "1377-11-04-battle-bay-setubal",
+  "date": "1377-11-04",
+  "type": "battle",
+  "people": [
+   "francesc-de-montsoriu"
+  ],
+  "wars": [
+   "war-of-the-aragonese-restoration"
+  ],
+  "title": "In the bay of Setúbal the Iberian fleets, 32 sail, sink the last ship of Catalonia",
+  "data": {
+   "result": "allied defeat",
+   "naval": true,
+   "ours": {
+    "Catalonia": 1
+   },
+   "oursTotal": 1,
+   "oursLost": 1,
+   "theirs": {
+    "Portugal": 23,
+    "Castile": 9
+   },
+   "theirsTotal": 32,
+   "theirsLost": 0,
+   "location": "the bay of Setúbal",
+   "side": "Castile attacking",
+   "units": "ships"
+  },
+  "source": "save of 6 April 1378 (the war's battle list)"
+ },
+ {
+  "id": "1377-11-22-battle-cape-mondego",
+  "date": "1377-11-22",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "war-of-the-aragonese-restoration"
+  ],
+  "title": "Off Cape Mondego the Portuguese fleet of 23 under Rafael Araújo sinks three ships of Tlemcen, Morocco's vassal",
+  "data": {
+   "result": "allied defeat",
+   "naval": true,
+   "ours": {
+    "Tlemcen": 3
+   },
+   "oursTotal": 3,
+   "oursLost": 3,
+   "theirs": {
+    "Portugal": 23
+   },
+   "theirsTotal": 23,
+   "theirsLost": 0,
+   "location": "Cape Mondego",
+   "side": "Portugal attacking",
+   "units": "ships"
+  },
+  "source": "save of 6 April 1378 (the war's battle list)"
  }
 ]
