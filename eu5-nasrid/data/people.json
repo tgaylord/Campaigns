@@ -493,15 +493,13 @@
   "father": "ismail-i",
   "mother": "alwa",
   "female": true,
-  "roles": [
-   "in the dīwān"
-  ],
+  "roles": [],
   "stats": {
    "adm": 48.0,
    "dip": 54.0,
    "mil": 61.0
   },
-  "note": "Married into the Karasids of Anatolia (royal marriage of 2 August 1353). Married three times. Back at the court of Gharnāṭa, she took a seat in the dīwān on 10 April 1366, in place of Khālid ibn Yaḥyā, and was set to integrating the new lands (save of 6 November 1366)."
+  "note": "Married into the Karasids of Anatolia (royal marriage of 2 August 1353). Married three times. Back at the court of Gharnāṭa, she took a seat in the dīwān on 10 April 1366, in place of Khālid ibn Yaḥyā, and was set to integrating the new lands (save of 6 November 1366). On 1 October 1370 she turned to promoting Andalusī culture beside Duʿā; by January 1373 she had left the dīwān, and the sultan's mother Sayyida of Fezzan held her seat."
  },
  {
   "id": "ismail-ibn-ismail",
@@ -553,7 +551,8 @@
   "born": "1328-10-27",
   "female": true,
   "roles": [
-   "wife of Yūsuf I"
+   "wife of Yūsuf I",
+   "in the dīwān"
   ],
   "stats": {
    "adm": 17,
@@ -563,7 +562,7 @@
   "traits": [
    "child_gregarious"
   ],
-  "note": "Daughter of the ruler of Fezzan, of the house of Murzuq. Betrothed to Yūsuf on 16 November 1337, aged nine. Her father's name is the game's (name_salmama); its proper form is unconfirmed. Married to Yūsuf I while the Jamāʿa of 1344 sat (Trent's account), a marriage that helped inspire the royal harem law of that October."
+  "note": "Daughter of the ruler of Fezzan, of the house of Murzuq. Betrothed to Yūsuf on 16 November 1337, aged nine. Her father's name is the game's (name_salmama); its proper form is unconfirmed. Married to Yūsuf I while the Jamāʿa of 1344 sat (Trent's account), a marriage that helped inspire the royal harem law of that October. Mother of Sultan Saʿd, Ismāʿīl and Jadīla. By January 1373 she sat in her son's dīwān, promoting Andalusī culture beside Duʿā (save of 16 January 1373)."
  },
  {
   "id": "gideon-ben-joshua",
@@ -670,7 +669,7 @@
    "architect",
    "hardy_warrior"
   ],
-  "note": "Son of Yaḥyā Raḥḥū and Qamar, the mother of Ismāʿīl ibn Ismāʿīl: born into the Raḥḥū house on 30 December 1342. Took his seat in the dīwān on 2 April 1359, at sixteen, after Ismāʿīl ibn Ismāʿīl left for the Aydınid court; set to promoting Andalusī culture. One of the ablest men at court (80/85/78), an architect. Left the dīwān on 10 April 1366, when Maryam bint Ismāʿīl took his seat. A general in the Second Marīnid War: he was thrown back before Cádiz on 26 June 1369, held the line at Antequera on 15 October and won at Almuñécar on 8 November (save of 18 November 1369). He went on to win at Adra, Málaga (twice), Jerez and Beja in 1369–1370, the general of the war's second half."
+  "note": "Son of Yaḥyā Raḥḥū and Qamar, the mother of Ismāʿīl ibn Ismāʿīl: born into the Raḥḥū house on 30 December 1342. Took his seat in the dīwān on 2 April 1359, at sixteen, after Ismāʿīl ibn Ismāʿīl left for the Aydınid court; set to promoting Andalusī culture. One of the ablest men at court (80/85/78), an architect. Left the dīwān on 10 April 1366, when Maryam bint Ismāʿīl took his seat. A general in the Second Marīnid War: he was thrown back before Cádiz on 26 June 1369, held the line at Antequera on 15 October and won at Almuñécar on 8 November (save of 18 November 1369). He went on to win at Adra, Málaga (twice), Jerez and Beja in 1369–1370, the general of the war's second half. By January 1373 married to Charlotte of Crato, a Sunnī Portuguese noblewoman."
  },
  {
   "id": "alfonso-xi",
@@ -868,7 +867,7 @@
   "mother": "shama-sahara",
   "gameId": 16790542,
   "roles": [],
-  "note": "Daughter of Faraj ibn Ismāʿīl and Shamʿa, born 28 March 1355 in Granada, about three months after her father had gone south to Ghana."
+  "note": "Daughter of Faraj ibn Ismāʿīl and Shamʿa, born 28 March 1355 in Granada, about three months after her father had gone south to Ghana. By January 1373 the second wife of her cousin Ismāʿīl ibn Yūsuf, to whom she bore Muḥammad on 16 November 1372."
  },
  {
   "id": "zineb-bint-faraj",
@@ -967,7 +966,8 @@
   "roles": [],
   "traits": [
    "child_rowdy"
-  ]
+  ],
+  "note": "Daughter of Yūsuf I and Sayyida of Fezzan, full sister of Sultan Saʿd. Betrothed on 3 April 1372 to Abū al-Faḍl, son and heir of Abū ʿInān Fāris of Fās (save of 16 January 1373)."
  },
  {
   "id": "maryam-bint-yusuf",
@@ -1413,5 +1413,90 @@
   },
   "traits": [],
   "note": "Daughter of Xavier, lord of Cagliari in Sardinia, a vassal of Tūnis; Sardinian by culture and Sunnī by faith. Married to the sultan's brother Ismāʿīl on 14 September 1370 (save of 1 November 1370)."
+ },
+ {
+  "id": "yusuf-ibn-saad",
+  "name": "Yūsuf ibn Saʿd",
+  "nameArabic": "يوسف بن سعد",
+  "nameGame": "Joseph",
+  "gameId": 59587,
+  "dynasty": "Naṣrid",
+  "born": "1371-10-15",
+  "father": "saad-ibn-yusuf",
+  "mother": "aiman-mamluk",
+  "roles": [],
+  "traits": [],
+  "note": "Son of Sultan Saʿd and Aiman the Mamlūk, born 15 October 1371, named for his grandfather Yūsuf I (save of 16 January 1373)."
+ },
+ {
+  "id": "yusuf-ibn-ismail",
+  "name": "Yūsuf ibn Ismāʿīl",
+  "nameArabic": "يوسف بن إسماعيل",
+  "nameGame": "Joseph",
+  "gameId": 16808225,
+  "dynasty": "Naṣrid",
+  "born": "1372-02-19",
+  "father": "ismail-ibn-yusuf",
+  "mother": "hippolyte-of-villa-di-chiesa",
+  "roles": [],
+  "traits": [],
+  "note": "Son of Ismāʿīl ibn Yūsuf and Hippolyte of Villa di Chiesa, born 19 February 1372 (save of 16 January 1373)."
+ },
+ {
+  "id": "muhammad-ibn-ismail-ibn-yusuf",
+  "name": "Muḥammad ibn Ismāʿīl ibn Yūsuf",
+  "nameArabic": "محمد بن إسماعيل بن يوسف",
+  "nameGame": "Muhammad",
+  "gameId": 60713,
+  "dynasty": "Naṣrid",
+  "born": "1372-11-16",
+  "father": "ismail-ibn-yusuf",
+  "mother": "aisha-bint-faraj",
+  "roles": [],
+  "traits": [],
+  "note": "Son of Ismāʿīl ibn Yūsuf and his cousin ʿĀʾisha bint Faraj, born 16 November 1372 (save of 16 January 1373)."
+ },
+ {
+  "id": "charlotte-of-crato",
+  "name": "Charlotte of Crato",
+  "nameGame": "Charlotte",
+  "gameId": 60354,
+  "female": true,
+  "dynasty": "Crato",
+  "born": "1344-08-02",
+  "roles": [
+   "wife of Khālid ibn Yaḥyā"
+  ],
+  "stats": {
+   "adm": 79,
+   "dip": 23,
+   "mil": 34
+  },
+  "traits": [
+   "architectural_visionary"
+  ],
+  "note": "A Portuguese noblewoman of the house of Crato, Sunnī by faith, married to the general Khālid ibn Yaḥyā by January 1373 (save of 16 January 1373)."
+ },
+ {
+  "id": "abu-al-fadl-marinid",
+  "name": "Abū al-Faḍl",
+  "nameArabic": "أبو الفضل",
+  "nameGame": "Abul Fadl",
+  "gameId": 46824,
+  "dynasty": "Marīnid",
+  "born": "1359-07-02",
+  "father": "abu-inan-faris",
+  "roles": [
+   "heir of Morocco"
+  ],
+  "stats": {
+   "adm": 28,
+   "dip": 53,
+   "mil": 28
+  },
+  "traits": [
+   "child_gregarious"
+  ],
+  "note": "Son and heir of Abū ʿInān Fāris of Fās. Betrothed to Jadīla bint Yūsuf, the sultan's sister, on 3 April 1372 (save of 16 January 1373)."
  }
 ]

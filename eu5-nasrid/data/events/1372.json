@@ -1,0 +1,87 @@
+[
+ {
+  "id": "1372-02-01-france-england",
+  "date": "1372-02-01",
+  "type": "diplomacy",
+  "people": [
+   "jean-of-france",
+   "edward-of-england"
+  ],
+  "title": "The war of France and England breaks out again: Jean of France declares war on Edward of England to take back the kingdom, and by January 1373 each has some twenty thousand men under arms",
+  "data": {
+   "cb": "cb_hundred_years_war_fra",
+   "attacker": "FRA",
+   "defender": "ENG",
+   "men": {
+    "FRA": 20455,
+    "ENG": 22996
+   }
+  },
+  "source": "save of 16 January 1373"
+ },
+ {
+  "id": "1372-02-19-birth-yusuf-ibn-ismail",
+  "date": "1372-02-19",
+  "type": "birth",
+  "people": [
+   "yusuf-ibn-ismail",
+   "ismail-ibn-yusuf",
+   "hippolyte-of-villa-di-chiesa"
+  ],
+  "title": "A son, Yūsuf, is born to the sultan's brother Ismāʿīl and Hippolyte of Villa di Chiesa",
+  "data": {
+   "gameId": 16808225
+  },
+  "source": "save of 16 January 1373"
+ },
+ {
+  "id": "1372-04-03-jadila-betrothed",
+  "date": "1372-04-03",
+  "type": "marriage",
+  "people": [
+   "jadila-bint-yusuf",
+   "abu-al-fadl-marinid",
+   "abu-inan-faris",
+   "saad-ibn-yusuf"
+  ],
+  "title": "Eighteen months after the peace, the sultan's sister Jadīla bint Yūsuf, sixteen, is betrothed to Abū al-Faḍl, twelve, the son and heir of Abū ʿInān Fāris of Fās",
+  "data": {
+   "with": "MOR",
+   "kind": "betrothal"
+  },
+  "source": "save of 16 January 1373"
+ },
+ {
+  "id": "1372-11-16-birth-muhammad-ibn-ismail",
+  "date": "1372-11-16",
+  "type": "birth",
+  "people": [
+   "muhammad-ibn-ismail-ibn-yusuf",
+   "ismail-ibn-yusuf",
+   "aisha-bint-faraj"
+  ],
+  "title": "A son, Muḥammad, is born to Ismāʿīl ibn Yūsuf and his second wife, his cousin ʿĀʾisha bint Faraj",
+  "data": {
+   "gameId": 60713
+  },
+  "source": "save of 16 January 1373"
+ },
+ {
+  "id": "1372-12-13-murcia-fezzan",
+  "date": "1372-12-13",
+  "type": "diplomacy",
+  "people": [
+   "sayyida-of-fezzan"
+  ],
+  "title": "A marriage joins the Ṭāʾifa of Mursiyya to Fezzan, the Saharan homeland of the sultan's mother, in a marriage union",
+  "data": {
+   "union": [
+    "MUC",
+    "FZA"
+   ],
+   "kind": "marriage_union",
+   "FZA": "ruled by ʿUmar"
+  },
+  "source": "save of 16 January 1373"
+ }
+]

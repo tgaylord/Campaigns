@@ -1,0 +1,186 @@
+[
+ {
+  "id": "1373-01-16-court",
+  "date": "1373-01-16",
+  "type": "appointment",
+  "people": [
+   "sayyida-of-fezzan",
+   "maryam-bint-ismail",
+   "dua-marinid",
+   "ismail-ibn-yusuf",
+   "aisha-bint-faraj",
+   "khalid-ibn-yahya",
+   "charlotte-of-crato"
+  ],
+  "title": "By the winter of 774 the sultan's mother, Sayyida of Fezzan, has taken Maryam bint Ismāʿīl's seat in the dīwān and works beside Duʿā to make the new towns Andalusī. Ismāʿīl ibn Yūsuf has married a second wife, his cousin ʿĀʾisha bint Faraj, and the general Khālid ibn Yaḥyā has married Charlotte of Crato, a Sunnī noblewoman of Portuguese birth and an architect of vision",
+  "data": {
+   "cabinet": [
+    {
+     "person": "dua-marinid",
+     "action": "promote_culture"
+    },
+    {
+     "person": "sayyida-of-fezzan",
+     "action": "promote_culture"
+    }
+   ],
+   "left": "maryam-bint-ismail",
+   "newAtCourt": [
+    "Ṭālib of Baena (born 1340, a proselytizer)",
+    "ʿĀlim (born 1352, of the burghers, 66/56/68)"
+   ]
+  },
+  "source": "save of 16 January 1373 (the dates of these changes are not in the save)"
+ },
+ {
+  "id": "1373-01-16-state",
+  "date": "1373-01-16",
+  "type": "estate_change",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "The debts are paid: the seven loans of the war are gone. Income is 91 a month against 59 in expenses, the treasury holds 176, and every estate pays more (the nobles 33% where they paid 28%, the dhimmīs 22% where they paid nothing). The annexation of Mursiyya stands at 39. The north shore is mending: the crown's grip there has risen from 2% to 19%, its prosperity from below zero to 6%, and its people from 85,000 to 91,000",
+  "data": {
+   "loans": {
+    "1370-11-01": 7,
+    "1373-01-16": 0
+   },
+   "income": 90.8,
+   "expenses": 59.5,
+   "treasury": 175.5,
+   "taxRates": {
+    "nobles": [
+     28,
+     33
+    ],
+    "clergy": [
+     15,
+     20
+    ],
+    "burghers": [
+     28,
+     32
+    ],
+    "peasants": [
+     38,
+     43
+    ],
+    "dhimmi": [
+     null,
+     22
+    ]
+   },
+   "annexation": {
+    "target": "MUC",
+    "progress": 39.1,
+    "monthly": 1.39
+   },
+   "northShore": {
+    "control": [
+     1.7,
+     18.9
+    ],
+    "prosperity": [
+     -3.9,
+     6.1
+    ],
+    "population": [
+     84900,
+     90700
+    ],
+    "tax": [
+     0.14,
+     2.9
+    ],
+    "possibleTax": [
+     17.18,
+     16.76
+    ],
+    "jerez": [
+     9782,
+     15127
+    ]
+   },
+   "valley": {
+    "control": [
+     51.4,
+     55.7
+    ],
+    "andalusiShare": [
+     35.8,
+     40.1
+    ],
+    "muslimShare": [
+     20.4,
+     22.4
+    ],
+    "tax": [
+     66.9,
+     71.2
+    ]
+   },
+   "ishbiliyya": {
+    "muslims": [
+     24400,
+     27500
+    ],
+    "control": [
+     51,
+     59
+    ]
+   },
+   "newBuildings": 0,
+   "population": 760769
+  },
+  "source": "save of 16 January 1373"
+ },
+ {
+  "id": "1373-01-16-hajj",
+  "date": "1373-01-16",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "With the debt repaid, the sultan begins to prepare for the Hajj, then puts it off: the pilgrimage of 774 (8–13 Dhū al-Ḥijja, 31 May – 5 June 1373) would have kept him at Minā on the day the truce with Arghūn ends, 2 June 1373. He will go when the truces have run out and the wars that follow are fought",
+  "data": {
+   "hajj": {
+    "start": "1373-05-31",
+    "arafa": "1373-06-01",
+    "eid": "1373-06-02",
+    "end": "1373-06-05"
+   },
+   "note": "the game lets the Hajj be taken at any time; the chronicle keeps the season",
+   "postponed": "until after the truces (Aragon 2 June 1373, Castile and Portugal 5 June 1375) and the wars that follow (Trent)"
+  },
+  "source": "Trent's account, January 1373"
+ },
+ {
+  "id": "1373-01-16-world",
+  "date": "1373-01-16",
+  "type": "diplomacy",
+  "people": [],
+  "title": "The world in the winter of 774: Granada has slipped to 14th as others rise (Mālī to 12th, Hungary to 10th). France and England are at war again, the Ottomans are still fighting Karaman, and no war touches Iberia or the Maghrib",
+  "data": {
+   "GRA": [
+    14,
+    31
+   ],
+   "risers": {
+    "MAL": [
+     12,
+     32
+    ],
+    "HUN": [
+     10,
+     44
+    ]
+   },
+   "wars": [
+    "France against England (from 1 February 1372)",
+    "Serbia against Ragusa (from 24 May 1372)",
+    "the Ottomans against Karaman (from 10 October 1369)"
+   ]
+  },
+  "source": "save of 16 January 1373 (tools/world_powers.py)"
+ }
+]

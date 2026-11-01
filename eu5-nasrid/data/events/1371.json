@@ -1,5 +1,18 @@
 [
  {
+  "id": "1371-01-29-murcia-dolca",
+  "date": "1371-01-29",
+  "type": "ruler_change",
+  "people": [],
+  "title": "Dolça, daughter of the old house of Orihuela, becomes ruler of the Ṭāʾifa of Mursiyya, the ṭāʾifa the sultan is absorbing into the realm",
+  "data": {
+   "country": "MUC",
+   "ruler": "Dolça (game name Douce), born 1343, Sunni",
+   "gameId": 31540
+  },
+  "source": "save of 16 January 1373"
+ },
+ {
   "id": "1371-02-24-spread-of-usury",
   "date": "1371-02-24",
   "type": "estate_change",
@@ -55,5 +68,35 @@
    ]
   },
   "source": "Trent's screenshot of 24 February 1371"
+ },
+ {
+  "id": "1371-03-01-reconquest-claim-ready",
+  "date": "1371-03-01",
+  "type": "diplomacy",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "The claim for the Reconquest of Iberia against Qashtāla is complete. It cannot be pressed honourably before the truce ends on 5 June 1375",
+  "data": {
+   "cb": "cb_reconquer_iberia",
+   "target": "CAS",
+   "truceUntil": "1375-06-05"
+  },
+  "source": "save of 16 January 1373"
+ },
+ {
+  "id": "1371-10-15-birth-yusuf-ibn-saad",
+  "date": "1371-10-15",
+  "type": "birth",
+  "people": [
+   "yusuf-ibn-saad",
+   "saad-ibn-yusuf",
+   "aiman-mamluk"
+  ],
+  "title": "A son, Yūsuf, is born to the sultan and Aiman the Mamlūk, named for his grandfather",
+  "data": {
+   "gameId": 59587
+  },
+  "source": "save of 16 January 1373"
  }
 ]
