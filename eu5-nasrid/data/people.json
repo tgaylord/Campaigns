@@ -562,7 +562,8 @@
   "traits": [
    "child_gregarious"
   ],
-  "note": "Daughter of the ruler of Fezzan, of the house of Murzuq. Betrothed to Yūsuf on 16 November 1337, aged nine. Her father's name is the game's (name_salmama); its proper form is unconfirmed. Married to Yūsuf I while the Jamāʿa of 1344 sat (Trent's account), a marriage that helped inspire the royal harem law of that October. Mother of Sultan Saʿd, Ismāʿīl and Jadīla. By January 1373 she sat in her son's dīwān, promoting Andalusī culture beside Duʿā (save of 16 January 1373). From 8 March 1378 she worked in the dīwān on the realm's diplomatic endeavours (save of 6 April 1378)."
+  "note": "Daughter of the ruler of Fezzan, of the house of Murzuq. Betrothed to Yūsuf on 16 November 1337, aged nine. Her father's name is the game's (name_salmama); its proper form is unconfirmed. Married to Yūsuf I while the Jamāʿa of 1344 sat (Trent's account), a marriage that helped inspire the royal harem law of that October. Mother of Sultan Saʿd, Ismāʿīl and Jadīla. By January 1373 she sat in her son's dīwān, promoting Andalusī culture beside Duʿā (save of 16 January 1373). From 8 March 1378 she worked in the dīwān on the realm's diplomatic endeavours (save of 6 April 1378). She died on 19 November 1380, aged fifty-two (save of 8 December 1382).",
+  "died": "1380-11-19"
  },
  {
   "id": "gideon-ben-joshua",
@@ -917,7 +918,12 @@
   "traits": [
    "child_gallant"
   ],
-  "note": "Heir to his half-brother Saʿd until Saʿd's son Ismāʿīl was born on 8 March 1366 (saves of 11 September 1364 and 6 November 1366). Married Hippolyte of Villa di Chiesa, a Sardinian of Cagliari, on 14 September 1370."
+  "note": "Heir to his half-brother Saʿd until Saʿd's son Ismāʿīl was born on 8 March 1366 (saves of 11 September 1364 and 6 November 1366). Married Hippolyte of Villa di Chiesa, a Sardinian of Cagliari, on 14 September 1370. He took a seat in the dīwān on 1 December 1382, as the revolt of Ṭulayṭula broke out (save of 8 December 1382).",
+  "stats": {
+   "adm": 33,
+   "dip": 71,
+   "mil": 62
+  }
  },
  {
   "id": "ali-ibn-yusuf",

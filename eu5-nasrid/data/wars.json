@@ -486,5 +486,38 @@
     "value": 100
    }
   ]
+ },
+ {
+  "id": "revolt-of-tulaytula",
+  "name": "The Revolt of Ṭulayṭula",
+  "gameName": "War of Independence",
+  "start": "1382-12-01",
+  "end": null,
+  "goal": "Independence for a Kingdom of Toledo",
+  "allies": [
+   "Aragon",
+   "Catalonia",
+   "Valencia",
+   "Taifa of the Algarve"
+  ],
+  "enemies": [
+   "Kingdom of Toledo"
+  ],
+  "involvement": "belligerent",
+  "sides": {
+   "attackers": [
+    "Kingdom of Toledo"
+   ],
+   "defenders": [
+    "al-Andalus",
+    "Aragon",
+    "Catalonia",
+    "Valencia",
+    "Taifa of the Algarve"
+   ]
+  },
+  "note": "On 1 December 1382 Toledo rose against al-Andalus, drove out its governor and damaged the madrasa in its heart (Trent's account). The revolt took 58 towns, about 520,000 people, nearly all Castilian and Catholic: the lands won from Castile in 1378, and also Murcia, Jaén, Úbeda, Baeza and the Huelva coast. The rebels raised 5,871 men, 5,420 of them levies, against the Emperor's 3,719 regulars; the ṭāʾifas joined the defence but had no men raised. Stability had fallen to 15. The Mamlūks and Morocco, as allies, were not drawn in (save of 8 December 1382). As in 1353, when the Kingdom of Sevilla rose, the rebels hold the land but cannot hold the field for long, Trent expects.",
+  "outcome": null,
+  "score": []
  }
 ]

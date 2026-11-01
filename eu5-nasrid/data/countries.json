@@ -226,5 +226,12 @@
   "nameChronicle": "the Ṭāʾifa of Qaṭalūniya",
   "nameArabic": "طائفة قطلونية",
   "color": "#bf3c02"
+ },
+ {
+  "tag": "TOL",
+  "name": "Kingdom of Toledo",
+  "nameChronicle": "the so-called Kingdom of Ṭulayṭula",
+  "nameArabic": "طليطلة",
+  "color": "#8aa3ba"
  }
 ]

@@ -26,5 +26,20 @@
    "ooc": "The game recorded no historical capital when the capital moved to Seville in November 1379 (likely because of the Al-Andalus formation), which left al-Ḥamrāʾ inactive. Trent restored it from the console on 3 May 1380 with set_capital to Granada and straight back to Seville; the save of 3 May 1380 shows historical_capitals={2894}."
   },
   "source": "save of 3 May 1380; Trent's console fix"
+ },
+ {
+  "id": "1380-11-19-death-of-sayyida",
+  "date": "1380-11-19",
+  "type": "death",
+  "people": [
+   "sayyida-of-fezzan",
+   "saad-ibn-yusuf"
+  ],
+  "title": "Sayyida of Fezzan, the Emperor's mother, dies at fifty-two. She had come to Gharnāṭa as a child bride of nine, sat in the dīwān through her son's reign, and lived to see him Emperor in Ishbīliya",
+  "data": {
+   "age": 52,
+   "born": "1328-10-27"
+  },
+  "source": "save of 8 December 1382"
  }
 ]

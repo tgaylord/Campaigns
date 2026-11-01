@@ -1,0 +1,127 @@
+[
+ {
+  "id": "1382-12-01-revolt-of-tulaytula",
+  "date": "1382-12-01",
+  "type": "war_declared",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "tulaytula"
+  ],
+  "wars": [
+   "revolt-of-tulaytula"
+  ],
+  "title": "Another so-called kingdom rises against the Emperor's rule, and this time Ṭulayṭula itself leads it. The city drives out its governor and damages the madrasa built in its heart, and the revolt sweeps 58 towns into a Kingdom of Toledo: the Middle March and La Mancha, the hills of Extremadura, and even Mursiyya, Jayyān, Ubbadha and Bayyāsa in the old lands. It raises 5,900 men against the Emperor's 3,700 regulars",
+  "data": {
+   "cb": "cb_independence_war",
+   "rebel": "TOL (Kingdom of Toledo)",
+   "towns": 58,
+   "locations": [
+    "albacete",
+    "alcaraz",
+    "alcazar_de_san_juan",
+    "alhambra_location",
+    "almaden",
+    "almodovar_del_campo",
+    "almonaster_la_real",
+    "aroche",
+    "ayamonte",
+    "azuaga",
+    "baeza",
+    "belalcazar",
+    "calatrava",
+    "caravaca",
+    "cartagena",
+    "chinchilla",
+    "chinchon",
+    "cieza",
+    "ciudad_real",
+    "consuegra",
+    "escurial",
+    "guadalupe",
+    "hellin",
+    "herrera",
+    "huelva",
+    "illescas",
+    "jaen",
+    "jumilla",
+    "lezuza",
+    "llerena",
+    "lorca",
+    "los_yebenes",
+    "malagon",
+    "manzanares",
+    "medellin",
+    "monesterio",
+    "montiel",
+    "mula",
+    "murcia",
+    "navalucillos",
+    "ocana",
+    "puebla_de_alcocer",
+    "puebla_de_guzman",
+    "puebla_de_montalban",
+    "puente_arzobispo",
+    "puertollano",
+    "segura_de_la_sierra",
+    "talavera_de_la_reina",
+    "toledo",
+    "tomelloso",
+    "ubeda",
+    "ucles",
+    "villanueva_de_la_serena",
+    "villapalacios",
+    "villarobledo",
+    "villena",
+    "zafra",
+    "zalamea"
+   ],
+   "population": "about 520,000 (1379 figures)",
+   "people": {
+    "Castilian": 472900,
+    "Andalusi": 24200,
+    "Sephardi": 20600
+   },
+   "faith": {
+    "Catholic": 387600,
+    "Sunni": 112100,
+    "Jewish": 20400
+   },
+   "forces": {
+    "Toledo": "5,871 (451 regulars, 5,420 levies), 1 ship",
+    "al-Andalus": "3,719 regulars, 16 ships",
+    "ṭāʾifas": "no men raised"
+   },
+   "crown": {
+    "towns": [
+     118,
+     60
+    ],
+    "stability": 15.0,
+    "treasury": 610,
+    "manpower": 690
+   },
+   "madrasa": "damaged in the rising (Trent's account)"
+  },
+  "source": "save of 8 December 1382; Trent's account"
+ },
+ {
+  "id": "1382-12-01-ismail-to-the-diwan",
+  "date": "1382-12-01",
+  "type": "appointment",
+  "people": [
+   "ismail-ibn-yusuf",
+   "saad-ibn-yusuf"
+  ],
+  "title": "The Emperor's brother Ismāʿīl, twenty-eight, takes the seat in the dīwān left empty by their mother Sayyida",
+  "data": {
+   "stats": [
+    33,
+    71,
+    62
+   ]
+  },
+  "source": "save of 8 December 1382"
+ }
+]
