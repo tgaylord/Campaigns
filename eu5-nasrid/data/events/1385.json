@@ -1,0 +1,23 @@
+[
+ {
+  "id": "1385-05-03-county-of-teruel",
+  "date": "1385-05-03",
+  "type": "war_joined",
+  "people": [
+   "alfons-de-borja"
+  ],
+  "places": [
+   "saraqusta"
+  ],
+  "title": "Rebellion puts off the Hajj once more. Now it is the Ṭāʾifa of Aragon that splits: a so-called County of Teruel rises against King Alfons and holds the inner country of the kingdom, from Teruel north toward Saraqusṭa, leaving him the north. Another minor rising",
+  "data": {
+   "rebel": "County of Teruel",
+   "against": "ARA (the Ṭāʾifa of Aragon)",
+   "held": "most of inner Aragon on Trent's map; Aragon keeps the north",
+   "hajj": "postponed by rebellion; the next pilgrimage falls on 8–13 Dhū al-Ḥijja 787, about 10–15 January 1386 (tabular calendar)",
+   "realm": "the lands of the Toledan revolt are all back within al-Andalus on the same map",
+   "save": "none taken (Trent: a minor rising)"
+  },
+  "source": "Trent's account and map screenshot, 3 May 1385"
+ }
+]
