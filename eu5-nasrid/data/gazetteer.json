@@ -1040,5 +1040,15 @@
   "nameArabic": "طليطلة",
   "note": "Toledo, the old Visigothic capital and the heart of the Middle March. The game name is from the base localization.",
   "major": true
+ },
+ {
+  "id": "barshaluna",
+  "key": "barcelona",
+  "name": "Barshalūna",
+  "nameGame": "Barcelona",
+  "kind": "location",
+  "nameArabic": "برشلونة",
+  "note": "Barcelona, capital of Aragon and the city of the Catalans, on the road beyond the Upper March. The game name is from the base localization.",
+  "major": true
  }
 ]

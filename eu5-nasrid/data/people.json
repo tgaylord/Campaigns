@@ -930,10 +930,13 @@
   "father": "yusuf-i",
   "mother": "tizemt-hafsid",
   "female": false,
-  "roles": [],
+  "roles": [
+   "commander at Barcelona"
+  ],
   "traits": [
    "child_gregarious"
-  ]
+  ],
+  "note": "Son of Yūsuf I and Tizemt the Ḥafṣid, born 6 September 1355, the sultan's younger half-brother. At eighteen he led the right wing and two-thirds of the cavalry at the Battle of Barcelona (29 January – 19 February 1374), the wing that broke the Aragonese flank (Trent's account)."
  },
  {
   "id": "muhammad-ibn-yusuf",

@@ -1,0 +1,76 @@
+[
+ {
+  "id": "1374-02-19-battle-barcelona",
+  "date": "1374-02-19",
+  "type": "battle",
+  "people": [
+   "saad-ibn-yusuf",
+   "ali-ibn-yusuf"
+  ],
+  "wars": [
+   "war-of-the-upper-march"
+  ],
+  "places": [
+   "barshaluna"
+  ],
+  "title": "Before the walls of Barshalūna the sultan breaks the army of Arghūn. Saʿd commands in person and gives the right wing, with two-thirds of the horse, to his brother Abū al-Ḥasan ʿAlī. The heavy infantry holds the centre while the wings destroy the Aragonese flanks, and then close on the levies left in the middle. 3,375 of theirs fall for 1,228 of ours (+21 war score)",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 3299
+   },
+   "oursTotal": 3299,
+   "oursLost": 1228,
+   "theirs": {
+    "Aragon": 5320
+   },
+   "theirsTotal": 5320,
+   "theirsLost": 3375,
+   "location": "Barcelona",
+   "side": "Granada attacking",
+   "began": "1374-01-29",
+   "commanders": {
+    "Granada": "Saʿd ibn Yūsuf (100/68/100)",
+    "Aragon": "an Aragonese general (45/77/56)"
+   },
+   "units": {
+    "Granada": {
+     "infantry": [
+      1999,
+      -635
+     ],
+     "light cavalry": [
+      800,
+      -349
+     ],
+     "heavy cavalry": [
+      500,
+      -244
+     ]
+    },
+    "Aragon": {
+     "archers": [
+      4816,
+      -2914
+     ],
+     "infantry": [
+      76,
+      -76
+     ],
+     "light cavalry": [
+      325,
+      -282
+     ],
+     "heavy cavalry": [
+      103,
+      -103
+     ]
+    }
+   },
+   "warScore": 21.37,
+   "warScoreAfter": 31
+  },
+  "source": "Trent's account and battle screens of 29 January and 19 February 1374"
+ }
+]
