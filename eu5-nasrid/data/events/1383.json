@@ -1,0 +1,116 @@
+[
+ {
+  "id": "1383-02-22-battle-munt-shaqir",
+  "date": "1383-02-22",
+  "type": "battle",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "wars": [
+   "revolt-of-tulaytula"
+  ],
+  "title": "The one great battle of the revolt. The Toledan host, 4,900 strong, comes against the Emperor's 10,600 at Munt Šāqir in the hills of Extremadura, and is broken",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "al-Andalus": 10588
+   },
+   "oursTotal": 10588,
+   "oursLost": 106,
+   "theirs": {
+    "Toledo": 4911
+   },
+   "theirsTotal": 4911,
+   "theirsLost": 545,
+   "location": "Montánchez (Munt Šāqir)",
+   "side": "Toledo attacking",
+   "commanders": {
+    "al-Andalus": "the Emperor Saʿd (100/68/100)",
+    "Toledo": "a rebel captain (36/51/43)"
+   },
+   "note": "losses are those on Trent's screen while the battle was under way on 22 February; the outcome is from Trent's account",
+   "warScoreBefore": -22
+  },
+  "source": "Trent's account and battle screen, 22 February 1383"
+ },
+ {
+  "id": "1383-04-30-battle-jaen",
+  "date": "1383-04-30",
+  "type": "battle",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "jayyan"
+  ],
+  "wars": [
+   "revolt-of-tulaytula"
+  ],
+  "title": "At Jayyān the Emperor runs down the last Toledan army: all 1,807 are lost, for 44 of ours. The revolt ends the same day",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "al-Andalus": 10438
+   },
+   "oursTotal": 10438,
+   "oursLost": 44,
+   "theirs": {
+    "Toledo": 1807
+   },
+   "theirsTotal": 1807,
+   "theirsLost": 1807,
+   "location": "Jaén",
+   "side": "al-Andalus attacking",
+   "units": {
+    "ours": {
+     "infantry": [
+      5285,
+      34
+     ],
+     "heavyInfantry": [
+      2105,
+      0
+     ],
+     "lightCavalry": [
+      2400,
+      12
+     ],
+     "heavyCavalry": [
+      648,
+      0
+     ]
+    },
+    "theirs": {
+     "infantry": [
+      1807,
+      1807
+     ]
+    }
+   }
+  },
+  "source": "Trent's account and battle screen, 30 April 1383"
+ },
+ {
+  "id": "1383-04-30-revolt-crushed",
+  "date": "1383-04-30",
+  "type": "peace",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "tulaytula"
+  ],
+  "wars": [
+   "revolt-of-tulaytula"
+  ],
+  "title": "The so-called Kingdom of Toledo is no more. With its last army destroyed at Jayyān, the revolt ends, five months after it began, and its towns return to the Emperor",
+  "data": {
+   "warScore": 50,
+   "towns": 58,
+   "note": "the return of all 58 towns is expected from the revolt's end; a save will confirm it"
+  },
+  "source": "Trent's account, 30 April 1383"
+ }
+]

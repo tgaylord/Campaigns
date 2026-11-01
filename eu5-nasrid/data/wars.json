@@ -490,9 +490,9 @@
  {
   "id": "revolt-of-tulaytula",
   "name": "The Revolt of Ṭulayṭula",
-  "gameName": "War of Independence",
+  "gameName": "1st Rebellion Against Andalusia",
   "start": "1382-12-01",
-  "end": null,
+  "end": "1383-04-30",
   "goal": "Independence for a Kingdom of Toledo",
   "allies": [
    "Aragon",
@@ -516,8 +516,17 @@
     "Taifa of the Algarve"
    ]
   },
-  "note": "On 1 December 1382 Toledo rose against al-Andalus, drove out its governor and damaged the madrasa in its heart (Trent's account). The revolt took 58 towns, about 520,000 people, nearly all Castilian and Catholic: the lands won from Castile in 1378, and also Murcia, Jaén, Úbeda, Baeza and the Huelva coast. The rebels raised 5,871 men, 5,420 of them levies, against the Emperor's 3,719 regulars; the ṭāʾifas joined the defence but had no men raised. Stability had fallen to 15. The Mamlūks and Morocco, as allies, were not drawn in (save of 8 December 1382). As in 1353, when the Kingdom of Sevilla rose, the rebels hold the land but cannot hold the field for long, Trent expects.",
-  "outcome": null,
-  "score": []
+  "note": "On 1 December 1382 Toledo rose against al-Andalus, drove out its governor and damaged the madrasa in its heart (Trent's account). The revolt took 58 towns, about 520,000 people, nearly all Castilian and Catholic: the lands won from Castile in 1378, and also Murcia, Jaén, Úbeda, Baeza and the Huelva coast. The rebels raised 5,871 men, 5,420 of them levies, against the Emperor's 3,719 regulars; the ṭāʾifas joined the defence but had no men raised. Stability had fallen to 15. The Mamlūks and Morocco, as allies, were not drawn in (save of 8 December 1382). As in 1353, when the Kingdom of Sevilla rose, the rebels hold the land but cannot hold the field for long, Trent expects. The one great battle came at Montánchez (Munt Šāqir) on 22 February 1383, the rebels' 4,911 against the Emperor's 10,588; on 30 April he destroyed their last 1,807 men at Jaén for 44 of his own, and the rebellion ended that day (Trent's account and battle screens).",
+  "outcome": "The revolt is crushed: the Toledan host is broken at Montánchez (22 February 1383) and its last army destroyed at Jaén on 30 April 1383, when the rebellion ends.",
+  "score": [
+   {
+    "date": "1383-02-22",
+    "value": -22
+   },
+   {
+    "date": "1383-04-30",
+    "value": 50
+   }
+  ]
  }
 ]
