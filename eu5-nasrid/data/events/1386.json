@@ -87,5 +87,21 @@
    "date": "after the Hajj, 1386; the day awaits a save"
   },
   "source": "Trent's account and screenshot, 1386"
+ },
+ {
+  "id": "1386-ismail-to-the-diwan",
+  "date": "1386-01-06",
+  "type": "appointment",
+  "people": [
+   "ismail-ibn-saad",
+   "saad-ibn-yusuf"
+  ],
+  "title": "The crown prince Ismāʿīl, nineteen, who ruled as regent through his father's pilgrimage, takes the new seat in the dīwān that the Ḥijāba creates",
+  "data": {
+   "seat": "the cabinet seat added by the Ḥijāba",
+   "age": 19,
+   "date": "1386; the day awaits a save"
+  },
+  "source": "Trent's account, 1386"
  }
 ]
