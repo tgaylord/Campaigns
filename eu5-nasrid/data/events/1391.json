@@ -1,0 +1,20 @@
+[
+ {
+  "id": "1391-05-11-second-hajj-departs",
+  "date": "1391-05-11",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "ishbiliyya"
+  ],
+  "title": "The Emperor sets out for Makka a second time, and leaves early. Five years ago the season passed him by in the desert; this time he means to stand at ʿArafāt with time to spare",
+  "data": {
+   "departure": "1391-05-11",
+   "previous": "1385-08-23, the season missed on 6 January 1386",
+   "lesson": "the game appears to close the Hajj season with the turn of the year; leaving in May allows for pauses on the road"
+  },
+  "source": "Trent's account, 11 May 1391"
+ }
+]
