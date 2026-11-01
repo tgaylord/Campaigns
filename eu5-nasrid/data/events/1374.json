@@ -157,5 +157,25 @@
    "monthly": 29.46
   },
   "source": "Trent's screenshots of 29 January and 9 March 1374"
+ },
+ {
+  "id": "1374-03-09-france-busy",
+  "date": "1374-03-09",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf",
+   "jean-of-france",
+   "edward-of-england"
+  ],
+  "title": "The timing of the war: France is deep in its war with England, and English troops hold a broad swathe of the west of the kingdom, from Normandy through Anjou to Poitou. Before, the sultan would have been wary of pushing right up to the French border. Now, if he is quick, he can take all of Arghūn before the French drive the English back",
+  "data": {
+   "war": "France against England, from 1 February 1372",
+   "menAtJanuary1373": {
+    "FRA": 20455,
+    "ENG": 22996
+   },
+   "plan": "take all of Aragon before France is free"
+  },
+  "source": "Trent's account and map screenshot, March 1374"
  }
 ]
