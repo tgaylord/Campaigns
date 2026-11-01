@@ -40,5 +40,26 @@
    "history": "the Azores and Madeira were known to Genoese and Portuguese sailors by the mid-fourteenth century, but not settled until the 1420s; Arab geographers had written of islands in the western Ocean"
   },
   "source": "Trent's account and screenshot, February 1392"
+ },
+ {
+  "id": "1392-11-banking",
+  "date": "1392-11-01",
+  "type": "reform",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "ishbiliyya"
+  ],
+  "title": "A year after Aiman's death the Emperor meets grief as he always has, with innovation. Banking and moneylending are formalised in the empire and made more permissive: al-Andalus embraces the new institution of banking, born among the Genoese",
+  "data": {
+   "institution": "Banking",
+   "origin": "Genoa (Zêna)",
+   "spread": "20.62% of the realm's locations when embraced",
+   "cost": "80.5 gold and 30.19 (Trent's screen)",
+   "thread": "the moneylenders of Ishbīliya, whom the ʿulamāʾ protested in 1371 (see 1371-02-24-spread-of-usury)",
+   "date": "November 1392 (Trent); the day awaits a save"
+  },
+  "source": "Trent's account and screenshot, November 1392"
  }
 ]

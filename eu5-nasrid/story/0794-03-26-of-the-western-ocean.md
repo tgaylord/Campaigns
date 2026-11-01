@@ -1,0 +1,19 @@
+---
+title: Of the Mansa's Merchants, and the Ships Sent into the Western Ocean
+date: 1392-02-21
+era: book-of-the-marches
+kind: chronicle
+people: [ismail-ibn-saad, khayr-al-din-al-jayyani, saad-ibn-yusuf]
+places: [ishbiliyya, jayyan, washqa]
+sources: [1391-06-08-guns-for-mali, 1391-07-coast-to-mali, 1392-02-atlantic-expeditions]
+---
+
+While the Emperor was on the road to Makka, merchants arrived at [Ishbīliya](place:ishbiliyya) from the far side of the desert. They had been sent by the Mansa of Mali himself, the lord of the gold country, whose forebear Mansa Mūsā had passed through al-Qāhira on pilgrimage spending so much gold that its price fell for years. They had come to buy the *madāfiʿ* of the empire's arsenals: the fire-tubes and small bombards whose roar the Naṣrids had first loosed at the walls of [Washqa](place:washqa) nearly seventy years before. They wanted the craft of casting them as well. The crown prince [Ismāʿīl](person:ismail-ibn-saad), ruling as regent, weighed it. Some in the dīwān warned that arms sold to a friend can be turned against a friend's trade. The prince judged otherwise. Mali was far away and rich, and it would pay a fifth of a year's income for the privilege. It would also become a grateful friend in the lands where the gold came from. He sold, and the Mansa's merchants went home content.
+
+A friendship with Mali needed a road to Mali, and the prince did not want it to be the old one. For six hundred years the gold had come north on camels across the Ṣaḥrāʾ, through Sijilmāsa and the oases, paying a toll at every well. The prince sent instead a courtier of [Jayyān](place:jayyan), [Khayr al-Dīn al-Jayyānī](person:khayr-al-din-al-jayyani), a man of forty with a gift for talking to strangers, to find the way by sea: down the Atlantic coast of Africa, past the last towns the merchants knew, to wherever the shore turned toward the Mansa's country.
+
+When the Emperor came home from Makka he did not undo his son's work. He added to it. Two more expeditions were fitted out with new captains. One was to chart the sea around the Azores, the scattered islands the Genoese had glimpsed in the western Ocean. The other was to Madeira, the wooded island the Arab geographers had heard of and the Portuguese had not yet claimed. The Catalan shipwrights who had built galleys for the Mamlūks were set to building ships for the Ocean.
+
+The scholars of the court remembered that the old geographers had called the western sea the Sea of Darkness, *Baḥr al-Ẓulumāt*, and said no ship came back from it. The Emperor had all three expeditions entered in the dīwān's registers and their captains' names written down.
+
+*And His are the ships raised high in the sea like mountains.*
