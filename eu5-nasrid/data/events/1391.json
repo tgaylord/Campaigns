@@ -33,5 +33,27 @@
    "bride": "an Ottoman princess (name awaits a save)"
   },
   "source": "Trent's account, May 1391"
+ },
+ {
+  "id": "1391-06-08-guns-for-mali",
+  "date": "1391-06-08",
+  "type": "diplomacy",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "title": "Merchants sent by the Mansa of Mali himself ask to buy the empire's fire-weapons and the craft of making them. The regent's court judges it profitable business: Mali pays a fifth of a year's income for the privilege and becomes a grateful friend in western Africa",
+  "data": {
+   "with": "Mali",
+   "choice": "This might be a profitable business",
+   "effects": {
+    "maliOpinion": 100,
+    "paymentFromMali": 161.94,
+    "capitalEconomy": "+10 (now 60.2, rising 0.15 a month)"
+   },
+   "rejected": "There is no benefit to us to sell guns to them",
+   "history": "not as early as it sounds: the Naṣrids are said to have used gunpowder engines at Huéscar in 1324 and Alicante in 1331, and hand-guns were spreading through the Mediterranean by the 1380s; in the chronicle these are madāfiʿ, fire-tubes, not muskets",
+   "regent": "decided at court while the Emperor was on the road to Makka"
+  },
+  "source": "Trent's account and screenshot of the event, 8 June 1391"
  }
 ]
