@@ -76,5 +76,26 @@
    "other": "No time to haggle. Wave them on."
   },
   "source": "Trent's screenshot of the event, 1 July 1391"
+ },
+ {
+  "id": "1391-07-coast-to-mali",
+  "date": "1391-07-01",
+  "type": "appointment",
+  "people": [
+   "khayr-al-din-al-jayyani",
+   "ismail-ibn-saad"
+  ],
+  "places": [
+   "gharnata",
+   "jayyan"
+  ],
+  "title": "Under the contract with Mali, the court sends the courtier Khayr al-Dīn al-Jayyānī to chart the way to the Mansa's lands along the Atlantic coast, by sea, rather than by the caravan roads across the desert",
+  "data": {
+   "explorer": "Khayr al-Dīn al-Jayyānī, 40, of Jaén (53/93/35)",
+   "route": "along the West African coast, not inland",
+   "purpose": "the trade in madāfiʿ agreed with Mali on 8 June 1391",
+   "date": "summer 1391; the day awaits a save"
+  },
+  "source": "Trent's account and screenshot, summer 1391"
  }
 ]

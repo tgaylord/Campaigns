@@ -1656,5 +1656,23 @@
   },
   "traits": [],
   "note": "The Castilian general of the War of the Aragonese Restoration. He routed the Catalans at Chelva (12 December 1375) and beat the Emperor himself there on 14 January 1376, then lost his army to him at Agramunt on 1 September 1376 (save of 13 January 1377; Trent's battle screens)."
+ },
+ {
+  "id": "khayr-al-din-al-jayyani",
+  "name": "Khayr al-Dīn al-Jayyānī",
+  "nameArabic": "خير الدين الجياني",
+  "nameGame": "Kayr ed-Din al-Jaéni",
+  "born": "1351-01-01",
+  "roles": [
+   "courtier",
+   "explorer"
+  ],
+  "stats": {
+   "adm": 53,
+   "dip": 93,
+   "mil": 35
+  },
+  "traits": [],
+  "note": "An Andalusī of Jayyān, Sunni, a courtier at Gharnāṭa, forty in 1391 (birth year estimated from his age). In 1391, under the trade contract with Mali, he was sent to chart the way to Mali along the Atlantic coast instead of across the desert (Trent's account and screenshot)."
  }
 ]
