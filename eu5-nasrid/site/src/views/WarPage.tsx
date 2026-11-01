@@ -60,6 +60,12 @@ export default function WarPage() {
       <div className="fights">
         {fights.map((f) => {
           const d = f.data as Record<string, any>;
+          // hosts: older records give ours/ourLosses as numbers; battle records give per-country
+          // tables in ours/theirs with oursTotal/oursLost (and theirsTotal/theirsLost)
+          const total = (n: unknown, t: unknown) => (typeof n === "number" ? n : typeof t === "number" ? t : n && typeof n === "object" ? Object.values(n as Record<string, number>).reduce((a, b) => a + (Number(b) || 0), 0) : undefined);
+          const ourMen = total(d.ours, d.oursTotal), theirMen = total(d.theirs, d.theirsTotal);
+          const ourLost = d.ourLosses ?? d.oursLost ?? undefined, theirLost = d.theirLosses ?? d.theirsLost ?? undefined;
+          const ships = d.naval === true; // a sea battle counts ships, one figure each
           const result = String(d.result ?? "");
           const good = ["victory", "taken"].includes(result), bad = ["defeat", "lost"].includes(result);
           const place = f.places[0] ? placeById.get(f.places[0]) : undefined;
@@ -71,11 +77,11 @@ export default function WarPage() {
                 <span className="when ui">{western(f.date)}</span>
                 {result && <span className="result ui"><span aria-hidden="true">{good ? "✓ " : bad ? "✕ " : "◦ "}</span>{result[0].toUpperCase() + result.slice(1)}{d.warScore != null ? `, war score ${signed(d.warScore)}` : ""}</span>}
               </header>
-              {(d.ours != null || d.ourLosses != null) && (
+              {(ourMen != null || ourLost != null) && (
                 <div className="hosts ui">
-                  <Host label={w.involvement === "potential" ? "Our allies" : "Ours"} men={d.ours} lost={d.ourLosses} />
-                  <Host label={w.involvement === "potential" ? (w.sides?.defenders.join(", ") ?? "Theirs") : "Theirs"} men={d.theirs} lost={d.theirLosses} />
-                  <p className="per">Each figure is {PER} men{d.ourLosses != null || d.theirLosses != null ? "; the red ones fell" : ""}.</p>
+                  <Host label={w.involvement === "potential" ? "Our allies" : "Ours"} men={ourMen} lost={ourLost} ships={ships} />
+                  <Host label={w.involvement === "potential" ? (w.sides?.defenders.join(", ") ?? "Theirs") : "Theirs"} men={theirMen} lost={theirLost} ships={ships} />
+                  <p className="per">Each figure is {ships ? "a ship" : `${PER} men`}{ourLost != null || theirLost != null ? "; the red ones fell" : ""}.</p>
                 </div>
               )}
             </article>
@@ -88,11 +94,12 @@ export default function WarPage() {
   );
 }
 
-function Host({ label, men, lost }: { label: string; men?: number; lost?: number }) {
-  const n = Math.round((men ?? 0) / PER), dead = Math.round((lost ?? 0) / PER);
+function Host({ label, men, lost, ships = false }: { label: string; men?: number; lost?: number; ships?: boolean }) {
+  const per = ships ? 1 : PER, unit = ships ? "ships" : "men";
+  const n = Math.round((men ?? 0) / per), dead = Math.round((lost ?? 0) / per);
   return (
     <div className="host">
-      <div className="hl"><span>{label}</span><span>{men != null ? nf.format(men) : "?"} men{lost != null ? `, ${nf.format(lost)} lost` : ""}</span></div>
+      <div className="hl"><span>{label}</span><span>{men != null ? nf.format(men) : "?"} {unit}{lost != null ? `, ${nf.format(lost)} lost` : ""}</span></div>
       <div className="figures" aria-hidden="true">
         {Array.from({ length: n }, (_, k) => <i key={k} className={k < dead ? "fell" : ""} />)}
       </div>

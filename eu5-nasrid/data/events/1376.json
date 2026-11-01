@@ -1,0 +1,150 @@
+[
+ {
+  "id": "1376-01-14-battle-xelva",
+  "date": "1376-01-14",
+  "type": "battle",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "wars": [
+   "war-of-the-aragonese-restoration"
+  ],
+  "title": "The Battle of Šalba (Xelva). With the Catalans broken, the Emperor must give battle on bad ground, hills, forest and a river, against nearly twice his numbers. His horse tries to sweep away both Castilian flanks before their numbers tell, and the centre holds by a thread; but the wings are worn down and the field is lost. A month of fighting costs al-Andalus and its ṭāʾifas 8,170 men against Castile's 7,520, and 12 points of war score",
+  "data": {
+   "result": "defeat",
+   "naval": false,
+   "ours": {
+    "al-Andalus, Valencia, Catalonia and the Algarve": 13842
+   },
+   "oursTotal": 13842,
+   "oursLost": 8169,
+   "theirs": {
+    "Castile": 23902
+   },
+   "theirsTotal": 23902,
+   "theirsLost": 7517,
+   "location": "Chelva (Xelva), Valencia",
+   "side": "al-Andalus attacking",
+   "warScore": -12.04,
+   "units": {
+    "ours": {
+     "infantry": [
+      7691,
+      4859
+     ],
+     "heavyInfantry": [
+      2207,
+      1373
+     ],
+     "lightCavalry": [
+      2400,
+      1397
+     ],
+     "heavyCavalry": [
+      694,
+      340
+     ],
+     "support": [
+      850,
+      200
+     ]
+    },
+    "theirs": {
+     "infantry": [
+      22890,
+      7025
+     ],
+     "heavyInfantry": [
+      505,
+      252
+     ],
+     "lightCavalry": [
+      200,
+      87
+     ],
+     "heavyCavalry": [
+      257,
+      155
+     ],
+     "support": [
+      50,
+      0
+     ]
+    }
+   },
+   "commanders": {
+    "al-Andalus": "the Emperor Saʿd (100/68/100)",
+    "Castile": "a Castilian general (53/54/89)"
+   },
+   "terrain": "the defender had +5 from the ground; dice ran 8–7 and 4–5",
+   "began": "1375-12-13 (13,504 against 23,562)"
+  },
+  "source": "Trent's account and battle screens, 13 December 1375 to 14 January 1376",
+  "places": [
+   "shalba"
+  ]
+ },
+ {
+  "id": "1376-01-14-second-levy",
+  "date": "1376-01-14",
+  "type": "estate_change",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "wars": [
+   "war-of-the-aragonese-restoration"
+  ],
+  "title": "After Šalba another 2,000 men are levied from the nobles",
+  "data": {
+   "estate": "nobles",
+   "men": 2000
+  },
+  "source": "Trent's account, January 1376"
+ },
+ {
+  "id": "1376-01-14-envoys-to-fas",
+  "date": "1376-01-14",
+  "type": "diplomacy",
+  "people": [
+   "dua-marinid",
+   "saad-ibn-yusuf",
+   "abu-al-fadl-marinid",
+   "jadila-bint-yusuf",
+   "abu-inan-faris"
+  ],
+  "wars": [
+   "war-of-the-aragonese-restoration"
+  ],
+  "title": "Envoys ride for Fās. Since the last war there has been a warm silence between the courts: not hostile, but distrustful on ours, for the Marīnids courted the Emirate and then stabbed it in the back the moment they could. Now Duʿā argues for renewing the alliance; the expanded bureaucracy can bear it, and the first Mamlūk army is months away. The crown prince of Fās, Abū al-Faḍl, has lately married the Emperor's sister Jadīla, and that and Duʿā open the dialogue. A pact is offered. Morocco's truce with Castile runs to September 1377, but if its words are to be believed, and that is questionable, it is willing to help",
+  "data": {
+   "with": "MOR",
+   "proposal": "alliance",
+   "advocate": "Duʿā the Marīnid",
+   "ties": [
+    "Jadīla bint Yūsuf married to Abū al-Faḍl, heir of Fās",
+    "Duʿā, a Marīnid princess"
+   ],
+   "obstacle": "Morocco's truce with Castile until 30 September 1377 (save of 5 June 1375)",
+   "trust": "questionable (Trent)",
+   "pastWars": [
+    "1368-1370: the Second Marīnid War for the Submission of Granada"
+   ]
+  },
+  "source": "Trent's account, January 1376"
+ },
+ {
+  "id": "1376-01-14-jadila-married",
+  "date": "1376-01-14",
+  "type": "marriage",
+  "people": [
+   "jadila-bint-yusuf",
+   "abu-al-fadl-marinid"
+  ],
+  "title": "By now the Emperor's sister Jadīla, betrothed in 1372, is married to Abū al-Faḍl, crown prince of Fās",
+  "data": {
+   "betrothed": "1372-04-03",
+   "date": "recently, before January 1376 (Trent); the exact day awaits a save"
+  },
+  "source": "Trent's account, January 1376"
+ }
+]

@@ -506,5 +506,38 @@
    ]
   },
   "source": "Trent's account; save of 5 June 1375"
+ },
+ {
+  "id": "1375-12-13-catalans-ambushed",
+  "date": "1375-12-13",
+  "type": "battle",
+  "people": [
+   "francesc-de-montsoriu"
+  ],
+  "wars": [
+   "war-of-the-aragonese-restoration"
+  ],
+  "title": "The campaign opens in the east. The Castilians fall on an army of Catalans on the outskirts of Valencia, at Šalba: 24,300 against 4,550. The Catalans break and fall back with 2,570 before the Emperor's army can reach them",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Catalonia": 4553
+   },
+   "oursTotal": 4553,
+   "oursLost": 1986,
+   "theirs": {
+    "Castile": 24299
+   },
+   "theirsTotal": 24299,
+   "theirsLost": null,
+   "location": "Chelva (Xelva), Valencia",
+   "side": "Catalonia defending",
+   "note": "under way on 9 December with the Emperor's 10,533 and Valencia's 3,309 marching to it; by 13 December the Catalans had broken and retreated with 2,567 (Trent's screenshots). Their losses are the difference; Castile's are not shown"
+  },
+  "source": "Trent's account and screenshots of 9 and 13 December 1375",
+  "places": [
+   "shalba"
+  ]
  }
 ]
