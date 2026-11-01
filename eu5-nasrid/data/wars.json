@@ -365,5 +365,29 @@
    "from": "1368-10-24",
    "to": "1370-09-12"
   }
+ },
+ {
+  "id": "war-of-the-upper-march",
+  "name": "The War of the Upper March",
+  "gameName": "Reconquest of Iberia",
+  "start": "1373-12-01",
+  "end": null,
+  "goal": "The Reconquest of Iberia: Aragon's lands, at reduced cost (cb_reconquer_iberia, won with the Battle for the Strait)",
+  "allies": [
+   "Valencia",
+   "Murcia",
+   "Taifa of the Algarve",
+   "Mamluks"
+  ],
+  "enemies": [
+   "Aragon",
+   "Sicily",
+   "Athens",
+   "Negroponte"
+  ],
+  "involvement": "belligerent",
+  "note": "On 1 December 1373 Granada declared war on Aragon under the Reconquest of Iberia claim, the second it had drawn up, six months after the truce of 1365 ran out. The sultan marched the armies of the realm to Balansiyya himself in early October and meant to fight with his regulars, raising levies only if he had to (Trent's account). Aragon fights with Sicily, the crown its king also wears, and Sicily's subjects Athens, Negroponte and a third; Sicily's allies Genoa, busy with its own war against Bologna and Pisa since May 1373, and the Pope did not join. The Mamlūks and their vassals came in on Granada's side, their galleys pointed at the shores of Sicily (Trent's account). At the declaration Granada had 3,300 men under arms, all regulars, and 4 ships; its ṭāʾifas none. Aragon had 400 men and 3 ships, Sicily 3 ships, the Mamlūks 4,050 men. Nobody had raised levies (save of 1 December 1373).",
+  "score": [],
+  "outcome": null
  }
 ]

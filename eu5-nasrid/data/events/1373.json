@@ -202,5 +202,75 @@
    }
   },
   "source": "Trent's account, early October 1373"
+ },
+ {
+  "id": "1373-12-01-war-on-aragon",
+  "date": "1373-12-01",
+  "type": "war_declared",
+  "people": [
+   "saad-ibn-yusuf",
+   "joan-of-aragon"
+  ],
+  "wars": [
+   "war-of-the-upper-march"
+  ],
+  "title": "Gharnāṭa declares war on Arghūn to reconquer the Upper March. Arghūn stands with Sicily alone; Genoa and the Pope stay out",
+  "data": {
+   "cb": "cb_reconquer_iberia",
+   "attacker": "GRA",
+   "defender": "ARA",
+   "defenders": [
+    "ARA",
+    "SIC",
+    "ATH",
+    "NEG",
+    "ABA90"
+   ],
+   "men": {
+    "GRA": 3300,
+    "ARA": 400,
+    "SIC": 0,
+    "MAM": 4050
+   },
+   "ships": {
+    "GRA": 4,
+    "ARA": 3,
+    "SIC": 3,
+    "MAM": 1
+   },
+   "stayedOut": {
+    "GEN": "allied to Sicily; at war with Bologna and Pisa since 20 May 1373",
+    "PAP": "allied to Sicily"
+   }
+  },
+  "source": "save of 1 December 1373"
+ },
+ {
+  "id": "1373-12-01-mamluks-join",
+  "date": "1373-12-01",
+  "type": "war_joined",
+  "people": [
+   "bolot-mamluk"
+  ],
+  "wars": [
+   "war-of-the-upper-march"
+  ],
+  "title": "The Mamlūks answer the call to arms with their vassals, and their galleys turn toward the shores of Sicily",
+  "data": {
+   "joined": [
+    "MAM",
+    "DUL",
+    "MEC",
+    "MDA",
+    "AAL",
+    "AMR",
+    "DGE",
+    "FDL",
+    "BQA",
+    "SKN",
+    "AAA00"
+   ]
+  },
+  "source": "save of 1 December 1373; Trent's account"
  }
 ]
