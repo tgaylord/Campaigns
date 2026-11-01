@@ -415,15 +415,18 @@
   "date": "1375-04-15",
   "type": "marriage",
   "people": [
-   "saad-ibn-yusuf",
-   "francesc-de-montsoriu"
+   "fatima-bint-yusuf",
+   "francesc-de-montsoriu",
+   "saad-ibn-yusuf"
   ],
-  "title": "A royal marriage binds the house of Naṣr to the new Ṭāʾifa of Catalonia",
+  "title": "The Emperor's sister Fāṭima, seventeen, is married to Francesc de Montsoriu, the ḥājib of the new Ṭāʾifa of Catalonia: the house of Naṣr is bound to Barcelona",
   "data": {
    "with": "CAT",
-   "kind": "royal marriage"
+   "kind": "royal marriage",
+   "bride": "fatima-bint-yusuf",
+   "groom": "francesc-de-montsoriu"
   },
-  "source": "save of 5 June 1375"
+  "source": "Trent's account; save of 5 June 1375"
  },
  {
   "id": "1375-06-05-war-on-castile",

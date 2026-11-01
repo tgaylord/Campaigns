@@ -1007,10 +1007,18 @@
   "father": "yusuf-i",
   "mother": "tizemt-hafsid",
   "female": true,
-  "roles": [],
+  "roles": [
+   "wife of the ḥājib of Catalonia"
+  ],
   "traits": [
    "child_gallant"
-  ]
+  ],
+  "stats": {
+   "adm": 38,
+   "dip": 62,
+   "mil": 70
+  },
+  "note": "Daughter of Yūsuf I and Tizemt the Ḥafṣid, full sister of Maryam and younger half-sister of the Emperor Saʿd. Married on 15 April 1375 to Francesc de Montsoriu, the ḥājib of the new Ṭāʾifa of Catalonia, binding the house of Naṣr to Barcelona (Trent's account; save of 5 June 1375)."
  },
  {
   "id": "aisha-bint-yusuf",
@@ -1592,7 +1600,7 @@
   "dynasty": "de Montsoriu",
   "born": "1342-05-10",
   "roles": [
-   "ruler of the Ṭāʾifa of Qaṭalūniya"
+   "ḥājib of the Ṭāʾifa of Qaṭalūniya"
   ],
   "stats": {
    "adm": 48,
@@ -1600,7 +1608,7 @@
    "mil": 62
   },
   "traits": [],
-  "note": "A Catalan, Sunni, first ruler of the Ṭāʾifa of Catalonia, carved from the conquered lands of Aragon around Barcelona on 16 March 1375 (save of 16 March 1375)."
+  "note": "A Catalan, Sunni, first ruler of the Ṭāʾifa of Catalonia, the ḥājib in the court's word, carved from the conquered lands of Aragon around Barcelona on 16 March 1375. On 15 April 1375 he married the Emperor's sister Fāṭima bint Yūsuf (save of 5 June 1375; Trent's account)."
  },
  {
   "id": "alfons-de-borja",
