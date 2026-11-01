@@ -112,5 +112,26 @@
    "note": "the return of all 58 towns is expected from the revolt's end; a save will confirm it"
   },
   "source": "Trent's account, 30 April 1383"
+ },
+ {
+  "id": "1383-04-30-hajj-planned",
+  "date": "1383-04-30",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "With the realm finally secure, the Emperor takes up the pilgrimage he put off in 774 until the truces had run out and the wars were fought. The next Hajj falls in Dhū al-Ḥijja 785, at the start of February 1384",
+  "data": {
+   "postponed": "1373-01-16 (see that entry)",
+   "nextHajj": {
+    "start": "1384-02-01",
+    "arafa": "1384-02-02",
+    "eid": "1384-02-03",
+    "end": "1384-02-06",
+    "hijri": "8–13 Dhū al-Ḥijja 785 (tabular calendar; may be a day or two off)"
+   },
+   "truces": "Castile, Portugal and Rome to 6 April 1393; Sicily to 15 April 1386; no truce ends near the pilgrimage"
+  },
+  "source": "Trent's account, April 1383"
  }
 ]
