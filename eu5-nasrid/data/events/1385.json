@@ -39,16 +39,22 @@
   "date": "1385-08-23",
   "type": "player_note",
   "people": [
-   "saad-ibn-yusuf"
+   "saad-ibn-yusuf",
+   "ismail-ibn-saad",
+   "dua-marinid",
+   "aiman-mamluk"
   ],
   "places": [
    "ishbiliyya"
   ],
-  "title": "With the last rising put down, the Emperor sets out on the Hajj at last, twelve years after he first put it off",
+  "title": "With the last rising put down, the Emperor sets out on the Hajj at last, twelve years after he first put it off. His caravan is as exquisite as his father's was. The heir, Prince Ismāʿīl, rules as regent, while his mother Duʿā and Aiman, the Emperor's principal wife, squabble in his absence",
   "data": {
    "departure": "1385-08-23 (16 Rajab 787)",
    "hajj": "8–13 Dhū al-Ḥijja 787, about 10–15 January 1386 (tabular calendar)",
-   "firstPostponed": "1373-01-16"
+   "firstPostponed": "1373-01-16",
+   "regent": "Ismāʿīl ibn Saʿd, the heir, aged nineteen",
+   "court": "Duʿā (the regent's mother) and Aiman (mother of Prince Yūsuf) at odds, the factions of 1375 again",
+   "caravan": "as exquisite as Yūsuf I's on his royal Hajj"
   },
   "source": "Trent's account, 23 August 1385"
  }
