@@ -389,8 +389,8 @@
   "source": "Trent's account and screenshot of the event, 16 March 1375; save of 16 March 1375"
  },
  {
-  "id": "1375-03-16-maryam-to-the-diwan",
-  "date": "1375-03-16",
+  "id": "1375-03-17-maryam-to-the-diwan",
+  "date": "1375-03-17",
   "type": "appointment",
   "people": [
    "maryam-bint-yusuf",
@@ -405,8 +405,103 @@
     58,
     84
    ],
-   "consort": "Aiman: no formal office (the game bars the consort from the council); a member in the chronicle by the harem's strength (Trent's ruling)"
+   "consort": "Aiman: no formal office (the game bars the consort from the council); a member in the chronicle by the harem's strength (Trent's ruling)",
+   "action": "changing the realm's societal values (from 17 March 1375)"
   },
-  "source": "Trent's account, March 1375 (after the save of 16 March 1375)"
+  "source": "Trent's account; save of 5 June 1375 (her seat in the dīwān from 17 March)"
+ },
+ {
+  "id": "1375-04-15-catalan-marriage",
+  "date": "1375-04-15",
+  "type": "marriage",
+  "people": [
+   "saad-ibn-yusuf",
+   "francesc-de-montsoriu"
+  ],
+  "title": "A royal marriage binds the house of Naṣr to the new Ṭāʾifa of Catalonia",
+  "data": {
+   "with": "CAT",
+   "kind": "royal marriage"
+  },
+  "source": "save of 5 June 1375"
+ },
+ {
+  "id": "1375-06-05-war-on-castile",
+  "date": "1375-06-05",
+  "type": "war_declared",
+  "people": [
+   "saad-ibn-yusuf",
+   "jeronimo-of-castile"
+  ],
+  "wars": [
+   "war-of-the-aragonese-restoration"
+  ],
+  "title": "The truce with Qashtāla runs out, and the Emperor does not wait. The French are pushing the English into the sea; wait, and Rome will rally France to blunt the advance. War is declared on Castile under the Reconquest of Iberia, framed as the restoration of Aragon, and a levy of gold and men is laid on the nobles and the ṭāʾifas",
+  "data": {
+   "cb": "cb_reconquer_iberia",
+   "target": "CAS",
+   "framing": "the Aragonese restoration: Zaragoza, Huesca, Teruel and the Aragonese heartland, held by Castile",
+   "treasury": [
+    286,
+    1579
+   ],
+   "forces": {
+    "al-Andalus": 3300,
+    "Castile": 1750,
+    "Portugal": 1050,
+    "Papal States": 684,
+    "Mamluks": 3930
+   },
+   "ships": {
+    "al-Andalus": 4,
+    "Castile": 10,
+    "Portugal": 6,
+    "Papal States": 4
+   },
+   "levy": "on the nobles and the ṭāʾifas, in gold and men (Trent)",
+   "greatPowerRank": [
+    17,
+    13
+   ],
+   "franceVsEngland": "+25% for France"
+  },
+  "source": "Trent's account; save of 5 June 1375"
+ },
+ {
+  "id": "1375-06-05-rome-and-lisbon",
+  "date": "1375-06-05",
+  "type": "war_joined",
+  "people": [],
+  "wars": [
+   "war-of-the-aragonese-restoration"
+  ],
+  "title": "Rome and Lisbon answer the Castilian call: Portugal, Castile's partner in the union, and the Papal States with their vassals Faenza, Siena and a third. Egypt answers ours, with its vassals",
+  "data": {
+   "castile": [
+    "POR",
+    "PAP",
+    "FAE",
+    "SIE",
+    "AAA02"
+   ],
+   "alAndalus": [
+    "ARA",
+    "CAT",
+    "VAL",
+    "ALV",
+    "MAM",
+    "DUL",
+    "MEC",
+    "MDA",
+    "AAL",
+    "AMR",
+    "DGE",
+    "FDL",
+    "BQA",
+    "SKN",
+    "AAA00"
+   ]
+  },
+  "source": "Trent's account; save of 5 June 1375"
  }
 ]

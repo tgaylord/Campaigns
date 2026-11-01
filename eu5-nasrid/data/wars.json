@@ -406,5 +406,36 @@
    }
   ],
   "outcome": "Granadan victory. Aragon gave up every town it still held, 34 of them and half a million people, and ceased to hold land; Malta passed to the Mamlūks and Sicily paid reparations; King Joan was let go to Palermo (peace of 15 March 1375, war score +61%)."
+ },
+ {
+  "id": "war-of-the-aragonese-restoration",
+  "name": "The War of the Aragonese Restoration",
+  "gameName": "Reconquest of Iberia",
+  "start": "1375-06-05",
+  "end": null,
+  "goal": "The Reconquest of Iberia against Castile (cb_reconquer_iberia, the claim drawn up in March 1371); framed by the Emperor as the restoration of Aragon's lands, Saraqusṭa and the Aragonese heartland among them, to the renewed Kingdom of Aragon",
+  "allies": [
+   "Aragon",
+   "Catalonia",
+   "Valencia",
+   "Taifa of the Algarve",
+   "Mamluks"
+  ],
+  "enemies": [
+   "Castile",
+   "Portugal",
+   "Papal States",
+   "Faenza",
+   "Siena"
+  ],
+  "involvement": "belligerent",
+  "note": "On 5 June 1375, the day the truce of 1366 ran out, al-Andalus declared war on Castile under the Reconquest of Iberia claim. The Emperor framed it as the restoration of Aragon, whose heartland from Zaragoza to Teruel Castile held. The French were pushing the English into the sea, and if al-Andalus waited, Rome would rally France to blunt its advance; it could not afford to wait. A levy was laid on the nobles and on the ṭāʾifas, in gold and in men (Trent's account): the treasury stood at 1,579 against 286 in March. Rome and Lisbon answered the Castilian call: Portugal, in personal union with Castile since 1367, and the Papal States with three vassals, Faenza, Siena and a third. Egypt answered al-Andalus's, with its vassals; the four ṭāʾifas, Aragon and Catalonia among them, fought beside the Emperor (Trent's account; save of 5 June 1375). At the declaration al-Andalus had 3,300 men under arms, all regulars, and 4 ships; its ṭāʾifas 3 ships and no men. Castile had 1,750 men and 10 ships, Portugal 1,050 and 6, Rome 684 and 4, the Mamlūks 3,930. Nobody had raised levies. France, at +25% in its war with England, had 12,500 men in the field (save of 5 June 1375).",
+  "outcome": null,
+  "score": [
+   {
+    "date": "1375-06-05",
+    "value": 0
+   }
+  ]
  }
 ]
