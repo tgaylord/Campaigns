@@ -110,7 +110,7 @@
   "wars": [
    "war-of-the-aragonese-restoration"
   ],
-  "title": "Peace with Castile and Portugal. Valladolid is weeks from falling, the Emperor's army is marching on Lisbon, the Moors have cleared a path through the sea, and the first Mamlūk army is off the coast of Tunis. Offered the choice the Aragonese were given, peace or blood, the Iberians choose peace. The Aragonese heartland, 24 towns from Jaca to Teruel with Zaragoza at its heart, is restored to the renewed Kingdom of Aragon; 46 towns of the Middle and Lower Marches, Toledo, Badajoz and Mérida among them, pass to al-Andalus; Castile pays reparations. The war score stands at +100%",
+  "title": "Peace with Castile and Portugal. Valladolid is weeks from falling, the Emperor's army is marching on Lisbon, the Moors have cleared a path through the sea, and the first Mamlūk army is off the coast of Tunis. Offered the choice the Aragonese were given, peace or blood, the Iberians choose peace. The Aragonese heartland, 24 towns from Jaca to Teruel with Zaragoza at its heart, is restored to the renewed Kingdom of Aragon; 46 towns of the Middle and Lower Marches, Toledo, Badajoz and Mérida among them, pass to al-Andalus; Castile pays reparations. The war score stands at +100%. The castles of León, Zamora, Valladolid, Segovia, Cuenca, Pamplona and Laguardia, in the lands Castile keeps, are to be razed",
   "data": {
    "with": [
     "CAS",
@@ -233,9 +233,64 @@
     "ourSide": 19256,
     "theirSide": 41121,
     "note": "losses in the war's land battles from the save's battle list, ours with the ṭāʾifas; attrition and sieges not counted"
-   }
+   },
+   "fortsRazed": [
+    "León",
+    "Zamora",
+    "Valladolid",
+    "Segovia",
+    "Cuenca",
+    "Pamplona",
+    "Laguardia"
+   ],
+   "alsoGone": "in the ceded towns the military orders' commanderies at Consuegra and Alcázar de San Juan and six rotten boroughs vanished with the change of owner"
   },
   "source": "saves of 6 April 1378 before and after the peace; Trent's account"
+ },
+ {
+  "id": "1378-04-06-castles-razed",
+  "date": "1378-04-06",
+  "type": "territory_change",
+  "people": [
+   "jeronimo-of-castile"
+  ],
+  "wars": [
+   "war-of-the-aragonese-restoration"
+  ],
+  "title": "By the peace Castile razes seven of its castles in the lands it keeps, opening the road to its heart: León, Zamora, Valladolid, Segovia, Cuenca, Pamplona and Laguardia",
+  "data": {
+   "razed": [
+    {
+     "location": "León",
+     "building": "castle"
+    },
+    {
+     "location": "Zamora",
+     "building": "castle"
+    },
+    {
+     "location": "Valladolid",
+     "building": "castle"
+    },
+    {
+     "location": "Segovia",
+     "building": "castle"
+    },
+    {
+     "location": "Cuenca",
+     "building": "castle"
+    },
+    {
+     "location": "Pamplona",
+     "building": "castle"
+    },
+    {
+     "location": "Laguardia",
+     "building": "castle"
+    }
+   ]
+  },
+  "source": "saves of 6 April 1378 before and after the peace (buildings compared); Trent's account"
  },
  {
   "id": "1378-05-01-gem-of-iberia",
@@ -349,5 +404,27 @@
    "purpose": "integrating the conquered Christian lands"
   },
   "source": "Trent's account, May 1378"
+ },
+ {
+  "id": "1378-05-khilafat-qurtuba-renewed",
+  "date": "1378-05-01",
+  "type": "reform",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "qurtuba"
+  ],
+  "title": "The scholars of the realm work toward Khilāfat Qurṭuba Renewed: the ceremonial of ʿAbd al-Raḥmān III revived, the throne hall of a rebuilt Madīnat al-Zahrāʾ, ṭirāz robes worked in gold thread with the ruler's regnal year, the Friday sermon in the Great Mosque of Qurṭuba, dīnārs of West African gold, investiture banners for the Maghribī sultans, and the Mamlūks received as equals; the dhimma covenant over the realm's Christians and Jews formalised",
+  "data": {
+   "advance": "Khilāfat Qurṭuba Renewed",
+   "progress": "84% (Trent's screen)",
+   "effects": {
+    "separatism": "−5%",
+    "toleranceHeathen": 1
+   },
+   "note": "part of the reforms and the integration of the new lands (Trent); the step toward the caliphate the Emperor may one day claim"
+  },
+  "source": "Trent's account and screenshot, spring 1378"
  }
 ]
