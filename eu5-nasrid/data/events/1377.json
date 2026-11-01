@@ -145,5 +145,26 @@
    }
   },
   "source": "Trent's account and battle screen, 13 June 1377"
+ },
+ {
+  "id": "1377-09-30-morocco-joins",
+  "date": "1377-09-30",
+  "type": "war_joined",
+  "people": [
+   "abu-inan-faris",
+   "abu-al-fadl-marinid",
+   "jadila-bint-yusuf",
+   "dua-marinid"
+  ],
+  "wars": [
+   "war-of-the-aragonese-restoration"
+  ],
+  "title": "On 30 September, the day Morocco's truce with Castile runs out, the court asks the Moors to join the war, and Fās answers with a call to arms. The ally the Emperor doubted keeps its word",
+  "data": {
+   "joined": "MOR",
+   "truceEnded": "1377-09-30",
+   "alliance": "since 16 January 1376"
+  },
+  "source": "Trent's account, 30 September 1377"
  }
 ]
