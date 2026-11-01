@@ -1,5 +1,20 @@
 [
  {
+  "id": "1389-05-01-castile-portugal-split",
+  "date": "1389-05-01",
+  "type": "ruler_change",
+  "people": [
+   "jeronimo-of-castile"
+  ],
+  "title": "The union of Castile and Portugal breaks. From 1 May 1389 Castile has its own king, Fernando, while Jerónimo keeps Portugal. The two crowns remain allies, but for the first time since 1367 they are truly split",
+  "data": {
+   "castile": "Fernando, king from 1389-05-01",
+   "portugal": "Jerónimo, king since 1367-10-04",
+   "alliance": "Castile and Portugal still allied (save of 2 January 1394)"
+  },
+  "source": "save of 2 January 1394; Trent's account"
+ },
+ {
   "id": "1389-08-09-the-hisba",
   "date": "1389-08-09",
   "type": "reform",

@@ -1,0 +1,18 @@
+[
+ {
+  "id": "1393-coalition",
+  "date": "1393-05-03",
+  "type": "diplomacy",
+  "people": [],
+  "title": "Fear of al-Andalus binds its neighbours: Castile (3 May), Portugal (6 May) and Andorra (17 August) take up a coalition casus belli against the empire",
+  "data": {
+   "members": {
+    "Castile": "1393-05-03",
+    "Portugal": "1393-05-06",
+    "Andorra": "1393-08-17"
+   },
+   "cb": "cb_coalition"
+  },
+  "source": "save of 2 January 1394"
+ }
+]

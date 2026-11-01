@@ -1,0 +1,47 @@
+[
+ {
+  "id": "1394-01-02-eve-of-war",
+  "date": "1394-01-02",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf",
+   "ismail-ibn-saad"
+  ],
+  "title": "The truce with Castile is long over and a new claim, the Reconquest of Iberia, has been ready since New Year's Day. The Emperor marches north for another war with the Iberians, and the Moors and the Egyptians join him",
+  "data": {
+   "cb": "cb_reconquer_iberia (from 1394-01-01)",
+   "spyNetwork": "on Castile since 1391-05-01",
+   "allies": [
+    "Morocco",
+    "Mamluks"
+   ],
+   "forces": {
+    "al-Andalus": "4,900 regulars, 16 ships",
+    "Castile": "750 men, 19 ships",
+    "Portugal": "1,550 men, 7 ships",
+    "Morocco": "1,900, 30 ships",
+    "Mamluks": "4,050, 4 ships"
+   },
+   "realm": {
+    "towns": 118,
+    "population": 1436883,
+    "rank": 9,
+    "treasury": 550,
+    "income": 142.1,
+    "expenses": 117.1,
+    "loans": 565,
+    "stability": 38.5,
+    "prestige": 95
+   },
+   "diwan": {
+    "Umm al-Fatḥ (the Emperor's daughter by Aiman)": "integrating the new lands, in Duʿā's old seat",
+    "Ismāʿīl ibn Yūsuf": "integrating the new lands",
+    "Maryam": "integrating the new lands",
+    "Ismāʿīl ibn Saʿd": "promoting Andalusī culture (from 21 November 1390)"
+   },
+   "castileFrance": "truce with France to 12 September 1397 (peace of 12 March 1388)",
+   "declaration": "a save from after the declaration will follow (Trent)"
+  },
+  "source": "save of 2 January 1394 (a reading, before the declaration); Trent's account"
+ }
+]

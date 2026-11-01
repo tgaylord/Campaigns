@@ -1111,7 +1111,7 @@
    "regent (1385–1386)"
   ],
   "traits": [],
-  "note": "Son and heir of Sultan Saʿd, born to Duʿāʾ the Marīnid on 8 March 1366, a month before the Peace of Independence. At eight he was already a silver tongue (63 in diplomacy). In late 1374 he and his half-brother Yūsuf were both given the costly tutors their father had had; his mother Duʿā had wanted them for him alone (Trent's account). On 16 March 1375 he was betrothed to Bernarda of Murcia, the gifted heir of the Ṭāʾifa of Mursiyya, as Murcia was taken into the crown (Trent's account). From 23 August 1385 he ruled as regent while his father made the Hajj, with his mother Duʿā and Aiman quarrelling at court (Trent's account). Before that he had served as an admiral, to carry the crown's authority over the seas. In 1386 he was brought home, and on 22 January 1387 he took the seat in the dīwān created by the Ḥijāba, to help his father's scholar-building project (Trent's account). He had married Bernarda of Murcia by 1 October 1387.",
+  "note": "Son and heir of Sultan Saʿd, born to Duʿāʾ the Marīnid on 8 March 1366, a month before the Peace of Independence. At eight he was already a silver tongue (63 in diplomacy). In late 1374 he and his half-brother Yūsuf were both given the costly tutors their father had had; his mother Duʿā had wanted them for him alone (Trent's account). On 16 March 1375 he was betrothed to Bernarda of Murcia, the gifted heir of the Ṭāʾifa of Mursiyya, as Murcia was taken into the crown (Trent's account). From 23 August 1385 he ruled as regent while his father made the Hajj, with his mother Duʿā and Aiman quarrelling at court (Trent's account). Before that he had served as an admiral, to carry the crown's authority over the seas. In 1386 he was brought home, and on 22 January 1387 he took the seat in the dīwān created by the Ḥijāba, to help his father's scholar-building project (Trent's account). He had married Bernarda of Murcia by 1 October 1387. In May 1391 he took a second wife, ʿĀʾisha of the house of ʿOthmān. His sons: Yūsuf (1383–1384) and Muḥammad (born 25 October 1385) by Bernarda; Saʿd (born 17 June 1392) and Aḥmad (born 21 October 1393) by ʿĀʾisha (save of 2 January 1394).",
   "stats": {
    "adm": 47,
    "dip": 100,
@@ -1603,7 +1603,7 @@
   "traits": [
    "gifted child"
   ],
-  "note": "Daughter of Dolça d'Oriola and Blai Manrique de Lara, Sunni, heir of the Ṭāʾifa of Mursiyya; a gifted child, Castilian by culture like her father. Murcia's court ties itself closely to the Catalans through its traders. Betrothed to the heir Ismāʿīl ibn Saʿd when Murcia was taken into the crown on 16 March 1375. She is being raised at the Castilian court for now, something to watch, though the betrothal holds (Trent's account; save of 16 March 1375, where she sits in Castile). Married to the crown prince Ismāʿīl by 1 October 1387 (save of that date)."
+  "note": "Daughter of Dolça d'Oriola and Blai Manrique de Lara, Sunni, heir of the Ṭāʾifa of Mursiyya; a gifted child, Castilian by culture like her father. Murcia's court ties itself closely to the Catalans through its traders. Betrothed to the heir Ismāʿīl ibn Saʿd when Murcia was taken into the crown on 16 March 1375. She is being raised at the Castilian court for now, something to watch, though the betrothal holds (Trent's account; save of 16 March 1375, where she sits in Castile). Married to the crown prince Ismāʿīl by 1 October 1387 (save of that date). Mother of Yūsuf (1383–1384) and Muḥammad (born 25 October 1385)."
  },
  {
   "id": "francesc-de-montsoriu",
@@ -1676,5 +1676,25 @@
   },
   "traits": [],
   "note": "An Andalusī of Jayyān, Sunni, a courtier at Gharnāṭa, forty in 1391 (birth year estimated from his age). In 1391, under the trade contract with Mali, he was sent to chart the way to Mali along the Atlantic coast instead of across the desert (Trent's account and screenshot)."
+ },
+ {
+  "id": "aisha-ottoman",
+  "name": "ʿĀʾisha of the house of ʿOthmān",
+  "nameArabic": "عائشة",
+  "nameGame": "Aisha",
+  "gameId": 62838,
+  "born": "1375-05-15",
+  "female": true,
+  "dynasty": "Ottoman",
+  "roles": [
+   "wife of the crown prince"
+  ],
+  "stats": {
+   "adm": 66,
+   "dip": 37,
+   "mil": 47
+  },
+  "traits": [],
+  "note": "An Ottoman princess, Turkish by culture, married in May 1391 to the crown prince Ismāʿīl ibn Saʿd as his second wife. Mother of Saʿd (born 17 June 1392) and Aḥmad (born 21 October 1393) (save of 2 January 1394)."
  }
 ]
