@@ -332,34 +332,84 @@
   "source": "Trent's account and screenshots of 12 June and 16 August 1376"
  },
  {
-  "id": "1376-08-16-agramunt-joined",
-  "date": "1376-08-16",
-  "type": "player_note",
+  "id": "1376-09-01-battle-agramunt",
+  "date": "1376-09-01",
+  "type": "battle",
   "people": [
    "saad-ibn-yusuf"
   ],
   "wars": [
    "war-of-the-aragonese-restoration"
   ],
-  "title": "The second great battle of the war is joined at Agramunt, in the Catalan plain below the Pyrenees: the Emperor's 13,400, with the mercenaries of the Marches, Valencia and the Algarve, against 18,350 Castilians under the general who won at Šalba",
+  "title": "Slaughter at Agramunt. In the Catalan plain the Emperor's 15,000, the mercenaries of the Marches at their heart, meet 19,000 Castilians under the general of Šalba. After a fortnight 12,700 of Castile's men are dead or scattered, against 2,840 of ours, and the war swings by 19 points",
   "data": {
-   "ours": 13392,
-   "theirs": 18350,
-   "onMap": {
-    "ours": 14752,
-    "theirs": 18400
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "al-Andalus, Valencia, the Algarve and Catalonia": 15038
    },
-   "dice": "8–7",
+   "oursTotal": 15038,
+   "oursLost": 2839,
+   "theirs": {
+    "Castile and the Papal States": 19073
+   },
+   "theirsTotal": 19073,
+   "theirsLost": 12724,
+   "location": "Agramunt, Catalonia",
+   "side": "al-Andalus attacking",
+   "warScore": 19.09,
+   "began": "1376-08-16 (13,392 against 18,350)",
    "commanders": {
     "al-Andalus": "the Emperor Saʿd (100/68/100)",
     "Castile": "the general of Šalba (53/54/89)"
    },
-   "early": {
-    "oursLost": 285,
-    "theirsLost": 672
-   },
-   "warScore": -41
+   "units": {
+    "ours": {
+     "infantry": [
+      4538,
+      1403
+     ],
+     "heavyInfantry": [
+      6000,
+      256
+     ],
+     "lightCavalry": [
+      2800,
+      990
+     ],
+     "heavyCavalry": [
+      1000,
+      99
+     ],
+     "support": [
+      700,
+      93
+     ]
+    },
+    "theirs": {
+     "infantry": [
+      18022,
+      12030
+     ],
+     "heavyInfantry": [
+      500,
+      329
+     ],
+     "lightCavalry": [
+      400,
+      266
+     ],
+     "heavyCavalry": [
+      101,
+      101
+     ],
+     "support": [
+      50,
+      0
+     ]
+    }
+   }
   },
-  "source": "Trent's screenshot of 16 August 1376"
+  "source": "Trent's account and battle screens, 16 August to 1 September 1376"
  }
 ]
