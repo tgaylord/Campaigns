@@ -56,5 +56,25 @@
    "weapons": "madāfiʿ: fire-tubes and small bombards (the game says firearms)"
   },
   "source": "Trent's account and screenshot of the event, 8 June 1391"
+ },
+ {
+  "id": "1391-07-01-merchant-at-sea",
+  "date": "1391-07-01",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "This time the pilgrimage goes by sea. Off the coast of the Maghrib a merchant ship hails the Emperor's vessels, her decks stacked with silk and fine cloth from distant ports, and the Emperor buys the finest aboard after a merchant's unhurried haggling. The caravan grows more splendid",
+  "data": {
+   "event": "The Royal Ḥajj: A Merchant at Sea",
+   "choice": "Buy the finest cloth aboard (the option on Trent's screen)",
+   "effects": {
+    "gold": -32.86,
+    "splendor": 20,
+    "pause": "10 days"
+   },
+   "other": "No time to haggle. Wave them on."
+  },
+  "source": "Trent's screenshot of the event, 1 July 1391"
  }
 ]
