@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { countryByTag, compact, nf, year } from "../lib/data";
+import { countryByTag, compact, nf, year, western } from "../lib/data";
 import type { World } from "../lib/world";
-import { powerName, gameName, personOf, subjectWord, ordinal } from "../lib/world";
+import { powerName, gameName, personOf, subjectWord, ordinal, followed } from "../lib/world";
 import "./dispatch.css";
 
 /** Where a power stands on the world's ladder, in words. */
@@ -13,6 +13,13 @@ export function standing(tag: string, w: World): string {
   const firstRegional = Math.min(...w.ladder.filter((r) => r[3]).map((r) => r[1]), 999);
   const kind = p.regional ? "Regional Power" : p.rank < firstRegional ? "Great Power" : null;
   return `${kind ? `${kind}, ` : ""}${ordinal(p.rank)} in the world`;
+}
+
+/** Truces sharing an end date (a peace with several countries at once), soonest first; only the followed powers and Granada are named. */
+function groupTruces(ts: [string, string, string][]): [string, string[]][] {
+  const by = new Map<string, string[]>();
+  for (const [t, until] of ts) if (followed.has(t)) by.set(until, [...(by.get(until) ?? []), t]);
+  return [...by.entries()].sort((a, b) => a[0].localeCompare(b[0]));
 }
 
 /** A short account of one power at one checkpoint: its standing, its sovereign, its strength and its ties. */
@@ -64,6 +71,9 @@ export default function Dispatch({ tag, w, prev, tags, tone = "night", heading =
         {p.subjects.length > 0 && <li className="subs"><span className="k">Subjects</span>{p.subjects.length > 4 ? `${p.subjects.length}, among them ${p.subjects.slice(0, 3).map(([t]) => name(t)).join(", ")}` : list(p.subjects.map(([t]) => t))}</li>}
         {p.allies.length > 0 && <li className="ally"><span className="k">Allies</span>{list(p.allies)}</li>}
         {p.rivals.length > 0 && <li className="rival"><span className="k">Rivals</span>{list(p.rivals)}</li>}
+        {(p.truces ?? []).length > 0 && <li className="truce"><span className="k">Truces</span>{groupTruces(p.truces!).map(([until, with_], n) => (
+          <span key={until}>{n > 0 && "; "}{with_.map(name).join(", ")} until {western(until)}</span>
+        ))}</li>}
         {wars.map((x, n) => {
           const foes = x.attackers.includes(tag) ? x.defenders : x.attackers;
           const lead = x.attackers.includes(tag) ? x.defender : x.attacker;

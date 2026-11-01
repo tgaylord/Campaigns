@@ -14,7 +14,7 @@ Writes <out-dir>/<checkpoint>.json:
   powers   every power on the ladder plus the ones data/powers.json follows:
            size (locations, people in thousands, with subjects), income, gold,
            men under arms (regulars + raised levies, as tools in SYSTEMS.md §4),
-           ships, ruler and heir, overlord, subjects, allies, rivals
+           ships, ruler and heir, overlord, subjects, allies, rivals, truces in force
   unions   personal unions touching the followed powers
   wars     wars the followed powers are fighting, by side
   orders   the Emperor, the Pope, and the Guelph and Ghibelline leagues
@@ -130,10 +130,23 @@ for m in re.finditer(r'\n\t(\w+)=\{\n\t\tfirst=(\d+)\n\t\tsecond=(\d+)(.*?)\n\t\
         subjects[x].append([y, st]); overlord[y] = [x, st]
     elif kind == 'scripted_mutual' and 'object=alliance' in body: allies[x].add(y); allies[y].add(x)
     elif kind == 'scripted_oneway' and 'object=guarantee' in body: guarantees[x].add(y)
-rivals = {}
+rivals, truces = {}, collections.defaultdict(list)
 for m in re.finditer(r'\n\t(\d+)=\{\n(.*?)\n\t\}(?=\n\t\d+=\{|\n\})', dip, re.S):
     r = re.search(r'rivals_2=\{\n\t\t\tlist=\{(.*?)\n\t\t\t\}', m.group(2), re.S)
     if r and ID.get(m.group(1)): rivals[ID[m.group(1)]] = [ID.get(x) for x in re.findall(r'country=(\d+)', r.group(1)) if ID.get(x)]
+    # truces: the save keeps only each relation's last peace and its war score; the game's truce is
+    # 5 years plus 1.2 months per point of war score, rounded down, in calendar months
+    # (TRUCE_YEARS 5, SCALED_TRUCE_YEARS 10; matched to the day against Trent's tooltips, November 1370)
+    if ID.get(m.group(1)):
+        for rel in re.finditer(r'\n\t\t\t(\d+)=\{\n(.*?)\n\t\t\t\}', m.group(2), re.S):
+            lw = re.search(r'\n\t\t\t\tlast_war=([\d.]+)', '\n' + rel.group(2)); ws = re.search(r'\n\t\t\t\twar_score=([-\d.]+)', '\n' + rel.group(2))
+            if not lw or not ID.get(rel.group(1)): continue
+            y, mo, da = (int(p) for p in lw.group(1).split('.'))
+            months = 60 + int(1.2 * abs(float(ws.group(1))) if ws else 0)
+            mo2 = mo - 1 + months
+            ml = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31][mo2 % 12]  # the game's calendar has no leap years
+            until = f'{y + mo2 // 12}-{mo2 % 12 + 1:02d}-{min(da, ml):02d}'
+            if until > iso(date): truces[ID[m.group(1)]].append([ID[rel.group(1)], until, iso(lw.group(1))])
 del dip
 
 # men under arms: regulars + raised levies (a missing strength is full; 1.0 = 1,000 men); ships
@@ -200,6 +213,7 @@ for t in sorted(WANT):
         'ruler': reign(gov), 'heir': person(get(gov, 'heir')),
         'overlord': overlord.get(t), 'subjects': subs,
         'allies': sorted(allies[t]), 'rivals': rivals.get(t, []), 'guarantees': sorted(guarantees[t]),
+        'truces': sorted(truces.get(t, []), key=lambda x: x[1]),
     }
 
 # international organisations: unions, the Empire, the Church, the Italian leagues

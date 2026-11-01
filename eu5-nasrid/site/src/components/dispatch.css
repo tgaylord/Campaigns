@@ -47,3 +47,6 @@
 .dispatch.parchment .ties .ally .k { color: #1f6650; }
 .dispatch.parchment .ties .rival .k, .dispatch.parchment .ties .war .k { color: #8f2c1b; }
 .dispatch.parchment .ties .union .k { color: #7a5a34; }
+
+.dispatch.night .ties .truce .k { color: var(--gilt-hi); }
+.dispatch.parchment .ties .truce .k { color: #7a5a34; }

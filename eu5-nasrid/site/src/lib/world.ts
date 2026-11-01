@@ -14,6 +14,8 @@ export type Power = {
   capital: string | null; capitalProvince?: string | null; culture: string | null; religion: string | null;
   ruler: Ruler | null; heir: Ruler | null; overlord: [string, string | null] | null;
   subjects: [string, string | null][]; allies: string[]; rivals: string[]; guarantees: string[];
+  /** [with, until, the peace it follows] */
+  truces?: [string, string, string][];
 };
 export type WorldWar = { started: string | null; attacker: string | null; defender: string | null; cb: string | null; revolt: boolean; attackers: string[]; defenders: string[]; score: number | null };
 export type World = {

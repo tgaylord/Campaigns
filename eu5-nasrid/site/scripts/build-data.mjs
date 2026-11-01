@@ -428,6 +428,7 @@ const WorldPower = z.object({
   capital: z.string().nullable(), culture: z.string().nullable(), religion: z.string().nullable(),
   ruler: Ruler.nullable(), heir: Ruler.nullable(), overlord: z.tuple([z.string(), z.string().nullable()]).nullable(),
   subjects: z.array(z.tuple([z.string(), z.string().nullable()])), allies: z.array(z.string()), rivals: z.array(z.string()), guarantees: z.array(z.string()),
+  truces: z.array(z.tuple([z.string(), isoDate, isoDate])).default([]),
 });
 const World = z.object({
   date: isoDate, ladder: z.array(z.tuple([z.string(), z.number(), z.number(), z.boolean()])), powers: z.record(z.string(), WorldPower),
