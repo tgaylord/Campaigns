@@ -182,5 +182,25 @@
    ]
   },
   "source": "save of 16 January 1373 (tools/world_powers.py)"
+ },
+ {
+  "id": "1373-10-01-march-on-valencia",
+  "date": "1373-10-01",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf",
+   "joan-of-aragon"
+  ],
+  "title": "Early in Rabīʿ al-Thānī 775 a second claim is ready, against Arghūn, whose truce ran out in June. The sultan himself marches the armies of the realm to Balansiyya as the court turns its eyes on Arghūn. The Catalans stand alone, their one ally the Sicilian crown their king also wears, and so weakened that the sultan means to fight with his regulars and raise no levies unless he must",
+  "data": {
+   "target": "ARA",
+   "truceEnded": "1373-06-02",
+   "aragonAllies": "only the union with Sicily (Trent); in the January 1373 save Aragon had no allies of its own, 400 men under arms and 3 ships, and Sicily was allied to Genoa and the Pope",
+   "granada": {
+    "menUnderArms": 3300,
+    "levies": "not to be raised unless needed"
+   }
+  },
+  "source": "Trent's account, early October 1373"
  }
 ]
