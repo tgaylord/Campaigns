@@ -30,5 +30,84 @@
    "note": "the remnant of the army beaten at Ejea, without morale to fight"
   },
   "source": "Trent's account and battle breakdown, 4 February 1395"
+ },
+ {
+  "id": "1395-06-18-battle-portalegre",
+  "date": "1395-06-18",
+  "type": "battle",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "wars": [
+   "war-of-796"
+  ],
+  "title": "The stand of the Portuguese, and their fall. With Castile's armies gone, Portugal makes its stand at Portalegre on the Alentejo border, 14,900 against the Emperor's 14,600 with the Aragonese and the Mamlūks beside him. For eighteen days it holds; then it breaks, 7,090 of theirs lost for 3,740 of ours. The war score reaches a hundred",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "al-Andalus, Aragon and Mamlūk contingents": 15562
+   },
+   "oursTotal": 15562,
+   "oursLost": 3744,
+   "theirs": {
+    "Portugal": 15371
+   },
+   "theirsTotal": 15371,
+   "theirsLost": 7087,
+   "location": "Portalegre, Portugal",
+   "side": "al-Andalus attacking",
+   "warScore": 14.02,
+   "began": "1395-05-31 (14,617 against 14,881)",
+   "commanders": {
+    "al-Andalus": "the Emperor Saʿd (100/68/100)",
+    "Portugal": "a Portuguese knight of a military order (79/46/63)"
+   },
+   "units": {
+    "ours": {
+     "infantry": [
+      9608,
+      2450
+     ],
+     "heavyInfantry": [
+      2168,
+      5
+     ],
+     "lightCavalry": [
+      2715,
+      1259
+     ],
+     "heavyCavalry": [
+      1022,
+      29
+     ],
+     "support": [
+      49,
+      0
+     ]
+    },
+    "theirs": {
+     "infantry": [
+      14740,
+      6600
+     ],
+     "heavyInfantry": [
+      186,
+      186
+     ],
+     "heavyCavalry": [
+      395,
+      251
+     ],
+     "support": [
+      50,
+      50
+     ]
+    }
+   },
+   "warScoreAfter": 100,
+   "alsoUnderWay": "explorations being prepared to the Canary Islands and southern Macaronesia (Trent's screen)"
+  },
+  "source": "Trent's account and battle screens, 31 May to 18 June 1395"
  }
 ]
