@@ -1,0 +1,40 @@
+[
+ {
+  "id": "1389-08-09-the-hisba",
+  "date": "1389-08-09",
+  "type": "reform",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "A third office of the bureaucracy, as the empire turns slowly toward trade: the Ḥisba, under the muḥtasib, who polices the markets and the public morals of the Islamic city, checks weights and measures, puts down fraud and enforces honest dealing. While the crown pays for it, al-Andalus sells better and its economy moves toward capital",
+  "data": {
+   "office": "Ḥisba (bureaucracy)",
+   "whenFunded": {
+    "sellingEfficiency": "+10%",
+    "monthlyProgressToCapitalEconomy": 0.1
+   },
+   "always": {
+    "productionEfficiency": "+2.5%"
+   },
+   "whenUnfunded": {
+    "burghersGrowth": "−20%",
+    "tradeIncome": "−10%"
+   },
+   "likedBy": {
+    "clergy": "+1%"
+   },
+   "dislikedBy": {
+    "burghers": "−1%"
+   },
+   "cost": "up to 7.44 a month",
+   "selectCost": 43.47,
+   "precedent": "a well-run inspectorate keeps commerce honest and gives the state the authority of the devout; a corrupt one is felt only as meddling, and merchants withdraw into networks beyond its reach (the game's text)",
+   "bureaucracy": [
+    "Count of the Christians (1378)",
+    "Ḥijāba (by January 1387)",
+    "Ḥisba (August 1389)"
+   ]
+  },
+  "source": "Trent's account and screenshot, 9 August 1389"
+ }
+]
