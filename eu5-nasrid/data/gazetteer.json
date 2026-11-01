@@ -1059,5 +1059,41 @@
   "kind": "location",
   "nameArabic": "طركونة",
   "note": "Tarragona, the old Roman city on the coast south of Barcelona. The game name is from the base localization."
+ },
+ {
+  "id": "jarunda",
+  "key": "girona",
+  "name": "Jarunda",
+  "nameGame": "Girona",
+  "kind": "location",
+  "nameArabic": "جرندة",
+  "note": "Girona, the Catalan city under the Pyrenees on the road into France; taken with Catalonia at the peace of 1375. The Mamlūks' second army marched through it in January 1375. The game name is from the base localization."
+ },
+ {
+  "id": "larida",
+  "key": "lleida",
+  "name": "Lārida",
+  "nameGame": "Lleida",
+  "kind": "location",
+  "nameArabic": "لاردة",
+  "note": "Lleida on the Segre, a town of the old Upper March, Muslim until 1149; taken at the peace of 1375. The game name is from the base localization."
+ },
+ {
+  "id": "turtusha",
+  "key": "tortosa",
+  "name": "Ṭurṭūsha",
+  "nameGame": "Tortosa",
+  "kind": "location",
+  "nameArabic": "طرطوشة",
+  "note": "Tortosa, at the mouth of the Ebro, once a Muslim port and ṭāʾifa capital until 1148; taken at the peace of 1375. The game name is from the base localization."
+ },
+ {
+  "id": "saraqusta",
+  "key": "zaragoza",
+  "name": "Saraqusṭa",
+  "nameGame": "Zaragoza",
+  "kind": "location",
+  "nameArabic": "سرقسطة",
+  "note": "Zaragoza on the Ebro, the old capital of the Upper March (al-Thaghr al-Aʿlā) and a ṭāʾifa kingdom until 1118; held by Castile in 1375. The game name is from the base localization."
  }
 ]
