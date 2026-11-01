@@ -222,5 +222,23 @@
    "gameText": "The collection of tithes has grown irregular and contentious. By standardizing the church's share of income across the realm, we ensure fair and reliable revenue for the clergy while relieving the burden of uncertainty from our people."
   },
   "source": "Trent's account and screenshot, March 1374 (the date of the summons is approximate)"
+ },
+ {
+  "id": "1374-05-02-jamaa-passes",
+  "date": "1374-05-02",
+  "type": "estate_change",
+  "people": [
+   "dua-marinid",
+   "saad-ibn-yusuf"
+  ],
+  "title": "The Jamāʿa passes the regulation of tithes, but the nobles' price is a few small privileges that bind the peasants a little tighter to the land. For ten years the ʿulamāʾ collect the tithe and tax the dhimmīs by one rule across the realm",
+  "data": {
+   "issue": "Regulate Tithe Collection",
+   "result": "passed",
+   "modifier": "Regulated Tithe Collection until 1384 (clergy satisfaction equilibrium +20%, tax efficiency +5%)",
+   "ulamaSatisfaction": "+10%",
+   "price": "a few very minor privileges for the nobles, moving the realm slightly further toward serfdom"
+  },
+  "source": "Trent's account, 2 May 1374"
  }
 ]
