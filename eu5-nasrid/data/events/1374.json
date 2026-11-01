@@ -240,5 +240,42 @@
    "price": "a few very minor privileges for the nobles, moving the realm slightly further toward serfdom"
   },
   "source": "Trent's account, 2 May 1374"
+ },
+ {
+  "id": "1374-10-the-princes-tutors",
+  "date": "1374-10-15",
+  "type": "player_note",
+  "people": [
+   "ismail-ibn-saad",
+   "yusuf-ibn-saad",
+   "dua-marinid",
+   "aiman-mamluk",
+   "saad-ibn-yusuf"
+  ],
+  "title": "The sultan's two sons are given the costly tutors he was given himself. Duʿā had pressed for her son alone, the heir Ismāʿīl, eight, already silver-tongued; but the sultan grants the same to Aiman's son Yūsuf, three, who is following in his father's footsteps",
+  "data": {
+   "ismail-ibn-saad": {
+    "age": 8,
+    "stats": [
+     18,
+     63,
+     19
+    ],
+    "mother": "Duʿā the Marīnid",
+    "note": "the heir, a silver tongue (Trent)"
+   },
+   "yusuf-ibn-saad": {
+    "age": 3,
+    "stats": [
+     9,
+     5,
+     10
+    ],
+    "mother": "Aiman the Mamlūk (Baḥriyya)",
+    "note": "follows his father (Trent)"
+   },
+   "rivalry": "Duʿā had initially pushed for only her son to receive the tutors (Trent)"
+  },
+  "source": "Trent's account and character screens; the screens were taken between Yūsuf's third birthday (15 October 1374) and Ismāʿīl's ninth (8 March 1375)"
  }
 ]

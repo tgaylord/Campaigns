@@ -1083,7 +1083,12 @@
    "heir"
   ],
   "traits": [],
-  "note": "Son and heir of Sultan Saʿd, born to Duʿāʾ the Marīnid on 8 March 1366, a month before the Peace of Independence."
+  "note": "Son and heir of Sultan Saʿd, born to Duʿāʾ the Marīnid on 8 March 1366, a month before the Peace of Independence. At eight he was already a silver tongue (63 in diplomacy). In late 1374 he and his half-brother Yūsuf were both given the costly tutors their father had had; his mother Duʿā had wanted them for him alone (Trent's account).",
+  "stats": {
+   "adm": 18,
+   "dip": 63,
+   "mil": 19
+  }
  },
  {
   "id": "rodrigo-of-silves",
@@ -1429,7 +1434,12 @@
   "mother": "aiman-mamluk",
   "roles": [],
   "traits": [],
-  "note": "Son of Sultan Saʿd and Aiman the Mamlūk, born 15 October 1371, named for his grandfather Yūsuf I (save of 16 January 1373)."
+  "note": "Son of Sultan Saʿd and Aiman the Mamlūk, born 15 October 1371, named for his grandfather Yūsuf I (save of 16 January 1373). Following in his father's footsteps, as the court saw it; in late 1374, at three, he was given the same costly tutors as the heir, over Duʿā's objection (Trent's account).",
+  "stats": {
+   "adm": 9,
+   "dip": 5,
+   "mil": 10
+  }
  },
  {
   "id": "yusuf-ibn-ismail",
