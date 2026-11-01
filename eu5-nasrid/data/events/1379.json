@@ -1,7 +1,7 @@
 [
  {
-  "id": "1379-jamaa-of-the-capital",
-  "date": "1379-01-01",
+  "id": "1379-04-jamaa-of-the-capital",
+  "date": "1379-04-25",
   "type": "estate_change",
   "people": [
    "saad-ibn-yusuf"
@@ -19,14 +19,14 @@
     "Ishbīliya": "a capital on the river and the sea, with a trading fleet built by the Catalan shipwrights"
    },
    "why": "Gharnāṭa is far from the northern frontier and from the new lands; the court is decentralised from them",
-   "outcome": "the assembly and the Emperor decide to move the capital to Ishbīliya by the end of the year (Trent's account)",
-   "date": "1379; the day awaits a save or screen"
+   "outcome": "the assembly and the Emperor decide to move the capital to Ishbīliya; the move is due to be complete by the end of November 1379 (Trent's account)",
+   "date": "late April 1379 (Trent); the exact day awaits a save"
   },
   "source": "Trent's account, 1379"
  },
  {
-  "id": "1379-roads-to-ishbiliya",
-  "date": "1379-01-01",
+  "id": "1379-04-roads-to-ishbiliya",
+  "date": "1379-04-25",
   "type": "reform",
   "people": [
    "saad-ibn-yusuf"
@@ -39,11 +39,11 @@
    "tulaytula",
    "gharnata"
   ],
-  "title": "Ishbīliya will be the capital by the year's end. To tie it into the realm the Emperor orders new roads at great cost, to Sharīsh and Mālaqa and north to Baṭalyaws and Ṭulayṭula, and borrows from the estates to pay for them",
+  "title": "Ishbīliya will be the capital by the end of November. To tie it into the realm the Emperor orders new roads at great cost, to Sharīsh and Mālaqa and north to Baṭalyaws and Ṭulayṭula, and borrows from the estates to pay for them",
   "data": {
    "newCapital": "Seville (Ishbīliya)",
    "oldCapital": "Granada (Gharnāṭa)",
-   "by": "the end of 1379",
+   "by": "the end of November 1379",
    "roads": [
     "Jerez (Sharīsh)",
     "Málaga (Mālaqa)",
@@ -51,7 +51,8 @@
     "Toledo (Ṭulayṭula)"
    ],
    "funding": "loans from the estates",
-   "date": "1379; the day awaits a save or screen"
+   "date": "begun late April 1379 (Trent)",
+   "roadsDone": "each road on its own schedule, by its length and the ground it crosses (Trent)"
   },
   "source": "Trent's account, 1379"
  }
