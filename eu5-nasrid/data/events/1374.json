@@ -243,7 +243,7 @@
  },
  {
   "id": "1374-10-the-princes-tutors",
-  "date": "1374-10-15",
+  "date": "1374-10-25",
   "type": "player_note",
   "people": [
    "ismail-ibn-saad",
@@ -276,6 +276,34 @@
    },
    "rivalry": "Duʿā had initially pushed for only her son to receive the tutors (Trent)"
   },
-  "source": "Trent's account and character screens; the screens were taken between Yūsuf's third birthday (15 October 1374) and Ismāʿīl's ninth (8 March 1375)"
+  "source": "Trent's account and character screens, late October 1374"
+ },
+ {
+  "id": "1374-10-25-malta-taken",
+  "date": "1374-10-25",
+  "type": "siege",
+  "people": [
+   "ramadan-of-barqa",
+   "bolot-mamluk"
+  ],
+  "wars": [
+   "war-of-the-upper-march"
+  ],
+  "title": "Late in October the Mamlūk governor of Barqa, Shaykh Ramaḍān of the Baḥrī house, takes Malta from the Sicilians with 2,900 men: another front of Islam's advance, on the islands between Sicily and Ifrīqiya",
+  "data": {
+   "result": "taken",
+   "location": "Malta",
+   "from": "SIC",
+   "by": "BQA (Sheikhdom of Barqa, a Mamlūk vassal)",
+   "army": {
+    "name": "Jaysh 1",
+    "men": 2918,
+    "lightInfantry": 2917,
+    "heavyCavalry": 1,
+    "morale": 4.01
+   },
+   "date": "late October 1374 (Trent)"
+  },
+  "source": "Trent's account and screenshots, late October 1374"
  }
 ]
