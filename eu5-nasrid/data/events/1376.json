@@ -411,5 +411,34 @@
    }
   },
   "source": "Trent's account and battle screens, 16 August to 1 September 1376"
+ },
+ {
+  "id": "1376-12-catalan-shipwrights",
+  "date": "1376-12-01",
+  "type": "diplomacy",
+  "people": [
+   "saad-ibn-yusuf",
+   "bolot-mamluk"
+  ],
+  "wars": [
+   "war-of-the-aragonese-restoration"
+  ],
+  "title": "The Mamlūks are stuck across the sea: the Iberian fleets far outnumber theirs. This will not do. In early December the crown sends Catalan shipwrights to five Mamlūk ports, al-Iskandariyya, Dimyāṭ, ʿAkkā, Anṭākiya and Ṭarsūs, to build proper shipbuilding wharves with the Mamlūks' coin and to teach them the first modern galleys",
+  "data": {
+   "with": "MAM",
+   "ports": [
+    "Alexandria (al-Iskandariyya)",
+    "Damietta (Dimyāṭ)",
+    "Acre (ʿAkkā)",
+    "Antioch (Anṭākiya)",
+    "Tarsus (Ṭarsūs)"
+   ],
+   "built": "shipbuilding wharves, paid for by the Mamlūks",
+   "taught": "the first modern galleys",
+   "by": "Catalan shipwrights sent by the crown",
+   "why": "the Iberian fleets far outnumber the Mamlūk navy, leaving the Mamlūk armies trapped across the sea",
+   "date": "early December 1376 (Trent)"
+  },
+  "source": "Trent's account, December 1376"
  }
 ]
