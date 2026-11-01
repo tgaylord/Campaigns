@@ -25,7 +25,7 @@
   "places": [
    "ishbiliyya"
   ],
-  "title": "Misfortune turns to fortune on the road home: the Emperor recruits many of the scholars of al-Azhar he sat with to fill the halls of the capital. The Jamāʿa must be persuaded to fund them, and the ʿulamāʾ back the measure: sponsor theological seminaries",
+  "title": "Misfortune turns to fortune on the road home: the Emperor recruits many of the scholars of al-Azhar he sat with to fill the halls of the capital. The Jamāʿa must be persuaded to fund them, and the ʿulamāʾ back the measure: sponsor theological seminaries. The Jamāʿa passes it: the realm gains theological seminaries for ten years",
   "data": {
    "assembly": "Jamāʿa",
    "issue": "Sponsor Theological Seminaries (a clergy issue)",
@@ -45,7 +45,8 @@
     "legitimacy": -10
    },
    "outlook": "relatively doable (Trent)",
-   "date": "on the way home from the Hajj, early 1386; the day awaits a save"
+   "date": "on the way home from the Hajj, early 1386; the day awaits a save",
+   "outcome": "passed (Trent's account): Theological Seminaries for 10 years, +10% research, +0.01 literacy a month, +2 Innovative"
   },
   "source": "Trent's account and screenshot, early 1386"
  }
