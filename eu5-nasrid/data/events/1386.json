@@ -96,11 +96,13 @@
    "ismail-ibn-saad",
    "saad-ibn-yusuf"
   ],
-  "title": "The crown prince Ismāʿīl, nineteen, who ruled as regent through his father's pilgrimage, takes the new seat in the dīwān that the Ḥijāba creates",
+  "title": "The crown prince Ismāʿīl, nineteen, who ruled as regent through his father's pilgrimage, is brought home from the fleet, where he served as an admiral to carry the crown's authority over the seas, and takes the new seat in the dīwān that the Ḥijāba creates, to help his father fill the capital with scholars",
   "data": {
    "seat": "the cabinet seat added by the Ḥijāba",
    "age": 19,
-   "date": "1386; the day awaits a save"
+   "date": "1386; the day awaits a save",
+   "before": "admiral, extending crown control over the seas (Trent)",
+   "task": "the Emperor's scholar-building project, the seminaries and the scholars of al-Azhar (Trent)"
   },
   "source": "Trent's account, 1386"
  }
