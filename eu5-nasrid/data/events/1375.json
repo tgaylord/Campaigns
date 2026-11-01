@@ -46,5 +46,160 @@
    "duaFaction": "Duʿā, the heir Ismāʿīl, the regency at Gharnāṭa"
   },
   "source": "Trent's account, January 1375"
+ },
+ {
+  "id": "1375-03-15-peace-aragon",
+  "date": "1375-03-15",
+  "type": "peace",
+  "people": [
+   "saad-ibn-yusuf",
+   "joan-of-aragon",
+   "ramadan-of-barqa",
+   "bolot-mamluk"
+  ],
+  "wars": [
+   "war-of-the-upper-march"
+  ],
+  "title": "Peace with Aragon and Sicily. Barcelona has been under siege for 282 days and is about to fall; King Joan might still fight on from his Sicilian crown, until the shaykh of Barqa lands 3,000 men on the island and storms Siracusa. Offered peace or a war on Sicily itself, he accepts. Aragon gives up every town it has left, 34 of them from the Pyrenees to the Ebro, and the Kingdom of Aragon ceases to hold land. Malta passes to the Mamlūks, and Sicily pays reparations. The war score stands at +61%",
+  "data": {
+   "with": [
+    "ARA",
+    "SIC"
+   ],
+   "ceded": [
+    "Barcelona",
+    "Tarragona",
+    "Girona",
+    "Lleida",
+    "Tortosa",
+    "Perpignan",
+    "Vic",
+    "Manresa",
+    "Terrassa",
+    "Vilafranca del Penedès",
+    "Sant Feliu",
+    "Berga",
+    "Cardona",
+    "Cervera",
+    "Tàrrega",
+    "Balaguer",
+    "Agramunt",
+    "Montblanc",
+    "Prades",
+    "Flix",
+    "Fraga",
+    "Monzón",
+    "Barbastro",
+    "Benabarre",
+    "Aínsa",
+    "Sariñena",
+    "Vielha",
+    "Talarn",
+    "La Seu d'Urgell",
+    "Puigcerdà",
+    "Ripoll",
+    "Besalú",
+    "Castelló d'Empúries",
+    "Sitges"
+   ],
+   "population": 504700,
+   "cededPeople": {
+    "Catalan": 454200,
+    "Aragonese": 33500,
+    "Sephardi": 9700,
+    "Catholic": 495100,
+    "Jewish": 9400,
+    "Sunni": 250
+   },
+   "toMamluks": [
+    "Malta"
+   ],
+   "reparations": "Sicily pays war reparations to Granada",
+   "warScore": 61,
+   "aragonLands": [
+    34,
+    0
+   ],
+   "truces": {
+    "Aragon": "1388-03-15",
+    "Sicily, Athens, Negroponte, Nafusa": "1386-04-15"
+   },
+   "passageToPalermo": "in Trent's account of the envoys' terms; no access treaty with Sicily shows in the save",
+   "siracusa": "stormed by Barqa's 3,000 shortly before the peace; returned to Sicily by it (Trent's account; Sicily owns Syracuse after the peace)",
+   "warDead": {
+    "granada": 1260,
+    "aragon": 4706,
+    "nafusa": 425,
+    "barqa": 211,
+    "note": "battle losses only, from the war's five battles; attrition and the siege of Barcelona are not counted. Barqa also lost 8 ships off Malta"
+   }
+  },
+  "source": "saves of 15 March 1375 before and after the peace; Trent's account"
+ },
+ {
+  "id": "1375-03-15-aragon-falls-apart",
+  "date": "1375-03-15",
+  "type": "territory_change",
+  "people": [
+   "joan-of-aragon"
+  ],
+  "wars": [
+   "war-of-the-upper-march"
+  ],
+  "title": "As the Kingdom of Aragon collapses, so do its outlying lands. Montpellier, beyond the Pyrenees, swears itself to the English rather than the French, and Sassari in Sardinia is taken back by Arborea, the Genoese vassal. The Kingdom of Aragon is no more, at first",
+  "data": {
+   "changes": [
+    {
+     "location": "Montpellier",
+     "from": "ARA",
+     "to": "ENG"
+    },
+    {
+     "location": "Sassari",
+     "from": "ARA",
+     "to": "ARB"
+    }
+   ],
+   "when": "between 1 November 1374 and the peace: both had already changed hands in the save taken just before it",
+   "note": "Aragon held 34 towns on the morning of the peace and none after it; its truce with Granada still runs to 15 March 1388"
+  },
+  "source": "autosave of 1 November 1374; saves of 15 March 1375; Trent's account"
+ },
+ {
+  "id": "1375-03-15-state",
+  "date": "1375-03-15",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "With Catalonia the realm grows from 60 towns to 94 and from 765,000 souls to 1,275,000. For the first time the Catalans are its largest people, 455,000 against 452,000 Andalusīs, and Christians outnumber the faithful two to one: 815,000 Catholics against 397,000 Muslims and 63,000 Jews. Barcelona, at 46,000, is the realm's third city",
+  "data": {
+   "locations": [
+    60,
+    94
+   ],
+   "population": [
+    765231,
+    1275187
+   ],
+   "cultures": {
+    "Catalan": 454639,
+    "Andalusi": 451597,
+    "Castilian": 260613,
+    "Sephardi": 59956,
+    "Aragonese": 33722
+   },
+   "religions": {
+    "Catholic": 814799,
+    "Sunni": 397076,
+    "Jewish": 62515
+   },
+   "treasury": 286,
+   "income": 94.5,
+   "expenses": 77.1,
+   "stability": 30.4,
+   "menUnderArms": 3300
+  },
+  "source": "save of 15 March 1375 after the peace"
  }
 ]

@@ -242,6 +242,68 @@
   "source": "Trent's account, 2 May 1374"
  },
  {
+  "id": "1374-05-23-battle-zuwara",
+  "date": "1374-05-23",
+  "type": "battle",
+  "people": [
+   "ramadan-of-barqa"
+  ],
+  "wars": [
+   "war-of-the-upper-march"
+  ],
+  "title": "In Ifrīqiya the Mamlūk shaykh of Barqa falls on Sicily's subject the Jabal Nafūsa at Zuwāra: 3,100 against 430, with 300 of theirs lost for 210 of his",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Barqa": 3144
+   },
+   "oursTotal": 3144,
+   "oursLost": 211,
+   "theirs": {
+    "Nafusa": 426
+   },
+   "theirsTotal": 426,
+   "theirsLost": 298,
+   "location": "Zuwara",
+   "side": "Barqa attacking",
+   "commanders": {
+    "Barqa": "Shaykh Ramaḍān",
+    "Nafusa": "Abū al-Faḍl of the Jabal Nafūsa"
+   }
+  },
+  "source": "autosave of 1 November 1374"
+ },
+ {
+  "id": "1374-06-24-battle-gharyan",
+  "date": "1374-06-24",
+  "type": "battle",
+  "people": [
+   "ramadan-of-barqa"
+  ],
+  "wars": [
+   "war-of-the-upper-march"
+  ],
+  "title": "The shaykh of Barqa runs down the last 127 men of the Jabal Nafūsa at Gharyān, their capital, without loss",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Barqa": 2931
+   },
+   "oursTotal": 2931,
+   "oursLost": 0,
+   "theirs": {
+    "Nafusa": 127
+   },
+   "theirsTotal": 127,
+   "theirsLost": 127,
+   "location": "Gharyan",
+   "side": "Barqa attacking"
+  },
+  "source": "autosave of 1 November 1374"
+ },
+ {
   "id": "1374-10-the-princes-tutors",
   "date": "1374-10-25",
   "type": "player_note",
@@ -289,7 +351,7 @@
   "wars": [
    "war-of-the-upper-march"
   ],
-  "title": "Late in October the Mamlūk governor of Barqa, Shaykh Ramaḍān of the Baḥrī house, takes Malta from the Sicilians with 2,900 men: another front of Islam's advance, on the islands between Sicily and Ifrīqiya",
+  "title": "Late in October the Mamlūk governor of Barqa, Shaykh Ramaḍān of the Baḥrī house, takes Malta, held for the Sicilian crown by its vassal the Duchy of Athens, with 2,900 men: another front of Islam's advance, on the islands between Sicily and Ifrīqiya",
   "data": {
    "result": "taken",
    "location": "Malta",
@@ -302,8 +364,42 @@
     "heavyCavalry": 1,
     "morale": 4.01
    },
-   "date": "late October 1374 (Trent)"
+   "date": "late October 1374 (Trent)",
+   "heldBy": "Athens, a vassal of Sicily (saves of 1 December 1373 and 1 November 1374)"
   },
   "source": "Trent's account and screenshots, late October 1374"
+ },
+ {
+  "id": "1374-11-12-battle-george-bay",
+  "date": "1374-11-12",
+  "type": "battle",
+  "people": [
+   "ramadan-of-barqa"
+  ],
+  "wars": [
+   "war-of-the-upper-march"
+  ],
+  "title": "Off Malta, in the bay of St George, the Sicilian fleet catches Barqa's ships three weeks after the island fell: 31 Sicilian sail against 8, and all eight of Barqa's are lost for one of theirs. The island stays taken, but the sea around it is Sicily's",
+  "data": {
+   "result": "allied defeat",
+   "naval": true,
+   "ours": {
+    "Barqa": 8
+   },
+   "oursTotal": 8,
+   "oursLost": 8,
+   "theirs": {
+    "Sicily": 31
+   },
+   "theirsTotal": 31,
+   "theirsLost": 1,
+   "location": "St George's Bay, Malta",
+   "side": "Barqa attacking",
+   "units": "ships",
+   "commanders": {
+    "Sicily": "Nicholas (Sicilian admiral)"
+   }
+  },
+  "source": "save of 15 March 1375 (the war's battle list)"
  }
 ]
