@@ -57,5 +57,35 @@
    "caravan": "as exquisite as Yūsuf I's on his royal Hajj"
   },
   "source": "Trent's account, 23 August 1385"
+ },
+ {
+  "id": "1385-10-28-al-qahira",
+  "date": "1385-10-28",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf",
+   "bolot-mamluk",
+   "aiman-mamluk"
+  ],
+  "title": "In al-Qāhira, the city of a thousand minarets, the Emperor pauses on the road to Makka. He sits for a month with the scholars of al-Azhar and treats with his brother-in-law the Mamlūk sultan Būlād, Aiman's brother",
+  "data": {
+   "event": "The Royal Ḥajj: The City of a Thousand Minarets",
+   "choice": "Sit with the scholars of al-Azhar while we can",
+   "effects": {
+    "pause": "30 days",
+    "gold": -28.49,
+    "legitimacy": 5,
+    "prestige": 5,
+    "researchProgress": 2.5
+   },
+   "otherChoices": [
+    "resupply and go",
+    "bear the maḥmal openly",
+    "hire more guards",
+    "adorn the caravan in banners and silk, then wait"
+   ],
+   "date": "23 Ramaḍān 787"
+  },
+  "source": "Trent's account and screenshot of the event, 28 October 1385"
  }
 ]
