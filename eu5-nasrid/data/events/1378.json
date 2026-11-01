@@ -236,5 +236,71 @@
    }
   },
   "source": "saves of 6 April 1378 before and after the peace; Trent's account"
+ },
+ {
+  "id": "1378-05-01-gem-of-iberia",
+  "date": "1378-05-01",
+  "type": "situation",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "tulaytula"
+  ],
+  "title": "The Gem of Iberia. Ṭulayṭula, at the centre of Iberia and long a meeting place of Christian, Muslim and Jewish cultures, is in the Emperor's hands, and the court and all the estates set out to make it the gem of Iberia. The city gains half a point of development and 30% prosperity, and it and the towns of its land become cores of al-Andalus",
+  "data": {
+   "choice": "Let Ṭlayṭla prosper!",
+   "toledo": {
+    "development": 0.5,
+    "prosperity": "+30%"
+   },
+   "cores": [
+    "Toledo (Ṭlayṭla)",
+    "Wad el-Lub",
+    "Illescas (Illīška)",
+    "Los Yébenes (Al-Yabānis)",
+    "Navalucillos (Nbalusilyuš)",
+    "Puebla de Montalbán (Mnṭalban)",
+    "and others below the fold of Trent's screen"
+   ],
+   "date": "1 May 1378 (Trent's screen)"
+  },
+  "source": "Trent's screenshot of the event, 1 May 1378"
+ },
+ {
+  "id": "1378-05-count-of-the-christians",
+  "date": "1378-05-01",
+  "type": "reform",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "The first new office of the expanded bureaucracy: the Count of the Christians, the qūmis of the caliphs' Córdoba, to administer and integrate the conquered Christian lands. As long as the crown pays for it, it raises tax efficiency and tolerance and keeps the dhimmīs content without costing the ʿulamāʾ their patience or slowing conversion",
+  "data": {
+   "office": "Count of the Christians (bureaucracy)",
+   "whenFunded": {
+    "taxEfficiency": "+5%",
+    "toleranceHeretic": 1,
+    "toleranceHeathen": 1
+   },
+   "always": {
+    "dhimmiSatisfactionEquilibrium": "+2.5%"
+   },
+   "whenUnfunded": {
+    "clergySatisfactionDecay": "+2%",
+    "conversionSpeed": "−20%"
+   },
+   "likedBy": {
+    "crown": "+1%",
+    "dhimmi": "+1%"
+   },
+   "dislikedBy": {
+    "clergy": "−1%"
+   },
+   "cost": "up to 6.56 a month",
+   "selectCost": 43.47,
+   "precedent": "the qūmis of the Christians of Córdoba, with a Christian judge under Visigothic law and a head of the Jews such as Ḥasdai ibn Shaprūṭ under ʿAbd al-Raḥmān III (the game's text)",
+   "note": "the negative effects apply only when the bureaucracy is unfunded, the positive only when it is funded (Trent)"
+  },
+  "source": "Trent's account and screenshot, May 1378"
  }
 ]
