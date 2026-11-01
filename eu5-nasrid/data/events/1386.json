@@ -14,5 +14,39 @@
    "calendar": "the game counts the season as over by 6 January 1386; the chronicle's tabular reckoning had put ʿArafa near 11 January, so the game's Hajj calendar runs earlier than the arithmetic one"
   },
   "source": "Trent's screenshot of the event, 6 January 1386"
+ },
+ {
+  "id": "1386-jamaa-theological-seminaries",
+  "date": "1386-01-06",
+  "type": "estate_change",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "ishbiliyya"
+  ],
+  "title": "Misfortune turns to fortune on the road home: the Emperor recruits many of the scholars of al-Azhar he sat with to fill the halls of the capital. The Jamāʿa must be persuaded to fund them, and the ʿulamāʾ back the measure: sponsor theological seminaries",
+  "data": {
+   "assembly": "Jamāʿa",
+   "issue": "Sponsor Theological Seminaries (a clergy issue)",
+   "clergySupport": "+11.19% to the assembly's support",
+   "whileDebated": {
+    "researchProgress": "+5%"
+   },
+   "ifPasses": {
+    "modifier": "Theological Seminaries, 10 years",
+    "researchProgress": "+10%",
+    "literacy": "+0.01 a month",
+    "innovative": "+2 (now 10.1, rising 0.25 a month)"
+   },
+   "ifFails": {
+    "prestige": -10,
+    "stability": -7,
+    "legitimacy": -10
+   },
+   "outlook": "relatively doable (Trent)",
+   "date": "on the way home from the Hajj, early 1386; the day awaits a save"
+  },
+  "source": "Trent's account and screenshot, early 1386"
  }
 ]
