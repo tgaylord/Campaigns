@@ -1,0 +1,172 @@
+[
+ {
+  "id": "1387-01-22-ismail-to-the-diwan",
+  "date": "1387-01-22",
+  "type": "appointment",
+  "people": [
+   "ismail-ibn-saad",
+   "saad-ibn-yusuf"
+  ],
+  "title": "The crown prince Ismāʿīl, twenty, who ruled as regent through his father's pilgrimage, is brought home from the fleet, where he served as an admiral to carry the crown's authority over the seas, and takes the new seat in the dīwān that the Ḥijāba creates, to help his father fill the capital with scholars",
+  "data": {
+   "seat": "the cabinet seat added by the Ḥijāba",
+   "age": 20,
+   "date": "22 January 1387 (save of 1 October 1387)",
+   "before": "admiral, extending crown control over the seas (Trent)",
+   "task": "the Emperor's scholar-building project, the seminaries and the scholars of al-Azhar (Trent)",
+   "action": "changing the realm's societal values"
+  },
+  "source": "Trent's account; save of 1 October 1387"
+ },
+ {
+  "id": "1387-01-22-the-hijaba",
+  "date": "1387-01-22",
+  "type": "reform",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "ishbiliyya"
+  ],
+  "title": "A second office of the bureaucracy, inspired by the Mamlūk court and the lore of the old caliphates the Emperor met in al-Qāhira: the Ḥijāba, the chamberlainship of Umayyad Qurṭuba, whose ḥājib headed his own council, received petitioners and embassies and drafted decrees in the caliph's name. While the crown pays for it, it strengthens the crown and its legitimacy, and it gives the dīwān another seat",
+  "data": {
+   "office": "Ḥijāba (bureaucracy)",
+   "whenFunded": {
+    "crownPower": "+10%",
+    "monthlyLegitimacy": 0.05
+   },
+   "always": {
+    "cabinetSeats": 1,
+    "headOfCabinetPromotionCost": "−25%"
+   },
+   "whenUnfunded": {
+    "nobleSatisfactionDecay": "+2%",
+    "monthlyInflation": "+0.5%"
+   },
+   "likedBy": {
+    "crown": "+1%"
+   },
+   "dislikedBy": {
+    "nobility": "−1%"
+   },
+   "cost": "up to 6.45 a month",
+   "selectCost": 43.47,
+   "precedent": "the ḥājib of the Cordoban court, raised under the caliphate of 929; under al-Manṣūr (978–1002) the office became royal power in all but name, centralising rule through the palace at the price of a nobility shut out of the caliph's counsel (the game's text)",
+   "date": "by 22 January 1387, when its new seat was filled (save of 1 October 1387)"
+  },
+  "source": "Trent's account and screenshot, 1386"
+ },
+ {
+  "id": "1387-hammams",
+  "date": "1387-10-01",
+  "type": "reform",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "ishbiliyya"
+  ],
+  "title": "Another strand of the spread of Andalusī culture, and another lesson from the east: bathhouses are being raised across the realm, beginning at Ishbīliya. The hammam is a cornerstone of Andalusī town life, for washing, company and ritual purity",
+  "data": {
+   "building": "Hammam (infrastructure)",
+   "effects": {
+    "popPromotion": "+2",
+    "monthlyProsperity": "+0.1%",
+    "diseaseResistance": "+5%",
+    "burghersFoodConsumption": "+10%"
+   },
+   "input": "0.1 lumber, 0.1 copper and 0.1 coal a level",
+   "cost": "50, 0.75 masonry and 0.2 glass; a year to build",
+   "first": "Seville, under construction (none finished by the save of 1 October 1387)"
+  },
+  "source": "Trent's account and screenshot; save of 1 October 1387"
+ },
+ {
+  "id": "1387-10-01-castile-and-france",
+  "date": "1387-10-01",
+  "type": "player_note",
+  "people": [
+   "jeronimo-of-castile"
+  ],
+  "title": "Beyond the Pyrenees, Castile is losing a war it chose to join. France fell on the little county of Chiny in the Ardennes in August 1385 over trade, and Castile came in on Chiny's side with Savoy and the lords of the Rhône and the Rhineland. Two Castilian armies sent into France were destroyed, at Châteauneuf-de-Randon and at Viviers, while France keeps 40,800 men in the field",
+  "data": {
+   "war": {
+    "started": "1385-08-27",
+    "attacker": "France",
+    "defender": "Chiny",
+    "cb": "trade conflict",
+    "castileSide": "defenders, with Savoy, Metz, Hainaut, Lausanne and others"
+   },
+   "castileBattles": [
+    {
+     "place": "Châteauneuf-de-Randon",
+     "date": "1387-02-21",
+     "castileLost": 1076
+    },
+    {
+     "place": "Viviers",
+     "date": "1387-03-12",
+     "castileLost": 1258
+    }
+   ],
+   "forces": {
+    "France": "40,803 (37,254 levies)",
+    "Castile": "17,082 (16,582 levies), 15 ships",
+    "al-Andalus": "4,900 regulars, 16 ships"
+   },
+   "castileRank": [
+    8,
+    18
+   ],
+   "castileLand": "no Castilian town occupied"
+  },
+  "source": "save of 1 October 1387 (a reading); Trent's account"
+ },
+ {
+  "id": "1387-10-01-state",
+  "date": "1387-10-01",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf",
+   "ismail-ibn-saad",
+   "bernarda-of-murcia"
+  ],
+  "title": "The realm whole again after the risings: 118 towns and 1,367,000 people, 557,000 of them Muslim. The game ranks al-Andalus tenth among the powers. The crown prince Ismāʿīl is married to Bernarda of Murcia, and is now counted a master of diplomacy",
+  "data": {
+   "towns": 118,
+   "population": 1367123,
+   "religions": {
+    "Catholic": 716576,
+    "Sunni": 556482,
+    "Jewish": 93279
+   },
+   "cultures": {
+    "Castilian": 695915,
+    "Andalusi": 505394,
+    "Sephardi": 93451
+   },
+   "rank": 10,
+   "treasury": 165,
+   "income": 110.6,
+   "expenses": 88.2,
+   "stability": 16.8,
+   "manpower": 116,
+   "diwan": {
+    "Duʿā": "integrating the new lands",
+    "Ismāʿīl ibn Yūsuf": "integrating the new lands (from 30 April 1383)",
+    "Maryam": "integrating the new lands (from 22 January 1387)",
+    "Ismāʿīl ibn Saʿd": "societal values (from 22 January 1387)"
+   },
+   "crownPrince": {
+    "married": "Bernarda of Murcia (by 1 October 1387)",
+    "stats": [
+     47,
+     100,
+     38
+    ]
+   },
+   "morocco": "Abū al-Faḍl sultan since 7 October 1381, Jadīla queen"
+  },
+  "source": "save of 1 October 1387 (a reading)"
+ }
+]
