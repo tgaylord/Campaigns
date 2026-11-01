@@ -809,10 +809,11 @@
   "nameGame": "Aiman",
   "female": true,
   "roles": [],
-  "note": "Daughter of the Mamluk Sultan, betrothed to Saʿd ibn Yūsuf, heir of Granada, on 19 January 1351. Married to Saʿd before he came of age; at his majority in January 1364 she was his only wife, until he also married Duʿāʾ. Mother of Saʿd's first child, Umm al-Fatḥ (born 13 December 1364). Mother of Jadīla bint Saʿd (born 13 December 1368). Of the Baḥrī house (the game calls her Aiman Baḥriyya), the house of the Mamlūk sultans: in 1374–1375 its men fought for Granada in Malta and Catalonia, and at court she led the faction of the Mamlūk alliance (Trent's account). As the Emperor's principal wife (consort) the game will not seat her in the dīwān. The chronicle holds that she sits there anyway, by the strength of the harem, without a formal office (Trent's ruling, March 1375).",
+  "note": "Daughter of the Mamluk Sultan, betrothed to Saʿd ibn Yūsuf, heir of Granada, on 19 January 1351. Married to Saʿd before he came of age; at his majority in January 1364 she was his only wife, until he also married Duʿāʾ. Mother of Saʿd's first child, Umm al-Fatḥ (born 13 December 1364). Mother of Jadīla bint Saʿd (born 13 December 1368). Of the Baḥrī house (the game calls her Aiman Baḥriyya), the house of the Mamlūk sultans: in 1374–1375 its men fought for Granada in Malta and Catalonia, and at court she led the faction of the Mamlūk alliance (Trent's account). As the Emperor's principal wife (consort) the game will not seat her in the dīwān. The chronicle holds that she sits there anyway, by the strength of the harem, without a formal office (Trent's ruling, March 1375). She died on 23 October 1391, aged forty-seven, while the Emperor was on pilgrimage; the game's notice says she was attacked by a crocodile.",
   "born": "1344-04-06",
   "gameId": 32464,
-  "dynasty": "Baḥrī"
+  "dynasty": "Baḥrī",
+  "died": "1391-10-23"
  },
  {
   "id": "dua-marinid",

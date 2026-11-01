@@ -121,5 +121,52 @@
    "pausesSoFar": "40 days (10 at sea, 30 in al-Qāhira)"
   },
   "source": "Trent's account and screenshot, 25 July 1391"
+ },
+ {
+  "id": "1391-10-the-kaaba",
+  "date": "1391-10-23",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "The Emperor reaches Makka at last. The Grand Mosque opens before him and the Kaʿba stands at its heart, black-draped and older than memory, with the white-robed faithful circling it from every land where the call to prayer is heard; sultan and shepherd dress alike. Twenty years after he first meant to go, he completes the Hajj, and he distributes gold freely, so that no pilgrim in Makka goes hungry",
+  "data": {
+   "event": "The Royal Ḥajj: The Kaʿba",
+   "choice": "Distribute gold freely. Let no pilgrim here go hungry (the option on Trent's screen)",
+   "effects": {
+    "gold": -102.61,
+    "toMeccaCommoners": 102.61,
+    "prestige": 15,
+    "legitimacy": 10
+   },
+   "otherChoices": [
+    "endow the mosques and their scholars",
+    "perform the rites quietly",
+    "spare no expense, deck the caravan in gold"
+   ],
+   "date": "arrival by 23 October 1391 (Trent's screen is undated)",
+   "firstPlanned": "1373-01-16"
+  },
+  "source": "Trent's account and screenshot of the event, October 1391"
+ },
+ {
+  "id": "1391-10-23-death-of-aiman",
+  "date": "1391-10-23",
+  "type": "death",
+  "people": [
+   "aiman-mamluk",
+   "saad-ibn-yusuf",
+   "yusuf-ibn-saad",
+   "bolot-mamluk"
+  ],
+  "title": "While the Emperor is in Makka, Aiman of the Baḥrī house, his first wife, consort of the empire and sister of the Mamlūk sultan, dies at forty-seven. Four years after Duʿā, the second of his great wives is gone, and he is far from home when it happens",
+  "data": {
+   "age": 47,
+   "cause": "the game's death notice: attacked by a crocodile",
+   "whereabouts": "not stated; the Emperor was on pilgrimage",
+   "roles": "consort of al-Andalus; mother of Prince Yūsuf, Umm al-Fatḥ and Jadīla bint Saʿd",
+   "telling": "how the chronicle tells it is open (see Trent's ruling on deaths the court keeps quiet)"
+  },
+  "source": "Trent's screenshot of the death notice, 23 October 1391"
  }
 ]
