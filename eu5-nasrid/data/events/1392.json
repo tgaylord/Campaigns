@@ -1,0 +1,26 @@
+[
+ {
+  "id": "1392-02-20-hajji",
+  "date": "1392-02-20",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "ishbiliyya"
+  ],
+  "title": "The caravan comes home, its stores lighter and its pilgrims changed. Word has run ahead of the camels, and crowds gather at Ishbīliya to welcome a ruler who stood before the Kaʿba. From this day the Emperor bears the title Ḥājjī, earned and not granted. Let it be known: Makka and back, by the grace of Allāh",
+  "data": {
+   "event": "Expedition: Ḥājjī",
+   "effects": {
+    "legitimacy": 10,
+    "modifier": "Blessings of the Ḥajj, 5 years: +5% clergy satisfaction equilibrium",
+    "muslimOpinion": "+10 with every known Muslim country",
+    "trait": "Ḥājjī: +0.1 prestige and +0.1 legitimacy a month"
+   },
+   "journey": "11 May 1391 to 20 February 1392",
+   "alsoUnderWay": "an exploration being prepared, to Madeira by the look of Trent's screen"
+  },
+  "source": "Trent's screenshot of the event, 20 February 1392"
+ }
+]
