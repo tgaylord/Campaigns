@@ -146,5 +146,74 @@
    "date": "recently, before January 1376 (Trent); the exact day awaits a save"
   },
   "source": "Trent's account, January 1376"
+ },
+ {
+  "id": "1376-05-25-battle-girona",
+  "date": "1376-05-25",
+  "type": "battle",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "jarunda"
+  ],
+  "wars": [
+   "war-of-the-aragonese-restoration"
+  ],
+  "title": "Defeat in detail. The Pope lands an army on the Catalan coast, a foolish venture, and the Emperor falls on it before Girona: 8,400 against 2,900. In a day 2,250 of the Pope's men are lost for 234 of ours",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "al-Andalus, Valencia, the Algarve and Catalonia": 8381
+   },
+   "oursTotal": 8381,
+   "oursLost": 234,
+   "theirs": {
+    "Papal States": 2940
+   },
+   "theirsTotal": 2940,
+   "theirsLost": 2252,
+   "location": "Girona",
+   "side": "al-Andalus attacking",
+   "warScore": 3.05,
+   "began": "1376-05-24",
+   "commanders": {
+    "al-Andalus": "the Emperor Saʿd (100/68/100)",
+    "Papal States": "a papal general (41/77/28)"
+   },
+   "units": {
+    "ours": {
+     "infantry": [
+      2831,
+      204
+     ],
+     "heavyInfantry": [
+      2000,
+      0
+     ],
+     "lightCavalry": [
+      2400,
+      31
+     ],
+     "heavyCavalry": [
+      500,
+      0
+     ],
+     "support": [
+      650,
+      0
+     ]
+    },
+    "theirs": {
+     "infantry": [
+      2940,
+      2253
+     ]
+    }
+   },
+   "landing": "Trent puts the papal landing at 2,000 men; the battle screen shows 2,940"
+  },
+  "source": "Trent's account and battle screens, 24–25 May 1376"
  }
 ]
