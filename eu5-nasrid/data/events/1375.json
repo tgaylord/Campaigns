@@ -1,0 +1,50 @@
+[
+ {
+  "id": "1375-01-06-mamluk-army-catalonia",
+  "date": "1375-01-06",
+  "type": "player_note",
+  "people": [
+   "bolot-mamluk",
+   "aiman-mamluk"
+  ],
+  "wars": [
+   "war-of-the-upper-march"
+  ],
+  "title": "With Barshalūna already under siege, a Mamlūk army of 4,272 under another cousin of the Baḥrī house marches through Girona for Castelló d'Empúries, in the far north of Catalonia under the Pyrenees: the ally keeps its word, and the Aiman faction at court gains by it",
+  "data": {
+   "army": {
+    "name": "Jaysh 1",
+    "owner": "MAM",
+    "men": 4272,
+    "lightInfantry": 2431,
+    "heavyInfantry": 996,
+    "lightCavalry": 310,
+    "heavyCavalry": 391,
+    "auxiliary": 144,
+    "morale": "3.86 of 3.94",
+    "arrives": "Castelló d'Empúries, 10 January 1375",
+    "supply": "cannot draw food in Girona, beyond its logistics range (41.2)"
+   },
+   "siege": "Barcelona under siege by Granada (Trent)",
+   "commander": "a cousin of the Baḥrī house (Baḥriyya), as Aiman and the shaykh of Barqa are"
+  },
+  "source": "Trent's account and screenshot of 6 January 1375"
+ },
+ {
+  "id": "1375-01-06-court-factions",
+  "date": "1375-01-06",
+  "type": "player_note",
+  "people": [
+   "aiman-mamluk",
+   "dua-marinid",
+   "yusuf-ibn-saad",
+   "ismail-ibn-saad"
+  ],
+  "title": "The court divides along the sultan's two marriages. Duʿā's family, the Marīnids of Fās, twice made war on the Emirate; Aiman's, the Baḥrī Mamlūks, fight beside it in Sicily, Malta and Catalonia. The Mamlūk commitment is a boon for the Aiman faction",
+  "data": {
+   "aimanFaction": "the Mamlūk alliance, Aiman and her son Yūsuf",
+   "duaFaction": "Duʿā, the heir Ismāʿīl, the regency at Gharnāṭa"
+  },
+  "source": "Trent's account, January 1375"
+ }
+]
