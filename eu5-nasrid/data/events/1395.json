@@ -1,0 +1,34 @@
+[
+ {
+  "id": "1395-02-04-battle-penafiel",
+  "date": "1395-02-04",
+  "type": "battle",
+  "people": [
+   "alfons-de-borja",
+   "agustin-arce"
+  ],
+  "wars": [
+   "war-of-796"
+  ],
+  "title": "The Aragonese riders finish the job. Seven weeks after Ejea, 897 horsemen of the Ṭāʾifa of Aragon run down what is left of the Castilian host at Peñafiel on the Duero, in the heart of Old Castile: 10,886 broken men, of whom 10,564 are cut down or scattered, without the loss of a single Aragonese",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Aragon": 897
+   },
+   "oursTotal": 897,
+   "oursLost": 0,
+   "theirs": {
+    "Castile": 10886
+   },
+   "theirsTotal": 10886,
+   "theirsLost": 10564,
+   "location": "Peñafiel, on the Duero",
+   "side": "Aragon",
+   "warScore": 13.67,
+   "note": "the remnant of the army beaten at Ejea, without morale to fight"
+  },
+  "source": "Trent's account and battle breakdown, 4 February 1395"
+ }
+]
