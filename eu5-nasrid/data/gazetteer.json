@@ -1131,5 +1131,14 @@
   "kind": "location",
   "nameArabic": "ماردة",
   "note": "Mérida, the Roman Emerita, the first seat of the Lower March; taken from Castile at the peace of 1378. The game name is from the base localization."
+ },
+ {
+  "id": "banbaluna",
+  "key": "pamplona",
+  "name": "Banbalūna",
+  "nameGame": "Pamplona",
+  "kind": "location",
+  "nameArabic": "بنبلونة",
+  "note": "Pamplona, the old capital of Navarre under the western Pyrenees, held by Castile in 1394. The game name is from the base localization."
  }
 ]

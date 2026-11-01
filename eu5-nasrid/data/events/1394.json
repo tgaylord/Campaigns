@@ -98,5 +98,121 @@
    "treasury": 568
   },
   "source": "save of 4 March 1394; Trent's account"
+ },
+ {
+  "id": "1394-08-siguenza",
+  "date": "1394-08-09",
+  "type": "player_note",
+  "people": [
+   "alfons-de-borja"
+  ],
+  "wars": [
+   "war-of-796"
+  ],
+  "title": "The first battles. Castile's great army, some 24,300 men, comes down on the small armies of the ṭāʾifas around Sigüenza, beyond the Aragonese border: Aragon's 1,840 fall back, and Valencia's 1,740 are caught and engaged on 9 August",
+  "data": {
+   "castile": "24,336 on 3 August, 24,208 on 9 August",
+   "aragon": "1,840, retreating",
+   "valencia": "1,743, in battle on 9 August",
+   "warScore": 35,
+   "result": "not on Trent's screens"
+  },
+  "source": "Trent's screenshots of 3 and 9 August 1394"
+ },
+ {
+  "id": "1394-09-the-chase",
+  "date": "1394-09-01",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "wars": [
+   "war-of-796"
+  ],
+  "title": "Through August and September the Emperor's 17,650 chase the Castilian host north along the Aragonese border, from Calatayud toward the Ebro and Tudela, with the Catalan army of 7,100 and Aragon's 1,840 shadowing it on the other flank",
+  "data": {
+   "alAndalus": 17651,
+   "castile": 24186,
+   "catalonia": 7072,
+   "aragon": 1840
+  },
+  "source": "Trent's account and map screenshot, August–September 1394"
+ },
+ {
+  "id": "1394-10-12-battle-pamplona",
+  "date": "1394-10-12",
+  "type": "battle",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "banbaluna"
+  ],
+  "wars": [
+   "war-of-796"
+  ],
+  "title": "The ambush at Banbalūna. The Castilians, pursuing an Aragonese army of 8,900 into the hills of Navarre, find the Emperor across their path at Pamplona: their pursuit is cut off and their host of 24,200 is beaten, 2,440 lost for 1,450 of ours. Castile retreats in haste",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "al-Andalus": 17656
+   },
+   "oursTotal": 17656,
+   "oursLost": 1450,
+   "theirs": {
+    "Castile": 24184
+   },
+   "theirsTotal": 24184,
+   "theirsLost": 2441,
+   "location": "Pamplona",
+   "side": "Castile attacking",
+   "warScore": 5.03,
+   "began": "1394-10-09 (17,013 against 23,273)",
+   "aragonNearby": 8912,
+   "units": {
+    "ours": {
+     "infantry": [
+      12062,
+      1180
+     ],
+     "heavyInfantry": [
+      2320,
+      0
+     ],
+     "lightCavalry": [
+      2400,
+      271
+     ],
+     "heavyCavalry": [
+      874,
+      0
+     ]
+    },
+    "theirs": {
+     "infantry": [
+      23661,
+      2442
+     ],
+     "lightCavalry": [
+      200,
+      0
+     ],
+     "heavyCavalry": [
+      273,
+      0
+     ],
+     "support": [
+      50,
+      0
+     ]
+    }
+   },
+   "commanders": {
+    "al-Andalus": "the Emperor Saʿd",
+    "Castile": "a Castilian general"
+   }
+  },
+  "source": "Trent's account and battle screens, 9–12 October 1394"
  }
 ]
