@@ -426,5 +426,16 @@
    "note": "part of the reforms and the integration of the new lands (Trent); the step toward the caliphate the Emperor may one day claim"
   },
   "source": "Trent's account and screenshot, spring 1378"
+ },
+ {
+  "id": "1378-07-09-tunis-marriage",
+  "date": "1378-07-09",
+  "type": "marriage",
+  "people": [],
+  "title": "A royal marriage binds al-Andalus to the Ḥafṣids of Tunis",
+  "data": {
+   "with": "TUN"
+  },
+  "source": "save of 2 December 1379"
  }
 ]

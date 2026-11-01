@@ -52,8 +52,52 @@
    ],
    "funding": "loans from the estates",
    "date": "begun late April 1379 (Trent)",
-   "roadsDone": "each road on its own schedule, by its length and the ground it crosses (Trent)"
+   "roadsDone": "each road on its own schedule, by its length and the ground it crosses (Trent)",
+   "loans": "five loans of 113 each, 565 in all, at about 8.7% over five years (save of 2 December 1379)",
+   "roadsBuilt": "by 2 December 1379 seven new stretches of road were finished, among them Seville–Morón, Carmona–Écija, Jerez–Sanlúcar and Badajoz–Barcarrota; the rest are still under way"
   },
-  "source": "Trent's account, 1379"
+  "source": "Trent's account, 1379; save of 2 December 1379"
+ },
+ {
+  "id": "1379-11-capital-at-ishbiliya",
+  "date": "1379-11-24",
+  "type": "reform",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "ishbiliyya",
+   "gharnata"
+  ],
+  "title": "The court moves to Ishbīliya. After a hundred and forty years at Gharnāṭa the capital of the house of Naṣr stands in the greatest city of the realm, on the river to the Atlantic, with the first market in the world. Its grip on the city has already risen from 60% to 67%; on the far provinces it will take months and years",
+  "data": {
+   "capital": [
+    "Granada",
+    "Seville"
+   ],
+   "seville": {
+    "population": 78205,
+    "control": [
+     59.9,
+     67.4
+    ],
+    "newBuildings": [
+     "jewelry guild",
+     "marketplace (level 5)",
+     "fruit orchard"
+    ]
+   },
+   "granada": {
+    "population": 67366,
+    "control": 99.5,
+    "historicalCapital": "not recorded in the save: the game kept no historical capital for al-Andalus after the move, though other powers that moved (the Ottomans from Bursa, the Habsburgs from Vienna, Athens from Thebes) have theirs"
+   },
+   "dīwān": "all three councillors, Duʿā, Sayyida and Maryam, have been integrating the new lands since the peace",
+   "treasury": 49.7,
+   "income": 101.4,
+   "expenses": 93.2,
+   "politicalInfluence": 58.8
+  },
+  "source": "saves of 24 November and 2 December 1379; Trent's account"
  }
 ]
