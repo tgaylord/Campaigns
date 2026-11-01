@@ -19,5 +19,37 @@
    "save": "none taken (Trent: a minor rising)"
   },
   "source": "Trent's account and map screenshot, 3 May 1385"
+ },
+ {
+  "id": "1385-08-23-teruel-crushed",
+  "date": "1385-08-23",
+  "type": "peace",
+  "people": [
+   "alfons-de-borja"
+  ],
+  "title": "The County of Teruel is crushed and its lands returned to the Ṭāʾifa of Aragon",
+  "data": {
+   "rebel": "County of Teruel",
+   "outcome": "crushed; the lands returned to Aragon"
+  },
+  "source": "Trent's account, 23 August 1385"
+ },
+ {
+  "id": "1385-08-23-the-emperor-departs-on-hajj",
+  "date": "1385-08-23",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "ishbiliyya"
+  ],
+  "title": "With the last rising put down, the Emperor sets out on the Hajj at last, twelve years after he first put it off",
+  "data": {
+   "departure": "1385-08-23 (27 Rajab 787)",
+   "hajj": "8–13 Dhū al-Ḥijja 787, about 10–15 January 1386 (tabular calendar)",
+   "firstPostponed": "1373-01-16"
+  },
+  "source": "Trent's account, 23 August 1385"
  }
 ]
