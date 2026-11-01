@@ -1,0 +1,22 @@
+---
+title: Of Defeat in Detail, the Mercenaries of the Marches, and the Slaughter at Agramunt
+date: 1376-09-01
+era: book-of-the-marches
+kind: chronicle
+people: [saad-ibn-yusuf, francesc-de-montsoriu, alfonso-de-onate, abu-inan-faris, bolot-mamluk]
+places: [barshaluna, jarunda, gharnata]
+wars: [war-of-the-aragonese-restoration]
+sources: [1376-01-21-catalans-destroyed-at-barcelona, 1376-03-01-battle-cape-ben-sakka, 1376-05-25-battle-girona, 1376-06-12-second-battle-girona, 1376-06-mercenaries-and-the-faithful, 1376-08-moroccan-gift, 1376-09-01-battle-agramunt, 1376-12-catalan-shipwrights]
+---
+
+The spring of 777 was the worst of the war. A week after Šalba, the Pope at Rūmiya put two thousand men ashore on the Catalan coast. On 27 Shaʿbān they caught the Catalans who had escaped Šalba, two thousand five hundred and sixty-seven of them, before the walls of [Barshalūna](place:barshaluna), and killed or took every one without losing a man. On 8 Shawwāl, off Cape Ben Sakka on the coast of Ifrīqiya, the fleets of al-Burtughāl and Qashtāla, twenty-eight sail under the Portuguese admiral Rafael Araújo, found the Catalan fleet of twenty and sank or took nineteen. After that the sea belonged to the Iberians. By the spring a Castilian army had Barshalūna itself under siege, the war score stood at thirty-nine against us, and men in the markets of [Gharnāṭa](place:gharnata) asked one another whether the Emperor had overreached.
+
+The Emperor had an answer, and he gave it a soldier's name: *defeat in detail.* The enemy had more men, but they were scattered across the Peninsula, landed in pieces and marching in pieces. He meant to meet each piece alone. The Pope's army was the first. In Muḥarram 778 the Emperor came on it before [Jarunda](place:jarunda), eight thousand four hundred against two thousand nine hundred, and in a day two thousand two hundred and fifty-two of the Pope's men were lost for two hundred and thirty-four of ours. The court called the papal landing a foolish venture, and nobody defended it. Eighteen days later the men of Siena followed their master's footsteps to the same field. Fifteen hundred and fifty-eight came against the Emperor, and every one of them fell, for one hundred and one of ours.
+
+That cleared the north of the Pope's men. It did not lift the siege of Barshalūna. For that the Emperor went back to a remedy the house of Naṣr had used in its first war, nearly forty years before: mercenaries and the faithful. He raised more than seven thousand veterans from the Marches, hard men who had fought on the frontier all their lives and would fight wherever they were paid. They were expensive. The treasury paid out seventy dīnārs a month more than it took in. Then help came from an unexpected quarter. The Moors of Fās, who could not join the war while their truce held, sent a gift of gold into the Emperor's treasury, freely given. The council that had doubted their word said nothing more about it.
+
+In Rabīʿ al-Awwal the Emperor brought fifteen thousand men, the veterans of the Marches at their heart, against [Alfonso de Oñate](person:alfonso-de-onate) in the Catalan plain at Agramunt. Oñate had nineteen thousand Castilians and papal troops, and he had beaten the Emperor at Šalba. This time the ground was open. The Emperor's heavy foot held the centre, and his horse had room to work. They fought for a fortnight. When it ended on 15 Rabīʿ al-Thānī, twelve thousand seven hundred of Oñate's men were dead or scattered, against two thousand eight hundred and thirty-nine of ours. It was not a victory, the soldiers said; it was a slaughter. The war score, which had stood at forty-two against us two days before, stood at sixteen.
+
+There was still the sea. The armies of Miṣr, tens of thousands of them, waited on the far shore because the Mamlūks had almost no ships, and the Iberian fleets would sink anything they sent. *This will not do*, the Emperor said. In Rajab 778 the crown sent Catalan shipwrights east, to five ports of the Mamlūk sultan [Būlād](person:bolot-mamluk): al-Iskandariyya, Dimyāṭ, ʿAkkā, Anṭākiya and Ṭarsūs. They were to build proper shipbuilding wharves there with the Mamlūks' coin, and to teach the Egyptians to build the first modern galleys. By the next winter the Mamlūks had twenty-two ships, where eighteen months before they had had one.
+
+*How many a small company has overcome a large company by permission of Allāh. And Allāh is with the patient.*

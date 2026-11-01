@@ -1113,5 +1113,23 @@
   "kind": "location",
   "nameArabic": "شلوقة الكبرى",
   "note": "Sanlúcar la Mayor, the greater Shalūqa, on the road west from Ishbīliya toward Niebla and the Portuguese border. The game name is the one on Trent's screens."
+ },
+ {
+  "id": "batalyaws",
+  "key": "badajoz",
+  "name": "Baṭalyaws",
+  "nameGame": "Badajoz",
+  "kind": "location",
+  "nameArabic": "بطليوس",
+  "note": "Badajoz on the Guadiana, seat of the Lower March and of the Aftasid ṭāʾifa kings until 1094; taken from Castile at the peace of 1378. The game name is from the base localization."
+ },
+ {
+  "id": "marida",
+  "key": "merida",
+  "name": "Mārida",
+  "nameGame": "Mérida",
+  "kind": "location",
+  "nameArabic": "ماردة",
+  "note": "Mérida, the Roman Emerita, the first seat of the Lower March; taken from Castile at the peace of 1378. The game name is from the base localization."
  }
 ]

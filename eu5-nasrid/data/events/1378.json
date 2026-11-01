@@ -302,5 +302,52 @@
    "note": "the negative effects apply only when the bureaucracy is unfunded, the positive only when it is funded (Trent)"
   },
   "source": "Trent's account and screenshot, May 1378"
+ },
+ {
+  "id": "1378-05-silk-of-gharnata",
+  "date": "1378-05-01",
+  "type": "reform",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "mursiyya"
+  ],
+  "title": "With Castile's gold, the Emperor expands the famed silk of Gharnāṭa into Mursiyya, now in the crown's own hands, to export still more of it to the rest of Europe: 500 from the treasury for a permanent rise in Murcia's silk",
+  "data": {
+   "decision": "Expand the Silk of Gharnāṭa",
+   "cost": 500,
+   "treasuryBefore": 669.43,
+   "murcia": {
+    "maxRgoSize": "+5,000",
+    "rawMaterialsOutput": "+10%",
+    "rgoExpansionTime": "−20%",
+    "lasts": "until the land ceases to be"
+   },
+   "requirements": [
+    "own Murcia",
+    "at peace",
+    "500 in the treasury"
+   ],
+   "funding": "Castile's war reparations (Trent)"
+  },
+  "source": "Trent's account and screenshot of the decision, spring 1378"
+ },
+ {
+  "id": "1378-05-governor-of-tulaytula",
+  "date": "1378-05-01",
+  "type": "appointment",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "tulaytula"
+  ],
+  "title": "As part of the integration of the new lands, and beside the Count of the Christians, a governor is placed in Ṭulayṭula",
+  "data": {
+   "office": "governor of Toledo",
+   "purpose": "integrating the conquered Christian lands"
+  },
+  "source": "Trent's account, May 1378"
  }
 ]
