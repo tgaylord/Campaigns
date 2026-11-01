@@ -1,0 +1,30 @@
+[
+ {
+  "id": "1380-gharnata-historical-capital",
+  "date": "1380-05-03",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "gharnata",
+   "ishbiliyya"
+  ],
+  "title": "Gharnāṭa keeps the honours of a capital. The old seat of the house of Naṣr is recognised as the realm's historical capital, and the court of al-Ḥamrāʾ keeps its full weight: the fortress its strength, the crown its power, the realm its culture and legitimacy",
+  "data": {
+   "historicalCapital": "Granada (location 2894)",
+   "alhambra": {
+    "level": 3,
+    "effects": {
+     "fortDefense": "+10% at Granada",
+     "crownPower": "+5%",
+     "culturalInfluence": "+5%",
+     "monthlyLegitimacy": "+0.025"
+    },
+    "condition": "counts_as_capital (capital or historical capital)"
+   },
+   "ooc": "The game recorded no historical capital when the capital moved to Seville in November 1379 (likely because of the Al-Andalus formation), which left al-Ḥamrāʾ inactive. Trent restored it from the console on 3 May 1380 with set_capital to Granada and straight back to Seville; the save of 3 May 1380 shows historical_capitals={2894}."
+  },
+  "source": "save of 3 May 1380; Trent's console fix"
+ }
+]
