@@ -97,5 +97,29 @@
    "date": "summer 1391; the day awaits a save"
   },
   "source": "Trent's account and screenshot, summer 1391"
+ },
+ {
+  "id": "1391-07-25-al-qahira-again",
+  "date": "1391-07-25",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf",
+   "bolot-mamluk"
+  ],
+  "title": "A creature of habit, the Emperor sits again with the scholars of al-Azhar for a month. It was this same pause that cost him ʿArafāt six years ago; this time he arrived in al-Qāhira in July, with five months to spare",
+  "data": {
+   "event": "The Royal Ḥajj: The City of a Thousand Minarets",
+   "choice": "Sit with the scholars of al-Azhar while we can",
+   "effects": {
+    "pause": "30 days",
+    "gold": -32.86,
+    "legitimacy": 5,
+    "prestige": 5,
+    "researchProgress": 2.5
+   },
+   "previous": "1385-10-28, the same choice, three months later in the year",
+   "pausesSoFar": "40 days (10 at sea, 30 in al-Qāhira)"
+  },
+  "source": "Trent's account and screenshot, 25 July 1391"
  }
 ]
