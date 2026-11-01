@@ -124,7 +124,7 @@
     "Aragon": "1388-03-15",
     "Sicily, Athens, Negroponte, Nafusa": "1386-04-15"
    },
-   "passageToPalermo": "in Trent's account of the envoys' terms; no access treaty with Sicily shows in the save",
+   "passageToPalermo": "the envoys' promise that King Joan would be let go unharmed to Palermo: he leaves Aragon alive and free, still king of Sicily, less Malta (Trent's account)",
    "siracusa": "stormed by Barqa's 3,000 shortly before the peace; returned to Sicily by it (Trent's account; Sicily owns Syracuse after the peace)",
    "warDead": {
     "granada": 1260,
@@ -201,5 +201,28 @@
    "menUnderArms": 3300
   },
   "source": "save of 15 March 1375 after the peace"
+ },
+ {
+  "id": "1375-03-15-the-new-taifas",
+  "date": "1375-03-15",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf",
+   "joan-of-aragon"
+  ],
+  "wars": [
+   "war-of-the-upper-march"
+  ],
+  "title": "The sultan resolves not to keep Catalonia and Aragon for the crown. They will be made two new ṭāʾifas: Catalonia, and a resurrected Aragon in the interior. Returning Aragonese land to a successor kingdom looks far less aggressive than seizing it outright. In the same reordering, Mursiyya is to be absorbed directly into the crown",
+  "data": {
+   "plannedTaifas": [
+    "Catalonia",
+    "Aragon (the interior)"
+   ],
+   "absorbed": "Murcia, into the crown",
+   "why": "to be seen returning rightful Aragonese land to a successor kingdom rather than seizing it",
+   "status": "planned; the save after the reorganisation will confirm the borders"
+  },
+  "source": "Trent's account, after the peace of 15 March 1375"
  }
 ]
