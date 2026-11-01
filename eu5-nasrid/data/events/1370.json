@@ -539,5 +539,81 @@
    "gameVersion": "1.4.6"
   },
   "source": "save of 1 November 1370"
+ },
+ {
+  "id": "1370-11-01-the-north",
+  "date": "1370-11-01",
+  "type": "situation",
+  "people": [
+   "saad-ibn-yusuf",
+   "dua-marinid",
+   "maryam-bint-ismail"
+  ],
+  "title": "The state of the lands won since 1366. Ishbīliya is the realm's greatest city, with 77,700 souls to Gharnāṭa's 71,100, still Castilian and mostly Catholic, with 24,400 Muslims (20,300 in 1366) and the crown's grip at 51% (44% in 1366). The eleven towns of the north shore, 85,000 souls and more than half of them Muslim, are poor and barely held: prosperity below zero, control about 2%, and 0.14 of a possible 17.2 in tax reaching the treasury",
+  "data": {
+   "ishbiliyya": {
+    "population": {
+     "1366-11-06": 78210,
+     "1370-11-01": 77704
+    },
+    "muslims": {
+     "1366-11-06": 20300,
+     "1370-11-01": 24400
+    },
+    "control": {
+     "1366-11-06": 44,
+     "1370-11-01": 51
+    },
+    "prosperity": {
+     "1366-11-06": 38,
+     "1370-11-01": 40
+    },
+    "culture": "castilian",
+    "religion": "catholic",
+    "guilds": [
+     "cloth",
+     "fine cloth",
+     "weapons",
+     "tools",
+     "pottery",
+     "paper",
+     "scriptorium"
+    ]
+   },
+   "gharnata": {
+    "population": 71136
+   },
+   "byArea": {
+    "granada_area": {
+     "towns": 18,
+     "population": 256400,
+     "muslimShare": 93,
+     "control": 74,
+     "tax": 87.1,
+     "possibleTax": 121.8
+    },
+    "andalusia_area": {
+     "towns": 31,
+     "population": 408500,
+     "muslimShare": 20,
+     "control": 51,
+     "prosperity": 35,
+     "tax": 66.9,
+     "possibleTax": 111.1
+    },
+    "north_shore_1370": {
+     "towns": 11,
+     "population": 84900,
+     "muslimShare": 56,
+     "control": 2,
+     "prosperity": -4,
+     "tax": 0.14,
+     "possibleTax": 17.18,
+     "worst": "Runda, prosperity −13%"
+    }
+   },
+   "constructionUnderWay": 0
+  },
+  "source": "save of 1 November 1370"
  }
 ]

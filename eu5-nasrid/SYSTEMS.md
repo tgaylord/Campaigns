@@ -136,6 +136,7 @@ Each entry has a date, a type, references to the entities involved and source de
 - **Standing threads:**
   - **The crown and the estates**, a running thread. Each swing in power or privilege is recorded and explained.
   - **The Strait**: the balance between Castile and Morocco.
+  - **The rebuilding of the north** (Book IV, from February 1371): the sultan's investment in the lands won since the 1360s, the valley and the north shore, to rebuild their economy and bring them back to Islam and Andalusī culture, with Ishbīliya at its centre (Trent).
   - **Armies:** none at the start. Named-army tracking begins once Granada has a significant professional force, and that moment becomes part of the story of the Nasrid state. A destroyed army stays dead unless it's revived in-game.
 - **File format:** one Markdown file per entry in `story/`, with front matter for the id, dates, era, title, kind (`chronicle` or `ooc`) and linked people, places and wars. An `ooc` note can name the chronicle entry it comments on with `about: <entry-id>`; otherwise it attaches to the nearest earlier entry. Either way it appears as a gloss in that folio's margin.
 
