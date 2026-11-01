@@ -211,9 +211,79 @@
       2253
      ]
     }
-   },
-   "landing": "Trent puts the papal landing at 2,000 men; the battle screen shows 2,940"
+   }
   },
   "source": "Trent's account and battle screens, 24–25 May 1376"
+ },
+ {
+  "id": "1376-06-12-second-battle-girona",
+  "date": "1376-06-12",
+  "type": "battle",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "jarunda"
+  ],
+  "wars": [
+   "war-of-the-aragonese-restoration"
+  ],
+  "title": "Siena follows its master's footsteps. Before Girona again, the Sienese come against the Emperor's 8,200 with 1,560 and are destroyed to the last man, for 101 of ours",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "al-Andalus, Valencia, the Algarve and Catalonia": 8176
+   },
+   "oursTotal": 8176,
+   "oursLost": 101,
+   "theirs": {
+    "Siena": 1558
+   },
+   "theirsTotal": 1558,
+   "theirsLost": 1558,
+   "location": "Girona",
+   "side": "Siena attacking",
+   "warScore": 2.03,
+   "units": {
+    "ours": {
+     "infantry": [
+      2626,
+      88
+     ],
+     "heavyInfantry": [
+      2000,
+      0
+     ],
+     "lightCavalry": [
+      2400,
+      13
+     ],
+     "heavyCavalry": [
+      500,
+      0
+     ],
+     "support": [
+      650,
+      0
+     ]
+    },
+    "theirs": {
+     "infantry": [
+      1545,
+      1545
+     ],
+     "heavyInfantry": [
+      4,
+      4
+     ],
+     "heavyCavalry": [
+      9,
+      9
+     ]
+    }
+   }
+  },
+  "source": "Trent's account and battle screen, 12 June 1376"
  }
 ]
