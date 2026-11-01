@@ -120,3 +120,5 @@
   .rungs .bar { display: none; }
   .k-dispatches { grid-template-columns: 1fr; }
 }
+.k-truces { margin-top: 2rem; }
+.k-truces li.near .sides b { color: var(--gilt-hi); }

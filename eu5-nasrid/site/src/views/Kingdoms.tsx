@@ -87,7 +87,7 @@ export default function Kingdoms() {
 
         <StarRule />
         <div className="k-pair">
-          <WarsAbroad w={w} tags={tags} />
+          <div><WarsAbroad w={w} tags={tags} /><Truces w={w} tags={tags} /></div>
           <Orders w={w} tags={tags} />
         </div>
         <p className="ui muted small k-source">From the save of {western(snap.date)} (tools/world_powers.py). Men under arms are regulars and raised levies on the map: in peacetime most powers stand their levies down, so this is readiness, not the most a power could raise.</p>
@@ -367,6 +367,55 @@ function WarsAbroad({ w, tags }: { w: World; tags: Record<string, { name: string
     </section>
   );
 }
+
+/** Truces that matter: all of Granada's, then those between the powers the dīwān follows, soonest first. */
+function Truces({ w, tags }: { w: World; tags: Record<string, { name: string }> | null }) {
+  const name = (t: string) => (followed.has(t) ? powerName(t, w, tags) : gameName(t, w, tags));
+  const left = (until: string) => {
+    const [y0, m0] = w.date.split("-").map(Number), [y1, m1] = until.split("-").map(Number);
+    const m = (y1 - y0) * 12 + (m1 - m0);
+    return m >= 24 ? `${Math.floor(m / 12)} years` : m >= 12 ? `a year and ${m - 12} month${m - 12 === 1 ? "" : "s"}` : `${Math.max(m, 0)} month${m === 1 ? "" : "s"}`;
+  };
+  const ours = new Map<string, string[]>();
+  for (const [t, until] of w.powers[OURS]?.truces ?? []) ours.set(until, [...(ours.get(until) ?? []), t]);
+  const near = new Set([...(w.powers[OURS]?.allies ?? []), ...(w.powers[OURS]?.rivals ?? []), ...(circleOf("peninsula")), ...(circleOf("maghrib"))]);
+  const seen = new Set<string>();
+  const pairs: { a: string; b: string; until: string; near: boolean }[] = [];
+  for (const [t, p] of Object.entries(w.powers)) {
+    // a subject's truces follow its overlord's, so only sovereign powers are paired here
+    if (t === OURS || !followed.has(t) || p.overlord) continue;
+    for (const [o, until] of p.truces ?? []) {
+      if (o === OURS || !followed.has(o) || w.powers[o]?.overlord) continue;
+      const k = [t, o].sort().join("-") + until;
+      if (seen.has(k)) continue;
+      seen.add(k); pairs.push({ a: t, b: o, until, near: near.has(t) || near.has(o) });
+    }
+  }
+  pairs.sort((p, q) => p.until.localeCompare(q.until));
+  return (
+    <section aria-labelledby="truces-h" className="k-truces">
+      <h2 id="truces-h" className="section-title">Truces to watch</h2>
+      <h3 className="k-sub">Gharnāṭa's</h3>
+      {ours.size ? <ul className="k-wars ui">
+        {[...ours.entries()].sort((a, b) => a[0].localeCompare(b[0])).map(([until, ts]) => (
+          <li key={until}><span className="sides">With <b>{ts.map(name).join(", ")}</b></span><span className="t">until {western(until)}, {left(until)} from now</span></li>
+        ))}
+      </ul> : <p className="muted ui">None in force.</p>}
+      {[["Close to home", pairs.filter((p) => p.near)], ["Further off", pairs.filter((p) => !p.near)]].map(([h, list]) => (
+        <div key={h as string}>
+          <h3 className="k-sub">{h as string}</h3>
+          {(list as typeof pairs).length ? <ul className="k-wars ui">
+            {(list as typeof pairs).map((p) => (
+              <li key={p.a + p.b + p.until}><span className="sides"><b>{name(p.a)}</b> and <b>{name(p.b)}</b></span><span className="t">until {western(p.until)}, {left(p.until)} from now</span></li>
+            ))}
+          </ul> : <p className="muted ui">None.</p>}
+        </div>
+      ))}
+      <p className="muted ui small">Between the powers, only sovereign ones are paired: a subject's truces follow its overlord's. Close to home means the Peninsula, the Maghrib, and Gharnāṭa's allies and rivals. A truce runs five years from the peace, and a month and a fifth longer for every point of war score.</p>
+    </section>
+  );
+}
+const circleOf = (id: string) => world.circles.find((c) => c.id === id)?.tags ?? [];
 
 function Orders({ w, tags }: { w: World; tags: Record<string, { name: string }> | null }) {
   const o = w.orders;

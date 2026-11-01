@@ -1,0 +1,59 @@
+[
+ {
+  "id": "1371-02-24-spread-of-usury",
+  "date": "1371-02-24",
+  "type": "estate_change",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "The Spread of Usury: Muslim merchant families of the growing towns have begun to lend at interest, and the ʿulamāʾ demand that it be stopped. The sultan answers that the ʿulamāʾ are overreacting. The ʿulamāʾ lose 10% satisfaction",
+  "data": {
+   "event": "Spread of Usury",
+   "choice": "The 'Ulamā' are clearly overreacting.",
+   "rejected": "These vultures shall not steer us away from the light of Allāh.",
+   "effects": [
+    "'Ulamā' −10% estate satisfaction",
+    "a second effect, cut off in the screenshot, changes another estate's satisfaction by 5%"
+   ],
+   "theme": "Trent: the growth of urbanization in the Emirate"
+  },
+  "source": "Trent's screenshot of 24 February 1371 (the option with its tooltip open is the one chosen)"
+ },
+ {
+  "id": "1371-02-24-state",
+  "date": "1371-02-24",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf",
+   "dua-marinid",
+   "maryam-bint-ismail"
+  ],
+  "title": "On 7 Shaʿbān 772 the treasury holds 96 dīnārs and gains 10.7 a month; the realm counts 755,000 souls, growing by 445 a month. The market of Ishbīliya stands first in the outliner's list of markets, ahead of Fās and Niani. Duʿā and Maryam are assimilating Ishbīliya and Jayyān, Castilian Patriots are in arms in the realm, and the claim to reconquer Iberia, a spy network and the annexation of Mursiyya are all under way",
+  "data": {
+   "treasury": 95.98,
+   "monthly": 10.69,
+   "population": 755000,
+   "populationMonthly": 445,
+   "stability": 31,
+   "menUnderArms": 3300,
+   "markets": {
+    "Šbilya": "1st",
+    "Fas": "3rd",
+    "Niani": "8th"
+   },
+   "cabinet": [
+    "Assimilating Sevilla",
+    "Assimilating Jaén"
+   ],
+   "rebels": [
+    "Castilian Patriots"
+   ],
+   "diplomacy": [
+    "Reconquest of Iberia",
+    "Building Spy Network",
+    "Annexation"
+   ]
+  },
+  "source": "Trent's screenshot of 24 February 1371"
+ }
+]

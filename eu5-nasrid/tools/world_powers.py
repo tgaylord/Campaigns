@@ -14,7 +14,8 @@ Writes <out-dir>/<checkpoint>.json:
   powers   every power on the ladder plus the ones data/powers.json follows:
            size (locations, people in thousands, with subjects), income, gold,
            men under arms (regulars + raised levies, as tools in SYSTEMS.md §4),
-           ships, ruler and heir, overlord, subjects, allies, rivals, truces in force
+           ships, ruler and heir, overlord, subjects, allies, rivals, and the truces
+           that matter (all of Granada's; between the followed powers otherwise)
   unions   personal unions touching the followed powers
   wars     wars the followed powers are fighting, by side
   orders   the Emperor, the Pope, and the Guelph and Ghibelline leagues
@@ -213,7 +214,9 @@ for t in sorted(WANT):
         'ruler': reign(gov), 'heir': person(get(gov, 'heir')),
         'overlord': overlord.get(t), 'subjects': subs,
         'allies': sorted(allies[t]), 'rivals': rivals.get(t, []), 'guarantees': sorted(guarantees[t]),
-        'truces': sorted(truces.get(t, []), key=lambda x: x[1]),
+        # Granada keeps every truce; a followed power only those with Granada and the other followed powers;
+        # the rest of the ladder none (a truce between Poland and Kyiv is no concern of the dīwān's)
+        'truces': sorted([x for x in truces.get(t, []) if t == 'GRA' or (t in NEAR and x[0] in NEAR)], key=lambda x: x[1]),
     }
 
 # international organisations: unions, the Empire, the Church, the Italian leagues
