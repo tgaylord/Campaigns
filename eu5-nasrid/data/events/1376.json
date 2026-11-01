@@ -307,5 +307,59 @@
    "date": "June 1376, after the second battle of Girona (Trent); the exact size awaits a save or screen"
   },
   "source": "Trent's account, June 1376"
+ },
+ {
+  "id": "1376-08-moroccan-gift",
+  "date": "1376-08-16",
+  "type": "diplomacy",
+  "people": [
+   "abu-inan-faris",
+   "dua-marinid"
+  ],
+  "wars": [
+   "war-of-the-aragonese-restoration"
+  ],
+  "title": "The Moors cannot join the war while their truce with Castile holds, but they send a gift of gold into the Emperor's treasury, freely given. The mercenaries are expensive, and the gift keeps them in the field",
+  "data": {
+   "from": "MOR",
+   "treasury": {
+    "1376-06-12": 662,
+    "1376-08-16": 1510
+   },
+   "monthlyBalance": -70.26,
+   "note": "the gift's exact size is not on the screens; the treasury rose by about 850 in two months while paying the mercenaries"
+  },
+  "source": "Trent's account and screenshots of 12 June and 16 August 1376"
+ },
+ {
+  "id": "1376-08-16-agramunt-joined",
+  "date": "1376-08-16",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "wars": [
+   "war-of-the-aragonese-restoration"
+  ],
+  "title": "The second great battle of the war is joined at Agramunt, in the Catalan plain below the Pyrenees: the Emperor's 13,400, with the mercenaries of the Marches, Valencia and the Algarve, against 18,350 Castilians under the general who won at Šalba",
+  "data": {
+   "ours": 13392,
+   "theirs": 18350,
+   "onMap": {
+    "ours": 14752,
+    "theirs": 18400
+   },
+   "dice": "8–7",
+   "commanders": {
+    "al-Andalus": "the Emperor Saʿd (100/68/100)",
+    "Castile": "the general of Šalba (53/54/89)"
+   },
+   "early": {
+    "oursLost": 285,
+    "theirsLost": 672
+   },
+   "warScore": -41
+  },
+  "source": "Trent's screenshot of 16 August 1376"
  }
 ]
