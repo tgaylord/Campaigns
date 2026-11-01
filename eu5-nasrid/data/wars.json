@@ -528,5 +528,38 @@
     "value": 50
    }
   ]
+ },
+ {
+  "id": "war-of-796",
+  "name": "The War of 796",
+  "gameName": "Reconquest of Iberia",
+  "start": "1394-03-04",
+  "end": null,
+  "goal": "The Reconquest of Iberia against Castile (cb_reconquer_iberia, ready from 1 January 1394)",
+  "allies": [
+   "Aragon",
+   "Catalonia",
+   "Valencia",
+   "Taifa of the Algarve",
+   "Morocco",
+   "Mamluks"
+  ],
+  "enemies": [
+   "Castile",
+   "Portugal",
+   "Papal States",
+   "Faenza",
+   "Siena",
+   "Andorra"
+  ],
+  "involvement": "belligerent",
+  "note": "On 4 March 1394 (1 Jumādā al-Ūlā 796) al-Andalus declared war on Castile for the third time, a year after the truce of 1378 ran out. Castile had broken its union with Portugal in 1389, though the two stayed allied, and its king Fernando had died on 6 January; his son Pedro, twenty-three, faced the war. Castile, Portugal and Andorra had formed a coalition against al-Andalus in 1393. Portugal, the Papal States with Faenza and Siena, and Andorra joined Castile; the four ṭāʾifas, Morocco and its vassals, and the Mamlūks and theirs joined al-Andalus. At the declaration al-Andalus had 4,900 regulars and 16 ships; Castile 750 men and 19 ships, Portugal 1,550 and 7, Rome 1,750 and 14; Morocco 1,900 and 30 ships, the Mamlūks 4,050 (save of 4 March 1394; Trent's account).",
+  "outcome": null,
+  "score": [
+   {
+    "date": "1394-03-04",
+    "value": 0
+   }
+  ]
  }
 ]
