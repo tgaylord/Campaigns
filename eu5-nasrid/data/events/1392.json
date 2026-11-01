@@ -18,9 +18,27 @@
     "muslimOpinion": "+10 with every known Muslim country",
     "trait": "Ḥājjī: +0.1 prestige and +0.1 legitimacy a month"
    },
-   "journey": "11 May 1391 to 20 February 1392",
-   "alsoUnderWay": "an exploration being prepared, to Madeira by the look of Trent's screen"
+   "journey": "11 May 1391 to 20 February 1392"
   },
   "source": "Trent's screenshot of the event, 20 February 1392"
+ },
+ {
+  "id": "1392-02-atlantic-expeditions",
+  "date": "1392-02-20",
+  "type": "player_note",
+  "people": [
+   "khayr-al-din-al-jayyani"
+  ],
+  "title": "The empire turns to the Atlantic. Beside Khayr al-Dīn's voyage down the African coast toward Mali, two more expeditions set out with new explorers: one to chart the sea of the Azores, the other to Madeira",
+  "data": {
+   "expeditions": [
+    "the African coast to Mali (Khayr al-Dīn al-Jayyānī, 1391)",
+    "the sea of the Azores",
+    "Madeira"
+   ],
+   "explorers": "new explorers for the Azores and Madeira; names await a save",
+   "history": "the Azores and Madeira were known to Genoese and Portuguese sailors by the mid-fourteenth century, but not settled until the 1420s; Arab geographers had written of islands in the western Ocean"
+  },
+  "source": "Trent's account and screenshot, February 1392"
  }
 ]
