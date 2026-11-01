@@ -33,5 +33,117 @@
    "iberia": "no town has changed hands since the declaration"
   },
   "source": "save of 13 January 1377 (a reading); Trent's account"
+ },
+ {
+  "id": "1377-01-31-battle-zaragoza",
+  "date": "1377-01-31",
+  "type": "battle",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "saraqusta"
+  ],
+  "wars": [
+   "war-of-the-aragonese-restoration"
+  ],
+  "title": "Before Saraqusṭa, the old capital of the Upper March, the Emperor meets the rebuilt Castilian army, with the Pope's men beside it, and breaks it: 13,200 against 7,400, with 5,675 of theirs lost for 705 of ours",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "al-Andalus, Valencia and the Algarve": 13193
+   },
+   "oursTotal": 13193,
+   "oursLost": 705,
+   "theirs": {
+    "Castile and the Papal States": 7402
+   },
+   "theirsTotal": 7402,
+   "theirsLost": 5675,
+   "location": "Zaragoza",
+   "warScore": 7.82
+  },
+  "source": "Trent's account and battle breakdown, 31 January 1377"
+ },
+ {
+  "id": "1377-06-13-battle-calatayud",
+  "date": "1377-06-13",
+  "type": "battle",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "qalat-ayyub"
+  ],
+  "wars": [
+   "war-of-the-aragonese-restoration"
+  ],
+  "title": "At Qalʿat Ayyūb the last Castilian army is crushed: 2,340 against the Emperor's 12,400, and 2,030 of them fall for 385 of ours. With Castile beaten in the field, the Emperor's eyes turn to the Portuguese",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "al-Andalus, Valencia and the Algarve": 12395
+   },
+   "oursTotal": 12395,
+   "oursLost": 385,
+   "theirs": {
+    "Castile": 2343
+   },
+   "theirsTotal": 2343,
+   "theirsLost": 2030,
+   "location": "Calatayud",
+   "side": "al-Andalus attacking",
+   "warScore": 2.96,
+   "units": {
+    "ours": {
+     "infantry": [
+      2670,
+      229
+     ],
+     "heavyInfantry": [
+      5976,
+      92
+     ],
+     "lightCavalry": [
+      2305,
+      64
+     ],
+     "heavyCavalry": [
+      863,
+      0
+     ],
+     "support": [
+      581,
+      0
+     ]
+    },
+    "theirs": {
+     "infantry": [
+      1878,
+      1617
+     ],
+     "heavyInfantry": [
+      254,
+      254
+     ],
+     "lightCavalry": [
+      161,
+      159
+     ],
+     "support": [
+      50,
+      0
+     ]
+    }
+   },
+   "after": {
+    "warScore": 10,
+    "treasury": 1060,
+    "manpower": 165
+   }
+  },
+  "source": "Trent's account and battle screen, 13 June 1377"
  }
 ]

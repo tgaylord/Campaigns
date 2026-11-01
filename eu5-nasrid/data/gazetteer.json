@@ -1095,5 +1095,14 @@
   "kind": "location",
   "nameArabic": "سرقسطة",
   "note": "Zaragoza on the Ebro, the old capital of the Upper March (al-Thaghr al-Aʿlā) and a ṭāʾifa kingdom until 1118; held by Castile in 1375. The game name is from the base localization."
+ },
+ {
+  "id": "qalat-ayyub",
+  "key": "calatayud",
+  "name": "Qalʿat Ayyūb",
+  "nameGame": "Calatayud",
+  "kind": "location",
+  "nameArabic": "قلعة أيوب",
+  "note": "Calatayud, the fortress of Ayyūb on the Jalón, a town of the old Upper March founded under the emirs of Córdoba; held by Castile in 1377. The game name is from the base localization."
  }
 ]
