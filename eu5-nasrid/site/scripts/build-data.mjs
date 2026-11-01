@@ -110,6 +110,10 @@ const War = z.object({
 const Country = z.object({
   tag: z.string().regex(/^[A-Z][A-Z0-9]{2,5}$/), name: z.string(), nameChronicle: z.string(), nameArabic: z.string().optional(),
   color: z.string().regex(/^#[0-9a-f]{6}$/i),
+  /** the sovereign's style before any renaming, e.g. "Sultan of Gharnāṭa" (the realm only) */
+  title: z.string().optional(),
+  /** later names, from a date: Granada became al-Andalus on 16 March 1375 */
+  renamed: z.array(z.object({ from: isoDate, name: z.string(), nameChronicle: z.string(), nameArabic: z.string().optional(), title: z.string().optional() })).default([]),
 });
 
 /** power is the estate's share of power (%); the save doesn't store it, so it comes from Trent's estates screen or stays null */

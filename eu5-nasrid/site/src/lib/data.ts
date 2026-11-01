@@ -16,7 +16,8 @@ export type Place = {
   key: string; x: number; y: number; major: boolean;
   held: { from: string; to: string | null; via?: string }[]; note?: string; sample: boolean;
 };
-export type Country = { tag: string; name: string; nameChronicle: string; nameArabic?: string; color: string };
+type CountryName = { name: string; nameChronicle: string; nameArabic?: string; title?: string };
+export type Country = CountryName & { tag: string; color: string; renamed?: (CountryName & { from: string })[] };
 export type War = {
   id: string; name: string; start: string; end: string | null; goal: string;
   allies: string[]; enemies: string[]; outcome: string | null;
@@ -127,6 +128,15 @@ export const warById = index(wars);
 export const eraById = index(eras);
 export const storyById = index(story);
 export const countryByTag = new Map(countries.map((c) => [c.tag, c]));
+/** A country's names as they stood on a date (the realm was renamed al-Andalus on 16 March 1375). */
+export function countryAt(tag: string, date?: string | null): (Country & { title?: string }) | undefined {
+  const c = countryByTag.get(tag);
+  if (!c || !date) return c;
+  const r = [...(c.renamed ?? [])].filter((x) => x.from <= date).sort((a, b) => a.from.localeCompare(b.from)).pop();
+  return r ? { ...c, ...r } : c;
+}
+/** The sovereign's style on a date: "Sultan of Gharnāṭa", later "Emperor and Sultan of al-Andalus". */
+export const sovereignTitle = (date?: string | null) => countryAt("GRA", date)?.title ?? "Sultan of Gharnāṭa";
 /** The chronicle's name for a country, by tag or by its game name. */
 export function countryName(tagOrName: string) {
   const c = countryByTag.get(tagOrName) ?? countries.find((x) => x.name === tagOrName);

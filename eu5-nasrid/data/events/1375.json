@@ -234,7 +234,7 @@
    "dolca-of-murcia",
    "bernarda-of-murcia"
   ],
-  "title": "Mursiyya, one of the first ṭāʾifas, is taken into the crown: its twelve towns, from Murcia and Cartagena to Albacete and Lorca, pass directly to the sultan. Its ḥājiba Dolça is granted lands and titles and confirmed as a governor. The crown's reach there will be limited at first, and the Catalans' institutions are to be accepted within the state rather than ignored",
+  "title": "Mursiyya, one of the first ṭāʾifas, is taken into the crown: its twelve towns, from Murcia and Cartagena to Albacete and Lorca, pass directly to the sultan. Its ḥājiba Dolça is granted lands and titles and confirmed as a governor. The crown's reach there will be limited at first, and the autonomy and friendship of its Catalan court and traders are carefully kept, their institutions accepted within the state rather than ignored",
   "data": {
    "from": "MUC",
    "to": "GRA",
@@ -266,9 +266,11 @@
    "bernarda-of-murcia",
    "dolca-of-murcia"
   ],
-  "title": "The heir Ismāʿīl, nine, is betrothed to Bernarda of Murcia, eight, the gifted daughter of Dolça and heir of the old ṭāʾifa: Murcia's house is bound to the throne as its land is bound to the crown",
+  "title": "The heir Ismāʿīl, nine, is betrothed to Bernarda of Murcia, eight, the gifted daughter of Dolça and heir of the old ṭāʾifa: Murcia's house is bound to the throne as its land is bound to the crown. One thing to watch: the girl is being raised at the Castilian court for now, though the betrothal holds",
   "data": {
-   "kind": "betrothal"
+   "kind": "betrothal",
+   "raisedAt": "the Castilian court (she sits in Castile in the save)",
+   "culture": "Castilian, like her father; Murcia's court is tied to the Catalans through its traders (Trent)"
   },
   "source": "save of 16 March 1375; Trent's account"
  },
@@ -385,5 +387,26 @@
    }
   },
   "source": "Trent's account and screenshot of the event, 16 March 1375; save of 16 March 1375"
+ },
+ {
+  "id": "1375-03-16-maryam-to-the-diwan",
+  "date": "1375-03-16",
+  "type": "appointment",
+  "people": [
+   "maryam-bint-yusuf",
+   "saad-ibn-yusuf",
+   "aiman-mamluk"
+  ],
+  "title": "In the reorganisation of the realm the Emperor's younger sister Maryam, eighteen and the ablest mind at court, is appointed to the dīwān. Aiman, his principal wife, holds no formal seat, since the game bars the consort from the council, but sits there all the same by the strength of the harem",
+  "data": {
+   "appointed": "maryam-bint-yusuf",
+   "stats": [
+    99,
+    58,
+    84
+   ],
+   "consort": "Aiman: no formal office (the game bars the consort from the council); a member in the chronicle by the harem's strength (Trent's ruling)"
+  },
+  "source": "Trent's account, March 1375 (after the save of 16 March 1375)"
  }
 ]

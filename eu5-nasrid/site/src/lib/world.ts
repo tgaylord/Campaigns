@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { campaign, countryByTag, people } from "./data";
+import { campaign, countryAt, countryByTag, people } from "./data";
 import type { Person } from "./data";
 
 /* The world beyond the realm (tools/world_powers.py): a small series in the bundle,
@@ -61,10 +61,10 @@ export const useTags = () => useFetched<Record<string, { name: string; color: st
 
 /** The chronicle's name for a power, or the game's. */
 export function powerName(tag: string, w?: World | null, tags?: Record<string, { name: string }> | null): string {
-  return countryByTag.get(tag)?.nameChronicle ?? w?.powers[tag]?.name ?? tags?.[tag]?.name ?? tag;
+  return countryAt(tag, w?.date)?.nameChronicle ?? w?.powers[tag]?.name ?? tags?.[tag]?.name ?? tag;
 }
 export function gameName(tag: string, w?: World | null, tags?: Record<string, { name: string }> | null): string {
-  return countryByTag.get(tag)?.name ?? w?.powers[tag]?.name ?? tags?.[tag]?.name ?? tag;
+  return countryAt(tag, w?.date)?.name ?? w?.powers[tag]?.name ?? tags?.[tag]?.name ?? tag;
 }
 const byGameId = new Map<number, Person>();
 for (const p of people) {

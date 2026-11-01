@@ -4,7 +4,17 @@
   "name": "Granada",
   "nameChronicle": "Naṣrid Granada",
   "nameArabic": "غرناطة",
-  "color": "#d4ab55"
+  "color": "#d4ab55",
+  "title": "Sultan of Gharnāṭa",
+  "renamed": [
+   {
+    "from": "1375-03-16",
+    "name": "al-Andalus",
+    "nameChronicle": "al-Andalus",
+    "nameArabic": "الأندلس",
+    "title": "Emperor and Sultan of al-Andalus"
+   }
+  ]
  },
  {
   "tag": "CAS",

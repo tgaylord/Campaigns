@@ -808,7 +808,7 @@
   "nameGame": "Aiman",
   "female": true,
   "roles": [],
-  "note": "Daughter of the Mamluk Sultan, betrothed to Saʿd ibn Yūsuf, heir of Granada, on 19 January 1351. Married to Saʿd before he came of age; at his majority in January 1364 she was his only wife, until he also married Duʿāʾ. Mother of Saʿd's first child, Umm al-Fatḥ (born 13 December 1364). Mother of Jadīla bint Saʿd (born 13 December 1368). Of the Baḥrī house (the game calls her Aiman Baḥriyya), the house of the Mamlūk sultans: in 1374–1375 its men fought for Granada in Malta and Catalonia, and at court she led the faction of the Mamlūk alliance (Trent's account).",
+  "note": "Daughter of the Mamluk Sultan, betrothed to Saʿd ibn Yūsuf, heir of Granada, on 19 January 1351. Married to Saʿd before he came of age; at his majority in January 1364 she was his only wife, until he also married Duʿāʾ. Mother of Saʿd's first child, Umm al-Fatḥ (born 13 December 1364). Mother of Jadīla bint Saʿd (born 13 December 1368). Of the Baḥrī house (the game calls her Aiman Baḥriyya), the house of the Mamlūk sultans: in 1374–1375 its men fought for Granada in Malta and Catalonia, and at court she led the faction of the Mamlūk alliance (Trent's account). As the Emperor's principal wife (consort) the game will not seat her in the dīwān. The chronicle holds that she sits there anyway, by the strength of the harem, without a formal office (Trent's ruling, March 1375).",
   "born": "1344-04-06",
   "gameId": 32464,
   "dynasty": "Baḥrī"
@@ -983,10 +983,18 @@
   "father": "yusuf-i",
   "mother": "tizemt-hafsid",
   "female": true,
-  "roles": [],
+  "roles": [
+   "member of the dīwān"
+  ],
   "traits": [
    "child_prodigy"
-  ]
+  ],
+  "stats": {
+   "adm": 99,
+   "dip": 58,
+   "mil": 84
+  },
+  "note": "Daughter of Yūsuf I and Tizemt the Ḥafṣid, younger half-sister of the Emperor Saʿd; a prodigy as a child, and at eighteen the most gifted mind at court by the game's reckoning (99 in administration). Married to Muḥammad ibn Ismāʿīl al-Aḥmar. Appointed to the dīwān in the reorganisation of the realm after the Restoration of al-Andalus, March 1375 (Trent's account; the save of 16 March 1375 does not show her seat yet)."
  },
  {
   "id": "fatima-bint-yusuf",
@@ -1574,7 +1582,7 @@
   "traits": [
    "gifted child"
   ],
-  "note": "Daughter of Dolça d'Oriola and Blai Manrique de Lara, Sunni, heir of the Ṭāʾifa of Mursiyya; a gifted child (Trent calls her Catalan; the game gives her her father's Castilian culture). Betrothed to the heir Ismāʿīl ibn Saʿd when Murcia was taken into the crown on 16 March 1375 (Trent's account; save of 16 March 1375)."
+  "note": "Daughter of Dolça d'Oriola and Blai Manrique de Lara, Sunni, heir of the Ṭāʾifa of Mursiyya; a gifted child, Castilian by culture like her father. Murcia's court ties itself closely to the Catalans through its traders. Betrothed to the heir Ismāʿīl ibn Saʿd when Murcia was taken into the crown on 16 March 1375. She is being raised at the Castilian court for now, something to watch, though the betrothal holds (Trent's account; save of 16 March 1375, where she sits in Castile)."
  },
  {
   "id": "francesc-de-montsoriu",

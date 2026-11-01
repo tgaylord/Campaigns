@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import type { Devastation as Reading } from "../lib/data";
-import { places, western, nf, countryByTag } from "../lib/data";
+import { places, western, nf, countryAt } from "../lib/data";
 import { gameMap } from "../lib/map";
 import "./devastation.css";
 
@@ -83,7 +83,7 @@ export default function Devastation({ d, checkpoint }: { d: Reading; checkpoint?
           <span className="dv-key-title">People, {western(d.dates.before)} to the peace</span>
           {BINS.map((b) => <span key={b.cls} className="dv-key"><i className={b.cls} />{b.label}</span>)}
           <span className="dv-key"><i className="dot" />looted in these years</span>
-          {ours && <span className="dv-key"><i className="edge" />{countryByTag.get("GRA")?.name ?? "Granada"} at the peace</span>}
+          {ours && <span className="dv-key"><i className="edge" />{countryAt("GRA", d.dates.peace)?.name ?? "Granada"} at the peace</span>}
         </figcaption>
       </figure>
 

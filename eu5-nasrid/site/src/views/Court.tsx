@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { snapshots, personById, hijri, western, year } from "../lib/data";
+import { snapshots, personById, hijri, western, year, sovereignTitle } from "../lib/data";
 import { PageHead, CheckpointSelect, EntityLink, StarRule } from "../components/bits";
 import "./court.css";
 
@@ -42,7 +42,7 @@ export default function Court() {
             <div className="ar sultan">{ruler?.nameArabic}</div>
             <div className="sultan-latin"><EntityLink kind="person" id={s.ruler}>{ruler?.name}</EntityLink></div>
             <div className="sultan-sub">
-              Sultan of Gharnāṭa{age != null ? `, in his ${ordinal(age)} year` : ""}
+              {sovereignTitle(s.date)}{age != null ? `, in his ${ordinal(age)} year` : ""}
             </div>
             <div className="date"><span className="ar">{hijri(s.date).arabic}</span> <span className="ui">{western(s.date)}</span></div>
           </div>

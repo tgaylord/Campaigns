@@ -3,7 +3,7 @@ import type { PointerEvent as RPointerEvent } from "react";
 import { Link } from "react-router-dom";
 import {
   snapshots, places, personById, events, countryByTag, countryName, isHeld, hijri, western,
-  compact, nf, signed, EVENT_LABEL, subjectLands,
+  compact, nf, signed, EVENT_LABEL, subjectLands, sovereignTitle,
 } from "../lib/data";
 import type { Place, CampaignEvent } from "../lib/data";
 import { gameMap, keyLabel, MAP_W, MAP_H } from "../lib/map";
@@ -557,7 +557,7 @@ export default function Atlas() {
           <div className="latin-name">
             <Link to={`/people/${snap.ruler}`} className="entity" data-kind="person" data-id={snap.ruler} data-router="1">{ruler?.name}</Link>
           </div>
-          <div className="title">Sultan of Gharnāṭa{snap.overlord ? `, tributary of ${countryName(snap.overlord.country)}` : ""}</div>
+          <div className="title">{sovereignTitle(snap.date)}{snap.overlord ? `, tributary of ${countryName(snap.overlord.country)}` : ""}</div>
           <div className="date">
             <span className="ar day">{h.arabic}</span>
             <span className="wdate">{h.text} AH, {western(snap.date)}</span>
