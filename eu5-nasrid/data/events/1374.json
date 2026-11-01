@@ -193,5 +193,34 @@
    "plan": "take all of Aragon before France is free"
   },
   "source": "Trent's account and map screenshot, March 1374"
+ },
+ {
+  "id": "1374-03-jamaa-tithes",
+  "date": "1374-03-09",
+  "type": "estate_change",
+  "people": [
+   "dua-marinid",
+   "saad-ibn-yusuf"
+  ],
+  "title": "With the sultan in Catalonia, Duʿā the Marīnid runs the court in Gharnāṭa. With his support, sent by letter, she summons the Jamāʿa to debate the regulation of tithes: the ʿulamāʾ are to be given more power to regulate and tax the dhimmīs",
+  "data": {
+   "issue": "Regulate Tithe Collection",
+   "whileDebated": {
+    "clergySatisfactionRecovery": "+0.5%"
+   },
+   "ifPassed": {
+    "modifier": "Regulated Tithe Collection, 10 years",
+    "clergySatisfactionEquilibrium": "+20%",
+    "taxEfficiency": "+5%",
+    "ulamaSatisfaction": "+10%"
+   },
+   "ifFailed": {
+    "politicalInfluence": -5,
+    "stability": -7,
+    "legitimacy": -10
+   },
+   "gameText": "The collection of tithes has grown irregular and contentious. By standardizing the church's share of income across the realm, we ensure fair and reliable revenue for the clergy while relieving the burden of uncertainty from our people."
+  },
+  "source": "Trent's account and screenshot, March 1374 (the date of the summons is approximate)"
  }
 ]
