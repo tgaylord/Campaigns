@@ -11,6 +11,8 @@ Writes <out-dir>/<checkpoint>.json:
 Shares are percentages of the location's people; prosperity and control are 0-100.
 """
 import argparse, json, os, re
+import sys as _sys; _sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from realm_tags import alias, game_tags  # noqa: E402  (Granada -> Al-Andalus keeps one tag)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ap = argparse.ArgumentParser()
@@ -27,7 +29,7 @@ meta = rd('metadata')
 date = re.search(r'\n\tdate=([\d.]+)', meta).group(1)
 LOCN = [x.strip('"') for x in re.search(r'\n\t\tlocations=\{([^}]*)\}', meta).group(1).split()]
 ct = rd('countries'); ti = ct.find('\n\ttags={'); tj = ct.find('\n\t}', ti)
-TAG = {k: v for k, v in re.findall(r'\n\t\t(\d+)=([A-Za-z0-9_]+)(?=\n)', ct[ti:tj])}
+TAG = alias({k: v for k, v in re.findall(r'\n\t\t(\d+)=([A-Za-z0-9_]+)(?=\n)', ct[ti:tj])})
 
 
 def names(section):

@@ -20,6 +20,8 @@ import argparse, collections, json, os, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, '..', '..', 'shared', 'tools', 'eu5-save-decoder-1.4'))
 from jomini import DB, get, parse, vals  # noqa: E402
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from realm_tags import alias, game_tags  # Granada -> Al-Andalus keeps one tag
 
 ap = argparse.ArgumentParser()
 ap.add_argument('sections')
@@ -48,6 +50,7 @@ def locname(i):
 ctext = rd('countries')
 i = ctext.find('\n\ttags={'); j = ctext.find('\n\t}', i)
 TAGS = {int(k): v for k, v in re.findall(r'\n\t\t(\d+)=([A-Za-z0-9_]+)(?=\n)', ctext[i:j])}
+GAME_TAGS = game_tags(TAGS); TAGS = alias(TAGS)
 BYTAG = {v: k for k, v in TAGS.items()}
 del ctext
 CDB, CHR, DYN = DB(os.path.join(D, 'countries.txt')), DB(os.path.join(D, 'character_db.txt')), DB(os.path.join(D, 'dynasty_manager.txt'))
@@ -122,7 +125,7 @@ def objlist(block, keyed):
 
 
 R = {
-    'source': {'date': date, 'game_version': version, 'tag': a.tag, 'country_id': CID,
+    'source': {'date': date, 'game_version': version, 'tag': a.tag, **({'game_tag': GAME_TAGS[a.tag]} if a.tag in GAME_TAGS else {}), 'country_id': CID,
                'computed_values': not a.no_computed},
     'country': {
         'capital': locname(get(me, 'capital')) if get(me, 'capital') else None,

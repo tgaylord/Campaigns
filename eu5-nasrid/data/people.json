@@ -1083,7 +1083,7 @@
    "heir"
   ],
   "traits": [],
-  "note": "Son and heir of Sultan Saʿd, born to Duʿāʾ the Marīnid on 8 March 1366, a month before the Peace of Independence. At eight he was already a silver tongue (63 in diplomacy). In late 1374 he and his half-brother Yūsuf were both given the costly tutors their father had had; his mother Duʿā had wanted them for him alone (Trent's account).",
+  "note": "Son and heir of Sultan Saʿd, born to Duʿāʾ the Marīnid on 8 March 1366, a month before the Peace of Independence. At eight he was already a silver tongue (63 in diplomacy). In late 1374 he and his half-brother Yūsuf were both given the costly tutors their father had had; his mother Duʿā had wanted them for him alone (Trent's account). On 16 March 1375 he was betrothed to Bernarda of Murcia, the gifted heir of the Ṭāʾifa of Mursiyya, as Murcia was taken into the crown (Trent's account).",
   "stats": {
    "adm": 18,
    "dip": 63,
@@ -1531,5 +1531,86 @@
   "traits": [],
   "note": "Ruler of the Sheikhdom of Barqa, a vassal of the Mamlūks, of the Baḥrī house (Baḥriyya) of the Mamlūk sultans; Crimean by culture, Sunnī, 54 years old in 1374, with four wives and eight children. In late October 1374 his army took Malta from Sicily during the War of the Upper March (Trent's account and screenshots). He led Barqa's army in person at Zuwāra (23 May 1374) and Gharyān (24 June 1374), where he destroyed the army of the Jabal Nafūsa, a Sicilian subject (autosave of 1 November 1374). His fleet of eight was sunk by Sicily's off Malta on 12 November 1374. Shortly before the peace of 15 March 1375 he landed 3,000 men in Sicily and stormed Siracusa, which helped persuade King Joan to give up Aragon (Trent's account).",
   "gameId": 3632
+ },
+ {
+  "id": "dolca-of-murcia",
+  "name": "Dolça d'Oriola",
+  "nameGame": "Douce",
+  "gameId": 31540,
+  "dynasty": "Oriola",
+  "born": "1343-05-03",
+  "female": true,
+  "roles": [
+   "ruler of the Ṭāʾifa of Mursiyya",
+   "governor in Mursiyya"
+  ],
+  "stats": {
+   "adm": 67,
+   "dip": 37,
+   "mil": 31
+  },
+  "traits": [
+   "secretive"
+  ],
+  "note": "Daughter of Joan d'Oriola of Valencia, Sunni. Ruler of the Ṭāʾifa of Mursiyya from 29 January 1371, its ḥājiba in the court's word. Widow of Blai Manrique de Lara, a Muslim scholar who died in November 1372; mother of Bernarda and Estefania. When Murcia was taken into the crown on 16 March 1375 she was granted lands and titles and confirmed as a governor there (Trent's account)."
+ },
+ {
+  "id": "bernarda-of-murcia",
+  "name": "Bernarda of Murcia",
+  "nameGame": "Bernadette",
+  "gameId": 16830196,
+  "dynasty": "Murcia",
+  "born": "1367-01-09",
+  "female": true,
+  "roles": [
+   "heir of Murcia",
+   "betrothed of Prince Ismāʿīl"
+  ],
+  "stats": {
+   "adm": 31,
+   "dip": 25,
+   "mil": 27
+  },
+  "traits": [
+   "gifted child"
+  ],
+  "note": "Daughter of Dolça d'Oriola and Blai Manrique de Lara, Sunni, heir of the Ṭāʾifa of Mursiyya; a gifted child (Trent calls her Catalan; the game gives her her father's Castilian culture). Betrothed to the heir Ismāʿīl ibn Saʿd when Murcia was taken into the crown on 16 March 1375 (Trent's account; save of 16 March 1375)."
+ },
+ {
+  "id": "francesc-de-montsoriu",
+  "name": "Francesc de Montsoriu",
+  "nameGame": "Francesc",
+  "gameId": 16788597,
+  "dynasty": "de Montsoriu",
+  "born": "1342-05-10",
+  "roles": [
+   "ruler of the Ṭāʾifa of Qaṭalūniya"
+  ],
+  "stats": {
+   "adm": 48,
+   "dip": 33,
+   "mil": 62
+  },
+  "traits": [],
+  "note": "A Catalan, Sunni, first ruler of the Ṭāʾifa of Catalonia, carved from the conquered lands of Aragon around Barcelona on 16 March 1375 (save of 16 March 1375)."
+ },
+ {
+  "id": "alfons-de-borja",
+  "name": "Alfons de Borja",
+  "nameGame": "Alfons",
+  "gameId": 33566788,
+  "dynasty": "Borja",
+  "born": "1346-07-23",
+  "roles": [
+   "king of the renewed Aragon",
+   "ruler of a ṭāʾifa"
+  ],
+  "stats": {
+   "adm": 36,
+   "dip": 7,
+   "mil": 85
+  },
+  "traits": [],
+  "note": "A Catalan, Sunni, of the house of Borja; proclaimed king of a renewed Aragon, a ṭāʾifa of the sultan in the interior, on 16 March 1375. The game counts him the fifth Alfons of Aragon, and gives his small kingdom the rank of a kingdom and its seat at Benabarre. The sultan dressed it as a successor to the old crown (Trent's account; save of 16 March 1375)."
  }
 ]

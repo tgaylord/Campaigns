@@ -209,5 +209,12 @@
   "nameChronicle": "Mālī",
   "nameArabic": "مالي",
   "color": "#c9a86a"
+ },
+ {
+  "tag": "CAT",
+  "name": "Catalonia",
+  "nameChronicle": "the Ṭāʾifa of Qaṭalūniya",
+  "nameArabic": "طائفة قطلونية",
+  "color": "#bf3c02"
  }
 ]

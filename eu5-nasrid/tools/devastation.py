@@ -14,6 +14,8 @@ usage:
   Looting counts when the location's last looting falls between the two saves.
 """
 import argparse, json, os, re
+import sys as _sys; _sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from realm_tags import alias, game_tags  # noqa: E402  (Granada -> Al-Andalus keeps one tag)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ap = argparse.ArgumentParser()
@@ -44,7 +46,7 @@ def load(D):
     for m in re.finditer(r'\n(\d+)=\{\n(.*?)\n\}', rd('population'), re.S):
         s = re.search(r'\n\tsize=([\d.]+)', '\n' + m.group(2)); POP[int(m.group(1))] = float(s.group(1)) if s else 0.0
     ct = rd('countries'); ti = ct.find('\n\ttags={'); tj = ct.find('\n\t}', ti)
-    tag = {k: v for k, v in re.findall(r'\n\t\t(\d+)=([A-Za-z0-9_]+)(?=\n)', ct[ti:tj])}
+    tag = alias({k: v for k, v in re.findall(r'\n\t\t(\d+)=([A-Za-z0-9_]+)(?=\n)', ct[ti:tj])})
     lt = rd('locations'); starts = [(int(m.group(1)), m.start()) for m in re.finditer(r'\n\t\t(\d+)=\{', lt)]
     out = {}
     for k, (lid, s) in enumerate(starts):

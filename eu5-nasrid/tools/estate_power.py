@@ -28,6 +28,8 @@ Dated 'adjustments' in the model file (such as the crown-power penalty for debt
 to the estates) are added to the country modifiers for saves after their date.
 """
 import argparse, collections, json, os, re, sys
+import sys as _sys; _sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from realm_tags import alias, game_tags  # noqa: E402  (Granada -> Al-Andalus keeps one tag)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ap = argparse.ArgumentParser()
@@ -61,7 +63,7 @@ for adj in M.get('adjustments', []):
         CM[adj['estate']] = CM.get(adj['estate'], 0) + adj['delta']; ADJ.append(adj)
 ct = rd('countries')
 i = ct.find('\n\ttags={'); j = ct.find('\n\t}', i)
-TAGS = {int(k): v for k, v in re.findall(r'\n\t\t(\d+)=([A-Za-z0-9_]+)(?=\n)', ct[i:j])}
+TAGS = alias({int(k): v for k, v in re.findall(r'\n\t\t(\d+)=([A-Za-z0-9_]+)(?=\n)', ct[i:j])})
 CID = {v: k for k, v in TAGS.items()}[a.tag]
 mine = re.search(r'\n%d=\{\n(.*?)\n\}' % CID, ct[ct.find('\tdatabase={'):], re.S).group(1)
 PRIMARY_CULTURE = re.search(r'\n\tprimary_culture=(\d+)', mine).group(1)

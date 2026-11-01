@@ -25,6 +25,8 @@ country that owns land, for the wide chart.
 A subject has no place on the ladder: the game ranks only sovereign countries.
 """
 import argparse, collections, json, os, re, sys
+import sys as _sys; _sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from realm_tags import alias, game_tags  # noqa: E402  (Granada -> Al-Andalus keeps one tag)
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, '..', '..', 'shared', 'tools', 'eu5-save-decoder-1.4'))
@@ -88,6 +90,7 @@ date = re.search(r'\n\tdate=([\d.]+)', meta).group(1)
 LOCN = [x.strip('"') for x in re.search(r'\n\t\tlocations=\{([^}]*)\}', meta).group(1).split()]
 ct = rd('countries'); ti = ct.find('\n\ttags={'); tj = ct.find('\n\t}', ti)
 TAG = {k: v for k, v in re.findall(r'\n\t\t(\d+)=([A-Za-z0-9_]+)(?=\n)', ct[ti:tj])}
+GAME_TAG = game_tags(TAG); TAG = alias(TAG)
 
 CUL, REL = {}, {}
 for sec, dst in (('culture_manager', CUL), ('religion_manager', REL)):
@@ -105,7 +108,7 @@ for k, (cid, s) in enumerate(starts):
     num = lambda key, nest=r'\n\t': float((re.search(nest + key + r'=([-\d.]+)', b) or [0, 0])[1])
     rgb = re.search(r'\n\tcolor=rgb \{\n(\d+)\n(\d+)\n(\d+)', b)
     cap = g('capital')
-    C[tag] = dict(id=cid, name=CNAME.get(tag, tag), level=int(g('level') or 0),
+    C[tag] = dict(id=cid, name=CNAME.get(GAME_TAG.get(tag, tag), tag), level=int(g('level') or 0),
                   rank=int(g('great_power_rank') or 0) if g('great_power_points') else None,
                   points=num('great_power_points') if g('great_power_points') else None,
                   regional=g('regional_power') == 'yes',
@@ -204,7 +207,7 @@ for t in sorted(WANT):
     subs = subjects.get(t, [])
     f = force[t]
     powers[t] = {
-        'name': v['name'], 'rank': v['rank'], 'points': v['points'], 'regional': v['regional'], 'level': v['level'],
+        'name': v['name'], **({'gameTag': GAME_TAG[t]} if t in GAME_TAG else {}), 'rank': v['rank'], 'points': v['points'], 'regional': v['regional'], 'level': v['level'],
         'locations': locs[t], 'people': round(v['pop']), 'subjectLocations': sum(locs[s] for s, _ in subs),
         'subjectPeople': round(sum(C[s]['pop'] for s, _ in subs if s in C)),
         'tax': round(v['tax'], 1), 'trade': round(v['trade'], 1), 'gold': round(v['gold']),

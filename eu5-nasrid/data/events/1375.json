@@ -221,8 +221,169 @@
    ],
    "absorbed": "Murcia, into the crown",
    "why": "to be seen returning rightful Aragonese land to a successor kingdom rather than seizing it",
-   "status": "planned; the save after the reorganisation will confirm the borders"
+   "status": "carried out the next day, 16 March 1375"
   },
   "source": "Trent's account, after the peace of 15 March 1375"
+ },
+ {
+  "id": "1375-03-16-murcia-into-the-crown",
+  "date": "1375-03-16",
+  "type": "territory_change",
+  "people": [
+   "saad-ibn-yusuf",
+   "dolca-of-murcia",
+   "bernarda-of-murcia"
+  ],
+  "title": "Mursiyya, one of the first ṭāʾifas, is taken into the crown: its twelve towns, from Murcia and Cartagena to Albacete and Lorca, pass directly to the sultan. Its ḥājiba Dolça is granted lands and titles and confirmed as a governor. The crown's reach there will be limited at first, and the Catalans' institutions are to be accepted within the state rather than ignored",
+  "data": {
+   "from": "MUC",
+   "to": "GRA",
+   "locations": [
+    "Murcia",
+    "Cartagena",
+    "Lorca",
+    "Mula",
+    "Caravaca",
+    "Cieza",
+    "Jumilla",
+    "Hellín",
+    "Albacete",
+    "Chinchilla",
+    "Villena",
+    "Segura de la Sierra"
+   ],
+   "annexationBegan": "1370-09-20",
+   "taifaSince": "1340-08-23"
+  },
+  "source": "save of 16 March 1375; Trent's account"
+ },
+ {
+  "id": "1375-03-16-bernarda-betrothed",
+  "date": "1375-03-16",
+  "type": "marriage",
+  "people": [
+   "ismail-ibn-saad",
+   "bernarda-of-murcia",
+   "dolca-of-murcia"
+  ],
+  "title": "The heir Ismāʿīl, nine, is betrothed to Bernarda of Murcia, eight, the gifted daughter of Dolça and heir of the old ṭāʾifa: Murcia's house is bound to the throne as its land is bound to the crown",
+  "data": {
+   "kind": "betrothal"
+  },
+  "source": "save of 16 March 1375; Trent's account"
+ },
+ {
+  "id": "1375-03-16-two-new-taifas",
+  "date": "1375-03-16",
+  "type": "territory_change",
+  "people": [
+   "saad-ibn-yusuf",
+   "francesc-de-montsoriu",
+   "alfons-de-borja"
+  ],
+  "title": "Two ṭāʾifas are carved from the conquered lands of Aragon. In the east, the Catalans are freed from the Aragonese as a strong Ṭāʾifa of Catalonia: 28 towns and 453,000 people around Barcelona, under Francesc de Montsoriu. In the west, at the edges, a renewed Aragon is proclaimed: six towns and 52,000 people around Benabarre and Monzón, an Islamic state dressed as the old crown's successor, under King Alfons de Borja, whom the game counts the fifth of his name",
+  "data": {
+   "CAT": {
+    "towns": [
+     "Barcelona",
+     "Tarragona",
+     "Girona",
+     "Lleida",
+     "Tortosa",
+     "Perpignan",
+     "Vic",
+     "Manresa",
+     "Terrassa",
+     "Vilafranca del Penedès",
+     "Sant Feliu",
+     "Berga",
+     "Cardona",
+     "Cervera",
+     "Tàrrega",
+     "Balaguer",
+     "Agramunt",
+     "Montblanc",
+     "Prades",
+     "Flix",
+     "Talarn",
+     "Vielha",
+     "La Seu d'Urgell",
+     "Puigcerdà",
+     "Ripoll",
+     "Besalú",
+     "Castelló d'Empúries",
+     "Sitges"
+    ],
+    "population": 452700,
+    "capital": "Barcelona",
+    "rank": "duchy",
+    "culture": "Catalan",
+    "religion": "Sunni",
+    "ruler": "Francesc de Montsoriu"
+   },
+   "ARA": {
+    "towns": [
+     "Benabarre",
+     "Monzón",
+     "Barbastro",
+     "Fraga",
+     "Aínsa",
+     "Sariñena"
+    ],
+    "population": 52000,
+    "capital": "Benabarre",
+    "rank": "kingdom",
+    "culture": "Catalan",
+    "religion": "Sunni",
+    "ruler": "Alfons de Borja (Alfons V)"
+   },
+   "note": "ARA is the old Kingdom of Aragon's own tag, landless since the peace of 15 March, now a ṭāʾifa of the sultan"
+  },
+  "source": "save of 16 March 1375; Trent's account"
+ },
+ {
+  "id": "1375-03-16-restoration-of-al-andalus",
+  "date": "1375-03-16",
+  "type": "reform",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "The Restoration of al-Andalus. The sultan no longer calls himself a successor: the Emirate of Granada becomes al-Andalus, an empire, one continuation reaching back hundreds of years. Offered the convivencia of the Umayyads or the sword of the Almohads, he chooses the first: let Qurṭuba shine again as the ornament of the world. Tolerance, wealth and learning are to stand level with the Word",
+  "data": {
+   "formed": "Al-Andalus",
+   "gameTag": "ADU",
+   "previousTag": "GRA",
+   "rank": [
+    "duchy",
+    "empire"
+   ],
+   "choice": "Let Cordoba shine again as the ornament of the world (against: The sword of the Maghreb shall unite the faithful)",
+   "modifier": {
+    "name": "Ornament of the World",
+    "until": "1405-03-16",
+    "culturalTradition": "+20%",
+    "researchProgress": "+15%",
+    "literacy": "+0.02 a month",
+    "diplomaticReputation": 3,
+    "stabilityInvestmentEfficiency": "+15%",
+    "toleranceHeretic": 1,
+    "toleranceHeathen": 1
+   },
+   "unlocks": "the convivencia destiny path in the Traditions tab",
+   "realm": {
+    "locations": 72,
+    "population": 873610,
+    "sunni": 489580,
+    "catholic": 326672,
+    "jewish": 56558,
+    "subjects": 4,
+    "subjectLocations": 64,
+    "stability": [
+     30.4,
+     37.4
+    ]
+   }
+  },
+  "source": "Trent's account and screenshot of the event, 16 March 1375; save of 16 March 1375"
  }
 ]
