@@ -1050,5 +1050,14 @@
   "nameArabic": "برشلونة",
   "note": "Barcelona, capital of Aragon and the city of the Catalans, on the road beyond the Upper March. The game name is from the base localization.",
   "major": true
+ },
+ {
+  "id": "tarrakuna",
+  "key": "tarragona",
+  "name": "Ṭarrakūna",
+  "nameGame": "Tarragona",
+  "kind": "location",
+  "nameArabic": "طركونة",
+  "note": "Tarragona, the old Roman city on the coast south of Barcelona. The game name is from the base localization."
  }
 ]

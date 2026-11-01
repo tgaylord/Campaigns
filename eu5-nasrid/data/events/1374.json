@@ -72,5 +72,90 @@
    "warScoreAfter": 31
   },
   "source": "Trent's account and battle screens of 29 January and 19 February 1374"
+ },
+ {
+  "id": "1374-03-09-battle-tarragona",
+  "date": "1374-03-09",
+  "type": "battle",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "wars": [
+   "war-of-the-upper-march"
+  ],
+  "places": [
+   "tarrakuna"
+  ],
+  "title": "The sultan rides down what is left of the Aragonese army at Ṭarrakūna: 1,343 of theirs killed or taken for 31 of ours (+6 war score). By 9 March all that remains of the host of Arghūn is 161 levies somewhere in the mountains",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "Granada": 2071
+   },
+   "oursTotal": 2071,
+   "oursLost": 31,
+   "theirs": {
+    "Aragon": 1343
+   },
+   "theirsTotal": 1343,
+   "theirsLost": 1343,
+   "location": "Tarragona",
+   "side": "Granada attacking",
+   "captured": {
+    "Granada": 11
+   },
+   "units": {
+    "Granada": {
+     "infantry": [
+      1364,
+      -31
+     ],
+     "light cavalry": [
+      451,
+      -2,
+      "+11 captured"
+     ],
+     "heavy cavalry": [
+      256,
+      0
+     ]
+    },
+    "Aragon": {
+     "archers": [
+      1300,
+      -1300
+     ],
+     "light cavalry": [
+      43,
+      -32,
+      "-11 captured"
+     ]
+    }
+   },
+   "warScore": 6.33,
+   "warScoreAfter": 38,
+   "aragonLeft": "161 levies in the mountains (Trent)"
+  },
+  "source": "Trent's account and battle screen of 9 March 1374"
+ },
+ {
+  "id": "1374-03-09-constructions",
+  "date": "1374-03-09",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "While the army is in Catalonia, the rebuilding goes on at home: the treasury is paying for a Royal Court in Gharnāṭa, mines at Almonaster (El-Mnastir) and a second level of a building at Aracena (Eš-Šeršna), in the hills of the north shore",
+  "data": {
+   "constructions": [
+    "Royal Court in Ğrnaṭa (Granada)",
+    "Mines in El-Mnastir (Almonaster la Real)",
+    "…ort in Eš-Šeršna (+1) (Aracena; the building's name is cut off in the screenshot)"
+   ],
+   "treasury": 101.42,
+   "monthly": 29.46
+  },
+  "source": "Trent's screenshots of 29 January and 9 March 1374"
  }
 ]
