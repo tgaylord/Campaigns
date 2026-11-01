@@ -1104,5 +1104,14 @@
   "kind": "location",
   "nameArabic": "قلعة أيوب",
   "note": "Calatayud, the fortress of Ayyūb on the Jalón, a town of the old Upper March founded under the emirs of Córdoba; held by Castile in 1377. The game name is from the base localization."
+ },
+ {
+  "id": "shaluqa-al-kubra",
+  "key": "sanlucar_la_mayor",
+  "name": "Shalūqa al-Kubrā",
+  "nameGame": "Šaluqa el-Kubra",
+  "kind": "location",
+  "nameArabic": "شلوقة الكبرى",
+  "note": "Sanlúcar la Mayor, the greater Shalūqa, on the road west from Ishbīliya toward Niebla and the Portuguese border. The game name is the one on Trent's screens."
  }
 ]

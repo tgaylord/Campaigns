@@ -1,0 +1,34 @@
+[
+ {
+  "id": "1378-01-07-shaluqa-joined",
+  "date": "1378-01-07",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "shaluqa-al-kubra",
+   "ishbiliyya"
+  ],
+  "wars": [
+   "war-of-the-aragonese-restoration"
+  ],
+  "title": "With Castile beaten in the field and its army besieging Valladolid, the Emperor turns on the Portuguese, who have come down on Ishbīliya. Battle is joined at Shalūqa al-Kubrā on the city's outskirts: 10,100 against 10,500, the Emperor against a Portuguese general",
+  "data": {
+   "ours": 10109,
+   "theirs": 10528,
+   "dice": "10–9",
+   "commanders": {
+    "al-Andalus": "the Emperor Saʿd (100/68/100)",
+    "Portugal": "a Portuguese general (49/63/78)"
+   },
+   "early": {
+    "oursLost": 189,
+    "theirsLost": 696
+   },
+   "warScore": 46,
+   "elsewhere": "al-Andalus besieging Valladolid"
+  },
+  "source": "Trent's screenshot of 7 January 1378"
+ }
+]
