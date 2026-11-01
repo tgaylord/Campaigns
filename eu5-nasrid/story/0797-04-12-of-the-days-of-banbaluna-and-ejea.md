@@ -1,15 +1,15 @@
 ---
-title: Of the Coalition, the Ships of Catalonia, and the Days of Banbalūna and Ejea
+title: Of the League, the Ships of Catalonia, and the Days of Banbalūna and Ejea
 date: 1395-02-04
 era: book-of-the-marches
 kind: chronicle
 people: [saad-ibn-yusuf, pedro-of-castile, agustin-arce, alfons-de-borja]
 places: [ishbiliyya, banbaluna, qalat-ayyub]
-wars: [war-of-796]
+wars: [war-of-the-league]
 sources: [1393-coalition, 1394-01-02-eve-of-war, 1394-01-06-pedro-of-castile, 1394-03-04-war-on-castile, 1394-06-13-battle-mouths-rhone-ii, 1394-07-03-battle-atlantic, 1394-07-14-battle-mouth-douro, 1394-09-18-battle-bay-setubal-ii, 1394-08-siguenza, 1394-08-14-algarve-armies, 1394-09-the-chase, 1394-10-12-battle-pamplona, 1394-11-17-return-from-the-north, 1394-12-14-battle-ejea, 1395-02-04-battle-penafiel, 1395-05-24-battle-montalcino]
 ---
 
-The peace of 778 had been made for fifteen years, and the Christians spent the last of them afraid. In Jumādā al-Ākhira 795 Qashtāla, Portugal and the little mountain lordship of Andorra swore a league against al-Andalus. The court at [Ishbīliya](place:ishbiliyya) took it as a compliment. Its spies had been inside Qashtāla for two years. By New Year's Day of 1394 the dīwān had its claim ready, and the ʿulamāʾ gave it its name: the Reconquest of Iberia. Five days later, King Fernando of Qashtāla died at fifty-nine, and his son [Pedro](person:pedro-of-castile), twenty-three, stubborn and fond of his wine, inherited the war his father had seen coming.
+The peace of 778 had been made for fifteen years, and the Christians spent the last of them afraid. In Jumādā al-Ākhira 795 Qashtāla, Portugal and the little mountain lordship of Andorra swore a league against al-Andalus. The court at [Ishbīliya](place:ishbiliyya) took it as a compliment, and when the war came it named the war after the League. Its spies had been inside Qashtāla for two years. By New Year's Day of 1394 the dīwān had its claim ready, and the ʿulamāʾ gave the cause its name. The chroniclers of Qashtāla had long written of their wars on al-Andalus as a recovery of what the Goths had lost. The ʿulamāʾ turned the word around: al-Istirdād, the Recovery, of what the Christians had taken. They counted the War of the Upper March and the War of the Aragonese Restoration as its first two wars. This would be the third. Five days later, King Fernando of Qashtāla died at fifty-nine, and his son [Pedro](person:pedro-of-castile), twenty-three, stubborn and fond of his wine, inherited the war his father had seen coming.
 
 On 1 Jumādā al-Ūlā 796 the Emperor [Saʿd](person:saad-ibn-yusuf) declared it. The four ṭāʾifas marched with him, and so did the Moors of Fās with their vassals and the Mamlūks of Miṣr with theirs. With Qashtāla stood Portugal, Andorra, and the Pope in Rome, with his cities of Siena and Faenza.
 

@@ -11,6 +11,8 @@
 .war-banners .years { grid-area: years; color: var(--mist); display: grid; align-content: start; }
 .war-banners .years .ar { text-align: left; font-size: 1.8rem; color: var(--gilt); line-height: 1.2; }
 .war-banners .name { grid-area: name; font-size: 1.6rem; font-weight: 700; }
+.war-banners .name .series { display: block; font-size: 0.95rem; font-weight: 400; font-style: italic; color: var(--gilt); }
+.war-page .war-series { margin: -0.4rem 0 0.6rem; font-style: italic; color: var(--gilt); }
 .war-banners .against { grid-area: against; color: var(--mist); font-size: 0.9rem; }
 .war-banners .outcome { grid-area: outcome; color: var(--dusk); font-size: 0.85rem; }
 .war-banners .tide { grid-area: tide; margin: 0.9rem -1.5rem 0; }

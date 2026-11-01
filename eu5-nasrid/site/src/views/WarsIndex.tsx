@@ -20,9 +20,9 @@ export default function WarsIndex() {
             <li key={w.id}>
               <Link to={`/wars/${w.id}`} data-kind="war" data-id={w.id} className={w.involvement === "potential" ? "potential" : undefined}>
                 <span className="years"><span className="ar">{arabicDigits(hijri(w.start).y)}</span>{year(w.start)}–{w.end ? year(w.end) : ""}</span>
-                <span className="name">{w.name}</span>
+                <span className="name">{w.name}{w.series && <small className="series">{seriesLine(w.series)}</small>}</span>
                 <span className="against ui">{againstLine(w)}</span>
-                <span className="outcome ui">{w.outcome ?? (w.involvement === "potential" ? "Being fought without us" : "Still being fought")}{fights.length ? `. ${fights.length} engagements, ${won} won` : ""}</span>
+                <span className="outcome ui">{w.outcome?.replace(/\.$/, "") ?? (w.involvement === "potential" ? "Being fought without us" : "Still being fought")}{fights.length ? `. ${fights.length} engagements, ${won} won` : ""}</span>
                 <Tide score={w.score} />
               </Link>
             </li>
@@ -62,4 +62,10 @@ export function Tide({ score, big = false }: { score: { date: string; value: num
       {big && score.map((d) => <circle key={d.date} cx={x(yearFrac(d.date))} cy={y(d.value)} r={4} className="pt"><title>{`${d.date}: ${d.value > 0 ? "+" : ""}${d.value}`}</title></circle>)}
     </svg>
   );
+}
+
+const ORDINALS = ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth", "Ninth", "Tenth"];
+/** "The Third War of the Istirdād" */
+export function seriesLine(s: NonNullable<War["series"]>) {
+  return `The ${ORDINALS[s.number - 1] ?? `${s.number}th`} War of ${s.name}`;
 }

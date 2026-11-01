@@ -1,11 +1,11 @@
 ---
-title: Of the Stand at Portalegre, and the Peace of 797
+title: Of the Stand at Portalegre, and the Peace of Ramaḍān
 date: 1395-06-22
 era: book-of-the-marches
 kind: chronicle
 people: [saad-ibn-yusuf, pedro-of-castile, jeronimo-of-castile, alfons-de-borja]
 places: [al-ushbuna, majrit, shalamanka, qunka, yabura, shantarin, tulaytula, ishbiliyya]
-wars: [war-of-796]
+wars: [war-of-the-league]
 sources: [1395-03-17-battle-berlengas, 1395-06-18-battle-portalegre, 1395-06-22-peace-castile-portugal]
 ---
 
@@ -13,7 +13,7 @@ With Qashtāla's armies gone, the war passed to Portugal. Its king was [Jerónim
 
 The Emperor came to him on 10 Shaʿbān 797 with fourteen thousand six hundred, the Aragonese riders of Peñafiel and the Mamlūk contingents beside him. The armies were near enough equal that the Portuguese had reason to hope, and for eighteen days they held. On 28 Shaʿbān they broke, with seven thousand and eighty-seven of theirs lost for three thousand seven hundred and forty-four of ours. The scribes of the dīwān reckoned the war complete. There was nothing left that the Christians could put in the field, and nothing left that the Emperor could not take.
 
-On the third day of Ramaḍān, King [Pedro](person:pedro-of-castile) of Qashtāla asked for peace, and Portugal, which had gone to war for Qashtāla, was made to sign beside him.
+On the third day of Ramaḍān, King [Pedro](person:pedro-of-castile) of Qashtāla asked for peace, and Portugal, which had gone to war for Qashtāla, was made to sign beside him. It was signed in the holy month, so the court called it the Peace of Ramaḍān, and the preachers of Ishbīliya made much of the date at the Friday prayer. So ended the War of the League, the third war of the Istirdād.
 
 Qashtāla gave up fifty-one towns. In the west it lost [Shalamanka](place:shalamanka) on the Tormes, the largest of them, with Ávila behind its walls, Ciudad Rodrigo, Ledesma and the Leonese country to the Portuguese border. Beyond the Guadarrama it lost [Majrīṭ](place:majrit), the fortress the amīr Muḥammad built on the Manzanares five hundred years before to guard the road to [Ṭulayṭula](place:tulaytula), and Alcalá, Guadalajara and Sigüenza, where Valencia's army had died. To the east went [Qūnka](place:qunka), Molina and Requena, and to the south-west Cáceres, Plasencia and Coria, the upper country of the old Lower March. Qashtāla would also pay reparations for ten years.
 

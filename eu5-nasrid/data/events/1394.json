@@ -66,9 +66,9 @@
    "jeronimo-of-castile"
   ],
   "wars": [
-   "war-of-796"
+   "war-of-the-league"
   ],
-  "title": "The Emperor declares war on Castile under the Reconquest of Iberia. Portugal, the Pope with his vassals Faenza and Siena, and Andorra stand with the young King Pedro; the four ṭāʾifas, the Moors of Fās with their vassals and the Mamlūks with theirs stand with the Emperor",
+  "title": "The Emperor declares war on Castile under the Reconquest of Iberia, opening the third war of the Istirdād, which the court names the War of the League after the coalition sworn against the empire. Portugal, the Pope with his vassals Faenza and Siena, and Andorra stand with the young King Pedro; the four ṭāʾifas, the Moors of Fās with their vassals and the Mamlūks with theirs stand with the Emperor",
   "data": {
    "cb": "cb_reconquer_iberia",
    "target": "CAS",
@@ -105,7 +105,7 @@
   "type": "battle",
   "people": [],
   "wars": [
-   "war-of-796"
+   "war-of-the-league"
   ],
   "title": "At the mouths of the Rhône a papal squadron of 15 galleys sinks a lone Catalan ship",
   "data": {
@@ -133,7 +133,7 @@
   "type": "battle",
   "people": [],
   "wars": [
-   "war-of-796"
+   "war-of-the-league"
   ],
   "title": "Six weeks later the Moroccan fleet, 72 sail, catches the same papal squadron at the mouths of the Rhône and sinks all 14 of its ships for the loss of four",
   "data": {
@@ -161,7 +161,7 @@
   "type": "battle",
   "people": [],
   "wars": [
-   "war-of-796"
+   "war-of-the-league"
   ],
   "title": "In the gulf of Talamone a papal galley attacks three ships of Noto, the Sicilian state fighting on our side, and is driven off; Noto loses one",
   "data": {
@@ -189,7 +189,7 @@
   "type": "battle",
   "people": [],
   "wars": [
-   "war-of-796"
+   "war-of-the-league"
   ],
   "title": "Out in the Atlantic a Castilian squadron of 11 falls on the Catalan fleet of 33 and sinks six without loss",
   "data": {
@@ -217,7 +217,7 @@
   "type": "battle",
   "people": [],
   "wars": [
-   "war-of-796"
+   "war-of-the-league"
   ],
   "title": "In the gulf of Policastro a papal galley throws itself on the Moroccan fleet of 68 and is sunk",
   "data": {
@@ -245,7 +245,7 @@
   "type": "battle",
   "people": [],
   "wars": [
-   "war-of-796"
+   "war-of-the-league"
   ],
   "title": "Off Māliṭa, in St George's Bay, eleven ships of Barqa sink a papal galley",
   "data": {
@@ -273,7 +273,7 @@
   "type": "battle",
   "people": [],
   "wars": [
-   "war-of-796"
+   "war-of-the-league"
   ],
   "title": "At the mouth of the Douro the same Castilian squadron catches the Catalan fleet again, 29 sail, and sinks nine more without loss",
   "data": {
@@ -303,7 +303,7 @@
    "alfons-de-borja"
   ],
   "wars": [
-   "war-of-796"
+   "war-of-the-league"
   ],
   "title": "The first battle. Castile's great army, some 24,300 men, comes down on the small armies of the ṭāʾifas around Sigüenza, beyond the Aragonese border. Aragon's 1,840 fall back; Valencia's army is caught on 9 August and by the next day it is gone, all 3,958 men lost for 140 Castilians",
   "data": {
@@ -334,7 +334,7 @@
   "type": "battle",
   "people": [],
   "wars": [
-   "war-of-796"
+   "war-of-the-league"
   ],
   "title": "The Portuguese host of 15,550 comes down into the Alentejo and destroys the two small armies of the Ṭāʾifa of the Algarve, 692 men at Setúbal on 10 August and 2,167 at Montemor on the 14th, for 225 Portuguese",
   "data": {
@@ -365,7 +365,7 @@
   "type": "battle",
   "people": [],
   "wars": [
-   "war-of-796"
+   "war-of-the-league"
   ],
   "title": "In Tuscany a Sienese and papal army of 10,300 beats 1,370 men of Barqa at Grosseto, 899 of theirs lost for 471",
   "data": {
@@ -394,7 +394,7 @@
    "saad-ibn-yusuf"
   ],
   "wars": [
-   "war-of-796"
+   "war-of-the-league"
   ],
   "title": "Through August and September the Emperor's 17,650 chase the Castilian host north along the Aragonese border, from Calatayud toward the Ebro and Tudela, with the Catalan army of 7,100 and Aragon's 1,840 shadowing it on the other flank",
   "data": {
@@ -411,7 +411,7 @@
   "type": "battle",
   "people": [],
   "wars": [
-   "war-of-796"
+   "war-of-the-league"
   ],
   "title": "In the bay of Setúbal a single Castilian ship attacks the joined fleets of Catalonia and the Algarve, 32 sail, and gets away; the allies lose one",
   "data": {
@@ -439,7 +439,7 @@
   "type": "battle",
   "people": [],
   "wars": [
-   "war-of-796"
+   "war-of-the-league"
   ],
   "title": "At Roncesvalles in the Pyrenees the Catalan army of 7,070 wipes out Andorra's 158 men without loss",
   "data": {
@@ -466,7 +466,7 @@
   "type": "battle",
   "people": [],
   "wars": [
-   "war-of-796"
+   "war-of-the-league"
   ],
   "title": "At Piombino the Sienese beat 470 men of Barqa again, 186 lost for 100",
   "data": {
@@ -493,7 +493,7 @@
   "type": "battle",
   "people": [],
   "wars": [
-   "war-of-796"
+   "war-of-the-league"
   ],
   "title": "In the bay of Setúbal the Castilian squadron of 11 meets the Catalan fleet for the third time, now 19 sail, and sinks or takes 16 of them without loss. Of the 33 ships Catalonia sent out, three are left",
   "data": {
@@ -526,7 +526,7 @@
    "banbaluna"
   ],
   "wars": [
-   "war-of-796"
+   "war-of-the-league"
   ],
   "title": "The ambush at Banbalūna. The Castilians, pursuing an Aragonese army of 8,900 into the hills of Navarre, find the Emperor across their path at Pamplona: their pursuit is cut off and their host of 24,200 is beaten, 2,440 lost for 1,450 of ours. Castile retreats in haste",
   "data": {
@@ -598,7 +598,7 @@
   "type": "battle",
   "people": [],
   "wars": [
-   "war-of-796"
+   "war-of-the-league"
   ],
   "title": "At Grosseto the Sienese destroy the last 258 men of Barqa in Tuscany without loss",
   "data": {
@@ -627,7 +627,7 @@
    "saad-ibn-yusuf"
   ],
   "wars": [
-   "war-of-796"
+   "war-of-the-league"
   ],
   "title": "After Pamplona the Castilian host, still 21,700 strong, comes back south out of Navarre toward the Ebro. The Emperor's 16,200 shadow it from the west, the Catalan 7,100 wait on the Aragonese side, and Mamlūk contingents of 2,300 and 700 stand among the Castilian forts of Soria",
   "data": {
@@ -651,7 +651,7 @@
    "agustin-arce"
   ],
   "wars": [
-   "war-of-796"
+   "war-of-the-league"
   ],
   "title": "The Battle of Ejea de los Caballeros. The Emperor catches the Castilian host on the plain of the Cinco Villas, on ground that favours the defender, and Agustín Arce, Grand Master of Alcántara and the best general Castile has, holds it for nine days. It matters not: when it ends, 10,800 Castilians are dead or scattered against 4,660 of ours, and the war swings by twenty points",
   "data": {

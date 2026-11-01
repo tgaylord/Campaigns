@@ -103,6 +103,8 @@ const War = z.object({
   /** both sides as the game lists them, for wars Granada did not lead */
   sides: z.object({ attackers: z.array(z.string()), defenders: z.array(z.string()) }).optional(),
   gameName: z.string().optional(),
+  /** a numbered run of wars the court counts as one cause, e.g. the third war of the Istirdād */
+  series: z.object({ name: z.string(), nameArabic: z.string().optional(), number: z.number().int().positive() }).optional(),
   note: z.string().optional(),
   sample,
 });

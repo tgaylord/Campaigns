@@ -24,6 +24,8 @@ export type War = {
   score: { date: string; value: number }[]; sample: boolean;
   involvement: "belligerent" | "potential"; joined?: { from: string; to: string | null };
   sides?: { attackers: string[]; defenders: string[] }; gameName?: string; note?: string;
+  /** a numbered run of wars the court counts as one cause: the third war of the Istirdād */
+  series?: { name: string; nameArabic?: string; number: number };
 };
 export type Estate = { id: string; name: string; power: number | null; satisfaction: number | null; estimated: boolean };
 export type Snapshot = {

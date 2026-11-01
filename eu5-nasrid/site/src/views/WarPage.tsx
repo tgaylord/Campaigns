@@ -3,7 +3,7 @@ import { warById, events, placeById, mentionsOf, hijri, western, year, nf, signe
 import Devastation from "../components/Devastation";
 import MiniChart from "../components/MiniChart";
 import { StarRule } from "../components/bits";
-import { Tide, againstLine, and } from "./WarsIndex";
+import { Tide, againstLine, and, seriesLine } from "./WarsIndex";
 import { Mentions } from "./PersonPage";
 import "./wars.css";
 import "./record.css";
@@ -25,12 +25,13 @@ export default function WarPage() {
       <header className="record-head">
         <div className="war-years"><span className="ar">{hijri(w.start).arabic}</span>{" "}<span className="ui">{western(w.start)} to {w.end ? western(w.end) : "the present"}</span></div>
         <h1>{w.name}</h1>
+        {w.series && <p className="war-series">{seriesLine(w.series)}{w.series.nameArabic && <> <span className="ar">{w.series.nameArabic}</span></>}</p>}
         <p className="record-sub">War goal: {w.goal.charAt(0).toLowerCase() + w.goal.slice(1)}. {w.involvement === "potential"
           ? `${againstLine(w)}.`
           : `Against ${and(w.enemies)}${w.allies.length ? `, with ${and(w.allies)} at our side` : ""}.`}</p>
         {w.sides && w.involvement === "belligerent" && w.sides.attackers.join() !== "Granada" && <p className="record-sub">{and(w.sides.attackers)} against {and(w.sides.defenders)}.</p>}
         {w.joined && <p className="record-sub">Granada was in it from {western(w.joined.from)}{w.joined.to ? ` to ${western(w.joined.to)}` : ""}.</p>}
-        <p className="war-outcome">{w.outcome ? `Ended in ${w.outcome.charAt(0).toLowerCase() + w.outcome.slice(1)}.` : w.involvement === "potential" ? "Still being fought, without us." : "Still being fought."}</p>
+        <p className="war-outcome">{w.outcome ? `Ended in ${w.outcome.charAt(0).toLowerCase() + w.outcome.slice(1).replace(/\.$/, "")}.` : w.involvement === "potential" ? "Still being fought, without us." : "Still being fought."}</p>
         {w.note && <p className="muted">{w.note}</p>}
         {w.gameName && w.gameName !== w.name && <p className="muted ui">In the game: {w.gameName}</p>}
       </header>
