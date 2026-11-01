@@ -168,5 +168,30 @@
    "morocco": "Abū al-Faḍl sultan since 7 October 1381, Jadīla queen"
   },
   "source": "save of 1 October 1387 (a reading)"
+ },
+ {
+  "id": "1387-12-28-death-of-dua",
+  "date": "1387-12-28",
+  "type": "death",
+  "people": [
+   "dua-marinid",
+   "saad-ibn-yusuf",
+   "ismail-ibn-saad"
+  ],
+  "title": "Duʿā the Marīnid, the Emperor's wife and mother of the crown prince, dies at fifty. The chancellor's report says she took her own life. She had sat in the dīwān for thirty-three years, under two husbands and two reigns, and ruled the court as regent through the War of the Upper March",
+  "data": {
+   "age": 50,
+   "cause": "suicide, as the chancellor reports it (the game's death notice)",
+   "roles": "wife of Yūsuf I and of Saʿd; member of the dīwān from about 1355; regent 1373–1375",
+   "parents": "Abū al-Ḥasan ʿAlī, sultan of Fās, and Fāṭima the Ḥafṣid",
+   "culture": "Zanāta",
+   "stats": [
+    43,
+    38,
+    54
+   ],
+   "seatLeft": "her seat in the dīwān is vacant"
+  },
+  "source": "Trent's screenshot of the death notice, 28 December 1387"
  }
 ]
