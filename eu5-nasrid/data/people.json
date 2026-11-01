@@ -1696,5 +1696,22 @@
   },
   "traits": [],
   "note": "An Ottoman princess, Turkish by culture, married in May 1391 to the crown prince Ismāʿīl ibn Saʿd as his second wife. Mother of Saʿd (born 17 June 1392) and Aḥmad (born 21 October 1393) (save of 2 January 1394)."
+ },
+ {
+  "id": "agustin-arce",
+  "name": "Agustín Arce",
+  "nameGame": "Agustín Arce",
+  "born": "1344-01-01",
+  "roles": [
+   "Grand Master of the Order of Alcántara",
+   "Castilian general"
+  ],
+  "stats": {
+   "adm": 52,
+   "dip": 50,
+   "mil": 96
+  },
+  "traits": [],
+  "note": "Castilian, Catholic, fifty in 1394 (birth year estimated from his age), Grand Master of the military Order of Alcántara and general of the Crown of Castile. He led Castile's main army against the Emperor at Ejea de los Caballeros in December 1394 and lost half of it (Trent's battle screens)."
  }
 ]

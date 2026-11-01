@@ -214,5 +214,103 @@
    }
   },
   "source": "Trent's account and battle screens, 9–12 October 1394"
+ },
+ {
+  "id": "1394-11-17-return-from-the-north",
+  "date": "1394-11-17",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "wars": [
+   "war-of-796"
+  ],
+  "title": "After Pamplona the Castilian host, still 21,700 strong, comes back south out of Navarre toward the Ebro. The Emperor's 16,200 shadow it from the west, the Catalan 7,100 wait on the Aragonese side, and Mamlūk contingents of 2,300 and 700 stand among the Castilian forts of Soria",
+  "data": {
+   "castile": 21727,
+   "alAndalus": 16196,
+   "catalonia": 7072,
+   "aragon": 1840,
+   "mamluks": [
+    2314,
+    709
+   ]
+  },
+  "source": "Trent's map screenshot, 17 November 1394"
+ },
+ {
+  "id": "1394-12-14-battle-ejea",
+  "date": "1394-12-14",
+  "type": "battle",
+  "people": [
+   "saad-ibn-yusuf",
+   "agustin-arce"
+  ],
+  "wars": [
+   "war-of-796"
+  ],
+  "title": "The Battle of Ejea de los Caballeros. The Emperor catches the Castilian host on the plain of the Cinco Villas, on ground that favours the defender, and Agustín Arce, Grand Master of Alcántara and the best general Castile has, holds it for nine days. It matters not: when it ends, 10,800 Castilians are dead or scattered against 4,660 of ours, and the war swings by twenty points",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "al-Andalus and Aragon": 20350
+   },
+   "oursTotal": 20350,
+   "oursLost": 4664,
+   "theirs": {
+    "Castile": 21719
+   },
+   "theirsTotal": 21719,
+   "theirsLost": 10808,
+   "location": "Ejea de los Caballeros, Aragon",
+   "side": "al-Andalus attacking",
+   "warScore": 20.03,
+   "began": "1394-12-05 (15,227 against 17,377)",
+   "commanders": {
+    "al-Andalus": "the Emperor Saʿd (100/68/100)",
+    "Castile": "Agustín Arce, Grand Master of Alcántara (52/50/96)"
+   },
+   "units": {
+    "ours": {
+     "infantry": [
+      12634,
+      3871
+     ],
+     "heavyInfantry": [
+      2325,
+      157
+     ],
+     "lightCavalry": [
+      4453,
+      521
+     ],
+     "heavyCavalry": [
+      938,
+      115
+     ]
+    },
+    "theirs": {
+     "infantry": [
+      21196,
+      10445
+     ],
+     "lightCavalry": [
+      200,
+      124
+     ],
+     "heavyCavalry": [
+      273,
+      191
+     ],
+     "support": [
+      50,
+      50
+     ]
+    }
+   },
+   "terrain": "unfavourable to the attacker (Trent)"
+  },
+  "source": "Trent's account and battle screens, 5–14 December 1394"
  }
 ]
