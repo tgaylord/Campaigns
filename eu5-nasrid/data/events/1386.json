@@ -1,0 +1,18 @@
+[
+ {
+  "id": "1386-01-06-the-season-passed",
+  "date": "1386-01-06",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "The season passes. The caravan comes too late: the year has turned and the standing at ʿArafāt has gone by, the afternoon beneath the Mount of Mercy that is the Hajj itself. The month among the scholars of al-Azhar cost the Emperor the pilgrimage. The caravan disperses and turns for home; the journey must be made again from the beginning",
+  "data": {
+   "event": "The Royal Ḥajj: The Season Passed",
+   "choice": "We tarried too long. It must be undertaken again.",
+   "cause": "the 30-day pause in al-Qāhira (28 October 1385)",
+   "calendar": "the game counts the season as over by 6 January 1386; the chronicle's tabular reckoning had put ʿArafa near 11 January, so the game's Hajj calendar runs earlier than the arithmetic one"
+  },
+  "source": "Trent's screenshot of the event, 6 January 1386"
+ }
+]
