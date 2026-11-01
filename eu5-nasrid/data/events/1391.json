@@ -4,17 +4,34 @@
   "date": "1391-05-11",
   "type": "player_note",
   "people": [
-   "saad-ibn-yusuf"
+   "saad-ibn-yusuf",
+   "ismail-ibn-saad"
   ],
   "places": [
    "ishbiliyya"
   ],
-  "title": "The Emperor sets out for Makka a second time, and leaves early. Five years ago the season passed him by in the desert; this time he means to stand at ʿArafāt with time to spare",
+  "title": "The Emperor sets out for Makka a second time, and leaves early. He stays at court just long enough for his wedding to an Ottoman princess, then rides east; the crown prince Ismāʿīl rules as regent. Five years ago the season passed him by in the desert; this time he means to stand at ʿArafāt with time to spare",
   "data": {
    "departure": "1391-05-11",
    "previous": "1385-08-23, the season missed on 6 January 1386",
-   "lesson": "the game appears to close the Hajj season with the turn of the year; leaving in May allows for pauses on the road"
+   "lesson": "the game appears to close the Hajj season with the turn of the year; leaving in May allows for pauses on the road",
+   "regent": "the crown prince Ismāʿīl ibn Saʿd",
+   "wedding": "the Emperor to an Ottoman princess, just before he left (her name awaits a save)"
   },
   "source": "Trent's account, 11 May 1391"
+ },
+ {
+  "id": "1391-05-ottoman-marriage",
+  "date": "1391-05-11",
+  "type": "marriage",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "The Emperor marries a princess of the house of ʿOthmān, the rising sultans of Anatolia, on the eve of his pilgrimage",
+  "data": {
+   "with": "TUR",
+   "bride": "an Ottoman princess (name awaits a save)"
+  },
+  "source": "Trent's account, May 1391"
  }
 ]
