@@ -1,8 +1,8 @@
 [
  {
-  "id": "1378-01-07-shaluqa-joined",
-  "date": "1378-01-07",
-  "type": "player_note",
+  "id": "1378-01-17-battle-shaluqa",
+  "date": "1378-01-17",
+  "type": "battle",
   "people": [
    "saad-ibn-yusuf"
   ],
@@ -13,22 +13,75 @@
   "wars": [
    "war-of-the-aragonese-restoration"
   ],
-  "title": "With Castile beaten in the field and its army besieging Valladolid, the Emperor turns on the Portuguese, who have come down on Ishbīliya. Battle is joined at Shalūqa al-Kubrā on the city's outskirts: 10,100 against 10,500, the Emperor against a Portuguese general",
+  "title": "With Castile beaten in the field and its army besieging Valladolid, the Emperor turns on the Portuguese, who have come down on Ishbīliya. At Shalūqa al-Kubrā on the city's outskirts he meets them, 10,300 against 11,300, and throws them back across the border: 8,343 of theirs lost for 1,069 of ours",
   "data": {
-   "ours": 10109,
-   "theirs": 10528,
-   "dice": "10–9",
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "al-Andalus": 10302
+   },
+   "oursTotal": 10302,
+   "oursLost": 1069,
+   "theirs": {
+    "Portugal": 11269
+   },
+   "theirsTotal": 11269,
+   "theirsLost": 8343,
+   "location": "Sanlúcar la Mayor (Šaluqa el-Kubra), by Seville",
+   "side": "al-Andalus attacking",
+   "warScore": 11.54,
+   "began": "1378-01-07 (10,109 against 10,528)",
    "commanders": {
     "al-Andalus": "the Emperor Saʿd (100/68/100)",
     "Portugal": "a Portuguese general (49/63/78)"
    },
-   "early": {
-    "oursLost": 189,
-    "theirsLost": 696
+   "units": {
+    "ours": {
+     "infantry": [
+      940,
+      304
+     ],
+     "heavyInfantry": [
+      5892,
+      209
+     ],
+     "lightCavalry": [
+      2498,
+      233
+     ],
+     "heavyCavalry": [
+      967,
+      323
+     ],
+     "support": [
+      5,
+      0
+     ]
+    },
+    "theirs": {
+     "infantry": [
+      10721,
+      7891
+     ],
+     "heavyInfantry": [
+      176,
+      176
+     ],
+     "heavyCavalry": [
+      327,
+      276
+     ],
+     "support": [
+      45,
+      0
+     ]
+    }
    },
-   "warScore": 46,
+   "after": {
+    "warScore": 58
+   },
    "elsewhere": "al-Andalus besieging Valladolid"
   },
-  "source": "Trent's screenshot of 7 January 1378"
+  "source": "Trent's account and battle screens, 7–17 January 1378"
  }
 ]
