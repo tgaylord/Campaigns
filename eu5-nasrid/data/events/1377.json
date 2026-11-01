@@ -1,0 +1,37 @@
+[
+ {
+  "id": "1377-01-13-the-eve-of-zaragoza",
+  "date": "1377-01-13",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf",
+   "alfonso-de-onate",
+   "bolot-mamluk"
+  ],
+  "wars": [
+   "war-of-the-aragonese-restoration"
+  ],
+  "title": "On the eve of the battle for Zaragoza. Alfonso de Oñate has rebuilt his army; Portugal has 11,300 in the field and the Mamlūks 56,000, most of them levies still across the sea, but now with 22 ships where they had one. The mercenaries cost dearly: 123 a month going out against 78 coming in, the treasury at 1,213, and the realm's manpower nearly spent",
+  "data": {
+   "forces": {
+    "al-Andalus": "5,320 (4,831 regulars, 488 levies), the mercenaries besides",
+    "Castile": "6,866 (5,215 levies), 14 ships",
+    "Portugal": "11,316 (10,326 levies), 23 ships",
+    "Papal States": "3,916, 13 ships",
+    "Mamluks": "56,124 (52,633 levies), 22 ships",
+    "Morocco (allied, at truce with Castile)": "950, 28 ships",
+    "Valencia": 962
+   },
+   "treasury": 1213,
+   "income": 78.2,
+   "expenses": 122.9,
+   "manpower": 306,
+   "warExhaustion": 4.8,
+   "stability": 38.2,
+   "prestige": 54,
+   "moroccanAlliance": "since 16 January 1376",
+   "iberia": "no town has changed hands since the declaration"
+  },
+  "source": "save of 13 January 1377 (a reading); Trent's account"
+ }
+]

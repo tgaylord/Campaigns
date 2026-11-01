@@ -4,17 +4,21 @@
   "date": "1376-01-14",
   "type": "battle",
   "people": [
-   "saad-ibn-yusuf"
+   "saad-ibn-yusuf",
+   "alfonso-de-onate"
   ],
   "wars": [
    "war-of-the-aragonese-restoration"
   ],
-  "title": "The Battle of Šalba (Xelva). With the Catalans broken, the Emperor must give battle on bad ground, hills, forest and a river, against nearly twice his numbers. His horse tries to sweep away both Castilian flanks before their numbers tell, and the centre holds by a thread; but the wings are worn down and the field is lost. A month of fighting costs al-Andalus and its ṭāʾifas 8,170 men against Castile's 7,520, and 12 points of war score",
+  "title": "The Battle of Šalba (Xelva). With the Catalans broken, the Emperor must give battle on bad ground, hills, forest and a river, against nearly twice his numbers. His horse tries to sweep away both Castilian flanks before their numbers tell, and the centre holds by a thread; but the wings are worn down and the field is lost. A month of fighting costs al-Andalus, Valencia, Aragon and the Algarve 8,170 men against Castile's 7,520, and 12 points of war score",
   "data": {
    "result": "defeat",
    "naval": false,
    "ours": {
-    "al-Andalus, Valencia, Catalonia and the Algarve": 13842
+    "al-Andalus": 10533,
+    "Valencia": 2288,
+    "Aragon": 639,
+    "Algarve": 383
    },
    "oursTotal": 13842,
    "oursLost": 8169,
@@ -74,7 +78,7 @@
    },
    "commanders": {
     "al-Andalus": "the Emperor Saʿd (100/68/100)",
-    "Castile": "a Castilian general (53/54/89)"
+    "Castile": "Alfonso de Oñate (53/54/89)"
    },
    "terrain": "the defender had +5 from the ground; dice ran 8–7 and 4–5",
    "began": "1375-12-13 (13,504 against 23,562)"
@@ -115,7 +119,7 @@
   "wars": [
    "war-of-the-aragonese-restoration"
   ],
-  "title": "Envoys ride for Fās. Since the last war there has been a warm silence between the courts: not hostile, but distrustful on ours, for the Marīnids courted the Emirate and then stabbed it in the back the moment they could. Now Duʿā argues for renewing the alliance; the expanded bureaucracy can bear it, and the first Mamlūk army is months away. The crown prince of Fās, Abū al-Faḍl, has lately married the Emperor's sister Jadīla, and that and Duʿā open the dialogue. A pact is offered. Morocco's truce with Castile runs to September 1377, but if its words are to be believed, and that is questionable, it is willing to help",
+  "title": "Envoys ride for Fās. Since the last war there has been a warm silence between the courts: not hostile, but distrustful on ours, for the Marīnids courted the Emirate and then stabbed it in the back the moment they could. Now Duʿā argues for renewing the alliance; the expanded bureaucracy can bear it, and the first Mamlūk army is months away. The crown prince of Fās, Abū al-Faḍl, has lately married the Emperor's sister Jadīla, and that and Duʿā open the dialogue. A pact is offered. Morocco's truce with Castile runs to September 1377, but if its words are to be believed, and that is questionable, it is willing to help. The alliance is signed on 16 January",
   "data": {
    "with": "MOR",
    "proposal": "alliance",
@@ -128,7 +132,8 @@
    "trust": "questionable (Trent)",
    "pastWars": [
     "1368-1370: the Second Marīnid War for the Submission of Granada"
-   ]
+   ],
+   "concluded": "alliance signed on 16 January 1376 (save of 13 January 1377)"
   },
   "source": "Trent's account, January 1376"
  },
@@ -148,6 +153,75 @@
   "source": "Trent's account, January 1376"
  },
  {
+  "id": "1376-01-21-catalans-destroyed-at-barcelona",
+  "date": "1376-01-21",
+  "type": "battle",
+  "people": [
+   "francesc-de-montsoriu"
+  ],
+  "places": [
+   "barshaluna"
+  ],
+  "wars": [
+   "war-of-the-aragonese-restoration"
+  ],
+  "title": "A week after Šalba the Pope's 2,000, landed on the Catalan coast, catch the 2,570 Catalans who escaped the ambush before Barcelona and destroy them to the last man without loss",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Catalonia": 2567
+   },
+   "oursTotal": 2567,
+   "oursLost": 2567,
+   "theirs": {
+    "Papal States": 2000
+   },
+   "theirsTotal": 2000,
+   "theirsLost": 0,
+   "location": "Barcelona",
+   "side": "Papal States attacking",
+   "commanders": {
+    "Catalonia": "Francesc de Montsoriu",
+    "Papal States": "Reginald, a papal general"
+   }
+  },
+  "source": "save of 13 January 1377 (the war's battle list)"
+ },
+ {
+  "id": "1376-03-01-battle-cape-ben-sakka",
+  "date": "1376-03-01",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "war-of-the-aragonese-restoration"
+  ],
+  "title": "Off Cape Ben Sakka, on the coast of Ifrīqiya, the Portuguese and Castilian fleets, 28 sail under Rafael Araújo, fall on the Catalan fleet of 20 and sink or take 19 of them without loss. The sea belongs to Iberia",
+  "data": {
+   "result": "allied defeat",
+   "naval": true,
+   "ours": {
+    "Catalonia": 20
+   },
+   "oursTotal": 20,
+   "oursLost": 19,
+   "theirs": {
+    "Portugal": 23,
+    "Castile": 5
+   },
+   "theirsTotal": 28,
+   "theirsLost": 0,
+   "location": "Cape Ben Sakka (Ras Ben Sakka, by Bizerte)",
+   "side": "Portugal attacking",
+   "units": "ships",
+   "commanders": {
+    "Catalonia": "Berenguer Ramon Crespí (74/69/18)",
+    "Portugal": "Rafael Araújo (78/70/73)"
+   }
+  },
+  "source": "save of 13 January 1377 (the war's battle list)"
+ },
+ {
   "id": "1376-05-25-battle-girona",
   "date": "1376-05-25",
   "type": "battle",
@@ -165,7 +239,10 @@
    "result": "victory",
    "naval": false,
    "ours": {
-    "al-Andalus, Valencia, the Algarve and Catalonia": 8381
+    "al-Andalus": 7198,
+    "Valencia": 1002,
+    "Aragon": 136,
+    "Algarve": 46
    },
    "oursTotal": 8381,
    "oursLost": 234,
@@ -180,7 +257,7 @@
    "began": "1376-05-24",
    "commanders": {
     "al-Andalus": "the Emperor Saʿd (100/68/100)",
-    "Papal States": "a papal general (41/77/28)"
+    "Papal States": "Anthony, a papal general (41/77/28)"
    },
    "units": {
     "ours": {
@@ -233,7 +310,10 @@
    "result": "victory",
    "naval": false,
    "ours": {
-    "al-Andalus, Valencia, the Algarve and Catalonia": 8176
+    "al-Andalus": 7198,
+    "Valencia": 962,
+    "Aragon": 13,
+    "Algarve": 4
    },
    "oursTotal": 8176,
    "oursLost": 101,
@@ -282,6 +362,10 @@
       9
      ]
     }
+   },
+   "commanders": {
+    "al-Andalus": "the Emperor Saʿd",
+    "Siena": "Lionel Piazza (66/57/41)"
    }
   },
   "source": "Trent's account and battle screen, 12 June 1376"
@@ -336,22 +420,27 @@
   "date": "1376-09-01",
   "type": "battle",
   "people": [
-   "saad-ibn-yusuf"
+   "saad-ibn-yusuf",
+   "alfonso-de-onate"
   ],
   "wars": [
    "war-of-the-aragonese-restoration"
   ],
-  "title": "Slaughter at Agramunt. In the Catalan plain the Emperor's 15,000, the mercenaries of the Marches at their heart, meet 19,000 Castilians under the general of Šalba. After a fortnight 12,700 of Castile's men are dead or scattered, against 2,840 of ours, and the war swings by 19 points",
+  "title": "Slaughter at Agramunt. In the Catalan plain the Emperor's 15,000, the mercenaries of the Marches at their heart, meet 19,000 Castilians under Alfonso de Oñate, the general of Šalba. After a fortnight 12,700 of Castile's men are dead or scattered, against 2,840 of ours, and the war swings by 19 points",
   "data": {
    "result": "victory",
    "naval": false,
    "ours": {
-    "al-Andalus, Valencia, the Algarve and Catalonia": 15038
+    "al-Andalus": 14060,
+    "Valencia": 962,
+    "Aragon": 13,
+    "Algarve": 4
    },
    "oursTotal": 15038,
    "oursLost": 2839,
    "theirs": {
-    "Castile and the Papal States": 19073
+    "Castile": 17073,
+    "Papal States": 2000
    },
    "theirsTotal": 19073,
    "theirsLost": 12724,
@@ -361,7 +450,7 @@
    "began": "1376-08-16 (13,392 against 18,350)",
    "commanders": {
     "al-Andalus": "the Emperor Saʿd (100/68/100)",
-    "Castile": "the general of Šalba (53/54/89)"
+    "Castile": "Alfonso de Oñate (53/54/89)"
    },
    "units": {
     "ours": {
@@ -437,8 +526,9 @@
    "taught": "the first modern galleys",
    "by": "Catalan shipwrights sent by the crown",
    "why": "the Iberian fleets far outnumber the Mamlūk navy, leaving the Mamlūk armies trapped across the sea",
-   "date": "early December 1376 (Trent)"
+   "date": "early December 1376 (Trent)",
+   "confirmed": "wharves stand in all five ports by 13 January 1377, where there were none in June 1375; the Mamlūk fleet has grown from 1 ship to 22 (saves of 5 June 1375 and 13 January 1377)"
   },
-  "source": "Trent's account, December 1376"
+  "source": "Trent's account, December 1376; save of 13 January 1377"
  }
 ]

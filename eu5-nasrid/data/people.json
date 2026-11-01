@@ -1628,5 +1628,22 @@
   },
   "traits": [],
   "note": "A Catalan, Sunni, of the house of Borja; proclaimed king of a renewed Aragon, a ṭāʾifa of the sultan in the interior, on 16 March 1375. The game counts him the fifth Alfons of Aragon, and gives his small kingdom the rank of a kingdom and its seat at Benabarre. The sultan dressed it as a successor to the old crown (Trent's account; save of 16 March 1375)."
+ },
+ {
+  "id": "alfonso-de-onate",
+  "name": "Alfonso de Oñate",
+  "nameGame": "Alfonso",
+  "gameId": 16798205,
+  "born": "1321-08-14",
+  "roles": [
+   "Castilian general"
+  ],
+  "stats": {
+   "adm": 53,
+   "dip": 54,
+   "mil": 89
+  },
+  "traits": [],
+  "note": "The Castilian general of the War of the Aragonese Restoration. He routed the Catalans at Chelva (12 December 1375) and beat the Emperor himself there on 14 January 1376, then lost his army to him at Agramunt on 1 September 1376 (save of 13 January 1377; Trent's battle screens)."
  }
 ]

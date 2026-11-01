@@ -508,34 +508,40 @@
   "source": "Trent's account; save of 5 June 1375"
  },
  {
-  "id": "1375-12-13-catalans-ambushed",
-  "date": "1375-12-13",
+  "id": "1375-12-12-catalans-ambushed",
+  "date": "1375-12-12",
   "type": "battle",
   "people": [
-   "francesc-de-montsoriu"
+   "francesc-de-montsoriu",
+   "alfonso-de-onate"
   ],
   "wars": [
    "war-of-the-aragonese-restoration"
   ],
-  "title": "The campaign opens in the east. The Castilians fall on an army of Catalans on the outskirts of Valencia, at Šalba: 24,300 against 4,550. The Catalans break and fall back with 2,570 before the Emperor's army can reach them",
+  "title": "The campaign opens in the east. Alfonso de Oñate's Castilians fall on the Catalan army of the ḥājib Francesc himself on the outskirts of Valencia, at Šalba: 24,800 against 6,100. The Catalans lose 3,190 men to Castile's 860 and break before the Emperor's army can reach them",
   "data": {
    "result": "allied defeat",
    "naval": false,
    "ours": {
-    "Catalonia": 4553
+    "Catalonia": 5757,
+    "Algarve": 361
    },
-   "oursTotal": 4553,
-   "oursLost": 1986,
+   "oursTotal": 6118,
+   "oursLost": 3186,
    "theirs": {
-    "Castile": 24299
+    "Castile": 24768
    },
-   "theirsTotal": 24299,
-   "theirsLost": null,
+   "theirsTotal": 24768,
+   "theirsLost": 862,
    "location": "Chelva (Xelva), Valencia",
-   "side": "Catalonia defending",
-   "note": "under way on 9 December with the Emperor's 10,533 and Valencia's 3,309 marching to it; by 13 December the Catalans had broken and retreated with 2,567 (Trent's screenshots). Their losses are the difference; Castile's are not shown"
+   "side": "Castile attacking",
+   "commanders": {
+    "Catalonia": "Francesc de Montsoriu",
+    "Castile": "Alfonso de Oñate"
+   },
+   "note": "the Emperor's 10,533 and Valencia's 3,309 were marching to it on 9 December; the Catalans fell back with 2,567 (Trent's screenshots)"
   },
-  "source": "Trent's account and screenshots of 9 and 13 December 1375",
+  "source": "save of 13 January 1377 (the war's battle list); Trent's account and screenshots of 9 and 13 December 1375",
   "places": [
    "shalba"
   ]
