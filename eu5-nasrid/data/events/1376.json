@@ -285,5 +285,27 @@
    }
   },
   "source": "Trent's account and battle screen, 12 June 1376"
+ },
+ {
+  "id": "1376-06-mercenaries-and-the-faithful",
+  "date": "1376-06-12",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "barshaluna"
+  ],
+  "wars": [
+   "war-of-the-aragonese-restoration"
+  ],
+  "title": "A Castilian army has Barcelona under siege. The Emperor turns to a well-tried strategy, the mercenaries and the faithful of the wars of 1339 and after, and raises more than 7,000 veterans from the Marches to break the siege",
+  "data": {
+   "raised": "7,000+ veterans from the Marches (mercenaries and volunteers of the faith)",
+   "purpose": "to relieve Barcelona, under siege by a Castilian army",
+   "precedent": "the mercenaries and mutaṭawwiʿa of the 1339 host",
+   "date": "June 1376, after the second battle of Girona (Trent); the exact size awaits a save or screen"
+  },
+  "source": "Trent's account, June 1376"
  }
 ]
