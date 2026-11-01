@@ -61,17 +61,18 @@
    "result": "defeat",
    "naval": true,
    "ours": {
-    "the Sahel": 11000
+    "the Sahel": 11
    },
-   "oursTotal": 11000,
-   "oursLost": 11000,
+   "oursTotal": 11,
+   "oursLost": 11,
    "theirs": {
-    "Aragon": 13000
+    "Aragon": 13
    },
-   "theirsTotal": 13000,
+   "theirsTotal": 13,
    "theirsLost": 0,
    "location": "the gulf of Cagliari",
-   "side": "Granada not engaged"
+   "side": "Granada not engaged",
+   "units": "ships"
   },
   "source": "checkpoint 1348-07-01"
  },
@@ -87,17 +88,19 @@
    "result": "defeat",
    "naval": true,
    "ours": {
-    "Tunis": 4000
+    "Tunis": 4
    },
-   "oursTotal": 4000,
-   "oursLost": 519,
+   "oursTotal": 4,
+   "oursLost": 1,
    "theirs": {
-    "Aragon": 14000
+    "Aragon": 14
    },
-   "theirsTotal": 14000,
+   "theirsTotal": 14,
    "theirsLost": 0,
    "location": "Cape Ben Sakka",
-   "side": "Granada not engaged"
+   "side": "Granada not engaged",
+   "lossNote": "the battle list gives 0.52 ships' worth of losses, rounded",
+   "units": "ships"
   },
   "source": "checkpoint 1348-07-01"
  },
@@ -200,17 +203,18 @@
    "result": "victory",
    "naval": true,
    "ours": {
-    "Morocco": 54000
+    "Morocco": 54
    },
-   "oursTotal": 54000,
-   "oursLost": 4000,
+   "oursTotal": 54,
+   "oursLost": 4,
    "theirs": {
-    "Aragon": 16000
+    "Aragon": 16
    },
-   "theirsTotal": 16000,
-   "theirsLost": 13000,
+   "theirsTotal": 16,
+   "theirsLost": 13,
    "location": "Cape Ben Sakka",
-   "side": "Granada not engaged"
+   "side": "Granada not engaged",
+   "units": "ships"
   },
   "source": "checkpoint 1348-07-01"
  },

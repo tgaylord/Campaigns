@@ -11,17 +11,18 @@
    "result": "defeat",
    "naval": true,
    "ours": {
-    "Gabès": 6000
+    "Gabès": 6
    },
-   "oursTotal": 6000,
-   "oursLost": 6000,
+   "oursTotal": 6,
+   "oursLost": 6,
    "theirs": {
-    "Aragon": 7000
+    "Aragon": 7
    },
-   "theirsTotal": 7000,
+   "theirsTotal": 7,
    "theirsLost": 0,
    "location": "the bay of Alcúdia",
-   "side": "Granada not engaged"
+   "side": "Granada not engaged",
+   "units": "ships"
   },
   "source": "save of 1347-09-14"
  },
@@ -150,17 +151,18 @@
    "result": "defeat",
    "naval": true,
    "ours": {
-    "Tripoli": 11000
+    "Tripoli": 11
    },
-   "oursTotal": 11000,
-   "oursLost": 11000,
+   "oursTotal": 11,
+   "oursLost": 11,
    "theirs": {
-    "Aragon": 8000
+    "Aragon": 8
    },
-   "theirsTotal": 8000,
+   "theirsTotal": 8,
    "theirsLost": 0,
    "location": "the gulf of Cagliari",
-   "side": "Granada not engaged"
+   "side": "Granada not engaged",
+   "units": "ships"
   },
   "source": "save of 1347-09-14"
  },

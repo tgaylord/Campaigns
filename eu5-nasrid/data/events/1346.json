@@ -288,18 +288,19 @@
    "result": "defeat",
    "naval": true,
    "ours": {
-    "Tlemcen": 1000,
-    "Bijaya": 13000
+    "Tlemcen": 1,
+    "Bijaya": 13
    },
-   "oursTotal": 14000,
-   "oursLost": 14000,
+   "oursTotal": 14,
+   "oursLost": 14,
    "theirs": {
-    "Aragon": 7000
+    "Aragon": 7
    },
-   "theirsTotal": 7000,
+   "theirsTotal": 7,
    "theirsLost": 0,
    "location": "the bay of Palma",
-   "side": "Granada not engaged"
+   "side": "Granada not engaged",
+   "units": "ships"
   },
   "source": "save of 1347-09-14"
  },
@@ -315,16 +316,17 @@
    "result": "defeat",
    "naval": true,
    "ours": {
-    "Balansiyya": 11000
+    "Balansiyya": 11
    },
-   "oursTotal": 11000,
-   "oursLost": 3000,
+   "oursTotal": 11,
+   "oursLost": 3,
    "theirs": {
-    "Portugal": 6000
+    "Portugal": 6
    },
-   "theirsTotal": 6000,
+   "theirsTotal": 6,
    "theirsLost": 0,
-   "location": "the gulf of al-Mariyya"
+   "location": "the gulf of al-Mariyya",
+   "units": "ships"
   },
   "source": "save of 1347-09-14"
  },

@@ -12,17 +12,18 @@
    "result": "allied victory",
    "naval": true,
    "ours": {
-    "Barqa": 10000
+    "Barqa": 10
    },
-   "oursTotal": 10000,
+   "oursTotal": 10,
    "oursLost": 0,
    "theirs": {
-    "Tlemcen": 1000
+    "Tlemcen": 1
    },
-   "theirsTotal": 1000,
-   "theirsLost": 1000,
+   "theirsTotal": 1,
+   "theirsLost": 1,
    "location": "off the Costa Blanca",
-   "side": "Granada attacking"
+   "side": "Granada attacking",
+   "units": "ships"
   },
   "source": "save of 18 November 1369"
  },
