@@ -1118,7 +1118,10 @@
    "regent (1385–1386)",
    "emperor and sultan of al-Andalus (from 1405)"
   ],
-  "traits": [],
+  "traits": [
+   "deceitful",
+   "goal_oriented"
+  ],
   "note": "Son and heir of Sultan Saʿd, born to Duʿāʾ the Marīnid on 8 March 1366, a month before the Peace of Independence. At eight he was already a silver tongue (63 in diplomacy). In late 1374 he and his half-brother Yūsuf were both given the costly tutors their father had had; his mother Duʿā had wanted them for him alone (Trent's account). On 16 March 1375 he was betrothed to Bernarda of Murcia, the gifted heir of the Ṭāʾifa of Mursiyya, as Murcia was taken into the crown (Trent's account). From 23 August 1385 he ruled as regent while his father made the Hajj, with his mother Duʿā and Aiman quarrelling at court (Trent's account). Before that he had served as an admiral, to carry the crown's authority over the seas: his first command, from 17 June 1383 (save of 1 October 1387) until he joined the dīwān. In 1386 he was brought home, and on 22 January 1387 he took the seat in the dīwān created by the Ḥijāba, to help his father's scholar-building project (Trent's account). He had married Bernarda of Murcia by 1 October 1387. In May 1391 he took a second wife, ʿĀʾisha of the house of ʿOthmān. His sons: Yūsuf (1383–1384) and Muḥammad (born 25 October 1385) by Bernarda; Saʿd (born 17 June 1392) and Aḥmad (born 21 October 1393) by ʿĀʾisha (save of 2 January 1394). By 1398 his sons were Muḥammad, the eldest, judged unfit to rule; Saʿd, intelligent and studious; and Aḥmad, ambitious (Trent's account; save of 3 September 1398). He became Emperor on 2 March 1405, at thirty-eight, when his father died on the march through Moya, and sixteen days later won his first battle as Emperor before Qūnka, destroying the army of the rebel Kingdom of Toledo (Trent's account and screens).",
   "stats": {
    "adm": 47,
@@ -1475,9 +1478,11 @@
   "born": "1371-10-15",
   "father": "saad-ibn-yusuf",
   "mother": "aiman-mamluk",
-  "roles": [],
+  "roles": [
+   "member of the dīwān (from 1405)"
+  ],
   "traits": [],
-  "note": "Son of Sultan Saʿd and Aiman the Mamlūk, born 15 October 1371, named for his grandfather Yūsuf I (save of 16 January 1373). Following in his father's footsteps, as the court saw it; in late 1374, at three, he was given the same costly tutors as the heir, over Duʿā's objection (Trent's account). Betrothed by October 1387 to Madīna, of a Mamlūk-cultured house, and to Caterina de Borja, daughter of King Alfons of Aragon, he married both, and by January 1394 he had gone to live at the Aragonese court at Benabarre, as the game moves a husband to his wife's court. His children: Muʾmina (born 1389) by Madīna and Saʿd (born 1394) by Caterina, and both wives were with child by him in September 1398. In 1398 he commanded troops for Aragon (March to July). With his mother dead and himself far away, the old quarrel over the succession has cooled (Trent's account; saves of 1 October 1387, 2 January 1394 and 3 September 1398). In September 1398 the Emperor called him home to Ishbīliya with his son Saʿd; Caterina stayed in Aragon (Trent's account).",
+  "note": "Son of Sultan Saʿd and Aiman the Mamlūk, born 15 October 1371, named for his grandfather Yūsuf I (save of 16 January 1373). Following in his father's footsteps, as the court saw it; in late 1374, at three, he was given the same costly tutors as the heir, over Duʿā's objection (Trent's account). Betrothed by October 1387 to Madīna, of a Mamlūk-cultured house, and to Caterina de Borja, daughter of King Alfons of Aragon, he married both, and by January 1394 he had gone to live at the Aragonese court at Benabarre, as the game moves a husband to his wife's court. His children: Muʾmina (born 1389) by Madīna and Saʿd (born 1394) by Caterina, and both wives were with child by him in September 1398. In 1398 he commanded troops for Aragon (March to July). With his mother dead and himself far away, the old quarrel over the succession has cooled (Trent's account; saves of 1 October 1387, 2 January 1394 and 3 September 1398). In September 1398 the Emperor called him home to Ishbīliya with his son Saʿd; Caterina stayed in Aragon (Trent's account). On his brother Ismāʿīl's accession in March 1405 he took Ismāʿīl's old seat in the dīwān, promoting Andalusī culture (save of 31 March 1405).",
   "stats": {
    "adm": 9,
    "dip": 5,
@@ -1821,14 +1826,16 @@
   "born": "1385-10-25",
   "father": "ismail-ibn-saad",
   "mother": "bernarda-of-murcia",
-  "roles": [],
+  "roles": [
+   "heir of al-Andalus (from 1405)"
+  ],
   "stats": {
    "adm": 16,
    "dip": 20,
    "mil": 17
   },
   "traits": [],
-  "note": "Eldest surviving son of the crown prince Ismāʿīl, by Bernarda of Mursiyya; born 25 October 1385, while his grandfather was on the road to Makka. By 1398 the game marks him a dull child, and the court thinks him stubborn and unfit to rule (Trent's account; save of 3 September 1398). At seventeen, in July 1403, he stood at 16/20/17, married and with two children; the childhood trait had lapsed with no adult trait in its place (save of 18 July 1403)."
+  "note": "Eldest surviving son of the crown prince Ismāʿīl, by Bernarda of Mursiyya; born 25 October 1385, while his grandfather was on the road to Makka. By 1398 the game marks him a dull child, and the court thinks him stubborn and unfit to rule (Trent's account; save of 3 September 1398). At seventeen, in July 1403, he stood at 16/20/17, married and with two children; the childhood trait had lapsed with no adult trait in its place (save of 18 July 1403). On his father's accession, 2 March 1405, he became heir to the throne by primogeniture (save of 31 March 1405)."
  },
  {
   "id": "saad-ibn-ismail-ibn-saad",
@@ -1842,14 +1849,14 @@
   "mother": "aisha-ottoman",
   "roles": [],
   "stats": {
-   "adm": 56,
-   "dip": 35,
-   "mil": 36
+   "adm": 70,
+   "dip": 37,
+   "mil": 45
   },
   "traits": [
    "child_intelligent"
   ],
-  "note": "Second son of the crown prince Ismāʿīl, by the Ottoman princess ʿĀʾisha; born 17 June 1392. Intelligent and studious, and given the costly in-depth education of the heirs (Trent's account; save of 3 September 1398). In 1398 the Emperor leaves the succession law as it stands, watching whether this Saʿd grows into a worthy ruler; if not, he means to choose an heir himself (Trent). At eleven, in July 1403, he stood at 56/35/36, still intelligent and on the in-depth education (save of 18 July 1403)."
+  "note": "Second son of the crown prince Ismāʿīl, by the Ottoman princess ʿĀʾisha; born 17 June 1392. Intelligent and studious, and given the costly in-depth education of the heirs (Trent's account; save of 3 September 1398). In 1398 the Emperor leaves the succession law as it stands, watching whether this Saʿd grows into a worthy ruler; if not, he means to choose an heir himself (Trent). At eleven, in July 1403, he stood at 56/35/36, still intelligent and on the in-depth education (save of 18 July 1403). At twelve, in March 1405, he stood at 70/37/45, second in line behind his elder brother Muḥammad when their father became Emperor (save of 31 March 1405)."
  },
  {
   "id": "saad-ibn-yusuf-ibn-saad",
@@ -1863,9 +1870,9 @@
   "mother": "caterina-de-borja",
   "roles": [],
   "stats": {
-   "adm": 26,
-   "dip": 24,
-   "mil": 37
+   "adm": 30,
+   "dip": 37,
+   "mil": 41
   },
   "traits": [
    "child_gifted"

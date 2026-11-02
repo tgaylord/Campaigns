@@ -79,6 +79,38 @@
   "source": "Trent's account and the death notice, 2 March 1405"
  },
  {
+  "id": "1405-03-02-accession-of-ismail",
+  "date": "1405-03-02",
+  "type": "ruler_change",
+  "people": [
+   "ismail-ibn-saad",
+   "saad-ibn-yusuf",
+   "muhammad-ibn-ismail-ibn-saad",
+   "saad-ibn-ismail-ibn-saad",
+   "yusuf-ibn-saad",
+   "bernarda-of-murcia"
+  ],
+  "title": "Ismāʿīl ibn Saʿd, thirty-eight, is proclaimed Emperor and Sultan of al-Andalus on his father's death. By the law of primogeniture his heir is his eldest son Muḥammad; Bernarda of Mursiyya is his consort; his brother Yūsuf takes his old seat in the dīwān, promoting Andalusī culture",
+  "data": {
+   "ruler": "Ismāʿīl ibn Saʿd, born 8 March 1366 (47/100/38), deceitful, goal-oriented",
+   "heir": "Muḥammad ibn Ismāʿīl, born 25 October 1385 (16/20/17), with three children of his own",
+   "consort": "Bernarda of Mursiyya (57/51/69)",
+   "law": "cognatic primogeniture",
+   "grandsons": {
+    "Saʿd ibn Ismāʿīl (12)": "70/37/45, intelligent, in-depth education",
+    "Aḥmad ibn Ismāʿīl (11)": "35/45/26, ambitious",
+    "Saʿd ibn Yūsuf (11)": "30/37/41, gifted, in-depth education"
+   },
+   "diwan": {
+    "Umm al-Fatḥ": "no task set",
+    "Ismāʿīl ibn Yūsuf": "no task set",
+    "Maryam bint Yūsuf": "integrating the new lands",
+    "Yūsuf ibn Saʿd": "promoting Andalusī culture"
+   }
+  },
+  "source": "Trent's accession notice; save of 31 March 1405"
+ },
+ {
   "id": "1405-03-18-battle-cuenca",
   "date": "1405-03-18",
   "type": "battle",
