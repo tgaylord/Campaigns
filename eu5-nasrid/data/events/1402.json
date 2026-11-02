@@ -226,5 +226,26 @@
    "note": "early September 1402 (Trent's account)"
   },
   "source": "Trent's account, 1402"
+ },
+ {
+  "id": "1402-09-jewellery-charter",
+  "date": "1402-09-02",
+  "type": "reform",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "ishbiliyya",
+   "qusantina"
+  ],
+  "title": "A jewellers' charter is granted to Ishbīliya, the first step of an investment to double the city's jewellery trade, fed by the new silver of Qusanṭīna and the markets the burghers are building",
+  "data": {
+   "charter": "jewellery charter, Ishbīliya",
+   "aim": "to double the industry (Trent)",
+   "inputs": "silver from the Rich Silver Vein at Qusanṭīna (+75% output from April 1402); the burghers' investment in the southern markets",
+   "context": "Ishbīliya already held most of the realm's jewellers' guilds, which went from 7 to 15 between 1379 and 1395",
+   "note": "early September 1402, just after the Jamāʿa (Trent's account)"
+  },
+  "source": "Trent's account, September 1402"
  }
 ]
