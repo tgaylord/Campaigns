@@ -1,0 +1,78 @@
+[
+ {
+  "id": "1397-08-14-infrastructure",
+  "date": "1397-08-14",
+  "type": "reform",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "ishbiliyya",
+   "qurtuba",
+   "qarmuna",
+   "istijja",
+   "shaluqa-al-kubra",
+   "al-ushbuna",
+   "shantarin",
+   "malaqa",
+   "al-mariyya",
+   "batalyaws",
+   "jayyan",
+   "majrit",
+   "tulaytula"
+  ],
+  "title": "A new round of building across the empire. Bridges and madrasas go up in the new lands, a madrasa among them at al-Ushbūna, and a chain of acequias, irrigation canals fed from the hills, is dug along the great river from the capital to Qurṭuba to feed the growing population",
+  "data": {
+   "acequias": [
+    "Qarmūna",
+    "Istija",
+    "Shalūqa al-Kubrā",
+    "Qurṭuba"
+   ],
+   "irrigation": [
+    "Bināar (the game's Bnar)"
+   ],
+   "madrasas": [
+    "al-Ushbūna",
+    "al-Qalʿa (the game's El-qlaʿâ)",
+    "Mālaqa",
+    "Shantarīn",
+    "al-Mariyya"
+   ],
+   "bridges": [
+    "Illīška",
+    "Qalʿat Rabaḥ",
+    "Nduyar",
+    "Baṭalyaws",
+    "Mnṭalban",
+    "Mdint el-Malik",
+    "Bayyāsa",
+    "Jayyān",
+    "al-Quṣayr",
+    "El-Qraṭu",
+    "Ruyu el-Frasnu",
+    "Brṭ el-Gadir",
+    "Nbalusilyuš",
+    "Šinšūn"
+   ],
+   "workshops": {
+    "tools guild, Majrīṭ": "(+6 on the screen)",
+    "tannery, Ṭulayṭula": "(+3 on the screen)"
+   },
+   "acequia": {
+    "effects": {
+     "localMonthlyProsperity": "+0.10%",
+     "localPopulationCapacity": 500,
+     "localFoodProduction": "+4%"
+    },
+    "employs": 250,
+    "inputs": "stone 0.10, lumber 0.10, tools 0.05; masonry 0.25",
+    "buildTime": "365 days",
+    "cost": 50,
+    "text": "a sophisticated irrigation canal system bringing water from mountain streams to fields and gardens, enabling intensive agriculture (the game's text)"
+   },
+   "note": "names as the game shows them on Trent's construction list, which runs on beyond the screen; completion due 136 to 291 days after the order"
+  },
+  "source": "Trent's account, construction list and map screen, 14 August 1397"
+ }
+]
