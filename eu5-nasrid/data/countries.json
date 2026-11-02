@@ -233,5 +233,19 @@
   "nameChronicle": "the so-called Kingdom of Ṭulayṭula",
   "nameArabic": "طليطلة",
   "color": "#8aa3ba"
+ },
+ {
+  "tag": "AAA98",
+  "name": "Taifa of Salamanca",
+  "nameChronicle": "the Ṭāʾifa of Shalamanka",
+  "nameArabic": "طائفة شلمنقة",
+  "color": "#6f8f3a"
+ },
+ {
+  "tag": "ABA60",
+  "name": "Taifa of Cuenca",
+  "nameChronicle": "the Ṭāʾifa of Qūnka",
+  "nameArabic": "طائفة قونكة",
+  "color": "#5b8fb0"
  }
 ]

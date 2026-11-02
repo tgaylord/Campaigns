@@ -425,7 +425,8 @@
    "dip": 32.0,
    "mil": 46.0
   },
-  "note": "Elder brother of Yūsuf I. Regent of Granada from 9 August 1351 until the sultan's return on 7 April 1352, while he made the Hajj (the chronicle's choice; the game named a Naṣr al-Stijjai). Around the new year of 1355 he married Fatiu, daughter of the old ruler of Ghana, fulfilling the Ghana betrothal of 1345, and went south across the desert to live there. His first wife was Shamʿa, of a ruling house of the central Sahara (married 1 March 1354). The chronicle reads his going, like Ismāʿīl's in 1359, as the harem clearing the court of the amir's grown brothers."
+  "note": "Elder brother of Yūsuf I. Regent of Granada from 9 August 1351 until the sultan's return on 7 April 1352, while he made the Hajj (the chronicle's choice; the game named a Naṣr al-Stijjai). Around the new year of 1355 he married Fatiu, daughter of the old ruler of Ghana, fulfilling the Ghana betrothal of 1345, and went south across the desert to live there. His first wife was Shamʿa, of a ruling house of the central Sahara (married 1 March 1354). The chronicle reads his going, like Ismāʿīl's in 1359, as the harem clearing the court of the amir's grown brothers. He died far from Gharnāṭa on 18 September 1370. In August 1395 his son Saʿd was made ruler of the new Ṭāʾifa of Qūnka (save of 5 August 1395).",
+  "died": "1370-09-18"
  },
  {
   "id": "yusuf-i",
@@ -520,7 +521,8 @@
   "traits": [
    "child_gregarious"
   ],
-  "note": "Betrothed on 16 March 1354 to a daughter of the Aydınids of Anatolia. He married her about March 1359 and went to live at the Aydınid court, leaving his seat in the dīwān; the chronicle reads it, like Faraj's going, as the harem clearing the court of the amir's grown brothers."
+  "note": "Betrothed on 16 March 1354 to a daughter of the Aydınids of Anatolia. He married her about March 1359 and went to live at the Aydınid court, leaving his seat in the dīwān; the chronicle reads it, like Faraj's going, as the harem clearing the court of the amir's grown brothers. He died abroad on 4 October 1380. In August 1395 his son Saʿd, born of his Aydınid wife, was made ruler of the new Ṭāʾifa of Shalamanka (save of 5 August 1395).",
+  "died": "1380-10-04"
  },
  {
   "id": "muhammad-ibn-ismail",
@@ -1092,7 +1094,7 @@
   "female": true,
   "roles": [],
   "traits": [],
-  "note": "First child of Sultan Saʿd, born to Aiman the Mamlūk three months after the Portuguese peace. She shares her name, 'mother of victory', with her aunt, Yūsuf I's youngest daughter. By January 1394 she sat in the dīwān, in Duʿā's old seat, integrating the new lands (saves of 1394)."
+  "note": "First child of Sultan Saʿd, born to Aiman the Mamlūk three months after the Portuguese peace. She shares her name, 'mother of victory', with her aunt, Yūsuf I's youngest daughter. By January 1394 she sat in the dīwān, in Duʿā's old seat, integrating the new lands (saves of 1394). She is married to her cousin Saʿd ibn Faraj, who on 5 August 1395 became ruler of the Ṭāʾifa of Qūnka (save of 5 August 1395)."
  },
  {
   "id": "ismail-ibn-saad",
@@ -1734,5 +1736,46 @@
   },
   "traits": [],
   "note": "Castilian, Catholic, fifty in 1394 (birth year estimated from his age), Grand Master of the military Order of Alcántara and general of the Crown of Castile. He led Castile's main army against the Emperor at Ejea de los Caballeros in December 1394 and lost half of it (Trent's battle screens)."
+ },
+ {
+  "id": "saad-ibn-ismail",
+  "name": "Saʿd ibn Ismāʿīl",
+  "nameArabic": "سعد بن إسماعيل",
+  "nameGame": "Saad",
+  "gameId": 16793142,
+  "dynasty": "Naṣrid",
+  "born": "1361-04-03",
+  "father": "ismail-ibn-ismail",
+  "roles": [
+   "ruler of the Ṭāʾifa of Shalamanka"
+  ],
+  "stats": {
+   "adm": 52,
+   "dip": 49,
+   "mil": 53
+  },
+  "traits": [],
+  "note": "Cousin of the Emperor Saʿd: son of his late uncle Ismāʿīl ibn Ismāʿīl and of Sevilay, the Aydınid princess Ismāʿīl married in 1359, and raised at least partly at the Aydınid court. On 5 August 1395 he was made ruler of the new Ṭāʾifa of Shalamanka, 21 towns of the Leonese west taken from Castile at the Peace of Ramaḍān, with his cousin Saʿd ibn Faraj as his heir. Unmarried and childless in August 1395 (save of 5 August 1395)."
+ },
+ {
+  "id": "saad-ibn-faraj",
+  "name": "Saʿd ibn Faraj",
+  "nameArabic": "سعد بن فرج",
+  "nameGame": "Saad",
+  "gameId": 45679,
+  "dynasty": "Naṣrid",
+  "born": "1358-07-11",
+  "father": "faraj-ibn-ismail",
+  "mother": "shama-sahara",
+  "roles": [
+   "ruler of the Ṭāʾifa of Qūnka"
+  ],
+  "stats": {
+   "adm": 45,
+   "dip": 37,
+   "mil": 63
+  },
+  "traits": [],
+  "note": "Cousin of the Emperor Saʿd: son of his late uncle Faraj ibn Ismāʿīl and of Shamʿa of the central Sahara. Husband of the Emperor's daughter Umm al-Fatḥ, who sits in the dīwān; their daughters were Maryam (1390–1394) and Jadīla (born 1393). On 5 August 1395 he was made ruler of the new Ṭāʾifa of Qūnka, 20 towns of the Castilian east taken at the Peace of Ramaḍān, with his brother Yūsuf (born 1360) as heir. He is also heir to the Ṭāʾifa of Shalamanka (save of 5 August 1395)."
  }
 ]

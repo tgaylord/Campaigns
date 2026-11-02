@@ -436,8 +436,8 @@
   "source": "saves of 2 December 1379 and 22 June 1395; Trent's account"
  },
  {
-  "id": "1395-07-diwan-al-insha",
-  "date": "1395-07-01",
+  "id": "1395-08-05-diwan-al-insha",
+  "date": "1395-08-05",
   "type": "reform",
   "people": [
    "saad-ibn-yusuf"
@@ -474,14 +474,14 @@
     "Ḥisba (August 1389)",
     "Dīwān al-Inshāʾ (1395)"
    ],
-   "date": "after the Peace of Ramaḍān (22 June 1395); the day is approximate until the next save",
+   "date": "5 August 1395 (the save of that day)",
    "note": "the last office available in the current expansion of the bureaucracy (Trent)"
   },
-  "source": "Trent's account and screenshot, summer 1395"
+  "source": "Trent's account and screenshot; save of 5 August 1395"
  },
  {
-  "id": "1395-07-the-embassies",
-  "date": "1395-07-01",
+  "id": "1395-08-05-the-embassies",
+  "date": "1395-08-05",
   "type": "diplomacy",
   "people": [
    "saad-ibn-yusuf"
@@ -504,6 +504,139 @@
    },
    "allianceQuestion": "under discussion at court; it would bring al-Andalus into the war against England (Trent)"
   },
-  "source": "Trent's account, summer 1395; save of 22 June 1395"
+  "source": "Trent's account, August 1395; save of 22 June 1395"
+ },
+ {
+  "id": "1395-08-05-two-new-taifas",
+  "date": "1395-08-05",
+  "type": "reform",
+  "people": [
+   "saad-ibn-yusuf",
+   "saad-ibn-ismail",
+   "saad-ibn-faraj",
+   "umm-al-fath-bint-saad"
+  ],
+  "places": [
+   "shalamanka",
+   "qunka"
+  ],
+  "title": "Two new ṭāʾifas are carved from the Castilian lands won at the Peace of Ramaḍān and given to two cousins of the Emperor, sons of his late uncles. Saʿd ibn Ismāʿīl takes the Ṭāʾifa of Shalamanka, 21 towns of the Leonese west; Saʿd ibn Faraj, husband of the Emperor's daughter Umm al-Fatḥ, takes the Ṭāʾifa of Qūnka, 20 towns of the Castilian east. Majrīṭ, Cáceres and all the Portuguese lands stay with the crown",
+  "data": {
+   "taifas": {
+    "Shalamanka (AAA98)": {
+     "ruler": "Saʿd ibn Ismāʿīl, born 1361 (52/49/53)",
+     "heir": "Saʿd ibn Faraj",
+     "capital": "Salamanca",
+     "towns": 21,
+     "population": 382100,
+     "culture": "Leonese",
+     "list": [
+      "Salamanca",
+      "Ávila",
+      "Arévalo",
+      "Ciudad Rodrigo",
+      "Ledesma",
+      "Alba de Tormes",
+      "Béjar",
+      "Piedrahíta",
+      "Plasencia",
+      "Coria",
+      "Galisteo",
+      "Granadilla",
+      "Jaraicejo",
+      "Las Navas",
+      "La Adrada",
+      "Matilla de Caños",
+      "Oropesa",
+      "San Felices",
+      "Valverde",
+      "Villatoro",
+      "Yecla de Yeltes"
+     ]
+    },
+    "Qūnka (ABA60)": {
+     "ruler": "Saʿd ibn Faraj, born 1358 (45/37/63)",
+     "heir": "his brother Yūsuf ibn Faraj, born 1360",
+     "capital": "Cuenca",
+     "towns": 20,
+     "population": 214400,
+     "culture": "Castilian",
+     "list": [
+      "Cuenca",
+      "Guadalajara",
+      "Sigüenza",
+      "Molina de Aragón",
+      "Requena",
+      "Huete",
+      "Alarcón",
+      "Belmonte",
+      "Beteta",
+      "Brihuega",
+      "Buitrago del Lozoya",
+      "Cañete",
+      "Cobeta",
+      "Iniesta",
+      "Jorquera",
+      "Moya",
+      "Pareja",
+      "San Clemente",
+      "Torralba",
+      "Zorita"
+     ]
+    }
+   },
+   "keptByTheCrown": "ten of the Castilian towns, Madrid, Alcalá de Henares, El Escorial, Maqueda and Colmenar around Madrid, and Cáceres, Alcántara, Brozas, Valencia de Alcántara and Arroyo del Fresno in Extremadura, with all 20 towns from Portugal",
+   "realm": {
+    "towns": [
+     189,
+     148
+    ],
+    "population": [
+     2333984,
+     1741921
+    ],
+    "stability": [
+     38.3,
+     9.5
+    ],
+    "rank": [
+     12,
+     7
+    ]
+   },
+   "subjects": [
+    "Valencia",
+    "Taifa of the Algarve",
+    "Catalonia",
+    "Aragon",
+    "Shalamanka",
+    "Qūnka"
+   ],
+   "plan": "Trent had expected about three ṭāʾifas; in the end there were two"
+  },
+  "source": "save of 5 August 1395; Trent's account"
+ },
+ {
+  "id": "1395-08-05-hold-on-al-ushbuna",
+  "date": "1395-08-05",
+  "type": "player_note",
+  "people": [],
+  "places": [
+   "al-ushbuna"
+  ],
+  "title": "The court finds al-Ushbūna easier to hold than it feared. With the seas along the Iberian coast growing safer, the city can be reached and governed from the water, and the crown's control there is already far above that of the inland conquests. It is still limited, but in time, with integration, the court expects to bind it to the crown as closely as Qurṭuba",
+  "data": {
+   "control": {
+    "Lisbon": 0.36,
+    "Madrid": 0.23,
+    "Setúbal": 0.16,
+    "Cáceres": 0.04,
+    "Évora": 0.0,
+    "Córdoba (for comparison)": 0.77,
+    "Toledo": 0.87
+   },
+   "note": "control as a share, from the save of 5 August 1395"
+  },
+  "source": "Trent's account; save of 5 August 1395"
  }
 ]
