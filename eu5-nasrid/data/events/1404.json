@@ -62,5 +62,31 @@
    "papalArmy": "about 2,000 regulars (Trent)"
   },
   "source": "Trent's account, 4 July 1404"
+ },
+ {
+  "id": "1404-10-01-the-sephardim-of-al-mariyya",
+  "date": "1404-10-01",
+  "type": "reform",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "al-mariyya"
+  ],
+  "wars": [],
+  "title": "The Sephardim of al-Mariyya. Jews from across Iberia have made the town of al-Mariyya a haven, where they live without persecution. Some at court welcome it as equality for all of Allāh's creation; the zealous call it a stain on the empire. The Emperor, in the field before Avignon, rules that the rights of the Jewish people shall be protected, and the crown builds them a community house at al-Mariyya",
+  "data": {
+   "event": "The Sephardic Jews",
+   "choice": "We shall protect the rights of the Jewish people (the option on Trent's screen)",
+   "effects": {
+    "humanist": "+10 (from 60)",
+    "unlocks": "the Jewish Community building",
+    "construction": "a Jewish Community building in al-Mariyya",
+    "cost": 140
+   },
+   "alternative": "Allāh would never allow these unbelievers to live in peace!",
+   "context": "the convivencia proclaimed with the Restoration of al-Andalus in 1375; some 123,000 Jews in the realm in 1395. At the time the Emperor was besieging Avignon, and the crusade's war score stood at +40%"
+  },
+  "source": "Trent's screen, 1 October 1404"
  }
 ]
