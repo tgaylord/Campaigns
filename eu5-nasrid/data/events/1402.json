@@ -1,0 +1,51 @@
+[
+ {
+  "id": "1402-01-17-highland-prospecting-survey",
+  "date": "1402-01-17",
+  "type": "player_note",
+  "people": [
+   "khalid-ibn-yahya"
+  ],
+  "places": [
+   "qusantina",
+   "ishbiliyya"
+  ],
+  "title": "A Highland Prospecting Survey goes into the hills under Khālid ibn Yaḥyā Raḥḥū, fifty-nine, once of the dīwān, son of the old captain of the Volunteers of the Faith: prospectors and assayers to walk the streambeds, hammer the outcrops and test the rocks for metal. At Almonaster in the Sierra the copper workings throw up acrid yellow smoke that drives the workers off the slope and wilts the grass downwind, and the farmers bring a formal complaint",
+  "data": {
+   "expedition": "Highland Prospecting Survey (exploration expedition)",
+   "leader": "Khālid ibn Yaḥyā Raḥḥū, Zenati, Sunni, 59 (80/85/78), architect, hardy warrior",
+   "route": {
+    "at": "El-Mnastir (Almonaster, the game's name)",
+    "next": "Eš-Šeršna, 20 January 1402",
+    "then": [
+     "Al-Iskuriyāl (El Escorial)",
+     "Qusanṭīna",
+     "Qrabaqa",
+     "Ishbīliya"
+    ]
+   },
+   "event": {
+    "name": "Toxic Smoke from the Workings",
+    "text": "the copper prospect yields ore of unexpected character; the first roasting heap, set to drive off the sulphides before smelting, gives off acrid yellow smoke; the metallurgist offers to build proper roasting kilns at unbudgeted cost",
+    "choiceOnScreen": "Abandon the prospect. Locals are not wrong about the air (the choice made is not yet recorded)"
+   },
+   "otherExpeditions": [
+    "Circumnavigation (west, round the southern cape and home by the Cape of Good Hope)",
+    "The Royal Ḥajj",
+    "Voyage into the Western Ocean"
+   ],
+   "state": {
+    "treasury": 342.75,
+    "monthly": 24.53,
+    "stability": 23,
+    "population": 1807000,
+    "legitimacy": 100,
+    "prestige": 91,
+    "army": 4900,
+    "ships": 28,
+    "age": "the Age of Renaissance has begun"
+   }
+  },
+  "source": "Trent's screens, 17 January 1402"
+ }
+]
