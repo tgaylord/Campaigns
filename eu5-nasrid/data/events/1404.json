@@ -1,0 +1,46 @@
+[
+ {
+  "id": "1404-02-01-the-crusade",
+  "date": "1404-02-01",
+  "type": "war_declared",
+  "people": [
+   "saad-ibn-yusuf",
+   "rodrigo-de-borja"
+  ],
+  "wars": [
+   "crusade-of-806"
+  ],
+  "title": "The long peace is broken. The Pope proclaims a crusade against al-Andalus, the first, and declares war on the Ṭāʾifa of Aragon; the Emperor answers for his subject. The crusade's temporal support is thin: the Pope's own vassals and a handful of German bishops and princes, some five thousand men, most of them levies",
+  "data": {
+   "cb": "cb_crusade",
+   "target": "ARA (the Borja Sultanate of Aragon, as the game styles it)",
+   "gameName": "The 1st Crusade against Andalusia",
+   "crusaders": {
+    "Papal States": "270 men, 26 ships",
+    "Faenza": 358,
+    "Siena": 373,
+    "Magdeburg": 950,
+    "Mainz": "2,741 (444 regulars)",
+    "Cologne": 0,
+    "others": "three minor vassals, about 400"
+   },
+   "defenders": {
+    "al-Andalus": "4,900 regulars, 32 ships",
+    "the ṭāʾifas": "Aragon, Catalonia (400), Valencia (450), the Algarve, Salamanca, Cuenca",
+    "Mamlūks": "4,050 men, with Mecca, Medina, the Dulkadirids, Hutaym, Barqa, Banū Kanz, Suakin, the Western Oases, Val di Noto, Zubāla, Nafūsa and others",
+    "Morocco": "2,400 men, 30 ships, with Tafilalt, Touat and Tlemcen"
+   },
+   "realm": {
+    "towns": 148,
+    "population": 1832665,
+    "treasury": 51,
+    "income": 199.6,
+    "expenses": 164.6,
+    "stability": 22.0,
+    "rank": 4
+   },
+   "peace": "the first war since the Peace of Ramaḍān in 1395, nearly nine years"
+  },
+  "source": "save of 3 February 1404; Trent's account and screen"
+ }
+]

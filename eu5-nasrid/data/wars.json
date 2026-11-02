@@ -616,5 +616,40 @@
    "nameArabic": "الاسترداد",
    "number": 3
   }
+ },
+ {
+  "id": "crusade-of-806",
+  "name": "The Crusade of 806",
+  "gameName": "The 1st Crusade against Andalusia",
+  "start": "1404-02-01",
+  "end": null,
+  "goal": "A crusade proclaimed by the Pope against al-Andalus, declared on the Ṭāʾifa of Aragon (cb_crusade)",
+  "allies": [
+   "Aragon",
+   "Catalonia",
+   "Valencia",
+   "Taifa of the Algarve",
+   "Taifa of Salamanca",
+   "Taifa of Cuenca",
+   "Mamluks",
+   "Morocco"
+  ],
+  "enemies": [
+   "Papal States",
+   "Faenza",
+   "Siena",
+   "Magdeburg",
+   "Cologne",
+   "Mainz"
+  ],
+  "involvement": "belligerent",
+  "note": "On 1 February 1404 (19 Rajab 806) the Pope proclaimed the first crusade against al-Andalus and declared war on its subject, the Ṭāʾifa of Aragon; al-Andalus came in to defend it. With the Pope stood his vassals Faenza and Siena and a few princes of the Empire, Magdeburg, Cologne and Mainz among them: some 5,100 men all told, most of them levies, and 26 papal ships. With al-Andalus stood all six ṭāʾifas, the Mamlūks and their vassals (Mecca, Medina, the Dulkadirids, Barqa, Suakin and others) and Morocco with Tafilalt, Touat and Tlemcen. Al-Andalus had 4,900 regulars and 32 ships; the Mamlūks 4,050 men, Morocco 2,400 and 30 ships (save of 3 February 1404). The game ranked al-Andalus fourth among the powers.",
+  "outcome": null,
+  "score": [
+   {
+    "date": "1404-02-01",
+    "value": 0
+   }
+  ]
  }
 ]
