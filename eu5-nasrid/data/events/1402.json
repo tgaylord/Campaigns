@@ -10,7 +10,7 @@
    "qusantina",
    "ishbiliyya"
   ],
-  "title": "A Highland Prospecting Survey goes into the hills under Khālid ibn Yaḥyā Raḥḥū, fifty-nine, once of the dīwān, son of the old captain of the Volunteers of the Faith: prospectors and assayers to walk the streambeds, hammer the outcrops and test the rocks for metal. At Almonaster in the Sierra the copper workings throw up acrid yellow smoke that drives the workers off the slope and wilts the grass downwind, and the farmers bring a formal complaint",
+  "title": "A Highland Prospecting Survey goes into the hills under Khālid ibn Yaḥyā Raḥḥū, fifty-nine, once of the dīwān, son of the old captain of the Volunteers of the Faith: prospectors and assayers to walk the streambeds, hammer the outcrops and test the rocks for metal. At Almonaster in the Sierra the copper workings throw up acrid yellow smoke that drives the workers off the slope and wilts the grass downwind, and the farmers bring a formal complaint. The court sides with the farmers and the copper prospect is abandoned",
   "data": {
    "expedition": "Highland Prospecting Survey (exploration expedition)",
    "leader": "Khālid ibn Yaḥyā Raḥḥū, Zenati, Sunni, 59 (80/85/78), architect, hardy warrior",
@@ -27,7 +27,7 @@
    "event": {
     "name": "Toxic Smoke from the Workings",
     "text": "the copper prospect yields ore of unexpected character; the first roasting heap, set to drive off the sulphides before smelting, gives off acrid yellow smoke; the metallurgist offers to build proper roasting kilns at unbudgeted cost",
-    "choiceOnScreen": "Abandon the prospect. Locals are not wrong about the air (the choice made is not yet recorded)"
+    "choiceOnScreen": "Abandon the prospect. Locals are not wrong about the air (the option Trent had chosen on screen)"
    },
    "otherExpeditions": [
     "Circumnavigation (west, round the southern cape and home by the Cape of Good Hope)",
@@ -47,5 +47,108 @@
    }
   },
   "source": "Trent's screens, 17 January 1402"
+ },
+ {
+  "id": "1402-01-18-prospecting-commission",
+  "date": "1402-01-18",
+  "type": "player_note",
+  "people": [
+   "khalid-ibn-yahya"
+  ],
+  "title": "The Prospecting Commission: the crown spares no expense, and sends skilled assayers and gold for samples with Khālid's prospectors, who will walk the highlands for a year testing streambeds for placer gold, hammering at quartz veins and asking shepherds which valleys give up colour in the pan",
+  "data": {
+   "choice": "Spare no expense. Send skilled assayers, gold for samples (the option on Trent's screen)",
+   "effects": {
+    "gold": -83.61,
+    "prestige": 5,
+    "pause": "10 days"
+   },
+   "alternative": "A modest fee will do. Headmen provide guides and shelter"
+  },
+  "source": "Trent's screens of the Highland Prospecting Survey, 1402"
+ },
+ {
+  "id": "1402-03-09-iron-at-al-iskuriyal",
+  "date": "1402-03-09",
+  "type": "player_note",
+  "people": [
+   "khalid-ibn-yahya"
+  ],
+  "title": "A seam of iron at al-Iskuriyāl (El Escorial): high-grade ore running deep into the mountain, the rock streaked black and red, perhaps old workings reopened that the village headman's grandfather spoke of. The crown develops it quietly; rival foundries need not hear of it yet",
+  "data": {
+   "find": "Iron",
+   "place": "Al-Iskuriyāl (El Escorial)",
+   "choice": "Develop it quietly",
+   "effects": {
+    "modifier": "Rich Iron Seam, 18 years, decaying: local iron output +50%",
+    "gold": 41.53
+   },
+   "alternative": "Announce the find"
+  },
+  "source": "Trent's screens of the Highland Prospecting Survey, 1402"
+ },
+ {
+  "id": "1402-04-26-silver-at-qusantina",
+  "date": "1402-04-26",
+  "type": "player_note",
+  "people": [
+   "khalid-ibn-yahya"
+  ],
+  "places": [
+   "qusantina"
+  ],
+  "title": "Silver in the rock at Qusanṭīna, the old silver town of the house of Naṣr: a vein wide enough to swing a pick in and pure enough to polish straight from the rock, the shaft timbered and the first cartloads hauled up by windlass. The crown keeps it quiet; foreign eyes on al-Andalus's silver bring trouble",
+  "data": {
+   "find": "Silver",
+   "place": "Qusanṭīna (Constantina)",
+   "choice": "Keep it quiet",
+   "effects": {
+    "modifier": "Rich Silver Vein, 20 years, decaying: local silver output +75%",
+    "gold": 83.27
+   },
+   "alternative": "Announce it to the Empire"
+  },
+  "source": "Trent's screens of the Highland Prospecting Survey, 1402"
+ },
+ {
+  "id": "1402-06-11-gems-at-qrabaqa",
+  "date": "1402-06-11",
+  "type": "player_note",
+  "people": [
+   "khalid-ibn-yahya"
+  ],
+  "title": "Stones that catch the light at Qrabaqa: gem-bearing gravels in a streambed, traced up to a pocket of crystal-shot pegmatite in the hillside, and a cuttable fraction the lapidaries call exceptional. The gems are kept for the imperial coffers, quietly",
+  "data": {
+   "find": "Gems",
+   "place": "Qrabaqa (the game's name)",
+   "choice": "Keep the gems for imperial coffers, quietly kept",
+   "effects": {
+    "modifier": "Productive Gem Workings, 20 years, decaying: local gems output +75%",
+    "gold": 100.02
+   },
+   "alternative": "Announce the find"
+  },
+  "source": "Trent's screens of the Highland Prospecting Survey, 1402"
+ },
+ {
+  "id": "1402-08-03-survey-returns",
+  "date": "1402-08-03",
+  "type": "player_note",
+  "people": [
+   "khalid-ibn-yahya"
+  ],
+  "places": [
+   "ishbiliyya"
+  ],
+  "title": "The Highland Prospecting Survey comes home to Ishbīliya after seven months in the hills. It found iron at al-Iskuriyāl, silver at Qusanṭīna and gems at Qrabaqa, and the court kept all three quiet",
+  "data": {
+   "effects": {
+    "modifier": "Highland Survey Returned, 20 years, decaying: raw materials output +5%",
+    "prestige": 10
+   },
+   "goldFromFinds": 224.82,
+   "spentOnAssayers": 83.61
+  },
+  "source": "Trent's screens of the Highland Prospecting Survey, 1402"
  }
 ]
