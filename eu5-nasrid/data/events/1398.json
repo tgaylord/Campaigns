@@ -1,0 +1,30 @@
+[
+ {
+  "id": "1398-09-03-the-grandsons",
+  "date": "1398-09-03",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf",
+   "ismail-ibn-saad",
+   "yusuf-ibn-saad",
+   "muhammad-ibn-ismail-ibn-saad",
+   "saad-ibn-ismail-ibn-saad",
+   "saad-ibn-yusuf-ibn-saad",
+   "caterina-de-borja"
+  ],
+  "title": "The question of the sons. With the two mothers dead and Prince Yūsuf away at the court of Aragon, the old quarrel between Ismāʿīl's party and Yūsuf's has cooled. The next generation is harder. The crown prince's eldest, Muḥammad, is stubborn and unfit to rule; his second, Saʿd, is intelligent and studious. But Yūsuf's son, another Saʿd, four years old and raised at Benabarre, outshines them both, and the Emperor has grown set on raising this grandson at his own court",
+  "data": {
+   "crownPrinceSons": {
+    "Muḥammad (b. 1385, by Bernarda)": "child_idiot, 14/18/14, balanced education",
+    "Saʿd (b. 1392, by ʿĀʾisha)": "child_intelligent, 27/16/21, expensive in-depth education",
+    "Aḥmad (b. 1393, by ʿĀʾisha)": "child_ambitious, 13/17/7"
+   },
+   "yusufsSon": {
+    "Saʿd (b. 1394, by Caterina de Borja)": "child_gifted, 11/14/18, expensive in-depth education, at the Aragonese court"
+   },
+   "aragon": "King Rodrigo (b. 1381); heir his sister Caterina, Yūsuf's wife, who is with child; the boy's own place in the Aragonese succession is not shown in the save",
+   "yusuf": "living at the Aragonese court since his marriage (by January 1394); Trent counts the move a quirk of the game's marriages and is looking at moving him back"
+  },
+  "source": "Trent's account; save of 3 September 1398"
+ }
+]

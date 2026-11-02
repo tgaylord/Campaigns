@@ -1,0 +1,41 @@
+[
+ {
+  "id": "1388-12-28-death-of-dua",
+  "date": "1388-12-28",
+  "type": "death",
+  "people": [
+   "dua-marinid",
+   "saad-ibn-yusuf",
+   "ismail-ibn-saad"
+  ],
+  "title": "Duʿā the Marīnid, the Emperor's wife and mother of the crown prince, dies at fifty after a short illness, as the court tells it. She had sat in the dīwān for thirty-three years, under two husbands and two reigns, and ruled the court as regent through the War of the Upper March. The physicians were not summoned until the end, and the court did not ask why",
+  "data": {
+   "age": 50,
+   "cause": "the court's account: a short illness. The game's death notice says suicide; by Trent's ruling the chronicle keeps the court's version, as with earlier deaths given out as hunting accidents and illnesses",
+   "roles": "wife of Yūsuf I and of Saʿd; member of the dīwān from about 1355; regent 1373–1375",
+   "parents": "Abū al-Ḥasan ʿAlī, sultan of Fās, and Fāṭima the Ḥafṣid",
+   "culture": "Zanāta",
+   "stats": [
+    43,
+    38,
+    54
+   ],
+   "seatLeft": "her seat in the dīwān is vacant"
+  },
+  "source": "Trent's screenshot of the death notice, 28 December 1387; dated to 1388 from the death date in the save of 3 September 1398 (first logged as 1387)"
+ },
+ {
+  "id": "1388-12-mamluk-desert-war",
+  "date": "1388-12-28",
+  "type": "player_note",
+  "people": [
+   "bolot-mamluk"
+  ],
+  "title": "The Mamlūks are at war with some desert tribes. As their ally al-Andalus is counted in it, but no help is sent",
+  "data": {
+   "involvement": "nominal: allied, no forces sent (Trent)",
+   "gameName": "begins \"1st Eg…\" on Trent's screen; the full name awaits a save"
+  },
+  "source": "Trent's account and screenshot, 28 December 1387; dated to 1388 from the death date in the save of 3 September 1398 (first logged as 1387)"
+ }
+]

@@ -814,11 +814,11 @@
   "nameGame": "Aiman",
   "female": true,
   "roles": [],
-  "note": "Daughter of the Mamluk Sultan, betrothed to Saʿd ibn Yūsuf, heir of Granada, on 19 January 1351. Married to Saʿd before he came of age; at his majority in January 1364 she was his only wife, until he also married Duʿāʾ. Mother of Saʿd's first child, Umm al-Fatḥ (born 13 December 1364). Mother of Jadīla bint Saʿd (born 13 December 1368). Of the Baḥrī house (the game calls her Aiman Baḥriyya), the house of the Mamlūk sultans: in 1374–1375 its men fought for Granada in Malta and Catalonia, and at court she led the faction of the Mamlūk alliance (Trent's account). As the Emperor's principal wife (consort) the game will not seat her in the dīwān. The chronicle holds that she sits there anyway, by the strength of the harem, without a formal office (Trent's ruling, March 1375). She died on 23 October 1391, aged forty-seven, while the Emperor was on pilgrimage; in the chronicle she died by the Nile on a visit to her family in Egypt (the game's notice says she was attacked by a crocodile), and the court wondered.",
+  "note": "Daughter of the Mamluk Sultan, betrothed to Saʿd ibn Yūsuf, heir of Granada, on 19 January 1351. Married to Saʿd before he came of age; at his majority in January 1364 she was his only wife, until he also married Duʿāʾ. Mother of Saʿd's first child, Umm al-Fatḥ (born 13 December 1364). Mother of Jadīla bint Saʿd (born 13 December 1368). Of the Baḥrī house (the game calls her Aiman Baḥriyya), the house of the Mamlūk sultans: in 1374–1375 its men fought for Granada in Malta and Catalonia, and at court she led the faction of the Mamlūk alliance (Trent's account). As the Emperor's principal wife (consort) the game will not seat her in the dīwān. The chronicle holds that she sits there anyway, by the strength of the harem, without a formal office (Trent's ruling, March 1375). She died on 14 October 1391, aged forty-seven, while the Emperor was on pilgrimage; in the chronicle she died by the Nile on a visit to her family in Egypt (the game's notice says she was attacked by a crocodile), and the court wondered.",
   "born": "1344-04-06",
   "gameId": 32464,
   "dynasty": "Baḥrī",
-  "died": "1391-10-23"
+  "died": "1391-10-14"
  },
  {
   "id": "dua-marinid",
@@ -828,10 +828,10 @@
   "dynasty": "Marīnid",
   "female": true,
   "roles": [],
-  "note": "A princess of the Marīnid house of Fās, betrothed to Granada on 18 January 1348 and married to Yūsuf I about 12 August 1354: the one Marīnid bond that outlived Morocco's annulment of its treaties with Granada in 1351. The most capable of the amir's wives, she took Yaḥyā Raḥḥū's seat in the dīwān about 10 March 1355, after his death, under the Powerful Harem law that let women sit in the cabinet. By August 1358 she was widely praised for bringing fresh ideas and practices to the court (the game's 'Foreign Wisdom'), to the nobility's displeasure. Mother of Yūsuf's son Muḥammad (1356–1358). Widowed on 1 August 1363, she married the regent Naṣr al-Istijjī within days. Widowed again a few days after 18 January 1364, when Naṣr died of 'sickness', she then married the young Sultan Saʿd, her late husband Yūsuf's son. That made her his second wife, beside Aiman the Mamlūk. Mother of Saʿd's son and heir Ismāʿīl (born 8 March 1366). While Saʿd campaigned in Aragon in 1374 she ran the court in Gharnāṭa, and with his support by letter summoned the Jamāʿa to give the ʿulamāʾ more power to regulate and tax the dhimmīs (Trent's account). She died on 28 December 1387, aged fifty, after a short illness as the court tells it (the game's death notice gives suicide; the chronicle keeps the court's version, by Trent's ruling).",
+  "note": "A princess of the Marīnid house of Fās, betrothed to Granada on 18 January 1348 and married to Yūsuf I about 12 August 1354: the one Marīnid bond that outlived Morocco's annulment of its treaties with Granada in 1351. The most capable of the amir's wives, she took Yaḥyā Raḥḥū's seat in the dīwān about 10 March 1355, after his death, under the Powerful Harem law that let women sit in the cabinet. By August 1358 she was widely praised for bringing fresh ideas and practices to the court (the game's 'Foreign Wisdom'), to the nobility's displeasure. Mother of Yūsuf's son Muḥammad (1356–1358). Widowed on 1 August 1363, she married the regent Naṣr al-Istijjī within days. Widowed again a few days after 18 January 1364, when Naṣr died of 'sickness', she then married the young Sultan Saʿd, her late husband Yūsuf's son. That made her his second wife, beside Aiman the Mamlūk. Mother of Saʿd's son and heir Ismāʿīl (born 8 March 1366). While Saʿd campaigned in Aragon in 1374 she ran the court in Gharnāṭa, and with his support by letter summoned the Jamāʿa to give the ʿulamāʾ more power to regulate and tax the dhimmīs (Trent's account). She died on 28 December 1388, aged fifty, after a short illness as the court tells it (the game's death notice gives suicide; the chronicle keeps the court's version, by Trent's ruling).",
   "born": "1338-08-10",
   "gameId": 24887,
-  "died": "1387-12-28"
+  "died": "1388-12-28"
  },
  {
   "id": "tizemt-hafsid",
@@ -1115,7 +1115,7 @@
    "regent (1385–1386)"
   ],
   "traits": [],
-  "note": "Son and heir of Sultan Saʿd, born to Duʿāʾ the Marīnid on 8 March 1366, a month before the Peace of Independence. At eight he was already a silver tongue (63 in diplomacy). In late 1374 he and his half-brother Yūsuf were both given the costly tutors their father had had; his mother Duʿā had wanted them for him alone (Trent's account). On 16 March 1375 he was betrothed to Bernarda of Murcia, the gifted heir of the Ṭāʾifa of Mursiyya, as Murcia was taken into the crown (Trent's account). From 23 August 1385 he ruled as regent while his father made the Hajj, with his mother Duʿā and Aiman quarrelling at court (Trent's account). Before that he had served as an admiral, to carry the crown's authority over the seas: his first command, from 17 June 1383 (save of 1 October 1387) until he joined the dīwān. In 1386 he was brought home, and on 22 January 1387 he took the seat in the dīwān created by the Ḥijāba, to help his father's scholar-building project (Trent's account). He had married Bernarda of Murcia by 1 October 1387. In May 1391 he took a second wife, ʿĀʾisha of the house of ʿOthmān. His sons: Yūsuf (1383–1384) and Muḥammad (born 25 October 1385) by Bernarda; Saʿd (born 17 June 1392) and Aḥmad (born 21 October 1393) by ʿĀʾisha (save of 2 January 1394).",
+  "note": "Son and heir of Sultan Saʿd, born to Duʿāʾ the Marīnid on 8 March 1366, a month before the Peace of Independence. At eight he was already a silver tongue (63 in diplomacy). In late 1374 he and his half-brother Yūsuf were both given the costly tutors their father had had; his mother Duʿā had wanted them for him alone (Trent's account). On 16 March 1375 he was betrothed to Bernarda of Murcia, the gifted heir of the Ṭāʾifa of Mursiyya, as Murcia was taken into the crown (Trent's account). From 23 August 1385 he ruled as regent while his father made the Hajj, with his mother Duʿā and Aiman quarrelling at court (Trent's account). Before that he had served as an admiral, to carry the crown's authority over the seas: his first command, from 17 June 1383 (save of 1 October 1387) until he joined the dīwān. In 1386 he was brought home, and on 22 January 1387 he took the seat in the dīwān created by the Ḥijāba, to help his father's scholar-building project (Trent's account). He had married Bernarda of Murcia by 1 October 1387. In May 1391 he took a second wife, ʿĀʾisha of the house of ʿOthmān. His sons: Yūsuf (1383–1384) and Muḥammad (born 25 October 1385) by Bernarda; Saʿd (born 17 June 1392) and Aḥmad (born 21 October 1393) by ʿĀʾisha (save of 2 January 1394). By 1398 his sons were Muḥammad, the eldest, judged unfit to rule; Saʿd, intelligent and studious; and Aḥmad, ambitious (Trent's account; save of 3 September 1398).",
   "stats": {
    "adm": 47,
    "dip": 100,
@@ -1467,7 +1467,7 @@
   "mother": "aiman-mamluk",
   "roles": [],
   "traits": [],
-  "note": "Son of Sultan Saʿd and Aiman the Mamlūk, born 15 October 1371, named for his grandfather Yūsuf I (save of 16 January 1373). Following in his father's footsteps, as the court saw it; in late 1374, at three, he was given the same costly tutors as the heir, over Duʿā's objection (Trent's account).",
+  "note": "Son of Sultan Saʿd and Aiman the Mamlūk, born 15 October 1371, named for his grandfather Yūsuf I (save of 16 January 1373). Following in his father's footsteps, as the court saw it; in late 1374, at three, he was given the same costly tutors as the heir, over Duʿā's objection (Trent's account). Betrothed by October 1387 to Madīna, of a Mamlūk-cultured house, and to Caterina de Borja, daughter of King Alfons of Aragon, he married both, and by January 1394 he had gone to live at the Aragonese court at Benabarre, as the game moves a husband to his wife's court. His children: Muʾmina (born 1389) by Madīna and Saʿd (born 1394) by Caterina, and both wives were with child by him in September 1398. In 1398 he commanded troops for Aragon (March to July). With his mother dead and himself far away, the old quarrel over the succession has cooled (Trent's account; saves of 1 October 1387, 2 January 1394 and 3 September 1398).",
   "stats": {
    "adm": 9,
    "dip": 5,
@@ -1644,7 +1644,8 @@
    "mil": 85
   },
   "traits": [],
-  "note": "A Catalan, Sunni, of the house of Borja; proclaimed king of a renewed Aragon, a ṭāʾifa of the sultan in the interior, on 16 March 1375. The game counts him the fifth Alfons of Aragon, and gives his small kingdom the rank of a kingdom and its seat at Benabarre. The sultan dressed it as a successor to the old crown (Trent's account; save of 16 March 1375). At the peace of 6 April 1378 Castile restored the Aragonese heartland to him, 24 towns with Zaragoza, Huesca, Jaca and Teruel, and his kingdom grew from 6 towns to 30."
+  "note": "A Catalan, Sunni, of the house of Borja; proclaimed king of a renewed Aragon, a ṭāʾifa of the sultan in the interior, on 16 March 1375. The game counts him the fifth Alfons of Aragon, and gives his small kingdom the rank of a kingdom and its seat at Benabarre. The sultan dressed it as a successor to the old crown (Trent's account; save of 16 March 1375). At the peace of 6 April 1378 Castile restored the Aragonese heartland to him, 24 towns with Zaragoza, Huesca, Jaca and Teruel, and his kingdom grew from 6 towns to 30. He died on 24 February 1393. His son Rodrigo (born 1381) succeeded him, with his daughter Caterina as heir (save of 3 September 1398).",
+  "died": "1393-02-24"
  },
  {
   "id": "alfonso-de-onate",
@@ -1799,5 +1800,107 @@
   },
   "traits": [],
   "note": "Cousin of the Emperor: son of the Naṣrid princess Maryam bint Ismāʿīl and her second husband Muḥammad ibn Aḥmad (died 1352), lord of a Maghribī house of Tunisian culture, whose head he now is. Born at Gharnāṭa. On 19 February 1396 he was made an explorer, and by 1 June 1397 he was charting southern Macaronesia (the Cape Verde seas), sailing from Coria del Río and last reported off Funchal on Madeira (autosave of 1 June 1397)."
+ },
+ {
+  "id": "muhammad-ibn-ismail-ibn-saad",
+  "name": "Muḥammad ibn Ismāʿīl ibn Saʿd",
+  "nameArabic": "محمد بن إسماعيل",
+  "nameGame": "Muhammad",
+  "gameId": 71898,
+  "dynasty": "Naṣrid",
+  "born": "1385-10-25",
+  "father": "ismail-ibn-saad",
+  "mother": "bernarda-of-murcia",
+  "roles": [],
+  "stats": {
+   "adm": 14,
+   "dip": 18,
+   "mil": 14
+  },
+  "traits": [
+   "child_idiot"
+  ],
+  "note": "Eldest surviving son of the crown prince Ismāʿīl, by Bernarda of Mursiyya; born 25 October 1385, while his grandfather was on the road to Makka. By 1398 the game marks him a dull child, and the court thinks him stubborn and unfit to rule (Trent's account; save of 3 September 1398)."
+ },
+ {
+  "id": "saad-ibn-ismail-ibn-saad",
+  "name": "Saʿd ibn Ismāʿīl ibn Saʿd",
+  "nameArabic": "سعد بن إسماعيل",
+  "nameGame": "Saad",
+  "gameId": 16792888,
+  "dynasty": "Naṣrid",
+  "born": "1392-06-17",
+  "father": "ismail-ibn-saad",
+  "mother": "aisha-ottoman",
+  "roles": [],
+  "stats": {
+   "adm": 27,
+   "dip": 16,
+   "mil": 21
+  },
+  "traits": [
+   "child_intelligent"
+  ],
+  "note": "Second son of the crown prince Ismāʿīl, by the Ottoman princess ʿĀʾisha; born 17 June 1392. Intelligent and studious, and given the costly in-depth education of the heirs (Trent's account; save of 3 September 1398)."
+ },
+ {
+  "id": "saad-ibn-yusuf-ibn-saad",
+  "name": "Saʿd ibn Yūsuf ibn Saʿd",
+  "nameArabic": "سعد بن يوسف",
+  "nameGame": "Saad",
+  "gameId": 16836662,
+  "dynasty": "Naṣrid",
+  "born": "1394-02-18",
+  "father": "yusuf-ibn-saad",
+  "mother": "caterina-de-borja",
+  "roles": [],
+  "stats": {
+   "adm": 11,
+   "dip": 14,
+   "mil": 18
+  },
+  "traits": [
+   "child_gifted"
+  ],
+  "note": "Son of Prince Yūsuf and Caterina de Borja, heir of Aragon; born 18 February 1394 and raised at the Aragonese court at Benabarre with the costly in-depth education. At four he outshines both of the crown prince's sons, and the Emperor wants him raised at his own court (Trent's account; save of 3 September 1398)."
+ },
+ {
+  "id": "caterina-de-borja",
+  "name": "Caterina de Borja",
+  "nameGame": "Catherine",
+  "gameId": 16808603,
+  "dynasty": "Borja",
+  "born": "1376-03-10",
+  "father": "alfons-de-borja",
+  "female": true,
+  "roles": [
+   "heir of the Ṭāʾifa of Aragon"
+  ],
+  "stats": {
+   "adm": 62,
+   "dip": 46,
+   "mil": 28
+  },
+  "traits": [],
+  "note": "Daughter of King Alfons of the renewed Aragon. Married to Prince Yūsuf ibn Saʿd (betrothed by October 1387, married by January 1394), who went to live at her father's court. Mother of Saʿd ibn Yūsuf (born 1394). Heir to her brother King Rodrigo in 1398, and with child by Yūsuf (save of 3 September 1398)."
+ },
+ {
+  "id": "rodrigo-de-borja",
+  "name": "Rodrigo de Borja",
+  "nameGame": "Roderick",
+  "gameId": 16800895,
+  "dynasty": "Borja",
+  "born": "1381-04-24",
+  "father": "alfons-de-borja",
+  "roles": [
+   "king of the Ṭāʾifa of Aragon"
+  ],
+  "stats": {
+   "adm": 52,
+   "dip": 39,
+   "mil": 65
+  },
+  "traits": [],
+  "note": "Son of King Alfons; king of the renewed Aragon from his father's death on 24 February 1393, a boy of eleven. His sister Caterina is his heir (save of 3 September 1398)."
  }
 ]

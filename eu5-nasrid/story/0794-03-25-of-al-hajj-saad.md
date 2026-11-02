@@ -5,7 +5,7 @@ era: book-of-the-call
 kind: chronicle
 people: [saad-ibn-yusuf, ismail-ibn-saad, aisha-ottoman, aiman-mamluk, yusuf-ibn-saad, bolot-mamluk]
 places: [ishbiliyya]
-sources: [1391-05-ottoman-marriage, 1391-05-11-second-hajj-departs, 1391-07-01-merchant-at-sea, 1391-07-25-al-qahira-again, 1391-10-the-kaaba, 1391-10-23-death-of-aiman, 1392-02-20-hajji, 1392-11-banking, 1371-02-24-spread-of-usury]
+sources: [1391-05-ottoman-marriage, 1391-05-11-second-hajj-departs, 1391-07-01-merchant-at-sea, 1391-07-25-al-qahira-again, 1391-10-the-kaaba, 1391-10-14-death-of-aiman, 1392-02-20-hajji, 1392-11-banking, 1371-02-24-spread-of-usury]
 ---
 
 Five years after the season passed him by, the Emperor set out again, and this time he left in spring. He stayed at court only long enough for one more marriage. A princess of the house of ʿOthmān, the sultans rising in Anatolia, came west to marry his son: [ʿĀʾisha](person:aisha-ottoman), sixteen years old, who became the crown prince's second wife beside Bernarda. The wedding was hardly over before the caravan moved. On 6 Jumādā al-Ākhira 793 he left [Ishbīliya](place:ishbiliyya) with half a year in hand, and the crown prince [Ismāʿīl](person:ismail-ibn-saad) took up the regency a second time.
