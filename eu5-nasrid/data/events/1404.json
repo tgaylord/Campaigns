@@ -10,13 +10,13 @@
   "wars": [
    "crusade-of-806"
   ],
-  "title": "The long peace is broken. The Pope proclaims a crusade against al-Andalus, the first, and declares war on the Ṭāʾifa of Aragon; the Emperor answers for his subject. The crusade's temporal support is thin: the Pope's own vassals and a handful of German bishops and princes, some five thousand men at the declaration, most of them levies, though the Pope's own army filled back up to about two thousand regulars by summer",
+  "title": "The long peace is broken. The Pope proclaims a crusade against al-Andalus, the first, and declares war on the Ṭāʾifa of Aragon; the Emperor answers for his subject. The crusade's temporal support is thin: the Pope's own vassals and a handful of German bishops and princes, some five thousand men at the declaration, most of them levies",
   "data": {
    "cb": "cb_crusade",
    "target": "ARA (the Borja Sultanate of Aragon, as the game styles it)",
    "gameName": "The 1st Crusade against Andalusia",
    "crusaders": {
-    "Papal States": "270 men under arms on 3 February (four regiments far under strength: crossbowmen at 10%, men-at-arms at 5%), 26 ships; about 2,000 regulars by July once refilled (Trent)",
+    "Papal States": "270 men under arms on 3 February (four regiments far under strength: crossbowmen at 10%, men-at-arms at 5%), 26 ships; the Pope's manpower pool stood near 2,000",
     "Faenza": 358,
     "Siena": 373,
     "Magdeburg": 950,
@@ -58,8 +58,7 @@
    "access": "military access granted by France",
    "target": "Avignon, the papal enclave on the Rhône",
    "commander": "the Emperor Saʿd in person",
-   "context": "France had shown itself friendly since 1395; the Pope's own lands in Italy lie across the sea",
-   "papalArmy": "about 2,000 regulars (Trent)"
+   "context": "France had shown itself friendly since 1395; the Pope's own lands in Italy lie across the sea"
   },
   "source": "Trent's account, 4 July 1404"
  },
