@@ -26,5 +26,22 @@
    "yusuf": "living at the Aragonese court since his marriage (by January 1394); Trent counts the move a quirk of the game's marriages and is looking at moving him back"
   },
   "source": "Trent's account; save of 3 September 1398"
+ },
+ {
+  "id": "1398-09-03-yusuf-comes-home",
+  "date": "1398-09-03",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf",
+   "yusuf-ibn-saad",
+   "saad-ibn-yusuf-ibn-saad",
+   "caterina-de-borja"
+  ],
+  "title": "The Emperor calls his son Yūsuf and his grandson Saʿd home from Benabarre to the court at Ishbīliya, where the boy will be raised under his grandfather's eye. Caterina, heir of Aragon, stays at her brother's court",
+  "data": {
+   "how": "moved back with the Script Runner (move_country), undoing the game's move of a husband to his wife's court (Trent)",
+   "staysInAragon": "Caterina de Borja, heir to King Rodrigo, with child by Yūsuf"
+  },
+  "source": "Trent's account, September 1398"
  }
 ]
