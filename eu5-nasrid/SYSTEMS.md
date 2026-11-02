@@ -141,6 +141,7 @@ Each entry has a date, a type, references to the entities involved and source de
   2. *The War of the Aragonese Restoration* (1375–1378), against Castile and Portugal.
   3. *The War of the League* (1394–1395), against Castile and Portugal, named after the coalition sworn against the empire in 1393; it ended with *the Peace of Ramaḍān* (22 June 1395).
   More are expected. A new one gets both its number and its own name, recorded as `series` in `wars.json`; the war pages and the wars hall show the number under the name.
+- **The succession question (from 1398):** the law is cognatic primogeniture, which puts the crown prince's unfit eldest son Muḥammad next after him. The Emperor leaves it for now: if Ismāʿīl's son Saʿd develops well, it waits for Ismāʿīl's reign; if not, the Emperor will choose (Favored Son Succession costs 50 stability and 50 legitimacy). Watch the grandsons' traits and education in each save (Trent, September 1398).
 - **Deaths the court keeps quiet:** when the game gives a death the court would hide (a suicide, a murder), the chronicle tells the court's version (a hunting accident, a short illness), perhaps with a hint, and the event's data records the game's cause (Trent, December 1387).
 - **Battles:** every battle and siege goes in the war tables. Only those that move war score by **5 or more** get prose in the chronicle.
 - **Standing threads:**
