@@ -1,0 +1,25 @@
+[
+ {
+  "id": "1396-03-13-majrit-and-tulaytula",
+  "date": "1396-03-13",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "majrit",
+   "tulaytula"
+  ],
+  "title": "Majrīṭ and Ṭulayṭula: a rising town and a growing industry. On the flat plains of the Tagus and the Manzanares the crown is building another centre of Andalusī power in the heart of the peninsula: weaponsmiths at Ṭulayṭula, mines, wheat farms and lumber mills in the country between the two cities and up to the Guadarrama",
+  "data": {
+   "underConstruction": [
+    "weaponsmiths at Ṭulayṭula",
+    "a mine and a lumber mill toward the Guadarrama, by Colmenar (the game's Qelmnar) and Buitrago del Lozoya",
+    "wheat farms on the plain",
+    "further works between Toledo and Madrid (Trent's map screen shows seven building sites in progress)"
+   ],
+   "note": "Trent's map screen of 13 March 1396 uses the game's Arabic-style names Ṭlayṭla and Qelmnar; Madrid itself is the 'new rising town'"
+  },
+  "source": "Trent's account and map screen, 13 March 1396"
+ }
+]
