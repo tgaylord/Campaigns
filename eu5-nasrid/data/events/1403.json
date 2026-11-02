@@ -1,0 +1,68 @@
+[
+ {
+  "id": "1403-07-18-state",
+  "date": "1403-07-18",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf",
+   "saad-ibn-ismail-ibn-saad",
+   "saad-ibn-yusuf-ibn-saad",
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [
+   "ishbiliyya",
+   "istijja"
+  ],
+  "title": "The jewellers' charter at work: Ishbīliya's jewellers are being doubled, eight levels standing and nine more under construction, to seventeen; at Istija two stand and three more are building, to five. Three new levels of Ishbīliya's great market are going up beside them",
+  "data": {
+   "jewellers": {
+    "Ishbīliya": {
+     "now": 8,
+     "building": 9,
+     "target": 17
+    },
+    "Istija": {
+     "now": 2,
+     "building": 3,
+     "target": 5
+    }
+   },
+   "markets": {
+    "Ishbīliya marketplace": "level 14, 3 more under construction",
+    "Istija": "marketplace level 4, 1 more under construction; a hospital building"
+   },
+   "realm": {
+    "income": 199.1,
+    "expenses": 147.6,
+    "monthlyTradeBalance": 26.4,
+    "treasury": 32.1,
+    "stability": 21.7,
+    "population": 1826112
+   },
+   "estates": {
+    "umara (nobles)": {
+     "satisfaction": 0.384,
+     "estimatedPower": 23.3,
+     "gold": 1880
+    },
+    "burghers": {
+     "satisfaction": 0.554,
+     "estimatedPower": 9.9
+    },
+    "ulama": {
+     "satisfaction": 0.5
+    },
+    "dhimmi": {
+     "satisfaction": 0.5
+    }
+   },
+   "grandsons": {
+    "Muḥammad ibn Ismāʿīl (17)": "16/20/17; the childhood 'dull' trait has lapsed with age, no adult traits; married, two children",
+    "Saʿd ibn Ismāʿīl (11)": "56/35/36, intelligent, expensive in-depth education: developing well",
+    "Aḥmad ibn Ismāʿīl (9)": "30/43/19, ambitious",
+    "Saʿd ibn Yūsuf (9)": "26/24/37, gifted, now on a military education at the Emperor's court"
+   }
+  },
+  "source": "save of 18 July 1403; Trent's account"
+ }
+]
