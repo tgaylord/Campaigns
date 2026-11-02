@@ -23,7 +23,19 @@
     "Saʿd (b. 1394, by Caterina de Borja)": "child_gifted, 11/14/18, expensive in-depth education, at the Aragonese court"
    },
    "aragon": "King Rodrigo (b. 1381); heir his sister Caterina, Yūsuf's wife, who is with child; the boy's own place in the Aragonese succession is not shown in the save",
-   "yusuf": "living at the Aragonese court since his marriage (by January 1394); Trent counts the move a quirk of the game's marriages and is looking at moving him back"
+   "yusuf": "living at the Aragonese court since his marriage (by January 1394); Trent counts the move a quirk of the game's marriages and is looking at moving him back",
+   "succession": {
+    "law": "cognatic primogeniture (save of 3 September 1398)",
+    "line": [
+     "Ismāʿīl ibn Saʿd (the crown prince)",
+     "his son Muḥammad (b. 1385)",
+     "his son Saʿd (b. 1392)",
+     "his son Aḥmad (b. 1393)",
+     "Prince Yūsuf",
+     "Yūsuf's son Saʿd (b. 1394)"
+    ],
+    "note": "the line as primogeniture orders it, sons before daughters and the elder line first; the game's other heir selections include Favored Son Succession, in which the ruler names any of his sons regardless of age"
+   }
   },
   "source": "Trent's account; save of 3 September 1398"
  },
