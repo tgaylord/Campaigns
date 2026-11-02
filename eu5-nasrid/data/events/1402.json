@@ -210,5 +210,21 @@
    "context": "the nobles stood at about a third satisfied after the burghers' grants, the lowest of the estates"
   },
   "source": "Trent's account, 1402"
+ },
+ {
+  "id": "1402-08-jamaa-of-the-markets",
+  "date": "1402-08-03",
+  "type": "estate_change",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "The crown calls a Jamāʿa. The umarāʾ are given a ten-year monopoly on the land trade routes, the gift that brings them back to the table. In exchange for their support and their new privileges, the burghers invest heavily in building up the markets of southern Iberia",
+  "data": {
+   "assembly": "Jamāʿa of 1402",
+   "nobles": "10-year monopoly on land trade routes",
+   "burghers": "a very significant investment in the markets of southern Iberia, in exchange for their support and the privileges of coinage and urban grants",
+   "note": "the day is not yet known; dated with the burghers' privileges (Trent's account)"
+  },
+  "source": "Trent's account, 1402"
  }
 ]
