@@ -81,12 +81,27 @@
   "date": "1397-08-14",
   "type": "player_note",
   "people": [
-   "khayr-al-din-al-jayyani"
+   "muhammad-ibn-ismail",
+   "ismail-ibn-muhammad-al-abid"
   ],
-  "title": "The explorations go on: the empire's explorers round the coast of Africa and push on south",
+  "title": "The explorations go on as the empire's explorers round the coast of Africa and push south. Two of the Emperor's kin lead them: his brother-in-law Muḥammad al-Aḥmar charts the Canary Islands, and his cousin Ismāʿīl ibn Muḥammad al-ʿĀbid the seas of southern Macaronesia toward Cape Verde",
   "data": {
-   "note": "Trent's account; which explorers, and how far south, await a save or screen"
+   "explorations": {
+    "Canary Islands": {
+     "explorer": "Muḥammad ibn Ismāʿīl al-Aḥmar, 64 (51/70/60), explorer from 10 February 1396",
+     "from": "Ishbīliya",
+     "position": "off Aguere, Tenerife (1 June 1397)"
+    },
+    "southern Macaronesia (Cape Verde)": {
+     "explorer": "Ismāʿīl ibn Muḥammad al-ʿĀbid, 47 (40/36/66), explorer from 19 February 1396",
+     "from": "Coria del Río",
+     "position": "off Funchal, Madeira (1 June 1397)"
+    }
+   },
+   "alreadyKnown": "the north-west African coast and the seas of the Azores and Madeira",
+   "rivals": "Castile is exploring the Azores; another power is in the Madeira sea",
+   "note": "Khayr al-Dīn al-Jayyānī's voyage of 1391 and the Azores and Madeira expeditions of 1392 are no longer active in the save; their explorers' names are not recorded there"
   },
-  "source": "Trent's account, August 1397"
+  "source": "Trent's account, August 1397; autosave of 1 June 1397"
  }
 ]
