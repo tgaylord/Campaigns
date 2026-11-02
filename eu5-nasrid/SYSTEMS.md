@@ -145,7 +145,7 @@ Each entry has a date, a type, references to the entities involved and source de
 - **Deaths the court keeps quiet:** when the game gives a death the court would hide (a suicide, a murder), the chronicle tells the court's version (a hunting accident, a short illness), perhaps with a hint, and the event's data records the game's cause (Trent, December 1387).
 - **Battles:** every battle and siege goes in the war tables. Only those that move war score by **5 or more** get prose in the chronicle.
 - **Standing threads:**
-  - **The crown and the estates**, a running thread. Each swing in power or privilege is recorded and explained.
+  - **The crown and the estates**, a running thread. Each swing in power or privilege is recorded and explained. From 1402 the crown's aim is to break the power of the umarāʾ (the nobles) now that the state is built, softening the blows with gifts when their temper runs too low; the burghers are the rising estate (Trent, August 1402).
   - **The Strait**: the balance between Castile and Morocco.
   - **The rebuilding of the north** (Book IV, from February 1371): the sultan's investment in the lands won since the 1360s, the valley and the north shore, to rebuild their economy and bring them back to Islam and Andalusī culture, with Ishbīliya at its centre (Trent).
   - **Armies:** none at the start. Named-army tracking begins once Granada has a significant professional force, and that moment becomes part of the story of the Nasrid state. A destroyed army stays dead unless it's revived in-game.

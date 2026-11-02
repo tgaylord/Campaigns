@@ -196,5 +196,19 @@
    "note": "the satisfaction figures are the game's preview for a single grant; the day is taken as the survey's return"
   },
   "source": "Trent's account and screens, 1402"
+ },
+ {
+  "id": "1402-08-the-umara",
+  "date": "1402-08-03",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "The umarāʾ are given gifts to bring their temper back up after the burghers' privileges. But the court's long view has changed: now that the state is built, breaking the power of the umarāʾ is the easiest road to a stronger crown",
+  "data": {
+   "policy": "gifts to the nobles for now; in the long run, reduce the umarāʾ to grow the crown's power (Trent)",
+   "context": "the nobles stood at about a third satisfied after the burghers' grants, the lowest of the estates"
+  },
+  "source": "Trent's account, 1402"
  }
 ]
