@@ -434,5 +434,76 @@
    "note": "building levels counted from the saves of 2 December 1379 and 22 June 1395 (before the peace) over the same 118 towns; mines and the silver of Qusanṭīna are worked as the towns' raw materials, not buildings, and are not counted here"
   },
   "source": "saves of 2 December 1379 and 22 June 1395; Trent's account"
+ },
+ {
+  "id": "1395-07-diwan-al-insha",
+  "date": "1395-07-01",
+  "type": "reform",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "places": [
+   "ishbiliyya"
+  ],
+  "title": "The fourth and last office of the bureaucracy for now: the Dīwān al-Inshāʾ, the chancery that drafts the state's edicts, treaties and letters to foreign courts in the high style of the court. While the crown pays for it, its letters win friends abroad and the realm's subjects are drawn closer; left unpaid, it fumbles its correspondence and the ṭāʾifas resent it",
+  "data": {
+   "office": "Dīwān al-Inshāʾ (bureaucracy)",
+   "whenFunded": {
+    "diplomaticAnnexationEfficiency": "+20%",
+    "improveRelations": "+10%"
+   },
+   "always": {
+    "monthlyDiplomats": 0.1
+   },
+   "whenUnfunded": {
+    "subjectOpinions": -100,
+    "subjectIncome": "−25%"
+   },
+   "likedBy": {
+    "clergy": "+1%"
+   },
+   "dislikedBy": {
+    "nobility": "−1%"
+   },
+   "cost": "up to 9.85 a month",
+   "selectCost": 43.47,
+   "precedent": "a well-staffed chancery wins friends through eloquent and timely letters, while a neglected one fumbles its correspondence and the realm's standing among other courts suffers for it (the game's text)",
+   "bureaucracy": [
+    "Count of the Christians (1378)",
+    "Ḥijāba (by January 1387)",
+    "Ḥisba (August 1389)",
+    "Dīwān al-Inshāʾ (1395)"
+   ],
+   "date": "after the Peace of Ramaḍān (22 June 1395); the day is approximate until the next save",
+   "note": "the last office available in the current expansion of the bureaucracy (Trent)"
+  },
+  "source": "Trent's account and screenshot, summer 1395"
+ },
+ {
+  "id": "1395-07-the-embassies",
+  "date": "1395-07-01",
+  "type": "diplomacy",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "The diplomatic corps of al-Andalus now reaches across Europe: Paris, Naples, Istanbul and London all receive its ambassadors from time to time. France, unlike Castile, shows itself willing to be a friend, and there is talk at court of an alliance with the French, though it would drag the empire into France's losing war with the English",
+  "data": {
+   "embassies": [
+    "France (Paris)",
+    "Naples",
+    "the Ottomans (Istanbul)",
+    "England (London)"
+   ],
+   "relations": "the save of 22 June 1395 shows relations improved both ways with France, Naples, the Ottomans and England; Castile's antagonism toward al-Andalus from the peace demands stands near 758, with its opinion still marked by the declaration of war",
+   "franceAtWar": {
+    "war": "Boulogne's war of independence against France, from 22 May 1395",
+    "againstFrance": "Boulogne, England, Burgundy, Brittany, Flanders, Ireland, Wales and other lords",
+    "france": "rank 3, 54,400 men, 234 towns",
+    "england": "rank 5, 32,100 men, 202 towns",
+    "state": "France losing (Trent)"
+   },
+   "allianceQuestion": "under discussion at court; it would bring al-Andalus into the war against England (Trent)"
+  },
+  "source": "Trent's account, summer 1395; save of 22 June 1395"
  }
 ]
