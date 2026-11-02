@@ -42,5 +42,24 @@
    "peace": "the first war since the Peace of Ramaḍān in 1395, nearly nine years"
   },
   "source": "save of 3 February 1404; Trent's account and screen"
+ },
+ {
+  "id": "1404-07-04-march-on-avignon",
+  "date": "1404-07-04",
+  "type": "player_note",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "wars": [
+   "crusade-of-806"
+  ],
+  "title": "France grants al-Andalus military access, and on 4 July the armies of the faithful march through Languedoc on Avignon, the Pope's city on the Rhône. The Emperor, fifty-six, crosses the border at their head",
+  "data": {
+   "access": "military access granted by France",
+   "target": "Avignon, the papal enclave on the Rhône",
+   "commander": "the Emperor Saʿd in person",
+   "context": "France had shown itself friendly since 1395; the Pope's own lands in Italy lie across the sea"
+  },
+  "source": "Trent's account, 4 July 1404"
  }
 ]
