@@ -54,5 +54,28 @@
    }
   },
   "source": "save of 7 January 1405; Trent's account and map"
+ },
+ {
+  "id": "1405-03-02-death-of-the-emperor",
+  "date": "1405-03-02",
+  "type": "death",
+  "people": [
+   "saad-ibn-yusuf",
+   "ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [
+   "risings-of-807"
+  ],
+  "title": "The Emperor Saʿd is dead. On the eve of Ramaḍān, marching his army through Moya against the risers of the north, the conqueror of half the peninsula dies at fifty-seven, after forty-one years on the throne. A death answers many questions he still wished to ask; the question of the grandsons is no longer his",
+  "data": {
+   "age": 57,
+   "place": "on the march through Moya, in the Ṭāʾifa of Qūnka",
+   "reign": "1 August 1363 to 2 March 1405",
+   "gameNotice": "His strong character made our country a more honest place",
+   "successor": "by cognatic primogeniture, the crown prince Ismāʿīl ibn Saʿd, 38 (to be confirmed from the next save)",
+   "atTheTime": "the risings of 807 in full swing: Estremadura besieging al-Ushbūna, armies of 4,900 and 5,700 in the field; population 1,287,000 under direct rule"
+  },
+  "source": "Trent's account and the death notice, 2 March 1405"
  }
 ]
