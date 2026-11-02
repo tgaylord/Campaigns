@@ -150,5 +150,51 @@
    "spentOnAssayers": 83.61
   },
   "source": "Trent's screens of the Highland Prospecting Survey, 1402"
+ },
+ {
+  "id": "1402-08-burghers-privileges",
+  "date": "1402-08-03",
+  "type": "estate_change",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "title": "With the mines found, the burghers are given two privileges: control over the coinage, to cut and circulate good coin from the new silver and gold, and urban development grants, to raise the cities. The burghers are delighted; the umarāʾ, the ʿulamāʾ and the dhimmīs less so",
+  "data": {
+   "estate": "burghers",
+   "privileges": {
+    "Control over the Coinage": {
+     "effects": {
+      "politicalInfluenceGain": "−10%",
+      "copperOutput": "+5%",
+      "goldOutput": "+5%",
+      "silverOutput": "+5%",
+      "mintingThreshold": "+1%"
+     },
+     "burghersSatisfaction": "+5%",
+     "burghersPower": "+50%",
+     "cost": 18,
+     "text": "cutting and circulating new coins of adequate quality ... by taking control of the coinage, we will strengthen our economic foundations and consolidate our authority (the game's text)"
+    },
+    "Urban Development Grants": {
+     "effects": {
+      "monthlyDevelopment": 0.001,
+      "monthlyProgressToInnovative": 0.1
+     },
+     "burghersSatisfaction": "+5%",
+     "burghersPower": "+50%",
+     "cost": 18,
+     "text": "the future will dawn within city walls (the game's text)"
+    }
+   },
+   "satisfactionPerGrant": {
+    "burghers": "+15% (to 65%)",
+    "umara (nobles)": "−6.5% (to 33.6%)",
+    "ulama (clergy)": "−2.7% (to 47.3%)",
+    "commoners": "−0.5% (to 49.5%)",
+    "dhimmi": "−5.4% (to 44.7%)"
+   },
+   "note": "the satisfaction figures are the game's preview for a single grant; the day is taken as the survey's return"
+  },
+  "source": "Trent's account and screens, 1402"
  }
 ]
