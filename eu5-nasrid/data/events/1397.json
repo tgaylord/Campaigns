@@ -75,5 +75,18 @@
    "note": "names as the game shows them on Trent's construction list, which runs on beyond the screen; completion due 136 to 291 days after the order"
   },
   "source": "Trent's account, construction list and map screen, 14 August 1397"
+ },
+ {
+  "id": "1397-08-14-explorers-push-south",
+  "date": "1397-08-14",
+  "type": "player_note",
+  "people": [
+   "khayr-al-din-al-jayyani"
+  ],
+  "title": "The explorations go on: the empire's explorers round the coast of Africa and push on south",
+  "data": {
+   "note": "Trent's account; which explorers, and how far south, await a save or screen"
+  },
+  "source": "Trent's account, August 1397"
  }
 ]
