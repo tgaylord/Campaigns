@@ -1115,15 +1115,22 @@
    "admiral",
    "heir",
    "member of the dīwān",
-   "regent (1385–1386)"
+   "regent (1385–1386)",
+   "emperor and sultan of al-Andalus (from 1405)"
   ],
   "traits": [],
-  "note": "Son and heir of Sultan Saʿd, born to Duʿāʾ the Marīnid on 8 March 1366, a month before the Peace of Independence. At eight he was already a silver tongue (63 in diplomacy). In late 1374 he and his half-brother Yūsuf were both given the costly tutors their father had had; his mother Duʿā had wanted them for him alone (Trent's account). On 16 March 1375 he was betrothed to Bernarda of Murcia, the gifted heir of the Ṭāʾifa of Mursiyya, as Murcia was taken into the crown (Trent's account). From 23 August 1385 he ruled as regent while his father made the Hajj, with his mother Duʿā and Aiman quarrelling at court (Trent's account). Before that he had served as an admiral, to carry the crown's authority over the seas: his first command, from 17 June 1383 (save of 1 October 1387) until he joined the dīwān. In 1386 he was brought home, and on 22 January 1387 he took the seat in the dīwān created by the Ḥijāba, to help his father's scholar-building project (Trent's account). He had married Bernarda of Murcia by 1 October 1387. In May 1391 he took a second wife, ʿĀʾisha of the house of ʿOthmān. His sons: Yūsuf (1383–1384) and Muḥammad (born 25 October 1385) by Bernarda; Saʿd (born 17 June 1392) and Aḥmad (born 21 October 1393) by ʿĀʾisha (save of 2 January 1394). By 1398 his sons were Muḥammad, the eldest, judged unfit to rule; Saʿd, intelligent and studious; and Aḥmad, ambitious (Trent's account; save of 3 September 1398).",
+  "note": "Son and heir of Sultan Saʿd, born to Duʿāʾ the Marīnid on 8 March 1366, a month before the Peace of Independence. At eight he was already a silver tongue (63 in diplomacy). In late 1374 he and his half-brother Yūsuf were both given the costly tutors their father had had; his mother Duʿā had wanted them for him alone (Trent's account). On 16 March 1375 he was betrothed to Bernarda of Murcia, the gifted heir of the Ṭāʾifa of Mursiyya, as Murcia was taken into the crown (Trent's account). From 23 August 1385 he ruled as regent while his father made the Hajj, with his mother Duʿā and Aiman quarrelling at court (Trent's account). Before that he had served as an admiral, to carry the crown's authority over the seas: his first command, from 17 June 1383 (save of 1 October 1387) until he joined the dīwān. In 1386 he was brought home, and on 22 January 1387 he took the seat in the dīwān created by the Ḥijāba, to help his father's scholar-building project (Trent's account). He had married Bernarda of Murcia by 1 October 1387. In May 1391 he took a second wife, ʿĀʾisha of the house of ʿOthmān. His sons: Yūsuf (1383–1384) and Muḥammad (born 25 October 1385) by Bernarda; Saʿd (born 17 June 1392) and Aḥmad (born 21 October 1393) by ʿĀʾisha (save of 2 January 1394). By 1398 his sons were Muḥammad, the eldest, judged unfit to rule; Saʿd, intelligent and studious; and Aḥmad, ambitious (Trent's account; save of 3 September 1398). He became Emperor on 2 March 1405, at thirty-eight, when his father died on the march through Moya, and sixteen days later won his first battle as Emperor before Qūnka, destroying the army of the rebel Kingdom of Toledo (Trent's account and screens).",
   "stats": {
    "adm": 47,
    "dip": 100,
    "mil": 38
-  }
+  },
+  "reigns": [
+   {
+    "from": "1405-03-02",
+    "to": null
+   }
+  ]
  },
  {
   "id": "rodrigo-of-silves",

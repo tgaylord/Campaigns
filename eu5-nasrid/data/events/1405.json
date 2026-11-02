@@ -67,15 +67,87 @@
   "wars": [
    "risings-of-807"
   ],
-  "title": "The Emperor Saʿd is dead. On the eve of Ramaḍān, marching his army through Moya against the risers of the north, the conqueror of half the peninsula dies at fifty-seven, after forty-one years on the throne. A death answers many questions he still wished to ask; the question of the grandsons is no longer his",
+  "title": "The Emperor Saʿd is dead. On the eve of Ramaḍān, marching his army through Moya against the risers of the north, the conqueror of half the peninsula dies at fifty-seven, after forty-one years on the throne. A death answers many questions he still wished to ask; his son Ismāʿīl takes the throne, and the question of the grandsons is no longer his",
   "data": {
    "age": 57,
    "place": "on the march through Moya, in the Ṭāʾifa of Qūnka",
    "reign": "1 August 1363 to 2 March 1405",
    "gameNotice": "His strong character made our country a more honest place",
-   "successor": "by cognatic primogeniture, the crown prince Ismāʿīl ibn Saʿd, 38 (to be confirmed from the next save)",
+   "successor": "the crown prince Ismāʿīl ibn Saʿd, 38, as primogeniture requires; Trent's battle screen of 18 March shows him as Emperor",
    "atTheTime": "the risings of 807 in full swing: Estremadura besieging al-Ushbūna, armies of 4,900 and 5,700 in the field; population 1,287,000 under direct rule"
   },
   "source": "Trent's account and the death notice, 2 March 1405"
+ },
+ {
+  "id": "1405-03-18-battle-cuenca",
+  "date": "1405-03-18",
+  "type": "battle",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [
+   "qunka"
+  ],
+  "wars": [
+   "risings-of-807"
+  ],
+  "title": "The new Emperor's first battle. Sixteen days after his father's death, the so-called King of Toledo attacks Ismāʿīl's army before Qūnka with 5,085 men against 4,897. He loses 3,258 of them; the Emperor loses 300",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "al-Andalus": 4897
+   },
+   "oursTotal": 4897,
+   "oursLost": 300,
+   "theirs": {
+    "Kingdom of Toledo": 5085
+   },
+   "theirsTotal": 5085,
+   "theirsLost": 3258,
+   "location": "Cuenca",
+   "side": "Toledo attacking",
+   "warScore": 0,
+   "commanders": {
+    "al-Andalus": "the Emperor Ismāʿīl (46/100/37)",
+    "Toledo": "the rebel king of Toledo (62/23/64)"
+   },
+   "units": {
+    "ours": {
+     "heavyInfantry": [
+      1999,
+      38
+     ],
+     "lightCavalry": [
+      2399,
+      201
+     ],
+     "heavyCavalry": [
+      499,
+      61
+     ]
+    },
+    "theirs": {
+     "infantry": [
+      3705,
+      2065
+     ],
+     "heavyInfantry": [
+      1199,
+      1013
+     ],
+     "lightCavalry": [
+      128,
+      128
+     ],
+     "heavyCavalry": [
+      53,
+      53
+     ]
+    }
+   },
+   "note": "rebellion battles carry no war score in the game"
+  },
+  "source": "Trent's battle screens, 18 March 1405"
  }
 ]
