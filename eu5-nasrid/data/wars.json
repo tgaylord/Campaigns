@@ -622,7 +622,7 @@
   "name": "The Crusade of 806",
   "gameName": "The 1st Crusade against Andalusia",
   "start": "1404-02-01",
-  "end": null,
+  "end": "1404-10-22",
   "goal": "A crusade proclaimed by the Pope against al-Andalus, declared on the Ṭāʾifa of Aragon (cb_crusade)",
   "allies": [
    "Aragon",
@@ -643,8 +643,8 @@
    "Mainz"
   ],
   "involvement": "belligerent",
-  "note": "On 1 February 1404 (19 Rajab 806) the Pope proclaimed the first crusade against al-Andalus and declared war on its subject, the Ṭāʾifa of Aragon; al-Andalus came in to defend it. With the Pope stood his vassals Faenza and Siena and a few princes of the Empire, Magdeburg, Cologne and Mainz among them: some 5,100 men under arms at the declaration, most of them levies, and 26 papal ships, the Pope's own regiments far under strength. With al-Andalus stood all six ṭāʾifas, the Mamlūks and their vassals (Mecca, Medina, the Dulkadirids, Barqa, Suakin and others) and Morocco with Tafilalt, Touat and Tlemcen. Al-Andalus had 4,900 regulars and 32 ships; the Mamlūks 4,050 men, Morocco 2,400 and 30 ships (save of 3 February 1404). The game ranked al-Andalus fourth among the powers.",
-  "outcome": null,
+  "note": "On 1 February 1404 (19 Rajab 806) the Pope proclaimed the first crusade against al-Andalus and declared war on its subject, the Ṭāʾifa of Aragon; al-Andalus came in to defend it. With the Pope stood his vassals Faenza and Siena and a few princes of the Empire, Magdeburg, Cologne and Mainz among them: some 5,100 men under arms at the declaration, most of them levies, and 26 papal ships, the Pope's own regiments far under strength. With al-Andalus stood all six ṭāʾifas, the Mamlūks and their vassals (Mecca, Medina, the Dulkadirids, Barqa, Suakin and others) and Morocco with Tafilalt, Touat and Tlemcen. Al-Andalus had 4,900 regulars and 32 ships; the Mamlūks 4,050 men, Morocco 2,400 and 30 ships (save of 3 February 1404). The game ranked al-Andalus fourth among the powers. The papal fleet sank two Catalan ships in the first week, but the Moroccan and Catalan fleets swept it from the sea by August. On land the crusaders achieved nothing: Siena's contingent died at Aix in May. With French military access the Emperor marched on Avignon from 4 July and took the Pope's city. At Barjols in Provence the papal army beat off the Valencians on 10 October, and on the 20th the Emperor destroyed it. On 22 October 1404 (16 Rabīʿ al-Thānī 807) the Pope made peace.",
+  "outcome": "Victory. The Pope was humiliated, paid 585 in gold and owes war reparations; no land changed hands (the Peace of Avignon, 22 October 1404).",
   "score": [
    {
     "date": "1404-02-01",

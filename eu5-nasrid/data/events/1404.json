@@ -44,6 +44,117 @@
   "source": "save of 3 February 1404; Trent's account and screen"
  },
  {
+  "id": "1404-02-09-battle-gulf-of-roses",
+  "date": "1404-02-09",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "crusade-of-806"
+  ],
+  "title": "Eight days into the crusade the papal fleet, seven sail, catches two Catalan ships in the Gulf of Roses and sinks both",
+  "data": {
+   "result": "allied defeat",
+   "naval": true,
+   "ours": {
+    "Catalonia": 2
+   },
+   "oursTotal": 2,
+   "oursLost": 2,
+   "theirs": {
+    "Papal States": 7
+   },
+   "theirsTotal": 7,
+   "theirsLost": 0,
+   "location": "the Gulf of Roses",
+   "side": "Papal States attacking",
+   "units": "ships"
+  },
+  "source": "save of 22 October 1404 (the war's battle list)"
+ },
+ {
+  "id": "1404-05-10-battle-aix",
+  "date": "1404-05-10",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "crusade-of-806"
+  ],
+  "title": "At Aix-en-Provence 373 Sienese crusaders attack the Catalan army of 4,800 and are wiped out without a Catalan loss",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Catalonia": 4812
+   },
+   "oursTotal": 4812,
+   "oursLost": 0,
+   "theirs": {
+    "Siena": 373
+   },
+   "theirsTotal": 373,
+   "theirsLost": 373,
+   "location": "Aix-en-Provence",
+   "side": "Siena attacking"
+  },
+  "source": "save of 22 October 1404 (the war's battle list)"
+ },
+ {
+  "id": "1404-06-04-battle-mouths-rhone",
+  "date": "1404-06-04",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "crusade-of-806"
+  ],
+  "title": "At the mouths of the Rhône the papal fleet of seven fights the Algarve's seven to a draw, and the Algarve loses one ship",
+  "data": {
+   "result": "allied defeat",
+   "naval": true,
+   "ours": {
+    "Taifa of the Algarve": 7
+   },
+   "oursTotal": 7,
+   "oursLost": 1,
+   "theirs": {
+    "Papal States": 7
+   },
+   "theirsTotal": 7,
+   "theirsLost": 0,
+   "location": "the mouths of the Rhône",
+   "side": "Papal States attacking",
+   "units": "ships"
+  },
+  "source": "save of 22 October 1404 (the war's battle list)"
+ },
+ {
+  "id": "1404-06-24-battle-mouths-rhone-ii",
+  "date": "1404-06-24",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "crusade-of-806"
+  ],
+  "title": "The joined fleets of Catalonia and Morocco, ninety-one sail, find a lone papal ship at the mouths of the Rhône and sink it",
+  "data": {
+   "result": "allied victory",
+   "naval": true,
+   "ours": {
+    "Catalonia and Morocco": 91
+   },
+   "oursTotal": 91,
+   "oursLost": 0,
+   "theirs": {
+    "Papal States": 1
+   },
+   "theirsTotal": 1,
+   "theirsLost": 1,
+   "location": "the mouths of the Rhône",
+   "side": "Catalonia attacking",
+   "units": "ships"
+  },
+  "source": "save of 22 October 1404 (the war's battle list)"
+ },
+ {
   "id": "1404-07-04-march-on-avignon",
   "date": "1404-07-04",
   "type": "player_note",
@@ -61,6 +172,90 @@
    "context": "France had shown itself friendly since 1395; the Pope's own lands in Italy lie across the sea"
   },
   "source": "Trent's account, 4 July 1404"
+ },
+ {
+  "id": "1404-08-03-battle-gulf-florent",
+  "date": "1404-08-03",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "crusade-of-806"
+  ],
+  "title": "In the Gulf of Saint-Florent off Corsica the Moroccan fleet, sixty-five sail under Abū Ḥammū, sinks a papal squadron of five to the last ship",
+  "data": {
+   "result": "allied victory",
+   "naval": true,
+   "ours": {
+    "Morocco": 65
+   },
+   "oursTotal": 65,
+   "oursLost": 0,
+   "theirs": {
+    "Papal States": 5
+   },
+   "theirsTotal": 5,
+   "theirsLost": 5,
+   "location": "the Gulf of Saint-Florent, Corsica",
+   "side": "Morocco attacking",
+   "units": "ships"
+  },
+  "source": "save of 22 October 1404 (the war's battle list)"
+ },
+ {
+  "id": "1404-08-09-battle-mouths-rhone-iii",
+  "date": "1404-08-09",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "crusade-of-806"
+  ],
+  "title": "At the mouths of the Rhône the Catalan fleet of twenty-six attacks the last three papal ships and is beaten off, losing four",
+  "data": {
+   "result": "allied defeat",
+   "naval": true,
+   "ours": {
+    "Catalonia": 26
+   },
+   "oursTotal": 26,
+   "oursLost": 4,
+   "theirs": {
+    "Papal States": 3
+   },
+   "theirsTotal": 3,
+   "theirsLost": 0,
+   "location": "the mouths of the Rhône",
+   "side": "Catalonia attacking",
+   "units": "ships"
+  },
+  "source": "save of 22 October 1404 (the war's battle list)"
+ },
+ {
+  "id": "1404-08-24-battle-gulf-talamone",
+  "date": "1404-08-24",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "crusade-of-806"
+  ],
+  "title": "In the gulf of Talamone the papal remnant of three attacks sixteen ships of Barqa and Noto and is driven off; each side loses one",
+  "data": {
+   "result": "allied victory",
+   "naval": true,
+   "ours": {
+    "Barqa and Noto": 16
+   },
+   "oursTotal": 16,
+   "oursLost": 1,
+   "theirs": {
+    "Papal States": 3
+   },
+   "theirsTotal": 3,
+   "theirsLost": 1,
+   "location": "the gulf of Talamone, Tuscany",
+   "side": "Papal States attacking",
+   "units": "ships"
+  },
+  "source": "save of 22 October 1404 (the war's battle list)"
  },
  {
   "id": "1404-10-01-the-sephardim-of-al-mariyya",
@@ -87,5 +282,122 @@
    "context": "the convivencia proclaimed with the Restoration of al-Andalus in 1375; some 123,000 Jews in the realm in 1395. At the time the Emperor was besieging Avignon, and the crusade's war score stood at +40%"
   },
   "source": "Trent's screen, 1 October 1404"
+ },
+ {
+  "id": "1404-10-10-battle-barjols",
+  "date": "1404-10-10",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "crusade-of-806"
+  ],
+  "title": "At Barjols in Provence the Valencian army of 2,700 attacks a papal army of 1,300 and is thrown back, losing 1,295 for 784",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Valencia": 2680
+   },
+   "oursTotal": 2680,
+   "oursLost": 1295,
+   "theirs": {
+    "Papal States": 1302
+   },
+   "theirsTotal": 1302,
+   "theirsLost": 784,
+   "location": "Barjols, Provence",
+   "side": "Valencia attacking"
+  },
+  "source": "save of 22 October 1404 (the war's battle list)"
+ },
+ {
+  "id": "1404-10-20-battle-barjols-ii",
+  "date": "1404-10-20",
+  "type": "battle",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "wars": [
+   "crusade-of-806"
+  ],
+  "title": "Ten days later the Emperor himself comes up with 4,900 and destroys what is left of the papal army at Barjols, 495 of its 519 men, for the loss of four",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "al-Andalus": 4900
+   },
+   "oursTotal": 4900,
+   "oursLost": 4,
+   "theirs": {
+    "Papal States": 519
+   },
+   "theirsTotal": 519,
+   "theirsLost": 495,
+   "location": "Barjols, Provence",
+   "side": "al-Andalus attacking",
+   "commanders": {
+    "al-Andalus": "the Emperor Saʿd"
+   }
+  },
+  "source": "save of 22 October 1404 (the war's battle list)"
+ },
+ {
+  "id": "1404-avignon-taken",
+  "date": "1404-10-22",
+  "type": "siege",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "wars": [
+   "crusade-of-806"
+  ],
+  "title": "Avignon, the Pope's city on the Rhône, is in the Emperor's hands: the save of 22 October shows it controlled by al-Andalus",
+  "data": {
+   "result": "taken",
+   "location": "Avignon",
+   "note": "the day of the fall is not in the save"
+  },
+  "source": "save of 22 October 1404"
+ },
+ {
+  "id": "1404-10-22-peace-of-avignon",
+  "date": "1404-10-22",
+  "type": "peace",
+  "people": [
+   "saad-ibn-yusuf"
+  ],
+  "wars": [
+   "crusade-of-806"
+  ],
+  "title": "The Peace of Avignon. With his army destroyed at Barjols and his city in the Emperor's hands, the Pope gives up his crusade. He is humiliated before Christendom, pays 585 in gold at once and war reparations after. No land changes hands",
+  "data": {
+   "with": [
+    "PAP"
+   ],
+   "terms": {
+    "humiliate the Papal States": "35.34 war score",
+    "war reparations to al-Andalus": "10 war score",
+    "gold": 585.09
+   },
+   "warScoreAtLastReading": "+40% on 1 October 1404",
+   "battleDead": {
+    "ourSide": "1,299 men in the land battles (1,295 of them Valencians at Barjols), and 8 ships",
+    "theirSide": "1,652 men in the land battles, and 7 ships",
+    "note": "from the save's battle list"
+   },
+   "alsoInTheSave": {
+    "casusBelli": "since 2 May 1404 the court has been preparing a new claim, the Reconquest of Iberia, against Castile",
+    "france": "France grants food access as well as military access (from 5 August 1404)"
+   },
+   "realm": {
+    "rank": 6,
+    "treasuryBefore": 45,
+    "income": 208.7,
+    "expenses": 178.4,
+    "stability": 22.4
+   }
+  },
+  "source": "Trent's account and peace screen; save of 22 October 1404"
  }
 ]
