@@ -1,0 +1,58 @@
+[
+ {
+  "id": "1405-01-01-the-risings",
+  "date": "1405-01-01",
+  "type": "war_joined",
+  "people": [
+   "saad-ibn-yusuf",
+   "saad-ibn-ismail"
+  ],
+  "wars": [
+   "risings-of-807"
+  ],
+  "title": "The north rises. Perhaps this was what the Pope had counted on. On New Year's Day 1405 the Portuguese lands proclaim a Kingdom of Estremadura and La Mancha and the Madrid country rise again as a Kingdom of Toledo; the next day the Leonese of Shalamanka rise against their Naṣrid ṭāʾifa as Ciudad Rodrigo. Forty-eight towns of the crown and sixteen of Shalamanka go over; Toledo, Lisbon and Setúbal hold",
+  "data": {
+   "rebels": {
+    "Kingdom of Toledo (TOL)": {
+     "towns": 30,
+     "population": 294300,
+     "men": "5,086 (1,292 regulars)",
+     "towns list": "Madrid, Alcalá de Henares, El Escorial, Colmenar, Maqueda, Chinchón, Ocaña, Uclés, Consuegra, Alcázar de San Juan, Tomelloso, Villarrobledo, Ciudad Real, Almodóvar del Campo, Puertollano, Calatrava, Malagón, Manzanares, Montiel, Villapalacios, Alhambra, Alcaraz, Lezuza, Albacete, Chinchilla, Hellín, Jumilla, Caravaca, Mula, Segura de la Sierra"
+    },
+    "Estremadura (ABA55)": {
+     "towns": 18,
+     "population": 253600,
+     "men": "2,889 (149 regulars), 1 ship",
+     "towns list": "Santarém, Torres Vedras, Torres Novas, Tomar, Alcobaça, Salvaterra, Alcácer do Sal, Évora, Montemor, Avis, Mora, Ponte de Sor, Crato, Portalegre, Elvas, Estremoz, Vila Viçosa, Portel"
+    },
+    "Ciudad Rodrigo (ABA58)": {
+     "towns": 16,
+     "from": "the Ṭāʾifa of Shalamanka",
+     "men": "3,070 levies",
+     "towns list": "Salamanca, Ávila, Ciudad Rodrigo, Ledesma, Alba de Tormes, Plasencia, Coria, Galisteo, Granadilla, La Adrada, Las Navas, Matilla de Caños, Oropesa, San Felices, Villatoro, Yecla de Yeltes"
+    }
+   },
+   "loyal": "Toledo, Lisbon, Setúbal, Cáceres, Badajoz, Mérida, Talavera",
+   "realm": {
+    "towns": [
+     148,
+     100
+    ],
+    "population": [
+     1840625,
+     1294574
+    ],
+    "treasury": 218,
+    "income": 242.4,
+    "expenses": 156.9,
+    "stability": 22.5,
+    "manpower": 666
+   },
+   "forces": {
+    "al-Andalus": "3,394 regulars, 32 ships",
+    "ṭāʾifas": "Catalonia 307, Valencia 450, Algarve 500"
+   }
+  },
+  "source": "save of 7 January 1405; Trent's account and map"
+ }
+]

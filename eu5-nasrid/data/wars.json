@@ -655,5 +655,35 @@
     "value": 40
    }
   ]
+ },
+ {
+  "id": "risings-of-807",
+  "name": "The Risings of 807",
+  "gameName": "1st Rebellion Against Andalusia; 1st Rebellion Against Salamanca",
+  "start": "1405-01-01",
+  "end": null,
+  "goal": "Three wars of independence against al-Andalus and the Ṭāʾifa of Shalamanka (cb_independence_war)",
+  "allies": [
+   "Aragon",
+   "Catalonia",
+   "Valencia",
+   "Taifa of the Algarve",
+   "Taifa of Salamanca",
+   "Taifa of Cuenca"
+  ],
+  "enemies": [
+   "Kingdom of Toledo",
+   "Estremadura",
+   "Ciudad Rodrigo"
+  ],
+  "involvement": "belligerent",
+  "note": "Ten weeks after the Peace of Avignon the conquered north rose. On 1 January 1405 (28 Jumādā al-Ākhira 807) the Portuguese lands proclaimed a Kingdom of Estremadura, 18 towns from Santarém and Torres Vedras to Évora and Elvas, and the Castilians of La Mancha and the Madrid country rose again as a Kingdom of Toledo, 30 towns from Madrid, Alcalá and El Escorial through Ciudad Real and Ocaña to Albacete, Hellín and Caravaca; Toledo itself, Lisbon and Setúbal stayed loyal. On 2 January the Leonese of the Ṭāʾifa of Shalamanka rose as Ciudad Rodrigo, taking 16 of its 21 towns, Salamanca, Ávila and Plasencia among them. Al-Andalus held 100 towns of its 148, and 1,295,000 of its 1,841,000 people. The rebels had some 11,000 men, nearly all levies: Toledo 5,100, Ciudad Rodrigo 3,100, Estremadura 2,900; al-Andalus 3,400 regulars and the ṭāʾifas 1,250 (save of 7 January 1405). Estremadura laid siege to al-Ushbūna.",
+  "outcome": null,
+  "score": [
+   {
+    "date": "1405-01-01",
+    "value": 0
+   }
+  ]
  }
 ]

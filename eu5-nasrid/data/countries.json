@@ -247,5 +247,19 @@
   "nameChronicle": "the Ṭāʾifa of Qūnka",
   "nameArabic": "طائفة قونكة",
   "color": "#5b8fb0"
+ },
+ {
+  "tag": "ABA55",
+  "name": "Estremadura",
+  "nameChronicle": "the so-called Kingdom of Estremadura",
+  "nameArabic": "إشترمادورة",
+  "color": "#87b87e"
+ },
+ {
+  "tag": "ABA58",
+  "name": "Ciudad Rodrigo",
+  "nameChronicle": "the rebels of Madīnat Rudrīq",
+  "nameArabic": "مدينة رذريق",
+  "color": "#7cbb5b"
  }
 ]
