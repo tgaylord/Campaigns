@@ -1,0 +1,58 @@
+[
+ {
+  "id": "1419-04-01-the-letter-from-denia",
+  "date": "1419-04-01",
+  "type": "reform",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [
+   "daniya"
+  ],
+  "wars": [],
+  "title": "The Letter from Denia. The old epistle of Ibn Gharsiya, a Basque Christian taken as a child and raised a Muslim at the court of Denia, passes from hand to hand among the secretaries: the Arabs, he wrote, are masters at describing camels, and philosophy, astronomy and the measuring of the earth belong to the peoples they conquered. The court answers that a man is what he knows",
+  "data": {
+   "event": "The Letter from Denia",
+   "text": "the quarrel is an old one in al-Andalus: Berbers carried the conquest, Slavs commanded the palace guard and the sons of converted natives filled the chanceries, yet the old Arab families still count a man's descent before they count his learning; a realm that means to hold the whole peninsula cannot afford the habit (the game's text)",
+   "choice": "A man is what he knows (the only option shown)",
+   "effects": {
+    "modifier": "Scholars of Every Nation, 15 years: cultures capacity +1, monthly research progress +10%, monthly literacy +0.01%"
+   },
+   "advances": {
+    "Equals of the Arabs": "accepted culture maintenance −10%, cultures capacity +1, tolerance of heretical beliefs +1: Ibn Gharsiya wrote in the 1050s that the peoples the Arabs had conquered were their equals, and their betters in learning; Berbers, Slavs and the converted natives of the peninsula hold office beside the old Arab families (the game's text)",
+    "Vibrant Court": "cultures capacity +1: great minds flock to our court from across the known world (the game's text)"
+   },
+   "diwan": [
+    "integrating Trujillo",
+    "integrating Ocaña",
+    "integrating Cáceres",
+    "appeasing the estates",
+    "stabilizing the country"
+   ],
+   "realm": {
+    "population": "2.199 million"
+   }
+  },
+  "source": "Trent's screenshots, 1 April 1419"
+ },
+ {
+  "id": "1419-04-the-catalans-and-valencia",
+  "date": "1419-04-02",
+  "type": "player_note",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [
+   "balansiyya"
+  ],
+  "wars": [],
+  "title": "The integration of the Ṭāʾifa of Balansiyya into the crown is nearly complete, and the court prepares to accept the Catalans on the same standing as the Portuguese. The Castilians are left out, ignored at best",
+  "data": {
+   "accepted": "Portuguese (by 1416); Catalan to follow (Trent)",
+   "tolerated": "Sephardi",
+   "castilians": "not to be accepted (Trent)",
+   "valencia": "annexation of the ṭāʾifa nearly complete (Trent)"
+  },
+  "source": "Trent's account, April 1419"
+ }
+]
