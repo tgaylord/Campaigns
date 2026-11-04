@@ -1081,7 +1081,7 @@
    "child_intelligent"
   ],
   "died": "1419-08-29",
-  "note": "She died on 29 August 1419, at fifty-nine, the last child of Yūsuf I (save of 11 August 1420)."
+  "note": "She died on 29 August 1419, at fifty-nine (save of 11 August 1420)."
  },
  {
   "id": "umm-al-fath-bint-yusuf",
@@ -1095,7 +1095,9 @@
   "mother": "tizemt-hafsid",
   "female": true,
   "roles": [],
-  "traits": []
+  "traits": [],
+  "died": "1422-04-18",
+  "note": "She died of dysentery on 18 April 1422, at fifty-nine, the last of Yūsuf I's children (save of 5 November 1423)."
  },
  {
   "id": "murad",
@@ -1555,8 +1557,11 @@
   "roles": [
    "ruler of the Ṭāʾifa of Banbalūna"
   ],
-  "traits": [],
-  "note": "Son of Ismāʿīl ibn Yūsuf and Hippolyte of Villa di Chiesa, born 19 February 1372 (save of 16 January 1373). A cousin of the Emperor Ismāʿīl. On 1 November 1411 he was made ruler of the new Ṭāʾifa of Banbalūna, 18 towns of Navarre and the upper Duero, from Pamplona and Tudela to Soria and Medinaceli (save of 1 November 1411). On 1 November 1411 he became ruler of Banbalūna; his son Aḥmad sits in the dīwān. His wives bore him Fāṭima (8 June 1419) and Muḥammad (18 November 1419) (save of 11 August 1420).",
+  "traits": [
+   "industrious",
+   "intricate_web_weaver"
+  ],
+  "note": "Son of Ismāʿīl ibn Yūsuf and Hippolyte of Villa di Chiesa, born 19 February 1372 (save of 16 January 1373). A cousin of the Emperor Ismāʿīl. On 1 November 1411 he was made ruler of the new Ṭāʾifa of Banbalūna, 18 towns of Navarre and the upper Duero, from Pamplona and Tudela to Soria and Medinaceli (save of 1 November 1411). On 1 November 1411 he became ruler of Banbalūna; his son Aḥmad sits in the dīwān. His wives bore him Fāṭima (8 June 1419) and Muḥammad (18 November 1419) (save of 11 August 1420). By 1423 the game marks him industrious and an intricate web-weaver (save of 5 November 1423).",
   "stats": {
    "adm": 56,
    "dip": 30,
@@ -1803,7 +1808,8 @@
    "stubborn",
    "drunkard"
   ],
-  "note": "Son of King Fernando, king of Castile from his father's death on 6 January 1394, two months before the Emperor's declaration. He lost the War of the League and on 22 June 1395 surrendered 51 towns, Madrid, Salamanca, Ávila and Cuenca among them, with reparations for ten years (saves of 4 March 1394 and 22 June 1395). In June 1410, at thirty-nine, still king, stubborn and a drunkard, he faced the Emperor Ismāʿīl's declaration of the fourth war of the Istirdād with 1,650 men under arms; his heir is his son Fernando, eighteen (save of 29 June 1410). He capitulated on 2 September 1411, and at the peace of 1 November 1411 gave up 63 towns, Valladolid, Burgos, León and Navarre among them, keeping 45 in the north with his capital at Oviedo (saves of 1 November 1411). On 4 September 1420 his kingdom fell apart into the petty kingdoms of Galicia, Asturias and Navarre, and he kept only four towns on the Cantabrian coast, ruling from Santander (save of 4 September 1420)."
+  "note": "Son of King Fernando, king of Castile from his father's death on 6 January 1394, two months before the Emperor's declaration. He lost the War of the League and on 22 June 1395 surrendered 51 towns, Madrid, Salamanca, Ávila and Cuenca among them, with reparations for ten years (saves of 4 March 1394 and 22 June 1395). In June 1410, at thirty-nine, still king, stubborn and a drunkard, he faced the Emperor Ismāʿīl's declaration of the fourth war of the Istirdād with 1,650 men under arms; his heir is his son Fernando, eighteen (save of 29 June 1410). He capitulated on 2 September 1411, and at the peace of 1 November 1411 gave up 63 towns, Valladolid, Burgos, León and Navarre among them, keeping 45 in the north with his capital at Oviedo (saves of 1 November 1411). On 4 September 1420 his kingdom fell apart into the petty kingdoms of Galicia, Asturias and Navarre, and he kept only four towns on the Cantabrian coast, ruling from Santander (save of 4 September 1420). He died at Santander on 14 October 1422, at fifty-one, from a fall down a flight of stairs; his son Fernando succeeded him (save of 5 November 1423).",
+  "died": "1422-10-14"
  },
  {
   "id": "agustin-arce",
@@ -2031,7 +2037,7 @@
    "mil": 63
   },
   "traits": [],
-  "note": "Eldest son of the heir Muḥammad, by Magdalena de Borja; born 4 October 1402, the Emperor's grandson and great-grandson of the Emperor Saʿd. Gifted, and with his half-brother Aḥmad enough at five to set aside the thought of changing the succession (Trent's account; save of 5 August 1408, taken before the boys' educations were set). Grown, by August 1420, into a man of 70/73/63; the childhood gift has lapsed with no adult trait yet in its place (save of 11 August 1420)."
+  "note": "Eldest son of the heir Muḥammad, by Magdalena de Borja; born 4 October 1402, the Emperor's grandson and great-grandson of the Emperor Saʿd. Gifted, and with his half-brother Aḥmad enough at five to set aside the thought of changing the succession (Trent's account; save of 5 August 1408, taken before the boys' educations were set). Grown, by August 1420, into a man of 70/73/63; the childhood gift has lapsed with no adult trait yet in its place (save of 11 August 1420). By 1422 he had married three princesses of the Muslim empires: Tella of Fās, daughter of Abū Ḥammū and sister of the sultan Yaḥyā; Ayaulym, daughter of the Mamlūk sultan Aqṭāy; and Khadīja, daughter of the Ottoman sultan Aḥmad. Children: Yūsuf (6 January 1422) by Tella, ʿĀʾisha (24 January 1422) by Khadīja, Jadīla (29 June 1422) by Ayaulym, Muʾmina (8 August 1424) by Tella (saves of 1423 and 1424)."
  },
  {
   "id": "ahmad-ibn-muhammad-ibn-ismail",
@@ -2050,7 +2056,7 @@
    "mil": 70
   },
   "traits": [],
-  "note": "Second son of the heir Muḥammad, by Isabel de Montsoriu; born 10 June 1403. Gifted, like his elder half-brother Ismāʿīl (save of 5 August 1408). Grown, by August 1420, into a man of 75/79/70; the childhood gift has lapsed with no adult trait yet in its place (save of 11 August 1420)."
+  "note": "Second son of the heir Muḥammad, by Isabel de Montsoriu; born 10 June 1403. Gifted, like his elder half-brother Ismāʿīl (save of 5 August 1408). Grown, by August 1420, into a man of 75/79/70; the childhood gift has lapsed with no adult trait yet in its place (save of 11 August 1420). By 1423 he had married Dīma, daughter of Abū Ḥammū of the Ḥafṣids of Tūnis; Muʾmina, daughter of Aḥmad of Burtuqāl; and ʿĀʾisha bint Saʿd. Children: Saʿd (29 April 1423) by Muʾmina, Muʾmina (14 June 1423) by ʿĀʾisha, Ismāʿīl (1 August 1424) by Dīma (saves of 1423 and 1424)."
  },
  {
   "id": "magdalena-de-borja",
@@ -2132,15 +2138,19 @@
   "born": "1377-09-15",
   "father": "ismail-ibn-yusuf",
   "roles": [
-   "ruler of the Ṭāʾifa of Burtuqāl"
+   "ruler of the Ṭāʾifa of Burtuqāl",
+   "king of Portugal (from 1421), the Emperor's ṭāʾifa"
   ],
   "stats": {
    "adm": 58,
    "dip": 41,
    "mil": 72
   },
-  "traits": [],
-  "note": "Son of Ismāʿīl ibn Yūsuf, the old Emperor's brother: a cousin of the Emperor Ismāʿīl. Married to a daughter of Maryam bint Yūsuf and to a daughter of Khālid ibn Yaḥyā Raḥḥū. On 1 November 1411 he was made ruler of the new Ṭāʾifa of Burtuqāl, the 34 towns of the old Kingdom of Portugal, with his seat at Barcelos (save of 1 November 1411)."
+  "traits": [
+   "just",
+   "zealot"
+  ],
+  "note": "Son of Ismāʿīl ibn Yūsuf, the old Emperor's brother: a cousin of the Emperor Ismāʿīl. Married to a daughter of Maryam bint Yūsuf and to a daughter of Khālid ibn Yaḥyā Raḥḥū. On 1 November 1411 he was made ruler of the new Ṭāʾifa of Burtuqāl, the 34 towns of the old Kingdom of Portugal, with his seat at Barcelos (save of 1 November 1411). On 4 November 1421 he proclaimed his ṭāʾifa the Kingdom of Portugal and took the crown of the old kings, still the Emperor's ṭāʾifa; the new kingdom's state faith is Catholic, though he is a Muslim. By 1423 the game also marks him a zealot (save of 5 November 1423)."
  },
  {
   "id": "ahmad-ibn-ismail-ibn-saad",
@@ -2160,8 +2170,10 @@
    "dip": 64,
    "mil": 35
   },
-  "traits": [],
-  "note": "Third son of the Emperor Ismāʿīl, by the Ottoman princess ʿĀʾisha; born 21 October 1393, ambitious as a child. Married to his cousin Muʾmina, Prince Yūsuf's daughter. On 1 November 1411, at eighteen, he was made ruler of the new Ṭāʾifa of Liyūn, 17 towns of the Leonese country from León and Astorga to Zamora and Toro (save of 1 November 1411)."
+  "traits": [
+   "architectural_visionary"
+  ],
+  "note": "Third son of the Emperor Ismāʿīl, by the Ottoman princess ʿĀʾisha; born 21 October 1393, ambitious as a child. Married to his cousin Muʾmina, Prince Yūsuf's daughter. On 1 November 1411, at eighteen, he was made ruler of the new Ṭāʾifa of Liyūn, 17 towns of the Leonese country from León and Astorga to Zamora and Toro (save of 1 November 1411). By 1423 the game also marks him an architectural visionary (save of 5 November 1423)."
  },
  {
   "id": "jadila-bint-saad-ibn-faraj",
@@ -2274,7 +2286,7 @@
   "traits": [
    "zealot"
   ],
-  "note": "Son of the Ottoman sultan Muḥammad and brother of ʿĀʾisha, the Emperor Ismāʿīl's wife. Sultan from his father's death of old age on 1 October 1412. A zealot of little ability (17/14/20), but his peace of April 1417 took Sivas and the lands of Eretna, Amasya and the Dobruja; in 1420 his realm held 294 towns and 82 ships, sixth in the world. His heir is his son Murād, born 7 November 1393, a far better diplomat (world file of 11 August 1420)."
+  "note": "Son of the Ottoman sultan Muḥammad and brother of ʿĀʾisha, the Emperor Ismāʿīl's wife. Sultan from his father's death of old age on 1 October 1412. A zealot of little ability (17/14/20), but his peace of April 1417 took Sivas and the lands of Eretna, Amasya and the Dobruja; in 1420 his realm held 294 towns and 82 ships, sixth in the world. His heir is his son Murād, born 7 November 1393, a far better diplomat (world file of 11 August 1420). His daughter Khadīja married the Emperor's grandson Ismāʿīl by 1422. Attacked by the Mamlūks in September 1423, with al-Andalus beside them, he lost 37 towns of central Anatolia at the peace of 8 August 1424 (saves of 1423 and 1424)."
  },
  {
   "id": "aktai-mamluk",
@@ -2297,7 +2309,7 @@
    "inspiring_leader",
    "worldly"
   ],
-  "note": "Son of the sultan Būlād, whom he succeeded on 16 June 1396. Al-Andalus's one ally in the East since 1367. In 1420 he ruled 191 towns from Cairo and 103 more through vassals from the Ḥijāz to the Taurus, ninth in the world; Hungary, the Ottomans and the Tīmūrids are his rivals. His heir is his son Jyral, born 30 December 1401 (world file of 11 August 1420)."
+  "note": "Son of the sultan Būlād, whom he succeeded on 16 June 1396. Al-Andalus's one ally in the East since 1367. In 1420 he ruled 191 towns from Cairo and 103 more through vassals from the Ḥijāz to the Taurus, ninth in the world; Hungary, the Ottomans and the Tīmūrids are his rivals. His heir is his son Jyral, born 30 December 1401 (world file of 11 August 1420). His daughter Ayaulym married the Emperor's grandson Ismāʿīl by 1422. On 19 September 1423 he went to war with the Ottomans and called al-Andalus to arms; the peace of 8 August 1424 gave him 37 towns of central Anatolia (saves of 1423 and 1424)."
  },
  {
   "id": "yahya-marinid",

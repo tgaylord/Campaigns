@@ -1,0 +1,119 @@
+[
+ {
+  "id": "1423-02-01-santa-cruz-das-flores",
+  "date": "1423-02-01",
+  "type": "territory_change",
+  "people": [],
+  "places": [],
+  "wars": [],
+  "title": "Santa Cruz on Flores, the westernmost of the Azores, becomes a settlement of the crown: 1,300 Andalusī settlers",
+  "data": {
+   "province": "Azores",
+   "population": 1263
+  },
+  "source": "save of 5 November 1423"
+ },
+ {
+  "id": "1423-03-26-the-three-brides",
+  "date": "1423-03-26",
+  "type": "marriage",
+  "people": [
+   "ismail-ibn-muhammad-ibn-ismail",
+   "ahmad-ibn-muhammad-ibn-ismail",
+   "yahya-marinid",
+   "aktai-mamluk",
+   "ahmad-ottoman",
+   "ahmad-ibn-ismail-ibn-yusuf"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "By 1423 the heir's sons are married. Ismāʿīl has taken three princesses of the three Muslim empires around him: Tella of Fās, sister of the sultan Yaḥyā; Ayaulym of Miṣr, daughter of the Mamlūk sultan Aqṭāy; and Khadīja, daughter of the Ottoman sultan Aḥmad. His brother Aḥmad has married Dīma of the Ḥafṣids of Tūnis, Muʾmina of Burtuqāl and ʿĀʾisha bint Saʿd. Their first children are born in 1422",
+  "data": {
+   "date": "not in the save; the marriages lie between September 1420 and January 1422, when the first children were born. Dated here to the first save that shows them",
+   "children": [
+    "Yūsuf, son of Ismāʿīl and Tella, 6 January 1422",
+    "ʿĀʾisha, daughter of Ismāʿīl and Khadīja, 24 January 1422",
+    "Jadīla, daughter of Ismāʿīl and Ayaulym, 29 June 1422",
+    "Saʿd, son of Aḥmad and Muʾmina, 29 April 1423",
+    "Muʾmina, daughter of Aḥmad and ʿĀʾisha, 14 June 1423"
+   ]
+  },
+  "source": "save of 5 November 1423"
+ },
+ {
+  "id": "1423-09-19-mamluks-declare-war",
+  "date": "1423-09-19",
+  "type": "war_declared",
+  "people": [
+   "aktai-mamluk",
+   "ahmad-ottoman"
+  ],
+  "places": [],
+  "wars": [
+   "mamluk-ottoman-war"
+  ],
+  "title": "The Mamlūk sultan Aqṭāy declares war on the Ottomans and Nafusa, with all his vassals from the Ḥijāz to Cilicia",
+  "data": {
+   "cb": "attack_threat",
+   "attackers": "Egypt and its vassals: Mecca, Medina, the Ḥijāz lords and Cilicia; al-Andalus and its seven ṭāʾifas from 1 October",
+   "defenders": [
+    "the Ottomans",
+    "Nafusa"
+   ]
+  },
+  "source": "save of 5 November 1423"
+ },
+ {
+  "id": "1423-10-01-call-of-the-mamluks",
+  "date": "1423-10-01",
+  "type": "war_joined",
+  "people": [
+   "ismail-ibn-saad",
+   "aktai-mamluk",
+   "ahmad-ottoman"
+  ],
+  "places": [],
+  "wars": [
+   "mamluk-ottoman-war"
+  ],
+  "title": "The Mamlūks go to war with the Ottomans and Nafusa and call the Emperor to arms. Al-Andalus answers the call of its oldest ally, and the court hopes Cairo does not expect much of it",
+  "data": {
+   "call": "Egypt calls upon us to join them in their 1st Egypt–Ottomans War against the Ottomans and Nafusa. This is a war that they have started (the game's text)",
+   "costs": {
+    "refuse": "Mamlūk opinion −20, trust −5",
+    "join": "trust with the Ottomans and Nafusa −20; no truce broken"
+   },
+   "choice": "Accept Offer (Trent: 'we will answer')",
+   "court": "the court hopes they don't expect much from us (Trent)",
+   "realm": {
+    "population": "2.490 million",
+    "army": "4,900",
+    "stability": 17,
+    "markets": "Ishbīliya and al-Ushbūna first, Barcelona and Fās second"
+   }
+  },
+  "source": "Trent's screenshot and account, 1 October 1423"
+ },
+ {
+  "id": "1423-11-05-catalans-and-sephardim",
+  "date": "1423-11-05",
+  "type": "reform",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [
+   "balansiyya"
+  ],
+  "wars": [],
+  "title": "By November 1423 the Catalans stand at court beside the Andalusīs and the Portuguese as an accepted culture, as the dīwān intended once Balansiyya was integrated, and the Sephardim, long tolerated and under the Emperor's protection since the year of Avignon, are accepted with them",
+  "data": {
+   "accepted": [
+    "Portuguese",
+    "Catalan",
+    "Sephardi"
+   ],
+   "date": "not in the save; between 4 September 1420 and 5 November 1423"
+  },
+  "source": "save of 5 November 1423"
+ }
+]

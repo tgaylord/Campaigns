@@ -35,7 +35,15 @@
   "name": "Portugal",
   "nameChronicle": "al-Burtughāl",
   "nameArabic": "البرتغال",
-  "color": "#3c6ebe"
+  "color": "#3c6ebe",
+  "renamed": [
+   {
+    "from": "1421-11-04",
+    "name": "Kingdom of Portugal",
+    "nameChronicle": "the Kingdom of Burtuqāl",
+    "nameArabic": "مملكة البرتغال"
+   }
+  ]
  },
  {
   "tag": "MOR",

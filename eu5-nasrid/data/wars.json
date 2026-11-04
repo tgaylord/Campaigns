@@ -768,5 +768,42 @@
     "value": 0
    }
   ]
+ },
+ {
+  "id": "mamluk-ottoman-war",
+  "name": "The Mamlūk War on the Ottomans",
+  "gameName": "1st Egypt–Ottomans War",
+  "start": "1423-09-19",
+  "end": "1424-08-08",
+  "goal": "An attack on the Ottomans before they could attack Egypt (the Mamlūk casus belli 'attack threat')",
+  "allies": [
+   "Mamluks"
+  ],
+  "enemies": [
+   "Ottomans",
+   "Nafusa"
+  ],
+  "involvement": "belligerent",
+  "sides": {
+   "attackers": [
+    "Mamluks",
+    "Mecca",
+    "Medina",
+    "the Mamlūk vassals",
+    "al-Andalus",
+    "the seven ṭāʾifas"
+   ],
+   "defenders": [
+    "Ottomans",
+    "Nafusa"
+   ]
+  },
+  "note": "The Mamlūks of Miṣr, allies of al-Andalus since 1367, declared war on the Ottomans and Nafusa, in the mountains of Tripolitania, on 19 September 1423 (13 Shawwāl 826), and on 1 October (25 Shawwāl 826) called the Emperor to arms. Joining cost al-Andalus 20 trust with the Ottomans; there was no truce to break. The Emperor answered the call, and the court hoped the Mamlūks did not expect much of it (Trent's account and screenshot of 1 October 1423). The Ottoman sultan Aḥmad is the brother of the Emperor's wife ʿĀʾisha. Al-Andalus and all seven of its ṭāʾifas came in that day. It was over in under eleven months: Nafusa made peace on 23 July 1424 and the Ottomans on 8 August (save of 14 August 1424).",
+  "outcome": "Mamlūk victory. Thirty-seven towns of central Anatolia, from Kayseri and Niğde to Malatya and Çorum, passed to the Mamlūks on 8 August 1424. Al-Andalus took nothing; its truce with the Ottomans runs to 8 February 1436 (save of 14 August 1424).",
+  "joined": {
+   "from": "1423-10-01",
+   "to": "1424-08-08"
+  },
+  "score": []
  }
 ]

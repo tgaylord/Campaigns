@@ -1,0 +1,49 @@
+[
+ {
+  "id": "1422-04-18-death-of-umm-al-fath-bint-yusuf",
+  "date": "1422-04-18",
+  "type": "death",
+  "people": [
+   "umm-al-fath-bint-yusuf"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Umm al-Fatḥ bint Yūsuf, the youngest and last of the children of Yūsuf I, dies of dysentery at fifty-nine",
+  "data": {
+   "cause": "dysentery"
+  },
+  "source": "save of 5 November 1423"
+ },
+ {
+  "id": "1422-09-01-santo-antao",
+  "date": "1422-09-01",
+  "type": "territory_change",
+  "people": [],
+  "places": [],
+  "wars": [],
+  "title": "Santo Antão in the Cape Verde islands becomes a settlement of the crown, the empire's first town in the southern sea: 1,700 Andalusī settlers",
+  "data": {
+   "province": "Cape Verde",
+   "population": 1687,
+   "culture": "Andalusī",
+   "religion": "Catholic in the save (a mixed settlement; the town's majority faith as the game records it)"
+  },
+  "source": "save of 5 November 1423"
+ },
+ {
+  "id": "1422-10-14-death-of-pedro-of-castile",
+  "date": "1422-10-14",
+  "type": "ruler_change",
+  "people": [
+   "pedro-of-castile"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "King Pedro of Castile dies at Santander, from a fall down a flight of stairs, at fifty-one. His son Fernando succeeds to the four towns of the Cantabrian coast",
+  "data": {
+   "cause": "fell down stairs",
+   "successor": "Fernando, born 10 March 1392 (65/71/46), a glory seeker"
+  },
+  "source": "save of 5 November 1423"
+ }
+]

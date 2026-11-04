@@ -1,5 +1,55 @@
 [
  {
+  "id": "1421-02-01-yusuf-to-migration",
+  "date": "1421-02-01",
+  "type": "appointment",
+  "people": [
+   "yusuf-ibn-saad"
+  ],
+  "places": [
+   "ishbiliyya"
+  ],
+  "wars": [],
+  "title": "Prince Yūsuf ibn Saʿd leaves the appeasing of the estates, which he had done since the Jamāʿa of 817, and turns to drawing settlers to Ishbīliya",
+  "data": {
+   "from": "appeasing the estates (from 27 October 1414)",
+   "to": "encouraging migration to Ishbīliya"
+  },
+  "source": "save of 5 November 1423"
+ },
+ {
+  "id": "1421-02-11-jadila-to-development",
+  "date": "1421-02-11",
+  "type": "appointment",
+  "people": [
+   "jadila-bint-saad-ibn-faraj"
+  ],
+  "places": [
+   "ishbiliyya"
+  ],
+  "wars": [],
+  "title": "Jadīla bint Saʿd leaves the stabilising of the realm and turns to developing Ishbīliya",
+  "data": {
+   "from": "stabilizing the country (from 29 September 1416)",
+   "to": "developing Ishbīliya"
+  },
+  "source": "save of 5 November 1423"
+ },
+ {
+  "id": "1421-06-01-tamaraceite",
+  "date": "1421-06-01",
+  "type": "territory_change",
+  "people": [],
+  "places": [],
+  "wars": [],
+  "title": "Tamaraceite on Gran Canaria becomes a settlement of the crown, the second in the Canaries: 8,500 Guanche islanders of their own faith",
+  "data": {
+   "province": "Canaries",
+   "population": 8483
+  },
+  "source": "save of 5 November 1423"
+ },
+ {
   "id": "1421-08-01-the-secret-of-the-naft",
   "date": "1421-08-01",
   "type": "diplomacy",
@@ -32,5 +82,26 @@
    ]
   },
   "source": "Trent's screenshot, 1 August 1421"
+ },
+ {
+  "id": "1421-11-04-kingdom-of-burtuqal",
+  "date": "1421-11-04",
+  "type": "formable",
+  "people": [
+   "ahmad-ibn-ismail-ibn-yusuf",
+   "ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "The Ṭāʾifa of Burtuqāl proclaims itself the Kingdom of Portugal. Its lord Aḥmad ibn Ismāʿīl, the Emperor's cousin, takes the crown of the old kings and remains the Emperor's ṭāʾifa; the new kingdom's state faith is Catholic, the faith of its people, though its king is a Muslim",
+  "data": {
+   "rank": "county to kingdom",
+   "tag": "ABA10 to POR",
+   "stateReligion": "Catholic (Sunni before)",
+   "ruler": "Aḥmad ibn Ismāʿīl ibn Yūsuf, Sunni",
+   "towns": 34,
+   "population": 698000
+  },
+  "source": "save of 5 November 1423"
  }
 ]

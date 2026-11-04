@@ -1,0 +1,53 @@
+[
+ {
+  "id": "1424-07-23-peace-with-nafusa",
+  "date": "1424-07-23",
+  "type": "peace",
+  "people": [],
+  "places": [],
+  "wars": [
+   "mamluk-ottoman-war"
+  ],
+  "title": "Nafusa makes its peace with the Mamlūks and their allies",
+  "data": {
+   "truce": "to 23 January 1433 (about 35 war score)"
+  },
+  "source": "save of 14 August 1424"
+ },
+ {
+  "id": "1424-08-08-peace-of-kayseri",
+  "date": "1424-08-08",
+  "type": "peace",
+  "people": [
+   "ahmad-ottoman",
+   "aktai-mamluk",
+   "ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [
+   "mamluk-ottoman-war"
+  ],
+  "title": "The Ottomans make peace. Thirty-seven towns of central Anatolia, from Kayseri, Niğde and Nevşehir to Malatya, Harput and Çorum, pass to the Mamlūks. Al-Andalus takes nothing and loses nothing",
+  "data": {
+   "towns": 37,
+   "examples": [
+    "Kayseri",
+    "Niğde",
+    "Nevşehir",
+    "Kırşehir",
+    "Malatya",
+    "Harput",
+    "Çorum",
+    "Sungurlu",
+    "Ürgüp",
+    "Gürün"
+   ],
+   "truce": "to 8 February 1436 (about 65 war score)",
+   "after": {
+    "Ottomans": "260 towns, 6th in the world",
+    "Mamlūks": "228 towns and 103 in vassals, 9th"
+   }
+  },
+  "source": "save of 14 August 1424"
+ }
+]
