@@ -56,6 +56,39 @@
   "source": "save of 7 January 1405; Trent's account and map"
  },
  {
+  "id": "1405-01-28-battle-buitrago",
+  "date": "1405-01-28",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "risings-of-807"
+  ],
+  "title": "At Buitrago del Lozoya in the Guadarrama the rebel army of Toledo, 4,860 strong, falls on the 121 men of the Ṭāʾifa of Qūnka and destroys them without loss",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Ṭāʾifa of Qūnka": 121
+   },
+   "oursTotal": 121,
+   "oursLost": 121,
+   "theirs": {
+    "Kingdom of Toledo": 4859
+   },
+   "theirsTotal": 4859,
+   "theirsLost": 0,
+   "location": "Buitrago del Lozoya",
+   "side": "Toledo attacking",
+   "warScore": 0,
+   "commanders": {
+    "Toledo": "the rebel king of Toledo"
+   },
+   "note": "rebellion battles carry no war score in the game"
+  },
+  "source": "save of 24 August 1405 (the war's battle list)"
+ },
+ {
   "id": "1405-03-02-death-of-the-emperor",
   "date": "1405-03-02",
   "type": "death",
@@ -178,8 +211,232 @@
      ]
     }
    },
-   "note": "rebellion battles carry no war score in the game"
+   "note": "rebellion battles carry no war score in the game",
+   "savedLater": "the save of 24 August 1405 dates the battle 27 March, the day it ended; Trent's screens show it begun on 18 March. The battle list gives our loss as 301"
   },
   "source": "Trent's battle screens, 18 March 1405"
+ },
+ {
+  "id": "1405-07-02-battle-granadilla",
+  "date": "1405-07-02",
+  "type": "battle",
+  "people": [
+   "khalid-ibn-yahya"
+  ],
+  "places": [],
+  "wars": [
+   "risings-of-807"
+  ],
+  "title": "At Granadilla in the Leonese west a joint host of 20,550, al-Andalus with Aragon and Catalonia under Khālid ibn Yaḥyā Raḥḥū, falls on the rebels of Ciudad Rodrigo, 3,060 levies, and breaks them: 1,750 of theirs lost for 970 of ours",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "al-Andalus": 12562,
+    "Aragon": 1395,
+    "Catalonia": 6591
+   },
+   "oursTotal": 20548,
+   "oursLost": 970,
+   "theirs": {
+    "Ciudad Rodrigo": 3061
+   },
+   "theirsTotal": 3061,
+   "theirsLost": 1753,
+   "location": "Granadilla",
+   "side": "al-Andalus attacking",
+   "warScore": 0,
+   "commanders": {
+    "al-Andalus": "Khālid ibn Yaḥyā Raḥḥū, 62 (80/85/78)",
+    "Ciudad Rodrigo": "Ordoño"
+   },
+   "note": "rebellion battles carry no war score in the game"
+  },
+  "source": "save of 8 July 1405 (the war's battle list)"
+ },
+ {
+  "id": "1405-07-08-ciudad-rodrigo-crushed",
+  "date": "1405-07-08",
+  "type": "peace",
+  "people": [
+   "saad-ibn-ismail"
+  ],
+  "places": [
+   "shalamanka"
+  ],
+  "wars": [
+   "risings-of-807"
+  ],
+  "title": "Six days after Granadilla the rising of Ciudad Rodrigo is over. Its sixteen towns, Shalamanka, Ávila and Ciudad Rodrigo among them, return to the Ṭāʾifa of Shalamanka and its ruler Saʿd ibn Ismāʿīl",
+  "data": {
+   "rebel": "Ciudad Rodrigo (ABA58)",
+   "towns": 16,
+   "returnedTo": "Ṭāʾifa of Shalamanka (AAA98)",
+   "how": "the rebel country is dissolved and its towns return to their owner (ownership change of 8 July 1405 in the save of 5 August 1408; the save of 8 July 1405 was taken just before it)"
+  },
+  "source": "saves of 8 July 1405, 24 August 1405 and 5 August 1408"
+ },
+ {
+  "id": "1405-07-10-battle-cuenca-ii",
+  "date": "1405-07-10",
+  "type": "battle",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [
+   "qunka"
+  ],
+  "wars": [
+   "risings-of-807"
+  ],
+  "title": "Before Qūnka a second time, the Emperor Ismāʿīl with 4,900 attacks what is left of the army of Toledo, 1,810 men, and destroys most of it: 1,235 of theirs lost for 92 of ours",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "al-Andalus": 4900
+   },
+   "oursTotal": 4900,
+   "oursLost": 92,
+   "theirs": {
+    "Kingdom of Toledo": 1812
+   },
+   "theirsTotal": 1812,
+   "theirsLost": 1235,
+   "location": "Cuenca",
+   "side": "al-Andalus attacking",
+   "warScore": 0,
+   "commanders": {
+    "al-Andalus": "the Emperor Ismāʿīl",
+    "Toledo": "the rebel king of Toledo"
+   },
+   "note": "rebellion battles carry no war score in the game"
+  },
+  "source": "save of 24 August 1405 (the war's battle list)"
+ },
+ {
+  "id": "1405-08-05-battle-lisbon",
+  "date": "1405-08-05",
+  "type": "battle",
+  "people": [],
+  "places": [
+   "al-ushbuna"
+  ],
+  "wars": [
+   "risings-of-807"
+  ],
+  "title": "Before al-Ushbūna the rebels of Estremadura, 2,750 men, attack the army of the Ṭāʾifa of al-Gharb, 2,840, and are thrown back: 1,340 of theirs lost for 850 of al-Gharb's",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Ṭāʾifa of al-Gharb": 2844
+   },
+   "oursTotal": 2844,
+   "oursLost": 846,
+   "theirs": {
+    "Estremadura": 2745
+   },
+   "theirsTotal": 2745,
+   "theirsLost": 1338,
+   "location": "Lisbon",
+   "side": "Estremadura attacking",
+   "warScore": 0,
+   "commanders": {
+    "Estremadura": "García",
+    "al-Gharb": "Diego"
+   },
+   "note": "rebellion battles carry no war score in the game"
+  },
+  "source": "save of 24 August 1405 (the war's battle list)"
+ },
+ {
+  "id": "1405-08-24-the-risings-crushed",
+  "date": "1405-08-24",
+  "type": "peace",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [
+   "majrit",
+   "tulaytula",
+   "shantarin",
+   "yabura",
+   "al-ushbuna"
+  ],
+  "wars": [
+   "risings-of-807"
+  ],
+  "title": "The risings of 807 are over. The Kingdom of Toledo and Estremadura collapse, and their forty-eight towns, from Majrīṭ and Alcalá to Ciudad Real and Albacete and from Shantarīn to Yābura and Elvas, return to the crown",
+  "data": {
+   "rebels": [
+    "Kingdom of Toledo (TOL), 30 towns",
+    "Estremadura (ABA55), 18 towns"
+   ],
+   "returnedTo": "al-Andalus",
+   "realm": {
+    "towns": [
+     100,
+     148
+    ],
+    "note": "crown towns before and after"
+   },
+   "battlesOfTheWar": "Buitrago (28 Jan), Cuenca (18 Mar), Granadilla (2 Jul, Ciudad Rodrigo), Cuenca II (10 Jul), Lisbon (5 Aug)",
+   "how": "ownership change of 24 August 1405 in the save of 5 August 1408; the save of 24 August 1405 was taken just before it, with Toledo and Estremadura still holding their towns and the war score at +2.8"
+  },
+  "source": "saves of 24 August 1405 and 5 August 1408"
+ },
+ {
+  "id": "1405-09-01-al-gharb-annexed",
+  "date": "1405-09-01",
+  "type": "territory_change",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [
+   "shilb",
+   "baja",
+   "ukshunuba"
+  ],
+  "wars": [],
+  "title": "The Ṭāʾifa of al-Gharb, a vassal of the crown since the peace of 1366, is taken into the crown. Its thirteen towns, from Faro, Lagos, Silves and Tavira on the coast to Bāja, Mértola, Moura and Serpa in the Alentejo, and its 137,000 people, Portuguese by tongue and nearly all Muslim, become lands of the crown",
+  "data": {
+   "taifa": "Taifa of the Algarve (ALV)",
+   "since": "1366-04-13",
+   "capital": "Faro",
+   "towns": [
+    "Lagos",
+    "Faro",
+    "Silves",
+    "Tavira",
+    "Beja",
+    "Alvalade",
+    "Alvito",
+    "Mértola",
+    "Moura",
+    "Odemira",
+    "Ourique",
+    "Serpa",
+    "Sines"
+   ],
+   "population": 137151,
+   "religion": {
+    "sunni": 133499,
+    "catholic": 2821,
+    "jewish": 830
+   },
+   "culture": {
+    "portuguese": 132270
+   },
+   "ruler": "Zhaleh, of Tajik culture, a zealot (save of 24 August 1405)",
+   "realm": {
+    "towns": [
+     148,
+     161
+    ]
+   },
+   "note": "annexed on 1 September 1405 by the ownership history (Trent: about 2 September)"
+  },
+  "source": "saves of 24 August 1405 and 5 August 1408; Trent's account"
  }
 ]

@@ -661,7 +661,7 @@
   "name": "The Risings of 807",
   "gameName": "1st Rebellion Against Andalusia; 1st Rebellion Against Salamanca",
   "start": "1405-01-01",
-  "end": null,
+  "end": "1405-08-24",
   "goal": "Three wars of independence against al-Andalus and the Ṭāʾifa of Shalamanka (cb_independence_war)",
   "allies": [
    "Aragon",
@@ -677,11 +677,47 @@
    "Ciudad Rodrigo"
   ],
   "involvement": "belligerent",
-  "note": "Ten weeks after the Peace of Avignon the conquered north rose. On 1 January 1405 (28 Jumādā al-Ākhira 807) the Portuguese lands proclaimed a Kingdom of Estremadura, 18 towns from Santarém and Torres Vedras to Évora and Elvas, and the Castilians of La Mancha and the Madrid country rose again as a Kingdom of Toledo, 30 towns from Madrid, Alcalá and El Escorial through Ciudad Real and Ocaña to Albacete, Hellín and Caravaca; Toledo itself, Lisbon and Setúbal stayed loyal. On 2 January the Leonese of the Ṭāʾifa of Shalamanka rose as Ciudad Rodrigo, taking 16 of its 21 towns, Salamanca, Ávila and Plasencia among them. Al-Andalus held 100 towns of its 148, and 1,295,000 of its 1,841,000 people. The rebels had some 11,000 men, nearly all levies: Toledo 5,100, Ciudad Rodrigo 3,100, Estremadura 2,900; al-Andalus 3,400 regulars and the ṭāʾifas 1,250 (save of 7 January 1405). Estremadura laid siege to al-Ushbūna.",
-  "outcome": null,
+  "note": "Ten weeks after the Peace of Avignon the conquered north rose. On 1 January 1405 (28 Jumādā al-Ākhira 807) the Portuguese lands proclaimed a Kingdom of Estremadura, 18 towns from Santarém and Torres Vedras to Évora and Elvas, and the Castilians of La Mancha and the Madrid country rose again as a Kingdom of Toledo, 30 towns from Madrid, Alcalá and El Escorial through Ciudad Real and Ocaña to Albacete, Hellín and Caravaca; Toledo itself, Lisbon and Setúbal stayed loyal. On 2 January the Leonese of the Ṭāʾifa of Shalamanka rose as Ciudad Rodrigo, taking 16 of its 21 towns, Salamanca, Ávila and Plasencia among them. Al-Andalus held 100 towns of its 148, and 1,295,000 of its 1,841,000 people. The rebels had some 11,000 men, nearly all levies: Toledo 5,100, Ciudad Rodrigo 3,100, Estremadura 2,900; al-Andalus 3,400 regulars and the ṭāʾifas 1,250 (save of 7 January 1405). Estremadura laid siege to al-Ushbūna. The game gives rebellion battles no war score. The war's battles were Buitrago (28 January, Toledo over Qūnka's few men), Cuenca (18 March, the new Emperor's first battle), Granadilla (2 July, Khālid ibn Yaḥyā's joint host over Ciudad Rodrigo), Cuenca II (10 July) and al-Ushbūna (5 August, where al-Gharb threw back Estremadura) (saves of 8 July and 24 August 1405).",
+  "outcome": "Victory. Ciudad Rodrigo fell apart on 8 July 1405, six days after Granadilla, and its sixteen towns went back to the Ṭāʾifa of Shalamanka. The Kingdom of Toledo and Estremadura collapsed on 24 August 1405, and their forty-eight towns returned to the crown.",
   "score": [
    {
     "date": "1405-01-01",
+    "value": 0
+   }
+  ]
+ },
+ {
+  "id": "fourth-war-of-the-istirdad",
+  "name": "The Fourth War of the Istirdād",
+  "gameName": "Reconquest of Iberia",
+  "series": {
+   "name": "The Istirdād",
+   "nameArabic": "الاسترداد",
+   "number": 4
+  },
+  "start": "1410-06-29",
+  "end": null,
+  "goal": "The Reconquest of Iberia against Castile (cb_reconquer_iberia), declared the day the truce of the Peace of Ramaḍān ran out",
+  "allies": [
+   "Aragon",
+   "Catalonia",
+   "Valencia",
+   "Taifa of Salamanca",
+   "Taifa of Cuenca",
+   "Morocco",
+   "Tlemcen",
+   "Tafilalt"
+  ],
+  "enemies": [
+   "Castile",
+   "Portugal"
+  ],
+  "involvement": "belligerent",
+  "note": "On 29 June 1410 (25 Ṣafar 813) the truce of 1395 ran out and the Emperor Ismāʿīl declared war on Castile at once. Portugal joined Castile. Fās answered the Emperor's call with Tlemcen and Tafilalt; the Mamlūks were busy in the Fertile Crescent and not needed (Trent). On the day of the declaration al-Andalus had 4,900 regulars and 53 ships, Morocco 2,400 men and 37 ships; Castile 1,650 regulars and 25 ships, Portugal 750 and 8. No levies had yet been raised (save of 29 June 1410).",
+  "outcome": null,
+  "score": [
+   {
+    "date": "1410-06-29",
     "value": 0
    }
   ]

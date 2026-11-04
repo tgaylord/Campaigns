@@ -1,0 +1,24 @@
+[
+ {
+  "id": "1409-09-18-death-of-fatima",
+  "date": "1409-09-18",
+  "type": "death",
+  "people": [
+   "fatima-bint-yusuf",
+   "francesc-de-montsoriu",
+   "isabel-de-montsoriu"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Fāṭima bint Yūsuf, daughter of Yūsuf I and widow of Francesc de Montsoriu, dies at fifty-one. Her son Berenguer Ramon rules the Ṭāʾifa of Catalonia, her daughter Isabel is the wife of the heir Muḥammad, and another daughter is married to Saʿd ibn Ismāʿīl of Shalamanka",
+  "data": {
+   "age": 51,
+   "children": [
+    "a daughter married to Saʿd ibn Ismāʿīl, ruler of Shalamanka",
+    "Berenguer Ramon de Montsoriu, ruler of the Ṭāʾifa of Catalonia (born 1380)",
+    "Isabel de Montsoriu (born 1382), wife of the heir Muḥammad"
+   ]
+  },
+  "source": "save of 29 June 1410"
+ }
+]

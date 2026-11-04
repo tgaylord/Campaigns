@@ -1,0 +1,23 @@
+---
+title: Of the Old Capital, the Shaykha of Qūnka, and the Sons of Muḥammad
+date: 1408-08-05
+era: book-of-the-call
+kind: chronicle
+people: [ismail-ibn-saad, umm-al-fath-bint-saad, muhammad-ibn-yusuf-ibn-faraj, yusuf-ibn-saad, saad-ibn-faraj, maryam-bint-saad-ibn-faraj, saad-ibn-ismail-ibn-saad, ismail-ibn-yusuf, muhammad-ibn-ismail-ibn-saad, magdalena-de-borja, isabel-de-montsoriu, fatima-bint-yusuf, ismail-ibn-muhammad-ibn-ismail, ahmad-ibn-muhammad-ibn-ismail]
+places: [qurtuba, ishbiliyya, qunka]
+sources: [1405-08-24-the-risings-crushed, 1408-02-20-death-of-saad-ibn-faraj, 1408-03-01-capital-of-the-old-caliphate, 1408-05-27-death-of-ismail-ibn-yusuf, 1408-08-05-the-sons-of-muhammad]
+---
+
+After the risings the Emperor [Ismāʿīl](person:ismail-ibn-saad) gave the dīwān to the work of binding the north. His half-sister [Umm al-Fatḥ](person:umm-al-fath-bint-saad) and his nephew [Muḥammad ibn Yūsuf](person:muhammad-ibn-yusuf-ibn-faraj), a grandson of the old Emperor through his mother, were set to governing the lands that had risen, and his brother [Yūsuf](person:yusuf-ibn-saad) to drawing Andalusī settlers north to them. In those years the qāḍīs began to say a thing they had not expected to say of him. Whatever the Emperor told men in private, and he told each of them what he wished to hear, his judgments in public were fair, and no one who brought a case before him could say it had been decided by favour.
+
+On 22 Ramaḍān 810 [Saʿd ibn Faraj](person:saad-ibn-faraj), lord of the Ṭāʾifa of [Qūnka](place:qunka) since the year of the two ṭāʾifas, died at forty-nine. His heir was his daughter [Maryam](person:maryam-bint-saad-ibn-faraj), seventeen years old, the Emperor's niece through her mother Umm al-Fatḥ, and already the wife of the Emperor's second son [Saʿd](person:saad-ibn-ismail-ibn-saad). So the Shaykha of Qūnka was a Naṣrid on both sides, and the frontier ṭāʾifa that had first faced the rebels of Toledo passed to a girl who had grown up in the Emperor's own house.
+
+Ten days later, on the morrow of the feast of the breaking of the fast, the Emperor took up the question of [Qurṭuba](place:qurtuba). The city of the caliphs had come back to Islam sixty years before, and still it had not recovered. Its streets were full of thieves, its people cursed the decay that had come over it, and half its old buildings stood in ruins from the wars with the Christians. The old men of the court, and the ʿulamāʾ with them, wanted the court moved there, so that al-Andalus would be governed again from the seat of ʿAbd al-Raḥmān. The Emperor heard them out and gave them half of what they asked. Qurṭuba would be the Capital of the Old Caliphate, with the dignity of the name and the money and labour to rebuild it, for as long as the empire stood. But the court would stay at [Ishbīliya](place:ishbiliyya), on its river and its market, where his father had brought it. The ʿulamāʾ went away content with the name, the merchants with the court, and Ishbīliya grew richer that year than it had ever been.
+
+On the first day of Muḥarram 811 the old Emperor's brother [Ismāʿīl ibn Yūsuf](person:ismail-ibn-yusuf) died at fifty-four. He had sat in the dīwān for twenty-three years, from the revolt of Ṭulayṭula until the end of the risings, and he was the last of the sons of Yūsuf I.
+
+By the summer of 811 the question that had troubled the old Emperor's last years had settled itself. The heir [Muḥammad](person:muhammad-ibn-ismail-ibn-saad) was twenty-two. He was still slow, but he had done one thing well: he had married two daughters of the ṭāʾifa houses, [Magdalena](person:magdalena-de-borja) of the Borja of Arghūn and [Isabel](person:isabel-de-montsoriu) of the Montsoriu of Catalonia, whose mother was [Fāṭima](person:fatima-bint-yusuf), daughter of Yūsuf I. They had given him five children. The two eldest were boys of five: [Ismāʿīl](person:ismail-ibn-muhammad-ibn-ismail), Magdalena's son, born in Rabīʿ al-Awwal 805, and [Aḥmad](person:ahmad-ibn-muhammad-ibn-ismail), Isabel's, born in Dhū al-Qaʿda of the same year. Their tutors had not yet been chosen, but those who had seen them said both were gifted. If the Emperor reigned long, the crown would pass to Muḥammad and through him to boys worthy of it, and no one would need to change the law of the house to make it so.
+
+His brother Saʿd was not forgotten. He was sixteen, the ablest of the Emperor's sons, and married to the Shaykha of Qūnka. The crown would not be his, but the frontier would be his children's.
+
+*And those who believed and whose descendants followed them in faith, We will join with them their descendants.*

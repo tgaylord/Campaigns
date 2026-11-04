@@ -1,0 +1,78 @@
+[
+ {
+  "id": "1410-04-17-birth-of-abu-al-hasan-ali",
+  "date": "1410-04-17",
+  "type": "birth",
+  "people": [
+   "saad-ibn-ismail-ibn-saad",
+   "maryam-bint-saad-ibn-faraj",
+   "abu-al-hasan-ali-ibn-saad"
+  ],
+  "places": [
+   "qunka"
+  ],
+  "wars": [],
+  "title": "A son, Abū al-Ḥasan ʿAlī, is born to the Emperor's son Saʿd and Maryam, Shaykha of Qūnka: the first child of the line meant to rule the frontier",
+  "data": {},
+  "source": "save of 29 June 1410"
+ },
+ {
+  "id": "1410-04-27-death-of-joan",
+  "date": "1410-04-27",
+  "type": "death",
+  "people": [
+   "joan-of-aragon"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Joan, once king of Aragon and of Sicily, who lost Aragon to the Emperor Saʿd in the War of the Upper March, dies at sixty",
+  "data": {
+   "age": 60
+  },
+  "source": "save of 29 June 1410"
+ },
+ {
+  "id": "1410-06-29-war-on-castile",
+  "date": "1410-06-29",
+  "type": "war_declared",
+  "people": [
+   "ismail-ibn-saad",
+   "pedro-of-castile",
+   "fernando-of-castile",
+   "abu-al-fadl-marinid"
+  ],
+  "places": [],
+  "wars": [
+   "fourth-war-of-the-istirdad"
+  ],
+  "title": "The truce with Qashtāla runs out, and the Emperor Ismāʿīl declares the fourth war of the Istirdād. Portugal joins Qashtāla; Fās answers the Emperor's call with Tilimsān and Tafilalt. The Mamlūks, busy in the Fertile Crescent, are not needed",
+  "data": {
+   "cb": "cb_reconquer_iberia",
+   "gameName": "Reconquest of Iberia",
+   "attackers": {
+    "al-Andalus": "4,900 regulars, 53 ships",
+    "ṭāʾifas": "Aragon, Catalonia (586), Valencia (93), Shalamanka, Qūnka",
+    "Morocco": "2,400 men, 37 ships",
+    "Tlemcen": "500",
+    "Tafilalt": "0"
+   },
+   "defenders": {
+    "Castile": "1,650 regulars, 25 ships; 108 towns, 2,033,000 people, capital Valladolid, stability 6; King Pedro, 39, since 1394 (44/51/61, stubborn, a drunkard); heir Fernando, 18",
+    "Portugal": "750 regulars, 8 ships; 34 towns, 699,000 people, capital Porto; King Fernando, 45, since 29 April 1402 (37/41/59, deceitful); heir Joana"
+   },
+   "mamluks": "called, but listed as potential; busy cleaning up the Fertile Crescent, and not needed (Trent)",
+   "levies": "none raised on the day of the declaration",
+   "realm": {
+    "towns": 161,
+    "population": 2040408,
+    "treasury": 386,
+    "income": 274.2,
+    "expenses": 238.4,
+    "stability": 21.4,
+    "rank": "5th in the world"
+   },
+   "peace": "nearly fifteen years since the Peace of Ramaḍān (22 June 1395)"
+  },
+  "source": "save of 29 June 1410; Trent's account"
+ }
+]

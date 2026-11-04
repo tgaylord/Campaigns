@@ -675,7 +675,7 @@
    "architect",
    "hardy_warrior"
   ],
-  "note": "Son of Yaḥyā Raḥḥū and Qamar, the mother of Ismāʿīl ibn Ismāʿīl: born into the Raḥḥū house on 30 December 1342. Took his seat in the dīwān on 2 April 1359, at sixteen, after Ismāʿīl ibn Ismāʿīl left for the Aydınid court; set to promoting Andalusī culture. One of the ablest men at court (80/85/78), an architect. Left the dīwān on 10 April 1366, when Maryam bint Ismāʿīl took his seat. A general in the Second Marīnid War: he was thrown back before Cádiz on 26 June 1369, held the line at Antequera on 15 October and won at Almuñécar on 8 November (save of 18 November 1369). He went on to win at Adra, Málaga (twice), Jerez and Beja in 1369–1370, the general of the war's second half. By January 1373 married to Charlotte of Crato, a Sunnī Portuguese noblewoman. In January 1402, at fifty-nine and still 80/85/78, he led the crown's Highland Prospecting Survey into the hills, from Almonaster in the Sierra toward El Escorial, Qusanṭīna and home to Ishbīliya (Trent's screens). The survey found iron at al-Iskuriyāl, silver at Qusanṭīna and gems at Qrabaqa, and came home on 3 August 1402. He is one of the court's favourites, sent whenever a member of the house does not see to a thing himself (Trent)."
+  "note": "Son of Yaḥyā Raḥḥū and Qamar, the mother of Ismāʿīl ibn Ismāʿīl: born into the Raḥḥū house on 30 December 1342. Took his seat in the dīwān on 2 April 1359, at sixteen, after Ismāʿīl ibn Ismāʿīl left for the Aydınid court; set to promoting Andalusī culture. One of the ablest men at court (80/85/78), an architect. Left the dīwān on 10 April 1366, when Maryam bint Ismāʿīl took his seat. A general in the Second Marīnid War: he was thrown back before Cádiz on 26 June 1369, held the line at Antequera on 15 October and won at Almuñécar on 8 November (save of 18 November 1369). He went on to win at Adra, Málaga (twice), Jerez and Beja in 1369–1370, the general of the war's second half. By January 1373 married to Charlotte of Crato, a Sunnī Portuguese noblewoman. In January 1402, at fifty-nine and still 80/85/78, he led the crown's Highland Prospecting Survey into the hills, from Almonaster in the Sierra toward El Escorial, Qusanṭīna and home to Ishbīliya (Trent's screens). The survey found iron at al-Iskuriyāl, silver at Qusanṭīna and gems at Qrabaqa, and came home on 3 August 1402. He is one of the court's favourites, sent whenever a member of the house does not see to a thing himself (Trent). On 2 July 1405, at sixty-two, he commanded the joint host of al-Andalus, Aragon and Catalonia, some 20,550 men, that broke the rising of Ciudad Rodrigo at Granadilla (save of 8 July 1405)."
  },
  {
   "id": "alfonso-xi",
@@ -929,12 +929,13 @@
   "traits": [
    "child_gallant"
   ],
-  "note": "Heir to his brother Saʿd until Saʿd's son Ismāʿīl was born on 8 March 1366 (saves of 11 September 1364 and 6 November 1366). Married Hippolyte of Villa di Chiesa, a Sardinian of Cagliari, on 14 September 1370. He took a seat in the dīwān on 1 December 1382, as the revolt of Ṭulayṭula broke out (save of 8 December 1382).",
+  "note": "Heir to his brother Saʿd until Saʿd's son Ismāʿīl was born on 8 March 1366 (saves of 11 September 1364 and 6 November 1366). Married Hippolyte of Villa di Chiesa, a Sardinian of Cagliari, on 14 September 1370. He took a seat in the dīwān on 1 December 1382, as the revolt of Ṭulayṭula broke out (save of 8 December 1382). He left the dīwān in August 1405, when Muḥammad ibn Yūsuf took his seat, and died on 27 May 1408, aged fifty-four (save of 5 August 1408).",
   "stats": {
    "adm": 33,
    "dip": 71,
    "mil": 62
-  }
+  },
+  "died": "1408-05-27"
  },
  {
   "id": "ali-ibn-yusuf",
@@ -953,7 +954,8 @@
   "traits": [
    "child_gregarious"
   ],
-  "note": "Son of Yūsuf I and Tizemt the Ḥafṣid, born 6 September 1355, the sultan's younger half-brother. At eighteen he led the right wing and two-thirds of the cavalry at the Battle of Barcelona (29 January – 19 February 1374), the wing that broke the Aragonese flank (Trent's account)."
+  "note": "Son of Yūsuf I and Tizemt the Ḥafṣid, born 6 September 1355, the sultan's younger half-brother. At eighteen he led the right wing and two-thirds of the cavalry at the Battle of Barcelona (29 January – 19 February 1374), the wing that broke the Aragonese flank (Trent's account). He died on 29 August 1404 (save of 29 June 1410).",
+  "died": "1404-08-29"
  },
  {
   "id": "muhammad-ibn-yusuf",
@@ -1035,7 +1037,8 @@
    "dip": 62,
    "mil": 70
   },
-  "note": "Daughter of Yūsuf I and Tizemt the Ḥafṣid, full sister of Maryam and younger half-sister of the Emperor Saʿd. Married on 15 April 1375 to Francesc de Montsoriu, the ḥājib of the new Ṭāʾifa of Catalonia, binding the house of Naṣr to Barcelona (Trent's account; save of 5 June 1375)."
+  "note": "Daughter of Yūsuf I and Tizemt the Ḥafṣid, full sister of Maryam and younger half-sister of the Emperor Saʿd. Married on 15 April 1375 to Francesc de Montsoriu, the ḥājib of the new Ṭāʾifa of Catalonia, binding the house of Naṣr to Barcelona (Trent's account; save of 5 June 1375). Mother of Berenguer Ramon de Montsoriu, ruler of Catalonia, of Isabel, wife of the heir Muḥammad, and of a daughter married to Saʿd ibn Ismāʿīl of Shalamanka. She died on 18 September 1409, aged fifty-one (save of 29 June 1410).",
+  "died": "1409-09-18"
  },
  {
   "id": "aisha-bint-yusuf",
@@ -1100,7 +1103,7 @@
   "female": true,
   "roles": [],
   "traits": [],
-  "note": "First child of Sultan Saʿd, born to Aiman the Mamlūk three months after the Portuguese peace. She shares her name, 'mother of victory', with her aunt, Yūsuf I's youngest daughter. By January 1394 she sat in the dīwān, in Duʿā's old seat, integrating the new lands (saves of 1394). She is married to her cousin Saʿd ibn Faraj, who on 5 August 1395 became ruler of the Ṭāʾifa of Qūnka (save of 5 August 1395)."
+  "note": "First child of Sultan Saʿd, born to Aiman the Mamlūk three months after the Portuguese peace. She shares her name, 'mother of victory', with her aunt, Yūsuf I's youngest daughter. By January 1394 she sat in the dīwān, in Duʿā's old seat, integrating the new lands (saves of 1394). She is married to her cousin Saʿd ibn Faraj, who on 5 August 1395 became ruler of the Ṭāʾifa of Qūnka (save of 5 August 1395). Widowed on 20 February 1408, when Saʿd ibn Faraj died; their daughter Maryam succeeded him in Qūnka. From 24 August 1405 she was integrating the lands won back from the risings (save of 5 August 1408)."
  },
  {
   "id": "ismail-ibn-saad",
@@ -1122,9 +1125,10 @@
   "traits": [
    "deceitful",
    "goal_oriented",
-   "silver_tongue"
+   "silver_tongue",
+   "just"
   ],
-  "note": "Son and heir of Sultan Saʿd, born to Duʿāʾ the Marīnid on 8 March 1366, a month before the Peace of Independence. At eight he was already a silver tongue (63 in diplomacy). In late 1374 he and his half-brother Yūsuf were both given the costly tutors their father had had; his mother Duʿā had wanted them for him alone (Trent's account). On 16 March 1375 he was betrothed to Bernarda of Murcia, the gifted heir of the Ṭāʾifa of Mursiyya, as Murcia was taken into the crown (Trent's account). From 23 August 1385 he ruled as regent while his father made the Hajj, with his mother Duʿā and Aiman quarrelling at court (Trent's account). Before that he had served as an admiral, to carry the crown's authority over the seas: his first command, from 17 June 1383 (save of 1 October 1387) until he joined the dīwān. In 1386 he was brought home, and on 22 January 1387 he took the seat in the dīwān created by the Ḥijāba, to help his father's scholar-building project (Trent's account). He had married Bernarda of Murcia by 1 October 1387. In May 1391 he took a second wife, ʿĀʾisha of the house of ʿOthmān. His sons: Yūsuf (1383–1384) and Muḥammad (born 25 October 1385) by Bernarda; Saʿd (born 17 June 1392) and Aḥmad (born 21 October 1393) by ʿĀʾisha (save of 2 January 1394). By 1398 his sons were Muḥammad, the eldest, judged unfit to rule; Saʿd, intelligent and studious; and Aḥmad, ambitious (Trent's account; save of 3 September 1398). He became Emperor on 2 March 1405, at thirty-eight, when his father died on the march through Moya, and sixteen days later won his first battle as Emperor before Qūnka, destroying the army of the rebel Kingdom of Toledo (Trent's account and screens).",
+  "note": "Son and heir of Sultan Saʿd, born to Duʿāʾ the Marīnid on 8 March 1366, a month before the Peace of Independence. At eight he was already a silver tongue (63 in diplomacy). In late 1374 he and his half-brother Yūsuf were both given the costly tutors their father had had; his mother Duʿā had wanted them for him alone (Trent's account). On 16 March 1375 he was betrothed to Bernarda of Murcia, the gifted heir of the Ṭāʾifa of Mursiyya, as Murcia was taken into the crown (Trent's account). From 23 August 1385 he ruled as regent while his father made the Hajj, with his mother Duʿā and Aiman quarrelling at court (Trent's account). Before that he had served as an admiral, to carry the crown's authority over the seas: his first command, from 17 June 1383 (save of 1 October 1387) until he joined the dīwān. In 1386 he was brought home, and on 22 January 1387 he took the seat in the dīwān created by the Ḥijāba, to help his father's scholar-building project (Trent's account). He had married Bernarda of Murcia by 1 October 1387. In May 1391 he took a second wife, ʿĀʾisha of the house of ʿOthmān. His sons: Yūsuf (1383–1384) and Muḥammad (born 25 October 1385) by Bernarda; Saʿd (born 17 June 1392) and Aḥmad (born 21 October 1393) by ʿĀʾisha (save of 2 January 1394). By 1398 his sons were Muḥammad, the eldest, judged unfit to rule; Saʿd, intelligent and studious; and Aḥmad, ambitious (Trent's account; save of 3 September 1398). He became Emperor on 2 March 1405, at thirty-eight, when his father died on the march through Moya, and sixteen days later won his first battle as Emperor before Qūnka, destroying the army of the rebel Kingdom of Toledo (Trent's account and screens). On 10 July 1405 he beat the remnant of the Toledo army before Qūnka a second time, and by 24 August 1405 the risings of 807 were over; on 1 September 1405 the Ṭāʾifa of al-Gharb was taken into the crown. On 1 March 1408 he resolved to raise Qurṭuba as the Capital of the Old Caliphate but kept his court at Ishbīliya (Trent's screen). By August 1408 the game counted him just as well as deceitful and goal-oriented, and he had set aside any thought of changing the succession: his heir Muḥammad's sons would carry the line if he reigned long (Trent's account; save of 5 August 1408).",
   "stats": {
    "adm": 47,
    "dip": 100,
@@ -1235,7 +1239,8 @@
   "traits": [
    "worldly"
   ],
-  "note": "King of Castile from his father's death on 29 March 1366, and of Portugal from his mother's on 4 October 1367: the two crowns in a personal union, each keeping its own government. In September 1370 he had no army in the field (save of 13 September 1370). When the union broke in 1389 he kept Portugal. In the War of the League he stood with Castile, and at the Peace of Ramaḍān (22 June 1395) he gave up Lisbon and 19 other towns to al-Andalus (save of 22 June 1395)."
+  "note": "King of Castile from his father's death on 29 March 1366, and of Portugal from his mother's on 4 October 1367: the two crowns in a personal union, each keeping its own government. In September 1370 he had no army in the field (save of 13 September 1370). When the union broke in 1389 he kept Portugal. In the War of the League he stood with Castile, and at the Peace of Ramaḍān (22 June 1395) he gave up Lisbon and 19 other towns to al-Andalus (save of 22 June 1395). He died on 29 April 1402, aged fifty-nine, and his son Fernando succeeded him in Portugal (save of 29 June 1410).",
+  "died": "1402-04-29"
  },
  {
   "id": "fernando-of-castile",
@@ -1246,12 +1251,18 @@
   "born": "1364-10-11",
   "father": "jeronimo-of-castile",
   "roles": [
-   "heir of Castile and Portugal"
+   "king of Portugal"
   ],
   "traits": [
-   "child_gallant"
+   "deceitful",
+   "babbling_buffoon"
   ],
-  "note": "Jerónimo's son and heir, six years old in September 1370."
+  "note": "Jerónimo's son and heir, six years old in September 1370. King of Portugal from his father's death on 29 April 1402. In June 1410, at forty-five, he took Portugal into Qashtāla's war against the Emperor Ismāʿīl. His heir is his daughter Joana (save of 29 June 1410).",
+  "stats": {
+   "adm": 37,
+   "dip": 41,
+   "mil": 59
+  }
  },
  {
   "id": "joan-of-aragon",
@@ -1272,7 +1283,8 @@
   "traits": [
    "greedy"
   ],
-  "note": "King of Aragon and of Sicily (the two crowns in a union since 1343) from 24 April 1368; the game gives him the Catalan form of Juan. His heir in 1370 is his infant daughter Violant. He lost Aragon to the Naṣrids at the peace of 15 March 1375, after the battles of Barcelona and Tarragona and a siege of 282 days, and was let go unharmed to Palermo as a term of the peace, keeping Sicily less Malta."
+  "note": "King of Aragon and of Sicily (the two crowns in a union since 1343) from 24 April 1368; the game gives him the Catalan form of Juan. His heir in 1370 is his infant daughter Violant. He lost Aragon to the Naṣrids at the peace of 15 March 1375, after the battles of Barcelona and Tarragona and a siege of 282 days, and was let go unharmed to Palermo as a term of the peace, keeping Sicily less Malta. He died on 27 April 1410, aged sixty (save of 29 June 1410).",
+  "died": "1410-04-27"
  },
  {
   "id": "abu-ishaq-ibrahim",
@@ -1560,7 +1572,7 @@
   "traits": [
    "child_gregarious"
   ],
-  "note": "Son and heir of Abū ʿInān Fāris of Fās. Betrothed to Jadīla bint Yūsuf, the sultan's sister, on 3 April 1372 (save of 16 January 1373). Married Jadīla by January 1376 (Trent's account)."
+  "note": "Son and heir of Abū ʿInān Fāris of Fās. Betrothed to Jadīla bint Yūsuf, the sultan's sister, on 3 April 1372 (save of 16 January 1373). Married Jadīla by January 1376 (Trent's account). Sultan of Fās from 7 October 1381. In June 1410 he answered the Emperor Ismāʿīl's call against Qashtāla with his vassals of Tilimsān and Tafilalt (save of 29 June 1410; Trent's account)."
  },
  {
   "id": "ramadan-of-barqa",
@@ -1738,7 +1750,7 @@
    "stubborn",
    "drunkard"
   ],
-  "note": "Son of King Fernando, king of Castile from his father's death on 6 January 1394, two months before the Emperor's declaration. He lost the War of the League and on 22 June 1395 surrendered 51 towns, Madrid, Salamanca, Ávila and Cuenca among them, with reparations for ten years (saves of 4 March 1394 and 22 June 1395)."
+  "note": "Son of King Fernando, king of Castile from his father's death on 6 January 1394, two months before the Emperor's declaration. He lost the War of the League and on 22 June 1395 surrendered 51 towns, Madrid, Salamanca, Ávila and Cuenca among them, with reparations for ten years (saves of 4 March 1394 and 22 June 1395). In June 1410, at thirty-nine, still king, stubborn and a drunkard, he faced the Emperor Ismāʿīl's declaration of the fourth war of the Istirdād with 1,650 men under arms; his heir is his son Fernando, eighteen (save of 29 June 1410)."
  },
  {
   "id": "agustin-arce",
@@ -1796,7 +1808,8 @@
    "mil": 63
   },
   "traits": [],
-  "note": "Cousin of the Emperor Saʿd: son of his late uncle Faraj ibn Ismāʿīl and of Shamʿa of the central Sahara. Husband of the Emperor's daughter Umm al-Fatḥ, who sits in the dīwān; their daughters were Maryam (1390–1394) and Jadīla (born 1393). On 5 August 1395 he was made ruler of the new Ṭāʾifa of Qūnka, 20 towns of the Castilian east taken at the Peace of Ramaḍān, with his brother Yūsuf (born 1360) as heir. He is also heir to the Ṭāʾifa of Shalamanka (save of 5 August 1395)."
+  "note": "Cousin of the Emperor Saʿd: son of his late uncle Faraj ibn Ismāʿīl and of Shamʿa of the central Sahara. Husband of the Emperor's daughter Umm al-Fatḥ, who sits in the dīwān; their daughters were Maryam (1390–1394) and Jadīla (born 1393). On 5 August 1395 he was made ruler of the new Ṭāʾifa of Qūnka, 20 towns of the Castilian east taken at the Peace of Ramaḍān, with his brother Yūsuf (born 1360) as heir. He is also heir to the Ṭāʾifa of Shalamanka (save of 5 August 1395). He died on 20 February 1408, aged forty-nine, and his daughter Maryam succeeded him as Shaykha of Qūnka (save of 5 August 1408).",
+  "died": "1408-02-20"
  },
  {
   "id": "ismail-ibn-muhammad-al-abid",
@@ -1837,7 +1850,7 @@
    "mil": 17
   },
   "traits": [],
-  "note": "Eldest surviving son of the crown prince Ismāʿīl, by Bernarda of Mursiyya; born 25 October 1385, while his grandfather was on the road to Makka. By 1398 the game marks him a dull child, and the court thinks him stubborn and unfit to rule (Trent's account; save of 3 September 1398). At seventeen, in July 1403, he stood at 16/20/17, married and with two children; the childhood trait had lapsed with no adult trait in its place (save of 18 July 1403). On his father's accession, 2 March 1405, he became heir to the throne by primogeniture (save of 31 March 1405)."
+  "note": "Eldest surviving son of the crown prince Ismāʿīl, by Bernarda of Mursiyya; born 25 October 1385, while his grandfather was on the road to Makka. By 1398 the game marks him a dull child, and the court thinks him stubborn and unfit to rule (Trent's account; save of 3 September 1398). At seventeen, in July 1403, he stood at 16/20/17, married and with two children; the childhood trait had lapsed with no adult trait in its place (save of 18 July 1403). On his father's accession, 2 March 1405, he became heir to the throne by primogeniture (save of 31 March 1405). Heir to his father from 2 March 1405. By August 1408, at twenty-two, he was married to two daughters of the Catalan ṭāʾifa houses, Magdalena de Borja of Aragon and Isabel de Montsoriu of Catalonia, and had five children: Ismāʿīl (born 4 October 1402) and Saʿd (6 June 1408) by Magdalena, Aḥmad (10 June 1403), ʿĀʾisha (10 March 1405) and a daughter (10 August 1407) by Isabel. Both his eldest sons were gifted, enough to set aside the thought of changing the succession (Trent's account; save of 5 August 1408)."
  },
  {
   "id": "saad-ibn-ismail-ibn-saad",
@@ -1851,14 +1864,12 @@
   "mother": "aisha-ottoman",
   "roles": [],
   "stats": {
-   "adm": 70,
-   "dip": 37,
-   "mil": 45
+   "adm": 83,
+   "dip": 43,
+   "mil": 61
   },
-  "traits": [
-   "child_intelligent"
-  ],
-  "note": "Second son of the crown prince Ismāʿīl, by the Ottoman princess ʿĀʾisha; born 17 June 1392. Intelligent and studious, and given the costly in-depth education of the heirs (Trent's account; save of 3 September 1398). In 1398 the Emperor leaves the succession law as it stands, watching whether this Saʿd grows into a worthy ruler; if not, he means to choose an heir himself (Trent). At eleven, in July 1403, he stood at 56/35/36, still intelligent and on the in-depth education (save of 18 July 1403). At twelve, in March 1405, he stood at 70/37/45, second in line behind his elder brother Muḥammad when their father became Emperor (save of 31 March 1405)."
+  "traits": [],
+  "note": "Second son of the crown prince Ismāʿīl, by the Ottoman princess ʿĀʾisha; born 17 June 1392. Intelligent and studious, and given the costly in-depth education of the heirs (Trent's account; save of 3 September 1398). In 1398 the Emperor leaves the succession law as it stands, watching whether this Saʿd grows into a worthy ruler; if not, he means to choose an heir himself (Trent). At eleven, in July 1403, he stood at 56/35/36, still intelligent and on the in-depth education (save of 18 July 1403). At twelve, in March 1405, he stood at 70/37/45, second in line behind his elder brother Muḥammad when their father became Emperor (save of 31 March 1405). By August 1408, at sixteen, he stood at 83/43/61 and was married to his cousin Maryam bint Saʿd, Shaykha of Qūnka, the Emperor's niece; his children, as Trent put it, will rule the frontier. Behind his brother Muḥammad and Muḥammad's sons he is no longer the answer to the succession (Trent's account; save of 5 August 1408). His first son, Abū al-Ḥasan ʿAlī, was born to Maryam on 17 April 1410 (save of 29 June 1410)."
  },
  {
   "id": "saad-ibn-yusuf-ibn-saad",
@@ -1919,5 +1930,141 @@
   },
   "traits": [],
   "note": "Son of King Alfons; king of the renewed Aragon from his father's death on 24 February 1393, a boy of eleven. His sister Caterina is his heir (save of 3 September 1398)."
+ },
+ {
+  "id": "maryam-bint-saad-ibn-faraj",
+  "name": "Maryam bint Saʿd",
+  "nameArabic": "مريم بنت سعد",
+  "nameGame": "Mary",
+  "gameId": 75578,
+  "dynasty": "Naṣrid",
+  "born": "1390-11-05",
+  "father": "saad-ibn-faraj",
+  "mother": "umm-al-fath-bint-saad",
+  "female": true,
+  "roles": [
+   "Shaykha of the Ṭāʾifa of Qūnka"
+  ],
+  "stats": {
+   "adm": 51,
+   "dip": 83,
+   "mil": 69
+  },
+  "traits": [
+   "free_thinker"
+  ],
+  "note": "Daughter of Saʿd ibn Faraj, ruler of the Ṭāʾifa of Qūnka, and of Umm al-Fatḥ, the late Emperor Saʿd's daughter: a niece of the Emperor Ismāʿīl. Married to her cousin Saʿd ibn Ismāʿīl, the Emperor's second son. On her father's death on 20 February 1408 she became Shaykha of Qūnka, at seventeen (save of 5 August 1408; Trent's account). Mother of Abū al-Ḥasan ʿAlī, born 17 April 1410. By then the game counted her a free thinker (save of 29 June 1410)."
+ },
+ {
+  "id": "ismail-ibn-muhammad-ibn-ismail",
+  "name": "Ismāʿīl ibn Muḥammad",
+  "nameArabic": "إسماعيل بن محمد",
+  "nameGame": "Ismail",
+  "gameId": 16790180,
+  "dynasty": "Naṣrid",
+  "born": "1402-10-04",
+  "father": "muhammad-ibn-ismail-ibn-saad",
+  "mother": "magdalena-de-borja",
+  "roles": [],
+  "stats": {
+   "adm": 26,
+   "dip": 22,
+   "mil": 12
+  },
+  "traits": [
+   "child_gifted"
+  ],
+  "note": "Eldest son of the heir Muḥammad, by Magdalena de Borja; born 4 October 1402, the Emperor's grandson and great-grandson of the Emperor Saʿd. Gifted, and with his half-brother Aḥmad enough at five to set aside the thought of changing the succession (Trent's account; save of 5 August 1408, taken before the boys' educations were set)."
+ },
+ {
+  "id": "ahmad-ibn-muhammad-ibn-ismail",
+  "name": "Aḥmad ibn Muḥammad",
+  "nameArabic": "أحمد بن محمد",
+  "nameGame": "Ahmad",
+  "gameId": 16805391,
+  "dynasty": "Naṣrid",
+  "born": "1403-06-10",
+  "father": "muhammad-ibn-ismail-ibn-saad",
+  "mother": "isabel-de-montsoriu",
+  "roles": [],
+  "stats": {
+   "adm": 13,
+   "dip": 14,
+   "mil": 19
+  },
+  "traits": [
+   "child_gifted"
+  ],
+  "note": "Second son of the heir Muḥammad, by Isabel de Montsoriu; born 10 June 1403. Gifted, like his elder half-brother Ismāʿīl (save of 5 August 1408)."
+ },
+ {
+  "id": "magdalena-de-borja",
+  "name": "Magdalena de Borja",
+  "nameGame": "Madeleine",
+  "gameId": 16789986,
+  "dynasty": "Borja",
+  "born": "1382-06-10",
+  "father": "alfons-de-borja",
+  "female": true,
+  "roles": [],
+  "stats": {
+   "adm": 55,
+   "dip": 57,
+   "mil": 43
+  },
+  "traits": [],
+  "note": "Daughter of King Alfons of the Ṭāʾifa of Aragon, sister of King Rodrigo and of Caterina, Prince Yūsuf's wife. Wife of the heir Muḥammad ibn Ismāʿīl and mother of his sons Ismāʿīl (1402) and Saʿd (1408) (save of 5 August 1408)."
+ },
+ {
+  "id": "isabel-de-montsoriu",
+  "name": "Isabel de Montsoriu",
+  "nameGame": "Elizabeth",
+  "gameId": 69221,
+  "dynasty": "Montsoriu",
+  "born": "1382-08-19",
+  "father": "francesc-de-montsoriu",
+  "female": true,
+  "roles": [],
+  "stats": {
+   "adm": 75,
+   "dip": 30,
+   "mil": 51
+  },
+  "traits": [],
+  "note": "Daughter of Francesc de Montsoriu, founder of the house that rules the Ṭāʾifa of Catalonia. Wife of the heir Muḥammad ibn Ismāʿīl and mother of his son Aḥmad (1403) and two daughters (save of 5 August 1408). Her mother was Fāṭima bint Yūsuf, daughter of Yūsuf I, so Isabel is a granddaughter of the house of Naṣr (save of 29 June 1410).",
+  "mother": "fatima-bint-yusuf"
+ },
+ {
+  "id": "muhammad-ibn-yusuf-ibn-faraj",
+  "name": "Muḥammad ibn Yūsuf",
+  "nameArabic": "محمد بن يوسف",
+  "nameGame": "Muhammad",
+  "gameId": 75017,
+  "dynasty": "Naṣrid",
+  "born": "1389-11-21",
+  "roles": [
+   "member of the dīwān"
+  ],
+  "stats": {
+   "adm": 42,
+   "dip": 50,
+   "mil": 72
+  },
+  "traits": [],
+  "note": "Son of Yūsuf ibn Faraj, the late Faraj ibn Ismāʿīl's son, and of Jadīla, daughter of the Emperor Saʿd: a nephew of the Emperor Ismāʿīl. He took a seat in the dīwān on 24 August 1405, in place of Ismāʿīl ibn Yūsuf, set to integrating the lands won back from the risings (save of 5 August 1408)."
+ },
+ {
+  "id": "abu-al-hasan-ali-ibn-saad",
+  "name": "Abū al-Ḥasan ʿAlī ibn Saʿd",
+  "nameArabic": "أبو الحسن علي بن سعد",
+  "nameGame": "Abu al-Hasan Ali",
+  "gameId": 33593956,
+  "dynasty": "Naṣrid",
+  "born": "1410-04-17",
+  "father": "saad-ibn-ismail-ibn-saad",
+  "mother": "maryam-bint-saad-ibn-faraj",
+  "roles": [],
+  "traits": [],
+  "note": "First son of the Emperor's son Saʿd and of Maryam, Shaykha of Qūnka; born 17 April 1410. Through his mother, heir to the frontier ṭāʾifa of Qūnka (save of 29 June 1410)."
  }
 ]

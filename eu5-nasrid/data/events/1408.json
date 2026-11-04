@@ -1,0 +1,155 @@
+[
+ {
+  "id": "1408-02-20-death-of-saad-ibn-faraj",
+  "date": "1408-02-20",
+  "type": "death",
+  "people": [
+   "saad-ibn-faraj",
+   "maryam-bint-saad-ibn-faraj",
+   "umm-al-fath-bint-saad"
+  ],
+  "places": [
+   "qunka"
+  ],
+  "wars": [],
+  "title": "Saʿd ibn Faraj, ruler of the Ṭāʾifa of Qūnka since 1395 and the Emperor's brother-in-law, dies at forty-nine. His daughter Maryam, seventeen, wife of the Emperor's son Saʿd, becomes Shaykha of Qūnka",
+  "data": {
+   "age": 49,
+   "successor": "Maryam bint Saʿd, born 5 November 1390 (51/83/69), daughter of Saʿd ibn Faraj and Umm al-Fatḥ"
+  },
+  "source": "save of 5 August 1408"
+ },
+ {
+  "id": "1408-03-01-capital-of-the-old-caliphate",
+  "date": "1408-03-01",
+  "type": "reform",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [
+   "qurtuba",
+   "ishbiliyya"
+  ],
+  "wars": [],
+  "title": "The Emperor Ismāʿīl resolves to raise Qurṭuba from its ruins as the Capital of the Old Caliphate, but keeps his court at Ishbīliya. Qurṭuba is given the dignity and the means to rebuild, and Ishbīliya grows richer still",
+  "data": {
+   "event": "Capital of the old Caliphate (flavor_gra.17)",
+   "text": "its streets are filled with crime, its inhabitants curse the decay that has befallen the place, and many old sites remain in ruins after our conflicts with Christian rulers (the game's text)",
+   "choice": "We should keep our Court where it is (the option on Trent's screen; the save of 5 August 1408 confirms the capital still at Ishbīliya)",
+   "alternative": "Qurṭuba shall prosper once more!",
+   "effects": {
+    "Qurṭuba": "Capital of the Old Caliphate, as long as the realm lasts: raw materials output +15%, local monthly prosperity +1%, local monthly development growth +10%",
+    "Ishbīliya": "prosperity +30%, development +2.5"
+   },
+   "realm": {
+    "treasury": 531.25,
+    "population": "2.017 million",
+    "legitimacy": 100,
+    "age": "Age of Renaissance",
+    "markets": "Ishbīliya ranked first among the markets of the world"
+   }
+  },
+  "source": "Trent's screenshot of 1 March 1408; save of 5 August 1408"
+ },
+ {
+  "id": "1408-05-27-death-of-ismail-ibn-yusuf",
+  "date": "1408-05-27",
+  "type": "death",
+  "people": [
+   "ismail-ibn-yusuf"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Ismāʿīl ibn Yūsuf, the late Emperor's brother, dies at fifty-four. He had sat in the dīwān from 1382 until 1405",
+  "data": {
+   "age": 54,
+   "diwan": "from 1 December 1382 to August 1405, when Muḥammad ibn Yūsuf took his seat"
+  },
+  "source": "save of 5 August 1408"
+ },
+ {
+  "id": "1408-08-05-the-sons-of-muhammad",
+  "date": "1408-08-05",
+  "type": "player_note",
+  "people": [
+   "ismail-ibn-saad",
+   "muhammad-ibn-ismail-ibn-saad",
+   "ismail-ibn-muhammad-ibn-ismail",
+   "ahmad-ibn-muhammad-ibn-ismail",
+   "saad-ibn-ismail-ibn-saad",
+   "maryam-bint-saad-ibn-faraj"
+  ],
+  "places": [
+   "ishbiliyya",
+   "qunka"
+  ],
+  "wars": [],
+  "title": "The sons of Muḥammad. The heir's two eldest boys, Ismāʿīl and Aḥmad, both five and both gifted, are enough to set aside the thought of changing the succession: if the Emperor Ismāʿīl reigns long, the crown can pass to Muḥammad and on to them. The Emperor's son Saʿd is not forgotten; he is married to Maryam, Shaykha of Qūnka, and his children will rule the frontier",
+  "data": {
+   "heir": "Muḥammad ibn Ismāʿīl, 22 (16/20/17), no adult traits; wives Magdalena de Borja (daughter of King Alfons of Aragon) and Isabel de Montsoriu (daughter of Francesc de Montsoriu of Catalonia)",
+   "children": {
+    "Ismāʿīl (b. 4 October 1402, by Magdalena)": "child_gifted, 26/22/12, balanced education",
+    "Aḥmad (b. 10 June 1403, by Isabel)": "child_gifted, 13/14/19, balanced education",
+    "ʿĀʾisha (b. 10 March 1405, by Isabel)": "child_intelligent",
+    "a daughter (b. 10 August 1407, by Isabel)": "",
+    "Saʿd (b. 6 June 1408, by Magdalena)": ""
+   },
+   "emperorsSons": {
+    "Saʿd ibn Ismāʿīl (16)": "83/43/61, married to Maryam, Shaykha of Qūnka",
+    "Aḥmad ibn Ismāʿīl (14)": "44/58/33, still ambitious"
+   },
+   "grandsonOfSaad": {
+    "Saʿd ibn Yūsuf (14)": "46/54/62, gifted, in-depth education"
+   },
+   "emperor": "Ismāʿīl ibn Saʿd, 42 (47/100/38), deceitful, goal-oriented, and now just",
+   "diwan": {
+    "Umm al-Fatḥ": "integrating the new lands (from 24 August 1405)",
+    "Muḥammad ibn Yūsuf (b. 1389, son of Yūsuf ibn Faraj and the Emperor's sister Jadīla)": "integrating the new lands (from 24 August 1405)",
+    "Maryam bint Yūsuf": "integrating the new lands",
+    "Yūsuf ibn Saʿd": "encouraging migration (from 1 October 1405)"
+   },
+   "realm": {
+    "towns": 161,
+    "population": 2018108,
+    "income": 269.8,
+    "expenses": 191.6,
+    "treasury": 417.8,
+    "stability": 26.1,
+    "subjects": [
+     "Valencia",
+     "Catalonia",
+     "Aragon",
+     "Shalamanka",
+     "Qūnka"
+    ]
+   },
+   "decision": "Enough to set thoughts of changing succession aside; his heirs will lead the realm forward if Ismāʿīl can have a long reign (Trent)",
+   "note": "save from before the boys' educations were set (Trent)"
+  },
+  "source": "save of 5 August 1408; Trent's account and screens"
+ },
+ {
+  "id": "1408-10-11-expeditions",
+  "date": "1408-10-11",
+  "type": "player_note",
+  "people": [],
+  "places": [],
+  "wars": [],
+  "title": "A new round of expeditions sets out: one south, to follow the coast of Africa further; one to the islands found off the west coast, west of Mali; and two to the islands the Portuguese and Castilian explorers call the Canaries and Madeira",
+  "data": {
+   "expeditions": [
+    "south along the African coast",
+    "the islands west of Mali (Cape Verde)",
+    "the Canaries",
+    "Madeira"
+   ],
+   "note": "the Canaries and Madeira voyages are no longer active in the autosaves of 1 March 1409 and 1 March 1410; the explorers of the other three are named from those autosaves and the save of 29 June 1410",
+   "explorersInLaterSaves": {
+    "south, into the Gulf of Guinea": "Daniel, born 1369, a Sephardi convert to Islam (52/51/63)",
+    "the islands west of Mali (Cape Verde)": "García de Ponte de Sor, born 1377, a Catholic Portuguese noble, an offensive planner (62/46/69), who in August 1405 had led the rebels of Estremadura against al-Ushbūna",
+    "the Azores (already at sea by August 1408)": "ʿAbd al-Ghafūr, born 1372, an Andalusī of the burghers (56/90/57)"
+   }
+  },
+  "source": "Trent's account (11 October 1408); autosaves of 1 March 1409 and 1 March 1410"
+ }
+]
