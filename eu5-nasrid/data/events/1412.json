@@ -1,5 +1,28 @@
 [
  {
+  "id": "1412-01-01-funchal",
+  "date": "1412-01-01",
+  "type": "territory_change",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Funchal on Madeira becomes a town of the crown: the empire's first settlement beyond the sea, 1,800 souls, peasants and slaves, Castilian by tongue and Muslim by faith",
+  "data": {
+   "location": "Funchal, Madeira",
+   "population": 1841,
+   "popTypes": {
+    "peasants": 1250,
+    "slaves": 574
+   },
+   "culture": "Castilian",
+   "religion": "Sunni",
+   "note": "owned from 1 January 1412 by the save's ownership record; with the island settlements a new estate, the tribes, appears (Trent), to be followed only once it holds 3–4% of power or more"
+  },
+  "source": "save of 24 October 1414; Trent's account"
+ },
+ {
   "id": "1412-01-02-jadila-to-the-diwan",
   "date": "1412-01-02",
   "type": "appointment",
