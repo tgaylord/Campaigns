@@ -56,6 +56,32 @@
   "source": "Trent's account, April 1419"
  },
  {
+  "id": "1419-07-27-birth-of-saad-ibn-ahmad",
+  "date": "1419-07-27",
+  "type": "birth",
+  "people": [
+   "ahmad-ibn-yusuf-ibn-ismail"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Maryam, daughter of Aḥmad of Burtuqāl, bears Aḥmad ibn Yūsuf a son, Saʿd",
+  "data": {},
+  "source": "save of 11 August 1420"
+ },
+ {
+  "id": "1419-08-29-death-of-aisha-bint-yusuf",
+  "date": "1419-08-29",
+  "type": "death",
+  "people": [
+   "aisha-bint-yusuf"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "ʿĀʾisha bint Yūsuf, the last child of Yūsuf I, dies at fifty-nine",
+  "data": {},
+  "source": "save of 11 August 1420"
+ },
+ {
   "id": "1419-09-the-road-to-balansiyya",
   "date": "1419-09-01",
   "type": "reform",
@@ -75,5 +101,21 @@
    "military": "a road for moving troops to the French border in case of another crusade (Trent)"
   },
   "source": "Trent's account, September 1419"
+ },
+ {
+  "id": "1419-09-04-death-of-daniel",
+  "date": "1419-09-04",
+  "type": "death",
+  "people": [],
+  "places": [],
+  "wars": [],
+  "title": "Daniel, the Sephardi convert who in 811 sailed further south than any captain of al-Andalus, into the gulf below the bulge of Africa, dies of a fever at Sanlúcar at fifty",
+  "data": {
+   "born": "1369-05-28",
+   "note": "identified by birth year and abilities (52/51/63) with the leader of the southern expedition of 1408",
+   "cause": "fever",
+   "place": "Sanlúcar"
+  },
+  "source": "save of 11 August 1420"
  }
 ]

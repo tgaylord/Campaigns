@@ -1012,7 +1012,8 @@
   "traits": [
    "child_rowdy"
   ],
-  "note": "Daughter of Yūsuf I and Sayyida of Fezzan, full sister of Sultan Saʿd. Betrothed on 3 April 1372 to Abū al-Faḍl, son and heir of Abū ʿInān Fāris of Fās (save of 16 January 1373). Married to him by January 1376, when the match helped reopen talks of an alliance between al-Andalus and Fās (Trent's account). Queen of the Marīnids from her husband's accession on 7 October 1381."
+  "note": "Daughter of Yūsuf I and Sayyida of Fezzan, full sister of Sultan Saʿd. Betrothed on 3 April 1372 to Abū al-Faḍl, son and heir of Abū ʿInān Fāris of Fās (save of 16 January 1373). Married to him by January 1376, when the match helped reopen talks of an alliance between al-Andalus and Fās (Trent's account). Queen of the Marīnids from her husband's accession on 7 October 1381. She died on 27 December 1416, at sixty, three months before her husband; her son Abū Ḥammū had died before her, and her grandson Yaḥyā became sultan of Fās in 1417 (save of 11 August 1420).",
+  "died": "1416-12-27"
  },
  {
   "id": "maryam-bint-yusuf",
@@ -1078,7 +1079,9 @@
   "roles": [],
   "traits": [
    "child_intelligent"
-  ]
+  ],
+  "died": "1419-08-29",
+  "note": "She died on 29 August 1419, at fifty-nine, the last child of Yūsuf I (save of 11 August 1420)."
  },
  {
   "id": "umm-al-fath-bint-yusuf",
@@ -1127,7 +1130,8 @@
   "female": true,
   "roles": [],
   "traits": [],
-  "note": "First child of Sultan Saʿd, born to Aiman the Mamlūk three months after the Portuguese peace. She shares her name, 'mother of victory', with her aunt, Yūsuf I's youngest daughter. By January 1394 she sat in the dīwān, in Duʿā's old seat, integrating the new lands (saves of 1394). She is married to her cousin Saʿd ibn Faraj, who on 5 August 1395 became ruler of the Ṭāʾifa of Qūnka (save of 5 August 1395). Widowed on 20 February 1408, when Saʿd ibn Faraj died; their daughter Maryam succeeded him in Qūnka. From 24 August 1405 she was integrating the lands won back from the risings (save of 5 August 1408)."
+  "note": "First child of Sultan Saʿd, born to Aiman the Mamlūk three months after the Portuguese peace. She shares her name, 'mother of victory', with her aunt, Yūsuf I's youngest daughter. By January 1394 she sat in the dīwān, in Duʿā's old seat, integrating the new lands (saves of 1394). She is married to her cousin Saʿd ibn Faraj, who on 5 August 1395 became ruler of the Ṭāʾifa of Qūnka (save of 5 August 1395). Widowed on 20 February 1408, when Saʿd ibn Faraj died; their daughter Maryam succeeded him in Qūnka. From 24 August 1405 she was integrating the lands won back from the risings (save of 5 August 1408). She died on 25 March 1416, at fifty-one, still in the dīwān (save of 11 August 1420).",
+  "died": "1416-03-25"
  },
  {
   "id": "ismail-ibn-saad",
@@ -1548,9 +1552,16 @@
   "born": "1372-02-19",
   "father": "ismail-ibn-yusuf",
   "mother": "hippolyte-of-villa-di-chiesa",
-  "roles": [],
+  "roles": [
+   "ruler of the Ṭāʾifa of Banbalūna"
+  ],
   "traits": [],
-  "note": "Son of Ismāʿīl ibn Yūsuf and Hippolyte of Villa di Chiesa, born 19 February 1372 (save of 16 January 1373)."
+  "note": "Son of Ismāʿīl ibn Yūsuf and Hippolyte of Villa di Chiesa, born 19 February 1372 (save of 16 January 1373). A cousin of the Emperor Ismāʿīl. On 1 November 1411 he was made ruler of the new Ṭāʾifa of Banbalūna, 18 towns of Navarre and the upper Duero, from Pamplona and Tudela to Soria and Medinaceli (save of 1 November 1411). On 1 November 1411 he became ruler of Banbalūna; his son Aḥmad sits in the dīwān. His wives bore him Fāṭima (8 June 1419) and Muḥammad (18 November 1419) (save of 11 August 1420).",
+  "stats": {
+   "adm": 56,
+   "dip": 30,
+   "mil": 63
+  }
  },
  {
   "id": "muhammad-ibn-ismail-ibn-yusuf",
@@ -1598,17 +1609,20 @@
   "born": "1359-07-02",
   "father": "abu-inan-faris",
   "roles": [
-   "heir of Morocco"
+   "sultan of Fās (1381–1417)"
   ],
   "stats": {
-   "adm": 28,
-   "dip": 53,
-   "mil": 28
+   "adm": 35,
+   "dip": 61,
+   "mil": 36
   },
   "traits": [
-   "child_gregarious"
+   "charismatic_negotiator",
+   "worldly",
+   "careful"
   ],
-  "note": "Son and heir of Abū ʿInān Fāris of Fās. Betrothed to Jadīla bint Yūsuf, the sultan's sister, on 3 April 1372 (save of 16 January 1373). Married Jadīla by January 1376 (Trent's account). Sultan of Fās from 7 October 1381. In June 1410 he answered the Emperor Ismāʿīl's call against Qashtāla with his vassals of Tilimsān and Tafilalt (save of 29 June 1410; Trent's account)."
+  "note": "Son and heir of Abū ʿInān Fāris of Fās. Betrothed to Jadīla bint Yūsuf, the sultan's sister, on 3 April 1372 (save of 16 January 1373). Married Jadīla by January 1376 (Trent's account). Sultan of Fās from 7 October 1381. In June 1410 he answered the Emperor Ismāʿīl's call against Qashtāla with his vassals of Tilimsān and Tafilalt (save of 29 June 1410; Trent's account). He died of pneumonia on 19 March 1417, at fifty-seven, after thirty-five years on the throne. His son and heir Abū Ḥammū, Jadīla's son, had died in a hunting accident on 14 September 1410, during the War of Jillīqiya, so the throne passed to Abū Ḥammū's son Yaḥyā, fifteen, who ruled in his own name from his sixteenth birthday, 14 July 1417 (save of 11 August 1420).",
+  "died": "1417-03-19"
  },
  {
   "id": "ramadan-of-barqa",
@@ -1889,8 +1903,10 @@
    "dip": 20,
    "mil": 17
   },
-  "traits": [],
-  "note": "Eldest surviving son of the crown prince Ismāʿīl, by Bernarda of Mursiyya; born 25 October 1385, while his grandfather was on the road to Makka. By 1398 the game marks him a dull child, and the court thinks him stubborn and unfit to rule (Trent's account; save of 3 September 1398). At seventeen, in July 1403, he stood at 16/20/17, married and with two children; the childhood trait had lapsed with no adult trait in its place (save of 18 July 1403). On his father's accession, 2 March 1405, he became heir to the throne by primogeniture (save of 31 March 1405). Heir to his father from 2 March 1405. By August 1408, at twenty-two, he was married to two daughters of the Catalan ṭāʾifa houses, Magdalena de Borja of Aragon and Isabel de Montsoriu of Catalonia, and had five children: Ismāʿīl (born 4 October 1402) and Saʿd (6 June 1408) by Magdalena, Aḥmad (10 June 1403), ʿĀʾisha (10 March 1405) and a daughter (10 August 1407) by Isabel. Both his eldest sons were gifted, enough to set aside the thought of changing the succession (Trent's account; save of 5 August 1408). On 21 June 1411 he won his first sea battle, at the mouth of the Duero, with 34 ships of al-Andalus and Valencia against Portugal's 17, sinking or taking 15 for the loss of 3. He likes boats (Trent's battle screen and account)."
+  "traits": [
+   "extortioner"
+  ],
+  "note": "Eldest surviving son of the crown prince Ismāʿīl, by Bernarda of Mursiyya; born 25 October 1385, while his grandfather was on the road to Makka. By 1398 the game marks him a dull child, and the court thinks him stubborn and unfit to rule (Trent's account; save of 3 September 1398). At seventeen, in July 1403, he stood at 16/20/17, married and with two children; the childhood trait had lapsed with no adult trait in its place (save of 18 July 1403). On his father's accession, 2 March 1405, he became heir to the throne by primogeniture (save of 31 March 1405). Heir to his father from 2 March 1405. By August 1408, at twenty-two, he was married to two daughters of the Catalan ṭāʾifa houses, Magdalena de Borja of Aragon and Isabel de Montsoriu of Catalonia, and had five children: Ismāʿīl (born 4 October 1402) and Saʿd (6 June 1408) by Magdalena, Aḥmad (10 June 1403), ʿĀʾisha (10 March 1405) and a daughter (10 August 1407) by Isabel. Both his eldest sons were gifted, enough to set aside the thought of changing the succession (Trent's account; save of 5 August 1408). On 21 June 1411 he won his first sea battle, at the mouth of the Duero, with 34 ships of al-Andalus and Valencia against Portugal's 17, sinking or taking 15 for the loss of 3. He likes boats (Trent's battle screen and account). By 1416 he had married a third wife, his cousin Jadīla bint Saʿd of Qūnka, who bore him Yūsuf (10 July 1416) and Fāṭima (9 April 1418). By August 1420 the game marks him an extortioner (save of 11 August 1420)."
  },
  {
   "id": "saad-ibn-ismail-ibn-saad",
@@ -1921,16 +1937,18 @@
   "born": "1394-02-18",
   "father": "yusuf-ibn-saad",
   "mother": "caterina-de-borja",
-  "roles": [],
+  "roles": [
+   "member of the dīwān"
+  ],
   "stats": {
    "adm": 30,
    "dip": 37,
    "mil": 41
   },
   "traits": [
-   "child_gifted"
+   "deceitful"
   ],
-  "note": "Son of Prince Yūsuf and Caterina de Borja, heir of Aragon; born 18 February 1394 and raised at the Aragonese court at Benabarre with the costly in-depth education. At four he outshines both of the crown prince's sons, and the Emperor wants him raised at his own court (Trent's account; save of 3 September 1398). In September 1398 he was brought to Ishbīliya with his father, to be raised at the Emperor's court (Trent's account). At nine, in July 1403, he stood at 26/24/37, still gifted, now on a military education at the Emperor's court (save of 18 July 1403)."
+  "note": "Son of Prince Yūsuf and Caterina de Borja, heir of Aragon; born 18 February 1394 and raised at the Aragonese court at Benabarre with the costly in-depth education. At four he outshines both of the crown prince's sons, and the Emperor wants him raised at his own court (Trent's account; save of 3 September 1398). In September 1398 he was brought to Ishbīliya with his father, to be raised at the Emperor's court (Trent's account). At nine, in July 1403, he stood at 26/24/37, still gifted, now on a military education at the Emperor's court (save of 18 July 1403). He grew up with no adult trait until his twenties; by August 1420 the game marks him deceitful. On 15 December 1417 he took his great-aunt Umm al-Fatḥ's seat in the dīwān, integrating the new lands (save of 11 August 1420)."
  },
  {
   "id": "caterina-de-borja",
@@ -1991,9 +2009,10 @@
    "mil": 69
   },
   "traits": [
+   "entrepreneur",
    "free_thinker"
   ],
-  "note": "Daughter of Saʿd ibn Faraj, ruler of the Ṭāʾifa of Qūnka, and of Umm al-Fatḥ, the late Emperor Saʿd's daughter: a niece of the Emperor Ismāʿīl. Married to her cousin Saʿd ibn Ismāʿīl, the Emperor's second son. On her father's death on 20 February 1408 she became Shaykha of Qūnka, at seventeen (save of 5 August 1408; Trent's account). Mother of Abū al-Ḥasan ʿAlī, born 17 April 1410. By then the game counted her a free thinker (save of 29 June 1410)."
+  "note": "Daughter of Saʿd ibn Faraj, ruler of the Ṭāʾifa of Qūnka, and of Umm al-Fatḥ, the late Emperor Saʿd's daughter: a niece of the Emperor Ismāʿīl. Married to her cousin Saʿd ibn Ismāʿīl, the Emperor's second son. On her father's death on 20 February 1408 she became Shaykha of Qūnka, at seventeen (save of 5 August 1408; Trent's account). Mother of Abū al-Ḥasan ʿAlī, born 17 April 1410. By then the game counted her a free thinker (save of 29 June 1410). By August 1420 the game also marks her an entrepreneur (save of 11 August 1420)."
  },
  {
   "id": "ismail-ibn-muhammad-ibn-ismail",
@@ -2007,14 +2026,12 @@
   "mother": "magdalena-de-borja",
   "roles": [],
   "stats": {
-   "adm": 26,
-   "dip": 22,
-   "mil": 12
+   "adm": 70,
+   "dip": 73,
+   "mil": 63
   },
-  "traits": [
-   "child_gifted"
-  ],
-  "note": "Eldest son of the heir Muḥammad, by Magdalena de Borja; born 4 October 1402, the Emperor's grandson and great-grandson of the Emperor Saʿd. Gifted, and with his half-brother Aḥmad enough at five to set aside the thought of changing the succession (Trent's account; save of 5 August 1408, taken before the boys' educations were set)."
+  "traits": [],
+  "note": "Eldest son of the heir Muḥammad, by Magdalena de Borja; born 4 October 1402, the Emperor's grandson and great-grandson of the Emperor Saʿd. Gifted, and with his half-brother Aḥmad enough at five to set aside the thought of changing the succession (Trent's account; save of 5 August 1408, taken before the boys' educations were set). Grown, by August 1420, into a man of 70/73/63; the childhood gift has lapsed with no adult trait yet in its place (save of 11 August 1420)."
  },
  {
   "id": "ahmad-ibn-muhammad-ibn-ismail",
@@ -2028,14 +2045,12 @@
   "mother": "isabel-de-montsoriu",
   "roles": [],
   "stats": {
-   "adm": 13,
-   "dip": 14,
-   "mil": 19
+   "adm": 75,
+   "dip": 79,
+   "mil": 70
   },
-  "traits": [
-   "child_gifted"
-  ],
-  "note": "Second son of the heir Muḥammad, by Isabel de Montsoriu; born 10 June 1403. Gifted, like his elder half-brother Ismāʿīl (save of 5 August 1408)."
+  "traits": [],
+  "note": "Second son of the heir Muḥammad, by Isabel de Montsoriu; born 10 June 1403. Gifted, like his elder half-brother Ismāʿīl (save of 5 August 1408). Grown, by August 1420, into a man of 75/79/70; the childhood gift has lapsed with no adult trait yet in its place (save of 11 August 1420)."
  },
  {
   "id": "magdalena-de-borja",
@@ -2149,26 +2164,6 @@
   "note": "Third son of the Emperor Ismāʿīl, by the Ottoman princess ʿĀʾisha; born 21 October 1393, ambitious as a child. Married to his cousin Muʾmina, Prince Yūsuf's daughter. On 1 November 1411, at eighteen, he was made ruler of the new Ṭāʾifa of Liyūn, 17 towns of the Leonese country from León and Astorga to Zamora and Toro (save of 1 November 1411)."
  },
  {
-  "id": "yusuf-ibn-ismail-ibn-yusuf",
-  "name": "Yūsuf ibn Ismāʿīl ibn Yūsuf",
-  "nameArabic": "يوسف بن إسماعيل",
-  "nameGame": "Yusuf",
-  "gameId": 16808225,
-  "dynasty": "Naṣrid",
-  "born": "1372-02-19",
-  "father": "ismail-ibn-yusuf",
-  "roles": [
-   "ruler of the Ṭāʾifa of Banbalūna"
-  ],
-  "stats": {
-   "adm": 56,
-   "dip": 30,
-   "mil": 63
-  },
-  "traits": [],
-  "note": "Son of Ismāʿīl ibn Yūsuf, the old Emperor's brother: a cousin of the Emperor Ismāʿīl. On 1 November 1411 he was made ruler of the new Ṭāʾifa of Banbalūna, 18 towns of Navarre and the upper Duero, from Pamplona and Tudela to Soria and Medinaceli (save of 1 November 1411)."
- },
- {
   "id": "jadila-bint-saad-ibn-faraj",
   "name": "Jadīla bint Saʿd",
   "nameArabic": "جديلة بنت سعد",
@@ -2187,8 +2182,10 @@
    "dip": 42,
    "mil": 43
   },
-  "traits": [],
-  "note": "Younger daughter of Saʿd ibn Faraj of Qūnka and Umm al-Fatḥ, sister of the Shaykha Maryam. Married to the heir Muḥammad ibn Ismāʿīl, his third wife. On 2 January 1412 she took a seat in the dīwān, set to encouraging migration (save of 24 October 1414)."
+  "traits": [
+   "honest"
+  ],
+  "note": "Younger daughter of Saʿd ibn Faraj of Qūnka and Umm al-Fatḥ, sister of the Shaykha Maryam. Married to the heir Muḥammad ibn Ismāʿīl, his third wife. On 2 January 1412 she took a seat in the dīwān, set to encouraging migration (save of 24 October 1414). From 29 September 1416 she sat in the dīwān as its steward of the realm's peace, stabilising the country. She bore the heir two children: Yūsuf, on 10 July 1416, and Fāṭima, on 9 April 1418 (save of 11 August 1420)."
  },
  {
   "id": "ahmad-ibn-yusuf-ibn-ismail",
@@ -2198,7 +2195,7 @@
   "gameId": 16844936,
   "dynasty": "Naṣrid",
   "born": "1396-01-27",
-  "father": "yusuf-ibn-ismail-ibn-yusuf",
+  "father": "yusuf-ibn-ismail",
   "roles": [
    "member of the dīwān"
   ],
@@ -2207,8 +2204,10 @@
    "dip": 56,
    "mil": 70
   },
-  "traits": [],
-  "note": "Son of Yūsuf ibn Ismāʿīl, ruler of the Ṭāʾifa of Banbalūna; one of the ablest men of the house. He took Maryam bint Yūsuf's seat in the dīwān after her death in August 1412, set to integrating the new lands (save of 24 October 1414)."
+  "traits": [
+   "unmotivated"
+  ],
+  "note": "Son of Yūsuf ibn Ismāʿīl, ruler of the Ṭāʾifa of Banbalūna; one of the ablest men of the house. He took Maryam bint Yūsuf's seat in the dīwān after her death in August 1412, set to integrating the new lands (save of 24 October 1414). By 1420 he was married to two daughters of his cousin Aḥmad of Burtuqāl, Fāṭima and Maryam, and had three children: Abū al-Ḥasan ʿAlī (16 February 1417), Muʾmina (13 August 1417) and Saʿd (27 July 1419). The game marks him unmotivated (save of 11 August 1420)."
  },
  {
   "id": "abu-hammu-rahhu",
@@ -2231,5 +2230,112 @@
    "malevolent"
   ],
   "note": "Son of Khālid ibn Yaḥyā Raḥḥū. He succeeded his father as ruler of the Ṭāʾifa of Burghush on 2 September 1412 (save of 24 October 1414)."
+ },
+ {
+  "id": "temur",
+  "name": "Tīmūr",
+  "nameArabic": "تيمور",
+  "nameGame": "Temür",
+  "gameId": 7112,
+  "born": "1336-04-08",
+  "roles": [
+   "Emperor of the Tīmūrids (from 1360)"
+  ],
+  "stats": {
+   "adm": 86,
+   "dip": 59,
+   "mil": 78
+  },
+  "traits": [
+   "conqueror",
+   "tactical_genius",
+   "cruel",
+   "strategist"
+  ],
+  "note": "Lord of Samarqand from 25 October 1360. Between 1394 and 1420 his realm grew from 234 towns to 707, the fourth power of the world: Herat, Iṣfahān and Tabrīz by 1407, Kāshghar and Farghāna in February 1414, Fārs, Kirmān and Hurmuz in 1415. In August 1420 he was eighty-four and still on the throne; his chosen heir was Köke, a conqueror and army reformer of forty-eight (world files of 1394–1420)."
+ },
+ {
+  "id": "ahmad-ottoman",
+  "name": "Aḥmad",
+  "nameArabic": "أحمد",
+  "nameGame": "Ahmed",
+  "gameId": 60996,
+  "dynasty": "ʿUthmānid",
+  "born": "1373-05-26",
+  "father": "muhammad-ottoman",
+  "roles": [
+   "Ottoman sultan (from 1412)"
+  ],
+  "stats": {
+   "adm": 17,
+   "dip": 14,
+   "mil": 20
+  },
+  "traits": [
+   "zealot"
+  ],
+  "note": "Son of the Ottoman sultan Muḥammad and brother of ʿĀʾisha, the Emperor Ismāʿīl's wife. Sultan from his father's death of old age on 1 October 1412. A zealot of little ability (17/14/20), but his peace of April 1417 took Sivas and the lands of Eretna, Amasya and the Dobruja; in 1420 his realm held 294 towns and 82 ships, sixth in the world. His heir is his son Murād, born 7 November 1393, a far better diplomat (world file of 11 August 1420)."
+ },
+ {
+  "id": "aktai-mamluk",
+  "name": "Aqṭāy",
+  "nameArabic": "أقطاي",
+  "nameGame": "Aktai",
+  "gameId": 63037,
+  "dynasty": "Mamlūk",
+  "born": "1375-07-18",
+  "father": "bolot-mamluk",
+  "roles": [
+   "Mamlūk sultan of Egypt (from 1396)"
+  ],
+  "stats": {
+   "adm": 78,
+   "dip": 58,
+   "mil": 68
+  },
+  "traits": [
+   "inspiring_leader",
+   "worldly"
+  ],
+  "note": "Son of the sultan Būlād, whom he succeeded on 16 June 1396. Al-Andalus's one ally in the East since 1367. In 1420 he ruled 191 towns from Cairo and 103 more through vassals from the Ḥijāz to the Taurus, ninth in the world; Hungary, the Ottomans and the Tīmūrids are his rivals. His heir is his son Jyral, born 30 December 1401 (world file of 11 August 1420)."
+ },
+ {
+  "id": "yahya-marinid",
+  "name": "Yaḥyā",
+  "nameArabic": "يحيى",
+  "nameGame": "Yahya",
+  "gameId": 33575174,
+  "dynasty": "Marīnid",
+  "born": "1401-07-14",
+  "roles": [
+   "sultan of Fās (from 1417)"
+  ],
+  "stats": {
+   "adm": 38,
+   "dip": 39,
+   "mil": 61
+  },
+  "traits": [
+   "malevolent"
+  ],
+  "note": "Son of Abū Ḥammū and grandson of Abū al-Faḍl of Fās and Jadīla bint Yūsuf, so a great-grandson of Yūsuf I of Gharnāṭa. His father died in a hunting accident in 1410; he succeeded his grandfather on 19 March 1417 and ruled in his own name from his sixteenth birthday, 14 July 1417. Fās stays allied to al-Andalus (world file of 11 August 1420)."
+ },
+ {
+  "id": "eduardo-de-avellaneda",
+  "name": "Eduardo de Avellaneda",
+  "nameGame": "Edward de Avellaneda",
+  "gameId": 33578486,
+  "roles": [
+   "rebel lord of Zamora (1420)"
+  ],
+  "stats": {
+   "adm": 53,
+   "dip": 48,
+   "mil": 66
+  },
+  "traits": [
+   "defensive_planner"
+  ],
+  "note": "A Castilian Catholic noble who led the rising of the province of Zamora against the Ṭāʾifa of Liyūn on 1 June 1420. The Emperor Ismāʿīl destroyed his 370 men at Fermoselle on 10 August 1420 without the loss of a man (save of 11 August 1420)."
  }
 ]

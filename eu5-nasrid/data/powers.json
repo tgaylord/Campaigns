@@ -32,10 +32,11 @@
    "id": "mashriq",
    "name": "The Mashriq",
    "nameArabic": "المشرق",
-   "note": "The Muslim East: the Mamlūk sultan, Granada's one ally, and the Ottomans who have taken Constantinople.",
+   "note": "The Muslim East, where three empires have risen: the Mamlūk sultan at Cairo, al-Andalus's one ally there; the house of ʿUthmān at Constantinople, kin to the Emperor's wife; and Tīmūr at Samarqand, who holds everything from Tabrīz to Kāshghar.",
    "tags": [
     "MAM",
-    "TUR"
+    "TUR",
+    "TIM"
    ],
    "ring": 4
   },
@@ -77,6 +78,10 @@
   "old_manding_province": [
    240,
    2524
+  ],
+  "samarkand_province": [
+   3728,
+   896
   ]
  }
 }

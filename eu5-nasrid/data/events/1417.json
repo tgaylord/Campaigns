@@ -1,0 +1,85 @@
+[
+ {
+  "id": "1417-02-16-birth-of-abu-al-hasan-ali",
+  "date": "1417-02-16",
+  "type": "birth",
+  "people": [
+   "ahmad-ibn-yusuf-ibn-ismail",
+   "ahmad-ibn-ismail-ibn-yusuf"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Fāṭima, daughter of Aḥmad of Burtuqāl, bears Aḥmad ibn Yūsuf of the dīwān a son, Abū al-Ḥasan ʿAlī",
+  "data": {},
+  "source": "save of 11 August 1420"
+ },
+ {
+  "id": "1417-03-19-death-of-abu-al-fadl",
+  "date": "1417-03-19",
+  "type": "death",
+  "people": [
+   "abu-al-fadl-marinid",
+   "yahya-marinid"
+  ],
+  "places": [
+   "fas"
+  ],
+  "wars": [],
+  "title": "Abū al-Faḍl, sultan of Fās since 1381 and the Emperor's ally in the War of Jillīqiya, dies of pneumonia at fifty-seven. His son Abū Ḥammū had died in 1410, and the throne passes to his grandson Yaḥyā, fifteen",
+  "data": {
+   "cause": "pneumonia",
+   "successor": "Yaḥyā, born 14 July 1401, son of Abū Ḥammū (died 14 September 1410, a hunting accident); in his own name from 14 July 1417"
+  },
+  "source": "save of 11 August 1420"
+ },
+ {
+  "id": "1417-04-22-ottoman-peace",
+  "date": "1417-04-22",
+  "type": "diplomacy",
+  "people": [
+   "ahmad-ottoman"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "The Ottomans make a great peace in Anatolia and on the Danube: Sivas and the lands of Eretna, Amasya and the Pontic hills, the Dobruja from Bulgaria and Reni from Wallachia, thirty-one towns in all",
+  "data": {
+   "towns": {
+    "Eretna": 9,
+    "Hacı (Amasya)": 7,
+    "Bulgaria": 4,
+    "Wallachia": 1
+   },
+   "note": "counted from the towns that changed hands that day (the world beyond the realm)"
+  },
+  "source": "save of 11 August 1420"
+ },
+ {
+  "id": "1417-07-14-yahya-of-fas",
+  "date": "1417-07-14",
+  "type": "ruler_change",
+  "people": [
+   "yahya-marinid"
+  ],
+  "places": [
+   "fas"
+  ],
+  "wars": [],
+  "title": "Yaḥyā of Fās, great-grandson of Yūsuf I through Jadīla, comes of age and rules in his own name. Fās stays the Emperor's ally",
+  "data": {},
+  "source": "save of 11 August 1420"
+ },
+ {
+  "id": "1417-12-15-saad-ibn-yusuf-to-the-diwan",
+  "date": "1417-12-15",
+  "type": "appointment",
+  "people": [
+   "saad-ibn-yusuf-ibn-saad",
+   "ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Saʿd ibn Yūsuf, the Emperor's nephew, raised at his court since the age of four, takes Umm al-Fatḥ's empty seat in the dīwān, integrating the new lands",
+  "data": {},
+  "source": "save of 11 August 1420"
+ }
+]

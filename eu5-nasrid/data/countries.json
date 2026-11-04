@@ -290,5 +290,19 @@
   "nameChronicle": "the Ṭāʾifa of Burghush",
   "nameArabic": "طائفة برغش",
   "color": "#b08d5b"
+ },
+ {
+  "tag": "TIM",
+  "name": "Timurid",
+  "nameChronicle": "the Tīmūrids",
+  "nameArabic": "التيموريون",
+  "color": "#3f7f8c"
+ },
+ {
+  "tag": "ABA57",
+  "name": "Zamora",
+  "nameChronicle": "the rebels of Zamora",
+  "nameArabic": "سمورة",
+  "color": "#8a6d5a"
  }
 ]

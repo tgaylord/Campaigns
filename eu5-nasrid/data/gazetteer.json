@@ -568,8 +568,12 @@
    },
    {
     "from": "1340-08-23",
-    "to": null,
+    "to": "1420-08-01",
     "via": "VAL"
+   },
+   {
+    "from": "1420-08-01",
+    "to": null
    }
   ],
   "major": true
@@ -588,8 +592,12 @@
    },
    {
     "from": "1340-08-23",
-    "to": null,
+    "to": "1420-08-01",
     "via": "VAL"
+   },
+   {
+    "from": "1420-08-01",
+    "to": null
    }
   ],
   "major": true
@@ -608,8 +616,12 @@
    },
    {
     "from": "1340-08-23",
-    "to": null,
+    "to": "1420-08-01",
     "via": "VAL"
+   },
+   {
+    "from": "1420-08-01",
+    "to": null
    }
   ],
   "major": true,
@@ -629,8 +641,12 @@
    },
    {
     "from": "1340-08-23",
-    "to": null,
+    "to": "1420-08-01",
     "via": "VAL"
+   },
+   {
+    "from": "1420-08-01",
+    "to": null
    }
   ],
   "major": true
@@ -649,8 +665,12 @@
    },
    {
     "from": "1340-08-23",
-    "to": null,
+    "to": "1420-08-01",
     "via": "VAL"
+   },
+   {
+    "from": "1420-08-01",
+    "to": null
    }
   ],
   "major": true,
@@ -670,8 +690,12 @@
    },
    {
     "from": "1340-08-23",
-    "to": null,
+    "to": "1420-08-01",
     "via": "VAL"
+   },
+   {
+    "from": "1420-08-01",
+    "to": null
    }
   ]
  },
@@ -689,8 +713,12 @@
    },
    {
     "from": "1340-08-23",
-    "to": null,
+    "to": "1420-08-01",
     "via": "VAL"
+   },
+   {
+    "from": "1420-08-01",
+    "to": null
    }
   ]
  },
@@ -708,8 +736,12 @@
    },
    {
     "from": "1340-08-23",
-    "to": null,
+    "to": "1420-08-01",
     "via": "VAL"
+   },
+   {
+    "from": "1420-08-01",
+    "to": null
    }
   ],
   "note": "The Arabic script is the chronicle's; the game gives none."
@@ -728,8 +760,12 @@
    },
    {
     "from": "1340-08-23",
-    "to": null,
+    "to": "1420-08-01",
     "via": "VAL"
+   },
+   {
+    "from": "1420-08-01",
+    "to": null
    }
   ],
   "note": "The Arabic script is the chronicle's; the game gives none."
@@ -748,8 +784,12 @@
    },
    {
     "from": "1340-08-23",
-    "to": null,
+    "to": "1420-08-01",
     "via": "VAL"
+   },
+   {
+    "from": "1420-08-01",
+    "to": null
    }
   ],
   "note": "The Arabic script is the chronicle's; the game gives none."
@@ -768,8 +808,12 @@
    },
    {
     "from": "1340-08-23",
-    "to": null,
+    "to": "1420-08-01",
     "via": "VAL"
+   },
+   {
+    "from": "1420-08-01",
+    "to": null
    }
   ],
   "note": "The Arabic script is the chronicle's; the game gives none."
@@ -788,8 +832,12 @@
    },
    {
     "from": "1340-08-23",
-    "to": null,
+    "to": "1420-08-01",
     "via": "VAL"
+   },
+   {
+    "from": "1420-08-01",
+    "to": null
    }
   ],
   "note": "The Arabic script is the chronicle's; the game gives none."

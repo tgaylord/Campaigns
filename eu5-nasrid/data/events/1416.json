@@ -1,5 +1,22 @@
 [
  {
+  "id": "1416-03-25-death-of-umm-al-fath",
+  "date": "1416-03-25",
+  "type": "death",
+  "people": [
+   "umm-al-fath-bint-saad",
+   "ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Umm al-Fatḥ bint Saʿd, the old Emperor's first child and the Emperor's half-sister, dies at fifty-one, still in the dīwān integrating the new lands",
+  "data": {
+   "age": 51,
+   "seat": "integrating the new lands, from 1394"
+  },
+  "source": "save of 11 August 1420"
+ },
+ {
   "id": "1416-05-20-the-first-universities",
   "date": "1416-05-20",
   "type": "reform",
@@ -20,5 +37,108 @@
    "advance": "university advance, researched by 24 October 1414"
   },
   "source": "Trent's account"
+ },
+ {
+  "id": "1416-07-10-birth-of-yusuf-ibn-muhammad",
+  "date": "1416-07-10",
+  "type": "birth",
+  "people": [
+   "jadila-bint-saad-ibn-faraj",
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Jadīla bint Saʿd, the heir's third wife, bears him a son, Yūsuf",
+  "data": {},
+  "source": "save of 11 August 1420"
+ },
+ {
+  "id": "1416-09-29-jadila-steadies-the-realm",
+  "date": "1416-09-29",
+  "type": "appointment",
+  "people": [
+   "jadila-bint-saad-ibn-faraj"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Jadīla bint Saʿd leaves the work of migration and takes the dīwān's charge of the realm's peace, stabilising the country",
+  "data": {
+   "from": "encouraging migration",
+   "to": "stabilizing the country"
+  },
+  "source": "save of 11 August 1420"
+ },
+ {
+  "id": "1416-10-23-autocracy",
+  "date": "1416-10-23",
+  "type": "reform",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "The Emperor takes up the reform of Autocracy: the power of the state is gathered into the ruler's hands, and the men who serve him are counted members of his household",
+  "data": {
+   "reform": "autocracy",
+   "text": "Autocratic monarchies concentrate power in the hands of the ruler. The state is often seen as their personal property. It is not uncommon for rulers to have ministers and supporters, but these are then referred to as members of the royal household (the game's text)"
+  },
+  "source": "save of 11 August 1420"
+ },
+ {
+  "id": "1416-11-18-shalamanka-handed-north",
+  "date": "1416-11-18",
+  "type": "territory_change",
+  "people": [
+   "ismail-ibn-saad",
+   "ahmad-ibn-ismail-ibn-saad",
+   "abu-hammu-rahhu",
+   "ahmad-ibn-yusuf-ibn-ismail"
+  ],
+  "places": [
+   "shalamanka"
+  ],
+  "wars": [],
+  "title": "Sixteen of the twenty-one towns of the old Ṭāʾifa of Shalamanka are handed to the ṭāʾifas of the north: Shalamanka, Ciudad Rodrigo, Ledesma, Béjar, Coria and five more to Liyūn, and Ávila, Arévalo, Oropesa and three more to Burghush. Aḥmad ibn Yūsuf, freed of that work, goes to integrating the crown's lands",
+  "data": {
+   "toLiyun": [
+    "Salamanca",
+    "Ciudad Rodrigo",
+    "Ledesma",
+    "Béjar",
+    "Coria",
+    "Alba de Tormes",
+    "Piedrahita",
+    "Matilla de los Caños",
+    "San Felices",
+    "Yecla de Yeltes"
+   ],
+   "toBurghush": [
+    "Ávila",
+    "Arévalo",
+    "Oropesa",
+    "Las Navas",
+    "Adrada",
+    "Villatoro"
+   ],
+   "kept": 5,
+   "note": "the far north is held through ṭāʾifas and the lands south of it integrated (Trent, January 1416)"
+  },
+  "source": "save of 11 August 1420"
+ },
+ {
+  "id": "1416-12-27-death-of-jadila-bint-yusuf",
+  "date": "1416-12-27",
+  "type": "death",
+  "people": [
+   "jadila-bint-yusuf",
+   "abu-al-fadl-marinid"
+  ],
+  "places": [
+   "fas"
+  ],
+  "wars": [],
+  "title": "Jadīla bint Yūsuf, daughter of Yūsuf I and queen of the Marīnids for thirty-five years, dies at sixty",
+  "data": {},
+  "source": "save of 11 August 1420"
  }
 ]

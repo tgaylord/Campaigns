@@ -648,7 +648,7 @@
    "ahmad-ibn-ismail-ibn-yusuf",
    "ahmad-ibn-ismail-ibn-saad",
    "khalid-ibn-yahya",
-   "yusuf-ibn-ismail-ibn-yusuf"
+   "yusuf-ibn-ismail"
   ],
   "places": [
    "banbaluna"
@@ -688,5 +688,20 @@
    "constraint": "the war of England and its allies against France, from 1 October 1409 (excommunication cb)"
   },
   "source": "Trent's account, November 1411; world data of 1 November 1411"
+ },
+ {
+  "id": "1411-11-27-alliance-of-tunis",
+  "date": "1411-11-27",
+  "type": "diplomacy",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Four weeks after the Peace of Rajab the Ḥafṣids of Tūnis enter an alliance with al-Andalus. With Fās and Miṣr, the empire is now allied to every great Muslim power of the Maghrib and to the Mamlūks",
+  "data": {
+   "treaty": "alliance, mutual, from 27 November 1411"
+  },
+  "source": "save of 11 August 1420 (the treaty list; the snapshots of 1414 and 1416 were corrected)"
  }
 ]

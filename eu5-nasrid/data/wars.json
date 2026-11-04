@@ -738,5 +738,35 @@
    }
   ],
   "nameArabic": "حرب جليقية"
+ },
+ {
+  "id": "rising-of-zamora",
+  "name": "The Rising of Zamora",
+  "gameName": "Independence war of Zamora against the Ṭāʾifa of Liyūn",
+  "start": "1420-06-01",
+  "end": "1420-08-11",
+  "goal": "A war of independence against the Ṭāʾifa of Liyūn (cb_independence_war)",
+  "allies": [
+   "Taifa of León",
+   "Aragon",
+   "Catalonia",
+   "Valencia",
+   "Taifa of Cuenca",
+   "Taifa of Minho",
+   "Taifa of Burgos",
+   "Taifa of Pamplona"
+  ],
+  "enemies": [
+   "Zamora"
+  ],
+  "involvement": "belligerent",
+  "note": "On 1 June 1420 (19 Jumādā al-Ūlā 823) the Castilians of the province of Zamora, in the Ṭāʾifa of Liyūn, rose under Eduardo de Avellaneda. Al-Andalus and all its ṭāʾifas were bound to Liyūn's defence; Valencia left the war on 1 August, the day it was taken into the crown. The rebels never had more than a few hundred men under arms. The war's one battle was Fermoselle (10 August), where the Emperor Ismāʿīl destroyed them (save of 11 August 1420).",
+  "outcome": "Victory. The rising was over on 11 August 1420, the day after Fermoselle. Liyūn lost no towns.",
+  "score": [
+   {
+    "date": "1420-06-01",
+    "value": 0
+   }
+  ]
  }
 ]
