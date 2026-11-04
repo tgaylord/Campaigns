@@ -14,5 +14,32 @@
    "scope": "every town and city, the ṭāʾifas included (Trent's account, read as 'not just the ones held directly by the crown')"
   },
   "source": "Trent's account, 14 January 1413"
+ },
+ {
+  "id": "1413-05-01-education-of-the-people",
+  "date": "1413-05-01",
+  "type": "law_change",
+  "people": [
+   "ismail-ibn-saad",
+   "saad-ibn-yusuf"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "The Emperor's second order, made in honour of his father: the law of the Education of the People. Knowledge is declared the right of every subject, burgher, peasant, labourer and soldier alike, to the displeasure of the umarāʾ and the ʿulamāʾ",
+  "data": {
+   "law": "Education of the People (education of the masses)",
+   "text": "knowledge and education are two of the most enriching aspects in anyone's life, and therefore the state must ensure our people have access to both. We are all born with free will and free thought, and it is the state's duty to preserve these natural rights, which are held by all our people (the game's text)",
+   "effects": {
+    "maxLiteracy": "+5% for burghers, peasants, labourers and soldiers",
+    "nobleSatisfactionEquilibrium": "-5%",
+    "clergySatisfactionEquilibrium": "-5%",
+    "monthlyProgressToInnovative": 0.05,
+    "monthlyProgressToHumanist": 0.1
+   },
+   "cost": "20 political influence",
+   "previously": "basic religious education (the save of 1 November 1411 shows the slot as basic_re…)",
+   "honours": "the Emperor Saʿd, his father (Trent)"
+  },
+  "source": "Trent's screenshot and account, 1 May 1413"
  }
 ]
