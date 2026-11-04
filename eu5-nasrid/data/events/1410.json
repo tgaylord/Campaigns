@@ -76,6 +76,31 @@
   "source": "save of 29 June 1410; Trent's account"
  },
  {
+  "id": "1410-09-01-catalan-privileges-return",
+  "date": "1410-09-01",
+  "type": "reform",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [
+   "barshaluna"
+  ],
+  "wars": [],
+  "title": "The Catalan Merchant Privileges come back into force, sixty-four years after the war of the three crowns ended them. With Catalonia, Aragon and Valencia all ṭāʾifas of the crown, al-Andalus can no longer be at war with the Catalans, and the privileges can no longer be lost",
+  "data": {
+   "reform": "catalan_merchant_privileges",
+   "effects": "nobles power −20%, burghers power −10% (crown power +30% scaled by Farfanes in the army)",
+   "history": {
+    "held": "from the start of the game",
+    "lost": "1339 (war with Aragon); restored 1340",
+    "lostAgain": "by November 1346, in the war of the three crowns",
+    "restored": "1 September 1410 (the save's reform date)"
+   },
+   "why": "the privileges need peace with Aragon; now that Catalonia and Aragon are subjects, war with them is impossible (Trent)"
+  },
+  "source": "saves of 29 June 1410 and 1 November 1411; Trent's account"
+ },
+ {
   "id": "1410-09-16-battle-cape-mondego",
   "date": "1410-09-16",
   "type": "battle",
