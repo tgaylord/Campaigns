@@ -51,13 +51,13 @@
    "accepted": "Portuguese (by 1416); Catalan to follow (Trent)",
    "tolerated": "Sephardi",
    "castilians": "not to be accepted (Trent)",
-   "valencia": "annexation of the ṭāʾifa nearly complete (Trent)"
+   "valencia": "annexation of the ṭāʾifa nearly complete, expected in August 1420 (Trent)"
   },
   "source": "Trent's account, April 1419"
  },
  {
-  "id": "1419-04-the-road-to-balansiyya",
-  "date": "1419-04-03",
+  "id": "1419-09-the-road-to-balansiyya",
+  "date": "1419-09-01",
   "type": "reform",
   "people": [
    "ismail-ibn-saad"
@@ -71,9 +71,9 @@
   "data": {
    "road": "Ishbīliya to Balansiyya",
    "purpose": "a governor's seat at Balansiyya, to project influence into the Mediterranean (Trent)",
-   "date": "April 1419, after the Letter from Denia (Trent's account gives no exact day)",
+   "date": "begun in early September 1419, to be done, or mostly done, by the annexation of Balansiyya expected in August 1420 (Trent)",
    "military": "a road for moving troops to the French border in case of another crusade (Trent)"
   },
-  "source": "Trent's account, April 1419"
+  "source": "Trent's account, September 1419"
  }
 ]
