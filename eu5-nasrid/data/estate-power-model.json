@@ -264,6 +264,36 @@
     "dhimmi": 0.1093
    },
    "calibratedOn": "1349.6.4"
+  },
+  "1415-12-31": {
+   "source": "Trent's estates panel on 31 December 1415 (shares only, whole percents; the tribes, under 1%, are left out), calibrated on the 1 January 1416 save the next day. Country modifiers are carried over from the 1349-06-01 reading; the corrections absorb everything that has changed since (privileges, laws, the Jamāʿa of 1414, the Catalan privileges), so the reading is good for checkpoints near its date.",
+   "countryModifiers": {
+    "crown": 0.4919,
+    "nobles": 4.6247,
+    "clergy": 1.1131,
+    "burghers": 2.0896,
+    "peasants": 1.58,
+    "dhimmi": 0.73
+   },
+   "tolerance": 0.0087,
+   "screen": {
+    "crown": 26,
+    "nobles": 18,
+    "clergy": 10,
+    "burghers": 19,
+    "peasants": 2,
+    "dhimmi": 22
+   },
+   "screenIsShares": true,
+   "corrections": {
+    "crown": 0.0277,
+    "nobles": 0.0204,
+    "clergy": 0.0252,
+    "burghers": 0.0327,
+    "peasants": 0.0235,
+    "dhimmi": 0.0247
+   },
+   "calibratedOn": "1416.1.1"
   }
  },
  "adjustments": [

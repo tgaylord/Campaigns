@@ -1,0 +1,24 @@
+[
+ {
+  "id": "1416-05-20-the-first-universities",
+  "date": "1416-05-20",
+  "type": "reform",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [
+   "ishbiliyya",
+   "qurtuba",
+   "gharnata",
+   "tulaytula",
+   "malaqa"
+  ],
+  "wars": [],
+  "title": "The first universities of al-Andalus open, at Ishbīliya, Qurṭuba, Gharnāṭa, Ṭulayṭula and Mālaqa",
+  "data": {
+   "year": "1416 assumed (Trent's account gives 20 May after the estates panel of 31 December 1415)",
+   "advance": "university advance, researched by 24 October 1414"
+  },
+  "source": "Trent's account"
+ }
+]

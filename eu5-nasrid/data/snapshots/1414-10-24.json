@@ -1,7 +1,7 @@
 {
  "date": "1414-10-24",
  "checkpoint": "The Jamāʿa of 817",
- "note": "On 24 October 1414 (9 Shaʿbān 817) a Jamāʿa took the empire's mercenary contracts from the umarāʾ, passed a law to curtail them, and bought their votes with estates in the north that made them landlords, not lords. Wrapped in the Umayyad order of the kūras and the new doctrine of the sovereign, it left the nobles near-mutinous, one in ten content, and the realm shaken. The crown holds 162 towns and 2,078,000 people, with nine ṭāʾifas; Abū Ḥammū has ruled Burghush since his father Khālid's death in 1412. Treasury 697, income 284 against 239. Shares of power are estimated from the 1 June 1349 reading.",
+ "note": "On 24 October 1414 (9 Shaʿbān 817) a Jamāʿa took the empire's mercenary contracts from the umarāʾ, passed a law to curtail them, and bought their votes with estates in the north that made them landlords, not lords. Wrapped in the Umayyad order of the kūras and the new doctrine of the sovereign, it left the nobles near-mutinous, one in ten content, and the realm shaken. The crown holds 162 towns and 2,078,000 people, with nine ṭāʾifas; Abū Ḥammū has ruled Burghush since his father Khālid's death in 1412. Treasury 697, income 284 against 239. Shares of power are estimated from the 31 December 1415 reading.",
  "source": {
   "save": "SP_ADU_1414_10_24 (compressed)",
   "gameVersion": "1.4.7",
@@ -80,7 +80,7 @@
    "role": "Encouraging migration"
   }
  ],
- "crownPower": 35.21,
+ "crownPower": 27.54,
  "politicalInfluence": 64,
  "stability": -13.1,
  "prestige": 87,
@@ -131,42 +131,42 @@
   {
    "id": "crown",
    "name": "Crown",
-   "power": 35.21,
+   "power": 27.54,
    "satisfaction": null,
    "estimated": true
   },
   {
    "id": "nobles",
    "name": "Nobility",
-   "power": 20.93,
+   "power": 19.09,
    "satisfaction": 11,
    "estimated": true
   },
   {
    "id": "clergy",
    "name": "ʿUlamāʾ",
-   "power": 9.21,
+   "power": 10.85,
    "satisfaction": 50,
    "estimated": true
   },
   {
    "id": "burghers",
    "name": "Burghers",
-   "power": 11.13,
+   "power": 20.58,
    "satisfaction": 50,
    "estimated": true
   },
   {
    "id": "peasants",
    "name": "Commoners",
-   "power": 3.96,
+   "power": 2.16,
    "satisfaction": 50,
    "estimated": true
   },
   {
    "id": "dhimmi",
    "name": "Dhimmī",
-   "power": 19.56,
+   "power": 19.77,
    "satisfaction": 50,
    "estimated": true
   }

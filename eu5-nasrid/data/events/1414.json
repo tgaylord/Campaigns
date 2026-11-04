@@ -86,6 +86,21 @@
   "source": "save of 24 October 1414; Trent's screens and account"
  },
  {
+  "id": "1414-10-27-yusuf-appeases-the-estates",
+  "date": "1414-10-27",
+  "type": "appointment",
+  "people": [
+   "yusuf-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Three days after the Jamāʿa, Prince Yūsuf turns his seat in the dīwān to calming the estates, and above all the angry umarāʾ",
+  "data": {
+   "task": "appeasing the estates (from 27 October 1414)"
+  },
+  "source": "save of 1 January 1416; Trent's account"
+ },
+ {
   "id": "1414-11-ismail-greedy",
   "date": "1414-11-01",
   "type": "player_note",

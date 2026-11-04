@@ -1,0 +1,115 @@
+[
+ {
+  "id": "1415-03-15-death-of-saad-ibn-ismail",
+  "date": "1415-03-15",
+  "type": "death",
+  "people": [
+   "saad-ibn-ismail"
+  ],
+  "places": [
+   "shalamanka"
+  ],
+  "wars": [],
+  "title": "Saʿd ibn Ismāʿīl, the Emperor's cousin and ruler of the Ṭāʾifa of Shalamanka since 1395, dies at fifty-three",
+  "data": {
+   "age": 53
+  },
+  "source": "save of 1 January 1416"
+ },
+ {
+  "id": "1415-04-01-maxorata",
+  "date": "1415-04-01",
+  "type": "territory_change",
+  "people": [],
+  "places": [],
+  "wars": [],
+  "title": "Maxorata on Fuerteventura in the Canaries becomes a settlement of the crown: 7,900 people, most of them Guanche islanders of their own faith. With them the tribes enter the empire as an estate of their own",
+  "data": {
+   "location": "Maxorata (Fuerteventura), Canary Islands",
+   "population": 7892,
+   "popTypes": {
+    "tribesmen": 4551,
+    "peasants": 2658,
+    "slaves": 494
+   },
+   "culture": "Guanche",
+   "religion": "Guanche religion",
+   "tribes": "the tribes estate: under 1% of power on 31 December 1415; to be followed only above 3–4% (Trent)"
+  },
+  "source": "save of 1 January 1416"
+ },
+ {
+  "id": "1415-06-11-shalamanka-annexed",
+  "date": "1415-06-11",
+  "type": "territory_change",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [
+   "shalamanka"
+  ],
+  "wars": [],
+  "title": "Three months after Saʿd ibn Ismāʿīl's death, the Ṭāʾifa of Shalamanka is taken into the crown: its 21 towns and 347,000 people, from Shalamanka, Ávila and Ciudad Rodrigo to Plasencia and Coria, become lands of the crown",
+  "data": {
+   "towns": 21,
+   "population": 347000,
+   "realm": {
+    "towns": [
+     162,
+     184
+    ]
+   }
+  },
+  "source": "saves of 24 October 1414 and 1 January 1416"
+ },
+ {
+  "id": "1415-12-31-the-estates",
+  "date": "1415-12-31",
+  "type": "estate_change",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "The estates at the end of 1415: the crown holds about a quarter of the power of the state, the dhimmī more than a fifth, the burghers and the umarāʾ each nearly a fifth, the ʿulamāʾ a tenth. The umarāʾ are a quarter content and climbing back toward two in five",
+  "data": {
+   "shares": {
+    "crown": 26,
+    "umara": 18,
+    "ulama": 10,
+    "burghers": 19,
+    "commoners": 2,
+    "dhimmi": 22,
+    "tribes": "<1"
+   },
+   "satisfaction": {
+    "umara": [
+     25.62,
+     39.66
+    ],
+    "ulama": [
+     45.84,
+     47.84
+    ],
+    "burghers": 50.01,
+    "commoners": 50.01,
+    "dhimmi": 50.01,
+    "tribes": [
+     54.29,
+     38.27
+    ]
+   },
+   "pops": {
+    "umara": 5919,
+    "ulama": 15740,
+    "burghers": 36795,
+    "commoners": "796,000",
+    "dhimmi": "1,587,000",
+    "tribes": 4553
+   },
+   "treasury": 1923,
+   "stability": -10.5
+  },
+  "source": "Trent's estates panel, 31 December 1415; save of 1 January 1416"
+ }
+]
