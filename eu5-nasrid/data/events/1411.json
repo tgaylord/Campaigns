@@ -289,5 +289,63 @@
    "blockade": "the crown prince Muḥammad's fleet"
   },
   "source": "Trent's account, 7 October 1411"
+ },
+ {
+  "id": "1411-10-27-battle-guimaraes",
+  "date": "1411-10-27",
+  "type": "battle",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "wars": [
+   "fourth-war-of-the-istirdad"
+  ],
+  "title": "The last battle. Three weeks after Porto fell, the nobles of Portugal throw what is left to them, 4,800 men, at the Emperor's army of 9,450 at Guimarães, the cradle of their kingdom. They lose 3,160; the Emperor loses 1,150",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "al-Andalus": 9446
+   },
+   "oursTotal": 9446,
+   "oursLost": 1154,
+   "theirs": {
+    "Portugal": 4803
+   },
+   "theirsTotal": 4803,
+   "theirsLost": 3162,
+   "location": "Guimarães",
+   "side": "Portugal attacking (Trent's account)",
+   "warScore": 9.42,
+   "commanders": {
+    "al-Andalus": "the Emperor Ismāʿīl",
+    "Portugal": "a knight of the Portuguese nobility"
+   },
+   "composition": {
+    "ours": {
+     "archers": 4232,
+     "infantry": 1979,
+     "lightCavalry": 2396,
+     "heavyCavalry": 839
+    },
+    "theirs": {
+     "archers": 4601,
+     "lightCavalry": 129,
+     "supply": 73
+    }
+   },
+   "losses": {
+    "ours": {
+     "archers": 1124,
+     "lightCavalry": 25,
+     "heavyCavalry": 6
+    },
+    "theirs": {
+     "archers": 3059,
+     "lightCavalry": 103
+    }
+   }
+  },
+  "source": "Trent's battle screen, 27 October 1411"
  }
 ]
