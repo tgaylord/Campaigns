@@ -1561,12 +1561,13 @@
    "industrious",
    "intricate_web_weaver"
   ],
-  "note": "Son of Ismāʿīl ibn Yūsuf and Hippolyte of Villa di Chiesa, born 19 February 1372 (save of 16 January 1373). A cousin of the Emperor Ismāʿīl. On 1 November 1411 he was made ruler of the new Ṭāʾifa of Banbalūna, 18 towns of Navarre and the upper Duero, from Pamplona and Tudela to Soria and Medinaceli (save of 1 November 1411). On 1 November 1411 he became ruler of Banbalūna; his son Aḥmad sits in the dīwān. His wives bore him Fāṭima (8 June 1419) and Muḥammad (18 November 1419) (save of 11 August 1420). By 1423 the game marks him industrious and an intricate web-weaver (save of 5 November 1423).",
+  "note": "Son of Ismāʿīl ibn Yūsuf and Hippolyte of Villa di Chiesa, born 19 February 1372 (save of 16 January 1373). A cousin of the Emperor Ismāʿīl. On 1 November 1411 he was made ruler of the new Ṭāʾifa of Banbalūna, 18 towns of Navarre and the upper Duero, from Pamplona and Tudela to Soria and Medinaceli (save of 1 November 1411). On 1 November 1411 he became ruler of Banbalūna; his son Aḥmad sits in the dīwān. His wives bore him Fāṭima (8 June 1419) and Muḥammad (18 November 1419) (save of 11 August 1420). By 1423 the game marks him industrious and an intricate web-weaver (save of 5 November 1423). He died of a camp fever on 30 April 1428, at fifty-six; his son Aḥmad succeeded him in Banbalūna (save of 25 May 1428).",
   "stats": {
    "adm": 56,
    "dip": 30,
    "mil": 63
-  }
+  },
+  "died": "1428-04-30"
  },
  {
   "id": "muhammad-ibn-ismail-ibn-yusuf",
@@ -2209,7 +2210,8 @@
   "born": "1396-01-27",
   "father": "yusuf-ibn-ismail",
   "roles": [
-   "member of the dīwān"
+   "member of the dīwān (1412–1425)",
+   "ruler of the Ṭāʾifa of Banbalūna (from 1428)"
   ],
   "stats": {
    "adm": 84,
@@ -2219,7 +2221,7 @@
   "traits": [
    "unmotivated"
   ],
-  "note": "Son of Yūsuf ibn Ismāʿīl, ruler of the Ṭāʾifa of Banbalūna; one of the ablest men of the house. He took Maryam bint Yūsuf's seat in the dīwān after her death in August 1412, set to integrating the new lands (save of 24 October 1414). By 1420 he was married to two daughters of his cousin Aḥmad of Burtuqāl, Fāṭima and Maryam, and had three children: Abū al-Ḥasan ʿAlī (16 February 1417), Muʾmina (13 August 1417) and Saʿd (27 July 1419). The game marks him unmotivated (save of 11 August 1420)."
+  "note": "Son of Yūsuf ibn Ismāʿīl, ruler of the Ṭāʾifa of Banbalūna; one of the ablest men of the house. He took Maryam bint Yūsuf's seat in the dīwān after her death in August 1412, set to integrating the new lands (save of 24 October 1414). By 1420 he was married to two daughters of his cousin Aḥmad of Burtuqāl, Fāṭima and Maryam, and had three children: Abū al-Ḥasan ʿAlī (16 February 1417), Muʾmina (13 August 1417) and Saʿd (27 July 1419). The game marks him unmotivated (save of 11 August 1420). He left the dīwān by December 1425, and on 30 April 1428 succeeded his father as lord of Banbalūna (save of 25 May 1428)."
  },
  {
   "id": "abu-hammu-rahhu",
@@ -2367,7 +2369,7 @@
   "traits": [
    "adept"
   ],
-  "note": "A Galician noble and a soldier of rare gifts (89 in war). On 4 September 1420, when the Kingdom of Castile fell apart, he became king of Galicia: 23 towns from Santiago and A Coruña to Lugo, Ourense and Tui, some 380,000 Galicians, all Catholic (save of 4 September 1420)."
+  "note": "A Galician noble and a soldier of rare gifts (89 in war). On 4 September 1420, when the Kingdom of Castile fell apart, he became king of Galicia: 23 towns from Santiago and A Coruña to Lugo, Ourense and Tui, some 380,000 Galicians, all Catholic (save of 4 September 1420). On 25 March 1425 he made peace with Asturias and took all eight of its towns; Galicia then held 31 (save of 25 May 1428)."
  },
  {
   "id": "jose-fernando-tunon",
@@ -2384,7 +2386,7 @@
    "mil": 59
   },
   "traits": [],
-  "note": "A Leonese noble who on 4 September 1420, when the Kingdom of Castile fell apart, became king of Asturias: 8 towns from Oviedo, Castile's last capital, to Avilés, Villaviciosa and Llanes, some 130,000 people, nearly all Leonese and Catholic (save of 4 September 1420)."
+  "note": "A Leonese noble who on 4 September 1420, when the Kingdom of Castile fell apart, became king of Asturias: 8 towns from Oviedo, Castile's last capital, to Avilés, Villaviciosa and Llanes, some 130,000 people, nearly all Leonese and Catholic (save of 4 September 1420). On 25 March 1425 Galicia took all of Asturias (save of 25 May 1428)."
  },
  {
   "id": "alfonso-gaston",
@@ -2402,5 +2404,27 @@
   },
   "traits": [],
   "note": "A Basque noble who on 4 September 1420, when the Kingdom of Castile fell apart, became king of Navarre, the second Alfonso of that crown: the 10 Basque towns of the coast and Álava, from Bilbao, his capital, and San Sebastián to Vitoria, some 160,000 Basques. The old Navarre of Pamplona is the Emperor's Ṭāʾifa of Banbalūna. The save shows the new state Sunni though its people are all Catholic; Trent is correcting this in game (save of 4 September 1420; Trent's account)."
+ },
+ {
+  "id": "umm-al-fath-bint-muhammad",
+  "name": "Umm al-Fatḥ bint Muḥammad",
+  "nameArabic": "أم الفتح بنت محمد",
+  "nameGame": "Umm al-Fath",
+  "gameId": 16795814,
+  "dynasty": "Naṣrid",
+  "born": "1411-07-10",
+  "father": "muhammad-ibn-ismail-ibn-saad",
+  "mother": "jadila-bint-saad-ibn-faraj",
+  "female": true,
+  "roles": [
+   "member of the dīwān (from 1425)"
+  ],
+  "stats": {
+   "adm": 62,
+   "dip": 66,
+   "mil": 77
+  },
+  "traits": [],
+  "note": "Daughter of the heir Muḥammad and his third wife Jadīla bint Saʿd, named for her grandmother Umm al-Fatḥ. On 17 December 1425, at fourteen, she took a seat in the dīwān, integrating the new lands; she sits there beside her mother (save of 25 May 1428)."
  }
 ]

@@ -1,0 +1,46 @@
+[
+ {
+  "id": "1426-02-01-truce-with-castile-ends",
+  "date": "1426-02-01",
+  "type": "diplomacy",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "The truce of the Peace of Rajab with Castile runs out. For the first time in fifteen years nothing binds al-Andalus to peace with any Christian kingdom of the peninsula",
+  "data": {
+   "truce": "Peace of Rajab, 1 November 1411 – 1 February 1426"
+  },
+  "source": "save of 25 May 1428"
+ },
+ {
+  "id": "1426-06-04-death-of-jadila-bint-ismail",
+  "date": "1426-06-04",
+  "type": "death",
+  "people": [
+   "ismail-ibn-muhammad-ibn-ismail"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Jadīla, daughter of the heir's son Ismāʿīl and of Ayaulym the Mamlūk princess, dies of a sickness at not quite four",
+  "data": {
+   "born": "1422-06-29",
+   "cause": "disease"
+  },
+  "source": "save of 25 May 1428"
+ },
+ {
+  "id": "1426-07-04-saad-ibn-yusuf-promotes-culture",
+  "date": "1426-07-04",
+  "type": "appointment",
+  "people": [
+   "saad-ibn-yusuf-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Saʿd ibn Yūsuf of the dīwān leaves the work of integration and turns to promoting Andalusī culture",
+  "data": {},
+  "source": "save of 25 May 1428"
+ }
+]

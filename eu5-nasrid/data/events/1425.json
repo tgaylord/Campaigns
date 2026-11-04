@@ -1,0 +1,93 @@
+[
+ {
+  "id": "1425-03-01-fogo",
+  "date": "1425-03-01",
+  "type": "territory_change",
+  "people": [],
+  "places": [],
+  "wars": [],
+  "title": "Fogo, the fire island of the Cape Verdes, becomes a settlement of the crown: 1,800 Andalusī settlers",
+  "data": {
+   "province": "Cape Verde",
+   "population": 1821
+  },
+  "source": "save of 25 May 1428"
+ },
+ {
+  "id": "1425-03-25-galicia-takes-asturias",
+  "date": "1425-03-25",
+  "type": "territory_change",
+  "people": [
+   "diego-villamarin",
+   "jose-fernando-tunon"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Diego of Galicia makes peace with Asturias and takes all eight of its towns, Oviedo among them. Galicia now holds 31 towns from Santiago to Llanes",
+  "data": {
+   "towns": 8,
+   "truce": "Galicia–Asturias to 25 January 1435"
+  },
+  "source": "save of 25 May 1428"
+ },
+ {
+  "id": "1425-04-24-muhammad-ibn-yusuf-new-task",
+  "date": "1425-04-24",
+  "type": "appointment",
+  "people": [
+   "muhammad-ibn-yusuf-ibn-faraj"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Muḥammad ibn Yūsuf of the dīwān is given new lands to integrate",
+  "data": {},
+  "source": "save of 25 May 1428"
+ },
+ {
+  "id": "1425-06-01-tedote",
+  "date": "1425-06-01",
+  "type": "territory_change",
+  "people": [],
+  "places": [],
+  "wars": [],
+  "title": "Tedote on La Palma becomes a settlement of the crown, the third in the Canaries: 5,500 Guanche islanders",
+  "data": {
+   "province": "Canaries",
+   "population": 5523
+  },
+  "source": "save of 25 May 1428"
+ },
+ {
+  "id": "1425-07-01-horta",
+  "date": "1425-07-01",
+  "type": "territory_change",
+  "people": [],
+  "places": [],
+  "wars": [],
+  "title": "Horta on Faial becomes a settlement of the crown in the Azores: 1,300 Andalusī settlers",
+  "data": {
+   "province": "Azores",
+   "population": 1322
+  },
+  "source": "save of 25 May 1428"
+ },
+ {
+  "id": "1425-12-17-umm-al-fath-to-the-diwan",
+  "date": "1425-12-17",
+  "type": "appointment",
+  "people": [
+   "umm-al-fath-bint-muhammad",
+   "ahmad-ibn-yusuf-ibn-ismail",
+   "jadila-bint-saad-ibn-faraj",
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Umm al-Fatḥ bint Muḥammad, fourteen, the heir's daughter by Jadīla bint Saʿd, takes Aḥmad ibn Yūsuf's seat in the dīwān, integrating the new lands",
+  "data": {
+   "born": "1411-07-10",
+   "stats": "62/66/77"
+  },
+  "source": "save of 25 May 1428"
+ }
+]

@@ -1,18 +1,35 @@
 [
  {
-  "id": "1428-05-25-galicia-takes-asturias",
-  "date": "1428-05-25",
-  "type": "player_note",
+  "id": "1428-04-08-yusuf-promotes-culture",
+  "date": "1428-04-08",
+  "type": "appointment",
   "people": [
-   "diego-villamarin"
+   "yusuf-ibn-saad"
   ],
   "places": [],
   "wars": [],
-  "title": "Galicia has conquered Asturias. Three Christian kingdoms remain in the north: Galicia, Navarre and Castile",
+  "title": "Prince Yūsuf ibn Saʿd leaves the settling of Ishbīliya and turns to promoting Andalusī culture",
+  "data": {},
+  "source": "save of 25 May 1428"
+ },
+ {
+  "id": "1428-04-30-death-of-yusuf-of-banbaluna",
+  "date": "1428-04-30",
+  "type": "ruler_change",
+  "people": [
+   "yusuf-ibn-ismail",
+   "ahmad-ibn-yusuf-ibn-ismail"
+  ],
+  "places": [
+   "banbaluna"
+  ],
+  "wars": [],
+  "title": "Yūsuf ibn Ismāʿīl, lord of the Ṭāʾifa of Banbalūna since 1411, dies of a camp fever at fifty-six. His son Aḥmad, once of the dīwān and one of the ablest men of the house, succeeds him",
   "data": {
-   "account": "the three remaining Kingdoms after Galicia conquer Asturias (Trent)"
+   "cause": "camp (the game's death reason)",
+   "successor": "Aḥmad ibn Yūsuf, born 27 January 1396 (84/56/70)"
   },
-  "source": "Trent's account and screenshot, 25 May 1428"
+  "source": "save of 25 May 1428"
  },
  {
   "id": "1428-05-25-war-in-france",
@@ -54,14 +71,26 @@
   "people": [
    "ismail-ibn-saad"
   ],
-  "places": [],
+  "places": [
+   "uryula",
+   "yabura",
+   "al-ushbuna",
+   "shantarin",
+   "tulaytula",
+   "qurtuba",
+   "istijja",
+   "al-mariyya",
+   "gharnata",
+   "malaqa"
+  ],
   "wars": [],
   "title": "The Emperor begins a great expansion of the army: armouries are built in a dozen towns and cities across the empire, so that each can raise men of its own",
   "data": {
    "buildings": "armouries in about a dozen towns and cities",
-   "purpose": "to draw in manpower independently (Trent)"
+   "purpose": "to draw in manpower independently (Trent)",
+   "inSave": "armouries at Orihuela, Évora, Lisbon, Santarém, Toledo, Córdoba, Écija, Almería, Granada and Málaga (save of 25 May 1428)"
   },
-  "source": "Trent's account and screenshot, 25 May 1428"
+  "source": "Trent's account; save of 25 May 1428"
  },
  {
   "id": "1428-05-25-jamaa-against-primacy",
@@ -81,8 +110,44 @@
     "modifiers": "political influence gain −15%, discipline +5%, monthly progress to aristocracy +0.10"
    },
    "costToRevoke": "33.87 political influence and −32.5% noble satisfaction",
-   "outcome": "not yet known: the account gives the aim, not the result"
+   "outcome": "revoked (the privilege is gone in the save of 25 May 1428)"
   },
   "source": "Trent's account and screenshot, 25 May 1428"
+ },
+ {
+  "id": "1428-05-25-primacy-revoked",
+  "date": "1428-05-25",
+  "type": "estate_change",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "The Primacy of Nobility, held by the umarāʾ since the founding of the realm, is revoked. The great houses no longer count themselves the Emperor's equals or must be consulted on his decisions. Their content falls to about one in six, and the realm's peace to almost nothing",
+  "data": {
+   "privilege": "Primacy of Nobility (from 1333)",
+   "nobleSatisfaction": "about 41% (August 1424) to 16%",
+   "stability": "20 (August 1424) to 1",
+   "politicalInfluence": "back to 100",
+   "jamaa": "called 25 May 1428; the nobles' agenda is to remove the burghers' mansions, the ʿulamāʾ's a change of policy"
+  },
+  "source": "save of 25 May 1428"
+ },
+ {
+  "id": "1428-05-25-the-andalusi-madrasa",
+  "date": "1428-05-25",
+  "type": "reform",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [
+   "ishbiliyya"
+  ],
+  "wars": [],
+  "title": "By 1428 Ishbīliya has the Andalusī madrasa, a great school of the empire's own (nd_adu_madrasa, a building of the Al-Andalus formation)",
+  "data": {
+   "date": "built between August 1424 and May 1428"
+  },
+  "source": "save of 25 May 1428"
  }
 ]

@@ -1,0 +1,45 @@
+[
+ {
+  "id": "1427-04-28-war-in-france",
+  "date": "1427-04-28",
+  "type": "diplomacy",
+  "people": [],
+  "places": [],
+  "wars": [],
+  "title": "England goes to war with France again, with its vassals and with Castile beside it; Bohemia stands with France. Castile makes a separate peace on 1 March 1428",
+  "data": {
+   "attackers": "England, Burgundy, Brittany, Normandy, Aquitaine, Flanders, Ireland, Wales and others, with Castile",
+   "defenders": "France and its appanages, Bohemia and the Bohemian vassals, Dauphiné",
+   "cb": "conquer province"
+  },
+  "source": "save of 25 May 1428"
+ },
+ {
+  "id": "1427-08-01-santiago-cape-verde",
+  "date": "1427-08-01",
+  "type": "territory_change",
+  "people": [],
+  "places": [],
+  "wars": [],
+  "title": "Santiago, the largest of the Cape Verde islands, becomes a settlement of the crown: 1,700 settlers, Portuguese in speech and Muslim in faith",
+  "data": {
+   "province": "Cape Verde",
+   "population": 1670
+  },
+  "source": "save of 25 May 1428"
+ },
+ {
+  "id": "1427-12-01-ponta-delgada",
+  "date": "1427-12-01",
+  "type": "territory_change",
+  "people": [],
+  "places": [],
+  "wars": [],
+  "title": "Ponta Delgada on São Miguel becomes a settlement of the crown, the fourth in the Azores: 1,200 Andalusī settlers",
+  "data": {
+   "province": "Azores",
+   "population": 1208
+  },
+  "source": "save of 25 May 1428"
+ }
+]
