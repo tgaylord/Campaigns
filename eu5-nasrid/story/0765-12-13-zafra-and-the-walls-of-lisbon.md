@@ -19,4 +19,4 @@ Portugal had nothing left in the field, and it sued for peace the same day. It g
 
 Qashtāla and Arghūn fought on. But the sultan's treasury, which had held twenty-four dīnārs on the day his father died, now held five hundred.
 
-*How many a small company has overcome a large company by permission of Allāh. And Allāh is with the patient.*
+*And you did not kill them, but it was Allāh who killed them. And you threw not when you threw, but it was Allāh who threw.*

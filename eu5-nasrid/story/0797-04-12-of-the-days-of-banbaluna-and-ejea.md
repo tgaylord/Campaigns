@@ -25,4 +25,4 @@ What was left of Arce's host fled west into Old Castile, nearly eleven thousand 
 
 Only in Tuscany did the war go badly for the faithful. There the men of Barqa and a Mamlūk detachment, sent to keep the Pope busy at home, were beaten by the Sienese, twice at Grosseto, once at Piombino and, when the spring came, at Montalcino. The Pope stayed busy, though, and he sent nothing more to Qashtāla.
 
-*If Allāh should aid you, no one can overcome you.*
+*Indeed, Allāh loves those who fight in His cause in a row as though they are a single structure joined firmly.*

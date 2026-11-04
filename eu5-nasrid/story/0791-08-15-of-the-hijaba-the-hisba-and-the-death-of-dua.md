@@ -18,4 +18,4 @@ In Dhū al-Ḥijja 790, in the last days of the year, [Duʿāʾ](person:dua-mari
 
 More than seven months later, in Shaʿbān 791, the bureaucracy gained a third office, as the empire turned slowly toward the sea and its trade. This was the Ḥisba, the old inspectorate of the Islamic city. Its muḥtasib walked the markets, checked the weights and the measures, put down fraud and enforced honest dealing. The ʿulamāʾ approved, since the muḥtasib was one of their own. The merchants did not, since he was not one of theirs. The Emperor gave the first muḥtasib of Ishbīliya one order in his own words: to begin with the crown's warehouses, and to hold the Emperor's weights to the same measure as any grocer's in the sūq. The merchants still grumbled, but none of them could say the scales were weighted for the crown. The empire's goods sold better for being honestly weighed, and its markets moved a little further from barter and a little nearer to coin.
 
-*Indeed we belong to Allāh, and indeed to Him we will return.*
+*O reassured soul, return to your Lord, well-pleased and pleasing to Him.*
