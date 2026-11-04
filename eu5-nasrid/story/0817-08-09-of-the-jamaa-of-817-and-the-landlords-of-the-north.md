@@ -4,8 +4,8 @@ date: 1414-10-24
 era: book-of-the-marches
 kind: chronicle
 people: [ismail-ibn-saad, saad-ibn-yusuf]
-places: [banbaluna, ishbiliyya]
-sources: [1414-10-24-rising-at-pamplona, 1414-10-24-jamaa-of-the-mercenaries, 1402-08-the-umara, 1402-09-jamaa-of-the-markets]
+places: [banbaluna, ishbiliyya, qurtuba]
+sources: [1414-10-24-rising-at-pamplona, 1414-10-24-jamaa-of-the-mercenaries, 1414-10-24-the-umara-mutinous, 1402-08-the-umara, 1402-09-jamaa-of-the-markets]
 ---
 
 In Shaʿbān 817 a handful of malcontents rose at [Banbalūna](place:banbaluna) and were put down before the news of their rising had crossed the Ebro. It was nothing, and the Emperor [Ismāʿīl](person:ismail-ibn-saad) made a great deal of it. He told the dīwān that the north was restless, that the empire's armies must be ready to march at a word, and that the old ways of raising them would not serve. He called a Jamāʿa at [Ishbīliya](place:ishbiliyya) for 9 Shaʿbān.
@@ -15,5 +15,9 @@ For a generation the hiring of foreign soldiers had been the business of the uma
 He did not present it as a loss. He came to the assembly with the banners of Cuéllar and Toro carried before him and the keys of Porto on a cushion, and he spoke of the north. The empire had won more land in the War of Jillīqiya than the house of Naṣr had held when he was born, he said, and it needed men of good family to settle it. He offered dozens of the noble houses estates in the conquered lands, and to others he offered claims on lands Qashtāla still held, to be theirs when the next war was won. The umarāʾ had been grumbling for twelve years. Now they went home talking of the castles they would build in León and the vineyards they would have on the Ebro, and they voted for the law.
 
 It was some time before they read the grants closely. The lands were theirs to live on and to draw rents from, but the grants gave them no courts, no levies and no lordship over the people who worked the land. They had become landlords, not lords. The conquests of Jillīqiya were still the property of the crown and the house of Naṣr, and the mercenaries now drew their pay from the Emperor's treasury. The court remembered that the Emperor's tutors had once said he could tell every man what he wished to hear, and the umarāʾ, who had heard exactly what they wished, had only themselves to blame.
+
+When they understood, the umarāʾ came very near to rising. Not one great house in ten was content with the crown, and the peace of the realm was more shaken than it had been since the risings of 807. The Emperor had expected it. He had dressed the law in the oldest authority al-Andalus knew. The Umayyads, he reminded the dīwān, had divided the land into kūras, each under a governor named and recalled by [Qurṭuba](place:qurtuba), with the tax registers and the qāḍīs answering to the capital and not to the governor. That was the order of the caliphs, and he was only restoring it. To the younger men of the chancery he spoke of a newer idea, that a sovereign stands above every estate and bows to no earthly power. The old families heard the first argument and the young secretaries the second, and he meant both to be heard.
+
+Then he set about cooling tempers. He sent the angriest lords north to the ṭāʾifas, where kinsmen of the house of Naṣr sat on every throne but one and could give them honours, wives and offices that cost the crown nothing. He wrote to each great house himself, in the style the Dīwān al-Inshāʾ had taught a generation of secretaries, and to each he said something a little different. In the dīwān a law to curtail the nobles was passed with little noise while the letters were still on the road.
 
 *We raise in degrees whom We will, and over every possessor of knowledge is one more knowing.*

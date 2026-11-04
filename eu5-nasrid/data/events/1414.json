@@ -37,5 +37,52 @@
    "thread": "the crown and the umarāʾ: from 1402 the crown's aim is to break the power of the nobles"
   },
   "source": "Trent's screenshot and account, 24 October 1414"
+ },
+ {
+  "id": "1414-10-24-the-umara-mutinous",
+  "date": "1414-10-24",
+  "type": "estate_change",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "When the umarāʾ read the terms, they turn near-mutinous: their content falls from four in ten to one in ten, and the realm's peace is badly shaken. The crown passes a law to curtail the nobles, and frames the whole as the old Umayyad order of the kūras and the new doctrine of the sovereign. The Emperor sets out to cool tempers through the ṭāʾifas and his diplomacy",
+  "data": {
+   "nobles": {
+    "satisfaction": [
+     0.4,
+     0.107
+    ],
+    "gold": 4620.6
+   },
+   "stability": [
+    25,
+    -13.1
+   ],
+   "laws": {
+    "nobles_rights_laws": "Curtail the Nobles (from 24 October 1414): as the state grows, it is becoming apparent that the old noble families have too much influence and power (the game's text)"
+   },
+   "advances": {
+    "Governors of the Kuras (researched)": "crown power +10%, cabinet efficiency +10%: the Umayyads divided al-Andalus into kūras, each under a governor named and recalled by Córdoba, and into three marches under commanders on the frontier; tax registers and judges answer to the capital, not to the governor (the game's text)",
+    "Sovereignty (next, requires Permanent Cabinet)": "crown power +10%: modern theories of government establish the ruler as supreme authority within the realm, above all other institutions, estates and subjects, while bowing to no earthly power (the game's text)"
+   },
+   "plan": "tempers to be cooled through the ṭāʾifas and skilled diplomacy (Trent)",
+   "diwan": {
+    "Umm al-Fatḥ": "integrating",
+    "Muḥammad ibn Yūsuf": "integrating",
+    "Aḥmad ibn Yūsuf": "integrating",
+    "Yūsuf ibn Saʿd": "developing the provinces (from 1 November 1411)",
+    "Jadīla bint Saʿd": "encouraging migration (from 2 January 1412)"
+   },
+   "realm": {
+    "towns": 162,
+    "population": 2077886,
+    "income": 283.8,
+    "expenses": 239.0,
+    "treasury": 697
+   }
+  },
+  "source": "save of 24 October 1414; Trent's screens and account"
  }
 ]

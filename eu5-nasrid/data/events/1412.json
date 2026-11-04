@@ -1,5 +1,21 @@
 [
  {
+  "id": "1412-01-02-jadila-to-the-diwan",
+  "date": "1412-01-02",
+  "type": "appointment",
+  "people": [
+   "jadila-bint-saad-ibn-faraj",
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Jadīla bint Saʿd, the heir's young wife and sister of the Shaykha of Qūnka, takes a fifth seat in the dīwān, set to drawing settlers to the realm",
+  "data": {
+   "task": "encouraging migration"
+  },
+  "source": "save of 24 October 1414"
+ },
+ {
   "id": "1412-06-24-spice-trade",
   "date": "1412-06-24",
   "type": "situation",
@@ -24,5 +40,38 @@
    "note": "who found the route is not on the screen"
   },
   "source": "Trent's screenshot, 24 June 1412"
+ },
+ {
+  "id": "1412-08-29-death-of-maryam-bint-yusuf",
+  "date": "1412-08-29",
+  "type": "death",
+  "people": [
+   "maryam-bint-yusuf",
+   "ahmad-ibn-yusuf-ibn-ismail"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Maryam bint Yūsuf, daughter of Yūsuf I and the ablest mind of the dīwān for a generation, dies at fifty-five. Her seat passes to Aḥmad ibn Yūsuf, grandson of her brother Ismāʿīl",
+  "data": {
+   "age": 55,
+   "diwan": "from 1396; integrating the new lands"
+  },
+  "source": "save of 24 October 1414"
+ },
+ {
+  "id": "1412-09-02-death-of-khalid",
+  "date": "1412-09-02",
+  "type": "death",
+  "people": [
+   "khalid-ibn-yahya",
+   "abu-hammu-rahhu"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Khālid ibn Yaḥyā Raḥḥū, general of the Marīnid war, captain of the prospectors, victor of Granadilla and first lord of Burghush, dies at sixty-nine. His son Abū Ḥammū succeeds him in Burghush",
+  "data": {
+   "age": 69
+  },
+  "source": "save of 24 October 1414"
  }
 ]
