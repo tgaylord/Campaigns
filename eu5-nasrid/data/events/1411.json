@@ -638,5 +638,55 @@
    "name": "the Peace of Rajab, signed in one of the sacred months (Trent, November 1411)"
   },
   "source": "saves of 1 November 1411, before and after the peace; Trent's account"
+ },
+ {
+  "id": "1411-11-01-four-new-taifas",
+  "date": "1411-11-01",
+  "type": "reform",
+  "people": [
+   "ismail-ibn-saad",
+   "ahmad-ibn-ismail-ibn-yusuf",
+   "ahmad-ibn-ismail-ibn-saad",
+   "khalid-ibn-yahya",
+   "yusuf-ibn-ismail-ibn-yusuf"
+  ],
+  "places": [
+   "banbaluna"
+  ],
+  "wars": [],
+  "title": "The conquests of Jillīqiya are given out as four new ṭāʾifas. The Emperor's cousin Aḥmad takes the old Kingdom of Portugal as the Ṭāʾifa of Burtuqāl; the Emperor's son Aḥmad, eighteen, takes León; Khālid ibn Yaḥyā Raḥḥū, sixty-eight, takes Old Castile as the Ṭāʾifa of Burghush; and the Emperor's cousin Yūsuf takes Navarre as the Ṭāʾifa of Banbalūna. The crown keeps its 161 towns",
+  "data": {
+   "taifas": {
+    "Burtuqāl (ABA10), seat Barcelos": "34 towns, 675,000 people, Portuguese; Aḥmad ibn Ismāʿīl ibn Yūsuf, 34 (58/41/72)",
+    "Liyūn (ABA42), seat León": "17 towns, 387,000 people, Leonese; Aḥmad ibn Ismāʿīl ibn Saʿd, the Emperor's son, 18 (47/64/35)",
+    "Burghush (ABA49), seat Burgos": "28 towns, 584,000 people, Castilian; Khālid ibn Yaḥyā Raḥḥū, 68 (81/85/78), heir Abū Ḥammū",
+    "Banbalūna (ABA55), seat Pamplona": "18 towns, 271,000 people, Basque; Yūsuf ibn Ismāʿīl ibn Yūsuf, 39 (56/30/63)"
+   },
+   "realm": {
+    "towns": [
+     258,
+     161
+    ],
+    "subjects": 9
+   },
+   "note": "the game reuses the tag ABA55, held by the rebel Kingdom of Estremadura in 1405, for the Ṭāʾifa of Banbalūna"
+  },
+  "source": "save of 1 November 1411, after the organisation of the conquests (Trent)"
+ },
+ {
+  "id": "1411-11-01-europe-horrified",
+  "date": "1411-11-01",
+  "type": "diplomacy",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Europe is horrified by the conquest of Portugal and Old Castile, all but Paris. The Holy Roman Emperor can do little about it, with France and England at war again",
+  "data": {
+   "exception": "France, a friend since 1395",
+   "constraint": "the war of England and its allies against France, from 1 October 1409 (excommunication cb)"
+  },
+  "source": "Trent's account, November 1411; world data of 1 November 1411"
  }
 ]

@@ -253,7 +253,15 @@
   "name": "Estremadura",
   "nameChronicle": "the so-called Kingdom of Estremadura",
   "nameArabic": "إشترمادورة",
-  "color": "#87b87e"
+  "color": "#87b87e",
+  "renamed": [
+   {
+    "from": "1411-11-01",
+    "name": "Taifa of Pamplona",
+    "nameChronicle": "the Ṭāʾifa of Banbalūna",
+    "nameArabic": "طائفة بنبلونة"
+   }
+  ]
  },
  {
   "tag": "ABA58",
@@ -261,5 +269,26 @@
   "nameChronicle": "the rebels of Madīnat Rudrīq",
   "nameArabic": "مدينة رذريق",
   "color": "#7cbb5b"
+ },
+ {
+  "tag": "ABA10",
+  "name": "Taifa of Minho",
+  "nameChronicle": "the Ṭāʾifa of Burtuqāl",
+  "nameArabic": "طائفة البرتقال",
+  "color": "#6f9a7a"
+ },
+ {
+  "tag": "ABA42",
+  "name": "Taifa of León",
+  "nameChronicle": "the Ṭāʾifa of Liyūn",
+  "nameArabic": "طائفة ليون",
+  "color": "#9b7fb0"
+ },
+ {
+  "tag": "ABA49",
+  "name": "Taifa of Burgos",
+  "nameChronicle": "the Ṭāʾifa of Burghush",
+  "nameArabic": "طائفة برغش",
+  "color": "#b08d5b"
  }
 ]

@@ -1,7 +1,7 @@
 {
  "date": "1411-11-01",
- "checkpoint": "The End of Portugal",
- "note": "On 1 November 1411 (14 Rajab 814) the War of Jillīqiya, the fourth war of the Istirdād, ended with the Peace of Rajab. Portugal was annexed whole, 34 towns from Porto and Braga to Coimbra and Viseu, and Qashtāla gave up 63 towns, Old Castile, León and Navarre, from Valladolid and Burgos to Zamora, Segovia, Logroño and Pamplona. What is left of Qashtāla, 45 towns, is ruled from Oviedo. The crown holds 258 towns and 3,956,000 people directly, three in four of them Christians, with five ṭāʾifas besides. Treasury 816, income 220 against 303 with the armies still raised; 28 regiments. Shares of power are estimated from the 1 June 1349 reading.",
+ "checkpoint": "The Peace of Rajab",
+ "note": "On 1 November 1411 (14 Rajab 814) the War of Jillīqiya, the fourth war of the Istirdād, ended with the Peace of Rajab. Portugal was annexed whole and Qashtāla gave up 63 towns, Old Castile, León and Navarre; what is left of Qashtāla, 45 towns, is ruled from Oviedo. The conquests were given out at once as four new ṭāʾifas: Burtuqāl (the old Portugal) to the Emperor's cousin Aḥmad, Liyūn to the Emperor's son Aḥmad, Burghush (Old Castile) to Khālid ibn Yaḥyā Raḥḥū, and Banbalūna (Navarre) to the Emperor's cousin Yūsuf. The crown keeps 161 towns and 2,042,000 people, with nine ṭāʾifas under it. Europe is horrified, all but Paris. Treasury 816, income 220 against 303. Shares of power are estimated from the 1 June 1349 reading.",
  "source": {
   "save": "SP_ADU_1411_11_01 (compressed)",
   "gameVersion": "1.4.7",
@@ -13,7 +13,7 @@
  "regent": null,
  "capital": "ishbiliyya",
  "rank": "empire",
- "locations": 258,
+ "locations": 161,
  "overlord": null,
  "subjects": [
   {
@@ -34,6 +34,22 @@
   },
   {
    "country": "Taifa of Cuenca",
+   "type": "taifa"
+  },
+  {
+   "country": "Taifa of Minho",
+   "type": "taifa"
+  },
+  {
+   "country": "Taifa of León",
+   "type": "taifa"
+  },
+  {
+   "country": "Taifa of Burgos",
+   "type": "taifa"
+  },
+  {
+   "country": "Taifa of Pamplona",
    "type": "taifa"
   }
  ],
@@ -60,49 +76,45 @@
    "role": "Improving the realm’s standing abroad"
   }
  ],
- "crownPower": 39.43,
+ "crownPower": 34.35,
  "politicalInfluence": 100,
  "stability": 24.5,
  "prestige": 83,
  "armies": [],
  "population": {
-  "total": 3955683,
+  "total": 2042050,
   "cultures": {
-   "Castilian": 1376218,
-   "Portuguese": 1077292,
-   "Andalusi": 640884,
-   "Leonese": 520675,
-   "Sephardi": 172450,
-   "Basque": 146046,
-   "Galician": 7371,
+   "Castilian": 668652,
+   "Andalusi": 642208,
+   "Portuguese": 435725,
+   "Sephardi": 152929,
+   "Leonese": 132508,
    "Mustaarabi": 3624,
-   "French": 2231,
    "Sardinian": 1790,
-   "Ligurian": 1156,
-   "Gascon": 957,
-   "Provencal": 907,
+   "Ligurian": 870,
    "Sanhaja": 634,
    "Hausa": 628,
-   "Peruzzi_bank_culture": 563,
-   "Aragonese": 511,
-   "Bardi_bank_culture": 501,
+   "Peruzzi_bank_culture": 481,
+   "Aragonese": 401,
    "Catalan": 374,
    "Languedocien": 334,
+   "Bardi_bank_culture": 311,
    "Mandinka": 239,
    "Bulgarian": 104,
-   "Prussian": 76,
-   "Acciaioli_bank_culture": 50,
+   "Provencal": 92,
+   "French": 33,
    "Greek_culture": 32,
+   "Gascon": 24,
    "Kabyle": 22,
+   "Galician": 21,
    "Sicilian": 9,
    "Auvergnat": 4,
-   "Masmuda": 2,
-   "Burgundian": 0
+   "Masmuda": 2
   },
   "religions": {
-   "Catholic": 2988008,
-   "Sunni": 797899,
-   "Jewish": 168774,
+   "Catholic": 1090328,
+   "Sunni": 800513,
+   "Jewish": 150208,
    "Bori_Religion": 628,
    "Nyama": 239,
    "Orthodox": 135
@@ -112,42 +124,42 @@
   {
    "id": "crown",
    "name": "Crown",
-   "power": 39.43,
+   "power": 34.35,
    "satisfaction": null,
    "estimated": true
   },
   {
    "id": "nobles",
    "name": "Nobility",
-   "power": 14.46,
+   "power": 21.98,
    "satisfaction": 40,
    "estimated": true
   },
   {
    "id": "clergy",
    "name": "ʿUlamāʾ",
-   "power": 6.34,
+   "power": 9.21,
    "satisfaction": 50,
    "estimated": true
   },
   {
    "id": "burghers",
    "name": "Burghers",
-   "power": 7.59,
+   "power": 10.94,
    "satisfaction": 50,
    "estimated": true
   },
   {
    "id": "peasants",
    "name": "Commoners",
-   "power": 2.69,
+   "power": 3.95,
    "satisfaction": 50,
    "estimated": true
   },
   {
    "id": "dhimmi",
    "name": "Dhimmī",
-   "power": 29.48,
+   "power": 19.57,
    "satisfaction": 50,
    "estimated": true
   }
@@ -161,7 +173,7 @@
  "military": {
   "manpower": 2032,
   "maxManpower": 10557,
-  "regiments": 28,
+  "regiments": 9,
   "ships": 47
  },
  "wars": [],

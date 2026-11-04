@@ -664,7 +664,8 @@
   "mother": "qamar",
   "roles": [
    "general",
-   "expedition leader (1402)"
+   "expedition leader (1402)",
+   "ruler of the Ṭāʾifa of Burghush"
   ],
   "stats": {
    "adm": 80.7,
@@ -675,7 +676,7 @@
    "architect",
    "hardy_warrior"
   ],
-  "note": "Son of Yaḥyā Raḥḥū and Qamar, the mother of Ismāʿīl ibn Ismāʿīl: born into the Raḥḥū house on 30 December 1342. Took his seat in the dīwān on 2 April 1359, at sixteen, after Ismāʿīl ibn Ismāʿīl left for the Aydınid court; set to promoting Andalusī culture. One of the ablest men at court (80/85/78), an architect. Left the dīwān on 10 April 1366, when Maryam bint Ismāʿīl took his seat. A general in the Second Marīnid War: he was thrown back before Cádiz on 26 June 1369, held the line at Antequera on 15 October and won at Almuñécar on 8 November (save of 18 November 1369). He went on to win at Adra, Málaga (twice), Jerez and Beja in 1369–1370, the general of the war's second half. By January 1373 married to Charlotte of Crato, a Sunnī Portuguese noblewoman. In January 1402, at fifty-nine and still 80/85/78, he led the crown's Highland Prospecting Survey into the hills, from Almonaster in the Sierra toward El Escorial, Qusanṭīna and home to Ishbīliya (Trent's screens). The survey found iron at al-Iskuriyāl, silver at Qusanṭīna and gems at Qrabaqa, and came home on 3 August 1402. He is one of the court's favourites, sent whenever a member of the house does not see to a thing himself (Trent). On 2 July 1405, at sixty-two, he commanded the joint host of al-Andalus, Aragon and Catalonia, some 20,550 men, that broke the rising of Ciudad Rodrigo at Granadilla (save of 8 July 1405)."
+  "note": "Son of Yaḥyā Raḥḥū and Qamar, the mother of Ismāʿīl ibn Ismāʿīl: born into the Raḥḥū house on 30 December 1342. Took his seat in the dīwān on 2 April 1359, at sixteen, after Ismāʿīl ibn Ismāʿīl left for the Aydınid court; set to promoting Andalusī culture. One of the ablest men at court (80/85/78), an architect. Left the dīwān on 10 April 1366, when Maryam bint Ismāʿīl took his seat. A general in the Second Marīnid War: he was thrown back before Cádiz on 26 June 1369, held the line at Antequera on 15 October and won at Almuñécar on 8 November (save of 18 November 1369). He went on to win at Adra, Málaga (twice), Jerez and Beja in 1369–1370, the general of the war's second half. By January 1373 married to Charlotte of Crato, a Sunnī Portuguese noblewoman. In January 1402, at fifty-nine and still 80/85/78, he led the crown's Highland Prospecting Survey into the hills, from Almonaster in the Sierra toward El Escorial, Qusanṭīna and home to Ishbīliya (Trent's screens). The survey found iron at al-Iskuriyāl, silver at Qusanṭīna and gems at Qrabaqa, and came home on 3 August 1402. He is one of the court's favourites, sent whenever a member of the house does not see to a thing himself (Trent). On 2 July 1405, at sixty-two, he commanded the joint host of al-Andalus, Aragon and Catalonia, some 20,550 men, that broke the rising of Ciudad Rodrigo at Granadilla (save of 8 July 1405). On 1 November 1411, at sixty-eight, he was made ruler of the new Ṭāʾifa of Burghush, the 28 towns of Old Castile from Burgos and Valladolid to Palencia, Segovia and Logroño, the first man outside the house of Naṣr to be given a ṭāʾifa (save of 1 November 1411)."
  },
  {
   "id": "alfonso-xi",
@@ -2066,5 +2067,66 @@
   "roles": [],
   "traits": [],
   "note": "First son of the Emperor's son Saʿd and of Maryam, Shaykha of Qūnka; born 17 April 1410. Through his mother, heir to the frontier ṭāʾifa of Qūnka (save of 29 June 1410)."
+ },
+ {
+  "id": "ahmad-ibn-ismail-ibn-yusuf",
+  "name": "Aḥmad ibn Ismāʿīl ibn Yūsuf",
+  "nameArabic": "أحمد بن إسماعيل",
+  "nameGame": "Ahmad",
+  "gameId": 64963,
+  "dynasty": "Naṣrid",
+  "born": "1377-09-15",
+  "father": "ismail-ibn-yusuf",
+  "roles": [
+   "ruler of the Ṭāʾifa of Burtuqāl"
+  ],
+  "stats": {
+   "adm": 58,
+   "dip": 41,
+   "mil": 72
+  },
+  "traits": [],
+  "note": "Son of Ismāʿīl ibn Yūsuf, the old Emperor's brother: a cousin of the Emperor Ismāʿīl. Married to a daughter of Maryam bint Yūsuf and to a daughter of Khālid ibn Yaḥyā Raḥḥū. On 1 November 1411 he was made ruler of the new Ṭāʾifa of Burtuqāl, the 34 towns of the old Kingdom of Portugal, with his seat at Barcelos (save of 1 November 1411)."
+ },
+ {
+  "id": "ahmad-ibn-ismail-ibn-saad",
+  "name": "Aḥmad ibn Ismāʿīl ibn Saʿd",
+  "nameArabic": "أحمد بن إسماعيل",
+  "nameGame": "Ahmad",
+  "gameId": 77322,
+  "dynasty": "Naṣrid",
+  "born": "1393-10-21",
+  "father": "ismail-ibn-saad",
+  "mother": "aisha-ottoman",
+  "roles": [
+   "ruler of the Ṭāʾifa of Liyūn"
+  ],
+  "stats": {
+   "adm": 47,
+   "dip": 64,
+   "mil": 35
+  },
+  "traits": [],
+  "note": "Third son of the Emperor Ismāʿīl, by the Ottoman princess ʿĀʾisha; born 21 October 1393, ambitious as a child. Married to his cousin Muʾmina, Prince Yūsuf's daughter. On 1 November 1411, at eighteen, he was made ruler of the new Ṭāʾifa of Liyūn, 17 towns of the Leonese country from León and Astorga to Zamora and Toro (save of 1 November 1411)."
+ },
+ {
+  "id": "yusuf-ibn-ismail-ibn-yusuf",
+  "name": "Yūsuf ibn Ismāʿīl ibn Yūsuf",
+  "nameArabic": "يوسف بن إسماعيل",
+  "nameGame": "Yusuf",
+  "gameId": 16808225,
+  "dynasty": "Naṣrid",
+  "born": "1372-02-19",
+  "father": "ismail-ibn-yusuf",
+  "roles": [
+   "ruler of the Ṭāʾifa of Banbalūna"
+  ],
+  "stats": {
+   "adm": 56,
+   "dip": 30,
+   "mil": 63
+  },
+  "traits": [],
+  "note": "Son of Ismāʿīl ibn Yūsuf, the old Emperor's brother: a cousin of the Emperor Ismāʿīl. On 1 November 1411 he was made ruler of the new Ṭāʾifa of Banbalūna, 18 towns of Navarre and the upper Duero, from Pamplona and Tudela to Soria and Medinaceli (save of 1 November 1411)."
  }
 ]
