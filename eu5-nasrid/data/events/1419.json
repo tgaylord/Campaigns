@@ -54,5 +54,25 @@
    "valencia": "annexation of the ṭāʾifa nearly complete (Trent)"
   },
   "source": "Trent's account, April 1419"
+ },
+ {
+  "id": "1419-04-the-road-to-balansiyya",
+  "date": "1419-04-03",
+  "type": "reform",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [
+   "ishbiliyya",
+   "balansiyya"
+  ],
+  "wars": [],
+  "title": "The Emperor orders a great road built from Ishbīliya to Balansiyya. Once the ṭāʾifa is integrated, a governor will sit at Balansiyya to carry the empire's influence into the Mediterranean",
+  "data": {
+   "road": "Ishbīliya to Balansiyya",
+   "purpose": "a governor's seat at Balansiyya, to project influence into the Mediterranean (Trent)",
+   "date": "April 1419, after the Letter from Denia (Trent's account gives no exact day)"
+  },
+  "source": "Trent's account, April 1419"
  }
 ]
