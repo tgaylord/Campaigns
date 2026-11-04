@@ -1,0 +1,226 @@
+[
+ {
+  "id": "1411-01-02-battle-mouth-douro",
+  "date": "1411-01-02",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "fourth-war-of-the-istirdad"
+  ],
+  "title": "At the mouth of the Duero the Castilian admiral Pedro, with 14 ships, attacks the joined fleets of Catalonia and Fās, 124 sail under the Marīnid prince Khālid. He is driven off without losing a ship, but the allies lose 29, most of them transports, and two are taken",
+  "data": {
+   "result": "allied victory",
+   "naval": true,
+   "ours": {
+    "Catalonia": 33,
+    "Morocco": 91
+   },
+   "oursTotal": 124,
+   "oursLost": 29,
+   "theirs": {
+    "Castile": 14
+   },
+   "theirsTotal": 14,
+   "theirsLost": 0,
+   "location": "the mouth of the Duero",
+   "side": "Castile attacking",
+   "units": "ships",
+   "commanders": {
+    "Castile": "Pedro",
+    "allies": "Khālid, a Marīnid prince, a naval showman (37/60/72)"
+   },
+   "note": "the battle is counted a win for the allies; the allied losses include 23 transports, 2 of them captured"
+  },
+  "source": "autosave of 1 March 1411 (the war's battle list)"
+ },
+ {
+  "id": "1411-01-13-battle-cuellar-ii",
+  "date": "1411-01-13",
+  "type": "battle",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "wars": [
+   "fourth-war-of-the-istirdad"
+  ],
+  "title": "The Emperor's first great battle. On 17 Ramaḍān, the day of Badr, the Emperor Ismāʿīl with 25,730 men, Andalusīs and Marīnids, attacks Crisanto's 19,290 at Cuéllar, where the Catalans had been broken a month before. It is a hard day: 9,590 of ours fall for 8,450 of theirs, but the field is ours",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "al-Andalus": 22671,
+    "Morocco": 3063
+   },
+   "oursTotal": 25734,
+   "oursLost": 9586,
+   "theirs": {
+    "Castile": 19288
+   },
+   "theirsTotal": 19288,
+   "theirsLost": 8446,
+   "location": "Cuéllar",
+   "side": "al-Andalus attacking",
+   "warScore": 25.0,
+   "warScoreAfter": 47,
+   "commanders": {
+    "al-Andalus": "the Emperor Ismāʿīl",
+    "Castile": "Crisanto"
+   },
+   "composition": {
+    "ours": {
+     "archers": 16799,
+     "infantry": 2484,
+     "lightCavalry": 5463,
+     "heavyCavalry": 988
+    },
+    "theirs": {
+     "archers": 18449,
+     "lightCavalry": 170,
+     "heavyCavalry": 618,
+     "supply": 50
+    }
+   },
+   "losses": {
+    "ours": {
+     "archers": 6880,
+     "infantry": 1149,
+     "lightCavalry": 1434,
+     "heavyCavalry": 125
+    },
+    "theirs": {
+     "archers": 7961,
+     "lightCavalry": 67,
+     "heavyCavalry": 368,
+     "supply": 50
+    }
+   }
+  },
+  "source": "Trent's battle screen, 13 January 1411; autosave of 1 March 1411"
+ },
+ {
+  "id": "1411-02-10-battle-coimbra",
+  "date": "1411-02-10",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "fourth-war-of-the-istirdad"
+  ],
+  "title": "At Coimbra 940 Marīnids attack the Portuguese army of 13,440 and are destroyed",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Morocco": 942
+   },
+   "oursTotal": 942,
+   "oursLost": 942,
+   "theirs": {
+    "Portugal": 13437
+   },
+   "theirsTotal": 13437,
+   "theirsLost": 0,
+   "location": "Coimbra",
+   "side": "Morocco attacking",
+   "commanders": {
+    "Morocco": "ʿAbd al-Ḥaqq, a Marīnid prince",
+    "Portugal": "Ponce, an inspiring leader (67/55/89)"
+   }
+  },
+  "source": "autosave of 1 March 1411 (the war's battle list)"
+ },
+ {
+  "id": "1411-05-15-battle-toro",
+  "date": "1411-05-15",
+  "type": "battle",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "wars": [
+   "fourth-war-of-the-istirdad"
+  ],
+  "title": "On the outskirts of Zamora the Emperor meets Crisanto's host again at Toro, 20,890 against 11,110, and breaks it: 5,120 Castilians lost for 4,280 of ours",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "al-Andalus": 20890
+   },
+   "oursTotal": 20890,
+   "oursLost": 4282,
+   "theirs": {
+    "Castile": 11111
+   },
+   "theirsTotal": 11111,
+   "theirsLost": 5121,
+   "location": "Toro",
+   "side": "al-Andalus attacking",
+   "warScore": 20.52,
+   "warScoreAfter": 73,
+   "commanders": {
+    "al-Andalus": "the Emperor Ismāʿīl",
+    "Castile": "Crisanto"
+   },
+   "composition": {
+    "ours": {
+     "archers": 9919,
+     "infantry": 2042,
+     "lightCavalry": 8066,
+     "heavyCavalry": 863
+    },
+    "theirs": {
+     "archers": 10580,
+     "lightCavalry": 158,
+     "heavyCavalry": 360,
+     "supply": 13
+    }
+   },
+   "losses": {
+    "ours": {
+     "archers": 3848,
+     "infantry": 180,
+     "lightCavalry": 254
+    },
+    "theirs": {
+     "archers": 4734,
+     "lightCavalry": 93,
+     "heavyCavalry": 296
+    }
+   }
+  },
+  "source": "Trent's battle screen, 15 May 1411"
+ },
+ {
+  "id": "1411-06-21-battle-mouth-douro-ii",
+  "date": "1411-06-21",
+  "type": "battle",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "wars": [
+   "fourth-war-of-the-istirdad"
+  ],
+  "title": "The heir's first sea battle. At the mouth of the Duero the crown prince Muḥammad, with 34 ships of al-Andalus and Valencia, falls on the Portuguese fleet of 17 and sinks or takes 15 of them for the loss of 3",
+  "data": {
+   "result": "victory",
+   "naval": true,
+   "ours": {
+    "al-Andalus and Valencia": 34
+   },
+   "oursTotal": 34,
+   "oursLost": 3,
+   "theirs": {
+    "Portugal": 17
+   },
+   "theirsTotal": 17,
+   "theirsLost": 15,
+   "location": "the mouth of the Duero",
+   "side": "al-Andalus attacking",
+   "units": "ships",
+   "warScore": 25.0,
+   "commanders": {
+    "al-Andalus": "the crown prince Muḥammad (Trent: he likes boats)"
+   }
+  },
+  "source": "Trent's battle screen (breakdown), 21 June 1411"
+ }
+]

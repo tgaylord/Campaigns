@@ -74,5 +74,130 @@
    "peace": "nearly fifteen years since the Peace of Ramaḍān (22 June 1395)"
   },
   "source": "save of 29 June 1410; Trent's account"
+ },
+ {
+  "id": "1410-09-16-battle-cape-mondego",
+  "date": "1410-09-16",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "fourth-war-of-the-istirdad"
+  ],
+  "title": "Off Cape Mondego the Castilian admiral Pedro, with 14 ships, falls on the fleet of Tilimsān, 13 sail, and sinks every one of them without loss",
+  "data": {
+   "result": "allied defeat",
+   "naval": true,
+   "ours": {
+    "Tlemcen": 13
+   },
+   "oursTotal": 13,
+   "oursLost": 13,
+   "theirs": {
+    "Castile": 14
+   },
+   "theirsTotal": 14,
+   "theirsLost": 0,
+   "location": "Cape Mondego, off Portugal",
+   "side": "Castile attacking",
+   "units": "ships",
+   "commanders": {
+    "Castile": "Pedro, an accomplished sailor (93/80/75)",
+    "Tlemcen": "Kuri"
+   }
+  },
+  "source": "autosave of 1 March 1411 (the war's battle list)"
+ },
+ {
+  "id": "1410-10-09-battle-penafiel",
+  "date": "1410-10-09",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "fourth-war-of-the-istirdad"
+  ],
+  "title": "At Peñafiel on the Duero the 970 men of the Ṭāʾifa of Qūnka attack the main Castilian host of 19,800 and are destroyed to the last man",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Ṭāʾifa of Qūnka": 973
+   },
+   "oursTotal": 973,
+   "oursLost": 973,
+   "theirs": {
+    "Castile": 19805
+   },
+   "theirsTotal": 19805,
+   "theirsLost": 0,
+   "location": "Peñafiel",
+   "side": "Qūnka attacking",
+   "commanders": {
+    "Qūnka": "Eusebius",
+    "Castile": "Crisanto, a defensive planner (94/35/69)"
+   }
+  },
+  "source": "autosave of 1 March 1411 (the war's battle list)"
+ },
+ {
+  "id": "1410-12-07-battle-segovia",
+  "date": "1410-12-07",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "fourth-war-of-the-istirdad"
+  ],
+  "title": "At Segovia the Aragonese, 1,035 under Ṭahmāsp, beat 500 Castilians led by the heir of Castile, Prince Fernando: 311 of theirs lost for 150",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Aragon": 1035
+   },
+   "oursTotal": 1035,
+   "oursLost": 150,
+   "theirs": {
+    "Castile": 500
+   },
+   "theirsTotal": 500,
+   "theirsLost": 311,
+   "location": "Segovia",
+   "side": "Aragon attacking",
+   "commanders": {
+    "Aragon": "Ṭahmāsp, goal-oriented (58/58/59)",
+    "Castile": "Prince Fernando, heir of Castile"
+   }
+  },
+  "source": "autosave of 1 March 1411 (the war's battle list)"
+ },
+ {
+  "id": "1410-12-11-battle-cuellar",
+  "date": "1410-12-11",
+  "type": "battle",
+  "people": [],
+  "wars": [
+   "fourth-war-of-the-istirdad"
+  ],
+  "title": "At Cuéllar the Castilian host, 21,300 under Crisanto, attacks the Catalan army of 9,370 and breaks it: 5,400 Catalans lost for 2,000 Castilians",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Catalonia": 9372
+   },
+   "oursTotal": 9372,
+   "oursLost": 5398,
+   "theirs": {
+    "Castile": 21301
+   },
+   "theirsTotal": 21301,
+   "theirsLost": 2004,
+   "location": "Cuéllar",
+   "side": "Castile attacking",
+   "commanders": {
+    "Castile": "Crisanto",
+    "Catalonia": "Chandra, ruthless"
+   }
+  },
+  "source": "autosave of 1 March 1411 (the war's battle list)"
  }
 ]
