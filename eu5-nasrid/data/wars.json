@@ -687,8 +687,8 @@
   ]
  },
  {
-  "id": "fourth-war-of-the-istirdad",
-  "name": "The Fourth War of the Istirdād",
+  "id": "war-of-jilliqiya",
+  "name": "The War of Jillīqiya",
   "gameName": "Reconquest of Iberia",
   "series": {
    "name": "The Istirdād",
@@ -713,8 +713,8 @@
    "Portugal"
   ],
   "involvement": "belligerent",
-  "note": "On 29 June 1410 (25 Ṣafar 813) the truce of 1395 ran out and the Emperor Ismāʿīl declared war on Castile at once. Portugal joined Castile. Fās answered the Emperor's call with Tlemcen and Tafilalt; the Mamlūks were busy in the Fertile Crescent and not needed (Trent). On the day of the declaration al-Andalus had 4,900 regulars and 53 ships, Morocco 2,400 men and 37 ships; Castile 1,650 regulars and 25 ships, Portugal 750 and 8. No levies had yet been raised (save of 29 June 1410). Castile capitulated on 2 September 1411. Portugal fought on, and the Emperor refused a separate peace for concessions: this war was to be the end of Portugal (Trent, September 1411).",
-  "outcome": "Victory. Portugal was annexed whole, 34 towns, and Castile gave up 63, Old Castile, León and Navarre, keeping 45 in the north with its capital at Oviedo (the peace of 14 Rajab 814).",
+  "note": "On 29 June 1410 (25 Ṣafar 813) the truce of 1395 ran out and the Emperor Ismāʿīl declared war on Castile at once. Portugal joined Castile. Fās answered the Emperor's call with Tlemcen and Tafilalt; the Mamlūks were busy in the Fertile Crescent and not needed (Trent). On the day of the declaration al-Andalus had 4,900 regulars and 53 ships, Morocco 2,400 men and 37 ships; Castile 1,650 regulars and 25 ships, Portugal 750 and 8. No levies had yet been raised (save of 29 June 1410). Castile capitulated on 2 September 1411. Portugal fought on, and the Emperor refused a separate peace for concessions: this war was to be the end of Portugal (Trent, September 1411). The Emperor Ismāʿīl named it the War of Jillīqiya, the old Arab name for the whole Christian north-west beyond the Duero, the country the armies of al-Manṣūr had marched through to Shant Yāqub; it is the fourth war of the Istirdād.",
+  "outcome": "Victory. Portugal was annexed whole, 34 towns, and Castile gave up 63, Old Castile, León and Navarre, keeping 45 in the north with its capital at Oviedo (the Peace of Rajab, 1 November 1411).",
   "score": [
    {
     "date": "1410-06-29",
@@ -736,6 +736,7 @@
     "date": "1411-11-01",
     "value": 100
    }
-  ]
+  ],
+  "nameArabic": "حرب جليقية"
  }
 ]

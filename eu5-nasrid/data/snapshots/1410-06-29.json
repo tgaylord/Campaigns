@@ -1,7 +1,7 @@
 {
  "date": "1410-06-29",
- "checkpoint": "The Fourth War of the Istirdād",
- "note": "On 29 June 1410 the truce of the Peace of Ramaḍān ran out and the Emperor Ismāʿīl declared war on Qashtāla for the rest of the peninsula, the fourth war of the Istirdād. Portugal joined Qashtāla; Fās, with Tilimsān and Tafilalt, answered the Emperor's call, and the Mamlūks were not needed. Al-Andalus, fifth among the powers of the world, holds 161 towns and 2,040,000 people directly, with five ṭāʾifas; Qashtāla has 108 towns and 2,033,000 people, Portugal 34 towns. At the declaration the Emperor had 4,900 regulars and 53 ships against Qashtāla's 1,650 and 25 and Portugal's 750 and 8. Treasury 386, income 274 against 238. Shares of power are estimated from the 1 June 1349 reading.",
+ "checkpoint": "The War of Jillīqiya",
+ "note": "On 29 June 1410 the truce of the Peace of Ramaḍān ran out and the Emperor Ismāʿīl declared war on Qashtāla for the rest of the peninsula, the fourth war of the Istirdād, which he named the War of Jillīqiya. Portugal joined Qashtāla; Fās, with Tilimsān and Tafilalt, answered the Emperor's call, and the Mamlūks were not needed. Al-Andalus, fifth among the powers of the world, holds 161 towns and 2,040,000 people directly, with five ṭāʾifas; Qashtāla has 108 towns and 2,033,000 people, Portugal 34 towns. At the declaration the Emperor had 4,900 regulars and 53 ships against Qashtāla's 1,650 and 25 and Portugal's 750 and 8. Treasury 386, income 274 against 238. Shares of power are estimated from the 1 June 1349 reading.",
  "source": {
   "save": "SP_ADU_1410_06_29 (compressed)",
   "gameVersion": "1.4.7",
@@ -161,7 +161,7 @@
   "ships": 53
  },
  "wars": [
-  "fourth-war-of-the-istirdad"
+  "war-of-jilliqiya"
  ],
  "strait": {
   "active": false,

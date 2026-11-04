@@ -5,7 +5,7 @@
   "type": "battle",
   "people": [],
   "wars": [
-   "fourth-war-of-the-istirdad"
+   "war-of-jilliqiya"
   ],
   "title": "At the mouth of the Duero the Castilian admiral Pedro, with 14 ships, attacks the joined fleets of Catalonia and Fās, 124 sail under the Marīnid prince Khālid. He is driven off without losing a ship, but the allies lose 29, most of them transports, and two are taken",
   "data": {
@@ -41,7 +41,7 @@
    "ismail-ibn-saad"
   ],
   "wars": [
-   "fourth-war-of-the-istirdad"
+   "war-of-jilliqiya"
   ],
   "title": "The Emperor's first great battle. On 17 Ramaḍān, the day of Badr, the Emperor Ismāʿīl with 25,730 men, Andalusīs and Marīnids, attacks Crisanto's 19,290 at Cuéllar, where the Catalans had been broken a month before. It is a hard day: 9,590 of ours fall for 8,450 of theirs, but the field is ours",
   "data": {
@@ -103,7 +103,7 @@
   "type": "battle",
   "people": [],
   "wars": [
-   "fourth-war-of-the-istirdad"
+   "war-of-jilliqiya"
   ],
   "title": "At Coimbra 940 Marīnids attack the Portuguese army of 13,440 and are destroyed",
   "data": {
@@ -136,7 +136,7 @@
    "ismail-ibn-saad"
   ],
   "wars": [
-   "fourth-war-of-the-istirdad"
+   "war-of-jilliqiya"
   ],
   "title": "At Ledesma the Emperor's army of 14,500 catches the 320 men of Castile's heir, Prince Fernando, and kills 130; the prince escapes",
   "data": {
@@ -167,7 +167,7 @@
   "type": "battle",
   "people": [],
   "wars": [
-   "fourth-war-of-the-istirdad"
+   "war-of-jilliqiya"
   ],
   "title": "The great sea battle off al-Ushbūna. In the bay of Setúbal the Castilian admiral Pedro, with 14 ships, attacks the joined fleets of al-Andalus and Fās, 107 sail under the Marīnid prince Aḥmad, and loses every ship; the allies lose 12",
   "data": {
@@ -203,7 +203,7 @@
    "ismail-ibn-saad"
   ],
   "wars": [
-   "fourth-war-of-the-istirdad"
+   "war-of-jilliqiya"
   ],
   "title": "On the outskirts of Zamora the Emperor meets Crisanto's host again at Toro, 20,890 against 11,110, and breaks it: 5,120 Castilians lost for 4,280 of ours",
   "data": {
@@ -262,7 +262,7 @@
   "type": "battle",
   "people": [],
   "wars": [
-   "fourth-war-of-the-istirdad"
+   "war-of-jilliqiya"
   ],
   "title": "Off Cape Mondego the three Catalan ships of Berenguer Ramon, ruler of Catalonia, attack the Portuguese fleet of 17 and lose two",
   "data": {
@@ -294,7 +294,7 @@
   "type": "battle",
   "people": [],
   "wars": [
-   "fourth-war-of-the-istirdad"
+   "war-of-jilliqiya"
   ],
   "title": "At Coimbra the Portuguese army, 13,380 under Ponce, attacks 5,850 Marīnids under Ṭālib and is thrown back: 4,510 Portuguese lost for 2,560",
   "data": {
@@ -327,9 +327,9 @@
    "muhammad-ibn-ismail-ibn-saad"
   ],
   "wars": [
-   "fourth-war-of-the-istirdad"
+   "war-of-jilliqiya"
   ],
-  "title": "The crown prince's first sea battle. At the mouth of the Duero the Portuguese fleet of 17 attacks 34 ships of al-Andalus and Valencia, and loses 15 of them for 3 of ours",
+  "title": "The crown prince's first sea battle. At the mouth of the Duero the Portuguese fleet of 17 attacks 34 ships, 23 of al-Andalus under the crown prince Muḥammad and 11 of Valencia under their own admiral, and loses 15 of them for 3 of ours",
   "data": {
    "result": "victory",
    "naval": true,
@@ -349,7 +349,8 @@
    "units": "ships",
    "warScore": 25.0,
    "commanders": {
-    "al-Andalus": "the crown prince Muḥammad, in his first sea battle (Trent); the save names Otto, the Valencian admiral, an aggressive commander (76/62/43), as commander of the allied fleet",
+    "al-Andalus": "the crown prince Muḥammad, in his first sea battle (Trent)",
+    "Valencia": "Otto, the Valencian admiral, an aggressive commander (76/62/43), whom the save lists as commander of the allied side",
     "Portugal": "Afonso, level-headed (66/89/53)"
    }
   },
@@ -361,7 +362,7 @@
   "type": "battle",
   "people": [],
   "wars": [
-   "fourth-war-of-the-istirdad"
+   "war-of-jilliqiya"
   ],
   "title": "At Moncorvo the Marīnid prince Fāris, son of the sultan of Fās, with 3,000 attacks Crisanto's 6,380 and is beaten off; each side loses about 600",
   "data": {
@@ -394,7 +395,7 @@
    "ismail-ibn-saad"
   ],
   "wars": [
-   "fourth-war-of-the-istirdad"
+   "war-of-jilliqiya"
   ],
   "title": "At Besteiros, between Viseu and Coimbra, the Emperor with 11,370 destroys more than half the Portuguese army of 9,670: 5,280 of theirs lost for 1,920 of ours",
   "data": {
@@ -429,7 +430,7 @@
   ],
   "places": [],
   "wars": [
-   "fourth-war-of-the-istirdad"
+   "war-of-jilliqiya"
   ],
   "title": "Qashtāla surrenders unconditionally. Its armies gone and its lands occupied from Zamora to Galicia, the Crown of Castile capitulates to the Emperor, who may now dictate the terms of peace. War score stands at 100",
   "data": {
@@ -453,7 +454,7 @@
   ],
   "places": [],
   "wars": [
-   "fourth-war-of-the-istirdad"
+   "war-of-jilliqiya"
   ],
   "title": "With Qashtāla at his mercy, the Emperor turns on Portugal and marches on Porto, its capital, while the crown prince Muḥammad brings the fleet round to blockade the city from the sea. Portugal has not surrendered. A separate peace with it is possible, but the Emperor wants no concessions from Portugal: this war is to be the end of it",
   "data": {
@@ -470,7 +471,7 @@
   "type": "battle",
   "people": [],
   "wars": [
-   "fourth-war-of-the-istirdad"
+   "war-of-jilliqiya"
   ],
   "title": "Off Cape São Vicente the Marīnid fleet, 14 sail under Prince Khālid, catches the last three Castilian ships under Pedro and sinks two",
   "data": {
@@ -507,7 +508,7 @@
   ],
   "places": [],
   "wars": [
-   "fourth-war-of-the-istirdad"
+   "war-of-jilliqiya"
   ],
   "title": "Porto falls. Starved by the Emperor's siege on land and the crown prince's blockade at sea, its people rise and throw open the gates to the army. So ends the Kingdom of Portugal",
   "data": {
@@ -526,9 +527,9 @@
    "ismail-ibn-saad"
   ],
   "wars": [
-   "fourth-war-of-the-istirdad"
+   "war-of-jilliqiya"
   ],
-  "title": "The last battle. Three weeks after Porto fell, the nobles of Portugal make their last stand at Guimarães, the cradle of their kingdom: the Emperor's 9,450 fall on their 4,800 and kill or scatter 3,160 for the loss of 1,150",
+  "title": "The last battle. Three weeks after Porto fell, the last Portuguese army, 4,800 under Bernardo, marches on a force of Marīnid levies; the Emperor intercepts it at Guimarães, the cradle of the kingdom, with 9,450 men and kills or scatters 3,160 for the loss of 1,150",
   "data": {
    "result": "victory",
    "naval": false,
@@ -543,7 +544,7 @@
    "theirsTotal": 4803,
    "theirsLost": 3162,
    "location": "Guimarães",
-   "side": "al-Andalus attacking (the save); Trent: the nobles of Portugal threw themselves at the Emperor to stop the inevitable",
+   "side": "al-Andalus attacking: the Emperor intercepted the Portuguese as they moved against a Marīnid force of levies (Trent)",
    "warScore": 9.42,
    "commanders": {
     "al-Andalus": "the Emperor Ismāʿīl",
@@ -587,9 +588,9 @@
   ],
   "places": [],
   "wars": [
-   "fourth-war-of-the-istirdad"
+   "war-of-jilliqiya"
   ],
-  "title": "The peace of 14 Rajab 814. Portugal ceases to be: all 34 of its towns, from Porto, Braga and Guimarães to Coimbra, Viseu and Bragança, pass to the crown. Qashtāla gives up 63 towns, the heart of Old Castile, León and Navarre: Valladolid, Burgos, León, Zamora, Toro, Palencia, Segovia, Soria and Logroño, and Pamplona, Tudela and Estella. What is left of Qashtāla, 45 towns in Galicia, Asturias, Cantabria and the Basque country, is ruled from Oviedo",
+  "title": "The Peace of Rajab (14 Rajab 814). Portugal ceases to be: all 34 of its towns, from Porto, Braga and Guimarães to Coimbra, Viseu and Bragança, pass to the crown. Qashtāla gives up 63 towns, the heart of Old Castile, León and Navarre: Valladolid, Burgos, León, Zamora, Toro, Palencia, Segovia, Soria and Logroño, and Pamplona, Tudela and Estella. What is left of Qashtāla, 45 towns in Galicia, Asturias, Cantabria and the Basque country, is ruled from Oviedo",
   "data": {
    "portugal": {
     "ceded": 34,
@@ -633,7 +634,8 @@
     "expenses": 303.2,
     "rank": 5
    },
-   "battles": "17 in the war's list, from Cape Mondego (16 September 1410) to Guimarães (27 October 1411)"
+   "battles": "17 in the war's list, from Cape Mondego (16 September 1410) to Guimarães (27 October 1411)",
+   "name": "the Peace of Rajab, signed in one of the sacred months (Trent, November 1411)"
   },
   "source": "saves of 1 November 1411, before and after the peace; Trent's account"
  }

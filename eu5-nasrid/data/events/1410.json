@@ -43,9 +43,9 @@
   ],
   "places": [],
   "wars": [
-   "fourth-war-of-the-istirdad"
+   "war-of-jilliqiya"
   ],
-  "title": "The truce with Qashtāla runs out, and the Emperor Ismāʿīl declares the fourth war of the Istirdād. Portugal joins Qashtāla; Fās answers the Emperor's call with Tilimsān and Tafilalt. The Mamlūks, busy in the Fertile Crescent, are not needed",
+  "title": "The truce with Qashtāla runs out, and the Emperor Ismāʿīl declares the fourth war of the Istirdād, which he names the War of Jillīqiya. Portugal joins Qashtāla; Fās answers the Emperor's call with Tilimsān and Tafilalt. The Mamlūks, busy in the Fertile Crescent, are not needed",
   "data": {
    "cb": "cb_reconquer_iberia",
    "gameName": "Reconquest of Iberia",
@@ -81,7 +81,7 @@
   "type": "battle",
   "people": [],
   "wars": [
-   "fourth-war-of-the-istirdad"
+   "war-of-jilliqiya"
   ],
   "title": "Off Cape Mondego the Castilian admiral Pedro, with 14 ships, falls on the fleet of Tilimsān, 13 sail, and sinks every one of them without loss",
   "data": {
@@ -113,7 +113,7 @@
   "type": "battle",
   "people": [],
   "wars": [
-   "fourth-war-of-the-istirdad"
+   "war-of-jilliqiya"
   ],
   "title": "At Peñafiel on the Duero the 970 men of the Ṭāʾifa of Qūnka attack the main Castilian host of 19,800 and are destroyed to the last man",
   "data": {
@@ -144,7 +144,7 @@
   "type": "battle",
   "people": [],
   "wars": [
-   "fourth-war-of-the-istirdad"
+   "war-of-jilliqiya"
   ],
   "title": "At Segovia the Aragonese, 1,035 under Ṭahmāsp, beat 500 Castilians led by the heir of Castile, Prince Fernando: 311 of theirs lost for 150",
   "data": {
@@ -175,7 +175,7 @@
   "type": "battle",
   "people": [],
   "wars": [
-   "fourth-war-of-the-istirdad"
+   "war-of-jilliqiya"
   ],
   "title": "At Cuéllar the Castilian host, 21,300 under Crisanto, attacks the Catalan army of 9,370 and breaks it: 5,400 Catalans lost for 2,000 Castilians",
   "data": {
