@@ -1,0 +1,19 @@
+---
+title: Of the Jamāʿa of 817, and the Landlords of the North
+date: 1414-10-24
+era: book-of-the-marches
+kind: chronicle
+people: [ismail-ibn-saad, saad-ibn-yusuf]
+places: [banbaluna, ishbiliyya]
+sources: [1414-10-24-rising-at-pamplona, 1414-10-24-jamaa-of-the-mercenaries, 1402-08-the-umara, 1402-09-jamaa-of-the-markets]
+---
+
+In Shaʿbān 817 a handful of malcontents rose at [Banbalūna](place:banbaluna) and were put down before the news of their rising had crossed the Ebro. It was nothing, and the Emperor [Ismāʿīl](person:ismail-ibn-saad) made a great deal of it. He told the dīwān that the north was restless, that the empire's armies must be ready to march at a word, and that the old ways of raising them would not serve. He called a Jamāʿa at [Ishbīliya](place:ishbiliyya) for 9 Shaʿbān.
+
+For a generation the hiring of foreign soldiers had been the business of the umarāʾ. The great families signed the contracts, paid the captains and kept the companies, and every mercenary in the empire's service owed his wages, and so his loyalty, to some lord of the Andalusī houses before he owed it to the crown. The Emperor [Saʿd](person:saad-ibn-yusuf) had seen the danger in that, and from the year 805 the dīwān's policy had been to break the power of the umarāʾ now that the state was built. Ismāʿīl now laid before the Jamāʿa a law to take the contracts away from them, and with it several smaller reforms, each of which took a little more.
+
+He did not present it as a loss. He came to the assembly with the banners of Cuéllar and Toro carried before him and the keys of Porto on a cushion, and he spoke of the north. The empire had won more land in the War of Jillīqiya than the house of Naṣr had held when he was born, he said, and it needed men of good family to settle it. He offered dozens of the noble houses estates in the conquered lands, and to others he offered claims on lands Qashtāla still held, to be theirs when the next war was won. The umarāʾ had been grumbling for twelve years. Now they went home talking of the castles they would build in León and the vineyards they would have on the Ebro, and they voted for the law.
+
+It was some time before they read the grants closely. The lands were theirs to live on and to draw rents from, but the grants gave them no courts, no levies and no lordship over the people who worked the land. They had become landlords, not lords. The conquests of Jillīqiya were still the property of the crown and the house of Naṣr, and the mercenaries now drew their pay from the Emperor's treasury. The court remembered that the Emperor's tutors had once said he could tell every man what he wished to hear, and the umarāʾ, who had heard exactly what they wished, had only themselves to blame.
+
+*We raise in degrees whom We will, and over every possessor of knowledge is one more knowing.*

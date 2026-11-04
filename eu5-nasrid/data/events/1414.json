@@ -1,0 +1,41 @@
+[
+ {
+  "id": "1414-10-24-rising-at-pamplona",
+  "date": "1414-10-24",
+  "type": "player_note",
+  "people": [],
+  "places": [
+   "banbaluna"
+  ],
+  "wars": [],
+  "title": "A small and short-lived rising at Pamplona, in the Ṭāʾifa of Banbalūna, gives the Emperor the occasion he wants",
+  "data": {
+   "note": "minor and inconsequential (Trent)"
+  },
+  "source": "Trent's account, 24 October 1414"
+ },
+ {
+  "id": "1414-10-24-jamaa-of-the-mercenaries",
+  "date": "1414-10-24",
+  "type": "estate_change",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "The Emperor calls a Jamāʿa and, in the pomp of victory, takes from the umarāʾ the right to raise and manage the empire's mercenaries, with several smaller reforms against their power. To win their votes he offers dozens of noble families land in the north, or claims on lands still held by Qashtāla for after the next war. The grants make them landlords, not lords: the conquests remain the property of the crown and the house of Naṣr",
+  "data": {
+   "assembly": "Jamāʿa of 1414",
+   "revoked": {
+    "privilege": "Feudal Mercenary Contracts (nobles)",
+    "effects": "hire mercenary premium cost −20%, mercenary maintenance efficiency +10%, nobles' satisfaction +5%, nobles' power +100%",
+    "text": "the armies levied by our people often leave a lot to be desired; in order to protect our people and best our rivals, we must rely on foreign mercenaries, whose contracts will be managed by the elite members of our society (the game's text)",
+    "costToRemove": "38.91 political influence and −40% nobles' satisfaction"
+   },
+   "otherReforms": "several minor reforms to chip away at the power of the umarāʾ (Trent)",
+   "sweetener": "settlement of noble families in the north and claims on Castilian-held lands after the next war, with rights resembling landlords rather than feudal lords; the new conquests remain the property of the crown and the family (Trent)",
+   "thread": "the crown and the umarāʾ: from 1402 the crown's aim is to break the power of the nobles"
+  },
+  "source": "Trent's screenshot and account, 24 October 1414"
+ }
+]
