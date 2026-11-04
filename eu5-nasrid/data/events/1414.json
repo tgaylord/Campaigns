@@ -84,5 +84,32 @@
    }
   },
   "source": "save of 24 October 1414; Trent's screens and account"
+ },
+ {
+  "id": "1414-11-ismail-greedy",
+  "date": "1414-11-01",
+  "type": "player_note",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "After the Jamāʿa the Emperor Ismāʿīl is counted greedy: revenue collection grows iron-fisted and short-sighted under a ruler who will stop at nothing to raise his income",
+  "data": {
+   "trait": "greedy",
+   "effects": {
+    "politicalInfluenceGain": "-10%",
+    "monthlyProsperity": "-0.02%",
+    "marriageDesirability": -10
+   },
+   "traitsNow": [
+    "just",
+    "greedy",
+    "deceitful",
+    "goal_oriented"
+   ],
+   "date": "not exact: after the save of 24 October 1414, which does not show it"
+  },
+  "source": "Trent's screen, November 1414"
  }
 ]
