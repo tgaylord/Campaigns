@@ -222,5 +222,49 @@
    }
   },
   "source": "Trent's battle screen (breakdown), 21 June 1411"
+ },
+ {
+  "id": "1411-09-02-castile-capitulates",
+  "date": "1411-09-02",
+  "type": "war_joined",
+  "people": [
+   "ismail-ibn-saad",
+   "pedro-of-castile"
+  ],
+  "places": [],
+  "wars": [
+   "fourth-war-of-the-istirdad"
+  ],
+  "title": "Qashtāla surrenders unconditionally. Its armies gone and its lands occupied from Zamora to Galicia, the Crown of Castile capitulates to the Emperor, who may now dictate the terms of peace. War score stands at 100",
+  "data": {
+   "event": "Capitulation! (the game's notice: Castile has unconditionally surrendered in the Reconquest of Iberia; we control their lands and may dictate the terms of peace)",
+   "warScore": 100,
+   "armiesOnScreen": "our armies of 3,035, 5,588, 1,809, 2,169, 1,303 and 1,399 across León and Galicia, with Santiago de Compostela, Ponferrada and Zamora flying the Emperor's flag; the main army 9,437",
+   "realm": {
+    "population": "2.041 million",
+    "stability": 24
+   }
+  },
+  "source": "Trent's screen, 2 September 1411"
+ },
+ {
+  "id": "1411-09-the-march-on-porto",
+  "date": "1411-09-03",
+  "type": "player_note",
+  "people": [
+   "ismail-ibn-saad",
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [
+   "fourth-war-of-the-istirdad"
+  ],
+  "title": "With Qashtāla at his mercy, the Emperor turns on Portugal and marches on Porto, its capital, while the crown prince Muḥammad brings the fleet round to blockade the city from the sea",
+  "data": {
+   "target": "Porto, capital of Portugal",
+   "army": "the Emperor in person",
+   "fleet": "the crown prince Muḥammad, blockading"
+  },
+  "source": "Trent's account, September 1411"
  }
 ]
