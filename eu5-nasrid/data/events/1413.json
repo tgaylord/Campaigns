@@ -1,0 +1,18 @@
+[
+ {
+  "id": "1413-01-14-madrasas-everywhere",
+  "date": "1413-01-14",
+  "type": "reform",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "With the riches taken from Qashtāla, the Emperor Ismāʿīl orders a madrasa built in every town and city of the empire, not only in the lands the crown holds directly but in the ṭāʾifas too",
+  "data": {
+   "funding": "the wealth taken from Castile in the War of Jillīqiya (the treasury stood at 816 after the Peace of Rajab)",
+   "scope": "every town and city, the ṭāʾifas included (Trent's account, read as 'not just the ones held directly by the crown')"
+  },
+  "source": "Trent's account, 14 January 1413"
+ }
+]
