@@ -1,0 +1,28 @@
+---
+title: Of Cuéllar, the Gates of Porto, and the End of Portugal
+date: 1411-11-01
+era: book-of-the-marches
+kind: chronicle
+people: [ismail-ibn-saad, muhammad-ibn-ismail-ibn-saad, pedro-of-castile, fernando-of-castile, abu-al-fadl-marinid]
+places: [ishbiliyya, al-ushbuna, qunka, fas]
+wars: [fourth-war-of-the-istirdad]
+sources: [1410-06-29-war-on-castile, 1410-09-16-battle-cape-mondego, 1410-10-09-battle-penafiel, 1410-12-11-battle-cuellar, 1411-01-13-battle-cuellar-ii, 1411-03-10-battle-bay-setubal, 1411-05-15-battle-toro, 1411-06-21-battle-mouth-douro-ii, 1411-08-28-battle-besteiros, 1411-09-02-castile-capitulates, 1411-09-the-march-on-porto, 1411-10-07-porto-falls, 1411-10-27-battle-guimaraes, 1411-11-01-the-end-of-portugal]
+---
+
+The truce of the Peace of Ramaḍān ran out on 25 Ṣafar 813, and the Emperor [Ismāʿīl](person:ismail-ibn-saad) declared war on Qashtāla the same day. It was the fourth war of the Istirdād. Portugal stood with Qashtāla, as it always had. The sultan [Abū al-Faḍl](person:abu-al-fadl-marinid) of [Fās](place:fas) sent his armies and his fleet, with the men of Tilimsān and Tafilalt. The Mamlūks were busy putting the Fertile Crescent in order, and the Emperor did not ask them to leave it.
+
+The war began badly. Off Cape Mondego the Castilian admiral Pedro, a seaman of real skill, sent the whole fleet of Tilimsān to the bottom without losing a ship. At Peñafiel the little army of [Qūnka](place:qunka) threw itself on the Castilian host and was destroyed. And in Shaʿbān the Castilian general Crisanto, a careful man who never fought on ground he had not chosen, broke the Catalan army at Cuéllar, south of the Duero.
+
+The Emperor had never been taken for a soldier, and he knew it. He was a man who set himself one aim and gave every order to it, and his aim that winter was Crisanto. He took the army north himself and found the Castilians on the same field at Cuéllar. He attacked on 17 Ramaḍān 813, the anniversary of Badr, with twenty-five thousand Andalusīs and Marīnids against nineteen thousand. It was the hardest day of his life. Nearly ten thousand of ours fell, and more than eight thousand of theirs. At nightfall the field was his, and the preachers of [Ishbīliya](place:ishbiliyya) had their sermon for the next Friday.
+
+The sea turned next. In Dhū al-Qaʿda the admiral Pedro tried his luck once more, with fourteen ships against the joined fleets of al-Andalus and Fās, a hundred and seven sail under the Marīnid prince Aḥmad, in the bay of Setúbal below [al-Ushbūna](place:al-ushbuna). None of the fourteen came home. In Muḥarram 814 the Emperor met Crisanto a second time, at Toro outside Zamora, and broke him again. In Ṣafar the Portuguese fleet came out against thirty-four ships of al-Andalus and Balansiyya at the mouth of the Duero. The crown prince [Muḥammad](person:muhammad-ibn-ismail-ibn-saad) was with the fleet, in his first battle. Fifteen Portuguese ships were sunk or taken, for three of ours. The prince had never shone in the dīwān, but on a deck he was another man, and he would talk of ships for the rest of his life. In Jumādā al-Ūlā the Emperor caught the Portuguese army at Besteiros and destroyed more than half of it.
+
+On 13 Jumādā al-Ūlā 814 Qashtāla surrendered without conditions. Its armies were gone and the Emperor's flags flew from Zamora to Santiago de Compostela. Portugal fought on. The dīwān told the Emperor he could have a separate peace with it whenever he wished, and a province for the asking. He refused. He had not come for a province, and this war would be the end of Portugal. He marched on Porto, its capital, and sent the crown prince round with the fleet to close the river mouth behind it. Porto held out for a month. Then the grain ran out. On 18 Jumādā al-Ākhira the starving city rose against its own garrison, and the townsmen threw open the gates to the army.
+
+The nobles of Portugal had one battle left. On 9 Rajab they made their stand at Guimarães, where their first king had been born. The Emperor fell on them with twice their number and broke them, and with them the last army of Portugal.
+
+Five days later, on 14 Rajab 814, the peace was signed. Rajab is one of the sacred months, in which the Prophet forbade war, and the court said it was fitting that this war should end in it. Portugal ceased to be. Its thirty-four towns, from Porto and Braga to Coimbra and Viseu, passed to the crown, and its king [Fernando](person:fernando-of-castile) went into exile at the court of the man who had dragged him into the war. Qashtāla gave up sixty-three towns, the whole of Old Castile, León and Navarre, from Valladolid and Burgos to Segovia, Soria and Pamplona. King [Pedro](person:pedro-of-castile) kept forty-five towns in the rain of the north, in Galicia, Asturias and the Basque hills, and moved his court to Oviedo. The Christians had always said their reconquest began in those mountains, when a Gothic lord held a cave against the first governors of al-Andalus. Seven hundred years later they had been driven back to the same mountains.
+
+The crown now ruled two hundred and fifty-eight towns and nearly four million souls. Three of every four of them were Christians.
+
+*When the victory of Allāh has come and the conquest, and you see the people entering into the religion of Allāh in multitudes, then exalt with praise of your Lord and ask forgiveness of Him.*

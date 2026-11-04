@@ -696,7 +696,7 @@
    "number": 4
   },
   "start": "1410-06-29",
-  "end": null,
+  "end": "1411-11-01",
   "goal": "The Reconquest of Iberia against Castile (cb_reconquer_iberia), declared the day the truce of the Peace of Ramaḍān ran out",
   "allies": [
    "Aragon",
@@ -714,7 +714,7 @@
   ],
   "involvement": "belligerent",
   "note": "On 29 June 1410 (25 Ṣafar 813) the truce of 1395 ran out and the Emperor Ismāʿīl declared war on Castile at once. Portugal joined Castile. Fās answered the Emperor's call with Tlemcen and Tafilalt; the Mamlūks were busy in the Fertile Crescent and not needed (Trent). On the day of the declaration al-Andalus had 4,900 regulars and 53 ships, Morocco 2,400 men and 37 ships; Castile 1,650 regulars and 25 ships, Portugal 750 and 8. No levies had yet been raised (save of 29 June 1410). Castile capitulated on 2 September 1411. Portugal fought on, and the Emperor refused a separate peace for concessions: this war was to be the end of Portugal (Trent, September 1411).",
-  "outcome": null,
+  "outcome": "Victory. Portugal was annexed whole, 34 towns, and Castile gave up 63, Old Castile, León and Navarre, keeping 45 in the north with its capital at Oviedo (the peace of 14 Rajab 814).",
   "score": [
    {
     "date": "1410-06-29",
@@ -730,6 +730,10 @@
    },
    {
     "date": "1411-09-02",
+    "value": 100
+   },
+   {
+    "date": "1411-11-01",
     "value": 100
    }
   ]
