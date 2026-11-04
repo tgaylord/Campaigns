@@ -304,5 +304,19 @@
   "nameChronicle": "the rebels of Zamora",
   "nameArabic": "سمورة",
   "color": "#8a6d5a"
+ },
+ {
+  "tag": "ATU",
+  "name": "Asturias",
+  "nameChronicle": "Ashturiyās",
+  "nameArabic": "أشتورياس",
+  "color": "#7d8c3a"
+ },
+ {
+  "tag": "GLC",
+  "name": "Galicia",
+  "nameChronicle": "Jillīqiya",
+  "nameArabic": "جليقية",
+  "color": "#4a8fb0"
  }
 ]

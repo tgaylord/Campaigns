@@ -236,5 +236,58 @@
    "rivals": "England names al-Andalus among its rivals; Castile names al-Andalus, Morocco and France"
   },
   "source": "save of 11 August 1420 (tools/world_powers.py)"
+ },
+ {
+  "id": "1420-09-04-the-fall-of-qashtala",
+  "date": "1420-09-04",
+  "type": "territory_change",
+  "people": [
+   "pedro-of-castile",
+   "diego-villamarin",
+   "jose-fernando-tunon",
+   "alfonso-gaston"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "The Kingdom of Qashtāla falls apart. Its 45 towns in the northern mountains become four petty kingdoms: Galicia under Diego Villamarín (23 towns, from Santiago and A Coruña), Asturias under José Fernando Tuñón (8, from Oviedo), Navarre on the Basque coast under Alfonso Gastón (10, from Bilbao), and what is left of Castile, four towns around Santander, under King Pedro",
+  "data": {
+   "Galicia": {
+    "towns": 23,
+    "population": 379000,
+    "capital": "Santiago de Compostela",
+    "culture": "Galician",
+    "ruler": "Diego Villamarín, born 1391 (33/39/89)"
+   },
+   "Asturias": {
+    "towns": 8,
+    "population": 130000,
+    "capital": "Oviedo",
+    "culture": "Leonese",
+    "ruler": "José Fernando Tuñón, born 1385 (43/67/59)"
+   },
+   "Navarre": {
+    "towns": 10,
+    "population": 161000,
+    "capital": "Bilbao",
+    "culture": "Basque",
+    "ruler": "Alfonso Gastón, born 1389 (15/35/59)",
+    "note": "the save shows the state Sunni though all its people are Catholic; Trent is correcting this in game (Trent, 4 September 1420)"
+   },
+   "Castile": {
+    "towns": 4,
+    "population": 93000,
+    "capital": "Santander",
+    "towns_list": [
+     "Santander",
+     "Laredo",
+     "Potes",
+     "San Vicente de la Barquera"
+    ],
+    "ruler": "Pedro, since 1394; heir Fernando, born 1392"
+   },
+   "mechanism": "no war in the save; Navarre has a truce with Castile from that day. The save doesn't show what broke the kingdom up",
+   "account": "the Kingdom of Castile has collapsed into a series of petty kings clinging to the mountains north of our lands (Trent)"
+  },
+  "source": "save of 4 September 1420; Trent's account"
  }
 ]

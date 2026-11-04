@@ -1,0 +1,36 @@
+[
+ {
+  "id": "1421-08-01-the-secret-of-the-naft",
+  "date": "1421-08-01",
+  "type": "diplomacy",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "The Secret of the Naft. Ethiopia offers the Emperor a sum of money for the empire's naft, its fire weapons. To sell is to let them be used against al-Andalus one day; the court answers that it will never backfire",
+  "data": {
+   "event": "The Secret of the Naft",
+   "text": "Ethiopia has offered us a sum of money if we are to sell them some of our weaponry, specifically the nafts. We can accept, but that will allow them to potentially use them against us (the game's text)",
+   "choice": "It will never backfire (the option whose tooltip is open; the other was 'They will not have our weapons!')",
+   "effects": {
+    "Ethiopia": "unlocks the Naft Throwers unit type",
+    "al-Andalus": "receives 419.55 gold from Ethiopia, 200% of yearly income"
+   },
+   "realm": {
+    "treasury": "610 before the sale",
+    "population": "2.459 million",
+    "army": "4,900",
+    "fleets": "six squadrons of 7–8 ships"
+   },
+   "diwan": [
+    "integrating Trujillo",
+    "integrating Ocaña",
+    "integrating Cáceres",
+    "encouraging migration to Ishbīliya",
+    "developing Ishbīliya"
+   ]
+  },
+  "source": "Trent's screenshot, 1 August 1421"
+ }
+]

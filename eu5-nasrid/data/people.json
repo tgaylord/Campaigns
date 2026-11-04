@@ -1803,7 +1803,7 @@
    "stubborn",
    "drunkard"
   ],
-  "note": "Son of King Fernando, king of Castile from his father's death on 6 January 1394, two months before the Emperor's declaration. He lost the War of the League and on 22 June 1395 surrendered 51 towns, Madrid, Salamanca, Ávila and Cuenca among them, with reparations for ten years (saves of 4 March 1394 and 22 June 1395). In June 1410, at thirty-nine, still king, stubborn and a drunkard, he faced the Emperor Ismāʿīl's declaration of the fourth war of the Istirdād with 1,650 men under arms; his heir is his son Fernando, eighteen (save of 29 June 1410). He capitulated on 2 September 1411, and at the peace of 1 November 1411 gave up 63 towns, Valladolid, Burgos, León and Navarre among them, keeping 45 in the north with his capital at Oviedo (saves of 1 November 1411)."
+  "note": "Son of King Fernando, king of Castile from his father's death on 6 January 1394, two months before the Emperor's declaration. He lost the War of the League and on 22 June 1395 surrendered 51 towns, Madrid, Salamanca, Ávila and Cuenca among them, with reparations for ten years (saves of 4 March 1394 and 22 June 1395). In June 1410, at thirty-nine, still king, stubborn and a drunkard, he faced the Emperor Ismāʿīl's declaration of the fourth war of the Istirdād with 1,650 men under arms; his heir is his son Fernando, eighteen (save of 29 June 1410). He capitulated on 2 September 1411, and at the peace of 1 November 1411 gave up 63 towns, Valladolid, Burgos, León and Navarre among them, keeping 45 in the north with his capital at Oviedo (saves of 1 November 1411). On 4 September 1420 his kingdom fell apart into the petty kingdoms of Galicia, Asturias and Navarre, and he kept only four towns on the Cantabrian coast, ruling from Santander (save of 4 September 1420)."
  },
  {
   "id": "agustin-arce",
@@ -2337,5 +2337,58 @@
    "defensive_planner"
   ],
   "note": "A Castilian Catholic noble who led the rising of the province of Zamora against the Ṭāʾifa of Liyūn on 1 June 1420. The Emperor Ismāʿīl destroyed his 370 men at Fermoselle on 10 August 1420 without the loss of a man (save of 11 August 1420)."
+ },
+ {
+  "id": "diego-villamarin",
+  "name": "Diego Villamarín",
+  "nameGame": "Diego Villamarin",
+  "gameId": 88869,
+  "born": "1391-09-15",
+  "roles": [
+   "king of Galicia (from 1420)"
+  ],
+  "stats": {
+   "adm": 33,
+   "dip": 39,
+   "mil": 89
+  },
+  "traits": [
+   "adept"
+  ],
+  "note": "A Galician noble and a soldier of rare gifts (89 in war). On 4 September 1420, when the Kingdom of Castile fell apart, he became king of Galicia: 23 towns from Santiago and A Coruña to Lugo, Ourense and Tui, some 380,000 Galicians, all Catholic (save of 4 September 1420)."
+ },
+ {
+  "id": "jose-fernando-tunon",
+  "name": "José Fernando Tuñón",
+  "nameGame": "Joseph Ferdinand Tunon",
+  "gameId": 88881,
+  "born": "1385-11-13",
+  "roles": [
+   "king of Asturias (from 1420)"
+  ],
+  "stats": {
+   "adm": 43,
+   "dip": 67,
+   "mil": 59
+  },
+  "traits": [],
+  "note": "A Leonese noble who on 4 September 1420, when the Kingdom of Castile fell apart, became king of Asturias: 8 towns from Oviedo, Castile's last capital, to Avilés, Villaviciosa and Llanes, some 130,000 people, nearly all Leonese and Catholic (save of 4 September 1420)."
+ },
+ {
+  "id": "alfonso-gaston",
+  "name": "Alfonso Gastón",
+  "nameGame": "Alfontso",
+  "gameId": 88873,
+  "born": "1389-10-13",
+  "roles": [
+   "king of Navarre (from 1420)"
+  ],
+  "stats": {
+   "adm": 15,
+   "dip": 35,
+   "mil": 59
+  },
+  "traits": [],
+  "note": "A Basque noble who on 4 September 1420, when the Kingdom of Castile fell apart, became king of Navarre, the second Alfonso of that crown: the 10 Basque towns of the coast and Álava, from Bilbao, his capital, and San Sebastián to Vitoria, some 160,000 Basques. The old Navarre of Pamplona is the Emperor's Ṭāʾifa of Banbalūna. The save shows the new state Sunni though its people are all Catholic; Trent is correcting this in game (save of 4 September 1420; Trent's account)."
  }
 ]
