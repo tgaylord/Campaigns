@@ -1,5 +1,17 @@
 [
  {
+  "id": "1393-02-24-death-of-alfons",
+  "date": "1393-02-24",
+  "type": "death",
+  "people": [
+   "alfons-de-borja",
+   "rodrigo-de-borja"
+  ],
+  "title": "King Alfons of the Ṭāʾifa of Aragon dies at Benabarre. His son Rodrigo, a boy of eleven, succeeds him",
+  "data": {},
+  "source": "save of 3 September 1398 (people.json records of Alfons and Rodrigo)"
+ },
+ {
   "id": "1393-coalition",
   "date": "1393-05-03",
   "type": "diplomacy",

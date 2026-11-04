@@ -799,8 +799,9 @@
   },
   "traits": [
    "conqueror",
-   "hajji",
-   "prodigy"
+   "entrepreneur",
+   "hardy_warrior",
+   "incorruptible"
   ],
   "note": "First son of Yūsuf I and Sayyida of Fezzan, born 18 January 1348 in the second year of the war with the three crowns. Betrothed on 19 January 1351 to Aiman, daughter of the Mamluk Sultan. The same winter the Chancellor reported him a Prodigy: a child predestined, the court said, to leave his name in the history books. His father brought the finest tutors of the Islamic world to Gharnāṭa for him, several Christians among them. Succeeded his father on 1 August 1363 at fifteen, under the regency of Naṣr al-Istijjī until he came of age on 18 January 1364. At his accession his abilities stood at 100/69/100, the prodigy fulfilled. His accession was not clean. Naṣr died on the very day the regency ended, of 'sickness' as the court gave out (a hunting accident, the game says), and Saʿd then married Naṣr's widow Duʿāʾ, his father's Marīnid widow and minister. He began his personal rule with two wives, Aiman the Mamlūk and Duʿāʾ the Marīnid. He knocked Portugal out of the War of Independence on 11 September 1364 and took its south, and by 1365 the court called him Conqueror. His first child, Umm al-Fatḥ, was born to Aiman on 13 December 1364. His son and heir Ismāʿīl was born to Duʿāʾ on 8 March 1366. He won the War of Independence on 5 April 1366. He completed the Hajj in 1391 and returned on 20 February 1392 as al-Ḥājj Saʿd. He proclaimed the Restoration of al-Andalus on 16 March 1375 and took the style of Emperor, moved the capital to Ishbīliya in 1379, and fought the three wars of the Istirdād and the crusade of 1404, in which he took Avignon from the Pope. He died on 2 March 1405 (29 Shaʿbān 807), aged fifty-seven, while marching an army through Moya against the risings of 807, after a reign of forty-one years. The game's notice says his strong character had made the country a more honest place (save-day notice of 2 March 1405).",
   "reigns": [
@@ -928,7 +929,7 @@
   "traits": [
    "child_gallant"
   ],
-  "note": "Heir to his half-brother Saʿd until Saʿd's son Ismāʿīl was born on 8 March 1366 (saves of 11 September 1364 and 6 November 1366). Married Hippolyte of Villa di Chiesa, a Sardinian of Cagliari, on 14 September 1370. He took a seat in the dīwān on 1 December 1382, as the revolt of Ṭulayṭula broke out (save of 8 December 1382).",
+  "note": "Heir to his brother Saʿd until Saʿd's son Ismāʿīl was born on 8 March 1366 (saves of 11 September 1364 and 6 November 1366). Married Hippolyte of Villa di Chiesa, a Sardinian of Cagliari, on 14 September 1370. He took a seat in the dīwān on 1 December 1382, as the revolt of Ṭulayṭula broke out (save of 8 December 1382).",
   "stats": {
    "adm": 33,
    "dip": 71,
@@ -1120,7 +1121,8 @@
   ],
   "traits": [
    "deceitful",
-   "goal_oriented"
+   "goal_oriented",
+   "silver_tongue"
   ],
   "note": "Son and heir of Sultan Saʿd, born to Duʿāʾ the Marīnid on 8 March 1366, a month before the Peace of Independence. At eight he was already a silver tongue (63 in diplomacy). In late 1374 he and his half-brother Yūsuf were both given the costly tutors their father had had; his mother Duʿā had wanted them for him alone (Trent's account). On 16 March 1375 he was betrothed to Bernarda of Murcia, the gifted heir of the Ṭāʾifa of Mursiyya, as Murcia was taken into the crown (Trent's account). From 23 August 1385 he ruled as regent while his father made the Hajj, with his mother Duʿā and Aiman quarrelling at court (Trent's account). Before that he had served as an admiral, to carry the crown's authority over the seas: his first command, from 17 June 1383 (save of 1 October 1387) until he joined the dīwān. In 1386 he was brought home, and on 22 January 1387 he took the seat in the dīwān created by the Ḥijāba, to help his father's scholar-building project (Trent's account). He had married Bernarda of Murcia by 1 October 1387. In May 1391 he took a second wife, ʿĀʾisha of the house of ʿOthmān. His sons: Yūsuf (1383–1384) and Muḥammad (born 25 October 1385) by Bernarda; Saʿd (born 17 June 1392) and Aḥmad (born 21 October 1393) by ʿĀʾisha (save of 2 January 1394). By 1398 his sons were Muḥammad, the eldest, judged unfit to rule; Saʿd, intelligent and studious; and Aḥmad, ambitious (Trent's account; save of 3 September 1398). He became Emperor on 2 March 1405, at thirty-eight, when his father died on the march through Moya, and sixteen days later won his first battle as Emperor before Qūnka, destroying the army of the rebel Kingdom of Toledo (Trent's account and screens).",
   "stats": {

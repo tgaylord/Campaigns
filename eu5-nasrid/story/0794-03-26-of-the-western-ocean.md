@@ -12,8 +12,8 @@ While the Emperor was on the road to Makka, merchants arrived at [Ishbīliya](pl
 
 A friendship with Mali needed a road to Mali, and the prince did not want it to be the old one. For six hundred years the gold had come north on camels across the Ṣaḥrāʾ, through Sijilmāsa and the oases, paying a toll at every well. The prince sent instead a courtier of [Jayyān](place:jayyan), [Khayr al-Dīn al-Jayyānī](person:khayr-al-din-al-jayyani), a man of forty with a gift for talking to strangers, to find the way by sea: down the Atlantic coast of Africa, past the last towns the merchants knew, to wherever the shore turned toward the Mansa's country.
 
-When the Emperor came home from Makka he did not undo his son's work. He added to it. Two more expeditions were fitted out with new captains. One was to chart the sea around the Azores, the scattered islands the Genoese had glimpsed in the western Ocean. The other was to Madeira, the wooded island the Arab geographers had heard of and the Portuguese had not yet claimed. The Catalan shipwrights who had built galleys for the Mamlūks were set to building ships for the Ocean.
+When the Emperor returned from Makka he did not undo his son's work. He added to it. Two more expeditions were fitted out with new captains. One was to chart the sea around the Azores, the scattered islands the Genoese had glimpsed in the western Ocean. The other was to Madeira, the wooded island the Arab geographers had heard of and the Portuguese had not yet claimed. The Catalan shipwrights were set to building ships for the Ocean.
 
-The scholars of the court remembered that the old geographers had called the western sea the Sea of Darkness, *Baḥr al-Ẓulumāt*, and said no ship came back from it. The Emperor had all three expeditions entered in the dīwān's registers and their captains' names written down.
+The scholars of the court muttered about the Sea of Darkness. The Emperor had all three expeditions entered in the dīwān's registers, with their stores, their wages and their cost to the last dirham, for he meant to know what the Ocean gave back for what he spent on it.
 
 *And His are the ships raised high in the sea like mountains.*

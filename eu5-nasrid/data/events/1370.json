@@ -457,6 +457,19 @@
   "source": "save of 1 November 1370"
  },
  {
+  "id": "1370-09-18-death-of-faraj",
+  "date": "1370-09-18",
+  "type": "death",
+  "people": [
+   "faraj-ibn-ismail"
+  ],
+  "title": "Faraj ibn Ismāʿīl, elder brother of Yūsuf I and once regent of Granada, dies far from Gharnāṭa in the south beyond the desert, where he had lived since his Ghana marriage of 1355",
+  "data": {
+   "age": 53
+  },
+  "source": "people.json record (death date from the save of 13 September 1370 onward)"
+ },
+ {
   "id": "1370-09-20-murcia-annexation",
   "date": "1370-09-20",
   "type": "diplomacy",
