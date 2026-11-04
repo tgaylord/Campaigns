@@ -259,11 +259,12 @@
   "wars": [
    "fourth-war-of-the-istirdad"
   ],
-  "title": "With Qashtāla at his mercy, the Emperor turns on Portugal and marches on Porto, its capital, while the crown prince Muḥammad brings the fleet round to blockade the city from the sea",
+  "title": "With Qashtāla at his mercy, the Emperor turns on Portugal and marches on Porto, its capital, while the crown prince Muḥammad brings the fleet round to blockade the city from the sea. Portugal has not surrendered. A separate peace with it is possible, but the Emperor wants no concessions from Portugal: this war is to be the end of it",
   "data": {
    "target": "Porto, capital of Portugal",
    "army": "the Emperor in person",
-   "fleet": "the crown prince Muḥammad, blockading"
+   "fleet": "the crown prince Muḥammad, blockading",
+   "warAim": "no separate peace for concessions; the end of Portugal as a kingdom (Trent)"
   },
   "source": "Trent's account, September 1411"
  }
