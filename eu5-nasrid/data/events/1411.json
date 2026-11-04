@@ -267,5 +267,27 @@
    "warAim": "no separate peace for concessions; the end of Portugal as a kingdom (Trent)"
   },
   "source": "Trent's account, September 1411"
+ },
+ {
+  "id": "1411-10-07-porto-falls",
+  "date": "1411-10-07",
+  "type": "siege",
+  "people": [
+   "ismail-ibn-saad",
+   "muhammad-ibn-ismail-ibn-saad",
+   "fernando-of-castile"
+  ],
+  "places": [],
+  "wars": [
+   "fourth-war-of-the-istirdad"
+  ],
+  "title": "Porto falls. Starved by the Emperor's siege on land and the crown prince's blockade at sea, its people rise and throw open the gates to the army. So ends the Kingdom of Portugal",
+  "data": {
+   "result": "taken",
+   "location": "Porto, capital of Portugal",
+   "how": "the city was starving; a revolt of the populace opened the gates (Trent)",
+   "blockade": "the crown prince Muḥammad's fleet"
+  },
+  "source": "Trent's account, 7 October 1411"
  }
 ]
