@@ -1,0 +1,88 @@
+[
+ {
+  "id": "1428-05-25-galicia-takes-asturias",
+  "date": "1428-05-25",
+  "type": "player_note",
+  "people": [
+   "diego-villamarin"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Galicia has conquered Asturias. Three Christian kingdoms remain in the north: Galicia, Navarre and Castile",
+  "data": {
+   "account": "the three remaining Kingdoms after Galicia conquer Asturias (Trent)"
+  },
+  "source": "Trent's account and screenshot, 25 May 1428"
+ },
+ {
+  "id": "1428-05-25-war-in-france",
+  "date": "1428-05-25",
+  "type": "player_note",
+  "people": [],
+  "places": [],
+  "wars": [],
+  "title": "War rages in France again",
+  "data": {
+   "account": "War rages in France again (Trent); the sides aren't in the account"
+  },
+  "source": "Trent's account and screenshot, 25 May 1428"
+ },
+ {
+  "id": "1428-05-25-the-spies-go-north",
+  "date": "1428-05-25",
+  "type": "diplomacy",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "The Emperor's spies travel north to the three kingdoms, proclaiming to every Iberian the return of al-Andalus, while the casus belli for the next war is prepared",
+  "data": {
+   "targets": [
+    "Galicia",
+    "Navarre",
+    "Castile"
+   ],
+   "account": "our spies travel north to the three remaining Kingdoms ... proclaiming the return of Al-Andalus to all Iberians as our casus belli is prepared (Trent)"
+  },
+  "source": "Trent's account and screenshot, 25 May 1428"
+ },
+ {
+  "id": "1428-05-25-the-armouries",
+  "date": "1428-05-25",
+  "type": "reform",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "The Emperor begins a great expansion of the army: armouries are built in a dozen towns and cities across the empire, so that each can raise men of its own",
+  "data": {
+   "buildings": "armouries in about a dozen towns and cities",
+   "purpose": "to draw in manpower independently (Trent)"
+  },
+  "source": "Trent's account and screenshot, 25 May 1428"
+ },
+ {
+  "id": "1428-05-25-jamaa-against-primacy",
+  "date": "1428-05-25",
+  "type": "estate_change",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "In preparation for the war a Jamāʿa is called, and with it another chance to take a privilege from the umarāʾ: the Primacy of Nobility, by which the great houses count themselves the Emperor's equals and must be consulted before every important decision",
+  "data": {
+   "privilege": "Primacy of Nobility (nobles, held since 1333)",
+   "text": "The Nobility of our country has proven to be key allies, as they support most of our enterprises and are the backbone of our armies. For this reason, they consider themselves our equals, and they have become so crucial to the government that we must consult with them before making important decisions (the game's text)",
+   "effects": {
+    "nobles": "+2% satisfaction, +100% power",
+    "modifiers": "political influence gain −15%, discipline +5%, monthly progress to aristocracy +0.10"
+   },
+   "costToRevoke": "33.87 political influence and −32.5% noble satisfaction",
+   "outcome": "not yet known: the account gives the aim, not the result"
+  },
+  "source": "Trent's account and screenshot, 25 May 1428"
+ }
+]
