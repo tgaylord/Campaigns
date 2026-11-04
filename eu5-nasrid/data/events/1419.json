@@ -67,11 +67,12 @@
    "balansiyya"
   ],
   "wars": [],
-  "title": "The Emperor orders a great road built from Ishbīliya to Balansiyya. Once the ṭāʾifa is integrated, a governor will sit at Balansiyya to carry the empire's influence into the Mediterranean",
+  "title": "The Emperor orders a great road built from Ishbīliya to Balansiyya. Once the ṭāʾifa is integrated, a governor will sit at Balansiyya to carry the empire's influence into the Mediterranean. It is also a military road, to move the armies quickly toward the French border should another crusade be preached",
   "data": {
    "road": "Ishbīliya to Balansiyya",
    "purpose": "a governor's seat at Balansiyya, to project influence into the Mediterranean (Trent)",
-   "date": "April 1419, after the Letter from Denia (Trent's account gives no exact day)"
+   "date": "April 1419, after the Letter from Denia (Trent's account gives no exact day)",
+   "military": "a road for moving troops to the French border in case of another crusade (Trent)"
   },
   "source": "Trent's account, April 1419"
  }
