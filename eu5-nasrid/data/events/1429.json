@@ -11,10 +11,90 @@
   "title": "News from the north: Edward, king of England, is crowned in Paris, and his crowns are joined as a new Angevin Empire. Its borders are those of the English and French crowns of 1428; its name is new, and so are its ambitions",
   "data": {
    "account": "The King of England is officially crowned in Paris on June 11th, 1429, forming a new 'Angevin Empire' under his rule (Trent)",
-   "note": "the game's tag will be read from the next save",
+   "note": "the game's tag is ANV (formed from England, ENG); France keeps its own tag in personal union under the Angevin crown. On 2 July 1429 the Angevin Empire is second in the world with 180 points, against al-Andalus's 101 (save of 2 July 1429)",
    "borders": "unchanged (Trent)",
    "ambitions": "the name is now different, as are the ambitions (Trent)"
   },
   "source": "Trent's account, 11 June 1429"
+ },
+ {
+  "id": "1429-06-28-death-of-the-emperor-ismail",
+  "date": "1429-06-28",
+  "type": "death",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [
+   "ishbiliyya"
+  ],
+  "wars": [],
+  "title": "The Emperor Ismāʿīl II dies at sixty-three, on 25 Ramaḍān 832, in the last ten nights of the month, with the army camped at Ishbīliya. He had reigned twenty-four years. The realm will miss his fair and impartial rulings",
+  "data": {
+   "game": "We bring sad news. Emperor ʿIsmāʿīl II Nasrid has died at the age of 63, and He was Emperor of the Andalusi Empire. His Late Imperial Majesty died while the army was camped in Šbilya. Our realm will miss his fair and impartial rulings (the game's text)",
+   "reign": "1 March 1405 – 28 June 1429 (the save's ruler terms)",
+   "age": 63,
+   "realm": {
+    "population": "2.574 million",
+    "army": "4,900",
+    "manpower": "15,210"
+   },
+   "cause": "camp (the game's death reason)"
+  },
+  "source": "Trent's screenshot of 2 July 1429; save of 2 July 1429"
+ },
+ {
+  "id": "1429-06-28-accession-of-muhammad-v",
+  "date": "1429-06-28",
+  "type": "ruler_change",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad",
+   "ismail-ibn-saad",
+   "ismail-ibn-muhammad-ibn-ismail"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Muḥammad V, the late Emperor's eldest son, forty-three, succeeds to the throne by the law of the house. The court's verdict, in the game's words: we have been cursed, God have mercy on us all",
+  "data": {
+   "game": "Emperor Muḥammad V Nasrid will now rule our glorious country! We have been cursed! God have mercy on us all (the game's text)",
+   "abilities": "15/20/16, 'Balanced'",
+   "heir": "his eldest son Ismāʿīl, born 4 October 1402 (70/73/63)",
+   "note": "the succession question of 1398 and 1408 (SYSTEMS): the law was never changed, on the strength of Muḥammad's gifted sons",
+   "consort": "Isabel de Montsoriu",
+   "diwan": "the new Emperor's sons Ismāʿīl (promoting Andalusī culture) and Aḥmad (integrating the new lands) take the seats of Saʿd ibn Yūsuf and Muḥammad ibn Yūsuf; Umm al-Fatḥ, Prince Yūsuf and Jadīla keep theirs",
+   "politicalInfluence": "100 before the succession, 22 after"
+  },
+  "source": "Trent's screenshot of 2 July 1429; save of 2 July 1429"
+ },
+ {
+  "id": "1429-06-28-the-two-princes",
+  "date": "1429-06-28",
+  "type": "player_note",
+  "people": [
+   "ismail-ibn-muhammad-ibn-ismail",
+   "ahmad-ibn-muhammad-ibn-ismail",
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "The new Emperor's sons, the princes Ismāʿīl and Aḥmad, both in the dīwān from his accession, wield great influence. Unlike the princes of earlier generations they are not rivals: they are united in one aim, to keep the realm together in the face of their father's tendencies",
+  "data": {
+   "account": "The two princes exert a lot of influence, and unlike previous princes of a generation, they are unified in their goal of keeping the realm together in the face of their father's... tendencies (Trent)",
+   "father": "Muḥammad V, 15/20/16, an extortioner"
+  },
+  "source": "Trent's account, July 1429"
+ },
+ {
+  "id": "1429-07-01-teguise",
+  "date": "1429-07-01",
+  "type": "territory_change",
+  "people": [],
+  "places": [],
+  "wars": [],
+  "title": "Teguise on Lanzarote becomes a settlement of the crown, the fourth in the Canaries: 4,400 Guanche islanders",
+  "data": {
+   "province": "Canaries",
+   "population": 4434
+  },
+  "source": "save of 2 July 1429"
  }
 ]
