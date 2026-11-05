@@ -1,0 +1,22 @@
+[
+ {
+  "id": "1432-05-the-dar-al-sinaa",
+  "date": "1432-05-01",
+  "type": "reform",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "The Emperor orders a series of shipyards, the dār al-ṣināʿa of the old caliphs, to build a navy that can match the Genoese fleet",
+  "data": {
+   "building": "Dar al-Sina'a, a naval building: 'a state naval arsenal producing war galleys and merchant vessels, the backbone of Andalusi maritime power' (the game's text)",
+   "effects": "navy repair speed +1%, monthly sailors +10, local ship-building speed +15%, ship-building capacity +1, can build ships",
+   "cost": "400 gold at market; 730 days to build; 3,000 workers; takes lumber, naval supplies, tools and masonry",
+   "when": "May 1432 (Shaʿbān–Ramaḍān 835)"
+  },
+  "source": "Trent's account and screenshot, May 1432"
+ }
+]

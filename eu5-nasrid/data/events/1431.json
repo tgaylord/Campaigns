@@ -1,0 +1,130 @@
+[
+ {
+  "id": "1431-06-24-the-warmongers-name",
+  "date": "1431-06-24",
+  "type": "player_note",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [
+   "ishbiliyya"
+  ],
+  "wars": [],
+  "title": "A pamphlet goes round the court calling the Emperor Muḥammad a ruthless warmonger. Offered the choice of embracing the name or executing someone for it, he embraces it",
+  "data": {
+   "event": "Emperor's Reputation Tarnished!",
+   "text": "Some sort of propaganda text is circulating in the Court about how Emperor Muḥammad V Nasrid is a ruthless warmonger. This might impact our relations with our subjects and other countries (the game's text)",
+   "options": [
+    "Embrace the reputation! (+2 antagonism towards us, centred on Ishbīliya)",
+    "Execute someone for this!"
+   ],
+   "chosen": "Embrace the reputation (the save of 1 October 1431 holds an 'embraced antagonism' bias against al-Andalus)"
+  },
+  "source": "Trent's screenshot of 24 June 1431; save of 1 October 1431"
+ },
+ {
+  "id": "1431-10-01-the-second-crusade",
+  "date": "1431-10-01",
+  "type": "war_declared",
+  "people": [
+   "pope-fabrizio-ricci",
+   "rodrigo-de-borja",
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "Sparked by the destruction of Santiago, the Pope proclaims the second crusade against al-Andalus and declares war on the Ṭāʾifa of Aragon, aiming at Barbastro. The Emperor answers for his subject, and all his allies come in: the eight ṭāʾifas, the Mamlūks, Morocco and Tunis with all their vassals",
+  "data": {
+   "cb": "cb_crusade",
+   "target": "ARA, the Borja Sultanate of Aragon (King Rodrigo de Borja, brother of the Emperor's wife Magdalena); the crusade's goal is the province of Barbastro",
+   "crusaders": "the Pope (3 towns, no army, 13 ships) with his vassals Arezzo and Faenza, and from the Church's call Provence, Ireland with Desmond and Clanwilliam, Iceland, the archbishops of Cologne and Trier, Magdeburg, Bremen, Mecklenburg, Świdnica, Toggenburg, Bentheim, Marsan, Aumale and some lesser lords",
+   "defenders": "al-Andalus (4,900 regulars, 50 ships), the eight ṭāʾifas, the Mamlūks (10,850 men) and their vassals from Mecca and Medina to Barqa and Suakin, Morocco (7,050 men, 57 ships) with Touat and Tlemcen, Tunis (3,600 men, 22 ships) with Tripoli, Gabès, Touggourt and Gallura",
+   "angevins": "the Angevin Empire stays out",
+   "previous": "the first crusade against al-Andalus, 1404, was also declared on Aragon"
+  },
+  "source": "Trent's account and screenshot; save of 1 October 1431"
+ },
+ {
+  "id": "1431-10-03-genoa-joins-the-crusade",
+  "date": "1431-10-03",
+  "type": "war_joined",
+  "people": [],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "Two days in, the crusade widens: the Pope's allies Genoa, Siena and Aquileia join it, and Genoa brings its subjects, Orange, Arborea in Sardinia, Corsica, Cuneo and Gazaria on the Black Sea. The Genoese fleet, 24 ships, is the crusade's real strength at sea",
+  "data": {
+   "joined": [
+    "Genoa",
+    "Siena",
+    "Aquileia"
+   ],
+   "genoeseSubjects": [
+    "Orange",
+    "Arborea",
+    "Corsica",
+    "Cuneo",
+    "Gazaria"
+   ],
+   "genoa": "11 towns, 3,000 men, 24 ships; its doge Raimondo (28/81/46) favours the Ghibellines"
+  },
+  "source": "Trent's account; autosave of 1 December 1431"
+ },
+ {
+  "id": "1431-11-20-battle-oristano",
+  "date": "1431-11-20",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "In Sardinia the Tunisians, 1,374 men, attack the Arboreans at Oristano and are thrown back with the loss of 863, against 261 of Arborea's 4,279",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Tunis": 1374
+   },
+   "oursTotal": 1374,
+   "oursLost": 863,
+   "theirs": {
+    "Arborea": 4279
+   },
+   "theirsTotal": 4279,
+   "theirsLost": 261,
+   "location": "Oristano",
+   "side": "Tunis attacking"
+  },
+  "source": "autosave of 1 December 1431"
+ },
+ {
+  "id": "1431-11-26-battle-gulf-talamone",
+  "date": "1431-11-26",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "In the Gulf of Talamone off Tuscany six papal ships under Vukmir catch five ships of Tunis under al-Faḍl and take or sink one of them without loss",
+  "data": {
+   "result": "allied defeat",
+   "naval": true,
+   "ours": {
+    "Tunis": 5
+   },
+   "theirs": {
+    "Papal States": 6
+   },
+   "oursLost": 1,
+   "theirsLost": 0,
+   "location": "Gulf of Talamone",
+   "units": "ships"
+  },
+  "source": "autosave of 1 December 1431"
+ }
+]

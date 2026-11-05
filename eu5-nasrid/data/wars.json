@@ -890,5 +890,87 @@
     "value": 59
    }
   ]
+ },
+ {
+  "id": "crusade-of-835",
+  "name": "The Crusade of 835",
+  "gameName": "The 2nd Crusade against Andalusia",
+  "start": "1431-10-01",
+  "end": null,
+  "goal": "A crusade proclaimed by the Pope against al-Andalus, declared on the Ṭāʾifa of Aragon (cb_crusade) and aimed at the province of Barbastro",
+  "allies": [
+   "Aragon",
+   "Catalonia",
+   "Kingdom of Portugal",
+   "Taifa of León",
+   "Taifa of Burgos",
+   "Taifa of Pamplona",
+   "Taifa of Cuenca",
+   "Taifa of Galicia",
+   "Mamluks",
+   "Morocco",
+   "Tunis"
+  ],
+  "enemies": [
+   "Papal States",
+   "Genoa",
+   "Siena",
+   "Aquileia",
+   "Provence",
+   "Ireland",
+   "Cologne",
+   "Trier",
+   "Magdeburg"
+  ],
+  "involvement": "belligerent",
+  "sides": {
+   "attackers": [
+    "Papal States",
+    "Arezzo",
+    "Faenza",
+    "Provence",
+    "Ireland",
+    "Desmond",
+    "Clanwilliam",
+    "Iceland",
+    "Cologne",
+    "Trier",
+    "Magdeburg",
+    "Bremen",
+    "Mecklenburg",
+    "Świdnica",
+    "Toggenburg",
+    "Bentheim",
+    "Marsan",
+    "Aumale",
+    "Genoa (from 3 October)",
+    "Siena (from 3 October)",
+    "Aquileia (from 3 October)",
+    "Genoa's subjects Orange, Arborea, Corsica, Cuneo and Gazaria"
+   ],
+   "defenders": [
+    "Aragon",
+    "al-Andalus",
+    "the eight ṭāʾifas",
+    "Mamluks",
+    "the Mamlūk vassals",
+    "Morocco",
+    "Touat",
+    "Tlemcen",
+    "Tunis",
+    "Tripoli",
+    "Gabès",
+    "Touggourt",
+    "Gallura"
+   ]
+  },
+  "note": "Fifteen months after the Emperor Muḥammad had the cathedral of Santiago pulled down, on 1 October 1431 (23 Muḥarram 835) the Pope, Fabrizio Ricci, proclaimed the second crusade against al-Andalus and, as in 1404, declared war on its subject the Ṭāʾifa of Aragon, whose king Rodrigo de Borja is the brother of the Emperor's wife Magdalena. The Emperor answered for him, and every ally came in the same day: the eight ṭāʾifas, the Mamlūks with Mecca, Medina, Barqa, Suakin and their other vassals, Morocco with Touat and Tlemcen, and Tunis with Tripoli, Gabès, Touggourt and Gallura. The Church's call brought the Pope Provence, Ireland and its lordships, Iceland, the archbishops of Cologne and Trier and a scatter of German princes; the Pope himself held three towns, no army and thirteen ships. The Angevin Empire stayed out. On 3 October Genoa, Siena and Aquileia joined, Genoa with Orange, Arborea, Corsica, Cuneo and Gazaria, and the Genoese fleet of 24 ships became the crusade's strength at sea (Trent's account; saves of 1 October and 1 December 1431). In the first two months the Tunisians were thrown back at Oristano in Sardinia (20 November) and lost a ship to the papal squadron in the Gulf of Talamone (26 November). In May 1432 the Emperor ordered a series of shipyards built to give al-Andalus a navy to counter Genoa's (Trent).",
+  "outcome": null,
+  "score": [
+   {
+    "date": "1431-10-01",
+    "value": 0
+   }
+  ]
  }
 ]

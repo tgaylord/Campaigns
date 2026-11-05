@@ -1998,8 +1998,12 @@
    "dip": 39,
    "mil": 65
   },
-  "traits": [],
-  "note": "Son of King Alfons; king of the renewed Aragon from his father's death on 24 February 1393, a boy of eleven. His sister Caterina is his heir (save of 3 September 1398)."
+  "traits": [
+   "kind_hearted",
+   "babbling_buffoon",
+   "craven"
+  ],
+  "note": "Son of King Alfons; king of the renewed Aragon from his father's death on 24 February 1393, a boy of eleven. His sister Caterina is his heir (save of 3 September 1398). Brother of the Empress Magdalena, so uncle of the heir Ismāʿīl. A Muslim, kind-hearted, a babbler and no fighter by the game's count. As in 1404, the Pope's crusade of 1 October 1431 was declared on his kingdom, aimed at Barbastro (save of 1 October 1431)."
  },
  {
   "id": "maryam-bint-saad-ibn-faraj",
@@ -2621,5 +2625,27 @@
   },
   "traits": [],
   "note": "A Galician noble and a Muslim, set over the 23 towns of Galicia proper, from Santiago, A Coruña and Lugo to Ourense and Tui, when they were made a ṭāʾifa of the Emperor on 3 November 1430, two days' work after the Peace of Ṣafar: some 518,000 people, Galician in speech and Catholic in faith, with 2,400 regulars and three ships (save of 5 November 1430)."
+ },
+ {
+  "id": "pope-fabrizio-ricci",
+  "name": "Pope Fabrizio Ricci",
+  "nameGame": "Fabrice Ricci",
+  "gameId": 16838698,
+  "born": "1371-05-24",
+  "roles": [
+   "Pope (from 1430)"
+  ],
+  "stats": {
+   "adm": 44,
+   "dip": 50,
+   "mil": 23
+  },
+  "traits": [
+   "industrious",
+   "careful",
+   "loose_lips",
+   "sinner"
+  ],
+  "note": "Pope from 12 February 1430, sixty in 1431, holding Rome and two other towns. The game names him Fabrice; the chronicle uses the Italian form of his name. On 1 October 1431 he proclaimed the second crusade against al-Andalus, sparked by the destruction of the cathedral of Santiago, and declared war on the Ṭāʾifa of Aragon (save of 1 October 1431)."
  }
 ]
