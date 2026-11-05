@@ -149,5 +149,64 @@
    "date": "built between August 1424 and May 1428"
   },
   "source": "save of 25 May 1428"
+ },
+ {
+  "id": "1428-06-03-the-village-granaries",
+  "date": "1428-06-03",
+  "type": "reform",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "At the Emperor's insistence, and to answer the anger of the umarāʾ, a great campaign of rural renewal begins: in nearly every large village of the empire a granary is built, a safe communal store where farming settlements can set aside part of each harvest. The Emperor remembers how lean and dear bread could be in the hard years of the wars with Qashtāla",
+  "data": {
+   "buildings": "village granaries in nearly every major village",
+   "purpose": "to counter the nobility's mass frustration; safe communal stores for part of each harvest (Trent)",
+   "memory": "how lean and expensive food could get during the leaner years against the Castilians (Trent)",
+   "when": "the first half of 1428"
+  },
+  "source": "Trent's account, 3 June 1428"
+ },
+ {
+  "id": "1428-06-03-farms-mills-and-acequias",
+  "date": "1428-06-03",
+  "type": "reform",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Wheat farms, windmills and acequias are built across several rural regions to fill the new granaries, and lumber mills to build them and, in time, renew them, all at very little cost to the umarāʾ or the peasants",
+  "data": {
+   "buildings": [
+    "wheat farms",
+    "windmills",
+    "acequias",
+    "lumber mills"
+   ],
+   "cost": "very low cost to the nobility and peasantry (Trent)",
+   "when": "the first half of 1428"
+  },
+  "source": "Trent's account, 3 June 1428"
+ },
+ {
+  "id": "1428-06-03-embassy-to-niani",
+  "date": "1428-06-03",
+  "type": "diplomacy",
+  "people": [
+   "ismail-ibn-saad",
+   "tiramakhan-mali"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Andalusī envoys sail the new sea roads and travel inland to Niani, the city of Mansa Tiramakhan of Mālī. The two empires exchange gifts, and the Mansa exempts Andalusī traders from tariffs throughout his empire. Expeditions are already being planned to bring the gold of Mālī north, to the jewellers of al-Andalus and for resale to the Europeans",
+  "data": {
+   "route": "by the new naval routes, then inland (Trent)",
+   "result": "Andalusī traders exempt from tariffs in the Mali Empire (Trent)",
+   "plans": "expeditions to bring Mali's gold north for the Andalusī jewellery market and for resale to Europe (Trent)",
+   "mali": "14th in the world, 82 towns and 92 in subjects; Mansa Tiramakhan since 1410, heir Majan born 1405 (world file of 25 May 1428)"
+  },
+  "source": "Trent's account, 3 June 1428"
  }
 ]

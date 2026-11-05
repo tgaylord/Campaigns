@@ -2426,5 +2426,23 @@
   },
   "traits": [],
   "note": "Daughter of the heir Muḥammad and his third wife Jadīla bint Saʿd, named for her grandmother Umm al-Fatḥ. On 17 December 1425, at fourteen, she took a seat in the dīwān, integrating the new lands; she sits there beside her mother (save of 25 May 1428)."
+ },
+ {
+  "id": "tiramakhan-mali",
+  "name": "Tiramakhan",
+  "nameArabic": "تيرماخان",
+  "nameGame": "Tiramakhan",
+  "gameId": 16790691,
+  "born": "1385-04-26",
+  "roles": [
+   "Mansa of Mālī (from 1410)"
+  ],
+  "stats": {
+   "adm": 31,
+   "dip": 27,
+   "mil": 22
+  },
+  "traits": [],
+  "note": "Mansa of Mālī from 26 August 1410, reigning from Niani. In the first half of 1428 he received Andalusī envoys who came by the new sea roads, exchanged gifts with the Emperor Ismāʿīl and exempted Andalusī traders from tariffs throughout his empire (Trent's account). His heir is Majan, born 28 June 1405 (world file of 25 May 1428)."
  }
 ]
