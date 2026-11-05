@@ -2481,5 +2481,30 @@
   },
   "traits": [],
   "note": "King of France from 6 April 1421. He lost the Hundred Years' War at the peace of 28 November 1428, and on 1 December his crown passed to Edward of England; he kept a seat in the French council (saves of 1428)."
+ },
+ {
+  "id": "berenguer-ramon-de-montsoriu",
+  "name": "Berenguer Ramon de Montsoriu",
+  "nameGame": "Berengar Raymond",
+  "gameId": 67961,
+  "dynasty": "Montsoriu",
+  "born": "1380-12-02",
+  "father": "francesc-de-montsoriu",
+  "mother": "fatima-bint-yusuf",
+  "roles": [
+   "ruler of the Ṭāʾifa of Catalonia"
+  ],
+  "stats": {
+   "adm": 40,
+   "dip": 40,
+   "mil": 80
+  },
+  "traits": [
+   "careful",
+   "naval_engineer",
+   "kind_hearted",
+   "loose_lips"
+  ],
+  "note": "Son of Francesc de Montsoriu, ḥājib of Catalonia, and Fāṭima bint Yūsuf, daughter of Yūsuf I, so a first cousin of the Emperor Ismāʿīl; a Muslim. He rules the Ṭāʾifa of Catalonia from Barshalūna. In December 1428 the court made the integration of his ṭāʾifa into the crown a first concern, expected to be complete by the middle of 1437 (save of 1 December 1428; Trent's account)."
  }
 ]

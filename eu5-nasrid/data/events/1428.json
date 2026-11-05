@@ -308,5 +308,45 @@
    "why": "which matters for us because the English are allied with the Castilians (Trent)"
   },
   "source": "save of 1 December 1428"
+ },
+ {
+  "id": "1428-12-01-forts-of-jaca-and-talarn",
+  "date": "1428-12-01",
+  "type": "reform",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Two new fortresses are ordered in the Pyrenees, at Jaca in the Ṭāʾifa of Arghūn and at Talarn in the Ṭāʾifa of Catalonia. Since the peace of November the far side of those mountains has been English Toulouse",
+  "data": {
+   "forts": {
+    "Jaca": "Ṭāʾifa of Aragon, the Aragonese Pyrenees",
+    "Talarn": "Ṭāʾifa of Catalonia, the Pallars"
+   },
+   "when": "ordered after the save of 1 December 1428 (Trent's account)",
+   "context": "Foix and Fenouillet across the mountains passed to English Toulouse on 28 November 1428 (save of 1 December 1428)"
+  },
+  "source": "Trent's account, December 1428"
+ },
+ {
+  "id": "1428-12-01-catalonia-to-the-crown",
+  "date": "1428-12-01",
+  "type": "territory_change",
+  "people": [
+   "ismail-ibn-saad",
+   "berenguer-ramon-de-montsoriu"
+  ],
+  "places": [
+   "barshaluna"
+  ],
+  "wars": [],
+  "title": "The integration of the Ṭāʾifa of Catalonia into the crown becomes a first concern of the court. It is expected to be complete in the middle of 1437, when the twenty-eight towns of the Catalans, from Barshalūna and Perpignan to Talarn and Puigcerdà, will be the Emperor's own",
+  "data": {
+   "taifa": "Catalonia, a ṭāʾifa since 16 March 1375; 28 towns, about 540,000 people; ruler Berenguer Ramon de Montsoriu, son of Fāṭima bint Yūsuf, born 1380",
+   "expected": "mid-1437 (Trent)",
+   "emphasis": "the annexation of Catalonia now has a much greater emphasis at court (Trent)"
+  },
+  "source": "Trent's account, December 1428"
  }
 ]
