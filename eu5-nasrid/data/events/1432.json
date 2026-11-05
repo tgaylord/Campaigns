@@ -634,5 +634,41 @@
    }
   },
   "source": "save of 1 May 1432"
+ },
+ {
+  "id": "1432-05-01-trading-posts",
+  "date": "1432-05-01",
+  "type": "reform",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad",
+   "tiramakhan-mali"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "War or no war, the Emperor's merchants build abroad: eight overseas trading posts on the coast of Kaabu, Mali's vassal on the Gambia and the rivers of Guinea, a trade office at Cairo, and new stages of the trade offices at Marrakesh and Sijilmasa. The aim is gold from Mali and spices from the East",
+  "data": {
+   "overseasTradingPosts": {
+    "country": "Kaabu (KAB), a vassal of Mali",
+    "towns": [
+     "Bafatá",
+     "Bintang",
+     "Bissau",
+     "Cacheu",
+     "Casamance",
+     "Diaboudior",
+     "Gambia",
+     "Tankular"
+    ]
+   },
+   "tradeOffices": {
+    "Cairo (Mamlūks)": "new, with 22 stages of construction queued",
+    "Marrakesh (Morocco)": "level 3, 9 more stages queued",
+    "Sijilmasa (Morocco)": "level 4, 6 more stages queued"
+   },
+   "existing": "trade offices at Niani and Timbuktu (level 4), Sijilmasa (4), Fez and Marrakesh (3), Meknes (2), and at level 1 in Alexandria, Tunis, Bejaia, Constantinople, Messina, Palermo, Trapani, Pisa and Genoa; an embassy at Cairo",
+   "aims": "gold from Mali and spices from the East (Trent)",
+   "notBefore": "none of the new buildings is in the save of 1 October 1431"
+  },
+  "source": "Trent's account; saves of 1 October 1431 and 1 May 1432"
  }
 ]
