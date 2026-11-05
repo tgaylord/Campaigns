@@ -325,7 +325,15 @@
   "name": "Galicia",
   "nameChronicle": "Jillīqiya",
   "nameArabic": "جليقية",
-  "color": "#4a8fb0"
+  "color": "#4a8fb0",
+  "renamed": [
+   {
+    "from": "1430-11-03",
+    "name": "Taifa of Galicia",
+    "nameChronicle": "the Ṭāʾifa of Jillīqiya",
+    "nameArabic": "طائفة جليقية"
+   }
+  ]
  },
  {
   "tag": "TOU",

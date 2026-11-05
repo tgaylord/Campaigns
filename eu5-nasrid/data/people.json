@@ -2374,7 +2374,8 @@
   "gameId": 88869,
   "born": "1391-09-15",
   "roles": [
-   "king of Galicia (from 1420)"
+   "king of Galicia (1420–1430)",
+   "exile at Augsburg (from 1430)"
   ],
   "stats": {
    "adm": 33,
@@ -2382,9 +2383,11 @@
    "mil": 89
   },
   "traits": [
-   "adept"
+   "careful",
+   "naval_engineer",
+   "calm"
   ],
-  "note": "A Galician noble and a soldier of rare gifts (89 in war). On 4 September 1420, when the Kingdom of Castile fell apart, he became king of Galicia: 23 towns from Santiago and A Coruña to Lugo, Ourense and Tui, some 380,000 Galicians, all Catholic (save of 4 September 1420). On 25 March 1425 he made peace with Asturias and took all eight of its towns; Galicia then held 31 (save of 25 May 1428)."
+  "note": "A Galician noble and a soldier of rare gifts (89 in war). On 4 September 1420, when the Kingdom of Castile fell apart, he became king of Galicia: 23 towns from Santiago and A Coruña to Lugo, Ourense and Tui, some 380,000 Galicians, all Catholic (save of 4 September 1420). On 25 March 1425 he made peace with Asturias and took all eight of its towns; Galicia then held 31 (save of 25 May 1428). In the War of Shant Yāqub he had no army to meet the Emperor's: Santiago fell on 15 July 1430 and his last 3,229 men died at Oviedo on 5 August. At the Peace of Ṣafar on 3 November 1430 Galicia was annexed whole, and he left the peninsula; that day's save shows him at Augsburg, a man of its burghers' estate, careful, calm and a builder of ships (saves of 17 August and 3 November 1430)."
  },
  {
   "id": "jose-fernando-tunon",
@@ -2410,15 +2413,18 @@
   "gameId": 88873,
   "born": "1389-10-13",
   "roles": [
-   "king of Navarre (from 1420)"
+   "king of Navarre (1420–1430)"
   ],
   "stats": {
    "adm": 15,
    "dip": 35,
    "mil": 59
   },
-  "traits": [],
-  "note": "A Basque noble who on 4 September 1420, when the Kingdom of Castile fell apart, became king of Navarre, the second Alfonso of that crown: the 10 Basque towns of the coast and Álava, from Bilbao, his capital, and San Sebastián to Vitoria, some 160,000 Basques. The old Navarre of Pamplona is the Emperor's Ṭāʾifa of Banbalūna. The save shows the new state Sunni though its people are all Catholic; Trent is correcting this in game (save of 4 September 1420; Trent's account)."
+  "traits": [
+   "drunkard",
+   "naive"
+  ],
+  "note": "A Basque noble who on 4 September 1420, when the Kingdom of Castile fell apart, became king of Navarre, the second Alfonso of that crown: the 10 Basque towns of the coast and Álava, from Bilbao, his capital, and San Sebastián to Vitoria, some 160,000 Basques. The old Navarre of Pamplona is the Emperor's Ṭāʾifa of Banbalūna. The save shows the new state Sunni though its people are all Catholic; Trent is correcting this in game (save of 4 September 1420; Trent's account). He allied Navarre to Castile, which gave the Emperor's sons their opening: on 17 August 1430 al-Andalus declared war on him, and on 3 November his army of 3,580 was broken before Bilbao. At the Peace of Ṣafar that day Navarre was annexed and its towns given to the Ṭāʾifa of Banbalūna, at whose court he now lives, a drunkard and naive (saves of 17 August, 3 and 5 November 1430)."
  },
  {
   "id": "umm-al-fath-bint-muhammad",
@@ -2557,5 +2563,63 @@
   },
   "traits": [],
   "note": "A Leonese Muslim, general of the Ṭāʾifa of Liyūn. On 5 August 1430, in the War of Shant Yāqub, he held Oviedo with 5,602 men against the last army of Galicia and destroyed all 3,229 without loss (save of 17 August 1430)."
+ },
+ {
+  "id": "fernando-son-of-pedro",
+  "name": "Fernando of Castile",
+  "nameGame": "Fernando",
+  "gameId": 16809663,
+  "dynasty": "Castilian royal house",
+  "born": "1392-03-10",
+  "father": "pedro-of-castile",
+  "roles": [
+   "king of Castile (1422–1430)",
+   "the last king of Castile"
+  ],
+  "stats": {
+   "adm": 65,
+   "dip": 71,
+   "mil": 46
+  },
+  "traits": [
+   "glory_seeker",
+   "malevolent"
+  ],
+  "note": "Son of King Pedro, the last king of Castile. He succeeded his father on 14 October 1422 to four towns on the Cantabrian coast, ruling from Santander, under England's protection (save of 5 November 1423). He went to war in France beside the English in 1427 and made his own peace with the French in 1428. When al-Andalus declared war on Navarre on 17 August 1430 he alone answered Navarre's call, and at the Peace of Ṣafar on 3 November 1430 Castile was annexed and ceased to exist. He and his son Juan are afterwards of the court of the Ṭāʾifa of Burghush (saves of 17 August, 3 and 5 November 1430)."
+ },
+ {
+  "id": "juan-son-of-fernando",
+  "name": "Juan of Castile",
+  "nameGame": "John",
+  "gameId": 16822914,
+  "born": "1412-03-25",
+  "father": "fernando-son-of-pedro",
+  "roles": [
+   "heir of Castile (to 1430)"
+  ],
+  "stats": {
+   "adm": 45,
+   "dip": 68,
+   "mil": 37
+  },
+  "traits": [],
+  "note": "Son of King Fernando and heir of Castile, eighteen in 1430, a knight of the English Order of the Garter. After the Peace of Ṣafar (3 November 1430) he is of the court of the Ṭāʾifa of Burghush with his father (saves of 17 August and 5 November 1430)."
+ },
+ {
+  "id": "diego-sotomaior",
+  "name": "Diego Sotomaior",
+  "nameGame": "Diego Sotomaior",
+  "gameId": 92039,
+  "born": "1398-12-17",
+  "roles": [
+   "ruler of the Ṭāʾifa of Jillīqiya (from 1430)"
+  ],
+  "stats": {
+   "adm": 57,
+   "dip": 42,
+   "mil": 58
+  },
+  "traits": [],
+  "note": "A Galician noble and a Muslim, set over the 23 towns of Galicia proper, from Santiago, A Coruña and Lugo to Ourense and Tui, when they were made a ṭāʾifa of the Emperor on 3 November 1430, two days' work after the Peace of Ṣafar: some 518,000 people, Galician in speech and Catholic in faith, with 2,400 regulars and three ships (save of 5 November 1430)."
  }
 ]

@@ -1239,5 +1239,14 @@
   "kind": "location",
   "nameArabic": "شنترين",
   "note": "Santarém on the Tagus above Lisbon, taken from Portugal at the peace of 1395. The game name is from the base localization."
+ },
+ {
+  "id": "shant-yaqub",
+  "key": "santiago_compostela",
+  "name": "Shant Yāqub",
+  "nameGame": "Santiago de Compostela",
+  "kind": "location",
+  "nameArabic": "شنت ياقب",
+  "note": "Santiago de Compostela, the shrine of the Apostle James and capital of Galicia; al-Manṣūr took it in 997. Taken in the War of Shant Yāqub on 15 July 1430, its cathedral destroyed, and from 3 November 1430 the seat of the Ṭāʾifa of Jillīqiya. The game name is from the base localization."
  }
 ]

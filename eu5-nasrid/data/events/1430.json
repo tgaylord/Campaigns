@@ -317,5 +317,201 @@
    "account": "Trent, 3 November 1430"
   },
   "source": "Trent's account"
+ },
+ {
+  "id": "1430-11-03-peace-with-galicia",
+  "date": "1430-11-03",
+  "type": "peace",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad",
+   "diego-villamarin"
+  ],
+  "places": [],
+  "wars": [
+   "war-of-shant-yaqub"
+  ],
+  "title": "The Peace of Ṣafar with Galicia: at 82 war score the kingdom is annexed whole, its 31 towns from Santiago and A Coruña to Oviedo and Llanes. King Diego Villamarín goes into exile at Augsburg",
+  "data": {
+   "warScore": 82,
+   "towns": 31,
+   "examples": [
+    "Santiago de Compostela",
+    "A Coruña",
+    "Lugo",
+    "Ourense",
+    "Pontevedra",
+    "Tui",
+    "Ferrol",
+    "Oviedo",
+    "Avilés",
+    "Llanes"
+   ],
+   "hijri": "16 Ṣafar 834",
+   "exile": "Diego Villamarín appears in the save of 3 November as a man of the burghers' estate of Augsburg"
+  },
+  "source": "save of 3 November 1430"
+ },
+ {
+  "id": "1430-11-03-peace-with-navarre-and-castile",
+  "date": "1430-11-03",
+  "type": "peace",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad",
+   "alfonso-gaston",
+   "fernando-son-of-pedro",
+   "juan-son-of-fernando"
+  ],
+  "places": [],
+  "wars": [
+   "war-of-the-mountains"
+  ],
+  "title": "The Peace of Ṣafar with Navarre and Castile: at 59 war score both are annexed, Navarre's ten Basque towns from Bilbao and San Sebastián to Vitoria and Castile's last four on the Cantabrian coast, Santander, Laredo, Potes and San Vicente. The Kingdom of Castile is no more",
+  "data": {
+   "warScore": 59,
+   "towns": {
+    "Navarre": 10,
+    "Castile": 4
+   },
+   "Navarre": [
+    "Bilbao",
+    "San Sebastián",
+    "Vitoria",
+    "Durango",
+    "Oñate",
+    "Tolosa",
+    "Salvatierra",
+    "Laguardia",
+    "Añana",
+    "Valmaseda"
+   ],
+   "Castile": [
+    "Santander",
+    "Laredo",
+    "Potes",
+    "San Vicente de la Barquera"
+   ],
+   "angevins": "the Angevin Empire, Castile's ally, never entered the war",
+   "kings": "Fernando of Castile and his heir Juan are afterwards of the court of the Ṭāʾifa of Burghush, Alfonso Gastón of Navarre of the Ṭāʾifa of Banbalūna",
+   "realm": {
+    "towns": [
+     196,
+     241
+    ],
+    "population": [
+     2592000,
+     3372000
+    ]
+   },
+   "hijri": "16 Ṣafar 834"
+  },
+  "source": "save of 3 November 1430"
+ },
+ {
+  "id": "1430-11-03-iberia-is-conquered",
+  "date": "1430-11-03",
+  "type": "player_note",
+  "people": [],
+  "places": [],
+  "wars": [
+   "war-of-shant-yaqub",
+   "war-of-the-mountains"
+  ],
+  "title": "Iberia is conquered. With Galicia, Navarre and Castile gone, every town of the peninsula belongs to the Emperor or to one of his ṭāʾifas: the Istirdād is complete",
+  "data": {},
+  "source": "Trent's account"
+ },
+ {
+  "id": "1430-11-03-the-north-divided",
+  "date": "1430-11-03",
+  "type": "territory_change",
+  "people": [
+   "ahmad-ibn-ismail-ibn-saad",
+   "abu-hammu-rahhu",
+   "ahmad-ibn-yusuf-ibn-ismail"
+  ],
+  "places": [
+   "banbaluna"
+  ],
+  "wars": [],
+  "title": "The conquered north is shared among the ṭāʾifas of the frontier: the eight towns of old Asturias, from Oviedo, go to Liyūn; the four of Cantabria, from Santander, to Burghush; the ten of the Basque coast, from Bilbao, to Banbalūna",
+  "data": {
+   "toLiyun": [
+    "Oviedo",
+    "Avilés",
+    "Cangas",
+    "Castropol",
+    "Llanes",
+    "Mieres",
+    "Tineo",
+    "Villaviciosa"
+   ],
+   "toBurghush": [
+    "Santander",
+    "Laredo",
+    "Potes",
+    "San Vicente de la Barquera"
+   ],
+   "toBanbaluna": [
+    "Bilbao",
+    "San Sebastián",
+    "Vitoria",
+    "Durango",
+    "Oñate",
+    "Tolosa",
+    "Salvatierra",
+    "Laguardia",
+    "Añana",
+    "Valmaseda"
+   ],
+   "after": {
+    "Liyun": 35,
+    "Burghush": 38,
+    "Banbaluna": 28
+   },
+   "note": "made after the save of 3 November and before that of 5 November; the Galician ṭāʾifa's records date it to 3 November"
+  },
+  "source": "saves of 3 and 5 November 1430"
+ },
+ {
+  "id": "1430-11-03-taifa-of-galicia",
+  "date": "1430-11-03",
+  "type": "territory_change",
+  "people": [
+   "diego-sotomaior"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "The other 23 towns of Galicia, from Santiago, A Coruña and Lugo to Ourense and Tui, are made a ṭāʾifa of the Emperor under Diego Sotomaior, a Galician noble of the faith, thirty-one years old. The empire now has eight ṭāʾifas",
+  "data": {
+   "towns": 23,
+   "population": 518000,
+   "capital": "Santiago de Compostela",
+   "culture": "Galician",
+   "religion": "Sunni (the state; the people Catholic)",
+   "rank": "kingdom",
+   "army": "2,400 regulars, 3 ships",
+   "ruler": "Diego Sotomaior, born 17 December 1398 (57/42/58)",
+   "taifas": [
+    "Catalonia",
+    "Aragon",
+    "Qūnka",
+    "the Kingdom of Portugal",
+    "Liyūn",
+    "Burghush",
+    "Banbalūna",
+    "Jillīqiya"
+   ],
+   "realm": {
+    "crown": {
+     "towns": 196,
+     "population": 2592000
+    },
+    "taifas": {
+     "towns": 236,
+     "population": 3967000
+    }
+   }
+  },
+  "source": "saves of 3 and 5 November 1430"
  }
 ]
