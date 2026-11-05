@@ -169,5 +169,26 @@
    "account": "Trent, June 1430"
   },
   "source": "Trent's account and screenshots, June 1430"
+ },
+ {
+  "id": "1430-07-15-santiago-falls",
+  "date": "1430-07-15",
+  "type": "siege",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [
+   "war-of-shant-yaqub"
+  ],
+  "title": "Santiago de Compostela falls after a siege of fifteen days, its garrison broken by hunger and disease and allowed to march out. On the Emperor's direct orders the Cathedral of Santiago, the shrine of the Apostle and the end of the pilgrim road of all Christendom, is destroyed; its Pórtico de la Gloria is carried off to Ishbīliya. The consequences remain to be seen",
+  "data": {
+   "siege": "15 days; the garrison succumbed to hunger and disease and was allowed to march out (the game's text)",
+   "destroyed": "Cathedral of Santiago de Compostela, a work of art (monument, masterpiece 85%), begun in 1075 under Alfonso VI; 'the culmination of the Camino de Santiago, the most travelled Christian pilgrimage route of the medieval world, believed to enshrine the tomb of the Apostle James the Great' (the game's text)",
+   "captured": "the Pórtico de la Gloria, taken to Ishbīliya",
+   "orders": "destroyed on the direct orders of the Emperor (Trent)",
+   "history": "al-Manṣūr took Santiago in 997 and carried its bells to Córdoba, but left the tomb"
+  },
+  "source": "Trent's account and screenshot, 15 July 1430"
  }
 ]
