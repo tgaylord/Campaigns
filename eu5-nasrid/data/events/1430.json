@@ -190,5 +190,132 @@
    "history": "al-Manṣūr took Santiago in 997 and carried its bells to Córdoba, but left the tomb"
   },
   "source": "Trent's account and screenshot, 15 July 1430"
+ },
+ {
+  "id": "1430-08-05-battle-oviedo",
+  "date": "1430-08-05",
+  "type": "battle",
+  "people": [
+   "juan-cangas"
+  ],
+  "places": [],
+  "wars": [
+   "war-of-shant-yaqub"
+  ],
+  "title": "At Oviedo the last army of Galicia, 3,229 men, attacks the host of the Ṭāʾifa of Liyūn, 5,602 under Juan Cangas, and is destroyed to the last man without loss to the defenders",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Ṭāʾifa of Liyūn": 5602
+   },
+   "oursTotal": 5602,
+   "oursLost": 0,
+   "theirs": {
+    "Galicia": 3229
+   },
+   "theirsTotal": 3229,
+   "theirsLost": 3229,
+   "location": "Oviedo",
+   "side": "Galicia attacking",
+   "commanders": {
+    "Liyūn": "Juan Cangas (43/73/87)"
+   }
+  },
+  "source": "save of 17 August 1430 (the war's battle list)"
+ },
+ {
+  "id": "1430-08-17-the-princes-opening",
+  "date": "1430-08-17",
+  "type": "player_note",
+  "people": [
+   "ismail-ibn-muhammad-ibn-ismail",
+   "ahmad-ibn-muhammad-ibn-ismail",
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [
+   "war-of-the-mountains"
+  ],
+  "title": "The peace with Galicia is not so simple. Its annexation is beyond question, but the two princes are not done in the north: their father is set on destroying the Castilians, and the realm is not ready for a war with the Angevins. Then an opening: Navarre has allied itself to Castile, and while Castile is under London's protection, Navarre is not. If the armies already in the north overwhelm both before London decides whether it must help, the crown has its chance",
+  "data": {
+   "account": "Trent, August 1430"
+  },
+  "source": "Trent's account"
+ },
+ {
+  "id": "1430-08-17-war-on-navarre",
+  "date": "1430-08-17",
+  "type": "war_declared",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad",
+   "alfonso-gaston"
+  ],
+  "places": [],
+  "wars": [
+   "war-of-the-mountains"
+  ],
+  "title": "Al-Andalus declares war on Navarre, the sixth war of the Istirdād. Castile alone answers Navarre's call; the Angevin Empire stays out",
+  "data": {
+   "cb": "cb_reconquer_iberia",
+   "attackers": "al-Andalus and all seven ṭāʾifas",
+   "defenders": [
+    "Navarre",
+    "Castile"
+   ],
+   "forces": "al-Andalus 4,674 men under arms; Navarre and Castile none, 9 ships between them",
+   "angevins": "allied to Castile, not in the war"
+  },
+  "source": "Trent's account; save of 17 August 1430"
+ },
+ {
+  "id": "1430-11-03-battle-bilbo",
+  "date": "1430-11-03",
+  "type": "battle",
+  "people": [
+   "alfonso-gaston"
+  ],
+  "places": [],
+  "wars": [
+   "war-of-the-mountains"
+  ],
+  "title": "Before Bilbao the army of al-Andalus, 4,673 strong, breaks 3,580 Navarrese, killing or taking 2,756 for the loss of 191",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "al-Andalus": 4673
+   },
+   "oursTotal": 4673,
+   "oursLost": 191,
+   "theirs": {
+    "Navarre": 3580
+   },
+   "theirsTotal": 3580,
+   "theirsLost": 2756,
+   "location": "Bilbao",
+   "warScore": 25,
+   "composition": {
+    "ours": "2,000 infantry, 2,221 light horse, 452 heavy horse",
+    "theirs": "3,462 levy archers, 86 infantry, 32 horse"
+   }
+  },
+  "source": "Trent's battle screen, 3 November 1430"
+ },
+ {
+  "id": "1430-11-03-all-three-fall",
+  "date": "1430-11-03",
+  "type": "player_note",
+  "people": [],
+  "places": [],
+  "wars": [
+   "war-of-the-mountains",
+   "war-of-shant-yaqub"
+  ],
+  "title": "By 3 November the Castilians have been swept aside by the advance and the armies of al-Andalus are at the gates of Bilbao. All three states, Galicia, Navarre and Castile, fall",
+  "data": {
+   "account": "Trent, 3 November 1430"
+  },
+  "source": "Trent's account"
  }
 ]

@@ -2540,5 +2540,22 @@
   },
   "traits": [],
   "note": "Son of Aḥmad ibn Ismāʿīl, ruler of the Ṭāʾifa of Liyūn, and so a nephew of the Emperor Muḥammad V; married. At seventeen, on 30 June 1430, he commanded the army of al-Andalus before Santiago de Compostela in the War of Shant Yāqub and broke 7,000 Galicians, killing or taking 3,800 for the loss of 230 (+25 war score) (Trent's battle screen; save of 18 May 1430)."
+ },
+ {
+  "id": "juan-cangas",
+  "name": "Juan Cangas",
+  "nameGame": "John Cangas",
+  "gameId": 91269,
+  "born": "1399-07-07",
+  "roles": [
+   "general of the Ṭāʾifa of Liyūn"
+  ],
+  "stats": {
+   "adm": 43,
+   "dip": 73,
+   "mil": 87
+  },
+  "traits": [],
+  "note": "A Leonese Muslim, general of the Ṭāʾifa of Liyūn. On 5 August 1430, in the War of Shant Yāqub, he held Oviedo with 5,602 men against the last army of Galicia and destroyed all 3,229 without loss (save of 17 August 1430)."
  }
 ]

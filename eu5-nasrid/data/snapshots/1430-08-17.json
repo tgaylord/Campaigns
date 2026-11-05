@@ -1,0 +1,417 @@
+{
+ "date": "1430-08-17",
+ "checkpoint": "The War of the Mountains",
+ "note": "The day of the declaration on Navarre, with Galicia beaten but not yet at peace: Santiago taken and its cathedral destroyed, the last Galician army wiped out at Oviedo. Navarre and Castile have no men under arms; the Angevin Empire, Castile's ally, stays out. The crown holds 196 towns, seven ṭāʾifas march with it, and stability has fallen below nothing (−0.4) with the new war. Estates estimated from the reading of 16 November 1428. Treasury 581 with 565 owed; manpower 17,300 of 19,000.",
+ "source": {
+  "save": "SP_ADU_1430_08_17 (compressed)",
+  "gameVersion": "1.4.7",
+  "extracted": "extracted/1430-08-17.json",
+  "gameTag": "ADU"
+ },
+ "ruler": "muhammad-ibn-ismail-ibn-saad",
+ "heir": "ismail-ibn-muhammad-ibn-ismail",
+ "regent": null,
+ "capital": "ishbiliyya",
+ "rank": "empire",
+ "locations": 196,
+ "overlord": null,
+ "subjects": [
+  {
+   "country": "Catalonia",
+   "type": "taifa"
+  },
+  {
+   "country": "Aragon",
+   "type": "taifa"
+  },
+  {
+   "country": "Taifa of Cuenca",
+   "type": "taifa"
+  },
+  {
+   "country": "Kingdom of Portugal",
+   "type": "taifa"
+  },
+  {
+   "country": "Taifa of León",
+   "type": "taifa"
+  },
+  {
+   "country": "Taifa of Burgos",
+   "type": "taifa"
+  },
+  {
+   "country": "Taifa of Pamplona",
+   "type": "taifa"
+  }
+ ],
+ "allies": [
+  "Mamluks",
+  "Morocco",
+  "Tunis"
+ ],
+ "rivals": [],
+ "cabinet": [
+  {
+   "person": "ismail-ibn-muhammad-ibn-ismail",
+   "role": "Promoting Andalusī culture"
+  },
+  {
+   "person": "ahmad-ibn-muhammad-ibn-ismail",
+   "role": "Integrating the new lands"
+  },
+  {
+   "person": "umm-al-fath-bint-muhammad",
+   "role": "Integrating the new lands"
+  },
+  {
+   "person": "yusuf-ibn-saad",
+   "role": "Promoting Andalusī culture"
+  },
+  {
+   "person": "jadila-bint-saad-ibn-faraj",
+   "role": "Developing the provinces"
+  }
+ ],
+ "crownPower": 29.17,
+ "politicalInfluence": 47,
+ "stability": -0.4,
+ "prestige": 64,
+ "armies": [],
+ "population": {
+  "total": 2588621,
+  "cultures": {
+   "Andalusi": 813654,
+   "Castilian": 709466,
+   "Portuguese": 488693,
+   "Sephardi": 187313,
+   "Catalan": 178211,
+   "Leonese": 164128,
+   "Aragonese": 19486,
+   "Guanche": 15685,
+   "Mustaarabi": 3508,
+   "Sardinian": 1295,
+   "Ligurian": 1015,
+   "Mossi": 970,
+   "Basque": 769,
+   "Sanhaja": 605,
+   "Hausa": 457,
+   "Peruzzi_bank_culture": 446,
+   "Mandinka": 386,
+   "Wallachian": 362,
+   "Bardi_bank_culture": 315,
+   "Languedocien": 271,
+   "Dagbani": 268,
+   "Bobo": 237,
+   "Mamprusi": 152,
+   "Provencal": 142,
+   "Greek_culture": 126,
+   "Gurma": 124,
+   "Bariba": 92,
+   "Songhai": 80,
+   "Bambara": 66,
+   "Jola": 58,
+   "Susu": 51,
+   "Bulgarian": 42,
+   "Fulbe": 38,
+   "Soninke": 36,
+   "French": 23,
+   "Kabyle": 20,
+   "Ajan": 9,
+   "Yoruba": 7,
+   "Sicilian": 5,
+   "Galician": 5,
+   "Wolof": 4,
+   "Prussian": 0
+  },
+  "religions": {
+   "Sunni": 1243923,
+   "Catholic": 1146806,
+   "Jewish": 179142,
+   "Guanche_religion": 15685,
+   "Rogo_miki_religion": 816,
+   "Nyama": 758,
+   "Orthodox": 485,
+   "Bori_Religion": 457,
+   "Buyli_religion": 259,
+   "Naa_wuni_religion": 146,
+   "Songhai_religion": 77,
+   "Geno_religion": 42,
+   "Isese_religion": 9,
+   "Vodun_religion": 9,
+   "Emit_religion": 5
+  }
+ },
+ "estates": [
+  {
+   "id": "crown",
+   "name": "Crown",
+   "power": 29.17,
+   "satisfaction": null,
+   "estimated": true
+  },
+  {
+   "id": "nobles",
+   "name": "Nobility",
+   "power": 17.34,
+   "satisfaction": 41,
+   "estimated": true
+  },
+  {
+   "id": "clergy",
+   "name": "ʿUlamāʾ",
+   "power": 12.62,
+   "satisfaction": 50,
+   "estimated": true
+  },
+  {
+   "id": "burghers",
+   "name": "Burghers",
+   "power": 21.85,
+   "satisfaction": 50,
+   "estimated": true
+  },
+  {
+   "id": "peasants",
+   "name": "Commoners",
+   "power": 2.88,
+   "satisfaction": 50,
+   "estimated": true
+  },
+  {
+   "id": "dhimmi",
+   "name": "Dhimmī",
+   "power": 16.14,
+   "satisfaction": 50,
+   "estimated": true
+  }
+ ],
+ "economy": {
+  "treasury": 581,
+  "income": 280.3,
+  "expenses": 286.7,
+  "debt": 565
+ },
+ "military": {
+  "manpower": 17295,
+  "maxManpower": 19005,
+  "regiments": 9,
+  "ships": 50
+ },
+ "wars": [
+  "war-of-shant-yaqub",
+  "war-of-the-mountains"
+ ],
+ "strait": {
+  "active": false,
+  "influence": 5.2,
+  "sovereignty": 100.0,
+  "yearsSubject": 0.0,
+  "areas": {
+   "held": 72,
+   "total": 72
+  }
+ },
+ "government": {
+  "type": "monarchy",
+  "heirSelection": "cognatic_primogeniture",
+  "laws": [
+   {
+    "slot": "feudal_de_jure_law",
+    "law": "by_tradition"
+   },
+   {
+    "slot": "medieval_levy_law",
+    "law": "peasant_levies"
+   },
+   {
+    "slot": "royal_court_customs_law",
+    "law": "harem_policy"
+   },
+   {
+    "slot": "harem_law",
+    "law": "powerful_harem_policy"
+   },
+   {
+    "slot": "iqta_law",
+    "law": "efficient_tax_farming"
+   },
+   {
+    "slot": "censorship",
+    "law": "limited_censorship"
+   },
+   {
+    "slot": "slave_conversion",
+    "law": "allow_slave_religion"
+   },
+   {
+    "slot": "education_elites_law",
+    "law": "education_of_the_people"
+   },
+   {
+    "slot": "education_masses_law",
+    "law": "basic_religious_education"
+   },
+   {
+    "slot": "administrative_system",
+    "law": "feudal_administration"
+   },
+   {
+    "slot": "cultural_traditions_law",
+    "law": "martial_society"
+   },
+   {
+    "slot": "marriage_law",
+    "law": "muslim_marriage"
+   },
+   {
+    "slot": "heir_religion_law",
+    "law": "heir_same_religion"
+   },
+   {
+    "slot": "coin_laws",
+    "law": "gold_and_silver_coins"
+   },
+   {
+    "slot": "precious_metal_distribution_law",
+    "law": "unlimited_gold_export"
+   },
+   {
+    "slot": "mining_law",
+    "law": "nobles_mining_law"
+   },
+   {
+    "slot": "immigration_law",
+    "law": "open_borders_law"
+   },
+   {
+    "slot": "legal_code_law",
+    "law": "sharia_law_policy"
+   },
+   {
+    "slot": "sharia_law",
+    "law": "maliki_policy"
+   },
+   {
+    "slot": "maritime_law",
+    "law": "navy_audits"
+   },
+   {
+    "slot": "piracy_law",
+    "law": "anti_piracy_policy"
+   },
+   {
+    "slot": "distribution_of_power_law",
+    "law": "dop_favor_the_ruler"
+   },
+   {
+    "slot": "nobles_rights_laws",
+    "law": "curtail_nobles_policy"
+   },
+   {
+    "slot": "nd_bureaucratic_funding_law",
+    "law": "nd_crown_coffers_policy"
+   },
+   {
+    "slot": "dhimmi_regulations_law",
+    "law": "dhimmi_status_policy"
+   }
+  ],
+  "reforms": [
+   "the_jewel_of_alandalus_reform",
+   "gra_hajib_reform",
+   "royal_decree",
+   "catalan_merchant_privileges",
+   "autocracy"
+  ],
+  "privileges": [
+   "nobles_land_rights",
+   "noble_marriage_rights",
+   "clergy_literacy_rights",
+   "clerical_advisory_council",
+   "clergy_land_rights",
+   "building_rights",
+   "market_fairs",
+   "sponsor_maritime_contracts",
+   "communal_lands",
+   "peasants_allowed_weapons_privilege",
+   "peasants_free_peasantry",
+   "dhimmi_military_service",
+   "dhimmi_promote_tolerance",
+   "dhimmi_administrative_posts",
+   "noble_sponsored_navy",
+   "jewish_court_financier_charter",
+   "jewish_physician_exemption",
+   "dhimmi_pact_of_umar",
+   "al_caid",
+   "andalusi_elite",
+   "treasury_rights",
+   "gra_visirate",
+   "gra_ulema_council",
+   "gra_volunteers_of_faith",
+   "mor_andalusian_refugees",
+   "building_roads_rights",
+   "control_over_the_coinage"
+  ],
+  "culture": "andalusi",
+  "tolerated": [],
+  "religion": "sunni",
+  "societalValues": {
+   "centralization_vs_decentralization": 35.2,
+   "traditionalist_vs_innovative": 29.83,
+   "spiritualist_vs_humanist": -52.0,
+   "aristocracy_vs_plutocracy": -62.0,
+   "serfdom_vs_free_subjects": -30.1,
+   "belligerent_vs_conciliatory": -61.22,
+   "quality_vs_quantity": 26.69,
+   "offensive_vs_defensive": -7.57,
+   "land_vs_naval": -33.04,
+   "capital_economy_vs_traditional_economy": -20.78,
+   "individualism_vs_communalism": 52.0,
+   "mysticism_vs_jurisprudence": -26.49
+  },
+  "parliament": {
+   "type": "jamaa_parliament",
+   "lastCalled": "1428-05-25",
+   "agenda": [
+    {
+     "estate": "nobles",
+     "type": "pa_remove_parish_church"
+    },
+    {
+     "estate": "clergy",
+     "type": "pa_remove_artisan_guilds"
+    }
+   ]
+  },
+  "privilegeDates": {
+   "nobles_land_rights": "1333-04-01",
+   "noble_marriage_rights": "1333-04-01",
+   "clergy_literacy_rights": "1333-04-01",
+   "clerical_advisory_council": "1333-04-01",
+   "clergy_land_rights": "1333-04-01",
+   "building_rights": "1333-04-01",
+   "market_fairs": "1333-04-01",
+   "sponsor_maritime_contracts": "1333-04-01",
+   "communal_lands": "1333-04-01",
+   "peasants_allowed_weapons_privilege": "1333-04-01",
+   "peasants_free_peasantry": "1333-04-01",
+   "dhimmi_military_service": "1333-04-01",
+   "dhimmi_promote_tolerance": "1333-04-01",
+   "dhimmi_administrative_posts": "1333-04-01",
+   "noble_sponsored_navy": "1333-04-01",
+   "jewish_court_financier_charter": "1333-04-01",
+   "jewish_physician_exemption": "1333-04-01",
+   "dhimmi_pact_of_umar": "1333-04-01",
+   "al_caid": "1333-04-01",
+   "andalusi_elite": "1333-04-01",
+   "treasury_rights": "1333-04-01",
+   "gra_visirate": "1333-04-01",
+   "gra_ulema_council": "1333-04-01",
+   "gra_volunteers_of_faith": "1333-04-01",
+   "mor_andalusian_refugees": "1363-04-17",
+   "building_roads_rights": "1402-08-26",
+   "control_over_the_coinage": "1402-08-26"
+  }
+ }
+}
