@@ -56,6 +56,8 @@ The save holds each estate's satisfaction, gold and tax rate, but not its share 
 
 **Using it.** Checkpoints with a screen reading use the screen's figures. Others use `estate_power.py SECTIONS --out FILE` (the latest reading's modifiers and corrections) and are marked `estimated: true`. A new reading is worth taking after any change of privilege, law, cabinet or ruler, since the stored modifiers then go stale.
 
+**The full reading of 16 November 1428.** Trent read every estate's power tooltip, so all six country modifiers were refreshed (the 1349–1415 readings had carried the 1337–1340 sums forward). With fresh modifiers the uncalibrated model came within 1–8% of every estate's absolute power. The exception is the crown, at about twice the screen: the crown tooltip shows a separate 'Crown Power from Population x0.45' factor that the model doesn't apply. Its correction (0.483) is that factor, plus about 7%.
+
 ## What the privileges and laws do
 
 The save names privileges, laws, reforms, societal values and parliament agendas by key only. `government_catalog.py GAME_DIR` reads their definitions from the game's own files (base game and the Across the Pillars DLC, with English localization) and writes `data/government-catalog.json`: each entry's name, the estate it belongs to, its modifiers with the game's own labels and percent/flat formatting, and summaries of the estate power and satisfaction it changes. Only what some checkpoint has held is written, plus every option of each law held, so the Council can show the alternatives.

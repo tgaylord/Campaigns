@@ -164,9 +164,10 @@
    "buildings": "village granaries in nearly every major village",
    "purpose": "to counter the nobility's mass frustration; safe communal stores for part of each harvest (Trent)",
    "memory": "how lean and expensive food could get during the leaner years against the Castilians (Trent)",
-   "when": "the first half of 1428"
+   "when": "the first half of 1428",
+   "inSave": "village granaries in 167 of the crown's 194 towns by 16 November 1428 (1 in May)"
   },
-  "source": "Trent's account, 3 June 1428"
+  "source": "Trent's account, 3 June 1428; save of 16 November 1428"
  },
  {
   "id": "1428-06-03-farms-mills-and-acequias",
@@ -186,9 +187,10 @@
     "lumber mills"
    ],
    "cost": "very low cost to the nobility and peasantry (Trent)",
-   "when": "the first half of 1428"
+   "when": "the first half of 1428",
+   "inSave": "by 16 November 1428: acequias 12 → 41, windmills 0 → 7 (in the Alentejo, Ocaña, Toledo, Huelva and Granada country), lumber mills 24 → 29"
   },
-  "source": "Trent's account, 3 June 1428"
+  "source": "Trent's account, 3 June 1428; save of 16 November 1428"
  },
  {
   "id": "1428-06-03-embassy-to-niani",
@@ -208,5 +210,56 @@
    "mali": "14th in the world, 82 towns and 92 in subjects; Mansa Tiramakhan since 1410, heir Majan born 1405 (world file of 25 May 1428)"
   },
   "source": "Trent's account, 3 June 1428"
+ },
+ {
+  "id": "1428-07-27-death-of-jadila-bint-saad",
+  "date": "1428-07-27",
+  "type": "death",
+  "people": [
+   "jadila-bint-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Jadīla bint Saʿd, daughter of the Emperor Saʿd and Aiman the Mamlūk, and the Emperor's half-sister, dies of a sudden illness at fifty-nine",
+  "data": {
+   "cause": "sudden illness"
+  },
+  "source": "save of 16 November 1428"
+ },
+ {
+  "id": "1428-11-16-the-estates",
+  "date": "1428-11-16",
+  "type": "estate_change",
+  "people": [
+   "ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "The estates six months after the Jamāʿa of 831: the crown holds three tenths of the power of the state, the burghers a fifth, the umarāʾ and the dhimmī a sixth each, the ʿulamāʾ an eighth. The umarāʾ, one in six content after losing the Primacy, are back above a third and rising",
+  "data": {
+   "power": {
+    "crown": 29.54,
+    "nobles": 17.06,
+    "clergy": 12.52,
+    "burghers": 21.35,
+    "peasants": 2.8,
+    "dhimmi": 16.66,
+    "tribes": "under 1%"
+   },
+   "satisfaction": {
+    "nobles": "34.05% rising to 36.05%",
+    "clergy": "50.01%",
+    "burghers": "48.19% rising to 50.01%",
+    "commoners": "50.01%",
+    "dhimmi": "50.01%",
+    "tribes": "44.85% falling to 44.09%"
+   },
+   "crownLegitimacy": "40% (the key figure beside the crown's power)",
+   "reforms": "5 of 5",
+   "nobleModifiers": "Aristocracy +31%, economic base of subjects +25%, Vizierate +25%, Land Rights +75%, Royal Marriage Rights +50%, Noble Navy +33%, Court Financier Charter +25%, Physician Exemption +25%, Communal Lands −5%, Catalan Merchant Privileges −20%, Curtail the Nobility −10%",
+   "crownModifiers": "Favor the Ruler +33%, the Emperor in command +25%, Al-Ḥamrāʾ +15%, Dīwān al-Mustaklaṣ +14.07%, Hijaba +12%, the ruler's administration +11.5%, legitimacy, Sovereignty, the kūras, Royal Court, Autocracy, Royal Decree and Powerful Harem +10% each, five dīwān members +5% each, the crown prince in command +4%",
+   "peniscola": "the burghers' mansion at Peñíscola, the nobles' agenda at the Jamāʿa, is gone by November"
+  },
+  "source": "Trent's estates panel and tooltips, 16 November 1428"
  }
 ]

@@ -294,6 +294,45 @@
     "dhimmi": 0.0247
    },
    "calibratedOn": "1416.1.1"
+  },
+  "1428-11-16": {
+   "source": "Trent's estates panel and every estate-power tooltip on 16 November 1428, with the save of the same day. Absolute political power: crown 1408.24, umarāʾ 813.36, ʿulamāʾ 597.11, burghers 1017.74, commoners 133.64, dhimmī 794.06, of a total 4766.27 (the tribes, about 2, left out). Country modifiers are the sums of the tooltip lines: crown +209.57% (with 'Crown Power from Population x0.45' shown separately), umarāʾ +261.71% (the Primacy of Nobility gone since May 1428), ʿulamāʾ +110.80%, burghers +295.01%, commoners +158%, dhimmī +73.01%; primary religion tolerance +1.03%. Calibrated on the save of 16 November 1428: with the full modifiers the model comes within 1–8% of every estate's absolute power. The crown's correction (0.48) is almost all the 'Crown Power from Population x0.45' factor the model doesn't apply; the remaining 7% is the crown's other terms.",
+   "countryModifiers": {
+    "crown": 2.0957,
+    "nobles": 2.6171,
+    "clergy": 1.108,
+    "burghers": 2.9501,
+    "peasants": 1.58,
+    "dhimmi": 0.7301
+   },
+   "tolerance": 0.0103,
+   "screen": {
+    "crown": 1408.24,
+    "nobles": 813.36,
+    "clergy": 597.11,
+    "burghers": 1017.74,
+    "peasants": 133.64,
+    "dhimmi": 794.06
+   },
+   "satisfaction": {
+    "nobles": 34.05,
+    "clergy": 50.01,
+    "burghers": 48.19,
+    "peasants": 50.01,
+    "dhimmi": 50.01,
+    "tribes": 44.85
+   },
+   "crownLegitimacy": 40,
+   "corrections": {
+    "crown": 0.4829,
+    "nobles": 0.9967,
+    "clergy": 1.0473,
+    "burghers": 1.0212,
+    "peasants": 1.0836,
+    "dhimmi": 0.9896
+   },
+   "totalShown": 4766.27,
+   "calibratedOn": "1428.11.16"
   }
  },
  "adjustments": [

@@ -1,7 +1,7 @@
 {
  "date": "1428-05-25",
  "checkpoint": "The Jamāʿa of 831",
- "note": "The day of the Jamāʿa of 831, which revoked the Primacy of Nobility. The umarāʾ are one in six content and the realm's peace is all but gone (stability 1). The crown holds 194 towns and 2,552,000 people, with armouries in ten of its cities and settlements now on four islands of the Azores, four of the Canaries and three of the Cape Verdes. Seven ṭāʾifas; Banbalūna has a new lord, Aḥmad ibn Yūsuf. The truce with Castile ran out in 1426, and Galicia has swallowed Asturias. Estates estimated from the reading of 31 December 1415, which still counts the Primacy's doubling of the umarāʾ's power, so their share is probably overstated. Treasury 201 with 565 owed; manpower full at 13,700.",
+ "note": "The day of the Jamāʿa of 831, which revoked the Primacy of Nobility. The umarāʾ are one in six content and the realm's peace is all but gone (stability 1). The crown holds 194 towns and 2,552,000 people, with armouries in ten of its cities and settlements now on four islands of the Azores, four of the Canaries and three of the Cape Verdes. Seven ṭāʾifas; Banbalūna has a new lord, Aḥmad ibn Yūsuf. The truce with Castile ran out in 1426, and Galicia has swallowed Asturias. Estates estimated from the reading of 16 November 1428, six months later, after the Primacy was gone. Treasury 201 with 565 owed; manpower full at 13,700.",
  "source": {
   "save": "SP_ADU_1428_05_25 (compressed)",
   "gameVersion": "1.4.7",
@@ -145,42 +145,42 @@
   {
    "id": "crown",
    "name": "Crown",
-   "power": 27.65,
+   "power": 29.59,
    "satisfaction": null,
    "estimated": true
   },
   {
    "id": "nobles",
    "name": "Nobility",
-   "power": 20.81,
+   "power": 17.21,
    "satisfaction": 16,
    "estimated": true
   },
   {
    "id": "clergy",
    "name": "ʿUlamāʾ",
-   "power": 11.91,
+   "power": 12.54,
    "satisfaction": 50,
    "estimated": true
   },
   {
    "id": "burghers",
    "name": "Burghers",
-   "power": 20.86,
+   "power": 21.2,
    "satisfaction": 50,
    "estimated": true
   },
   {
    "id": "peasants",
    "name": "Commoners",
-   "power": 2.38,
+   "power": 2.79,
    "satisfaction": 50,
    "estimated": true
   },
   {
    "id": "dhimmi",
    "name": "Dhimmī",
-   "power": 16.39,
+   "power": 16.67,
    "satisfaction": 50,
    "estimated": true
   }
