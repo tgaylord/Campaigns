@@ -326,5 +326,12 @@
   "nameChronicle": "Jillīqiya",
   "nameArabic": "جليقية",
   "color": "#4a8fb0"
+ },
+ {
+  "tag": "TOU",
+  "name": "Toulouse",
+  "nameChronicle": "Ṭulūsha",
+  "nameArabic": "طلوشة",
+  "color": "#b5525e"
  }
 ]

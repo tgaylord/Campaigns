@@ -2446,5 +2446,40 @@
   },
   "traits": [],
   "note": "Mansa of Mālī from 26 August 1410, reigning from Niani. In the first half of 1428 he received Andalusī envoys who came by the new sea roads, exchanged gifts with the Emperor Ismāʿīl and exempted Andalusī traders from tariffs throughout his empire (Trent's account). His heir is Majan, born 28 June 1405 (world file of 25 May 1428)."
+ },
+ {
+  "id": "edward-v-of-england",
+  "name": "Edward of England",
+  "nameGame": "Edward",
+  "gameId": 80238,
+  "born": "1400-11-29",
+  "roles": [
+   "king of England (from 1423)",
+   "king of France (from 1428)"
+  ],
+  "stats": {
+   "adm": 56,
+   "dip": 38,
+   "mil": 47
+  },
+  "traits": [],
+  "note": "King of England as Edward V from 18 April 1423. His war with France from April 1427 ended in the peace of 28 November 1428, which took eighty French towns for England and its vassals and made Languedoc an English dominion of Toulouse. On 1 December 1428 he was made king of France as well, uniting England, France and the Dauphiné under one crown. England is allied to Castile and counts al-Andalus among its rivals (saves of 1428)."
+ },
+ {
+  "id": "philippe-vii-of-france",
+  "name": "Philippe VII of France",
+  "nameGame": "Philippe",
+  "gameId": 16801116,
+  "born": "1398-06-02",
+  "roles": [
+   "king of France (1421–1428)"
+  ],
+  "stats": {
+   "adm": 27,
+   "dip": 40,
+   "mil": 68
+  },
+  "traits": [],
+  "note": "King of France from 6 April 1421. He lost the Hundred Years' War at the peace of 28 November 1428, and on 1 December his crown passed to Edward of England; he kept a seat in the French council (saves of 1428)."
  }
 ]

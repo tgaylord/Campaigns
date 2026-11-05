@@ -46,10 +46,11 @@
    "id": "franks",
    "name": "The Lands of the Franks",
    "nameArabic": "بلاد الإفرنج",
-   "note": "Latin Christendom beyond the Pyrenees and across the sea: the war of France and England, the Emperor, the Pope and the cities of Italy.",
+   "note": "Latin Christendom beyond the Pyrenees and across the sea. From 1 December 1428 England and France have one king, the English Edward, and English Toulouse holds Languedoc to the Pyrenees; beyond them the Emperor, the Pope and the cities of Italy.",
    "tags": [
     "FRA",
     "ENG",
+    "TOU",
     "BOH",
     "HUN",
     "PAP",

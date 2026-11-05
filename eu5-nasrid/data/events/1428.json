@@ -261,5 +261,52 @@
    "peniscola": "the burghers' mansion at Peñíscola, the nobles' agenda at the Jamāʿa, is gone by November"
   },
   "source": "Trent's estates panel and tooltips, 16 November 1428"
+ },
+ {
+  "id": "1428-11-28-peace-of-the-hundred-years-war",
+  "date": "1428-11-28",
+  "type": "diplomacy",
+  "people": [
+   "edward-v-of-england",
+   "philippe-vii-of-france"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "The Hundred Years' War ends in an English victory. France gives up eighty towns: the whole of Languedoc, from Toulouse and Narbonne to Carcassonne, Montpellier, Nîmes and Foix, to a new English dominion of Toulouse; Picardy and Poitou, from Amiens and Saint-Quentin to Poitiers, to England itself; the Agenais to English Aquitaine; the Bassigny and Langres to Burgundy, England's vassal. Castile, England's ally, is part of the peace",
+  "data": {
+   "war": "England against France, from 28 April 1427 (Trent: the end of the Hundred Years' War)",
+   "towns": {
+    "Toulouse (new English dominion, capital Narbonne)": 42,
+    "England": 24,
+    "Burgundy (English vassal; with 13 more from Franche-Comté)": 10,
+    "Aquitaine (English fief)": 9,
+    "Armagnac": 3
+   },
+   "toulouse": "42 towns, about 790,000 people; English as its state culture, Catholic; it borders the Ṭāʾifa of Catalonia along the Pyrenees",
+   "france": "212 towns and 45 in subjects before, 131 and 29 after",
+   "truces": "England, Castile and Bohemia with France to 28 February 1440 (about 92 war score)"
+  },
+  "source": "save of 1 December 1428"
+ },
+ {
+  "id": "1428-12-01-the-english-crown-of-france",
+  "date": "1428-12-01",
+  "type": "diplomacy",
+  "people": [
+   "edward-v-of-england",
+   "philippe-vii-of-france"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Three days after the peace, Edward, king of England, is made king of France as well. England, France and the Dauphiné have one crown; the French king Philippe, who had reigned since 1421, keeps a seat in his conqueror's French council. England becomes the second power of the world by a widening margin, and the only great power that counts al-Andalus an enemy is now master of both shores of the Channel and of the Pyrenees beyond Catalonia",
+  "data": {
+   "union": "England, France and the Dauphiné, from 1 December 1428",
+   "edward": "born 29 November 1400; king of England from 18 April 1423 (Edward V), king of France and lord of Toulouse from 1 December 1428 (56/38/47); heir Richard",
+   "philippe": "Philippe VII, born 2 June 1398, king of France from 6 April 1421; in the French cabinet after the union",
+   "england": "2nd in the world, 119 points (108 before the peace); 273 towns and 280 in subjects",
+   "allies": "England is allied to Castile, and names France, Hungary and al-Andalus as its rivals",
+   "why": "which matters for us because the English are allied with the Castilians (Trent)"
+  },
+  "source": "save of 1 December 1428"
  }
 ]
