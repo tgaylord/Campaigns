@@ -8,10 +8,12 @@
   ],
   "places": [],
   "wars": [],
-  "title": "News from the north: Edward, king of England, is crowned in Paris, and his crowns are joined as a new Angevin Empire",
+  "title": "News from the north: Edward, king of England, is crowned in Paris, and his crowns are joined as a new Angevin Empire. Its borders are those of the English and French crowns of 1428; its name is new, and so are its ambitions",
   "data": {
    "account": "The King of England is officially crowned in Paris on June 11th, 1429, forming a new 'Angevin Empire' under his rule (Trent)",
-   "note": "the game's tag and the fate of the separate English and French crowns will be read from the next save"
+   "note": "the game's tag will be read from the next save",
+   "borders": "unchanged (Trent)",
+   "ambitions": "the name is now different, as are the ambitions (Trent)"
   },
   "source": "Trent's account, 11 June 1429"
  }

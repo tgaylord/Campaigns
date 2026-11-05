@@ -149,7 +149,15 @@
   "name": "England",
   "nameChronicle": "Inkiltira",
   "nameArabic": "إنكلترة",
-  "color": "#a83a4a"
+  "color": "#a83a4a",
+  "renamed": [
+   {
+    "from": "1429-06-11",
+    "name": "Angevin Empire",
+    "nameChronicle": "the Angevin Empire",
+    "nameArabic": "إمبراطورية أنجو"
+   }
+  ]
  },
  {
   "tag": "BOH",
