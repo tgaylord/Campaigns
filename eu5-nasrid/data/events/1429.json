@@ -1,0 +1,18 @@
+[
+ {
+  "id": "1429-06-11-the-angevin-empire",
+  "date": "1429-06-11",
+  "type": "formable",
+  "people": [
+   "edward-v-of-england"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "News from the north: Edward, king of England, is crowned in Paris, and his crowns are joined as a new Angevin Empire",
+  "data": {
+   "account": "The King of England is officially crowned in Paris on June 11th, 1429, forming a new 'Angevin Empire' under his rule (Trent)",
+   "note": "the game's tag and the fate of the separate English and French crowns will be read from the next save"
+  },
+  "source": "Trent's account, 11 June 1429"
+ }
+]
