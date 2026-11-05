@@ -2647,5 +2647,59 @@
    "sinner"
   ],
   "note": "Pope from 12 February 1430, sixty in 1431, holding Rome and two other towns. The game names him Fabrice; the chronicle uses the Italian form of his name. On 1 October 1431 he proclaimed the second crusade against al-Andalus, sparked by the destruction of the cathedral of Santiago, and declared war on the Ṭāʾifa of Aragon (save of 1 October 1431)."
+ },
+ {
+  "id": "khayr-al-din-khayyam",
+  "name": "Khayr al-Dīn Khayyām",
+  "nameArabic": "خير الدين خيام",
+  "nameGame": "Khayr al-Din Khayyam",
+  "gameId": 16800481,
+  "born": "1376-04-23",
+  "roles": [
+   "mercenary captain"
+  ],
+  "stats": {
+   "adm": 75,
+   "dip": 49,
+   "mil": 69
+  },
+  "traits": [
+   "defensive_planner"
+  ],
+  "note": "An Andalusī and a Muslim, captain of a mercenary company of Granadan jinetes and frontier horse, a general since 1426. In the Crusade of 835 he fought in the crusaders' pay, commanding the army of Campagna and Siena: he beat the Tunisians at Tivoli on 31 December 1431, and on 26 March 1432 he led 16,964 men against 4,567 Moroccans at Pitigliano and was broken (save of 1 May 1432)."
+ },
+ {
+  "id": "vukmir-jankovic",
+  "name": "Vukmir Janković",
+  "nameGame": "Vukmir Jankovic",
+  "gameId": 90159,
+  "roles": [
+   "papal admiral"
+  ],
+  "stats": {
+   "adm": 62,
+   "dip": 84,
+   "mil": 81
+  },
+  "traits": [],
+  "note": "Admiral of the Papal States in the Crusade of 835, a Slav in the Pope's service. With six ships he destroyed fourteen Tripolitan ships in the Gulf of Talamone on 5 December 1431, and with fifteen Genoese ships beside his own he sank or took fifteen of twenty-four Tunisian ships off Lazio on 20 December. On 14 March 1432 he attacked 45 Moroccan and Catalan ships in the Corsica Channel with his last five and lost them all (save of 1 May 1432)."
+ },
+ {
+  "id": "abd-al-wahhab-barakat",
+  "name": "ʿAbd al-Wahhāb Barakat",
+  "nameArabic": "عبد الوهاب بركات",
+  "nameGame": "Abd al-Wahhab Barakat",
+  "gameId": 16829342,
+  "born": "1402-08-30",
+  "roles": [
+   "ruler of the Islands of the Green Cape (from 1432)"
+  ],
+  "stats": {
+   "adm": 50,
+   "dip": 32,
+   "mil": 31
+  },
+  "traits": [],
+  "note": "An Andalusī of the faith, made ruler of the Cape Verde islands from Santiago when the four towns became a colonial dominion of the Emperor on 1 May 1432 (save of 1 May 1432)."
  }
 ]

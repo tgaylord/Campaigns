@@ -1,22 +1,638 @@
 [
  {
+  "id": "1432-01-01-battle-eolie-islands",
+  "date": "1432-01-01",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "Off the Aeolian Islands two ships of Val di Noto attack 17 of Aquileia and Genoa and are lost",
+  "data": {
+   "result": "allied defeat",
+   "naval": true,
+   "ours": {
+    "Val di Noto": 2
+   },
+   "oursTotal": 2,
+   "oursLost": 2,
+   "theirs": {
+    "Aquileia": 2,
+    "Genoa": 15
+   },
+   "theirsTotal": 17,
+   "theirsLost": 0,
+   "location": "Aeolian Islands",
+   "side": "allies attacking",
+   "units": "ships",
+   "commanders": {
+    "ours": "Dagale#60721",
+    "theirs": "name_sancho#33573004"
+   }
+  },
+  "source": "save of 1 May 1432"
+ },
+ {
+  "id": "1432-01-05-battle-orosei",
+  "date": "1432-01-05",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "In Sardinia 3,955 Arboreans attack 420 men of Gallura at Orosei and scatter them, killing or taking 368 for 70",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Gallura": 420
+   },
+   "oursTotal": 420,
+   "oursLost": 368,
+   "theirs": {
+    "Arborea": 3955
+   },
+   "theirsTotal": 3955,
+   "theirsLost": 70,
+   "location": "Orosei",
+   "side": "crusaders attacking",
+   "commanders": {
+    "ours": "name_kubad#33570617",
+    "theirs": "name_benedict#16832034"
+   }
+  },
+  "source": "save of 1 May 1432"
+ },
+ {
+  "id": "1432-01-19-battle-gulf-of-lion",
+  "date": "1432-01-19",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "In the Gulf of Lion 19 ships of Tlemcen catch a single ship of Provence and sink it",
+  "data": {
+   "result": "allied victory",
+   "naval": true,
+   "ours": {
+    "Tlemcen": 19
+   },
+   "oursTotal": 19,
+   "oursLost": 0,
+   "theirs": {
+    "Provence": 1
+   },
+   "theirsTotal": 1,
+   "theirsLost": 1,
+   "location": "Gulf of Lion",
+   "side": "allies attacking",
+   "units": "ships",
+   "commanders": {
+    "ours": "Muḥammad Abū Yaḥyā of Tlemcen",
+    "theirs": "name_roger#16801817"
+   }
+  },
+  "source": "save of 1 May 1432"
+ },
+ {
+  "id": "1432-01-27-battle-gulf-olbia",
+  "date": "1432-01-27",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "In the Gulf of Olbia nine papal ships attack the joined fleets of Morocco and Barqa, 115 sail under Abū Bakr, and all nine are sunk or taken, for four of ours",
+  "data": {
+   "result": "allied victory",
+   "naval": true,
+   "ours": {
+    "Morocco": 99,
+    "Barqa": 16
+   },
+   "oursTotal": 115,
+   "oursLost": 4,
+   "theirs": {
+    "Papal States": 9
+   },
+   "theirsTotal": 9,
+   "theirsLost": 9,
+   "location": "Gulf of Olbia",
+   "side": "crusaders attacking",
+   "units": "ships",
+   "commanders": {
+    "ours": "Abū Bakr of Morocco",
+    "theirs": "Svyatoslav (papal)"
+   }
+  },
+  "source": "save of 1 May 1432"
+ },
+ {
+  "id": "1432-01-28-battle-orosei",
+  "date": "1432-01-28",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "At Orosei 2,530 Tunisians attack 3,885 Arboreans and beat them, killing or taking 694 for 226",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Tunis": 2530
+   },
+   "oursTotal": 2530,
+   "oursLost": 226,
+   "theirs": {
+    "Arborea": 3885
+   },
+   "theirsTotal": 3885,
+   "theirsLost": 694,
+   "location": "Orosei",
+   "side": "allies attacking",
+   "commanders": {
+    "ours": "name_john#71297",
+    "theirs": "name_benedict#16832034"
+   }
+  },
+  "source": "save of 1 May 1432"
+ },
+ {
+  "id": "1432-02-01-battle-gulf-orosei",
+  "date": "1432-02-01",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "In the Gulf of Orosei 28 ships of Aquileia attack 185 of Morocco, Tunis and Barqa under Abū Bakr and lose 17, for 6 of ours",
+  "data": {
+   "result": "allied victory",
+   "naval": true,
+   "ours": {
+    "Barqa": 16,
+    "Tunis": 74,
+    "Morocco": 95
+   },
+   "oursTotal": 185,
+   "oursLost": 6,
+   "theirs": {
+    "Aquileia": 28
+   },
+   "theirsTotal": 28,
+   "theirsLost": 17,
+   "location": "Gulf of Orosei",
+   "side": "crusaders attacking",
+   "units": "ships",
+   "commanders": {
+    "ours": "Abū Bakr of Morocco",
+    "theirs": "name_aleramo#79767"
+   }
+  },
+  "source": "save of 1 May 1432"
+ },
+ {
+  "id": "1432-02-19-battle-ushant",
+  "date": "1432-02-19",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "Off Ushant 27 ships of Mecklenburg attack six of the Kingdom of Portugal under Rodrigo de Lima and win, sinking one and damaging another",
+  "data": {
+   "result": "allied defeat",
+   "naval": true,
+   "ours": {
+    "Kingdom of Portugal": 6
+   },
+   "oursTotal": 6,
+   "oursLost": 1.4,
+   "theirs": {
+    "Mecklenburg": 27
+   },
+   "theirsTotal": 27,
+   "theirsLost": 0,
+   "location": "Ushant",
+   "side": "crusaders attacking",
+   "units": "ships",
+   "commanders": {
+    "ours": "Rodrigo de Lima of Portugal",
+    "theirs": "name_john#33563941"
+   }
+  },
+  "source": "save of 1 May 1432"
+ },
+ {
+  "id": "1432-02-21-battle-ushant",
+  "date": "1432-02-21",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "Off Ushant a single ship of the Ṭāʾifa of Burghush attacks the Mecklenburg fleet of 29 and is beaten off, damaged",
+  "data": {
+   "result": "allied defeat",
+   "naval": true,
+   "ours": {
+    "Ṭāʾifa of Burghush": 1
+   },
+   "oursTotal": 1,
+   "oursLost": 0.2,
+   "theirs": {
+    "Mecklenburg": 29
+   },
+   "theirsTotal": 29,
+   "theirsLost": 0,
+   "location": "Ushant",
+   "side": "allies attacking",
+   "units": "ships",
+   "commanders": {
+    "ours": "name_chrysanthos#16863515",
+    "theirs": "name_john#33563941"
+   }
+  },
+  "source": "save of 1 May 1432"
+ },
+ {
+  "id": "1432-02-28-battle-terracina",
+  "date": "1432-02-28",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "At Terracina 832 Tunisians attack 6,138 papal troops and are thrown back, losing 403 for 55",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Tunis": 832
+   },
+   "oursTotal": 832,
+   "oursLost": 403,
+   "theirs": {
+    "Papal States": 6138
+   },
+   "theirsTotal": 6138,
+   "theirsLost": 55,
+   "location": "Terracina",
+   "side": "allies attacking",
+   "commanders": {
+    "ours": "name_abu.name_john#86899",
+    "theirs": "name_benvenuto#16847475"
+   }
+  },
+  "source": "save of 1 May 1432"
+ },
+ {
+  "id": "1432-03-02-battle-gulf-talamone",
+  "date": "1432-03-02",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "In the Gulf of Talamone 22 ships of Faenza attack 79 of Tunis and Barqa under Almaz and lose five without sinking one",
+  "data": {
+   "result": "allied victory",
+   "naval": true,
+   "ours": {
+    "Tunis": 63,
+    "Barqa": 16
+   },
+   "oursTotal": 79,
+   "oursLost": 0,
+   "theirs": {
+    "Faenza": 22
+   },
+   "theirsTotal": 22,
+   "theirsLost": 5,
+   "location": "Gulf of Talamone",
+   "side": "crusaders attacking",
+   "units": "ships",
+   "commanders": {
+    "ours": "Almaz",
+    "theirs": "name_john#64895"
+   }
+  },
+  "source": "save of 1 May 1432"
+ },
+ {
+  "id": "1432-03-14-battle-corsica-channel",
+  "date": "1432-03-14",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "In the Corsica Channel Vukmir Janković's last five papal ships attack 45 of Morocco and Catalonia under ʿAbd al-ʿAzīz and all five are lost",
+  "data": {
+   "result": "allied victory",
+   "naval": true,
+   "ours": {
+    "Morocco": 39,
+    "Catalonia": 6
+   },
+   "oursTotal": 45,
+   "oursLost": 0,
+   "theirs": {
+    "Papal States": 5
+   },
+   "theirsTotal": 5,
+   "theirsLost": 5,
+   "location": "Corsica Channel",
+   "side": "crusaders attacking",
+   "units": "ships",
+   "commanders": {
+    "ours": "ʿAbd al-ʿAzīz of Morocco",
+    "theirs": "Vukmir Janković (papal admiral)"
+   }
+  },
+  "source": "save of 1 May 1432"
+ },
+ {
+  "id": "1432-03-15-battle-castelsardo",
+  "date": "1432-03-15",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "At Castelsardo 510 Tunisians attack 3,162 Arboreans and are destroyed, losing 422 for 41",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Tunis": 510
+   },
+   "oursTotal": 510,
+   "oursLost": 422,
+   "theirs": {
+    "Arborea": 3162
+   },
+   "theirsTotal": 3162,
+   "theirsLost": 41,
+   "location": "Castelsardo",
+   "side": "allies attacking",
+   "commanders": {
+    "ours": "name_john#71297",
+    "theirs": "name_benedict#16832034"
+   }
+  },
+  "source": "save of 1 May 1432"
+ },
+ {
+  "id": "1432-03-19-battle-gaeta",
+  "date": "1432-03-19",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "At Gaeta 650 men of Principato Ultra beat 428 Tunisians, killing or taking 113 for 47",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Tunis": 428
+   },
+   "oursTotal": 428,
+   "oursLost": 113,
+   "theirs": {
+    "Principato Ultra": 650
+   },
+   "theirsTotal": 650,
+   "theirsLost": 47,
+   "location": "Gaeta",
+   "side": "crusaders attacking",
+   "commanders": {
+    "ours": "name_abu.name_john#86899",
+    "theirs": "name_adolf.name_frederick#16838124"
+   }
+  },
+  "source": "save of 1 May 1432"
+ },
+ {
+  "id": "1432-03-26-battle-pitigliano",
+  "date": "1432-03-26",
+  "type": "battle",
+  "people": [
+   "khayr-al-din-khayyam"
+  ],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "At Pitigliano Khayr al-Dīn Khayyām leads 16,964 men of Campagna, Siena and Faenza against 4,567 Moroccans under Khalīl and is broken, losing 6,528 for 2,122",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Morocco": 4567
+   },
+   "oursTotal": 4567,
+   "oursLost": 2122,
+   "theirs": {
+    "Campagna": 12779,
+    "Siena": 647,
+    "Faenza": 3538
+   },
+   "theirsTotal": 16964,
+   "theirsLost": 6528,
+   "location": "Pitigliano",
+   "side": "crusaders attacking",
+   "commanders": {
+    "ours": "Khalīl of Morocco",
+    "theirs": "Khayr al-Dīn Khayyām, an Andalusī Muslim mercenary captain in the crusaders' pay"
+   }
+  },
+  "source": "save of 1 May 1432"
+ },
+ {
+  "id": "1432-04-02-battle-cape-sicie",
+  "date": "1432-04-02",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "Off Cape Sicié seven ships of Provence attack 19 of Tlemcen and lose six of them, for one",
+  "data": {
+   "result": "allied victory",
+   "naval": true,
+   "ours": {
+    "Tlemcen": 19
+   },
+   "oursTotal": 19,
+   "oursLost": 1,
+   "theirs": {
+    "Provence": 7
+   },
+   "theirsTotal": 7,
+   "theirsLost": 6,
+   "location": "Cape Sicié",
+   "side": "crusaders attacking",
+   "units": "ships",
+   "commanders": {
+    "ours": "Muḥammad Abū Yaḥyā of Tlemcen",
+    "theirs": "name_charles#16832503"
+   }
+  },
+  "source": "save of 1 May 1432"
+ },
+ {
+  "id": "1432-04-19-battle-gulf-castellammare",
+  "date": "1432-04-19",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "In the Gulf of Castellammare 39 Moroccan and 6 Catalan ships under ʿAbd al-ʿAzīz sink all four ships of an Aquileian squadron",
+  "data": {
+   "result": "allied victory",
+   "naval": true,
+   "ours": {
+    "Catalonia": 6,
+    "Morocco": 39
+   },
+   "oursTotal": 45,
+   "oursLost": 0,
+   "theirs": {
+    "Aquileia": 4
+   },
+   "theirsTotal": 4,
+   "theirsLost": 4,
+   "location": "Gulf of Castellammare",
+   "side": "allies attacking",
+   "units": "ships",
+   "commanders": {
+    "ours": "ʿAbd al-ʿAzīz of Morocco",
+    "theirs": "name_sancho#33573004"
+   }
+  },
+  "source": "save of 1 May 1432"
+ },
+ {
+  "id": "1432-04-30-battle-saint-malo-gulf",
+  "date": "1432-04-30",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "In the Gulf of Saint-Malo the Irish fleet of 33 catches the single ship of the Ṭāʾifa of Burghush and damages it",
+  "data": {
+   "result": "allied defeat",
+   "naval": true,
+   "ours": {
+    "Ṭāʾifa of Burghush": 1
+   },
+   "oursTotal": 1,
+   "oursLost": 0.2,
+   "theirs": {
+    "Ireland": 33
+   },
+   "theirsTotal": 33,
+   "theirsLost": 0,
+   "location": "Gulf of Saint-Malo",
+   "side": "crusaders attacking",
+   "units": "ships",
+   "commanders": {
+    "ours": "name_chrysanthos#16863515",
+    "theirs": "name_richard#76196"
+   }
+  },
+  "source": "save of 1 May 1432"
+ },
+ {
   "id": "1432-05-the-dar-al-sinaa",
   "date": "1432-05-01",
   "type": "reform",
   "people": [
    "muhammad-ibn-ismail-ibn-saad"
   ],
-  "places": [],
+  "places": [
+   "ishbiliyya",
+   "malaqa",
+   "al-mariyya",
+   "al-ushbuna",
+   "balansiyya",
+   "mursiyya"
+  ],
   "wars": [
    "crusade-of-835"
   ],
-  "title": "The Emperor orders a series of shipyards, the dār al-ṣināʿa of the old caliphs, to build a navy that can match the Genoese fleet",
+  "title": "The Emperor orders seven arsenals, the dār al-ṣināʿa of the old caliphs, at Ishbīliya, Mālaqa, al-Mariyya, al-Ushbūna, Balansiyya, Cartagena and Mursiyya, and seven war galleys laid down beside them, to build a navy that can match the Genoese fleet",
   "data": {
    "building": "Dar al-Sina'a, a naval building: 'a state naval arsenal producing war galleys and merchant vessels, the backbone of Andalusi maritime power' (the game's text)",
    "effects": "navy repair speed +1%, monthly sailors +10, local ship-building speed +15%, ship-building capacity +1, can build ships",
    "cost": "400 gold at market; 730 days to build; 3,000 workers; takes lumber, naval supplies, tools and masonry",
-   "when": "May 1432 (Shaʿbān–Ramaḍān 835)"
+   "when": "under construction in the save of 1 May 1432, none begun in that of 1 October 1431",
+   "arsenals": [
+    "Ishbīliya (Seville)",
+    "Mālaqa (Málaga)",
+    "al-Mariyya (Almería)",
+    "al-Ushbūna (Lisbon)",
+    "Balansiyya (Valencia)",
+    "Cartagena",
+    "Mursiyya (Murcia)"
+   ],
+   "galleys": "seven Andalusī war galleys (the game's n_nd_adu_war_galley), a year each to build, at Lisbon, Murcia, Faro, Orihuela, Málaga, Seville and Almería",
+   "spent": "some 1,760 gold paid for the seven arsenals by 1 May 1432; treasury 1,878 after it"
   },
-  "source": "Trent's account and screenshot, May 1432"
+  "source": "Trent's account and screenshot; save of 1 May 1432"
+ },
+ {
+  "id": "1432-05-01-the-green-cape",
+  "date": "1432-05-01",
+  "type": "territory_change",
+  "people": [
+   "abd-al-wahhab-barakat"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "The four towns of the Cape Verde islands, Santiago, Fogo, Santo Antão and São Nicolau, are made a land of their own: a colonial dominion of the Emperor ruled from Santiago by ʿAbd al-Wahhāb Barakat, an Andalusī of the faith",
+  "data": {
+   "towns": [
+    "Santiago",
+    "Fogo",
+    "Santo Antão",
+    "São Nicolau"
+   ],
+   "subjectType": "colonial nation",
+   "capital": "Santiago (Cape Verde)",
+   "culture": "Andalusī",
+   "religion": "Sunni",
+   "ruler": "ʿAbd al-Wahhāb Barakat, born 30 August 1402 (50/32/31)",
+   "since": "1432-05-01",
+   "realm": {
+    "towns": [
+     196,
+     192
+    ]
+   }
+  },
+  "source": "save of 1 May 1432"
  }
 ]

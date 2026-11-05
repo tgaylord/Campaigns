@@ -348,5 +348,12 @@
   "nameChronicle": "the Angevin Empire",
   "nameArabic": "إمبراطورية أنجو",
   "color": "#a83a4a"
+ },
+ {
+  "tag": "AAA52",
+  "name": "Cape Verde",
+  "nameChronicle": "the Islands of the Green Cape",
+  "nameArabic": "جزر الرأس الأخضر",
+  "color": "#3f9a8a"
  }
 ]

@@ -126,5 +126,202 @@
    "units": "ships"
   },
   "source": "autosave of 1 December 1431"
+ },
+ {
+  "id": "1431-12-05-battle-gulf-talamone",
+  "date": "1431-12-05",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "In the Gulf of Talamone fourteen ships of Tripoli fall on the papal squadron of six under Vukmir Janković and every one of them is sunk or taken, without the loss of a papal ship",
+  "data": {
+   "result": "allied defeat",
+   "naval": true,
+   "ours": {
+    "Tripoli": 14
+   },
+   "oursTotal": 14,
+   "oursLost": 14,
+   "theirs": {
+    "Papal States": 6
+   },
+   "theirsTotal": 6,
+   "theirsLost": 0,
+   "location": "Gulf of Talamone",
+   "side": "allies attacking",
+   "units": "ships",
+   "commanders": {
+    "ours": "Abū Tāshufīn of Tripoli",
+    "theirs": "Vukmir Janković (papal admiral)"
+   }
+  },
+  "source": "save of 1 May 1432"
+ },
+ {
+  "id": "1431-12-09-battle-jaca",
+  "date": "1431-12-09",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "Under the walls of Jaca, 516 men of Marsan attack 2,372 of Aragon and are destroyed to the last man, for 55 Aragonese",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Aragon": 2372
+   },
+   "oursTotal": 2372,
+   "oursLost": 55,
+   "theirs": {
+    "Marsan": 516
+   },
+   "theirsTotal": 516,
+   "theirsLost": 516,
+   "location": "Jaca",
+   "side": "crusaders attacking",
+   "commanders": {
+    "ours": "name_philip#33570086",
+    "theirs": "name_anthony#16830138"
+   }
+  },
+  "source": "save of 1 May 1432"
+ },
+ {
+  "id": "1431-12-10-battle-bracciano",
+  "date": "1431-12-10",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "In Lazio, 912 men of Arezzo attack 2,492 Tunisians at Bracciano and are destroyed, for 12 Tunisians",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Tunis": 2492
+   },
+   "oursTotal": 2492,
+   "oursLost": 12,
+   "theirs": {
+    "Arezzo": 912
+   },
+   "theirsTotal": 912,
+   "theirsLost": 912,
+   "location": "Bracciano",
+   "side": "crusaders attacking",
+   "commanders": {
+    "ours": "name_abu.name_john#86899"
+   }
+  },
+  "source": "save of 1 May 1432"
+ },
+ {
+  "id": "1431-12-17-battle-thiesi",
+  "date": "1431-12-17",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "In Sardinia, 1,027 men of Gallura attack 4,017 Arboreans at Thiesi and are destroyed, for 61 of Arborea",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Gallura": 1027
+   },
+   "oursTotal": 1027,
+   "oursLost": 1027,
+   "theirs": {
+    "Arborea": 4017
+   },
+   "theirsTotal": 4017,
+   "theirsLost": 61,
+   "location": "Thiesi",
+   "side": "allies attacking",
+   "commanders": {
+    "theirs": "name_benedict#16832034"
+   }
+  },
+  "source": "save of 1 May 1432"
+ },
+ {
+  "id": "1431-12-20-battle-coast-lazio",
+  "date": "1431-12-20",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "Off the coast of Lazio Vukmir Janković, with 6 papal and 15 Genoese ships, attacks 22 ships of Tunis and 2 of Gabès and sinks or takes 15 of them for the loss of one",
+  "data": {
+   "result": "allied defeat",
+   "naval": true,
+   "ours": {
+    "Gabès": 2,
+    "Tunis": 22
+   },
+   "oursTotal": 24,
+   "oursLost": 15,
+   "theirs": {
+    "Papal States": 6,
+    "Genoa": 15
+   },
+   "theirsTotal": 21,
+   "theirsLost": 1,
+   "location": "Coast of Lazio",
+   "side": "crusaders attacking",
+   "units": "ships",
+   "commanders": {
+    "ours": "Abū al-Faḍl of Tunis",
+    "theirs": "Vukmir Janković (papal admiral)"
+   }
+  },
+  "source": "save of 1 May 1432"
+ },
+ {
+  "id": "1431-12-31-battle-tivoli",
+  "date": "1431-12-31",
+  "type": "battle",
+  "people": [
+   "khayr-al-din-khayyam"
+  ],
+  "places": [],
+  "wars": [
+   "crusade-of-835"
+  ],
+  "title": "At Tivoli 14,623 men of Campagna and Siena under the Andalusī mercenary Khayr al-Dīn Khayyām attack 2,479 Tunisians and drive them off, killing or taking 1,586 for 1,193",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Tunis": 2479
+   },
+   "oursTotal": 2479,
+   "oursLost": 1586,
+   "theirs": {
+    "Campagna": 13976,
+    "Siena": 647
+   },
+   "theirsTotal": 14623,
+   "theirsLost": 1193,
+   "location": "Tivoli",
+   "side": "crusaders attacking",
+   "commanders": {
+    "ours": "name_abu.name_john#86899",
+    "theirs": "Khayr al-Dīn Khayyām, an Andalusī Muslim mercenary captain in the crusaders' pay"
+   }
+  },
+  "source": "save of 1 May 1432"
  }
 ]
