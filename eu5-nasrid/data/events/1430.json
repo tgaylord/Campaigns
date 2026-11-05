@@ -1,0 +1,173 @@
+[
+ {
+  "id": "1430-01-01-sao-nicolau",
+  "date": "1430-01-01",
+  "type": "territory_change",
+  "people": [],
+  "places": [],
+  "wars": [],
+  "title": "São Nicolau in the Cape Verde islands becomes a settlement of the crown: 1,700 Andalusī settlers",
+  "data": {
+   "province": "Cape Verde",
+   "population": 1687
+  },
+  "source": "save of 18 May 1430"
+ },
+ {
+  "id": "1430-05-18-the-princes-counsel",
+  "date": "1430-05-18",
+  "type": "player_note",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad",
+   "ismail-ibn-muhammad-ibn-ismail",
+   "ahmad-ibn-muhammad-ibn-ismail"
+  ],
+  "places": [],
+  "wars": [
+   "war-of-shant-yaqub"
+  ],
+  "title": "The first test of the new reign. The Emperor Muḥammad, wanting to finish his father's work and prove himself a worthy heir, orders the army north for a swift conquest of Castile. The princes Ismāʿīl and Aḥmad talk him round: Galicia would be the nobler and harder conquest, and Navarre after it, for the Basques are a far more redoubtable people than the Castilians. For now the Emperor is convinced",
+  "data": {
+   "account": "Trent's account, May 1430",
+   "context": "Castile is allied to the Angevin Empire and Navarre; Galicia has no allies (world file of 2 July 1429)"
+  },
+  "source": "Trent's account, May 1430"
+ },
+ {
+  "id": "1430-05-18-war-on-galicia",
+  "date": "1430-05-18",
+  "type": "war_declared",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad",
+   "diego-villamarin"
+  ],
+  "places": [],
+  "wars": [
+   "war-of-shant-yaqub"
+  ],
+  "title": "Al-Andalus declares war on Galicia, the greatest of the successor states of Castile: the fifth war of the Istirdād, the War of Shant Yāqub",
+  "data": {
+   "target": "Galicia, King Diego Villamarín (31 towns in July 1429)",
+   "series": 5,
+   "cb": "cb_reconquer_iberia",
+   "attackers": "al-Andalus and all seven ṭāʾifas; the Mamlūks, Morocco and Tunis called (potential)",
+   "defenders": "Galicia alone",
+   "forces": "al-Andalus 4,619 regulars and 50 ships; Galicia no men under arms, 2 ships"
+  },
+  "source": "Trent's account; save of 18 May 1430"
+ },
+ {
+  "id": "1430-05-18-take-the-capital",
+  "date": "1430-05-18",
+  "type": "player_note",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [
+   "war-of-shant-yaqub"
+  ],
+  "title": "The war plan is as plain as the Emperor's demand: take the capital. The armies march north on Santiago",
+  "data": {
+   "account": "There is now careful plan to the Emperor's demand. Take the capital. So the armies march north (Trent)"
+  },
+  "source": "Trent's account and screenshots, June 1430"
+ },
+ {
+  "id": "1430-06-30-battle-santiago",
+  "date": "1430-06-30",
+  "type": "battle",
+  "people": [
+   "abu-al-hasan-ali-ibn-ahmad",
+   "diego-villamarin"
+  ],
+  "places": [],
+  "wars": [
+   "war-of-shant-yaqub"
+  ],
+  "title": "Before Santiago de Compostela the Emperor's nephew Abū al-Ḥasan ʿAlī, seventeen, with 4,900 men, breaks 7,000 Galicians, killing or taking 3,800 for the loss of 230",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "al-Andalus": 4900
+   },
+   "oursTotal": 4900,
+   "oursLost": 227,
+   "theirs": {
+    "Galicia": 7018
+   },
+   "theirsTotal": 7018,
+   "theirsLost": 3788,
+   "location": "Santiago de Compostela",
+   "warScore": 25,
+   "composition": {
+    "ours": "2,000 infantry, 2,400 light horse, 500 heavy horse",
+    "theirs": "6,884 levy archers, 45 infantry, 89 horse"
+   },
+   "commanders": {
+    "al-Andalus": "Abū al-Ḥasan ʿAlī ibn Aḥmad, the Emperor's nephew (56/60/37)"
+   }
+  },
+  "source": "Trent's battle screen, 30 June 1430"
+ },
+ {
+  "id": "1430-06-30-the-emperor-worldly",
+  "date": "1430-06-30",
+  "type": "player_note",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "The Emperor Muḥammad is now counted worldly: the years he spent with the fleets, in harbours and among fishermen and travellers, have taught him how things get done. His eyes are still on the sea",
+  "data": {
+   "trait": "Worldly: practical experience gathered firsthand in workshops, harbours and counting-houses has taught our ruler how to get things done; military tactics +0.05 (the game's text)",
+   "account": "his grandfather put him in charge of the Empire's navies from a young age; that respect for fishermen, harbours and those who travel has not left him, as his eyes remain locked on the sea (Trent)"
+  },
+  "source": "Trent's account and screenshots, June 1430"
+ },
+ {
+  "id": "1430-06-30-ahmad-the-architect",
+  "date": "1430-06-30",
+  "type": "player_note",
+  "people": [
+   "ahmad-ibn-muhammad-ibn-ismail"
+  ],
+  "places": [
+   "ishbiliyya"
+  ],
+  "wars": [],
+  "title": "Prince Aḥmad of the dīwān is now counted an architect. He takes after his forebears, a builder imagining the greatest structures for the capital",
+  "data": {
+   "trait": "Architect: buildings construction efficiency +10%; from the smallest hut to the loftiest halls, no building is too insignificant to spark this individual's architectural curiosity (the game's text)",
+   "account": "Aḥmad takes after his forebearers. A builder, imagining the greatest structures for the capital (Trent)"
+  },
+  "source": "Trent's account and screenshots, June 1430"
+ },
+ {
+  "id": "1430-06-30-the-emperors-household",
+  "date": "1430-06-30",
+  "type": "player_note",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad",
+   "isabel-de-montsoriu",
+   "magdalena-de-borja",
+   "jadila-bint-saad-ibn-faraj",
+   "ismail-ibn-muhammad-ibn-ismail",
+   "ahmad-ibn-muhammad-ibn-ismail"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "One of the most purposeful things the late Emperors did was to surround Muḥammad with able counsel. His three wives, Magdalena, Isabel and Jadīla, were chosen for their blood but also for their minds, and with his two eldest sons they carry great weight at court while the Emperor's eyes wander to his own projects",
+  "data": {
+   "wives": {
+    "Magdalena de Borja": "55/57/43",
+    "Isabel de Montsoriu": "75/30/51",
+    "Jadīla bint Saʿd": "75/42/43, honest; in the dīwān"
+   },
+   "account": "Trent, June 1430"
+  },
+  "source": "Trent's account and screenshots, June 1430"
+ }
+]

@@ -805,5 +805,43 @@
    "to": "1424-08-08"
   },
   "score": []
+ },
+ {
+  "id": "war-of-shant-yaqub",
+  "name": "The War of Shant Yāqub",
+  "series": {
+   "name": "The Istirdād",
+   "nameArabic": "الاسترداد",
+   "number": 5
+  },
+  "start": "1430-05-18",
+  "end": null,
+  "goal": "The Reconquest of Iberia against Galicia (cb_reconquer_iberia), the greatest of the successor states of Castile",
+  "allies": [
+   "Kingdom of Portugal",
+   "Taifa of León",
+   "Aragon",
+   "Catalonia",
+   "Taifa of Burgos",
+   "Taifa of Pamplona",
+   "Taifa of Cuenca"
+  ],
+  "enemies": [
+   "Galicia"
+  ],
+  "involvement": "belligerent",
+  "note": "Muḥammad V wanted his father's work finished at once and ordered the army north against Castile. His sons, the princes Ismāʿīl and Aḥmad, talked him round: Galicia would be the nobler and harder conquest, and Navarre the next, since the Basques were a far more redoubtable people than the Castilians. On 18 May 1430 (24 Shaʿbān 833) war was declared on Galicia (Trent's account). All seven ṭāʾifas came in with the crown; the Mamlūks, Fās and Tūnis were called but had not yet answered. Galicia stood alone, with 31 towns, two ships and no army in the field, against al-Andalus's 4,600 regulars and fifty ships; Castile, allied to the Angevin Empire and Navarre, was not involved (save of 18 May 1430). The war is named for Shant Yāqub, Santiago de Compostela, Galicia's capital, which al-Manṣūr took in 997.",
+  "outcome": null,
+  "score": [
+   {
+    "date": "1430-05-18",
+    "value": 0
+   },
+   {
+    "date": "1430-06-30",
+    "value": 25
+   }
+  ],
+  "gameName": "Reconquest of Iberia"
  }
 ]
