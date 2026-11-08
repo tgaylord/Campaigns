@@ -29,3 +29,11 @@ This note covers three entries: the pilgrimage and the Shaykh al-Islām, the tur
 - *Pilgrimage entry:* the fever of the chest, the sea route and Jyral receiving the Emperor, the news of Temür reaching the pilgrims, the welcome at the river, the Ṣūfīs at ʿArafa, the ʿulamāʾ's expectations, and the brotherhoods' prayers.
 - *Sea entry:* the galleys' look, the Cáceres guild's river roads, the Emperor's patronage of masters, poets and young nobles, the pilots and merchants, the sermon at Mālaqa, and the sherbet.
 - *Hegemony entry:* the scholars' stocktaking, the books, gardens and masons abroad, the tax-collector, the Emperor's reading habits, and the life of the city in the New World paragraph (its pilots, funduqs, shares and scholars).
+
+**The admiral prince entry (save of 16 January 1438).** Yūsuf's birth, education, traits and three wives come from the save, and their fathers identify them. Amie is Mansa Tiramakhan's daughter. Fāṭima is the daughter of Yūsuf ibn Ismāʿīl of Banbalūna. Muʾmina is the daughter of Muṣliḥ al-Dīn, a Naṣrid courtier. The admiralty is Trent's account; the save doesn't list the role yet. Also from the save:
+- the land-versus-naval value crossed to +1.1;
+- protected harbours are under construction in five Catalan ports;
+- Burghush's regency ended on 11 June 1437;
+- Bernarda died on 6 November 1437.
+
+Invented colour: the Emperor's lessons at sea, his reason for the appointment, Amie's journey and dowry, and the court reading the marriages as a map.

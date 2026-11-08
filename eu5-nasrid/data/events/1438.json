@@ -1,0 +1,60 @@
+[
+ {
+  "id": "1438-01-16-the-admiral-prince",
+  "date": "1438-01-16",
+  "type": "appointment",
+  "people": [
+   "yusuf-ibn-ismail-ibn-muhammad",
+   "muhammad-ibn-ismail-ibn-saad",
+   "ismail-ibn-muhammad-ibn-ismail",
+   "amie-of-mali",
+   "fatima-bint-yusuf-ibn-ismail",
+   "mumina-bint-muslih-al-din"
+  ],
+  "places": [
+   "gharnata"
+  ],
+  "wars": [],
+  "title": "The Emperor makes his grandson Yūsuf, sixteen, eldest son of the heir Ismāʿīl and second in line, admiral of the fleet, as he himself had been made at twenty-five. Yūsuf has married three wives: Amie, daughter of Mansa Tiramakhan of Mālī; Fāṭima, daughter of the late lord of Banbalūna, to tie the ṭāʾifas to the crown; and Muʾmina, of the court",
+  "data": {
+   "yusuf": "born 6 January 1422 at Gharnāṭa, 66/59/52, shrewd as a child, an expensive in-depth education",
+   "wives": {
+    "Amie": "born 1418, daughter of Mansa Tiramakhan of Mālī, Mandinka by culture and a Sunni",
+    "Fāṭima": "born 1419, daughter of Yūsuf ibn Ismāʿīl, lord of Banbalūna (d. 1428)",
+    "Muʾmina": "born 1416, daughter of Muṣliḥ al-Dīn, a Naṣrid of the court"
+   },
+   "reason": "the admiralty had done the Emperor good in his own mind, and he imagined it would do his grandson the same (Trent)"
+  },
+  "source": "Trent's screenshot and account; save of 16 January 1438"
+ },
+ {
+  "id": "1438-01-16-the-realm-turns-to-the-sea",
+  "date": "1438-01-16",
+  "type": "reform",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [
+   "barshaluna"
+  ],
+  "wars": [],
+  "title": "For the first time the realm's temper leans to the sea rather than the land, and protected harbours are being built in the newly annexed Catalan ports: Barcelona, Girona, Tarragona, Tortosa and Perpignan",
+  "data": {
+   "landVsNaval": {
+    "1432-07-27": -26.4,
+    "1435-10-10": -10.2,
+    "1438-01-16": 1.1,
+    "note": "negative is land, positive is sea"
+   },
+   "harbours": [
+    "Barcelona",
+    "Girona",
+    "Tarragona",
+    "Tortosa",
+    "Perpignan (and a dock)"
+   ],
+   "realm": "221 towns and 3.25 million people after Catalonia's annexation; stability 24.2; treasury 1,653, debt 565"
+  },
+  "source": "saves of 10 October 1435 and 16 January 1438"
+ }
+]

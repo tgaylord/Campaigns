@@ -1700,7 +1700,8 @@
   "traits": [
    "gifted child"
   ],
-  "note": "Daughter of Dolça d'Oriola and Blai Manrique de Lara, Sunni, heir of the Ṭāʾifa of Mursiyya; a gifted child, Castilian by culture like her father. Murcia's court ties itself closely to the Catalans through its traders. Betrothed to the heir Ismāʿīl ibn Saʿd when Murcia was taken into the crown on 16 March 1375. She is being raised at the Castilian court for now, something to watch, though the betrothal holds (Trent's account; save of 16 March 1375, where she sits in Castile). Married to the crown prince Ismāʿīl by 1 October 1387 (save of that date). Mother of Yūsuf (1383–1384) and Muḥammad (born 25 October 1385)."
+  "note": "Daughter of Dolça d'Oriola and Blai Manrique de Lara, Sunni, heir of the Ṭāʾifa of Mursiyya; a gifted child, Castilian by culture like her father. Murcia's court ties itself closely to the Catalans through its traders. Betrothed to the heir Ismāʿīl ibn Saʿd when Murcia was taken into the crown on 16 March 1375. She is being raised at the Castilian court for now, something to watch, though the betrothal holds (Trent's account; save of 16 March 1375, where she sits in Castile). Married to the crown prince Ismāʿīl by 1 October 1387 (save of that date). Mother of Yūsuf (1383–1384) and Muḥammad (born 25 October 1385).",
+  "died": "1437-11-06"
  },
  {
   "id": "francesc-de-montsoriu",
@@ -2752,7 +2753,7 @@
   "born": "1421-06-11",
   "father": "abu-hammu-rahhu",
   "roles": [
-   "heir of the Ṭāʾifa of Burghush (from 1431)"
+   "ruler of the Ṭāʾifa of Burghush (from 1437)"
   ],
   "stats": {
    "adm": 69,
@@ -2762,6 +2763,77 @@
   "traits": [
    "child_prodigy"
   ],
-  "note": "Son of Abū Ḥammū of Burghush, nine when his father died on 21 January 1431. A child prodigy. The Emperor rules Burghush as his regent until he comes of age on 11 June 1437 (save of 10 October 1435)."
+  "note": "Son of Abū Ḥammū of Burghush, nine when his father died on 21 January 1431. A child prodigy. The Emperor rules Burghush as his regent until he comes of age on 11 June 1437 (save of 10 October 1435). He came of age and took his throne on 11 June 1437 (save of 16 January 1438)."
+ },
+ {
+  "id": "yusuf-ibn-ismail-ibn-muhammad",
+  "name": "Yūsuf ibn Ismāʿīl ibn Muḥammad",
+  "nameArabic": "يوسف بن إسماعيل بن محمد",
+  "nameGame": "Yūsuf Nasrid",
+  "gameId": 16866443,
+  "born": "1422-01-06",
+  "father": "ismail-ibn-muhammad-ibn-ismail",
+  "dynasty": "Naṣrid",
+  "roles": [
+   "second in line to the throne",
+   "admiral of the fleet (from 1438)"
+  ],
+  "stats": {
+   "adm": 66,
+   "dip": 59,
+   "mil": 52
+  },
+  "traits": [
+   "child_shrewd"
+  ],
+  "note": "Eldest son of the heir Ismāʿīl by Tella, born at Gharnāṭa on 6 January 1422, and second in line behind his father. Given an expensive, in-depth education, and shrewd as a child. By January 1438 he had married three wives: Amie, daughter of Mansa Tiramakhan of Mālī; Fāṭima, daughter of the late Yūsuf ibn Ismāʿīl of Banbalūna, to tie the ṭāʾifas to the crown; and Muʾmina, daughter of Muṣliḥ al-Dīn of the court. At sixteen his grandfather the Emperor made him admiral of the fleet, believing the post had made a man of him and would do the same for his grandson (Trent's screenshot and account; save of 16 January 1438)."
+ },
+ {
+  "id": "amie-of-mali",
+  "name": "Amie of Mālī",
+  "nameGame": "Amie",
+  "gameId": 88056,
+  "born": "1418-10-20",
+  "father": "tiramakhan-mali",
+  "female": true,
+  "roles": [
+   "wife of Prince Yūsuf"
+  ],
+  "stats": {
+   "adm": 40,
+   "dip": 70,
+   "mil": 44
+  },
+  "traits": [],
+  "note": "Daughter of Mansa Tiramakhan of Mālī, Mandinka by culture and a Sunni. Married to Yūsuf, the heir's eldest son, by January 1438 (save of 16 January 1438)."
+ },
+ {
+  "id": "fatima-bint-yusuf-ibn-ismail",
+  "name": "Fāṭima bint Yūsuf ibn Ismāʿīl",
+  "nameArabic": "فاطمة بنت يوسف بن إسماعيل",
+  "nameGame": "Fatima",
+  "gameId": 33581120,
+  "born": "1419-06-08",
+  "father": "yusuf-ibn-ismail",
+  "female": true,
+  "roles": [
+   "wife of Prince Yūsuf"
+  ],
+  "traits": [],
+  "note": "Daughter of Yūsuf ibn Ismāʿīl, lord of the Ṭāʾifa of Banbalūna (d. 1428). Married to Prince Yūsuf by January 1438 to tie the ṭāʾifas to the crown (Trent; save of 16 January 1438)."
+ },
+ {
+  "id": "mumina-bint-muslih-al-din",
+  "name": "Muʾmina bint Muṣliḥ al-Dīn",
+  "nameArabic": "مؤمنة بنت مصلح الدين",
+  "nameGame": "Mumina",
+  "gameId": 87402,
+  "born": "1416-11-06",
+  "female": true,
+  "roles": [
+   "wife of Prince Yūsuf"
+  ],
+  "traits": [],
+  "note": "Daughter of Muṣliḥ al-Dīn, a Naṣrid of the court. Married to Prince Yūsuf by January 1438 (Trent; save of 16 January 1438)."
  }
 ]

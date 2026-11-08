@@ -48,5 +48,37 @@
    "discovered": "no new world yet (Trent)"
   },
   "source": "Trent's screenshot and account, 1 March 1437"
+ },
+ {
+  "id": "1437-06-11-khalid-comes-of-age",
+  "date": "1437-06-11",
+  "type": "ruler_change",
+  "people": [
+   "khalid-ibn-abi-hammu",
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Khālid ibn Abī Ḥammū comes of age at sixteen and takes the Ṭāʾifa of Burghush into his own hands, ending the Emperor's regency",
+  "data": {
+   "regency": "21 January 1431 to 11 June 1437"
+  },
+  "source": "saves of 10 October 1435 and 16 January 1438"
+ },
+ {
+  "id": "1437-11-06-death-of-bernarda",
+  "date": "1437-11-06",
+  "type": "death",
+  "people": [
+   "bernarda-of-murcia",
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Bernarda of Murcia, widow of the Emperor Ismāʿīl and mother of the Emperor Muḥammad, dies of old age at seventy",
+  "data": {
+   "reason": "old age"
+  },
+  "source": "save of 16 January 1438"
  }
 ]
