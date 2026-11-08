@@ -15,7 +15,7 @@ export default function WarsIndex() {
       <ul className="war-banners">
         {sorted.map((w) => {
           const fights = events.filter((e) => ["battle", "siege"].includes(e.type) && e.wars.includes(w.id));
-          const won = fights.filter((f) => ["victory", "taken"].includes(String(f.data.result))).length;
+          const won = fights.filter((f) => fightOutcome(f.data.result) === "good").length;
           return (
             <li key={w.id}>
               <Link to={`/wars/${w.id}`} data-kind="war" data-id={w.id} className={w.involvement === "potential" ? "potential" : undefined}>
@@ -37,6 +37,14 @@ export default function WarsIndex() {
 export function againstLine(w: War) {
   if (w.involvement === "potential" && w.sides) return `${and(w.sides.attackers)} against ${and(w.sides.defenders)}. Granada stands outside it, and can be called in`;
   return `Against ${and(w.enemies)}${w.allies.length ? `, with ${and(w.allies)}` : ""}`;
+}
+
+/** A battle or siege as it went for our side: "victory", "allied victory", "taken" are good; "defeat", "lost" bad. */
+export function fightOutcome(result: unknown): "good" | "bad" | "even" {
+  const r = String(result ?? "").toLowerCase();
+  if (/defeat|lost|repulsed/.test(r)) return "bad";
+  if (/victory|taken|won/.test(r)) return "good";
+  return "even";
 }
 
 /** "A", "A and B", "A, B and C" */

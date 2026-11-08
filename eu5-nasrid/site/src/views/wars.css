@@ -53,3 +53,31 @@
   .war-banners .years { display: flex; gap: 0.75rem; align-items: baseline; }
   .war-banners .tide { margin: 0.9rem -1rem 0; }
 }
+
+/* the war page head: the outcome, the figures, the two sides */
+.war-head { margin-bottom: 1.25rem; }
+.war-stats { display: flex; flex-wrap: wrap; gap: 0.5rem 2rem; margin: 1rem 0 0; }
+.war-stats div { border-top: 2px solid rgba(212, 171, 85, 0.45); padding-top: 0.3rem; min-width: 6.5rem; }
+.war-stats dt { font-size: 0.75rem; color: var(--mist); }
+.war-stats dd { margin: 0; font-family: var(--serif); font-size: 1.45rem; color: var(--plaster); }
+.war-stats dd.up { color: var(--gilt-hi); }
+.war-stats dd.down { color: var(--cinnabar-hi); }
+.war-sides { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 0 !important; }
+.side { padding: 0.9rem 1.1rem; border-radius: 4px; border: 1px solid rgba(158, 167, 199, 0.25); background: rgba(20, 29, 64, 0.55); }
+.side.ours { border-top: 3px solid var(--gilt); }
+.side.theirs { border-top: 3px solid var(--cinnabar); }
+.side h2 { font-size: 1.15rem; margin-bottom: 0.5rem; }
+.side h2 .ui { font-size: 0.78rem; font-weight: 400; color: var(--mist); }
+.side .lead { font-size: 1.15rem; margin: 0 0 0.4rem; display: flex; align-items: center; gap: 0.45rem; }
+.side .lead .ui { font-size: 0.75rem; color: var(--dusk); }
+.side ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.3rem 0.4rem; }
+.side li { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.88rem; color: var(--mist); border: 1px solid rgba(158, 167, 199, 0.22); border-radius: 3px; padding: 0.05rem 0.45rem; }
+.side i { width: 0.65rem; height: 0.65rem; border-radius: 2px; flex: none; border: 1px solid rgba(158, 167, 199, 0.35); }
+.war-goal { font-size: 0.85rem; color: var(--mist); margin: 0.8rem 0 0; max-width: 60rem; }
+.war-goal span { color: var(--dusk); margin-right: 0.35rem; }
+.war-account p { max-width: 44rem; font-size: 1.05rem; line-height: 1.7; margin: 0; }
+.war-account .more { margin-top: 0.6rem; font-size: 0.85rem; color: var(--gilt-hi); background: none; border: 1px solid rgba(212, 171, 85, 0.45); border-radius: 3px; padding: 0.3rem 0.75rem; cursor: pointer; }
+.fight .kind .no { display: inline-grid; place-items: center; min-width: 1.35rem; height: 1.35rem; border-radius: 50%; background: var(--gilt); color: var(--ink); font-size: 0.72rem; margin-right: 0.45rem; }
+.fight.bad .kind .no { background: var(--parchment); box-shadow: inset 0 0 0 2px var(--cinnabar); }
+.war-banners .outcome { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+@media (max-width: 48rem) { .war-sides { grid-template-columns: 1fr; } }

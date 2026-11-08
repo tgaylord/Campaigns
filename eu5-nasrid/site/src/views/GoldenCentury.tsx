@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { scaleLinear } from "d3-scale";
 import { line, area, curveMonotoneX } from "d3-shape";
-import { events, snapshots, hijri, western, year, yearFrac, rulerAt, estateColor, ESTATE_ORDER } from "../lib/data";
+import { events, snapshots, hijri, western, year, yearFrac, rulerAt, estateColor, estateMood, ESTATE_ORDER, ESTATE_WORD } from "../lib/data";
 import type { Snapshot } from "../lib/data";
 import { PageHead, CheckpointSelect, StarRule } from "../components/bits";
 import { useRealmSeries, useCheckpointParam, nameOf, sum } from "../lib/realm";
@@ -28,7 +28,6 @@ const MOMENTS: [string, string][] = [
   ["1438-01-16-the-admiral-prince", "The admiral prince"],
   ["1442-06-01-privileges-for-the-burghers", "Shipwright contracts"],
 ];
-const ESTATE_WORD: Record<string, string> = { nobles: "umarāʾ", clergy: "ʿulamāʾ", burghers: "burghers", peasants: "commoners", dhimmi: "dhimmī", crown: "crown" };
 
 const fmt = (n: number, d = 1) => (Math.round(n * 10 ** d) / 10 ** d).toLocaleString("en-GB");
 const delta = (n: number, d = 1) => (Math.abs(n) < 0.05 ? "no change" : `${n > 0 ? "+" : "−"}${fmt(Math.abs(n), d)}`);
@@ -61,7 +60,7 @@ export default function GoldenCentury() {
   const ships = sum(now.fleet);
   const snapOf = (id: string) => snapshots.find((s) => s.id === id);
   const estatesNow = (snapOf(now.checkpoint) ?? snap).estates.filter((e) => e.satisfaction !== null && e.id !== "crown");
-  const content = estatesNow.filter((e) => (e.satisfaction ?? 0) > 50);
+  const content = estatesNow.filter((e) => estateMood(e.satisfaction).cls === "content");
   const least = [...estatesNow].sort((a, b) => (a.satisfaction ?? 0) - (b.satisfaction ?? 0))[0];
   const h = hijri(snap.date);
 
@@ -114,7 +113,7 @@ export default function GoldenCentury() {
 
       <p className="quiet small gc-foot">
         Every figure here is read from the saves, at the checkpoints marked on the slider, except where a line is dashed and called a projection.
-        Society's leanings run from −100 to +100; the game names the two ends. An estate counts as content above the even mark of 50. <Link to="/council">The Council</Link> has the estates and the
+        Society's leanings run from −100 to +100; the game names the two ends. An estate counts as content at 55 or more, as on the Council. <Link to="/council">The Council</Link> has the estates and the
         Jamāʿa in full; <Link to="/world">the World</Link> the footholds on the chart.
       </p>
     </div>

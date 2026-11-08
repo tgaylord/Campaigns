@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { countryByTag, compact, nf, year, western } from "../lib/data";
+import { countryAt, countryByTag, compact, nf, year, western } from "../lib/data";
 import type { World } from "../lib/world";
 import { powerName, gameName, personOf, subjectWord, ordinal, followed } from "../lib/world";
 import "./dispatch.css";
@@ -28,7 +28,7 @@ export default function Dispatch({ tag, w, prev, tags, tone = "night", heading =
   tone?: "night" | "parchment"; heading?: "h2" | "h3";
 }) {
   const p = w.powers[tag];
-  const c = countryByTag.get(tag);
+  const c = countryAt(tag, w.date);
   if (!p) return null;
   const H = heading;
   const pp = prev?.powers[tag];

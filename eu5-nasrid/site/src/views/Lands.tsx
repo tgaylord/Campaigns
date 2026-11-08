@@ -1,4 +1,5 @@
 import { Fragment, useEffect, useMemo, useState } from "react";
+import { useCheckpointParam } from "../lib/checkpoint";
 import { Link } from "react-router-dom";
 import { useCheckpoint, prefetchCheckpoints } from "../lib/checkpoint";
 import type { Checkpoint } from "../lib/checkpoint";
@@ -183,7 +184,7 @@ function WealthBar({ l, max }: { l: Land; max: number }) {
 export default function Lands() {
   // Every checkpoint carries its lands (from the extracted facts).
   const withLands = snapshots;
-  const [i, setI] = useState(withLands.length - 1);
+  const [i, setI] = useCheckpointParam();
   const [lens, setLens] = useState<Lens>("control");
   const snap = withLands[i];
   const cp = useCheckpoint(snap.id, { keep: true });

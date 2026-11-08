@@ -1,7 +1,8 @@
 import { useMemo, useState } from "react";
+import { useCheckpointParam } from "../lib/checkpoint";
 import { scaleLinear } from "d3-scale";
 import { area, stack, stackOrderNone, stackOffsetExpand, curveMonotoneX } from "d3-shape";
-import { snapshots, events, estateColor, ESTATE_ORDER, yearFrac, year, hijri, arabicDigits, western, EVENT_LABEL } from "../lib/data";
+import { snapshots, events, estateColor, ESTATE_ORDER, yearFrac, year, hijri, arabicDigits, western, EVENT_LABEL, estateMood, ESTATE_WORD } from "../lib/data";
 import { PageHead, CheckpointSelect, StarRule } from "../components/bits";
 import { Charters, Laws, Values, Assembly } from "./Charters";
 import "./council.css";
@@ -10,13 +11,9 @@ import "./council.css";
 const ARC_ORDER = ["nobles", "clergy", "crown", "burghers", "peasants", "tribes", "dhimmi", "cossacks"];
 const SEATS = 100;
 
-function mood(sat: number | null) {
-  if (sat == null) return { word: "The throne", cls: "throne" };
-  if (sat >= 55) return { word: "Content", cls: "content" };
-  if (sat >= 45) return { word: "Uneasy", cls: "uneasy" };
-  if (sat >= 35) return { word: "Restless", cls: "restless" };
-  return { word: "Mutinous", cls: "mutinous" };
-}
+const mood = estateMood;
+/** "+2.1" / "−3" / "" for no change */
+const dl = (d: number | null | undefined, digits = 0) => (d == null || Math.abs(d) < 0.05 ? "" : `${d > 0 ? "+" : "−"}${Math.abs(d).toFixed(digits)}`);
 
 /** Hemicycle seat positions, filled row by row from the left. */
 function hemicycle(n: number, r0: number, r1: number) {
@@ -36,7 +33,7 @@ function hemicycle(n: number, r0: number, r1: number) {
 }
 
 export default function Council() {
-  const [i, setI] = useState(snapshots.length - 1);
+  const [i, setI] = useCheckpointParam();
   const snap = snapshots[i];
   const seats = useMemo(() => hemicycle(SEATS, 150, 300), []);
 
@@ -59,14 +56,31 @@ export default function Council() {
   const estates = present.map((id) => snap.estates.find((e) => e.id === id)!).filter((e) => hasPower || e.id !== "crown");
   const crown = snap.estates.find((e) => e.id === "crown");
   const pct = (v: number | null) => (v == null ? "" : `${v}%`);
+  const prev = i > 0 ? snapshots[i - 1] : undefined;
+  const was = (id: string) => prev?.estates.find((e) => e.id === id);
+  // the hall's question, answered: who holds the power, and who is angry
+  const ranked = estates.filter((e) => e.id !== "crown" && e.power != null).sort((a, b) => (b.power ?? 0) - (a.power ?? 0));
+  const moods = estates.filter((e) => e.satisfaction != null);
+  const content = moods.filter((e) => mood(e.satisfaction).cls === "content");
+  const angriest = [...moods].sort((a, b) => (a.satisfaction ?? 0) - (b.satisfaction ?? 0))[0];
+  const lede = hasPower && crown?.power != null
+    ? `At ${western(snap.date)} the crown holds ${Math.round(crown.power)} of the hundred seats${ranked[0] ? `, and the ${ESTATE_WORD[ranked[0].id] ?? ranked[0].name} ${Math.round(ranked[0].power ?? 0)}, the most of any estate` : ""}. `
+      + (content.length === moods.length ? "Every estate is content." : content.length === 0 ? `No estate is content; the ${ESTATE_WORD[angriest.id] ?? angriest.name} least of all (${angriest.satisfaction}).` : `${content.length === 1 ? `Only the ${ESTATE_WORD[content[0].id] ?? content[0].name} are` : `${content.length} estates are`} content; the ${ESTATE_WORD[angriest.id] ?? angriest.name} least of all (${angriest.satisfaction}).`)
+    : "A hundred seats, divided as power is divided. The crown sits at the centre of the arc; the estates press in on either side.";
 
   return (
     <div className="page council-page">
       <PageHead
         title="The Council"
         ar="الديوان"
-        lede="A hundred seats, divided as power is divided. The crown sits at the centre of the arc; the estates press in on either side. Move through the checkpoints and watch them gain and lose ground."
+        lede={lede}
       />
+
+      <div className="council-date">
+        <span className="ar">{hijri(snap.date).arabic}</span>
+        <span className="ui">{western(snap.date)}</span>
+      </div>
+      <CheckpointSelect value={i} onChange={setI} />
 
       <div className="council-stage">
         <svg viewBox="-340 -330 680 380" className="hemi" role="img"
@@ -89,10 +103,11 @@ export default function Council() {
               <li key={e.id}>
                 <span className="swatch" style={{ background: estateColor(e.id, "night") }} />
                 <span className="name">{e.name}</span>
-                <span className="pow num">{e.estimated && e.power != null ? "≈ " : ""}{pct(e.power)}</span>
+                <span className="pow num">{e.estimated && e.power != null ? "≈ " : ""}{pct(e.power)}{prev && e.power != null && was(e.id)?.power != null && dl(e.power - was(e.id)!.power!, 1) && <em className="d">{dl(e.power - was(e.id)!.power!, 1)}</em>}</span>
                 <span className={`mood ${m.cls}`}>
                   {e.satisfaction != null && <span className="meter" aria-hidden="true"><i style={{ width: `${e.satisfaction}%` }} /></span>}
                   {m.word}{e.satisfaction != null ? `, ${e.satisfaction}` : ""}
+                  {prev && e.satisfaction != null && was(e.id)?.satisfaction != null && dl(e.satisfaction - was(e.id)!.satisfaction!) && <em className="d">{dl(e.satisfaction - was(e.id)!.satisfaction!)}</em>}
                 </span>
               </li>
             );
@@ -126,12 +141,6 @@ export default function Council() {
           works out as it runs. The shares come from the estates screen at a checkpoint.
         </p>
       )}
-
-      <div className="council-date">
-        <span className="ar">{hijri(snap.date).arabic}</span>
-        <span className="ui">{western(snap.date)}</span>
-      </div>
-      <CheckpointSelect value={i} onChange={setI} />
 
       <StarRule />
       <Charters snap={snap} />

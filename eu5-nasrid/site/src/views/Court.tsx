@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useCheckpointParam } from "../lib/checkpoint";
 import { Link } from "react-router-dom";
 import { snapshots, personById, hijri, western, year, sovereignTitle } from "../lib/data";
 import { PageHead, CheckpointSelect, EntityLink, StarRule } from "../components/bits";
@@ -14,7 +15,7 @@ const OFFICE: Record<string, string> = {
 };
 
 export default function Court() {
-  const [i, setI] = useState(snapshots.length - 1);
+  const [i, setI] = useCheckpointParam();
   const s = snapshots[i];
   // One source for the crown's share: the estates panel (read or estimated), as on the Council.
   const crownEstate = s.estates.find((e) => e.id === "crown");
@@ -27,14 +28,25 @@ export default function Court() {
   const joined = prev ? s.cabinet.filter((c) => !prev.cabinet.some((p) => p.person === c.person && p.role === c.role)) : [];
   const left = prev ? prev.cabinet.filter((p) => !s.cabinet.some((c) => c.person === p.person && c.role === p.role)) : [];
   const age = ruler?.born ? year(s.date) - year(ruler.born) : null;
+  const reignFrom = ruler?.reigns.find((r) => r.from <= s.date && (!r.to || r.to >= s.date))?.from;
+  const reignYears = reignFrom ? year(s.date) - year(reignFrom) : null;
+  const prevCrown = prev ? (prev.estates.find((e) => e.id === "crown")?.power ?? prev.crownPower ?? null) : null;
+  // the hall's question, answered: who rules, who follows, who sits with him
+  const lede = ruler
+    ? `${ruler.name.split(" ibn ")[0]}${age != null ? `, ${age},` : ""} has ${reignYears != null && reignYears >= 1 ? `reigned ${reignYears} year${reignYears === 1 ? "" : "s"}` : "just come to the throne"}`
+      + `${heir ? `, with ${heir.name.split(" ibn ")[0]} his heir` : ", with no heir named"}. `
+      + `${s.cabinet.length} sit in the dīwān${prev && (joined.length || left.length) ? ` (${[joined.length ? `${joined.length} new` : "", left.length ? `${left.length} gone` : ""].filter(Boolean).join(", ")} since ${western(prev.date)})` : ""}`
+      + `${crown != null ? `, and the crown holds ${Math.round(crown)}% of the realm's power${prevCrown != null && Math.abs(crown - prevCrown) >= 0.5 ? ` (${crown > prevCrown ? "up" : "down"} ${Math.abs(crown - prevCrown).toFixed(1)})` : ""}` : ""}.`
+    : "Who sits beside the sultan, who waits to succeed him, and which powers count as friends or enemies of the throne.";
 
   return (
     <div className="page court-page">
       <PageHead
         title="The Court"
         ar="البلاط"
-        lede="Who sits beside the sultan, who waits to succeed him, and which powers count as friends or enemies of the throne."
+        lede={lede}
       />
+      <CheckpointSelect value={i} onChange={setI} />
 
       <div className="court-stage">
         <section className="throne-room" aria-label="The sovereign">
@@ -98,7 +110,6 @@ export default function Court() {
         </section>
       </div>
 
-      <CheckpointSelect value={i} onChange={setI} />
 
       <StarRule />
       <div className="friends">

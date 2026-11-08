@@ -266,7 +266,8 @@
 .atlas .grain path { fill: none; stroke: #5a4630; stroke-opacity: 0.4; stroke-width: 0.7; stroke-dasharray: 3 2; vector-effect: non-scaling-stroke; pointer-events: none; }
 
 /* ---------------------------------------------------------- the Middle Sea */
-.atlas .voyage .to-sea[aria-pressed="true"] { background: rgba(212, 171, 85, 0.18); color: var(--plaster); }
+.atlas .voyage a.to-sea { font-size: 0.78rem; color: var(--mist); text-decoration: none; padding: 0.3rem 0.7rem; display: grid; line-height: 1.15; border-left: 1px solid rgba(212, 171, 85, 0.3); }
+.atlas .voyage a.to-sea:hover { background: rgba(212, 171, 85, 0.1); color: var(--plaster); }
 .atlas .sea-chart .sea-realm { fill-opacity: 0.55; cursor: pointer; transition: fill-opacity 0.15s; }
 .atlas .sea-chart .sea-realm.followed { fill-opacity: 0.42; }
 .atlas .sea-chart .sea-realm.ours { fill-opacity: 0.7; }

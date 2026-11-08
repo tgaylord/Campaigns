@@ -42,6 +42,7 @@ export default function ChronicleIndex() {
                 </span>
               </header>
               {era.summary && <p className="summary">{era.summary}</p>}
+              {entries.length > 1 && <p className="read-line"><Link to={`/chronicle/book/${era.id}`} className="read-book">Read the book straight through</Link></p>}
               <ol className="leaves">
                 {entries.map((e) => {
                   const i = chronicle.indexOf(e);

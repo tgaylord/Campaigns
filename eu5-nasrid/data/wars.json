@@ -372,7 +372,7 @@
   "gameName": "Reconquest of Iberia",
   "start": "1373-12-01",
   "end": "1375-03-15",
-  "goal": "The Reconquest of Iberia: Aragon's lands, at reduced cost (cb_reconquer_iberia, won with the Battle for the Strait)",
+  "goal": "The Reconquest of Iberia: Aragon's lands, at reduced cost (won with the Battle for the Strait)",
   "allies": [
    "Valencia",
    "Murcia",
@@ -418,7 +418,7 @@
   "gameName": "Reconquest of Iberia",
   "start": "1375-06-05",
   "end": "1378-04-06",
-  "goal": "The Reconquest of Iberia against Castile (cb_reconquer_iberia, the claim drawn up in March 1371); framed by the Emperor as the restoration of Aragon's lands, Saraqusṭa and the Aragonese heartland among them, to the renewed Kingdom of Aragon",
+  "goal": "The Reconquest of Iberia against Castile (the claim drawn up in March 1371); framed by the Emperor as the restoration of Aragon's lands, Saraqusṭa and the Aragonese heartland among them, to the renewed Kingdom of Aragon",
   "allies": [
    "Aragon",
    "Catalonia",
@@ -545,7 +545,7 @@
   "gameName": "Reconquest of Iberia",
   "start": "1394-03-04",
   "end": "1395-06-22",
-  "goal": "The Reconquest of Iberia against Castile (cb_reconquer_iberia, ready from 1 January 1394)",
+  "goal": "The Reconquest of Iberia against Castile (ready from 1 January 1394)",
   "allies": [
    "Aragon",
    "Catalonia",
@@ -623,7 +623,7 @@
   "gameName": "The 1st Crusade against Andalusia",
   "start": "1404-02-01",
   "end": "1404-10-22",
-  "goal": "A crusade proclaimed by the Pope against al-Andalus, declared on the Ṭāʾifa of Aragon (cb_crusade)",
+  "goal": "A crusade proclaimed by the Pope against al-Andalus, declared on the Ṭāʾifa of Aragon",
   "allies": [
    "Aragon",
    "Catalonia",
@@ -662,7 +662,7 @@
   "gameName": "1st Rebellion Against Andalusia; 1st Rebellion Against Salamanca",
   "start": "1405-01-01",
   "end": "1405-08-24",
-  "goal": "Three wars of independence against al-Andalus and the Ṭāʾifa of Shalamanka (cb_independence_war)",
+  "goal": "Three wars of independence against al-Andalus and the Ṭāʾifa of Shalamanka",
   "allies": [
    "Aragon",
    "Catalonia",
@@ -697,7 +697,7 @@
   },
   "start": "1410-06-29",
   "end": "1411-11-01",
-  "goal": "The Reconquest of Iberia against Castile (cb_reconquer_iberia), declared the day the truce of the Peace of Ramaḍān ran out",
+  "goal": "The Reconquest of Iberia against Castile, declared the day the truce of the Peace of Ramaḍān ran out",
   "allies": [
    "Aragon",
    "Catalonia",
@@ -745,7 +745,7 @@
   "gameName": "Independence war of Zamora against the Ṭāʾifa of Liyūn",
   "start": "1420-06-01",
   "end": "1420-08-11",
-  "goal": "A war of independence against the Ṭāʾifa of Liyūn (cb_independence_war)",
+  "goal": "A war of independence against the Ṭāʾifa of Liyūn",
   "allies": [
    "Taifa of León",
    "Aragon",
@@ -816,7 +816,7 @@
   },
   "start": "1430-05-18",
   "end": "1430-11-03",
-  "goal": "The Reconquest of Iberia against Galicia (cb_reconquer_iberia), the greatest of the successor states of Castile",
+  "goal": "The Reconquest of Iberia against Galicia, the greatest of the successor states of Castile",
   "allies": [
    "Kingdom of Portugal",
    "Taifa of León",
@@ -859,7 +859,7 @@
   },
   "start": "1430-08-17",
   "end": "1430-11-03",
-  "goal": "The Reconquest of Iberia against Navarre (cb_reconquer_iberia), and with it Castile, Navarre's ally",
+  "goal": "The Reconquest of Iberia against Navarre, and with it Castile, Navarre's ally",
   "allies": [
    "Kingdom of Portugal",
    "Taifa of León",
@@ -897,7 +897,7 @@
   "gameName": "The 2nd Crusade against Andalusia",
   "start": "1431-10-01",
   "end": "1432-07-27",
-  "goal": "A crusade proclaimed by the Pope against al-Andalus, declared on the Ṭāʾifa of Aragon (cb_crusade) and aimed at the province of Barbastro",
+  "goal": "A crusade proclaimed by the Pope against al-Andalus, declared on the Ṭāʾifa of Aragon and aimed at the province of Barbastro",
   "allies": [
    "Aragon",
    "Catalonia",

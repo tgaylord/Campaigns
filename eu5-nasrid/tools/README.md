@@ -6,7 +6,7 @@ Run by Claude in the workspace when a checkpoint save comes in. Inputs come from
 |---|---|
 | `extract_checkpoint.py` | Pulls the facts the campaign tracks out of a save already split by the shared decoder: the realm's locations and population by culture and religion, the court and the dynasty, laws, reforms and privileges, treaties, situations, the Battle for the Strait (influence, sovereignty, years as a subject), every war Granada is in or can be called into, and the owner of every location in the world. Unless `--no-computed` is given, also the treasury, income and expenses, manpower, estates (satisfaction, gold, tax rate), the cabinet and its actions, and every regiment and ship. Use `--no-computed` for a start-date save, whose computed values aren't settled yet. Writes `data/extracted/<date>.json`. |
 | `estate_power.py` | Estimates each estate's share of power from a decoded save, using `data/estate-power-model.json`; `--calibrate DATE` fits it to a screen reading. See 'Estate power' below. |
-| `build_map.py` | Traces every location in a frame of the game map from `locations.png` into SVG paths, plus the coastline and the outline of every province and area. With `--owners`, also writes the outline of every realm at each checkpoint (`data/map/realms-<date>.json`). With `--lite`, a wide, coarse chart instead: the coast and province outlines only, and realm outlines simplified by `--realm-eps` (the Middle Sea, `data/map/sea.json` and `data/map/sea/`). |
+| `build_map.py` | Traces every location in a frame of the game map from `locations.png` into SVG paths, plus the coastline and the outline of every province and area. With `--owners`, also writes the outline of every realm at each checkpoint (`data/map/realms-<date>.json`). With `--lite`, a wide, coarse chart instead: the coast and province outlines only, and realm outlines simplified by `--realm-eps` (the World chart, `data/map/world.json` and `data/map/world/`; `data/map/sea.json`, the old Middle Sea chart, still places the Kingdoms' capitals). |
 | `devastation.py` | Compares the people, prosperity and looting of every location in a game region between a save before a run of wars and a save at the peace (and optionally one after). Writes `data/devastation/<war-id>.json`, which the war's page draws as a map and tables. |
 | `realm_tags.py` | Keeps the realm one tag across its formations: Granada (GRA) became Al-Andalus (ADU) on 16 March 1375, and every tool reads the save's tags through it so the data stays on GRA. Add a line to `ALIAS` if the realm forms again. |
 | `world_powers.py` | The world beyond the realm at one checkpoint (`data/world/<checkpoint>.json`): the game's great-power ladder down to 30th; for every ranked power and every power `data/powers.json` follows, its towns and people (with subjects), income, treasury, men under arms and ships, ruler (with the start of his reign) and heir, overlord, subjects, allies and rivals; the personal unions, wars and the orders of Christendom touching the followed powers. Also keeps `data/world/tags.json`, the English name and map colour of every country that has owned land. Takes a second or two. |
@@ -26,11 +26,9 @@ python3 tools/extract_checkpoint.py /tmp/sections data/extracted/1340-10-30.json
 # 3. realm outlines for the map (the map itself only needs rebuilding if the game's map changes)
 python3 tools/build_map.py GAME/in_game/map_data data/map/strait-region.json --frame 7120,2290,8220,3130 \
   --owners data/extracted/*.json --realms-dir data/map
-# 4. the Atlas's lenses, the world beyond the realm, and the realms on the wide chart of the Middle Sea
+# 4. the Atlas's lenses and the world beyond the realm
 python3 tools/map_layers.py /tmp/sections 1340-10-30
 python3 tools/world_powers.py /tmp/sections 1340-10-30 --game GAME
-python3 tools/build_map.py GAME/in_game/map_data data/map/sea.json --frame 7080,1700,9480,3300 --eps 1.5 \
-  --realm-eps 3 --lite --owners data/extracted/1340-10-30.json --realms-dir data/map/sea
 # 5. the realm's reach and temper, its names, and the realms on the World chart (Atlantic islands to Persia)
 python3 tools/realm_extras.py /tmp/sections 1340-10-30
 python3 tools/realm_names.py GAME

@@ -143,3 +143,5 @@
   .privs li { grid-template-columns: 1fr; }
   .privs .pbar { margin-top: 0.25rem; }
 }
+.estates-list em.d { font-style: normal; font-size: 0.72rem; color: var(--dusk); margin-left: 0.35rem; }
+.council-page .page-head + .council-date { margin-top: -0.5rem; }

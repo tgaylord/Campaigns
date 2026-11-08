@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { useCheckpointParam } from "../lib/checkpoint";
 import type { PointerEvent as RPointerEvent } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { scaleLinear } from "d3-scale";
 import { line } from "d3-shape";
-import { snapshots, countryByTag, hijri, western, year, yearFrac, arabicDigits } from "../lib/data";
+import { snapshots, countryAt, countryByTag, hijri, western, year, yearFrac, arabicDigits } from "../lib/data";
 import { PageHead, CheckpointSelect, StarRule } from "../components/bits";
 import Dispatch from "../components/Dispatch";
 import { world, followed, useWorld, useTags, powerName, gameName, subjectWord, ordinal } from "../lib/world";
@@ -14,8 +15,7 @@ const OURS = "GRA";
 
 export default function Kingdoms() {
   const loc = useLocation();
-  const at = new URLSearchParams(loc.search).get("at");
-  const [i, setI] = useState(() => { const n = snapshots.findIndex((s) => s.id === at); return n >= 0 ? n : snapshots.length - 1; });
+  const [i, setI] = useCheckpointParam();
   const snap = snapshots[i];
   const w = useWorld(snap.id);
   const prev = useWorld(i > 0 ? snapshots[i - 1].id : undefined);
@@ -32,11 +32,26 @@ export default function Kingdoms() {
   }, [w, loc.hash]);
   const h = hijri(snap.date);
   const selected = w?.powers[sel] ? sel : OURS;
+  // the hall's question, answered: where does the realm stand among the powers?
+  const lede = (() => {
+    const me = w?.powers[OURS];
+    if (!w || !me) return "The world as the dīwān reckons it: where the realm stands among the powers, who rules them, and who is bound to whom.";
+    const name = powerName(OURS, w, tags);
+    if (!me.rank) return `${name.charAt(0).toUpperCase()}${name.slice(1)} stands outside the ladder of the powers at ${western(snap.date)}.`;
+    const above = w.ladder.find((r) => r[1] === me.rank! - 1);
+    const below = w.ladder.find((r) => r[1] === me.rank! + 1);
+    const was = prev?.powers[OURS]?.rank;
+    const move = was && was !== me.rank ? ` (${was > me.rank ? "up" : "down"} from ${ordinal(was)})` : "";
+    return `${name.charAt(0).toUpperCase()}${name.slice(1)} is the ${ordinal(me.rank)} power in the world${move}, with ${me.points ?? "?"} points`
+      + (above ? `, ${Math.round(above[2] - (me.points ?? 0))} behind ${powerName(above[0], w, tags)}` : ", first of all the powers")
+      + (below ? ` and ${Math.round((me.points ?? 0) - below[2])} ahead of ${powerName(below[0], w, tags)}` : "")
+      + `. ${w.powers[OURS].subjects.length} subjects, ${w.powers[OURS].allies.length} allies. Ranks and points are the game's own.`;
+  })();
 
   return (
     <div className="page kingdoms-page">
       <PageHead title="The Kingdoms" ar="الممالك"
-        lede="The world as the dīwān reckons it: where Gharnāṭa stands among the powers, who rules them, and who is bound to whom. Ranks and points are the game's own ladder of the world." />
+        lede={lede} />
 
       <div className="k-when ui">
         <span className="ar">{h.arabic}</span> <span className="muted">{h.text} AH, {western(snap.date)}</span>
@@ -53,11 +68,11 @@ export default function Kingdoms() {
               <li><i className="union" />One crown</li>
               <li><i className="over" />Overlord and subject</li>
             </ul>
-            <p className="k-note ui">Each power sits on its circle in the direction of its capital from Gharnāṭa, and grows with the towns it and its subjects hold. Click one to read its dispatch.</p>
+            <p className="k-note ui">Each power sits on its circle in the direction of its capital from ours, and grows with the towns it and its subjects hold. Click one to read its dispatch.</p>
           </div>
           <div className="k-side">
             <Dispatch tag={selected} w={w} prev={prev} tags={tags} tone="parchment" heading="h2" />
-            <p className="ui muted small"><a href={`${import.meta.env.BASE_URL}?view=sea`}>See them on the Middle Sea</a></p>
+            <p className="ui muted small"><Link to={`/world${snap.id !== snapshots[snapshots.length - 1].id ? `?at=${snap.id}` : ""}`}>See them on the World chart</Link></p>
           </div>
         </section>
 
@@ -187,7 +202,7 @@ function WorldCircle({ w, sel, onSel }: { w: World; sel: string; onSel: (t: stri
         })}
       </g>
       {nodes.map((n) => {
-        const c = countryByTag.get(n.tag);
+        const c = countryAt(n.tag, w.date);
         const out = n.r + 12;
         const lx = Math.sin(n.a) * (R[n.ring] + out), ly = -Math.cos(n.a) * (R[n.ring] + out);
         const anchor = Math.abs(Math.sin(n.a)) < 0.25 ? "middle" : Math.sin(n.a) > 0 ? "start" : "end";

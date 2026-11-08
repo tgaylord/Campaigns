@@ -21,3 +21,13 @@
 .servants .roles { font-size: 0.8rem; color: var(--dusk); }
 .roll-tree .branch.line { stroke: #7a5a1c; stroke-width: 4; stroke-opacity: 0.85; }
 .roll-tree .reigning .roundel { stroke: #c0442e; stroke-width: 4; }
+.roll-tree .branch-member .roundel { fill: #eadcbf; }
+.roll-tree .cadet { font-family: var(--serif); font-style: italic; font-size: 12px; fill: #c0442e; }
+.cadet-lede { max-width: 46rem; }
+.cadets { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); gap: 1rem 1.75rem; }
+.cadets li { border-top: 1px solid rgba(212, 171, 85, 0.25); padding-top: 0.55rem; }
+.cadet-head { font-size: 1.05rem; }
+.cadet-head .muted { font-size: 0.78rem; }
+.cadet-taifas { color: var(--gilt-hi); font-style: italic; font-size: 0.95rem; margin: 0.15rem 0; }
+.cadet-members { font-size: 0.82rem; color: var(--mist); line-height: 1.55; }
+.roll-tree .branch-member .name { font-size: 14px; }

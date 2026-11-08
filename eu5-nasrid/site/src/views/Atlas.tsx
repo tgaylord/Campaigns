@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { useCheckpointParam } from "../lib/checkpoint";
 import type { PointerEvent as RPointerEvent } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   snapshots, places, personById, events, countryByTag, countryName, isHeld, hijri, western,
   compact, nf, signed, EVENT_LABEL, subjectTags, sovereignTitle, faithName, cultureName,
@@ -9,7 +10,6 @@ import type { Place, CampaignEvent } from "../lib/data";
 import { useCheckpoint, prefetchCheckpoints } from "../lib/checkpoint";
 import { gameMap, keyLabel, MAP_W, MAP_H } from "../lib/map";
 import { CheckpointSelect } from "../components/bits";
-import SeaChart, { SeaFolio } from "./SeaChart";
 import "./atlas.css";
 
 /* ------------------------------------------------------------------ setup */
@@ -155,7 +155,7 @@ function battleKey(e: CampaignEvent): string | null {
 /* ------------------------------------------------------------------ the page */
 
 export default function Atlas() {
-  const [i, setI] = useState(snapshots.length - 1);
+  const [i, setI] = useCheckpointParam();
   const [lens, setLens] = useState<LensId>("realms");
   const [drawer, setDrawer] = useState(true);
   const [sel, setSel] = useState<{ prov: string; loc?: string } | null>(null);
@@ -163,8 +163,12 @@ export default function Atlas() {
   const [hover, setHover] = useState<{ prov: string; loc?: string; x: number; y: number } | null>(null);
   const [playing, setPlaying] = useState(false);
   /** the Middle Sea: the wide chart of the powers, drawn in its own frame */
-  const [sea, setSea] = useState(() => typeof window !== "undefined" && new URLSearchParams(window.location.search).get("view") === "sea");
-  const [seaSel, setSeaSel] = useState<string | null>(null);
+  // the Middle Sea has moved to the World hall; an old link to it opens the World at the same checkpoint
+  const sea = false;
+  const navTo = useNavigate();
+  useEffect(() => {
+    if (new URLSearchParams(window.location.search).get("view") === "sea") navTo(`/world${snap.id !== snapshots[snapshots.length - 1].id ? `?at=${snap.id}` : ""}`, { replace: true });
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
   const snap = snapshots[i];
   const prevSnap = i > 0 ? snapshots[i - 1] : undefined;
   const layer = useLayer(snap.id);
@@ -380,7 +384,6 @@ export default function Atlas() {
 
   return (
     <div className={`atlas lens-${lens} ${sel && !sea ? "has-sel" : ""} ${drawer ? "has-drawer" : ""} ${sea ? "at-sea" : ""}`} onMouseLeave={() => setHover(null)}>
-      {sea && <SeaChart snapId={snap.id} selected={seaSel} onSelect={(t) => { setSeaSel(t); if (t) setDrawer(true); }} />}
       <svg ref={svgRef} className="chart" style={sea ? { display: "none" } : undefined} viewBox={`${vx} ${vy} ${vw} ${vh}`} preserveAspectRatio="xMidYMid slice" role="img"
         aria-label={`The game map at ${western(snap.date)}, coloured by ${LENSES[lens].label.toLowerCase()}`}
         onPointerDown={onDown} onPointerMove={onMove} onPointerUp={onUp} onPointerCancel={onUp}
@@ -584,13 +587,13 @@ export default function Atlas() {
 
       <div className="voyage ui" role="group" aria-label="Where to look">
         {(Object.keys(VIEWS) as ViewId[]).map((v) => (
-          <button key={v} type="button" onClick={() => { setSel(null); if (sea) { setSea(false); setVb(VIEWS[v].box); } else flyTo(VIEWS[v].box, 700); }} title={VIEWS[v].label}>
+          <button key={v} type="button" onClick={() => { setSel(null); flyTo(VIEWS[v].box, 700); }} title={VIEWS[v].label}>
             <span className="ar">{VIEWS[v].ar}</span><span className="lt">{VIEWS[v].label}</span>
           </button>
         ))}
-        <button type="button" className="to-sea" aria-pressed={sea} onClick={() => { setSel(null); setHover(null); setSea(true); }} title="The Middle Sea: the powers from Lisbon to Alexandria">
-          <span className="ar">بحر الروم</span><span className="lt">The Middle Sea</span>
-        </button>
+        <Link className="to-sea" to={`/world${snap.id !== snapshots[snapshots.length - 1].id ? `?at=${snap.id}` : ""}`} title="The World: the realm's reach, from the Atlantic islands to the Persian gulf">
+          <span className="ar">الآفاق</span><span className="lt">The World</span>
+        </Link>
         {!sea && <span className="zoom">
           <button type="button" aria-label="Zoom in" onClick={() => { const r = svgRef.current!.getBoundingClientRect(); zoomAt(r.left + r.width / 2, r.top + r.height / 2, 0.6); }}>+</button>
           <button type="button" aria-label="Zoom out" onClick={() => { const r = svgRef.current!.getBoundingClientRect(); zoomAt(r.left + r.width / 2, r.top + r.height / 2, 1.6); }}>−</button>
@@ -612,9 +615,7 @@ export default function Atlas() {
       </button>
       {drawer && (
         <aside id="realm-drawer" className="drawer ui" aria-label={sea ? "The powers of the Middle Sea" : sel ? "The province" : "The state of the realm"}>
-          {sea ? (
-            <SeaFolio snapId={snap.id} selected={seaSel} onSelect={setSeaSel} />
-          ) : sel ? (
+          {sel ? (
             <ProvinceFolio prov={sel.prov} loc={sel.loc} snapId={snap.id} date={snap.date} since={since}
               layer={layer} prevLayer={prevLayer} owners={owners} subj={subj} realmFill={realmFill}
               onLoc={(lk) => setSel({ prov: sel.prov, loc: lk })} onClose={() => setSel(null)} />

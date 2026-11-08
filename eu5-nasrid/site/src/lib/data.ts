@@ -204,6 +204,18 @@ export function estateColor(id: string, surface: "night" | "folio" = "night"): s
   return slots[i >= 0 ? i : 7];
 }
 
+/** The chronicle's word for each estate, as it is written in running text. */
+export const ESTATE_WORD: Record<string, string> = { nobles: "umarāʾ", clergy: "ʿulamāʾ", burghers: "burghers", peasants: "commoners", dhimmi: "dhimmī", crown: "crown", tribes: "tribes", cossacks: "cossacks" };
+
+/** An estate's mood from its satisfaction, the same words in every hall. */
+export function estateMood(sat: number | null) {
+  if (sat == null) return { word: "The throne", cls: "throne" };
+  if (sat >= 55) return { word: "Content", cls: "content" };
+  if (sat >= 45) return { word: "Uneasy", cls: "uneasy" };
+  if (sat >= 35) return { word: "Restless", cls: "restless" };
+  return { word: "Mutinous", cls: "mutinous" };
+}
+
 export const EVENT_LABEL: Record<string, string> = {
   war_declared: "War declared", war_joined: "Joined a war", battle: "Battle", siege: "Siege", peace: "Peace",
   ruler_change: "Succession", birth: "Birth", death: "Death", marriage: "Marriage",

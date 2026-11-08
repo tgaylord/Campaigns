@@ -1,0 +1,17 @@
+.battle-map { margin: 0; }
+.battle-map svg { display: block; width: 100%; height: auto; aspect-ratio: 900 / 420; border: 1px solid rgba(212, 171, 85, 0.35); border-radius: 4px; }
+.battle-map .sea { fill: #101a3d; }
+.battle-map .land { fill: #e3d2ad; }
+.battle-map .realm { fill-opacity: 0.35; }
+.battle-map .realm.ours { fill-opacity: 0.6; }
+.battle-map .coast { fill: none; stroke: #3a2814; stroke-linejoin: round; }
+.battle-map .bm-mark circle { stroke-width: 2; }
+.battle-map .bm-mark.won circle { fill: #d4ab55; stroke: #3a2208; }
+.battle-map .bm-mark.lost circle { fill: #ecdfc0; stroke: #c0442e; stroke-width: 2.6; }
+.battle-map .bm-mark text { font-family: var(--sans); font-size: 10px; font-weight: 700; fill: #2b1d10; pointer-events: none; }
+.battle-map .bm-mark .leader { stroke: #3a2814; stroke-opacity: 0.6; }
+.battle-map figcaption { display: flex; flex-wrap: wrap; gap: 0.3rem 1rem; align-items: center; font-size: 0.78rem; color: var(--mist); margin-top: 0.45rem; }
+.battle-map figcaption i { display: inline-block; width: 0.8rem; height: 0.8rem; border-radius: 50%; vertical-align: -0.1rem; }
+.battle-map figcaption i.won { background: #d4ab55; border: 2px solid #3a2208; }
+.battle-map figcaption i.lost { background: #ecdfc0; border: 2px solid #c0442e; }
+.battle-map figcaption .muted { color: var(--dusk); }

@@ -570,18 +570,11 @@ for (const f of await listJson(LAYERS_IN)) {
   if (!snapshots.some((s) => `${s.id}.json` === f)) continue;
   await copyFile(path.join(LAYERS_IN, f), path.join(LAYERS_OUT, f)); nLayers++;
 }
-// The world at each checkpoint, and the wide chart of the Middle Sea (tools/build_map.py --lite), fetched when shown.
+// The world at each checkpoint, fetched when shown.
 const PUB = path.resolve(here, "../public");
 await mkdir(path.join(PUB, "world"), { recursive: true });
-await mkdir(path.join(PUB, "sea"), { recursive: true });
 for (const s of snapshots) await copyFile(path.join(CAMPAIGN, `data/world/${s.id}.json`), path.join(PUB, "world", `${s.id}.json`));
 await copyFile(path.join(CAMPAIGN, "data/world/tags.json"), path.join(PUB, "world", "tags.json"));
-await copyFile(path.join(CAMPAIGN, "data/map/sea.json"), path.join(PUB, "sea", "chart.json"));
-let nSea = 0;
-for (const s of snapshots) {
-  try { await copyFile(path.join(CAMPAIGN, `data/map/sea/realms-${s.id}.json`), path.join(PUB, "sea", `realms-${s.id}.json`)); nSea++; }
-  catch { console.warn(`note: no wide chart of the realms at ${s.id} (tools/build_map.py --lite --owners)`); }
-}
 // The World hall: its chart and realms (tools/build_map.py --lite on the World frame), the realm's reach at
 // each checkpoint, the names of the realm's keys, and the battles placed. Fetched when the World or the
 // Golden Century is opened.
@@ -617,5 +610,5 @@ await writeFile(path.join(PUB, "realm", "series.json"), JSON.stringify({ series:
 console.log(
   `campaign data: ${snapshots.length} checkpoints, ${events.length} events, ${story.length} story entries, ` +
   `${people.length} people, ${places.length} places, ${wars.length} wars${sampleData ? " (includes sample data)" : ""}; ` +
-  `map: ${inFrame.size} locations, ${Object.keys(provinces).length} provinces, owners at ${Object.keys(owners).length} checkpoint(s), lenses for ${nLayers}, the world at ${worldSeries.length}, the Middle Sea at ${nSea}, the World chart at ${nGlobe}; the realm's reach at ${realmSeries.length}, ${battles.length} battles placed`,
+  `map: ${inFrame.size} locations, ${Object.keys(provinces).length} provinces, owners at ${Object.keys(owners).length} checkpoint(s), lenses for ${nLayers}, the world at ${worldSeries.length}, the World chart at ${nGlobe}; the realm's reach at ${realmSeries.length}, ${battles.length} battles placed`,
 );

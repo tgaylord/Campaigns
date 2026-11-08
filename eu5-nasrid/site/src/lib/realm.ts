@@ -1,7 +1,5 @@
-import { useEffect, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
-import { snapshots } from "./data";
 import { useFetched } from "./world";
+export { useCheckpointParam } from "./checkpoint";
 
 /* The realm's reach and temper at each checkpoint (tools/realm_extras.py): societal values, laws,
    privileges, reforms, fleet and army by type, buildings abroad, expeditions. One small file for the
@@ -37,26 +35,3 @@ export const ABROAD_KIND: Record<string, { label: string; plural: string; rank: 
   overseas_trading_post: { label: "Overseas trading post", plural: "Overseas trading posts", rank: 2 },
 };
 
-/**
- * The checkpoint a hall shows, kept in the address as ?at=<id> so a view can be linked and
- * every hall that reads ?at= opens on the same year. Defaults to the latest checkpoint.
- */
-export function useCheckpointParam(): [number, (i: number) => void] {
-  const loc = useLocation();
-  const nav = useNavigate();
-  const read = () => {
-    const at = new URLSearchParams(loc.search).get("at");
-    const n = snapshots.findIndex((s) => s.id === at);
-    return n >= 0 ? n : snapshots.length - 1;
-  };
-  const [i, setI] = useState(read);
-  useEffect(() => { setI(read()); }, [loc.search]);
-  const set = (n: number) => {
-    setI(n);
-    const q = new URLSearchParams(loc.search);
-    if (n === snapshots.length - 1) q.delete("at"); else q.set("at", snapshots[n].id);
-    const qs = q.toString();
-    nav({ pathname: loc.pathname, search: qs ? `?${qs}` : "", hash: loc.hash }, { replace: true });
-  };
-  return [i, set];
-}

@@ -43,6 +43,7 @@ export default function ChronicleFolio() {
         <Link to="/chronicle">The Chronicle</Link>
         <span aria-hidden="true">/</span>
         <Link to={`/chronicle#era-${target.era}`}>Book {book}: {era?.title}</Link>
+        <Link to={`/chronicle/book/${target.era}#e-${target.id}`} className="read-book">Read the whole book from here</Link>
       </nav>
 
       <article className="folio leaf">

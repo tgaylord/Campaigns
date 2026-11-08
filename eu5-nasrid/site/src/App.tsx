@@ -6,6 +6,7 @@ import EntityCard from "./components/EntityCard";
 const Atlas = lazy(() => import("./views/Atlas"));
 const ChronicleIndex = lazy(() => import("./views/ChronicleIndex"));
 const ChronicleFolio = lazy(() => import("./views/ChronicleFolio"));
+const ChronicleBook = lazy(() => import("./views/ChronicleBook"));
 const Strait = lazy(() => import("./views/Strait"));
 const Council = lazy(() => import("./views/Council"));
 const Scroll = lazy(() => import("./views/Scroll"));
@@ -39,7 +40,10 @@ const NAV = [
 ];
 
 export default function App() {
-  const { pathname } = useLocation();
+  const { pathname, search } = useLocation();
+  // the checkpoint travels with you from hall to hall (?at=), so the halls agree on the year
+  // (not to the Atlas: the router writes the home page without its trailing slash, which a query can't follow)
+  const at = new URLSearchParams(search).get("at");
   useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
   const h = latest ? hijri(latest.date) : null;
 
@@ -54,7 +58,7 @@ export default function App() {
           <ul>
             {NAV.map((n) => (
               <li key={n.to}>
-                <NavLink to={n.to} end={n.end} className={({ isActive }) => (isActive ? "active" : "")}>
+                <NavLink to={at && n.to !== "/" ? `${n.to}?at=${at}` : n.to} end={n.end} className={({ isActive }) => (isActive ? "active" : "")}>
                   <span className="latin">{n.latin}</span>
                   <span className="ar" aria-hidden="true">{n.ar}</span>
                 </NavLink>
@@ -77,6 +81,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Atlas />} />
           <Route path="/chronicle" element={<ChronicleIndex />} />
+          <Route path="/chronicle/book/:era" element={<ChronicleBook />} />
           <Route path="/chronicle/:id" element={<ChronicleFolio />} />
           <Route path="/strait" element={<Strait />} />
           <Route path="/council" element={<Council />} />
