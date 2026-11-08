@@ -839,6 +839,21 @@
   "source": "save of 27 July 1432"
  },
  {
+  "id": "1432-07-17-birth-ahmad",
+  "date": "1432-07-17",
+  "type": "birth",
+  "people": [
+   "ismail-ibn-muhammad-ibn-ismail"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "A son, Aḥmad, is born to the heir Ismāʿīl",
+  "data": {
+   "name": "Aḥmad"
+  },
+  "source": "save of 10 October 1435"
+ },
+ {
   "id": "1432-07-27-peace-with-the-pope",
   "date": "1432-07-27",
   "type": "peace",
@@ -896,5 +911,38 @@
    "when": "after the peace of 27 July 1432; no save shows the order"
   },
   "source": "Trent's account"
+ },
+ {
+  "id": "1432-08-30-death-of-berenguer-ramon",
+  "date": "1432-08-30",
+  "type": "death",
+  "people": [
+   "berenguer-ramon-de-montsoriu",
+   "francesc-de-montsoriu"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Berenguer Ramon of Catalonia, two months after his victory off Cape Mondego, is lost at sea. His son Francesc succeeds him in the Ṭāʾifa of Catalonia",
+  "data": {
+   "reason": "died at sea (the game)",
+   "successor": "Francesc de Montsoriu (72/44/36), industrious and a lover of gardens; heir his son Berenguer Ramon, born 9 August 1430"
+  },
+  "source": "save of 10 October 1435"
+ },
+ {
+  "id": "1432-10-16-death-of-aktai",
+  "date": "1432-10-16",
+  "type": "death",
+  "people": [
+   "aktai-mamluk"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Aktai, Mamlūk sultan of Egypt since 1396 and the empire's ally, dies in camp. Jyral succeeds him",
+  "data": {
+   "reason": "died in camp (the game)",
+   "successor": "Jyral, born 30 December 1401 (39/36/66)"
+  },
+  "source": "save of 10 October 1435"
  }
 ]

@@ -1297,7 +1297,8 @@
    "adm": 37,
    "dip": 41,
    "mil": 59
-  }
+  },
+  "died": "1424-10-17"
  },
  {
   "id": "joan-of-aragon",
@@ -1545,7 +1546,8 @@
    "adm": 9,
    "dip": 5,
    "mil": 10
-  }
+  },
+  "died": "1435-06-01"
  },
  {
   "id": "yusuf-ibn-ismail",
@@ -1584,7 +1586,8 @@
   "mother": "aisha-bint-faraj",
   "roles": [],
   "traits": [],
-  "note": "Son of Ismāʿīl ibn Yūsuf and his cousin ʿĀʾisha bint Faraj, born 16 November 1372 (save of 16 January 1373)."
+  "note": "Son of Ismāʿīl ibn Yūsuf and his cousin ʿĀʾisha bint Faraj, born 16 November 1372 (save of 16 January 1373).",
+  "died": "1431-10-08"
  },
  {
   "id": "charlotte-of-crato",
@@ -1918,7 +1921,7 @@
    "extortioner",
    "worldly"
   ],
-  "note": "Eldest surviving son of the crown prince Ismāʿīl, by Bernarda of Mursiyya; born 25 October 1385, while his grandfather was on the road to Makka. By 1398 the game marks him a dull child, and the court thinks him stubborn and unfit to rule (Trent's account; save of 3 September 1398). At seventeen, in July 1403, he stood at 16/20/17, married and with two children; the childhood trait had lapsed with no adult trait in its place (save of 18 July 1403). On his father's accession, 2 March 1405, he became heir to the throne by primogeniture (save of 31 March 1405). Heir to his father from 2 March 1405. By August 1408, at twenty-two, he was married to two daughters of the Catalan ṭāʾifa houses, Magdalena de Borja of Aragon and Isabel de Montsoriu of Catalonia, and had five children: Ismāʿīl (born 4 October 1402) and Saʿd (6 June 1408) by Magdalena, Aḥmad (10 June 1403), ʿĀʾisha (10 March 1405) and a daughter (10 August 1407) by Isabel. Both his eldest sons were gifted, enough to set aside the thought of changing the succession (Trent's account; save of 5 August 1408). On 21 June 1411 he won his first sea battle, at the mouth of the Duero, with 34 ships of al-Andalus and Valencia against Portugal's 17, sinking or taking 15 for the loss of 3. He likes boats (Trent's battle screen and account). By 1416 he had married a third wife, his cousin Jadīla bint Saʿd of Qūnka, who bore him Yūsuf (10 July 1416) and Fāṭima (9 April 1418). By August 1420 the game marks him an extortioner (save of 11 August 1420). On 28 June 1429, at forty-three, he succeeded his father as the Emperor Muḥammad V, with abilities of 15/20/16; the game greeted the accession with 'We have been cursed! God have mercy on us all' (Trent's screenshot). By June 1430 the game also counts him worldly: his years with the fleets, among harbours, fishermen and travellers, had taught him how things get done, and his eyes stayed on the sea (Trent's account and screenshot). On 15 July 1430, when Santiago de Compostela fell, he ordered its cathedral, the shrine of the Apostle James, destroyed, and its Pórtico de la Gloria carried to Ishbīliya (Trent's account and screenshot)."
+  "note": "Eldest surviving son of the crown prince Ismāʿīl, by Bernarda of Mursiyya; born 25 October 1385, while his grandfather was on the road to Makka. By 1398 the game marks him a dull child, and the court thinks him stubborn and unfit to rule (Trent's account; save of 3 September 1398). At seventeen, in July 1403, he stood at 16/20/17, married and with two children; the childhood trait had lapsed with no adult trait in its place (save of 18 July 1403). On his father's accession, 2 March 1405, he became heir to the throne by primogeniture (save of 31 March 1405). Heir to his father from 2 March 1405. By August 1408, at twenty-two, he was married to two daughters of the Catalan ṭāʾifa houses, Magdalena de Borja of Aragon and Isabel de Montsoriu of Catalonia, and had five children: Ismāʿīl (born 4 October 1402) and Saʿd (6 June 1408) by Magdalena, Aḥmad (10 June 1403), ʿĀʾisha (10 March 1405) and a daughter (10 August 1407) by Isabel. Both his eldest sons were gifted, enough to set aside the thought of changing the succession (Trent's account; save of 5 August 1408). On 21 June 1411 he won his first sea battle, at the mouth of the Duero, with 34 ships of al-Andalus and Valencia against Portugal's 17, sinking or taking 15 for the loss of 3. He likes boats (Trent's battle screen and account). By 1416 he had married a third wife, his cousin Jadīla bint Saʿd of Qūnka, who bore him Yūsuf (10 July 1416) and Fāṭima (9 April 1418). By August 1420 the game marks him an extortioner (save of 11 August 1420). On 28 June 1429, at forty-three, he succeeded his father as the Emperor Muḥammad V, with abilities of 15/20/16; the game greeted the accession with 'We have been cursed! God have mercy on us all' (Trent's screenshot). By June 1430 the game also counts him worldly: his years with the fleets, among harbours, fishermen and travellers, had taught him how things get done, and his eyes stayed on the sea (Trent's account and screenshot). On 15 July 1430, when Santiago de Compostela fell, he ordered its cathedral, the shrine of the Apostle James, destroyed, and its Pórtico de la Gloria carried to Ishbīliya (Trent's account and screenshot). He laid down the admiralty he had held since 1411 on 19 March 1433, returned from the Hajj with the honour of a ḥājj on 23 November 1433, and from 27 September 1434 had a famous Ṣūfī as his Shaykh al-Islām. From 1431 he was also regent of the Ṭāʾifa of Burghush for the young Khālid (save of 10 October 1435)."
  },
  {
   "id": "saad-ibn-ismail-ibn-saad",
@@ -1980,7 +1983,8 @@
    "mil": 28
   },
   "traits": [],
-  "note": "Daughter of King Alfons of the renewed Aragon. Married to Prince Yūsuf ibn Saʿd (betrothed by October 1387, married by January 1394), who went to live at her father's court. Mother of Saʿd ibn Yūsuf (born 1394). Heir to her brother King Rodrigo in 1398, and with child by Yūsuf (save of 3 September 1398)."
+  "note": "Daughter of King Alfons of the renewed Aragon. Married to Prince Yūsuf ibn Saʿd (betrothed by October 1387, married by January 1394), who went to live at her father's court. Mother of Saʿd ibn Yūsuf (born 1394). Heir to her brother King Rodrigo in 1398, and with child by Yūsuf (save of 3 September 1398).",
+  "died": "1422-08-12"
  },
  {
   "id": "rodrigo-de-borja",
@@ -2262,7 +2266,8 @@
   "traits": [
    "malevolent"
   ],
-  "note": "Son of Khālid ibn Yaḥyā Raḥḥū. He succeeded his father as ruler of the Ṭāʾifa of Burghush on 2 September 1412 (save of 24 October 1414)."
+  "note": "Son of Khālid ibn Yaḥyā Raḥḥū. He succeeded his father as ruler of the Ṭāʾifa of Burghush on 2 September 1412 (save of 24 October 1414). He received the four Cantabrian towns at the Peace of Ṣafar and died on 21 January 1431. The game gives a suicide; the chronicle keeps the court's version, a sudden illness. The Emperor ruled Burghush as regent for his son Khālid (save of 10 October 1435).",
+  "died": "1431-01-21"
  },
  {
   "id": "temur",
@@ -2285,7 +2290,8 @@
    "cruel",
    "strategist"
   ],
-  "note": "Lord of Samarqand from 25 October 1360. Between 1394 and 1420 his realm grew from 234 towns to 707, the fourth power of the world: Herat, Iṣfahān and Tabrīz by 1407, Kāshghar and Farghāna in February 1414, Fārs, Kirmān and Hurmuz in 1415. In August 1420 he was eighty-four and still on the throne; his chosen heir was Köke, a conqueror and army reformer of forty-eight (world files of 1394–1420)."
+  "note": "Lord of Samarqand from 25 October 1360. Between 1394 and 1420 his realm grew from 234 towns to 707, the fourth power of the world: Herat, Iṣfahān and Tabrīz by 1407, Kāshghar and Farghāna in February 1414, Fārs, Kirmān and Hurmuz in 1415. In August 1420 he was eighty-four and still on the throne; his chosen heir was Köke, a conqueror and army reformer of forty-eight (world files of 1394–1420).",
+  "died": "1433-07-26"
  },
  {
   "id": "ahmad-ottoman",
@@ -2330,7 +2336,8 @@
    "inspiring_leader",
    "worldly"
   ],
-  "note": "Son of the sultan Būlād, whom he succeeded on 16 June 1396. Al-Andalus's one ally in the East since 1367. In 1420 he ruled 191 towns from Cairo and 103 more through vassals from the Ḥijāz to the Taurus, ninth in the world; Hungary, the Ottomans and the Tīmūrids are his rivals. His heir is his son Jyral, born 30 December 1401 (world file of 11 August 1420). His daughter Ayaulym married the Emperor's grandson Ismāʿīl by 1422. On 19 September 1423 he went to war with the Ottomans and called al-Andalus to arms; the peace of 8 August 1424 gave him 37 towns of central Anatolia (saves of 1423 and 1424)."
+  "note": "Son of the sultan Būlād, whom he succeeded on 16 June 1396. Al-Andalus's one ally in the East since 1367. In 1420 he ruled 191 towns from Cairo and 103 more through vassals from the Ḥijāz to the Taurus, ninth in the world; Hungary, the Ottomans and the Tīmūrids are his rivals. His heir is his son Jyral, born 30 December 1401 (world file of 11 August 1420). His daughter Ayaulym married the Emperor's grandson Ismāʿīl by 1422. On 19 September 1423 he went to war with the Ottomans and called al-Andalus to arms; the peace of 8 August 1424 gave him 37 towns of central Anatolia (saves of 1423 and 1424).",
+  "died": "1432-10-16"
  },
  {
   "id": "yahya-marinid",
@@ -2529,7 +2536,8 @@
    "kind_hearted",
    "loose_lips"
   ],
-  "note": "Son of Francesc de Montsoriu, ḥājib of Catalonia, and Fāṭima bint Yūsuf, daughter of Yūsuf I, so a first cousin of the Emperor Ismāʿīl; a Muslim. He rules the Ṭāʾifa of Catalonia from Barshalūna. In December 1428 the court made the integration of his ṭāʾifa into the crown a first concern, expected to be complete by the middle of 1437 (save of 1 December 1428; Trent's account)."
+  "note": "Son of Francesc de Montsoriu, ḥājib of Catalonia, and Fāṭima bint Yūsuf, daughter of Yūsuf I, so a first cousin of the Emperor Ismāʿīl; a Muslim. He rules the Ṭāʾifa of Catalonia from Barshalūna. In December 1428 the court made the integration of his ṭāʾifa into the crown a first concern, expected to be complete by the middle of 1437 (save of 1 December 1428; Trent's account).",
+  "died": "1432-08-30"
  },
  {
   "id": "abu-al-hasan-ali-ibn-ahmad",
@@ -2666,7 +2674,8 @@
   "traits": [
    "defensive_planner"
   ],
-  "note": "An Andalusī and a Muslim, captain of a mercenary company of Granadan jinetes and frontier horse, a general since 1426. In the Crusade of 835 he fought in the crusaders' pay, commanding the army of Campagna and Siena: he beat the Tunisians at Tivoli on 31 December 1431, and on 26 March 1432 he led 16,964 men against 4,567 Moroccans at Pitigliano and was broken (save of 1 May 1432)."
+  "note": "An Andalusī and a Muslim, captain of a mercenary company of Granadan jinetes and frontier horse, a general since 1426. In the Crusade of 835 he fought in the crusaders' pay, commanding the army of Campagna and Siena: he beat the Tunisians at Tivoli on 31 December 1431, and on 26 March 1432 he led 16,964 men against 4,567 Moroccans at Pitigliano and was broken (save of 1 May 1432).",
+  "died": "1434-03-31"
  },
  {
   "id": "vukmir-jankovic",
@@ -2682,7 +2691,8 @@
    "mil": 81
   },
   "traits": [],
-  "note": "Admiral of the Papal States in the Crusade of 835, a Slav in the Pope's service. With six ships he destroyed fourteen Tripolitan ships in the Gulf of Talamone on 5 December 1431, and with fifteen Genoese ships beside his own he sank or took fifteen of twenty-four Tunisian ships off Lazio on 20 December. On 14 March 1432 he attacked 45 Moroccan and Catalan ships in the Corsica Channel with his last five and lost them all (save of 1 May 1432)."
+  "note": "Admiral of the Papal States in the Crusade of 835, a Slav in the Pope's service. With six ships he destroyed fourteen Tripolitan ships in the Gulf of Talamone on 5 December 1431, and with fifteen Genoese ships beside his own he sank or took fifteen of twenty-four Tunisian ships off Lazio on 20 December. On 14 March 1432 he attacked 45 Moroccan and Catalan ships in the Corsica Channel with his last five and lost them all (save of 1 May 1432).",
+  "died": "1435-04-09"
  },
  {
   "id": "abd-al-wahhab-barakat",
@@ -2732,5 +2742,26 @@
   },
   "traits": [],
   "note": "A Portuguese of al-Ushbūna and a Sunni, twenty-six in May 1436, the crown's explorer, then out on the Eastern Atlantic high sea. One of the two great Andalusī explorers pushing the empire's expeditions forward (Trent's screenshot and account, 1 May 1436)."
+ },
+ {
+  "id": "khalid-ibn-abi-hammu",
+  "name": "Khālid ibn Abī Ḥammū",
+  "nameArabic": "خالد بن أبي حمو",
+  "nameGame": "Khalid",
+  "gameId": 16821913,
+  "born": "1421-06-11",
+  "father": "abu-hammu-rahhu",
+  "roles": [
+   "heir of the Ṭāʾifa of Burghush (from 1431)"
+  ],
+  "stats": {
+   "adm": 69,
+   "dip": 75,
+   "mil": 55
+  },
+  "traits": [
+   "child_prodigy"
+  ],
+  "note": "Son of Abū Ḥammū of Burghush, nine when his father died on 21 January 1431. A child prodigy. The Emperor rules Burghush as his regent until he comes of age on 11 June 1437 (save of 10 October 1435)."
  }
 ]

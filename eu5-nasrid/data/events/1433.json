@@ -1,0 +1,108 @@
+[
+ {
+  "id": "1433-03-12-birth-abu-al-hasan-ali",
+  "date": "1433-03-12",
+  "type": "birth",
+  "people": [
+   "ahmad-ibn-muhammad-ibn-ismail"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "A son, Abū al-Ḥasan ʿAlī, is born to Prince Aḥmad",
+  "data": {
+   "name": "Abū al-Ḥasan ʿAlī"
+  },
+  "source": "save of 10 October 1435"
+ },
+ {
+  "id": "1433-03-19-the-emperor-leaves-the-admiralty",
+  "date": "1433-03-19",
+  "type": "appointment",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "The Emperor Muḥammad lays down the admiral's command he had held since 5 June 1411",
+  "data": {
+   "held": "admiral, 5 June 1411 to 19 March 1433 (8,636 days)"
+  },
+  "source": "save of 10 October 1435"
+ },
+ {
+  "id": "1433-04-24-birth-muhammad",
+  "date": "1433-04-24",
+  "type": "birth",
+  "people": [
+   "umm-al-fath-bint-muhammad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "A son, Muḥammad, is born to Umm al-Fatḥ, the Emperor's daughter",
+  "data": {
+   "name": "Muḥammad"
+  },
+  "source": "save of 10 October 1435"
+ },
+ {
+  "id": "1433-07-26-death-of-temur",
+  "date": "1433-07-26",
+  "type": "death",
+  "people": [
+   "temur"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Temür, Emperor of the Tīmūrids since 1360, dies on the march, aged ninety-seven. His empire of 746 towns is left without a ruler of age in the save of 1435",
+  "data": {
+   "reason": "died on the march (the game)",
+   "hijri": "8 Dhū al-Ḥijja 836, the day the pilgrims go out to Minā"
+  },
+  "source": "save of 10 October 1435"
+ },
+ {
+  "id": "1433-08-14-birth-yusuf",
+  "date": "1433-08-14",
+  "type": "birth",
+  "people": [
+   "ahmad-ibn-muhammad-ibn-ismail"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "A son, Yūsuf, is born to Prince Aḥmad",
+  "data": {
+   "name": "Yūsuf"
+  },
+  "source": "save of 10 October 1435"
+ },
+ {
+  "id": "1433-09-16-birth-umm-al-fath",
+  "date": "1433-09-16",
+  "type": "birth",
+  "people": [
+   "ismail-ibn-muhammad-ibn-ismail"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "A daughter, Umm al-Fatḥ, is born to the heir Ismāʿīl",
+  "data": {
+   "name": "Umm al-Fatḥ"
+  },
+  "source": "save of 10 October 1435"
+ },
+ {
+  "id": "1433-11-23-the-emperors-hajj",
+  "date": "1433-11-23",
+  "type": "player_note",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "The Emperor Muḥammad returns from the Hajj with the honour of a ḥājj, the pilgrimage of Dhū al-Ḥijja 836",
+  "data": {
+   "modifier": "hajji_pilgrim from 23 November 1433 (9 Rabīʿ al-Thānī 837)"
+  },
+  "source": "save of 10 October 1435"
+ }
+]

@@ -1,0 +1,65 @@
+[
+ {
+  "id": "1435-04-09-death-of-vukmir",
+  "date": "1435-04-09",
+  "type": "death",
+  "people": [
+   "vukmir-jankovic"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Vukmir Janković, the Pope's admiral in the crusade, dies at sea",
+  "data": {
+   "reason": "died at sea (the game)"
+  },
+  "source": "save of 10 October 1435"
+ },
+ {
+  "id": "1435-06-01-death-of-prince-yusuf",
+  "date": "1435-06-01",
+  "type": "death",
+  "people": [
+   "yusuf-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Prince Yūsuf ibn Saʿd, son of the first Emperor and great-uncle of the princes, dies of old age at sixty-three, after thirty years in the dīwān",
+  "data": {
+   "reason": "old age",
+   "born": "1371-10-15"
+  },
+  "source": "save of 10 October 1435"
+ },
+ {
+  "id": "1435-10-10-the-turn-to-the-sea",
+  "date": "1435-10-10",
+  "type": "reform",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [
+   "ishbiliyya",
+   "malaqa",
+   "al-mariyya",
+   "al-ushbuna",
+   "balansiyya",
+   "mursiyya"
+  ],
+  "wars": [],
+  "title": "The Emperor's turn to the sea: all seven arsenals are finished, eight Andalusī war galleys have joined the fifty caravels of the fleet, and the realm's temper has swung far from the land toward the sea",
+  "data": {
+   "landVsNaval": {
+    "1432-07-27": -26.4,
+    "1435-10-10": -10.2,
+    "note": "negative is land, positive is sea"
+   },
+   "arsenals": "7 of the mod's Dar al-Sina'a, all complete (Seville, Málaga, Almería, Lisbon, Valencia, Cartagena, Murcia)",
+   "fleet": "50 Iberian caravels and 8 Andalusī war galleys (58 ships), against 50 caravels in July 1432",
+   "guilds": "a new naval supplies guild at Cáceres, beside those of Málaga, Almería, Lisbon, Murcia and Valencia",
+   "exploration": "a sea exploration being fitted out at Seville",
+   "newTown": "Hipalan (Ipalán, La Gomera) in the Canaries, settled between July 1432 and October 1435",
+   "economy": "income 395.9 against expenses 305.0 a month; treasury 1,282, debt 565; stability 17.6"
+  },
+  "source": "Trent's account; saves of 27 July 1432 and 10 October 1435"
+ }
+]

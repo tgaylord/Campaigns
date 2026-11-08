@@ -49,5 +49,20 @@
    }
   },
   "source": "save of 14 August 1424"
+ },
+ {
+  "id": "1424-10-17-death-of-fernando-of-castile",
+  "date": "1424-10-17",
+  "type": "death",
+  "people": [
+   "fernando-of-castile"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Fernando, the last king of Portugal before the Peace of Rajab, is killed in a hunting accident",
+  "data": {
+   "reason": "hunting accident (the game)"
+  },
+  "source": "save of 10 October 1435"
  }
 ]

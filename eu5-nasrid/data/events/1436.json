@@ -17,5 +17,22 @@
    "raimundo": "Portuguese, Sunni, 26, 34/39/63, explorer, at sea in the Eastern Atlantic High Sea"
   },
   "source": "Trent's screenshots and account, 1 May 1436"
+ },
+ {
+  "id": "1436-06-01-catalonia-annexed",
+  "date": "1436-06-01",
+  "type": "territory_change",
+  "people": [
+   "francesc-de-montsoriu"
+  ],
+  "places": [
+   "barshaluna"
+  ],
+  "wars": [],
+  "title": "The Ṭāʾifa of Catalonia is annexed into the crown, a year before the court expected",
+  "data": {
+   "expected": "the middle of 1437 (Trent, December 1428)"
+  },
+  "source": "Trent's account"
  }
 ]

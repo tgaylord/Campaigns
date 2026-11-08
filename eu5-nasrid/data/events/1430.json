@@ -14,6 +14,36 @@
   "source": "save of 18 May 1430"
  },
  {
+  "id": "1430-01-06-birth-sun",
+  "date": "1430-01-06",
+  "type": "birth",
+  "people": [
+   "ismail-ibn-muhammad-ibn-ismail"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "A daughter, Sun, is born to the heir Ismāʿīl",
+  "data": {
+   "name": "Sun"
+  },
+  "source": "save of 10 October 1435"
+ },
+ {
+  "id": "1430-03-01-birth-aisha",
+  "date": "1430-03-01",
+  "type": "birth",
+  "people": [
+   "ahmad-ibn-muhammad-ibn-ismail"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "A daughter, ʿĀʾisha, is born to Prince Aḥmad",
+  "data": {
+   "name": "ʿĀʾisha"
+  },
+  "source": "save of 10 October 1435"
+ },
+ {
   "id": "1430-05-18-the-princes-counsel",
   "date": "1430-05-18",
   "type": "player_note",
@@ -72,6 +102,21 @@
    "account": "There is now careful plan to the Emperor's demand. Take the capital. So the armies march north (Trent)"
   },
   "source": "Trent's account and screenshots, June 1430"
+ },
+ {
+  "id": "1430-05-25-birth-fatima",
+  "date": "1430-05-25",
+  "type": "birth",
+  "people": [
+   "umm-al-fath-bint-muhammad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "A daughter, Fāṭima, is born to Umm al-Fatḥ, the Emperor's daughter",
+  "data": {
+   "name": "Fāṭima"
+  },
+  "source": "save of 10 October 1435"
  },
  {
   "id": "1430-06-30-battle-santiago",

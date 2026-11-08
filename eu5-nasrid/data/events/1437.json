@@ -1,0 +1,52 @@
+[
+ {
+  "id": "1437-01-01-the-age-of-discovery",
+  "date": "1437-01-01",
+  "type": "situation",
+  "people": [],
+  "places": [],
+  "wars": [],
+  "title": "The Age of Discovery opens",
+  "data": {
+   "age": "Age of Discovery, after the Age of Renaissance"
+  },
+  "source": "Trent's account"
+ },
+ {
+  "id": "1437-01-01-cultural-hegemon",
+  "date": "1437-01-01",
+  "type": "player_note",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [
+   "ishbiliyya"
+  ],
+  "wars": [],
+  "title": "Al-Andalus claims the title of Cultural Hegemon as the renewed Andalusī golden age continues",
+  "data": {
+   "title": "Cultural Hegemon"
+  },
+  "source": "Trent's account"
+ },
+ {
+  "id": "1437-03-01-the-new-world-institution",
+  "date": "1437-03-01",
+  "type": "situation",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [
+   "ishbiliyya"
+  ],
+  "wars": [],
+  "title": "The New World institution appears in the world, and its origin is Ishbīliya. No new world has been found yet, but the culture of exploration and expeditions, backed by the crown, has taken root in the capital",
+  "data": {
+   "institution": "New World",
+   "origin": "Šbilya (Ishbīliya)",
+   "state": "treasury 1,750, 3.246 million people, stability 21; Ishbīliya, Barcelona and Lisbon each the first market of their region",
+   "discovered": "no new world yet (Trent)"
+  },
+  "source": "Trent's screenshot and account, 1 March 1437"
+ }
+]

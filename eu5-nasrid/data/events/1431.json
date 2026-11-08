@@ -1,5 +1,24 @@
 [
  {
+  "id": "1431-01-21-death-of-abu-hammu",
+  "date": "1431-01-21",
+  "type": "death",
+  "people": [
+   "abu-hammu-rahhu",
+   "khalid-ibn-abi-hammu",
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Abū Ḥammū, lord of the Ṭāʾifa of Burghush, dies two months after receiving Cantabria. His heir Khālid is nine, and the Emperor rules Burghush as his regent until June 1437",
+  "data": {
+   "reason": "suicide (the game); the court's version is a sudden illness",
+   "regency": "overlord regency by the Emperor Muḥammad, 21 January 1431 to 11 June 1437",
+   "heir": "Khālid ibn Abī Ḥammū, born 11 June 1421, a child prodigy (69/75/55)"
+  },
+  "source": "save of 10 October 1435"
+ },
+ {
   "id": "1431-06-24-the-warmongers-name",
   "date": "1431-06-24",
   "type": "player_note",
@@ -72,6 +91,21 @@
    "genoa": "11 towns, 3,000 men, 24 ships; its doge Raimondo (28/81/46) favours the Ghibellines"
   },
   "source": "Trent's account; autosave of 1 December 1431"
+ },
+ {
+  "id": "1431-10-08-death-of-muhammad-ibn-ismail-ibn-yusuf",
+  "date": "1431-10-08",
+  "type": "death",
+  "people": [
+   "muhammad-ibn-ismail-ibn-yusuf"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Muḥammad ibn Ismāʿīl ibn Yūsuf, a prince of the house, is killed in a hunting accident",
+  "data": {
+   "reason": "hunting accident (the game)"
+  },
+  "source": "save of 10 October 1435"
  },
  {
   "id": "1431-11-20-battle-oristano",

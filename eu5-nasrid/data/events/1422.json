@@ -15,6 +15,21 @@
   "source": "save of 5 November 1423"
  },
  {
+  "id": "1422-08-12-death-of-caterina-de-borja",
+  "date": "1422-08-12",
+  "type": "death",
+  "people": [
+   "caterina-de-borja"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Caterina de Borja, heir of the Ṭāʾifa of Aragon, is killed in a hunting accident",
+  "data": {
+   "reason": "hunting accident (the game)"
+  },
+  "source": "save of 10 October 1435"
+ },
+ {
   "id": "1422-09-01-santo-antao",
   "date": "1422-09-01",
   "type": "territory_change",
