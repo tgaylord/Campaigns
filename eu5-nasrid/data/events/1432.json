@@ -850,16 +850,17 @@
   "wars": [
    "crusade-of-835"
   ],
-  "title": "The Pope, at war with Milan and Mantua on another front, sues for peace. He pays war reparations to al-Andalus and annuls all his treaties with Genoa, Siena and Aquileia. No land changes hands, and the second crusade is over",
+  "title": "The Pope, at war with Milan and Mantua on another front, sues for peace. He pays al-Andalus 114.64 gold at once and a tenth of his income for five years in reparations, 36.45 gold a month at the time, and annuls all his treaties with Genoa, Siena and Aquileia. No land changes hands, and the second crusade is over",
   "data": {
    "terms": [
+    "the Papal States pay 114.64 gold at once",
+    "the Papal States pay war reparations to al-Andalus: 10% of their income for five years (36.45 gold a month at the peace)",
     "the Papal States annul all treaties with Aquileia",
     "the Papal States annul all treaties with Genoa",
-    "the Papal States annul all treaties with Siena",
-    "the Papal States pay war reparations to al-Andalus"
+    "the Papal States annul all treaties with Siena"
    ],
    "warScore": 5,
-   "peaceScreen": "gold line +114.64; acceptance +26 ('They will accept')",
+   "peaceScreen": "acceptance +26 ('They will accept')",
    "otherWar": "Mantua and Milan had been at war with the Pope's ally Faenza since 6 March 1432, with the Pope, Genoa and their subjects defending",
    "lateJoiners": "Friuli and Lower Carinthia joined the crusade on 3 and 4 July 1432",
    "hijri": "28 Dhū al-Qaʿda 835"
