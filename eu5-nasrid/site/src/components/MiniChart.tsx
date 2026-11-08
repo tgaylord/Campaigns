@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import type { Place } from "../lib/data";
-import { countryByTag, latest, subjectLands } from "../lib/data";
+import { countryByTag, latest, subjectTags } from "../lib/data";
+import { useCheckpoint } from "../lib/checkpoint";
 import { gameMap } from "../lib/map";
 import "./minichart.css";
 
@@ -23,8 +24,10 @@ export default function MiniChart({ marks, height = 360, minSpan = 160, checkpoi
   const span = Math.max(minSpan, xs.length ? Math.max(...xs) - Math.min(...xs) + 60 : 0, ys.length ? (Math.max(...ys) - Math.min(...ys) + 60) * (W / H) : 0);
   const vw = span, vh = span * (H / W);
   const k = vw / W; // one screen pixel, in map units
-  const realms = gameMap.realms[checkpoint ?? latest?.id ?? ""] ?? {};
-  const subj = new Set(Object.keys(subjectLands[checkpoint ?? latest?.id ?? ""] ?? {}));
+  const cpId = checkpoint ?? latest?.id;
+  const cp = useCheckpoint(cpId);
+  const realms = cp?.realms ?? {};
+  const subj = new Set(subjectTags[cpId ?? ""] ?? []);
   const labels = layout(pts, k);
 
   return (

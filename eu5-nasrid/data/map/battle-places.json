@@ -1,0 +1,887 @@
+{
+ "places": {
+  "1346-11-22-battle-bay-palma": [
+   "bay_palma",
+   7774.5,
+   2571.8
+  ],
+  "1346-12-02-battle-gulf-of-almeria": [
+   "almeria",
+   7584.9,
+   2745.5
+  ],
+  "1346-12-24-battle-cagliari": [
+   "cagliari",
+   8112.2,
+   2598.3
+  ],
+  "1347-01-16-battle-bay-alcudia": [
+   "bay_alcudia",
+   7844.6,
+   2528.2
+  ],
+  "1347-02-09-battle-cagliari": [
+   "cagliari",
+   8112.2,
+   2598.3
+  ],
+  "1347-02-13-battle-castellon-de-la-plana": [
+   "castellon_de_la_plana",
+   7683.6,
+   2554.3
+  ],
+  "1347-03-17-battle-sevilla": [
+   "sevilla",
+   7425.2,
+   2727.2
+  ],
+  "1347-05-18-battle-jaen": [
+   "jaen",
+   7516.6,
+   2694.3
+  ],
+  "1347-05-29-battle-gulf-cagliari": [
+   "gulf_cagliari",
+   8116.7,
+   2639.7
+  ],
+  "1347-06-17-battle-jerez-de-la-frontera": [
+   "jerez_de_la_frontera",
+   7416.2,
+   2757.2
+  ],
+  "1347-06-21-battle-carpio": [
+   "carpio",
+   7490.0,
+   2669.0
+  ],
+  "1347-07-13-battle-sevilla": [
+   "sevilla",
+   7425.2,
+   2727.2
+  ],
+  "1347-08-31-battle-palma-del-rio": [
+   "palma_del_rio",
+   7452.3,
+   2684.5
+  ],
+  "1347-10-04-battle-montiel": [
+   "montiel",
+   7550.1,
+   2640.7
+  ],
+  "1347-10-30-battle-montiel": [
+   "montiel",
+   7550.1,
+   2640.7
+  ],
+  "1347-12-13-battle-cordoba": [
+   "cordoba",
+   7476.7,
+   2686.0
+  ],
+  "1348-04-21-battle-cagliari": [
+   "cagliari",
+   8112.2,
+   2598.3
+  ],
+  "1348-04-23-battle-gulf-cagliari": [
+   "gulf_cagliari",
+   8116.7,
+   2639.7
+  ],
+  "1348-05-13-battle-cape-ben-sakka": [
+   "cape_ben_sakka",
+   8147.1,
+   2692.7
+  ],
+  "1348-05-30-battle-cordoba": [
+   "cordoba",
+   7476.7,
+   2686.0
+  ],
+  "1348-06-12-battle-cape-ben-sakka": [
+   "cape_ben_sakka",
+   8147.1,
+   2692.7
+  ],
+  "1353-06-06-battle-jerez": [
+   "jerez_de_la_frontera",
+   7416.2,
+   2757.2
+  ],
+  "1353-06-27-battle-sanlucar-la-mayor": [
+   "sanlucar_la_mayor",
+   7410.0,
+   2707.8
+  ],
+  "1360-08-13-battle-strait": [
+   "strait_of_gibraltar",
+   7469.6,
+   2799.1
+  ],
+  "1360-09-01-battle-strait": [
+   "strait_of_gibraltar",
+   7469.6,
+   2799.1
+  ],
+  "1360-09-13-battle-costa-sol": [
+   "costa_sol",
+   7526.8,
+   2775.3
+  ],
+  "1360-10-28-battle-bay-cadiz": [
+   "cadiz",
+   7411.3,
+   2769.6
+  ],
+  "1360-11-07-battle-almeria": [
+   "almeria",
+   7584.9,
+   2745.5
+  ],
+  "1361-02-16-battle-almonaster": [
+   "almonaster_la_real",
+   7384.3,
+   2697.0
+  ],
+  "1361-03-09-battle-bay-cadiz": [
+   "cadiz",
+   7411.3,
+   2769.6
+  ],
+  "1361-03-23-battle-jerez": [
+   "jerez_de_la_frontera",
+   7416.2,
+   2757.2
+  ],
+  "1361-10-21-battle-herrera": [
+   "herrera",
+   7462.0,
+   2602.1
+  ],
+  "1361-12-10-battle-escurial": [
+   "el_escorial",
+   7502.4,
+   2524.4
+  ],
+  "1361-12-13-battle-sevilla": [
+   "sevilla",
+   7425.2,
+   2727.2
+  ],
+  "1362-03-11-battle-bay-cadiz": [
+   "cadiz",
+   7411.3,
+   2769.6
+  ],
+  "1362-04-08-battle-sevilla": [
+   "sevilla",
+   7425.2,
+   2727.2
+  ],
+  "1362-05-09-battle-caceres": [
+   "caceres",
+   7397.2,
+   2592.4
+  ],
+  "1364-03-01-battle-canete": [
+   "canete",
+   7615.8,
+   2554.0
+  ],
+  "1364-04-05-battle-castellon": [
+   "castellon_de_la_plana",
+   7683.6,
+   2554.3
+  ],
+  "1364-08-03-battle-zafra": [
+   "zafra",
+   7409.3,
+   2643.3
+  ],
+  "1364-09-10-battle-lisbon": [
+   "lisbon",
+   7276.6,
+   2622.2
+  ],
+  "1364-09-11-battle-lisbon": [
+   "lisbon",
+   7276.6,
+   2622.2
+  ],
+  "1364-09-25-battle-gulf-valencia": [
+   "gulf_of_valencia",
+   7703.4,
+   2588.3
+  ],
+  "1365-03-09-battle-tortosa": [
+   "tortosa",
+   7716.3,
+   2505.4
+  ],
+  "1365-06-27-battle-cuenca": [
+   "cuenca",
+   7601.5,
+   2546.6
+  ],
+  "1365-07-14-battle-canete": [
+   "canete",
+   7615.8,
+   2554.0
+  ],
+  "1366-01-06-battle-san-clemente": [
+   "san_clemente",
+   7583.2,
+   2593.1
+  ],
+  "1368-11-11-battle-cadiz": [
+   "cadiz",
+   7411.3,
+   2769.6
+  ],
+  "1368-12-01-battle-marbella": [
+   "marbella",
+   7459.2,
+   2764.9
+  ],
+  "1368-12-15-battle-gibraltar": [
+   "gibraltar",
+   7447.4,
+   2781.3
+  ],
+  "1368-12-25-battle-tarifa": [
+   "tarifa",
+   7426.9,
+   2787.4
+  ],
+  "1369-01-31-battle-costa-blanca": [
+   "costa_blanca",
+   7688.6,
+   2673.0
+  ],
+  "1369-02-08-battle-marbella": [
+   "marbella",
+   7459.2,
+   2764.9
+  ],
+  "1369-02-15-battle-ronda": [
+   "ronda",
+   7451.7,
+   2753.8
+  ],
+  "1369-04-05-battle-jerez-de-la-frontera": [
+   "jerez_de_la_frontera",
+   7416.2,
+   2757.2
+  ],
+  "1369-04-28-battle-jerez-de-la-frontera": [
+   "jerez_de_la_frontera",
+   7416.2,
+   2757.2
+  ],
+  "1369-05-12-battle-sanlucar": [
+   "sanlucar",
+   7413.2,
+   2745.6
+  ],
+  "1369-06-02-battle-cadiz": [
+   "cadiz",
+   7411.3,
+   2769.6
+  ],
+  "1369-06-26-battle-cadiz": [
+   "cadiz",
+   7411.3,
+   2769.6
+  ],
+  "1369-09-16-battle-malaga": [
+   "malaga",
+   7481.3,
+   2753.4
+  ],
+  "1369-10-15-battle-antequera": [
+   "antequera",
+   7480.3,
+   2735.1
+  ],
+  "1369-11-08-battle-almunecar": [
+   "almunecar",
+   7531.8,
+   2750.4
+  ],
+  "1369-11-21-battle-adra": [
+   "adra",
+   7559.5,
+   2749.9
+  ],
+  "1369-12-16-battle-malaga": [
+   "malaga",
+   7481.3,
+   2753.4
+  ],
+  "1370-03-08-battle-malaga": [
+   "malaga",
+   7481.3,
+   2753.4
+  ],
+  "1370-03-31-battle-jerez": [
+   "jerez_de_la_frontera",
+   7416.2,
+   2757.2
+  ],
+  "1370-04-06-battle-jerez": [
+   "jerez_de_la_frontera",
+   7416.2,
+   2757.2
+  ],
+  "1370-05-31-battle-beja": [
+   "beja",
+   7334.0,
+   2675.1
+  ],
+  "1370-09-12-battle-malaga": [
+   "malaga",
+   7481.3,
+   2753.4
+  ],
+  "1374-02-19-battle-barcelona": [
+   "barcelona",
+   7788.0,
+   2463.0
+  ],
+  "1374-03-09-battle-tarragona": [
+   "tarragona",
+   7739.8,
+   2481.4
+  ],
+  "1374-05-23-battle-zuwara": [
+   "zuwarah",
+   8231.3,
+   2989.5
+  ],
+  "1374-11-12-battle-george-bay": [
+   "george_bay",
+   8344.3,
+   2819.3
+  ],
+  "1375-12-12-catalans-ambushed": [
+   "chelva",
+   7643.4,
+   2562.0
+  ],
+  "1376-01-14-battle-xelva": [
+   "chelva",
+   7643.4,
+   2562.0
+  ],
+  "1376-01-21-catalans-destroyed-at-barcelona": [
+   "barcelona",
+   7788.0,
+   2463.0
+  ],
+  "1376-03-01-battle-cape-ben-sakka": [
+   "cape_ben_sakka",
+   8147.1,
+   2692.7
+  ],
+  "1376-05-25-battle-girona": [
+   "girona",
+   7823.5,
+   2426.8
+  ],
+  "1376-06-12-second-battle-girona": [
+   "girona",
+   7823.5,
+   2426.8
+  ],
+  "1376-09-01-battle-agramunt": [
+   "agramunt",
+   7747.1,
+   2430.6
+  ],
+  "1377-01-31-battle-zaragoza": [
+   "zaragoza",
+   7645.5,
+   2458.3
+  ],
+  "1377-06-13-battle-calatayud": [
+   "calatayud",
+   7618.0,
+   2464.3
+  ],
+  "1377-06-24-calatayud-remnant": [
+   "calatayud",
+   7618.0,
+   2464.3
+  ],
+  "1377-10-19-battle-cape-sao-vicente": [
+   "cape_sao_vicente",
+   7275.3,
+   2758.4
+  ],
+  "1377-11-01-battle-coast-lazio": [
+   "coast_lazio",
+   8223.2,
+   2449.9
+  ],
+  "1377-11-04-battle-bay-setubal": [
+   "bay_setubal",
+   7248.0,
+   2650.0
+  ],
+  "1377-11-22-battle-cape-mondego": [
+   "cape_mondego",
+   7267.0,
+   2511.2
+  ],
+  "1378-01-17-battle-shaluqa": [
+   "sanlucar_la_mayor",
+   7410.0,
+   2707.8
+  ],
+  "1383-02-22-battle-munt-shaqir": [
+   "montanchez",
+   7408.8,
+   2604.8
+  ],
+  "1383-04-30-battle-jaen": [
+   "jaen",
+   7516.6,
+   2694.3
+  ],
+  "1394-05-01-battle-mouths-rhone": [
+   "mouths_rhone",
+   7891.5,
+   2359.8
+  ],
+  "1394-06-13-battle-mouths-rhone-ii": [
+   "mouths_rhone",
+   7891.5,
+   2359.8
+  ],
+  "1394-06-25-battle-gulf-talamone": [
+   "gulf_talamone",
+   8184.0,
+   2410.9
+  ],
+  "1394-07-03-battle-atlantic": [
+   "north_eastern_atlantic1",
+   6164.1,
+   2581.2
+  ],
+  "1394-07-10-battle-gulf-policastro": [
+   "gulf_policastro",
+   8380.9,
+   2576.5
+  ],
+  "1394-07-11-battle-george-bay": [
+   "george_bay",
+   8344.3,
+   2819.3
+  ],
+  "1394-07-14-battle-mouth-douro": [
+   "mouth_douro",
+   7263.7,
+   2450.4
+  ],
+  "1394-08-14-algarve-armies": [
+   "setubal",
+   7286.8,
+   2635.9
+  ],
+  "1394-08-18-battle-grosseto": [
+   "grosseto",
+   8200.6,
+   2376.0
+  ],
+  "1394-08-siguenza": [
+   "siguenza",
+   7560.3,
+   2483.1
+  ],
+  "1394-09-02-battle-bay-setubal": [
+   "bay_setubal",
+   7248.0,
+   2650.0
+  ],
+  "1394-09-07-battle-roncesvalles": [
+   "roncesvalles",
+   7636.6,
+   2371.6
+  ],
+  "1394-09-11-battle-piombino": [
+   "piombino",
+   8174.8,
+   2371.8
+  ],
+  "1394-09-18-battle-bay-setubal-ii": [
+   "bay_setubal",
+   7248.0,
+   2650.0
+  ],
+  "1394-10-12-battle-pamplona": [
+   "pamplona",
+   7608.1,
+   2371.2
+  ],
+  "1394-11-15-battle-grosseto-ii": [
+   "grosseto",
+   8200.6,
+   2376.0
+  ],
+  "1394-12-14-battle-ejea": [
+   "ejea_de_los_caballeros",
+   7641.6,
+   2423.0
+  ],
+  "1395-02-04-battle-penafiel": [
+   "penafiel",
+   7496.8,
+   2451.1
+  ],
+  "1395-03-17-battle-berlengas": [
+   "berlengas_islands",
+   7246.1,
+   2579.3
+  ],
+  "1395-05-24-battle-montalcino": [
+   "montalcino",
+   8212.6,
+   2361.6
+  ],
+  "1395-06-18-battle-portalegre": [
+   "portalegre",
+   7352.5,
+   2593.7
+  ],
+  "1404-02-09-battle-gulf-of-roses": [
+   "gulf_of_roses",
+   7862.2,
+   2435.7
+  ],
+  "1404-05-10-battle-aix": [
+   "aix_en_provence",
+   7936.2,
+   2330.7
+  ],
+  "1404-06-04-battle-mouths-rhone": [
+   "mouths_rhone",
+   7891.5,
+   2359.8
+  ],
+  "1404-06-24-battle-mouths-rhone-ii": [
+   "mouths_rhone",
+   7891.5,
+   2359.8
+  ],
+  "1404-08-03-battle-gulf-florent": [
+   "gulf_florent",
+   8087.1,
+   2364.0
+  ],
+  "1404-08-09-battle-mouths-rhone-iii": [
+   "mouths_rhone",
+   7891.5,
+   2359.8
+  ],
+  "1404-08-24-battle-gulf-talamone": [
+   "gulf_talamone",
+   8184.0,
+   2410.9
+  ],
+  "1404-10-10-battle-barjols": [
+   "barjols",
+   7966.8,
+   2323.3
+  ],
+  "1404-10-20-battle-barjols-ii": [
+   "barjols",
+   7966.8,
+   2323.3
+  ],
+  "1405-01-28-battle-buitrago": [
+   "buitrago_de_lozoya",
+   7531.7,
+   2493.9
+  ],
+  "1405-03-18-battle-cuenca": [
+   "cuenca",
+   7601.5,
+   2546.6
+  ],
+  "1405-07-02-battle-granadilla": [
+   "granadilla",
+   7410.4,
+   2534.6
+  ],
+  "1405-07-10-battle-cuenca-ii": [
+   "cuenca",
+   7601.5,
+   2546.6
+  ],
+  "1405-08-05-battle-lisbon": [
+   "lisbon",
+   7276.6,
+   2622.2
+  ],
+  "1410-09-16-battle-cape-mondego": [
+   "cape_mondego",
+   7267.0,
+   2511.2
+  ],
+  "1410-10-09-battle-penafiel": [
+   "penafiel",
+   7496.8,
+   2451.1
+  ],
+  "1410-12-07-battle-segovia": [
+   "segovia",
+   7493.7,
+   2497.3
+  ],
+  "1410-12-11-battle-cuellar": [
+   "cuellar",
+   7491.8,
+   2469.1
+  ],
+  "1411-01-02-battle-mouth-douro": [
+   "mouth_douro",
+   7263.7,
+   2450.4
+  ],
+  "1411-01-13-battle-cuellar-ii": [
+   "cuellar",
+   7491.8,
+   2469.1
+  ],
+  "1411-02-10-battle-coimbra": [
+   "coimbra",
+   7313.5,
+   2539.7
+  ],
+  "1411-03-07-battle-ledesma": [
+   "ledesma",
+   7410.6,
+   2489.5
+  ],
+  "1411-03-10-battle-bay-setubal": [
+   "bay_setubal",
+   7248.0,
+   2650.0
+  ],
+  "1411-05-15-battle-toro": [
+   "toro",
+   7446.9,
+   2463.3
+  ],
+  "1411-05-30-battle-cape-mondego-ii": [
+   "cape_mondego",
+   7267.0,
+   2511.2
+  ],
+  "1411-06-13-battle-coimbra-ii": [
+   "coimbra",
+   7313.5,
+   2539.7
+  ],
+  "1411-06-21-battle-mouth-douro-ii": [
+   "mouth_douro",
+   7263.7,
+   2450.4
+  ],
+  "1411-08-03-battle-moncorvo": [
+   "moncorvo",
+   7370.4,
+   2475.1
+  ],
+  "1411-08-28-battle-besteiros": [
+   "besteiros",
+   7321.1,
+   2519.5
+  ],
+  "1411-09-11-battle-cape-sao-vicente": [
+   "cape_sao_vicente",
+   7275.3,
+   2758.4
+  ],
+  "1411-10-27-battle-guimaraes": [
+   "guimaraes",
+   7320.3,
+   2466.9
+  ],
+  "1420-08-10-battle-fermoselle": [
+   "fermoselle",
+   7413.4,
+   2468.1
+  ],
+  "1430-06-30-battle-santiago": [
+   "santiago_compostela",
+   7297.0,
+   2370.0
+  ],
+  "1430-08-05-battle-oviedo": [
+   "oviedo",
+   7421.7,
+   2347.4
+  ],
+  "1430-11-03-battle-bilbo": [
+   "bilbao",
+   7565.9,
+   2344.3
+  ],
+  "1431-11-20-battle-oristano": [
+   "oristano",
+   8084.0,
+   2556.5
+  ],
+  "1431-11-26-battle-gulf-talamone": [
+   "gulf_talamone",
+   8184.0,
+   2410.9
+  ],
+  "1431-12-05-battle-gulf-talamone": [
+   "gulf_talamone",
+   8184.0,
+   2410.9
+  ],
+  "1431-12-09-battle-jaca": [
+   "jaca",
+   7667.8,
+   2393.2
+  ],
+  "1431-12-10-battle-bracciano": [
+   "bracciano",
+   8253.1,
+   2427.8
+  ],
+  "1431-12-17-battle-thiesi": [
+   "thiesi",
+   8089.6,
+   2516.7
+  ],
+  "1431-12-20-battle-coast-lazio": [
+   "coast_lazio",
+   8223.2,
+   2449.9
+  ],
+  "1431-12-31-battle-tivoli": [
+   "tivoli",
+   8274.5,
+   2430.9
+  ],
+  "1432-01-01-battle-eolie-islands": [
+   "eolie_islands",
+   8381.8,
+   2634.5
+  ],
+  "1432-01-05-battle-orosei": [
+   "orosei",
+   8125.3,
+   2527.0
+  ],
+  "1432-01-19-battle-gulf-of-lion": [
+   "gulf_of_lion",
+   7918.6,
+   2454.5
+  ],
+  "1432-01-27-battle-gulf-olbia": [
+   "gulf_olbia",
+   8141.7,
+   2466.9
+  ],
+  "1432-01-28-battle-orosei": [
+   "orosei",
+   8125.3,
+   2527.0
+  ],
+  "1432-02-01-battle-gulf-orosei": [
+   "gulf_orosei",
+   8162.6,
+   2523.0
+  ],
+  "1432-02-19-battle-ushant": [
+   "ushant",
+   7443.5,
+   2015.6
+  ],
+  "1432-02-21-battle-ushant": [
+   "ushant",
+   7443.5,
+   2015.6
+  ],
+  "1432-02-28-battle-terracina": [
+   "terracina",
+   8288.7,
+   2463.1
+  ],
+  "1432-03-02-battle-gulf-talamone": [
+   "gulf_talamone",
+   8184.0,
+   2410.9
+  ],
+  "1432-03-14-battle-corsica-channel": [
+   "corsica_channel",
+   8144.3,
+   2366.6
+  ],
+  "1432-03-15-battle-castelsardo": [
+   "castelsardo",
+   8093.7,
+   2501.7
+  ],
+  "1432-03-19-battle-gaeta": [
+   "gaeta",
+   8314.3,
+   2471.5
+  ],
+  "1432-03-26-battle-pitigliano": [
+   "pitigliano",
+   8212.9,
+   2390.2
+  ],
+  "1432-04-02-battle-cape-sicie": [
+   "cape_sicie",
+   7950.8,
+   2380.6
+  ],
+  "1432-04-19-battle-gulf-castellammare": [
+   "gulf_castellammare",
+   8270.7,
+   2641.1
+  ],
+  "1432-04-30-battle-saint-malo-gulf": [
+   "saint_malo",
+   7596.2,
+   2015.2
+  ],
+  "1432-05-17-battle-terracina": [
+   "terracina",
+   8288.7,
+   2463.1
+  ],
+  "1432-06-01-battle-viterbo": [
+   "viterbo",
+   8240.0,
+   2401.6
+  ],
+  "1432-06-03-battle-maria-leuca-cape": [
+   "maria_leuca_cape",
+   8532.3,
+   2583.9
+  ],
+  "1432-06-27-battle-cape-mondego": [
+   "cape_mondego",
+   7267.0,
+   2511.2
+  ],
+  "1432-07-12-battle-gulf-talamone": [
+   "gulf_talamone",
+   8184.0,
+   2410.9
+  ]
+ },
+ "unplaced": {
+  "1374-06-24-battle-gharyan": "Gharyan"
+ }
+}

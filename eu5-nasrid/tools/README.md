@@ -10,6 +10,10 @@ Run by Claude in the workspace when a checkpoint save comes in. Inputs come from
 | `devastation.py` | Compares the people, prosperity and looting of every location in a game region between a save before a run of wars and a save at the peace (and optionally one after). Writes `data/devastation/<war-id>.json`, which the war's page draws as a map and tables. |
 | `realm_tags.py` | Keeps the realm one tag across its formations: Granada (GRA) became Al-Andalus (ADU) on 16 March 1375, and every tool reads the save's tags through it so the data stays on GRA. Add a line to `ALIAS` if the realm forms again. |
 | `world_powers.py` | The world beyond the realm at one checkpoint (`data/world/<checkpoint>.json`): the game's great-power ladder down to 30th; for every ranked power and every power `data/powers.json` follows, its towns and people (with subjects), income, treasury, men under arms and ships, ruler (with the start of his reign) and heir, overlord, subjects, allies and rivals; the personal unions, wars and the orders of Christendom touching the followed powers. Also keeps `data/world/tags.json`, the English name and map colour of every country that has owned land. Takes a second or two. |
+| `realm_extras.py` | What `extract_checkpoint.py` leaves out, for the World hall and the Golden Century (`data/realm/<checkpoint>.json`): every societal value, the laws, privileges and reforms in force, institutions, advances, legitimacy, any dominance value, the fleet and army by type, the expeditions completed, and every building the crown owns in another country's lands (trade offices, overseas trading posts, embassies), with its level, whether it is being enlarged, who holds the land, and its point on the map. A second or two. |
+| `realm_names.py` | The game's English names for every key the realm files use (laws, policies, privileges, reforms, ships, buildings, institutions, the two ends of each societal value, the places abroad), and the estate each privilege belongs to. Writes `data/realm/names.json`; re-run it after `realm_extras.py`, since the site build fails on a key with no name. |
+| `location_centroids.py` | The centre of every one of the game's 28,000 locations in map pixels (`data/map/centroids.json`), so footholds, battles and capitals can be placed anywhere on the World chart. Only needs re-running if the game's map changes. About ten seconds. |
+| `battle_places.py` | Matches each battle event's field (in the chronicle's spelling) to a game location through the gazetteer and the game's place names, and writes `data/map/battle-places.json`. Names it can't match are printed; add them to `ALIAS` in the tool rather than guessing. |
 | `map_layers.py` | Writes the Atlas's lenses for one checkpoint (`data/map/layers/<checkpoint>.json`): people, Muslim/Christian/Jewish and Andalusī/Castilian shares, prosperity, control, occupier and last looting for every land location in the map frame. Run it on each new checkpoint's decoded save. |
 
 ## A checkpoint, step by step
@@ -27,7 +31,15 @@ python3 tools/map_layers.py /tmp/sections 1340-10-30
 python3 tools/world_powers.py /tmp/sections 1340-10-30 --game GAME
 python3 tools/build_map.py GAME/in_game/map_data data/map/sea.json --frame 7080,1700,9480,3300 --eps 1.5 \
   --realm-eps 3 --lite --owners data/extracted/1340-10-30.json --realms-dir data/map/sea
-# 5. write data/snapshots/<date>.json, people, gazetteer, wars and events by hand from the extracted file
+# 5. the realm's reach and temper, its names, and the realms on the World chart (Atlantic islands to Persia)
+python3 tools/realm_extras.py /tmp/sections 1340-10-30
+python3 tools/realm_names.py GAME
+python3 tools/build_map.py GAME/in_game/map_data /tmp/world.json --frame 5900,1100,10500,5000 --eps 2.5 \
+  --realm-eps 4 --lite --owners data/extracted/1340-10-30.json --realms-dir data/map/world
+#    (the World chart itself is data/map/world.json, built the same way; only rebuild it if the map changes)
+# 6. after the events are written: place the battles
+python3 tools/battle_places.py GAME
+# 7. write data/snapshots/<date>.json, people, gazetteer, wars and events by hand from the extracted file
 #    (estate shares of power are not in the save: they come from Trent's estates screen, or stay null)
 ```
 

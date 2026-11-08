@@ -10,8 +10,7 @@ type GameMap = {
   locations: Record<string, MapLocation>;
   /** checkpoint id → location key → owner tag */
   owners: Record<string, Record<string, string>>;
-  /** checkpoint id → owner tag → outline of everything it owns */
-  realms: Record<string, Record<string, Realm>>;
+  /* realm outlines per checkpoint live in the checkpoint files (src/lib/checkpoint.ts) */
   /** province outlines and members (tools/build_map.py) */
   provinces: Record<string, Province>;
   /** area outlines */

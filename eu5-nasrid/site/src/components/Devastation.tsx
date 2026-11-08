@@ -3,6 +3,7 @@ import type { Devastation as Reading } from "../lib/data";
 import { places, western, nf, countryAt } from "../lib/data";
 import { gameMap } from "../lib/map";
 import "./devastation.css";
+import { useCheckpoint } from "../lib/checkpoint";
 
 /** Bins of population change, worst first. The last two are the land that grew. */
 const BINS = [
@@ -32,7 +33,8 @@ export default function Devastation({ d, checkpoint }: { d: Reading; checkpoint?
   }, [d]);
   const [vx, vy, vw, vh] = box;
   const k = vw / 900;
-  const ours = checkpoint ? gameMap.realms[checkpoint]?.GRA : undefined;
+  const cp = useCheckpoint(checkpoint);
+  const ours = cp?.realms.GRA;
 
   const areas = Object.entries(d.areas)
     .map(([a, v]) => ({ a, ...v, p: pct(v.pop0, v.pop1) }))

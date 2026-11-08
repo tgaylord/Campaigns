@@ -88,10 +88,12 @@ else:
 crop = key[y0:y1 + 1, x0:x1 + 1]
 H, W = crop.shape
 
-def trace(mask, min_area=2, eps=None):
-    """SVG path of a 0/1 mask. Traced on a 2x grid so shared edges between neighbours line up."""
-    big = cv2.resize(mask, (W * 2, H * 2), interpolation=cv2.INTER_NEAREST)
-    cs, _ = cv2.findContours(big, cv2.RETR_CCOMP, cv2.CHAIN_APPROX_SIMPLE)
+def trace(mask, min_area=2, eps=None, origin=(0, 0)):
+    """SVG path of a 0/1 mask. Traced on a 2x grid so shared edges between neighbours line up.
+    `mask` may be a cut-out of the frame whose top-left corner is at `origin` (x, y)."""
+    h, w = mask.shape
+    big = cv2.resize(mask, (w * 2, h * 2), interpolation=cv2.INTER_NEAREST)
+    cs, _ = cv2.findContours(big, cv2.RETR_CCOMP, cv2.CHAIN_APPROX_SIMPLE, offset=(origin[0] * 2, origin[1] * 2))
     parts = []
     for cn in cs:
         if cv2.contourArea(cn) < min_area: continue
@@ -158,20 +160,27 @@ print(f"frame x{x0}-{x1} y{y0}-{y1} ({W}x{H}), {n} {'provinces' if a.lite else '
 # ---------- realm outlines, one file per checkpoint ----------
 if a.owners:
     os.makedirs(a.realms_dir, exist_ok=True)
-    loc_of = np.vectorize(lambda c: bycol.get(int(c), ''), otypes=[object])(np.unique(crop))
-    uniq = np.unique(crop)
+    from scipy import ndimage
+    uniq, inv = np.unique(crop, return_inverse=True)
+    inv = inv.reshape(crop.shape)
+    loc_of = [bycol.get(int(c), '') for c in uniq]
     for f in a.owners:
         owners = json.load(open(f))['world_owners']
         realms = {}
-        lab = {}  # colour -> owner tag (land only)
-        for c, k in zip(uniq, loc_of):
-            if k and kind(k) == 'land' and owners.get(k): lab[int(c)] = owners[k]
-        for tag in sorted(set(lab.values())):
-            cs = np.array([c for c, t in lab.items() if t == tag], dtype=np.uint32)
-            m = np.isin(crop, cs).astype(np.uint8)
+        tags = sorted({owners[k] for k in loc_of if k and kind(k) == 'land' and owners.get(k)})
+        tix = {t: n + 1 for n, t in enumerate(tags)}
+        # colour index -> realm number (0 for sea, waste and the unowned), then one image of realm numbers
+        lut = np.array([tix.get(owners.get(k), 0) if k and kind(k) == 'land' else 0 for k in loc_of], dtype=np.int32)
+        timg = lut[inv]
+        # each realm is traced inside its own bounding box (one pixel of margin), not the whole frame
+        for tag, sl in zip(tags, ndimage.find_objects(timg, max_label=len(tags))):
+            if sl is None: continue
+            y0s, y1s = max(sl[0].start - 1, 0), min(sl[0].stop + 1, H)
+            x0s, x1s = max(sl[1].start - 1, 0), min(sl[1].stop + 1, W)
+            m = (timg[y0s:y1s, x0s:x1s] == tix[tag]).astype(np.uint8)
             yy, xx = np.nonzero(m)
-            realms[tag] = {'d': trace(m, min_area=16 if a.lite else 4, eps=a.realm_eps), 'px': int(m.sum()),
-                           'c': [round(float(xx.mean()), 1), round(float(yy.mean()), 1)]}
+            realms[tag] = {'d': trace(m, min_area=16 if a.lite else 4, eps=a.realm_eps, origin=(x0s, y0s)), 'px': int(m.sum()),
+                           'c': [round(float(xx.mean() + x0s), 1), round(float(yy.mean() + y0s), 1)]}
         name = os.path.splitext(os.path.basename(f))[0]
         dst = os.path.join(a.realms_dir, f'realms-{name}.json')
         json.dump(realms, open(dst, 'w'), separators=(',', ':'))

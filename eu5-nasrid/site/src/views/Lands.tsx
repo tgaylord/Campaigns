@@ -1,6 +1,8 @@
-import { Fragment, useMemo, useState } from "react";
+import { Fragment, useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import { snapshots, lands, subjectLands, places, western, hijri, nf, compact, faithName, cultureName, rankName, countryByTag, personById } from "../lib/data";
+import { useCheckpoint, prefetchCheckpoints } from "../lib/checkpoint";
+import type { Checkpoint } from "../lib/checkpoint";
+import { snapshots, latestLandAt, places, western, hijri, nf, compact, faithName, cultureName, rankName, countryByTag, personById } from "../lib/data";
 import type { Land } from "../lib/data";
 import { gameMap } from "../lib/map";
 import { PageHead, CheckpointSelect, StarRule } from "../components/bits";
@@ -184,18 +186,21 @@ export default function Lands() {
   const [i, setI] = useState(withLands.length - 1);
   const [lens, setLens] = useState<Lens>("control");
   const snap = withLands[i];
-  const rows = lands[snap.id] ?? [];
-  const subjects = Object.entries(subjectLands[snap.id] ?? {});
+  const cp = useCheckpoint(snap.id, { keep: true });
+  const prevCp = useCheckpoint(i > 0 ? withLands[i - 1].id : undefined);
+  useEffect(() => { prefetchCheckpoints([withLands[i + 1]?.id, withLands[i - 2]?.id]); }, [i]);
+  const rows = cp?.lands ?? [];
+  const subjects = Object.entries(cp?.subjectLands ?? {});
   const allRows = [...rows.map((r) => ({ ...r, holder: "GRA" })), ...subjects.flatMap(([tag, s]) => s.lands.map((r) => ({ ...r, holder: tag })))];
-  const keysAt = (id: string) => [...(lands[id] ?? []), ...Object.values(subjectLands[id] ?? {}).flatMap((s) => s.lands)].map((l) => l.key);
-  const prev = i > 0 ? new Set(keysAt(withLands[i - 1].id)) : null;
+  const keysOf = (c: Checkpoint | null) => (c ? [...c.lands, ...Object.values(c.subjectLands).flatMap((s) => s.lands)].map((l) => l.key) : []);
+  const prev = i > 0 && prevCp ? new Set(keysOf(prevCp)) : null;
   const maxWealth = Math.max(0, ...allRows.map(wealthOf));
   // Where a firmer grip would pay most: the most wealth slipping past the crown.
   const untaxedTop = rows.filter((l) => l.possibleTax != null).sort((a, b) => untaxedOf(b) - untaxedOf(a)).slice(0, 5);
 
   // Area → province → locations, largest first.
   const groups = useMemo(() => groupLands(rows), [rows]);
-  const subjectGroups = useMemo(() => subjects.map(([tag, s]) => ({ tag, s, provinces: groupLands(s.lands).flatMap((g) => g.provinces) })), [snap.id]);
+  const subjectGroups = useMemo(() => subjects.map(([tag, s]) => ({ tag, s, provinces: groupLands(s.lands).flatMap((g) => g.provinces) })), [cp]);
   function groupLands(rows: Land[]) {
     const areas = new Map<string, Map<string, Land[]>>();
     for (const r of rows) {
@@ -258,6 +263,8 @@ export default function Lands() {
       })}
     </Fragment>
   );
+
+  if (!cp) return <div className="page lands-page loading ui" role="status">Fetching the registers of {western(snap.date)}…</div>;
 
   return (
     <div className="page lands-page">
@@ -390,12 +397,12 @@ export default function Lands() {
   );
 }
 
-/** A location's standing at the latest checkpoint that holds it, for its gazetteer page. */
-export function latestLand(key: string): { land: Land; date: string } | null {
-  for (let k = snapshots.length - 1; k >= 0; k--) {
-    const l = lands[snapshots[k].id]?.find((x) => x.key === key);
-    if (l) return { land: l, date: snapshots[k].date };
-  }
-  return null;
+/** A location's standing at the latest checkpoint that holds it, for its gazetteer page (null while that checkpoint loads). */
+export function useLatestLand(key: string): { land: Land; date: string } | null {
+  const id = latestLandAt[key];
+  const cp = useCheckpoint(id);
+  const l = cp?.lands.find((x) => x.key === key);
+  const snap = snapshots.find((s) => s.id === id);
+  return l && snap ? { land: l, date: snap.date } : null;
 }
 export { CULTURE_COLOR, FAITH_COLOR, Shares, provinceName, areaName };

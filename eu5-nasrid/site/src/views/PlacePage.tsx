@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import { placeById, places, mentionsOf, latest, snapshots, isHeld, hijri, western, year, yearFrac, nf, faithName, cultureName, rankName, countryByTag } from "../lib/data";
-import { latestLand, CULTURE_COLOR, FAITH_COLOR, provinceName, areaName } from "./Lands";
+import { useLatestLand, CULTURE_COLOR, FAITH_COLOR, provinceName, areaName } from "./Lands";
 import MiniChart from "../components/MiniChart";
 import { Mentions } from "./PersonPage";
 import "./record.css";
@@ -55,7 +55,7 @@ export default function PlacePage() {
 
 /** How the place stood at the latest checkpoint that has it among Granada's own lands. */
 function Standing({ placeKey }: { placeKey: string }) {
-  const got = latestLand(placeKey);
+  const got = useLatestLand(placeKey);
   if (!got) return null;
   const { land: l, date } = got;
   const share = (parts: Record<string, number>, name: (k: string) => string, colors: Record<string, string>) =>

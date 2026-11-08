@@ -90,9 +90,10 @@ export type Land = {
 type Campaign = {
   generated: string; sample: boolean; eras: Era[]; people: Person[]; places: Place[]; wars: War[];
   countries: Country[]; snapshots: Snapshot[]; events: CampaignEvent[]; story: StoryEntry[]; catalog: Catalog;
-  lands: Record<string, Land[]>;
-  /** checkpoint id → subject tag → the subject and its lands */
-  subjectLands: Record<string, Record<string, SubjectLands>>;
+  /** checkpoint id → the tags of Granada's subjects then (their lands are in the checkpoint file, src/lib/checkpoint.ts) */
+  subjectTags: Record<string, string[]>;
+  /** location key → the latest checkpoint at which it was among Granada's own lands */
+  latestLandAt: Record<string, string>;
   /** war id → how the land stood before and at the peace (tools/devastation.py) */
   devastation: Record<string, Devastation>;
 };
@@ -112,7 +113,7 @@ export type SubjectLands = {
 };
 
 export const campaign = raw as unknown as Campaign;
-export const { eras, people, places, wars, countries, snapshots, events, story, catalog, lands, subjectLands, devastation } = campaign;
+export const { eras, people, places, wars, countries, snapshots, events, story, catalog, subjectTags, latestLandAt, devastation } = campaign;
 
 /** Names of peoples and faiths as the rest of the site writes them. */
 const FAITH: Record<string, string> = { judaism: "Jewish", nyama_religion: "Nyama" };

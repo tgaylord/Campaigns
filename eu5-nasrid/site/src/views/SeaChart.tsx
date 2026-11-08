@@ -1,6 +1,6 @@
 import { useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { countryByTag, subjectLands, snapshots, western, year } from "../lib/data";
+import { countryByTag, subjectTags, snapshots, western, year } from "../lib/data";
 import { usePanZoom } from "../lib/panzoom";
 import type { Box } from "../lib/panzoom";
 import { useFetched, useTags, useWorld, world, followed, powerName, gameName, personOf } from "../lib/world";
@@ -41,7 +41,7 @@ export default function SeaChart({ snapId, selected, onSelect }: { snapId: strin
   const k = vw / 1600;
   const kq = Math.round(k * 20) / 20;
   const [hover, setHover] = useState<{ tag: string; x: number; y: number } | null>(null);
-  const subj = new Set(Object.keys(subjectLands[snapId] ?? {}));
+  const subj = new Set(subjectTags[snapId] ?? []);
   const ours = (t: string) => t === OURS || subj.has(t);
   const fill = (t: string) => (ours(t) ? countryByTag.get(OURS)!.color : followed.has(t) && countryByTag.has(t) ? countryByTag.get(t)!.color : faded(tags?.[t]?.color));
 

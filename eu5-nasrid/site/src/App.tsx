@@ -1,27 +1,31 @@
-import { useEffect } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { NavLink, Route, Routes, useLocation } from "react-router-dom";
 import { campaign, latest, hijri, arabicDigits } from "./lib/data";
 import EntityCard from "./components/EntityCard";
-import Atlas from "./views/Atlas";
-import ChronicleIndex from "./views/ChronicleIndex";
-import ChronicleFolio from "./views/ChronicleFolio";
-import Strait from "./views/Strait";
-import Council from "./views/Council";
-import Scroll from "./views/Scroll";
-import Court from "./views/Court";
-import House from "./views/House";
-import PersonPage from "./views/PersonPage";
-import WarsIndex from "./views/WarsIndex";
-import WarPage from "./views/WarPage";
-import Gazetteer from "./views/Gazetteer";
-import PlacePage from "./views/PlacePage";
-import Lands from "./views/Lands";
-import Kingdoms from "./views/Kingdoms";
+// Each hall is its own chunk, loaded when it is first opened.
+const Atlas = lazy(() => import("./views/Atlas"));
+const ChronicleIndex = lazy(() => import("./views/ChronicleIndex"));
+const ChronicleFolio = lazy(() => import("./views/ChronicleFolio"));
+const Strait = lazy(() => import("./views/Strait"));
+const Council = lazy(() => import("./views/Council"));
+const Scroll = lazy(() => import("./views/Scroll"));
+const Court = lazy(() => import("./views/Court"));
+const House = lazy(() => import("./views/House"));
+const PersonPage = lazy(() => import("./views/PersonPage"));
+const WarsIndex = lazy(() => import("./views/WarsIndex"));
+const WarPage = lazy(() => import("./views/WarPage"));
+const Gazetteer = lazy(() => import("./views/Gazetteer"));
+const PlacePage = lazy(() => import("./views/PlacePage"));
+const Lands = lazy(() => import("./views/Lands"));
+const Kingdoms = lazy(() => import("./views/Kingdoms"));
+const World = lazy(() => import("./views/World"));
+const GoldenCentury = lazy(() => import("./views/GoldenCentury"));
 
 const NAV = [
   { to: "/", latin: "The Atlas", ar: "الأطلس", end: true },
+  { to: "/world", latin: "The World", ar: "الآفاق" },
+  { to: "/golden-century", latin: "The Golden Century", ar: "القرن الذهبي" },
   { to: "/chronicle", latin: "The Chronicle", ar: "الأخبار" },
-  { to: "/strait", latin: "The Strait", ar: "الزقاق" },
   { to: "/council", latin: "The Council", ar: "الديوان" },
   { to: "/provinces", latin: "The Provinces", ar: "الكور" },
   { to: "/scroll", latin: "The Long Scroll", ar: "الدرج" },
@@ -30,6 +34,8 @@ const NAV = [
   { to: "/house", latin: "House of Naṣr", ar: "بنو نصر" },
   { to: "/wars", latin: "Wars", ar: "الحروب" },
   { to: "/places", latin: "Gazetteer", ar: "البلدان" },
+  // the Strait's question was settled in 1370; its hall stays for the record
+  { to: "/strait", latin: "The Strait", ar: "الزقاق" },
 ];
 
 export default function App() {
@@ -67,6 +73,7 @@ export default function App() {
       </aside>
 
       <main className="main" id="main">
+        <Suspense fallback={<div className="page loading ui" role="status">Unrolling the folio…</div>}>
         <Routes>
           <Route path="/" element={<Atlas />} />
           <Route path="/chronicle" element={<ChronicleIndex />} />
@@ -77,6 +84,8 @@ export default function App() {
           <Route path="/scroll" element={<Scroll />} />
           <Route path="/court" element={<Court />} />
           <Route path="/kingdoms" element={<Kingdoms />} />
+          <Route path="/world" element={<World />} />
+          <Route path="/golden-century" element={<GoldenCentury />} />
           <Route path="/house" element={<House />} />
           <Route path="/people/:id" element={<PersonPage />} />
           <Route path="/wars" element={<WarsIndex />} />
@@ -85,6 +94,7 @@ export default function App() {
           <Route path="/places/:id" element={<PlacePage />} />
           <Route path="*" element={<div className="page"><h1>Nothing is written here</h1><p className="muted">This page doesn't exist. Choose a hall from the list of halls.</p></div>} />
         </Routes>
+        </Suspense>
       </main>
       <EntityCard />
     </div>

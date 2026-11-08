@@ -174,8 +174,10 @@ The site should feel like being at the Naṣrid court, not like reading a dashbo
 | Hall | What it shows |
 |---|---|
 | **The Atlas** (الأطلس), the home page | A full-screen portolan chart of the realm at any checkpoint: held places as towers, a medallion with the ruler and the date, and a drawer with the state of the realm and what changed since the last checkpoint. |
+| **The World** (الآفاق) | How far al-Andalus reaches, at any checkpoint: a wide chart from the Atlantic islands to the Persian gulf and from the North Sea to the Gulf of Guinea, framed on the empire's footprint; every realm, the followed powers in their colours; the crown's footholds abroad (trade offices sized by level, overseas trading posts, embassies, new ones ringed), gilt lines from the capital to each and the pilgrims' road to Makka (both marked as the chronicler's drawing, not trade routes), the battles since the last checkpoint or all to date, won and lost; a drawer of footholds by the realm they stand in with what changed; and the footholds across the years. |
+| **The Golden Century** (القرن الذهبي) | The dashboard of the age, answering one question: is the empire becoming the sea power the Emperor wants, and what does it cost at home? The Thalassocracy's twenty-year clock; tiles for land or sea, ships, footholds, legitimacy and advances, each with its change and its whole history; the turn to the sea from 1337, with the moment it crossed and a dashed projection of the Thalassocracy's push; all thirteen societal values as tracks; the fleet by kind of ship; the Jamāʿa's ledger (every privilege and reform ever held, by estate, reading by reading) and every law changed; the estates' content; and what the dīwān watches (dominance, a league against the empire, institutions), honest about what isn't read yet. |
 | **The Chronicle** (الأخبار) | A *fihris* (table of books) by era, and each entry as a folio with an illuminated initial, Trent's own notes as glosses in the margin, the people and places it names, and page turns (arrow keys work). |
-| **The Strait** (الزقاق) | The Battle for the Strait as a ship's course between the shores of Castile and Morocco: height of the banner is sovereignty, position in the channel is influence; the events that moved it; the win conditions as they stand. |
+| **The Strait** (الزقاق), last in the list since its question was settled in 1370 | The Battle for the Strait as a ship's course between the shores of Castile and Morocco: height of the banner is sovereignty, position in the channel is influence; the events that moved it; the win conditions as they stand. |
 | **The Council** (الديوان) | A hundred-seat hemicycle split as power is split, the crown at the centre; each estate's mood; the charters of the estates (every privilege held, ranked by the power it gives, with its effects from the game files) and the reforms of the state; the Jamāʿa's agenda; where the realm stands on each societal value, with a trail of earlier checkpoints; every law with its alternatives; power across the reigns as a stream; satisfaction as a grid. |
 | **The Provinces** (الكور) | Granada's own lands at any checkpoint, by area and province (the *kūra*): a map coloured by control, wealth, untaxed wealth, peoples, faiths, integration or development; area totals; the locations where a firmer grip would pay most; and a table of every location with its rank, people, peoples and faiths, control, development, core or conquered, wealth and tax base. In the game's own terms, a location's *wealth* is what its goods and buildings earn at market (the save's `possible_tax`), and its *tax base* is wealth × control (the save's `tax`); the rest goes to the estates untaxed. |
 | **The Long Scroll** (الدرج) | The whole campaign on one sideways roll: books, reigns, wars, the Strait, the estates, chronicle entries and events, year by year. |
@@ -187,8 +189,22 @@ The site should feel like being at the Naṣrid court, not like reading a dashbo
 
 Every person, place and war name anywhere on the site shows a card on hover and links to its page.
 
+### Principles for every hall
+
+Set down at the Golden Century, when the realm stopped being an Iberian story. The World and the Golden Century follow them already; the full pass over the other halls will bring them in line.
+
+1. **One question per hall, answered first.** The lede states the answer in a sentence built from the data ("the crown holds 25 footholds in 9 realms, from Casamance to Constantinople"); the detail follows below it, for whoever wants it.
+2. **One checkpoint, everywhere.** A hall that shows a checkpoint keeps it in the address as `?at=<id>` (`useCheckpointParam` in `site/src/lib/realm.ts`), with the shared slider, so a link opens on the same year and halls agree.
+3. **The frame follows the footprint.** Maps open on where the empire reaches at that checkpoint, not on Iberia.
+4. **Every number has its change and its history.** A figure is shown with its change since the last reading and a small line of every reading before.
+5. **No raw game keys.** Every key is named through the game's localisation (`data/realm/names.json`, the catalog) or the chronicle's own names; the build fails on a key with no name.
+6. **Say where each thing comes from.** Read from a save, estimated, projected, or drawn by the chronicler: projections are dashed, drawn lines are called drawings, and a checkpoint that borrows an earlier reading says so.
+7. **Load light.** Each hall is its own chunk and fetches only its own data (`public/cp/`, `public/globe/`, `public/realm/`), so the site's first load stays small.
+8. **Never by colour alone.** Shapes, labels and legends carry meaning too; every control works from the keyboard; the halls work on a phone; motion stops when the reader asks for less.
+9. **Keep the court's hand.** Night lapis and parchment, gilt for what is the crown's, the estates in their fixed colours, an Arabic name beside every English one.
+
 **Next:**
-- The map already comes from the game's own files (the Strait theatre, about 1,000 locations). Still to add: battle sites, and further frames as the realm grows.
+- The full UI pass over the older halls, by the principles above.
 - The colonies, and an armies view once tracking starts.
 
 **Stack:** React, React Router, Vite and D3 in `site/`, built to a static site.
@@ -196,6 +212,8 @@ Every person, place and war name anywhere on the site shows a card on hover and 
 - A war page can carry a devastation reading (`tools/devastation.py`, `data/devastation/<war-id>.json`). It shows a map of population change by town between a save before the fighting and the peace save, with the towns looted in between, and tables by land and by the worst-hit towns. The first covers 1359–1366, on the War of Independence.
 - **The Atlas** is province-first. Each province is one shape, coloured by a lens: Realms, Faith, Tongue, People, Ruin (people gained or lost since the previous checkpoint, with towns looted in between hatched) or Hold (control). Clicking a province flies to it and splits it into its locations, with a folio of its towns, people, faith and tongue and its entries in the record. The map pans and zooms (drag, wheel, pinch), shows the battles since the previous checkpoint as pins, and can play through the checkpoints. The lenses come from `tools/map_layers.py`, one file per checkpoint, fetched when needed. A fourth voyage, **the Middle Sea**, swaps in a wide chart from Lisbon to Alexandria (`tools/build_map.py --lite`): every realm at the checkpoint, the followed powers in their own colours and Granada in gold, each with a dispatch from the Kingdoms on click.
 - The Atlas and every small chart are drawn from the game's own map: `tools/build_map.py` traces each location from `locations.png`, and realm outlines are rebuilt for each checkpoint.
+- **The World** reads `data/map/world.json` and `data/map/world/realms-<id>.json` (`tools/build_map.py --lite` on the frame 5900,1100 to 10500,5000), `data/realm/` (`tools/realm_extras.py`, `tools/realm_names.py`), `data/map/battle-places.json` and `data/map/centroids.json`. A checkpoint without its own World realms or realm reading borrows the nearest earlier one and says so.
+- **The Golden Century** reads the same realm series and the snapshots' estates. Its event anchors (the proclamation, the Thalassocracy, the arsenals, the admiral prince) are event ids at the top of `GoldenCentury.tsx`.
 - Hijri dates come from `site/src/lib/hijri.ts`.
 - Story entries link to records with `[name](person:id)`, `place:`, `war:` and `era:`.
 - See `site/README.md` for running it locally and for the story-entry format.
@@ -208,7 +226,7 @@ Every person, place and war name anywhere on the site shows a card on hover and 
 
 1. Trent plays and makes an ordinary checkpoint save (compressed). If the estates matter at that checkpoint, he screenshots the estate power panel at the same moment, since the save doesn't store the shares.
 2. He opens the chat on the gaming PC (or links that computer) and gives his account of what happened, including anything screenshots show that a save can't. When a screenshot shows an event with several options, the option whose tooltip is open is the one he picked (nine times in ten; he says when it isn't).
-3. Claude parses the save into a snapshot and new events, then checks them against the previous snapshot. For each new checkpoint it also redraws the realm outlines (`tools/build_map.py --owners`, and `--lite` for the Middle Sea), writes the Atlas's lenses (`tools/map_layers.py`) and reads the world beyond the realm (`tools/world_powers.py`). A power that becomes worth following is added to a circle in `data/powers.json` and named in `data/countries.json`; its ruler gets a record in `people.json` when the chronicle names him.
+3. Claude parses the save into a snapshot and new events, then checks them against the previous snapshot. For each new checkpoint it also redraws the realm outlines (`tools/build_map.py --owners`, and `--lite` for the Middle Sea), writes the Atlas's lenses (`tools/map_layers.py`), reads the world beyond the realm (`tools/world_powers.py`) and the realm's reach and temper (`tools/realm_extras.py`, then `tools/realm_names.py`), draws the realms on the World chart (`tools/build_map.py --lite` with `--realms-dir data/map/world`), and once the events are written places the battles (`tools/battle_places.py`). A power that becomes worth following is added to a circle in `data/powers.json` and named in `data/countries.json`; its ruler gets a record in `people.json` when the chronicle names him.
 4. Claude drafts the story entries and Trent corrects them.
 5. Claude commits the data and story to the repo, and the site rebuilds.
 

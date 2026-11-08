@@ -3,9 +3,10 @@ import type { PointerEvent as RPointerEvent } from "react";
 import { Link } from "react-router-dom";
 import {
   snapshots, places, personById, events, countryByTag, countryName, isHeld, hijri, western,
-  compact, nf, signed, EVENT_LABEL, subjectLands, sovereignTitle,
+  compact, nf, signed, EVENT_LABEL, subjectTags, sovereignTitle, faithName, cultureName,
 } from "../lib/data";
 import type { Place, CampaignEvent } from "../lib/data";
+import { useCheckpoint, prefetchCheckpoints } from "../lib/checkpoint";
 import { gameMap, keyLabel, MAP_W, MAP_H } from "../lib/map";
 import { CheckpointSelect } from "../components/bits";
 import SeaChart, { SeaFolio } from "./SeaChart";
@@ -168,9 +169,11 @@ export default function Atlas() {
   const prevSnap = i > 0 ? snapshots[i - 1] : undefined;
   const layer = useLayer(snap.id);
   const prevLayer = useLayer(prevSnap?.id);
-  const realms = gameMap.realms[snap.id] ?? {};
+  const cp = useCheckpoint(snap.id, { keep: true });
+  useEffect(() => { prefetchCheckpoints([snapshots[i + 1]?.id, snapshots[i - 1]?.id]); }, [i]);
+  const realms = cp?.realms ?? {};
   const owners = gameMap.owners[snap.id] ?? {};
-  const subj = new Set(Object.keys(subjectLands[snap.id] ?? {}));
+  const subj = new Set(subjectTags[snap.id] ?? []);
 
   /* --- the view box: pan, zoom, fly */
   const [vb, setVb] = useState<Box>(VIEWS.strait.box);
@@ -780,7 +783,7 @@ function RealmFolio({ i }: { i: number }) {
         {snap.stability != null && <div><dt>Stability</dt><dd>{snap.stability}</dd></div>}
         {snap.prestige != null && <div><dt>Prestige</dt><dd>{snap.prestige}</dd></div>}
       </dl>
-      {snap.strait ? (
+      {snap.strait && snap.date <= "1370-09-14" ? (
         <Link to="/strait" className="strait-mini">
           <span>The Strait{snap.strait.areas ? ` · ${snap.strait.areas.held} of ${snap.strait.areas.total} towns` : ""}</span>
           <span className="gauge" aria-label={`Influence ${signed(snap.strait.influence)}, towards ${snap.strait.influence < 0 ? "Castile" : "Morocco"}`}>
@@ -792,11 +795,11 @@ function RealmFolio({ i }: { i: number }) {
       ) : null}
       <h3>The people</h3>
       {shares(snap.population.cultures).map((r) => (
-        <div className="share" key={r.key}><span>{r.key}</span><span className="bar"><i style={{ width: `${r.pct}%` }} /></span><span className="num">{r.pct < 1 ? "<1" : r.pct.toFixed(0)}%</span></div>
+        <div className="share" key={r.key}><span>{cultureName(r.key.toLowerCase())}</span><span className="bar"><i style={{ width: `${r.pct}%` }} /></span><span className="num">{r.pct < 1 ? "<1" : r.pct.toFixed(0)}%</span></div>
       ))}
       <h3>Faith</h3>
       {shares(snap.population.religions).map((r) => (
-        <div className="share" key={r.key}><span>{r.key}</span><span className="bar"><i style={{ width: `${r.pct}%` }} /></span><span className="num">{r.pct < 1 ? "<1" : r.pct.toFixed(0)}%</span></div>
+        <div className="share" key={r.key}><span>{faithName(r.key.toLowerCase())}</span><span className="bar"><i style={{ width: `${r.pct}%` }} /></span><span className="num">{r.pct < 1 ? "<1" : r.pct.toFixed(0)}%</span></div>
       ))}
       <h3>Since the last checkpoint</h3>
       {lately.length ? (

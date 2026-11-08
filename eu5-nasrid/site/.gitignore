@@ -5,3 +5,6 @@ src/generated/
 public/layers/
 public/world/
 public/sea/
+public/cp/
+public/globe/
+public/realm/

@@ -38,13 +38,15 @@ export default function House() {
     return { h, x0, x1, y1, skipRoot: roots.length !== 1 };
   }, [roots.length]);
 
-  // The tree is wider than the page: open it centred on the reigning sultan.
+  // The tree is wider than the page: open it on the line from the founder to the reigning sultan,
+  // centred between them, so the roll never opens on empty parchment above a sultan off to one side.
   useEffect(() => {
     const el = box.current;
-    const node = el?.querySelector<SVGGElement>(".member.reigning g");
-    if (!el || !node) return;
-    const r = node.getBoundingClientRect(), b = el.getBoundingClientRect();
-    el.scrollLeft += r.left + r.width / 2 - (b.left + b.width / 2);
+    const nodes = el ? [...el.querySelectorAll<SVGGElement>(".member.in-line g")] : [];
+    if (!el || !nodes.length) return;
+    const xs = nodes.map((n) => { const r = n.getBoundingClientRect(); return r.left + r.width / 2; });
+    const b = el.getBoundingClientRect();
+    el.scrollLeft += (Math.min(...xs) + Math.max(...xs)) / 2 - (b.left + b.width / 2);
   }, [layout]);
 
   return (
@@ -67,7 +69,7 @@ export default function House() {
               const p = n.data.person;
               const ruled = p.reigns.length > 0;
               return (
-                <Link key={p.id} to={`/people/${p.id}`} data-kind="person" data-id={p.id} className={`member ${ruled ? "sultan" : ""} ${p.id === reigning?.id ? "reigning" : ""}`}>
+                <Link key={p.id} to={`/people/${p.id}`} data-kind="person" data-id={p.id} className={`member ${ruled ? "sultan" : ""} ${p.id === reigning?.id ? "reigning" : ""} ${line.has(p.id) ? "in-line" : ""}`}>
                   <g transform={`translate(${n.x},${n.y})`}>
                     <circle r={52} className="roundel" />
                     <circle r={45} className="inner" />

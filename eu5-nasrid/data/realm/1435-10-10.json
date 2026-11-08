@@ -1,0 +1,595 @@
+{
+ "checkpoint": "1435-10-10",
+ "date": "1435.10.10",
+ "societalValues": {
+  "centralization_vs_decentralization": 35.2,
+  "traditionalist_vs_innovative": 29.83,
+  "spiritualist_vs_humanist": -52.0,
+  "aristocracy_vs_plutocracy": -62.0,
+  "serfdom_vs_free_subjects": -30.1,
+  "belligerent_vs_conciliatory": -60.73,
+  "quality_vs_quantity": 26.69,
+  "offensive_vs_defensive": -8.07,
+  "land_vs_naval": -10.2,
+  "capital_economy_vs_traditional_economy": -20.98,
+  "individualism_vs_communalism": 52.0,
+  "mysticism_vs_jurisprudence": -43.39
+ },
+ "laws": {
+  "feudal_de_jure_law": "by_tradition",
+  "medieval_levy_law": "peasant_levies",
+  "royal_court_customs_law": "harem_policy",
+  "harem_law": "powerful_harem_policy",
+  "iqta_law": "efficient_tax_farming",
+  "censorship": "limited_censorship",
+  "slave_conversion": "allow_slave_religion",
+  "education_elites_law": "education_of_the_people",
+  "education_masses_law": "basic_religious_education",
+  "administrative_system": "feudal_administration",
+  "cultural_traditions_law": "martial_society",
+  "marriage_law": "muslim_marriage",
+  "heir_religion_law": "heir_same_religion",
+  "coin_laws": "gold_and_silver_coins",
+  "precious_metal_distribution_law": "unlimited_gold_export",
+  "mining_law": "nobles_mining_law",
+  "immigration_law": "open_borders_law",
+  "legal_code_law": "sharia_law_policy",
+  "sharia_law": "maliki_policy",
+  "maritime_law": "navy_audits",
+  "piracy_law": "anti_piracy_policy",
+  "distribution_of_power_law": "dop_favor_the_ruler",
+  "nobles_rights_laws": "curtail_nobles_policy",
+  "nd_bureaucratic_funding_law": "nd_crown_coffers_policy",
+  "dhimmi_regulations_law": "dhimmi_status_policy"
+ },
+ "privileges": [
+  "al_caid",
+  "andalusi_elite",
+  "building_rights",
+  "building_roads_rights",
+  "clergy_land_rights",
+  "clergy_literacy_rights",
+  "clerical_advisory_council",
+  "communal_lands",
+  "control_over_the_coinage",
+  "dhimmi_administrative_posts",
+  "dhimmi_military_service",
+  "dhimmi_pact_of_umar",
+  "dhimmi_promote_tolerance",
+  "gra_ulema_council",
+  "gra_visirate",
+  "gra_volunteers_of_faith",
+  "jewish_court_financier_charter",
+  "jewish_physician_exemption",
+  "market_fairs",
+  "mor_andalusian_refugees",
+  "noble_marriage_rights",
+  "noble_sponsored_navy",
+  "nobles_land_rights",
+  "peasants_allowed_weapons_privilege",
+  "peasants_free_peasantry",
+  "sponsor_maritime_contracts",
+  "treasury_rights"
+ ],
+ "reforms": [
+  "autocracy",
+  "catalan_merchant_privileges",
+  "gra_hajib_reform",
+  "royal_decree",
+  "the_jewel_of_alandalus_reform"
+ ],
+ "institutions": [
+  "banking",
+  "feudalism",
+  "legalism",
+  "professional_armies",
+  "renaissance"
+ ],
+ "advances": {
+  "count": 170,
+  "names": [
+   "renaissance_development",
+   "improve_relation_impact_renaissance",
+   "late_feudal_relations",
+   "medieval_military",
+   "renaissance_subject_opinions_advance",
+   "grant_privilege_cost_modifier_renaissance_advance",
+   "rgo_size_advance_renaissance",
+   "food_advance_renaissance",
+   "global_nobles_max_literacy_advance",
+   "global_burghers_max_literacy_advance",
+   "global_clergy_max_literacy_advance",
+   "land_morale_recovery_renaissance_advance",
+   "merchant_power_from_maritime_renaissance_advance",
+   "renaissance_urbanisation",
+   "renaissance_city_rights",
+   "army_initiative_ren",
+   "subject_integration",
+   "renaissance_advance",
+   "patron_of_art",
+   "renaissance_thought",
+   "government_size_renaissance",
+   "chancery_records",
+   "crown_power_advance_renaissance",
+   "renaissance_court",
+   "power_projection_advance_2",
+   "vibrant_court_advance",
+   "banking_advance",
+   "merchants_and_trade",
+   "standardized_coins",
+   "trade_range_advance_age_2",
+   "maritime_advance_age_2",
+   "pound_lock_canals_advance",
+   "professional_armies_advance",
+   "gunpowder_advance",
+   "recruitment_improvements_renaissance",
+   "drill_army_advance",
+   "written_alphabet",
+   "cultural_traditions_law_advance",
+   "cultural_acceptance_advance",
+   "mapmaking",
+   "colonies",
+   "codified_laws",
+   "distribution_of_power_advance",
+   "subjects_advance",
+   "taxation_advance",
+   "state_administration_advance",
+   "legalism_advance",
+   "medieval_administration",
+   "pest_house_advance",
+   "hospital_advance",
+   "agriculture_advance",
+   "windmills_advance",
+   "alchemy_advance",
+   "apothecary_advance",
+   "city_building_advance",
+   "ranching",
+   "horse_riding_advance",
+   "feudalism_advance",
+   "mining_advance",
+   "metallurgy",
+   "mining_law_advance",
+   "bronze_working",
+   "iron_working",
+   "local_smelters_advance",
+   "advanced_mining",
+   "fine_metals_mining",
+   "faster_levy_recruitment",
+   "ship_building_advance",
+   "trade_advance_age_of_trad",
+   "more_merchants_age_of_trad",
+   "organized_religion",
+   "scholasticism",
+   "guilds",
+   "industry_promotion_advance",
+   "peasant_connections_advance",
+   "construction_speed_traditions",
+   "diplomatic_capacity_traditions",
+   "rural_rgo_traditions",
+   "scriptorium_advance",
+   "paper_guild_advance",
+   "armory_advance",
+   "dock_advance",
+   "protected_harbor_advance",
+   "castle_advance",
+   "library_advance",
+   "university_advance",
+   "theater_advance",
+   "royal_court_advance",
+   "republican_assembly_advance",
+   "weapon_guild_advance",
+   "chancery_advance",
+   "art_school_advance",
+   "unlock_footmen_advance",
+   "unlock_archers_advance",
+   "unlock_feudal_levy_advance",
+   "unlock_peasant_levy_advance",
+   "unlock_horsemen_advance",
+   "unlock_armored_horsemen_advance",
+   "unlock_barque_advance",
+   "unlock_traditional_galley_advance",
+   "unlock_m_galley_advance",
+   "unlock_barbary_fusta",
+   "unlock_cog_advance",
+   "fort_limit_1_advance",
+   "paper_guild_fiber_pulp_maintenance_advance",
+   "paper_guild_cloth_maintenance_advance",
+   "monarchy_reform_traditions_advance",
+   "monarchy_royal_court_advance",
+   "nobles_rights_laws_advance",
+   "road_building",
+   "global_supply_limit_modifier_advance_2",
+   "innovativeness",
+   "court_accounting",
+   "state_efficiency",
+   "church_attendance_duty",
+   "nd_adu_jinete_tradition",
+   "nd_adu_ribat_frontier",
+   "nd_adu_acequia_irrigation",
+   "nd_adu_islamic_jurisprudence",
+   "nd_adu_urban_civilization",
+   "nd_adu_mosque_network",
+   "nd_adu_zenata_warriors",
+   "nd_adu_madrasa_tradition",
+   "nd_adu_mediterranean_trade",
+   "nd_adu_convivencia",
+   "nd_adu_naval_arsenal",
+   "nd_adu_caliphal_administration",
+   "adu_khilafa_qurtuba_renewed",
+   "gra_razzias",
+   "gra_skillful_envoys",
+   "gra_nasrid_art",
+   "gra_banu_nasr",
+   "gra_frontier_warriors",
+   "gra_jamaa",
+   "gra_jinetes",
+   "gra_renegade_warriors",
+   "gra_taifa_subjects",
+   "gra_tali_a_coastal_watch",
+   "gra_thughur",
+   "gra_mailed_jinetes",
+   "gra_veteran_thagri",
+   "gra_veteran_tornadizos",
+   "iberian_jinetes",
+   "galeota_andalusi",
+   "ghurab_maghribi",
+   "noble_knights",
+   "serfdom",
+   "feudal_de_jure_law_advance",
+   "salic_law_advance",
+   "semi_salic_law_advance",
+   "partition_inheritance_advance",
+   "local_nobility",
+   "saquiyah",
+   "early_iberian_caravel",
+   "iberian_caravel",
+   "city_of_scholars",
+   "trans_saharan_trade",
+   "slave_soldiers",
+   "hispano_moresque_style",
+   "people_of_allah",
+   "holy_revelation",
+   "islamic_calligraphy",
+   "islamic_prayer",
+   "zakah",
+   "muslim_lineage",
+   "muslim_caravans",
+   "islamic_golden_age",
+   "ramadan",
+   "sunnah",
+   "islamic_jurisprudence"
+  ]
+ },
+ "legitimacy": 100.0,
+ "dominance": null,
+ "expeditions": [
+  {
+   "type": "hajj_caravan_expedition",
+   "location": "granada",
+   "start": "1351.8.9",
+   "end": "1352.4.7",
+   "failed": false
+  },
+  {
+   "type": "hajj_caravan_expedition",
+   "location": "mecca",
+   "start": "1385.8.23",
+   "end": "1386.1.6",
+   "failed": true
+  },
+  {
+   "type": "hajj_caravan_expedition",
+   "location": "sevilla",
+   "start": "1391.5.11",
+   "end": "1392.2.20",
+   "failed": false
+  },
+  {
+   "type": "mining_survey_expedition",
+   "location": "sevilla",
+   "start": "1402.1.13",
+   "end": "1402.7.30",
+   "failed": false
+  },
+  {
+   "type": "mining_survey_expedition",
+   "location": "sevilla",
+   "start": "1431.5.8",
+   "end": "1431.10.20",
+   "failed": false
+  },
+  {
+   "type": "hajj_caravan_expedition",
+   "location": "sevilla",
+   "start": "1433.3.19",
+   "end": "1433.11.23",
+   "failed": false
+  }
+ ],
+ "fleet": {
+  "n_iberian_caravel": 50,
+  "n_nd_adu_war_galley": 8
+ },
+ "army": {
+  "a_granadan_jinetes_2": 6,
+  "a_tornadizos_2": 1,
+  "a_thagri_2": 2
+ },
+ "abroad": [
+  {
+   "type": "embassy",
+   "level": 1,
+   "building": 0,
+   "location": "cairo",
+   "holder": "MAM",
+   "xy": [
+    9127.8,
+    3150.9
+   ]
+  },
+  {
+   "type": "overseas_trading_post",
+   "level": 1,
+   "building": 0,
+   "location": "bafata",
+   "holder": "KAB",
+   "xy": [
+    7022.6,
+    4172.0
+   ]
+  },
+  {
+   "type": "overseas_trading_post",
+   "level": 1,
+   "building": 0,
+   "location": "bintang",
+   "holder": "KAB",
+   "xy": [
+    6954.3,
+    4117.4
+   ]
+  },
+  {
+   "type": "overseas_trading_post",
+   "level": 1,
+   "building": 0,
+   "location": "bissau",
+   "holder": "KAB",
+   "xy": [
+    6987.6,
+    4176.3
+   ]
+  },
+  {
+   "type": "overseas_trading_post",
+   "level": 1,
+   "building": 0,
+   "location": "cacheu",
+   "holder": "KAB",
+   "xy": [
+    6962.2,
+    4173.8
+   ]
+  },
+  {
+   "type": "overseas_trading_post",
+   "level": 1,
+   "building": 0,
+   "location": "casamance",
+   "holder": "KAB",
+   "xy": [
+    6944.6,
+    4158.6
+   ]
+  },
+  {
+   "type": "overseas_trading_post",
+   "level": 1,
+   "building": 0,
+   "location": "diaboudior",
+   "holder": "KAB",
+   "xy": [
+    6944.1,
+    4139.2
+   ]
+  },
+  {
+   "type": "overseas_trading_post",
+   "level": 1,
+   "building": 0,
+   "location": "gambia",
+   "holder": "KAB",
+   "xy": [
+    6935.4,
+    4119.3
+   ]
+  },
+  {
+   "type": "overseas_trading_post",
+   "level": 1,
+   "building": 0,
+   "location": "tankular",
+   "holder": "KAB",
+   "xy": [
+    6984.3,
+    4108.1
+   ]
+  },
+  {
+   "type": "trade_office",
+   "level": 1,
+   "building": 0,
+   "location": "alexandria",
+   "holder": "MAM",
+   "xy": [
+    9043.2,
+    3102.6
+   ]
+  },
+  {
+   "type": "trade_office",
+   "level": 1,
+   "building": 0,
+   "location": "bejaia",
+   "holder": "TUN",
+   "xy": [
+    7913.2,
+    2752.3
+   ]
+  },
+  {
+   "type": "trade_office",
+   "level": 18,
+   "building": 4,
+   "location": "cairo",
+   "holder": "MAM",
+   "xy": [
+    9127.8,
+    3150.9
+   ]
+  },
+  {
+   "type": "trade_office",
+   "level": 1,
+   "building": 0,
+   "location": "constantinople",
+   "holder": "TUR",
+   "xy": [
+    9003.3,
+    2482.1
+   ]
+  },
+  {
+   "type": "trade_office",
+   "level": 3,
+   "building": 0,
+   "location": "fez",
+   "holder": "MOR",
+   "xy": [
+    7460.0,
+    2919.4
+   ]
+  },
+  {
+   "type": "trade_office",
+   "level": 1,
+   "building": 0,
+   "location": "genoa",
+   "holder": "GEN",
+   "xy": [
+    8090.5,
+    2266.1
+   ]
+  },
+  {
+   "type": "trade_office",
+   "level": 12,
+   "building": 0,
+   "location": "marrakesh",
+   "holder": "MOR",
+   "xy": [
+    7319.5,
+    3057.5
+   ]
+  },
+  {
+   "type": "trade_office",
+   "level": 2,
+   "building": 0,
+   "location": "meknes",
+   "holder": "MOR",
+   "xy": [
+    7443.8,
+    2933.6
+   ]
+  },
+  {
+   "type": "trade_office",
+   "level": 1,
+   "building": 0,
+   "location": "messina",
+   "holder": "SIC",
+   "xy": [
+    8386.8,
+    2673.0
+   ]
+  },
+  {
+   "type": "trade_office",
+   "level": 12,
+   "building": 0,
+   "location": "niani",
+   "holder": "MAL",
+   "xy": [
+    7320.9,
+    4224.8
+   ]
+  },
+  {
+   "type": "trade_office",
+   "level": 1,
+   "building": 0,
+   "location": "palermo",
+   "holder": "SIC",
+   "xy": [
+    8295.3,
+    2674.9
+   ]
+  },
+  {
+   "type": "trade_office",
+   "level": 1,
+   "building": 0,
+   "location": "pisa",
+   "holder": "PIS",
+   "xy": [
+    8166.8,
+    2321.9
+   ]
+  },
+  {
+   "type": "trade_office",
+   "level": 10,
+   "building": 0,
+   "location": "sijilmasa",
+   "holder": "MOR",
+   "xy": [
+    7487.3,
+    3071.8
+   ]
+  },
+  {
+   "type": "trade_office",
+   "level": 4,
+   "building": 0,
+   "location": "timbuktu",
+   "holder": "MAL",
+   "xy": [
+    7541.8,
+    3900.7
+   ]
+  },
+  {
+   "type": "trade_office",
+   "level": 1,
+   "building": 0,
+   "location": "trapani",
+   "holder": "SIC",
+   "xy": [
+    8268.1,
+    2677.4
+   ]
+  },
+  {
+   "type": "trade_office",
+   "level": 1,
+   "building": 0,
+   "location": "tunis",
+   "holder": "TUN",
+   "xy": [
+    8156.9,
+    2755.4
+   ]
+  }
+ ]
+}
