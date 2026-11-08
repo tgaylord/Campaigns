@@ -185,8 +185,15 @@ if not a.no_computed:
     for sid in (m.group(1).split() if m else []):
         u = SUB.get(int(sid))
         if u: units.append({'type': get(u, 'type'), 'unit': get(u, 'unit'), 'strength': get(u, 'strength'), 'morale': get(u, 'morale')})
+    # Debt: the loans the country owes, from the loan manager (each loan's remaining amount)
+    debt = 0.0
+    lp = os.path.join(D, 'loan_manager.txt')
+    if os.path.exists(lp):
+        for lm in re.finditer(r'\{\n\tamount=([-\d.]+)\n(?:\t[^\n]*\n)*?\tborrower=(\d+)\n', open(lp, encoding='utf-8', errors='replace').read()):
+            if lm.group(2) == str(CID): debt += float(lm.group(1))
     R['computed'] = {
         'currency': cd,
+        'debt': round(debt, 2),
         'max_manpower': get(me, 'max_manpower'), 'max_sailors': get(me, 'max_sailors'),
         'economy': {'income': get(eco, 'income'), 'expense': get(eco, 'expense'), 'loan_capacity': get(eco, 'loan_capacity'),
                     'last_months_tax_income': get(me, 'last_months_tax_income'), 'monthly_trade_balance': get(me, 'monthly_trade_balance')},
