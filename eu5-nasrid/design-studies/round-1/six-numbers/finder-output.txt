@@ -1,0 +1,50 @@
+ 113.9  plateau broken  land_vs_naval        frozen 51 years, then +62.9
+        1378-04-06..1429-07-02 at -36.61; 1442-06-11 26.26  -> flat line, then a needle
+ 111.9  reversal        sunni_share          98 -> 23 -> 60 % Sunni
+        turn at 1395-06-22  -> line with the turn marked
+ 100.0  drop            stability            fell 51.8 stability
+        1378-04-06 38.7 -> 1414-10-24 -13.1  -> dots fading / falling line
+    84  plateau broken  ships                frozen 31 years, then +53.0
+        1337-08-18..1368-10-24 at 5.00; 1442-06-11 58.00  -> flat line, then a needle
+  70.4  reversal        stability            30 -> -13 -> 14 stability
+        turn at 1414-10-24  -> line with the turn marked
+    55  estates break ranks satisfaction @ 1363-05-20 3 estates off their held levels at once
+        clergy 50->40, peasants 50->58, dhimmi 50->87  -> row of gauges, held level marked
+    50  pattern: breath towns                took and gave back, 5 times
+        18->31->18 (1340); 43->56->49 (1365); 60->94->72 (1375); 118->189->148 (1395); 196->241->196 (1430)  -> map breathing in and out
+    48  estates break ranks satisfaction @ 1442-06-11 3 estates off their held levels at once
+        nobles 40->32, burghers 50->74, peasants 50->34  -> row of gauges, held level marked
+  44.7  drop            people               -45% souls (same towns)
+        1339-05-24 495,359.0 -> 1353-02-02 274,147.0  -> dots fading / falling line
+  42.7  drop            land_vs_naval        fell 27.0 land(-)/sea(+)
+        1337-04-01 -10.0 -> 1378-04-06 -37.0  -> dots fading / falling line
+    40  off held level  dhimmi satisfaction  held at 50, fell/rose to 90
+        on 1359-03-15; held level is 50 in 51 of 71 saves  -> flat band with the break marked
+    38  lead/lag        ships vs land_vs_naval ships moved 38 years before land_vs_naval
+        half of ships's change by 1404-02-03; half of land_vs_naval's by 1442-06-11  -> two lines, shared time axis
+  37.0  record          towns                highest locations: 241.00
+        on 1430-11-03  -> annotated line, one dot ringed
+  36.6  record          ships                lowest ships: 4.00
+        on 1369-11-18  -> annotated line, one dot ringed
+  35.6  drop            burgher_power        fell 6.9 % of power  [ESTIMATED]
+        1346-11-08 12.0 -> 1349-06-04 5.1  -> dots fading / falling line
+  34.9  record          people               lowest souls: 274,147.00
+        on 1353-02-02  -> annotated line, one dot ringed
+  34.5  record          land_vs_naval        lowest land(-)/sea(+): -37.02
+        on 1378-04-06  -> annotated line, one dot ringed
+    32  estates break ranks satisfaction @ 1337-11-16 3 estates off their held levels at once
+        nobles 40->53, clergy 50->41, peasants 50->60  -> row of gauges, held level marked
+    29  off held level  nobles satisfaction  held at 40, fell/rose to 11
+        on 1414-10-24; held level is 40 in 28 of 71 saves  -> flat band with the break marked
+  25.4  drop            sovereignty          fell 15.3 sovereignty
+        1339-05-24 55.0 -> 1348-07-01 39.7  -> dots fading / falling line
+  25.4  record          burgher_power        lowest % of power: 5.10  [ESTIMATED]
+        on 1349-06-04  -> annotated line, one dot ringed
+  25.3  record          stability            lowest stability: -13.10
+        on 1414-10-24  -> annotated line, one dot ringed
+    24  off held level  burghers satisfaction held at 50, fell/rose to 74
+        on 1442-06-11; held level is 50 in 48 of 71 saves  -> flat band with the break marked
+  23.1  record          world_rank           best world rank: 2.00
+        on 1414-10-24  -> annotated line, one dot ringed
+  21.9  record          sovereignty          lowest sovereignty: 39.68
+        on 1348-07-01  -> annotated line, one dot ringed

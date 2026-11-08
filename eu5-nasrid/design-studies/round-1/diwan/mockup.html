@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Dīwān Sits</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#efe6d2; --paper:#f8f2e3; --ink:#2b2118; --ink-2:#5d4d3c; --rule:#cdbb98;
+  --accent:#7a2e1d; --accent-2:#1f5a57; --seal:#7a2e1d; --news:#9a5b00; --news-bg:#f4dfb4;
+  --muted:#8a7a65; --chip:#e7dcc3; --shadow:0 1px 0 #d9c9a6, 0 8px 24px rgba(60,40,10,.10);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16130f; --paper:#221d17; --ink:#ece2cf; --ink-2:#c3b49b; --rule:#4a3f31;
+    --accent:#e0906f; --accent-2:#7fc3bc; --seal:#e0906f; --news:#f0b453; --news-bg:#3a2c14;
+    --muted:#9a8b74; --chip:#2e271f; --shadow:0 1px 0 #000, 0 8px 24px rgba(0,0,0,.4);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16130f; --paper:#221d17; --ink:#ece2cf; --ink-2:#c3b49b; --rule:#4a3f31;
+  --accent:#e0906f; --accent-2:#7fc3bc; --seal:#e0906f; --news:#f0b453; --news-bg:#3a2c14;
+  --muted:#9a8b74; --chip:#2e271f; --shadow:0 1px 0 #000, 0 8px 24px rgba(0,0,0,.4);
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:17px/1.5 "EB Garamond",Georgia,serif;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 16px 96px}
+header.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;padding:22px 0 12px;border-bottom:1px solid var(--rule)}
+.brand h1{margin:0;font-weight:600;font-size:28px;letter-spacing:.02em}
+.brand h1 .ar{font-family:Amiri,serif;font-weight:400;color:var(--accent);margin-left:.4em;font-size:26px}
+.brand p{margin:2px 0 0;color:var(--ink-2);font-style:italic}
+.controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.toggle{display:inline-flex;border:1px solid var(--rule);border-radius:999px;overflow:hidden;background:var(--paper)}
+.toggle button{border:0;background:transparent;padding:4px 12px;cursor:pointer;font-size:15px;color:var(--ink-2)}
+.toggle button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.btn{border:1px solid var(--ink);background:transparent;padding:6px 14px;border-radius:4px;cursor:pointer}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.btn:disabled{opacity:.35;cursor:not-allowed}
+.btn:focus-visible,.opt:focus-within,.chipbtn:focus-visible{outline:2px solid var(--accent-2);outline-offset:2px}
+
+/* reigns */
+.reigns{display:flex;gap:8px;overflow-x:auto;padding:14px 0 10px;scrollbar-width:thin}
+.reign{flex:0 0 auto;min-width:170px;text-align:left;border:1px solid var(--rule);background:var(--paper);border-radius:6px;padding:8px 12px;cursor:pointer}
+.reign[aria-current="true"]{border-color:var(--ink);box-shadow:inset 0 -3px 0 var(--accent)}
+.reign .nm{font-weight:600}
+.reign .dt{font-size:14px;color:var(--ink-2)}
+.marks{font-size:13px;letter-spacing:2px;color:var(--ink-2);margin-top:2px}
+
+/* layout */
+.grid{display:grid;grid-template-columns:260px minmax(0,1fr) 230px;gap:22px;align-items:start}
+@media (max-width:980px){.grid{grid-template-columns:minmax(0,1fr)}.side{order:3}.docket{order:1}.stage{order:2}}
+.panel h2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);margin:6px 0 2px;font-weight:600}
+.panel .sub{font-size:14px;color:var(--muted);margin:0 0 10px}
+.docket ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.docket li button{display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--rule);padding:9px 4px;cursor:pointer}
+.docket li button[aria-current="true"]{background:var(--paper)}
+.docket .d{font-size:13px;color:var(--ink-2)}
+.docket .t{display:block}
+.docket .st{font-size:13px;color:var(--muted);font-style:italic}
+.docket .st.with{color:var(--seal);font-style:normal}
+.docket .st.dis{color:var(--accent-2);font-style:normal}
+@media (max-width:980px){
+  .docket details{border:1px solid var(--rule);border-radius:6px;background:var(--paper);padding:4px 10px}
+  .docket summary{cursor:pointer;padding:6px 0;font-weight:600}
+}
+
+/* card */
+.card{background:var(--paper);border:1px solid var(--rule);border-radius:4px;box-shadow:var(--shadow);padding:22px 26px 20px;position:relative;transform-origin:50% 50%}
+@media (max-width:560px){.card{padding:18px 16px}}
+.card.turning{animation:turn .5s ease-in-out}
+@keyframes turn{0%{transform:perspective(1200px) rotateY(0)}50%{transform:perspective(1200px) rotateY(88deg)}100%{transform:perspective(1200px) rotateY(0)}}
+@media (prefers-reduced-motion:reduce){.card.turning{animation:none}}
+.meta{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.kind{border:1px solid var(--rule);padding:0 8px;border-radius:999px;font-size:12px}
+.who{font-style:italic;color:var(--ink-2);margin:4px 0 0}
+.card h3{font-size:26px;line-height:1.2;margin:14px 0 8px;font-weight:600}
+.prompt{margin:0}
+.src{display:block;text-align:right;font-size:13px;color:var(--muted);font-style:italic;margin-top:4px}
+.opts{display:grid;gap:10px;margin:18px 0 6px}
+.opts.two{grid-template-columns:1fr 1fr}
+.opts.three{grid-template-columns:1fr 1fr 1fr}
+@media (max-width:700px){.opts.two,.opts.three{grid-template-columns:1fr}}
+.opt{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--rule);border-radius:4px;padding:12px;cursor:pointer;background:var(--bg)}
+.opt input{margin-top:5px;accent-color:var(--accent)}
+.opt.sel{border-color:var(--ink);background:var(--paper);box-shadow:inset 3px 0 0 var(--accent)}
+.opt .ot{font-weight:600}
+.opt .terms{display:block;font-size:14px;color:var(--ink-2);margin-top:4px}
+.note-leak{font-size:13px;color:var(--muted);font-style:italic;margin:0 0 10px}
+.weights{margin:14px 0 4px}
+.weights .lbl{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2)}
+.weights .lbl i{text-transform:none;letter-spacing:0}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.chipbtn{border:1px solid var(--rule);background:var(--chip);border-radius:999px;padding:3px 12px;cursor:pointer;font-size:15px}
+.chipbtn[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.actions{display:flex;justify-content:flex-end;margin-top:16px}
+@media (max-width:980px){
+  .actions.sticky{position:sticky;bottom:0;background:var(--paper);border-top:1px solid var(--rule);padding:10px 0 8px;margin:0 -4px}
+  .actions.sticky .btn{width:100%;padding:12px}
+}
+/* back */
+.verdict{display:grid;grid-template-columns:auto 1fr;gap:2px 14px;margin:14px 0 6px;font-size:16px}
+.verdict dt{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);padding-top:2px}
+.verdict dd{margin:0}
+.stamp{display:inline-block;margin:8px 0 2px;padding:6px 12px;border:1.5px solid currentColor;border-radius:3px;font-style:italic}
+.stamp.with{color:var(--seal)}
+.stamp.dis{color:var(--accent-2);border-style:dashed}
+.stamp.none{color:var(--muted)}
+.sec{border-top:1px solid var(--rule);margin-top:16px;padding-top:10px}
+.sec h4{margin:0 0 6px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);font-weight:600}
+.sec ul{margin:4px 0;padding-left:18px}
+.road{margin:6px 0}
+.road q{font-style:italic}
+.road .nt{color:var(--muted);font-style:italic}
+table.read{width:100%;border-collapse:collapse;font-size:15px;margin-top:6px}
+table.read th{font-weight:400;text-align:left;color:var(--ink-2);font-size:13px;border-bottom:1px solid var(--rule);padding:3px 4px}
+table.read td{padding:5px 4px;border-bottom:1px dotted var(--rule);vertical-align:top}
+table.read td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
+table.read td.arrow{color:var(--muted);width:1em;text-align:center}
+.prov{font-size:11px;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--rule);border-radius:3px;padding:0 5px;color:var(--ink-2);white-space:nowrap}
+.prov.est{font-style:italic;opacity:.75}
+.prov.held{color:var(--muted)}
+tr.news td{background:var(--news-bg)}
+.prov.news{border-color:var(--news);color:var(--news);font-weight:600}
+.caveat{font-style:italic;color:var(--ink-2);margin:10px 0 2px}
+.small{font-size:14px;color:var(--ink-2)}
+.closedtag{display:inline-block;font-size:13px;font-style:italic;color:var(--muted);border:1px dashed var(--rule);padding:2px 10px;border-radius:3px;margin-top:6px}
+/* side */
+.scales .row{display:flex;justify-content:space-between;align-items:center;padding:5px 0;border-bottom:1px dotted var(--rule)}
+.bar{font-family:monospace;color:var(--accent);letter-spacing:1px}
+.tally{margin-top:14px;font-size:16px}
+.tally p{margin:4px 0}
+.hint{font-size:13px;color:var(--muted);font-style:italic;margin-top:12px}
+/* register */
+.register{max-width:760px;margin:22px auto 0;background:var(--paper);border:1px solid var(--rule);box-shadow:var(--shadow);padding:28px 30px}
+@media (max-width:560px){.register{padding:20px 16px}}
+.register h2{text-align:center;font-weight:600;letter-spacing:.18em;text-transform:uppercase;font-size:18px;margin:0}
+.register .kept{text-align:center;color:var(--ink-2);font-style:italic;margin:2px 0 14px}
+.entry{display:grid;grid-template-columns:70px 1fr 26px;gap:2px 10px;padding:9px 0;border-bottom:1px solid var(--rule)}
+.entry .y{color:var(--ink-2);font-size:14px}
+.entry .m{font-weight:600}
+.entry .c{font-size:15px;color:var(--ink-2);grid-column:2}
+.entry .mk{grid-row:1/3;grid-column:3;font-size:18px;text-align:center}
+.entry .mk.with{color:var(--seal)} .entry .mk.dis{color:var(--accent-2)}
+.summary{margin:16px 0 6px;font-size:18px}
+.verse{text-align:center;font-style:italic;margin:18px 0 6px;color:var(--ink-2)}
+.verse small{display:block;font-style:normal;font-size:12px;color:var(--muted)}
+.regactions{display:flex;gap:8px;justify-content:center;margin-top:16px;flex-wrap:wrap}
+.interstitial{border-left:3px solid var(--accent);padding:6px 12px;margin:0 0 12px;font-style:italic;color:var(--ink-2);background:var(--paper)}
+.n-p{display:none}
+body.plain .n-c{display:none} body.plain .n-p{display:inline}
+.hidden{display:none!important}
+@media print{
+  header.top .controls,.reigns,.grid,.regactions{display:none!important}
+  body{background:#fff}.register{box-shadow:none;border:0}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <h1>The Dīwān Sits <span class="ar" lang="ar">الديوان</span></h1>
+      <p>Counsel on the matters put before the house of Naṣr</p>
+    </div>
+    <div class="controls">
+      <span class="small">names</span>
+      <div class="toggle" role="group" aria-label="Name forms">
+        <button id="nmC" aria-pressed="true">chronicle</button>
+        <button id="nmP" aria-pressed="false">plain</button>
+      </div>
+      <button class="btn" id="openReg">my register</button>
+    </div>
+  </header>
+
+  <nav class="reigns" id="reigns" aria-label="Reigns"></nav>
+
+  <main class="grid" id="main">
+    <section class="panel docket" id="docket"></section>
+    <section class="stage" id="stage" aria-live="polite"></section>
+    <aside class="panel side" id="side"></aside>
+  </main>
+
+  <section class="register hidden" id="register" aria-label="The Register of Counsel"></section>
+</div>
+
+<script>
+/* ------------------------------------------------------------------
+   DATA: built by hand for this mockup from brief/data/events.json,
+   checkpoints.json, realm-readings.json and people.json.
+   [[chronicle|plain]] marks a name that follows the toggle.
+   prov: save = read from a save; est = estimated; held = estate held at
+   its policy level by the tax rate; news = a move off the held level.
+------------------------------------------------------------------- */
+const REIGNS = [
+  {id:"yusuf", name:"Yūsuf I", h:"733–764 AH", g:"1333–1363"},
+  {id:"saad", name:"Saʿd ibn Yūsuf", h:"764–807 AH", g:"1363–1405",
+   inter:"19 Shawwāl 764 · 1 August 1363 — Yūsuf I dies. Saʿd ibn Yūsuf, fifteen, succeeds his father; Naṣr al-Istijjī of the house of Istijja is regent until he comes of age."},
+  {id:"ismail", name:"Ismāʿīl ibn Saʿd", h:"807–832 AH", g:"1405–1429",
+   inter:"29 Shaʿbān 807 · 2 March 1405 — Saʿd dies. Ismāʿīl ibn Saʿd, admiral, diplomat and once regent, takes the throne of al-Andalus."},
+  {id:"muhammad", name:"Muḥammad V", h:"832 AH –", g:"1429 –",
+   inter:"25 Ramaḍān 832 · 28 June 1429 — Ismāʿīl dies. His son Muḥammad, surrounded by able counsel, becomes Emperor as Muḥammad V."}
+];
+
+const CARDS = [
+ { id:"maid-draft", reign:"yusuf", closed:true,
+   hijri:"8 Shaʿbān 749", greg:"1 November 1348", kind:"Petition",
+   title:"The Maid Draft",
+   decidedBy:"Yūsuf I, amir, in the second year of the pestilence",
+   prompt:"No wage will tempt servants into the houses of sick noblemen, and the [[umarāʾ|nobility]] demand the right to draft commoners into service.",
+   promptSrc:"the chronicle's summary of the game event",
+   throne:{text:"“Institute the draft!”", terms:["favours the [[umarāʾ|nobility]], against the commoners"], src:"Trent's screenshot of his choice"},
+   closedNote:"Only the throne's answer was captured, so this matter is decided without your counsel.",
+   reading:{ before:["1348-07-01","3 Rabīʿ al-Thānī 749","The pestilence and the blade"],
+             after:["1349-01-27","7 Dhū al-Qaʿda 749","The Peace of [[Qurṭuba|Córdoba]]"], gap:"3 months after the decision",
+             rows:[["commoners' satisfaction","50","42","news"],
+                   ["[[umarāʾ|nobles]]' satisfaction","41","40","held"],
+                   ["peace of the realm (stability)","4.0","−1.6","save"],
+                   ["[[Bayt al-Māl|treasury]]","819","1,629","save"]],
+             between:1, also:[] }
+ },
+ { id:"silver", reign:"yusuf", short:"the silver of 752",
+   hijri:"18 Ramaḍān 752", greg:"8 November 1351", kind:"Policy",
+   title:"The Silver of [[Qusanṭīna|Constantina]]",
+   decidedBy:"Faraj ibn Ismāʿīl, regent, while the amir Yūsuf is on the Ḥajj",
+   prompt:"The silver of [[Qusanṭīna|Constantina]] is now the Emirate's own. The court must set its first policy for precious metals: what is to become of the gold and silver its mines bring up?",
+   promptSrc:"the chronicle's summary; terms from Trent's screenshot of the policy screen",
+   termsComplete:true,
+   options:[
+     {id:"a", text:"Export Ban", terms:"gold and silver output −5%, export impact on demand +5%, minting income +33%"},
+     {id:"b", text:"Regulated Export", terms:"selling efficiency +2%"},
+     {id:"c", text:"Unlimited Export", terms:"trade advantage +10%, gold and silver output +5%, minting income −33%", chosen:true}],
+   throne:{text:"Unlimited Export: the floodgates are opened, and the gold and silver flow to foreign markets.", terms:[], src:"Trent's screenshot of the policy screen and confirmation"},
+   reading:{ before:["1351-06-03","7 Rabīʿ al-Thānī 752","The silver of [[Qusanṭīna|Constantina]]"],
+             after:["1353-02-02","26 Dhū al-Ḥijja 753","The Kingdom of [[Ishbīliya|Seville]]"], gap:"15 months after the decision",
+             rows:[["locations held","43","18","save"],
+                   ["[[Bayt al-Māl|treasury]]","912","210","save"],
+                   ["income / month","37.7","47.8","save"],
+                   ["peace of the realm (stability)","13.9","16.5","save"]],
+             between:10,
+             also:["1 February 1353: the Castilian peasants of the new lands rise and declare a Kingdom of [[Ishbīliya|Seville]], taking all 25 locations won in 1349 and 1351, the silver of [[Qusanṭīna|Constantina]] among them."] }
+ },
+ { id:"usury", reign:"saad", short:"the usury of 772",
+   hijri:"7 Shaʿbān 772", greg:"24 February 1371", kind:"Petition",
+   title:"The Spread of Usury",
+   decidedBy:"Saʿd ibn Yūsuf, sultan",
+   prompt:"Muslim merchant families of the growing towns have begun to lend at interest, and the [[ʿulamāʾ|clergy]] demand that it be stopped.",
+   promptSrc:"the chronicle's summary of the game event",
+   termsComplete:false,
+   options:[
+     {id:"a", text:"“The ʿUlamāʾ are clearly overreacting.”", terms:"[[ʿulamāʾ|clergy]] −10% estate satisfaction; a second effect, cut off in the screenshot, moves another estate's satisfaction by 5%", chosen:true},
+     {id:"b", text:"“These vultures shall not steer us away from the light of Allāh.”", terms:null}],
+   throne:{text:"“The ʿUlamāʾ are clearly overreacting.” The lending goes on.", terms:[], src:"Trent's screenshot (the option with its tooltip open is the one chosen)"},
+   reason:{text:"the growth of urbanization in the Emirate", src:"Trent's note on the theme"},
+   reading:{ before:["1370-09-13","20 Ṣafar 772","The Peace of the North Shore"],
+             after:["1373-12-01","14 Jumādā al-Ākhira 775","The War of the Upper March"], gap:"33 months after the decision",
+             rows:[["[[ʿulamāʾ|clergy]]' satisfaction","50","50","held"],
+                   ["[[Bayt al-Māl|treasury]]","160","344","save"],
+                   ["income / month","62.8","90.4","save"],
+                   ["peace of the realm (stability)","32.0","32.3","save"]],
+             heldNote:"The [[ʿulamāʾ|clergy]] are held at 50 by the crown's tax rate at both readings. The reading shows the policy held; it cannot show what holding it cost.",
+             between:14, also:[] }
+ },
+ { id:"capital", reign:"saad", short:"the capital of 781",
+   hijri:"c. 7 Muḥarram 781", greg:"late April 1379", kind:"Jamāʿa",
+   title:"The [[Jamāʿa|Assembly]] of the Capital",
+   decidedBy:"Saʿd ibn Yūsuf, Emperor, with the [[Jamāʿa|assembly]] at [[Gharnāṭa|Granada]]",
+   prompt:"The expansion north has left [[Gharnāṭa|Granada]] isolated, a long ride from the frontier, and the court is cut off from its slowly integrating lands. Two proposals are put to the [[Jamāʿa|assembly]].",
+   promptSrc:"Trent's account (the exact day awaits a save)",
+   termsComplete:true,
+   options:[
+     {id:"a", text:"[[Qurṭuba|Córdoba]]", terms:"the old idea: the caliphs' capital, at the centre of al-Andalus"},
+     {id:"b", text:"[[Ishbīliya|Seville]]", terms:"a capital on the river and the sea, with a trading fleet built by the Catalan shipwrights", chosen:true}],
+   throne:{text:"The [[Jamāʿa|assembly]] and the Emperor choose [[Ishbīliya|Seville]]. The move is to be complete by the end of November.",
+     terms:["new roads to [[Sharīsh|Jerez]], [[Mālaqa|Málaga]], [[Baṭalyaws|Badajoz]] and [[Ṭulayṭula|Toledo]], paid for with five loans from the estates, 565 in all"], src:"Trent's account; save of 2 December 1379"},
+   reason:{text:"[[Gharnāṭa|Granada]] is far from the northern frontier and from the new lands; the court is decentralised from them", src:"Trent's account"},
+   reading:{ before:["1378-04-06","7 Dhū al-Ḥijja 779","The Peace of the Restoration"],
+             after:["1379-12-02","21 Shaʿbān 781","The Capital at [[Ishbīliya|Seville]]"], gap:"7 months after the decision",
+             rows:[["capital","[[Gharnāṭa|Granada]]","[[Ishbīliya|Seville]]","save"],
+                   ["[[Bayt al-Māl|treasury]]","1,016","50","save"],
+                   ["debt","0","565","save"],
+                   ["income / month","79.9","101.4","save"]],
+             between:1, also:[] }
+ },
+ { id:"sephardim", reign:"saad", short:"the Sephardim of 807",
+   hijri:"25 Rabīʿ al-Awwal 807", greg:"1 October 1404", kind:"Petition",
+   title:"The Sephardim of [[al-Mariyya|Almería]]",
+   decidedBy:"Saʿd ibn Yūsuf, Emperor, in the field before Avignon",
+   prompt:"Jews from across Iberia have made the town of [[al-Mariyya|Almería]] a haven, where they live without persecution. Some at court welcome it as equality for all of Allāh's creation; the zealous call it a stain on the empire.",
+   promptSrc:"the chronicle's summary of the game event",
+   termsComplete:false,
+   options:[
+     {id:"a", text:"“We shall protect the rights of the Jewish people.”", terms:"humanist +10; unlocks the Jewish Community building; one is built at [[al-Mariyya|Almería]] for 140", chosen:true},
+     {id:"b", text:"“Allāh would never allow these unbelievers to live in peace!”", terms:null}],
+   throne:{text:"The rights of the Jewish people shall be protected, and the crown builds them a community house at [[al-Mariyya|Almería]].", terms:[], src:"Trent's screen, 1 October 1404"},
+   reading:{ before:["1404-02-03","21 Rajab 806","The Crusade of 806"],
+             after:["1404-10-22","16 Rabīʿ al-Thānī 807","The Peace of Avignon"], gap:"3 weeks after the decision",
+             rows:[["spiritualist ↔ humanist (−100 … +100)","−60","−50","save"],
+                   ["Jewish subjects","136,599","137,615","save"],
+                   ["[[Bayt al-Māl|treasury]]","51","45","save"],
+                   ["dhimmī satisfaction","50","50","held"]],
+             between:4, also:[] }
+ },
+ { id:"naft", reign:"ismail", short:"the naft of 824",
+   hijri:"1 Shaʿbān 824", greg:"1 August 1421", kind:"Petition",
+   title:"The Secret of the Naft",
+   decidedBy:"Ismāʿīl ibn Saʿd, Emperor",
+   prompt:"“Ethiopia has offered us a sum of money if we are to sell them some of our weaponry, specifically the nafts. We can accept, but that will allow them to potentially use them against us.”",
+   promptSrc:"the game's text",
+   termsComplete:false,
+   options:[
+     {id:"a", text:"“It will never backfire.”", terms:"al-Andalus receives 419.55 gold from Ethiopia, 200% of a year's income; Ethiopia gains the Naft Throwers", chosen:true},
+     {id:"b", text:"“They will not have our weapons!”", terms:null}],
+   throne:{text:"The court answers that it will never backfire, and the naft goes to Ethiopia.", terms:["the treasury stood at 610 before the sale (Trent's screenshot)"], src:"Trent's screenshot, 1 August 1421"},
+   reading:{ before:["1420-09-04","25 Shaʿbān 823","The Petty Kings of the Mountains"],
+             after:["1423-11-05","1 Dhū al-Ḥijja 826","The Call of Cairo"], gap:"27 months after the decision",
+             rows:[["[[Bayt al-Māl|treasury]]","306","232","save"],
+                   ["income / month","259.1","283.6","save"],
+                   ["peace of the realm (stability)","5.8","17.4","save"]],
+             between:10,
+             also:["4 November 1421: the Ṭāʾifa of Burtuqāl proclaims itself the Kingdom of Portugal, still the Emperor's.","19 September 1423: the Mamlūk sultan declares war on the Ottomans, and calls on al-Andalus."] }
+ },
+ { id:"zahra", reign:"muhammad", short:"the palace-city of 844",
+   hijri:"4 Jumādā al-Ūlā 844", greg:"1 October 1440", kind:"Petition",
+   title:"The Palace-City of [[Qurṭuba|Córdoba]]",
+   decidedBy:"Muḥammad V, Emperor",
+   prompt:"Madīnat al-Zahrāʾ, the palace-city of the caliphs on the western edge of [[Qurṭuba|Córdoba]], has lain in ruins since the fitna of the eleventh century. It could be raised again.",
+   promptSrc:"the chronicle's summary of the game event",
+   termsComplete:false,
+   options:[
+     {id:"a", text:"“They will see our prestige!”", terms:"starts Madīnat al-Zahrāʾ in [[Qurṭuba|Córdoba]] for 117 gold, a year's work: political influence and prestige each month in a capital or historic capital; crown power +100% and prosperity in the town", chosen:true},
+     {id:"b", text:"“No need to restore old ruins.”", terms:null}],
+   throne:{text:"The Emperor orders the Radiant City rebuilt.", terms:[], src:"Trent's screenshots of 1 October 1440 and his account"},
+   reason:{text:"to set himself above every ruler and pretender who might challenge him", src:"the chronicle's record"},
+   reading:{ before:["1438-01-16","19 Rajab 841","The Admiral Prince"],
+             after:["1442-06-11","1 Ṣafar 846","The Princes Mend the Damage"], gap:"20 months after the decision",
+             rows:[["[[Bayt al-Māl|treasury]]","1,653","1,767","save"],
+                   ["peace of the realm (stability)","24.2","14.2","save"],
+                   ["crown power","27.4","28.0","est"],
+                   ["[[umarāʾ|nobles]]' satisfaction","41","32","news"],
+                   ["burghers' satisfaction","50","74","news"]],
+             between:3,
+             also:["1 June 1442: the Emperor calls the [[Jamāʿa|assembly]] to [[Ishbīliya|Seville]] and seats the burghers as equals of the [[umarāʾ|nobles]] and [[ʿulamāʾ|clergy]]."] }
+ }
+];
+
+const WEIGHTS = [
+  {id:"treasury", c:"[[Bayt al-Māl|the treasury]]"},
+  {id:"faith", c:"[[al-Dīn|the faith]]"},
+  {id:"peace", c:"the peace of the realm"},
+  {id:"name", c:"the name of the house"}
+];
+
+/* ------------------------------ helpers ------------------------------ */
+const esc = s => s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+const N = s => esc(s).replace(/\[\[([^|\]]+)\|([^\]]+)\]\]/g,'<span class="n-c">$1</span><span class="n-p">$2</span>');
+const plainText = s => s.replace(/\[\[([^|\]]+)\|([^\]]+)\]\]/g, (m,c,p) => document.body.classList.contains("plain") ? p : c);
+const MON = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const G = iso => { const [y,m,d] = iso.split("-").map(Number); return `${d} ${MON[m-1]} ${y}`; };
+const KEY = "diwan-counsel-v1";
+let state = {counsel:{}, reign:"yusuf", card:null, names:"c"};
+try { const s = JSON.parse(localStorage.getItem(KEY)||"null"); if (s) state = Object.assign(state, s); } catch(e){}
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch(e){} };
+let draft = {option:null, weight:null};
+
+const cardsOf = r => CARDS.filter(c => c.reign === r);
+const playable = () => CARDS.filter(c => !c.closed);
+const chosenOf = c => c.options.find(o => o.chosen);
+
+/* ------------------------------ render ------------------------------ */
+function renderReigns(){
+  const el = document.getElementById("reigns");
+  el.innerHTML = REIGNS.map(r => {
+    const marks = cardsOf(r.id).map(c => c.closed ? "▪" : (state.counsel[c.id] ? "●" : "○")).join("");
+    return `<button class="reign" data-r="${r.id}" aria-current="${r.id===state.reign}">
+      <div class="nm">${esc(r.name)}</div><div class="dt">${r.h} · ${r.g}</div>
+      <div class="marks" aria-label="docket">${marks}</div></button>`;
+  }).join("");
+  el.querySelectorAll(".reign").forEach(b => b.onclick = () => { state.reign = b.dataset.r; state.card = null; save(); renderAll(); });
+}
+
+function statusOf(c){
+  if (c.closed) return `<span class="st">decided without counsel</span>`;
+  const k = state.counsel[c.id];
+  if (!k) return `<span class="st">awaiting counsel</span>`;
+  return k.option === chosenOf(c).id ? `<span class="st with">◆ with the throne</span>` : `<span class="st dis">✒ dissent entered</span>`;
+}
+
+function renderDocket(){
+  const r = REIGNS.find(x => x.id === state.reign);
+  const list = cardsOf(r.id);
+  const items = list.map(c => `<li><button data-c="${c.id}" aria-current="${c.id===state.card}">
+      <span class="d">${esc(c.hijri)} · ${esc(c.greg)}</span>
+      <span class="t">${N(c.title)}</span>${statusOf(c)}</button></li>`).join("");
+  const inner = `<h2>The docket of ${esc(r.name)}</h2><p class="sub">${r.h} · ${r.g}</p><ol>${items}</ol>`;
+  const narrow = window.matchMedia("(max-width:980px)").matches;
+  document.getElementById("docket").innerHTML = narrow
+    ? `<details><summary>The docket of ${esc(r.name)} (${list.length})</summary>${inner}</details>` : inner;
+  document.querySelectorAll("#docket li button").forEach(b => b.onclick = () => { state.card = b.dataset.c; draft = {option:null, weight:null}; save(); renderAll(); window.scrollTo({top: document.getElementById("stage").offsetTop - 10, behavior:"smooth"}); });
+}
+
+function readingHTML(c){
+  const R = c.reading;
+  const rows = R.rows.map(([l,b,a,p]) => `<tr class="${p==='news'?'news':''}"><td>${N(l)}</td><td class="n">${N(b)}</td><td class="arrow">→</td><td class="n">${N(a)}</td><td><span class="prov ${p}">${{save:"save",est:"est.",held:"held",news:"news"}[p]}</span></td></tr>`).join("");
+  const anyHeld = R.rows.some(r => r[3]==="held"), anyNews = R.rows.some(r => r[3]==="news");
+  return `<div class="sec"><h4>At the next reading of the realm</h4>
+    <div><b>${esc(R.after[1])}</b> · ${G(R.after[0])} · “${N(R.after[2])}”</div>
+    <div class="small">${esc(R.gap)}; compared with the reading of ${esc(R.before[1])} (${G(R.before[0])}), “${N(R.before[2])}”</div>
+    <table class="read"><thead><tr><th></th><th>before</th><th></th><th>after</th><th></th></tr></thead><tbody>${rows}</tbody></table>
+    ${anyHeld||anyNews ? `<p class="small">Estate satisfaction is policy: each estate's tax rate holds it at a chosen level (most at 50, the [[umarāʾ|nobles]] nearer 40). <i>Held</i> means the policy held; <i>news</i> means a move off it.</p>`.replace(/\[\[.*?\]\]/g, m=>N(m)) : ""}
+    ${R.heldNote ? `<p class="small">${N(R.heldNote)}</p>` : ""}
+    <p class="caveat">What followed is not the same as what it caused.</p>
+    <p class="small">The record holds ${R.between} other ${R.between===1?"entry":"entries"} between the decision and this reading.${R.also.length ? " Among them:" : ""}</p>
+    ${R.also.length ? `<ul class="small">${R.also.map(a=>`<li>${N(a)}</li>`).join("")}</ul>` : ""}
+  </div>`;
+}
+
+function headHTML(c){
+  return `<div class="meta"><span>${esc(c.hijri)} · ${esc(c.greg)}</span><span class="kind">${esc(c.kind==="Jamāʿa" ? "" : c.kind)}${c.kind==="Jamāʿa" ? N("[[Jamāʿa|Assembly]]") : ""}</span></div>
+    <p class="who">${N(c.decidedBy)}</p>
+    <h3>${N(c.title)}</h3>
+    <p class="prompt">${N(c.prompt)}</p><span class="src">— ${esc(c.promptSrc)}</span>`;
+}
+
+function renderStage(turned){
+  const stage = document.getElementById("stage");
+  const list = cardsOf(state.reign);
+  if (!state.card || !list.find(c => c.id === state.card)) state.card = (list.find(c => !c.closed && !state.counsel[c.id]) || list[0]).id;
+  const c = CARDS.find(x => x.id === state.card);
+  const r = REIGNS.find(x => x.id === state.reign);
+  const firstOfReign = list[0].id === c.id && r.inter;
+  let html = firstOfReign ? `<div class="interstitial">${esc(r.inter)}</div>` : "";
+
+  if (c.closed){
+    html += `<article class="card">${headHTML(c)}
+      <div class="sec"><h4>The throne's word</h4><p>${N(c.throne.text)}</p>
+      ${c.throne.terms.length ? `<ul>${c.throne.terms.map(t=>`<li>${N(t)}</li>`).join("")}</ul>`:""}
+      <span class="src">— ${esc(c.throne.src)}</span>
+      <span class="closedtag">${esc(c.closedNote)}</span></div>
+      ${readingHTML(c)}
+      <div class="actions"><button class="btn" id="nextBtn">next matter →</button></div></article>`;
+    stage.innerHTML = html; wireNext(c); return;
+  }
+
+  const k = state.counsel[c.id];
+  if (!k){
+    const cols = c.options.length === 3 ? "three" : "two";
+    html += `<article class="card" id="card">${headHTML(c)}
+      <div class="opts ${cols}" role="radiogroup" aria-label="Your counsel">
+        ${c.options.map(o => `<label class="opt ${draft.option===o.id?'sel':''}"><input type="radio" name="opt" value="${o.id}" ${draft.option===o.id?'checked':''}>
+          <span><span class="ot">${N(o.text)}</span>${c.termsComplete ? `<span class="terms">${N(o.terms)}</span>` : ""}</span></label>`).join("")}
+      </div>
+      <p class="note-leak">${c.termsComplete ? "The terms of every option were recorded, so you see what the court saw." : "Terms were not recorded for every option, so none are shown until the card turns."}</p>
+      <div class="weights"><div class="lbl">What do you weigh most? <i>(optional)</i></div>
+        <div class="chips">${WEIGHTS.map(w => `<button class="chipbtn" data-w="${w.id}" aria-pressed="${draft.weight===w.id}">${N(w.c)}</button>`).join("")}</div></div>
+      <div class="actions sticky"><button class="btn primary" id="give" ${draft.option?"":"disabled"}>Give counsel and turn the card</button></div>
+    </article>`;
+    stage.innerHTML = html;
+    stage.querySelectorAll('input[name="opt"]').forEach(i => i.onchange = () => { draft.option = i.value; renderStage(); });
+    stage.querySelectorAll('.chipbtn').forEach(b => b.onclick = () => { draft.weight = draft.weight===b.dataset.w ? null : b.dataset.w; renderStage(); });
+    document.getElementById("give").onclick = () => {
+      state.counsel[c.id] = {option:draft.option, weight:draft.weight}; draft = {option:null, weight:null}; save();
+      renderStage(true); renderDocket(); renderReigns(); renderSide();
+    };
+    return;
+  }
+
+  const mine = c.options.find(o => o.id === k.option), throne = chosenOf(c);
+  const concord = mine.id === throne.id;
+  const others = c.options.filter(o => !o.chosen);
+  const wt = WEIGHTS.find(w => w.id === k.weight);
+  html += `<article class="card ${turned?'turning':''}" id="card">
+    <div class="meta"><span>${esc(c.hijri)} · ${esc(c.greg)}</span><span class="kind">${c.kind==="Jamāʿa" ? N("[[Jamāʿa|Assembly]]") : esc(c.kind)}</span></div>
+    <h3>${N(c.title)}</h3>
+    <dl class="verdict"><dt>Your counsel</dt><dd>${N(mine.text)}${wt ? ` <span class="small">· weighed: ${N(wt.c)}</span>` : ""}</dd>
+      <dt>The throne</dt><dd>${N(throne.text)}</dd></dl>
+    ${concord ? `<span class="stamp with">◆ Your counsel is sealed with the throne's</span>` : `<span class="stamp dis">✒ Your dissent is entered in the margin of the register</span>`}
+    <div class="sec"><h4>The throne's word</h4><p>${N(c.throne.text)}</p>
+      <ul>${throne.terms ? `<li>${N(throne.terms)}</li>` : ""}${c.throne.terms.map(t=>`<li>${N(t)}</li>`).join("")}</ul>
+      <p class="small">Decided by ${N(c.decidedBy)}.${c.reason ? ` Why: ${N(c.reason.text)} <i>(${esc(c.reason.src)})</i>.` : ""}</p>
+      <span class="src">— ${esc(c.throne.src)}</span></div>
+    <div class="sec"><h4>The other road${others.length>1?"s":""}</h4>
+      ${others.map(o => `<p class="road"><q>${N(o.text.replace(/[“”]/g,""))}</q> — ${o.terms ? `the terms the court saw: ${N(o.terms)}.` : `<span class="nt">The record keeps no terms for this road.</span>`}</p>`).join("")}
+      <p class="road nt">No one walked ${others.length>1?"them":"it"}. Nothing more is told.</p></div>
+    ${readingHTML(c)}
+    <div class="actions"><button class="btn" id="nextBtn">next matter →</button></div>
+  </article>`;
+  stage.innerHTML = html; wireNext(c);
+}
+
+function wireNext(c){
+  const b = document.getElementById("nextBtn"); if (!b) return;
+  const all = CARDS, i = all.findIndex(x => x.id === c.id);
+  const left = playable().filter(x => !state.counsel[x.id]);
+  if (!left.length){ b.textContent = "read your register →"; b.onclick = showRegister; return; }
+  const nxt = all.slice(i+1).find(x => true) || left[0];
+  b.onclick = () => { state.reign = nxt.reign; state.card = nxt.id; draft={option:null,weight:null}; save(); renderAll(); window.scrollTo({top:0,behavior:"smooth"}); };
+}
+
+function tallies(){
+  let w=0,d=0, weights={}; const dis=[];
+  playable().forEach(c => { const k = state.counsel[c.id]; if (!k) return;
+    if (k.option === chosenOf(c).id) w++; else { d++; dis.push(c.short); }
+    if (k.weight) weights[k.weight] = (weights[k.weight]||0)+1; });
+  return {w,d,dis,weights};
+}
+
+function renderSide(){
+  const t = tallies();
+  const max = Math.max(1, ...Object.values(t.weights));
+  document.getElementById("side").innerHTML = `<h2>The scales</h2><p class="sub">what you weighed, as you said it</p>
+    <div class="scales">${WEIGHTS.map(x => `<div class="row"><span>${N(x.c)}</span><span class="bar" aria-label="${t.weights[x.id]||0}">${"■".repeat(t.weights[x.id]||0) || "·"}</span></div>`).join("")}</div>
+    <div class="tally"><h2>So far</h2>
+      <p>with the throne: <b>${words(t.w)}</b></p><p>dissent entered: <b>${words(t.d)}</b></p>
+      <p class="small">${words(playable().length - t.w - t.d)} of ${words(playable().length)} matters still await counsel</p></div>
+    <p class="hint">No answer is right. The throne's choice is the record, not the key.</p>`;
+}
+const W = ["none","once","twice","three times","four times","five times","six times","seven times"];
+const words = n => ["none","one","two","three","four","five","six","seven","eight","nine","ten"][n] ?? String(n);
+
+function showRegister(){
+  const t = tallies();
+  const rows = playable().map(c => {
+    const k = state.counsel[c.id]; const yr = c.hijri.replace(/^c\. /,"").split(" ").pop();
+    if (!k) return `<div class="entry"><span class="y">${yr} AH</span><span class="m">${N(c.title)}</span><span class="c"><i>no counsel given</i></span><span class="mk">·</span></div>`;
+    const mine = c.options.find(o=>o.id===k.option), th = chosenOf(c), con = mine.id===th.id;
+    const wt = WEIGHTS.find(w=>w.id===k.weight);
+    return `<div class="entry"><span class="y">${yr} AH</span><span class="m">${N(c.title)}</span>
+      <span class="c">${con ? `you and the throne: ${N(th.text)}` : `you: ${N(mine.text)} · throne: ${N(th.text)}`}${wt?` · weighed: ${N(wt.c)}`:""}</span>
+      <span class="mk ${con?'with':'dis'}" title="${con?'with the throne':'dissent entered'}">${con?"◆":"✒"}</span></div>`;
+  }).join("");
+  const n = t.w + t.d;
+  let sum = n === 0 ? "No counsel has yet been entered in this register." :
+    `In ${words(n)} matter${n>1?"s":""} put before the [[dīwān|cabinet]] you counselled with the throne ${W[t.w]||t.w+" times"}` +
+    (t.d ? `, and ${W[t.d]||t.d+" times"} your dissent was entered in the margin: on ${listJoin(t.dis)}.` : `, and never parted from it.`);
+  const top = Object.entries(t.weights).sort((a,b)=>b[1]-a[1]);
+  if (top.length){
+    const tied = top.filter(x=>x[1]===top[0][1]).map(x=>WEIGHTS.find(w=>w.id===x[0]).c);
+    sum += tied.length===1 ? ` The weight you laid most often on the scales was ${tied[0]}.` : ` The weights you laid most often on the scales, equally, were ${listJoin(tied, "and")}.`;
+  }
+  const reg = document.getElementById("register");
+  reg.innerHTML = `<h2>The Register of Counsel</h2><p class="kept">kept for a member of the ${N("[[dīwān|cabinet]]")} · ${words(playable().length)} matters</p>
+    ${rows}<p class="summary">${N(sum)}</p>
+    <p class="verse">and consult them in the matter; and when you have decided, rely upon Allāh.<small>Qurʾān 3:159 · the mockup's choice of verse, for the writer to confirm or replace</small></p>
+    <div class="regactions"><button class="btn" id="backBtn">back to the docket</button><button class="btn" onclick="window.print()">print my register</button><button class="btn" id="resetBtn">begin again</button></div>`;
+  reg.classList.remove("hidden"); document.getElementById("main").classList.add("hidden");
+  document.getElementById("reigns").classList.add("hidden");
+  document.getElementById("backBtn").onclick = hideRegister;
+  document.getElementById("resetBtn").onclick = () => { state.counsel = {}; state.reign="yusuf"; state.card=null; save(); hideRegister(); };
+  window.scrollTo({top:0});
+}
+function hideRegister(){
+  document.getElementById("register").classList.add("hidden");
+  document.getElementById("main").classList.remove("hidden");
+  document.getElementById("reigns").classList.remove("hidden");
+  renderAll();
+}
+function listJoin(a, last="and"){ return a.length<2 ? (a[0]||"") : a.slice(0,-1).join(", ")+" "+last+" "+a[a.length-1]; }
+
+function setNames(m){
+  state.names = m; save();
+  document.body.classList.toggle("plain", m==="p");
+  document.getElementById("nmC").setAttribute("aria-pressed", m==="c");
+  document.getElementById("nmP").setAttribute("aria-pressed", m==="p");
+}
+document.getElementById("nmC").onclick = () => setNames("c");
+document.getElementById("nmP").onclick = () => setNames("p");
+document.getElementById("openReg").onclick = showRegister;
+
+function renderAll(){ renderReigns(); renderDocket(); renderStage(); renderSide(); }
+let lastNarrow = window.matchMedia("(max-width:980px)").matches;
+window.addEventListener("resize", () => { const n = window.matchMedia("(max-width:980px)").matches; if (n!==lastNarrow){ lastNarrow=n; renderDocket(); } });
+setNames(state.names||"c");
+renderAll();
+</script>
+</body>
+</html>

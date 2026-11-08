@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Six Numbers of al-Andalus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,800;1,8..60,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+:root{
+  --paper:#f7f4ee; --card:#fffdf8; --ink:#1d1b18; --ink2:#5b554c; --rule:#d9d2c5;
+  --plague:#b5482f; --plague-soft:#e9c4b8; --sea:#1f5f8b; --land:#8a6a2f; --sea-soft:#bcd3e3;
+  --est:#8b8579; --hi:#f1e3b5;
+  --serif:"Source Serif 4", Georgia, serif; --sans:Inter, system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#16150f; --card:#1f1d17; --ink:#ece6da; --ink2:#a89f90; --rule:#3a362d;
+    --plague:#e0745a; --plague-soft:#5a2f25; --sea:#6aa8d6; --land:#c9a25a; --sea-soft:#23394a; --est:#8e877a; --hi:#4a4128;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#16150f; --card:#1f1d17; --ink:#ece6da; --ink2:#a89f90; --rule:#3a362d;
+  --plague:#e0745a; --plague-soft:#5a2f25; --sea:#6aa8d6; --land:#c9a25a; --sea-soft:#23394a; --est:#8e877a; --hi:#4a4128;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.55}
+a{color:inherit}
+/* top bar */
+.bar{position:sticky;top:0;z-index:20;display:flex;gap:12px;align-items:center;justify-content:space-between;
+  padding:8px 16px;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--rule);font-family:var(--sans);font-size:13px}
+.bar b{font-family:var(--serif);font-size:15px}
+.toggles{display:flex;gap:8px;flex-wrap:wrap}
+.seg{display:inline-flex;border:1px solid var(--rule);border-radius:99px;overflow:hidden}
+.seg button{all:unset;cursor:pointer;padding:3px 10px;color:var(--ink2)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+/* opening */
+.open{max-width:980px;margin:0 auto;padding:56px 16px 24px}
+.kicker{font-family:var(--sans);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink2)}
+h1{font-size:clamp(40px,8vw,76px);line-height:1;margin:.25em 0 .3em;font-weight:800;letter-spacing:-.01em}
+.dek{font-size:21px;max-width:40em;color:var(--ink2)}
+.six{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:32px}
+.six a{display:block;background:var(--card);padding:16px;text-decoration:none;min-height:130px}
+.six .num{font-size:clamp(28px,5vw,44px);font-weight:800;line-height:1}
+.six .lab{font-family:var(--sans);font-size:13px;color:var(--ink2);margin-top:8px}
+.six .soon{opacity:.45}
+.six .soon .lab::after{content:" · in the full issue";}
+@media (max-width:640px){.six{grid-template-columns:repeat(2,1fr)}}
+/* chapter head */
+.chead{max-width:980px;margin:72px auto 0;padding:0 16px;border-top:3px solid var(--ink)}
+.chead .bign{font-size:clamp(84px,20vw,180px);font-weight:800;line-height:.9;margin:20px 0 4px;letter-spacing:-.03em}
+.chead h2{font-size:clamp(26px,4vw,36px);margin:0 0 6px;line-height:1.15}
+.chead p{color:var(--ink2);max-width:36em;margin:0}
+.c1 .bign{color:var(--plague)} .c2 .bign{color:var(--sea)}
+/* scrolly */
+.scrolly{position:relative;max-width:1100px;margin:0 auto;padding:0 16px;display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:40px}
+.fig{position:sticky;top:64px;height:calc(100vh - 88px);display:flex;align-items:center;grid-column:2;grid-row:1}
+.fig svg{width:100%;height:auto;max-height:100%;overflow:visible}
+.steps{grid-column:1;grid-row:1;padding:30vh 0 40vh}
+.step{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:16px 18px;margin:0 0 70vh;opacity:.45;transition:opacity .3s}
+.step.on{opacity:1;box-shadow:0 2px 14px rgba(0,0,0,.06)}
+.step .when{font-family:var(--sans);font-size:12px;color:var(--ink2);margin-bottom:6px}
+.step p{margin:0 0 .6em}
+.src{font-family:var(--sans);font-size:12px;color:var(--ink2)}
+@media (max-width:820px){
+  .scrolly{display:block;padding:0}
+  .fig{top:44px;height:54vh;padding:6px 12px;background:var(--paper);z-index:5;border-bottom:1px solid var(--rule)}
+  .steps{position:relative;z-index:6;padding:8vh 16px 30vh}
+  .step{margin-bottom:60vh;font-size:17px}
+  .ax text,.lbl{font-size:19px}
+  .fig{height:50vh}
+}
+/* provenance chips */
+.pv{font-family:var(--sans);font-size:11px;white-space:nowrap;padding:0 6px;border-radius:99px;border:1px solid currentColor;vertical-align:1px;cursor:help}
+.pv.read{color:var(--ink)} .pv.read::before{content:"● "}
+.pv.est{color:var(--est);border-style:dashed} .pv.est::before{content:"◌ ≈ "}
+.pv.acct{color:var(--ink2)} .pv.acct::before{content:"✎ "}
+/* close */
+.close{max-width:720px;margin:0 auto 24px;padding:24px 16px}
+blockquote{margin:0;font-size:22px;font-style:italic;border-left:3px solid var(--rule);padding-left:18px}
+.close .note{font-family:var(--sans);font-size:12px;color:var(--ink2);margin-top:10px}
+.btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.btn{all:unset;cursor:pointer;font-family:var(--sans);font-size:13px;border:1px solid var(--ink);padding:6px 12px;border-radius:4px}
+details{font-family:var(--sans);font-size:13px;color:var(--ink2);margin-top:14px}
+details summary{cursor:pointer}
+details code{font-size:12px}
+/* svg text */
+.ax text,.lbl{font-family:var(--sans);font-size:12px;fill:var(--ink2)}
+.ax path,.ax line{stroke:var(--rule)}
+.big{font-family:var(--serif);font-weight:800;fill:var(--ink)}
+@media (max-width:820px){.ax text,.lbl{font-size:19px}}
+/* card modal */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;align-items:center;justify-content:center;z-index:50;padding:16px}
+.modal.on{display:flex}
+.card{width:min(420px,100%);aspect-ratio:4/5;background:var(--card);color:var(--ink);border-radius:8px;padding:24px;display:flex;flex-direction:column;justify-content:space-between;border-top:8px solid var(--accent,var(--plague))}
+.card .cn{font-size:96px;font-weight:800;line-height:.9;color:var(--accent,var(--plague))}
+.card .ct{font-size:22px;font-weight:600;line-height:1.2}
+.card .cm{font-family:var(--sans);font-size:12px;color:var(--ink2)}
+footer{max-width:720px;margin:60px auto;padding:0 16px;font-family:var(--sans);font-size:13px;color:var(--ink2)}
+@media (prefers-reduced-motion: reduce){.step{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <b>Six Numbers</b>
+  <div class="toggles">
+    <span class="seg" role="group" aria-label="Calendar">
+      <button data-cal="h" aria-pressed="true">Hijri</button><button data-cal="w" aria-pressed="false">Western</button>
+    </span>
+    <span class="seg" role="group" aria-label="Names">
+      <button data-nm="c" aria-pressed="true">Ishbīliya</button><button data-nm="p" aria-pressed="false">Seville</button>
+    </span>
+  </div>
+</div>
+
+<header class="open">
+  <div class="kicker">Issue I · <time data-d="1337-04-01" data-short="1"></time> to <time data-d="1442-08-07" data-short="1"></time> · 72 saves · 762 events</div>
+  <h1>Six Numbers of al-Andalus</h1>
+  <p class="dek">In 105 years a tributary <span class="n" data-p="emirate">sultanate</span> of eighteen towns became an empire that held the whole peninsula. These are the numbers that tell how, each one read from the saves and each one marked with where it came from.</p>
+  <nav class="six" aria-label="The six numbers">
+    <a href="#c1"><div class="num" style="color:var(--plague)">42%</div><div class="lab">of the old lands' people died in the Pestilence, 1346–1350</div></a>
+    <a class="soon"><div class="num">39.7</div><div class="lab">sovereignty at its lowest, July 1348</div></a>
+    <a class="soon"><div class="num">5×</div><div class="lab">conquered, then given away to ṭāʾifas: 18 → 241 → 196 towns</div></a>
+    <a class="soon"><div class="num">98→23→60</div><div class="lab">percent Sunni: swamped by conquest, won back</div></a>
+    <a href="#c2"><div class="num" style="color:var(--sea)">38 yrs</div><div class="lab">between the fleet and the realm's turn to the sea</div></a>
+    <a class="soon"><div class="num">#2 / −13</div><div class="lab">second power in the world, least at peace: 1414</div></a>
+  </nav>
+</header>
+
+<!-- ============ CHAPTER 1: 42% ============ -->
+<section id="c1" class="chead c1">
+  <div class="bign">42%</div>
+  <h2>The Pestilence took two in five, and the cities first</h2>
+  <p>The most urban realm in Iberia met the Black Death with hospitals. It lost more of its people than any power the court could count.</p>
+</section>
+<div class="scrolly" id="s1">
+  <div class="fig"><svg id="f1" viewBox="0 0 600 470" role="img" aria-label="Unit chart: each dot is about 5,000 people of the old lands of Granada"></svg></div>
+  <div class="steps">
+    <div class="step" data-s="0">
+      <div class="when"><time data-d="1346-08-01"></time></div>
+      <p>Eighteen towns and their districts: <strong>489,600 souls</strong>. Each dot here is about five thousand of them. The rumours of a great pestilence at Yāyiq, in the lands of the Golden Horde, have begun to travel west.</p>
+      <div class="src"><span class="pv read" title="Population read from the save of 1 August 1346">read</span> save of 1 Aug 1346</div>
+    </div>
+    <div class="step" data-s="1">
+      <div class="when"><time data-d="1346-08-01"></time></div>
+      <p>What made it worse: <strong>41 in every 100</strong> lived in cities. In <span class="n" data-p="Castile">Qashtāla</span> it was <strong>5</strong>. Granada was a realm of crowded streets and markets, the kind the pestilence loves.</p>
+      <div class="src"><span class="pv read" title="Population by settlement rank, compared across the saves of 1 Aug 1346 and 2 Sep 1350">read</span> settlement ranks, two saves compared</div>
+    </div>
+    <div class="step" data-s="2">
+      <div class="when"><time data-d="1346-10-18"></time></div>
+      <p>Against the rumour, the amir builds hospitals in the three great cities: <span class="n" data-p="Granada">Gharnāṭa</span>, <span class="n" data-p="Málaga">Mālaqa</span> and <span class="n" data-p="Almería">al-Mariyya</span>.</p>
+      <div class="src"><span class="pv acct" title="From Trent's account of his decisions, confirmed by the checkpoint of 18 Oct 1346">account</span> Trent's account</div>
+    </div>
+    <div class="step" data-s="3">
+      <div class="when"><time data-d="1348-05-15"></time> to <time data-d="1348-11-02"></time></div>
+      <p>It arrives in the spring of 1348, in the middle of a war with the three crowns. By November it lies over eleven of the realm's towns and has killed <strong>9,055</strong>. Two dots.</p>
+      <div class="src"><span class="pv read" title="Read from the game's Black Death panel (Trent's screenshot)">read</span> Black Death panel, 2 Nov 1348</div>
+    </div>
+    <div class="step" data-s="4">
+      <div class="when">by <time data-d="1350-09-02"></time></div>
+      <p>Then the Great Dying. When it fades, the same eighteen towns hold <strong>284,300</strong>. The cities lost <strong>45%</strong> despite the hospitals; the villages lost 40%.</p>
+      <div class="src"><span class="pv read" title="Same lands compared: saves of 1 Aug 1346 and 2 Sep 1350">read</span> same lands, two saves compared</div>
+    </div>
+    <div class="step" data-s="5">
+      <div class="when">by <time data-d="1350-09-02"></time></div>
+      <p>It fell hardest on the people the cities were made of. <strong>Six in ten burghers</strong> died, and more than half the <span class="n" data-p="clergy">ʿulamāʾ</span> and scholars. The soldiers in their camps lost 15%.</p>
+      <div class="src"><span class="pv read" title="Population by estate, same lands, two saves compared">read</span> pops by estate, two saves compared</div>
+    </div>
+    <div class="step" data-s="6">
+      <div class="when">by <time data-d="1350-09-02"></time></div>
+      <p>No realm the court could count lost more. Iberia lost a third, <span class="n" data-p="Castile">Qashtāla</span> 35%. Across the water the <span class="n" data-p="Moroccans">Marīnids</span> lost 19% and <span class="n" data-p="Tunis">the Ḥafṣids</span> only 7%.</p>
+      <div class="src"><span class="pv read" title="Every location's population in both saves">read</span> every location, two saves compared</div>
+    </div>
+    <div class="step" data-s="7">
+      <div class="when"><time data-d="1352-01-27"></time></div>
+      <p>On the Day of ʿArafa it left the last town of the realm. In all it had killed <strong>221,000</strong> of the realm's people, counting the lands won in the war, and some 52 million across the known world.</p>
+      <div class="src"><span class="pv read" title="Black Death panel, Trent's screenshot">read</span> Black Death panel</div>
+    </div>
+  </div>
+</div>
+<div class="close">
+  <blockquote>“…lost 42% of its people in four years, the cities and their burghers and scholars worst of all, hospitals or no.”</blockquote>
+  <div class="note">From the summary of the Book of the Pestilence. In the full issue this place goes to a line from the book's chronicle entry, which is not among the samples.</div>
+  <div class="btns"><button class="btn" data-card="1">Make a card</button><a class="btn" href="#c2">Next number ↓</a></div>
+  <details><summary>How this chapter was found</summary>
+    <p>On the save of 11 June 1442 the story finder proposed <code>drop · people · −45% (same towns) · 24 May 1339 → 2 Feb 1353</code>. It got there by accident: the second checkpoint was taken during the Sevillan revolt, when only the old eighteen towns were held. The writer kept the story, replaced the number with the exact same-lands comparison from the event of 2 September 1350 (−41.9%), and wrote the steps.</p>
+  </details>
+</div>
+
+<!-- ============ CHAPTER 2: 38 years ============ -->
+<section id="c2" class="chead c2">
+  <div class="bign">38 years</div>
+  <h2>The ships came first. The realm's heart followed a generation later</h2>
+  <p>From 1379 the court built a fleet, but the temper of the realm, the slow drift between land and sea, did not move for half a century. Then it moved 63 points in thirteen years.</p>
+</section>
+<div class="scrolly" id="s2">
+  <div class="fig"><svg id="f2" viewBox="0 0 600 470" role="img" aria-label="Line chart of the realm's land-versus-sea temper and a step chart of ships, 1337 to 1442"></svg></div>
+  <div class="steps">
+    <div class="step" data-s="0">
+      <div class="when"><time data-d="1337-04-01"></time></div>
+      <p>The realm begins leaning a little toward the land, at <strong>−10</strong> on a scale from −100 (the land) to +100 (the sea). Its navy is <strong>five ships</strong>: two galleys, two cogs and a caravel.</p>
+      <div class="src"><span class="pv read" title="Societal value land_vs_naval and the fleet, read from the save">read</span> start of the campaign</div>
+    </div>
+    <div class="step" data-s="1">
+      <div class="when"><time data-d="1337-04-01"></time> to <time data-d="1378-04-06"></time></div>
+      <p>Forty years of wars for survival, then the first wars of the Istirdād, pull it down to <strong>−37</strong>. The fleet shrinks to four.</p>
+      <div class="src"><span class="pv read">read</span> 39 saves</div>
+    </div>
+    <div class="step" data-s="2">
+      <div class="when"><time data-d="1379-04-25"></time> to <time data-d="1411-11-01"></time></div>
+      <p>The turn begins at court: the Jamāʿa of 1379 moves the capital to <span class="n" data-p="Seville">Ishbīliya</span> for its river and its market, and in 1383 the crown prince takes the fleet. The ships multiply, <strong>4 → 16 → 32 → 47</strong>. The temper does not move. It sits at −36.9 for a generation.</p>
+      <div class="src"><span class="pv read">read</span> saves; <span class="pv acct">account</span> the Jamāʿa · no save between Dec 1379 and Mar 1394 (dotted)</div>
+    </div>
+    <div class="step" data-s="3">
+      <div class="when"><time data-d="1411-06-05"></time> to <time data-d="1429-07-02"></time></div>
+      <p>Prince Muḥammad commands the fleet for 8,636 days and becomes Emperor in 1429. <span class="n" data-p="Portugal">al-Burtughāl</span> falls, partly to his blockade of Porto. Still the needle holds at −36.9.</p>
+      <div class="src"><span class="pv read">read</span> saves of 1411 to 1429</div>
+    </div>
+    <div class="step" data-s="4">
+      <div class="when"><time data-d="1432-05-01"></time> to <time data-d="1435-10-10"></time></div>
+      <p>The crusade shows him the Genoese fleet. He orders seven arsenals, the <span class="n" data-p="state arsenals">dār al-ṣināʿa</span> of the old caliphs, and war galleys beside them. In three years the temper climbs from −26 to <strong>−10</strong>.</p>
+      <div class="src"><span class="pv read">read</span> save of 10 Oct 1435</div>
+    </div>
+    <div class="step" data-s="5">
+      <div class="when"><time data-d="1438-01-16"></time></div>
+      <p>For the first time in the chronicle, the realm leans toward the sea: <strong>+1.1</strong>. Harbours are going up in the newly annexed Catalan ports.</p>
+      <div class="src"><span class="pv read">read</span> save of 16 Jan 1438</div>
+    </div>
+    <div class="step" data-s="6">
+      <div class="when"><time data-d="1442-06-11"></time></div>
+      <p>The burghers get the Shipwright Contracts, and the temper reaches <strong>+26</strong>. Half the fleet's growth had come by 1404; half the temper's swing came only in 1442. <strong>Thirty-eight years.</strong> On the day of the Golden Century the Emperor proclaims a Thalassocracy.</p>
+      <div class="src"><span class="pv read">read</span> save of 11 Jun 1442 · <span class="pv acct">account</span> Thalassocracy, 7 Aug 1442</div>
+    </div>
+  </div>
+</div>
+<div class="close">
+  <blockquote>“The court said that the new age had been given both its symbols at once, a palace on the land and a fleet on the sea, and that it was not hard to tell which the Emperor loved more.”</blockquote>
+  <div class="note">From the chronicle, <i>Of the Princes’ Mending, and the Golden Century</i>, <time data-d="1442-08-07"></time>.</div>
+  <div class="btns"><button class="btn" data-card="2">Make a card</button></div>
+  <details><summary>How this chapter was found</summary>
+    <p>On the save of 11 June 1442 the story finder ranked <code>plateau broken · land_vs_naval · frozen 51 years, then +62.9</code> first of all its proposals, and <code>lead/lag · ships vs land_vs_naval · 38 years</code> twelfth. The writer merged the two into a single chapter and took the lag as its headline number.</p>
+  </details>
+</div>
+
+<footer>
+  <p><span class="pv read">read</span> read from a save or from the game's own panels · <span class="pv est">estimated</span> computed, not read (for example the estates' shares of power) · <span class="pv acct">account</span> from the player's account of his choices. Writer's colour has no number and never appears in a chart.</p>
+  <p>Low-fidelity mockup for a design exercise. Data inlined from the campaign's checkpoints, realm readings and events. Native scrolling throughout: the page never takes over the reader's scroll.</p>
+</footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Share card">
+  <div>
+    <div class="card" id="card"></div>
+    <div class="btns" style="justify-content:center"><button class="btn" style="color:#fff;border-color:#fff" id="mclose">Close</button></div>
+  </div>
+</div>
+
+<script>
+/* ---------- calendar: game dates are Julian; tabular Islamic civil calendar, epoch JD 1948440 ---------- */
+const HM=["Muḥarram","Ṣafar","Rabīʿ al-Awwal","Rabīʿ al-Thānī","Jumādā al-Ūlā","Jumādā al-Ākhira","Rajab","Shaʿbān","Ramaḍān","Shawwāl","Dhū al-Qaʿda","Dhū al-Ḥijja"];
+const WM=["January","February","March","April","May","June","July","August","September","October","November","December"];
+const jdJ=(y,m,d)=>{const a=Math.floor((14-m)/12),y2=y+4800-a,m2=m+12*a-3;return d+Math.floor((153*m2+2)/5)+365*y2+Math.floor(y2/4)-32083};
+const E=1948440, i2jd=(y,m,d)=>d+Math.ceil(29.5*(m-1))+(y-1)*354+Math.floor((3+11*y)/30)+E-1;
+function hijri(s){const [y,m,d]=s.split("-").map(Number),jd=jdJ(y,m,d);const hy=Math.floor((30*(jd-E)+10646)/10631);
+  const hm=Math.min(12,Math.ceil((jd-(29+i2jd(hy,1,1)))/29.5)+1);return [hy,hm,jd-i2jd(hy,hm,1)+1]}
+let CAL="h", NM="c";
+try{CAL=localStorage.getItem("cal")||"h";NM=localStorage.getItem("nm")||"c"}catch(e){}
+function fmt(s,short){const [y,m,d]=s.split("-").map(Number),[hy,hm,hd]=hijri(s);
+  const H=`${hd} ${HM[hm-1]} ${hy}`, W=`${d} ${WM[m-1]} ${y}`;
+  if(short) return CAL==="h"?`${hy} AH (${y})`:`${y} (${hy} AH)`;
+  return CAL==="h"?`${H} <span class="src">(${d} ${WM[m-1].slice(0,3)} ${y})</span>`:`${W} <span class="src">(${hy} AH)</span>`}
+function paintDates(){document.querySelectorAll("time[data-d]").forEach(t=>t.innerHTML=fmt(t.dataset.d,t.dataset.short))}
+/* ---------- names: chronicle form or plain ---------- */
+document.querySelectorAll(".n").forEach(s=>s.dataset.c=s.textContent);
+const nm=(c,p)=>NM==="c"?c:p;
+function paintNames(){document.querySelectorAll(".n").forEach(s=>s.textContent=NM==="c"?s.dataset.c:s.dataset.p);redraw()}
+function setToggles(){document.querySelectorAll("[data-cal]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.cal===CAL));
+  document.querySelectorAll("[data-nm]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.nm===NM))}
+document.querySelectorAll("[data-cal]").forEach(b=>b.onclick=()=>{CAL=b.dataset.cal;try{localStorage.setItem("cal",CAL)}catch(e){};setToggles();paintDates()});
+document.querySelectorAll("[data-nm]").forEach(b=>b.onclick=()=>{NM=b.dataset.nm;try{localStorage.setItem("nm",NM)}catch(e){};setToggles();paintNames()});
+
+const RM=matchMedia("(prefers-reduced-motion: reduce)").matches, DUR=RM?0:650;
+
+/* ================= CHAPTER 1 DATA (events 1350-09-02, 1348-11-02, 1352-01-27) ================= */
+const GROUPS=[{k:"city",lab:"in cities",n:40,lost:18,cols:5},{k:"town",lab:"towns",n:4,lost:2,cols:2},{k:"rural",lab:"countryside",n:54,lost:22,cols:6}];
+const ESTATES=[["burghers","Burghers",-60],["clergy",null,-53],["nobles",null,-49],["peasants","Peasants",-44],["laborers","Labourers",-27],["soldiers","Soldiers",-15]];
+const WORLD=[["GRA","Granada (old lands)",-41.9],["MLL","Mallorca",-39.3],["NAP","Naples",-35.7],["CAS",null,-35.1],["IB","All Iberia",-34.3],["ARA",null,-33.3],["FRA","France",-33.3],["ENG","England",-31.0],["POR",null,-29.8],["BYZ","Byzantium",-26.3],["TUR","Ottomans",-23.0],["MOR",null,-18.5],["MAM","Mamlūk Egypt",-15.1],["W","The known world",-11.6],["TUN",null,-7.4]];
+const CN={CAS:["Qashtāla","Castile"],ARA:["Arghūn","Aragon"],POR:["al-Burtughāl","Portugal"],MOR:["Banū Marīn","Morocco"],TUN:["Banū Ḥafṣ","Tunis"],clergy:["ʿUlamāʾ","Clergy"],nobles:["Umarāʾ","Nobility"]};
+const label=(k,l)=>l||nm(...CN[k]);
+
+const f1=d3.select("#f1"); let s1=0;
+const dots=[]; {let x0=40; GROUPS.forEach(g=>{const rows=Math.ceil(g.n/g.cols);
+  for(let i=0;i<g.n;i++){const c=i%g.cols,r=Math.floor(i/g.cols);dots.push({g:g.k,i,x:x0+c*24,y:132+r*24,dead:i>=g.n-g.lost})}
+  g.x0=x0; g.w=g.cols*24; x0+=g.cols*24+60;});}
+f1.append("text").attr("class","big").attr("id","f1n").attr("x",40).attr("y",60).attr("font-size",44);
+f1.append("text").attr("class","lbl").attr("id","f1s").attr("x",40).attr("y",86);
+const glab=f1.append("g"); GROUPS.forEach(g=>glab.append("text").attr("class","lbl gl").attr("x",g.x0-8).attr("y",112).text(g.lab));
+const dotG=f1.append("g");
+dotG.selectAll("circle").data(dots).join("circle").attr("cx",d=>d.x).attr("cy",d=>d.y).attr("r",9).attr("fill","var(--ink)");
+const hosp=f1.append("g").attr("opacity",0);
+hosp.append("path").attr("d","M0,-9h6v-6h6v6h6v6h-6v6h-6v-6h-6z").attr("transform",`translate(${GROUPS[0].x0+30},335)`).attr("fill","var(--plague)");
+hosp.append("text").attr("class","lbl hl").attr("x",GROUPS[0].x0+56).attr("y",334);
+const cas=f1.append("g").attr("opacity",0).attr("transform","translate(40,370)");
+cas.append("text").attr("class","lbl cl").attr("y",0);
+for(let i=0;i<100;i++)cas.append("circle").attr("cx",4+(i%50)*10.6).attr("cy",16+Math.floor(i/50)*11).attr("r",3.6).attr("fill",i<5?"var(--ink)":"var(--rule)");
+cas.append("text").attr("class","lbl").attr("y",54).text("Granada, for comparison: 41 in 100 in cities");
+const bars=f1.append("g").attr("opacity",0);
+
+function drawBars(rows,title){
+  const x=d3.scaleLinear().domain([0,65]).range([0,330]);const h=Math.min(26,300/rows.length);
+  bars.selectAll("*").remove();
+  bars.append("text").attr("class","lbl").attr("x",40).attr("y",130).text(title);
+  const g=bars.selectAll("g.r").data(rows).join("g").attr("class","r").attr("transform",(d,i)=>`translate(0,${145+i*h})`);
+  g.append("text").attr("class","lbl").attr("x",190).attr("y",h*0.62).attr("text-anchor","end").text(d=>label(d[0],d[1]));
+  g.append("rect").attr("x",200).attr("y",2).attr("height",h-6).attr("width",0).attr("fill",d=>d[0]==="GRA"||d[0]==="burghers"?"var(--plague)":"var(--plague-soft)")
+    .transition().duration(DUR).attr("width",d=>x(-d[2]));
+  g.append("text").attr("class","lbl").attr("x",d=>206+x(-d[2])).attr("y",h*0.62).text(d=>`${String(d[2]).replace("-","−")}%`);
+}
+function step1(s){ s1=s;
+  const showDots=s<=4||s===7, n=d3.select("#f1n"), sub=d3.select("#f1s");
+  dotG.transition().duration(DUR).attr("opacity",showDots?1:0); glab.attr("opacity",showDots?1:0);
+  bars.transition().duration(DUR).attr("opacity",showDots?0:1);
+  hosp.transition().duration(DUR).attr("opacity",s===2?1:0); hosp.select(".hl").text(`hospitals: ${nm("Gharnāṭa","Granada")}, ${nm("Mālaqa","Málaga")}, ${nm("al-Mariyya","Almería")}`);
+  cas.transition().duration(DUR).attr("opacity",s===1?1:0); cas.select(".cl").text(`${nm("Qashtāla","Castile")}: 5 in 100 lived in cities`);
+  glab.selectAll(".gl").attr("fill",(d,i)=>s===1&&i===0?"var(--plague)":null);
+  dotG.selectAll("circle").transition().duration(DUR).delay(d=>RM?0:(s>=4?Math.random()*400:0))
+    .attr("fill",d=>{ if(s===1&&d.g==="city")return "var(--plague)";
+      const dead = (s===3&&d.g==="rural"&&d.i>=52) || (s>=4&&d.dead); return dead?"var(--plague-soft)":"var(--ink)"})
+    .attr("r",d=>((s===3&&d.g==="rural"&&d.i>=52)||(s>=4&&d.dead))?6:9);
+  const T={0:["489,600","souls in the eighteen towns · one dot ≈ 5,000"],1:["41%","of the people lived in cities"],2:["3","hospitals raised against a rumour"],
+    3:["9,055","dead by 2 November 1348, across the realm"],4:["−42%","489,600 → 284,300 in the same eighteen towns"],7:["221,000","dead in all, counting the lands won in the war"]};
+  if(T[s]){n.text(T[s][0]).style("fill",s>=3?"var(--plague)":"var(--ink)");sub.text(T[s][1])} else {n.text("");sub.text("")}
+  if(s===5)drawBars(ESTATES,"Share of each kind of people lost, old lands, 1346–1350");
+  if(s===6)drawBars(WORLD,"Share of people lost, same lands, Aug 1346 to Sep 1350");
+}
+
+/* ================= CHAPTER 2 DATA (realm-readings land_vs_naval; checkpoints ships) ================= */
+const LV=[["1337-04-01",-10.0],["1337-08-18",-10.44],["1337-11-16",-10.87],["1339-05-24",-13.46],["1339-09-02",-13.46],["1340-05-30",-13.46],["1340-08-11",-13.6],["1340-08-28",-13.6],["1340-10-30",-13.93],["1341-09-08",-15.99],["1343-05-20",-16.58],["1345-01-27",-16.58],["1346-10-18",-16.58],["1346-11-08",-16.78],["1348-07-01",-22.47],["1349-01-27",-24.4],["1349-06-04",-25.73],["1351-06-03",-31.76],["1353-02-02",-33.44],["1353-07-05",-33.44],["1355-06-16",-33.78],["1359-03-15",-33.78],["1360-06-26",-33.78],["1363-05-20",-33.78],["1363-08-02",-33.78],["1364-09-11",-33.78],["1366-04-05",-33.78],["1366-10-02",-33.78],["1366-11-06",-33.78],["1367-08-07",-33.78],["1368-05-13",-33.78],["1368-10-24",-33.78],["1369-11-18",-33.78],["1370-09-13",-33.78],["1373-12-01",-33.78],["1375-03-15",-34.12],["1375-03-16",-34.12],["1375-06-05",-35.19],["1378-04-06",-37.02],["1379-12-02",-37.02],["1394-03-04",-36.89],["1395-06-22",-36.89],["1395-08-05",-36.89],["1404-02-03",-36.89],["1404-10-22",-36.89],["1405-01-07",-36.89],["1405-03-31",-36.89],["1408-08-05",-36.89],["1410-06-29",-36.89],["1411-11-01",-36.89],["1414-10-24",-36.89],["1416-01-01",-36.89],["1420-08-11",-36.89],["1420-09-04",-36.89],["1423-11-05",-36.89],["1424-08-14",-36.89],["1428-05-25",-36.89],["1428-11-16",-36.89],["1428-12-01",-36.89],["1429-07-02",-36.61],["1430-05-18",-33.81],["1430-08-17",-33.04],["1430-11-03",-32.25],["1430-11-05",-32.25],["1431-10-01",-29.14],["1432-05-01",-27.32],["1432-07-27",-26.39],["1435-10-10",-10.2],["1438-01-16",1.08],["1442-06-11",26.26]];
+const SH=[["1337-04-01",5],["1337-08-18",5],["1368-10-24",5],["1369-11-18",4],["1379-12-02",4],["1394-03-04",16],["1404-02-03",32],["1408-08-05",31],["1410-06-29",53],["1411-11-01",47],["1428-05-25",50],["1435-10-10",58],["1442-06-11",58]];
+const yr=s=>{const [y,m,d]=s.split("-").map(Number);return y+(m-1)/12+(d-1)/365};
+const lv=LV.map(([d,v])=>({d,t:yr(d),v})), sh=SH.map(([d,v])=>({d,t:yr(d),v}));
+const STOP=["1337-11-16","1378-04-06","1411-11-01","1429-07-02","1435-10-10","1438-01-16","1442-06-11"].map(yr);
+const f2=d3.select("#f2"), X=d3.scaleLinear().domain([1337,1445]).range([50,560]);
+const Y=d3.scaleLinear().domain([-50,50]).range([330,90]), YS=d3.scaleLinear().domain([0,60]).range([450,370]);
+f2.append("g").attr("class","ax").attr("transform","translate(0,450)").call(d3.axisBottom(X).ticks(6).tickFormat(d3.format("d")));
+f2.append("g").attr("class","ax").attr("transform","translate(50,0)").call(d3.axisLeft(Y).ticks(4));
+f2.append("g").attr("class","ax").attr("transform","translate(50,0)").call(d3.axisLeft(YS).ticks(2));
+f2.append("line").attr("x1",50).attr("x2",560).attr("y1",Y(0)).attr("y2",Y(0)).attr("stroke","var(--ink2)").attr("stroke-dasharray","2 3");
+f2.append("text").attr("class","lbl").attr("x",56).attr("y",Y(46)).text("toward the sea ↑").attr("fill","var(--sea)");
+f2.append("text").attr("class","lbl").attr("x",56).attr("y",Y(-47)).text("toward the land ↓").attr("fill","var(--land)");
+f2.append("text").attr("class","lbl").attr("x",56).attr("y",364).text("ships in the fleet");
+const plateau=f2.append("rect").attr("x",X(1378.3)).attr("width",X(1429.5)-X(1378.3)).attr("y",Y(-33)).attr("height",Y(-41)-Y(-33)).attr("fill","var(--hi)").attr("opacity",0);
+const plab=f2.append("text").attr("class","lbl").attr("x",X(1392)).attr("y",Y(-43)+6).attr("opacity",0).text("−36.9, unmoved for 51 years");
+const clipR=f2.append("clipPath").attr("id","c2clip").append("rect").attr("x",0).attr("y",0).attr("height",470).attr("width",X(1337.9));
+const gl=f2.append("g").attr("clip-path","url(#c2clip)");
+// split the line where saves are more than 10 years apart, and draw the gap dotted
+const segs=[[]]; lv.forEach((p,i)=>{ if(i&&p.t-lv[i-1].t>10){segs.push([lv[i-1],p],[]);} segs[segs.length-1].push(p)});
+const line=d3.line().x(d=>X(d.t)).y(d=>Y(d.v));
+segs.forEach((s,i)=>gl.append("path").attr("d",line(s)).attr("fill","none").attr("stroke","var(--sea)").attr("stroke-width",i%2?1.5:3).attr("stroke-dasharray",i%2?"2 4":null));
+gl.append("path").attr("d",d3.area().curve(d3.curveStepAfter).x(d=>X(d.t)).y0(YS(0)).y1(d=>YS(d.v))(sh)).attr("fill","var(--sea-soft)").attr("stroke","var(--sea)");
+const dot=f2.append("circle").attr("r",6).attr("fill","var(--sea)").attr("stroke","var(--card)").attr("stroke-width",2);
+const read=f2.append("text").attr("class","big").attr("x",560).attr("y",48).attr("text-anchor","end").attr("font-size",44);
+const readS=f2.append("text").attr("class","lbl").attr("x",560).attr("y",72).attr("text-anchor","end");
+const ann=f2.append("g");
+const lag=f2.append("g").attr("opacity",0);
+lag.append("line").attr("x1",X(1404.1)).attr("x2",X(1442.4)).attr("y1",360).attr("y2",360).attr("stroke","var(--ink)").attr("marker-end","url(#arr)");
+lag.append("circle").attr("cx",X(1404.1)).attr("cy",YS(32)).attr("r",4).attr("fill","var(--ink)");
+lag.append("circle").attr("cx",X(1442.4)).attr("cy",Y(26.26)).attr("r",4).attr("fill","var(--ink)");
+lag.append("text").attr("class","lbl").attr("x",X(1423)).attr("y",354).attr("text-anchor","middle").attr("fill","var(--ink)").text("38 years");
+function at(t){let p=lv[0];lv.forEach(q=>{if(q.t<=t+0.01)p=q});return p}
+function shipsAt(t){let p=sh[0];sh.forEach(q=>{if(q.t<=t+0.01)p=q});return p.v}
+const NOTES={2:[[1379.3,"court to "+"@S"],[1383.5,"prince admiral"]],4:[[1432.3,"seven arsenals"]],5:[[1438.0,"first lean to the sea"]],6:[[1442.4,"Shipwright Contracts"]]};
+function step2(s){
+  const t=STOP[s]; clipR.transition().duration(DUR).attr("width",X(t)+2);
+  const p=at(t); dot.transition().duration(DUR).attr("cx",X(p.t)).attr("cy",Y(p.v));
+  read.text((p.v>0?"+":"−")+Math.abs(p.v).toFixed(1)).style("fill",p.v>0?"var(--sea)":"var(--land)");
+  readS.text(`temper on ${p.d.slice(0,4)} · ${shipsAt(t)} ships`);
+  plateau.transition().duration(DUR).attr("opacity",s>=2&&s<=3?.9:0); plab.transition().duration(DUR).attr("opacity",s>=2&&s<=3?1:0);
+  lag.transition().duration(DUR).attr("opacity",s===6?1:0);
+  ann.selectAll("*").remove();
+  (NOTES[s]||[]).forEach(([tt,txt],i)=>{ txt=txt.replace("@S",nm("Ishbīliya","Seville"));
+    ann.append("line").attr("x1",X(tt)).attr("x2",X(tt)).attr("y1",Y(48)-i*0).attr("y2",440).attr("stroke","var(--ink2)").attr("stroke-dasharray","1 3");
+    const r=X(tt)>480; ann.append("text").attr("class","lbl").attr("x",X(tt)+(r?-4:4)).attr("text-anchor",r?"end":"start").attr("y",Y(48)+16*i).text(txt)});
+}
+f2.append("defs").append("marker").attr("id","arr").attr("viewBox","0 0 10 10").attr("refX",9).attr("refY",5).attr("markerWidth",6).attr("markerHeight",6).attr("orient","auto")
+  .append("path").attr("d","M0,0L10,5L0,10z").attr("fill","var(--ink)");
+
+/* ---------- native scroll; a step is active once its top passes 65% of the viewport (85% on phones, where the graphic sits above) ---------- */
+let cur={s1:-1,s2:-1};
+function onScroll(){[["s1",step1],["s2",step2]].forEach(([id,fn])=>{
+  const steps=[...document.querySelectorAll(`#${id} .step`)]; let a=0;
+  steps.forEach((el,i)=>{if(el.getBoundingClientRect().top<innerHeight*(innerWidth<=820?0.85:0.65))a=i});
+  steps.forEach((el,i)=>el.classList.toggle("on",i===a));
+  if(a!==cur[id]){cur[id]=a;fn(a)} })}
+let tick=false; addEventListener("scroll",()=>{if(!tick){tick=true;requestAnimationFrame(()=>{onScroll();tick=false})}},{passive:true});
+function redraw(){cur={s1:-1,s2:-1};onScroll()}
+
+/* ---------- share card (rendered statically at build time in the real thing) ---------- */
+const modal=document.getElementById("modal"), card=document.getElementById("card");
+document.querySelectorAll("[data-card]").forEach(b=>b.onclick=()=>{
+  const one=b.dataset.card==="1";
+  card.style.setProperty("--accent",one?"var(--plague)":"var(--sea)");
+  card.innerHTML= one
+   ? `<div class="cm">SIX NUMBERS OF AL-ANDALUS · 1</div><div><div class="cn">42%</div><div class="ct">of the old lands' people died in the Pestilence; the cities lost 45%, the burghers 60%.</div></div>
+      <svg viewBox="0 0 300 60">${Array.from({length:50},(_,i)=>`<circle cx="${6+i%25*12}" cy="${10+Math.floor(i/25)*16}" r="4.5" fill="${i>=29?'var(--plague-soft)':'var(--ink)'}"/>`).join("")}</svg>
+      <div class="cm">${fmt("1346-08-01",1)} – ${fmt("1350-09-02",1)} · <span class="pv read">read</span> same lands, two saves compared<br>…/six-numbers/42-percent</div>`
+   : `<div class="cm">SIX NUMBERS OF AL-ANDALUS · 5</div><div><div class="cn">38 yrs</div><div class="ct">The fleet grew from 4 ships to 47; the realm's temper swung from land to sea a generation later, −37 to +26.</div></div>
+      <svg viewBox="0 0 300 60"><path d="${d3.line().x(d=>(d.t-1337)/108*300).y(d=>30-d.v*0.7)(lv)}" fill="none" stroke="var(--sea)" stroke-width="2.5"/><line x1="0" x2="300" y1="30" y2="30" stroke="var(--rule)" stroke-dasharray="2 3"/></svg>
+      <div class="cm">${fmt("1379-04-25",1)} – ${fmt("1442-06-11",1)} · <span class="pv read">read</span> 70 readings<br>…/six-numbers/38-years</div>`;
+  modal.classList.add("on")});
+document.getElementById("mclose").onclick=()=>modal.classList.remove("on");
+modal.onclick=e=>{if(e.target===modal)modal.classList.remove("on")};
+
+setToggles(); paintDates(); paintNames();
+</script>
+</body>
+</html>

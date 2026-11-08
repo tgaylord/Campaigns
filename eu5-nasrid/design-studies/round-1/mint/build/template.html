@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dār al-Sikka</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wood:#3b2618; --wood2:#4a3020; --felt:#1f3b33; --felt2:#173029; --brass:#c9a24a;
+  --paper:#f3ead6; --ink:#2a2118; --muted:#8c7a62; --line:#5c4330;
+  --up:#1d6b5a; --down:#9b2c22;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:#20150d;color:var(--paper);font:15px/1.45 Inter,system-ui,sans-serif}
+header{padding:18px 16px 10px;max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:end;justify-content:space-between}
+h1{font:700 30px/1 "Cormorant Garamond",serif;margin:0;letter-spacing:.02em}
+h1 small{display:block;font:500 15px/1.3 "Cormorant Garamond",serif;color:var(--brass);letter-spacing:.04em;margin-top:4px}
+.ctrls{display:flex;flex-wrap:wrap;gap:6px}
+button{font:600 12px Inter,sans-serif;background:var(--wood2);color:var(--paper);border:1px solid var(--line);border-radius:4px;padding:6px 10px;cursor:pointer}
+button[aria-pressed=true]{background:var(--brass);color:#24170c;border-color:var(--brass)}
+main{max-width:1200px;margin:0 auto;padding:0 16px 120px}
+.cabinet{background:linear-gradient(#4a3020,#3b2618);border:3px solid #24170c;border-radius:6px;padding:10px;box-shadow:0 10px 30px #0008}
+.drawer{border:2px solid #24170c;border-radius:4px;margin:8px 0;background:linear-gradient(#5a3b26,#4a3020)}
+.front{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:10px 14px;cursor:pointer;align-items:center}
+.front .nm{font:700 20px "Cormorant Garamond",serif}
+.front .ar{font:400 18px Amiri,serif;color:var(--brass);margin-inline-start:8px}
+.front .dt{font-size:12px;color:#d9c7a5}
+.front .pull{width:46px;height:14px;border-radius:7px;background:linear-gradient(#e5c46a,#9c7a2c);box-shadow:0 2px 3px #0008;grid-row:1/3;grid-column:2}
+.front .sil{grid-column:1/3;display:flex;align-items:flex-end;gap:2px;height:22px;margin-top:4px}
+.front .sil i{display:block;border-radius:50%}
+.tray{display:none;background:radial-gradient(ellipse at top,var(--felt),var(--felt2));border-top:2px solid #24170c;padding:8px 0 4px}
+.drawer.open .tray{display:block}
+.trayctl{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:0 12px 6px;font-size:12px;color:#cfe0d6}
+.scroll{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch}
+.scroll svg{display:block}
+.tcoin{transition:transform .7s cubic-bezier(.3,.7,.2,1);cursor:pointer}
+.tcoin:hover .disc,.tcoin:focus .disc{filter:brightness(1.12)}
+.tcoin:focus{outline:none}
+.yr{font:600 9px Inter,sans-serif;fill:#cfe0d6;text-anchor:middle}
+.gauge circle{fill:none;stroke:#cfe0d655;stroke-dasharray:2 3}
+.gauge text{font:9px Inter,sans-serif;fill:#cfe0d6aa}
+.thread{fill:none;stroke:#e9b9a8;stroke-width:1.5}
+.threadlbl{font:10px Inter,sans-serif;fill:#e9b9a8}
+.new{font:600 10px Inter;fill:var(--brass)}
+/* coin parts */
+.disc.fine{fill:url(#g-fine)} .disc.pale{fill:url(#g-pale)} .disc.base{fill:url(#g-base)} .disc.blank{fill:url(#g-blank)}
+.edge{stroke:#5b4415;stroke-width:2}
+.bead{fill:#7a5a1c;opacity:.75}
+.ring,.sq{fill:none;stroke:#7a5a1c;stroke-width:1.4}
+.cw{fill:#5d4210}
+.ar-t{font-family:Amiri,serif}
+.lat{font-family:"Cormorant Garamond",serif;font-weight:700;letter-spacing:.06em}
+.punch{fill:#4a3510;stroke:#2c1f08;stroke-width:1.5}
+.punch-g{stroke:#c9a24a;stroke-width:2.2;fill:none;stroke-linecap:round}
+.est{stroke:#5d4210;stroke-width:.8}
+.notch-up{fill:var(--up)} .notch-down{fill:var(--down)}
+/* rubbing (print) */
+body.rubbing{background:#fff;color:#111}
+body.rubbing .cabinet,body.rubbing .drawer,body.rubbing .tray{background:#fff;border-color:#bbb;box-shadow:none}
+body.rubbing .disc.fine{fill:url(#r-fine)} body.rubbing .disc.pale{fill:url(#r-pale)} body.rubbing .disc.base{fill:url(#r-base)} body.rubbing .disc.blank{fill:#fff}
+body.rubbing .edge{stroke:#222} body.rubbing .bead{fill:#222} body.rubbing .ring,body.rubbing .sq{stroke:#222}
+body.rubbing .yr,body.rubbing .gauge text{fill:#222} body.rubbing .gauge circle{stroke:#888}
+body.rubbing .front .dt,body.rubbing .front .ar{color:#444} body.rubbing .trayctl{color:#333}
+body.rubbing .punch{fill:#fff;stroke:#222} body.rubbing .punch-g{stroke:#222}
+body.rubbing header .ctrls,body.rubbing #scales,body.rubbing .trayctl button,body.rubbing .front .pull{display:none}
+body.rubbing .drawer:not(.open){display:none}
+body.rubbing .legend{display:block!important;position:static;color:#111;background:#fff;border:1px solid #999;box-shadow:none;max-width:420px;margin:14px 0 0 auto}
+/* legend */
+.legend{display:none;position:fixed;right:16px;top:70px;z-index:30;max-width:360px;background:var(--paper);color:var(--ink);border:2px solid var(--brass);border-radius:6px;padding:12px 14px;box-shadow:0 10px 30px #000a;font-size:13px}
+.legend h3{font:700 17px "Cormorant Garamond",serif;margin:0 0 6px;text-align:center;letter-spacing:.05em}
+.legend dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 10px;align-items:start}
+.legend dt{font-weight:600;font-size:11px;letter-spacing:.06em;color:#6b4f1c;padding-top:2px}
+.legend dd{margin:0}
+.sw{display:inline-block;width:12px;height:12px;border-radius:50%;vertical-align:-2px;margin-right:4px;border:1px solid #5b4415}
+/* modal */
+.modal{display:none;position:fixed;inset:0;background:#0009;z-index:40;overflow:auto;padding:16px}
+.modal.on{display:block}
+.panel{max-width:860px;margin:0 auto;background:#2b1c11;border:2px solid #24170c;border-radius:8px;padding:14px;box-shadow:0 20px 50px #000}
+.phead{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.phead .ttl{font:700 20px "Cormorant Garamond",serif;text-align:center;flex:1}
+.phead .sub{display:block;font:500 13px Inter;color:#d9c7a5}
+.pbody{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,320px);gap:16px;margin-top:12px;align-items:start}
+.flipwrap{perspective:1200px;display:flex;flex-direction:column;align-items:center;gap:10px}
+.flipper{position:relative;width:var(--S);height:var(--S);transition:transform .8s;transform-style:preserve-3d}
+.flipper.flipped{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.face.back{transform:rotateY(180deg)}
+.face svg{width:100%;height:100%;filter:drop-shadow(0 8px 14px #000a)}
+.reading{font-size:13px;color:#e9dcc0;text-align:center;max-width:420px}
+.slip{background:var(--paper);color:var(--ink);border-radius:3px;padding:12px 14px;font-size:13px;box-shadow:0 6px 16px #0008;transform:rotate(-.6deg)}
+.slip h4{font:700 17px "Cormorant Garamond",serif;margin:0 0 2px}
+.slip .src{font-size:11px;color:var(--muted);margin-bottom:6px}
+.slip ul{list-style:none;margin:0;padding:0}
+.slip li{padding:2px 0;border-bottom:1px dotted #cdbb98}
+.slip .k{font-size:11px;color:var(--muted);margin-bottom:6px}
+.slip .note{font-style:italic;font-family:"Cormorant Garamond",serif;font-size:15px;margin-top:8px}
+.est-off{font-weight:600}
+.up{color:var(--up)} .down{color:var(--down)}
+/* scales footer */
+#scales{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#24170cf2;border-top:2px solid var(--brass);padding:8px 16px;display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap;font-size:13px}
+#scales .slot{min-width:46px;height:46px;border:1px dashed var(--brass);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:#d9c7a5;cursor:pointer}
+/* compare */
+.cmpcoins{display:flex;justify-content:space-around;align-items:flex-end;gap:12px;padding:10px 0;flex-wrap:wrap}
+.cmpcoins figure{margin:0;text-align:center;font-size:12px;color:#d9c7a5}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:5px 8px;border-bottom:1px solid #5c433055;text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+th{font-size:11px;letter-spacing:.05em;color:var(--brass);cursor:pointer;position:sticky;top:0;background:#2b1c11}
+#tablev{display:none;background:#2b1c11;border:2px solid #24170c;border-radius:6px;margin-top:12px}
+#tablev .scroll{max-height:70vh;overflow:auto}
+#tablev tbody tr{cursor:pointer} #tablev tbody tr:hover{background:#4a302055}
+.mtag{display:inline-block;width:10px;height:10px;border-radius:50%;vertical-align:-1px}
+.foot{font-size:12px;color:#a8977a;margin-top:14px}
+@media (max-width:720px){
+  .pbody{grid-template-columns:1fr}
+  .front .nm{font-size:18px}
+  h1{font-size:26px}
+  .legend{left:16px;right:16px;max-width:none}
+  .phead .ttl{font-size:16px;order:-1;flex-basis:100%}
+  #scales span:last-child{display:none}
+}
+@media print{
+  #scales,.modal,header .ctrls,.trayctl button{display:none!important}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <radialGradient id="g-fine" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#fff0b0"/><stop offset=".45" stop-color="#e2b84a"/><stop offset="1" stop-color="#9c7020"/></radialGradient>
+    <radialGradient id="g-pale" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#fbf4d6"/><stop offset=".5" stop-color="#d8c98e"/><stop offset="1" stop-color="#9a8a55"/></radialGradient>
+    <radialGradient id="g-base" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#d9d3c6"/><stop offset=".5" stop-color="#a39a88"/><stop offset="1" stop-color="#6c6253"/></radialGradient>
+    <radialGradient id="g-blank" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#e8e2d2"/><stop offset="1" stop-color="#b2a88f"/></radialGradient>
+    <pattern id="stip" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#5d421022"/><circle cx="1" cy="1" r=".8" fill="#5d4210"/><circle cx="3" cy="3" r=".8" fill="#5d4210"/></pattern>
+    <pattern id="r-fine" width="3" height="3" patternUnits="userSpaceOnUse"><rect width="3" height="3" fill="#555"/><circle cx="1.5" cy="1.5" r=".7" fill="#999"/></pattern>
+    <pattern id="r-pale" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="4" fill="#ccc"/><circle cx="2" cy="2" r="1" fill="#555"/></pattern>
+    <pattern id="r-base" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="#fff"/><line x1="0" y1="0" x2="0" y2="5" stroke="#333" stroke-width="1.6"/></pattern>
+  </defs>
+</svg>
+
+<header>
+  <h1>Dār al-Sikka <small>the Mint of al-Andalus · one coin struck for every save</small></h1>
+  <div class="ctrls">
+    <button id="bNames" aria-pressed="false" title="Switch between chronicle and plain names">Names: chronicle</button>
+    <button id="bLegend" aria-pressed="false">Legend card</button>
+    <button id="bTable" aria-pressed="false">▤ Table</button>
+    <button id="bRub" aria-pressed="false">Rubbing sheet</button>
+  </div>
+</header>
+
+<main>
+  <div class="legend" id="legend">
+    <h3>HOW TO READ A COIN OF AL-ANDALUS</h3>
+    <dl>
+      <dt>SIZE</dt><dd><b>Land.</b> Area grows with the locations held: 25, 50, 100, 200. Same scale for every reign.</dd>
+      <dt>METAL</dt><dd><span class="sw" style="background:#e2b84a"></span><b>fine</b>: holds at least what it owes<br><span class="sw" style="background:#d8c98e"></span><b>pale</b>: owes more than it holds<br><span class="sw" style="background:#a39a88"></span><b>base</b>: owes over five times as much<br><span class="sw" style="background:#e8e2d2"></span><b>blank</b>: nothing recorded</dd>
+      <dt>PUNCHES</dt><dd>One square countermark for each war under way.</dd>
+      <dt>WORDS</dt><dd>The square: the Naṣrid motto over the ruler's name. Around it: title (top), mint (bottom), Hijri year (left), Western year (right).</dd>
+      <dt>REVERSE</dt><dd>Flip for the ledger. Stippled = estimated. Estate notches ▲▼ appear only when an estate has moved off the level the crown holds it at.</dd>
+    </dl>
+  </div>
+
+  <div class="cabinet" id="cabinet"></div>
+  <section id="tablev"><div class="scroll"><table id="tbl"></table></div></section>
+  <p class="foot">Coins are generated from checkpoints.json; all 72 saves, 1337–1442. Hijri dates computed with the tabular calendar (game dates read as Julian). Coins are struck for this chronicle, not replicas. Mockup: low fidelity.</p>
+</main>
+
+<div id="scales"><span>⚖ The scales:</span><div class="slot" id="s0">empty</div><div class="slot" id="s1">empty</div><button id="bCmp" disabled>Compare</button><button id="bClr">Clear</button><span style="color:#a8977a">add a coin from its detail view</span></div>
+
+<div class="modal" id="modal"><div class="panel" id="panel"></div></div>
+
+<script>
+const DATA = /*DATA*/;
+const coins = DATA.coins; coins.forEach((c,i)=>c.i=i);
+const RULERS = DATA.rulers;
+const SHORT = {'yusuf-i':'Yūsuf I','saad-ibn-yusuf':'Saʿd','ismail-ibn-saad':'Ismāʿīl','muhammad-ibn-ismail-ibn-saad':'Muḥammad V'};
+// places.json has chronicle + game names only; the plain forms are supplied here (see pitch: missing field)
+const PLACES = {gharnata:{ch:'Gharnāṭa',pl:'Granada'}, ishbiliyya:{ch:'Ishbīliya',pl:'Seville'}};
+const EST = {crown:{ch:'crown',pl:'crown'},nobles:{ch:'umarāʾ',pl:'nobility'},clergy:{ch:'ʿulamāʾ',pl:'clergy'},burghers:{ch:'burghers',pl:'burghers'},peasants:{ch:'commoners',pl:'commoners'},dhimmi:{ch:'dhimmī',pl:'dhimmī'}};
+const MONTHS = ['Muḥarram','Ṣafar','Rabīʿ al-Awwal','Rabīʿ al-Thānī','Jumādā al-Ūlā','Jumādā al-Ākhira','Rajab','Shaʿbān','Ramaḍān','Shawwāl','Dhū al-Qaʿda','Dhū al-Ḥijja'];
+const MOTTO = 'ولا غالب إلا الله';
+const K = 11;            // drawer scale: diameter = K * sqrt(locations), fixed for the campaign
+let plain = false;
+const TS = matchMedia('(max-width:720px)').matches ? 0.62 : 1;   // phone trays at 0.62x
+const TRAY_H = Math.round(44 + 172*TS), RAIL = TRAY_H - 28;
+const GCX = 12 + K*TS*Math.sqrt(200)/2, LEFT = 2*GCX + 8;
+
+const N = x => x==null ? '—' : Math.round(x).toLocaleString('en');
+const esc = s => String(s).replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
+const nm = o => plain ? o.pl : o.ch;
+const place = id => PLACES[id] ? nm(PLACES[id]) : id;
+const title = c => c.rank==='empire' ? (plain?'Emperor':'EMPEROR') : (plain?'Sultan':'SULṬĀN');
+const diam = c => K*Math.sqrt(c.loc);
+function grade(c){ if(c.tr==null) return 'blank'; if(c.debt<=c.tr) return 'fine'; if(c.debt<=5*c.tr) return 'pale'; return 'base'; }
+const GRADE_TXT = {fine:'fine gold: holds at least what it owes', pale:'pale gold: owes more than it holds', base:'base metal: owes over five times what it holds', blank:'blank: nothing recorded at this save'};
+const net = c => c.tr==null ? -Infinity : c.tr - c.debt;
+
+// Hijri (tabular), game dates treated as Julian, which matches the chronicle samples
+function jdnJ(y,m,d){const a=Math.floor((14-m)/12),Y=y+4800-a,M=m+12*a-3;return d+Math.floor((153*M+2)/5)+365*Y+Math.floor(Y/4)-32083;}
+function hijri(iso){const [y,m,d]=iso.split('-').map(Number);let l=jdnJ(y,m,d)-1948440+10632;const n=Math.floor((l-1)/10631);l=l-10631*n+354;
+  const j=Math.floor((10985-l)/5316)*Math.floor(50*l/17719)+Math.floor(l/5670)*Math.floor(43*l/15238);
+  l=l-Math.floor((30-j)/15)*Math.floor(17719*j/50)-Math.floor(j/16)*Math.floor(15238*j/43)+29;
+  const mo=Math.floor(24*l/709), da=l-Math.floor(709*mo/24); return {y:30*n+j-30,m:mo,d:da};}
+const hj = iso => {const h=hijri(iso); return `${h.d} ${MONTHS[h.m-1]} ${h.y}`;};
+const west = iso => {const [y,m,d]=iso.split('-').map(Number); return `${d} ${['January','February','March','April','May','June','July','August','September','October','November','December'][m-1]} ${y}`;};
+
+// held level per estate = its most common satisfaction across the campaign (policy, not news)
+const HELD = {};
+(function(){const cnt={};coins.forEach(c=>c.est.forEach(([id,p,s])=>{if(s==null)return;(cnt[id]=cnt[id]||{});const r=Math.round(s);cnt[id][r]=(cnt[id][r]||0)+1;}));
+  for(const id in cnt){HELD[id]=+Object.entries(cnt[id]).sort((a,b)=>b[1]-a[1])[0][0];}})();
+const OFF = 3;
+const INIT = {crown:['Cr','Cr'],nobles:['Um','No'],clergy:['ʿUl','Cl'],burghers:['Bu','Bu'],peasants:['Co','Co'],dhimmi:['Dh','Dh']};
+
+// ---------- coin faces ----------
+function beads(n, r, br){let s='';for(let k=0;k<n;k++){const a=k/n*2*Math.PI;s+=`<circle class="bead" cx="${(r*Math.cos(a)).toFixed(1)}" cy="${(r*Math.sin(a)).toFixed(1)}" r="${br}"/>`;}return s;}
+function punches(c){
+  const pos=[[38,40],[-44,-34]]; let s='';
+  c.wars.slice(0,2).forEach((w,k)=>{const [x,y]=pos[k];
+    s+=`<g transform="translate(${x} ${y}) rotate(${k?-12:9})"><title>At war: ${esc(w)}</title><rect class="punch" x="-12" y="-12" width="24" height="24" rx="3"/><path class="punch-g" d="M-6 -6 L6 6 M6 -6 L-6 6 M-7 3 L-3 7 M7 3 L3 7"/></g>`;});
+  return s;
+}
+function aria(c){return `${SHORT[c.r]}, ${west(c.d)}: ${c.loc} locations, ${GRADE_TXT[grade(c)]}, ${c.wars.length} war(s)`;}
+function obverse(c, detail){
+  const g=grade(c); let s=`<svg viewBox="-100 -100 200 200" role="img" aria-label="${esc(aria(c))}"><circle class="disc ${g}" r="98"/><circle class="edge" r="98" fill="none"/>`;
+  if(g==='blank'){ s+=`<circle class="ring" r="80" stroke-dasharray="3 4"/>`; if(detail) s+=`<text class="lat cw" y="5" text-anchor="middle" font-size="14">UNSTRUCK</text><text class="lat cw" y="24" text-anchor="middle" font-size="9">no economy at this save</text>`; return s+'</svg>'; }
+  s+=beads(detail?64:30, 91, detail?1.7:2.6) + `<circle class="ring" r="80"/>`;
+  const h=55; s+=`<rect class="sq" x="${-h}" y="${-h}" width="${2*h}" height="${2*h}"/>`;
+  if(detail){
+    const ar=RULERS[c.r].ar, lat=SHORT[c.r];
+    s+=`<text class="ar-t cw" y="-24" text-anchor="middle" font-size="15" direction="rtl">${MOTTO}</text>`;
+    s+=`<line x1="-40" x2="40" y1="-14" y2="-14" stroke="#7a5a1c" stroke-width=".8"/>`;
+    s+=`<text class="ar-t cw" y="14" text-anchor="middle" font-size="${ar.length>10?18:25}" font-weight="700" direction="rtl"${ar.length>12?' textLength="98" lengthAdjust="spacingAndGlyphs"':''}>${ar}</text>`;
+    s+=`<text class="lat cw" y="40" text-anchor="middle" font-size="11">${esc(lat)}</text>`;
+    const H=hijri(c.d).y, Y=c.d.slice(0,4);
+    s+=`<text class="lat cw" y="-63" text-anchor="middle" font-size="10">${esc(title(c))}</text>`;
+    s+=`<text class="lat cw" y="71" text-anchor="middle" font-size="10">${esc(place(c.cap).toUpperCase())}</text>`;
+    s+=`<text class="lat cw" transform="translate(-68 0) rotate(-90)" text-anchor="middle" font-size="10">${H} AH</text>`;
+    s+=`<text class="lat cw" transform="translate(68 0) rotate(90)" text-anchor="middle" font-size="10">${Y}</text>`;
+  } else {
+    s+=`<line class="sq" x1="-30" x2="30" y1="-10" y2="-10"/><line class="sq" x1="-36" x2="36" y1="8" y2="8"/><line class="sq" x1="-24" x2="24" y1="24" y2="24"/>`;
+  }
+  return s+punches(c)+'</svg>';
+}
+function arcPath(r0,r1,a0,a1){const p=(r,a)=>`${(r*Math.sin(a)).toFixed(2)} ${(-r*Math.cos(a)).toFixed(2)}`;const big=(a1-a0)>Math.PI?1:0;
+  return `M${p(r1,a0)} A${r1} ${r1} 0 ${big} 1 ${p(r1,a1)} L${p(r0,a1)} A${r0} ${r0} 0 ${big} 0 ${p(r0,a0)} Z`;}
+function reverse(c){
+  const g=grade(c); let s=`<svg viewBox="-100 -100 200 200" role="img" aria-label="Ledger of ${esc(west(c.d))}"><circle class="disc ${g}" r="98"/><circle class="edge" r="98" fill="none"/>${beads(64,91,1.7)}<circle class="ring" r="85"/>`;
+  const H=hijri(c.d); s+=`<path id="bot${c.i}" d="M-79 0 A79 79 0 0 0 79 0" fill="none"/><text class="lat cw" font-size="8"><textPath href="#bot${c.i}" startOffset="50%" text-anchor="middle">${H.d} ${esc(MONTHS[H.m-1].toUpperCase())} ${H.y} · ${esc(west(c.d).toUpperCase())}</textPath></text>`;
+  const news=[];
+  // estates ring: arc length = power (stippled: estimated); notch only when off the held level
+  const est=c.est; const tot=est.reduce((a,e)=>a+e[1],0);
+  if(est.length){ let a=-Math.PI*0.62; const span=Math.PI*1.24; // upper 2/3 of the ring
+    est.forEach(([id,p,sat,estd])=>{const w=p/tot*span, gap=0.025; const a0=a+gap/2,a1=a+w-gap/2;
+      s+=`<path class="est" d="${arcPath(56,68,a0,a1)}" fill="${estd?'url(#stip)':'#5d4210'}"><title>${esc(nm(EST[id]))}: power ${p.toFixed(1)}${estd?' (estimated)':''}${sat!=null?`, satisfaction ${sat}`:''}</title></path>`;
+      const mid=(a0+a1)/2, lr=48, lx=(lr*Math.sin(mid)).toFixed(1), ly=(-lr*Math.cos(mid)).toFixed(1);
+      const ir=62, ix=(ir*Math.sin(mid)).toFixed(1), iy=(-ir*Math.cos(mid)+2.2).toFixed(1);
+      if(w>0.09) s+=`<text class="lat" x="${ix}" y="${iy}" font-size="6.2" text-anchor="middle" fill="#3a2808" stroke="#f3e2a8" stroke-width="1.6" paint-order="stroke">${INIT[id][plain?1:0]}</text>`;
+      if(sat!=null && HELD[id]!=null && Math.abs(sat-HELD[id])>OFF){const d=Math.round(sat-HELD[id]); const nr=74.5, nx=(nr*Math.sin(mid)).toFixed(1), ny=(-nr*Math.cos(mid)).toFixed(1);
+        s+=`<g transform="translate(${nx} ${ny}) rotate(${(mid*180/Math.PI).toFixed(1)})"><path class="${d>0?'notch-up':'notch-down'}" d="${d>0?'M-4 3 L4 3 L0 -4 Z':'M-4 -3 L4 -3 L0 4 Z'}"/></g>`;
+        news.push([Math.abs(d), `<tspan class="${d>0?'notch-up':'notch-down'}">${esc(INIT[id][plain?1:0])} ${d>0?'▲'+d:'▼'+(-d)}</tspan>`]);}
+      a+=w;});
+  }
+  // news: estates off their held level (largest first)
+  if(est.length){ news.sort((a,b)=>b[0]-a[0]); const items=news.map(n=>n[1]);
+    if(!items.length) s+=`<text class="lat cw" y="-30" font-size="6.5" text-anchor="middle" opacity=".7">every estate at its held level</text>`;
+    else { s+=`<text class="lat cw" y="-38" font-size="5.6" text-anchor="middle" opacity=".8">OFF THE HELD LEVEL</text>`;
+      const l1=items.slice(0,3), l2=items.slice(3);
+      s+=`<text class="lat" y="-28" font-size="7" font-weight="700" text-anchor="middle">${l1.join(' · ')}</text>`;
+      if(l2.length) s+=`<text class="lat" y="-19" font-size="7" font-weight="700" text-anchor="middle">${l2.join(' · ')}</text>`; } }
+  // centre: the purse
+  s+=`<rect x="-46" y="-11" width="92" height="38" rx="3" fill="#fff3" stroke="#7a5a1c" stroke-width=".8"/>`;
+  if(c.tr==null){s+=`<text class="lat cw" y="10" font-size="8" text-anchor="middle">no purse recorded</text>`;}
+  else{s+=`<text class="lat cw" y="1" font-size="9" text-anchor="middle">${N(c.tr)} held · ${N(c.debt)} owed</text>`;
+       s+=`<text class="lat cw" y="12" font-size="7.5" text-anchor="middle">+${c.inc.toFixed(1)} / −${c.exp.toFixed(1)} a month</text>`;
+       s+=`<text class="lat cw" y="22" font-size="7" text-anchor="middle">${c.wars.length? 'at war: '+c.wars.length : 'at peace'} · stability ${c.stab==null?'—':c.stab.toFixed(1)}</text>`;}
+  s+=`<text class="lat cw" y="38" font-size="7.5" text-anchor="middle">${c.loc} locations · ${(c.pop/1e6).toFixed(2)}M souls</text>`;
+  const bot = c.over ? `${c.overT} of ${c.over}` : (c.subj.length? `${c.subj.length} subject realm${c.subj.length>1?'s':''}` : 'no overlord, no subjects');
+  s+=`<text class="lat cw" y="48" font-size="7" text-anchor="middle">${esc(bot)}</text>`;
+  s+=`<text class="lat cw" y="57" font-size="7" text-anchor="middle">${c.sov==null?'Strait: —':'Strait sovereignty '+Math.round(c.sov)}</text>`;
+  return s+'</svg>';
+}
+
+// ---------- cabinet & drawers ----------
+const reigns = []; coins.forEach(c=>{let r=reigns.find(x=>x.id===c.r); if(!r){r={id:c.r,coins:[]};reigns.push(r);} r.coins.push(c);});
+const state = {}; reigns.forEach((r,k)=>state[r.id]={sort:'date',thread:false,open:k===0});
+const METAL_COL={fine:'#e2b84a',pale:'#d8c98e',base:'#a39a88',blank:'#e8e2d2'};
+
+function layout(r){ // returns positions {x, d} per coin index; date mode keeps real time where room allows
+  const st=state[r.id]; const list=[...r.coins];
+  if(st.sort==='land') list.sort((a,b)=>a.loc-b.loc); else if(st.sort==='purse') list.sort((a,b)=>net(a)-net(b));
+  const t0=+new Date(r.coins[0].d), t1=+new Date(r.coins[r.coins.length-1].d); const yrs=(t1-t0)/3.156e10; const PXY=Math.max(26, 1500/Math.max(yrs,1));
+  const gap=6, left=LEFT; let x=left, prev=null; const pos={};
+  list.forEach(c=>{const d=diam(c)*TS; let cx = prev? prev.x+prev.d/2+gap+d/2 : left+d/2;
+    if(st.sort==='date'){const tx=left+d/2+((+new Date(c.d))-t0)/3.156e10*PXY*0.55; cx=Math.max(cx,tx);} pos[c.i]={x:cx,d}; prev={x:cx,d}; x=cx+d/2;});
+  return {pos, width:x+30};
+}
+function drawerSVG(r){
+  const st=state[r.id]; const {pos,width}=layout(r); const H=TRAY_H, rail=RAIL;
+  let s=`<svg width="${width}" height="${H+(st.thread?50:6)}" aria-label="Drawer of ${esc(SHORT[r.id])}">`;
+  // gauge rings on the same scale as the coins
+  s+='<g class="gauge">'; [25,50,100,200].forEach(n=>{const d=K*TS*Math.sqrt(n); s+=`<circle cx="${GCX}" cy="${rail-d/2}" r="${d/2}"/><text x="${GCX}" y="${rail-d+11}" text-anchor="middle">${n}</text>`;}); s+=`<text x="${GCX}" y="${rail+14}" text-anchor="middle">gauge</text></g>`;
+  s+=`<line x1="${LEFT-10}" x2="${width-10}" y1="${rail}" y2="${rail}" stroke="#0006" stroke-width="3"/>`;
+  r.coins.forEach(c=>{const p=pos[c.i]; const isNew=c.i===coins.length-1;
+    s+=`<g class="tcoin" tabindex="0" data-i="${c.i}" style="transform:translate(${(p.x-p.d/2).toFixed(1)}px,${(rail-p.d-1).toFixed(1)}px)"><title>${esc(c.t)} · ${esc(west(c.d))}\n${c.loc} locations · ${GRADE_TXT[grade(c)]}${c.tr!=null?` (${N(c.tr)} held, ${N(c.debt)} owed)`:''}${c.wars.length?'\nat war: '+c.wars.join('; '):''}</title>`+
+      `<svg width="${p.d.toFixed(1)}" height="${p.d.toFixed(1)}" viewBox="-100 -100 200 200" style="overflow:visible">${obverse(c, p.d>=90).replace(/^<svg[^>]*>|<\/svg>$/g,'')}</svg>`+
+      `<text class="yr" x="${(p.d/2).toFixed(1)}" y="${(p.d+14).toFixed(1)}">${c.d.slice(0,4)}</text>${isNew?`<text class="new" x="${(p.d/2).toFixed(1)}" y="-4" text-anchor="middle">✦ newly struck</text>`:''}</g>`;});
+  if(st.thread && st.sort==='date'){ // umarāʾ power as a thread under the rail
+    const y0=rail+22, sc=0.75, Y=v=>(y0+40-v*sc).toFixed(1); const pts=r.coins.filter(c=>c.est.length).map(c=>{const n=c.est.find(e=>e[0]==='nobles');return `${pos[c.i].x.toFixed(1)},${Y(n[1])}`;});
+    s+=`<g class="gauge">${[10,30,50].map(v=>`<line x1="${LEFT-10}" x2="${width-10}" y1="${Y(v)}" y2="${Y(v)}" stroke="#cfe0d622"/><text x="${LEFT-14}" y="${+Y(v)+3}" text-anchor="end">${v}</text>`).join('')}</g>`;
+    s+=`<polyline class="thread" points="${pts.join(' ')}"/><text class="threadlbl" x="8" y="${y0+20}">${plain?'nobility':'umarāʾ'} power ◌</text>`;
+  }
+  return s+'</svg>';
+}
+function silhouette(r){return r.coins.map(c=>{const d=Math.max(4,diam(c)/8);return `<i style="width:${d}px;height:${d}px;background:${METAL_COL[grade(c)]}"></i>`;}).join('');}
+function renderCabinet(){
+  const cab=document.getElementById('cabinet'); cab.innerHTML='';
+  reigns.forEach(r=>{const st=state[r.id]; const R=RULERS[r.id]; const first=r.coins[0].d, last=r.coins[r.coins.length-1].d;
+    const el=document.createElement('section'); el.className='drawer'+(st.open?' open':''); el.dataset.r=r.id;
+    const reignTo=R.reign.to? R.reign.to.slice(0,4):'';
+    el.innerHTML=`<div class="front" role="button" tabindex="0" aria-expanded="${st.open}"><div><span class="nm">${esc(SHORT[r.id])}</span><span class="ar">${R.ar}</span><div class="dt">reigned ${hijri(R.reign.from).y}${R.reign.to?'–'+hijri(R.reign.to).y:'–'} AH · ${R.reign.from.slice(0,4)}–${reignTo} · ${r.coins.length} coins, ${first.slice(0,4)}–${last.slice(0,4)}</div></div><span class="pull"></span><div class="sil" aria-hidden="true">${silhouette(r)}</div></div>
+    <div class="tray"><div class="trayctl">sort the tray:
+      ${['date','land','purse'].map(m=>`<button data-sort="${m}" aria-pressed="${st.sort===m}">${m}</button>`).join('')}
+      <button data-thread aria-pressed="${st.thread}" title="Draw the umarāʾ's power under the rail (date order)">thread: ${plain?'nobility':'umarāʾ'}</button>
+      <span>${st.sort==='date'?'coins stand in time order; gaps are years without a save':st.sort==='land'?'smallest realm to largest':'deepest in debt to richest (treasury minus debt)'}</span></div>
+      <div class="scroll">${drawerSVG(r)}</div></div>`;
+    cab.appendChild(el);});
+}
+function rerenderTray(rid){ // keep DOM nodes so the sort animates
+  const r=reigns.find(x=>x.id===rid); const el=document.querySelector(`.drawer[data-r="${rid}"]`); const st=state[rid];
+  const {pos}=layout(r); const rail=RAIL;
+  el.querySelectorAll('.tcoin').forEach(g=>{const c=coins[+g.dataset.i]; const p=pos[c.i]; g.style.transform=`translate(${(p.x-p.d/2).toFixed(1)}px,${(rail-p.d-1).toFixed(1)}px)`;});
+  el.querySelectorAll('[data-sort]').forEach(b=>b.setAttribute('aria-pressed', b.dataset.sort===st.sort));
+  setTimeout(()=>renderCabinet(), 750);
+}
+document.getElementById('cabinet').addEventListener('click',e=>{
+  const dr=e.target.closest('.drawer'); if(!dr) return; const rid=dr.dataset.r;
+  if(e.target.closest('.front')){state[rid].open=!state[rid].open; renderCabinet(); return;}
+  const sb=e.target.closest('[data-sort]'); if(sb){state[rid].sort=sb.dataset.sort; rerenderTray(rid); return;}
+  if(e.target.closest('[data-thread]')){state[rid].thread=!state[rid].thread; if(state[rid].thread) state[rid].sort='date'; renderCabinet(); return;}
+  const g=e.target.closest('.tcoin'); if(g) openCoin(+g.dataset.i);
+});
+document.getElementById('cabinet').addEventListener('keydown',e=>{if(e.key!=='Enter'&&e.key!==' ')return; const g=e.target.closest('.tcoin'); if(g){e.preventDefault();openCoin(+g.dataset.i);} else if(e.target.closest('.front')){e.preventDefault(); e.target.closest('.front').click();}});
+
+// ---------- coin detail ----------
+let cur=null, flipped=false;
+function ledgerSlip(c){
+  const L=[];
+  L.push(`● ${c.loc} locations held`);
+  if(c.tr!=null){L.push(`● treasury ${N(c.tr)} · owed ${N(c.debt)}`); L.push(`● income ${c.inc.toFixed(1)} · expenses ${c.exp.toFixed(1)} a month`);} else L.push('● economy not yet recorded');
+  L.push(`● ${N(c.pop)} people, ${Math.round(c.mus/c.pop*100)}% Sunni`);
+  if(c.stab!=null) L.push(`● stability ${c.stab.toFixed(1)} · prestige ${N(c.pres)}`);
+  L.push(`● ${c.wars.length? 'at war: '+c.wars.map(esc).join('; ') : 'at peace'}`);
+  if(c.men!=null) L.push(`● ${N(c.men)} men in reserve · ${c.regs} regiments · ${c.ships} ships`);
+  L.push(`● ${c.over? esc(c.overT+' of '+c.over) : 'owes no overlord'}${c.subj.length? ' · subjects: '+c.subj.map(esc).join(', '):''}`);
+  if(c.allies.length) L.push(`● allies: ${c.allies.map(esc).join(', ')}`);
+  if(c.heir) L.push(`● heir: ${esc(c.heir)}`);
+  if(c.cab.length) L.push(`● ${plain?'cabinet':'dīwān'}: ${c.cab.map(x=>esc(x[0])+' ('+esc(x[1].toLowerCase())+')').join('; ')}`);
+  if(c.sov!=null) L.push(`● Strait sovereignty ${Math.round(c.sov)}`);
+  c.est.forEach(([id,p,sat,estd])=>{const held=HELD[id]; const d=(sat!=null&&held!=null)?Math.round(sat-held):0; const off=Math.abs(d)>OFF;
+    L.push(`${estd?'◌':'●'} ${esc(nm(EST[id]))}: power ${p.toFixed(1)}${sat!=null?` · satisfaction ${sat}`:''}${sat!=null? (off?` <span class="est-off ${d>0?'up':'down'}">${d>0?'▲ +'+d:'▼ −'+(-d)} off the held ${held}</span>`:` <span style="color:#8c7a62">(held at ${held})</span>`):''}`);});
+  return `<div class="slip"><h4>${esc(c.t)}</h4><div class="src">✎ the writer's title · save ${esc(c.save||'—')}</div>
+    <div class="k">● read from the save · ◌ estimated · ✎ added by the writer</div><ul>${L.map(x=>`<li>${x}</li>`).join('')}</ul>${c.note?`<div class="note">✎ ${esc(c.note)}</div>`:''}</div>`;
+}
+function openCoin(i){
+  cur=i; flipped=false; const c=coins[i]; const r=reigns.find(x=>x.id===c.r); const k=r.coins.indexOf(c);
+  const S=`min(84vw, 360px)`;
+  document.getElementById('panel').innerHTML=`<div class="phead"><button id="pPrev" ${i===0?'disabled':''}>◀ prev</button>
+    <div class="ttl">${esc(SHORT[c.r])} · ${k+1} of ${r.coins.length}<span class="sub">${esc(hj(c.d))} AH · ${esc(west(c.d))}</span></div>
+    <button id="pNext" ${i===coins.length-1?'disabled':''}>next ▶</button><button id="pClose" aria-label="Close">✕</button></div>
+    <div class="pbody"><div class="flipwrap"><div class="flipper" id="flip" style="--S:${S}"><div class="face front">${obverse(c,true)}</div><div class="face back">${reverse(c)}</div></div>
+      <div class="reading">${c.loc} locations · ${GRADE_TXT[grade(c)]}${c.tr!=null?` (${N(c.tr)} held, ${N(c.debt)} owed)`:''} · ${c.wars.length? 'at war: '+c.wars.map(esc).join('; '):'no war'} · ${esc(title(c).toLowerCase())}, mint of ${esc(place(c.cap))}</div>
+      <div><button id="pFlip">⟲ Flip to the ledger</button> <button id="pScale">⚖ Put on the scales</button></div></div>
+      ${ledgerSlip(c)}</div>`;
+  document.getElementById('modal').classList.add('on'); history.replaceState(null,'','#'+c.d);
+  document.getElementById('pPrev').onclick=()=>openCoin(i-1); document.getElementById('pNext').onclick=()=>openCoin(i+1);
+  document.getElementById('pClose').onclick=closeModal;
+  document.getElementById('pFlip').onclick=()=>{flipped=!flipped; document.getElementById('flip').classList.toggle('flipped',flipped); document.getElementById('pFlip').textContent=flipped?'⟲ Back to the obverse':'⟲ Flip to the ledger';};
+  document.getElementById('flip').onclick=()=>document.getElementById('pFlip').click();
+  document.getElementById('pScale').onclick=()=>{addScale(i);};
+}
+function closeModal(){document.getElementById('modal').classList.remove('on'); history.replaceState(null,'',location.pathname);}
+document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal();});
+document.addEventListener('keydown',e=>{if(!document.getElementById('modal').classList.contains('on'))return; if(e.key==='Escape')closeModal(); if(e.key==='ArrowLeft'&&cur>0&&cur!=null&&document.getElementById('pPrev'))openCoin(cur-1); if(e.key==='ArrowRight'&&document.getElementById('pNext')&&cur<coins.length-1)openCoin(cur+1); if(e.key==='f'&&document.getElementById('pFlip'))document.getElementById('pFlip').click();});
+
+// ---------- the scales ----------
+const pans=[];
+function addScale(i){ if(pans.includes(i)) return; if(pans.length===2) pans.shift(); pans.push(i); drawScales(); if(pans.length===2){closeModal(); compare();} }
+function drawScales(){[0,1].forEach(k=>{const el=document.getElementById('s'+k); const i=pans[k]; el.innerHTML= i==null?'empty':`<div style="width:42px;height:42px">${obverse(coins[i],false)}</div>`; el.title=i==null?'':coins[i].d;}); document.getElementById('bCmp').disabled=pans.length<2;}
+document.getElementById('bCmp').onclick=compare; document.getElementById('bClr').onclick=()=>{pans.length=0;drawScales();};
+function compare(){
+  const [a,b]=[...pans].sort((x,y)=>x-y).map(i=>coins[i]); const big=Math.min(window.innerWidth*0.38, 220)/Math.max(diam(a),diam(b));
+  const rows=[['land (locations)',a.loc,b.loc],['treasury',a.tr,b.tr],['owed',a.debt,b.debt],['people',a.pop,b.pop],['stability',a.stab,b.stab],['wars under way',a.wars.length,b.wars.length],['ships',a.ships,b.ships]];
+  ['crown','nobles','clergy','burghers','peasants','dhimmi'].forEach(id=>{const ea=a.est.find(e=>e[0]===id), eb=b.est.find(e=>e[0]===id); rows.push([`◌ ${nm(EST[id])} power`, ea?ea[1]:null, eb?eb[1]:null]);});
+  const fmt=v=>v==null?'—':(Math.abs(v)<100&&v%1? v.toFixed(1): N(v));
+  const chg=(x,y)=>{if(x==null||y==null)return ''; const d=y-x; if(x>0&&y/x>=2) return '×'+(y/x).toFixed(1); return (d>0?'+':d<0?'−':'')+fmt(Math.abs(d));};
+  const tip = net(b)>net(a)?'the pan tips toward the later purse':net(a)>net(b)?'the pan tips toward the earlier purse':'the pans balance';
+  document.getElementById('panel').innerHTML=`<div class="phead"><div class="ttl">⚖ The scales<span class="sub">${esc(tip)} (treasury minus debt)</span></div><button id="pClose">✕</button></div>
+    <div class="cmpcoins">${[a,b].map(c=>`<figure><div style="width:${diam(c)*big}px;height:${diam(c)*big}px;margin:0 auto">${obverse(c,diam(c)*big>=90)}</div><figcaption>${esc(SHORT[c.r])} · ${esc(west(c.d))}<br>${esc(c.t)}</figcaption></figure>`).join('')}</div>
+    <div class="scroll"><table><thead><tr><th></th><th>${a.d.slice(0,4)}</th><th>${b.d.slice(0,4)}</th><th>change</th></tr></thead><tbody>${rows.map(r=>`<tr><td>${esc(r[0])}</td><td>${fmt(r[1])}</td><td>${fmt(r[2])}</td><td>${chg(r[1],r[2])}</td></tr>`).join('')}</tbody></table></div>`;
+  document.getElementById('modal').classList.add('on'); document.getElementById('pClose').onclick=closeModal;
+}
+
+// ---------- the plain table ----------
+let tsort={k:'d',dir:1};
+function renderTable(){
+  const cols=[['d','date'],['h','Hijri'],['r','ruler'],['cap','mint'],['loc','land'],['tr','held'],['debt','owed'],['g','metal'],['w','wars'],['pop','people'],['stab','stability'],['nob',plain?'nobility':'umarāʾ'+' ◌']];
+  const val=(c,k)=>k==='h'?c.d:k==='r'?SHORT[c.r]:k==='cap'?place(c.cap):k==='g'?['blank','base','pale','fine'].indexOf(grade(c)):k==='w'?c.wars.length:k==='nob'?(c.est.find(e=>e[0]==='nobles')||[])[1]:c[k];
+  const rows=[...coins].sort((a,b)=>{const x=val(a,tsort.k),y=val(b,tsort.k);return (x>y?1:x<y?-1:0)*tsort.dir;});
+  document.getElementById('tbl').innerHTML=`<thead><tr>${cols.map(([k,l])=>`<th data-k="${k}">${esc(l)}${tsort.k===k?(tsort.dir>0?' ▲':' ▼'):''}</th>`).join('')}</tr></thead><tbody>${rows.map(c=>`<tr data-i="${c.i}"><td>${c.d}</td><td>${esc(hj(c.d))}</td><td>${esc(SHORT[c.r])}</td><td>${esc(place(c.cap))}</td><td>${c.loc}</td><td>${N(c.tr)}</td><td>${N(c.debt)}</td><td><span class="mtag" style="background:${METAL_COL[grade(c)]}"></span> ${grade(c)}</td><td>${c.wars.length}</td><td>${N(c.pop)}</td><td>${c.stab==null?'—':c.stab.toFixed(1)}</td><td>${(()=>{const n=c.est.find(e=>e[0]==='nobles');return n?n[1].toFixed(1):'—';})()}</td></tr>`).join('')}</tbody>`;
+}
+document.getElementById('tbl').addEventListener('click',e=>{const th=e.target.closest('th'); if(th){const k=th.dataset.k; tsort= tsort.k===k?{k,dir:-tsort.dir}:{k,dir:1}; renderTable(); return;} const tr=e.target.closest('tr[data-i]'); if(tr) openCoin(+tr.dataset.i);});
+
+// ---------- header controls ----------
+const tog=(id,fn)=>document.getElementById(id).onclick=e=>{const b=e.currentTarget; const on=b.getAttribute('aria-pressed')!=='true'; b.setAttribute('aria-pressed',on); fn(on,b);};
+tog('bNames',(on,b)=>{plain=on; b.textContent='Names: '+(on?'plain':'chronicle'); renderCabinet(); renderTable(); if(document.getElementById('modal').classList.contains('on')&&cur!=null) openCoin(cur);});
+tog('bLegend',on=>document.getElementById('legend').style.display=on?'block':'');
+tog('bTable',on=>{document.getElementById('tablev').style.display=on?'block':''; if(on) document.getElementById('tablev').scrollIntoView({behavior:'smooth'});});
+tog('bRub',on=>{document.body.classList.toggle('rubbing',on); if(on) setTimeout(()=>window.print(),300);});
+window.addEventListener('beforeprint',()=>document.body.classList.add('rubbing'));
+window.addEventListener('afterprint',()=>{if(document.getElementById('bRub').getAttribute('aria-pressed')!=='true')document.body.classList.remove('rubbing');});
+
+renderCabinet(); renderTable(); drawScales();
+window.addEventListener('hashchange',()=>{const i=coins.findIndex(c=>c.d===location.hash.slice(1)); if(i>=0&&i!==cur) openCoin(i);});
+const hd=location.hash.slice(1); const hi=coins.findIndex(c=>c.d===hd); if(hi>=0) openCoin(hi);
+</script>
+</body>
+</html>

@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Isnād: the chain of why</title>
+<style>
+:root{
+  --bg:#f6f1e7; --paper:#fffdf8; --ink:#231d16; --muted:#6f6455; --faint:#a89c8a; --rule:#e2d8c6;
+  --accent:#0f6e64; --accent-soft:#dcefea; --warn:#a4561c; --warn-soft:#f6e6d6; --gap:#7a5ea8; --gap-soft:#ece6f5;
+  --rule-c:#0f6e64; --save-c:#2f5d9a; --owner-c:#8a5a16; --court-c:#7a5ea8; --sug-c:#9a9184;
+  --up:#2f7a3f; --down:#b0402c;
+  --serif: "Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --sans: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16130f; --paper:#1f1b16; --ink:#efe7da; --muted:#b3a793; --faint:#7d7364; --rule:#3a3329;
+    --accent:#5cc3b5; --accent-soft:#163a35; --warn:#e39a5c; --warn-soft:#3b2a1b; --gap:#b9a2e4; --gap-soft:#2c2540;
+    --rule-c:#5cc3b5; --save-c:#7fa8e0; --owner-c:#e0b36a; --court-c:#b9a2e4; --sug-c:#857c70; --up:#7bc98a; --down:#ec8b77;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16130f; --paper:#1f1b16; --ink:#efe7da; --muted:#b3a793; --faint:#7d7364; --rule:#3a3329;
+  --accent:#5cc3b5; --accent-soft:#163a35; --warn:#e39a5c; --warn-soft:#3b2a1b; --gap:#b9a2e4; --gap-soft:#2c2540;
+  --rule-c:#5cc3b5; --save-c:#7fa8e0; --owner-c:#e0b36a; --court-c:#b9a2e4; --sug-c:#857c70; --up:#7bc98a; --down:#ec8b77;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.45}
+button{font:inherit;color:inherit}
+header{padding:18px 16px 10px;border-bottom:1px solid var(--rule);background:var(--paper)}
+.brand{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.brand h1{font-family:var(--serif);font-size:28px;margin:0;font-weight:600;letter-spacing:.2px}
+.brand .ar{font-family:var(--serif);font-size:22px;color:var(--accent)}
+.brand p{margin:0;color:var(--muted)}
+.bar{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;margin-top:10px}
+.tabs{display:flex;gap:4px;flex-wrap:wrap}
+.tabs button,.seg button{border:1px solid var(--rule);background:transparent;padding:5px 11px;border-radius:999px;cursor:pointer;font-size:14px}
+.tabs button[aria-pressed="true"],.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.seg{display:flex;align-items:center;gap:4px;font-size:13px;color:var(--muted)}
+.banner{margin:12px 16px 0;padding:8px 12px;border-radius:8px;background:var(--warn-soft);color:var(--ink);font-size:13px;border:1px solid color-mix(in srgb,var(--warn) 30%,transparent)}
+main{padding:16px;display:grid;gap:20px;grid-template-columns:minmax(0,1fr);max-width:1320px;margin:0 auto}
+@media (min-width:1000px){ main.chains{grid-template-columns:250px minmax(0,1fr) 380px} }
+.chooser{display:flex;gap:10px;overflow-x:auto;padding-bottom:4px}
+@media (min-width:1000px){ .chooser{flex-direction:column;overflow:visible} }
+.choice{min-width:240px;text-align:left;background:var(--paper);border:1px solid var(--rule);border-radius:10px;padding:10px 12px;cursor:pointer}
+.choice[aria-pressed="true"]{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-soft)}
+.choice b{font-family:var(--serif);font-size:16px;display:block;margin-bottom:4px}
+.choice span{color:var(--muted);font-size:13px}
+.legend{background:var(--paper);border:1px solid var(--rule);border-radius:10px;padding:10px 12px;font-size:13px}
+.legend h3{margin:0 0 6px;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.legend .row{display:flex;align-items:center;gap:8px;margin:5px 0}
+.legend svg{flex:none}
+.qhead h2{font-family:var(--serif);font-size:24px;margin:0 0 4px;line-height:1.2}
+.qhead p{margin:0 0 14px;color:var(--muted)}
+.thread{position:relative}
+.node{background:var(--paper);border:1px solid var(--rule);border-radius:12px;padding:12px 14px;position:relative}
+.node.outcome{border-color:var(--ink);border-width:1.5px}
+.node .meta{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;font-size:12.5px;color:var(--muted)}
+.chip{display:inline-block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--rule);border-radius:999px;padding:1px 7px;color:var(--muted)}
+.node h4{font-family:var(--serif);font-size:18px;margin:4px 0 2px;font-weight:600;line-height:1.25}
+.node details{margin-top:6px;font-size:13px}
+.node summary{cursor:pointer;color:var(--accent)}
+.rec{border-left:2px solid var(--rule);padding:4px 0 4px 10px;margin:6px 0}
+.rec .src{color:var(--muted);font-size:12px;margin-top:2px}
+.meet{margin-top:6px;font-size:12.5px;color:var(--accent)}
+.also{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:12.5px;color:var(--muted)}
+.also button{border:1px dashed var(--rule);background:transparent;border-radius:8px;padding:3px 8px;cursor:pointer;text-align:left;font-size:12.5px}
+.also button:hover{border-color:var(--accent)}
+.conds{margin-top:10px;border:1px solid var(--rule);border-radius:10px;padding:8px 10px}
+.conds h5{margin:0 0 4px;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.conds .c{display:flex;gap:8px;align-items:flex-start;padding:5px 0;border-top:1px solid var(--rule);cursor:pointer;font-size:13.5px}
+.conds .c:first-of-type{border-top:0}
+.conds .c small{color:var(--muted)}
+.link{display:flex;gap:10px;align-items:stretch;min-height:64px;margin:0 0 0 22px}
+.link svg.stem{flex:none;width:18px}
+.link .pill{align-self:center;border:1px solid var(--rule);background:var(--paper);border-radius:999px;padding:4px 11px;cursor:pointer;font-size:13px;display:flex;gap:6px;align-items:center;text-align:left}
+.link .pill[aria-expanded="true"]{border-color:var(--ink)}
+.link .pill .k{font-weight:600}
+.flag{font-size:11px;border-radius:999px;padding:1px 7px;margin-left:4px}
+.flag.weak,.flag.contested{background:var(--warn-soft);color:var(--warn)}
+.flag.not-a-condition{background:var(--gap-soft);color:var(--gap)}
+.gapbox{margin:0 0 0 22px;border:1.5px dashed var(--gap);background:var(--gap-soft);border-radius:10px;padding:8px 12px;font-size:13px}
+.gapbox b{color:var(--gap)}
+.more{margin:12px 0 0 22px}
+.more button{border:1px solid var(--rule);background:var(--paper);border-radius:8px;padding:6px 12px;cursor:pointer}
+.inline-detail{margin:6px 0 10px 22px}
+.inline-detail:empty{display:none}
+main>*{min-width:0}
+@media (max-width:999px){.inline-detail{margin-left:0}}
+.detail{background:var(--paper);border:1px solid var(--ink);border-radius:12px;padding:14px}
+.detail .kicker{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.detail .claim{font-family:var(--serif);font-size:18px;line-height:1.35;margin:6px 0 10px}
+.detail .basis{display:flex;gap:8px;align-items:flex-start;padding:8px 10px;border-radius:8px;background:var(--bg);font-size:13px;margin-bottom:10px}
+.detail h6{margin:12px 0 4px;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.detail blockquote{margin:6px 0;padding:4px 0 4px 10px;border-left:3px solid var(--rule);font-size:13.5px}
+.detail blockquote cite{display:block;font-style:normal;color:var(--muted);font-size:12px;margin-top:2px}
+.detail .note{font-size:13px;background:var(--warn-soft);border-radius:8px;padding:7px 10px;margin-top:8px}
+.detail .status{margin-top:12px;font-size:12px;color:var(--muted);border-top:1px solid var(--rule);padding-top:8px}
+.side{position:sticky;top:12px;align-self:start}
+.side .empty{color:var(--muted);font-size:13.5px;border:1px dashed var(--rule);border-radius:12px;padding:14px}
+.spark{width:100%;height:auto;display:block;margin-top:4px}
+.bars{margin-top:10px;display:grid;gap:5px}
+.bars .b{display:grid;grid-template-columns:86px 1fr 38px;gap:8px;align-items:center;font-size:12.5px}
+.bars .track{position:relative;height:14px;background:var(--bg);border-radius:3px}
+.bars .fill{position:absolute;top:2px;bottom:2px;border-radius:2px}
+.bars .line{position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--ink)}
+.rhythm{margin-top:10px}
+.rhythm .band{position:relative;height:18px;border-radius:4px;overflow:hidden;background:var(--bg);margin:6px 0 4px}
+.rhythm .seg-on{position:absolute;top:0;bottom:0;background:var(--accent)}
+.rhythm .tick{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--down)}
+.rhythm ol{margin:6px 0 0;padding-left:18px;font-size:12.5px}
+.rhythm .axis{display:flex;justify-content:space-between;font-size:11px;color:var(--muted)}
+/* reverse view */
+.tree{background:var(--paper);border:1px solid var(--rule);border-radius:12px;padding:14px}
+.tree ul{list-style:none;margin:0;padding-left:20px;border-left:1px solid var(--rule)}
+.tree > ul{border-left:0;padding-left:0}
+.tree li{margin:8px 0}
+.tree .edge{font-size:12.5px;color:var(--muted);display:flex;gap:6px;align-items:center}
+.tree .tn{font-family:var(--serif);font-size:16px}
+.tree .tn small{font-family:var(--sans);color:var(--muted);font-size:12px}
+.tree button.tog{border:0;background:transparent;cursor:pointer;color:var(--accent);padding:0 4px}
+.count{font-size:12px;color:var(--accent)}
+/* workshop */
+.ws{max-width:860px;margin:0 auto;display:grid;gap:12px}
+.ws .top{background:var(--paper);border:1px solid var(--rule);border-radius:12px;padding:12px 14px;font-size:13.5px}
+.sug{background:var(--paper);border:1px solid var(--rule);border-radius:12px;padding:12px 14px}
+.sug.done-confirm{border-color:var(--up)}
+.sug.done-reject{opacity:.55}
+.sug .h{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:12.5px;color:var(--muted)}
+.score{display:inline-block;width:60px;height:6px;background:var(--bg);border-radius:3px;vertical-align:middle;margin-left:6px;position:relative;overflow:hidden}
+.score i{position:absolute;left:0;top:0;bottom:0;background:var(--accent)}
+.pair{display:grid;grid-template-columns:1fr;gap:6px;margin:8px 0}
+@media (min-width:700px){ .pair{grid-template-columns:1fr 34px 1fr;align-items:center} }
+.pair .end{border:1px solid var(--rule);border-radius:8px;padding:7px 9px;font-size:13px}
+.pair .end small{color:var(--muted);display:block}
+.pair .arrow{text-align:center;color:var(--muted)}
+.sug .controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:8px;font-size:13px}
+.sug select,.sug input[type=text]{font:inherit;padding:4px 6px;border:1px solid var(--rule);border-radius:6px;background:var(--bg);color:var(--ink)}
+.sug .why{font-size:13px;color:var(--muted);margin-top:4px}
+.sug .acts button{border:1px solid var(--rule);background:transparent;border-radius:8px;padding:5px 12px;cursor:pointer}
+.sug .acts button.ok{border-color:var(--up);color:var(--up)}
+.sug .acts button.no{border-color:var(--down);color:var(--down)}
+textarea{width:100%;min-height:160px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;background:var(--paper);color:var(--ink);border:1px solid var(--rule);border-radius:8px;padding:8px}
+.hidden{display:none !important}
+.g{font-weight:700}
+.g.rule{color:var(--rule-c)} .g.save{color:var(--save-c)} .g.owner{color:var(--owner-c)} .g.court{color:var(--court-c)} .g.derived{color:var(--save-c)} .g.suggested{color:var(--sug-c)}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <h1>Isnād</h1><span class="ar" lang="ar">إسناد</span>
+    <p>the chain of why · al-Andalus, 1337–1443</p>
+  </div>
+  <div class="bar">
+    <div class="tabs" role="tablist">
+      <button data-tab="chains" aria-pressed="true">Chains</button>
+      <button data-tab="reverse" aria-pressed="false">What came of it</button>
+      <button data-tab="workshop" aria-pressed="false">Workshop (owner)</button>
+    </div>
+    <div class="seg">Names
+      <button data-names="c" aria-pressed="true">Chronicle</button><button data-names="p" aria-pressed="false">Plain</button>
+    </div>
+    <div class="seg">Dates
+      <button data-dates="h" aria-pressed="true">Hijri first</button><button data-dates="w" aria-pressed="false">Western first</button>
+    </div>
+  </div>
+</header>
+<div class="banner">Mockup. Every node, date and quotation comes from the campaign's data. The links between them are a draft by Designer D, not yet confirmed by Trent.</div>
+
+<main id="chains" class="chains">
+  <aside>
+    <div class="chooser" id="chooser"></div>
+    <div class="legend" id="legend" style="margin-top:12px"></div>
+  </aside>
+  <section><div class="qhead" id="qhead"></div><div class="thread" id="thread"></div></section>
+  <aside class="side" id="side"><div class="empty">Open any link (the pill between two records) to see what it claims, why we believe it and how sure that is.</div></aside>
+</main>
+<main id="reverse" class="hidden">
+  <section>
+    <div class="qhead"><h2 id="rtitle"></h2><p>Forward from one record: everything the links say came of it. (In the real thing, only confirmed links.) Pick a different starting record:
+      <select id="rootSel"></select></p></div>
+    <div class="tree" id="tree"></div>
+  </section>
+</main>
+<main id="workshop" class="hidden"><div class="ws" id="ws"></div></main>
+
+<script>
+const D={"nodes":{"A0":{"kind":"reading","date":"1442-06-11","label":"Every estate but the burghers pushed off its line","members":["1442-06-11-the-princes-mend-the-damage"],"reading":{"source":"save of 11 June 1442 (checkpoint 1442-06-11)","estates":[{"id":"nobles","name":"umarāʾ","sat":32,"line":40},{"id":"clergy","name":"ʿulamāʾ","sat":44,"line":50},{"id":"burghers","name":"burghers","sat":74,"line":50},{"id":"peasants","name":"commoners","sat":34,"line":50},{"id":"dhimmi","name":"dhimmī","sat":45,"line":50}]},"id":"A0","records":[{"id":"1442-06-11-the-princes-mend-the-damage","date":"1442-06-11","monthOnly":false,"hijri":"1 Ṣafar 846","type":"estate_change","title":"The two princes act quickly after their father's reforms: they rally the commoners so the hinterlands do not rise, and affirm the rights of the ʿulamāʾ upon the heir's accession to keep them in line. By the end, the crown's legitimacy has recovered a little and the realm's peace is acceptable, but every estate except the burghers is deeply angry","source":"Trent's account; save of 11 June 1442"}],"monthOnly":false,"hijri":"1 Ṣafar 846"},"J846":{"label":"The Jamāʿa of 846 seats the burghers as equals","members":["1442-06-01-national-assemblies","1442-06-01-privileges-for-the-burghers"],"id":"J846","kind":"knot","records":[{"id":"1442-06-01-national-assemblies","date":"1442-06-01","monthOnly":false,"hijri":"21 Muḥarram 846","type":"reform","title":"The Emperor calls the Jamāʿa to Ishbīliya and, without consulting the princes, announces reform: the realm's assembly becomes a national assembly, and the burghers sit in it as co-equal members","source":"Trent's account and screenshot, 1 June 1442"},{"id":"1442-06-01-privileges-for-the-burghers","date":"1442-06-01","monthOnly":false,"hijri":"21 Muḥarram 846","type":"estate_change","title":"The burghers are granted privileges on top of their seat: Shipwright Contracts, state contracts for the shipyards, and Urban Development Grants for the towns","source":"Trent's screenshots, 1 June 1442; save of 11 June 1442"}],"date":"1442-06-01","monthOnly":false,"hijri":"21 Muḥarram 846"},"LR1438":{"label":"The umarāʾ give up their Land Rights for Majrīṭ’s charter","members":["1438-04-08-land-rights-unravelled","1438-04-08-the-charter-of-majrit"],"id":"LR1438","kind":"knot","records":[{"id":"1438-04-08-land-rights-unravelled","date":"1438-04-08","monthOnly":false,"hijri":"12 Shawwāl 841","type":"estate_change","title":"The price of Majrīṭ's charter: the umarāʾ concede the slow unravelling of their Land Rights in the integrated territories. In return they are granted a stipend for their arts and culture, in truth a fund to keep them from open mutiny as the two princes carry on their grandfather's reform","source":"Trent's account and screenshot of the Land Rights privilege, 8 April 1438"},{"id":"1438-04-08-the-charter-of-majrit","date":"1438-04-08","monthOnly":false,"hijri":"12 Shawwāl 841","type":"reform","title":"Majrīṭ, grown rapidly beside Ṭulayṭula into one of the most important towns of the interior, is granted a city charter. The Emperor opposed it, asking why he should favour a town so far from the sea, but the two princes pressed for it","source":"Trent's account, 8 April 1438"}],"date":"1438-04-08","monthOnly":false,"hijri":"12 Shawwāl 841"},"P1428":{"label":"The Primacy of Nobility revoked","members":["1428-05-25-jamaa-against-primacy","1428-05-25-primacy-revoked"],"id":"P1428","kind":"knot","records":[{"id":"1428-05-25-jamaa-against-primacy","date":"1428-05-25","monthOnly":false,"hijri":"10 Shaʿbān 831","type":"estate_change","title":"In preparation for the war a Jamāʿa is called, and with it another chance to take a privilege from the umarāʾ: the Primacy of Nobility, by which the great houses count themselves the Emperor's equals and must be consulted before every important decision","source":"Trent's account and screenshot, 25 May 1428"},{"id":"1428-05-25-primacy-revoked","date":"1428-05-25","monthOnly":false,"hijri":"10 Shaʿbān 831","type":"estate_change","title":"The Primacy of Nobility, held by the umarāʾ since the founding of the realm, is revoked. The great houses no longer count themselves the Emperor's equals or must be consulted on his decisions. Their content falls to about one in six, and the realm's peace to almost nothing","source":"save of 25 May 1428"}],"date":"1428-05-25","monthOnly":false,"hijri":"10 Shaʿbān 831"},"J1414":{"label":"The Jamāʿa of the mercenaries; the umarāʾ curtailed","members":["1414-10-24-jamaa-of-the-mercenaries","1414-10-24-the-umara-mutinous"],"id":"J1414","kind":"knot","records":[{"id":"1414-10-24-jamaa-of-the-mercenaries","date":"1414-10-24","monthOnly":false,"hijri":"9 Shaʿbān 817","type":"estate_change","title":"The Emperor calls a Jamāʿa and, in the pomp of victory, takes from the umarāʾ the right to raise and manage the empire's mercenaries, with several smaller reforms against their power. To win their votes he offers dozens of noble families land in the north, or claims on lands still held by Qashtāla for after the next war. The grants make them landlords, not lords: the conquests remain the property of the crown and the house of Naṣr","source":"Trent's screenshot and account, 24 October 1414"},{"id":"1414-10-24-the-umara-mutinous","date":"1414-10-24","monthOnly":false,"hijri":"9 Shaʿbān 817","type":"estate_change","title":"When the umarāʾ read the terms, they turn near-mutinous: their content falls from four in ten to one in ten, and the realm's peace is badly shaken. The crown passes a law to curtail the nobles, and frames the whole as the old Umayyad order of the kūras and the new doctrine of the sovereign. The Emperor sets out to cool tempers through the ṭāʾifas and his diplomacy","source":"save of 24 October 1414; Trent's screens and account"}],"date":"1414-10-24","monthOnly":false,"hijri":"9 Shaʿbān 817"},"POL1402":{"label":"The court resolves to break the umarāʾ","members":["1402-08-the-umara"],"id":"POL1402","kind":"event","records":[{"id":"1402-08-the-umara","date":"1402-08-03","monthOnly":true,"hijri":"Muḥarram 805","type":"player_note","title":"The umarāʾ are given gifts to bring their temper back up after the burghers' privileges. But the court's long view has changed: now that the state is built, breaking the power of the umarāʾ is the easiest road to a stronger crown","source":"Trent's account, 1402"}],"date":"1402-08-03","monthOnly":true,"hijri":"Muḥarram 805"},"BP1402":{"label":"The burghers given the coinage and the city grants","members":["1402-08-burghers-privileges"],"id":"BP1402","kind":"event","records":[{"id":"1402-08-burghers-privileges","date":"1402-08-03","monthOnly":true,"hijri":"Muḥarram 805","type":"estate_change","title":"With the mines found, the burghers are given two privileges: control over the coinage, to cut and circulate good coin from the new silver and gold, and urban development grants, to raise the cities. The burghers are delighted; the umarāʾ, the ʿulamāʾ and the dhimmīs less so","source":"Trent's account and screens, 1402"}],"date":"1402-08-03","monthOnly":true,"hijri":"Muḥarram 805"},"CP1410":{"label":"The Catalan privileges return, for good","members":["1410-09-01-catalan-privileges-return"],"id":"CP1410","kind":"event","records":[{"id":"1410-09-01-catalan-privileges-return","date":"1410-09-01","monthOnly":false,"hijri":"1 Jumādā al-Ūlā 813","type":"reform","title":"The Catalan Merchant Privileges come back into force, sixty-four years after the war of the three crowns ended them. With Catalonia, Aragon and Valencia all ṭāʾifas of the crown, al-Andalus can no longer be at war with the Catalans, and the privileges can no longer be lost","source":"saves of 29 June 1410 and 1 November 1411; Trent's account"}],"date":"1410-09-01","monthOnly":false,"hijri":"1 Jumādā al-Ūlā 813"},"T1375":{"label":"Catalonia and Aragon made ṭāʾifas","members":["1375-03-16-two-new-taifas","1375-03-15-the-new-taifas"],"id":"T1375","kind":"knot","records":[{"id":"1375-03-16-two-new-taifas","date":"1375-03-16","monthOnly":false,"hijri":"12 Shawwāl 776","type":"territory_change","title":"Two ṭāʾifas are carved from the conquered lands of Aragon. In the east, the Catalans are freed from the Aragonese as a strong Ṭāʾifa of Catalonia: 28 towns and 453,000 people around Barcelona, under Francesc de Montsoriu. In the west, at the edges, a renewed Aragon is proclaimed: six towns and 52,000 people around Benabarre and Monzón, an Islamic state dressed as the old crown's successor, under King Alfons de Borja, whom the game counts the fifth of his name","source":"save of 16 March 1375; Trent's account"},{"id":"1375-03-15-the-new-taifas","date":"1375-03-15","monthOnly":false,"hijri":"11 Shawwāl 776","type":"player_note","title":"The sultan resolves not to keep Catalonia and Aragon for the crown. They will be made two new ṭāʾifas: Catalonia, and a resurrected Aragon in the interior. Returning Aragonese land to a successor kingdom looks far less aggressive than seizing it outright. In the same reordering, Mursiyya is to be absorbed directly into the crown","source":"Trent's account, after the peace of 15 March 1375"}],"date":"1375-03-15","monthOnly":false,"hijri":"11 Shawwāl 776"},"WUM":{"kind":"war","war":{"id":"war-of-the-upper-march","name":"The War of the Upper March","start":"1373-12-01","end":"1375-03-15","goal":"The Reconquest of Iberia: Aragon's lands, at reduced cost (won with the Battle for the Strait)","outcome":"Granadan victory. Aragon gave up every town it still held, 34 of them and half a million people, and ceased to hold land; Malta passed to the Mamlūks and Sicily paid reparations; King Joan was let go to Palermo (peace of 15 March 1375, war score +61%).","battles":5,"records":12},"label":"The War of the Upper March, 1373–1375","members":["1375-03-15-peace-aragon"],"id":"WUM","records":[{"id":"1375-03-15-peace-aragon","date":"1375-03-15","monthOnly":false,"hijri":"11 Shawwāl 776","type":"peace","title":"Peace with Aragon and Sicily. Barcelona has been under siege for 282 days and is about to fall; King Joan might still fight on from his Sicilian crown, until the shaykh of Barqa lands 3,000 men on the island and storms Siracusa. Offered peace or a war on Sicily itself, he accepts. Aragon gives up every town it has left, 34 of them from the Pyrenees to the Ebro, and the Kingdom of Aragon ceases to hold land. Malta passes to the Mamlūks, and Sicily pays reparations. The war score stands at +61%","source":"saves of 15 March 1375 before and after the peace; Trent's account"}],"date":"1373-12-01","monthOnly":false,"hijri":"14 Jumādā al-Ākhira 775"},"S1370":{"label":"The Battle for the Strait ends: Granada stands free","members":["1370-09-14-strait-ends"],"id":"S1370","kind":"event","records":[{"id":"1370-09-14-strait-ends","date":"1370-09-14","monthOnly":false,"hijri":"21 Ṣafar 772","type":"situation","title":"The Battle for the Strait is over: the Throne of Granada endures. Qashtāla has stopped sending demands, Fās has failed to cross, and the throne in Gharnāṭa has the same occupant it began with. Granada stands free","source":"Trent's screenshots of the event (14 September 1370)"}],"date":"1370-09-14","monthOnly":false,"hijri":"21 Ṣafar 772"},"GC":{"label":"The Golden Century proclaimed, and a Thalassocracy","members":["1442-08-07-the-golden-century","1442-08-07-establish-a-thalassocracy"],"id":"GC","kind":"knot","records":[{"id":"1442-08-07-the-golden-century","date":"1442-08-07","monthOnly":false,"hijri":"29 Rabīʿ al-Awwal 846","type":"situation","title":"The Emperor ushers in the Golden Century of al-Andalus: the Strait held, Iberia gathered under one banner, and what the fall of Qurṭuba scattered made whole again. A century of wealth and consolidation lies ahead","source":"Trent's screenshots and account, 7 August 1442"},{"id":"1442-08-07-establish-a-thalassocracy","date":"1442-08-07","monthOnly":false,"hijri":"29 Rabīʿ al-Awwal 846","type":"reform","title":"On the same day as the Golden Century, the Emperor establishes a Thalassocracy, one of the first acts of the new age: for twenty years ships cost a fifth less to build and the realm turns faster toward the sea","source":"Trent's screenshot of 7 August 1442 and account"}],"date":"1442-08-07","monthOnly":false,"hijri":"29 Rabīʿ al-Awwal 846"},"SEA1438":{"label":"The realm’s temper leans to the sea","members":["1438-01-16-the-realm-turns-to-the-sea"],"id":"SEA1438","kind":"event","records":[{"id":"1438-01-16-the-realm-turns-to-the-sea","date":"1438-01-16","monthOnly":false,"hijri":"19 Rajab 841","type":"reform","title":"For the first time the realm's temper leans to the sea rather than the land, and protected harbours are being built in the newly annexed Catalan ports: Barcelona, Girona, Tarragona, Tortosa and Perpignan","source":"saves of 10 October 1435 and 16 January 1438"}],"date":"1438-01-16","monthOnly":false,"hijri":"19 Rajab 841"},"DAR1432":{"label":"Seven arsenals, the dār al-ṣināʿa, laid down","members":["1432-05-the-dar-al-sinaa"],"id":"DAR1432","kind":"event","records":[{"id":"1432-05-the-dar-al-sinaa","date":"1432-05-01","monthOnly":true,"hijri":"Shaʿbān 835","type":"reform","title":"The Emperor orders seven arsenals, the dār al-ṣināʿa of the old caliphs, at Ishbīliya, Mālaqa, al-Mariyya, al-Ushbūna, Balansiyya, Cartagena and Mursiyya, and seven war galleys laid down beside them, to build a navy that can match the Genoese fleet","source":"Trent's account and screenshot; save of 1 May 1432"}],"date":"1432-05-01","monthOnly":true,"hijri":"Shaʿbān 835"},"CR1431":{"label":"The second crusade proclaimed","members":["1431-10-01-the-second-crusade"],"id":"CR1431","kind":"event","records":[{"id":"1431-10-01-the-second-crusade","date":"1431-10-01","monthOnly":false,"hijri":"23 Muḥarram 835","type":"war_declared","title":"Sparked by the destruction of Santiago, the Pope proclaims the second crusade against al-Andalus and declares war on the Ṭāʾifa of Aragon, aiming at Barbastro. The Emperor answers for his subject, and all his allies come in: the eight ṭāʾifas, the Mamlūks, Morocco and Tunis with all their vassals","source":"Trent's account and screenshot; save of 1 October 1431"}],"date":"1431-10-01","monthOnly":false,"hijri":"23 Muḥarram 835"},"SAN1430":{"label":"Santiago falls; its cathedral destroyed","members":["1430-07-15-santiago-falls"],"id":"SAN1430","kind":"event","records":[{"id":"1430-07-15-santiago-falls","date":"1430-07-15","monthOnly":false,"hijri":"23 Shawwāl 833","type":"siege","title":"Santiago de Compostela falls after a siege of fifteen days, its garrison broken by hunger and disease and allowed to march out. On the Emperor's direct orders the Cathedral of Santiago, the shrine of the Apostle and the end of the pilgrim road of all Christendom, is destroyed; its Pórtico de la Gloria is carried off to Ishbīliya. The consequences remain to be seen","source":"Trent's account and screenshot, 15 July 1430"}],"date":"1430-07-15","monthOnly":false,"hijri":"23 Shawwāl 833"},"PR1430":{"label":"The princes turn the war on Galicia","members":["1430-05-18-the-princes-counsel","1430-05-18-take-the-capital"],"id":"PR1430","kind":"knot","records":[{"id":"1430-05-18-the-princes-counsel","date":"1430-05-18","monthOnly":false,"hijri":"24 Shaʿbān 833","type":"player_note","title":"The first test of the new reign. The Emperor Muḥammad, wanting to finish his father's work and prove himself a worthy heir, orders the army north for a swift conquest of Castile. The princes Ismāʿīl and Aḥmad talk him round: Galicia would be the nobler and harder conquest, and Navarre after it, for the Basques are a far more redoubtable people than the Castilians. For now the Emperor is convinced","source":"Trent's account, May 1430"},{"id":"1430-05-18-take-the-capital","date":"1430-05-18","monthOnly":false,"hijri":"24 Shaʿbān 833","type":"player_note","title":"The war plan is as plain as the Emperor's demand: take the capital. The armies march north on Santiago","source":"Trent's account and screenshots, June 1430"}],"date":"1430-05-18","monthOnly":false,"hijri":"24 Shaʿbān 833"},"REST1375":{"label":"Granada becomes al-Andalus","members":["1375-03-16-restoration-of-al-andalus"],"id":"REST1375","kind":"event","records":[{"id":"1375-03-16-restoration-of-al-andalus","date":"1375-03-16","monthOnly":false,"hijri":"12 Shawwāl 776","type":"reform","title":"The Restoration of al-Andalus. The sultan no longer calls himself a successor: the Emirate of Granada becomes al-Andalus, an empire, one continuation reaching back hundreds of years. Offered the convivencia of the Umayyads or the sword of the Almohads, he chooses the first: let Qurṭuba shine again as the ornament of the world. Tolerance, wealth and learning are to stand level with the Word","source":"Trent's account and screenshot of the event, 16 March 1375; save of 16 March 1375"}],"date":"1375-03-16","monthOnly":false,"hijri":"12 Shawwāl 776"},"AOD1437":{"label":"The Age of Discovery opens","members":["1437-01-01-the-age-of-discovery"],"id":"AOD1437","kind":"event","records":[{"id":"1437-01-01-the-age-of-discovery","date":"1437-01-01","monthOnly":false,"hijri":"22 Jumādā al-Ākhira 840","type":"situation","title":"The Age of Discovery opens","source":"Trent's account"}],"date":"1437-01-01","monthOnly":false,"hijri":"22 Jumādā al-Ākhira 840"},"PEACE1432":{"label":"Peace with the Pope ends the last war","members":["1432-07-27-peace-with-the-pope"],"id":"PEACE1432","kind":"event","records":[{"id":"1432-07-27-peace-with-the-pope","date":"1432-07-27","monthOnly":false,"hijri":"28 Dhū al-Qaʿda 835","type":"peace","title":"The Pope, at war with Milan and Mantua on another front, sues for peace. He pays al-Andalus 114.64 gold at once and a tenth of his income for five years in reparations, 36.45 gold a month at the time, and annuls all his treaties with Genoa, Siena and Aquileia. No land changes hands, and the second crusade is over","source":"Trent's account and screenshot of the peace terms; save of 27 July 1432 (before the peace)"}],"date":"1432-07-27","monthOnly":false,"hijri":"28 Dhū al-Qaʿda 835"},"IB1430":{"label":"Iberia conquered","members":["1430-11-03-iberia-is-conquered"],"id":"IB1430","kind":"event","records":[{"id":"1430-11-03-iberia-is-conquered","date":"1430-11-03","monthOnly":false,"hijri":"16 Ṣafar 834","type":"player_note","title":"Iberia is conquered. With Galicia, Navarre and Castile gone, every town of the peninsula belongs to the Emperor or to one of his ṭāʾifas: the Istirdād is complete","source":"Trent's account"}],"date":"1430-11-03","monthOnly":false,"hijri":"16 Ṣafar 834"},"CAT1436":{"label":"Catalonia annexed to the crown","members":["1436-06-01-catalonia-annexed"],"id":"CAT1436","kind":"event","records":[{"id":"1436-06-01-catalonia-annexed","date":"1436-06-01","monthOnly":false,"hijri":"16 Dhū al-Qaʿda 839","type":"territory_change","title":"The Ṭāʾifa of Catalonia is annexed into the crown, a year before the court expected","source":"Trent's account"}],"date":"1436-06-01","monthOnly":false,"hijri":"16 Dhū al-Qaʿda 839"},"CAP1379":{"label":"The court moves to Ishbīliya","members":["1379-04-jamaa-of-the-capital","1379-11-capital-at-ishbiliya"],"id":"CAP1379","kind":"knot","records":[{"id":"1379-04-jamaa-of-the-capital","date":"1379-04-25","monthOnly":true,"hijri":"Muḥarram 781","type":"estate_change","title":"The Jamāʿa of 1379 takes up the question of the capital. The expansion north has left Gharnāṭa isolated, a long ride from the frontier, and the court finds itself cut off from its slowly integrating lands. The old idea of a capital at Qurṭuba is raised again, and then a second proposal: invest in the sea, set the Catalan shipwrights, now the Emperor's subjects, to building a trading fleet, and move the capital to Ishbīliya, where its power would reach furthest. The assembly and the Emperor choose Ishbīliya","source":"Trent's account, 1379"},{"id":"1379-11-capital-at-ishbiliya","date":"1379-11-24","monthOnly":true,"hijri":"Shaʿbān 781","type":"reform","title":"The court moves to Ishbīliya. After a hundred and forty years at Gharnāṭa the capital of the house of Naṣr stands in the greatest city of the realm, on the river to the Atlantic, with the first market in the world. Its grip on the city has already risen from 60% to 67%; on the far provinces it will take months and years","source":"saves of 24 November and 2 December 1379; Trent's account"}],"date":"1379-04-25","monthOnly":true,"hijri":"Muḥarram 781"},"SHIP1376":{"label":"Catalan shipwrights sent to the Mamlūk ports","members":["1376-12-catalan-shipwrights"],"id":"SHIP1376","kind":"event","records":[{"id":"1376-12-catalan-shipwrights","date":"1376-12-01","monthOnly":true,"hijri":"Rajab 778","type":"diplomacy","title":"The Mamlūks are stuck across the sea: the Iberian fleets far outnumber theirs. This will not do. In early December the crown sends Catalan shipwrights to five Mamlūk ports, al-Iskandariyya, Dimyāṭ, ʿAkkā, Anṭākiya and Ṭarsūs, to build proper shipbuilding wharves with the Mamlūks' coin and to teach them the first modern galleys","source":"Trent's account, December 1376; save of 13 January 1377"}],"date":"1376-12-01","monthOnly":true,"hijri":"Rajab 778"},"MUR1370":{"label":"Mursiyya absorbed into the crown","members":["1370-09-20-murcia-annexation","1375-03-16-murcia-into-the-crown"],"id":"MUR1370","kind":"knot","records":[{"id":"1370-09-20-murcia-annexation","date":"1370-09-20","monthOnly":false,"hijri":"27 Ṣafar 772","type":"diplomacy","title":"The sultan begins to absorb the Ṭāʾifa of Mursiyya into the realm. The annexation runs at 1.4 a month and stands at 2.8 on 1 November. Qashtāla takes a claim to prevent it, and Mursiyya one to resist it","source":"save of 1 November 1370"},{"id":"1375-03-16-murcia-into-the-crown","date":"1375-03-16","monthOnly":false,"hijri":"12 Shawwāl 776","type":"territory_change","title":"Mursiyya, one of the first ṭāʾifas, is taken into the crown: its twelve towns, from Murcia and Cartagena to Albacete and Lorca, pass directly to the sultan. Its ḥājiba Dolça is granted lands and titles and confirmed as a governor. The crown's reach there will be limited at first, and the autonomy and friendship of its Catalan court and traders are carefully kept, their institutions accepted within the state rather than ignored","source":"save of 16 March 1375; Trent's account"}],"date":"1370-09-20","monthOnly":false,"hijri":"27 Ṣafar 772"}},"links":[{"id":"a1","cause":"J846","effect":"A0","kind":"provoked","basis":"rule","claim":"Seating the burghers and granting them two privileges cost every other estate satisfaction, by the game’s own previews.","evidence":[{"q":"on granting, burghers +15% (to 59%), umarāʾ −2.6%, ʿulamāʾ −2.2%, dhimmī −2.0%","src":"Shipwright Contracts tooltip; Trent’s screenshots, 1 June 1442"},{"q":"on granting, burghers +15%, umarāʾ −3.9%, ʿulamāʾ −3.4%, dhimmī −3.0%","src":"Urban Development Grants tooltip; Trent’s screenshots, 1 June 1442"},{"q":"burghers 74, ʿulamāʾ 44, dhimmī 45, commoners 34, umarāʾ 32","src":"save of 11 June 1442"}],"primary":true,"note":"The previews explain about six or seven points of each fall. The commoners’ drop of 16 has no tooltip behind it in the record; the chronicle says they “felt passed over” (the court’s reading).","suggestedBy":["same-window estate departure"],"status":"draft"},{"id":"a1b","cause":"LR1438","effect":"A0","kind":"provoked","basis":"rule","claim":"The umarāʾ’s anger was compounded: Land Rights, worth +5% satisfaction to them, is gone in the save of June 1442.","evidence":[{"q":"Land Rights (nobles): +5% satisfaction and +75% power for the nobility","src":"the game’s tooltip; Trent’s screenshot, 8 April 1438"},{"q":"the save of 11 June 1442 shows … the nobles’ Land Rights gone","src":"save of 11 June 1442"},{"q":"The umarāʾ had lost their land rights four years before, and now their place above the merchants.","src":"chronicle, “Of the Princes’ Mending” (the court’s reading)"}],"primary":false,"suggestedBy":["readings diff: nobles_land_rights removed","co-cited"],"status":"draft"},{"id":"a2","cause":"P1428","effect":"J846","kind":"enabled","basis":"court","claim":"With the Primacy gone, the great houses no longer had to be consulted before important decisions, which left the Emperor free to remake the assembly over their heads.","evidence":[{"q":"they have become so crucial to the government that we must consult with them before making important decisions","src":"the Primacy of Nobility, the game’s text; Trent’s screenshot, 25 May 1428"},{"q":"The great houses no longer count themselves the Emperor’s equals or must be consulted on his decisions.","src":"save of 25 May 1428"}],"primary":true,"note":"The chronicle’s reading. Nothing in the save says the 1442 reform needed the Primacy gone.","series":"umara","window":["1424-01-01","1443-01-01"],"status":"draft"},{"id":"a2b","cause":"BP1402","effect":"J846","kind":"enabled","basis":"court","claim":"Forty years of favour had made the burghers an estate worth seating.","evidence":[{"q":"With the mines found, the burghers are given two privileges: control over the coinage … and urban development grants","src":"Trent’s account and screens, 1402"}],"primary":false,"note":"The saves show the burghers’ share of power doubling between 1411 and 1414 (estimated figures), not in 1402. The record doesn’t say why.","flag":"weak","status":"draft"},{"id":"a3","cause":"J1414","effect":"P1428","kind":"continued","basis":"owner","claim":"Revoking the Primacy was the next step in the campaign against the umarāʾ that the Jamāʿa of 1414 had opened.","evidence":[{"q":"another chance to take a privilege from the umarāʾ","src":"Trent’s account and screenshot, 25 May 1428"},{"q":"the crown and the umarāʾ: from 1402 the crown’s aim is to break the power of the nobles","src":"thread note on the 1414 record (Trent)"}],"primary":true,"note":"The umarāʾ’s line, held near 40, plunges at each step: 11 in 1414, 16 in 1428. Both times the crown brings it back by the next save or two.","series":"umara","window":["1408-01-01","1432-01-01"],"status":"draft"},{"id":"a4","cause":"CP1410","effect":"J1414","kind":"shifted","basis":"rule","claim":"Back in force from 1410, the Catalan privileges cut the nobles’ power by a fifth, weakening them before the Jamāʿa of 1414.","evidence":[{"q":"nobles power −20%, burghers power −10% (crown power +30% scaled by Farfanes in the army)","src":"the reform’s effects; saves of 29 June 1410 and 1 November 1411"},{"q":"He had an old ally in it. … they had always weakened the great lords in favour of the crown.","src":"chronicle, “Of the Jamāʿa of 817” (the court’s reading)"}],"primary":true,"suggestedBy":["co-cited in “Of the Jamāʿa of 817”","effects text names the nobles"],"status":"draft"},{"id":"a4b","cause":"POL1402","effect":"J1414","kind":"prompted","basis":"owner","claim":"The Jamāʿa of 1414 carried out the policy the court had settled on in 1402.","evidence":[{"q":"now that the state is built, breaking the power of the umarāʾ is the easiest road to a stronger crown","src":"Trent’s account, 1402"}],"primary":false,"suggestedBy":["thread field on the 1414 record","co-cited"],"status":"draft"},{"id":"a5","cause":"T1375","effect":"CP1410","kind":"enabled","basis":"rule","claim":"The privileges hold only while there is peace with Aragon. Once Catalonia and Aragon were the Emperor’s own ṭāʾifas, that war could not happen again.","evidence":[{"q":"needs peace with Aragon","src":"the reform’s effects (eu5db.com, 1.4.5), on the 1339 record"},{"q":"the privileges need peace with Aragon; now that Catalonia and Aragon are subjects, war with them is impossible (Trent)","src":"saves of 29 June 1410 and 1 November 1411; Trent’s account"}],"primary":true,"gap":"35 years pass between the ṭāʾifas (1375) and the privileges’ return (1410). The record doesn’t say why they waited so long.","suggestedBy":["rhythm: a conditional reform aligned with wars on Aragon"],"status":"draft"},{"id":"a6","cause":"WUM","effect":"T1375","kind":"enabled","basis":"save","claim":"The peace of 15 March 1375 left Aragon landless; the ṭāʾifas were carved from its lands the next day.","evidence":[{"q":"Aragon gave up every town it still held, 34 of them and half a million people, and ceased to hold land","src":"wars.json, the War of the Upper March"},{"q":"ARA is the old Kingdom of Aragon’s own tag, landless since the peace of 15 March, now a ṭāʾifa of the sultan","src":"save of 16 March 1375"}],"primary":true,"suggestedBy":["structural: war → peace → territory (auto-confirmed)"],"status":"draft"},{"id":"a7","cause":"S1370","effect":"WUM","kind":"enabled","basis":"rule","claim":"Winning the Strait made the Reconquest of Iberia cheap to claim, and that claim was the War of the Upper March’s goal.","evidence":[{"q":"the Reconquest of Iberia can be fabricated at reduced cost","src":"the Strait’s ending, Trent’s screenshots of the event (14 September 1370)"},{"q":"The Reconquest of Iberia: Aragon’s lands, at reduced cost (won with the Battle for the Strait)","src":"wars.json, the war’s goal"}],"primary":true,"status":"draft"},{"id":"b1","cause":"SEA1438","effect":"GC","kind":"prompted","basis":"court","claim":"The Thalassocracy, signed on the day of the Golden Century, crowned a temper that had already swung to the sea.","evidence":[{"q":"Establishing a Thalassocracy for 20 years, heavy and light ship build cost −20%, monthly progress to naval +0.50","src":"Trent’s screenshot of 7 August 1442"},{"q":"“Why should I grant such favour so far from the sea? Won’t the city merely wither and die?”","src":"the Emperor on Majrīṭ, Trent’s account, 8 April 1438"},{"q":"it was not hard to tell which the Emperor loved more","src":"chronicle, “Of the Princes’ Mending” (the court’s reading)"}],"primary":true,"series":"naval","window":["1420-01-01","1443-01-01"],"status":"draft"},{"id":"r1","cause":"S1370","effect":"GC","kind":"enabled","basis":"rule","claim":"The Strait’s ending is what unlocked the decision at all.","evidence":[{"q":"enables the decision Usher in the Golden Century, which starts the Golden Century situation","src":"Trent’s screenshots of the event (14 September 1370)"}],"primary":false,"group":"conditions","status":"draft"},{"id":"r2","cause":"REST1375","effect":"GC","kind":"required","basis":"rule","claim":"One of the decision’s conditions: al-Andalus restored.","evidence":[{"q":"requires the Age of Discovery, independence, peace, solvency, al-Andalus restored, and Granada, Andalusia and Murcia owned by al-Andalus or its subjects","src":"the decision, Trent’s screenshots, 7 August 1442"}],"primary":false,"group":"conditions","status":"draft"},{"id":"r3","cause":"AOD1437","effect":"GC","kind":"required","basis":"rule","claim":"One of the decision’s conditions: the Age of Discovery.","evidence":[{"q":"requires the Age of Discovery …","src":"the decision, Trent’s screenshots, 7 August 1442"}],"primary":false,"group":"conditions","status":"draft"},{"id":"r4","cause":"PEACE1432","effect":"GC","kind":"required","basis":"rule","claim":"One of the decision’s conditions: peace. The crusade was the last war before 1442.","evidence":[{"q":"requires … peace","src":"the decision, Trent’s screenshots, 7 August 1442"},{"q":"no war in the saves of 10 October 1435, 16 January 1438 or 11 June 1442","src":"checkpoints.json"}],"primary":false,"group":"conditions","status":"draft"},{"id":"r5","cause":"IB1430","effect":"GC","kind":"prompted","basis":"court","claim":"The proclamation speaks of an Iberia gathered under one banner, but that was not one of the game’s conditions: Granada, Andalusia and Murcia were enough.","evidence":[{"q":"for the first time in centuries the call to prayer rises over an Iberia gathered under one banner","src":"the game’s event text, 7 August 1442"}],"primary":false,"flag":"not-a-condition","group":"conditions","status":"draft"},{"id":"b2","cause":"DAR1432","effect":"SEA1438","kind":"shifted","basis":"save","claim":"The temper’s swing to the sea quickened after the arsenals were laid down.","evidence":[{"q":"under construction in the save of 1 May 1432, none begun in that of 1 October 1431","src":"saves of 1 October 1431 and 1 May 1432"},{"q":"land against sea: −27.3 (May 1432), −10.2 (1435), +1.1 (1438)","src":"realm readings"}],"primary":true,"note":"The saves show timing only. The arsenals’ listed effects do not include the drift toward the sea.","gap":"The temper had already begun to turn in 1429–30 (−36.9 to −32.3), before the arsenals. The record doesn’t say what started it.","series":"naval","window":["1426-01-01","1440-01-01"],"status":"draft"},{"id":"b2b","cause":"CAT1436","effect":"SEA1438","kind":"shifted","basis":"save","claim":"Harbours were going up in the newly annexed Catalan ports.","evidence":[{"q":"protected harbours are being built in the newly annexed Catalan ports: Barcelona, Girona, Tarragona, Tortosa and Perpignan","src":"saves of 10 October 1435 and 16 January 1438"}],"primary":false,"status":"draft"},{"id":"b2c","cause":"CAP1379","effect":"SEA1438","kind":"shifted","basis":"owner","claim":"The move to the river and the sea began the turn outward.","evidence":[{"q":"invest in the sea, set the Catalan shipwrights, now the Emperor’s subjects, to building a trading fleet, and move the capital to Ishbīliya","src":"Trent’s account, 1379"}],"primary":false,"note":"The numbers disagree: the temper sat at −37.0 in 1379 and −36.9 in 1428. Whatever the move did, it did not show in the realm’s temper for fifty years.","series":"naval","window":["1370-01-01","1440-01-01"],"flag":"contested","status":"draft"},{"id":"b3","cause":"CR1431","effect":"DAR1432","kind":"prompted","basis":"owner","claim":"The arsenals were ordered in the middle of the crusade, to match the Genoese fleet.","evidence":[{"q":"to build a navy that can match the Genoese fleet","src":"Trent’s account and screenshot; save of 1 May 1432"}],"primary":true,"status":"draft"},{"id":"b4","cause":"SAN1430","effect":"CR1431","kind":"provoked","basis":"owner","claim":"Destroying the shrine of Santiago brought the second crusade.","evidence":[{"q":"Sparked by the destruction of Santiago, the Pope proclaims the second crusade against al-Andalus","src":"Trent’s account and screenshot; save of 1 October 1431"}],"primary":true,"status":"draft"},{"id":"b5","cause":"PR1430","effect":"SAN1430","kind":"prompted","basis":"owner","claim":"The princes talked the Emperor into Galicia instead of Castile, and the war plan was to take its capital.","evidence":[{"q":"Galicia would be the nobler and harder conquest","src":"Trent’s account, May 1430"},{"q":"The war plan is as plain as the Emperor’s demand: take the capital. The armies march north on Santiago","src":"Trent’s account and screenshots, June 1430"}],"primary":true,"status":"draft"},{"id":"x1","cause":"T1375","effect":"SHIP1376","kind":"enabled","basis":"owner","claim":"The crown could send Catalan shipwrights abroad because Catalonia was now its own.","evidence":[{"q":"the crown sends Catalan shipwrights to five Mamlūk ports","src":"Trent’s account, December 1376"}],"primary":false,"status":"draft"},{"id":"x2","cause":"T1375","effect":"CAP1379","kind":"enabled","basis":"owner","claim":"The Catalan shipwrights, now the Emperor’s subjects, made a sea capital thinkable.","evidence":[{"q":"set the Catalan shipwrights, now the Emperor’s subjects, to building a trading fleet","src":"Trent’s account, 1379"}],"primary":false,"status":"draft"},{"id":"x3","cause":"S1370","effect":"MUR1370","kind":"enabled","basis":"rule","claim":"The Strait’s ending sped up the absorption of the ṭāʾifas.","evidence":[{"q":"every ṭāʾifa being annexed gains 25% annexation progress","src":"Trent’s screenshots of the event (14 September 1370)"}],"primary":false,"status":"draft"},{"id":"x4","cause":"T1375","effect":"CAT1436","kind":"continued","basis":"save","claim":"The ṭāʾifa of 1375 was taken into the crown sixty-one years later.","evidence":[{"q":"Catalonia, a ṭāʾifa since 16 March 1375","src":"Trent’s account, December 1428"}],"primary":false,"status":"draft"}],"chains":[{"id":"A","outcome":"A0","question":"Why was every estate but the burghers angry in June 1442?","plainQuestion":"Why was every estate but the burghers angry in June 1442?","blurb":"The umarāʾ’s long fall, from the assembly of 1442 back through three Jamāʿas to the Catalan privileges and the Strait."},{"id":"B","outcome":"GC","question":"Why did the Golden Century come with a fleet?","blurb":"The game’s own conditions for the Golden Century, and the sea strand behind the Thalassocracy, back to the fall of Santiago."}],"series":{"umara":{"label":"umarāʾ satisfaction, every save (the crown holds it near 40)","line":40,"points":[["1337-08-18",53],["1337-11-16",53],["1339-05-24",50],["1339-09-02",51],["1340-05-30",33],["1340-08-11",34],["1340-08-28",34],["1340-10-30",35],["1341-09-08",38],["1343-05-20",42],["1345-01-27",47],["1346-08-01",45],["1346-10-18",44],["1346-11-08",43],["1348-07-01",41],["1349-01-27",40],["1349-06-04",41],["1351-06-03",48],["1353-02-02",41],["1353-07-05",44],["1355-06-16",42],["1359-03-15",40],["1360-06-26",47],["1363-05-20",38],["1363-08-02",38],["1364-09-11",40],["1365-07-01",40],["1366-04-05",40],["1366-10-02",41],["1366-11-06",41],["1367-08-07",40],["1368-05-13",40],["1368-10-24",40],["1369-11-18",48],["1370-09-13",41],["1373-12-01",40],["1375-03-15",40],["1375-03-16",40],["1375-06-05",40],["1378-04-06",40],["1379-12-02",40],["1394-03-04",40],["1395-06-22",40],["1395-08-05",40],["1404-02-03",40],["1404-10-22",40],["1405-01-07",40],["1405-03-31",40],["1408-08-05",40],["1410-06-29",40],["1411-11-01",40],["1414-10-24",11],["1416-01-01",26],["1420-08-11",41],["1420-09-04",41],["1423-11-05",40],["1424-08-14",40],["1428-05-25",16],["1428-11-16",34],["1428-12-01",34],["1429-07-02",37],["1430-05-18",40],["1430-08-17",41],["1430-11-03",42],["1430-11-05",42],["1431-10-01",45],["1432-05-01",48],["1432-07-27",48],["1435-10-10",40],["1438-01-16",41],["1442-06-11",32]],"min":0,"max":70},"naval":{"label":"the realm’s temper, land (−) against sea (+), every reading","line":0,"points":[["1337-04-01",-10.0],["1337-08-18",-10.44],["1337-11-16",-10.87],["1339-05-24",-13.46],["1339-09-02",-13.46],["1340-05-30",-13.46],["1340-08-11",-13.6],["1340-08-28",-13.6],["1340-10-30",-13.93],["1341-09-08",-15.99],["1343-05-20",-16.58],["1345-01-27",-16.58],["1346-10-18",-16.58],["1346-11-08",-16.78],["1348-07-01",-22.47],["1349-01-27",-24.4],["1349-06-04",-25.73],["1351-06-03",-31.76],["1353-02-02",-33.44],["1353-07-05",-33.44],["1355-06-16",-33.78],["1359-03-15",-33.78],["1360-06-26",-33.78],["1363-05-20",-33.78],["1363-08-02",-33.78],["1364-09-11",-33.78],["1366-04-05",-33.78],["1366-10-02",-33.78],["1366-11-06",-33.78],["1367-08-07",-33.78],["1368-05-13",-33.78],["1368-10-24",-33.78],["1369-11-18",-33.78],["1370-09-13",-33.78],["1373-12-01",-33.78],["1375-03-15",-34.12],["1375-03-16",-34.12],["1375-06-05",-35.19],["1378-04-06",-37.02],["1379-12-02",-37.02],["1394-03-04",-36.89],["1395-06-22",-36.89],["1395-08-05",-36.89],["1404-02-03",-36.89],["1404-10-22",-36.89],["1405-01-07",-36.89],["1405-03-31",-36.89],["1408-08-05",-36.89],["1410-06-29",-36.89],["1411-11-01",-36.89],["1414-10-24",-36.89],["1416-01-01",-36.89],["1420-08-11",-36.89],["1420-09-04",-36.89],["1423-11-05",-36.89],["1424-08-14",-36.89],["1428-05-25",-36.89],["1428-11-16",-36.89],["1428-12-01",-36.89],["1429-07-02",-36.61],["1430-05-18",-33.81],["1430-08-17",-33.04],["1430-11-03",-32.25],["1430-11-05",-32.25],["1431-10-01",-29.14],["1432-05-01",-27.32],["1432-07-27",-26.39],["1435-10-10",-10.2],["1438-01-16",1.08],["1442-06-11",26.26]],"min":-50,"max":50}},"rhythm":{"title":"The Catalan privileges and Aragon","rule":"the reform “needs peace with Aragon” (eu5db.com, 1.4.5)","spans":[["1337-04-01","1339-05-24","on"],["1339-05-24","1342-08-14","off"],["1342-08-14","1346-11-08","on"],["1346-11-08","1410-09-01","off"],["1410-09-01","1443-06-26","on"]],"marks":[{"date":"1339-05-24","what":"war on Aragon declared; privileges lost the same day","ids":["1339-05-24-war-on-aragon","1339-05-24-catalan-privileges-lost"],"basis":"rule"},{"date":"1340-08-11","what":"peace with Aragon; re-enacted 14 Aug 1340, in force 1342 after two years","ids":["1340-08-11-peace-aragon","1342-08-14-catalan-privileges-restored"],"basis":"rule"},{"date":"1346-10-18","what":"Granada joins the war on the three crowns; privileges gone by the reading of 8 Nov 1346. No event records the loss: the suggester derives it from the readings.","ids":["1346-10-18-granada-joins"],"basis":"derived"},{"date":"1375-03-16","what":"Catalonia and Aragon become ṭāʾifas: war with them is no longer possible","ids":["1375-03-16-two-new-taifas"],"basis":"rule"},{"date":"1410-09-01","what":"privileges back, and for good","ids":["1410-09-01-catalan-privileges-return"],"basis":"save"}]},"suggest":[{"id":"s1","heuristic":"readings diff + rhythm","score":0.92,"proposal":"New derived event: “The Catalan Merchant Privileges lapse” (gone between the readings of 18 Oct and 8 Nov 1346).","cause":{"id":"1346-10-18-granada-joins","date":"1346-10-18","monthOnly":false,"hijri":"1 Rajab 747","type":"war_joined","title":"Granada answers Morocco's call and goes to war with Castile, Portugal and Aragon, and the Ṭāʾifa of Balansiyya marches with it","source":"checkpoint 1346-11-08 (joined 18 October 1346)"},"effect":{"id":"(derived) 1346-11-08 catalan_merchant_privileges removed","date":"1346-11-08","hijri":"22 Rajab 747","title":"Catalan Merchant Privileges no longer among the reforms (reading of 8 November 1346)","source":"realm-readings 1346-10-18 → 1346-11-08"},"kind":"ended","basis":"rule","why":"The reform’s effects say it “needs peace with Aragon”; Aragon is on the other side of this war."},{"id":"s2","heuristic":"cause field","score":0.88,"cause":{"id":"1385-10-28-al-qahira","date":"1385-10-28","monthOnly":false,"hijri":"23 Ramaḍān 787","type":"player_note","title":"In al-Qāhira, the city of a thousand minarets, the Emperor pauses on the road to Makka. He sits for a month with the scholars of al-Azhar and treats with his brother-in-law the Mamlūk sultan Būlād, Aiman's brother","source":"Trent's account and screenshot of the event, 28 October 1385"},"effect":{"id":"1386-01-06-the-season-passed","date":"1386-01-06","monthOnly":false,"hijri":"4 Dhū al-Ḥijja 787","type":"player_note","title":"The season passes. The caravan comes too late: the year has turned and the standing at ʿArafāt has gone by, the afternoon beneath the Mount of Mercy that is the Hajj itself. The month among the scholars of al-Azhar cost the Emperor the pilgrimage. The caravan disperses and turns for home; the journey must be made again from the beginning","source":"Trent's screenshot of the event, 6 January 1386"},"kind":"ended","basis":"owner","why":"The effect’s record says: cause “the 30-day pause in al-Qāhira (28 October 1385)”."},{"id":"s3","heuristic":"estate reaction (same day) + cue word “after”","score":0.81,"cause":{"id":"1402-08-burghers-privileges","date":"1402-08-03","monthOnly":true,"hijri":"Muḥarram 805","type":"estate_change","title":"With the mines found, the burghers are given two privileges: control over the coinage, to cut and circulate good coin from the new silver and gold, and urban development grants, to raise the cities. The burghers are delighted; the umarāʾ, the ʿulamāʾ and the dhimmīs less so","source":"Trent's account and screens, 1402"},"effect":{"id":"1402-08-the-umara","date":"1402-08-03","monthOnly":true,"hijri":"Muḥarram 805","type":"player_note","title":"The umarāʾ are given gifts to bring their temper back up after the burghers' privileges. But the court's long view has changed: now that the state is built, breaking the power of the umarāʾ is the easiest road to a stronger crown","source":"Trent's account, 1402"},"kind":"provoked","basis":"rule","why":"The grant’s preview: “umara (nobles) −6.5% (to 33.6%)”; the effect’s title: “after the burghers’ privileges”."},{"id":"s4","heuristic":"departure from a held line, no cause yet","score":0.7,"question":"The umarāʾ sat at 45 to 48 from October 1431 to July 1432, above the 40 you hold them at. Why?","cause":null,"effect":{"id":"(departure) umarāʾ 1431-10 → 1432-07","date":"1431-10-01","hijri":"23 Muḥarram 835","title":"umarāʾ satisfaction 45–48 against a held line of 40 (saves of 1 Oct 1431 to 27 Jul 1432)","source":"checkpoints.json"},"candidates":[{"id":"1431-10-01-the-second-crusade","date":"1431-10-01","monthOnly":false,"hijri":"23 Muḥarram 835","type":"war_declared","title":"Sparked by the destruction of Santiago, the Pope proclaims the second crusade against al-Andalus and declares war on the Ṭāʾifa of Aragon, aiming at Barbastro. The Emperor answers for his subject, and all his allies come in: the eight ṭāʾifas, the Mamlūks, Morocco and Tunis with all their vassals","source":"Trent's account and screenshot; save of 1 October 1431"},{"id":"1430-11-03-iberia-is-conquered","date":"1430-11-03","monthOnly":false,"hijri":"16 Ṣafar 834","type":"player_note","title":"Iberia is conquered. With Galicia, Navarre and Castile gone, every town of the peninsula belongs to the Emperor or to one of his ṭāʾifas: the Istirdād is complete","source":"Trent's account"}],"kind":null,"basis":null,"why":"Nothing in the record explains it. Pick a candidate, or write the reason (for example a tax rate lowered for the war)."},{"id":"s5","heuristic":"co-cited in “Of the Princes’ Mending”","score":0.44,"cause":{"id":"1440-10-01-the-palace-city-of-qurtuba","date":"1440-10-01","monthOnly":false,"hijri":"4 Jumādā al-Ūlā 844","type":"player_note","title":"The Emperor orders Madīnat al-Zahrāʾ, the palace-city of the caliphs on the western edge of Qurṭuba, lost in the fitna of the eleventh century, to be rebuilt, to set himself above every ruler and pretender who might challenge him","source":"Trent's screenshots of 1 October 1440 and account"},"effect":{"id":"1442-08-07-the-golden-century","date":"1442-08-07","monthOnly":false,"hijri":"29 Rabīʿ al-Awwal 846","type":"situation","title":"The Emperor ushers in the Golden Century of al-Andalus: the Strait held, Iberia gathered under one banner, and what the fall of Qurṭuba scattered made whole again. A century of wealth and consolidation lies ahead","source":"Trent's screenshots and account, 7 August 1442"},"kind":"enabled","basis":"court","why":"Cited together in one chronicle entry: “the new age had been given both its symbols at once”. That is a reading, not a cause."},{"id":"s6","heuristic":"co-cited in “Of the Spring of the Year 737”","score":0.12,"cause":{"id":"1337-04-03-death-fatima","date":"1337-04-03","monthOnly":false,"hijri":"1 Ramaḍān 737","type":"death","title":"Death of Fāṭima bint al-Aḥmar, of old age, aged 76","source":"checkpoint 1337-08-18"},"effect":{"id":"1337-04-22-joins-tlemcen-war","date":"1337-04-22","monthOnly":false,"hijri":"20 Ramaḍān 737","type":"war_joined","title":"Granada answers Morocco's call against Tlemcen","source":"checkpoint 1337-08-18"},"kind":"enabled","basis":"court","why":"Cited together in one chronicle entry, nineteen days apart. Probably just neighbours."}],"reverseRoot":"S1370"};
+const KINDS={
+  required:{up:'needed',down:'was needed for',name:'required'},
+  enabled:{up:'made possible by',down:'made possible',name:'enabled'},
+  prompted:{up:'prompted by',down:'prompted',name:'prompted'},
+  provoked:{up:'provoked by',down:'provoked',name:'provoked'},
+  'paid-for':{up:'bought by',down:'paid for',name:'paid for'},
+  shifted:{up:'tipped by',down:'tipped',name:'shifted'},
+  continued:{up:'followed on from',down:'led on to',name:'continued'},
+  ended:{up:'ended by',down:'ended',name:'ended'}};
+const BASIS={
+  rule:{g:'▲',name:'game rule',dash:'',w:3,text:'The game’s own rules or texts state this connection: a requirement, an effect, a tooltip.'},
+  save:{g:'◆',name:'the saves',dash:'',w:1.6,text:'Measured in the saves: the timing or the numbers show it. They show that it happened, not why.'},
+  owner:{g:'●',name:'Trent’s account',dash:'6 4',w:1.6,text:'Trent said so in his account of the play. It is the player’s own claim.'},
+  court:{g:'○',name:'the court’s reading',dash:'1.5 4',w:1.8,text:'The chronicle’s interpretation. Plausible, and marked as a reading: nothing recorded makes it so.'},
+  derived:{g:'◇',name:'derived',dash:'3 3',w:1.6,text:'Worked out by comparing two readings; no event records it.'},
+  suggested:{g:'◌',name:'suggested',dash:'2 3',w:1,text:'Proposed by the suggester and not yet confirmed.'}};
+const COLOR=b=>`var(--${b==='derived'?'save':b==='suggested'?'sug':b}-c)`;
+const state={tab:'chains',names:'c',dates:'h',chain:'A',swap:{},open:null,root:D.reverseRoot,decisions:{}};
+const MAXLINKS=8;
+
+/* ---------- names and dates ---------- */
+const PLAIN=[[/Jamāʿa of 846/g,'assembly of 1442'],[/Jamāʿa of 817/g,'assembly of 1414'],[/Jamāʿa of 831/g,'assembly of 1428'],
+ [/Jamāʿas/g,'assemblies'],[/Jamāʿa/g,'assembly'],[/umarāʾ/g,'nobles'],[/ʿulamāʾ/g,'clergy'],[/ṭāʾifas/g,'subject kingdoms'],[/ṭāʾifa/g,'subject kingdom'],[/Ṭāʾifa/g,'Subject kingdom'],
+ [/dīwān/g,'cabinet'],[/Ishbīliya/g,'Seville'],[/Qashtāla/g,'Castile'],[/Qurṭuba/g,'Córdoba'],[/Gharnāṭa/g,'Granada'],[/Arghūn/g,'Aragon'],[/Balansiyya/g,'Valencia'],
+ [/Majrīṭ/g,'Madrid'],[/Ṭulayṭula/g,'Toledo'],[/Mālaqa/g,'Málaga'],[/al-Mariyya/g,'Almería'],[/al-Ushbūna/g,'Lisbon'],[/Barshalūna/g,'Barcelona'],[/Mursiyya/g,'Murcia'],
+ [/al-Qāhira/g,'Cairo'],[/Makka/g,'Mecca'],[/Fās/g,'Fez'],[/dār al-ṣināʿa/g,'naval arsenals'],[/Jillīqiya/g,'Galicia'],[/Shant Yāqub/g,'Santiago'],[/Qusanṭīna/g,'Constantina'],
+ [/Istirdād/g,'Reconquest'],[/dhimmīs/g,'protected minorities'],[/dhimmī/g,'protected minorities'],[/Sharīsh/g,'Jerez'],[/Baṭalyaws/g,'Badajoz'],[/Ḥajj/g,'Hajj']];
+const T=s=>{ if(s==null) return ''; let t=String(s); if(state.names==='p') for(const [a,b] of PLAIN) t=t.replace(a,b); return t; };
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const TE=s=>esc(T(s));
+const MON=['January','February','March','April','May','June','July','August','September','October','November','December'];
+function west(iso,mo){const [y,m,d]=iso.split('-').map(Number);return mo?`${MON[m-1]} ${y}`:`${d} ${MON[m-1]} ${y}`;}
+function dates(iso,hij,mo){const w=west(iso,mo);const h=hij+' AH';return state.dates==='h'?`${h} · ${w}`:`${w} · ${h}`;}
+const yr=iso=>+iso.slice(0,4);
+
+/* ---------- graph helpers ---------- */
+const N=D.nodes, LK=D.links;
+const incoming=id=>LK.filter(l=>l.effect===id);
+const outgoing=id=>LK.filter(l=>l.cause===id);
+function primaryIn(id){
+  const ins=incoming(id).filter(l=>l.group!=='conditions');
+  if(!ins.length) return null;
+  if(state.swap[id]) return ins.find(l=>l.id===state.swap[id])||ins[0];
+  return ins.find(l=>l.primary)||ins[0];
+}
+function spine(outcome){
+  const out=[];let cur=outcome,seen=new Set([outcome]);
+  while(true){const l=primaryIn(cur);if(!l||seen.has(l.cause))break;out.push(l);seen.add(l.cause);cur=l.cause;}
+  return out;
+}
+
+/* ---------- small svg bits ---------- */
+function stem(b,h=64){const B=BASIS[b];
+  const line=b==='rule'
+    ?`<line x1="6" y1="0" x2="6" y2="${h}" stroke="${COLOR(b)}" stroke-width="1.6"/><line x1="11" y1="0" x2="11" y2="${h}" stroke="${COLOR(b)}" stroke-width="1.6"/>`
+    :`<line x1="9" y1="0" x2="9" y2="${h}" stroke="${COLOR(b)}" stroke-width="${B.w}" stroke-dasharray="${B.dash}" stroke-linecap="round"/>`;
+  return `<svg class="stem" viewBox="0 0 18 ${h}" height="${h}" aria-hidden="true">${line}<path d="M4 ${h-8} L9 ${h-2} L14 ${h-8}" fill="none" stroke="${COLOR(b)}" stroke-width="1.4" transform="rotate(180 9 ${h/2})"/></svg>`;}
+function glyph(b){return `<span class="g ${b}" aria-hidden="true">${BASIS[b].g}</span>`;}
+function sparkline(key,win,marks){
+  const s=D.series[key];const pts=s.points.filter(p=>(!win||(p[0]>=win[0]&&p[0]<=win[1])));
+  if(pts.length<2) return '';
+  const t=iso=>{const [y,m,d]=iso.split('-').map(Number);return y+(m-1)/12+(d-1)/365;};
+  const x0=t(win?win[0]:pts[0][0]),x1=t(win?win[1]:pts[pts.length-1][0]);
+  const W=320,H=96,P=6,sx=v=>P+(t(v)-x0)/(x1-x0)*(W-2*P),sy=v=>H-P-(v-s.min)/(s.max-s.min)*(H-2*P);
+  const path=pts.map((p,i)=>(i?'L':'M')+sx(p[0]).toFixed(1)+' '+sy(p[1]).toFixed(1)).join(' ');
+  const mk=(marks||[]).filter(m=>m>= (win?win[0]:'')&&m<=(win?win[1]:'9')).map(m=>`<line x1="${sx(m)}" x2="${sx(m)}" y1="${P}" y2="${H-P}" stroke="var(--faint)" stroke-dasharray="2 3"/>`).join('');
+  const lo=pts.reduce((a,p)=>p[1]<a[1]?p:a);
+  return `<svg class="spark" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(s.label)}">
+    <line x1="${P}" x2="${W-P}" y1="${sy(s.line)}" y2="${sy(s.line)}" stroke="var(--muted)" stroke-dasharray="4 3"/>
+    <text x="${W-P}" y="${sy(s.line)-3}" text-anchor="end" font-size="9" fill="var(--muted)">${s.line===0?'land | sea':'held line '+s.line}</text>
+    ${mk}<path d="${path}" fill="none" stroke="var(--accent)" stroke-width="1.8"/>
+    ${pts.map(p=>`<circle cx="${sx(p[0]).toFixed(1)}" cy="${sy(p[1]).toFixed(1)}" r="1.8" fill="var(--accent)"/>`).join('')}
+    <text x="${sx(lo[0])+4}" y="${Math.min(H-2,sy(lo[1])+10)}" font-size="9" fill="var(--ink)">${lo[1]} (${lo[0].slice(0,4)})</text>
+    <text x="${P}" y="${H-1}" font-size="9" fill="var(--muted)">${(win?win[0]:pts[0][0]).slice(0,4)}</text>
+    <text x="${W-P}" y="${H-1}" font-size="9" fill="var(--muted)" text-anchor="end">${(win?win[1]:pts[pts.length-1][0]).slice(0,4)}</text></svg>
+    <div style="font-size:11.5px;color:var(--muted)">${TE(s.label)}. Dotted verticals: the two ends of this link.</div>`;}
+
+/* ---------- chain view ---------- */
+function nodeCard(id,isOutcome,chain){
+  const n=N[id];
+  const chip=n.kind==='knot'?`knot · ${n.records.length} records`:n.kind==='war'?`war · ${n.war.records} records folded`:n.kind==='reading'?'a reading of the realm':n.records[0].type.replace('_',' ');
+  let body='';
+  if(n.kind==='war'){const w=n.war;
+    body+=`<details><summary>${esc(w.name)}: ${w.battles} battles, ${w.records} records in one node</summary><div class="rec">${TE(w.goal)}<div class="src">goal</div></div><div class="rec">${TE(w.outcome)}<div class="src">outcome (wars.json)</div></div></details>`;}
+  body+=`<details><summary>${n.records.length>1?n.records.length+' records':'the record'}</summary>${n.records.map(r=>`<div class="rec">${TE(r.title)}<div class="src">${esc(dates(r.date,r.hijri,r.monthOnly))} · source: ${TE(r.source)}</div></div>`).join('')}</details>`;
+  if(n.kind==='reading'){
+    body+=`<div class="bars" aria-label="Each estate against the line the crown holds it at">${n.reading.estates.map(e=>{
+      const lo=Math.min(e.sat,e.line),hi=Math.max(e.sat,e.line),up=e.sat>e.line;
+      return `<div class="b"><span>${TE(e.name)}</span><div class="track"><div class="fill" style="left:${lo}%;width:${hi-lo}%;background:var(--${up?'up':'down'})"></div><div class="line" style="left:${e.line}%"></div></div><span>${e.sat} <small style="color:var(--muted)">${up?'+':''}${e.sat-e.line}</small></span></div>`;}).join('')}
+      <div style="font-size:11.5px;color:var(--muted)">Satisfaction against the line the crown holds each estate at with its tax rate: 50, or 40 for the umarāʾ. The first save in which all five are off their lines. Source: ${TE(n.reading.source)}.</div></div>`;}
+  // conditions (game requirements) group
+  const conds=incoming(id).filter(l=>l.group==='conditions');
+  if(conds.length){
+    body+=`<div class="conds"><h5>What the decision needed: the game’s conditions</h5>${conds.map(l=>`<div class="c" data-open="${l.id}" tabindex="0">${glyph(l.basis)}<div><b>${TE(N[l.cause].label)}</b> <small>${esc(west(N[l.cause].date,N[l.cause].monthOnly))} · ${KINDS[l.kind].name} · ${BASIS[l.basis].name}</small>${l.flag?`<span class="flag ${l.flag}">${l.flag==='not-a-condition'?'not a condition':l.flag}</span>`:''}</div></div>`).join('')}</div>`;}
+  // side branches
+  const prim=primaryIn(id);const others=incoming(id).filter(l=>l.group!=='conditions'&&(!prim||l.id!==prim.id));
+  if(others.length){
+    body+=`<div class="also">also: ${others.map(l=>`<button data-swap="${id}:${l.id}" title="Follow this cause instead">${glyph(l.basis)} ${KINDS[l.kind].up} <b>${TE(N[l.cause].label)}</b> (${yr(N[l.cause].date)})${l.flag?` <span class="flag ${l.flag}">${l.flag}</span>`:''}</button>`).join('')}</div>`;}
+  const other=D.chains.find(c=>c.id!==chain && spine(c.outcome).some(l=>l.cause===id));
+  if(other && id!==D.chains.find(c=>c.id===chain).outcome) body+=`<div class="meet">★ The other chain (“${TE(other.question)}”) runs through this record too.</div>`;
+  return `<div class="node${isOutcome?' outcome':''}" id="n-${id}">
+    <div class="meta"><span class="chip">${isOutcome?'outcome · ':''}${esc(chip)}</span><span>${esc(dates(n.date,n.hijri,n.monthOnly))}</span></div>
+    <h4>${TE(n.label)}</h4>${body}</div>`;}
+
+function linkRow(l){
+  const open=state.open===l.id;
+  return `<div class="link">${stem(l.basis)}<button class="pill" data-open="${l.id}" aria-expanded="${open}">${glyph(l.basis)} <span class="k">${KINDS[l.kind].up}</span> <span style="color:var(--muted)">· ${BASIS[l.basis].name}</span>${l.flag?`<span class="flag ${l.flag}">${l.flag}</span>`:''}</button></div>
+  ${l.gap?`<div class="gapbox"><b>Gap.</b> ${TE(l.gap)}</div><div class="link">${stem(l.basis,24)}</div>`:''}
+  <div class="inline-detail" id="d-${l.id}"></div>`;}
+
+function detailHTML(l){
+  const c=N[l.cause],e=N[l.effect],B=BASIS[l.basis];
+  let h=`<div class="detail"><div class="kicker">${esc(KINDS[l.kind].name)} · ${yr(c.date)} → ${yr(e.date)}</div>
+   <div style="font-size:13px;margin-top:4px"><b>${TE(c.label)}</b> <span style="color:var(--muted)">${KINDS[l.kind].down}</span> <b>${TE(e.label)}</b></div>
+   <div class="claim">${TE(l.claim)}</div>
+   <div class="basis">${glyph(l.basis)}<div><b>Basis: ${B.name}.</b> ${esc(B.text)}</div></div>`;
+  if(l.evidence&&l.evidence.length) h+=`<h6>Evidence</h6>${l.evidence.map(v=>`<blockquote>“${TE(v.q)}”<cite>${TE(v.src)}</cite></blockquote>`).join('')}`;
+  if(l.series) h+=`<h6>In the numbers</h6>${sparkline(l.series,l.window,[c.date,e.date])}`;
+  if(l.id==='a5') h+=rhythmHTML();
+  if(l.gap) h+=`<div class="note" style="background:var(--gap-soft)"><b>Gap.</b> ${TE(l.gap)}</div>`;
+  if(l.note) h+=`<div class="note">${TE(l.note)}</div>`;
+  h+=`<div class="status">Status: <b>draft</b> (Designer D). In the real thing: “confirmed by Trent with the save of …”, or “suggested” and hidden from readers.${l.suggestedBy?`<br>The suggester would have raised it from: ${l.suggestedBy.map(TE).join('; ')}.`:''}<br>Link id <code>${l.id}</code> · ${esc(l.cause)} → ${esc(l.effect)}</div></div>`;
+  return h;}
+
+function rhythmHTML(){
+  const R=D.rhythm,t0=1337,t1=1443,pct=iso=>{const [y,m]=iso.split('-').map(Number);return ((y+(m-1)/12)-t0)/(t1-t0)*100;};
+  return `<div class="rhythm"><h6>The rhythm the suggester found: ${TE(R.title)}</h6>
+   <div class="band">${R.spans.filter(s=>s[2]==='on').map(s=>`<div class="seg-on" style="left:${pct(s[0])}%;width:${pct(s[1])-pct(s[0])}%"></div>`).join('')}
+   ${['1339-05-24','1346-10-18'].map(d=>`<div class="tick" style="left:${pct(d)}%"></div>`).join('')}</div>
+   <div class="axis"><span>1337</span><span>1375</span><span>1410</span><span>1443</span></div>
+   <div style="font-size:11.5px;color:var(--muted)">Filled: the privileges in force. Red ticks: wars with Aragon. Rule: ${TE(R.rule)}.</div>
+   <ol>${R.marks.map(m=>`<li>${glyph(m.basis)} <b>${esc(west(m.date))}</b>: ${TE(m.what)}</li>`).join('')}</ol></div>`;}
+
+function renderLegend(){
+  document.getElementById('legend').innerHTML=`<h3>How sure is each link?</h3>${['rule','save','owner','court'].map(b=>`<div class="row"><svg width="18" height="24" aria-hidden="true">${stem(b,24).replace(/^<svg[^>]*>|<\/svg>$/g,'')}</svg>${glyph(b)} <span><b>${BASIS[b].name}</b></span></div>`).join('')}
+  <h3 style="margin-top:10px">Kinds of link</h3><div style="color:var(--muted)">${Object.values(KINDS).map(k=>k.name).join(' · ')}</div>
+  <div style="margin-top:8px;color:var(--muted)">At most ${MAXLINKS} links in a chain. Side branches appear under “also:”; tap one to follow it.</div>`;}
+
+function renderChooser(){
+  document.getElementById('chooser').innerHTML=D.chains.map(c=>`<button class="choice" data-chain="${c.id}" aria-pressed="${state.chain===c.id}"><b>${TE(c.question)}</b><span>${TE(c.blurb)}</span></button>`).join('')+
+   `<button class="choice" data-goto="reverse" aria-pressed="false"><b>${TE('What came of the Strait?')}</b><span>The reverse view: forward from the end of the Battle for the Strait, 1370, where both chains begin.</span></button>`;}
+
+function renderChain(){
+  const c=D.chains.find(x=>x.id===state.chain);
+  const sp=spine(c.outcome);const shown=sp.slice(0,MAXLINKS);
+  document.getElementById('qhead').innerHTML=`<h2>${TE(c.question)}</h2><p>${shown.length} links back to ${yr(N[shown.length?shown[shown.length-1].cause:c.outcome].date)}${sp.length>MAXLINKS?` (${sp.length-MAXLINKS} more folded)`:''}. Newest at the top, as an isnād runs from the latest teller back to the source.</p>`;
+  let h=nodeCard(c.outcome,true,c.id);
+  for(const l of shown){h+=linkRow(l)+nodeCard(l.cause,false,c.id);}
+  if(sp.length>MAXLINKS) h+=`<div class="more"><button data-reroot="${shown[shown.length-1].cause}">…${sp.length-MAXLINKS} earlier causes: continue the chain from here</button></div>`;
+  else { const last=shown.length?shown[shown.length-1].cause:c.outcome; h+=`<div class="more" style="color:var(--muted);font-size:13px">Root of this chain: nothing earlier has been linked yet.</div>`; }
+  document.getElementById('thread').innerHTML=h;
+  placeDetail();}
+
+function placeDetail(){
+  document.querySelectorAll('.inline-detail').forEach(x=>x.innerHTML='');
+  const side=document.getElementById('side');
+  const l=LK.find(x=>x.id===state.open);
+  const wide=matchMedia('(min-width:1000px)').matches;
+  if(!l){side.innerHTML=`<div class="empty">Open any link (the pill between two records) to see what it claims, why we believe it and how sure that is.</div>`;return;}
+  if(wide){side.innerHTML=detailHTML(l);}
+  else{side.innerHTML='';
+    let slot=document.getElementById('d-'+l.id);
+    if(!slot){ // a condition link opened from inside a node: show under that node
+      const n=document.getElementById('n-'+l.effect); if(n){slot=document.createElement('div');slot.className='inline-detail';slot.id='d-'+l.id;n.after(slot);} }
+    if(slot){slot.innerHTML=detailHTML(l);}
+  }
+  document.querySelectorAll('[data-open]').forEach(b=>b.setAttribute('aria-expanded',b.dataset.open===state.open));}
+
+/* ---------- reverse view ---------- */
+function renderReverse(){
+  const root=state.root;const rn=N[root];
+  document.getElementById('rtitle').innerHTML=`What came of it: ${TE(rn.label)} (${yr(rn.date)})`;
+  const sel=document.getElementById('rootSel');
+  sel.innerHTML=Object.values(N).filter(n=>outgoing(n.id).length).sort((a,b)=>a.date<b.date?-1:1).map(n=>`<option value="${n.id}" ${n.id===root?'selected':''}>${yr(n.date)} · ${TE(n.label)}</option>`).join('');
+  const desc=(id,seen=new Set())=>{for(const l of outgoing(id)){if(!seen.has(l.effect)){seen.add(l.effect);desc(l.effect,seen);}}return seen;};
+  const all=desc(root);const last=[...all].reduce((m,id)=>N[id].date>m?N[id].date:m,rn.date);
+  const walk=(id,depth,seen)=>{const outs=outgoing(id).sort((a,b)=>N[a.effect].date<N[b.effect].date?-1:1);
+    if(!outs.length) return '';
+    return `<ul>${outs.map(l=>{const e=N[l.effect];const sub=seen.has(l.effect)?'':walk(l.effect,depth+1,new Set([...seen,l.effect]));const n=desc(l.effect).size;
+      return `<li><div class="edge">${glyph(l.basis)} ${KINDS[l.kind].down} · ${BASIS[l.basis].name}${l.flag?` <span class="flag ${l.flag}">${l.flag}</span>`:''}</div>
+      <div class="tn">${TE(e.label)} <small>${esc(dates(e.date,e.hijri,e.monthOnly))}</small> ${n?`<span class="count">→ ${n} later</span>`:''}</div>
+      ${sub&&depth>=2?`<button class="tog" data-tog>show ${n} more ▸</button><div class="hidden">${sub}</div>`:sub}</li>`;}).join('')}</ul>`;};
+  document.getElementById('tree').innerHTML=`<div class="tn" style="font-size:18px"><b>${TE(rn.label)}</b> <small>${esc(dates(rn.date,rn.hijri,rn.monthOnly))}</small></div>
+   <div class="count" style="margin:4px 0 8px">${all.size} later records over ${yr(last)-yr(rn.date)} years, through the links drafted so far</div>${walk(root,0,new Set([root]))}`;}
+
+/* ---------- workshop ---------- */
+function endHTML(r,label){ if(!r) return `<div class="end"><small>${label}</small><i>not known yet</i></div>`;
+  return `<div class="end"><small>${label} · ${esc(dates(r.date,r.hijri,!!r.monthOnly))}</small>${TE(r.title)}<small>source: ${TE(r.source)}</small></div>`;}
+function renderWorkshop(){
+  const dec=state.decisions;
+  const ws=document.getElementById('ws');
+  ws.innerHTML=`<div class="top"><b>Save of 26 June 1443 · suggestions for this save</b><br>
+   Shown: the highest-ranked suggestions, at most 8 per save, so the review takes a few minutes. Structural links (a war’s battles, sieges and peace; a peace and the towns it moved) are confirmed automatically and not shown. Rejected pairs are remembered and never proposed again. <i>Illustrative set: six real suggestions the heuristics raise on this data.</i></div>
+   ${D.suggest.map(s=>{const d=dec[s.id]||{};const cls=d.v==='confirm'?' done-confirm':d.v==='reject'?' done-reject':'';
+    return `<div class="sug${cls}" data-s="${s.id}">
+     <div class="h"><span>${TE(s.heuristic)}</span><span>rank <span class="score"><i style="width:${Math.round(s.score*100)}%"></i></span> ${s.score.toFixed(2)}</span></div>
+     ${s.proposal?`<div style="margin-top:6px;font-size:13.5px"><b>${TE(s.proposal)}</b></div>`:''}
+     ${s.question?`<div style="margin-top:6px;font-family:var(--serif);font-size:16px">${TE(s.question)}</div>`:''}
+     <div class="pair">${s.cause?endHTML(s.cause,'cause'):(s.candidates?`<div class="end"><small>candidate causes</small>${s.candidates.map((c,i)=>`<label style="display:block;margin:4px 0"><input type="radio" name="cand-${s.id}" value="${c.id}" ${d.cand===c.id?'checked':''}> ${TE(c.title.slice(0,110))}… <small>${esc(west(c.date))}</small></label>`).join('')}<label style="display:block"><input type="radio" name="cand-${s.id}" value="other" ${d.cand==='other'?'checked':''}> something else: <input type="text" data-other="${s.id}" placeholder="e.g. tax rate lowered for the war" value="${esc(d.other||'')}"></label></div>`:endHTML(null,'cause'))}
+       <div class="arrow">→</div>${endHTML(s.effect,'effect')}</div>
+     <div class="why">${TE(s.why)}</div>
+     <div class="controls">kind <select data-k="${s.id}">${Object.entries(KINDS).map(([k,v])=>`<option value="${k}" ${(d.kind||s.kind)===k?'selected':''}>${v.name}</option>`).join('')}</select>
+       basis <select data-b="${s.id}">${['rule','save','owner','court'].map(b=>`<option value="${b}" ${(d.basis||s.basis)===b?'selected':''}>${BASIS[b].g} ${BASIS[b].name}</option>`).join('')}</select>
+       <span class="acts"><button class="ok" data-v="confirm">Confirm</button> <button class="no" data-v="reject">Reject</button> <button data-v="later">Later</button></span>
+       ${d.v?`<b style="margin-left:6px">${d.v==='confirm'?'✓ confirmed':d.v==='reject'?'✕ rejected':'… kept for later'}</b>`:''}</div></div>`;}).join('')}
+   <div class="top"><b>Decisions for this save</b>, written to <code>causes.json</code> by the session (or downloaded and committed). Nothing reaches readers until it is confirmed.
+     <textarea readonly id="out"></textarea></div>`;
+  document.getElementById('out').value=JSON.stringify(exportDecisions(),null,1);}
+function exportDecisions(){
+  const confirmed=[],rejected=[],later=[];
+  for(const s of D.suggest){const d=state.decisions[s.id];if(!d||!d.v) continue;
+    const cause=s.cause?s.cause.id:(d.cand==='other'?{newNode:{basis:'owner',text:d.other||''}}:d.cand||null);
+    const rec={cause,effect:s.effect.id,kind:d.kind||s.kind,basis:d.basis||s.basis,suggestedBy:s.heuristic};
+    if(d.v==='confirm') confirmed.push({...rec,status:'confirmed',confirmedWith:'save of 26 June 1443'});
+    if(d.v==='reject') rejected.push({cause:rec.cause,effect:rec.effect,rejectedWith:'save of 26 June 1443'});
+    if(d.v==='later') later.push(rec);}
+  return {confirmed,rejected,later};}
+
+/* ---------- wiring ---------- */
+function render(){
+  document.querySelectorAll('[data-tab]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.tab===state.tab));
+  document.querySelectorAll('[data-names]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.names===state.names));
+  document.querySelectorAll('[data-dates]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.dates===state.dates));
+  for(const id of ['chains','reverse','workshop']) document.getElementById(id).classList.toggle('hidden',state.tab!==id);
+  if(state.tab==='chains'){renderChooser();renderLegend();renderChain();}
+  if(state.tab==='reverse') renderReverse();
+  if(state.tab==='workshop') renderWorkshop();}
+document.addEventListener('click',ev=>{
+  const t=ev.target.closest('button,[data-open],[data-v]');if(!t) return;
+  if(t.dataset.tab){state.tab=t.dataset.tab;render();return;}
+  if(t.dataset.names){state.names=t.dataset.names;render();return;}
+  if(t.dataset.dates){state.dates=t.dataset.dates;render();return;}
+  if(t.dataset.chain){state.chain=t.dataset.chain;state.open=null;render();return;}
+  if(t.dataset.goto){state.tab=t.dataset.goto;state.root=D.reverseRoot;render();return;}
+  if(t.dataset.open){state.open=state.open===t.dataset.open?null:t.dataset.open;placeDetail();return;}
+  if(t.dataset.swap){const [n,l]=t.dataset.swap.split(':');state.swap[n]=l;state.open=l;renderChain();return;}
+  if(t.dataset.reroot){D.chains.push({id:'R'+t.dataset.reroot,outcome:t.dataset.reroot,question:'Earlier: why '+N[t.dataset.reroot].label+'?',blurb:''});state.chain='R'+t.dataset.reroot;render();return;}
+  if(t.hasAttribute('data-tog')){t.nextElementSibling.classList.toggle('hidden');t.remove();return;}
+  if(t.dataset.v){const s=t.closest('.sug').dataset.s;const d=state.decisions[s]=state.decisions[s]||{};d.v=t.dataset.v;
+    const k=document.querySelector(`[data-k="${s}"]`),b=document.querySelector(`[data-b="${s}"]`);d.kind=k.value;d.basis=b.value;
+    const r=document.querySelector(`input[name="cand-${s}"]:checked`);if(r)d.cand=r.value;const o=document.querySelector(`[data-other="${s}"]`);if(o)d.other=o.value;
+    renderWorkshop();return;}
+});
+document.addEventListener('keydown',ev=>{if(ev.key==='Enter'&&ev.target.matches('[data-open]')){ev.target.click();}});
+document.getElementById('rootSel').addEventListener('change',e=>{state.root=e.target.value;renderReverse();});
+matchMedia('(min-width:1000px)').addEventListener('change',()=>{if(state.tab==='chains')placeDetail();});
+render();
+</script>
+</body>
+</html>
