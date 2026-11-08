@@ -35,4 +35,24 @@ screenshots.
 ## Round 2 (November 2026): the Chronicle itself
 
 Brief: [`round-2/BRIEF.md`](round-2/BRIEF.md). Aimed at what the first round missed: the reading and
-returning experience of the chronicle as a book.
+returning experience of the chronicle as a book. Four new designers, given all 108 entries and the five
+open problems (finding your way, story and reference together, one entry, the returning reader, scale),
+from four angles (the book as a made thing, time as the spine, the text and its apparatus, a chronicle
+still being written). Each developed study owns one part of the reading, so together they compose into
+a single book.
+
+| Study | Folder | The part it owns |
+|---|---|---|
+| The Codex, with Canon Tables | [`round-2/codex/`](round-2/codex/) | The spine: one book in date order, canon tables with a column per book, permanent Hijri addresses, catchwords. `build/build.py` computes order, canons, reigns and save gaps. |
+| The Hourglass | [`round-2/hourglass/`](round-2/hourglass/) | Where the reader stands in time: a rail with a bead, every card "as of" that date, the future veiled for first readers. |
+| The Glossed Folio | [`round-2/folio/`](round-2/folio/) | One entry's page: names glossed as of the page, the record behind each claim in the margin, the realm in the running head. `anchor-report.txt` has the claim-to-record matching for all 108 entries. |
+| The Desk | [`round-2/desk/`](round-2/desk/) | Coming back and continuity: a cover per session, open and tied threads, the living court, the verse concordance. |
+
+Runners-up: Annals and Chronicle (a facing-page edition), the Annals (al-Ḥawliyyāt, a scroll of Hijri
+years), Later Hands (the book's memory of itself in the margins), the Fascicles (each session as a
+numbered part; its cover became the Desk's front door).
+
+**Found in the chronicle while reading** (listed for approval, not yet corrected): eight closing verses
+used twice, three entries without one; Muḥammad V's reading backdated in the 1439 entry; Yūsuf ibn Saʿd
+seated in the dīwān after his death; nine children of the house without records; a second long gap in
+the saves (1395 to 1403); roles and traits without dates; no record of which session added what.

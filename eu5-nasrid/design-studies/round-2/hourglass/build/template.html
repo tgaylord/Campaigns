@@ -1,0 +1,671 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chronicle Hourglass</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4efe4; --paper:#fbf8f1; --ink:#29231e; --ink2:#5b5248; --ink3:#8a8073; --rule:#ddd3c2;
+  --accent:#8e2f22; --hatch:#c8bba6; --fog:rgba(244,239,228,.80); --acct:#b8642a; --save:#5b5248;
+  --reign1:#e6dccb; --reign2:#d8cbb4; --chip:#efe7d8; --ok:#3e7f58; --warn:#b8642a; --stale:#8e2f22;
+  --serif:"EB Garamond", Georgia, "Times New Roman", serif; --sans:Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --arabic:Amiri, "Noto Naskh Arabic", serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#1a1815; --paper:#221f1b; --ink:#ece4d6; --ink2:#bfb5a6; --ink3:#8b8275; --rule:#3a352e;
+    --accent:#e2836b; --hatch:#4b443a; --fog:rgba(26,24,21,.82); --acct:#e09a5c; --save:#bfb5a6;
+    --reign1:#2c2823; --reign2:#36302a; --chip:#2c2823; --ok:#6fbf8c; --warn:#e09a5c; --stale:#e2836b;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1a1815; --paper:#221f1b; --ink:#ece4d6; --ink2:#bfb5a6; --ink3:#8b8275; --rule:#3a352e;
+  --accent:#e2836b; --hatch:#4b443a; --fog:rgba(26,24,21,.82); --acct:#e09a5c; --save:#bfb5a6;
+  --reign1:#2c2823; --reign2:#36302a; --chip:#2c2823; --ok:#6fbf8c; --warn:#e09a5c; --stale:#e2836b;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink)}
+body{font-family:var(--serif);font-size:18px;line-height:1.55;overflow-x:hidden}
+button{font:inherit;color:inherit}
+.sans{font-family:var(--sans)}
+.ar{font-family:var(--arabic);direction:rtl}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--rule);
+  display:flex;align-items:center;gap:18px;padding:8px 16px;min-height:58px}
+.brand{font-family:var(--sans);font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);white-space:nowrap}
+.asof{flex:1;min-width:0}
+.asof .lbl{font-family:var(--sans);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3)}
+.asof .when{font-size:21px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.asof .when .second{color:var(--ink2);font-size:17px}
+.asof .reign{font-family:var(--sans);font-size:12px;color:var(--ink2)}
+.ctrls{display:flex;gap:8px;align-items:center;font-family:var(--sans);font-size:12px}
+.seg{display:inline-flex;border:1px solid var(--rule);border-radius:999px;overflow:hidden}
+.seg button{border:0;background:transparent;padding:5px 10px;cursor:pointer;color:var(--ink2)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.ghost{border:1px solid var(--rule);background:transparent;border-radius:999px;padding:5px 10px;cursor:pointer;color:var(--ink2)}
+
+/* ---------- layout ---------- */
+.wrap{display:grid;grid-template-columns:176px minmax(0,1fr) 370px;gap:0;min-height:calc(100vh - 58px)}
+#railbox{position:sticky;top:58px;height:calc(100vh - 58px);border-right:1px solid var(--rule);background:var(--paper)}
+#rail{display:block;width:100%;height:100%;touch-action:none;cursor:ns-resize;outline:none}
+#rail:focus-visible{box-shadow:inset 0 0 0 2px var(--accent)}
+main{padding:28px 40px 120px;max-width:760px;margin:0 auto;width:100%}
+aside{position:sticky;top:58px;height:calc(100vh - 58px);overflow:auto;border-left:1px solid var(--rule);background:var(--paper);padding:16px 16px 80px}
+
+/* ---------- reading page (given; kept plain) ---------- */
+.book{font-family:var(--sans);font-size:12px;letter-spacing:.04em;color:var(--ink2);display:flex;gap:8px;align-items:center}
+.book i{width:9px;height:9px;border-radius:50%;display:inline-block}
+.book .ar{font-size:16px;color:var(--ink3)}
+h1{font-weight:500;font-size:31px;line-height:1.18;margin:10px 0 6px}
+.dateline{font-family:var(--sans);font-size:13px;color:var(--ink2);margin-bottom:6px}
+.timenotes{font-family:var(--sans);font-size:12.5px;color:var(--ink2);border-left:2px solid var(--rule);padding:4px 0 4px 10px;margin:10px 0 22px}
+.timenotes p{margin:3px 0}
+.timenotes a{color:var(--ink);cursor:pointer;text-decoration:underline;text-decoration-color:var(--rule)}
+.prose p{margin:0 0 1em;hyphens:auto}
+.prose a.ref{color:inherit;text-decoration:underline;text-decoration-color:var(--hatch);text-underline-offset:3px;cursor:pointer}
+.prose a.ref:hover,.prose a.ref.on{text-decoration-color:var(--accent);color:var(--accent)}
+.prose .war{border-bottom:1px dotted var(--hatch)}
+.leafnav{display:flex;justify-content:space-between;gap:12px;margin-top:36px;border-top:1px solid var(--rule);padding-top:14px;font-family:var(--sans);font-size:13px}
+.leafnav button{background:none;border:0;cursor:pointer;color:var(--ink2);text-align:left;padding:0;max-width:48%}
+.leafnav button:last-child{text-align:right}
+.leafnav b{display:block;color:var(--ink);font-weight:500}
+.gap h1{color:var(--ink2)}
+.panel{border:1px solid var(--rule);background:var(--paper);border-radius:6px;padding:14px 16px;margin:14px 0}
+.hatched{background-image:repeating-linear-gradient(135deg,transparent 0 6px,color-mix(in srgb,var(--hatch) 45%,transparent) 6px 7px)}
+.kick{font-family:var(--sans);font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--ink3);margin:0 0 6px}
+.list{list-style:none;margin:0;padding:0}
+.list li{padding:6px 0;border-top:1px solid var(--rule);font-size:16px}
+.list li:first-child{border-top:0}
+.list .d{font-family:var(--sans);font-size:11.5px;color:var(--ink3);display:block}
+.btnrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.btn{font-family:var(--sans);font-size:13px;border:1px solid var(--ink2);background:transparent;border-radius:4px;padding:7px 12px;cursor:pointer}
+.btn.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.linkish{background:none;border:0;padding:0;color:var(--ink);text-decoration:underline;text-decoration-color:var(--hatch);cursor:pointer;text-align:left;font:inherit}
+
+/* ---------- as-of panel ---------- */
+.sect{margin-bottom:18px}
+.sect h2{font-family:var(--sans);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);font-weight:600;margin:0 0 8px;display:flex;justify-content:space-between;align-items:baseline}
+.src{font-family:var(--sans);font-size:12px;color:var(--ink2);padding:8px 10px;border-radius:4px;margin-bottom:10px;border:1px solid var(--rule)}
+.src b{font-weight:600}
+.src.fresh{border-left:3px solid var(--ok)}
+.src.aging{border-left:3px solid var(--warn)}
+.src.stale{border-left:3px solid var(--stale)}
+.figs{display:grid;grid-template-columns:1fr 1fr;gap:6px 14px;font-family:var(--sans);font-size:12.5px}
+.figs div{display:flex;flex-direction:column;min-width:0}
+.figs span{color:var(--ink3);font-size:10.5px;letter-spacing:.04em;text-transform:uppercase}
+.figs b{font-weight:500;font-size:14px;font-variant-numeric:tabular-nums}
+.figs em{font-style:normal;color:var(--ink3);font-size:11px}
+.figs .wide{grid-column:1/-1}
+.est{font-family:var(--sans);font-size:10px;border:1px solid var(--warn);color:var(--warn);border-radius:3px;padding:0 4px;margin-left:4px;vertical-align:1px}
+.bars{font-family:var(--sans);font-size:12px;margin-top:10px}
+.bar{display:grid;grid-template-columns:78px 1fr 54px;gap:6px;align-items:center;margin:3px 0}
+.bar .t{height:6px;background:var(--chip);border-radius:3px;overflow:hidden}
+.bar .t i{display:block;height:100%;background:var(--ink2)}
+.bar .t i.e{background:repeating-linear-gradient(90deg,var(--ink3) 0 3px,transparent 3px 5px)}
+.since{font-family:var(--sans);font-size:12px;margin-top:10px}
+.since li{font-size:12.5px}
+.pv{font-family:var(--sans);font-size:9.5px;letter-spacing:.04em;text-transform:uppercase;border-radius:3px;padding:0 4px;margin-right:5px;border:1px solid var(--ink3);color:var(--ink3);white-space:nowrap}
+.pv.account,.pv.screen{border-color:var(--acct);color:var(--acct)}
+.veilbox{font-family:var(--sans);font-size:13px;color:var(--ink2);padding:14px;border:1px dashed var(--ink3);border-radius:6px;text-align:center}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-family:var(--sans);font-size:12px;background:var(--chip);border:1px solid var(--rule);border-radius:999px;padding:3px 9px;cursor:pointer}
+.chip small{color:var(--ink3)}
+.chip.dead{opacity:.7;text-decoration:line-through;text-decoration-color:var(--ink3)}
+details{font-family:var(--sans);font-size:12px;color:var(--ink2);margin-top:8px}
+summary{cursor:pointer;color:var(--ink3)}
+
+/* card */
+.card{border:1px solid var(--rule);border-radius:6px;background:var(--bg);padding:14px 14px 10px;position:relative}
+.card .close{position:absolute;right:8px;top:6px;border:0;background:none;font-size:20px;cursor:pointer;color:var(--ink3);line-height:1}
+.card h3{margin:0;font-weight:500;font-size:23px;line-height:1.15;padding-right:24px}
+.card .ar{font-size:20px;color:var(--ink2);display:block;text-align:left;direction:rtl;unicode-bidi:plaintext}
+.card .meta{font-family:var(--sans);font-size:11.5px;color:var(--ink3)}
+.card .status{font-family:var(--sans);font-size:13px;margin:8px 0 2px;padding:6px 8px;background:var(--chip);border-radius:4px}
+.card .status b{font-weight:600}
+.card h4{font-family:var(--sans);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);margin:14px 0 4px;font-weight:600}
+.card ul{margin:0;padding:0;list-style:none}
+.card li{font-size:15px;line-height:1.4;padding:4px 0;border-top:1px dotted var(--rule)}
+.card li:first-child{border-top:0}
+.card li .d{font-family:var(--sans);font-size:10.5px;color:var(--ink3);display:block}
+.card .later{opacity:.72}
+.card .later h4{color:var(--accent)}
+.card .ahead{font-family:var(--sans);font-size:12px;color:var(--ink2);border:1px dashed var(--ink3);border-radius:4px;padding:6px 8px;margin-top:10px}
+.pin{font-family:var(--sans);font-size:11px;color:var(--ink3)}
+.glance{display:block;width:100%;text-align:left;cursor:pointer;background:var(--bg);font-size:11.5px;line-height:1.45}
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--rule);margin:4px 0 12px}
+.tabs button{border:0;background:none;padding:6px 10px;font-size:12px;cursor:pointer;color:var(--ink3);border-bottom:2px solid transparent;margin-bottom:-1px;max-width:60%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+
+/* loupe */
+#loupe{position:fixed;z-index:30;width:300px;background:var(--paper);border:1px solid var(--ink3);border-radius:6px;box-shadow:0 8px 28px rgba(0,0,0,.18);
+  padding:10px 12px;font-family:var(--sans);font-size:12px;pointer-events:none;opacity:0;transition:opacity .12s}
+#loupe.on{opacity:1}
+#loupe .lw{font-family:var(--serif);font-size:18px;line-height:1.2}
+#loupe .lw2{color:var(--ink2);font-size:12px;margin-bottom:6px}
+#loupe ul{list-style:none;margin:6px 0 0;padding:0}
+#loupe li{padding:3px 0;border-top:1px dotted var(--rule);display:grid;grid-template-columns:10px 1fr;gap:6px;align-items:baseline}
+#loupe li i{width:8px;height:8px;border-radius:50%;display:inline-block}
+#loupe .here{color:var(--accent);font-weight:600}
+#loupe .muted{color:var(--ink3)}
+#loupe .gapnote{margin-top:6px;padding:4px 6px;border-radius:3px}
+
+.guide{font-family:var(--sans);font-size:12.5px;color:var(--ink2);background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:10px 12px;margin-bottom:22px}
+.guide b{color:var(--ink)}
+.guide ol{margin:6px 0 0 18px;padding:0}
+
+/* sheet (phone) */
+#sheet{display:none}
+.railbar{display:none}
+
+@media (max-width: 1180px){ .wrap{grid-template-columns:150px minmax(0,1fr) 330px} main{padding:24px 26px 120px} }
+@media (max-width: 900px){
+  body{font-size:17px}
+  header{flex-wrap:wrap;gap:6px 12px;padding:8px 16px;min-height:0;position:sticky}
+  .brand{display:none}
+  .asof .when{font-size:17px;white-space:normal}
+  .asof .when .second{font-size:14px}
+  .ctrls{width:100%;justify-content:space-between;font-size:11px}
+  .seg button,.ghost{padding:5px 8px;white-space:nowrap}
+  .wrap{display:block}
+  #railbox{position:fixed;top:auto;bottom:0;left:0;right:0;height:78px;border-right:0;border-top:1px solid var(--rule);z-index:25}
+  #railbox.tall{height:220px}
+  #rail{cursor:ew-resize}
+  .railbar{display:flex;position:fixed;left:0;right:0;bottom:78px;z-index:28;justify-content:center;pointer-events:none}
+  #railbox.tall + .railbar{bottom:220px}
+  body.tall #sheet{bottom:242px;max-height:55vh}
+  .railbar button{pointer-events:auto;font-family:var(--sans);font-size:11px;border:1px solid var(--rule);border-bottom:0;background:var(--paper);border-radius:8px 8px 0 0;padding:3px 14px;color:var(--ink2)}
+  main{padding:18px 16px 40px}
+  h1{font-size:26px}
+  aside{position:static;height:auto;border-left:0;border-top:1px solid var(--rule);padding:16px 16px 120px}
+  aside .cardslot{display:none}
+  #sheet{position:fixed;left:0;right:0;bottom:100px;max-height:68vh;overflow:auto;z-index:27;background:var(--paper);border-top:1px solid var(--ink3);
+    border-radius:12px 12px 0 0;box-shadow:0 -8px 30px rgba(0,0,0,.2);padding:12px 16px 20px}
+  #sheet.on{display:block}
+  #loupe{width:min(300px,calc(100vw - 32px))}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">The Hourglass</div>
+  <div class="asof" aria-live="polite">
+    <div class="lbl">The site stands at</div>
+    <div class="when" id="when"></div>
+    <div class="reign" id="reignline"></div>
+  </div>
+  <div class="ctrls">
+    <div class="seg" role="group" aria-label="Veil">
+      <button id="veilOn" aria-pressed="true" title="First reading: nothing beyond what you have read">First reading</button>
+      <button id="veilOff" aria-pressed="false" title="Lift the veil: the whole record, as the writer sees it">Veil lifted</button>
+    </div>
+    <div class="seg" role="group" aria-label="Calendar">
+      <button id="calH" aria-pressed="true">Hijri first</button>
+      <button id="calW" aria-pressed="false">Western first</button>
+    </div>
+    <button class="ghost" id="resetBtn" title="Start again as a reader at the beginning of the mockup">Reset</button>
+  </div>
+</header>
+
+<div class="wrap">
+  <div id="railbox"><svg id="rail" tabindex="0" role="slider" aria-label="Position in time" aria-valuemin="1337" aria-valuemax="1443"></svg></div>
+  <div class="railbar"><button id="railToggle">Expand the rail</button></div>
+  <main id="main"></main>
+  <aside id="aside"></aside>
+</div>
+<div id="sheet" role="dialog" aria-label="Reference card"></div>
+<div id="loupe" aria-hidden="true"></div>
+
+<script>
+const D = /*__DATA__*/null;
+
+/* =============== calendar =============== */
+const WM=['January','February','March','April','May','June','July','August','September','October','November','December'];
+const HM=['Muḥarram','Ṣafar','Rabīʿ al-Awwal','Rabīʿ al-Thānī','Jumādā al-Ūlā','Jumādā al-Ākhira','Rajab','Shaʿbān','Ramaḍān','Shawwāl','Dhū al-Qaʿda','Dhū al-Ḥijja'];
+const LEAP=[2,5,7,10,13,16,18,21,24,26,29];
+function jdn(s){const [y,m,d]=s.split('-').map(Number);const a=Math.floor((14-m)/12),y2=y+4800-a,m2=m+12*a-3;return d+Math.floor((153*m2+2)/5)+365*y2+Math.floor(y2/4)-32083;}
+function jul(j){const c=j+32082,d=Math.floor((4*c+3)/1461),e=c-Math.floor(1461*d/4),m=Math.floor((5*e+2)/153);
+  return [d-4800+Math.floor(m/10), m+3-12*Math.floor(m/10), e-Math.floor((153*m+2)/5)+1];}
+function hij(j){let r=j-1948440;const cyc=Math.floor(r/10631);r-=cyc*10631;let y=cyc*30;
+  for(let i=1;i<=30;i++){const yl=LEAP.includes(i)?355:354;if(r<yl){y+=i;break;}r-=yl;}
+  let m=1;for(let mi=1;mi<=12;mi++){let ml=mi%2?30:29;if(mi===12&&LEAP.includes(((y-1)%30)+1))ml=30;if(r<ml){m=mi;break;}r-=ml;}
+  return [y,m,r+1];}
+function h2j(y,m,d){return d+Math.ceil(29.5*(m-1))+(y-1)*354+Math.floor((3+11*y)/30)+1948440-1;}
+const fW=j=>{const [y,m,d]=jul(j);return `${d} ${WM[m-1]} ${y}`;};
+const fWs=j=>{const [y,m,d]=jul(j);return `${d} ${WM[m-1].slice(0,3)} ${y}`;};
+const fH=j=>{const [y,m,d]=hij(j);return `${d} ${HM[m-1]} ${y}`;};
+const yW=j=>jul(j)[0], yH=j=>hij(j)[0];
+function fD(j,short){ // both calendars, in the chosen order
+  const a=S.cal==='h'?fH(j):(short?fWs(j):fW(j)), b=S.cal==='h'?(short?fWs(j):fW(j)):fH(j);
+  return short?`${a} · ${b}`:`${a}<span class="second"> · ${b}</span>`;}
+const fDs=j=>S.cal==='h'?`${fH(j)} (${fWs(j)})`:`${fWs(j)} (${fH(j)})`;
+const fY=j=>S.cal==='h'?`${yH(j)} AH`:`${yW(j)}`;
+function dur(a,b){let n=Math.abs(b-a);if(n<1)return 'the same day';if(n<45)return n===1?'1 day':`${n} days`;
+  if(n<365){const m=Math.round(n/30.44);return m===1?'1 month':`${m} months`;}
+  const y=Math.floor(n/365.25),m=Math.floor((n-y*365.25)/30.44);return `${y} year${y>1?'s':''}${m?` ${m} month${m>1?'s':''}`:''}`;}
+const ord=n=>n+(['th','st','nd','rd'][(n%100-20)%10]||['th','st','nd','rd'][n%100]||'th');
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const num=n=>n==null?'—':Number(n).toLocaleString('en-GB',{maximumFractionDigits:1});
+
+/* =============== data prep =============== */
+const BK={};D.books.forEach((b,i)=>{b.i=i;b.js=jdn(b.s);b.je=b.e?jdn(b.e):null;BK[b.id]=b;});
+const EN=D.entries;EN.forEach((e,i)=>{e.i=i;e.j=jdn(e.date);e.ja=jdn(e.asOf);e.jr=jdn(e.reach);});
+const ENid={};EN.forEach(e=>ENid[e.id]=e);
+const PP={};D.people.forEach(p=>{p.jb=p.born?jdn(p.born):null;p.jd=p.died?jdn(p.died):null;
+  p.note.forEach(n=>n.push(n[0]?jdn(n[0]):null));PP[p.id]=p;});
+const PL={};D.places.forEach(p=>{p.note.forEach(n=>n.push(n[0]?jdn(n[0]):null));PL[p.id]=p;});
+const EV=D.events.map(e=>({...e,j:jdn(e.d)})).sort((a,b)=>a.j-b.j);
+const CP=D.cps.map(c=>({...c,j:jdn(c.d)}));
+const RG=D.reigns.map(r=>({...r,jf:jdn(r.frm),jt:r.to?jdn(r.to):null}));
+const RGC=D.regencies.map(r=>({...r,jf:jdn(r.frm),jt:jdn(r.to)}));
+const T0=jdn('1337-04-01'), T1=jdn('1444-01-01'), NOW=Math.max(EN[EN.length-1].ja,CP[CP.length-1].j);
+const EMPIRE=jdn('1375-03-16');
+const GAPS=[];for(let i=1;i<CP.length;i++){if(CP[i].j-CP[i-1].j>730)GAPS.push({a:CP[i-1].j,b:CP[i].j});}
+const LAST_VISIT=jdn('1442-06-11'); // simulated: Trent's previous session ended at the save of 11 June 1442
+
+/* =============== state =============== */
+const DEFAULT={entry:'0772-02-22-of-the-three-marches',veil:true,hw:jdn('1370-09-18'),cal:'h',card:{k:'p',id:'faraj-ibn-ismail'}};
+const S={j:0,entry:null,mode:'entry',veil:true,hw:DEFAULT.hw,cal:'h',card:null,drag:false,tall:false};
+function load(){try{const v=JSON.parse(localStorage.getItem('hourglass')||'null');if(v){S.veil=v.veil;S.hw=v.hw;S.cal=v.cal||'h';}}catch(e){}}
+function save(){try{localStorage.setItem('hourglass',JSON.stringify({veil:S.veil,hw:S.hw,cal:S.cal}));}catch(e){}}
+const H=()=>S.veil?S.hw:Infinity;         // horizon: nothing past it is shown on first reading
+const vis=j=>j<=H();
+
+/* =============== lookups at a date =============== */
+function lastSave(j){let c=null;for(const x of CP){if(x.j<=j)c=x;else break;}return c;}
+function prevSave(c){const i=CP.indexOf(c);return i>0?CP[i-1]:null;}
+function nextSave(j){return CP.find(x=>x.j>j)||null;}
+function gapAt(j){return GAPS.find(g=>j>g.a&&j<g.b)||null;}
+function reignAt(j){return RG.find(r=>j>=r.jf&&(r.jt==null||j<r.jt))||null;}
+function regencyAt(j){return RGC.find(r=>j>=r.jf&&j<r.jt)||null;}
+function regnalYear(r,j){return Math.floor((j-r.jf)/354.367)+1;}
+function rulerTitle(j){return j>=EMPIRE?'Emperor and Sultan of al-Andalus':'Sultan of Gharnāṭa';}
+function shortName(id){const p=PP[id];if(!p)return id;const map={'yusuf-i':'Yūsuf I','saad-ibn-yusuf':'Saʿd','ismail-ibn-saad':'Ismāʿīl','muhammad-ibn-ismail-ibn-saad':'Muḥammad V'};return map[id]||p.name;}
+function age(p,j){if(!p.jb)return null;const a=Math.floor((j-p.jb)/365.25);return {a,approx:/-01-01$/.test(p.born)};}
+const ageTxt=(p,j)=>{const g=age(p,j);return g?`${g.approx?'about ':''}${g.a}`:'age unknown';};
+function entryBefore(j){let r=null;for(const e of EN){if(e.j<=j)r=e;else break;}return r;}
+function entryAfter(j){return EN.find(e=>e.j>j)||null;}
+
+/* =============== the rail =============== */
+const rail=document.getElementById('rail');
+let G=null; // geometry
+function orient(){return matchMedia('(max-width: 900px)').matches?'h':'v';}
+function geom(){const r=rail.getBoundingClientRect();const o=orient();
+  if(o==='v'){return {o,W:r.width,Hh:r.height,a0:14,a1:r.height-14,
+    cols:{year:[0,30],reign:[32,46],save:[50,57],lanes:[63,124],reg:[130,r.width-6]}};}
+  const h=r.height; const tall=S.tall;
+  return {o,W:r.width,Hh:h,a0:12,a1:r.width-12,
+    cols: tall?{year:[h-18,h-4],reign:[10,26],save:[30,38],lanes:[44,h-62],reg:[h-58,h-24]}
+              :{year:[h-14,h-2],reign:[4,14],save:[16,21],lanes:[24,h-26],reg:[h-24,h-16]}};}
+const pos=j=>G.a0+(j-T0)/(T1-T0)*(G.a1-G.a0);
+const atPos=p=>Math.round(T0+(p-G.a0)/(G.a1-G.a0)*(T1-T0));
+function laneC(i){const [c0,c1]=G.cols.lanes;return c0+(c1-c0)*(i+.5)/8;}
+// draw a rect in time x cross coordinates
+function R(t0,t1,c0,c1,attrs,title,minT){const a=pos(t0),b=Math.max(pos(t1),a+(minT||.8));
+  const tag=G.o==='v'?`<rect x="${c0}" y="${a}" width="${c1-c0}" height="${b-a}" ${attrs}`:`<rect x="${a}" y="${c0}" width="${b-a}" height="${c1-c0}" ${attrs}`;
+  return title?`${tag}><title>${esc(title)}</title></rect>`:`${tag}/>`;}
+function L(t0,t1,c0,c1,attrs,title){const a=pos(t0),b=pos(t1);
+  const tag=G.o==='v'?`<line x1="${c0}" y1="${a}" x2="${c1}" y2="${b}" ${attrs}`:`<line x1="${a}" y1="${c0}" x2="${b}" y2="${c1}" ${attrs}`;
+  return title?`${tag}><title>${esc(title)}</title></line>`:`${tag}/>`;}
+function TX(t,c,txt,attrs,rot){const a=pos(t);
+  if(G.o==='v'){return rot?`<text transform="translate(${c},${a}) rotate(-90)" ${attrs}>${txt}</text>`:`<text x="${c}" y="${a}" ${attrs}>${txt}</text>`;}
+  return `<text x="${a}" y="${c}" ${attrs}>${txt}</text>`;}
+
+function drawRail(){
+  G=geom();const v=G.o==='v';const cs=getComputedStyle(document.documentElement);
+  const C=k=>cs.getPropertyValue(k).trim();
+  let s=`<defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="${C('--hatch')}" stroke-width="1.6"/></pattern>
+  <pattern id="hatch2" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="4" stroke="${C('--ink3')}" stroke-width="1"/></pattern></defs>`;
+  const full=v?[30,G.W]:[0,G.Hh];
+  // save-less stretches
+  for(const g of GAPS){s+=R(g.a,g.b,G.cols.save[0]-2,full[1],`fill="url(#hatch)" opacity="${g.b-g.a>3650?0.95:0.6}"`,`No save from ${fWs(g.a)} to ${fWs(g.b)} (${dur(g.a,g.b)})`);}
+  // years
+  const yc=G.cols.year;
+  if(S.cal==='w'){for(let y=1340;y<=1440;y+=(v||S.tall?5:10)){const j=jdn(`${y}-01-01`);const big=y%10===0;
+      s+=L(j,j,v?yc[1]-(big?7:3):yc[0]-6,v?yc[1]:yc[0]-6+(big?5:2),`stroke="${C('--ink3')}" stroke-width="1"`);
+      if(big&&(v||y%20===0||S.tall))s+=TX(j,v?2:yc[1],y,`font-family="Inter,sans-serif" font-size="${v?10:9}" fill="${C('--ink2')}" ${v?'dy="3.5"':'text-anchor="middle"'}`);}}
+  else{for(let y=740;y<=850;y+=(v||S.tall?5:10)){const j=h2j(y,1,1);if(j<T0||j>T1)continue;const big=y%10===0;
+      s+=L(j,j,v?yc[1]-(big?7:3):yc[0]-6,v?yc[1]:yc[0]-6+(big?5:2),`stroke="${C('--ink3')}" stroke-width="1"`);
+      if(big&&(v||y%20===0||S.tall))s+=TX(j,v?2:yc[1],y,`font-family="Inter,sans-serif" font-size="${v?10:9}" fill="${C('--ink2')}" ${v?'dy="3.5"':'text-anchor="middle"'}`);}}
+  // reigns
+  const HZ=S.veil?S.hw:T1;
+  RG.forEach((r,i)=>{if(r.jf>HZ)return;const t1=Math.min(r.jt||T1,r.jt&&r.jt<=HZ?r.jt:HZ);const a=Math.max(r.jf,T0);
+    s+=R(a,t1,G.cols.reign[0],G.cols.reign[1],`fill="${C(i%2?'--reign2':'--reign1')}" stroke="${C('--paper')}" stroke-width="1"`,`${r.name}, ${fWs(r.jf)}–${r.jt?fWs(r.jt):'reigning'}`);
+    if(v||S.tall){const mid=(a+t1)/2;const lbl=shortName(r.who);
+      s+=TX(mid,v?(G.cols.reign[0]+G.cols.reign[1])/2+3.5:(G.cols.reign[0]+G.cols.reign[1])/2+3.5,lbl,`font-family="Inter,sans-serif" font-size="9.5" fill="${C('--ink2')}" text-anchor="middle"`,v);}});
+  RGC.forEach(r=>{if(r.jf>HZ)return;s+=R(r.jf,r.jt,G.cols.reign[0],G.cols.reign[1],`fill="url(#hatch2)"`,`Regency of ${PP[r.who]?.name||r.who} (${r.why})`);});
+  // saves
+  CP.forEach(c=>{s+=L(c.j,c.j,G.cols.save[0],G.cols.save[1],`stroke="${C('--ink2')}" stroke-width="1.2"`,`Save: ${c.name||''} (${fWs(c.j)})`);});
+  // book lanes
+  D.books.forEach(b=>{if(b.js>HZ)return;const c=laneC(b.i);s+=L(b.js,Math.min(b.je||NOW,HZ),c,c,`stroke="${b.c}" stroke-width="1.4" opacity=".55"`,`${b.t} (${b.e?fWs(b.js)+'–'+fWs(b.je):'from '+fWs(b.js)+', written as it happens'})`);});
+  // entries
+  const unreadC=(G.cols.lanes[0]+G.cols.lanes[1])/2;
+  EN.forEach(e=>{const b=BK[e.era];const seen=vis(e.j);const c=seen?laneC(b.i):unreadC;const isNew=!S.veil&&e.j>LAST_VISIT;
+    const half=v?3.5:(S.tall?3.5:2.2);
+    const fill=seen?b.c:C('--ink3');
+    s+=R(e.j-0.5,e.j-0.5,c-half,c+half,`fill="${fill}" opacity="${seen?1:.45}"`,seen?`${e.title} (${fDs(e.j)})`:`An unread leaf of ${fY(e.j)}`,2.6);
+    if(isNew)s+=(v?`<circle cx="${c}" cy="${pos(e.j)}" r="6" fill="none" stroke="${C('--accent')}" stroke-width="1.5"/>`:`<circle cx="${pos(e.j)}" cy="${c}" r="5" fill="none" stroke="${C('--accent')}" stroke-width="1.5"/>`);});
+  // register: events by provenance (density of the record)
+  const rc=G.cols.reg;
+  EV.forEach(e=>{if(!vis(e.j))return;const acct=e.pv==='account'||e.pv==='screen';
+    const mid=(rc[0]+rc[1])/2;s+=L(e.j,e.j,acct?mid:rc[0],acct?rc[1]:mid,`stroke="${acct?C('--acct'):C('--save')}" stroke-width="1" opacity=".5"`);});
+  // veil fog past the high-water mark
+  if(S.veil&&S.hw<T1){s+=R(S.hw,T1,v?30:0,full[1],`fill="${C('--fog')}"`);
+    s+=L(S.hw,S.hw,v?30:0,full[1],`stroke="${C('--accent')}" stroke-width="1" stroke-dasharray="3 3"`);
+    if(v||S.tall)s+=TX(S.hw,v?G.W-4:G.cols.lanes[0]+8,'read to here',`font-family="Inter,sans-serif" font-size="9" fill="${C('--accent')}" ${v?'text-anchor="end" dy="11"':'dx="4"'}`);}
+  if(!S.veil){s+=L(LAST_VISIT,LAST_VISIT,v?30:0,full[1],`stroke="${C('--accent')}" stroke-width="1" stroke-dasharray="2 4"`);
+    if(v||S.tall)s+=TX(LAST_VISIT,v?G.W-4:G.cols.lanes[0],'last visit',`font-family="Inter,sans-serif" font-size="9" fill="${C('--accent')}" ${v?'text-anchor="end" dy="-4"':'dx="-44"'}`);}
+  s+='<g id="dyn"></g>';
+  rail.innerHTML=s;drawDyn();
+}
+function drawDyn(){
+  if(!G)return;const v=G.o==='v';const cs=getComputedStyle(document.documentElement);const C=k=>cs.getPropertyValue(k).trim();
+  let s='';const e=S.mode==='entry'?ENid[S.entry]:null;
+  if(e){const b=BK[e.era];const c=laneC(b.i);
+    // reach: what this leaf tells, from its earliest first-told source to the last moment it tells
+    s+=L(e.jr,e.ja,c,c,`stroke="${b.c}" stroke-width="5" stroke-linecap="round" opacity=".85"`);
+    if(e.jr<e.j-200)s+=L(e.jr,e.jr,c-6,c+6,`stroke="${b.c}" stroke-width="2"`);
+    // callbacks: earlier leaves this one deliberately recalls (not counted in its reach)
+    e.callbacks.forEach(id=>{const t=ENid[id];if(!t)return;const tc=laneC(BK[t.era].i);
+      s+=v?`<circle cx="${tc}" cy="${pos(t.j)}" r="4.5" fill="none" stroke="${C('--ink')}" stroke-width="1.2" stroke-dasharray="2 1.5"/>`
+          :`<circle cx="${pos(t.j)}" cy="${tc}" r="4" fill="none" stroke="${C('--ink')}" stroke-width="1.2" stroke-dasharray="2 1.5"/>`;});}
+  // the bead
+  const p=pos(S.j);
+  if(v){s+=`<line x1="30" y1="${p}" x2="${G.W}" y2="${p}" stroke="${C('--accent')}" stroke-width="1.6"/>
+    <rect x="0" y="${p-9}" width="30" height="18" rx="3" fill="${C('--accent')}"/>
+    <text x="15" y="${p+4}" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="${C('--paper')}">${S.cal==='h'?yH(S.j):yW(S.j)}</text>
+    <circle cx="${G.W-8}" cy="${p}" r="6" fill="${C('--accent')}" stroke="${C('--paper')}" stroke-width="2"/>`;}
+  else{s+=`<line x1="${p}" y1="0" x2="${p}" y2="${G.Hh}" stroke="${C('--accent')}" stroke-width="1.8"/>
+    <circle cx="${p}" cy="${G.Hh/2}" r="9" fill="${C('--accent')}" stroke="${C('--paper')}" stroke-width="2"/>
+    <text x="${p}" y="${G.Hh/2+3.5}" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="${C('--paper')}">${String(S.cal==='h'?yH(S.j):yW(S.j)).slice(-2)}</text>`;}
+  document.getElementById('dyn').innerHTML=s;
+  rail.setAttribute('aria-valuenow',yW(S.j));rail.setAttribute('aria-valuetext',fDs(S.j));
+}
+
+/* =============== drag =============== */
+function ptPos(ev){const r=rail.getBoundingClientRect();return G.o==='v'?ev.clientY-r.top:ev.clientX-r.left;}
+let raf=0,pending=null;
+function live(j){pending=j;if(raf)return;raf=requestAnimationFrame(()=>{raf=0;S.j=Math.max(T0,Math.min(T1,pending));drawDyn();renderHeader();renderAside();renderLoupe(true);});}
+rail.addEventListener('pointerdown',ev=>{rail.setPointerCapture(ev.pointerId);S.drag=true;S.downAt=ptPos(ev);live(atPos(ptPos(ev)));});
+rail.addEventListener('pointermove',ev=>{if(!S.drag)return;live(atPos(ptPos(ev)));});
+rail.addEventListener('pointerup',ev=>{if(!S.drag)return;S.drag=false;const p=ptPos(ev);const j=atPos(p);
+  // snap to a leaf if released on (or within 6px of) its tick
+  let best=null,bd=1e9;for(const e of EN){const d=Math.abs(pos(e.j)-p);if(d<bd){bd=d;best=e;}}
+  renderLoupe(false);
+  if(best&&bd<=6)go(best.id);else stand(j);});
+rail.addEventListener('pointercancel',()=>{S.drag=false;renderLoupe(false);});
+rail.addEventListener('keydown',ev=>{const k=ev.key;let handled=true;
+  const v=G.o==='v';const back=v?'ArrowUp':'ArrowLeft',fwd=v?'ArrowDown':'ArrowRight';
+  if(k===fwd){const n=entryAfter(S.j);n&&go(n.id);}
+  else if(k===back){let p=null;for(const e of EN){if(e.j<S.j-(S.mode==='entry'?0:-1)&&e.id!==S.entry)p=e;}
+    const cur=ENid[S.entry];if(S.mode==='entry'&&cur){p=EN[cur.i-1]||null;}p&&go(p.id);}
+  else if(k==='PageDown')stand(S.j+365);else if(k==='PageUp')stand(S.j-365);
+  else if(k==='Home')go(EN[0].id);else if(k==='End')stand(NOW);else handled=false;
+  if(handled)ev.preventDefault();});
+
+/* =============== navigation =============== */
+function go(id,force){const e=ENid[id];if(!e)return;
+  if(S.veil&&e.j>S.hw&&!force){S.mode='ahead';S.entry=null;S.j=e.j;S.aheadEntry=id;render();return;}
+  S.mode='entry';S.entry=id;S.j=e.ja;
+  if(S.veil&&e.ja>S.hw){S.hw=e.ja;save();drawRail();}
+  render();window.scrollTo({top:0,behavior:'instant'});}
+function stand(j){j=Math.max(T0,Math.min(T1,j));S.j=j;S.entry=null;
+  S.mode=(S.veil&&j>S.hw)?'ahead':'gap';S.aheadEntry=null;render();window.scrollTo({top:0,behavior:'instant'});}
+
+/* =============== header =============== */
+function renderHeader(){
+  document.getElementById('when').innerHTML=fD(S.j);
+  const r=reignAt(S.j),rg=regencyAt(S.j);let t='';
+  if(!vis(S.j))t='Past the point you’ve read to: the reign is veiled';
+  else if(r){t=`${ord(regnalYear(r,S.j))} year of ${shortName(r.who)}, ${rulerTitle(S.j)}`;
+    if(rg)t+=` · regency of ${PP[rg.who]?.name||rg.who} (${rg.why})`;}
+  document.getElementById('reignline').textContent=t;
+  document.getElementById('veilOn').setAttribute('aria-pressed',S.veil);
+  document.getElementById('veilOff').setAttribute('aria-pressed',!S.veil);
+  document.getElementById('calH').setAttribute('aria-pressed',S.cal==='h');
+  document.getElementById('calW').setAttribute('aria-pressed',S.cal==='w');
+}
+
+/* =============== reading column (the page itself is another designer's; kept plain) =============== */
+function md(t){return t.split(/\n\s*\n/).map(p=>{let h=esc(p.trim());
+  h=h.replace(/\[([^\]]+)\]\((person|place|war):([^)]+)\)/g,(m,n,k,id)=>k==='war'?`<span class="war" title="war: ${id}">${n}</span>`:`<a class="ref" data-k="${k==='person'?'p':'l'}" data-id="${id}">${n}</a>`);
+  h=h.replace(/\*([^*]+)\*/g,'<em>$1</em>');return `<p>${h}</p>`;}).join('');}
+function guide(){return `<div class="guide"><b>Mockup.</b> One date governs everything here. Try:
+  <ol><li>Drag the bead on the rail (left; on a phone, the strip at the bottom). The header, the realm panel and any open card follow it live.</li>
+  <li>Tap <b>Faraj</b> or <b>Saʿd</b> in the text, then drag back to 1351 or on to 1405, and watch the card change.</li>
+  <li>Drop the bead inside the hatched band between 1379 and 1394 (fourteen years without a save).</li>
+  <li>Drag past the dashed “read to here” line: that's the veil. Then press <b>Veil lifted</b>.</li></ol></div>`;}
+function renderMain(){
+  const m=document.getElementById('main');let h='';
+  if(S.mode==='entry'){const e=ENid[S.entry],b=BK[e.era];
+    if(e.id===DEFAULT.entry)h+=guide();
+    h+=`<div class="book"><i style="background:${b.c}"></i>${esc(b.t)} <span class="ar">${esc(b.ar)}</span></div>
+      <h1>${esc(e.title)}</h1><div class="dateline">${fD(e.j,true)}</div>`;
+    const tn=[];
+    if(e.ja>e.j)tn.push(`This leaf tells events up to <b>${fDs(e.ja)}</b>, ${dur(e.j,e.ja)} after its own date, so the site stands at that later date while you read it.`);
+    if(e.jr<e.j-400)tn.push(`It looks back to ${fDs(e.jr)}: events no earlier leaf had told. Its reach is the thick stroke on the rail.`);
+    if(e.callbacks.length)tn.push(`It recalls ${e.callbacks.length===1?'an earlier leaf':e.callbacks.length+' earlier leaves'} (dotted rings on the rail): `+e.callbacks.map(id=>`<a data-go="${id}">${esc(ENid[id].title)}</a>`).join('; ')+'. Those don’t count towards its reach.');
+    if(tn.length)h+=`<div class="timenotes sans">${tn.map(x=>`<p>${x}</p>`).join('')}</div>`;
+    h+=`<div class="prose">${md(e.text)}</div>`;
+    const prev=EN[e.i-1],next=EN[e.i+1];const nb=EN.slice(e.i+1).find(x=>x.era===e.era);
+    h+=`<div class="leafnav">${prev?`<button data-go="${prev.id}">← earlier leaf<b>${esc(prev.title)}</b></button>`:'<span></span>'}
+      ${next?`<button data-go="${next.id}">later leaf →<b>${vis(next.j)?esc(next.title):'Not yet read'}</b></button>`:'<span></span>'}</div>`;
+    if(nb&&nb!==next)h+=`<div class="sans" style="font-size:12.5px;margin-top:8px;color:var(--ink2)">Next in ${esc(b.t)}: <button class="linkish" data-go="${nb.id}">${vis(nb.j)?esc(nb.title):'a leaf of '+fY(nb.j)+' (not yet read)'}</button></div>`;
+  }else if(S.mode==='gap'){h+=renderGap();}
+  else{h+=renderAhead();}
+  m.innerHTML=h;
+}
+function renderGap(){
+  const j=S.j,p=entryBefore(j),n=entryAfter(j),g=gapAt(j),ls=lastSave(j),ns=nextSave(j);
+  let h=`<div class="gap"><div class="book sans">Between leaves</div><h1>${fD(j,true)}</h1>
+   <p>No leaf of the chronicle is dated here.</p>`;
+  h+=`<div class="panel"><p class="kick">The nearest leaves</p><ul class="list">`;
+  if(p)h+=`<li><span class="d">${dur(p.j,j)} before · ${fDs(p.j)}</span><button class="linkish" data-go="${p.id}">${esc(p.title)}</button></li>`;
+  if(n)h+=`<li><span class="d">${dur(j,n.j)} after · ${fDs(n.j)}</span>${vis(n.j)?`<button class="linkish" data-go="${n.id}">${esc(n.title)}</button>`:`<span style="color:var(--ink3)">A leaf of ${fY(n.j)}, which you haven’t read yet</span>`}</li>`;
+  h+=`</ul>${p&&n?`<p class="sans" style="font-size:12.5px;color:var(--ink2);margin:8px 0 0">The chronicle says nothing for ${dur(p.j,n.j)} here.</p>`:''}</div>`;
+  h+=`<div class="panel ${g?'hatched':''}"><p class="kick">The record</p>`;
+  if(g)h+=`<p style="margin:0">You are inside a <b>${dur(g.a,g.b)}</b> stretch with no save, from ${fDs(g.a)} to ${fDs(g.b)}. Nothing here was read from a game file. What the record holds is Trent’s account and what later saves let the writer reconstruct.</p>`;
+  else if(ls)h+=`<p style="margin:0">The last save was ${dur(ls.j,j)} before this date, on ${fDs(ls.j)}${ns&&vis(ns.j)?`. The next comes ${dur(j,ns.j)} after it`:''}.</p>`;
+  h+='</div>';
+  // later leaves whose reach covers this date: the gap is told in retrospect
+  const told=EN.filter(e=>e.j>j&&e.jr<=j&&(!p||e.jr<=j));
+  if(told.length){h+=`<div class="panel"><p class="kick">Told later</p><ul class="list">`+told.map(e=>`<li><span class="d">looks back from ${fDs(e.j)}</span>${vis(e.j)?`<button class="linkish" data-go="${e.id}">${esc(e.title)}</button>`:`<span style="color:var(--ink3)">A later leaf of ${fY(e.j)}, not yet read</span>`}</li>`).join('')+'</ul></div>';}
+  const reg=EV.filter(e=>Math.abs(e.j-j)<=200&&vis(e.j)).slice(0,10);
+  if(reg.length){h+=`<div class="panel"><p class="kick">The register for these months: data, not the chronicle’s voice</p><ul class="list">`+reg.map(e=>`<li><span class="d"><span class="pv ${e.pv}">${pvLabel(e.pv)}</span>${fDs(e.j)}</span>${esc(e.ti)}</li>`).join('')+'</ul></div>';}
+  return h+'</div>';
+}
+function renderAhead(){
+  const target=S.aheadEntry?ENid[S.aheadEntry]:entryAfter(S.j)||entryBefore(S.j);
+  const lastRead=entryBefore(S.hw);
+  const skipped=EN.filter(e=>e.j>S.hw&&target&&e.j<target.j).length;
+  return `<div class="gap"><div class="book sans">Beyond the veil</div><h1>${fD(S.j,true)}</h1>
+   <div class="panel hatched"><p style="margin-top:0">This is past the point you’ve read to (${fDs(S.hw)}). On a first reading, the site shows nothing beyond that point, so that no card, panel or title gives away what comes next.</p>
+   ${skipped?`<p>Opening ${target?'this leaf':'here'} would skip <b>${skipped}</b> unread leaves.</p>`:''}
+   <div class="btnrow">${lastRead?`<button class="btn primary" data-go="${lastRead.id}">Back to where I left off</button>`:''}
+   ${target?`<button class="btn" data-goforce="${target.id}">Read ahead anyway${skipped?' (unveils the skipped leaves)':''}</button>`:''}
+   <button class="btn" data-unveil="1">Lift the veil</button></div></div></div>`;
+}
+const pvLabel=pv=>({save:'save',['save+']:'save + account',account:'Trent’s account',screen:'screenshot',record:'record'}[pv]||pv);
+
+/* =============== the as-of column =============== */
+function realmPanel(j){
+  if(!vis(j))return `<div class="veilbox">The realm on ${fDs(j)} lies past what you’ve read, so it stays veiled.</div>`;
+  const c=lastSave(j);if(!c)return '';
+  const pc=prevSave(c),ns=nextSave(j),age_=j-c.j,g=gapAt(j);
+  const cls=age_<=90?'fresh':age_<=730?'aging':'stale';
+  let h=`<div class="src ${cls} ${cls==='stale'?'hatched':''}">From the save of <b>${fDs(c.j)}</b>${c.name?` (“${esc(c.name)}”)`:''}: `+
+    (age_===0?'taken on this very day.':`${dur(c.j,j)} before this date.`)+
+    (cls==='stale'?` <b>The record is silent here.</b> These figures describe ${fY(c.j)}, not ${fY(j)}.`:'')+
+    (ns&&(vis(ns.j))?` The next save comes ${dur(j,ns.j)} later${g?`, ending a ${dur(g.a,g.b)} silence`:''}.`:(ns?' The next save is past what you’ve read.':''))+`</div>`;
+  const r=reignAt(j);const ruler=r?PP[r.who]:null;
+  const dl=(k,f)=>pc&&pc[k]!=null&&c[k]!=null&&pc[k]!==c[k]?`<em>${f?f(pc[k]):num(pc[k])} at the save before</em>`:'';
+  const e=c.econ||{},pe=(pc&&pc.econ)||{};
+  const ed=(k)=>pe[k]!=null&&e[k]!=null&&pe[k]!==e[k]?`<em>${num(pe[k])} before</em>`:'';
+  const mus=c.pop&&c.sunni?Math.round(100*c.sunni/c.pop):null;
+  h+=`<div class="figs">
+    <div class="wide"><span>Ruler at this date</span><b>${ruler?esc(ruler.name):'—'}${ruler?`, ${ageTxt(ruler,j)}`:''}</b>${regencyAt(j)?`<em>under the regency of ${esc(PP[regencyAt(j).who]?.name)}</em>`:''}</div>
+    <div><span>Heir (at the save)</span><b>${c.heir?esc(PP[c.heir]?.name||c.heir):'—'}</b></div>
+    <div><span>Capital</span><b>${esc(PL[c.capital]?.name||c.capital||'—')}</b></div>
+    <div><span>Rank</span><b>${esc(c.rank||'—')}</b>${c.world?`<em>${ord(c.world)} among the powers</em>`:''}</div>
+    <div><span>Towns</span><b>${num(c.towns)}</b>${dl('towns')}</div>
+    <div><span>People</span><b>${num(c.pop)}</b>${dl('pop')}</div>
+    <div><span>Muslim share</span><b>${mus!=null?mus+'%':'—'}</b></div>
+    <div><span>Treasury</span><b>${num(e.treasury)}</b>${ed('treasury')}</div>
+    <div><span>Income / month</span><b>${num(e.income)}</b>${ed('income')}</div>
+    <div><span>Expenses / month</span><b>${num(e.expenses)}</b></div>
+    <div><span>Debt</span><b>${num(e.debt)}</b>${ed('debt')}</div>
+    <div><span>Stability</span><b>${num(c.stab)}</b>${dl('stab')}</div>
+    <div><span>Sovereignty</span><b>${c.sov!=null?num(c.sov)+'%':'—'}</b></div>
+    <div class="wide"><span>Overlord · ṭāʾifas · allies</span><b style="font-size:13px">${c.overlord?`tributary of ${esc(c.overlord.country)}`:'none'} · ${c.subjects} · ${c.allies.length?esc(c.allies.join(', ')):'none'}</b></div>
+  </div>`;
+  if(c.estates.length){const anyEst=c.estates.some(x=>x.est);
+    h+=`<div class="bars"><div style="color:var(--ink3);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:3px">Shares of power${anyEst?'<span class="est">estimated</span>':''}</div>`+
+      c.estates.map(x=>`<div class="bar"><span>${esc(x.n)}</span><span class="t"><i class="${x.est?'e':''}" style="width:${Math.min(100,(x.p||0)*2)}%"></i></span><span style="text-align:right;color:var(--ink2)">${num(x.p)}%${x.s!=null?` · ${x.s}`:''}</span></div>`).join('')+
+      (anyEst&&c.estNote?`<div style="color:var(--warn);font-size:11px;margin-top:3px">${esc(c.estNote)}</div>`:'')+'</div>';}
+  const since=EV.filter(x=>x.j>c.j&&x.j<=j);
+  if(since.length){const acct=since.filter(x=>x.pv==='account'||x.pv==='screen').length;
+    h+=`<div class="since"><div style="color:var(--ink3);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase">Since that save, up to this date: ${since.length} item${since.length>1?'s':''} in the register${acct?`, ${acct} from Trent’s account or screenshots`:''}</div><ul class="list">`+
+      since.slice(-4).reverse().map(x=>`<li><span class="d"><span class="pv ${x.pv}">${pvLabel(x.pv)}</span>${fDs(x.j)}</span>${esc(x.ti)}</li>`).join('')+'</ul></div>';}
+  if(c.note)h+=`<details><summary>What the save’s note says</summary><p>${esc(c.note)}</p><p style="color:var(--ink3)">${esc(c.save||'')}</p></details>`;
+  return h;
+}
+function personStation(p,j){const out=[];
+  RG.filter(r=>r.who===p.id&&j>=r.jf&&(r.jt==null||j<r.jt)).forEach(r=>out.push(`<b>${rulerTitle(j)}</b>, in the ${ord(regnalYear(r,j))} year of the reign`));
+  RGC.filter(r=>r.who===p.id&&j>=r.jf&&j<r.jt).forEach(r=>out.push(`<b>Regent</b> while ${esc(r.why)}`));
+  const c=lastSave(j);if(c){if(c.heir===p.id&&!out.length)out.push(`<b>Heir</b> (at the save of ${fWs(c.j)})`);
+    if(c.regent===p.id)out.push(`<b>Regent</b> (at the save of ${fWs(c.j)})`);
+    (c.cabinet||[]).filter(x=>x.person===p.id).forEach(x=>out.push(`In the dīwān: ${esc(x.role)} (at the save of ${fWs(c.j)})`));}
+  p.roles.filter(r=>r[0]&&jdn(r[0])<=j&&(!r[1]||jdn(r[1])>=j)).forEach(r=>{if(!/^emperor|^sultan/i.test(r[2])||!out.length)out.push(esc(r[2]));});
+  return out;}
+function personCard(id,j){const p=PP[id];if(!p)return `<div class="card">Unknown person ${esc(id)}</div>`;
+  const Hh=H();const him=p.female?'her':'him';
+  if(!vis(j))return cardShell(p,`<div class="veilbox">This card is set to ${fDs(j)}, which is past what you’ve read.</div>`);
+  let st='';
+  if(p.jb&&j<p.jb)st=`Not yet born on this date${vis(p.jb)?` (born ${fWs(p.jb)})`:''}.`;
+  else if(p.jd&&p.jd<=j)st=`<b>Died ${fDs(p.jd)}</b>, aged ${ageTxt(p,p.jd)}${j-p.jd>0?`: ${dur(p.jd,j)} before this date`:''}.`;
+  else st=`Living, aged <b>${ageTxt(p,j)}</b>${p.jb&&/-01-01$/.test(p.born)?' <span title="Born 1 January in the record, which usually means the year alone is known">(birth year only)</span>':''}.`;
+  const stn=(p.jd&&p.jd<=j)?[]:personStation(p,j);
+  let h=`<div class="status">${st}${stn.length?'<br>'+stn.join('<br>'):''}</div>`;
+  // what was known by this date (note sentences dated by the latest date they mention)
+  const known=p.note.filter(n=>n[2]==null||n[2]<=j),later=p.note.filter(n=>n[2]!=null&&n[2]>j&&n[2]<=Hh),hidden=p.note.filter(n=>n[2]!=null&&n[2]>Hh);
+  const li=n=>`<li>${n[2]?`<span class="d">${fDs(n[2])}</span>`:''}${esc(n[1])}</li>`;
+  if(known.length){h+=`<h4>Known by this date</h4><ul>`+known.slice(-3).map(li).join('')+'</ul>';
+    if(known.length>3)h+=`<details><summary>${known.length-3} earlier line${known.length-3>1?'s':''}</summary><ul>${known.slice(0,-3).map(li).join('')}</ul></details>`;}
+  // dated record (events) up to the date
+  const evs=EV.filter(e=>e.p.includes(id));const evK=evs.filter(e=>e.j<=j),evL=evs.filter(e=>e.j>j&&e.j<=Hh),evH=evs.filter(e=>e.j>Hh);
+  if(evK.length)h+=`<h4>In the register, up to this date</h4><ul>`+evK.slice(-3).reverse().map(e=>`<li><span class="d"><span class="pv ${e.pv}">${pvLabel(e.pv)}</span>${fDs(e.j)}</span>${esc(e.ti)}</li>`).join('')+'</ul>';
+  // chronicle mentions
+  const ms=p.mentions.map(x=>ENid[x]);const mK=ms.filter(e=>e.j<=j),mL=ms.filter(e=>e.j>j&&e.j<=Hh),mH=ms.filter(e=>e.j>Hh);
+  if(mK.length){h+=`<h4>In the chronicle</h4><ul><li>First met in <button class="linkish" data-go="${mK[0].id}">${esc(mK[0].title)}</button><span class="d">${fDs(mK[0].j)}</span></li>`+
+    (mK.length>1?`<li>${mK.length} leaves by this date. Last seen in <button class="linkish" data-go="${mK[mK.length-1].id}">${esc(mK[mK.length-1].title)}</button></li>`:'')+'</ul>';}
+  else if(ms.length&&vis(ms[0].j))h+=`<h4>In the chronicle</h4><ul><li>Not yet met by this date.</li></ul>`;
+  // later (already read, or veil lifted)
+  if(later.length||evL.length||mL.length||(p.jd&&p.jd>j&&vis(p.jd))){
+    h+=`<div class="later"><h4>${S.veil?'Later: you have read past this':'Later in the record'}</h4><ul>`;
+    if(p.jd&&p.jd>j&&vis(p.jd))h+=`<li><span class="d">${fDs(p.jd)}</span>Dies, aged ${ageTxt(p,p.jd)}.</li>`;
+    h+=later.slice(0,S.veil?4:8).map(n=>`<li><span class="d">${fDs(n[2])}</span>${esc(n[1])}</li>`).join('');
+    if(mL.length)h+=`<li>Appears in ${mL.length} later leaf${mL.length>1?'s':''}${S.veil?' you have read':''}.</li>`;
+    h+='</ul></div>';}
+  if(S.veil&&(hidden.length||evH.length||mH.length||(p.jd&&p.jd>Hh)))h+=`<div class="ahead">There is more of ${him} ahead in the chronicle.</div>`;
+  const und=p.roles.filter(r=>!r[0]).map(r=>r[2]).concat(p.traits.map(t=>'trait: '+t));
+  if(und.length){h+=S.veil?`<div class="pin" style="margin-top:8px">${und.length} undated fact${und.length>1?'s are':' is'} held back by the veil, because ${und.length>1?'they':'it'} can’t be placed in time.</div>`
+      :`<h4>Undated in the record</h4><div class="pin">${und.map(esc).join(' · ')}</div>`;}
+  return cardShell(p,h);}
+function cardShell(p,body){
+  const sub=[p.dynasty,p.game&&p.game!==p.name?`game name ${p.game}`:null].filter(Boolean).join(' · ');
+  return `<div class="card"><button class="close" data-close="1" aria-label="Close card">×</button>
+   <div class="pin">As of ${fDs(S.j)}. Follows the bead.</div>
+   <h3>${esc(p.name)}</h3>${p.ar?`<span class="ar">${esc(p.ar)}</span>`:''}<div class="meta">${esc(sub)}</div>${body}</div>`;}
+function placeCard(id,j){const p=PL[id];if(!p)return '';
+  if(!vis(j))return `<div class="card"><button class="close" data-close="1">×</button><h3>${esc(p.name)}</h3><div class="veilbox">Past what you’ve read.</div></div>`;
+  let st='Not in the record of holdings.';
+  if(p.held){const cur=p.held.find(r=>jdn(r.from)<=j&&(!r.to||jdn(r.to)>j));
+    const past=p.held.filter(r=>r.to&&jdn(r.to)<=j);
+    if(cur)st=`<b>Held by the crown</b> since ${fDs(jdn(cur.from))}${jdn(cur.from)<=T0?' (from the start)':''}.`;
+    else if(past.length)st=`<b>Not held</b>: lost ${fDs(jdn(past[past.length-1].to))}.`;
+    else st='<b>Not held</b> by the crown at this date.';}
+  const known=p.note.filter(n=>n[2]==null||n[2]<=j);
+  const ms=p.mentions.map(x=>ENid[x]).filter(e=>e.j<=j);
+  return `<div class="card"><button class="close" data-close="1" aria-label="Close card">×</button><div class="pin">As of ${fDs(j)}. Follows the bead.</div>
+   <h3>${esc(p.name)}</h3>${p.ar?`<span class="ar">${esc(p.ar)}</span>`:''}<div class="meta">plainly, ${esc(p.plain)}${p.game?` · game name ${esc(p.game)}`:''}</div>
+   <div class="status">${st}</div>
+   ${known.length?`<h4>Known by this date</h4><ul>${known.slice(-4).map(n=>`<li>${n[2]?`<span class="d">${fDs(n[2])}</span>`:''}${esc(n[1])}</li>`).join('')}</ul>`:''}
+   ${ms.length?`<h4>In the chronicle</h4><ul><li>${ms.length} leaf${ms.length>1?'s':''} by this date. First in <button class="linkish" data-go="${ms[0].id}">${esc(ms[0].title)}</button></li></ul>`:''}</div>`;}
+function cardHtml(){if(!S.card)return '';return S.card.k==='p'?personCard(S.card.id,S.j):placeCard(S.card.id,S.j);}
+function glance(j){
+  if(!vis(j))return `<div class="src glance" data-tab="realm">The realm is veiled past the point you’ve read to.</div>`;
+  const c=lastSave(j);if(!c)return '';const a=j-c.j;const cls=a<=90?'fresh':a<=730?'aging':'stale';
+  return `<button class="src glance ${cls} ${cls==='stale'?'hatched':''}" data-tab="realm"><b>Save of ${fWs(c.j)}</b>, ${a===0?'this very day':dur(c.j,j)+' before'}${cls==='stale'?': <b>the record is silent</b>':''} · ${num(c.towns)} towns · ${num(c.pop)} people · treasury ${num((c.econ||{}).treasury)}</button>`;}
+function renderAside(){
+  const a=document.getElementById('aside');const phone=orient()==='h';
+  if(!S.tab)S.tab=S.card?'card':'realm';
+  const e=S.mode==='entry'?ENid[S.entry]:null;
+  let chips='';
+  if(e&&e.people.length){chips=`<div class="sect"><h2>People in this leaf, as of this date</h2><div class="chips">`+e.people.map(id=>{const p=PP[id];if(!p)return '';
+      if(!vis(S.j))return `<button class="chip" data-k="p" data-id="${id}">${esc(p.name.split(' ibn ')[0].split(' bint ')[0])}</button>`;
+      const dead=p.jd&&p.jd<=S.j;return `<button class="chip ${dead?'dead':''}" data-k="p" data-id="${id}">${esc(p.name.split(' ibn ')[0].split(' bint ')[0])} <small>${dead?'d. '+(S.cal==='h'?yH(p.jd):yW(p.jd)):(p.jb&&p.jb<=S.j?ageTxt(p,S.j).replace('about ','c. '):'')}</small></button>`;}).join('')+'</div></div>';}
+  const realm=`<div class="sect"><h2><span>The realm, as of this date</span></h2>${realmPanel(S.j)}</div>`;
+  let h=glance(S.j);
+  if(phone){h+=chips+realm;}
+  else{
+    h+=`<div class="tabs sans" role="tablist"><button role="tab" data-tab="card" aria-selected="${S.tab==='card'}">${S.card?esc((S.card.k==='p'?PP[S.card.id]?.name:PL[S.card.id]?.name)||'Card').split(' ibn ')[0]:'People'}</button><button role="tab" data-tab="realm" aria-selected="${S.tab==='realm'}">The realm</button></div>`;
+    if(S.tab==='card')h+=`<div class="sect">${S.card?cardHtml():`<div class="pin" style="padding:6px 0 10px">Tap a name in the text. Its card shows who they were on this date, and follows the bead as you drag.</div>`}</div>`+chips;
+    else h+=realm;}
+  a.innerHTML=h;
+  const sh=document.getElementById('sheet');
+  if(phone&&S.card){sh.innerHTML=cardHtml();sh.classList.add('on');}else{sh.classList.remove('on');sh.innerHTML='';}
+}
+
+/* =============== loupe (the neck of the hourglass) =============== */
+function renderLoupe(on){const l=document.getElementById('loupe');if(!on){l.classList.remove('on');return;}
+  const j=S.j;const r=reignAt(j);
+  const near=EN.map(e=>({e,d:Math.abs(e.j-j)})).sort((a,b)=>a.d-b.d).slice(0,5).map(x=>x.e).sort((a,b)=>a.j-b.j);
+  const g=gapAt(j);
+  let h=`<div class="lw">${S.cal==='h'?fH(j):fW(j)}</div><div class="lw2">${S.cal==='h'?fW(j):fH(j)}${r&&vis(j)?` · ${ord(regnalYear(r,j))} year of ${shortName(r.who)}`:''}</div>`;
+  if(S.veil&&j>S.hw)h+=`<div class="gapnote hatched">Past the point you’ve read to</div>`;
+  h+='<ul>'+near.map(e=>{const b=BK[e.era];const close=Math.abs(pos(e.j)-pos(j))<=6;
+    return `<li class="${close?'here':''}"><i style="background:${vis(e.j)?b.c:'var(--ink3)'}"></i><span>${vis(e.j)?esc(e.title):'<span class="muted">Unread leaf</span>'} <span class="muted">· ${S.cal==='h'?yH(e.j):yW(e.j)}</span></span></li>`;}).join('')+'</ul>';
+  if(g)h+=`<div class="gapnote hatched">${dur(g.a,g.b)} without a save (${fWs(g.a)} to ${fWs(g.b)})</div>`;
+  const cov=EN.filter(e=>e.jr<=j&&e.j>j&&e.j-e.jr>400);
+  if(cov.length)h+=`<div class="muted" style="margin-top:4px">Told in retrospect by ${cov.length} later leaf${cov.length>1?'s':''}</div>`;
+  l.innerHTML=h;l.classList.add('on');
+  const rr=rail.getBoundingClientRect();const p=pos(j);
+  if(G.o==='v'){l.style.left=(rr.right+10)+'px';l.style.top=Math.max(64,Math.min(innerHeight-l.offsetHeight-10,rr.top+p-40))+'px';l.style.bottom='auto';}
+  else{l.style.left=Math.max(16,Math.min(innerWidth-l.offsetWidth-16,rr.left+p-150))+'px';l.style.top='auto';l.style.bottom=(rr.height+12+(S.tall?0:0))+'px';}
+}
+
+/* =============== events =============== */
+document.addEventListener('click',ev=>{const t=ev.target.closest('[data-go],[data-goforce],[data-k],[data-close],[data-unveil],[data-tab]');if(!t)return;
+  if(t.dataset.tab){S.tab=t.dataset.tab;renderAside();return;}
+  if(t.dataset.go){go(t.dataset.go);}
+  else if(t.dataset.goforce){const e=ENid[t.dataset.goforce];S.hw=Math.max(S.hw,e.ja);save();drawRail();go(e.id,true);}
+  else if(t.dataset.unveil){S.veil=false;save();drawRail();if(S.mode==='ahead'){const e=S.aheadEntry?ENid[S.aheadEntry]:null;e?go(e.id):stand(S.j);}else render();}
+  else if(t.dataset.close){S.card=null;S.tab='realm';renderAside();markRefs();}
+  else if(t.dataset.k){S.card={k:t.dataset.k,id:t.dataset.id};S.tab='card';renderAside();markRefs();}});
+function markRefs(){document.querySelectorAll('.prose a.ref').forEach(a=>a.classList.toggle('on',!!S.card&&a.dataset.id===S.card.id));}
+document.getElementById('veilOn').onclick=()=>{S.veil=true;save();drawRail();if(S.j>S.hw){S.mode='ahead';}render();};
+document.getElementById('veilOff').onclick=()=>{S.veil=false;save();drawRail();if(S.mode==='ahead'){S.aheadEntry?go(S.aheadEntry):stand(S.j);}else render();};
+document.getElementById('calH').onclick=()=>{S.cal='h';save();drawRail();render();};
+document.getElementById('calW').onclick=()=>{S.cal='w';save();drawRail();render();};
+document.getElementById('resetBtn').onclick=()=>{S.veil=DEFAULT.veil;S.hw=DEFAULT.hw;S.cal=DEFAULT.cal;S.card={...DEFAULT.card};save();drawRail();go(DEFAULT.entry);};
+document.getElementById('railToggle').onclick=()=>{S.tall=!S.tall;document.getElementById('railbox').classList.toggle('tall',S.tall);document.body.classList.toggle('tall',S.tall);
+  document.getElementById('railToggle').textContent=S.tall?'Collapse the rail':'Expand the rail';drawRail();};
+let rz=0;addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(()=>{drawRail();renderAside();},120);});
+matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change',()=>drawRail());
+
+function render(){renderHeader();renderMain();renderAside();drawDyn();markRefs();}
+
+/* =============== start =============== */
+load();S.card=orient()==='h'?null:{...DEFAULT.card};
+const startQ=new URLSearchParams(location.search);
+if(startQ.get('veil')==='off')S.veil=false;
+drawRail();
+const qe=startQ.get('entry'),qd=startQ.get('date'),qc=startQ.get('card');
+if(qc)S.card={k:qc.startsWith('@')?'l':'p',id:qc.replace(/^@/,'')};
+if(qd)stand(jdn(qd));else go(qe&&ENid[qe]?qe:DEFAULT.entry,!!qe);
+</script>
+</body>
+</html>

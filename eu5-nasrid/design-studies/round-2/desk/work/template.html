@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Desk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Source+Sans+3:wght@400;500;600;700&family=Amiri&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f3ede1; --sheet:#fbf8f1; --ink:#2a2420; --ink2:#5e554b; --muted:#8a8073; --rule:#d9cfbd; --rule2:#e8e0d0;
+  --rubric:#9b2c1f; --rubric-soft:#f1dcd4; --gold:#9a6f22; --gold-soft:#efe2c4; --sea:#2c5f73; --sea-soft:#d8e6ea;
+  --ok:#3d6b3a; --ok-soft:#dfe9d6; --warn:#a0601a; --warn-soft:#f4e3cb;
+  --serif:"EB Garamond",Georgia,serif; --sans:"Source Sans 3",system-ui,sans-serif; --ar:"Amiri",serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#191613; --sheet:#221e1a; --ink:#ece4d6; --ink2:#c2b8a8; --muted:#968b7c; --rule:#3e362e; --rule2:#2e2823;
+    --rubric:#e58a73; --rubric-soft:#3d2620; --gold:#d9b267; --gold-soft:#3a2f1c; --sea:#8cc3d4; --sea-soft:#1e3138;
+    --ok:#9cc493; --ok-soft:#24301f; --warn:#e3a965; --warn-soft:#3a2a17;
+  }
+}
+:root[data-theme="dark"]{
+    --paper:#191613; --sheet:#221e1a; --ink:#ece4d6; --ink2:#c2b8a8; --muted:#968b7c; --rule:#3e362e; --rule2:#2e2823;
+    --rubric:#e58a73; --rubric-soft:#3d2620; --gold:#d9b267; --gold-soft:#3a2f1c; --sea:#8cc3d4; --sea-soft:#1e3138;
+    --ok:#9cc493; --ok-soft:#24301f; --warn:#e3a965; --warn-soft:#3a2a17;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.5}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+/* masthead */
+header.mast{border-bottom:1px solid var(--rule);background:var(--sheet)}
+.mast .wrap{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px;padding-top:14px;padding-bottom:10px}
+.mast h1{font-family:var(--serif);font-weight:500;font-size:26px;margin:0;letter-spacing:.01em}
+.mast h1 .ar{font-family:var(--ar);font-size:20px;color:var(--gold);margin-left:8px}
+.frontier{font-size:13px;color:var(--ink2)}
+.frontier b{color:var(--ink);font-weight:600}
+.mast .tools{margin-left:auto;display:flex;gap:8px;align-items:center;font-size:13px}
+.seg{display:inline-flex;border:1px solid var(--rule);border-radius:999px;overflow:hidden}
+.seg button{border:0;background:transparent;padding:3px 10px;cursor:pointer;color:var(--ink2)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--sheet)}
+nav.tabs{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--rule)}
+nav.tabs .wrap{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+nav.tabs a{flex:none;text-decoration:none;padding:10px 12px 9px;font-size:14px;color:var(--ink2);border-bottom:2px solid transparent;white-space:nowrap}
+nav.tabs a.on{color:var(--ink);border-color:var(--rubric);font-weight:600}
+nav.tabs a .n{font-size:11px;background:var(--rule2);border-radius:8px;padding:0 6px;margin-left:4px;color:var(--ink2)}
+main{padding:22px 0 60px}
+section.view{display:none}
+section.view.on{display:block}
+h2{font-family:var(--serif);font-weight:500;font-size:30px;line-height:1.15;margin:0 0 4px}
+h3{font-family:var(--serif);font-weight:600;font-size:19px;margin:0 0 8px}
+.kicker{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--rubric);font-weight:600}
+.sub{color:var(--ink2);font-size:14px}
+.card{background:var(--sheet);border:1px solid var(--rule);border-radius:6px;padding:16px}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:1.25fr 1fr}
+.g3{grid-template-columns:repeat(3,1fr)}
+@media (max-width:820px){.g2,.g3{grid-template-columns:1fr}}
+.note{font-size:12.5px;color:var(--muted)}
+.pill{display:inline-block;font-size:11.5px;border-radius:999px;padding:1px 8px;border:1px solid var(--rule);color:var(--ink2);background:var(--sheet);white-space:nowrap}
+.pill.red{border-color:transparent;background:var(--rubric-soft);color:var(--rubric)}
+.pill.gold{border-color:transparent;background:var(--gold-soft);color:var(--gold)}
+.pill.sea{border-color:transparent;background:var(--sea-soft);color:var(--sea)}
+.pill.ok{border-color:transparent;background:var(--ok-soft);color:var(--ok)}
+.pill.warn{border-color:transparent;background:var(--warn-soft);color:var(--warn)}
+.serif{font-family:var(--serif)}
+/* cover */
+.cover-head{display:flex;flex-wrap:wrap;gap:6px 24px;align-items:flex-end;border-bottom:3px double var(--rule);padding-bottom:14px;margin-bottom:18px}
+.cover-head .span{font-family:var(--serif);font-size:18px;color:var(--ink2)}
+.recap{font-family:var(--serif);font-size:20px;line-height:1.5}
+.recap::first-letter{font-size:3.1em;float:left;line-height:.85;padding:4px 8px 0 0;color:var(--rubric)}
+ol.contents{list-style:none;margin:0;padding:0;counter-reset:c}
+ol.contents li{counter-increment:c;display:grid;grid-template-columns:28px 1fr auto;gap:2px 10px;padding:9px 0;border-top:1px solid var(--rule2)}
+ol.contents li::before{content:counter(c,upper-roman);font-family:var(--serif);color:var(--rubric);font-size:15px}
+ol.contents .t{font-family:var(--serif);font-size:17px;line-height:1.25}
+ol.contents .d{grid-column:2;font-size:12.5px;color:var(--muted)}
+ol.contents .w{grid-row:1/3;grid-column:3;font-size:12px;color:var(--muted);text-align:right}
+table.vit{width:100%;border-collapse:collapse;font-size:14px}
+table.vit td{padding:5px 0;border-top:1px solid var(--rule2)}
+table.vit td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.up{color:var(--ok)} .down{color:var(--rubric)}
+.bar{height:8px;background:var(--rule2);border-radius:4px;position:relative;overflow:hidden}
+.bar i{position:absolute;top:0;bottom:0;left:0;background:var(--ink2);opacity:.35;border-radius:4px}
+.bar b{position:absolute;top:0;bottom:0;left:0;background:var(--gold);border-radius:4px}
+.est{display:grid;grid-template-columns:90px 1fr 70px;gap:6px 10px;align-items:center;font-size:13.5px;margin:4px 0}
+.chiprow{display:flex;flex-wrap:wrap;gap:6px}
+.tlink{cursor:pointer;text-decoration:none}
+.tlink:hover .pill{border-color:var(--rubric)}
+/* knot glyph */
+.knot{display:inline-block;width:15px;height:15px;vertical-align:-2px;flex:none}
+/* threads */
+.tfilters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0}
+.thread{display:grid;grid-template-columns:22px 1fr;gap:4px 10px;padding:14px 0;border-top:1px solid var(--rule)}
+.thread .ti{font-family:var(--serif);font-size:19px;line-height:1.2;cursor:pointer}
+.thread .ti:hover{color:var(--rubric)}
+.thread .meta{grid-column:2;font-size:13px;color:var(--ink2);display:flex;flex-wrap:wrap;gap:4px 12px}
+.thread .gist{grid-column:2;font-family:var(--serif);font-size:16px;color:var(--ink2)}
+.strip{grid-column:2;position:relative;height:22px;margin-top:4px}
+.strip .ln{position:absolute;left:0;right:0;top:10px;height:1px;background:var(--rule)}
+.strip .seg2{position:absolute;top:9px;height:3px;background:var(--rubric);opacity:.35}
+.strip .dot{position:absolute;top:6px;width:9px;height:9px;margin-left:-4px;border-radius:50%;border:2px solid var(--rubric);background:var(--sheet)}
+.strip .dot.tie{background:var(--rubric)}
+.strip .dot.echo{border-style:dotted}
+.strip .yr{position:absolute;top:13px;font-size:10px;color:var(--muted);transform:translateX(-50%)}
+.strip .now{position:absolute;top:2px;bottom:2px;right:0;width:2px;background:var(--gold)}
+/* follow view */
+.follow{max-width:760px;margin:0 auto}
+.back{font-size:13px;color:var(--ink2);text-decoration:none;cursor:pointer}
+.kn{position:relative;padding:0 0 0 34px;margin:0}
+.kn::before{content:"";position:absolute;left:10px;top:0;bottom:0;width:1px;background:var(--rule)}
+.kn .g{position:absolute;left:2px;top:4px;background:var(--paper)}
+.kn .role{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--rubric);font-weight:600}
+.kn .et{font-family:var(--serif);font-size:18px;line-height:1.25;margin:2px 0}
+.kn .dd{font-size:12.5px;color:var(--muted)}
+.kn blockquote{margin:10px 0 0;padding:12px 14px;background:var(--sheet);border:1px solid var(--rule);border-radius:6px;font-family:var(--serif);font-size:16.5px;line-height:1.55;color:var(--ink2)}
+.kn mark{background:var(--rubric-soft);color:var(--ink);padding:0 2px;border-radius:2px}
+.gap{padding:12px 0 18px 34px;position:relative;font-size:12.5px;color:var(--muted);font-style:italic}
+.gap::before{content:"";position:absolute;left:10px;top:0;bottom:0;width:1px;border-left:1px dashed var(--rule)}
+.veil{margin:6px 0 0 34px;padding:12px 14px;border:1px dashed var(--rule);border-radius:6px;color:var(--ink2);font-size:14px}
+/* court */
+.cgroup{margin-top:26px}
+.cgroup>h3{display:flex;gap:10px;align-items:baseline}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.pc{background:var(--sheet);border:1px solid var(--rule);border-radius:6px;padding:12px;display:flex;flex-direction:column;gap:4px}
+.pc .nm{font-family:var(--serif);font-size:17px;line-height:1.2}
+.pc .ar{font-family:var(--ar);color:var(--gold);font-size:15px}
+.pc .age{font-size:12.5px;color:var(--ink2)}
+.pc .off{font-size:12.5px;color:var(--ink2)}
+.pc .silence{font-size:12px;color:var(--muted);margin-top:auto;padding-top:6px}
+.sil{height:4px;background:var(--rule2);border-radius:2px;overflow:hidden;margin-top:3px}
+.sil i{display:block;height:100%;background:var(--warn)}
+.pc.flag{border-color:var(--rubric)}
+/* verses */
+.vcheck{display:flex;gap:8px;flex-wrap:wrap}
+.vcheck input{flex:1;min-width:200px;font:inherit;padding:9px 12px;border:1px solid var(--rule);border-radius:6px;background:var(--sheet);color:var(--ink)}
+.vres{margin-top:10px;font-size:14px}
+.rep{display:grid;grid-template-columns:70px 1fr 1fr;gap:8px 14px;padding:10px 0;border-top:1px solid var(--rule2);font-size:14px}
+.rep .ref{font-weight:600;color:var(--rubric)}
+.rep .v{font-family:var(--serif);font-size:15.5px;font-style:italic}
+.rep .src{font-size:12px;color:var(--muted);font-style:normal;display:block}
+@media (max-width:640px){.rep{grid-template-columns:1fr}}
+table.conc{width:100%;border-collapse:collapse;font-size:14px}
+table.conc th{text-align:left;font-size:12px;color:var(--muted);font-weight:600;padding:6px 8px 6px 0;border-bottom:1px solid var(--rule)}
+table.conc td{padding:7px 8px 7px 0;border-top:1px solid var(--rule2);vertical-align:top}
+table.conc td.r{white-space:nowrap;font-variant-numeric:tabular-nums;font-weight:600}
+table.conc td.v{font-family:var(--serif);font-style:italic;font-size:15.5px}
+table.conc tr.dup td.r{color:var(--rubric)}
+.themes{display:flex;flex-wrap:wrap;gap:6px}
+@media (max-width:640px){ table.conc .hide-s{display:none} }
+/* checklist */
+.ck{display:grid;grid-template-columns:26px 1fr;gap:4px 8px;padding:12px 0;border-top:1px solid var(--rule2)}
+.ck input{width:18px;height:18px;margin-top:3px;accent-color:var(--rubric)}
+.ck .h{font-weight:600}
+.ck ul{margin:6px 0 0;padding-left:18px;color:var(--ink2);font-size:14px}
+.ck ul li{margin:2px 0}
+/* margin demo */
+.page{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:0 28px;background:var(--sheet);border:1px solid var(--rule);border-radius:6px;padding:28px 28px 34px}
+.page .ttl{grid-column:1/-1;margin-bottom:14px}
+.page .ttl h2{font-size:28px}
+.page p{font-family:var(--serif);font-size:18.5px;line-height:1.62;margin:0 0 14px;grid-column:1}
+.page .mg{grid-column:2;font-size:13px;align-self:start}
+.page .kq{background:linear-gradient(transparent 62%,var(--rubric-soft) 62%)}
+.mk{display:flex;gap:8px;padding:6px 0;border-top:1px solid var(--rule2)}
+.mk:first-child{border-top:0}
+.mk .mt{font-family:var(--serif);font-size:15px;line-height:1.2;color:var(--rubric)}
+.mk .mr{font-size:11.5px;color:var(--muted)}
+.mk a{font-size:12.5px;cursor:pointer;text-decoration:underline;text-underline-offset:2px;color:var(--ink2)}
+.page .verse{font-style:italic}
+@media (max-width:820px){
+  .page{grid-template-columns:1fr;padding:20px 16px}
+  .page .mg{grid-column:1;margin:-6px 0 16px;padding:8px 10px;border-left:2px solid var(--rubric);background:var(--paper);border-radius:0 6px 6px 0}
+}
+.flaglist li{margin:6px 0}
+.hr{height:1px;background:var(--rule);margin:22px 0}
+.small{font-size:13px}
+.right{text-align:right}
+.mono{font-variant-numeric:tabular-nums}
+.friend-only{display:none}
+body.friend .friend-only{display:block}
+body.friend .trent-only{display:none}
+</style>
+</head>
+<body>
+<header class="mast">
+  <div class="wrap">
+    <h1>The Desk <span class="ar">المكتب</span></h1>
+    <div class="frontier" id="frontier"></div>
+    <div class="tools">
+      <span class="note">Reading as</span>
+      <span class="seg" id="who"><button data-who="trent" aria-pressed="true">Trent</button><button data-who="friend" aria-pressed="false">a friend</button></span>
+    </div>
+  </div>
+</header>
+<nav class="tabs" aria-label="Desk"><div class="wrap" id="tabs"></div></nav>
+<main><div class="wrap">
+
+<section class="view" id="v-cover"></section>
+<section class="view" id="v-threads"></section>
+<section class="view" id="v-thread"></section>
+<section class="view" id="v-court"></section>
+<section class="view" id="v-verses"></section>
+<section class="view" id="v-awaiting"></section>
+<section class="view" id="v-checklist"></section>
+<section class="view" id="v-margin"></section>
+
+</div></main>
+
+<script>
+const D = __DATA__;
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const num = n => typeof n === 'number' ? (Math.abs(n) >= 1000 ? Math.round(n).toLocaleString('en-GB') : (Number.isInteger(n) ? n : n.toFixed(1))) : n;
+const yr = d => +d.slice(0,4);
+const pl = (n, one, many) => `${n} ${n===1 ? one : (many || one + 's')}`;
+const TBY = Object.fromEntries(D.threads.map(t => [t.id, t]));
+const KIND = {promise:'promise', question:'question', omen:'omen', grudge:'grudge', motif:'motif', venture:'venture', object:'object', debt:'debt'};
+const ROLE = {open:'Begun', knot:'Knotted', tie:'Tied', echo:'Echoed'};
+const Y0 = 1337, Y1 = yr(D.frontier.date);
+let who = 'trent';
+try { who = localStorage.getItem('desk.who') || 'trent'; } catch(e) {}
+
+function knotSVG(tied, color='var(--rubric)'){
+  return `<svg class="knot" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 12 C5 12 6 4 9 4 C12 4 12.5 9 9.5 9.5 C7 10 6.5 6 9 5.5" fill="none" stroke="${color}" stroke-width="1.6" stroke-linecap="round"/>${tied?`<path d="M9.5 9.5 C11 10 12 12 14 12" fill="none" stroke="${color}" stroke-width="1.6" stroke-linecap="round"/><circle cx="9.3" cy="7.3" r="2.1" fill="${color}"/>`:`<path d="M9.5 9.5 C11 10.5 12.5 13.5 14.5 14" fill="none" stroke="${color}" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="1.6 2"/>`}</svg>`;
+}
+const pos = y => ((y - Y0) / (Y1 - Y0) * 100).toFixed(2) + '%';
+
+/* ---------- masthead & tabs ---------- */
+const F = D.frontier;
+$('#frontier').innerHTML = `The book stands at <b>${esc(F.hijri)}</b> · ${esc(F.west)} · ${F.entries} entries, ${num(F.words)} words · last save ${esc(F.lastSave)}`;
+const openN = D.threads.filter(t => t.status === 'open').length;
+const TABS = [
+  ['cover','Since you were last here'], ['threads','Threads', openN + ' open'], ['court','The court', D.court.filter(c=>c.group!=='unburied').length],
+  ['verses','Verses', D.verses.length], ['awaiting','Awaiting the save'], ['checklist','Before the next session'], ['margin','In the margin']
+];
+$('#tabs').innerHTML = TABS.map(([id,l,n]) => `<a href="#${id}" data-tab="${id}">${l}${n!==undefined?`<span class="n">${n}</span>`:''}</a>`).join('');
+
+/* ---------- cover ---------- */
+function renderCover(){
+  const S = D.session;
+  const vit = S.vital.map(v => {
+    const d = v.to - v.from; const cls = d > 0 ? 'up' : d < 0 ? 'down' : '';
+    const good = v.label.startsWith('Land') ? '' : cls;
+    return `<tr><td>${esc(v.label)}</td><td class="n">${num(v.from)} → <b>${num(v.to)}</b></td><td class="n ${good}" style="width:70px">${d>0?'+':''}${num(Math.round(d*10)/10)}</td></tr>`;
+  }).join('');
+  const est = S.estates.map(e => `<div class="est"><span>${esc(e.name)}</span><span class="bar"><i style="width:${e.from}%"></i><b style="width:${e.to}%"></b></span><span class="mono small">${e.from} → <b>${e.to}</b></span></div>`).join('');
+  const tl = (ids, label, tied) => ids.length ? `<div style="margin:6px 0"><span class="note">${label}</span><div class="chiprow" style="margin-top:4px">${ids.map(id => `<a class="tlink" href="#thread/${id}"><span class="pill ${tied?'ok':'red'}">${knotSVG(tied)} ${esc(TBY[id].title)}</span></a>`).join('')}</div></div>` : '';
+  $('#v-cover').innerHTML = `
+  <div class="cover-head">
+    <div>
+      <div class="kicker">Fascicle · ${S.number ?? 'No. —'} · reconstructed</div>
+      <h2>${esc(S.label)}</h2>
+      <div class="span">after ${esc(S.fromHijri)} (${esc(S.fromWest)}) to ${esc(S.toHijri)} (${esc(S.toWest)})</div>
+    </div>
+    <div class="note" style="max-width:340px">There is no session log in the folder. This boundary is inferred: everything written after the save of ${esc(S.prevCheckpoint.west)}. With <code>sessions.json</code> the number and the exact entries would be recorded, not guessed.</div>
+  </div>
+  <div class="grid g2">
+    <div>
+      <div class="kicker" style="margin-bottom:6px">What has passed</div>
+      <p class="recap">${esc(S.recap)}</p>
+      <p class="note">Drafted in the chronicle's voice by the collaborator at the end of each session (here, by the designer), and approved by Trent with the other session records.</p>
+      <div class="hr"></div>
+      <h3>In this number</h3>
+      <ol class="contents">${S.entries.map(e => `<li><span class="t">${esc(e.title)}</span><span class="d">${esc(e.hijri)} · ${esc(e.west)} · <i>${esc(e.book)}</i></span><span class="w">${e.words} words</span></li>`).join('')}</ol>
+      <p class="note">${S.entries.length} entries, ${num(S.words)} words. Open them from the book's own table of contents. The Desk doesn't order the book.</p>
+      <div class="hr"></div>
+      <h3>Threads this session</h3>
+      ${tl(S.threads.opened,'Begun',false)}${tl(S.threads.advanced,'Knotted again',false)}${tl(S.threads.tied,'Tied off',true)}
+    </div>
+    <div class="grid" style="align-content:start">
+      <div class="card">
+        <h3>What changed</h3>
+        <div class="note" style="margin-bottom:6px">Between the saves of ${esc(S.prevCheckpoint.west)} (“${esc(S.prevCheckpoint.name)}”) and ${esc(S.checkpoints[0].west)} (“${esc(S.checkpoints[0].name)}”).</div>
+        <table class="vit">${vit}</table>
+        <div style="margin-top:12px" class="note">The estates' content (grey = before, gold = now)</div>
+        ${est}
+        <div style="margin-top:10px" class="chiprow">${S.privAdd.map(p=>`<span class="pill ok">+ ${esc(p)}</span>`).join('')}${S.privDel.map(p=>`<span class="pill red">− ${esc(p)}</span>`).join('')}</div>
+      </div>
+      <div class="card">
+        <h3>New to the court</h3>
+        ${S.newPeople.length ? S.newPeople.map(p=>`<div>${esc(p.name)}</div>`).join('') : `<p class="small" style="margin:0">No new names in these entries. <a href="#court">Nine children of the house</a>, born 1430–34, are counted in the record but have no person entries yet.</p>`}
+        <h3 style="margin-top:14px">Gone from it</h3>
+        ${S.gone.length ? S.gone.map(p=>`<div>${esc(p.name)}</div>`).join('') : `<p class="small" style="margin:0">No deaths in this span. The last was ${esc(S.lastLoss.name)}, ${esc(S.lastLoss.died)}, ${esc(S.lastLoss.where)}.</p>`}
+      </div>
+      <div class="card">
+        <h3>From the copyist</h3>
+        <p class="small" style="margin:0 0 8px">Of the session's <b>${S.provenance.events}</b> recorded facts, <b>${S.provenance.save}</b> rest on a save and <b>${S.provenance.account}</b> on Trent's account and screenshots. <a href="#awaiting">Three come after the last save</a>.</p>
+        <p class="note" style="margin:0">Trent's out-of-character note, which lists what in these entries is invented colour, would print here. It isn't in the brief's folder.</p>
+      </div>
+    </div>
+  </div>`;
+}
+
+/* ---------- threads ---------- */
+let tFilter = 'open', tKind = 'all';
+function strip(t){
+  const ks = t.knots, a = yr(ks[0].date), b = yr(ks[ks.length-1].date);
+  const end = t.status === 'open' ? Y1 : b;
+  return `<div class="strip" aria-hidden="true"><div class="ln"></div>
+    <div class="seg2" style="left:${pos(a)};width:calc(${pos(end)} - ${pos(a)})"></div>
+    ${ks.map(k=>`<span class="dot ${k.role}" style="left:${pos(yr(k.date))}" title="${esc(k.title)}"></span>`).join('')}
+    <span class="yr" style="left:${pos(a)}">${a}</span>${b-a>=12?`<span class="yr" style="left:${pos(b)}">${b}</span>`:''}
+    <span class="now" title="the frontier"></span></div>`;
+}
+function renderThreads(){
+  const kinds = ['all', ...new Set(D.threads.map(t=>t.kind))];
+  let list = D.threads.filter(t => (tFilter==='all' || t.status===tFilter) && (tKind==='all' || t.kind===tKind));
+  list.sort((x,y) => x.status===y.status ? x.opened.localeCompare(y.opened) : (x.status==='open'?-1:1));
+  const friendHidesTied = who==='friend' && tFilter!=='open';
+  const tiedN = D.threads.length - openN;
+  $('#v-threads').innerHTML = `
+    <div class="kicker">The Desk</div>
+    <h2>Threads</h2>
+    <p class="sub" style="max-width:720px">Promises, questions and warnings the chronicle has made to itself. A thread begins where the prose points forward, gets knotted again each time an entry comes back to it, and is tied where it is paid off. <b>${openN}</b> are open at the frontier and <b>${tiedN}</b> are tied. The ${D.threads.length} here were read from the entries by hand for the mockup. Every quote is checked against the text.</p>
+    <div class="friend-only card" style="margin-top:12px;border-color:var(--gold)"><b>A note for friends:</b> the Desk stands at the open end of the book, in ${esc(F.west.slice(-4))}. Open threads are what is unresolved there, and they give away who is alive and in power at the end. Tied threads tell you how earlier questions came out. Read the book first if you'd rather not know.</div>
+    <div class="tfilters">
+      <span class="seg" id="tf">${['open','tied','all'].map(f=>`<button data-f="${f}" aria-pressed="${f===tFilter}">${f}</button>`).join('')}</span>
+      <span class="chiprow" id="tk">${kinds.map(k=>`<button class="pill ${k===tKind?'red':''}" data-k="${k}" style="cursor:pointer">${k}</button>`).join('')}</span>
+    </div>
+    ${friendHidesTied ? `<div class="veil" style="margin-left:0">Tied threads tell you how things turn out. <a href="#" id="showTied">Show them anyway</a></div>` : ''}
+    <div id="tlist">${(friendHidesTied ? list.filter(t=>t.status==='open') : list).map(t => `
+      <div class="thread">
+        <div>${knotSVG(t.status==='tied')}</div>
+        <div class="ti" data-open="${t.id}">${esc(t.title)}</div>
+        <div class="meta">
+          <span class="pill ${t.status==='open'?'red':'ok'}">${t.status}</span><span class="pill">${t.kind}</span>
+          <span>begun ${yr(t.opened)}, in <i>${esc(t.knots[0].title)}</i></span>
+          ${t.status==='open' ? `<span>${t.knots.length} knot${t.knots.length>1?'s':''} · ${t.yearsSince ? `quiet for ${pl(t.yearsSince,'year')}, ${pl(t.entriesSince,'entry','entries')}` : 'touched in the latest session'}</span>` : `<span>tied ${yr(t.lastTouched)}, after ${t.span} yrs and ${t.knots.length} knots</span>`}
+          ${t.due ? `<span class="pill gold">due ${esc(t.due)}</span>`:''}
+        </div>
+        <div class="gist">${esc(t.gist)}</div>
+        ${strip(t)}
+      </div>`).join('')}</div>`;
+  $('#tf').onclick = e => { const f = e.target.dataset.f; if (f){ tFilter=f; renderThreads(); } };
+  $('#tk').onclick = e => { const k = e.target.dataset.k; if (k){ tKind=k; renderThreads(); } };
+  const st = $('#showTied'); if (st) st.onclick = e => { e.preventDefault(); who='trent'; setWho(); };
+  document.querySelectorAll('#tlist [data-open]').forEach(el => el.onclick = () => location.hash = 'thread/' + el.dataset.open);
+}
+
+function renderThread(id, upto){
+  const t = TBY[id]; if (!t) return;
+  const limit = (who==='friend' && upto!==undefined) ? upto : t.knots.length-1;
+  let html = `<div class="follow">
+    <a class="back" href="#threads">← all threads</a>
+    <div class="kicker" style="margin-top:14px">Following a thread · ${t.kind}</div>
+    <h2>${knotSVG(t.status==='tied')} ${esc(t.title)}</h2>
+    <p class="sub serif" style="font-size:17px">${esc(who==='friend' && limit < t.knots.length-1 ? t.frontier : t.gist)}</p>
+    <div class="chiprow" style="margin:6px 0 22px">${limit < t.knots.length-1 ? `<span class="pill">as far as you have read: knot ${limit+1}</span>` : `<span class="pill ${t.status==='open'?'red':'ok'}">${t.status}</span>${t.due?`<span class="pill gold">due ${esc(t.due)}</span>`:''}<span class="pill">${pl(t.knots.length,'knot')} across ${pl(t.span,'year')}</span>`}</div>`;
+  t.knots.forEach((k,i) => {
+    if (i > limit) return;
+    if (i > 0){
+      const prev = t.knots[i-1]; const gy = yr(k.date)-yr(prev.date);
+      const between = prev.file===k.file ? 'later in the same entry' : gy ? `${pl(gy,'year')} later` : 'later the same year';
+      html += `<div class="gap">${between}</div>`;
+    }
+    html += `<div class="kn"><span class="g">${knotSVG(k.role==='tie')}</span>
+      <div class="role">${ROLE[k.role]}</div>
+      <div class="et">${esc(k.title)}</div>
+      <div class="dd">${esc(k.hijri)} · ${esc(k.west)} · <i>${esc(k.book)}</i></div>
+      <blockquote>${k.para}</blockquote></div>`;
+  });
+  if (limit < t.knots.length-1){
+    html += `<div class="veil">This thread goes on for ${t.knots.length-1-limit} more knot${t.knots.length-1-limit>1?'s':''}. You'll meet ${t.knots.length-1-limit>1?'them':'it'} as you read on. <a href="#" id="unveil">Show the rest</a></div>`;
+  } else if (t.status==='open'){
+    html += `<div class="gap">open at the frontier, ${esc(F.west)}</div><div class="veil" style="border-color:var(--rubric)">${knotSVG(false)} Still to be paid. ${t.due ? 'Falls due ' + esc(t.due) + '. ' : ''}Last touched ${pl(t.yearsSince,'year')} and ${pl(t.entriesSince,'entry','entries')} ago.</div>`;
+  }
+  html += `</div>`;
+  $('#v-thread').innerHTML = html;
+  const u = $('#unveil'); if (u) u.onclick = e => { e.preventDefault(); renderThread(id); };
+}
+
+/* ---------- court ---------- */
+let cSort = 'house';
+function renderCourt(){
+  const groups = [['house','The house of Naṣr','Living members with a person record.'],['court','The court and the ṭāʾifas','Consorts, ṭāʾifa lords, governors and captains.'],['abroad','Abroad','Crowns and exiles the chronicle follows. Their deaths are often not recorded, so read these as “last heard of”.']];
+  const maxS = Math.max(...D.court.map(c=>c.yearsSince||0));
+  const card = c => {
+    const stale = c.office.some(o=>/member of the dīwān/.test(o)) && !D.cabinet.includes(c.id);
+    return `<div class="pc">
+    <div class="nm">${esc(c.name)}</div>${c.arabic?`<div class="ar" dir="rtl">${esc(c.arabic)}</div>`:''}
+    <div class="age">${c.age!=null ? `${c.age} years old` : 'age not recorded'}${c.born?` · b. ${c.born.slice(0,4)}`:''}</div>
+    ${c.office.length?`<div class="off">${c.office.map(esc).join(' · ')}</div>`:''}
+    ${stale?`<div><span class="pill warn">not in the dīwān of the ${esc(D.cabinetDate)} save</span></div>`:''}
+    <div class="silence">${c.last ? `Last in <i>${esc(c.last.title)}</i> (${yr(c.last.date)})${c.yearsSince?` · unmentioned for <b>${c.yearsSince}</b> yrs, ${c.entriesSince} entries`:' · in the latest entry'}` : 'Never named in the chronicle'}
+      <div class="sil"><i style="width:${c.yearsSince? (c.yearsSince/maxS*100).toFixed(0):0}%"></i></div></div>
+  </div>`;};
+  const sorter = cSort==='silence' ? (a,b)=>(b.yearsSince??-1)-(a.yearsSince??-1) : cSort==='age' ? (a,b)=>(b.age??0)-(a.age??0) : (a,b)=>(b.mentions-a.mentions);
+  let body;
+  if (cSort==='house'){
+    body = groups.map(([g,l,n]) => { const xs = D.court.filter(c=>c.group===g).sort(sorter);
+      return `<div class="cgroup"><h3>${l} <span class="note">${xs.length}</span></h3><p class="note" style="margin:-4px 0 10px">${n}</p><div class="cards">${xs.map(card).join('')}</div></div>`; }).join('');
+  } else {
+    const xs = D.court.filter(c=>c.group!=='unburied').sort(sorter);
+    body = `<div class="cards" style="margin-top:16px">${xs.map(card).join('')}</div>`;
+  }
+  const un = D.unrolled.map(u=>`<div class="pc"><div class="nm">${esc(u.name)}</div><div class="age">${u.age} years old · b. ${u.born.slice(0,4)}</div><div class="off">${esc(u.title)}</div><div class="silence">From the record's birth events. No person record yet. ${u.age>=12?`<b>Turns sixteen in ${yr(u.born)+16}.</b>`:''}</div></div>`).join('');
+  const bur = D.court.filter(c=>c.group==='unburied').sort((a,b)=>(b.age??0)-(a.age??0)).map(card).join('');
+  const dic = D.deadInCabinet.map(x=>`<div class="pc flag"><div class="nm">${esc(x.name)}</div><div class="off">Died ${esc(x.died)} (told in <i>Of the Emperor's Pilgrimage</i>), but the saves of 1438 and ${esc(D.cabinetDate)} still seat him in the dīwān: “${esc(x.role)}”.</div><div class="silence">Probably the extractor matched the wrong Yūsuf. Check the game id.</div></div>`).join('');
+  $('#v-court').innerHTML = `
+    <div class="kicker">The Desk</div>
+    <h2>The court as it stands</h2>
+    <p class="sub" style="max-width:720px">Everyone with a person record and no recorded death, with ages at the frontier (${esc(F.west)}), their offices, and how long the chronicle has gone without naming them. Offices come from the person records and the cabinet of the ${esc(D.cabinetDate)} save.</p>
+    <div class="tfilters"><span class="note">Arrange</span><span class="seg" id="cs">${[['house','by house'],['silence','by silence'],['age','by age']].map(([k,l])=>`<button data-s="${k}" aria-pressed="${k===cSort}">${l}</button>`).join('')}</span></div>
+    ${body}
+    <div class="cgroup trent-only"><h3>Not yet on the roll <span class="note">${D.unrolled.length}</span></h3><p class="note" style="margin:-4px 0 10px">Children of the house born 1430–34. <i>Of the Emperor's Pilgrimage</i> counts them as “nine grandchildren” and names two. None has a person record. The eldest come of age in 1446.</p><div class="cards">${un}</div></div>
+    <div class="cgroup trent-only"><h3>Never buried <span class="note">${D.court.filter(c=>c.group==='unburied').length}</span></h3><p class="note" style="margin:-4px 0 10px">No death is recorded, and they would be past eighty-five or have been out of the record for half a century. Decide whether each died offstage, or give them a line.</p><div class="cards">${bur}</div></div>
+    <div class="cgroup trent-only"><h3>A dead man in the dīwān</h3><div class="cards">${dic}</div></div>`;
+  $('#cs').onclick = e => { const s=e.target.dataset.s; if(s){ cSort=s; renderCourt(); } };
+}
+
+/* ---------- verses ---------- */
+const dupFiles = new Set(D.repeats.flatMap(r=>[r.a,r.b]));
+function refSort(a,b){ return a.sura-b.sura || a.ayat[0]-b.ayat[0] || a.date.localeCompare(b.date); }
+function stem(w){ return w.toLowerCase().replace(/[^a-zāīūḥṣḍṭẓʿʾ]/g,'').replace(/(ing|ed|es|s)$/,''); }
+const STOP = new Set('and the of to a in is that you your for it he his him them they we our us who which not be by as with from those have has are was will indeed allah lord say all their its upon this then so but if or what when whom there when'.split(' '));
+function words(s){ return new Set(s.split(/\s+/).map(stem).filter(w=>w.length>2 && !STOP.has(w))); }
+function checkVerse(q){
+  q = q.trim(); if (!q) return '';
+  const m = q.match(/^(\d+)\s*:\s*(\d+)(?:\s*-\s*(\d+))?$/);
+  let hits;
+  if (m){ const s=+m[1], a0=+m[2], a1=+(m[3]||m[2]); hits = D.verses.filter(v=>v.sura===s && v.ayat.some(x=>x>=a0&&x<=a1)).map(v=>[v,1]); }
+  else { const W = words(q); hits = D.verses.map(v=>{ const V=words(v.text); let c=0; W.forEach(w=>{ if(V.has(w)) c++; }); return [v, W.size? c/Math.min(W.size,V.size):0, c]; }).filter(x=>x[2]>=2 && x[1]>=.4).sort((a,b)=>b[1]-a[1]).slice(0,5); }
+  if (!hits.length) return `<span class="pill ok">Not found among the ${D.verses.length} verses used</span> <span class="note">Matching is by reference or by shared words, so a different translation can slip through. Record the sura:āya.</span>`;
+  return `<span class="pill red">${m ? 'Already used' : 'Close to verses already used'}</span>` + hits.map(([v])=>`<div style="margin-top:8px"><b>${v.ref}</b> <span class="serif" style="font-style:italic">${esc(v.text)}</span><div class="note">${v.pos} <i>${esc(v.title)}</i>, ${yr(v.date)}</div></div>`).join('');
+}
+function renderVerses(){
+  const themes = {}; D.verses.forEach(v=>themes[v.theme]=(themes[v.theme]||0)+1);
+  const rows = [...D.verses].sort(refSort).map(v=>`<tr class="${dupFiles.has(v.file)?'dup':''}"><td class="r">${v.ref}</td><td class="hide-s note">${esc(v.suraName)}</td><td class="v">${esc(v.text)}${v.pos==='opens'?' <span class="pill warn" style="font-style:normal">opens the entry</span>':''}</td><td class="small">${esc(v.title)}<div class="note">${yr(v.date)} · ${esc(v.theme)}</div></td></tr>`).join('');
+  $('#v-verses').innerHTML = `
+    <div class="kicker">The Desk</div>
+    <h2>The verse concordance</h2>
+    <p class="sub" style="max-width:740px">Every entry is meant to close with a verse of the Qurʾān, never repeated. Here are all ${D.verses.length} in sura order. The concordance found that the rule has already been broken: <b>${D.repeats.length} āyāt are used twice</b>, mostly in different English wordings, which is why a check by wording alone misses them. <span class="note">The sura:āya references were added by the designer for this mockup and need checking before they are adopted. The material doesn't record them.</span></p>
+    <div class="card" style="margin:16px 0">
+      <h3>Check a verse before you use it</h3>
+      <div class="vcheck"><input id="vq" placeholder="Paste the verse, or type a reference like 3:26" autocomplete="off"></div>
+      <div class="vres" id="vres"><span class="note">Try “Owner of sovereignty”, “ships like mountains” or 2:216.</span></div>
+    </div>
+    <h3 style="margin-top:22px">Used twice</h3>
+    ${D.repeats.map(r=>`<div class="rep"><div class="ref">${r.ref}<div class="note" style="font-weight:400">${r.kind}</div></div><div class="v">${esc(r.aText)}<span class="src">${esc(r.aTitle)}, ${yr(r.aDate)}</span></div><div class="v">${esc(r.bText)}<span class="src">${esc(r.bTitle)}, ${yr(r.bDate)}</span></div></div>`).join('')}
+    <div class="grid g2" style="margin-top:22px">
+      <div class="card"><h3>Entries without a closing verse</h3><ul class="small" style="margin:0;padding-left:18px">${D.noVerse.map(e=>`<li><i>${esc(e.title)}</i>, ${yr(e.date)}</li>`).join('')}<li><i>Of the Summons of the Marīnids</i>, 1346, opens with its verse (55:7–8) instead of closing with one</li></ul></div>
+      <div class="card"><h3>Quoted in the body</h3><ul class="small" style="margin:0;padding-left:18px">${D.inBody.map(x=>`<li><b>${esc(x.ref)}</b> <span class="serif" style="font-style:italic">${esc(x.text)}</span>. ${esc(x.note)}</li>`).join('')}</ul><p class="note" style="margin:8px 0 0">Found by hand, not exhaustive. Recording verses that appear in the body would let the check cover these too.</p></div>
+    </div>
+    <h3 style="margin-top:22px">By theme</h3>
+    <div class="themes">${Object.entries(themes).sort((a,b)=>b[1]-a[1]).map(([k,n])=>`<span class="pill gold">${esc(k)} · ${n}</span>`).join('')}</div>
+    <p class="note">Rough themes, assigned by keyword. They show what the closings lean on (war, the sea) before the next one is chosen.</p>
+    <h3 style="margin-top:22px">Concordance</h3>
+    <table class="conc"><thead><tr><th>Ref.</th><th class="hide-s">Sura</th><th>Verse</th><th>Entry</th></tr></thead><tbody>${rows}</tbody></table>`;
+  const q = $('#vq'); q.oninput = () => $('#vres').innerHTML = checkVerse(q.value) || '<span class="note">Paste a verse or a reference.</span>';
+}
+
+/* ---------- awaiting ---------- */
+function renderAwaiting(){
+  const stale = D.court.filter(c=>c.office.some(o=>/member of the dīwān/.test(o)) && !D.cabinet.includes(c.id));
+  $('#v-awaiting').innerHTML = `
+    <div class="kicker">The Desk</div>
+    <h2>Awaiting the save</h2>
+    <p class="sub" style="max-width:720px">Facts the book already tells but no save yet confirms, then the continuity flags the build found in the record. The first list is for the next session's opening minutes, the second for Trent and his collaborator to decide.</p>
+    <h3 style="margin-top:18px">Told since the last save (${esc(F.lastSave)})</h3>
+    ${D.awaiting.map(a=>`<div class="ck"><input type="checkbox" aria-label="confirmed"><div><div class="h">${esc(a.what)}</div><div class="note">${esc(a.west)} · source: ${esc(a.source)}</div><div class="small" style="margin-top:4px">Next save should show: ${esc(a.check)}</div></div></div>`).join('')}
+    <h3 style="margin-top:22px">Never settled</h3>
+    ${D.older.map(a=>`<div class="ck"><input type="checkbox" aria-label="settled"><div><div class="h">${esc(a.what)}${a.date?` <span class="note">${a.date}</span>`:''}</div><div class="small">${esc(a.flag)}</div></div></div>`).join('')}
+    <h3 style="margin-top:22px">Continuity flags</h3>
+    <ul class="flaglist">
+      <li><b>${D.deadInCabinet.map(x=>esc(x.name)).join(', ')}</b> sits in the dīwān in the saves of 1438 and ${esc(D.cabinetDate)}, though he died in 1435. <a href="#court">The court</a></li>
+      <li><b>${D.repeats.length} verses repeated</b> and ${D.noVerse.length} entries without a closing verse. <a href="#verses">Verses</a></li>
+      <li><b>${D.court.filter(c=>c.group==='unburied').length} people never buried</b>: Najīb would be 126. <a href="#court">The court</a></li>
+      <li><b>${D.unrolled.length} children of the house</b> with no person records, the eldest turning sixteen in 1446.</li>
+      <li><b>${stale.length} people</b> whose person record says “member of the dīwān” but who are not in the ${esc(D.cabinetDate)} cabinet: ${stale.map(s=>esc(s.name)).join(', ')}.</li>
+    </ul>`;
+}
+
+/* ---------- checklist ---------- */
+function renderChecklist(){
+  const open = D.threads.filter(t=>t.status==='open');
+  const quiet = [...open].sort((a,b)=>b.yearsSince-a.yearsSince).slice(0,5);
+  const due = open.filter(t=>t.due);
+  const house = D.court.filter(c=>c.group==='house' && c.yearsSince).sort((a,b)=>b.yearsSince-a.yearsSince).slice(0,5);
+  const coming = D.unrolled.filter(u=>u.age>=12).concat([]);
+  const ruler = D.court.find(c=>c.id==='muhammad-ibn-ismail-ibn-saad');
+  const last = D.session.entries[D.session.entries.length-1];
+  let saved = {}; try { saved = JSON.parse(localStorage.getItem('desk.ck')||'{}'); } catch(e) {}
+  const item = (id, head, body) => `<div class="ck"><input type="checkbox" data-ck="${id}" ${saved[id]?'checked':''}><div><div class="h">${head}</div>${body}</div></div>`;
+  $('#v-checklist').innerHTML = `
+    <div class="kicker">For the writers</div>
+    <h2>Before the next session</h2>
+    <p class="sub" style="max-width:720px">Built from the Desk. Trent and the collaborator run through it before playing on, so the next entries pick up every open string. Ticks are kept in this browser only.</p>
+    <div class="grid g2" style="margin-top:12px">
+    <div>
+    ${item('recap','Pick up where the book stopped', `<ul><li>The last entry is <i>${esc(last.title)}</i> (${esc(last.hijri)}).</li><li>Read “What has passed” on the <a href="#cover">cover</a>.</li></ul>`)}
+    ${item('due','Promises that fall due', `<ul>${due.map(t=>`<li><a href="#thread/${t.id}">${esc(t.title)}</a>: due ${esc(t.due)}. The Emperor is ${ruler.age}.</li>`).join('')}</ul>`)}
+    ${item('quiet','Threads gone quiet', `<ul>${quiet.map(t=>`<li><a href="#thread/${t.id}">${esc(t.title)}</a>: untouched for ${t.yearsSince} years, since <i>${esc(t.knots[t.knots.length-1].title)}</i></li>`).join('')}</ul>`)}
+    ${item('people','Members of the house the book has forgotten', `<ul>${house.map(c=>`<li>${esc(c.name)}, ${c.age}: unmentioned for ${c.yearsSince} years${c.office[0]?` (${esc(c.office[0])})`:''}</li>`).join('')}</ul>`)}
+    ${item('age','Coming of age', `<ul>${coming.map(u=>{ const m=u.title.match(/^A (son|daughter), [^,]+, is born to (.+)$/); return `<li>${esc(u.name)}, ${m?esc(m[1]+' of '+m[2]):''}, turns sixteen in ${yr(u.born)+16}.</li>`; }).join('')}<li>Give each a person record before they act in an entry.</li></ul>`)}
+    </div><div>
+    ${item('verses','Choosing the closing verse', `<ul><li>${D.verses.length} used. <a href="#verses">Check the next one</a> by reference, not by wording.</li><li>The sea has closed ${D.verses.filter(v=>v.theme==='the sea').length} entries, war and victory ${D.verses.filter(v=>v.theme==='war and victory').length}.</li></ul>`)}
+    ${item('save','From the save, first thing', `<ul>${D.awaiting.map(a=>`<li>${esc(a.check)}</li>`).join('')}<li>Is ${esc(D.deadInCabinet[0]?.name||'')} still listed in the cabinet?</li></ul>`)}
+    ${item('after','After the session: the thread pass', `<ul><li>The collaborator reads the new entries against the open threads and proposes changes: <i>knot</i>, <i>tie</i>, <i>new thread</i>, or <i>let go</i>, each with the sentence that anchors it.</li><li>Trent accepts or rejects each line. That's the whole chore.</li><li>Then the session record: span, recap, copyist's note.</li></ul>`)}
+    </div></div>`;
+  document.querySelectorAll('[data-ck]').forEach(c => c.onchange = () => { saved[c.dataset.ck]=c.checked; try{ localStorage.setItem('desk.ck', JSON.stringify(saved)); }catch(e){} });
+}
+
+/* ---------- margin demo ---------- */
+function renderMargin(){
+  const dm = D.demo;
+  const paras = dm.paras.map((p,i) => {
+    const last = i === dm.paras.length-1;
+    const mg = p.knots.map(k => { const t = TBY[k.thread]; const n = t.knots.length;
+      const back = k.i>0 ? `<div class="mr">knot ${k.i+1} of ${who==='friend'?'?':n} · first in ${yr(t.knots[0].date)}</div>` : `<div class="mr">${ROLE[k.role].toLowerCase()} here${who==='friend'?'':` · ${n} knot${n>1?'s':''}, ${t.status}`}</div>`;
+      return `<div class="mk">${knotSVG(t.status==='tied' && who!=='friend')}<div><div class="mt">${esc(t.title)}</div>${back}<a data-follow="${t.id}" data-i="${k.i}">follow this thread</a></div></div>`; }).join('');
+    return `<p class="${last?'verse':''}">${p.html}</p>${mg?`<aside class="mg">${mg}</aside>`:''}`;
+  }).join('');
+  $('#v-margin').innerHTML = `
+    <p class="sub" style="max-width:720px;margin-top:0">One real entry, as the reader meets it. The Desk owns just one mark in the margin: the <b>knot</b>, where a thread begins or comes back. Glosses and everything else in the margin belong to other designs. In “a friend” mode a knot points only backward: it says where the thread began, and following it shows the knots up to this one.</p>
+    <article class="page">
+      <div class="ttl"><div class="kicker">${esc(dm.book)}</div><h2>${esc(dm.title)}</h2><div class="sub">${esc(dm.hijri)} · ${esc(dm.west)}</div></div>
+      ${paras}
+    </article>`;
+  document.querySelectorAll('[data-follow]').forEach(a => a.onclick = () => { location.hash = `thread/${a.dataset.follow}/${a.dataset.i}`; });
+}
+
+/* ---------- routing ---------- */
+function setWho(){
+  document.body.classList.toggle('friend', who==='friend');
+  document.querySelectorAll('#who button').forEach(b=>b.setAttribute('aria-pressed', b.dataset.who===who));
+  try { localStorage.setItem('desk.who', who); } catch(e) {}
+  route();
+}
+$('#who').onclick = e => { if (e.target.dataset.who){ who = e.target.dataset.who; setWho(); } };
+function route(){
+  const h = (location.hash||'#cover').slice(1).split('/');
+  let v = h[0] || 'cover';
+  if (!['cover','threads','thread','court','verses','awaiting','checklist','margin'].includes(v)) v = 'cover';
+  document.querySelectorAll('section.view').forEach(s=>s.classList.toggle('on', s.id==='v-'+v));
+  document.querySelectorAll('#tabs a').forEach(a=>a.classList.toggle('on', a.dataset.tab===(v==='thread'?'threads':v)));
+  ({cover:renderCover, threads:renderThreads, court:renderCourt, verses:renderVerses, awaiting:renderAwaiting, checklist:renderChecklist, margin:renderMargin})[v]?.();
+  if (v==='thread') renderThread(h[1], h[2]!==undefined ? +h[2] : undefined);
+  if (v==='thread') window.scrollTo(0,0);
+}
+window.addEventListener('hashchange', route);
+setWho();
+</script>
+</body>
+</html>

@@ -1,0 +1,821 @@
+== 0738-01-02-the-marinid-war-upon-castile.md
+   ¶2.1 by date           1337-04-03-death-fatima | month: “Ramaḍān” read as Ramaḍān 737 AH (3 Apr 1337 – 2 May 1337); checked by names fatima-bint-al-ahmar and 3 words of the record in the sentence
+   ¶3.3 by date           1337-04-22-joins-tlemcen-war | date: “the twentieth of Ramaḍān” read as 20 Ramaḍān 737 AH = 22 Apr 1337; checked by names fate-of-tlemcen
+   DRAWN ON               1337-04-25-peace-tlemcen | no written date fits and no sentence clearly matches
+   DRAWN ON               1337-05-01-strait-begins | no written date fits and no sentence clearly matches
+   DRAWN ON               1337-05-01-parias | no written date fits and no sentence clearly matches
+   ¶4.3 by wording        1337-05-03-tunis-marriage | wording: 4 words shared with the record (hafsid, marriage, royal, tuni), next best sentence 0
+   ¶5.3 by wording        1337-07-09-promote-sovereignty | wording: 4 words shared with the record (granadan, muhammad, sovereignty, yusuf), next best sentence 1
+   ¶6.1 by date           1337-07-31-morocco-war-on-castile | date: “the second day of Muḥarram in the year 738” read as 2 Muḥarram 738 AH = 31 Jul 1337; checked by names moroccan-castilian-war and 2 words of the record in the sentence
+== 0739-11-14-the-road-through-mursiyya.md
+   DRAWN ON               1338-11-01-battle-ishbiliyya | no written date fits and no sentence clearly matches
+   DRAWN ON               1338-11-09-tunis-joins | no written date fits and no sentence clearly matches
+   ¶1.6 by date           1339-02-03-alliance-tunis | date: “the twenty-second of Rajab” read as 22 Rajab 739 AH = 3 Feb 1339; checked by 2 words of the record in the sentence
+   DRAWN ON               1339-02-28-battle-shaluqa | no written date fits and no sentence clearly matches
+   DRAWN ON               1339-03-10-battle-ishbiliyya | no written date fits and no sentence clearly matches
+   DRAWN ON               1339-03-25-battle-qarmuna | no written date fits and no sentence clearly matches
+   DRAWN ON               1339-04-06-battle-shaluqa | no written date fits and no sentence clearly matches
+   ¶3.2 by date           1339-05-14-death-gideon | date: “the fourth of Dhū al-Qaʿda” read as 4 Dhū al-Qaʿda 739 AH = 14 May 1339; checked by names gideon-ben-joshua and 3 words of the record in the sentence
+   ¶4.1 by date           1339-05-24-cb-aragon | date: “the fourteenth of Dhū al-Qaʿda in the year 739” read as 14 Dhū al-Qaʿda 739 AH = 24 May 1339; checked by names war-on-aragon
+   ¶4.1 by date           1339-05-24-murcia-held | date: “the fourteenth of Dhū al-Qaʿda in the year 739” read as 14 Dhū al-Qaʿda 739 AH = 24 May 1339; checked by names war-on-aragon
+   ¶4.1 by date           1339-05-24-war-on-aragon | date: “the fourteenth of Dhū al-Qaʿda in the year 739” read as 14 Dhū al-Qaʿda 739 AH = 24 May 1339; checked by names war-on-aragon
+   ¶4.1 by date           1339-05-24-ibn-al-khatib-commands | date: “the fourteenth of Dhū al-Qaʿda in the year 739” read as 14 Dhū al-Qaʿda 739 AH = 24 May 1339; checked by names ibn-al-khatib, war-on-aragon
+== 0740-02-26-the-ghuzat-al-mujahidin.md
+   DRAWN ON               1339-05-24-war-on-aragon | no written date fits and no sentence clearly matches
+   DRAWN ON               1339-05-24-aragon-allies | no written date fits and no sentence clearly matches
+   ¶3.2 by date           1339-06-13-battle-shaluqa | date: “the fourth of Dhū al-Ḥijja 739” read as 4 Dhū al-Ḥijja 739 AH = 13 Jun 1339; checked by names shaluqa
+   ¶3.4 by date           1339-08-12-battle-muntil | month: “Ṣafar” read as Ṣafar 740 AH (8 Aug 1339 – 5 Sep 1339); checked by names muntil and 3 words of the record in the sentence
+   ¶2.1 by date           1339-08-18-battle-jumalla | date: “the eleventh of Ṣafar in the year 740” read as 11 Ṣafar 740 AH = 18 Aug 1339; checked by names jumalla and 2 words of the record in the sentence
+   DRAWN ON               1339-08-23-battle-al-karash | no written date fits and no sentence clearly matches
+   ¶4.1 by date           1339-09-01-ghuzat | date: “the twenty-fifth of Ṣafar” read as 25 Ṣafar 740 AH = 1 Sep 1339; checked by names yahya-rahhu and 4 words of the record in the sentence
+   ¶4.1 by date           1339-09-01-yahya-general | date: “the twenty-fifth of Ṣafar” read as 25 Ṣafar 740 AH = 1 Sep 1339; checked by names yahya-rahhu
+   ¶4.6 by wording        1339-09-02-volunteers-hired | wording: 5 words shared with the record (faith, foot, horse, tornadizo, volunteer), next best sentence 2
+== 0740-05-05-the-day-of-uryula.md
+   ¶1.1 by date           1339-11-01-shadhili-order | month: “Rabīʿ al-Thānī in the year 740” read as Rabīʿ al-Thānī 740 AH (6 Oct 1339 – 3 Nov 1339); checked by 9 words of the record in the sentence
+   ¶2.2 by date           1339-11-08-battle-uryula | date: “the fifth of Jumādā al-Ūlā” read as 5 Jumādā al-Ūlā 740 AH = 8 Nov 1339; checked by names ibn-al-khatib, uryula and 3 words of the record in the sentence
+   ¶3.3 by date           1339-11-08-siege-uryula | date: “that same day”, after 5 Jumādā al-Ūlā 740, = 8 Nov 1339; checked by 2 words of the record in the sentence
+== 0741-01-05-the-second-battle-of-uryula.md
+   ¶1.2 by wording        1339-11-08-volunteers-withdraw | wording: 5 words shared with the record (back, faith, short, siege, volunteer), next best sentence 1
+   ¶1.4 by date           1340-03-09-estate-loans | date: “the ninth of Ramaḍān in the year 740” read as 9 Ramaḍān 740 AH = 9 Mar 1340; checked by 2 words of the record in the sentence
+   DRAWN ON               1340-05-26-battle-mursiyya | no written date fits and no sentence clearly matches
+   ¶2.1 by date           1340-05-30-uryula-falls | date: “the second of Dhū al-Ḥijja” read as 2 Dhū al-Ḥijja 740 AH = 30 May 1340; checked by 4 words of the record in the sentence
+   ¶2.1 by date           1340-05-30-road-cut | date: “the second of Dhū al-Ḥijja” read as 2 Dhū al-Ḥijja 740 AH = 30 May 1340; checked by names mursiyya
+   DRAWN ON               1340-05-30-nobles-discontent | no written date fits and no sentence clearly matches
+   DRAWN ON               1340-06-20-second-battle-uryula | no written date fits and no sentence clearly matches
+== 0741-02-16-the-peace-of-balansiyya.md
+   ¶1.1 by date           1340-07-27-jumalla-falls | date: “the first of Ṣafar in the year 741” read as 1 Ṣafar 741 AH = 27 Jul 1340; checked by names jumalla and 2 words of the record in the sentence
+   DRAWN ON               1340-07-27-hunger | no written date fits and no sentence clearly matches
+   DRAWN ON               1340-08-11-bluff | no written date fits and no sentence clearly matches
+   ¶3.1 by date           1340-08-11-peace-aragon | date: “the sixteenth of Ṣafar 741” read as 16 Ṣafar 741 AH = 11 Aug 1340; checked by names al-qant, al-quy, alsh, ayura, balansiyya, bunyul, daniya, liriya, qandiya, shalba, uryula
+   DRAWN ON               1340-08-11-territory | no written date fits and no sentence clearly matches
+   DRAWN ON               1340-08-14-demobilised | no written date fits and no sentence clearly matches
+== 0741-02-28-the-two-taifas.md
+   DRAWN ON               1340-08-14-cb-independence | no written date fits and no sentence clearly matches
+   ¶2.2 by date           1340-08-23-taifas | date: “the twenty-eighth of Ṣafar in the year 741” read as 28 Ṣafar 741 AH = 23 Aug 1340; checked by names balansiyya, joan-doriola, juan-manuel-enriquez, jumalla, shatiba, uryula, yusuf-i
+   ¶2.2 by date           1340-08-23-taifa-rulers | date: “the twenty-eighth of Ṣafar in the year 741” read as 28 Ṣafar 741 AH = 23 Aug 1340; checked by names balansiyya, joan-doriola, juan-manuel-enriquez, jumalla
+   ¶4.5 by wording        1340-08-23-strengthen-government | wording: 6 words shared with the record (government, muhammad, sovereignty, strengthen, turn, yusuf), next best sentence 1
+   ¶4.3 by wording        1340-08-28-loans-repaid | wording: 4 words shared with the record (debt, five, loan, repaid), next best sentence 1
+   ¶4.2 by wording        1340-08-28-demobilised | wording: 4 words shared with the record (nineteen, regiment, remain, three), next best sentence 1
+   DRAWN ON               1340-08-28-taifa-loyalty | no written date fits and no sentence clearly matches
+== 0741-05-06-the-marinids-lose-the-shore.md
+   ¶4.2 by wording        1340-10-25-portuguese-civil-war | wording: 5 words shared with the record (brother, maria, peter, queen, younger), next best sentence 2
+   ¶2.1 by date           1340-10-28-moroccan-peace | date: “the sixth of Jumādā al-Ūlā in the year 741” read as 6 Jumādā al-Ūlā 741 AH = 28 Oct 1340; checked by names al-jazira-al-khadra, jabal-tariq, marballa, runda
+   ¶5.1 by date           1340-11-22-royal-marriage-valencia | date: “the first of Jumādā al-Ākhira” read as 1 Jumādā al-Ākhira 741 AH = 22 Nov 1340; checked by names balansiyya, fatima-bint-ismail and 7 words of the record in the sentence
+== 0742-03-25-the-defection-of-ibn-al-khatib.md
+   DRAWN ON               1341-07-08-ibn-al-khatib-castile | no written date fits and no sentence clearly matches
+   ¶5.2 by wording        1341-09-08-cabinet | wording: 8 words shared with the record (diwan, government, ismail, muhammad, place, seat), next best sentence 1
+   ¶5.3 by wording        1341-09-08-loans | wording: 4 words shared with the record (debt, loan, repaid, three), next best sentence 1
+   DRAWN ON               1341-09-08-burghers | no written date fits and no sentence clearly matches
+   DRAWN ON               1341-09-08-sovereignty | no written date fits and no sentence clearly matches
+   ¶5.10 by wording       1341-09-08-valencia-conversion | wording: 4 words shared with the record (balansiyya, christian, muslim, taifa), next best sentence 1
+== 0743-12-24-the-lean-years.md
+   DRAWN ON               1342-01-01-renaissance | no written date fits and no sentence clearly matches
+   ¶5.3 by wording        1342-02-07-promote-sovereignty | wording: 6 words shared with the record (back, diwan, ismail, seat, sovereignty, turn), next best sentence 2
+   ¶3.1 by date           1342-05-02-hafsid-gift | month: “Dhū al-Qaʿda of 742” read as Dhū al-Qaʿda 742 AH (8 Apr 1342 – 7 May 1342); checked by 4 words of the record in the sentence
+   ¶4.1 by date           1342-08-14-catalan-privileges-restored | month: “Rabīʿ al-Awwal of 743” read as Rabīʿ al-Awwal 743 AH (4 Aug 1342 – 2 Sep 1342); checked by 5 words of the record in the sentence
+   DRAWN ON               1342-10-01-independence-cb | no written date fits and no sentence clearly matches
+   ¶6.2 by wording        1342-12-30-birth-khalid | wording: 6 words shared with the record (ismail, khalid, mother, qamar, rahhu, yahya), next best sentence 2
+   ¶5.1 by date           1343-01-27-royal-decree | month: “Shaʿbān” read as Shaʿbān 743 AH (30 Dec 1342 – 27 Jan 1343); checked by 3 words of the record in the sentence
+   ¶2.4 by date           1343-05-20-loans | month: “Dhū al-Ḥijja of 743” read as Dhū al-Ḥijja 743 AH (27 Apr 1343 – 25 May 1343); checked by 4 words of the record in the sentence
+   DRAWN ON               1343-05-20-sovereignty | no written date fits and no sentence clearly matches
+   ¶7.2 by wording        1343-05-20-shared-heir | wording: 8 words shared with the record (alfonso, both, crown, heir, maria, peter), next best sentence 2
+   ¶7.5 by wording        1343-05-20-conversion | wording: 5 words shared with the record (balansiyya, half, mursiyya, muslim, nearly), next best sentence 2
+== 0745-06-02-the-jamaa-of-744.md
+   ¶2.2 by date           1344-03-23-castile-aragon-alliance | date: “the eighth of Dhū al-Qaʿda” read as 8 Dhū al-Qaʿda 744 AH = 23 Mar 1344; checked by names alfonso-xi, maria-of-portugal and 7 words of the record in the sentence
+   DRAWN ON               1344-04-castile-intervenes-portugal | no written date fits and no sentence clearly matches
+   DRAWN ON               1344-05-12-jamaa-sits | best sentence shares 7 words but the runner-up shares 4
+   DRAWN ON               1344-jamaa-marriage | month Dhū al-Ḥijja 744 also fits 1344-05-12-jamaa-sits
+   ¶3.7 by date           1344-05-29-favor-the-ruler | date: “the fifteenth of Muḥarram 745” read as 15 Muḥarram 745 AH = 29 May 1344; checked by names yusuf-i
+   ¶5.2 by date           1344-10-11-royal-harem | month: “Jumādā al-Ākhira” read as Jumādā al-Ākhira 745 AH (10 Oct 1344 – 7 Nov 1344); checked by 5 words of the record in the sentence
+== 0747-06-28-the-debt-paid.md
+   DRAWN ON               1345-01-27-stability | no written date fits and no sentence clearly matches
+   DRAWN ON               1345-01-27-loans | no written date fits and no sentence clearly matches
+   ¶2.4 by wording        1345-01-27-sovereignty | wording: 5 words shared with the record (above, almost, barest, margin, sovereignty), next best sentence 1
+   DRAWN ON               1345-01-27-taifa-loyalty | no written date fits and no sentence clearly matches
+   DRAWN ON               1345-01-27-court | no written date fits and no sentence clearly matches
+   DRAWN ON               1345-01-27-conversion | no written date fits and no sentence clearly matches
+   ¶4.2 by date           1345-07-23-betrothal-tunis | month: “Rabīʿ al-Awwal of 746” read as Rabīʿ al-Awwal 746 AH (2 Jul 1345 – 31 Jul 1345); checked by 4 words of the record in the sentence
+   ¶4.3 by date           1345-09-08-betrothal-ghana | month: “Jumādā al-Ūlā” read as Jumādā al-Ūlā 746 AH (30 Aug 1345 – 28 Sep 1345); checked by 4 words of the record in the sentence
+   DRAWN ON               1346-08-01-debt | no written date fits and no sentence clearly matches
+   ¶5.3 by wording        1346-08-01-stability | wording: 6 words shared with the record (crown, gather, power, realm, reform, steady), next best sentence 3
+   ¶6.2 by date           1346-10-16-moroccan-war | date: “the twenty-eighth of Jumādā al-Ākhira in the year 747” read as 28 Jumādā al-Ākhira 747 AH = 16 Oct 1346; checked by 3 words of the record in the sentence
+== 0747-07-01-the-houses-of-healing.md
+   DRAWN ON               1346-08-01-black-death | no written date fits and no sentence clearly matches
+   ¶3.1 by date           1346-10-18-hospitals | month: “Rajab” read as Rajab 747 AH (18 Oct 1346 – 16 Nov 1346); checked by names yusuf-i and 5 words of the record in the sentence
+== 0747-07-01-the-summons-of-the-marinids.md
+   DRAWN ON               1346-08-01-sovereignty | no written date fits and no sentence clearly matches
+   DRAWN ON               1346-08-01-conversion | no written date fits and no sentence clearly matches
+   ¶2.1 by date           1346-10-16-moroccan-war | date: “the twenty-eighth of Jumādā al-Ākhira” read as 28 Jumādā al-Ākhira 747 AH = 16 Oct 1346; checked by 3 words of the record in the sentence
+   DRAWN ON               1346-10-18-tunis-joins | no written date fits and no sentence clearly matches
+   DRAWN ON               1346-10-18-call-to-arms | no written date fits and no sentence clearly matches
+   DRAWN ON               1346-10-18-granada-joins | no written date fits and no sentence clearly matches
+   ¶4.4 by wording        1346-10-18-tributary-ends | wording: 5 words shared with the record (arms, independence, overlord, suspend, taking), next best sentence 2
+   ¶5.2 by wording        1346-10-18-volunteers-rise | wording: 5 words shared with the record (crown, ghuzat, rahhu, unit, yahya), next best sentence 2
+   ¶5.4 by wording        1346-11-08-mobilisation | wording: 10 words shared with the record (company, feudal, hired, jinet, knight, levi), next best sentence 1
+== 0748-02-06-the-day-of-jayyan.md
+   DRAWN ON               1346-11-22-battle-bay-palma | no written date fits and no sentence clearly matches
+   ¶1.4 by wording        1346-12-02-battle-gulf-of-almeria | wording: 4 words shared with the record (al-mariyya, balansiyya, gulf, worst), next best sentence 0
+   DRAWN ON               1347-01-16-battle-bay-alcudia | no written date fits and no sentence clearly matches
+   DRAWN ON               1347-02-13-battle-castellon-de-la-plana | no written date fits and no sentence clearly matches
+   ¶1.6 by date           1347-03-17-battle-sevilla | date: “the third of Dhū al-Ḥijja” read as 3 Dhū al-Ḥijja 747 AH = 17 Mar 1347; checked by names ishbiliyya
+   ¶3.2 by date           1347-05-18-battle-jaen | date: “the sixth of Ṣafar in the year 748” read as 6 Ṣafar 748 AH = 18 May 1347; checked by names yusuf-i
+== 0748-05-23-of-al-qusayr-and-balma.md
+   DRAWN ON               1347-06-17-battle-jerez-de-la-frontera | no written date fits and no sentence clearly matches
+   DRAWN ON               1347-06-21-battle-carpio | no written date fits and no sentence clearly matches
+   ¶2.4 by date           1347-07-13-battle-sevilla | date: “the third of Rabīʿ al-Thānī” read as 3 Rabīʿ al-Thānī 748 AH = 13 Jul 1347; checked by names ishbiliyya and 2 words of the record in the sentence
+   DRAWN ON               1347-08-08-constantinople-falls | no written date fits and no sentence clearly matches
+   ¶3.2 by date           1347-08-31-battle-palma-del-rio | date: “the twenty-third of Jumādā al-Ūlā” read as 23 Jumādā al-Ūlā 748 AH = 31 Aug 1347; checked by 2 words of the record in the sentence
+   DRAWN ON               1347-09-14-the-war-so-far | no written date fits and no sentence clearly matches
+== 0748-09-09-of-muntil-and-the-gate-of-qurtuba.md
+   DRAWN ON               1347-10-04-battle-montiel | no written date fits and no sentence clearly matches
+   ¶2.2 by date           1347-10-30-battle-montiel | date: “the twenty-fourth of Rajab” read as 24 Rajab 748 AH = 30 Oct 1347; checked by 4 words of the record in the sentence
+   ¶3.3 by date           1347-12-13-battle-cordoba | date: “the ninth of Ramaḍān” read as 9 Ramaḍān 748 AH = 13 Dec 1347; checked by names qurtuba
+== 0748-10-15-the-birth-of-saad.md
+   DRAWN ON               1348-01-18-birth-saad | no written date fits and no sentence clearly matches
+   ¶3.1 by wording        1348-01-18-betrothal-morocco | wording: 4 words shared with the record (betrothal, marinid, nasrid, same), next best sentence 1
+== 0749-02-15-the-coming-of-the-pestilence.md
+   DRAWN ON               1348-05-15-black-death-arrives | no written date fits and no sentence clearly matches
+   DRAWN ON               1348-plague-segregation | no written date fits and no sentence clearly matches
+   DRAWN ON               1348-plague-scapegoats | no written date fits and no sentence clearly matches
+== 0749-04-03-the-madman-and-the-flame.md
+   ¶1.1 by date           1348-05-30-battle-cordoba | date: “the first of Rabīʿ al-Awwal in the year 749” read as 1 Rabīʿ al-Awwal 749 AH = 30 May 1348; checked by names qurtuba and 3 words of the record in the sentence
+   DRAWN ON               1348-06-01-assassination-attempt | best sentence shares 4 words but the runner-up shares 3
+   ¶4.3 by date           1348-06-12-battle-cape-ben-sakka | date: “the fourteenth of Rabīʿ al-Awwal” read as 14 Rabīʿ al-Awwal 749 AH = 12 Jun 1348; checked by 2 words of the record in the sentence
+   DRAWN ON               1348-07-01-help-from-the-east | best sentence shares 6 words but the runner-up shares 5
+   DRAWN ON               1348-07-01-influence-crosses | no written date fits and no sentence clearly matches
+   DRAWN ON               1348-07-01-war-chest | best sentence shares 4 words but the runner-up shares 3
+== 0749-08-09-of-wages-medicines-and-maids.md
+   DRAWN ON               1348-07-01-plague-spread | no written date fits and no sentence clearly matches
+   DRAWN ON               1348-07-01-wage-fixing | best sentence shares 5 words but the runner-up shares 4
+   DRAWN ON               1348-09-01-expired-medicaments | no written date fits and no sentence clearly matches
+   DRAWN ON               1348-11-01-maid-draft | best sentence shares 4 words but the runner-up shares 3
+   DRAWN ON               1348-11-02-plague-toll | best sentence shares 7 words but the runner-up shares 4
+== 0749-11-07-the-peace-of-qurtuba.md
+   DRAWN ON               1348-09-02-portugal-peace | no written date fits and no sentence clearly matches
+   ¶3.5 by date           1349-01-27-peace-of-qurtuba | date: “the seventh of Dhū al-Qaʿda” read as 7 Dhū al-Qaʿda 749 AH = 27 Jan 1349; checked by names qurtuba
+   DRAWN ON               1349-01-27-tributary-in-name | no written date fits and no sentence clearly matches
+   ¶3.5 by date           1349-01-27-realm-doubled | date: “the seventh of Dhū al-Qaʿda” read as 7 Dhū al-Qaʿda 749 AH = 27 Jan 1349; checked by names qurtuba
+   DRAWN ON               1349-01-27-unrest | no written date fits and no sentence clearly matches
+== 0750-03-16-the-embassy-to-al-qahira.md
+   ¶1.3 by date           1349-alhambra-foundations | month: “Rabīʿ al-Awwal of the year 750” read as Rabīʿ al-Awwal 750 AH (20 May 1349 – 18 Jun 1349); checked by names gharnata, yusuf-i and 5 words of the record in the sentence
+   ¶2.4 by wording        1349-06-01-estates-reading | wording: 4 words shared with the record (christian, dhimmi, land, swollen), next best sentence 2
+   DRAWN ON               1349-06-01-castilian-patriots | best sentence shares 5 words but the runner-up shares 3
+   ¶3.2 by wording        1349-06-01-embassy-to-cairo | wording: 10 words shared with the record (acros, al-din, al-qahira, citi, egypt, envoy), next best sentence 4
+   DRAWN ON               1349-06-02-mamluk-alliance | best sentence shares 5 words but the runner-up shares 3
+   ¶4.5 by wording        1349-06-04-sovereignty | wording: 4 words shared with the record (above, since, sovereignty, time), next best sentence 1
+   DRAWN ON               1349-06-tunis-alliance-ends | no written date fits and no sentence clearly matches
+== 0750-08-24-the-great-dying.md
+   DRAWN ON               1349-06-01-castilian-patriots | no written date fits and no sentence clearly matches
+   DRAWN ON               1349-11-07-plague-toll | best sentence shares 4 words but the runner-up shares 3
+== 0751-06-28-the-emptied-cities.md
+   DRAWN ON               1350-09-02-great-dying-census | no written date fits and no sentence clearly matches
+   DRAWN ON               1350-09-02-cities-emptied | best sentence shares 4 words but the runner-up shares 3
+   ¶5.2 by wording        1350-09-02-recovery | wording: 4 words shared with the record (climb, pass, realm, sovereignty), next best sentence 2
+== 0751-10-07-the-islands.md
+   DRAWN ON               1350-07-the-war-turns | no written date fits and no sentence clearly matches
+   DRAWN ON               1350-12-aragon-peace | no written date fits and no sentence clearly matches
+   ¶2.4 by wording        1351-01-01-majorca-mainland | wording: 7 words shared with the record (land, mainland, montpellier, pass, perpinya, prad), next best sentence 1
+== 0751-11-20-the-prodigy-and-the-daughter-of-cairo.md
+   ¶1.1 by date           1351-01-19-mamluk-betrothal | month: “Dhū al-Qaʿda of the year 751” read as Dhū al-Qaʿda 751 AH (31 Dec 1350 – 29 Jan 1351); checked by names aiman-mamluk, saad-ibn-yusuf and 2 words of the record in the sentence
+   DRAWN ON               1351-01-saad-prodigy | best sentence shares 4 words but the runner-up shares 3
+   ¶3.2 by wording        1351-01-saad-tutors | wording: 4 words shared with the record (finest, gharnata, islamic, world), next best sentence 2
+== 0752-04-07-the-silver-of-qusantina.md
+   ¶2.5 by wording        1351-01-silver-for-silence | wording: 6 words shared with the record (along, border, mild, river, shift, silver), next best sentence 3
+   DRAWN ON               1351-05-21-qarmuna-qusantina | best sentence shares 4 words but the runner-up shares 3
+   ¶4.1 by date           1351-06-03-moroccan-surrender | date: “the seventh of Rabīʿ al-Thānī” read as 7 Rabīʿ al-Thānī 752 AH = 3 Jun 1351; checked by 2 words of the record in the sentence
+   DRAWN ON               1351-06-03-state | no written date fits and no sentence clearly matches
+== 0752-12-09-the-departing-of-the-pestilence.md
+   ¶1.1 by date           1352-01-27-plague-gone | date: “the ninth of Dhū al-Ḥijja in the year 752” read as 9 Dhū al-Ḥijja 752 AH = 27 Jan 1352; checked by 3 words of the record in the sentence
+   DRAWN ON               1350-09-02-great-dying-census | best sentence shares 4 words but the runner-up shares 3
+   DRAWN ON               1350-09-02-cities-emptied | no written date fits and no sentence clearly matches
+== 0753-02-20-the-royal-hajj.md
+   ¶2.5 by date           1351-08-09-hajj-departs | date: “the fifteenth of Jumādā al-Ākhira in the year 752” read as 15 Jumādā al-Ākhira 752 AH = 9 Aug 1351; checked by names faraj-ibn-ismail, gharnata, yusuf-i and 4 words of the record in the sentence
+   ¶3.1 by date           1351-10-07-hajj-al-qahira | date: “the fifteenth of Shaʿbān” read as 15 Shaʿbān 752 AH = 7 Oct 1351; checked by 2 words of the record in the sentence
+   ¶4.6 by wording        1352-01-01-hajj-makka | wording: 5 words shared with the record (freely, gold, holy, hungry, pilgrim), next best sentence 2
+   DRAWN ON               1352-01-27-plague-gone | no written date fits and no sentence clearly matches
+   DRAWN ON               1352-04-07-hajj-return | no written date fits and no sentence clearly matches
+== 0753-02-20-the-works-of-the-regency.md
+   ¶2.1 by date           1351-10-01-great-madrasa | date: “the ninth of Shaʿbān in the year 752” read as 9 Shaʿbān 752 AH = 1 Oct 1351; checked by names gharnata and 5 words of the record in the sentence
+   DRAWN ON               1351-10-06-najib-to-castile | best sentence shares 6 words but the runner-up shares 6
+   ¶4.1 by date           1351-11-08-unlimited-export | month: “Ramaḍān” read as Ramaḍān 752 AH (22 Oct 1351 – 20 Nov 1351); checked by names qusantina and 2 words of the record in the sentence
+   ¶4.4 by date           1352-01-01-hall-of-ambassadors | date: “the thirteenth of Dhū al-Qaʿda” read as 13 Dhū al-Qaʿda 752 AH = 1 Jan 1352; checked by 8 words of the record in the sentence
+   DRAWN ON               1352-04-capital-qurtuba | no written date fits and no sentence clearly matches
+   DRAWN ON               1352-04-castilian-unrest | best sentence shares 4 words but the runner-up shares 3
+   DRAWN ON               1352-04-jizya-remitted | no written date fits and no sentence clearly matches
+== 0754-06-02-the-kingdom-of-ishbiliyya.md
+   ¶1.2 by date           1353-02-01-kingdom-of-sevilla | date: “the twenty-fifth of Dhū al-Ḥijja in the year 753” read as 25 Dhū al-Ḥijja 753 AH = 1 Feb 1353; checked by names ishbiliyya, jayyan, qarmuna, qurtuba, qusantina and 3 words of the record in the sentence
+   DRAWN ON               1353-02-01-castile-answers | best sentence shares 4 words but the runner-up shares 4
+   DRAWN ON               1353-02-02-state | no written date fits and no sentence clearly matches
+   ¶3.3 by date           1353-06-06-battle-jerez | date: “the third of Jumādā al-Ūlā in the year 754” read as 3 Jumādā al-Ūlā 754 AH = 6 Jun 1353; checked by names yusuf-i
+   DRAWN ON               1353-06-27-battle-sanlucar-la-mayor | no written date fits and no sentence clearly matches
+   DRAWN ON               1353-07-03-state | no written date fits and no sentence clearly matches
+   DRAWN ON               1353-07-05-revolt-ends | best sentence shares 4 words but the runner-up shares 3
+== 0756-03-04-the-governor-and-the-harem.md
+   DRAWN ON               1354-03-01-royal-marriage-central-sahara | best sentence shares 5 words but the runner-up shares 3
+   ¶1.3 by date           1354-07-governor-begun | date: “the sixteenth of Jumādā al-Ākhira in the year 755” read as 16 Jumādā al-Ākhira 755 AH = 8 Jul 1354; checked by names qurtuba, yusuf-i and 4 words of the record in the sentence
+   ¶2.2 by date           1354-08-12-marinid-marriage | date: “the twenty-second of Rajab 755” read as 22 Rajab 755 AH = 12 Aug 1354; checked by names dua-marinid and 2 words of the record in the sentence
+   ¶2.4 by date           1354-11-19-hafsid-marriage | date: “the third of Dhū al-Qaʿda” read as 3 Dhū al-Qaʿda 755 AH = 19 Nov 1354; checked by names tizemt-hafsid and 4 words of the record in the sentence
+   ¶3.2 by wording        1355-ghana-marriage | wording: 13 words shared with the record (acros, brother, court, desert, elder, faraj), next best sentence 2
+   ¶3.6 by wording        1355-yahya-council | wording: 8 words shared with the record (arghun, diwan, faith, general, rahhu, seat), next best sentence 2
+   ¶2.9 by wording        1355-powerful-harem | wording: 7 words shared with the record (around, court, inward, nobl, power, throne), next best sentence 2
+   ¶3.8 by date           1355-yahya-dies | date: “the fourth of Ṣafar” read as 4 Ṣafar 756 AH = 18 Feb 1355; checked by names yahya-rahhu
+   ¶4.2 by wording        1355-dua-council | wording: 5 words shared with the record (capable, council, harem, wive, woman), next best sentence 2
+   ¶1.6 by date           1355-03-15-governor-qurtuba | date: “the twenty-ninth of Ṣafar 756” read as 29 Ṣafar 756 AH = 15 Mar 1355; checked by names qurtuba, yusuf-i and 2 words of the record in the sentence
+   ¶5.2 by wording        1355-03-19-calm | wording: 4 words shared with the record (castilian, governor, rising, second), next best sentence 2
+   DRAWN ON               1355-03-28-birth-aisha | best sentence shares 4 words but the runner-up shares 3
+== 0758-07-12-roads-libraries-and-the-weavers.md
+   ¶2.2 by date           1356-06-09-textile-charter | date: “the ninth of Jumādā al-Ākhira 757” read as 9 Jumādā al-Ākhira 757 AH = 9 Jun 1356; checked by names gharnata and 3 words of the record in the sentence
+   ¶3.2 by wording        1356-10-roads | wording: 10 words shared with the record (al-mariyya, basta, field, gharnata, mountain, north-east), next best sentence 2
+   DRAWN ON               1356-10-libraries | no written date fits and no sentence clearly matches
+   ¶5.1 by date           1357-07-northern-madrasas | date: “the twelfth of Rajab 758” read as 12 Rajab 758 AH = 1 Jul 1357; checked by names ishbiliyya, jayyan
+== 0759-09-02-the-great-madrasa-of-qurtuba.md
+   DRAWN ON               1358-02-great-madrasa-qurtuba | no written date fits and no sentence clearly matches
+   DRAWN ON               1358-08-08-foreign-wisdom | no written date fits and no sentence clearly matches
+   ¶2.2 by date           1358-08-08-works | month: “Ramaḍān” read as Ramaḍān 759 AH (7 Aug 1358 – 5 Sep 1358); checked by names gharnata, ishbiliyya, istijja, jayyan, malaqa, urjuba and 3 words of the record in the sentence
+== 0763-10-07-the-marinid-demand.md
+   DRAWN ON               1354-03-16-betrothal-aydinids | no written date fits and no sentence clearly matches
+   DRAWN ON               1359-03-15-castile-aragon-war | best sentence shares 7 words but the runner-up shares 4
+   ¶2.2 by wording        1359-ismail-to-aydin | wording: 7 words shared with the record (anatolia, bride, brother, father, ismail, live), next best sentence 2
+   DRAWN ON               1359-04-khalid-council | best sentence shares 4 words but the runner-up shares 3
+   ¶3.1 by wording        1359-07-01-funduq | wording: 12 words shared with the record (above, better, guard, italian, lock, merchant), next best sentence 6
+   DRAWN ON               1360-06-26-state | no written date fits and no sentence clearly matches
+   ¶4.2 by date           1360-06-26-marinid-war | date: “the tenth of Shaʿbān 761” read as 10 Shaʿbān 761 AH = 26 Jun 1360; checked by 7 words of the record in the sentence
+   ¶4.2 by date           1360-06-26-chance-lost | date: “the tenth of Shaʿbān 761” read as 10 Shaʿbān 761 AH = 26 Jun 1360; checked by 3 words of the record in the sentence
+   ¶5.2 by date           1360-11-07-battle-almeria | date: “the twenty-sixth of Dhū al-Ḥijja” read as 26 Dhū al-Ḥijja 761 AH = 7 Nov 1360; checked by names al-mariyya and 5 words of the record in the sentence
+   ¶5.3 by wording        1360-11-14-diwan-al-mustakhlas | wording: 14 words shared with the record (al-hamra, al-mustakhla, apart, court, diwan, domain), next best sentence 3
+   DRAWN ON               1361-02-03-marinid-landings | best sentence shares 5 words but the runner-up shares 4
+   ¶5.6 by date           1361-03-23-battle-jerez | month: “Jumādā al-Ūlā 762” read as Jumādā al-Ūlā 762 AH (9 Mar 1361 – 7 Apr 1361); checked by 3 words of the record in the sentence
+   DRAWN ON               1361-12-13-battle-sevilla | no written date fits and no sentence clearly matches
+   DRAWN ON               1362-04-08-battle-sevilla | no written date fits and no sentence clearly matches
+   DRAWN ON               1362-06-10-state | no written date fits and no sentence clearly matches
+   DRAWN ON               1362-07-30-white-peace-morocco | best sentence shares 4 words but the runner-up shares 4
+== 0764-10-19-the-death-of-al-hajj-yusuf.md
+   ¶4.6 by wording        1362-11-01-qasr-al-riyad | wording: 10 words shared with the record (al-riyad, al-said, heart, house, lion, muqarna), next best sentence 2
+   ¶1.1 by date           1363-05-20-war-of-independence | date: “the fifth of Shaʿbān in the year 764” read as 5 Shaʿbān 764 AH = 20 May 1363; checked by names yusuf-i and 2 words of the record in the sentence
+   DRAWN ON               1363-05-20-state | no written date fits and no sentence clearly matches
+   DRAWN ON               1363-05-20-portugal-first | no written date fits and no sentence clearly matches
+   ¶1.1 by date           1363-05-20-taifas-untouched | date: “the fifth of Shaʿbān in the year 764” read as 5 Shaʿbān 764 AH = 20 May 1363; checked by names balansiyya, mursiyya
+   ¶2.4 by date           1363-07-27-aragon-joins | month: “Shawwāl” read as Shawwāl 764 AH (14 Jul 1363 – 11 Aug 1363); checked by 3 words of the record in the sentence
+   ¶3.2 by date           1363-08-01-death-yusuf | date: “the nineteenth of Shawwāl” read as 19 Shawwāl 764 AH = 1 Aug 1363; checked by 5 words of the record in the sentence
+   ¶5.3 by wording        1363-08-01-saad-succeeds | wording: 5 words shared with the record (al-istijji, house, istijja, nasr, regent), next best sentence 2
+   ¶5.5 by wording        1363-08-dua-marries-nasr | wording: 7 words shared with the record (days, late, marinid, marri, minister, widow), next best sentence 3
+   DRAWN ON               1363-08-02-state | no written date fits and no sentence clearly matches
+== 0765-08-16-the-regent-who-did-not-last.md
+   ¶1.1 by date           1364-01-18-saad-of-age | date: “the twelfth of Rabīʿ al-Thānī in the year 765” read as 12 Rabīʿ al-Thānī 765 AH = 18 Jan 1364; checked by names nasr-al-istijji, saad-ibn-yusuf and 3 words of the record in the sentence
+   ¶1.1 by date           1364-01-18-death-nasr | date: “the twelfth of Rabīʿ al-Thānī in the year 765” read as 12 Rabīʿ al-Thānī 765 AH = 18 Jan 1364; checked by names nasr-al-istijji
+   DRAWN ON               1364-01-saad-marries-dua | no written date fits and no sentence clearly matches
+   DRAWN ON               1364-03-01-battle-canete | no written date fits and no sentence clearly matches
+   ¶4.3 by wording        1364-04-05-battle-castellon | wording: 7 words shared with the record (attack, back, castellon, join, portugal, taifa), next best sentence 1
+   DRAWN ON               1364-05-19-ulama-displeased | no written date fits and no sentence clearly matches
+   DRAWN ON               1364-05-19-jamaa-summoned | best sentence shares 4 words but the runner-up shares 3
+== 0765-12-13-zafra-and-the-walls-of-lisbon.md
+   DRAWN ON               1364-08-03-battle-zafra | best sentence shares 5 words but the runner-up shares 4
+   ¶3.2 by date           1364-09-10-battle-lisbon | date: “the twelfth of Dhū al-Ḥijja” read as 12 Dhū al-Ḥijja 765 AH = 10 Sep 1364; checked by 4 words of the record in the sentence
+   ¶3.3 by wording        1364-09-11-battle-lisbon | wording: 4 words shared with the record (aragonese, next, remnant, turn), next best sentence 2
+   ¶4.2 by wording        1364-09-11-peace-portugal | wording: 5 words shared with the record (alentejo, algarve, lower, mertola, south), next best sentence 2
+   DRAWN ON               1364-09-11-state | no written date fits and no sentence clearly matches
+== 0767-07-23-the-peace-of-independence.md
+   ¶1.1 by date           1364-12-13-birth-umm-al-fath-bint-saad | month: “Rabīʿ al-Awwal of the year 766” read as Rabīʿ al-Awwal 766 AH (26 Nov 1364 – 25 Dec 1364); checked by names aiman-mamluk, saad-ibn-yusuf, umm-al-fath-bint-saad and 4 words of the record in the sentence
+   DRAWN ON               1365-03-saad-conqueror | no written date fits and no sentence clearly matches
+   ¶2.2 by date           1365-07-14-battle-canete | date: “the twenty-fourth of Shawwāl” read as 24 Shawwāl 766 AH = 14 Jul 1365; checked by names murad and 4 words of the record in the sentence
+   DRAWN ON               1365-09-02-peace-aragon | no written date fits and no sentence clearly matches
+   ¶3.2 by date           1366-01-06-battle-san-clemente | date: “the twenty-second of Rabīʿ al-Thānī 767” read as 22 Rabīʿ al-Thānī 767 AH = 6 Jan 1366; checked by names ibn-al-khatib and 3 words of the record in the sentence
+   ¶4.1 by wording        1366-03-08-birth-ismail-ibn-saad | wording: 4 words shared with the record (heir, ismail, month, sultan), next best sentence 2
+   DRAWN ON               1366-04-05-peace-castile | no written date fits and no sentence clearly matches
+   ¶6.2 by date           1366-04-13-taifa-al-gharb | date: “the first of Shaʿbān” read as 1 Shaʿbān 767 AH = 13 Apr 1366; checked by names rodrigo-of-silves and 6 words of the record in the sentence
+   ¶5.5 by wording        1366-04-05-the-south-burned | wording: 4 words shared with the record (burn, people, third, tulaytula), next best sentence 1
+== 0768-01-26-the-slow-return.md
+   ¶2.2 by wording        1363-05-baena-andalusi | wording: 4 words shared with the record (andalusi, count, people, themselv), next best sentence 2
+   DRAWN ON               1364-05-19-jamaa-summoned | no written date fits and no sentence clearly matches
+   DRAWN ON               1364-09-11-andalusi-majority | no written date fits and no sentence clearly matches
+   DRAWN ON               1366-04-qurtuba-andalusi | no written date fits and no sentence clearly matches
+   DRAWN ON               1366-qurtuba-muslim | no written date fits and no sentence clearly matches
+   ¶5.8 by wording        1366-11-06-state | wording: 6 words shared with the record (farm, madrasa, mine, qusantina, silver, ubeda), next best sentence 1
+== 0770-03-11-the-marinids-on-the-northern-shore.md
+   ¶1.2 by date           1365-08-31-moroccan-peace-castile | date: “the thirteenth of Dhū al-Ḥijja 766” read as 13 Dhū al-Ḥijja 766 AH = 31 Aug 1365; checked by 3 words of the record in the sentence
+   ¶2.3 by wording        1366-01-10-marinid-sevilla | wording: 4 words shared with the record (kingdom, name, rebel, sevilla), next best sentence 2
+   DRAWN ON               1366-05-12-castile-courts | no written date fits and no sentence clearly matches
+   DRAWN ON               1367-01-30-mamluk-alliance | no written date fits and no sentence clearly matches
+   ¶3.6 by date           1367-08-01-moroccan-claim | month: “Dhū al-Ḥijja 768” read as Dhū al-Ḥijja 768 AH (29 Jul 1367 – 27 Aug 1367); checked by 5 words of the record in the sentence
+   ¶4.4 by date           1368-05-10-moroccan-insult | date: “the twenty-first of Ramaḍān” read as 21 Ramaḍān 769 AH = 10 May 1368; checked by 2 words of the record in the sentence
+   DRAWN ON               1368-07-moroccan-hostility | best sentence shares 4 words but the runner-up shares 3
+   DRAWN ON               1368-07-26-castile-markets | no written date fits and no sentence clearly matches
+   DRAWN ON               1368-07-30-spies-in-fas | no written date fits and no sentence clearly matches
+   ¶4.7 by date           1368-09-26-castile-guarantees-al-gharb | month: “Ṣafar 770” read as Ṣafar 770 AH (15 Sep 1368 – 13 Oct 1368); checked by names rodrigo-of-silves and 4 words of the record in the sentence
+   DRAWN ON               1368-10-24-marinid-war | best sentence shares 5 words but the runner-up shares 4
+== 0770-07-21-the-first-winter.md
+   ¶1.5 by date           1368-11-11-battle-cadiz | date: “the twenty-ninth of Rabīʿ al-Awwal 770” read as 29 Rabīʿ al-Awwal 770 AH = 11 Nov 1368; checked by names abu-inan-faris, murad
+   ¶2.2 by date           1368-12-01-battle-marbella | date: “the nineteenth of Rabīʿ al-Thānī” read as 19 Rabīʿ al-Thānī 770 AH = 1 Dec 1368; checked by 2 words of the record in the sentence
+   ¶3.2 by wording        1368-12-13-birth-jadila-bint-saad | wording: 4 words shared with the record (aiman, daughter, jadila, second), next best sentence 1
+   ¶2.3 by date           1368-12-15-battle-gibraltar | date: “the fourth of Jumādā al-Ūlā” read as 4 Jumādā al-Ūlā 770 AH = 15 Dec 1368; checked by 5 words of the record in the sentence
+   DRAWN ON               1368-12-25-battle-tarifa | no written date fits and no sentence clearly matches
+   DRAWN ON               1369-01-31-battle-costa-blanca | no written date fits and no sentence clearly matches
+   ¶4.2 by date           1369-02-08-battle-marbella | date: “the twenty-ninth of Jumādā al-Ākhira” read as 29 Jumādā al-Ākhira 770 AH = 8 Feb 1369; checked by 3 words of the record in the sentence
+   DRAWN ON               1369-02-15-battle-ronda | no written date fits and no sentence clearly matches
+   DRAWN ON               1369-03-the-south-subdued | no written date fits and no sentence clearly matches
+   DRAWN ON               1369-03-strength | no written date fits and no sentence clearly matches
+== 0771-04-17-the-year-of-the-counterattack.md
+   ¶1.3 by date           1369-04-05-battle-jerez-de-la-frontera | date: “the twenty-sixth of Shaʿbān 770” read as 26 Shaʿbān 770 AH = 5 Apr 1369; checked by 3 words of the record in the sentence
+   DRAWN ON               1369-04-28-battle-jerez-de-la-frontera | no written date fits and no sentence clearly matches
+   DRAWN ON               1369-05-12-battle-sanlucar | no written date fits and no sentence clearly matches
+   ¶2.3 by date           1369-06-02-battle-cadiz | month: “Shawwāl” read as Shawwāl 770 AH (9 May 1369 – 6 Jun 1369); checked by names osman-marinid and 3 words of the record in the sentence
+   ¶2.4 by date           1369-06-26-battle-cadiz | date: “the twentieth of Dhū al-Qaʿda” read as 20 Dhū al-Qaʿda 770 AH = 26 Jun 1369; checked by names khalid-ibn-yahya, osman-marinid and 3 words of the record in the sentence
+   ¶3.2 by wording        1369-estate-loans | wording: 5 words shared with the record (company, dinar, loan, mercenari, seven), next best sentence 2
+   DRAWN ON               1369-09-16-battle-malaga | no written date fits and no sentence clearly matches
+   DRAWN ON               1369-10-15-battle-antequera | no written date fits and no sentence clearly matches
+   DRAWN ON               1369-11-08-battle-almunecar | no written date fits and no sentence clearly matches
+   DRAWN ON               1369-11-18-state | best sentence shares 4 words but the runner-up shares 3
+== 0772-02-20-the-reckoning-of-the-faithful.md
+   DRAWN ON               1370-09-conversion-reading | best sentence shares 5 words but the runner-up shares 4
+   DRAWN ON               1370-09-13-state | no written date fits and no sentence clearly matches
+   DRAWN ON               1366-qurtuba-muslim | no written date fits and no sentence clearly matches
+== 0772-02-21-the-throne-that-endures.md
+   ¶1.2 by date           1369-11-21-battle-adra | date: “the twentieth of Rabīʿ al-Thānī 771” read as 20 Rabīʿ al-Thānī 771 AH = 21 Nov 1369; checked by names khalid-ibn-yahya and 2 words of the record in the sentence
+   ¶1.3 by date           1369-12-16-battle-malaga | month: “Jumādā al-Ūlā” read as Jumādā al-Ūlā 771 AH (1 Dec 1369 – 30 Dec 1369); checked by names khalid-ibn-yahya and 2 words of the record in the sentence
+   ¶1.6 by date           1370-03-08-battle-malaga | month: “Shaʿbān” read as Shaʿbān 771 AH (28 Feb 1370 – 28 Mar 1370); checked by names khalid-ibn-yahya and 3 words of the record in the sentence
+   DRAWN ON               1370-03-31-battle-jerez | no written date fits and no sentence clearly matches
+   DRAWN ON               1370-04-06-battle-jerez | no written date fits and no sentence clearly matches
+   ¶2.6 by date           1370-05-31-battle-beja | month: “Dhū al-Qaʿda” read as Dhū al-Qaʿda 771 AH (27 May 1370 – 25 Jun 1370); checked by 3 words of the record in the sentence
+   DRAWN ON               1370-06-morocco-near-defeat | no written date fits and no sentence clearly matches
+   ¶3.3 by date           1370-09-12-battle-malaga | date: “the nineteenth of Ṣafar 772” read as 19 Ṣafar 772 AH = 12 Sep 1370; checked by 2 words of the record in the sentence
+   ¶3.3 by date           1370-09-12-peace-morocco | date: “the nineteenth of Ṣafar 772” read as 19 Ṣafar 772 AH = 12 Sep 1370; checked by names abu-inan-faris
+   ¶5.1 by date           1370-09-14-strait-ends | date: “the twenty-first of Ṣafar” read as 21 Ṣafar 772 AH = 14 Sep 1370; checked by names saad-ibn-yusuf
+== 0772-02-22-of-the-three-marches.md
+   DRAWN ON               1370-09-14-strait-ends | no written date fits and no sentence clearly matches
+   DRAWN ON               1370-09-13-state | no written date fits and no sentence clearly matches
+   ¶4.7 by wording        1366-04-05-the-south-burned | wording: 8 words shared with the record (burn, extremadura, fifth, land, lost, people), next best sentence 2
+   ¶3.2 by date           1367-10-04-castile-portugal-union | month: “Ṣafar of the year 769” read as Ṣafar 769 AH (27 Sep 1367 – 25 Oct 1367); checked by 12 words of the record in the sentence
+   ¶7.2 by wording        1370-09-18-death-of-faraj | wording: 7 words shared with the record (beyond, desert, faraj, ghana, lived, marriage), next best sentence 2
+== 0772-02-27-the-survey-of-the-kingdoms.md
+   ¶1.5 by date           1370-09-13-the-world | month: “Ṣafar 772” read as Ṣafar 772 AH (25 Aug 1370 – 22 Sep 1370); checked by names saad-ibn-yusuf and 2 words of the record in the sentence
+   ¶9.2 by date           1367-10-04-castile-portugal-union | month: “Ṣafar 769” read as Ṣafar 769 AH (27 Sep 1367 – 25 Oct 1367); checked by 3 words of the record in the sentence
+   DRAWN ON               1367-01-30-mamluk-alliance | no written date fits and no sentence clearly matches
+   DRAWN ON               1370-09-12-peace-morocco | no written date fits and no sentence clearly matches
+== 0772-08-07-the-moneylenders-of-ishbiliya.md
+   DRAWN ON               1370-11-01-the-north | best sentence shares 6 words but the runner-up shares 6
+   DRAWN ON               1371-02-24-spread-of-usury | best sentence shares 7 words but the runner-up shares 5
+   DRAWN ON               1371-02-24-state | best sentence shares 4 words but the runner-up shares 3
+   ¶5.5 by wording        1370-11-01-state | wording: 4 words shared with the record (loan, owed, seven, still), next best sentence 2
+   ¶4.2 by wording        1370-10-01-maryam-culture | wording: 6 words shared with the record (andalusi, bint, ismail, land, maryam, work), next best sentence 1
+   DRAWN ON               1370-09-26-reconquest-claim | no written date fits and no sentence clearly matches
+   DRAWN ON               1370-09-20-murcia-annexation | no written date fits and no sentence clearly matches
+   ¶6.3 by wording        1371-01-29-murcia-dolca | wording: 4 words shared with the record (dolca, house, mursiyya, taifa), next best sentence 2
+== 0775-09-06-the-battle-before-barshaluna.md
+   ¶1.4 by wording        1373-01-16-state | wording: 6 words shared with the record (estate, north, noth, paid, shore, treasury), next best sentence 3
+   ¶1.5 by wording        1373-01-16-court | wording: 6 words shared with the record (beside, diwan, fezzan, mother, sayyida, seat), next best sentence 2
+   ¶1.5 by wording        1372-12-13-murcia-fezzan | wording: 6 words shared with the record (fezzan, homeland, marriage, mother, mursiyya, taifa), next best sentence 1
+   DRAWN ON               1373-01-16-hajj | best sentence shares 5 words but the runner-up shares 3
+   ¶2.3 by date           1373-10-01-march-on-valencia | month: “Rabīʿ al-Thānī 775” read as Rabīʿ al-Thānī 775 AH (20 Sep 1373 – 18 Oct 1373); checked by names saad-ibn-yusuf and 7 words of the record in the sentence
+   DRAWN ON               1373-12-01-war-on-aragon | no written date fits and no sentence clearly matches
+   ¶4.1 by date           1373-12-01-mamluks-join | date: “14 Jumādā al-Ākhira 775” read as 14 Jumādā al-Ākhira 775 AH = 1 Dec 1373; checked by names bolot-mamluk
+   DRAWN ON               1374-02-19-battle-barcelona | best sentence shares 6 words but the runner-up shares 4
+== 0775-09-24-the-pursuit-to-tarrakuna.md
+   DRAWN ON               1374-03-09-battle-tarragona | best sentence shares 5 words but the runner-up shares 3
+   DRAWN ON               1374-02-19-battle-barcelona | no written date fits and no sentence clearly matches
+   DRAWN ON               1374-03-09-france-busy | best sentence shares 6 words but the runner-up shares 4
+   DRAWN ON               1372-02-01-france-england | no written date fits and no sentence clearly matches
+   ¶5.2 by wording        1374-03-09-constructions | wording: 11 words shared with the record (almonaster, aracena, border, castilian, court, fort), next best sentence 3
+== 0775-11-19-the-regency-of-dua.md
+   DRAWN ON               1374-03-jamaa-tithes | no written date fits and no sentence clearly matches
+   DRAWN ON               1374-05-02-jamaa-passes | best sentence shares 6 words but the runner-up shares 5
+   DRAWN ON               1371-02-24-spread-of-usury | no written date fits and no sentence clearly matches
+   DRAWN ON               1374-02-19-battle-barcelona | no written date fits and no sentence clearly matches
+== 0776-08-02-of-the-siege-of-barshaluna.md
+   ¶2.7 by date           1374-10-25-malta-taken | month: “Jumādā al-Ūlā 776” read as Jumādā al-Ūlā 776 AH (8 Oct 1374 – 6 Nov 1374); checked by names bolot-mamluk, ramadan-of-barqa and 5 words of the record in the sentence
+   ¶3.2 by date           1374-11-12-battle-george-bay | date: “6 Jumādā al-Ākhira” read as 6 Jumādā al-Ākhira 776 AH = 12 Nov 1374; checked by 7 words of the record in the sentence
+   DRAWN ON               1374-10-the-princes-tutors | best sentence shares 6 words but the runner-up shares 4
+   ¶5.1 by date           1375-01-06-mamluk-army-catalonia | date: “2 Shaʿbān 776” read as 2 Shaʿbān 776 AH = 6 Jan 1375; checked by 2 words of the record in the sentence
+   ¶5.1 by date           1375-01-06-court-factions | date: “2 Shaʿbān 776” read as 2 Shaʿbān 776 AH = 6 Jan 1375; checked by 2 words of the record in the sentence
+   DRAWN ON               1374-05-23-battle-zuwara | no written date fits and no sentence clearly matches
+   DRAWN ON               1374-06-24-battle-gharyan | no written date fits and no sentence clearly matches
+== 0776-10-11-of-the-peace-of-the-upper-march.md
+   DRAWN ON               1375-03-15-peace-aragon | best sentence shares 4 words but the runner-up shares 4
+   DRAWN ON               1375-03-15-aragon-falls-apart | best sentence shares 4 words but the runner-up shares 4
+   DRAWN ON               1375-03-15-state | best sentence shares 4 words but the runner-up shares 3
+   DRAWN ON               1375-03-15-the-new-taifas | best sentence shares 6 words but the runner-up shares 4
+   DRAWN ON               1374-11-12-battle-george-bay | no written date fits and no sentence clearly matches
+== 0776-10-12-of-the-restoration-of-al-andalus.md
+   DRAWN ON               1375-03-15-the-new-taifas | no written date fits and no sentence clearly matches
+   ¶4.4 by date           1375-03-16-murcia-into-the-crown | date: “12 Shawwāl 776” read as 12 Shawwāl 776 AH = 16 Mar 1375; checked by 2 words of the record in the sentence
+   DRAWN ON               1375-03-16-bernarda-betrothed | best sentence shares 7 words but the runner-up shares 4
+   ¶4.4 by date           1375-03-16-two-new-taifas | date: “12 Shawwāl 776” read as 12 Shawwāl 776 AH = 16 Mar 1375; checked by 3 words of the record in the sentence
+   ¶4.4 by date           1375-03-16-restoration-of-al-andalus | date: “12 Shawwāl 776” read as 12 Shawwāl 776 AH = 16 Mar 1375; checked by 5 words of the record in the sentence
+   DRAWN ON               1375-03-17-maryam-to-the-diwan | best sentence shares 9 words but the runner-up shares 5
+   DRAWN ON               1375-04-15-catalan-marriage | best sentence shares 7 words but the runner-up shares 4
+== 0777-08-20-of-the-war-of-restoration-and-the-day-of-shalba.md
+   DRAWN ON               1371-03-01-reconquest-claim-ready | no written date fits and no sentence clearly matches
+   ¶1.1 by date           1375-06-05-war-on-castile | date: “4 Muḥarram 777” read as 4 Muḥarram 777 AH = 5 Jun 1375; checked by names saad-ibn-yusuf and 2 words of the record in the sentence
+   ¶2.3 by wording        1375-06-05-rome-and-lisbon | wording: 6 words shared with the record (answer, call, castilian, faenza, siena, vassal), next best sentence 1
+   ¶3.3 by wording        1375-12-12-catalans-ambushed | wording: 7 words shared with the record (alfonso, castilian, catalan, francesc, hajib, onate), next best sentence 3
+   DRAWN ON               1376-01-14-battle-xelva | best sentence shares 7 words but the runner-up shares 6
+   DRAWN ON               1376-01-14-second-levy | no written date fits and no sentence clearly matches
+   DRAWN ON               1376-01-14-envoys-to-fas | best sentence shares 5 words but the runner-up shares 5
+   ¶6.8 by wording        1376-01-14-jadila-married | wording: 4 words shared with the record (al-fadl, jadila, marri, sister), next best sentence 1
+== 0778-04-15-of-the-mercenaries-and-the-slaughter-at-agramunt.md
+   ¶1.3 by date           1376-01-21-catalans-destroyed-at-barcelona | date: “27 Shaʿbān” read as 27 Shaʿbān 777 AH = 21 Jan 1376; checked by names barshaluna, francesc-de-montsoriu and 3 words of the record in the sentence
+   ¶1.4 by date           1376-03-01-battle-cape-ben-sakka | date: “8 Shawwāl” read as 8 Shawwāl 777 AH = 1 Mar 1376; checked by 9 words of the record in the sentence
+   ¶2.5 by date           1376-05-25-battle-girona | month: “Muḥarram 778” read as Muḥarram 778 AH (21 May 1376 – 19 Jun 1376); checked by names jarunda and 2 words of the record in the sentence
+   ¶2.7 by wording        1376-06-12-second-battle-girona | wording: 4 words shared with the record (follow, footstep, master, siena), next best sentence 0
+   DRAWN ON               1376-06-mercenaries-and-the-faithful | no written date fits and no sentence clearly matches
+   ¶3.8 by wording        1376-08-moroccan-gift | wording: 6 words shared with the record (freely, gift, gold, join, treasury, truce), next best sentence 1
+   ¶4.6 by date           1376-09-01-battle-agramunt | date: “15 Rabīʿ al-Thānī” read as 15 Rabīʿ al-Thānī 778 AH = 1 Sep 1376; checked by names alfonso-de-onate and 3 words of the record in the sentence
+   ¶5.4 by date           1376-12-catalan-shipwrights | month: “Rajab 778” read as Rajab 778 AH (14 Nov 1376 – 13 Dec 1376); checked by names bolot-mamluk and 11 words of the record in the sentence
+== 0779-12-07-of-saraqusta-and-the-peace-of-the-restoration.md
+   ¶4.6 by date           1378-04-06-castles-razed | date: “7 Dhū al-Ḥijja 779” read as 7 Dhū al-Ḥijja 779 AH = 6 Apr 1378; checked by names jeronimo-of-castile
+   ¶1.2 by date           1377-01-31-battle-zaragoza | date: “20 Ramaḍān 778” read as 20 Ramaḍān 778 AH = 31 Jan 1377; checked by names saad-ibn-yusuf, saraqusta and 4 words of the record in the sentence
+   ¶1.6 by date           1377-06-13-battle-calatayud | month: “Ṣafar 779” read as Ṣafar 779 AH (9 Jun 1377 – 7 Jul 1377); checked by names qalat-ayyub, saad-ibn-yusuf and 2 words of the record in the sentence
+   ¶2.2 by date           1377-09-30-morocco-joins | date: “26 Jumādā al-Ūlā 779” read as 26 Jumādā al-Ūlā 779 AH = 30 Sep 1377; checked by names abu-inan-faris and 6 words of the record in the sentence
+   ¶2.3 by wording        1377-10-19-battle-cape-sao-vicente | wording: 8 words shared with the record (cape, castilian, hammu, sail, three, vicente), next best sentence 3
+   DRAWN ON               1377-11-04-battle-bay-setubal | no written date fits and no sentence clearly matches
+   ¶3.4 by date           1378-01-17-battle-shaluqa | date: “the seventeenth of Ramaḍān” read as 17 Ramaḍān 779 AH = 17 Jan 1378; checked by names ishbiliyya, shaluqa-al-kubra
+   ¶4.6 by date           1378-04-06-peace-castile | date: “7 Dhū al-Ḥijja 779” read as 7 Dhū al-Ḥijja 779 AH = 6 Apr 1378; checked by names jeronimo-of-castile
+   DRAWN ON               1378-04-06-sayyida-diplomacy | no written date fits and no sentence clearly matches
+   ¶7.3 by wording        1378-05-khilafat-qurtuba-renewed | wording: 16 words shared with the record (al-rahman, al-zahra, ceremonial, dinar, gold, hall), next best sentence 4
+   ¶7.6 by wording        1378-07-09-tunis-marriage | wording: 5 words shared with the record (al-andalu, hafsid, marriage, royal, tuni), next best sentence 1
+== 0780-01-02-of-tulaytula-and-the-count-of-the-christians.md
+   ¶2.2 by date           1378-05-01-gem-of-iberia | date: “2 Muḥarram 780” read as 2 Muḥarram 780 AH = 1 May 1378; checked by 3 words of the record in the sentence
+   ¶2.2 by date           1378-05-count-of-the-christians | date: “2 Muḥarram 780” read as 2 Muḥarram 780 AH = 1 May 1378; checked by 2 words of the record in the sentence
+   ¶3.7 by wording        1378-05-khilafat-qurtuba-renewed | wording: 15 words shared with the record (al-rahman, ceremonial, christian, covenant, dhimma, friday), next best sentence 3
+   DRAWN ON               1378-05-governor-of-tulaytula | no written date fits and no sentence clearly matches
+   ¶5.3 by wording        1378-05-silk-of-gharnata | wording: 7 words shared with the record (crown, europe, gharnata, gold, hand, mursiyya), next best sentence 1
+   DRAWN ON               1378-04-06-peace-castile | no written date fits and no sentence clearly matches
+== 0781-08-13-of-the-move-to-ishbiliya.md
+   ¶1.1 by date           1379-04-jamaa-of-the-capital | month: “Muḥarram 781” read as Muḥarram 781 AH (19 Apr 1379 – 18 May 1379); checked by names gharnata and 2 words of the record in the sentence
+   ¶3.2 by wording        1379-04-roads-to-ishbiliya | wording: 8 words shared with the record (batalyaw, capital, malaqa, north, order, road), next best sentence 3
+   DRAWN ON               1379-11-capital-at-ishbiliya | best sentence shares 6 words but the runner-up shares 5
+   ¶5.3 by wording        1380-gharnata-historical-capital | wording: 8 words shared with the record (al-hamra, court, crown, fortres, full, realm), next best sentence 3
+== 0785-02-26-of-the-kingdom-of-tulaytula.md
+   DRAWN ON               1380-11-19-death-of-sayyida | best sentence shares 4 words but the runner-up shares 3
+   DRAWN ON               1381-10-07-death-of-abu-inan | best sentence shares 5 words but the runner-up shares 3
+   ¶3.2 by date           1382-12-01-revolt-of-tulaytula | date: “24 Ramaḍān 784” read as 24 Ramaḍān 784 AH = 1 Dec 1382; checked by names tulaytula
+   ¶4.1 by wording        1382-12-01-ismail-to-the-diwan | wording: 7 words shared with the record (brother, diwan, empty, ismail, mother, seat), next best sentence 1
+   DRAWN ON               1383-02-22-battle-munt-shaqir | no written date fits and no sentence clearly matches
+   DRAWN ON               1383-04-30-battle-jaen | no written date fits and no sentence clearly matches
+   ¶4.6 by date           1383-04-30-revolt-crushed | date: “26 Ṣafar 785” read as 26 Ṣafar 785 AH = 30 Apr 1383; checked by 2 words of the record in the sentence
+== 0787-12-04-of-the-pilgrimage-that-came-too-late.md
+   DRAWN ON               1383-04-30-hajj-planned | no written date fits and no sentence clearly matches
+   ¶1.2 by date           1385-05-03-county-of-teruel | month: “Rabīʿ al-Awwal 787” read as Rabīʿ al-Awwal 787 AH (12 Apr 1385 – 11 May 1385); checked by names alfons-de-borja and 6 words of the record in the sentence
+   ¶1.5 by date           1385-08-23-teruel-crushed | date: “16 Rajab 787” read as 16 Rajab 787 AH = 23 Aug 1385; checked by names alfons-de-borja and 4 words of the record in the sentence
+   ¶1.6 by date           1385-08-23-the-emperor-departs-on-hajj | date: “That same day”, after 16 Rajab 787, = 23 Aug 1385; checked by names ishbiliyya
+   ¶3.1 by date           1385-10-28-al-qahira | month: “Ramaḍān” read as Ramaḍān 787 AH (6 Oct 1385 – 4 Nov 1385); checked by names bolot-mamluk and 3 words of the record in the sentence
+   ¶4.2 by wording        1386-01-06-the-season-passed | wording: 8 words shared with the record (arafat, beneath, caravan, mercy, mount, pass), next best sentence 3
+   DRAWN ON               1386-jamaa-theological-seminaries | best sentence shares 7 words but the runner-up shares 5
+== 0791-08-15-of-the-hijaba-the-hisba-and-the-death-of-dua.md
+   DRAWN ON               1387-01-22-the-hijaba | best sentence shares 8 words but the runner-up shares 5
+   ¶2.4 by date           1387-01-22-ismail-to-the-diwan | date: “the first day of Muḥarram 789” read as 1 Muḥarram 789 AH = 22 Jan 1387; checked by names ismail-ibn-saad and 4 words of the record in the sentence
+   ¶3.2 by wording        1387-hammams | wording: 13 words shared with the record (acros, andalusi, bathhous, beginn, company, cornerstone), next best sentence 2
+   ¶3.4 by wording        1387-10-01-castile-and-france | wording: 7 words shared with the record (ardenn, county, france, join, little, rhone), next best sentence 2
+   DRAWN ON               1387-10-01-state | no written date fits and no sentence clearly matches
+   DRAWN ON               1388-12-28-death-of-dua | best sentence shares 5 words but the runner-up shares 4
+   ¶5.1 by date           1389-08-09-the-hisba | month: “Shaʿbān 791” read as Shaʿbān 791 AH (26 Jul 1389 – 23 Aug 1389); checked by 8 words of the record in the sentence
+== 0794-03-25-of-al-hajj-saad.md
+   ¶1.5 by date           1391-05-ottoman-marriage | date: “6 Jumādā al-Ākhira 793” read as 6 Jumādā al-Ākhira 793 AH = 11 May 1391; checked by names aisha-ottoman, ismail-ibn-saad and 4 words of the record in the sentence
+   ¶1.5 by date           1391-05-11-second-hajj-departs | date: “6 Jumādā al-Ākhira 793” read as 6 Jumādā al-Ākhira 793 AH = 11 May 1391; checked by names ishbiliyya, ismail-ibn-saad and 5 words of the record in the sentence
+   ¶2.2 by wording        1391-07-01-merchant-at-sea | wording: 12 words shared with the record (cloth, coast, deck, distant, fine, haggl), next best sentence 4
+   ¶2.4 by date           1391-07-25-al-qahira-again | month: “Shaʿbān” read as Shaʿbān 793 AH (4 Jul 1391 – 1 Aug 1391); checked by names bolot-mamluk and 2 words of the record in the sentence
+   ¶3.1 by date           1391-10-the-kaaba | month: “Dhū al-Qaʿda 793” read as Dhū al-Qaʿda 793 AH (30 Sep 1391 – 29 Oct 1391); checked by 4 words of the record in the sentence
+   DRAWN ON               1391-10-14-death-of-aiman | best sentence shares 10 words but the runner-up shares 8
+   ¶5.1 by date           1392-02-20-hajji | date: “25 Rabīʿ al-Awwal 794” read as 25 Rabīʿ al-Awwal 794 AH = 20 Feb 1392; checked by 2 words of the record in the sentence
+   DRAWN ON               1392-11-banking | no written date fits and no sentence clearly matches
+   DRAWN ON               1371-02-24-spread-of-usury | no written date fits and no sentence clearly matches
+== 0794-03-26-of-the-western-ocean.md
+   DRAWN ON               1391-06-08-guns-for-mali | best sentence shares 6 words but the runner-up shares 5
+   ¶2.3 by wording        1391-07-coast-to-mali | wording: 7 words shared with the record (al-din, al-jayyani, atlantic, coast, courtier, khayr), next best sentence 2
+   ¶2.3 by wording        1392-02-atlantic-expeditions | wording: 7 words shared with the record (al-din, atlantic, coast, down, khayr, toward), next best sentence 2
+== 0797-04-12-of-the-days-of-banbaluna-and-ejea.md
+   ¶1.2 by date           1393-coalition | month: “Jumādā al-Ākhira 795” read as Jumādā al-Ākhira 795 AH (14 Apr 1393 – 12 May 1393); checked by 4 words of the record in the sentence
+   DRAWN ON               1393-02-24-death-of-alfons | no written date fits and no sentence clearly matches
+   DRAWN ON               1394-01-02-eve-of-war | no written date fits and no sentence clearly matches
+   ¶1.10 by wording       1394-01-06-pedro-of-castile | wording: 4 words shared with the record (fernando, fifty-nine, pedro, twenty-three), next best sentence 1
+   ¶2.1 by date           1394-03-04-war-on-castile | date: “1 Jumādā al-Ūlā 796” read as 1 Jumādā al-Ūlā 796 AH = 4 Mar 1394; checked by names saad-ibn-yusuf
+   ¶3.2 by date           1394-06-13-battle-mouths-rhone-ii | month: “Shaʿbān” read as Shaʿbān 796 AH (1 Jun 1394 – 29 Jun 1394); checked by 4 words of the record in the sentence
+   DRAWN ON               1394-07-03-battle-atlantic | no written date fits and no sentence clearly matches
+   DRAWN ON               1394-07-14-battle-mouth-douro | best sentence shares 4 words but the runner-up shares 3
+   ¶3.3 by wording        1394-09-18-battle-bay-setubal-ii | wording: 6 words shared with the record (castilian, catalan, setubal, squadron, three, time), next best sentence 3
+   ¶4.2 by date           1394-08-siguenza | month: “Shawwāl” read as Shawwāl 796 AH (30 Jul 1394 – 27 Aug 1394); checked by 4 words of the record in the sentence
+   DRAWN ON               1394-08-18-battle-grosseto | no written date fits and no sentence clearly matches
+   DRAWN ON               1394-09-11-battle-piombino | no written date fits and no sentence clearly matches
+   DRAWN ON               1394-11-15-battle-grosseto-ii | no written date fits and no sentence clearly matches
+   DRAWN ON               1394-08-14-algarve-armies | month Shawwāl 796 also fits 1394-08-siguenza
+   ¶5.3 by date           1394-09-the-chase | month: “Dhū al-Qaʿda” read as Dhū al-Qaʿda 796 AH (28 Aug 1394 – 26 Sep 1394); checked by 10 words of the record in the sentence
+   ¶5.4 by date           1394-10-12-battle-pamplona | date: “16 Dhū al-Ḥijja” read as 16 Dhū al-Ḥijja 796 AH = 12 Oct 1394; checked by names banbaluna
+   ¶5.3 by wording        1394-11-17-return-from-the-north | wording: 7 words shared with the record (aragonese, castilian, catalan, ebro, shadow, toward), next best sentence 3
+   DRAWN ON               1394-12-14-battle-ejea | best sentence shares 5 words but the runner-up shares 5
+   ¶7.2 by date           1395-02-04-battle-penafiel | date: “12 Rabīʿ al-Thānī” read as 12 Rabīʿ al-Thānī 797 AH = 4 Feb 1395; checked by 4 words of the record in the sentence
+   ¶8.2 by wording        1395-05-24-battle-montalcino | wording: 4 words shared with the record (detachment, mamluk, montalcino, sienese), next best sentence 1
+== 0797-09-03-of-portalegre-and-the-peace-of-ramadan.md
+   DRAWN ON               1389-05-01-castile-portugal-split | no written date fits and no sentence clearly matches
+   DRAWN ON               1395-06-18-battle-portalegre | best sentence shares 4 words but the runner-up shares 4
+   ¶3.1 by date           1395-06-22-peace-castile-portugal | date: “the third day of Ramaḍān” read as 3 Ramaḍān 797 AH = 22 Jun 1395; checked by names pedro-of-castile and 4 words of the record in the sentence
+== 0797-09-03-of-the-encircling-sea-and-fifteen-years-of-building.md
+   ¶2.1 by date           1379-04-jamaa-of-the-capital | date: “7 Muḥarram 781” read as 7 Muḥarram 781 AH = 25 Apr 1379; checked by names ishbiliyya and 4 words of the record in the sentence
+   DRAWN ON               1379-11-capital-at-ishbiliya | best sentence shares 5 words but the runner-up shares 4
+   ¶2.3 by wording        1376-12-catalan-shipwrights | wording: 7 words shared with the record (build, catalan, five, galley, mamluk, port), next best sentence 2
+   ¶2.5 by wording        1383-06-17-ismail-admiral | wording: 9 words shared with the record (admiral, command, crown, diwan, hijaba, ismail), next best sentence 2
+   DRAWN ON               1387-hammams | no written date fits and no sentence clearly matches
+   DRAWN ON               1389-08-09-the-hisba | no written date fits and no sentence clearly matches
+   DRAWN ON               1392-11-banking | no written date fits and no sentence clearly matches
+   ¶6.3 by wording        1392-02-atlantic-expeditions | wording: 8 words shared with the record (al-din, azor, chart, coast, khayr, madeira), next best sentence 2
+   DRAWN ON               1395-06-22-fifteen-years-of-building | best sentence shares 6 words but the runner-up shares 5
+== 0797-10-17-of-the-diwan-al-insha-and-the-two-taifas.md
+   ¶1.3 by date           1395-08-05-diwan-al-insha | date: “17 Shawwāl 797” read as 17 Shawwāl 797 AH = 5 Aug 1395; checked by names saad-ibn-yusuf and 11 words of the record in the sentence
+   ¶1.3 by date           1395-08-05-the-embassies | date: “17 Shawwāl 797” read as 17 Shawwāl 797 AH = 5 Aug 1395; checked by names saad-ibn-yusuf
+   ¶1.3 by date           1395-08-05-two-new-taifas | date: “17 Shawwāl 797” read as 17 Shawwāl 797 AH = 5 Aug 1395; checked by names saad-ibn-yusuf
+   DRAWN ON               1395-08-05-hold-on-al-ushbuna | best sentence shares 7 words but the runner-up shares 4
+== 0799-11-19-of-majrit-the-acequias-and-the-eternal-isles.md
+   ¶1.5 by date           1396-03-13-majrit-and-tulaytula | month: “Jumādā al-Ākhira 798” read as Jumādā al-Ākhira 798 AH (12 Mar 1396 – 9 Apr 1396); checked by names majrit, saad-ibn-yusuf, tulaytula and 7 words of the record in the sentence
+   ¶2.1 by date           1397-08-14-infrastructure | month: “Dhū al-Qaʿda 799” read as Dhū al-Qaʿda 799 AH (27 Jul 1397 – 25 Aug 1397); checked by names al-mariyya, al-ushbuna, binar, istijja, malaqa, qarmuna, qurtuba, shaluqa-al-kubra, shantarin and 4 words of the record in the sentence
+   ¶3.6 by wording        1397-08-14-explorers-push-south | wording: 9 words shared with the record (al-abid, cape, coast, cousin, ismail, muhammad), next best sentence 3
+== 0800-12-20-of-the-grandsons-and-the-prince-from-benabarre.md
+   ¶1.4 by date           1393-02-24-death-of-alfons | month: “Rabīʿ al-Thānī 795” read as Rabīʿ al-Thānī 795 AH (14 Feb 1393 – 14 Mar 1393); checked by names alfons-de-borja, rodrigo-de-borja and 3 words of the record in the sentence
+   DRAWN ON               1398-09-03-the-grandsons | month Dhū al-Ḥijja 800 also fits 1398-09-03-yusuf-comes-home
+   ¶6.2 by date           1398-09-03-yusuf-comes-home | month: “Dhū al-Ḥijja 800” read as Dhū al-Ḥijja 800 AH (15 Aug 1398 – 12 Sep 1398); checked by 8 words of the record in the sentence
+== 0805-12-27-of-the-prospectors-and-the-jamaa-of-the-markets.md
+   ¶1.2 by date           1402-01-17-highland-prospecting-survey | month: “Jumādā al-Ākhira 804” read as Jumādā al-Ākhira 804 AH (6 Jan 1402 – 3 Feb 1402); checked by names khalid-ibn-yahya and 9 words of the record in the sentence
+   DRAWN ON               1402-01-18-prospecting-commission | month Jumādā al-Ākhira 804 also fits 1402-01-17-highland-prospecting-survey
+   ¶3.2 by date           1402-03-09-iron-at-al-iskuriyal | month: “Shaʿbān” read as Shaʿbān 804 AH (6 Mar 1402 – 3 Apr 1402); checked by 12 words of the record in the sentence
+   ¶3.3 by date           1402-04-26-silver-at-qusantina | month: “Ramaḍān” read as Ramaḍān 804 AH (4 Apr 1402 – 3 May 1402); checked by names qusantina and 13 words of the record in the sentence
+   ¶3.4 by date           1402-06-11-gems-at-qrabaqa | month: “Dhū al-Qaʿda” read as Dhū al-Qaʿda 804 AH (2 Jun 1402 – 1 Jul 1402); checked by 10 words of the record in the sentence
+   ¶3.7 by date           1402-08-03-survey-returns | month: “Muḥarram 805” read as Muḥarram 805 AH (1 Aug 1402 – 30 Aug 1402); checked by names ishbiliyya and 6 words of the record in the sentence
+   ¶4.2 by wording        1402-08-burghers-privileges | wording: 7 words shared with the record (citi, coin, gold, good, grant, raise), next best sentence 3
+   DRAWN ON               1402-08-the-umara | no written date fits and no sentence clearly matches
+   DRAWN ON               1402-09-jamaa-of-the-markets | best sentence shares 5 words but the runner-up shares 4
+   ¶5.4 by wording        1402-09-jewellery-charter | wording: 8 words shared with the record (charter, double, grant, ishbiliya, jeweller, qusantina), next best sentence 3
+   ¶6.2 by wording        1403-07-18-state | wording: 7 words shared with the record (beside, eight, ishbiliya, jeweller, market, nine), next best sentence 3
+== 0807-04-16-of-the-crusade-of-806-and-the-peace-of-avignon.md
+   ¶1.3 by date           1404-02-01-the-crusade | date: “19 Rajab 806” read as 19 Rajab 806 AH = 1 Feb 1404; checked by names rodrigo-de-borja, saad-ibn-yusuf and 6 words of the record in the sentence
+   ¶3.2 by wording        1404-02-09-battle-gulf-of-roses | wording: 8 words shared with the record (both, catalan, days, eight, gulf, papal), next best sentence 2
+   DRAWN ON               1404-05-10-battle-aix | no written date fits and no sentence clearly matches
+   ¶3.4 by wording        1404-06-24-battle-mouths-rhone-ii | wording: 7 words shared with the record (catalonia, join, mouth, ninety-one, papal, rhone), next best sentence 1
+   ¶3.4 by date           1404-08-03-battle-gulf-florent | month: “Muḥarram 807” read as Muḥarram 807 AH (10 Jul 1404 – 8 Aug 1404); checked by 5 words of the record in the sentence
+   ¶4.1 by date           1404-07-04-march-on-avignon | month: “Dhū al-Ḥijja 806” read as Dhū al-Ḥijja 806 AH (10 Jun 1404 – 9 Jul 1404); checked by 5 words of the record in the sentence
+   ¶5.1 by date           1404-10-01-the-sephardim-of-al-mariyya | month: “Rabīʿ al-Awwal 807” read as Rabīʿ al-Awwal 807 AH (7 Sep 1404 – 6 Oct 1404); checked by names al-mariyya and 3 words of the record in the sentence
+   ¶6.2 by wording        1404-10-10-battle-barjols | wording: 4 words shared with the record (back, barjol, provence, valencian), next best sentence 1
+   ¶6.3 by wording        1404-10-20-battle-barjols-ii | wording: 5 words shared with the record (days, destroy, later, left, papal), next best sentence 2
+   DRAWN ON               1404-avignon-taken | no written date fits and no sentence clearly matches
+   ¶7.1 by date           1404-10-22-peace-of-avignon | date: “16 Rabīʿ al-Thānī 807” read as 16 Rabīʿ al-Thānī 807 AH = 22 Oct 1404; checked by 2 words of the record in the sentence
+== 0807-09-16-of-the-risings-of-807-and-the-death-of-the-emperor-saad.md
+   DRAWN ON               1404-10-22-peace-of-avignon | no written date fits and no sentence clearly matches
+   ¶2.2 by date           1405-01-01-the-risings | date: “the same day”, after 28 Jumādā al-Ākhira 807, = 1 Jan 1405; checked by names saad-ibn-ismail and 5 words of the record in the sentence
+   ¶3.2 by date           1405-03-02-death-of-the-emperor | date: “29 Shaʿbān 807” read as 29 Shaʿbān 807 AH = 2 Mar 1405; checked by 3 words of the record in the sentence
+   DRAWN ON               1405-03-02-accession-of-ismail | best sentence shares 8 words but the runner-up shares 5
+   DRAWN ON               1403-07-18-state | no written date fits and no sentence clearly matches
+   ¶7.2 by date           1405-03-18-battle-cuenca | date: “16 Ramaḍān” read as 16 Ramaḍān 807 AH = 18 Mar 1405; checked by 2 words of the record in the sentence
+   DRAWN ON               1363-08-02-state | best sentence shares 4 words but the runner-up shares 3
+== 0808-03-06-of-granadilla-the-end-of-the-risings-and-al-gharb.md
+   ¶2.1 by date           1405-01-28-battle-buitrago | month: “Rajab” read as Rajab 807 AH (3 Jan 1405 – 1 Feb 1405); checked by 6 words of the record in the sentence
+   DRAWN ON               1405-03-18-battle-cuenca | no written date fits and no sentence clearly matches
+   ¶2.5 by date           1405-07-02-battle-granadilla | date: “4 Muḥarram 808” read as 4 Muḥarram 808 AH = 2 Jul 1405; checked by names khalid-ibn-yahya and 5 words of the record in the sentence
+   ¶2.7 by wording        1405-07-08-ciudad-rodrigo-crushed | wording: 8 words shared with the record (among, avila, ciudad, days, ismail, rodrigo), next best sentence 3
+   ¶3.1 by date           1405-07-10-battle-cuenca-ii | date: “12 Muḥarram” read as 12 Muḥarram 808 AH = 10 Jul 1405; checked by 6 words of the record in the sentence
+   ¶3.3 by date           1405-08-05-battle-lisbon | date: “8 Ṣafar” read as 8 Ṣafar 808 AH = 5 Aug 1405; checked by names al-ushbuna and 2 words of the record in the sentence
+   ¶4.1 by date           1405-08-24-the-risings-crushed | date: “27 Ṣafar 808” read as 27 Ṣafar 808 AH = 24 Aug 1405; checked by names majrit, shantarin, yabura and 3 words of the record in the sentence
+   ¶5.3 by date           1405-09-01-al-gharb-annexed | date: “6 Rabīʿ al-Awwal 808” read as 6 Rabīʿ al-Awwal 808 AH = 1 Sep 1405; checked by names baja, shilb, ukshunuba and 2 words of the record in the sentence
+   ¶5.3 by wording        1395-08-05-diwan-al-insha | wording: 5 words shared with the record (al-insha, court, crown, diwan, drawn), next best sentence 2
+== 0811-03-12-of-the-old-capital-and-the-sons-of-muhammad.md
+   DRAWN ON               1405-08-24-the-risings-crushed | no written date fits and no sentence clearly matches
+   ¶2.1 by date           1408-02-20-death-of-saad-ibn-faraj | date: “22 Ramaḍān 810” read as 22 Ramaḍān 810 AH = 20 Feb 1408; checked by names maryam-bint-saad-ibn-faraj, qunka, saad-ibn-faraj and 5 words of the record in the sentence
+   DRAWN ON               1408-03-01-capital-of-the-old-caliphate | best sentence shares 5 words but the runner-up shares 3
+   ¶4.1 by date           1408-05-27-death-of-ismail-ibn-yusuf | date: “the first day of Muḥarram 811” read as 1 Muḥarram 811 AH = 27 May 1408; checked by names ismail-ibn-yusuf and 4 words of the record in the sentence
+   DRAWN ON               1408-08-05-the-sons-of-muhammad | best sentence shares 6 words but the runner-up shares 5
+== 0814-07-14-of-cuellar-porto-and-the-end-of-portugal.md
+   ¶1.1 by date           1410-06-29-war-on-castile | date: “25 Ṣafar 813” read as 25 Ṣafar 813 AH = 29 Jun 1410; checked by names abu-al-fadl-marinid, ismail-ibn-saad and 4 words of the record in the sentence
+   ¶2.2 by wording        1410-09-16-battle-cape-mondego | wording: 7 words shared with the record (admiral, cape, castilian, mondego, pedro, tilimsan), next best sentence 3
+   ¶2.3 by wording        1410-10-09-battle-penafiel | wording: 4 words shared with the record (castilian, destroy, penafiel, qunka), next best sentence 2
+   ¶2.4 by date           1410-12-11-battle-cuellar | month: “Shaʿbān” read as Shaʿbān 813 AH (29 Nov 1410 – 27 Dec 1410); checked by 4 words of the record in the sentence
+   ¶3.4 by date           1411-01-13-battle-cuellar-ii | date: “17 Ramaḍān 813” read as 17 Ramaḍān 813 AH = 13 Jan 1411; checked by 5 words of the record in the sentence
+   ¶4.2 by date           1411-03-10-battle-bay-setubal | month: “Dhū al-Qaʿda” read as Dhū al-Qaʿda 813 AH (25 Feb 1411 – 26 Mar 1411); checked by 10 words of the record in the sentence
+   ¶4.4 by date           1411-05-15-battle-toro | month: “Muḥarram 814” read as Muḥarram 814 AH (25 Apr 1411 – 24 May 1411); checked by 3 words of the record in the sentence
+   ¶4.5 by date           1411-06-21-battle-mouth-douro-ii | month: “Ṣafar” read as Ṣafar 814 AH (25 May 1411 – 22 Jun 1411); checked by names muhammad-ibn-ismail-ibn-saad and 8 words of the record in the sentence
+   ¶4.8 by date           1411-08-28-battle-besteiros | month: “Jumādā al-Ūlā” read as Jumādā al-Ūlā 814 AH (21 Aug 1411 – 19 Sep 1411); checked by 4 words of the record in the sentence
+   ¶5.1 by date           1411-09-02-castile-capitulates | date: “13 Jumādā al-Ūlā 814” read as 13 Jumādā al-Ūlā 814 AH = 2 Sep 1411; checked by 2 words of the record in the sentence
+   ¶5.7 by wording        1411-09-the-march-on-porto | wording: 6 words shared with the record (capital, crown, march, porto, prince, round), next best sentence 3
+   ¶5.10 by date          1411-10-07-porto-falls | date: “18 Jumādā al-Ākhira” read as 18 Jumādā al-Ākhira 814 AH = 7 Oct 1411; checked by 3 words of the record in the sentence
+   ¶6.2 by date           1411-10-27-battle-guimaraes | month: “Rajab” read as Rajab 814 AH (19 Oct 1411 – 17 Nov 1411); checked by 4 words of the record in the sentence
+   ¶7.1 by date           1411-11-01-the-end-of-portugal | date: “14 Rajab 814” read as 14 Rajab 814 AH = 1 Nov 1411; checked by names fernando-of-castile, pedro-of-castile
+   DRAWN ON               1411-11-01-four-new-taifas | best sentence shares 6 words but the runner-up shares 6
+   ¶8.8 by wording        1411-11-01-europe-horrified | wording: 5 words shared with the record (england, europe, france, horrifi, pari), next best sentence 1
+== 0815-03-14-of-the-captains-of-811-and-the-pepper-of-the-indies.md
+   DRAWN ON               1408-10-11-expeditions | best sentence shares 5 words but the runner-up shares 4
+   ¶4.2 by wording        1412-01-01-funchal | wording: 10 words shared with the record (beyond, castilian, crown, empire, funchal, madeira), next best sentence 1
+   ¶5.5 by wording        1412-06-24-spice-trade | wording: 12 words shared with the record (al-ushbuna, barcelona, bordeaux, constantinople, genoa, ishbiliya), next best sentence 3
+   DRAWN ON               1397-08-14-explorers-push-south | no written date fits and no sentence clearly matches
+== 0816-01-29-of-the-madrasas-of-815.md
+   ¶1.1 by date           1409-09-18-death-of-fatima | month: “Jumādā al-Ūlā 812” read as Jumādā al-Ūlā 812 AH (11 Sep 1409 – 10 Oct 1409); checked by names fatima-bint-yusuf, isabel-de-montsoriu and 5 words of the record in the sentence
+   ¶1.4 by date           1410-04-17-birth-of-abu-al-hasan-ali | month: “Dhū al-Ḥijja” read as Dhū al-Ḥijja 812 AH (6 Apr 1410 – 5 May 1410); checked by names abu-al-hasan-ali-ibn-saad, maryam-bint-saad-ibn-faraj, qunka, saad-ibn-ismail-ibn-saad and 4 words of the record in the sentence
+   DRAWN ON               1411-11-01-the-end-of-portugal | no written date fits and no sentence clearly matches
+   ¶2.4 by date           1413-01-14-madrasas-everywhere | date: “11 Shawwāl 815” read as 11 Shawwāl 815 AH = 14 Jan 1413; checked by names ismail-ibn-saad and 6 words of the record in the sentence
+   ¶4.1 by date           1413-05-01-education-of-the-people | date: “29 Muḥarram 816” read as 29 Muḥarram 816 AH = 1 May 1413; checked by names saad-ibn-yusuf and 4 words of the record in the sentence
+   DRAWN ON               1397-08-14-infrastructure | no written date fits and no sentence clearly matches
+== 0817-08-09-of-the-jamaa-of-817-and-the-landlords-of-the-north.md
+   ¶2.6 by date           1410-09-01-catalan-privileges-return | month: “Jumādā al-Ūlā 813” read as Jumādā al-Ūlā 813 AH (1 Sep 1410 – 30 Sep 1410); checked by 9 words of the record in the sentence
+   ¶1.4 by date           1414-10-24-rising-at-pamplona | date: “9 Shaʿbān” read as 9 Shaʿbān 817 AH = 24 Oct 1414; checked by names banbaluna
+   ¶1.4 by date           1414-10-24-jamaa-of-the-mercenaries | date: “9 Shaʿbān” read as 9 Shaʿbān 817 AH = 24 Oct 1414; checked by names ismail-ibn-saad and 2 words of the record in the sentence
+   ¶1.4 by date           1414-10-24-the-umara-mutinous | date: “9 Shaʿbān” read as 9 Shaʿbān 817 AH = 24 Oct 1414; checked by names ismail-ibn-saad
+   DRAWN ON               1402-08-the-umara | best sentence shares 5 words but the runner-up shares 3
+   DRAWN ON               1402-09-jamaa-of-the-markets | no written date fits and no sentence clearly matches
+== 0822-08-10-of-the-universities-the-letter-from-denia-and-the-road-to-balansiyya.md
+   ¶1.3 by date           1416-05-20-the-first-universities | date: “22 Rabīʿ al-Awwal 819” read as 22 Rabīʿ al-Awwal 819 AH = 20 May 1416; checked by names gharnata, ishbiliyya, ismail-ibn-saad, malaqa, qurtuba, tulaytula and 8 words of the record in the sentence
+   ¶2.2 by date           1419-04-01-the-letter-from-denia | month: “Rabīʿ al-Awwal 822” read as Rabīʿ al-Awwal 822 AH (28 Mar 1419 – 26 Apr 1419); checked by names daniya and 5 words of the record in the sentence
+   DRAWN ON               1419-04-the-catalans-and-valencia | best sentence shares 6 words but the runner-up shares 5
+   ¶5.1 by date           1419-09-the-road-to-balansiyya | date: “10 Shaʿbān 822” read as 10 Shaʿbān 822 AH = 1 Sep 1419; checked by 5 words of the record in the sentence
+   DRAWN ON               1413-01-14-madrasas-everywhere | no written date fits and no sentence clearly matches
+   DRAWN ON               1413-05-01-education-of-the-people | no written date fits and no sentence clearly matches
+== 0823-07-21-of-daniel-the-green-cape-and-angra.md
+   ¶1.1 by date           1419-09-04-death-of-daniel | date: “13 Shaʿbān 822” read as 13 Shaʿbān 822 AH = 4 Sep 1419; checked by 2 words of the record in the sentence
+   ¶2.2 by date           1420-03-09-maps-of-cabo-verde | date: “23 Ṣafar 823” read as 23 Ṣafar 823 AH = 9 Mar 1420; checked by 3 words of the record in the sentence
+   ¶3.3 by date           1420-08-01-angra | date: “21 Rajab 823” read as 21 Rajab 823 AH = 1 Aug 1420; checked by 6 words of the record in the sentence
+   ¶3.2 by wording        1415-04-01-maxorata | wording: 5 words shared with the record (canari, crown, guanche, islander, maxorata), next best sentence 2
+   DRAWN ON               1412-01-01-funchal | no written date fits and no sentence clearly matches
+   DRAWN ON               1408-10-11-expeditions | best sentence shares 4 words but the runner-up shares 3
+== 0823-08-01-of-the-household-of-the-emperor-balansiyya-and-fermoselle.md
+   ¶1.1 by date           1416-03-25-death-of-umm-al-fath | date: “25 Muḥarram 819” read as 25 Muḥarram 819 AH = 25 Mar 1416; checked by names umm-al-fath-bint-saad and 3 words of the record in the sentence
+   ¶1.4 by date           1416-09-29-jadila-steadies-the-realm | month: “Shaʿbān” read as Shaʿbān 819 AH (24 Sep 1416 – 22 Oct 1416); checked by names jadila-bint-saad-ibn-faraj and 3 words of the record in the sentence
+   ¶2.1 by date           1416-10-23-autocracy | date: “the first day of Ramaḍān 819” read as 1 Ramaḍān 819 AH = 23 Oct 1416; checked by names ismail-ibn-saad
+   ¶3.2 by date           1416-11-18-shalamanka-handed-north | date: “27 Ramaḍān” read as 27 Ramaḍān 819 AH = 18 Nov 1416; checked by names abu-hammu-rahhu, ahmad-ibn-ismail-ibn-saad, ahmad-ibn-yusuf-ibn-ismail, shalamanka and 4 words of the record in the sentence
+   ¶4.2 by date           1416-12-27-death-of-jadila-bint-yusuf | month: “Dhū al-Qaʿda 819” read as Dhū al-Qaʿda 819 AH (21 Dec 1416 – 19 Jan 1417); checked by names jadila-bint-yusuf and 5 words of the record in the sentence
+   ¶3.7 by date           1417-12-15-saad-ibn-yusuf-to-the-diwan | month: “Dhū al-Qaʿda 820” read as Dhū al-Qaʿda 820 AH (10 Dec 1417 – 8 Jan 1418); checked by names saad-ibn-yusuf-ibn-saad and 10 words of the record in the sentence
+   ¶4.3 by date           1419-08-29-death-of-aisha-bint-yusuf | month: “Shaʿbān 822” read as Shaʿbān 822 AH (23 Aug 1419 – 20 Sep 1419); checked by names aisha-bint-yusuf and 5 words of the record in the sentence
+   ¶7.2 by wording        1420-06-01-rising-of-zamora | wording: 7 words shared with the record (avellaneda, castilian, eduardo, kingdom, liyun, proclaim), next best sentence 1
+   ¶6.1 by date           1420-08-01-valencia-annexed | date: “21 Rajab 823” read as 21 Rajab 823 AH = 1 Aug 1420; checked by names al-qant, balansiyya, daniya, shatiba and 2 words of the record in the sentence
+   ¶7.4 by wording        1420-08-10-battle-fermoselle | wording: 5 words shared with the record (above, duero, fermoselle, gorg, rebel), next best sentence 1
+   DRAWN ON               1420-08-11-rising-crushed | no written date fits and no sentence clearly matches
+== 0823-08-01-the-second-survey-of-the-kingdoms.md
+   ¶1.5 by date           1420-08-11-the-world | date: “the first day of Shaʿbān 823” read as 1 Shaʿbān 823 AH = 11 Aug 1420; checked by names ismail-ibn-saad
+   ¶4.7 by date           1417-04-22-ottoman-peace | month: “Rabīʿ al-Awwal 820” read as Rabīʿ al-Awwal 820 AH (18 Apr 1417 – 17 May 1417); checked by names ahmad-ottoman and 7 words of the record in the sentence
+   ¶6.2 by date           1417-03-19-death-of-abu-al-fadl | month: “Muḥarram 820” read as Muḥarram 820 AH (18 Feb 1417 – 19 Mar 1417); checked by names abu-al-fadl-marinid, fas, yahya-marinid and 5 words of the record in the sentence
+   DRAWN ON               1417-07-14-yahya-of-fas | no written date fits and no sentence clearly matches
+   DRAWN ON               1411-11-27-alliance-of-tunis | no written date fits and no sentence clearly matches
+   DRAWN ON               1370-09-13-the-world | best sentence shares 4 words but the runner-up shares 4
+== 0823-08-25-of-the-petty-kings-of-the-mountains.md
+   DRAWN ON               1420-09-04-the-fall-of-qashtala | best sentence shares 6 words but the runner-up shares 6
+   DRAWN ON               1411-11-01-the-end-of-portugal | no written date fits and no sentence clearly matches
+   DRAWN ON               1420-08-11-the-world | no written date fits and no sentence clearly matches
+== 0827-09-18-of-the-three-brides-and-the-peace-of-kayseri.md
+   DRAWN ON               1423-03-26-the-three-brides | best sentence shares 11 words but the runner-up shares 6
+   ¶3.2 by date           1421-11-04-kingdom-of-burtuqal | date: “8 Dhū al-Qaʿda 824” read as 8 Dhū al-Qaʿda 824 AH = 4 Nov 1421; checked by names ahmad-ibn-ismail-ibn-yusuf and 6 words of the record in the sentence
+   ¶2.2 by date           1422-04-18-death-of-umm-al-fath-bint-yusuf | date: “25 Rabīʿ al-Thānī 825” read as 25 Rabīʿ al-Thānī 825 AH = 18 Apr 1422; checked by names umm-al-fath-bint-yusuf and 6 words of the record in the sentence
+   ¶2.3 by date           1422-10-14-death-of-pedro-of-castile | date: “27 Shawwāl 825” read as 27 Shawwāl 825 AH = 14 Oct 1422; checked by names pedro-of-castile and 5 words of the record in the sentence
+   ¶4.2 by wording        1423-11-05-catalans-and-sephardim | wording: 12 words shared with the record (accept, andalusi, avignon, balansiyya, beside, catalan), next best sentence 3
+   ¶5.2 by date           1423-09-19-mamluks-declare-war | date: “13 Shawwāl 826” read as 13 Shawwāl 826 AH = 19 Sep 1423; checked by 3 words of the record in the sentence
+   DRAWN ON               1423-10-01-call-of-the-mamluks | best sentence shares 5 words but the runner-up shares 4
+   ¶6.5 by wording        1424-08-08-peace-of-kayseri | wording: 11 words shared with the record (anatolia, central, corum, harput, kayseri, malatya), next best sentence 3
+== 0831-02-11-of-the-islands-of-the-ocean-and-the-naft-of-ethiopia.md
+   ¶2.2 by date           1421-06-01-tamaraceite | month: “Jumādā al-Ūlā 824” read as Jumādā al-Ūlā 824 AH (4 May 1421 – 2 Jun 1421); checked by 4 words of the record in the sentence
+   ¶5.2 by date           1421-08-01-the-secret-of-the-naft | month: “Shaʿbān 824” read as Shaʿbān 824 AH (1 Aug 1421 – 29 Aug 1421); checked by names ismail-ibn-saad and 6 words of the record in the sentence
+   ¶3.2 by date           1422-09-01-santo-antao | month: “Ramaḍān 825” read as Ramaḍān 825 AH (19 Aug 1422 – 17 Sep 1422); checked by 7 words of the record in the sentence
+   ¶4.2 by date           1423-02-01-santa-cruz-das-flores | month: “Ṣafar 826” read as Ṣafar 826 AH (14 Jan 1423 – 11 Feb 1423); checked by 4 words of the record in the sentence
+   ¶3.3 by date           1425-03-01-fogo | month: “Rabīʿ al-Thānī 828” read as Rabīʿ al-Thānī 828 AH (20 Feb 1425 – 20 Mar 1425); checked by 3 words of the record in the sentence
+   ¶2.2 by date           1425-06-01-tedote | month: “Rajab 828” read as Rajab 828 AH (19 May 1425 – 17 Jun 1425); checked by 3 words of the record in the sentence
+   ¶4.2 by date           1425-07-01-horta | month: “Shaʿbān 828” read as Shaʿbān 828 AH (18 Jun 1425 – 16 Jul 1425); checked by 3 words of the record in the sentence
+   ¶3.4 by date           1427-08-01-santiago-cape-verde | month: “Shawwāl 830” read as Shawwāl 830 AH (26 Jul 1427 – 23 Aug 1427); checked by 4 words of the record in the sentence
+   ¶4.2 by date           1427-12-01-ponta-delgada | date: “11 Ṣafar 831” read as 11 Ṣafar 831 AH = 1 Dec 1427; checked by 4 words of the record in the sentence
+   DRAWN ON               1420-08-01-angra | no written date fits and no sentence clearly matches
+== 0831-08-10-of-the-jamaa-of-831-and-the-armouries.md
+   ¶1.2 by date           1425-03-25-galicia-takes-asturias | month: “Jumādā al-Ūlā 828” read as Jumādā al-Ūlā 828 AH (21 Mar 1425 – 19 Apr 1425); checked by names diego-villamarin and 7 words of the record in the sentence
+   ¶1.4 by date           1426-02-01-truce-with-castile-ends | month: “Rabīʿ al-Awwal 829” read as Rabīʿ al-Awwal 829 AH (11 Jan 1426 – 9 Feb 1426); checked by 5 words of the record in the sentence
+   DRAWN ON               1427-04-28-war-in-france | no written date fits and no sentence clearly matches
+   ¶4.2 by date           1425-12-17-umm-al-fath-to-the-diwan | month: “Ṣafar 829” read as Ṣafar 829 AH (13 Dec 1425 – 10 Jan 1426); checked by names ahmad-ibn-yusuf-ibn-ismail, jadila-bint-saad-ibn-faraj, umm-al-fath-bint-muhammad and 7 words of the record in the sentence
+   ¶4.4 by date           1428-04-30-death-of-yusuf-of-banbaluna | date: “15 Rajab 831” read as 15 Rajab 831 AH = 30 Apr 1428; checked by names ahmad-ibn-yusuf-ibn-ismail, banbaluna, yusuf-ibn-ismail and 8 words of the record in the sentence
+   DRAWN ON               1428-05-25-the-spies-go-north | best sentence shares 4 words but the runner-up shares 3
+   ¶3.2 by wording        1428-05-25-the-armouries | wording: 5 words shared with the record (armouri, built, citi, dozen, empire), next best sentence 1
+   ¶5.4 by wording        1428-05-25-jamaa-against-primacy | wording: 8 words shared with the record (count, decision, equal, hous, important, nobility), next best sentence 2
+   ¶5.4 by wording        1428-05-25-primacy-revoked | wording: 9 words shared with the record (count, decision, equal, held, hous, nobility), next best sentence 2
+== 0831-08-19-of-the-village-granaries-and-the-road-to-niani.md
+   ¶1.4 by wording        1428-06-03-the-village-granaries | wording: 12 words shared with the record (aside, empire, farm, granary, harvest, insistence), next best sentence 5
+   DRAWN ON               1428-06-03-farms-mills-and-acequias | best sentence shares 7 words but the runner-up shares 4
+   DRAWN ON               1428-06-03-embassy-to-niani | best sentence shares 6 words but the runner-up shares 6
+   DRAWN ON               1428-05-25-primacy-revoked | no written date fits and no sentence clearly matches
+   DRAWN ON               1391-07-coast-to-mali | best sentence shares 5 words but the runner-up shares 3
+== 0832-02-22-of-the-english-crown-of-france.md
+   ¶1.3 by date           1427-04-28-war-in-france | month: “Rajab 830” read as Rajab 830 AH (28 Apr 1427 – 27 May 1427); checked by 3 words of the record in the sentence
+   DRAWN ON               1428-11-28-peace-of-the-hundred-years-war | best sentence shares 10 words but the runner-up shares 7
+   ¶3.2 by date           1428-12-01-the-english-crown-of-france | date: “22 Ṣafar 832” read as 22 Ṣafar 832 AH = 1 Dec 1428; checked by names philippe-vii-of-france and 4 words of the record in the sentence
+   DRAWN ON               1428-05-25-the-spies-go-north | no written date fits and no sentence clearly matches
+   ¶4.6 by wording        1419-09-the-road-to-balansiyya | wording: 10 words shared with the record (another, balansiyya, border, built, carry, crusade), next best sentence 2
+== 0832-09-25-of-the-death-of-the-emperor-ismail-and-the-two-princes.md
+   ¶1.2 by wording        1428-12-01-forts-of-jaca-and-talarn | wording: 11 words shared with the record (arghun, catalonia, english, fortress, jaca, mountain), next best sentence 2
+   DRAWN ON               1428-12-01-catalonia-to-the-crown | no written date fits and no sentence clearly matches
+   ¶2.1 by date           1429-06-11-the-angevin-empire | month: “Ramaḍān 832” read as Ramaḍān 832 AH (4 Jun 1429 – 3 Jul 1429); checked by names edward-v-of-england and 7 words of the record in the sentence
+   ¶3.2 by date           1429-06-28-death-of-the-emperor-ismail | date: “25 Ramaḍān 832” read as 25 Ramaḍān 832 AH = 28 Jun 1429; checked by names ishbiliyya and 6 words of the record in the sentence
+   DRAWN ON               1429-06-28-accession-of-muhammad-v | best sentence shares 5 words but the runner-up shares 3
+   DRAWN ON               1429-06-28-the-two-princes | best sentence shares 6 words but the runner-up shares 4
+   DRAWN ON               1405-03-02-death-of-the-emperor | no written date fits and no sentence clearly matches
+== 0833-10-23-of-the-war-of-shant-yaqub-and-the-shrine-of-the-apostle.md
+   DRAWN ON               1430-05-18-the-princes-counsel | best sentence shares 4 words but the runner-up shares 3
+   DRAWN ON               1430-05-18-war-on-galicia | best sentence shares 4 words but the runner-up shares 3
+   DRAWN ON               1430-05-18-take-the-capital | no written date fits and no sentence clearly matches
+   ¶4.2 by date           1430-06-30-battle-santiago | date: “8 Shawwāl 833” read as 8 Shawwāl 833 AH = 30 Jun 1430; checked by names abu-al-hasan-ali-ibn-ahmad
+   DRAWN ON               1430-06-30-the-emperor-worldly | no written date fits and no sentence clearly matches
+   ¶5.7 by wording        1430-06-30-ahmad-the-architect | wording: 4 words shared with the record (ahmad, capital, forebear, prince), next best sentence 2
+   ¶5.5 by wording        1430-06-30-the-emperors-household | wording: 8 words shared with the record (blood, chosen, isabel, jadila, magdalena, mind), next best sentence 1
+   ¶6.2 by date           1430-07-15-santiago-falls | date: “23 Shawwāl 833” read as 23 Shawwāl 833 AH = 15 Jul 1430; checked by 5 words of the record in the sentence
+   ¶2.5 by wording        1420-09-04-the-fall-of-qashtala | wording: 5 words shared with the record (diego, kingdom, left, mountain, villamarin), next best sentence 2
+   DRAWN ON               1425-03-25-galicia-takes-asturias | no written date fits and no sentence clearly matches
+== 0834-02-16-of-the-war-of-the-mountains-and-the-peace-of-safar.md
+   ¶1.4 by date           1430-08-05-battle-oviedo | date: “15 Dhū al-Qaʿda” read as 15 Dhū al-Qaʿda 833 AH = 5 Aug 1430; checked by names juan-cangas
+   DRAWN ON               1430-08-17-the-princes-opening | best sentence shares 4 words but the runner-up shares 3
+   DRAWN ON               1430-08-17-war-on-navarre | no written date fits and no sentence clearly matches
+   DRAWN ON               1430-11-03-battle-bilbo | no written date fits and no sentence clearly matches
+   ¶4.3 by date           1430-11-03-all-three-fall | date: “16 Ṣafar 834” read as 16 Ṣafar 834 AH = 3 Nov 1430; checked by 2 words of the record in the sentence
+   ¶5.2 by wording        1430-11-03-peace-with-galicia | wording: 5 words shared with the record (annex, coruna, llan, oviedo, whole), next best sentence 2
+   ¶4.3 by date           1430-11-03-peace-with-navarre-and-castile | date: “16 Ṣafar 834” read as 16 Ṣafar 834 AH = 3 Nov 1430; checked by 2 words of the record in the sentence
+   DRAWN ON               1430-11-03-iberia-is-conquered | no written date fits and no sentence clearly matches
+   ¶7.2 by date           1430-11-03-the-north-divided | date: “the same day”, after 3 Nov 1430, = 3 Nov 1430; checked by names abu-hammu-rahhu, ahmad-ibn-ismail-ibn-saad, ahmad-ibn-yusuf-ibn-ismail and 2 words of the record in the sentence
+   ¶7.2 by date           1430-11-03-taifa-of-galicia | date: “the same day”, after 3 Nov 1430, = 3 Nov 1430; checked by names diego-sotomaior
+== 0834-02-16-the-close-of-the-book-of-the-marches.md
+   DRAWN ON               1430-11-03-iberia-is-conquered | no written date fits and no sentence clearly matches
+   ¶4.2 by date           1430-11-03-the-north-divided | date: “16 Ṣafar 834” read as 16 Ṣafar 834 AH = 3 Nov 1430; checked by names ahmad-ibn-ismail-ibn-saad
+   DRAWN ON               1430-11-03-taifa-of-galicia | no written date fits and no sentence clearly matches
+   ¶6.2 by wording        1430-07-15-santiago-falls | wording: 4 words shared with the record (apostle, gloria, ishbiliya, portico), next best sentence 1
+== 0835-08-29-of-the-trading-posts-of-the-gold-coast-and-the-spice-road.md
+   DRAWN ON               1432-05-01-trading-posts | best sentence shares 8 words but the runner-up shares 7
+   ¶1.2 by wording        1428-06-03-embassy-to-niani | wording: 6 words shared with the record (andalusi, envoy, mali, mansa, niani, tariff), next best sentence 3
+   DRAWN ON               1432-05-the-dar-al-sinaa | no written date fits and no sentence clearly matches
+== 0835-08-29-of-the-warmongers-name-the-crusade-of-835-and-the-arsenals.md
+   ¶3.2 by date           1431-06-24-the-warmongers-name | month: “Shawwāl 834” read as Shawwāl 834 AH (12 Jun 1431 – 10 Jul 1431); checked by names ishbiliyya, muhammad-ibn-ismail-ibn-saad and 2 words of the record in the sentence
+   ¶4.1 by date           1431-10-01-the-second-crusade | date: “23 Muḥarram 835” read as 23 Muḥarram 835 AH = 1 Oct 1431; checked by names pope-fabrizio-ricci, rodrigo-de-borja and 5 words of the record in the sentence
+   DRAWN ON               1431-10-03-genoa-joins-the-crusade | best sentence shares 5 words but the runner-up shares 4
+   DRAWN ON               1431-11-20-battle-oristano | no written date fits and no sentence clearly matches
+   DRAWN ON               1431-11-26-battle-gulf-talamone | no written date fits and no sentence clearly matches
+   ¶7.5 by wording        1431-12-05-battle-gulf-talamone | wording: 5 words shared with the record (fourteen, gulf, squadron, talamone, tripoli), next best sentence 2
+   ¶7.6 by wording        1431-12-20-battle-coast-lazio | wording: 4 words shared with the record (genoese, lazio, loss, tuni), next best sentence 2
+   ¶7.12 by wording       1431-12-31-battle-tivoli | wording: 4 words shared with the record (al-din, andalusi, khayr, khayyam), next best sentence 2
+   ¶7.9 by wording        1432-01-27-battle-gulf-olbia | wording: 5 words shared with the record (attack, gulf, nine, olbia, papal), next best sentence 2
+   ¶7.9 by wording        1432-02-01-battle-gulf-orosei | wording: 4 words shared with the record (aquileia, attack, gulf, orosei), next best sentence 2
+   ¶7.10 by date          1432-03-14-battle-corsica-channel | month: “Rajab” read as Rajab 835 AH (4 Mar 1432 – 2 Apr 1432); checked by 6 words of the record in the sentence
+   ¶7.13 by date          1432-03-26-battle-pitigliano | month: “Rajab” read as Rajab 835 AH (4 Mar 1432 – 2 Apr 1432); checked by names khayr-al-din-khayyam and 2 words of the record in the sentence
+   ¶8.3 by date           1432-05-the-dar-al-sinaa | month: “Shaʿbān 835” read as Shaʿbān 835 AH (3 Apr 1432 – 1 May 1432); checked by names al-mariyya, al-ushbuna, balansiyya, ishbiliyya, malaqa, mursiyya and 12 words of the record in the sentence
+   ¶8.7 by wording        1432-05-01-the-green-cape | wording: 8 words shared with the record (al-wahhab, andalusi, barakat, cape, four, island), next best sentence 1
+   ¶3.3 by wording        1430-07-15-santiago-falls | wording: 4 words shared with the record (apostle, christendom, destroy, shrine), next best sentence 2
+   DRAWN ON               1404-02-01-the-crusade | best sentence shares 4 words but the runner-up shares 3
+== 0835-11-28-of-the-peace-of-the-pope-and-the-decree-on-the-taifas.md
+   ¶1.2 by wording        1432-05-17-battle-terracina | wording: 4 words shared with the record (lazio, pope, terracina, tunisian), next best sentence 2
+   ¶1.2 by wording        1432-06-01-battle-viterbo | wording: 4 words shared with the record (beaten, moroccan, pope, viterbo), next best sentence 2
+   ¶2.2 by date           1432-06-27-battle-cape-mondego | date: “27 Shawwāl” read as 27 Shawwāl 835 AH = 27 Jun 1432; checked by names berenguer-ramon-de-montsoriu and 4 words of the record in the sentence
+   ¶3.5 by date           1432-07-27-peace-with-the-pope | date: “28 Dhū al-Qaʿda 835” read as 28 Dhū al-Qaʿda 835 AH = 27 Jul 1432; checked by names pope-fabrizio-ricci and 2 words of the record in the sentence
+   ¶4.5 by wording        1432-07-the-decree-on-the-taifas | wording: 12 words shared with the record (al-andalu, banbaluna, burghush, christian, decre, enough), next best sentence 4
+== 0838-11-04-of-the-emperors-pilgrimage-and-the-sufi-shaykh-al-islam.md
+   ¶1.1 by date           1431-01-21-death-of-abu-hammu | month: “Jumādā al-Ūlā 834” read as Jumādā al-Ūlā 834 AH (15 Jan 1431 – 13 Feb 1431); checked by names abu-hammu-rahhu, khalid-ibn-abi-hammu, muhammad-ibn-ismail-ibn-saad and 5 words of the record in the sentence
+   ¶2.4 by wording        1432-10-16-death-of-aktai | wording: 7 words shared with the record (aktai, ally, camp, empire, jyral, mamluk), next best sentence 2
+   DRAWN ON               1433-03-19-the-emperor-leaves-the-admiralty | no written date fits and no sentence clearly matches
+   ¶2.5 by date           1433-07-26-death-of-temur | date: “8 Dhū al-Ḥijja 836” read as 8 Dhū al-Ḥijja 836 AH = 26 Jul 1433; checked by names temur and 4 words of the record in the sentence
+   DRAWN ON               1433-11-23-the-emperors-hajj | no written date fits and no sentence clearly matches
+   ¶3.4 by date           1434-09-27-the-shaykh-al-islam | month: “Ṣafar 838” read as Ṣafar 838 AH (6 Sep 1434 – 4 Oct 1434); checked by 13 words of the record in the sentence
+   ¶4.5 by date           1435-06-01-death-of-prince-yusuf | date: “4 Dhū al-Qaʿda 838” read as 4 Dhū al-Qaʿda 838 AH = 1 Jun 1435; checked by names yusuf-ibn-saad and 5 words of the record in the sentence
+   DRAWN ON               1432-07-17-birth-ahmad | no written date fits and no sentence clearly matches
+   DRAWN ON               1433-03-12-birth-abu-al-hasan-ali | no written date fits and no sentence clearly matches
+   DRAWN ON               1433-04-24-birth-muhammad | no written date fits and no sentence clearly matches
+== 0839-10-14-of-the-arsenals-finished-and-the-turn-to-the-sea.md
+   DRAWN ON               1435-10-10-the-turn-to-the-sea | no written date fits and no sentence clearly matches
+   ¶3.2 by date           1432-08-30-death-of-berenguer-ramon | month: “Muḥarram 836” read as Muḥarram 836 AH (28 Aug 1432 – 26 Sep 1432); checked by names berenguer-ramon-de-montsoriu, francesc-de-montsoriu and 8 words of the record in the sentence
+   DRAWN ON               1435-04-09-death-of-vukmir | no written date fits and no sentence clearly matches
+   DRAWN ON               1433-03-19-the-emperor-leaves-the-admiralty | no written date fits and no sentence clearly matches
+   DRAWN ON               1436-05-01-the-two-explorers | best sentence shares 6 words but the runner-up shares 5
+   ¶1.2 by wording        1432-05-the-dar-al-sinaa | wording: 9 words shared with the record (al-mariyya, al-ushbuna, balansiyya, cartagena, ishbiliya, malaqa), next best sentence 2
+== 0840-08-22-of-barshaluna-returned-the-hegemony-of-letters-and-the-new-world.md
+   ¶1.3 by date           1436-06-01-catalonia-annexed | date: “16 Dhū al-Qaʿda 839” read as 16 Dhū al-Qaʿda 839 AH = 1 Jun 1436; checked by names barshaluna, francesc-de-montsoriu and 5 words of the record in the sentence
+   DRAWN ON               1437-01-01-the-age-of-discovery | no written date fits and no sentence clearly matches
+   DRAWN ON               1437-01-01-cultural-hegemon | no written date fits and no sentence clearly matches
+   DRAWN ON               1437-03-01-the-new-world-institution | no written date fits and no sentence clearly matches
+   DRAWN ON               1428-12-01-catalonia-to-the-crown | best sentence shares 5 words but the runner-up shares 3
+== 0841-07-19-of-the-admiral-prince-and-his-three-wives.md
+   DRAWN ON               1438-01-16-the-admiral-prince | best sentence shares 10 words but the runner-up shares 6
+   DRAWN ON               1438-01-16-the-realm-turns-to-the-sea | best sentence shares 7 words but the runner-up shares 4
+   ¶4.4 by wording        1437-06-11-khalid-comes-of-age | wording: 4 words shared with the record (burghush, khalid, regency, taifa), next best sentence 1
+   ¶4.5 by date           1437-11-06-death-of-bernarda | date: “7 Jumādā al-Ūlā 841” read as 7 Jumādā al-Ūlā 841 AH = 6 Nov 1437; checked by names bernarda-of-murcia and 3 words of the record in the sentence
+== 0841-10-12-of-the-charter-of-majrit-and-the-land-rights-of-the-umara.md
+   DRAWN ON               1438-04-08-the-charter-of-majrit | month Shawwāl 841 also fits 1438-04-08-land-rights-unravelled
+   ¶3.7 by date           1438-04-08-land-rights-unravelled | month: “Shawwāl 841” read as Shawwāl 841 AH (28 Mar 1438 – 25 Apr 1438); checked by names ahmad-ibn-muhammad-ibn-ismail, ismail-ibn-muhammad-ibn-ismail and 9 words of the record in the sentence
+   DRAWN ON               1428-05-25-primacy-revoked | no written date fits and no sentence clearly matches
+== 0843-02-02-of-the-emperor-who-became-a-scholar.md
+   ¶2.5 by date           1439-07-15-the-emperor-a-scholar | month: “Ṣafar 843” read as Ṣafar 843 AH (14 Jul 1439 – 11 Aug 1439); checked by 3 words of the record in the sentence
+   DRAWN ON               1438-04-08-land-rights-unravelled | best sentence shares 4 words but the runner-up shares 3
+   DRAWN ON               1437-03-01-the-new-world-institution | no written date fits and no sentence clearly matches
+== 0844-01-09-of-the-trade-war-with-genoa-and-the-angevins.md
+   ¶2.2 by date           1440-06-the-catalan-privileges | month: “Dhū al-Ḥijja 843” read as Dhū al-Ḥijja 843 AH (4 May 1440 – 1 Jun 1440); checked by names rodrigo-de-borja and 4 words of the record in the sentence
+   DRAWN ON               1440-06-the-genoese-embargo | best sentence shares 5 words but the runner-up shares 4
+   DRAWN ON               1432-05-01-trading-posts | no written date fits and no sentence clearly matches
+   DRAWN ON               1432-07-27-peace-with-the-pope | no written date fits and no sentence clearly matches
+== 0844-05-04-of-the-radiant-city-restored.md
+   DRAWN ON               1440-10-01-the-palace-city-of-qurtuba | best sentence shares 5 words but the runner-up shares 3
+   DRAWN ON               1439-07-15-the-emperor-a-scholar | no written date fits and no sentence clearly matches
+   DRAWN ON               1437-01-01-cultural-hegemon | no written date fits and no sentence clearly matches
+== 0846-01-21-of-the-jamaa-of-846-and-the-burghers.md
+   ¶1.1 by date           1442-06-01-national-assemblies | month: “Muḥarram 846” read as Muḥarram 846 AH (12 May 1442 – 10 Jun 1442); checked by names ishbiliyya, muhammad-ibn-ismail-ibn-saad and 3 words of the record in the sentence
+   DRAWN ON               1442-06-01-privileges-for-the-burghers | no written date fits and no sentence clearly matches
+   DRAWN ON               1428-05-25-jamaa-against-primacy | no written date fits and no sentence clearly matches
+   DRAWN ON               1439-07-15-the-emperor-a-scholar | no written date fits and no sentence clearly matches
+   DRAWN ON               1440-06-the-genoese-embargo | no written date fits and no sentence clearly matches
+== 0846-03-29-of-the-princes-mending-and-the-golden-century.md
+   DRAWN ON               1442-06-11-the-princes-mend-the-damage | best sentence shares 6 words but the runner-up shares 4
+   DRAWN ON               1442-08-07-the-golden-century | best sentence shares 6 words but the runner-up shares 4
+   DRAWN ON               1442-08-07-establish-a-thalassocracy | no written date fits and no sentence clearly matches
+   ¶4.4 by wording        1440-10-01-the-palace-city-of-qurtuba | wording: 7 words shared with the record (above, al-zahra, caliph, madinat, order, palace-city), next best sentence 2
+   DRAWN ON               1442-06-01-national-assemblies | no written date fits and no sentence clearly matches
+   DRAWN ON               1442-06-01-privileges-for-the-burghers | no written date fits and no sentence clearly matches
+== 0847-02-27-of-the-jamaa-of-847-and-the-island-of-fernando-po.md
+   ¶1.1 by date           1443-06-26-the-jamaa-of-847 | date: “27 Ṣafar 847” read as 27 Ṣafar 847 AH = 26 Jun 1443; checked by names ishbiliyya, muhammad-ibn-ismail-ibn-saad and 3 words of the record in the sentence
+   ¶1.1 by wording        1442-06-01-national-assemblies | wording: 4 words shared with the record (assembly, burgher, ishbiliya, jamaa), next best sentence 2
+   DRAWN ON               1432-05-01-the-green-cape | no written date fits and no sentence clearly matches
+   DRAWN ON               1432-05-01-trading-posts | best sentence shares 5 words but the runner-up shares 3

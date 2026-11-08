@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glossed Folio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Kalam:wght@300;400&family=Amiri&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f6f1e7; --paper-2:#efe7d6; --ink:#2a2420; --ink-2:#5d544b; --ink-3:#8b8177;
+  --rubric:#a3341f; --rule:#d8ccb6; --ledger:#34495a; --ledger-bg:#eef0ea; --hand:#2f5a47;
+  --hl:#f3dc9a; --save:#2f5a47; --screen:#34495a; --told:#9a5b13; --est:#7a4e8a;
+  --chrome:#fbf8f2; --shadow:0 1px 0 rgba(0,0,0,.04),0 6px 24px rgba(60,40,10,.07);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#1d1a17; --paper-2:#26221e; --ink:#ece4d6; --ink-2:#bdb2a3; --ink-3:#8d8376;
+  --rubric:#e07a5f; --rule:#3b352e; --ledger:#a9c1d3; --ledger-bg:#22272a; --hand:#8fc9ac;
+  --hl:#5b4a1c; --save:#8fc9ac; --screen:#a9c1d3; --told:#e0a35a; --est:#c39bd3; --chrome:#191714;
+  --shadow:0 1px 0 rgba(0,0,0,.3),0 6px 24px rgba(0,0,0,.35);}}
+:root[data-theme="dark"]{
+  --paper:#1d1a17; --paper-2:#26221e; --ink:#ece4d6; --ink-2:#bdb2a3; --ink-3:#8d8376;
+  --rubric:#e07a5f; --rule:#3b352e; --ledger:#a9c1d3; --ledger-bg:#22272a; --hand:#8fc9ac;
+  --hl:#5b4a1c; --save:#8fc9ac; --screen:#a9c1d3; --told:#e0a35a; --est:#c39bd3; --chrome:#191714;
+  --shadow:0 1px 0 rgba(0,0,0,.3),0 6px 24px rgba(0,0,0,.35);}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--paper-2);color:var(--ink);font-family:"EB Garamond",Georgia,serif;font-size:19px;line-height:1.55;-webkit-text-size-adjust:100%}
+button{font:inherit;color:inherit}
+.ui{font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:13px;line-height:1.35}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace}
+
+/* ---------- toolbar (mockup chrome, not the design) ---------- */
+.bar{position:sticky;top:0;z-index:20;background:var(--chrome);border-bottom:1px solid var(--rule);padding:8px 16px;display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center}
+.bar .brand{font-weight:600;letter-spacing:.02em;margin-right:auto}
+.bar .brand small{font-weight:400;color:var(--ink-3);margin-left:6px}
+.seg{display:inline-flex;border:1px solid var(--rule);border-radius:6px;overflow:hidden}
+.seg button{background:none;border:0;padding:5px 10px;cursor:pointer;color:var(--ink-2)}
+.seg button+button{border-left:1px solid var(--rule)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.lbl{color:var(--ink-3);margin-right:4px}
+.picker button{max-width:15em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* ---------- the folio ---------- */
+.folio{max-width:1240px;margin:22px auto 60px;background:var(--paper);box-shadow:var(--shadow);padding:22px 34px 40px;border-radius:2px}
+.slot{border:1.5px dashed var(--rule);border-radius:4px;padding:8px 12px;color:var(--ink-3);display:flex;gap:10px;justify-content:space-between;flex-wrap:wrap;margin-bottom:14px}
+.slot b{color:var(--ink-2);font-weight:500}
+
+.rh{border-top:2px solid var(--ink);border-bottom:1px solid var(--rule);padding:7px 0 8px;display:grid;grid-template-columns:auto 1fr auto;gap:4px 22px;align-items:baseline}
+.rh .d .hij{font-family:"EB Garamond",serif;font-size:17px;font-variant:small-caps;letter-spacing:.04em;color:var(--rubric)}
+.rh .d .wd{color:var(--ink-3);margin-left:6px}
+.rh .reign{text-align:center;font-family:"EB Garamond",serif;font-size:16px;font-style:italic;color:var(--ink-2)}
+.rh .figs{text-align:right;font-variant-numeric:tabular-nums}
+.rh .figs span+span::before{content:" · ";color:var(--ink-3)}
+.rh .src{grid-column:1/-1;color:var(--ink-3);font-size:12px;display:flex;gap:12px;flex-wrap:wrap;justify-content:space-between}
+.rh.stale .figs{color:var(--ink-3);font-style:italic}
+.rh.stale .figs::after{content:" (as of " attr(data-asof) ")"}
+.silence{grid-column:1/-1;margin-top:4px}
+.silence svg{width:100%;height:34px;display:block}
+.silence .msg{color:var(--told);font-size:12.5px}
+.rh-toggle{display:none}
+
+h1.et{font-weight:500;font-size:30px;line-height:1.2;margin:26px auto 4px;text-align:center;max-width:24em;color:var(--ink)}
+h1.et::first-letter{color:var(--rubric)}
+.ed{text-align:center;color:var(--ink-3);margin-bottom:22px}
+
+.page{position:relative;display:grid;grid-template-columns:200px minmax(0,34rem) 262px;column-gap:44px;justify-content:center}
+.m{position:relative}
+.text{position:relative}
+.para{margin:0 0 .9em;position:relative;hyphens:auto}
+.pn{position:absolute;left:-30px;top:.28em;font-family:"IBM Plex Sans",sans-serif;font-size:11px;color:var(--rubric);text-decoration:none;width:22px;text-align:right;opacity:.85}
+.pn:hover{text-decoration:underline}
+.para:first-child::first-letter{font-size:3.3em;float:left;line-height:.82;margin:.06em .08em 0 0;color:var(--rubric);font-weight:500}
+.s.hl,.nm.hl{background:var(--hl);border-radius:2px;box-shadow:0 0 0 2px var(--hl)}
+.nm{cursor:default}
+.dens-names .nm[data-g],.dens-full .nm[data-g]{cursor:pointer}
+.dens-names .nm.first,.dens-full .nm.first{text-decoration:underline dotted var(--ink-3);text-underline-offset:3px;text-decoration-thickness:1px}
+.nm.tm{font-style:inherit}
+.rm{display:none;font-family:"IBM Plex Sans",sans-serif;font-size:10px;color:var(--ledger);font-weight:600;margin-left:1px;cursor:pointer;padding:0 1px}
+.dens-full .rm{display:inline}
+.war{border-bottom:1px solid var(--rule)}
+
+/* glosses in the margins */
+.g{position:absolute;left:0;right:0;transition:top .15s ease;font-family:"IBM Plex Sans",sans-serif;font-size:12.5px;line-height:1.38;color:var(--ink-2)}
+.g.hl{background:var(--hl);box-shadow:0 0 0 4px var(--hl);border-radius:2px}
+.gn .nmh{font-family:"EB Garamond",serif;font-size:16px;color:var(--ink);font-weight:500}
+.gn .ar{font-family:Amiri,serif;font-size:15px;color:var(--ink-3);margin-left:4px}
+.gn .eq{color:var(--rubric)}
+.gn .meta{color:var(--ink-2)}
+.gn .bef{margin-top:2px;color:var(--ink-3)}
+.gn .bef i{font-style:normal;color:var(--ink-2)}
+.gn .first{color:var(--ink-3);font-style:italic}
+.gn .tag{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--est);border:1px solid currentColor;border-radius:3px;padding:0 3px;margin-left:4px}
+.g.compact .more{display:none}
+.g.compact{cursor:pointer}
+.g.compact .nmh::after,.g.compact .lt::after{content:" ＋";color:var(--ink-3);font-size:11px}
+.m-names .g{text-align:right}
+.m-names .g::after{content:"";position:absolute;right:-24px;top:.7em;width:14px;border-top:1px solid var(--rule)}
+.m-record .g::before{content:"";position:absolute;left:-24px;top:.7em;width:14px;border-top:1px solid var(--rule)}
+
+.gr{font-family:"IBM Plex Mono",monospace;font-size:11.5px;line-height:1.42;color:var(--ledger);background:var(--ledger-bg);padding:6px 8px 7px;border-left:2px solid var(--ledger);cursor:pointer}
+.gr .top{display:flex;justify-content:space-between;gap:6px;color:var(--ink-3)}
+.gr .top .n{color:var(--ledger);font-weight:500}
+.gr .lt{font-family:"IBM Plex Sans",sans-serif;font-size:12.5px;color:var(--ink);margin:3px 0 2px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.gr.open .lt{-webkit-line-clamp:unset;display:block}
+.gr.compact .lt{-webkit-line-clamp:1}
+.gr table{border-collapse:collapse;font-variant-numeric:tabular-nums;margin-top:2px}
+.gr td{padding:0 8px 0 0;vertical-align:top}
+.gr td:first-child{color:var(--ink-3)}
+.gr .basis{display:none;margin-top:5px;padding-top:5px;border-top:1px dashed var(--rule);color:var(--ink-2);font-family:"IBM Plex Sans",sans-serif;font-size:11.5px}
+.gr.open .basis{display:block}
+.pv{font-family:"IBM Plex Sans",sans-serif;font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;white-space:nowrap}
+.pv.save{color:var(--save)} .pv.screen{color:var(--screen)} .pv.told{color:var(--told)} .pv.est{color:var(--est)}
+
+/* density */
+.dens-text .m{display:none}
+.dens-text .page{grid-template-columns:minmax(0,34rem)}
+.dens-names .m-record{visibility:hidden}
+.dens-text .rh .figs,.dens-text .rh .src,.dens-text .silence{display:none}
+.dens-text .rh{grid-template-columns:auto 1fr}
+.dens-text .foot .full-only,.dens-names .foot .full-only,.dens-text .foot .note-wrap{display:none}
+
+/* inline gloss (phone, and repeat mentions everywhere) */
+.ig{display:block;margin:.35em 0 .9em;padding:9px 12px 10px;background:var(--paper-2);border-left:3px solid var(--rubric);border-radius:0 4px 4px 0;font-family:"IBM Plex Sans",sans-serif;font-size:13.5px;line-height:1.42;color:var(--ink-2);position:relative;animation:igIn .14s ease-out}
+.ig.rec{border-left-color:var(--ledger)}
+.ig .x{position:absolute;right:6px;top:4px;background:none;border:0;font-size:17px;line-height:1;color:var(--ink-3);cursor:pointer;padding:4px 6px}
+.ig .g{position:static}
+.ig .gn{text-align:left}
+.ig .gr{background:none;border:0;padding:0}
+.ig .gr .lt{-webkit-line-clamp:unset;display:block}
+.ig .gr .basis{display:block}
+@keyframes igIn{from{opacity:0;transform:translateY(-3px)}to{opacity:1}}
+
+/* foot */
+.foot{max-width:34rem;margin:30px auto 0;border-top:1px solid var(--rule);padding-top:16px}
+.foot h3{font-family:"IBM Plex Sans",sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);font-weight:500;margin:0 0 6px}
+.drawn{margin:0 0 18px;padding:0;list-style:none}
+.drawn li{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--ledger);padding:5px 0;border-bottom:1px dotted var(--rule)}
+.drawn li .lt{font-family:"IBM Plex Sans",sans-serif;font-size:12.5px;color:var(--ink);display:block;margin:2px 0}
+.drawn li .why{font-family:"IBM Plex Sans",sans-serif;color:var(--ink-3);font-size:11.5px}
+.pnote{position:relative;margin:4px 0 22px;padding:12px 14px 12px;border:1.5px dashed var(--told);border-radius:4px;font-family:Kalam,cursive;font-weight:300;font-size:17px;line-height:1.45;color:var(--hand);background:repeating-linear-gradient(transparent 0 26px,rgba(120,120,90,.10) 26px 27px)}
+.pnote .stamp{position:absolute;top:-10px;right:10px;background:var(--paper);padding:0 6px;font-family:"IBM Plex Sans",sans-serif;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--told);font-weight:600}
+.pnote .sig{display:block;text-align:right;margin-top:4px}
+.verse{text-align:center;font-style:italic;color:var(--ink);font-size:20px;line-height:1.5;margin:26px auto 0;max-width:28em}
+.verse::before{content:"۞";display:block;font-style:normal;color:var(--rubric);font-size:18px;margin-bottom:6px}
+.close{margin:0 0 20px}.close h3{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);font-weight:500;margin:0 0 6px}
+.close table{border-collapse:collapse;font-size:12px;color:var(--ledger);font-variant-numeric:tabular-nums}
+.close td{padding:1px 10px 1px 0;text-align:right}.close td:first-child{text-align:left;color:var(--ink-3);font-family:"IBM Plex Sans",sans-serif}
+.close .up{color:var(--save)}.close .dn{color:var(--rubric)}
+.anchorstat{color:var(--ink-3);margin-top:22px;text-align:center}
+
+.legend{max-width:1240px;margin:0 auto 40px;padding:0 34px;color:var(--ink-2)}
+.legend details{background:var(--chrome);border:1px solid var(--rule);border-radius:4px;padding:8px 14px}
+.legend summary{cursor:pointer;font-weight:500}
+.legend dl{display:grid;grid-template-columns:max-content 1fr;gap:4px 14px;margin:10px 0 4px}
+.legend dt{text-align:right}
+
+/* ---------- narrow: phone & tablet ---------- */
+@media (max-width:1100px){
+  body{font-size:18px}
+  .folio{margin:0;padding:14px 16px 34px;box-shadow:none;border-radius:0}
+  .page{grid-template-columns:minmax(0,1fr)!important;column-gap:0}
+  .m{display:none}
+  .para{padding-left:0}
+  .pn{position:static;display:inline-block;width:auto;margin-right:6px;vertical-align:1px}
+  .para:first-child::first-letter{font-size:inherit;float:none;margin:0;line-height:inherit}
+  h1.et{font-size:25px;margin-top:16px}
+  .rh{grid-template-columns:1fr auto;gap:2px 10px}
+  .rh .reign{text-align:left;grid-column:1/-1;order:3;font-size:15px}
+  .rh .figs{grid-column:1/-1;text-align:left;order:4;display:none}
+  .rh .src{order:5;display:none}
+  .rh .silence{order:6;display:none}
+  .rh.open .figs,.rh.open .src,.rh.open .silence{display:block}
+  .rh.open .src{display:flex}
+  .rh-toggle{display:inline;background:none;border:1px solid var(--rule);border-radius:12px;padding:1px 9px;font-size:12px;color:var(--ink-2);cursor:pointer}
+  .dens-text .rh-toggle{display:none}
+  .rh.stale .rh-toggle{border-color:var(--told);color:var(--told)}
+  .slot{font-size:12px}
+  .legend{padding:0 16px}
+  .bar{gap:6px 10px}
+  .bar .brand small{display:none}
+  .bar{position:static}
+  .bar>div{max-width:100%}
+  .picker{display:flex;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .picker button{flex:0 0 auto;max-width:none}
+}
+</style>
+</head>
+<body>
+<div class="bar ui" role="toolbar" aria-label="Mockup controls">
+  <div class="brand">The Chronicle · Glossed Folio <small>round-two mockup, Designer C</small></div>
+  <div><span class="lbl">Leaf</span><span class="seg picker" id="picker"></span></div>
+  <div><span class="lbl">Apparatus</span><span class="seg" id="density">
+    <button data-v="text">Text</button><button data-v="names">Names</button><button data-v="full">Full</button></span></div>
+  <div><span class="lbl">Names</span><span class="seg" id="namemode">
+    <button data-v="court">Court</button><button data-v="plain">Plain</button></span></div>
+</div>
+<main id="folio"></main>
+<div class="legend ui">
+  <details>
+    <summary>How this page works (mockup notes)</summary>
+    <dl>
+      <dt><b>Text</b></dt><dd>The prose and the verse only. The running head shrinks to the date and the reign.</dd>
+      <dt><b>Names</b></dt><dd>Left margin: each person, place, realm and court term is glossed beside the line where it <i>first</i> appears, as of this page's own date (ages, offices from the nearest reckoning, what the record shows <i>before</i> this day, never after). Tap a later mention to open its gloss inline under the paragraph.</dd>
+      <dt><b>Full</b></dt><dd>Adds the right margin: the dated record the entry draws on, in ledger type, beside the sentence it supports, with a provenance mark. Click a record note to see <i>why</i> it is anchored there. Records that could not be anchored with confidence sit at the foot under “Drawn on”, with the reason.</dd>
+      <dt><span class="pv save">■ save</span></dt><dd>read from a save file</dd>
+      <dt><span class="pv screen">▣ screen</span></dt><dd>seen on Trent's screen (a screenshot), not read from a save</dd>
+      <dt><span class="pv told">◇ told</span></dt><dd>Trent's account of play, not yet confirmed by a save</dd>
+      <dt><span class="pv est">~ est.</span></dt><dd>estimated</dd>
+      <dt>Data</dt><dd>Everything is built from brief2/ by the anchoring script, except (1) the player's note, which is a marked placeholder, and (2) the glosses for court terms (dīwān, ṭāʾifa…), which come from a proposed glossary file and are tagged “proposed”.</dd>
+    </dl>
+  </details>
+</div>
+<script>
+const FOLIOS = [{"file": "0740-05-05-the-day-of-uryula.md", "title": "Of the Day of Uryūla", "date": "1339-11-08", "book": {"id": "book-of-mending", "title": "The Mending of the State", "ar": "كتاب الإصلاح"}, "paras": ["<span class=\"s anchored\" data-s=\"0.0\">At the end of Rabīʿ al-Thānī in the year 740 there came to the court a delegation of the Shādhilī shaykhs, sent from the great zāwiyas of Salā and Tiṭwān with letters from the chamber of the Marīnid sultan.<\/span><sup class=\"rm\" data-r=\"1339-11-01-shadhili-order\">1<\/sup> <span class=\"s\" data-s=\"0.1\">They are not wanderers of the desert but men of the law and of the <i>Ḥikam<\/i> of Ibn ʿAṭāʾ Allāh, as easy at a merchant's table as at a palace door.<\/span> <span class=\"s\" data-s=\"0.2\">They offered to found a zāwiya in our land and to lend us their brotherhood on both shores of the Strait.<\/span> <span class=\"s\" data-s=\"0.3\">Our lord welcomed them, for theirs is a coin that the Christian kings cannot mint.<\/span>", "<span class=\"s\" data-s=\"1.0\">Then Allāh gave the victory.<\/span> <span class=\"s anchored\" data-s=\"1.1\">On the fifth of Jumādā al-Ūlā the host of <span class=\"nm first\" data-g=\"p:ibn-al-khatib\">Muḥammad ibn al-Khaṭīb<\/span> came down upon the Aragonese before the walls of <span class=\"nm pl first\" data-g=\"l:uryula\" data-court=\"Uryūla\" data-plain=\"Orihuela\">Uryūla<\/span>.<\/span><sup class=\"rm\" data-r=\"1339-11-08-battle-uryula\">2<\/sup> <span class=\"s\" data-s=\"1.2\">The infidel had eight thousand men in the field and fed more into the fight.<\/span> <span class=\"s\" data-s=\"1.3\">Our army was twenty-one thousand: the <span class=\"nm tm first\" data-g=\"g:mutaṭawwiʿa\"><i>mutaṭawwiʿa<\/i><\/span> and the Volunteers of the Faith, the sultan's horse and the hired camel-riders.<\/span> <span class=\"s\" data-s=\"1.4\">Their commander knew his trade, but the weight of our numbers told, and at last the Aragonese line broke and fled.<\/span>", "<span class=\"s\" data-s=\"2.0\">Six thousand of the enemy fell or were lost, more than half his army, against four and a half thousand of ours, nearly all of them <i>mutaṭawwiʿa<\/i>, who stood in the first line and bore the brunt.<\/span> <span class=\"s\" data-s=\"2.1\">It was the greatest victory of the reign, and the <span class=\"nm tm first\" data-g=\"g:dīwān\">dīwān<\/span> reckons that it turned the war plainly in our favour.<\/span> <span class=\"s anchored\" data-s=\"2.2\">The siege of Uryūla began that same day.<\/span><sup class=\"rm\" data-r=\"1339-11-08-siege-uryula\">3<\/sup>"], "names": {"p:ibn-al-khatib": {"kind": "person", "p": 1, "id": "ibn-al-khatib", "name": "Ibn al-Khaṭīb", "ar": "ابن الخطيب", "dyn": null, "lines": [], "age": 25, "before": [{"d": "24 May 1339", "t": "Ibn al-Khaṭīb given command of the host: 9,500 levies, 900 regulars, 400 mercenaries and 350 in the baggage…"}], "first": "first met in “Of the Road through Mursiyya, and the Host of Ibn al-Khaṭīb” (1339)"}, "l:uryula": {"kind": "place", "p": 1, "id": "uryula", "name": "Uryūla", "plain": "Orihuela", "ar": "أوريولة", "held": "not held by the crown on this date", "first": "first appears here"}, "g:mutaṭawwiʿa": {"kind": "term", "p": 1, "name": "mutaṭawwiʿa", "plain": "volunteer fighters for the faith", "proposed": true}, "g:dīwān": {"kind": "term", "p": 2, "name": "dīwān", "plain": "the royal council", "proposed": true}}, "records": [{"id": "1339-11-01-shadhili-order", "date": "1 Nov 1339", "hdate": "27 Rabīʿ al-Thānī 740", "type": "situation", "title": "The Shādhilī order arrives at court, sent from the zāwiyas of Salā and Tiṭwān with the Marīnid sultan's letters, and is welcomed", "fig": [["choice", "Welcome them to our Court."], ["effect", "unlocks Patronization of the Shadhili Order in the Battle for the…"]], "prov": "screen", "provLabel": "seen on Trent's screen (a screenshot), not read from a save", "source": "Trent's screenshots", "p": 0, "s": 0, "tier": "date", "basis": "month: “Rabīʿ al-Thānī in the year 740” read as Rabīʿ al-Thānī 740 AH (6 Oct 1339 – 3 Nov 1339); checked by 9 words of the record in the sentence", "n": 1}, {"id": "1339-11-08-battle-uryula", "date": "8 Nov 1339", "hdate": "5 Jumādā al-Ūlā 740", "type": "battle", "title": "The Day of Uryūla: Ibn al-Khaṭīb routs the Aragonese", "fig": [["ours / theirs", "24,342 / 11,217"], ["lost", "4,502 / 6,025"], ["result", "victory"]], "prov": "screen", "provLabel": "seen on Trent's screen (a screenshot), not read from a save", "source": "Trent's screenshots", "p": 1, "s": 1, "tier": "date", "basis": "date: “the fifth of Jumādā al-Ūlā” read as 5 Jumādā al-Ūlā 740 AH = 8 Nov 1339; checked by names ibn-al-khatib, uryula and 3 words of the record in the sentence", "n": 2}, {"id": "1339-11-08-siege-uryula", "date": "8 Nov 1339", "hdate": "5 Jumādā al-Ūlā 740", "type": "siege", "title": "The siege of Uryūla goes on", "fig": [["result", "under way"]], "prov": "screen", "provLabel": "seen on Trent's screen (a screenshot), not read from a save", "source": "Trent's screenshots", "p": 2, "s": 2, "tier": "date", "basis": "date: “that same day”, after 5 Jumādā al-Ūlā 740, = 8 Nov 1339; checked by 2 words of the record in the sentence", "n": 3}], "drawn": [], "verse": "And victory comes only from Allāh, the Mighty, the Wise.", "head": {"hdate": "5 Jumādā al-Ūlā 740", "wdate": "8 Nov 1339", "ruler": "Yūsuf I", "regnal": 7, "rank": "duchy", "capital": "Gharnāṭa", "towns": 18, "souls": 484812, "treasury": 207, "income": 27.1, "expenses": 50.9, "debt": 0, "stability": 38, "wars": 1, "reckoned": "2 Sep 1339", "reckonedISO": "1339-09-02", "ago": 60, "opens": "1 Nov 1339", "next": "30 May 1340", "nextISO": "1340-05-30", "gap": 271, "ticks": ["1337-04-01", "1337-08-18", "1337-11-16", "1339-05-24", "1339-09-02", "1340-05-30", "1340-08-11", "1340-08-28", "1340-10-30", "1341-09-08", "1343-05-20", "1345-01-27", "1346-08-01", "1346-10-18", "1346-11-08", "1348-07-01", "1349-01-27", "1349-06-04", "1351-06-03"]}, "cutoff": "1 Nov 1339", "counts": {"people": 2, "places": 1, "sources": 3}}, {"file": "0814-07-14-of-cuellar-porto-and-the-end-of-portugal.md", "title": "Of the War of Jillīqiya, the Gates of Porto, and the Peace of Rajab", "date": "1411-11-01", "book": {"id": "book-of-the-marches", "title": "The Marches", "ar": "كتاب الثغور"}, "paras": ["<span class=\"s anchored\" data-s=\"0.0\">The truce of the Peace of Ramaḍān ran out on 25 Ṣafar 813, and the Emperor <span class=\"nm first\" data-g=\"p:ismail-ibn-saad\">Ismāʿīl<\/span> declared war on <span class=\"nm pl cn first\" data-g=\"c:Qashtāla\" data-court=\"Qashtāla\" data-plain=\"Castile\">Qashtāla<\/span> the same day.<\/span><sup class=\"rm\" data-r=\"1410-06-29-war-on-castile\">1<\/sup> <span class=\"s\" data-s=\"0.1\">It was the fourth war of the <span class=\"nm tm first\" data-g=\"g:Istirdād\">Istirdād<\/span>, and the Emperor named it himself, in letters the Dīwān al-Inshāʾ carried to every court from <span class=\"nm pl first\" data-g=\"l:fas\" data-court=\"Fās\" data-plain=\"Fez\">Fās<\/span> to Paris.<\/span> <span class=\"s\" data-s=\"0.2\">He did not call it a war for towns.<\/span> <span class=\"s\" data-s=\"0.3\">He called it the War of <span class=\"nm pl cn first\" data-g=\"c:Jillīqiya\" data-court=\"Jillīqiya\" data-plain=\"Galicia\">Jillīqiya<\/span>, by the name the first Arabs had given to the whole Christian country beyond the Duero.<\/span> <span class=\"s\" data-s=\"0.4\">Mūsā ibn Nuṣayr had ridden into <span class=\"nm pl cn\" data-g=\"c:Jillīqiya\" data-court=\"Jillīqiya\" data-plain=\"Galicia\">Jillīqiya<\/span> in the first years of al-Andalus, he wrote, and al-Manṣūr had marched across it to <span class=\"nm pl first\" data-g=\"l:shant-yaqub\" data-court=\"Shant Yāqub\" data-plain=\"Santiago Compostela\">Shant Yāqub<\/span> and carried the bells of its church back to <span class=\"nm pl first\" data-g=\"l:qurtuba\" data-court=\"Qurṭuba\" data-plain=\"Cordoba\">Qurṭuba<\/span> to hang as lamps in the Great Mosque.<\/span> <span class=\"s\" data-s=\"0.5\">What they had begun, the house of Naṣr would finish.<\/span> <span class=\"s\" data-s=\"0.6\">The <span class=\"nm tm first\" data-g=\"g:ʿulamāʾ\">ʿulamāʾ<\/span> read the letters aloud in the mosques.<\/span> <span class=\"s\" data-s=\"0.7\">Portugal stood with <span class=\"nm pl cn\" data-g=\"c:Qashtāla\" data-court=\"Qashtāla\" data-plain=\"Castile\">Qashtāla<\/span>, as it always had.<\/span> <span class=\"s\" data-s=\"0.8\">The sultan <span class=\"nm first\" data-g=\"p:abu-al-fadl-marinid\">Abū al-Faḍl<\/span> of <span class=\"nm pl\" data-g=\"l:fas\" data-court=\"Fās\" data-plain=\"Fez\">Fās<\/span> sent his armies and his fleet, with the men of <span class=\"nm pl first\" data-g=\"l:tilimsan\" data-court=\"Tilimsān\" data-plain=\"Tlemcen\">Tilimsān<\/span> and Tafilalt.<\/span> <span class=\"s\" data-s=\"0.9\">The Mamlūks were busy putting the Fertile Crescent in order, and the Emperor did not ask them to leave it.<\/span>", "<span class=\"s\" data-s=\"1.0\">The war began badly.<\/span> <span class=\"s anchored\" data-s=\"1.1\">Off Cape Mondego the Castilian admiral Pedro, a seaman of real skill, sent the whole fleet of Tilimsān to the bottom without losing a ship.<\/span><sup class=\"rm\" data-r=\"1410-09-16-battle-cape-mondego\">2<\/sup> <span class=\"s anchored\" data-s=\"1.2\">At Peñafiel the little army of <span class=\"nm pl first\" data-g=\"l:qunka\" data-court=\"Qūnka\" data-plain=\"Cuenca\">Qūnka<\/span> threw itself on the Castilian host and was destroyed.<\/span><sup class=\"rm\" data-r=\"1410-10-09-battle-penafiel\">3<\/sup> <span class=\"s anchored\" data-s=\"1.3\">And in Shaʿbān the Castilian general Crisanto, a careful man who never fought on ground he had not chosen, broke the Catalan army at Cuéllar, south of the Duero.<\/span><sup class=\"rm\" data-r=\"1410-12-11-battle-cuellar\">4<\/sup>", "<span class=\"s\" data-s=\"2.0\">The Emperor had never been taken for a soldier, and he knew it.<\/span> <span class=\"s\" data-s=\"2.1\">He was a man who set himself one aim and gave every order to it, and his aim that winter was Crisanto.<\/span> <span class=\"s\" data-s=\"2.2\">He took the army north himself and found the Castilians on the same field at Cuéllar.<\/span> <span class=\"s anchored\" data-s=\"2.3\">He attacked on 17 Ramaḍān 813, the anniversary of Badr, with twenty-five thousand Andalusīs and Marīnids against nineteen thousand.<\/span><sup class=\"rm\" data-r=\"1411-01-13-battle-cuellar-ii\">5<\/sup> <span class=\"s\" data-s=\"2.4\">It was the hardest day of his life.<\/span> <span class=\"s\" data-s=\"2.5\">Nearly ten thousand of ours fell, and more than eight thousand of theirs.<\/span> <span class=\"s\" data-s=\"2.6\">At nightfall the field was his, and the preachers of <span class=\"nm pl first\" data-g=\"l:ishbiliyya\" data-court=\"Ishbīliya\" data-plain=\"Sevilla\">Ishbīliya<\/span> had their sermon for the next Friday.<\/span>", "<span class=\"s\" data-s=\"3.0\">The sea turned next.<\/span> <span class=\"s anchored\" data-s=\"3.1\">In Dhū al-Qaʿda the admiral Pedro tried his luck once more, with fourteen ships against the joined fleets of al-Andalus and Fās, a hundred and seven sail under the Marīnid prince Aḥmad, in the bay of Setúbal below <span class=\"nm pl first\" data-g=\"l:al-ushbuna\" data-court=\"al-Ushbūna\" data-plain=\"Lisbon\">al-Ushbūna<\/span>.<\/span><sup class=\"rm\" data-r=\"1411-03-10-battle-bay-setubal\">6<\/sup> <span class=\"s\" data-s=\"3.2\">None of the fourteen came home.<\/span> <span class=\"s anchored\" data-s=\"3.3\">In Muḥarram 814 the Emperor met Crisanto a second time, at Toro outside Zamora, and broke him again.<\/span><sup class=\"rm\" data-r=\"1411-05-15-battle-toro\">7<\/sup> <span class=\"s anchored\" data-s=\"3.4\">In Ṣafar the Portuguese fleet came out against thirty-four ships at the mouth of the Duero: eleven of <span class=\"nm pl first\" data-g=\"l:balansiyya\" data-court=\"Balansiyya\" data-plain=\"Valencia\">Balansiyya<\/span> under their own admiral, and twenty-three of al-Andalus under the crown prince <span class=\"nm first\" data-g=\"p:muhammad-ibn-ismail-ibn-saad\">Muḥammad<\/span>, in his first command.<\/span><sup class=\"rm\" data-r=\"1411-06-21-battle-mouth-douro-ii\">8<\/sup> <span class=\"s\" data-s=\"3.5\">Fifteen Portuguese ships were sunk or taken, for three of ours.<\/span> <span class=\"s\" data-s=\"3.6\">The prince had never shone in the <span class=\"nm tm first\" data-g=\"g:dīwān\">dīwān<\/span>, but on a deck he was another man, and he would talk of ships for the rest of his life.<\/span> <span class=\"s anchored\" data-s=\"3.7\">In Jumādā al-Ūlā the Emperor caught the Portuguese army at Besteiros and destroyed more than half of it.<\/span><sup class=\"rm\" data-r=\"1411-08-28-battle-besteiros\">9<\/sup>", "<span class=\"s anchored\" data-s=\"4.0\">On 13 Jumādā al-Ūlā 814 <span class=\"nm pl cn\" data-g=\"c:Qashtāla\" data-court=\"Qashtāla\" data-plain=\"Castile\">Qashtāla<\/span> surrendered without conditions.<\/span><sup class=\"rm\" data-r=\"1411-09-02-castile-capitulates\">10<\/sup> <span class=\"s\" data-s=\"4.1\">Its armies were gone, and the Emperor's flags flew from Zamora to Shant Yāqub, as al-Manṣūr's had four hundred years before.<\/span> <span class=\"s\" data-s=\"4.2\">Portugal fought on.<\/span> <span class=\"s\" data-s=\"4.3\">The dīwān told the Emperor he could have a separate peace with it whenever he wished, and a province for the asking.<\/span> <span class=\"s\" data-s=\"4.4\">He refused.<\/span> <span class=\"s\" data-s=\"4.5\">He had not come for a province, and this war would be the end of Portugal.<\/span> <span class=\"s anchored\" data-s=\"4.6\">He marched on Porto, its capital, and sent the crown prince round with the fleet to close the river mouth behind it.<\/span><sup class=\"rm\" data-r=\"1411-09-the-march-on-porto\">11<\/sup> <span class=\"s\" data-s=\"4.7\">Porto held out for a month.<\/span> <span class=\"s\" data-s=\"4.8\">Then the grain ran out.<\/span> <span class=\"s anchored\" data-s=\"4.9\">On 18 Jumādā al-Ākhira the starving city rose against its own garrison, and the townsmen threw open the gates to the army.<\/span><sup class=\"rm\" data-r=\"1411-10-07-porto-falls\">12<\/sup>", "<span class=\"s\" data-s=\"5.0\">The nobles of Portugal had one army left.<\/span> <span class=\"s anchored\" data-s=\"5.1\">In Rajab it came down from the hills to fall on a camp of Marīnid levies, and the Emperor caught it on the march at Guimarães, where their first king had been born.<\/span><sup class=\"rm\" data-r=\"1411-10-27-battle-guimaraes\">13<\/sup> <span class=\"s\" data-s=\"5.2\">On 9 Rajab he fell on it with twice its number and broke it, and Portugal had no army left.<\/span>", "<span class=\"s anchored\" data-s=\"6.0\">Five days later, on 14 Rajab 814, the peace was signed.<\/span><sup class=\"rm\" data-r=\"1411-11-01-the-end-of-portugal\">14<\/sup> <span class=\"s\" data-s=\"6.1\">Rajab is one of the sacred months, in which the Prophet forbade war, and the court called it the Peace of Rajab and said it was fitting that this war should end in it.<\/span> <span class=\"s\" data-s=\"6.2\">Portugal ceased to be.<\/span> <span class=\"s\" data-s=\"6.3\">Its thirty-four towns, from Porto and Braga to Coimbra and Viseu, passed to the crown, and its king <span class=\"nm first\" data-g=\"p:fernando-of-castile\">Fernando<\/span> went into exile at the court of the man who had dragged him into the war.<\/span> <span class=\"s\" data-s=\"6.4\"><span class=\"nm pl cn\" data-g=\"c:Qashtāla\" data-court=\"Qashtāla\" data-plain=\"Castile\">Qashtāla<\/span> gave up sixty-three towns, the whole of Old Castile, León and Navarre, from Valladolid and Burgos to Segovia, Soria and Pamplona.<\/span> <span class=\"s\" data-s=\"6.5\">King <span class=\"nm first\" data-g=\"p:pedro-of-castile\">Pedro<\/span> kept forty-five towns in the rain of the north, in Galicia, Asturias and the Basque hills, and moved his court to Oviedo.<\/span> <span class=\"s\" data-s=\"6.6\">The Christians had always said their reconquest began in those mountains, when a Gothic lord held a cave against the first governors of al-Andalus.<\/span> <span class=\"s\" data-s=\"6.7\">Seven hundred years later they had been driven back to the same mountains.<\/span>", "<span class=\"s\" data-s=\"7.0\">On the day of the peace the crown ruled two hundred and fifty-eight towns and nearly four million souls, three of every four of them Christians.<\/span> <span class=\"s\" data-s=\"7.1\">It did not keep them long.<\/span> <span class=\"s\" data-s=\"7.2\">The Emperor had learned from his father that Christians obey a lord who owes his crown to the Emperor more readily than a governor, and he gave out the conquests at once as four new <span class=\"nm tm first\" data-g=\"g:ṭāʾifas\">ṭāʾifas<\/span>.<\/span> <span class=\"s\" data-s=\"7.3\">His cousin <span class=\"nm first\" data-g=\"p:ahmad-ibn-ismail-ibn-yusuf\">Aḥmad<\/span> took the old kingdom of Portugal as the Ṭāʾifa of Burtuqāl, after the old name of Porto, Portucale, which the Arabs said as Burtuqāl and from which the Christians had named their kingdom.<\/span> <span class=\"s\" data-s=\"7.4\">His own son <span class=\"nm first\" data-g=\"p:ahmad-ibn-ismail-ibn-saad\">Aḥmad<\/span>, eighteen, took León.<\/span> <span class=\"s\" data-s=\"7.5\">His cousin <span class=\"nm first\" data-g=\"p:yusuf-ibn-ismail\">Yūsuf<\/span> took Navarre, with <span class=\"nm pl first\" data-g=\"l:banbaluna\" data-court=\"Banbalūna\" data-plain=\"Pamplona\">Banbalūna<\/span>.<\/span> <span class=\"s\" data-s=\"7.6\">And Old Castile, from Burgos to Valladolid and Segovia, went to <span class=\"nm first\" data-g=\"p:khalid-ibn-yahya\">Khālid ibn Yaḥyā Raḥḥū<\/span>, sixty-eight years old, the general of the Marīnid war, the captain of the prospectors and the victor of Granadilla, the first man outside the house of Naṣr to be given a <span class=\"nm tm first\" data-g=\"g:ṭāʾifa\">ṭāʾifa<\/span>.<\/span> <span class=\"s anchored\" data-s=\"7.7\">Europe was horrified, all but Paris, and the Emperor of the Germans could do nothing while France and England were at war again.<\/span><sup class=\"rm\" data-r=\"1411-11-01-europe-horrified\">15<\/sup> <span class=\"s\" data-s=\"7.8\">The ʿulamāʾ said the Istirdād was not finished.<\/span> <span class=\"s\" data-s=\"7.9\"><span class=\"nm pl cn\" data-g=\"c:Qashtāla\" data-court=\"Qashtāla\" data-plain=\"Castile\">Qashtāla<\/span> still held the mountains of the north, and one more war would push it into the sea.<\/span>"], "names": {"p:ismail-ibn-saad": {"kind": "person", "p": 0, "id": "ismail-ibn-saad", "name": "Ismāʿīl ibn Saʿd", "ar": "إسماعيل بن سعد", "dyn": "Naṣrid", "lines": [], "age": 45, "kin": "son of Saʿd ibn Yūsuf; mother Duʿāʾ", "standing": "the ruler (reckoning of 29 Jun 1410)", "before": [{"d": "10 Jul 1405", "t": "Before Qūnka a second time, the Emperor Ismāʿīl with 4,900 attacks what is left of the army of Toledo, 1,810…"}, {"d": "1 Mar 1408", "t": "The Emperor Ismāʿīl resolves to raise Qurṭuba from its ruins as the Capital of the Old Caliphate, but keeps…"}], "first": "first met in “Of the Conqueror, the Renegade at San Clemente, and the Peace of Independence” (1366)"}, "c:Qashtāla": {"kind": "country", "p": 0, "name": "Qashtāla", "plain": "Castile"}, "l:fas": {"kind": "place", "p": 0, "unlinked": true, "id": "fas", "name": "Fās", "plain": "Fez", "ar": "فاس", "held": "not held by the crown on this date", "first": "first met in “Of the Spring of the Year 737, and the Marīnid War upon Qashtāla” (1337)"}, "g:Istirdād": {"kind": "term", "p": 0, "name": "Istirdād", "plain": "the reconquest (lit. recovery) of al-Andalus", "proposed": true}, "c:Jillīqiya": {"kind": "country", "p": 0, "name": "Jillīqiya", "plain": "Galicia"}, "l:qurtuba": {"kind": "place", "p": 0, "unlinked": true, "id": "qurtuba", "name": "Qurṭuba", "plain": "Cordoba", "ar": "قرطبة", "held": "in the realm since 5 Jul 1353", "first": "first met in “Of al-Quṣayr and Balma” (1347)"}, "l:shant-yaqub": {"kind": "place", "p": 0, "unlinked": true, "id": "shant-yaqub", "name": "Shant Yāqub", "plain": "Santiago Compostela", "ar": "شنت ياقب", "held": "not held by the crown on this date", "first": "first appears here"}, "g:ʿulamāʾ": {"kind": "term", "p": 0, "name": "ʿulamāʾ", "plain": "the religious scholars (the clergy estate)", "proposed": true}, "p:abu-al-fadl-marinid": {"kind": "person", "p": 0, "id": "abu-al-fadl-marinid", "name": "Abū al-Faḍl", "ar": "أبو الفضل", "dyn": "Marīnid", "lines": [], "age": 52, "kin": "son of Abū ʿInān Fāris", "before": [{"d": "14 Jan 1376", "t": "By now the Emperor's sister Jadīla, betrothed in 1372, is married to Abū al-Faḍl, crown prince of Fās"}, {"d": "7 Oct 1381", "t": "Abū ʿInān Fāris, sultan of Fās for thirty-six years and twice the Emirate's enemy, dies. His son Abū al-Faḍl…"}], "first": "first met in “Of the War of the Aragonese Restoration, and the Day of Shalba” (1376)"}, "l:tilimsan": {"kind": "place", "p": 0, "unlinked": true, "id": "tilimsan", "name": "Tilimsān", "plain": "Tlemcen", "ar": "تلمسان", "held": "not held by the crown on this date", "first": "first met in “Of the Spring of the Year 737, and the Marīnid War upon Qashtāla” (1337)"}, "l:qunka": {"kind": "place", "p": 1, "id": "qunka", "name": "Qūnka", "plain": "Cuenca", "ar": "قونكة", "held": "not held by the crown on this date", "first": "first met in “Of the Stand at Portalegre, and the Peace of Ramaḍān” (1395)"}, "l:ishbiliyya": {"kind": "place", "p": 2, "id": "ishbiliyya", "name": "Ishbīliyya", "plain": "Sevilla", "ar": "إشبيلية", "held": "in the realm since 5 Jul 1353", "first": "first met in “Of the Road through Mursiyya, and the Host of Ibn al-Khaṭīb” (1339)"}, "l:al-ushbuna": {"kind": "place", "p": 3, "id": "al-ushbuna", "name": "al-Ushbūna", "plain": "Lisbon", "ar": "الأشبونة", "held": "in the realm since 22 Jun 1395", "first": "first met in “Of Zafra and the Walls of al-Ushbūna, and the Peace with Portugal” (1364)"}, "p:muhammad-ibn-ismail-ibn-saad": {"kind": "person", "p": 3, "id": "muhammad-ibn-ismail-ibn-saad", "name": "Muḥammad ibn Ismāʿīl ibn Saʿd", "ar": "محمد بن إسماعيل", "dyn": "Naṣrid", "lines": [], "age": 26, "kin": "son of Ismāʿīl ibn Saʿd; mother Bernarda of Murcia", "standing": "the heir (reckoning of 29 Jun 1410)", "before": [{"d": "2 Mar 1405", "t": "Ismāʿīl ibn Saʿd, thirty-eight, is proclaimed Emperor and Sultan of al-Andalus on his father's death. By the…"}], "first": "first met in “Of the Grandsons, and the Prince Who Came Home from Benabarre” (1398)"}, "l:balansiyya": {"kind": "place", "p": 3, "unlinked": true, "id": "balansiyya", "name": "Balansiyya", "plain": "Valencia", "ar": "بلنسية", "held": "in the realm since 23 Aug 1340", "first": "first met in “Of the Bluff before Shāṭiba, and the Peace of Balansiyya” (1340)"}, "g:dīwān": {"kind": "term", "p": 3, "name": "dīwān", "plain": "the royal council", "proposed": true}, "p:fernando-of-castile": {"kind": "person", "p": 6, "id": "fernando-of-castile", "name": "Fernando of Castile", "ar": null, "dyn": "Castilian royal house", "lines": [], "age": 47, "kin": "son of Jerónimo of Castile", "before": [], "first": "first appears here"}, "p:pedro-of-castile": {"kind": "person", "p": 6, "id": "pedro-of-castile", "name": "Pedro of Castile", "ar": null, "dyn": "Castilian royal house", "lines": [], "age": 40, "before": [], "first": "first met in “Of the League, the Ships of Catalonia, and the Days of Banbalūna and Ejea” (1395)"}, "g:ṭāʾifas": {"kind": "term", "p": 7, "name": "ṭāʾifas", "plain": "vassal kingdoms under the crown", "proposed": true}, "p:ahmad-ibn-ismail-ibn-yusuf": {"kind": "person", "p": 7, "id": "ahmad-ibn-ismail-ibn-yusuf", "name": "Aḥmad ibn Ismāʿīl ibn Yūsuf", "ar": "أحمد بن إسماعيل", "dyn": "Naṣrid", "lines": [], "age": 34, "kin": "son of Ismāʿīl ibn Yūsuf", "before": [], "first": "first appears here"}, "p:ahmad-ibn-ismail-ibn-saad": {"kind": "person", "p": 7, "id": "ahmad-ibn-ismail-ibn-saad", "name": "Aḥmad ibn Ismāʿīl ibn Saʿd", "ar": "أحمد بن إسماعيل", "dyn": "Naṣrid", "lines": [], "age": 18, "kin": "son of Ismāʿīl ibn Saʿd; mother ʿĀʾisha of the house of ʿOthmān", "before": [], "first": "first appears here"}, "p:yusuf-ibn-ismail": {"kind": "person", "p": 7, "id": "yusuf-ibn-ismail", "name": "Yūsuf ibn Ismāʿīl", "ar": "يوسف بن إسماعيل", "dyn": "Naṣrid", "lines": [], "age": 39, "kin": "son of Ismāʿīl ibn Yūsuf; mother Hippolyte of Villa di Chiesa", "before": [{"d": "19 Feb 1372", "t": "A son, Yūsuf, is born to the sultan's brother Ismāʿīl and Hippolyte of Villa di Chiesa"}], "first": "first appears here"}, "l:banbaluna": {"kind": "place", "p": 7, "id": "banbaluna", "name": "Banbalūna", "plain": "Pamplona", "ar": "بنبلونة", "held": "not held by the crown on this date", "first": "first met in “Of the League, the Ships of Catalonia, and the Days of Banbalūna and Ejea” (1395)"}, "p:khalid-ibn-yahya": {"kind": "person", "p": 7, "id": "khalid-ibn-yahya", "name": "Khālid ibn Yaḥyā", "ar": "خالد بن يحيى", "dyn": "Raḥḥū", "lines": [], "age": 68, "kin": "son of Yaḥyā Raḥḥū; mother Qamar", "before": [{"d": "16 Jan 1373", "t": "By the winter of 774 the sultan's mother, Sayyida of Fezzan, has taken Maryam bint Ismāʿīl's seat in the…"}, {"d": "2 Jul 1405", "t": "At Granadilla in the Leonese west a joint host of 20,550, al-Andalus with Aragon and Catalonia under Khālid…"}], "first": "first met in “Of the Lean Years, the Gold of Tūnis, and the Royal Decree” (1343)"}, "g:ṭāʾifa": {"kind": "term", "p": 7, "name": "ṭāʾifa", "plain": "a vassal kingdom under the crown", "proposed": true}}, "records": [{"id": "1410-06-29-war-on-castile", "date": "29 Jun 1410", "hdate": "25 Ṣafar 813", "type": "war declared", "title": "The truce with Qashtāla runs out, and the Emperor Ismāʿīl declares the fourth war of the Istirdād, which he names the War of Jillīqiya. Portugal joins Qashtāla; Fās answers the Emperor's call with Tilimsān and Tafilalt. The Mamlūks, busy in the Fertile Crescent, are not needed", "fig": [], "prov": "save", "provLabel": "read from a save", "source": "save of 29 June 1410; Trent's account", "p": 0, "s": 0, "tier": "date", "basis": "date: “25 Ṣafar 813” read as 25 Ṣafar 813 AH = 29 Jun 1410; checked by names abu-al-fadl-marinid, ismail-ibn-saad and 4 words of the record in the sentence", "n": 1}, {"id": "1410-09-16-battle-cape-mondego", "date": "16 Sep 1410", "hdate": "16 Jumādā al-Ūlā 813", "type": "battle", "title": "Off Cape Mondego the Castilian admiral Pedro, with 14 ships, falls on the fleet of Tilimsān, 13 sail, and sinks every one of them without loss", "fig": [["ours / theirs", "13 / 14"], ["lost", "13 / 0"], ["result", "allied defeat"], ["", "at sea"]], "prov": "save", "provLabel": "read from a save", "source": "autosave of 1 March 1411 (the war's battle list)", "p": 1, "s": 1, "tier": "wording", "basis": "wording: 7 words shared with the record (admiral, cape, castilian, mondego, pedro, tilimsan), next best sentence 3", "n": 2}, {"id": "1410-10-09-battle-penafiel", "date": "9 Oct 1410", "hdate": "9 Jumādā al-Ākhira 813", "type": "battle", "title": "At Peñafiel on the Duero the 970 men of the Ṭāʾifa of Qūnka attack the main Castilian host of 19,800 and are destroyed to the last man", "fig": [["ours / theirs", "973 / 19,805"], ["lost", "973 / 0"], ["result", "allied defeat"]], "prov": "save", "provLabel": "read from a save", "source": "autosave of 1 March 1411 (the war's battle list)", "p": 1, "s": 2, "tier": "wording", "basis": "wording: 4 words shared with the record (castilian, destroy, penafiel, qunka), next best sentence 2", "n": 3}, {"id": "1410-12-11-battle-cuellar", "date": "11 Dec 1410", "hdate": "13 Shaʿbān 813", "type": "battle", "title": "At Cuéllar the Castilian host, 21,300 under Crisanto, attacks the Catalan army of 9,370 and breaks it: 5,400 Catalans lost for 2,000 Castilians", "fig": [["ours / theirs", "9,372 / 21,301"], ["lost", "5,398 / 2,004"], ["result", "allied defeat"]], "prov": "save", "provLabel": "read from a save", "source": "autosave of 1 March 1411 (the war's battle list)", "p": 1, "s": 3, "tier": "date", "basis": "month: “Shaʿbān” read as Shaʿbān 813 AH (29 Nov 1410 – 27 Dec 1410); checked by 4 words of the record in the sentence", "n": 4}, {"id": "1411-01-13-battle-cuellar-ii", "date": "13 Jan 1411", "hdate": "17 Ramaḍān 813", "type": "battle", "title": "The Emperor's first great battle. On 17 Ramaḍān, the day of Badr, the Emperor Ismāʿīl with 25,730 men, Andalusīs and Marīnids, attacks Crisanto's 19,290 at Cuéllar, where the Catalans had been broken a month before. It is a hard day: 9,590 of ours fall for 8,450 of theirs, but the field is ours", "fig": [["ours / theirs", "25,734 / 19,288"], ["lost", "9,586 / 8,446"], ["result", "victory"]], "prov": "screen", "provLabel": "seen on Trent's screen (a screenshot), not read from a save", "source": "Trent's battle screen, 13 January 1411; autosave of 1 March 1411", "p": 2, "s": 3, "tier": "date", "basis": "date: “17 Ramaḍān 813” read as 17 Ramaḍān 813 AH = 13 Jan 1411; checked by 5 words of the record in the sentence", "n": 5}, {"id": "1411-03-10-battle-bay-setubal", "date": "10 Mar 1411", "hdate": "14 Dhū al-Qaʿda 813", "type": "battle", "title": "The great sea battle off al-Ushbūna. In the bay of Setúbal the Castilian admiral Pedro, with 14 ships, attacks the joined fleets of al-Andalus and Fās, 107 sail under the Marīnid prince Aḥmad, and loses every ship; the allies lose 12", "fig": [["ours / theirs", "107 / 14"], ["lost", "12 / 14"], ["result", "victory"], ["", "at sea"]], "prov": "save", "provLabel": "read from a save", "source": "save of 1 November 1411, before the peace (the war's battle list)", "p": 3, "s": 1, "tier": "date", "basis": "month: “Dhū al-Qaʿda” read as Dhū al-Qaʿda 813 AH (25 Feb 1411 – 26 Mar 1411); checked by 10 words of the record in the sentence", "n": 6}, {"id": "1411-05-15-battle-toro", "date": "15 May 1411", "hdate": "21 Muḥarram 814", "type": "battle", "title": "On the outskirts of Zamora the Emperor meets Crisanto's host again at Toro, 20,890 against 11,110, and breaks it: 5,120 Castilians lost for 4,280 of ours", "fig": [["ours / theirs", "20,890 / 11,111"], ["lost", "4,282 / 5,121"], ["result", "victory"]], "prov": "screen", "provLabel": "seen on Trent's screen (a screenshot), not read from a save", "source": "Trent's battle screen, 15 May 1411", "p": 3, "s": 3, "tier": "date", "basis": "month: “Muḥarram 814” read as Muḥarram 814 AH (25 Apr 1411 – 24 May 1411); checked by 3 words of the record in the sentence", "n": 7}, {"id": "1411-06-21-battle-mouth-douro-ii", "date": "21 Jun 1411", "hdate": "28 Ṣafar 814", "type": "battle", "title": "The crown prince's first sea battle. At the mouth of the Duero the Portuguese fleet of 17 attacks 34 ships, 23 of al-Andalus under the crown prince Muḥammad and 11 of Valencia under their own admiral, and loses 15 of them for 3 of ours", "fig": [["ours / theirs", "34 / 17"], ["lost", "3 / 15"], ["result", "victory"], ["", "at sea"]], "prov": "screen", "provLabel": "seen on Trent's screen (a screenshot), not read from a save", "source": "Trent's battle screen (breakdown) and account, 21 June 1411; save of 1 November 1411", "p": 3, "s": 4, "tier": "date", "basis": "month: “Ṣafar” read as Ṣafar 814 AH (25 May 1411 – 22 Jun 1411); checked by names muhammad-ibn-ismail-ibn-saad and 8 words of the record in the sentence", "n": 8}, {"id": "1411-08-28-battle-besteiros", "date": "28 Aug 1411", "hdate": "8 Jumādā al-Ūlā 814", "type": "battle", "title": "At Besteiros, between Viseu and Coimbra, the Emperor with 11,370 destroys more than half the Portuguese army of 9,670: 5,280 of theirs lost for 1,920 of ours", "fig": [["ours / theirs", "11,368 / 9,668"], ["lost", "1,919 / 5,280"], ["result", "victory"]], "prov": "save", "provLabel": "read from a save", "source": "save of 1 November 1411, before the peace (the war's battle list)", "p": 3, "s": 7, "tier": "date", "basis": "month: “Jumādā al-Ūlā” read as Jumādā al-Ūlā 814 AH (21 Aug 1411 – 19 Sep 1411); checked by 4 words of the record in the sentence", "n": 9}, {"id": "1411-09-02-castile-capitulates", "date": "2 Sep 1411", "hdate": "13 Jumādā al-Ūlā 814", "type": "war joined", "title": "Qashtāla surrenders unconditionally. Its armies gone and its lands occupied from Zamora to Galicia, the Crown of Castile capitulates to the Emperor, who may now dictate the terms of peace. War score stands at 100", "fig": [], "prov": "screen", "provLabel": "seen on Trent's screen (a screenshot), not read from a save", "source": "Trent's screen, 2 September 1411", "p": 4, "s": 0, "tier": "date", "basis": "date: “13 Jumādā al-Ūlā 814” read as 13 Jumādā al-Ūlā 814 AH = 2 Sep 1411; checked by 2 words of the record in the sentence", "n": 10}, {"id": "1411-09-the-march-on-porto", "date": "3 Sep 1411", "hdate": "14 Jumādā al-Ūlā 814", "type": "player note", "title": "With Qashtāla at his mercy, the Emperor turns on Portugal and marches on Porto, its capital, while the crown prince Muḥammad brings the fleet round to blockade the city from the sea. Portugal has not surrendered. A separate peace with it is possible, but the Emperor wants no concessions from Portugal: this war is to be the end of it", "fig": [], "prov": "told", "provLabel": "Trent's account of play, not yet confirmed by a save", "source": "Trent's account, September 1411", "p": 4, "s": 6, "tier": "wording", "basis": "wording: 6 words shared with the record (capital, crown, march, porto, prince, round), next best sentence 3", "n": 11}, {"id": "1411-10-07-porto-falls", "date": "7 Oct 1411", "hdate": "18 Jumādā al-Ākhira 814", "type": "siege", "title": "Porto falls. Starved by the Emperor's siege on land and the crown prince's blockade at sea, its people rise and throw open the gates to the army. So ends the Kingdom of Portugal", "fig": [["result", "taken"]], "prov": "told", "provLabel": "Trent's account of play, not yet confirmed by a save", "source": "Trent's account, 7 October 1411", "p": 4, "s": 9, "tier": "date", "basis": "date: “18 Jumādā al-Ākhira” read as 18 Jumādā al-Ākhira 814 AH = 7 Oct 1411; checked by 3 words of the record in the sentence", "n": 12}, {"id": "1411-10-27-battle-guimaraes", "date": "27 Oct 1411", "hdate": "9 Rajab 814", "type": "battle", "title": "The last battle. Three weeks after Porto fell, the last Portuguese army, 4,800 under Bernardo, marches on a force of Marīnid levies; the Emperor intercepts it at Guimarães, the cradle of the kingdom, with 9,450 men and kills or scatters 3,160 for the loss of 1,150", "fig": [["ours / theirs", "9,446 / 4,803"], ["lost", "1,154 / 3,162"], ["result", "victory"]], "prov": "screen", "provLabel": "seen on Trent's screen (a screenshot), not read from a save", "source": "Trent's battle screen, 27 October 1411; save of 1 November 1411", "p": 5, "s": 1, "tier": "date", "basis": "month: “Rajab” read as Rajab 814 AH (19 Oct 1411 – 17 Nov 1411); checked by 4 words of the record in the sentence", "n": 13}, {"id": "1411-11-01-the-end-of-portugal", "date": "1 Nov 1411", "hdate": "14 Rajab 814", "type": "peace", "title": "The Peace of Rajab (14 Rajab 814). Portugal ceases to be: all 34 of its towns, from Porto, Braga and Guimarães to Coimbra, Viseu and Bragança, pass to the crown. Qashtāla gives up 63 towns, the heart of Old Castile, León and Navarre: Valladolid, Burgos, León, Zamora, Toro, Palencia, Segovia, Soria and Logroño, and Pamplona, Tudela and Estella. What is left of Qashtāla, 45 towns in Galicia, Asturias, Cantabria and the Basque country, is ruled from Oviedo", "fig": [], "prov": "save", "provLabel": "read from a save", "source": "saves of 1 November 1411, before and after the peace; Trent's account", "p": 6, "s": 0, "tier": "date", "basis": "date: “14 Rajab 814” read as 14 Rajab 814 AH = 1 Nov 1411; checked by names fernando-of-castile, pedro-of-castile", "n": 14}, {"id": "1411-11-01-europe-horrified", "date": "1 Nov 1411", "hdate": "14 Rajab 814", "type": "diplomacy", "title": "Europe is horrified by the conquest of Portugal and Old Castile, all but Paris. The Holy Roman Emperor can do little about it, with France and England at war again", "fig": [], "prov": "told", "provLabel": "Trent's account of play, not yet confirmed by a save", "source": "Trent's account, November 1411; world data of 1 November 1411", "p": 7, "s": 7, "tier": "wording", "basis": "wording: 5 words shared with the record (england, europe, france, horrifi, pari), next best sentence 1", "n": 15}], "drawn": [{"id": "1411-11-01-four-new-taifas", "date": "1 Nov 1411", "hdate": "14 Rajab 814", "type": "reform", "title": "The conquests of Jillīqiya are given out as four new ṭāʾifas. The Emperor's cousin Aḥmad takes the old Kingdom of Portugal as the Ṭāʾifa of Burtuqāl; the Emperor's son Aḥmad, eighteen, takes León; Khālid ibn Yaḥyā Raḥḥū, sixty-eight, takes Old Castile as the Ṭāʾifa of Burghush; and the Emperor's cousin Yūsuf takes Navarre as the Ṭāʾifa of Banbalūna. The crown keeps its 161 towns", "fig": [], "prov": "save", "provLabel": "read from a save", "source": "save of 1 November 1411, after the organisation of the conquests (Trent)", "p": null, "s": null, "tier": null, "basis": null, "why": "best sentence shares 6 words but the runner-up shares 6"}], "verse": "When the victory of Allāh has come and the conquest, and you see the people entering into the religion of Allāh in multitudes, then exalt with praise of your Lord and ask forgiveness of Him.", "head": {"hdate": "14 Rajab 814", "wdate": "1 Nov 1411", "ruler": "Ismāʿīl ibn Saʿd", "regnal": 7, "rank": "empire", "capital": "Ishbīliyya", "towns": 161, "souls": 2040408, "treasury": 386, "income": 274.2, "expenses": 238.4, "debt": 565, "stability": 21.4, "wars": 1, "reckoned": "29 Jun 1410", "reckonedISO": "1410-06-29", "ago": 0, "opens": "29 Jun 1410", "next": "1 Nov 1411", "nextISO": "1411-11-01", "gap": 490, "open": {"reckoned": "29 Jun 1410", "ruler": "Ismāʿīl ibn Saʿd", "towns": 161, "souls": 2040408, "treasury": 386, "income": 274.2, "expenses": 238.4, "stability": 21.4, "wars": 1, "subjects": 5}, "close": {"reckoned": "1 Nov 1411", "ruler": "Ismāʿīl ibn Saʿd", "towns": 161, "souls": 2042050, "treasury": 816, "income": 220.2, "expenses": 303.2, "stability": 24.5, "wars": 0, "subjects": 9}, "ticks": ["1404-02-03", "1404-10-22", "1405-01-07", "1405-03-31", "1408-08-05", "1410-06-29", "1411-11-01", "1414-10-24", "1416-01-01", "1420-08-11", "1420-09-04", "1423-11-05"]}, "cutoff": "29 Jun 1410", "counts": {"people": 9, "places": 5, "sources": 16}}, {"file": "0787-12-04-of-the-pilgrimage-that-came-too-late.md", "title": "Of the County of Teruel, and the Pilgrimage That Came Too Late", "date": "1386-01-06", "book": {"id": "book-of-the-call", "title": "The Call", "ar": "كتاب الدعوة"}, "paras": ["<span class=\"s\" data-s=\"0.0\">The pilgrimage was put off once more.<\/span> <span class=\"s anchored\" data-s=\"0.1\">In Rabīʿ al-Awwal 787 the lords of the Aragonese uplands rose against King <span class=\"nm first\" data-g=\"p:alfons-de-borja\">Alfons<\/span> of the renewed <span class=\"nm pl cn first\" data-g=\"c:Arghūn\" data-court=\"Arghūn\" data-plain=\"Aragon\">Arghūn<\/span>, and proclaimed a County of Teruel in the inner country of his kingdom.<\/span><sup class=\"rm\" data-r=\"1385-05-03-county-of-teruel\">1<\/sup> <span class=\"s\" data-s=\"0.2\">It was a small rising, but it was a rising in a <span class=\"nm tm first\" data-g=\"g:ṭāʾifa\">ṭāʾifa<\/span> the Emperor had made and promised to protect, and he would not leave for Makka with it unsettled.<\/span> <span class=\"s\" data-s=\"0.3\">It took the summer.<\/span> <span class=\"s anchored\" data-s=\"0.4\">On 16 Rajab 787 the County of Teruel was crushed and its towns returned to King Alfons.<\/span><sup class=\"rm\" data-r=\"1385-08-23-teruel-crushed\">2<\/sup> <span class=\"s anchored\" data-s=\"0.5\">That same day the Emperor's caravan left <span class=\"nm pl first\" data-g=\"l:ishbiliyya\" data-court=\"Ishbīliya\" data-plain=\"Sevilla\">Ishbīliya<\/span> for the east.<\/span><sup class=\"rm\" data-r=\"1385-08-23-the-emperor-departs-on-hajj\">3<\/sup>", "<span class=\"s\" data-s=\"1.0\">It was as fine as the caravan his father had led thirty-four years before.<\/span> <span class=\"s\" data-s=\"1.1\">There were camels and horses and the scholars of the court, gifts for the sharīf of Makka, and alms for the poor of the two holy cities.<\/span> <span class=\"s\" data-s=\"1.2\">The crown prince <span class=\"nm first\" data-g=\"p:ismail-ibn-saad\">Ismāʿīl<\/span>, nineteen years old, ruled as regent in his father's absence.<\/span> <span class=\"s\" data-s=\"1.3\">He ruled well, by the <span class=\"nm tm first\" data-g=\"g:dīwān\">dīwān<\/span>'s account.<\/span> <span class=\"s\" data-s=\"1.4\">He had a gift for sending a minister away from an audience sure that the prince agreed with him, whatever the prince meant to do.<\/span> <span class=\"s\" data-s=\"1.5\">That gift did not serve him in the harem.<\/span> <span class=\"s\" data-s=\"1.6\">His mother <span class=\"nm first\" data-g=\"p:dua-marinid\">Duʿāʾ<\/span> and the Emperor's first wife <span class=\"nm first\" data-g=\"p:aiman-mamluk\">Aiman<\/span> had been rivals since the princes were children, and with the Emperor gone they quarrelled openly.<\/span> <span class=\"s\" data-s=\"1.7\">They argued over precedence and households, and over whose son the court should look to.<\/span> <span class=\"s\" data-s=\"1.8\">The regent learned that it was easier to govern an empire than to keep peace between two women who had each borne the Emperor a son.<\/span>", "<span class=\"s anchored\" data-s=\"2.0\">In Ramaḍān the caravan reached al-Qāhira, the city of a thousand minarets, which swallows a caravan the moment it passes the northern gate.<\/span><sup class=\"rm\" data-r=\"1385-10-28-al-qahira\">4<\/sup> <span class=\"s\" data-s=\"2.1\">Above the noise and spice and roasting meat rose the mosque of al-Azhar, whose scholars were counted among the finest in the Muslim world.<\/span> <span class=\"s\" data-s=\"2.2\">The Emperor lingered.<\/span> <span class=\"s\" data-s=\"2.3\">He sat with them for a month, and he held long talks with his brother-in-law the sultan <span class=\"nm first\" data-g=\"p:bolot-mamluk\">Būlād<\/span> about the fleet, the Maghrib and the Christians of the north.<\/span> <span class=\"s\" data-s=\"2.4\">He said afterwards that it was the best month of his reign.<\/span> <span class=\"s\" data-s=\"2.5\">Then he pushed on for Makka.<\/span>", "<span class=\"s\" data-s=\"3.0\">He came too late.<\/span> <span class=\"s anchored\" data-s=\"3.1\">When the caravan reached the holy city, the standing at ʿArafāt had passed: the hours between noon and sunset when every pilgrim of the season stands together on the plain beneath the Mount of Mercy, praying and asking forgiveness.<\/span><sup class=\"rm\" data-r=\"1386-01-06-the-season-passed\">5<\/sup> <span class=\"s\" data-s=\"3.2\">A saying of the Prophet holds that the Ḥajj is nothing more or less than that single afternoon, and no rite performed afterwards can complete the pilgrimage.<\/span> <span class=\"s\" data-s=\"3.3\">The Emperor heard the news in silence.<\/span> <span class=\"s\" data-s=\"3.4\">Then he gave the order the caravan dreaded: they had tarried too long, and it must all be done again.<\/span> <span class=\"s\" data-s=\"3.5\">The caravan broke up and turned for home.<\/span>", "<span class=\"s\" data-s=\"4.0\">But misfortune turned to fortune on the road back.<\/span> <span class=\"s\" data-s=\"4.1\">The scholars the Emperor had sat with in al-Qāhira had taken his measure as he had taken theirs.<\/span> <span class=\"s\" data-s=\"4.2\">When he offered them halls, stipends and students in Ishbīliya, many of them came west with him.<\/span> <span class=\"s\" data-s=\"4.3\">The <span class=\"nm tm first\" data-g=\"g:Jamāʿa\">Jamāʿa<\/span> had to be persuaded to pay for them.<\/span> <span class=\"s\" data-s=\"4.4\">The <span class=\"nm tm first\" data-g=\"g:ʿulamāʾ\">ʿulamāʾ<\/span> backed the measure warmly, since it was their own order the Emperor proposed to enlarge, and the assembly voted to sponsor theological seminaries across the realm for ten years.<\/span> <span class=\"s\" data-s=\"4.5\">A pilgrimage that never reached ʿArafāt had brought al-Azhar to Ishbīliya.<\/span>"], "names": {"p:alfons-de-borja": {"kind": "person", "p": 0, "id": "alfons-de-borja", "name": "Alfons de Borja", "ar": null, "dyn": "Borja", "lines": [], "age": 39, "before": [], "first": "first met in “Of the Reordering of the Realm, and the Restoration of al-Andalus” (1375)"}, "c:Arghūn": {"kind": "country", "p": 0, "name": "Arghūn", "plain": "Aragon"}, "g:ṭāʾifa": {"kind": "term", "p": 0, "name": "ṭāʾifa", "plain": "a vassal kingdom under the crown", "proposed": true}, "l:ishbiliyya": {"kind": "place", "p": 0, "id": "ishbiliyya", "name": "Ishbīliyya", "plain": "Sevilla", "ar": "إشبيلية", "held": "in the realm since 5 Jul 1353", "first": "first met in “Of the Road through Mursiyya, and the Host of Ibn al-Khaṭīb” (1339)"}, "p:ismail-ibn-saad": {"kind": "person", "p": 1, "id": "ismail-ibn-saad", "name": "Ismāʿīl ibn Saʿd", "ar": "إسماعيل بن سعد", "dyn": "Naṣrid", "lines": [], "age": 19, "kin": "son of Saʿd ibn Yūsuf; mother Duʿāʾ", "standing": "the heir (reckoning of 2 Dec 1379)", "before": [{"d": "8 Mar 1366", "t": "Duʿāʾ bears Sultan Saʿd a son, Ismāʿīl, a month before the peace. He becomes heir to the throne in place of…"}, {"d": "16 Mar 1375", "t": "The heir Ismāʿīl, nine, is betrothed to Bernarda of Murcia, eight, the gifted daughter of Dolça and heir of…"}], "first": "first met in “Of the Conqueror, the Renegade at San Clemente, and the Peace of Independence” (1366)"}, "g:dīwān": {"kind": "term", "p": 1, "name": "dīwān", "plain": "the royal council", "proposed": true}, "p:dua-marinid": {"kind": "person", "p": 1, "id": "dua-marinid", "name": "Duʿāʾ", "ar": "دعاء", "dyn": "Marīnid", "lines": [], "age": 47, "standing": "in the dīwān: integrating the new lands (reckoning of 2 Dec 1379)", "before": [{"d": "1 Oct 1370", "t": "Maryam bint Ismāʿīl leaves the integration of the new lands and joins Duʿā in promoting Andalusī culture:…"}, {"d": "16 Jan 1373", "t": "By the winter of 774 the sultan's mother, Sayyida of Fezzan, has taken Maryam bint Ismāʿīl's seat in the…"}], "first": "first met in “Of the Birth of Saʿd” (1348)"}, "p:aiman-mamluk": {"kind": "person", "p": 1, "id": "aiman-mamluk", "name": "Aiman", "ar": null, "dyn": "Baḥrī", "lines": [], "age": 41, "before": [{"d": "15 Oct 1371", "t": "A son, Yūsuf, is born to the sultan and Aiman the Mamlūk, named for his grandfather"}, {"d": "17 Mar 1375", "t": "In the reorganisation of the realm the Emperor's younger sister Maryam, eighteen and the ablest mind at…"}], "first": "first met in “Of the Prodigy, and the Daughter of al-Qāhira” (1351)"}, "p:bolot-mamluk": {"kind": "person", "p": 2, "id": "bolot-mamluk", "name": "Būlād", "ar": "بولاد", "dyn": "Baḥrī", "lines": [], "age": 41, "before": [], "first": "first met in “The Survey of the Kingdoms, After the Manner of the Roads of the Eyes” (1370)"}, "g:Jamāʿa": {"kind": "term", "p": 4, "name": "Jamāʿa", "plain": "the assembly of the estates", "proposed": true}, "g:ʿulamāʾ": {"kind": "term", "p": 4, "name": "ʿulamāʾ", "plain": "the religious scholars (the clergy estate)", "proposed": true}}, "records": [{"id": "1385-05-03-county-of-teruel", "date": "3 May 1385", "hdate": "22 Rabīʿ al-Awwal 787", "type": "war joined", "title": "Rebellion puts off the Hajj once more. Now it is the Ṭāʾifa of Aragon that splits: a so-called County of Teruel rises against King Alfons and holds the inner country of the kingdom, from Teruel north toward Saraqusṭa, leaving him the north. Another minor rising", "fig": [], "prov": "screen", "provLabel": "seen on Trent's screen (a screenshot), not read from a save", "source": "Trent's account and map screenshot, 3 May 1385", "p": 0, "s": 1, "tier": "date", "basis": "month: “Rabīʿ al-Awwal 787” read as Rabīʿ al-Awwal 787 AH (12 Apr 1385 – 11 May 1385); checked by names alfons-de-borja and 6 words of the record in the sentence", "n": 1}, {"id": "1385-08-23-teruel-crushed", "date": "23 Aug 1385", "hdate": "16 Rajab 787", "type": "peace", "title": "The County of Teruel is crushed and its lands returned to the Ṭāʾifa of Aragon", "fig": [["outcome", "crushed; the lands returned to Aragon"]], "prov": "told", "provLabel": "Trent's account of play, not yet confirmed by a save", "source": "Trent's account, 23 August 1385", "p": 0, "s": 4, "tier": "date", "basis": "date: “16 Rajab 787” read as 16 Rajab 787 AH = 23 Aug 1385; checked by names alfons-de-borja and 4 words of the record in the sentence", "n": 2}, {"id": "1385-08-23-the-emperor-departs-on-hajj", "date": "23 Aug 1385", "hdate": "16 Rajab 787", "type": "player note", "title": "With the last rising put down, the Emperor sets out on the Hajj at last, twelve years after he first put it off. His caravan is as exquisite as his father's was. The heir, Prince Ismāʿīl, rules as regent, while his mother Duʿā and Aiman, the Emperor's principal wife, squabble in his absence", "fig": [], "prov": "told", "provLabel": "Trent's account of play, not yet confirmed by a save", "source": "Trent's account, 23 August 1385", "p": 0, "s": 5, "tier": "date", "basis": "date: “That same day”, after 16 Rajab 787, = 23 Aug 1385; checked by names ishbiliyya", "n": 3}, {"id": "1385-10-28-al-qahira", "date": "28 Oct 1385", "hdate": "23 Ramaḍān 787", "type": "player note", "title": "In al-Qāhira, the city of a thousand minarets, the Emperor pauses on the road to Makka. He sits for a month with the scholars of al-Azhar and treats with his brother-in-law the Mamlūk sultan Būlād, Aiman's brother", "fig": [["choice", "Sit with the scholars of al-Azhar while we can"]], "prov": "screen", "provLabel": "seen on Trent's screen (a screenshot), not read from a save", "source": "Trent's account and screenshot of the event, 28 October 1385", "p": 2, "s": 0, "tier": "date", "basis": "month: “Ramaḍān” read as Ramaḍān 787 AH (6 Oct 1385 – 4 Nov 1385); checked by names bolot-mamluk and 3 words of the record in the sentence", "n": 4}, {"id": "1386-01-06-the-season-passed", "date": "6 Jan 1386", "hdate": "4 Dhū al-Ḥijja 787", "type": "player note", "title": "The season passes. The caravan comes too late: the year has turned and the standing at ʿArafāt has gone by, the afternoon beneath the Mount of Mercy that is the Hajj itself. The month among the scholars of al-Azhar cost the Emperor the pilgrimage. The caravan disperses and turns for home; the journey must be made again from the beginning", "fig": [["choice", "We tarried too long. It must be undertaken again."]], "prov": "screen", "provLabel": "seen on Trent's screen (a screenshot), not read from a save", "source": "Trent's screenshot of the event, 6 January 1386", "p": 3, "s": 1, "tier": "wording", "basis": "wording: 8 words shared with the record (arafat, beneath, caravan, mercy, mount, pass), next best sentence 3", "n": 5}], "drawn": [{"id": "1383-04-30-hajj-planned", "date": "30 Apr 1383", "hdate": "26 Ṣafar 785", "type": "player note", "title": "With the realm finally secure, the Emperor takes up the pilgrimage he put off in 774 until the truces had run out and the wars were fought. The next Hajj falls in Dhū al-Ḥijja 785, at the start of February 1384", "fig": [["outcome", "put off again by rebellion; the pilgrimage of 785 did not take place…"]], "prov": "told", "provLabel": "Trent's account of play, not yet confirmed by a save", "source": "Trent's account, April 1383", "p": null, "s": null, "tier": null, "basis": null, "why": "no written date fits and no sentence clearly matches"}, {"id": "1386-jamaa-theological-seminaries", "date": "6 Jan 1386", "hdate": "4 Dhū al-Ḥijja 787", "type": "estate change", "title": "Misfortune turns to fortune on the road home: the Emperor recruits many of the scholars of al-Azhar he sat with to fill the halls of the capital. The Jamāʿa must be persuaded to fund them, and the ʿulamāʾ back the measure: sponsor theological seminaries. The Jamāʿa passes it: the realm gains theological seminaries for ten years", "fig": [["outcome", "passed (Trent's account): Theological Seminaries for 10 years, +10%…"]], "prov": "screen", "provLabel": "seen on Trent's screen (a screenshot), not read from a save", "source": "Trent's account and screenshot, early 1386", "p": null, "s": null, "tier": null, "basis": null, "why": "best sentence shares 7 words but the runner-up shares 5"}], "verse": "But perhaps you hate a thing and it is good for you; and Allāh knows, while you know not.", "head": {"hdate": "4 Dhū al-Ḥijja 787", "wdate": "6 Jan 1386", "ruler": "Saʿd ibn Yūsuf", "regnal": 23, "rank": "empire", "capital": "Ishbīliyya", "towns": 118, "souls": 1293827, "treasury": 50, "income": 101.4, "expenses": 93.2, "debt": 565, "stability": 38.3, "wars": 0, "reckoned": "2 Dec 1379", "reckonedISO": "1379-12-02", "ago": 1245, "opens": "30 Apr 1383", "next": "4 Mar 1394", "nextISO": "1394-03-04", "gap": 5206, "ticks": ["1375-03-15", "1375-03-16", "1375-06-05", "1378-04-06", "1379-12-02", "1394-03-04", "1395-06-22", "1395-08-05"]}, "cutoff": "30 Apr 1383", "counts": {"people": 6, "places": 1, "sources": 7}}];
+const LABELS = ["Uryūla, 1339 · simple","Porto, 1411 · crowded","Too late, 1386 · in the silence"];
+const PROV = {save:"■ save",screen:"▣ screen",told:"◇ told",est:"~ est."};
+const state = {f:0, density:"names", names:"court"};
+try{ const s = JSON.parse(localStorage.getItem("folio-state")||"{}"); Object.assign(state, s); }catch(e){}
+try{ const h = location.hash.match(/^#f(\d)/); if(h) state.f = +h[1]; }catch(e){}
+const save = () => { try{ localStorage.setItem("folio-state", JSON.stringify(state)); }catch(e){} };
+const esc = s => String(s ?? "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+const fmtN = n => n == null ? "—" : Math.round(n).toLocaleString("en-GB");
+const wide = () => window.matchMedia("(min-width:1101px)").matches;
+
+function nameGloss(key, g){
+  const plainMode = state.names === "plain";
+  let h = "";
+  if (g.kind === "person"){
+    h += `<div class="nmh">${esc(g.name)}${g.ar?`<span class="ar" lang="ar">${esc(g.ar)}</span>`:""}</div>`;
+    const bits = [];
+    if (g.age != null) bits.push(`aged ${g.age}`);
+    if (g.dyn) bits.push(esc(g.dyn));
+    (g.lines||[]).forEach(l => bits.push(esc(l)));
+    h += `<div class="more">`;
+    if (bits.length) h += `<div class="meta">${bits.join(" · ")}</div>`;
+    if (g.kin) h += `<div class="meta">${esc(g.kin)}</div>`;
+    if (g.standing) h += `<div class="meta">${esc(g.standing)}</div>`;
+    if (g.before && g.before.length) h += g.before.map(b=>`<div class="bef"><i>${esc(b.d)}</i> · ${esc(b.t)}</div>`).join("");
+    if (g.first) h += `<div class="first">${esc(g.first)}</div>`;
+    h += `</div>`;
+  } else if (g.kind === "place"){
+    const a = plainMode ? g.plain : g.name, b = plainMode ? `the chronicle's ${g.name}` : g.plain;
+    h += `<div class="nmh">${esc(a)} <span class="eq">·</span> <span class="meta">${esc(b)}</span>${g.ar?`<span class="ar" lang="ar">${esc(g.ar)}</span>`:""}</div>`;
+    h += `<div class="more"><div class="meta">${esc(g.held)}</div>${g.first?`<div class="first">${esc(g.first)}</div>`:""}</div>`;
+  } else if (g.kind === "country"){
+    const a = plainMode ? g.plain : g.name, b = plainMode ? `the chronicle's ${g.name}` : g.plain;
+    h += `<div class="nmh">${esc(a)} <span class="eq">·</span> <span class="meta">${esc(b)}</span></div>`;
+  } else if (g.kind === "term"){
+    h += `<div class="nmh"><i>${esc(g.name)}</i> <span class="eq">·</span> <span class="meta">${esc(g.plain)}</span><span class="tag" title="From a proposed campaign glossary, not in the brief's data">proposed</span></div>`;
+  }
+  return `<div class="g gn" data-key="${esc(key)}">${h}</div>`;
+}
+function recGloss(r, inline){
+  const fig = (r.fig||[]).length ? `<table>${r.fig.map(([k,v])=>`<tr><td>${esc(k)}</td><td>${esc(v)}</td></tr>`).join("")}</table>` : "";
+  const basis = r.basis ? `<div class="basis"><b>Anchored ${esc(r.tier === "date" ? "by a written date" : "by wording")}.</b> ${esc(r.basis)}. <br><span style="color:var(--ink-3)">Inferred at build · not yet confirmed by the writer.</span><br><span style="color:var(--ink-3)">Source: ${esc(r.source)}</span></div>`
+                      : `<div class="basis"><b>Not anchored:</b> ${esc(r.why||"")}.<br><span style="color:var(--ink-3)">Source: ${esc(r.source)}</span></div>`;
+  return `<div class="g gr${inline?" open":""}" data-rid="${esc(r.id)}">
+    <div class="top"><span>${r.n?`<span class="n">${r.n}</span> · `:""}${esc(r.date)} · ${esc(r.hdate)}</span><span class="pv ${r.prov}" title="${esc(r.provLabel)}">${PROV[r.prov]}</span></div>
+    <div class="lt">${esc(r.title)}</div>${fig}${basis}</div>`;
+}
+function silenceStrip(h){
+  const y0 = +h.wdate.slice(-4) - 12, y1 = +h.wdate.slice(-4) + 12;
+  const X = iso => { const [y,m,d] = iso.split("-").map(Number); return ((y + (m-1)/12 + d/365) - y0) / (y1 - y0) * 1000; };
+  const page = X(FOLIOS[state.f].date);
+  let s = `<svg viewBox="0 0 1000 34" preserveAspectRatio="none" role="img" aria-label="Reckonings around this page: none between ${esc(h.reckoned)} and ${esc(h.next)}">`;
+  s += `<line x1="0" x2="1000" y1="20" y2="20" stroke="var(--rule)" stroke-width="1"/>`;
+  if (h.reckonedISO && h.nextISO) s += `<rect x="${X(h.reckonedISO)}" y="13" width="${X(h.nextISO)-X(h.reckonedISO)}" height="14" fill="var(--told)" opacity=".13"/>`;
+  (h.ticks||[]).forEach(t => s += `<line x1="${X(t)}" x2="${X(t)}" y1="13" y2="27" stroke="var(--ink-2)" stroke-width="2"/>`);
+  s += `<path d="M${page-6} 4 L${page+6} 4 L${page} 12 Z" fill="var(--rubric)"/>`;
+  for (let y = Math.ceil(y0/5)*5; y <= y1; y += 5) s += `<text x="${X(y+"-01-01")}" y="34" font-size="9" fill="var(--ink-3)" text-anchor="middle" font-family="IBM Plex Sans">${y}</text>`;
+  return s + `</svg>`;
+}
+function runningHead(h){
+  const stale = h.ago > 730;
+  const years = (h.ago/365.25);
+  const agoTxt = h.ago === 0 ? "on this very day" : h.ago < 60 ? `${h.ago} days before this page` : h.ago < 730 ? `${Math.round(h.ago/30.4)} months before this page` : `${Math.floor(years)} years before this page`;
+  let s = `<header class="rh ui${stale?" stale":""}" data-asof="${esc(h.reckoned)}">
+    <div class="d"><span class="hij">${esc(h.hdate)}</span><span class="wd">${esc(h.wdate)}</span></div>
+    <div class="reign">${esc(h.ruler)}, ${ordinal(h.regnal)} year of the reign</div>
+    <div class="figs" data-asof="${esc(h.reckoned)}"><span>${fmtN(h.towns)} crown towns</span><span>${fmtN(h.souls)} souls</span><span>treasury ${fmtN(h.treasury)}</span><span>${fmtN(h.income)} in / ${fmtN(h.expenses)} out a month</span>${h.wars?`<span>${h.wars} war${h.wars>1?"s":""}</span>`:"<span>at peace</span>"}</div>
+    <button class="rh-toggle" aria-expanded="false">the realm ▾</button>
+    <div class="src"><span>The realm as this entry opens (${esc(h.opens)}), as last reckoned: ${esc(h.reckoned)}, ${agoTxt.replace("this page","the entry opens")}.</span><span>Next reckoning: ${esc(h.next||"none yet")}.</span></div>`;
+  if (stale) s += `<div class="silence"><div class="msg">The record is silent here. No save between ${esc(h.reckoned)} and ${esc(h.next)} (${Math.round(h.gap/365.25)} years): the figures above are from the last reckoning, and this page rests on ${restsOn()}, not on a save.</div>${silenceStrip(h)}</div>`;
+  return s + `</header>`;
+}
+function closeLine(h){
+  if (!h.close) return "";
+  const o = h.open, c = h.close;
+  const row = (lab, a, b, money) => { const d = (b??0)-(a??0); const sign = d>0?"+":d<0?"−":"±"; return `<tr><td>${lab}</td><td>${fmtN(a)}</td><td>→</td><td>${fmtN(b)}</td><td class="dl ${d>0?"up":d<0?"dn":""}">${sign}${fmtN(Math.abs(d))}</td></tr>`; };
+  return `<div class="close full-only ui"><h3>The realm at the close · ${esc(o.reckoned)} → ${esc(c.reckoned)}</h3>
+    <table class="mono">${row("crown towns",o.towns,c.towns)}${row("souls",o.souls,c.souls)}${row("treasury",o.treasury,c.treasury)}${row("income / month",o.income,c.income)}${row("ṭāʾifas",o.subjects,c.subjects)}${row("wars",o.wars,c.wars)}</table></div>`;
+}
+function restsOn(){
+  const c = {}; FOLIOS[state.f].records.concat(FOLIOS[state.f].drawn).forEach(r => c[r.prov] = (c[r.prov]||0)+1);
+  const parts = []; if (c.screen) parts.push(`Trent's screenshots (${c.screen})`); if (c.told) parts.push(`his account of play (${c.told})`);
+  return parts.join(" and ") || "the record";
+}
+function ordinal(n){ if(n==null) return "?"; const s=["th","st","nd","rd"], v=n%100; return n+(s[(v-20)%10]||s[v]||s[0]); }
+
+function render(){
+  const F = FOLIOS[state.f];
+  document.querySelectorAll("#picker button").forEach((b,i)=>b.setAttribute("aria-pressed", i===state.f));
+  document.querySelectorAll("#density button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.v===state.density));
+  document.querySelectorAll("#namemode button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.v===state.names));
+  const nAnch = F.records.length, byDate = F.records.filter(r=>r.tier==="date").length;
+  const html = `<article class="folio dens-${state.density}">
+    <div class="slot ui"><span><b>Leaf header</b> · book, place in the book, catchword, previous / next leaf. <i>Owned by the book-structure design.</i></span><span>${esc(F.book.title)} · ${esc(F.book.ar)}</span></div>
+    ${runningHead(F.head)}
+    <h1 class="et">${esc(F.title)}</h1>
+    <div class="ed ui">${esc(F.head.hdate)} AH · ${esc(F.head.wdate)} · ${F.counts.people} ${F.counts.people===1?"person":"people"}, ${F.counts.places} ${F.counts.places===1?"place":"places"}, ${F.counts.sources} records · people glossed as of ${esc(F.cutoff)}, when this entry's events begin</div>
+    <div class="page">
+      <aside class="m m-names" aria-label="Names, as of this page"></aside>
+      <div class="text">${F.paras.map((p,i)=>`<p class="para" id="p${i+1}" data-p="${i}"><a class="pn ui" href="#p${i+1}" title="Cite: ${esc(F.title)}, ¶${i+1}">${i+1}</a>${p}</p>`).join("")}</div>
+      <aside class="m m-record" aria-label="The record behind the text"></aside>
+    </div>
+    <footer class="foot">
+      <div class="full-only">${F.drawn.length?`<h3 class="ui">Drawn on · records behind this entry not tied to one line</h3><ul class="drawn">${F.drawn.map(r=>`<li><span>${esc(r.date)} · ${esc(r.hdate)}</span> <span class="pv ${r.prov}">${PROV[r.prov]}</span><span class="lt">${esc(r.title)}</span><span class="why">Not anchored: ${esc(r.why||"")}.</span></li>`).join("")}</ul>`:""}</div>
+      <div class="note-wrap"><h3 class="ui">The player's note</h3>
+      <div class="pnote"><span class="stamp">Placeholder</span>
+        Trent's out-of-character note for this entry goes here, in his own hand: what in it is invented colour and what was read from a save. The real notes exist but are not in brief2/, so nothing here is real.
+        <span class="sig">T.</span></div></div>
+      ${closeLine(F.head)}
+      ${F.verse?`<div class="verse">${esc(F.verse)}</div>`:""}
+      <div class="anchorstat ui full-only">${nAnch} of ${F.counts.sources} records anchored (${byDate} by a written date, ${nAnch-byDate} by wording), ${F.drawn.length} drawn on. Inferred at build, not yet confirmed.</div>
+    </footer>
+  </article>`;
+  document.getElementById("folio").innerHTML = html;
+  buildMargins(F);
+  requestAnimationFrame(layout);
+}
+
+function buildMargins(F){
+  const art = document.querySelector(".folio");
+  const mn = art.querySelector(".m-names"), mr = art.querySelector(".m-record");
+  // names: one gloss per first mention, in text order
+  const firsts = [...art.querySelectorAll(".text .nm.first")];
+  mn.innerHTML = firsts.map(el => F.names[el.dataset.g] ? nameGloss(el.dataset.g, F.names[el.dataset.g]) : "").join("");
+  mr.innerHTML = F.records.map(r => recGloss(r)).join("");
+  applyNameMode();
+}
+function applyNameMode(){
+  document.querySelectorAll(".text .nm.pl").forEach(el => { el.textContent = state.names === "plain" ? el.dataset.plain : el.dataset.court; });
+}
+
+function anchorFor(g){
+  const art = document.querySelector(".folio");
+  if (g.dataset.key) return art.querySelector(`.text .nm.first[data-g="${CSS.escape(g.dataset.key)}"]`);
+  const r = FOLIOS[state.f].records.find(x=>x.id===g.dataset.rid);
+  return r ? art.querySelector(`.text .s[data-s="${r.p}.${r.s}"]`) : null;
+}
+function layout(){
+  const art = document.querySelector(".folio"); if (!art) return;
+  const page = art.querySelector(".page"), text = art.querySelector(".text");
+  page.style.minHeight = "";
+  if (!wide() || state.density === "text") return;
+  const pTop = page.getBoundingClientRect().top;
+  let bottom = text.offsetHeight;
+  const cols = [art.querySelector(".m-names")];
+  if (state.density === "full") cols.push(art.querySelector(".m-record"));
+  for (const col of cols){
+    let y = 0;
+    const items = [...col.children].map(g => ({g, a: anchorFor(g)})).filter(x => x.a);
+    items.forEach(x => { x.top = x.a.getBoundingClientRect().top - pTop; });
+    items.sort((a,b)=>a.top-b.top);
+    for (const x of items){
+      if (!x.g.classList.contains("expanded")) x.g.classList.remove("compact");
+      let top = Math.max(x.top, y);
+      // crowded: if the full gloss would drift far from its line, shrink it to one line
+      if (top - x.top > 150 && !x.g.classList.contains("expanded") && (x.g.querySelector(".more") || x.g.classList.contains("gr"))) x.g.classList.add("compact");
+      x.g.style.top = top + "px";
+      y = top + x.g.offsetHeight + 10;
+    }
+    bottom = Math.max(bottom, y);
+  }
+  page.style.minHeight = bottom + "px";
+}
+
+/* ---------- interaction ---------- */
+function closeInline(scope){ (scope||document).querySelectorAll(".ig").forEach(n=>n.remove()); document.querySelectorAll(".hl").forEach(n=>n.classList.remove("hl")); }
+function openInline(para, html, cls, srcEl){
+  const existing = para.nextElementSibling && para.nextElementSibling.classList.contains("ig") ? para.nextElementSibling : null;
+  if (existing && existing.dataset.for === srcEl.dataset.g + "|" + (srcEl.dataset.r||"")) { existing.remove(); srcEl.classList.remove("hl"); return; }
+  closeInline();
+  const div = document.createElement("div");
+  div.className = "ig " + cls; div.dataset.for = srcEl.dataset.g + "|" + (srcEl.dataset.r||"");
+  div.innerHTML = `<button class="x" aria-label="Close gloss">×</button>` + html;
+  para.after(div); srcEl.classList.add("hl");
+  layout();
+}
+document.addEventListener("click", e => {
+  const b = e.target.closest(".seg button");
+  if (b){
+    const seg = b.parentElement.id;
+    if (seg === "picker"){ state.f = +b.dataset.i; try{history.replaceState(null,"","#f"+state.f);}catch(_){}; window.scrollTo(0,0); }
+    if (seg === "density") state.density = b.dataset.v;
+    if (seg === "namemode") state.names = b.dataset.v;
+    save(); render(); return;
+  }
+  if (e.target.closest(".ig .x")){ closeInline(); layout(); return; }
+  const tog = e.target.closest(".rh-toggle");
+  if (tog){ const rh = tog.closest(".rh"); rh.classList.toggle("open"); tog.setAttribute("aria-expanded", rh.classList.contains("open")); tog.textContent = rh.classList.contains("open") ? "the realm ▴" : "the realm ▾"; return; }
+  const F = FOLIOS[state.f];
+  const nm = e.target.closest(".text .nm[data-g]");
+  if (nm && state.density !== "text"){
+    const g = F.names[nm.dataset.g]; if (!g) return;
+    // wide screens: first mentions already have their gloss in the margin, so just point to it
+    if (wide() && nm.classList.contains("first")){ flash(document.querySelector(`.m-names .g[data-key="${CSS.escape(nm.dataset.g)}"]`), nm); return; }
+    openInline(nm.closest(".para"), nameGloss(nm.dataset.g, g), "name", nm); return;
+  }
+  const rm = e.target.closest(".text .rm");
+  if (rm && state.density === "full"){
+    const r = F.records.find(x=>x.id===rm.dataset.r);
+    if (wide()){ const g = document.querySelector(`.m-record .g[data-rid="${CSS.escape(r.id)}"]`); g.classList.add("open","expanded"); g.classList.remove("compact"); layout(); flash(g); return; }
+    openInline(rm.closest(".para"), recGloss(r, true), "rec", rm); return;
+  }
+  const g = e.target.closest(".m .g");
+  if (g){
+    if (g.classList.contains("compact")){ g.classList.remove("compact"); g.classList.add("expanded"); }
+    else if (g.classList.contains("gr")){ g.classList.toggle("open"); g.classList.toggle("expanded", g.classList.contains("open")); }
+    else g.classList.toggle("expanded");
+    layout(); return;
+  }
+});
+function flash(g, a){ if(!g) return; g.classList.add("hl"); if(a) a.classList.add("hl"); setTimeout(()=>{g.classList.remove("hl"); if(a) a.classList.remove("hl");}, 1200); }
+document.addEventListener("mouseover", e => {
+  const g = e.target.closest(".m .g");
+  document.querySelectorAll(".text .hl,.m .g.hl").forEach(n => { if (!n.closest(".ig")) n.classList.remove("hl"); });
+  if (g){ const a = anchorFor(g); if (a) a.classList.add("hl"); g.classList.add("hl"); return; }
+  const s = e.target.closest(".text .s.anchored, .text .nm.first");
+  if (s && wide()){
+    if (s.classList.contains("nm")){ const t = document.querySelector(`.m-names .g[data-key="${CSS.escape(s.dataset.g)}"]`); if (t){ t.classList.add("hl"); s.classList.add("hl"); } }
+    else if (state.density === "full"){ const [p,si] = s.dataset.s.split(".").map(Number); FOLIOS[state.f].records.filter(r=>r.p===p&&r.s===si).forEach(r=>{ const t=document.querySelector(`.m-record .g[data-rid="${CSS.escape(r.id)}"]`); if(t){t.classList.add("hl"); s.classList.add("hl");} }); }
+  }
+});
+let rz; window.addEventListener("resize", () => { clearTimeout(rz); rz = setTimeout(layout, 80); });
+document.fonts && document.fonts.ready.then(layout);
+
+document.getElementById("picker").innerHTML = LABELS.map((l,i)=>`<button data-i="${i}" title="${esc(FOLIOS[i].title)}">${esc(l)}</button>`).join("");
+render();
+</script>
+</body>
+</html>
