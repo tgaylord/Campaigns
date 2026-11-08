@@ -43,3 +43,16 @@ Invented colour: the Emperor's lessons at sea, his reason for the appointment, A
 **The scholar Emperor (15 July 1439).** The Scholar trait and the state of the realm come from Trent's screenshot: stability −6, Majrīṭ's city rights still in progress, and the crown appeasing the estates. That stability fell because of the land-rights concession is an inference from Trent's account, not something the game states. Invented colour: what the Emperor read and whom he questioned, his seat at the back of the lectures, his sayings, and the comparison with the risings of 807.
 
 **The trade war (early June 1440).** The Catalan privileges complaint, the Genoese embargo under Angevin pressure, and the Andalusī embargo of Angevin merchants are Trent's account, with no save yet. The markets' ranks come from Trent's screenshot of 1 March 1437. Invented colour: the Catalan houses' consuls and courts, the dīwān's reasoning, London leaning on Genoa "all spring", Prince Yūsuf enforcing the embargo, the merchants' arguments, the Venetians, and the monthly accounting.
+
+**The Jamāʿa of 846 (1 June 1442).** The reform, the burghers' seat and the two privileges are from Trent's account and screenshots. The satisfaction changes on the privilege tooltips are previews taken before each grant. The Emperor's line about city walls echoes the Urban Development Grants text. Invented colour: the Emperor's reading of Rome and Baghdad, his words to the princes, the estates' particular complaints, and the princes' private reaction.
+
+**The princes' mending and the Golden Century (save of 11 June 1442; screenshots of 7 August 1442).**
+- The save shows the nobles' Land Rights gone and the two burgher privileges in place. It has the National Assemblies advance, but the reform doesn't yet appear among the implemented reforms.
+- Also in the save: estate satisfaction (burghers 74, umarāʾ 32, commoners 34, ʿulamāʾ 44, dhimmī 45), legitimacy 65, and the land-versus-naval value at +26.3.
+- The princes' rallying of the commoners and their promise to the ʿulamāʾ are Trent's account.
+- The Golden Century wording follows the game's event text.
+- The Thalassocracy decision was open on 7 August, but the screenshot doesn't show whether it was taken.
+- Invented colour: the princes' ride to the villages, the ʿulamāʾ's grumbling, the shipyards' speed, the readings in the mosques, the secretaries' warning (it paraphrases the Grand Alliance rules), and the Emperor's reply.
+- The Jamāʿa entry moved from Book VI into Book VIII, the Golden Century, which opens with it.
+
+**The Jamāʿa of 847 (26 June 1443).** This is Trent's account: a noble agenda to expand colonization, the burghers' support, and Fernando Po as the target. Invented colour: the lords' motives, the vote before noon, the island's description beyond its mountain and people, and the princes' and the Emperor's reactions.

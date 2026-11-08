@@ -1,0 +1,107 @@
+[
+ {
+  "id": "1442-06-01-national-assemblies",
+  "date": "1442-06-01",
+  "type": "reform",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [
+   "ishbiliyya"
+  ],
+  "wars": [],
+  "title": "The Emperor calls the Jamāʿa to Ishbīliya and, without consulting the princes, announces reform: the realm's assembly becomes a national assembly, and the burghers sit in it as co-equal members",
+  "data": {
+   "advance": "National Assemblies, researched 1 June 1442",
+   "reform": "National Assemblies (government reform): change policy cost −10%, parliament issue support needed −5%, monthly progress to innovative +0.10 and to free subjects +0.10 (the game)",
+   "reason": "a state not in touch with its merchants is doomed to stagnation; the Emperor has studied the empires of old (Trent)",
+   "princes": "not consulted",
+   "court": "incensed",
+   "save": "the save of 11 June 1442 has the National Assemblies advance; the reform does not yet appear among the implemented reforms"
+  },
+  "source": "Trent's account and screenshot, 1 June 1442"
+ },
+ {
+  "id": "1442-06-01-privileges-for-the-burghers",
+  "date": "1442-06-01",
+  "type": "estate_change",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "The burghers are granted privileges on top of their seat: Shipwright Contracts, state contracts for the shipyards, and Urban Development Grants for the towns",
+  "data": {
+   "shipwrightContracts": "burghers +5% satisfaction, +33% power; navy maintenance efficiency +10%, ship-building speed +20%, monthly progress to naval +0.05; on granting, burghers +15% (to 59%), umarāʾ −2.6%, ʿulamāʾ −2.2%, dhimmī −2.0%; 18 political influence",
+   "urbanDevelopmentGrants": "burghers +5% satisfaction, +50% power; monthly development +0.001, progress to innovative +0.10; on granting, burghers +15%, umarāʾ −3.9%, ʿulamāʾ −3.4%, dhimmī −3.0%; 18 political influence",
+   "note": "the satisfaction figures are the tooltips' previews, each taken before the other grant",
+   "confirmed": "the save of 11 June 1442 shows Shipwright Contracts and Urban Development Grants among the privileges, and the nobles' Land Rights gone"
+  },
+  "source": "Trent's screenshots, 1 June 1442; save of 11 June 1442"
+ },
+ {
+  "id": "1442-06-11-the-princes-mend-the-damage",
+  "date": "1442-06-11",
+  "type": "estate_change",
+  "people": [
+   "ismail-ibn-muhammad-ibn-ismail",
+   "ahmad-ibn-muhammad-ibn-ismail"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "The two princes act quickly after their father's reforms: they rally the commoners so the hinterlands do not rise, and affirm the rights of the ʿulamāʾ upon the heir's accession to keep them in line. By the end, the crown's legitimacy has recovered a little and the realm's peace is acceptable, but every estate except the burghers is deeply angry",
+  "data": {
+   "satisfaction": {
+    "burghers": 74,
+    "ʿulamāʾ": 44,
+    "dhimmī": 45,
+    "commoners": 34,
+    "umarāʾ": 32
+   },
+   "legitimacy": 65,
+   "stability": 14.2,
+   "landVsNaval": 26.3,
+   "treasury": "1,767 (income 413, expenses 373), debt 565"
+  },
+  "source": "Trent's account; save of 11 June 1442"
+ },
+ {
+  "id": "1442-08-07-the-golden-century",
+  "date": "1442-08-07",
+  "type": "situation",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [
+   "ishbiliyya",
+   "qurtuba"
+  ],
+  "wars": [],
+  "title": "The Emperor ushers in the Golden Century of al-Andalus: the Strait held, Iberia gathered under one banner, and what the fall of Qurṭuba scattered made whole again. A century of wealth and consolidation lies ahead",
+  "data": {
+   "decision": "Usher in the Golden Century (requires the Age of Discovery, independence, peace, solvency, al-Andalus restored, and Granada, Andalusia and Murcia owned by al-Andalus or its subjects): 'Many maps will be rendered obsolete!'",
+   "event": "The Golden Century of Al-'Andalus: 'The Strait of Gibraltar is held, the rival driven back, and for the first time in centuries the call to prayer rises over an Iberia gathered under one banner. The age of the petty kings is ended, and what the fall of Qrṭuba once scattered, Emperor Muḥammad V Nasrid has made whole again' (the game's text)",
+   "effects": "enables European Dominance and Colonial Dominance; enables the Grand Alliance international organization, which forms against us once either dominance reaches 25 and gains a casus belli past 75; flashpoint events may occur",
+   "state": "legitimacy 69, stability 14, treasury 1,720, 3.341 million people"
+  },
+  "source": "Trent's screenshots and account, 7 August 1442"
+ },
+ {
+  "id": "1442-08-07-establish-a-thalassocracy",
+  "date": "1442-08-07",
+  "type": "player_note",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [
+   "ishbiliyya"
+  ],
+  "wars": [],
+  "title": "The decision to Establish a Thalassocracy is open to the empire: more than ten ports, and Ishbīliya on the coast with a coastal market centre",
+  "data": {
+   "effects": "'Let us embrace the sea': Establishing a Thalassocracy for 20 years, heavy and light ship build cost −20%, monthly progress to naval +0.50; 20 years to establish a strong navy",
+   "taken": "not confirmed from the screenshot"
+  },
+  "source": "Trent's screenshot, 7 August 1442"
+ }
+]
