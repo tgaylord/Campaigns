@@ -89,7 +89,7 @@
  {
   "id": "1442-08-07-establish-a-thalassocracy",
   "date": "1442-08-07",
-  "type": "player_note",
+  "type": "reform",
   "people": [
    "muhammad-ibn-ismail-ibn-saad"
   ],
@@ -97,11 +97,11 @@
    "ishbiliyya"
   ],
   "wars": [],
-  "title": "The decision to Establish a Thalassocracy is open to the empire: more than ten ports, and Ishbīliya on the coast with a coastal market centre",
+  "title": "On the same day as the Golden Century, the Emperor establishes a Thalassocracy, one of the first acts of the new age: for twenty years ships cost a fifth less to build and the realm turns faster toward the sea",
   "data": {
    "effects": "'Let us embrace the sea': Establishing a Thalassocracy for 20 years, heavy and light ship build cost −20%, monthly progress to naval +0.50; 20 years to establish a strong navy",
-   "taken": "not confirmed from the screenshot"
+   "taken": "taken on 7 August 1442, the same day as the Golden Century (Trent)"
   },
-  "source": "Trent's screenshot, 7 August 1442"
+  "source": "Trent's screenshot of 7 August 1442 and account"
  }
 ]

@@ -56,3 +56,5 @@ Invented colour: the Emperor's lessons at sea, his reason for the appointment, A
 - The Jamāʿa entry moved from Book VI into Book VIII, the Golden Century, which opens with it.
 
 **The Jamāʿa of 847 (26 June 1443).** This is Trent's account: a noble agenda to expand colonization, the burghers' support, and Fernando Po as the target. Invented colour: the lords' motives, the vote before noon, the island's description beyond its mountain and people, and the princes' and the Emperor's reactions.
+
+**The Radiant City and the Thalassocracy (Trent).** The restoration of Madīnat al-Zahrāʾ (event of 1 October 1440, "They will see our prestige!", 117 gold) and the Thalassocracy, taken on the same day as the Golden Century, are confirmed by Trent. The building takes 365 days, so the chronicle has it standing by the autumn of 1441. The history of the caliphal city is drawn from the historical record. Invented colour: the sheepfold, the Emperor's day among the ruins, his answer to the dīwān, paying from his own purse, the merchants' cheap cloth, and the court's two symbols.
