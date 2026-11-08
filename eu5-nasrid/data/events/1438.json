@@ -56,5 +56,44 @@
    "realm": "221 towns and 3.25 million people after Catalonia's annexation; stability 24.2; treasury 1,653, debt 565"
   },
   "source": "saves of 10 October 1435 and 16 January 1438"
+ },
+ {
+  "id": "1438-04-08-the-charter-of-majrit",
+  "date": "1438-04-08",
+  "type": "reform",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad",
+   "ismail-ibn-muhammad-ibn-ismail",
+   "ahmad-ibn-muhammad-ibn-ismail"
+  ],
+  "places": [
+   "majrit",
+   "tulaytula"
+  ],
+  "wars": [],
+  "title": "Majrīṭ, grown rapidly beside Ṭulayṭula into one of the most important towns of the interior, is granted a city charter. The Emperor opposed it, asking why he should favour a town so far from the sea, but the two princes pressed for it",
+  "data": {
+   "emperor": "'Why should I grant such favour so far from the sea? Won't the city merely wither and die?' (Trent)",
+   "granted": "at the two princes' urging, with a major concession from the northern nobility"
+  },
+  "source": "Trent's account, 8 April 1438"
+ },
+ {
+  "id": "1438-04-08-land-rights-unravelled",
+  "date": "1438-04-08",
+  "type": "estate_change",
+  "people": [
+   "ismail-ibn-muhammad-ibn-ismail",
+   "ahmad-ibn-muhammad-ibn-ismail"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "The price of Majrīṭ's charter: the umarāʾ concede the slow unravelling of their Land Rights in the integrated territories. In return they are granted a stipend for their arts and culture, in truth a fund to keep them from open mutiny as the two princes carry on their grandfather's reform",
+  "data": {
+   "privilege": "Land Rights (nobles): +5% satisfaction and +75% power for the nobility; peasant enfranchisement −10%; nobles allowed to expand R.G.O.s; monthly progress +0.05 to land, +0.10 to aristocracy, +0.10 to serfdom; allows the noble villa (the game's tooltip)",
+   "concession": "its slow unravelling in the integrated territories",
+   "compensation": "a stipend for the nobility's arts and culture"
+  },
+  "source": "Trent's account and screenshot of the Land Rights privilege, 8 April 1438"
  }
 ]

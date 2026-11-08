@@ -37,3 +37,9 @@ This note covers three entries: the pilgrimage and the Shaykh al-Islām, the tur
 - Bernarda died on 6 November 1437.
 
 Invented colour: the Emperor's lessons at sea, his reason for the appointment, Amie's journey and dowry, and the court reading the marriages as a map.
+
+**The charter of Majrīṭ (8 April 1438).** This is Trent's account, with no save yet. The Emperor's words are Trent's. The Land Rights terms come from Trent's screenshot of the privilege. Invented colour: Majrīṭ's trades, the burghers' journey, the northern umarāʾ's stake in the market, the clerks' name for the stipend, and the princes' winter of reckoning.
+
+**The scholar Emperor (15 July 1439).** The Scholar trait and the state of the realm come from Trent's screenshot: stability −6, Majrīṭ's city rights still in progress, and the crown appeasing the estates. That stability fell because of the land-rights concession is an inference from Trent's account, not something the game states. Invented colour: what the Emperor read and whom he questioned, his seat at the back of the lectures, his sayings, and the comparison with the risings of 807.
+
+**The trade war (early June 1440).** The Catalan privileges complaint, the Genoese embargo under Angevin pressure, and the Andalusī embargo of Angevin merchants are Trent's account, with no save yet. The markets' ranks come from Trent's screenshot of 1 March 1437. Invented colour: the Catalan houses' consuls and courts, the dīwān's reasoning, London leaning on Genoa "all spring", Prince Yūsuf enforcing the embargo, the merchants' arguments, the Venetians, and the monthly accounting.

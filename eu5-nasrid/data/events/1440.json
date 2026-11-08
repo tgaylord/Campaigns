@@ -1,0 +1,56 @@
+[
+ {
+  "id": "1440-06-the-catalan-privileges",
+  "date": "1440-06-01",
+  "type": "player_note",
+  "people": [
+   "rodrigo-de-borja"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "The Andalusī merchants of the crown complain about the privileges still held by the Catalan merchants of the Ṭāʾifa of Aragon. Their complaints are ignored",
+  "data": {
+   "when": "early June 1440"
+  },
+  "source": "Trent's account"
+ },
+ {
+  "id": "1440-06-the-genoese-embargo",
+  "date": "1440-06-01",
+  "type": "diplomacy",
+  "people": [],
+  "places": [],
+  "wars": [],
+  "title": "The trade wars escalate in the western Mediterranean: leaned on by the Angevins, Genoa embargoes Andalusī merchants in Italy. Al-Andalus answers by closing its ports to Angevin merchants",
+  "data": {
+   "embargoBy": "Genoa, under Angevin pressure, against al-Andalus",
+   "reply": "al-Andalus embargoes the Angevin Empire's merchants in its ports",
+   "when": "early June 1440"
+  },
+  "source": "Trent's account"
+ },
+ {
+  "id": "1440-10-01-the-palace-city-of-qurtuba",
+  "date": "1440-10-01",
+  "type": "player_note",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [
+   "qurtuba"
+  ],
+  "wars": [],
+  "title": "The Emperor wishes to restore Madīnat al-Zahrāʾ, the palace-city of the caliphs on the western edge of Qurṭuba, lost in the fitna of the eleventh century, to set himself above every ruler and pretender who might challenge him",
+  "data": {
+   "event": "The Palace-City of Qrṭuba",
+   "options": [
+    "They will see our prestige! (starts a Madīna az-Zahrāʾ building in Qurṭuba; costs 117 gold)",
+    "No need to restore old ruins."
+   ],
+   "chosen": "not confirmed; the screenshot hovers 'They will see our prestige!'",
+   "building": "Madīna az-Zahrāʾ, a cultural building: 'Known as The Radiant City, it will allow us to further expand our prestige within Iberia.' In the capital or historical capital: political influence +0.05 and prestige +0.10 a month; in the town, crown power +100% and prosperity +0.10% a month. Takes lumber, tools, glass, fine cloth and gold; 365 days; 200 gold at market",
+   "state": "treasury 1,220, stability −1, 3.311 million people"
+  },
+  "source": "Trent's screenshots of 1 October 1440"
+ }
+]

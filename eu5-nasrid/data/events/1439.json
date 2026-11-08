@@ -1,0 +1,20 @@
+[
+ {
+  "id": "1439-07-15-the-emperor-a-scholar",
+  "date": "1439-07-15",
+  "type": "player_note",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [
+   "ishbiliyya"
+  ],
+  "wars": [],
+  "title": "The Emperor Muḥammad, at fifty-three, gains the Scholar trait: his ambition to learn about the world and the principles that govern men and nature lets the realm take up new knowledge far faster",
+  "data": {
+   "trait": "Scholar: monthly literacy +0.02%, monthly progress to innovative +0.05 (the game)",
+   "state": "stability −6 (24.2 in January 1438), 3.283 million people; Majrīṭ's city rights still being granted, a wharf building at Tarragona; the crown assimilating Toledo, encouraging the navy, encouraging migration to and developing Seville, and appeasing the estates"
+  },
+  "source": "Trent's screenshot and account, 15 July 1439"
+ }
+]
