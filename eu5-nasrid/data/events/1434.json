@@ -1,0 +1,25 @@
+[
+ {
+  "id": "1434-09-27-the-shaykh-al-islam",
+  "date": "1434-09-27",
+  "type": "appointment",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "The empire is given a Shaykh al-Islām, the authority over all the muftīs: he writes fatwās, appoints the regional muftīs and guards the legality of the Emperor's edicts. He is to be a Mālikī. The choice offered is the most loyal muftī, the most learned, or a famous Ṣūfī",
+  "data": {
+   "event": "The Šayḵ al-Islām",
+   "text": "Where the Qāḍī are the judges of the land, the Muftī are the ones to provide general legal interpretation and doctrine. A Monarchy as large as ours, however, needs an overarching authority over all Muftī. Traditionally this is the role of the Šayḵ al-Islām. The Šayḵ al-Islām will not only author Fatwā himself, he will also be the one to appoint many of the regional Muftī in our realm, and ultimately he is the person who will safeguard the legality of the Emperor's edicts. Naturally the man we pick will belong to the Mālikī but there are a number of distinguished candidates to choose from (the game's text)",
+   "options": [
+    "Let us elect the foremost and most loyal Muftī to this position",
+    "The most learned and steadfast candidate must be named Šayḵ al-Islām",
+    "A famous Sufi will give this office the dignity it deserves: mysticism +10 (then 34.04); the Emperor gains a Sufi Šayḵ al-Islām until death, +0.10 monthly legitimacy"
+   ],
+   "chosen": "not confirmed; the screenshot hovers the Ṣūfī option",
+   "state": "treasury 477, stability 14, legitimacy 100, prestige 94, 2.649 million people"
+  },
+  "source": "Trent's screenshot of 27 September 1434"
+ }
+]
