@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
 import { chronicle, notes, eras, eraById, hijri, western, year, arabicDigits } from "../lib/data";
+import { namesHtml } from "../lib/names";
 import "./chronicle.css";
 
 /*
@@ -79,7 +80,7 @@ export default function ChronicleBook() {
                 <div className="leaf-date-ar ar">{h.arabic}</div>
                 <h2 className="entry-title"><Link to={`/chronicle/${e.id}`}>{e.title}</Link></h2>
                 <div className="leaf-dates">{h.text} AH, {western(e.date)}{e.endDate ? ` to ${western(e.endDate)}` : ""}</div>
-                <div className="leaf-body" dangerouslySetInnerHTML={{ __html: e.html }} />
+                <div className="leaf-body" dangerouslySetInnerHTML={{ __html: namesHtml(e.html) }} />
                 {glosses.length > 0 && (
                   <details className="book-gloss">
                     <summary className="ui">{glosses.length === 1 ? "The player's note" : `The player's ${glosses.length} notes`}</summary>

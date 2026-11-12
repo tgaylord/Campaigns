@@ -3,6 +3,9 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { RunningHead, Catchwords, Star, LeafDates, bk } from "../components/CodexBits";
 import { leaves, leafByAddr, leafById, canonOf, reignAt, regnalYear, ribbon, verseCite, nextHref, prevHref, type Leaf } from "../lib/codex";
 import { notes, western, sessions } from "../lib/data";
+import { DensityBar, RealmHead, FolioBody, FolioFoot, useDensity } from "../components/Folio";
+import { folioFor } from "../lib/folio";
+import type { ReactNode } from "react";
 import { ordinal } from "./Codex";
 import "./chronicle.css";
 import "./codex.css";
@@ -43,9 +46,10 @@ export default function CodexLeaf() {
   const isLast = leaf === book.last;
   const sitting = sessions.find((s) => s.id === leaf.boundIn);
   const cite = verseCite(entry.verse);
+  const [density, setDensity] = useDensityHook();
 
   return (
-    <div className="page codex-page" style={bk(book)}>
+    <div className={`page codex-page has-folio d-${density}`} style={bk(book)}>
       <RunningHead
         book={book}
         left={<><span className="bkname">{book.name}</span>{reign && <span className="reign">{reign.person.name}, {ordinal(regnalYear(entry.date, reign))} year</span>}</>}
@@ -54,14 +58,20 @@ export default function CodexLeaf() {
       />
 
       <article className="folio codex-leaf" aria-labelledby="leaf-title">
+        <Col>
         <div className="leaf-head ui">
           <span className="addr">Leaf {leaf.label}</span>
           <span>{book.short}, leaf {leaf.bn} of {book.leaves.length}{!book.closed && isLast ? " so far" : ""}</span>
         </div>
         <h1 id="leaf-title" className="leaf-h1">{entry.title}</h1>
         <div className="leaf-dates-line"><LeafDates date={entry.date} endDate={entry.endDate} /></div>
+        <DensityBar density={density} setDensity={setDensity} />
+        {density !== "text" && <RealmHead f={folioFor(leaf)} />}
+        </Col>
 
-        <div className="leaf-body codex-body" dangerouslySetInnerHTML={{ __html: leaf.body }} />
+        <FolioBody leaf={leaf} density={density} />
+
+        <Col>
 
         <div className="colophon-verse">
           <Star />
@@ -94,7 +104,9 @@ export default function CodexLeaf() {
           <Link to={`/codex?leaf=${leaf.addr}`}>find it in the tables (Canon {canon.n})</Link>
           <Link to={`/chronicle/${entry.id}`}>this entry with its margin, in the Chronicle</Link>
         </nav>
+        <FolioFoot leaf={leaf} density={density} />
         <p className="leaf-colophon ui">{leafColophon(leaf, sitting?.date)}</p>
+        </Col>
       </article>
       <p className="hint keys ui">The left and right arrow keys turn the leaves.</p>
     </div>
@@ -107,3 +119,9 @@ function leafColophon(l: Leaf, bound?: string) {
   if (bound) bits.push(`written up on ${western(bound)}`);
   return bits.join(" · ");
 }
+
+/** Content set in the text column of the folio's three, so it lines up with the prose. */
+function Col({ children }: { children: ReactNode }) {
+  return <div className="folio-grid fo-col"><div /><div className="fo-colc">{children}</div><div /></div>;
+}
+const useDensityHook = useDensity;

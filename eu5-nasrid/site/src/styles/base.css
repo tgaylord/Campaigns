@@ -188,3 +188,10 @@ details.numbers summary { cursor: pointer; color: var(--gilt); }
 
 /* focus on parchment: the gilt ring vanishes on cream, so leaves and sheets use dark ink */
 .folio :focus-visible { outline-color: var(--ink); }
+
+/* the names switch in the rail */
+.names-switch { display: flex; align-items: center; gap: 0.3rem; margin: 0.75rem 0 0.5rem; font-size: 0.78rem; color: var(--dusk); }
+.names-switch .ns-l { margin-right: 0.2rem; }
+.names-switch button { font: inherit; color: var(--mist); background: none; border: 1px solid rgba(212, 171, 85, 0.25); border-radius: 3px; padding: 0.2rem 0.5rem; cursor: pointer; }
+.names-switch button[aria-pressed="true"] { color: var(--gilt-hi); border-color: var(--gilt); background: rgba(212, 171, 85, 0.12); }
+@media (max-width: 52rem) { .names-switch { margin: 0.25rem 0 0; width: 100%; } .names-switch button { min-height: 36px; } }

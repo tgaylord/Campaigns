@@ -1,5 +1,6 @@
 import raw from "../generated/campaign.json";
 import { toHijri, HIJRI_MONTHS, HIJRI_MONTHS_AR, WESTERN_MONTHS, parseDate } from "./hijri";
+import { nameMode } from "./mode";
 
 /* ------------------------------------------------------------ types */
 
@@ -14,6 +15,8 @@ export type Place = {
   id: string; name: string; nameArabic?: string; nameGame: string; kind: string;
   /** the game's location key; x, y are its centre on the game map (map pixels) */
   key: string; x: number; y: number; major: boolean;
+  /** the plain (English) name, for the names switch */
+  namePlain?: string;
   held: { from: string; to: string | null; via?: string }[]; note?: string; sample: boolean;
 };
 type CountryName = { name: string; nameChronicle: string; nameArabic?: string; title?: string };
@@ -157,7 +160,7 @@ export const sovereignTitle = (date?: string | null) => countryAt("GRA", date)?.
 /** The chronicle's name for a country, by tag or by its game name. */
 export function countryName(tagOrName: string) {
   const c = countryByTag.get(tagOrName) ?? countries.find((x) => x.name === tagOrName);
-  return c?.nameChronicle ?? tagOrName;
+  return (nameMode() === "plain" ? c?.name : c?.nameChronicle) ?? tagOrName;
 }
 
 export const latest = snapshots[snapshots.length - 1];

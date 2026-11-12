@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { countryLabel } from "../lib/names";
 import { useCheckpointParam } from "../lib/checkpoint";
 import type { PointerEvent as RPointerEvent } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -502,7 +503,7 @@ export default function Atlas() {
           return (
             <g key={c.tag} className="realm-label" transform={`translate(${x},${y})`} style={{ ["--rc" as any]: c.color }}>
               <text className="ar" fontSize={30 * size} textAnchor="middle" direction="ltr">{c.nameArabic}</text>
-              <text className="tr" y={14 * size} fontSize={11 * size} textAnchor="middle">{c.nameChronicle}</text>
+              <text className="tr" y={14 * size} fontSize={11 * size} textAnchor="middle">{countryLabel(c)}</text>
             </g>
           );
         })}

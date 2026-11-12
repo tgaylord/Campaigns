@@ -255,6 +255,14 @@ const people = (await readJson(path.join(CAMPAIGN, "data/people.json"))).map((e,
 // A reign left open on a dead ruler draws him on the throne for ever (the Long Scroll, the House).
 for (const p of people) for (const r of p.reigns ?? []) if (!r.to && p.died) errors.push(`people.json ${p.id}: reign from ${r.from} has no end, but they died ${p.died}`);
 const places = (await readJson(path.join(CAMPAIGN, "data/gazetteer.json"))).map((e, i) => check(Place, e, `gazetteer.json[${i}]`)).filter(Boolean);
+// The plain name of each place, for the names switch: the game's English name for its location,
+// with the English form where English has its own (Seville for Sevilla).
+{
+  const ENGLISH = { sevilla: "Seville" };
+  let gameNames = {};
+  try { gameNames = (await readJson(path.join(CAMPAIGN, "data/map/names.json"))).locations ?? {}; } catch {}
+  for (const p of places) p.namePlain = ENGLISH[p.key] ?? gameNames[p.key] ?? p.nameGame;
+}
 const wars = (await readJson(path.join(CAMPAIGN, "data/wars.json"))).map((e, i) => check(War, e, `wars.json[${i}]`)).filter(Boolean);
 // What each privilege, law, reform, societal value and agenda does (tools/government_catalog.py).
 const Mod = z.object({ key: z.string(), label: z.string(), value: z.union([z.number(), z.string()]), text: z.string(), percent: z.boolean(), good: z.boolean(), size: z.string().optional() });

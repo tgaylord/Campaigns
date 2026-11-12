@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import type { ReactNode } from "react";
-import { hijri, western, arabicDigits, snapshots, year } from "../lib/data";
+import { hijri, western, arabicDigits, snapshots, year, placeById } from "../lib/data";
+import { nameMode, plainOf } from "../lib/names";
 
 const ROUTE = { person: "people", place: "places", war: "wars" } as const;
 
@@ -8,7 +9,7 @@ const ROUTE = { person: "people", place: "places", war: "wars" } as const;
 export function EntityLink({ kind, id, children, className = "" }: { kind: "person" | "place" | "war"; id: string; children: ReactNode; className?: string }) {
   return (
     <Link to={`/${ROUTE[kind]}/${id}`} className={`entity ${className}`} data-kind={kind} data-id={id} data-router="1">
-      {children}
+      {kind === "place" && nameMode() === "plain" && placeById.get(id) && typeof children === "string" && children === placeById.get(id)!.name ? plainOf(placeById.get(id)!) : children}
     </Link>
   );
 }

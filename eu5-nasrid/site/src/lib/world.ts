@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { nameMode } from "./mode";
 import { campaign, countryAt, countryByTag, people } from "./data";
 import type { Person } from "./data";
 
@@ -61,7 +62,8 @@ export const useTags = () => useFetched<Record<string, { name: string; color: st
 
 /** The chronicle's name for a power, or the game's. */
 export function powerName(tag: string, w?: World | null, tags?: Record<string, { name: string }> | null): string {
-  return countryAt(tag, w?.date)?.nameChronicle ?? w?.powers[tag]?.name ?? tags?.[tag]?.name ?? tag;
+  const c = countryAt(tag, w?.date);
+  return (c ? (nameMode() === "plain" ? c.name : c.nameChronicle) : undefined) ?? w?.powers[tag]?.name ?? tags?.[tag]?.name ?? tag;
 }
 export function gameName(tag: string, w?: World | null, tags?: Record<string, { name: string }> | null): string {
   return countryAt(tag, w?.date)?.name ?? w?.powers[tag]?.name ?? tags?.[tag]?.name ?? tag;

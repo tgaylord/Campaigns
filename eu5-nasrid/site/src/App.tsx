@@ -1,6 +1,7 @@
-import { lazy, Suspense, useLayoutEffect } from "react";
+import { lazy, Suspense, useEffect, useLayoutEffect, useState } from "react";
 import { NavLink, Route, Routes, useLocation } from "react-router-dom";
 import { campaign, latest, hijri, arabicDigits } from "./lib/data";
+import { nameMode, setNameMode, onNameMode, type NameMode } from "./lib/mode";
 import EntityCard from "./components/EntityCard";
 // Each hall is its own chunk, loaded when it is first opened.
 const Atlas = lazy(() => import("./views/Atlas"));
@@ -54,6 +55,9 @@ export default function App() {
   // before paint, so a new page never shows the old page's scroll for a frame
   useLayoutEffect(() => { window.scrollTo(0, 0); }, [pathname]);
   const h = latest ? hijri(latest.date) : null;
+  // the names switch re-renders the page (each hall reads the mode as it renders)
+  const [names, setNames] = useState<NameMode>(nameMode());
+  useEffect(() => onNameMode(setNames), []);
 
   return (
     <div className="shell">
@@ -74,6 +78,11 @@ export default function App() {
             ))}
           </ul>
         </nav>
+        <div className="names-switch ui" role="group" aria-label="Names">
+          <span className="ns-l">Names</span>
+          <button aria-pressed={names === "court"} onClick={() => setNameMode("court")} title="The chronicle's own names: Ishbīliya, Qashtāla, the umarāʾ">The court's</button>
+          <button aria-pressed={names === "plain"} onClick={() => setNameMode("plain")} title="Plain names: Seville, Castile, the nobles. People keep their names.">Plain</button>
+        </div>
         <div className="rail-foot">
           {h && <div>Last checkpoint: <span className="ar" style={{ color: "var(--gilt)" }}>{arabicDigits(h.y)}</span> AH</div>}
           {campaign.sample && (
@@ -85,7 +94,7 @@ export default function App() {
       </aside>
 
       <main className="main" id="main">
-        <Suspense fallback={<div className="page loading ui" role="status">Unrolling the folio…</div>}>
+        <Suspense key={names} fallback={<div className="page loading ui" role="status">Unrolling the folio…</div>}>
         <Routes>
           <Route path="/" element={<Atlas />} />
           <Route path="/chronicle" element={<ChronicleIndex />} />

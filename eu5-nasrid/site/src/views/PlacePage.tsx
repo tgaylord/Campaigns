@@ -1,4 +1,5 @@
 import { Link, useParams } from "react-router-dom";
+import { countryLabel, placeLabel } from "../lib/names";
 import { placeById, places, mentionsOf, latest, snapshots, isHeld, hijri, western, year, yearFrac, nf, faithName, cultureName, rankName, countryByTag } from "../lib/data";
 import { useLatestLand, CULTURE_COLOR, FAITH_COLOR, provinceName, areaName } from "./Lands";
 import MiniChart from "../components/MiniChart";
@@ -25,8 +26,8 @@ export default function PlacePage() {
     <div className="page record-page">
       <header className="record-head">
         {p.nameArabic && <div className="record-ar ar">{p.nameArabic}</div>}
-        <h1>{p.name}</h1>
-        <p className="record-sub">{p.nameGame} in the game. {ours ? (viaNow ? `In Naṣrid hands, through ${countryByTag.get(viaNow)?.nameChronicle ?? viaNow}.` : "In Naṣrid hands.") : p.held.length ? "Once Naṣrid, now lost." : "Never yet in Naṣrid hands."}</p>
+        <h1>{placeLabel(p)}</h1>
+        <p className="record-sub">{p.nameGame} in the game. {ours ? (viaNow ? `In Naṣrid hands, through ${(countryByTag.get(viaNow) ? countryLabel(countryByTag.get(viaNow)!) : viaNow)}.` : "In Naṣrid hands.") : p.held.length ? "Once Naṣrid, now lost." : "Never yet in Naṣrid hands."}</p>
       </header>
 
       <MiniChart marks={[{ place: p, tone: "focus" as const }, ...neighbours.map((q) => ({ place: q, tone: isHeld(q, now) ? "ours" as const : "theirs" as const }))]} height={340} minSpan={150} />
@@ -41,7 +42,7 @@ export default function PlacePage() {
           </div>
           <div className="track-ends ui"><span>{year(snapshots[0].date)}</span><span>{year(now)}</span></div>
           <ul className="held-list ui">
-            {p.held.map((h) => <li key={h.from}>From {hijri(h.from).text} AH ({western(h.from)}) to {h.to ? `${western(h.to)}` : "the present"}{h.via ? `, through ${countryByTag.get(h.via)?.nameChronicle ?? h.via}` : ", held directly"}</li>)}
+            {p.held.map((h) => <li key={h.from}>From {hijri(h.from).text} AH ({western(h.from)}) to {h.to ? `${western(h.to)}` : "the present"}{h.via ? `, through ${(countryByTag.get(h.via) ? countryLabel(countryByTag.get(h.via)!) : h.via)}` : ", held directly"}</li>)}
             {p.held.length === 0 && <li>Never held.</li>}
           </ul>
         </section>

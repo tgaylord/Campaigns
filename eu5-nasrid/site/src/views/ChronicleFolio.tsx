@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { chronicle, notes, storyById, eraById, hijri, western, personById, placeById, warById, eras, events, snapshots } from "../lib/data";
 import { EntityLink } from "../components/bits";
+import { namesHtml } from "../lib/names";
 import { folioOf } from "./ChronicleIndex";
 import "./chronicle.css";
 
@@ -54,7 +55,7 @@ export default function ChronicleFolio() {
               <h1 className="rubric-title">{target.title}</h1>
               <div className="leaf-dates">{h.text} AH, {western(target.date)}{target.endDate ? ` to ${western(target.endDate)}` : ""}</div>
             </header>
-            <div className="leaf-body" dangerouslySetInnerHTML={{ __html: target.html }} />
+            <div className="leaf-body" dangerouslySetInnerHTML={{ __html: namesHtml(target.html) }} />
             <div className="explicit" aria-hidden="true">❁</div>
           </div>
 

@@ -1,4 +1,5 @@
 import { Fragment, useEffect, useMemo, useState } from "react";
+import { countryLabel } from "../lib/names";
 import { useCheckpointParam } from "../lib/checkpoint";
 import { Link } from "react-router-dom";
 import { useCheckpoint, prefetchCheckpoints } from "../lib/checkpoint";
@@ -144,7 +145,7 @@ function LandsMap({ rows, lens }: { rows: (Land & { holder?: string })[]; lens: 
             <div className="t">{nm.ar && <span className="ar">{nm.ar}</span>} {nm.name}</div>
             <div>{lensValue(hover.l, lens)}</div>
             {lens !== "wealth" && lens !== "untaxed" && hover.l.possibleTax != null && <div className="m">Wealth {wealthOf(hover.l).toFixed(1)}, tax base {taxBaseOf(hover.l).toFixed(1)}</div>}
-            <div className="m">{provinceName(hover.l.province)}, {compact(hover.l.population)} people{(hover.l as Land & { holder?: string }).holder && (hover.l as Land & { holder?: string }).holder !== "GRA" ? `, held through ${countryByTag.get((hover.l as Land & { holder?: string }).holder!)?.nameChronicle}` : ""}</div>
+            <div className="m">{provinceName(hover.l.province)}, {compact(hover.l.population)} people{(hover.l as Land & { holder?: string }).holder && (hover.l as Land & { holder?: string }).holder !== "GRA" ? `, held through ${countryByTag.get((hover.l as Land & { holder?: string }).holder!)?.name ? countryLabel(countryByTag.get((hover.l as Land & { holder?: string }).holder!)!) : ""}` : ""}</div>
           </div>
         );
       })()}
@@ -300,7 +301,7 @@ export default function Lands() {
           const c = countryByTag.get(tag);
           return (
             <div key={tag} className="area-card subject" style={{ borderLeftColor: c?.color }}>
-              <span className="an">{c?.nameChronicle ?? tag}</span>
+              <span className="an">{c ? countryLabel(c) : tag}</span>
               <span className="row">Ṭāʾifa since {western(s.since ?? snap.date)}{s.ruler ? <>, under <b>{personById.get(s.ruler)?.name}</b></> : null}</span>
               <span className="row"><b>{ls.length}</b> {ls.length === 1 ? "location" : "locations"}, <b>{compact(pop)}</b> people, <b>{pct(muslims(ls) / (pop || 1))}</b> Muslim</span>
               <span className="row">Control <b>{pct(wmean(ls, (l) => l.control))}</b>; a {faithName(s.religion ?? "")}, {cultureName(s.culture ?? "")} {s.rank ?? ""}</span>
@@ -381,7 +382,7 @@ export default function Lands() {
             return (
               <tbody key={tag} className="subject-body">
                 <tr className="area-row subject"><th colSpan={11} scope="colgroup">
-                  {c?.nameArabic && <span className="ar">{c.nameArabic}</span>}{c?.nameChronicle ?? tag}
+                  {c?.nameArabic && <span className="ar">{c.nameArabic}</span>}{c ? countryLabel(c) : tag}
                   <span className="sub-note">a ṭāʾifa of Granada since {western(s.since ?? snap.date)}{s.ruler ? `, under ${personById.get(s.ruler)?.name}` : ""}</span>
                 </th></tr>
                 {provinces.map((p) => renderProvince(p, tag))}
