@@ -93,9 +93,11 @@ if (campaign.map?.realms) {
     realmsAt[r.date] = { all, under, mine };
     // borders change rarely, so each distinct outline is stored once and the reckonings point at it
     const rivals = campaign.map.rivals ?? [];
+    // a power is drawn as a rival only while it is not ours, a subject or an ally
+    const friend = new Set([...mine, ...(r.map?.allies ?? [])]);
     outlines[r.date] = { o: shape(join(r.map?.ours ?? [])), s: shape(join(r.map?.subjects ?? [])), a: shape(join(r.map?.allies ?? [])), as: shape(join(under(r.map?.allies ?? []))),
-      r: rivals.map((v) => shape(join(v.tags.filter((t) => !mine.has(t))))), rs: rivals.map((v) => shape(join(under(v.tags.filter((t) => !mine.has(t) && all[t]))))),
-      rn: rivals.map((v) => v.tags.filter((t) => !mine.has(t) && all[t]).map((t) => v.names?.[t] ?? v.name)[0] ?? "") };
+      r: rivals.map((v) => shape(join(v.tags.filter((t) => !friend.has(t))))), rs: rivals.map((v) => shape(join(under(v.tags.filter((t) => !friend.has(t) && all[t]))))),
+      rn: rivals.map((v) => v.tags.filter((t) => !friend.has(t) && all[t]).map((t) => v.names?.[t] ?? v.name)[0] ?? "") };
     if (r === last) land = Object.values(all).map((v) => v.d).join("");
   }
 }

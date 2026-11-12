@@ -144,6 +144,7 @@ write("campaign.yaml", {
       { name: "Portugal", tags: ["POR"], color: ["#5e8c31", "#86b34f"] },
       { name: "Aragon", tags: ["ARA"], color: ["#a33a63", "#cf6a9c"] },
       { name: "France", tags: ["FRA"], color: ["#6d4bb5", "#a48be0"] },
+      { name: "Morocco", tags: ["MOR"], color: ["#c2571a", "#e08a4f"] },
       { name: "England", tags: ["ENG", "ANV"], names: { ENG: "England", ANV: "The Angevins" }, color: ["#b3261e", "#e0655c"] },
     ], layers: "../data/map/layers/{date}.json", centroids: "../data/map/centroids.json", labels: { GRA: "al-Andalus", MOR: "Morocco", TUN: "Tunis", MAM: "The Mamlūks", ANV: "The Angevins", TIM: "The Tīmūrids", ENG: "England" } },
   id: "eu5-nasrid", title: "al-Andalus", arabic: "الأندلس", subtitle: "The Naṣrid campaign: Granada, 1337, to an empire across the Strait",

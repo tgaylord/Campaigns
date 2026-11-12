@@ -58,6 +58,12 @@ map:
       color:
         - '#6d4bb5'
         - '#a48be0'
+    - name: Morocco
+      tags:
+        - MOR
+      color:
+        - '#c2571a'
+        - '#e08a4f'
     - name: England
       tags:
         - ENG
