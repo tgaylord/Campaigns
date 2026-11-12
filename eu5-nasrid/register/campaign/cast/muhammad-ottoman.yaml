@@ -8,6 +8,10 @@ roles:
 traits:
   - craven
   - offensive_planner
+stats:
+  adm: 83
+  dip: 38
+  mil: 46
 stations:
   - role: general
     from: '1403-04-17'

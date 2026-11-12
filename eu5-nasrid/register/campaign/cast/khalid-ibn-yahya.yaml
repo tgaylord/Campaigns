@@ -13,6 +13,10 @@ roles:
 traits:
   - architect
   - hardy_warrior
+stats:
+  adm: 80.7
+  dip: 85.2
+  mil: 78.4
 drives:
   - from: '1342-12-30'
     text: >-

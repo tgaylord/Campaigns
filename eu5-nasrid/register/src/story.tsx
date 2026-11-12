@@ -7,10 +7,11 @@ import { formatHijri, formatWestern } from "./hijri";
 const VIEW = campaign.map?.story ?? [1215, 1225, 1440, 900];
 const outline = (date: string) => {
   const x = D.outlines[date] ?? D.outlines[Object.keys(D.outlines).filter((d) => d <= date).at(-1) ?? ""];
-  return x ? { o: D.shapes[x.o], s: D.shapes[x.s], a: D.shapes[x.a], r: x.r.map((k) => D.shapes[k]) } : { o: "", s: "", a: "", r: [] as string[] };
+  const S = D.shapes;
+  return x ? { o: S[x.o], s: S[x.s], a: S[x.a], as: S[x.as], r: x.r.map((k) => S[k]), rs: x.rs.map((k) => S[k]), rn: x.rn } : { o: "", s: "", a: "", as: "", r: [] as string[], rs: [] as string[], rn: [] as string[] };
 };
 const RIVALS = campaign.map?.rivals ?? [];
-const rivalFill = (k: number) => `color-mix(in srgb, light-dark(${RIVALS[k].color[0]}, ${RIVALS[k].color[1]}) 62%, var(--surface))`;
+const rivalFill = (k: number, pct = 62) => `color-mix(in srgb, light-dark(${RIVALS[k].color[0]}, ${RIVALS[k].color[1]}) ${pct}%, var(--surface))`;
 const plain = (s: string) => s.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/[*_]/g, "");
 const firstSentence = (s: string) => plain(s).split(/(?<=[.!?])\s/)[0];
 
@@ -29,9 +30,9 @@ export function Seal({ id, size = 76 }: { id: string; size?: number }) {
 }
 
 /* ------------------------------------------------------------------ the map of the story */
-function Land({ view = VIEW, children, label }: { view?: number[]; children: React.ReactNode; label: string }) {
+function Land({ view = VIEW, children, label, whole }: { view?: number[]; children: React.ReactNode; label: string; whole?: boolean }) {
   return (
-    <svg className="land" viewBox={view.join(" ")} role="img" aria-label={label} preserveAspectRatio="xMidYMid slice">
+    <svg className="land" viewBox={view.join(" ")} role="img" aria-label={label} preserveAspectRatio={whole ? "xMidYMid meet" : "xMidYMid slice"}>
       <path className="l-land" d={D.land} />
       {children}
     </svg>
@@ -115,6 +116,11 @@ const LENSES = [
 ] as const;
 const share = (o: Record<string, number> | undefined, total: number) => Object.entries(o ?? {}).slice(0, 4).map(([k, v]) => `${k.replace(/_religion$/, "")} ${Math.round((v / total) * 100)}%`).join(", ");
 
+/* a battle stays bright while its war is being fought, then fades over the next dozen years */
+const warOf = (b: Beat) => (b.threads ?? []).map((t) => threadById.get(t)).find((t) => t?.kind === "war");
+const liveWar = (b: Beat, d: string) => { const w = warOf(b); return !!w && (!w.to || w.to >= d); };
+const fade = (b: Beat, d: string) => { const w = warOf(b), since = frac(d) - frac(w?.to ?? b.on); return Math.max(0.14, 0.7 - since * 0.05); };
+
 export function Atlas() {
   const { r, controls } = useScrub();
   const [lens, setLens] = useState<(typeof LENSES)[number]["id"]>("hold");
@@ -139,11 +145,12 @@ export function Atlas() {
           <button type="button" className="grow" aria-pressed={big} onClick={() => setBig((b) => !b)}>{big ? "Shrink the map" : "Enlarge the map"}</button>
         </div>
         <div className={`atlas-map${big ? " big" : ""}`}>
-          <Land view={view} label={`${L.label}, ${y}`}>
+          <Land view={view} label={`${L.label}, ${y}`} whole={big}>
             {lens === "hold" && (
               <>
+                {o.rs.map((d, n) => d && <path key={`s${n}`} className="l-rival" d={d} style={{ fill: rivalFill(n, 28) }} />)}
                 {o.r.map((d, n) => d && <path key={n} className="l-rival" d={d} style={{ fill: rivalFill(n) }} />)}
-                <path className="l-ally" d={o.a} /><path className="l-subject" d={o.s} /><path className="l-ours" d={o.o} />
+                <path className="l-allysub" d={o.as} /><path className="l-ally" d={o.a} /><path className="l-subject" d={o.s} /><path className="l-ours" d={o.o} />
                 {(D.neighbours[r.date] ?? []).map(([n, x, yy, ally]) => <text key={n} className={`nb${ally ? " ally" : ""}`} x={x} y={yy} textAnchor="middle" style={{ fontSize: u * 1.5, strokeWidth: u * 0.35 }}>{n}</text>)}
               </>
             )}
@@ -160,7 +167,7 @@ export function Atlas() {
             {lens === "blood" && (
               <>
                 <path className="l-subject" d={o.s} /><path className="l-ours" d={o.o} />
-                {fought.map((b) => <circle key={b.id} className={`bdot ${b.won === true ? "won" : b.won === false ? "lost" : "even"}${b.on.slice(0, 4) === String(y) ? " hot" : ""}`} cx={b.at![0]} cy={b.at![1]} r={(b.on.slice(0, 4) === String(y) ? 0.75 : 0.5) * u} style={{ strokeWidth: u * 0.12 }}><title>{`${formatWestern(b.on)}: ${b.what}`}</title></circle>)}
+                {fought.map((b) => { const live = liveWar(b, r.date), hot = b.on.slice(0, 4) === String(y); return <circle key={b.id} className={`bdot ${b.won === true ? "won" : b.won === false ? "lost" : "even"}${hot ? " hot" : ""}`} cx={b.at![0]} cy={b.at![1]} r={(hot ? 0.75 : live ? 0.6 : 0.42) * u} style={{ strokeWidth: u * 0.12, opacity: live ? 1 : fade(b, r.date) }}><title>{`${formatWestern(b.on)}: ${b.what}`}</title></circle>; })}
               </>
             )}
           </Land>
@@ -172,8 +179,8 @@ export function Atlas() {
             {lens === "grew" && <p className="hc-count">{nf.format(reckonings[0].realm.towns)} towns in {Y0}; {nf.format(r.realm.towns)} in {y}.</p>}
             {lens === "faith" && souls > 0 && <p className="hc-count">Of {cf.format(souls)} souls: {share(r.peoples?.faiths, souls)}.</p>}
             {lens === "tongue" && souls > 0 && <p className="hc-count">Of {cf.format(souls)} souls: {share(r.peoples?.cultures, souls)}.</p>}
-            {lens === "blood" && <p className="hc-count">{fought.length} battles placed by {y}: {fought.filter((b) => b.won === true).length} won, {fought.filter((b) => b.won === false).length} lost. The larger marks were fought this year.</p>}
-            {lens === "hold" && <p className="map-key"><span><i className="sw l-ours" />The crown</span><span><i className="sw l-subject" />Ṭāʾifas and vassals</span><span><i className="sw l-ally" />Allies</span>{RIVALS.map((v, n) => o.r[n] ? <span key={v.name}><i className="sw" style={{ background: rivalFill(n) }} />{v.name}</span> : null)}</p>}
+            {lens === "blood" && <p className="hc-count">{fought.length} battles placed by {y}: {fought.filter((b) => b.won === true).length} won, {fought.filter((b) => b.won === false).length} lost. Wars still being fought are bright, with this year's battles largest; a finished war fades over the next dozen years.</p>}
+            {lens === "hold" && <p className="map-key"><span><i className="sw l-ours" />The crown</span><span><i className="sw l-subject" />Ṭāʾifas and vassals</span><span><i className="sw l-ally" />Allies</span>{RIVALS.map((v, n) => o.r[n] ? <span key={v.name}><i className="sw" style={{ background: rivalFill(n) }} />{o.rn[n] || v.name}</span> : null)}<span>Paler land of the same colour is that power's own vassals.</span></p>}
             {lens === "grew" && <p className="map-key"><span><i className="sw ring-old" />Held since {Y0}</span><span><i className="sw ring-new" />Newly won</span></p>}
             {towns && <p className="map-key"><span><i className={`sw tile-${lens}`} />{lens === "faith" ? "All Muslim" : "All Andalusī"}</span><span><i className="sw tile-base" />None</span><span>Iberia and the near shores only</span></p>}
             {lens === "blood" && <p className="map-key"><span><i className="bd won" />Won</span><span><i className="bd lost" />Lost</span><span><i className="bd even" />Unrecorded</span></p>}
@@ -194,7 +201,7 @@ const chapters: Chapter[] = campaign.eras.map((e) => {
 export const bookOf = (t: Telling) => { const n = chapters.findIndex((c) => c.id === t.book); return n < 0 ? null : { n: n + 1, title: chapters[n].title }; };
 const reckonAt = (d: string) => reckonings.findLast((r) => r.date <= d) ?? reckonings[0];
 
-function ChapterPanel({ c, n }: { c: Chapter; n: number }) {
+function ChapterPanel({ c, n, open, toggle }: { c: Chapter; n: number; open: boolean; toggle: () => void }) {
   const a = reckonAt(c.from), b = reckonAt(c.to), oa = outline(a.date), ob = outline(b.date);
   const drivers = useMemo(() => {
     const m = new Map<string, number>();
@@ -205,11 +212,19 @@ function ChapterPanel({ c, n }: { c: Chapter; n: number }) {
   const line = (id: string) => { const p = cast[id]; const d = (p.drives ?? []).filter((x) => x.from <= c.to).at(-1) ?? p.drives?.[0]; return d?.text ?? p.roles?.[0] ?? ""; };
   const grew = b.realm.towns !== a.realm.towns;
   return (
-    <section className="chapter" id={`book-${n}`}>
+    <section className={`chapter${open ? "" : " shut"}`} id={`book-${n}`}>
       <header>
-        <p className="ch-n">Book {n}, {c.from.slice(0, 4)} to {c.to.slice(0, 4) === String(Y1) ? "the present" : c.to.slice(0, 4)}</p>
-        <h2>{c.title}{c.arabic && <bdi className="ar" lang="ar" dir="rtl">{c.arabic}</bdi>}</h2>
+        <p className="ch-n">Book {n}, {c.from.slice(0, 4)} to {c.to.slice(0, 4) === String(Y1) ? "the present" : c.to.slice(0, 4)}{open ? "" : `. ${c.tales.length} tellings, ${nf.format(a.realm.towns)} to ${nf.format(b.realm.towns)} towns`}</p>
+        <h2><button type="button" className="ch-toggle" aria-expanded={open} onClick={toggle}><span>{c.title}</span>{c.arabic && <bdi className="ar" lang="ar" dir="rtl">{c.arabic}</bdi>}<i aria-hidden="true" /></button></h2>
       </header>
+      {open && <ChapterBody c={c} a={a} b={b} oa={oa} ob={ob} drivers={drivers} wars={wars} line={line} grew={grew} />}
+    </section>
+  );
+}
+type Out = ReturnType<typeof outline>;
+function ChapterBody({ c, a, b, oa, ob, drivers, wars, line, grew }: { c: Chapter; a: (typeof reckonings)[number]; b: (typeof reckonings)[number]; oa: Out; ob: Out; drivers: string[]; wars: typeof threads; line: (id: string) => string; grew: boolean }) {
+  return (
+    <>
       <div className="ch-grid">
         <div className="ch-text">
           <p className="ch-sum">{c.summary}</p>
@@ -237,20 +252,26 @@ function ChapterPanel({ c, n }: { c: Chapter; n: number }) {
           </a>
         ))}
       </div>
-    </section>
+    </>
   );
 }
 
+const SHUT_KEY = "register.books.shut";
 export function Story() {
+  const [shut, setShut] = useState<string[]>(() => { try { return JSON.parse(localStorage.getItem(SHUT_KEY) ?? "[]"); } catch { return []; } });
+  const save = (v: string[]) => { setShut(v); try { localStorage.setItem(SHUT_KEY, JSON.stringify(v)); } catch { /* fine without */ } };
+  // a link to one book opens it
+  useEffect(() => { const f = () => { const m = location.hash.match(/^#book-(\d+)$/); const id = m && chapters[+m[1] - 1]?.id; if (id) setShut((s) => s.filter((x) => x !== id)); }; f(); addEventListener("hashchange", f); return () => removeEventListener("hashchange", f); }, []);
   return (
     <>
       <Hero />
       <header className="page-head story-head">
         <h2 className="big">The story in {chapters.length} books</h2>
         <p className="sub">The books are themes, so some run side by side. Each one says what changed, shows it on the map, and names the people who drove it. The tellings are its scenes.</p>
+        <p className="fold-all"><button type="button" className="clear" onClick={() => save(shut.length ? [] : chapters.map((c) => c.id))}>{shut.length ? "Open every book" : "Fold every book"}</button></p>
         <nav className="toc" aria-label="The books">{chapters.map((c, k) => <a key={c.id} href={`#book-${k + 1}`}>{c.title}</a>)}</nav>
       </header>
-      {chapters.map((c, k) => <ChapterPanel key={c.id} c={c} n={k + 1} />)}
+      {chapters.map((c, k) => <ChapterPanel key={c.id} c={c} n={k + 1} open={!shut.includes(c.id)} toggle={() => save(shut.includes(c.id) ? shut.filter((x) => x !== c.id) : [...shut, c.id])} />)}
     </>
   );
 }
@@ -478,5 +499,58 @@ export function Powers({ r }: { r: (typeof reckonings)[number] }) {
       </ol>
       <p className="key">{r.world.rank ? `${campaign.title} ranks ${ordinal(r.world.rank)}` : ""}{ranks[0]?.world?.rank && ranks[0].world.rank !== r.world.rank ? `; it ranked ${ordinal(ranks[0].world.rank)} in ${ranks[0].date.slice(0, 4)}` : ""}{firstTop && firstTop !== ranks[0] ? `, and first stood among the eight great powers in ${firstTop.date.slice(0, 4)}` : ""}.</p>
     </section>
+  );
+}
+
+/* ------------------------------------------------------------------ a war, before and after */
+export function WarMaps({ id, bs }: { id: string; bs: Beat[] }) {
+  const w = D.warmaps[id];
+  if (!w) return null;
+  const pts = bs.filter((b) => b.at).map((b) => b.at!);
+  const S = D.shapes;
+  // frame both maps alike: around the fighting if there was any, else the story's usual view
+  let view = VIEW;
+  if (pts.length > 1) {
+    const xs = pts.map((p) => p[0]), ys = pts.map((p) => p[1]);
+    const cx = (Math.min(...xs) + Math.max(...xs)) / 2, cy = (Math.min(...ys) + Math.max(...ys)) / 2;
+    const wd = Math.max((Math.max(...xs) - Math.min(...xs)) * 1.5, (Math.max(...ys) - Math.min(...ys)) * 1.5 * 1.45, 560);
+    view = [cx - wd / 2, cy - wd / 1.45 / 2, wd, wd / 1.45];
+  }
+  const One = ({ side, label }: { side: typeof w.before; label: string }) => { const o = outline(side.date); return (
+    <figure>
+      <Land view={view} label={label}>
+        <path className="w-foe sub" d={S[side.es]} /><path className="w-friend sub" d={S[side.fs]} />
+        <path className="w-foe" d={S[side.e]} /><path className="w-friend" d={S[side.f]} />
+        <path className="l-subject" d={o.s} /><path className="l-ours" d={o.o} />
+      </Land>
+      <figcaption>{label}, at the reckoning of {formatWestern(side.date)}</figcaption>
+    </figure>
+  ); };
+  return (
+    <section className="warmaps">
+      <h2>{w.open ? "Before the war, and now" : "Before and after"}</h2>
+      <div className="wm-grid"><One side={w.before} label="Before" /><One side={w.after} label={w.open ? "Now" : "After"} /></div>
+      <p className="map-key"><span><i className="sw l-ours" />The crown</span><span><i className="sw l-subject" />Its ṭāʾifas and vassals</span><span><i className="sw w-friend" />Its side</span><span><i className="sw w-foe" />The other side</span><span>Paler land is a vassal of that side. Sides are matched from the names on record, so a small lord may be missing.</span></p>
+    </section>
+  );
+}
+
+/* ------------------------------------------------------------------ what kind of person: the three measures and the traits */
+const TRAIT_WORDS: Record<string, string> = { hajji: "made the Hajj", bubonic_plague_trait: "survived the plague", "gifted child": "gifted", inspirational_leader_general: "inspiring leader", born_to_the_saddle: "born to the saddle" };
+const traitLabel = (t: string) => { const child = t.startsWith("child_"); const w = TRAIT_WORDS[t] ?? t.replace(/^child_/, "").replace(/_trait$/, "").replace(/_/g, " "); return { w, child }; };
+export function Character({ p }: { p: Person }) {
+  const st = p.stats, traits = (p.traits ?? []).map(traitLabel);
+  if (!st && !traits.length) return null;
+  const grown = traits.filter((t) => !t.child), young = traits.filter((t) => t.child);
+  const M: [string, number | undefined, string][] = [["Rule", st?.adm, "administration"], ["Counsel", st?.dip, "diplomacy"], ["War", st?.mil, "the military art"]];
+  return (
+    <div className="character">
+      {st && (
+        <dl className="gauges">
+          {M.map(([label, v, long]) => typeof v === "number" && <div key={label} title={`${label}: ${long}, ${v} of 100`}><dt>{label}</dt><dd><span className="gauge"><i style={{ width: `${v}%` }} className={v >= 70 ? "high" : v < 35 ? "low" : ""} /></span><span className="num">{v}</span></dd></div>)}
+        </dl>
+      )}
+      {traits.length > 0 && <p className="traits">{grown.map((t) => <span key={t.w} className="trait">{t.w}</span>)}{young.map((t) => <span key={t.w} className="trait young">{t.w} as a child</span>)}</p>}
+    </div>
   );
 }

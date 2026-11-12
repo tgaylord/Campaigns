@@ -10,6 +10,10 @@ roles:
 traits:
   - child_shrewd
   - accomplished_sailor
+stats:
+  adm: 66
+  dip: 59
+  mil: 52
 drives:
   - from: '1438-01-16'
     text: >-

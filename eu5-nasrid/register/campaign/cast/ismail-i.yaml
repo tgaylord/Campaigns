@@ -12,6 +12,10 @@ roles:
   - sultan
 traits:
   - architectural_visionary
+stats:
+  adm: 50
+  dip: 39
+  mil: 66
 game:
   id: 3531
   name: Ismail

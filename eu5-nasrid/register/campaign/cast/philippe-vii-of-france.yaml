@@ -2,6 +2,10 @@ name: Philippe VII of France
 born: '1398-06-02'
 roles:
   - king of France (1421–1428)
+stats:
+  adm: 27
+  dip: 40
+  mil: 68
 stations:
   - role: dīwān
     from: '1417-10-01'

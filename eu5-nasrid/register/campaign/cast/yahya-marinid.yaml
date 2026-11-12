@@ -6,6 +6,10 @@ roles:
   - sultan of Fās (from 1417)
 traits:
   - malevolent
+stats:
+  adm: 38
+  dip: 39
+  mil: 61
 stations:
   - role: general
     from: '1440-07-02'

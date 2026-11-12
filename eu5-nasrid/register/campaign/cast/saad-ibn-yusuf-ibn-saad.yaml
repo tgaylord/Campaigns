@@ -9,6 +9,10 @@ roles:
   - member of the dīwān
 traits:
   - deceitful
+stats:
+  adm: 30
+  dip: 37
+  mil: 41
 stations:
   - role: dīwān
     from: '1416-04-03'

@@ -8,6 +8,10 @@ father: ismail-i
 mother: qamar
 traits:
   - child_gregarious
+stats:
+  adm: 37.5
+  dip: 30.75
+  mil: 50.25
 stations:
   - role: dīwān
     from: '1341-01-06'

@@ -9,6 +9,10 @@ traits:
   - industrious
   - battlefield_medic
   - sinner
+stats:
+  adm: 34
+  dip: 32
+  mil: 80
 stations:
   - role: admiral
     from: '1352-06-27'

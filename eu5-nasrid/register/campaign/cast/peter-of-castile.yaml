@@ -7,6 +7,10 @@ mother: maria-of-portugal
 roles:
   - heir of Castile
   - heir of Portugal
+stats:
+  adm: 21
+  dip: 21
+  mil: 28
 note: >-
   Son of Alfonso XI and Queen Maria, heir to both Castile and Portugal (the 20 May 1343 save). He died of a
   fever on 11 August 1351, and the double inheritance passed in time to his younger brother Jerónimo.

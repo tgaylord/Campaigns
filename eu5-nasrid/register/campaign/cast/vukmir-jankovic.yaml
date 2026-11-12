@@ -2,6 +2,10 @@ name: Vukmir Janković
 died: '1435-04-09'
 roles:
   - papal admiral
+stats:
+  adm: 62
+  dip: 84
+  mil: 81
 stations:
   - role: admiral
     from: '1432-09-02'

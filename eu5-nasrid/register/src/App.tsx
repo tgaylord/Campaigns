@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { md } from "./md";
 import { formatHijri, formatWestern, HIJRI_MONTHS } from "./hijri";
 import { D, campaign, cast, threads, reckonings, beats, tellings, threadById, beatById, now, before, Y0, Y1, nf, cf, MON, dayMonth, hijriSpan, short, first, age, rulerAt, ordinal, fmt, tone, Who, type Beat, type Telling, type Person, type Thread, type Reckoning, type Data } from "./core";
-import { Story, BattleMap, LifeLines, Weave, Seal, Atlas, FamilyTree, bookOf, Estates, Powers } from "./story";
+import { Story, BattleMap, LifeLines, Weave, Seal, Atlas, FamilyTree, bookOf, Estates, Powers, WarMaps, Character } from "./story";
 import { Frieze, FriezeKey, frac } from "./frieze";
 
 /* ------------------------------------------------------------------ routing: one plain word after the # */
@@ -415,6 +415,7 @@ function ThreadPage({ id }: { id: string }) {
         {who.size > 0 && <p className="sub"><span className="lab">In it</span>{[...who.entries()].sort((a, b) => b[1] - a[1]).slice(0, 8).map(([w], i) => <span key={w}>{i ? ", " : ""}<Who id={w} /></span>)}</p>}
       </header>
       {t.kind === "war" && <BattleMap bs={bs} from={t.from} />}
+      {t.kind === "war" && <WarMaps id={t.id} bs={bs} />}
       {t.id === "estates" && <Estates />}
       <Line items={bs} tales={ts} startOpen={bs.filter((b) => !b.minor).length < 8} />
     </>
@@ -453,6 +454,7 @@ function PersonPage({ id }: { id: string }) {
         <h1>{p.name}</h1>
         <p className="sub">{p.born ? `Born ${formatWestern(p.born)}` : "Birth unrecorded"}{p.died ? `, died ${formatWestern(p.died)}, aged ${age(p, p.died)}` : p.born ? `, aged ${age(p, now.date)} at the last reckoning` : ""}{p.house ? `. Of the ${p.house} house` : ""}.</p>
         {!!p.roles?.length && <p className="sub">{p.roles.join("; ")}</p>}
+        <Character p={p} />
         <dl className="sides">
           {(p.father || p.mother) && <div><dt>Parents</dt><dd>{[p.father, p.mother].filter(Boolean).map((x, i) => <span key={x}>{i ? " and " : ""}<Who id={x!} full /></span>)}</dd></div>}
           {children.length > 0 && <div><dt>Children</dt><dd>{children.map(([c], i) => <span key={c}>{i ? ", " : ""}<Who id={c} /></span>)}</dd></div>}

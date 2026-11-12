@@ -8,6 +8,10 @@ traits:
   - careful
   - naval_engineer
   - calm
+stats:
+  adm: 33
+  dip: 39
+  mil: 89
 stations:
   - role: admiral
     from: '1420-12-02'

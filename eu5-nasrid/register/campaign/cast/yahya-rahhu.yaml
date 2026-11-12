@@ -9,6 +9,10 @@ roles:
   - commander of the Ghuzāt
 traits:
   - bold_fighter
+stats:
+  adm: 60
+  dip: 72
+  mil: 78
 stations:
   - role: general
     from: '1339-09-02'

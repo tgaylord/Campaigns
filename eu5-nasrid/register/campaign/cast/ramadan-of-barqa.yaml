@@ -6,6 +6,10 @@ died: '1387-01-02'
 roles:
   - shaykh of Barqa
   - Mamlūk vassal
+stats:
+  adm: 42
+  dip: 35
+  mil: 67
 stations:
   - role: dīwān
     from: '1349-12-01'

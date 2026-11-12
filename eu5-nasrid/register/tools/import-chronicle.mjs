@@ -25,7 +25,7 @@ for (const p of people) {
   write(`cast/${p.id}.yaml`, clean({
     name: p.name, arabic: p.nameArabic, sex: p.female ? "f" : undefined, house: p.dynasty, tier: p.tier,
     born: p.born, died: p.died, father: p.father, mother: p.mother,
-    reigns: p.reigns, roles: p.roles, traits: p.traits,
+    reigns: p.reigns, roles: p.roles, traits: p.traits, stats: p.stats,
     drives: p.arc, ties: p.ties, stations: p.stations,
     note: p.note, game: clean({ id: p.gameId, name: p.nameGame }),
   }));
@@ -137,13 +137,14 @@ snaps.forEach((s, i) => {
 const eras = J("data/eras.json");
 write("campaign.yaml", {
   map: { realms: "../data/map/world/realms-{date}.json", view: [1240, 1230, 2640, 1190], story: [1215, 1225, 1440, 900], wide: [1130, 1130, 2760, 1300], towns: [1215, 1195, 1110, 840], origin: [5900, 1100],
-    names: "../data/world/tags.json", world: "../data/world/{date}.json",
+    names: "../data/world/tags.json",
+    aliases: { "al-Andalus": "GRA", Granada: "GRA", "Papal States": "PAP", Mamluks: "MAM", Egypt: "MAM", Angevins: "ANV", "Angevin": "ANV" }, world: "../data/world/{date}.json",
     rivals: [
       { name: "Castile", tags: ["CAS"], color: ["#b8860b", "#c99a2e"] },
       { name: "Portugal", tags: ["POR"], color: ["#5e8c31", "#86b34f"] },
       { name: "Aragon", tags: ["ARA"], color: ["#a33a63", "#cf6a9c"] },
       { name: "France", tags: ["FRA"], color: ["#6d4bb5", "#a48be0"] },
-      { name: "England, later the Angevins", tags: ["ENG", "ANV"], color: ["#b3261e", "#e0655c"] },
+      { name: "England", tags: ["ENG", "ANV"], names: { ENG: "England", ANV: "The Angevins" }, color: ["#b3261e", "#e0655c"] },
     ], layers: "../data/map/layers/{date}.json", centroids: "../data/map/centroids.json", labels: { GRA: "al-Andalus", MOR: "Morocco", TUN: "Tunis", MAM: "The Mamlūks", ANV: "The Angevins", TIM: "The Tīmūrids", ENG: "England" } },
   id: "eu5-nasrid", title: "al-Andalus", arabic: "الأندلس", subtitle: "The Naṣrid campaign: Granada, 1337, to an empire across the Strait",
   game: "Europa Universalis V 1.4 (Across the Pillars)", player: "Trent", start: "1337-04-01",

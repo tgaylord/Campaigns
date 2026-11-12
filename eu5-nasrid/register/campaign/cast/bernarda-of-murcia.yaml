@@ -10,6 +10,10 @@ roles:
   - member of the dīwān (1435–1437)
 traits:
   - gifted child
+stats:
+  adm: 31
+  dip: 25
+  mil: 27
 stations:
   - role: dīwān
     from: '1435-06-09'

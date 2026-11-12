@@ -10,6 +10,10 @@ roles:
 traits:
   - inspiring_leader
   - worldly
+stats:
+  adm: 78
+  dip: 58
+  mil: 68
 stations:
   - role: admiral
     from: '1393-08-22'

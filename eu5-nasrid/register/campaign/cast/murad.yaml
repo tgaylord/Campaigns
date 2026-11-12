@@ -6,6 +6,10 @@ roles:
 traits:
   - hermit
   - offensive_planner
+stats:
+  adm: 59
+  dip: 54
+  mil: 79
 note: >-
   Granadan general in the War of Independence. He chased the joined armies of Portugal and Aragon halfway
   across Iberia and broke them at Zafra on 3 August 1364. Then, on 10 and 11 September, he destroyed their

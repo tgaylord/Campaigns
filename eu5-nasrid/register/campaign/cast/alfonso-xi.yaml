@@ -5,6 +5,10 @@ born: '1311-08-13'
 died: '1366-03-29'
 roles:
   - king of Castile
+stats:
+  adm: 66
+  dip: 55
+  mil: 80
 stations:
   - role: admiral
     from: '1363-01-02'

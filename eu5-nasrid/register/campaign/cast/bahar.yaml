@@ -5,6 +5,10 @@ born: '1301-01-01'
 died: '1359-03-30'
 roles:
   - mother of Yūsuf I
+stats:
+  adm: 39
+  dip: 45
+  mil: 13
 note: ' Died 1359-03-30 (save of 24 October 1414).'
 game:
   id: 3533

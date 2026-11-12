@@ -6,6 +6,10 @@ died: '1393-02-24'
 roles:
   - king of the renewed Aragon
   - ruler of a ṭāʾifa
+stats:
+  adm: 36
+  dip: 7
+  mil: 85
 stations:
   - role: general
     from: '1388-12-02'

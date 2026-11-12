@@ -19,6 +19,10 @@ traits:
   - battlefield_medic
   - hajji
   - benevolent
+stats:
+  adm: 87
+  dip: 71
+  mil: 63
 drives:
   - from: '1337-04-01'
     text: >-

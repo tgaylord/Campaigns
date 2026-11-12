@@ -8,6 +8,10 @@ traits:
   - obsessive_perfectionist
   - malevolent
   - greedy
+stats:
+  adm: 49
+  dip: 49
+  mil: 29
 stations:
   - role: admiral
     from: '1339-04-15'

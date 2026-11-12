@@ -5,6 +5,10 @@ born: '1281-01-01'
 died: '1328-01-01'
 father: abu-said-faraj
 mother: fatima-bint-al-ahmar
+stats:
+  adm: 50
+  dip: 39
+  mil: 45
 game:
   id: 3541
   name: Muhammad

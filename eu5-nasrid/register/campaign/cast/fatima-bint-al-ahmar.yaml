@@ -7,6 +7,10 @@ died: '1337-04-03'
 father: muhammad-ii
 traits:
   - architectural_visionary
+stats:
+  adm: 50
+  dip: 26
+  mil: 13
 game:
   id: 3527
   name: Fatima

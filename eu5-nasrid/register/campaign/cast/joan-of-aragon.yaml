@@ -8,6 +8,10 @@ roles:
   - king of Sicily
 traits:
   - greedy
+stats:
+  adm: 48
+  dip: 61
+  mil: 53
 stations:
   - role: general
     from: '1404-04-22'

@@ -12,6 +12,10 @@ roles:
 traits:
   - lawgiver
   - intricate_web_weaver
+stats:
+  adm: 50
+  dip: 50
+  mil: 55
 game:
   id: 3525
   name: Muhammad

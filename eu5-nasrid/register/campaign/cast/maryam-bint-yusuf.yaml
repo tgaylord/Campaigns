@@ -11,6 +11,10 @@ roles:
   - member of the dīwān
 traits:
   - child_prodigy
+stats:
+  adm: 99
+  dip: 58
+  mil: 84
 stations:
   - role: dīwān
     from: '1375-03-17'

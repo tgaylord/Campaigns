@@ -7,6 +7,10 @@ roles:
   - explorer (from 1445)
 traits:
   - curious_adventurer
+stats:
+  adm: 50
+  dip: 8
+  mil: 80
 stations:
   - role: explorer
     from: '1445-10-30'

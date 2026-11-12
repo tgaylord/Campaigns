@@ -4,6 +4,10 @@ born: '1320-04-08'
 died: '1384-06-14'
 roles:
   - pretender to Portugal
+stats:
+  adm: 47
+  dip: 36
+  mil: 34
 stations:
   - role: dīwān
     from: '1337-04-02'

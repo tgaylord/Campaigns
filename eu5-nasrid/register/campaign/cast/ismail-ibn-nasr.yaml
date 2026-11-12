@@ -4,6 +4,10 @@ house: Naṣrid
 born: '1200-01-01'
 died: '1250-01-01'
 father: yusuf-ibn-nasr
+stats:
+  adm: 43
+  dip: 62
+  mil: 70
 game:
   id: 3529
   name: Ismail

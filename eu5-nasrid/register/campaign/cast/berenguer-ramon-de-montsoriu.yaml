@@ -11,6 +11,10 @@ traits:
   - naval_engineer
   - kind_hearted
   - loose_lips
+stats:
+  adm: 40
+  dip: 40
+  mil: 80
 stations:
   - role: general
     from: '1398-03-26'

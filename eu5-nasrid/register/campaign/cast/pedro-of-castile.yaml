@@ -8,6 +8,10 @@ roles:
 traits:
   - stubborn
   - drunkard
+stats:
+  adm: 44
+  dip: 51
+  mil: 61
 stations:
   - role: dīwān
     from: '1393-07-01'

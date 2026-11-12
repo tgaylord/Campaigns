@@ -6,6 +6,10 @@ died: '1320-04-24'
 father: ismail-ibn-nasr
 traits:
   - intricate_web_weaver
+stats:
+  adm: 75
+  dip: 39
+  mil: 66
 game:
   id: 3530
   name: Faraj

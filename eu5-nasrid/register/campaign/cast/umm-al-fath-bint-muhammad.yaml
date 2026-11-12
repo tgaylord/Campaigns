@@ -8,6 +8,10 @@ father: muhammad-ibn-ismail-ibn-saad
 mother: jadila-bint-saad-ibn-faraj
 roles:
   - member of the dīwān (from 1425)
+stats:
+  adm: 62
+  dip: 66
+  mil: 77
 stations:
   - role: dīwān
     from: '1428-05-13'

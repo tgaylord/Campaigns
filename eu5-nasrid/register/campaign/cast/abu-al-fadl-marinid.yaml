@@ -11,6 +11,10 @@ traits:
   - charismatic_negotiator
   - worldly
   - careful
+stats:
+  adm: 35
+  dip: 61
+  mil: 36
 stations:
   - role: general
     from: '1411-07-19'

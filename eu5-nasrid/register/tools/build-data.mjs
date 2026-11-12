@@ -75,6 +75,7 @@ if (mapFile && fs.existsSync(path.join(ROOT, mapFile))) {
 }
 
 /* the realm's outline at every reckoning (for the story's map), and the land behind it */
+const realmsAt = {};
 const outlines = {}, shapes = [""], shapeIndex = new Map([["", 0]]);
 const shape = (d) => { if (!shapeIndex.has(d)) { shapeIndex.set(d, shapes.length); shapes.push(d); } return shapeIndex.get(d); };
 let land = "";
@@ -85,10 +86,50 @@ if (campaign.map?.realms) {
     const all = JSON.parse(fs.readFileSync(file, "utf8"));
     const join = (tags) => tags.map((t) => all[t]?.d ?? "").join("");
     const mine = new Set([...(r.map?.ours ?? []), ...(r.map?.subjects ?? [])]);
+    // who answers to whom at this reckoning, where the campaign keeps a list of the powers
+    const wfile = campaign.map.world ? path.join(ROOT, campaign.map.world.replace("{date}", r.date)) : null;
+    const powers = wfile && fs.existsSync(wfile) ? JSON.parse(fs.readFileSync(wfile, "utf8")).powers ?? {} : {};
+    const under = (tags) => tags.flatMap((t) => (powers[t]?.subjects ?? []).map((x) => x[0])).filter((t) => !mine.has(t) && !tags.includes(t));
+    realmsAt[r.date] = { all, under, mine };
     // borders change rarely, so each distinct outline is stored once and the reckonings point at it
-    outlines[r.date] = { o: shape(join(r.map?.ours ?? [])), s: shape(join(r.map?.subjects ?? [])), a: shape(join(r.map?.allies ?? [])),
-      r: (campaign.map.rivals ?? []).map((v) => shape(join(v.tags.filter((t) => !mine.has(t))))) };
+    const rivals = campaign.map.rivals ?? [];
+    outlines[r.date] = { o: shape(join(r.map?.ours ?? [])), s: shape(join(r.map?.subjects ?? [])), a: shape(join(r.map?.allies ?? [])), as: shape(join(under(r.map?.allies ?? []))),
+      r: rivals.map((v) => shape(join(v.tags.filter((t) => !mine.has(t))))), rs: rivals.map((v) => shape(join(under(v.tags.filter((t) => !mine.has(t) && all[t]))))),
+      rn: rivals.map((v) => v.tags.filter((t) => !mine.has(t) && all[t]).map((t) => v.names?.[t] ?? v.name)[0] ?? "") };
     if (r === last) land = Object.values(all).map((v) => v.d).join("");
+  }
+}
+
+/* each war before and after: both sides on the map at the reckoning before it began and the one after it ended */
+const warmaps = {};
+if (campaign.map?.names && Object.keys(realmsAt).length) {
+  const tagNames = JSON.parse(fs.readFileSync(path.join(ROOT, campaign.map.names), "utf8"));
+  const alias = campaign.map.aliases ?? {};
+  const strip = (x) => x.normalize("NFD").replace(/[\u0300-\u036f\u02bf\u02be]/g, "").toLowerCase();
+  const byName = Object.entries(tagNames).map(([t, v]) => [strip(v.name ?? ""), t]).filter(([n]) => n.length >= 4).sort((a, b) => b[0].length - a[0].length);
+  const dates = reckonings.map((r) => r.date);
+  const tagsIn = (list, all) => {
+    const out = new Set();
+    for (const raw of list ?? []) {
+      let text = " " + strip(raw) + " ";
+      for (const [n, t] of Object.entries(alias)) if (text.includes(strip(n))) { out.add(t); text = text.replace(strip(n), " "); }
+      for (const [n, t] of byName) if (all[t] && new RegExp(`[^a-z]${n.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}[^a-z]`).test(text)) { out.add(t); text = text.replace(n, " "); }
+    }
+    return [...out];
+  };
+  for (const t of threads.filter((x) => x.kind === "war" && x.sides && x.from)) {
+    const lists = Object.values(t.sides);
+    const mineFirst = t.sides.ours ? 0 : lists.findIndex((l) => l.some((x) => /Andalus|Granada/.test(x)));
+    const ours = lists[mineFirst < 0 ? 0 : mineFirst], theirs = lists[mineFirst < 0 ? 1 : 1 - mineFirst];
+    const before = dates.filter((d) => d <= t.from).at(-1) ?? dates[0], after = t.to ? dates.find((d) => d >= t.to) ?? dates.at(-1) : dates.at(-1);
+    const at = (date) => {
+      const R = realmsAt[date]; if (!R) return null;
+      const join = (tags) => tags.map((x) => R.all[x]?.d ?? "").join("");
+      const f = tagsIn(ours, R.all).filter((x) => !R.mine.has(x)), e = tagsIn(theirs, R.all).filter((x) => !R.mine.has(x));
+      return { date, f: shape(join(f)), fs: shape(join(R.under(f).filter((x) => !e.includes(x)))), e: shape(join(e)), es: shape(join(R.under(e).filter((x) => !f.includes(x)))), n: [f.length, e.length] };
+    };
+    const a = at(before), b = at(after);
+    if (a && b && (a.n[1] || b.n[1])) warmaps[t.id] = { before: a, after: b, open: !t.to };
   }
 }
 
@@ -136,5 +177,5 @@ if (campaign.map?.layers) {
 
 if (notes.length) console.log(notes.slice(0, 8).map((n) => "note: " + n).join("\n") + (notes.length > 8 ? `\n… and ${notes.length - 8} more notes` : ""));
 if (errors.length) { console.error(errors.map((e) => "error: " + e).join("\n")); process.exit(1); }
-fs.writeFileSync(path.join(ROOT, "src", "data.json"), JSON.stringify({ campaign, threads, cast, places, reckonings, beats, tellings, map, outlines, shapes, land, neighbours, mosaic }));
+fs.writeFileSync(path.join(ROOT, "src", "data.json"), JSON.stringify({ campaign, threads, cast, places, reckonings, beats, tellings, map, outlines, shapes, land, neighbours, mosaic, warmaps }));
 console.log(`register: ${reckonings.length} reckonings, ${beats.length} beats, ${tellings.length} tellings, ${Object.keys(cast).length} cast, ${threads.length} threads${map ? `, map of ${last.date} (${map.realms.length} realms)` : ""}`);

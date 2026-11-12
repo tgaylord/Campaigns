@@ -17,6 +17,10 @@ traits:
   - entrepreneur
   - hardy_warrior
   - incorruptible
+stats:
+  adm: 100
+  dip: 68.6
+  mil: 100
 drives:
   - from: '1351-01-19'
     text: >-

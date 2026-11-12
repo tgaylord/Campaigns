@@ -12,6 +12,10 @@ traits:
   - unmotivated
   - well_advised
   - ruthless
+stats:
+  adm: 84
+  dip: 56
+  mil: 70
 stations:
   - role: dīwān
     from: '1412-09-01'

@@ -6,6 +6,10 @@ died: '1373-03-13'
 roles:
   - admiral of Castile
   - general
+stats:
+  adm: 88
+  dip: 79
+  mil: 84
 drives:
   - from: '1339-05-24'
     text: The ablest man at court, given the host against Arghūn at twenty-five.

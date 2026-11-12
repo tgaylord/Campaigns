@@ -20,6 +20,10 @@ traits:
   - goal_oriented
   - just
   - greedy
+stats:
+  adm: 47
+  dip: 100
+  mil: 38
 drives:
   - from: '1374-12-01'
     text: 'His mother Duʿāʾ''s son: she wanted the costly tutors for him alone.'

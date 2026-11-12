@@ -4,6 +4,10 @@ house: Naṣrid
 born: '1305-01-01'
 died: '1363-05-18'
 father: muhammad-ibn-faraj
+stats:
+  adm: 35
+  dip: 29
+  mil: 50
 note: ' Died 1363-05-18 (save of 24 October 1414).'
 game:
   id: 3544

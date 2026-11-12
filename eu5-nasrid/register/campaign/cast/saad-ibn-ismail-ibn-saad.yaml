@@ -6,6 +6,10 @@ born: '1392-06-17'
 died: '1443-09-03'
 father: ismail-ibn-saad
 mother: aisha-ottoman
+stats:
+  adm: 83
+  dip: 43
+  mil: 61
 stations:
   - role: general
     from: '1441-09-02'

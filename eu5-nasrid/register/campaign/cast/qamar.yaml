@@ -5,6 +5,10 @@ born: '1308-01-01'
 died: '1366-02-06'
 roles:
   - mother of Ismāʿīl ibn Ismāʿīl
+stats:
+  adm: 58
+  dip: 55
+  mil: 35
 game:
   id: 3534
   name: Moon

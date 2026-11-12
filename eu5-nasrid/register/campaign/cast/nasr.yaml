@@ -9,6 +9,10 @@ reigns:
     to: '1314-02-08'
 roles:
   - sultan
+stats:
+  adm: 39
+  dip: 39
+  mil: 55
 game:
   id: 3528
   name: Nasr

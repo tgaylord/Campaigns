@@ -10,6 +10,10 @@ roles:
   - in the dīwān
 traits:
   - child_gregarious
+stats:
+  adm: 17
+  dip: 45
+  mil: 23
 drives:
   - from: '1344-10-01'
     text: Her marriage to Yūsuf helps bring about the royal harem law.

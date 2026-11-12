@@ -2,6 +2,10 @@ name: Alfonso de Oñate
 born: '1321-08-14'
 roles:
   - Castilian general
+stats:
+  adm: 53
+  dip: 54
+  mil: 89
 note: >-
   The Castilian general of the War of the Aragonese Restoration. He routed the Catalans at Chelva (12 December
   1375) and beat the Emperor himself there on 14 January 1376, then lost his army to him at Agramunt on 1

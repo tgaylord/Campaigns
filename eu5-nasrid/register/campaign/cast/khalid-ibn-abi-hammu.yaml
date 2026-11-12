@@ -6,6 +6,10 @@ roles:
   - ruler of the Ṭāʾifa of Burghush (from 1437)
 traits:
   - child_prodigy
+stats:
+  adm: 69
+  dip: 75
+  mil: 55
 stations:
   - role: admiral
     from: '1440-01-27'

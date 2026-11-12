@@ -9,6 +9,10 @@ roles:
   - member of the dīwān (from 1429)
 traits:
   - architect
+stats:
+  adm: 75
+  dip: 79
+  mil: 70
 drives:
   - from: '1408-08-05'
     text: 'Raised beside his half-brother Ismāʿīl, both gifted: a bond and an alliance from childhood.'

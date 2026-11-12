@@ -7,6 +7,10 @@ roles:
   - regent
 traits:
   - babbling_buffoon
+stats:
+  adm: 38
+  dip: 57
+  mil: 34
 stations:
   - role: regent
     from: '1363-08-02'

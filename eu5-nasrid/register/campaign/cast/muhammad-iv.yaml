@@ -10,6 +10,10 @@ reigns:
     to: '1333-08-25'
 roles:
   - sultan
+stats:
+  adm: 41
+  dip: 50
+  mil: 25
 game:
   id: 3535
   name: Muhammad

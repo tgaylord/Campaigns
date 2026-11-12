@@ -6,6 +6,10 @@ roles:
 traits:
   - born_to_the_saddle
   - level_headed
+stats:
+  adm: 68.9
+  dip: 40.5
+  mil: 49.8
 stations:
   - role: general
     from: '1383-03-11'

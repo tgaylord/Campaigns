@@ -8,6 +8,10 @@ father: saad-ibn-yusuf
 mother: aiman-mamluk
 roles:
   - member of the dīwān (from 1405)
+stats:
+  adm: 9
+  dip: 5
+  mil: 10
 stations:
   - role: general
     from: '1398-03-24'

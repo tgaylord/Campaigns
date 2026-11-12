@@ -15,6 +15,10 @@ traits:
   - extortioner
   - worldly
   - scholar
+stats:
+  adm: 15
+  dip: 20
+  mil: 16
 drives:
   - from: '1398-09-03'
     text: 'Judged unfit to rule at twelve: stubborn, slow in the dīwān.'

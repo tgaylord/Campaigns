@@ -11,6 +11,10 @@ traits:
   - offensive_planner
   - calm
   - bubonic_plague_trait
+stats:
+  adm: 49.7
+  dip: 44.8
+  mil: 68.3
 drives:
   - from: '1351-01-01'
     text: A zealot who means to have al-Andalus back for Fās, and annuls Morocco's treaties with Granada.

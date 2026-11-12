@@ -4,6 +4,10 @@ house: Naṣrid
 born: '1444-10-24'
 father: yusuf-ibn-ismail-ibn-muhammad
 mother: amie-of-mali
+stats:
+  adm: 5
+  dip: 3
+  mil: 9
 note: Second son of Prince Yūsuf by Amie of Mālī; born at Niani on 24 October 1444. (autosave of 1 February 1447)
 game:
   id: 96329

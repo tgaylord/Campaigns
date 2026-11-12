@@ -9,6 +9,10 @@ traits:
   - kind_hearted
   - babbling_buffoon
   - craven
+stats:
+  adm: 52
+  dip: 39
+  mil: 65
 stations:
   - role: general
     from: '1441-09-02'

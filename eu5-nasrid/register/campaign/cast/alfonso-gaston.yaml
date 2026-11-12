@@ -5,6 +5,10 @@ roles:
 traits:
   - drunkard
   - naive
+stats:
+  adm: 15
+  dip: 35
+  mil: 59
 stations:
   - role: admiral
     from: '1422-11-26'

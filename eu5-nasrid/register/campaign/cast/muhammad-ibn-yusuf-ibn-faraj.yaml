@@ -6,6 +6,10 @@ roles:
   - member of the dīwān
 traits:
   - fickle
+stats:
+  adm: 42
+  dip: 50
+  mil: 72
 stations:
   - role: dīwān
     from: '1408-05-29'

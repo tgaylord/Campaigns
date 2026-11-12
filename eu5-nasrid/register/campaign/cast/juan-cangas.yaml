@@ -2,6 +2,10 @@ name: Juan Cangas
 born: '1399-07-07'
 roles:
   - general of the Ṭāʾifa of Liyūn
+stats:
+  adm: 43
+  dip: 73
+  mil: 87
 stations:
   - role: general
     from: '1444-01-01'

@@ -7,6 +7,10 @@ roles:
   - king of Naples
 traits:
   - scholar
+stats:
+  adm: 37
+  dip: 65
+  mil: 42
 stations:
   - role: general
     from: '1405-10-02'

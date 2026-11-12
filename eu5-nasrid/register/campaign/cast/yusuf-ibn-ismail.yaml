@@ -10,6 +10,10 @@ roles:
 traits:
   - industrious
   - intricate_web_weaver
+stats:
+  adm: 56
+  dip: 30
+  mil: 63
 stations:
   - role: general
     from: '1423-11-02'

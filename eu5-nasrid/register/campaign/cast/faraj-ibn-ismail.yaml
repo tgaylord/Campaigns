@@ -9,6 +9,10 @@ mother: alwa
 roles:
   - in the dīwān
   - heir
+stats:
+  adm: 51
+  dip: 32
+  mil: 46
 drives:
   - from: '1337-08-18'
     text: The sultan's elder brother and heir, strengthening the government from the dīwān.

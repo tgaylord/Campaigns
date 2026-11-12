@@ -4,6 +4,10 @@ born: '1315-05-21'
 died: '1368-07-31'
 roles:
   - ruler of the Ṭāʾifa of Balansiyya
+stats:
+  adm: 46
+  dip: 27
+  mil: 52
 stations:
   - role: admiral
     from: '1353-02-16'

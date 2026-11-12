@@ -5,6 +5,10 @@ born: '1342-05-10'
 died: '1394-03-20'
 roles:
   - ḥājib of the Ṭāʾifa of Qaṭalūniya
+stats:
+  adm: 48
+  dip: 33
+  mil: 62
 stations:
   - role: general
     from: '1389-02-09'

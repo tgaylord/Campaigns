@@ -9,6 +9,10 @@ roles:
 traits:
   - just
   - zealot
+stats:
+  adm: 58
+  dip: 41
+  mil: 72
 stations:
   - role: admiral
     from: '1415-04-02'

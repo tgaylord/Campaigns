@@ -3,6 +3,10 @@ roles:
   - rebel lord of Zamora (1420)
 traits:
   - defensive_planner
+stats:
+  adm: 53
+  dip: 48
+  mil: 66
 stations:
   - role: general
     from: '1440-10-24'

@@ -5,6 +5,10 @@ roles:
   - of the burghers
 traits:
   - drunkard
+stats:
+  adm: 68
+  dip: 74
+  mil: 11
 note: >-
   A Sephardi Jew of Gharnāṭa, of the burghers' estate; at court by 16 November 1337. Died on 14 May 1339: he
   fell down the stairs.

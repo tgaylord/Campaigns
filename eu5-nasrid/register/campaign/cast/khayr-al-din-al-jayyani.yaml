@@ -5,6 +5,10 @@ born: '1351-01-01'
 roles:
   - courtier
   - explorer
+stats:
+  adm: 53
+  dip: 93
+  mil: 35
 note: >-
   An Andalusī of Jayyān, Sunni, a courtier at Gharnāṭa, forty in 1391 (birth year estimated from his age). In
   1391, under the trade contract with Mali, he was sent to chart the way to Mali along the Atlantic coast

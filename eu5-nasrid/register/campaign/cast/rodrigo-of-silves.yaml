@@ -4,6 +4,10 @@ born: '1332-10-22'
 died: '1375-01-24'
 roles:
   - ruler of the Ṭāʾifa of al-Gharb
+stats:
+  adm: 68
+  dip: 58
+  mil: 88
 stations:
   - role: admiral
     from: '1366-05-13'

@@ -3,6 +3,10 @@ born: '1412-03-25'
 father: fernando-son-of-pedro
 roles:
   - heir of Castile (to 1430)
+stats:
+  adm: 45
+  dip: 68
+  mil: 37
 stations:
   - role: dīwān
     from: '1433-10-03'

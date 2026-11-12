@@ -8,6 +8,10 @@ roles:
 traits:
   - deceitful
   - babbling_buffoon
+stats:
+  adm: 37
+  dip: 41
+  mil: 59
 stations:
   - role: dīwān
     from: '1402-02-03'

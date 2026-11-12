@@ -10,6 +10,10 @@ roles:
   - king of Portugal
 traits:
   - worldly
+stats:
+  adm: 53
+  dip: 42
+  mil: 42
 stations:
   - role: admiral
     from: '1359-04-02'

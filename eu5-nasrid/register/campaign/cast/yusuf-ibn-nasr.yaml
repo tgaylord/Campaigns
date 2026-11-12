@@ -3,6 +3,10 @@ arabic: يوسف بن نصر
 house: Naṣrid
 born: '1175-01-01'
 died: '1232-01-01'
+stats:
+  adm: 68
+  dip: 48
+  mil: 42
 game:
   id: 3523
   name: Yusuf

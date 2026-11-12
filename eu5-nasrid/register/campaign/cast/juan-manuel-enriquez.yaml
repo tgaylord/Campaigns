@@ -5,6 +5,10 @@ born: '1313-03-29'
 died: '1370-06-03'
 roles:
   - ruler of the Ṭāʾifa of Mursiyya
+stats:
+  adm: 78
+  dip: 14
+  mil: 83
 stations:
   - role: general
     from: '1368-12-02'

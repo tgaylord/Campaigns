@@ -8,6 +8,10 @@ roles:
   - Mamlūk sultan of Egypt
 traits:
   - loose_lips
+stats:
+  adm: 37
+  dip: 70
+  mil: 37
 stations:
   - role: admiral
     from: '1375-06-23'

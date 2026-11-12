@@ -6,6 +6,10 @@ died: '1362-01-16'
 father: muhammad-ibn-faraj
 roles:
   - in the dīwān
+stats:
+  adm: 33
+  dip: 70
+  mil: 49
 stations:
   - role: dīwān
     from: '1337-04-01'

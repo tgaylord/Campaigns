@@ -8,6 +8,10 @@ father: yusuf-i
 mother: sayyida-of-fezzan
 traits:
   - child_gallant
+stats:
+  adm: 33
+  dip: 71
+  mil: 62
 stations:
   - role: heir
     from: '1364-09-11'

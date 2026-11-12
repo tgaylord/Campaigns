@@ -9,6 +9,10 @@ reigns:
     to: '1309-03-14'
 roles:
   - sultan
+stats:
+  adm: 43
+  dip: 37
+  mil: 58
 game:
   id: 3526
   name: Muhammad

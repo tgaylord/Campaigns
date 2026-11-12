@@ -9,6 +9,10 @@ roles:
   - ruler of the Ṭāʾifa of Liyūn
 traits:
   - architectural_visionary
+stats:
+  adm: 47
+  dip: 64
+  mil: 35
 stations:
   - role: general
     from: '1415-03-18'

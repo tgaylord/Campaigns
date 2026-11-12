@@ -6,6 +6,10 @@ died: '1415-03-15'
 father: ismail-ibn-ismail
 roles:
   - ruler of the Ṭāʾifa of Shalamanka
+stats:
+  adm: 52
+  dip: 49
+  mil: 53
 stations:
   - role: general
     from: '1404-05-02'

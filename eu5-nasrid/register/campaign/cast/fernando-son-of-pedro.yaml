@@ -8,6 +8,10 @@ roles:
 traits:
   - glory_seeker
   - malevolent
+stats:
+  adm: 65
+  dip: 71
+  mil: 46
 stations:
   - role: general
     from: '1432-02-06'

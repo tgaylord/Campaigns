@@ -24,6 +24,14 @@ map:
     - 5900
     - 1100
   names: ../data/world/tags.json
+  aliases:
+    al-Andalus: GRA
+    Granada: GRA
+    Papal States: PAP
+    Mamluks: MAM
+    Egypt: MAM
+    Angevins: ANV
+    Angevin: ANV
   world: ../data/world/{date}.json
   rivals:
     - name: Castile
@@ -50,10 +58,13 @@ map:
       color:
         - '#6d4bb5'
         - '#a48be0'
-    - name: England, later the Angevins
+    - name: England
       tags:
         - ENG
         - ANV
+      names:
+        ENG: England
+        ANV: The Angevins
       color:
         - '#b3261e'
         - '#e0655c'

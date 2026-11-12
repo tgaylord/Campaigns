@@ -10,6 +10,10 @@ roles:
   - member of the dīwān
 traits:
   - honest
+stats:
+  adm: 75
+  dip: 42
+  mil: 43
 stations:
   - role: dīwān
     from: '1412-01-02'

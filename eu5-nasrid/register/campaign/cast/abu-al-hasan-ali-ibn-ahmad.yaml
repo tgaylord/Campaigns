@@ -5,6 +5,10 @@ born: '1412-09-03'
 father: ahmad-ibn-ismail-ibn-saad
 roles:
   - general
+stats:
+  adm: 56
+  dip: 60
+  mil: 37
 stations:
   - role: general
     from: '1429-12-02'

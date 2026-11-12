@@ -6,6 +6,10 @@ born: '1320-01-01'
 died: '1382-11-02'
 father: ismail-i
 mother: alwa
+stats:
+  adm: 48
+  dip: 54
+  mil: 61
 stations:
   - role: dīwān
     from: '1366-06-11'

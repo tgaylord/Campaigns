@@ -5,6 +5,10 @@ house: Ottoman
 born: '1375-05-15'
 roles:
   - wife of the crown prince
+stats:
+  adm: 66
+  dip: 37
+  mil: 47
 note: >-
   An Ottoman princess, Turkish by culture, married in May 1391 to the crown prince Ismāʿīl ibn Saʿd as his
   second wife. Mother of Saʿd (born 17 June 1392) and Aḥmad (born 21 October 1393) (save of 2 January 1394).

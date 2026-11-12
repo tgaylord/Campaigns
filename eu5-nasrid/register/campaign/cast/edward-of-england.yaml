@@ -8,6 +8,10 @@ traits:
   - embezzler
   - battlefield_medic
   - silver_tongue
+stats:
+  adm: 55
+  dip: 51
+  mil: 67
 stations:
   - role: admiral
     from: '1378-03-31'

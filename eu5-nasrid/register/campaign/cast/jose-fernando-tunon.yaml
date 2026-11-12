@@ -2,6 +2,10 @@ name: José Fernando Tuñón
 born: '1385-11-13'
 roles:
   - king of Asturias (from 1420)
+stats:
+  adm: 43
+  dip: 67
+  mil: 59
 stations:
   - role: admiral
     from: '1422-10-01'

@@ -9,6 +9,10 @@ traits:
   - tactical_genius
   - cruel
   - strategist
+stats:
+  adm: 86
+  dip: 59
+  mil: 78
 stations:
   - role: dīwān
     from: '1357-04-13'

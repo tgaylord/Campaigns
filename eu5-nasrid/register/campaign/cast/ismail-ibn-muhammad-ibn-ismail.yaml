@@ -8,6 +8,10 @@ mother: magdalena-de-borja
 roles:
   - heir of al-Andalus (from 1429)
   - member of the dīwān (from 1429)
+stats:
+  adm: 70
+  dip: 73
+  mil: 63
 drives:
   - from: '1408-08-05'
     text: 'Raised beside his half-brother Aḥmad, both gifted: a bond and an alliance from childhood.'

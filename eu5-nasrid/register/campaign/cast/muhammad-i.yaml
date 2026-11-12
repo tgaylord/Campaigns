@@ -13,6 +13,10 @@ traits:
   - architectural_visionary
   - expansionist
   - intricate_web_weaver
+stats:
+  adm: 66
+  dip: 66
+  mil: 66
 game:
   id: 3524
   name: Muhammad

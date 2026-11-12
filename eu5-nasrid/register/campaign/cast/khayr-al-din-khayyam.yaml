@@ -6,6 +6,10 @@ roles:
   - mercenary captain
 traits:
   - defensive_planner
+stats:
+  adm: 75
+  dip: 49
+  mil: 69
 note: >-
   An Andalusī and a Muslim, captain of a mercenary company of Granadan jinetes and frontier horse, a general
   since 1426. In the Crusade of 835 he fought in the crusaders' pay, commanding the army of Campagna and

@@ -126,3 +126,12 @@ should arrive as a thread with its own picture, as the estates did.
 - The writer's notes were attached to the telling they named; some cover several tellings.
 - The long notes on people are carried as they were. In this model they should shrink to a few lines, since
   the record now does their work.
+
+## Pass seven: vassals, fading battles, wars before and after, character
+
+- **Atlas, who holds what.** Allies' and rivals' own vassals are drawn in a paler wash of the same colour, as the crown's ṭāʾifas already were. A rival that changes its name is one entry in `campaign.yaml` with several tags and a name per tag, so the legend reads "England" until the save in which it becomes "The Angevins".
+- **Atlas, battles.** A battle is bright while its war is being fought and fades over the dozen years after the war ends, down to a faint mark. This year's battles are largest.
+- **Enlarged map.** The enlarged atlas fits the whole frame inside the box instead of cropping to fill it, so no lens loses the north of Iberia.
+- **Wars.** Under the battle map, each war with sides that could be matched to realms shows the land before and after: the crown, its subjects, its side and the other side, with each side's vassals paler. Sides are matched by name through `aliases`, so a minor lord can be missing.
+- **People.** The three measures (Rule, Counsel, War; out of 100) are drawn as gauges beside the traits as chips. Childhood traits are dashed.
+- **Story.** Each book folds to its title, span and a one-line tally. The choice is remembered in the browser; a link to a book opens it.

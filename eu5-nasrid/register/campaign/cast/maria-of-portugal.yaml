@@ -7,6 +7,10 @@ died: '1367-10-04'
 roles:
   - queen of Portugal
   - queen consort of Castile
+stats:
+  adm: 40
+  dip: 50
+  mil: 20
 note: >-
   Queen of Portugal in her own right (from 29 January 1342) and consort of Alfonso XI of Castile, the two
   crowns joined by their marriage. She died of a sudden illness on 4 October 1367, and her son Jerónimo,

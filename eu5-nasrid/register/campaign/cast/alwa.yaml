@@ -5,6 +5,10 @@ born: '1298-01-01'
 died: '1351-06-22'
 roles:
   - mother of Muḥammad IV, Faraj ibn Ismāʿīl, Fāṭima bint Ismāʿīl, Maryam bint Ismāʿīl
+stats:
+  adm: 62
+  dip: 73
+  mil: 48
 note: ' Died 1351-06-22 (save of 24 October 1414).'
 game:
   id: 3532

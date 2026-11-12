@@ -6,6 +6,10 @@ died: '1398-07-24'
 father: ismail-ibn-muhammad
 roles:
   - explorer (from 1396)
+stats:
+  adm: 51
+  dip: 70
+  mil: 60
 stations:
   - role: explorer
     from: '1396-02-10'

@@ -7,6 +7,10 @@ father: faraj-ibn-ismail
 mother: shama-sahara
 roles:
   - ruler of the Ṭāʾifa of Qūnka
+stats:
+  adm: 45
+  dip: 37
+  mil: 63
 stations:
   - role: general
     from: '1398-03-22'

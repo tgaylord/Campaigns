@@ -10,6 +10,10 @@ traits:
   - bold_fighter
   - inspirational_leader_general
   - just
+stats:
+  adm: 90
+  dip: 90
+  mil: 85
 stations:
   - role: general
     from: '1340-09-15'

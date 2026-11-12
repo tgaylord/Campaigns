@@ -5,6 +5,10 @@ roles:
   - king of England (from 1423)
   - king of France (from 1428)
   - Angevin Emperor (from 1429)
+stats:
+  adm: 56
+  dip: 38
+  mil: 47
 stations:
   - role: dīwān
     from: '1422-11-08'
