@@ -7,6 +7,7 @@ people: [saad-ibn-yusuf, pedro-of-castile, jeronimo-of-castile]
 places: [al-ushbuna, majrit, shalamanka, qunka, yabura, shantarin, tulaytula, ishbiliyya, balansiyya]
 wars: [war-of-the-league]
 sources: [1389-05-01-castile-portugal-split, 1395-06-18-battle-portalegre, 1395-06-22-peace-castile-portugal]
+verse: "24:55"
 ---
 
 With Qashtāla's armies gone, the war passed to Portugal. Its king was [Jerónimo](person:jeronimo-of-castile), fifty-two, who had once worn the crowns of Qashtāla and Portugal together and had kept only the second when they parted six years before. He had lost a war to the Emperor already, in 779, and he had no wish to lose another. In the spring he gathered every man Portugal could raise, nearly fifteen thousand of them, and waited on the Alentejo border at Portalegre.

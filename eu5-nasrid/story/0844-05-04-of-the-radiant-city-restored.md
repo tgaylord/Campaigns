@@ -6,6 +6,7 @@ kind: chronicle
 people: [muhammad-ibn-ismail-ibn-saad]
 places: [qurtuba, ishbiliyya]
 sources: [1440-10-01-the-palace-city-of-qurtuba, 1439-07-15-the-emperor-a-scholar, 1437-01-01-cultural-hegemon]
+verse: "26:128-129"
 ---
 
 Three miles west of [Qurṭuba](place:qurtuba), on the slope where the Sierra Morena comes down to the plain, the caliph ʿAbd al-Raḥmān III had built a city for himself and named it Madīnat al-Zahrāʾ, the Radiant City. It had palaces of marble and onyx, a hall whose roof was said to be made of gold and silver tiles, gardens watered from the mountains, a mosque, a mint and barracks for the caliph's guard. Ambassadors from Constantinople and the German emperor had been received there and told to wait in halls designed to make them feel small. It had stood for less than eighty years. In the fitna of the eleventh century, when the caliphate tore itself apart, the Berber soldiers sacked it, and for four hundred years its stones had been carried off to build other men's houses. By the time the house of Naṣr took Qurṭuba back, it was a field of broken columns that the shepherds of the Sierra used as a sheepfold.

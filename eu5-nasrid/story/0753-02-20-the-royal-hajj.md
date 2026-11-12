@@ -6,6 +6,7 @@ kind: chronicle
 people: [yusuf-i, faraj-ibn-ismail]
 places: [gharnata]
 sources: [1351-08-09-hajj-departs, 1351-10-07-hajj-al-qahira, 1352-01-01-hajj-makka, 1352-01-27-plague-gone, 1352-04-07-hajj-return]
+verse: "2:201"
 ---
 
 *And proclaim to the people the Ḥajj; they will come to you on foot and on every lean camel, coming from every distant pass.*

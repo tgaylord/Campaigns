@@ -7,6 +7,7 @@ people: [saad-ibn-yusuf, rodrigo-de-borja]
 places: [al-mariyya, ishbiliyya]
 wars: [crusade-of-806]
 sources: [1404-02-01-the-crusade, 1404-02-09-battle-gulf-of-roses, 1404-05-10-battle-aix, 1404-06-24-battle-mouths-rhone-ii, 1404-08-03-battle-gulf-florent, 1404-07-04-march-on-avignon, 1404-10-01-the-sephardim-of-al-mariyya, 1404-10-10-battle-barjols, 1404-10-20-battle-barjols-ii, 1404-avignon-taken, 1404-10-22-peace-of-avignon]
+verse: "2:190"
 ---
 
 For nearly nine years after the Peace of Ramaḍān the empire fought no one. It was broken from the least likely quarter. On 19 Rajab 806 the Pope at Avignon proclaimed a crusade against al-Andalus, the first ever preached against the empire by name, and declared war on the Ṭāʾifa of Arghūn and its young king [Rodrigo](person:rodrigo-de-borja). The Emperor [Saʿd](person:saad-ibn-yusuf) answered for his ṭāʾifa at once, as he was bound to.

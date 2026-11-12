@@ -7,6 +7,7 @@ people: [yusuf-i, alfonso-xi]
 places: [tilimsan, balansiyya, al-mariyya, jayyan, ishbiliyya]
 wars: [second-moroccan-war]
 sources: [1346-11-22-battle-bay-palma, 1346-12-02-battle-gulf-of-almeria, 1347-01-16-battle-bay-alcudia, 1347-02-13-battle-castellon-de-la-plana, 1347-03-17-battle-sevilla, 1347-05-18-battle-jaen]
+verse: "17:81"
 ---
 
 The winter brought our allies nothing but grief. In the bay of Palma the Aragonese galleys sank the fleets of Bijāya and [Tilimsān](place:tilimsan), fourteen ships sent to the bottom without one Christian hull lost. Off Alcúdia they did the same to the fleet of Qābis. The ships of [Balansiyya](place:balansiyya) were worsted by the Portuguese in the very gulf of [al-Mariyya](place:al-mariyya), within sight of our own shore. On the first of Dhū al-Qaʿda the Ṭāʾifa's little army of two thousand was caught at al-Qasṭalyūn by eight thousand Aragonese and destroyed to the last man. And on the third of Dhū al-Ḥijja the Marīnids, landed at last on our side of the Strait, came before [Ishbīliya](place:ishbiliyya) with fewer than three thousand men. The Castilians met them with nearly twelve thousand and drove them off.

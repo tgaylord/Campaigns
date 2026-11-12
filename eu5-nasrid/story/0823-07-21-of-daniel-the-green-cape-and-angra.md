@@ -6,6 +6,7 @@ kind: chronicle
 people: [ismail-ibn-saad]
 places: [ishbiliyya]
 sources: [1419-09-04-death-of-daniel, 1420-03-09-maps-of-cabo-verde, 1420-08-01-angra, 1415-04-01-maxorata, 1412-01-01-funchal, 1408-10-11-expeditions]
+verse: "17:66"
 ---
 
 On 13 Shaʿbān 822 Daniel died, at fifty. He was the Sephardi who had come to Islam and kept the name he was born with, the first of his people to command a ship of the empire, and in the years after 811 he had taken it further south than any captain of al-Andalus had gone, into the gulf below the bulge of Africa where the coast turns east. He died of a fever at Sanlúcar, where the river of [Ishbīliya](place:ishbiliyya) meets the sea, and the sailors said it was more than most captains who had seen the gulf could hope for, to die in sight of home.

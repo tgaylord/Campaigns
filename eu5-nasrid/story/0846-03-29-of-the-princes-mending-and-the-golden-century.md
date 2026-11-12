@@ -6,6 +6,7 @@ kind: chronicle
 people: [muhammad-ibn-ismail-ibn-saad, ismail-ibn-muhammad-ibn-ismail, ahmad-ibn-muhammad-ibn-ismail]
 places: [ishbiliyya, qurtuba]
 sources: [1442-06-11-the-princes-mend-the-damage, 1442-08-07-the-golden-century, 1442-08-07-establish-a-thalassocracy, 1440-10-01-the-palace-city-of-qurtuba, 1442-06-01-national-assemblies, 1442-06-01-privileges-for-the-burghers]
+verse: "14:7"
 ---
 
 The princes [Ismāʿīl](person:ismail-ibn-muhammad-ibn-ismail) and [Aḥmad](person:ahmad-ibn-muhammad-ibn-ismail) had not been asked about their father's Jamāʿa, but they were left to deal with what came of it, and they did not waste a day. While the umarāʾ were still drafting their protests, the princes rode out to the hinterland. They spoke to the headmen of the villages, the men who had eaten from the Emperor Ismāʿīl's granaries and remembered who had built them, and they told them that the crown had not forgotten the countryside for the cities. The commoners had no love for the merchants, but they had less for the lords, and the hinterland stayed quiet. Then the princes went to the ʿulamāʾ. They could not undo the merchants' seats, but they could promise the scholars that when the heir Ismāʿīl came to the throne, every right the ʿulamāʾ held would be confirmed by his own hand on the day of his accession. The ʿulamāʾ took the promise, and grumbled, and stayed.

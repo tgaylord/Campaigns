@@ -7,6 +7,7 @@ people: [yusuf-i, ibn-al-khatib]
 places: [jumalla, shatiba, balansiyya, daniya, al-qant, alsh, qandiya, al-quy, ayura, bunyul, shalba, liriya, uryula, gharnata]
 wars: [war-on-aragon]
 sources: [1340-07-27-jumalla-falls, 1340-07-27-hunger, 1340-08-11-bluff, 1340-08-11-peace-aragon, 1340-08-11-territory, 1340-08-14-demobilised]
+verse: "3:26"
 ---
 
 On the first of Ṣafar in the year 741 [Jumalla](place:jumalla) fell to the main army, the same town where the war had first drawn blood a year before. The host had won every battle it fought, but it was starving. Each day the quartermasters found less to put in the pot, and the road home was still closed at Mursiyya.

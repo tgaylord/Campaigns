@@ -7,6 +7,7 @@ people: [muhammad-ibn-ismail-ibn-saad, pope-fabrizio-ricci, berenguer-ramon-de-m
 places: [ishbiliyya]
 wars: [crusade-of-835]
 sources: [1432-05-17-battle-terracina, 1432-06-01-battle-viterbo, 1432-06-27-battle-cape-mondego, 1432-07-27-peace-with-the-pope, 1432-07-the-decree-on-the-taifas]
+verse: "10:99"
 ---
 
 By the summer of 835 the crusade had run out of crusaders. The Ḥafṣid landings in Lazio ended at Terracina, where the Pope's army caught two hundred and seventy Tunisians and killed them all, and the Moroccans who had marched on Viterbo were beaten off by an army seven times their size. But the Pope's army could not stay in Lazio. Since Rajab the lords of Mantua and Milan had been at war with Faenza, his vassal, and the Pope, Genoa and every subject of Genoa were bound to defend it. The court of [Ishbīliya](place:ishbiliyya) watched the princes of Christendom fight a crusade against al-Andalus with one hand and each other with the other, and found it very satisfying.

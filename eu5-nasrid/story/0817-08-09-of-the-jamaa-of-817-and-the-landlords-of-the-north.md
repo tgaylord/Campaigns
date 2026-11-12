@@ -6,6 +6,7 @@ kind: chronicle
 people: [ismail-ibn-saad, saad-ibn-yusuf]
 places: [banbaluna, ishbiliyya, qurtuba]
 sources: [1410-09-01-catalan-privileges-return, 1414-10-24-rising-at-pamplona, 1414-10-24-jamaa-of-the-mercenaries, 1414-10-24-the-umara-mutinous, 1402-08-the-umara, 1402-09-jamaa-of-the-markets]
+verse: "12:76"
 ---
 
 In Shaʿbān 817 a handful of malcontents rose at [Banbalūna](place:banbaluna) and were put down before the news of their rising had crossed the Ebro. It was nothing, and the Emperor [Ismāʿīl](person:ismail-ibn-saad) made a great deal of it. He told the dīwān that the north was restless, that the empire's armies must be ready to march at a word, and that the old ways of raising them would not serve. He called a Jamāʿa at [Ishbīliya](place:ishbiliyya) for 9 Shaʿbān.

@@ -7,6 +7,7 @@ people: [saad-ibn-yusuf, dolca-of-murcia, bernarda-of-murcia, ismail-ibn-saad, f
 places: [mursiyya, barshaluna, qurtuba, gharnata]
 wars: [war-of-the-upper-march]
 sources: [1375-03-15-the-new-taifas, 1375-03-16-murcia-into-the-crown, 1375-03-16-bernarda-betrothed, 1375-03-16-two-new-taifas, 1375-03-16-restoration-of-al-andalus, 1375-03-17-maryam-to-the-diwan, 1375-04-15-catalan-marriage]
+verse: "7:128"
 ---
 
 The ink on the peace with Arghūn was hardly dry when our lord [Saʿd](person:saad-ibn-yusuf) reordered the realm. He did it in three parts, and the court said afterwards that the third was the one the first two had been for.
@@ -23,4 +24,4 @@ The dīwān changed with the realm. The next day the Emperor's younger sister [M
 
 Much work remained. The bureaucracy would have to stretch over the new lands, and Qashtāla watched the consolidation greedily from behind a truce with three months left to run. But the empire had been proclaimed, and it was not waiting for the Christians' permission.
 
-*Say: O Allāh, Owner of sovereignty, You give sovereignty to whom You will, and You take sovereignty away from whom You will.*
+*Indeed, the earth belongs to Allāh. He causes to inherit it whom He wills of His servants, and the best outcome is for the righteous.*

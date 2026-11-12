@@ -6,6 +6,7 @@ kind: chronicle
 people: [yusuf-i]
 places: [qurtuba, gharnata]
 sources: [1348-05-15-black-death-arrives, 1348-plague-segregation, 1348-plague-scapegoats]
+verse: "4:78"
 ---
 
 On the fifteenth of Ṣafar in the year 749 the thing the merchants had spoken of two years before came ashore. No chronicle records the name of the ship that carried it. It came in the spring with the trade from the east, as the sultan had said it would, while the host was far away on the plains of [Qurṭuba](place:qurtuba). Within days the physicians of the new houses of healing were sending word up to the Alhambra: the swellings, the fever, the black blood. The *ṭāʿūn* had come to al-Andalus.

@@ -6,6 +6,7 @@ kind: chronicle
 people: [saad-ibn-yusuf, ismail-ibn-saad, khayr-al-din-al-jayyani]
 places: [al-ushbuna, ishbiliyya, qusantina, qarmuna, istijja, walba, labla, qadis, ayamunt, sharish, batalyaws, mursiyya, qurtuba, gharnata, malaqa, tulaytula, al-mariyya]
 sources: [1379-04-jamaa-of-the-capital, 1379-11-capital-at-ishbiliya, 1376-12-catalan-shipwrights, 1383-06-17-ismail-admiral, 1387-hammams, 1389-08-09-the-hisba, 1392-11-banking, 1392-02-atlantic-expeditions, 1395-06-22-fifteen-years-of-building]
+verse: "16:14"
 ---
 
 The geographer al-Idrīsī, who wrote for a Norman king in Ṣiqilliya, tells of eight cousins of [al-Ushbūna](place:al-ushbuna) who fitted out a ship with water and food for months and sailed west into the Ocean, to learn what was in it and where it ended. The geographers called that Ocean al-Baḥr al-Muḥīṭ, the Encircling Sea, because it was believed to run around the whole inhabited world. The sailors called it the Sea of Darkness. The cousins found islands, some of them deserted and some of them inhabited, and a people who held them prisoner until a king sent them home blindfolded. The Ushbūnīs called them the Mugharrirūn, the men who were led astray, and named a street of the city after them. Two hundred and fifty years after the Christians took al-Ushbūna, it is a city of al-Andalus again, and the empire has its own Mugharrirūn at sea. This book tells how al-Andalus turned to the Ocean.

@@ -6,6 +6,7 @@ kind: chronicle
 people: [ismail-ibn-saad, diego-villamarin, yusuf-ibn-ismail, ahmad-ibn-yusuf-ibn-ismail, umm-al-fath-bint-muhammad, jadila-bint-saad-ibn-faraj, saad-ibn-yusuf-ibn-saad, yusuf-ibn-saad]
 places: [ishbiliyya, banbaluna, al-ushbuna, tulaytula, qurtuba, gharnata, malaqa, al-mariyya, yabura, shantarin, istijja, uryula]
 sources: [1425-03-25-galicia-takes-asturias, 1426-02-01-truce-with-castile-ends, 1427-04-28-war-in-france, 1425-12-17-umm-al-fath-to-the-diwan, 1428-04-30-death-of-yusuf-of-banbaluna, 1428-05-25-the-spies-go-north, 1428-05-25-the-armouries, 1428-05-25-jamaa-against-primacy, 1428-05-25-primacy-revoked]
+verse: "4:58"
 ---
 
 The petty kings of the mountains did not stay four for long. In Jumādā al-Ūlā 828 [Diego](person:diego-villamarin) of Galicia, the soldier king, made war on Asturias and took all of it, Oviedo and its eight towns, and Galicia stretched from Santiago to Llanes. Three Christian kingdoms were left in the north: Galicia, Navarre on the Basque coast, and what remained of Qashtāla at Santander. In Rabīʿ al-Awwal 829 the truce of the Peace of Rajab ran out, and for the first time in fifteen years nothing bound the empire to peace with any of them. A year later the English went to war with France again, and King Fernando of Qashtāla went with them, until in Jumādā al-Ūlā 831 he made a peace of his own with the French and came home.

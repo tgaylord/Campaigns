@@ -7,6 +7,7 @@ people: [saad-ibn-yusuf, joan-of-aragon, ramadan-of-barqa]
 places: [barshaluna, qurtuba, balansiyya, tarrakuna, jarunda, larida, turtusha, saraqusta, mursiyya, ishbiliyya, gharnata]
 wars: [war-of-the-upper-march]
 sources: [1375-03-15-peace-aragon, 1375-03-15-aragon-falls-apart, 1375-03-15-state, 1375-03-15-the-new-taifas, 1374-11-12-battle-george-bay]
+verse: "8:62"
 ---
 
 By the end of Ramaḍān 776, [Barshalūna](place:barshaluna) had been under siege for two hundred and eighty days. The walls on the landward side were breached in three places, and the townsmen were eating what townsmen eat when the bread is gone. King [Joan](person:joan-of-aragon) knew how few days he had left. He was not finished, though. He still wore the crown of Ṣiqilliya, and the Sicilians had an army of five thousand levies and the fleet that had sunk Barqa's ships off Māliṭa. A king with an island behind him could lose his capital and still go on fighting, and the war might go on for years.

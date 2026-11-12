@@ -7,6 +7,7 @@ people: [maria-of-portugal, peter-of-portugal, fatima-bint-ismail]
 places: [gharnata, fas, runda, marballa, al-jazira-al-khadra, jabal-tariq, balansiyya]
 wars: [moroccan-castilian-war]
 sources: [1340-10-25-portuguese-civil-war, 1340-10-28-moroccan-peace, 1340-11-22-royal-marriage-valencia]
+verse: "3:140"
 ---
 
 While [Gharnāṭa](place:gharnata) won its war in the east, the Marīnids lost theirs in the west. For three years the lion of [Fās](place:fas) had fought Qashtāla to reclaim al-Andalus, and Gharnāṭa, bound by tribute to the one side and by its word to the other, had watched from the mountains and was never drawn in. When the reckoning came, it did not have to share it.

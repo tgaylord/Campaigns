@@ -6,6 +6,7 @@ kind: chronicle
 people: [yusuf-i]
 places: [gharnata, malaqa, al-mariyya]
 sources: [1346-08-01-black-death, 1346-10-18-hospitals]
+verse: "57:22"
 ---
 
 In the month of Rabīʿ al-Thānī in the year 747 the merchants who come by sea from Alexandria and Tūnis brought a tale that the court at first took for a sailors' fable. At Yāyiq, they said, far beyond the Sea of the Khazars in the lands of the Golden Horde, a sickness had risen that no physician could name. It came with swellings under the arm and in the groin and with fever and black blood. A man was well at the dawn prayer and dead by the evening one, and whole towns were given over to the dogs. The sickness moved along the roads of the caravans and the lanes of the ships, westward, as a fire moves along a dry slope.

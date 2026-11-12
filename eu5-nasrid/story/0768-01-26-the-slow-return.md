@@ -6,6 +6,7 @@ kind: chronicle
 people: [saad-ibn-yusuf]
 places: [qurtuba, al-qusayr, balma, istijja, qusantina, ishbiliyya, jayyan, gharnata]
 sources: [1363-05-baena-andalusi, 1364-05-19-jamaa-summoned, 1364-09-11-andalusi-majority, 1366-04-qurtuba-andalusi, 1366-qurtuba-muslim, 1366-11-06-state]
+verse: "2:256"
 ---
 
 The return of al-Andalus did not happen in the mosques first. It happened in the kitchens and the markets, in the songs mothers sang over cradles and the words men used to haggle over wool. The tongue came back before the faith.

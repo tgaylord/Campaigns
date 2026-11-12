@@ -7,6 +7,7 @@ people: [yusuf-i, alfonso-xi]
 places: [qurtuba, ishbiliyya, jayyan, istijja, al-qusayr, balma, wubira, mursiyya, gharnata]
 wars: [second-moroccan-war]
 sources: [1348-09-02-portugal-peace, 1349-01-27-peace-of-qurtuba, 1349-01-27-tributary-in-name, 1349-01-27-realm-doubled, 1349-01-27-unrest]
+verse: "8:61"
 ---
 
 In Jumādā al-Ākhira of the year 749 the first crown fell away. Portugal had lost no army and hardly a ship, but fifty-five thousand of its people had died in the years of the war. It made a separate peace with the Marīnids and annulled for ten years every treaty it had with Qashtāla. It paid reparations and gave a hundred and forty gold pieces to the allies besides. [Alfonso](person:alfonso-xi) of Qashtāla was left with Arghūn alone beside him, and Arghūn's best fleet lay at the bottom of the sea off Cape Ben Sakka.

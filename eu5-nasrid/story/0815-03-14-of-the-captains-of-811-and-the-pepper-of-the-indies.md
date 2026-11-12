@@ -6,6 +6,7 @@ kind: chronicle
 people: [ismail-ibn-saad]
 places: [ishbiliyya, al-ushbuna]
 sources: [1408-10-11-expeditions, 1412-01-01-funchal, 1412-06-24-spice-trade, 1397-08-14-explorers-push-south]
+verse: "31:31"
 ---
 
 The old Emperor had sent his kinsmen to sea. His son sent whoever would serve him best. In Jumādā al-Ūlā 811, while the dīwān was still busy with the lands of the north, four expeditions put to sea from the ports of [Ishbīliya](place:ishbiliyya) and the coast. One went south, to follow the coast of Africa further than any ship of al-Andalus had gone. One went to the islands that had been found off the western coast, beyond Mali. And two went to the islands the Christian sailors called the Canaries and Madeira, which the geographers called the Eternal Isles. A fifth captain was at sea already: ʿAbd al-Ghafūr, an Andalusī of the merchant class with a rare gift for talking to strangers, had been in the sea of the Azores since before the year began.

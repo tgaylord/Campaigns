@@ -6,6 +6,7 @@ kind: chronicle
 people: [yusuf-i]
 places: [gharnata, al-mariyya, wadi-ash, basta, qurtuba, jayyan, ishbiliyya]
 sources: [1356-06-09-textile-charter, 1356-10-roads, 1356-10-libraries, 1357-07-northern-madrasas]
+verse: "96:3-5"
 ---
 
 *Read, in the name of your Lord who created.* The first word Allāh sent down to His Prophet was not *fight* or *rule* but *read*. In the years after the pestilence and the Sevillan revolt, our lord [Yūsuf](person:yusuf-i) set out to make it the first word of his government as well.

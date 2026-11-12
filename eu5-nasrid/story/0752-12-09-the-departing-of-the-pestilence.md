@@ -6,6 +6,7 @@ kind: chronicle
 people: [yusuf-i]
 places: [gharnata, malaqa, al-mariyya]
 sources: [1352-01-27-plague-gone, 1350-09-02-great-dying-census, 1350-09-02-cities-emptied]
+verse: "2:155"
 ---
 
 On the ninth of Dhū al-Ḥijja in the year 752, the Day of ʿArafa, while our lord stood on the plain beyond Makka, the pestilence left the last town of the realm. No messenger brought word of it, for there was no one moment of its going. A physician in a mountain village found one morning that there was no new swelling to lance. A grave-digger in [Mālaqa](place:malaqa) found that no one came to him that day. The bells of the Christians fell silent, and the muezzins called the prayer to mosques that were fuller than they had been in years. Only later, when the scribes of the dīwān went through their reports, did they find that the last house had been cleared on that day.

@@ -6,6 +6,7 @@ kind: chronicle
 people: [muhammad-ibn-ismail-ibn-saad, berenguer-ramon-de-montsoriu, francesc-de-montsoriu, vukmir-jankovic, abd-al-jalil-al-qbasai, raimundo-coimbra]
 places: [ishbiliyya, malaqa, al-mariyya, al-ushbuna, balansiyya, mursiyya]
 sources: [1435-10-10-the-turn-to-the-sea, 1432-08-30-death-of-berenguer-ramon, 1435-04-09-death-of-vukmir, 1433-03-19-the-emperor-leaves-the-admiralty, 1436-05-01-the-two-explorers, 1432-05-the-dar-al-sinaa]
+verse: "55:19-20"
 ---
 
 The crusade ended, and the arsenals went on rising. Two years after the Emperor [Muḥammad](person:muhammad-ibn-ismail-ibn-saad) had signed the orders, all seven were finished, at [Ishbīliya](place:ishbiliyya), [Mālaqa](place:malaqa), [al-Mariyya](place:al-mariyya), [al-Ushbūna](place:al-ushbuna), [Balansiyya](place:balansiyya), Cartagena and [Mursiyya](place:mursiyya). Their first work was already at sea: eight war galleys of a new Andalusī pattern, long, low and fast under oar, the first warships of the empire not copied from the Christians. They sailed beside the fifty caravels the fleet already had. A new guild of naval chandlers was licensed at Cáceres, far inland, to send pitch and cordage down the river roads to the ports, and the treasurers, who had complained of every arsenal, found that the realm took in ninety dīnārs a month more than it spent.

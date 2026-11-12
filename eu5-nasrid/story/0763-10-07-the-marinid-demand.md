@@ -7,6 +7,7 @@ people: [yusuf-i, ismail-ibn-ismail, sayyida-of-fezzan, khalid-ibn-yahya, aisha-
 places: [gharnata, qurtuba, fas, tilimsan, al-mariyya, sharish, ishbiliyya, qadis, walba, balansiyya]
 wars: [marinid-submission-war]
 sources: [1354-03-16-betrothal-aydinids, 1359-03-15-castile-aragon-war, 1359-ismail-to-aydin, 1359-04-khalid-council, 1359-07-01-funduq, 1360-06-26-state, 1360-06-26-marinid-war, 1360-06-26-chance-lost, 1360-11-07-battle-almeria, 1360-11-14-diwan-al-mustakhlas, 1361-02-03-marinid-landings, 1361-03-23-battle-jerez, 1361-12-13-battle-sevilla, 1362-04-08-battle-sevilla, 1362-06-10-state, 1362-07-30-white-peace-morocco]
+verse: "47:35"
 ---
 
 For twenty years the court had worked to set the Christian crowns against one another. In Rabīʿ al-Thānī of the year 760 the work bore fruit. Qashtāla and Portugal marched east together into Arghūn, and Arghūn called Savoy and Sicily to its side. The dīwān counted the dead of that war as the reports came in, ten thousand Castilians and thirty thousand Portuguese, and began to speak openly of independence. [Gharnāṭa](place:gharnata) was still Qashtāla's tributary in name. If the Christians bled each other white, it would strike for its freedom.

@@ -6,6 +6,7 @@ kind: chronicle
 people: [muhammad-ibn-ismail-ibn-saad, francesc-de-montsoriu, ismail-ibn-saad]
 places: [barshaluna, ishbiliyya, qurtuba]
 sources: [1436-06-01-catalonia-annexed, 1437-01-01-the-age-of-discovery, 1437-01-01-cultural-hegemon, 1437-03-01-the-new-world-institution, 1428-12-01-catalonia-to-the-crown]
+verse: "2:143"
 ---
 
 The Emperor [Ismāʿīl](person:ismail-ibn-saad) had told the dīwān that Catalonia must come into the crown within nine years, and he had not lived to see it. His son did it within eight. On 16 Dhū al-Qaʿda 839 (1 June 1436) the Ṭāʾifa of Catalonia was annexed, a year before the court had expected, and [Barshalūna](place:barshaluna), the great port on the English border, was ruled from [Ishbīliya](place:ishbiliyya) for the first time. Its lord [Francesc](person:francesc-de-montsoriu), son of the Berenguer Ramon who had died at sea, was a Muslim and a grandson of the house of Naṣr through his grandmother. He gave up his throne without a war. The Catalans had been accepted at court for thirteen years, and the merchants of Barshalūna had been trading under the Emperor's peace for sixty. Most of them found that very little changed except the address of the tax-collector.

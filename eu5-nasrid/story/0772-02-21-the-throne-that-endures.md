@@ -7,6 +7,7 @@ people: [saad-ibn-yusuf, khalid-ibn-yahya, osman-marinid, abu-inan-faris]
 places: [antaqira, abdara, malaqa, balansiyya, sharish, gharnata, baja, fas, runda, marballa, qadis, labla, shaluqa, shidhuna, arkush, jabal-tariq, tarifa, al-jazira-al-khadra]
 wars: [second-marinid-submission-war]
 sources: [1369-11-21-battle-adra, 1369-12-16-battle-malaga, 1370-03-08-battle-malaga, 1370-03-31-battle-jerez, 1370-04-06-battle-jerez, 1370-05-31-battle-beja, 1370-06-morocco-near-defeat, 1370-09-12-battle-malaga, 1370-09-12-peace-morocco, 1370-09-14-strait-ends]
+verse: "3:200"
 ---
 
 After [Antaqīra](place:antaqira) the war belonged to [Khālid](person:khalid-ibn-yahya). On the twentieth of Rabīʿ al-Thānī 771 he fell on a Marīnid landing at [Abdara](place:abdara) and left none of its nine hundred and seventy alive. In Jumādā al-Ūlā the Egyptians came down from Jarghal and joined him before [Mālaqa](place:malaqa). It was a strange army: Andalusīs, men of [Balansiyya](place:balansiyya), mercenaries from every shore of the sea, and the soldiers of the Mamlūk sultan in their quilted coats. When seven hundred and fifty Marīnids were foolish enough to attack it, they were destroyed without the loss of a single man. In Shaʿbān the Marīnid general Muṣliḥ al-Dīn tried again at Mālaqa with three thousand three hundred and left two thousand four hundred and forty of them under its walls.
@@ -23,4 +24,4 @@ So the scale that had hung between Qashtāla and Fās for twenty-four years came
 
 Here ends the Book of the Balance.
 
-*For indeed, with hardship comes ease. Indeed, with hardship comes ease.*
+*O you who have believed, persevere and endure and remain stationed, and fear Allāh that you may succeed.*

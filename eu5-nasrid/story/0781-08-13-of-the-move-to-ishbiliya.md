@@ -6,6 +6,7 @@ kind: chronicle
 people: [saad-ibn-yusuf]
 places: [gharnata, qurtuba, ishbiliyya, barshaluna, sharish, malaqa, batalyaws, tulaytula]
 sources: [1379-04-jamaa-of-the-capital, 1379-04-roads-to-ishbiliya, 1379-11-capital-at-ishbiliya, 1380-gharnata-historical-capital]
+verse: "67:15"
 ---
 
 When the Jamāʿa met in Muḥarram 781, the question before it was the one the conquests had been asking for ten years. The house of Naṣr had ruled from [Gharnāṭa](place:gharnata) for a hundred and forty years. The city had been chosen because the mountains defended it, and the mountains had kept the Christians out of it through every war since. But the frontier was no longer in the mountains. It ran now past [Ṭulayṭula](place:tulaytula) and [Baṭalyaws](place:batalyaws), many days' ride north, and the lands won from Qashtāla were still only half held. The court found itself far from the provinces it most needed to govern. A governor's letter took a week to reach the dīwān, and the answer took another week to go back.

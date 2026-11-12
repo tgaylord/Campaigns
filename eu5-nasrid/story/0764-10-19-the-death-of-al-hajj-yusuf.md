@@ -7,6 +7,7 @@ people: [yusuf-i, saad-ibn-yusuf, nasr-al-istijji, dua-marinid]
 places: [ayamunt, tulaytula, balansiyya, mursiyya, fas, qurtuba, istijja]
 wars: [war-of-independence]
 sources: [1362-11-01-qasr-al-riyad, 1363-05-20-war-of-independence, 1363-05-20-state, 1363-05-20-portugal-first, 1363-05-20-taifas-untouched, 1363-07-27-aragon-joins, 1363-08-01-death-yusuf, 1363-08-01-saad-succeeds, 1363-08-dua-marries-nasr, 1363-08-02-state]
+verse: "3:185"
 ---
 
 On the fifth of Shaʿbān in the year 764, the truce with Qashtāla ran out, and our lord [Yūsuf](person:yusuf-i) did not wait an hour longer. He had a just cause, and he had the ṭāʾifas of [Balansiyya](place:balansiyya) and [Mursiyya](place:mursiyya), whole and untouched. He also had a rival who could barely stand. The Marīnids held fifty-eight Castilian towns, as far as [Ṭulayṭula](place:tulaytula) itself, and the tyrant of Qashtāla had fewer than two hundred men left to call up. The treasury held fifty-seven dīnārs. The sultan said that a war for freedom is not fought with what is in the treasury, and he marched north.

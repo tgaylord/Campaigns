@@ -6,6 +6,7 @@ kind: chronicle
 people: [saad-ibn-yusuf]
 places: [tulaytula, qurtuba, mursiyya, gharnata]
 sources: [1378-05-01-gem-of-iberia, 1378-05-count-of-the-christians, 1378-05-khilafat-qurtuba-renewed, 1378-05-governor-of-tulaytula, 1378-05-silk-of-gharnata, 1378-04-06-peace-castile]
+verse: "5:48"
 ---
 
 The year 780 opened with the Emperor in [Ṭulayṭula](place:tulaytula). The city stands on its rock in a bend of the Tagus at the centre of Iberia. It had been the capital of the Visigoths, then a city of Islam for three hundred and seventy years, and the seat of a ṭāʾifa king of our own faith, before Alfonso of Qashtāla took it in the year 478. For three centuries since, Christians, Muslims and Jews had lived in it side by side, more or less, and scholars of all three had sat in its libraries putting the books of the Arabs into Latin. Now it was the Emperor's again. Twenty-nine thousand souls lived in it, nearly all of them Christian.
@@ -18,4 +19,4 @@ The Emperor revived the office as the first new branch of the bureaucracy he had
 
 There was money for it, for once, because Qashtāla was paying reparations. Part of it went south. In the spring the Emperor spent five hundred dīnārs of Castilian gold to carry the famous silk of [Gharnāṭa](place:gharnata) into [Mursiyya](place:mursiyya), now in the crown's own hands: more mulberry groves, more silkworm houses, and more silk sent on to the markets of Europe, which had always paid well for it. Qashtāla, which had once taken tribute from the house of Naṣr, was now paying for its silk.
 
-*O mankind, We created you from a male and a female, and made you peoples and tribes so that you may know one another.*
+*To each of you We prescribed a law and a way. Had Allāh willed, He would have made you one nation.*

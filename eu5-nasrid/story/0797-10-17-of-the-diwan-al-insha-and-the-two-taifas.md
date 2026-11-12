@@ -7,6 +7,7 @@ people: [saad-ibn-yusuf, saad-ibn-ismail, saad-ibn-faraj, umm-al-fath-bint-saad,
 places: [shalamanka, qunka, majrit, al-ushbuna, qurtuba, ishbiliyya]
 wars: [war-of-the-league]
 sources: [1395-08-05-diwan-al-insha, 1395-08-05-the-embassies, 1395-08-05-two-new-taifas, 1395-08-05-hold-on-al-ushbuna]
+verse: "68:1"
 ---
 
 Six weeks after the Peace of Ramaḍān the Emperor [Saʿd](person:saad-ibn-yusuf) gave the realm its fourth great office. The Count of the Christians had come in 780, the Ḥijāba in 789 and the Ḥisba in 791. On 17 Shawwāl 797 he founded the Dīwān al-Inshāʾ, the chancery, whose secretaries drafted the edicts, the treaties and the letters to foreign kings in the high style of the court. Under the caliphs the kātib of the Inshāʾ had been prized above poets, for a well-turned letter could win what an army could not. The ʿulamāʾ approved. The umarāʾ grumbled that the realm was now governed by men who held pens instead of lances, and the Emperor answered that the lance had won the land and the pen would keep it. He fixed the secretaries' pay from the treasury himself and forbade them to take gifts from the courts they wrote to. A chancery that could be bought, he said, would write whatever the highest bidder wanted.

@@ -7,6 +7,7 @@ people: [saad-ibn-yusuf, murad]
 places: [gharnata, al-ushbuna, balansiyya, shilb, ukshunuba, baja, mursiyya]
 wars: [war-of-independence]
 sources: [1364-08-03-battle-zafra, 1364-09-10-battle-lisbon, 1364-09-11-battle-lisbon, 1364-09-11-peace-portugal, 1364-09-11-state]
+verse: "8:17"
 ---
 
 Al-Ḥājj Yūsuf had marched to knock Portugal out of the war, and his son [Saʿd](person:saad-ibn-yusuf) kept to the plan. In the summer of 765 the army of [Gharnāṭa](place:gharnata) went deep into Portugal and laid siege to [al-Ushbūna](place:al-ushbuna) itself. But the Portuguese army was not there. It had gone east to join the host of Arghūn, and together they were burning their way through the lands of the ṭāʾifas. So the army left a screen before the walls and marched east, under a general named [Murād](person:murad). He was a quiet man who kept his own company, and he planned every attack as carefully as a merchant counts his coin. He chased the joined host halfway across Iberia.

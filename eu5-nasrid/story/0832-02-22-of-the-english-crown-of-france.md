@@ -6,6 +6,7 @@ kind: chronicle
 people: [ismail-ibn-saad, edward-v-of-england, philippe-vii-of-france]
 places: [ishbiliyya, balansiyya, barshaluna]
 sources: [1427-04-28-war-in-france, 1428-11-28-peace-of-the-hundred-years-war, 1428-12-01-the-english-crown-of-france, 1428-05-25-the-spies-go-north, 1419-09-the-road-to-balansiyya]
+verse: "30:2-4"
 ---
 
 The kings of England and France had been at war, on and off, since before the house of Naṣr had a sultan old enough to remember it. The scribes of the first survey had written in 772 that the two hated each other, and that the French king was losing his kingdom slowly. In Rajab 830 the English went to war again, with all their vassals in France behind them and King Fernando of Qashtāla beside them, and this time the losing was not slow. Fernando made his own peace with the French in the spring and went home. The English did not.

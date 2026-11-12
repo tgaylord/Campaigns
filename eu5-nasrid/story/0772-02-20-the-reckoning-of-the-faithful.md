@@ -6,6 +6,7 @@ kind: chronicle
 people: [saad-ibn-yusuf]
 places: [fas, qurtuba, qarmuna, ishbiliyya, jayyan, qadis, sharish, shaluqa, jabal-tariq, al-jazira-al-khadra, gharnata]
 sources: [1370-09-conversion-reading, 1370-09-13-state, 1366-qurtuba-muslim]
+verse: "16:125"
 ---
 
 When the peace with [Fās](place:fas) was sealed, our lord [Saʿd](person:saad-ibn-yusuf) ordered a count of the realm, as his grandfather's grandfathers had done after every war: how many souls, of what tongue, of what faith. The scribes worked through Ṣafar, and their reckoning is set down here, because it is the measure of everything this book is about.
@@ -18,4 +19,4 @@ Across the whole realm the count was this. Of seven hundred and forty-nine thous
 
 The call has been made. It is being answered, slowly, in Arabic first and in prayer after, and town by town. The madrasas will go on teaching for a hundred years. This book will go on as long as they do.
 
-*And say: The truth has come, and falsehood has departed. Indeed, falsehood is ever bound to depart.*
+*Invite to the way of your Lord with wisdom and good instruction.*

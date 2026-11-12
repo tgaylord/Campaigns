@@ -1690,7 +1690,8 @@
   "female": true,
   "roles": [
    "heir of Murcia",
-   "betrothed of Prince Ismāʿīl"
+   "betrothed of Prince Ismāʿīl",
+   "member of the dīwān (1435–1437)"
   ],
   "stats": {
    "adm": 31,
@@ -1700,7 +1701,7 @@
   "traits": [
    "gifted child"
   ],
-  "note": "Daughter of Dolça d'Oriola and Blai Manrique de Lara, Sunni, heir of the Ṭāʾifa of Mursiyya; a gifted child, Castilian by culture like her father. Murcia's court ties itself closely to the Catalans through its traders. Betrothed to the heir Ismāʿīl ibn Saʿd when Murcia was taken into the crown on 16 March 1375. She is being raised at the Castilian court for now, something to watch, though the betrothal holds (Trent's account; save of 16 March 1375, where she sits in Castile). Married to the crown prince Ismāʿīl by 1 October 1387 (save of that date). Mother of Yūsuf (1383–1384) and Muḥammad (born 25 October 1385).",
+  "note": "Daughter of Dolça d'Oriola and Blai Manrique de Lara, Sunni, heir of the Ṭāʾifa of Mursiyya; a gifted child, Castilian by culture like her father. Murcia's court ties itself closely to the Catalans through its traders. Betrothed to the heir Ismāʿīl ibn Saʿd when Murcia was taken into the crown on 16 March 1375. She is being raised at the Castilian court for now, something to watch, though the betrothal holds (Trent's account; save of 16 March 1375, where she sits in Castile). Married to the crown prince Ismāʿīl by 1 October 1387 (save of that date). Mother of Yūsuf (1383–1384) and Muḥammad (born 25 October 1385). On 9 June 1435, a week after the death of Prince Yūsuf ibn Saʿd, the queen mother took his seat in the dīwān, and held it until her death on 6 November 1437, aged seventy; her granddaughter Shams succeeded her (saves of 10 October 1435 and 11 June 1442).",
   "died": "1437-11-06"
  },
  {
@@ -2446,6 +2447,29 @@
   "note": "A Basque noble who on 4 September 1420, when the Kingdom of Castile fell apart, became king of Navarre, the second Alfonso of that crown: the 10 Basque towns of the coast and Álava, from Bilbao, his capital, and San Sebastián to Vitoria, some 160,000 Basques. The old Navarre of Pamplona is the Emperor's Ṭāʾifa of Banbalūna. The save shows the new state Sunni though its people are all Catholic; Trent is correcting this in game (save of 4 September 1420; Trent's account). He allied Navarre to Castile, which gave the Emperor's sons their opening: on 17 August 1430 al-Andalus declared war on him, and on 3 November his army of 3,580 was broken before Bilbao. At the Peace of Ṣafar that day Navarre was annexed and its towns given to the Ṭāʾifa of Banbalūna, at whose court he now lives, a drunkard and naive (saves of 17 August, 3 and 5 November 1430)."
  },
  {
+  "id": "shams-bint-muhammad",
+  "name": "Shams bint Muḥammad",
+  "nameArabic": "شمس بنت محمد",
+  "nameGame": "Sun",
+  "gameId": 82785,
+  "dynasty": "Naṣrid",
+  "born": "1407-08-10",
+  "father": "muhammad-ibn-ismail-ibn-saad",
+  "female": true,
+  "roles": [
+   "member of the dīwān (from 1437)"
+  ],
+  "stats": {
+   "adm": 69,
+   "dip": 63,
+   "mil": 42
+  },
+  "traits": [
+   "deceitful"
+  ],
+  "note": "Daughter of the Emperor Muḥammad by Isabel de Montsoriu, born at Ishbīliya on 10 August 1407. Married to her cousin Ismāʿīl, son of the admiral prince Yūsuf ibn Ismāʿīl; their children include Aḥmad (1427), Jadīla (1430) and Abū al-Ḥasan ʿAlī (1441). On 15 November 1437, nine days after the death of her grandmother Bernarda, the queen mother, she took Bernarda's seat in the dīwān, promoting Andalusī culture. Deceitful. (save of 11 June 1442)"
+ },
+ {
   "id": "umm-al-fath-bint-muhammad",
   "name": "Umm al-Fatḥ bint Muḥammad",
   "nameArabic": "أم الفتح بنت محمد",
@@ -2466,6 +2490,48 @@
   },
   "traits": [],
   "note": "Daughter of the heir Muḥammad and his third wife Jadīla bint Saʿd, named for her grandmother Umm al-Fatḥ. On 17 December 1425, at fourteen, she took a seat in the dīwān, integrating the new lands; she sits there beside her mother (save of 25 May 1428)."
+ },
+ {
+  "id": "fatima-bint-saad-ibn-ahmad",
+  "name": "Fāṭima bint Saʿd ibn Aḥmad",
+  "nameArabic": "فاطمة بنت سعد بن أحمد",
+  "nameGame": "Fatima",
+  "gameId": 33591515,
+  "dynasty": "Naṣrid",
+  "born": "1430-05-25",
+  "female": true,
+  "roles": [],
+  "stats": {
+   "adm": 43,
+   "dip": 47,
+   "mil": 38
+  },
+  "traits": [
+   "child_ambitious",
+   "healthy"
+  ],
+  "note": "Daughter of the Emperor's daughter Umm al-Fatḥ and her husband Saʿd, son of Aḥmad ibn Ismāʿīl ibn Saʿd, born at Jaraicejo on 25 May 1430. One of the nine grandchildren born to the Emperor Muḥammad in the first years of his reign. Ambitious as a child, and healthy. (save of 11 June 1442)",
+  "mother": "umm-al-fath-bint-muhammad"
+ },
+ {
+  "id": "muhammad-ibn-saad-ibn-ahmad",
+  "name": "Muḥammad ibn Saʿd ibn Aḥmad",
+  "nameArabic": "محمد بن سعد بن أحمد",
+  "nameGame": "Muhammad",
+  "gameId": 16832302,
+  "dynasty": "Naṣrid",
+  "born": "1433-04-24",
+  "roles": [],
+  "stats": {
+   "adm": 28,
+   "dip": 18,
+   "mil": 36
+  },
+  "traits": [
+   "child_intelligent"
+  ],
+  "note": "Son of the Emperor's daughter Umm al-Fatḥ and her husband Saʿd, son of Aḥmad ibn Ismāʿīl ibn Saʿd, born at Jaraicejo on 24 April 1433, named for his grandfather the Emperor. One of the nine grandchildren born to the Emperor Muḥammad in the first years of his reign. Intelligent as a child. (save of 11 June 1442)",
+  "mother": "umm-al-fath-bint-muhammad"
  },
  {
   "id": "tiramakhan-mali",
@@ -2794,6 +2860,150 @@
    "child_shrewd"
   ],
   "note": "Eldest son of the heir Ismāʿīl by Tella, born at Gharnāṭa on 6 January 1422, and second in line behind his father. Given an expensive, in-depth education, and shrewd as a child. By January 1438 he had married three wives: Amie, daughter of Mansa Tiramakhan of Mālī; Fāṭima, daughter of the late Yūsuf ibn Ismāʿīl of Banbalūna, to tie the ṭāʾifas to the crown; and Muʾmina, daughter of Muṣliḥ al-Dīn of the court. At sixteen his grandfather the Emperor made him admiral of the fleet, believing the post had made a man of him and would do the same for his grandson (Trent's screenshot and account; save of 16 January 1438)."
+ },
+ {
+  "id": "shams-bint-ismail-ibn-muhammad",
+  "name": "Shams bint Ismāʿīl ibn Muḥammad",
+  "nameArabic": "شمس بنت إسماعيل بن محمد",
+  "nameGame": "Sun",
+  "gameId": 16867969,
+  "dynasty": "Naṣrid",
+  "born": "1430-01-06",
+  "father": "ismail-ibn-muhammad-ibn-ismail",
+  "female": true,
+  "roles": [],
+  "stats": {
+   "adm": 28,
+   "dip": 50,
+   "mil": 34
+  },
+  "traits": [
+   "child_gregarious"
+  ],
+  "note": "Daughter of the heir Ismāʿīl by Tella, born at Ishbīliya on 6 January 1430. One of the nine grandchildren born to the Emperor Muḥammad in the first years of his reign. Gregarious as a child. (save of 11 June 1442)"
+ },
+ {
+  "id": "ahmad-ibn-ismail-ibn-muhammad",
+  "name": "Aḥmad ibn Ismāʿīl ibn Muḥammad",
+  "nameArabic": "أحمد بن إسماعيل بن محمد",
+  "nameGame": "Ahmed",
+  "gameId": 50361930,
+  "dynasty": "Naṣrid",
+  "born": "1432-07-17",
+  "father": "ismail-ibn-muhammad-ibn-ismail",
+  "roles": [],
+  "stats": {
+   "adm": 53,
+   "dip": 19,
+   "mil": 25
+  },
+  "traits": [
+   "child_intelligent"
+  ],
+  "note": "Son of the heir Ismāʿīl by Khadīja, born at Ishbīliya on 17 July 1432. One of the nine grandchildren born to the Emperor Muḥammad in the first years of his reign. Intelligent as a child. (save of 11 June 1442)"
+ },
+ {
+  "id": "umm-al-fath-bint-ismail-ibn-muhammad",
+  "name": "Umm al-Fatḥ bint Ismāʿīl ibn Muḥammad",
+  "nameArabic": "أم الفتح بنت إسماعيل بن محمد",
+  "nameGame": "Umm al-Fath",
+  "gameId": 33575526,
+  "dynasty": "Naṣrid",
+  "born": "1433-09-16",
+  "father": "ismail-ibn-muhammad-ibn-ismail",
+  "female": true,
+  "roles": [],
+  "stats": {
+   "adm": 26,
+   "dip": 21,
+   "mil": 44
+  },
+  "traits": [
+   "child_rowdy"
+  ],
+  "note": "Daughter of the heir Ismāʿīl by Khadīja, born at Ishbīliya on 16 September 1433, named for her aunt and great-grandmother. One of the nine grandchildren born to the Emperor Muḥammad in the first years of his reign. Rowdy as a child. (save of 11 June 1442)"
+ },
+ {
+  "id": "lubna-bint-ismail-ibn-muhammad",
+  "name": "Lubnā bint Ismāʿīl ibn Muḥammad",
+  "nameArabic": "لبنى بنت إسماعيل بن محمد",
+  "nameGame": "Lubna",
+  "gameId": 33592415,
+  "dynasty": "Naṣrid",
+  "born": "1434-07-11",
+  "father": "ismail-ibn-muhammad-ibn-ismail",
+  "female": true,
+  "roles": [],
+  "stats": {
+   "adm": 20,
+   "dip": 36,
+   "mil": 21
+  },
+  "traits": [
+   "child_ambitious"
+  ],
+  "note": "Daughter of the heir Ismāʿīl by Tella, born at Ishbīliya on 11 July 1434. One of the nine grandchildren born to the Emperor Muḥammad in the first years of his reign. Ambitious as a child. (save of 11 June 1442)"
+ },
+ {
+  "id": "aisha-bint-ahmad-ibn-muhammad",
+  "name": "ʿĀʾisha bint Aḥmad ibn Muḥammad",
+  "nameArabic": "عائشة بنت أحمد بن محمد",
+  "nameGame": "Aisha",
+  "gameId": 33613114,
+  "dynasty": "Naṣrid",
+  "born": "1430-03-01",
+  "father": "ahmad-ibn-muhammad-ibn-ismail",
+  "female": true,
+  "roles": [],
+  "stats": {
+   "adm": 34,
+   "dip": 45,
+   "mil": 43
+  },
+  "traits": [
+   "child_gallant"
+  ],
+  "note": "Daughter of Prince Aḥmad by Dīma, born at Muntīl on 1 March 1430. One of the nine grandchildren born to the Emperor Muḥammad in the first years of his reign. Gallant as a child. (save of 11 June 1442)"
+ },
+ {
+  "id": "abu-al-hasan-ali-ibn-ahmad-ibn-muhammad",
+  "name": "Abū al-Ḥasan ʿAlī ibn Aḥmad ibn Muḥammad",
+  "nameArabic": "أبو الحسن علي بن أحمد بن محمد",
+  "nameGame": "Abu al-Hasan Ali",
+  "gameId": 16841664,
+  "dynasty": "Naṣrid",
+  "born": "1433-03-12",
+  "father": "ahmad-ibn-muhammad-ibn-ismail",
+  "roles": [],
+  "stats": {
+   "adm": 40,
+   "dip": 18,
+   "mil": 21
+  },
+  "traits": [
+   "child_intelligent"
+  ],
+  "note": "Son of Prince Aḥmad by Muʾmina, born at Ishbīliya on 12 March 1433, named after the general of Shant Yāqub. One of the nine grandchildren born to the Emperor Muḥammad in the first years of his reign. Intelligent as a child. (save of 11 June 1442)"
+ },
+ {
+  "id": "yusuf-ibn-ahmad-ibn-muhammad",
+  "name": "Yūsuf ibn Aḥmad ibn Muḥammad",
+  "nameArabic": "يوسف بن أحمد بن محمد",
+  "nameGame": "Joseph",
+  "gameId": 16807215,
+  "dynasty": "Naṣrid",
+  "born": "1433-08-14",
+  "father": "ahmad-ibn-muhammad-ibn-ismail",
+  "roles": [],
+  "stats": {
+   "adm": 26,
+   "dip": 47,
+   "mil": 42
+  },
+  "traits": [
+   "child_prodigy"
+  ],
+  "note": "Son of Prince Aḥmad by Dīma, born at Ishbīliya on 14 August 1433. One of the nine grandchildren born to the Emperor Muḥammad in the first years of his reign. A prodigy as a child. (save of 11 June 1442)"
  },
  {
   "id": "amie-of-mali",

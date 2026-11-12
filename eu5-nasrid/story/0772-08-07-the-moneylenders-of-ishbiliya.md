@@ -6,6 +6,7 @@ kind: chronicle
 people: [saad-ibn-yusuf, maryam-bint-ismail, dua-marinid, dolca-of-murcia]
 places: [gharnata, malaqa, fas, runda, ishbiliyya, jayyan, mursiyya, uryula]
 sources: [1370-11-01-the-north, 1371-02-24-spread-of-usury, 1371-02-24-state, 1370-11-01-state, 1370-10-01-maryam-culture, 1370-09-26-reconquest-claim, 1370-09-20-murcia-annexation, 1371-01-29-murcia-dolca]
+verse: "4:29"
 ---
 
 When the war chest was empty and the mercenaries had gone home, our lord [Saʿd](person:saad-ibn-yusuf) turned to the lands he had won. He did not like what the dīwān's reckoners showed him. Three realms were living under one crown, and only one of them was rich.

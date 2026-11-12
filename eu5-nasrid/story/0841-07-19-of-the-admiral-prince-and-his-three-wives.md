@@ -6,6 +6,7 @@ kind: chronicle
 people: [yusuf-ibn-ismail-ibn-muhammad, muhammad-ibn-ismail-ibn-saad, ismail-ibn-muhammad-ibn-ismail, amie-of-mali, fatima-bint-yusuf-ibn-ismail, mumina-bint-muslih-al-din, tiramakhan-mali, yusuf-ibn-ismail, bernarda-of-murcia, khalid-ibn-abi-hammu]
 places: [gharnata, ishbiliyya, barshaluna, banbaluna]
 sources: [1438-01-16-the-admiral-prince, 1438-01-16-the-realm-turns-to-the-sea, 1437-06-11-khalid-comes-of-age, 1437-11-06-death-of-bernarda]
+verse: "6:165"
 ---
 
 The Emperor [Muḥammad](person:muhammad-ibn-ismail-ibn-saad) had been twenty-five, and judged unfit to rule by everyone who knew him, when he was given the fleet. He had never forgotten what it had done for him. The court had called him slow; the captains had called him admiral. He had learned the names of harbour-masters, the price of pitch and the turn of the winds off Cape Saint Vincent, and he had come back from the sea a man who could win a battle at the mouth of the Duero. In the winter of 841 he did for his grandson what had been done for him.

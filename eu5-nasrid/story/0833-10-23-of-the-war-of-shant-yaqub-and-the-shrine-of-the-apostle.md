@@ -7,6 +7,7 @@ people: [muhammad-ibn-ismail-ibn-saad, ismail-ibn-muhammad-ibn-ismail, ahmad-ibn
 places: [shant-yaqub, ishbiliyya, qurtuba]
 wars: [war-of-shant-yaqub]
 sources: [1430-05-18-the-princes-counsel, 1430-05-18-war-on-galicia, 1430-05-18-take-the-capital, 1430-06-30-battle-santiago, 1430-06-30-the-emperor-worldly, 1430-06-30-ahmad-the-architect, 1430-06-30-the-emperors-household, 1430-07-15-santiago-falls, 1420-09-04-the-fall-of-qashtala, 1425-03-25-galicia-takes-asturias]
+verse: "22:40"
 ---
 
 The Emperor [Muḥammad](person:muhammad-ibn-ismail-ibn-saad) had been on the throne less than a year when he called for war, and he called for it the way he did everything, all at once. His father had died with the work of the Istirdād unfinished, and the son meant to finish it and be done. He ordered the army north against Qashtāla, which had begun every war of the house of Naṣr for a hundred years, and he wanted it gone by the end of the summer.

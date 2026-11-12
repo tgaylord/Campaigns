@@ -7,6 +7,7 @@ people: [saad-ibn-yusuf, sayyida-of-fezzan, yusuf-i, abu-inan-faris, abu-al-fadl
 places: [gharnata, fas, tulaytula, jayyan, mursiyya, ishbiliyya]
 wars: [revolt-of-tulaytula]
 sources: [1380-11-19-death-of-sayyida, 1381-10-07-death-of-abu-inan, 1382-12-01-revolt-of-tulaytula, 1382-12-01-ismail-to-the-diwan, 1383-02-22-battle-munt-shaqir, 1383-04-30-battle-jaen, 1383-04-30-revolt-crushed]
+verse: "3:139"
 ---
 
 In Shaʿbān 782 the Emperor's mother died. [Sayyida](person:sayyida-of-fezzan), daughter of the lords of Fezzan, had been betrothed to [Yūsuf](person:yusuf-i) at nine years old. She came to [Gharnāṭa](place:gharnata) across the desert and the sea and outlived her husband by seventeen years. She sat in her son's dīwān through the worst of his wars and lived to see him proclaimed Emperor. She was fifty-two. The court mourned her as a mother of the dynasty. Her son mourned her as his mother, and for some weeks he would see no one.

@@ -6,6 +6,7 @@ kind: chronicle
 people: [saad-ibn-yusuf, ismail-ibn-saad, bernarda-of-murcia, dua-marinid, maryam-bint-yusuf, ismail-ibn-yusuf]
 places: [ishbiliyya, qurtuba]
 sources: [1387-01-22-the-hijaba, 1387-01-22-ismail-to-the-diwan, 1387-hammams, 1387-10-01-castile-and-france, 1387-10-01-state, 1388-12-28-death-of-dua, 1389-08-09-the-hisba]
+verse: "89:27-28"
 ---
 
 The Emperor returned from al-Qāhira with his head full of what he had seen there: the Mamlūk court with its offices and ranks, and the books the scholars of al-Azhar had opened for him on the government of the old caliphs. He meant to build on them. The first fruit was the Ḥijāba. Under the Umayyads of [Qurṭuba](place:qurtuba) the ḥājib had been the chamberlain of the court. He presided over his own council, received petitioners and embassies, and drafted decrees in the caliph's name. Under al-Manṣūr he became the caliph's power in all but name. The Emperor revived the office. It made the throne stronger and gave it something of the dignity of the caliphs' own court. Like the ḥājibs of old, it would also stand between the throne and the great lords, and the nobles noticed.

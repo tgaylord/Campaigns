@@ -6,6 +6,7 @@ kind: chronicle
 people: [ismail-ibn-saad, umm-al-fath-bint-saad, muhammad-ibn-yusuf-ibn-faraj, yusuf-ibn-saad, saad-ibn-faraj, maryam-bint-saad-ibn-faraj, saad-ibn-ismail-ibn-saad, ismail-ibn-yusuf, muhammad-ibn-ismail-ibn-saad, magdalena-de-borja, isabel-de-montsoriu, fatima-bint-yusuf, ismail-ibn-muhammad-ibn-ismail, ahmad-ibn-muhammad-ibn-ismail]
 places: [qurtuba, ishbiliyya, qunka]
 sources: [1405-08-24-the-risings-crushed, 1408-02-20-death-of-saad-ibn-faraj, 1408-03-01-capital-of-the-old-caliphate, 1408-05-27-death-of-ismail-ibn-yusuf, 1408-08-05-the-sons-of-muhammad]
+verse: "52:21"
 ---
 
 After the risings the Emperor [Ismāʿīl](person:ismail-ibn-saad) gave the dīwān to the work of binding the north. His half-sister [Umm al-Fatḥ](person:umm-al-fath-bint-saad) and his nephew [Muḥammad ibn Yūsuf](person:muhammad-ibn-yusuf-ibn-faraj), a grandson of the old Emperor through his mother, were set to governing the lands that had risen, and his brother [Yūsuf](person:yusuf-ibn-saad) to drawing Andalusī settlers north to them. In those years the qāḍīs began to say a thing they had not expected to say of him. Whatever the Emperor told men in private, and he told each of them what he wished to hear, his judgments in public were fair, and no one who brought a case before him could say it had been decided by favour.

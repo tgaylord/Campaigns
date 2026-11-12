@@ -6,6 +6,7 @@ kind: chronicle
 people: [saad-ibn-yusuf, aiman-mamluk, yusuf-i]
 places: [gharnata, fas, tilimsan]
 sources: [1351-01-19-mamluk-betrothal, 1351-01-saad-prodigy, 1351-01-saad-tutors]
+verse: "2:269"
 ---
 
 In Dhū al-Qaʿda of the year 751 a letter came from al-Qāhira, sealed with the seal of the Mamlūk sultan. Jamāl al-Dīn agreed to give his daughter [Aiman](person:aiman-mamluk) in marriage to [Saʿd](person:saad-ibn-yusuf), son of our lord [Yūsuf](person:yusuf-i) and heir to the throne of [Gharnāṭa](place:gharnata), when the two came of age. So the alliance made in the embassy of 750 became a bond of blood between the house of Naṣr and the lords of Egypt and Syria. So the heir's bride would come from the East, while the Marīnid girl promised to his father in the year of Saʿd's birth was still growing up in [Fās](place:fas).

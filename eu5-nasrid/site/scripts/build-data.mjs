@@ -209,6 +209,8 @@ const StoryFront = z.object({
   places: z.array(id).default([]),
   wars: z.array(id).default([]),
   sources: z.array(z.string()).default([]),
+  /** the closing verse of an in-world entry, as sura:āya or sura:āya-āya; never repeated */
+  verse: z.string().regex(/^\d{1,3}:\d{1,3}(-\d{1,3})?$/, "verse must be sura:āya or sura:āya-āya").optional(),
   sample,
 });
 
@@ -300,6 +302,21 @@ for (const f of storyFiles) {
   story.push({ id: f.replace(/\.md$/, ""), ...front, html, refs });
 }
 story.sort((a, b) => a.date.localeCompare(b.date));
+// Each entry closes on a verse never used before (SYSTEMS §3); 65:2-3 and 65:3 count as the same.
+{
+  const seen = new Map(); // "sura:aya" → entry id
+  for (const s of story) {
+    if (s.kind !== "chronicle") continue;
+    if (!s.verse) { console.warn(`note: story/${s.id} has no closing verse recorded (front matter verse:)`); continue; }
+    const [sura, ayat] = s.verse.split(":");
+    const [a, b = a] = ayat.split("-").map(Number);
+    for (let n = a; n <= b; n++) {
+      const k = `${sura}:${n}`;
+      if (seen.has(k)) errors.push(`story/${s.id}: closing verse ${s.verse} repeats ${k}, already used by ${seen.get(k)}`);
+      else seen.set(k, s.id);
+    }
+  }
+}
 
 // Devastation readings (tools/devastation.py): how a run of wars left the land, by location.
 const devastation = {};
@@ -525,6 +542,28 @@ const battles = Object.entries(battlePlaces.places).filter(([i]) => evById.has(i
 for (const i of Object.keys(battlePlaces.places)) if (!evById.has(i)) console.warn(`note: battle-places.json names ${i}, which is no longer an event`);
 const newBattles = events.filter((e) => e.type === "battle" && e.data?.location && !battlePlaces.places[e.id] && !battlePlaces.unplaced[e.id]);
 if (newBattles.length) console.warn(`note: ${newBattles.length} battle(s) not yet placed (re-run tools/battle_places.py): ${newBattles.slice(0, 3).map((e) => e.id).join(", ")}…`);
+
+// The session log (tools/sessions.py): what each sitting added. Kept for the Desk and for continuity;
+// here it is only checked, so that a stale or hand-edited log names nothing that no longer exists.
+const Sitting = z.object({
+  id: isoDate, date: isoDate, commits: z.number(), uncommitted: z.boolean(), claudeSessions: z.array(z.string()),
+  headlines: z.array(z.string()), reached: z.object({ from: isoDate, to: isoDate }).nullable(),
+  entries: z.array(id), notes: z.array(id), checkpoints: z.array(z.string()), people: z.array(id), wars: z.array(id), places: z.array(id),
+  events: z.number(),
+});
+let sittings = [];
+try { sittings = (await readJson(path.join(CAMPAIGN, "data/sessions.json"))).map((s, i) => check(Sitting, s, `sessions.json[${i}]`)).filter(Boolean); }
+catch { console.warn("note: no data/sessions.json (tools/sessions.py)"); }
+{
+  const storyIds = new Set(story.map((s) => s.id)), snapIds = new Set(snapshots.map((s) => s.id));
+  const logged = new Set(sittings.flatMap((s) => [...s.entries, ...s.notes]));
+  for (const s of sittings) {
+    for (const e of [...s.entries, ...s.notes]) if (!storyIds.has(e)) console.warn(`note: sessions.json ${s.id} lists story ${e}, which no longer exists (re-run tools/sessions.py)`);
+    for (const c of s.checkpoints) if (!snapIds.has(c)) console.warn(`note: sessions.json ${s.id} lists checkpoint ${c}, which no longer exists`);
+  }
+  const unlogged = story.filter((s) => !logged.has(s.id));
+  if (sittings.length && unlogged.length) console.warn(`note: ${unlogged.length} story file(s) not yet in the session log (run tools/sessions.py before committing): ${unlogged.slice(0, 3).map((s) => s.id).join(", ")}`);
+}
 
 for (const c of countries) if (!followed.has(c.tag) && ![...Object.values(owners)].some((o) => Object.values(o).includes(c.tag))) {
   // a country no checkpoint shows on the map is harmless, but say so

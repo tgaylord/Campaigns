@@ -7,6 +7,7 @@ people: [saad-ibn-yusuf, francesc-de-montsoriu, alfonso-de-onate, dua-marinid, a
 places: [saraqusta, balansiyya, shalba, barshaluna, gharnata, fas]
 wars: [war-of-the-aragonese-restoration]
 sources: [1371-03-01-reconquest-claim-ready, 1375-06-05-war-on-castile, 1375-06-05-rome-and-lisbon, 1375-12-12-catalans-ambushed, 1376-01-14-battle-xelva, 1376-01-14-second-levy, 1376-01-14-envoys-to-fas, 1376-01-14-jadila-married]
+verse: "47:7"
 ---
 
 The truce with Qashtāla ran out on 4 Muḥarram 777, and the Emperor [Saʿd](person:saad-ibn-yusuf) did not let a day of the new year pass. Beyond the Pyrenees the French were pushing the English into the sea. Once they had finished, the Pope at Avignon would rally them against al-Andalus, and every advance the Emperor made after that would be blunted by French lances. *We cannot afford to wait*, he told the dīwān. War was declared on Qashtāla that day. The claim the dīwān had drawn up four years before reached to all the peninsula the Christians had taken, but the heralds proclaimed the war as the Aragonese restoration. [Saraqusṭa](place:saraqusta) and the heart of old Arghūn, from Jaca to Teruel, lay in Castilian hands, and the renewed kingdom had a right to them.
@@ -23,4 +24,4 @@ He levied two thousand more men from the nobles, and he listened to [Duʿāʾ](p
 
 The envoys rode for Fās, and a pact was offered. On 22 Shaʿbān the alliance was signed. Fās had a truce with Qashtāla that would not end until the autumn of the year after next, so it could not join the war before then. Its envoys swore it would help when it could. The Emperor's council was not sure their word was worth believing.
 
-*If a wound has touched you, a wound like it has touched the others. These are the days We alternate among the people.*
+*O you who have believed, if you support Allāh, He will support you and plant firmly your feet.*

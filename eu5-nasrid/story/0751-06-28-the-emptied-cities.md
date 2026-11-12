@@ -6,6 +6,7 @@ kind: chronicle
 people: [yusuf-i]
 places: [gharnata, malaqa, al-mariyya]
 sources: [1350-09-02-great-dying-census, 1350-09-02-cities-emptied, 1350-09-02-recovery]
+verse: "57:23"
 ---
 
 At the end of Jumādā al-Ākhira in the year 751 the pestilence was at last withdrawing. It touched only four towns of the realm now, and the physicians of the houses of healing began to send their assistants home. So the sultan ordered the dīwān to make a reckoning. It was to cover not only the realm as it now stood, but the old realm as it had been in the summer of 747, when the rumour first came out of the East, and every land beside it that had sent word.

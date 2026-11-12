@@ -6,6 +6,7 @@ kind: chronicle
 people: [muhammad-ibn-ismail-ibn-saad, ismail-ibn-muhammad-ibn-ismail, ahmad-ibn-muhammad-ibn-ismail, ismail-ibn-saad]
 places: [majrit, tulaytula, ishbiliyya]
 sources: [1438-04-08-the-charter-of-majrit, 1438-04-08-land-rights-unravelled, 1428-05-25-primacy-revoked]
+verse: "28:57"
 ---
 
 [Majrīṭ](place:majrit) had been a frontier fort when the amīr Muḥammad I built it on the Manzanares, to guard the road to [Ṭulayṭula](place:tulaytula) against the Christians of the north. Nearly six hundred years later it had become something else. The road it guarded now ran through the middle of the empire, and the town had grown along it faster than any other in the interior, a market of wool, grain and leather where the drovers of the meseta met the merchants of Ṭulayṭula. In the spring of 841 its burghers came to [Ishbīliya](place:ishbiliyya) to ask the Emperor for a city charter.

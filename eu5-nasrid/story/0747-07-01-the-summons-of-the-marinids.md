@@ -7,6 +7,7 @@ people: [yusuf-i, yahya-rahhu]
 places: [gharnata, balansiyya]
 wars: [second-moroccan-war]
 sources: [1346-08-01-sovereignty, 1346-08-01-conversion, 1346-10-16-moroccan-war, 1346-10-18-tunis-joins, 1346-10-18-call-to-arms, 1346-10-18-granada-joins, 1346-10-18-tributary-ends, 1346-10-18-volunteers-rise, 1346-11-08-mobilisation]
+verse: "55:7-8"
 ---
 
 *And the heaven He raised and imposed the balance, that you not transgress within the balance.* So Allāh has set a balance over all things, and over the Strait of the Pillars more than most. On one pan of the scales sit the three crowns of the Christians and on the other the Marīnids of Fās, and between them [Gharnāṭa](place:gharnata), the smallest weight, which both would gladly throw onto their own side. In the summer of 747 the scales began to tip. The realm's own sovereignty, the measure of how far it was master of itself, slipped below the half for the first time in the reign. The dīwān marked it, and did not yet know what it foretold.

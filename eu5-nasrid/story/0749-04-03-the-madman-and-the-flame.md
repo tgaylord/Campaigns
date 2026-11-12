@@ -7,6 +7,7 @@ people: [yusuf-i]
 places: [qurtuba, al-mansura, gharnata]
 wars: [second-moroccan-war]
 sources: [1348-05-30-battle-cordoba, 1348-06-01-assassination-attempt, 1348-06-12-battle-cape-ben-sakka, 1348-07-01-help-from-the-east, 1348-07-01-influence-crosses, 1348-07-01-war-chest]
+verse: "3:145"
 ---
 
 On the first of Rabīʿ al-Awwal in the year 749 the host destroyed one more Castilian column before [Qurṭuba](place:qurtuba), two thousand men caught in the open. It was a small victory and the last of that spring, for the pestilence was already in the land behind the army. Two days later Allāh tested the realm in its head.

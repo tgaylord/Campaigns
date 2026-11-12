@@ -7,6 +7,7 @@ people: [saad-ibn-yusuf, abu-inan-faris, rodrigo-of-silves, aiman-mamluk]
 places: [gharnata, fas, runda, marballa, qadis, sharish, jabal-tariq, tarifa, al-jazira-al-khadra, ishbiliyya, ukshunuba, tilimsan]
 wars: [second-marinid-submission-war]
 sources: [1365-08-31-moroccan-peace-castile, 1366-01-10-marinid-sevilla, 1366-05-12-castile-courts, 1367-01-30-mamluk-alliance, 1367-08-01-moroccan-claim, 1368-05-10-moroccan-insult, 1368-07-moroccan-hostility, 1368-07-26-castile-markets, 1368-07-30-spies-in-fas, 1368-09-26-castile-guarantees-al-gharb, 1368-10-24-marinid-war]
+verse: "22:39"
 ---
 
 While [Gharnāṭa](place:gharnata) was winning its freedom, [Fās](place:fas) was winning something else. On the thirteenth of Dhū al-Ḥijja 766 the Marīnids made their own peace with Qashtāla and took from it the whole northern shore of the Strait. That was eleven towns, from [Runda](place:runda) in its mountains and [Marballa](place:marballa) on the sea to [Qādis](place:qadis), [Sharīsh](place:sharish), [Jabal Ṭāriq](place:jabal-tariq), [Ṭarīfa](place:tarifa) and [al-Jazīra al-Khaḍrāʾ](place:al-jazira-al-khadra). These were the very gates through which Ṭāriq had come into al-Andalus. At court men said it was better that the shore should be held by Muslims than by Christians. The wiser ones answered that it was better still that it should not be held by Fās.

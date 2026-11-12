@@ -6,6 +6,7 @@ kind: chronicle
 people: [ismail-ibn-saad, tiramakhan-mali, khayr-al-din-al-jayyani]
 places: [ishbiliyya, qurtuba]
 sources: [1428-06-03-the-village-granaries, 1428-06-03-farms-mills-and-acequias, 1428-06-03-embassy-to-niani, 1428-05-25-primacy-revoked, 1391-07-coast-to-mali]
+verse: "12:47"
 ---
 
 The Emperor [Ismāʿīl](person:ismail-ibn-saad) had taken the umarāʾ's equality from them at the Jamāʿa of 831, and he knew it would not be forgotten. He did not try to win back the great houses. He went around them, to the people who lived on their lands. In the first half of that year, at his insistence, the crown began to build a granary in nearly every large village of the empire: a stone store, held in common, where a farming settlement could set aside part of each harvest against a bad year. The Emperor told the dīwān why. He was old enough to remember the wars with Qashtāla, when armies ate the harvest before it was in, bread doubled in price in a season, and the villages of the frontier went hungry while their lords sold grain in the cities. A village with its own store would not go hungry again, and it would know who had built the store.

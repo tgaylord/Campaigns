@@ -7,6 +7,7 @@ people: [saad-ibn-yusuf, joan-of-aragon, jean-of-france]
 places: [barshaluna, tarrakuna, gharnata, walba]
 wars: [war-of-the-upper-march]
 sources: [1374-03-09-battle-tarragona, 1374-02-19-battle-barcelona, 1374-03-09-france-busy, 1372-02-01-france-england, 1374-03-09-constructions]
+verse: "2:251"
 ---
 
 Our lord [Saʿd](person:saad-ibn-yusuf) gave the Catalans no time to gather again under the walls of [Barshalūna](place:barshaluna). He marched the whole army south along the coast after what was left of King [Joan](person:joan-of-aragon)'s army: thirteen hundred archers and a few dozen riders making for the old Roman walls of [Ṭarrakūna](place:tarrakuna).

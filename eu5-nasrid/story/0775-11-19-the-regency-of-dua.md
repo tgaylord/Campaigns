@@ -6,6 +6,7 @@ kind: chronicle
 people: [dua-marinid, saad-ibn-yusuf, sayyida-of-fezzan]
 places: [gharnata, barshaluna]
 sources: [1374-03-jamaa-tithes, 1374-05-02-jamaa-passes, 1371-02-24-spread-of-usury, 1374-02-19-battle-barcelona]
+verse: "3:159"
 ---
 
 While the sultan was in the Upper March, the court at [Gharnāṭa](place:gharnata) was run by a woman, and nobody who knew her was surprised. [Duʿāʾ](person:dua-marinid) the Marīnid had sat in the dīwān for nineteen years, under three husbands and two reigns. She had brought the court foreign learning and the nobles' displeasure with it, and she had spent the last thirteen of those years making the Christians of the new lands into Andalusīs. When our lord [Saʿd](person:saad-ibn-yusuf) rode north, he left the seal with her. The sultan's mother, [Sayyida](person:sayyida-of-fezzan), sat beside her in the dīwān. No one at court could remember the realm in more experienced hands.

@@ -7,6 +7,7 @@ people: [saad-ibn-yusuf, murad, abu-inan-faris, aiman-mamluk, jadila-bint-saad]
 places: [fas, qadis, marballa, jabal-tariq, tarifa, gharnata, tilimsan, runda]
 wars: [second-marinid-submission-war]
 sources: [1368-11-11-battle-cadiz, 1368-12-01-battle-marbella, 1368-12-13-birth-jadila-bint-saad, 1368-12-15-battle-gibraltar, 1368-12-25-battle-tarifa, 1369-01-31-battle-costa-blanca, 1369-02-08-battle-marbella, 1369-02-15-battle-ronda, 1369-03-the-south-subdued, 1369-03-strength]
+verse: "8:26"
 ---
 
 The sultan of [Fās](place:fas) came across the water himself to take what he had demanded. [Abū ʿInān Fāris](person:abu-inan-faris) was a zealot and a soldier, and he had planned many attacks in his life. The plague had marked him years before. He landed at [Qādis](place:qadis) with eight hundred men, the vanguard of the host that was to follow. On the twenty-ninth of Rabīʿ al-Awwal 770, eighteen days after the declaration, [Murād](person:murad) fell on him with three thousand three hundred. Seven hundred and forty Marīnids died and sixty were taken. Sixty-five of ours fell. Abū ʿInān escaped to his ships. A sultan who had come to demand submission sailed home with the smallest army he had ever commanded.

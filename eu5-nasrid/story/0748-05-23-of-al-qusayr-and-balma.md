@@ -7,6 +7,7 @@ people: [yusuf-i]
 places: [jayyan, qurtuba, al-qusayr, ishbiliyya, qadis, sharish, balma, gharnata]
 wars: [second-moroccan-war]
 sources: [1347-06-17-battle-jerez-de-la-frontera, 1347-06-21-battle-carpio, 1347-07-13-battle-sevilla, 1347-08-08-constantinople-falls, 1347-08-31-battle-palma-del-rio, 1347-09-14-the-war-so-far]
+verse: "3:160"
 ---
 
 After [Jayyān](place:jayyan) the sultan did not go home. He turned the host down the valley of the great river, the Wādī al-Kabīr, toward [Qurṭuba](place:qurtuba). The farms and granaries of the Castilian frontier burned behind it, for the Christians had burned ours for a hundred years and had taught us how. On the eleventh of Rabīʿ al-Awwal, at [al-Quṣayr](place:al-qusayr) on the river above Qurṭuba, a Castilian army of seven thousand stood across the road. The sultan had eighteen thousand. The battle was short. Four thousand three hundred Christians fell, against fourteen hundred of ours, and the road to Qurṭuba lay open.

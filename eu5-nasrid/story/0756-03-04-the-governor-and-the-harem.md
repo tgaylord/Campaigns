@@ -6,6 +6,7 @@ kind: chronicle
 people: [yusuf-i, dua-marinid, tizemt-hafsid, sayyida-of-fezzan, faraj-ibn-ismail, fatiu-ghana, shama-sahara, aisha-bint-faraj, yahya-rahhu]
 places: [qurtuba, gharnata, ishbiliyya, fas]
 sources: [1354-03-01-royal-marriage-central-sahara, 1354-07-governor-begun, 1354-08-12-marinid-marriage, 1354-11-19-hafsid-marriage, 1355-ghana-marriage, 1355-yahya-council, 1355-powerful-harem, 1355-yahya-dies, 1355-dua-council, 1355-03-15-governor-qurtuba, 1355-03-19-calm, 1355-03-28-birth-aisha]
+verse: "16:72"
 ---
 
 The so-called kingdom had been beaten, but our lord [Yūsuf](person:yusuf-i) knew that the valley of the great river had not been won. A man who means to keep a valley must sit in it. So on the sixteenth of Jumādā al-Ākhira in the year 755 the masons began work on a governor's seat in [Qurṭuba](place:qurtuba), the old city of the Umayyads. The road from [Gharnāṭa](place:gharnata), built when Qurṭuba was the capital, still ran through the hills. For two hundred and fifty days the court's men rebuilt halls that had stood empty since the Castilians came. On the twenty-ninth of Ṣafar 756 the governor took his seat. From that day the crown's word went up and down the river as easily as the barges, as far as [Ishbīliya](place:ishbiliyya).

@@ -6,6 +6,7 @@ kind: chronicle
 people: [yusuf-i, najib, joan-doriola, juan-manuel-enriquez]
 places: [balansiyya, jumalla, gharnata]
 sources: [1345-01-27-stability, 1345-01-27-loans, 1345-01-27-sovereignty, 1345-01-27-taifa-loyalty, 1345-01-27-court, 1345-01-27-conversion, 1345-07-23-betrothal-tunis, 1345-09-08-betrothal-ghana, 1346-08-01-debt, 1346-08-01-stability, 1346-10-16-moroccan-war]
+verse: "94:5-6"
 ---
 
 A state cannot be remade without being shaken. In the year after the Jamāʿa the realm grew unquiet. The calm that had held through the lean years was gone by Ramaḍān of 745, and the old men of the court could not remember the realm so restless in peace. The cause was the mending itself. The Jamāʿa's reforms were tearing down the old order of the realm and raising a new one in its place: a new Distribution of Power, a new custom at court, old offices and old rights unsettled. And all the while the debt to the estates gnawed at the crown's authority, for a lord who owes his nobles money cannot command them as a lord who does not. The realm was being rebuilt with the roof still on, and everyone under it felt the walls move.

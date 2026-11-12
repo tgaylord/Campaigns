@@ -6,6 +6,7 @@ kind: chronicle
 people: [muhammad-ibn-ismail-ibn-saad, rodrigo-de-borja, edward-v-of-england]
 places: [ishbiliyya, barshaluna]
 sources: [1440-06-the-catalan-privileges, 1440-06-the-genoese-embargo, 1432-05-01-trading-posts, 1432-07-27-peace-with-the-pope]
+verse: "83:1-3"
 ---
 
 The crusade had been fought with ships and swords. The war that followed it was fought with ledgers, and it had been coming for years. The merchants of Ishbīliya had outgrown the western sea. Their offices ran from Niani to Cairo, the Emperor's arsenals had given them a fleet, and the markets of Ishbīliya, [Barshalūna](place:barshaluna) and al-Ushbūna were each the first of their region. The merchants of Genoa, who had been the masters of that sea before them, had watched every one of those offices open.

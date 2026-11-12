@@ -7,6 +7,7 @@ people: [saad-ibn-yusuf, murad, ibn-al-khatib, aiman-mamluk, dua-marinid, ismail
 places: [balansiyya, tulaytula, gharnata, walba, ayamunt, ukshunuba]
 wars: [war-of-independence]
 sources: [1364-12-13-birth-umm-al-fath-bint-saad, 1365-03-saad-conqueror, 1365-07-14-battle-canete, 1365-09-02-peace-aragon, 1366-01-06-battle-san-clemente, 1366-03-08-birth-ismail-ibn-saad, 1366-04-05-peace-castile, 1366-04-13-taifa-al-gharb, 1366-04-05-the-south-burned]
+verse: "48:1"
 ---
 
 In Rabīʿ al-Awwal of the year 766 [Aiman](person:aiman-mamluk) gave the sultan his first child, a daughter. He named her [Umm al-Fatḥ](person:umm-al-fath-bint-saad), mother of victory, which was either a prayer or a boast. Aiman, a daughter of the Mamlūk house, is said to have answered that in Cairo it would be read as both. By spring the chancellor was recording a new title in the registers of the dīwān. The court had stopped calling [Saʿd](person:saad-ibn-yusuf) the prodigy. It called him *al-Fātiḥ*, the Conqueror. He was seventeen.

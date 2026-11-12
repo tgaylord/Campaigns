@@ -7,6 +7,7 @@ people: [muhammad-ibn-ismail-ibn-saad, ismail-ibn-muhammad-ibn-ismail, ahmad-ibn
 places: [shant-yaqub, banbaluna, ishbiliyya]
 wars: [war-of-shant-yaqub, war-of-the-mountains]
 sources: [1430-08-05-battle-oviedo, 1430-08-17-the-princes-opening, 1430-08-17-war-on-navarre, 1430-11-03-battle-bilbo, 1430-11-03-all-three-fall, 1430-11-03-peace-with-galicia, 1430-11-03-peace-with-navarre-and-castile, 1430-11-03-iberia-is-conquered, 1430-11-03-the-north-divided, 1430-11-03-taifa-of-galicia]
+verse: "59:2"
 ---
 
 King Diego had lost his capital, but he had not yet lost his kingdom. He gathered what men he still had in the east of it, three thousand two hundred, and in Dhū al-Qaʿda 833 he threw them at Oviedo, where the host of the Ṭāʾifa of Liyūn lay in the old capital of the Asturian kings. Liyūn's general was [Juan Cangas](person:juan-cangas), a Leonese of the faith, and he had five thousand six hundred men behind good walls. On 15 Dhū al-Qaʿda the Galicians came at him, and by evening there were none of them left. Not one man of Liyūn was lost. Jillīqiya had no army now, and its annexation was a question only of the day on which the Emperor would accept it.

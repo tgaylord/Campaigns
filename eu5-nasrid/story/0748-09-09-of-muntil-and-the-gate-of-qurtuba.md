@@ -7,6 +7,7 @@ people: [yusuf-i]
 places: [muntil, qurtuba, jayyan, al-qusayr, balma]
 wars: [second-moroccan-war]
 sources: [1347-10-04-battle-montiel, 1347-10-30-battle-montiel, 1347-12-13-battle-cordoba]
+verse: "2:249"
 ---
 
 In the autumn the Marīnids tried their fortune in the north. A Marīnid army of four thousand, with a handful of Tunisians, struck into the high plain of La Mancha. On the twenty-seventh of Jumādā al-Ākhira, at [Munṭīl](place:muntil), it met eight thousand Castilians. The Moroccans were beaten and fled. Yet they sold the field dearly: twelve hundred of them fell, and three thousand eight hundred of the enemy.

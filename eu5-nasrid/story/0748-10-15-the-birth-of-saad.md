@@ -6,6 +6,7 @@ kind: chronicle
 people: [saad-ibn-yusuf, yusuf-i, sayyida-of-fezzan, faraj-ibn-ismail, dua-marinid]
 places: [qurtuba, gharnata, fas]
 sources: [1348-01-18-birth-saad, 1348-01-18-betrothal-morocco]
+verse: "18:46"
 ---
 
 In the middle of Shawwāl in the year 748, while the host wintered on the frontier of [Qurṭuba](place:qurtuba), a rider came up from [Gharnāṭa](place:gharnata) with the news the court had waited for. The lady [Sayyida](person:sayyida-of-fezzan), daughter of the house of Murzuq in Fazzān, had given our lord [Yūsuf](person:yusuf-i) a son. He was named [Saʿd](person:saad-ibn-yusuf), which is good fortune, and the name was thought well chosen: he was born in the second year of the war, in a season of victories, with the pestilence still far off in the East. A son of the sultan's body stood before a brother in the succession, and from that day the court counted the infant, and no longer his uncle [Faraj](person:faraj-ibn-ismail), the heir of Gharnāṭa.

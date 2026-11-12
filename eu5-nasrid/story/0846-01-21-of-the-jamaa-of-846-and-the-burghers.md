@@ -6,6 +6,7 @@ kind: chronicle
 people: [muhammad-ibn-ismail-ibn-saad, ismail-ibn-muhammad-ibn-ismail, ahmad-ibn-muhammad-ibn-ismail, ismail-ibn-saad]
 places: [ishbiliyya]
 sources: [1442-06-01-national-assemblies, 1442-06-01-privileges-for-the-burghers, 1428-05-25-jamaa-against-primacy, 1439-07-15-the-emperor-a-scholar, 1440-06-the-genoese-embargo]
+verse: "42:38"
 ---
 
 The Emperor [Muḥammad](person:muhammad-ibn-ismail-ibn-saad) called the Jamāʿa to [Ishbīliya](place:ishbiliyya) in Muḥarram 846, and for once he did not tell his sons what he meant to say to it. The princes [Ismāʿīl](person:ismail-ibn-muhammad-ibn-ismail) and [Aḥmad](person:ahmad-ibn-muhammad-ibn-ismail) had steered the realm for thirteen years. They had argued him out of Qashtāla, bargained Majrīṭ's charter out of the umarāʾ, and spent a year of their lives appeasing the estates. They learned what he intended at the same moment as the assembly did. He was the Emperor, he told them afterwards, and he had read more about the empires of old than either of them.

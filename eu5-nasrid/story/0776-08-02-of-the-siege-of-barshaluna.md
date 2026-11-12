@@ -7,6 +7,7 @@ people: [saad-ibn-yusuf, ramadan-of-barqa, bolot-mamluk, ismail-ibn-saad, yusuf-
 places: [barshaluna, gharnata, jarunda, fas]
 wars: [war-of-the-upper-march]
 sources: [1374-10-25-malta-taken, 1374-11-12-battle-george-bay, 1374-10-the-princes-tutors, 1375-01-06-mamluk-army-catalonia, 1375-01-06-court-factions, 1374-05-23-battle-zuwara, 1374-06-24-battle-gharyan]
+verse: "9:71"
 ---
 
 Arghūn had no army left, but [Barshalūna](place:barshaluna) still had its walls. They were the walls of the old counts of the city, built on Roman ones, with the sea at their back where the Catalan galleys could come and go. In the last days of Dhū al-Ḥijja 775, with the Feast of the Sacrifice kept in camp, our lord [Saʿd](person:saad-ibn-yusuf) drew his lines around the city. The siege that followed was not the work of a season. Summer passed, and autumn, and the sultan's engineers counted the days by the stones they had brought down. The townsmen counted them by what was left in their granaries.

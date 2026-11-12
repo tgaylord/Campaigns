@@ -1,0 +1,911 @@
+[
+ {
+  "id": "2026-10-28",
+  "date": "2026-10-28",
+  "commits": 9,
+  "firstCommit": "f67a631",
+  "lastCommit": "a50e812",
+  "uncommitted": false,
+  "claudeSessions": [
+   "session_01BjCUTWMwSncdsoun2VQ9xv"
+  ],
+  "headlines": [
+   "[eu5-nasrid] Add campaign systems doc",
+   "[eu5-nasrid] Add the explorer site skeleton with sample data",
+   "[eu5-nasrid] Stop tracking Astro's generated .astro folder",
+   "[eu5-nasrid] Rebuild the explorer as an immersive React/D3 site",
+   "[eu5-nasrid] Restore deep links redirected by the Pages 404 page",
+   "[eu5-nasrid] First real checkpoint (1 April 1337) and the Atlas on the game's own map",
+   "[eu5-nasrid] Read saves with the shared 1.4 decoder",
+   "[eu5-nasrid] Second checkpoint (18 August 1337): Morocco's war on Castile",
+   "[eu5-nasrid] Third checkpoint (16 November 1337) with the estates' real power"
+  ],
+  "reached": {
+   "from": "1337-04-01",
+   "to": "1337-11-16"
+  },
+  "entries": [
+   "0738-01-02-the-marinid-war-upon-castile"
+  ],
+  "notes": [
+   "0738-01-20-ooc-the-first-checkpoint"
+  ],
+  "checkpoints": [
+   "1337-04-01",
+   "1337-08-18",
+   "1337-11-16"
+  ],
+  "people": [
+   "abu-said-faraj",
+   "alwa",
+   "bahar",
+   "faraj-ibn-ismail",
+   "faraj-ibn-muhammad",
+   "fatima-bint-al-ahmar",
+   "fatima-bint-ismail",
+   "gideon-ben-joshua",
+   "ibn-al-hakim",
+   "ibn-al-khatib",
+   "ismail-i",
+   "ismail-ibn-ismail",
+   "ismail-ibn-muhammad",
+   "ismail-ibn-nasr",
+   "maryam-bint-ismail",
+   "muhammad-i",
+   "muhammad-ibn-faraj",
+   "muhammad-ibn-ismail",
+   "muhammad-ibn-muhammad",
+   "muhammad-ii",
+   "muhammad-iii",
+   "muhammad-iv",
+   "nasr",
+   "qamar",
+   "sayyida-of-fezzan",
+   "yusuf-i",
+   "yusuf-ibn-muhammad",
+   "yusuf-ibn-nasr"
+  ],
+  "wars": [
+   "fate-of-tlemcen",
+   "moroccan-castilian-war"
+  ],
+  "places": [
+   "abdara",
+   "al-jazira-al-khadra",
+   "al-mansura",
+   "al-mariyya",
+   "antaqira",
+   "ballash",
+   "ballish-al-ahmar",
+   "basta",
+   "binar",
+   "fas",
+   "gharnata",
+   "hisn-al-munakkab",
+   "illura",
+   "ishbiliyya",
+   "jabal-tariq",
+   "jarghal",
+   "jayyan",
+   "lawsha",
+   "malaqa",
+   "marballa",
+   "mursiyya",
+   "muyaqar",
+   "qadis",
+   "qurtuba",
+   "runda",
+   "sabta",
+   "tanja",
+   "tarifa",
+   "tilimsan",
+   "urjuba",
+   "wadi-ash",
+   "washqa",
+   "wubira"
+  ],
+  "events": 12,
+  "removed": {
+   "entries": [],
+   "checkpoints": [],
+   "people": []
+  }
+ },
+ {
+  "id": "2026-10-29",
+  "date": "2026-10-29",
+  "commits": 51,
+  "firstCommit": "ca3a154",
+  "lastCommit": "9ade942",
+  "uncommitted": false,
+  "claudeSessions": [
+   "session_01BjCUTWMwSncdsoun2VQ9xv"
+  ],
+  "headlines": [
+   "[eu5-nasrid] Eighteenth checkpoint (4 June 1349): brothers in faith",
+   "[eu5-nasrid] Event: the alliance with Tunis lapses (June 1349)",
+   "[eu5-nasrid] Event: the plague's toll in November 1349 (210,000 dead)",
+   "[eu5-nasrid] Event: the war shifts by July 1350",
+   "[eu5-nasrid] Reading of 2 September 1350: the reckoning of the Black Death across Iberia and the world",
+   "[eu5-nasrid] December 1350: Aragon's peace; the Balearics to Morocco, Cagliari to Tunis",
+   "[eu5-nasrid] January 1351: Saʿd betrothed to Aiman, daughter of the Mamluk Sultan",
+   "[eu5-nasrid] January 1351: the heir Saʿd is a Prodigy",
+   "[eu5-nasrid] The Pestilence: the emptied cities as its heart, closing with the situation; Saʿd's tutors",
+   "[eu5-nasrid] January 1351: the quiet offer to Castile for Qarmūna and the silver of Qusanṭīna",
+   "[eu5-nasrid] Checkpoint 3 June 1351: the silver of Qusanṭīna and Morocco's surrender",
+   "[eu5-nasrid] Chronicle: the war, the peaces and the plague, for the Books of the Balance and the Pestilence"
+  ],
+  "reached": {
+   "from": "1338-01-22",
+   "to": "1351-06-03"
+  },
+  "entries": [
+   "0739-11-14-the-road-through-mursiyya",
+   "0740-02-26-the-ghuzat-al-mujahidin",
+   "0740-05-05-the-day-of-uryula",
+   "0741-01-05-the-second-battle-of-uryula",
+   "0741-02-16-the-peace-of-balansiyya",
+   "0747-07-01-the-houses-of-healing",
+   "0747-07-01-the-summons-of-the-marinids",
+   "0748-02-06-the-day-of-jayyan",
+   "0748-05-23-of-al-qusayr-and-balma",
+   "0748-09-09-of-muntil-and-the-gate-of-qurtuba",
+   "0748-10-15-the-birth-of-saad",
+   "0749-02-15-the-coming-of-the-pestilence",
+   "0749-04-03-the-madman-and-the-flame",
+   "0749-08-09-of-wages-medicines-and-maids",
+   "0749-11-07-the-peace-of-qurtuba",
+   "0750-03-16-the-embassy-to-al-qahira",
+   "0750-08-24-the-great-dying",
+   "0751-06-28-the-emptied-cities",
+   "0751-10-07-the-islands",
+   "0751-11-20-the-prodigy-and-the-daughter-of-cairo",
+   "0752-04-07-the-silver-of-qusantina"
+  ],
+  "notes": [
+   "0739-11-14-ooc-the-first-war",
+   "0741-02-16-ooc-the-peace",
+   "0749-11-07-ooc-the-war",
+   "0751-06-28-ooc-the-reckoning"
+  ],
+  "checkpoints": [
+   "1339-05-24",
+   "1339-09-02",
+   "1340-05-30",
+   "1340-08-11",
+   "1340-08-28",
+   "1340-10-30",
+   "1341-09-08",
+   "1343-05-20",
+   "1345-01-27",
+   "1346-08-01",
+   "1346-10-18",
+   "1346-11-08",
+   "1348-07-01",
+   "1349-01-27",
+   "1349-06-04",
+   "1351-06-03"
+  ],
+  "people": [
+   "aiman-mamluk",
+   "alfonso-xi",
+   "joan-doriola",
+   "juan-manuel-enriquez",
+   "khalid-ibn-yahya",
+   "maria-of-portugal",
+   "najib",
+   "peter-of-castile",
+   "peter-of-portugal",
+   "saad-ibn-yusuf",
+   "yahya-rahhu"
+  ],
+  "wars": [
+   "second-moroccan-war",
+   "war-on-aragon"
+  ],
+  "places": [
+   "al-karash",
+   "al-qant",
+   "al-qusayr",
+   "al-quy",
+   "alsh",
+   "ayura",
+   "balansiyya",
+   "balma",
+   "bunyul",
+   "daniya",
+   "istijja",
+   "jumalla",
+   "liriya",
+   "muntil",
+   "qandiya",
+   "qarmuna",
+   "qusantina",
+   "shalba",
+   "shaluqa",
+   "shatiba",
+   "uryula"
+  ],
+  "events": 165,
+  "removed": {
+   "entries": [],
+   "checkpoints": [],
+   "people": []
+  }
+ },
+ {
+  "id": "2026-10-30",
+  "date": "2026-10-30",
+  "commits": 77,
+  "firstCommit": "7a8c150",
+  "lastCommit": "abc178b",
+  "uncommitted": false,
+  "claudeSessions": [
+   "session_01BjCUTWMwSncdsoun2VQ9xv"
+  ],
+  "headlines": [
+   "[eu5-nasrid] Checkpoint 24 October 1368: Fās declares the second war for Granada's submission; Mamlūk alliance renewed; Castile meddles in al-Gharb",
+   "[eu5-nasrid] Cádiz; the south subdued by March 1369; strength counted as men under arms (levies + regulars), with the March 1369 war screen",
+   "[eu5-nasrid] Checkpoint 18 November 1369: the first year of the Second Marīnid War, fourteen battles, estate loans and mercenaries, the Mamlūks land",
+   "[eu5-nasrid] June 1370: Morocco nearly beaten (Trent's account)",
+   "[eu5-nasrid] Checkpoint 13 September 1370: the Peace of the North Shore; the Battle for the Strait ends (14 September) and Book II closes",
+   "[eu5-nasrid] Second Marīnid War: Granada's losses from Trent's war screen (about 13,000)",
+   "[eu5-nasrid] Checkpoints 2 October 1366, 7 August 1367, 13 May 1368: the years between the wars",
+   "[eu5-nasrid] Book II written through to its close (1355–1370); north shore and Portuguese places in the gazetteer; conversion milestones",
+   "[eu5-nasrid] Book IV: roads and libraries, the Great Madrasa of Qurṭuba, the slow return, the reckoning of the faithful",
+   "[eu5-nasrid] Open Book V, The Marches (كتاب الثغور): Of the Three Marches",
+   "[eu5-nasrid] The Atlas revamped: provinces as the unit, lenses (realms, faith, tongue, people, ruin, hold), click to split a province, pan and zoom, battle pins, play the years",
+   "[eu5-nasrid] The Kingdoms (الممالك) and the Middle Sea: the world beyond the realm"
+  ],
+  "reached": {
+   "from": "1340-08-23",
+   "to": "1370-09-20"
+  },
+  "entries": [
+   "0741-02-28-the-two-taifas",
+   "0741-05-06-the-marinids-lose-the-shore",
+   "0742-03-25-the-defection-of-ibn-al-khatib",
+   "0743-12-24-the-lean-years",
+   "0745-06-02-the-jamaa-of-744",
+   "0747-06-28-the-debt-paid",
+   "0752-12-09-the-departing-of-the-pestilence",
+   "0753-02-20-the-royal-hajj",
+   "0753-02-20-the-works-of-the-regency",
+   "0754-06-02-the-kingdom-of-ishbiliyya",
+   "0756-03-04-the-governor-and-the-harem",
+   "0758-07-12-roads-libraries-and-the-weavers",
+   "0759-09-02-the-great-madrasa-of-qurtuba",
+   "0763-10-07-the-marinid-demand",
+   "0764-10-19-the-death-of-al-hajj-yusuf",
+   "0765-08-16-the-regent-who-did-not-last",
+   "0765-12-13-zafra-and-the-walls-of-lisbon",
+   "0767-07-23-the-peace-of-independence",
+   "0768-01-26-the-slow-return",
+   "0770-03-11-the-marinids-on-the-northern-shore",
+   "0770-07-21-the-first-winter",
+   "0771-04-17-the-year-of-the-counterattack",
+   "0772-02-20-the-reckoning-of-the-faithful",
+   "0772-02-21-the-throne-that-endures",
+   "0772-02-22-of-the-three-marches",
+   "0772-02-27-the-survey-of-the-kingdoms"
+  ],
+  "notes": [
+   "0747-06-28-ooc-the-end-of-book-one",
+   "0772-02-20-ooc-how-the-faithful-were-counted",
+   "0772-02-21-ooc-the-end-of-book-two",
+   "0772-02-27-ooc-how-the-kingdoms-were-reckoned"
+  ],
+  "checkpoints": [
+   "1353-02-02",
+   "1353-07-05",
+   "1355-06-16",
+   "1359-03-15",
+   "1360-06-26",
+   "1363-05-20",
+   "1363-08-02",
+   "1364-09-11",
+   "1365-07-01",
+   "1366-04-05",
+   "1366-10-02",
+   "1366-11-06",
+   "1367-08-07",
+   "1368-05-13",
+   "1368-10-24",
+   "1369-11-18",
+   "1370-09-13"
+  ],
+  "people": [
+   "abu-inan-faris",
+   "abu-ishaq-ibrahim",
+   "aisha-bint-faraj",
+   "aisha-bint-yusuf",
+   "ali-ibn-yusuf",
+   "bolot-mamluk",
+   "charles-of-bohemia",
+   "dua-marinid",
+   "edward-of-england",
+   "fatima-bint-yusuf",
+   "fatiu-ghana",
+   "fernando-of-castile",
+   "ismail-ibn-saad",
+   "ismail-ibn-yusuf",
+   "jadila-bint-saad",
+   "jadila-bint-yusuf",
+   "jean-of-france",
+   "jeronimo-of-castile",
+   "joan-of-aragon",
+   "maryam-bint-yusuf",
+   "muhammad-ibn-yusuf",
+   "muhammad-ottoman",
+   "murad",
+   "nasr-al-istijji",
+   "osman-marinid",
+   "pope-abundius",
+   "robert-of-anjou",
+   "rodrigo-of-silves",
+   "shama-sahara",
+   "tizemt-hafsid",
+   "umm-al-fath-bint-saad",
+   "umm-al-fath-bint-yusuf",
+   "zineb-bint-faraj"
+  ],
+  "wars": [
+   "mamluk-cilician-war",
+   "marinid-submission-war",
+   "second-marinid-submission-war",
+   "sevillan-revolt",
+   "war-of-independence"
+  ],
+  "places": [
+   "al-ushbuna",
+   "arkush",
+   "ayamunt",
+   "baja",
+   "labla",
+   "sharish",
+   "shidhuna",
+   "shilb",
+   "tulaytula",
+   "ukshunuba",
+   "walba"
+  ],
+  "events": 163,
+  "removed": {
+   "entries": [],
+   "checkpoints": [],
+   "people": []
+  }
+ },
+ {
+  "id": "2026-10-31",
+  "date": "2026-10-31",
+  "commits": 1,
+  "firstCommit": "2bdffeb",
+  "lastCommit": "2bdffeb",
+  "uncommitted": false,
+  "claudeSessions": [
+   "session_01BjCUTWMwSncdsoun2VQ9xv"
+  ],
+  "headlines": [
+   "[eu5-nasrid] Reading of 1 November 1370: Ismail's marriage, the annexation of Murcia begun, the claim to reconquer Iberia, the mercenaries paid off"
+  ],
+  "reached": {
+   "from": "1370-09-14",
+   "to": "1370-11-01"
+  },
+  "entries": [],
+  "notes": [],
+  "checkpoints": [],
+  "people": [
+   "hippolyte-of-villa-di-chiesa"
+  ],
+  "wars": [],
+  "places": [],
+  "events": 5,
+  "removed": {
+   "entries": [],
+   "checkpoints": [],
+   "people": []
+  }
+ },
+ {
+  "id": "2026-11-01",
+  "date": "2026-11-01",
+  "commits": 114,
+  "firstCommit": "ac42a6f",
+  "lastCommit": "4573f01",
+  "uncommitted": false,
+  "claudeSessions": [
+   "session_01BjCUTWMwSncdsoun2VQ9xv"
+  ],
+  "headlines": [
+   "[eu5-nasrid] A jewellers' charter for Ishbīliya, 1402",
+   "[eu5-nasrid] Reading of 18 July 1403: the jewellers' doubling, the estates, the grandsons",
+   "[eu5-nasrid] The Crusade of 806: the Pope declares war on Aragon",
+   "[eu5-nasrid] With French access, the Emperor marches on Avignon, July 1404",
+   "[eu5-nasrid] Correct the Papal army's strength in the crusade",
+   "[eu5-nasrid] The Sephardim of al-Mariyya protected, October 1404",
+   "[eu5-nasrid] Restore the Papal army's strength from the save (270 men)",
+   "[eu5-nasrid] The Peace of Avignon: the crusade ends in humiliation and gold",
+   "[eu5-nasrid] The Risings of 807: Toledo, Estremadura and Ciudad Rodrigo rise",
+   "[eu5-nasrid] The death of the Emperor Saʿd, 2 March 1405",
+   "[eu5-nasrid] The Emperor Ismāʿīl's first battle: Cuenca, 18 March 1405",
+   "[eu5-nasrid] The Accession of Ismāʿīl, 1405"
+  ],
+  "reached": {
+   "from": "1370-11-01",
+   "to": "1405-03-31"
+  },
+  "entries": [
+   "0772-08-07-the-moneylenders-of-ishbiliya",
+   "0775-09-06-the-battle-before-barshaluna",
+   "0775-09-24-the-pursuit-to-tarrakuna",
+   "0775-11-19-the-regency-of-dua",
+   "0776-08-02-of-the-siege-of-barshaluna",
+   "0776-10-11-of-the-peace-of-the-upper-march",
+   "0776-10-12-of-the-restoration-of-al-andalus",
+   "0777-08-20-of-the-war-of-restoration-and-the-day-of-shalba",
+   "0778-04-15-of-the-mercenaries-and-the-slaughter-at-agramunt",
+   "0779-12-07-of-saraqusta-and-the-peace-of-the-restoration",
+   "0780-01-02-of-tulaytula-and-the-count-of-the-christians",
+   "0781-08-13-of-the-move-to-ishbiliya",
+   "0785-02-26-of-the-kingdom-of-tulaytula",
+   "0787-12-04-of-the-pilgrimage-that-came-too-late",
+   "0791-08-15-of-the-hijaba-the-hisba-and-the-death-of-dua",
+   "0794-03-25-of-al-hajj-saad",
+   "0794-03-26-of-the-western-ocean",
+   "0797-04-12-of-the-days-of-banbaluna-and-ejea",
+   "0797-09-03-of-portalegre-and-the-peace-of-ramadan",
+   "0797-09-03-of-the-encircling-sea-and-fifteen-years-of-building"
+  ],
+  "notes": [
+   "0772-08-07-ooc-measuring-the-north"
+  ],
+  "checkpoints": [
+   "1373-12-01",
+   "1375-03-15",
+   "1375-03-16",
+   "1375-06-05",
+   "1378-04-06",
+   "1379-12-02",
+   "1394-03-04",
+   "1395-06-22",
+   "1395-08-05",
+   "1404-02-03",
+   "1404-10-22",
+   "1405-01-07",
+   "1405-03-31"
+  ],
+  "people": [
+   "abu-al-fadl-marinid",
+   "agustin-arce",
+   "aisha-ottoman",
+   "alfons-de-borja",
+   "alfonso-de-onate",
+   "bernarda-of-murcia",
+   "caterina-de-borja",
+   "charlotte-of-crato",
+   "dolca-of-murcia",
+   "francesc-de-montsoriu",
+   "ismail-ibn-muhammad-al-abid",
+   "khayr-al-din-al-jayyani",
+   "muhammad-ibn-ismail-ibn-saad",
+   "muhammad-ibn-ismail-ibn-yusuf",
+   "pedro-of-castile",
+   "ramadan-of-barqa",
+   "rodrigo-de-borja",
+   "saad-ibn-faraj",
+   "saad-ibn-ismail",
+   "saad-ibn-ismail-ibn-saad",
+   "saad-ibn-yusuf-ibn-saad",
+   "yusuf-ibn-ismail",
+   "yusuf-ibn-saad"
+  ],
+  "wars": [
+   "crusade-of-806",
+   "revolt-of-tulaytula",
+   "risings-of-807",
+   "war-of-the-aragonese-restoration",
+   "war-of-the-league",
+   "war-of-the-upper-march"
+  ],
+  "places": [
+   "banbaluna",
+   "barshaluna",
+   "batalyaws",
+   "jarunda",
+   "larida",
+   "majrit",
+   "marida",
+   "qalat-ayyub",
+   "qunka",
+   "saraqusta",
+   "shalamanka",
+   "shaluqa-al-kubra",
+   "shantarin",
+   "tarrakuna",
+   "turtusha",
+   "yabura"
+  ],
+  "events": 181,
+  "removed": {
+   "entries": [],
+   "checkpoints": [],
+   "people": []
+  }
+ },
+ {
+  "id": "2026-11-03",
+  "date": "2026-11-03",
+  "commits": 27,
+  "firstCommit": "bfb2a33",
+  "lastCommit": "219ebb4",
+  "uncommitted": false,
+  "claudeSessions": [
+   "session_01BjCUTWMwSncdsoun2VQ9xv"
+  ],
+  "headlines": [
+   "[eu5-nasrid] Madrasas in every town, 14 January 1413",
+   "[eu5-nasrid] Chronicle: the captains of 811 and the spice trade; the madrasas of 815",
+   "[eu5-nasrid] Education of the People, 1 May 1413, in honour of the Emperor Saʿd",
+   "[eu5-nasrid] The Jamāʿa of 817: mercenary contracts taken from the umarāʾ; the landlords of the north",
+   "[eu5-nasrid] The Jamāʿa of 817: checkpoint 1414-10-24; the umarāʾ near-mutinous; deaths of 1412",
+   "[eu5-nasrid] Jamāʿa entry: most ṭāʾifa thrones are Naṣrid, not all but one",
+   "[eu5-nasrid] Funchal, the first town beyond the sea (1412); the tribes estate rule",
+   "[eu5-nasrid] Ismāʿīl is greedy, not silver-tongued (trait corrected)",
+   "[eu5-nasrid] Catalan Merchant Privileges back for good (1 September 1410)",
+   "[eu5-nasrid] Fix Hijri month of the Catalan privileges' return",
+   "[eu5-nasrid] Estates reading of 31 December 1415; checkpoint 1416-01-01; Shalamanka annexed; Maxorata; universities",
+   "[eu5-nasrid] Shalamanka's annexation accepted: ṭāʾifas in the far north, the south integrated"
+  ],
+  "reached": {
+   "from": "1370-09-18",
+   "to": "1416-05-20"
+  },
+  "entries": [
+   "0797-10-17-of-the-diwan-al-insha-and-the-two-taifas",
+   "0799-11-19-of-majrit-the-acequias-and-the-eternal-isles",
+   "0800-12-20-of-the-grandsons-and-the-prince-from-benabarre",
+   "0805-12-27-of-the-prospectors-and-the-jamaa-of-the-markets",
+   "0807-04-16-of-the-crusade-of-806-and-the-peace-of-avignon",
+   "0807-09-16-of-the-risings-of-807-and-the-death-of-the-emperor-saad",
+   "0808-03-06-of-granadilla-the-end-of-the-risings-and-al-gharb",
+   "0811-03-12-of-the-old-capital-and-the-sons-of-muhammad",
+   "0814-07-14-of-cuellar-porto-and-the-end-of-portugal",
+   "0815-03-14-of-the-captains-of-811-and-the-pepper-of-the-indies",
+   "0816-01-29-of-the-madrasas-of-815",
+   "0817-08-09-of-the-jamaa-of-817-and-the-landlords-of-the-north"
+  ],
+  "notes": [
+   "0807-09-16-ooc-the-last-ten-years-of-saad"
+  ],
+  "checkpoints": [
+   "1408-08-05",
+   "1410-06-29",
+   "1411-11-01",
+   "1414-10-24",
+   "1416-01-01"
+  ],
+  "people": [
+   "abu-al-hasan-ali-ibn-saad",
+   "abu-hammu-rahhu",
+   "ahmad-ibn-ismail-ibn-saad",
+   "ahmad-ibn-ismail-ibn-yusuf",
+   "ahmad-ibn-muhammad-ibn-ismail",
+   "ahmad-ibn-yusuf-ibn-ismail",
+   "isabel-de-montsoriu",
+   "ismail-ibn-muhammad-ibn-ismail",
+   "jadila-bint-saad-ibn-faraj",
+   "magdalena-de-borja",
+   "maryam-bint-saad-ibn-faraj",
+   "muhammad-ibn-yusuf-ibn-faraj",
+   "yusuf-ibn-ismail-ibn-yusuf"
+  ],
+  "wars": [
+   "war-of-jilliqiya"
+  ],
+  "places": [],
+  "events": 59,
+  "removed": {
+   "entries": [],
+   "checkpoints": [],
+   "people": []
+  }
+ },
+ {
+  "id": "2026-11-04",
+  "date": "2026-11-04",
+  "commits": 11,
+  "firstCommit": "84bdb49",
+  "lastCommit": "465a536",
+  "uncommitted": false,
+  "claudeSessions": [
+   "session_01BjCUTWMwSncdsoun2VQ9xv"
+  ],
+  "headlines": [
+   "[eu5-nasrid] The Letter from Denia (1419); Equals of the Arabs; the Catalans to be accepted",
+   "[eu5-nasrid] The road from Ishbīliya to Balansiyya (1419)",
+   "[eu5-nasrid] The Balansiyya road is also a military road toward France",
+   "[eu5-nasrid] The Balansiyya road begun in September 1419; annexation expected August 1420",
+   "[eu5-nasrid] Maps of Cabo Verde; a colonising expedition sails (March 1420)",
+   "[eu5-nasrid] Add 1420-08-11 checkpoint: Balansiyya annexed, the three empires of the East",
+   "[eu5-nasrid] Add 1420-09-04 checkpoint: the fall of Castile; the naft sale of 1421",
+   "[eu5-nasrid] Add 1423-11-05 and 1424-08-14 checkpoints: the Mamluk war on the Ottomans",
+   "[eu5-nasrid] Log May 1428: spies north, the armouries, the Jamaa against the Primacy of Nobility",
+   "[eu5-nasrid] Add 1428-05-25 checkpoint: the Jamaa of 831; chronicle backlog",
+   "[eu5-nasrid] Log the first half of 1428: village granaries, rural works, the embassy to Niani"
+  ],
+  "reached": {
+   "from": "1411-11-27",
+   "to": "1428-06-03"
+  },
+  "entries": [
+   "0822-08-10-of-the-universities-the-letter-from-denia-and-the-road-to-balansiyya",
+   "0823-07-21-of-daniel-the-green-cape-and-angra",
+   "0823-08-01-of-the-household-of-the-emperor-balansiyya-and-fermoselle",
+   "0823-08-01-the-second-survey-of-the-kingdoms",
+   "0823-08-25-of-the-petty-kings-of-the-mountains",
+   "0827-09-18-of-the-three-brides-and-the-peace-of-kayseri",
+   "0831-02-11-of-the-islands-of-the-ocean-and-the-naft-of-ethiopia",
+   "0831-08-10-of-the-jamaa-of-831-and-the-armouries",
+   "0831-08-19-of-the-village-granaries-and-the-road-to-niani"
+  ],
+  "notes": [
+   "0823-08-01-ooc-the-world-in-1420",
+   "0827-09-18-ooc-the-war-that-wasnt",
+   "0831-08-10-ooc-the-saves-of-1428"
+  ],
+  "checkpoints": [
+   "1420-08-11",
+   "1420-09-04",
+   "1423-11-05",
+   "1424-08-14",
+   "1428-05-25"
+  ],
+  "people": [
+   "ahmad-ottoman",
+   "aktai-mamluk",
+   "alfonso-gaston",
+   "diego-villamarin",
+   "eduardo-de-avellaneda",
+   "jose-fernando-tunon",
+   "temur",
+   "tiramakhan-mali",
+   "umm-al-fath-bint-muhammad",
+   "yahya-marinid"
+  ],
+  "wars": [
+   "mamluk-ottoman-war",
+   "rising-of-zamora"
+  ],
+  "places": [],
+  "events": 65,
+  "removed": {
+   "entries": [],
+   "checkpoints": [],
+   "people": [
+    "yusuf-ibn-ismail-ibn-yusuf"
+   ]
+  }
+ },
+ {
+  "id": "2026-11-05",
+  "date": "2026-11-05",
+  "commits": 14,
+  "firstCommit": "55634eb",
+  "lastCommit": "a240800",
+  "uncommitted": false,
+  "claudeSessions": [
+   "session_01BjCUTWMwSncdsoun2VQ9xv"
+  ],
+  "headlines": [
+   "[eu5-nasrid] SYSTEMS: England, Castile's ally, after the Hundred Years' War",
+   "[eu5-nasrid] Log the Pyrenean forts and the integration of Catalonia",
+   "[eu5-nasrid] Log the Angevin Empire: Edward crowned in Paris, 11 June 1429",
+   "[eu5-nasrid] The Angevin Empire: same borders, new name and ambitions; England renamed from 11 June 1429",
+   "[eu5-nasrid] Add 1429-07-02 checkpoint: the death of Ismail II, the accession of Muhammad V",
+   "[eu5-nasrid] The War of Shant Yaqub: declaration checkpoint, Santiago, the Emperor's household",
+   "[eu5-nasrid] Santiago falls (15 July 1430); the cathedral destroyed on the Emperor's orders",
+   "[eu5-nasrid] 1430-08-17 checkpoint: Oviedo, the War of the Mountains on Navarre and Castile, Bilbao",
+   "[eu5-nasrid] The Peace of Safar (3 Nov 1430): Galicia, Navarre and Castile annexed, the north settled; Book V closed",
+   "[eu5-nasrid] The Crusade of 835: the warmonger's name, the second crusade, Genoa, the arsenals; Book VII opens",
+   "[eu5-nasrid] 1432-05-01 checkpoint: the arsenals under way, the crusade's first winter, Cape Verde",
+   "[eu5-nasrid] Trading posts on the Kaabu coast and trade offices at Cairo, Marrakesh and Sijilmasa (May 1432)"
+  ],
+  "reached": {
+   "from": "1428-07-27",
+   "to": "1432-05-01"
+  },
+  "entries": [
+   "0832-02-22-of-the-english-crown-of-france",
+   "0832-09-25-of-the-death-of-the-emperor-ismail-and-the-two-princes",
+   "0833-10-23-of-the-war-of-shant-yaqub-and-the-shrine-of-the-apostle",
+   "0834-02-16-of-the-war-of-the-mountains-and-the-peace-of-safar",
+   "0834-02-16-the-close-of-the-book-of-the-marches",
+   "0835-08-29-of-the-trading-posts-of-the-gold-coast-and-the-spice-road",
+   "0835-08-29-of-the-warmongers-name-the-crusade-of-835-and-the-arsenals"
+  ],
+  "notes": [
+   "0834-02-18-ooc-the-saves-of-1430",
+   "0835-08-29-ooc-the-crusade-saves"
+  ],
+  "checkpoints": [
+   "1428-11-16",
+   "1428-12-01",
+   "1429-07-02",
+   "1430-05-18",
+   "1430-08-17",
+   "1430-11-03",
+   "1430-11-05",
+   "1431-10-01",
+   "1432-05-01"
+  ],
+  "people": [
+   "abd-al-wahhab-barakat",
+   "abu-al-hasan-ali-ibn-ahmad",
+   "berenguer-ramon-de-montsoriu",
+   "diego-sotomaior",
+   "edward-v-of-england",
+   "fernando-son-of-pedro",
+   "juan-cangas",
+   "juan-son-of-fernando",
+   "khayr-al-din-khayyam",
+   "philippe-vii-of-france",
+   "pope-fabrizio-ricci",
+   "vukmir-jankovic"
+  ],
+  "wars": [
+   "crusade-of-835",
+   "war-of-shant-yaqub",
+   "war-of-the-mountains"
+  ],
+  "places": [
+   "shant-yaqub"
+  ],
+  "events": 61,
+  "removed": {
+   "entries": [],
+   "checkpoints": [],
+   "people": []
+  }
+ },
+ {
+  "id": "2026-11-07",
+  "date": "2026-11-07",
+  "commits": 8,
+  "firstCommit": "efc730b",
+  "lastCommit": "6670024",
+  "uncommitted": false,
+  "claudeSessions": [
+   "session_01BjCUTWMwSncdsoun2VQ9xv"
+  ],
+  "headlines": [
+   "[eu5-nasrid] The Peace of Dhu al-Qa'da ends the Crusade of 835; the decree on the taifas (July 1432)",
+   "[eu5-nasrid] Peace of Dhu al-Qa'da: the reparations' figures",
+   "[eu5-nasrid] The Shaykh al-Islam event (27 September 1434)",
+   "[eu5-nasrid] The two explorers of al-Ushbuna (1 May 1436)",
+   "[eu5-nasrid] SYSTEMS: how the Angevin Empire and the Kingdom of France fit together",
+   "[eu5-nasrid] 1435-10-10 checkpoint: the turn to the sea; the Hajj, the Sufi Shaykh al-Islam, Catalonia annexed, the golden age",
+   "[eu5-nasrid] 1438-01-16 checkpoint: the admiral prince Yusuf and his three wives",
+   "[eu5-nasrid] Majrit's charter and the Land Rights; the scholar Emperor; the trade war; Madinat al-Zahra' offered (1438-1440)"
+  ],
+  "reached": {
+   "from": "1422-08-12",
+   "to": "1440-10-01"
+  },
+  "entries": [
+   "0835-11-28-of-the-peace-of-the-pope-and-the-decree-on-the-taifas",
+   "0838-11-04-of-the-emperors-pilgrimage-and-the-sufi-shaykh-al-islam",
+   "0839-10-14-of-the-arsenals-finished-and-the-turn-to-the-sea",
+   "0840-08-22-of-barshaluna-returned-the-hegemony-of-letters-and-the-new-world",
+   "0841-07-19-of-the-admiral-prince-and-his-three-wives",
+   "0841-10-12-of-the-charter-of-majrit-and-the-land-rights-of-the-umara",
+   "0843-02-02-of-the-emperor-who-became-a-scholar",
+   "0844-01-09-of-the-trade-war-with-genoa-and-the-angevins"
+  ],
+  "notes": [
+   "0835-11-28-ooc-the-peace-and-the-decree",
+   "0840-08-22-ooc-the-saves-of-1435-and-after"
+  ],
+  "checkpoints": [
+   "1432-07-27",
+   "1435-10-10",
+   "1438-01-16"
+  ],
+  "people": [
+   "abd-al-jalil-al-qbasai",
+   "amie-of-mali",
+   "fatima-bint-yusuf-ibn-ismail",
+   "khalid-ibn-abi-hammu",
+   "mumina-bint-muslih-al-din",
+   "raimundo-coimbra",
+   "yusuf-ibn-ismail-ibn-muhammad"
+  ],
+  "wars": [],
+  "places": [],
+  "events": 45,
+  "removed": {
+   "entries": [],
+   "checkpoints": [],
+   "people": []
+  }
+ },
+ {
+  "id": "2026-11-08",
+  "date": "2026-11-08",
+  "commits": 8,
+  "firstCommit": "7ea5604",
+  "lastCommit": "90f53a1",
+  "uncommitted": false,
+  "claudeSessions": [
+   "session_01BjCUTWMwSncdsoun2VQ9xv"
+  ],
+  "headlines": [
+   "[eu5-nasrid] Book VIII, The Golden Century: the Jamaa of 846, the princes' mending, the Golden Century, the Jamaa of 847",
+   "[eu5-nasrid] The Radiant City restored and the Thalassocracy (1440-1442)",
+   "[eu5-nasrid] The World hall, the Golden Century dashboard, and a lighter site",
+   "[eu5-nasrid] UI pass: one checkpoint everywhere, new war pages, the House on its main line, reading mode",
+   "[eu5-nasrid] SYSTEMS: how to read estate satisfaction",
+   "[eu5-nasrid] Correct the realm's debt at every checkpoint",
+   "[eu5-nasrid] Keep the design studies: round one, and the brief for round two",
+   "[eu5-nasrid] Keep the design studies: round two, the Chronicle as a book"
+  ],
+  "reached": {
+   "from": "1440-10-01",
+   "to": "1443-06-26"
+  },
+  "entries": [
+   "0844-05-04-of-the-radiant-city-restored",
+   "0846-01-21-of-the-jamaa-of-846-and-the-burghers",
+   "0846-03-29-of-the-princes-mending-and-the-golden-century",
+   "0847-02-27-of-the-jamaa-of-847-and-the-island-of-fernando-po"
+  ],
+  "notes": [],
+  "checkpoints": [
+   "1442-06-11"
+  ],
+  "people": [],
+  "wars": [],
+  "places": [],
+  "events": 6,
+  "removed": {
+   "entries": [],
+   "checkpoints": [],
+   "people": []
+  }
+ },
+ {
+  "id": "2026-11-11",
+  "date": "2026-11-11",
+  "commits": 0,
+  "firstCommit": null,
+  "lastCommit": null,
+  "uncommitted": true,
+  "claudeSessions": [],
+  "headlines": [],
+  "reached": null,
+  "entries": [],
+  "notes": [],
+  "checkpoints": [],
+  "people": [
+   "abu-al-hasan-ali-ibn-ahmad-ibn-muhammad",
+   "ahmad-ibn-ismail-ibn-muhammad",
+   "aisha-bint-ahmad-ibn-muhammad",
+   "fatima-bint-saad-ibn-ahmad",
+   "lubna-bint-ismail-ibn-muhammad",
+   "muhammad-ibn-saad-ibn-ahmad",
+   "shams-bint-ismail-ibn-muhammad",
+   "shams-bint-muhammad",
+   "umm-al-fath-bint-ismail-ibn-muhammad",
+   "yusuf-ibn-ahmad-ibn-muhammad"
+  ],
+  "wars": [],
+  "places": [],
+  "events": 0,
+  "removed": {
+   "entries": [],
+   "checkpoints": [],
+   "people": []
+  }
+ }
+]

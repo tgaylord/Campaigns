@@ -6,6 +6,7 @@ kind: chronicle
 people: [saad-ibn-yusuf, muhammad-ibn-ismail, maryam-bint-yusuf, ismail-ibn-muhammad-al-abid]
 places: [majrit, tulaytula, qarmuna, istijja, shaluqa-al-kubra, qurtuba, binar, al-ushbuna, malaqa, shantarin, al-mariyya, ishbiliyya]
 sources: [1396-03-13-majrit-and-tulaytula, 1397-08-14-infrastructure, 1397-08-14-explorers-push-south]
+verse: "21:30"
 ---
 
 The amīr Muḥammad had built [Majrīṭ](place:majrit) as a watchtower, to guard the road to [Ṭulayṭula](place:tulaytula) from the Christians beyond the mountains. Five hundred years later the Emperor [Saʿd](person:saad-ibn-yusuf) looked at it with a merchant's eye. It stood in the middle of the peninsula, where the roads from the four quarters crossed, with the Guadarrama behind it for timber and iron and the plain before it for wheat. A town at a crossroads, he told the dīwān, will grow whether a king helps it or not, and a king who helps it will be paid back many times over. In Jumādā al-Ākhira 798 he set the crown to building a second heart for al-Andalus on the Tagus and the Manzanares. Ṭulayṭula, which had made blades since before the Arabs came, was given weaponsmiths. Mines and lumber mills went up toward the Guadarrama, and wheat farms on the plain, and seven building sites stood open between the two cities at once.

@@ -6,6 +6,7 @@ kind: chronicle
 people: [saad-ibn-yusuf, rodrigo-of-silves, maria-of-portugal, jeronimo-of-castile, faraj-ibn-ismail]
 places: [gharnata, baja, batalyaws, marida, tulaytula, saraqusta, al-ushbuna, balansiyya, barshaluna, qurtuba, mursiyya, fas, malaqa, qadis, antaqira]
 sources: [1370-09-14-strait-ends, 1370-09-13-state, 1366-04-05-the-south-burned, 1367-10-04-castile-portugal-union, 1370-09-18-death-of-faraj]
+verse: "28:5"
 ---
 
 The day after the reckoning of the Strait was read, our lord [Saʿd](person:saad-ibn-yusuf) had the great map of al-Andalus brought out of the treasury of [Gharnāṭa](place:gharnata). It had been drawn in the days of the caliphs, and no sultan of the house of Naṣr had unrolled it in living memory, because it only showed what had been lost. Across its northern half ran three lines in red ink, the *thughūr*: the marches where the land of Islam met the kingdoms of the Christians. The Lower March ran from [Bāja](place:baja) to [Baṭalyaws](place:batalyaws) and [Mārida](place:marida). The Middle March was the march of [Ṭulayṭula](place:tulaytula). The Upper March was the march of [Saraqusṭa](place:saraqusta) on the Ebro. In the caliphs' day the marches had been the realm's shield. For a hundred and fifty years since, they had been the roads by which the Christians came south.

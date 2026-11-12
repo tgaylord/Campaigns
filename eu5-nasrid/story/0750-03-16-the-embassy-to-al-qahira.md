@@ -6,6 +6,7 @@ kind: chronicle
 people: [yusuf-i]
 places: [gharnata, jayyan, ishbiliyya]
 sources: [1349-alhambra-foundations, 1349-06-01-estates-reading, 1349-06-01-castilian-patriots, 1349-06-01-embassy-to-cairo, 1349-06-02-mamluk-alliance, 1349-06-04-sovereignty, 1349-06-tunis-alliance-ends]
+verse: "49:10"
 ---
 
 With the gold of the peace our lord [Yūsuf](person:yusuf-i) did what the princes of his house have always done when Allāh gave them a season of fortune. He built. In Rabīʿ al-Awwal of the year 750 the masons laid the foundations of a new wing of al-Ḥamrāʾ on the Sabīka hill above [Gharnāṭa](place:gharnata). Its vaults were to be hung with *muqarnas* like the cells of a honeycomb, and its walls cut with verses in praise of the house of Naṣr. The sultan meant it as a letter to Qashtāla and to Fās alike. The house of Naṣr is not a guest in al-Andalus that may be asked to leave. It means to stay, and it builds as those who mean to stay build.

@@ -7,6 +7,7 @@ people: [yusuf-i, fatima-bint-al-ahmar, faraj-ibn-ismail, yusuf-ibn-muhammad, is
 places: [gharnata, tilimsan, fas]
 wars: [fate-of-tlemcen, moroccan-castilian-war]
 sources: [1337-04-03-death-fatima, 1337-04-22-joins-tlemcen-war, 1337-04-25-peace-tlemcen, 1337-05-01-strait-begins, 1337-05-01-parias, 1337-05-03-tunis-marriage, 1337-07-09-promote-sovereignty, 1337-07-31-morocco-war-on-castile]
+verse: "3:54"
 ---
 
 In the name of Allāh, the Merciful, the Compassionate. Here begins the account of the reign of our lord the sultan Abū al-Ḥajjāj [Yūsuf](person:yusuf-i), son of [Ismāʿīl](person:ismail-i), may Allāh make his days a garden and his banners a shade. He sat in the Alhambra above [Gharnāṭa](place:gharnata) in the nineteenth year of his age, and the realm he held was eighteen towns and their districts, close to four hundred and fifty thousand souls. It was a jewel set in a narrow ring, with Qashtāla pressing on the north and the sea at its back.

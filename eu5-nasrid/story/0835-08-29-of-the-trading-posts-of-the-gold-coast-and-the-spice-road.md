@@ -6,6 +6,7 @@ kind: chronicle
 people: [muhammad-ibn-ismail-ibn-saad, tiramakhan-mali, ismail-ibn-saad]
 places: [ishbiliyya]
 sources: [1432-05-01-trading-posts, 1428-06-03-embassy-to-niani, 1432-05-the-dar-al-sinaa]
+verse: "106:1-2"
 ---
 
 A crusade was being fought in the waters of Sardinia, and the Emperor [Muḥammad](person:muhammad-ibn-ismail-ibn-saad) was thinking about the rivers of Guinea. His father [Ismāʿīl](person:ismail-ibn-saad) had sent envoys to Niani and won the Mansa's word that Andalusī merchants would pay no tariff anywhere in Mālī. The son meant to use it. In the spring of 835 the crown began eight trading posts on the coast of Kaabu, the Mansa's vassal on the Gambia and the rivers south of it: at the mouth of the Gambia, at Bintang, on the Casamance and at Diaboudior, at Cacheu and Bissau, and at Bafatá and Tankular. They were stores and wharves more than towns, where the ships that watered at the islands of the Green Cape could load the gold that came down the rivers from the mines of the interior without sending a single caravan across the Ṣaḥrāʾ.

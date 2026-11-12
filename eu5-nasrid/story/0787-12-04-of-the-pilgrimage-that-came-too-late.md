@@ -6,6 +6,7 @@ kind: chronicle
 people: [saad-ibn-yusuf, alfons-de-borja, ismail-ibn-saad, dua-marinid, aiman-mamluk, bolot-mamluk]
 places: [ishbiliyya]
 sources: [1383-04-30-hajj-planned, 1385-05-03-county-of-teruel, 1385-08-23-teruel-crushed, 1385-08-23-the-emperor-departs-on-hajj, 1385-10-28-al-qahira, 1386-01-06-the-season-passed, 1386-jamaa-theological-seminaries]
+verse: "2:286"
 ---
 
 The pilgrimage was put off once more. In Rabīʿ al-Awwal 787 the lords of the Aragonese uplands rose against King [Alfons](person:alfons-de-borja) of the renewed Arghūn, and proclaimed a County of Teruel in the inner country of his kingdom. It was a small rising, but it was a rising in a ṭāʾifa the Emperor had made and promised to protect, and he would not leave for Makka with it unsettled. It took the summer. On 16 Rajab 787 the County of Teruel was crushed and its towns returned to King Alfons. That same day the Emperor's caravan left [Ishbīliya](place:ishbiliyya) for the east.
@@ -18,4 +19,4 @@ He came too late. When the caravan reached the holy city, the standing at ʿAraf
 
 But misfortune turned to fortune on the road back. The scholars the Emperor had sat with in al-Qāhira had taken his measure as he had taken theirs. When he offered them halls, stipends and students in Ishbīliya, many of them came west with him. The Jamāʿa had to be persuaded to pay for them. The ʿulamāʾ backed the measure warmly, since it was their own order the Emperor proposed to enlarge, and the assembly voted to sponsor theological seminaries across the realm for ten years. A pilgrimage that never reached ʿArafāt had brought al-Azhar to Ishbīliya.
 
-*But perhaps you hate a thing and it is good for you; and Allāh knows, while you know not.*
+*Allāh does not charge a soul except with that within its capacity.*

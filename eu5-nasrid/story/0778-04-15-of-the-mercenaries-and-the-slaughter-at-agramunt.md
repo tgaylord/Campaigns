@@ -7,6 +7,7 @@ people: [francesc-de-montsoriu, saad-ibn-yusuf, abu-inan-faris, dua-marinid, alf
 places: [shalba, barshaluna, gharnata, jarunda, fas]
 wars: [war-of-the-aragonese-restoration]
 sources: [1376-01-21-catalans-destroyed-at-barcelona, 1376-03-01-battle-cape-ben-sakka, 1376-05-25-battle-girona, 1376-06-12-second-battle-girona, 1376-06-mercenaries-and-the-faithful, 1376-08-moroccan-gift, 1376-09-01-battle-agramunt, 1376-12-catalan-shipwrights]
+verse: "8:60"
 ---
 
 The spring of 777 was the worst of the war. A week after [Shalba](place:shalba), the Pope at Avignon put two thousand men ashore on the Catalan coast. On 27 Shaʿbān they caught the Catalans of [Francesc](person:francesc-de-montsoriu) who had escaped Shalba, two thousand five hundred and sixty-seven of them, before the walls of [Barshalūna](place:barshaluna), and killed or took every one without losing a man. On 8 Shawwāl, off Cape Ben Sakka on the coast of Ifrīqiya, the fleets of al-Burtughāl and Qashtāla, twenty-eight sail under the Portuguese admiral Rafael Araújo, found the Catalan fleet of twenty and sank or took nineteen. After that the sea belonged to the Iberians. By the spring a Castilian army had Barshalūna itself under siege, the war was going plainly against us, and men in the markets of [Gharnāṭa](place:gharnata) asked one another whether the Emperor [Saʿd](person:saad-ibn-yusuf) had overreached.

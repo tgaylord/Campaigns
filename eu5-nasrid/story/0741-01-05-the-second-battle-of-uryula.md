@@ -7,6 +7,7 @@ people: [ibn-al-khatib, yahya-rahhu, yusuf-i]
 places: [uryula, mursiyya]
 wars: [war-on-aragon, moroccan-castilian-war]
 sources: [1339-11-08-volunteers-withdraw, 1340-03-09-estate-loans, 1340-05-26-battle-mursiyya, 1340-05-30-uryula-falls, 1340-05-30-road-cut, 1340-05-30-nobles-discontent, 1340-06-20-second-battle-uryula]
+verse: "2:250"
 ---
 
 All that winter the host lay before [Uryūla](place:uryula). When the supplies ran short, the Volunteers of the Faith under [Yaḥyā Raḥḥū](person:yahya-rahhu) drew back to find bread, while [Ibn al-Khaṭīb](person:ibn-al-khatib) kept the siege lines with the rest. The sultan raised more men to carry food and paid for everything with borrowed gold. By the ninth of Ramaḍān in the year 740 the treasury owed the estates of the realm more than thirteen hundred and fifty dīnārs. The estates lent freely and asked their price in return. With every dīnār lent, their voice in the dīwān grew louder and the crown's grew fainter. By spring the nobles spoke louder in the affairs of the state than all the rest together, and the crown's own voice was barely heard.

@@ -6,6 +6,7 @@ kind: chronicle
 people: [yusuf-i, joan-doriola, juan-manuel-enriquez, yusuf-ibn-muhammad]
 places: [gharnata, balansiyya, jumalla, shatiba, uryula]
 sources: [1340-08-14-cb-independence, 1340-08-23-taifas, 1340-08-23-taifa-rulers, 1340-08-23-strengthen-government, 1340-08-28-loans-repaid, 1340-08-28-demobilised, 1340-08-28-taifa-loyalty]
+verse: "13:11"
 ---
 
 The thirteen towns won from Arghūn were a gift that could choke the one who swallowed it. Nearly two hundred thousand souls lived in them, and three in four were Christians, Catalans and Aragonese who had never known a Muslim lord. The dīwān of [Gharnāṭa](place:gharnata) had neither the clerks nor the soldiers to govern them from the Alhambra. The sultan's counsellors remembered how the old caliphate had fallen. The great city had tried to hold everything, and in the end it held nothing.

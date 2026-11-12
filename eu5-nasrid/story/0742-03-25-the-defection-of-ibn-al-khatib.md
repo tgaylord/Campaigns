@@ -6,6 +6,7 @@ kind: chronicle
 people: [ibn-al-khatib, yusuf-i, ismail-ibn-ismail, yusuf-ibn-muhammad]
 places: [uryula, balansiyya, gharnata]
 sources: [1341-07-08-ibn-al-khatib-castile, 1341-09-08-cabinet, 1341-09-08-loans, 1341-09-08-burghers, 1341-09-08-sovereignty, 1341-09-08-valencia-conversion]
+verse: "3:8"
 ---
 
 The chronicler must now set down what he would rather leave out.

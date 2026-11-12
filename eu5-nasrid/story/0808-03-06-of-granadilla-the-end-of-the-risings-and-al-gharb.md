@@ -7,6 +7,7 @@ people: [ismail-ibn-saad, khalid-ibn-yahya, saad-ibn-ismail]
 places: [qunka, shalamanka, al-ushbuna, majrit, shantarin, yabura, ukshunuba, shilb, baja, ishbiliyya]
 wars: [risings-of-807]
 sources: [1405-01-28-battle-buitrago, 1405-03-18-battle-cuenca, 1405-07-02-battle-granadilla, 1405-07-08-ciudad-rodrigo-crushed, 1405-07-10-battle-cuenca-ii, 1405-08-05-battle-lisbon, 1405-08-24-the-risings-crushed, 1405-09-01-al-gharb-annexed, 1395-08-05-diwan-al-insha]
+verse: "8:46"
 ---
 
 The new Emperor [Ismāʿīl](person:ismail-ibn-saad) inherited three rebel kingdoms and an army on the march. He had never been thought a soldier, and he did not pretend to be one. He set himself one task, to end the risings before the year was out, and gave every order in the dīwān to that end. The court, which had heard him called a man who told everyone what they wished to hear, now heard him tell the treasurers what the war would cost, and the generals what he expected of them, and both found he meant it.

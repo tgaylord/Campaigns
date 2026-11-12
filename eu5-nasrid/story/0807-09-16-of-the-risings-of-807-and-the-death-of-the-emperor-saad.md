@@ -7,6 +7,7 @@ people: [saad-ibn-yusuf, saad-ibn-ismail, ismail-ibn-saad, muhammad-ibn-ismail-i
 places: [shantarin, yabura, majrit, shalamanka, tulaytula, al-ushbuna, batalyaws, marida, qunka, barshaluna, saraqusta, ishbiliyya, al-mariyya]
 wars: [risings-of-807]
 sources: [1404-10-22-peace-of-avignon, 1405-01-01-the-risings, 1405-03-02-death-of-the-emperor, 1405-03-02-accession-of-ismail, 1403-07-18-state, 1405-03-18-battle-cuenca, 1363-08-02-state]
+verse: "55:26-27"
 ---
 
 The Pope's gold was barely counted when the dīwān turned back to Qashtāla. Since Shawwāl its scribes had been drawing up a new claim on the lands the Castilians still held, and by Rabīʿ al-Thānī 807 the work was well advanced. The ʿulamāʾ had begun to speak of the fourth war of the Istirdād. It did not come that winter, because the north rose first.

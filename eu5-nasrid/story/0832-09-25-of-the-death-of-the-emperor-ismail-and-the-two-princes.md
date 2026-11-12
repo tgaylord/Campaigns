@@ -6,6 +6,7 @@ kind: chronicle
 people: [ismail-ibn-saad, muhammad-ibn-ismail-ibn-saad, ismail-ibn-muhammad-ibn-ismail, ahmad-ibn-muhammad-ibn-ismail, edward-v-of-england, berenguer-ramon-de-montsoriu, saad-ibn-yusuf, isabel-de-montsoriu, umm-al-fath-bint-muhammad, jadila-bint-saad-ibn-faraj, yusuf-ibn-saad]
 places: [ishbiliyya, barshaluna, qurtuba, balansiyya, al-ushbuna]
 sources: [1428-12-01-forts-of-jaca-and-talarn, 1428-12-01-catalonia-to-the-crown, 1429-06-11-the-angevin-empire, 1429-06-28-death-of-the-emperor-ismail, 1429-06-28-accession-of-muhammad-v, 1429-06-28-the-two-princes, 1405-03-02-death-of-the-emperor]
+verse: "31:34"
 ---
 
 The last winter of the Emperor [Ismāʿīl](person:ismail-ibn-saad) was spent looking north. The English were on the far side of the Pyrenees now, and he ordered two fortresses built in the mountains: at Jaca, in the Ṭāʾifa of Arghūn, and at Talarn in the Pallars, in the Ṭāʾifa of Catalonia. He also told the dīwān that Catalonia itself must come into the crown, as Balansiyya had, and that he expected the work done within nine years. Its lord was his own cousin [Berenguer Ramon](person:berenguer-ramon-de-montsoriu), the son of Yūsuf I's daughter Fāṭima, and a good soldier. The Emperor did not think that made [Barshalūna](place:barshaluna) any less important. A great port on a border with the English was not a thing to leave to a ṭāʾifa, however loyal.

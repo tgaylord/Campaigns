@@ -7,6 +7,7 @@ people: [sayyida-of-fezzan, dua-marinid, saad-ibn-yusuf, joan-of-aragon, bolot-m
 places: [mursiyya, gharnata, balansiyya, barshaluna]
 wars: [war-of-the-upper-march]
 sources: [1373-01-16-state, 1373-01-16-court, 1372-12-13-murcia-fezzan, 1373-01-16-hajj, 1373-10-01-march-on-valencia, 1373-12-01-war-on-aragon, 1373-12-01-mamluks-join, 1374-02-19-battle-barcelona]
+verse: "3:123"
 ---
 
 In the winter of 774 the last of the seven loans of the Marīnid war was paid back to the estates, every dirham of it, with the interest the dīwān had promised. The sultan had refused to think of a new war, or even of the pilgrimage, while he still owed his own lords money. A man who stood at ʿArafa in debt, he said, stood there with another man's purse. Now the treasury took in half again what it spent, every estate paid more into it than before, and even the north shore, which had yielded almost nothing at the peace, had begun to pay. His mother [Sayyida](person:sayyida-of-fezzan) had taken a seat in the dīwān beside [Duʿāʾ](person:dua-marinid), and a marriage had bound the ṭāʾifa of [Mursiyya](place:mursiyya) to Fezzan, her homeland beyond the desert. Only then did the sultan begin to make ready for the Hajj.

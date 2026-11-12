@@ -6,6 +6,7 @@ kind: chronicle
 people: [ismail-ibn-saad]
 places: [ishbiliyya]
 sources: [1421-06-01-tamaraceite, 1421-08-01-the-secret-of-the-naft, 1422-09-01-santo-antao, 1423-02-01-santa-cruz-das-flores, 1425-03-01-fogo, 1425-06-01-tedote, 1425-07-01-horta, 1427-08-01-santiago-cape-verde, 1427-12-01-ponta-delgada, 1420-08-01-angra]
+verse: "16:15"
 ---
 
 When Angra was founded on Terceira in 823, the empire had three towns in the Ocean. Seven years later it had eleven, and the clerks of the Dīwān al-Inshāʾ had to keep a separate register for them, because the islands were too far apart to be written up with any province of the mainland.

@@ -6,6 +6,7 @@ kind: chronicle
 people: [ismail-ibn-saad, khayr-al-din-al-jayyani, saad-ibn-yusuf]
 places: [ishbiliyya, jayyan, washqa]
 sources: [1391-06-08-guns-for-mali, 1391-07-coast-to-mali, 1392-02-atlantic-expeditions]
+verse: "55:24"
 ---
 
 While the Emperor was on the road to Makka, merchants arrived at [Ishbīliya](place:ishbiliyya) from the far side of the desert. They had been sent by the Mansa of Mali himself, the lord of the gold country, whose forebear Mansa Mūsā had passed through al-Qāhira on pilgrimage spending so much gold that its price fell for years. They had come to buy the *madāfiʿ* of the empire's arsenals: the fire-tubes and small bombards whose roar the Naṣrids had first loosed at the walls of [Washqa](place:washqa) nearly seventy years before. They wanted the craft of casting them as well. The crown prince [Ismāʿīl](person:ismail-ibn-saad), ruling as regent, weighed it. Some in the dīwān warned that arms sold to a friend can be turned against a friend's trade. The prince judged otherwise. Mali was far away and rich, and it would pay a fifth of a year's income for the privilege. It would also become a grateful friend in the lands where the gold came from. He sold, and the Mansa's merchants went home content.

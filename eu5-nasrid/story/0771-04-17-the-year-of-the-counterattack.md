@@ -7,6 +7,7 @@ people: [saad-ibn-yusuf, khalid-ibn-yahya, murad, osman-marinid, juan-manuel-enr
 places: [fas, sharish, shaluqa, qadis, mursiyya, gharnata, malaqa, antaqira, hisn-al-munakkab, jarghal, al-mariyya, labla, runda, abdara]
 wars: [second-marinid-submission-war]
 sources: [1369-04-05-battle-jerez-de-la-frontera, 1369-04-28-battle-jerez-de-la-frontera, 1369-05-12-battle-sanlucar, 1369-06-02-battle-cadiz, 1369-06-26-battle-cadiz, 1369-estate-loans, 1369-09-16-battle-malaga, 1369-10-15-battle-antequera, 1369-11-08-battle-almunecar, 1369-11-18-state]
+verse: "8:45"
 ---
 
 In the spring [Fās](place:fas) began to pour men across the Strait, and it did not stop. Its fleet was eighty ships strong and ruled the water, so it could land wherever it chose, and it chose everywhere. On the twenty-sixth of Shaʿbān 770 a Granadan column of two thousand one hundred attacked a Marīnid force of equal size at [Sharīsh](place:sharish) and was destroyed. [Murād](person:murad) retook the town in Ramaḍān with seven thousand men and five hundred of al-Gharb, and in Shawwāl he cleared [Shalūqa](place:shaluqa) at the mouth of the river.

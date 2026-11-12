@@ -7,6 +7,7 @@ people: [saad-ibn-yusuf, ismail-ibn-saad, muhammad-ibn-ismail-ibn-saad, ahmad-ib
 places: [gharnata, ishbiliyya, shant-yaqub, qurtuba]
 wars: [war-of-shant-yaqub, war-of-the-mountains]
 sources: [1430-11-03-iberia-is-conquered, 1430-11-03-the-north-divided, 1430-11-03-taifa-of-galicia, 1430-07-15-santiago-falls]
+verse: "21:105"
 ---
 
 Here ends the Book of the Marches.

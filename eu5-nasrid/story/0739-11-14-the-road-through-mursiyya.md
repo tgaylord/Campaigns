@@ -7,6 +7,7 @@ people: [yusuf-i, ibn-al-khatib, gideon-ben-joshua]
 places: [gharnata, mursiyya, ishbiliyya, qarmuna, shaluqa]
 wars: [moroccan-castilian-war, war-on-aragon]
 sources: [1338-11-01-battle-ishbiliyya, 1338-11-09-tunis-joins, 1339-02-03-alliance-tunis, 1339-02-28-battle-shaluqa, 1339-03-10-battle-ishbiliyya, 1339-03-25-battle-qarmuna, 1339-04-06-battle-shaluqa, 1339-05-14-death-gideon, 1339-05-24-cb-aragon, 1339-05-24-murcia-held, 1339-05-24-war-on-aragon, 1339-05-24-ibn-al-khatib-commands]
+verse: "65:3"
 ---
 
 Of the war that the Marīnid sultan made upon Qashtāla, there is little to tell that gladdens the heart. In Rabīʿ al-Thānī of the year 739 the Castilians met the men of Fās beneath the walls of [Ishbīliya](place:ishbiliyya), nearly eighteen thousand against fewer than four, and the field was theirs. That winter and spring they won again at [Shalūqa](place:shaluqa), at Ishbīliya a second time, at [Qarmūna](place:qarmuna), where six hundred men of the Maghrib stood against twelve thousand, and at Shalūqa once more. Five times the infidel prevailed, and five times the banners of the Maghrib went back across the plain. Tūnis entered the war in that same Rabīʿ, bringing Ṭarābulus, Qābis, Qafṣa, Tuqqurt and Bijāya behind it. On the twenty-second of Rajab our lord bound himself to the Ḥafṣids by alliance, as he was already bound to them by marriage.

@@ -7,6 +7,7 @@ people: [saad-ibn-yusuf, nasr-al-istijji, dua-marinid, aiman-mamluk, yusuf-i]
 places: [gharnata, ishbiliyya, qurtuba, balansiyya]
 wars: [war-of-independence]
 sources: [1364-01-18-saad-of-age, 1364-01-18-death-nasr, 1364-01-saad-marries-dua, 1364-03-01-battle-canete, 1364-04-05-battle-castellon, 1364-05-19-ulama-displeased, 1364-05-19-jamaa-summoned]
+verse: "4:28"
 ---
 
 On the twelfth of Rabīʿ al-Thānī in the year 765 our lord [Saʿd](person:saad-ibn-yusuf) turned sixteen and took the government of the realm into his own hands. The regency of [Naṣr al-Istijjī](person:nasr-al-istijji) ended that morning, and so, by evening, did Naṣr. The court gave out that he had died of a sickness. The huntsmen who had ridden out with him told a different story, of a fall in the hills and a horse that came home without its rider, and were told to stop telling it. The chronicler writes down both and judges neither. Allāh knows best.

@@ -6,6 +6,7 @@ kind: chronicle
 people: [faraj-ibn-ismail, nasr-al-istijji, yusuf-i, najib]
 places: [istijja, gharnata, qurtuba, qusantina, jayyan, ishbiliyya]
 sources: [1351-10-01-great-madrasa, 1351-10-06-najib-to-castile, 1351-11-08-unlimited-export, 1352-01-01-hall-of-ambassadors, 1352-04-capital-qurtuba, 1352-04-castilian-unrest, 1352-04-jizya-remitted]
+verse: "3:103"
 ---
 
 While the sultan walked toward Makka, the regent [Faraj](person:faraj-ibn-ismail) did not sit idle in the Alhambra. He governed as his brother would have wished, which is to say he built. His audiences were crowded with the lords of the realm, and loudest among them was [Naṣr al-Istijjī](person:nasr-al-istijji), of the house that takes its name from [Istijja](place:istijja), a man who could talk through a whole afternoon of council and leave it no wiser than he found it.

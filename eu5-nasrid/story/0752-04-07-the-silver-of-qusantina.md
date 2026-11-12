@@ -7,6 +7,7 @@ people: [yusuf-i, alfonso-xi, abu-inan-faris]
 places: [gharnata, ishbiliyya, qarmuna, qusantina, qadis, runda, marballa]
 wars: [second-moroccan-war]
 sources: [1351-01-silver-for-silence, 1351-05-21-qarmuna-qusantina, 1351-06-03-moroccan-surrender, 1351-06-03-state]
+verse: "12:21"
 ---
 
 The dīwān of [Gharnāṭa](place:gharnata) watched the last year of the war as a merchant watches two men bidding against each other for the same bale. Qashtāla was bled white by the pestilence and stood at the very edge of defeat. A little gold sent to the Marīnids might have pushed it over: gold for ships and for the wages of the raiders on the coast of Arghūn. Fās was bled less, but it was beaten on this shore and ruled now by the young sultan [Abū ʿInān Fāris](person:abu-inan-faris). And Gharnāṭa, which had made its own peace, held the balance between them.

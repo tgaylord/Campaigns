@@ -6,6 +6,7 @@ kind: chronicle
 people: [saad-ibn-yusuf, aiman-mamluk, bolot-mamluk, muhammad-ottoman, jean-of-france, edward-of-england, charles-of-bohemia, pope-abundius, robert-of-anjou, abu-inan-faris, abu-ishaq-ibrahim, jeronimo-of-castile, joan-of-aragon]
 places: [gharnata, fas, tilimsan]
 sources: [1370-09-13-the-world, 1367-10-04-castile-portugal-union, 1367-01-30-mamluk-alliance, 1370-09-12-peace-morocco]
+verse: "49:13"
 ---
 
 When the map of the caliphs hung in the Hall of Ambassadors, our lord [Saʿd](person:saad-ibn-yusuf) saw that it showed only al-Andalus, and he asked for the rest of the world. He told the chancery to make him a survey of the kingdoms like the one Ibn Faḍl Allāh al-ʿUmarī wrote in Cairo a generation before, *The Roads of the Eyes through the Kingdoms of the Cities*. It was to say who ruled each kingdom, how many towns and men it had, whom it loved and whom it hated. The scribes questioned the Genoese factors in [Gharnāṭa](place:gharnata), the Mamlūk envoys, the captives of the last war and the pilgrims coming home from the East. At the end of Ṣafar 772 they laid before him a list of the powers of the world in order of their weight, and this is its substance.

@@ -6,6 +6,7 @@ kind: chronicle
 people: [saad-ibn-yusuf, khalid-ibn-yahya]
 places: [ishbiliyya, qusantina, istijja]
 sources: [1402-01-17-highland-prospecting-survey, 1402-01-18-prospecting-commission, 1402-03-09-iron-at-al-iskuriyal, 1402-04-26-silver-at-qusantina, 1402-06-11-gems-at-qrabaqa, 1402-08-03-survey-returns, 1402-08-burghers-privileges, 1402-08-the-umara, 1402-09-jamaa-of-the-markets, 1402-09-jewellery-charter, 1403-07-18-state]
+verse: "17:35"
 ---
 
 The hills of al-Andalus had fed the caliphs with silver and iron, and the Emperor [Saʿd](person:saad-ibn-yusuf) wanted to know what they still held. In Jumādā al-Ākhira 804 he sent a survey into the highlands: prospectors to walk the streambeds and hammer the outcrops, and assayers to test what they found. He gave the command to [Khālid ibn Yaḥyā Raḥḥū](person:khalid-ibn-yahya), fifty-nine years old, son of the captain of the Volunteers of the Faith, once of the dīwān and once the general who won the second half of the Marīnid war. Khālid had a builder's training and a soldier's legs, and he was the man the court sent whenever no prince of the house could go himself. When the treasurers asked how much the assayers might spend, the Emperor told them to spare nothing: a survey done cheaply would find only what it was paid to find.

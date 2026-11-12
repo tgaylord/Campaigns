@@ -6,6 +6,7 @@ kind: chronicle
 people: [ismail-ibn-saad, saad-ibn-yusuf, fatima-bint-yusuf, isabel-de-montsoriu, saad-ibn-ismail-ibn-saad, maryam-bint-saad-ibn-faraj, abu-al-hasan-ali-ibn-saad]
 places: [qunka, al-ushbuna, shantarin]
 sources: [1409-09-18-death-of-fatima, 1410-04-17-birth-of-abu-al-hasan-ali, 1411-11-01-the-end-of-portugal, 1413-01-14-madrasas-everywhere, 1413-05-01-education-of-the-people, 1397-08-14-infrastructure]
+verse: "20:114"
 ---
 
 In Jumādā al-Ūlā 812 the house of Naṣr lost [Fāṭima](person:fatima-bint-yusuf), the daughter of Yūsuf I who had married into the Catalan house of Montsoriu. She had been given to Francesc de Montsoriu in the year of the Restoration, when the Ṭāʾifa of Catalonia was made, and she left behind a son who ruled Catalonia, a daughter married to the lord of Shalamanka, and another, [Isabel](person:isabel-de-montsoriu), who was the wife of the heir. So the blood of Yūsuf I ran in three of the ṭāʾifas and in the crown itself. In Dhū al-Ḥijja of the same year a son was born to the Emperor's son [Saʿd](person:saad-ibn-ismail-ibn-saad) and the Shaykha [Maryam](person:maryam-bint-saad-ibn-faraj) of [Qūnka](place:qunka). They named him [Abū al-Ḥasan ʿAlī](person:abu-al-hasan-ali-ibn-saad), and the frontier had its first heir of the new line.

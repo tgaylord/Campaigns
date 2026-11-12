@@ -7,6 +7,7 @@ people: [ibn-al-khatib, yusuf-i]
 places: [uryula]
 wars: [war-on-aragon]
 sources: [1339-11-01-shadhili-order, 1339-11-08-battle-uryula, 1339-11-08-siege-uryula]
+verse: "3:126"
 ---
 
 At the end of Rabīʿ al-Thānī in the year 740 there came to the court a delegation of the Shādhilī shaykhs, sent from the great zāwiyas of Salā and Tiṭwān with letters from the chamber of the Marīnid sultan. They are not wanderers of the desert but men of the law and of the *Ḥikam* of Ibn ʿAṭāʾ Allāh, as easy at a merchant's table as at a palace door. They offered to found a zāwiya in our land and to lend us their brotherhood on both shores of the Strait. Our lord welcomed them, for theirs is a coin that the Christian kings cannot mint.

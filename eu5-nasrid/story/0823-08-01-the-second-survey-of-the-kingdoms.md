@@ -6,6 +6,7 @@ kind: chronicle
 people: [ismail-ibn-saad, saad-ibn-yusuf, temur, ahmad-ottoman, muhammad-ottoman, aisha-ottoman, aktai-mamluk, bolot-mamluk, umm-al-fath-bint-saad, yahya-marinid, abu-al-fadl-marinid, jadila-bint-yusuf, pedro-of-castile]
 places: [ishbiliyya, fas]
 sources: [1420-08-11-the-world, 1417-04-22-ottoman-peace, 1417-03-19-death-of-abu-al-fadl, 1417-07-14-yahya-of-fas, 1411-11-27-alliance-of-tunis, 1370-09-13-the-world]
+verse: "30:9"
 ---
 
 Fifty years after the first survey of the kingdoms, the Emperor [Ismāʿīl](person:ismail-ibn-saad) found it in the treasury, still beside the map of the caliphs, with the leaf of three lines that his father [Saʿd](person:saad-ibn-yusuf) had kept. He read it and laughed at the last section, where the scribes had judged that Gharnāṭa was no longer far from the great powers. Then he ordered a new one. The Dīwān al-Inshāʾ had envoys at every court that mattered by now, and it did not need to question pilgrims and captives. Its survey was ready on the first day of Shaʿbān 823, the day after Fermoselle, and the Emperor read it on the road home.
@@ -28,4 +29,4 @@ The third is the realm of the Mamlūks, ninth in the world and the only one of t
 
 The Emperor read it all on the road from Fermoselle. He had a leaf copied, as his father had, and the clerks who saw it said it had four lines: Tīmūr is eighty-four, the Turks have the fleet, the Mamlūks are our friends, and Qashtāla has no army. He kept it with him.
 
-*And if it were not for Allāh repelling some people by means of others, the earth would have been corrupted, but Allāh is full of bounty to the worlds.*
+*Have they not traveled through the land and seen how was the end of those before them? They were greater than them in power.*

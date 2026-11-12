@@ -6,6 +6,7 @@ kind: chronicle
 people: [muhammad-ibn-ismail-ibn-saad]
 places: [ishbiliyya]
 sources: [1443-06-26-the-jamaa-of-847, 1442-06-01-national-assemblies, 1432-05-01-the-green-cape, 1432-05-01-trading-posts]
+verse: "30:46"
 ---
 
 A year after the Emperor [Muḥammad](person:muhammad-ibn-ismail-ibn-saad) had seated the burghers in the Jamāʿa, the assembly met again at [Ishbīliya](place:ishbiliyya), on 27 Ṣafar 847. Everyone at court expected a quarrel. The umarāʾ had not forgiven the merchants for their seats, and the merchants had not forgotten how loudly the lords had protested. The clerks prepared for a long session.

@@ -6,6 +6,7 @@ kind: chronicle
 people: [yusuf-i]
 places: [qurtuba, ishbiliyya, jayyan, gharnata, malaqa]
 sources: [1349-06-01-castilian-patriots, 1349-11-07-plague-toll]
+verse: "2:156"
 ---
 
 The peace brought no peace from the pestilence. Through the summer and autumn of the year 750 it came back stronger than before, as a flood that has drawn back comes again over the same ground. It settled worst on the lands newly won, on [Qurṭuba](place:qurtuba) and [Ishbīliya](place:ishbiliyya) and the river towns between them. Their walls held a hundred years of Christian crowding and their people were weak from the war that had passed over them twice. Then it climbed back over the mountains into the old realm, into [Gharnāṭa](place:gharnata) and [Mālaqa](place:malaqa), where the houses of healing were full and the cemeteries were fuller.

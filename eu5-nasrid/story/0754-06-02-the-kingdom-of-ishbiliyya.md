@@ -7,6 +7,7 @@ people: [yusuf-i, alfonso-xi]
 places: [ishbiliyya, qurtuba, jayyan, qarmuna, qusantina, gharnata, balansiyya, sharish, shaluqa-al-kubra]
 wars: [sevillan-revolt]
 sources: [1353-02-01-kingdom-of-sevilla, 1353-02-01-castile-answers, 1353-02-02-state, 1353-06-06-battle-jerez, 1353-06-27-battle-sanlucar-la-mayor, 1353-07-03-state, 1353-07-05-revolt-ends]
+verse: "2:216"
 ---
 
 The sultan had doubted that a remitted tax would buy a loyal heart, and he was right. On the twenty-fifth of Dhū al-Ḥijja in the year 753, as the year ran out, the Castilian peasants of the new lands rose together. In [Ishbīliya](place:ishbiliyya) they proclaimed a kingdom of their own, which they called the Kingdom of Sevilla. In a single day every town won at the Peace of Qurṭuba, and the two bought in 752, went over to it. [Qurṭuba](place:qurtuba), Ishbīliya and [Jayyān](place:jayyan) were lost, and [Qarmūna](place:qarmuna) and the silver of [Qusanṭīna](place:qusantina) with them: twenty-five towns and three hundred and twenty-eight thousand souls. [Gharnāṭa](place:gharnata) woke to find itself what it had been before the war with the three crowns, eighteen towns in the mountains and on the sea.

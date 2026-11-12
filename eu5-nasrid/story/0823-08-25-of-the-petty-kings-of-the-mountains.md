@@ -7,6 +7,7 @@ people: [ismail-ibn-saad, pedro-of-castile, diego-villamarin, jose-fernando-tuno
 places: [ishbiliyya, banbaluna]
 wars: [war-of-jilliqiya]
 sources: [1420-09-04-the-fall-of-qashtala, 1411-11-01-the-end-of-portugal, 1420-08-11-the-world]
+verse: "3:137"
 ---
 
 Since the Peace of Rajab, Qashtāla had been a kingdom of forty-five towns in the rain of the north, with no army and four ships. On 25 Shaʿbān 823, three weeks after Fermoselle, it stopped being even that. The news reached [Ishbīliya](place:ishbiliyya) in the last days of the month, before the new moon of Ramaḍān, in letters from the merchants of the Cantabrian ports. The lords of the mountains had stopped answering to their king, and each of them now called himself a king.

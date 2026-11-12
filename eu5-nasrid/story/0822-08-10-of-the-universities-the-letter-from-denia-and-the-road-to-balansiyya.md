@@ -6,6 +6,7 @@ kind: chronicle
 people: [ismail-ibn-saad, saad-ibn-yusuf]
 places: [ishbiliyya, qurtuba, gharnata, tulaytula, malaqa, daniya, balansiyya]
 sources: [1416-05-20-the-first-universities, 1419-04-01-the-letter-from-denia, 1419-04-the-catalans-and-valencia, 1419-09-the-road-to-balansiyya, 1413-01-14-madrasas-everywhere, 1413-05-01-education-of-the-people]
+verse: "30:22"
 ---
 
 The madrasas of 815 taught the children of the towns their letters. Three years later the Emperor [Ismāʿīl](person:ismail-ibn-saad) wanted something above them. On 22 Rabīʿ al-Awwal 819 the first universities of al-Andalus opened their doors, five of them at once: at [Ishbīliya](place:ishbiliyya), where the court sat; at [Qurṭuba](place:qurtuba), the old capital of the caliphs; at [Gharnāṭa](place:gharnata), where the house of Naṣr began; at [Ṭulayṭula](place:tulaytula), the city of the translators; and at [Mālaqa](place:malaqa), the port. The Emperor's charters gave each of them the same instruction. They were to teach law and grammar, as the mosques always had, but also medicine, astronomy, the measuring of the earth and the reckoning of accounts, and their doors were open to any subject of the empire who could pay or find a patron to pay for him. The umarāʾ asked what the sons of merchants would do with astronomy. The Emperor said they would find their way to the Indies with it, and that the umarāʾ's sons were welcome to come and learn it too.

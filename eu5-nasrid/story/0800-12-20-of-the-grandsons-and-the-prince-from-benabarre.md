@@ -6,6 +6,7 @@ kind: chronicle
 people: [saad-ibn-yusuf, yusuf-ibn-saad, caterina-de-borja, alfons-de-borja, rodrigo-de-borja, ismail-ibn-saad, bernarda-of-murcia, aisha-ottoman, muhammad-ibn-ismail-ibn-saad, saad-ibn-ismail-ibn-saad, saad-ibn-yusuf-ibn-saad, dua-marinid, aiman-mamluk]
 places: [ishbiliyya]
 sources: [1393-02-24-death-of-alfons, 1398-09-03-the-grandsons, 1398-09-03-yusuf-comes-home]
+verse: "25:74"
 ---
 
 The Emperor's second son, [Yūsuf](person:yusuf-ibn-saad), had married twice: Madīna, of a house of the Mamlūk lands, and [Caterina](person:caterina-de-borja), daughter of King [Alfons](person:alfons-de-borja) of the Ṭāʾifa of Arghūn. The Christians of the north have a custom that a prince who marries an heiress goes to live at her father's court, and Yūsuf went. By the year 796 he was living at Benabarre in the Aragonese hills, a guest of the house of Borja, and in the spring of 800 he led its soldiers in the field. King Alfons had died in Rabīʿ al-Thānī 795, and his son [Rodrigo](person:rodrigo-de-borja), a boy of eleven then, had worn the little crown since. Rodrigo had no son, and Caterina was his heir.

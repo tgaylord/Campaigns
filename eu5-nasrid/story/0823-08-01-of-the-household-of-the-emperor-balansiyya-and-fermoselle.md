@@ -7,6 +7,7 @@ people: [ismail-ibn-saad, umm-al-fath-bint-saad, umm-al-fath-bint-yusuf, jadila-
 places: [ishbiliyya, shalamanka, balansiyya, daniya, shatiba, al-qant]
 wars: [rising-of-zamora]
 sources: [1416-03-25-death-of-umm-al-fath, 1416-09-29-jadila-steadies-the-realm, 1416-10-23-autocracy, 1416-11-18-shalamanka-handed-north, 1416-12-27-death-of-jadila-bint-yusuf, 1417-12-15-saad-ibn-yusuf-to-the-diwan, 1419-08-29-death-of-aisha-bint-yusuf, 1420-06-01-rising-of-zamora, 1420-08-01-valencia-annexed, 1420-08-10-battle-fermoselle, 1420-08-11-rising-crushed]
+verse: "67:1"
 ---
 
 On 25 Muḥarram 819 [Umm al-Fatḥ](person:umm-al-fath-bint-saad), the old Emperor's first child, died at fifty-one. She had sat in the dīwān for twenty-two years, from the year of the League, and for most of them she had done one thing: she took lands the armies had won and made them part of the empire, from the valley of the Tagus to the country of the risings. Her seat stood empty for most of two years. Her daughter [Jadīla](person:jadila-bint-saad-ibn-faraj), the heir's third wife, sat in the dīwān already, and in Shaʿbān the Emperor took her off the settling of migrants and gave her the hardest task he had, to keep the realm at peace. The umarāʾ were still sore from the Jamāʿa of 817, and Prince [Yūsuf](person:yusuf-ibn-saad) was still at work soothing them.

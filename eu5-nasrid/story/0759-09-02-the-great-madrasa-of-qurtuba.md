@@ -6,6 +6,7 @@ kind: chronicle
 people: [yusuf-i, saad-ibn-yusuf, dua-marinid, sayyida-of-fezzan, ismail-ibn-yusuf, jadila-bint-yusuf, tizemt-hafsid, ali-ibn-yusuf, maryam-bint-yusuf, fatima-bint-yusuf, muhammad-ibn-yusuf]
 places: [qurtuba, fas, jayyan, gharnata, istijja, ishbiliyya, malaqa, urjuba]
 sources: [1358-02-great-madrasa-qurtuba, 1358-08-08-foreign-wisdom, 1358-08-08-works]
+verse: "58:11"
 ---
 
 In Ṣafar of the year 759 the masons came to [Qurṭuba](place:qurtuba) again, this time to build for Allāh and not for the governor. Beside the great mosque, which the Castilians had made a cathedral and which still stood as one, our lord [Yūsuf](person:yusuf-i) began a Great Madrasa. It was meant to be the largest college west of [Fās](place:fas). Qurṭuba's Muslims were few, perhaps three in ten, but there were more each year: converts from the Christian quarters, Andalusīs back from exile in the mountains, students drawn by the libraries. The old mosques of the city could no longer hold them, and the old learning of the city had no house. The Great Madrasa was to be both.

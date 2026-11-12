@@ -7,6 +7,7 @@ people: [muhammad-ibn-ismail-ibn-saad, pope-fabrizio-ricci, vukmir-jankovic, kha
 places: [ishbiliyya, shant-yaqub, malaqa, al-mariyya, al-ushbuna, balansiyya, mursiyya]
 wars: [crusade-of-835]
 sources: [1431-06-24-the-warmongers-name, 1431-10-01-the-second-crusade, 1431-10-03-genoa-joins-the-crusade, 1431-11-20-battle-oristano, 1431-11-26-battle-gulf-talamone, 1431-12-05-battle-gulf-talamone, 1431-12-20-battle-coast-lazio, 1431-12-31-battle-tivoli, 1432-01-27-battle-gulf-olbia, 1432-02-01-battle-gulf-orosei, 1432-03-14-battle-corsica-channel, 1432-03-26-battle-pitigliano, 1432-05-the-dar-al-sinaa, 1432-05-01-the-green-cape, 1430-07-15-santiago-falls, 1404-02-01-the-crusade]
+verse: "42:32-33"
 ---
 
 Here begins the Book of the Franks.
