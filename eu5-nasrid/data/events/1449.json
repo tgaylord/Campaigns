@@ -684,6 +684,122 @@
   "source": "save of 2 August 1449"
  },
  {
+  "id": "1449-08-03-battle-al-muazzam",
+  "date": "1449-08-03",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "mamluk-war-on-lam"
+  ],
+  "title": "At al-Muazzam the Mamlūk side (Döger, 784) attacks Dawasir (1,942) and loses: 784 lost against 19",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Döger": 784
+   },
+   "oursTotal": 784,
+   "oursLost": 784,
+   "theirs": {
+    "Dawasir": 1942
+   },
+   "theirsTotal": 1942,
+   "theirsLost": 19,
+   "location": "al-Muazzam",
+   "side": "allies attacking",
+   "note": "a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought"
+  },
+  "source": "save of 29 November 1450"
+ },
+ {
+  "id": "1449-08-07-battle-al-ukhaydir",
+  "date": "1449-08-07",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "mamluk-war-on-lam"
+  ],
+  "title": "At al-Ukhaydir the Mamlūk side (Mamluks, 616) is attacked by Dawasir (1,922) and loses: 616 lost against 16",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Mamluks": 616
+   },
+   "oursTotal": 616,
+   "oursLost": 616,
+   "theirs": {
+    "Dawasir": 1922
+   },
+   "theirsTotal": 1922,
+   "theirsLost": 16,
+   "location": "al-Ukhaydir",
+   "side": "enemy attacking",
+   "note": "a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought"
+  },
+  "source": "save of 29 November 1450"
+ },
+ {
+  "id": "1449-09-02-battle-al-huwayyit",
+  "date": "1449-09-02",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "mamluk-war-on-lam"
+  ],
+  "title": "At al-Huwayyit the Mamlūk side (Mamluks, 42) is attacked by Lām (4,400) and loses: 42 lost against 0",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Mamluks": 42
+   },
+   "oursTotal": 42,
+   "oursLost": 42,
+   "theirs": {
+    "Lām": 4400
+   },
+   "theirsTotal": 4400,
+   "theirsLost": 0,
+   "location": "al-Huwayyit",
+   "side": "enemy attacking",
+   "note": "a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought"
+  },
+  "source": "save of 29 November 1450"
+ },
+ {
+  "id": "1449-09-04-battle-kaf",
+  "date": "1449-09-04",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "mamluk-war-on-lam"
+  ],
+  "title": "At Kaf the Mamlūk side (Mamluks, 10,768) is attacked by Lām (2,273) and wins: 183 lost against 2,273",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Mamluks": 10768
+   },
+   "oursTotal": 10768,
+   "oursLost": 183,
+   "theirs": {
+    "Lām": 2273
+   },
+   "theirsTotal": 2273,
+   "theirsLost": 2273,
+   "location": "Kaf",
+   "side": "enemy attacking",
+   "note": "a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought"
+  },
+  "source": "save of 29 November 1450"
+ },
+ {
   "id": "1449-09-17-the-fall-of-bastia",
   "date": "1449-09-17",
   "type": "siege",
@@ -699,6 +815,64 @@
    "days": 265
   },
   "source": "Trent's account (12 November 2026)"
+ },
+ {
+  "id": "1449-10-09-battle-al-muwaylih",
+  "date": "1449-10-09",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "mamluk-war-on-lam"
+  ],
+  "title": "At al-Muwaylih the Mamlūk side (Mamluks, 21,339) attacks Lām (5,643) and wins: 723 lost against 5,643",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Mamluks": 21339
+   },
+   "oursTotal": 21339,
+   "oursLost": 723,
+   "theirs": {
+    "Lām": 5643
+   },
+   "theirsTotal": 5643,
+   "theirsLost": 5643,
+   "location": "al-Muwaylih",
+   "side": "allies attacking",
+   "note": "a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought"
+  },
+  "source": "save of 29 November 1450"
+ },
+ {
+  "id": "1449-10-19-battle-al-maramiyah",
+  "date": "1449-10-19",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "mamluk-war-on-lam"
+  ],
+  "title": "At al-Maramiyah the Mamlūk side (AAA00, 663) is attacked by Dawasir (1,787) and loses: 509 lost against 50",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "AAA00": 663
+   },
+   "oursTotal": 663,
+   "oursLost": 509,
+   "theirs": {
+    "Dawasir": 1787
+   },
+   "theirsTotal": 1787,
+   "theirsLost": 50,
+   "location": "al-Maramiyah",
+   "side": "enemy attacking",
+   "note": "a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought"
+  },
+  "source": "save of 29 November 1450"
  },
  {
   "id": "1449-10-25-the-thughur-raised",
@@ -719,5 +893,158 @@
    "aim": "a landing in Sicily"
   },
   "source": "Trent's account (12 November 2026)"
+ },
+ {
+  "id": "1449-11-11-battle-az-zubayir",
+  "date": "1449-11-11",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "mamluk-war-on-lam"
+  ],
+  "title": "At az-Zubayir the Mamlūk side (Barqa, 5,355) attacks Dawasir (1,736) and wins: 780 lost against 1,093",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Barqa": 5355
+   },
+   "oursTotal": 5355,
+   "oursLost": 780,
+   "theirs": {
+    "Dawasir": 1736
+   },
+   "theirsTotal": 1736,
+   "theirsLost": 1093,
+   "location": "az-Zubayir",
+   "side": "allies attacking",
+   "note": "a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought"
+  },
+  "source": "save of 29 November 1450"
+ },
+ {
+  "id": "1449-11-14-battle-gulf-oristano",
+  "date": "1449-11-14",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "In the Gulf of Oristano a single Genoese ship sinks one each of Burgos's and Galicia's",
+  "data": {
+   "result": "allied defeat",
+   "naval": true,
+   "ours": {
+    "Taifa of Burgos": 1,
+    "Galicia": 1
+   },
+   "oursTotal": 2,
+   "oursLost": 2,
+   "theirs": {
+    "Genoa": 1
+   },
+   "theirsTotal": 1,
+   "theirsLost": 0,
+   "location": "Gulf of Oristano",
+   "side": "enemy attacking",
+   "units": "ships",
+   "commanders": {
+    "ours": "Khālid, lord of Burghush",
+    "theirs": "Raymond#79697"
+   }
+  },
+  "source": "autosave of 1 February 1450"
+ },
+ {
+  "id": "1449-12-13-battle-catania",
+  "date": "1449-12-13",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "Before Catania 2,113 Tripolitanians attack the Sicilian king's army of 8,558 and are beaten, losing 1,641",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Tripoli": 2113
+   },
+   "oursTotal": 2113,
+   "oursLost": 1641,
+   "theirs": {
+    "Sicily": 8558
+   },
+   "theirsTotal": 8558,
+   "theirsLost": 571,
+   "location": "Catania",
+   "side": "allies attacking",
+   "commanders": {
+    "ours": "Abu Tashufin#88637",
+    "theirs": "King Peter of Sicily"
+   }
+  },
+  "source": "autosave of 1 February 1450"
+ },
+ {
+  "id": "1449-12-15-battle-al-maramiyah",
+  "date": "1449-12-15",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "mamluk-war-on-lam"
+  ],
+  "title": "At al-Maramiyah the Mamlūk side (Barqa, 4,454) attacks Yemen (3,143) and wins: 559 lost against 503",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Barqa": 4454
+   },
+   "oursTotal": 4454,
+   "oursLost": 559,
+   "theirs": {
+    "Yemen": 3143
+   },
+   "theirsTotal": 3143,
+   "theirsLost": 503,
+   "location": "al-Maramiyah",
+   "side": "allies attacking",
+   "note": "a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought"
+  },
+  "source": "save of 29 November 1450"
+ },
+ {
+  "id": "1449-12-18-battle-al-marwa",
+  "date": "1449-12-18",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "mamluk-war-on-lam"
+  ],
+  "title": "At al-Marwa the Mamlūk side (Mamluks, 20,613) attacks Lām (7,830) and wins: 1,676 lost against 2,751",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Mamluks": 20613
+   },
+   "oursTotal": 20613,
+   "oursLost": 1676,
+   "theirs": {
+    "Lām": 7830
+   },
+   "theirsTotal": 7830,
+   "theirsLost": 2751,
+   "location": "al-Marwa",
+   "side": "allies attacking",
+   "note": "a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought"
+  },
+  "source": "save of 29 November 1450"
  }
 ]

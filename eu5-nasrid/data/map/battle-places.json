@@ -1074,9 +1074,131 @@
    "khulays",
    9486.8,
    3613.0
+  ],
+  "1449-08-03-battle-al-muazzam": [
+   "al_muazzam",
+   9394.6,
+   3299.9
+  ],
+  "1449-09-02-battle-al-huwayyit": [
+   "al_huwayyit",
+   9530.2,
+   3407.2
+  ],
+  "1449-09-04-battle-kaf": [
+   "el_kef",
+   8079.2,
+   2791.3
+  ],
+  "1449-10-09-battle-al-muwaylih": [
+   "al_muwaylih",
+   9318.6,
+   3280.1
+  ],
+  "1449-10-19-battle-al-maramiyah": [
+   "al_maramiyah",
+   9416.2,
+   3420.9
+  ],
+  "1449-11-11-battle-az-zubayir": [
+   "az_zubayir",
+   9416.3,
+   3394.9
+  ],
+  "1449-11-14-battle-gulf-oristano": [
+   "gulf_oristano",
+   8052.3,
+   2563.5
+  ],
+  "1449-12-13-battle-catania": [
+   "catania",
+   8375.5,
+   2700.2
+  ],
+  "1449-12-15-battle-al-maramiyah": [
+   "al_maramiyah",
+   9416.2,
+   3420.9
+  ],
+  "1449-12-18-battle-al-marwa": [
+   "al_marwa",
+   9449.7,
+   3394.2
+  ],
+  "1450-01-01-battle-al-maramiyah": [
+   "al_maramiyah",
+   9416.2,
+   3420.9
+  ],
+  "1450-01-30-battle-al-manjur": [
+   "al_manjur",
+   9394.4,
+   3394.1
+  ],
+  "1450-02-06-battle-al-wajh": [
+   "al_wajh",
+   9359.9,
+   3379.6
+  ],
+  "1450-03-16-battle-al-marwa": [
+   "al_marwa",
+   9449.7,
+   3394.2
+  ],
+  "1450-04-14-battle-ar-rayyan": [
+   "ar_rayyan",
+   9505.0,
+   3548.3
+  ],
+  "1450-04-22-battle-duba": [
+   "duba",
+   9327.3,
+   3306.3
+  ],
+  "1450-05-09-battle-ash-shamli": [
+   "ash_shamli",
+   9515.2,
+   3350.3
+  ],
+  "1450-05-23-battle-khalis-medina": [
+   "khalis_medina",
+   9496.0,
+   3512.8
+  ],
+  "1450-06-25-battle-al-muazzam": [
+   "al_muazzam",
+   9394.6,
+   3299.9
+  ],
+  "1450-07-18-battle-mughayra": [
+   "mughayra",
+   9433.1,
+   3370.9
+  ],
+  "1450-07-18-battle-sughar": [
+   "sughar",
+   9298.2,
+   3105.7
+  ],
+  "1450-08-08-battle-al-azlam": [
+   "al_azlam",
+   9344.1,
+   3333.1
+  ],
+  "1450-11-03-battle-palermo": [
+   "palermo",
+   8295.3,
+   2674.9
+  ],
+  "1450-11-29-battle-sciacca": [
+   "sciacca",
+   8289.3,
+   2702.4
   ]
  },
  "unplaced": {
-  "1374-06-24-battle-gharyan": "Gharyan"
+  "1374-06-24-battle-gharyan": "Gharyan",
+  "1449-08-07-battle-al-ukhaydir": "al-Ukhaydir",
+  "1450-10-21-battle-al-khanbarah": "al-Khanbarah"
  }
 }

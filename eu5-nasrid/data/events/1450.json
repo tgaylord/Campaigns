@@ -1,5 +1,92 @@
 [
  {
+  "id": "1450-01-01-battle-al-maramiyah",
+  "date": "1450-01-01",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "mamluk-war-on-lam"
+  ],
+  "title": "At al-Maramiyah the Mamlūk side (Barqa, 3,838) is attacked by Lām (3,914) and wins: 1,264 lost against 705",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Barqa": 3838
+   },
+   "oursTotal": 3838,
+   "oursLost": 1264,
+   "theirs": {
+    "Lām": 3914
+   },
+   "theirsTotal": 3914,
+   "theirsLost": 705,
+   "location": "al-Maramiyah",
+   "side": "enemy attacking",
+   "note": "a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought"
+  },
+  "source": "save of 29 November 1450"
+ },
+ {
+  "id": "1450-01-30-battle-al-manjur",
+  "date": "1450-01-30",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "mamluk-war-on-lam"
+  ],
+  "title": "At al-Manjur the Mamlūk side (Barqa, 2,530) is attacked by Yemen (19,606) and loses: 2,530 lost against 179",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Barqa": 2530
+   },
+   "oursTotal": 2530,
+   "oursLost": 2530,
+   "theirs": {
+    "Yemen": 19606
+   },
+   "theirsTotal": 19606,
+   "theirsLost": 179,
+   "location": "al-Manjur",
+   "side": "enemy attacking",
+   "note": "a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought"
+  },
+  "source": "save of 29 November 1450"
+ },
+ {
+  "id": "1450-02-06-battle-al-wajh",
+  "date": "1450-02-06",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "mamluk-war-on-lam"
+  ],
+  "title": "At al-Wajh the Mamlūk side (AAA00, 153) is attacked by Otaibah (3,595) and loses: 153 lost against 0",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "AAA00": 153
+   },
+   "oursTotal": 153,
+   "oursLost": 153,
+   "theirs": {
+    "Otaibah": 3595
+   },
+   "theirsTotal": 3595,
+   "theirsLost": 0,
+   "location": "al-Wajh",
+   "side": "enemy attacking",
+   "note": "a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought"
+  },
+  "source": "save of 29 November 1450"
+ },
+ {
   "id": "1450-02-15-the-landing-at-saraqusa",
   "date": "1450-02-15",
   "type": "player_note",
@@ -18,5 +105,466 @@
    "army": "fully professional (Trent)"
   },
   "source": "Trent's account (12 November 2026)"
+ },
+ {
+  "id": "1450-03-16-battle-al-marwa",
+  "date": "1450-03-16",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "mamluk-war-on-lam"
+  ],
+  "title": "At al-Marwa the Mamlūk side (Banu Kanz, 559) is attacked by Yemen (2,255) and wins: 58 lost against 2,255",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Banu Kanz": 559
+   },
+   "oursTotal": 559,
+   "oursLost": 58,
+   "theirs": {
+    "Yemen": 2255
+   },
+   "theirsTotal": 2255,
+   "theirsLost": 2255,
+   "location": "al-Marwa",
+   "side": "enemy attacking",
+   "note": "a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought"
+  },
+  "source": "save of 29 November 1450"
+ },
+ {
+  "id": "1450-04-14-battle-ar-rayyan",
+  "date": "1450-04-14",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "mamluk-war-on-lam"
+  ],
+  "title": "At ar-Rayyan the Mamlūk side (Mamluks, 17,065) attacks Lām (3,433) and wins: 1,394 lost against 2,354",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Mamluks": 17065
+   },
+   "oursTotal": 17065,
+   "oursLost": 1394,
+   "theirs": {
+    "Lām": 3433
+   },
+   "theirsTotal": 3433,
+   "theirsLost": 2354,
+   "location": "ar-Rayyan",
+   "side": "allies attacking",
+   "note": "a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought"
+  },
+  "source": "save of 29 November 1450"
+ },
+ {
+  "id": "1450-04-22-battle-duba",
+  "date": "1450-04-22",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "mamluk-war-on-lam"
+  ],
+  "title": "At Duba the Mamlūk side (Mamluks, 17,259) attacks Yemen (17,873) and loses: 1,505 lost against 1,997",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Mamluks": 17259
+   },
+   "oursTotal": 17259,
+   "oursLost": 1505,
+   "theirs": {
+    "Yemen": 17873
+   },
+   "theirsTotal": 17873,
+   "theirsLost": 1997,
+   "location": "Duba",
+   "side": "allies attacking",
+   "note": "a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought"
+  },
+  "source": "save of 29 November 1450"
+ },
+ {
+  "id": "1450-05-09-battle-ash-shamli",
+  "date": "1450-05-09",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "mamluk-war-on-lam"
+  ],
+  "title": "At ash-Shamli the Mamlūk side (Al ʿAlī, 666) attacks ABA44 (6,760) and loses: 666 lost against 39",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Al ʿAlī": 666
+   },
+   "oursTotal": 666,
+   "oursLost": 666,
+   "theirs": {
+    "ABA44": 6760
+   },
+   "theirsTotal": 6760,
+   "theirsLost": 39,
+   "location": "ash-Shamli",
+   "side": "allies attacking",
+   "note": "a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought"
+  },
+  "source": "save of 29 November 1450"
+ },
+ {
+  "id": "1450-05-23-battle-khalis-medina",
+  "date": "1450-05-23",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "mamluk-war-on-lam"
+  ],
+  "title": "At Khalis Medina the Mamlūk side (Mamluks and Banu Kanz, 16,157) is attacked by Dawasir (641) and wins: 0 lost against 641",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Mamluks": 15667,
+    "Banu Kanz": 490
+   },
+   "oursTotal": 16157,
+   "oursLost": 0,
+   "theirs": {
+    "Dawasir": 641
+   },
+   "theirsTotal": 641,
+   "theirsLost": 641,
+   "location": "Khalis Medina",
+   "side": "enemy attacking",
+   "note": "a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought"
+  },
+  "source": "save of 29 November 1450"
+ },
+ {
+  "id": "1450-06-25-battle-al-muazzam",
+  "date": "1450-06-25",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "mamluk-war-on-lam"
+  ],
+  "title": "At al-Muazzam the Mamlūk side (Mecca, 169) is attacked by Otaibah (3,166) and loses: 68 lost against 0",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Mecca": 169
+   },
+   "oursTotal": 169,
+   "oursLost": 68,
+   "theirs": {
+    "Otaibah": 3166
+   },
+   "theirsTotal": 3166,
+   "theirsLost": 0,
+   "location": "al-Muazzam",
+   "side": "enemy attacking",
+   "note": "a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought"
+  },
+  "source": "save of 29 November 1450"
+ },
+ {
+  "id": "1450-07-15-genoa-makes-peace",
+  "date": "1450-07-15",
+  "type": "peace",
+  "people": [],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "Genoa makes a separate peace with Tunis and al-Andalus, and Corsica, held by al-Andalus since the fall of Bastia, goes back to Genoa's vassal there",
+  "data": {
+   "truce": "to 15 May 1460",
+   "corsica": "Corsica's towns are Corsica's again in the save of 29 November 1450, Genoa's vassal"
+  },
+  "source": "save of 29 November 1450"
+ },
+ {
+  "id": "1450-07-18-battle-mughayra",
+  "date": "1450-07-18",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "mamluk-war-on-lam"
+  ],
+  "title": "At Mughayra the Mamlūk side (Mamluks and Banu Kanz, 15,334) is attacked by Otaibah (3,164) and loses: 15,333 lost against 288",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Mamluks": 14874,
+    "Banu Kanz": 460
+   },
+   "oursTotal": 15334,
+   "oursLost": 15333,
+   "theirs": {
+    "Otaibah": 3164
+   },
+   "theirsTotal": 3164,
+   "theirsLost": 288,
+   "location": "Mughayra",
+   "side": "enemy attacking",
+   "note": "a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought"
+  },
+  "source": "save of 29 November 1450"
+ },
+ {
+  "id": "1450-07-18-battle-sughar",
+  "date": "1450-07-18",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "mamluk-war-on-lam"
+  ],
+  "title": "At Sughar the Mamlūk side (Mamluks, 14,655) is attacked by Yemen (14,023) and wins: 0 lost against 14,023",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Mamluks": 14655
+   },
+   "oursTotal": 14655,
+   "oursLost": 0,
+   "theirs": {
+    "Yemen": 14023
+   },
+   "theirsTotal": 14023,
+   "theirsLost": 14023,
+   "location": "Sughar",
+   "side": "enemy attacking",
+   "note": "a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought"
+  },
+  "source": "save of 29 November 1450"
+ },
+ {
+  "id": "1450-08-08-battle-al-azlam",
+  "date": "1450-08-08",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "mamluk-war-on-lam"
+  ],
+  "title": "At al-Azlam the Mamlūk side (Suakin, 509) is attacked by Lām (4,190) and loses: 509 lost against 19",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Suakin": 509
+   },
+   "oursTotal": 509,
+   "oursLost": 509,
+   "theirs": {
+    "Lām": 4190
+   },
+   "theirsTotal": 4190,
+   "theirsLost": 19,
+   "location": "al-Azlam",
+   "side": "enemy attacking",
+   "note": "a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought"
+  },
+  "source": "save of 29 November 1450"
+ },
+ {
+  "id": "1450-09-28-sicily-for-al-andalus",
+  "date": "1450-09-28",
+  "type": "player_note",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad",
+   "ismail-ibn-muhammad-ibn-ismail"
+  ],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "Al-Andalus takes the lead of the war. Tunis has had Sardinia for its pains; Sicily has been won with Andalusī blood, steel and sweat, and Tunis, which began the war, understands the Emperor's wish for compensation: Sicily, all of it",
+  "data": {
+   "trent": "The Tunisians fought for Sardinia, yes- and were justly rewarded. But Sicily has been Andalusi blood. Andalusi steel. Andalusi sweat. And while the Tunisians started this war- they... understand our desire for compensation. Namely- Sicily."
+  },
+  "source": "Trent's account (12 November 2026)"
+ },
+ {
+  "id": "1450-09-28-the-fall-of-catania",
+  "date": "1450-09-28",
+  "type": "siege",
+  "people": [],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "The fortress of Catania falls after a siege of 208 days, and the road to Palermo lies open",
+  "data": {
+   "days": 208
+  },
+  "source": "Trent's account (12 November 2026)"
+ },
+ {
+  "id": "1450-10-21-battle-al-khanbarah",
+  "date": "1450-10-21",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "mamluk-war-on-lam"
+  ],
+  "title": "At al-Khanbarah the Mamlūk side (Mamluks, 14,585) is attacked by Lām (5,019) and wins: 987 lost against 2,213",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Mamluks": 14585
+   },
+   "oursTotal": 14585,
+   "oursLost": 987,
+   "theirs": {
+    "Lām": 5019
+   },
+   "theirsTotal": 5019,
+   "theirsLost": 2213,
+   "location": "al-Khanbarah",
+   "side": "enemy attacking",
+   "note": "a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought"
+  },
+  "source": "save of 29 November 1450"
+ },
+ {
+  "id": "1450-11-03-battle-palermo",
+  "date": "1450-11-03",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "Before Palermo the army of al-Andalus, 8,707 strong, breaks the Sicilian king's 7,954: Sicily loses 5,704 killed and taken, al-Andalus 278 after the prisoners it took",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "al-Andalus": 8707
+   },
+   "oursTotal": 8707,
+   "oursLost": 802,
+   "theirs": {
+    "Sicily": 7954
+   },
+   "theirsTotal": 7954,
+   "theirsLost": 5704,
+   "location": "Palermo",
+   "warScore": 13.09,
+   "composition": {
+    "ours": "5,880 infantry (−494, +221 taken in), 2,340 light horse (−308, +113), 487 heavy horse (+96), 93 support taken",
+    "theirs": "6,353 levy archers (−4,424), 472 infantry (−465), 916 light horse (−607), 117 heavy horse (−114), 96 support (−93)"
+   },
+   "net": "al-Andalus −802, −278 counting men taken into its ranks; Sicily −5,180, −5,704 counting those taken"
+  },
+  "source": "Trent's battle screen, 3 November 1450"
+ },
+ {
+  "id": "1450-11-29-a-taifa-for-sicily",
+  "date": "1450-11-29",
+  "type": "player_note",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [
+   "mamluk-war-on-lam"
+  ],
+  "title": "A new ṭāʾifa will be raised in Sicily once the Mamlūks' war, al-Andalus's other and nominal war, is over",
+  "data": {},
+  "source": "Trent's account (12 November 2026)"
+ },
+ {
+  "id": "1450-11-29-athens-swears-fealty",
+  "date": "1450-11-29",
+  "type": "diplomacy",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Athens, a Christian duchy that stands against the Turks and the Neapolitans and had been Sicily's nominal vassal, will neither stand alone nor swear to its old enemies. It offers the Emperor fealty for autonomy, and he accepts",
+  "data": {
+   "duke": "Peter of the house of Barcelona, born 1399, a kinsman of the last king of Sicily; the admiral whose single ship attacked the prince Yūsuf's squadron off Terracina in January 1448",
+   "lands": "Athens, Atalanti, Salona, Angelokastron, Karpenisi, Loidoriki: some 270,000 souls, Greek and mostly Catholic",
+   "heir": "Ferdinand, born 1419"
+  },
+  "source": "Trent's account (12 November 2026); save of 29 November 1450"
+ },
+ {
+  "id": "1450-11-29-battle-sciacca",
+  "date": "1450-11-29",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "At Sciacca the routed Sicilian army, 2,232 men, is caught and destroyed to the last man for the loss of 108",
+  "data": {
+   "result": "victory",
+   "naval": false,
+   "ours": {
+    "al-Andalus": 7905
+   },
+   "oursTotal": 7905,
+   "oursLost": 108,
+   "theirs": {
+    "Sicily": 2232
+   },
+   "theirsTotal": 2232,
+   "theirsLost": 2232,
+   "location": "Sciacca",
+   "warScore": 5.12,
+   "composition": {
+    "ours": "5,386 infantry (−99), 2,032 light horse, 487 heavy horse (−9)",
+    "theirs": "1,927 levy archers and 305 light horse, all lost"
+   }
+  },
+  "source": "Trent's battle screen, 29 November 1450"
+ },
+ {
+  "id": "1450-11-29-the-peace-of-palermo",
+  "date": "1450-11-29",
+  "type": "peace",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "The war for Palermo ends. The whole kingdom of Sicily, twenty-two towns from Messina to Trapani, passes to al-Andalus; Tunis has seven towns of northern Sardinia; Athens and Negroponte, Sicily's subjects, become the Emperor's vassals",
+  "data": {
+   "sicily": "Messina, Catania, Mistretta, Nicosia, Patti, Piazza, Girgenti, Bivona, Caltanissetta, Cefalù, Sciacca, Termini, Palermo, Corleone, Mazara, Salemi, Trapani, Syracuse, Caltagirone, Modica, Noto, Terranova",
+   "tunis": "Sassari, Alghero, Bosa, Castelsardo, Bitti, Ozieri, Thiesi (from Arborea)",
+   "athens": "vassal from 29 November 1450 under its duke Peter of the house of Barcelona, who had offered fealty for autonomy (Trent)",
+   "negroponte": "vassal from 29 November 1450; its crown, held by the king of Sicily, now held by the Emperor",
+   "truce": "with Sicily and the Pope to 29 November 1465",
+   "naples": "Naples has a claim on al-Andalus from the same day",
+   "palermo": "a grand palace, a cathedral, a castle and a canal lock at Palermo"
+  },
+  "source": "save of 29 November 1450; Trent's account"
  }
 ]

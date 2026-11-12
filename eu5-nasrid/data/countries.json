@@ -355,5 +355,19 @@
   "nameChronicle": "the Islands of the Green Cape",
   "nameArabic": "جزر الرأس الأخضر",
   "color": "#3f9a8a"
+ },
+ {
+  "tag": "ATH",
+  "name": "Athens",
+  "nameChronicle": "Athīnā",
+  "nameArabic": "أثينا",
+  "color": "#5f86b8"
+ },
+ {
+  "tag": "NEG",
+  "name": "Negroponte",
+  "nameChronicle": "Ighrībūz",
+  "nameArabic": "إغريبوز",
+  "color": "#7d8a86"
  }
 ]

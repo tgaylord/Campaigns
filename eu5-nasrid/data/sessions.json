@@ -923,9 +923,9 @@
  {
   "id": "2026-11-12",
   "date": "2026-11-12",
-  "commits": 10,
+  "commits": 11,
   "firstCommit": "e4cb054",
-  "lastCommit": "06c87b6",
+  "lastCommit": "311f348",
   "uncommitted": true,
   "claudeSessions": [
    "session_01BjCUTWMwSncdsoun2VQ9xv"
@@ -940,11 +940,12 @@
    "[eu5-nasrid] Tiers, dated stations and arcs for the Hourglass",
    "[eu5-nasrid] Arcs revised from Trent's direction: the queens' rivalry, the matriarch, Faraj's desert, the two princes",
    "[eu5-nasrid] The court of Sa'd's reign: the two queens, the matriarch, Faraj's desert, the two princes",
-   "[eu5-nasrid] 1447: the envoys and the Umayyad claim, Isabel's death, the war for Palermo"
+   "[eu5-nasrid] 1447: the envoys and the Umayyad claim, Isabel's death, the war for Palermo",
+   "[eu5-nasrid] 1448-1450: the Jama'a of the commons, Sardinia and Bastia, the landing at Syracuse"
   ],
   "reached": {
    "from": "1368-11-20",
-   "to": "1450-02-15"
+   "to": "1450-11-29"
   },
   "entries": [
    "0770-04-08-of-the-two-queens-in-the-autumn-fas-came-again",
@@ -956,13 +957,16 @@
    "0851-11-06-of-the-war-for-balarm-and-the-prince-at-sea",
    "0852-07-03-of-the-jamaa-of-the-commons",
    "0853-07-29-of-sardinia-and-the-siege-of-bastia",
-   "0854-01-02-of-the-thughur-and-the-landing-at-saraqusa"
+   "0854-01-02-of-the-thughur-and-the-landing-at-saraqusa",
+   "0854-09-27-of-catania-and-the-battle-before-balarm",
+   "0854-10-23-of-the-peace-of-balarm-and-the-duke-of-athens"
   ],
   "notes": [
    "0770-04-09-ooc-the-court-of-saads-reign-revised",
    "0850-11-15-ooc-the-saves-of-1442-to-1447",
    "0851-11-07-ooc-the-saves-of-1447-and-the-umayyad-claim",
-   "0854-01-03-ooc-the-saves-of-1448-and-1449"
+   "0854-01-03-ooc-the-saves-of-1448-and-1449",
+   "0854-10-24-ooc-the-conquest-of-sicily"
   ],
   "checkpoints": [
    "1442-08-29",
@@ -973,7 +977,9 @@
    "1447-10-05",
    "1448-02-01",
    "1449-02-01",
-   "1449-08-02"
+   "1449-08-02",
+   "1450-02-01",
+   "1450-11-29"
   ],
   "people": [
    "abd-al-jalil-al-qubbasi",
@@ -989,7 +995,7 @@
    "tunisian-war-for-palermo"
   ],
   "places": [],
-  "events": 70,
+  "events": 102,
   "removed": {
    "entries": [],
    "checkpoints": [],
