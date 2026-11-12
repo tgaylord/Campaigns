@@ -1,7 +1,7 @@
 [
  {
-  "id": "1444-06-05-the-irish-embargo",
-  "date": "1444-06-05",
+  "id": "1444-05-27-the-irish-embargo",
+  "date": "1444-05-27",
   "type": "diplomacy",
   "people": [],
   "places": [],
@@ -12,7 +12,7 @@
    "directedBy": "the Angevin Empire",
    "trend": "continues the embargoes begun by Genoa in 1440"
   },
-  "source": "Trent's account, 5 June 1444"
+  "source": "Trent's account (5 June 1444); the save of 27 August 1444 dates the embargo 27 May"
  },
  {
   "id": "1444-10-10-a-palace-by-the-sea",
@@ -21,23 +21,44 @@
   "people": [
    "muhammad-ibn-ismail-ibn-saad"
   ],
-  "places": [],
+  "places": [
+   "ishbiliyya"
+  ],
   "wars": [],
   "title": "The Emperor announces the commission of a new palace by the sea for the realm",
-  "data": {},
-  "source": "Trent's account, 10 October 1444"
+  "data": {
+   "building": "grand palace (grand_palace) at Ishbīliya, standing by 1 February 1447 (autosave)"
+  },
+  "source": "Trent's account, 10 October 1444; the palace stands at Ishbīliya in the autosave of 1 February 1447"
  },
  {
-  "id": "1444-11-25-the-aquitaine-embargo",
-  "date": "1444-11-25",
+  "id": "1444-10-24-birth-faruq",
+  "date": "1444-10-24",
+  "type": "birth",
+  "people": [
+   "faruq-ibn-yusuf-ibn-ismail",
+   "yusuf-ibn-ismail-ibn-muhammad",
+   "amie-of-mali"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Fārūq, second son of Prince Yūsuf and Amie of Mālī, is born at Niani",
+  "data": {
+   "place": "Niani"
+  },
+  "source": "autosave of 1 February 1447"
+ },
+ {
+  "id": "1444-11-23-the-aquitaine-embargo",
+  "date": "1444-11-23",
   "type": "diplomacy",
   "people": [],
   "places": [],
   "wars": [],
-  "title": "By 25 November 1444 the merchants of Aquitaine have embargoed al-Andalus as well",
+  "title": "The merchants of Aquitaine embargo al-Andalus as well",
   "data": {
    "by": "the merchants of Aquitaine"
   },
-  "source": "Trent's account (by 25 November 1444)"
+  "source": "Trent's account (by 25 November 1444); the autosave of 1 February 1447 dates it 23 November"
  }
 ]

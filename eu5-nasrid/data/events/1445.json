@@ -19,7 +19,8 @@
     "coastal locations: proximity impact through port": "-20%",
     "coastal locations: local monthly development growth": "+10%"
    },
-   "flavour": "Port facilities must be efficiently managed to support maritime trade and naval operations. Corruption will be reduced, and commerce will thrive under structured supervision."
+   "flavour": "Port facilities must be efficiently managed to support maritime trade and naval operations. Corruption will be reduced, and commerce will thrive under structured supervision.",
+   "replaces": "Autocracy (the autosave of 1 February 1447 lists Harbor Administration among the reforms in force, and Autocracy no longer)"
   },
   "source": "Trent's account and screenshot, 30 January 1445"
  }

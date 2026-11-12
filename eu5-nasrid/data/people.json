@@ -1949,7 +1949,8 @@
    "mil": 61
   },
   "traits": [],
-  "note": "Second son of the crown prince Ismāʿīl, by the Ottoman princess ʿĀʾisha; born 17 June 1392. Intelligent and studious, and given the costly in-depth education of the heirs (Trent's account; save of 3 September 1398). In 1398 the Emperor leaves the succession law as it stands, watching whether this Saʿd grows into a worthy ruler; if not, he means to choose an heir himself (Trent). At eleven, in July 1403, he stood at 56/35/36, still intelligent and on the in-depth education (save of 18 July 1403). At twelve, in March 1405, he stood at 70/37/45, second in line behind his elder brother Muḥammad when their father became Emperor (save of 31 March 1405). By August 1408, at sixteen, he stood at 83/43/61 and was married to his cousin Maryam bint Saʿd, Shaykha of Qūnka, the Emperor's niece; his children, as Trent put it, will rule the frontier. Behind his brother Muḥammad and Muḥammad's sons he is no longer the answer to the succession (Trent's account; save of 5 August 1408). His first son, Abū al-Ḥasan ʿAlī, was born to Maryam on 17 April 1410 (save of 29 June 1410)."
+  "note": "Second son of the crown prince Ismāʿīl, by the Ottoman princess ʿĀʾisha; born 17 June 1392. Intelligent and studious, and given the costly in-depth education of the heirs (Trent's account; save of 3 September 1398). In 1398 the Emperor leaves the succession law as it stands, watching whether this Saʿd grows into a worthy ruler; if not, he means to choose an heir himself (Trent). At eleven, in July 1403, he stood at 56/35/36, still intelligent and on the in-depth education (save of 18 July 1403). At twelve, in March 1405, he stood at 70/37/45, second in line behind his elder brother Muḥammad when their father became Emperor (save of 31 March 1405). By August 1408, at sixteen, he stood at 83/43/61 and was married to his cousin Maryam bint Saʿd, Shaykha of Qūnka, the Emperor's niece; his children, as Trent put it, will rule the frontier. Behind his brother Muḥammad and Muḥammad's sons he is no longer the answer to the succession (Trent's account; save of 5 August 1408). His first son, Abū al-Ḥasan ʿAlī, was born to Maryam on 17 April 1410 (save of 29 June 1410). He died on 3 September 1443, aged fifty-one (autosave of 1 February 1447).",
+  "died": "1443-09-03"
  },
  {
   "id": "saad-ibn-yusuf-ibn-saad",
@@ -2862,6 +2863,89 @@
   "note": "Eldest son of the heir Ismāʿīl by Tella, born at Gharnāṭa on 6 January 1422, and second in line behind his father. Given an expensive, in-depth education, and shrewd as a child. By January 1438 he had married three wives: Amie, daughter of Mansa Tiramakhan of Mālī; Fāṭima, daughter of the late Yūsuf ibn Ismāʿīl of Banbalūna, to tie the ṭāʾifas to the crown; and Muʾmina, daughter of Muṣliḥ al-Dīn of the court. At sixteen his grandfather the Emperor made him admiral of the fleet, believing the post had made a man of him and would do the same for his grandson (Trent's screenshot and account; save of 16 January 1438)."
  },
  {
+  "id": "abu-al-hasan-ali-ibn-yusuf-ibn-ismail",
+  "name": "Abū al-Ḥasan ʿAlī ibn Yūsuf",
+  "nameArabic": "أبو الحسن علي بن يوسف",
+  "nameGame": "Abu al-Hasan Ali",
+  "gameId": 95427,
+  "dynasty": "Naṣrid",
+  "born": "1442-10-09",
+  "father": "yusuf-ibn-ismail-ibn-muhammad",
+  "mother": "mumina-bint-muslih-al-din",
+  "roles": [],
+  "stats": {
+   "adm": 12,
+   "dip": 10,
+   "mil": 8
+  },
+  "traits": [
+   "child_shrewd"
+  ],
+  "note": "First son of Prince Yūsuf, the admiral, by Muʾmina bint Muṣliḥ al-Dīn; born at Gharnāṭa on 9 October 1442, third in line after his grandfather the heir and his father. Shrewd as a child. (autosave of 1 February 1447)"
+ },
+ {
+  "id": "saad-ibn-yusuf-ibn-ismail",
+  "name": "Saʿd ibn Yūsuf ibn Ismāʿīl",
+  "nameArabic": "سعد بن يوسف بن إسماعيل",
+  "nameGame": "Saad",
+  "gameId": 33581301,
+  "dynasty": "Naṣrid",
+  "born": "1443-07-24",
+  "father": "yusuf-ibn-ismail-ibn-muhammad",
+  "mother": "amie-of-mali",
+  "roles": [],
+  "stats": {
+   "adm": 10,
+   "dip": 5,
+   "mil": 8
+  },
+  "traits": [
+   "child_idiot"
+  ],
+  "note": "Son of Prince Yūsuf by Amie, daughter of Mansa Tiramakhan of Mālī; born at Niani, at the Mansa's court, on 24 July 1443. Slow as a child. (autosave of 1 February 1447)"
+ },
+ {
+  "id": "aisha-bint-yusuf-ibn-ismail-ibn-muhammad",
+  "name": "ʿĀʾisha bint Yūsuf ibn Ismāʿīl",
+  "nameArabic": "عائشة بنت يوسف بن إسماعيل",
+  "nameGame": "Aisha",
+  "gameId": 95799,
+  "dynasty": "Naṣrid",
+  "born": "1443-09-24",
+  "father": "yusuf-ibn-ismail-ibn-muhammad",
+  "mother": "fatima-bint-yusuf-ibn-ismail",
+  "female": true,
+  "roles": [],
+  "stats": {
+   "adm": 9,
+   "dip": 10,
+   "mil": 8
+  },
+  "traits": [
+   "child_rowdy"
+  ],
+  "note": "Daughter of Prince Yūsuf by Fāṭima bint Yūsuf of Banbalūna; born at Gharnāṭa on 24 September 1443. Rowdy as a child. (autosave of 1 February 1447)"
+ },
+ {
+  "id": "faruq-ibn-yusuf-ibn-ismail",
+  "name": "Fārūq ibn Yūsuf ibn Ismāʿīl",
+  "nameArabic": "فاروق بن يوسف بن إسماعيل",
+  "nameGame": "Faruq",
+  "gameId": 96329,
+  "dynasty": "Naṣrid",
+  "born": "1444-10-24",
+  "father": "yusuf-ibn-ismail-ibn-muhammad",
+  "mother": "amie-of-mali",
+  "roles": [],
+  "stats": {
+   "adm": 5,
+   "dip": 3,
+   "mil": 9
+  },
+  "traits": [],
+  "note": "Second son of Prince Yūsuf by Amie of Mālī; born at Niani on 24 October 1444. (autosave of 1 February 1447)"
+ },
+ {
   "id": "shams-bint-ismail-ibn-muhammad",
   "name": "Shams bint Ismāʿīl ibn Muḥammad",
   "nameArabic": "شمس بنت إسماعيل بن محمد",
@@ -3051,7 +3135,7 @@
    "wife of Prince Yūsuf"
   ],
   "traits": [],
-  "note": "Daughter of Muṣliḥ al-Dīn, a Naṣrid of the court. Married to Prince Yūsuf by January 1438 (Trent; save of 16 January 1438)."
+  "note": "Daughter of Muṣliḥ al-Dīn, a Naṣrid of the court. Married to Prince Yūsuf by January 1438 (Trent; save of 16 January 1438). Her father Muṣliḥ al-Dīn died on 18 October 1446 (autosave of 1 February 1447)."
  },
  {
   "id": "abd-al-jalil-al-qubbasi",

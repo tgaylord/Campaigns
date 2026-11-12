@@ -66,6 +66,24 @@
   "source": "Trent's account; save of 11 June 1442"
  },
  {
+  "id": "1442-08-07-establish-a-thalassocracy",
+  "date": "1442-08-07",
+  "type": "reform",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [
+   "ishbiliyya"
+  ],
+  "wars": [],
+  "title": "On the same day as the Golden Century, the Emperor establishes a Thalassocracy, one of the first acts of the new age: for twenty years ships cost a fifth less to build and the realm turns faster toward the sea",
+  "data": {
+   "effects": "'Let us embrace the sea': Establishing a Thalassocracy for 20 years, heavy and light ship build cost −20%, monthly progress to naval +0.50; 20 years to establish a strong navy",
+   "taken": "taken on 7 August 1442, the same day as the Golden Century (Trent)"
+  },
+  "source": "Trent's screenshot of 7 August 1442 and account"
+ },
+ {
   "id": "1442-08-07-the-golden-century",
   "date": "1442-08-07",
   "type": "situation",
@@ -87,21 +105,20 @@
   "source": "Trent's screenshots and account, 7 August 1442"
  },
  {
-  "id": "1442-08-07-establish-a-thalassocracy",
-  "date": "1442-08-07",
-  "type": "reform",
+  "id": "1442-10-09-birth-abu-al-hasan-ali",
+  "date": "1442-10-09",
+  "type": "birth",
   "people": [
-   "muhammad-ibn-ismail-ibn-saad"
+   "abu-al-hasan-ali-ibn-yusuf-ibn-ismail",
+   "yusuf-ibn-ismail-ibn-muhammad",
+   "mumina-bint-muslih-al-din"
   ],
   "places": [
-   "ishbiliyya"
+   "gharnata"
   ],
   "wars": [],
-  "title": "On the same day as the Golden Century, the Emperor establishes a Thalassocracy, one of the first acts of the new age: for twenty years ships cost a fifth less to build and the realm turns faster toward the sea",
-  "data": {
-   "effects": "'Let us embrace the sea': Establishing a Thalassocracy for 20 years, heavy and light ship build cost −20%, monthly progress to naval +0.50; 20 years to establish a strong navy",
-   "taken": "taken on 7 August 1442, the same day as the Golden Century (Trent)"
-  },
-  "source": "Trent's screenshot of 7 August 1442 and account"
+  "title": "Abū al-Ḥasan ʿAlī, first son of Prince Yūsuf, is born to Muʾmina at Gharnāṭa",
+  "data": {},
+  "source": "autosave of 1 February 1447"
  }
 ]

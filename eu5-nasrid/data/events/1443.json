@@ -17,5 +17,52 @@
    "target": "the island of Fernando Po"
   },
   "source": "Trent's account, 26 June 1443"
+ },
+ {
+  "id": "1443-07-24-birth-saad",
+  "date": "1443-07-24",
+  "type": "birth",
+  "people": [
+   "saad-ibn-yusuf-ibn-ismail",
+   "yusuf-ibn-ismail-ibn-muhammad",
+   "amie-of-mali"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Saʿd, son of Prince Yūsuf and Amie of Mālī, is born at Niani",
+  "data": {
+   "place": "Niani"
+  },
+  "source": "autosave of 1 February 1447"
+ },
+ {
+  "id": "1443-09-03-death-saad-ibn-ismail",
+  "date": "1443-09-03",
+  "type": "death",
+  "people": [
+   "saad-ibn-ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Saʿd ibn Ismāʿīl, the Emperor's brother, dies at fifty-one",
+  "data": {},
+  "source": "autosave of 1 February 1447"
+ },
+ {
+  "id": "1443-09-24-birth-aisha",
+  "date": "1443-09-24",
+  "type": "birth",
+  "people": [
+   "aisha-bint-yusuf-ibn-ismail-ibn-muhammad",
+   "yusuf-ibn-ismail-ibn-muhammad",
+   "fatima-bint-yusuf-ibn-ismail"
+  ],
+  "places": [
+   "gharnata"
+  ],
+  "wars": [],
+  "title": "ʿĀʾisha, daughter of Prince Yūsuf, is born to Fāṭima of Banbalūna at Gharnāṭa",
+  "data": {},
+  "source": "autosave of 1 February 1447"
  }
 ]

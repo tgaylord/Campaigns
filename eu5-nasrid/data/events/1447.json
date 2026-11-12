@@ -1,7 +1,7 @@
 [
  {
-  "id": "1447-01-08-the-flanders-embargo",
-  "date": "1447-01-08",
+  "id": "1447-01-07-the-flanders-embargo",
+  "date": "1447-01-07",
   "type": "diplomacy",
   "people": [],
   "places": [],
@@ -12,6 +12,21 @@
    "where": "Flanders",
    "trend": "after Genoa (1440), Ireland (1444) and Aquitaine (1444)"
   },
-  "source": "Trent's account, 8 January 1447"
+  "source": "Trent's account (8 January 1447); the autosave of 1 February 1447 dates it 7 January"
+ },
+ {
+  "id": "1447-01-08-markets-closed-to-the-angevins",
+  "date": "1447-01-08",
+  "type": "diplomacy",
+  "people": [],
+  "places": [],
+  "wars": [],
+  "title": "Al-Andalus answers the Angevins in kind and closes its markets to their merchants, beside the embargo it has kept on them since 1440",
+  "data": {
+   "by": "al-Andalus",
+   "against": "the Angevin Empire",
+   "kind": "deny market access"
+  },
+  "source": "autosave of 1 February 1447"
  }
 ]
