@@ -135,9 +135,9 @@ function Verses() {
       <p className="ui muted-ink">Every leaf closes on a verse of the Qurʾān, never one used before. {spent.length} are spent, from {suras} of the 114 sūras{missing.length ? `; ${missing.length} leaf has none recorded` : ""}. Check a verse before choosing it:</p>
       <div className="verse-check ui">
         <label htmlFor="vq">Sūra and āya</label>
-        <input id="vq" value={q} onChange={(e) => setQ(e.target.value)} placeholder="e.g. 2:255 or 65:2-3" inputMode="numeric" autoComplete="off" />
+        <input id="vq" value={q} onChange={(e) => setQ(e.target.value)} placeholder="e.g. 2:255 or 24:35-36" inputMode="numeric" autoComplete="off" />
         <output htmlFor="vq" aria-live="polite">
-          {!q ? "" : !want ? "Write it as sūra:āya, or sūra:āya-āya." :
+          {!q ? "" : !want ? "No such verse. Write it as sūra:āya or sūra:āya-āya (there are 114 sūras)." :
             clash.length ? <>Spent: {clash.map(({ l, v }) => <span key={l.addr}><b>{v!.name} {l.entry.verse}</b> closes <Link to={`/codex/${l.addr}`}>{l.entry.title}</Link>. </span>)}</> :
             <span className="free">Free: {want.name} {q.trim()} has not closed a leaf.</span>}
         </output>
@@ -149,7 +149,7 @@ function Verses() {
             <tr key={l.addr} style={bk(l.book)}>
               <td className="ui num ref">{l.entry.verse}</td>
               <td>{v!.name}</td>
-              <td><Link to={`/codex/${l.addr}`}>{l.entry.title}</Link>{l.verseHtml && <span className="vt" dangerouslySetInnerHTML={{ __html: l.verseHtml }} />}</td>
+              <td><Link to={`/codex/${l.addr}`}>{l.entry.title}</Link>{l.verseHtml ? <span className="vt" dangerouslySetInnerHTML={{ __html: l.verseHtml }} /> : <span className="vt ui">set within the last paragraph</span>}</td>
               <td className="ui yr">{l.hy} · {l.entry.date.slice(0, 4)}</td>
             </tr>
           ))}
@@ -170,9 +170,10 @@ function CourtNow() {
   const lastNamed = new Map<string, Leaf>();
   for (const l of leaves) for (const p of l.entry.people) lastNamed.set(p, l);
   const seat = new Map<string, string>();
-  seat.set(latest.ruler, "the throne");
-  if (latest.heir) seat.set(latest.heir, "heir");
-  latest.cabinet.forEach((c) => seat.set(c.person, `the dīwān: ${c.role.toLowerCase()}`));
+  const task = (r: string) => r[0].toLowerCase() + r.slice(1);
+  latest.cabinet.forEach((c) => seat.set(c.person, `in the dīwān, ${task(c.role)}`));
+  if (latest.heir) seat.set(latest.heir, seat.has(latest.heir) ? `heir; ${seat.get(latest.heir)}` : "heir");
+  seat.set(latest.ruler, `on the throne${seat.has(latest.ruler) ? `; ${seat.get(latest.ruler)}` : ""}`);
   const alive = people.filter((p) => (!p.born || p.born <= D) && (!p.died || p.died > D));
   const inHouse = alive.filter((p) => p.dynasty === "Naṣrid" || seat.has(p.id));
   const rank = (id: string) => (id === latest.ruler ? 0 : id === latest.heir ? 1 : seat.has(id) ? 2 : 3);
@@ -187,7 +188,7 @@ function CourtNow() {
       <tr>
         <th scope="row"><EntityLink kind="person" id={p.id}>{p.name}</EntityLink></th>
         <td className="ui num">{p.born ? ageAt(p.born, D) : "?"}</td>
-        <td className="ui st">{seat.get(p.id) ?? p.roles.find((r) => !/\(\d{4}[–-]\d{4}\)/.test(r)) ?? ""}</td>
+        <td className="ui st">{seat.get(p.id) ?? p.roles.find((r) => !/\(\d{4}[–-]\d{4}\)/.test(r) && !/dīwān|heir|regent|throne|sultan|emperor/i.test(r)) ?? ""}</td>
         <td className="ui ln">{l ? <><Link to={`/codex/${l.addr}`} style={bk(l.book)} className="lnk">{l.label}</Link>{gap! >= 10 ? <span className="gap"> · {gap} years ago</span> : ""}</> : <span className="never">never named in a leaf</span>}</td>
       </tr>
     );

@@ -214,3 +214,20 @@
 .bl-leaves a:hover { color: var(--bk); text-decoration: underline; }
 .bl-leaves .a { font-size: 0.72rem; color: var(--bk); margin-right: 0.3rem; }
 .bl-people { font-size: 0.8rem; color: var(--ink-2); margin: 0; }
+
+/* ------------------------------------------------------------ review fixes: phone and touch */
+
+.lane-mark { font-size: 0.74rem; color: var(--bk); font-variant: small-caps; letter-spacing: 0.04em; padding: 0.35rem 0 0.2rem 0.25rem; }
+.catch .end-links { display: block; font-style: normal; font-size: 0.8rem; margin-top: 0.35rem; }
+.catch .end-links a { color: var(--bk); }
+@media (hover: none) { .hint.keys { display: none; } }
+@media (max-width: 46rem) {
+  /* the strip keeps its legibility and scrolls sideways inside its sheet */
+  .year-strip { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .year-strip svg { width: 720px; max-width: none; }
+  .codex-head { gap: 0.4rem 0.75rem; }
+  .codex-head .steps a, .codex-head .steps span { min-width: 44px; min-height: 40px; display: inline-flex; align-items: center; justify-content: center; }
+  .codex-leaf .quiet-links { gap: 0.25rem 1rem; }
+  .codex-leaf .quiet-links a { display: inline-block; padding: 0.55rem 0; }
+  .ycell .refold { font-size: 0.8rem; padding: 0.4rem 0; }
+}

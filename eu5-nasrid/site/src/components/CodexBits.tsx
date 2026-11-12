@@ -49,7 +49,12 @@ export function Catchwords({ leaf }: { leaf: Leaf }) {
 export function CatchLine({ c }: { c: Catch }) {
   const href = catchHref(c);
   const style = { "--bk": c.color } as CSSProperties;
-  if (!href) return <p className={`catch quiet ${c.kind}`} style={style}>{c.label}</p>;
+  if (!href) return (
+    <p className={`catch quiet ${c.kind}`} style={style}>
+      {c.label}
+      {c.kind === "end" && <span className="ui end-links"> <Link to="/codex/colophon">What each sitting added</Link> · <Link to="/codex">Back to the tables</Link></span>}
+    </p>
+  );
   const onClick = () => { if (c.kind === "leaf" && c.follow !== "both") follow.set(c.follow); };
   return (
     <Link to={href} className={`catch ${c.kind}`} style={style} onClick={onClick}>

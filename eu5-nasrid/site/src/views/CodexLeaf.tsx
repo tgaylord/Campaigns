@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { RunningHead, Catchwords, Star, LeafDates, bk } from "../components/CodexBits";
-import { leaves, leafByAddr, leafById, canonOf, reignAt, regnalYear, ribbon, verseCite, type Leaf } from "../lib/codex";
-import { notes, western, sessions, sovereignTitle } from "../lib/data";
+import { leaves, leafByAddr, leafById, canonOf, reignAt, regnalYear, ribbon, verseCite, nextHref, prevHref, type Leaf } from "../lib/codex";
+import { notes, western, sessions } from "../lib/data";
 import { ordinal } from "./Codex";
 import "./chronicle.css";
 import "./codex.css";
@@ -18,18 +18,20 @@ export default function CodexLeaf() {
   // an old file id works too, so a link from the Chronicle can find its leaf
   const leaf = leafByAddr.get(addr) ?? leafById.get(addr);
   const prev = leaf ? leaves[leaf.n - 2] : undefined;
-  const next = leaf ? leaves[leaf.n] : undefined;
+  // turning leaves passes through each book's opening page, as the catchwords do
+  const goPrev = leaf ? prevHref(leaf) : undefined;
+  const goNext = leaf ? nextHref(leaf) : undefined;
 
   useEffect(() => { if (leaf) ribbon.set(leaf.addr); }, [leaf]);
   useEffect(() => {
     const key = (e: KeyboardEvent) => {
       if ((e.target as HTMLElement).closest("input, textarea, select") || e.metaKey || e.ctrlKey || e.altKey) return;
-      if (e.key === "ArrowLeft" && prev) navigate(`/codex/${prev.addr}`);
-      if (e.key === "ArrowRight" && next) navigate(`/codex/${next.addr}`);
+      if (e.key === "ArrowLeft" && goPrev) navigate(goPrev);
+      if (e.key === "ArrowRight" && goNext) navigate(goNext);
     };
     window.addEventListener("keydown", key);
     return () => window.removeEventListener("keydown", key);
-  }, [prev, next, navigate]);
+  }, [goPrev, goNext, navigate]);
 
   if (!leaf) return <div className="page"><h1>No leaf at this address</h1><p className="muted">Leaves are addressed by their Hijri date, as 772-02-21. <Link to="/codex">Find it in the canon tables.</Link></p></div>;
 
@@ -48,7 +50,7 @@ export default function CodexLeaf() {
         book={book}
         left={<><span className="bkname">{book.name}</span>{reign && <span className="reign">{reign.person.name}, {ordinal(regnalYear(entry.date, reign))} year</span>}</>}
         right={<><span>{leaf.hy} AH · {entry.date.slice(0, 4)}</span><span>leaf {leaf.n} of {leaves.length}</span></>}
-        prev={prev && `/codex/${prev.addr}`} next={next && `/codex/${next.addr}`}
+        prev={goPrev} next={goNext}
       />
 
       <article className="folio codex-leaf" aria-labelledby="leaf-title">
@@ -68,9 +70,9 @@ export default function CodexLeaf() {
         </div>
 
         {isLast && book.closed && (
-          <p className="explicit-tally ui">Explicit · {book.name} · {book.leaves.length} leaves · {book.words.toLocaleString("en-GB")} words · {book.first!.hy}–{leaf.hy} AH · {book.era.start.slice(0, 4)}–{book.era.end!.slice(0, 4)}</p>
+          <p className="explicit-tally ui">Here ends {book.name.replace(/^The /, "the ")}: {book.leaves.length} leaves, {book.words.toLocaleString("en-GB")} words, {book.first!.hy}–{leaf.hy} AH ({book.era.start.slice(0, 4)}–{book.era.end!.slice(0, 4)})</p>
         )}
-        {isLast && !book.closed && <p className="explicit-tally ui">{book.name} continues, written as it happens.</p>}
+        {isLast && !book.closed && leaf.n < leaves.length && <p className="explicit-tally ui">{book.name} goes on, written as the campaign is played.</p>}
 
         {glosses.length > 0 && (
           <details className="leaf-note">
@@ -94,7 +96,7 @@ export default function CodexLeaf() {
         </nav>
         <p className="leaf-colophon ui">{leafColophon(leaf, sitting?.date)}</p>
       </article>
-      <p className="hint ui">The left and right arrow keys turn the leaves. {sovereignTitle(entry.date)}{reign ? `: ${reign.person.name}` : ""}.</p>
+      <p className="hint keys ui">The left and right arrow keys turn the leaves.</p>
     </div>
   );
 }
@@ -102,6 +104,6 @@ export default function CodexLeaf() {
 function leafColophon(l: Leaf, bound?: string) {
   const bits = [`${l.words.toLocaleString("en-GB")} words`];
   if (l.save) bits.push(`read from the save of ${western(l.save)}`);
-  if (bound) bits.push(`bound on ${western(bound)}`);
+  if (bound) bits.push(`written up on ${western(bound)}`);
   return bits.join(" · ");
 }

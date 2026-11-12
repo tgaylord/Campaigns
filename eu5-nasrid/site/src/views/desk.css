@@ -65,3 +65,4 @@
   .verse-t td:nth-child(3), .court-t td.st, .court-t td.ln { grid-column: 1 / -1; }
   .court-t .ln { white-space: normal; }
 }
+@media (max-width: 46rem) { .desk-jump a { display: inline-block; padding: 0.5rem 0; } }

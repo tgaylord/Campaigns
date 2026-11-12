@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState, type CSSProperties } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { PageHead } from "../components/bits";
 import { YearStrip, bk } from "../components/CodexBits";
-import { leaves, books, canons, leafByAddr, totalWords, hyLabel, bookOpenIn, beginsIn, endsIn, ribbon, regnalYear, type Canon, type CanonRow, type Leaf } from "../lib/codex";
+import { leaves, books, canons, leafByAddr, totalWords, hyLabel, hyWestern, bookOpenIn, beginsIn, endsIn, ribbon, regnalYear, type Canon, type CanonRow, type Leaf } from "../lib/codex";
 import { hijri, western } from "../lib/data";
 import { HIJRI_MONTHS } from "../lib/hijri";
 import "./chronicle.css";
@@ -27,7 +27,11 @@ export default function Codex() {
 
   useEffect(() => {
     if (!found) return;
-    const t = setTimeout(() => document.getElementById(`c-${found.addr}`)?.scrollIntoView({ block: "center" }), 60);
+    // the tables on a wide screen, the lanes on a phone: scroll to whichever is shown
+    const t = setTimeout(() => {
+      const el = [document.getElementById(`c-${found.addr}`), document.getElementById(`ln-${found.addr}`)].find((x) => x && x.offsetParent !== null);
+      el?.scrollIntoView({ block: "center" });
+    }, 60);
     return () => clearTimeout(t);
   }, [found]);
 
@@ -42,8 +46,8 @@ export default function Codex() {
         lede={<>The whole chronicle as one bound book. Every entry is a leaf, in the order its dates fall, addressed by its Hijri date; the {numberWord(books.length)} books run through it as threads. Read it straight through, or follow one book down its column. Each leaf ends with two catchwords: the next leaf of the codex, and the next of its own book.</>}
       />
       <div className="codex-actions ui">
-        <Link className="act main" to={`/codex/book/${first.book.id}`}>Begin at the first leaf</Link>
-        {ribLeaf && <Link className="act" to={`/codex/${ribLeaf.addr}`}>Resume at the ribbon · {ribLeaf.label}</Link>}
+        <Link className="act main" to={`/codex/book/${first.book.id}`}>Begin reading</Link>
+        {ribLeaf && <Link className="act" to={`/codex/${ribLeaf.addr}`}>Resume where you left off: {ribLeaf.entry.title.length > 48 ? ribLeaf.entry.title.slice(0, 46).replace(/[ ,]+\S*$/, "") + "…" : ribLeaf.entry.title}</Link>}
         <Link className="act" to="/codex/colophon">Colophon</Link>
         <Link className="act" to="/desk">The Desk</Link>
         <span className="tally">{leaves.length} leaves · {totalWords.toLocaleString("en-GB")} words · {first.hy}–{last.hy} AH · {first.entry.date.slice(0, 4)}–{last.entry.date.slice(0, 4)}</span>
@@ -114,7 +118,7 @@ function CanonTable({ canon, found, ribbon, folded, isOpen, toggle }: {
             if (!ls.length) return rows.filter((r) => r.kind === "reign").map((r) => <ReignRule key={`r${d}`} row={r} />);
             return (
               <div key={d} className="arow decade" role="row">
-                <div className="ycell" role="rowheader"><button className="ui unfold" onClick={() => toggle(d)} aria-expanded="false">{d}s<small>{hyLabel(d).split("–")[0]}–{hyLabel(d + 9).split("–").pop()}</small></button></div>
+                <div className="ycell" role="rowheader"><button className="ui unfold" onClick={() => toggle(d)} aria-expanded="false">{d}s<small>{hyWestern(d)[0]}–{hyWestern(d + 9)[1]}</small></button></div>
                 {cols.map((b) => {
                   const k = ls.filter((l) => l.book === b).length;
                   return <div key={b.id} className={`cell ${bookOpenIn(b, d) || bookOpenIn(b, d + 9) ? "open" : ""}`} style={bk(b)} role="cell">
@@ -127,7 +131,7 @@ function CanonTable({ canon, found, ribbon, folded, isOpen, toggle }: {
           return rows.map((r, i) => {
             if (r.kind === "reign") return <ReignRule key={`reign-${r.reign.from}`} row={r} />;
             if (r.kind === "lacuna") {
-              const span = r.hy0 === r.hy1 ? `${r.hy0} AH · ${hyLabel(r.hy0)}` : `${r.hy0}–${r.hy1} AH · ${hyLabel(r.hy0).split("–")[0]}–${hyLabel(r.hy1).split("–").pop()}`;
+              const span = r.hy0 === r.hy1 ? `${r.hy0} AH · ${hyLabel(r.hy0)}` : `${r.hy0}–${r.hy1} AH · ${hyWestern(r.hy0)[0]}–${hyWestern(r.hy1)[1]}`;
               return (
                 <div key={`lac-${r.hy0}`} className="arow lacuna" role="row">
                   <div className="lac-text ui" role="cell">No leaf · {span} · {r.saves ? `${r.saves} save${r.saves > 1 ? "s" : ""} read, nothing written` : "no save; the record is silent"}</div>
@@ -145,7 +149,7 @@ function CanonTable({ canon, found, ribbon, folded, isOpen, toggle }: {
                     {beginsIn(b, r.hy) && <span className="chip ui">Here begins</span>}
                     {r.cells[ci].map((l) => (
                       <Link key={l.addr} id={`c-${l.addr}`} to={`/codex/${l.addr}`} className={`cl ${found === l ? "found" : ""}`}>
-                        <span className="dm ui">{l.hd} {HIJRI_MONTHS[l.hm - 1]}{ribbon === l && <span className="ribbon" title="Your ribbon: the last leaf you opened">ribbon</span>}</span>
+                        <span className="dm ui">{l.hd} {HIJRI_MONTHS[l.hm - 1]}{ribbon === l && <span className="ribbon" title="The last leaf you opened in this browser">you left off here</span>}</span>
                         <span className="tt">{l.entry.title}</span>
                       </Link>
                     ))}
@@ -164,17 +168,20 @@ function CanonTable({ canon, found, ribbon, folded, isOpen, toggle }: {
           if (r.kind === "reign") return <li key={`r-${r.reign.from}`} className="lane-rule ui">Reign of {r.reign.person.name}, from {western(r.reign.from)}</li>;
           if (r.kind === "lacuna") return <li key={`l-${r.hy0}`} className="lane-lac ui">No leaf · {r.hy0}{r.hy1 !== r.hy0 ? `–${r.hy1}` : ""} AH · {r.saves ? `${r.saves} save${r.saves > 1 ? "s" : ""} read` : "the record is silent"}</li>;
           const ls = r.cells.flat().sort((a, b) => a.n - b.n);
-          return ls.map((l) => (
-            <li key={l.addr} className={`lane ${found === l ? "found" : ""}`}>
+          const marks = (when: "b" | "e") => cols.filter((b) => (when === "b" ? beginsIn(b, r.hy) : endsIn(b, r.hy))).map((b) => (
+            <li key={`${when}-${b.id}`} className="lane-mark ui" style={bk(b)}>{when === "b" ? "Here begins" : "Here ends"} {b.name.replace(/^The /, "the ")}</li>
+          ));
+          return [...marks("b"), ...ls.map((l) => (
+            <li key={l.addr} id={`ln-${l.addr}`} className={`lane ${found === l ? "found" : ""}`}>
               <span className="tracks" aria-hidden="true">
                 {cols.map((b) => <i key={b.id} style={bk(b)} className={l.book === b ? "me" : bookOpenIn(b, l.hy) ? "open" : ""} />)}
               </span>
               <Link to={`/codex/${l.addr}`}>
-                <span className="dm ui" style={bk(l.book)}>{l.hy} · {l.hd} {HIJRI_MONTHS[l.hm - 1]} · {l.book.short}{ribbon === l && <span className="ribbon">ribbon</span>}</span>
+                <span className="dm ui" style={bk(l.book)}>{l.hd} {HIJRI_MONTHS[l.hm - 1]} {l.hy} · {l.entry.date.slice(0, 4)} · {l.book.short}{ribbon === l && <span className="ribbon">you left off here</span>}</span>
                 <span className="tt">{l.entry.title}</span>
               </Link>
             </li>
-          ));
+          )), ...marks("e")];
         })}
       </ol>
     </section>

@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect } from "react";
+import { lazy, Suspense, useLayoutEffect } from "react";
 import { NavLink, Route, Routes, useLocation } from "react-router-dom";
 import { campaign, latest, hijri, arabicDigits } from "./lib/data";
 import EntityCard from "./components/EntityCard";
@@ -51,7 +51,8 @@ export default function App() {
   // the checkpoint travels with you from hall to hall (?at=), so the halls agree on the year
   // (not to the Atlas: the router writes the home page without its trailing slash, which a query can't follow)
   const at = new URLSearchParams(search).get("at");
-  useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
+  // before paint, so a new page never shows the old page's scroll for a frame
+  useLayoutEffect(() => { window.scrollTo(0, 0); }, [pathname]);
   const h = latest ? hijri(latest.date) : null;
 
   return (

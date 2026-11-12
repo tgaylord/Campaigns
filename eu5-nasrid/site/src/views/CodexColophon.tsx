@@ -30,9 +30,9 @@ export default function CodexColophon() {
         )}
 
         <h2 className="sheet-title">The binding log</h2>
-        <p className="ui muted-ink">One line for each sitting at which the record was added to, newest first. Its leaves were bound that day; the years are those the sitting reached.</p>
+        <p className="ui muted-ink">One line for each sitting that added leaves, newest first: the leaves written up that day, and the span of campaign dates they and the sitting's other records cover (a sitting can go back to fill an earlier gap).</p>
         <ol className="binding-log">
-          {log.map((s) => {
+          {log.filter((s) => s.entries.length > 0).map((s) => {
             const ls = s.entries.map((id) => leafById.get(id)).filter(Boolean) as typeof leaves;
             const opened = books.filter((b) => b.first && ls.includes(b.first));
             const shut = books.filter((b) => b.closed && b.last && ls.includes(b.last));
@@ -40,7 +40,7 @@ export default function CodexColophon() {
               <li key={s.id}>
                 <div className="bl-h">
                   <span className="bl-d ui">{western(s.date)}{s.uncommitted ? " (in progress)" : ""}</span>
-                  {s.reached && <span className="bl-r ui">reached {hijri(s.reached.from).y === hijri(s.reached.to).y ? hijri(s.reached.to).y : `${hijri(s.reached.from).y}–${hijri(s.reached.to).y}`} AH · {s.reached.from.slice(0, 4) === s.reached.to.slice(0, 4) ? s.reached.to.slice(0, 4) : `${s.reached.from.slice(0, 4)}–${s.reached.to.slice(0, 4)}`}</span>}
+                  {s.reached && <span className="bl-r ui">covers {hijri(s.reached.from).y === hijri(s.reached.to).y ? hijri(s.reached.to).y : `${hijri(s.reached.from).y}–${hijri(s.reached.to).y}`} AH · {s.reached.from.slice(0, 4) === s.reached.to.slice(0, 4) ? s.reached.to.slice(0, 4) : `${s.reached.from.slice(0, 4)}–${s.reached.to.slice(0, 4)}`}</span>}
                 </div>
                 <p className="bl-sum ui">
                   {[
@@ -65,6 +65,9 @@ export default function CodexColophon() {
             );
           })}
         </ol>
+        {log.some((s) => !s.entries.length) && (
+          <p className="ui muted-ink">Sittings that added no leaves (corrections, new records, saves read ahead of the story): {log.filter((s) => !s.entries.length).map((s) => `${western(s.date)}${s.uncommitted ? " (in progress)" : ""}`).join("; ")}. Their work is on the Desk.</p>
+        )}
       </article>
     </div>
   );

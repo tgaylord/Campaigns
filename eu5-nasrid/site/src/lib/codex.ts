@@ -100,10 +100,12 @@ function addressOf(e: StoryEntry) {
   return { hy: h.y, hm: h.m, hd: h.d, base: `${h.y}-${String(h.m).padStart(2, "0")}-${String(h.d).padStart(2, "0")}` };
 }
 
-// Codex order: by date; two leaves on one day keep the order they were first bound in, then file order,
-// so a suffix once given is not taken back when a later leaf is written for the same day.
+// Codex order: by date; two leaves on one day go in the order of their books (so Book 2 opens before
+// Book 3), then the order they were first bound in, then file order.
+const eraOrder = new Map(eras.map((e, i) => [e.id, i]));
 const ordered = [...chronicle].sort((a, b) =>
   a.date.localeCompare(b.date) || addressOf(a).base.localeCompare(addressOf(b).base)
+  || (eraOrder.get(a.era) ?? 99) - (eraOrder.get(b.era) ?? 99)
   || (sittingOrder.get(boundIn.get(a.id) ?? "") ?? 1e9) - (sittingOrder.get(boundIn.get(b.id) ?? "") ?? 1e9)
   || a.id.localeCompare(b.id));
 const perDay = new Map<string, number>();
@@ -226,11 +228,23 @@ export function catchwordsFor(l: Leaf): Catch[] {
       else out.push({ kind: "leaf", label: `Next leaf · ${next.book.name.replace(/^The /, "the ")}`, color: next.book.color, leaf: next, follow: "codex" });
     }
     if (nextInBook) out.push({ kind: "leaf", label: `Next in ${l.book.name.replace(/^The /, "the ")}`, color: l.book.color, leaf: nextInBook, follow: "book" });
+    else if (!next) out.push({ kind: "end", label: `This is the last leaf written so far. ${l.book.name} goes on as the campaign is played.`, color: l.book.color });
     else if (l.book.closed) out.push({ kind: "closed", label: `${l.book.name} is closed. Its ${l.book.leaves.length} leaves end here; the codex goes on.`, color: l.book.color });
-    else out.push({ kind: "continues", label: `${l.book.name} continues, written as it happens. Its next leaf is not yet written.`, color: l.book.color });
+    else out.push({ kind: "continues", label: `${l.book.name} goes on; its next leaf is not yet written.`, color: l.book.color });
   }
-  if (!next) out.push({ kind: "end", label: "This is the last leaf bound. The book stands open here.", color: l.book.color });
   return out;
+}
+
+/** Turning leaves in reading order, with each book's opening page before its first leaf. */
+export function nextHref(l: Leaf): string | undefined {
+  const next = leaves[l.n] as Leaf | undefined;
+  if (!next) return undefined;
+  return next.book.first === next && next.book !== l.book ? `/codex/book/${next.book.id}` : `/codex/${next.addr}`;
+}
+export function prevHref(l: Leaf): string | undefined {
+  if (l.book.first === l && l.n > 1) return `/codex/book/${l.book.id}`;
+  const prev = leaves[l.n - 2] as Leaf | undefined;
+  return prev ? `/codex/${prev.addr}` : `/codex/book/${l.book.id}`;
 }
 
 /** The books running beside this one: those whose spans overlap it. */
@@ -239,11 +253,15 @@ export const besides = (b: Book) => books.filter((x) => x !== b && x.era.start <
 /* ------------------------------------------------------------ the closing verse */
 
 export const SURAS = ["al-Fātiḥa", "al-Baqara", "Āl ʿImrān", "al-Nisāʾ", "al-Māʾida", "al-Anʿām", "al-Aʿrāf", "al-Anfāl", "al-Tawba", "Yūnus", "Hūd", "Yūsuf", "al-Raʿd", "Ibrāhīm", "al-Ḥijr", "al-Naḥl", "al-Isrāʾ", "al-Kahf", "Maryam", "Ṭā Hā", "al-Anbiyāʾ", "al-Ḥajj", "al-Muʾminūn", "al-Nūr", "al-Furqān", "al-Shuʿarāʾ", "al-Naml", "al-Qaṣaṣ", "al-ʿAnkabūt", "al-Rūm", "Luqmān", "al-Sajda", "al-Aḥzāb", "Sabaʾ", "Fāṭir", "Yā Sīn", "al-Ṣāffāt", "Ṣād", "al-Zumar", "Ghāfir", "Fuṣṣilat", "al-Shūrā", "al-Zukhruf", "al-Dukhān", "al-Jāthiya", "al-Aḥqāf", "Muḥammad", "al-Fatḥ", "al-Ḥujurāt", "Qāf", "al-Dhāriyāt", "al-Ṭūr", "al-Najm", "al-Qamar", "al-Raḥmān", "al-Wāqiʿa", "al-Ḥadīd", "al-Mujādila", "al-Ḥashr", "al-Mumtaḥana", "al-Ṣaff", "al-Jumuʿa", "al-Munāfiqūn", "al-Taghābun", "al-Ṭalāq", "al-Taḥrīm", "al-Mulk", "al-Qalam", "al-Ḥāqqa", "al-Maʿārij", "Nūḥ", "al-Jinn", "al-Muzzammil", "al-Muddaththir", "al-Qiyāma", "al-Insān", "al-Mursalāt", "al-Nabaʾ", "al-Nāziʿāt", "ʿAbasa", "al-Takwīr", "al-Infiṭār", "al-Muṭaffifīn", "al-Inshiqāq", "al-Burūj", "al-Ṭāriq", "al-Aʿlā", "al-Ghāshiya", "al-Fajr", "al-Balad", "al-Shams", "al-Layl", "al-Ḍuḥā", "al-Sharḥ", "al-Tīn", "al-ʿAlaq", "al-Qadr", "al-Bayyina", "al-Zalzala", "al-ʿĀdiyāt", "al-Qāriʿa", "al-Takāthur", "al-ʿAṣr", "al-Humaza", "al-Fīl", "Quraysh", "al-Māʿūn", "al-Kawthar", "al-Kāfirūn", "al-Naṣr", "al-Masad", "al-Ikhlāṣ", "al-Falaq", "al-Nās"];
-/** "9:41" → { sura: 9, from: 41, to: 41, name: "al-Tawba" } */
+/** How many āyāt each sūra has (Ḥafṣ count; 6,236 in all). */
+export const AYAT = [7, 286, 200, 176, 120, 165, 206, 75, 129, 109, 123, 111, 43, 52, 99, 128, 111, 110, 98, 135, 112, 78, 118, 64, 77, 227, 93, 88, 69, 60, 34, 30, 73, 54, 45, 83, 182, 88, 75, 85, 54, 53, 89, 59, 37, 35, 38, 29, 18, 45, 60, 49, 62, 55, 78, 96, 29, 22, 24, 13, 14, 11, 11, 18, 12, 12, 30, 52, 52, 44, 28, 28, 20, 56, 40, 31, 50, 40, 46, 42, 29, 19, 36, 25, 22, 17, 19, 26, 30, 20, 15, 21, 11, 8, 8, 19, 5, 8, 8, 11, 11, 8, 3, 9, 5, 4, 7, 3, 6, 3, 5, 4, 5, 6];
+/** "9:41" → { sura: 9, from: 41, to: 41, name: "al-Tawba" }; null if no such verse. */
 export function parseVerse(v?: string) {
   const m = v ? /^(\d+):(\d+)(?:-(\d+))?$/.exec(v) : null;
   if (!m) return null;
-  return { sura: +m[1], from: +m[2], to: +(m[3] ?? m[2]), name: SURAS[+m[1] - 1] ?? `Sura ${m[1]}` };
+  const sura = +m[1], from = +m[2], to = +(m[3] ?? m[2]);
+  if (sura < 1 || sura > 114 || from < 1 || to < from || to > AYAT[sura - 1]) return null;
+  return { sura, from, to, name: SURAS[sura - 1] };
 }
 export const verseCite = (v?: string) => { const p = parseVerse(v); return p ? `${p.name} ${v}` : null; };
 
