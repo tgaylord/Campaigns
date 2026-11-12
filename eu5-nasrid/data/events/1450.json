@@ -545,6 +545,22 @@
   "source": "Trent's battle screen, 29 November 1450"
  },
  {
+  "id": "1450-11-29-the-holy-cities-held-by-lam",
+  "date": "1450-11-29",
+  "type": "situation",
+  "people": [],
+  "places": [],
+  "wars": [
+   "mamluk-war-on-lam"
+  ],
+  "title": "In the Mamlūks' war the Banū Lām hold Makka, Madīna, Jeddah and Yanbuʿ: the Holy Cities and their ports are in the hands of the Mamlūks' enemies",
+  "data": {
+   "occupied": "Mecca, al-Jumūm, al-Līth, Jeddah, Yalamlam and others of the Sharīf's; Medina, Yanbuʿ and others of Medina's; Khaybar and Fadak of the Mamlūks' (saves of 29 November 1450 and 21 December 1451)",
+   "since": "between August 1449 and November 1450"
+  },
+  "source": "saves of 29 November 1450, 1 February 1451 and 21 December 1451"
+ },
+ {
   "id": "1450-11-29-the-peace-of-palermo",
   "date": "1450-11-29",
   "type": "peace",

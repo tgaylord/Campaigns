@@ -1,0 +1,117 @@
+[
+ {
+  "id": "1451-07-24-battle-al-ukhaydir",
+  "date": "1451-07-24",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "mamluk-war-on-lam"
+  ],
+  "title": "At al-Ukhaydir the Mamlūk army, 9,408 strong, attacks 2,368 of the Banū Lām and beats them: 1,508 lost against 243",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Mamluks": 9408
+   },
+   "oursTotal": 9408,
+   "oursLost": 243,
+   "theirs": {
+    "Lām": 2368
+   },
+   "theirsTotal": 2368,
+   "theirsLost": 1508,
+   "location": "al-Ukhaydir",
+   "side": "allies attacking",
+   "note": "a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought"
+  },
+  "source": "save of 21 December 1451"
+ },
+ {
+  "id": "1451-11-26-the-new-world",
+  "date": "1451-11-26",
+  "type": "situation",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "The ideas of the far voyages take root: al-Andalus embraces the New World among its institutions, with no new land found, only the ways of thinking that exploration has brought",
+  "data": {
+   "institution": "New World, fully embraced",
+   "trent": "no discovery- just the entrenchment of exploration ideals",
+   "realm": {
+    "population": "3.889 million",
+    "stability": 15,
+    "army": "8,900"
+   }
+  },
+  "source": "Trent's screenshot and account, 26 November 1451"
+ },
+ {
+  "id": "1451-12-16-birth-of-ahmad-ibn-muhammad",
+  "date": "1451-12-16",
+  "type": "birth",
+  "people": [
+   "ahmad-ibn-muhammad-ibn-ismail"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "A grandson for the prince Aḥmad: Aḥmad, son of his son Muḥammad",
+  "data": {
+   "father": "Muḥammad ibn Aḥmad, born 30 December 1426",
+   "others": "also born in 1451: Zaynab (30 January) and Muʾmina (26 December 1450) to Saʿd ibn Aḥmad of Banbalūna, the first by the prince Aḥmad's daughter Muʾmina"
+  },
+  "source": "save of 21 December 1451"
+ },
+ {
+  "id": "1451-12-21-sicily-under-the-crown",
+  "date": "1451-12-21",
+  "type": "player_note",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad",
+   "ismail-ibn-muhammad-ibn-ismail",
+   "ahmad-ibn-muhammad-ibn-ismail"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "A second idea wins the court: instead of a new ṭāʾifa, Sicily is kept under the crown, with a governor at Palermo, for now",
+  "data": {
+   "trent": "It's go towards the crown, for now.",
+   "save": "Sicily's 22 towns are still held directly in December 1451; no new subject"
+  },
+  "source": "Trent's account (12 November 2026); save of 21 December 1451"
+ },
+ {
+  "id": "1451-12-21-the-paper-of-shatiba",
+  "date": "1451-12-21",
+  "type": "reform",
+  "people": [
+   "ahmad-ibn-muhammad-ibn-ismail"
+  ],
+  "places": [
+   "ishbiliyya",
+   "al-mariyya",
+   "shatiba",
+   "shantarin",
+   "qurtuba",
+   "jayyan",
+   "sharish",
+   "al-ushbuna"
+  ],
+  "wars": [],
+  "title": "The treasury, 2,812 at the start of the year, is spent down to 26: new paper mills at Ishbīliya, al-Mariyya, Shāṭiba and Shantarīn, jewellers at Qurṭuba, Jayyān and Sharīsh, a library at al-Ushbūna, a quarry at Palermo, and paved roads",
+  "data": {
+   "paper": "Seville, Almería, Xàtiva, Santarém (5 levels)",
+   "jewellers": "Córdoba, Jaén, Jerez",
+   "library": "Lisbon",
+   "quarry": "Palermo",
+   "also": "a cannon foundry at Jaén, lumber mills at Córdoba and Messina, a weapons guild at Murcia, cloth at Badajoz",
+   "roads": "paved roads under way in November 1451 (Trent's screenshot)",
+   "treasury": "2,812 on 1 February 1451, 26 on 21 December 1451",
+   "stability": "23.6 in February, 16.1 in December; the save doesn't say why"
+  },
+  "source": "saves of 1 February and 21 December 1451; Trent's screenshot of 26 November 1451"
+ }
+]

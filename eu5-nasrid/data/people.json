@@ -3266,6 +3266,12 @@
     "text": "Takes all of Sicily at the peace, receives Athens's fealty and finds himself lord of Negroponte, the Sicilian king's island crown.",
     "by": "trent",
     "source": "Trent's account; save of 29 November 1450"
+   },
+   {
+    "from": "1451-12-21",
+    "text": "Keeps Sicily under the crown with a governor at Palermo, for now, unwilling to give the Norman kings' palace to a cousin; grieves that the Holy Cities he once visited are in enemy hands while his ally fails.",
+    "by": "trent",
+    "source": "Trent's account; Of the Governor of Balarm and the Holy Cities"
    }
   ],
   "ties": [
@@ -3527,6 +3533,12 @@
     "text": "Carries to Tunis the Emperor's claim to all of Sicily as compensation, and Tunis understands.",
     "by": "chronicle",
     "source": "Of Catania and the Battle before Balarm"
+   },
+   {
+    "from": "1451-12-21",
+    "text": "Argues for a ṭāʾifa in Sicily, the way the realm has always bound its conquests; loses to his father and brother.",
+    "by": "chronicle",
+    "source": "Of the Governor of Balarm and the Holy Cities"
    }
   ],
   "ties": [
@@ -3613,6 +3625,12 @@
     "text": "The commons given seats in the Jamāʿa are the craftsmen his building made; he says nothing, and is noticed.",
     "by": "chronicle",
     "source": "Of the Jamāʿa of the Commons"
+   },
+   {
+    "from": "1451-12-21",
+    "text": "Argues for a governor in Sicily, so that the island is built for the realm rather than for a ṭāʾifa king; spends the year's treasury on paper mills, jewellers, a library and roads.",
+    "by": "chronicle",
+    "source": "Of the Governor of Balarm and the Holy Cities"
    }
   ]
  },
@@ -5108,7 +5126,7 @@
    {
     "role": "explorer",
     "from": "1448-04-17",
-    "to": null,
+    "to": "1451-03-01",
     "source": "save",
     "approx": false
    }

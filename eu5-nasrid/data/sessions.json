@@ -923,9 +923,9 @@
  {
   "id": "2026-11-12",
   "date": "2026-11-12",
-  "commits": 11,
+  "commits": 12,
   "firstCommit": "e4cb054",
-  "lastCommit": "311f348",
+  "lastCommit": "d8e11ff",
   "uncommitted": true,
   "claudeSessions": [
    "session_01BjCUTWMwSncdsoun2VQ9xv"
@@ -941,11 +941,12 @@
    "[eu5-nasrid] Arcs revised from Trent's direction: the queens' rivalry, the matriarch, Faraj's desert, the two princes",
    "[eu5-nasrid] The court of Sa'd's reign: the two queens, the matriarch, Faraj's desert, the two princes",
    "[eu5-nasrid] 1447: the envoys and the Umayyad claim, Isabel's death, the war for Palermo",
-   "[eu5-nasrid] 1448-1450: the Jama'a of the commons, Sardinia and Bastia, the landing at Syracuse"
+   "[eu5-nasrid] 1448-1450: the Jama'a of the commons, Sardinia and Bastia, the landing at Syracuse",
+   "[eu5-nasrid] 1450: the conquest of Sicily, Athens and Negroponte"
   ],
   "reached": {
    "from": "1368-11-20",
-   "to": "1450-11-29"
+   "to": "1451-12-21"
   },
   "entries": [
    "0770-04-08-of-the-two-queens-in-the-autumn-fas-came-again",
@@ -959,14 +960,16 @@
    "0853-07-29-of-sardinia-and-the-siege-of-bastia",
    "0854-01-02-of-the-thughur-and-the-landing-at-saraqusa",
    "0854-09-27-of-catania-and-the-battle-before-balarm",
-   "0854-10-23-of-the-peace-of-balarm-and-the-duke-of-athens"
+   "0854-10-23-of-the-peace-of-balarm-and-the-duke-of-athens",
+   "0855-11-27-of-the-governor-of-balarm-and-the-holy-cities"
   ],
   "notes": [
    "0770-04-09-ooc-the-court-of-saads-reign-revised",
    "0850-11-15-ooc-the-saves-of-1442-to-1447",
    "0851-11-07-ooc-the-saves-of-1447-and-the-umayyad-claim",
    "0854-01-03-ooc-the-saves-of-1448-and-1449",
-   "0854-10-24-ooc-the-conquest-of-sicily"
+   "0854-10-24-ooc-the-conquest-of-sicily",
+   "0855-11-28-ooc-the-saves-of-1451"
   ],
   "checkpoints": [
    "1442-08-29",
@@ -979,7 +982,9 @@
    "1449-02-01",
    "1449-08-02",
    "1450-02-01",
-   "1450-11-29"
+   "1450-11-29",
+   "1451-02-01",
+   "1451-12-21"
   ],
   "people": [
    "abd-al-jalil-al-qubbasi",
@@ -995,7 +1000,7 @@
    "tunisian-war-for-palermo"
   ],
   "places": [],
-  "events": 102,
+  "events": 108,
   "removed": {
    "entries": [],
    "checkpoints": [],
