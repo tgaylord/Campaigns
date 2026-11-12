@@ -6,6 +6,7 @@ kind: chronicle
 places: [gharnata, qadis]
 wars: [second-moroccan-war]
 sources: [1350-07-the-war-turns, 1350-12-aragon-peace, 1351-01-01-majorca-mainland]
+verse: "45:12"
 ---
 
 While [Gharnāṭa](place:gharnata) buried its dead, the war it had left went on without it. By Rabīʿ al-Thānī of the year 751 Qashtāla had found five thousand men among the living. With them it drove the Marīnid raiders back from its heartlands, where they had burned and taken captives at will for two summers. Yet in the lands of Arghūn and on its islands the ships of Tūnis and the other lords of the Maghrib went where they pleased, and sacked the countryside from the Ebro to Mayūrqa. Arghūn had won every battle at sea in the war's first years, and since the day off Cape Ben Sakka it had no fleet to stop them.
@@ -13,3 +14,5 @@ While [Gharnāṭa](place:gharnata) buried its dead, the war it had left went on
 On the seventh of Shawwāl Arghūn made its peace with the Muslim powers. Fās took the Balearic Islands, Mayūrqa, Manūrqa and Yābisa, which had been lost to the Christians more than a century before. Tūnis took Arghūn's vassal in Sardinia, the county of Qalyari, and made it its own subject. On the first day of the new Christian year the mainland lands of the king of Mayūrqa, Perpinyà, Prades and Puigcerdà in the mountains, and Montpellier, passed to Arghūn. So the kingdom of Mayūrqa was no more, divided between the Cross and the Crescent.
 
 The Marīnids had their islands, and they had them because Gharnāṭa had broken Qashtāla's armies in the field. They did not say so. Now there was only Qashtāla left in the war, and all eyes turned to the Strait. The Castilians pushed south to [Qādis](place:qadis) and the ports of the Strait, and drove the men of Fās from this shore. The Marīnid sultan, who had begun the war to reclaim al-Andalus, held islands in the sea and no foot of al-Andalus itself.
+
+*It is Allāh who subjected to you the sea, so that the ships may sail upon it by His command, and that you may seek of His bounty; and perhaps you will be grateful.*

@@ -6,6 +6,7 @@ kind: chronicle
 people: [yusuf-i]
 places: [washqa, antaqira, balansiyya, shatiba, qandiya, muyaqar, ishbiliyya]
 sources: [1348-07-01-plague-spread, 1348-07-01-wage-fixing, 1348-09-01-expired-medicaments, 1348-11-01-maid-draft, 1348-11-02-plague-toll]
+verse: "9:51"
 ---
 
 By the beginning of Rabīʿ al-Thānī the pestilence was in [Washqa](place:washqa) in the north and [Antaqīra](place:antaqira) in the west, and in the mountain villages of the Alpujarra. In [Balansiyya](place:balansiyya) it was in [Shāṭiba](place:shatiba) and [Qandiya](place:qandiya). The realm counted seventeen thousand fewer souls than in the autumn before. That was only the beginning, though no one yet knew it.
@@ -19,3 +20,5 @@ In Shaʿbān the nobles came to the sultan with their own complaint. No servant 
 On the ninth of Shaʿbān the dīwān's account stood thus. The sickness had touched eleven of the realm's towns and the pestilence itself had killed nine thousand of its people. In all the known world it had carried off more than twenty million since it rose at Yāyiq. Some at court hoped the worst had passed.
 
 They were wrong.
+
+*Say: Never will we be struck except by what Allāh has decreed for us. He is our protector, and upon Allāh let the believers rely.*
