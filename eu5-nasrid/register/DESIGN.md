@@ -145,3 +145,22 @@ should arrive as a thread with its own picture, as the estates did.
 - **People.** A person's page leads with the life, the drives and the tellings they appear in, as a strip. The full record is folded under one line unless it is short.
 - **Dark theme.** Vassal washes and faded battles have their own strengths in the dark theme (`--p-sub`, `--p-rsub`, `--fade-k`).
 - **Enlarged atlas.** The map is sized to leave the controls on screen, the page title is dropped, and the year sits on the map's corner. The legend lists a rival only when some of its land is inside the frame.
+
+## The save pipeline
+
+The Register no longer sits downstream of the old Chronicle. The importer is retired (it is in the
+branch's history) and `campaign/` is the source of truth; the Chronicle is frozen at 21 December 1451.
+
+- **One command per save.** `tools/reckon.py` wraps the campaign's existing extractors: decode, extract,
+  the three map files, then the numbers half of the reckoning. It skips what only the Chronicle's halls
+  read (realm extras, name tables, the government catalogue, the first map frame, the session log, the
+  estate power model). The raw extracted file is still kept for every save.
+- **Two files per reckoning.** `<date>.save.yaml` is generated and never edited; `<date>.yaml` is written
+  by hand and wins. Running the tool again can never lose hand work.
+- **A change report.** The tool compares each save with the one before and drafts the list of beats. It
+  flags what the save cannot explain. Checked against known saves: it raises the treasury jump of March
+  1447 and the stability fall of 1451, and lists Sicily's 22 towns, Athens, Negroponte and Naples's claim
+  for November 1450.
+- **Proof.** Regenerating 21 December 1451 from the save matched the imported reckoning except in three
+  places: the estates' shares of power (not in the save), the save's label, and two council seats, where
+  the save was right and the hand-written snapshot was stale. The reckoning has been corrected.

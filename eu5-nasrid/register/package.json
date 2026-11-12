@@ -5,7 +5,7 @@
     "data": "node tools/build-data.mjs",
     "dev": "node tools/build-data.mjs && vite",
     "build": "node tools/build-data.mjs && tsc --noEmit && vite build && node tools/make-artifact.mjs",
-    "import": "node tools/import-chronicle.mjs"
+    "reckon": "python3 tools/reckon.py"
   },
   "dependencies": {
     "js-yaml": "^5.5.0",

@@ -26,11 +26,29 @@ for (const [id, p] of Object.entries(cast)) {
   if (p.born && p.died && p.died < p.born) errors.push(`cast/${id}: died before being born`);
 }
 
-const files = fs.readdirSync(path.join(C, "reckonings")).filter((f) => f.endsWith(".yaml")).sort();
+/* A reckoning is up to two files: DATE.save.yaml, written by tools/reckon.py from the save, and DATE.yaml,
+ * written by hand. The hand file wins wherever both speak; lists are replaced whole, not joined. */
+const over = (base, top) => {
+  if (top === undefined) return base;
+  if (base && top && typeof base === "object" && typeof top === "object" && !Array.isArray(base) && !Array.isArray(top)) {
+    const o = { ...base }; for (const k of Object.keys(top)) o[k] = over(base[k], top[k]); return o;
+  }
+  return top;
+};
+const rdir = fs.readdirSync(path.join(C, "reckonings")).filter((f) => f.endsWith(".yaml"));
+const files = [...new Set(rdir.map((f) => f.replace(/(\.save)?\.yaml$/, "")))].sort().map((d) => `${d}.yaml`);
+const readReckoning = (f) => {
+  const d = f.replace(/\.yaml$/, ""), has = (n) => rdir.includes(n);
+  const r = over(has(`${d}.save.yaml`) ? Y(`reckonings/${d}.save.yaml`) : {}, has(f) ? Y(`reckonings/${f}`) : {});
+  if (!has(f)) notes.push(`reckonings/${d}: the save has been read, but nothing is written by hand yet (no ${f})`);
+  r.title ??= `The reckoning of ${d}`;
+  r.realm ??= {};
+  return r;
+};
 const reckonings = [], beats = [], tellings = [], seen = new Set();
 let prev = null;
 for (const f of files) {
-  const r = Y(`reckonings/${f}`), at = `reckonings/${f}`;
+  const r = readReckoning(f), at = `reckonings/${f}`;
   if (r.date !== f.replace(/\.yaml$/, "")) errors.push(`${at}: the date inside (${r.date}) doesn't match the file name`);
   for (const k of ["ruler", "heir", "regent"]) if (r.court?.[k] && !cast[r.court[k]]) errors.push(`${at}: ${k} '${r.court[k]}' is not in the cast`);
   for (const c of r.court?.council ?? []) if (!cast[c.who]) errors.push(`${at}: council member '${c.who}' is not in the cast`);

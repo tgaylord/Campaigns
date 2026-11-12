@@ -11,16 +11,50 @@ campaign/
   threads.yaml         wars and stories: id, title, state, premise
   places.yaml          the gazetteer
   cast/<id>.yaml       one person: name, dates, parents, reigns, what drives them, ties
-  reckonings/<date>.yaml   one reading of a save (see below)
+  reckonings/<date>.yaml        the hand-written half of one reckoning: title, summary, beats, tellings
+  reckonings/<date>.save.yaml   the numbers half, written by reckon.py from the save. Never edited
+  reports/<date>.md             what changed since the save before, written by reckon.py
 tools/
+  reckon.py            one save in: the facts, the maps, the numbers half and the report
   build-data.mjs       checks campaign/ and writes src/data.json
-  import-chronicle.mjs the one-time import from ../data and ../story
 src/                   the site (React, one file of views)
 ```
 
-## Logging a session
+## A save, step by step
 
-Add one file, `campaign/reckonings/YYYY-MM-DD.yaml`:
+`campaign/` is the source of truth. It was first filled by a one-time import from the old Chronicle's
+data (reckonings up to 21 December 1451); since then it is written directly.
+
+```sh
+# 1. read the save (about five minutes; GAME is the game's `game` folder, or set EU5_GAME)
+python3 tools/reckon.py SAVE.eu5 --game GAME
+# 2. read campaign/reports/<date>.md: settle what it lists under "To settle by hand",
+#    ask the player what it lists under "Ask before writing"
+# 3. write campaign/reckonings/<date>.yaml by hand (below)
+# 4. check and build
+npm run build
+```
+
+`reckon.py` decodes the save, keeps every fact it pulls in `../data/extracted/<date>.json`, draws the
+three map files the site reads (realm outlines, the world's powers, the towns' faith and tongue), and
+writes `<date>.save.yaml`: the count, the court, the council, wars, allies, subjects, the estates'
+mood, the peoples and the map's tags. It then compares the save with the one before and writes the
+report: towns won and lost, wars and battles, changes at court and on the council, births and deaths
+in the cast's families, laws and privileges, treaties, buildings, and shifts in the peoples. A treasury
+that moves further than income explains, or a swing in stability, is put at the top as a question for
+the player.
+
+The game's keys are turned into the campaign's words by the `save` block of `campaign.yaml`: `names`
+for countries the game leaves unnamed, `seats` for council actions, `estates`, `words`. People are
+matched by `game: { id }` in their cast file, places by `game:` in `places.yaml`, wars by a thread's
+`from` date. Anything it cannot match is listed in the report, not guessed.
+
+The hand file wins wherever both files speak, so a wrong or missing number is overridden there (an
+estate's share of power from a screen reading, for one: the save does not hold it). A reckoning made
+before `reckon.py` existed is a single hand file holding both halves.
+
+The hand-written half, `campaign/reckonings/YYYY-MM-DD.yaml` (the `realm`, `court` and `standing`
+lines are only needed where there is no `.save.yaml`):
 
 ```yaml
 date: "1451-12-21"

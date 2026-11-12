@@ -1,3 +1,45 @@
+save:
+  tag: GRA
+  estates:
+    crown_estate: Crown
+    nobles_estate: Nobility
+    clergy_estate: ʿUlamāʾ
+    burghers_estate: Burghers
+    peasants_estate: Commoners
+    dhimmi_estate: Dhimmī
+  seats:
+    strengthen_government: Strengthening the government
+    gra_promote_sovereignty: Promoting Granadan sovereignty
+    increase_control_province: Increasing control of a province
+    integrate_province: Integrating the new lands
+    promote_culture: Promoting Andalusī culture
+    change_societal_values: Changing the societal values
+    diplomatic_endeavors: Diplomatic endeavours
+    encourage_migration: Encouraging migration
+    develop_province: Developing the provinces
+    appease_estate: Appeasing the estates
+    stabilize_country: Stabilising the country
+    promote_religion: Promoting the faith
+    assimilate_area: Assimilating the new lands
+  words:
+    judaism: Jewish
+  names:
+    VAL: Valencia
+    MUC: Murcia
+    ALV: Taifa of the Algarve
+    CAT: Catalonia
+    ARA: Aragon
+    AAA98: Taifa of Salamanca
+    ABA60: Taifa of Cuenca
+    ABA10: Taifa of Minho
+    ABA42: Taifa of León
+    ABA49: Taifa of Burgos
+    ABA55: Taifa of Pamplona
+    POR: Kingdom of Portugal
+    GLC: Taifa of Galicia
+    AAA52: Cape Verde
+    ATH: Athens
+    NEG: Negroponte
 map:
   realms: ../data/map/world/realms-{date}.json
   view:
