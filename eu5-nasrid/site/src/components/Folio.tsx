@@ -65,7 +65,7 @@ export function RealmHead({ f }: { f: Folio }) {
       </p>
       {f.silent && (
         <p className="rh-silence">
-          The record is silent here: no save between {western(s.date)} and {f.nextSnap ? western(f.nextSnap.date) : "the present"}. The figures above are from the last reckoning
+          The record is silent here: no save between {western((f.ageDays ?? 0) > 730 ? s.date : (f.closeSnap ?? s).date)} and {f.nextSnap ? western(f.nextSnap.date) : "the present"}. The figures above are from the last reckoning
           {(f.leans.screen || f.leans.account) ? <>, and this page rests on {[f.leans.screen ? `Trent's screenshots (${f.leans.screen})` : "", f.leans.account ? `his account of play (${f.leans.account})` : ""].filter(Boolean).join(" and ")}</> : null}.
         </p>
       )}
@@ -84,11 +84,12 @@ export function FolioBody({ leaf, density }: { leaf: Leaf; density: Density }) {
   const f = folioFor(leaf);
   const showL = density !== "text", showR = density === "full";
   let afterRubric = false;
+  const firstProse = f.blocks.findIndex((b) => !/class="rubric-line"/.test(b.html));
   return (
     <div className={`folio-grid d-${density}`}>
       {f.blocks.map((b, i) => {
         const isRubric = /class="rubric-line"/.test(b.html);
-        const cls = `fo-row${i === 0 ? " first" : ""}${afterRubric ? " after-rubric" : ""}`;
+        const cls = `fo-row${i === firstProse ? " first" : ""}${afterRubric ? " after-rubric" : ""}${isRubric ? " rubric" : ""}`;
         afterRubric = isRubric;
         const gl = showL ? b.glosses : [], rc = showR ? b.records : [];
         return (
@@ -141,7 +142,7 @@ function GlossView({ g }: { g: Gloss }) {
   const line = (main: ReactNode, sub?: ReactNode, extra?: ReactNode) => <div className={`gl gl-${g.kind}`}><div className="gm">{main}</div>{sub && <div className="gs">{sub}</div>}{extra}</div>;
   if (g.kind === "person") {
     const bits = [g.unborn ? "not yet born" : g.age !== null ? `aged ${g.age}` : null, g.station, g.parent, g.died ? `died ${western(g.died)}` : null].filter(Boolean);
-    return line(<><EntityLink kind="person" id={g.id}>{g.p.name}</EntityLink>{g.p.nameArabic && <span className="gar ar"> {g.p.nameArabic}</span>}</>, bits.join(" · "));
+    return line(<><EntityLink kind="person" id={g.id}>{g.p.name}</EntityLink>{g.p.nameArabic && <bdi className="gar ar" dir="rtl">{g.p.nameArabic}</bdi>}</>, bits.join(" · "));
   }
   if (g.kind === "place") {
     const status = g.held === null ? null : g.held ? (g.since ? `the crown's since ${g.since.slice(0, 4)}` : "the crown's") : "not the crown's on this date";

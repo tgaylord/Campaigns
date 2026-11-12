@@ -67,10 +67,12 @@ function glossFor(kind: string, id: string, date: string): Gloss | null {
     const parentId = p.father ?? p.mother;
     const parent = parentId ? personById.get(parentId) : undefined;
     const unborn = !!p.born && p.born > date;
+    const dead = !!p.died && p.died <= date;
     return {
       kind, id, p, unborn,
-      age: p.born && !unborn && !p.born.endsWith("-01-01") ? ageAt(p.born, date) : null,
-      station: stationAt(p, date), died: p.died && p.died <= date ? p.died : null,
+      // the dead are given their age at death, and no station
+      age: p.born && !unborn && !p.born.endsWith("-01-01") ? ageAt(p.born, dead ? p.died! : date) : null,
+      station: dead ? null : stationAt(p, date), died: dead ? p.died! : null,
       parent: parent ? `${p.female ? "daughter" : "son"} of ${parent.name}` : null,
     };
   }
@@ -123,7 +125,9 @@ export function folioFor(leaf: Leaf): Folio {
     for (const t of termRes) {
       const key = `term:${t.plain}`;
       if (seen.has(key) || !t.re.test(text)) continue;
-      seen.add(key); glosses.push({ kind: "term", id: t.court, court: t.court, plain: t.plain, gloss: t.gloss });
+      // before 16 March 1375 there was a sultan, not yet an Emperor
+      const gloss = date < "1375-03-16" ? t.gloss.replace("the Emperor", "the sultan") : t.gloss;
+      seen.add(key); glosses.push({ kind: "term", id: t.court, court: t.court, plain: t.plain, gloss });
     }
     return { html, n, glosses, records: [] };
   });
@@ -137,30 +141,41 @@ export function folioFor(leaf: Leaf): Folio {
     const h = hijri(ev.date);
     const dayMonth = `${h.d} ${HIJRI_MONTHS[h.m - 1]}`.toLowerCase();
     const month = HIJRI_MONTHS[h.m - 1].toLowerCase();
-    const words = ev.title.toLowerCase().split(/[^\p{L}]+/u).filter((w) => w.length > 5);
+    const tokens = ev.title.split(/[^\p{L}\p{M}ʿʾ-]+/u).filter(Boolean);
+    const proper = tokens.filter((w, k) => k > 0 && /^\p{Lu}/u.test(w) && w.length >= 4).map((w) => w.toLowerCase());
+    const words = tokens.filter((w) => w.length > 5 && !/^\p{Lu}/u.test(w)).map((w) => w.toLowerCase());
+    const placeNames = ev.places.map((id) => placeById.get(id)?.name.toLowerCase()).filter(Boolean) as string[];
     let best = -1, bestScore = 0;
     blocks.forEach((_, i) => {
       let s = 0;
       for (const id of [...ev.people, ...ev.places, ...ev.wars]) if (blockIds[i].has(id)) s += 2;
+      for (const n of placeNames) if (!blockIds[i].size || blockText[i].includes(n)) s += blockText[i].includes(n) ? 1 : 0;
       if (blockText[i].includes(dayMonth)) s += 4;
-      else if (blockText[i].includes(month) && blockText[i].includes(String(h.y))) s += 2;
-      s += words.filter((w) => blockText[i].includes(w)).length * 0.75;
+      else if (blockText[i].includes(month)) s += 2;
+      s += proper.filter((w) => blockText[i].includes(w)).length * 1.5;
+      s += words.filter((w) => blockText[i].includes(w)).length * 0.5;
       if (s > bestScore) { bestScore = s; best = i; }
     });
     const rec = { ev, how: provenance(ev.source), score: bestScore };
-    if (best >= 0 && bestScore >= 3) blocks[best].records.push(rec); else loose.push(rec);
+    if (best >= 0 && bestScore >= 2.5) blocks[best].records.push(rec); else loose.push(rec);
   }
   blocks.forEach((b) => b.records.sort((a, c) => a.ev.date.localeCompare(c.ev.date)));
   loose.sort((a, c) => a.ev.date.localeCompare(c.ev.date));
 
   // the realm as the entry opens: the last save at or before the earliest thing it tells
-  const opening = [leaf.entry.date, ...srcEvents.map((e) => e.date)].sort()[0];
+  // (a record recalled from years before is background, not where the entry opens)
+  const recent = srcEvents.map((e) => e.date).filter((d) => days(d, leaf.entry.date) <= 730);
+  const opening = [leaf.entry.date, ...recent].sort()[0];
   const sorted = [...snapshots].sort((a, b) => a.date.localeCompare(b.date));
   const headSnap = [...sorted].reverse().find((s) => s.date <= opening) ?? sorted[0];
-  const nextSnap = headSnap ? sorted[sorted.indexOf(headSnap) + 1] : undefined;
   const closeSnap = [...sorted].reverse().find((s) => s.date <= date);
+  // silent when no save falls within two years before the entry, whatever it opens on
+  const lastBefore = closeSnap ?? headSnap;
   const ageDays = headSnap ? days(headSnap.date, opening) : null;
-  const silent = !!headSnap && ageDays !== null && ageDays > 730;
+  const staleHead = ageDays !== null && ageDays > 730;
+  const silent = staleHead || (!!lastBefore && days(lastBefore.date, date) > 730);
+  const from = staleHead ? headSnap : lastBefore;
+  const nextSnap = from ? sorted[sorted.indexOf(from) + 1] : undefined;
   const allHow = srcEvents.map((e) => provenance(e.source));
   const leans = { screen: allHow.filter((x) => x.includes("screen")).length, account: allHow.filter((x) => x.includes("account") && !x.includes("save")).length, save: allHow.filter((x) => x.includes("save")).length };
   const f: Folio = { blocks, loose, opening, headSnap, nextSnap, closeSnap: closeSnap !== headSnap ? closeSnap : undefined, ageDays, silent, leans };
@@ -171,7 +186,8 @@ export function folioFor(leaf: Leaf): Folio {
 /** "on this very day", "2 months before", "6 years before" */
 export function ageWords(d: number | null): string {
   if (d === null) return "";
-  if (d <= 3) return "on this very day";
+  if (d <= 0) return "on this very day";
+  if (d === 1) return "the day before";
   if (d < 45) return `${d} days before`;
   if (d < 700) return `${Math.round(d / 30.4)} months before`;
   return `${Math.round(d / 365.25)} years before`;

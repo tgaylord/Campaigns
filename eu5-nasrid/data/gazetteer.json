@@ -377,7 +377,7 @@
  {
   "id": "ishbiliyya",
   "key": "sevilla",
-  "name": "Ishbīliyya",
+  "name": "Ishbīliya",
   "nameGame": "Šbilya",
   "kind": "location",
   "nameArabic": "إشبيلية",
@@ -505,7 +505,7 @@
   "nameGame": "Qrmuna",
   "kind": "location",
   "nameArabic": "قرمونة",
-  "note": "Carmona, east of Ishbīliyya.",
+  "note": "Carmona, east of Ishbīliya.",
   "held": [
    {
     "from": "1351-05-21",
@@ -848,7 +848,7 @@
   "name": "Qusanṭīna",
   "kind": "location",
   "nameArabic": "قسنطينة",
-  "note": "Constantina, in the Sierra Morena north of Qarmūna; its silver mines yield more tax than Ishbīliyya itself.",
+  "note": "Constantina, in the Sierra Morena north of Qarmūna; its silver mines yield more tax than Ishbīliya itself.",
   "nameGame": "Qsanṭina",
   "held": [
    {

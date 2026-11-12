@@ -240,7 +240,7 @@
   "id": "1370-09-conversion-reading",
   "date": "1370-09-13",
   "type": "player_note",
-  "title": "Twenty-one years after the Peace of Qurṭuba, the lands of the great river are coming back: Andalusīs have gone from 7% to 33% of their people, and Muslims from 8% to 25%. Twelve towns of the valley are Andalusī by culture, and Qurṭuba is Muslim by faith. Ishbīliyya has gone from 14% Muslim to 31%, Jayyān from none to 30%",
+  "title": "Twenty-one years after the Peace of Qurṭuba, the lands of the great river are coming back: Andalusīs have gone from 7% to 33% of their people, and Muslims from 8% to 25%. Twelve towns of the valley are Andalusī by culture, and Qurṭuba is Muslim by faith. Ishbīliya has gone from 14% Muslim to 31%, Jayyān from none to 30%",
   "data": {
    "area": "andalusia_area",
    "andalusi": {
@@ -262,7 +262,7 @@
      27,
      59
     ],
-    "Ishbīliyya": [
+    "Ishbīliya": [
      14,
      31
     ],

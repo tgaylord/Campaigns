@@ -76,3 +76,14 @@
 .codex-page.has-folio { max-width: 88rem; }
 .fo-col { margin: 0; }
 .fo-colc { min-width: 0; }
+
+/* review fixes */
+.gl .gar { unicode-bidi: isolate; margin-left: 0.35rem; }
+.codex-leaf .leaf-body.codex-body > p.rubric-line::first-letter { all: unset; }
+.codex-leaf .fo-row.first .leaf-body.codex-body > p:first-of-type::first-letter {
+  float: left; font-size: 3.9em; line-height: 0.82; font-weight: 700; margin: 0.08em 0.12em 0 0; padding: 0.14em 0.16em 0.1em;
+  background: none; color: var(--bk); text-shadow: none;
+  box-shadow: inset 0 0 0 1.5px var(--bk), inset 0 0 0 4px var(--parchment), inset 0 0 0 5px color-mix(in srgb, var(--bk) 55%, transparent);
+}
+.fo-n { padding: 0.15rem 0.35rem; }
+@media (max-width: 88rem) { .fo-n { float: left; margin: 0.35rem 0.35rem 0 0; } }

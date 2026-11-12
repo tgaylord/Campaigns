@@ -16,7 +16,7 @@
   "wars": [
    "sevillan-revolt"
   ],
-  "title": "The Castilian peasants of the new lands rise and declare a so-called Kingdom of Sevilla. All 25 locations won in 1349 and 1351 go over to it, among them Qurṭuba, Ishbīliyya, Jayyān and the silver of Qusanṭīna, and Granada is left with its 18 old locations. The remission of the jizya was not enough, as the amir feared",
+  "title": "The Castilian peasants of the new lands rise and declare a so-called Kingdom of Sevilla. All 25 locations won in 1349 and 1351 go over to it, among them Qurṭuba, Ishbīliya, Jayyān and the silver of Qusanṭīna, and Granada is left with its 18 old locations. The remission of the jizya was not enough, as the amir feared",
   "data": {
    "rebels": "SEV",
    "locations": 25,
@@ -158,7 +158,7 @@
   "wars": [
    "sevillan-revolt"
   ],
-  "title": "The Kingdom of Sevilla is no more. The revolt ends with the rebels crushed before the Castilians could come, and Qashtāla reaffirms the old border: all 25 locations, Qurṭuba, Ishbīliyya, Jayyān and the silver of Qusanṭīna among them, return to Granada",
+  "title": "The Kingdom of Sevilla is no more. The revolt ends with the rebels crushed before the Castilians could come, and Qashtāla reaffirms the old border: all 25 locations, Qurṭuba, Ishbīliya, Jayyān and the silver of Qusanṭīna among them, return to Granada",
   "data": {
    "locations": {
     "from": 18,
@@ -186,7 +186,7 @@
    "gharnata",
    "malaqa"
   ],
-  "title": "Two weeks after the revolt, the crown's grip on the new lands: Qurṭuba holds at 53% control and its neighbours at 20–50%, but around Ishbīliyya and down to the river mouth control has fallen to nothing (0–2%). The old realm about Gharnāṭa and Mālaqa stands at 70–84%. The court weighs a local governor at Qurṭuba, from where control would run both up and down the river",
+  "title": "Two weeks after the revolt, the crown's grip on the new lands: Qurṭuba holds at 53% control and its neighbours at 20–50%, but around Ishbīliya and down to the river mouth control has fallen to nothing (0–2%). The old realm about Gharnāṭa and Mālaqa stands at 70–84%. The court weighs a local governor at Qurṭuba, from where control would run both up and down the river",
   "data": {
    "qurtuba": 53,
    "lowerGuadalquivir": "0-2",

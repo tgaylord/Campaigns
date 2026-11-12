@@ -81,7 +81,7 @@
   "id": "1347-03-17-battle-sevilla",
   "date": "1347-03-17",
   "type": "battle",
-  "title": "Morocco beaten before Ishbīliyya by a Castilian army four times its size",
+  "title": "Morocco beaten before Ishbīliya by a Castilian army four times its size",
   "wars": [
    "second-moroccan-war"
   ],
@@ -98,7 +98,7 @@
    },
    "theirsTotal": 11864,
    "theirsLost": 1219,
-   "location": "Ishbīliyya",
+   "location": "Ishbīliya",
    "side": "Granada not engaged"
   },
   "source": "save of 1347-09-14",
@@ -224,7 +224,7 @@
   "id": "1347-07-13-battle-sevilla",
   "date": "1347-07-13",
   "type": "battle",
-  "title": "A Moroccan column destroyed before Ishbīliyya",
+  "title": "A Moroccan column destroyed before Ishbīliya",
   "wars": [
    "second-moroccan-war"
   ],
@@ -241,7 +241,7 @@
    },
    "theirsTotal": 9724,
    "theirsLost": 0,
-   "location": "Ishbīliyya",
+   "location": "Ishbīliya",
    "side": "Granada not engaged"
   },
   "source": "save of 1347-09-14",
@@ -265,7 +265,7 @@
   "id": "1347-08-31-battle-palma-del-rio",
   "date": "1347-08-31",
   "type": "battle",
-  "title": "Victory at Palma del Río: Castile's southern army, fresh from beating Morocco at Ishbīliyya, attacks Yūsuf's 16,000 and 4,000 Moroccans and loses 5,300 men for 700",
+  "title": "Victory at Palma del Río: Castile's southern army, fresh from beating Morocco at Ishbīliya, attacks Yūsuf's 16,000 and 4,000 Moroccans and loses 5,300 men for 700",
   "wars": [
    "second-moroccan-war"
   ],
@@ -300,7 +300,7 @@
   "wars": [
    "second-moroccan-war"
   ],
-  "title": "A year into the war: the Moroccans smashed again and again south of Ishbīliyya while the Granadan army burns its way north, then swings west to relieve them, winning every battle it fights",
+  "title": "A year into the war: the Moroccans smashed again and again south of Ishbīliya while the Granadan army burns its way north, then swings west to relieve them, winning every battle it fights",
   "data": {
    "warContribution": {
     "Granada": 13.2,

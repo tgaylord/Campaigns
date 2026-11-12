@@ -34,7 +34,7 @@
   "id": "1366-01-10-marinid-sevilla",
   "date": "1366-01-10",
   "type": "territory_change",
-  "title": "Morocco makes nine of its new towns on the Strait into a fiefdom under the old rebel name, the 'Kingdom of Sevilla', though Ishbīliyya itself is Granada's. Fās keeps Ronda and Marbella for itself",
+  "title": "Morocco makes nine of its new towns on the Strait into a fiefdom under the old rebel name, the 'Kingdom of Sevilla', though Ishbīliya itself is Granada's. Fās keeps Ronda and Marbella for itself",
   "data": {
    "from": "MOR",
    "to": "SEV",
@@ -263,14 +263,14 @@
   "people": [
    "saad-ibn-yusuf"
   ],
-  "title": "The independent realm, seven months on. The army is stood down from fifteen regiments to five and the budget balances (income 67 against expenses 66). The treasury has gone into the land: the silver mines of Qusanṭīna, the farms of Úbeda, and a Great Madrasa rising at Ishbīliyya. Sunnīs and Catholics are exactly even, 308,000 each. The Mamlūk alliance of 1349 is no longer in force. It was still in place on 2 October and disappeared along with the tributary link Trent removed with the console, so it was most likely lost in the fix",
+  "title": "The independent realm, seven months on. The army is stood down from fifteen regiments to five and the budget balances (income 67 against expenses 66). The treasury has gone into the land: the silver mines of Qusanṭīna, the farms of Úbeda, and a Great Madrasa rising at Ishbīliya. Sunnīs and Catholics are exactly even, 308,000 each. The Mamlūk alliance of 1349 is no longer in force. It was still in place on 2 October and disappeared along with the tributary link Trent removed with the console, so it was most likely lost in the fix",
   "data": {
    "treasury": 177,
    "income": 67.4,
    "expenses": 66.0,
    "regiments": 5,
    "construction": {
-    "great_madrasa": "Ishbīliyya (79%)",
+    "great_madrasa": "Ishbīliya (79%)",
     "silver_mines": "Qusanṭīna",
     "farmland": "Úbeda"
    },

@@ -172,7 +172,7 @@
   "wars": [
    "marinid-submission-war"
   ],
-  "title": "Victory before Ishbīliyya: 2,200 Marīnids attack 9,300 Granadans and lose 1,300 to our 1,100",
+  "title": "Victory before Ishbīliya: 2,200 Marīnids attack 9,300 Granadans and lose 1,300 to our 1,100",
   "data": {
    "result": "victory",
    "naval": false,
@@ -184,7 +184,7 @@
     "Morocco": 2179
    },
    "theirsLost": 1331,
-   "location": "Ishbīliyya"
+   "location": "Ishbīliya"
   },
   "source": "save of 10 June 1362"
  }

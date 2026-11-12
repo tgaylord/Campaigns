@@ -37,7 +37,7 @@
   "wars": [
    "marinid-submission-war"
   ],
-  "title": "Victory before Ishbīliyya again: 2,300 Marīnids throw themselves at 17,000 Granadans and lose 1,750",
+  "title": "Victory before Ishbīliya again: 2,300 Marīnids throw themselves at 17,000 Granadans and lose 1,750",
   "data": {
    "result": "victory",
    "naval": false,
@@ -49,7 +49,7 @@
     "Morocco": 2328
    },
    "theirsLost": 1757,
-   "location": "Ishbīliyya"
+   "location": "Ishbīliya"
   },
   "source": "save of 10 June 1362"
  },
@@ -85,7 +85,7 @@
   "wars": [
    "marinid-submission-war"
   ],
-  "title": "Two years into the war: every Marīnid attempt on Granada has broken (four defeats at al-Mariyya, Sharīsh and twice before Ishbīliyya, 6,300 of their men lost to our 3,860), while the Marīnids range through Castile to El Escorial and Cáceres and rule the sea. The war costs 76 a month against an income of 60; sovereignty 99.7, Morocco's influence −13.4",
+  "title": "Two years into the war: every Marīnid attempt on Granada has broken (four defeats at al-Mariyya, Sharīsh and twice before Ishbīliya, 6,300 of their men lost to our 3,860), while the Marīnids range through Castile to El Escorial and Cáceres and rule the sea. The war costs 76 a month against an income of 60; sovereignty 99.7, Morocco's influence −13.4",
   "data": {
    "granadaBattles": {
     "won": 4,
@@ -157,7 +157,7 @@
    "qurtuba",
    "qusantina"
   ],
-  "title": "Peace at home: the dīwān works to assimilate Ishbīliyya and Qurṭuba, the mines of Qusanṭīna are being expanded, and the diplomats are at work on the matter of independence",
+  "title": "Peace at home: the dīwān works to assimilate Ishbīliya and Qurṭuba, the mines of Qusanṭīna are being expanded, and the diplomats are at work on the matter of independence",
   "data": {
    "cabinet": [
     "assimilating Sevilla",
