@@ -2,14 +2,14 @@ import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { md } from "./md";
 import { formatHijri, formatWestern, HIJRI_MONTHS } from "./hijri";
 import { D, campaign, cast, threads, reckonings, beats, tellings, threadById, beatById, now, before, Y0, Y1, nf, cf, MON, dayMonth, hijriSpan, short, first, age, rulerAt, ordinal, fmt, tone, Who, type Beat, type Telling, type Person, type Thread, type Reckoning, type Data } from "./core";
-import { Story, BattleMap, LifeLines, Weave, Seal, Atlas, FamilyTree } from "./story";
+import { Story, BattleMap, LifeLines, Weave, Seal, Atlas, FamilyTree, bookOf } from "./story";
 import { Frieze, FriezeKey, frac } from "./frieze";
 
 /* ------------------------------------------------------------------ routing: one plain word after the # */
 type Route = { view: string; arg?: string };
 const parse = (h: string): Route => {
   const s = h.replace(/^#/, "");
-  const m = s.match(/^(line|thread|who|telling)-(.+)$/);
+  const m = s.match(/^(line|thread|who|telling|book)-(.+)$/);
   if (m) return { view: m[1], arg: m[2] };
   return { view: ["now", "atlas", "line", "threads", "people", "about"].includes(s) ? s : "story" };
 };
@@ -18,6 +18,7 @@ function useRoute(): Route {
   useEffect(() => { const f = () => setR(parse(location.hash)); addEventListener("hashchange", f); return () => removeEventListener("hashchange", f); }, []);
   useEffect(() => {
     if (r.view === "line" && r.arg) requestAnimationFrame(() => document.getElementById(`y${r.arg}`)?.scrollIntoView({ block: "start" }));
+    else if (r.view === "book") requestAnimationFrame(() => document.getElementById(`book-${r.arg}`)?.scrollIntoView({ block: "start" }));
     else scrollTo(0, 0);
   }, [r.view, r.arg]);
   return r;
@@ -70,30 +71,88 @@ function TellingCard({ t }: { t: Telling }) {
     </a>
   );
 }
-function Line({ items, tales, filters, startOpen }: { items: Beat[]; tales: Telling[]; filters?: boolean; startOpen?: boolean }) {
+const fold = (x: string) => x.normalize("NFD").replace(/[\u0300-\u036f\u02bf\u02be]/g, "").toLowerCase();
+const TONES = Object.entries(campaign.tones);
+
+/* The thread picker: a panel instead of a long native menu, with what each thread is and how much is on it. */
+function Follow({ thread, setThread }: { thread: string; setThread: (t: string) => void }) {
+  const box = useRef<HTMLDetailsElement>(null);
+  const pick = (id: string) => { setThread(id); if (box.current) box.current.open = false; };
+  const count = (id: string) => beats.filter((b) => b.threads?.includes(id)).length;
+  const t = threadById.get(thread);
+  useEffect(() => {
+    const close = (e: Event) => { if (box.current?.open && !(e instanceof KeyboardEvent ? e.key !== "Escape" : box.current.contains(e.target as Node))) box.current.open = false; };
+    document.addEventListener("click", close); document.addEventListener("keydown", close);
+    return () => { document.removeEventListener("click", close); document.removeEventListener("keydown", close); };
+  }, []);
+  return (
+    <div className="follow-wrap">
+      <details className="follow" ref={box}>
+        <summary>{t ? <>Following <b>{t.title}</b></> : "Follow a thread"}</summary>
+        <div className="follow-panel">
+          <div>
+            <h4>Stories</h4>
+            {threads.filter((x) => x.kind === "story").map((x) => <button type="button" key={x.id} aria-pressed={thread === x.id} onClick={() => pick(x.id)}><span>{x.title}</span><span className="th-n">{count(x.id)}</span></button>)}
+          </div>
+          <div>
+            <h4>Wars</h4>
+            {threads.filter((x) => x.kind === "war").reverse().map((x) => <button type="button" key={x.id} aria-pressed={thread === x.id} onClick={() => pick(x.id)}><span>{x.title}</span><span className="th-n">{x.from?.slice(0, 4)}{x.to ? "" : ", open"}</span></button>)}
+          </div>
+        </div>
+      </details>
+      {t && <button type="button" className="clear" onClick={() => setThread("")} aria-label="Stop following this thread">Show everything</button>}
+    </div>
+  );
+}
+
+function Line({ items, tales, filters, startOpen, head }: { items: Beat[]; tales: Telling[]; filters?: boolean; startOpen?: boolean; head?: (at?: number) => ReactNode }) {
   const [all, setAll] = useState(!!startOpen);
   const [thread, setThread] = useState("");
-  const shown = items.filter((b) => (all || !b.minor) && (!thread || b.threads?.includes(thread)));
-  const tshown = thread ? tales.filter((t) => t.covers?.some((c) => beatById.get(c)?.threads?.includes(thread))) : tales;
+  const [off, setOff] = useState<string[]>([]);
+  const [q, setQ] = useState("");
+  const [at, setAt] = useState<number | undefined>();
+  const bar = useRef<HTMLDivElement>(null);
+  const needle = fold(q.trim());
+  const shown = items.filter((b) => (all || !b.minor) && (!thread || b.threads?.includes(thread)) && !off.includes(tone(b.kind)) && (!needle || fold(b.what).includes(needle)));
+  const tshown = (thread ? tales.filter((t) => t.covers?.some((c) => beatById.get(c)?.threads?.includes(thread))) : tales).filter((t) => !needle || fold(t.title + " " + t.text).includes(needle));
   const years = useMemo(() => {
     const m = new Map<number, (Beat | Telling)[]>();
     for (const x of [...shown, ...tshown].sort((a, b) => a.on.localeCompare(b.on) || ("what" in a ? -1 : 1))) { const y = +x.on.slice(0, 4); m.set(y, [...(m.get(y) ?? []), x]); }
     return [...m.entries()];
-  }, [shown.length, tshown.length, thread, all]);
+  }, [shown.length, tshown.length, thread, all, needle, off.join()]);
   const hidden = items.filter((b) => b.minor).length;
+  // the sticky head knows its own height (so a year lands below it) and which year is under it
+  useEffect(() => {
+    if (!filters || !bar.current) return;
+    const el = bar.current;
+    const size = () => document.documentElement.style.setProperty("--stuck", `${el.offsetHeight + 12}px`);
+    const ro = new ResizeObserver(size); ro.observe(el); size();
+    let tick = 0;
+    const scroll = () => { cancelAnimationFrame(tick); tick = requestAnimationFrame(() => {
+      const line = el.getBoundingClientRect().bottom + 24;
+      let y: number | undefined;
+      for (const s of document.querySelectorAll<HTMLElement>(".year")) { if (s.getBoundingClientRect().top <= line) y = +s.id.slice(1); else break; }
+      setAt(y);
+    }); };
+    addEventListener("scroll", scroll, { passive: true }); scroll();
+    return () => { ro.disconnect(); removeEventListener("scroll", scroll); document.documentElement.style.removeProperty("--stuck"); };
+  }, [filters]);
+  const toggle = (t: string) => setOff((o) => (o.includes(t) ? o.filter((x) => x !== t) : [...o, t]));
+  const filtered = !!(thread || needle || off.length);
   return (
     <div className="line">
-      <div className="line-bar">
-        {filters && (
-          <label>Follow <select id="thread-filter" value={thread} onChange={(e) => setThread(e.target.value)}>
-            <option value="">everything</option>
-            <optgroup label="Stories">{threads.filter((t) => t.kind === "story").map((t) => <option key={t.id} value={t.id}>{t.title}</option>)}</optgroup>
-            <optgroup label="Wars">{threads.filter((t) => t.kind === "war").map((t) => <option key={t.id} value={t.id}>{t.title}</option>)}</optgroup>
-          </select></label>
-        )}
-        {hidden > 0 && <label className="check"><input id="show-minor" type="checkbox" checked={all} onChange={(e) => setAll(e.target.checked)} /> Show the {hidden} lesser entries</label>}
-        <FromKey />
+      <div className={filters ? "sticky" : "unstuck"} ref={bar}>
+        {head?.(at)}
+        <div className="line-bar">
+          {filters && <Follow thread={thread} setThread={setThread} />}
+          <div className="tones" role="group" aria-label="Kinds of entry">
+            {TONES.map(([k, label]) => <button type="button" key={k} className={`tone t-${k}`} aria-pressed={!off.includes(k)} onClick={() => toggle(k)} title={off.includes(k) ? `Show ${label.toLowerCase()}` : `Hide ${label.toLowerCase()}`}><i className="dot" />{label}</button>)}
+          </div>
+          {filters && <input id="record-find" className="find" type="search" placeholder="Find a word" value={q} onChange={(e) => setQ(e.target.value)} aria-label="Find a word in the record" />}
+          {hidden > 0 && <label className="check"><input id={filters ? "show-minor" : undefined} type="checkbox" checked={all} onChange={(e) => setAll(e.target.checked)} /> Lesser entries ({hidden})</label>}
+        </div>
       </div>
+      <p className="line-count">{shown.length} {shown.length === 1 ? "entry" : "entries"} and {tshown.length} {tshown.length === 1 ? "telling" : "tellings"}{filtered ? " match" : ""}. <FromKey /></p>
       {years.map(([y, xs]) => {
         const r = rulerAt(`${y}-07-01`);
         const reign = r?.[1].reigns?.find((g) => g.from <= `${y}-12-31` && (!g.to || g.to > `${y}-01-01`));
@@ -108,9 +167,16 @@ function Line({ items, tales, filters, startOpen }: { items: Beat[]; tales: Tell
           </section>
         );
       })}
-      {!years.length && <p className="empty">Nothing on this thread yet. Choose another, or show the lesser entries.</p>}
+      {!years.length && <p className="empty">Nothing matches. {filtered && <button type="button" className="clear" onClick={() => { setThread(""); setQ(""); setOff([]); }}>Clear the filters</button>}</p>}
     </div>
   );
+}
+
+/* a way back up from anywhere on a long page */
+function ToTop() {
+  const [show, setShow] = useState(false);
+  useEffect(() => { const f = () => setShow(scrollY > 900); addEventListener("scroll", f, { passive: true }); return () => removeEventListener("scroll", f); }, []);
+  return show ? <button type="button" className="totop" onClick={() => scrollTo({ top: 0, behavior: "smooth" })}>Back to the top</button> : null;
 }
 
 /* ------------------------------------------------------------------ now */
@@ -233,10 +299,11 @@ function TellingPage({ id }: { id: string }) {
   const body = md(t.text, (p) => !!cast[p]);
   const rests = (t.covers ?? []).map((c) => beatById.get(c)).filter(Boolean) as Beat[];
   const r = rulerAt(t.on);
+  const book = bookOf(t);
   return (
     <article className="telling">
       <header>
-        <p className="eyebrow">A telling{r ? <>, in the reign of <Who id={r[0]} /></> : null}</p>
+        <p className="eyebrow">{book ? <><a href={`#book-${book.n}`}>{book.title}</a>. </> : null}A telling{r ? <> from the reign of <Who id={r[0]} /></> : null}</p>
         <h1>{t.title}</h1>
         <p className="sub">{formatHijri(t.on)}, {formatWestern(t.on)}</p>
       </header>
@@ -315,8 +382,16 @@ function ThreadPage({ id }: { id: string }) {
         <h1>{t.title}</h1>
         <p className="sub">{from ? formatWestern(from) : ""}{to ? ` to ${formatWestern(to)}` : t.state === "standing" ? ", always running" : ", still open"}</p>
         {t.premise && <p className="lede">{t.premise}</p>}
-        {t.outcome && <p className="lede"><span className="lab">How it ended</span>{t.outcome}</p>}
-        {t.sides && <dl className="sides">{Object.entries(t.sides).map(([k, v]) => <div key={k}><dt>{k}</dt><dd>{v.join(", ")}</dd></div>)}</dl>}
+        {t.outcome && <p className="lede"><span className="lab">How it ended</span>{t.outcome.split(/(?<=\.)\s/)[0]}</p>}
+        {(t.sides || (t.outcome && t.outcome.split(/(?<=\.)\s/).length > 1)) && (
+          <details className="behind">
+            <summary>The sides, and the ending in full</summary>
+            <div>
+              {t.sides && <dl className="sides">{Object.entries(t.sides).map(([k, v]) => <div key={k}><dt>{k}</dt><dd>{v.join(", ")}</dd></div>)}</dl>}
+              {t.outcome && <p>{t.outcome}</p>}
+            </div>
+          </details>
+        )}
         {who.size > 0 && <p className="sub"><span className="lab">In it</span>{[...who.entries()].sort((a, b) => b[1] - a[1]).slice(0, 8).map(([w], i) => <span key={w}>{i ? ", " : ""}<Who id={w} /></span>)}</p>}
       </header>
       {t.kind === "war" && <BattleMap bs={bs} from={t.from} />}
@@ -408,7 +483,7 @@ const Missing = () => <div className="page-head"><h1>Nothing is recorded here</h
 /* ------------------------------------------------------------------ the frame */
 export function App() {
   const r = useRoute();
-  const tab = r.view === "thread" ? "threads" : r.view === "who" ? "people" : r.view === "telling" ? "story" : r.view;
+  const tab = r.view === "thread" ? "threads" : r.view === "who" ? "people" : r.view === "telling" || r.view === "book" ? "story" : r.view;
   const link = (v: string, label: ReactNode) => <a href={`#${v}`} aria-current={tab === v ? "page" : undefined}>{label}</a>;
   return (
     <>
@@ -419,14 +494,13 @@ export function App() {
         </div>
       </header>
       <main className="wrap">
-        {r.view === "story" && <Story />}
+        {(r.view === "story" || r.view === "book") && <Story />}
         {r.view === "atlas" && <Atlas />}
         {r.view === "now" && <Now />}
         {r.view === "line" && (
           <>
             <header className="page-head"><h1>The record, year by year</h1><p className="sub">{campaign.subtitle}. {beats.length} entries and {tellings.length} tellings, {Y0} to {Y1}.</p></header>
-            <div className="sticky"><Frieze at={r.arg ? +r.arg : undefined} /></div>
-            <Line items={beats} tales={tellings} filters />
+            <Line items={beats} tales={tellings} filters head={(at) => <Frieze at={at ?? (r.arg ? +r.arg : undefined)} />} />
           </>
         )}
         {r.view === "threads" && <Threads />}
@@ -436,6 +510,7 @@ export function App() {
         {r.view === "telling" && <TellingPage id={r.arg!} key={r.arg} />}
         {r.view === "about" && <About />}
       </main>
+      <ToTop />
       <footer className="foot wrap"><p>The Register, a prototype. Reckoned to {formatWestern(now.date)}. <a href="#about">How it is kept</a></p></footer>
     </>
   );

@@ -374,3 +374,56 @@ h2.big { font-size: clamp(1.6rem, 1.2rem + 1.6vw, 2.3rem); }
 .tr-node.ruled .tr-sub:first-of-type { fill: var(--ink-2); }
 .tr-crown { fill: none; stroke: var(--honey); stroke-width: 2.5; }
 @media (max-width: 56rem) { .atlas-map { grid-template-columns: minmax(0, 1fr); gap: 0.8rem; } .atlas-cap h2 { min-height: 0; } .hc-who { min-height: 0; } }
+
+/* ---------------------------------------------------------------- pass four: finding your way */
+:root { --stuck: 7.5rem; }
+.year { scroll-margin-top: var(--stuck) !important; }
+.sticky { background: var(--ground); margin-inline: 0; padding-top: 0.4rem; box-shadow: 0 8px 10px -10px color-mix(in srgb, var(--ink) 40%, transparent); }
+.sticky .frieze { padding-block: 0.35rem 0.2rem; }
+.line-bar { padding-block: 0.6rem; gap: 0.5rem 1rem; }
+.unstuck .line-bar { padding-top: 0; }
+.line-count { color: var(--ink-3); font-size: 0.92rem; padding-block: 0.6rem 0.9rem; display: flex; flex-wrap: wrap; gap: 0.2rem 1.4rem; }
+.follow-wrap { display: flex; align-items: center; gap: 0.5rem; }
+.follow { position: relative; }
+.follow > summary, .clear, .find { font: 500 1rem var(--sans); min-height: 2.4rem; padding: 0.35rem 0.85rem; background: var(--surface); color: var(--ink); border: 1px solid var(--ink-3); border-radius: 3px; cursor: pointer; }
+.follow > summary { list-style: none; display: inline-flex; align-items: center; gap: 0.4rem; }
+.follow > summary::-webkit-details-marker { display: none; }
+.follow > summary::after { content: ""; width: 0.45rem; height: 0.45rem; border-right: 2px solid var(--ink-2); border-bottom: 2px solid var(--ink-2); transform: rotate(45deg) translateY(-2px); margin-left: 0.3rem; }
+.follow[open] > summary { border-color: var(--cobalt); }
+.follow > summary b { font-weight: 700; color: var(--link); }
+.follow-panel { position: absolute; z-index: 20; top: calc(100% + 6px); left: 0; width: min(44rem, calc(100vw - 32px)); max-height: min(70vh, 32rem); overflow: auto; display: grid; grid-template-columns: 1fr 1.25fr; gap: 0 1.5rem; padding: 0.9rem 1rem 1rem; background: var(--surface); border: 1px solid var(--ink-3); box-shadow: 0 14px 30px -12px color-mix(in srgb, var(--ink) 45%, transparent); }
+.follow-panel h4 { margin: 0 0 0.3rem; font: 400 0.92rem var(--sans); color: var(--ink-3); }
+.follow-panel > div { display: flex; flex-direction: column; min-width: 0; }
+.follow-panel button { display: flex; justify-content: space-between; align-items: baseline; gap: 0.8rem; text-align: left; font: 400 1rem/1.3 var(--sans); padding: 0.38rem 0.5rem; background: none; border: 0; border-radius: 3px; color: var(--ink); cursor: pointer; }
+.follow-panel button:hover { background: color-mix(in srgb, var(--cobalt) 10%, transparent); }
+.follow-panel button[aria-pressed="true"] { background: var(--cobalt); color: var(--surface); }
+.follow-panel button[aria-pressed="true"] .th-n { color: var(--surface); }
+.follow-panel .th-n { white-space: nowrap; }
+.clear { border-color: var(--rule); color: var(--link); }
+.find { cursor: text; width: 11rem; font-weight: 400; }
+.tones { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.tone { display: inline-flex; align-items: center; font: 400 0.95rem var(--sans); min-height: 2.4rem; padding: 0.3rem 0.7rem; background: var(--surface); color: var(--ink); border: 1px solid var(--rule); border-radius: 999px; cursor: pointer; }
+.tone[aria-pressed="false"] { background: transparent; color: var(--ink-3); text-decoration: line-through; }
+.tone[aria-pressed="false"] .dot { background: var(--rule); }
+.totop { position: fixed; right: max(16px, env(safe-area-inset-right, 0px)); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); z-index: 30; font: 500 0.98rem var(--sans); min-height: 2.6rem; padding: 0.4rem 1rem; background: var(--ink); color: var(--ground); border: 0; border-radius: 999px; cursor: pointer; box-shadow: 0 8px 20px -8px color-mix(in srgb, var(--ink) 60%, transparent); }
+.scenes-n { color: var(--ink-3); font-size: 0.92rem; margin-bottom: -0.9rem; }
+.tr-sub, .tr-name { paint-order: stroke; stroke: var(--ground); stroke-width: 4px; stroke-linejoin: round; }
+/* the map, then its controls, then the words: so on a phone the scrubber sits right under the map */
+.hero-map, .atlas-map { grid-template-areas: "map cap" "map key" "ctl ctl"; align-items: start; }
+.hero-map > .land, .atlas-map > .land { grid-area: map; grid-row: auto; }
+.hero-cap, .atlas-cap { grid-area: cap; align-self: end; }
+.hero-map > .map-key { grid-area: key; grid-column: auto; align-self: end; }
+.ctl { grid-area: ctl; display: flex; flex-direction: column; gap: 0.7rem; padding-top: 0.8rem; min-width: 0; }
+.atlas-map { grid-template-areas: "map cap" "ctl ctl"; }
+@media (max-width: 56rem) {
+  .hero-map { grid-template-areas: "map" "ctl" "cap" "key"; }
+  .atlas-map { grid-template-areas: "map" "ctl" "cap"; }
+  .ctl { padding-top: 0; }
+  .follow-panel { grid-template-columns: 1fr; position: fixed; left: 16px; right: 16px; top: auto; bottom: 16px; width: auto; max-height: 70vh; }
+  .line-bar { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 0.5rem; }
+  .line-bar > * { flex: none; }
+  .tones { flex-wrap: nowrap; }
+  .hint { display: none; }
+}
+
+@media (max-width: 40rem) { .top nav { gap: 0.1rem 1rem; font-size: 0.97rem; } }

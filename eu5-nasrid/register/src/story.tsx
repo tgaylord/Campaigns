@@ -57,7 +57,7 @@ function useScrub() {
   );
   return { r: reckonings[i], controls };
 }
-const booksAt = (d: string) => campaign.eras.filter((e) => { const ts = tellings.filter((t) => t.book === e.id); return ts.length && ts[0].on <= d && (ts.at(-1)!.on >= d || !e.to); });
+const booksAt = (d: string) => { const t = tellings.findLast((x) => x.on <= d && x.book) ?? tellings[0]; return campaign.eras.filter((e) => e.id === t?.book); };
 
 function Hero() {
   const { r, controls } = useScrub();
@@ -86,8 +86,8 @@ function Hero() {
           <p className="hc-links"><a href={`#line-${y}`}>Read {y} in the record</a></p>
         </div>
         <p className="map-key"><span><i className="sw l-ours" />The crown</span><span><i className="sw l-subject" />Its ṭāʾifas and vassals</span><span><i className="sw l-ally" />Its allies</span></p>
+        <div className="ctl">{controls}</div>
       </div>
-      {controls}
     </section>
   );
 }
@@ -161,8 +161,8 @@ export function Atlas() {
             {towns && <p className="map-key"><span><i className={`sw tile-${lens}`} />{lens === "faith" ? "All Muslim" : "All Andalusī"}</span><span><i className="sw tile-base" />None</span><span>Iberia and the near shores only</span></p>}
             {lens === "blood" && <p className="map-key"><span><i className="bd won" />Won</span><span><i className="bd lost" />Lost</span><span><i className="bd even" />Unrecorded</span></p>}
           </div>
+          <div className="ctl">{controls}</div>
         </div>
-        {controls}
       </section>
     </>
   );
@@ -174,6 +174,7 @@ const chapters: Chapter[] = campaign.eras.map((e) => {
   const tales = tellings.filter((t) => t.book === e.id);
   return { id: e.id, title: e.title, arabic: e.arabic, summary: e.summary, tales, from: tales[0]?.on ?? e.from, to: tales.at(-1)?.on ?? e.to ?? now.date };
 }).filter((c) => c.tales.length).sort((a, b) => a.from.localeCompare(b.from));
+export const bookOf = (t: Telling) => { const n = chapters.findIndex((c) => c.id === t.book); return n < 0 ? null : { n: n + 1, title: chapters[n].title }; };
 const reckonAt = (d: string) => reckonings.findLast((r) => r.date <= d) ?? reckonings[0];
 
 function ChapterPanel({ c, n }: { c: Chapter; n: number }) {
@@ -209,6 +210,7 @@ function ChapterPanel({ c, n }: { c: Chapter; n: number }) {
           {drivers.map((id) => <li key={id}><a href={`#who-${id}`}><Seal id={id} /><span className="d-name">{short(id)}</span></a><span className="d-line">{line(id)}</span></li>)}
         </ul>
       )}
+      <p className="scenes-n">{c.tales.length} {c.tales.length === 1 ? "telling" : "tellings"}{c.tales.length > 4 ? ". Scroll sideways for the rest." : "."}</p>
       <div className="scenes" role="list" aria-label={`The tellings of ${c.title}`}>
         {c.tales.map((t) => (
           <a role="listitem" key={t.id} href={`#telling-${t.id}`} className="scene">
@@ -229,7 +231,7 @@ export function Story() {
       <header className="page-head story-head">
         <h2 className="big">The story in {chapters.length} books</h2>
         <p className="sub">The books are themes, so some run side by side. Each one says what changed, shows it on the map, and names the people who drove it. The tellings are its scenes.</p>
-        <nav className="toc">{chapters.map((c, k) => <a key={c.id} href={`#line`} onClick={(e) => { e.preventDefault(); document.getElementById(`book-${k + 1}`)?.scrollIntoView({ behavior: "smooth", block: "start" }); }}>{c.title}</a>)}</nav>
+        <nav className="toc" aria-label="The books">{chapters.map((c, k) => <a key={c.id} href={`#book-${k + 1}`}>{c.title}</a>)}</nav>
       </header>
       {chapters.map((c, k) => <ChapterPanel key={c.id} c={c} n={k + 1} />)}
     </>
@@ -281,14 +283,17 @@ export function LifeLines({ id }: { id: string }) {
   const end = (q: Person) => frac(q.died ?? now.date);
   const rows: [string, string][] = [[id, ""], ...kin];
   const t0 = Math.floor(Math.min(...rows.map(([r]) => frac(cast[r].born!))) / 10) * 10, t1 = Math.ceil(Math.max(...rows.map(([r]) => end(cast[r]))) / 10) * 10;
-  const L = 190, W = 900, rowH = 26, top = 56, H = top + rows.length * rowH + 30;
+  const L = 190, W = 900, rowH = 26, top = 92, H = top + rows.length * rowH + 30;
   const x = (t: number) => L + ((t - t0) / (t1 - t0)) * (W - L - 16);
   const drives = p.drives ?? [];
+  // pins closer than their own width climb a row, so no number hides another
+  const pinRow: number[] = [];
+  drives.forEach((d, n) => { let row = 0; while (drives.some((e, m) => m < n && pinRow[m] === row && Math.abs(x(frac(e.from)) - x(frac(d.from))) < 18)) row++; pinRow[n] = row; });
   return (
     <figure className="lives">
       <div className="scroll-x">
         <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`The life of ${p.name} beside the people around ${p.sex === "f" ? "her" : "him"}`}>
-          {Array.from({ length: (t1 - t0) / 10 + 1 }, (_, k) => t0 + k * 10).map((t) => <g key={t}><line className="lv-grid" x1={x(t)} x2={x(t)} y1={top - 14} y2={H - 24} /><text className="lv-year" x={x(t)} y={H - 8} textAnchor="middle">{t}</text></g>)}
+          {Array.from({ length: (t1 - t0) / 10 + 1 }, (_, k) => t0 + k * 10).map((t) => <g key={t}><line className="lv-grid" x1={x(t)} x2={x(t)} y1={top - 12} y2={H - 24} /><text className="lv-year" x={x(t)} y={H - 8} textAnchor="middle">{t}</text></g>)}
           {rows.map(([r, label], k) => {
             const q = cast[r], y = top + k * rowH, main = k === 0, a = x(frac(q.born!)), b = x(end(q));
             return (
@@ -299,7 +304,7 @@ export function LifeLines({ id }: { id: string }) {
                 {(q.reigns ?? []).map((g) => <line key={g.from} className="lv-reign" x1={x(frac(g.from))} x2={x(frac(g.to ?? now.date))} y1={y} y2={y} />)}
                 <circle className="lv-end" cx={a} cy={y} r={main ? 4 : 3} />
                 {q.died && <rect className="lv-end" x={b - 1.5} y={y - (main ? 7 : 5)} width={3} height={main ? 14 : 10} />}
-                {main && drives.map((d, n) => <g key={d.from + n}><circle className="lv-pin" cx={x(frac(d.from))} cy={y - 18} r={8.5} /><line className="lv-stem" x1={x(frac(d.from))} x2={x(frac(d.from))} y1={y - 9.5} y2={y - 2} /><text className="lv-pinn" x={x(frac(d.from))} y={y - 14.3} textAnchor="middle">{n + 1}</text></g>)}
+                {main && drives.map((d, n) => { const px = x(frac(d.from)), up = pinRow[n] * 18; return <g key={d.from + n}><line className="lv-stem" x1={px} x2={px} y1={y - 9.5 - up} y2={y - 2} /><circle className="lv-pin" cx={px} cy={y - 18 - up} r={8.5} /><text className="lv-pinn" x={px} y={y - 14.3 - up} textAnchor="middle">{n + 1}</text></g>; })}
               </g>
             );
           })}
