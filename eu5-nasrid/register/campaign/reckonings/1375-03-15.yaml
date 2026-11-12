@@ -79,7 +79,11 @@ map:
   allies:
     - MAM
 beats:
-  - id: 1374-02-19-battle-barcelona
+  - at:
+      - 1888
+      - 1363
+    won: true
+    id: 1374-02-19-battle-barcelona
     'on': '1374-02-19'
     kind: battle
     what: >-
@@ -141,7 +145,11 @@ beats:
             - -103
       warScore: 21.37
       warScoreAfter: 31
-  - id: 1374-03-09-battle-tarragona
+  - at:
+      - 1840
+      - 1381
+    won: true
+    id: 1374-03-09-battle-tarragona
     'on': '1374-03-09'
     kind: battle
     what: >-
@@ -310,7 +318,11 @@ beats:
       modifier: Regulated Tithe Collection until 1384 (clergy satisfaction equilibrium +20%, tax efficiency +5%)
       ulamaSatisfaction: +10%
       price: a few very minor privileges for the nobles, moving the realm slightly further toward serfdom
-  - id: 1374-05-23-battle-zuwara
+  - at:
+      - 2331
+      - 1890
+    won: true
+    id: 1374-05-23-battle-zuwara
     'on': '1374-05-23'
     kind: battle
     what: >-
@@ -339,7 +351,8 @@ beats:
       commanders:
         Barqa: Shaykh Ramaḍān
         Nafusa: Abū al-Faḍl of the Jabal Nafūsa
-  - id: 1374-06-24-battle-gharyan
+  - won: true
+    id: 1374-06-24-battle-gharyan
     'on': '1374-06-24'
     kind: battle
     what: >-
@@ -429,7 +442,11 @@ beats:
         mother: Aiman the Mamlūk (Baḥriyya)
         note: follows his father (Trent)
       rivalry: Duʿā had initially pushed for only her son to receive the tutors (Trent)
-  - id: 1374-11-12-battle-george-bay
+  - at:
+      - 2444
+      - 1719
+    won: false
+    id: 1374-11-12-battle-george-bay
     'on': '1374-11-12'
     kind: battle
     what: >-
@@ -688,6 +705,7 @@ tellings:
   - id: 0775-09-06-the-battle-before-barshaluna
     'on': '1374-02-19'
     title: Of the March into the Upper March, and the Battle Before the Walls of Barshalūna
+    book: book-of-the-marches
     verse: 3:123
     who:
       - sayyida-of-fezzan
@@ -782,6 +800,7 @@ tellings:
   - id: 0775-09-24-the-pursuit-to-tarrakuna
     'on': '1374-03-09'
     title: Of the Pursuit to Ṭarrakūna
+    book: book-of-the-marches
     verse: 2:251
     who:
       - saad-ibn-yusuf
@@ -840,6 +859,7 @@ tellings:
   - id: 0775-11-19-the-regency-of-dua
     'on': '1374-05-02'
     title: Of Duʿāʾ's Regency, and the Tithe Given to the ʿUlamāʾ
+    book: book-of-the-call
     verse: 3:159
     who:
       - dua-marinid
@@ -895,6 +915,7 @@ tellings:
   - id: 0776-08-02-of-the-siege-of-barshaluna
     'on': '1375-01-06'
     title: Of the Siege of Barshalūna, the Taking of Māliṭa, and the Two Princes
+    book: book-of-the-marches
     verse: 9:71
     who:
       - saad-ibn-yusuf
@@ -972,6 +993,7 @@ tellings:
   - id: 0776-10-11-of-the-peace-of-the-upper-march
     'on': '1375-03-15'
     title: Of the Peace of the Upper March, and the End of Arghūn
+    book: book-of-the-marches
     verse: 8:62
     who:
       - saad-ibn-yusuf

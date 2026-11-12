@@ -380,6 +380,7 @@ tellings:
   - id: 0756-03-04-the-governor-and-the-harem
     'on': '1355-03-19'
     title: Of the Governor of Qurṭuba, and the Brides from Across the Sea
+    book: book-of-balance
     verse: 16:72
     who:
       - yusuf-i

@@ -141,7 +141,11 @@ beats:
     cite: save of 10 October 1435
     detail:
       reason: hunting accident (the game)
-  - id: 1431-11-20-battle-oristano
+  - at:
+      - 2184
+      - 1457
+    won: false
+    id: 1431-11-20-battle-oristano
     'on': '1431-11-20'
     kind: battle
     what: >-
@@ -166,7 +170,11 @@ beats:
       theirsLost: 261
       location: Oristano
       side: Tunis attacking
-  - id: 1431-11-26-battle-gulf-talamone
+  - at:
+      - 2284
+      - 1311
+    won: false
+    id: 1431-11-26-battle-gulf-talamone
     'on': '1431-11-26'
     kind: battle
     what: >-
@@ -189,7 +197,11 @@ beats:
       theirsLost: 0
       location: Gulf of Talamone
       units: ships
-  - id: 1431-12-05-battle-gulf-talamone
+  - at:
+      - 2284
+      - 1311
+    won: false
+    id: 1431-12-05-battle-gulf-talamone
     'on': '1431-12-05'
     kind: battle
     what: >-
@@ -218,7 +230,11 @@ beats:
       commanders:
         ours: Abū Tāshufīn of Tripoli
         theirs: Vukmir Janković (papal admiral)
-  - id: 1431-12-09-battle-jaca
+  - at:
+      - 1768
+      - 1293
+    won: true
+    id: 1431-12-09-battle-jaca
     'on': '1431-12-09'
     kind: battle
     what: >-
@@ -246,7 +262,11 @@ beats:
       commanders:
         ours: name_philip#33570086
         theirs: name_anthony#16830138
-  - id: 1431-12-10-battle-bracciano
+  - at:
+      - 2353
+      - 1328
+    won: true
+    id: 1431-12-10-battle-bracciano
     'on': '1431-12-10'
     kind: battle
     what: In Lazio, 912 men of Arezzo attack 2,492 Tunisians at Bracciano and are destroyed, for 12 Tunisians
@@ -271,7 +291,11 @@ beats:
       side: crusaders attacking
       commanders:
         ours: name_abu.name_john#86899
-  - id: 1431-12-17-battle-thiesi
+  - at:
+      - 2190
+      - 1417
+    won: false
+    id: 1431-12-17-battle-thiesi
     'on': '1431-12-17'
     kind: battle
     what: In Sardinia, 1,027 men of Gallura attack 4,017 Arboreans at Thiesi and are destroyed, for 61 of Arborea
@@ -296,7 +320,11 @@ beats:
       side: allies attacking
       commanders:
         theirs: name_benedict#16832034
-  - id: 1431-12-20-battle-coast-lazio
+  - at:
+      - 2323
+      - 1350
+    won: false
+    id: 1431-12-20-battle-coast-lazio
     'on': '1431-12-20'
     kind: battle
     what: >-
@@ -327,7 +355,11 @@ beats:
       commanders:
         ours: Abū al-Faḍl of Tunis
         theirs: Vukmir Janković (papal admiral)
-  - id: 1431-12-31-battle-tivoli
+  - at:
+      - 2375
+      - 1331
+    won: false
+    id: 1431-12-31-battle-tivoli
     'on': '1431-12-31'
     kind: battle
     what: >-
@@ -357,7 +389,11 @@ beats:
       commanders:
         ours: name_abu.name_john#86899
         theirs: Khayr al-Dīn Khayyām, an Andalusī Muslim mercenary captain in the crusaders' pay
-  - id: 1432-01-01-battle-eolie-islands
+  - at:
+      - 2482
+      - 1535
+    won: false
+    id: 1432-01-01-battle-eolie-islands
     'on': '1432-01-01'
     kind: battle
     what: Off the Aeolian Islands two ships of Val di Noto attack 17 of Aquileia and Genoa and are lost
@@ -385,7 +421,11 @@ beats:
       commanders:
         ours: Dagale#60721
         theirs: name_sancho#33573004
-  - id: 1432-01-05-battle-orosei
+  - at:
+      - 2225
+      - 1427
+    won: false
+    id: 1432-01-05-battle-orosei
     'on': '1432-01-05'
     kind: battle
     what: >-
@@ -413,7 +453,11 @@ beats:
       commanders:
         ours: name_kubad#33570617
         theirs: name_benedict#16832034
-  - id: 1432-01-19-battle-gulf-of-lion
+  - at:
+      - 2019
+      - 1355
+    won: true
+    id: 1432-01-19-battle-gulf-of-lion
     'on': '1432-01-19'
     kind: battle
     what: In the Gulf of Lion 19 ships of Tlemcen catch a single ship of Provence and sink it
@@ -440,7 +484,11 @@ beats:
       commanders:
         ours: Muḥammad Abū Yaḥyā of Tlemcen
         theirs: name_roger#16801817
-  - id: 1432-01-27-battle-gulf-olbia
+  - at:
+      - 2242
+      - 1367
+    won: true
+    id: 1432-01-27-battle-gulf-olbia
     'on': '1432-01-27'
     kind: battle
     what: >-
@@ -470,7 +518,11 @@ beats:
       commanders:
         ours: Abū Bakr of Morocco
         theirs: Svyatoslav (papal)
-  - id: 1432-01-28-battle-orosei
+  - at:
+      - 2225
+      - 1427
+    won: true
+    id: 1432-01-28-battle-orosei
     'on': '1432-01-28'
     kind: battle
     what: At Orosei 2,530 Tunisians attack 3,885 Arboreans and beat them, killing or taking 694 for 226
@@ -496,7 +548,11 @@ beats:
       commanders:
         ours: name_john#71297
         theirs: name_benedict#16832034
-  - id: 1432-02-01-battle-gulf-orosei
+  - at:
+      - 2263
+      - 1423
+    won: true
+    id: 1432-02-01-battle-gulf-orosei
     'on': '1432-02-01'
     kind: battle
     what: >-
@@ -527,7 +583,11 @@ beats:
       commanders:
         ours: Abū Bakr of Morocco
         theirs: name_aleramo#79767
-  - id: 1432-02-19-battle-ushant
+  - at:
+      - 1544
+      - 916
+    won: false
+    id: 1432-02-19-battle-ushant
     'on': '1432-02-19'
     kind: battle
     what: >-
@@ -556,7 +616,11 @@ beats:
       commanders:
         ours: Rodrigo de Lima of Portugal
         theirs: name_john#33563941
-  - id: 1432-02-21-battle-ushant
+  - at:
+      - 1544
+      - 916
+    won: false
+    id: 1432-02-21-battle-ushant
     'on': '1432-02-21'
     kind: battle
     what: >-
@@ -585,7 +649,11 @@ beats:
       commanders:
         ours: name_chrysanthos#16863515
         theirs: name_john#33563941
-  - id: 1432-02-28-battle-terracina
+  - at:
+      - 2389
+      - 1363
+    won: false
+    id: 1432-02-28-battle-terracina
     'on': '1432-02-28'
     kind: battle
     what: At Terracina 832 Tunisians attack 6,138 papal troops and are thrown back, losing 403 for 55
@@ -611,7 +679,11 @@ beats:
       commanders:
         ours: name_abu.name_john#86899
         theirs: name_benvenuto#16847475
-  - id: 1432-03-02-battle-gulf-talamone
+  - at:
+      - 2284
+      - 1311
+    won: true
+    id: 1432-03-02-battle-gulf-talamone
     'on': '1432-03-02'
     kind: battle
     what: >-
@@ -641,7 +713,11 @@ beats:
       commanders:
         ours: Almaz
         theirs: name_john#64895
-  - id: 1432-03-14-battle-corsica-channel
+  - at:
+      - 2244
+      - 1267
+    won: true
+    id: 1432-03-14-battle-corsica-channel
     'on': '1432-03-14'
     kind: battle
     what: >-
@@ -671,7 +747,11 @@ beats:
       commanders:
         ours: ʿAbd al-ʿAzīz of Morocco
         theirs: Vukmir Janković (papal admiral)
-  - id: 1432-03-15-battle-castelsardo
+  - at:
+      - 2194
+      - 1402
+    won: false
+    id: 1432-03-15-battle-castelsardo
     'on': '1432-03-15'
     kind: battle
     what: At Castelsardo 510 Tunisians attack 3,162 Arboreans and are destroyed, losing 422 for 41
@@ -697,7 +777,11 @@ beats:
       commanders:
         ours: name_john#71297
         theirs: name_benedict#16832034
-  - id: 1432-03-19-battle-gaeta
+  - at:
+      - 2414
+      - 1372
+    won: false
+    id: 1432-03-19-battle-gaeta
     'on': '1432-03-19'
     kind: battle
     what: At Gaeta 650 men of Principato Ultra beat 428 Tunisians, killing or taking 113 for 47
@@ -723,7 +807,11 @@ beats:
       commanders:
         ours: name_abu.name_john#86899
         theirs: name_adolf.name_frederick#16838124
-  - id: 1432-03-26-battle-pitigliano
+  - at:
+      - 2313
+      - 1290
+    won: true
+    id: 1432-03-26-battle-pitigliano
     'on': '1432-03-26'
     kind: battle
     what: >-
@@ -754,7 +842,11 @@ beats:
       commanders:
         ours: Khalīl of Morocco
         theirs: Khayr al-Dīn Khayyām, an Andalusī Muslim mercenary captain in the crusaders' pay
-  - id: 1432-04-02-battle-cape-sicie
+  - at:
+      - 2051
+      - 1281
+    won: true
+    id: 1432-04-02-battle-cape-sicie
     'on': '1432-04-02'
     kind: battle
     what: Off Cape Sicié seven ships of Provence attack 19 of Tlemcen and lose six of them, for one
@@ -782,7 +874,11 @@ beats:
       commanders:
         ours: Muḥammad Abū Yaḥyā of Tlemcen
         theirs: name_charles#16832503
-  - id: 1432-04-19-battle-gulf-castellammare
+  - at:
+      - 2371
+      - 1541
+    won: true
+    id: 1432-04-19-battle-gulf-castellammare
     'on': '1432-04-19'
     kind: battle
     what: >-
@@ -812,7 +908,11 @@ beats:
       commanders:
         ours: ʿAbd al-ʿAzīz of Morocco
         theirs: name_sancho#33573004
-  - id: 1432-04-30-battle-saint-malo-gulf
+  - at:
+      - 1696
+      - 915
+    won: false
+    id: 1432-04-30-battle-saint-malo-gulf
     'on': '1432-04-30'
     kind: battle
     what: >-
@@ -958,6 +1058,7 @@ tellings:
   - id: 0835-08-29-of-the-trading-posts-of-the-gold-coast-and-the-spice-road
     'on': '1432-05-01'
     title: Of the Trading Posts of the Gold Coast, and the Spice Road
+    book: book-of-the-encircling-sea
     verse: 106:1-2
     who:
       - muhammad-ibn-ismail-ibn-saad
@@ -1003,6 +1104,7 @@ tellings:
   - id: 0835-08-29-of-the-warmongers-name-the-crusade-of-835-and-the-arsenals
     'on': '1432-05-01'
     title: Of the Warmonger's Name, the Crusade of 835, and the Arsenals
+    book: book-of-the-franks
     verse: 42:32-33
     who:
       - muhammad-ibn-ismail-ibn-saad

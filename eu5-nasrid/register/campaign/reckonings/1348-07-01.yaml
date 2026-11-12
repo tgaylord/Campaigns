@@ -80,7 +80,11 @@ map:
     - MOR
     - TUN
 beats:
-  - id: 1346-11-22-battle-bay-palma
+  - at:
+      - 1875
+      - 1472
+    won: false
+    id: 1346-11-22-battle-bay-palma
     'on': '1346-11-22'
     kind: battle
     what: Aragon sinks the fleets of Bijaya and Tlemcen in the bay of Palma
@@ -105,7 +109,11 @@ beats:
       location: the bay of Palma
       side: Granada not engaged
       units: ships
-  - id: 1346-12-02-battle-gulf-of-almeria
+  - at:
+      - 1685
+      - 1646
+    won: false
+    id: 1346-12-02-battle-gulf-of-almeria
     'on': '1346-12-02'
     kind: battle
     what: Balansiyya's fleet worsted by Portugal in the gulf of al-Mariyya
@@ -128,7 +136,11 @@ beats:
       theirsLost: 0
       location: the gulf of al-Mariyya
       units: ships
-  - id: 1346-12-24-battle-cagliari
+  - at:
+      - 2212
+      - 1498
+    won: false
+    id: 1346-12-24-battle-cagliari
     'on': '1346-12-24'
     kind: battle
     what: A Tunisian landing at Cagliari thrown back
@@ -151,7 +163,11 @@ beats:
       theirsLost: 29
       location: Cagliari
       side: Granada not engaged
-  - id: 1347-01-16-battle-bay-alcudia
+  - at:
+      - 1945
+      - 1428
+    won: false
+    id: 1347-01-16-battle-bay-alcudia
     'on': '1347-01-16'
     kind: battle
     what: Aragon sinks the fleet of Gabès off Alcúdia
@@ -175,7 +191,11 @@ beats:
       location: the bay of Alcúdia
       side: Granada not engaged
       units: ships
-  - id: 1347-02-09-battle-cagliari
+  - at:
+      - 2212
+      - 1498
+    won: false
+    id: 1347-02-09-battle-cagliari
     'on': '1347-02-09'
     kind: battle
     what: A second Tunisian landing at Cagliari thrown back
@@ -198,7 +218,11 @@ beats:
       theirsLost: 102
       location: Cagliari
       side: Granada not engaged
-  - id: 1347-02-13-battle-castellon-de-la-plana
+  - at:
+      - 1784
+      - 1454
+    won: false
+    id: 1347-02-13-battle-castellon-de-la-plana
     'on': '1347-02-13'
     kind: battle
     what: Balansiyya's army of 2,100 destroyed by Aragon at Castellón de la Plana
@@ -220,7 +244,11 @@ beats:
       theirsTotal: 8290
       theirsLost: 162
       location: Castellón de la Plana
-  - id: 1347-03-17-battle-sevilla
+  - at:
+      - 1525
+      - 1627
+    won: false
+    id: 1347-03-17-battle-sevilla
     'on': '1347-03-17'
     kind: battle
     what: Morocco beaten before Ishbīliya by a Castilian army four times its size
@@ -245,7 +273,11 @@ beats:
       theirsLost: 1219
       location: Ishbīliya
       side: Granada not engaged
-  - id: 1347-05-18-battle-jaen
+  - at:
+      - 1617
+      - 1594
+    won: true
+    id: 1347-05-18-battle-jaen
     'on': '1347-05-18'
     kind: battle
     what: >-
@@ -274,7 +306,11 @@ beats:
       theirsTotal: 13012
       theirsLost: 7522
       location: Jayyān
-  - id: 1347-05-29-battle-gulf-cagliari
+  - at:
+      - 2217
+      - 1540
+    won: false
+    id: 1347-05-29-battle-gulf-cagliari
     'on': '1347-05-29'
     kind: battle
     what: Aragon sinks the fleet of Tripoli in the gulf of Cagliari
@@ -298,7 +334,11 @@ beats:
       location: the gulf of Cagliari
       side: Granada not engaged
       units: ships
-  - id: 1347-06-17-battle-jerez-de-la-frontera
+  - at:
+      - 1516
+      - 1657
+    won: false
+    id: 1347-06-17-battle-jerez-de-la-frontera
     'on': '1347-06-17'
     kind: battle
     what: Morocco beaten again at Jerez
@@ -321,7 +361,11 @@ beats:
       theirsLost: 912
       location: Jerez
       side: Granada not engaged
-  - id: 1347-06-21-battle-carpio
+  - at:
+      - 1590
+      - 1569
+    won: true
+    id: 1347-06-21-battle-carpio
     'on': '1347-06-21'
     kind: battle
     what: 'Victory at Carpio: Yūsuf''s 18,000 rout a Castilian army of 7,000, killing more than 4,000'
@@ -344,7 +388,11 @@ beats:
       theirsTotal: 7034
       theirsLost: 4355
       location: Carpio
-  - id: 1347-07-13-battle-sevilla
+  - at:
+      - 1525
+      - 1627
+    won: false
+    id: 1347-07-13-battle-sevilla
     'on': '1347-07-13'
     kind: battle
     what: A Moroccan column destroyed before Ishbīliya
@@ -380,7 +428,11 @@ beats:
       location: constantinople
       from: BYZ
       to: TUR
-  - id: 1347-08-31-battle-palma-del-rio
+  - at:
+      - 1552
+      - 1585
+    won: true
+    id: 1347-08-31-battle-palma-del-rio
     'on': '1347-08-31'
     kind: battle
     what: >-
@@ -433,7 +485,11 @@ beats:
           attrition: 5985
         Castile:
           battle: 18681
-  - id: 1347-10-04-battle-montiel
+  - at:
+      - 1650
+      - 1541
+    won: false
+    id: 1347-10-04-battle-montiel
     'on': '1347-10-04'
     kind: battle
     what: Morocco beaten at Montiel
@@ -457,7 +513,11 @@ beats:
       theirsLost: 3823
       location: Montiel
       side: Granada not engaged
-  - id: 1347-10-30-battle-montiel
+  - at:
+      - 1650
+      - 1541
+    won: true
+    id: 1347-10-30-battle-montiel
     'on': '1347-10-30'
     kind: battle
     what: >-
@@ -482,7 +542,11 @@ beats:
       theirsTotal: 4458
       theirsLost: 3147
       location: Montiel
-  - id: 1347-12-13-battle-cordoba
+  - at:
+      - 1577
+      - 1586
+    won: true
+    id: 1347-12-13-battle-cordoba
     'on': '1347-12-13'
     kind: battle
     what: 'Victory before Qurṭuba: Yūsuf breaks Castile''s southern army again, 3,350 Castilians lost for 250'
@@ -529,7 +593,11 @@ beats:
     from:
       - save
     cite: checkpoint 1348-07-01
-  - id: 1348-04-21-battle-cagliari
+  - at:
+      - 2212
+      - 1498
+    won: false
+    id: 1348-04-21-battle-cagliari
     'on': '1348-04-21'
     kind: battle
     what: Another landing at Cagliari thrown back
@@ -553,7 +621,11 @@ beats:
       theirsLost: 592
       location: Cagliari
       side: Granada not engaged
-  - id: 1348-04-23-battle-gulf-cagliari
+  - at:
+      - 2217
+      - 1540
+    won: false
+    id: 1348-04-23-battle-gulf-cagliari
     'on': '1348-04-23'
     kind: battle
     what: Aragon sinks the fleet of the Sahel in the gulf of Cagliari
@@ -577,7 +649,11 @@ beats:
       location: the gulf of Cagliari
       side: Granada not engaged
       units: ships
-  - id: 1348-05-13-battle-cape-ben-sakka
+  - at:
+      - 2247
+      - 1593
+    won: false
+    id: 1348-05-13-battle-cape-ben-sakka
     'on': '1348-05-13'
     kind: battle
     what: A Tunisian squadron worsted off Cape Ben Sakka
@@ -647,7 +723,11 @@ beats:
     detail:
       response: segregate_the_infected
       effects: disease resistance +15%; burgher and commoner satisfaction −5%; drift toward communalism
-  - id: 1348-05-30-battle-cordoba
+  - at:
+      - 1577
+      - 1586
+    won: true
+    id: 1348-05-30-battle-cordoba
     'on': '1348-05-30'
     kind: battle
     what: A Castilian force of 2,750 destroyed before Qurṭuba
@@ -689,7 +769,11 @@ beats:
       outcome: survives, gains the Scarred trait
       sovereignty: -15
       place: El-Mnṣura (the game's spelling)
-  - id: 1348-06-12-battle-cape-ben-sakka
+  - at:
+      - 2247
+      - 1593
+    won: true
+    id: 1348-06-12-battle-cape-ben-sakka
     'on': '1348-06-12'
     kind: battle
     what: Morocco's great fleet of 54 ships falls on Aragon off Cape Ben Sakka and sinks 13 of its 16
@@ -803,6 +887,7 @@ tellings:
   - id: 0748-02-06-the-day-of-jayyan
     'on': '1347-05-18'
     title: Of the Day of Jayyān
+    book: book-of-balance
     verse: 17:81
     who:
       - yusuf-i
@@ -860,6 +945,7 @@ tellings:
   - id: 0748-05-23-of-al-qusayr-and-balma
     'on': '1347-08-31'
     title: Of al-Quṣayr and Balma
+    book: book-of-balance
     verse: 3:160
     who:
       - yusuf-i
@@ -923,6 +1009,7 @@ tellings:
   - id: 0748-09-09-of-muntil-and-the-gate-of-qurtuba
     'on': '1347-12-13'
     title: Of Munṭīl, and the Gate of Qurṭuba
+    book: book-of-balance
     verse: 2:249
     who:
       - yusuf-i
@@ -972,6 +1059,7 @@ tellings:
   - id: 0748-10-15-the-birth-of-saad
     'on': '1348-01-18'
     title: Of the Birth of Saʿd
+    book: book-of-balance
     verse: '18:46'
     who:
       - saad-ibn-yusuf
@@ -1015,6 +1103,7 @@ tellings:
   - id: 0749-02-15-the-coming-of-the-pestilence
     'on': '1348-05-15'
     title: Of the Coming of the Pestilence
+    book: book-of-pestilence
     verse: 4:78
     who:
       - yusuf-i
@@ -1061,6 +1150,7 @@ tellings:
   - id: 0749-04-03-the-madman-and-the-flame
     'on': '1348-07-01'
     title: Of the Madman at al-Manṣūra, and the Flame the Turks would not Rekindle
+    book: book-of-balance
     verse: 3:145
     who:
       - yusuf-i

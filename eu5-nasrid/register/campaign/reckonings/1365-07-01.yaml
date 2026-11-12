@@ -78,7 +78,11 @@ map:
   allies:
     - MAM
 beats:
-  - id: 1364-09-25-battle-gulf-valencia
+  - at:
+      - 1803
+      - 1488
+    won: false
+    id: 1364-09-25-battle-gulf-valencia
     'on': '1364-09-25'
     kind: battle
     what: >-
@@ -113,7 +117,11 @@ beats:
     from:
       - save
     cite: autosave of 1 July 1365
-  - id: 1365-03-09-battle-tortosa
+  - at:
+      - 1816
+      - 1405
+    won: true
+    id: 1365-03-09-battle-tortosa
     'on': '1365-03-09'
     kind: battle
     what: A small Aragonese company of 55 attacks the Valencian army at Tortosa and is wiped out
@@ -154,7 +162,11 @@ beats:
         commanderCombatBonus: 1
         separatism: -0.1
         monthlyProgressToBelligerent: 0.1
-  - id: 1365-06-27-battle-cuenca
+  - at:
+      - 1702
+      - 1447
+    won: false
+    id: 1365-06-27-battle-cuenca
     'on': '1365-06-27'
     kind: battle
     what: The Murcian host, 330 men, attacks 1,600 Aragonese at Cuenca and is destroyed

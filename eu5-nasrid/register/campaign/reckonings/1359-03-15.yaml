@@ -258,6 +258,7 @@ tellings:
   - id: 0758-07-12-roads-libraries-and-the-weavers
     'on': '1357-07-01'
     title: Of Roads, Libraries, and the Charter of the Weavers
+    book: book-of-the-call
     verse: 96:3-5
     who:
       - yusuf-i
@@ -322,6 +323,7 @@ tellings:
   - id: 0759-09-02-the-great-madrasa-of-qurtuba
     'on': '1358-08-08'
     title: Of the Great Madrasa of Qurṭuba, and the Foreign Wisdom
+    book: book-of-the-call
     verse: '58:11'
     who:
       - yusuf-i

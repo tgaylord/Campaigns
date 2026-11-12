@@ -72,7 +72,8 @@ map:
     - MOR
     - TUN
 beats:
-  - id: 1339-06-13-battle-shaluqa
+  - won: true
+    id: 1339-06-13-battle-shaluqa
     'on': '1339-06-13'
     kind: battle
     what: Morocco wins at last, at Shalūqa
@@ -91,7 +92,8 @@ beats:
       ourLosses: 372
       theirLosses: 2735
       side: Morocco's side (Granada not engaged)
-  - id: 1339-08-12-battle-muntil
+  - won: false
+    id: 1339-08-12-battle-muntil
     'on': '1339-08-12'
     kind: battle
     what: A Tunisian column broken at Munṭīl
@@ -110,7 +112,8 @@ beats:
       ourLosses: 229
       theirLosses: 118
       side: Tunis (Granada not engaged)
-  - id: 1339-08-18-battle-jumalla
+  - won: true
+    id: 1339-08-18-battle-jumalla
     'on': '1339-08-18'
     kind: battle
     what: First blood at Jumalla
@@ -128,7 +131,8 @@ beats:
       theirs: 5
       ourLosses: 0
       theirLosses: 5
-  - id: 1339-08-23-battle-al-karash
+  - won: true
+    id: 1339-08-23-battle-al-karash
     'on': '1339-08-23'
     kind: battle
     what: Tlemcen holds al-Karash against Castile
@@ -188,6 +192,7 @@ tellings:
   - id: 0740-02-26-the-ghuzat-al-mujahidin
     'on': '1339-09-02'
     title: Of the First Blood at Jumalla, and the Coming of the Ghuzāt
+    book: book-of-mending
     verse: '9:41'
     who:
       - yusuf-i

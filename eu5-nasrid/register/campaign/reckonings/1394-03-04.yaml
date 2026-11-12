@@ -274,7 +274,11 @@ beats:
         treasury: 610
         manpower: 690
       madrasa: damaged in the rising (Trent's account)
-  - id: 1383-02-22-battle-munt-shaqir
+  - at:
+      - 1509
+      - 1505
+    won: true
+    id: 1383-02-22-battle-munt-shaqir
     'on': '1383-02-22'
     kind: battle
     what: >-
@@ -308,7 +312,11 @@ beats:
         losses are those on Trent's screen while the battle was under way on 22 February; the outcome is from
         Trent's account
       warScoreBefore: -22
-  - id: 1383-04-30-battle-jaen
+  - at:
+      - 1617
+      - 1594
+    won: true
+    id: 1383-04-30-battle-jaen
     'on': '1383-04-30'
     kind: battle
     what: >-
@@ -596,8 +604,6 @@ beats:
       - saad-ibn-yusuf
     where:
       - ishbiliyya
-    threads:
-      - umayyad-claim
     from:
       - seen
       - told
@@ -1232,6 +1238,7 @@ tellings:
   - id: 0785-02-26-of-the-kingdom-of-tulaytula
     'on': '1383-04-30'
     title: Of the Deaths of Sayyida and Abū ʿInān, and the So-Called Kingdom of Ṭulayṭula
+    book: book-of-the-marches
     verse: 3:139
     who:
       - saad-ibn-yusuf
@@ -1307,6 +1314,7 @@ tellings:
   - id: 0787-12-04-of-the-pilgrimage-that-came-too-late
     'on': '1386-01-06'
     title: Of the County of Teruel, and the Pilgrimage That Came Too Late
+    book: book-of-the-call
     verse: 2:286
     who:
       - saad-ibn-yusuf
@@ -1374,6 +1382,7 @@ tellings:
   - id: 0791-08-15-of-the-hijaba-the-hisba-and-the-death-of-dua
     'on': '1389-08-09'
     title: Of the Ḥijāba and the Ḥisba, and the Death of Duʿāʾ
+    book: book-of-the-call
     verse: 89:27-28
     who:
       - saad-ibn-yusuf
@@ -1450,6 +1459,7 @@ tellings:
   - id: 0794-03-25-of-al-hajj-saad
     'on': '1392-02-20'
     title: Of the Second Pilgrimage, the Death of Aiman, and al-Ḥājj Saʿd
+    book: book-of-the-call
     verse: 3:97
     who:
       - saad-ibn-yusuf
@@ -1533,6 +1543,7 @@ tellings:
   - id: 0794-03-26-of-the-western-ocean
     'on': '1392-02-21'
     title: Of the Mansa's Merchants, and the Ships Sent into the Western Ocean
+    book: book-of-the-encircling-sea
     verse: '55:24'
     who:
       - ismail-ibn-saad

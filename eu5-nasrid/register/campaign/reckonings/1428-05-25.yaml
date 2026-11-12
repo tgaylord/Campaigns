@@ -424,6 +424,7 @@ tellings:
   - id: 0831-02-11-of-the-islands-of-the-ocean-and-the-naft-of-ethiopia
     'on': '1427-12-01'
     title: Of the Islands of the Ocean, and the Naft of Ethiopia
+    book: book-of-the-encircling-sea
     verse: '16:15'
     who:
       - ismail-ibn-saad
@@ -485,6 +486,7 @@ tellings:
   - id: 0831-08-10-of-the-jamaa-of-831-and-the-armouries
     'on': '1428-05-25'
     title: Of the Jamāʿa of 831, the Armouries, and the Spies of the North
+    book: book-of-the-marches
     verse: '4:58'
     who:
       - ismail-ibn-saad

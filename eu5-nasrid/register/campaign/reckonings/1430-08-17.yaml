@@ -134,7 +134,11 @@ beats:
       account: >-
         Aḥmad takes after his forebearers. A builder, imagining the greatest structures for the capital
         (Trent)
-  - id: 1430-06-30-battle-santiago
+  - at:
+      - 1397
+      - 1270
+    won: true
+    id: 1430-06-30-battle-santiago
     'on': '1430-06-30'
     kind: battle
     what: >-
@@ -212,7 +216,8 @@ beats:
         Isabel de Montsoriu: 75/30/51
         Jadīla bint Saʿd: 75/42/43, honest; in the dīwān
       account: Trent, June 1430
-  - id: 1430-07-15-santiago-falls
+  - won: true
+    id: 1430-07-15-santiago-falls
     'on': '1430-07-15'
     kind: battle
     what: >-
@@ -237,7 +242,11 @@ beats:
       captured: the Pórtico de la Gloria, taken to Ishbīliya
       orders: destroyed on the direct orders of the Emperor (Trent)
       history: al-Manṣūr took Santiago in 997 and carried its bells to Córdoba, but left the tomb
-  - id: 1430-08-05-battle-oviedo
+  - at:
+      - 1522
+      - 1247
+    won: true
+    id: 1430-08-05-battle-oviedo
     'on': '1430-08-05'
     kind: battle
     what: >-
@@ -315,6 +324,7 @@ tellings:
   - id: 0833-10-23-of-the-war-of-shant-yaqub-and-the-shrine-of-the-apostle
     'on': '1430-07-15'
     title: Of the War of Shant Yāqub, and the Shrine of the Apostle
+    book: book-of-the-marches
     verse: '22:40'
     who:
       - muhammad-ibn-ismail-ibn-saad

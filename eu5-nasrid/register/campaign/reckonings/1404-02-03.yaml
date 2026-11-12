@@ -672,6 +672,7 @@ tellings:
   - id: 0799-11-19-of-majrit-the-acequias-and-the-eternal-isles
     'on': '1397-08-14'
     title: Of Majrīṭ, the Acequias, and the Eternal Isles
+    book: book-of-the-encircling-sea
     verse: '21:30'
     who:
       - saad-ibn-yusuf
@@ -744,6 +745,7 @@ tellings:
   - id: 0800-12-20-of-the-grandsons-and-the-prince-from-benabarre
     'on': '1398-09-03'
     title: Of the Grandsons, and the Prince Who Came Home from Benabarre
+    book: book-of-the-call
     verse: 25:74
     who:
       - saad-ibn-yusuf
@@ -820,6 +822,7 @@ tellings:
   - id: 0805-12-27-of-the-prospectors-and-the-jamaa-of-the-markets
     'on': '1403-07-18'
     title: Of the Prospectors, the Silver of Qusanṭīna, and the Jamāʿa of the Markets
+    book: book-of-the-encircling-sea
     verse: '17:35'
     who:
       - saad-ibn-yusuf

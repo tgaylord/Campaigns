@@ -154,6 +154,7 @@ tellings:
   - id: 0846-03-29-of-the-princes-mending-and-the-golden-century
     'on': '1442-08-07'
     title: Of the Princes' Mending, and the Golden Century
+    book: book-of-the-golden-century
     verse: '14:7'
     who:
       - muhammad-ibn-ismail-ibn-saad

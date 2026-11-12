@@ -274,6 +274,7 @@ tellings:
   - id: 0839-10-14-of-the-arsenals-finished-and-the-turn-to-the-sea
     'on': '1436-05-01'
     title: Of the Arsenals Finished, and the Turn to the Sea
+    book: book-of-the-encircling-sea
     verse: 55:19-20
     who:
       - muhammad-ibn-ismail-ibn-saad
@@ -477,6 +478,7 @@ tellings:
   - id: 0840-08-22-of-barshaluna-returned-the-hegemony-of-letters-and-the-new-world
     'on': '1437-03-01'
     title: Of Barshalūna Returned to the Crown, the Hegemony of Letters, and the New World
+    book: book-of-the-call
     verse: 2:143
     who:
       - muhammad-ibn-ismail-ibn-saad
@@ -535,6 +537,7 @@ tellings:
   - id: 0841-07-19-of-the-admiral-prince-and-his-three-wives
     'on': '1438-01-16'
     title: Of the Admiral Prince, and His Three Wives
+    book: book-of-the-encircling-sea
     verse: 6:165
     who:
       - yusuf-ibn-ismail-ibn-muhammad

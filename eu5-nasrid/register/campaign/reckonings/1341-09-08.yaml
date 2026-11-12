@@ -201,6 +201,7 @@ tellings:
   - id: 0742-03-25-the-defection-of-ibn-al-khatib
     'on': '1341-09-08'
     title: Of the Defection of Ibn al-Khaṭīb
+    book: book-of-mending
     verse: '3:8'
     who:
       - ibn-al-khatib

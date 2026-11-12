@@ -148,8 +148,6 @@ beats:
       ornament of the world. Tolerance, wealth and learning are to stand level with the Word
     who:
       - saad-ibn-yusuf
-    threads:
-      - umayyad-claim
     from:
       - save
       - seen
@@ -262,6 +260,7 @@ tellings:
   - id: 0776-10-12-of-the-restoration-of-al-andalus
     'on': '1375-03-16'
     title: Of the Reordering of the Realm, and the Restoration of al-Andalus
+    book: book-of-the-marches
     verse: 7:128
     who:
       - saad-ibn-yusuf

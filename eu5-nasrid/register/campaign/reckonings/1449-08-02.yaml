@@ -106,7 +106,11 @@ map:
     - MOR
     - TUN
 beats:
-  - id: 1449-02-10-battle-salemi
+  - at:
+      - 2380
+      - 1586
+    won: false
+    id: 1449-02-10-battle-salemi
     'on': '1449-02-10'
     kind: battle
     what: 'At Salemi, Sicily (8,436 men) attacks Tunis (170), who are beaten: 170 lost against 0'
@@ -132,7 +136,11 @@ beats:
       commanders:
         ours: Al-Fadl#91991
         theirs: Peter#16802169
-  - id: 1449-02-18-battle-al-ajfar
+  - at:
+      - 3755
+      - 2212
+    won: false
+    id: 1449-02-18-battle-al-ajfar
     'on': '1449-02-18'
     kind: battle
     what: 'At al-Ajfar, Lām (4,041 men) attacks ABA52 (821), who are beaten: 821 lost against 41'
@@ -178,7 +186,11 @@ beats:
       cause: camp fever (the save's 'camp')
       command: general again from 1 January 1448 until his death
       successor: Abū al-Ḥasan ʿAlī, born 16 February 1417
-  - id: 1449-02-26-battle-toulon
+  - at:
+      - 2071
+      - 1253
+    won: false
+    id: 1449-02-26-battle-toulon
     'on': '1449-02-26'
     kind: battle
     what: >-
@@ -208,7 +220,11 @@ beats:
       commanders:
         ours: Ogier#16861014
         theirs: Julius Caesar#16801655
-  - id: 1449-03-11-battle-al-hegrieah
+  - at:
+      - 3620
+      - 2409
+    won: false
+    id: 1449-03-11-battle-al-hegrieah
     'on': '1449-03-11'
     kind: battle
     what: 'At al-Hegrieah, Lām (6,084 men) attacks Medina (26), who are beaten: 26 lost against 0'
@@ -235,7 +251,11 @@ beats:
         ours: Khayr Al Din#16802361
         theirs: Muzaffar Al Din#80721
       note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
-  - id: 1449-03-30-battle-toulon
+  - at:
+      - 2071
+      - 1253
+    won: false
+    id: 1449-03-30-battle-toulon
     'on': '1449-03-30'
     kind: battle
     what: >-
@@ -266,7 +286,11 @@ beats:
       commanders:
         ours: Anthony#16829913
         theirs: Julius Caesar#16801655
-  - id: 1449-04-03-battle-al-muthainiyah
+  - at:
+      - 3611
+      - 2500
+    won: true
+    id: 1449-04-03-battle-al-muthainiyah
     'on': '1449-04-03'
     kind: battle
     what: 'At al-Muthainiyah, Medina and Mecca (1,719 men) attack Otaibah (450) and win: 209 lost against 338'
@@ -294,7 +318,11 @@ beats:
         ours: Sadiq#16794381
         theirs: Muslih Al Din#33575422
       note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
-  - id: 1449-04-08-battle-ash-shamli
+  - at:
+      - 3615
+      - 2250
+    won: false
+    id: 1449-04-08-battle-ash-shamli
     'on': '1449-04-08'
     kind: battle
     what: 'At ash-Shamli, Lām (3,999 men) attacks Hutaym (273), who are beaten: 273 lost against 0'
@@ -321,7 +349,11 @@ beats:
         ours: Alim#80177
         theirs: Aram#33609309
       note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
-  - id: 1449-04-09-battle-palermo
+  - at:
+      - 2395
+      - 1575
+    won: false
+    id: 1449-04-09-battle-palermo
     'on': '1449-04-09'
     kind: battle
     what: 'At Palermo, Kingdom of Portugal (429 men) attacks Sicily (8,436) and are beaten: 172 lost against 0'
@@ -347,7 +379,11 @@ beats:
       commanders:
         ours: Roderick#16848370
         theirs: Peter#16802169
-  - id: 1449-04-15-battle-barahrah
+  - at:
+      - 3679
+      - 2605
+    won: false
+    id: 1449-04-15-battle-barahrah
     'on': '1449-04-15'
     kind: battle
     what: 'At Barahrah, Lām (3,433 men) attacks Mecca (7), who are beaten: 7 lost against 0'
@@ -374,7 +410,11 @@ beats:
         ours: Nizam#16794585
         theirs: Abd Al Wahhab#16860694
       note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
-  - id: 1449-04-15-battle-qudayd
+  - at:
+      - 3589
+      - 2488
+    won: false
+    id: 1449-04-15-battle-qudayd
     'on': '1449-04-15'
     kind: battle
     what: 'At Qudayd, Otaibah (3,597 men) attacks Medina (646), who are beaten: 646 lost against 57'
@@ -401,7 +441,11 @@ beats:
         ours: Zayd#16832959
         theirs: Bahir#16848506
       note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
-  - id: 1449-04-16-battle-al-mahani
+  - at:
+      - 3635
+      - 2506
+    won: false
+    id: 1449-04-16-battle-al-mahani
     'on': '1449-04-16'
     kind: battle
     what: 'At al-Mahani, Dawasir (1,983 men) attacks Mecca (864), who are beaten: 70 lost against 17'
@@ -428,7 +472,11 @@ beats:
         ours: Sadiq#16794381
         theirs: Abdullah#16801356
       note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
-  - id: 1449-04-16-battle-ash-shamli
+  - at:
+      - 3615
+      - 2250
+    won: true
+    id: 1449-04-16-battle-ash-shamli
     'on': '1449-04-16'
     kind: battle
     what: 'At ash-Shamli, Al Mira (3,687 men) attacks Lām (3,999) and win: 1,230 lost against 149'
@@ -473,7 +521,11 @@ beats:
         in 1447–1449 the house also gained Zaynab (25 October 1447) and Abū al-Ḥasan ʿAlī (11 June 1449),
         children of the heir's daughter Shams; Saʿd (16 December 1447), son of the prince Aḥmad's son
         Muḥammad; and a dozen other children of the house
-  - id: 1449-04-26-battle-gulf-genoa
+  - at:
+      - 2196
+      - 1202
+    won: true
+    id: 1449-04-26-battle-gulf-genoa
     'on': '1449-04-26'
     kind: battle
     what: 'At Gulf of Genoa, Taifa of Burgos (3 ships) attacks Genoa (1) and win: 0 lost against 1'
@@ -500,7 +552,11 @@ beats:
       commanders:
         ours: Pelagius#90130
         theirs: Baptiste#90935
-  - id: 1449-04-28-battle-taif
+  - at:
+      - 3641
+      - 2548
+    won: false
+    id: 1449-04-28-battle-taif
     'on': '1449-04-28'
     kind: battle
     what: 'At al-Ṭāʾif, Mecca (794 men) attacks Dawasir (1,961) and are beaten: 794 lost against 3'
@@ -527,7 +583,11 @@ beats:
         ours: Sadiq#16794381
         theirs: Abdullah#16801356
       note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
-  - id: 1449-05-05-battle-angelokastron
+  - at:
+      - 2765
+      - 1542
+    won: false
+    id: 1449-05-05-battle-angelokastron
     'on': '1449-05-05'
     kind: battle
     what: >-
@@ -556,7 +616,11 @@ beats:
       commanders:
         ours: Ali#16804056
         theirs: Nicetas#16840896
-  - id: 1449-05-10-battle-ash-shamli
+  - at:
+      - 3615
+      - 2250
+    won: false
+    id: 1449-05-10-battle-ash-shamli
     'on': '1449-05-10'
     kind: battle
     what: 'At ash-Shamli, Lām (3,848 men) attacks Al Mira (2,456), who are beaten: 1,272 lost against 348'
@@ -583,7 +647,11 @@ beats:
         ours: Alacan#16812846
         theirs: Aram#33609309
       note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
-  - id: 1449-06-10-battle-ash-shamli-tayma-corridor
+  - at:
+      - 3577
+      - 2230
+    won: false
+    id: 1449-06-10-battle-ash-shamli-tayma-corridor
     'on': '1449-06-10'
     kind: battle
     what: >-
@@ -632,7 +700,11 @@ beats:
       occupied (save of 2 August 1449): >-
         Corsica: Aleria, Calvi, Corte, Ajaccio, Bonifacio, Sartène, Vico; Arborea: Oristano, Ales, Sorgono,
         Terralba, Thiesi
-  - id: 1449-07-06-battle-khulays
+  - at:
+      - 3587
+      - 2513
+    won: false
+    id: 1449-07-06-battle-khulays
     'on': '1449-07-06'
     kind: battle
     what: 'At Khulays, Lām (3,433 men) attacks Al Mira (1,182), who are beaten: 1,182 lost against 0'

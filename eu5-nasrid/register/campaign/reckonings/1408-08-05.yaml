@@ -92,7 +92,11 @@ map:
     - MAM
     - MOR
 beats:
-  - id: 1405-07-02-battle-granadilla
+  - at:
+      - 1510
+      - 1435
+    won: true
+    id: 1405-07-02-battle-granadilla
     'on': '1405-07-02'
     kind: battle
     what: >-
@@ -148,7 +152,11 @@ beats:
       how: >-
         the rebel country is dissolved and its towns return to their owner (ownership change of 8 July 1405 in
         the save of 5 August 1408; the save of 8 July 1405 was taken just before it)
-  - id: 1405-07-10-battle-cuenca-ii
+  - at:
+      - 1702
+      - 1447
+    won: true
+    id: 1405-07-10-battle-cuenca-ii
     'on': '1405-07-10'
     kind: battle
     what: >-
@@ -181,7 +189,11 @@ beats:
         al-Andalus: the Emperor Ismāʿīl
         Toledo: the rebel king of Toledo
       note: rebellion battles carry no war score in the game
-  - id: 1405-08-05-battle-lisbon
+  - at:
+      - 1377
+      - 1522
+    won: true
+    id: 1405-08-05-battle-lisbon
     'on': '1405-08-05'
     kind: battle
     what: >-
@@ -439,6 +451,7 @@ tellings:
   - id: 0808-03-06-of-granadilla-the-end-of-the-risings-and-al-gharb
     'on': '1405-09-01'
     title: Of Granadilla, the End of the Risings, and al-Gharb
+    book: book-of-the-marches
     verse: '8:46'
     who:
       - ismail-ibn-saad
@@ -517,6 +530,7 @@ tellings:
   - id: 0811-03-12-of-the-old-capital-and-the-sons-of-muhammad
     'on': '1408-08-05'
     title: Of the Old Capital, the Shaykha of Qūnka, and the Sons of Muḥammad
+    book: book-of-the-call
     verse: '52:21'
     who:
       - ismail-ibn-saad

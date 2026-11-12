@@ -224,6 +224,7 @@ tellings:
   - id: 0743-12-24-the-lean-years
     'on': '1343-05-20'
     title: Of the Lean Years, the Gold of Tūnis, and the Royal Decree
+    book: book-of-mending
     verse: '11:6'
     who:
       - yusuf-i

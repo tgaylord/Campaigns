@@ -308,6 +308,7 @@ tellings:
   - id: 0841-10-12-of-the-charter-of-majrit-and-the-land-rights-of-the-umara
     'on': '1438-04-08'
     title: Of the Charter of Majrīṭ, and the Land Rights of the Umarāʾ
+    book: book-of-the-encircling-sea
     verse: '28:57'
     who:
       - muhammad-ibn-ismail-ibn-saad
@@ -360,6 +361,7 @@ tellings:
   - id: 0843-02-02-of-the-emperor-who-became-a-scholar
     'on': '1439-07-15'
     title: Of the Emperor Who Became a Scholar
+    book: book-of-the-call
     verse: '39:9'
     who:
       - muhammad-ibn-ismail-ibn-saad
@@ -413,6 +415,7 @@ tellings:
   - id: 0844-01-09-of-the-trade-war-with-genoa-and-the-angevins
     'on': '1440-06-10'
     title: Of the Trade War with Genoa and the Angevins
+    book: book-of-the-franks
     verse: 83:1-3
     who:
       - muhammad-ibn-ismail-ibn-saad
@@ -463,6 +466,7 @@ tellings:
   - id: 0844-05-04-of-the-radiant-city-restored
     'on': '1440-10-01'
     title: Of the Radiant City Restored
+    book: book-of-the-call
     verse: 26:128-129
     who:
       - muhammad-ibn-ismail-ibn-saad
@@ -509,6 +513,7 @@ tellings:
   - id: 0846-01-21-of-the-jamaa-of-846-and-the-burghers
     'on': '1442-06-01'
     title: Of the Jamāʿa of 846, and the Burghers
+    book: book-of-the-golden-century
     verse: '42:38'
     who:
       - muhammad-ibn-ismail-ibn-saad

@@ -53,7 +53,7 @@ const RULES = [
   ["strait", (e) => e.type === "strait_change"],
   ["europe", (e) => /embargo|crusade|envoy|Angevin|excommunicat|Pope calls/i.test(e.title) && e.type !== "battle"],
   ["voyages", (e) => e.people.includes("abd-al-jalil-al-qubbasi") || /\bcape\b|voyage|explor|Fernando Po|Kongo|Canar|Madeira|Azores|New World|Cape Verde/i.test(e.title)],
-  ["umayyad-claim", (e) => /Umayyad/i.test(e.title + JSON.stringify(e.data ?? {}))],
+  ["umayyad-claim", (e) => e.date >= "1447-08-01" && /Umayyad/i.test(e.title + JSON.stringify(e.data ?? {}))],
   ["sicily", (e) => e.date >= "1450-09-28" && /Sicily|Palermo|Athens/i.test(e.title) && !["battle", "reform"].includes(e.type)],
   ["two-princes", (e) => e.people.includes("ismail-ibn-muhammad-ibn-ismail") && e.people.includes("ahmad-ibn-muhammad-ibn-ismail")],
   ["house", (e) => ["birth", "death", "marriage", "ruler_change"].includes(e.type) && e.people.some((id) => people.find((p) => p.id === id)?.dynasty === "Naṣrid")],
@@ -76,7 +76,11 @@ const important = (e) => {
   if (e.type === "appointment") return e.people.some((id) => tierOf.get(id));
   return true;
 };
+const battlePlaces = J("data/map/battle-places.json").places;
+const MAP_ORIGIN = [5900, 1100]; // the world map's frame; battle places are stored in whole-map pixels
 const beat = (e) => clean({
+  at: battlePlaces[e.id] ? [Math.round(battlePlaces[e.id][1] - MAP_ORIGIN[0]), Math.round(battlePlaces[e.id][2] - MAP_ORIGIN[1])] : undefined,
+  won: e.type === "battle" || e.type === "siege" ? (/defeat|disaster/i.test(e.data?.result ?? "") ? false : /victory|won|falls/i.test((e.data?.result ?? "") + e.title) ? true : undefined) : undefined,
   id: e.id, on: e.date, kind: KIND[e.type] ?? "note", what: e.title, minor: important(e) ? undefined : true,
   who: e.people, where: e.places, threads: [...(e.wars ?? []), ...RULES.filter(([, t]) => t(e)).map(([id]) => id)],
   from: fromOf(e.source ?? ""), cite: e.source, detail: e.data,
@@ -88,7 +92,7 @@ const story = fs.readdirSync(path.join(SRC, "story")).filter((f) => f.endsWith("
 const ooc = story.filter((s) => s.kind === "ooc");
 const eventIds = new Set(events.map((e) => e.id));
 const tellings = story.filter((s) => s.kind !== "ooc").map((s) => clean({
-  id: s.id, on: String(s.date), title: s.title, verse: s.verse, who: s.people, where: s.places,
+  id: s.id, on: String(s.date), title: s.title, book: s.era, verse: s.verse, who: s.people, where: s.places,
   covers: (s.sources ?? []).map(String).filter((x) => eventIds.has(x)),
   text: s.body + "\n", behind: ooc.filter((o) => o.about === s.id).map((o) => o.body).join("\n\n") || undefined,
 }));
@@ -132,7 +136,7 @@ snaps.forEach((s, i) => {
 /* ---------------------------------------------------------------- campaign */
 const eras = J("data/eras.json");
 write("campaign.yaml", {
-  map: { realms: "../data/map/world/realms-{date}.json", view: [1240, 1230, 2640, 1190], labels: { GRA: "al-Andalus", MOR: "Morocco", TUN: "Tunis", MAM: "The Mamlūks" } },
+  map: { realms: "../data/map/world/realms-{date}.json", view: [1240, 1230, 2640, 1190], story: [1215, 1225, 1440, 900], labels: { GRA: "al-Andalus", MOR: "Morocco", TUN: "Tunis", MAM: "The Mamlūks" } },
   id: "eu5-nasrid", title: "al-Andalus", arabic: "الأندلس", subtitle: "The Naṣrid campaign: Granada, 1337, to an empire across the Strait",
   game: "Europa Universalis V 1.4 (Across the Pillars)", player: "Trent", start: "1337-04-01",
   calendar: "hijri",

@@ -105,7 +105,11 @@ map:
     - MOR
     - TUN
 beats:
-  - id: 1448-03-02-battle-nice
+  - at:
+      - 2124
+      - 1209
+    won: false
+    id: 1448-03-02-battle-nice
     'on': '1448-03-02'
     kind: battle
     what: 'At Nice, Genoa (4,225 men) attacks Taifa of Pamplona (346), who are beaten: 138 lost against 0'
@@ -131,7 +135,11 @@ beats:
       commanders:
         ours: Peter#88980
         theirs: Paul#33612419
-  - id: 1448-05-15-battle-oristano
+  - at:
+      - 2184
+      - 1457
+    won: true
+    id: 1448-05-15-battle-oristano
     'on': '1448-05-15'
     kind: battle
     what: 'At Oristano, Taifa of Cuenca (3,199 men) attacks Arborea (2,968) and win: 831 lost against 1,443'
@@ -198,7 +206,11 @@ beats:
       born: '1390-11-05'
       cause: burst ulcer
       successor: Abū al-Ḥasan ʿAlī ibn Saʿd, born 17 April 1410, the Emperor's nephew
-  - id: 1448-08-14-battle-ales
+  - at:
+      - 2197
+      - 1468
+    won: false
+    id: 1448-08-14-battle-ales
     'on': '1448-08-14'
     kind: battle
     what: 'At Ales, Gallura (28 men) attacks Arborea (1,523) and are beaten: 28 lost against 0'
@@ -263,7 +275,11 @@ beats:
       army: >-
         about 4,900 men (the battle screen of 26 September shows 2,467 infantry, 2,370 light and 493 heavy
         horse)
-  - id: 1448-09-26-battle-seddori
+  - at:
+      - 2209
+      - 1484
+    won: true
+    id: 1448-09-26-battle-seddori
     'on': '1448-09-26'
     kind: battle
     what: >-
@@ -300,7 +316,11 @@ beats:
         ours: 2,467 infantry (−281), 2,370 light horse (−10), 493 heavy horse, 36 support (Trent's battle screen)
         theirs: 1,523 levy archers, all lost
       warScore: 3.97
-  - id: 1448-09-27-battle-palermo
+  - at:
+      - 2395
+      - 1575
+    won: false
+    id: 1448-09-27-battle-palermo
     'on': '1448-09-27'
     kind: battle
     what: 'At Palermo, Kingdom of Portugal (188 men) attacks Sicily (9,756) and are beaten: 188 lost against 0'
@@ -326,7 +346,11 @@ beats:
       commanders:
         ours: null
         theirs: Peter#16802169
-  - id: 1448-10-21-battle-corsica-channel
+  - at:
+      - 2244
+      - 1267
+    won: true
+    id: 1448-10-21-battle-corsica-channel
     'on': '1448-10-21'
     kind: battle
     what: >-
@@ -377,7 +401,11 @@ beats:
       theMamluksSide: Mecca, Medina, Hutaym, Al ʿAlī, Al Mira, Döger, Barqa, the Banū Kanz, Suakin
       theirs: Lām, Yemen, Dhofar, Otaibah, the Dawāsir and others
       ours: 'nominal (Trent): al-Andalus has fought no battle in it'
-  - id: 1448-11-12-battle-palermo
+  - at:
+      - 2395
+      - 1575
+    won: false
+    id: 1448-11-12-battle-palermo
     'on': '1448-11-12'
     kind: battle
     what: 'At Palermo, Gabès (2,732 men) attacks Sicily (9,756) and are beaten: 1,760 lost against 898'
@@ -412,7 +440,11 @@ beats:
     from:
       - save
     cite: save of 2 August 1449
-  - id: 1448-12-16-battle-mecca
+  - at:
+      - 3609
+      - 2562
+    won: false
+    id: 1448-12-16-battle-mecca
     'on': '1448-12-16'
     kind: battle
     what: 'At Mecca, Otaibah (3,634 men) attacks Mecca (1,894), who are beaten: 1,894 lost against 35'
@@ -439,7 +471,11 @@ beats:
         ours: Nizam#16794585
         theirs: Bahir#16848506
       note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
-  - id: 1449-01-14-battle-palermo
+  - at:
+      - 2395
+      - 1575
+    won: false
+    id: 1449-01-14-battle-palermo
     'on': '1449-01-14'
     kind: battle
     what: >-
@@ -472,6 +508,7 @@ tellings:
   - id: 0852-07-03-of-the-jamaa-of-the-commons
     'on': '1448-09-02'
     title: Of the Jamāʿa of the Commons
+    book: book-of-the-franks
     verse: 16:90
     who:
       - muhammad-ibn-ismail-ibn-saad

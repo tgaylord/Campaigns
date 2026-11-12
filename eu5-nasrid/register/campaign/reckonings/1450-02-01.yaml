@@ -101,7 +101,11 @@ map:
     - MOR
     - TUN
 beats:
-  - id: 1449-08-03-battle-al-muazzam
+  - at:
+      - 3495
+      - 2200
+    won: false
+    id: 1449-08-03-battle-al-muazzam
     'on': '1449-08-03'
     kind: battle
     what: 'At al-Muazzam the Mamlūk side (Döger, 784) attacks Dawasir (1,942) and loses: 784 lost against 19'
@@ -125,7 +129,8 @@ beats:
       location: al-Muazzam
       side: allies attacking
       note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
-  - id: 1449-08-07-battle-al-ukhaydir
+  - won: false
+    id: 1449-08-07-battle-al-ukhaydir
     'on': '1449-08-07'
     kind: battle
     what: >-
@@ -151,7 +156,11 @@ beats:
       location: al-Ukhaydir
       side: enemy attacking
       note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
-  - id: 1449-09-02-battle-al-huwayyit
+  - at:
+      - 3630
+      - 2307
+    won: false
+    id: 1449-09-02-battle-al-huwayyit
     'on': '1449-09-02'
     kind: battle
     what: 'At al-Huwayyit the Mamlūk side (Mamluks, 42) is attacked by Lām (4,400) and loses: 42 lost against 0'
@@ -175,7 +184,11 @@ beats:
       location: al-Huwayyit
       side: enemy attacking
       note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
-  - id: 1449-09-04-battle-kaf
+  - at:
+      - 2179
+      - 1691
+    won: true
+    id: 1449-09-04-battle-kaf
     'on': '1449-09-04'
     kind: battle
     what: 'At Kaf the Mamlūk side (Mamluks, 10,768) is attacked by Lām (2,273) and wins: 183 lost against 2,273'
@@ -199,7 +212,8 @@ beats:
       location: Kaf
       side: enemy attacking
       note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
-  - id: 1449-09-17-the-fall-of-bastia
+  - won: true
+    id: 1449-09-17-the-fall-of-bastia
     'on': '1449-09-17'
     kind: battle
     what: Bastia falls after a siege of 265 days
@@ -212,7 +226,11 @@ beats:
     cite: Trent's account (12 November 2026)
     detail:
       days: 265
-  - id: 1449-10-09-battle-al-muwaylih
+  - at:
+      - 3419
+      - 2180
+    won: true
+    id: 1449-10-09-battle-al-muwaylih
     'on': '1449-10-09'
     kind: battle
     what: 'At al-Muwaylih the Mamlūk side (Mamluks, 21,339) attacks Lām (5,643) and wins: 723 lost against 5,643'
@@ -236,7 +254,11 @@ beats:
       location: al-Muwaylih
       side: allies attacking
       note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
-  - id: 1449-10-19-battle-al-maramiyah
+  - at:
+      - 3516
+      - 2321
+    won: false
+    id: 1449-10-19-battle-al-maramiyah
     'on': '1449-10-19'
     kind: battle
     what: >-
@@ -281,7 +303,11 @@ beats:
       when: late October 1449 (Trent)
       men: 4,000 thughūr ('Tagri')
       aim: a landing in Sicily
-  - id: 1449-11-11-battle-az-zubayir
+  - at:
+      - 3516
+      - 2295
+    won: true
+    id: 1449-11-11-battle-az-zubayir
     'on': '1449-11-11'
     kind: battle
     what: 'At az-Zubayir the Mamlūk side (Barqa, 5,355) attacks Dawasir (1,736) and wins: 780 lost against 1,093'
@@ -305,7 +331,11 @@ beats:
       location: az-Zubayir
       side: allies attacking
       note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
-  - id: 1449-11-14-battle-gulf-oristano
+  - at:
+      - 2152
+      - 1464
+    won: false
+    id: 1449-11-14-battle-gulf-oristano
     'on': '1449-11-14'
     kind: battle
     what: In the Gulf of Oristano a single Genoese ship sinks one each of Burgos's and Galicia's
@@ -333,7 +363,11 @@ beats:
       commanders:
         ours: Khālid, lord of Burghush
         theirs: Raymond#79697
-  - id: 1449-12-13-battle-catania
+  - at:
+      - 2476
+      - 1600
+    won: false
+    id: 1449-12-13-battle-catania
     'on': '1449-12-13'
     kind: battle
     what: >-
@@ -361,7 +395,11 @@ beats:
       commanders:
         ours: Abu Tashufin#88637
         theirs: King Peter of Sicily
-  - id: 1449-12-15-battle-al-maramiyah
+  - at:
+      - 3516
+      - 2321
+    won: true
+    id: 1449-12-15-battle-al-maramiyah
     'on': '1449-12-15'
     kind: battle
     what: 'At al-Maramiyah the Mamlūk side (Barqa, 4,454) attacks Yemen (3,143) and wins: 559 lost against 503'
@@ -385,7 +423,11 @@ beats:
       location: al-Maramiyah
       side: allies attacking
       note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
-  - id: 1449-12-18-battle-al-marwa
+  - at:
+      - 3550
+      - 2294
+    won: true
+    id: 1449-12-18-battle-al-marwa
     'on': '1449-12-18'
     kind: battle
     what: 'At al-Marwa the Mamlūk side (Mamluks, 20,613) attacks Lām (7,830) and wins: 1,676 lost against 2,751'
@@ -409,7 +451,11 @@ beats:
       location: al-Marwa
       side: allies attacking
       note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
-  - id: 1450-01-01-battle-al-maramiyah
+  - at:
+      - 3516
+      - 2321
+    won: true
+    id: 1450-01-01-battle-al-maramiyah
     'on': '1450-01-01'
     kind: battle
     what: >-
@@ -435,7 +481,11 @@ beats:
       location: al-Maramiyah
       side: enemy attacking
       note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
-  - id: 1450-01-30-battle-al-manjur
+  - at:
+      - 3494
+      - 2294
+    won: false
+    id: 1450-01-30-battle-al-manjur
     'on': '1450-01-30'
     kind: battle
     what: >-
@@ -465,6 +515,7 @@ tellings:
   - id: 0853-07-29-of-sardinia-and-the-siege-of-bastia
     'on': '1449-09-17'
     title: Of Sardinia and the Siege of Bastia
+    book: book-of-the-franks
     verse: 8:66
     who:
       - abu-al-hasan-ali-ibn-ahmad

@@ -303,6 +303,7 @@ tellings:
   - id: 0797-10-17-of-the-diwan-al-insha-and-the-two-taifas
     'on': '1395-08-05'
     title: Of the Dīwān al-Inshāʾ, the Two Ṭāʾifas, and the Embassies
+    book: book-of-the-marches
     verse: '68:1'
     who:
       - saad-ibn-yusuf

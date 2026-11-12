@@ -105,7 +105,8 @@ map:
     - MOR
     - TUN
 beats:
-  - id: 1451-07-24-battle-al-ukhaydir
+  - won: true
+    id: 1451-07-24-battle-al-ukhaydir
     'on': '1451-07-24'
     kind: battle
     what: >-
@@ -227,6 +228,7 @@ tellings:
   - id: 0855-11-27-of-the-governor-of-balarm-and-the-holy-cities
     'on': '1451-12-21'
     title: Of the Governor of Balarm and the Holy Cities
+    book: book-of-the-franks
     verse: '22:46'
     who:
       - muhammad-ibn-ismail-ibn-saad

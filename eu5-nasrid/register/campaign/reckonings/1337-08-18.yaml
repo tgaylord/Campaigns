@@ -165,6 +165,7 @@ tellings:
   - id: 0738-01-02-the-marinid-war-upon-castile
     'on': '1337-07-31'
     title: Of the Spring of the Year 737, and the Marīnid War upon Qashtāla
+    book: book-of-mending
     verse: '3:54'
     who:
       - yusuf-i

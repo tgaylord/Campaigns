@@ -353,6 +353,7 @@ tellings:
   - id: 0780-01-02-of-tulaytula-and-the-count-of-the-christians
     'on': '1378-05-01'
     title: Of Ṭulayṭula, the Gem of Iberia, and the Count of the Christians
+    book: book-of-the-call
     verse: '5:48'
     who:
       - saad-ibn-yusuf
@@ -421,6 +422,7 @@ tellings:
   - id: 0781-08-13-of-the-move-to-ishbiliya
     'on': '1379-11-24'
     title: Of the Jamāʿa of 781, and the Court's Removal to Ishbīliya
+    book: book-of-the-encircling-sea
     verse: '67:15'
     who:
       - saad-ibn-yusuf

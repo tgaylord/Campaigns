@@ -70,7 +70,8 @@ map:
     - MOR
     - TUN
 beats:
-  - id: 1340-06-07-battle-moron
+  - won: true
+    id: 1340-06-07-battle-moron
     'on': '1340-06-07'
     kind: battle
     what: Morocco wins at Morón
@@ -87,7 +88,8 @@ beats:
       ourLosses: 2071
       theirLosses: 4309
       side: Morocco (Granada not engaged)
-  - id: 1340-06-20-second-battle-uryula
+  - won: true
+    id: 1340-06-20-second-battle-uryula
     'on': '1340-06-20'
     kind: battle
     what: 'The second battle of Uryūla: Navarre, Majorca and Aragon fail to throw the host into the sea'
@@ -112,7 +114,8 @@ beats:
       enemyLead: Navarre
       treasuryAfter: 65.7
       monthlyBalanceAfter: -21.21
-  - id: 1340-07-04-battle-siyasa
+  - won: false
+    id: 1340-07-04-battle-siyasa
     'on': '1340-07-04'
     kind: battle
     what: Tunis beaten at Siyāsa
@@ -138,7 +141,8 @@ beats:
     from:
       - told
     cite: Trent's account
-  - id: 1340-07-27-jumalla-falls
+  - won: true
+    id: 1340-07-27-jumalla-falls
     'on': '1340-07-27'
     kind: battle
     what: Jumalla falls to the main army
@@ -232,6 +236,7 @@ tellings:
   - id: 0741-01-05-the-second-battle-of-uryula
     'on': '1340-07-01'
     title: Of the Winter before Uryūla, the Closing of the Road, and the Second Battle
+    book: book-of-mending
     verse: 2:250
     who:
       - ibn-al-khatib
@@ -280,6 +285,7 @@ tellings:
   - id: 0741-02-16-the-peace-of-balansiyya
     'on': '1340-08-11'
     title: Of the Bluff before Shāṭiba, and the Peace of Balansiyya
+    book: book-of-mending
     verse: '3:26'
     who:
       - yusuf-i

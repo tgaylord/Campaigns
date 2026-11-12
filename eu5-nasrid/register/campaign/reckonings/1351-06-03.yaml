@@ -393,6 +393,7 @@ tellings:
   - id: 0750-08-24-the-great-dying
     'on': '1349-11-07'
     title: Of the Great Dying
+    book: book-of-pestilence
     verse: 2:156
     who:
       - yusuf-i
@@ -439,6 +440,7 @@ tellings:
   - id: 0751-06-28-the-emptied-cities
     'on': '1350-09-02'
     title: Of the Emptied Cities
+    book: book-of-pestilence
     verse: '57:23'
     who:
       - yusuf-i
@@ -505,6 +507,7 @@ tellings:
   - id: 0751-10-07-the-islands
     'on': '1350-12-08'
     title: Of the Islands, and the Eyes Turned to the Strait
+    book: book-of-balance
     verse: '45:12'
     where:
       - gharnata
@@ -543,6 +546,7 @@ tellings:
   - id: 0751-11-20-the-prodigy-and-the-daughter-of-cairo
     'on': '1351-01-19'
     title: Of the Prodigy, and the Daughter of al-Qāhira
+    book: book-of-balance
     verse: 2:269
     who:
       - saad-ibn-yusuf
@@ -593,6 +597,7 @@ tellings:
   - id: 0752-04-07-the-silver-of-qusantina
     'on': '1351-06-03'
     title: Of the Silver of Qusanṭīna, and the Surrender of the Marīnids
+    book: book-of-balance
     verse: '12:21'
     who:
       - yusuf-i

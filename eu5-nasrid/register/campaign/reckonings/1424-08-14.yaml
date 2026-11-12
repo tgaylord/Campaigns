@@ -142,6 +142,7 @@ tellings:
   - id: 0827-09-18-of-the-three-brides-and-the-peace-of-kayseri
     'on': '1424-08-14'
     title: Of the Three Brides, and the Peace of Kayseri
+    book: book-of-the-marches
     verse: '49:9'
     who:
       - ismail-ibn-saad

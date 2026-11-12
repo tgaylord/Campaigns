@@ -164,6 +164,7 @@ tellings:
   - id: 0768-01-26-the-slow-return
     'on': '1366-10-02'
     title: Of the Slow Return, and the Day Qurṭuba Turned
+    book: book-of-the-call
     verse: 2:256
     who:
       - saad-ibn-yusuf

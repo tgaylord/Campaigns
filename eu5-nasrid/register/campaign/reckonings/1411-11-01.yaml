@@ -124,7 +124,11 @@ beats:
       why: >-
         the privileges need peace with Aragon; now that Catalonia and Aragon are subjects, war with them is
         impossible (Trent)
-  - id: 1410-09-16-battle-cape-mondego
+  - at:
+      - 1367
+      - 1411
+    won: false
+    id: 1410-09-16-battle-cape-mondego
     'on': '1410-09-16'
     kind: battle
     what: >-
@@ -154,7 +158,11 @@ beats:
       commanders:
         Castile: Pedro, an accomplished sailor (93/80/75)
         Tlemcen: Kuri
-  - id: 1410-10-09-battle-penafiel
+  - at:
+      - 1597
+      - 1351
+    won: false
+    id: 1410-10-09-battle-penafiel
     'on': '1410-10-09'
     kind: battle
     what: >-
@@ -182,7 +190,11 @@ beats:
       commanders:
         Qūnka: Eusebius
         Castile: Crisanto, a defensive planner (94/35/69)
-  - id: 1410-12-07-battle-segovia
+  - at:
+      - 1594
+      - 1397
+    won: true
+    id: 1410-12-07-battle-segovia
     'on': '1410-12-07'
     kind: battle
     what: >-
@@ -210,7 +222,11 @@ beats:
       commanders:
         Aragon: Ṭahmāsp, goal-oriented (58/58/59)
         Castile: Prince Fernando, heir of Castile
-  - id: 1410-12-11-battle-cuellar
+  - at:
+      - 1592
+      - 1369
+    won: false
+    id: 1410-12-11-battle-cuellar
     'on': '1410-12-11'
     kind: battle
     what: >-
@@ -238,7 +254,11 @@ beats:
       commanders:
         Castile: Crisanto
         Catalonia: Chandra, ruthless
-  - id: 1411-01-02-battle-mouth-douro
+  - at:
+      - 1364
+      - 1350
+    won: true
+    id: 1411-01-02-battle-mouth-douro
     'on': '1411-01-02'
     kind: battle
     what: >-
@@ -272,7 +292,11 @@ beats:
       note: >-
         the battle is counted a win for the allies; the allied losses include 23 transports, 2 of them
         captured
-  - id: 1411-01-13-battle-cuellar-ii
+  - at:
+      - 1592
+      - 1369
+    won: true
+    id: 1411-01-13-battle-cuellar-ii
     'on': '1411-01-13'
     kind: battle
     what: >-
@@ -328,7 +352,11 @@ beats:
           lightCavalry: 67
           heavyCavalry: 368
           supply: 50
-  - id: 1411-02-10-battle-coimbra
+  - at:
+      - 1414
+      - 1440
+    won: false
+    id: 1411-02-10-battle-coimbra
     'on': '1411-02-10'
     kind: battle
     what: At Coimbra 940 Marīnids attack the Portuguese army of 13,440 and are destroyed
@@ -354,7 +382,11 @@ beats:
       commanders:
         Morocco: ʿAbd al-Ḥaqq, a Marīnid prince
         Portugal: Ponce, an inspiring leader (67/55/89)
-  - id: 1411-03-07-battle-ledesma
+  - at:
+      - 1511
+      - 1390
+    won: true
+    id: 1411-03-07-battle-ledesma
     'on': '1411-03-07'
     kind: battle
     what: >-
@@ -383,7 +415,11 @@ beats:
       commanders:
         al-Andalus: the Emperor Ismāʿīl
         Castile: Prince Fernando, heir of Castile
-  - id: 1411-03-10-battle-bay-setubal
+  - at:
+      - 1348
+      - 1550
+    won: true
+    id: 1411-03-10-battle-bay-setubal
     'on': '1411-03-10'
     kind: battle
     what: >-
@@ -414,7 +450,11 @@ beats:
         allies: Aḥmad, a Marīnid prince, a naval showman and battlefield medic (57/50/56)
         Castile: Pedro, an accomplished sailor (93/80/75)
       note: Trent's major sea battle off the shores of Lisbon
-  - id: 1411-05-15-battle-toro
+  - at:
+      - 1547
+      - 1363
+    won: true
+    id: 1411-05-15-battle-toro
     'on': '1411-05-15'
     kind: battle
     what: >-
@@ -465,7 +505,11 @@ beats:
           archers: 4734
           lightCavalry: 93
           heavyCavalry: 296
-  - id: 1411-05-30-battle-cape-mondego-ii
+  - at:
+      - 1367
+      - 1411
+    won: false
+    id: 1411-05-30-battle-cape-mondego-ii
     'on': '1411-05-30'
     kind: battle
     what: >-
@@ -495,7 +539,11 @@ beats:
       commanders:
         Catalonia: Berenguer Ramon de Montsoriu
         Portugal: Afonso
-  - id: 1411-06-13-battle-coimbra-ii
+  - at:
+      - 1414
+      - 1440
+    won: true
+    id: 1411-06-13-battle-coimbra-ii
     'on': '1411-06-13'
     kind: battle
     what: >-
@@ -523,7 +571,11 @@ beats:
       commanders:
         Morocco: Ṭālib, an Andalusī, born to the saddle
         Portugal: Ponce, an inspiring leader
-  - id: 1411-06-21-battle-mouth-douro-ii
+  - at:
+      - 1364
+      - 1350
+    won: true
+    id: 1411-06-21-battle-mouth-douro-ii
     'on': '1411-06-21'
     kind: battle
     what: >-
@@ -561,7 +613,11 @@ beats:
           Otto, the Valencian admiral, an aggressive commander (76/62/43), whom the save lists as commander of
           the allied side
         Portugal: Afonso, level-headed (66/89/53)
-  - id: 1411-08-03-battle-moncorvo
+  - at:
+      - 1470
+      - 1375
+    won: false
+    id: 1411-08-03-battle-moncorvo
     'on': '1411-08-03'
     kind: battle
     what: >-
@@ -589,7 +645,11 @@ beats:
       commanders:
         Morocco: Fāris, son of Abū al-Faḍl of Fās, a hardy warrior
         Castile: Crisanto
-  - id: 1411-08-28-battle-besteiros
+  - at:
+      - 1421
+      - 1420
+    won: true
+    id: 1411-08-28-battle-besteiros
     'on': '1411-08-28'
     kind: battle
     what: >-
@@ -665,7 +725,11 @@ beats:
       army: the Emperor in person
       fleet: the crown prince Muḥammad, blockading
       warAim: no separate peace for concessions; the end of Portugal as a kingdom (Trent)
-  - id: 1411-09-11-battle-cape-sao-vicente
+  - at:
+      - 1375
+      - 1658
+    won: true
+    id: 1411-09-11-battle-cape-sao-vicente
     'on': '1411-09-11'
     kind: battle
     what: >-
@@ -695,7 +759,8 @@ beats:
       commanders:
         Morocco: Khālid
         Castile: Pedro
-  - id: 1411-10-07-porto-falls
+  - won: true
+    id: 1411-10-07-porto-falls
     'on': '1411-10-07'
     kind: battle
     what: >-
@@ -715,7 +780,11 @@ beats:
       location: Porto, capital of Portugal
       how: the city was starving; a revolt of the populace opened the gates (Trent)
       blockade: the crown prince Muḥammad's fleet
-  - id: 1411-10-27-battle-guimaraes
+  - at:
+      - 1420
+      - 1367
+    won: true
+    id: 1411-10-27-battle-guimaraes
     'on': '1411-10-27'
     kind: battle
     what: >-
@@ -888,6 +957,7 @@ tellings:
   - id: 0814-07-14-of-cuellar-porto-and-the-end-of-portugal
     'on': '1411-11-01'
     title: Of the War of Jillīqiya, the Gates of Porto, and the Peace of Rajab
+    book: book-of-the-marches
     verse: 110:1-2
     who:
       - ismail-ibn-saad

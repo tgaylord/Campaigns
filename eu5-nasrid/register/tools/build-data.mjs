@@ -74,7 +74,21 @@ if (mapFile && fs.existsSync(path.join(ROOT, mapFile))) {
   map = { view: campaign.map.view, labels: campaign.map.labels ?? {}, realms };
 }
 
+/* the realm's outline at every reckoning (for the story's map), and the land behind it */
+const outlines = {};
+let land = "";
+if (campaign.map?.realms) {
+  for (const r of reckonings) {
+    const file = path.join(ROOT, campaign.map.realms.replace("{date}", r.date));
+    if (!fs.existsSync(file)) continue;
+    const all = JSON.parse(fs.readFileSync(file, "utf8"));
+    const join = (tags) => tags.map((t) => all[t]?.d ?? "").join("");
+    outlines[r.date] = { o: join(r.map?.ours ?? []), s: join(r.map?.subjects ?? []), a: join(r.map?.allies ?? []) };
+    if (r === last) land = Object.values(all).map((v) => v.d).join("");
+  }
+}
+
 if (notes.length) console.log(notes.slice(0, 8).map((n) => "note: " + n).join("\n") + (notes.length > 8 ? `\n… and ${notes.length - 8} more notes` : ""));
 if (errors.length) { console.error(errors.map((e) => "error: " + e).join("\n")); process.exit(1); }
-fs.writeFileSync(path.join(ROOT, "src", "data.json"), JSON.stringify({ campaign, threads, cast, places, reckonings, beats, tellings, map }));
+fs.writeFileSync(path.join(ROOT, "src", "data.json"), JSON.stringify({ campaign, threads, cast, places, reckonings, beats, tellings, map, outlines, land }));
 console.log(`register: ${reckonings.length} reckonings, ${beats.length} beats, ${tellings.length} tellings, ${Object.keys(cast).length} cast, ${threads.length} threads${map ? `, map of ${last.date} (${map.realms.length} realms)` : ""}`);

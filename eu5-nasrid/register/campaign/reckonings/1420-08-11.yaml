@@ -528,7 +528,11 @@ beats:
           - 168
           - 186
       lord: Melchior of Orihuela (born 1382), to Catalonia; his heir Frederick, born 1412
-  - id: 1420-08-10-battle-fermoselle
+  - at:
+      - 1513
+      - 1368
+    won: true
+    id: 1420-08-10-battle-fermoselle
     'on': '1420-08-10'
     kind: battle
     what: >-
@@ -651,6 +655,7 @@ tellings:
   - id: 0822-08-10-of-the-universities-the-letter-from-denia-and-the-road-to-balansiyya
     'on': '1419-09-01'
     title: Of the Universities, the Letter from Denia, and the Road to Balansiyya
+    book: book-of-the-call
     verse: '30:22'
     who:
       - ismail-ibn-saad
@@ -727,6 +732,7 @@ tellings:
   - id: 0823-07-21-of-daniel-the-green-cape-and-angra
     'on': '1420-08-01'
     title: Of Daniel, the Green Cape, and Angra
+    book: book-of-the-encircling-sea
     verse: 17:66
     who:
       - ismail-ibn-saad
@@ -773,6 +779,7 @@ tellings:
   - id: 0823-08-01-of-the-household-of-the-emperor-balansiyya-and-fermoselle
     'on': '1420-08-11'
     title: Of the Household of the Emperor, Balansiyya, and Fermoselle
+    book: book-of-the-marches
     verse: '67:1'
     who:
       - ismail-ibn-saad
@@ -885,6 +892,7 @@ tellings:
   - id: 0823-08-01-the-second-survey-of-the-kingdoms
     'on': '1420-08-11'
     title: The Second Survey of the Kingdoms, and the Three Empires of the East
+    book: book-of-the-marches
     verse: '30:9'
     who:
       - ismail-ibn-saad

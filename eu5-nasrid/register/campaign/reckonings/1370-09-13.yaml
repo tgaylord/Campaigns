@@ -78,7 +78,11 @@ map:
   allies:
     - MAM
 beats:
-  - id: 1369-11-21-battle-adra
+  - at:
+      - 1660
+      - 1650
+    won: true
+    id: 1369-11-21-battle-adra
     'on': '1369-11-21'
     kind: battle
     what: At Adra Khālid's 7,180 fall on the Marīnid landing force of 970 and destroy it, for 5 of ours
@@ -101,7 +105,11 @@ beats:
       theirsTotal: 970
       theirsLost: 970
       location: Adra
-  - id: 1369-12-16-battle-malaga
+  - at:
+      - 1581
+      - 1653
+    won: true
+    id: 1369-12-16-battle-malaga
     'on': '1369-12-16'
     kind: battle
     what: >-
@@ -130,7 +138,11 @@ beats:
       theirsLost: 753
       location: Málaga
       side: Granada defending
-  - id: 1370-03-08-battle-malaga
+  - at:
+      - 1581
+      - 1653
+    won: true
+    id: 1370-03-08-battle-malaga
     'on': '1370-03-08'
     kind: battle
     what: >-
@@ -156,7 +168,11 @@ beats:
       theirsLost: 2436
       location: Málaga
       side: Granada defending
-  - id: 1370-03-31-battle-jerez
+  - at:
+      - 1516
+      - 1657
+    won: false
+    id: 1370-03-31-battle-jerez
     'on': '1370-03-31'
     kind: battle
     what: >-
@@ -183,7 +199,11 @@ beats:
       theirsTotal: 3869
       theirsLost: 845
       location: Jerez
-  - id: 1370-04-06-battle-jerez
+  - at:
+      - 1516
+      - 1657
+    won: true
+    id: 1370-04-06-battle-jerez
     'on': '1370-04-06'
     kind: battle
     what: >-
@@ -209,7 +229,11 @@ beats:
       theirsTotal: 3015
       theirsLost: 1870
       location: Jerez
-  - id: 1370-05-31-battle-beja
+  - at:
+      - 1434
+      - 1575
+    won: true
+    id: 1370-05-31-battle-beja
     'on': '1370-05-31'
     kind: battle
     what: >-
@@ -248,7 +272,11 @@ beats:
       - save
       - told
     cite: Trent's account (by June 1370; no save yet; the battles will be filled in from the save at the peace)
-  - id: 1370-09-12-battle-malaga
+  - at:
+      - 1581
+      - 1653
+    won: true
+    id: 1370-09-12-battle-malaga
     'on': '1370-09-12'
     kind: battle
     what: >-
@@ -512,6 +540,7 @@ tellings:
   - id: 0772-02-20-the-reckoning-of-the-faithful
     'on': '1370-09-13'
     title: Of the Reckoning of the Faithful, in the Year the Strait Was Won
+    book: book-of-the-call
     verse: 16:125
     who:
       - saad-ibn-yusuf

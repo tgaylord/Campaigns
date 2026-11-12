@@ -217,6 +217,7 @@ tellings:
   - id: 0750-03-16-the-embassy-to-al-qahira
     'on': '1349-06-04'
     title: Of the Foundations on the Sabīka, and the Embassy to al-Qāhira
+    book: book-of-balance
     verse: '49:10'
     who:
       - yusuf-i

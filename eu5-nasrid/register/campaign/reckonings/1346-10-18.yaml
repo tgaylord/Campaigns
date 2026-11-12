@@ -243,6 +243,7 @@ tellings:
   - id: 0747-06-28-the-debt-paid
     'on': '1346-10-16'
     title: Of the Unquiet Years, the Debt Paid, and the End of the Mending
+    book: book-of-mending
     verse: 94:5-6
     who:
       - yusuf-i
@@ -322,6 +323,7 @@ tellings:
   - id: 0747-07-01-the-houses-of-healing
     'on': '1346-10-18'
     title: Of the Rumour out of the East, and the Houses of Healing
+    book: book-of-pestilence
     verse: '57:22'
     who:
       - yusuf-i
@@ -367,6 +369,7 @@ tellings:
   - id: 0747-07-01-the-summons-of-the-marinids
     'on': '1346-10-18'
     title: Of the Summons of the Marīnids, and the Volunteers' Return
+    book: book-of-balance
     verse: 55:7-8
     who:
       - yusuf-i

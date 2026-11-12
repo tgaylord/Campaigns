@@ -195,6 +195,7 @@ tellings:
   - id: 0832-02-22-of-the-english-crown-of-france
     'on': '1428-12-01'
     title: Of the English Crown of France
+    book: book-of-the-marches
     verse: 30:2-4
     who:
       - ismail-ibn-saad

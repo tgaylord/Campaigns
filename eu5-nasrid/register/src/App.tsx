@@ -1,41 +1,9 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
-import raw from "./data.json";
 import { md } from "./md";
-import { formatHijri, formatWestern, toHijri, HIJRI_MONTHS } from "./hijri";
-
-/* ------------------------------------------------------------------ the data */
-type Beat = { id: string; on: string; kind: string; what: string; minor?: boolean; who?: string[]; where?: string[]; threads?: string[]; from?: string[]; cite?: string; detail?: Record<string, unknown>; r: string };
-type Telling = { id: string; on: string; title: string; verse?: string; who?: string[]; covers?: string[]; text: string; behind?: string; r: string };
-type Person = { name: string; arabic?: string; sex?: string; house?: string; tier?: string; born?: string; died?: string; father?: string; mother?: string; reigns?: { from: string; to: string | null }[]; roles?: string[]; traits?: string[]; drives?: { from: string; text: string; by: string; source?: string }[]; ties?: { with: string; kind: string; from: string; to?: string; text: string }[]; note?: string };
-type Thread = { id: string; kind: "story" | "war"; title: string; state: string; from?: string; to?: string; premise?: string; outcome?: string; part?: string; sides?: Record<string, string[]>; note?: string; game?: string };
-type Reckoning = { date: string; title: string; summary?: string; realm: Record<string, number>; court?: { ruler?: string; heir?: string; regent?: string; council?: { who: string; seat: string }[] }; standing?: { wars?: string[]; allies?: string[]; subjects?: string[]; estates?: { name: string; power?: number; mood?: number }[] }; questions?: string[] };
-type Data = {
-  campaign: { title: string; arabic?: string; subtitle: string; game: string; player: string; start: string; measures: { key: string; label: string; format?: string }[]; kinds: Record<string, { label: string; tone: string }>; tones: Record<string, string>; from: Record<string, string>; eras: { id: string; title: string; from: string; to?: string; summary?: string }[] };
-  threads: Thread[]; cast: Record<string, Person>; places: Record<string, { name: string; plain?: string }>; reckonings: Reckoning[]; beats: Beat[]; tellings: Telling[];
-  map: { view: number[]; labels: Record<string, string>; realms: { t: string; d: string; c: number[]; role: string }[] } | null;
-};
-const D = raw as unknown as Data;
-const { campaign, cast, threads, reckonings, beats, tellings } = D;
-const threadById = new Map(threads.map((t) => [t.id, t]));
-const beatById = new Map(beats.map((b) => [b.id, b]));
-const now = reckonings.at(-1)!;
-const before = reckonings.at(-2);
-const Y0 = +campaign.start.slice(0, 4), Y1 = +now.date.slice(0, 4);
-
-/* ------------------------------------------------------------------ small helpers */
-const nf = new Intl.NumberFormat("en-GB");
-const cf = new Intl.NumberFormat("en-GB", { notation: "compact", maximumFractionDigits: 2 });
-const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-const dayMonth = (d: string) => `${+d.slice(8, 10)} ${MON[+d.slice(5, 7) - 1]}`;
-const hijriSpan = (y: number) => { const a = toHijri(`${y}-01-01`).y, b = toHijri(`${y}-12-31`).y; return a === b ? `${a}` : `${a}–${String(b).slice(-2)}`; };
-const short = (id: string) => { const n = cast[id]?.name ?? id; return n.split(/ (?:ibn|bint) /).slice(0, 2).join(n.includes(" bint ") ? " bint " : " ibn "); };
-const first = (id: string) => (cast[id]?.name ?? id).split(/ (?:ibn|bint|of|de) /)[0];
-const age = (p: Person, at: string) => (p.born ? Math.floor((Date.parse(p.died && p.died < at ? p.died : at) - Date.parse(p.born)) / 31557600000) : null);
-const rulerAt = (d: string) => Object.entries(cast).find(([, p]) => p.reigns?.some((r) => r.from <= d && (!r.to || r.to > d)));
-const ordinal = (n: number) => `${n}${n % 100 >= 11 && n % 100 <= 13 ? "th" : ["th", "st", "nd", "rd"][n % 10] ?? "th"}`;
-const fmt = (m: { format?: string }, v: number) => (m.format === "compact" ? cf.format(v) : nf.format(Math.round(v * 10) / 10));
-const tone = (kind: string) => campaign.kinds[kind]?.tone ?? "abroad";
-const Who = ({ id, full }: { id: string; full?: boolean }) => <a href={`#who-${id}`}>{full ? cast[id]?.name ?? id : short(id)}</a>;
+import { formatHijri, formatWestern, HIJRI_MONTHS } from "./hijri";
+import { D, campaign, cast, threads, reckonings, beats, tellings, threadById, beatById, now, before, Y0, Y1, nf, cf, MON, dayMonth, hijriSpan, short, first, age, rulerAt, ordinal, fmt, tone, Who, type Beat, type Telling, type Person, type Thread, type Reckoning, type Data } from "./core";
+import { Story, BattleMap, LifeLines, Weave, Seal } from "./story";
+import { Frieze, FriezeKey, frac } from "./frieze";
 
 /* ------------------------------------------------------------------ routing: one plain word after the # */
 type Route = { view: string; arg?: string };
@@ -43,7 +11,7 @@ const parse = (h: string): Route => {
   const s = h.replace(/^#/, "");
   const m = s.match(/^(line|thread|who|telling)-(.+)$/);
   if (m) return { view: m[1], arg: m[2] };
-  return { view: ["line", "threads", "people", "about"].includes(s) ? s : "now" };
+  return { view: ["now", "line", "threads", "people", "about"].includes(s) ? s : "story" };
 };
 function useRoute(): Route {
   const [r, setR] = useState(() => parse(location.hash));
@@ -54,64 +22,6 @@ function useRoute(): Route {
   }, [r.view, r.arg]);
   return r;
 }
-
-/* ------------------------------------------------------------------ the frieze: every year of the campaign as one tile */
-const yearCount = new Map<number, number>();
-for (const b of beats) if (!b.minor) yearCount.set(+b.on.slice(0, 4), (yearCount.get(+b.on.slice(0, 4)) ?? 0) + 1);
-const maxCount = Math.max(...yearCount.values());
-const yearsWithTelling = new Set(tellings.map((t) => +t.on.slice(0, 4)));
-const frac = (d: string) => +d.slice(0, 4) + (+d.slice(5, 7) - 1) / 12 + (+d.slice(8, 10) - 1) / 365;
-const ourWars = threads.filter((t) => t.kind === "war" && !t.part && (t.to ?? now.date) >= campaign.start);
-const lanes: Thread[][] = [];
-for (const w of ourWars) { const lane = lanes.find((l) => frac(l.at(-1)!.to ?? now.date) + 0.6 < frac(w.from!)); if (lane) lane.push(w); else lanes.push([w]); }
-const reigns = Object.entries(cast).flatMap(([id, p]) => (p.reigns ?? []).map((r) => ({ id, ...r }))).filter((r) => (r.to ?? "9999") > campaign.start).sort((a, b) => a.from.localeCompare(b.from));
-
-function Frieze({ at }: { at?: number }) {
-  const cell = 10, pad = 14, W = (Y1 - Y0 + 1) * cell + pad * 2;
-  const x = (y: number) => pad + (y - Y0) * cell;
-  const xf = (d: string) => pad + (Math.max(frac(d), Y0) - Y0) * cell;
-  const laneY = (i: number) => 58 + i * 7;
-  const H = laneY(lanes.length) + 18;
-  const box = useRef<HTMLDivElement>(null);
-  // on a narrow screen the band scrolls sideways: open it at the year in question, or at the present
-  useEffect(() => { const el = box.current; if (el && el.scrollWidth > el.clientWidth) el.scrollLeft = ((x(at ?? Y1) + cell / 2) / W) * el.scrollWidth - el.clientWidth / 2; }, [at]);
-  return (
-    <div className="frieze" ref={box} role="navigation" aria-label="The years of the campaign">
-      <svg viewBox={`0 0 ${W} ${H}`}>
-        {reigns.map((r) => {
-          const a = xf(r.from), b = r.to ? xf(r.to) : x(Y1) + cell;
-          return (
-            <g key={r.id + r.from}>
-              <line className="fz-reign" x1={a + 1} x2={b - 2} y1={22} y2={22} />
-              <line className="fz-reign" x1={a + 1} x2={a + 1} y1={18} y2={26} />
-              <a href={`#who-${r.id}`}><text className="fz-name" x={a + 5} y={13}>{first(r.id)}</text></a>
-            </g>
-          );
-        })}
-        {Array.from({ length: Y1 - Y0 + 1 }, (_, i) => Y0 + i).map((y) => {
-          const n = yearCount.get(y) ?? 0, cx = x(y) + cell / 2, s = n ? 2.4 + 2.4 * Math.sqrt(n / maxCount) : 1.2;
-          return (
-            <a key={y} href={`#line-${y}`} aria-label={`${y}: ${n} entries`}>
-              <title>{`${y} (${hijriSpan(y)} AH): ${n} ${n === 1 ? "entry" : "entries"}${yearsWithTelling.has(y) ? ", with a telling" : ""}`}</title>
-              <rect className="fz-hit" x={x(y)} y={28} width={cell} height={24} />
-              <rect className={`fz-tile${n ? "" : " empty"}${at === y ? " at" : ""}`} x={cx - s} y={40 - s} width={s * 2} height={s * 2} transform={`rotate(45 ${cx} 40)`} style={n ? { fillOpacity: 0.35 + 0.65 * Math.sqrt(n / maxCount) } : undefined} />
-            </a>
-          );
-        })}
-        {lanes.map((l, i) => l.map((w) => (
-          <a key={w.id} href={`#thread-${w.id}`}>
-            <title>{`${w.title}, ${w.from!.slice(0, 4)}–${w.to ? w.to.slice(0, 4) : "still fought"}`}</title>
-            <rect className={`fz-war${w.to ? "" : " open"}`} x={xf(w.from!)} y={laneY(i)} width={Math.max(3, xf(w.to ?? now.date) - xf(w.from!))} height={4} rx={2} />
-          </a>
-        )))}
-        {Array.from({ length: Y1 - Y0 + 1 }, (_, i) => Y0 + i).filter((y) => y % 10 === 0).map((y) => (
-          <g key={y}><line className="fz-tick" x1={x(y) + cell / 2} x2={x(y) + cell / 2} y1={H - 16} y2={H - 12} /><text className="fz-year" x={x(y) + cell / 2} y={H - 2} textAnchor="middle">{y}</text></g>
-        ))}
-      </svg>
-    </div>
-  );
-}
-const FriezeKey = () => <p className="key">Each tile is a year, larger and darker the more was recorded. The line above is the reign; the bars below are the wars al-Andalus fought. Choose a year to read it.</p>;
 
 /* ------------------------------------------------------------------ where a beat comes from */
 const FromMarks = ({ from }: { from?: string[] }) => (
@@ -365,6 +275,7 @@ function Threads() {
   return (
     <>
       <header className="page-head"><h1>Threads</h1><p className="sub">Every entry belongs to the line of years. Some also belong to a story that runs across them. Follow one on its own.</p></header>
+      <Weave />
       <section>
         <h2>Stories</h2>
         <ul className="threads two">
@@ -408,6 +319,7 @@ function ThreadPage({ id }: { id: string }) {
         {t.sides && <dl className="sides">{Object.entries(t.sides).map(([k, v]) => <div key={k}><dt>{k}</dt><dd>{v.join(", ")}</dd></div>)}</dl>}
         {who.size > 0 && <p className="sub"><span className="lab">In it</span>{[...who.entries()].sort((a, b) => b[1] - a[1]).slice(0, 8).map(([w], i) => <span key={w}>{i ? ", " : ""}<Who id={w} /></span>)}</p>}
       </header>
+      {t.kind === "war" && <BattleMap bs={bs} from={t.from} />}
       <Line items={bs} tales={ts} startOpen={bs.filter((b) => !b.minor).length < 8} />
     </>
   );
@@ -418,7 +330,7 @@ const lifespan = (p: Person) => `${p.born ? p.born.slice(0, 4) : "?"}–${p.died
 function People() {
   const by = (tier?: string) => Object.entries(cast).filter(([, p]) => p.tier === tier).sort((a, b) => (a[1].born ?? "").localeCompare(b[1].born ?? ""));
   const Card = ({ id, p }: { id: string; p: Person }) => (
-    <li><a className="th-title" href={`#who-${id}`}>{p.name}</a>{p.arabic && <bdi className="ar" lang="ar" dir="rtl">{p.arabic}</bdi>}<p className="th-n">{lifespan(p)}{p.died ? "" : `, aged ${age(p, now.date)}`}</p><p className="th-premise">{(p.drives?.at(-1)?.text ?? p.roles?.[0] ?? "")}</p></li>
+    <li className="pcard"><Seal id={id} size={64} /><a className="th-title" href={`#who-${id}`}>{p.name}</a><p className="th-n">{lifespan(p)}{p.died ? "" : `, aged ${age(p, now.date)}`}</p><p className="th-premise">{(p.drives?.at(-1)?.text ?? p.roles?.[0] ?? "")}</p></li>
   );
   return (
     <>
@@ -450,10 +362,11 @@ function PersonPage({ id }: { id: string }) {
           {(p.reigns ?? []).map((r) => <div key={r.from}><dt>Reigned</dt><dd>{formatWestern(r.from)} to {r.to ? formatWestern(r.to) : alive ? "the present" : ""}</dd></div>)}
         </dl>
       </header>
+      <LifeLines id={id} />
       {!!p.drives?.length && (
         <section>
           <h2>What drives {p.sex === "f" ? "her" : "him"}</h2>
-          <ol className="drives">{p.drives.map((d) => <li key={d.from + d.text}><span className="b-date">{d.from.slice(0, 4)}</span><span>{d.text} <span className="th-n">{d.by === "trent" ? "The player's reading." : "The telling's reading."}</span></span></li>)}</ol>
+          <ol className="drives">{p.drives.map((d, n) => <li key={d.from + d.text}><span className="b-date"><b className="pin">{n + 1}</b>{d.from.slice(0, 4)}</span><span>{d.text} <span className="th-n">{d.by === "trent" ? "The player's reading." : "The telling's reading."}</span></span></li>)}</ol>
         </section>
       )}
       {ties.length > 0 && (
@@ -494,21 +407,22 @@ const Missing = () => <div className="page-head"><h1>Nothing is recorded here</h
 /* ------------------------------------------------------------------ the frame */
 export function App() {
   const r = useRoute();
-  const tab = r.view === "thread" ? "threads" : r.view === "who" ? "people" : r.view === "telling" ? "line" : r.view;
+  const tab = r.view === "thread" ? "threads" : r.view === "who" ? "people" : r.view === "telling" ? "story" : r.view;
   const link = (v: string, label: ReactNode) => <a href={`#${v}`} aria-current={tab === v ? "page" : undefined}>{label}</a>;
   return (
     <>
       <header className="top">
         <div className="wrap">
-          <a className="mark" href="#now"><span>{campaign.title}</span>{campaign.arabic && <bdi className="ar" lang="ar" dir="rtl">{campaign.arabic}</bdi>}</a>
-          <nav aria-label="Sections">{link("now", "Now")}{link("line", "The line")}{link("threads", "Threads")}{link("people", "People")}{link("about", "About")}</nav>
+          <a className="mark" href="#story"><span>{campaign.title}</span>{campaign.arabic && <bdi className="ar" lang="ar" dir="rtl">{campaign.arabic}</bdi>}</a>
+          <nav aria-label="Sections">{link("story", "The story")}{link("now", "Now")}{link("line", "The record")}{link("threads", "Threads")}{link("people", "People")}</nav>
         </div>
       </header>
       <main className="wrap">
+        {r.view === "story" && <Story />}
         {r.view === "now" && <Now />}
         {r.view === "line" && (
           <>
-            <header className="page-head"><h1>The line of years</h1><p className="sub">{campaign.subtitle}. {beats.length} entries and {tellings.length} tellings, {Y0} to {Y1}.</p></header>
+            <header className="page-head"><h1>The record, year by year</h1><p className="sub">{campaign.subtitle}. {beats.length} entries and {tellings.length} tellings, {Y0} to {Y1}.</p></header>
             <div className="sticky"><Frieze at={r.arg ? +r.arg : undefined} /></div>
             <Line items={beats} tales={tellings} filters />
           </>
@@ -520,7 +434,7 @@ export function App() {
         {r.view === "telling" && <TellingPage id={r.arg!} key={r.arg} />}
         {r.view === "about" && <About />}
       </main>
-      <footer className="foot wrap"><p>The Register, a prototype. Reckoned to {formatWestern(now.date)}.</p></footer>
+      <footer className="foot wrap"><p>The Register, a prototype. Reckoned to {formatWestern(now.date)}. <a href="#about">How it is kept</a></p></footer>
     </>
   );
 }

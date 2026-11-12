@@ -77,7 +77,11 @@ map:
   allies:
     - MAM
 beats:
-  - id: 1360-08-13-battle-strait
+  - at:
+      - 1570
+      - 1699
+    won: true
+    id: 1360-08-13-battle-strait
     'on': '1360-08-13'
     kind: battle
     what: A Castilian squadron beats off a Marīnid one in the Strait
@@ -97,7 +101,11 @@ beats:
         Morocco: 4000
       theirsLost: 1000
       location: the Strait
-  - id: 1360-09-01-battle-strait
+  - at:
+      - 1570
+      - 1699
+    won: false
+    id: 1360-09-01-battle-strait
     'on': '1360-09-01'
     kind: battle
     what: The Marīnid fleet, 17,000 strong, worsts the Castilians in the Strait
@@ -117,7 +125,11 @@ beats:
         Morocco: 17000
       theirsLost: 0
       location: the Strait
-  - id: 1360-09-13-battle-costa-sol
+  - at:
+      - 1627
+      - 1675
+    won: false
+    id: 1360-09-13-battle-costa-sol
     'on': '1360-09-13'
     kind: battle
     what: Off the coast of Mālaqa the great Marīnid fleet of 61,000 destroys a Portuguese squadron
@@ -137,7 +149,11 @@ beats:
         Morocco: 61000
       theirsLost: 1000
       location: the Costa del Sol
-  - id: 1360-10-28-battle-bay-cadiz
+  - at:
+      - 1511
+      - 1670
+    won: false
+    id: 1360-10-28-battle-bay-cadiz
     'on': '1360-10-28'
     kind: battle
     what: Tilimsān's fleet sinks a Castilian squadron in the bay of Qādis
@@ -157,7 +173,11 @@ beats:
         Tlemcen: 48000
       theirsLost: 1000
       location: the bay of Qādis
-  - id: 1360-11-07-battle-almeria
+  - at:
+      - 1685
+      - 1646
+    won: true
+    id: 1360-11-07-battle-almeria
     'on': '1360-11-07'
     kind: battle
     what: >-
@@ -246,7 +266,11 @@ beats:
         Walba / Huelva (CAS): 2
         al-Mariyya (GRA): 1, defeated
       armySize: 2000
-  - id: 1361-02-16-battle-almonaster
+  - at:
+      - 1484
+      - 1597
+    won: false
+    id: 1361-02-16-battle-almonaster
     'on': '1361-02-16'
     kind: battle
     what: A Portuguese column is cut up by the Marīnids at Almonaster in the hills of Walba
@@ -266,7 +290,11 @@ beats:
         Morocco: 2617
       theirsLost: 8
       location: Almonaster la Real
-  - id: 1361-03-09-battle-bay-cadiz
+  - at:
+      - 1511
+      - 1670
+    won: false
+    id: 1361-03-09-battle-bay-cadiz
     'on': '1361-03-09'
     kind: battle
     what: Another Castilian squadron lost to Tilimsān in the bay of Qādis
@@ -286,7 +314,11 @@ beats:
         Tlemcen: 44000
       theirsLost: 1000
       location: the bay of Qādis
-  - id: 1361-03-23-battle-jerez
+  - at:
+      - 1516
+      - 1657
+    won: true
+    id: 1361-03-23-battle-jerez
     'on': '1361-03-23'
     kind: battle
     what: 'Victory at Sharīsh: a Marīnid army of 2,200 attacks 9,700 Granadans and loses 1,500 men to our 560'
@@ -307,7 +339,11 @@ beats:
         Morocco: 2218
       theirsLost: 1543
       location: Sharīsh
-  - id: 1361-10-21-battle-herrera
+  - at:
+      - 1562
+      - 1502
+    won: true
+    id: 1361-10-21-battle-herrera
     'on': '1361-10-21'
     kind: battle
     what: >-
@@ -329,7 +365,11 @@ beats:
         Morocco: 5617
       theirsLost: 2580
       location: Herrera
-  - id: 1361-12-10-battle-escurial
+  - at:
+      - 1602
+      - 1424
+    won: false
+    id: 1361-12-10-battle-escurial
     'on': '1361-12-10'
     kind: battle
     what: >-
@@ -351,7 +391,11 @@ beats:
         Morocco: 4777
       theirsLost: 323
       location: El Escorial
-  - id: 1361-12-13-battle-sevilla
+  - at:
+      - 1525
+      - 1627
+    won: true
+    id: 1361-12-13-battle-sevilla
     'on': '1361-12-13'
     kind: battle
     what: 'Victory before Ishbīliya: 2,200 Marīnids attack 9,300 Granadans and lose 1,300 to our 1,100'
@@ -374,7 +418,11 @@ beats:
         Morocco: 2179
       theirsLost: 1331
       location: Ishbīliya
-  - id: 1362-03-11-battle-bay-cadiz
+  - at:
+      - 1511
+      - 1670
+    won: true
+    id: 1362-03-11-battle-bay-cadiz
     'on': '1362-03-11'
     kind: battle
     what: At last a Castilian squadron sinks a Tilimsānī one in the bay of Qādis
@@ -394,7 +442,11 @@ beats:
         Tlemcen: 2000
       theirsLost: 2000
       location: the bay of Qādis
-  - id: 1362-04-08-battle-sevilla
+  - at:
+      - 1525
+      - 1627
+    won: true
+    id: 1362-04-08-battle-sevilla
     'on': '1362-04-08'
     kind: battle
     what: 'Victory before Ishbīliya again: 2,300 Marīnids throw themselves at 17,000 Granadans and lose 1,750'
@@ -417,7 +469,11 @@ beats:
         Morocco: 2328
       theirsLost: 1757
       location: Ishbīliya
-  - id: 1362-05-09-battle-caceres
+  - at:
+      - 1497
+      - 1492
+    won: false
+    id: 1362-05-09-battle-caceres
     'on': '1362-05-09'
     kind: battle
     what: The Marīnids rout a Castilian army at Cáceres in Extremadura, 1,500 Castilians lost for 80
@@ -626,6 +682,7 @@ tellings:
   - id: 0763-10-07-the-marinid-demand
     'on': '1362-07-30'
     title: Of the Marīnid Demand, and the Peace Bought with a Warning
+    book: book-of-balance
     verse: '47:35'
     who:
       - yusuf-i

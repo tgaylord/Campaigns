@@ -190,7 +190,11 @@ beats:
         population: 3.416 million
         legitimacy: 100
         prestige: 88
-  - id: 1447-08-06-battle-ozieri
+  - at:
+      - 2211
+      - 1410
+    won: false
+    id: 1447-08-06-battle-ozieri
     'on': '1447-08-06'
     kind: battle
     what: >-
@@ -253,7 +257,11 @@ beats:
       attackers: Bohemia, Poland, Brandenburg, Saxony, Moldavia and some thirty smaller princes
       defenders: Hungary, Naples, Croatia, Albania, Achaea and others
       occupied: 94 Hungarian locations by Bohemia, 14 by Poland, 1 by Saxony (save of 2 August 1449)
-  - id: 1447-09-09-battle-corsica-west-coast
+  - at:
+      - 2157
+      - 1310
+    won: false
+    id: 1447-09-09-battle-corsica-west-coast
     'on': '1447-09-09'
     kind: battle
     what: >-
@@ -283,7 +291,11 @@ beats:
       commanders:
         ours: Abū al-Ḥasan ʿAlī, king of the Ṭāʾifa of al-Burtughāl
         theirs: Demetrius#16842749
-  - id: 1447-09-11-battle-gulf-termini
+  - at:
+      - 2425
+      - 1550
+    won: false
+    id: 1447-09-11-battle-gulf-termini
     'on': '1447-09-11'
     kind: battle
     what: >-
@@ -316,7 +328,11 @@ beats:
       commanders:
         ours: ʿAbd al-Wāḥid#93093
         theirs: Raymond#16822192
-  - id: 1447-10-05-battle-grasse
+  - at:
+      - 2105
+      - 1218
+    won: false
+    id: 1447-10-05-battle-grasse
     'on': '1447-10-05'
     kind: battle
     what: >-
@@ -403,6 +419,7 @@ tellings:
   - id: 0851-05-18-of-the-envoys-of-europe-and-the-borders-of-the-umayyads
     'on': '1447-08-01'
     title: Of the Envoys of Europe and the Borders of the Umayyads
+    book: book-of-the-franks
     verse: 16:91
     who:
       - muhammad-ibn-ismail-ibn-saad
@@ -475,6 +492,7 @@ tellings:
   - id: 0851-07-24-of-the-lady-isabel-and-the-bridges-of-the-west
     'on': '1447-10-05'
     title: Of the Lady Isabel and the Bridges of the West
+    book: book-of-the-franks
     verse: '31:14'
     who:
       - isabel-de-montsoriu

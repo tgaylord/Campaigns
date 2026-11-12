@@ -83,7 +83,8 @@ beats:
       event: The Shadhili Order Arrives
       choice: Welcome them to our Court.
       effect: unlocks Patronization of the Shadhili Order in the Battle for the Strait; mysticism +33
-  - id: 1339-11-08-battle-uryula
+  - won: true
+    id: 1339-11-08-battle-uryula
     'on': '1339-11-08'
     kind: battle
     what: 'The Day of Uryūla: Ibn al-Khaṭīb routs the Aragonese'
@@ -166,7 +167,8 @@ beats:
         crownPower: -65.81%
         monthlyRighteousness: -0.02
         monthlyDoom: 0.13
-  - id: 1340-04-16-battle-jerez
+  - won: true
+    id: 1340-04-16-battle-jerez
     'on': '1340-04-16'
     kind: battle
     what: Morocco holds at Jerez
@@ -183,7 +185,8 @@ beats:
       ourLosses: 1252
       theirLosses: 1807
       side: Morocco (Granada not engaged)
-  - id: 1340-04-17-battle-ishbiliyya
+  - won: true
+    id: 1340-04-17-battle-ishbiliyya
     'on': '1340-04-17'
     kind: battle
     what: Tlemcen wins before Ishbīliya
@@ -202,7 +205,8 @@ beats:
       ourLosses: 45
       theirLosses: 735
       side: Tlemcen (Granada not engaged)
-  - id: 1340-04-30-battle-ishbiliyya
+  - won: false
+    id: 1340-04-30-battle-ishbiliyya
     'on': '1340-04-30'
     kind: battle
     what: Castile scatters the men of Gabès at Ishbīliya
@@ -221,7 +225,8 @@ beats:
       ourLosses: 205
       theirLosses: 11
       side: Gabès (Granada not engaged)
-  - id: 1340-05-26-battle-mursiyya
+  - won: false
+    id: 1340-05-26-battle-mursiyya
     'on': '1340-05-26'
     kind: battle
     what: Castile destroys the Tlemceni garrison of Mursiyya
@@ -269,7 +274,8 @@ beats:
     from:
       - told
     cite: Trent's account
-  - id: 1340-05-30-uryula-falls
+  - won: true
+    id: 1340-05-30-uryula-falls
     'on': '1340-05-30'
     kind: battle
     what: Uryūla falls to Ibn al-Khaṭīb after a siege of nearly seven months
@@ -290,6 +296,7 @@ tellings:
   - id: 0740-05-05-the-day-of-uryula
     'on': '1339-11-08'
     title: Of the Day of Uryūla
+    book: book-of-mending
     verse: 3:126
     who:
       - ibn-al-khatib

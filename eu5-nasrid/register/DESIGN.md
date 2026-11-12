@@ -62,6 +62,23 @@ open threads, the line of years, is worked out from the entries. Nothing is writ
 every year of the campaign, larger and darker the more was recorded, the reigns above and the wars below.
 It is the timeline, the navigation, and the only decoration. Everything else is plain rows on white.
 
+## Second pass: showing the story
+
+The first version was clean but still mostly rows. The second leads with pictures and keeps the rows
+underneath as the record.
+
+- **The story** is now the front page. A map of the western Mediterranean shows the realm at any of the 85
+  reckonings; the frieze is its scrubber and "Play" runs the whole campaign, 1337 to the present. Beside it:
+  the year, the reckoning's headline, the ruler, and whether the realm is at war.
+- **Eight books as chapters.** Each has its summary, a map of the realm at its end with the outline of where
+  it began, one sentence of growth, the people who drove it as seals (an eight-pointed star holding the
+  name), and its tellings as a strip of scenes.
+- **A war on its ground.** A war's page opens with its battles on the map, numbered in order, won or lost.
+- **Lives side by side.** A person's page opens with their life as a line beside their parents, children,
+  allies and rivals, with reigns marked and the turns in their story pinned to the year.
+- **The weave.** The threads page shows every story thread across the years, entries as strokes and
+  tellings as tiles.
+
 ## What it does not carry over (yet)
 
 - The Atlas and its lenses. The Register has one small map on the front page. The maps are the best part of

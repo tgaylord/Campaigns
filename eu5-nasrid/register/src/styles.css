@@ -228,3 +228,110 @@ dl { margin: 0; }
 @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: auto; } }
 
 body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--ground); }
+
+/* ---------------------------------------------------------------- the story */
+.land { display: block; width: 100%; height: auto; background: var(--sunk); }
+.l-land { fill: color-mix(in srgb, var(--ink) 11%, var(--surface)); stroke: var(--sunk); stroke-width: 1.5; }
+.l-ours { fill: var(--cobalt); stroke: var(--sunk); stroke-width: 1.5; }
+.l-subject { fill: color-mix(in srgb, var(--cobalt) 45%, var(--surface)); stroke: var(--sunk); stroke-width: 1.5; }
+.l-ally { fill: color-mix(in srgb, var(--copper) 42%, var(--surface)); stroke: var(--sunk); stroke-width: 1.5; }
+.l-ghost { fill: none; stroke: var(--honey); stroke-width: 5; stroke-linejoin: round; }
+.sw.l-ours { background: var(--cobalt); } .sw.l-subject { background: color-mix(in srgb, var(--cobalt) 45%, var(--surface)); } .sw.l-ally { background: color-mix(in srgb, var(--copper) 42%, var(--surface)); }
+.hero { gap: 0.8rem; }
+.hero-map { display: grid; grid-template-columns: minmax(0, 1.75fr) minmax(0, 1fr); gap: 0 2.5rem; align-items: end; }
+.hero-map .land { border: 1px solid var(--rule); grid-row: 1 / span 2; aspect-ratio: 1.6; }
+.hero-cap { display: flex; flex-direction: column; gap: 0.55rem; padding-bottom: 0.4rem; min-width: 0; }
+.hc-year { font: 600 clamp(3.2rem, 2rem + 5vw, 5.6rem)/0.95 var(--serif); letter-spacing: -0.02em; font-variant-numeric: lining-nums tabular-nums; display: flex; flex-direction: column; gap: 0.5rem; }
+.hc-year span { font: 400 1rem/1 var(--sans); letter-spacing: 0; color: var(--ink-3); }
+.hero-cap h1 { font-size: clamp(1.5rem, 1.1rem + 1.4vw, 2.1rem); line-height: 1.15; min-height: 2.3em; }
+.hc-ruler { color: var(--ink-2); }
+.hc-count { color: var(--ink-2); min-height: 3em; }
+.map-key { grid-column: 2; display: flex; flex-wrap: wrap; gap: 0.2rem 1.2rem; color: var(--ink-3); font-size: 0.92rem; }
+.hero-ctl { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
+.hero-ctl button { font: 500 1rem var(--sans); padding: 0.4rem 0.9rem; min-height: 2.5rem; background: var(--surface); color: var(--ink); border: 1px solid var(--ink-3); border-radius: 3px; cursor: pointer; }
+.hero-ctl button:hover:not(:disabled) { border-color: var(--cobalt); color: var(--link); }
+.hero-ctl button:disabled { opacity: 0.45; cursor: default; }
+.hero-ctl .play { background: var(--cobalt); border-color: var(--cobalt); color: var(--surface); min-width: 9.5rem; }
+.hero-ctl .play:hover { color: var(--surface); filter: brightness(1.1); }
+.hint { color: var(--ink-3); font-size: 0.92rem; margin-left: 0.4rem; }
+.story-head { max-width: none; padding-top: 1.5rem; }
+h2.big { font-size: clamp(1.6rem, 1.2rem + 1.6vw, 2.3rem); }
+.toc { display: flex; flex-wrap: wrap; gap: 0.3rem 1.4rem; padding-top: 0.3rem; }
+.chapter { gap: 1.6rem; padding-top: 2.2rem; border-top: 2px solid var(--ink); scroll-margin-top: 1rem; }
+.chapter > header { display: flex; flex-direction: column; gap: 0.3rem; }
+.ch-n { color: var(--ink-3); }
+.chapter h2 { font-size: clamp(1.9rem, 1.3rem + 2.4vw, 3rem); line-height: 1.05; display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem 1.2rem; }
+.chapter h2 .ar { color: var(--cobalt); font-size: 0.62em; font-weight: 500; }
+.ch-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2.5rem; align-items: start; }
+.ch-text { display: flex; flex-direction: column; gap: 1rem; }
+.ch-sum { font: 400 1.22rem/1.55 var(--serif); }
+.ch-count { color: var(--ink-2); }
+.ch-count strong { color: var(--ink); font-size: 1.15em; }
+.ch-map { margin: 0; display: flex; flex-direction: column; gap: 0.4rem; }
+.ch-map .land { border: 1px solid var(--rule); aspect-ratio: 1.6; }
+.ch-map figcaption, .battlemap figcaption, .lives figcaption, .weave figcaption { color: var(--ink-3); font-size: 0.92rem; }
+.drivers { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr)); gap: 1.2rem 1.5rem; }
+.drivers li { display: flex; flex-direction: column; gap: 0.35rem; min-width: 0; }
+.drivers a { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; }
+.d-name { font: 600 1.05rem/1.2 var(--serif); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+.d-line { color: var(--ink-2); font-size: 0.97rem; line-height: 1.4; }
+.seal { flex: none; }
+.seal rect { fill: color-mix(in srgb, var(--copper) 16%, var(--surface)); stroke: var(--copper); stroke-width: 1.5; }
+.seal.nasrid rect { fill: color-mix(in srgb, var(--cobalt) 14%, var(--surface)); stroke: var(--cobalt); }
+.seal circle { fill: var(--surface); stroke: none; }
+.seal text { fill: var(--ink); font: 600 22px var(--serif); }
+.seal text.ar { font-family: var(--kufi); font-weight: 500; }
+.scenes { display: flex; gap: 0.8rem; overflow-x: auto; padding-bottom: 0.7rem; scroll-snap-type: x proximity; }
+.scene { flex: 0 0 15.5rem; scroll-snap-align: start; display: flex; flex-direction: column; gap: 0.3rem; padding: 0.9rem 1rem 1rem; background: var(--surface); border: 1px solid var(--rule); border-top: 3px solid var(--cobalt); color: var(--ink); text-decoration: none; }
+.scene:hover { border-color: var(--cobalt); }
+.sc-year { color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.sc-title { font: 600 1.08rem/1.25 var(--serif); color: var(--link); }
+.sc-lede { font: 400 0.98rem/1.45 var(--serif); color: var(--ink-2); display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+.pcard { grid-template-columns: auto minmax(0, 1fr) !important; align-items: center !important; }
+.pcard .seal { grid-row: 1 / span 2; }
+.pcard > p.th-premise { grid-column: 1 / -1; }
+.pcard > p.th-n { grid-column: 2; }
+
+/* a war on its ground */
+.battlemap, .lives, .weave { margin: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+.battlemap .land { border: 1px solid var(--rule); }
+.battlemap figcaption { display: flex; flex-wrap: wrap; gap: 0.2rem 1.2rem; }
+.bt circle { stroke: var(--surface); }
+.bt.won circle { fill: var(--copper); } .bt.lost circle { fill: var(--manganese); } .bt.even circle { fill: var(--ink-3); }
+.bt.minor circle { fill-opacity: 0.55; }
+.bt text { fill: var(--surface); font-family: var(--sans); font-weight: 700; pointer-events: none; }
+.bd { display: inline-block; width: 0.7rem; height: 0.7rem; border-radius: 50%; margin-right: 0.4rem; }
+.bd.won { background: var(--copper); } .bd.lost { background: var(--manganese); } .bd.even { background: var(--ink-3); }
+
+/* lives and the weave */
+.lives svg, .weave svg { display: block; width: 100%; min-width: 44rem; height: auto; }
+.lv-grid { stroke: var(--rule); stroke-width: 1; }
+.lv-year { font: 400 11px var(--sans); fill: var(--ink-3); font-variant-numeric: tabular-nums; }
+.lv-name { font: 500 13px var(--sans); fill: var(--link); }
+.lv-main .lv-name { font-weight: 700; fill: var(--ink); }
+.lv-rel { font: 400 10.5px var(--sans); fill: var(--ink-3); }
+.lv-life { stroke: var(--ink-3); stroke-width: 2; }
+.lv-main .lv-life { stroke: var(--ink); stroke-width: 3.5; }
+.lv-life.open { stroke-dasharray: none; }
+.lv-reign { stroke: var(--cobalt); stroke-width: 7; }
+.lv-main .lv-reign { stroke-width: 10; }
+.lv-end { fill: var(--ink-2); }
+.lv-main .lv-end { fill: var(--ink); }
+.lv-pin { fill: var(--honey); }
+.lv-stem { stroke: var(--honey); stroke-width: 1.5; }
+.lv-pinn { font: 700 10.5px var(--sans); fill: var(--surface); }
+.pin { display: inline-flex; align-items: center; justify-content: center; width: 1.25rem; height: 1.25rem; margin-right: 0.45rem; border-radius: 50%; background: var(--honey); color: var(--surface); font-size: 0.78rem; font-weight: 700; }
+.drives li { grid-template-columns: 6.4rem minmax(0, 1fr); }
+.wv-run { stroke: var(--rule); stroke-width: 2; }
+.wv-beat { stroke-width: 2; stroke: var(--cobalt); stroke-opacity: 0.75; }
+.wv-tale { fill: var(--surface); stroke-width: 1.6; stroke: var(--cobalt); }
+.wv-1 .wv-beat, .wv-1 .wv-tale { stroke: var(--copper); } .wv-2 .wv-beat, .wv-2 .wv-tale { stroke: var(--honey); } .wv-3 .wv-beat, .wv-3 .wv-tale { stroke: var(--manganese); }
+.weave a:hover .wv-tale { fill: var(--ink); }
+
+@media (max-width: 56rem) {
+  .hero-map, .ch-grid { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+  .hero-map .land { grid-row: auto; }
+  .map-key { grid-column: 1; }
+  .hero-cap h1, .hc-count { min-height: 0; }
+  .hc-year { flex-direction: row; align-items: baseline; gap: 0.8rem; }
+}

@@ -195,6 +195,7 @@ tellings:
   - id: 0770-03-11-the-marinids-on-the-northern-shore
     'on': '1368-10-24'
     title: Of the Marīnids on the Northern Shore, and the Second Demand of Fās
+    book: book-of-balance
     verse: '22:39'
     who:
       - saad-ibn-yusuf

@@ -179,6 +179,7 @@ tellings:
   - id: 0847-02-27-of-the-jamaa-of-847-and-the-island-of-fernando-po
     'on': '1443-06-26'
     title: Of the Jamāʿa of 847, and the Island of Fernando Po
+    book: book-of-the-golden-century
     verse: '30:46'
     who:
       - muhammad-ibn-ismail-ibn-saad

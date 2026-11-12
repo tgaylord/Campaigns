@@ -324,7 +324,6 @@ beats:
       - ismail-ibn-saad
     threads:
       - estates
-      - umayyad-claim
     from:
       - save
       - seen
@@ -369,6 +368,7 @@ tellings:
   - id: 0815-03-14-of-the-captains-of-811-and-the-pepper-of-the-indies
     'on': '1412-06-24'
     title: Of the Captains of 811, and the Pepper of the Indies
+    book: book-of-the-encircling-sea
     verse: '31:31'
     who:
       - ismail-ibn-saad
@@ -426,6 +426,7 @@ tellings:
   - id: 0816-01-29-of-the-madrasas-of-815
     'on': '1413-05-01'
     title: Of the Madrasas of 815, and the Children of the House
+    book: book-of-the-call
     verse: 20:114
     who:
       - ismail-ibn-saad
@@ -491,6 +492,7 @@ tellings:
   - id: 0817-08-09-of-the-jamaa-of-817-and-the-landlords-of-the-north
     'on': '1414-10-24'
     title: Of the Jamāʿa of 817, and the Landlords of the North
+    book: book-of-the-marches
     verse: 12:76
     who:
       - ismail-ibn-saad

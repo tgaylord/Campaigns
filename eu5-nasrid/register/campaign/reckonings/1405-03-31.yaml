@@ -93,7 +93,11 @@ map:
     - MAM
     - MOR
 beats:
-  - id: 1405-01-28-battle-buitrago
+  - at:
+      - 1632
+      - 1394
+    won: false
+    id: 1405-01-28-battle-buitrago
     'on': '1405-01-28'
     kind: battle
     what: >-
@@ -183,7 +187,11 @@ beats:
       atTheTime: >-
         the risings of 807 in full swing: Estremadura besieging al-Ushbūna, armies of 4,900 and 5,700 in the
         field; population 1,287,000 under direct rule
-  - id: 1405-03-18-battle-cuenca
+  - at:
+      - 1702
+      - 1447
+    won: true
+    id: 1405-03-18-battle-cuenca
     'on': '1405-03-18'
     kind: battle
     what: >-
@@ -248,6 +256,7 @@ tellings:
   - id: 0807-09-16-of-the-risings-of-807-and-the-death-of-the-emperor-saad
     'on': '1405-03-18'
     title: Of the Risings of 807, and the Death of the Emperor Saʿd
+    book: book-of-the-marches
     verse: 55:26-27
     who:
       - saad-ibn-yusuf

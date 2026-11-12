@@ -266,6 +266,7 @@ tellings:
   - id: 0848-10-20-of-the-palace-on-the-river-and-the-harbours-of-the-crown
     'on': '1445-01-30'
     title: Of the Palace on the River, and the Harbours of the Crown
+    book: book-of-the-golden-century
     verse: '14:32'
     who:
       - muhammad-ibn-ismail-ibn-saad
@@ -339,6 +340,7 @@ tellings:
   - id: 0849-12-16-of-the-cape-where-africa-ends-and-the-island-given-up
     'on': '1446-03-15'
     title: Of the Cape Where Africa Ends, and the Island Given Up
+    book: book-of-the-encircling-sea
     verse: '29:20'
     who:
       - abd-al-jalil-al-qubbasi
@@ -387,6 +389,7 @@ tellings:
   - id: 0850-10-20-of-the-closed-ports-of-the-franks
     'on': '1447-01-08'
     title: Of the Closed Ports of the Franks
+    book: book-of-the-franks
     verse: 16:126
     who:
       - muhammad-ibn-ismail-ibn-saad

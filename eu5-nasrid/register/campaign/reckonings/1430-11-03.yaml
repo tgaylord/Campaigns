@@ -110,7 +110,11 @@ beats:
     cite: Trent's account
     detail:
       account: Trent, 3 November 1430
-  - id: 1430-11-03-battle-bilbo
+  - at:
+      - 1666
+      - 1244
+    won: true
+    id: 1430-11-03-battle-bilbo
     'on': '1430-11-03'
     kind: battle
     what: >-
@@ -321,6 +325,7 @@ tellings:
   - id: 0834-02-16-of-the-war-of-the-mountains-and-the-peace-of-safar
     'on': '1430-11-03'
     title: Of the War of the Mountains, and the Peace of Ṣafar
+    book: book-of-the-marches
     verse: '59:2'
     who:
       - muhammad-ibn-ismail-ibn-saad
@@ -456,6 +461,7 @@ tellings:
   - id: 0834-02-16-the-close-of-the-book-of-the-marches
     'on': '1430-11-03'
     title: The Close of the Book of the Marches
+    book: book-of-the-marches
     verse: 21:105
     who:
       - saad-ibn-yusuf

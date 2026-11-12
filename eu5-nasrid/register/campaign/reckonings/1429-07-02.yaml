@@ -221,6 +221,7 @@ tellings:
   - id: 0832-09-25-of-the-death-of-the-emperor-ismail-and-the-two-princes
     'on': '1429-06-28'
     title: Of the Death of the Emperor Ismāʿīl, and the Two Princes
+    book: book-of-the-marches
     verse: '31:34'
     who:
       - ismail-ibn-saad

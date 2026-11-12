@@ -346,6 +346,7 @@ tellings:
   - id: 0838-11-04-of-the-emperors-pilgrimage-and-the-sufi-shaykh-al-islam
     'on': '1435-06-01'
     title: Of the Emperor's Pilgrimage, and the Ṣūfī Shaykh al-Islām
+    book: book-of-the-call
     verse: 2:197
     who:
       - muhammad-ibn-ismail-ibn-saad

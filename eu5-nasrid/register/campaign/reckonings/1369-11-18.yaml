@@ -80,7 +80,11 @@ map:
   allies:
     - MAM
 beats:
-  - id: 1368-11-11-battle-cadiz
+  - at:
+      - 1511
+      - 1670
+    won: true
+    id: 1368-11-11-battle-cadiz
     'on': '1368-11-11'
     kind: battle
     what: >-
@@ -118,7 +122,11 @@ beats:
           archers: 500
           lightCavalry: 200
           supply: 100
-  - id: 1368-12-01-battle-marbella
+  - at:
+      - 1559
+      - 1665
+    won: true
+    id: 1368-12-01-battle-marbella
     'on': '1368-12-01'
     kind: battle
     what: 'Marbella falls to the sultan''s army: its garrison of 13 is overwhelmed without loss'
@@ -153,7 +161,11 @@ beats:
     from:
       - save
     cite: save of 18 November 1369
-  - id: 1368-12-15-battle-gibraltar
+  - at:
+      - 1547
+      - 1681
+    won: true
+    id: 1368-12-15-battle-gibraltar
     'on': '1368-12-15'
     kind: battle
     what: >-
@@ -177,7 +189,11 @@ beats:
       theirsLost: 478
       location: Gibraltar
       side: Granada attacking
-  - id: 1368-12-25-battle-tarifa
+  - at:
+      - 1527
+      - 1687
+    won: true
+    id: 1368-12-25-battle-tarifa
     'on': '1368-12-25'
     kind: battle
     what: At Ṭarīf the last Sevillan army, 320 men, is destroyed to a man, for 13 of ours
@@ -199,7 +215,11 @@ beats:
       theirsLost: 322
       location: Tarifa
       side: Granada attacking
-  - id: 1369-01-31-battle-costa-blanca
+  - at:
+      - 1789
+      - 1573
+    won: true
+    id: 1369-01-31-battle-costa-blanca
     'on': '1369-01-31'
     kind: battle
     what: >-
@@ -225,7 +245,11 @@ beats:
       location: off the Costa Blanca
       side: Granada attacking
       units: ships
-  - id: 1369-02-08-battle-marbella
+  - at:
+      - 1559
+      - 1665
+    won: true
+    id: 1369-02-08-battle-marbella
     'on': '1369-02-08'
     kind: battle
     what: >-
@@ -251,7 +275,11 @@ beats:
       theirsLost: 1537
       location: Marbella
       side: Granada defending
-  - id: 1369-02-15-battle-ronda
+  - at:
+      - 1552
+      - 1654
+    won: true
+    id: 1369-02-15-battle-ronda
     'on': '1369-02-15'
     kind: battle
     what: At Ronda the last of the landing, 1,050 Moroccans, attacks 575 Granadans and is destroyed to a man
@@ -333,7 +361,11 @@ beats:
     cite: Trent's account (by March 1369; no save)
     detail:
       holdsOut: Cádiz
-  - id: 1369-04-05-battle-jerez-de-la-frontera
+  - at:
+      - 1516
+      - 1657
+    won: false
+    id: 1369-04-05-battle-jerez-de-la-frontera
     'on': '1369-04-05'
     kind: battle
     what: >-
@@ -357,7 +389,11 @@ beats:
       theirsLost: 140
       location: Jerez
       side: Granada attacking
-  - id: 1369-04-28-battle-jerez-de-la-frontera
+  - at:
+      - 1516
+      - 1657
+    won: true
+    id: 1369-04-28-battle-jerez-de-la-frontera
     'on': '1369-04-28'
     kind: battle
     what: >-
@@ -384,7 +420,11 @@ beats:
       theirsLost: 1351
       location: Jerez
       side: Granada attacking
-  - id: 1369-05-12-battle-sanlucar
+  - at:
+      - 1513
+      - 1646
+    won: true
+    id: 1369-05-12-battle-sanlucar
     'on': '1369-05-12'
     kind: battle
     what: At Sanlúcar Murād destroys a Moroccan force of 500, for 24 of ours
@@ -408,7 +448,11 @@ beats:
       theirsLost: 502
       location: Sanlúcar
       side: Granada attacking
-  - id: 1369-06-02-battle-cadiz
+  - at:
+      - 1511
+      - 1670
+    won: false
+    id: 1369-06-02-battle-cadiz
     'on': '1369-06-02'
     kind: battle
     what: Under Osman the Marīnids relieve Cádiz. A Granadan force of 580 before the fortress is wiped out
@@ -432,7 +476,11 @@ beats:
       theirsLost: 14
       location: Cádiz
       side: Granada defending
-  - id: 1369-06-26-battle-cadiz
+  - at:
+      - 1511
+      - 1670
+    won: false
+    id: 1369-06-26-battle-cadiz
     'on': '1369-06-26'
     kind: battle
     what: >-
@@ -485,7 +533,11 @@ beats:
       interest: 0.087
       months: 60
       mercenaries: 4786
-  - id: 1369-09-16-battle-malaga
+  - at:
+      - 1581
+      - 1653
+    won: false
+    id: 1369-09-16-battle-malaga
     'on': '1369-09-16'
     kind: battle
     what: >-
@@ -511,7 +563,11 @@ beats:
       theirsLost: 0
       location: Málaga
       side: Granada defending
-  - id: 1369-10-15-battle-antequera
+  - at:
+      - 1580
+      - 1635
+    won: true
+    id: 1369-10-15-battle-antequera
     'on': '1369-10-15'
     kind: battle
     what: >-
@@ -539,7 +595,11 @@ beats:
       theirsLost: 4087
       location: Antequera
       side: Granada defending
-  - id: 1369-11-08-battle-almunecar
+  - at:
+      - 1632
+      - 1650
+    won: true
+    id: 1369-11-08-battle-almunecar
     'on': '1369-11-08'
     kind: battle
     what: At Almuñécar Khālid's 7,880 crush 1,870 Moroccans besieging the town, 1,110 of them lost for 200 of ours
@@ -604,6 +664,7 @@ tellings:
   - id: 0770-04-08-of-the-two-queens-in-the-autumn-fas-came-again
     'on': '1368-11-20'
     title: Of the Two Queens, in the Autumn Fās Came Again
+    book: book-of-balance
     verse: '4:35'
     who:
       - saad-ibn-yusuf
@@ -714,6 +775,7 @@ tellings:
   - id: 0770-07-21-the-first-winter
     'on': '1369-03-01'
     title: Of the First Winter, When the Sultan of Fās Was Beaten at Qādis
+    book: book-of-balance
     verse: '8:26'
     who:
       - saad-ibn-yusuf
@@ -788,6 +850,7 @@ tellings:
   - id: 0771-04-17-the-year-of-the-counterattack
     'on': '1369-11-18'
     title: Of the Year of the Counterattack, and the Line at Antaqīra
+    book: book-of-balance
     verse: '8:45'
     who:
       - saad-ibn-yusuf

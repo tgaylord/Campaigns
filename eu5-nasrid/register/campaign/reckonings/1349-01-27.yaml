@@ -265,6 +265,7 @@ tellings:
   - id: 0749-08-09-of-wages-medicines-and-maids
     'on': '1348-11-02'
     title: Of Wages, Medicines and Maids
+    book: book-of-pestilence
     verse: '9:51'
     who:
       - yusuf-i
@@ -332,6 +333,7 @@ tellings:
   - id: 0749-11-07-the-peace-of-qurtuba
     'on': '1349-01-27'
     title: Of the Peace of Qurṭuba
+    book: book-of-balance
     verse: 8:61
     who:
       - yusuf-i

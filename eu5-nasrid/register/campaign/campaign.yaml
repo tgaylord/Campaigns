@@ -5,6 +5,11 @@ map:
     - 1230
     - 2640
     - 1190
+  story:
+    - 1215
+    - 1225
+    - 1440
+    - 900
   labels:
     GRA: al-Andalus
     MOR: Morocco

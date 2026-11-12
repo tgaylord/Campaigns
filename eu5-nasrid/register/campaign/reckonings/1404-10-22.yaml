@@ -91,7 +91,11 @@ map:
     - MAM
     - MOR
 beats:
-  - id: 1404-02-09-battle-gulf-of-roses
+  - at:
+      - 1962
+      - 1336
+    won: false
+    id: 1404-02-09-battle-gulf-of-roses
     'on': '1404-02-09'
     kind: battle
     what: >-
@@ -117,7 +121,11 @@ beats:
       location: the Gulf of Roses
       side: Papal States attacking
       units: ships
-  - id: 1404-05-10-battle-aix
+  - at:
+      - 2036
+      - 1231
+    won: true
+    id: 1404-05-10-battle-aix
     'on': '1404-05-10'
     kind: battle
     what: >-
@@ -142,7 +150,11 @@ beats:
       theirsLost: 373
       location: Aix-en-Provence
       side: Siena attacking
-  - id: 1404-06-04-battle-mouths-rhone
+  - at:
+      - 1992
+      - 1260
+    won: false
+    id: 1404-06-04-battle-mouths-rhone
     'on': '1404-06-04'
     kind: battle
     what: >-
@@ -168,7 +180,11 @@ beats:
       location: the mouths of the Rhône
       side: Papal States attacking
       units: ships
-  - id: 1404-06-24-battle-mouths-rhone-ii
+  - at:
+      - 1992
+      - 1260
+    won: true
+    id: 1404-06-24-battle-mouths-rhone-ii
     'on': '1404-06-24'
     kind: battle
     what: >-
@@ -213,7 +229,11 @@ beats:
       target: Avignon, the papal enclave on the Rhône
       commander: the Emperor Saʿd in person
       context: France had shown itself friendly since 1395; the Pope's own lands in Italy lie across the sea
-  - id: 1404-08-03-battle-gulf-florent
+  - at:
+      - 2187
+      - 1264
+    won: true
+    id: 1404-08-03-battle-gulf-florent
     'on': '1404-08-03'
     kind: battle
     what: >-
@@ -239,7 +259,11 @@ beats:
       location: the Gulf of Saint-Florent, Corsica
       side: Morocco attacking
       units: ships
-  - id: 1404-08-09-battle-mouths-rhone-iii
+  - at:
+      - 1992
+      - 1260
+    won: false
+    id: 1404-08-09-battle-mouths-rhone-iii
     'on': '1404-08-09'
     kind: battle
     what: >-
@@ -265,7 +289,11 @@ beats:
       location: the mouths of the Rhône
       side: Catalonia attacking
       units: ships
-  - id: 1404-08-24-battle-gulf-talamone
+  - at:
+      - 2284
+      - 1311
+    won: true
+    id: 1404-08-24-battle-gulf-talamone
     'on': '1404-08-24'
     kind: battle
     what: >-
@@ -320,7 +348,11 @@ beats:
       context: >-
         the convivencia proclaimed with the Restoration of al-Andalus in 1375; some 123,000 Jews in the realm
         in 1395. At the time the Emperor was besieging Avignon, and the crusade's war score stood at +40%
-  - id: 1404-10-10-battle-barjols
+  - at:
+      - 2067
+      - 1223
+    won: false
+    id: 1404-10-10-battle-barjols
     'on': '1404-10-10'
     kind: battle
     what: >-
@@ -345,7 +377,11 @@ beats:
       theirsLost: 784
       location: Barjols, Provence
       side: Valencia attacking
-  - id: 1404-10-20-battle-barjols-ii
+  - at:
+      - 2067
+      - 1223
+    won: true
+    id: 1404-10-20-battle-barjols-ii
     'on': '1404-10-20'
     kind: battle
     what: >-
@@ -432,6 +468,7 @@ tellings:
   - id: 0807-04-16-of-the-crusade-of-806-and-the-peace-of-avignon
     'on': '1404-10-22'
     title: Of the Crusade of 806, the March on Avignon, and the Peace of Avignon
+    book: book-of-the-marches
     verse: 2:190
     who:
       - saad-ibn-yusuf

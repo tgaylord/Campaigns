@@ -102,7 +102,11 @@ map:
     - MOR
     - TUN
 beats:
-  - id: 1447-10-30-battle-oristano
+  - at:
+      - 2184
+      - 1457
+    won: false
+    id: 1447-10-30-battle-oristano
     'on': '1447-10-30'
     kind: battle
     what: 'At Oristano, Tunis and Gallura (2,408 men) attack Arborea (3,865) and are beaten: 1,484 lost against 761'
@@ -129,7 +133,11 @@ beats:
       commanders:
         ours: Kubad#33570617
         theirs: Benedict#16832034
-  - id: 1447-11-25-battle-gulf-asinara
+  - at:
+      - 2167
+      - 1366
+    won: false
+    id: 1447-11-25-battle-gulf-asinara
     'on': '1447-11-25'
     kind: battle
     what: >-
@@ -159,7 +167,11 @@ beats:
       commanders:
         ours: Abdullah#33613047
         theirs: Arnold#16822078
-  - id: 1447-12-16-battle-gulf-oristano
+  - at:
+      - 2152
+      - 1464
+    won: true
+    id: 1447-12-16-battle-gulf-oristano
     'on': '1447-12-16'
     kind: battle
     what: >-
@@ -189,7 +201,11 @@ beats:
       commanders:
         ours: Ishmael#16852775
         theirs: Arnold#16822078
-  - id: 1447-12-22-battle-toulon
+  - at:
+      - 2071
+      - 1253
+    won: false
+    id: 1447-12-22-battle-toulon
     'on': '1447-12-22'
     kind: battle
     what: >-
@@ -219,7 +235,11 @@ beats:
       commanders:
         ours: Hernan#95710
         theirs: Julius Caesar#16801655
-  - id: 1448-01-03-battle-gulf-termini
+  - at:
+      - 2425
+      - 1550
+    won: false
+    id: 1448-01-03-battle-gulf-termini
     'on': '1448-01-03'
     kind: battle
     what: 'At Gulf of Termini, Sicily (2 ships) attacks Tripoli (1), who are beaten: 1 lost against 0'
@@ -246,7 +266,11 @@ beats:
       commanders:
         ours: Abd Al-Wahid#93093
         theirs: Cyrus#50362395
-  - id: 1448-01-05-battle-gulf-terracina
+  - at:
+      - 2367
+      - 1391
+    won: true
+    id: 1448-01-05-battle-gulf-terracina
     'on': '1448-01-05'
     kind: battle
     what: >-
@@ -276,7 +300,11 @@ beats:
       commanders:
         ours: the prince Yūsuf ibn Ismāʿīl
         theirs: Peter#79415
-  - id: 1448-01-09-battle-oristano
+  - at:
+      - 2184
+      - 1457
+    won: false
+    id: 1448-01-09-battle-oristano
     'on': '1448-01-09'
     kind: battle
     what: 'At Oristano, Tunis and Gallura (913 men) attack Arborea (3,103) and are beaten: 847 lost against 135'
@@ -303,7 +331,11 @@ beats:
       commanders:
         ours: Kubad#33570617
         theirs: Benedict#16832034
-  - id: 1448-01-13-battle-gulf-termini
+  - at:
+      - 2425
+      - 1550
+    won: true
+    id: 1448-01-13-battle-gulf-termini
     'on': '1448-01-13'
     kind: battle
     what: >-
@@ -358,6 +390,7 @@ tellings:
   - id: 0851-11-06-of-the-war-for-balarm-and-the-prince-at-sea
     'on': '1448-01-13'
     title: Of the War for Balarm and the Prince at Sea
+    book: book-of-the-franks
     verse: 4:104
     who:
       - yusuf-ibn-ismail-ibn-muhammad

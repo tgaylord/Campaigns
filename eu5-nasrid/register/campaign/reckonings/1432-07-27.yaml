@@ -101,7 +101,11 @@ map:
     - MOR
     - TUN
 beats:
-  - id: 1432-05-17-battle-terracina
+  - at:
+      - 2389
+      - 1363
+    won: false
+    id: 1432-05-17-battle-terracina
     'on': '1432-05-17'
     kind: battle
     what: >-
@@ -132,7 +136,11 @@ beats:
       side: crusaders attacking
       commanders:
         theirs: Gaston
-  - id: 1432-06-01-battle-viterbo
+  - at:
+      - 2340
+      - 1302
+    won: false
+    id: 1432-06-01-battle-viterbo
     'on': '1432-06-01'
     kind: battle
     what: >-
@@ -163,7 +171,11 @@ beats:
       commanders:
         ours: Khalīl of Morocco
         theirs: Alexander
-  - id: 1432-06-03-battle-maria-leuca-cape
+  - at:
+      - 2632
+      - 1484
+    won: false
+    id: 1432-06-03-battle-maria-leuca-cape
     'on': '1432-06-03'
     kind: battle
     what: Off Cape Santa Maria di Leuca 17 ships of Tlemcen attack 17 Genoese and lose five, for one
@@ -188,7 +200,11 @@ beats:
       theirsLost: 1
       location: Cape Santa Maria di Leuca
       side: allies attacking
-  - id: 1432-06-27-battle-cape-mondego
+  - at:
+      - 1367
+      - 1411
+    won: true
+    id: 1432-06-27-battle-cape-mondego
     'on': '1432-06-27'
     kind: battle
     what: >-
@@ -221,7 +237,11 @@ beats:
       commanders:
         ours: Berenguer Ramon de Montsoriu, lord of Catalonia
         theirs: John of Mecklenburg
-  - id: 1432-07-12-battle-gulf-talamone
+  - at:
+      - 2284
+      - 1311
+    won: true
+    id: 1432-07-12-battle-gulf-talamone
     'on': '1432-07-12'
     kind: battle
     what: In the Gulf of Talamone two Genoese ships attack 21 of Tunis under Jalīl and are lost
@@ -329,6 +349,7 @@ tellings:
   - id: 0835-11-28-of-the-peace-of-the-pope-and-the-decree-on-the-taifas
     'on': '1432-07-27'
     title: Of the Peace of the Pope, and the Decree on the Ṭāʾifas
+    book: book-of-the-franks
     verse: 10:99
     who:
       - muhammad-ibn-ismail-ibn-saad

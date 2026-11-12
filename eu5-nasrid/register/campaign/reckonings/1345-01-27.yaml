@@ -267,6 +267,7 @@ tellings:
   - id: 0745-06-02-the-jamaa-of-744
     'on': '1344-10-11'
     title: Of the Jamāʿa of 744, the Sultan's Marriage, and the Crown Strengthened
+    book: book-of-mending
     verse: '30:21'
     who:
       - yusuf-i

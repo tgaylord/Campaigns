@@ -417,6 +417,7 @@ tellings:
   - id: 0752-12-09-the-departing-of-the-pestilence
     'on': '1352-01-27'
     title: Of the Departing of the Pestilence
+    book: book-of-pestilence
     verse: 2:155
     who:
       - yusuf-i
@@ -467,6 +468,7 @@ tellings:
   - id: 0753-02-20-the-royal-hajj
     'on': '1352-04-07'
     title: Of the Royal Ḥajj
+    book: book-of-balance
     verse: 2:201
     who:
       - yusuf-i
@@ -533,6 +535,7 @@ tellings:
   - id: 0753-02-20-the-works-of-the-regency
     'on': '1352-04-07'
     title: Of the Works of the Regency, the Thought of Qurṭuba, and the Murmuring of the Castilians
+    book: book-of-balance
     verse: 3:103
     who:
       - faraj-ibn-ismail

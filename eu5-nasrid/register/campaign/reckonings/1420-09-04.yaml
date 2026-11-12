@@ -154,6 +154,7 @@ tellings:
   - id: 0823-08-25-of-the-petty-kings-of-the-mountains
     'on': '1420-09-04'
     title: Of the Petty Kings of the Mountains
+    book: book-of-the-marches
     verse: 3:137
     who:
       - ismail-ibn-saad

@@ -92,7 +92,8 @@ beats:
     detail:
       treaty: opinion_improvement
       with: TUR
-  - id: 1338-11-01-battle-ishbiliyya
+  - won: false
+    id: 1338-11-01-battle-ishbiliyya
     'on': '1338-11-01'
     kind: battle
     what: Castile defeats Morocco at Ishbīliya
@@ -136,7 +137,8 @@ beats:
     detail:
       treaty: alliance
       with: TUN
-  - id: 1339-02-28-battle-shaluqa
+  - won: false
+    id: 1339-02-28-battle-shaluqa
     'on': '1339-02-28'
     kind: battle
     what: Morocco repulsed at Shalūqa
@@ -153,7 +155,8 @@ beats:
       ours: 4011
       theirs: 9817
       side: Morocco's side (Granada not engaged)
-  - id: 1339-03-10-battle-ishbiliyya
+  - won: false
+    id: 1339-03-10-battle-ishbiliyya
     'on': '1339-03-10'
     kind: battle
     what: Castile defeats Morocco again at Ishbīliya
@@ -170,7 +173,8 @@ beats:
       ours: 6053
       theirs: 5970
       side: Morocco's side (Granada not engaged)
-  - id: 1339-03-25-battle-qarmuna
+  - won: false
+    id: 1339-03-25-battle-qarmuna
     'on': '1339-03-25'
     kind: battle
     what: Castile defeats Morocco at Qarmūna
@@ -187,7 +191,8 @@ beats:
       ours: 663
       theirs: 12837
       side: Morocco's side (Granada not engaged)
-  - id: 1339-04-06-battle-shaluqa
+  - won: false
+    id: 1339-04-06-battle-shaluqa
     'on': '1339-04-06'
     kind: battle
     what: Morocco repulsed again at Shalūqa
@@ -328,6 +333,7 @@ tellings:
   - id: 0739-11-14-the-road-through-mursiyya
     'on': '1339-05-24'
     title: Of the Road through Mursiyya, and the Host of Ibn al-Khaṭīb
+    book: book-of-mending
     verse: '65:3'
     who:
       - yusuf-i

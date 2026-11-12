@@ -735,6 +735,7 @@ tellings:
   - id: 0772-02-21-the-throne-that-endures
     'on': '1370-09-14'
     title: Of the Last Battles, the Peace of the Northern Shore, and the Throne That Endures
+    book: book-of-balance
     verse: 3:200
     who:
       - saad-ibn-yusuf
@@ -888,6 +889,7 @@ tellings:
   - id: 0772-02-22-of-the-three-marches
     'on': '1370-09-15'
     title: Of the Three Marches, and What Lies North of Them
+    book: book-of-the-marches
     verse: '28:5'
     who:
       - saad-ibn-yusuf
@@ -989,6 +991,7 @@ tellings:
   - id: 0772-02-27-the-survey-of-the-kingdoms
     'on': '1370-09-20'
     title: The Survey of the Kingdoms, After the Manner of the Roads of the Eyes
+    book: book-of-the-marches
     verse: '49:13'
     who:
       - saad-ibn-yusuf
@@ -1124,6 +1127,7 @@ tellings:
   - id: 0772-08-07-the-moneylenders-of-ishbiliya
     'on': '1371-02-24'
     title: Of the Towns of the North, and the Moneylenders of Ishbīliya
+    book: book-of-the-call
     verse: '4:29'
     who:
       - saad-ibn-yusuf

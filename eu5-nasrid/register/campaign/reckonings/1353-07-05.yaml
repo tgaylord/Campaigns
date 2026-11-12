@@ -74,7 +74,11 @@ map:
   allies:
     - MAM
 beats:
-  - id: 1353-06-06-battle-jerez
+  - at:
+      - 1516
+      - 1657
+    won: true
+    id: 1353-06-06-battle-jerez
     'on': '1353-06-06'
     kind: battle
     what: >-
@@ -100,7 +104,11 @@ beats:
       theirsLost: 2292
       location: Sharīsh (Jerez)
       side: Granada defending
-  - id: 1353-06-27-battle-sanlucar-la-mayor
+  - at:
+      - 1510
+      - 1608
+    won: true
+    id: 1353-06-27-battle-sanlucar-la-mayor
     'on': '1353-06-27'
     kind: battle
     what: >-
@@ -177,6 +185,7 @@ tellings:
   - id: 0754-06-02-the-kingdom-of-ishbiliyya
     'on': '1353-07-05'
     title: Of the So-Called Kingdom of Ishbīliya, and the Old Border Reaffirmed
+    book: book-of-balance
     verse: 2:216
     who:
       - yusuf-i

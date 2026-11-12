@@ -87,7 +87,11 @@ map:
     - MAM
     - MOR
 beats:
-  - id: 1394-05-01-battle-mouths-rhone
+  - at:
+      - 1992
+      - 1260
+    won: false
+    id: 1394-05-01-battle-mouths-rhone
     'on': '1394-05-01'
     kind: battle
     what: At the mouths of the Rhône a papal squadron of 15 galleys sinks a lone Catalan ship
@@ -111,7 +115,11 @@ beats:
       location: the mouths of the Rhône
       side: Papal States attacking
       units: ships
-  - id: 1394-06-13-battle-mouths-rhone-ii
+  - at:
+      - 1992
+      - 1260
+    won: true
+    id: 1394-06-13-battle-mouths-rhone-ii
     'on': '1394-06-13'
     kind: battle
     what: >-
@@ -137,7 +145,11 @@ beats:
       location: the mouths of the Rhône
       side: Morocco attacking
       units: ships
-  - id: 1394-06-25-battle-gulf-talamone
+  - at:
+      - 2284
+      - 1311
+    won: true
+    id: 1394-06-25-battle-gulf-talamone
     'on': '1394-06-25'
     kind: battle
     what: >-
@@ -163,7 +175,11 @@ beats:
       location: the gulf of Talamone, Tuscany
       side: Papal States attacking
       units: ships
-  - id: 1394-07-03-battle-atlantic
+  - at:
+      - 264
+      - 1481
+    won: false
+    id: 1394-07-03-battle-atlantic
     'on': '1394-07-03'
     kind: battle
     what: >-
@@ -189,7 +205,11 @@ beats:
       location: the north-eastern Atlantic, off Galicia
       side: Castile attacking
       units: ships
-  - id: 1394-07-10-battle-gulf-policastro
+  - at:
+      - 2481
+      - 1477
+    won: true
+    id: 1394-07-10-battle-gulf-policastro
     'on': '1394-07-10'
     kind: battle
     what: In the gulf of Policastro a papal galley throws itself on the Moroccan fleet of 68 and is sunk
@@ -213,7 +233,11 @@ beats:
       location: the gulf of Policastro, Campania
       side: Papal States attacking
       units: ships
-  - id: 1394-07-11-battle-george-bay
+  - at:
+      - 2444
+      - 1719
+    won: true
+    id: 1394-07-11-battle-george-bay
     'on': '1394-07-11'
     kind: battle
     what: Off Māliṭa, in St George's Bay, eleven ships of Barqa sink a papal galley
@@ -237,7 +261,11 @@ beats:
       location: St George's Bay, Malta
       side: Barqa attacking
       units: ships
-  - id: 1394-07-14-battle-mouth-douro
+  - at:
+      - 1364
+      - 1350
+    won: false
+    id: 1394-07-14-battle-mouth-douro
     'on': '1394-07-14'
     kind: battle
     what: >-
@@ -263,7 +291,11 @@ beats:
       location: the mouth of the Douro
       side: Castile attacking
       units: ships
-  - id: 1394-08-siguenza
+  - at:
+      - 1660
+      - 1383
+    won: false
+    id: 1394-08-siguenza
     'on': '1394-08-09'
     kind: battle
     what: >-
@@ -295,7 +327,11 @@ beats:
       aragon: 1,840, retreating
       valenciaOnScreens: 1,743 on 9 August; the save's battle list counts 3,958 engaged by the end
       warScore: 35
-  - id: 1394-08-14-algarve-armies
+  - at:
+      - 1387
+      - 1536
+    won: false
+    id: 1394-08-14-algarve-armies
     'on': '1394-08-14'
     kind: battle
     what: >-
@@ -324,7 +360,11 @@ beats:
       battles:
         Setúbal, 10 August: 692 of the Algarve lost, no Portuguese
         Montemor, 14 August: 2,167 of the Algarve lost, 225 Portuguese
-  - id: 1394-08-18-battle-grosseto
+  - at:
+      - 2301
+      - 1276
+    won: false
+    id: 1394-08-18-battle-grosseto
     'on': '1394-08-18'
     kind: battle
     what: >-
@@ -369,7 +409,11 @@ beats:
       castile: 24186
       catalonia: 7072
       aragon: 1840
-  - id: 1394-09-02-battle-bay-setubal
+  - at:
+      - 1348
+      - 1550
+    won: true
+    id: 1394-09-02-battle-bay-setubal
     'on': '1394-09-02'
     kind: battle
     what: >-
@@ -395,7 +439,11 @@ beats:
       location: the bay of Setúbal
       side: Castile attacking
       units: ships
-  - id: 1394-09-07-battle-roncesvalles
+  - at:
+      - 1737
+      - 1272
+    won: true
+    id: 1394-09-07-battle-roncesvalles
     'on': '1394-09-07'
     kind: battle
     what: At Roncesvalles in the Pyrenees the Catalan army of 7,070 wipes out Andorra's 158 men without loss
@@ -418,7 +466,11 @@ beats:
       theirsLost: 158
       location: Roncesvalles, Navarre
       side: Catalonia attacking
-  - id: 1394-09-11-battle-piombino
+  - at:
+      - 2275
+      - 1272
+    won: false
+    id: 1394-09-11-battle-piombino
     'on': '1394-09-11'
     kind: battle
     what: At Piombino the Sienese beat 470 men of Barqa again, 186 lost for 100
@@ -441,7 +493,11 @@ beats:
       theirsLost: 100
       location: Piombino, Tuscany
       side: Siena attacking
-  - id: 1394-09-18-battle-bay-setubal-ii
+  - at:
+      - 1348
+      - 1550
+    won: false
+    id: 1394-09-18-battle-bay-setubal-ii
     'on': '1394-09-18'
     kind: battle
     what: >-
@@ -467,7 +523,11 @@ beats:
       location: the bay of Setúbal
       side: Castile attacking
       units: ships
-  - id: 1394-10-12-battle-pamplona
+  - at:
+      - 1708
+      - 1271
+    won: true
+    id: 1394-10-12-battle-pamplona
     'on': '1394-10-12'
     kind: battle
     what: >-
@@ -530,7 +590,11 @@ beats:
       commanders:
         al-Andalus: the Emperor Saʿd
         Castile: a Castilian general
-  - id: 1394-11-15-battle-grosseto-ii
+  - at:
+      - 2301
+      - 1276
+    won: false
+    id: 1394-11-15-battle-grosseto-ii
     'on': '1394-11-15'
     kind: battle
     what: At Grosseto the Sienese destroy the last 258 men of Barqa in Tuscany without loss
@@ -575,7 +639,11 @@ beats:
       mamluks:
         - 2314
         - 709
-  - id: 1394-12-14-battle-ejea
+  - at:
+      - 1742
+      - 1323
+    won: true
+    id: 1394-12-14-battle-ejea
     'on': '1394-12-14'
     kind: battle
     what: >-
@@ -638,7 +706,11 @@ beats:
             - 50
             - 50
       terrain: unfavourable to the attacker (Trent)
-  - id: 1395-02-04-battle-penafiel
+  - at:
+      - 1597
+      - 1351
+    won: true
+    id: 1395-02-04-battle-penafiel
     'on': '1395-02-04'
     kind: battle
     what: >-
@@ -668,7 +740,11 @@ beats:
       side: Aragon
       warScore: 13.67
       note: the remnant of the army beaten at Ejea, without morale to fight
-  - id: 1395-03-17-battle-berlengas
+  - at:
+      - 1346
+      - 1479
+    won: false
+    id: 1395-03-17-battle-berlengas
     'on': '1395-03-17'
     kind: battle
     what: >-
@@ -694,7 +770,11 @@ beats:
       location: the Berlengas islands, off Portugal
       side: Castile attacking
       units: ships
-  - id: 1395-05-24-battle-montalcino
+  - at:
+      - 2313
+      - 1262
+    won: false
+    id: 1395-05-24-battle-montalcino
     'on': '1395-05-24'
     kind: battle
     what: >-
@@ -719,7 +799,11 @@ beats:
       theirsLost: 89
       location: Montalcino, Tuscany
       side: the Mamlūks attacking
-  - id: 1395-06-18-battle-portalegre
+  - at:
+      - 1453
+      - 1494
+    won: true
+    id: 1395-06-18-battle-portalegre
     'on': '1395-06-18'
     kind: battle
     what: >-
@@ -1039,6 +1123,7 @@ tellings:
   - id: 0797-04-12-of-the-days-of-banbaluna-and-ejea
     'on': '1395-02-04'
     title: Of the League, the Ships of Catalonia, and the Days of Banbalūna and Ejea
+    book: book-of-the-marches
     verse: '61:4'
     who:
       - saad-ibn-yusuf
@@ -1146,6 +1231,7 @@ tellings:
   - id: 0797-09-03-of-portalegre-and-the-peace-of-ramadan
     'on': '1395-06-22'
     title: Of the Stand at Portalegre, and the Peace of Ramaḍān
+    book: book-of-the-marches
     verse: '24:55'
     who:
       - saad-ibn-yusuf
@@ -1228,6 +1314,7 @@ tellings:
   - id: 0797-09-03-of-the-encircling-sea-and-fifteen-years-of-building
     'on': '1395-06-22'
     title: Of the Encircling Sea, and Fifteen Years of Building
+    book: book-of-the-encircling-sea
     verse: '16:14'
     who:
       - saad-ibn-yusuf

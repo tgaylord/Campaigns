@@ -233,6 +233,7 @@ tellings:
   - id: 0741-02-28-the-two-taifas
     'on': '1340-08-23'
     title: Of the Two Ṭāʾifas
+    book: book-of-mending
     verse: '13:11'
     who:
       - yusuf-i

@@ -114,6 +114,7 @@ tellings:
   - id: 0741-05-06-the-marinids-lose-the-shore
     'on': '1340-10-28'
     title: Of the Marīnids' Defeat, and the Shore They Lost
+    book: book-of-mending
     verse: 3:140
     who:
       - maria-of-portugal

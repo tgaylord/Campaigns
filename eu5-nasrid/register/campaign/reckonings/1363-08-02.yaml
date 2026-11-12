@@ -164,6 +164,7 @@ tellings:
   - id: 0764-10-19-the-death-of-al-hajj-yusuf
     'on': '1363-08-01'
     title: Of the March into the West, and the Death of al-Ḥājj Yūsuf
+    book: book-of-balance
     verse: 3:185
     who:
       - yusuf-i

@@ -106,7 +106,11 @@ map:
     - MOR
     - TUN
 beats:
-  - id: 1450-02-06-battle-al-wajh
+  - at:
+      - 3460
+      - 2280
+    won: false
+    id: 1450-02-06-battle-al-wajh
     'on': '1450-02-06'
     kind: battle
     what: 'At al-Wajh the Mamlūk side (AAA00, 153) is attacked by Otaibah (3,595) and loses: 153 lost against 0'
@@ -147,7 +151,11 @@ beats:
       men: 8700
       where: Syracuse (Saraqūsa)
       army: fully professional (Trent)
-  - id: 1450-03-16-battle-al-marwa
+  - at:
+      - 3550
+      - 2294
+    won: true
+    id: 1450-03-16-battle-al-marwa
     'on': '1450-03-16'
     kind: battle
     what: >-
@@ -173,7 +181,11 @@ beats:
       location: al-Marwa
       side: enemy attacking
       note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
-  - id: 1450-04-14-battle-ar-rayyan
+  - at:
+      - 3605
+      - 2448
+    won: true
+    id: 1450-04-14-battle-ar-rayyan
     'on': '1450-04-14'
     kind: battle
     what: 'At ar-Rayyan the Mamlūk side (Mamluks, 17,065) attacks Lām (3,433) and wins: 1,394 lost against 2,354'
@@ -197,7 +209,11 @@ beats:
       location: ar-Rayyan
       side: allies attacking
       note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
-  - id: 1450-04-22-battle-duba
+  - at:
+      - 3427
+      - 2206
+    won: false
+    id: 1450-04-22-battle-duba
     'on': '1450-04-22'
     kind: battle
     what: 'At Duba the Mamlūk side (Mamluks, 17,259) attacks Yemen (17,873) and loses: 1,505 lost against 1,997'
@@ -221,7 +237,11 @@ beats:
       location: Duba
       side: allies attacking
       note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
-  - id: 1450-05-09-battle-ash-shamli
+  - at:
+      - 3615
+      - 2250
+    won: false
+    id: 1450-05-09-battle-ash-shamli
     'on': '1450-05-09'
     kind: battle
     what: 'At ash-Shamli the Mamlūk side (Al ʿAlī, 666) attacks ABA44 (6,760) and loses: 666 lost against 39'
@@ -245,7 +265,11 @@ beats:
       location: ash-Shamli
       side: allies attacking
       note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
-  - id: 1450-05-23-battle-khalis-medina
+  - at:
+      - 3596
+      - 2413
+    won: true
+    id: 1450-05-23-battle-khalis-medina
     'on': '1450-05-23'
     kind: battle
     what: >-
@@ -272,7 +296,11 @@ beats:
       location: Khalis Medina
       side: enemy attacking
       note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
-  - id: 1450-06-25-battle-al-muazzam
+  - at:
+      - 3495
+      - 2200
+    won: false
+    id: 1450-06-25-battle-al-muazzam
     'on': '1450-06-25'
     kind: battle
     what: 'At al-Muazzam the Mamlūk side (Mecca, 169) is attacked by Otaibah (3,166) and loses: 68 lost against 0'
@@ -310,7 +338,11 @@ beats:
     detail:
       truce: to 15 May 1460
       corsica: Corsica's towns are Corsica's again in the save of 29 November 1450, Genoa's vassal
-  - id: 1450-07-18-battle-mughayra
+  - at:
+      - 3533
+      - 2271
+    won: false
+    id: 1450-07-18-battle-mughayra
     'on': '1450-07-18'
     kind: battle
     what: >-
@@ -337,7 +369,11 @@ beats:
       location: Mughayra
       side: enemy attacking
       note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
-  - id: 1450-07-18-battle-sughar
+  - at:
+      - 3398
+      - 2006
+    won: true
+    id: 1450-07-18-battle-sughar
     'on': '1450-07-18'
     kind: battle
     what: >-
@@ -363,7 +399,11 @@ beats:
       location: Sughar
       side: enemy attacking
       note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
-  - id: 1450-08-08-battle-al-azlam
+  - at:
+      - 3444
+      - 2233
+    won: false
+    id: 1450-08-08-battle-al-azlam
     'on': '1450-08-08'
     kind: battle
     what: 'At al-Azlam the Mamlūk side (Suakin, 509) is attacked by Lām (4,190) and loses: 509 lost against 19'
@@ -408,7 +448,8 @@ beats:
         The Tunisians fought for Sardinia, yes- and were justly rewarded. But Sicily has been Andalusi blood.
         Andalusi steel. Andalusi sweat. And while the Tunisians started this war- they... understand our
         desire for compensation. Namely- Sicily.
-  - id: 1450-09-28-the-fall-of-catania
+  - won: true
+    id: 1450-09-28-the-fall-of-catania
     'on': '1450-09-28'
     kind: battle
     what: The fortress of Catania falls after a siege of 208 days, and the road to Palermo lies open
@@ -420,7 +461,8 @@ beats:
     cite: Trent's account (12 November 2026)
     detail:
       days: 208
-  - id: 1450-10-21-battle-al-khanbarah
+  - won: true
+    id: 1450-10-21-battle-al-khanbarah
     'on': '1450-10-21'
     kind: battle
     what: >-
@@ -446,7 +488,11 @@ beats:
       location: al-Khanbarah
       side: enemy attacking
       note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
-  - id: 1450-11-03-battle-palermo
+  - at:
+      - 2395
+      - 1575
+    won: true
+    id: 1450-11-03-battle-palermo
     'on': '1450-11-03'
     kind: battle
     what: >-
@@ -513,7 +559,11 @@ beats:
         Athens, Atalanti, Salona, Angelokastron, Karpenisi, Loidoriki: some 270,000 souls, Greek and mostly
         Catholic
       heir: Ferdinand, born 1419
-  - id: 1450-11-29-battle-sciacca
+  - at:
+      - 2389
+      - 1602
+    won: true
+    id: 1450-11-29-battle-sciacca
     'on': '1450-11-29'
     kind: battle
     what: >-
@@ -588,6 +638,7 @@ tellings:
   - id: 0854-01-02-of-the-thughur-and-the-landing-at-saraqusa
     'on': '1450-02-15'
     title: Of the Thughūr and the Landing at Saraqūsa
+    book: book-of-the-franks
     verse: 17:80
     who:
       - ismail-ibn-muhammad-ibn-ismail
@@ -755,6 +806,7 @@ tellings:
   - id: 0854-09-27-of-catania-and-the-battle-before-balarm
     'on': '1450-11-03'
     title: Of Catania and the Battle before Balarm
+    book: book-of-the-franks
     verse: '8:10'
     who:
       - muhammad-ibn-ismail-ibn-saad
@@ -818,6 +870,7 @@ tellings:
   - id: 0854-10-23-of-the-peace-of-balarm-and-the-duke-of-athens
     'on': '1450-11-29'
     title: Of the Peace of Balarm and the Duke of Athens
+    book: book-of-the-franks
     verse: '60:8'
     who:
       - muhammad-ibn-ismail-ibn-saad
