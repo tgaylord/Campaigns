@@ -28,5 +28,37 @@
    "kind": "deny market access"
   },
   "source": "autosave of 1 February 1447"
+ },
+ {
+  "id": "1447-02-01-the-towns-taught-a-trade",
+  "date": "1447-02-01",
+  "type": "player_note",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [
+   "jayyan",
+   "batalyaws",
+   "shantarin",
+   "sharish",
+   "qurtuba",
+   "ishbiliyya"
+  ],
+  "wars": [],
+  "title": "Since 1442 the treasury has gone into the towns, each being made good at a trade: cannon foundries, gunsmiths, saltpetre works, tanneries, masons, glass and pottery, cloth workshops doubled at Qurṭuba and Ishbīliya, and twenty-seven bridges",
+  "data": {
+   "bridges": 27,
+   "cannon foundries": "Girona, Jaén, Alcalá de Henares",
+   "gunsmiths": "Badajoz, Lisbon, Santarém, Jaén",
+   "saltpetre": "Jerez (to level 3)",
+   "distillers": "Jerez, Barcelona",
+   "tannery": "Alcalá de Henares",
+   "cloth": "Córdoba 6→12, Seville 6→11, Écija 3→6",
+   "fine cloth": "Valencia 6→9",
+   "pottery": "Barcelona 2→5, Valencia 3→8",
+   "glass": "Badajoz, Seville 3→5",
+   "period": "saves of 11 June 1442 to 1 February 1447"
+  },
+  "source": "Trent's account (12 November 2026); the buildings from the saves of 11 June 1442, 27 August 1444 and the autosave of 1 February 1447"
  }
 ]

@@ -923,15 +923,17 @@
  {
   "id": "2026-11-12",
   "date": "2026-11-12",
-  "commits": 1,
+  "commits": 3,
   "firstCommit": "e4cb054",
-  "lastCommit": "e4cb054",
+  "lastCommit": "3949915",
   "uncommitted": true,
   "claudeSessions": [
    "session_01BjCUTWMwSncdsoun2VQ9xv"
   ],
   "headlines": [
-   "[eu5-nasrid] The explorer Abd al-Jalil al-Qubbasi, from the autosave of 1 February 1447"
+   "[eu5-nasrid] The explorer Abd al-Jalil al-Qubbasi, from the autosave of 1 February 1447",
+   "[eu5-nasrid] Snapshot notes: drop the \"565 owed\" left over from the old debt error",
+   "[eu5-nasrid] Checkpoints 1442-08-29, 1444-02-06, 1444-08-27 and the autosave of 1447-02-01; three entries for 1443-1447"
   ],
   "reached": {
    "from": "1442-08-29",
@@ -960,7 +962,7 @@
   ],
   "wars": [],
   "places": [],
-  "events": 9,
+  "events": 10,
   "removed": {
    "entries": [],
    "checkpoints": [],

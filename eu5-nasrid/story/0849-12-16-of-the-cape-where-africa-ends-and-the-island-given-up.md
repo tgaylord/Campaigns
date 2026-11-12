@@ -15,6 +15,6 @@ On 28 Rajab 849 the Emperor [Muḥammad](person:muhammad-ibn-ismail-ibn-saad) ma
 
 The merchants were quicker than the court. While the explorer's report was still being copied, the burghers of Ishbīliya sent factors to study the kingdom of the Kongo, whose river and markets the ships had passed on the way south. Its copper, its cloth and its ivory were already being priced in the funduqs.
 
-In the same season the crown let go of the island of Fernando Po. The Jamāʿa of 847 had asked for it with one voice, and the burghers had offered to share the cost. The settlement was withdrawn. The lords who had hoped for estates there were not pleased. The burghers, who had found the Kongo, were less troubled than they had expected to be.
+In the same season the crown let go of the island of Fernando Po. The Jamāʿa of 847 had asked for it with one voice, and the burghers had offered to share the cost, but few settlers could be found to go so far, and the ships had no need of it: they went south along the coast of Mālī, where the Mansa's harbours and the trading posts of Kaabu served them well enough. The settlement was withdrawn, and the Emperor told the court that the island would wait until the sea road needed it. The lords who had hoped for estates there were not pleased. The burghers, who had found the Kongo, were less troubled than they had expected to be.
 
 *Say: Travel through the land and observe how He began creation.*
