@@ -427,3 +427,17 @@ h2.big { font-size: clamp(1.6rem, 1.2rem + 1.6vw, 2.3rem); }
 }
 
 @media (max-width: 40rem) { .top nav { gap: 0.1rem 1rem; font-size: 0.97rem; } }
+
+/* ---------------------------------------------------------------- pass five: rivals, a bigger map, the march */
+.l-rival { stroke: var(--sunk); stroke-width: 1.5; }
+.lenses .grow { margin-left: auto; border-radius: 3px; border-color: var(--ink-3); color: var(--ink); }
+.lenses .grow[aria-pressed="true"] { background: var(--surface); color: var(--ink); border-color: var(--cobalt); }
+:root[data-wide] main.wrap { max-width: none; }
+.atlas-map.big { grid-template-columns: minmax(0, 1fr); grid-template-areas: "map" "ctl" "cap"; }
+.atlas-map.big > .land { max-height: 76vh; }
+.atlas-map.big .atlas-cap { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0.3rem 2rem; align-items: baseline; padding-top: 0.6rem; }
+.atlas-map.big .atlas-cap h2 { min-height: 0; }
+.atlas-map.big .atlas-cap > p:not(.hc-year) { grid-column: 2; }
+.atlas-map.big .hc-year { grid-row: 1 / span 4; }
+.march { fill: none; stroke: var(--ink); stroke-opacity: 0.55; stroke-linejoin: round; }
+.atlas-cap .map-key { gap: 0.25rem 1rem; }

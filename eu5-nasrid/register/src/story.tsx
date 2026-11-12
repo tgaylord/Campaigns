@@ -5,7 +5,12 @@ import { Frieze, frac } from "./frieze";
 import { formatHijri, formatWestern } from "./hijri";
 
 const VIEW = campaign.map?.story ?? [1215, 1225, 1440, 900];
-const outline = (date: string) => D.outlines[date] ?? D.outlines[Object.keys(D.outlines).filter((d) => d <= date).at(-1) ?? ""] ?? { o: "", s: "", a: "" };
+const outline = (date: string) => {
+  const x = D.outlines[date] ?? D.outlines[Object.keys(D.outlines).filter((d) => d <= date).at(-1) ?? ""];
+  return x ? { o: D.shapes[x.o], s: D.shapes[x.s], a: D.shapes[x.a], r: x.r.map((k) => D.shapes[k]) } : { o: "", s: "", a: "", r: [] as string[] };
+};
+const RIVALS = campaign.map?.rivals ?? [];
+const rivalFill = (k: number) => `color-mix(in srgb, light-dark(${RIVALS[k].color[0]}, ${RIVALS[k].color[1]}) 62%, var(--surface))`;
 const plain = (s: string) => s.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/[*_]/g, "");
 const firstSentence = (s: string) => plain(s).split(/(?<=[.!?])\s/)[0];
 
@@ -44,13 +49,21 @@ function useScrub() {
   }, [playing]);
   const pick = (y: number) => { setPlaying(false); setI(Math.max(0, reckonings.findLastIndex((x) => +x.date.slice(0, 4) <= y))); };
   const last = reckonings.length - 1;
+  useEffect(() => {
+    const key = (e: KeyboardEvent) => {
+      if (e.metaKey || e.ctrlKey || e.altKey || /^(INPUT|SELECT|TEXTAREA)$/.test((e.target as HTMLElement)?.tagName ?? "")) return;
+      if (e.key === "ArrowLeft") { setPlaying(false); setI((x) => Math.max(0, x - 1)); }
+      if (e.key === "ArrowRight") { setPlaying(false); setI((x) => Math.min(last, x + 1)); }
+    };
+    addEventListener("keydown", key); return () => removeEventListener("keydown", key);
+  }, []);
   const controls = (
     <>
       <div className="hero-ctl">
         <button type="button" className="play" onClick={() => { if (i >= last) setI(0); setPlaying((p) => !p); }}>{playing ? "Pause" : i >= last ? `Play from ${reckonings[0].date.slice(0, 4)}` : "Play on"}</button>
         <button type="button" onClick={() => { setPlaying(false); setI(Math.max(0, i - 1)); }} disabled={i === 0} aria-label="The reckoning before">Earlier</button>
         <button type="button" onClick={() => { setPlaying(false); setI(Math.min(last, i + 1)); }} disabled={i === last} aria-label="The reckoning after">Later</button>
-        <span className="hint">or choose a year on the band</span>
+        <span className="hint">or choose a year on the band, or use the arrow keys</span>
       </div>
       <Frieze at={+reckonings[i].date.slice(0, 4)} onPick={pick} />
     </>
@@ -115,17 +128,21 @@ export function Atlas() {
   const k = lens === "faith" ? 1 : 2;
   const fought = beats.filter((b) => b.at && b.on <= r.date);
   const souls = r.realm.souls ?? 0;
+  const [big, setBig] = useState(false);
+  useEffect(() => { document.documentElement.toggleAttribute("data-wide", big); return () => document.documentElement.removeAttribute("data-wide"); }, [big]);
   return (
     <>
       <header className="page-head"><h1>The atlas</h1><p className="sub">One map of the realm, looked at five ways, at any reckoning from {Y0} to {Y1}.</p></header>
       <section className="atlas">
         <div className="lenses" role="tablist" aria-label="Ways of looking">
           {LENSES.map((l) => <button key={l.id} role="tab" type="button" aria-selected={lens === l.id} onClick={() => setLens(l.id)}>{l.label}</button>)}
+          <button type="button" className="grow" aria-pressed={big} onClick={() => setBig((b) => !b)}>{big ? "Shrink the map" : "Enlarge the map"}</button>
         </div>
-        <div className="atlas-map">
+        <div className={`atlas-map${big ? " big" : ""}`}>
           <Land view={view} label={`${L.label}, ${y}`}>
             {lens === "hold" && (
               <>
+                {o.r.map((d, n) => d && <path key={n} className="l-rival" d={d} style={{ fill: rivalFill(n) }} />)}
                 <path className="l-ally" d={o.a} /><path className="l-subject" d={o.s} /><path className="l-ours" d={o.o} />
                 {(D.neighbours[r.date] ?? []).map(([n, x, yy, ally]) => <text key={n} className={`nb${ally ? " ally" : ""}`} x={x} y={yy} textAnchor="middle" style={{ fontSize: u * 1.5, strokeWidth: u * 0.35 }}>{n}</text>)}
               </>
@@ -156,7 +173,7 @@ export function Atlas() {
             {lens === "faith" && souls > 0 && <p className="hc-count">Of {cf.format(souls)} souls: {share(r.peoples?.faiths, souls)}.</p>}
             {lens === "tongue" && souls > 0 && <p className="hc-count">Of {cf.format(souls)} souls: {share(r.peoples?.cultures, souls)}.</p>}
             {lens === "blood" && <p className="hc-count">{fought.length} battles placed by {y}: {fought.filter((b) => b.won === true).length} won, {fought.filter((b) => b.won === false).length} lost. The larger marks were fought this year.</p>}
-            {lens === "hold" && <p className="map-key"><span><i className="sw l-ours" />The crown</span><span><i className="sw l-subject" />Ṭāʾifas and vassals</span><span><i className="sw l-ally" />Allies</span></p>}
+            {lens === "hold" && <p className="map-key"><span><i className="sw l-ours" />The crown</span><span><i className="sw l-subject" />Ṭāʾifas and vassals</span><span><i className="sw l-ally" />Allies</span>{RIVALS.map((v, n) => o.r[n] ? <span key={v.name}><i className="sw" style={{ background: rivalFill(n) }} />{v.name}</span> : null)}</p>}
             {lens === "grew" && <p className="map-key"><span><i className="sw ring-old" />Held since {Y0}</span><span><i className="sw ring-new" />Newly won</span></p>}
             {towns && <p className="map-key"><span><i className={`sw tile-${lens}`} />{lens === "faith" ? "All Muslim" : "All Andalusī"}</span><span><i className="sw tile-base" />None</span><span>Iberia and the near shores only</span></p>}
             {lens === "blood" && <p className="map-key"><span><i className="bd won" />Won</span><span><i className="bd lost" />Lost</span><span><i className="bd even" />Unrecorded</span></p>}
@@ -249,10 +266,12 @@ export function BattleMap({ bs, from }: { bs: Beat[]; from?: string }) {
   const view = [cx - w / 2, cy - h / 2, w, h], u = w / 100; // u: one percent of the width, so marks keep their size
   const o = outline(from ?? pts[0].on);
   const seen = new Map<string, number>();
+  const own = pts.filter((b) => !b.minor);
   return (
     <figure className="battlemap">
       <Land view={view} label="Where the war was fought">
         <path className="l-subject" d={o.s} /><path className="l-ours" d={o.o} />
+        {own.length > 1 && <polyline className="march" points={own.map((b) => b.at!.join(",")).join(" ")} style={{ strokeWidth: u * 0.22, strokeDasharray: `${u * 0.9} ${u * 0.7}` }} />}
         {pts.map((b, k) => {
           const key = b.at!.join(","), n = seen.get(key) ?? 0; seen.set(key, n + 1);
           const x = b.at![0] + n * u * 1.1, y = b.at![1] - n * u * 0.5, r = (b.minor ? 0.9 : 1.35) * u;
@@ -265,7 +284,7 @@ export function BattleMap({ bs, from }: { bs: Beat[]; from?: string }) {
           );
         })}
       </Land>
-      <figcaption><span><i className="bd won" />Won</span><span><i className="bd lost" />Lost</span><span><i className="bd even" />Undecided or unrecorded</span><span>Small marks are allies' fights. Numbers follow the order of the fighting; hover a mark for the day.</span></figcaption>
+      <figcaption><span><i className="bd won" />Won</span><span><i className="bd lost" />Lost</span><span><i className="bd even" />Undecided or unrecorded</span><span>Small marks are allies' fights. Numbers follow the order of the fighting, and the dashed line joins al-Andalus's own battles in that order. Hover a mark for the day.</span></figcaption>
     </figure>
   );
 }

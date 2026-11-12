@@ -24,6 +24,38 @@ map:
     - 5900
     - 1100
   names: ../data/world/tags.json
+  rivals:
+    - name: Castile
+      tags:
+        - CAS
+      color:
+        - '#b8860b'
+        - '#c99a2e'
+    - name: Portugal
+      tags:
+        - POR
+      color:
+        - '#5e8c31'
+        - '#86b34f'
+    - name: Aragon
+      tags:
+        - ARA
+      color:
+        - '#a33a63'
+        - '#cf6a9c'
+    - name: France
+      tags:
+        - FRA
+      color:
+        - '#6d4bb5'
+        - '#a48be0'
+    - name: England, later the Angevins
+      tags:
+        - ENG
+        - ANV
+      color:
+        - '#b3261e'
+        - '#e0655c'
   layers: ../data/map/layers/{date}.json
   centroids: ../data/map/centroids.json
   labels:

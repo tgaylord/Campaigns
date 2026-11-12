@@ -8,9 +8,9 @@ export type Person = { name: string; arabic?: string; sex?: string; house?: stri
 export type Thread = { id: string; kind: "story" | "war"; title: string; state: string; from?: string; to?: string; premise?: string; outcome?: string; part?: string; sides?: Record<string, string[]>; note?: string; game?: string };
 export type Reckoning = { date: string; title: string; summary?: string; realm: Record<string, number>; court?: { ruler?: string; heir?: string; regent?: string; council?: { who: string; seat: string }[] }; peoples?: { cultures?: Record<string, number>; faiths?: Record<string, number> }; standing?: { wars?: string[]; allies?: string[]; subjects?: string[]; estates?: { name: string; power?: number; mood?: number }[] }; questions?: string[] };
 export type Data = {
-  campaign: { map?: { story?: number[]; wide?: number[]; towns?: number[] }; title: string; arabic?: string; subtitle: string; game: string; player: string; start: string; measures: { key: string; label: string; format?: string }[]; kinds: Record<string, { label: string; tone: string }>; tones: Record<string, string>; from: Record<string, string>; eras: { arabic?: string; id: string; title: string; from: string; to?: string; summary?: string }[] };
+  campaign: { map?: { story?: number[]; wide?: number[]; towns?: number[]; rivals?: { name: string; tags: string[]; color: string[] }[] }; title: string; arabic?: string; subtitle: string; game: string; player: string; start: string; measures: { key: string; label: string; format?: string }[]; kinds: Record<string, { label: string; tone: string }>; tones: Record<string, string>; from: Record<string, string>; eras: { arabic?: string; id: string; title: string; from: string; to?: string; summary?: string }[] };
   threads: Thread[]; cast: Record<string, Person>; places: Record<string, { name: string; plain?: string }>; reckonings: Reckoning[]; beats: Beat[]; tellings: Telling[];
-  outlines: Record<string, { o: string; s: string; a: string }>; land: string;
+  outlines: Record<string, { o: number; s: number; a: number; r: number[] }>; shapes: string[]; land: string;
   neighbours: Record<string, [string, number, number, number][]>; mosaic: { towns: number[][]; frames: Record<string, number[]> };
   map: { view: number[]; labels: Record<string, string>; realms: { t: string; d: string; c: number[]; role: string }[] } | null;
 };
