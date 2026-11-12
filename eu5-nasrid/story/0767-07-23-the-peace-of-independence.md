@@ -3,7 +3,7 @@ title: Of the Conqueror, the Renegade at San Clemente, and the Peace of Independ
 date: 1366-04-05
 era: book-of-balance
 kind: chronicle
-people: [saad-ibn-yusuf, murad, ibn-al-khatib, aiman-mamluk, dua-marinid, ismail-ibn-saad, umm-al-fath-bint-saad, rodrigo-of-silves]
+people: [saad-ibn-yusuf, murad, ibn-al-khatib, aiman-mamluk, dua-marinid, ismail-ibn-saad, umm-al-fath-bint-saad, rodrigo-of-silves, sayyida-of-fezzan]
 places: [balansiyya, tulaytula, gharnata, walba, ayamunt, ukshunuba]
 wars: [war-of-independence]
 sources: [1364-12-13-birth-umm-al-fath-bint-saad, 1365-03-saad-conqueror, 1365-07-14-battle-canete, 1365-09-02-peace-aragon, 1366-01-06-battle-san-clemente, 1366-03-08-birth-ismail-ibn-saad, 1366-04-05-peace-castile, 1366-04-13-taifa-al-gharb, 1366-04-05-the-south-burned]
@@ -16,7 +16,7 @@ The war in the east still had to be finished. On the twenty-fourth of Shawwāl, 
 
 That left Qashtāla, alone, as [Gharnāṭa](place:gharnata) had been alone so often. On the twenty-second of Rabīʿ al-Thānī 767 Murād found its last army in the field at San Clemente, in La Mancha. There were nine hundred and fifty men, and at their head was a man the court knew well. It was [Ibn al-Khaṭīb](person:ibn-al-khatib), the vizier who had gone over to the Cross a quarter of a century before and served Qashtāla ever since as Frederick, its admiral. Murād had six thousand two hundred and fifty men. Eight hundred and forty Castilians died, a hundred and five were taken, and thirty-one Granadans fell. The renegade escaped, as he always did. The army pushed on into La Mancha and up the road to [Ṭulayṭula](place:tulaytula), the old city of the Goths, and held it when the envoys came.
 
-A month before the peace, [Duʿāʾ](person:dua-marinid) gave the sultan a son, [Ismāʿīl](person:ismail-ibn-saad), and the realm had an heir of the sultan's own blood. The ʿulamāʾ remembered whose widow his mother was, and prayed for the child all the same.
+A month before the peace, [Duʿāʾ](person:dua-marinid) gave the sultan a son, [Ismāʿīl](person:ismail-ibn-saad), and the realm had an heir of the sultan's own blood. The ʿulamāʾ remembered whose widow his mother was, and prayed for the child all the same. From that month the palace had two parties. Aiman had the sultan's first child and Egypt behind her: the Mamlūk sultan's alliance, his money and his soldiers. Duʿāʾ had the heir, the dīwān, and the learning of the Maghrib that half the scholars of the realm now copied. Sayyida, the matriarch, belonged to neither and was courted by both. The sultan had just won his kingdom its freedom. He found that it was now worth fighting over, and that the fight had begun in his own house.
 
 On the twenty-third of Rajab 767 the peace was sealed, and the tyrant of Qashtāla let Gharnāṭa go. The house of Naṣr, which had paid tribute to the Castilian crown for longer than anyone living could remember, declared itself free and subject to no one but Allāh. Qashtāla gave up the country of [Walba](place:walba): six towns between the Guadalquivir and the Guadiana, from the coast to the hills of Aracena. Among them was [Ayamūnt](place:ayamunt), where al-Ḥājj Yūsuf had died on the march, so the son brought the place of his father's death into the realm. Qashtāla paid a sum into the treasury and owed reparations for ten years. Ṭulayṭula was given back, burned and half emptied, its people fewer by a third than they had been seven years before.
 

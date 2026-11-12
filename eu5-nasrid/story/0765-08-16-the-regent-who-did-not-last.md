@@ -3,7 +3,7 @@ title: Of the Regent Who Did Not Last, and the Sultan's Second Wife
 date: 1364-05-19
 era: book-of-balance
 kind: chronicle
-people: [saad-ibn-yusuf, nasr-al-istijji, dua-marinid, aiman-mamluk, yusuf-i]
+people: [saad-ibn-yusuf, nasr-al-istijji, dua-marinid, aiman-mamluk, yusuf-i, sayyida-of-fezzan]
 places: [gharnata, ishbiliyya, qurtuba, balansiyya]
 wars: [war-of-independence]
 sources: [1364-01-18-saad-of-age, 1364-01-18-death-nasr, 1364-01-saad-marries-dua, 1364-03-01-battle-canete, 1364-04-05-battle-castellon, 1364-05-19-ulama-displeased, 1364-05-19-jamaa-summoned]
@@ -14,7 +14,7 @@ On the twelfth of Rabīʿ al-Thānī in the year 765 our lord [Saʿd](person:saa
 
 Within days the young sultan made his choice of a second wife. He had one already, [Aiman](person:aiman-mamluk), daughter of the Mamlūk sultan, promised to him when he was three and married to him before his majority. But a sultan of al-Andalus needs the Maghrib as well as Egypt, and there was a Marīnid princess in his own palace. So Saʿd married [Duʿāʾ](person:dua-marinid): twice widowed, ten years his elder, the most capable mind in the dīwān, and the widow of his father.
 
-The ʿulamāʾ were outraged, and they were right to be. The Book is plain on it: *do not marry those women whom your fathers married.* The jurists of [Gharnāṭa](place:gharnata) said so from the pulpit of the great mosque, and the jurists of [Qurṭuba](place:qurtuba) said it more loudly still. Men who had loved [al-Ḥājj Yūsuf](person:yusuf-i) said that his son had married his stepmother before the earth on his grave had settled. In the souks they said worse: that it was Duʿāʾ, not the boy, who had arranged it, and that a regent's fall from his horse had cleared the way for her. By the middle of Shaʿbān the ʿulamāʾ were nearer to open defiance of the throne than they had been in a generation. In the middle of a war that was a danger, not just a scandal.
+The ʿulamāʾ were outraged, and they were right to be. The Book is plain on it: *do not marry those women whom your fathers married.* The jurists of [Gharnāṭa](place:gharnata) said so from the pulpit of the great mosque, and the jurists of [Qurṭuba](place:qurtuba) said it more loudly still. Men who had loved [al-Ḥājj Yūsuf](person:yusuf-i) said that his son had married his stepmother before the earth on his grave had settled. In the souks they said worse: that it was Duʿāʾ, not the boy, who had arranged it, and that a regent's fall from his horse had cleared the way for her. No one took the marriage harder than the sultan's mother. [Sayyida](person:sayyida-of-fezzan) had shared a husband with Duʿāʾ for nine years, and now she was asked to share a son. She did not speak against the match in public. She did not speak to Duʿāʾ in private for a year. [Aiman](person:aiman-mamluk), who had been Saʿd's only wife, found the cleverest woman in the dīwān sharing her husband's bed and his ear, and she wrote to Cairo. By the middle of Shaʿbān the ʿulamāʾ were nearer to open defiance of the throne than they had been in a generation. In the middle of a war that was a danger, not just a scandal.
 
 Meanwhile the war went badly in the east. On the twenty-sixth of Jumādā al-Ūlā the Portuguese, whom the dead sultan had marched west to find, appeared instead at Cañete and broke the host of [Balansiyya](place:balansiyya). In Rajab the ṭāʾifas attacked the joined armies of Portugal and Arghūn at Castellón and were thrown back.
 

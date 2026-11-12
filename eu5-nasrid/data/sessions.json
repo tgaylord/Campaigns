@@ -923,9 +923,9 @@
  {
   "id": "2026-11-12",
   "date": "2026-11-12",
-  "commits": 7,
+  "commits": 8,
   "firstCommit": "e4cb054",
-  "lastCommit": "1a440a1",
+  "lastCommit": "68fb049",
   "uncommitted": true,
   "claudeSessions": [
    "session_01BjCUTWMwSncdsoun2VQ9xv"
@@ -937,18 +937,21 @@
    "[eu5-nasrid] 1443-1447 entries: where the treasury went, the price of the harbours, why Fernando Po was given up",
    "[eu5-nasrid] Phase two: the glossed folio on every leaf, and the names switch",
    "[eu5-nasrid] Folio and names switch: fixes from a fresh-eyes review",
-   "[eu5-nasrid] Tiers, dated stations and arcs for the Hourglass"
+   "[eu5-nasrid] Tiers, dated stations and arcs for the Hourglass",
+   "[eu5-nasrid] Arcs revised from Trent's direction: the queens' rivalry, the matriarch, Faraj's desert, the two princes"
   ],
   "reached": {
-   "from": "1442-08-29",
+   "from": "1368-11-20",
    "to": "1447-02-01"
   },
   "entries": [
+   "0770-04-08-of-the-two-queens-in-the-autumn-fas-came-again",
    "0848-10-20-of-the-palace-on-the-river-and-the-harbours-of-the-crown",
    "0849-12-16-of-the-cape-where-africa-ends-and-the-island-given-up",
    "0850-10-20-of-the-closed-ports-of-the-franks"
   ],
   "notes": [
+   "0770-04-09-ooc-the-court-of-saads-reign-revised",
    "0850-11-15-ooc-the-saves-of-1442-to-1447"
   ],
   "checkpoints": [

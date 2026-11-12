@@ -3,7 +3,7 @@ title: Of the Reordering of the Realm, and the Restoration of al-Andalus
 date: 1375-03-16
 era: book-of-the-marches
 kind: chronicle
-people: [saad-ibn-yusuf, dolca-of-murcia, bernarda-of-murcia, ismail-ibn-saad, francesc-de-montsoriu, alfons-de-borja, maryam-bint-yusuf, aiman-mamluk, fatima-bint-yusuf]
+people: [saad-ibn-yusuf, dolca-of-murcia, bernarda-of-murcia, ismail-ibn-saad, francesc-de-montsoriu, alfons-de-borja, maryam-bint-yusuf, aiman-mamluk, fatima-bint-yusuf, dua-marinid]
 places: [mursiyya, barshaluna, qurtuba, gharnata]
 wars: [war-of-the-upper-march]
 sources: [1375-03-15-the-new-taifas, 1375-03-16-murcia-into-the-crown, 1375-03-16-bernarda-betrothed, 1375-03-16-two-new-taifas, 1375-03-16-restoration-of-al-andalus, 1375-03-17-maryam-to-the-diwan, 1375-04-15-catalan-marriage]
@@ -20,7 +20,7 @@ The third part was the restoration. Ever since the first war against the Aragone
 
 The scholars put a question to him that al-Andalus had faced since the days of the Umayyads. Would he revive the convivencia of the caliphs, when mosques stood beside synagogues and churches, Ibn Rushd argued with Aristotle and Maimonides found refuge under Muslim rule? Or would he take the road of the Almohads and the Almoravids, who crossed the Strait with armies of Berber cavalry and built an empire on military piety and strict doctrine? The Emperor did not hesitate. *Let Qurṭuba shine again as the ornament of the world.* Tolerance, wealth and learning were to stand level with the Word. The realm would feel it for thirty years, in its scholars and its markets and in the ease of its Christians and Jews.
 
-The dīwān changed with the realm. The next day the Emperor's younger sister [Maryam](person:maryam-bint-yusuf) took a seat in it, eighteen years old and the ablest mind at court, set to reshaping the realm's ideals. His principal wife, [Aiman](person:aiman-mamluk), held no office there, for no custom allowed a consort to sit on the council. Everyone at court knew she sat there all the same, by the strength of the harem. A month later his sister [Fāṭima](person:fatima-bint-yusuf) was married to the ḥājib of Barshalūna, and the house of Naṣr was bound to the Catalans.
+The dīwān changed with the realm. The next day the Emperor's younger sister [Maryam](person:maryam-bint-yusuf) took a seat in it, eighteen years old and the ablest mind at court, set to reshaping the realm's ideals. His principal wife, [Aiman](person:aiman-mamluk), held no office there, for no custom allowed a consort to sit on the council. Everyone at court knew she sat there all the same, by the strength of the harem. [Duʿāʾ](person:dua-marinid), who held her seat by law and had held it for twenty years, was heard to say that she had never needed to sit anywhere by strength. Aiman was heard to answer that she had never needed the law. A month later his sister [Fāṭima](person:fatima-bint-yusuf) was married to the ḥājib of Barshalūna, and the house of Naṣr was bound to the Catalans.
 
 Much work remained. The bureaucracy would have to stretch over the new lands, and Qashtāla watched the consolidation greedily from behind a truce with three months left to run. But the empire had been proclaimed, and it was not waiting for the Christians' permission.
 

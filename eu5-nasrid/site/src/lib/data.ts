@@ -14,6 +14,7 @@ export type Person = {
   tier?: "central" | "key";
   stations: { role: string; from: string; to: string | null; source: "save" | "checkpoints"; approx: boolean }[];
   arc: { from: string; to?: string; text: string; by: "trent" | "chronicle"; source?: string }[];
+  ties: { with: string; kind: "rival" | "ally" | "kin" | "faction" | "bond" | "patron"; from: string; to?: string; text: string; by: "trent" | "chronicle"; source?: string }[];
 };
 export type Place = {
   id: string; name: string; nameArabic?: string; nameGame: string; kind: string;

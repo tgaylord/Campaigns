@@ -31,3 +31,19 @@
 .standing-shares .bld { margin: 0; color: var(--mist); line-height: 1.6; }
 .standing-shares .bld::first-letter { text-transform: uppercase; }
 .held-track .track .span.via { background: repeating-linear-gradient(45deg, var(--gilt) 0 6px, var(--gilt-lo) 6px 10px); }
+
+/* arcs and ties */
+.arc, .ties { margin: 2rem 0 0; max-width: 52rem; }
+.arc-l { list-style: none; margin: 0; padding: 0; border-left: 1px solid rgba(212, 171, 85, 0.35); }
+.arc-l li { position: relative; padding: 0 0 0.9rem 1.1rem; }
+.arc-l li::before { content: ""; position: absolute; left: -4px; top: 0.45rem; width: 7px; height: 7px; border-radius: 50%; background: var(--gilt); }
+.arc-l .ad { display: block; font-size: 0.78rem; color: var(--gilt); }
+.arc-l .at { display: block; }
+.arc-l .ab { display: block; font-size: 0.72rem; color: var(--dusk); }
+.ties-l { list-style: none; margin: 0; padding: 0; }
+.ties-l li { padding: 0.45rem 0; border-bottom: 1px solid rgba(158, 167, 199, 0.15); }
+.ties-l .tk { display: inline-block; min-width: 9.5rem; font-size: 0.75rem; color: var(--mist); }
+.ties-l .ty { font-size: 0.78rem; color: var(--dusk); }
+.ties-l .tt { color: var(--mist); }
+.ties-l .tie-rival .tk { color: var(--cinnabar-hi); }
+.ties-l .tie-ally .tk, .ties-l .tie-bond .tk { color: var(--zellij-hi); }

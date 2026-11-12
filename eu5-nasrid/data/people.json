@@ -432,10 +432,25 @@
     "source": "save of 8 September 1341"
    },
    {
+    "from": "1341-07-08",
+    "text": "Why he went over, the chronicle never learned. He serves Qashtāla's fleets for thirty years, and is never taken.",
+    "by": "chronicle",
+    "source": "his record"
+   },
+   {
     "from": "1366-01-06",
     "text": "Leads Qashtāla's last field army, and survives its destruction at San Clemente.",
     "by": "chronicle",
     "source": "save of 5 April 1366"
+   }
+  ],
+  "ties": [
+   {
+    "with": "murad",
+    "kind": "rival",
+    "from": "1366-01-06",
+    "text": "Murād broke his last army at San Clemente; the renegade escaped, as he always did.",
+    "by": "chronicle"
    }
   ]
  },
@@ -614,6 +629,12 @@
     "source": "Of the First Blood at Jumalla"
    },
    {
+    "from": "1343-01-27",
+    "text": "Pays down the debt to the estates loan by loan: the state mended before it is risked.",
+    "by": "chronicle",
+    "source": "Of the Lean Years, the Gold of Tūnis, and the Royal Decree"
+   },
+   {
     "from": "1346-08-01",
     "text": "Keeps Granada alive on the scales between the three crowns and the Marīnids, negotiating where he cannot fight.",
     "by": "chronicle",
@@ -630,6 +651,39 @@
     "text": "Makes the Ḥajj and leaves his brother Faraj to hold the throne.",
     "by": "chronicle",
     "source": "Of the Royal Ḥajj"
+   }
+  ],
+  "ties": [
+   {
+    "with": "alfonso-xi",
+    "kind": "rival",
+    "from": "1337-04-01",
+    "to": "1363-08-01",
+    "text": "The Castilian overlord to whom Gharnāṭa paid tribute, his rival for the whole of his reign.",
+    "by": "chronicle"
+   },
+   {
+    "with": "yahya-rahhu",
+    "kind": "ally",
+    "from": "1339-09-02",
+    "to": "1355-02-18",
+    "text": "The kingmaker he took into his pay against the dīwān's warning.",
+    "by": "chronicle"
+   },
+   {
+    "with": "ibn-al-khatib",
+    "kind": "ally",
+    "from": "1339-05-24",
+    "to": "1341-07-08",
+    "text": "His ablest man, given the host against Arghūn.",
+    "by": "trent"
+   },
+   {
+    "with": "ibn-al-khatib",
+    "kind": "rival",
+    "from": "1341-07-08",
+    "text": "Gone over to Qashtāla.",
+    "by": "chronicle"
    }
   ]
  },
@@ -1025,6 +1079,12 @@
   "tier": "central",
   "arc": [
    {
+    "from": "1342-12-30",
+    "text": "Son of the kingmaker the dīwān once warned against; his life is the proof that the Raḥḥū could be trusted.",
+    "by": "trent",
+    "source": "Trent's direction, November 2026"
+   },
+   {
     "from": "1359-04-02",
     "text": "Takes a seat in the dīwān at sixteen, promoting Andalusī culture.",
     "by": "chronicle",
@@ -1047,6 +1107,15 @@
     "text": "The first man outside the house of Naṣr to be given a ṭāʾifa.",
     "by": "chronicle",
     "source": "save of 1 November 1411"
+   }
+  ],
+  "ties": [
+   {
+    "with": "yahya-rahhu",
+    "kind": "kin",
+    "from": "1342-12-30",
+    "text": "Son of the kingmaker the dīwān warned against, he spends his life proving the Raḥḥū loyal.",
+    "by": "trent"
    }
   ]
  },
@@ -1299,6 +1368,45 @@
     "by": "trent",
     "source": "Trent's reading"
    }
+  ],
+  "ties": [
+   {
+    "with": "nasr-al-istijji",
+    "kind": "rival",
+    "from": "1363-08-01",
+    "to": "1364-01-18",
+    "text": "The regent who did not last.",
+    "by": "chronicle"
+   },
+   {
+    "with": "murad",
+    "kind": "ally",
+    "from": "1364-08-03",
+    "text": "His general of the War of Independence and the Marīnid war.",
+    "by": "chronicle"
+   },
+   {
+    "with": "ibn-al-khatib",
+    "kind": "rival",
+    "from": "1366-01-06",
+    "text": "The renegade who led Qashtāla's last army against him.",
+    "by": "chronicle"
+   },
+   {
+    "with": "abu-inan-faris",
+    "kind": "rival",
+    "from": "1368-10-24",
+    "to": "1370-09-12",
+    "text": "The Marīnid sultan who came across the Strait to bring Gharnāṭa to heel, and failed.",
+    "by": "chronicle"
+   },
+   {
+    "with": "khalid-ibn-yahya",
+    "kind": "ally",
+    "from": "1369-10-15",
+    "text": "The favourite, sent wherever the house does not go itself.",
+    "by": "trent"
+   }
   ]
  },
  {
@@ -1343,6 +1451,16 @@
     "text": "Quarrels openly with Duʿāʾ while Ismāʿīl is regent.",
     "by": "trent",
     "source": "Trent's account"
+   }
+  ],
+  "ties": [
+   {
+    "with": "bolot-mamluk",
+    "kind": "faction",
+    "from": "1368-10-03",
+    "to": "1391-10-14",
+    "text": "Her half-brother on the throne of Egypt: the Mamlūk alliance is her party's.",
+    "by": "chronicle"
    }
   ]
  },
@@ -1416,6 +1534,31 @@
     "text": "With her son regent, the quarrel with Aiman comes into the open.",
     "by": "trent",
     "source": "Trent's account"
+   }
+  ],
+  "ties": [
+   {
+    "with": "aiman-mamluk",
+    "kind": "rival",
+    "from": "1364-01-18",
+    "to": "1388-12-28",
+    "text": "The Maghrib against Egypt, for the sultan's court and his heir.",
+    "by": "trent"
+   },
+   {
+    "with": "sayyida-of-fezzan",
+    "kind": "rival",
+    "from": "1354-08-12",
+    "to": "1380-11-19",
+    "text": "The matriarch never forgave the Marīnid wife, nor her marriage to her son.",
+    "by": "trent"
+   },
+   {
+    "with": "abu-inan-faris",
+    "kind": "kin",
+    "from": "1354-08-12",
+    "text": "A daughter of his house, married into the court he twice made war on.",
+    "by": "chronicle"
    }
   ]
  },
@@ -1836,6 +1979,12 @@
     "source": "Trent's account, late 1374"
    },
    {
+    "from": "1374-12-01",
+    "text": "Raised as his mother's candidate against Aiman's son Yūsuf; he learns early to tell each elder what that elder wishes to hear.",
+    "by": "trent",
+    "source": "Trent's account; Of the Reordering of the Realm"
+   },
+   {
     "from": "1385-08-23",
     "text": "Holds the realm as regent while his father makes the Ḥajj, between two queens quarrelling at court.",
     "by": "trent",
@@ -1870,6 +2019,52 @@
     "text": "His eye on the treasury hardens into greed.",
     "by": "trent",
     "source": "Trent's screen, late 1414"
+   },
+   {
+    "from": "1414-10-24",
+    "text": "Breaks the umarāʾ step by step: their mercenaries, then their lordships, then their equality, and never lets them rise.",
+    "by": "chronicle",
+    "source": "Of the Death of the Emperor Ismāʿīl, and the Two Princes"
+   }
+  ],
+  "ties": [
+   {
+    "with": "yusuf-ibn-saad",
+    "kind": "rival",
+    "from": "1374-12-01",
+    "to": "1398-09-03",
+    "text": "Half-brothers raised as rivals by their mothers, Duʿāʾ and Aiman.",
+    "by": "trent"
+   },
+   {
+    "with": "yusuf-ibn-saad",
+    "kind": "ally",
+    "from": "1398-09-03",
+    "to": "1429-06-28",
+    "text": "The half-brother who came home from Benabarre and served him in the dīwān for thirty years.",
+    "by": "chronicle"
+   },
+   {
+    "with": "khayr-al-din-al-jayyani",
+    "kind": "patron",
+    "from": "1392-02-21",
+    "text": "Sent to find the sea road to Mālī.",
+    "by": "chronicle"
+   },
+   {
+    "with": "tiramakhan-mali",
+    "kind": "ally",
+    "from": "1428-01-01",
+    "text": "The Mansa's word: no tariff on Andalusī merchants anywhere in Mālī.",
+    "by": "trent"
+   },
+   {
+    "with": "khalid-ibn-yahya",
+    "kind": "ally",
+    "from": "1405-07-02",
+    "to": "1412-09-02",
+    "text": "His father's favourite commands the joint host that breaks the rising at Granadilla.",
+    "by": "chronicle"
    }
   ]
  },
@@ -1964,6 +2159,12 @@
     "text": "A zealot who means to have al-Andalus back for Fās, and annuls Morocco's treaties with Granada.",
     "by": "chronicle",
     "source": "traits zealot, offensive planner"
+   },
+   {
+    "from": "1354-08-12",
+    "text": "A princess of his own house sits in the dīwān of the enemy he means to subdue.",
+    "by": "chronicle",
+    "source": "Duʿāʾ's record"
    },
    {
     "from": "1368-10-24",
@@ -3048,6 +3249,22 @@
     "by": "trent",
     "source": "Trent, on Harbor Administration"
    }
+  ],
+  "ties": [
+   {
+    "with": "yusuf-ibn-ismail-ibn-muhammad",
+    "kind": "patron",
+    "from": "1438-01-16",
+    "text": "Makes his grandson admiral, as the sea made a man of him.",
+    "by": "trent"
+   },
+   {
+    "with": "edward-v-of-england",
+    "kind": "rival",
+    "from": "1440-06-12",
+    "text": "The Angevin crowns' trade war, market by market.",
+    "by": "chronicle"
+   }
   ]
  },
  {
@@ -3260,6 +3477,15 @@
     "text": "Mends the damage of the Jamāʿa of 846, appeasing the estates.",
     "by": "chronicle",
     "source": "Of the Princes' Mending"
+   }
+  ],
+  "ties": [
+   {
+    "with": "ahmad-ibn-muhammad-ibn-ismail",
+    "kind": "bond",
+    "from": "1408-08-05",
+    "text": "Half-brothers bound from childhood: Ismāʿīl the tongue, Aḥmad the builder; Aḥmad to head his council.",
+    "by": "trent"
    }
   ]
  },
@@ -4434,6 +4660,21 @@
     "text": "Enforces the Emperor's embargo on the Angevins at sea.",
     "by": "chronicle",
     "source": "Of the Trade War with Genoa"
+   },
+   {
+    "from": "1443-07-24",
+    "text": "A prince of two shores: two of his sons by Amie are born at Niani, at the Mansa's court.",
+    "by": "chronicle",
+    "source": "autosave of 1 February 1447"
+   }
+  ],
+  "ties": [
+   {
+    "with": "tiramakhan-mali",
+    "kind": "kin",
+    "from": "1438-01-16",
+    "text": "His father-in-law; two of his sons are born at the Mansa's court at Niani.",
+    "by": "chronicle"
    }
   ]
  },

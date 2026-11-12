@@ -20,6 +20,12 @@ export default function PersonPage() {
     offices.set(c.role, [...(offices.get(c.role) ?? []), s.date]);
   }));
 
+  // ties kept on either side of the pair
+  const ties = [
+    ...p.ties.map((x) => ({ ...x, other: x.with })),
+    ...people.flatMap((o) => o.ties.filter((x) => x.with === p.id).map((x) => ({ ...x, other: o.id }))),
+  ].sort((a, b) => a.from.localeCompare(b.from));
+
   return (
     <div className="page record-page">
       <header className="record-head">
@@ -46,6 +52,36 @@ export default function PersonPage() {
         {p.nameGame && p.nameGame !== p.name && <div><dt>In the game</dt><dd>{p.nameGame}</dd></div>}
       </dl>
       {p.note && <p className="muted">{p.note}</p>}
+
+      {p.arc.length > 0 && (
+        <section className="arc">
+          <h2 className="section-title">What drives {p.female ? "her" : "him"}</h2>
+          <ol className="arc-l">
+            {p.arc.map((a, k) => (
+              <li key={k}>
+                <span className="ad ui">{western(a.from)}</span>
+                <span className="at">{a.text}</span>
+                <span className="ab ui">{a.by === "trent" ? "Trent's reading" : "the chronicle's reading"}{a.source ? ` · ${a.source}` : ""}</span>
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
+      {ties.length > 0 && (
+        <section className="ties">
+          <h2 className="section-title">Allies and rivals</h2>
+          <ul className="ties-l">
+            {ties.map((x, k) => (
+              <li key={k} className={`tie-${x.kind}`}>
+                <span className="tk ui">{TIE_WORD[x.kind]}</span>
+                <EntityLink kind="person" id={x.other}>{personById.get(x.other)?.name ?? x.other}</EntityLink>
+                <span className="ty ui"> {year(x.from)}{x.to ? `–${year(x.to)}` : ""}</span>
+                <span className="tt"> {x.text}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       <Mentions story={story} events={events} />
     </div>
@@ -79,3 +115,5 @@ export function Mentions({ story, events }: { story: ReturnType<typeof mentionsO
     </>
   );
 }
+
+const TIE_WORD: { [k: string]: string } = { rival: "Rival", ally: "Ally", kin: "Kin across the lines", faction: "Faction", bond: "Bound to", patron: "Patron or protégé" };

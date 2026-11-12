@@ -81,6 +81,11 @@ const Person = z.object({
     from: isoDate, to: isoDate.nullable(), source: z.enum(["save", "checkpoints"]), approx: z.boolean(),
   })).default([]),
   /** a central figure's arc: dated lines of what drives them, each from Trent's reading or the chronicle's */
+  /** dated ties to other people: rivals, allies, kin across the lines, factions, bonds, patrons */
+  ties: z.array(z.object({
+    with: id, kind: z.enum(["rival", "ally", "kin", "faction", "bond", "patron"]),
+    from: isoDate, to: isoDate.optional(), text: z.string(), by: z.enum(["trent", "chronicle"]), source: z.string().optional(),
+  })).default([]),
   arc: z.array(z.object({
     from: isoDate, to: isoDate.optional(), text: z.string(), by: z.enum(["trent", "chronicle"]), source: z.string().optional(),
   })).default([]),
@@ -366,6 +371,7 @@ function ref(kind, value, where) {
   if (value != null && !ids[kind].has(value)) errors.push(`${where}: unknown ${kind} "${value}"`);
 }
 for (const p of people) { ref("person", p.father, `people ${p.id}.father`); ref("person", p.mother, `people ${p.id}.mother`); }
+for (const p of people) for (const x of p.ties) ref("person", x.with, `people ${p.id}.ties`);
 for (const s of snapshots) {
   const w = `snapshots/${s.id}`;
   ["ruler", "heir", "regent"].forEach((k) => ref("person", s[k], `${w}.${k}`));
