@@ -24,6 +24,7 @@ map:
     - 5900
     - 1100
   names: ../data/world/tags.json
+  world: ../data/world/{date}.json
   rivals:
     - name: Castile
       tags:
@@ -63,6 +64,9 @@ map:
     MOR: Morocco
     TUN: Tunis
     MAM: The Mamlūks
+    ANV: The Angevins
+    TIM: The Tīmūrids
+    ENG: England
 id: eu5-nasrid
 title: al-Andalus
 arabic: الأندلس

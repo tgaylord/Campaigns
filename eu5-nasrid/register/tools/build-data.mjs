@@ -106,6 +106,20 @@ if (campaign.map?.names) {
       .sort((a, b) => b[1].px - a[1].px).slice(0, 16).map(([t, v]) => [campaign.map.labels?.[t] ?? tagNames[t].name, Math.round(v.c[0]), Math.round(v.c[1]), (r.map?.allies ?? []).includes(t) ? 1 : 0]);
   }
 }
+/* where the realm stands among the powers, when the campaign keeps a ladder */
+if (campaign.map?.world) {
+  const tagNames = JSON.parse(fs.readFileSync(path.join(ROOT, campaign.map.names), "utf8"));
+  for (const r of reckonings) {
+    const file = path.join(ROOT, campaign.map.world.replace("{date}", r.date));
+    if (!fs.existsSync(file)) continue;
+    const w = JSON.parse(fs.readFileSync(file, "utf8"));
+    const me = r.map?.ours?.[0];
+    const mine = (w.ladder ?? []).find((l) => l[0] === me);
+    if (!w.ladder?.length) continue;
+    r.world = { rank: mine?.[1] ?? w.powers?.[me]?.rank, points: mine?.[2] ?? w.powers?.[me]?.points,
+      top: w.ladder.slice(0, 6).map((l) => [l[0] === me ? campaign.title : campaign.map.labels?.[l[0]] ?? w.powers?.[l[0]]?.name ?? tagNames[l[0]]?.name ?? l[0], l[2], l[0] === me ? 1 : 0]) };
+  }
+}
 if (campaign.map?.layers) {
   const cen = JSON.parse(fs.readFileSync(path.join(ROOT, campaign.map.centroids), "utf8"));
   const [ox, oy] = campaign.map.origin;

@@ -411,3 +411,72 @@ export function FamilyTree() {
     </figure>
   );
 }
+
+/* ------------------------------------------------------------------ the crown and the estates */
+const ESTATE_CLASS: Record<string, string> = { Crown: "crown", Nobility: "e0", "ʿUlamāʾ": "e1", Burghers: "e2", Commoners: "e3", "Dhimmī": "e4" };
+export function Estates() {
+  const rs = reckonings.filter((r) => r.standing?.estates?.some((e) => typeof e.power === "number"));
+  const [hover, setHover] = useState<number | null>(null);
+  if (rs.length < 3) return null;
+  const names = rs.at(-1)!.standing!.estates!.map((e) => e.name);
+  const W = 920, H = 300, L = 40, R = 150, T = 14, B = 44;
+  const t0 = frac(rs[0].date), t1 = frac(rs.at(-1)!.date);
+  const max = Math.ceil(Math.max(...rs.flatMap((r) => r.standing!.estates!.map((e) => e.power ?? 0))) / 10) * 10;
+  const x = (d: string) => L + ((frac(d) - t0) / (t1 - t0)) * (W - L - R), y = (v: number) => T + (1 - v / max) * (H - T - B);
+  const val = (r: (typeof rs)[number], n: string) => r.standing!.estates!.find((e) => e.name === n);
+  const marks = beats.filter((b) => b.threads?.includes("estates") && !b.minor && b.on >= rs[0].date);
+  const at = hover === null ? rs.length - 1 : hover, cur = rs[at];
+  // labels at the right end, nudged apart so none sits on another
+  const ends = names.map((n) => ({ n, v: val(rs.at(-1)!, n)?.power ?? 0 })).sort((a, b) => b.v - a.v);
+  const ly: Record<string, number> = {}; let prev = -99;
+  for (const e of ends) { const want = y(e.v) + 4; ly[e.n] = Math.max(want, prev + 15); prev = ly[e.n]; }
+  const move = (e: React.MouseEvent<SVGSVGElement>) => {
+    const box = e.currentTarget.getBoundingClientRect(), px = ((e.clientX - box.left) / box.width) * W;
+    let best = 0; rs.forEach((r, k) => { if (Math.abs(x(r.date) - px) < Math.abs(x(rs[best].date) - px)) best = k; });
+    setHover(best);
+  };
+  return (
+    <figure className="estates">
+      <div className="scroll-x">
+        <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="The share of power held by the crown and each estate, over the campaign" onMouseMove={move} onMouseLeave={() => setHover(null)}>
+          {Array.from({ length: max / 10 + 1 }, (_, k) => k * 10).map((v) => <g key={v}><line className="lv-grid" x1={L} x2={W - R} y1={y(v)} y2={y(v)} /><text className="lv-year" x={L - 8} y={y(v) + 4} textAnchor="end">{v}%</text></g>)}
+          {Array.from({ length: Y1 - Y0 + 1 }, (_, k) => Y0 + k).filter((yy) => yy % 10 === 0 && yy >= t0 && yy <= t1).map((yy) => <text key={yy} className="lv-year" x={x(`${yy}-01-01`)} y={H - 6} textAnchor="middle">{yy}</text>)}
+          {marks.map((b) => <a key={b.id} href={`#line-${b.on.slice(0, 4)}`}><line className="es-mark" x1={x(b.on)} x2={x(b.on)} y1={H - B + 6} y2={H - B + 16}><title>{`${formatWestern(b.on)}: ${b.what}`}</title></line></a>)}
+          {names.map((n) => <polyline key={n} className={`es-line es-${ESTATE_CLASS[n] ?? "e4"}`} points={rs.map((r) => `${x(r.date).toFixed(1)},${y(val(r, n)?.power ?? 0).toFixed(1)}`).join(" ")} />)}
+          {names.map((n) => <text key={n} className={`es-label${n === "Crown" ? " crown" : ""}`} x={W - R + 22} y={ly[n]}>{n === "Crown" ? "The crown" : n} {Math.round(val(rs.at(-1)!, n)?.power ?? 0)}%</text>)}
+          {names.map((n) => <line key={n} className={`es-tie es-${ESTATE_CLASS[n] ?? "e4"}`} x1={W - R + 2} x2={W - R + 18} y1={y(val(rs.at(-1)!, n)?.power ?? 0)} y2={ly[n] - 4} />)}
+          {hover !== null && <line className="es-cross" x1={x(cur.date)} x2={x(cur.date)} y1={T} y2={H - B} />}
+          {hover !== null && names.map((n) => <circle key={n} className={`es-dot es-${ESTATE_CLASS[n] ?? "e4"}`} cx={x(cur.date)} cy={y(val(cur, n)?.power ?? 0)} r={3.5} />)}
+        </svg>
+      </div>
+      <table className="es-table">
+        <caption>{hover === null ? `At the last reckoning, ${formatWestern(cur.date)}` : `At the reckoning of ${formatWestern(cur.date)}`}</caption>
+        <thead><tr><th /><th>Share of power</th><th>Contentment</th></tr></thead>
+        <tbody>
+          {names.map((n) => { const e = val(cur, n); return (
+            <tr key={n}><th scope="row"><i className={`sw es-${ESTATE_CLASS[n] ?? "e4"}`} />{n === "Crown" ? "The crown" : n}</th><td className="num">{e?.power !== undefined ? `${e.power.toFixed(1)}%` : ""}</td>
+              <td>{typeof e?.mood === "number" ? <span className="mood"><span className="mood-bar"><i style={{ width: `${e.mood}%` }} className={e.mood < 40 ? "low" : ""} /></span><span className="num">{Math.round(e.mood)}</span></span> : null}</td></tr>
+          ); })}
+        </tbody>
+      </table>
+      <figcaption>Each line is a share of the realm's power. The strokes under the chart are the decrees, privileges and Jamāʿas on record; choose one to read its year. Contentment runs from 0 to 100 and settles at 50. Power is the save's own reading where there is one and an estimate between readings.</figcaption>
+    </figure>
+  );
+}
+
+/* the powers of the world, and where the realm stands among them */
+export function Powers({ r }: { r: (typeof reckonings)[number] }) {
+  if (!r.world?.top?.length) return null;
+  const max = Math.max(...r.world.top.map((t) => t[1]));
+  const ranks = reckonings.filter((x) => x.world?.rank);
+  const firstTop = ranks.find((x) => x.world!.rank! <= 8);
+  return (
+    <section>
+      <h2>Among the great powers</h2>
+      <ol className="powers">
+        {r.world.top.map(([name, pts, me], k) => <li key={name} className={me ? "me" : ""}><span className="pw-n">{k + 1}</span><span className="pw-name">{name}</span><span className="pw-bar"><i style={{ width: `${(pts / max) * 100}%` }} /></span><span className="num">{Math.round(pts)}</span></li>)}
+      </ol>
+      <p className="key">{r.world.rank ? `${campaign.title} ranks ${ordinal(r.world.rank)}` : ""}{ranks[0]?.world?.rank && ranks[0].world.rank !== r.world.rank ? `; it ranked ${ordinal(ranks[0].world.rank)} in ${ranks[0].date.slice(0, 4)}` : ""}{firstTop && firstTop !== ranks[0] ? `, and first stood among the eight great powers in ${firstTop.date.slice(0, 4)}` : ""}.</p>
+    </section>
+  );
+}

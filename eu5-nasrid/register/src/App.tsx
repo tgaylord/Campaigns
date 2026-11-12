@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { md } from "./md";
 import { formatHijri, formatWestern, HIJRI_MONTHS } from "./hijri";
 import { D, campaign, cast, threads, reckonings, beats, tellings, threadById, beatById, now, before, Y0, Y1, nf, cf, MON, dayMonth, hijriSpan, short, first, age, rulerAt, ordinal, fmt, tone, Who, type Beat, type Telling, type Person, type Thread, type Reckoning, type Data } from "./core";
-import { Story, BattleMap, LifeLines, Weave, Seal, Atlas, FamilyTree, bookOf } from "./story";
+import { Story, BattleMap, LifeLines, Weave, Seal, Atlas, FamilyTree, bookOf, Estates, Powers } from "./story";
 import { Frieze, FriezeKey, frac } from "./frieze";
 
 /* ------------------------------------------------------------------ routing: one plain word after the # */
@@ -180,8 +180,11 @@ function ToTop() {
 }
 
 /* ------------------------------------------------------------------ now */
-function Spark({ k }: { k: string }) {
-  const pts = reckonings.filter((r) => typeof r.realm?.[k] === "number").map((r) => [frac(r.date), r.realm[k]] as const);
+const shareOf = (key: "faiths" | "cultures", name: string) => (r: Reckoning) => { const v = r.peoples?.[key]?.[name], t = r.realm?.souls; return typeof v === "number" && t ? (v / t) * 100 : null; };
+const SHARES: [string, (r: Reckoning) => number | null][] = [["Muslim", shareOf("faiths", "Sunni")], ["Andalusī", shareOf("cultures", "Andalusi")]];
+function Spark({ k, pick }: { k?: string; pick?: (r: Reckoning) => number | null }) {
+  const get = pick ?? ((r: Reckoning) => (typeof r.realm?.[k!] === "number" ? r.realm[k!] : null));
+  const pts = reckonings.map((r) => [frac(r.date), get(r)] as const).filter((p): p is readonly [number, number] => p[1] !== null);
   if (pts.length < 3) return null;
   const xs = pts.map((p) => p[0]), ys = pts.map((p) => p[1]);
   const x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys);
@@ -265,10 +268,27 @@ function Now() {
                     </tr>
                   );
                 })}
+                {SHARES.map(([label, pick]) => {
+                  const v = pick(now), p = before ? pick(before) : null;
+                  if (v === null) return null;
+                  const d = p === null ? 0 : Math.round(v) - Math.round(p);
+                  return <tr key={label}><th scope="row">{label}</th><td className="num">{Math.round(v)}%</td><td className={`delta ${d > 0 ? "up" : d < 0 ? "down" : ""}`}>{d ? `${d > 0 ? "+" : "−"}${Math.abs(d)}` : ""}</td><td><Spark pick={pick} /></td></tr>;
+                })}
               </tbody>
             </table>
             <p className="key">Change since the last reckoning; the line runs from {Y0}.</p>
           </section>
+          <Powers r={now} />
+          {!!now.standing?.estates?.length && (
+            <section>
+              <h2>The crown and the estates</h2>
+              <div className="es-stack" role="img" aria-label="Shares of power at the last reckoning">
+                {now.standing.estates.map((e) => <i key={e.name} className={`es-${({ Crown: "crown", Nobility: "e0", "ʿUlamāʾ": "e1", Burghers: "e2", Commoners: "e3", "Dhimmī": "e4" } as Record<string, string>)[e.name] ?? "e4"}`} style={{ flexGrow: e.power ?? 0 }} title={`${e.name}: ${e.power?.toFixed(1)}%`} />)}
+              </div>
+              <ul className="es-legend">{now.standing.estates.map((e) => <li key={e.name}><i className={`sw es-${({ Crown: "crown", Nobility: "e0", "ʿUlamāʾ": "e1", Burghers: "e2", Commoners: "e3", "Dhimmī": "e4" } as Record<string, string>)[e.name] ?? "e4"}`} />{e.name === "Crown" ? "The crown" : e.name} <span className="num">{Math.round(e.power ?? 0)}%</span></li>)}</ul>
+              <p className="key"><a href="#thread-estates">How the shares have moved since 1346</a></p>
+            </section>
+          )}
           <section>
             <h2>The court</h2>
             <dl className="court">
@@ -395,6 +415,7 @@ function ThreadPage({ id }: { id: string }) {
         {who.size > 0 && <p className="sub"><span className="lab">In it</span>{[...who.entries()].sort((a, b) => b[1] - a[1]).slice(0, 8).map(([w], i) => <span key={w}>{i ? ", " : ""}<Who id={w} /></span>)}</p>}
       </header>
       {t.kind === "war" && <BattleMap bs={bs} from={t.from} />}
+      {t.id === "estates" && <Estates />}
       <Line items={bs} tales={ts} startOpen={bs.filter((b) => !b.minor).length < 8} />
     </>
   );

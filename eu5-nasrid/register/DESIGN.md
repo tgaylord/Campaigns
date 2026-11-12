@@ -91,6 +91,28 @@ underneath as the record.
   and the fathers who link them. Each node counts the children left out and names the mother where the
   story follows her.
 
+## Three closing passes
+
+**Finding your way.** The record's head stays in place: the frieze marks the year under it, a panel replaces
+the long thread menu, the four tones are a legend that can be switched off, and there is a word search and a
+count of what matches. A button returns to the top from anywhere. Books have links of their own, a telling
+says which book it belongs to, a war's page leads with its map, and on a phone the scrubber sits directly
+under the map.
+
+**Seeing more.** The atlas colours Castile, Portugal, Aragon, France and England (later the Angevins) while
+they are not subjects, enlarges to the full window, and steps with the arrow keys. War maps join al-Andalus's
+own battles in order.
+
+**What was missing.** Three things from the Chronicle earned a place:
+- the crown against the estates, as one chart of shares of power since 1346 with the decrees and Jamāʿas
+  marked under it, and contentment in a table beside;
+- the realm's rank among the great powers;
+- the Muslim and Andalusī shares of the people, in the count.
+
+Left out on purpose: prosperity, control, occupation and ruin by province; the building ledger; the cabinet
+through time; the verse index. Each is a table of facts with no story attached yet. If one becomes a story it
+should arrive as a thread with its own picture, as the estates did.
+
 ## What it does not carry over (yet)
 
 - The Atlas's finer lenses (prosperity, control, ruin, occupation) and its province-level detail.
