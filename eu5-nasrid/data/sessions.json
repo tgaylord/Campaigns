@@ -877,10 +877,10 @@
  {
   "id": "2026-11-11",
   "date": "2026-11-11",
-  "commits": 5,
+  "commits": 6,
   "firstCommit": "e1e0463",
-  "lastCommit": "ca15782",
-  "uncommitted": true,
+  "lastCommit": "2e69057",
+  "uncommitted": false,
   "claudeSessions": [
    "session_01BjCUTWMwSncdsoun2VQ9xv"
   ],
@@ -889,7 +889,8 @@
    "[eu5-nasrid] Closing verses for the three entries that had none",
    "[eu5-nasrid] The Codex and the Desk (phase one of the round-two designs)",
    "[eu5-nasrid] 1444-1445 from Trent's account: the embargoes spread, a palace by the sea, Harbor Administration",
-   "[eu5-nasrid] Codex and Desk: fixes from a fresh-eyes review"
+   "[eu5-nasrid] Codex and Desk: fixes from a fresh-eyes review",
+   "[eu5-nasrid] 1446-1447 from Trent's account: the cape where Africa ends, Fernando Po withdrawn, Flanders closed"
   ],
   "reached": {
    "from": "1444-06-05",
@@ -913,6 +914,31 @@
   "wars": [],
   "places": [],
   "events": 6,
+  "removed": {
+   "entries": [],
+   "checkpoints": [],
+   "people": []
+  }
+ },
+ {
+  "id": "2026-11-12",
+  "date": "2026-11-12",
+  "commits": 0,
+  "firstCommit": null,
+  "lastCommit": null,
+  "uncommitted": true,
+  "claudeSessions": [],
+  "headlines": [],
+  "reached": null,
+  "entries": [],
+  "notes": [],
+  "checkpoints": [],
+  "people": [
+   "abd-al-jalil-al-qubbasi"
+  ],
+  "wars": [],
+  "places": [],
+  "events": 0,
   "removed": {
    "entries": [],
    "checkpoints": [],

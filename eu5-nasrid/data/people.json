@@ -3052,5 +3052,26 @@
   ],
   "traits": [],
   "note": "Daughter of Muṣliḥ al-Dīn, a Naṣrid of the court. Married to Prince Yūsuf by January 1438 (Trent; save of 16 January 1438)."
+ },
+ {
+  "id": "abd-al-jalil-al-qubbasi",
+  "name": "ʿAbd al-Jalīl al-Qubbāṣī",
+  "nameArabic": "عبد الجليل القباصي",
+  "nameGame": "Abd al-Jalil (house of El-Qbasa)",
+  "gameId": 16838110,
+  "dynasty": "al-Qubbāṣī",
+  "born": "1416-04-01",
+  "roles": [
+   "explorer (from 1445)"
+  ],
+  "stats": {
+   "adm": 50,
+   "dip": 8,
+   "mil": 80
+  },
+  "traits": [
+   "curious_adventurer"
+  ],
+  "note": "An Andalusī of the umarāʾ, born at al-Qubbāṣa (Alcobaça, in the old lands of Portugal) on 1 April 1416, two years after Portugal ended, and the founder of his own house, which the game names for his birthplace (El-Qbasa; Trent read it as al-El-Qhawai). A curious adventurer, a soldier more than a courtier. Made one of the empire's explorers on 30 October 1445; in mid-March 1446 he reached a cape where Africa seemed to come to an end (Trent's account; autosave of 1 February 1447)."
  }
 ]

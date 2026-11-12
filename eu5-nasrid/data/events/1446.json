@@ -3,12 +3,14 @@
   "id": "1446-03-the-cape-where-africa-ends",
   "date": "1446-03-15",
   "type": "player_note",
-  "people": [],
+  "people": [
+   "abd-al-jalil-al-qubbasi"
+  ],
   "places": [],
   "wars": [],
-  "title": "In mid-March 1446 the explorer ʿAbd al-Jalīl reaches a cape where Africa appears to come to an end. The merchants of al-Andalus research the Kongo, and the attempted settlement of Fernando Po is withdrawn",
+  "title": "In mid-March 1446 the explorer ʿAbd al-Jalīl al-Qubbāṣī reaches a cape where Africa appears to come to an end. The merchants of al-Andalus research the Kongo, and the attempted settlement of Fernando Po is withdrawn",
   "data": {
-   "explorer": "'Abd al-Jalil al-El-Qhawai (as Trent gave the name; spelling to confirm)",
+   "explorer": "ʿAbd al-Jalīl of the house of al-Qubbāṣa (Alcobaça), character 16838110, explorer from 30 October 1445 (autosave of 1 February 1447)",
    "date": "mid-March 1446 (the day is approximate)",
    "research": "the Kongo",
    "withdrawn": "the settlement of Fernando Po (see 1443-06-26-the-jamaa-of-847)"
