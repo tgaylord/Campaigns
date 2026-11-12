@@ -1,0 +1,26 @@
+[
+ {
+  "id": "1445-01-30-harbor-administration",
+  "date": "1445-01-30",
+  "type": "reform",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "The Emperor goes on bringing the ports under the crown's direct control and adopts the reform Harbor Administration, to be fully in force in 649 days: one more naval governor, a steady drift of the realm toward the sea, and in every coastal location a fifth less proximity cost through the port and a tenth faster growth",
+  "data": {
+   "reform": "Harbor Administration",
+   "cost": "20 (Trent's screenshot)",
+   "implementation": "649 days",
+   "modifiers": {
+    "naval governors": "+1",
+    "monthly progress to naval": "+0.20",
+    "coastal locations: proximity impact through port": "-20%",
+    "coastal locations: local monthly development growth": "+10%"
+   },
+   "flavour": "Port facilities must be efficiently managed to support maritime trade and naval operations. Corruption will be reduced, and commerce will thrive under structured supervision."
+  },
+  "source": "Trent's account and screenshot, 30 January 1445"
+ }
+]

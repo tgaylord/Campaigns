@@ -877,17 +877,21 @@
  {
   "id": "2026-11-11",
   "date": "2026-11-11",
-  "commits": 1,
+  "commits": 2,
   "firstCommit": "e1e0463",
-  "lastCommit": "e1e0463",
+  "lastCommit": "6b8ebb3",
   "uncommitted": true,
   "claudeSessions": [
    "session_01BjCUTWMwSncdsoun2VQ9xv"
   ],
   "headlines": [
-   "[eu5-nasrid] Corrections from the design studies, and a session log"
+   "[eu5-nasrid] Corrections from the design studies, and a session log",
+   "[eu5-nasrid] Closing verses for the three entries that had none"
   ],
-  "reached": null,
+  "reached": {
+   "from": "1444-06-05",
+   "to": "1445-01-30"
+  },
   "entries": [],
   "notes": [],
   "checkpoints": [],
@@ -905,7 +909,7 @@
   ],
   "wars": [],
   "places": [],
-  "events": 0,
+  "events": 4,
   "removed": {
    "entries": [],
    "checkpoints": [],
