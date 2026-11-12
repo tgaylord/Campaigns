@@ -136,7 +136,8 @@ snaps.forEach((s, i) => {
 /* ---------------------------------------------------------------- campaign */
 const eras = J("data/eras.json");
 write("campaign.yaml", {
-  map: { realms: "../data/map/world/realms-{date}.json", view: [1240, 1230, 2640, 1190], story: [1215, 1225, 1440, 900], labels: { GRA: "al-Andalus", MOR: "Morocco", TUN: "Tunis", MAM: "The Mamlūks" } },
+  map: { realms: "../data/map/world/realms-{date}.json", view: [1240, 1230, 2640, 1190], story: [1215, 1225, 1440, 900], wide: [1130, 1130, 2760, 1300], towns: [1215, 1195, 1110, 840], origin: [5900, 1100],
+    names: "../data/world/tags.json", layers: "../data/map/layers/{date}.json", centroids: "../data/map/centroids.json", labels: { GRA: "al-Andalus", MOR: "Morocco", TUN: "Tunis", MAM: "The Mamlūks" } },
   id: "eu5-nasrid", title: "al-Andalus", arabic: "الأندلس", subtitle: "The Naṣrid campaign: Granada, 1337, to an empire across the Strait",
   game: "Europa Universalis V 1.4 (Across the Pillars)", player: "Trent", start: "1337-04-01",
   calendar: "hijri",

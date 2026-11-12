@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { md } from "./md";
 import { formatHijri, formatWestern, HIJRI_MONTHS } from "./hijri";
 import { D, campaign, cast, threads, reckonings, beats, tellings, threadById, beatById, now, before, Y0, Y1, nf, cf, MON, dayMonth, hijriSpan, short, first, age, rulerAt, ordinal, fmt, tone, Who, type Beat, type Telling, type Person, type Thread, type Reckoning, type Data } from "./core";
-import { Story, BattleMap, LifeLines, Weave, Seal } from "./story";
+import { Story, BattleMap, LifeLines, Weave, Seal, Atlas, FamilyTree } from "./story";
 import { Frieze, FriezeKey, frac } from "./frieze";
 
 /* ------------------------------------------------------------------ routing: one plain word after the # */
@@ -11,7 +11,7 @@ const parse = (h: string): Route => {
   const s = h.replace(/^#/, "");
   const m = s.match(/^(line|thread|who|telling)-(.+)$/);
   if (m) return { view: m[1], arg: m[2] };
-  return { view: ["now", "line", "threads", "people", "about"].includes(s) ? s : "story" };
+  return { view: ["now", "atlas", "line", "threads", "people", "about"].includes(s) ? s : "story" };
 };
 function useRoute(): Route {
   const [r, setR] = useState(() => parse(location.hash));
@@ -335,6 +335,7 @@ function People() {
   return (
     <>
       <header className="page-head"><h1>People</h1><p className="sub">The story is told through a few of them. The rest are on record.</p></header>
+      <section><h2>The house of Naṣr</h2><FamilyTree /></section>
       <section><h2>The story's centre</h2><ul className="threads two">{by("central").map(([id, p]) => <Card key={id} id={id} p={p} />)}</ul></section>
       <section><h2>Often on the page</h2><ul className="names">{by("key").map(([id, p]) => <li key={id}><Who id={id} full /> <span className="th-n">{lifespan(p)}</span></li>)}</ul></section>
       <details className="everyone"><summary>Everyone else on record ({by(undefined).length})</summary><ul className="names">{by(undefined).map(([id, p]) => <li key={id}><Who id={id} full /> <span className="th-n">{lifespan(p)}</span></li>)}</ul></details>
@@ -414,11 +415,12 @@ export function App() {
       <header className="top">
         <div className="wrap">
           <a className="mark" href="#story"><span>{campaign.title}</span>{campaign.arabic && <bdi className="ar" lang="ar" dir="rtl">{campaign.arabic}</bdi>}</a>
-          <nav aria-label="Sections">{link("story", "The story")}{link("now", "Now")}{link("line", "The record")}{link("threads", "Threads")}{link("people", "People")}</nav>
+          <nav aria-label="Sections">{link("story", "The story")}{link("atlas", "Atlas")}{link("now", "Now")}{link("line", "The record")}{link("threads", "Threads")}{link("people", "People")}</nav>
         </div>
       </header>
       <main className="wrap">
         {r.view === "story" && <Story />}
+        {r.view === "atlas" && <Atlas />}
         {r.view === "now" && <Now />}
         {r.view === "line" && (
           <>

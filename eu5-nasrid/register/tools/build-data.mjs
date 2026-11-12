@@ -88,7 +88,35 @@ if (campaign.map?.realms) {
   }
 }
 
+/* the atlas: who the neighbours are at each reckoning, and the towns as a mosaic (people, faith, tongue) */
+const neighbours = {}, mosaic = { towns: [], frames: {} };
+if (campaign.map?.names) {
+  const tagNames = JSON.parse(fs.readFileSync(path.join(ROOT, campaign.map.names), "utf8"));
+  const [vx, vy, vw, vh] = campaign.map.wide;
+  for (const r of reckonings) {
+    const file = path.join(ROOT, campaign.map.realms.replace("{date}", r.date));
+    if (!fs.existsSync(file)) continue;
+    const all = JSON.parse(fs.readFileSync(file, "utf8"));
+    const mine = new Set([...(r.map?.ours ?? []), ...(r.map?.subjects ?? [])]);
+    neighbours[r.date] = Object.entries(all).filter(([t, v]) => !mine.has(t) && tagNames[t]?.name && v.c[0] > vx + 60 && v.c[0] < vx + vw - 60 && v.c[1] > vy + 40 && v.c[1] < vy + vh - 40)
+      .sort((a, b) => b[1].px - a[1].px).slice(0, 16).map(([t, v]) => [campaign.map.labels?.[t] ?? tagNames[t].name, Math.round(v.c[0]), Math.round(v.c[1]), (r.map?.allies ?? []).includes(t) ? 1 : 0]);
+  }
+}
+if (campaign.map?.layers) {
+  const cen = JSON.parse(fs.readFileSync(path.join(ROOT, campaign.map.centroids), "utf8"));
+  const [ox, oy] = campaign.map.origin;
+  let keys = null;
+  for (const r of reckonings) {
+    const file = path.join(ROOT, campaign.map.layers.replace("{date}", r.date));
+    if (!fs.existsSync(file)) continue;
+    const L = JSON.parse(fs.readFileSync(file, "utf8"));
+    const col = (n) => L.cols.indexOf(n);
+    if (!keys) { keys = Object.keys(L.rows).filter((k) => cen[k]); mosaic.towns = keys.map((k) => [Math.round(cen[k][0] - ox), Math.round(cen[k][1] - oy)]); }
+    mosaic.frames[r.date] = keys.flatMap((k) => { const row = L.rows[k]; return row ? [Math.round(row[col("pop")] / 1000), Math.round(row[col("muslim")]), Math.round(row[col("andalusi")])] : [0, 0, 0]; });
+  }
+}
+
 if (notes.length) console.log(notes.slice(0, 8).map((n) => "note: " + n).join("\n") + (notes.length > 8 ? `\n… and ${notes.length - 8} more notes` : ""));
 if (errors.length) { console.error(errors.map((e) => "error: " + e).join("\n")); process.exit(1); }
-fs.writeFileSync(path.join(ROOT, "src", "data.json"), JSON.stringify({ campaign, threads, cast, places, reckonings, beats, tellings, map, outlines, land }));
+fs.writeFileSync(path.join(ROOT, "src", "data.json"), JSON.stringify({ campaign, threads, cast, places, reckonings, beats, tellings, map, outlines, land, neighbours, mosaic }));
 console.log(`register: ${reckonings.length} reckonings, ${beats.length} beats, ${tellings.length} tellings, ${Object.keys(cast).length} cast, ${threads.length} threads${map ? `, map of ${last.date} (${map.realms.length} realms)` : ""}`);

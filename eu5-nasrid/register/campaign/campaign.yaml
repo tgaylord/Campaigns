@@ -10,6 +10,22 @@ map:
     - 1225
     - 1440
     - 900
+  wide:
+    - 1130
+    - 1130
+    - 2760
+    - 1300
+  towns:
+    - 1215
+    - 1195
+    - 1110
+    - 840
+  origin:
+    - 5900
+    - 1100
+  names: ../data/world/tags.json
+  layers: ../data/map/layers/{date}.json
+  centroids: ../data/map/centroids.json
   labels:
     GRA: al-Andalus
     MOR: Morocco

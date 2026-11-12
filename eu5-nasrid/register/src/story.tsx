@@ -33,20 +33,40 @@ function Land({ view = VIEW, children, label }: { view?: number[]; children: Rea
   );
 }
 
-function Hero() {
+/* one place in time, shared by the story's map and the atlas */
+function useScrub() {
   const [i, setI] = useState(reckonings.length - 1);
   const [playing, setPlaying] = useState(false);
-  const r = reckonings[i], o = outline(r.date);
   useEffect(() => {
     if (!playing) return;
     const t = setInterval(() => setI((x) => { if (x >= reckonings.length - 1) { setPlaying(false); return x; } return x + 1; }), 420);
     return () => clearInterval(t);
   }, [playing]);
-  const pick = (y: number) => { setPlaying(false); const k = reckonings.findLastIndex((x) => +x.date.slice(0, 4) <= y); setI(Math.max(0, k)); };
+  const pick = (y: number) => { setPlaying(false); setI(Math.max(0, reckonings.findLastIndex((x) => +x.date.slice(0, 4) <= y))); };
+  const last = reckonings.length - 1;
+  const controls = (
+    <>
+      <div className="hero-ctl">
+        <button type="button" className="play" onClick={() => { if (i >= last) setI(0); setPlaying((p) => !p); }}>{playing ? "Pause" : i >= last ? `Play from ${reckonings[0].date.slice(0, 4)}` : "Play on"}</button>
+        <button type="button" onClick={() => { setPlaying(false); setI(Math.max(0, i - 1)); }} disabled={i === 0} aria-label="The reckoning before">Earlier</button>
+        <button type="button" onClick={() => { setPlaying(false); setI(Math.min(last, i + 1)); }} disabled={i === last} aria-label="The reckoning after">Later</button>
+        <span className="hint">or choose a year on the band</span>
+      </div>
+      <Frieze at={+reckonings[i].date.slice(0, 4)} onPick={pick} />
+    </>
+  );
+  return { r: reckonings[i], controls };
+}
+const booksAt = (d: string) => campaign.eras.filter((e) => { const ts = tellings.filter((t) => t.book === e.id); return ts.length && ts[0].on <= d && (ts.at(-1)!.on >= d || !e.to); });
+
+function Hero() {
+  const { r, controls } = useScrub();
+  const o = outline(r.date);
   const ruler = rulerAt(r.date), reign = ruler?.[1].reigns?.find((g) => g.from <= r.date && (!g.to || g.to > r.date));
   const y = +r.date.slice(0, 4);
   const wars = (r.standing?.wars ?? []).map((w) => threadById.get(w)).filter(Boolean);
-  const first0 = reckonings[0];
+  const drive = ruler ? (ruler[1].drives ?? []).filter((d) => d.from <= r.date).at(-1) : undefined;
+  const books = booksAt(r.date);
   return (
     <section className="hero">
       <div className="hero-map">
@@ -54,22 +74,97 @@ function Hero() {
           <path className="l-ally" d={o.a} /><path className="l-subject" d={o.s} /><path className="l-ours" d={o.o} />
         </Land>
         <div className="hero-cap">
-          <p className="hc-year">{y}<span>{hijriSpan(y)} AH</span></p>
+          <p className="hc-year">{y}<span>{hijriSpan(y)} AH{books.length ? `, in ${books.map((b) => b.title).join(" and ")}` : ""}</span></p>
           <h1>{r.title}</h1>
-          {ruler && <p className="hc-ruler">{cast[ruler[0]].name}{reign ? `, ${ordinal(y - +reign.from.slice(0, 4) + 1)} year` : ""}</p>}
+          {ruler && (
+            <a className="hc-who" href={`#who-${ruler[0]}`}>
+              <Seal id={ruler[0]} size={68} />
+              <span><span><b>{cast[ruler[0]].name}</b>{reign ? `, ${ordinal(y - +reign.from.slice(0, 4) + 1)} year` : ""}</span>{drive && <em>{drive.text}</em>}</span>
+            </a>
+          )}
           <p className="hc-count">{nf.format(r.realm.towns)} towns{r.realm.souls ? `, ${cf.format(r.realm.souls)} souls` : ""}{wars.length ? <>. At war: {wars.map((w, k) => <span key={w!.id}>{k ? ", " : ""}<a href={`#thread-${w!.id}`}>{w!.title}</a></span>)}</> : ". At peace"}.</p>
           <p className="hc-links"><a href={`#line-${y}`}>Read {y} in the record</a></p>
         </div>
         <p className="map-key"><span><i className="sw l-ours" />The crown</span><span><i className="sw l-subject" />Its ṭāʾifas and vassals</span><span><i className="sw l-ally" />Its allies</span></p>
       </div>
-      <div className="hero-ctl">
-        <button type="button" className="play" onClick={() => { if (i >= reckonings.length - 1) setI(0); setPlaying((p) => !p); }}>{playing ? "Pause" : i >= reckonings.length - 1 ? `Play from ${first0.date.slice(0, 4)}` : "Play on"}</button>
-        <button type="button" onClick={() => { setPlaying(false); setI(Math.max(0, i - 1)); }} disabled={i === 0} aria-label="The reckoning before">Earlier</button>
-        <button type="button" onClick={() => { setPlaying(false); setI(Math.min(reckonings.length - 1, i + 1)); }} disabled={i === reckonings.length - 1} aria-label="The reckoning after">Later</button>
-        <span className="hint">or choose a year on the band</span>
-      </div>
-      <Frieze at={y} onPick={pick} />
+      {controls}
     </section>
+  );
+}
+
+/* ------------------------------------------------------------------ the atlas: one map, five ways of looking */
+const LENSES = [
+  { id: "hold", label: "Who holds what", say: "The crown, its subjects and its allies, with the neighbours named." },
+  { id: "grew", label: "How it grew", say: "The crown's own land at every reckoning, each border laid over the last. The darkest has been held longest; the ṭāʾifas' lands are left out." },
+  { id: "faith", label: "Faith", say: "Each tile is a town, sized by its people and filled by the share who are Muslim." },
+  { id: "tongue", label: "Tongue", say: "Each tile is a town, sized by its people and filled by the share who are Andalusī in speech and custom." },
+  { id: "blood", label: "Battles", say: "Every battle placed so far, up to the chosen year." },
+] as const;
+const share = (o: Record<string, number> | undefined, total: number) => Object.entries(o ?? {}).slice(0, 4).map(([k, v]) => `${k.replace(/_religion$/, "")} ${Math.round((v / total) * 100)}%`).join(", ");
+
+export function Atlas() {
+  const { r, controls } = useScrub();
+  const [lens, setLens] = useState<(typeof LENSES)[number]["id"]>("hold");
+  const L = LENSES.find((l) => l.id === lens)!;
+  const o = outline(r.date), y = +r.date.slice(0, 4);
+  const towns = lens === "faith" || lens === "tongue";
+  const view = towns ? campaign.map?.towns ?? VIEW : lens === "grew" ? VIEW : campaign.map?.wide ?? VIEW;
+  const u = view[2] / 100;
+  const rings = useMemo(() => { const seen = new Set<string>(); return reckonings.filter((x) => { const d = outline(x.date).o; if (!d || seen.has(d)) return false; seen.add(d); return true; }); }, []);
+  const frame = D.mosaic.frames[r.date] ?? [];
+  const k = lens === "faith" ? 1 : 2;
+  const fought = beats.filter((b) => b.at && b.on <= r.date);
+  const souls = r.realm.souls ?? 0;
+  return (
+    <>
+      <header className="page-head"><h1>The atlas</h1><p className="sub">One map of the realm, looked at five ways, at any reckoning from {Y0} to {Y1}.</p></header>
+      <section className="atlas">
+        <div className="lenses" role="tablist" aria-label="Ways of looking">
+          {LENSES.map((l) => <button key={l.id} role="tab" type="button" aria-selected={lens === l.id} onClick={() => setLens(l.id)}>{l.label}</button>)}
+        </div>
+        <div className="atlas-map">
+          <Land view={view} label={`${L.label}, ${y}`}>
+            {lens === "hold" && (
+              <>
+                <path className="l-ally" d={o.a} /><path className="l-subject" d={o.s} /><path className="l-ours" d={o.o} />
+                {(D.neighbours[r.date] ?? []).map(([n, x, yy, ally]) => <text key={n} className={`nb${ally ? " ally" : ""}`} x={x} y={yy} textAnchor="middle" style={{ fontSize: u * 1.5, strokeWidth: u * 0.35 }}>{n}</text>)}
+              </>
+            )}
+            {lens === "grew" && [...rings].reverse().filter((x) => x.date <= r.date).map((x) => {
+              const t = (frac(x.date) - Y0) / (Y1 + 1 - Y0);
+              return <path key={x.date} className="ring" d={outline(x.date).o} style={{ fill: `color-mix(in srgb, var(--cobalt) ${Math.round(22 + 78 * (1 - t))}%, var(--surface))` }} />;
+            })}
+            {towns && D.mosaic.towns.map(([x, yy], n) => {
+              const pop = frame[n * 3], pct = frame[n * 3 + k];
+              if (!pop) return null;
+              const s = Math.max(0.35, Math.sqrt(pop) * 0.115) * u;
+              return <g key={n} transform={`rotate(45 ${x} ${yy})`}><rect className="tile-base" x={x - s} y={yy - s} width={s * 2} height={s * 2} /><rect className={`tile-${lens}`} x={x - s} y={yy - s} width={s * 2} height={s * 2} style={{ fillOpacity: pct / 100 }} /></g>;
+            })}
+            {lens === "blood" && (
+              <>
+                <path className="l-subject" d={o.s} /><path className="l-ours" d={o.o} />
+                {fought.map((b) => <circle key={b.id} className={`bdot ${b.won === true ? "won" : b.won === false ? "lost" : "even"}${b.on.slice(0, 4) === String(y) ? " hot" : ""}`} cx={b.at![0]} cy={b.at![1]} r={(b.on.slice(0, 4) === String(y) ? 0.75 : 0.5) * u} style={{ strokeWidth: u * 0.12 }}><title>{`${formatWestern(b.on)}: ${b.what}`}</title></circle>)}
+              </>
+            )}
+          </Land>
+          <div className="atlas-cap">
+            <p className="hc-year">{y}<span>{hijriSpan(y)} AH</span></p>
+            <h2>{r.title}</h2>
+            <p className="sub">{L.say}</p>
+            {lens === "hold" && <p className="hc-count">{nf.format(r.realm.towns)} towns under the crown. Allies: {(r.standing?.allies ?? []).join(", ") || "none"}.</p>}
+            {lens === "grew" && <p className="hc-count">{nf.format(reckonings[0].realm.towns)} towns in {Y0}; {nf.format(r.realm.towns)} in {y}.</p>}
+            {lens === "faith" && souls > 0 && <p className="hc-count">Of {cf.format(souls)} souls: {share(r.peoples?.faiths, souls)}.</p>}
+            {lens === "tongue" && souls > 0 && <p className="hc-count">Of {cf.format(souls)} souls: {share(r.peoples?.cultures, souls)}.</p>}
+            {lens === "blood" && <p className="hc-count">{fought.length} battles placed by {y}: {fought.filter((b) => b.won === true).length} won, {fought.filter((b) => b.won === false).length} lost. The larger marks were fought this year.</p>}
+            {lens === "hold" && <p className="map-key"><span><i className="sw l-ours" />The crown</span><span><i className="sw l-subject" />Ṭāʾifas and vassals</span><span><i className="sw l-ally" />Allies</span></p>}
+            {lens === "grew" && <p className="map-key"><span><i className="sw ring-old" />Held since {Y0}</span><span><i className="sw ring-new" />Newly won</span></p>}
+            {towns && <p className="map-key"><span><i className={`sw tile-${lens}`} />{lens === "faith" ? "All Muslim" : "All Andalusī"}</span><span><i className="sw tile-base" />None</span><span>Iberia and the near shores only</span></p>}
+            {lens === "blood" && <p className="map-key"><span><i className="bd won" />Won</span><span><i className="bd lost" />Lost</span><span><i className="bd even" />Unrecorded</span></p>}
+          </div>
+        </div>
+        {controls}
+      </section>
+    </>
   );
 }
 
@@ -241,6 +336,54 @@ export function Weave() {
         </svg>
       </div>
       <figcaption>A stroke is an entry on that thread; a tile is a telling that takes it up. A line that stops is a story that is settled.</figcaption>
+    </figure>
+  );
+}
+
+/* ------------------------------------------------------------------ the house, kept tight: rulers, the people the story follows, and the links between them */
+const ROOT = "ismail-i";
+const inTree = (() => {
+  const keep = new Set<string>([ROOT]);
+  for (const [id, p] of Object.entries(cast)) {
+    if (!(p.tier || p.reigns)) continue;
+    const chain: string[] = []; let x: string | undefined = id;
+    while (x && cast[x] && x !== ROOT) { chain.push(x); x = cast[x].father && cast[cast[x].father!] ? cast[x].father : undefined; }
+    if (x === ROOT) chain.forEach((c) => keep.add(c));
+  }
+  return keep;
+})();
+type Node = { id: string; kids: Node[]; x: number; depth: number; more: number };
+function grow(id: string, depth: number, next: { x: number }): Node {
+  const all = Object.entries(cast).filter(([, c]) => c.father === id).sort((a, b) => (a[1].born ?? "").localeCompare(b[1].born ?? ""));
+  const kids = all.filter(([c]) => inTree.has(c)).map(([c]) => grow(c, depth + 1, next));
+  const x = kids.length ? (kids[0].x + kids.at(-1)!.x) / 2 : next.x++;
+  return { id, kids, x, depth, more: all.length - kids.length };
+}
+export function FamilyTree() {
+  const tree = useMemo(() => { const n = { x: 0 }; const t = grow(ROOT, 0, n); return { t, leaves: n.x }; }, []);
+  const flat: Node[] = []; const walk = (n: Node) => { flat.push(n); n.kids.forEach(walk); }; walk(tree.t);
+  const cw = 104, rh = 138, padX = 56, W = tree.leaves * cw + padX, H = (Math.max(...flat.map((n) => n.depth)) + 1) * rh + 10;
+  const X = (n: Node) => padX / 2 + n.x * cw + cw / 2, Y = (n: Node) => n.depth * rh + 34;
+  return (
+    <figure className="tree">
+      <div className="scroll-x">
+        <svg viewBox={`0 0 ${W} ${H}`} style={{ minWidth: W * 0.72 }} role="img" aria-label="The house of Naṣr: the rulers and the people the story follows">
+          {flat.flatMap((n) => n.kids.map((k) => <path key={k.id} className="tr-link" d={`M${X(n)},${Y(n) + 30} V${Y(k) - 44} H${X(k)} V${Y(k) - 30}`} />))}
+          {flat.map((n) => {
+            const p = cast[n.id], ruled = p.reigns?.[0], mother = p.mother && cast[p.mother]?.tier ? first(p.mother) : null;
+            return (
+              <a key={n.id} href={`#who-${n.id}`} className={`tr-node${ruled ? " ruled" : ""}${p.died ? "" : " living"}`}>
+                <g transform={`translate(${X(n) - 30}, ${Y(n) - 30})`}><Seal id={n.id} size={60} /></g>
+                {ruled && <circle className="tr-crown" cx={X(n)} cy={Y(n)} r={35} />}
+                <text className="tr-name" x={X(n)} y={Y(n) + 46} textAnchor="middle">{first(n.id)}</text>
+                <text className="tr-sub" x={X(n)} y={Y(n) + 60} textAnchor="middle">{ruled ? `reigned ${ruled.from.slice(0, 4)}–${ruled.to ? ruled.to.slice(0, 4) : ""}` : `${p.born?.slice(0, 4) ?? ""}–${p.died?.slice(0, 4) ?? ""}`}</text>
+                {(mother || n.more > 0) && <text className="tr-sub" x={X(n)} y={Y(n) + 73} textAnchor="middle">{mother ? `by ${mother}` : ""}{mother && n.more ? ", " : ""}{n.more ? `+${n.more} more` : ""}</text>}
+              </a>
+            );
+          })}
+        </svg>
+      </div>
+      <figcaption>{flat.length} of the {Object.values(cast).filter((p) => p.house === "Naṣrid").length} Naṣrids on record: the rulers (ringed), the people the story follows, and the fathers who link them. "+3 more" counts children left out. "By" names the mother where the story follows her.</figcaption>
     </figure>
   );
 }

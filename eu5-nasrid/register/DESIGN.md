@@ -79,10 +79,21 @@ underneath as the record.
 - **The weave.** The threads page shows every story thread across the years, entries as strokes and
   tellings as tiles.
 
+## Third pass: the atlas, a narrated map, the house
+
+- **The atlas** is one map looked at five ways, at any reckoning: who holds what (with the neighbours
+  named), how the realm grew (every border laid over the last, oldest darkest), faith and tongue (each town a
+  tile sized by its people and filled by the share who are Muslim or Andalusī), and every battle placed so
+  far. It draws realms as outlines and towns as tiles, with no location polygons, so it stays light.
+- **The story's map narrates.** Beside the year and the reckoning's headline it now names the books in
+  progress and shows the ruler's seal with what drives them at that date.
+- **The house of Naṣr** is a tree of 24 of the 71 Naṣrids on record: rulers, the people the story follows,
+  and the fathers who link them. Each node counts the children left out and names the mother where the
+  story follows her.
+
 ## What it does not carry over (yet)
 
-- The Atlas and its lenses. The Register has one small map on the front page. The maps are the best part of
-  the Chronicle and could be linked rather than rebuilt.
+- The Atlas's finer lenses (prosperity, control, ruin, occupation) and its province-level detail.
 - The names switch (court names or plain names), the book structure of eras, the verse checker.
 - Places as pages.
 

@@ -335,3 +335,42 @@ h2.big { font-size: clamp(1.6rem, 1.2rem + 1.6vw, 2.3rem); }
   .hero-cap h1, .hc-count { min-height: 0; }
   .hc-year { flex-direction: row; align-items: baseline; gap: 0.8rem; }
 }
+
+/* ---------------------------------------------------------------- third pass: the atlas, the narrated map, the house */
+.hc-who { display: flex; align-items: center; gap: 0.8rem; color: var(--ink-2); text-decoration: none; min-height: 5.2rem; }
+.hc-who > span { display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; }
+.hc-who b { color: var(--ink); font-weight: 700; display: inline; }
+.hc-who em { font: italic 400 1.02rem/1.4 var(--serif); color: var(--ink-2); }
+.hc-who:hover b { color: var(--link); }
+.atlas { gap: 0.8rem; }
+.lenses { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.lenses button { font: 500 1rem var(--sans); min-height: 2.5rem; padding: 0.35rem 0.9rem; background: var(--surface); color: var(--ink-2); border: 1px solid var(--rule); border-radius: 999px; cursor: pointer; }
+.lenses button:hover { color: var(--ink); border-color: var(--ink-3); }
+.lenses button[aria-selected="true"] { background: var(--ink); color: var(--ground); border-color: var(--ink); }
+.atlas-map { display: grid; grid-template-columns: minmax(0, 2.4fr) minmax(0, 1fr); gap: 0 2.2rem; align-items: end; }
+.atlas-map .land { border: 1px solid var(--rule); }
+.atlas-cap { display: flex; flex-direction: column; gap: 0.6rem; min-width: 0; padding-bottom: 0.3rem; }
+.atlas-cap h2 { font-size: 1.5rem; min-height: 2.4em; }
+.atlas-cap .map-key { grid-column: auto; }
+.atlas-cap .hc-year { font-size: clamp(2.6rem, 1.8rem + 3.4vw, 4.4rem); }
+.nb { font-family: var(--sans); font-weight: 500; fill: var(--ink-2); paint-order: stroke; stroke: color-mix(in srgb, var(--ink) 11%, var(--surface)); stroke-linejoin: round; }
+.nb.ally { fill: var(--ink); font-weight: 700; stroke: color-mix(in srgb, var(--copper) 42%, var(--surface)); }
+.ring { stroke: var(--sunk); stroke-width: 0.8; }
+.sw.ring-old { background: var(--cobalt); } .sw.ring-new { background: color-mix(in srgb, var(--cobalt) 22%, var(--surface)); }
+.tile-base { fill: color-mix(in srgb, var(--ink) 22%, var(--surface)); }
+.tile-faith { fill: var(--copper); } .tile-tongue { fill: var(--cobalt); }
+.sw.tile-base { background: color-mix(in srgb, var(--ink) 22%, var(--surface)); } .sw.tile-faith { background: var(--copper); } .sw.tile-tongue { background: var(--cobalt); }
+.sw[class*="tile-"] { transform: rotate(45deg) scale(0.85); }
+.bdot { stroke: var(--surface); fill-opacity: 0.8; }
+.bdot.won { fill: var(--copper); } .bdot.lost { fill: var(--manganese); } .bdot.even { fill: var(--ink-3); }
+.bdot.hot { fill-opacity: 1; stroke: var(--ink); }
+.tree { margin: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+.tree svg { display: block; width: 100%; height: auto; }
+.tree figcaption { color: var(--ink-3); font-size: 0.92rem; max-width: 52rem; }
+.tr-link { fill: none; stroke: var(--ink-3); stroke-width: 1.2; }
+.tr-name { font: 600 13.5px var(--serif); fill: var(--link); }
+.tr-node:hover .tr-name { text-decoration: underline; }
+.tr-sub { font: 400 10.5px var(--sans); fill: var(--ink-3); }
+.tr-node.ruled .tr-sub:first-of-type { fill: var(--ink-2); }
+.tr-crown { fill: none; stroke: var(--honey); stroke-width: 2.5; }
+@media (max-width: 56rem) { .atlas-map { grid-template-columns: minmax(0, 1fr); gap: 0.8rem; } .atlas-cap h2 { min-height: 0; } .hc-who { min-height: 0; } }
