@@ -135,3 +135,13 @@ should arrive as a thread with its own picture, as the estates did.
 - **Wars.** Under the battle map, each war with sides that could be matched to realms shows the land before and after: the crown, its subjects, its side and the other side, with each side's vassals paler. Sides are matched by name through `aliases`, so a minor lord can be missing.
 - **People.** The three measures (Rule, Counsel, War; out of 100) are drawn as gauges beside the traits as chips. Childhood traits are dashed.
 - **Story.** Each book folds to its title, span and a one-line tally. The choice is remembered in the browser; a link to a book opens it.
+
+## Pass eight: phones, the march, folded records, dark washes
+
+- **Rivals that come and go.** A power listed in `rivals` is drawn in its colour only while it is not ours, a subject or an ally. Morocco is listed, so it is orange through the Marīnid wars and ally green before and after.
+- **Phones.** Pictures are redrawn for a narrow screen, not shrunk: the wide atlas pans sideways and opens on Iberia; a war's battle map is framed taller with larger marks; the life lines are drawn to the screen's width with first names; the family tree opens scrolled to the reigning ruler.
+- **The march.** A war's battles can be stepped through or played in order. The fight being read is ringed and drawn on top, the leg that led to it is solid, and its date and account sit under the map, which also serves touch screens that have no hover. Selecting a mark jumps to it.
+- **War maps.** The before and after frames take in the crown's heartland as well as the fighting.
+- **People.** A person's page leads with the life, the drives and the tellings they appear in, as a strip. The full record is folded under one line unless it is short.
+- **Dark theme.** Vassal washes and faded battles have their own strengths in the dark theme (`--p-sub`, `--p-rsub`, `--fade-k`).
+- **Enlarged atlas.** The map is sized to leave the controls on screen, the page title is dropped, and the year sits on the map's corner. The legend lists a rival only when some of its land is inside the frame.

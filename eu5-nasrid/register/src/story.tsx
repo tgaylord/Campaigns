@@ -1,5 +1,5 @@
 /* The story told with pictures: the realm growing on a map, the books as chapters, wars on their ground, lives side by side. */
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { D, campaign, cast, reckonings, beats, tellings, threads, threadById, beatById, now, Y0, Y1, cf, nf, first, short, age, rulerAt, ordinal, hijriSpan, type Beat, type Person, type Telling } from "./core";
 import { Frieze, frac } from "./frieze";
 import { formatHijri, formatWestern } from "./hijri";
@@ -11,9 +11,29 @@ const outline = (date: string) => {
   return x ? { o: S[x.o], s: S[x.s], a: S[x.a], as: S[x.as], r: x.r.map((k) => S[k]), rs: x.rs.map((k) => S[k]), rn: x.rn } : { o: "", s: "", a: "", as: "", r: [] as string[], rs: [] as string[], rn: [] as string[] };
 };
 const RIVALS = campaign.map?.rivals ?? [];
-const rivalFill = (k: number, pct = 62) => `color-mix(in srgb, light-dark(${RIVALS[k].color[0]}, ${RIVALS[k].color[1]}) ${pct}%, var(--surface))`;
+const rivalFill = (k: number, pct: number | string = 62) => `color-mix(in srgb, light-dark(${RIVALS[k].color[0]}, ${RIVALS[k].color[1]}) ${typeof pct === "number" ? pct + "%" : pct}, var(--surface))`;
 const plain = (s: string) => s.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/[*_]/g, "");
 const firstSentence = (s: string) => plain(s).split(/(?<=[.!?])\s/)[0];
+
+/* a phone-width screen: pictures are redrawn for it, not just shrunk */
+const NARROW = "(max-width: 40rem)";
+function useNarrow() {
+  const [n, setN] = useState(() => typeof matchMedia === "function" && matchMedia(NARROW).matches);
+  useEffect(() => { const m = matchMedia(NARROW), f = () => setN(m.matches); m.addEventListener("change", f); return () => m.removeEventListener("change", f); }, []);
+  return n;
+}
+/* the box a drawn outline fills, and whether any of it falls inside a frame */
+const boxes = new Map<string, number[] | null>();
+const boxOf = (d: string) => {
+  if (!boxes.has(d)) { const n = d.match(/-?\d+(\.\d+)?/g)?.map(Number) ?? []; let x0 = 1e9, y0 = 1e9, x1 = -1e9, y1 = -1e9; for (let k = 0; k + 1 < n.length; k += 2) { x0 = Math.min(x0, n[k]); x1 = Math.max(x1, n[k]); y0 = Math.min(y0, n[k + 1]); y1 = Math.max(y1, n[k + 1]); } boxes.set(d, n.length ? [x0, y0, x1, y1] : null); }
+  return boxes.get(d)!;
+};
+const shows = new Map<string, boolean>();
+const inView = (d: string, v: number[]) => {
+  const key = v.join() + d.length + d.slice(0, 40);
+  if (!shows.has(key)) { const n = d.match(/-?\d+(\.\d+)?/g)?.map(Number) ?? [], m = v[2] * 0.015; let hit = 0; for (let k = 0; k + 1 < n.length && hit < 6; k += 2) if (n[k] > v[0] + m && n[k] < v[0] + v[2] - m && n[k + 1] > v[1] + m && n[k + 1] < v[1] + v[3] - m) hit++; shows.set(key, hit >= 6); }
+  return shows.get(key)!;
+};
 
 /* ------------------------------------------------------------------ the seal: a name in an eight-pointed star */
 export function Seal({ id, size = 76 }: { id: string; size?: number }) {
@@ -135,6 +155,7 @@ export function Atlas() {
   const fought = beats.filter((b) => b.at && b.on <= r.date);
   const souls = r.realm.souls ?? 0;
   const [big, setBig] = useState(false);
+  const narrow = useNarrow(), pan = narrow && !big && view === (campaign.map?.wide ?? VIEW) && view !== VIEW;
   useEffect(() => { document.documentElement.toggleAttribute("data-wide", big); return () => document.documentElement.removeAttribute("data-wide"); }, [big]);
   return (
     <>
@@ -145,10 +166,12 @@ export function Atlas() {
           <button type="button" className="grow" aria-pressed={big} onClick={() => setBig((b) => !b)}>{big ? "Shrink the map" : "Enlarge the map"}</button>
         </div>
         <div className={`atlas-map${big ? " big" : ""}`}>
+          <div className={`map-box${pan ? " pan" : ""}`}>
+          {big && <p className="map-year" aria-hidden="true">{y}</p>}
           <Land view={view} label={`${L.label}, ${y}`} whole={big}>
             {lens === "hold" && (
               <>
-                {o.rs.map((d, n) => d && <path key={`s${n}`} className="l-rival" d={d} style={{ fill: rivalFill(n, 28) }} />)}
+                {o.rs.map((d, n) => d && <path key={`s${n}`} className="l-rival" d={d} style={{ fill: rivalFill(n, "var(--p-rsub)") }} />)}
                 {o.r.map((d, n) => d && <path key={n} className="l-rival" d={d} style={{ fill: rivalFill(n) }} />)}
                 <path className="l-allysub" d={o.as} /><path className="l-ally" d={o.a} /><path className="l-subject" d={o.s} /><path className="l-ours" d={o.o} />
                 {(D.neighbours[r.date] ?? []).map(([n, x, yy, ally]) => <text key={n} className={`nb${ally ? " ally" : ""}`} x={x} y={yy} textAnchor="middle" style={{ fontSize: u * 1.5, strokeWidth: u * 0.35 }}>{n}</text>)}
@@ -167,20 +190,21 @@ export function Atlas() {
             {lens === "blood" && (
               <>
                 <path className="l-subject" d={o.s} /><path className="l-ours" d={o.o} />
-                {fought.map((b) => { const live = liveWar(b, r.date), hot = b.on.slice(0, 4) === String(y); return <circle key={b.id} className={`bdot ${b.won === true ? "won" : b.won === false ? "lost" : "even"}${hot ? " hot" : ""}`} cx={b.at![0]} cy={b.at![1]} r={(hot ? 0.75 : live ? 0.6 : 0.42) * u} style={{ strokeWidth: u * 0.12, opacity: live ? 1 : fade(b, r.date) }}><title>{`${formatWestern(b.on)}: ${b.what}`}</title></circle>; })}
+                {fought.map((b) => { const live = liveWar(b, r.date), hot = b.on.slice(0, 4) === String(y); return <circle key={b.id} className={`bdot ${b.won === true ? "won" : b.won === false ? "lost" : "even"}${hot ? " hot" : ""}`} cx={b.at![0]} cy={b.at![1]} r={(hot ? 0.75 : live ? 0.6 : 0.42) * u} style={{ strokeWidth: u * 0.12, opacity: live ? 1 : `calc(${fade(b, r.date).toFixed(2)} * var(--fade-k))` }}><title>{`${formatWestern(b.on)}: ${b.what}`}</title></circle>; })}
               </>
             )}
           </Land>
+          </div>
           <div className="atlas-cap">
             <p className="hc-year">{y}<span>{hijriSpan(y)} AH</span></p>
             <h2>{r.title}</h2>
             <p className="sub">{L.say}</p>
-            {lens === "hold" && <p className="hc-count">{nf.format(r.realm.towns)} towns under the crown. Allies: {(r.standing?.allies ?? []).join(", ") || "none"}.</p>}
+            {lens === "hold" && <p className="hc-count">{nf.format(r.realm.towns)} towns under the crown. Allies: {(r.standing?.allies ?? []).join(", ") || "none"}.{pan ? " Drag the map sideways for the east." : ""}</p>}
             {lens === "grew" && <p className="hc-count">{nf.format(reckonings[0].realm.towns)} towns in {Y0}; {nf.format(r.realm.towns)} in {y}.</p>}
             {lens === "faith" && souls > 0 && <p className="hc-count">Of {cf.format(souls)} souls: {share(r.peoples?.faiths, souls)}.</p>}
             {lens === "tongue" && souls > 0 && <p className="hc-count">Of {cf.format(souls)} souls: {share(r.peoples?.cultures, souls)}.</p>}
             {lens === "blood" && <p className="hc-count">{fought.length} battles placed by {y}: {fought.filter((b) => b.won === true).length} won, {fought.filter((b) => b.won === false).length} lost. Wars still being fought are bright, with this year's battles largest; a finished war fades over the next dozen years.</p>}
-            {lens === "hold" && <p className="map-key"><span><i className="sw l-ours" />The crown</span><span><i className="sw l-subject" />Ṭāʾifas and vassals</span><span><i className="sw l-ally" />Allies</span>{RIVALS.map((v, n) => o.r[n] ? <span key={v.name}><i className="sw" style={{ background: rivalFill(n) }} />{o.rn[n] || v.name}</span> : null)}<span>Paler land of the same colour is that power's own vassals.</span></p>}
+            {lens === "hold" && <p className="map-key"><span><i className="sw l-ours" />The crown</span><span><i className="sw l-subject" />Ṭāʾifas and vassals</span><span><i className="sw l-ally" />Allies</span>{RIVALS.map((v, n) => o.r[n] && inView(o.r[n], view) ? <span key={v.name}><i className="sw" style={{ background: rivalFill(n) }} />{o.rn[n] || v.name}</span> : null)}<span>Paler land of the same colour is that power's own vassals.</span></p>}
             {lens === "grew" && <p className="map-key"><span><i className="sw ring-old" />Held since {Y0}</span><span><i className="sw ring-new" />Newly won</span></p>}
             {towns && <p className="map-key"><span><i className={`sw tile-${lens}`} />{lens === "faith" ? "All Muslim" : "All Andalusī"}</span><span><i className="sw tile-base" />None</span><span>Iberia and the near shores only</span></p>}
             {lens === "blood" && <p className="map-key"><span><i className="bd won" />Won</span><span><i className="bd lost" />Lost</span><span><i className="bd even" />Unrecorded</span></p>}
@@ -278,34 +302,63 @@ export function Story() {
 
 /* ------------------------------------------------------------------ a war on its ground */
 export function BattleMap({ bs, from }: { bs: Beat[]; from?: string }) {
-  const pts = bs.filter((b) => b.at);
+  const narrow = useNarrow();
+  const pts = useMemo(() => bs.filter((b) => b.at), [bs]);
+  const last = pts.length - 1;
+  const [upto, setUpto] = useState<number | null>(null); // null shows the whole war
+  const [playing, setPlaying] = useState(false);
+  useEffect(() => {
+    if (!playing) return;
+    const t = setTimeout(() => { const n = Math.min(last, (upto ?? -1) + 1); if (n >= last) setPlaying(false); setUpto(n); }, 850);
+    return () => clearTimeout(t);
+  }, [playing, upto, last]);
   if (pts.length < 2) return null;
   const xs = pts.map((b) => b.at![0]), ys = pts.map((b) => b.at![1]);
   let [x0, x1, y0, y1] = [Math.min(...xs), Math.max(...xs), Math.min(...ys), Math.max(...ys)];
+  const asp = narrow ? 1.15 : 1.9;
   const pad = Math.max(60, (x1 - x0) * 0.12); x0 -= pad; x1 += pad; y0 -= pad; y1 += pad;
-  const w = Math.max(x1 - x0, (y1 - y0) * 1.9, 420), h = w / 1.9, cx = (x0 + x1) / 2, cy = (y0 + y1) / 2;
-  const view = [cx - w / 2, cy - h / 2, w, h], u = w / 100; // u: one percent of the width, so marks keep their size
+  const w = Math.max(x1 - x0, (y1 - y0) * asp, narrow ? 300 : 420), h = w / asp, cx = (x0 + x1) / 2, cy = (y0 + y1) / 2;
+  const view = [cx - w / 2, cy - h / 2, w, h], u = (w / 100) * (narrow ? 1.9 : 1); // u: one percent of the width, so marks keep their size
   const o = outline(from ?? pts[0].on);
   const seen = new Map<string, number>();
-  const own = pts.filter((b) => !b.minor);
+  const stepping = upto !== null, cur = stepping ? pts[upto] : null;
+  const shown = stepping ? pts.slice(0, upto + 1) : pts;
+  const own = shown.filter((b) => !b.minor), leg = own.slice(-2);
+  const go = (k: number) => { setPlaying(false); setUpto(Math.max(0, Math.min(last, k))); };
+  const line = (a: Beat[]) => a.map((b) => b.at!.join(",")).join(" ");
+  const dash = { strokeWidth: u * 0.22, strokeDasharray: `${u * 0.9} ${u * 0.7}` };
+  const marks = pts.map((b, k) => {
+    const key = b.at!.join(","), n = seen.get(key) ?? 0; seen.set(key, n + 1);
+    return { b, k, x: b.at![0] + n * u * 1.1, y: b.at![1] - n * u * 0.5 };
+  }).filter((m) => !stepping || m.k <= upto);
+  // the fight being read is drawn last, so nothing sits on top of it
+  const ordered = cur ? [...marks.filter((m) => m.b !== cur), ...marks.filter((m) => m.b === cur)] : marks;
   return (
-    <figure className="battlemap">
+    <figure className={`battlemap${stepping ? " stepping" : ""}`}>
       <Land view={view} label="Where the war was fought">
         <path className="l-subject" d={o.s} /><path className="l-ours" d={o.o} />
-        {own.length > 1 && <polyline className="march" points={own.map((b) => b.at!.join(",")).join(" ")} style={{ strokeWidth: u * 0.22, strokeDasharray: `${u * 0.9} ${u * 0.7}` }} />}
-        {pts.map((b, k) => {
-          const key = b.at!.join(","), n = seen.get(key) ?? 0; seen.set(key, n + 1);
-          const x = b.at![0] + n * u * 1.1, y = b.at![1] - n * u * 0.5, r = (b.minor ? 0.9 : 1.35) * u;
+        {own.length > 1 && <polyline className={`march${stepping ? " past" : ""}`} points={line(own)} style={dash} />}
+        {stepping && leg.length > 1 && cur && !cur.minor && <polyline className="march leg" points={line(leg)} style={{ strokeWidth: u * 0.34 }} />}
+        {ordered.map(({ b, k, x, y }) => {
+          const on = b === cur, r = (b.minor ? 0.9 : 1.35) * u * (on ? 1.35 : 1);
           return (
-            <g key={b.id} className={`bt ${b.won === true ? "won" : b.won === false ? "lost" : "even"}${b.minor ? " minor" : ""}`}>
+            <g key={b.id} className={`bt ${b.won === true ? "won" : b.won === false ? "lost" : "even"}${b.minor ? " minor" : ""}${on ? " on" : ""}`} onClick={() => go(k)}>
               <title>{`${formatWestern(b.on)}: ${b.what}`}</title>
+              {on && <circle className="halo" cx={x} cy={y} r={r + u * 0.7} style={{ strokeWidth: u * 0.3 }} />}
               <circle cx={x} cy={y} r={r} style={{ strokeWidth: u * 0.28 }} />
               {!b.minor && <text x={x} y={y + u * 0.55} textAnchor="middle" style={{ fontSize: u * 1.5 }}>{k + 1}</text>}
             </g>
           );
         })}
       </Land>
-      <figcaption><span><i className="bd won" />Won</span><span><i className="bd lost" />Lost</span><span><i className="bd even" />Undecided or unrecorded</span><span>Small marks are allies' fights. Numbers follow the order of the fighting, and the dashed line joins al-Andalus's own battles in that order. Hover a mark for the day.</span></figcaption>
+      <div className="hero-ctl">
+        <button type="button" className="play" onClick={() => { if (playing) return setPlaying(false); if (upto === null || upto >= last) setUpto(0); setPlaying(true); }}>{playing ? "Pause" : stepping && upto < last ? "March on" : "March through the war"}</button>
+        <button type="button" onClick={() => go((upto ?? last + 1) - 1)} disabled={upto === 0} aria-label="The fight before">Earlier</button>
+        <button type="button" onClick={() => go((upto ?? -1) + 1)} disabled={upto === last} aria-label="The fight after">Later</button>
+        {stepping && <button type="button" onClick={() => { setPlaying(false); setUpto(null); }}>Show the whole war</button>}
+      </div>
+      <p className="bm-read" aria-live="polite">{cur ? <><b>{upto! + 1} of {pts.length}</b> <span className="b-date">{formatWestern(cur.on)}</span> {cur.what}</> : <>{pts.length} fights placed. March through them in order, or choose a mark.</>}</p>
+      <figcaption><span><i className="bd won" />Won</span><span><i className="bd lost" />Lost</span><span><i className="bd even" />Undecided or unrecorded</span><span>Small marks are allies' fights. Numbers follow the order of the fighting, and the dashed line joins al-Andalus's own battles in that order.</span></figcaption>
     </figure>
   );
 }
@@ -323,7 +376,8 @@ export function LifeLines({ id }: { id: string }) {
   const end = (q: Person) => frac(q.died ?? now.date);
   const rows: [string, string][] = [[id, ""], ...kin];
   const t0 = Math.floor(Math.min(...rows.map(([r]) => frac(cast[r].born!))) / 10) * 10, t1 = Math.ceil(Math.max(...rows.map(([r]) => end(cast[r]))) / 10) * 10;
-  const L = 190, W = 900, rowH = 26, top = 92, H = top + rows.length * rowH + 30;
+  const narrow = useNarrow();
+  const L = narrow ? 104 : 190, W = narrow ? 380 : 900, rowH = 26, top = 92, H = top + rows.length * rowH + 30, step = narrow && t1 - t0 > 60 ? 20 : 10;
   const x = (t: number) => L + ((t - t0) / (t1 - t0)) * (W - L - 16);
   const drives = p.drives ?? [];
   // pins closer than their own width climb a row, so no number hides another
@@ -332,14 +386,14 @@ export function LifeLines({ id }: { id: string }) {
   return (
     <figure className="lives">
       <div className="scroll-x">
-        <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`The life of ${p.name} beside the people around ${p.sex === "f" ? "her" : "him"}`}>
-          {Array.from({ length: (t1 - t0) / 10 + 1 }, (_, k) => t0 + k * 10).map((t) => <g key={t}><line className="lv-grid" x1={x(t)} x2={x(t)} y1={top - 12} y2={H - 24} /><text className="lv-year" x={x(t)} y={H - 8} textAnchor="middle">{t}</text></g>)}
+        <svg className={narrow ? "fit" : undefined} viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`The life of ${p.name} beside the people around ${p.sex === "f" ? "her" : "him"}`}>
+          {Array.from({ length: Math.floor((t1 - t0) / step) + 1 }, (_, k) => t0 + k * step).map((t) => <g key={t}><line className="lv-grid" x1={x(t)} x2={x(t)} y1={top - 12} y2={H - 24} /><text className="lv-year" x={x(t)} y={H - 8} textAnchor="middle">{t}</text></g>)}
           {rows.map(([r, label], k) => {
             const q = cast[r], y = top + k * rowH, main = k === 0, a = x(frac(q.born!)), b = x(end(q));
             return (
               <g key={r} className={main ? "lv-main" : "lv-kin"}>
-                <a href={`#who-${r}`}><text className="lv-name" x={L - 12} y={y + 4} textAnchor="end">{short(r)}</text></a>
-                {!main && <text className="lv-rel" x={a - 6} y={y + 3.5} textAnchor="end">{label}</text>}
+                <a href={`#who-${r}`}><text className="lv-name" x={L - 12} y={y + 4} textAnchor="end">{narrow ? first(r) : short(r)}</text></a>
+                {!main && !narrow && <text className="lv-rel" x={a - 6} y={y + 3.5} textAnchor="end">{label}</text>}
                 <line className={`lv-life${q.died ? "" : " open"}`} x1={a} x2={b} y1={y} y2={y} />
                 {(q.reigns ?? []).map((g) => <line key={g.from} className="lv-reign" x1={x(frac(g.from))} x2={x(frac(g.to ?? now.date))} y1={y} y2={y} />)}
                 <circle className="lv-end" cx={a} cy={y} r={main ? 4 : 3} />
@@ -409,9 +463,12 @@ export function FamilyTree() {
   const flat: Node[] = []; const walk = (n: Node) => { flat.push(n); n.kids.forEach(walk); }; walk(tree.t);
   const cw = 104, rh = 138, padX = 56, W = tree.leaves * cw + padX, H = (Math.max(...flat.map((n) => n.depth)) + 1) * rh + 10;
   const X = (n: Node) => padX / 2 + n.x * cw + cw / 2, Y = (n: Node) => n.depth * rh + 34;
+  const box = useRef<HTMLDivElement>(null);
+  // where the tree is wider than the screen, open it on the one who reigns now
+  useEffect(() => { const el = box.current, r = flat.find((n) => cast[n.id].reigns?.some((g) => !g.to)); if (el && r && el.scrollWidth > el.clientWidth) el.scrollLeft = (X(r) / W) * el.scrollWidth - el.clientWidth / 2; }, []);
   return (
     <figure className="tree">
-      <div className="scroll-x">
+      <div className="scroll-x" ref={box} tabIndex={0}>
         <svg viewBox={`0 0 ${W} ${H}`} style={{ minWidth: W * 0.72 }} role="img" aria-label="The house of Naṣr: the rulers and the people the story follows">
           {flat.flatMap((n) => n.kids.map((k) => <path key={k.id} className="tr-link" d={`M${X(n)},${Y(n) + 30} V${Y(k) - 44} H${X(k)} V${Y(k) - 30}`} />))}
           {flat.map((n) => {
@@ -428,7 +485,7 @@ export function FamilyTree() {
           })}
         </svg>
       </div>
-      <figcaption>{flat.length} of the {Object.values(cast).filter((p) => p.house === "Naṣrid").length} Naṣrids on record: the rulers (ringed), the people the story follows, and the fathers who link them. "+3 more" counts children left out. "By" names the mother where the story follows her.</figcaption>
+      <figcaption>{flat.length} of the {Object.values(cast).filter((p) => p.house === "Naṣrid").length} Naṣrids on record: the rulers (ringed), the people the story follows, and the fathers who link them. "+3 more" counts children left out. "By" names the mother where the story follows her. <span className="only-narrow">The tree is wider than the screen: drag it sideways.</span></figcaption>
     </figure>
   );
 }
@@ -515,6 +572,13 @@ export function WarMaps({ id, bs }: { id: string; bs: Beat[] }) {
     const cx = (Math.min(...xs) + Math.max(...xs)) / 2, cy = (Math.min(...ys) + Math.max(...ys)) / 2;
     const wd = Math.max((Math.max(...xs) - Math.min(...xs)) * 1.5, (Math.max(...ys) - Math.min(...ys)) * 1.5 * 1.45, 560);
     view = [cx - wd / 2, cy - wd / 1.45 / 2, wd, wd / 1.45];
+    // widen to take in the crown's heartland, unless that would shrink the fighting to a speck
+    const c = boxOf(outline(w.before.date).o) && [VIEW[0] + 20, VIEW[1] + 20, VIEW[0] + VIEW[2] * 0.55, VIEW[1] + VIEW[3] * 0.8];
+    if (c) {
+      const bx0 = Math.min(view[0], c[0] - 20), by0 = Math.min(view[1], c[1] - 20), bx1 = Math.max(view[0] + view[2], c[2] + 20), by1 = Math.max(view[1] + view[3], c[3] + 20);
+      const ww = Math.max(bx1 - bx0, (by1 - by0) * 1.45);
+      if (ww <= wd * 2.6) view = [(bx0 + bx1) / 2 - ww / 2, (by0 + by1) / 2 - ww / 1.45 / 2, ww, ww / 1.45];
+    }
   }
   const One = ({ side, label }: { side: typeof w.before; label: string }) => { const o = outline(side.date); return (
     <figure>

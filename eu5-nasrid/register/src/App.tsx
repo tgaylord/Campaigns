@@ -474,10 +474,21 @@ function PersonPage({ id }: { id: string }) {
           <ul className="ties">{ties.map((t) => <li key={t.other + t.from + t.kind}><span className={`pill tie-${t.kind}`}>{t.kind}</span><Who id={t.other} /> <span className="th-n">{t.from.slice(0, 4)}{t.to ? `–${t.to.slice(0, 4)}` : ""}</span><p className="th-premise">{t.text}</p></li>)}</ul>
         </section>
       )}
-      <section>
-        <h2>On the record</h2>
-        {bs.length + ts.length ? <Line items={bs} tales={ts} startOpen /> : <p className="empty">No entry names {p.sex === "f" ? "her" : "him"} yet.</p>}
-      </section>
+      {ts.length > 0 && (
+        <section>
+          <h2>{p.sex === "f" ? "Her" : "His"} part in the story</h2>
+          <p className="scenes-n">{ts.length} {ts.length === 1 ? "telling names" : "tellings name"} {p.sex === "f" ? "her" : "him"}{ts.length > 4 ? ". Scroll sideways for the rest." : "."}</p>
+          <div className="scenes" role="list">
+            {ts.map((t) => <a role="listitem" key={t.id} href={`#telling-${t.id}`} className="scene"><span className="sc-year">{t.on.slice(0, 4)}</span><span className="sc-title">{t.title}</span><span className="sc-lede">{t.text.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/[*_]/g, "").split(/(?<=[.!?])\s/)[0]}</span></a>)}
+          </div>
+        </section>
+      )}
+      {bs.length > 0 ? (
+        <details className="record-fold" open={bs.length + ts.length <= 8}>
+          <summary><h2>On the record</h2><span>{bs.length} {bs.length === 1 ? "entry" : "entries"}{ts.length ? ` and ${ts.length} ${ts.length === 1 ? "telling" : "tellings"}` : ""}, in order</span></summary>
+          <Line items={bs} tales={ts} startOpen />
+        </details>
+      ) : !ts.length && <p className="empty">No entry names {p.sex === "f" ? "her" : "him"} yet.</p>}
       {p.note && <details className="behind"><summary>The long note carried over from the old Chronicle</summary><p>{p.note}</p></details>}
     </>
   );

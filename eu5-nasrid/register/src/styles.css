@@ -513,3 +513,41 @@ main.wrap:has(.chapter) { gap: 1.6rem; }
 .trait { font-size: 0.95rem; padding: 0.1rem 0.65rem; border: 1px solid var(--ink-3); border-radius: 999px; color: var(--ink); text-transform: capitalize; }
 .trait.young { border-style: dashed; color: var(--ink-2); text-transform: none; }
 @media (max-width: 40rem) { .warmaps .wm-grid { grid-template-columns: 1fr; } .gauges { gap: 1rem; } .gauge { width: 4rem; } }
+
+/* ---------------------------------------------------------------- pass eight: phones, the march, folded records, dark washes */
+:root { --p-sub: 20%; --p-rsub: 28%; --fade-k: 1; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --p-sub: 34%; --p-rsub: 42%; --fade-k: 1.7; } }
+:root[data-theme="dark"] { --p-sub: 34%; --p-rsub: 42%; --fade-k: 1.7; }
+.l-allysub { fill: color-mix(in srgb, var(--copper) var(--p-sub), var(--surface)); }
+.only-narrow { display: none; }
+.map-box { grid-area: map; position: relative; min-width: 0; }
+.atlas-map .map-box > .land { grid-area: auto; }
+.atlas-map.big .map-box > .land { max-height: max(18rem, calc(100dvh - 17.5rem)); background: var(--sunk); }
+:root[data-wide] .page-head:has(+ .atlas) { display: none; }
+.map-year { position: absolute; top: 0.5rem; right: 0.9rem; margin: 0; font: 700 clamp(2rem, 1.4rem + 2.6vw, 3.6rem)/1 var(--serif); color: var(--ink); opacity: 0.85; pointer-events: none; font-variant-numeric: lining-nums; }
+.atlas-map.big .atlas-cap .hc-year { font-size: 1.6rem; }
+.map-box.pan { overflow-x: auto; border: 1px solid var(--rule); }
+.map-box.pan > .land { width: 46rem; max-width: none; border: 0; }
+.battlemap .hero-ctl { padding-top: 0.2rem; }
+.bm-read { min-height: 3.2em; color: var(--ink); max-width: 46rem; }
+.bm-read b { font-family: var(--sans); font-weight: 700; margin-right: 0.5rem; }
+.bm-read .b-date { color: var(--ink-2); margin-right: 0.5rem; }
+.bt { cursor: pointer; }
+.battlemap.stepping .bt:not(.on) { opacity: 0.5; }
+.bt .halo { fill: none; stroke: var(--ink); }
+.march.past { stroke-opacity: 0.25; }
+.march.leg { stroke: var(--ink); stroke-opacity: 0.9; stroke-linecap: round; }
+.lives svg.fit { min-width: 0; }
+.record-fold > summary { cursor: pointer; display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem 1rem; list-style: none; padding: 0.8rem 0; border-block: 1px solid var(--rule); }
+.record-fold > summary::-webkit-details-marker { display: none; }
+.record-fold > summary h2 { margin: 0; }
+.record-fold > summary span { color: var(--ink-2); }
+.record-fold > summary::after { content: ""; margin-left: auto; align-self: center; width: 0.7rem; height: 0.7rem; border-right: 3px solid var(--ink-3); border-bottom: 3px solid var(--ink-3); transform: rotate(45deg) translateY(-4px); }
+.record-fold[open] > summary::after { transform: rotate(-135deg); }
+.record-fold[open] > summary { margin-bottom: 1rem; }
+.record-fold > summary:focus-visible { outline: 2px solid var(--cobalt); outline-offset: 2px; }
+@media (max-width: 40rem) {
+  .only-narrow { display: inline; }
+  .tree svg { min-width: 60rem !important; }
+  .battlemap .hero-ctl button { flex: 1 1 auto; }
+}
