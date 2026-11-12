@@ -877,9 +877,9 @@
  {
   "id": "2026-11-11",
   "date": "2026-11-11",
-  "commits": 4,
+  "commits": 5,
   "firstCommit": "e1e0463",
-  "lastCommit": "e21022b",
+  "lastCommit": "ca15782",
   "uncommitted": true,
   "claudeSessions": [
    "session_01BjCUTWMwSncdsoun2VQ9xv"
@@ -888,11 +888,12 @@
    "[eu5-nasrid] Corrections from the design studies, and a session log",
    "[eu5-nasrid] Closing verses for the three entries that had none",
    "[eu5-nasrid] The Codex and the Desk (phase one of the round-two designs)",
-   "[eu5-nasrid] 1444-1445 from Trent's account: the embargoes spread, a palace by the sea, Harbor Administration"
+   "[eu5-nasrid] 1444-1445 from Trent's account: the embargoes spread, a palace by the sea, Harbor Administration",
+   "[eu5-nasrid] Codex and Desk: fixes from a fresh-eyes review"
   ],
   "reached": {
    "from": "1444-06-05",
-   "to": "1445-01-30"
+   "to": "1447-01-08"
   },
   "entries": [],
   "notes": [],
@@ -911,7 +912,7 @@
   ],
   "wars": [],
   "places": [],
-  "events": 4,
+  "events": 6,
   "removed": {
    "entries": [],
    "checkpoints": [],

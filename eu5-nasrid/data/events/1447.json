@@ -1,0 +1,17 @@
+[
+ {
+  "id": "1447-01-08-the-flanders-embargo",
+  "date": "1447-01-08",
+  "type": "diplomacy",
+  "people": [],
+  "places": [],
+  "wars": [],
+  "title": "The Angevins next shut the merchants of al-Andalus out of Flanders",
+  "data": {
+   "by": "the Angevin Empire",
+   "where": "Flanders",
+   "trend": "after Genoa (1440), Ireland (1444) and Aquitaine (1444)"
+  },
+  "source": "Trent's account, 8 January 1447"
+ }
+]
