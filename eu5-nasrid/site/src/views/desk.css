@@ -1,0 +1,67 @@
+/* The Desk: working sheets on the night ground. */
+
+.desk { max-width: 64rem; }
+.desk-jump { display: flex; flex-wrap: wrap; gap: 0.4rem 1.25rem; margin: -0.75rem 0 1.5rem; font-size: 0.9rem; }
+.desk-jump a { color: var(--gilt-hi); }
+.desk-sheet { padding: 1.5rem clamp(1rem, 4vw, 2.5rem) 1.5rem; margin-bottom: 1.75rem; }
+.desk-sheet .small { font-size: 0.78rem; }
+
+.cover .eyebrow-line { font-size: 0.8rem; color: var(--sepia); margin: 0; }
+.cover-date { font-size: clamp(1.8rem, 3.5vw, 2.4rem); color: var(--ink); margin: 0.1rem 0 0.4rem; font-weight: 700; }
+.cover-sum { font-size: 0.9rem; color: var(--ink-2); margin: 0 0 1rem; }
+.cover-sum .bkc { color: var(--bk); }
+.cover-leaves { list-style: none; margin: 0 0 1.25rem; padding: 0; }
+.desk .cover-leaves li a { display: block; padding: 0.45rem 0 0.45rem 0.8rem; border-left: 3px solid var(--bk); margin-bottom: 0.35rem; text-decoration: none; color: var(--ink); background: color-mix(in srgb, var(--bk) 5%, transparent); }
+.cover-leaves li a:hover { background: color-mix(in srgb, var(--bk) 12%, transparent); }
+.cover-leaves .a { display: block; font-size: 0.74rem; color: var(--bk); }
+.cover-leaves .t { font-size: 1.1rem; }
+.cover-people, .cover-since { font-size: 0.85rem; color: var(--ink-2); margin: 0.75rem 0 0; }
+.cover-people a { color: var(--ink); }
+.cover-work { margin-top: 0.9rem; font-size: 0.82rem; color: var(--ink-2); }
+.cover-work summary { cursor: pointer; color: var(--cinnabar); }
+.cover-work ul { margin: 0.4rem 0 0; padding-left: 1.1rem; }
+
+.delta { margin: 0.5rem 0 0; }
+.delta-h { font-size: 0.82rem; color: var(--sepia); margin: 0 0 0.3rem; }
+.delta-t { border-collapse: collapse; font-size: 0.88rem; min-width: min(100%, 30rem); }
+.delta-t th, .delta-t td { text-align: left; padding: 0.3rem 1.2rem 0.3rem 0; border-bottom: 1px solid rgba(122, 90, 52, 0.18); }
+.delta-t thead th { color: var(--sepia); font-weight: 600; font-size: 0.78rem; }
+.delta-t tbody th { font-weight: 600; color: var(--ink); }
+.delta-t .num { text-align: right; font-variant-numeric: tabular-nums; }
+.delta-t .up { color: #1b6e4a; }
+.delta-t .down { color: #9b2a1a; }
+.delta-note { font-size: 0.74rem; color: var(--sepia); margin: 0.4rem 0 0; }
+
+.verse-check { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.75rem; margin: 0.6rem 0 1.25rem; font-size: 0.88rem; }
+.verse-check label { color: var(--ink-2); }
+.verse-check input { font: inherit; padding: 0.35rem 0.6rem; width: 11rem; border: 1px solid var(--parchment-edge); background: rgba(255, 252, 242, 0.7); color: var(--ink); border-radius: 2px; }
+.verse-check output { flex-basis: 100%; min-height: 1.4em; color: var(--ink); }
+.verse-check output .free { color: #1b6e4a; }
+.verse-t, .court-t { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+.verse-t th, .verse-t td, .court-t th, .court-t td { text-align: left; vertical-align: top; padding: 0.4rem 0.9rem 0.4rem 0; border-bottom: 1px solid rgba(122, 90, 52, 0.16); }
+.verse-t thead th, .court-t thead th { font-size: 0.75rem; color: var(--sepia); font-weight: 600; }
+.verse-t .ref { color: var(--bk); white-space: nowrap; font-size: 0.85rem; }
+.verse-t td a { color: var(--ink); }
+.verse-t .vt { display: block; font-style: italic; font-size: 0.85rem; color: var(--ink-2); margin-top: 0.1rem; }
+.verse-t .yr { white-space: nowrap; font-size: 0.78rem; color: var(--sepia); }
+.court-t th[scope="row"] { font-weight: 400; }
+.court-t th[scope="row"] a { color: var(--ink); }
+.court-t .num { text-align: right; font-variant-numeric: tabular-nums; }
+.court-t .st { font-size: 0.82rem; color: var(--ink-2); }
+.court-t .ln { font-size: 0.8rem; white-space: nowrap; }
+.court-t .lnk { color: var(--bk) !important; }
+.court-t .gap { color: var(--cinnabar); }
+.court-t .never { color: var(--cinnabar); font-style: italic; }
+.sub-h { font-size: 0.9rem; color: var(--ink); margin: 1.5rem 0 0.25rem; }
+.court-rest { margin-top: 1.25rem; }
+.court-rest summary { cursor: pointer; font-size: 0.88rem; color: var(--cinnabar); }
+.notes-l { margin: 0.5rem 0 0; padding-left: 1.1rem; font-size: 0.88rem; }
+.notes-l li { margin-bottom: 0.4rem; }
+
+@media (max-width: 40rem) {
+  .verse-t thead, .court-t thead { display: none; }
+  .verse-t tr, .court-t tr { display: grid; grid-template-columns: auto 1fr; gap: 0 0.75rem; padding: 0.45rem 0; border-bottom: 1px solid rgba(122, 90, 52, 0.16); }
+  .verse-t td, .verse-t th, .court-t td, .court-t th { border: 0; padding: 0.05rem 0; }
+  .verse-t td:nth-child(3), .court-t td.st, .court-t td.ln { grid-column: 1 / -1; }
+  .court-t .ln { white-space: normal; }
+}

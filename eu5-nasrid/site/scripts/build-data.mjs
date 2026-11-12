@@ -217,6 +217,9 @@ const StoryFront = z.object({
 /* ------------------------------------------------------------ helpers */
 
 const errors = [];
+/** Continuity notes for the writer: printed, and shown on the Desk (they don't stop the build). */
+const deskNotes = [];
+const deskNote = (kind, msg, at = null) => { console.warn(`note: ${msg}`); deskNotes.push({ kind, msg, at }); };
 function check(schema, value, where) {
   const r = schema.safeParse(value);
   if (!r.success) {
@@ -307,7 +310,7 @@ story.sort((a, b) => a.date.localeCompare(b.date));
   const seen = new Map(); // "sura:aya" → entry id
   for (const s of story) {
     if (s.kind !== "chronicle") continue;
-    if (!s.verse) { console.warn(`note: story/${s.id} has no closing verse recorded (front matter verse:)`); continue; }
+    if (!s.verse) { deskNote("verse", `story/${s.id} has no closing verse recorded (front matter verse:)`, s.id); continue; }
     const [sura, ayat] = s.verse.split(":");
     const [a, b = a] = ayat.split("-").map(Number);
     for (let n = a; n <= b; n++) {
@@ -363,6 +366,30 @@ for (const s of story) {
   s.sources.forEach((x) => {
     if (x !== "player" && !events.some((e) => e.id === x) && !snapshots.some((n) => n.id === x)) errors.push(`${w}.sources: unknown event or checkpoint "${x}"`);
   });
+}
+// Continuity: who can hold a seat at a checkpoint, and who can be named on a page.
+{
+  const P = new Map(people.map((p) => [p.id, p]));
+  const reigning = (d) => people.filter((p) => p.reigns.some((r) => r.from <= d && (r.to === null || r.to > d))).map((p) => p.id);
+  for (const s of snapshots) {
+    const w = `snapshots/${s.id}`;
+    const seats = [["ruler", s.ruler], ["heir", s.heir], ["regent", s.regent], ...s.cabinet.map((c) => ["dīwān", c.person])];
+    for (const [role, pid] of seats) {
+      const p = pid && P.get(pid);
+      if (!p) continue;
+      if (p.died && p.died < s.date) errors.push(`${w}: ${pid} holds the ${role} seat but died ${p.died} (read the seat from the save, not the last snapshot)`);
+      if (p.born && p.born > s.date) errors.push(`${w}: ${pid} holds the ${role} seat but is not born until ${p.born}`);
+    }
+    if (!reigning(s.date).includes(s.ruler)) errors.push(`${w}: ruler is ${s.ruler}, but people.json has ${reigning(s.date).join(", ") || "no one"} reigning on ${s.date}`);
+  }
+  for (const s of story) {
+    if (s.kind !== "chronicle") continue;
+    const end = s.endDate ?? s.date;
+    for (const pid of s.people) {
+      const p = P.get(pid);
+      if (p?.born && p.born > end) deskNote("before-birth", `story/${s.id} names ${pid}, born ${p.born}, after the entry's date (${end}): tell it as foreshadowing, or move the date`, s.id);
+    }
+  }
 }
 const dupes = (arr, what) => {
   const seen = new Set();
@@ -558,11 +585,11 @@ catch { console.warn("note: no data/sessions.json (tools/sessions.py)"); }
   const storyIds = new Set(story.map((s) => s.id)), snapIds = new Set(snapshots.map((s) => s.id));
   const logged = new Set(sittings.flatMap((s) => [...s.entries, ...s.notes]));
   for (const s of sittings) {
-    for (const e of [...s.entries, ...s.notes]) if (!storyIds.has(e)) console.warn(`note: sessions.json ${s.id} lists story ${e}, which no longer exists (re-run tools/sessions.py)`);
+    for (const e of [...s.entries, ...s.notes]) if (!storyIds.has(e)) deskNote("log", `sessions.json ${s.id} lists story ${e}, which no longer exists (re-run tools/sessions.py)`);
     for (const c of s.checkpoints) if (!snapIds.has(c)) console.warn(`note: sessions.json ${s.id} lists checkpoint ${c}, which no longer exists`);
   }
   const unlogged = story.filter((s) => !logged.has(s.id));
-  if (sittings.length && unlogged.length) console.warn(`note: ${unlogged.length} story file(s) not yet in the session log (run tools/sessions.py before committing): ${unlogged.slice(0, 3).map((s) => s.id).join(", ")}`);
+  if (sittings.length && unlogged.length) deskNote("log", `${unlogged.length} story file(s) not yet in the session log (run tools/sessions.py before committing): ${unlogged.slice(0, 3).map((s) => s.id).join(", ")}`);
 }
 
 for (const c of countries) if (!followed.has(c.tag) && ![...Object.values(owners)].some((o) => Object.values(o).includes(c.tag))) {
@@ -591,7 +618,7 @@ await mkdir(OUT, { recursive: true });
 const subjectTags = Object.fromEntries(Object.entries(subjectLands).map(([id, s]) => [id, Object.keys(s)]));
 const latestLandAt = {};
 for (const s of snapshots) for (const l of lands[s.id] ?? []) latestLandAt[l.key] = s.id;
-const campaign = { generated: new Date().toISOString(), sample: sampleData, eras, people, places, wars, countries, snapshots, events, story, catalog, subjectTags, latestLandAt, devastation, world };
+const campaign = { generated: new Date().toISOString(), sample: sampleData, eras, people, places, wars, countries, snapshots, events, story, catalog, subjectTags, latestLandAt, devastation, world, sessions: sittings, deskNotes };
 await writeFile(path.join(OUT, "campaign.json"), JSON.stringify(campaign));
 await writeFile(path.join(OUT, "map.json"), JSON.stringify(mapOut));
 // The heavy part of each checkpoint (realm outlines and the full tables of lands), one file per

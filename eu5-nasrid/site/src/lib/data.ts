@@ -60,8 +60,18 @@ export type CampaignEvent = {
 export type StoryEntry = {
   id: string; title: string; date: string; endDate?: string; era: string; kind: "chronicle" | "ooc";
   about?: string | null; people: string[]; places: string[]; wars: string[]; sources: string[];
+  /** the closing verse, "sura:āya" or "sura:āya-āya" (chronicle entries) */
+  verse?: string;
   html: string; sample: boolean;
 };
+/** One sitting of work on the record (tools/sessions.py): what it added. */
+export type Sitting = {
+  id: string; date: string; commits: number; uncommitted: boolean; claudeSessions: string[]; headlines: string[];
+  reached: { from: string; to: string } | null; entries: string[]; notes: string[]; checkpoints: string[];
+  people: string[]; wars: string[]; places: string[]; events: number;
+};
+/** What the build noticed for the writer (continuity, missing verses, a stale log). */
+export type DeskNote = { kind: string; msg: string; at: string | null };
 
 export type Mod = { key: string; label: string; value: number | string; text: string; percent: boolean; good: boolean; size?: string };
 export type CatEntry = {
@@ -96,6 +106,8 @@ type Campaign = {
   latestLandAt: Record<string, string>;
   /** war id → how the land stood before and at the peace (tools/devastation.py) */
   devastation: Record<string, Devastation>;
+  sessions: Sitting[];
+  deskNotes: DeskNote[];
 };
 export type DevastationLoc = {
   area: string | null; pop0: number; pop1: number; pop2: number | null; prosperity0: number; prosperity1: number;
@@ -114,6 +126,8 @@ export type SubjectLands = {
 
 export const campaign = raw as unknown as Campaign;
 export const { eras, people, places, wars, countries, snapshots, events, story, catalog, subjectTags, latestLandAt, devastation } = campaign;
+export const sessions: Sitting[] = campaign.sessions ?? [];
+export const deskNotes: DeskNote[] = campaign.deskNotes ?? [];
 
 /** Names of peoples and faiths as the rest of the site writes them. */
 const FAITH: Record<string, string> = { judaism: "Jewish", nyama_religion: "Nyama" };

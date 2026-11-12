@@ -97,3 +97,21 @@ export function formatDual(game: string): string {
 export function hijriYear(game: string): number {
   return toHijri(game).y;
 }
+
+/** A Julian Day back to a game date ("YYYY-MM-DD"): Julian before 15 October 1582, Gregorian after. */
+export function jdToGameDate(jd: number): string {
+  const J = Math.floor(jd + 0.5);
+  let a: number;
+  if (J >= 2299161) { // 15 October 1582 (Gregorian)
+    const alpha = Math.floor((J - 1867216.25) / 36524.25);
+    a = J + 1 + alpha - Math.floor(alpha / 4);
+  } else a = J;
+  const b = a + 1524, c = Math.floor((b - 122.1) / 365.25), d = Math.floor(365.25 * c), e = Math.floor((b - d) / 30.6001);
+  const day = b - d - Math.floor(30.6001 * e), month = e < 14 ? e - 1 : e - 13, year = month > 2 ? c - 4716 : c - 4715;
+  return `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
+}
+
+/** The game date of a Hijri day (tabular calendar), the inverse of toHijri. */
+export function hijriToGameDate(y: number, m: number, d: number): string {
+  return jdToGameDate(islamicToJd(y, m, d));
+}

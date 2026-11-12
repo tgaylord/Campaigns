@@ -21,12 +21,18 @@ const Lands = lazy(() => import("./views/Lands"));
 const Kingdoms = lazy(() => import("./views/Kingdoms"));
 const World = lazy(() => import("./views/World"));
 const GoldenCentury = lazy(() => import("./views/GoldenCentury"));
+const Codex = lazy(() => import("./views/Codex"));
+const CodexLeaf = lazy(() => import("./views/CodexLeaf"));
+const CodexBook = lazy(() => import("./views/CodexBook"));
+const CodexColophon = lazy(() => import("./views/CodexColophon"));
+const Desk = lazy(() => import("./views/Desk"));
 
 const NAV = [
   { to: "/", latin: "The Atlas", ar: "الأطلس", end: true },
   { to: "/world", latin: "The World", ar: "الآفاق" },
   { to: "/golden-century", latin: "The Golden Century", ar: "القرن الذهبي" },
   { to: "/chronicle", latin: "The Chronicle", ar: "الأخبار" },
+  { to: "/codex", latin: "The Codex", ar: "السفر" },
   { to: "/council", latin: "The Council", ar: "الديوان" },
   { to: "/provinces", latin: "The Provinces", ar: "الكور" },
   { to: "/scroll", latin: "The Long Scroll", ar: "الدرج" },
@@ -35,6 +41,7 @@ const NAV = [
   { to: "/house", latin: "House of Naṣr", ar: "بنو نصر" },
   { to: "/wars", latin: "Wars", ar: "الحروب" },
   { to: "/places", latin: "Gazetteer", ar: "البلدان" },
+  { to: "/desk", latin: "The Desk", ar: "المكتب" },
   // the Strait's question was settled in 1370; its hall stays for the record
   { to: "/strait", latin: "The Strait", ar: "الزقاق" },
 ];
@@ -83,6 +90,11 @@ export default function App() {
           <Route path="/chronicle" element={<ChronicleIndex />} />
           <Route path="/chronicle/book/:era" element={<ChronicleBook />} />
           <Route path="/chronicle/:id" element={<ChronicleFolio />} />
+          <Route path="/codex" element={<Codex />} />
+          <Route path="/codex/colophon" element={<CodexColophon />} />
+          <Route path="/codex/book/:era" element={<CodexBook />} />
+          <Route path="/codex/:addr" element={<CodexLeaf />} />
+          <Route path="/desk" element={<Desk />} />
           <Route path="/strait" element={<Strait />} />
           <Route path="/council" element={<Council />} />
           <Route path="/provinces" element={<Lands />} />
