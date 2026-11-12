@@ -72,6 +72,18 @@ const Person = z.object({
   stats: z.object({ adm: z.number(), dip: z.number(), mil: z.number() }).optional(),
   traits: z.array(z.string()).default([]),
   note: z.string().optional(),
+  /** how much room the story gives them: central (it can't be told without them), key (recurring, a role
+   *  but no arc). Unset: minor if a leaf names them, otherwise background (SYSTEMS §6, the Hourglass). */
+  tier: z.enum(["central", "key"]).optional(),
+  /** dated stations from the saves and checkpoints (tools/character_roles.py) */
+  stations: z.array(z.object({
+    role: z.enum(["dīwān", "general", "admiral", "explorer", "heir", "regent", "rebel"]),
+    from: isoDate, to: isoDate.nullable(), source: z.enum(["save", "checkpoints"]), approx: z.boolean(),
+  })).default([]),
+  /** a central figure's arc: dated lines of what drives them, each from Trent's reading or the chronicle's */
+  arc: z.array(z.object({
+    from: isoDate, to: isoDate.optional(), text: z.string(), by: z.enum(["trent", "chronicle"]), source: z.string().optional(),
+  })).default([]),
   sample,
 });
 
@@ -253,6 +265,7 @@ function entityLinks(refs) {
 const eras = (await readJson(path.join(CAMPAIGN, "data/eras.json"))).map((e, i) => check(Era, e, `eras.json[${i}]`)).filter(Boolean);
 const people = (await readJson(path.join(CAMPAIGN, "data/people.json"))).map((e, i) => check(Person, e, `people.json[${i}]`)).filter(Boolean);
 // A reign left open on a dead ruler draws him on the throne for ever (the Long Scroll, the House).
+for (const p of people) if (p.arc.length && p.tier !== "central") errors.push(`people.json ${p.id}: an arc is only kept for central figures (tier: central)`);
 for (const p of people) for (const r of p.reigns ?? []) if (!r.to && p.died) errors.push(`people.json ${p.id}: reign from ${r.from} has no end, but they died ${p.died}`);
 const places = (await readJson(path.join(CAMPAIGN, "data/gazetteer.json"))).map((e, i) => check(Place, e, `gazetteer.json[${i}]`)).filter(Boolean);
 // The plain name of each place, for the names switch: the game's English name for its location,

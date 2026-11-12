@@ -49,6 +49,10 @@ function stationAt(p: Person, date: string): string | null {
   const y = +date.slice(0, 4);
   const r = reignAt(date);
   if (r && r.person.id === p.id) return `on the throne, ${ordinal(regnalYear(date, r))} year`;
+  // dated stations from the saves come first, to the day
+  const STATION: { [k: string]: string } = { "dīwān": "in the dīwān", general: "a general", admiral: "an admiral", explorer: "an explorer", heir: "heir to the throne", regent: "regent", rebel: "in rebellion" };
+  const now = (p.stations ?? []).filter((s) => s.from <= date && (s.to === null || s.to > date));
+  if (now.length) return now.map((s) => STATION[s.role] ?? s.role).join(", ");
   for (const role of p.roles) {
     const m = /^(.*?)\s*\((?:from\s+)?(\d{4})(?:[–-](\d{4}))?\)\s*$/.exec(role);
     if (!m) continue;

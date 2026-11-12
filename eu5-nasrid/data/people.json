@@ -300,7 +300,16 @@
    "mil": 49.0
   },
   "died": "1362-01-16",
-  "note": " Died 1362-01-16 (save of 24 October 1414)."
+  "note": " Died 1362-01-16 (save of 24 October 1414).",
+  "stations": [
+   {
+    "role": "dīwān",
+    "from": "1337-04-01",
+    "to": "1341-01-06",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "faraj-ibn-muhammad",
@@ -391,7 +400,44 @@
    "mil": 84
   },
   "note": "In the game the ablest man at court (88/79/84). Given command of the host against Aragon in May 1339 (Trent's account). By 8 July 1341 he had left Granada: the save of 8 September 1341 has him in Castile as Frederick ibn al-Khaṭīb, Catholic and Castilian, an admiral from 8 July 1341. On 6 January 1366 he led Castile's last field army, 950 men, at San Clemente, and Murād destroyed it. He himself survived (save of 5 April 1366). Died 1373-03-13 (save of 24 October 1414).",
-  "died": "1373-03-13"
+  "died": "1373-03-13",
+  "stations": [
+   {
+    "role": "admiral",
+    "from": "1364-11-02",
+    "to": "1364-11-09",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "general",
+    "from": "1371-08-07",
+    "to": "1373-03-13",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "central",
+  "arc": [
+   {
+    "from": "1339-05-24",
+    "text": "The ablest man at court, given the host against Arghūn at twenty-five.",
+    "by": "trent",
+    "source": "Trent's account, May 1339"
+   },
+   {
+    "from": "1341-07-08",
+    "text": "Goes over to Qashtāla, and serves its fleets and armies.",
+    "by": "chronicle",
+    "source": "save of 8 September 1341"
+   },
+   {
+    "from": "1366-01-06",
+    "text": "Leads Qashtāla's last field army, and survives its destruction at San Clemente.",
+    "by": "chronicle",
+    "source": "save of 5 April 1366"
+   }
+  ]
  },
  {
   "id": "muhammad-iv",
@@ -439,7 +485,51 @@
    "mil": 46.0
   },
   "note": "Elder brother of Yūsuf I. Regent of Granada from 9 August 1351 until the sultan's return on 7 April 1352, while he made the Hajj (the chronicle's choice; the game named a Naṣr al-Stijjai). Around the new year of 1355 he married Fatiu, daughter of the old ruler of Ghana, fulfilling the Ghana betrothal of 1345, and went south across the desert to live there. His first wife was Shamʿa, of a ruling house of the central Sahara (married 1 March 1354). The chronicle reads his going, like Ismāʿīl's in 1359, as the harem clearing the court of the amir's grown brothers. He died far from Gharnāṭa on 18 September 1370. In August 1395 his son Saʿd was made ruler of the new Ṭāʾifa of Qūnka (save of 5 August 1395).",
-  "died": "1370-09-18"
+  "died": "1370-09-18",
+  "stations": [
+   {
+    "role": "dīwān",
+    "from": "1337-04-01",
+    "to": "1354-06-28",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "heir",
+    "from": "1337-08-18",
+    "to": "1351-06-03",
+    "source": "checkpoints",
+    "approx": true
+   },
+   {
+    "role": "general",
+    "from": "1369-10-02",
+    "to": "1369-11-06",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "central",
+  "arc": [
+   {
+    "from": "1337-08-18",
+    "text": "The sultan's elder brother and heir, strengthening the government from the dīwān.",
+    "by": "chronicle",
+    "source": "save of 18 August 1337"
+   },
+   {
+    "from": "1351-08-09",
+    "text": "Holds the throne while his brother makes the Ḥajj, and gives it back.",
+    "by": "chronicle",
+    "source": "the chronicle's choice of regent"
+   },
+   {
+    "from": "1355-01-01",
+    "text": "Cleared from court by the harem: marries a princess of Ghāna and goes south across the desert.",
+    "by": "chronicle",
+    "source": "Of the Governor of Qurṭuba"
+   }
+  ]
  },
  {
   "id": "yusuf-i",
@@ -475,7 +565,55 @@
    "benevolent"
   ],
   "died": "1363-08-01",
-  "note": "Died on 1 August 1363 at Ayamonte, on the march into Portugal in the War of Independence, aged 45, after a reign of thirty years. Father of Saʿd, Ismāʿīl, Abū al-Ḥasan ʿAlī, Muḥammad, Jadīla, Maryam, Fāṭima, ʿĀʾisha and Umm al-Fatḥ."
+  "note": "Died on 1 August 1363 at Ayamonte, on the march into Portugal in the War of Independence, aged 45, after a reign of thirty years. Father of Saʿd, Ismāʿīl, Abū al-Ḥasan ʿAlī, Muḥammad, Jadīla, Maryam, Fāṭima, ʿĀʾisha and Umm al-Fatḥ.",
+  "stations": [
+   {
+    "role": "general",
+    "from": "1352-08-23",
+    "to": "1363-08-01",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "central",
+  "arc": [
+   {
+    "from": "1337-04-01",
+    "text": "A young sultan, tributary to Qashtāla and in debt, who means to put the state in order before he risks it in war.",
+    "by": "chronicle",
+    "source": "Book I, The Mending of the State"
+   },
+   {
+    "from": "1339-05-24",
+    "text": "Means to reclaim from Arghūn what belongs to al-Andalus, and makes his first war in his own name.",
+    "by": "trent",
+    "source": "Trent's account, May 1339"
+   },
+   {
+    "from": "1339-09-02",
+    "text": "Takes the Volunteers of the Faith into his pay against the dīwān's warning: an army now, the treasury later.",
+    "by": "chronicle",
+    "source": "Of the First Blood at Jumalla"
+   },
+   {
+    "from": "1346-08-01",
+    "text": "Keeps Granada alive on the scales between the three crowns and the Marīnids, negotiating where he cannot fight.",
+    "by": "chronicle",
+    "source": "Book II, The Balance; traits fierce negotiator"
+   },
+   {
+    "from": "1348-07-01",
+    "text": "The healer and builder: through the Pestilence he founds houses of healing and keeps building.",
+    "by": "chronicle",
+    "source": "traits battlefield medic, architectural visionary"
+   },
+   {
+    "from": "1351-08-09",
+    "text": "Makes the Ḥajj and leaves his brother Faraj to hold the throne.",
+    "by": "chronicle",
+    "source": "Of the Royal Ḥajj"
+   }
+  ]
  },
  {
   "id": "fatima-bint-ismail",
@@ -515,7 +653,16 @@
    "mil": 61.0
   },
   "note": "Married into the Karasids of Anatolia (royal marriage of 2 August 1353). Married three times. Back at the court of Gharnāṭa, she took a seat in the dīwān on 10 April 1366, in place of Khālid ibn Yaḥyā, and was set to integrating the new lands (save of 6 November 1366). On 1 October 1370 she turned to promoting Andalusī culture beside Duʿā; by January 1373 she had left the dīwān, and the sultan's mother Sayyida of Fezzan held her seat. Her son by Muḥammad ibn Aḥmad of the Banū al-ʿĀbid, Ismāʿīl, became one of the empire's explorers in 1396. She died on 2 November 1382 (autosave of 1 June 1397).",
-  "died": "1382-11-02"
+  "died": "1382-11-02",
+  "stations": [
+   {
+    "role": "dīwān",
+    "from": "1366-06-11",
+    "to": "1370-11-18",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "ismail-ibn-ismail",
@@ -537,7 +684,31 @@
    "child_gregarious"
   ],
   "note": "Betrothed on 16 March 1354 to a daughter of the Aydınids of Anatolia. He married her about March 1359 and went to live at the Aydınid court, leaving his seat in the dīwān; the chronicle reads it, like Faraj's going, as the harem clearing the court of the amir's grown brothers. He died abroad on 4 October 1380. In August 1395 his son Saʿd, born of his Aydınid wife, was made ruler of the new Ṭāʾifa of Shalamanka (save of 5 August 1395).",
-  "died": "1380-10-04"
+  "died": "1380-10-04",
+  "stations": [
+   {
+    "role": "dīwān",
+    "from": "1341-01-06",
+    "to": "1359-06-20",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "general",
+    "from": "1366-03-30",
+    "to": "1366-07-28",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "admiral",
+    "from": "1380-01-19",
+    "to": "1380-10-04",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "muhammad-ibn-ismail",
@@ -558,7 +729,16 @@
   },
   "traits": [],
   "note": "Grandson of Muḥammad ibn Faraj of the house of Naṣr, son of Ismāʿīl ibn Muḥammad (died of the plague, 19 January 1351); called al-Aḥmar, 'the Red', by the game. Husband of the Emperor's half-sister Maryam bint Yūsuf of the dīwān. On 10 February 1396, at sixty-two, he was made an explorer, and by 1 June 1397 he was charting the Canary Islands, sailing from Ishbīliya and lying off Aguere on Tenerife (autosave of 1 June 1397). He died on 24 July 1398, aged sixty-five, a year after he had charted the Canaries (save of 24 October 1414).",
-  "died": "1398-07-24"
+  "died": "1398-07-24",
+  "stations": [
+   {
+    "role": "explorer",
+    "from": "1396-02-10",
+    "to": "1398-07-24",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "sayyida-of-fezzan",
@@ -582,7 +762,37 @@
    "child_gregarious"
   ],
   "note": "Daughter of the ruler of Fezzan, of the house of Murzuq. Betrothed to Yūsuf on 16 November 1337, aged nine. Her father's name is the game's (name_salmama); its proper form is unconfirmed. Married to Yūsuf I while the Jamāʿa of 1344 sat (Trent's account), a marriage that helped inspire the royal harem law of that October. Mother of Sultan Saʿd, Ismāʿīl and Jadīla. By January 1373 she sat in her son's dīwān, promoting Andalusī culture beside Duʿā (save of 16 January 1373). From 8 March 1378 she worked in the dīwān on the realm's diplomatic endeavours (save of 6 April 1378). She died on 19 November 1380, aged fifty-two (save of 8 December 1382).",
-  "died": "1380-11-19"
+  "died": "1380-11-19",
+  "stations": [
+   {
+    "role": "dīwān",
+    "from": "1373-12-01",
+    "to": "1394-03-04",
+    "source": "checkpoints",
+    "approx": true
+   }
+  ],
+  "tier": "central",
+  "arc": [
+   {
+    "from": "1344-10-01",
+    "text": "Her marriage to Yūsuf helps bring about the royal harem law.",
+    "by": "trent",
+    "source": "Trent's account, 1344"
+   },
+   {
+    "from": "1373-01-16",
+    "text": "Mother of the sultan, she sits in his dīwān and keeps the court Andalusī.",
+    "by": "chronicle",
+    "source": "save of 16 January 1373"
+   },
+   {
+    "from": "1378-03-08",
+    "text": "Turns to the realm's diplomacy in the dīwān.",
+    "by": "chronicle",
+    "source": "save of 6 April 1378"
+   }
+  ]
  },
  {
   "id": "gideon-ben-joshua",
@@ -629,7 +839,38 @@
    26562,
    34868
   ],
-  "died": "1355-02-18"
+  "died": "1355-02-18",
+  "stations": [
+   {
+    "role": "general",
+    "from": "1339-09-02",
+    "to": "1340-08-11",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "general",
+    "from": "1339-09-02",
+    "to": "1340-08-11",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "dīwān",
+    "from": "1354-07-10",
+    "to": "1355-02-18",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "dīwān",
+    "from": "1354-07-10",
+    "to": "1355-02-18",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "joan-doriola",
@@ -648,7 +889,23 @@
   },
   "traits": [],
   "note": "Ruler of Valencia from its release as a ṭāʾifa on 23 August 1340: a Catalan, Sunni, of the house the game calls Orihuela. The chronicle keeps the Christian name he was born with, as the game does (Trent's decision), so he stays recognisable later. Died 1368-07-31 (save of 24 October 1414).",
-  "died": "1368-07-31"
+  "died": "1368-07-31",
+  "stations": [
+   {
+    "role": "admiral",
+    "from": "1353-02-16",
+    "to": "1353-09-14",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "general",
+    "from": "1363-06-26",
+    "to": "1366-01-24",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "juan-manuel-enriquez",
@@ -667,7 +924,24 @@
   },
   "traits": [],
   "note": "Ruler of Murcia from its release as a ṭāʾifa on 23 August 1340: a Castilian, Sunni. The chronicle keeps the Christian name he was born with, as the game does (Trent's decision), so he stays recognisable later. His host of 410 was destroyed by a Moroccan landing at Málaga on 16 September 1369. Died 1370-06-03 (save of 24 October 1414).",
-  "died": "1370-06-03"
+  "died": "1370-06-03",
+  "stations": [
+   {
+    "role": "general",
+    "from": "1368-12-02",
+    "to": "1369-09-16",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "admiral",
+    "from": "1369-09-29",
+    "to": "1370-06-03",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "khalid-ibn-yahya",
@@ -694,7 +968,57 @@
    "hardy_warrior"
   ],
   "note": "Son of Yaḥyā Raḥḥū and Qamar, the mother of Ismāʿīl ibn Ismāʿīl: born into the Raḥḥū house on 30 December 1342. Took his seat in the dīwān on 2 April 1359, at sixteen, after Ismāʿīl ibn Ismāʿīl left for the Aydınid court; set to promoting Andalusī culture. One of the ablest men at court (80/85/78), an architect. Left the dīwān on 10 April 1366, when Maryam bint Ismāʿīl took his seat. A general in the Second Marīnid War: he was thrown back before Cádiz on 26 June 1369, held the line at Antequera on 15 October and won at Almuñécar on 8 November (save of 18 November 1369). He went on to win at Adra, Málaga (twice), Jerez and Beja in 1369–1370, the general of the war's second half. By January 1373 married to Charlotte of Crato, a Sunnī Portuguese noblewoman. In January 1402, at fifty-nine and still 80/85/78, he led the crown's Highland Prospecting Survey into the hills, from Almonaster in the Sierra toward El Escorial, Qusanṭīna and home to Ishbīliya (Trent's screens). The survey found iron at al-Iskuriyāl, silver at Qusanṭīna and gems at Qrabaqa, and came home on 3 August 1402. He is one of the court's favourites, sent whenever a member of the house does not see to a thing himself (Trent). On 2 July 1405, at sixty-two, he commanded the joint host of al-Andalus, Aragon and Catalonia, some 20,550 men, that broke the rising of Ciudad Rodrigo at Granadilla (save of 8 July 1405). On 1 November 1411, at sixty-eight, he was made ruler of the new Ṭāʾifa of Burghush, the 28 towns of Old Castile from Burgos and Valladolid to Palencia, Segovia and Logroño, the first man outside the house of Naṣr to be given a ṭāʾifa (save of 1 November 1411). He died on 2 September 1412, aged sixty-nine, less than a year after he was given Burghush; his son Abū Ḥammū succeeded him (save of 24 October 1414).",
-  "died": "1412-09-02"
+  "died": "1412-09-02",
+  "stations": [
+   {
+    "role": "dīwān",
+    "from": "1359-06-29",
+    "to": "1366-06-11",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "explorer",
+    "from": "1392-09-07",
+    "to": "1396-03-01",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "general",
+    "from": "1405-05-02",
+    "to": "1405-09-02",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "central",
+  "arc": [
+   {
+    "from": "1359-04-02",
+    "text": "Takes a seat in the dīwān at sixteen, promoting Andalusī culture.",
+    "by": "chronicle",
+    "source": "save of 1359"
+   },
+   {
+    "from": "1369-10-15",
+    "text": "The general of the second half of the Marīnid war: Antequera, Almuñécar, Adra, Málaga, Jerez, Beja.",
+    "by": "chronicle",
+    "source": "save of 18 November 1369; the Balance's last leaf"
+   },
+   {
+    "from": "1402-01-01",
+    "text": "A court favourite, sent whenever a member of the house does not see to a thing himself.",
+    "by": "trent",
+    "source": "Trent"
+   },
+   {
+    "from": "1411-11-01",
+    "text": "The first man outside the house of Naṣr to be given a ṭāʾifa.",
+    "by": "chronicle",
+    "source": "save of 1 November 1411"
+   }
+  ]
  },
  {
   "id": "alfonso-xi",
@@ -713,7 +1037,24 @@
   },
   "traits": [],
   "note": "King of Castile, Granada's overlord; husband of Maria, queen of Portugal. He died on campaign on 29 March 1366, a week before the peace that freed Granada (save of 13 September 1370), and his son Jerónimo succeeded him.",
-  "died": "1366-03-29"
+  "died": "1366-03-29",
+  "stations": [
+   {
+    "role": "admiral",
+    "from": "1363-01-02",
+    "to": "1363-03-03",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "general",
+    "from": "1366-01-02",
+    "to": "1366-03-29",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "maria-of-portugal",
@@ -734,7 +1075,8 @@
   },
   "traits": [],
   "note": "Queen of Portugal in her own right (from 29 January 1342) and consort of Alfonso XI of Castile, the two crowns joined by their marriage. She died of a sudden illness on 4 October 1367, and her son Jerónimo, already king of Castile, inherited Portugal (save of 13 September 1370).",
-  "died": "1367-10-04"
+  "died": "1367-10-04",
+  "tier": "key"
  },
  {
   "id": "peter-of-castile",
@@ -775,7 +1117,37 @@
   },
   "traits": [],
   "note": "Queen Maria's younger brother; leads the revolt against her that began on 25 October 1340. Died 1384-06-14 (save of 24 October 1414).",
-  "died": "1384-06-14"
+  "died": "1384-06-14",
+  "stations": [
+   {
+    "role": "dīwān",
+    "from": "1337-04-02",
+    "to": "1340-10-24",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "rebel",
+    "from": "1340-10-24",
+    "to": "1340-10-25",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "general",
+    "from": "1344-03-02",
+    "to": "1344-03-11",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "admiral",
+    "from": "1363-06-02",
+    "to": "1363-06-07",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "najib",
@@ -830,7 +1202,68 @@
     "to": "1405-03-02"
    }
   ],
-  "died": "1405-03-02"
+  "died": "1405-03-02",
+  "stations": [
+   {
+    "role": "heir",
+    "from": "1351-06-03",
+    "to": "1363-08-02",
+    "source": "checkpoints",
+    "approx": true
+   },
+   {
+    "role": "general",
+    "from": "1394-01-02",
+    "to": "1405-03-01",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "central",
+  "arc": [
+   {
+    "from": "1351-01-19",
+    "text": "A prodigy the court expects to leave his name in the histories; his father brings him the finest tutors of the Islamic world.",
+    "by": "chronicle",
+    "source": "save of 1351; the Chancellor's report"
+   },
+   {
+    "from": "1364-01-18",
+    "text": "Takes his personal rule hard and fast: the regent dies the day the regency ends, and Saʿd marries his father's widow Duʿāʾ.",
+    "by": "chronicle",
+    "source": "his record; Of the Regent Who Did Not Last, and the Sultan's Second Wife"
+   },
+   {
+    "from": "1364-01-18",
+    "text": "The soldier who shares the camp, with a merchant's eye and honest books.",
+    "by": "chronicle",
+    "source": "traits conqueror, entrepreneur, hardy warrior, incorruptible"
+   },
+   {
+    "from": "1364-09-11",
+    "text": "Means to break Qashtāla's hold on Granada for good, and does, in the War of Independence.",
+    "by": "chronicle",
+    "source": "Of the Conqueror"
+   },
+   {
+    "from": "1375-03-16",
+    "text": "Restores al-Andalus and takes the style of Emperor: the peninsula is to be taken back from the north, war by war (the Istirdād).",
+    "by": "chronicle",
+    "source": "Of the Reordering of the Realm, and the Restoration of al-Andalus"
+   },
+   {
+    "from": "1379-04-25",
+    "text": "Turns the realm to the sea and to trade, and moves the court to Ishbīliya for its river and its market.",
+    "by": "trent",
+    "source": "Trent's account, April 1379"
+   },
+   {
+    "from": "1387-01-22",
+    "text": "The Conqueror becomes the realm's greatest builder: the Ḥijāba, the scholars, the madrasas.",
+    "by": "trent",
+    "source": "Trent's reading"
+   }
+  ]
  },
  {
   "id": "aiman-mamluk",
@@ -842,7 +1275,34 @@
   "born": "1344-04-06",
   "gameId": 32464,
   "dynasty": "Baḥrī",
-  "died": "1391-10-14"
+  "died": "1391-10-14",
+  "tier": "central",
+  "arc": [
+   {
+    "from": "1364-01-18",
+    "text": "Saʿd's first wife, a princess of the Mamlūk house, mother of his first child.",
+    "by": "chronicle",
+    "source": "her record"
+   },
+   {
+    "from": "1374-06-01",
+    "text": "Leads the faction of the Mamlūk alliance at court.",
+    "by": "trent",
+    "source": "Trent's account, 1374–1375"
+   },
+   {
+    "from": "1375-03-16",
+    "text": "Sits in the dīwān by the strength of the harem, without a formal office.",
+    "by": "trent",
+    "source": "Trent's ruling, March 1375"
+   },
+   {
+    "from": "1385-08-23",
+    "text": "Quarrels with Duʿāʾ at court while Ismāʿīl is regent.",
+    "by": "trent",
+    "source": "Trent's account"
+   }
+  ]
  },
  {
   "id": "dua-marinid",
@@ -855,7 +1315,55 @@
   "note": "A princess of the Marīnid house of Fās, betrothed to Granada on 18 January 1348 and married to Yūsuf I about 12 August 1354: the one Marīnid bond that outlived Morocco's annulment of its treaties with Granada in 1351. The most capable of the amir's wives, she took Yaḥyā Raḥḥū's seat in the dīwān about 10 March 1355, after his death, under the Powerful Harem law that let women sit in the cabinet. By August 1358 she was widely praised for bringing fresh ideas and practices to the court (the game's 'Foreign Wisdom'), to the nobility's displeasure. Mother of Yūsuf's son Muḥammad (1356–1358). Widowed on 1 August 1363, she married the regent Naṣr al-Istijjī within days. Widowed again a few days after 18 January 1364, when Naṣr died of 'sickness', she then married the young Sultan Saʿd, her late husband Yūsuf's son. That made her his second wife, beside Aiman the Mamlūk. Mother of Saʿd's son and heir Ismāʿīl (born 8 March 1366). While Saʿd campaigned in Aragon in 1374 she ran the court in Gharnāṭa, and with his support by letter summoned the Jamāʿa to give the ʿulamāʾ more power to regulate and tax the dhimmīs (Trent's account). She died on 28 December 1388, aged fifty, after a short illness as the court tells it (the game's death notice gives suicide; the chronicle keeps the court's version, by Trent's ruling).",
   "born": "1338-08-10",
   "gameId": 24887,
-  "died": "1388-12-28"
+  "died": "1388-12-28",
+  "stations": [
+   {
+    "role": "dīwān",
+    "from": "1355-02-20",
+    "to": "1388-12-28",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "central",
+  "arc": [
+   {
+    "from": "1355-03-10",
+    "text": "The most capable of the amir's wives: takes a seat in the dīwān under the harem law.",
+    "by": "chronicle",
+    "source": "her record"
+   },
+   {
+    "from": "1358-08-01",
+    "text": "Brings fresh ideas and practices to the court, to the nobles' displeasure.",
+    "by": "chronicle",
+    "source": "the game's Foreign Wisdom"
+   },
+   {
+    "from": "1363-08-01",
+    "text": "Outlasts three reigns: widowed, she marries the regent, and widowed again, the young Sultan Saʿd.",
+    "by": "chronicle",
+    "source": "her record"
+   },
+   {
+    "from": "1374-06-01",
+    "text": "Wants the costly tutors for her son Ismāʿīl alone.",
+    "by": "trent",
+    "source": "Trent's account, late 1374"
+   },
+   {
+    "from": "1374-06-01",
+    "text": "Runs the court while Saʿd campaigns, and summons the Jamāʿa to give the ʿulamāʾ power over the dhimmī.",
+    "by": "trent",
+    "source": "Trent's account, 1374"
+   },
+   {
+    "from": "1385-08-23",
+    "text": "Quarrels with Aiman at court while her son is regent.",
+    "by": "trent",
+    "source": "Trent's account"
+   }
+  ]
  },
  {
   "id": "tizemt-hafsid",
@@ -935,7 +1443,17 @@
    "babbling_buffoon"
   ],
   "note": "A noble of the house of Istijja (Écija). The game made him regent during Yūsuf I's Hajj (the chronicle gave that regency to Faraj); on Yūsuf's death in August 1363 he became regent for the young Saʿd, and at once married Duʿāʾ, the late amir's Marīnid widow and minister. The game calls him a babbling buffoon. His regency ended when Saʿd came of age on 18 January 1364, and he died that same day. The court called it 'sickness'; the game records a hunting accident. Duʿāʾ, his widow, married the young sultan soon after.",
-  "died": "1364-01-18"
+  "died": "1364-01-18",
+  "stations": [
+   {
+    "role": "regent",
+    "from": "1363-08-02",
+    "to": "1364-09-11",
+    "source": "checkpoints",
+    "approx": true
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "ismail-ibn-yusuf",
@@ -958,7 +1476,31 @@
    "dip": 71,
    "mil": 62
   },
-  "died": "1408-05-27"
+  "died": "1408-05-27",
+  "stations": [
+   {
+    "role": "heir",
+    "from": "1364-09-11",
+    "to": "1366-10-02",
+    "source": "checkpoints",
+    "approx": true
+   },
+   {
+    "role": "general",
+    "from": "1370-11-17",
+    "to": "1373-09-19",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "dīwān",
+    "from": "1380-12-04",
+    "to": "1408-05-27",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "ali-ibn-yusuf",
@@ -978,7 +1520,16 @@
    "child_gregarious"
   ],
   "note": "Son of Yūsuf I and Tizemt the Ḥafṣid, born 6 September 1355, the sultan's younger half-brother. At eighteen he led the right wing and two-thirds of the cavalry at the Battle of Barcelona (29 January – 19 February 1374), the wing that broke the Aragonese flank (Trent's account). He died on 29 August 1404 (save of 29 June 1410).",
-  "died": "1404-08-29"
+  "died": "1404-08-29",
+  "stations": [
+   {
+    "role": "admiral",
+    "from": "1387-02-03",
+    "to": "1404-08-29",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "muhammad-ibn-yusuf",
@@ -1038,7 +1589,17 @@
    "mil": 84
   },
   "note": "Daughter of Yūsuf I and Tizemt the Ḥafṣid, younger half-sister of the Emperor Saʿd; a prodigy as a child, and at eighteen the most gifted mind at court by the game's reckoning (99 in administration). Married to Muḥammad ibn Ismāʿīl al-Aḥmar. Appointed to the dīwān in the reorganisation of the realm after the Restoration of al-Andalus, March 1375 (Trent's account; the save of 16 March 1375 does not show her seat yet). She died on 29 August 1412, aged fifty-five, still in the dīwān, where she had sat since 1396; her seat passed to Aḥmad ibn Yūsuf (save of 24 October 1414).",
-  "died": "1412-08-29"
+  "died": "1412-08-29",
+  "stations": [
+   {
+    "role": "dīwān",
+    "from": "1375-03-17",
+    "to": "1412-08-29",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "fatima-bint-yusuf",
@@ -1117,7 +1678,8 @@
    "hermit",
    "offensive_planner"
   ],
-  "note": "Granadan general in the War of Independence. He chased the joined armies of Portugal and Aragon halfway across Iberia and broke them at Zafra on 3 August 1364. Then, on 10 and 11 September, he destroyed their remnants one after the other before Lisbon (save of 11 September 1364). He threw back the Aragonese at Cañete (14 July 1365). At San Clemente (6 January 1366) he destroyed the last Castilian army in the field, commanded by the renegade Ibn al-Khaṭīb (save of 5 April 1366). In the Second Marīnid War he destroyed the sultan of Fās's own force at Cádiz (11 November 1368), threw the first Marīnid landing back into the sea at Marbella (8 February 1369) and retook Jerez (28 April)."
+  "note": "Granadan general in the War of Independence. He chased the joined armies of Portugal and Aragon halfway across Iberia and broke them at Zafra on 3 August 1364. Then, on 10 and 11 September, he destroyed their remnants one after the other before Lisbon (save of 11 September 1364). He threw back the Aragonese at Cañete (14 July 1365). At San Clemente (6 January 1366) he destroyed the last Castilian army in the field, commanded by the renegade Ibn al-Khaṭīb (save of 5 April 1366). In the Second Marīnid War he destroyed the sultan of Fās's own force at Cádiz (11 November 1368), threw the first Marīnid landing back into the sea at Marbella (8 February 1369) and retook Jerez (28 April).",
+  "tier": "key"
  },
  {
   "id": "umm-al-fath-bint-saad",
@@ -1133,7 +1695,17 @@
   "roles": [],
   "traits": [],
   "note": "First child of Sultan Saʿd, born to Aiman the Mamlūk three months after the Portuguese peace. She shares her name, 'mother of victory', with her aunt, Yūsuf I's youngest daughter. By January 1394 she sat in the dīwān, in Duʿā's old seat, integrating the new lands (saves of 1394). She is married to her cousin Saʿd ibn Faraj, who on 5 August 1395 became ruler of the Ṭāʾifa of Qūnka (save of 5 August 1395). Widowed on 20 February 1408, when Saʿd ibn Faraj died; their daughter Maryam succeeded him in Qūnka. From 24 August 1405 she was integrating the lands won back from the risings (save of 5 August 1408). She died on 25 March 1416, at fifty-one, still in the dīwān (save of 11 August 1420).",
-  "died": "1416-03-25"
+  "died": "1416-03-25",
+  "stations": [
+   {
+    "role": "dīwān",
+    "from": "1389-01-04",
+    "to": "1416-03-25",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "ismail-ibn-saad",
@@ -1170,7 +1742,82 @@
     "to": "1429-06-28"
    }
   ],
-  "died": "1429-06-28"
+  "died": "1429-06-28",
+  "stations": [
+   {
+    "role": "heir",
+    "from": "1366-10-02",
+    "to": "1405-03-31",
+    "source": "checkpoints",
+    "approx": true
+   },
+   {
+    "role": "admiral",
+    "from": "1383-06-10",
+    "to": "1387-01-22",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "dīwān",
+    "from": "1387-01-22",
+    "to": "1405-03-01",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "general",
+    "from": "1405-03-03",
+    "to": "1429-06-28",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "central",
+  "arc": [
+   {
+    "from": "1374-12-01",
+    "text": "His mother Duʿāʾ's son: she wanted the costly tutors for him alone.",
+    "by": "trent",
+    "source": "Trent's account, late 1374"
+   },
+   {
+    "from": "1385-08-23",
+    "text": "Holds the realm as regent while his father makes the Ḥajj, between two queens quarrelling at court.",
+    "by": "trent",
+    "source": "Trent's account"
+   },
+   {
+    "from": "1387-01-22",
+    "text": "Takes a seat in the dīwān to help his father's project of scholars and builders.",
+    "by": "trent",
+    "source": "Trent's account"
+   },
+   {
+    "from": "1405-03-02",
+    "text": "Tells men in private what they wish to hear and judges fairly in public.",
+    "by": "chronicle",
+    "source": "traits deceitful, just, goal-oriented; diplomacy 100"
+   },
+   {
+    "from": "1408-08-05",
+    "text": "Sets aside any thought of changing the succession: Muḥammad's gifted sons will carry the line.",
+    "by": "trent",
+    "source": "Trent's account, August 1408"
+   },
+   {
+    "from": "1411-01-13",
+    "text": "Leads the army himself in the fourth war of the Istirdād, and ends Portugal.",
+    "by": "chronicle",
+    "source": "Of the War of Jillīqiya, the Gates of Porto, and the Peace of Rajab"
+   },
+   {
+    "from": "1414-10-24",
+    "text": "His eye on the treasury hardens into greed.",
+    "by": "trent",
+    "source": "Trent's screen, late 1414"
+   }
+  ]
  },
  {
   "id": "rodrigo-of-silves",
@@ -1189,7 +1836,16 @@
   },
   "traits": [],
   "note": "A Portuguese lord, now a Muslim, set over the Ṭāʾifa of al-Gharb when Granada released the Portuguese south as its vassal on 13 April 1366 (save of 6 November 1366). In September 1368 Castile guaranteed his ṭāʾifa's independence, and Granada backed the loyalists against it. Died 1375-01-24 (save of 24 October 1414).",
-  "died": "1375-01-24"
+  "died": "1375-01-24",
+  "stations": [
+   {
+    "role": "admiral",
+    "from": "1366-05-13",
+    "to": "1375-01-24",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "jadila-bint-saad",
@@ -1230,7 +1886,44 @@
    "bubonic_plague_trait"
   ],
   "note": "Marīnid sultan of Fās. He declared the Second War for the Submission of Granada on 24 October 1368 and led the first Marīnid force across the Strait himself. Murād destroyed it at Cádiz on 11 November 1368 (save of 18 November 1369). He made peace on 12 September 1370 and gave up the whole north shore of the Strait. He died on 7 October 1381 (save of 1 October 1387).",
-  "died": "1381-10-07"
+  "died": "1381-10-07",
+  "stations": [
+   {
+    "role": "general",
+    "from": "1365-12-06",
+    "to": "1368-11-11",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "admiral",
+    "from": "1368-11-21",
+    "to": "1381-10-07",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "central",
+  "arc": [
+   {
+    "from": "1351-01-01",
+    "text": "A zealot who means to have al-Andalus back for Fās, and annuls Morocco's treaties with Granada.",
+    "by": "chronicle",
+    "source": "traits zealot, offensive planner"
+   },
+   {
+    "from": "1368-10-24",
+    "text": "Declares the Second War for the Submission of Granada and leads the first crossing of the Strait himself.",
+    "by": "chronicle",
+    "source": "save of 18 November 1369"
+   },
+   {
+    "from": "1370-09-12",
+    "text": "Makes peace and gives up the whole north shore of the Strait.",
+    "by": "chronicle",
+    "source": "Of the Last Battles"
+   }
+  ]
  },
  {
   "id": "osman-marinid",
@@ -1251,7 +1944,23 @@
    "level_headed"
   ],
   "note": "The Marīnid general of the 1369 counterattack. He relieved Cádiz and threw Khālid back before it (2 and 26 June 1369). Then he marched on the heart of the realm and was stopped at Antequera (15 October 1369). Died 1395-01-29 (save of 24 October 1414).",
-  "died": "1395-01-29"
+  "died": "1395-01-29",
+  "stations": [
+   {
+    "role": "general",
+    "from": "1383-03-11",
+    "to": "1383-04-23",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "admiral",
+    "from": "1394-04-02",
+    "to": "1395-01-29",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "jeronimo-of-castile",
@@ -1275,7 +1984,38 @@
    "worldly"
   ],
   "note": "King of Castile from his father's death on 29 March 1366, and of Portugal from his mother's on 4 October 1367: the two crowns in a personal union, each keeping its own government. In September 1370 he had no army in the field (save of 13 September 1370). When the union broke in 1389 he kept Portugal. In the War of the League he stood with Castile, and at the Peace of Ramaḍān (22 June 1395) he gave up Lisbon and 19 other towns to al-Andalus (save of 22 June 1395). He died on 29 April 1402, aged fifty-nine, and his son Fernando succeeded him in Portugal (save of 29 June 1410).",
-  "died": "1402-04-29"
+  "died": "1402-04-29",
+  "stations": [
+   {
+    "role": "admiral",
+    "from": "1359-04-02",
+    "to": "1359-04-07",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "dīwān",
+    "from": "1361-12-01",
+    "to": "1366-03-29",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "general",
+    "from": "1385-09-26",
+    "to": "1385-11-21",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "rebel",
+    "from": "1389-05-01",
+    "to": "1402-04-29",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "fernando-of-castile",
@@ -1298,7 +2038,16 @@
    "dip": 41,
    "mil": 59
   },
-  "died": "1424-10-17"
+  "died": "1424-10-17",
+  "stations": [
+   {
+    "role": "dīwān",
+    "from": "1402-02-03",
+    "to": "1402-04-29",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "joan-of-aragon",
@@ -1320,7 +2069,24 @@
    "greedy"
   ],
   "note": "King of Aragon and of Sicily (the two crowns in a union since 1343) from 24 April 1368; the game gives him the Catalan form of Juan. His heir in 1370 is his infant daughter Violant. He lost Aragon to the Naṣrids at the peace of 15 March 1375, after the battles of Barcelona and Tarragona and a siege of 282 days, and was let go unharmed to Palermo as a term of the peace, keeping Sicily less Malta. He died on 27 April 1410, aged sixty (save of 29 June 1410).",
-  "died": "1410-04-27"
+  "died": "1410-04-27",
+  "stations": [
+   {
+    "role": "general",
+    "from": "1404-04-22",
+    "to": "1404-11-18",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "admiral",
+    "from": "1407-07-06",
+    "to": "1410-04-27",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "abu-ishaq-ibrahim",
@@ -1344,7 +2110,23 @@
    "sinner"
   ],
   "note": "Ḥafṣid sultan of Tūnis, in his current reign from 6 November 1358. In 1370 he ruled the third Regional Power of the Maghrib, with nine subjects, a realm close to disorder (stability near zero), and the Marīnids' fief of Tlemcen as his rival. Died 1399-10-06 (save of 24 October 1414).",
-  "died": "1399-10-06"
+  "died": "1399-10-06",
+  "stations": [
+   {
+    "role": "admiral",
+    "from": "1352-06-27",
+    "to": "1352-07-06",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "general",
+    "from": "1369-04-02",
+    "to": "1373-11-09",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "bolot-mamluk",
@@ -1366,7 +2148,24 @@
    "loose_lips"
   ],
   "note": "Sultan of Egypt from the death of his father Jamāl on 3 October 1368, and half-brother of Aiman, Saʿd's Mamlūk wife: Granada's one ally is ruled by the sultan's brother-in-law. In 1370 his realm was the world's seventh power, with some 60,000 men under arms (save of 13 September 1370). Died 1396-06-16 (save of 24 October 1414).",
-  "died": "1396-06-16"
+  "died": "1396-06-16",
+  "stations": [
+   {
+    "role": "admiral",
+    "from": "1375-06-23",
+    "to": "1375-09-11",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "general",
+    "from": "1394-05-19",
+    "to": "1394-06-01",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "muhammad-ottoman",
@@ -1389,7 +2188,23 @@
    "offensive_planner"
   ],
   "note": "Ottoman sultan from 15 September 1364, at sixteen, ruling from Constantinople. In 1370 he was at war with the Anatolian beyliks, with 27,000 men under arms and 73 ships; his brother Murād is his heir. Died 1412-10-01 (save of 24 October 1414).",
-  "died": "1412-10-01"
+  "died": "1412-10-01",
+  "stations": [
+   {
+    "role": "general",
+    "from": "1403-04-17",
+    "to": "1403-06-01",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "admiral",
+    "from": "1412-04-02",
+    "to": "1412-04-18",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "jean-of-france",
@@ -1412,7 +2227,16 @@
    "greedy"
   ],
   "note": "King of France from 17 May 1342. By 1370 England's vassals hold much of the old kingdom, his own realm is in disorder (stability below zero), and Castile is his rival. Died 1375-07-19 (save of 24 October 1414).",
-  "died": "1375-07-19"
+  "died": "1375-07-19",
+  "stations": [
+   {
+    "role": "admiral",
+    "from": "1339-04-15",
+    "to": "1342-05-17",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "edward-of-england",
@@ -1435,7 +2259,23 @@
    "silver_tongue"
   ],
   "note": "King of England from 18 July 1370. His crown holds more land through its subjects (Wales, Ireland, Aquitaine, Burgundy, Flanders, Brittany and more) than in England itself. Died 1386-07-10 (save of 24 October 1414).",
-  "died": "1386-07-10"
+  "died": "1386-07-10",
+  "stations": [
+   {
+    "role": "admiral",
+    "from": "1378-03-31",
+    "to": "1378-04-12",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "general",
+    "from": "1379-02-24",
+    "to": "1379-03-25",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "charles-of-bohemia",
@@ -1460,7 +2300,16 @@
    "just"
   ],
   "note": "King of Bohemia from 31 May 1340 and Emperor of the 319 members of the Empire. The ablest ruler of Christendom by the game's measure. Died 1379-01-04 (save of 24 October 1414).",
-  "died": "1379-01-04"
+  "died": "1379-01-04",
+  "stations": [
+   {
+    "role": "general",
+    "from": "1340-09-15",
+    "to": "1379-01-04",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "robert-of-anjou",
@@ -1482,7 +2331,16 @@
    "scholar"
   ],
   "note": "King of Hungary, Naples and Croatia, three crowns in one union, from 5 January 1367. Naples leads the Guelph league of Italy; in 1370 his crowns are at war with Halych and Volhynia. Died 1406-06-16 (save of 24 October 1414).",
-  "died": "1406-06-16"
+  "died": "1406-06-16",
+  "stations": [
+   {
+    "role": "general",
+    "from": "1405-10-02",
+    "to": "1405-10-16",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "pope-abundius",
@@ -1547,7 +2405,24 @@
    "dip": 5,
    "mil": 10
   },
-  "died": "1435-06-01"
+  "died": "1435-06-01",
+  "stations": [
+   {
+    "role": "general",
+    "from": "1398-03-24",
+    "to": "1398-07-22",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "dīwān",
+    "from": "1405-03-02",
+    "to": "1435-06-01",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "yusuf-ibn-ismail",
@@ -1572,7 +2447,16 @@
    "dip": 30,
    "mil": 63
   },
-  "died": "1428-04-30"
+  "died": "1428-04-30",
+  "stations": [
+   {
+    "role": "general",
+    "from": "1423-11-02",
+    "to": "1428-04-30",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "muhammad-ibn-ismail-ibn-yusuf",
@@ -1634,7 +2518,17 @@
    "careful"
   ],
   "note": "Son and heir of Abū ʿInān Fāris of Fās. Betrothed to Jadīla bint Yūsuf, the sultan's sister, on 3 April 1372 (save of 16 January 1373). Married Jadīla by January 1376 (Trent's account). Sultan of Fās from 7 October 1381. In June 1410 he answered the Emperor Ismāʿīl's call against Qashtāla with his vassals of Tilimsān and Tafilalt (save of 29 June 1410; Trent's account). He died of pneumonia on 19 March 1417, at fifty-seven, after thirty-five years on the throne. His son and heir Abū Ḥammū, Jadīla's son, had died in a hunting accident on 14 September 1410, during the War of Jillīqiya, so the throne passed to Abū Ḥammū's son Yaḥyā, fifteen, who ruled in his own name from his sixteenth birthday, 14 July 1417 (save of 11 August 1420).",
-  "died": "1417-03-19"
+  "died": "1417-03-19",
+  "stations": [
+   {
+    "role": "general",
+    "from": "1411-07-19",
+    "to": "1411-08-03",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "ramadan-of-barqa",
@@ -1655,7 +2549,30 @@
   "traits": [],
   "note": "Ruler of the Sheikhdom of Barqa, a vassal of the Mamlūks, of the Baḥrī house (Baḥriyya) of the Mamlūk sultans; Crimean by culture, Sunnī, 54 years old in 1374, with four wives and eight children. In late October 1374 his army took Malta from Sicily during the War of the Upper March (Trent's account and screenshots). He led Barqa's army in person at Zuwāra (23 May 1374) and Gharyān (24 June 1374), where he destroyed the army of the Jabal Nafūsa, a Sicilian subject (autosave of 1 November 1374). His fleet of eight was sunk by Sicily's off Malta on 12 November 1374. Shortly before the peace of 15 March 1375 he landed 3,000 men in Sicily and stormed Siracusa, which helped persuade King Joan to give up Aragon (Trent's account). Died 1387-01-02 (save of 24 October 1414).",
   "gameId": 3632,
-  "died": "1387-01-02"
+  "died": "1387-01-02",
+  "stations": [
+   {
+    "role": "dīwān",
+    "from": "1349-12-01",
+    "to": "1351-01-31",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "general",
+    "from": "1375-07-02",
+    "to": "1379-01-01",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "admiral",
+    "from": "1379-03-02",
+    "to": "1379-08-29",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "dolca-of-murcia",
@@ -1702,7 +2619,17 @@
    "gifted child"
   ],
   "note": "Daughter of Dolça d'Oriola and Blai Manrique de Lara, Sunni, heir of the Ṭāʾifa of Mursiyya; a gifted child, Castilian by culture like her father. Murcia's court ties itself closely to the Catalans through its traders. Betrothed to the heir Ismāʿīl ibn Saʿd when Murcia was taken into the crown on 16 March 1375. She is being raised at the Castilian court for now, something to watch, though the betrothal holds (Trent's account; save of 16 March 1375, where she sits in Castile). Married to the crown prince Ismāʿīl by 1 October 1387 (save of that date). Mother of Yūsuf (1383–1384) and Muḥammad (born 25 October 1385). On 9 June 1435, a week after the death of Prince Yūsuf ibn Saʿd, the queen mother took his seat in the dīwān, and held it until her death on 6 November 1437, aged seventy; her granddaughter Shams succeeded her (saves of 10 October 1435 and 11 June 1442).",
-  "died": "1437-11-06"
+  "died": "1437-11-06",
+  "stations": [
+   {
+    "role": "dīwān",
+    "from": "1435-06-09",
+    "to": "1437-11-06",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "francesc-de-montsoriu",
@@ -1721,7 +2648,24 @@
   },
   "traits": [],
   "note": "A Catalan, Sunni, first ruler of the Ṭāʾifa of Catalonia, the ḥājib in the court's word, carved from the conquered lands of Aragon around Barcelona on 16 March 1375. On 15 April 1375 he married the Emperor's sister Fāṭima bint Yūsuf (save of 5 June 1375; Trent's account). Died 1394-03-20 (save of 24 October 1414).",
-  "died": "1394-03-20"
+  "died": "1394-03-20",
+  "stations": [
+   {
+    "role": "general",
+    "from": "1389-02-09",
+    "to": "1390-07-04",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "admiral",
+    "from": "1390-11-01",
+    "to": "1394-03-20",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "alfons-de-borja",
@@ -1741,7 +2685,17 @@
   },
   "traits": [],
   "note": "A Catalan, Sunni, of the house of Borja; proclaimed king of a renewed Aragon, a ṭāʾifa of the sultan in the interior, on 16 March 1375. The game counts him the fifth Alfons of Aragon, and gives his small kingdom the rank of a kingdom and its seat at Benabarre. The sultan dressed it as a successor to the old crown (Trent's account; save of 16 March 1375). At the peace of 6 April 1378 Castile restored the Aragonese heartland to him, 24 towns with Zaragoza, Huesca, Jaca and Teruel, and his kingdom grew from 6 towns to 30. He died on 24 February 1393. His son Rodrigo (born 1381) succeeded him, with his daughter Caterina as heir (save of 3 September 1398).",
-  "died": "1393-02-24"
+  "died": "1393-02-24",
+  "stations": [
+   {
+    "role": "general",
+    "from": "1388-12-02",
+    "to": "1390-07-02",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "alfonso-de-onate",
@@ -1776,7 +2730,8 @@
    "mil": 35
   },
   "traits": [],
-  "note": "An Andalusī of Jayyān, Sunni, a courtier at Gharnāṭa, forty in 1391 (birth year estimated from his age). In 1391, under the trade contract with Mali, he was sent to chart the way to Mali along the Atlantic coast instead of across the desert (Trent's account and screenshot)."
+  "note": "An Andalusī of Jayyān, Sunni, a courtier at Gharnāṭa, forty in 1391 (birth year estimated from his age). In 1391, under the trade contract with Mali, he was sent to chart the way to Mali along the Atlantic coast instead of across the desert (Trent's account and screenshot).",
+  "tier": "key"
  },
  {
   "id": "aisha-ottoman",
@@ -1818,7 +2773,31 @@
    "drunkard"
   ],
   "note": "Son of King Fernando, king of Castile from his father's death on 6 January 1394, two months before the Emperor's declaration. He lost the War of the League and on 22 June 1395 surrendered 51 towns, Madrid, Salamanca, Ávila and Cuenca among them, with reparations for ten years (saves of 4 March 1394 and 22 June 1395). In June 1410, at thirty-nine, still king, stubborn and a drunkard, he faced the Emperor Ismāʿīl's declaration of the fourth war of the Istirdād with 1,650 men under arms; his heir is his son Fernando, eighteen (save of 29 June 1410). He capitulated on 2 September 1411, and at the peace of 1 November 1411 gave up 63 towns, Valladolid, Burgos, León and Navarre among them, keeping 45 in the north with his capital at Oviedo (saves of 1 November 1411). On 4 September 1420 his kingdom fell apart into the petty kingdoms of Galicia, Asturias and Navarre, and he kept only four towns on the Cantabrian coast, ruling from Santander (save of 4 September 1420). He died at Santander on 14 October 1422, at fifty-one, from a fall down a flight of stairs; his son Fernando succeeded him (save of 5 November 1423).",
-  "died": "1422-10-14"
+  "died": "1422-10-14",
+  "stations": [
+   {
+    "role": "dīwān",
+    "from": "1393-07-01",
+    "to": "1394-01-06",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "admiral",
+    "from": "1402-02-02",
+    "to": "1402-02-11",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "general",
+    "from": "1410-07-23",
+    "to": "1410-08-25",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "agustin-arce",
@@ -1856,7 +2835,16 @@
   },
   "traits": [],
   "note": "Cousin of the Emperor Saʿd: son of his late uncle Ismāʿīl ibn Ismāʿīl and of Sevilay, the Aydınid princess Ismāʿīl married in 1359, and raised at least partly at the Aydınid court. On 5 August 1395 he was made ruler of the new Ṭāʾifa of Shalamanka, 21 towns of the Leonese west taken from Castile at the Peace of Ramaḍān, with his cousin Saʿd ibn Faraj as his heir. Unmarried and childless in August 1395 (save of 5 August 1395). He died on 15 March 1415, aged fifty-three, and on 11 June 1415 his ṭāʾifa was taken into the crown (save of 1 January 1416).",
-  "died": "1415-03-15"
+  "died": "1415-03-15",
+  "stations": [
+   {
+    "role": "general",
+    "from": "1404-05-02",
+    "to": "1404-05-03",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "saad-ibn-faraj",
@@ -1878,7 +2866,16 @@
   },
   "traits": [],
   "note": "Cousin of the Emperor Saʿd: son of his late uncle Faraj ibn Ismāʿīl and of Shamʿa of the central Sahara. Husband of the Emperor's daughter Umm al-Fatḥ, who sits in the dīwān; their daughters were Maryam (1390–1394) and Jadīla (born 1393). On 5 August 1395 he was made ruler of the new Ṭāʾifa of Qūnka, 20 towns of the Castilian east taken at the Peace of Ramaḍān, with his brother Yūsuf (born 1360) as heir. He is also heir to the Ṭāʾifa of Shalamanka (save of 5 August 1395). He died on 20 February 1408, aged forty-nine, and his daughter Maryam succeeded him as Shaykha of Qūnka (save of 5 August 1408).",
-  "died": "1408-02-20"
+  "died": "1408-02-20",
+  "stations": [
+   {
+    "role": "general",
+    "from": "1398-03-22",
+    "to": "1398-08-19",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "ismail-ibn-muhammad-al-abid",
@@ -1930,6 +2927,73 @@
     "from": "1429-06-28",
     "to": null
    }
+  ],
+  "stations": [
+   {
+    "role": "heir",
+    "from": "1405-03-31",
+    "to": "1429-07-02",
+    "source": "checkpoints",
+    "approx": true
+   },
+   {
+    "role": "admiral",
+    "from": "1411-06-05",
+    "to": "1433-03-19",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "central",
+  "arc": [
+   {
+    "from": "1398-09-03",
+    "text": "Judged unfit to rule at twelve: stubborn, slow in the dīwān.",
+    "by": "trent",
+    "source": "Trent's account, 1398"
+   },
+   {
+    "from": "1411-06-21",
+    "text": "Another man on a deck: he likes boats, and wins at sea.",
+    "by": "trent",
+    "source": "Trent's account and battle screen, 1411"
+   },
+   {
+    "from": "1429-06-28",
+    "text": "Keeps his eyes on the sea and his own projects; his wives and his two eldest sons carry much of the state.",
+    "by": "trent",
+    "source": "Trent, June 1430"
+   },
+   {
+    "from": "1431-06-24",
+    "text": "Embraces the name of warmonger rather than punish the man who gave it.",
+    "by": "trent",
+    "source": "Trent's screenshot, June 1431"
+   },
+   {
+    "from": "1433-11-23",
+    "text": "Comes home from Makka wanting a Ṣūfī faith at the head of the realm's faith.",
+    "by": "chronicle",
+    "source": "Of the Emperor's Pilgrimage"
+   },
+   {
+    "from": "1439-07-15",
+    "text": "Begins, past fifty, to read, and becomes a scholar.",
+    "by": "trent",
+    "source": "Trent's screenshot, July 1439"
+   },
+   {
+    "from": "1442-06-01",
+    "text": "Seats the burghers as equals and turns the whole realm outward: the Golden Century.",
+    "by": "trent",
+    "source": "Trent's account, June 1442"
+   },
+   {
+    "from": "1445-01-30",
+    "text": "Gives up some of his power elsewhere to bring the ports under the crown.",
+    "by": "trent",
+    "source": "Trent, on Harbor Administration"
+   }
   ]
  },
  {
@@ -1950,7 +3014,17 @@
   },
   "traits": [],
   "note": "Second son of the crown prince Ismāʿīl, by the Ottoman princess ʿĀʾisha; born 17 June 1392. Intelligent and studious, and given the costly in-depth education of the heirs (Trent's account; save of 3 September 1398). In 1398 the Emperor leaves the succession law as it stands, watching whether this Saʿd grows into a worthy ruler; if not, he means to choose an heir himself (Trent). At eleven, in July 1403, he stood at 56/35/36, still intelligent and on the in-depth education (save of 18 July 1403). At twelve, in March 1405, he stood at 70/37/45, second in line behind his elder brother Muḥammad when their father became Emperor (save of 31 March 1405). By August 1408, at sixteen, he stood at 83/43/61 and was married to his cousin Maryam bint Saʿd, Shaykha of Qūnka, the Emperor's niece; his children, as Trent put it, will rule the frontier. Behind his brother Muḥammad and Muḥammad's sons he is no longer the answer to the succession (Trent's account; save of 5 August 1408). His first son, Abū al-Ḥasan ʿAlī, was born to Maryam on 17 April 1410 (save of 29 June 1410). He died on 3 September 1443, aged fifty-one (autosave of 1 February 1447).",
-  "died": "1443-09-03"
+  "died": "1443-09-03",
+  "stations": [
+   {
+    "role": "general",
+    "from": "1441-09-02",
+    "to": "1442-01-11",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "saad-ibn-yusuf-ibn-saad",
@@ -1973,7 +3047,17 @@
   "traits": [
    "deceitful"
   ],
-  "note": "Son of Prince Yūsuf and Caterina de Borja, heir of Aragon; born 18 February 1394 and raised at the Aragonese court at Benabarre with the costly in-depth education. At four he outshines both of the crown prince's sons, and the Emperor wants him raised at his own court (Trent's account; save of 3 September 1398). In September 1398 he was brought to Ishbīliya with his father, to be raised at the Emperor's court (Trent's account). At nine, in July 1403, he stood at 26/24/37, still gifted, now on a military education at the Emperor's court (save of 18 July 1403). He grew up with no adult trait until his twenties; by August 1420 the game marks him deceitful. On 15 December 1417 he took his great-aunt Umm al-Fatḥ's seat in the dīwān, integrating the new lands (save of 11 August 1420). He left the dīwān at the accession of Muḥammad V in June 1429 (save of 2 July 1429)."
+  "note": "Son of Prince Yūsuf and Caterina de Borja, heir of Aragon; born 18 February 1394 and raised at the Aragonese court at Benabarre with the costly in-depth education. At four he outshines both of the crown prince's sons, and the Emperor wants him raised at his own court (Trent's account; save of 3 September 1398). In September 1398 he was brought to Ishbīliya with his father, to be raised at the Emperor's court (Trent's account). At nine, in July 1403, he stood at 26/24/37, still gifted, now on a military education at the Emperor's court (save of 18 July 1403). He grew up with no adult trait until his twenties; by August 1420 the game marks him deceitful. On 15 December 1417 he took his great-aunt Umm al-Fatḥ's seat in the dīwān, integrating the new lands (save of 11 August 1420). He left the dīwān at the accession of Muḥammad V in June 1429 (save of 2 July 1429).",
+  "stations": [
+   {
+    "role": "dīwān",
+    "from": "1416-04-03",
+    "to": "1429-07-02",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "caterina-de-borja",
@@ -2017,7 +3101,17 @@
    "babbling_buffoon",
    "craven"
   ],
-  "note": "Son of King Alfons; king of the renewed Aragon from his father's death on 24 February 1393, a boy of eleven. His sister Caterina is his heir (save of 3 September 1398). Brother of the Empress Magdalena, so uncle of the heir Ismāʿīl. A Muslim, kind-hearted, a babbler and no fighter by the game's count. As in 1404, the Pope's crusade of 1 October 1431 was declared on his kingdom, aimed at Barbastro (save of 1 October 1431)."
+  "note": "Son of King Alfons; king of the renewed Aragon from his father's death on 24 February 1393, a boy of eleven. His sister Caterina is his heir (save of 3 September 1398). Brother of the Empress Magdalena, so uncle of the heir Ismāʿīl. A Muslim, kind-hearted, a babbler and no fighter by the game's count. As in 1404, the Pope's crusade of 1 October 1431 was declared on his kingdom, aimed at Barbastro (save of 1 October 1431).",
+  "stations": [
+   {
+    "role": "general",
+    "from": "1441-09-02",
+    "to": "1441-12-14",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "maryam-bint-saad-ibn-faraj",
@@ -2064,7 +3158,50 @@
    "mil": 63
   },
   "traits": [],
-  "note": "Eldest son of the heir Muḥammad, by Magdalena de Borja; born 4 October 1402, the Emperor's grandson and great-grandson of the Emperor Saʿd. Gifted, and with his half-brother Aḥmad enough at five to set aside the thought of changing the succession (Trent's account; save of 5 August 1408, taken before the boys' educations were set). Grown, by August 1420, into a man of 70/73/63; the childhood gift has lapsed with no adult trait yet in its place (save of 11 August 1420). By 1422 he had married three princesses of the Muslim empires: Tella of Fās, daughter of Abū Ḥammū and sister of the sultan Yaḥyā; Ayaulym, daughter of the Mamlūk sultan Aqṭāy; and Khadīja, daughter of the Ottoman sultan Aḥmad. Children: Yūsuf (6 January 1422) by Tella, ʿĀʾisha (24 January 1422) by Khadīja, Jadīla (29 June 1422) by Ayaulym, Muʾmina (8 August 1424) by Tella (saves of 1423 and 1424)."
+  "note": "Eldest son of the heir Muḥammad, by Magdalena de Borja; born 4 October 1402, the Emperor's grandson and great-grandson of the Emperor Saʿd. Gifted, and with his half-brother Aḥmad enough at five to set aside the thought of changing the succession (Trent's account; save of 5 August 1408, taken before the boys' educations were set). Grown, by August 1420, into a man of 70/73/63; the childhood gift has lapsed with no adult trait yet in its place (save of 11 August 1420). By 1422 he had married three princesses of the Muslim empires: Tella of Fās, daughter of Abū Ḥammū and sister of the sultan Yaḥyā; Ayaulym, daughter of the Mamlūk sultan Aqṭāy; and Khadīja, daughter of the Ottoman sultan Aḥmad. Children: Yūsuf (6 January 1422) by Tella, ʿĀʾisha (24 January 1422) by Khadīja, Jadīla (29 June 1422) by Ayaulym, Muʾmina (8 August 1424) by Tella (saves of 1423 and 1424).",
+  "stations": [
+   {
+    "role": "dīwān",
+    "from": "1429-07-02",
+    "to": null,
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "heir",
+    "from": "1429-07-02",
+    "to": null,
+    "source": "checkpoints",
+    "approx": true
+   }
+  ],
+  "tier": "central",
+  "arc": [
+   {
+    "from": "1408-08-05",
+    "text": "Gifted enough, with his half-brother Aḥmad, to keep the succession as it stands.",
+    "by": "trent",
+    "source": "Trent's account, August 1408"
+   },
+   {
+    "from": "1422-01-01",
+    "text": "Marries princesses of Fās, Egypt and the Ottomans: an heir tied to the Muslim empires.",
+    "by": "chronicle",
+    "source": "saves of 1423 and 1424"
+   },
+   {
+    "from": "1429-06-28",
+    "text": "With Aḥmad, carries much of the state for a father whose eyes are on the sea.",
+    "by": "trent",
+    "source": "Trent, June 1430"
+   },
+   {
+    "from": "1442-06-11",
+    "text": "Mends the damage of the Jamāʿa of 846, appeasing the estates.",
+    "by": "chronicle",
+    "source": "Of the Princes' Mending"
+   }
+  ]
  },
  {
   "id": "ahmad-ibn-muhammad-ibn-ismail",
@@ -2087,7 +3224,43 @@
   "traits": [
    "architect"
   ],
-  "note": "Second son of the heir Muḥammad, by Isabel de Montsoriu; born 10 June 1403. Gifted, like his elder half-brother Ismāʿīl (save of 5 August 1408). Grown, by August 1420, into a man of 75/79/70; the childhood gift has lapsed with no adult trait yet in its place (save of 11 August 1420). By 1423 he had married Dīma, daughter of Abū Ḥammū of the Ḥafṣids of Tūnis; Muʾmina, daughter of Aḥmad of Burtuqāl; and ʿĀʾisha bint Saʿd. Children: Saʿd (29 April 1423) by Muʾmina, Muʾmina (14 June 1423) by ʿĀʾisha, Ismāʿīl (1 August 1424) by Dīma (saves of 1423 and 1424). In June 1430 the game marked him an architect; like his forebears a builder, he imagined the greatest structures for the capital (Trent's account and screenshot)."
+  "note": "Second son of the heir Muḥammad, by Isabel de Montsoriu; born 10 June 1403. Gifted, like his elder half-brother Ismāʿīl (save of 5 August 1408). Grown, by August 1420, into a man of 75/79/70; the childhood gift has lapsed with no adult trait yet in its place (save of 11 August 1420). By 1423 he had married Dīma, daughter of Abū Ḥammū of the Ḥafṣids of Tūnis; Muʾmina, daughter of Aḥmad of Burtuqāl; and ʿĀʾisha bint Saʿd. Children: Saʿd (29 April 1423) by Muʾmina, Muʾmina (14 June 1423) by ʿĀʾisha, Ismāʿīl (1 August 1424) by Dīma (saves of 1423 and 1424). In June 1430 the game marked him an architect; like his forebears a builder, he imagined the greatest structures for the capital (Trent's account and screenshot).",
+  "stations": [
+   {
+    "role": "dīwān",
+    "from": "1429-07-02",
+    "to": null,
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "central",
+  "arc": [
+   {
+    "from": "1408-08-05",
+    "text": "Gifted, like his half-brother Ismāʿīl.",
+    "by": "trent",
+    "source": "Trent's account, August 1408"
+   },
+   {
+    "from": "1429-06-28",
+    "text": "Carries much of the state with Ismāʿīl.",
+    "by": "trent",
+    "source": "Trent, June 1430"
+   },
+   {
+    "from": "1430-06-01",
+    "text": "An architect: like his forebears a builder, he imagines the greatest structures for the capital.",
+    "by": "trent",
+    "source": "Trent's account and screenshot, June 1430"
+   },
+   {
+    "from": "1442-06-11",
+    "text": "Mends the damage of the Jamāʿa of 846, appeasing the estates.",
+    "by": "chronicle",
+    "source": "Of the Princes' Mending"
+   }
+  ]
  },
  {
   "id": "magdalena-de-borja",
@@ -2124,7 +3297,8 @@
   },
   "traits": [],
   "note": "Daughter of Francesc de Montsoriu, founder of the house that rules the Ṭāʾifa of Catalonia. Wife of the heir Muḥammad ibn Ismāʿīl and mother of his son Aḥmad (1403) and two daughters (save of 5 August 1408). Her mother was Fāṭima bint Yūsuf, daughter of Yūsuf I, so Isabel is a granddaughter of the house of Naṣr (save of 29 June 1410).",
-  "mother": "fatima-bint-yusuf"
+  "mother": "fatima-bint-yusuf",
+  "tier": "key"
  },
  {
   "id": "muhammad-ibn-yusuf-ibn-faraj",
@@ -2145,7 +3319,16 @@
   "traits": [
    "fickle"
   ],
-  "note": "Son of Yūsuf ibn Faraj, the late Faraj ibn Ismāʿīl's son, and of Jadīla, daughter of the Emperor Saʿd: a nephew of the Emperor Ismāʿīl. He took a seat in the dīwān on 24 August 1405, in place of Ismāʿīl ibn Yūsuf, set to integrating the lands won back from the risings (save of 5 August 1408). He left the dīwān at the accession of Muḥammad V, and by 1429 the game marks him fickle (save of 2 July 1429)."
+  "note": "Son of Yūsuf ibn Faraj, the late Faraj ibn Ismāʿīl's son, and of Jadīla, daughter of the Emperor Saʿd: a nephew of the Emperor Ismāʿīl. He took a seat in the dīwān on 24 August 1405, in place of Ismāʿīl ibn Yūsuf, set to integrating the lands won back from the risings (save of 5 August 1408). He left the dīwān at the accession of Muḥammad V, and by 1429 the game marks him fickle (save of 2 July 1429).",
+  "stations": [
+   {
+    "role": "dīwān",
+    "from": "1408-05-29",
+    "to": "1429-07-02",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "abu-al-hasan-ali-ibn-saad",
@@ -2159,7 +3342,16 @@
   "mother": "maryam-bint-saad-ibn-faraj",
   "roles": [],
   "traits": [],
-  "note": "First son of the Emperor's son Saʿd and of Maryam, Shaykha of Qūnka; born 17 April 1410. Through his mother, heir to the frontier ṭāʾifa of Qūnka (save of 29 June 1410)."
+  "note": "First son of the Emperor's son Saʿd and of Maryam, Shaykha of Qūnka; born 17 April 1410. Through his mother, heir to the frontier ṭāʾifa of Qūnka (save of 29 June 1410).",
+  "stations": [
+   {
+    "role": "dīwān",
+    "from": "1428-04-08",
+    "to": null,
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "ahmad-ibn-ismail-ibn-yusuf",
@@ -2183,7 +3375,23 @@
    "just",
    "zealot"
   ],
-  "note": "Son of Ismāʿīl ibn Yūsuf, the old Emperor's brother: a cousin of the Emperor Ismāʿīl. Married to a daughter of Maryam bint Yūsuf and to a daughter of Khālid ibn Yaḥyā Raḥḥū. On 1 November 1411 he was made ruler of the new Ṭāʾifa of Burtuqāl, the 34 towns of the old Kingdom of Portugal, with his seat at Barcelos (save of 1 November 1411). On 4 November 1421 he proclaimed his ṭāʾifa the Kingdom of Portugal and took the crown of the old kings, still the Emperor's ṭāʾifa; the new kingdom's state faith is Catholic, though he is a Muslim. By 1423 the game also marks him a zealot (save of 5 November 1423)."
+  "note": "Son of Ismāʿīl ibn Yūsuf, the old Emperor's brother: a cousin of the Emperor Ismāʿīl. Married to a daughter of Maryam bint Yūsuf and to a daughter of Khālid ibn Yaḥyā Raḥḥū. On 1 November 1411 he was made ruler of the new Ṭāʾifa of Burtuqāl, the 34 towns of the old Kingdom of Portugal, with his seat at Barcelos (save of 1 November 1411). On 4 November 1421 he proclaimed his ṭāʾifa the Kingdom of Portugal and took the crown of the old kings, still the Emperor's ṭāʾifa; the new kingdom's state faith is Catholic, though he is a Muslim. By 1423 the game also marks him a zealot (save of 5 November 1423).",
+  "stations": [
+   {
+    "role": "admiral",
+    "from": "1415-04-02",
+    "to": "1415-04-03",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "general",
+    "from": "1431-11-20",
+    "to": "1431-12-21",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "ahmad-ibn-ismail-ibn-saad",
@@ -2206,7 +3414,17 @@
   "traits": [
    "architectural_visionary"
   ],
-  "note": "Third son of the Emperor Ismāʿīl, by the Ottoman princess ʿĀʾisha; born 21 October 1393, ambitious as a child. Married to his cousin Muʾmina, Prince Yūsuf's daughter. On 1 November 1411, at eighteen, he was made ruler of the new Ṭāʾifa of Liyūn, 17 towns of the Leonese country from León and Astorga to Zamora and Toro (save of 1 November 1411). By 1423 the game also marks him an architectural visionary (save of 5 November 1423)."
+  "note": "Third son of the Emperor Ismāʿīl, by the Ottoman princess ʿĀʾisha; born 21 October 1393, ambitious as a child. Married to his cousin Muʾmina, Prince Yūsuf's daughter. On 1 November 1411, at eighteen, he was made ruler of the new Ṭāʾifa of Liyūn, 17 towns of the Leonese country from León and Astorga to Zamora and Toro (save of 1 November 1411). By 1423 the game also marks him an architectural visionary (save of 5 November 1423).",
+  "stations": [
+   {
+    "role": "general",
+    "from": "1415-03-18",
+    "to": "1415-08-15",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "jadila-bint-saad-ibn-faraj",
@@ -2230,7 +3448,17 @@
   "traits": [
    "honest"
   ],
-  "note": "Younger daughter of Saʿd ibn Faraj of Qūnka and Umm al-Fatḥ, sister of the Shaykha Maryam. Married to the heir Muḥammad ibn Ismāʿīl, his third wife. On 2 January 1412 she took a seat in the dīwān, set to encouraging migration (save of 24 October 1414). From 29 September 1416 she sat in the dīwān as its steward of the realm's peace, stabilising the country. She bore the heir two children: Yūsuf, on 10 July 1416, and Fāṭima, on 9 April 1418 (save of 11 August 1420)."
+  "note": "Younger daughter of Saʿd ibn Faraj of Qūnka and Umm al-Fatḥ, sister of the Shaykha Maryam. Married to the heir Muḥammad ibn Ismāʿīl, his third wife. On 2 January 1412 she took a seat in the dīwān, set to encouraging migration (save of 24 October 1414). From 29 September 1416 she sat in the dīwān as its steward of the realm's peace, stabilising the country. She bore the heir two children: Yūsuf, on 10 July 1416, and Fāṭima, on 9 April 1418 (save of 11 August 1420).",
+  "stations": [
+   {
+    "role": "dīwān",
+    "from": "1412-01-02",
+    "to": null,
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "ahmad-ibn-yusuf-ibn-ismail",
@@ -2254,7 +3482,24 @@
    "unmotivated",
    "well_advised"
   ],
-  "note": "Son of Yūsuf ibn Ismāʿīl, ruler of the Ṭāʾifa of Banbalūna; one of the ablest men of the house. He took Maryam bint Yūsuf's seat in the dīwān after her death in August 1412, set to integrating the new lands (save of 24 October 1414). By 1420 he was married to two daughters of his cousin Aḥmad of Burtuqāl, Fāṭima and Maryam, and had three children: Abū al-Ḥasan ʿAlī (16 February 1417), Muʾmina (13 August 1417) and Saʿd (27 July 1419). The game marks him unmotivated (save of 11 August 1420). He left the dīwān by December 1425, and on 30 April 1428 succeeded his father as lord of Banbalūna (save of 25 May 1428)."
+  "note": "Son of Yūsuf ibn Ismāʿīl, ruler of the Ṭāʾifa of Banbalūna; one of the ablest men of the house. He took Maryam bint Yūsuf's seat in the dīwān after her death in August 1412, set to integrating the new lands (save of 24 October 1414). By 1420 he was married to two daughters of his cousin Aḥmad of Burtuqāl, Fāṭima and Maryam, and had three children: Abū al-Ḥasan ʿAlī (16 February 1417), Muʾmina (13 August 1417) and Saʿd (27 July 1419). The game marks him unmotivated (save of 11 August 1420). He left the dīwān by December 1425, and on 30 April 1428 succeeded his father as lord of Banbalūna (save of 25 May 1428).",
+  "stations": [
+   {
+    "role": "dīwān",
+    "from": "1412-09-01",
+    "to": "1428-04-30",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "general",
+    "from": "1428-05-11",
+    "to": null,
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "abu-hammu-rahhu",
@@ -2277,7 +3522,8 @@
    "malevolent"
   ],
   "note": "Son of Khālid ibn Yaḥyā Raḥḥū. He succeeded his father as ruler of the Ṭāʾifa of Burghush on 2 September 1412 (save of 24 October 1414). He received the four Cantabrian towns at the Peace of Ṣafar and died on 21 January 1431. The game gives a suicide; the chronicle keeps the court's version, a sudden illness. The Emperor ruled Burghush as regent for his son Khālid (save of 10 October 1435).",
-  "died": "1431-01-21"
+  "died": "1431-01-21",
+  "tier": "key"
  },
  {
   "id": "temur",
@@ -2301,7 +3547,30 @@
    "strategist"
   ],
   "note": "Lord of Samarqand from 25 October 1360. Between 1394 and 1420 his realm grew from 234 towns to 707, the fourth power of the world: Herat, Iṣfahān and Tabrīz by 1407, Kāshghar and Farghāna in February 1414, Fārs, Kirmān and Hurmuz in 1415. In August 1420 he was eighty-four and still on the throne; his chosen heir was Köke, a conqueror and army reformer of forty-eight (world files of 1394–1420).",
-  "died": "1433-07-26"
+  "died": "1433-07-26",
+  "stations": [
+   {
+    "role": "dīwān",
+    "from": "1357-04-13",
+    "to": "1357-04-21",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "admiral",
+    "from": "1429-09-19",
+    "to": "1429-09-25",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "general",
+    "from": "1429-10-02",
+    "to": "1433-07-26",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "ahmad-ottoman",
@@ -2347,7 +3616,24 @@
    "worldly"
   ],
   "note": "Son of the sultan Būlād, whom he succeeded on 16 June 1396. Al-Andalus's one ally in the East since 1367. In 1420 he ruled 191 towns from Cairo and 103 more through vassals from the Ḥijāz to the Taurus, ninth in the world; Hungary, the Ottomans and the Tīmūrids are his rivals. His heir is his son Jyral, born 30 December 1401 (world file of 11 August 1420). His daughter Ayaulym married the Emperor's grandson Ismāʿīl by 1422. On 19 September 1423 he went to war with the Ottomans and called al-Andalus to arms; the peace of 8 August 1424 gave him 37 towns of central Anatolia (saves of 1423 and 1424).",
-  "died": "1432-10-16"
+  "died": "1432-10-16",
+  "stations": [
+   {
+    "role": "admiral",
+    "from": "1393-08-22",
+    "to": "1429-08-22",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "general",
+    "from": "1431-11-02",
+    "to": "1432-10-16",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "yahya-marinid",
@@ -2368,7 +3654,16 @@
   "traits": [
    "malevolent"
   ],
-  "note": "Son of Abū Ḥammū and grandson of Abū al-Faḍl of Fās and Jadīla bint Yūsuf, so a great-grandson of Yūsuf I of Gharnāṭa. His father died in a hunting accident in 1410; he succeeded his grandfather on 19 March 1417 and ruled in his own name from his sixteenth birthday, 14 July 1417. Fās stays allied to al-Andalus (world file of 11 August 1420)."
+  "note": "Son of Abū Ḥammū and grandson of Abū al-Faḍl of Fās and Jadīla bint Yūsuf, so a great-grandson of Yūsuf I of Gharnāṭa. His father died in a hunting accident in 1410; he succeeded his grandfather on 19 March 1417 and ruled in his own name from his sixteenth birthday, 14 July 1417. Fās stays allied to al-Andalus (world file of 11 August 1420).",
+  "stations": [
+   {
+    "role": "general",
+    "from": "1440-07-02",
+    "to": "1440-07-03",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "eduardo-de-avellaneda",
@@ -2386,7 +3681,16 @@
   "traits": [
    "defensive_planner"
   ],
-  "note": "A Castilian Catholic noble who led the rising of the province of Zamora against the Ṭāʾifa of Liyūn on 1 June 1420. The Emperor Ismāʿīl destroyed his 370 men at Fermoselle on 10 August 1420 without the loss of a man (save of 11 August 1420)."
+  "note": "A Castilian Catholic noble who led the rising of the province of Zamora against the Ṭāʾifa of Liyūn on 1 June 1420. The Emperor Ismāʿīl destroyed his 370 men at Fermoselle on 10 August 1420 without the loss of a man (save of 11 August 1420).",
+  "stations": [
+   {
+    "role": "general",
+    "from": "1440-10-24",
+    "to": "1440-11-13",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "diego-villamarin",
@@ -2408,7 +3712,17 @@
    "naval_engineer",
    "calm"
   ],
-  "note": "A Galician noble and a soldier of rare gifts (89 in war). On 4 September 1420, when the Kingdom of Castile fell apart, he became king of Galicia: 23 towns from Santiago and A Coruña to Lugo, Ourense and Tui, some 380,000 Galicians, all Catholic (save of 4 September 1420). On 25 March 1425 he made peace with Asturias and took all eight of its towns; Galicia then held 31 (save of 25 May 1428). In the War of Shant Yāqub he had no army to meet the Emperor's: Santiago fell on 15 July 1430 and his last 3,229 men died at Oviedo on 5 August. At the Peace of Ṣafar on 3 November 1430 Galicia was annexed whole, and he left the peninsula; that day's save shows him at Augsburg, a man of its burghers' estate, careful, calm and a builder of ships (saves of 17 August and 3 November 1430)."
+  "note": "A Galician noble and a soldier of rare gifts (89 in war). On 4 September 1420, when the Kingdom of Castile fell apart, he became king of Galicia: 23 towns from Santiago and A Coruña to Lugo, Ourense and Tui, some 380,000 Galicians, all Catholic (save of 4 September 1420). On 25 March 1425 he made peace with Asturias and took all eight of its towns; Galicia then held 31 (save of 25 May 1428). In the War of Shant Yāqub he had no army to meet the Emperor's: Santiago fell on 15 July 1430 and his last 3,229 men died at Oviedo on 5 August. At the Peace of Ṣafar on 3 November 1430 Galicia was annexed whole, and he left the peninsula; that day's save shows him at Augsburg, a man of its burghers' estate, careful, calm and a builder of ships (saves of 17 August and 3 November 1430).",
+  "stations": [
+   {
+    "role": "admiral",
+    "from": "1420-12-02",
+    "to": "1430-09-16",
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "jose-fernando-tunon",
@@ -2425,7 +3739,23 @@
    "mil": 59
   },
   "traits": [],
-  "note": "A Leonese noble who on 4 September 1420, when the Kingdom of Castile fell apart, became king of Asturias: 8 towns from Oviedo, Castile's last capital, to Avilés, Villaviciosa and Llanes, some 130,000 people, nearly all Leonese and Catholic (save of 4 September 1420). On 25 March 1425 Galicia took all of Asturias (save of 25 May 1428)."
+  "note": "A Leonese noble who on 4 September 1420, when the Kingdom of Castile fell apart, became king of Asturias: 8 towns from Oviedo, Castile's last capital, to Avilés, Villaviciosa and Llanes, some 130,000 people, nearly all Leonese and Catholic (save of 4 September 1420). On 25 March 1425 Galicia took all of Asturias (save of 25 May 1428).",
+  "stations": [
+   {
+    "role": "admiral",
+    "from": "1422-10-01",
+    "to": "1424-12-17",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "general",
+    "from": "1425-01-02",
+    "to": "1425-03-25",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "alfonso-gaston",
@@ -2445,7 +3775,16 @@
    "drunkard",
    "naive"
   ],
-  "note": "A Basque noble who on 4 September 1420, when the Kingdom of Castile fell apart, became king of Navarre, the second Alfonso of that crown: the 10 Basque towns of the coast and Álava, from Bilbao, his capital, and San Sebastián to Vitoria, some 160,000 Basques. The old Navarre of Pamplona is the Emperor's Ṭāʾifa of Banbalūna. The save shows the new state Sunni though its people are all Catholic; Trent is correcting this in game (save of 4 September 1420; Trent's account). He allied Navarre to Castile, which gave the Emperor's sons their opening: on 17 August 1430 al-Andalus declared war on him, and on 3 November his army of 3,580 was broken before Bilbao. At the Peace of Ṣafar that day Navarre was annexed and its towns given to the Ṭāʾifa of Banbalūna, at whose court he now lives, a drunkard and naive (saves of 17 August, 3 and 5 November 1430)."
+  "note": "A Basque noble who on 4 September 1420, when the Kingdom of Castile fell apart, became king of Navarre, the second Alfonso of that crown: the 10 Basque towns of the coast and Álava, from Bilbao, his capital, and San Sebastián to Vitoria, some 160,000 Basques. The old Navarre of Pamplona is the Emperor's Ṭāʾifa of Banbalūna. The save shows the new state Sunni though its people are all Catholic; Trent is correcting this in game (save of 4 September 1420; Trent's account). He allied Navarre to Castile, which gave the Emperor's sons their opening: on 17 August 1430 al-Andalus declared war on him, and on 3 November his army of 3,580 was broken before Bilbao. At the Peace of Ṣafar that day Navarre was annexed and its towns given to the Ṭāʾifa of Banbalūna, at whose court he now lives, a drunkard and naive (saves of 17 August, 3 and 5 November 1430).",
+  "stations": [
+   {
+    "role": "admiral",
+    "from": "1422-11-26",
+    "to": "1430-11-03",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "shams-bint-muhammad",
@@ -2468,7 +3807,17 @@
   "traits": [
    "deceitful"
   ],
-  "note": "Daughter of the Emperor Muḥammad by Isabel de Montsoriu, born at Ishbīliya on 10 August 1407. Married to her cousin Ismāʿīl, son of the admiral prince Yūsuf ibn Ismāʿīl; their children include Aḥmad (1427), Jadīla (1430) and Abū al-Ḥasan ʿAlī (1441). On 15 November 1437, nine days after the death of her grandmother Bernarda, the queen mother, she took Bernarda's seat in the dīwān, promoting Andalusī culture. Deceitful. (save of 11 June 1442)"
+  "note": "Daughter of the Emperor Muḥammad by Isabel de Montsoriu, born at Ishbīliya on 10 August 1407. Married to her cousin Ismāʿīl, son of the admiral prince Yūsuf ibn Ismāʿīl; their children include Aḥmad (1427), Jadīla (1430) and Abū al-Ḥasan ʿAlī (1441). On 15 November 1437, nine days after the death of her grandmother Bernarda, the queen mother, she took Bernarda's seat in the dīwān, promoting Andalusī culture. Deceitful. (save of 11 June 1442)",
+  "stations": [
+   {
+    "role": "dīwān",
+    "from": "1437-11-15",
+    "to": null,
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "umm-al-fath-bint-muhammad",
@@ -2490,7 +3839,17 @@
    "mil": 77
   },
   "traits": [],
-  "note": "Daughter of the heir Muḥammad and his third wife Jadīla bint Saʿd, named for her grandmother Umm al-Fatḥ. On 17 December 1425, at fourteen, she took a seat in the dīwān, integrating the new lands; she sits there beside her mother (save of 25 May 1428)."
+  "note": "Daughter of the heir Muḥammad and his third wife Jadīla bint Saʿd, named for her grandmother Umm al-Fatḥ. On 17 December 1425, at fourteen, she took a seat in the dīwān, integrating the new lands; she sits there beside her mother (save of 25 May 1428).",
+  "stations": [
+   {
+    "role": "dīwān",
+    "from": "1428-05-13",
+    "to": null,
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "fatima-bint-saad-ibn-ahmad",
@@ -2550,7 +3909,8 @@
    "mil": 22
   },
   "traits": [],
-  "note": "Mansa of Mālī from 26 August 1410, reigning from Niani. In the first half of 1428 he received Andalusī envoys who came by the new sea roads, exchanged gifts with the Emperor Ismāʿīl and exempted Andalusī traders from tariffs throughout his empire (Trent's account). His heir is Majan, born 28 June 1405 (world file of 25 May 1428)."
+  "note": "Mansa of Mālī from 26 August 1410, reigning from Niani. In the first half of 1428 he received Andalusī envoys who came by the new sea roads, exchanged gifts with the Emperor Ismāʿīl and exempted Andalusī traders from tariffs throughout his empire (Trent's account). His heir is Majan, born 28 June 1405 (world file of 25 May 1428).",
+  "tier": "key"
  },
  {
   "id": "edward-v-of-england",
@@ -2569,7 +3929,31 @@
    "mil": 47
   },
   "traits": [],
-  "note": "King of England as Edward V from 18 April 1423. His war with France from April 1427 ended in the peace of 28 November 1428, which took eighty French towns for England and its vassals and made Languedoc an English dominion of Toulouse. On 1 December 1428 he was made king of France as well, uniting England, France and the Dauphiné under one crown. England is allied to Castile and counts al-Andalus among its rivals (saves of 1428). On 11 June 1429 he was crowned in Paris and his crowns were joined as a new Angevin Empire (Trent's account)."
+  "note": "King of England as Edward V from 18 April 1423. His war with France from April 1427 ended in the peace of 28 November 1428, which took eighty French towns for England and its vassals and made Languedoc an English dominion of Toulouse. On 1 December 1428 he was made king of France as well, uniting England, France and the Dauphiné under one crown. England is allied to Castile and counts al-Andalus among its rivals (saves of 1428). On 11 June 1429 he was crowned in Paris and his crowns were joined as a new Angevin Empire (Trent's account).",
+  "stations": [
+   {
+    "role": "dīwān",
+    "from": "1422-11-08",
+    "to": "1423-04-18",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "admiral",
+    "from": "1431-02-04",
+    "to": "1432-08-21",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "general",
+    "from": "1432-08-28",
+    "to": null,
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  },
  {
   "id": "philippe-vii-of-france",
@@ -2586,7 +3970,16 @@
    "mil": 68
   },
   "traits": [],
-  "note": "King of France from 6 April 1421. He lost the Hundred Years' War at the peace of 28 November 1428, and on 1 December his crown passed to Edward of England; he kept a seat in the French council (saves of 1428)."
+  "note": "King of France from 6 April 1421. He lost the Hundred Years' War at the peace of 28 November 1428, and on 1 December his crown passed to Edward of England; he kept a seat in the French council (saves of 1428).",
+  "stations": [
+   {
+    "role": "dīwān",
+    "from": "1417-10-01",
+    "to": "1421-04-06",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "berenguer-ramon-de-montsoriu",
@@ -2612,7 +4005,23 @@
    "loose_lips"
   ],
   "note": "Son of Francesc de Montsoriu, ḥājib of Catalonia, and Fāṭima bint Yūsuf, daughter of Yūsuf I, so a first cousin of the Emperor Ismāʿīl; a Muslim. He rules the Ṭāʾifa of Catalonia from Barshalūna. In December 1428 the court made the integration of his ṭāʾifa into the crown a first concern, expected to be complete by the middle of 1437 (save of 1 December 1428; Trent's account).",
-  "died": "1432-08-30"
+  "died": "1432-08-30",
+  "stations": [
+   {
+    "role": "general",
+    "from": "1398-03-26",
+    "to": "1404-06-02",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "admiral",
+    "from": "1404-06-02",
+    "to": "1432-08-30",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "abu-al-hasan-ali-ibn-ahmad",
@@ -2632,7 +4041,16 @@
    "mil": 37
   },
   "traits": [],
-  "note": "Son of Aḥmad ibn Ismāʿīl, ruler of the Ṭāʾifa of Liyūn, and so a nephew of the Emperor Muḥammad V; married. At seventeen, on 30 June 1430, he commanded the army of al-Andalus before Santiago de Compostela in the War of Shant Yāqub and broke 7,000 Galicians, killing or taking 3,800 for the loss of 230 (+25 war score) (Trent's battle screen; save of 18 May 1430)."
+  "note": "Son of Aḥmad ibn Ismāʿīl, ruler of the Ṭāʾifa of Liyūn, and so a nephew of the Emperor Muḥammad V; married. At seventeen, on 30 June 1430, he commanded the army of al-Andalus before Santiago de Compostela in the War of Shant Yāqub and broke 7,000 Galicians, killing or taking 3,800 for the loss of 230 (+25 war score) (Trent's battle screen; save of 18 May 1430).",
+  "stations": [
+   {
+    "role": "general",
+    "from": "1429-12-02",
+    "to": null,
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "juan-cangas",
@@ -2649,7 +4067,16 @@
    "mil": 87
   },
   "traits": [],
-  "note": "A Leonese Muslim, general of the Ṭāʾifa of Liyūn. On 5 August 1430, in the War of Shant Yāqub, he held Oviedo with 5,602 men against the last army of Galicia and destroyed all 3,229 without loss (save of 17 August 1430)."
+  "note": "A Leonese Muslim, general of the Ṭāʾifa of Liyūn. On 5 August 1430, in the War of Shant Yāqub, he held Oviedo with 5,602 men against the last army of Galicia and destroyed all 3,229 without loss (save of 17 August 1430).",
+  "stations": [
+   {
+    "role": "general",
+    "from": "1444-01-01",
+    "to": "1444-01-01",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "fernando-son-of-pedro",
@@ -2672,7 +4099,23 @@
    "glory_seeker",
    "malevolent"
   ],
-  "note": "Son of King Pedro, the last king of Castile. He succeeded his father on 14 October 1422 to four towns on the Cantabrian coast, ruling from Santander, under England's protection (save of 5 November 1423). He went to war in France beside the English in 1427 and made his own peace with the French in 1428. When al-Andalus declared war on Navarre on 17 August 1430 he alone answered Navarre's call, and at the Peace of Ṣafar on 3 November 1430 Castile was annexed and ceased to exist. He and his son Juan are afterwards of the court of the Ṭāʾifa of Burghush (saves of 17 August, 3 and 5 November 1430)."
+  "note": "Son of King Pedro, the last king of Castile. He succeeded his father on 14 October 1422 to four towns on the Cantabrian coast, ruling from Santander, under England's protection (save of 5 November 1423). He went to war in France beside the English in 1427 and made his own peace with the French in 1428. When al-Andalus declared war on Navarre on 17 August 1430 he alone answered Navarre's call, and at the Peace of Ṣafar on 3 November 1430 Castile was annexed and ceased to exist. He and his son Juan are afterwards of the court of the Ṭāʾifa of Burghush (saves of 17 August, 3 and 5 November 1430).",
+  "stations": [
+   {
+    "role": "general",
+    "from": "1432-02-06",
+    "to": "1432-06-13",
+    "source": "save",
+    "approx": false
+   },
+   {
+    "role": "admiral",
+    "from": "1434-04-27",
+    "to": "1443-08-30",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "juan-son-of-fernando",
@@ -2690,7 +4133,16 @@
    "mil": 37
   },
   "traits": [],
-  "note": "Son of King Fernando and heir of Castile, eighteen in 1430, a knight of the English Order of the Garter. After the Peace of Ṣafar (3 November 1430) he is of the court of the Ṭāʾifa of Burghush with his father (saves of 17 August and 5 November 1430)."
+  "note": "Son of King Fernando and heir of Castile, eighteen in 1430, a knight of the English Order of the Garter. After the Peace of Ṣafar (3 November 1430) he is of the court of the Ṭāʾifa of Burghush with his father (saves of 17 August and 5 November 1430).",
+  "stations": [
+   {
+    "role": "dīwān",
+    "from": "1433-10-03",
+    "to": null,
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "diego-sotomaior",
@@ -2707,7 +4159,16 @@
    "mil": 58
   },
   "traits": [],
-  "note": "A Galician noble and a Muslim, set over the 23 towns of Galicia proper, from Santiago, A Coruña and Lugo to Ourense and Tui, when they were made a ṭāʾifa of the Emperor on 3 November 1430, two days' work after the Peace of Ṣafar: some 518,000 people, Galician in speech and Catholic in faith, with 2,400 regulars and three ships (save of 5 November 1430)."
+  "note": "A Galician noble and a Muslim, set over the 23 towns of Galicia proper, from Santiago, A Coruña and Lugo to Ourense and Tui, when they were made a ṭāʾifa of the Emperor on 3 November 1430, two days' work after the Peace of Ṣafar: some 518,000 people, Galician in speech and Catholic in faith, with 2,400 regulars and three ships (save of 5 November 1430).",
+  "stations": [
+   {
+    "role": "general",
+    "from": "1444-04-06",
+    "to": null,
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "pope-fabrizio-ricci",
@@ -2767,7 +4228,16 @@
   },
   "traits": [],
   "note": "Admiral of the Papal States in the Crusade of 835, a Slav in the Pope's service. With six ships he destroyed fourteen Tripolitan ships in the Gulf of Talamone on 5 December 1431, and with fifteen Genoese ships beside his own he sank or took fifteen of twenty-four Tunisian ships off Lazio on 20 December. On 14 March 1432 he attacked 45 Moroccan and Catalan ships in the Corsica Channel with his last five and lost them all (save of 1 May 1432).",
-  "died": "1435-04-09"
+  "died": "1435-04-09",
+  "stations": [
+   {
+    "role": "admiral",
+    "from": "1432-09-02",
+    "to": "1435-04-09",
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "abd-al-wahhab-barakat",
@@ -2837,7 +4307,16 @@
   "traits": [
    "child_prodigy"
   ],
-  "note": "Son of Abū Ḥammū of Burghush, nine when his father died on 21 January 1431. A child prodigy. The Emperor rules Burghush as his regent until he comes of age on 11 June 1437 (save of 10 October 1435). He came of age and took his throne on 11 June 1437 (save of 16 January 1438)."
+  "note": "Son of Abū Ḥammū of Burghush, nine when his father died on 21 January 1431. A child prodigy. The Emperor rules Burghush as his regent until he comes of age on 11 June 1437 (save of 10 October 1435). He came of age and took his throne on 11 June 1437 (save of 16 January 1438).",
+  "stations": [
+   {
+    "role": "admiral",
+    "from": "1440-01-27",
+    "to": null,
+    "source": "save",
+    "approx": false
+   }
+  ]
  },
  {
   "id": "yusuf-ibn-ismail-ibn-muhammad",
@@ -2860,7 +4339,37 @@
   "traits": [
    "child_shrewd"
   ],
-  "note": "Eldest son of the heir Ismāʿīl by Tella, born at Gharnāṭa on 6 January 1422, and second in line behind his father. Given an expensive, in-depth education, and shrewd as a child. By January 1438 he had married three wives: Amie, daughter of Mansa Tiramakhan of Mālī; Fāṭima, daughter of the late Yūsuf ibn Ismāʿīl of Banbalūna, to tie the ṭāʾifas to the crown; and Muʾmina, daughter of Muṣliḥ al-Dīn of the court. At sixteen his grandfather the Emperor made him admiral of the fleet, believing the post had made a man of him and would do the same for his grandson (Trent's screenshot and account; save of 16 January 1438)."
+  "note": "Eldest son of the heir Ismāʿīl by Tella, born at Gharnāṭa on 6 January 1422, and second in line behind his father. Given an expensive, in-depth education, and shrewd as a child. By January 1438 he had married three wives: Amie, daughter of Mansa Tiramakhan of Mālī; Fāṭima, daughter of the late Yūsuf ibn Ismāʿīl of Banbalūna, to tie the ṭāʾifas to the crown; and Muʾmina, daughter of Muṣliḥ al-Dīn of the court. At sixteen his grandfather the Emperor made him admiral of the fleet, believing the post had made a man of him and would do the same for his grandson (Trent's screenshot and account; save of 16 January 1438).",
+  "stations": [
+   {
+    "role": "admiral",
+    "from": "1438-01-16",
+    "to": null,
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "central",
+  "arc": [
+   {
+    "from": "1438-01-16",
+    "text": "Made admiral at sixteen by his grandfather, who believes the post made a man of him and will make one of the boy.",
+    "by": "trent",
+    "source": "Trent's account, January 1438"
+   },
+   {
+    "from": "1438-01-16",
+    "text": "His three marriages are a map of the realm: Mālī's gold, the ṭāʾifas of the north, the court.",
+    "by": "chronicle",
+    "source": "Of the Admiral Prince"
+   },
+   {
+    "from": "1440-06-12",
+    "text": "Enforces the Emperor's embargo on the Angevins at sea.",
+    "by": "chronicle",
+    "source": "Of the Trade War with Genoa"
+   }
+  ]
  },
  {
   "id": "abu-al-hasan-ali-ibn-yusuf-ibn-ismail",
@@ -3106,7 +4615,8 @@
    "mil": 44
   },
   "traits": [],
-  "note": "Daughter of Mansa Tiramakhan of Mālī, Mandinka by culture and a Sunni. Married to Yūsuf, the heir's eldest son, by January 1438 (save of 16 January 1438)."
+  "note": "Daughter of Mansa Tiramakhan of Mālī, Mandinka by culture and a Sunni. Married to Yūsuf, the heir's eldest son, by January 1438 (save of 16 January 1438).",
+  "tier": "key"
  },
  {
   "id": "fatima-bint-yusuf-ibn-ismail",
@@ -3156,6 +4666,16 @@
   "traits": [
    "curious_adventurer"
   ],
-  "note": "An Andalusī of the umarāʾ, born at al-Qubbāṣa (Alcobaça, in the old lands of Portugal) on 1 April 1416, two years after Portugal ended, and the founder of his own house, which the game names for his birthplace (El-Qbasa; Trent read it as al-El-Qhawai). A curious adventurer, a soldier more than a courtier. Made one of the empire's explorers on 30 October 1445; in mid-March 1446 he reached a cape where Africa seemed to come to an end (Trent's account; autosave of 1 February 1447)."
+  "note": "An Andalusī of the umarāʾ, born at al-Qubbāṣa (Alcobaça, in the old lands of Portugal) on 1 April 1416, two years after Portugal ended, and the founder of his own house, which the game names for his birthplace (El-Qbasa; Trent read it as al-El-Qhawai). A curious adventurer, a soldier more than a courtier. Made one of the empire's explorers on 30 October 1445; in mid-March 1446 he reached a cape where Africa seemed to come to an end (Trent's account; autosave of 1 February 1447).",
+  "stations": [
+   {
+    "role": "explorer",
+    "from": "1445-10-30",
+    "to": null,
+    "source": "save",
+    "approx": false
+   }
+  ],
+  "tier": "key"
  }
 ]

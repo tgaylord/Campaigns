@@ -14,6 +14,7 @@ Run by Claude in the workspace when a checkpoint save comes in. Inputs come from
 | `realm_names.py` | The game's English names for every key the realm files use (laws, policies, privileges, reforms, ships, buildings, institutions, the two ends of each societal value, the places abroad), and the estate each privilege belongs to. Writes `data/realm/names.json`; re-run it after `realm_extras.py`, since the site build fails on a key with no name. |
 | `location_centroids.py` | The centre of every one of the game's 28,000 locations in map pixels (`data/map/centroids.json`), so footholds, battles and capitals can be placed anywhere on the World chart. Only needs re-running if the game's map changes. About ten seconds. |
 | `battle_places.py` | Matches each battle event's field (in the chronicle's spelling) to a game location through the gazetteer and the game's place names, and writes `data/map/battle-places.json`. Names it can't match are printed; add them to `ALIAS` in the tool rather than guessing. |
+| `character_roles.py` | Dates the stations of everyone in `people.json` (`stations`): roles with their start and end from a decoded save's character records (the cabinet, generals, admirals, explorers, ended ones included), and from the checkpoints the heir, the regent and any cabinet seat the save no longer remembers (approximate). Run it on the latest save after each checkpoint. |
 | `sessions.py` | The session log (`data/sessions.json`): one row per sitting (a day of work in Trent's time zone, from the git history, with today's sitting read from the working tree), listing the chronicle entries, notes, checkpoints, people, wars and places it added, how many events, the campaign years it reached, its commit headlines and the Claude sessions that did it. Run it just before each commit. A few seconds. |
 | `map_layers.py` | Writes the Atlas's lenses for one checkpoint (`data/map/layers/<checkpoint>.json`): people, Muslim/Christian/Jewish and Andalusī/Castilian shares, prosperity, control, occupier and last looting for every land location in the map frame. Run it on each new checkpoint's decoded save. |
 
@@ -41,7 +42,9 @@ python3 tools/battle_places.py GAME
 # 7. write data/snapshots/<date>.json, people, gazetteer, wars and events by hand from the extracted file
 #    (estate shares of power are not in the save: they come from Trent's estates screen, or stay null)
 #    (the dīwān comes from computed.cabinet in the extracted file every time, mapped by gameId; never copy it forward)
-# 8. just before committing: the session log
+# 8. date everyone's stations from the latest save
+python3 tools/character_roles.py /tmp/sections
+# 9. just before committing: the session log
 python3 tools/sessions.py
 ```
 

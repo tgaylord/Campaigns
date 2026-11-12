@@ -10,6 +10,10 @@ export type Person = {
   born?: string; died?: string; father?: string; mother?: string; roles: string[];
   reigns: { from: string; to: string | null }[]; female: boolean; gameId?: number;
   stats?: { adm: number; dip: number; mil: number }; traits: string[]; note?: string; sample: boolean;
+  /** central or key; unset is minor (named in a leaf) or background (never named) */
+  tier?: "central" | "key";
+  stations: { role: string; from: string; to: string | null; source: "save" | "checkpoints"; approx: boolean }[];
+  arc: { from: string; to?: string; text: string; by: "trent" | "chronicle"; source?: string }[];
 };
 export type Place = {
   id: string; name: string; nameArabic?: string; nameGame: string; kind: string;
