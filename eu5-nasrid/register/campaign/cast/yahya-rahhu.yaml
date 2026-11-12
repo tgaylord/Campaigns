@@ -1,0 +1,42 @@
+name: Yaḥyā Raḥḥū
+arabic: يحيى بن رحو
+house: Raḥḥū
+tier: key
+born: '1300-04-03'
+died: '1355-02-18'
+roles:
+  - general
+  - commander of the Ghuzāt
+traits:
+  - bold_fighter
+stations:
+  - role: general
+    from: '1339-09-02'
+    to: '1340-08-11'
+    source: save
+    approx: false
+  - role: general
+    from: '1339-09-02'
+    to: '1340-08-11'
+    source: save
+    approx: false
+  - role: dīwān
+    from: '1354-07-10'
+    to: '1355-02-18'
+    source: save
+    approx: false
+  - role: dīwān
+    from: '1354-07-10'
+    to: '1355-02-18'
+    source: save
+    approx: false
+note: >-
+  A Zenata Berber, founder and head of the house of Raḥḥū; general from 1 September 1339 at the head of the
+  Volunteers of the Faith. The game calls him 'a competent yet fickle figure'. He led the Volunteers of the
+  Faith again from 18 October 1346, when they rose against the united crowns (in the game files his second
+  command is a separate character with the same name, house and birth date; the chronicle keeps them one man).
+  Took Faraj ibn Ismāʿīl's seat in the dīwān in 1355, after Faraj went to Ghana. Died of illness on 18
+  February 1355, aged 54 by the game's reckoning, soon after taking the seat; the court called it coincidence.
+game:
+  id: 26562
+  name: Yahya Raḥḥu

@@ -1,0 +1,513 @@
+date: '1448-02-01'
+title: The Prince's Galleys
+source:
+  save: autosave of 1 February 1448 (compressed)
+  game: 1.4.7
+summary: >-
+  From an autosave, eight months into the Tunisian war for Palermo. The winter's fighting was at sea: Genoa
+  and Sicily destroyed Annaba's fleet in the Gulf of Asinara (25 November), Genoa lost 26 of 31 ships
+  attacking Tunis's 88 in the Gulf of Oristano (16 December), and the prince Yūsuf's eight ships sank an
+  Athenian off Terracina and two Sicilians in the Gulf of Termini (5 and 13 January). On land the allies lost
+  again at Oristano and at Toulon, where Burgos's small army was destroyed. The Emperor's own army has not
+  fought. The treasury is 376; stability 11.9; the fleet has added a war galley and six hulks. Estate power
+  estimated from the reading of 16 November 1428.
+realm:
+  towns: 222
+  souls: 3412435
+  treasury: 376
+  income: 433.1
+  expenses: 401.5
+  stability: 11.9
+  prestige: 89
+  regiments: 9
+  ships: 70
+  manpower: 27610
+court:
+  ruler: muhammad-ibn-ismail-ibn-saad
+  heir: ismail-ibn-muhammad-ibn-ismail
+  capital: ishbiliyya
+  council:
+    - who: ismail-ibn-muhammad-ibn-ismail
+      seat: Assimilating the new lands
+    - who: ahmad-ibn-muhammad-ibn-ismail
+      seat: Changing the societal values
+    - who: umm-al-fath-bint-muhammad
+      seat: Strengthening the government
+    - who: shams-bint-muhammad
+      seat: Promoting Andalusī culture
+    - who: jadila-bint-saad-ibn-faraj
+      seat: Developing the provinces
+standing:
+  wars:
+    - tunisian-war-for-palermo
+  allies:
+    - Mamluks
+    - Morocco
+    - Tunis
+  subjects:
+    - Aragon (taifa)
+    - Taifa of Cuenca (taifa)
+    - Kingdom of Portugal (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+    - Taifa of Galicia (taifa)
+    - Cape Verde (colonial nation)
+  estates:
+    - name: Crown
+      power: 28.72
+    - name: Nobility
+      power: 18.68
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 13.37
+      mood: 50
+    - name: Burghers
+      power: 24.72
+      mood: 54
+    - name: Commoners
+      power: 3.17
+      mood: 50
+    - name: Dhimmī
+      power: 11.34
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 1103376
+    Catalan: 766168
+    Castilian: 540242
+    Portuguese: 538845
+    Sephardi: 220820
+    Leonese: 176711
+  faiths:
+    Sunni: 2066062
+    Catholic: 1119971
+    Jewish: 197752
+    Guanche_religion: 27353
+    Bori_Religion: 584
+map:
+  ours:
+    - GRA
+  subjects:
+    - ARA
+    - ABA60
+    - POR
+    - ABA42
+    - ABA49
+    - ABA55
+    - GLC
+    - AAA52
+  allies:
+    - MAM
+    - MOR
+    - TUN
+beats:
+  - id: 1447-10-30-battle-oristano
+    'on': '1447-10-30'
+    kind: battle
+    what: 'At Oristano, Tunis and Gallura (2,408 men) attack Arborea (3,865) and are beaten: 1,484 lost against 761'
+    minor: true
+    threads:
+      - tunisian-war-for-palermo
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Tunis: 1605
+        Gallura: 803
+      oursTotal: 2408
+      oursLost: 1484
+      theirs:
+        Arborea: 3865
+      theirsTotal: 3865
+      theirsLost: 761
+      location: Oristano
+      side: allies attacking
+      commanders:
+        ours: Kubad#33570617
+        theirs: Benedict#16832034
+  - id: 1447-11-25-battle-gulf-asinara
+    'on': '1447-11-25'
+    kind: battle
+    what: >-
+      In the Gulf of Asinara, off northern Sardinia, 31 Genoese and 28 Sicilian ships destroy Annaba's whole
+      fleet of 21 without loss
+    minor: true
+    threads:
+      - tunisian-war-for-palermo
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      result: allied defeat
+      naval: true
+      ours:
+        Annaba: 21
+      oursTotal: 21
+      oursLost: 21
+      theirs:
+        Genoa: 31
+        Sicily: 28
+      theirsTotal: 59
+      theirsLost: 0
+      location: Gulf of Asinara
+      side: enemy attacking
+      units: ships
+      commanders:
+        ours: Abdullah#33613047
+        theirs: Arnold#16822078
+  - id: 1447-12-16-battle-gulf-oristano
+    'on': '1447-12-16'
+    kind: battle
+    what: >-
+      In the Gulf of Oristano Genoa's 31 ships attack the fleet of Tunis, 88 sail with three of Burgos's: the
+      allies lose 17 ships, Genoa 26, and the Genoese attack fails
+    minor: true
+    threads:
+      - tunisian-war-for-palermo
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      result: allied victory
+      naval: true
+      ours:
+        Tunis: 88
+        Taifa of Burgos: 3
+      oursTotal: 91
+      oursLost: 17
+      theirs:
+        Genoa: 31
+      theirsTotal: 31
+      theirsLost: 26
+      location: Gulf of Oristano
+      side: enemy attacking
+      units: ships
+      commanders:
+        ours: Ishmael#16852775
+        theirs: Arnold#16822078
+  - id: 1447-12-22-battle-toulon
+    'on': '1447-12-22'
+    kind: battle
+    what: >-
+      At Toulon, Genoa and Dignois and Cuneo (4,714 men) attack Taifa of Burgos (867), who are beaten: 766
+      lost against 86
+    minor: true
+    threads:
+      - tunisian-war-for-palermo
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Taifa of Burgos: 867
+      oursTotal: 867
+      oursLost: 766
+      theirs:
+        Genoa: 4227
+        Dignois: 82
+        Cuneo: 405
+      theirsTotal: 4714
+      theirsLost: 86
+      location: Toulon
+      side: enemy attacking
+      commanders:
+        ours: Hernan#95710
+        theirs: Julius Caesar#16801655
+  - id: 1448-01-03-battle-gulf-termini
+    'on': '1448-01-03'
+    kind: battle
+    what: 'At Gulf of Termini, Sicily (2 ships) attacks Tripoli (1), who are beaten: 1 lost against 0'
+    minor: true
+    threads:
+      - tunisian-war-for-palermo
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      result: allied defeat
+      naval: true
+      ours:
+        Tripoli: 1
+      oursTotal: 1
+      oursLost: 1
+      theirs:
+        Sicily: 2
+      theirsTotal: 2
+      theirsLost: 0
+      location: Gulf of Termini
+      side: enemy attacking
+      units: ships
+      commanders:
+        ours: Abd Al-Wahid#93093
+        theirs: Cyrus#50362395
+  - id: 1448-01-05-battle-gulf-terracina
+    'on': '1448-01-05'
+    kind: battle
+    what: >-
+      In the Gulf of Terracina, off the coast of Naples, a single Athenian ship attacks the prince Yūsuf's
+      eight and is sunk
+    who:
+      - yusuf-ibn-ismail-ibn-muhammad
+    threads:
+      - tunisian-war-for-palermo
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      result: allied victory
+      naval: true
+      ours:
+        al-Andalus: 8
+      oursTotal: 8
+      oursLost: 0
+      theirs:
+        Athens: 1
+      theirsTotal: 1
+      theirsLost: 1
+      location: Gulf of Terracina
+      side: enemy attacking
+      units: ships
+      commanders:
+        ours: the prince Yūsuf ibn Ismāʿīl
+        theirs: Peter#79415
+  - id: 1448-01-09-battle-oristano
+    'on': '1448-01-09'
+    kind: battle
+    what: 'At Oristano, Tunis and Gallura (913 men) attack Arborea (3,103) and are beaten: 847 lost against 135'
+    minor: true
+    threads:
+      - tunisian-war-for-palermo
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Tunis: 589
+        Gallura: 324
+      oursTotal: 913
+      oursLost: 847
+      theirs:
+        Arborea: 3103
+      theirsTotal: 3103
+      theirsLost: 135
+      location: Oristano
+      side: allies attacking
+      commanders:
+        ours: Kubad#33570617
+        theirs: Benedict#16832034
+  - id: 1448-01-13-battle-gulf-termini
+    'on': '1448-01-13'
+    kind: battle
+    what: >-
+      In the Gulf of Termini the prince Yūsuf's eight ships fall on two Sicilian ships and sink both, the day
+      the chancellor calls him an accomplished sailor
+    who:
+      - yusuf-ibn-ismail-ibn-muhammad
+    threads:
+      - tunisian-war-for-palermo
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      result: allied victory
+      naval: true
+      ours:
+        al-Andalus: 8
+      oursTotal: 8
+      oursLost: 0
+      theirs:
+        Sicily: 2
+      theirsTotal: 2
+      theirsLost: 2
+      location: Gulf of Termini
+      side: allies attacking
+      units: ships
+      commanders:
+        ours: the prince Yūsuf ibn Ismāʿīl
+        theirs: Cyrus#50362395
+  - id: 1448-01-13-the-prince-raids-naples
+    'on': '1448-01-13'
+    kind: note
+    what: >-
+      The prince Yūsuf, the heir's eldest son, proves himself raiding along the coast of Naples, and his
+      captains call him an accomplished sailor
+    who:
+      - yusuf-ibn-ismail-ibn-muhammad
+      - ismail-ibn-muhammad-ibn-ismail
+    threads:
+      - tunisian-war-for-palermo
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshot, 13 January 1448
+    detail:
+      trait: >-
+        Accomplished Sailor: navy movement speed +10% ('personal sailing expertise allows this leader to
+        enhance the skills of all captains under him', the game's text)
+      command: admiral of the eleventh fleet (Sṭul 11, as the game names it; usṭūl, 'fleet')
+      reportedBy: the chancellor (the game's report)
+tellings:
+  - id: 0851-11-06-of-the-war-for-balarm-and-the-prince-at-sea
+    'on': '1448-01-13'
+    title: Of the War for Balarm and the Prince at Sea
+    verse: 4:104
+    who:
+      - yusuf-ibn-ismail-ibn-muhammad
+      - ismail-ibn-muhammad-ibn-ismail
+      - muhammad-ibn-ismail-ibn-saad
+      - ahmad-ibn-yusuf-ibn-ismail
+      - rodrigo-de-borja
+    where:
+      - ishbiliyya
+    covers:
+      - 1447-06-13-the-call-of-tunis
+      - 1447-08-06-battle-ozieri
+      - 1447-09-09-battle-corsica-west-coast
+      - 1447-09-11-battle-gulf-termini
+      - 1447-10-05-battle-grasse
+      - 1448-01-13-the-prince-raids-naples
+    text: >
+      On 28 Rabīʿ al-Awwal 851 the Ḥafṣid sultan of Tūnis declared war on the king of Ṣiqilliya for Balarm and
+      its province. Balarm had been a city of the faith for more than two centuries before the Normans took
+      it, and the assembly of Tūnis had voted for the war. The same day the sultan's letter came to
+      [Ishbīliya](place:ishbiliyya) calling the Emperor to arms.
+
+
+      The dīwān did not take long over it. Sicily had Athens and Negroponte behind it, and its allies Genoa
+      and the Pope would come in, Genoa bringing Arborea, Corsica and the rest of its little subjects. The
+      heir [Ismāʿīl](person:ismail-ibn-muhammad-ibn-ismail) said what the court had said of every such call
+      since his grandfather's time: an alliance that is not answered is not an alliance. The Emperor
+      [Muḥammad](person:muhammad-ibn-ismail-ibn-saad) accepted, and the seven ṭāʾifas came in with him that
+      day. The old king of Aragon, [Rodrigo de Borja](person:rodrigo-de-borja), was Ismāʿīl's uncle and
+      sixty-six years old. He took the field himself in the early summer and gave up his command a month
+      later.
+
+
+      The summer went badly for the allies. Al-Andalus itself had not yet fought. On 23 Jumādā al-Ūlā, at
+      Ozieri in Sardinia, Arborea's four thousand broke the Gallurese, Tūnis's vassals, who lost half their
+      men. On 27 Jumādā al-Ākhira two Sicilian ships drove three of al-Burtughāl's off the western shore of
+      Corsica. Two days later, in the gulf of Termini, a day's sail from Balarm, six Genoese ships fell on the
+      combined fleet of Tūnis, Ṭarābulus and Qābis, twenty-eight sail. Nineteen were lost, to one of Genoa's.
+      The Ḥafṣid sultan wrote to Ishbīliya that the Genoese were few and the sea was wide, and asked for
+      ships.
+
+
+      On 24 Rajab [Aḥmad](person:ahmad-ibn-yusuf-ibn-ismail), lord of Banbalūna, who was fifty-one years old,
+      found four thousand two hundred Genoese at Grasse in the hills of Provence. He had three hundred and
+      eighty-five men, and he attacked anyway. Twenty-nine came back. He did not explain himself to the dīwān,
+      and the men of Banbalūna said afterwards that their lord had grown hard.
+
+
+      The Emperor's grandson [Yūsuf](person:yusuf-ibn-ismail-ibn-muhammad) was the one who answered the
+      sultan. He had been admiral since he was sixteen, made so by a grandfather who believed the sea had made
+      a man of him. In the winter, at twenty-six, he took the eleventh squadron out and raided along the
+      coasts of Nābulī. His galleys were in and out again before the coast guards had their sails up. On 6 Dhū
+      al-Qaʿda 851 the chancellor reported to the Emperor that the captains of the squadron called the prince
+      an accomplished sailor, and that ships under him reached where they were going sooner than ships under
+      any other man.
+
+
+      The Emperor had the report read to him twice. His son Ismāʿīl said only that Yūsuf had his grandfather's
+      love of the sea and, he hoped, his father's judgement of when to leave it.
+
+
+      *And do not weaken in pursuit of the enemy. If you should be suffering, so are they suffering as you are
+      suffering, but you expect from God that which they expect not. And God is ever Knowing and Wise.*
+    behind: >-
+      This note covers three entries: the envoys and the Umayyad borders, the lady Isabel and the bridges, and
+      the war for Palermo.
+
+
+      **What the saves show.** Two saves, 28 March and 5 October 1447.
+
+      - *The treasury:* 570 in the autosave of 1 February, 2,680 on 28 March, 216 on 5 October. Income runs at
+      about 425–435 a month against about 365–380 out, and there is no debt in any of them, so the saves don't
+      say where the 2,100 between February and March came from. The entry says only that the treasury was full
+      in the spring. Trent, if you know, it's worth a line.
+
+      - *Where it went:* between March and October, six bridges (Alcántara, Medellín, Villanueva de la Serena,
+      Valencia de Alcántara, Brozas, Jaraicejo); gunsmiths at Jaén, Santarém and Badajoz; tanneries at Córdoba
+      and Lleida; two levels of glassworks at Seville; a distillery at Jerez; a lumber mill at Écija; a winery
+      at Castellón; a cannon foundry at Girona. Between February and March, potteries at Valencia, cloth and a
+      tannery at Córdoba, and a furniture workshop at Cervera. The entry gives them to Aḥmad, as Trent asked
+      for the earlier building.
+
+      - *The house:* Isabel de Montsoriu died of old age on 19 August 1447, her sixty-fifth birthday. Fāṭima
+      was born on 29 June 1447 to Saʿd ibn Aḥmad of Banbalūna and Muʾmina, Prince Aḥmad's daughter. Aḥmad of
+      Banbalūna is marked ruthless in October. The scholar of Delhi, the scholar of Iraq and the Tandroy lord
+      (Matoky, of the Fahambahy) are new at court since February.
+
+      - *The war:* Tunis's war is the game's "2nd Tunis–Sicily War", fought for the province of Palermo, with
+      a war goal granted by Tunis's parliament. The sides and the four battles are from the October save.
+      Al-Andalus's own forces had not fought by then. In the Gulf of Termini the save records the Genoese
+      attack as not carrying the day, but the allies lost 19 ships to Genoa's 1. The entry gives the losses
+      and names no winner. Rodrigo de Borja, king of the Ṭāʾifa of Aragon, held a general's command from 2
+      July to 5 August 1447.
+
+      - *The explorer:* his commission ran from 30 October 1445 to 1 October 1447 in the save. Trent's account
+      dates his sailing for the cape, to leave an outpost, to 5 October.
+
+
+      **From Trent's screenshots and account.** The Tīmūrid stagnation (27 March); the call from Tunis and "We
+      are accepting" (13 June); "Presence in Europe" with the choice "We have arrived" and what it unlocks (1
+      August); the Umayyad Caliphate's borders; and Yūsuf raiding the coast of Naples, with the Accomplished
+      Sailor report (13 January 1448).
+
+
+      **The Umayyad borders.** The game's term covers 2,816 locations: Iberia, the Maghrib (Sūs, Morocco, the
+      Atlas plateau, Algiers, Tunis, Tripolitania and the desert areas), and the regions of Egypt, the Fertile
+      Crescent, Arabia and Persia. In the October save:
+
+      - Iberia is al-Andalus and its ṭāʾifas, apart from five Moroccan locations and Andorra.
+
+      - The Maghrib is Morocco (with Algiers as its fiefdom and Touat as its vassal) and Tunis (with its
+      tributaries and governorships), plus Fezzan and a few independents in the desert.
+
+      - Egypt and most of the Crescent are the Mamlūks'.
+
+      - Arabia is split among the Mamlūks, Mecca, Lām, Yemen and smaller lords.
+
+      - Persia is mostly the Tīmūrids' (350 locations).
+
+
+      So outside Persia and Arabia almost every claimable location belongs to an ally or an ally's subject.
+      The entry leaves the court undecided, as Trent hasn't decided.
+
+
+      **Invented colour.**
+
+      - *Envoys entry:*
+        - the news reaching the court by the Mamlūk post;
+        - the Tabrīz merchants;
+        - where the envoys came from;
+        - the Emperor reading of ʿAbd al-Raḥmān II the night before, and enjoying the audience;
+        - Ismāʿīl calling the answer a promise;
+        - the jurists drawing up the claim;
+        - the map in the dīwān;
+        - Ismāʿīl's remark about the sword in the scabbard;
+        - the Mamlūk party's objection;
+        - Aḥmad studying the roads.
+      - *Isabel entry:*
+        - the court's view of the birth;
+        - Isabel coming south as a girl;
+        - the Emperor's ceremony of mourning;
+        - Aḥmad mourning by working, and his mother praising his drawings;
+        - the purpose of the bridges;
+        - the second bridge at al-Qanṭara (the Roman bridge at Alcántara is real history);
+        - the pages following the Tandroy lord.
+      - *War entry:*
+        - why Tunis wanted Palermo, beyond the parliament's war goal;
+        - the dīwān's quick decision and Ismāʿīl's saying;
+        - the sultan's letter asking for ships;
+        - why Aḥmad of Banbalūna attacked, and his men's verdict;
+        - Yūsuf's raids being quick;
+        - the captains' words (the game's text is the chancellor's report and the trait);
+        - the Emperor having the report read twice, and Ismāʿīl's remark.

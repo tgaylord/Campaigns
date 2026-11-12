@@ -1,0 +1,236 @@
+date: '1337-08-18'
+title: Morocco's war on Castile
+source:
+  save: SP_GRA_1337_08_18 (compressed)
+  game: 1.4.5
+summary: >-
+  Four and a half months in, three weeks after Morocco declared war on Castile. Granada is not in the war;
+  Morocco can call us in under our alliance. Shares of power are estimated (tools/estate_power.py, calibrated
+  on the 16 November reading); satisfaction comes from the save.
+realm:
+  towns: 18
+  souls: 465078
+  treasury: 166
+  income: 43.6
+  expenses: 34.4
+  stability: 30
+  prestige: 26
+  regiments: 3
+  ships: 5
+  manpower: 3207
+court:
+  ruler: yusuf-i
+  heir: faraj-ibn-ismail
+  capital: gharnata
+  council:
+    - who: faraj-ibn-ismail
+      seat: Strengthen the government
+    - who: yusuf-ibn-muhammad
+      seat: Promote Granadan sovereignty
+standing:
+  allies:
+    - Morocco
+  estates:
+    - name: Crown
+      power: 23.05
+    - name: Nobility
+      power: 47.44
+      mood: 53
+    - name: ʿUlamāʾ
+      power: 12.07
+      mood: 50
+    - name: Burghers
+      power: 11.13
+      mood: 53
+    - name: Commoners
+      power: 4.17
+      mood: 61
+    - name: Dhimmī
+      power: 2.14
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 451536
+    Sephardi: 12336
+    Ligurian: 1207
+  faiths:
+    Sunni: 451536
+    Jewish: 12335
+    Catholic: 1207
+map:
+  ours:
+    - GRA
+  allies:
+    - MOR
+beats:
+  - id: 1337-04-03-death-fatima
+    'on': '1337-04-03'
+    kind: death
+    what: Death of Fāṭima bint al-Aḥmar, of old age, aged 76
+    who:
+      - fatima-bint-al-ahmar
+    threads:
+      - house
+    from:
+      - save
+    cite: checkpoint 1337-08-18
+    detail:
+      reason: old_age
+  - id: 1337-04-22-joins-tlemcen-war
+    'on': '1337-04-22'
+    kind: war
+    what: Granada answers Morocco's call against Tlemcen
+    threads:
+      - fate-of-tlemcen
+    from:
+      - save
+    cite: checkpoint 1337-08-18
+  - id: 1337-04-25-peace-tlemcen
+    'on': '1337-04-25'
+    kind: peace
+    what: 'The Fate of Tlemcen ends: Tlemcen becomes a fiefdom of Morocco'
+    threads:
+      - fate-of-tlemcen
+    from:
+      - save
+    cite: checkpoint 1337-08-18
+  - id: 1337-05-01-parias
+    'on': '1337-05-01'
+    kind: land
+    what: Parias to Castile begin
+    threads:
+      - strait
+    from:
+      - save
+    cite: checkpoint 1337-08-18
+    detail:
+      treaty: parias_payments
+      from: CAS
+  - id: 1337-05-01-strait-begins
+    'on': '1337-05-01'
+    kind: world
+    what: The Battle for the Strait begins
+    from:
+      - save
+    cite: checkpoint 1337-08-18
+    detail:
+      situation: battle_for_the_strait
+  - id: 1337-05-03-tunis-marriage
+    'on': '1337-05-03'
+    kind: marriage
+    what: A royal marriage binds Granada to the Ḥafṣids of Tunis
+    minor: true
+    from:
+      - save
+    cite: checkpoint 1337-08-18
+    detail:
+      with: TUN
+  - id: 1337-05-30-yusuf-takes-command
+    'on': '1337-05-30'
+    kind: office
+    what: Yūsuf takes command of the army himself
+    who:
+      - yusuf-i
+    from:
+      - save
+    cite: checkpoint 1337-11-16
+    detail:
+      role: GENERAL
+  - id: 1337-07-09-promote-sovereignty
+    'on': '1337-07-09'
+    kind: land
+    what: Yūsuf ibn Muḥammad set to promoting Granadan sovereignty
+    who:
+      - yusuf-ibn-muhammad
+    threads:
+      - strait
+    from:
+      - save
+    cite: checkpoint 1337-08-18
+    detail:
+      action: gra_promote_sovereignty
+  - id: 1337-07-31-morocco-war-on-castile
+    'on': '1337-07-31'
+    kind: war
+    what: Morocco declares war on Castile to reclaim Andalusia
+    threads:
+      - moroccan-castilian-war
+    from:
+      - save
+    cite: checkpoint 1337-08-18
+    detail:
+      casusBelli: cb_reclaim_andalucia
+      granada: can be called by Morocco
+tellings:
+  - id: 0738-01-02-the-marinid-war-upon-castile
+    'on': '1337-07-31'
+    title: Of the Spring of the Year 737, and the Marīnid War upon Qashtāla
+    verse: '3:54'
+    who:
+      - yusuf-i
+      - fatima-bint-al-ahmar
+      - faraj-ibn-ismail
+      - yusuf-ibn-muhammad
+      - ismail-i
+    where:
+      - gharnata
+      - tilimsan
+      - fas
+    covers:
+      - 1337-04-03-death-fatima
+      - 1337-04-22-joins-tlemcen-war
+      - 1337-04-25-peace-tlemcen
+      - 1337-05-01-strait-begins
+      - 1337-05-01-parias
+      - 1337-05-03-tunis-marriage
+      - 1337-07-09-promote-sovereignty
+      - 1337-07-31-morocco-war-on-castile
+    text: >
+      In the name of Allāh, the Merciful, the Compassionate. Here begins the account of the reign of our lord
+      the sultan Abū al-Ḥajjāj [Yūsuf](person:yusuf-i), son of [Ismāʿīl](person:ismail-i), may Allāh make his
+      days a garden and his banners a shade. He sat in the Alhambra above [Gharnāṭa](place:gharnata) in the
+      nineteenth year of his age, and the realm he held was eighteen towns and their districts, close to four
+      hundred and fifty thousand souls. It was a jewel set in a narrow ring, with Qashtāla pressing on the
+      north and the sea at its back.
+
+
+      On the first night of Ramaḍān there passed from this world the lady [Fāṭima bint
+      al-Aḥmar](person:fatima-bint-al-ahmar), daughter of the sultan Muḥammad al-Faqīh, mother of Ismāʿīl and
+      grandmother of our lord. She had seen seventy-six years and seven reigns, and she went out with the
+      crescent of the fast. *Every soul shall taste death*, but few are given so fitting an hour to taste it.
+
+
+      In that same month there came a call from [Fās](place:fas). The Marīnid sultan Abū al-Ḥasan ʿAlī, lord
+      of the Maghrib al-Aqṣā, had made war two years since upon the Banū ʿAbd al-Wād of
+      [Tilimsān](place:tilimsan), and now he called on his ally across the water. On the twentieth of Ramaḍān
+      our lord gave his answer and his word, and three days later [the war](war:fate-of-tlemcen) was ended.
+      Tilimsān bowed its head and became a fief of the Marīnids. Not one Andalusī fell, for the matter was
+      settled before our men had left their homes. Yet the court remembered that the word had been given, and
+      so did Fās.
+
+
+      With the end of Ramaḍān the old contest over the Strait took on a new and sharper form, the one the
+      clerks of the dīwān name its *battle*. On the first day of the contest the tribute owed to Qashtāla was
+      fixed anew as *parias*, gold weighed out for the infidel king Alfonso. On the morning of ʿĪd al-Fiṭr
+      itself, as the city broke its fast, a royal marriage joined our house to the Ḥafṣids of Tūnis, so that
+      the realm might stand upon more than one shore.
+
+
+      The dīwān was filled. Our lord set his elder brother [Faraj ibn Ismāʿīl](person:faraj-ibn-ismail), now
+      named heir, to strengthen the government. On the Day of ʿArafa he charged his cousin [Yūsuf ibn
+      Muḥammad](person:yusuf-ibn-muhammad), a man with a rare gift for embassies and plain gifts in all else,
+      with the defence of Granadan sovereignty.
+
+
+      Then, on the second day of Muḥarram in the year 738, with the new year barely begun, Abū al-Ḥasan
+      declared [war](war:moroccan-castilian-war) upon Qashtāla to reclaim al-Andalus, and Tilimsān marched
+      under his banner. The alliance gives Abū al-Ḥasan the right to summon our lord, and he has not yet done
+      so. Our lord is bound by tribute to the one side and by his word to the other. As this is written, the
+      sovereignty of Gharnāṭa stands a hair above the half, by the reckoning of the scribes, and the pull of
+      the two shores leans toward Qashtāla. Between the lion of Fās and the castle of Qashtāla lies a strait
+      one may cross in an afternoon, and Gharnāṭa stands upon its shore and waits. *And Allāh is the best of
+      planners.*
+    behind: >-
+      Drawn from the 18 August 1337 save. Granada isn't in the war: Morocco can call us in under the scripted
+      alliance, and has not done so. The Hijri coincidences (1 Ramaḍān, ʿĪd al-Fiṭr, ʿArafa, 2 Muḥarram) come
+      from the tabular calendar and may be a day or two out.

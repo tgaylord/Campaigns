@@ -1,0 +1,45 @@
+name: Aḥmad ibn Yūsuf
+arabic: أحمد بن يوسف
+house: Naṣrid
+tier: key
+born: '1396-01-27'
+died: '1449-02-18'
+father: yusuf-ibn-ismail
+roles:
+  - member of the dīwān (1412–1425)
+  - ruler of the Ṭāʾifa of Banbalūna (from 1428)
+traits:
+  - unmotivated
+  - well_advised
+  - ruthless
+stations:
+  - role: dīwān
+    from: '1412-09-01'
+    to: '1428-04-30'
+    source: save
+    approx: false
+  - role: general
+    from: '1428-05-11'
+    to: '1447-10-05'
+    source: save
+    approx: false
+  - role: general
+    from: '1448-01-01'
+    to: '1449-02-18'
+    source: save
+    approx: false
+note: >-
+  Son of Yūsuf ibn Ismāʿīl, ruler of the Ṭāʾifa of Banbalūna; one of the ablest men of the house. He took
+  Maryam bint Yūsuf's seat in the dīwān after her death in August 1412, set to integrating the new lands (save
+  of 24 October 1414). By 1420 he was married to two daughters of his cousin Aḥmad of Burtuqāl, Fāṭima and
+  Maryam, and had three children: Abū al-Ḥasan ʿAlī (16 February 1417), Muʾmina (13 August 1417) and Saʿd (27
+  July 1419). The game marks him unmotivated (save of 11 August 1420). He left the dīwān by December 1425, and
+  on 30 April 1428 succeeded his father as lord of Banbalūna (save of 25 May 1428). In the Tunisian war for
+  Palermo he led 385 men of Banbalūna against 4,200 Genoese at Grasse in Provence on 5 October 1447 and lost
+  all but 29; the save of that day marks him ruthless. His son Saʿd is married to Muʾmina, daughter of the
+  prince Aḥmad, and their daughter Fāṭima was born on 29 June 1447 (save of 5 October 1447). He took the field
+  again from January 1448 and died of camp fever on 18 February 1449, aged fifty-three; his son Abū al-Ḥasan
+  ʿAlī succeeded him in Banbalūna (save of 2 August 1449).
+game:
+  id: 16844936
+  name: Ahmad

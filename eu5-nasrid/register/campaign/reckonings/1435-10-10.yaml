@@ -1,0 +1,422 @@
+date: '1435-10-10'
+title: The Turn to the Sea
+source:
+  save: SP_ADU_1435_10_10 (compressed)
+  game: 1.4.7
+summary: >-
+  Three years after the crusade. The arsenals are finished and eight Andalusī war galleys have joined the
+  fifty caravels, and the realm's temper has moved far toward the sea. The Emperor has made the Hajj, given
+  the realm a Ṣūfī Shaykh al-Islām, and rules Burghush as regent for a boy. Stability 17.6, the highest yet,
+  prestige 90, income 396 against 305 spent, treasury 1,282. The realm is at peace, and the courts of the
+  world still rank it third. Estates estimated from the reading of 16 November 1428.
+realm:
+  towns: 193
+  souls: 2656165
+  treasury: 1282
+  income: 395.9
+  expenses: 305
+  stability: 17.6
+  prestige: 90
+  regiments: 9
+  ships: 58
+  manpower: 22894
+court:
+  ruler: muhammad-ibn-ismail-ibn-saad
+  heir: ismail-ibn-muhammad-ibn-ismail
+  capital: ishbiliyya
+  council:
+    - who: ismail-ibn-muhammad-ibn-ismail
+      seat: Promoting Andalusī culture
+    - who: ahmad-ibn-muhammad-ibn-ismail
+      seat: Changing the societal values
+    - who: umm-al-fath-bint-muhammad
+      seat: Encouraging migration
+    - who: bernarda-of-murcia
+      seat: Promoting the faith
+    - who: jadila-bint-saad-ibn-faraj
+      seat: Developing the provinces
+standing:
+  allies:
+    - Mamluks
+    - Morocco
+    - Tunis
+  subjects:
+    - Catalonia (taifa)
+    - Aragon (taifa)
+    - Taifa of Cuenca (taifa)
+    - Kingdom of Portugal (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+    - Taifa of Galicia (taifa)
+    - Cape Verde (colonial nation)
+  estates:
+    - name: Crown
+      power: 28.24
+    - name: Nobility
+      power: 17.67
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 12.48
+      mood: 43
+    - name: Burghers
+      power: 24.36
+      mood: 50
+    - name: Commoners
+      power: 2.92
+      mood: 50
+    - name: Dhimmī
+      power: 14.33
+      mood: 51
+peoples:
+  cultures:
+    Andalusi: 871210
+    Castilian: 684448
+    Portuguese: 502729
+    Sephardi: 198109
+    Catalan: 184063
+    Leonese: 167215
+  faiths:
+    Sunni: 1354492
+    Catholic: 1097015
+    Jewish: 185166
+    Guanche_religion: 18354
+    Orthodox: 504
+map:
+  ours:
+    - GRA
+  subjects:
+    - CAT
+    - ARA
+    - ABA60
+    - POR
+    - ABA42
+    - ABA49
+    - ABA55
+    - GLC
+    - AAA52
+  allies:
+    - MAM
+    - MOR
+    - TUN
+beats:
+  - id: 1432-08-30-death-of-berenguer-ramon
+    'on': '1432-08-30'
+    kind: death
+    what: >-
+      Berenguer Ramon of Catalonia, two months after his victory off Cape Mondego, is lost at sea. His son
+      Francesc succeeds him in the Ṭāʾifa of Catalonia
+    who:
+      - berenguer-ramon-de-montsoriu
+      - francesc-de-montsoriu
+    threads:
+      - voyages
+    from:
+      - save
+    cite: save of 10 October 1435
+    detail:
+      reason: died at sea (the game)
+      successor: >-
+        Francesc de Montsoriu (72/44/36), industrious and a lover of gardens; heir his son Berenguer Ramon,
+        born 9 August 1430
+  - id: 1432-10-16-death-of-aktai
+    'on': '1432-10-16'
+    kind: death
+    what: Aktai, Mamlūk sultan of Egypt since 1396 and the empire's ally, dies in camp. Jyral succeeds him
+    who:
+      - aktai-mamluk
+    from:
+      - save
+    cite: save of 10 October 1435
+    detail:
+      reason: died in camp (the game)
+      successor: Jyral, born 30 December 1401 (39/36/66)
+  - id: 1433-03-12-birth-abu-al-hasan-ali
+    'on': '1433-03-12'
+    kind: birth
+    what: A son, Abū al-Ḥasan ʿAlī, is born to Prince Aḥmad
+    who:
+      - ahmad-ibn-muhammad-ibn-ismail
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 10 October 1435
+    detail:
+      name: Abū al-Ḥasan ʿAlī
+  - id: 1433-03-19-the-emperor-leaves-the-admiralty
+    'on': '1433-03-19'
+    kind: office
+    what: The Emperor Muḥammad lays down the admiral's command he had held since 5 June 1411
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+    from:
+      - save
+    cite: save of 10 October 1435
+    detail:
+      held: admiral, 5 June 1411 to 19 March 1433 (8,636 days)
+  - id: 1433-04-24-birth-muhammad
+    'on': '1433-04-24'
+    kind: birth
+    what: A son, Muḥammad, is born to Umm al-Fatḥ, the Emperor's daughter
+    minor: true
+    who:
+      - umm-al-fath-bint-muhammad
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 10 October 1435
+    detail:
+      name: Muḥammad
+  - id: 1433-07-26-death-of-temur
+    'on': '1433-07-26'
+    kind: death
+    what: >-
+      Temür, Emperor of the Tīmūrids since 1360, dies on the march, aged ninety-seven. His empire of 746 towns
+      is left without a ruler of age in the save of 1435
+    who:
+      - temur
+    from:
+      - save
+    cite: save of 10 October 1435
+    detail:
+      reason: died on the march (the game)
+      hijri: 8 Dhū al-Ḥijja 836, the day the pilgrims go out to Minā
+  - id: 1433-08-14-birth-yusuf
+    'on': '1433-08-14'
+    kind: birth
+    what: A son, Yūsuf, is born to Prince Aḥmad
+    who:
+      - ahmad-ibn-muhammad-ibn-ismail
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 10 October 1435
+    detail:
+      name: Yūsuf
+  - id: 1433-09-16-birth-umm-al-fath
+    'on': '1433-09-16'
+    kind: birth
+    what: A daughter, Umm al-Fatḥ, is born to the heir Ismāʿīl
+    who:
+      - ismail-ibn-muhammad-ibn-ismail
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 10 October 1435
+    detail:
+      name: Umm al-Fatḥ
+  - id: 1433-11-23-the-emperors-hajj
+    'on': '1433-11-23'
+    kind: note
+    what: The Emperor Muḥammad returns from the Hajj with the honour of a ḥājj, the pilgrimage of Dhū al-Ḥijja 836
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+    from:
+      - save
+    cite: save of 10 October 1435
+    detail:
+      modifier: hajji_pilgrim from 23 November 1433 (9 Rabīʿ al-Thānī 837)
+  - id: 1434-03-31-death-of-khayr-al-din-khayyam
+    'on': '1434-03-31'
+    kind: death
+    what: >-
+      Khayr al-Dīn Khayyām, the Andalusī mercenary captain who led the crusaders' army in Tuscany, dies in
+      camp
+    who:
+      - khayr-al-din-khayyam
+    threads:
+      - europe
+    from:
+      - save
+    cite: save of 10 October 1435
+    detail:
+      reason: died in camp (the game)
+  - id: 1434-07-11-birth-lubna
+    'on': '1434-07-11'
+    kind: birth
+    what: A daughter, Lubnā, is born to the heir Ismāʿīl
+    who:
+      - ismail-ibn-muhammad-ibn-ismail
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 10 October 1435
+    detail:
+      name: Lubnā
+  - id: 1434-09-27-the-shaykh-al-islam
+    'on': '1434-09-27'
+    kind: office
+    what: >-
+      The empire is given a Shaykh al-Islām, the authority over all the muftīs: he writes fatwās, appoints the
+      regional muftīs and guards the legality of the Emperor's edicts. He is to be a Mālikī. Offered the most
+      loyal muftī, the most learned, or a famous Ṣūfī, the Emperor chooses the Ṣūfī
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+    from:
+      - save
+      - seen
+    cite: Trent's screenshot of 27 September 1434; save of 10 October 1435
+    detail:
+      event: The Šayḵ al-Islām
+      text: >-
+        Where the Qāḍī are the judges of the land, the Muftī are the ones to provide general legal
+        interpretation and doctrine. A Monarchy as large as ours, however, needs an overarching authority over
+        all Muftī. Traditionally this is the role of the Šayḵ al-Islām. The Šayḵ al-Islām will not only author
+        Fatwā himself, he will also be the one to appoint many of the regional Muftī in our realm, and
+        ultimately he is the person who will safeguard the legality of the Emperor's edicts. Naturally the man
+        we pick will belong to the Mālikī but there are a number of distinguished candidates to choose from
+        (the game's text)
+      options:
+        - Let us elect the foremost and most loyal Muftī to this position
+        - The most learned and steadfast candidate must be named Šayḵ al-Islām
+        - >-
+          A famous Sufi will give this office the dignity it deserves: mysticism +10 (then 34.04); the Emperor
+          gains a Sufi Šayḵ al-Islām until death, +0.10 monthly legitimacy
+      chosen: 'A famous Ṣūfī: the save of 10 October 1435 shows the Emperor''s sufi_modifier from 27 September 1434'
+      state: treasury 477, stability 14, legitimacy 100, prestige 94, 2.649 million people
+  - id: 1435-04-09-death-of-vukmir
+    'on': '1435-04-09'
+    kind: death
+    what: Vukmir Janković, the Pope's admiral in the crusade, dies at sea
+    who:
+      - vukmir-jankovic
+    threads:
+      - europe
+    from:
+      - save
+    cite: save of 10 October 1435
+    detail:
+      reason: died at sea (the game)
+  - id: 1435-06-01-death-of-prince-yusuf
+    'on': '1435-06-01'
+    kind: death
+    what: >-
+      Prince Yūsuf ibn Saʿd, son of the first Emperor and great-uncle of the princes, dies of old age at
+      sixty-three, after thirty years in the dīwān
+    who:
+      - yusuf-ibn-saad
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 10 October 1435
+    detail:
+      reason: old age
+      born: '1371-10-15'
+  - id: 1435-10-10-the-turn-to-the-sea
+    'on': '1435-10-10'
+    kind: realm
+    what: >-
+      The Emperor's turn to the sea: all seven arsenals are finished, eight Andalusī war galleys have joined
+      the fifty caravels of the fleet, and the realm's temper has swung far from the land toward the sea
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+    where:
+      - ishbiliyya
+      - malaqa
+      - al-mariyya
+      - al-ushbuna
+      - balansiyya
+      - mursiyya
+    threads:
+      - towns
+    from:
+      - save
+      - told
+    cite: Trent's account; saves of 27 July 1432 and 10 October 1435
+    detail:
+      landVsNaval:
+        '1432-07-27': -26.4
+        '1435-10-10': -10.2
+        note: negative is land, positive is sea
+      arsenals: >-
+        7 of the mod's Dar al-Sina'a, all complete (Seville, Málaga, Almería, Lisbon, Valencia, Cartagena,
+        Murcia)
+      fleet: 50 Iberian caravels and 8 Andalusī war galleys (58 ships), against 50 caravels in July 1432
+      guilds: a new naval supplies guild at Cáceres, beside those of Málaga, Almería, Lisbon, Murcia and Valencia
+      exploration: a sea exploration being fitted out at Seville
+      newTown: Hipalan (Ipalán, La Gomera) in the Canaries, settled between July 1432 and October 1435
+      economy: income 395.9 against expenses 305.0 a month; treasury 1,282, no debt; stability 17.6
+tellings:
+  - id: 0838-11-04-of-the-emperors-pilgrimage-and-the-sufi-shaykh-al-islam
+    'on': '1435-06-01'
+    title: Of the Emperor's Pilgrimage, and the Ṣūfī Shaykh al-Islām
+    verse: 2:197
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - abu-hammu-rahhu
+      - khalid-ibn-abi-hammu
+      - temur
+      - aktai-mamluk
+      - yusuf-ibn-saad
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+      - umm-al-fath-bint-muhammad
+      - yusuf-i
+      - ahmad-ibn-ismail-ibn-muhammad
+      - abu-al-hasan-ali-ibn-ahmad-ibn-muhammad
+    where:
+      - ishbiliyya
+    covers:
+      - 1431-01-21-death-of-abu-hammu
+      - 1432-10-16-death-of-aktai
+      - 1433-03-19-the-emperor-leaves-the-admiralty
+      - 1433-07-26-death-of-temur
+      - 1433-11-23-the-emperors-hajj
+      - 1434-09-27-the-shaykh-al-islam
+      - 1435-06-01-death-of-prince-yusuf
+      - 1432-07-17-birth-ahmad
+      - 1433-03-12-birth-abu-al-hasan-ali
+      - 1433-04-24-birth-muhammad
+    text: >
+      Two months after the Peace of Ṣafar gave him Santander and the Cantabrian shore, [Abū
+      Ḥammū](person:abu-hammu-rahhu), lord of the Ṭāʾifa of Burghush, died suddenly in Jumādā al-Ūlā 834. The
+      court said it was a fever of the chest, and no one in the dīwān asked further. His heir
+      [Khālid](person:khalid-ibn-abi-hammu) was nine years old. The tutors of Burghush said he was the
+      cleverest child they had ever taught, but a boy of nine could not rule a frontier ṭāʾifa with the last
+      king of Qashtāla living at his court. So the Emperor [Muḥammad](person:muhammad-ibn-ismail-ibn-saad)
+      took the regency of Burghush himself, to hold until the boy turned sixteen.
+
+
+      In the spring of 836 the Emperor laid down the command of the fleet, which he had held for twenty-two
+      years. In the summer he went on the Hajj. He was the first ruler of the house of Naṣr to make the
+      pilgrimage since the Sultan [Yūsuf I](person:yusuf-i), eighty years before, and he went by sea, as he
+      did everything. The Mamlūk sultan [Aktai](person:aktai-mamluk), who had been the empire's ally for
+      thirty-six years, had died in camp the autumn before, and it was his successor Jyral who received the
+      Emperor of al-Andalus on the road to the Holy Places. On 8 Dhū al-Ḥijja 836, the day the pilgrims went
+      out from Makka to Minā, [Temür](person:temur), master of half of Asia, died on the march in the far east
+      of his empire at the age of ninety-seven. The news reached the pilgrims of al-Andalus on their way home.
+      The Emperor returned to Ishbīliya in Rabīʿ al-Thānī 837 with the title of ḥājj, and the people of the
+      capital came out to the river to meet his ship.
+
+
+      He came home a changed man in one respect. He had always been worldly, and he still was. But at ʿArafa
+      he had stood among the Ṣūfīs of the East, and he came back wanting their kind of faith at the head of
+      the faith of his own realm. When the dīwān told him in Ṣafar 838 that an empire so large needed a Shaykh
+      al-Islām, a single authority over all the muftīs of the realm to write fatwās, appoint the muftīs of the
+      provinces and judge whether the Emperor's own edicts were lawful, it offered him three kinds of
+      candidate: the most loyal of the muftīs, the most learned, or a famous Ṣūfī. The ʿulamāʾ expected him to
+      choose loyalty, as his father would have. He chose the Ṣūfī. He would be a Mālikī like every jurist of
+      al-Andalus, but the court noticed that the Emperor's legitimacy in the eyes of the people rose a little
+      every month he sat in the office, and that the ascetics and the brotherhoods of the realm, who had never
+      cared much for the house of Naṣr, began to pray for it.
+
+
+      The house was growing again. Since the year of the Emperor's accession, nine grandchildren had been born
+      to him. The heir [Ismāʿīl](person:ismail-ibn-muhammad-ibn-ismail) had a son,
+      [Aḥmad](person:ahmad-ibn-ismail-ibn-muhammad), and three daughters, Prince
+      [Aḥmad](person:ahmad-ibn-muhammad-ibn-ismail) a daughter and two sons, one of them named [Abū al-Ḥasan
+      ʿAlī](person:abu-al-hasan-ali-ibn-ahmad-ibn-muhammad) after the general of Shant Yāqub, and the
+      Emperor's daughter [Umm al-Fatḥ](person:umm-al-fath-bint-muhammad) a daughter and a son. The house was
+      also losing its oldest member. On 4 Dhū al-Qaʿda 838 Prince [Yūsuf](person:yusuf-ibn-saad), a son of the
+      first Emperor, died of old age at sixty-three, thirty years after he had first taken his seat in the
+      dīwān. He had settled the new lands of two Emperors and spread the tongue of al-Andalus through them.
+
+
+      *Hajj is in the well-known months. And take provisions, but indeed, the best provision is the fear of
+      Allāh. So fear Me, O you of understanding.*

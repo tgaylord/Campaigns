@@ -1,0 +1,273 @@
+date: '1368-10-24'
+title: Fās declares war
+source:
+  save: SP_GRA_1368_10_24 (compressed)
+  game: 1.4.5
+summary: >-
+  Morocco declares war to demand Granada's submission, with Tlemcen, Tafilalt, Touat and the puppet Kingdom of
+  Sevilla. Granada has its three ṭāʾifas, and the Mamlūks and their vassals are allies again since January
+  1367. Sunnīs outnumber Catholics again, 317,000 to 305,000. Castile has closed its markets and guaranteed
+  al-Gharb's independence. Shares of power are estimated from the 1 June 1349 reading.
+realm:
+  towns: 49
+  souls: 665273
+  treasury: 129
+  income: 73
+  expenses: 79.2
+  stability: 32.2
+  prestige: 36
+  regiments: 5
+  ships: 5
+  manpower: 2865
+court:
+  ruler: saad-ibn-yusuf
+  heir: ismail-ibn-saad
+  capital: gharnata
+  council:
+    - who: dua-marinid
+      seat: Promoting Andalusī culture
+    - who: maryam-bint-ismail
+      seat: Integrating the new lands
+standing:
+  wars:
+    - second-marinid-submission-war
+  allies:
+    - Mamluks
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+    - Taifa of the Algarve (taifa)
+  estates:
+    - name: Crown
+      power: 35.47
+    - name: Nobility
+      power: 26.23
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 6.38
+      mood: 50
+    - name: Burghers
+      power: 9.89
+      mood: 50
+    - name: Commoners
+      power: 4.05
+      mood: 51
+    - name: Dhimmī
+      power: 17.98
+      mood: 64
+peoples:
+  cultures:
+    Andalusi: 371613
+    Castilian: 246688
+    Sephardi: 38604
+    Mustaarabi: 3736
+    Sardinian: 2046
+    Ligurian: 599
+  faiths:
+    Sunni: 316987
+    Catholic: 305346
+    Jewish: 42191
+    Bori_Religion: 542
+    Nyama: 208
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+    - ALV
+  allies:
+    - MAM
+beats:
+  - id: 1368-07-moroccan-hostility
+    'on': '1368-07-01'
+    kind: note
+    what: >-
+      The Marīnids grow hostile. They break the trade agreements, insult the sultan's envoys, and murmur about
+      the claims of their puppet, the 'Kingdom of Sevilla'. If they mean to throw themselves against our
+      shores again, the court will remind them what happened last time, with interest
+    who:
+      - saad-ibn-yusuf
+    threads:
+      - europe
+    from:
+      - save
+      - told
+    cite: Trent's account; forces from the autosave of 1 July 1368
+    detail:
+      forces:
+        note: 'men under arms: regulars plus raised levies'
+        GRA:
+          men: 3300
+          regulars: 3300
+          levies: 0
+          ships: 5
+        MOR:
+          men: 800
+          regulars: 800
+          levies: 0
+          ships: 29
+        TFL:
+          men: 550
+          ships: 0
+        MAM:
+          men: 3000
+          ships: 4
+  - id: 1368-07-26-castile-markets
+    'on': '1368-07-26'
+    kind: world
+    what: Castile and Granada close their markets to each other
+    from:
+      - save
+    cite: save of 24 October 1368
+    detail:
+      between:
+        - CAS
+        - GRA
+      relation: deny_market_access
+  - id: 1368-07-30-spies-in-fas
+    'on': '1368-07-30'
+    kind: world
+    what: The sultan's agents begin building a spy network in Morocco
+    who:
+      - saad-ibn-yusuf
+    from:
+      - save
+    cite: save of 24 October 1368
+    detail:
+      target: MOR
+  - id: 1368-09-26-castile-guarantees-al-gharb
+    'on': '1368-09-26'
+    kind: world
+    what: >-
+      Castile meddles in the west. It guarantees the independence of the Ṭāʾifa of al-Gharb, Granada's vassal,
+      and the next day Gharnāṭa answers by backing the loyalists there
+    who:
+      - rodrigo-of-silves
+    from:
+      - save
+    cite: save of 24 October 1368
+    detail:
+      castile: guarantee_vassal_independence
+      granada: support_loyalists
+      target: ALV
+  - id: 1368-10-24-marinid-war
+    'on': '1368-10-24'
+    kind: war
+    what: >-
+      Fās declares war again to demand Gharnāṭa's submission, with Tilimsān, Tafilalt, Touat and its puppet
+      'Kingdom of Sevilla'. Granada's three ṭāʾifas stand with it, and so do the Mamlūk sultan and all his
+      vassals from Mecca to the Western Oases
+    who:
+      - saad-ibn-yusuf
+    threads:
+      - second-marinid-submission-war
+    from:
+      - save
+      - told
+    cite: save of 24 October 1368; Trent's account
+    detail:
+      cb: cb_demand_andalusi_submission
+      attackers:
+        - MOR
+        - TLE
+        - TFL
+        - TAT
+        - SEV
+      defenders:
+        - GRA
+        - ALV
+        - VAL
+        - MUC
+        - MAM
+        - Dulkadirids
+        - Mecca
+        - Medina
+        - Al ʿAlī
+        - Al Mira
+        - Döger
+        - Āl Faḍl
+        - Barqa
+        - Banu Kanz
+        - Suakin
+        - Western Oases
+tellings:
+  - id: 0770-03-11-the-marinids-on-the-northern-shore
+    'on': '1368-10-24'
+    title: Of the Marīnids on the Northern Shore, and the Second Demand of Fās
+    verse: '22:39'
+    who:
+      - saad-ibn-yusuf
+      - abu-inan-faris
+      - rodrigo-of-silves
+      - aiman-mamluk
+    where:
+      - gharnata
+      - fas
+      - runda
+      - marballa
+      - qadis
+      - sharish
+      - jabal-tariq
+      - tarifa
+      - al-jazira-al-khadra
+      - ishbiliyya
+      - ukshunuba
+      - tilimsan
+    covers:
+      - 1365-08-31-moroccan-peace-castile
+      - 1366-01-10-marinid-sevilla
+      - 1366-05-12-castile-courts
+      - 1367-01-30-mamluk-alliance
+      - 1367-08-01-moroccan-claim
+      - 1368-05-10-moroccan-insult
+      - 1368-07-moroccan-hostility
+      - 1368-07-26-castile-markets
+      - 1368-07-30-spies-in-fas
+      - 1368-09-26-castile-guarantees-al-gharb
+      - 1368-10-24-marinid-war
+    text: >
+      While [Gharnāṭa](place:gharnata) was winning its freedom, [Fās](place:fas) was winning something else.
+      On the thirteenth of Dhū al-Ḥijja 766 the Marīnids made their own peace with Qashtāla and took from it
+      the whole northern shore of the Strait. That was eleven towns, from [Runda](place:runda) in its
+      mountains and [Marballa](place:marballa) on the sea to [Qādis](place:qadis), [Sharīsh](place:sharish),
+      [Jabal Ṭāriq](place:jabal-tariq), [Ṭarīfa](place:tarifa) and [al-Jazīra
+      al-Khaḍrāʾ](place:al-jazira-al-khadra). These were the very gates through which Ṭāriq had come into
+      al-Andalus. At court men said it was better that the shore should be held by Muslims than by Christians.
+      The wiser ones answered that it was better still that it should not be held by Fās.
+
+
+      Fās soon showed what it intended. In Rabīʿ al-Thānī 767 the Marīnid sultan, [Abū ʿInān
+      Fāris](person:abu-inan-faris), made nine of the eleven towns into a fief under a lord of his own. He
+      gave it the name the rebels had used thirteen years before, the Kingdom of Sevilla.
+      [Ishbīliya](place:ishbiliyya) itself was Gharnāṭa's and had been since 749, so the kingdom was named for
+      a city it did not hold, and anyone could see which city it meant to claim.
+
+
+      Peace lasted two years, and they were not quiet ones. Qashtāla, beaten, began to court Gharnāṭa with
+      sweet words. In Ṣafar 768 the alliance with Cairo lapsed. [Saʿd](person:saad-ibn-yusuf)'s wife
+      [Aiman](person:aiman-mamluk) wrote to her father, and in Jumādā al-Ūlā the sultan renewed it. Then Fās
+      took up its old demand again. In Dhū al-Ḥijja 768 the dīwān learned that the Marīnid sultan claimed the
+      same right he had used in 761, to demand Gharnāṭa's submission as his subject.
+
+
+      The year 769 was worse. The Marīnids broke the trade agreements. Their envoys spoke of the claims of the
+      Kingdom of Sevilla as if it were a real crown and not a garrison. On the twenty-first of Ramaḍān they
+      insulted the sultan's ambassadors before the whole court of Fās. That gave Gharnāṭa a just cause of its
+      own, and the sultan put it away for later. In the month of the pilgrimage Qashtāla closed its markets to
+      Gharnāṭa's merchants. In Ṣafar 770 it declared itself guarantor of the independence of al-Gharb,
+      Gharnāṭa's newest ṭāʾifa, as though [Rodrigo of Silves](person:rodrigo-of-silves) needed a Christian
+      king to protect him from his own lord. The next day the sultan's agents were in
+      [Ukshūnuba](place:ukshunuba) buying up the loyalty of al-Gharb's notables. Other agents had been in Fās
+      since Dhū al-Ḥijja.
+
+
+      On the eleventh of Rabīʿ al-Awwal 770 Fās declared war, as everyone had known it would.
+      [Tilimsān](place:tilimsan), Tāfīlālt, Tuwāt and the puppet kingdom marched with it. Gharnāṭa had its
+      three ṭāʾifas. It also had something it had never had before: the sultan of Egypt, and with him every
+      vassal of the Mamlūk house from Makka and Madīna to Barqa and the Western Oases. Saʿd heard the
+      declaration read and is said to have answered: *Let them come, and let them remember Sharīsh.*
+
+
+      *Permission to fight has been given to those who are fought against, because they were wronged. And
+      indeed, Allāh is competent to give them victory.*

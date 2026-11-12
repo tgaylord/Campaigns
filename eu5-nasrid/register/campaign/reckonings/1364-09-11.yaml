@@ -1,0 +1,546 @@
+date: '1364-09-11'
+title: Zafra and Lisbon
+source:
+  save: SP_GRA_1364_09_11 (compressed)
+  game: 1.4.5
+summary: >-
+  Saʿd, of age since 18 January 1364, rules with two wives, Aiman the Mamlūk and Duʿāʾ the Marīnid. The Jamāʿa
+  of May 1364 restored the dhimmī tax to win back the ʿulamāʾ. In the War of Independence his army broke the
+  joined Portuguese and Aragonese at Zafra (3 August) and destroyed their remnants before Lisbon (10–11
+  September). Andalusīs are now 54% of the realm to the Castilians' 40%. Shares of power are estimated from
+  the 1 June 1349 reading.
+realm:
+  towns: 43
+  souls: 628061
+  treasury: 522
+  income: 54.8
+  expenses: 93.5
+  debt: 53
+  stability: 25.1
+  prestige: 48
+  regiments: 14
+  ships: 5
+  manpower: 2278
+court:
+  ruler: saad-ibn-yusuf
+  heir: ismail-ibn-yusuf
+  capital: gharnata
+  council:
+    - who: dua-marinid
+      seat: Promoting Andalusī culture
+    - who: khalid-ibn-yahya
+      seat: Promoting Andalusī culture
+standing:
+  wars:
+    - war-of-independence
+    - mamluk-cilician-war
+  allies:
+    - Mamluks
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+  estates:
+    - name: Crown
+      power: 36.99
+    - name: Nobility
+      power: 23.77
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 6.48
+      mood: 47
+    - name: Burghers
+      power: 11.06
+      mood: 50
+    - name: Commoners
+      power: 3.86
+      mood: 51
+    - name: Dhimmī
+      power: 17.83
+      mood: 66
+peoples:
+  cultures:
+    Andalusi: 341323
+    Castilian: 248208
+    Sephardi: 30229
+    Mustaarabi: 3949
+    Sardinian: 1715
+    Catalan: 683
+  faiths:
+    Sunni: 302136
+    Catholic: 291135
+    Jewish: 34011
+    Bori_Religion: 559
+    Nyama: 220
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+  allies:
+    - MAM
+beats:
+  - id: 1364-01-18-death-nasr
+    'on': '1364-01-18'
+    kind: death
+    what: >-
+      Naṣr al-Istijjī, regent for barely half a year, dies on the very day the young sultan comes of age. The
+      court gives out that it was 'sickness'; the game records a hunting accident
+    who:
+      - nasr-al-istijji
+    from:
+      - save
+      - told
+    cite: save of 11 September 1364 (died 18 January 1364, hunting accident); Trent's account ('sickness')
+    detail:
+      cause: hunting_accident
+      causeGiven: sickness
+  - id: 1364-01-18-saad-of-age
+    'on': '1364-01-18'
+    kind: crown
+    what: >-
+      Saʿd ibn Yūsuf comes of age at sixteen and takes the government into his own hands. The regency of Naṣr
+      al-Istijjī ends
+    who:
+      - saad-ibn-yusuf
+      - nasr-al-istijji
+    threads:
+      - house
+    from:
+      - told
+    cite: Trent's account
+    detail:
+      regencyEnds: true
+      regent: nasr-al-istijji
+  - id: 1364-01-saad-marries-dua
+    'on': '1364-01-25'
+    kind: marriage
+    what: >-
+      Sultan Saʿd takes a second wife: Duʿāʾ of the Marīnid house, twice widowed, his father's widow and
+      minister. He comes to the throne with two wives, Aiman the Mamlūk and Duʿāʾ the Marīnid
+    who:
+      - saad-ibn-yusuf
+      - dua-marinid
+      - aiman-mamluk
+    threads:
+      - house
+    from:
+      - told
+    cite: Trent's account (after Naṣr's death on 18 January 1364; exact date not given)
+    detail:
+      with: MOR
+      wives:
+        - aiman-mamluk
+        - dua-marinid
+  - id: 1364-03-01-battle-canete
+    'on': '1364-03-01'
+    kind: battle
+    what: >-
+      A Portuguese army of 4,200 falls on the Valencian host at Cañete and breaks it: 1,100 of the 2,400 men
+      of Balansiyya are lost, for 300 Portuguese
+    who:
+      - joan-doriola
+    threads:
+      - war-of-independence
+    from:
+      - save
+    cite: save of 11 September 1364
+    detail:
+      result: defeat
+      naval: false
+      ours:
+        Valencia: 2365
+      oursTotal: 2365
+      oursLost: 1129
+      theirs:
+        Portugal: 4240
+      theirsTotal: 4240
+      theirsLost: 296
+      location: Cañete
+      side: Valencia defending
+  - id: 1364-04-05-battle-castellon
+    'on': '1364-04-05'
+    kind: battle
+    what: >-
+      The ṭāʾifas of Balansiyya and Mursiyya attack the joined armies of Portugal and Aragon at Castellón de
+      la Plana and are thrown back: 2,800 against 7,600, and 1,200 lost for 340
+    who:
+      - juan-manuel-enriquez
+    threads:
+      - war-of-independence
+    from:
+      - save
+    cite: save of 11 September 1364
+    detail:
+      result: defeat
+      naval: false
+      ours:
+        Murcia: 1538
+        Valencia: 1235
+      oursTotal: 2773
+      oursLost: 1189
+      theirs:
+        Portugal: 4065
+        Aragon: 3513
+      theirsTotal: 7578
+      theirsLost: 337
+      location: Castellón de la Plana
+  - id: 1364-05-19-jamaa-summoned
+    'on': '1364-05-19'
+    kind: realm
+    what: >-
+      Saʿd summons the Jamāʿa and brings in reforms for the ʿulamāʾ. The tax on the dhimmīs, remitted since
+      1352, is collected again, and a new campaign of conversion begins. It is enough to keep the clergy from
+      mutiny while the war goes on
+    who:
+      - saad-ibn-yusuf
+    threads:
+      - war-of-independence
+      - estates
+    from:
+      - told
+    cite: Trent's account (by 19 May 1364)
+    detail:
+      reforms:
+        - dhimmi tax restored
+        - conversion campaign
+      ends: 1352-04-jizya-remitted
+      estate: clergy
+  - id: 1364-05-19-ulama-displeased
+    'on': '1364-05-19'
+    kind: realm
+    what: >-
+      The ʿulamāʾ are displeased with the young sultan: their satisfaction stands at 37% in the middle of the
+      war
+    who:
+      - saad-ibn-yusuf
+    threads:
+      - war-of-independence
+      - estates
+    from:
+      - told
+    cite: Trent's account (19 May 1364)
+    detail:
+      estate: clergy
+      satisfaction: 37
+  - id: 1364-06-18-mamluk-war
+    'on': '1364-06-18'
+    kind: war
+    what: Granada is drawn in as an ally when the Mamlūks go to war with Cilicia
+    who:
+      - saad-ibn-yusuf
+    threads:
+      - mamluk-cilician-war
+    from:
+      - save
+    cite: save of 11 September 1364
+    detail:
+      leader: MAM
+      target: CIL
+      cb: cb_parliament_conquer_province
+  - id: 1364-08-03-battle-zafra
+    'on': '1364-08-03'
+    kind: battle
+    what: >-
+      After chasing it halfway across Iberia, the Granadan army under Murād catches the joined host of
+      Portugal and Aragon at Zafra, in Castilian land held by the Marīnids, and breaks it: 9,800 against
+      6,750, and 3,350 of theirs lost for 2,200 of ours
+    who:
+      - murad
+    threads:
+      - war-of-independence
+    from:
+      - save
+    cite: save of 11 September 1364
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 8583
+        Valencia: 1235
+      oursTotal: 9818
+      oursLost: 2197
+      theirs:
+        Portugal: 3721
+        Aragon: 3033
+      theirsTotal: 6754
+      theirsLost: 3355
+      location: Zafra
+      commanderTheirs: Anthony of Portugal (86/46/62)
+  - id: 1364-09-10-battle-lisbon
+    'on': '1364-09-10'
+    kind: battle
+    what: >-
+      Before the walls of Lisbon the Granadan army destroys the Portuguese remnant of Zafra: all 1,620 killed
+      or taken, for none of ours
+    who:
+      - murad
+    threads:
+      - war-of-independence
+    from:
+      - save
+    cite: save of 11 September 1364
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 6612
+        Valencia: 1009
+      oursTotal: 7621
+      oursLost: 0
+      theirs:
+        Portugal: 1623
+      theirsTotal: 1623
+      theirsLost: 1623
+      location: Lisbon
+      theirsTaken: 319
+  - id: 1364-09-11-andalusi-majority
+    'on': '1364-09-11'
+    kind: note
+    what: >-
+      The realm's people are quickly going back to their Andalusī roots. Andalusīs are now 54% and Castilians
+      40%, where in March 1359 the two had been nearly equal. In faith the realm is still split, 302,000 Sunnī
+      to 291,000 Catholic
+    who:
+      - saad-ibn-yusuf
+    from:
+      - save
+      - told
+    cite: save of 11 September 1364; Trent's account
+    detail:
+      cultures:
+        '1359-03-15':
+          Andalusi: 292304
+          Castilian: 289985
+        '1363-08-02':
+          Andalusi: 325449
+          Castilian: 263999
+        '1364-09-11':
+          Andalusi: 341323
+          Castilian: 248208
+      religions:
+        Sunni: 302136
+        Catholic: 291135
+  - id: 1364-09-11-battle-lisbon
+    'on': '1364-09-11'
+    kind: battle
+    what: >-
+      The next day, at Lisbon again, the Aragonese remnant is destroyed in its turn: 1,770 killed or taken,
+      for none of ours
+    who:
+      - murad
+    threads:
+      - war-of-independence
+    from:
+      - save
+    cite: save of 11 September 1364
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 6932
+        Valencia: 1009
+      oursTotal: 7941
+      oursLost: 0
+      theirs:
+        Aragon: 1772
+      theirsTotal: 1772
+      theirsLost: 1772
+      location: Lisbon
+      theirsTaken: 85
+      commanderTheirs: Arnold of Aragon
+  - id: 1364-09-11-peace-portugal
+    'on': '1364-09-11'
+    kind: peace
+    what: >-
+      Portugal is dealt with first. On the day its last army is destroyed before Lisbon it makes a separate
+      peace and gives up its south: thirteen towns of the Algarve and the lower Alentejo, from Silves and Faro
+      to Beja and Mértola, with 83,000 people. The court means to make them a new vassal state once the war is
+      won. Portugal is also to pay reparations for ten years
+    who:
+      - saad-ibn-yusuf
+    threads:
+      - war-of-independence
+    from:
+      - save
+      - told
+    cite: >-
+      autosave of 1 July 1365 (Portugal left the war on 11 September 1364; the thirteen towns are Granada's);
+      Trent's account
+    detail:
+      with: POR
+      ceded:
+        - Silves
+        - Faro
+        - Tavira
+        - Lagos
+        - Beja
+        - Mértola
+        - Serpa
+        - Moura
+        - Ourique
+        - Odemira
+        - Alvalade
+        - Alvito
+        - Sines
+      population: 82741
+      plan: release as a vassal after the war
+      reparations:
+        from: '1364-09-11'
+        to: '1374-09-11'
+  - id: 1364-09-11-state
+    'on': '1364-09-11'
+    kind: realm
+    what: >-
+      The treasury holds 522, but the deficit remains (income 55 against expenses 94 a month). The ʿulamāʾ
+      stand at 47% and the dhimmīs, taxed again, at 66%, down from 84%
+    threads:
+      - war-of-independence
+      - estates
+    from:
+      - save
+    cite: save of 11 September 1364
+    detail:
+      treasury: 522
+      income: 54.8
+      expenses: 93.5
+      clergy: 47
+      dhimmi: 66
+tellings:
+  - id: 0765-08-16-the-regent-who-did-not-last
+    'on': '1364-05-19'
+    title: Of the Regent Who Did Not Last, and the Sultan's Second Wife
+    verse: '4:28'
+    who:
+      - saad-ibn-yusuf
+      - nasr-al-istijji
+      - dua-marinid
+      - aiman-mamluk
+      - yusuf-i
+      - sayyida-of-fezzan
+    where:
+      - gharnata
+      - ishbiliyya
+      - qurtuba
+      - balansiyya
+    covers:
+      - 1364-01-18-saad-of-age
+      - 1364-01-18-death-nasr
+      - 1364-01-saad-marries-dua
+      - 1364-03-01-battle-canete
+      - 1364-04-05-battle-castellon
+      - 1364-05-19-ulama-displeased
+      - 1364-05-19-jamaa-summoned
+    text: >
+      On the twelfth of Rabīʿ al-Thānī in the year 765 our lord [Saʿd](person:saad-ibn-yusuf) turned sixteen
+      and took the government of the realm into his own hands. The regency of [Naṣr
+      al-Istijjī](person:nasr-al-istijji) ended that morning, and so, by evening, did Naṣr. The court gave out
+      that he had died of a sickness. The huntsmen who had ridden out with him told a different story, of a
+      fall in the hills and a horse that came home without its rider, and were told to stop telling it. The
+      chronicler writes down both and judges neither. Allāh knows best.
+
+
+      Within days the young sultan made his choice of a second wife. He had one already,
+      [Aiman](person:aiman-mamluk), daughter of the Mamlūk sultan, promised to him when he was three and
+      married to him before his majority. But a sultan of al-Andalus needs the Maghrib as well as Egypt, and
+      there was a Marīnid princess in his own palace. So Saʿd married [Duʿāʾ](person:dua-marinid): twice
+      widowed, ten years his elder, the most capable mind in the dīwān, and the widow of his father.
+
+
+      The ʿulamāʾ were outraged, and they were right to be. The Book is plain on it: *do not marry those women
+      whom your fathers married.* The jurists of [Gharnāṭa](place:gharnata) said so from the pulpit of the
+      great mosque, and the jurists of [Qurṭuba](place:qurtuba) said it more loudly still. Men who had loved
+      [al-Ḥājj Yūsuf](person:yusuf-i) said that his son had married his stepmother before the earth on his
+      grave had settled. In the souks they said worse: that it was Duʿāʾ, not the boy, who had arranged it,
+      and that a regent's fall from his horse had cleared the way for her. No one took the marriage harder
+      than the sultan's mother. [Sayyida](person:sayyida-of-fezzan) had shared a husband with Duʿāʾ for nine
+      years, and now she was asked to share a son. She did not speak against the match in public. She did not
+      speak to Duʿāʾ in private for a year. [Aiman](person:aiman-mamluk), who had been Saʿd's only wife, found
+      the cleverest woman in the dīwān sharing her husband's bed and his ear, and she wrote to Cairo. By the
+      middle of Shaʿbān the ʿulamāʾ were nearer to open defiance of the throne than they had been in a
+      generation. In the middle of a war that was a danger, not just a scandal.
+
+
+      Meanwhile the war went badly in the east. On the twenty-sixth of Jumādā al-Ūlā the Portuguese, whom the
+      dead sultan had marched west to find, appeared instead at Cañete and broke the host of
+      [Balansiyya](place:balansiyya). In Rajab the ṭāʾifas attacked the joined armies of Portugal and Arghūn
+      at Castellón and were thrown back.
+
+
+      The young sultan proved his gifts first in the council, not on the field. He summoned the Jamāʿa and
+      gave the ʿulamāʾ what they had wanted for twelve years. The tax on the dhimmīs, remitted since 753 to
+      quiet the Castilians of the valley, would be collected again. A new campaign of conversion would be
+      preached in Qurṭuba and [Ishbīliya](place:ishbiliyya) and every town the crown held. The jurists took
+      the bargain. They did not forgive the marriage, but they stopped preaching against it. The Christians of
+      the valley would pay for the sultan's peace with his clergy, as subjects so often pay for their rulers'
+      sins. The old men of the court noted that a prince of sixteen had struck his first bargain with the
+      ʿulamāʾ in the open, before the Jamāʿa, with the price written into the registers for any man to read.
+      They noted too whose money paid it.
+
+
+      *Allāh wants to lighten for you your difficulties; and mankind was created weak.*
+  - id: 0765-12-13-zafra-and-the-walls-of-lisbon
+    'on': '1364-09-11'
+    title: Of Zafra and the Walls of al-Ushbūna, and the Peace with Portugal
+    verse: '8:17'
+    who:
+      - saad-ibn-yusuf
+      - murad
+    where:
+      - gharnata
+      - al-ushbuna
+      - balansiyya
+      - shilb
+      - ukshunuba
+      - baja
+      - mursiyya
+    covers:
+      - 1364-08-03-battle-zafra
+      - 1364-09-10-battle-lisbon
+      - 1364-09-11-battle-lisbon
+      - 1364-09-11-peace-portugal
+      - 1364-09-11-state
+    text: >
+      Al-Ḥājj Yūsuf had marched to knock Portugal out of the war, and his son [Saʿd](person:saad-ibn-yusuf)
+      kept to the plan. In the summer of 765 the army of [Gharnāṭa](place:gharnata) went deep into Portugal
+      and laid siege to [al-Ushbūna](place:al-ushbuna) itself. But the Portuguese army was not there. It had
+      gone east to join the host of Arghūn, and together they were burning their way through the lands of the
+      ṭāʾifas. So the army left a screen before the walls and marched east, under a general named
+      [Murād](person:murad). He was a quiet man who kept his own company, and he planned every attack as
+      carefully as a merchant counts his coin. He chased the joined host halfway across Iberia.
+
+
+      He caught them on the fourth of Dhū al-Qaʿda at Zafra. It was Castilian land that the Marīnids had
+      taken, so that Muslims of the far shore held the field on which Muslims of this one fought. Murād had
+      nine thousand eight hundred men, the sultan's army with a contingent of [Balansiyya](place:balansiyya).
+      The enemy had six thousand seven hundred and fifty, Portuguese and Aragonese under one command. The
+      Portuguese commander was a capable man, and the Christian line held through the morning. In the
+      afternoon Murād sent the jinetes of Gharnāṭa around its flank, and then he sent the thagrī footmen in.
+      The Christian line broke, the Aragonese first. Three thousand three hundred and fifty of the enemy were
+      left on the field, and two thousand two hundred of ours. It was not cheap, but it was a victory. The
+      joined host of the two crowns no longer existed. Only its pieces were left, running west toward the one
+      city they still hoped to hold.
+
+
+      Murād followed them all the way back to al-Ushbūna. Under its walls, on the twelfth of Dhū al-Ḥijja, he
+      destroyed what was left of the Portuguese: sixteen hundred men, every one of them killed or taken, and
+      not one of ours lost. The next day it was the Aragonese remnant's turn, seventeen hundred and seventy
+      men, and again not one of ours. Those were the days of tashrīq, when the pilgrims at Minā cast their
+      stones at the pillars of the Devil. The army of Gharnāṭa cast its own before the gates of al-Ushbūna.
+
+
+      Portugal had nothing left in the field, and it sued for peace the same day. It gave up its whole south:
+      the Algarve that the old geographers called al-Gharb, with [Shilb](place:shilb),
+      [Ukshūnuba](place:ukshunuba) and Tavira, and the lower plains of the Alentejo with [Bāja](place:baja),
+      Mértola and Serpa. That was thirteen towns and eighty-three thousand souls. Portugal would also pay
+      reparations for ten years. The court did not mean to keep these Portuguese Christians under its own
+      hand. When the war was won they would be given a prince of their own, as Balansiyya and
+      [Mursiyya](place:mursiyya) had been, and become a third ṭāʾifa of al-Andalus.
+
+
+      Qashtāla and Arghūn fought on. But the sultan's treasury, which had held twenty-four dīnārs on the day
+      his father died, now held five hundred.
+
+
+      *And you did not kill them, but it was Allāh who killed them. And you threw not when you threw, but it
+      was Allāh who threw.*

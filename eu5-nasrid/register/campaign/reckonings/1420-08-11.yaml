@@ -1,0 +1,1030 @@
+date: '1420-08-11'
+title: The Annexation of Balansiyya
+source:
+  save: SP_ADU_1420_08_11 (compressed)
+  game: 1.4.7
+summary: >-
+  Ten days after Balansiyya was taken into the crown (1 August 1420) and the day after Fermoselle, where the
+  Emperor destroyed the rising of Zamora. The crown holds 186 towns and 2,434,000 people directly, with seven
+  ṭāʾifas: sixteen of Shalamanka's towns went to Liyūn and Burghush in November 1416, and Angra in the Azores
+  was settled on 1 August. Estates are estimated from the reading of 31 December 1415: the crown about a
+  quarter, the umarāʾ and the burghers a fifth each, the dhimmī 17% (lower now that Balansiyya's Muslims are
+  the crown's), the ʿulamāʾ 12%. The umarāʾ are two in five content again. The treasury, 1,923 in 1416, is
+  down to 277, after the universities and the road to Balansiyya; income 260 against 236. Stability is barely
+  above nothing, 5. The realm stands third in the world.
+realm:
+  towns: 186
+  souls: 2433910
+  treasury: 277
+  income: 260
+  expenses: 236
+  stability: 5.4
+  prestige: 69
+  regiments: 9
+  ships: 47
+  manpower: 6715
+court:
+  ruler: ismail-ibn-saad
+  heir: muhammad-ibn-ismail-ibn-saad
+  capital: ishbiliyya
+  council:
+    - who: saad-ibn-yusuf-ibn-saad
+      seat: Integrating the new lands
+    - who: muhammad-ibn-yusuf-ibn-faraj
+      seat: Integrating the new lands
+    - who: ahmad-ibn-yusuf-ibn-ismail
+      seat: Integrating the new lands
+    - who: yusuf-ibn-saad
+      seat: Appeasing the estates
+    - who: jadila-bint-saad-ibn-faraj
+      seat: Stabilising the country
+standing:
+  allies:
+    - Mamluks
+    - Morocco
+    - Tunis
+  subjects:
+    - Catalonia (taifa)
+    - Aragon (taifa)
+    - Taifa of Cuenca (taifa)
+    - Taifa of Minho (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+  estates:
+    - name: Crown
+      power: 26.07
+    - name: Nobility
+      power: 21.26
+      mood: 41
+    - name: ʿUlamāʾ
+      power: 12.04
+      mood: 49
+    - name: Burghers
+      power: 21.19
+      mood: 50
+    - name: Commoners
+      power: 2.41
+      mood: 50
+    - name: Dhimmī
+      power: 17.03
+      mood: 50
+peoples:
+  cultures:
+    Castilian: 726848
+    Andalusi: 718090
+    Portuguese: 457855
+    Sephardi: 169377
+    Catalan: 167462
+    Leonese: 157294
+  faiths:
+    Catholic: 1151774
+    Sunni: 1110404
+    Jewish: 165531
+    Guanche_religion: 5044
+    Bori_Religion: 638
+map:
+  ours:
+    - GRA
+  subjects:
+    - CAT
+    - ARA
+    - ABA60
+    - ABA10
+    - ABA42
+    - ABA49
+    - ABA55
+  allies:
+    - MAM
+    - MOR
+    - TUN
+beats:
+  - id: 1416-03-25-death-of-umm-al-fath
+    'on': '1416-03-25'
+    kind: death
+    what: >-
+      Umm al-Fatḥ bint Saʿd, the old Emperor's first child and the Emperor's half-sister, dies at fifty-one,
+      still in the dīwān integrating the new lands
+    who:
+      - umm-al-fath-bint-saad
+      - ismail-ibn-saad
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 11 August 1420
+    detail:
+      age: 51
+      seat: integrating the new lands, from 1394
+  - id: 1416-05-20-the-first-universities
+    'on': '1416-05-20'
+    kind: realm
+    what: The first universities of al-Andalus open, at Ishbīliya, Qurṭuba, Gharnāṭa, Ṭulayṭula and Mālaqa
+    who:
+      - ismail-ibn-saad
+    where:
+      - ishbiliyya
+      - qurtuba
+      - gharnata
+      - tulaytula
+      - malaqa
+    from:
+      - told
+    cite: Trent's account
+    detail:
+      year: 1416 assumed (Trent's account gives 20 May after the estates panel of 31 December 1415)
+      advance: university advance, researched by 24 October 1414
+  - id: 1416-07-10-birth-of-yusuf-ibn-muhammad
+    'on': '1416-07-10'
+    kind: birth
+    what: Jadīla bint Saʿd, the heir's third wife, bears him a son, Yūsuf
+    who:
+      - jadila-bint-saad-ibn-faraj
+      - muhammad-ibn-ismail-ibn-saad
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 11 August 1420
+  - id: 1416-09-29-jadila-steadies-the-realm
+    'on': '1416-09-29'
+    kind: office
+    what: >-
+      Jadīla bint Saʿd leaves the work of migration and takes the dīwān's charge of the realm's peace,
+      stabilising the country
+    who:
+      - jadila-bint-saad-ibn-faraj
+    from:
+      - save
+    cite: save of 11 August 1420
+    detail:
+      from: encouraging migration
+      to: stabilizing the country
+  - id: 1416-10-23-autocracy
+    'on': '1416-10-23'
+    kind: realm
+    what: >-
+      The Emperor takes up the reform of Autocracy: the power of the state is gathered into the ruler's hands,
+      and the men who serve him are counted members of his household
+    who:
+      - ismail-ibn-saad
+    from:
+      - save
+    cite: save of 11 August 1420
+    detail:
+      reform: autocracy
+      text: >-
+        Autocratic monarchies concentrate power in the hands of the ruler. The state is often seen as their
+        personal property. It is not uncommon for rulers to have ministers and supporters, but these are then
+        referred to as members of the royal household (the game's text)
+  - id: 1416-11-18-shalamanka-handed-north
+    'on': '1416-11-18'
+    kind: land
+    what: >-
+      Sixteen of the twenty-one towns of the old Ṭāʾifa of Shalamanka are handed to the ṭāʾifas of the north:
+      Shalamanka, Ciudad Rodrigo, Ledesma, Béjar, Coria and five more to Liyūn, and Ávila, Arévalo, Oropesa
+      and three more to Burghush. Aḥmad ibn Yūsuf, freed of that work, goes to integrating the crown's lands
+    who:
+      - ismail-ibn-saad
+      - ahmad-ibn-ismail-ibn-saad
+      - abu-hammu-rahhu
+      - ahmad-ibn-yusuf-ibn-ismail
+    where:
+      - shalamanka
+    from:
+      - save
+    cite: save of 11 August 1420
+    detail:
+      toLiyun:
+        - Salamanca
+        - Ciudad Rodrigo
+        - Ledesma
+        - Béjar
+        - Coria
+        - Alba de Tormes
+        - Piedrahita
+        - Matilla de los Caños
+        - San Felices
+        - Yecla de Yeltes
+      toBurghush:
+        - Ávila
+        - Arévalo
+        - Oropesa
+        - Las Navas
+        - Adrada
+        - Villatoro
+      kept: 5
+      note: the far north is held through ṭāʾifas and the lands south of it integrated (Trent, January 1416)
+  - id: 1416-12-27-death-of-jadila-bint-yusuf
+    'on': '1416-12-27'
+    kind: death
+    what: Jadīla bint Yūsuf, daughter of Yūsuf I and queen of the Marīnids for thirty-five years, dies at sixty
+    who:
+      - jadila-bint-yusuf
+      - abu-al-fadl-marinid
+    where:
+      - fas
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 11 August 1420
+  - id: 1417-02-16-birth-of-abu-al-hasan-ali
+    'on': '1417-02-16'
+    kind: birth
+    what: Fāṭima, daughter of Aḥmad of Burtuqāl, bears Aḥmad ibn Yūsuf of the dīwān a son, Abū al-Ḥasan ʿAlī
+    minor: true
+    who:
+      - ahmad-ibn-yusuf-ibn-ismail
+      - ahmad-ibn-ismail-ibn-yusuf
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 11 August 1420
+  - id: 1417-03-19-death-of-abu-al-fadl
+    'on': '1417-03-19'
+    kind: death
+    what: >-
+      Abū al-Faḍl, sultan of Fās since 1381 and the Emperor's ally in the War of Jillīqiya, dies of pneumonia
+      at fifty-seven. His son Abū Ḥammū had died in 1410, and the throne passes to his grandson Yaḥyā, fifteen
+    who:
+      - abu-al-fadl-marinid
+      - yahya-marinid
+    where:
+      - fas
+    from:
+      - save
+    cite: save of 11 August 1420
+    detail:
+      cause: pneumonia
+      successor: >-
+        Yaḥyā, born 14 July 1401, son of Abū Ḥammū (died 14 September 1410, a hunting accident); in his own
+        name from 14 July 1417
+  - id: 1417-04-22-ottoman-peace
+    'on': '1417-04-22'
+    kind: world
+    what: >-
+      The Ottomans make a great peace in Anatolia and on the Danube: Sivas and the lands of Eretna, Amasya and
+      the Pontic hills, the Dobruja from Bulgaria and Reni from Wallachia, thirty-one towns in all
+    who:
+      - ahmad-ottoman
+    from:
+      - save
+    cite: save of 11 August 1420
+    detail:
+      towns:
+        Eretna: 9
+        Hacı (Amasya): 7
+        Bulgaria: 4
+        Wallachia: 1
+      note: counted from the towns that changed hands that day (the world beyond the realm)
+  - id: 1417-07-14-yahya-of-fas
+    'on': '1417-07-14'
+    kind: crown
+    what: >-
+      Yaḥyā of Fās, great-grandson of Yūsuf I through Jadīla, comes of age and rules in his own name. Fās
+      stays the Emperor's ally
+    who:
+      - yahya-marinid
+    where:
+      - fas
+    from:
+      - save
+    cite: save of 11 August 1420
+  - id: 1417-12-15-saad-ibn-yusuf-to-the-diwan
+    'on': '1417-12-15'
+    kind: office
+    what: >-
+      Saʿd ibn Yūsuf, the Emperor's nephew, raised at his court since the age of four, takes Umm al-Fatḥ's
+      empty seat in the dīwān, integrating the new lands
+    who:
+      - saad-ibn-yusuf-ibn-saad
+      - ismail-ibn-saad
+    from:
+      - save
+    cite: save of 11 August 1420
+  - id: 1418-04-09-birth-of-fatima-bint-muhammad
+    'on': '1418-04-09'
+    kind: birth
+    what: Jadīla bint Saʿd bears the heir a daughter, Fāṭima
+    who:
+      - jadila-bint-saad-ibn-faraj
+      - muhammad-ibn-ismail-ibn-saad
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 11 August 1420
+  - id: 1419-04-01-the-letter-from-denia
+    'on': '1419-04-01'
+    kind: realm
+    what: >-
+      The Letter from Denia. The old epistle of Ibn Gharsiya, a Basque Christian taken as a child and raised a
+      Muslim at the court of Denia, passes from hand to hand among the secretaries: the Arabs, he wrote, are
+      masters at describing camels, and philosophy, astronomy and the measuring of the earth belong to the
+      peoples they conquered. The court answers that a man is what he knows
+    who:
+      - ismail-ibn-saad
+    where:
+      - daniya
+    from:
+      - seen
+    cite: Trent's screenshots, 1 April 1419
+    detail:
+      event: The Letter from Denia
+      text: >-
+        the quarrel is an old one in al-Andalus: Berbers carried the conquest, Slavs commanded the palace
+        guard and the sons of converted natives filled the chanceries, yet the old Arab families still count a
+        man's descent before they count his learning; a realm that means to hold the whole peninsula cannot
+        afford the habit (the game's text)
+      choice: A man is what he knows (the only option shown)
+      effects:
+        modifier: >-
+          Scholars of Every Nation, 15 years: cultures capacity +1, monthly research progress +10%, monthly
+          literacy +0.01%
+      advances:
+        Equals of the Arabs: >-
+          accepted culture maintenance −10%, cultures capacity +1, tolerance of heretical beliefs +1: Ibn
+          Gharsiya wrote in the 1050s that the peoples the Arabs had conquered were their equals, and their
+          betters in learning; Berbers, Slavs and the converted natives of the peninsula hold office beside
+          the old Arab families (the game's text)
+        Vibrant Court: 'cultures capacity +1: great minds flock to our court from across the known world (the game''s text)'
+      diwan:
+        - integrating Trujillo
+        - integrating Ocaña
+        - integrating Cáceres
+        - appeasing the estates
+        - stabilizing the country
+      realm:
+        population: 2.199 million
+  - id: 1419-04-the-catalans-and-valencia
+    'on': '1419-04-02'
+    kind: note
+    what: >-
+      The integration of the Ṭāʾifa of Balansiyya into the crown is nearly complete, and the court prepares to
+      accept the Catalans on the same standing as the Portuguese. The Castilians are left out, ignored at best
+    who:
+      - ismail-ibn-saad
+    where:
+      - balansiyya
+    from:
+      - told
+    cite: Trent's account, April 1419
+    detail:
+      accepted: Portuguese (by 1416); Catalan to follow (Trent)
+      tolerated: Sephardi
+      castilians: not to be accepted (Trent)
+      valencia: annexation of the ṭāʾifa nearly complete, expected in August 1420 (Trent)
+  - id: 1419-07-27-birth-of-saad-ibn-ahmad
+    'on': '1419-07-27'
+    kind: birth
+    what: Maryam, daughter of Aḥmad of Burtuqāl, bears Aḥmad ibn Yūsuf a son, Saʿd
+    minor: true
+    who:
+      - ahmad-ibn-yusuf-ibn-ismail
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 11 August 1420
+  - id: 1419-08-29-death-of-aisha-bint-yusuf
+    'on': '1419-08-29'
+    kind: death
+    what: >-
+      ʿĀʾisha bint Yūsuf, daughter of Yūsuf I, dies at fifty-nine. Of his children only Umm al-Fatḥ, the
+      youngest, is left
+    who:
+      - aisha-bint-yusuf
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 11 August 1420
+  - id: 1419-09-the-road-to-balansiyya
+    'on': '1419-09-01'
+    kind: realm
+    what: >-
+      The Emperor orders a great road built from Ishbīliya to Balansiyya. Once the ṭāʾifa is integrated, a
+      governor will sit at Balansiyya to carry the empire's influence into the Mediterranean. It is also a
+      military road, to move the armies quickly toward the French border should another crusade be preached
+    who:
+      - ismail-ibn-saad
+    where:
+      - ishbiliyya
+      - balansiyya
+    threads:
+      - towns
+      - europe
+    from:
+      - told
+    cite: Trent's account, September 1419
+    detail:
+      road: Ishbīliya to Balansiyya
+      purpose: a governor's seat at Balansiyya, to project influence into the Mediterranean (Trent)
+      date: >-
+        begun in early September 1419, to be done, or mostly done, by the annexation of Balansiyya expected in
+        August 1420 (Trent)
+      military: a road for moving troops to the French border in case of another crusade (Trent)
+  - id: 1419-09-04-death-of-daniel
+    'on': '1419-09-04'
+    kind: death
+    what: >-
+      Daniel, the Sephardi convert who in 811 sailed further south than any captain of al-Andalus, into the
+      gulf below the bulge of Africa, dies of a fever at Sanlúcar at fifty
+    from:
+      - save
+    cite: save of 11 August 1420
+    detail:
+      born: '1369-05-28'
+      note: identified by birth year and abilities (52/51/63) with the leader of the southern expedition of 1408
+      cause: fever
+      place: Sanlúcar
+  - id: 1420-03-09-maps-of-cabo-verde
+    'on': '1420-03-09'
+    kind: note
+    what: >-
+      The explorers come home with maps of the Cape Verde islands, and within the month a colonising
+      expedition sails for them
+    threads:
+      - voyages
+    from:
+      - told
+    cite: Trent's account, 9 March 1420
+    detail:
+      explorer: >-
+        probably García de Ponte de Sor, who was charting the Cape Verde area from 1409 (not confirmed by a
+        save)
+      colonisation: an expedition sets out in March 1420 (Trent)
+  - id: 1420-06-01-rising-of-zamora
+    'on': '1420-06-01'
+    kind: war
+    what: >-
+      The Castilians of Zamora rise against the Ṭāʾifa of Liyūn under Eduardo de Avellaneda and proclaim a
+      kingdom of their own. Al-Andalus and all its ṭāʾifas stand with Liyūn
+    who:
+      - eduardo-de-avellaneda
+      - ahmad-ibn-ismail-ibn-saad
+      - ismail-ibn-saad
+    threads:
+      - rising-of-zamora
+    from:
+      - save
+    cite: save of 11 August 1420
+    detail:
+      cb: cb_independence_war
+      rebels: Zamora (zamora_province)
+      defenders:
+        - al-Andalus
+        - Liyūn
+        - Aragon
+        - Catalonia
+        - Valencia
+        - Qūnka
+        - Burtuqāl
+        - Burghush
+        - Banbalūna
+  - id: 1420-08-01-angra
+    'on': '1420-08-01'
+    kind: land
+    what: >-
+      Angra on Terceira in the Azores becomes a settlement of the crown, the empire's first in those islands:
+      a thousand people, Portuguese, Castilian and Leonese settlers
+    threads:
+      - voyages
+    from:
+      - save
+    cite: save of 11 August 1420
+    detail:
+      province: Azores
+      population: 1036
+      months: 30
+  - id: 1420-08-01-valencia-annexed
+    'on': '1420-08-01'
+    kind: land
+    what: >-
+      After eighty years as a ṭāʾifa, Balansiyya is taken into the crown: its seventeen towns and some 220,000
+      people, from Balansiyya, Shāṭiba and Dāniya to al-Qant, Elche and Orihuela, Catalan in speech and nearly
+      all Muslim, become lands of the crown. Its lord Melchior of the house of Orihuela goes to the court of
+      Catalonia
+    who:
+      - ismail-ibn-saad
+    where:
+      - balansiyya
+      - daniya
+      - al-qant
+      - shatiba
+    from:
+      - save
+    cite: save of 11 August 1420
+    detail:
+      towns: 17
+      population: 218000
+      cultures: Catalan 75%, Andalusī 14%, Aragonese 9%
+      religion: Sunni 98%
+      since: '1340-08-23'
+      realm:
+        towns:
+          - 168
+          - 186
+      lord: Melchior of Orihuela (born 1382), to Catalonia; his heir Frederick, born 1412
+  - id: 1420-08-10-battle-fermoselle
+    'on': '1420-08-10'
+    kind: battle
+    what: >-
+      At Fermoselle, above the gorges of the Duero, the Emperor Ismāʿīl with 4,900 men falls on the 370 rebels
+      of Zamora and destroys them without losing a man
+    who:
+      - ismail-ibn-saad
+      - eduardo-de-avellaneda
+    threads:
+      - rising-of-zamora
+    from:
+      - save
+    cite: save of 11 August 1420 (the war's battle list)
+    detail:
+      result: victory
+      naval: false
+      ours:
+        al-Andalus: 4900
+      oursTotal: 4900
+      oursLost: 0
+      theirs:
+        Zamora: 370
+      theirsTotal: 370
+      theirsLost: 370
+      location: Fermoselle
+      side: al-Andalus attacking
+      warScore: 0
+      commanders:
+        al-Andalus: the Emperor Ismāʿīl
+        Zamora: Eduardo de Avellaneda
+      note: rebellion battles carry no war score in the game
+  - id: 1420-08-11-rising-crushed
+    'on': '1420-08-11'
+    kind: peace
+    what: The day after Fermoselle the rising of Zamora is at an end
+    who:
+      - ismail-ibn-saad
+      - ahmad-ibn-ismail-ibn-saad
+    threads:
+      - rising-of-zamora
+    from:
+      - save
+    cite: save of 11 August 1420
+  - id: 1420-08-11-the-world
+    'on': '1420-08-11'
+    kind: world
+    what: >-
+      The world at the annexation of Balansiyya: al-Andalus is third among the powers of the world, behind
+      China and England. In the East three empires have risen: Tīmūr's at Samarqand, fourth in the world with
+      707 towns; the Ottomans at Constantinople, sixth; and the Mamlūks at Cairo, al-Andalus's ally, ninth
+    who:
+      - temur
+      - ahmad-ottoman
+      - aktai-mamluk
+      - yahya-marinid
+      - ismail-ibn-saad
+    from:
+      - save
+    cite: save of 11 August 1420 (tools/world_powers.py)
+    detail:
+      ladder:
+        CHI:
+          - 1
+          - 413
+        ENG:
+          - 2
+          - 104
+        GRA:
+          - 3
+          - 93
+        TIM:
+          - 4
+          - 91
+        FRA:
+          - 5
+          - 78
+        TUR:
+          - 6
+          - 70
+        BOH:
+          - 7
+          - 58
+        HUN:
+          - 8
+          - 53
+        MAM:
+          - 9
+          - 51
+        MAL:
+          - 13
+          - 39
+        MOR:
+          - 14
+          - 38
+        TUN:
+          - 23
+          - 22
+        CAS:
+          - 66
+          - 2
+      towns:
+        TIM: 707 + 24 in subjects
+        TUR: 294 + 3
+        MAM: 191 + 103
+        GRA: 186 + 191
+      emperor: Saxony
+      pope: Guilhèm, at Rome
+      unions:
+        - Hungary, Naples and Croatia (László)
+        - France and the Dauphiné
+      wars:
+        - France against Brabant and Metz (from 18 February 1420)
+        - a rising against Provence (from 1 October 1419)
+      allies:
+        - Egypt
+        - Morocco
+        - Tunis
+      rivals: England names al-Andalus among its rivals; Castile names al-Andalus, Morocco and France
+tellings:
+  - id: 0822-08-10-of-the-universities-the-letter-from-denia-and-the-road-to-balansiyya
+    'on': '1419-09-01'
+    title: Of the Universities, the Letter from Denia, and the Road to Balansiyya
+    verse: '30:22'
+    who:
+      - ismail-ibn-saad
+      - saad-ibn-yusuf
+    where:
+      - ishbiliyya
+      - qurtuba
+      - gharnata
+      - tulaytula
+      - malaqa
+      - daniya
+      - balansiyya
+    covers:
+      - 1416-05-20-the-first-universities
+      - 1419-04-01-the-letter-from-denia
+      - 1419-04-the-catalans-and-valencia
+      - 1419-09-the-road-to-balansiyya
+      - 1413-01-14-madrasas-everywhere
+      - 1413-05-01-education-of-the-people
+    text: >
+      The madrasas of 815 taught the children of the towns their letters. Three years later the Emperor
+      [Ismāʿīl](person:ismail-ibn-saad) wanted something above them. On 22 Rabīʿ al-Awwal 819 the first
+      universities of al-Andalus opened their doors, five of them at once: at [Ishbīliya](place:ishbiliyya),
+      where the court sat; at [Qurṭuba](place:qurtuba), the old capital of the caliphs; at
+      [Gharnāṭa](place:gharnata), where the house of Naṣr began; at [Ṭulayṭula](place:tulaytula), the city of
+      the translators; and at [Mālaqa](place:malaqa), the port. The Emperor's charters gave each of them the
+      same instruction. They were to teach law and grammar, as the mosques always had, but also medicine,
+      astronomy, the measuring of the earth and the reckoning of accounts, and their doors were open to any
+      subject of the empire who could pay or find a patron to pay for him. The umarāʾ asked what the sons of
+      merchants would do with astronomy. The Emperor said they would find their way to the Indies with it, and
+      that the umarāʾ's sons were welcome to come and learn it too.
+
+
+      The new scholars soon found an old quarrel waiting for them. In Rabīʿ al-Awwal 822 a letter more than
+      three hundred years old began to pass from hand to hand among the secretaries of the dīwān. Its author
+      was Ibn Gharsiya, a Basque Christian who had been carried off as a child and raised a Muslim at the
+      court of [Dāniya](place:daniya), in the age of the first ṭāʾifas. He had written it against the old Arab
+      families who sneered at men like him. The Arabs, he wrote, were masters at describing camels.
+      Philosophy, astronomy and the measuring of the earth had belonged to the peoples they conquered long
+      before the Arabs came, and those peoples still knew them better. In his own day the letter had caused a
+      scandal. Now the secretaries read it aloud to each other and laughed, because half of them were the
+      grandsons of converts themselves. The Berbers had carried the conquest of al-Andalus, the Slavs had
+      commanded the guard of the caliphs, and the sons of converted natives had filled the chanceries, and
+      still the old houses counted a man's descent before they counted his learning.
+
+
+      The Emperor heard of it and asked for the letter. When he had read it he gave the dīwān his answer in
+      four words that the secretaries copied into the margins of their own copies: a man is what he knows. He
+      sent invitations to scholars of every nation to come to the new universities, and the old Arab families
+      had to accept Berbers, converts and the sons of Christians in office beside them. The court said the
+      Emperor had put it more shortly than Ibn Gharsiya, and had not needed to insult anyone's camels to do
+      it.
+
+
+      The answer had a purpose nearer home. The integration of [Balansiyya](place:balansiyya), a ṭāʾifa of the
+      crown for eighty years, was nearly complete. Its people spoke Catalan and had nearly all come to Islam,
+      and the dīwān meant them to stand at court as the Portuguese of al-Gharb and Burtuqāl already stood, as
+      subjects whose tongue was no bar to office. The Castilians were not invited. They were the most numerous
+      of the Emperor's subjects, and their king still sat at Oviedo, and the court left them out, when it
+      noticed them at all.
+
+
+      On 10 Shaʿbān 822 the Emperor ordered a great road built from Ishbīliya to Balansiyya, over the
+      mountains of the old kingdom of Murcia. When Balansiyya came into the crown a governor would sit there,
+      and the road would carry the empire's orders to him, and his influence out into the Middle Sea, as fast
+      as a rider could go. The dīwān noted a second purpose that no one put in the charter. In the crusade of
+      806 the Emperor's father [Saʿd](person:saad-ibn-yusuf) had marched over the Pyrenees to Avignon. A road
+      that carried a governor's letters to the coast would carry an army to the French border just as fast,
+      should a Pope ever preach another.
+
+
+      *And of His signs is the creation of the heavens and the earth and the diversity of your languages and
+      your colours. Indeed in that are signs for those of knowledge.*
+  - id: 0823-07-21-of-daniel-the-green-cape-and-angra
+    'on': '1420-08-01'
+    title: Of Daniel, the Green Cape, and Angra
+    verse: 17:66
+    who:
+      - ismail-ibn-saad
+    where:
+      - ishbiliyya
+    covers:
+      - 1419-09-04-death-of-daniel
+      - 1420-03-09-maps-of-cabo-verde
+      - 1420-08-01-angra
+      - 1415-04-01-maxorata
+      - 1412-01-01-funchal
+      - 1408-10-11-expeditions
+    text: >
+      On 13 Shaʿbān 822 Daniel died, at fifty. He was the Sephardi who had come to Islam and kept the name he
+      was born with, the first of his people to command a ship of the empire, and in the years after 811 he
+      had taken it further south than any captain of al-Andalus had gone, into the gulf below the bulge of
+      Africa where the coast turns east. He died of a fever at Sanlúcar, where the river of
+      [Ishbīliya](place:ishbiliyya) meets the sea, and the sailors said it was more than most captains who had
+      seen the gulf could hope for, to die in sight of home.
+
+
+      The voyages he had begun went on without him. On 23 Ṣafar 823 the captains of the Green Cape came home
+      with charts of the islands that lie off the westernmost point of Africa, beyond the country of Mālī:
+      their harbours, their springs and the winds that reach them. There was no one on them. Within the month
+      a fleet of settlers sailed for the islands with tools, seed and livestock, to found the first town of
+      the empire in the southern sea. The dīwān's instructions to them were longer than any it had given
+      before. The islands were not to be a fishing post like the others but a land of their own one day, with
+      its own governor and its own people.
+
+
+      The other islands were filling meanwhile. Funchal on Madeira had been a town of the crown since 814, and
+      Maxorata in the Canaries since 818, where the Guanche islanders lived under the Emperor's protection and
+      kept their own gods. On 21 Rajab 823, the same day Balansiyya came into the crown, the settlers of the
+      Azores founded their first town, Angra, on the island of Terceira, thirty months after they had landed.
+      It had a thousand people. Most were Portuguese, Castilian and Leonese peasants from the north,
+      Christians who had taken the Emperor's offer of land in the middle of the Ocean, and they named their
+      church before they had finished their houses. The dīwān did not object. The Emperor said that every town
+      he founded in the Ocean was a town the king of Qashtāla would never found there, and that the faith of
+      its farmers could wait for the madrasa.
+
+
+      *Your Lord is the one who drives the ship for you through the sea that you may seek of His bounty.
+      Indeed, He is ever Merciful to you.*
+  - id: 0823-08-01-of-the-household-of-the-emperor-balansiyya-and-fermoselle
+    'on': '1420-08-11'
+    title: Of the Household of the Emperor, Balansiyya, and Fermoselle
+    verse: '67:1'
+    who:
+      - ismail-ibn-saad
+      - umm-al-fath-bint-saad
+      - umm-al-fath-bint-yusuf
+      - jadila-bint-saad-ibn-faraj
+      - yusuf-ibn-saad
+      - saad-ibn-yusuf-ibn-saad
+      - ahmad-ibn-yusuf-ibn-ismail
+      - ahmad-ibn-ismail-ibn-saad
+      - abu-hammu-rahhu
+      - jadila-bint-yusuf
+      - aisha-bint-yusuf
+      - muhammad-ibn-ismail-ibn-saad
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+      - eduardo-de-avellaneda
+    where:
+      - ishbiliyya
+      - shalamanka
+      - balansiyya
+      - daniya
+      - shatiba
+      - al-qant
+    covers:
+      - 1416-03-25-death-of-umm-al-fath
+      - 1416-09-29-jadila-steadies-the-realm
+      - 1416-10-23-autocracy
+      - 1416-11-18-shalamanka-handed-north
+      - 1416-12-27-death-of-jadila-bint-yusuf
+      - 1417-12-15-saad-ibn-yusuf-to-the-diwan
+      - 1419-08-29-death-of-aisha-bint-yusuf
+      - 1420-06-01-rising-of-zamora
+      - 1420-08-01-valencia-annexed
+      - 1420-08-10-battle-fermoselle
+      - 1420-08-11-rising-crushed
+    text: >
+      On 25 Muḥarram 819 [Umm al-Fatḥ](person:umm-al-fath-bint-saad), the old Emperor's first child, died at
+      fifty-one. She had sat in the dīwān for twenty-two years, from the year of the League, and for most of
+      them she had done one thing: she took lands the armies had won and made them part of the empire, from
+      the valley of the Tagus to the country of the risings. Her seat stood empty for most of two years. Her
+      daughter [Jadīla](person:jadila-bint-saad-ibn-faraj), the heir's third wife, sat in the dīwān already,
+      and in Shaʿbān the Emperor took her off the settling of migrants and gave her the hardest task he had,
+      to keep the realm at peace. The umarāʾ were still sore from the Jamāʿa of 817, and Prince
+      [Yūsuf](person:yusuf-ibn-saad) was still at work soothing them.
+
+
+      On the first day of Ramaḍān 819 the Emperor [Ismāʿīl](person:ismail-ibn-saad) told the dīwān how the
+      empire would be governed from then on. The state was the Emperor's, and those who served it served him.
+      The viziers and the governors were members of his household, as the slaves of the palace and the eunuchs
+      of the harem were, and they would answer to him as his household answered, without appeal to any estate.
+      The ʿulamāʾ looked for a precedent and found one in the caliphs of Qurṭuba, who had governed through the
+      men of the palace and not through the great families. The umarāʾ looked for a way to object and found
+      none. They had already given up their mercenaries and their lordships, and they had nothing left to give
+      up but their pride.
+
+
+      He used his new hand at once. On 27 Ramaḍān, the night the faithful keep as the Night of Power, sixteen
+      of the twenty-one towns of the old Ṭāʾifa of [Shalamanka](place:shalamanka) were given away. The crown
+      had taken them in a year and a half before, when the ṭāʾifa's lord died, and the Emperor had never
+      wanted them. Shalamanka itself, Ciudad Rodrigo, Ledesma, Béjar and Coria and five more went to his son
+      [Aḥmad](person:ahmad-ibn-ismail-ibn-saad) in Liyūn, and Ávila, Arévalo, Oropesa and three more went to
+      [Abū Ḥammū](person:abu-hammu-rahhu) in Burghush. The rule his father had begun was now the rule of the
+      empire. The north, where the Christians were many and the Muslims few, would be held through lords who
+      owed their thrones to the Emperor, and the lands south of it would be the crown's. [Aḥmad ibn
+      Yūsuf](person:ahmad-ibn-yusuf-ibn-ismail) of the dīwān was given new lands to integrate that same day,
+      and in Dhū al-Qaʿda 820 the Emperor's nephew [Saʿd ibn Yūsuf](person:saad-ibn-yusuf-ibn-saad), raised at
+      his court since the age of four, took Umm al-Fatḥ's seat.
+
+
+      The generation of Yūsuf I passed in those years. [Jadīla](person:jadila-bint-yusuf), his daughter, queen
+      of the Marīnids for thirty-five years, died in Dhū al-Qaʿda 819, three months before her husband.
+      [ʿĀʾisha](person:aisha-bint-yusuf) died in Shaʿbān 822, and of all his children only [Umm
+      al-Fatḥ](person:umm-al-fath-bint-yusuf), the youngest, was left. The court mourned them as the last of
+      the sultanate, the realm of the old Alhambra that had paid tribute to Qashtāla. The empire that buried
+      them stretched from Porto to Barshalūna.
+
+
+      The next generation had grown up meanwhile. The heir [Muḥammad](person:muhammad-ibn-ismail-ibn-saad) was
+      thirty-four and no better a governor than he had been at seventeen, and the clerks of the treasury now
+      complained that he squeezed his own estates for every dirham they had. But his sons were men.
+      [Ismāʿīl](person:ismail-ibn-muhammad-ibn-ismail) and [Aḥmad](person:ahmad-ibn-muhammad-ibn-ismail), born
+      eight months apart, had come out of their tutors' hands as able as anyone in the house, and the younger,
+      Isabel's son, was better at every art than the elder. No one at court said aloud that the crown would
+      pass from a strong man through a weak one to a strong one again. Everyone had worked it out.
+
+
+      On 21 Rajab 823 [Balansiyya](place:balansiyya) came into the crown. It had been a ṭāʾifa since Ṣafar
+      741, when the young Yūsuf I had won it from Arghūn and given it to Joan d'Oriola to hold for him:
+      seventeen towns, from Balansiyya itself, [Shāṭiba](place:shatiba) and [Dāniya](place:daniya) to
+      [al-Qant](place:al-qant), Elche and Orihuela, and two hundred and twenty thousand people, Catalan in
+      speech and Muslim in faith. Its last lord, Melchior, of Joan d'Oriola's house, went to the court of
+      Catalonia with his family and his household. No one in Balansiyya had been asked, and no one in
+      Balansiyya complained. The Emperor's letters had been preparing them for three years, and the governor
+      who would sit in the city had a university and a great road waiting for him.
+
+
+      The Emperor did not stay for the ceremony. On 19 Jumādā al-Ūlā the Castilians of Zamora had risen
+      against his son in Liyūn, under a lord named [Eduardo de Avellaneda](person:eduardo-de-avellaneda), and
+      proclaimed a kingdom of their own. It was a kingdom of a few hundred men. The Emperor was fifty-four and
+      had not commanded an army since the War of Jillīqiya, and he took the whole standing army of the empire
+      north himself, four thousand nine hundred men, and found the rebels at Fermoselle above the gorges of
+      the Duero. On 30 Rajab he destroyed them, all three hundred and seventy, and lost no one. The next day
+      was the first of Shaʿbān, the rising was over, and the Emperor's letters to the ṭāʾifas of the north had
+      already gone out. A lord who could not keep his own towns quiet, they said, would find the Emperor there
+      to keep them for him, and the Emperor never left a town quite as he had found it.
+
+
+      *Blessed is He in whose hand is dominion, and He is over all things competent.*
+  - id: 0823-08-01-the-second-survey-of-the-kingdoms
+    'on': '1420-08-11'
+    title: The Second Survey of the Kingdoms, and the Three Empires of the East
+    verse: '30:9'
+    who:
+      - ismail-ibn-saad
+      - saad-ibn-yusuf
+      - temur
+      - ahmad-ottoman
+      - muhammad-ottoman
+      - aisha-ottoman
+      - aktai-mamluk
+      - bolot-mamluk
+      - umm-al-fath-bint-saad
+      - yahya-marinid
+      - abu-al-fadl-marinid
+      - jadila-bint-yusuf
+      - pedro-of-castile
+    where:
+      - ishbiliyya
+      - fas
+    covers:
+      - 1420-08-11-the-world
+      - 1417-04-22-ottoman-peace
+      - 1417-03-19-death-of-abu-al-fadl
+      - 1417-07-14-yahya-of-fas
+      - 1411-11-27-alliance-of-tunis
+      - 1370-09-13-the-world
+    text: >
+      Fifty years after the first survey of the kingdoms, the Emperor [Ismāʿīl](person:ismail-ibn-saad) found
+      it in the treasury, still beside the map of the caliphs, with the leaf of three lines that his father
+      [Saʿd](person:saad-ibn-yusuf) had kept. He read it and laughed at the last section, where the scribes
+      had judged that Gharnāṭa was no longer far from the great powers. Then he ordered a new one. The Dīwān
+      al-Inshāʾ had envoys at every court that mattered by now, and it did not need to question pilgrims and
+      captives. Its survey was ready on the first day of Shaʿbān 823, the day after Fermoselle, and the
+      Emperor read it on the road home.
+
+
+      **Of the three empires of the East.** The scribes began where the news was. Fifty years ago the East had
+      been a quarrel of emirs and beys. Now it had three masters, and every envoy wrote of them in the same
+      breath.
+
+
+      The greatest in land is [Tīmūr](person:temur), lord of Samarqand. He has reigned for sixty years and is
+      eighty-four, and he has never stopped conquering. When the first survey was written his name was not on
+      the list. Now his empire is the fourth power of the world, with seven hundred and seven towns, more than
+      any realm but the empire of al-Ṣīn. Its frontiers run from Tabrīz to Kāshghar beyond the mountains, and
+      in the last six years he has added Farghāna, Fārs, Kirmān and Hurmuz on the Gulf, where the spice ships
+      of India put in. The envoys said three things of him: that he has never lost a battle, that he leaves
+      pyramids of skulls outside the cities that resist him, and that his treasury is empty, because he spends
+      everything on the next war. The dīwān has named him among the empire's rivals for years, which amused
+      the envoys, since his nearest town lies a thousand leagues from Ishbīliya. He has named as his heir a
+      captain called Köke, a conqueror and a reformer of armies, who is forty-eight. No one at Samarqand
+      expects the empire to hold together long once Tīmūr dies, and no one there says so.
+
+
+      The second is the house of ʿUthmān at Constantinople, sixth in the world. Fifty years ago the scribes
+      wrote that the Turks were twenty-seventh among the powers and nowhere near the Strait. They have two
+      hundred and ninety-four towns now, from the Danube to Erzurum, and eighty-two ships, the largest fleet
+      in the Middle Sea. Their sultan is [Aḥmad](person:ahmad-ottoman), son of the
+      [Muḥammad](person:muhammad-ottoman) of the first survey, and brother of the Emperor's own wife
+      [ʿĀʾisha](person:aisha-ottoman). He has reigned since 815. He is a pious man and nothing else; the
+      envoys found him slow in council and slower in the field. But in Rabīʿ al-Awwal 820 his generals made a
+      peace that brought Sivas and the lands of Eretna, Amasya and the Dobruja into the empire, and the Turks
+      now hold all of Anatolia except Cilicia, which is the Mamlūks', and the hills of Karaman, which pay them
+      homage. His son Murād is a better man than his father, and the Greeks and the Hungarians watch him.
+
+
+      The third is the realm of the Mamlūks, ninth in the world and the only one of the three that is a
+      friend. The sultan [Aqṭāy](person:aktai-mamluk) is the son of [Būlād](person:bolot-mamluk), and so a
+      cousin of the Emperor's late half-sister [Umm al-Fatḥ](person:umm-al-fath-bint-saad). He has reigned for
+      twenty-four years, a soldier whom his men will follow anywhere and a man who has seen the world. He
+      holds Cairo, Syria and Palestine, and through his vassals the Ḥijāz and the Holy Cities, nearly three
+      hundred towns in all. His merchants' trade is nearly as rich as the empire's own. The alliance of 768
+      still stands, the oldest the empire has. The envoys warned that Aqṭāy names both the Turks and Tīmūr
+      among his rivals, and that if either of them turned south the Mamlūks would need their friends.
+
+
+      **Of the Maghrib.** Fās has a new sultan. [Abū al-Faḍl](person:abu-al-fadl-marinid), the Emperor's ally
+      in the War of Jillīqiya, died of a fever of the lungs in Muḥarram 820 after thirty-five years on the
+      throne. His son had died hunting in 813, so the throne went to his grandson
+      [Yaḥyā](person:yahya-marinid), who was fifteen and has ruled in his own name since his sixteenth
+      birthday. He is a grandson of [Jadīla](person:jadila-bint-yusuf), so the blood of Yūsuf I sits on the
+      throne of [Fās](place:fas). The envoys did not like him: a cold young man, they wrote, who is cruel to
+      his servants. But Fās is fourteenth in the world, it has forty-four ships, and it keeps the alliance. So
+      do the Ḥafṣids of Tūnis, who joined it a month after the Peace of Rajab. For the first time since the
+      Almohads every Muslim crown of the West stands together, and al-Andalus stands at their head.
+
+
+      **Of the Franks.** England is the second power of the world, though half its strength lies in its
+      vassals across the sea. Its king, William, is the only prince of Christendom who names al-Andalus among
+      his enemies, and the only friend left to Qashtāla. France is fifth. Its king, Pierre, has the largest
+      army in Christendom, more than forty thousand men, and is using it against the princes of the Low
+      Countries. He names England among his enemies, and not al-Andalus. The crown of the Germans has passed
+      to the duke of Saxony. The Pope, a man of fifty-nine named Guilhèm, sits at Rome again and not at
+      Avignon. Hungary and Naples have one king, László, twenty-eight years old.
+
+
+      **Of the Peninsula.** [Pedro](person:pedro-of-castile) of Qashtāla still reigns at Oviedo, as he has for
+      twenty-six years, over forty-five towns in the rain. The scribes counted Qashtāla sixty-sixth among the
+      powers of the world, and they found that it kept no army at all, only four ships. Its heir, Fernando, is
+      twenty-eight.
+
+
+      **Of al-Andalus.** Then the scribes set down the empire: third among the powers of the world, behind
+      only al-Ṣīn and England. It rules a hundred and eighty-six towns of its own and as many again in its
+      ṭāʾifas, from Porto to Barshalūna, and its trade is worth more than that of any realm in the West. The
+      scribes noted one thing more, in red, as their predecessors had noted the enmity of France. Among the
+      great powers of the world only England counts al-Andalus an enemy, and England has no army to speak of.
+
+
+      The Emperor read it all on the road from Fermoselle. He had a leaf copied, as his father had, and the
+      clerks who saw it said it had four lines: Tīmūr is eighty-four, the Turks have the fleet, the Mamlūks
+      are our friends, and Qashtāla has no army. He kept it with him.
+
+
+      *Have they not traveled through the land and seen how was the end of those before them? They were
+      greater than them in power.*
+    behind: >-
+      The second survey follows the game's great-power ladder in the save of 11 August 1420, as the first did
+      in 1370. Trent's reading: the East has formed into three empires. The ladder agrees. Tīmūr (fourth, 707
+      towns), the Ottomans (sixth, 294) and the Mamlūks (ninth, 191 of their own and 103 in vassals) are the
+      only Great Powers of the East on it, and the Tīmūrids now join the Mamlūks and the Ottomans on the
+      Mashriq circle of the Kingdoms hall. The Ottoman peace of 22 April 1417 and the Tīmūrid conquests of
+      1414–1415 are counted from the towns that changed hands in the save, not from any treaty text. "Men
+      under arms" is still regulars and raised levies on the map. A zero for Castile means no army in the
+      field, not none to raise.
+
+
+      Rulers' character comes from their game traits: Tīmūr a conqueror, tactical genius, strategist and
+      cruel; Aḥmad a zealot of 17/14/20; Aqṭāy an inspiring leader and worldly; Yaḥyā malevolent; the heir
+      Muḥammad an extortioner. The Ottoman sultan Aḥmad is the son of the Muḥammad of 1370 and brother of the
+      Emperor's wife ʿĀʾisha, and Yaḥyā of Fās is Jadīla bint Yūsuf's grandson. Both links are in the save.
+
+
+      Invented colour, across this survey and the entries of August 1420: the Emperor finding the old survey
+      and his leaf of four lines; Tīmūr's pyramids of skulls and unbeaten record (history's, not the save's);
+      the envoys' opinions of Aḥmad and Yaḥyā; the old houses' objections to the universities and the
+      Emperor's reply; the secretaries' laughter over Ibn Gharsiya's letter and the margin note (the letter,
+      its argument and "a man is what he knows" are the game's event); the slaves and eunuchs of the household
+      in the Autocracy speech (the game's reform says only that ministers become members of the royal
+      household); the letters to the ṭāʾifas after Fermoselle; Angra's church and the Emperor's remark on it;
+      the instructions to the Cape Verde settlers (the save's colony goal is to form a colonial nation); and
+      the sailors' saying at Daniel's death (the fever and Sanlúcar are in the save). The treasury fell from
+      1,923 to 277 between the saves of 1416 and 1420, with nothing owed (the loans of 1379 had been repaid
+      before 1394). The save doesn't record what it was spent on.

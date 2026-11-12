@@ -1,0 +1,1011 @@
+- kind: story
+  id: house
+  title: The House of Naṣr
+  state: standing
+  premise: Births, marriages, deaths and successions in the ruling house and its ṭāʾifa branches.
+- kind: story
+  id: two-princes
+  title: The two princes
+  state: open
+  from: '1408-08-05'
+  premise: >-
+    Ismāʿīl and Aḥmad, half-brothers bound since childhood: Ismāʿīl talks, allies and converts; Aḥmad builds.
+    Aḥmad is expected to head Ismāʿīl's council when Ismāʿīl reigns.
+- kind: story
+  id: towns
+  title: The towns and the bridges
+  state: open
+  premise: >-
+    Where the treasury goes: workshops, foundries, bridges, harbours, palaces and roads. In the present reign
+    this is Aḥmad's work.
+- kind: story
+  id: estates
+  title: The Jamāʿa and the estates
+  state: open
+  premise: The crown's bargain with the umarāʾ, the ʿulamāʾ, the burghers, the dhimmī and, from 1448, the commons.
+- kind: story
+  id: strait
+  title: The Strait
+  state: closed
+  premise: The struggle for both shores of the Strait, settled with all 72 of its areas held.
+- kind: story
+  id: europe
+  title: Europe's answer
+  state: open
+  premise: >-
+    Crusades, embargoes and envoys: how Christendom has treated a Muslim Iberia, from the crusade of 806 to
+    'We have arrived'.
+- kind: story
+  id: voyages
+  title: The voyages
+  state: open
+  premise: The islands, the African coast, the Cape and whatever lies beyond it.
+- kind: story
+  id: umayyad-claim
+  title: The borders of the Umayyads
+  state: open
+  from: '1447-08-01'
+  premise: >-
+    Since 1447 al-Andalus holds a claim to the old caliphate's borders. Outside Persia and Arabia, nearly all
+    of that land belongs to its allies. The court has not said what the claim is for.
+- kind: story
+  id: sicily
+  title: Sicily
+  state: open
+  from: '1450-09-28'
+  premise: >-
+    Won in 1450 and kept under the crown with a governor at Palermo, for now. A ṭāʾifa is the alternative;
+    Naples holds a claim across the strait of Messina.
+- id: fate-of-tlemcen
+  kind: war
+  title: The Fate of Tlemcen
+  state: closed
+  from: '1335-01-01'
+  to: '1337-04-25'
+  premise: Conquer the province of Tlemcen
+  outcome: Tlemcen made a fiefdom of Morocco
+  sides:
+    attackers:
+      - Morocco
+      - Tafilalt
+      - Tunis
+      - Gafsa
+      - Granada
+    defenders:
+      - Tlemcen
+  note: >-
+    Morocco's war, begun two years before the campaign. Granada answered Morocco's call three days before it
+    ended, and lost no one.
+  game: Fate of Tlemcen
+- id: moroccan-castilian-war
+  kind: war
+  title: The Moroccan War on Castile
+  state: closed
+  from: '1337-07-31'
+  to: '1340-10-28'
+  premise: Reclaim Andalusia
+  outcome: 'Defeat for Morocco: it gives up all its land on the Iberian side of the Strait (Trent''s account).'
+  part: potential
+  sides:
+    attackers:
+      - Morocco
+      - Tlemcen
+      - Tunis
+      - Tripoli
+      - Gabès
+      - Gafsa
+      - Touggourt
+      - Bijaya
+    defenders:
+      - Castile
+  note: >-
+    Tunis and its vassals (Tripoli, Gabès, Gafsa, Touggourt, Bijaya) joined Morocco on 9 November 1338.
+    Castile won the first five battles; Morocco took the sixth at Shalūqa in June 1339, and Tlemcen held
+    al-Karash in August. Morocco's side holds Ishbīliya and the whole Murcia area (Mursiyya, Siyāsa,
+    Qarṭājanna, Lawraqa, Mūla); Trent's account has Tunisian troops taking Murcia. Granada can still be called
+    in and has not been.
+  game: Moroccan-Castilian War
+- id: war-on-aragon
+  kind: war
+  title: The War on Aragon
+  state: closed
+  from: '1339-05-24'
+  to: '1340-08-11'
+  premise: Reclaim Andalusia (Granada's casus belli against Aragon)
+  outcome: >-
+    Victory: Aragon cedes thirteen locations south of Castellón and Teruel, from Balansiyya and Shāṭiba to
+    Uryūla and Jumalla, and pays war reparations for ten years
+  sides:
+    attackers:
+      - Granada
+    defenders:
+      - Aragon
+      - Majorca
+      - Navarre
+      - Cagliari
+  note: >-
+    Declared on 24 May 1339 (confirmed by the save). Majorca, Navarre and Cagliari joined Aragon at once.
+    Morocco and Tunis can be called in and have not been. The first fighting was a skirmish at Jumalla in
+    August; on 8 November Ibn al-Khaṭīb won a great victory at Uryūla (Orihuela), worth 25 war score (Trent's
+    screenshots), and laid siege to the town. Uryūla fell on 30 May 1340, as Castile laid siege to Mursiyya
+    and cut the road home (Trent's account). Peace was made on 11 August 1340. Trent's account: with Aragon's
+    field army down to some 6,000 against our 16,000, and our own supply in doubt, the sultan threatened to
+    march on Barcelona; Aragon conceded everything south of Castellón de la Plana and Teruel, with a large
+    indemnity.
+  game: 1st Granada–Aragon War
+- id: second-moroccan-war
+  kind: war
+  title: The Second Moroccan War on Castile
+  state: closed
+  from: '1346-10-16'
+  to: '1351-06-03'
+  premise: Reclaim Andalusia
+  outcome: >-
+    Morocco surrenders to Castile (3 June 1351), keeping the Balearics but losing its alliance with Granada;
+    Granada had already won the Peace of Qurṭuba (1349) and Qarmūna and Qusanṭīna (1351)
+  sides:
+    attackers:
+      - Morocco
+      - Tafilalt
+      - Touat
+      - Tlemcen
+      - Tunis
+      - Tripoli
+      - Gabès
+      - Gafsa
+      - Bijaya
+      - Sahel
+      - Granada
+      - Valencia
+    defenders:
+      - Castile
+      - Portugal
+      - Aragon
+      - Majorca
+      - Cagliari
+  note: >-
+    Six years after its defeat of 1340, Morocco declares war again under the game's scripted Marinid casus
+    belli to reclaim al-Andalus. Castile's alliances bring in Portugal and Aragon, with Majorca and Cagliari,
+    so all three crowns of Iberia stand together. Tafilalt, Touat and Tlemcen march with Morocco at once;
+    Tunis and its marches (Tripoli, Gabès, Gafsa, Bijaya and the Sahel) join on 18 October. Granada, Castile's
+    tributary and alone on the Iberian shore, answered the call on 18 October and brought the Ṭāʾifa of
+    Balansiyya with it; going to war with its overlord suspended the tributary bond. The Volunteers of the
+    Faith rose again under Yaḥyā Raḥḥū (saves of 18 October and 8 November 1346; Trent's account). Tripoli,
+    Gafsa and the Sahel had left Morocco's side by July 1348. Portugal made a separate peace on 2 September
+    1348, annulling its treaties with Castile for ten years and paying reparations (Trent's screenshot). On 27
+    January 1349 Castile, broken by the plague, made a separate peace with Granada alone, the Peace of
+    Qurṭuba: Granada took 23 locations from Qurṭuba and Ishbīliya to Jayyān, the Ṭāʾifa of Mursiyya took the
+    Murcia area, Castile paid reparations and annulled its treaties with Aragon, and Granada returned to the
+    name of Castile's tributary. Morocco fought on. Aragon made peace on 8 December 1350, giving Morocco the
+    Balearic Islands and letting Tunis take Aragon's Sardinian vassal, the County of Cagliari, as its own
+    subject; Majorca's lands on the mainland passed to Aragon on 1 January 1351. With Castile at the tipping
+    point, Granada sold its promise not to fund the Marīnids for Qarmūna and the silver mines of Qusanṭīna,
+    ceded on 21 May 1351. On 3 June Morocco surrendered to Castile, and the peace annulled Morocco's treaties
+    with Granada (save of 3 June 1351; Trent's account).
+- id: sevillan-revolt
+  kind: war
+  title: The Revolt of the Kingdom of Sevilla
+  state: closed
+  from: '1353-02-01'
+  to: '1353-07-05'
+  premise: Independence for the Kingdom of Sevilla
+  outcome: >-
+    The revolt is crushed: Granada destroys the rebel armies before Castile's arrive, and at the peace Castile
+    reaffirms the border of the Peace of Qurṭuba; all 25 locations return to Granada (5 July 1353)
+  sides:
+    attackers:
+      - Kingdom of Sevilla
+    defenders:
+      - Granada
+      - Castile
+      - Valencia
+      - Murcia
+  note: >-
+    The Castilian peasants of the lands won at the Peace of Qurṭuba and in 1351 rose and declared a Kingdom of
+    Sevilla, taking all 25 of those locations (Qurṭuba, Ishbīliya, Jayyān, Qarmūna, Qusanṭīna and the rest) in
+    a war of independence. Qashtāla, Granada's overlord, joined on Granada's side, with the ṭāʾifas of
+    Balansiyya and Mursiyya (save of 2 February 1353; Trent's account). The rebels raise few men (their
+    manpower is about 360 against Granada's 3,100), but they hold the land. Granada crushed the rising before
+    the Castilians could arrive: the rebels broke against the Granadan army at Sharīsh on 6 June, and their
+    last army of 2,100 was destroyed at Shalūqa al-Kubrā on 27 June (save of 3 July 1353). The revolt ended on
+    5 July 1353: Qashtāla reaffirmed the old border, and all 25 locations returned to Granada (save of 5 July
+    1353).
+- id: marinid-submission-war
+  kind: war
+  title: The Marīnid War for the Submission of Granada
+  state: closed
+  from: '1360-06-26'
+  to: '1365-08-31'
+  premise: Morocco demands Granada's submission as its subject
+  outcome: >-
+    For Granada: a separate white peace on 30 July 1362, with Morocco's promise to respect its lands. For
+    Castile: defeat. On 31 August 1365 Morocco took the north shore of the Strait, eleven towns from Ronda to
+    Algeciras. In January 1366 it made nine of them into a fiefdom called the Kingdom of Sevilla (save of 5
+    April 1366).
+  sides:
+    attackers:
+      - Morocco
+      - Tafilalt
+      - Touat
+      - Tlemcen
+    defenders:
+      - Granada
+      - Castile
+      - Portugal
+  note: >-
+    Morocco declared war on Granada on 26 June 1360 under the Battle for the Strait's casus belli to demand
+    Andalusī submission (the game calls it the First War for the Submission), with its subjects Tlemcen,
+    Tafilalt and Touat. Granada is the target; Qashtāla joined as Granada's overlord and Portugal through its
+    pact with Qashtāla. Qashtāla had only 87 men in its manpower pool after its war in Arghūn. The war allows
+    up to 75% war score from battles. It came a year before Granada had meant to re-ally with Morocco for a
+    war of independence, and despite relations of +150 (save of 26 June 1360; Trent's account). By June 1362
+    every attempt on Granada had failed: Granadan armies beat the landings at al-Mariyya (7 November 1360),
+    Sharīsh (23 March 1361) and twice before Ishbīliya (13 December 1361, 8 April 1362). Elsewhere the
+    Marīnids ranged deep into Castile, breaking Castilian armies at El Escorial and Cáceres, and their and
+    Tilimsān's fleets ruled the sea (save of 10 June 1362). About June 1362 Granada made a separate white
+    peace with Morocco under threat of throwing its full weight into the war, with Morocco promising to
+    respect Granada's territory; Castile and Portugal were left to fight on (Trent's account).
+- id: war-of-independence
+  kind: war
+  title: The War of Independence
+  state: closed
+  from: '1363-05-20'
+  to: '1366-04-05'
+  premise: Independence from Castile
+  outcome: >-
+    Victory. Granada declared its independence from Castile. Portugal (11 September 1364) gave up the Algarve
+    and the lower Alentejo, thirteen towns. Aragon (2 September 1365) paid reparations. Castile (5 April 1366)
+    gave up Niebla and Huelva, six towns. All three are to pay reparations for ten years. The game put Granada
+    back under Castile as a tributary after the peace; Trent will remove that with the console.
+  sides:
+    attackers:
+      - Granada
+      - Valencia
+      - Murcia
+    defenders:
+      - Castile
+      - Portugal
+      - Aragon
+  note: >-
+    On 20 May 1363, the day the truce with Castile ran out, Granada went to war for its independence and the
+    amir marched north. The court had begun the claim on 31 December 1361; the casus belli the game gives is
+    'reclaim al-Andalus'. Castile came to it with only 183 men in its pool and 58 towns, Toledo among them,
+    occupied by the Marīnids, with whom its war went on (Aragon now on Castile's side there). Portugal, which
+    had made its own peace with Morocco, stood with Castile; the court's first aim was to knock it out of the
+    war (save of 20 May 1363; Trent's account). The ṭāʾifas of Balansiyya and Mursiyya came to it untouched,
+    having been kept out of the Marīnid war. Aragon joined Castile against Granada on 27 July 1363. Valencia
+    and Murcia march with Granada; the Mamlūks could be called. On 1 August 1363 Yūsuf I died at Ayamonte on
+    the march into Portugal; the war passed to his son Saʿd and the regent Naṣr al-Istijjī. Saʿd's army struck
+    first into Portugal and laid siege to Lisbon, but the Portuguese army was not there. In the east Portugal
+    and Aragon had joined forces and twice beaten the ṭāʾifas, at Cañete (1 March 1364) and Castellón de la
+    Plana (5 April). The Granadan army marched east and chased them halfway across Iberia. It caught them at
+    Zafra, Castilian land held by the Marīnids, and broke them on 3 August. It then destroyed what was left of
+    the Portuguese and the Aragonese, one after the other, before Lisbon on 10 and 11 September (save of 11
+    September 1364; Trent's account). Portugal made a separate peace that same day, 11 September 1364. It gave
+    up thirteen towns of the Algarve and the lower Alentejo, 83,000 people, which the court means to make a
+    vassal state once the war is won. Castile and Aragon fight on. The ṭāʾifas held the line in the east:
+    Valencia beat off an Aragonese squadron in the gulf of Valencia (25 September 1364) and a raid at Tortosa
+    (9 March 1365), but the Murcian host was destroyed at Cuenca (27 June 1365) (autosave of 1 July 1365;
+    Trent's account). Murād beat the Aragonese again at Cañete on 14 July 1365, and Aragon made its own peace
+    on 2 September. On 6 January 1366 he destroyed the last Castilian army in the field, under the renegade
+    Ibn al-Khaṭīb, at San Clemente. Castile made peace on 5 April 1366 (saves of 5 April 1366).
+- id: mamluk-cilician-war
+  kind: war
+  title: The Mamlūk War on Cilicia
+  state: closed
+  from: '1364-06-18'
+  to: '1365-07-13'
+  premise: Conquer a province of Cilicia (the Mamlūk sultan's casus belli from his council)
+  outcome: >-
+    Mamlūk victory. Twelve Cilician towns passed to the Mamlūks on 13 July 1365 (save of 5 April 1366, from
+    the towns' change of owner).
+  sides:
+    attackers:
+      - Mamluks
+      - Granada
+      - Valencia
+      - Murcia
+    defenders:
+      - Cilicia
+  note: >-
+    The Mamlūks, Granada's allies since 1349, went to war with Armenian Cilicia on 18 June 1364 with their
+    subjects, and Granada and its ṭāʾifas were drawn in as allies. It is a war at the far end of the sea,
+    fought in the middle of Granada's own (save of 11 September 1364).
+  game: Mamluk–Cilicia war
+- id: second-marinid-submission-war
+  kind: war
+  title: The Second Marīnid War for the Submission of Granada
+  state: closed
+  from: '1368-10-24'
+  to: '1370-09-12'
+  premise: Morocco demands Granada's submission as its subject
+  outcome: >-
+    Victory. Morocco gave up the whole north shore of the Strait: Ronda, Marbella and the nine towns of its
+    puppet Kingdom of Sevilla, which ceased to exist. It also paid reparations and signed an agreement against
+    piracy. Granada's own losses came to about 13,000 men by the war screen at the peace, which counts
+    attrition too. The 22 battles on record account for 9,900 of them, and for about 23,000 Moroccan dead.
+    Granada's allies lost about 4,200 more.
+  sides:
+    attackers:
+      - Morocco
+      - Tlemcen
+      - Tafilalt
+      - Touat
+      - Kingdom of Sevilla
+    defenders:
+      - Granada
+      - Taifa of the Algarve
+      - Valencia
+      - Murcia
+      - Mamluks
+      - Dulkadirids
+      - Mecca
+      - Medina
+      - Al ʿAlī
+      - Al Mira
+      - Döger
+      - Āl Faḍl
+      - Barqa
+      - Banu Kanz
+      - Suakin
+      - Western Oases
+  note: >-
+    On 24 October 1368 Morocco declared war again under the Battle for the Strait's casus belli, which it had
+    held again since 1 August 1367, to demand Andalusī submission. With it came its subjects Tlemcen, Tafilalt
+    and Touat and its new fiefdom on the north shore, the Kingdom of Sevilla. In May Morocco had insulted
+    Granada's envoys and broken the trade agreements. Granada fights with its three ṭāʾifas, and with the
+    Mamlūks and their eleven vassals, allies again since January 1367. At the declaration Granada had 3,300
+    men under arms and 5 ships. Morocco had 800 men and 29 ships, Tafilalt 550 men, and the Mamlūks 3,000.
+    Nobody had raised levies yet. The game counts this as the first war for the submission, although Morocco
+    fought one in 1360 (save of 24 October 1368; Trent's account). Granada won the first battle at Cádiz on 11
+    November 1368. By March 1369 the Marīnid lands on this shore were subdued, all but the fortress of Cádiz,
+    and the first Marīnid landing had been thrown back into the sea (Trent's account). By March 1369 the
+    levies were up. Fās and its allies had 47,000 men under arms, 23,600 of them Moroccan, plus 77 ships.
+    Granada's side had 113,000 and 59 ships, but 71,600 of those men were Egyptian. Granada itself had 8,800
+    and its ṭāʾifas 2,700. The war score stood at +31% for Granada (Trent's war screen). The war's first
+    winter: Granada took Marbella, Gibraltar, Tarifa and the north shore, and Murād threw the first Marīnid
+    landing back into the sea at Marbella (8 February 1369). Then Fās flooded men across the Strait. Jerez was
+    lost and retaken. Osman relieved Cádiz and broke Khālid's assault on it (26 June). A landing at Málaga
+    destroyed the Murcian host (16 September). The crown borrowed 469 from the estates to hire 4,800
+    mercenaries. Khālid held the line in the pitched battle at Antequera (15 October) and won at Almuñécar (8
+    November), and the first Mamlūk troops landed at Gérgal. By 18 November 1369 Morocco held the north shore
+    again, except Niebla (save of 18 November 1369; Trent's account). After the November 1369 save, Khālid
+    destroyed a landing at Adra (21 November) and held Málaga beside the first Mamlūk army (16 December), and
+    again against Muṣliḥ al-Dīn (8 March 1370). The Mamlūks were thrown back at Jerez (31 March), and Khālid
+    retook it six days later. A Marīnid landing in al-Gharb was destroyed at Beja (31 May). The last battle
+    was fought at Málaga on 12 September 1370, the day of the peace (autosave of 1 July 1370; Trent's
+    screenshots).
+  game: 1st War for the Submission of Granada
+- id: war-of-the-upper-march
+  kind: war
+  title: The War of the Upper March
+  state: closed
+  from: '1373-12-01'
+  to: '1375-03-15'
+  premise: 'The Reconquest of Iberia: Aragon''s lands, at reduced cost (won with the Battle for the Strait)'
+  outcome: >-
+    Granadan victory. Aragon gave up every town it still held, 34 of them and half a million people, and
+    ceased to hold land; Malta passed to the Mamlūks and Sicily paid reparations; King Joan was let go to
+    Palermo (peace of 15 March 1375, war score +61%).
+  sides:
+    ours:
+      - Valencia
+      - Murcia
+      - Taifa of the Algarve
+      - Mamluks
+    theirs:
+      - Aragon
+      - Sicily
+      - Athens
+      - Negroponte
+  note: >-
+    On 1 December 1373 Granada declared war on Aragon under the Reconquest of Iberia claim, the second it had
+    drawn up, six months after the truce of 1365 ran out. The sultan marched the armies of the realm to
+    Balansiyya himself in early October and meant to fight with his regulars, raising levies only if he had to
+    (Trent's account). Aragon fights with Sicily, the crown its king also wears, and Sicily's subjects Athens,
+    Negroponte and a third; Sicily's allies Genoa, busy with its own war against Bologna and Pisa since May
+    1373, and the Pope did not join. The Mamlūks and their vassals came in on Granada's side, their galleys
+    pointed at the shores of Sicily (Trent's account). At the declaration Granada had 3,300 men under arms,
+    all regulars, and 4 ships; its ṭāʾifas none. Aragon had 400 men and 3 ships, Sicily 3 ships, the Mamlūks
+    4,050 men. Nobody had raised levies (save of 1 December 1373). The sultan's army of 3,300 met the
+    Aragonese host of 5,300 before Barcelona on 29 January 1374. He gave the right wing and two-thirds of the
+    cavalry to his brother Abū al-Ḥasan ʿAlī; the heavy infantry held the centre while the wings broke the
+    Aragonese flanks, then closed on the levies in the middle. When it ended on 19 February, Aragon had lost
+    3,375 men and Granada 1,228, and the war score stood at +31% (Trent's account and battle screens). The
+    sultan rode the remnant down at Tarragona on 9 March 1374: 1,343 of theirs killed or taken for 31 of ours,
+    and the war score rose to +38%. All that was left of Aragon's army was 161 levies in the mountains
+    (Trent's account). In late October 1374 the Mamlūk vassal of Barqa, under Shaykh Ramaḍān, took Malta, held
+    for Sicily by its vassal Athens, with 2,900 men (Trent's account); on 12 November the Sicilian fleet sank
+    all eight of Barqa's ships off the island. By January 1375 Granada had Barcelona under siege, and a second
+    Mamlūk army of 4,272 under a Baḥrī cousin was marching through Girona to Castelló d'Empúries (6 January
+    1375, Trent's account). On 15 March 1375, with Barcelona 282 days under siege and Barqa's 3,000 ashore in
+    Sicily after storming Siracusa, King Joan accepted peace: all of Aragon to Granada, Malta to the Mamlūks,
+    reparations from Sicily, and the king's own safe passage to Palermo, alive and free. Montpellier had
+    already gone over to England and Sassari to Arborea (Trent's account; saves of 15 March 1375). In battle
+    Granada lost 1,260 men and Aragon 4,706.
+  game: Reconquest of Iberia
+- id: war-of-the-aragonese-restoration
+  kind: war
+  title: The War of the Aragonese Restoration
+  state: closed
+  from: '1375-06-05'
+  to: '1378-04-06'
+  premise: >-
+    The Reconquest of Iberia against Castile (the claim drawn up in March 1371); framed by the Emperor as the
+    restoration of Aragon's lands, Saraqusṭa and the Aragonese heartland among them, to the renewed Kingdom of
+    Aragon
+  outcome: >-
+    Victory for al-Andalus and the renewed Aragon. Castile restored the Aragonese heartland, 24 towns with
+    Zaragoza, to the Ṭāʾifa of Aragon, gave up 46 towns of the Middle and Lower Marches with Toledo, Badajoz
+    and Mérida to al-Andalus, and paid reparations (peace of 6 April 1378, war score +100%).
+  sides:
+    ours:
+      - Aragon
+      - Catalonia
+      - Valencia
+      - Taifa of the Algarve
+      - Mamluks
+      - Morocco
+    theirs:
+      - Castile
+      - Portugal
+      - Papal States
+      - Faenza
+      - Siena
+  note: >-
+    On 5 June 1375, the day the truce of 1366 ran out, al-Andalus declared war on Castile under the Reconquest
+    of Iberia claim. The Emperor framed it as the restoration of Aragon, whose heartland from Zaragoza to
+    Teruel Castile held. The French were pushing the English into the sea, and if al-Andalus waited, Rome
+    would rally France to blunt its advance; it could not afford to wait. A levy was laid on the nobles and on
+    the ṭāʾifas, in gold and in men (Trent's account): the treasury stood at 1,579 against 286 in March. Rome
+    and Lisbon answered the Castilian call: Portugal, in personal union with Castile since 1367, and the Papal
+    States with three vassals, Faenza, Siena and a third. Egypt answered al-Andalus's, with its vassals; the
+    four ṭāʾifas, Aragon and Catalonia among them, fought beside the Emperor (Trent's account; save of 5 June
+    1375). At the declaration al-Andalus had 3,300 men under arms, all regulars, and 4 ships; its ṭāʾifas 3
+    ships and no men. Castile had 1,750 men and 10 ships, Portugal 1,050 and 6, Rome 684 and 4, the Mamlūks
+    3,930. Nobody had raised levies. France, at +25% in its war with England, had 12,500 men in the field
+    (save of 5 June 1375). The campaign opened in the east: on 12 December 1375 Alfonso de Oñate's 24,800
+    Castilians fell on the ḥājib Francesc's 6,100 Catalans at Chelva (Xelva) on the outskirts of Valencia, and
+    the Catalans broke before the Emperor arrived. He gave battle there on unfavourable ground from 13
+    December, 13,800 against 23,900. The cavalry tried to sweep both flanks and the centre held by a thread,
+    but on 14 January 1376 the field was lost: 8,169 of ours against 7,517 Castilians, and −12 war score
+    (Trent's account and battle screens). A week later the Pope's 2,000, landed on the coast, destroyed the
+    2,567 Catalans left at Barcelona, and on 1 March the Portuguese and Castilian fleets sank or took 19 of
+    Catalonia's 20 ships off Cape Ben Sakka (save of 13 January 1377). The alliance with Morocco was signed on
+    16 January 1376. By May 1376 the war score stood at −39%. Then the Pope landed an army on the Catalan
+    coast, and on 25 May the Emperor destroyed it before Girona, 2,252 of theirs for 234 of ours (+3 war
+    score; −36% after it). Defeat in detail, Trent wrote, will be the name of the game (Trent's account and
+    battle screens). On 12 June Siena followed its master: its 1,558 men came against the Emperor before
+    Girona and were destroyed to the last, for 101 of ours (+2 war score). With a Castilian army besieging
+    Barcelona, the Emperor fell back on the old strategy of mercenaries and the faithful, raising more than
+    7,000 veterans from the Marches to relieve it (Trent's account, June 1376). Morocco, held out of the war
+    by its truce with Castile, sent a gift of gold that paid for the mercenaries. On 16 August 1376 the second
+    great battle was joined at Agramunt: 13,400 against 18,350, under the same Castilian general as at Šalba
+    (Trent's account and screenshot). It ended on 1 September in slaughter: 12,724 of Castile's 19,073 lost
+    against 2,839 of the Emperor's 15,038, +19 war score, and the war stood at −16% where it had been −42% two
+    days before. The Mamlūk armies, though, were trapped across the sea by the far larger Iberian fleets. In
+    early December 1376 the crown sent Catalan shipwrights to Alexandria, Damietta, Acre, Antioch and Tarsus
+    to build shipbuilding wharves with Mamlūk coin and to teach the first modern galleys (Trent's account). On
+    31 January 1377 the Emperor broke the rebuilt Castilian army before Zaragoza, 5,675 of theirs for 705 of
+    ours (+8), and on 13 June he crushed the last of it at Calatayud, 2,029 for 385 (+3); the war stood at
+    +10%, and attention turned to the Portuguese (Trent's account and battle screens). On 30 September 1377,
+    the day its truce with Castile ran out, Morocco answered the court's call and joined the war (Trent's
+    account). In January 1378, with Valladolid under siege, the Emperor met the Portuguese at Sanlúcar la
+    Mayor outside Seville and threw them back across the border, 8,343 of theirs for 1,069 of ours (+12); the
+    war stood at +58% (Trent's account and battle screens). At sea, Morocco's fleet sank five Castilian ships
+    off Cape São Vicente on 19 October 1377, though the Iberians sank Catalonia's last ship at Setúbal and
+    three of Tlemcen's off Cape Mondego (save of 6 April 1378). By April 1378 Valladolid was weeks from
+    falling, the Emperor's army was marching on Lisbon, the Moors had cleared a path through the sea and the
+    first Mamlūk army was off the coast of Tunis. Offered peace or blood, as the Aragonese had been, the
+    Iberians chose peace on 6 April 1378 (Trent's account; saves of 6 April 1378).
+  game: Reconquest of Iberia
+- id: revolt-of-tulaytula
+  kind: war
+  title: The Revolt of Ṭulayṭula
+  state: closed
+  from: '1382-12-01'
+  to: '1383-04-30'
+  premise: Independence for a Kingdom of Toledo
+  outcome: >-
+    The revolt is crushed: the Toledan host is broken at Montánchez (22 February 1383) and its last army
+    destroyed at Jaén on 30 April 1383, when the rebellion ends.
+  sides:
+    attackers:
+      - Kingdom of Toledo
+    defenders:
+      - al-Andalus
+      - Aragon
+      - Catalonia
+      - Valencia
+      - Taifa of the Algarve
+  note: >-
+    On 1 December 1382 Toledo rose against al-Andalus, drove out its governor and damaged the madrasa in its
+    heart (Trent's account). The revolt took 58 towns, about 520,000 people, nearly all Castilian and
+    Catholic: the lands won from Castile in 1378, and also Murcia, Jaén, Úbeda, Baeza and the Huelva coast.
+    The rebels raised 5,871 men, 5,420 of them levies, against the Emperor's 3,719 regulars; the ṭāʾifas
+    joined the defence but had no men raised. Stability had fallen to 15. The Mamlūks and Morocco, as allies,
+    were not drawn in (save of 8 December 1382). As in 1353, when the Kingdom of Sevilla rose, the rebels hold
+    the land but cannot hold the field for long, Trent expects. The one great battle came at Montánchez (Munt
+    Šāqir) on 22 February 1383, the rebels' 4,911 against the Emperor's 10,588; on 30 April he destroyed their
+    last 1,807 men at Jaén for 44 of his own, and the rebellion ended that day (Trent's account and battle
+    screens).
+  game: 1st Rebellion Against Andalusia
+- id: war-of-the-league
+  kind: war
+  title: The War of the League
+  state: closed
+  from: '1394-03-04'
+  to: '1395-06-22'
+  premise: The Reconquest of Iberia against Castile (ready from 1 January 1394)
+  outcome: >-
+    Victory. Castile gave up 51 towns, Madrid, Salamanca, Ávila, Cuenca and Cáceres among them, and paid
+    reparations for ten years; Portugal gave up 20, Lisbon, Setúbal, Santarém and Évora among them (the Peace
+    of Ramaḍān, 22 June 1395, war score +100%).
+  sides:
+    ours:
+      - Aragon
+      - Catalonia
+      - Valencia
+      - Taifa of the Algarve
+      - Morocco
+      - Mamluks
+    theirs:
+      - Castile
+      - Portugal
+      - Papal States
+      - Faenza
+      - Siena
+      - Andorra
+  note: >-
+    On 4 March 1394 (1 Jumādā al-Ūlā 796) al-Andalus declared war on Castile for the third time, in the third
+    war of the Istirdād. The court named it after the league Castile, Portugal and Andorra had sworn against
+    the empire in 1393. It came a year after the truce of 1378 ran out. Castile had broken its union with
+    Portugal in 1389, though the two stayed allied, and its king Fernando had died on 6 January; his son
+    Pedro, twenty-three, faced the war. Castile, Portugal and Andorra had formed a coalition against
+    al-Andalus in 1393. Portugal, the Papal States with Faenza and Siena, and Andorra joined Castile; the four
+    ṭāʾifas, Morocco and its vassals, and the Mamlūks and theirs joined al-Andalus. At the declaration
+    al-Andalus had 4,900 regulars and 16 ships; Castile 750 men and 19 ships, Portugal 1,550 and 7, Rome 1,750
+    and 14; Morocco 1,900 and 30 ships, the Mamlūks 4,050 (save of 4 March 1394; Trent's account). Castile's
+    main host of some 24,000 fell first on the small ṭāʾifa armies around Sigüenza in August 1394. The
+    Emperor's 17,650 chased it north through August and September, and on 12 October cut off its pursuit of an
+    Aragonese army at Pamplona and beat it, 2,441 of theirs for 1,450 of ours (+5); Castile retreated in
+    haste, and the war stood at +37% (Trent's account and screens). The Castilian host came back south in
+    November, and on 5–14 December 1394 the Emperor caught it at Ejea de los Caballeros on unfavourable
+    ground. Against Agustín Arce, Grand Master of Alcántara, he won anyway: 10,808 Castilians lost to 4,664 of
+    ours (+20), and the war stood at +64% (Trent's account and battle screens). On 4 February 1395, 897
+    Aragonese riders caught the 10,886 survivors of Ejea at Peñafiel on the Duero and destroyed them, 10,564
+    lost without a single Aragonese casualty (+14). Portugal made its stand at Portalegre from 31 May 1395; on
+    18 June it broke, 7,087 lost to 3,744 of ours (+14), and the war score stood at +100% (Trent's account and
+    battle screens). On 22 June 1395 (3 Ramaḍān 797) King Pedro surrendered at the Peace of Ramaḍān, and
+    Portugal was made to follow (saves of 22 June 1395).
+  game: Reconquest of Iberia
+- id: crusade-of-806
+  kind: war
+  title: The Crusade of 806
+  state: closed
+  from: '1404-02-01'
+  to: '1404-10-22'
+  premise: A crusade proclaimed by the Pope against al-Andalus, declared on the Ṭāʾifa of Aragon
+  outcome: >-
+    Victory. The Pope was humiliated, paid 585 in gold and owes war reparations; no land changed hands (the
+    Peace of Avignon, 22 October 1404).
+  sides:
+    ours:
+      - Aragon
+      - Catalonia
+      - Valencia
+      - Taifa of the Algarve
+      - Taifa of Salamanca
+      - Taifa of Cuenca
+      - Mamluks
+      - Morocco
+    theirs:
+      - Papal States
+      - Faenza
+      - Siena
+      - Magdeburg
+      - Cologne
+      - Mainz
+  note: >-
+    On 1 February 1404 (19 Rajab 806) the Pope proclaimed the first crusade against al-Andalus and declared
+    war on its subject, the Ṭāʾifa of Aragon; al-Andalus came in to defend it. With the Pope stood his vassals
+    Faenza and Siena and a few princes of the Empire, Magdeburg, Cologne and Mainz among them: some 5,100 men
+    under arms at the declaration, most of them levies, and 26 papal ships, the Pope's own regiments far under
+    strength. With al-Andalus stood all six ṭāʾifas, the Mamlūks and their vassals (Mecca, Medina, the
+    Dulkadirids, Barqa, Suakin and others) and Morocco with Tafilalt, Touat and Tlemcen. Al-Andalus had 4,900
+    regulars and 32 ships; the Mamlūks 4,050 men, Morocco 2,400 and 30 ships (save of 3 February 1404). The
+    game ranked al-Andalus fourth among the powers. The papal fleet sank two Catalan ships in the first week,
+    but the Moroccan and Catalan fleets swept it from the sea by August. On land the crusaders achieved
+    nothing: Siena's contingent died at Aix in May. With French military access the Emperor marched on Avignon
+    from 4 July and took the Pope's city. At Barjols in Provence the papal army beat off the Valencians on 10
+    October, and on the 20th the Emperor destroyed it. On 22 October 1404 (16 Rabīʿ al-Thānī 807) the Pope
+    made peace.
+  game: The 1st Crusade against Andalusia
+- id: risings-of-807
+  kind: war
+  title: The Risings of 807
+  state: closed
+  from: '1405-01-01'
+  to: '1405-08-24'
+  premise: Three wars of independence against al-Andalus and the Ṭāʾifa of Shalamanka
+  outcome: >-
+    Victory. Ciudad Rodrigo fell apart on 8 July 1405, six days after Granadilla, and its sixteen towns went
+    back to the Ṭāʾifa of Shalamanka. The Kingdom of Toledo and Estremadura collapsed on 24 August 1405, and
+    their forty-eight towns returned to the crown.
+  sides:
+    ours:
+      - Aragon
+      - Catalonia
+      - Valencia
+      - Taifa of the Algarve
+      - Taifa of Salamanca
+      - Taifa of Cuenca
+    theirs:
+      - Kingdom of Toledo
+      - Estremadura
+      - Ciudad Rodrigo
+  note: >-
+    Ten weeks after the Peace of Avignon the conquered north rose. On 1 January 1405 (28 Jumādā al-Ākhira 807)
+    the Portuguese lands proclaimed a Kingdom of Estremadura, 18 towns from Santarém and Torres Vedras to
+    Évora and Elvas, and the Castilians of La Mancha and the Madrid country rose again as a Kingdom of Toledo,
+    30 towns from Madrid, Alcalá and El Escorial through Ciudad Real and Ocaña to Albacete, Hellín and
+    Caravaca; Toledo itself, Lisbon and Setúbal stayed loyal. On 2 January the Leonese of the Ṭāʾifa of
+    Shalamanka rose as Ciudad Rodrigo, taking 16 of its 21 towns, Salamanca, Ávila and Plasencia among them.
+    Al-Andalus held 100 towns of its 148, and 1,295,000 of its 1,841,000 people. The rebels had some 11,000
+    men, nearly all levies: Toledo 5,100, Ciudad Rodrigo 3,100, Estremadura 2,900; al-Andalus 3,400 regulars
+    and the ṭāʾifas 1,250 (save of 7 January 1405). Estremadura laid siege to al-Ushbūna. The game gives
+    rebellion battles no war score. The war's battles were Buitrago (28 January, Toledo over Qūnka's few men),
+    Cuenca (18 March, the new Emperor's first battle), Granadilla (2 July, Khālid ibn Yaḥyā's joint host over
+    Ciudad Rodrigo), Cuenca II (10 July) and al-Ushbūna (5 August, where al-Gharb threw back Estremadura)
+    (saves of 8 July and 24 August 1405).
+  game: 1st Rebellion Against Andalusia; 1st Rebellion Against Salamanca
+- id: war-of-jilliqiya
+  kind: war
+  title: The War of Jillīqiya
+  state: closed
+  from: '1410-06-29'
+  to: '1411-11-01'
+  premise: The Reconquest of Iberia against Castile, declared the day the truce of the Peace of Ramaḍān ran out
+  outcome: >-
+    Victory. Portugal was annexed whole, 34 towns, and Castile gave up 63, Old Castile, León and Navarre,
+    keeping 45 in the north with its capital at Oviedo (the Peace of Rajab, 1 November 1411).
+  sides:
+    ours:
+      - Aragon
+      - Catalonia
+      - Valencia
+      - Taifa of Salamanca
+      - Taifa of Cuenca
+      - Morocco
+      - Tlemcen
+      - Tafilalt
+    theirs:
+      - Castile
+      - Portugal
+  note: >-
+    On 29 June 1410 (25 Ṣafar 813) the truce of 1395 ran out and the Emperor Ismāʿīl declared war on Castile
+    at once. Portugal joined Castile. Fās answered the Emperor's call with Tlemcen and Tafilalt; the Mamlūks
+    were busy in the Fertile Crescent and not needed (Trent). On the day of the declaration al-Andalus had
+    4,900 regulars and 53 ships, Morocco 2,400 men and 37 ships; Castile 1,650 regulars and 25 ships, Portugal
+    750 and 8. No levies had yet been raised (save of 29 June 1410). Castile capitulated on 2 September 1411.
+    Portugal fought on, and the Emperor refused a separate peace for concessions: this war was to be the end
+    of Portugal (Trent, September 1411). The Emperor Ismāʿīl named it the War of Jillīqiya, the old Arab name
+    for the whole Christian north-west beyond the Duero, the country the armies of al-Manṣūr had marched
+    through to Shant Yāqub; it is the fourth war of the Istirdād.
+  game: Reconquest of Iberia
+- id: rising-of-zamora
+  kind: war
+  title: The Rising of Zamora
+  state: closed
+  from: '1420-06-01'
+  to: '1420-08-11'
+  premise: A war of independence against the Ṭāʾifa of Liyūn
+  outcome: Victory. The rising was over on 11 August 1420, the day after Fermoselle. Liyūn lost no towns.
+  sides:
+    ours:
+      - Taifa of León
+      - Aragon
+      - Catalonia
+      - Valencia
+      - Taifa of Cuenca
+      - Taifa of Minho
+      - Taifa of Burgos
+      - Taifa of Pamplona
+    theirs:
+      - Zamora
+  note: >-
+    On 1 June 1420 (19 Jumādā al-Ūlā 823) the Castilians of the province of Zamora, in the Ṭāʾifa of Liyūn,
+    rose under Eduardo de Avellaneda. Al-Andalus and all its ṭāʾifas were bound to Liyūn's defence; Valencia
+    left the war on 1 August, the day it was taken into the crown. The rebels never had more than a few
+    hundred men under arms. The war's one battle was Fermoselle (10 August), where the Emperor Ismāʿīl
+    destroyed them (save of 11 August 1420).
+  game: Independence war of Zamora against the Ṭāʾifa of Liyūn
+- id: mamluk-ottoman-war
+  kind: war
+  title: The Mamlūk War on the Ottomans
+  state: closed
+  from: '1423-09-19'
+  to: '1424-08-08'
+  premise: An attack on the Ottomans before they could attack Egypt (the Mamlūk casus belli 'attack threat')
+  outcome: >-
+    Mamlūk victory. Thirty-seven towns of central Anatolia, from Kayseri and Niğde to Malatya and Çorum,
+    passed to the Mamlūks on 8 August 1424. Al-Andalus took nothing; its truce with the Ottomans runs to 8
+    February 1436 (save of 14 August 1424).
+  sides:
+    attackers:
+      - Mamluks
+      - Mecca
+      - Medina
+      - the Mamlūk vassals
+      - al-Andalus
+      - the seven ṭāʾifas
+    defenders:
+      - Ottomans
+      - Nafusa
+  note: >-
+    The Mamlūks of Miṣr, allies of al-Andalus since 1367, declared war on the Ottomans and Nafusa, in the
+    mountains of Tripolitania, on 19 September 1423 (13 Shawwāl 826), and on 1 October (25 Shawwāl 826) called
+    the Emperor to arms. Joining cost al-Andalus 20 trust with the Ottomans; there was no truce to break. The
+    Emperor answered the call, and the court hoped the Mamlūks did not expect much of it (Trent's account and
+    screenshot of 1 October 1423). The Ottoman sultan Aḥmad is the brother of the Emperor's wife ʿĀʾisha.
+    Al-Andalus and all seven of its ṭāʾifas came in that day. It was over in under eleven months: Nafusa made
+    peace on 23 July 1424 and the Ottomans on 8 August (save of 14 August 1424).
+  game: 1st Egypt–Ottomans War
+- id: war-of-shant-yaqub
+  kind: war
+  title: The War of Shant Yāqub
+  state: closed
+  from: '1430-05-18'
+  to: '1430-11-03'
+  premise: The Reconquest of Iberia against Galicia, the greatest of the successor states of Castile
+  outcome: >-
+    Galicia annexed whole at 82 war score at the Peace of Ṣafar (3 November 1430, 16 Ṣafar 834): its 31 towns,
+    from Santiago and A Coruña to Oviedo and Llanes, came to the crown. The same day the eight towns of old
+    Asturias went on to the Ṭāʾifa of Liyūn and the other 23 were made the Ṭāʾifa of Jillīqiya under Diego
+    Sotomaior. King Diego Villamarín went into exile at Augsburg (saves of 3 and 5 November 1430).
+  sides:
+    ours:
+      - Kingdom of Portugal
+      - Taifa of León
+      - Aragon
+      - Catalonia
+      - Taifa of Burgos
+      - Taifa of Pamplona
+      - Taifa of Cuenca
+    theirs:
+      - Galicia
+  note: >-
+    Muḥammad V wanted his father's work finished at once and ordered the army north against Castile. His sons,
+    the princes Ismāʿīl and Aḥmad, talked him round: Galicia would be the nobler and harder conquest, and
+    Navarre the next, since the Basques were a far more redoubtable people than the Castilians. On 18 May 1430
+    (24 Shaʿbān 833) war was declared on Galicia (Trent's account). All seven ṭāʾifas came in with the crown;
+    the Mamlūks, Fās and Tūnis were called but had not yet answered. Galicia stood alone, with 31 towns, two
+    ships and no army in the field, against al-Andalus's 4,600 regulars and fifty ships; Castile, allied to
+    the Angevin Empire and Navarre, was not involved (save of 18 May 1430). The war is named for Shant Yāqub,
+    Santiago de Compostela, Galicia's capital, which al-Manṣūr took in 997. On 5 August 1430 the last Galician
+    army, 3,229 men, threw itself on the army of the Ṭāʾifa of Liyūn, 5,602 under Juan Cangas, at Oviedo and
+    was destroyed to the last man (save of 17 August 1430).
+  game: Reconquest of Iberia
+- id: war-of-the-mountains
+  kind: war
+  title: The War of the Mountains
+  state: closed
+  from: '1430-08-17'
+  to: '1430-11-03'
+  premise: The Reconquest of Iberia against Navarre, and with it Castile, Navarre's ally
+  outcome: >-
+    Navarre and Castile annexed at 59 war score at the Peace of Ṣafar, the same day as Galicia (3 November
+    1430, 16 Ṣafar 834). Navarre's ten Basque towns, from Bilbao and San Sebastián to Vitoria, went on to the
+    Ṭāʾifa of Banbalūna; Castile's last four, Santander, Laredo, Potes and San Vicente de la Barquera, to the
+    Ṭāʾifa of Burghush. The Kingdom of Castile ceased to exist, and the Angevin Empire never entered the war.
+    It was the last war of the Istirdād: Iberia was conquered, and Book V closed (saves of 3 and 5 November
+    1430; Trent's account).
+  sides:
+    ours:
+      - Kingdom of Portugal
+      - Taifa of León
+      - Aragon
+      - Catalonia
+      - Taifa of Burgos
+      - Taifa of Pamplona
+      - Taifa of Cuenca
+    theirs:
+      - Navarre
+      - Castile
+  note: >-
+    With Galicia beaten but the peace not yet made, the two princes saw an opening. Navarre had allied itself
+    to Castile, and while Castile was under the protection of London, Navarre was not. The war would have to
+    be swift, but most of the empire's armies were already in the north: if they overwhelmed both before the
+    Angevins decided whether they were bound to help, the crown had its chance. On 17 August 1430 (27 Dhū
+    al-Qaʿda 833) war was declared on Navarre, and Castile alone answered its call (Trent's account). In the
+    declaration save Navarre (10 towns, 7 ships) and Castile (4 towns, 2 ships) had no men under arms; the
+    Angevin Empire, Castile's ally, was not in the war. Named for the last kings of the mountains, the
+    Cantabrian and Basque north where Qashtāla had begun. On 3 November 1430 the army of al-Andalus broke
+    3,580 Navarrese before Bilbao, and all three kingdoms fell (Trent's account; save of 3 November 1430).
+  game: Reconquest of Iberia
+- id: crusade-of-835
+  kind: war
+  title: The Crusade of 835
+  state: closed
+  from: '1431-10-01'
+  to: '1432-07-27'
+  premise: >-
+    A crusade proclaimed by the Pope against al-Andalus, declared on the Ṭāʾifa of Aragon and aimed at the
+    province of Barbastro
+  outcome: >-
+    A peace of the Pope's asking, 27 July 1432 (28 Dhū al-Qaʿda 835), at war score 5. At war with Mantua and
+    Milan on another front, the Pope paid al-Andalus 114.64 gold at once and a tenth of his income for five
+    years in reparations (36.45 gold a month at the peace), and annulled all his treaties with Genoa, Siena
+    and Aquileia. No land changed hands (Trent's account and screenshot; save of 27 July 1432).
+  sides:
+    attackers:
+      - Papal States
+      - Arezzo
+      - Faenza
+      - Provence
+      - Ireland
+      - Desmond
+      - Clanwilliam
+      - Iceland
+      - Cologne
+      - Trier
+      - Magdeburg
+      - Bremen
+      - Mecklenburg
+      - Świdnica
+      - Toggenburg
+      - Bentheim
+      - Marsan
+      - Aumale
+      - Genoa (from 3 October)
+      - Siena (from 3 October)
+      - Aquileia (from 3 October)
+      - Genoa's subjects Orange, Arborea, Corsica, Cuneo and Gazaria
+    defenders:
+      - Aragon
+      - al-Andalus
+      - the eight ṭāʾifas
+      - Mamluks
+      - the Mamlūk vassals
+      - Morocco
+      - Touat
+      - Tlemcen
+      - Tunis
+      - Tripoli
+      - Gabès
+      - Touggourt
+      - Gallura
+  note: >-
+    Fifteen months after the Emperor Muḥammad had the cathedral of Santiago pulled down, on 1 October 1431 (23
+    Muḥarram 835) the Pope, Fabrizio Ricci, proclaimed the second crusade against al-Andalus and, as in 1404,
+    declared war on its subject the Ṭāʾifa of Aragon, whose king Rodrigo de Borja is the brother of the
+    Emperor's wife Magdalena. The Emperor answered for him, and every ally came in the same day: the eight
+    ṭāʾifas, the Mamlūks with Mecca, Medina, Barqa, Suakin and their other vassals, Morocco with Touat and
+    Tlemcen, and Tunis with Tripoli, Gabès, Touggourt and Gallura. The Church's call brought the Pope
+    Provence, Ireland and its lordships, Iceland, the archbishops of Cologne and Trier and a scatter of German
+    princes; the Pope himself held three towns, no army and thirteen ships. The Angevin Empire stayed out. On
+    3 October Genoa, Siena and Aquileia joined, Genoa with Orange, Arborea, Corsica, Cuneo and Gazaria, and
+    the Genoese fleet of 24 ships became the crusade's strength at sea (Trent's account; saves of 1 October
+    and 1 December 1431). In the first two months the Tunisians were thrown back at Oristano in Sardinia (20
+    November) and lost a ship to the papal squadron in the Gulf of Talamone (26 November). In May 1432 the
+    Emperor ordered a series of shipyards built to give al-Andalus a navy to counter Genoa's (Trent). Through
+    the winter the war was fought in the Tyrrhenian Sea, in Lazio and in Sardinia, and al-Andalus's own army
+    did not fight. The papal admiral Vukmir Janković destroyed a Tripolitan squadron of fourteen in the Gulf
+    of Talamone (5 December) and, with fifteen Genoese ships, sank or took fifteen of twenty-four Tunisian
+    ships off Lazio (20 December). Then the Moroccan and Tunisian fleets came up together: nine papal ships
+    were lost in the Gulf of Olbia (27 January 1432), seventeen of Aquileia's twenty-eight in the Gulf of
+    Orosei against 185 Muslim sail (1 February), and Vukmir's last five in the Corsica Channel (14 March). On
+    land the Tunisians landed in Lazio and Sardinia with mixed fortune. The crusaders' army in Tuscany, led by
+    an Andalusī Muslim mercenary, Khayr al-Dīn Khayyām, beat them at Tivoli (31 December) but was broken by
+    the Moroccans at Pitigliano (26 March). In the Atlantic, Mecklenburg's and Ireland's fleets beat small
+    Portuguese and Burgalese squadrons off Ushant and Saint-Malo. On 1 May 1432 the war score stood at 4 in
+    the allies' favour, and seven Andalusī arsenals and seven war galleys were under construction (save of 1
+    May 1432). In the spring the last Tunisians in Lazio were destroyed at Terracina (17 May) and the
+    Moroccans were beaten off at Viterbo (1 June). Off Cape Mondego on 27 June the Mecklenburg fleet attacked
+    32 Catalan ships and 8 of the crown under Berenguer Ramon of Catalonia and lost 18 without sinking one,
+    the first fight of the Emperor's own ships in the war. Friuli and Lower Carinthia joined the crusade in
+    July.
+  game: The 2nd Crusade against Andalusia
+- id: tunisian-war-for-palermo
+  kind: war
+  title: The Tunisian War for Palermo
+  state: closed
+  from: '1447-06-13'
+  to: '1450-11-29'
+  premise: >-
+    Tunis's claim, backed by its assembly, to the province of Palermo in Sicily (the casus belli 'conquer
+    province'). From the autumn of 1450 al-Andalus led the war and claimed all of Sicily for itself, with
+    Tunis's assent (Trent)
+  outcome: >-
+    Victory, with al-Andalus at the head of the allies from the autumn of 1450. Genoa made a separate peace on
+    15 July 1450, and Corsica went back to its Genoese vassal. Catania fell on 28 September 1450 after 208
+    days; al-Andalus broke the Sicilian army before Palermo on 3 November and caught its remnant at Sciacca on
+    29 November. At the peace that day the whole kingdom of Sicily, twenty-two towns, passed to al-Andalus,
+    Tunis took seven towns of northern Sardinia from Arborea, and Athens and Negroponte, Sicily's subjects,
+    became vassals of al-Andalus (save of 29 November 1450; Trent's account and battle screens).
+  sides:
+    attackers:
+      - Tunis
+      - Tripoli
+      - Gabès
+      - Touggourt
+      - Gallura
+      - Annaba
+      - Constantine
+      - al-Andalus
+      - the seven ṭāʾifas (Portugal, Aragon, Galicia, León, Burgos, Pamplona, Cuenca)
+    defenders:
+      - Sicily
+      - Athens
+      - Negroponte
+      - Genoa
+      - Genoa's subjects Arborea, Corsica, Cuneo, Gazaria and Dignois
+      - the Papal States
+      - Arezzo
+  note: >-
+    Tunis, the ally of al-Andalus since the last century, declared war on Sicily on 13 June 1447 (28 Rabīʿ
+    al-Awwal 851) for the province of Palermo, and called the Emperor to arms the same day. Trent: 'We are
+    accepting.' Al-Andalus came in with its ṭāʾifas, and Tunis with Tripoli, Gabès, Touggourt, Gallura in
+    Sardinia and its two governorships of Annaba and Constantine. Sicily brought Athens and Negroponte; its
+    allies Genoa and the Pope came in, Genoa with Arborea, Corsica, Cuneo, Gazaria and Dignois (Trent's
+    screenshot of 13 June 1447; save of 5 October 1447). By October the fighting had gone against the allies:
+    Arborea beat the Gallurese at Ozieri (6 August), two Sicilian ships drove off three of Portugal's off
+    western Corsica (9 September), the fleets of Tunis, Tripoli and Gabès lost nineteen of their twenty-eight
+    ships to six of Genoa's in the Gulf of Termini (11 September), and Aḥmad of Banbalūna's 385 men were cut
+    down by 4,200 Genoese at Grasse in Provence (5 October). Al-Andalus's own armies and fleets had not yet
+    fought (save of 5 October 1447). In January 1448 the Emperor's grandson Yūsuf was raiding the coast of
+    Naples with the fleet (Trent's account, 13 January 1448). Through the winter of 1447–48 the war went on at
+    sea: 31 Genoese and 28 Sicilian ships destroyed Annaba's fleet of 21 in the Gulf of Asinara (25 November
+    1447), but when Genoa's 31 attacked the Tunisian fleet of 88 in the Gulf of Oristano (16 December) it lost
+    26 ships to the allies' 17. Gabès made its peace on 1 December 1448. In September 1448 the army of
+    al-Andalus landed on Sardinia under Abū al-Ḥasan ʿAlī and destroyed Arborea's army at Seddori (26
+    September); Yūsuf's galleys sank five Genoese ships in the Corsica Channel (21 October). The allies'
+    attacks on Palermo itself failed four times between September 1448 and April 1449. By August 1449
+    al-Andalus held seven Corsican towns and five of Arborea's (save of 2 August 1449). Bastia fell on 17
+    September 1449 after 265 days, and on 15 February 1450 8,700 professional soldiers of al-Andalus landed at
+    Syracuse (Trent's account).
+  game: 2nd Tunis–Sicily War
+- id: mamluk-war-on-lam
+  kind: war
+  title: The Mamlūk War on the Banū Lām
+  state: open
+  from: '1448-11-05'
+  premise: >-
+    The Mamlūks' claim, backed by their assembly, to al-Ghazāla and al-Rawḍa in the country of the Banū Lām in
+    Najd (the casus belli 'conquer province')
+  sides:
+    attackers:
+      - Mamluks
+      - Mecca
+      - Medina
+      - Hutaym
+      - Al ʿAlī
+      - Al Mira
+      - Döger
+      - Barqa
+      - Banu Kanz
+      - Suakin
+      - the Mamlūks' other vassals
+      - al-Andalus
+      - the seven ṭāʾifas
+    defenders:
+      - Lām
+      - Yemen
+      - Dhofar
+      - Dobeʿa
+      - Tanade
+      - Otaibah
+      - Dawasir
+      - and two lesser lords
+  note: >-
+    The Mamlūks of Miṣr, allies of al-Andalus since 1367, went to war with the Banū Lām of Najd on 5 November
+    1448 (8 Ramaḍān 852), and al-Andalus and its ṭāʾifas came in the same day. Al-Andalus is in it in name
+    (Trent). By August 1449 it had gone badly for the Mamlūk side: Otaibah beat Mecca's army at Mecca itself
+    (16 December 1448), Lām won six fights between February and July 1449 across the Ḥijāz and northern Najd,
+    and on 10 June 1449 a Lām force of 3,497 carried the field against the main Mamlūk army of 22,800 in the
+    corridor between ash-Shamli and Tayma. The Mamlūks held one of Lām's towns, Lām six of the Mamlūk vassals'
+    (save of 2 August 1449). Trent: the Mamlūks are trying, and so far failing, to extend their hold along the
+    Red Sea coast. By November 1450 the Banū Lām held Mecca, Medina, Jeddah and Yanbuʿ, and still held them in
+    December 1451, though the Mamlūks beat them at al-Ukhaydir in July 1451 (saves of 29 November 1450 and 21
+    December 1451). The Holy Cities in the enemy's hands are the war's great humiliation for Cairo.
+  game: 1st Egypt–Lam War

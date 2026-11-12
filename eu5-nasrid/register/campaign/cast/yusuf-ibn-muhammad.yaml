@@ -1,0 +1,18 @@
+name: Yūsuf ibn Muḥammad
+arabic: يوسف بن محمد
+house: Naṣrid
+born: '1301-01-01'
+died: '1362-01-16'
+father: muhammad-ibn-faraj
+roles:
+  - in the dīwān
+stations:
+  - role: dīwān
+    from: '1337-04-01'
+    to: '1341-01-06'
+    source: save
+    approx: false
+note: ' Died 1362-01-16 (save of 24 October 1414).'
+game:
+  id: 3542
+  name: Yusuf

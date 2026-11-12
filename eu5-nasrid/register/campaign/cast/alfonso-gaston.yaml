@@ -1,0 +1,26 @@
+name: Alfonso Gastón
+born: '1389-10-13'
+roles:
+  - king of Navarre (1420–1430)
+traits:
+  - drunkard
+  - naive
+stations:
+  - role: admiral
+    from: '1422-11-26'
+    to: '1430-11-03'
+    source: save
+    approx: false
+note: >-
+  A Basque noble who on 4 September 1420, when the Kingdom of Castile fell apart, became king of Navarre, the
+  second Alfonso of that crown: the 10 Basque towns of the coast and Álava, from Bilbao, his capital, and San
+  Sebastián to Vitoria, some 160,000 Basques. The old Navarre of Pamplona is the Emperor's Ṭāʾifa of
+  Banbalūna. The save shows the new state Sunni though its people are all Catholic; Trent is correcting this
+  in game (save of 4 September 1420; Trent's account). He allied Navarre to Castile, which gave the Emperor's
+  sons their opening: on 17 August 1430 al-Andalus declared war on him, and on 3 November his army of 3,580
+  was broken before Bilbao. At the Peace of Ṣafar that day Navarre was annexed and its towns given to the
+  Ṭāʾifa of Banbalūna, at whose court he now lives, a drunkard and naive (saves of 17 August, 3 and 5 November
+  1430).
+game:
+  id: 88873
+  name: Alfontso

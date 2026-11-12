@@ -1,0 +1,67 @@
+name: Faraj ibn Ismāʿīl
+arabic: فرج بن إسماعيل
+house: Naṣrid
+tier: central
+born: '1317-01-01'
+died: '1370-09-18'
+father: ismail-i
+mother: alwa
+roles:
+  - in the dīwān
+  - heir
+drives:
+  - from: '1337-08-18'
+    text: The sultan's elder brother and heir, strengthening the government from the dīwān.
+    by: chronicle
+    source: save of 18 August 1337
+  - from: '1351-08-09'
+    text: Holds the throne while his brother makes the Ḥajj, and gives it back.
+    by: chronicle
+    source: the chronicle's choice of regent
+  - from: '1354-03-01'
+    text: >-
+      A man with the desert in him: his first wife is of a ruling house of the Sahara, and he looks south more
+      than north.
+    by: trent
+    source: Trent's direction, November 2026
+  - from: '1355-01-01'
+    text: >-
+      Leaves the court to the harem: he marries a princess of Ghāna and goes south across the desert, and his
+      going opens the dīwān to Duʿāʾ.
+    by: trent
+    source: Trent's direction; Of the Governor of Qurṭuba
+  - from: '1360-01-01'
+    text: Builds ties across the desert, between the Saharan houses, Ghāna and Gharnāṭa.
+    by: trent
+    source: Trent's direction (invented colour)
+  - from: '1432-05-01'
+    text: Long dead, his desert ties are the roads the merchants of Ishbīliya follow to Mālī's gold.
+    by: trent
+    source: Trent's direction, November 2026
+stations:
+  - role: dīwān
+    from: '1337-04-01'
+    to: '1354-06-28'
+    source: save
+    approx: false
+  - role: heir
+    from: '1337-08-18'
+    to: '1351-06-03'
+    source: checkpoints
+    approx: true
+  - role: general
+    from: '1369-10-02'
+    to: '1369-11-06'
+    source: save
+    approx: false
+note: >-
+  Elder brother of Yūsuf I. Regent of Granada from 9 August 1351 until the sultan's return on 7 April 1352,
+  while he made the Hajj (the chronicle's choice; the game named a Naṣr al-Stijjai). Around the new year of
+  1355 he married Fatiu, daughter of the old ruler of Ghana, fulfilling the Ghana betrothal of 1345, and went
+  south across the desert to live there. His first wife was Shamʿa, of a ruling house of the central Sahara
+  (married 1 March 1354). The chronicle reads his going, like Ismāʿīl's in 1359, as the harem clearing the
+  court of the amir's grown brothers. He died far from Gharnāṭa on 18 September 1370. In August 1395 his son
+  Saʿd was made ruler of the new Ṭāʾifa of Qūnka (save of 5 August 1395).
+game:
+  id: 3536
+  name: Faraj

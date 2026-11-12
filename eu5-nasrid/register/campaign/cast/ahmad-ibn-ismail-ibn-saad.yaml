@@ -1,0 +1,26 @@
+name: Aḥmad ibn Ismāʿīl ibn Saʿd
+arabic: أحمد بن إسماعيل
+house: Naṣrid
+tier: key
+born: '1393-10-21'
+father: ismail-ibn-saad
+mother: aisha-ottoman
+roles:
+  - ruler of the Ṭāʾifa of Liyūn
+traits:
+  - architectural_visionary
+stations:
+  - role: general
+    from: '1415-03-18'
+    to: '1415-08-15'
+    source: save
+    approx: false
+note: >-
+  Third son of the Emperor Ismāʿīl, by the Ottoman princess ʿĀʾisha; born 21 October 1393, ambitious as a
+  child. Married to his cousin Muʾmina, Prince Yūsuf's daughter. On 1 November 1411, at eighteen, he was made
+  ruler of the new Ṭāʾifa of Liyūn, 17 towns of the Leonese country from León and Astorga to Zamora and Toro
+  (save of 1 November 1411). By 1423 the game also marks him an architectural visionary (save of 5 November
+  1423).
+game:
+  id: 77322
+  name: Ahmad

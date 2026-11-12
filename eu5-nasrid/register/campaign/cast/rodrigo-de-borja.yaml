@@ -1,0 +1,30 @@
+name: Rodrigo de Borja
+house: Borja
+tier: key
+born: '1381-04-24'
+father: alfons-de-borja
+roles:
+  - king of the Ṭāʾifa of Aragon
+traits:
+  - kind_hearted
+  - babbling_buffoon
+  - craven
+stations:
+  - role: general
+    from: '1441-09-02'
+    to: '1441-12-14'
+    source: save
+    approx: false
+  - role: general
+    from: '1447-07-02'
+    to: '1447-08-05'
+    source: save
+    approx: false
+note: >-
+  Son of King Alfons; king of the renewed Aragon from his father's death on 24 February 1393, a boy of eleven.
+  His sister Caterina is his heir (save of 3 September 1398). Brother of the Empress Magdalena, so uncle of
+  the heir Ismāʿīl. A Muslim, kind-hearted, a babbler and no fighter by the game's count. As in 1404, the
+  Pope's crusade of 1 October 1431 was declared on his kingdom, aimed at Barbastro (save of 1 October 1431).
+game:
+  id: 16800895
+  name: Roderick

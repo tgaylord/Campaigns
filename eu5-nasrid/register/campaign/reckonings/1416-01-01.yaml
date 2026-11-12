@@ -1,0 +1,250 @@
+date: '1416-01-01'
+title: The Estates of 818
+source:
+  save: SP_ADU_1416_01_01 (compressed)
+  game: 1.4.7
+summary: >-
+  The estates panel of 31 December 1415, read the day before this save: the crown holds about a quarter of the
+  power of the state, the dhimmī 22%, the burghers 19%, the umarāʾ 18%, the ʿulamāʾ 10%, the commoners 2%, and
+  the tribes, new with the Canaries, under 1%. Fourteen months after the Jamāʿa the umarāʾ are a quarter
+  content and recovering, with Prince Yūsuf appeasing them in the dīwān. On 11 June 1415 the Ṭāʾifa of
+  Shalamanka was taken into the crown after its ruler's death, and Maxorata in the Canaries was settled. The
+  crown holds 184 towns and 2,445,000 people directly, with eight ṭāʾifas. Treasury 1,923, income 251 against
+  232; the realm's peace is still shaken.
+realm:
+  towns: 184
+  souls: 2444683
+  treasury: 1923
+  income: 251.4
+  expenses: 232.4
+  stability: -10.5
+  prestige: 82
+  regiments: 9
+  ships: 47
+  manpower: 3271
+court:
+  ruler: ismail-ibn-saad
+  heir: muhammad-ibn-ismail-ibn-saad
+  capital: ishbiliyya
+  council:
+    - who: umm-al-fath-bint-saad
+      seat: Integrating the new lands
+    - who: muhammad-ibn-yusuf-ibn-faraj
+      seat: Integrating the new lands
+    - who: ahmad-ibn-yusuf-ibn-ismail
+      seat: Integrating the new lands
+    - who: yusuf-ibn-saad
+      seat: Appeasing the estates
+    - who: jadila-bint-saad-ibn-faraj
+      seat: Encouraging migration
+standing:
+  allies:
+    - Mamluks
+    - Morocco
+    - Tunis
+  subjects:
+    - Valencia (taifa)
+    - Catalonia (taifa)
+    - Aragon (taifa)
+    - Taifa of Cuenca (taifa)
+    - Taifa of Minho (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+  estates:
+    - name: Crown
+      power: 26
+    - name: Nobility
+      power: 18
+      mood: 26
+    - name: ʿUlamāʾ
+      power: 10
+      mood: 46
+    - name: Burghers
+      power: 19
+      mood: 50
+    - name: Commoners
+      power: 2
+      mood: 50
+    - name: Dhimmī
+      power: 22
+      mood: 50
+peoples:
+  cultures:
+    Castilian: 843700
+    Andalusi: 665649
+    Portuguese: 446802
+    Leonese: 308002
+    Sephardi: 165149
+    Guanche: 4930
+  faiths:
+    Catholic: 1426602
+    Sunni: 850087
+    Jewish: 161888
+    Guanche_religion: 4930
+    Bori_Religion: 631
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - CAT
+    - ARA
+    - ABA60
+    - ABA10
+    - ABA42
+    - ABA49
+    - ABA55
+  allies:
+    - MAM
+    - MOR
+    - TUN
+beats:
+  - id: 1414-10-27-yusuf-appeases-the-estates
+    'on': '1414-10-27'
+    kind: office
+    what: >-
+      Three days after the Jamāʿa, Prince Yūsuf turns his seat in the dīwān to calming the estates, and above
+      all the angry umarāʾ
+    who:
+      - yusuf-ibn-saad
+    threads:
+      - estates
+    from:
+      - save
+      - told
+    cite: save of 1 January 1416; Trent's account
+    detail:
+      task: appeasing the estates (from 27 October 1414)
+  - id: 1414-11-ismail-greedy
+    'on': '1414-11-01'
+    kind: note
+    what: >-
+      After the Jamāʿa the Emperor Ismāʿīl is counted greedy: revenue collection grows iron-fisted and
+      short-sighted under a ruler who will stop at nothing to raise his income
+    who:
+      - ismail-ibn-saad
+    threads:
+      - estates
+    from:
+      - seen
+    cite: Trent's screen, November 1414
+    detail:
+      trait: greedy
+      effects:
+        politicalInfluenceGain: -10%
+        monthlyProsperity: -0.02%
+        marriageDesirability: -10
+      traitsNow:
+        - just
+        - greedy
+        - deceitful
+        - goal_oriented
+      date: 'not exact: after the save of 24 October 1414, which does not show it'
+  - id: 1415-03-15-death-of-saad-ibn-ismail
+    'on': '1415-03-15'
+    kind: death
+    what: >-
+      Saʿd ibn Ismāʿīl, the Emperor's cousin and ruler of the Ṭāʾifa of Shalamanka since 1395, dies at
+      fifty-three
+    who:
+      - saad-ibn-ismail
+    where:
+      - shalamanka
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 1 January 1416
+    detail:
+      age: 53
+  - id: 1415-04-01-maxorata
+    'on': '1415-04-01'
+    kind: land
+    what: >-
+      Maxorata on Fuerteventura in the Canaries becomes a settlement of the crown: 7,900 people, most of them
+      Guanche islanders of their own faith. With them the tribes enter the empire as an estate of their own
+    threads:
+      - voyages
+    from:
+      - save
+    cite: save of 1 January 1416
+    detail:
+      location: Maxorata (Fuerteventura), Canary Islands
+      population: 7892
+      popTypes:
+        tribesmen: 4551
+        peasants: 2658
+        slaves: 494
+      culture: Guanche
+      religion: Guanche religion
+      tribes: 'the tribes estate: under 1% of power on 31 December 1415; to be followed only above 3–4% (Trent)'
+  - id: 1415-06-11-shalamanka-annexed
+    'on': '1415-06-11'
+    kind: land
+    what: >-
+      Three months after Saʿd ibn Ismāʿīl's death, the Ṭāʾifa of Shalamanka is taken into the crown: its 21
+      towns and 347,000 people, from Shalamanka, Ávila and Ciudad Rodrigo to Plasencia and Coria, become lands
+      of the crown
+    who:
+      - ismail-ibn-saad
+    where:
+      - shalamanka
+    from:
+      - save
+    cite: saves of 24 October 1414 and 1 January 1416
+    detail:
+      towns: 21
+      population: 347000
+      realm:
+        towns:
+          - 162
+          - 184
+      note: >-
+        not planned: the annexation went through on the ruler's death. Trent accepts it as fitting the
+        pattern: the far north handed to ṭāʾifas, the lands south of it integrated into the crown
+  - id: 1415-12-31-the-estates
+    'on': '1415-12-31'
+    kind: realm
+    what: >-
+      The estates at the end of 1415: the crown holds about a quarter of the power of the state, the dhimmī
+      more than a fifth, the burghers and the umarāʾ each nearly a fifth, the ʿulamāʾ a tenth. The umarāʾ are
+      a quarter content and climbing back toward two in five
+    who:
+      - ismail-ibn-saad
+    threads:
+      - estates
+    from:
+      - save
+    cite: Trent's estates panel, 31 December 1415; save of 1 January 1416
+    detail:
+      shares:
+        crown: 26
+        umara: 18
+        ulama: 10
+        burghers: 19
+        commoners: 2
+        dhimmi: 22
+        tribes: <1
+      satisfaction:
+        umara:
+          - 25.62
+          - 39.66
+        ulama:
+          - 45.84
+          - 47.84
+        burghers: 50.01
+        commoners: 50.01
+        dhimmi: 50.01
+        tribes:
+          - 54.29
+          - 38.27
+      pops:
+        umara: 5919
+        ulama: 15740
+        burghers: 36795
+        commoners: 796,000
+        dhimmi: 1,587,000
+        tribes: 4553
+      treasury: 1923
+      stability: -10.5

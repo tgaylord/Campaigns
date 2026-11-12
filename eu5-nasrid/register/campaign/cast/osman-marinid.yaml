@@ -1,0 +1,26 @@
+name: ʿUthmān
+born: '1338-06-29'
+died: '1395-01-29'
+roles:
+  - Marīnid general
+traits:
+  - born_to_the_saddle
+  - level_headed
+stations:
+  - role: general
+    from: '1383-03-11'
+    to: '1383-04-23'
+    source: save
+    approx: false
+  - role: admiral
+    from: '1394-04-02'
+    to: '1395-01-29'
+    source: save
+    approx: false
+note: >-
+  The Marīnid general of the 1369 counterattack. He relieved Cádiz and threw Khālid back before it (2 and 26
+  June 1369). Then he marched on the heart of the realm and was stopped at Antequera (15 October 1369). Died
+  1395-01-29 (save of 24 October 1414).
+game:
+  id: 24671
+  name: Osman

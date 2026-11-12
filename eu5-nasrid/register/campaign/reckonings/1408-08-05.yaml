@@ -1,0 +1,602 @@
+date: '1408-08-05'
+title: The Sons of Muḥammad
+source:
+  save: SP_ADU_1408_08_05 (compressed)
+  game: 1.4.7
+summary: >-
+  The north is the crown's again. The rising of Ciudad Rodrigo ended on 8 July 1405, six days after Khālid ibn
+  Yaḥyā's victory at Granadilla, and the Kingdom of Toledo and Estremadura collapsed on 24 August 1405, giving
+  the crown back its forty-eight towns. On 1 September 1405 the Ṭāʾifa of al-Gharb was taken into the crown.
+  The crown now holds 161 towns and 2,018,000 people directly, with five ṭāʾifas under it; Maryam bint Saʿd,
+  the Emperor's niece and wife of his son Saʿd, has ruled Qūnka since her father's death in February 1408. In
+  March 1408 the Emperor kept his court at Ishbīliya but named Qurṭuba the Capital of the Old Caliphate. The
+  heir Muḥammad, twenty-two, has two gifted sons, Ismāʿīl and Aḥmad, both five, enough to set aside the
+  question of the succession. Treasury 418, income 270 against 192; 9 regiments. Shares of power are estimated
+  from the 1 June 1349 reading.
+realm:
+  towns: 161
+  souls: 2018108
+  treasury: 418
+  income: 269.8
+  expenses: 191.6
+  stability: 26.1
+  prestige: 88
+  regiments: 9
+  ships: 31
+  manpower: 2854
+court:
+  ruler: ismail-ibn-saad
+  heir: muhammad-ibn-ismail-ibn-saad
+  capital: ishbiliyya
+  council:
+    - who: umm-al-fath-bint-saad
+      seat: Integrating the new lands
+    - who: muhammad-ibn-yusuf-ibn-faraj
+      seat: Integrating the new lands
+    - who: maryam-bint-yusuf
+      seat: Integrating the new lands
+    - who: yusuf-ibn-saad
+      seat: Encouraging migration
+standing:
+  allies:
+    - Mamluks
+    - Morocco
+  subjects:
+    - Valencia (taifa)
+    - Catalonia (taifa)
+    - Aragon (taifa)
+    - Taifa of Salamanca (taifa)
+    - Taifa of Cuenca (taifa)
+  estates:
+    - name: Crown
+      power: 33.83
+    - name: Nobility
+      power: 23.09
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 9.27
+      mood: 50
+    - name: Burghers
+      power: 10.43
+      mood: 50
+    - name: Commoners
+      power: 3.98
+      mood: 50
+    - name: Dhimmī
+      power: 19.39
+      mood: 50
+peoples:
+  cultures:
+    Castilian: 663882
+    Andalusi: 634722
+    Portuguese: 430753
+    Sephardi: 147520
+    Leonese: 131579
+    Mustaarabi: 3612
+  faiths:
+    Catholic: 1093919
+    Sunni: 777964
+    Jewish: 145239
+    Bori_Religion: 624
+    Nyama: 239
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - CAT
+    - ARA
+    - AAA98
+    - ABA60
+  allies:
+    - MAM
+    - MOR
+beats:
+  - id: 1405-07-02-battle-granadilla
+    'on': '1405-07-02'
+    kind: battle
+    what: >-
+      At Granadilla in the Leonese west a joint host of 20,550, al-Andalus with Aragon and Catalonia under
+      Khālid ibn Yaḥyā Raḥḥū, falls on the rebels of Ciudad Rodrigo, 3,060 levies, and breaks them: 1,750 of
+      theirs lost for 970 of ours
+    who:
+      - khalid-ibn-yahya
+    threads:
+      - risings-of-807
+    from:
+      - save
+    cite: save of 8 July 1405 (the war's battle list)
+    detail:
+      result: victory
+      naval: false
+      ours:
+        al-Andalus: 12562
+        Aragon: 1395
+        Catalonia: 6591
+      oursTotal: 20548
+      oursLost: 970
+      theirs:
+        Ciudad Rodrigo: 3061
+      theirsTotal: 3061
+      theirsLost: 1753
+      location: Granadilla
+      side: al-Andalus attacking
+      warScore: 0
+      commanders:
+        al-Andalus: Khālid ibn Yaḥyā Raḥḥū, 62 (80/85/78)
+        Ciudad Rodrigo: Ordoño
+      note: rebellion battles carry no war score in the game
+  - id: 1405-07-08-ciudad-rodrigo-crushed
+    'on': '1405-07-08'
+    kind: peace
+    what: >-
+      Six days after Granadilla the rising of Ciudad Rodrigo is over. Its sixteen towns, Shalamanka, Ávila and
+      Ciudad Rodrigo among them, return to the Ṭāʾifa of Shalamanka and its ruler Saʿd ibn Ismāʿīl
+    who:
+      - saad-ibn-ismail
+    where:
+      - shalamanka
+    threads:
+      - risings-of-807
+    from:
+      - save
+    cite: saves of 8 July 1405, 24 August 1405 and 5 August 1408
+    detail:
+      rebel: Ciudad Rodrigo (ABA58)
+      towns: 16
+      returnedTo: Ṭāʾifa of Shalamanka (AAA98)
+      how: >-
+        the rebel country is dissolved and its towns return to their owner (ownership change of 8 July 1405 in
+        the save of 5 August 1408; the save of 8 July 1405 was taken just before it)
+  - id: 1405-07-10-battle-cuenca-ii
+    'on': '1405-07-10'
+    kind: battle
+    what: >-
+      Before Qūnka a second time, the Emperor Ismāʿīl with 4,900 attacks what is left of the army of Toledo,
+      1,810 men, and destroys most of it: 1,235 of theirs lost for 92 of ours
+    who:
+      - ismail-ibn-saad
+    where:
+      - qunka
+    threads:
+      - risings-of-807
+    from:
+      - save
+    cite: save of 24 August 1405 (the war's battle list)
+    detail:
+      result: victory
+      naval: false
+      ours:
+        al-Andalus: 4900
+      oursTotal: 4900
+      oursLost: 92
+      theirs:
+        Kingdom of Toledo: 1812
+      theirsTotal: 1812
+      theirsLost: 1235
+      location: Cuenca
+      side: al-Andalus attacking
+      warScore: 0
+      commanders:
+        al-Andalus: the Emperor Ismāʿīl
+        Toledo: the rebel king of Toledo
+      note: rebellion battles carry no war score in the game
+  - id: 1405-08-05-battle-lisbon
+    'on': '1405-08-05'
+    kind: battle
+    what: >-
+      Before al-Ushbūna the rebels of Estremadura, 2,750 men, attack the army of the Ṭāʾifa of al-Gharb,
+      2,840, and are thrown back: 1,340 of theirs lost for 850 of al-Gharb's
+    minor: true
+    where:
+      - al-ushbuna
+    threads:
+      - risings-of-807
+    from:
+      - save
+    cite: save of 24 August 1405 (the war's battle list)
+    detail:
+      result: allied victory
+      naval: false
+      ours:
+        Ṭāʾifa of al-Gharb: 2844
+      oursTotal: 2844
+      oursLost: 846
+      theirs:
+        Estremadura: 2745
+      theirsTotal: 2745
+      theirsLost: 1338
+      location: Lisbon
+      side: Estremadura attacking
+      warScore: 0
+      commanders:
+        Estremadura: García
+        al-Gharb: Diego
+      note: rebellion battles carry no war score in the game
+  - id: 1405-08-24-the-risings-crushed
+    'on': '1405-08-24'
+    kind: peace
+    what: >-
+      The risings of 807 are over. The Kingdom of Toledo and Estremadura collapse, and their forty-eight
+      towns, from Majrīṭ and Alcalá to Ciudad Real and Albacete and from Shantarīn to Yābura and Elvas, return
+      to the crown
+    who:
+      - ismail-ibn-saad
+    where:
+      - majrit
+      - tulaytula
+      - shantarin
+      - yabura
+      - al-ushbuna
+    threads:
+      - risings-of-807
+    from:
+      - save
+    cite: saves of 24 August 1405 and 5 August 1408
+    detail:
+      rebels:
+        - Kingdom of Toledo (TOL), 30 towns
+        - Estremadura (ABA55), 18 towns
+      returnedTo: al-Andalus
+      realm:
+        towns:
+          - 100
+          - 148
+        note: crown towns before and after
+      battlesOfTheWar: >-
+        Buitrago (28 Jan), Cuenca (18 Mar), Granadilla (2 Jul, Ciudad Rodrigo), Cuenca II (10 Jul), Lisbon (5
+        Aug)
+      how: >-
+        ownership change of 24 August 1405 in the save of 5 August 1408; the save of 24 August 1405 was taken
+        just before it, with Toledo and Estremadura still holding their towns and the war score at +2.8
+  - id: 1405-09-01-al-gharb-annexed
+    'on': '1405-09-01'
+    kind: land
+    what: >-
+      The Ṭāʾifa of al-Gharb, a vassal of the crown since the peace of 1366, is taken into the crown. Its
+      thirteen towns, from Faro, Lagos, Silves and Tavira on the coast to Bāja, Mértola, Moura and Serpa in
+      the Alentejo, and its 137,000 people, Portuguese by tongue and nearly all Muslim, become lands of the
+      crown
+    who:
+      - ismail-ibn-saad
+    where:
+      - shilb
+      - baja
+      - ukshunuba
+    from:
+      - save
+      - told
+    cite: saves of 24 August 1405 and 5 August 1408; Trent's account
+    detail:
+      taifa: Taifa of the Algarve (ALV)
+      since: '1366-04-13'
+      capital: Faro
+      towns:
+        - Lagos
+        - Faro
+        - Silves
+        - Tavira
+        - Beja
+        - Alvalade
+        - Alvito
+        - Mértola
+        - Moura
+        - Odemira
+        - Ourique
+        - Serpa
+        - Sines
+      population: 137151
+      religion:
+        sunni: 133499
+        catholic: 2821
+        jewish: 830
+      culture:
+        portuguese: 132270
+      ruler: Zhaleh, of Tajik culture, a zealot (save of 24 August 1405)
+      realm:
+        towns:
+          - 148
+          - 161
+      note: 'annexed on 1 September 1405 by the ownership history (Trent: about 2 September)'
+  - id: 1408-02-20-death-of-saad-ibn-faraj
+    'on': '1408-02-20'
+    kind: death
+    what: >-
+      Saʿd ibn Faraj, ruler of the Ṭāʾifa of Qūnka since 1395 and the Emperor's brother-in-law, dies at
+      forty-nine. His daughter Maryam, seventeen, wife of the Emperor's son Saʿd, becomes Shaykha of Qūnka
+    who:
+      - saad-ibn-faraj
+      - maryam-bint-saad-ibn-faraj
+      - umm-al-fath-bint-saad
+    where:
+      - qunka
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 5 August 1408
+    detail:
+      age: 49
+      successor: Maryam bint Saʿd, born 5 November 1390 (51/83/69), daughter of Saʿd ibn Faraj and Umm al-Fatḥ
+  - id: 1408-03-01-capital-of-the-old-caliphate
+    'on': '1408-03-01'
+    kind: realm
+    what: >-
+      The Emperor Ismāʿīl resolves to raise Qurṭuba from its ruins as the Capital of the Old Caliphate, but
+      keeps his court at Ishbīliya. Qurṭuba is given the dignity and the means to rebuild, and Ishbīliya grows
+      richer still
+    who:
+      - ismail-ibn-saad
+    where:
+      - qurtuba
+      - ishbiliyya
+    threads:
+      - towns
+    from:
+      - save
+      - seen
+    cite: Trent's screenshot of 1 March 1408; save of 5 August 1408
+    detail:
+      event: Capital of the old Caliphate (flavor_gra.17)
+      text: >-
+        its streets are filled with crime, its inhabitants curse the decay that has befallen the place, and
+        many old sites remain in ruins after our conflicts with Christian rulers (the game's text)
+      choice: >-
+        We should keep our Court where it is (the option on Trent's screen; the save of 5 August 1408 confirms
+        the capital still at Ishbīliya)
+      alternative: Qurṭuba shall prosper once more!
+      effects:
+        Qurṭuba: >-
+          Capital of the Old Caliphate, as long as the realm lasts: raw materials output +15%, local monthly
+          prosperity +1%, local monthly development growth +10%
+        Ishbīliya: prosperity +30%, development +2.5
+      realm:
+        treasury: 531.25
+        population: 2.017 million
+        legitimacy: 100
+        age: Age of Renaissance
+        markets: Ishbīliya ranked first among the markets of the world
+  - id: 1408-05-27-death-of-ismail-ibn-yusuf
+    'on': '1408-05-27'
+    kind: death
+    what: >-
+      Ismāʿīl ibn Yūsuf, the late Emperor's brother, dies at fifty-four. He had sat in the dīwān from 1382
+      until 1405
+    who:
+      - ismail-ibn-yusuf
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 5 August 1408
+    detail:
+      age: 54
+      diwan: from 1 December 1382 to August 1405, when Muḥammad ibn Yūsuf took his seat
+  - id: 1408-08-05-the-sons-of-muhammad
+    'on': '1408-08-05'
+    kind: note
+    what: >-
+      The sons of Muḥammad. The heir's two eldest boys, Ismāʿīl and Aḥmad, both five and both gifted, are
+      enough to set aside the thought of changing the succession: if the Emperor Ismāʿīl reigns long, the
+      crown can pass to Muḥammad and on to them. The Emperor's son Saʿd is not forgotten; he is married to
+      Maryam, Shaykha of Qūnka, and his children will rule the frontier
+    who:
+      - ismail-ibn-saad
+      - muhammad-ibn-ismail-ibn-saad
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+      - saad-ibn-ismail-ibn-saad
+      - maryam-bint-saad-ibn-faraj
+    where:
+      - ishbiliyya
+      - qunka
+    threads:
+      - two-princes
+    from:
+      - save
+      - seen
+      - told
+    cite: save of 5 August 1408; Trent's account and screens
+    detail:
+      heir: >-
+        Muḥammad ibn Ismāʿīl, 22 (16/20/17), no adult traits; wives Magdalena de Borja (daughter of King
+        Alfons of Aragon) and Isabel de Montsoriu (daughter of Francesc de Montsoriu of Catalonia)
+      children:
+        Ismāʿīl (b. 4 October 1402, by Magdalena): child_gifted, 26/22/12, balanced education
+        Aḥmad (b. 10 June 1403, by Isabel): child_gifted, 13/14/19, balanced education
+        ʿĀʾisha (b. 10 March 1405, by Isabel): child_intelligent
+        a daughter (b. 10 August 1407, by Isabel): ''
+        Saʿd (b. 6 June 1408, by Magdalena): ''
+      emperorsSons:
+        Saʿd ibn Ismāʿīl (16): 83/43/61, married to Maryam, Shaykha of Qūnka
+        Aḥmad ibn Ismāʿīl (14): 44/58/33, still ambitious
+      grandsonOfSaad:
+        Saʿd ibn Yūsuf (14): 46/54/62, gifted, in-depth education
+      emperor: Ismāʿīl ibn Saʿd, 42 (47/100/38), deceitful, goal-oriented, and now just
+      diwan:
+        Umm al-Fatḥ: integrating the new lands (from 24 August 1405)
+        Muḥammad ibn Yūsuf (b. 1389, son of Yūsuf ibn Faraj and the Emperor's sister Jadīla): integrating the new lands (from 24 August 1405)
+        Maryam bint Yūsuf: integrating the new lands
+        Yūsuf ibn Saʿd: encouraging migration (from 1 October 1405)
+      realm:
+        towns: 161
+        population: 2018108
+        income: 269.8
+        expenses: 191.6
+        treasury: 417.8
+        stability: 26.1
+        subjects:
+          - Valencia
+          - Catalonia
+          - Aragon
+          - Shalamanka
+          - Qūnka
+      decision: >-
+        Enough to set thoughts of changing succession aside; his heirs will lead the realm forward if Ismāʿīl
+        can have a long reign (Trent)
+      note: save from before the boys' educations were set (Trent)
+tellings:
+  - id: 0808-03-06-of-granadilla-the-end-of-the-risings-and-al-gharb
+    'on': '1405-09-01'
+    title: Of Granadilla, the End of the Risings, and al-Gharb
+    verse: '8:46'
+    who:
+      - ismail-ibn-saad
+      - khalid-ibn-yahya
+      - saad-ibn-ismail
+    where:
+      - qunka
+      - shalamanka
+      - al-ushbuna
+      - majrit
+      - shantarin
+      - yabura
+      - ukshunuba
+      - shilb
+      - baja
+      - ishbiliyya
+    covers:
+      - 1405-01-28-battle-buitrago
+      - 1405-03-18-battle-cuenca
+      - 1405-07-02-battle-granadilla
+      - 1405-07-08-ciudad-rodrigo-crushed
+      - 1405-07-10-battle-cuenca-ii
+      - 1405-08-05-battle-lisbon
+      - 1405-08-24-the-risings-crushed
+      - 1405-09-01-al-gharb-annexed
+      - 1395-08-05-diwan-al-insha
+    text: >
+      The new Emperor [Ismāʿīl](person:ismail-ibn-saad) inherited three rebel kingdoms and an army on the
+      march. He had never been thought a soldier, and he did not pretend to be one. He set himself one task,
+      to end the risings before the year was out, and gave every order in the dīwān to that end. The court,
+      which had heard him called a man who told everyone what they wished to hear, now heard him tell the
+      treasurers what the war would cost, and the generals what he expected of them, and both found he meant
+      it.
+
+
+      The rebels of Toledo had shown what they were in Rajab, when nearly five thousand of them fell on the
+      hundred and twenty men of the Ṭāʾifa of [Qūnka](place:qunka) at Buitrago in the Guadarrama and killed
+      them all. In Ramaḍān the Emperor had broken their army before Qūnka. Now he turned first to the west,
+      where the Leonese of Shalamanka had set up their lordship at Ciudad Rodrigo. He gave that war to [Khālid
+      ibn Yaḥyā Raḥḥū](person:khalid-ibn-yahya), sixty-two years old, who had beaten the Marīnids in his youth
+      and walked the hills with the prospectors in his age. Khālid gathered the crown's army and the hosts of
+      Arghūn and Catalonia, more than twenty thousand men, and on 4 Muḥarram 808 he found the rebels at
+      Granadilla, three thousand levies with no hope of standing against him. More than half of them fell. Six
+      days later, on the day of ʿĀshūrāʾ, the lordship of Ciudad Rodrigo was gone, and its sixteen towns,
+      [Shalamanka](place:shalamanka), Ávila and Ciudad Rodrigo among them, went back to the Emperor's cousin
+      [Saʿd ibn Ismāʿīl](person:saad-ibn-ismail).
+
+
+      On 12 Muḥarram the Emperor came before Qūnka a second time, where what was left of the army of Toledo
+      had gathered again, and he destroyed it: twelve hundred of theirs dead or taken, and fewer than a
+      hundred of ours. In the west the rebels of Estremadura had been sitting before
+      [al-Ushbūna](place:al-ushbuna) since the winter. On 8 Ṣafar they tried to take it by storm and met the
+      army of the Ṭāʾifa of al-Gharb under the walls. The men of al-Gharb spoke Portuguese and prayed as
+      Muslims, and they threw the Portuguese Christians back from the city with half their number dead.
+
+
+      On 27 Ṣafar 808 the Kingdom of Toledo and the Kingdom of Estremadura came to an end together. Their
+      forty-eight towns, from [Majrīṭ](place:majrit) and Alcalá to Ciudad Real and Albacete, and from
+      [Shantarīn](place:shantarin) on the Tagus to [Yābura](place:yabura) and Elvas, came back to the crown.
+      The risings of 807 had lasted eight months. The Emperor's father had died marching against them, and his
+      son had finished them in under six.
+
+
+      Al-Gharb had earned its reward, and the Emperor gave it in his own way. The ṭāʾifa had served the crown
+      since the peace of 767: thirteen towns from [Ukshūnuba](place:ukshunuba), [Shilb](place:shilb), Lagos
+      and Tavira on the coast to [Bāja](place:baja), Mértola and Serpa in the Alentejo, a hundred and
+      thirty-seven thousand people who spoke the tongue of Portugal and had nearly all come to Islam. The
+      secretaries of the Dīwān al-Inshāʾ wrote to its court, and wrote again, and on 6 Rabīʿ al-Awwal 808
+      al-Gharb was taken into the crown without a sword drawn. What his father had won with armies, the court
+      said, Ismāʿīl gathered in with letters. The crown held a hundred and sixty-one towns of its own, with
+      five ṭāʾifas beside it.
+
+
+      *And obey Allāh and His Messenger, and do not dispute, lest you lose courage and your strength depart,
+      and be patient. Indeed, Allāh is with the patient.*
+  - id: 0811-03-12-of-the-old-capital-and-the-sons-of-muhammad
+    'on': '1408-08-05'
+    title: Of the Old Capital, the Shaykha of Qūnka, and the Sons of Muḥammad
+    verse: '52:21'
+    who:
+      - ismail-ibn-saad
+      - umm-al-fath-bint-saad
+      - muhammad-ibn-yusuf-ibn-faraj
+      - yusuf-ibn-saad
+      - saad-ibn-faraj
+      - maryam-bint-saad-ibn-faraj
+      - saad-ibn-ismail-ibn-saad
+      - ismail-ibn-yusuf
+      - muhammad-ibn-ismail-ibn-saad
+      - magdalena-de-borja
+      - isabel-de-montsoriu
+      - fatima-bint-yusuf
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+    where:
+      - qurtuba
+      - ishbiliyya
+      - qunka
+    covers:
+      - 1405-08-24-the-risings-crushed
+      - 1408-02-20-death-of-saad-ibn-faraj
+      - 1408-03-01-capital-of-the-old-caliphate
+      - 1408-05-27-death-of-ismail-ibn-yusuf
+      - 1408-08-05-the-sons-of-muhammad
+    text: >
+      After the risings the Emperor [Ismāʿīl](person:ismail-ibn-saad) gave the dīwān to the work of binding
+      the north. His half-sister [Umm al-Fatḥ](person:umm-al-fath-bint-saad) and his nephew [Muḥammad ibn
+      Yūsuf](person:muhammad-ibn-yusuf-ibn-faraj), a grandson of the old Emperor through his mother, were set
+      to governing the lands that had risen, and his brother [Yūsuf](person:yusuf-ibn-saad) to drawing
+      Andalusī settlers north to them. In those years the qāḍīs began to say a thing they had not expected to
+      say of him. Whatever the Emperor told men in private, and he told each of them what he wished to hear,
+      his judgments in public were fair, and no one who brought a case before him could say it had been
+      decided by favour.
+
+
+      On 22 Ramaḍān 810 [Saʿd ibn Faraj](person:saad-ibn-faraj), lord of the Ṭāʾifa of [Qūnka](place:qunka)
+      since the year of the two ṭāʾifas, died at forty-nine. His heir was his daughter
+      [Maryam](person:maryam-bint-saad-ibn-faraj), seventeen years old, the Emperor's niece through her mother
+      Umm al-Fatḥ, and already the wife of the Emperor's second son [Saʿd](person:saad-ibn-ismail-ibn-saad).
+      So the Shaykha of Qūnka was a Naṣrid on both sides, and the frontier ṭāʾifa that had first faced the
+      rebels of Toledo passed to a girl who had grown up in the Emperor's own house.
+
+
+      Ten days later, on the morrow of the feast of the breaking of the fast, the Emperor took up the question
+      of [Qurṭuba](place:qurtuba). The city of the caliphs had come back to Islam sixty years before, and
+      still it had not recovered. Its streets were full of thieves, its people cursed the decay that had come
+      over it, and half its old buildings stood in ruins from the wars with the Christians. The old men of the
+      court, and the ʿulamāʾ with them, wanted the court moved there, so that al-Andalus would be governed
+      again from the seat of ʿAbd al-Raḥmān. The Emperor heard them out and gave them half of what they asked.
+      Qurṭuba would be the Capital of the Old Caliphate, with the dignity of the name and the money and labour
+      to rebuild it, for as long as the empire stood. But the court would stay at
+      [Ishbīliya](place:ishbiliyya), on its river and its market, where his father had brought it. The ʿulamāʾ
+      went away content with the name, the merchants with the court, and Ishbīliya grew richer that year than
+      it had ever been.
+
+
+      On the first day of Muḥarram 811 the old Emperor's brother [Ismāʿīl ibn Yūsuf](person:ismail-ibn-yusuf)
+      died at fifty-four. He had sat in the dīwān for twenty-three years, from the revolt of Ṭulayṭula until
+      the end of the risings, and he was the last of the sons of Yūsuf I.
+
+
+      By the summer of 811 the question that had troubled the old Emperor's last years had settled itself. The
+      heir [Muḥammad](person:muhammad-ibn-ismail-ibn-saad) was twenty-two. He was still slow, but he had done
+      one thing well: he had married two daughters of the ṭāʾifa houses,
+      [Magdalena](person:magdalena-de-borja) of the Borja of Arghūn and [Isabel](person:isabel-de-montsoriu)
+      of the Montsoriu of Catalonia, whose mother was [Fāṭima](person:fatima-bint-yusuf), daughter of Yūsuf I.
+      They had given him five children. The two eldest were boys of five:
+      [Ismāʿīl](person:ismail-ibn-muhammad-ibn-ismail), Magdalena's son, born in Rabīʿ al-Awwal 805, and
+      [Aḥmad](person:ahmad-ibn-muhammad-ibn-ismail), Isabel's, born in Dhū al-Qaʿda of the same year. Their
+      tutors had not yet been chosen, but those who had seen them said both were gifted, and that they were
+      never apart: Ismāʿīl did the talking for both of them, and Aḥmad drew towns in the sand with a stick
+      while he did. If the Emperor reigned long, the crown would pass to Muḥammad and through him to boys
+      worthy of it, and no one would need to change the law of the house to make it so.
+
+
+      His brother Saʿd was not forgotten. He was sixteen, the ablest of the Emperor's sons, and married to the
+      Shaykha of Qūnka. The crown would not be his, but the frontier would be his children's.
+
+
+      *And those who believed and whose descendants followed them in faith, We will join with them their
+      descendants.*

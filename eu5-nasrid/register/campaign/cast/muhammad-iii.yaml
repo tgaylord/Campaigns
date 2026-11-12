@@ -1,0 +1,14 @@
+name: Muḥammad III al-Makhlūʿ
+arabic: محمد الثالث المخلوع
+house: Naṣrid
+born: '1257-08-15'
+died: '1314-01-24'
+father: muhammad-ii
+reigns:
+  - from: '1302-01-20'
+    to: '1309-03-14'
+roles:
+  - sultan
+game:
+  id: 3526
+  name: Muhammad

@@ -1,0 +1,1066 @@
+date: '1375-03-15'
+title: The Peace of the Upper March
+source:
+  save: SP_GRA_1375_03_15 (compressed)
+  game: 1.4.6
+summary: >-
+  On 15 March 1375 the War of the Upper March ends. Aragon gives up all 34 towns it still held, from the
+  Pyrenees to the Ebro, and holds no land; Malta goes to the Mamlūks, and Sicily pays reparations. The realm
+  grows from 60 towns to 94 and from 765,000 people to 1,275,000. The Catalans are now its largest people and
+  Catholics outnumber Muslims two to one. The army of 3,300 regulars is whole, no levies were raised, and the
+  treasury holds 286. New truces run with Sicily and its subjects to April 1386 and with Aragon to March 1388;
+  the Castilian truce ends on 5 June 1375. Shares of power are estimated from the 1 June 1349 reading.
+realm:
+  towns: 94
+  souls: 1275187
+  treasury: 286
+  income: 94.5
+  expenses: 77.1
+  stability: 30.4
+  prestige: 42
+  regiments: 5
+  ships: 4
+  manpower: 2731
+court:
+  ruler: saad-ibn-yusuf
+  heir: ismail-ibn-saad
+  capital: gharnata
+  council:
+    - who: dua-marinid
+      seat: Promoting Andalusī culture
+    - who: sayyida-of-fezzan
+      seat: Promoting Andalusī culture
+standing:
+  allies:
+    - Mamluks
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+    - Taifa of the Algarve (taifa)
+  estates:
+    - name: Crown
+      power: 37.63
+    - name: Nobility
+      power: 21.08
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 5.83
+      mood: 55
+    - name: Burghers
+      power: 7.94
+      mood: 50
+    - name: Commoners
+      power: 3.18
+      mood: 50
+    - name: Dhimmī
+      power: 24.35
+      mood: 50
+peoples:
+  cultures:
+    Catalan: 454639
+    Andalusi: 451597
+    Castilian: 260613
+    Sephardi: 59956
+    Aragonese: 33722
+    Mustaarabi: 3992
+  faiths:
+    Catholic: 814799
+    Sunni: 397076
+    Jewish: 62515
+    Bori_Religion: 546
+    Nyama: 250
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+    - ALV
+  allies:
+    - MAM
+beats:
+  - id: 1374-02-19-battle-barcelona
+    'on': '1374-02-19'
+    kind: battle
+    what: >-
+      Before the walls of Barshalūna the sultan breaks the army of Arghūn. Saʿd commands in person and gives
+      the right wing, with two-thirds of the horse, to his brother Abū al-Ḥasan ʿAlī. The heavy infantry holds
+      the centre while the wings destroy the Aragonese flanks, and then close on the levies left in the
+      middle. 3,375 of theirs fall for 1,228 of ours (+21 war score)
+    who:
+      - saad-ibn-yusuf
+      - ali-ibn-yusuf
+    where:
+      - barshaluna
+    threads:
+      - war-of-the-upper-march
+    from:
+      - seen
+      - told
+    cite: Trent's account and battle screens of 29 January and 19 February 1374
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 3299
+      oursTotal: 3299
+      oursLost: 1228
+      theirs:
+        Aragon: 5320
+      theirsTotal: 5320
+      theirsLost: 3375
+      location: Barcelona
+      side: Granada attacking
+      began: '1374-01-29'
+      commanders:
+        Granada: Saʿd ibn Yūsuf (100/68/100)
+        Aragon: an Aragonese general (45/77/56)
+      units:
+        Granada:
+          infantry:
+            - 1999
+            - -635
+          light cavalry:
+            - 800
+            - -349
+          heavy cavalry:
+            - 500
+            - -244
+        Aragon:
+          archers:
+            - 4816
+            - -2914
+          infantry:
+            - 76
+            - -76
+          light cavalry:
+            - 325
+            - -282
+          heavy cavalry:
+            - 103
+            - -103
+      warScore: 21.37
+      warScoreAfter: 31
+  - id: 1374-03-09-battle-tarragona
+    'on': '1374-03-09'
+    kind: battle
+    what: >-
+      The sultan rides down what is left of the Aragonese army at Ṭarrakūna: 1,343 of theirs killed or taken
+      for 31 of ours (+6 war score). By 9 March all that remains of the host of Arghūn is 161 levies somewhere
+      in the mountains
+    who:
+      - saad-ibn-yusuf
+    where:
+      - tarrakuna
+    threads:
+      - war-of-the-upper-march
+    from:
+      - seen
+      - told
+    cite: Trent's account and battle screen of 9 March 1374
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 2071
+      oursTotal: 2071
+      oursLost: 31
+      theirs:
+        Aragon: 1343
+      theirsTotal: 1343
+      theirsLost: 1343
+      location: Tarragona
+      side: Granada attacking
+      captured:
+        Granada: 11
+      units:
+        Granada:
+          infantry:
+            - 1364
+            - -31
+          light cavalry:
+            - 451
+            - -2
+            - +11 captured
+          heavy cavalry:
+            - 256
+            - 0
+        Aragon:
+          archers:
+            - 1300
+            - -1300
+          light cavalry:
+            - 43
+            - -32
+            - -11 captured
+      warScore: 6.33
+      warScoreAfter: 38
+      aragonLeft: 161 levies in the mountains (Trent)
+  - id: 1374-03-09-constructions
+    'on': '1374-03-09'
+    kind: note
+    what: >-
+      While the army is in Catalonia, the rebuilding goes on at home: the treasury is paying for a Royal Court
+      in Gharnāṭa, mines at Almonaster (El-Mnastir), and the second level of a ṯaġr fort at Aracena
+      (Eš-Šeršna), more fortification on the Castilian border while the realm's attention is on Arghūn
+    who:
+      - saad-ibn-yusuf
+    from:
+      - seen
+      - told
+    cite: Trent's screenshots of 29 January and 9 March 1374, and his account
+    detail:
+      constructions:
+        - Royal Court in Ğrnaṭa (Granada)
+        - Mines in El-Mnastir (Almonaster la Real)
+        - Ṯaġr Fort in Eš-Šeršna, level 2 (Aracena)
+      treasury: 101.42
+      monthly: 29.46
+      taghrFort:
+        type: 'defensive building (Granada''s own: the thaghr, the frontier fort)'
+        effects:
+          hostileMovementCost: +25%
+          friendlyMovementCost: -10%
+          monthlyManpower: '+10'
+          hostileAttrition: +0.5%
+          garrison: '+50'
+          canRecruitRegiments: true
+          minimumFortLevel: '+1'
+        cost: 200
+        stone: 2
+        days: 365
+        gameText: >-
+          The ṯaġr is the frontier where our emirate touches the lands of the Christian kings. Built atop a
+          hill or astride a road, the fort and its watchposts impose a toll on every column that would cross
+          our border, slowing the Christian advance, denying their armies forage and water, and giving our own
+          riders a place to muster and resupply as they range against the enemy.
+  - id: 1374-03-09-france-busy
+    'on': '1374-03-09'
+    kind: note
+    what: >-
+      The timing of the war: France is deep in its war with England, and English troops hold a broad swathe of
+      the west of the kingdom, from Normandy through Anjou to Poitou. Before, the sultan would have been wary
+      of pushing right up to the French border. Now, if he is quick, he can take all of Arghūn before the
+      French drive the English back
+    who:
+      - saad-ibn-yusuf
+      - jean-of-france
+      - edward-of-england
+    from:
+      - seen
+      - told
+    cite: Trent's account and map screenshot, March 1374
+    detail:
+      war: France against England, from 1 February 1372
+      menAtJanuary1373:
+        FRA: 20455
+        ENG: 22996
+      plan: take all of Aragon before France is free
+  - id: 1374-03-jamaa-tithes
+    'on': '1374-03-09'
+    kind: realm
+    what: >-
+      With the sultan in Catalonia, Duʿā the Marīnid runs the court in Gharnāṭa. With his support, sent by
+      letter, she summons the Jamāʿa to debate the regulation of tithes: the ʿulamāʾ are to be given more
+      power to regulate and tax the dhimmīs
+    who:
+      - dua-marinid
+      - saad-ibn-yusuf
+    threads:
+      - estates
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshot, March 1374 (the date of the summons is approximate)
+    detail:
+      issue: Regulate Tithe Collection
+      whileDebated:
+        clergySatisfactionRecovery: +0.5%
+      ifPassed:
+        modifier: Regulated Tithe Collection, 10 years
+        clergySatisfactionEquilibrium: +20%
+        taxEfficiency: +5%
+        ulamaSatisfaction: +10%
+      ifFailed:
+        politicalInfluence: -5
+        stability: -7
+        legitimacy: -10
+      gameText: >-
+        The collection of tithes has grown irregular and contentious. By standardizing the church's share of
+        income across the realm, we ensure fair and reliable revenue for the clergy while relieving the burden
+        of uncertainty from our people.
+  - id: 1374-05-02-jamaa-passes
+    'on': '1374-05-02'
+    kind: realm
+    what: >-
+      The Jamāʿa passes the regulation of tithes, but the nobles' price is a few small privileges that bind
+      the peasants a little tighter to the land. For ten years the ʿulamāʾ collect the tithe and tax the
+      dhimmīs by one rule across the realm
+    who:
+      - dua-marinid
+      - saad-ibn-yusuf
+    threads:
+      - estates
+    from:
+      - told
+    cite: Trent's account, 2 May 1374
+    detail:
+      issue: Regulate Tithe Collection
+      result: passed
+      modifier: Regulated Tithe Collection until 1384 (clergy satisfaction equilibrium +20%, tax efficiency +5%)
+      ulamaSatisfaction: +10%
+      price: a few very minor privileges for the nobles, moving the realm slightly further toward serfdom
+  - id: 1374-05-23-battle-zuwara
+    'on': '1374-05-23'
+    kind: battle
+    what: >-
+      In Ifrīqiya the Mamlūk shaykh of Barqa falls on Sicily's subject the Jabal Nafūsa at Zuwāra: 3,100
+      against 430, with 300 of theirs lost for 210 of his
+    who:
+      - ramadan-of-barqa
+    threads:
+      - war-of-the-upper-march
+    from:
+      - save
+    cite: autosave of 1 November 1374
+    detail:
+      result: allied victory
+      naval: false
+      ours:
+        Barqa: 3144
+      oursTotal: 3144
+      oursLost: 211
+      theirs:
+        Nafusa: 426
+      theirsTotal: 426
+      theirsLost: 298
+      location: Zuwara
+      side: Barqa attacking
+      commanders:
+        Barqa: Shaykh Ramaḍān
+        Nafusa: Abū al-Faḍl of the Jabal Nafūsa
+  - id: 1374-06-24-battle-gharyan
+    'on': '1374-06-24'
+    kind: battle
+    what: >-
+      The shaykh of Barqa runs down the last 127 men of the Jabal Nafūsa at Gharyān, their capital, without
+      loss
+    who:
+      - ramadan-of-barqa
+    threads:
+      - war-of-the-upper-march
+    from:
+      - save
+    cite: autosave of 1 November 1374
+    detail:
+      result: allied victory
+      naval: false
+      ours:
+        Barqa: 2931
+      oursTotal: 2931
+      oursLost: 0
+      theirs:
+        Nafusa: 127
+      theirsTotal: 127
+      theirsLost: 127
+      location: Gharyan
+      side: Barqa attacking
+  - id: 1374-10-25-malta-taken
+    'on': '1374-10-25'
+    kind: battle
+    what: >-
+      Late in October the Mamlūk governor of Barqa, Shaykh Ramaḍān of the Baḥrī house, takes Malta, held for
+      the Sicilian crown by its vassal the Duchy of Athens, with 2,900 men: another front of Islam's advance,
+      on the islands between Sicily and Ifrīqiya
+    who:
+      - ramadan-of-barqa
+      - bolot-mamluk
+    threads:
+      - war-of-the-upper-march
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshots, late October 1374
+    detail:
+      result: taken
+      location: Malta
+      from: SIC
+      by: BQA (Sheikhdom of Barqa, a Mamlūk vassal)
+      army:
+        name: Jaysh 1
+        men: 2918
+        lightInfantry: 2917
+        heavyCavalry: 1
+        morale: 4.01
+      date: late October 1374 (Trent)
+      heldBy: Athens, a vassal of Sicily (saves of 1 December 1373 and 1 November 1374)
+  - id: 1374-10-the-princes-tutors
+    'on': '1374-10-25'
+    kind: note
+    what: >-
+      The sultan's two sons are given the costly tutors he was given himself. Duʿā had pressed for her son
+      alone, the heir Ismāʿīl, eight, already silver-tongued; but the sultan grants the same to Aiman's son
+      Yūsuf, three, who is following in his father's footsteps
+    who:
+      - ismail-ibn-saad
+      - yusuf-ibn-saad
+      - dua-marinid
+      - aiman-mamluk
+      - saad-ibn-yusuf
+    from:
+      - seen
+      - told
+    cite: Trent's account and character screens, late October 1374
+    detail:
+      ismail-ibn-saad:
+        age: 8
+        stats:
+          - 18
+          - 63
+          - 19
+        mother: Duʿā the Marīnid
+        note: the heir, a silver tongue (Trent)
+      yusuf-ibn-saad:
+        age: 3
+        stats:
+          - 9
+          - 5
+          - 10
+        mother: Aiman the Mamlūk (Baḥriyya)
+        note: follows his father (Trent)
+      rivalry: Duʿā had initially pushed for only her son to receive the tutors (Trent)
+  - id: 1374-11-12-battle-george-bay
+    'on': '1374-11-12'
+    kind: battle
+    what: >-
+      Off Malta, in the bay of St George, the Sicilian fleet catches Barqa's ships three weeks after the
+      island fell: 31 Sicilian sail against 8, and all eight of Barqa's are lost for one of theirs. The island
+      stays taken, but the sea around it is Sicily's
+    who:
+      - ramadan-of-barqa
+    threads:
+      - war-of-the-upper-march
+    from:
+      - save
+    cite: save of 15 March 1375 (the war's battle list)
+    detail:
+      result: allied defeat
+      naval: true
+      ours:
+        Barqa: 8
+      oursTotal: 8
+      oursLost: 8
+      theirs:
+        Sicily: 31
+      theirsTotal: 31
+      theirsLost: 1
+      location: St George's Bay, Malta
+      side: Barqa attacking
+      units: ships
+      commanders:
+        Sicily: Nicholas (Sicilian admiral)
+  - id: 1375-01-06-court-factions
+    'on': '1375-01-06'
+    kind: note
+    what: >-
+      The court divides along the sultan's two marriages. Duʿā's family, the Marīnids of Fās, twice made war
+      on the Emirate; Aiman's, the Baḥrī Mamlūks, fight beside it in Sicily, Malta and Catalonia. The Mamlūk
+      commitment is a boon for the Aiman faction
+    who:
+      - aiman-mamluk
+      - dua-marinid
+      - yusuf-ibn-saad
+      - ismail-ibn-saad
+    from:
+      - told
+    cite: Trent's account, January 1375
+    detail:
+      aimanFaction: the Mamlūk alliance, Aiman and her son Yūsuf
+      duaFaction: Duʿā, the heir Ismāʿīl, the regency at Gharnāṭa
+  - id: 1375-01-06-mamluk-army-catalonia
+    'on': '1375-01-06'
+    kind: note
+    what: >-
+      With Barshalūna already under siege, a Mamlūk army of 4,272 under another cousin of the Baḥrī house
+      marches through Girona for Castelló d'Empúries, in the far north of Catalonia under the Pyrenees: the
+      ally keeps its word, and the Aiman faction at court gains by it
+    who:
+      - bolot-mamluk
+      - aiman-mamluk
+    threads:
+      - war-of-the-upper-march
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshot of 6 January 1375
+    detail:
+      army:
+        name: Jaysh 1
+        owner: MAM
+        men: 4272
+        lightInfantry: 2431
+        heavyInfantry: 996
+        lightCavalry: 310
+        heavyCavalry: 391
+        auxiliary: 144
+        morale: 3.86 of 3.94
+        arrives: Castelló d'Empúries, 10 January 1375
+        supply: cannot draw food in Girona, beyond its logistics range (41.2)
+      siege: Barcelona under siege by Granada (Trent)
+      commander: a cousin of the Baḥrī house (Baḥriyya), as Aiman and the shaykh of Barqa are
+  - id: 1375-03-15-aragon-falls-apart
+    'on': '1375-03-15'
+    kind: land
+    what: >-
+      As the Kingdom of Aragon collapses, so do its outlying lands. Montpellier, beyond the Pyrenees, swears
+      itself to the English rather than the French, and Sassari in Sardinia is taken back by Arborea, the
+      Genoese vassal. The Kingdom of Aragon is no more, at first
+    who:
+      - joan-of-aragon
+    threads:
+      - war-of-the-upper-march
+    from:
+      - save
+      - told
+    cite: autosave of 1 November 1374; saves of 15 March 1375; Trent's account
+    detail:
+      changes:
+        - location: Montpellier
+          from: ARA
+          to: ENG
+        - location: Sassari
+          from: ARA
+          to: ARB
+      when: 'between 1 November 1374 and the peace: both had already changed hands in the save taken just before it'
+      note: >-
+        Aragon held 34 towns on the morning of the peace and none after it; its truce with Granada still runs
+        to 15 March 1388
+  - id: 1375-03-15-peace-aragon
+    'on': '1375-03-15'
+    kind: peace
+    what: >-
+      Peace with Aragon and Sicily. Barcelona has been under siege for 282 days and is about to fall; King
+      Joan might still fight on from his Sicilian crown, until the shaykh of Barqa lands 3,000 men on the
+      island and storms Siracusa. Offered peace or a war on Sicily itself, he accepts. Aragon gives up every
+      town it has left, 34 of them from the Pyrenees to the Ebro, and the Kingdom of Aragon ceases to hold
+      land. Malta passes to the Mamlūks, and Sicily pays reparations. The war score stands at +61%
+    who:
+      - saad-ibn-yusuf
+      - joan-of-aragon
+      - ramadan-of-barqa
+      - bolot-mamluk
+    threads:
+      - war-of-the-upper-march
+    from:
+      - save
+      - told
+    cite: saves of 15 March 1375 before and after the peace; Trent's account
+    detail:
+      with:
+        - ARA
+        - SIC
+      ceded:
+        - Barcelona
+        - Tarragona
+        - Girona
+        - Lleida
+        - Tortosa
+        - Perpignan
+        - Vic
+        - Manresa
+        - Terrassa
+        - Vilafranca del Penedès
+        - Sant Feliu
+        - Berga
+        - Cardona
+        - Cervera
+        - Tàrrega
+        - Balaguer
+        - Agramunt
+        - Montblanc
+        - Prades
+        - Flix
+        - Fraga
+        - Monzón
+        - Barbastro
+        - Benabarre
+        - Aínsa
+        - Sariñena
+        - Vielha
+        - Talarn
+        - La Seu d'Urgell
+        - Puigcerdà
+        - Ripoll
+        - Besalú
+        - Castelló d'Empúries
+        - Sitges
+      population: 504700
+      cededPeople:
+        Catalan: 454200
+        Aragonese: 33500
+        Sephardi: 9700
+        Catholic: 495100
+        Jewish: 9400
+        Sunni: 250
+      toMamluks:
+        - Malta
+      reparations: Sicily pays war reparations to Granada
+      warScore: 61
+      aragonLands:
+        - 34
+        - 0
+      truces:
+        Aragon: '1388-03-15'
+        Sicily, Athens, Negroponte, Nafusa: '1386-04-15'
+      passageToPalermo: >-
+        the envoys' promise that King Joan would be let go unharmed to Palermo: he leaves Aragon alive and
+        free, still king of Sicily, less Malta (Trent's account)
+      siracusa: >-
+        stormed by Barqa's 3,000 shortly before the peace; returned to Sicily by it (Trent's account; Sicily
+        owns Syracuse after the peace)
+      warDead:
+        granada: 1260
+        aragon: 4706
+        nafusa: 425
+        barqa: 211
+        note: >-
+          battle losses only, from the war's five battles; attrition and the siege of Barcelona are not
+          counted. Barqa also lost 8 ships off Malta
+  - id: 1375-03-15-state
+    'on': '1375-03-15'
+    kind: note
+    what: >-
+      With Catalonia the realm grows from 60 towns to 94 and from 765,000 souls to 1,275,000. For the first
+      time the Catalans are its largest people, 455,000 against 452,000 Andalusīs, and Christians outnumber
+      the faithful two to one: 815,000 Catholics against 397,000 Muslims and 63,000 Jews. Barcelona, at
+      46,000, is the realm's third city
+    who:
+      - saad-ibn-yusuf
+    from:
+      - save
+    cite: save of 15 March 1375 after the peace
+    detail:
+      locations:
+        - 60
+        - 94
+      population:
+        - 765231
+        - 1275187
+      cultures:
+        Catalan: 454639
+        Andalusi: 451597
+        Castilian: 260613
+        Sephardi: 59956
+        Aragonese: 33722
+      religions:
+        Catholic: 814799
+        Sunni: 397076
+        Jewish: 62515
+      treasury: 286
+      income: 94.5
+      expenses: 77.1
+      stability: 30.4
+      menUnderArms: 3300
+  - id: 1375-03-15-the-new-taifas
+    'on': '1375-03-15'
+    kind: note
+    what: >-
+      The sultan resolves not to keep Catalonia and Aragon for the crown. They will be made two new ṭāʾifas:
+      Catalonia, and a resurrected Aragon in the interior. Returning Aragonese land to a successor kingdom
+      looks far less aggressive than seizing it outright. In the same reordering, Mursiyya is to be absorbed
+      directly into the crown
+    who:
+      - saad-ibn-yusuf
+      - joan-of-aragon
+    threads:
+      - war-of-the-upper-march
+    from:
+      - told
+    cite: Trent's account, after the peace of 15 March 1375
+    detail:
+      plannedTaifas:
+        - Catalonia
+        - Aragon (the interior)
+      absorbed: Murcia, into the crown
+      why: to be seen returning rightful Aragonese land to a successor kingdom rather than seizing it
+      status: carried out the next day, 16 March 1375
+tellings:
+  - id: 0775-09-06-the-battle-before-barshaluna
+    'on': '1374-02-19'
+    title: Of the March into the Upper March, and the Battle Before the Walls of Barshalūna
+    verse: 3:123
+    who:
+      - sayyida-of-fezzan
+      - dua-marinid
+      - saad-ibn-yusuf
+      - joan-of-aragon
+      - bolot-mamluk
+      - ali-ibn-yusuf
+    where:
+      - mursiyya
+      - gharnata
+      - balansiyya
+      - barshaluna
+    covers:
+      - 1373-01-16-state
+      - 1373-01-16-court
+      - 1372-12-13-murcia-fezzan
+      - 1373-01-16-hajj
+      - 1373-10-01-march-on-valencia
+      - 1373-12-01-war-on-aragon
+      - 1373-12-01-mamluks-join
+      - 1374-02-19-battle-barcelona
+    text: >
+      In the winter of 774 the last of the seven loans of the Marīnid war was paid back to the estates, every
+      dirham of it, with the interest the dīwān had promised. The sultan had refused to think of a new war, or
+      even of the pilgrimage, while he still owed his own lords money. A man who stood at ʿArafa in debt, he
+      said, stood there with another man's purse. Now the treasury took in half again what it spent, every
+      estate paid more into it than before, and even the north shore, which had yielded almost nothing at the
+      peace, had begun to pay. His mother [Sayyida](person:sayyida-of-fezzan) had taken a seat in the dīwān
+      beside [Duʿāʾ](person:dua-marinid), and a marriage had bound the ṭāʾifa of [Mursiyya](place:mursiyya) to
+      Fezzan, her homeland beyond the desert. Only then did the sultan begin to make ready for the Hajj.
+
+
+      The truce with Arghūn ran out in Dhū al-Ḥijja of the year 774, on the day of the feast, and the sultan
+      let it run out in [Gharnāṭa](place:gharnata) rather than at Minā. He had put off his pilgrimage for it,
+      and he did not mean to waste the delay. By Rabīʿ al-Thānī 775 the dīwān's second claim was written, this
+      one against the crown of the Catalans, and our lord [Saʿd](person:saad-ibn-yusuf) rode north at the head
+      of the armies of the realm. He wintered them at [Balansiyya](place:balansiyya), within sight of the
+      Upper March. The old map of the caliphs called that country the Thaghr al-Aʿlā, and no army of the house
+      of Naṣr had ever marched into it.
+
+
+      Arghūn stood alone. Its king, [Joan](person:joan-of-aragon), was twenty-four and wore two crowns,
+      Arghūn's and Ṣiqilliya's, but the second brought him only three ships and Ṣiqilliya's subjects across
+      the sea. The Genoese, who were the Sicilians' friends, were busy with a war against Bologna and Pisa.
+      The Pope at Avignon wrote letters and sent nothing. The dīwān reckoned the Catalan host at a few hundred
+      men under arms against the sultan's three thousand three hundred. So the sultan raised no levies. He
+      said the regulars would do, and that the peasants of the valley had a harvest to bring in.
+
+
+      On 14 Jumādā al-Ākhira 775 the herald read the declaration in Balansiyya. The same week, word came from
+      Alexandria that the sultan [Būlād](person:bolot-mamluk) had answered the call as an ally should. The
+      Mamlūk galleys had put out with the Egyptian vassals behind them, and they were sailing for the shores
+      of Ṣiqilliya, so that Joan's second crown would have to look to itself.
+
+
+      King Joan chose not to sit out a siege. He called out the levies of Catalonia: archers from the mountain
+      towns, foot from the coast, and a few hundred horsemen, among them the mailed knights of the estates
+      around [Barshalūna](place:barshaluna). In Shaʿbān he brought five thousand three hundred men to meet the
+      sultan's three thousand three hundred on the coastal plain below the city walls.
+
+
+      The sultan commanded in person. He set his heavy foot in the centre to hold whatever came at them. He
+      gave the right wing, and two-thirds of all the horse, to his brother [Abū al-Ḥasan
+      ʿAlī](person:ali-ibn-yusuf), who was eighteen and had never led men in battle. The sultan kept the left
+      under his own banner. The plan was the old one of the Andalusī jinetes: hold the centre, ride round the
+      wings, and close the jaws.
+
+
+      The battle lasted three weeks of manoeuvre, sallies and skirmishes in the winter rain, and it ran on
+      into Ramaḍān. The jurists ruled that men in the field were travellers and might break the fast, and the
+      sultan broke it with them so that none would be ashamed to eat. The centre did what was asked of it. It
+      took the weight of the Catalan foot and the archers' arrows and did not move, while the two wings fell
+      on the Aragonese flanks and destroyed them. By the end only the Catalan centre was left on the field:
+      levies, and the Catalan knights gathered around them. Then the centre pushed forward. Abū al-Ḥasan's
+      right wavered under the knights' last charge, and for a moment the court's watchers on the hill thought
+      the day might turn. Then the sultan brought the left round on the Catalans' other side, and they were
+      caught between the two wings.
+
+
+      It ended on 6 Ramaḍān. Three thousand three hundred and seventy-five of King Joan's men lay dead or
+      scattered before the walls of his capital, against one thousand two hundred and twenty-eight of ours.
+      Barshalūna's gates were shut, and the Catalan army had left the field. The court poets compared the
+      battle to a woven cloth, with the centre the warp, the horse the weft, and the sultan the weaver, and
+      for once the courtiers did not think they had exaggerated. It was the first Muslim victory before
+      Barshalūna since the days of the caliphs. It had cost the realm more than a third of the army that
+      fought it.
+
+
+      *And already had Allāh given you victory at Badr while you were few. So fear Allāh, that you may be
+      grateful.*
+  - id: 0775-09-24-the-pursuit-to-tarrakuna
+    'on': '1374-03-09'
+    title: Of the Pursuit to Ṭarrakūna
+    verse: 2:251
+    who:
+      - saad-ibn-yusuf
+      - joan-of-aragon
+      - jean-of-france
+    where:
+      - barshaluna
+      - tarrakuna
+      - gharnata
+      - walba
+    covers:
+      - 1374-03-09-battle-tarragona
+      - 1374-02-19-battle-barcelona
+      - 1374-03-09-france-busy
+      - 1372-02-01-france-england
+      - 1374-03-09-constructions
+    text: >
+      Our lord [Saʿd](person:saad-ibn-yusuf) gave the Catalans no time to gather again under the walls of
+      [Barshalūna](place:barshaluna). He marched the whole army south along the coast after what was left of
+      King [Joan](person:joan-of-aragon)'s army: thirteen hundred archers and a few dozen riders making for
+      the old Roman walls of [Ṭarrakūna](place:tarrakuna).
+
+
+      The jinetes caught them on the plain before the city, and the foot came up behind; it ended on 24
+      Ramaḍān. It was hardly a battle. The archers had no horse to cover them and nowhere to run, and the
+      sultan's riders broke them in a morning. Thirteen hundred Catalans were killed. Eleven horsemen
+      surrendered and were taken into the sultan's service, to the delight of the court, which said that
+      Arghūn was now paying the sultan in men. Thirty-one of ours were lost.
+
+
+      When the sultan broke the fast that night in the camp outside Ṭarrakūna, the scouts reported that the
+      whole host of Arghūn now came to a hundred and sixty-one levies hiding in the mountains. The king who
+      wore two crowns had no army left to defend either of them.
+
+
+      The sultan's council sat late that night, and the talk was of Ifranja as much as of Arghūn. Beyond the
+      Pyrenees the king of France, [Jean](person:jean-of-france), was fighting for his kingdom against the
+      English again. The merchants said the English held the west of France from the sea of Normandy to
+      Poitou, and that every French lance was needed there. In any other year, the sultan said, he would have
+      been wary of carrying his banners up to the French border, because a French king with nothing else to do
+      might come over the mountains to save his Catalan neighbour. This year the French king had plenty to do.
+      Every month the English kept him busy was a month the Upper March lay open. The sultan resolved to take
+      all of Arghūn, from the Ebro to the Pyrenees, before France was free to look south. He told the dīwān it
+      was a race, and that he meant to win it.
+
+
+      Before he slept he sealed the week's letters for home, as he did throughout the campaign, and the war
+      took up less of them than the building. The treasury was to go on paying for the new royal court rising
+      in [Gharnāṭa](place:gharnata), for the mines being cut at Almonaster in the hills above
+      [Walba](place:walba), and for stronger walls on the frontier fort at Aracena, on the Castilian border.
+      The Upper March, he wrote, was no reason to leave the Lower March unguarded, and a mine opened in a year
+      of war paid as well as one opened in peace.
+
+
+      *So they defeated them by permission of Allāh.*
+  - id: 0775-11-19-the-regency-of-dua
+    'on': '1374-05-02'
+    title: Of Duʿāʾ's Regency, and the Tithe Given to the ʿUlamāʾ
+    verse: 3:159
+    who:
+      - dua-marinid
+      - saad-ibn-yusuf
+      - sayyida-of-fezzan
+    where:
+      - gharnata
+      - barshaluna
+    covers:
+      - 1374-03-jamaa-tithes
+      - 1374-05-02-jamaa-passes
+      - 1371-02-24-spread-of-usury
+      - 1374-02-19-battle-barcelona
+    text: >
+      While the sultan was in the Upper March, the court at [Gharnāṭa](place:gharnata) was run by a woman, and
+      nobody who knew her was surprised. [Duʿāʾ](person:dua-marinid) the Marīnid had sat in the dīwān for
+      nineteen years, under three husbands and two reigns. She had brought the court foreign learning and the
+      nobles' displeasure with it, and she had spent the last thirteen of those years making the Christians of
+      the new lands into Andalusīs. When our lord [Saʿd](person:saad-ibn-yusuf) rode north, he left the seal
+      with her. The sultan's mother, [Sayyida](person:sayyida-of-fezzan), sat beside her in the dīwān. No one
+      at court could remember the realm in more experienced hands, nor, the harem said, in two pairs of hands
+      that liked each other less. The women had shared a husband and then a son's ear. For a season they ran
+      the realm together with perfect courtesy and not one private word.
+
+
+      The quarrel over the moneylenders was still open. Three years earlier the sultan had told the ʿulamāʾ
+      they were overreacting, and they had nursed the wound since. Duʿāʾ meant to heal it before the army came
+      home. In the spring of 775 a letter came from the camp before [Barshalūna](place:barshaluna), written in
+      the sultan's own hand. It gave her leave to summon the Jamāʿa. The question she put to it was the tithe:
+      who should collect the dues of the faithful and the taxes of the dhimmīs, and by what rule. Across the
+      realm, and above all in the new lands, collection had grown irregular. Each town paid what its governor
+      could squeeze out of it, and the Christians and Jews of the valley never knew from one year to the next
+      what they owed. Duʿāʾ proposed to give the whole business to the ʿulamāʾ, under one rule for the realm.
+      They would gain the revenue and the authority over the dhimmī communities. The crown would gain a tax
+      that was reliably paid.
+
+
+      The ʿulamāʾ were delighted. The nobles were not. Every dirham the scholars collected was a dirham the
+      lords of the valley could not, and they made their price plain. Duʿāʾ paid it. It was a handful of small
+      privileges, nothing the sultan would notice from Catalonia, and each of them bound the peasants of the
+      nobles' estates a little more tightly to the land. On 19 Dhū al-Qaʿda 775 the Jamāʿa voted the measure
+      through. For ten years the tithe would be regulated across the realm, the ʿulamāʾ would be content, and
+      the treasury would collect more of what it was owed.
+
+
+      Duʿāʾ wrote to the sultan that the scholars were reconciled to him and the dhimmīs would know what they
+      owed. She also wrote that the nobles had been bought cheaply. The sultan wrote back that nothing the
+      nobles sold was cheap, and that the peasants would remember the price after the lords had forgotten it.
+      But he did not undo the bargain. He had a war to finish.
+
+
+      *And consult them in the matter; then when you have decided, rely upon Allāh.*
+  - id: 0776-08-02-of-the-siege-of-barshaluna
+    'on': '1375-01-06'
+    title: Of the Siege of Barshalūna, the Taking of Māliṭa, and the Two Princes
+    verse: 9:71
+    who:
+      - saad-ibn-yusuf
+      - ramadan-of-barqa
+      - bolot-mamluk
+      - ismail-ibn-saad
+      - yusuf-ibn-saad
+      - dua-marinid
+      - aiman-mamluk
+    where:
+      - barshaluna
+      - gharnata
+      - jarunda
+      - fas
+    covers:
+      - 1374-10-25-malta-taken
+      - 1374-11-12-battle-george-bay
+      - 1374-10-the-princes-tutors
+      - 1375-01-06-mamluk-army-catalonia
+      - 1375-01-06-court-factions
+      - 1374-05-23-battle-zuwara
+      - 1374-06-24-battle-gharyan
+    text: >
+      Arghūn had no army left, but [Barshalūna](place:barshaluna) still had its walls. They were the walls of
+      the old counts of the city, built on Roman ones, with the sea at their back where the Catalan galleys
+      could come and go. In the last days of Dhū al-Ḥijja 775, with the Feast of the Sacrifice kept in camp,
+      our lord [Saʿd](person:saad-ibn-yusuf) drew his lines around the city. The siege that followed was not
+      the work of a season. Summer passed, and autumn, and the sultan's engineers counted the days by the
+      stones they had brought down. The townsmen counted them by what was left in their granaries.
+
+
+      The war was being fought on other shores too. The Mamlūk sultan [Būlād](person:bolot-mamluk) had
+      promised to keep the second crown of King Joan busy, and he kept his word through the shaykh of Barqa,
+      [Ramaḍān](person:ramadan-of-barqa). Ramaḍān was a Baḥrī of the sultans' own house, fifty-four years old,
+      with four wives, eight children, and a soldier's temper. In the spring he had marched west along the
+      coast of Ifrīqiya against the Jabal Nafūsa, the Berbers of the mountains who paid homage to Ṣiqilliya.
+      He scattered their army at Zuwāra and finished it at Gharyān. Then he took ship. In Jumādā al-Ūlā 776 he
+      landed two thousand nine hundred men on Māliṭa, the rock between Ṣiqilliya and Ifrīqiya, which the Duke
+      of Athens held for the Sicilian crown, and took it. The Arabs had held that island once, and the Normans
+      had taken it from them. The court at [Gharnāṭa](place:gharnata) said it was another front of the faith's
+      return, from the Ebro to the sea of Ṣiqilliya.
+
+
+      The Sicilians did not let it go quietly. Three weeks later, on 6 Jumādā al-Ākhira, their fleet of
+      thirty-one sail found Barqa's eight ships at anchor in the bay below the island, which the Christians
+      call St George's. Not one of Ramaḍān's ships came out of it. Māliṭa stayed taken, but its garrison was
+      cut off from home, and the Sicilians let the shaykh know that the sea around their island was still
+      theirs.
+
+
+      In those same weeks the sultan settled a matter of his own house, and it was harder than the siege. His
+      father had brought the finest tutors of the Islamic world to Gharnāṭa for him when he was a boy, and the
+      court said the realm had been paying back the cost ever since in victories. Now there were two princes.
+      The heir, [Ismāʿīl](person:ismail-ibn-saad), son of [Duʿāʾ](person:dua-marinid), was eight, and already
+      had a tongue that could talk a qāḍī out of his own verdict. [Yūsuf](person:yusuf-ibn-saad), son of
+      [Aiman](person:aiman-mamluk) the Mamlūk, was three and already following his father about the yard with
+      a wooden sword. Duʿāʾ wrote from the regency that the tutors were an heir's right and an heir's alone.
+      The sultan wrote back from the camp before Barshalūna that both were his sons. The masters were sent
+      for, at great cost, and both boys sat before them. Duʿāʾ said nothing more about it, which the court
+      took for a bad sign.
+
+
+      On 2 Shaʿbān 776 a second Mamlūk host was in Catalonia. There were four thousand two hundred and
+      seventy-two of them, foot and horse, under another Baḥrī cousin of the sultans' house. They marched
+      through [Jarunda](place:jarunda) for Empúries under the mountains, though the country had been stripped
+      bare and they could draw no bread from it. Barshalūna was already under siege and hardly needed them.
+      The court understood what they had come to say. The Marīnids of [Fās](place:fas), Duʿāʾ's house, had
+      twice made war on Gharnāṭa in a dozen years. The Baḥrī sultans of Miṣr, Aiman's house, were fighting
+      beside it in Ifrīqiya, at Māliṭa and now in Catalonia. Those who had spoken for the Mamlūk alliance were
+      heard more often in the dīwān that winter, and Aiman's household had more visitors than it had had in
+      years.
+
+
+      *The believing men and believing women are allies of one another.*
+  - id: 0776-10-11-of-the-peace-of-the-upper-march
+    'on': '1375-03-15'
+    title: Of the Peace of the Upper March, and the End of Arghūn
+    verse: 8:62
+    who:
+      - saad-ibn-yusuf
+      - joan-of-aragon
+      - ramadan-of-barqa
+    where:
+      - barshaluna
+      - qurtuba
+      - balansiyya
+      - tarrakuna
+      - jarunda
+      - larida
+      - turtusha
+      - saraqusta
+      - mursiyya
+      - ishbiliyya
+      - gharnata
+    covers:
+      - 1375-03-15-peace-aragon
+      - 1375-03-15-aragon-falls-apart
+      - 1375-03-15-state
+      - 1375-03-15-the-new-taifas
+      - 1374-11-12-battle-george-bay
+    text: >
+      By the end of Ramaḍān 776, [Barshalūna](place:barshaluna) had been under siege for two hundred and
+      eighty days. The walls on the landward side were breached in three places, and the townsmen were eating
+      what townsmen eat when the bread is gone. King [Joan](person:joan-of-aragon) knew how few days he had
+      left. He was not finished, though. He still wore the crown of Ṣiqilliya, and the Sicilians had an army
+      of five thousand levies and the fleet that had sunk Barqa's ships off Māliṭa. A king with an island
+      behind him could lose his capital and still go on fighting, and the war might go on for years.
+
+
+      The shaykh of Barqa ended that hope. [Ramaḍān](person:ramadan-of-barqa) had lost his ships, so he found
+      others. In the last weeks of the fast he put three thousand men ashore on Ṣiqilliya itself and took
+      Saraqūsa by storm, the old city of the Greeks on the island's eastern shore. The Sicilian levies could
+      probably have driven his three thousand back into the sea. But the sultan's envoys, when they came to
+      King Joan in the days after the feast of the breaking of the fast, asked him what he would do about the
+      next landing, and the one after that.
+
+
+      They gave him a choice. He could make peace. Arghūn would pass to the sultan. Māliṭa would pass to the
+      Mamlūks. And the king himself would go to Balarm unharmed and free, with his household and his Sicilian
+      crown. Or the war could go on in Ṣiqilliya. The island had been a land of Islam for two hundred years
+      before the Normans took it. The envoys said its peasants would soon show whether they remembered the
+      faith of their forefathers as well as [Qurṭuba](place:qurtuba) had. Joan was greedy, but he was not a
+      fool. On 11 Shawwāl 776 he accepted, and sailed for Balarm.
+
+
+      By the time the peace was sealed, Arghūn had already come apart. Its outlying lordships had gone their
+      own ways in the last months of the war. Montpellier, beyond the mountains, swore itself to the king of
+      Inkiltara rather than the king of Ifranja. Sassari, on the island of Sardāniya, was taken back by the
+      judges of Arborea, who were vassals of Janawa. What was left was thirty-four towns from the Pyrenees to
+      the Ebro: Barshalūna and [Ṭarrakūna](place:tarrakuna), [Jarunda](place:jarunda) under the mountains,
+      [Lārida](place:larida) on the Segre, [Ṭurṭūsha](place:turtusha) at the Ebro's mouth, Perpignan beyond
+      the passes, and the hill towns of the old Aragonese marches at Fraga, Munt Shūn and Barbashturu. Half a
+      million souls lived in them, nearly all of them Catalan and Christian. All of it passed to the sultan,
+      and the Kingdom of Arghūn held no land at all. The courtiers called it the end of Arghūn. The sultan
+      said: for now.
+
+
+      The dīwān's reckoners brought him the new count, and it made the old courtiers uneasy. The realm now had
+      ninety-four towns and one million two hundred and seventy-five thousand souls. For the first time, the
+      Catalans outnumbered the Andalusīs in the sultan's own lands, four hundred and fifty-five thousand to
+      four hundred and fifty-two thousand. The Christians outnumbered the faithful two to one. Barshalūna,
+      with forty-six thousand people, was the third city of the realm after [Ishbīliya](place:ishbiliyya) and
+      [Gharnāṭa](place:gharnata). The war had cost the sultan one thousand two hundred and sixty men in battle
+      and Arghūn four thousand seven hundred, besides those the siege and the winter took. In fifteen months
+      the sultan had more than doubled the number of Christians who called him lord.
+
+
+      Our lord [Saʿd](person:saad-ibn-yusuf) did not mean to keep it that way. He had read the Survey of the
+      Kingdoms. He knew what Ifranja, Qashtāla and the Pope at Avignon would say of a Muslim sultan who
+      swallowed a Christian kingdom whole. So he told the dīwān that the crown would not keep Catalonia and
+      Arghūn. They would become two new ṭāʾifas, like [Balansiyya](place:balansiyya) and al-Gharb before them.
+      One would be Catalonia on the coast. The other would be Arghūn itself, raised again in the interior, a
+      successor kingdom to the one that had died. The sultan would not be seen to have seized Aragonese land.
+      He would be seen to have returned it to its rightful heirs, under his protection. In the same
+      reordering, [Mursiyya](place:mursiyya), a ṭāʾifa for thirty-five years, would be taken into the crown
+      directly.
+
+
+      The old men of the dīwān who had studied the caliphs' map in the Hall of Ambassadors understood what
+      came next. The War of the Upper March had been won without [Saraqusṭa](place:saraqusta), the Upper
+      March's own capital. Saraqusṭa and the heart of old Arghūn, from the Ebro to the mountains of Jaca, were
+      held by Qashtāla. A restored Arghūn would have a claim to them, and its protector would have a cause.
+      The truce with Qashtāla would end on the fourth day of Muḥarram 777. The sultan's scribes were already
+      drafting the claim. He meant the world to read it not as a war of Gharnāṭa, but as the restoration of
+      Arghūn.
+
+
+      *But if they intend to deceive you, then sufficient for you is Allāh. It is He who supported you with
+      His help and with the believers.*

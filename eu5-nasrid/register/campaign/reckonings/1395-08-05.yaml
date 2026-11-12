@@ -1,0 +1,378 @@
+date: '1395-08-05'
+title: The Two Ṭāʾifas of 797
+source:
+  save: SP_ADU_1395_08_05 (compressed)
+  game: 1.4.6
+summary: >-
+  On 5 August 1395 two new ṭāʾifas are carved from the lands won at the Peace of Ramaḍān and given to the
+  Emperor's cousins, sons of his late uncles: Shalamanka (21 towns of the Leonese west) to Saʿd ibn Ismāʿīl,
+  and Qūnka (20 towns of the Castilian east) to Saʿd ibn Faraj, the Emperor's son-in-law. Madrid, Cáceres and
+  all the Portuguese lands stay with the crown. The realm holds 148 towns and 1,742,000 people directly, with
+  six ṭāʾifas; the game ranks it seventh. The treasury stands at 158; stability has fallen to 9.5. The same
+  day the Dīwān al-Inshāʾ completes the bureaucracy. Shares of power are estimated from the 1 June 1349
+  reading.
+realm:
+  towns: 148
+  souls: 1741921
+  treasury: 158
+  income: 145.1
+  expenses: 139.3
+  stability: 9.5
+  prestige: 100
+  regiments: 9
+  ships: 16
+  manpower: 1281
+court:
+  ruler: saad-ibn-yusuf
+  heir: ismail-ibn-saad
+  capital: ishbiliyya
+  council:
+    - who: umm-al-fath-bint-saad
+      seat: Integrating the new lands
+    - who: ismail-ibn-yusuf
+      seat: Integrating the new lands
+    - who: maryam-bint-yusuf
+      seat: Integrating the new lands
+    - who: ismail-ibn-saad
+      seat: Promoting Andalusī culture
+standing:
+  allies:
+    - Mamluks
+    - Morocco
+  subjects:
+    - Valencia (taifa)
+    - Taifa of the Algarve (taifa)
+    - Catalonia (taifa)
+    - Aragon (taifa)
+    - Taifa of Salamanca (taifa)
+    - Taifa of Cuenca (taifa)
+  estates:
+    - name: Crown
+      power: 32.47
+    - name: Nobility
+      power: 23.37
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 8.79
+      mood: 50
+    - name: Burghers
+      power: 9.09
+      mood: 50
+    - name: Commoners
+      power: 3.49
+      mood: 50
+    - name: Dhimmī
+      power: 22.8
+      mood: 44
+peoples:
+  cultures:
+    Castilian: 686117
+    Andalusi: 513717
+    Portuguese: 297660
+    Leonese: 118214
+    Sephardi: 116465
+    Mustaarabi: 3631
+  faiths:
+    Catholic: 1086958
+    Sunni: 537614
+    Jewish: 116516
+    Bori_Religion: 598
+    Nyama: 235
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - ALV
+    - CAT
+    - ARA
+    - AAA98
+    - ABA60
+  allies:
+    - MAM
+    - MOR
+beats:
+  - id: 1395-08-05-diwan-al-insha
+    'on': '1395-08-05'
+    kind: realm
+    what: >-
+      The fourth and last office of the bureaucracy for now: the Dīwān al-Inshāʾ, the chancery that drafts the
+      state's edicts, treaties and letters to foreign courts in the high style of the court. While the crown
+      pays for it, its letters win friends abroad and the realm's subjects are drawn closer; left unpaid, it
+      fumbles its correspondence and the ṭāʾifas resent it
+    who:
+      - saad-ibn-yusuf
+    where:
+      - ishbiliyya
+    threads:
+      - towns
+    from:
+      - save
+      - seen
+      - told
+    cite: Trent's account and screenshot; save of 5 August 1395
+    detail:
+      office: Dīwān al-Inshāʾ (bureaucracy)
+      whenFunded:
+        diplomaticAnnexationEfficiency: +20%
+        improveRelations: +10%
+      always:
+        monthlyDiplomats: 0.1
+      whenUnfunded:
+        subjectOpinions: -100
+        subjectIncome: −25%
+      likedBy:
+        clergy: +1%
+      dislikedBy:
+        nobility: −1%
+      cost: up to 9.85 a month
+      selectCost: 43.47
+      precedent: >-
+        a well-staffed chancery wins friends through eloquent and timely letters, while a neglected one
+        fumbles its correspondence and the realm's standing among other courts suffers for it (the game's
+        text)
+      bureaucracy:
+        - Count of the Christians (1378)
+        - Ḥijāba (by January 1387)
+        - Ḥisba (August 1389)
+        - Dīwān al-Inshāʾ (1395)
+      date: 5 August 1395 (the save of that day)
+      note: the last office available in the current expansion of the bureaucracy (Trent)
+  - id: 1395-08-05-hold-on-al-ushbuna
+    'on': '1395-08-05'
+    kind: note
+    what: >-
+      The court finds al-Ushbūna easier to hold than it feared. With the seas along the Iberian coast growing
+      safer, the city can be reached and governed from the water, and the crown's control there is already far
+      above that of the inland conquests. It is still limited, but in time, with integration, the court
+      expects to bind it to the crown as closely as Qurṭuba
+    where:
+      - al-ushbuna
+    from:
+      - save
+      - told
+    cite: Trent's account; save of 5 August 1395
+    detail:
+      control:
+        Lisbon: 0.36
+        Madrid: 0.23
+        Setúbal: 0.16
+        Cáceres: 0.04
+        Évora: 0
+        Córdoba (for comparison): 0.77
+        Toledo: 0.87
+      note: control as a share, from the save of 5 August 1395
+  - id: 1395-08-05-the-embassies
+    'on': '1395-08-05'
+    kind: world
+    what: >-
+      The diplomatic corps of al-Andalus now reaches across Europe: Paris, Naples, Istanbul and London all
+      receive its ambassadors from time to time. France, unlike Castile, shows itself willing to be a friend,
+      and there is talk at court of an alliance with the French, though it would drag the empire into France's
+      losing war with the English
+    who:
+      - saad-ibn-yusuf
+    from:
+      - save
+      - told
+    cite: Trent's account, August 1395; save of 22 June 1395
+    detail:
+      embassies:
+        - France (Paris)
+        - Naples
+        - the Ottomans (Istanbul)
+        - England (London)
+      relations: >-
+        the save of 22 June 1395 shows relations improved both ways with France, Naples, the Ottomans and
+        England; Castile's antagonism toward al-Andalus from the peace demands stands near 758, with its
+        opinion still marked by the declaration of war
+      franceAtWar:
+        war: Boulogne's war of independence against France, from 22 May 1395
+        againstFrance: Boulogne, England, Burgundy, Brittany, Flanders, Ireland, Wales and other lords
+        france: rank 3, 54,400 men, 234 towns
+        england: rank 5, 32,100 men, 202 towns
+        state: France losing (Trent)
+      allianceQuestion: under discussion at court; it would bring al-Andalus into the war against England (Trent)
+  - id: 1395-08-05-two-new-taifas
+    'on': '1395-08-05'
+    kind: realm
+    what: >-
+      Two new ṭāʾifas are carved from the Castilian lands won at the Peace of Ramaḍān and given to two cousins
+      of the Emperor, sons of his late uncles. Saʿd ibn Ismāʿīl takes the Ṭāʾifa of Shalamanka, 21 towns of
+      the Leonese west; Saʿd ibn Faraj, husband of the Emperor's daughter Umm al-Fatḥ, takes the Ṭāʾifa of
+      Qūnka, 20 towns of the Castilian east. Majrīṭ, Cáceres and all the Portuguese lands stay with the crown
+    who:
+      - saad-ibn-yusuf
+      - saad-ibn-ismail
+      - saad-ibn-faraj
+      - umm-al-fath-bint-saad
+    where:
+      - shalamanka
+      - qunka
+    threads:
+      - towns
+    from:
+      - save
+      - told
+    cite: save of 5 August 1395; Trent's account
+    detail:
+      taifas:
+        Shalamanka (AAA98):
+          ruler: Saʿd ibn Ismāʿīl, born 1361 (52/49/53)
+          heir: Saʿd ibn Faraj
+          capital: Salamanca
+          towns: 21
+          population: 382100
+          culture: Leonese
+          list:
+            - Salamanca
+            - Ávila
+            - Arévalo
+            - Ciudad Rodrigo
+            - Ledesma
+            - Alba de Tormes
+            - Béjar
+            - Piedrahíta
+            - Plasencia
+            - Coria
+            - Galisteo
+            - Granadilla
+            - Jaraicejo
+            - Las Navas
+            - La Adrada
+            - Matilla de Caños
+            - Oropesa
+            - San Felices
+            - Valverde
+            - Villatoro
+            - Yecla de Yeltes
+        Qūnka (ABA60):
+          ruler: Saʿd ibn Faraj, born 1358 (45/37/63)
+          heir: his brother Yūsuf ibn Faraj, born 1360
+          capital: Cuenca
+          towns: 20
+          population: 214400
+          culture: Castilian
+          list:
+            - Cuenca
+            - Guadalajara
+            - Sigüenza
+            - Molina de Aragón
+            - Requena
+            - Huete
+            - Alarcón
+            - Belmonte
+            - Beteta
+            - Brihuega
+            - Buitrago del Lozoya
+            - Cañete
+            - Cobeta
+            - Iniesta
+            - Jorquera
+            - Moya
+            - Pareja
+            - San Clemente
+            - Torralba
+            - Zorita
+      keptByTheCrown: >-
+        ten of the Castilian towns, Madrid, Alcalá de Henares, El Escorial, Maqueda and Colmenar around
+        Madrid, and Cáceres, Alcántara, Brozas, Valencia de Alcántara and Arroyo del Fresno in Extremadura,
+        with all 20 towns from Portugal
+      realm:
+        towns:
+          - 189
+          - 148
+        population:
+          - 2333984
+          - 1741921
+        stability:
+          - 38.3
+          - 9.5
+        rank:
+          - 12
+          - 7
+      subjects:
+        - Valencia
+        - Taifa of the Algarve
+        - Catalonia
+        - Aragon
+        - Shalamanka
+        - Qūnka
+      plan: Trent had expected about three ṭāʾifas; in the end there were two
+tellings:
+  - id: 0797-10-17-of-the-diwan-al-insha-and-the-two-taifas
+    'on': '1395-08-05'
+    title: Of the Dīwān al-Inshāʾ, the Two Ṭāʾifas, and the Embassies
+    verse: '68:1'
+    who:
+      - saad-ibn-yusuf
+      - saad-ibn-ismail
+      - saad-ibn-faraj
+      - umm-al-fath-bint-saad
+      - ismail-ibn-saad
+    where:
+      - shalamanka
+      - qunka
+      - majrit
+      - al-ushbuna
+      - qurtuba
+      - ishbiliyya
+    covers:
+      - 1395-08-05-diwan-al-insha
+      - 1395-08-05-the-embassies
+      - 1395-08-05-two-new-taifas
+      - 1395-08-05-hold-on-al-ushbuna
+    text: >
+      Six weeks after the Peace of Ramaḍān the Emperor [Saʿd](person:saad-ibn-yusuf) gave the realm its fourth
+      great office. The Count of the Christians had come in 780, the Ḥijāba in 789 and the Ḥisba in 791. On 17
+      Shawwāl 797 he founded the Dīwān al-Inshāʾ, the chancery, whose secretaries drafted the edicts, the
+      treaties and the letters to foreign kings in the high style of the court. Under the caliphs the kātib of
+      the Inshāʾ had been prized above poets, for a well-turned letter could win what an army could not. The
+      ʿulamāʾ approved. The umarāʾ grumbled that the realm was now governed by men who held pens instead of
+      lances, and the Emperor answered that the lance had won the land and the pen would keep it. He fixed the
+      secretaries' pay from the treasury himself and forbade them to take gifts from the courts they wrote to.
+      A chancery that could be bought, he said, would write whatever the highest bidder wanted.
+
+
+      The empire's letters already went far. That summer its envoys were received at Paris, at Naples, at
+      Qusṭanṭīniyya of the Ottomans, and even in London, at the court of the English king.
+      [Ismāʿīl](person:ismail-ibn-saad) the crown prince, who sat in the dīwān and could talk a bird down from
+      a tree, was said to read the letters to Paris before they were sealed. Qashtāla would not be a friend;
+      its young king had signed away fifty-one towns and did not mean to forget it. France was another matter.
+      Its king answered warmly, and there was talk in the dīwān of an alliance. The cost was plain to
+      everyone. France was losing a war against the English, the Burgundians and its own rebels of Boulogne
+      and Brittany, and an alliance with France meant a share of that war. The Emperor let the talk go on and
+      signed nothing.
+
+
+      Then came the question the peace had left. The seventy-one towns of Ramaḍān had all passed to the crown,
+      and the ṭāʾifas of the north had taught the court that Christians obeyed a Christian king who owed his
+      crown to the Emperor more readily than a Muslim governor. On the same day as the chancery the Emperor
+      carved two new ṭāʾifas from the Castilian lands, and gave them to two of his cousins, each of them named
+      Saʿd like himself. [Saʿd ibn Ismāʿīl](person:saad-ibn-ismail), son of his late uncle Ismāʿīl and an
+      Aydınid princess, took the Ṭāʾifa of [Shalamanka](place:shalamanka), twenty-one towns of the Leonese
+      west from Ávila to the Portuguese border. [Saʿd ibn Faraj](person:saad-ibn-faraj), son of his uncle
+      Faraj, took the Ṭāʾifa of [Qūnka](place:qunka), twenty towns of the Castilian east from Guadalajara and
+      Sigüenza to Molina and Requena. He was also the Emperor's son-in-law, the husband of [Umm
+      al-Fatḥ](person:umm-al-fath-bint-saad), who sat in the dīwān and had the integration of the new lands in
+      her charge.
+
+
+      The crown kept the rest: [Majrīṭ](place:majrit) and its towns from Alcalá to the Escorial, Cáceres and
+      the country of Alcántara, and every town that had been Portugal's. The crown's own towns fell from a
+      hundred and eighty-nine to a hundred and forty-eight. Giving away so much land in a day unsettled the
+      realm for a season, and the old families of [Ishbīliya](place:ishbiliyya) wondered aloud why the Emperor
+      had fought for towns only to hand them to his cousins. The foreign courts drew the opposite conclusion.
+      A realm with six ṭāʾifas under its hand was a power, and they ranked al-Andalus among the first seven
+      kingdoms of Christendom and Islam.
+
+
+      [Al-Ushbūna](place:al-ushbuna), which the court had feared would be the hardest of all to hold, proved
+      the easiest of the new lands. The seas along the coast were safer than they had been in living memory,
+      and what could be reached by water could be governed by water. The governors of al-Ushbūna already
+      answered to Ishbīliya far better than those of Majrīṭ, and far better than the Alentejo, where Yābura
+      hardly answered at all. The dīwān reckoned that in a generation al-Ushbūna would be bound to the crown
+      as closely as [Qurṭuba](place:qurtuba).
+
+
+      *Nūn. By the pen and what they inscribe.*

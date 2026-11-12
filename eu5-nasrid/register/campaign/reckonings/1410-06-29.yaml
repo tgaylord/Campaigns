@@ -1,0 +1,220 @@
+date: '1410-06-29'
+title: The War of Jillīqiya
+source:
+  save: SP_ADU_1410_06_29 (compressed)
+  game: 1.4.7
+summary: >-
+  On 29 June 1410 the truce of the Peace of Ramaḍān ran out and the Emperor Ismāʿīl declared war on Qashtāla
+  for the rest of the peninsula, the fourth war of the Istirdād, which he named the War of Jillīqiya. Portugal
+  joined Qashtāla; Fās, with Tilimsān and Tafilalt, answered the Emperor's call, and the Mamlūks were not
+  needed. Al-Andalus, fifth among the powers of the world, holds 161 towns and 2,040,000 people directly, with
+  five ṭāʾifas; Qashtāla has 108 towns and 2,033,000 people, Portugal 34 towns. At the declaration the Emperor
+  had 4,900 regulars and 53 ships against Qashtāla's 1,650 and 25 and Portugal's 750 and 8. Treasury 386,
+  income 274 against 238. Shares of power are estimated from the 1 June 1349 reading.
+realm:
+  towns: 161
+  souls: 2040408
+  treasury: 386
+  income: 274.2
+  expenses: 238.4
+  stability: 21.4
+  prestige: 80
+  regiments: 9
+  ships: 53
+  manpower: 3536
+court:
+  ruler: ismail-ibn-saad
+  heir: muhammad-ibn-ismail-ibn-saad
+  capital: ishbiliyya
+  council:
+    - who: umm-al-fath-bint-saad
+      seat: Integrating the new lands
+    - who: muhammad-ibn-yusuf-ibn-faraj
+      seat: Integrating the new lands
+    - who: maryam-bint-yusuf
+      seat: Integrating the new lands
+    - who: yusuf-ibn-saad
+      seat: Encouraging migration
+standing:
+  wars:
+    - war-of-jilliqiya
+  allies:
+    - Mamluks
+    - Morocco
+  subjects:
+    - Valencia (taifa)
+    - Catalonia (taifa)
+    - Aragon (taifa)
+    - Taifa of Salamanca (taifa)
+    - Taifa of Cuenca (taifa)
+  estates:
+    - name: Crown
+      power: 34.16
+    - name: Nobility
+      power: 22.73
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 9.18
+      mood: 50
+    - name: Burghers
+      power: 10.57
+      mood: 50
+    - name: Commoners
+      power: 3.96
+      mood: 50
+    - name: Dhimmī
+      power: 19.39
+      mood: 50
+peoples:
+  cultures:
+    Castilian: 667741
+    Andalusi: 644540
+    Portuguese: 435605
+    Sephardi: 150778
+    Leonese: 132086
+    Mustaarabi: 3624
+  faiths:
+    Catholic: 1094631
+    Sunni: 796619
+    Jewish: 148157
+    Bori_Religion: 627
+    Nyama: 239
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - CAT
+    - ARA
+    - AAA98
+    - ABA60
+  allies:
+    - MAM
+    - MOR
+beats:
+  - id: 1408-10-11-expeditions
+    'on': '1408-10-11'
+    kind: note
+    what: >-
+      A new round of expeditions sets out: one south, to follow the coast of Africa further; one to the
+      islands found off the west coast, west of Mali; and two to the islands the Portuguese and Castilian
+      explorers call the Canaries and Madeira
+    threads:
+      - voyages
+    from:
+      - save
+      - told
+    cite: Trent's account (11 October 1408); autosaves of 1 March 1409 and 1 March 1410
+    detail:
+      expeditions:
+        - south along the African coast
+        - the islands west of Mali (Cape Verde)
+        - the Canaries
+        - Madeira
+      note: >-
+        the Canaries and Madeira voyages are no longer active in the autosaves of 1 March 1409 and 1 March
+        1410; the explorers of the other three are named from those autosaves and the save of 29 June 1410
+      explorersInLaterSaves:
+        south, into the Gulf of Guinea: Daniel, born 1369, a Sephardi convert to Islam (52/51/63)
+        the islands west of Mali (Cape Verde): >-
+          García de Ponte de Sor, born 1377, a Catholic Portuguese noble, an offensive planner (62/46/69), who
+          in August 1405 had led the rebels of Estremadura against al-Ushbūna
+        the Azores (already at sea by August 1408): ʿAbd al-Ghafūr, born 1372, an Andalusī of the burghers (56/90/57)
+  - id: 1409-09-18-death-of-fatima
+    'on': '1409-09-18'
+    kind: death
+    what: >-
+      Fāṭima bint Yūsuf, daughter of Yūsuf I and widow of Francesc de Montsoriu, dies at fifty-one. Her son
+      Berenguer Ramon rules the Ṭāʾifa of Catalonia, her daughter Isabel is the wife of the heir Muḥammad, and
+      another daughter is married to Saʿd ibn Ismāʿīl of Shalamanka
+    who:
+      - fatima-bint-yusuf
+      - francesc-de-montsoriu
+      - isabel-de-montsoriu
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 29 June 1410
+    detail:
+      age: 51
+      children:
+        - a daughter married to Saʿd ibn Ismāʿīl, ruler of Shalamanka
+        - Berenguer Ramon de Montsoriu, ruler of the Ṭāʾifa of Catalonia (born 1380)
+        - Isabel de Montsoriu (born 1382), wife of the heir Muḥammad
+  - id: 1410-04-17-birth-of-abu-al-hasan-ali
+    'on': '1410-04-17'
+    kind: birth
+    what: >-
+      A son, Abū al-Ḥasan ʿAlī, is born to the Emperor's son Saʿd and Maryam, Shaykha of Qūnka: the first
+      child of the line meant to rule the frontier
+    minor: true
+    who:
+      - saad-ibn-ismail-ibn-saad
+      - maryam-bint-saad-ibn-faraj
+      - abu-al-hasan-ali-ibn-saad
+    where:
+      - qunka
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 29 June 1410
+  - id: 1410-04-27-death-of-joan
+    'on': '1410-04-27'
+    kind: death
+    what: >-
+      Joan, once king of Aragon and of Sicily, who lost Aragon to the Emperor Saʿd in the War of the Upper
+      March, dies at sixty
+    who:
+      - joan-of-aragon
+    from:
+      - save
+    cite: save of 29 June 1410
+    detail:
+      age: 60
+  - id: 1410-06-29-war-on-castile
+    'on': '1410-06-29'
+    kind: war
+    what: >-
+      The truce with Qashtāla runs out, and the Emperor Ismāʿīl declares the fourth war of the Istirdād, which
+      he names the War of Jillīqiya. Portugal joins Qashtāla; Fās answers the Emperor's call with Tilimsān and
+      Tafilalt. The Mamlūks, busy in the Fertile Crescent, are not needed
+    who:
+      - ismail-ibn-saad
+      - pedro-of-castile
+      - fernando-of-castile
+      - abu-al-fadl-marinid
+    threads:
+      - war-of-jilliqiya
+    from:
+      - save
+      - told
+    cite: save of 29 June 1410; Trent's account
+    detail:
+      cb: cb_reconquer_iberia
+      gameName: Reconquest of Iberia
+      attackers:
+        al-Andalus: 4,900 regulars, 53 ships
+        ṭāʾifas: Aragon, Catalonia (586), Valencia (93), Shalamanka, Qūnka
+        Morocco: 2,400 men, 37 ships
+        Tlemcen: '500'
+        Tafilalt: '0'
+      defenders:
+        Castile: >-
+          1,650 regulars, 25 ships; 108 towns, 2,033,000 people, capital Valladolid, stability 6; King Pedro,
+          39, since 1394 (44/51/61, stubborn, a drunkard); heir Fernando, 18
+        Portugal: >-
+          750 regulars, 8 ships; 34 towns, 699,000 people, capital Porto; King Fernando, 45, since 29 April
+          1402 (37/41/59, deceitful); heir Joana
+      mamluks: called, but listed as potential; busy cleaning up the Fertile Crescent, and not needed (Trent)
+      levies: none raised on the day of the declaration
+      realm:
+        towns: 161
+        population: 2040408
+        treasury: 386
+        income: 274.2
+        expenses: 238.4
+        stability: 21.4
+        rank: 5th in the world
+      peace: nearly fifteen years since the Peace of Ramaḍān (22 June 1395)

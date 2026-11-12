@@ -1,0 +1,1119 @@
+date: '1348-07-01'
+title: The pestilence and the blade
+source:
+  save: SP_GRA_1348_07_01 (compressed)
+  game: 1.4.5
+summary: >-
+  Twenty months into the war with the three crowns: the Black Death has reached the realm, the amir has
+  survived an attempt on his life, and Moroccan influence has passed Castile's for the first time. Granada
+  still fights for its independence. Shares of power are estimated from the 11 August 1340 reading; no law or
+  privilege has changed since January 1345.
+realm:
+  towns: 18
+  souls: 455174
+  treasury: 819
+  income: 19
+  expenses: 49.7
+  debt: 127
+  stability: 4
+  prestige: 13
+  regiments: 15
+  ships: 5
+  manpower: 4036
+court:
+  ruler: yusuf-i
+  heir: faraj-ibn-ismail
+  capital: gharnata
+  council:
+    - who: faraj-ibn-ismail
+      seat: Increase control in Mālaqa
+    - who: ismail-ibn-ismail
+      seat: Promote Granadan sovereignty
+standing:
+  wars:
+    - second-moroccan-war
+  allies:
+    - Morocco
+    - Tunis
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+  estates:
+    - name: Crown
+      power: 21.35
+    - name: Nobility
+      power: 50.09
+      mood: 41
+    - name: ʿUlamāʾ
+      power: 13.68
+      mood: 46
+    - name: Burghers
+      power: 7.62
+      mood: 50
+    - name: Commoners
+      power: 4.62
+      mood: 50
+    - name: Dhimmī
+      power: 2.63
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 441854
+    Sephardi: 10694
+    Ligurian: 904
+    Mustaarabi: 816
+    Hausa: 731
+    Mandinka: 175
+  faiths:
+    Sunni: 441873
+    Jewish: 11498
+    Catholic: 897
+    Bori_Religion: 731
+    Nyama: 175
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+  allies:
+    - MOR
+    - TUN
+beats:
+  - id: 1346-11-22-battle-bay-palma
+    'on': '1346-11-22'
+    kind: battle
+    what: Aragon sinks the fleets of Bijaya and Tlemcen in the bay of Palma
+    minor: true
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+    cite: save of 1347-09-14
+    detail:
+      result: defeat
+      naval: true
+      ours:
+        Tlemcen: 1
+        Bijaya: 13
+      oursTotal: 14
+      oursLost: 14
+      theirs:
+        Aragon: 7
+      theirsTotal: 7
+      theirsLost: 0
+      location: the bay of Palma
+      side: Granada not engaged
+      units: ships
+  - id: 1346-12-02-battle-gulf-of-almeria
+    'on': '1346-12-02'
+    kind: battle
+    what: Balansiyya's fleet worsted by Portugal in the gulf of al-Mariyya
+    minor: true
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+    cite: save of 1347-09-14
+    detail:
+      result: defeat
+      naval: true
+      ours:
+        Balansiyya: 11
+      oursTotal: 11
+      oursLost: 3
+      theirs:
+        Portugal: 6
+      theirsTotal: 6
+      theirsLost: 0
+      location: the gulf of al-Mariyya
+      units: ships
+  - id: 1346-12-24-battle-cagliari
+    'on': '1346-12-24'
+    kind: battle
+    what: A Tunisian landing at Cagliari thrown back
+    minor: true
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+    cite: save of 1347-09-14
+    detail:
+      result: defeat
+      naval: false
+      ours:
+        Tunis: 150
+      oursTotal: 150
+      oursLost: 93
+      theirs:
+        Cagliari: 1340
+      theirsTotal: 1340
+      theirsLost: 29
+      location: Cagliari
+      side: Granada not engaged
+  - id: 1347-01-16-battle-bay-alcudia
+    'on': '1347-01-16'
+    kind: battle
+    what: Aragon sinks the fleet of Gabès off Alcúdia
+    minor: true
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+    cite: save of 1347-09-14
+    detail:
+      result: defeat
+      naval: true
+      ours:
+        Gabès: 6
+      oursTotal: 6
+      oursLost: 6
+      theirs:
+        Aragon: 7
+      theirsTotal: 7
+      theirsLost: 0
+      location: the bay of Alcúdia
+      side: Granada not engaged
+      units: ships
+  - id: 1347-02-09-battle-cagliari
+    'on': '1347-02-09'
+    kind: battle
+    what: A second Tunisian landing at Cagliari thrown back
+    minor: true
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+    cite: save of 1347-09-14
+    detail:
+      result: defeat
+      naval: false
+      ours:
+        Tunis: 260
+      oursTotal: 260
+      oursLost: 242
+      theirs:
+        Cagliari: 1366
+      theirsTotal: 1366
+      theirsLost: 102
+      location: Cagliari
+      side: Granada not engaged
+  - id: 1347-02-13-battle-castellon-de-la-plana
+    'on': '1347-02-13'
+    kind: battle
+    what: Balansiyya's army of 2,100 destroyed by Aragon at Castellón de la Plana
+    minor: true
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+    cite: save of 1347-09-14
+    detail:
+      result: defeat
+      naval: false
+      ours:
+        Balansiyya: 2126
+      oursTotal: 2126
+      oursLost: 2126
+      theirs:
+        Aragon: 8290
+      theirsTotal: 8290
+      theirsLost: 162
+      location: Castellón de la Plana
+  - id: 1347-03-17-battle-sevilla
+    'on': '1347-03-17'
+    kind: battle
+    what: Morocco beaten before Ishbīliya by a Castilian army four times its size
+    minor: true
+    where:
+      - ishbiliyya
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+    cite: save of 1347-09-14
+    detail:
+      result: defeat
+      naval: false
+      ours:
+        Morocco: 2758
+      oursTotal: 2758
+      oursLost: 1188
+      theirs:
+        Castile: 11864
+      theirsTotal: 11864
+      theirsLost: 1219
+      location: Ishbīliya
+      side: Granada not engaged
+  - id: 1347-05-18-battle-jaen
+    'on': '1347-05-18'
+    kind: battle
+    what: >-
+      Yūsuf breaks Alfonso XI at Jayyān: the king of Castile leads 13,000 against 22,000 Granadans and 3,500
+      Moroccans, and loses 7,500 of them
+    who:
+      - yusuf-i
+      - alfonso-xi
+    where:
+      - jayyan
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+    cite: save of 1347-09-14
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 22107
+        Morocco: 3513
+      oursTotal: 25620
+      oursLost: 4265
+      theirs:
+        Castile: 13012
+      theirsTotal: 13012
+      theirsLost: 7522
+      location: Jayyān
+  - id: 1347-05-29-battle-gulf-cagliari
+    'on': '1347-05-29'
+    kind: battle
+    what: Aragon sinks the fleet of Tripoli in the gulf of Cagliari
+    minor: true
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+    cite: save of 1347-09-14
+    detail:
+      result: defeat
+      naval: true
+      ours:
+        Tripoli: 11
+      oursTotal: 11
+      oursLost: 11
+      theirs:
+        Aragon: 8
+      theirsTotal: 8
+      theirsLost: 0
+      location: the gulf of Cagliari
+      side: Granada not engaged
+      units: ships
+  - id: 1347-06-17-battle-jerez-de-la-frontera
+    'on': '1347-06-17'
+    kind: battle
+    what: Morocco beaten again at Jerez
+    minor: true
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+    cite: save of 1347-09-14
+    detail:
+      result: defeat
+      naval: false
+      ours:
+        Morocco: 2447
+      oursTotal: 2447
+      oursLost: 1244
+      theirs:
+        Castile: 10640
+      theirsTotal: 10640
+      theirsLost: 912
+      location: Jerez
+      side: Granada not engaged
+  - id: 1347-06-21-battle-carpio
+    'on': '1347-06-21'
+    kind: battle
+    what: 'Victory at Carpio: Yūsuf''s 18,000 rout a Castilian army of 7,000, killing more than 4,000'
+    who:
+      - yusuf-i
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+    cite: save of 1347-09-14
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 17871
+      oursTotal: 17871
+      oursLost: 1446
+      theirs:
+        Castile: 7034
+      theirsTotal: 7034
+      theirsLost: 4355
+      location: Carpio
+  - id: 1347-07-13-battle-sevilla
+    'on': '1347-07-13'
+    kind: battle
+    what: A Moroccan column destroyed before Ishbīliya
+    minor: true
+    where:
+      - ishbiliyya
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+    cite: save of 1347-09-14
+    detail:
+      result: defeat
+      naval: false
+      ours:
+        Morocco: 935
+      oursTotal: 935
+      oursLost: 935
+      theirs:
+        Castile: 9724
+      theirsTotal: 9724
+      theirsLost: 0
+      location: Ishbīliya
+      side: Granada not engaged
+  - id: 1347-08-08-constantinople-falls
+    'on': '1347-08-08'
+    kind: world
+    what: 'Constantinople falls to the Ottomans: the Queen of Cities becomes Kostantîniyye'
+    from:
+      - save
+    cite: checkpoint 1348-07-01
+    detail:
+      location: constantinople
+      from: BYZ
+      to: TUR
+  - id: 1347-08-31-battle-palma-del-rio
+    'on': '1347-08-31'
+    kind: battle
+    what: >-
+      Victory at Palma del Río: Castile's southern army, fresh from beating Morocco at Ishbīliya, attacks
+      Yūsuf's 16,000 and 4,000 Moroccans and loses 5,300 men for 700
+    who:
+      - yusuf-i
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+    cite: save of 1347-09-14
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Morocco: 4240
+        Granada: 16407
+      oursTotal: 20647
+      oursLost: 675
+      theirs:
+        Castile: 9724
+      theirsTotal: 9724
+      theirsLost: 5332
+      location: Palma del Río
+  - id: 1347-09-14-the-war-so-far
+    'on': '1347-09-14'
+    kind: note
+    what: >-
+      A year into the war: the Moroccans smashed again and again south of Ishbīliya while the Granadan army
+      burns its way north, then swings west to relieve them, winning every battle it fights
+    who:
+      - yusuf-i
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+      - told
+    cite: Trent's account; the save of 1347-09-14
+    detail:
+      warContribution:
+        Granada: 13.2
+        Morocco: 7.1
+        Castile: 14.9
+      losses:
+        Granada:
+          battle: 5560
+        Morocco:
+          battle: 3658
+          attrition: 5985
+        Castile:
+          battle: 18681
+  - id: 1347-10-04-battle-montiel
+    'on': '1347-10-04'
+    kind: battle
+    what: Morocco beaten at Montiel
+    minor: true
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+    cite: checkpoint 1348-07-01
+    detail:
+      result: defeat
+      naval: false
+      ours:
+        Morocco: 3916
+        Tunis: 179
+      oursTotal: 4095
+      oursLost: 1191
+      theirs:
+        Castile: 8288
+      theirsTotal: 8288
+      theirsLost: 3823
+      location: Montiel
+      side: Granada not engaged
+  - id: 1347-10-30-battle-montiel
+    'on': '1347-10-30'
+    kind: battle
+    what: >-
+      Victory at Montiel: Yūsuf's 16,000 avenge the Moroccans on the same field, killing 3,100 Castilians for
+      500
+    who:
+      - yusuf-i
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+    cite: checkpoint 1348-07-01
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 16257
+      oursTotal: 16257
+      oursLost: 513
+      theirs:
+        Castile: 4458
+      theirsTotal: 4458
+      theirsLost: 3147
+      location: Montiel
+  - id: 1347-12-13-battle-cordoba
+    'on': '1347-12-13'
+    kind: battle
+    what: 'Victory before Qurṭuba: Yūsuf breaks Castile''s southern army again, 3,350 Castilians lost for 250'
+    who:
+      - yusuf-i
+    where:
+      - qurtuba
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+    cite: checkpoint 1348-07-01
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 15744
+      oursTotal: 15744
+      oursLost: 256
+      theirs:
+        Castile: 4383
+      theirsTotal: 4383
+      theirsLost: 3352
+      location: Qurṭuba
+  - id: 1348-01-18-betrothal-morocco
+    'on': '1348-01-18'
+    kind: world
+    what: The same day a Naṣrid betrothal is agreed with the Marīnids of Morocco
+    from:
+      - save
+    cite: checkpoint 1348-07-01
+    detail:
+      with: MOR
+  - id: 1348-01-18-birth-saad
+    'on': '1348-01-18'
+    kind: birth
+    what: A son, Saʿd, is born to Yūsuf and Sayyida of Fezzan
+    who:
+      - saad-ibn-yusuf
+      - yusuf-i
+      - sayyida-of-fezzan
+    threads:
+      - house
+    from:
+      - save
+    cite: checkpoint 1348-07-01
+  - id: 1348-04-21-battle-cagliari
+    'on': '1348-04-21'
+    kind: battle
+    what: Another landing at Cagliari thrown back
+    minor: true
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+    cite: checkpoint 1348-07-01
+    detail:
+      result: defeat
+      naval: false
+      ours:
+        Gabès: 225
+        Tunis: 202
+      oursTotal: 426
+      oursLost: 111
+      theirs:
+        Cagliari: 1240
+      theirsTotal: 1240
+      theirsLost: 592
+      location: Cagliari
+      side: Granada not engaged
+  - id: 1348-04-23-battle-gulf-cagliari
+    'on': '1348-04-23'
+    kind: battle
+    what: Aragon sinks the fleet of the Sahel in the gulf of Cagliari
+    minor: true
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+    cite: checkpoint 1348-07-01
+    detail:
+      result: defeat
+      naval: true
+      ours:
+        the Sahel: 11
+      oursTotal: 11
+      oursLost: 11
+      theirs:
+        Aragon: 13
+      theirsTotal: 13
+      theirsLost: 0
+      location: the gulf of Cagliari
+      side: Granada not engaged
+      units: ships
+  - id: 1348-05-13-battle-cape-ben-sakka
+    'on': '1348-05-13'
+    kind: battle
+    what: A Tunisian squadron worsted off Cape Ben Sakka
+    minor: true
+    threads:
+      - second-moroccan-war
+      - voyages
+    from:
+      - save
+    cite: checkpoint 1348-07-01
+    detail:
+      result: defeat
+      naval: true
+      ours:
+        Tunis: 4
+      oursTotal: 4
+      oursLost: 1
+      theirs:
+        Aragon: 14
+      theirsTotal: 14
+      theirsLost: 0
+      location: Cape Ben Sakka
+      side: Granada not engaged
+      lossNote: the battle list gives 0.52 ships' worth of losses, rounded
+      units: ships
+  - id: 1348-05-15-black-death-arrives
+    'on': '1348-05-15'
+    kind: world
+    what: >-
+      The Black Death arrives: the pestilence rumoured out of the east two years before comes to the realm, in
+      the middle of the war with the three crowns
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+      - told
+    cite: >-
+      Trent's account (the year follows from the saves: in September 1347 the plague had touched nowhere in
+      Iberia)
+    detail:
+      situation: black_death
+      disease: bubonic_plague
+      hospitalsBuilding:
+        - granada
+        - malaga
+        - almeria
+  - id: 1348-plague-scapegoats
+    'on': '1348-05-15'
+    kind: note
+    what: >-
+      In the far-flung villages the elders present scapegoats for the plague, despite the government's
+      attempts to stop it
+    from:
+      - told
+    cite: Trent's account (after the plague's arrival; the exact day isn't given)
+    detail:
+      event: black_death.1020 (Plague Scapegoats)
+  - id: 1348-plague-segregation
+    'on': '1348-05-15'
+    kind: realm
+    what: 'The infected are segregated: the crown answers the pestilence by separating the sick from the healthy'
+    threads:
+      - estates
+    from:
+      - told
+    cite: Trent's account (after the plague's arrival; the exact day isn't given); effects from the game files
+    detail:
+      response: segregate_the_infected
+      effects: disease resistance +15%; burgher and commoner satisfaction −5%; drift toward communalism
+  - id: 1348-05-30-battle-cordoba
+    'on': '1348-05-30'
+    kind: battle
+    what: A Castilian force of 2,750 destroyed before Qurṭuba
+    who:
+      - yusuf-i
+    where:
+      - qurtuba
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+    cite: checkpoint 1348-07-01
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 10530
+      oursTotal: 10530
+      oursLost: 219
+      theirs:
+        Castile: 2753
+      theirsTotal: 2753
+      theirsLost: 2080
+      location: Qurṭuba
+  - id: 1348-06-01-assassination-attempt
+    'on': '1348-06-01'
+    kind: note
+    what: >-
+      After prayers at El-Mnṣura a madman falls on the amir with a blade. Yūsuf survives, scarred; some at
+      court whisper that his guards were drawn away by those who oppose his rule
+    who:
+      - yusuf-i
+    from:
+      - seen
+      - told
+    cite: Trent's account and his screenshot of the event
+    detail:
+      event: Assassination of ʿAmīr Yūsuf Nasrid
+      outcome: survives, gains the Scarred trait
+      sovereignty: -15
+      place: El-Mnṣura (the game's spelling)
+  - id: 1348-06-12-battle-cape-ben-sakka
+    'on': '1348-06-12'
+    kind: battle
+    what: Morocco's great fleet of 54 ships falls on Aragon off Cape Ben Sakka and sinks 13 of its 16
+    minor: true
+    threads:
+      - second-moroccan-war
+      - voyages
+    from:
+      - save
+    cite: checkpoint 1348-07-01
+    detail:
+      result: victory
+      naval: true
+      ours:
+        Morocco: 54
+      oursTotal: 54
+      oursLost: 4
+      theirs:
+        Aragon: 16
+      theirsTotal: 16
+      theirsLost: 13
+      location: Cape Ben Sakka
+      side: Granada not engaged
+      units: ships
+  - id: 1348-07-01-help-from-the-east
+    'on': '1348-07-01'
+    kind: world
+    what: >-
+      Yūsuf sends a delegation to Kostantîniyye to congratulate the Ottomans and ask for soldiers against the
+      crowns of Iberia; after a decade of friendship, Süleyman Bey refuses: 'Why should we try to rekindle a
+      nearly extinguished flame?'
+    who:
+      - yusuf-i
+    from:
+      - seen
+      - told
+    cite: Trent's account and his screenshots
+    detail:
+      event: flavor_gra.1300 / flavor_gra.1301
+      answer: refused
+  - id: 1348-07-01-influence-crosses
+    'on': '1348-07-01'
+    kind: land
+    what: >-
+      For the first time Morocco's influence over Granada passes Castile's (+8.8), while the attempt on the
+      amir, the war and the plague drive sovereignty down to 39.7
+    threads:
+      - strait
+    from:
+      - save
+    cite: checkpoint 1348-07-01
+    detail:
+      influence:
+        from: -6.4
+        to: 8.8
+      sovereignty:
+        from: 48.65
+        to: 39.68
+  - id: 1348-07-01-plague-spread
+    'on': '1348-07-01'
+    kind: world
+    what: >-
+      The plague is in Huéscar, Yuz Aryuba and Antaqīra, and in Shāṭiba and Gandia of Balansiyya; the realm
+      has lost 17,000 souls since September
+    where:
+      - urjuba
+    from:
+      - save
+    cite: checkpoint 1348-07-01
+    detail:
+      infected:
+        - huescar
+        - orgiva
+        - antequera
+        - jativa
+        - gandia
+      population:
+        from: 472247
+        to: 455174
+  - id: 1348-07-01-wage-fixing
+    'on': '1348-07-01'
+    kind: note
+    what: >-
+      The Plague of Wage Fixing: with labour short, the guilds hold wages down and their members grumble; the
+      crown sides with the guilds, and the ungrateful labourers are shown their place
+    from:
+      - seen
+    cite: Trent's screenshot of his choice; effects from the game files
+    detail:
+      event: black_death.102
+      choice: The ungrateful laborers must be shown their place
+      effects: pop satisfaction −10% in Muyaqar and its neighbours, and (hidden) across the realm
+  - id: 1348-07-01-war-chest
+    'on': '1348-07-01'
+    kind: realm
+    what: >-
+      The war is costing 50 a month against an income of 19; five loans are owed, 127 in all, and the treasury
+      holds 819
+    threads:
+      - estates
+    from:
+      - save
+    cite: checkpoint 1348-07-01
+    detail:
+      treasury: 819
+      income: 19
+      expenses: 49.7
+      debt: 126.7
+      loans: 5
+tellings:
+  - id: 0748-02-06-the-day-of-jayyan
+    'on': '1347-05-18'
+    title: Of the Day of Jayyān
+    verse: 17:81
+    who:
+      - yusuf-i
+      - alfonso-xi
+    where:
+      - tilimsan
+      - balansiyya
+      - al-mariyya
+      - jayyan
+      - ishbiliyya
+    covers:
+      - 1346-11-22-battle-bay-palma
+      - 1346-12-02-battle-gulf-of-almeria
+      - 1347-01-16-battle-bay-alcudia
+      - 1347-02-13-battle-castellon-de-la-plana
+      - 1347-03-17-battle-sevilla
+      - 1347-05-18-battle-jaen
+    text: >
+      The winter brought our allies nothing but grief. In the bay of Palma the Aragonese galleys sank the
+      fleets of Bijāya and [Tilimsān](place:tilimsan), fourteen ships sent to the bottom without one Christian
+      hull lost. Off Alcúdia they did the same to the fleet of Qābis. The ships of
+      [Balansiyya](place:balansiyya) were worsted by the Portuguese in the very gulf of
+      [al-Mariyya](place:al-mariyya), within sight of our own shore. On the first of Dhū al-Qaʿda the Ṭāʾifa's
+      little army of two thousand was caught at al-Qasṭalyūn by eight thousand Aragonese and destroyed to the
+      last man. And on the third of Dhū al-Ḥijja the Marīnids, landed at last on our side of the Strait, came
+      before [Ishbīliya](place:ishbiliyya) with fewer than three thousand men. The Castilians met them with
+      nearly twelve thousand and drove them off.
+
+
+      The Christians took heart and believed the Muslims of the West could be beaten one by one. The tyrant
+      himself, [Alfonso](person:alfonso-xi), son of Ferdinand, king of Qashtāla, came south with thirteen
+      thousand men to finish the matter before the walls of [Jayyān](place:jayyan).
+
+
+      Our lord [Yūsuf](person:yusuf-i) had marched north to meet him with twenty-two thousand of the faithful,
+      and three and a half thousand Moroccans joined him on the road. It was the sixth of Ṣafar in the year
+      748. The king of Qashtāla was a soldier who had fought Muslims since his youth. He did not refuse
+      battle, though he was outnumbered two to one, for he thought the Andalusīs soft from long peace and fat
+      on Catalan trade. The Volunteers held the centre with the *mutaṭawwiʿa* in the first line, as at Uryūla.
+      The jinetes rode on the wings in the old manner of al-Andalus, wheeling in, loosing and wheeling out
+      again. All day the Castilian knights threw themselves at the line and all day the line held. At evening
+      the jinetes turned their flank, and the Castilian army broke.
+
+
+      Seven thousand five hundred Castilians fell or were taken, more than half of those who came. We lost
+      four thousand two hundred, Allāh have mercy on them. That night the sultan did not sit down to the
+      victory feast. He went among the wounded with the physicians and a lamp, cleaning and binding wounds
+      with his own hands as he had learned to do on campaign, and he had the Castilian wounded carried in and
+      laid beside ours. The physicians said he had a surgeon's hands and wasted them on a throne. The king
+      escaped with his household, but he left the confidence of the winter on that field. The Andalusīs, whom
+      the Christians had called soft, began to call themselves the sword of the West.
+
+
+      *Truth has come, and falsehood has departed. Indeed, falsehood is ever bound to depart.*
+  - id: 0748-05-23-of-al-qusayr-and-balma
+    'on': '1347-08-31'
+    title: Of al-Quṣayr and Balma
+    verse: 3:160
+    who:
+      - yusuf-i
+    where:
+      - jayyan
+      - qurtuba
+      - al-qusayr
+      - ishbiliyya
+      - qadis
+      - sharish
+      - balma
+      - gharnata
+    covers:
+      - 1347-06-17-battle-jerez-de-la-frontera
+      - 1347-06-21-battle-carpio
+      - 1347-07-13-battle-sevilla
+      - 1347-08-08-constantinople-falls
+      - 1347-08-31-battle-palma-del-rio
+      - 1347-09-14-the-war-so-far
+    text: >
+      After [Jayyān](place:jayyan) the sultan did not go home. He turned the host down the valley of the great
+      river, the Wādī al-Kabīr, toward [Qurṭuba](place:qurtuba). The farms and granaries of the Castilian
+      frontier burned behind it, for the Christians had burned ours for a hundred years and had taught us how.
+      On the eleventh of Rabīʿ al-Awwal, at [al-Quṣayr](place:al-qusayr) on the river above Qurṭuba, a
+      Castilian army of seven thousand stood across the road. The sultan had eighteen thousand. The battle was
+      short. Four thousand three hundred Christians fell, against fourteen hundred of ours, and the road to
+      Qurṭuba lay open.
+
+
+      Our Marīnid brothers fared otherwise. On the far side of [Ishbīliya](place:ishbiliyya), between that
+      city and [Qādis](place:qadis), the Marīnid columns landed in small bands and were beaten in small bands.
+      On the seventh of Rabīʿ al-Awwal a column of two and a half thousand was beaten at
+      [Sharīsh](place:sharish) by ten thousand. On the third of Rabīʿ al-Thānī a column of nine hundred was
+      destroyed before Ishbīliya to the last man, without the loss of one Castilian. Qashtāla's southern army,
+      nearly ten thousand strong, grew fat on these easy victories. Its captains came to believe that every
+      Muslim in the field would break as the Moroccans broke.
+
+
+      So the sultan swung west to relieve his allies. On the twenty-third of Jumādā al-Ūlā, at
+      [Balma](place:balma) where the Shanīl runs into the Wādī al-Kabīr, the Castilian southern army attacked
+      him. He had sixteen thousand of his own and four thousand Moroccans who had gathered to his banner. The
+      Castilians came on in the confidence of men who had won all summer and found they were not fighting
+      Moroccans. By evening five thousand three hundred of them lay on the riverbank. Our dead numbered seven
+      hundred. Of all the sultan's victories it was the cheapest.
+
+
+      In those same weeks word came from the East that Qusṭanṭīniyya, the Queen of Cities, had fallen to the
+      Ottomans, and that the Cross was taken down from its great church. The faithful of
+      [Gharnāṭa](place:gharnata) gave thanks in the mosques. The wiser heads at court reflected that the Turks
+      had won their city alone, and that no one should count on help from the far end of the sea.
+
+
+      When the first year of the war was reckoned in Jumādā al-Ākhira, the account stood thus. The army of
+      Gharnāṭa had won every battle it fought and lost fewer than six thousand men in them. The Moroccans had
+      lost three and a half thousand in battle and six thousand more to hunger and sickness on the march.
+      Qashtāla had lost more than eighteen thousand, most of them to the sultan's sword. The dīwān held that
+      Gharnāṭa had done almost twice Morocco's share of the war, and done it with half the men.
+
+
+      *If Allāh should aid you, no one can overcome you.*
+  - id: 0748-09-09-of-muntil-and-the-gate-of-qurtuba
+    'on': '1347-12-13'
+    title: Of Munṭīl, and the Gate of Qurṭuba
+    verse: 2:249
+    who:
+      - yusuf-i
+    where:
+      - muntil
+      - qurtuba
+      - jayyan
+      - al-qusayr
+      - balma
+    covers:
+      - 1347-10-04-battle-montiel
+      - 1347-10-30-battle-montiel
+      - 1347-12-13-battle-cordoba
+    text: >
+      In the autumn the Marīnids tried their fortune in the north. A Marīnid army of four thousand, with a
+      handful of Tunisians, struck into the high plain of La Mancha. On the twenty-seventh of Jumādā
+      al-Ākhira, at [Munṭīl](place:muntil), it met eight thousand Castilians. The Moroccans were beaten and
+      fled. Yet they sold the field dearly: twelve hundred of them fell, and three thousand eight hundred of
+      the enemy.
+
+
+      When the sultan heard of it he marched north to Munṭīl. On the twenty-fourth of Rajab, on the same field
+      where the Moroccans had broken, he met what remained of the Castilian army, some four and a half
+      thousand men, with sixteen thousand of his own. The Christians had not had time to bury their dead from
+      the first battle before they joined them. Three thousand one hundred fell, and we lost five hundred. The
+      jinetes pursued the rest into the hills, and the Moroccans' debt was paid.
+
+
+      Then the host came down again to [Qurṭuba](place:qurtuba), the old seat of the caliphs. The Christians
+      have held it for a hundred and eleven years and made its great mosque into a church. On the ninth of
+      Ramaḍān, the month of Badr, Qashtāla's southern army was rebuilt once more and sent to keep the sultan
+      from the city. It had four thousand four hundred men. The sultan had fifteen thousand seven hundred. The
+      Castilians did not break at once, but when they broke the jinetes rode them down. Three thousand three
+      hundred and fifty Christians died before the gate of Qurṭuba, and two hundred and fifty of ours.
+
+
+      That made five great victories in a year, at [Jayyān](place:jayyan), [al-Quṣayr](place:al-qusayr),
+      [Balma](place:balma), Munṭīl and Qurṭuba. Nearly twenty-four thousand Castilians had fallen in them, and
+      the king's armies in the south had been broken again and again and made whole again from fresh levies.
+      The old soldiers said they could not be made whole for ever. Qashtāla had men still. What it was running
+      out of was men who believed they could win.
+
+
+      *How many a small company has overcome a large company by permission of Allāh.* So it was said of Badr,
+      when the believers were few. In Ramaḍān of 748 the believers were many and the infidels few, and the
+      verse was turned around, and still it held, for Allāh is with the patient.
+  - id: 0748-10-15-the-birth-of-saad
+    'on': '1348-01-18'
+    title: Of the Birth of Saʿd
+    verse: '18:46'
+    who:
+      - saad-ibn-yusuf
+      - yusuf-i
+      - sayyida-of-fezzan
+      - faraj-ibn-ismail
+      - dua-marinid
+    where:
+      - qurtuba
+      - gharnata
+      - fas
+    covers:
+      - 1348-01-18-birth-saad
+      - 1348-01-18-betrothal-morocco
+    text: >
+      In the middle of Shawwāl in the year 748, while the host wintered on the frontier of
+      [Qurṭuba](place:qurtuba), a rider came up from [Gharnāṭa](place:gharnata) with the news the court had
+      waited for. The lady [Sayyida](person:sayyida-of-fezzan), daughter of the house of Murzuq in Fazzān, had
+      given our lord [Yūsuf](person:yusuf-i) a son. He was named [Saʿd](person:saad-ibn-yusuf), which is good
+      fortune, and the name was thought well chosen: he was born in the second year of the war, in a season of
+      victories, with the pestilence still far off in the East. A son of the sultan's body stood before a
+      brother in the succession, and from that day the court counted the infant, and no longer his uncle
+      [Faraj](person:faraj-ibn-ismail), the heir of Gharnāṭa.
+
+
+      Sayyida had come to Gharnāṭa a child of nine, betrothed to the young sultan in 738, and had married him
+      in the year of the Jamāʿa. The women of the palace had long whispered that the harem the Jamāʿa
+      enshrined would fill with sons. Now it had given one to the house of Naṣr. Alms were given at the gates
+      of the Alhambra, and the poets of the court wrote odes that were better in their sentiment than their
+      metre.
+
+
+      That same day a Naṣrid betrothal was sealed with the Marīnids of [Fās](place:fas), binding the two
+      houses as the war bound the two realms. The bride was [Duʿāʾ](person:dua-marinid), a girl of nine of the
+      Marīnid house, and she was promised not to the newborn but to the sultan himself. The dīwān thought it a
+      prudent knot. In time the court would learn how quickly the knots the Marīnids tied could come undone,
+      and that this one, alone of them, would hold.
+
+
+      *Wealth and children are the adornment of the life of this world.*
+  - id: 0749-02-15-the-coming-of-the-pestilence
+    'on': '1348-05-15'
+    title: Of the Coming of the Pestilence
+    verse: 4:78
+    who:
+      - yusuf-i
+    where:
+      - qurtuba
+      - gharnata
+    covers:
+      - 1348-05-15-black-death-arrives
+      - 1348-plague-segregation
+      - 1348-plague-scapegoats
+    text: >
+      On the fifteenth of Ṣafar in the year 749 the thing the merchants had spoken of two years before came
+      ashore. No chronicle records the name of the ship that carried it. It came in the spring with the trade
+      from the east, as the sultan had said it would, while the host was far away on the plains of
+      [Qurṭuba](place:qurtuba). Within days the physicians of the new houses of healing were sending word up
+      to the Alhambra: the swellings, the fever, the black blood. The *ṭāʿūn* had come to al-Andalus.
+
+
+      The sultan's answer was the hardest one. He ordered the infected separated from the healthy. Whole
+      streets were closed with chains, the sick were carried out of the cities to camps beyond the walls, and
+      their houses were sealed with their goods inside. The physicians said it was the only way to slow the
+      sickness, and they were right. But the burghers, whose shops were shut, and the common people, whose
+      sons and mothers were carried off to the camps, cursed the order and the men who enforced it. Some of
+      the *ʿulamāʾ* said that to flee a plague, or to drive others from it, was to doubt the decree of Allāh.
+      Others answered with the Prophet's own words, peace be upon him: if you hear of a plague in a land, do
+      not enter it; and if it breaks out in a land where you are, do not leave it.
+
+
+      When the sultan came back from the frontier in the weeks that followed, he went to the house of healing
+      in [Gharnāṭa](place:gharnata) against the pleading of his physicians. He walked its wards with a cloth
+      soaked in vinegar over his mouth, looked at the swellings as a man who had dressed wounds on the field,
+      and asked each physician what he lacked. What they asked for, the treasury sent.
+
+
+      In the farther villages, where the sultan's officers rode seldom, the people found a different remedy.
+      Elders gathered and named those they held guilty. Sometimes it was a Jew who had sold medicines,
+      sometimes a widow who lived alone, sometimes a stranger who had come up from the coast the month before.
+      Then they drove them out, or worse. The government sent orders to stop it and the orders came too late.
+      It is the oldest sin of frightened men to seek a hand to punish when the hand that strikes is Allāh's.
+
+
+      *Wherever you may be, death will overtake you, even if you should be within towers of lofty
+      construction.* The faithful knew it as a verse. Now they learned it as a season.
+  - id: 0749-04-03-the-madman-and-the-flame
+    'on': '1348-07-01'
+    title: Of the Madman at al-Manṣūra, and the Flame the Turks would not Rekindle
+    verse: 3:145
+    who:
+      - yusuf-i
+    where:
+      - qurtuba
+      - al-mansura
+      - gharnata
+    covers:
+      - 1348-05-30-battle-cordoba
+      - 1348-06-01-assassination-attempt
+      - 1348-06-12-battle-cape-ben-sakka
+      - 1348-07-01-help-from-the-east
+      - 1348-07-01-influence-crosses
+      - 1348-07-01-war-chest
+    text: >
+      On the first of Rabīʿ al-Awwal in the year 749 the host destroyed one more Castilian column before
+      [Qurṭuba](place:qurtuba), two thousand men caught in the open. It was a small victory and the last of
+      that spring, for the pestilence was already in the land behind the army. Two days later Allāh tested the
+      realm in its head.
+
+
+      The sultan had come back from the frontier and was at [al-Manṣūra](place:al-mansura) in the east of the
+      realm. As he came out from the prayer a man rushed through the crowd with a blade and fell on him. He
+      was a madman, the guards said. Others said, more quietly, that he had been paid. Our lord
+      [Yūsuf](person:yusuf-i) took the blade across the face, and the guards cut the man down before he could
+      strike again. The sultan lived. He bears the scar to this day, and the people say it has made him look
+      more like the warrior he has shown himself to be.
+
+
+      But the court asked why the guards had been so far from his side at the mosque door. Some whispered that
+      they had been drawn away on purpose, by men who opposed the sultan's rule, his strengthened crown and
+      his costly war. No one was named and no one was punished, which only made the whispers louder. The blow
+      fell on the realm's sovereignty as much as on the sultan's face. The war, the pestilence and the knife
+      together drove it far below the half.
+
+
+      In those weeks the scales of the Strait tipped in a new direction. For the first time, the sway of the
+      Marīnids over [Gharnāṭa](place:gharnata) outweighed the sway of Qashtāla. On the fourteenth of Rabīʿ
+      al-Awwal the great fleet of Fās, fifty-four ships, fell on the Aragonese off Cape Ben Sakka and sank
+      thirteen of their sixteen galleys. It was the first victory the allies had won at sea in the whole war,
+      and it made the Marīnid sultan bold and his envoys at Gharnāṭa overbearing. The court had gone to war to
+      keep Qashtāla's hand off the realm. It began to fear that it was only exchanging one master for another.
+
+
+      So the sultan looked further east. He sent a delegation to Qusṭanṭīniyya to congratulate the Ottoman
+      beys on their conquest and to ask, after ten years of friendly letters, for soldiers against the crowns
+      of Iberia. Sulaymān Bey received them courteously and sent them home with this answer: *Why should we
+      try to rekindle a nearly extinguished flame?* By this he meant al-Andalus.
+
+
+      The war was now costing fifty dīnārs a month against an income of nineteen. Five loans were owed again,
+      and the treasury held eight hundred and nineteen. The realm was winning every battle and paying for
+      every one of them.
+
+
+      *And it is not for a soul to die except by permission of Allāh at a decree determined.*

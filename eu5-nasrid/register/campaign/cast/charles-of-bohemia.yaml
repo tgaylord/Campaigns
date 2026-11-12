@@ -1,0 +1,24 @@
+name: Charles of Bohemia, Emperor
+house: Luxembourg
+born: '1316-05-22'
+died: '1379-01-04'
+roles:
+  - king of Bohemia
+  - Holy Roman Emperor
+traits:
+  - lawgiver
+  - bold_fighter
+  - inspirational_leader_general
+  - just
+stations:
+  - role: general
+    from: '1340-09-15'
+    to: '1379-01-04'
+    source: save
+    approx: false
+note: >-
+  King of Bohemia from 31 May 1340 and Emperor of the 319 members of the Empire. The ablest ruler of
+  Christendom by the game's measure. Died 1379-01-04 (save of 24 October 1414).
+game:
+  id: 6172
+  name: Charles

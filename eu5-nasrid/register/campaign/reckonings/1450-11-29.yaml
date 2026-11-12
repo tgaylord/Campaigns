@@ -1,0 +1,973 @@
+date: '1450-11-29'
+title: The Kingdom of Sicily
+source:
+  save: SP_ADU_1450_11_29 (compressed)
+  game: 1.4.7
+summary: >-
+  From a save on the day of the peace. The whole kingdom of Sicily, twenty-two towns from Messina to Trapani,
+  is the Emperor's, with its palace, cathedral and castle at Palermo: the realm now holds 244 towns. Athens
+  and Negroponte, Sicily's subjects, are vassals of al-Andalus; Tunis has northern Sardinia; Genoa made its
+  own peace in July and has Corsica back. Naples, across the strait, has a claim on al-Andalus. The army is 13
+  regiments (6 of thughūr), the fleet 97 ships with 20 hulks. The Mamlūks' war on the Banū Lām goes on, with
+  al-Andalus in it in name; a new ṭāʾifa is to be raised in Sicily when it ends (Trent). Stability 22.9,
+  prestige 94, treasury 2,804. Estate power estimated from the reading of 16 November 1428.
+realm:
+  towns: 244
+  souls: 3860851
+  treasury: 2804
+  income: 456.5
+  expenses: 432
+  stability: 22.9
+  prestige: 94
+  regiments: 13
+  ships: 97
+  manpower: 26691
+court:
+  ruler: muhammad-ibn-ismail-ibn-saad
+  heir: ismail-ibn-muhammad-ibn-ismail
+  capital: ishbiliyya
+  council:
+    - who: ismail-ibn-muhammad-ibn-ismail
+      seat: Assimilating the new lands
+    - who: ahmad-ibn-muhammad-ibn-ismail
+      seat: Changing the societal values
+    - who: umm-al-fath-bint-muhammad
+      seat: Strengthening the government
+    - who: shams-bint-muhammad
+      seat: Promoting Andalusī culture
+    - who: jadila-bint-saad-ibn-faraj
+      seat: Developing the provinces
+standing:
+  wars:
+    - mamluk-war-on-lam
+  allies:
+    - Mamluks
+    - Morocco
+    - Tunis
+  subjects:
+    - Aragon (taifa)
+    - Taifa of Cuenca (taifa)
+    - Kingdom of Portugal (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+    - Taifa of Galicia (taifa)
+    - Cape Verde (colonial nation)
+    - Athens (vassal)
+    - Negroponte (vassal)
+  estates:
+    - name: Crown
+      power: 29.96
+    - name: Nobility
+      power: 17.12
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 12.17
+      mood: 50
+    - name: Burghers
+      power: 23.59
+      mood: 55
+    - name: Commoners
+      power: 2.87
+      mood: 51
+    - name: Dhimmī
+      power: 14.29
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 1148419
+    Catalan: 774705
+    Portuguese: 547368
+    Castilian: 513439
+    Sicilian: 392818
+    Sephardi: 225739
+  faiths:
+    Sunni: 2104280
+    Catholic: 1526041
+    Jewish: 200307
+    Guanche_religion: 27764
+    Orthodox: 1653
+map:
+  ours:
+    - GRA
+  subjects:
+    - ARA
+    - ABA60
+    - POR
+    - ABA42
+    - ABA49
+    - ABA55
+    - GLC
+    - AAA52
+    - ATH
+    - NEG
+  allies:
+    - MAM
+    - MOR
+    - TUN
+beats:
+  - id: 1450-02-06-battle-al-wajh
+    'on': '1450-02-06'
+    kind: battle
+    what: 'At al-Wajh the Mamlūk side (AAA00, 153) is attacked by Otaibah (3,595) and loses: 153 lost against 0'
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 29 November 1450
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        AAA00: 153
+      oursTotal: 153
+      oursLost: 153
+      theirs:
+        Otaibah: 3595
+      theirsTotal: 3595
+      theirsLost: 0
+      location: al-Wajh
+      side: enemy attacking
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1450-02-15-the-landing-at-saraqusa
+    'on': '1450-02-15'
+    kind: note
+    what: '8,700 men of al-Andalus land at Saraqūsa in Sicily: a wholly professional army'
+    who:
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+    threads:
+      - tunisian-war-for-palermo
+      - two-princes
+    from:
+      - told
+    cite: Trent's account (12 November 2026)
+    detail:
+      men: 8700
+      where: Syracuse (Saraqūsa)
+      army: fully professional (Trent)
+  - id: 1450-03-16-battle-al-marwa
+    'on': '1450-03-16'
+    kind: battle
+    what: >-
+      At al-Marwa the Mamlūk side (Banu Kanz, 559) is attacked by Yemen (2,255) and wins: 58 lost against
+      2,255
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 29 November 1450
+    detail:
+      result: allied victory
+      naval: false
+      ours:
+        Banu Kanz: 559
+      oursTotal: 559
+      oursLost: 58
+      theirs:
+        Yemen: 2255
+      theirsTotal: 2255
+      theirsLost: 2255
+      location: al-Marwa
+      side: enemy attacking
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1450-04-14-battle-ar-rayyan
+    'on': '1450-04-14'
+    kind: battle
+    what: 'At ar-Rayyan the Mamlūk side (Mamluks, 17,065) attacks Lām (3,433) and wins: 1,394 lost against 2,354'
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 29 November 1450
+    detail:
+      result: allied victory
+      naval: false
+      ours:
+        Mamluks: 17065
+      oursTotal: 17065
+      oursLost: 1394
+      theirs:
+        Lām: 3433
+      theirsTotal: 3433
+      theirsLost: 2354
+      location: ar-Rayyan
+      side: allies attacking
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1450-04-22-battle-duba
+    'on': '1450-04-22'
+    kind: battle
+    what: 'At Duba the Mamlūk side (Mamluks, 17,259) attacks Yemen (17,873) and loses: 1,505 lost against 1,997'
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 29 November 1450
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Mamluks: 17259
+      oursTotal: 17259
+      oursLost: 1505
+      theirs:
+        Yemen: 17873
+      theirsTotal: 17873
+      theirsLost: 1997
+      location: Duba
+      side: allies attacking
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1450-05-09-battle-ash-shamli
+    'on': '1450-05-09'
+    kind: battle
+    what: 'At ash-Shamli the Mamlūk side (Al ʿAlī, 666) attacks ABA44 (6,760) and loses: 666 lost against 39'
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 29 November 1450
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Al ʿAlī: 666
+      oursTotal: 666
+      oursLost: 666
+      theirs:
+        ABA44: 6760
+      theirsTotal: 6760
+      theirsLost: 39
+      location: ash-Shamli
+      side: allies attacking
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1450-05-23-battle-khalis-medina
+    'on': '1450-05-23'
+    kind: battle
+    what: >-
+      At Khalis Medina the Mamlūk side (Mamluks and Banu Kanz, 16,157) is attacked by Dawasir (641) and wins:
+      0 lost against 641
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 29 November 1450
+    detail:
+      result: allied victory
+      naval: false
+      ours:
+        Mamluks: 15667
+        Banu Kanz: 490
+      oursTotal: 16157
+      oursLost: 0
+      theirs:
+        Dawasir: 641
+      theirsTotal: 641
+      theirsLost: 641
+      location: Khalis Medina
+      side: enemy attacking
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1450-06-25-battle-al-muazzam
+    'on': '1450-06-25'
+    kind: battle
+    what: 'At al-Muazzam the Mamlūk side (Mecca, 169) is attacked by Otaibah (3,166) and loses: 68 lost against 0'
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 29 November 1450
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Mecca: 169
+      oursTotal: 169
+      oursLost: 68
+      theirs:
+        Otaibah: 3166
+      theirsTotal: 3166
+      theirsLost: 0
+      location: al-Muazzam
+      side: enemy attacking
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1450-07-15-genoa-makes-peace
+    'on': '1450-07-15'
+    kind: peace
+    what: >-
+      Genoa makes a separate peace with Tunis and al-Andalus, and Corsica, held by al-Andalus since the fall
+      of Bastia, goes back to Genoa's vassal there
+    threads:
+      - tunisian-war-for-palermo
+    from:
+      - save
+    cite: save of 29 November 1450
+    detail:
+      truce: to 15 May 1460
+      corsica: Corsica's towns are Corsica's again in the save of 29 November 1450, Genoa's vassal
+  - id: 1450-07-18-battle-mughayra
+    'on': '1450-07-18'
+    kind: battle
+    what: >-
+      At Mughayra the Mamlūk side (Mamluks and Banu Kanz, 15,334) is attacked by Otaibah (3,164) and loses:
+      15,333 lost against 288
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 29 November 1450
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Mamluks: 14874
+        Banu Kanz: 460
+      oursTotal: 15334
+      oursLost: 15333
+      theirs:
+        Otaibah: 3164
+      theirsTotal: 3164
+      theirsLost: 288
+      location: Mughayra
+      side: enemy attacking
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1450-07-18-battle-sughar
+    'on': '1450-07-18'
+    kind: battle
+    what: >-
+      At Sughar the Mamlūk side (Mamluks, 14,655) is attacked by Yemen (14,023) and wins: 0 lost against
+      14,023
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 29 November 1450
+    detail:
+      result: allied victory
+      naval: false
+      ours:
+        Mamluks: 14655
+      oursTotal: 14655
+      oursLost: 0
+      theirs:
+        Yemen: 14023
+      theirsTotal: 14023
+      theirsLost: 14023
+      location: Sughar
+      side: enemy attacking
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1450-08-08-battle-al-azlam
+    'on': '1450-08-08'
+    kind: battle
+    what: 'At al-Azlam the Mamlūk side (Suakin, 509) is attacked by Lām (4,190) and loses: 509 lost against 19'
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 29 November 1450
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Suakin: 509
+      oursTotal: 509
+      oursLost: 509
+      theirs:
+        Lām: 4190
+      theirsTotal: 4190
+      theirsLost: 19
+      location: al-Azlam
+      side: enemy attacking
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1450-09-28-sicily-for-al-andalus
+    'on': '1450-09-28'
+    kind: note
+    what: >-
+      Al-Andalus takes the lead of the war. Tunis has had Sardinia for its pains; Sicily has been won with
+      Andalusī blood, steel and sweat, and Tunis, which began the war, understands the Emperor's wish for
+      compensation: Sicily, all of it
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - ismail-ibn-muhammad-ibn-ismail
+    threads:
+      - tunisian-war-for-palermo
+      - sicily
+    from:
+      - told
+    cite: Trent's account (12 November 2026)
+    detail:
+      trent: >-
+        The Tunisians fought for Sardinia, yes- and were justly rewarded. But Sicily has been Andalusi blood.
+        Andalusi steel. Andalusi sweat. And while the Tunisians started this war- they... understand our
+        desire for compensation. Namely- Sicily.
+  - id: 1450-09-28-the-fall-of-catania
+    'on': '1450-09-28'
+    kind: battle
+    what: The fortress of Catania falls after a siege of 208 days, and the road to Palermo lies open
+    threads:
+      - tunisian-war-for-palermo
+      - sicily
+    from:
+      - told
+    cite: Trent's account (12 November 2026)
+    detail:
+      days: 208
+  - id: 1450-10-21-battle-al-khanbarah
+    'on': '1450-10-21'
+    kind: battle
+    what: >-
+      At al-Khanbarah the Mamlūk side (Mamluks, 14,585) is attacked by Lām (5,019) and wins: 987 lost against
+      2,213
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 29 November 1450
+    detail:
+      result: allied victory
+      naval: false
+      ours:
+        Mamluks: 14585
+      oursTotal: 14585
+      oursLost: 987
+      theirs:
+        Lām: 5019
+      theirsTotal: 5019
+      theirsLost: 2213
+      location: al-Khanbarah
+      side: enemy attacking
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1450-11-03-battle-palermo
+    'on': '1450-11-03'
+    kind: battle
+    what: >-
+      Before Palermo the army of al-Andalus, 8,707 strong, breaks the Sicilian king's 7,954: Sicily loses
+      5,704 killed and taken, al-Andalus 278 after the prisoners it took
+    threads:
+      - tunisian-war-for-palermo
+    from:
+      - seen
+    cite: Trent's battle screen, 3 November 1450
+    detail:
+      result: victory
+      naval: false
+      ours:
+        al-Andalus: 8707
+      oursTotal: 8707
+      oursLost: 802
+      theirs:
+        Sicily: 7954
+      theirsTotal: 7954
+      theirsLost: 5704
+      location: Palermo
+      warScore: 13.09
+      composition:
+        ours: >-
+          5,880 infantry (−494, +221 taken in), 2,340 light horse (−308, +113), 487 heavy horse (+96), 93
+          support taken
+        theirs: >-
+          6,353 levy archers (−4,424), 472 infantry (−465), 916 light horse (−607), 117 heavy horse (−114), 96
+          support (−93)
+      net: al-Andalus −802, −278 counting men taken into its ranks; Sicily −5,180, −5,704 counting those taken
+  - id: 1450-11-29-a-taifa-for-sicily
+    'on': '1450-11-29'
+    kind: note
+    what: A new ṭāʾifa will be raised in Sicily once the Mamlūks' war, al-Andalus's other and nominal war, is over
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+    threads:
+      - mamluk-war-on-lam
+      - sicily
+    from:
+      - told
+    cite: Trent's account (12 November 2026)
+  - id: 1450-11-29-athens-swears-fealty
+    'on': '1450-11-29'
+    kind: world
+    what: >-
+      Athens, a Christian duchy that stands against the Turks and the Neapolitans and had been Sicily's
+      nominal vassal, will neither stand alone nor swear to its old enemies. It offers the Emperor fealty for
+      autonomy, and he accepts
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+    threads:
+      - sicily
+    from:
+      - save
+      - told
+    cite: Trent's account (12 November 2026); save of 29 November 1450
+    detail:
+      duke: >-
+        Peter of the house of Barcelona, born 1399, a kinsman of the last king of Sicily; the admiral whose
+        single ship attacked the prince Yūsuf's squadron off Terracina in January 1448
+      lands: >-
+        Athens, Atalanti, Salona, Angelokastron, Karpenisi, Loidoriki: some 270,000 souls, Greek and mostly
+        Catholic
+      heir: Ferdinand, born 1419
+  - id: 1450-11-29-battle-sciacca
+    'on': '1450-11-29'
+    kind: battle
+    what: >-
+      At Sciacca the routed Sicilian army, 2,232 men, is caught and destroyed to the last man for the loss of
+      108
+    threads:
+      - tunisian-war-for-palermo
+    from:
+      - seen
+    cite: Trent's battle screen, 29 November 1450
+    detail:
+      result: victory
+      naval: false
+      ours:
+        al-Andalus: 7905
+      oursTotal: 7905
+      oursLost: 108
+      theirs:
+        Sicily: 2232
+      theirsTotal: 2232
+      theirsLost: 2232
+      location: Sciacca
+      warScore: 5.12
+      composition:
+        ours: 5,386 infantry (−99), 2,032 light horse, 487 heavy horse (−9)
+        theirs: 1,927 levy archers and 305 light horse, all lost
+  - id: 1450-11-29-the-holy-cities-held-by-lam
+    'on': '1450-11-29'
+    kind: world
+    what: >-
+      In the Mamlūks' war the Banū Lām hold Makka, Madīna, Jeddah and Yanbuʿ: the Holy Cities and their ports
+      are in the hands of the Mamlūks' enemies
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: saves of 29 November 1450, 1 February 1451 and 21 December 1451
+    detail:
+      occupied: >-
+        Mecca, al-Jumūm, al-Līth, Jeddah, Yalamlam and others of the Sharīf's; Medina, Yanbuʿ and others of
+        Medina's; Khaybar and Fadak of the Mamlūks' (saves of 29 November 1450 and 21 December 1451)
+      since: between August 1449 and November 1450
+  - id: 1450-11-29-the-peace-of-palermo
+    'on': '1450-11-29'
+    kind: peace
+    what: >-
+      The war for Palermo ends. The whole kingdom of Sicily, twenty-two towns from Messina to Trapani, passes
+      to al-Andalus; Tunis has seven towns of northern Sardinia; Athens and Negroponte, Sicily's subjects,
+      become the Emperor's vassals
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+    threads:
+      - tunisian-war-for-palermo
+      - sicily
+    from:
+      - save
+      - told
+    cite: save of 29 November 1450; Trent's account
+    detail:
+      sicily: >-
+        Messina, Catania, Mistretta, Nicosia, Patti, Piazza, Girgenti, Bivona, Caltanissetta, Cefalù, Sciacca,
+        Termini, Palermo, Corleone, Mazara, Salemi, Trapani, Syracuse, Caltagirone, Modica, Noto, Terranova
+      tunis: Sassari, Alghero, Bosa, Castelsardo, Bitti, Ozieri, Thiesi (from Arborea)
+      athens: >-
+        vassal from 29 November 1450 under its duke Peter of the house of Barcelona, who had offered fealty
+        for autonomy (Trent)
+      negroponte: vassal from 29 November 1450; its crown, held by the king of Sicily, now held by the Emperor
+      truce: with Sicily and the Pope to 29 November 1465
+      naples: Naples has a claim on al-Andalus from the same day
+      palermo: a grand palace, a cathedral, a castle and a canal lock at Palermo
+tellings:
+  - id: 0854-01-02-of-the-thughur-and-the-landing-at-saraqusa
+    'on': '1450-02-15'
+    title: Of the Thughūr and the Landing at Saraqūsa
+    verse: 17:80
+    who:
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+      - muhammad-ibn-ismail-ibn-saad
+    where:
+      - ishbiliyya
+    covers:
+      - 1449-10-25-the-thughur-raised
+      - 1450-02-15-the-landing-at-saraqusa
+      - 1447-09-07-the-hungarian-succession
+    text: >
+      For thirty years the army of al-Andalus had been a small thing. It was a few thousand horse and foot
+      kept for the frontier, with the ṭāʾifas' levies behind it and the fleet in front. Since the crusade the
+      crown's gold had gone into harbours, bridges and the trades of the towns, and the dīwān had been content
+      to let the sea do the realm's fighting. The war for Balarm changed that. Corsica had fallen and Sardinia
+      was nearly gone, and still the war could not end until Balarm was taken. The allies had broken
+      themselves against its walls four times. The Ḥafṣid sultan no longer asked for ships. He asked for men.
+
+
+      In the middle of Ramaḍān 853 the two princes put it to the dīwān.
+      [Ismāʿīl](person:ismail-ibn-muhammad-ibn-ismail) made the case. Genoa's mainland could be raided forever
+      without ending anything, he said. Sicily was the war, and the war should be finished where it had begun.
+      [Aḥmad](person:ahmad-ibn-muhammad-ibn-ismail) made the reckoning. A landing on Sicily needed an army
+      that would not melt away when the harvest called the levies home. The ṭāʾifas' levies were not that
+      army, and neither were the few thousand the crown already kept. The Emperor
+      [Muḥammad](person:muhammad-ibn-ismail-ibn-saad), who loved the fleet and had never much loved the army,
+      gave them what they asked.
+
+
+      The princes raised four thousand men of the thughūr, the frontier marches. They were men from the old
+      border towns whose fathers had held the line against Qashtāla, and they were paid soldiers from the
+      first day to the last. It was the first true enlargement of the army in a generation. The muster-masters
+      at [Ishbīliya](place:ishbiliyya) had to find out what such a thing cost, and the treasury found out with
+      them.
+
+
+      The court had news from the east that winter, and it made the choice seem wiser. In the lands of the
+      Hungarian crown the king of Bohemia had been at war for two years over the succession, with Poland and
+      half the princes of the Empire behind him. By the summer of 853 his armies held all of eastern Hungary.
+      Nābulī had gone to war on Hungary's side. The princes of Italy were looking north and east, not south.
+
+
+      On 2 Muḥarram 854 eight thousand seven hundred men of al-Andalus came ashore at Saraqūsa, on the eastern
+      shore of Sicily. There were no levies among them. Every man was a soldier by trade, and the oldest
+      captains said there had not been such an army under the Naṣrid banner since the wars of the Istirdād.
+      Balarm lay on the other side of the island.
+
+
+      *And say, "My Lord, cause me to enter a sound entrance and to exit a sound exit and grant me from
+      Yourself a supporting authority."*
+    behind: >-
+      This note covers three entries: the Jamāʿa of the commons, Sardinia and Bastia, and the landing at
+      Syracuse.
+
+
+      **What the saves show.** There are two autosaves (1 February 1448 and 1 February 1449) and a save of 2
+      August 1449.
+
+
+      *The Jamāʿa.* The privilege "peasants represented in parliament" first appears in the 1449 autosave. The
+      commons' satisfaction is 50 before it, 59 in February 1449 and 54 in August. The burghers go from 54 to
+      56. The Jamāʿa also gained an urban seat at Lisbon. Its date, that the two princes called it, and the
+      uproar come from Trent's account.
+
+
+      *The war at sea and on land.* The October–December 1447 battles, the failed allied attacks on Palermo
+      (four, September 1448 to April 1449), Gabès's separate peace (1 December 1448) and Corsica and Sardinia
+      under occupation in August 1449 are all from the saves.
+
+
+      *Yūsuf's battles.* The save names Yūsuf as commander at Terracina (5 January 1448), Termini (13 January
+      1448) and the Corsica Channel (21 October 1448). The figures for Seddori and the Corsica Channel come
+      from Trent's battle screens.
+
+
+      *Who commanded at Seddori.* The save lists the stack's commander as Peter, Banbalūna's general, whose
+      men fought there too. Trent's account says the army was under Abū al-Ḥasan ʿAlī. The entry gives it to
+      Abū al-Ḥasan ʿAlī ibn Aḥmad, the realm's general since 1429 and the victor of Santiago in 1430.
+
+
+      *The ṭāʾifas.* Three changes of ruler:
+
+      - The king of Portugal, Abū al-Ḥasan ʿAlī, died at sea on 1 June 1448. His widow Christine bore a
+      daughter the next day and is regent until 1456 for their daughter Fāṭima, born 1440.
+
+      - Maryam of Qūnka died on 28 June 1448 and her son succeeded her. The 1449 save marks him an
+      entrepreneur.
+
+      - Aḥmad of Banbalūna died of camp fever on 18 February 1449 and his son succeeded him. The save gives no
+      traits for the son; "gentler" is invented.
+
+
+      *The Mamlūk war.* The war on the Banū Lām (the game's "1st Egypt–Lam War") began on 5 November 1448 for
+      al-Ghazāla and al-Rawḍa. Al-Andalus is in it but has fought no battle. The thirteen battles to August
+      1449 and the occupations come from the save. Trent's account is the source for the Mamlūks' trouble on
+      the Red Sea coast.
+
+
+      *Hungary.* Bohemia's war for the Hungarian throne began on 7 September 1447. By August 1449 Bohemia held
+      94 Hungarian locations and Poland 14. Naples fights on Hungary's side.
+
+
+      *The army.* Bastia's fall (17 September 1449, after 265 days), the 4,000 Tagri raised in late October
+      1449, and the 8,700 professional men landed at Syracuse on 15 February 1450 all come from Trent's
+      account. There is no save yet past August 1449.
+
+
+      *Other changes.* The fleet grew from 9 war galleys to 22, with 10 hulks, during 1448. The palace at
+      Seville shows as complete in the 1449 save. Stability rose from 10.7 to 19.3, and political influence
+      reached 100.
+
+
+      *Palermo.* Islamic rule in Palermo (831–1072) is real history.
+
+
+      **Invented colour.**
+
+
+      *Jamāʿa entry:*
+
+      - Christine keeping the condolences and not the advisers.
+
+      - Abū al-Ḥasan ʿAlī ibn Saʿd liked by Qūnka's merchants.
+
+      - The month the Jamāʿa was called, and its ordinary business.
+
+      - The Emperor coming in himself.
+
+      - The umarāʾ's shouting, the ʿulamāʾ walking out, and the burghers' silence.
+
+      - Aḥmad's silence and its reason.
+
+      - Ismāʿīl's work along the benches, and the seating compromise.
+
+
+      *Bastia entry:*
+
+      - The army's march inland.
+
+      - The sailors' "lucky".
+
+      - The Emperor answering Cairo as always.
+
+      - The Banbalūna men's verdict on the son.
+
+      - The general hearing of Āram's birth in the trenches.
+
+      - The keys of Bastia hung in the palace.
+
+
+      *Syracuse entry:*
+
+      - The sultan asking for men.
+
+      - The princes' division of labour: Ismāʿīl argues, Aḥmad reckons.
+
+      - The Emperor's indifference to the army.
+
+      - The Tagri as sons of the old frontier.
+
+      - The muster-masters, and the captains' saying.
+
+      - The court reading the Hungarian war as good timing.
+  - id: 0854-09-27-of-catania-and-the-battle-before-balarm
+    'on': '1450-11-03'
+    title: Of Catania and the Battle before Balarm
+    verse: '8:10'
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+    where:
+      - ishbiliyya
+    covers:
+      - 1450-02-15-the-landing-at-saraqusa
+      - 1449-12-13-battle-catania
+      - 1450-07-15-genoa-makes-peace
+      - 1450-09-28-the-fall-of-catania
+      - 1450-09-28-sicily-for-al-andalus
+      - 1450-11-03-battle-palermo
+    text: >
+      The army that came ashore at Saraqūsa did not go straight for Balarm. Between it and Balarm stood
+      Catania, under its mountain, the strongest fortress of the east coast. In Shawwāl of the year before,
+      the Tripolitanians had thrown themselves at it and lost three men in four. On 19 Muḥarram 854 the army
+      of al-Andalus sat down before its walls and settled in to wait.
+
+
+      It waited through the spring and the summer. In Jumādā al-Ākhira the Genoese, who had lost Corsica,
+      their fleets and their appetite for the war, made their own peace with Tūnis and with the Emperor. The
+      price of their leaving was Corsica. The island the army had spent a year taking went back to Genoa's
+      vassal there. The soldiers before Catania said that Bastia had cost them two hundred and sixty-five days
+      for nothing. Their officers told them it had bought Genoa's absence from Sicily, and in time the
+      soldiers came to believe it.
+
+
+      Catania fell on 20 Shaʿbān 854, after two hundred and eight days. The road west to Balarm was open.
+
+
+      With Catania, the war changed hands. It had been begun by Tūnis, and Tūnis had been paid for its part:
+      the Arboreans were broken, and the north of Sardinia was the Ḥafṣid sultan's for the taking. But Sicily
+      had been won with Andalusī blood, Andalusī steel and Andalusī sweat. The Tunisians had broken themselves
+      four times against Balarm, and al-Andalus had taken Catania within the year. The
+      [Emperor](person:muhammad-ibn-ismail-ibn-saad) wrote to the sultan in courteous terms.
+      [Ismāʿīl](person:ismail-ibn-muhammad-ibn-ismail) carried the letter's meaning in person. Al-Andalus
+      would have compensation for what it had spent, and the compensation was Sicily, all of it. The sultan
+      had begun the war for Balarm alone. He read the letter, counted the Andalusī soldiers in the field, and
+      found that he understood the Emperor's desire. From that day the war was al-Andalus's to lead and to
+      end.
+
+
+      The king of Ṣiqilliya gathered everything he had left before Balarm: nearly eight thousand men, most of
+      them archers of the levy. On 27 Ramaḍān 854 the army of al-Andalus, eight thousand seven hundred
+      professional soldiers, met him there. The Sicilian archers broke under the horse. When the field was
+      cleared, the king had lost more than five thousand men killed or taken. Al-Andalus had lost eight
+      hundred, and took in some five hundred of the enemy's men who chose the Emperor's pay over the prison.
+      The remnant of the Sicilian host fled west along the coast with the king.
+
+
+      It was the twenty-seventh of Ramaḍān, and the night before had been, by many reckonings, the Night of
+      Power. The preachers of [Ishbīliya](place:ishbiliyya) made the most of it at the Friday prayer.
+      [Aḥmad](person:ahmad-ibn-muhammad-ibn-ismail), who had paid for the army, was asked by a courtier what
+      he thought of the omen. He said he thought more of the thughūr.
+
+
+      *And God made it not but good tidings and so that your hearts would be assured thereby. And victory is
+      not but from God. Indeed, God is Exalted in Might and Wise.*
+  - id: 0854-10-23-of-the-peace-of-balarm-and-the-duke-of-athens
+    'on': '1450-11-29'
+    title: Of the Peace of Balarm and the Duke of Athens
+    verse: '60:8'
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+      - yusuf-ibn-ismail-ibn-muhammad
+    where:
+      - ishbiliyya
+    covers:
+      - 1450-11-29-battle-sciacca
+      - 1450-11-29-the-peace-of-palermo
+      - 1450-11-29-athens-swears-fealty
+      - 1450-11-29-a-taifa-for-sicily
+    text: >
+      The king of Ṣiqilliya did not get far. His army had been broken before Balarm, and what was left of it,
+      two thousand archers and horsemen, fled west along the coast toward Trapani and the sea. The army of
+      al-Andalus caught it at Sciacca on 23 Shawwāl 854. Not one of the Sicilians came off the field free.
+      Al-Andalus lost a hundred and eight men.
+
+
+      The peace was made the same day. It was the peace al-Andalus wanted, because by then al-Andalus was the
+      only party with an army in Sicily. The whole kingdom passed to the Emperor: Messina on its strait,
+      Catania and Saraqūsa, Girgenti and Mazara, Trapani at the western point, and Balarm itself. Twenty-two
+      towns in all. For the first time in nearly four centuries Balarm was governed in the name of a Muslim
+      prince. It came with the palace of its Norman kings, its cathedral and its castle. The north of Sardinia
+      went to Tūnis, as had been promised: Sassari, Alghero and five towns more, taken from Arborea. The Pope,
+      who had done little in the war, was given a truce and nothing else. The king, of the old house of
+      Barcelona, kept his life and his name.
+
+
+      Sicily had had subjects, and they had to be disposed of.
+
+
+      The first was Athens. It was a Christian duchy at the end of Greece, ruled by Catalans who had come east
+      as soldiers a century and a half before and never gone home. It had stood against the Turks to its north
+      and the Neapolitans to its west. It had been Sicily's vassal more in name than in fact, and now Sicily
+      was gone. Duke Peter, a kinsman of the fallen king, would not stand alone. He would not swear to the
+      Turks or to Naples either, his old enemies. So he sent to [Ishbīliya](place:ishbiliyya) and made an
+      offer: fealty, in exchange for being left to rule Athens as he always had. He was the same Peter who, as
+      an admiral in the first winter of the war, had sailed a single ship against the prince
+      [Yūsuf](person:yusuf-ibn-ismail-ibn-muhammad)'s squadron off Terracina and lost it. Yūsuf remembered the
+      name and spoke for him. The Emperor accepted. Athens became the vassal of al-Andalus, with its own duke,
+      its own church and its own laws.
+
+
+      The second was Negroponte, the long island off the coast of Attica. The king of Sicily had held its
+      crown in his own person. By the terms of the peace that crown passed with Sicily to the Emperor, so that
+      [Muḥammad](person:muhammad-ibn-ismail-ibn-saad) ibn Ismāʿīl, sultan and Emperor of al-Andalus, found
+      himself lord of a Greek island with Venetian lords that he had never seen, with his son
+      [Ismāʿīl](person:ismail-ibn-muhammad-ibn-ismail) as its heir. He was delighted, and ordered a map of it.
+
+
+      Not everyone across the water was pleased. On the day of the peace Naples, now the neighbour of
+      al-Andalus across the strait of Messina, put its claim on record. The dīwān noted it and filed it.
+
+
+      Sicily was too large and too far from Ishbīliya to be governed from the palace by the river. The dīwān
+      agreed that it should have a ṭāʾifa of its own, ruled by a house bound to the crown. But al-Andalus was
+      still at war, in name, beside the Mamlūks in Arabia. [Aḥmad](person:ahmad-ibn-muhammad-ibn-ismail)
+      counselled that the new ṭāʾifa be raised when that war was over and not before, and the Emperor agreed.
+
+
+      *God does not forbid you from those who do not fight you because of religion and do not expel you from
+      your homes, from being righteous toward them and acting justly toward them. Indeed, God loves those who
+      act justly.*
+    behind: >-
+      This note covers two entries: Catania and the battle before Palermo, and the peace and the duke of
+      Athens.
+
+
+      **What the saves show.** There are two saves for this stretch: an autosave of 1 February 1450 and a save
+      of 29 November 1450, the day the peace was signed.
+
+
+      *Before the landing.* By February 1450 the army had grown from 9 regiments to 13, and the fleet had 95
+      ships, with the hulks doubled to 20 by November. The treasury was 2,990 in February, up from 175 in
+      August 1449. As with the jump in 1447, the saves don't show where the money came from.
+
+
+      *The peace.* The war is gone from the November save. The terms are read from the map and the treaties:
+
+      - All 22 towns of Sicily are now al-Andalus's.
+
+      - Seven of Arborea's towns in northern Sardinia went to Tunis. Arborea keeps Oristano.
+
+      - Corsica is back with Genoa's vassal. Genoa's truce dates from 15 July 1450, so the entry puts its
+      separate peace then.
+
+      - Athens and Negroponte became vassals of al-Andalus on 29 November 1450.
+
+      - Negroponte's ruler is now the Emperor himself, with Ismāʿīl as its heir. In the February save Sicily's
+      king Peter, of the house of Barcelona, ruled both Sicily and Negroponte.
+
+      - Athens's duke Peter (born 1399) is also of the house of Barcelona. He commanded the Athenian ship that
+      attacked Yūsuf off Terracina on 5 January 1448.
+
+      - Naples has held a casus belli on al-Andalus since 29 November 1450.
+
+      - The truce with Sicily and the Pope runs to 1465.
+
+      - Palermo comes with a grand palace, a cathedral, a castle and a canal lock. The entry calls the palace
+      the Norman kings', which is real history.
+
+
+      *The battles.* The war's later battles are lost from the save once the war ends. Palermo and Sciacca
+      come from Trent's battle screens; Catania (13 December 1449) and the Gulf of Oristano (14 November 1449)
+      come from the February autosave. Neither screen names our commander. The Sicilian commander's portrait
+      is crowned, and King Peter commanded at Palermo in 1448 and 1449, so the entries have the king lead his
+      army.
+
+
+      *The Mamlūk war.* It goes on. The save adds 23 battles to it between August 1449 and October 1450, with
+      fortunes swinging both ways. Two of them, al-Khanbarah and al-Ukhaydir, couldn't be placed on the map.
+
+
+      **From Trent's account.** The siege of Catania (208 days, ending 28 September 1450). The change of war
+      aims ("Andalusi blood, Andalusi steel, Andalusi sweat"), with Tunis understanding. Athens's offer of
+      fealty for autonomy. The plan to raise a Sicilian ṭāʾifa once the Mamlūk war ends.
+
+
+      **Invented colour.**
+
+
+      *Catania entry:*
+
+      - The soldiers' and officers' view of Corsica.
+
+      - The Emperor's letter to the sultan, and Ismāʿīl carrying it.
+
+      - The archers breaking under the horse.
+
+      - Prisoners taking the Emperor's pay. The screen shows men taken in, but not why.
+
+      - The Night of Power and the preachers.
+
+      - Aḥmad's remark.
+
+
+      *Peace entry:*
+
+      - The flight toward Trapani.
+
+      - The Pope's indifference.
+
+      - The Catalan duchy's history. The Catalan Company is real history.
+
+      - Yūsuf speaking for the duke.
+
+      - The Emperor's delight in Negroponte and his map.
+
+      - The dīwān filing Naples's claim.
+
+      - Aḥmad counselling the delay of the ṭāʾifa.

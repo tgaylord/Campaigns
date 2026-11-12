@@ -1,0 +1,115 @@
+date: '1444-08-27'
+title: Ireland's Embargo
+source:
+  save: SP_ADU_1444_08_27 (compressed)
+  game: 1.4.7
+summary: >-
+  Three months after Ireland, at the Angevins' direction, embargoed al-Andalus (27 May 1444), beside Genoa's
+  embargo of 1440 and the Angevins' closed markets. The realm's peace is 18.7, legitimacy 100, the estates
+  near their held levels (umarāʾ 35, ʿulamāʾ 50, burghers 55, commoners 45, dhimmī 50). Land against sea +52.
+  Treasury 2,484. Estate power estimated from the reading of 16 November 1428.
+realm:
+  towns: 222
+  souls: 3358374
+  treasury: 2484
+  income: 408.6
+  expenses: 356.9
+  stability: 18.7
+  prestige: 88
+  regiments: 9
+  ships: 63
+  manpower: 25315
+court:
+  ruler: muhammad-ibn-ismail-ibn-saad
+  heir: ismail-ibn-muhammad-ibn-ismail
+  capital: ishbiliyya
+  council:
+    - who: ismail-ibn-muhammad-ibn-ismail
+      seat: Assimilating the new lands
+    - who: ahmad-ibn-muhammad-ibn-ismail
+      seat: Changing the societal values
+    - who: umm-al-fath-bint-muhammad
+      seat: Strengthening the government
+    - who: shams-bint-muhammad
+      seat: Promoting Andalusī culture
+    - who: jadila-bint-saad-ibn-faraj
+      seat: Developing the provinces
+standing:
+  allies:
+    - Mamluks
+    - Morocco
+    - Tunis
+  subjects:
+    - Aragon (taifa)
+    - Taifa of Cuenca (taifa)
+    - Kingdom of Portugal (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+    - Taifa of Galicia (taifa)
+    - Cape Verde (colonial nation)
+  estates:
+    - name: Crown
+      power: 28.04
+    - name: Nobility
+      power: 19.02
+      mood: 35
+    - name: ʿUlamāʾ
+      power: 13.65
+      mood: 50
+    - name: Burghers
+      power: 24.31
+      mood: 55
+    - name: Commoners
+      power: 3.24
+      mood: 45
+    - name: Dhimmī
+      power: 11.74
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 1039973
+    Catalan: 755648
+    Castilian: 579541
+    Portuguese: 529174
+    Sephardi: 214432
+    Leonese: 173886
+  faiths:
+    Sunni: 2018884
+    Catholic: 1117220
+    Jewish: 194260
+    Guanche_religion: 26802
+    Bori_Religion: 525
+map:
+  ours:
+    - GRA
+  subjects:
+    - ARA
+    - ABA60
+    - POR
+    - ABA42
+    - ABA49
+    - ABA55
+    - GLC
+    - AAA52
+  allies:
+    - MAM
+    - MOR
+    - TUN
+beats:
+  - id: 1444-05-27-the-irish-embargo
+    'on': '1444-05-27'
+    kind: world
+    what: >-
+      The embargoes against al-Andalus spread: at the Angevins' direction, Ireland embargoes the merchants of
+      al-Andalus
+    threads:
+      - europe
+    from:
+      - save
+      - told
+    cite: Trent's account (5 June 1444); the save of 27 August 1444 dates the embargo 27 May
+    detail:
+      by: Ireland
+      directedBy: the Angevin Empire
+      trend: continues the embargoes begun by Genoa in 1440

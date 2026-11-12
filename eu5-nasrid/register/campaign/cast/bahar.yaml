@@ -1,0 +1,11 @@
+name: Bahār
+arabic: بهار
+sex: f
+born: '1301-01-01'
+died: '1359-03-30'
+roles:
+  - mother of Yūsuf I
+note: ' Died 1359-03-30 (save of 24 October 1414).'
+game:
+  id: 3533
+  name: Spring

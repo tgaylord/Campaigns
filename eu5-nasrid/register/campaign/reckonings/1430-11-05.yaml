@@ -1,0 +1,100 @@
+date: '1430-11-05'
+title: The Ṭāʾifas of the North
+source:
+  save: SP_ADU_1430_11_05 (compressed)
+  game: 1.4.7
+summary: >-
+  Two days after the Peace of Ṣafar the conquered north is settled. Old Asturias goes to Liyūn (now 35 towns),
+  Cantabria to Burghush (38) and the Basque coast to Banbalūna (28), and the other 23 towns of Galicia, from
+  Santiago, are made a ṭāʾifa again under Diego Sotomaior, a Galician Muslim. The crown keeps 196 towns and
+  2.59 million people; eight ṭāʾifas hold 236 towns and nearly 4 million more. The whole peninsula belongs to
+  the Emperor and his ṭāʾifas, and the courts of the world rank the empire third, behind al-Ṣīn and the
+  Angevins. Estates estimated from the reading of 16 November 1428. Treasury 753.
+realm:
+  towns: 196
+  souls: 2592004
+  treasury: 753
+  income: 271.5
+  expenses: 289.2
+  stability: 0.6
+  prestige: 64
+  regiments: 9
+  ships: 50
+  manpower: 17915
+court:
+  ruler: muhammad-ibn-ismail-ibn-saad
+  heir: ismail-ibn-muhammad-ibn-ismail
+  capital: ishbiliyya
+  council:
+    - who: ismail-ibn-muhammad-ibn-ismail
+      seat: Promoting Andalusī culture
+    - who: ahmad-ibn-muhammad-ibn-ismail
+      seat: Integrating the new lands
+    - who: umm-al-fath-bint-muhammad
+      seat: Integrating the new lands
+    - who: yusuf-ibn-saad
+      seat: Promoting Andalusī culture
+    - who: jadila-bint-saad-ibn-faraj
+      seat: Developing the provinces
+standing:
+  allies:
+    - Mamluks
+    - Morocco
+    - Tunis
+  subjects:
+    - Catalonia (taifa)
+    - Aragon (taifa)
+    - Taifa of Cuenca (taifa)
+    - Kingdom of Portugal (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+    - Taifa of Galicia (taifa)
+  estates:
+    - name: Crown
+      power: 29.17
+    - name: Nobility
+      power: 17.42
+      mood: 42
+    - name: ʿUlamāʾ
+      power: 12.59
+      mood: 50
+    - name: Burghers
+      power: 21.86
+      mood: 50
+    - name: Commoners
+      power: 2.88
+      mood: 50
+    - name: Dhimmī
+      power: 16.09
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 816686
+    Castilian: 708109
+    Portuguese: 489463
+    Sephardi: 187817
+    Catalan: 178502
+    Leonese: 164269
+  faiths:
+    Sunni: 1246986
+    Catholic: 1146759
+    Jewish: 179487
+    Guanche_religion: 15713
+    Rogo_miki_religion: 821
+map:
+  ours:
+    - GRA
+  subjects:
+    - CAT
+    - ARA
+    - ABA60
+    - POR
+    - ABA42
+    - ABA49
+    - ABA55
+    - GLC
+  allies:
+    - MAM
+    - MOR
+    - TUN

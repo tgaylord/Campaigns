@@ -1,0 +1,107 @@
+date: '1367-08-07'
+title: The quiet year
+source:
+  save: SP_GRA_1367_08_07 (compressed)
+  game: 1.4.5
+summary: >-
+  A year of peace. The Mamlūk alliance was renewed on 30 January 1367 and Castile is courting Granada's
+  favour. A week ago Fās took up its claim to Granada's submission again. The treasury has run down to 87
+  while the building goes on. Shares of power are estimated from the 1 June 1349 reading.
+realm:
+  towns: 49
+  souls: 660569
+  treasury: 87
+  income: 67.5
+  expenses: 67.1
+  stability: 32.5
+  prestige: 38
+  regiments: 5
+  ships: 5
+  manpower: 2550
+court:
+  ruler: saad-ibn-yusuf
+  heir: ismail-ibn-saad
+  capital: gharnata
+  council:
+    - who: dua-marinid
+      seat: Promoting Andalusī culture
+    - who: maryam-bint-ismail
+      seat: Integrating the new lands
+standing:
+  allies:
+    - Mamluks
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+    - Taifa of the Algarve (taifa)
+  estates:
+    - name: Crown
+      power: 35
+    - name: Nobility
+      power: 25.7
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 6.18
+      mood: 50
+    - name: Burghers
+      power: 9.9
+      mood: 50
+    - name: Commoners
+      power: 4.17
+      mood: 51
+    - name: Dhimmī
+      power: 19.06
+      mood: 56
+peoples:
+  cultures:
+    Andalusi: 361715
+    Castilian: 252163
+    Sephardi: 38432
+    Mustaarabi: 3759
+    Sardinian: 1934
+    Ligurian: 591
+  faiths:
+    Sunni: 310384
+    Catholic: 307393
+    Jewish: 42045
+    Bori_Religion: 540
+    Nyama: 208
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+    - ALV
+  allies:
+    - MAM
+beats:
+  - id: 1367-01-30-mamluk-alliance
+    'on': '1367-01-30'
+    kind: world
+    what: The alliance with the Mamlūks, lost in the autumn of 1366, is renewed. Cairo stands with Gharnāṭa again
+    who:
+      - saad-ibn-yusuf
+      - aiman-mamluk
+    from:
+      - save
+    cite: save of 24 October 1368
+    detail:
+      with: MAM
+      alliance: true
+      since: '1367-01-30'
+      lapsed: between 2 October and 6 November 1366, most likely with the console fix
+  - id: 1367-08-01-moroccan-claim
+    'on': '1367-08-01'
+    kind: world
+    what: >-
+      Fās takes up its old claim again: the casus belli to demand Andalusī submission, the same one it used in
+      1360, is Morocco's against Granada until 1382
+    from:
+      - save
+    cite: autosave of 1 July 1368
+    detail:
+      cb: cb_demand_andalusi_submission
+      holder: MOR
+      target: GRA
+      expires: '1382-08-01'

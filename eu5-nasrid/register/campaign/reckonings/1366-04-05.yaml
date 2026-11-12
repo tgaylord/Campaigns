@@ -1,0 +1,421 @@
+date: '1366-04-05'
+title: The Peace of Independence
+source:
+  save: SP_GRA_1366_04_05 (after the peace; compressed)
+  game: 1.4.5
+summary: >-
+  The War of Independence is won. Granada has declared its independence. Castile gave up the land of Niebla
+  and Huelva and pays reparations, as Portugal and Aragon do. The realm holds 62 towns and 732,000 people, and
+  with its ṭāʾifas 61 of the Strait's 72. The treasury holds 1,131. The game put Granada back under Castile as
+  a tributary after the peace, which Trent will remove with the console, so the chronicle and this snapshot
+  treat Granada as independent. Shares of power are estimated from the 1 June 1349 reading.
+realm:
+  towns: 62
+  souls: 731723
+  treasury: 1131
+  income: 53.1
+  expenses: 88.3
+  stability: 25.8
+  prestige: 42
+  regiments: 15
+  ships: 5
+  manpower: 2212
+court:
+  ruler: saad-ibn-yusuf
+  heir: ismail-ibn-yusuf
+  capital: gharnata
+  council:
+    - who: dua-marinid
+      seat: Promoting Andalusī culture
+    - who: khalid-ibn-yahya
+      seat: Promoting Andalusī culture
+standing:
+  allies:
+    - Mamluks
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+  estates:
+    - name: Crown
+      power: 33.81
+    - name: Nobility
+      power: 23.69
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 6.37
+      mood: 50
+    - name: Burghers
+      power: 9.87
+      mood: 50
+    - name: Commoners
+      power: 4.32
+      mood: 50
+    - name: Dhimmī
+      power: 21.94
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 358646
+    Castilian: 258308
+    Portuguese: 72959
+    Sephardi: 33760
+    Mustaarabi: 3778
+    Sardinian: 1691
+  faiths:
+    Catholic: 388262
+    Sunni: 306032
+    Jewish: 36679
+    Bori_Religion: 541
+    Nyama: 208
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+  allies:
+    - MAM
+beats:
+  - id: 1365-07-13-peace-cilicia
+    'on': '1365-07-13'
+    kind: peace
+    what: 'The Mamlūk war on Cilicia ends in the Mamlūks'' favour: twelve Cilician towns pass to Cairo'
+    threads:
+      - mamluk-cilician-war
+    from:
+      - save
+    cite: save of 5 April 1366 (the towns' change of owner)
+    detail:
+      with: CIL
+      leader: MAM
+      locationsToMAM: 12
+  - id: 1365-07-14-battle-canete
+    'on': '1365-07-14'
+    kind: battle
+    what: >-
+      At Cañete, 1,600 Aragonese attack Murād's army of 5,700 and are thrown back: 1,260 of theirs lost for
+      190 of ours
+    who:
+      - murad
+    threads:
+      - war-of-independence
+    from:
+      - save
+    cite: save of 5 April 1366 (before the peace)
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 5692
+      oursTotal: 5692
+      oursLost: 186
+      theirs:
+        Aragon: 1571
+      theirsTotal: 1571
+      theirsLost: 1257
+      location: Cañete
+      side: Granada defending
+  - id: 1365-08-31-moroccan-peace-castile
+    'on': '1365-08-31'
+    kind: land
+    what: >-
+      The Marīnid war on Castile ends. Morocco takes the north shore of the Strait from Castile: eleven towns
+      from Ronda and Marbella to Cádiz, Jerez, Gibraltar, Tarifa and Algeciras. The Moors of Fās now stand on
+      this side of the water
+    threads:
+      - marinid-submission-war
+    from:
+      - save
+    cite: save of 5 April 1366 (the towns' change of owner)
+    detail:
+      from: CAS
+      to: MOR
+      locations:
+        - Ronda
+        - Marbella
+        - Cádiz
+        - Gibraltar
+        - Tarifa
+        - Algeciras
+        - Jerez de la Frontera
+        - Niebla
+        - Sanlúcar
+        - Medina Sidonia
+        - Arcos de la Frontera
+      straitTowns: 11
+  - id: 1365-09-02-peace-aragon
+    'on': '1365-09-02'
+    kind: peace
+    what: Aragon makes a separate peace and leaves the war, agreeing to pay Granada reparations for ten years
+    who:
+      - saad-ibn-yusuf
+    threads:
+      - war-of-independence
+    from:
+      - save
+    cite: save of 5 April 1366 (before the peace)
+    detail:
+      with: ARA
+      reparations:
+        from: '1365-09-02'
+        to: '1375-09-02'
+      ceded: []
+  - id: 1366-01-06-battle-san-clemente
+    'on': '1366-01-06'
+    kind: battle
+    what: >-
+      At San Clemente, Murād's army of 6,250 destroys the last Castilian field army, 950 men under Ibn
+      al-Khaṭīb, the renegade vizier. 840 of them are killed and 105 taken, for 31 of ours
+    who:
+      - murad
+      - ibn-al-khatib
+    threads:
+      - war-of-independence
+    from:
+      - save
+    cite: save of 5 April 1366 (before the peace)
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 6250
+      oursTotal: 6250
+      oursLost: 31
+      theirs:
+        Castile: 947
+      theirsTotal: 947
+      theirsLost: 947
+      theirsTaken: 105
+      location: San Clemente
+      commanderTheirs: Ibn al-Khaṭīb (Frederick of Castile)
+  - id: 1366-01-10-marinid-sevilla
+    'on': '1366-01-10'
+    kind: land
+    what: >-
+      Morocco makes nine of its new towns on the Strait into a fiefdom under the old rebel name, the 'Kingdom
+      of Sevilla', though Ishbīliya itself is Granada's. Fās keeps Ronda and Marbella for itself
+    from:
+      - save
+    cite: save of 5 April 1366
+    detail:
+      from: MOR
+      to: SEV
+      overlord: MOR
+      type: fiefdom
+      locations:
+        - Cádiz
+        - Gibraltar
+        - Tarifa
+        - Algeciras
+        - Jerez de la Frontera
+        - Niebla
+        - Sanlúcar
+        - Medina Sidonia
+        - Arcos de la Frontera
+  - id: 1366-02-06-death-qamar
+    'on': '1366-02-06'
+    kind: death
+    what: >-
+      Qamar, mother of Ismāʿīl ibn Ismāʿīl and of Khālid ibn Yaḥyā, dies of a sudden illness at about
+      fifty-eight
+    who:
+      - qamar
+    from:
+      - save
+    cite: save of 24 October 1368
+    detail:
+      cause: sudden_illness
+  - id: 1366-03-08-birth-ismail-ibn-saad
+    'on': '1366-03-08'
+    kind: birth
+    what: >-
+      Duʿāʾ bears Sultan Saʿd a son, Ismāʿīl, a month before the peace. He becomes heir to the throne in place
+      of his uncle Ismāʿīl ibn Yūsuf
+    who:
+      - ismail-ibn-saad
+      - saad-ibn-yusuf
+      - dua-marinid
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 6 November 1366
+    detail:
+      heir: true
+  - id: 1366-04-05-peace-castile
+    'on': '1366-04-05'
+    kind: peace
+    what: >-
+      Peace with Castile. Granada declares its independence, and Castile gives up the land of Niebla and
+      Huelva, six towns from Ayamonte, where Yūsuf died, to Aracena. It also pays a sum into the treasury and
+      owes reparations for ten years. The War of Independence is over
+    who:
+      - saad-ibn-yusuf
+    threads:
+      - war-of-independence
+    from:
+      - save
+      - told
+    cite: save of 5 April 1366 (after the peace); Trent's account
+    detail:
+      with: CAS
+      independence: true
+      ceded:
+        - Ayamonte
+        - Huelva
+        - Aroche
+        - Aracena
+        - Puebla de Guzmán
+        - Almonaster la Real
+      population: 27523
+      gold: 787
+      reparations:
+        from: '1366-04-05'
+        to: '1376-04-05'
+      gameGlitch: >-
+        The game put Granada back under Castile as a tributary after the peace; Trent will remove that with
+        the console
+  - id: 1366-04-05-state
+    'on': '1366-04-05'
+    kind: realm
+    what: >-
+      At the peace the realm holds 62 towns and 732,000 people, 61 of the 72 towns of the Strait's three lands
+      with its ṭāʾifas. The treasury stands at 1,131, with Portugal, Aragon and Castile all paying reparations
+    who:
+      - saad-ibn-yusuf
+    threads:
+      - estates
+    from:
+      - save
+    cite: save of 5 April 1366 (after the peace)
+    detail:
+      locations: 62
+      population: 731723
+      straitHeld: 61
+      treasury: 1131
+      income: 53.1
+      expenses: 88.3
+  - id: 1366-04-05-the-south-burned
+    'on': '1366-04-05'
+    kind: note
+    what: >-
+      The reckoning of the burned south. Between March 1359 and the peace, the lands the armies crossed lost
+      203,000 people and 125 of Iberia's 424 towns were looted. Extremadura and the lands of Ṭulayṭula each
+      lost nearly a fifth of their people, and the city of Ṭulayṭula a third. The north, which no army
+      reached, grew by 4%
+    threads:
+      - war-of-independence
+    from:
+      - save
+    cite: saves of 15 March 1359 and 5 April 1366 (tools/devastation.py); Trent asked for the reckoning
+    detail:
+      before: '1359-03-15'
+      lost: 202983
+      looted: 125
+      towns: 424
+      worst:
+        extremadura_area: -18.9
+        toledo_area: -18.8
+        granada_area: -6.6
+      spared: 3.7
+      reading: data/devastation/war-of-independence.json
+  - id: 1366-04-qurtuba-andalusi
+    'on': '1366-04-05'
+    kind: note
+    what: >-
+      Qurṭuba becomes an Andalusī city again. In 1349 it held 34,000 Castilians and 6,000 Andalusīs. By the
+      peace the Andalusīs are the larger people, though the city is still mostly Christian
+    where:
+      - qurtuba
+    from:
+      - save
+    cite: save of 5 April 1366 (between the saves of 1 July 1365 and 5 April 1366)
+    detail:
+      location: cordoba
+      culture: andalusi
+tellings:
+  - id: 0767-07-23-the-peace-of-independence
+    'on': '1366-04-05'
+    title: Of the Conqueror, the Renegade at San Clemente, and the Peace of Independence
+    verse: '48:1'
+    who:
+      - saad-ibn-yusuf
+      - murad
+      - ibn-al-khatib
+      - aiman-mamluk
+      - dua-marinid
+      - ismail-ibn-saad
+      - umm-al-fath-bint-saad
+      - rodrigo-of-silves
+      - sayyida-of-fezzan
+    where:
+      - balansiyya
+      - tulaytula
+      - gharnata
+      - walba
+      - ayamunt
+      - ukshunuba
+    covers:
+      - 1364-12-13-birth-umm-al-fath-bint-saad
+      - 1365-03-saad-conqueror
+      - 1365-07-14-battle-canete
+      - 1365-09-02-peace-aragon
+      - 1366-01-06-battle-san-clemente
+      - 1366-03-08-birth-ismail-ibn-saad
+      - 1366-04-05-peace-castile
+      - 1366-04-13-taifa-al-gharb
+      - 1366-04-05-the-south-burned
+    text: >
+      In Rabīʿ al-Awwal of the year 766 [Aiman](person:aiman-mamluk) gave the sultan his first child, a
+      daughter. He named her [Umm al-Fatḥ](person:umm-al-fath-bint-saad), mother of victory, which was either
+      a prayer or a boast. Aiman, a daughter of the Mamlūk house, is said to have answered that in Cairo it
+      would be read as both. By spring the chancellor was recording a new title in the registers of the dīwān.
+      The court had stopped calling [Saʿd](person:saad-ibn-yusuf) the prodigy. It called him *al-Fātiḥ*, the
+      Conqueror. He was seventeen.
+
+
+      The war in the east still had to be finished. On the twenty-fourth of Shawwāl, at Cañete, where the
+      Portuguese had broken the men of [Balansiyya](place:balansiyya) the year before, sixteen hundred
+      Aragonese attacked [Murād](person:murad)'s army of five thousand seven hundred. Twelve hundred and sixty
+      of them were left on the field, against a hundred and ninety of ours. Arghūn had joined the war for an
+      ally's sake and gained nothing from it. On the fifteenth of Dhū al-Ḥijja it made its own peace and
+      agreed to pay reparations for ten years.
+
+
+      That left Qashtāla, alone, as [Gharnāṭa](place:gharnata) had been alone so often. On the twenty-second
+      of Rabīʿ al-Thānī 767 Murād found its last army in the field at San Clemente, in La Mancha. There were
+      nine hundred and fifty men, and at their head was a man the court knew well. It was [Ibn
+      al-Khaṭīb](person:ibn-al-khatib), the vizier who had gone over to the Cross a quarter of a century
+      before and served Qashtāla ever since as Frederick, its admiral. Murād had six thousand two hundred and
+      fifty men. Eight hundred and forty Castilians died, a hundred and five were taken, and thirty-one
+      Granadans fell. The renegade escaped, as he always did. The army pushed on into La Mancha and up the
+      road to [Ṭulayṭula](place:tulaytula), the old city of the Goths, and held it when the envoys came.
+
+
+      A month before the peace, [Duʿāʾ](person:dua-marinid) gave the sultan a son,
+      [Ismāʿīl](person:ismail-ibn-saad), and the realm had an heir of the sultan's own blood. The ʿulamāʾ
+      remembered whose widow his mother was, and prayed for the child all the same. From that month the palace
+      had two parties. Aiman had the sultan's first child and Egypt behind her: the Mamlūk sultan's alliance,
+      his money and his soldiers. Duʿāʾ had the heir, the dīwān, and the learning of the Maghrib that half the
+      scholars of the realm now copied. Sayyida, the matriarch, belonged to neither and was courted by both.
+      The sultan had just won his kingdom its freedom. He found that it was now worth fighting over, and that
+      the fight had begun in his own house.
+
+
+      On the twenty-third of Rajab 767 the peace was sealed, and the tyrant of Qashtāla let Gharnāṭa go. The
+      house of Naṣr, which had paid tribute to the Castilian crown for longer than anyone living could
+      remember, declared itself free and subject to no one but Allāh. Qashtāla gave up the country of
+      [Walba](place:walba): six towns between the Guadalquivir and the Guadiana, from the coast to the hills
+      of Aracena. Among them was [Ayamūnt](place:ayamunt), where al-Ḥājj Yūsuf had died on the march, so the
+      son brought the place of his father's death into the realm. Qashtāla paid a sum into the treasury and
+      owed reparations for ten years. Ṭulayṭula was given back, burned and half emptied, its people fewer by a
+      third than they had been seven years before.
+
+
+      Eight days later the sultan kept his word to the Portuguese south. On the first of Shaʿbān the thirteen
+      towns of al-Gharb were made a ṭāʾifa, with its seat at [Ukshūnuba](place:ukshunuba), under [Rodrigo of
+      Silves](person:rodrigo-of-silves). He was a Portuguese lord who had taken the shahāda and a soldier of
+      real ability. Gharnāṭa now had three ṭāʾifas, and no overlord at all.
+
+
+      *Indeed, We have given you a clear conquest.*

@@ -1,0 +1,546 @@
+date: '1447-10-05'
+title: The Call of Tunis
+source:
+  save: SP_ADU_1447_10_05 (compressed)
+  game: 1.4.7
+summary: >-
+  From a save, four months into the Tunisian war for Palermo, which al-Andalus and all its ṭāʾifas joined on
+  13 June. The allies have lost at Ozieri in Sardinia (6 August), off western Corsica (9 September) and in the
+  Gulf of Termini, where the fleets of Tunis, Tripoli and Gabès lost nineteen of twenty-eight ships (11
+  September); on the day of the save Aḥmad of Banbalūna's 385 men were cut down at Grasse in Provence.
+  Al-Andalus's own armies and fleets haven't yet fought. On 1 August the Emperor told the envoys of Europe 'We
+  have arrived': the benefits of the Restoration of al-Andalus stay while the realm holds 25 European
+  dominance, and the claim to the Umayyad caliphate's borders is open. The treasury, 2,680 in March, is down
+  to 216, gone on six bridges in the country of the Tagus and Guadiana (Alcántara, Medellín, Villanueva de la
+  Serena, Valencia de Alcántara, Brozas, Jaraicejo), gunsmiths at Jaén, Santarém and Badajoz, tanneries at
+  Córdoba and Lleida, glassworks at Seville, a distillery at Jerez, a lumber mill at Écija, a winery at
+  Castellón and a cannon foundry at Girona. The Emperor's wife Isabel de Montsoriu died on 19 August. New at
+  court since February: a scholar of Delhi, a scholar of Iraq and a lord of the Tandroy of Madagascar.
+  Stability has recovered to 10.7; al-Andalus is still the world's third great power. Estate power estimated
+  from the reading of 16 November 1428.
+realm:
+  towns: 222
+  souls: 3407226
+  treasury: 216
+  income: 424.6
+  expenses: 378.8
+  stability: 10.7
+  prestige: 89
+  regiments: 9
+  ships: 63
+  manpower: 27413
+court:
+  ruler: muhammad-ibn-ismail-ibn-saad
+  heir: ismail-ibn-muhammad-ibn-ismail
+  capital: ishbiliyya
+  council:
+    - who: ismail-ibn-muhammad-ibn-ismail
+      seat: Assimilating the new lands
+    - who: ahmad-ibn-muhammad-ibn-ismail
+      seat: Changing the societal values
+    - who: umm-al-fath-bint-muhammad
+      seat: Strengthening the government
+    - who: shams-bint-muhammad
+      seat: Promoting Andalusī culture
+    - who: jadila-bint-saad-ibn-faraj
+      seat: Developing the provinces
+standing:
+  wars:
+    - tunisian-war-for-palermo
+  allies:
+    - Mamluks
+    - Morocco
+    - Tunis
+  subjects:
+    - Aragon (taifa)
+    - Taifa of Cuenca (taifa)
+    - Kingdom of Portugal (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+    - Taifa of Galicia (taifa)
+    - Cape Verde (colonial nation)
+  estates:
+    - name: Crown
+      power: 28.7
+    - name: Nobility
+      power: 18.7
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 13.39
+      mood: 50
+    - name: Burghers
+      power: 24.66
+      mood: 54
+    - name: Commoners
+      power: 3.17
+      mood: 50
+    - name: Dhimmī
+      power: 11.37
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 1097517
+    Catalan: 765059
+    Castilian: 543848
+    Portuguese: 537905
+    Sephardi: 220213
+    Leonese: 176422
+  faiths:
+    Sunni: 2061423
+    Catholic: 1119783
+    Jewish: 197425
+    Guanche_religion: 27297
+    Bori_Religion: 584
+map:
+  ours:
+    - GRA
+  subjects:
+    - ARA
+    - ABA60
+    - POR
+    - ABA42
+    - ABA49
+    - ABA55
+    - GLC
+    - AAA52
+  allies:
+    - MAM
+    - MOR
+    - TUN
+beats:
+  - id: 1447-06-13-the-call-of-tunis
+    'on': '1447-06-13'
+    kind: war
+    what: >-
+      Tunis goes to war with Sicily for Palermo and calls the Emperor to arms. Al-Andalus accepts, and its
+      seven ṭāʾifas come in with it the same day
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+    threads:
+      - tunisian-war-for-palermo
+    from:
+      - save
+      - seen
+      - told
+    cite: Trent's screenshot and account, 13 June 1447; save of 5 October 1447
+    detail:
+      call: >-
+        Tunis calls upon us to join them in their 2nd Tunis–Sicily War against Sicily, Athens, Negroponte,
+        Genoa, Arborea, Corsica, Cuneo, Gazaria, Dignois, the Papal States and Arezzo. This is a war that they
+        have started (the game's text, as Trent's screenshot shows it)
+      choice: 'accept (Trent: ''We are accepting'')'
+      target: the province of Palermo
+      alliesOfTunis: Tripoli, Gabès, Touggourt, Gallura, Annaba, Constantine
+  - id: 1447-06-29-birth-of-fatima-bint-saad
+    'on': '1447-06-29'
+    kind: birth
+    what: >-
+      A daughter, Fāṭima, is born to Saʿd son of Aḥmad of Banbalūna and Muʾmina daughter of the prince Aḥmad:
+      the Emperor's great-granddaughter, joining the crown's line and the ṭāʾifa's again
+    who:
+      - ahmad-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-yusuf-ibn-ismail
+      - muhammad-ibn-ismail-ibn-saad
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 5 October 1447
+    detail:
+      father: Saʿd ibn Aḥmad (born 27 July 1419), son of Aḥmad ibn Yūsuf, lord of the Ṭāʾifa of Banbalūna
+      mother: Muʾmina bint Aḥmad (born 14 June 1423), daughter of the prince Aḥmad by ʿĀʾisha bint Saʿd
+      siblings: Muʾmina's third child, Saʿd's sixth
+  - id: 1447-08-01-presence-in-europe
+    'on': '1447-08-01'
+    kind: world
+    what: >-
+      The envoys of the Christian princes come to Ishbīliya with gifts and careful compliments. The Emperor
+      answers 'We have arrived': al-Andalus keeps its seat at Europe's table, and opens a claim to the borders
+      of the Umayyad caliphate
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+    where:
+      - ishbiliyya
+    threads:
+      - europe
+      - umayyad-claim
+    from:
+      - seen
+    cite: Trent's screenshots, 1 August and October 1447
+    detail:
+      event: Presence in Europe
+      text: >-
+        the Christian princes had written al-Andalus off as a chapter concluded; now their envoys come with
+        gifts and careful compliments, curious what the Emperor intends. 'We hold no mastery yet, only a seat
+        regained at a table we once headed... this time we do not mean to leave it' (the game's text)
+      precedent: ʿAbd al-Raḥmān II and the embassy of Theophilos, 840 (the game's historical note)
+      choice: We have arrived
+      effects: >-
+        while al-Andalus keeps 25 European dominance for the rest of the Golden Century, it keeps the benefits
+        of the Restoration of al-Andalus; unlocks the casus belli 'Restore the Umayyad Caliphate Borders' and
+        the ṭāʾifa subject type
+      claim: >-
+        the game's 'Umayyad Caliphate' term: 2,816 locations in 17 areas, among them Sūs, al-Maghrib al-Aqṣā,
+        the Atlas high plateau and the rest of the Maghrib, and five regions: Iberia, the Fertile Crescent,
+        Egypt, Arabia and Persia (Trent's screenshot)
+      realm:
+        treasury: 236.66 (+43.69 a month)
+        stability: 10
+        population: 3.416 million
+        legitimacy: 100
+        prestige: 88
+  - id: 1447-08-06-battle-ozieri
+    'on': '1447-08-06'
+    kind: battle
+    what: >-
+      At Ozieri in Sardinia Genoa's vassal Arborea, 4,290 men, beats 1,655 of Tunis's vassal Gallura, which
+      loses half its army
+    minor: true
+    threads:
+      - tunisian-war-for-palermo
+    from:
+      - save
+    cite: save of 5 October 1447
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Gallura: 1655
+      oursTotal: 1655
+      oursLost: 842
+      theirs:
+        Arborea: 4290
+      theirsTotal: 4290
+      theirsLost: 424
+      location: Ozieri
+      side: enemy attacking
+      commanders:
+        ours: Kubad#33570617
+        theirs: Benedict#16832034
+  - id: 1447-08-19-death-of-isabel-de-montsoriu
+    'on': '1447-08-19'
+    kind: death
+    what: >-
+      Isabel de Montsoriu, wife of the Emperor Muḥammad for more than forty years and mother of the prince
+      Aḥmad, dies of old age on her sixty-fifth birthday
+    who:
+      - isabel-de-montsoriu
+      - muhammad-ibn-ismail-ibn-saad
+      - ahmad-ibn-muhammad-ibn-ismail
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 5 October 1447
+    detail:
+      born: '1382-08-19'
+      cause: old age
+      children: Aḥmad (1403), ʿĀʾisha (1405) and two daughters
+  - id: 1447-09-07-the-hungarian-succession
+    'on': '1447-09-07'
+    kind: world
+    what: >-
+      Bohemia goes to war with Hungary to claim its throne, with Poland and the princes of the Empire behind
+      it; Naples, Croatia and Albania stand with Hungary. By August 1449 Bohemia holds 94 Hungarian towns and
+      Poland 14
+    from:
+      - save
+      - told
+    cite: Trent's account (12 November 2026); saves of 1 February 1448 to 2 August 1449
+    detail:
+      war: a war of succession (casus belli 'claim throne'), begun 7 September 1447
+      attackers: Bohemia, Poland, Brandenburg, Saxony, Moldavia and some thirty smaller princes
+      defenders: Hungary, Naples, Croatia, Albania, Achaea and others
+      occupied: 94 Hungarian locations by Bohemia, 14 by Poland, 1 by Saxony (save of 2 August 1449)
+  - id: 1447-09-09-battle-corsica-west-coast
+    'on': '1447-09-09'
+    kind: battle
+    what: >-
+      Off the west coast of Corsica two Sicilian ships fall on three of the ṭāʾifa of al-Burtughāl, led by its
+      king Abū al-Ḥasan ʿAlī, and drive them off without loss
+    who:
+      - abu-al-hasan-ali-of-burtughal
+    threads:
+      - tunisian-war-for-palermo
+    from:
+      - save
+    cite: save of 5 October 1447
+    detail:
+      result: allied defeat
+      naval: true
+      ours:
+        Portugal: 3
+      oursTotal: 3
+      oursLost: 0.4
+      theirs:
+        Sicily: 2
+      theirsTotal: 2
+      theirsLost: 0
+      location: Corsica west coast
+      side: enemy attacking
+      units: ships (losses in ship-equivalents)
+      commanders:
+        ours: Abū al-Ḥasan ʿAlī, king of the Ṭāʾifa of al-Burtughāl
+        theirs: Demetrius#16842749
+  - id: 1447-09-11-battle-gulf-termini
+    'on': '1447-09-11'
+    kind: battle
+    what: >-
+      In the Gulf of Termini, off Sicily, six Genoese ships attack the combined fleet of Tunis, Tripoli and
+      Gabès, twenty-eight ships, which loses nineteen of them for one of Genoa's
+    minor: true
+    threads:
+      - tunisian-war-for-palermo
+    from:
+      - save
+    cite: save of 5 October 1447
+    detail:
+      result: >-
+        allied disaster (the save records the Genoese attack as not carrying the day, but the losses are the
+        allies')
+      naval: true
+      ours:
+        Tunis: 9
+        Tripoli: 16
+        Gabès: 3
+      oursTotal: 28
+      oursLost: 19
+      theirs:
+        Genoa: 6
+      theirsTotal: 6
+      theirsLost: 1
+      location: Gulf of Termini
+      side: enemy attacking
+      units: ships
+      commanders:
+        ours: ʿAbd al-Wāḥid#93093
+        theirs: Raymond#16822192
+  - id: 1447-10-05-battle-grasse
+    'on': '1447-10-05'
+    kind: battle
+    what: >-
+      At Grasse in Provence Aḥmad, lord of the Ṭāʾifa of Banbalūna, fifty-one years old, attacks 4,200 Genoese
+      with 385 men and loses all but 29 of them
+    who:
+      - ahmad-ibn-yusuf-ibn-ismail
+    threads:
+      - tunisian-war-for-palermo
+    from:
+      - save
+    cite: save of 5 October 1447
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Taifa of Pamplona: 385
+      oursTotal: 385
+      oursLost: 356
+      theirs:
+        Genoa: 4200
+      theirsTotal: 4200
+      theirsLost: 0
+      location: Grasse
+      side: allies attacking
+      commanders:
+        ours: Aḥmad ibn Yūsuf, lord of Banbalūna
+        theirs: Simeon#33589959
+      afterwards: his command ends that day; the save marks him ruthless
+  - id: 1447-10-05-the-bridges-of-the-wadi-ana
+    'on': '1447-10-05'
+    kind: realm
+    what: >-
+      The treasury goes into the towns again: six bridges in the country of the Tagus and the Guadiana, at
+      Alcántara, Medellín, Villanueva de la Serena, Valencia de Alcántara, Brozas and Jaraicejo, and new
+      gunsmiths, tanneries, glassworks and a cannon foundry
+    who:
+      - ahmad-ibn-muhammad-ibn-ismail
+    where:
+      - batalyaws
+      - jayyan
+      - shantarin
+      - qurtuba
+      - larida
+      - ishbiliyya
+      - sharish
+      - istijja
+      - jarunda
+    threads:
+      - towns
+    from:
+      - save
+    cite: saves of 1 February (autosave), 28 March and 5 October 1447
+    detail:
+      bridges: Alcántara, Medellín, Villanueva de la Serena, Valencia de Alcántara, Brozas, Jaraicejo
+      gunsmiths: Jaén, Santarém, Badajoz
+      tanneries: Córdoba, Lleida
+      glass: Seville (two)
+      distillery: Jerez
+      lumber mill: Écija
+      winery: Castellón de la Plana
+      cannon foundry: Girona
+      earlier in 1447: potteries at Valencia, cloth and a tannery at Córdoba, a furniture workshop at Cervera (by 28 March)
+      treasury: 2,680 on 28 March, 216 on 5 October
+      period: saves of 28 March and 5 October 1447
+  - id: 1447-10-05-the-explorer-turns-to-the-cape
+    'on': '1447-10-05'
+    kind: note
+    what: >-
+      ʿAbd al-Jalīl al-Qubbāṣī's voyage of discovery ends on 1 October; four days later he sails again for the
+      cape where Africa ends, to find a place to leave an outpost
+    who:
+      - abd-al-jalil-al-qubbasi
+    threads:
+      - voyages
+    from:
+      - save
+      - told
+    cite: Trent's account, 5 October 1447; save of 5 October 1447
+    detail:
+      explorerRole: 30 October 1445 to 1 October 1447 (save)
+      aim: an outpost at or near the cape (Trent)
+tellings:
+  - id: 0851-05-18-of-the-envoys-of-europe-and-the-borders-of-the-umayyads
+    'on': '1447-08-01'
+    title: Of the Envoys of Europe and the Borders of the Umayyads
+    verse: 16:91
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+      - dua-marinid
+    where:
+      - ishbiliyya
+      - qurtuba
+      - fas
+    covers:
+      - 1447-08-01-presence-in-europe
+      - 1447-03-27-the-timurid-stagnation
+      - 1447-06-13-the-call-of-tunis
+    text: >
+      In Muḥarram 851 news came from the east by way of the Mamlūk post. The empire of the Tīmūrids, which in
+      the Emperor's youth had frightened every court from Cairo to Constantinople, had gone thirteen years
+      without Temür and found no one to fill his place. Okhotur sat on Temür's throne. The provinces did as
+      they pleased, and the great host did nothing. The merchants of [Ishbīliya](place:ishbiliyya) who traded
+      with Tabrīz said the roads were worse every year. The court heard it as one hears of weather in another
+      country.
+
+
+      Nearer home there was a different change. For a century the Christian princes had written of al-Andalus
+      as of a thing finished, a chapter closed long ago. Now their envoys came to Ishbīliya. They came from
+      Italy, from the princes of the Empire, from the Angevins' rivals and even, quietly, from the Angevins.
+      They brought gifts and careful compliments, and each of them asked, in his own way, what the Emperor
+      meant to do.
+
+
+      The Emperor [Muḥammad](person:muhammad-ibn-ismail-ibn-saad) received them on 18 Jumādā al-Ūlā 851 in the
+      new palace by the river. He had built it for exactly this, and he enjoyed every hour of it. His
+      secretaries remembered that he had read the history of ʿAbd al-Raḥmān II the night before, and the
+      embassy of the Greek emperor Theophilos to [Qurṭuba](place:qurtuba) in the year 225. When the last envoy
+      had finished, the Emperor gave them one answer for all their masters: "We have arrived." The court wrote
+      it down as a boast. The heir [Ismāʿīl](person:ismail-ibn-muhammad-ibn-ismail) said it was a promise, and
+      a harder one to keep. Al-Andalus held no mastery in Europe, only a seat regained at a table its fathers
+      had once headed. It would keep the gifts of the Restoration as long as it kept its weight among the
+      powers of Europe, and the dīwān set itself to make sure it did.
+
+
+      The answer had a second half, and the jurists gave it its name. If al-Andalus was the heir of Qurṭuba,
+      it was the heir of the Umayyads. And the Umayyads had not ruled al-Andalus alone. In their first age,
+      from Damascus, their writ had run from the Pyrenees to the Oxus: across the whole Maghrib, through Egypt
+      and Syria and Arabia, and into Persia. The jurists drew up the claim, and the Emperor had the map of it
+      drawn and hung in the hall of the dīwān.
+
+
+      Then the dīwān looked at the map. Iberia was already the Emperor's, or his ṭāʾifas'. Fās and all the
+      Maghrib al-Aqṣā belonged to the Banū Marīn, the Emperor's oldest allies, whose blood ran in his own
+      house through his grandmother [Duʿāʾ](person:dua-marinid). Ifrīqiya belonged to the Banū Ḥafṣ of Tūnis,
+      whose war in Sicily al-Andalus had joined in Rabīʿ al-Awwal. Egypt, Syria and the Ḥijāz belonged to the
+      Mamlūks of Miṣr, the realm's friends for eighty years. Ismāʿīl had married princesses of Fās and of
+      Egypt. Only Persia, at the far edge of the map, belonged to anyone else, and that was the empire that
+      was falling in on itself.
+
+
+      Ismāʿīl laughed when he saw it. A claim on the lands of one's friends, he said, was a sword that does
+      not leave the scabbard, and a sword in the scabbard is still a sword. The old Mamlūk party at court did
+      not laugh. Its men had served the alliance with Cairo all their lives, and they asked the Emperor to say
+      plainly that the claim was a scholar's exercise. Prince [Aḥmad](person:ahmad-ibn-muhammad-ibn-ismail)
+      studied the roads on the map and said nothing about the borders.
+
+
+      The Emperor gave no order either way. The map stayed on the wall.
+
+
+      *And fulfil the covenant of God when you have taken it, and do not break oaths after their confirmation
+      while you have made God, over you, a witness. Indeed, God knows what you do.*
+  - id: 0851-07-24-of-the-lady-isabel-and-the-bridges-of-the-west
+    'on': '1447-10-05'
+    title: Of the Lady Isabel and the Bridges of the West
+    verse: '31:14'
+    who:
+      - isabel-de-montsoriu
+      - ahmad-ibn-muhammad-ibn-ismail
+      - muhammad-ibn-ismail-ibn-saad
+      - ahmad-ibn-yusuf-ibn-ismail
+      - abd-al-jalil-al-qubbasi
+    where:
+      - ishbiliyya
+      - batalyaws
+      - jayyan
+      - shantarin
+      - qurtuba
+      - larida
+      - sharish
+      - istijja
+      - jarunda
+    covers:
+      - 1447-08-19-death-of-isabel-de-montsoriu
+      - 1447-06-29-birth-of-fatima-bint-saad
+      - 1447-10-05-the-bridges-of-the-wadi-ana
+      - 1447-10-05-the-explorer-turns-to-the-cape
+    text: >
+      On 14 Rabīʿ al-Thānī 851 a daughter was born in the house of the lords of Banbalūna. Her father was
+      Saʿd, son of [Aḥmad](person:ahmad-ibn-yusuf-ibn-ismail) of Banbalūna. Her mother was Muʾmina, daughter
+      of the prince [Aḥmad](person:ahmad-ibn-muhammad-ibn-ismail). They named her Fāṭima. The court counted
+      her twice over: a great-granddaughter of the Emperor, and one more knot between the crown and the
+      ṭāʾifas of the north.
+
+
+      Her great-grandmother lived to hear of her and not much longer. The lady [Isabel de
+      Montsoriu](person:isabel-de-montsoriu) had come south from the Catalan houses as a girl. She was the
+      Emperor's wife for more than forty years and the mother of his son Aḥmad, and through her own mother she
+      was a granddaughter of the house of Naṣr. She died of old age on 6 Jumādā al-Ākhira 851, on the day she
+      turned sixty-five.
+
+
+      The Emperor [Muḥammad](person:muhammad-ibn-ismail-ibn-saad) mourned her with the ceremony he gave to
+      everything, and it was real for all that. Aḥmad mourned her by working. His mother had been the first to
+      praise the cities he drew in the sand as a boy. In the months after her death he spent the treasury
+      almost to the bottom.
+
+
+      The treasury had been full in the spring. By Rajab it held less than a tenth of what it had held in
+      Muḥarram, and the clerks could show where every dirham had gone. Six bridges went up in the country of
+      the Tagus and the Guadiana, at al-Qanṭara, Madallīn, the Serena, Valencia de Alcántara, Brozas and
+      Jaraicejo, so that the roads of the west no longer waited on the seasons for a ford. The townsmen of
+      al-Qanṭara already had a bridge, the old Roman one, which had given the town its name. Aḥmad gave them a
+      second. The gunsmiths of [Jayyān](place:jayyan), [Baṭalyaws](place:batalyaws) and
+      [Shantarīn](place:shantarin) took on more hands. New tanneries opened at [Qurṭuba](place:qurtuba) and
+      [Lārida](place:larida), and new glassworks at [Ishbīliya](place:ishbiliyya). There was a distillery at
+      [Sharīsh](place:sharish), a lumber mill at [Istijja](place:istijja), and a press for the wine of the
+      Christian vineyards at Castellón. At [Jarunda](place:jarunda) a second foundry began to cast cannon. The
+      Emperor asked what it all cost and was told. He let his son go on.
+
+
+      The court had grown in other ways. In those months it took in a scholar of Delhi named Dilipapala, a
+      scholar of ʿIrāq, and a lord of the Tandroy from the great island beyond the Cape, Matoky of the
+      Fahambahy. He was the first man of Madagascar most of the court had ever seen, and the pages followed
+      him through the palace. No one wrote down how he had come.
+
+
+      On 20 Rajab [ʿAbd al-Jalīl al-Qubbāṣī](person:abd-al-jalil-al-qubbasi) came to the end of his
+      commission. Four days later he sailed again for the cape where Africa ends, this time to find a place
+      where the crown could leave men behind.
+
+
+      *And We have enjoined upon man care for his parents. His mother carried him in weakness upon weakness,
+      and his weaning is in two years. Be grateful to Me and to your parents; to Me is the destination.*

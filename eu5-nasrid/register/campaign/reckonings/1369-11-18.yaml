@@ -1,0 +1,878 @@
+date: '1369-11-18'
+title: A year of the Second Marīnid War
+source:
+  save: SP_GRA_1369_11_18 (compressed)
+  game: 1.4.5
+summary: >-
+  A year into the Second Marīnid War. After the first winter's conquests on the north shore, the Moroccan
+  counterattack has taken back all of it but Niebla. Khālid's army, half of it mercenaries paid with loans
+  from the estates, held at Antequera and Almuñécar, and the first Mamlūk troops have landed at Gérgal.
+  Expenses are more than double income. Shares of power are estimated from the 1 June 1349 reading.
+realm:
+  towns: 49
+  souls: 661841
+  treasury: 770
+  income: 76.2
+  expenses: 175.7
+  debt: 469
+  stability: 32.1
+  prestige: 38
+  regiments: 6
+  ships: 4
+  manpower: 1789
+court:
+  ruler: saad-ibn-yusuf
+  heir: ismail-ibn-saad
+  capital: gharnata
+  council:
+    - who: dua-marinid
+      seat: Promoting Andalusī culture
+    - who: maryam-bint-ismail
+      seat: Integrating the new lands
+standing:
+  wars:
+    - second-marinid-submission-war
+  allies:
+    - Mamluks
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+    - Taifa of the Algarve (taifa)
+  estates:
+    - name: Crown
+      power: 35.69
+    - name: Nobility
+      power: 25.91
+      mood: 48
+    - name: ʿUlamāʾ
+      power: 6.68
+      mood: 50
+    - name: Burghers
+      power: 10.28
+      mood: 50
+    - name: Commoners
+      power: 3.99
+      mood: 50
+    - name: Dhimmī
+      power: 17.45
+      mood: 69
+peoples:
+  cultures:
+    Andalusi: 374239
+    Castilian: 240473
+    Sephardi: 38771
+    Mustaarabi: 3730
+    Sardinian: 2048
+    Ligurian: 606
+  faiths:
+    Sunni: 316445
+    Catholic: 302298
+    Jewish: 42348
+    Bori_Religion: 542
+    Nyama: 208
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+    - ALV
+  allies:
+    - MAM
+beats:
+  - id: 1368-11-11-battle-cadiz
+    'on': '1368-11-11'
+    kind: battle
+    what: >-
+      The first battle of the war, at Qādis. Murād's 3,300 Granadans fall on 800 Marīnids led by the sultan of
+      Fās himself, Abū ʿInān Fāris, and destroy them: 740 killed and 60 taken, for 65 of ours
+    who:
+      - murad
+      - abu-inan-faris
+    threads:
+      - second-marinid-submission-war
+    from:
+      - save
+      - seen
+    cite: Trent's screenshot of the battle report (11 November 1368); save of 18 November 1369
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 3300
+      oursTotal: 3300
+      oursLost: 65
+      theirs:
+        Morocco: 800
+      theirsTotal: 800
+      theirsLost: 800
+      theirsTaken: 60
+      warScore: 2.84
+      location: Cádiz
+      composition:
+        ours:
+          infantry: 2000
+          lightCavalry: 800
+          heavyCavalry: 500
+        theirs:
+          archers: 500
+          lightCavalry: 200
+          supply: 100
+  - id: 1368-12-01-battle-marbella
+    'on': '1368-12-01'
+    kind: battle
+    what: 'Marbella falls to the sultan''s army: its garrison of 13 is overwhelmed without loss'
+    threads:
+      - second-marinid-submission-war
+    from:
+      - save
+    cite: save of 18 November 1369
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 2830
+      oursTotal: 2830
+      oursLost: 0
+      theirs:
+        Morocco: 13
+      theirsTotal: 13
+      theirsLost: 13
+      location: Marbella
+      side: Granada attacking
+  - id: 1368-12-13-birth-jadila-bint-saad
+    'on': '1368-12-13'
+    kind: birth
+    what: Aiman bears Sultan Saʿd a second daughter, Jadīla
+    who:
+      - jadila-bint-saad
+      - saad-ibn-yusuf
+      - aiman-mamluk
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 18 November 1369
+  - id: 1368-12-15-battle-gibraltar
+    'on': '1368-12-15'
+    kind: battle
+    what: >-
+      At Jabal Ṭāriq the Granadans break the army of the so-called Kingdom of Sevilla: 480 of its 800 lost for
+      120 of ours
+    threads:
+      - second-marinid-submission-war
+    from:
+      - save
+    cite: save of 18 November 1369
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 2830
+      oursTotal: 2830
+      oursLost: 120
+      theirs:
+        Kingdom of Sevilla: 800
+      theirsTotal: 800
+      theirsLost: 478
+      location: Gibraltar
+      side: Granada attacking
+  - id: 1368-12-25-battle-tarifa
+    'on': '1368-12-25'
+    kind: battle
+    what: At Ṭarīf the last Sevillan army, 320 men, is destroyed to a man, for 13 of ours
+    threads:
+      - second-marinid-submission-war
+    from:
+      - save
+    cite: save of 18 November 1369
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 2135
+      oursTotal: 2135
+      oursLost: 13
+      theirs:
+        Kingdom of Sevilla: 322
+      theirsTotal: 322
+      theirsLost: 322
+      location: Tarifa
+      side: Granada attacking
+  - id: 1369-01-31-battle-costa-blanca
+    'on': '1369-01-31'
+    kind: battle
+    what: >-
+      Off the Costa Blanca a Mamlūk squadron from Barqa, ten ships, sinks a Tilimsānī ship. The first Mamlūk
+      force to reach the western sea
+    minor: true
+    threads:
+      - second-marinid-submission-war
+    from:
+      - save
+    cite: save of 18 November 1369
+    detail:
+      result: allied victory
+      naval: true
+      ours:
+        Barqa: 10
+      oursTotal: 10
+      oursLost: 0
+      theirs:
+        Tlemcen: 1
+      theirsTotal: 1
+      theirsLost: 1
+      location: off the Costa Blanca
+      side: Granada attacking
+      units: ships
+  - id: 1369-02-08-battle-marbella
+    'on': '1369-02-08'
+    kind: battle
+    what: >-
+      The first Marīnid landing: 2,600 Moroccans come ashore at Marbella and fall on Murād's army of 6,400.
+      They are thrown back into the sea, 1,540 lost against 570 of ours
+    who:
+      - murad
+    threads:
+      - second-marinid-submission-war
+    from:
+      - save
+    cite: save of 18 November 1369
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 6357
+      oursTotal: 6357
+      oursLost: 569
+      theirs:
+        Morocco: 2593
+      theirsTotal: 2593
+      theirsLost: 1537
+      location: Marbella
+      side: Granada defending
+  - id: 1369-02-15-battle-ronda
+    'on': '1369-02-15'
+    kind: battle
+    what: At Ronda the last of the landing, 1,050 Moroccans, attacks 575 Granadans and is destroyed to a man
+    threads:
+      - second-marinid-submission-war
+    from:
+      - save
+    cite: save of 18 November 1369
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 575
+      oursTotal: 575
+      oursLost: 0
+      theirs:
+        Morocco: 1051
+      theirsTotal: 1051
+      theirsLost: 1051
+      location: Ronda
+      side: Granada defending
+  - id: 1369-03-strength
+    'on': '1369-03-01'
+    kind: note
+    what: >-
+      The two sides in March 1369. Fās and its allies field 47,000 men, 23,600 of them Moroccan. The Mamlūk
+      alliance fields 113,000, but 71,600 of those are Egyptian and far to the east. On this shore Granada has
+      8,800 (5,500 levies and 3,300 regulars) and its ṭāʾifas 2,700. The war score stands at +31% for Granada
+    who:
+      - saad-ibn-yusuf
+    threads:
+      - second-marinid-submission-war
+    from:
+      - seen
+    cite: Trent's screenshots of the war screen and army strength (March 1369)
+    detail:
+      warScore: 30.9
+      attackers:
+        total: 47081
+        Morocco: 23596
+        Tlemcen: 12235
+        Tafilalt: 10501
+        Touat: 749
+        Kingdom of Sevilla: 0
+      defenders:
+        total: 113000
+        Mamluks: 71600
+        Granada:
+          total: 8839
+          levies: 5539
+          regulars: 3300
+        Mecca: 5317
+        Āl Faḍl: 4198
+        Barqa: 3546
+        Al Mira: 3465
+        Döger: 3256
+        Dulkadirids: 2565
+        Banu Kanz: 2525
+        Medina: 1887
+        Al ʿAlī: 1881
+        Valencia: 1876
+        Western Oases: 1007
+        Murcia: 778
+      ships:
+        attackers: 77
+        defenders: 59
+      granadaManpower: 2603
+  - id: 1369-03-the-south-subdued
+    'on': '1369-03-01'
+    kind: note
+    what: >-
+      By March the Marīnids' lands on this shore are subdued, all but the fortress of Qādis, and the first
+      Marīnid landing has been thrown back into the sea
+    threads:
+      - second-marinid-submission-war
+    from:
+      - save
+      - told
+    cite: Trent's account (by March 1369; no save)
+    detail:
+      holdsOut: Cádiz
+  - id: 1369-04-05-battle-jerez-de-la-frontera
+    'on': '1369-04-05'
+    kind: battle
+    what: >-
+      The Moroccan counterattack begins. At Jerez a Granadan column of 2,100 attacks 2,000 Moroccans and is
+      wiped out, for 140 of theirs
+    threads:
+      - second-marinid-submission-war
+    from:
+      - save
+    cite: save of 18 November 1369
+    detail:
+      result: defeat
+      naval: false
+      ours:
+        Granada: 2095
+      oursTotal: 2095
+      oursLost: 2095
+      theirs:
+        Morocco: 2000
+      theirsTotal: 2000
+      theirsLost: 140
+      location: Jerez
+      side: Granada attacking
+  - id: 1369-04-28-battle-jerez-de-la-frontera
+    'on': '1369-04-28'
+    kind: battle
+    what: >-
+      Murād takes Jerez back: 7,250 Granadans and Gharbīs against 1,860 Moroccans, 1,350 of them lost for 960
+      of ours
+    who:
+      - murad
+    threads:
+      - second-marinid-submission-war
+    from:
+      - save
+    cite: save of 18 November 1369
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 6744
+        Taifa of the Algarve: 504
+      oursTotal: 7248
+      oursLost: 961
+      theirs:
+        Morocco: 1858
+      theirsTotal: 1858
+      theirsLost: 1351
+      location: Jerez
+      side: Granada attacking
+  - id: 1369-05-12-battle-sanlucar
+    'on': '1369-05-12'
+    kind: battle
+    what: At Sanlúcar Murād destroys a Moroccan force of 500, for 24 of ours
+    who:
+      - murad
+    threads:
+      - second-marinid-submission-war
+    from:
+      - save
+    cite: save of 18 November 1369
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 3685
+      oursTotal: 3685
+      oursLost: 24
+      theirs:
+        Morocco: 502
+      theirsTotal: 502
+      theirsLost: 502
+      location: Sanlúcar
+      side: Granada attacking
+  - id: 1369-06-02-battle-cadiz
+    'on': '1369-06-02'
+    kind: battle
+    what: Under Osman the Marīnids relieve Cádiz. A Granadan force of 580 before the fortress is wiped out
+    who:
+      - osman-marinid
+    threads:
+      - second-marinid-submission-war
+    from:
+      - save
+    cite: save of 18 November 1369
+    detail:
+      result: defeat
+      naval: false
+      ours:
+        Granada: 582
+      oursTotal: 582
+      oursLost: 582
+      theirs:
+        Morocco: 2194
+      theirsTotal: 2194
+      theirsLost: 14
+      location: Cádiz
+      side: Granada defending
+  - id: 1369-06-26-battle-cadiz
+    'on': '1369-06-26'
+    kind: battle
+    what: >-
+      The disaster before Cádiz. Khālid ibn Yaḥyā leads 6,460 Granadans, Gharbīs and Murcians against Osman's
+      4,770 in the fortress lines and is thrown back. 3,860 are lost against 1,420 of theirs
+    who:
+      - khalid-ibn-yahya
+      - osman-marinid
+    threads:
+      - second-marinid-submission-war
+    from:
+      - save
+    cite: save of 18 November 1369
+    detail:
+      result: defeat
+      naval: false
+      ours:
+        Granada: 5365
+        Taifa of the Algarve: 318
+        Murcia: 777
+      oursTotal: 6460
+      oursLost: 3860
+      theirs:
+        Morocco: 4773
+      theirsTotal: 4773
+      theirsLost: 1422
+      location: Cádiz
+      side: Granada attacking
+  - id: 1369-estate-loans
+    'on': '1369-07-18'
+    kind: realm
+    what: >-
+      To hire mercenaries the crown borrows from the estates: seven loans of 67 dīnārs each, 469 in all, at
+      nearly 9% over five years. A mercenary company of 4,800 men marches under the Granadan banner
+    who:
+      - saad-ibn-yusuf
+    threads:
+      - second-marinid-submission-war
+      - estates
+    from:
+      - save
+      - told
+    cite: >-
+      save of 18 November 1369 (the loans were about four months into their five years, so taken around July
+      1369); Trent's account
+    detail:
+      loans: 7
+      each: 67.03
+      total: 469
+      interest: 0.087
+      months: 60
+      mercenaries: 4786
+  - id: 1369-09-16-battle-malaga
+    'on': '1369-09-16'
+    kind: battle
+    what: >-
+      A Moroccan army of 4,800 under Aghlab lands at Málaga and destroys the Murcian host of 410 under Juan
+      Manuel
+    who:
+      - juan-manuel-enriquez
+    threads:
+      - second-marinid-submission-war
+    from:
+      - save
+    cite: save of 18 November 1369
+    detail:
+      result: defeat
+      naval: false
+      ours:
+        Murcia: 408
+      oursTotal: 408
+      oursLost: 408
+      theirs:
+        Morocco: 4791
+      theirsTotal: 4791
+      theirsLost: 0
+      location: Málaga
+      side: Granada defending
+  - id: 1369-10-15-battle-antequera
+    'on': '1369-10-15'
+    kind: battle
+    what: >-
+      The pitched battle at Antequera. Osman marches inland with 8,040 Moroccans and falls on Khālid's 6,200.
+      The line holds, barely. 4,090 Moroccans fall against 960 of ours, and the Marīnid tide is turned back
+      from the heart of the realm
+    who:
+      - khalid-ibn-yahya
+      - osman-marinid
+    threads:
+      - second-marinid-submission-war
+    from:
+      - save
+    cite: save of 18 November 1369
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 6195
+      oursTotal: 6195
+      oursLost: 964
+      theirs:
+        Morocco: 8036
+      theirsTotal: 8036
+      theirsLost: 4087
+      location: Antequera
+      side: Granada defending
+  - id: 1369-11-08-battle-almunecar
+    'on': '1369-11-08'
+    kind: battle
+    what: At Almuñécar Khālid's 7,880 crush 1,870 Moroccans besieging the town, 1,110 of them lost for 200 of ours
+    who:
+      - khalid-ibn-yahya
+    threads:
+      - second-marinid-submission-war
+    from:
+      - save
+    cite: save of 18 November 1369
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 7877
+      oursTotal: 7877
+      oursLost: 197
+      theirs:
+        Morocco: 1871
+      theirsTotal: 1871
+      theirsLost: 1114
+      location: Almuñécar
+      side: Granada attacking
+  - id: 1369-11-18-state
+    'on': '1369-11-18'
+    kind: note
+    what: >-
+      A year into the war. The Moroccan counterattack has won back the north shore: of the towns taken that
+      first winter, only Niebla is still held, and Moroccan armies stand at Ronda, Adra and Málaga. Khālid's
+      army of 7,700 holds at Almuñécar, and the first Mamlūk troops, 5,700, have come ashore at Gérgal.
+      Expenses are 176 a month against an income of 76, with 770 in the treasury. The money came mainly from
+      squeezing the estates, Moroccan concessions, squeezing the ṭāʾifas, and Egypt
+    who:
+      - saad-ibn-yusuf
+      - khalid-ibn-yahya
+    threads:
+      - second-marinid-submission-war
+    from:
+      - save
+      - told
+    cite: save of 18 November 1369; Trent's account of where the gold came from
+    detail:
+      forces:
+        GRA:
+          men: 7679
+          of which mercenaries: 4786
+        MAM in Iberia: 5696
+        MOR in Iberia:
+          Ronda: 3923
+          Adra: 970
+          Málaga: 753
+        MOR in Africa: 8886
+        TLE in Africa: 12235
+        TFL in Africa: 5746
+      treasury: 770
+      income: 76.2
+      expenses: 175.7
+      manpower: 1789
+      occupied:
+        - Almuñécar
+tellings:
+  - id: 0770-04-08-of-the-two-queens-in-the-autumn-fas-came-again
+    'on': '1368-11-20'
+    title: Of the Two Queens, in the Autumn Fās Came Again
+    verse: '4:35'
+    who:
+      - saad-ibn-yusuf
+      - dua-marinid
+      - aiman-mamluk
+      - sayyida-of-fezzan
+      - abu-inan-faris
+      - ismail-ibn-saad
+      - murad
+    where:
+      - gharnata
+      - qadis
+      - fas
+    covers:
+      - 1367-01-30-mamluk-alliance
+      - 1368-11-11-battle-cadiz
+    text: >
+      The chroniclers of other courts write their wars from the field. This one must also be written from the
+      harem, because in the autumn of 770 the war with [Fās](place:fas) was fought there too.
+
+
+      When the Marīnid sultan [Abū ʿInān](person:abu-inan-faris) declared his second war for the submission of
+      Gharnāṭa, the first question at court was not where he would land. It was what
+      [Duʿāʾ](person:dua-marinid) would do. She was a daughter of his house. She sat in the dīwān, she had
+      borne the heir, and she had made half the court read Maghribī books and eat Maghribī food. Now the
+      Maghrib was coming across the Strait with an army. In the souks they said she had letters from Fās. In
+      the harem they said worse. The whisperers never found the letters, because there were none, but they did
+      not need them.
+
+
+      [Aiman](person:aiman-mamluk)'s party did not need to whisper. Two years before, when Cairo had let its
+      alliance with Gharnāṭa lapse, it was Aiman who had written to Cairo, and it was her envoy who brought
+      the treaty home in Jumādā al-Ūlā 768. Egypt stood with Gharnāṭa again because of her. Now her people
+      said it openly in the dīwān: the Mamlūks were the realm's friends, the Marīnids its enemies, and the
+      sultan should consider which queen came from which.
+
+
+      Duʿāʾ answered as she answered everything, with work. She gave her jewels to the war chest, in public,
+      before the dīwān. She had the Maghribī scholars of her circle preach the jihad against the Marīnid in
+      the mosques of [Gharnāṭa](place:gharnata), which they did with more fervour than the Andalusīs. She sent
+      her son [Ismāʿīl](person:ismail-ibn-saad), who was two, to be shown to the troops at the gate. The court
+      said she had become more Andalusī than the Andalusīs. Some of them meant it as praise.
+
+
+      Between the two queens stood [Sayyida](person:sayyida-of-fezzan), the sultan's mother. She had never
+      forgiven Duʿāʾ for marrying her husband and then her son. She did not join the whisperers. She said, in
+      the hearing of the whole court, that the sultan's wives were the sultan's business, and that a court
+      that talked about them in wartime had too little to do. The whispering grew quieter after that. The
+      court understood that the matriarch had not defended Duʿāʾ. She had defended the house.
+
+
+      The war itself settled the question. On 29 Rabīʿ al-Awwal [Murād](person:murad) broke Abū ʿInān's army
+      before [Qādis](place:qadis), and the Marīnid sultan went home. No letter from Fās was ever found. Our
+      lord [Saʿd](person:saad-ibn-yusuf), who had said nothing through all of it, said one thing afterwards:
+      that he had married the Maghrib and Egypt both, and meant to keep them both. He kept them both. He did
+      not reconcile them.
+
+
+      *And if you fear dissension between the two, send an arbitrator from his people and an arbitrator from
+      her people.*
+    behind: >-
+      Written in November 2026 at Trent's direction: the struggle between the queens is to be a central thread
+      of Saʿd's reign. Duʿāʾ stands for the Maghrib and Aiman for Egypt, with the matriarch Sayyida against
+      Duʿāʾ, Faraj's going opening the way for Duʿāʾ's rise, and the princes Ismāʿīl and Aḥmad bound together
+      from childhood. Trent allowed details the saves don't hold to be invented for this. Everything below is
+      invented colour unless marked.
+
+
+      **The new entry, *Of the Two Queens, in the Autumn Fās Came Again*.**
+
+      - *From the record:* the Mamlūk alliance, lost in autumn 1366 and renewed on 30 January 1367; Abū
+      ʿInān's declaration and his defeat at Cádiz on 11 November 1368; the ages of the children.
+
+      - *Invented:* the whispers about Duʿāʾ's letters; Aiman writing to Cairo and her envoy bringing the
+      treaty home; Duʿāʾ's jewels, her scholars preaching the jihad, and the heir shown at the gate; Sayyida's
+      words to the court; and Saʿd's saying about keeping the Maghrib and Egypt both.
+
+
+      **Passages added to earlier entries.**
+
+      - *The Governor of Qurṭuba (1355):* Faraj going gladly, the Saharan guides and his talk of the salt
+      roads; Sayyida's remark on the harem law.
+
+      - *The Great Madrasa (1358):* Sayyida's court in the harem, and the scholars not asked to it.
+
+      - *The Regent Who Did Not Last (1364):* Sayyida's year of silence, and Aiman writing to Cairo.
+
+      - *The Peace of Independence (1366):* the two parties of the palace.
+
+      - *Duʿāʾ's Regency (1374):* the perfect courtesy between Duʿāʾ and Sayyida.
+
+      - *The Restoration (1375):* the exchange between Duʿāʾ and Aiman.
+
+      - *The Kingdom of Ṭulayṭula (1380):* the order of the wives behind Sayyida's bier.
+
+      - *The Death of Duʿāʾ (1388):* Aiman's white mourning.
+
+      - *The Western Ocean (1392):* the guides who knew Faraj's name.
+
+      - *The Sons of Muḥammad (1408):* the two boys never apart, Ismāʿīl talking and Aḥmad drawing towns in
+      the sand.
+
+      - *The Two Princes (1429):* the division of the work between them, and Aḥmad to preside over Ismāʿīl's
+      council.
+
+      - *The Closed Ports (1447):* Aḥmad as the hand that spent the treasury on the towns (Trent's direction),
+      with the building itself from the saves.
+  - id: 0770-07-21-the-first-winter
+    'on': '1369-03-01'
+    title: Of the First Winter, When the Sultan of Fās Was Beaten at Qādis
+    verse: '8:26'
+    who:
+      - saad-ibn-yusuf
+      - murad
+      - abu-inan-faris
+      - aiman-mamluk
+      - jadila-bint-saad
+    where:
+      - fas
+      - qadis
+      - marballa
+      - jabal-tariq
+      - tarifa
+      - gharnata
+      - tilimsan
+      - runda
+    covers:
+      - 1368-11-11-battle-cadiz
+      - 1368-12-01-battle-marbella
+      - 1368-12-13-birth-jadila-bint-saad
+      - 1368-12-15-battle-gibraltar
+      - 1368-12-25-battle-tarifa
+      - 1369-01-31-battle-costa-blanca
+      - 1369-02-08-battle-marbella
+      - 1369-02-15-battle-ronda
+      - 1369-03-the-south-subdued
+      - 1369-03-strength
+    text: >
+      The sultan of [Fās](place:fas) came across the water himself to take what he had demanded. [Abū ʿInān
+      Fāris](person:abu-inan-faris) was a zealot and a soldier, and he had planned many attacks in his life.
+      The plague had marked him years before. He landed at [Qādis](place:qadis) with eight hundred men, the
+      vanguard of the host that was to follow. On the twenty-ninth of Rabīʿ al-Awwal 770, eighteen days after
+      the declaration, [Murād](person:murad) fell on him with three thousand three hundred. Seven hundred and
+      forty Marīnids died and sixty were taken. Sixty-five of ours fell. Abū ʿInān escaped to his ships. A
+      sultan who had come to demand submission sailed home with the smallest army he had ever commanded.
+
+
+      Then the court did what it had promised in 761: it threw its whole weight into the war.
+      [Marballa](place:marballa) fell on the nineteenth of Rabīʿ al-Thānī to a single assault, its garrison of
+      thirteen overwhelmed. On the fourth of Jumādā al-Ūlā the army of the so-called Kingdom of Sevilla, eight
+      hundred men, stood at [Jabal Ṭāriq](place:jabal-tariq) and was broken. Ten days later its last three
+      hundred and twenty were destroyed to a man at [Ṭarīfa](place:tarifa). The puppet kingdom had no army
+      left, and its towns began to open their gates.
+
+
+      In the middle of that campaign news came from [Gharnāṭa](place:gharnata). [Aiman](person:aiman-mamluk)
+      had given our lord [Saʿd](person:saad-ibn-yusuf) a second daughter, [Jadīla](person:jadila-bint-saad),
+      named for her aunt. Seven weeks later the first fruit of the Egyptian alliance arrived in the western
+      sea. Ten Mamlūk ships out of Barqa met a ship of [Tilimsān](place:tilimsan) off the eastern coast and
+      sank it. They were the first ships of Egypt in those waters in the memory of anyone living.
+
+
+      The Marīnids answered with their first landing. On the twenty-ninth of Jumādā al-Ākhira two thousand six
+      hundred came ashore at Marballa to take it back and fell on Murād's army of six thousand four hundred.
+      Fifteen hundred and forty of them died, against five hundred and seventy of ours, and the rest were
+      driven back into the sea. A week later the stragglers, a thousand and fifty men cut off in the
+      mountains, attacked five hundred and seventy-five Granadans at [Runda](place:runda) and were destroyed
+      to the last man.
+
+
+      By Rajab the whole northern shore was in the sultan's hands, save one place. The old fortress of Qādis,
+      on its island at the end of its causeway, still flew the banner of Fās. By any reckoning the war was
+      going Gharnāṭa's way. But the dīwān's reckoners looked across the water and were not comforted. Fās and
+      its allies had forty-seven thousand men under arms, twenty-three thousand of them the Marīnid sultan's
+      own. Gharnāṭa had eight thousand eight hundred, and its ṭāʾifas fewer than three thousand. The Mamlūk
+      sultan and his vassals had a hundred thousand more, but they were at the other end of the sea. The
+      winter had been won with speed. The spring would be a test of numbers.
+
+
+      *And remember when you were few and oppressed in the land, fearing that people might abduct you, but He
+      sheltered you, supported you with His victory, and provided you with good things.*
+  - id: 0771-04-17-the-year-of-the-counterattack
+    'on': '1369-11-18'
+    title: Of the Year of the Counterattack, and the Line at Antaqīra
+    verse: '8:45'
+    who:
+      - saad-ibn-yusuf
+      - khalid-ibn-yahya
+      - murad
+      - osman-marinid
+      - juan-manuel-enriquez
+    where:
+      - fas
+      - sharish
+      - shaluqa
+      - qadis
+      - mursiyya
+      - gharnata
+      - malaqa
+      - antaqira
+      - hisn-al-munakkab
+      - jarghal
+      - al-mariyya
+      - labla
+      - runda
+      - abdara
+    covers:
+      - 1369-04-05-battle-jerez-de-la-frontera
+      - 1369-04-28-battle-jerez-de-la-frontera
+      - 1369-05-12-battle-sanlucar
+      - 1369-06-02-battle-cadiz
+      - 1369-06-26-battle-cadiz
+      - 1369-estate-loans
+      - 1369-09-16-battle-malaga
+      - 1369-10-15-battle-antequera
+      - 1369-11-08-battle-almunecar
+      - 1369-11-18-state
+    text: >
+      In the spring [Fās](place:fas) began to pour men across the Strait, and it did not stop. Its fleet was
+      eighty ships strong and ruled the water, so it could land wherever it chose, and it chose everywhere. On
+      the twenty-sixth of Shaʿbān 770 a Granadan column of two thousand one hundred attacked a Marīnid force
+      of equal size at [Sharīsh](place:sharish) and was destroyed. [Murād](person:murad) retook the town in
+      Ramaḍān with seven thousand men and five hundred of al-Gharb, and in Shawwāl he cleared
+      [Shalūqa](place:shaluqa) at the mouth of the river.
+
+
+      The Marīnid general that year was [ʿUthmān](person:osman-marinid). He was a level-headed man, born in
+      the saddle, and he understood what the Granadans did not: [Qādis](place:qadis) mattered more than
+      anything else on the coast. In Shawwāl he landed beside it, wiped out the five hundred and eighty
+      Granadans who held the siege lines, and brought the fortress fresh men and grain. On the twentieth of
+      Dhū al-Qaʿda [Khālid ibn Yaḥyā](person:khalid-ibn-yahya) came to take it back. Khālid was the architect
+      who had sat in the dīwān from sixteen and had now been made a general. He brought six thousand four
+      hundred and sixty men, Granadans, Gharbīs and the men of [Mursiyya](place:mursiyya), against four
+      thousand seven hundred and seventy behind the causeway and the walls. It was the worst day of the war.
+      Three thousand eight hundred and sixty of ours were left on the causeway, in the shallows and before the
+      gate, and fourteen hundred and twenty of theirs. Khālid brought the rest home. When the dīwān met, our
+      lord [Saʿd](person:saad-ibn-yusuf) spoke before anyone could reproach the general. The assault had been
+      his order, he said, given in [Gharnāṭa](place:gharnata) and not in the lines, and the dead on the
+      causeway were his to answer for before Allāh. No one at court reproached Khālid after that.
+
+
+      The treasury could not replace those men, so the sultan borrowed from his own estates. Seven loans of
+      sixty-seven dīnārs each, four hundred and sixty-nine in all, bought a company of four thousand eight
+      hundred mercenaries. They were half of Khālid's army by autumn. The rest of the money came wherever the
+      sultan could squeeze it: from the estates, from the ṭāʾifas, from what Fās had conceded, and from Egypt.
+
+
+      In Ṣafar 771 a Marīnid army of four thousand eight hundred landed at [Mālaqa](place:malaqa). It caught
+      the host of Mursiyya, four hundred and ten men under [Juan Manuel](person:juan-manuel-enriquez), and
+      destroyed it. Then ʿUthmān marched inland with eight thousand men to cut the realm in two at
+      [Antaqīra](place:antaqira), on the road between Mālaqa and Gharnāṭa.
+
+
+      Khālid met him there on the thirteenth of Rabīʿ al-Awwal with six thousand two hundred. Those who fought
+      that day said the line nearly broke in the afternoon. The mercenaries on the left gave ground and the
+      Marīnid horse came through the gap. Khālid filled it himself with the last of the sultan's guard. The
+      line held. When ʿUthmān drew off at dusk, four thousand and ninety of his men lay before it, against
+      nine hundred and sixty of ours. No battle of the war killed more of the enemy, and none mattered more.
+      Antaqīra was the high-water mark of the Marīnid flood. The heart of the realm was not reached.
+
+
+      Three weeks later Khālid caught eighteen hundred and seventy Marīnids besieging [Ḥiṣn
+      al-Munakkab](place:hisn-al-munakkab) on the coast and broke them, eleven hundred dead for two hundred of
+      ours. In the same days the first Mamlūk army came ashore at [Jarghal](place:jarghal) in the hills above
+      [al-Mariyya](place:al-mariyya), five thousand seven hundred soldiers of Egypt on the soil of al-Andalus.
+      But the year belonged to Fās. Of all the north shore, only [Labla](place:labla) still answered to
+      Gharnāṭa. Marīnid armies stood at [Runda](place:runda), [Abdara](place:abdara) and the gates of Mālaqa.
+      The treasury was spending a hundred and seventy-six dīnārs a month and taking in seventy-six.
+
+
+      *O you who have believed, when you encounter a company, stand firm and remember Allāh much, that you may
+      be successful.*

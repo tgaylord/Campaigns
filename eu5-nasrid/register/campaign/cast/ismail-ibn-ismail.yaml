@@ -1,0 +1,35 @@
+name: Ismāʿīl ibn Ismāʿīl
+arabic: إسماعيل بن إسماعيل
+house: Naṣrid
+tier: key
+born: '1325-01-01'
+died: '1380-10-04'
+father: ismail-i
+mother: qamar
+traits:
+  - child_gregarious
+stations:
+  - role: dīwān
+    from: '1341-01-06'
+    to: '1359-06-20'
+    source: save
+    approx: false
+  - role: general
+    from: '1366-03-30'
+    to: '1366-07-28'
+    source: save
+    approx: false
+  - role: admiral
+    from: '1380-01-19'
+    to: '1380-10-04'
+    source: save
+    approx: false
+note: >-
+  Betrothed on 16 March 1354 to a daughter of the Aydınids of Anatolia. He married her about March 1359 and
+  went to live at the Aydınid court, leaving his seat in the dīwān; the chronicle reads it, like Faraj's
+  going, as the harem clearing the court of the amir's grown brothers. He died abroad on 4 October 1380. In
+  August 1395 his son Saʿd, born of his Aydınid wife, was made ruler of the new Ṭāʾifa of Shalamanka (save of
+  5 August 1395).
+game:
+  id: 3540
+  name: Ismail

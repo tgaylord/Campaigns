@@ -1,0 +1,393 @@
+date: '1339-05-24'
+title: The war on Aragon
+source:
+  save: SP_GRA_1339_05_24 (compressed)
+  game: 1.4.5
+summary: >-
+  Saved at the outbreak of Granada's first war, as the casus belli against Aragon was won; the declaration and
+  the mustering of the host (Trent's account) come just after it. Shares of power are estimated (calibrated on
+  16 November 1337); a screen on 28 January 1339, with no save, showed the crown at 26.4%, so the crown may be
+  underestimated here by a couple of points.
+realm:
+  towns: 18
+  souls: 495359
+  treasury: 124
+  income: 25.8
+  expenses: 24.9
+  stability: 38
+  prestige: 22
+  regiments: 3
+  ships: 5
+  manpower: 3813
+court:
+  ruler: yusuf-i
+  heir: faraj-ibn-ismail
+  capital: gharnata
+  council:
+    - who: faraj-ibn-ismail
+      seat: Increase control of a province
+    - who: yusuf-ibn-muhammad
+      seat: Promote Granadan sovereignty
+standing:
+  wars:
+    - war-on-aragon
+  allies:
+    - Morocco
+    - Tunis
+  estates:
+    - name: Crown
+      power: 24.15
+    - name: Nobility
+      power: 47.58
+      mood: 50
+    - name: ʿUlamāʾ
+      power: 11.89
+      mood: 50
+    - name: Burghers
+      power: 10.04
+      mood: 51
+    - name: Commoners
+      power: 4.28
+      mood: 59
+    - name: Dhimmī
+      power: 2.06
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 481806
+    Sephardi: 12348
+    Ligurian: 1204
+    Mandinka: 1
+  faiths:
+    Sunni: 481806
+    Jewish: 12348
+    Catholic: 1204
+    Nyama: 1
+map:
+  ours:
+    - GRA
+  allies:
+    - MOR
+    - TUN
+beats:
+  - id: 1338-01-22-food-access-morocco
+    'on': '1338-01-22'
+    kind: world
+    what: Food access agreed with Morocco
+    from:
+      - save
+    cite: checkpoint 1339-05-24
+    detail:
+      treaty: food_access
+      with: MOR
+  - id: 1338-03-12-ottoman-relations
+    'on': '1338-03-12'
+    kind: world
+    what: Envoys sent to improve relations with the Ottomans
+    threads:
+      - europe
+    from:
+      - save
+    cite: checkpoint 1339-05-24
+    detail:
+      treaty: opinion_improvement
+      with: TUR
+  - id: 1338-11-01-battle-ishbiliyya
+    'on': '1338-11-01'
+    kind: battle
+    what: Castile defeats Morocco at Ishbīliya
+    minor: true
+    where:
+      - ishbiliyya
+    threads:
+      - moroccan-castilian-war
+    from:
+      - save
+    cite: checkpoint 1339-05-24
+    detail:
+      result: defeat
+      ours: 3704
+      theirs: 17786
+      side: Morocco's side (Granada not engaged)
+  - id: 1338-11-09-tunis-joins
+    'on': '1338-11-09'
+    kind: war
+    what: Tunis and its vassals join Morocco's war on Castile
+    threads:
+      - moroccan-castilian-war
+    from:
+      - save
+    cite: checkpoint 1339-05-24
+    detail:
+      countries:
+        - TUN
+        - TRP
+        - GBS
+        - GFS
+        - TGT
+        - BIJ
+  - id: 1339-02-03-alliance-tunis
+    'on': '1339-02-03'
+    kind: world
+    what: Alliance with the Ḥafṣids of Tunis
+    from:
+      - save
+    cite: checkpoint 1339-05-24
+    detail:
+      treaty: alliance
+      with: TUN
+  - id: 1339-02-28-battle-shaluqa
+    'on': '1339-02-28'
+    kind: battle
+    what: Morocco repulsed at Shalūqa
+    minor: true
+    where:
+      - shaluqa
+    threads:
+      - moroccan-castilian-war
+    from:
+      - save
+    cite: checkpoint 1339-05-24
+    detail:
+      result: defeat
+      ours: 4011
+      theirs: 9817
+      side: Morocco's side (Granada not engaged)
+  - id: 1339-03-10-battle-ishbiliyya
+    'on': '1339-03-10'
+    kind: battle
+    what: Castile defeats Morocco again at Ishbīliya
+    minor: true
+    where:
+      - ishbiliyya
+    threads:
+      - moroccan-castilian-war
+    from:
+      - save
+    cite: checkpoint 1339-05-24
+    detail:
+      result: defeat
+      ours: 6053
+      theirs: 5970
+      side: Morocco's side (Granada not engaged)
+  - id: 1339-03-25-battle-qarmuna
+    'on': '1339-03-25'
+    kind: battle
+    what: Castile defeats Morocco at Qarmūna
+    minor: true
+    where:
+      - qarmuna
+    threads:
+      - moroccan-castilian-war
+    from:
+      - save
+    cite: checkpoint 1339-05-24
+    detail:
+      result: defeat
+      ours: 663
+      theirs: 12837
+      side: Morocco's side (Granada not engaged)
+  - id: 1339-04-06-battle-shaluqa
+    'on': '1339-04-06'
+    kind: battle
+    what: Morocco repulsed again at Shalūqa
+    minor: true
+    where:
+      - shaluqa
+    threads:
+      - moroccan-castilian-war
+    from:
+      - save
+    cite: checkpoint 1339-05-24
+    detail:
+      result: defeat
+      ours: 5503
+      theirs: 8113
+      side: Morocco's side (Granada not engaged)
+  - id: 1339-04-06-faraj-control
+    'on': '1339-04-06'
+    kind: office
+    what: Faraj turns the dīwān to tightening control of the provinces
+    who:
+      - faraj-ibn-ismail
+    from:
+      - save
+    cite: checkpoint 1339-05-24
+    detail:
+      action: increase_control_province
+  - id: 1339-04-21-food-access-tunis
+    'on': '1339-04-21'
+    kind: world
+    what: Food access agreed with Tunis
+    from:
+      - save
+    cite: checkpoint 1339-05-24
+    detail:
+      treaty: food_access
+      with: TUN
+  - id: 1339-05-14-death-gideon
+    'on': '1339-05-14'
+    kind: death
+    what: Gideon ben Joshua dies, having fallen down the stairs
+    who:
+      - gideon-ben-joshua
+    from:
+      - save
+    cite: checkpoint 1339-05-24
+    detail:
+      reason: fell_down_stairs
+  - id: 1339-05-24-aragon-allies
+    'on': '1339-05-24'
+    kind: war
+    what: Majorca, Navarre and Cagliari join Aragon against Granada
+    threads:
+      - war-on-aragon
+    from:
+      - save
+    cite: checkpoint 1339-09-02
+    detail:
+      countries:
+        - MLL
+        - NAV
+        - CAG
+  - id: 1339-05-24-catalan-privileges-lost
+    'on': '1339-05-24'
+    kind: realm
+    what: War with Aragon ends the Catalan Merchant Privileges, held since the start of the game
+    threads:
+      - war-on-aragon
+    from:
+      - save
+      - told
+    cite: >-
+      Trent's account; the reform is in the save of 24 May 1339 and gone by 2 September 1339, still absent at
+      the peace; effects from eu5db.com (1.4.5)
+    detail:
+      reform: catalan_merchant_privileges
+      implemented: '1337-04-01'
+      effects: >-
+        nobles power -20%, burghers power -10%, crown power +30% scaled by Farfanes in the army (Granada had
+        none); needs peace with Aragon
+  - id: 1339-05-24-cb-aragon
+    'on': '1339-05-24'
+    kind: world
+    what: 'A claim on Aragon: the casus belli to reclaim Andalusia'
+    threads:
+      - war-on-aragon
+    from:
+      - save
+    cite: checkpoint 1339-05-24
+    detail:
+      casusBelli: cb_reclaim_andalucia
+      target: ARA
+  - id: 1339-05-24-ibn-al-khatib-commands
+    'on': '1339-05-24'
+    kind: office
+    what: >-
+      Ibn al-Khaṭīb given command of the host: 9,500 levies, 900 regulars, 400 mercenaries and 350 in the
+      baggage train
+    who:
+      - ibn-al-khatib
+    threads:
+      - war-on-aragon
+    from:
+      - told
+    cite: Trent's account
+    detail:
+      levies: 9500
+      regulars: 900
+      mercenaries: 400
+      baggage: 350
+      savedLater: >-
+        The 2 September 1339 save shows the 'levies' were mostly mutaṭawwiʿa (20 regiments, 9,890 men), with
+        1,200 regulars and 1,200 mercenaries.
+  - id: 1339-05-24-murcia-held
+    'on': '1339-05-24'
+    kind: note
+    what: Tunisian troops hold Mursiyya and its countryside, opening a road from Granada to Aragon
+    where:
+      - mursiyya
+    threads:
+      - moroccan-castilian-war
+      - war-on-aragon
+    from:
+      - told
+    cite: Trent's account
+    detail:
+      save: the Murcia area is controlled by Morocco's side
+  - id: 1339-05-24-war-on-aragon
+    'on': '1339-05-24'
+    kind: war
+    what: Granada declares war on Aragon
+    threads:
+      - war-on-aragon
+    from:
+      - save
+    cite: checkpoint 1339-09-02
+tellings:
+  - id: 0739-11-14-the-road-through-mursiyya
+    'on': '1339-05-24'
+    title: Of the Road through Mursiyya, and the Host of Ibn al-Khaṭīb
+    verse: '65:3'
+    who:
+      - yusuf-i
+      - ibn-al-khatib
+      - gideon-ben-joshua
+    where:
+      - gharnata
+      - mursiyya
+      - ishbiliyya
+      - qarmuna
+      - shaluqa
+    covers:
+      - 1338-11-01-battle-ishbiliyya
+      - 1338-11-09-tunis-joins
+      - 1339-02-03-alliance-tunis
+      - 1339-02-28-battle-shaluqa
+      - 1339-03-10-battle-ishbiliyya
+      - 1339-03-25-battle-qarmuna
+      - 1339-04-06-battle-shaluqa
+      - 1339-05-14-death-gideon
+      - 1339-05-24-cb-aragon
+      - 1339-05-24-murcia-held
+      - 1339-05-24-war-on-aragon
+      - 1339-05-24-ibn-al-khatib-commands
+    text: >
+      Of the war that the Marīnid sultan made upon Qashtāla, there is little to tell that gladdens the heart.
+      In Rabīʿ al-Thānī of the year 739 the Castilians met the men of Fās beneath the walls of
+      [Ishbīliya](place:ishbiliyya), nearly eighteen thousand against fewer than four, and the field was
+      theirs. That winter and spring they won again at [Shalūqa](place:shaluqa), at Ishbīliya a second time,
+      at [Qarmūna](place:qarmuna), where six hundred men of the Maghrib stood against twelve thousand, and at
+      Shalūqa once more. Five times the infidel prevailed, and five times the banners of the Maghrib went back
+      across the plain. Tūnis entered the war in that same Rabīʿ, bringing Ṭarābulus, Qābis, Qafṣa, Tuqqurt
+      and Bijāya behind it. On the twenty-second of Rajab our lord bound himself to the Ḥafṣids by alliance,
+      as he was already bound to them by marriage.
+
+
+      Yet Allāh gives openings where men see only walls. While the Castilian hosts were busy in the west, the
+      Tunisians took [Mursiyya](place:mursiyya) with its fortress and the country around it. For a season,
+      therefore, there ran a road from our own marches eastward to the frontiers of Arghūn, where a Christian
+      king holds lands that were once al-Andalus. Our lord knew that such a road would not stay open long.
+
+
+      In the court there was one small sorrow. On the fourth of Dhū al-Qaʿda [Gideon ben
+      Joshua](person:gideon-ben-joshua), the Jewish burgher, a man quick with figures and quicker with the
+      cup, missed his footing on a stair and did not rise again.
+
+
+      Ten days later, on the fourteenth of Dhū al-Qaʿda in the year 739, the claim was made good.
+      [Gharnāṭa](place:gharnata) would reclaim from Arghūn what belonged to al-Andalus, and
+      [war](war:war-on-aragon) was proclaimed, the first that Gharnāṭa had made in its own name in this reign.
+      Command of the host went to [Muḥammad ibn al-Khaṭīb](person:ibn-al-khatib), who was twenty-five years
+      old and had no equal at court in counsel or in arms. Under him marched nearly ten thousand volunteers of
+      the towns and the mountains, twelve hundred regulars of the sultan, and twelve hundred hired swords.
+      With them went a baggage train of three hundred and fifty, so that the army might still eat when the
+      road through Mursiyya closed behind it.
+
+
+      *And whoever puts his trust in Allāh, He suffices him.*
+    behind: >-
+      The save has the casus belli against Aragon, dated the day of the save; the declaration, the host and
+      Tunis taking Murcia are Trent's account (the save credits the occupied Murcia area to Morocco, the war
+      leader). The host's figures follow the correction from the 2 September 1339 save (about 9,890
+      mutaṭawwiʿa, 1,200 regulars and 1,200 mercenaries), not Trent's first count.

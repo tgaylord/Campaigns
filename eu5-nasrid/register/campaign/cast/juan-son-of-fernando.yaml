@@ -1,0 +1,18 @@
+name: Juan of Castile
+born: '1412-03-25'
+father: fernando-son-of-pedro
+roles:
+  - heir of Castile (to 1430)
+stations:
+  - role: dīwān
+    from: '1433-10-03'
+    to: null
+    source: save
+    approx: false
+note: >-
+  Son of King Fernando and heir of Castile, eighteen in 1430, a knight of the English Order of the Garter.
+  After the Peace of Ṣafar (3 November 1430) he is of the court of the Ṭāʾifa of Burghush with his father
+  (saves of 17 August and 5 November 1430).
+game:
+  id: 16822914
+  name: John

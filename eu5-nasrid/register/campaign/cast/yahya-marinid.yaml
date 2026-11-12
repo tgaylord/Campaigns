@@ -1,0 +1,22 @@
+name: Yaḥyā
+arabic: يحيى
+house: Marīnid
+born: '1401-07-14'
+roles:
+  - sultan of Fās (from 1417)
+traits:
+  - malevolent
+stations:
+  - role: general
+    from: '1440-07-02'
+    to: '1440-07-03'
+    source: save
+    approx: false
+note: >-
+  Son of Abū Ḥammū and grandson of Abū al-Faḍl of Fās and Jadīla bint Yūsuf, so a great-grandson of Yūsuf I of
+  Gharnāṭa. His father died in a hunting accident in 1410; he succeeded his grandfather on 19 March 1417 and
+  ruled in his own name from his sixteenth birthday, 14 July 1417. Fās stays allied to al-Andalus (world file
+  of 11 August 1420).
+game:
+  id: 33575174
+  name: Yahya

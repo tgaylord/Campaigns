@@ -1,0 +1,23 @@
+name: Abū al-Ḥasan ʿAlī ibn Aḥmad
+arabic: أبو الحسن علي بن أحمد
+house: Naṣrid
+born: '1412-09-03'
+father: ahmad-ibn-ismail-ibn-saad
+roles:
+  - general
+stations:
+  - role: general
+    from: '1429-12-02'
+    to: null
+    source: save
+    approx: false
+note: >-
+  Son of Aḥmad ibn Ismāʿīl, ruler of the Ṭāʾifa of Liyūn, and so a nephew of the Emperor Muḥammad V; married.
+  At seventeen, on 30 June 1430, he commanded the army of al-Andalus before Santiago de Compostela in the War
+  of Shant Yāqub and broke 7,000 Galicians, killing or taking 3,800 for the loss of 230 (+25 war score)
+  (Trent's battle screen; save of 18 May 1430). Still the realm's general in 1448: he landed the army on
+  Sardinia in September 1448 and won at Seddori on 26 September, then crossed to Corsica, took Ajaccio and
+  besieged Bastia, which fell on 17 September 1449 after 265 days (Trent's account and battle screen).
+game:
+  id: 85402
+  name: Abu al-Hasan Ali

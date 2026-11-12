@@ -1,0 +1,399 @@
+date: '1359-03-15'
+title: The crowns at each other's throats
+source:
+  save: SP_GRA_1359_03_15 (compressed)
+  game: 1.4.5
+summary: >-
+  Qashtāla and Portugal march on Arghūn, with Savoy and Sicily beside it, while Granada watches, its truce
+  with Qashtāla running to 1363. Sovereignty stands at 98 and Morocco's influence at 2.6; Granada can now
+  raise more men than Qashtāla. Shares of power are estimated from the 1 June 1349 reading.
+realm:
+  towns: 43
+  souls: 619835
+  treasury: 100
+  income: 61.8
+  expenses: 50.6
+  stability: 30.9
+  prestige: 38
+  regiments: 5
+  ships: 5
+  manpower: 1984
+court:
+  ruler: yusuf-i
+  heir: saad-ibn-yusuf
+  capital: gharnata
+  council:
+    - who: dua-marinid
+      seat: Integrating the new lands
+    - who: ismail-ibn-ismail
+      seat: Integrating the new lands
+standing:
+  allies:
+    - Mamluks
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+  estates:
+    - name: Crown
+      power: 36.55
+    - name: Nobility
+      power: 23.73
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 6.01
+      mood: 50
+    - name: Burghers
+      power: 11.03
+      mood: 50
+    - name: Commoners
+      power: 4.24
+      mood: 58
+    - name: Dhimmī
+      power: 18.43
+      mood: 90
+peoples:
+  cultures:
+    Andalusi: 292304
+    Castilian: 289985
+    Sephardi: 28435
+    Mustaarabi: 4042
+    Sardinian: 1932
+    Catalan: 878
+  faiths:
+    Sunni: 294951
+    Catholic: 292464
+    Jewish: 31541
+    Bori_Religion: 659
+    Nyama: 220
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+  allies:
+    - MAM
+beats:
+  - id: 1356-06-09-textile-charter
+    'on': '1356-06-09'
+    kind: realm
+    what: >-
+      A formal textile charter is granted to Gharnāṭa: the silk and cloth of the city have become a pillar of
+      the realm's economy
+    who:
+      - yusuf-i
+    where:
+      - gharnata
+    from:
+      - told
+    cite: Trent's account
+    detail:
+      charter: textile
+      location: granada
+  - id: 1356-10-libraries
+    'on': '1356-10-01'
+    kind: realm
+    what: >-
+      Libraries rise in the cities of the south, and soon will in the north, to carry Islam and Andalusī
+      learning back into Qurṭuba and the lands purged of them during the Castilian occupation
+    who:
+      - yusuf-i
+    where:
+      - gharnata
+      - malaqa
+      - al-mariyya
+      - qurtuba
+    from:
+      - told
+    cite: Trent's account (late 1356)
+    detail:
+      aim: spread Islam and Andalusi culture northward
+  - id: 1356-10-roads
+    'on': '1356-10-01'
+    kind: realm
+    what: >-
+      Roads are built through the mountains around Gharnāṭa: south to al-Mariyya, and north-east to the
+      saffron fields of Wādī Āsh and Basṭa
+    who:
+      - yusuf-i
+    where:
+      - gharnata
+      - al-mariyya
+      - basta
+      - wadi-ash
+    threads:
+      - towns
+    from:
+      - told
+    cite: Trent's account (late 1356; the exact day isn't given)
+    detail:
+      roads:
+        - Gharnāṭa–al-Mariyya
+        - Gharnāṭa–Wādī Āsh–Basṭa (saffron)
+  - id: 1357-07-northern-madrasas
+    'on': '1357-07-01'
+    kind: realm
+    what: >-
+      The next stage of the reform: madrasas are founded in the northern cities as well, carrying the learning
+      of Gharnāṭa into the lands won from Qashtāla
+    who:
+      - yusuf-i
+    where:
+      - qurtuba
+      - ishbiliyya
+      - jayyan
+    from:
+      - told
+    cite: Trent's account (July 1357; the exact day isn't given)
+    detail:
+      building: madrasa
+      region: the northern cities
+  - id: 1358-02-great-madrasa-qurtuba
+    'on': '1358-02-01'
+    kind: realm
+    what: >-
+      Work begins on a Great Madrasa at Qurṭuba, to serve the city's new worshippers as Islam returns to the
+      old seat of the caliphs
+    who:
+      - yusuf-i
+    where:
+      - qurtuba
+    from:
+      - told
+    cite: Trent's account (February 1358; the exact day isn't given)
+    detail:
+      building: great madrasa
+      location: cordoba
+      status: under construction
+  - id: 1358-08-08-foreign-wisdom
+    'on': '1358-08-08'
+    kind: note
+    what: >-
+      Foreign Wisdom: Duʿāʾ, the Zenata minister of the Marīnid house, is widely praised for bringing fresh
+      ideas and practices to the court, though the nobility are perturbed that a foreigner serves their amir
+    who:
+      - dua-marinid
+    from:
+      - seen
+    cite: Trent's screenshot of the event
+    detail:
+      event: Foreign Wisdom
+      effects: nobility perturbed
+  - id: 1358-08-08-works
+    'on': '1358-08-08'
+    kind: note
+    what: >-
+      Works under way across the realm: the Great Madrasa of Qurṭuba and a madrasa in Jayyān, a spinners'
+      guild in Gharnāṭa, marketplaces in Istijja, Ishbīliya and Mālaqa, and a gravel road to Yuz Aryuba; the
+      dīwān funds the bureaucracy from the crown's coffers
+    where:
+      - qurtuba
+      - jayyan
+      - gharnata
+      - istijja
+      - ishbiliyya
+      - malaqa
+      - urjuba
+    from:
+      - seen
+    cite: Trent's screenshot (the construction and government panels, 8 August 1358)
+    detail:
+      constructions:
+        - Great Madrasa, Qurṭuba
+        - Madrasa, Jayyān
+        - Spinners' Guild, Gharnāṭa
+        - Marketplace, Istijja
+        - Marketplace, Ishbīliya
+        - Marketplace, Mālaqa
+        - Gravel road to Yuz Aryuba
+      policy: 'Bureaucratic Funding: Crown Coffers'
+      population: 623000
+  - id: 1359-03-15-castile-aragon-war
+    'on': '1359-03-08'
+    kind: world
+    what: >-
+      The Christian crowns turn on each other: Qashtāla and Portugal march east into Arghūn, which has Savoy
+      and Sicily beside it. The court sees in it the fruit of its long work to split the Iberians, and an
+      opportunity
+    who:
+      - yusuf-i
+    from:
+      - save
+      - told
+    cite: Trent's account; the save of 15 March 1359 dates the war to 8 March and lists Arghūn's side
+    detail:
+      attackers:
+        - CAS
+        - POR
+      defenders:
+        - ARA
+        - SAV
+        - SIC
+        - PIE
+        - ATH
+        - CEV
+      granada: not involved
+      casusBelli: cb_parliament_conquer_province
+  - id: 1359-03-15-state
+    'on': '1359-03-15'
+    kind: land
+    what: >-
+      Sovereignty 98.4, the highest yet, and Morocco's influence 2.6. Granada can raise 6,700 men to
+      Qashtāla's 3,900 and Portugal's 4,300; stability 31, income 62 against expenses 51
+    threads:
+      - strait
+    from:
+      - save
+    cite: save of 15 March 1359
+    detail:
+      sovereignty: 98.44
+      influence: 2.62
+      maxManpower:
+        GRA: 6707
+        CAS: 3916
+        POR: 4327
+        ARA: 1346
+      stability: 30.9
+tellings:
+  - id: 0758-07-12-roads-libraries-and-the-weavers
+    'on': '1357-07-01'
+    title: Of Roads, Libraries, and the Charter of the Weavers
+    verse: 96:3-5
+    who:
+      - yusuf-i
+    where:
+      - gharnata
+      - al-mariyya
+      - wadi-ash
+      - basta
+      - qurtuba
+      - jayyan
+      - ishbiliyya
+    covers:
+      - 1356-06-09-textile-charter
+      - 1356-10-roads
+      - 1356-10-libraries
+      - 1357-07-northern-madrasas
+    text: >
+      *Read, in the name of your Lord who created.* The first word Allāh sent down to His Prophet was not
+      *fight* or *rule* but *read*. In the years after the pestilence and the Sevillan revolt, our lord
+      [Yūsuf](person:yusuf-i) set out to make it the first word of his government as well.
+
+
+      He began, as a prudent prince does, with the wealth that would pay for it. On the ninth of Jumādā
+      al-Ākhira 757 he granted a charter to the weavers of [Gharnāṭa](place:gharnata). For a generation the
+      silk of the city had been carried to every market from Genoa to Tūnis, and now the guilds of the city
+      had a law of their own and the protection of the crown. The looms of the Albayzín, which the plague had
+      half emptied, filled again.
+
+
+      In Shawwāl the roads followed. Engineers cut new ways through the mountains: south from Gharnāṭa to
+      [al-Mariyya](place:al-mariyya) and its harbour, and north-east to the saffron fields of [Wādī
+      Āsh](place:wadi-ash) and [Basṭa](place:basta). Tracks that a mule could barely climb in winter became
+      roads that carried carts in every season. Every road the sultan built to carry silk would also carry
+      teachers.
+
+
+      At the same time the libraries rose, in Gharnāṭa first and then in the other cities of the south. These
+      were not the treasure-houses of a prince, locked away for his own pleasure. They were rooms where any
+      man who could read might sit and read. The sultan's purpose was plain, and he did not hide it. More than
+      a hundred years under Qashtāla had stripped [Qurṭuba](place:qurtuba) and the valley of the great river
+      of their faith and their language. The mosques had been made churches, the schools closed, and the books
+      burned or carried north. The Peace of Qurṭuba had given back the land. The libraries were meant to give
+      back the people.
+
+
+      On the twelfth of Rajab 758 the second part of the reform began. Madrasas were founded in the northern
+      cities as well, in the lands won from Qashtāla, where [Jayyān](place:jayyan) and
+      [Ishbīliya](place:ishbiliyya) had not heard the law taught for a century. The jurists who taught in them
+      were paid from the treasury. They were told to teach the Book and the law to anyone who would listen,
+      the sons of Christian farmers among them, and not to compel anyone. The ʿulamāʾ grumbled that teaching
+      unbelievers was a strange use of the treasury. The sultan answered that the Prophet had freed captives
+      at Badr for teaching ten Muslim children to read, and that he could at least pay for the same in
+      reverse.
+
+
+      The court did not expect quick results, and it got none. In the year the northern madrasas opened, three
+      in every ten souls in Qurṭuba were Muslims, the same as at the peace, and about one in ten in the valley
+      around it. But a madrasa is not built for a year. It is built for a hundred.
+
+
+      *Read, and your Lord is the most Generous, who taught by the pen, taught man that which he knew not.*
+  - id: 0759-09-02-the-great-madrasa-of-qurtuba
+    'on': '1358-08-08'
+    title: Of the Great Madrasa of Qurṭuba, and the Foreign Wisdom
+    verse: '58:11'
+    who:
+      - yusuf-i
+      - saad-ibn-yusuf
+      - dua-marinid
+      - sayyida-of-fezzan
+      - ismail-ibn-yusuf
+      - jadila-bint-yusuf
+      - tizemt-hafsid
+      - ali-ibn-yusuf
+      - maryam-bint-yusuf
+      - fatima-bint-yusuf
+      - muhammad-ibn-yusuf
+    where:
+      - qurtuba
+      - fas
+      - jayyan
+      - gharnata
+      - istijja
+      - ishbiliyya
+      - malaqa
+      - urjuba
+    covers:
+      - 1358-02-great-madrasa-qurtuba
+      - 1358-08-08-foreign-wisdom
+      - 1358-08-08-works
+    text: >
+      In Ṣafar of the year 759 the masons came to [Qurṭuba](place:qurtuba) again, this time to build for Allāh
+      and not for the governor. Beside the great mosque, which the Castilians had made a cathedral and which
+      still stood as one, our lord [Yūsuf](person:yusuf-i) began a Great Madrasa. It was meant to be the
+      largest college west of [Fās](place:fas). Qurṭuba's Muslims were few, perhaps three in ten, but there
+      were more each year: converts from the Christian quarters, Andalusīs back from exile in the mountains,
+      students drawn by the libraries. The old mosques of the city could no longer hold them, and the old
+      learning of the city had no house. The Great Madrasa was to be both.
+
+
+      Nor was it the only work that year. By Ramaḍān the dīwān's register of works read like a census of the
+      realm's ambitions. There was a madrasa rising in [Jayyān](place:jayyan) and a guild of spinners in
+      [Gharnāṭa](place:gharnata). There were marketplaces in [Istijja](place:istijja),
+      [Ishbīliya](place:ishbiliyya) and [Mālaqa](place:malaqa), and a road of gravel to [Yuz
+      Aryuba](place:urjuba). The dīwān paid for its new clerks out of the crown's own coffers, so that no
+      estate could claim to own them. The sultan's son [Saʿd](person:saad-ibn-yusuf), ten years old that year,
+      was allowed to sit at the foot of the table when the register was read. His tutors wrote that he asked
+      of every work not what it would cost but what it would bring in, and how soon.
+
+
+      The mind behind much of this sat in the dīwān and not on the throne. [Duʿāʾ](person:dua-marinid), the
+      Marīnid wife who had taken a seat in the council in 756, had become the most talked-about minister in
+      the realm. She had grown up in the palaces of Fās and had seen how the Marīnids ran their colleges and
+      their chanceries. She brought those methods to Gharnāṭa: the endowments that paid for the madrasas, the
+      registers that counted their students, and the habit of asking what a thing cost before praising it.
+      Scholars and merchants praised her for the fresh air she brought into a court that had grown stale in
+      the lean years. The nobles were troubled. A foreigner, a woman and a Marīnid sat at the sultan's right
+      hand, and they did not like any of the three. They muttered it to each other, and once, unwisely, to the
+      sultan. He told them that the Prophet's wife Khadīja had been a merchant and his wife ʿĀʾisha a scholar,
+      and asked which of them they would have advised him against. [Sayyida](person:sayyida-of-fezzan) said
+      less and said it better. The first wife kept her own court in the harem, with its own poets and its own
+      guests, and it was noticed that the scholars who praised Duʿāʾ in the dīwān were not asked to it.
+
+
+      The harem that had brought Duʿāʾ to the council had filled by then, as the women of the palace had
+      foretold at Saʿd's birth, though not with sons alone. [Sayyida](person:sayyida-of-fezzan) had borne the
+      sultan [Ismāʿīl](person:ismail-ibn-yusuf) and [Jadīla](person:jadila-bint-yusuf).
+      [Tizemt](person:tizemt-hafsid) had borne him [ʿAlī](person:ali-ibn-yusuf),
+      [Maryam](person:maryam-bint-yusuf) and [Fāṭima](person:fatima-bint-yusuf). Duʿāʾ had borne him a son,
+      [Muḥammad](person:muhammad-ibn-yusuf), a sickly child, and lost him that spring when he was barely two.
+      The nurses said that little Maryam was as quick as Saʿd had been at her age.
+
+
+      The Great Madrasa took years to finish, as such houses do. But from the year it was begun the call to
+      prayer was heard more often in Qurṭuba. By the year the War of Independence began, nearly four in ten of
+      the city's people were Muslims.
+
+
+      *Allāh raises those who have believed among you and those who were given knowledge, by degrees.*

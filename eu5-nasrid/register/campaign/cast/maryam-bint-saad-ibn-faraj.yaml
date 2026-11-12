@@ -1,0 +1,24 @@
+name: Maryam bint Saʿd
+arabic: مريم بنت سعد
+sex: f
+house: Naṣrid
+born: '1390-11-05'
+died: '1448-06-28'
+father: saad-ibn-faraj
+mother: umm-al-fath-bint-saad
+roles:
+  - Shaykha of the Ṭāʾifa of Qūnka
+traits:
+  - entrepreneur
+  - free_thinker
+note: >-
+  Daughter of Saʿd ibn Faraj, ruler of the Ṭāʾifa of Qūnka, and of Umm al-Fatḥ, the late Emperor Saʿd's
+  daughter: a niece of the Emperor Ismāʿīl. Married to her cousin Saʿd ibn Ismāʿīl, the Emperor's second son.
+  On her father's death on 20 February 1408 she became Shaykha of Qūnka, at seventeen (save of 5 August 1408;
+  Trent's account). Mother of Abū al-Ḥasan ʿAlī, born 17 April 1410. By then the game counted her a free
+  thinker (save of 29 June 1410). By August 1420 the game also marks her an entrepreneur (save of 11 August
+  1420). She died of a burst ulcer on 28 June 1448, after forty years as Shaykha; her son Abū al-Ḥasan ʿAlī
+  ibn Saʿd succeeded her (autosave of 1 February 1449).
+game:
+  id: 75578
+  name: Mary

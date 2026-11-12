@@ -1,0 +1,24 @@
+name: Naṣr al-Istijjī
+house: of Istijja
+tier: key
+born: '1316-08-09'
+died: '1364-01-18'
+roles:
+  - regent
+traits:
+  - babbling_buffoon
+stations:
+  - role: regent
+    from: '1363-08-02'
+    to: '1364-09-11'
+    source: checkpoints
+    approx: true
+note: >-
+  A noble of the house of Istijja (Écija). The game made him regent during Yūsuf I's Hajj (the chronicle gave
+  that regency to Faraj); on Yūsuf's death in August 1363 he became regent for the young Saʿd, and at once
+  married Duʿāʾ, the late amir's Marīnid widow and minister. The game calls him a babbling buffoon. His
+  regency ended when Saʿd came of age on 18 January 1364, and he died that same day. The court called it
+  'sickness'; the game records a hunting accident. Duʿāʾ, his widow, married the young sultan soon after.
+game:
+  id: 39104
+  name: Naṣr al-Stijjai

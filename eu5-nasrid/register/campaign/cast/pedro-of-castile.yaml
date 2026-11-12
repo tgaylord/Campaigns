@@ -1,0 +1,41 @@
+name: Pedro of Castile
+house: Castilian royal house
+tier: key
+born: '1370-12-03'
+died: '1422-10-14'
+roles:
+  - king of Castile
+traits:
+  - stubborn
+  - drunkard
+stations:
+  - role: dīwān
+    from: '1393-07-01'
+    to: '1394-01-06'
+    source: save
+    approx: false
+  - role: admiral
+    from: '1402-02-02'
+    to: '1402-02-11'
+    source: save
+    approx: false
+  - role: general
+    from: '1410-07-23'
+    to: '1410-08-25'
+    source: save
+    approx: false
+note: >-
+  Son of King Fernando, king of Castile from his father's death on 6 January 1394, two months before the
+  Emperor's declaration. He lost the War of the League and on 22 June 1395 surrendered 51 towns, Madrid,
+  Salamanca, Ávila and Cuenca among them, with reparations for ten years (saves of 4 March 1394 and 22 June
+  1395). In June 1410, at thirty-nine, still king, stubborn and a drunkard, he faced the Emperor Ismāʿīl's
+  declaration of the fourth war of the Istirdād with 1,650 men under arms; his heir is his son Fernando,
+  eighteen (save of 29 June 1410). He capitulated on 2 September 1411, and at the peace of 1 November 1411
+  gave up 63 towns, Valladolid, Burgos, León and Navarre among them, keeping 45 in the north with his capital
+  at Oviedo (saves of 1 November 1411). On 4 September 1420 his kingdom fell apart into the petty kingdoms of
+  Galicia, Asturias and Navarre, and he kept only four towns on the Cantabrian coast, ruling from Santander
+  (save of 4 September 1420). He died at Santander on 14 October 1422, at fifty-one, from a fall down a flight
+  of stairs; his son Fernando succeeded him (save of 5 November 1423).
+game:
+  id: 58799
+  name: Peter

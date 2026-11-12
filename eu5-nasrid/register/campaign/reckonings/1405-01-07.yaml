@@ -1,0 +1,153 @@
+date: '1405-01-07'
+title: The Risings of 807
+source:
+  save: SP_ADU_1405_01_07 (compressed)
+  game: 1.4.6
+summary: >-
+  Ten weeks after the Peace of Avignon the conquered north rises: a Kingdom of Estremadura in the Portuguese
+  lands, a Kingdom of Toledo again in La Mancha and the Madrid country, and Ciudad Rodrigo against the Ṭāʾifa
+  of Shalamanka. Al-Andalus holds 100 towns of 148 and 1,295,000 people; Toledo, Lisbon and Setúbal hold. The
+  rebels raise some 11,000 men, nearly all levies, against 3,400 regulars. The treasury stands at 218 with the
+  Pope's gold. A rebellion, not a new border: the map shows the risings as they stood. Shares of power are
+  estimated from the 1 June 1349 reading.
+realm:
+  towns: 100
+  souls: 1294574
+  treasury: 218
+  income: 242.4
+  expenses: 156.9
+  stability: 22.5
+  prestige: 100
+  regiments: 9
+  ships: 32
+  manpower: 666
+court:
+  ruler: saad-ibn-yusuf
+  heir: ismail-ibn-saad
+  capital: ishbiliyya
+  council:
+    - who: umm-al-fath-bint-saad
+      seat: Integrating the new lands
+    - who: ismail-ibn-yusuf
+      seat: Integrating the new lands
+    - who: maryam-bint-yusuf
+      seat: Integrating the new lands
+    - who: ismail-ibn-saad
+      seat: Promoting Andalusī culture
+standing:
+  wars:
+    - risings-of-807
+  allies:
+    - Mamluks
+    - Morocco
+  subjects:
+    - Valencia (taifa)
+    - Taifa of the Algarve (taifa)
+    - Catalonia (taifa)
+    - Aragon (taifa)
+    - Taifa of Salamanca (taifa)
+    - Taifa of Cuenca (taifa)
+  estates:
+    - name: Crown
+      power: 35.17
+    - name: Nobility
+      power: 24.26
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 9.48
+      mood: 50
+    - name: Burghers
+      power: 11.13
+      mood: 51
+    - name: Commoners
+      power: 3.49
+      mood: 50
+    - name: Dhimmī
+      power: 16.47
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 600845
+    Castilian: 378440
+    Leonese: 125841
+    Sephardi: 118349
+    Portuguese: 62467
+    Mustaarabi: 3283
+  faiths:
+    Catholic: 609917
+    Sunni: 567392
+    Jewish: 116585
+    Bori_Religion: 455
+    Nyama: 219
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - ALV
+    - CAT
+    - ARA
+    - AAA98
+    - ABA60
+  allies:
+    - MAM
+    - MOR
+beats:
+  - id: 1405-01-01-the-risings
+    'on': '1405-01-01'
+    kind: war
+    what: >-
+      The north rises. Perhaps this was what the Pope had counted on. On New Year's Day 1405 the Portuguese
+      lands proclaim a Kingdom of Estremadura and La Mancha and the Madrid country rise again as a Kingdom of
+      Toledo; the next day the Leonese of Shalamanka rise against their Naṣrid ṭāʾifa as Ciudad Rodrigo.
+      Forty-eight towns of the crown and sixteen of Shalamanka go over; Toledo, Lisbon and Setúbal hold
+    who:
+      - saad-ibn-yusuf
+      - saad-ibn-ismail
+    threads:
+      - risings-of-807
+    from:
+      - save
+      - told
+    cite: save of 7 January 1405; Trent's account and map
+    detail:
+      rebels:
+        Kingdom of Toledo (TOL):
+          towns: 30
+          population: 294300
+          men: 5,086 (1,292 regulars)
+          towns list: >-
+            Madrid, Alcalá de Henares, El Escorial, Colmenar, Maqueda, Chinchón, Ocaña, Uclés, Consuegra,
+            Alcázar de San Juan, Tomelloso, Villarrobledo, Ciudad Real, Almodóvar del Campo, Puertollano,
+            Calatrava, Malagón, Manzanares, Montiel, Villapalacios, Alhambra, Alcaraz, Lezuza, Albacete,
+            Chinchilla, Hellín, Jumilla, Caravaca, Mula, Segura de la Sierra
+        Estremadura (ABA55):
+          towns: 18
+          population: 253600
+          men: 2,889 (149 regulars), 1 ship
+          towns list: >-
+            Santarém, Torres Vedras, Torres Novas, Tomar, Alcobaça, Salvaterra, Alcácer do Sal, Évora,
+            Montemor, Avis, Mora, Ponte de Sor, Crato, Portalegre, Elvas, Estremoz, Vila Viçosa, Portel
+        Ciudad Rodrigo (ABA58):
+          towns: 16
+          from: the Ṭāʾifa of Shalamanka
+          men: 3,070 levies
+          towns list: >-
+            Salamanca, Ávila, Ciudad Rodrigo, Ledesma, Alba de Tormes, Plasencia, Coria, Galisteo, Granadilla,
+            La Adrada, Las Navas, Matilla de Caños, Oropesa, San Felices, Villatoro, Yecla de Yeltes
+      loyal: Toledo, Lisbon, Setúbal, Cáceres, Badajoz, Mérida, Talavera
+      realm:
+        towns:
+          - 148
+          - 100
+        population:
+          - 1840625
+          - 1294574
+        treasury: 218
+        income: 242.4
+        expenses: 156.9
+        stability: 22.5
+        manpower: 666
+      forces:
+        al-Andalus: 3,394 regulars, 32 ships
+        ṭāʾifas: Catalonia 307, Valencia 450, Algarve 500

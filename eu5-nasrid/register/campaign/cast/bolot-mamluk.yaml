@@ -1,0 +1,29 @@
+name: Būlād
+arabic: بولاد
+house: Baḥrī
+tier: key
+born: '1344-08-29'
+died: '1396-06-16'
+roles:
+  - Mamlūk sultan of Egypt
+traits:
+  - loose_lips
+stations:
+  - role: admiral
+    from: '1375-06-23'
+    to: '1375-09-11'
+    source: save
+    approx: false
+  - role: general
+    from: '1394-05-19'
+    to: '1394-06-01'
+    source: save
+    approx: false
+note: >-
+  Sultan of Egypt from the death of his father Jamāl on 3 October 1368, and half-brother of Aiman, Saʿd's
+  Mamlūk wife: Granada's one ally is ruled by the sultan's brother-in-law. In 1370 his realm was the world's
+  seventh power, with some 60,000 men under arms (save of 13 September 1370). Died 1396-06-16 (save of 24
+  October 1414).
+game:
+  id: 32892
+  name: Bolot

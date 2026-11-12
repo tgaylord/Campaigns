@@ -1,0 +1,23 @@
+name: José Fernando Tuñón
+born: '1385-11-13'
+roles:
+  - king of Asturias (from 1420)
+stations:
+  - role: admiral
+    from: '1422-10-01'
+    to: '1424-12-17'
+    source: save
+    approx: false
+  - role: general
+    from: '1425-01-02'
+    to: '1425-03-25'
+    source: save
+    approx: false
+note: >-
+  A Leonese noble who on 4 September 1420, when the Kingdom of Castile fell apart, became king of Asturias: 8
+  towns from Oviedo, Castile's last capital, to Avilés, Villaviciosa and Llanes, some 130,000 people, nearly
+  all Leonese and Catholic (save of 4 September 1420). On 25 March 1425 Galicia took all of Asturias (save of
+  25 May 1428).
+game:
+  id: 88881
+  name: Joseph Ferdinand Tunon

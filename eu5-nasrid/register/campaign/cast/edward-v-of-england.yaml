@@ -1,0 +1,33 @@
+name: Edward of England
+tier: key
+born: '1400-11-29'
+roles:
+  - king of England (from 1423)
+  - king of France (from 1428)
+  - Angevin Emperor (from 1429)
+stations:
+  - role: dīwān
+    from: '1422-11-08'
+    to: '1423-04-18'
+    source: save
+    approx: false
+  - role: admiral
+    from: '1431-02-04'
+    to: '1432-08-21'
+    source: save
+    approx: false
+  - role: general
+    from: '1432-08-28'
+    to: null
+    source: save
+    approx: false
+note: >-
+  King of England as Edward V from 18 April 1423. His war with France from April 1427 ended in the peace of 28
+  November 1428, which took eighty French towns for England and its vassals and made Languedoc an English
+  dominion of Toulouse. On 1 December 1428 he was made king of France as well, uniting England, France and the
+  Dauphiné under one crown. England is allied to Castile and counts al-Andalus among its rivals (saves of
+  1428). On 11 June 1429 he was crowned in Paris and his crowns were joined as a new Angevin Empire (Trent's
+  account).
+game:
+  id: 80238
+  name: Edward

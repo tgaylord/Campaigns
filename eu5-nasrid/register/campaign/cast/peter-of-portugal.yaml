@@ -1,0 +1,33 @@
+name: Peter, the Portuguese pretender
+house: Portuguese royal house
+born: '1320-04-08'
+died: '1384-06-14'
+roles:
+  - pretender to Portugal
+stations:
+  - role: dīwān
+    from: '1337-04-02'
+    to: '1340-10-24'
+    source: save
+    approx: false
+  - role: rebel
+    from: '1340-10-24'
+    to: '1340-10-25'
+    source: save
+    approx: false
+  - role: general
+    from: '1344-03-02'
+    to: '1344-03-11'
+    source: save
+    approx: false
+  - role: admiral
+    from: '1363-06-02'
+    to: '1363-06-07'
+    source: save
+    approx: false
+note: >-
+  Queen Maria's younger brother; leads the revolt against her that began on 25 October 1340. Died 1384-06-14
+  (save of 24 October 1414).
+game:
+  id: 1117
+  name: Peter

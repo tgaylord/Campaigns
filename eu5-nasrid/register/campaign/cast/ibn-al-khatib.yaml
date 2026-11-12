@@ -1,0 +1,53 @@
+name: Ibn al-Khaṭīb
+arabic: ابن الخطيب
+tier: central
+born: '1313-11-16'
+died: '1373-03-13'
+roles:
+  - admiral of Castile
+  - general
+drives:
+  - from: '1339-05-24'
+    text: The ablest man at court, given the host against Arghūn at twenty-five.
+    by: trent
+    source: Trent's account, May 1339
+  - from: '1341-07-08'
+    text: Goes over to Qashtāla, and serves its fleets and armies.
+    by: chronicle
+    source: save of 8 September 1341
+  - from: '1341-07-08'
+    text: >-
+      Why he went over, the chronicle never learned. He serves Qashtāla's fleets for thirty years, and is
+      never taken.
+    by: chronicle
+    source: his record
+  - from: '1366-01-06'
+    text: Leads Qashtāla's last field army, and survives its destruction at San Clemente.
+    by: chronicle
+    source: save of 5 April 1366
+ties:
+  - with: murad
+    kind: rival
+    from: '1366-01-06'
+    text: Murād broke his last army at San Clemente; the renegade escaped, as he always did.
+    by: chronicle
+stations:
+  - role: admiral
+    from: '1364-11-02'
+    to: '1364-11-09'
+    source: save
+    approx: false
+  - role: general
+    from: '1371-08-07'
+    to: '1373-03-13'
+    source: save
+    approx: false
+note: >-
+  In the game the ablest man at court (88/79/84). Given command of the host against Aragon in May 1339
+  (Trent's account). By 8 July 1341 he had left Granada: the save of 8 September 1341 has him in Castile as
+  Frederick ibn al-Khaṭīb, Catholic and Castilian, an admiral from 8 July 1341. On 6 January 1366 he led
+  Castile's last field army, 950 men, at San Clemente, and Murād destroyed it. He himself survived (save of 5
+  April 1366). Died 1373-03-13 (save of 24 October 1414).
+game:
+  id: 3547
+  name: Muhammad

@@ -1,0 +1,329 @@
+date: '1429-07-02'
+title: The Death of Ismāʿīl
+source:
+  save: SP_ADU_1429_07_02 (compressed)
+  game: 1.4.7
+summary: >-
+  Four days after the Emperor Ismāʿīl II died in camp at Ishbīliya, on 28 June 1429, after twenty-four years
+  on the throne. His son Muḥammad V, forty-three, reigns; the heir is Muḥammad's eldest son Ismāʿīl, and
+  Ismāʿīl and his brother Aḥmad now sit in the dīwān. The succession has cost the crown most of its political
+  influence (22, from 100). The crown holds 195 towns and 2,571,000 people, with seven ṭāʾifas; Teguise on
+  Lanzarote was settled on 1 July. The Angevin Empire, Castile's ally, is second in the world with 180 points
+  to al-Andalus's 101. Estates estimated from the reading of 16 November 1428. Treasury 647; income 280
+  against 295; stability 6.
+realm:
+  towns: 195
+  souls: 2570984
+  treasury: 647
+  income: 279.9
+  expenses: 295
+  stability: 5.8
+  prestige: 64
+  regiments: 9
+  ships: 50
+  manpower: 15210
+court:
+  ruler: muhammad-ibn-ismail-ibn-saad
+  heir: ismail-ibn-muhammad-ibn-ismail
+  capital: ishbiliyya
+  council:
+    - who: ismail-ibn-muhammad-ibn-ismail
+      seat: Promoting Andalusī culture
+    - who: ahmad-ibn-muhammad-ibn-ismail
+      seat: Integrating the new lands
+    - who: umm-al-fath-bint-muhammad
+      seat: Integrating the new lands
+    - who: yusuf-ibn-saad
+      seat: Promoting Andalusī culture
+    - who: jadila-bint-saad-ibn-faraj
+      seat: Developing the provinces
+standing:
+  allies:
+    - Mamluks
+    - Morocco
+    - Tunis
+  subjects:
+    - Catalonia (taifa)
+    - Aragon (taifa)
+    - Taifa of Cuenca (taifa)
+    - Kingdom of Portugal (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+  estates:
+    - name: Crown
+      power: 29.37
+    - name: Nobility
+      power: 17.25
+      mood: 37
+    - name: ʿUlamāʾ
+      power: 12.55
+      mood: 50
+    - name: Burghers
+      power: 21.59
+      mood: 50
+    - name: Commoners
+      power: 2.84
+      mood: 50
+    - name: Dhimmī
+      power: 16.4
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 797736
+    Castilian: 716067
+    Portuguese: 485305
+    Sephardi: 185234
+    Catalan: 176885
+    Leonese: 163350
+  faiths:
+    Sunni: 1228636
+    Catholic: 1146742
+    Jewish: 177626
+    Guanche_religion: 15561
+    Rogo_miki_religion: 694
+map:
+  ours:
+    - GRA
+  subjects:
+    - CAT
+    - ARA
+    - ABA60
+    - POR
+    - ABA42
+    - ABA49
+    - ABA55
+  allies:
+    - MAM
+    - MOR
+    - TUN
+beats:
+  - id: 1429-06-11-the-angevin-empire
+    'on': '1429-06-11'
+    kind: realm
+    what: >-
+      News from the north: Edward, king of England, is crowned in Paris, and his crowns are joined as a new
+      Angevin Empire. Its borders are those of the English and French crowns of 1428; its name is new, and so
+      are its ambitions
+    who:
+      - edward-v-of-england
+    threads:
+      - europe
+    from:
+      - told
+    cite: Trent's account, 11 June 1429
+    detail:
+      account: >-
+        The King of England is officially crowned in Paris on June 11th, 1429, forming a new 'Angevin Empire'
+        under his rule (Trent)
+      note: >-
+        the game's tag is ANV (formed from England, ENG); France keeps its own tag in personal union under the
+        Angevin crown. On 2 July 1429 the Angevin Empire is second in the world with 180 points, against
+        al-Andalus's 101 (save of 2 July 1429)
+      borders: unchanged (Trent)
+      ambitions: the name is now different, as are the ambitions (Trent)
+  - id: 1429-06-28-accession-of-muhammad-v
+    'on': '1429-06-28'
+    kind: crown
+    what: >-
+      Muḥammad V, the late Emperor's eldest son, forty-three, succeeds to the throne by the law of the house.
+      The court's verdict, in the game's words: we have been cursed, God have mercy on us all
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - ismail-ibn-saad
+      - ismail-ibn-muhammad-ibn-ismail
+    threads:
+      - house
+    from:
+      - save
+      - seen
+    cite: Trent's screenshot of 2 July 1429; save of 2 July 1429
+    detail:
+      game: >-
+        Emperor Muḥammad V Nasrid will now rule our glorious country! We have been cursed! God have mercy on
+        us all (the game's text)
+      abilities: 15/20/16, 'Balanced'
+      heir: his eldest son Ismāʿīl, born 4 October 1402 (70/73/63)
+      note: >-
+        the succession question of 1398 and 1408 (SYSTEMS): the law was never changed, on the strength of
+        Muḥammad's gifted sons
+      consort: Isabel de Montsoriu
+      diwan: >-
+        the new Emperor's sons Ismāʿīl (promoting Andalusī culture) and Aḥmad (integrating the new lands) take
+        the seats of Saʿd ibn Yūsuf and Muḥammad ibn Yūsuf; Umm al-Fatḥ, Prince Yūsuf and Jadīla keep theirs
+      politicalInfluence: 100 before the succession, 22 after
+  - id: 1429-06-28-death-of-the-emperor-ismail
+    'on': '1429-06-28'
+    kind: death
+    what: >-
+      The Emperor Ismāʿīl II dies at sixty-three, on 25 Ramaḍān 832, in the last ten nights of the month, with
+      the army camped at Ishbīliya. He had reigned twenty-four years. The realm will miss his fair and
+      impartial rulings
+    who:
+      - ismail-ibn-saad
+    where:
+      - ishbiliyya
+    threads:
+      - house
+    from:
+      - save
+      - seen
+    cite: Trent's screenshot of 2 July 1429; save of 2 July 1429
+    detail:
+      game: >-
+        We bring sad news. Emperor ʿIsmāʿīl II Nasrid has died at the age of 63, and He was Emperor of the
+        Andalusi Empire. His Late Imperial Majesty died while the army was camped in Šbilya. Our realm will
+        miss his fair and impartial rulings (the game's text)
+      reign: 1 March 1405 – 28 June 1429 (the save's ruler terms)
+      age: 63
+      realm:
+        population: 2.574 million
+        army: 4,900
+        manpower: 15,210
+      cause: camp (the game's death reason)
+  - id: 1429-06-28-the-two-princes
+    'on': '1429-06-28'
+    kind: note
+    what: >-
+      The new Emperor's sons, the princes Ismāʿīl and Aḥmad, both in the dīwān from his accession, wield great
+      influence. Unlike the princes of earlier generations they are not rivals: they are united in one aim, to
+      keep the realm together in the face of their father's tendencies
+    who:
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+      - muhammad-ibn-ismail-ibn-saad
+    threads:
+      - two-princes
+    from:
+      - told
+    cite: Trent's account, July 1429
+    detail:
+      account: >-
+        The two princes exert a lot of influence, and unlike previous princes of a generation, they are
+        unified in their goal of keeping the realm together in the face of their father's... tendencies
+        (Trent)
+      father: Muḥammad V, 15/20/16, an extortioner
+  - id: 1429-07-01-teguise
+    'on': '1429-07-01'
+    kind: land
+    what: >-
+      Teguise on Lanzarote becomes a settlement of the crown, the fourth in the Canaries: 4,400 Guanche
+      islanders
+    threads:
+      - voyages
+    from:
+      - save
+    cite: save of 2 July 1429
+    detail:
+      province: Canaries
+      population: 4434
+tellings:
+  - id: 0832-09-25-of-the-death-of-the-emperor-ismail-and-the-two-princes
+    'on': '1429-06-28'
+    title: Of the Death of the Emperor Ismāʿīl, and the Two Princes
+    verse: '31:34'
+    who:
+      - ismail-ibn-saad
+      - muhammad-ibn-ismail-ibn-saad
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+      - edward-v-of-england
+      - berenguer-ramon-de-montsoriu
+      - saad-ibn-yusuf
+      - isabel-de-montsoriu
+      - umm-al-fath-bint-muhammad
+      - jadila-bint-saad-ibn-faraj
+      - yusuf-ibn-saad
+    where:
+      - ishbiliyya
+      - barshaluna
+      - qurtuba
+      - balansiyya
+      - al-ushbuna
+    covers:
+      - 1428-12-01-forts-of-jaca-and-talarn
+      - 1428-12-01-catalonia-to-the-crown
+      - 1429-06-11-the-angevin-empire
+      - 1429-06-28-death-of-the-emperor-ismail
+      - 1429-06-28-accession-of-muhammad-v
+      - 1429-06-28-the-two-princes
+      - 1405-03-02-death-of-the-emperor
+    text: >
+      The last winter of the Emperor [Ismāʿīl](person:ismail-ibn-saad) was spent looking north. The English
+      were on the far side of the Pyrenees now, and he ordered two fortresses built in the mountains: at Jaca,
+      in the Ṭāʾifa of Arghūn, and at Talarn in the Pallars, in the Ṭāʾifa of Catalonia. He also told the
+      dīwān that Catalonia itself must come into the crown, as Balansiyya had, and that he expected the work
+      done within nine years. Its lord was his own cousin [Berenguer
+      Ramon](person:berenguer-ramon-de-montsoriu), the son of Yūsuf I's daughter Fāṭima, and a good soldier.
+      The Emperor did not think that made [Barshalūna](place:barshaluna) any less important. A great port on a
+      border with the English was not a thing to leave to a ṭāʾifa, however loyal.
+
+
+      In Ramaḍān 832 word came from the north that King [Edward](person:edward-v-of-england) had been crowned
+      in Paris and had joined his crowns into one, which the Franks called the Angevin Empire. Its borders
+      were those of the peace of the year before. Its name was new, and so were its ambitions. The envoys
+      reported that the English king spoke of the whole inheritance of his ancestors, which had once run from
+      the Scottish border to the Pyrenees. The Emperor had the report read to him twice.
+
+
+      He did not live to answer it. On 25 Ramaḍān 832, in the last ten nights of the month, with the army
+      gathered in its camp outside [Ishbīliya](place:ishbiliyya), the Emperor Ismāʿīl died. He was
+      sixty-three. His father [Saʿd](person:saad-ibn-yusuf) had died on the march on the eve of Ramaḍān,
+      twenty-four years before, and the people of the capital said that the father had died at the beginning
+      of the month of mercy and the son at its end, and that the whole of the son's reign had been held
+      between them.
+
+
+      Consider what he left. He had come to the throne in the middle of the risings of 807, with a hundred
+      towns of the crown still loyal out of a hundred and forty-eight, and he ended them in six months. He
+      took al-Gharb with letters and Balansiyya with patience. In the War of Jillīqiya he led the army
+      himself, though no one had ever called him a soldier, and at the Peace of Rajab he ended the kingdom of
+      Portugal and drove Qashtāla into the mountains it had come out of, where it fell apart into four petty
+      kingdoms and then three. He left a hundred and ninety-five towns under the crown and as many again under
+      seven ṭāʾifas, two and a half million subjects of his own, and an empire that the courts of the world
+      ranked third among all the powers, behind only al-Ṣīn and the new empire of the English. He built a
+      madrasa in every town, universities in five cities and a granary in nearly every village. He took the
+      mercenaries from the umarāʾ, then their lordships, then their equality, and he never once let them rise.
+      He married his grandsons into the houses of Fās, Cairo and Constantinople, and sent his envoys to Niani
+      by the sea road he had sent Khayr al-Dīn to find when he was a young man.
+
+
+      The court had always said that he told every man in private what that man wished to hear. The court also
+      said, and this was rarer, that he judged every man in public by the law, and that no one who came before
+      him could say he had been judged by favour. When the chancellor announced his death to the realm, it was
+      that he chose to mention: the Emperor's fair and impartial rulings, which the realm would miss. Those
+      who had been lied to by him found, on reflection, that they had been lied to for the good of the state,
+      and those who had been judged by him found that they had been judged fairly, and most of the umarāʾ had
+      been both.
+
+
+      The crown passed by the law of the house, which he had never changed, to his eldest son
+      [Muḥammad](person:muhammad-ibn-ismail-ibn-saad), forty-three, who took the throne as Muḥammad V with
+      [Isabel](person:isabel-de-montsoriu) of the Montsoriu beside him. The court had judged him unfit to rule
+      when he was twelve, and in thirty years nothing had changed its mind except a day at the mouth of the
+      Duero, when he had commanded the fleet and won. He was slow in council, and the treasury clerks said he
+      squeezed his estates for every dirham. When the chancellor came to proclaim the new Emperor in the
+      mosques, the old men of the court were heard to say that the realm had been cursed, and to ask God's
+      mercy on them all.
+
+
+      But the old Emperor had seen this coming for thirty years, and he had left the realm something better
+      than a law. The new Emperor's sons, [Ismāʿīl](person:ismail-ibn-muhammad-ibn-ismail), now the heir, and
+      [Aḥmad](person:ahmad-ibn-muhammad-ibn-ismail), took seats in the dīwān at their father's accession,
+      beside their sister [Umm al-Fatḥ](person:umm-al-fath-bint-muhammad), her mother
+      [Jadīla](person:jadila-bint-saad-ibn-faraj) and their great-uncle Prince [Yūsuf](person:yusuf-ibn-saad).
+      In every earlier generation of the house of Naṣr the princes had been rivals. These two were not. They
+      were twenty-six and twenty-six, sons of different mothers born eight months apart, and they had grown up
+      being told that one of them would have to rule for the father who could not. They had decided between
+      themselves to do it together. From the first week of the new reign the dīwān learned that a request
+      refused by one prince was refused by both, and that an order the Emperor gave in a temper would be
+      reconsidered by both before it was carried out. The realm would be kept together, whatever its Emperor
+      did. They divided the work as they had divided everything since childhood. Ismāʿīl took the business of
+      state that needed a tongue: the allies, the ṭāʾifas, and the long labour of making the north Muslim and
+      Andalusī. Aḥmad took the business that needed a builder: the cities, the roads, the bridges and the
+      trades. And it was understood, though no one wrote it down, that when Ismāʿīl reigned, Aḥmad would
+      preside over his council, a second seat of power beside the throne.
+
+
+      *And no soul perceives what it will earn tomorrow, and no soul perceives in what land it will die.
+      Indeed, Allāh is Knowing and Acquainted.*

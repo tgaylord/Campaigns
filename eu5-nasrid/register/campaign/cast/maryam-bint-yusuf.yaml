@@ -1,0 +1,29 @@
+name: Maryam bint Yūsuf
+arabic: مريم بنت يوسف
+sex: f
+house: Naṣrid
+tier: key
+born: '1357-01-01'
+died: '1412-08-29'
+father: yusuf-i
+mother: tizemt-hafsid
+roles:
+  - member of the dīwān
+traits:
+  - child_prodigy
+stations:
+  - role: dīwān
+    from: '1375-03-17'
+    to: '1412-08-29'
+    source: save
+    approx: false
+note: >-
+  Daughter of Yūsuf I and Tizemt the Ḥafṣid, younger half-sister of the Emperor Saʿd; a prodigy as a child,
+  and at eighteen the most gifted mind at court by the game's reckoning (99 in administration). Married to
+  Muḥammad ibn Ismāʿīl al-Aḥmar. Appointed to the dīwān in the reorganisation of the realm after the
+  Restoration of al-Andalus, March 1375 (Trent's account; the save of 16 March 1375 does not show her seat
+  yet). She died on 29 August 1412, aged fifty-five, still in the dīwān, where she had sat since 1396; her
+  seat passed to Aḥmad ibn Yūsuf (save of 24 October 1414).
+game:
+  id: 44417
+  name: Mary

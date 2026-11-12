@@ -1,0 +1,212 @@
+date: '1420-09-04'
+title: The Petty Kings of the Mountains
+source:
+  save: SP_ADU_1420_09_04 (compressed)
+  game: 1.4.7
+summary: >-
+  Twenty-four days after Balansiyya: on the day of this save the Kingdom of Qashtāla fell apart into Galicia
+  (23 towns), Asturias (8) and Navarre (10, the Basque coast), leaving King Pedro four towns around Santander.
+  Al-Andalus itself is unchanged: 186 towns of the crown and seven ṭāʾifas. Estates estimated from the reading
+  of 31 December 1415. Treasury 306; stability 6.
+realm:
+  towns: 186
+  souls: 2434943
+  treasury: 306
+  income: 259.1
+  expenses: 230.4
+  stability: 5.8
+  prestige: 68
+  regiments: 9
+  ships: 47
+  manpower: 6804
+court:
+  ruler: ismail-ibn-saad
+  heir: muhammad-ibn-ismail-ibn-saad
+  capital: ishbiliyya
+  council:
+    - who: saad-ibn-yusuf-ibn-saad
+      seat: Integrating the new lands
+    - who: muhammad-ibn-yusuf-ibn-faraj
+      seat: Integrating the new lands
+    - who: ahmad-ibn-yusuf-ibn-ismail
+      seat: Integrating the new lands
+    - who: yusuf-ibn-saad
+      seat: Appeasing the estates
+    - who: jadila-bint-saad-ibn-faraj
+      seat: Stabilising the country
+standing:
+  allies:
+    - Mamluks
+    - Morocco
+    - Tunis
+  subjects:
+    - Catalonia (taifa)
+    - Aragon (taifa)
+    - Taifa of Cuenca (taifa)
+    - Taifa of Minho (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+  estates:
+    - name: Crown
+      power: 26.1
+    - name: Nobility
+      power: 21.13
+      mood: 41
+    - name: ʿUlamāʾ
+      power: 12.05
+      mood: 50
+    - name: Burghers
+      power: 21.24
+      mood: 50
+    - name: Commoners
+      power: 2.42
+      mood: 50
+    - name: Dhimmī
+      power: 17.06
+      mood: 50
+peoples:
+  cultures:
+    Castilian: 726970
+    Andalusi: 718598
+    Portuguese: 458067
+    Sephardi: 169520
+    Catalan: 167456
+    Leonese: 157346
+  faiths:
+    Catholic: 1151663
+    Sunni: 1111412
+    Jewish: 165665
+    Guanche_religion: 5046
+    Bori_Religion: 638
+map:
+  ours:
+    - GRA
+  subjects:
+    - CAT
+    - ARA
+    - ABA60
+    - ABA10
+    - ABA42
+    - ABA49
+    - ABA55
+  allies:
+    - MAM
+    - MOR
+    - TUN
+beats:
+  - id: 1420-09-04-the-fall-of-qashtala
+    'on': '1420-09-04'
+    kind: land
+    what: >-
+      The Kingdom of Qashtāla falls apart. Its 45 towns in the northern mountains become four petty kingdoms:
+      Galicia under Diego Villamarín (23 towns, from Santiago and A Coruña), Asturias under José Fernando
+      Tuñón (8, from Oviedo), Navarre on the Basque coast under Alfonso Gastón (10, from Bilbao), and what is
+      left of Castile, four towns around Santander, under King Pedro
+    who:
+      - pedro-of-castile
+      - diego-villamarin
+      - jose-fernando-tunon
+      - alfonso-gaston
+    from:
+      - save
+      - told
+    cite: save of 4 September 1420; Trent's account
+    detail:
+      Galicia:
+        towns: 23
+        population: 379000
+        capital: Santiago de Compostela
+        culture: Galician
+        ruler: Diego Villamarín, born 1391 (33/39/89)
+      Asturias:
+        towns: 8
+        population: 130000
+        capital: Oviedo
+        culture: Leonese
+        ruler: José Fernando Tuñón, born 1385 (43/67/59)
+      Navarre:
+        towns: 10
+        population: 161000
+        capital: Bilbao
+        culture: Basque
+        ruler: Alfonso Gastón, born 1389 (15/35/59)
+        note: >-
+          the save shows the state Sunni though all its people are Catholic; Trent is correcting this in game
+          (Trent, 4 September 1420)
+      Castile:
+        towns: 4
+        population: 93000
+        capital: Santander
+        towns_list:
+          - Santander
+          - Laredo
+          - Potes
+          - San Vicente de la Barquera
+        ruler: Pedro, since 1394; heir Fernando, born 1392
+      mechanism: >-
+        no war in the save; Navarre has a truce with Castile from that day. The save doesn't show what broke
+        the kingdom up
+      account: >-
+        the Kingdom of Castile has collapsed into a series of petty kings clinging to the mountains north of
+        our lands (Trent)
+tellings:
+  - id: 0823-08-25-of-the-petty-kings-of-the-mountains
+    'on': '1420-09-04'
+    title: Of the Petty Kings of the Mountains
+    verse: 3:137
+    who:
+      - ismail-ibn-saad
+      - pedro-of-castile
+      - diego-villamarin
+      - jose-fernando-tunon
+      - alfonso-gaston
+    where:
+      - ishbiliyya
+      - banbaluna
+    covers:
+      - 1420-09-04-the-fall-of-qashtala
+      - 1411-11-01-the-end-of-portugal
+      - 1420-08-11-the-world
+    text: >
+      Since the Peace of Rajab, Qashtāla had been a kingdom of forty-five towns in the rain of the north, with
+      no army and four ships. On 25 Shaʿbān 823, three weeks after Fermoselle, it stopped being even that. The
+      news reached [Ishbīliya](place:ishbiliyya) in the last days of the month, before the new moon of
+      Ramaḍān, in letters from the merchants of the Cantabrian ports. The lords of the mountains had stopped
+      answering to their king, and each of them now called himself a king.
+
+
+      The greatest of them was in the west. [Diego Villamarín](person:diego-villamarin), a Galician lord not
+      yet thirty and the best soldier left in the Christian north, made himself king of Galicia with
+      twenty-three towns, from Santiago, where the Christians keep the tomb of their apostle, to A Coruña,
+      Lugo, Ourense and Tui on the Miño. The secretaries of the Dīwān al-Inshāʾ pointed out that his kingdom
+      was the country the Arabs had always called Jillīqiya, and the Emperor had named his war after it. Now
+      it was a kingdom of its own. At Oviedo, in the mountains where the Christians said their reconquest had
+      begun, a Leonese lord named [José Fernando Tuñón](person:jose-fernando-tunon) took Asturias, eight towns
+      and its old capital. The Basques of the coast, from Bilbao and San Sebastián to Vitoria in the plain of
+      Álava, took a king of their own, [Alfonso Gastón](person:alfonso-gaston), and called him king of
+      Navarre, though the Navarre of the old kings was the Emperor's Ṭāʾifa of [Banbalūna](place:banbaluna)
+      and had been for nine years. [Pedro](person:pedro-of-castile), who had reigned for twenty-six years and
+      lost two wars to the house of Naṣr, was left with four towns around Santander, the port of Laredo, and
+      the valley of Potes beneath the Picos de Europa.
+
+
+      The court of Ishbīliya received the news with a joy it did not try to hide. The preachers said that the
+      kingdom that had called itself the sword of the reconquest had broken itself on the same rocks where it
+      was born. The older men of the dīwān were less certain. One king with no army had been easy to watch.
+      Now there were four, and only Pedro was bound by the truce sworn at the Peace of Rajab. Diego of Galicia
+      had signed nothing, and he had a soldier's reputation.
+
+
+      The Emperor [Ismāʿīl](person:ismail-ibn-saad) did what he always did. He wrote to all four kings. To
+      Diego he sent congratulations on his crown and the respect of one soldier for another. To Tuñón he wrote
+      of the antiquity of Oviedo. To Alfonso Gastón he wrote that the Basques had always been a people apart,
+      and that al-Andalus had no quarrel with them. To Pedro he wrote nothing at all for a month, and then a
+      short letter of condolence. The secretaries who copied the four letters noticed that no two of them said
+      the same thing, and none of them were surprised. The ʿulamāʾ said that the last war of the Istirdād
+      would come when Allāh willed it. The Emperor said that four small kingdoms were easier to take one at a
+      time than one large one, and that he was in no hurry.
+
+
+      *Similar situations have passed on before you, so proceed throughout the earth and observe how was the
+      end of those who denied.*

@@ -1,0 +1,16 @@
+name: Pope Abundius
+born: '1310-10-22'
+died: '1373-11-20'
+roles:
+  - Pope
+traits:
+  - inspiring_leader
+  - obsessive_perfectionist
+  - well_advised
+  - naive
+note: >-
+  Pope from 1 November 1367, sitting at Avignon. Castile's one ally in 1370. Died 1373-11-20 (save of 24
+  October 1414).
+game:
+  id: 55520
+  name: Bondio

@@ -1,0 +1,15 @@
+name: Muḥammad IV
+arabic: محمد الرابع
+house: Naṣrid
+born: '1315-04-14'
+died: '1333-08-25'
+father: ismail-i
+mother: alwa
+reigns:
+  - from: '1325-07-08'
+    to: '1333-08-25'
+roles:
+  - sultan
+game:
+  id: 3535
+  name: Muhammad

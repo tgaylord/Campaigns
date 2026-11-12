@@ -1,0 +1,535 @@
+date: '1450-02-01'
+title: The Army Gathered
+source:
+  save: autosave of 1 February 1450 (compressed)
+  game: 1.4.7
+summary: >-
+  From an autosave, two weeks before the landing at Syracuse. The army has grown from 9 regiments to 13 with
+  the 4,000 thughūr raised in October; the fleet has 95 ships. The treasury stands at 2,990, up from 175 in
+  August; the saves don't say where the gold came from. Corsica is held, Bastia having fallen in September;
+  Tripoli's army was beaten before Catania in December. Stability 20.8, political influence 100. Estate power
+  estimated from the reading of 16 November 1428.
+realm:
+  towns: 222
+  souls: 3443864
+  treasury: 2990
+  income: 465.3
+  expenses: 444.7
+  stability: 20.8
+  prestige: 93
+  regiments: 13
+  ships: 95
+  manpower: 24146
+court:
+  ruler: muhammad-ibn-ismail-ibn-saad
+  heir: ismail-ibn-muhammad-ibn-ismail
+  capital: ishbiliyya
+  council:
+    - who: ismail-ibn-muhammad-ibn-ismail
+      seat: Assimilating the new lands
+    - who: ahmad-ibn-muhammad-ibn-ismail
+      seat: Changing the societal values
+    - who: umm-al-fath-bint-muhammad
+      seat: Strengthening the government
+    - who: shams-bint-muhammad
+      seat: Promoting Andalusī culture
+    - who: jadila-bint-saad-ibn-faraj
+      seat: Developing the provinces
+standing:
+  wars:
+    - tunisian-war-for-palermo
+    - mamluk-war-on-lam
+  allies:
+    - Mamluks
+    - Morocco
+    - Tunis
+  subjects:
+    - Aragon (taifa)
+    - Taifa of Cuenca (taifa)
+    - Kingdom of Portugal (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+    - Taifa of Galicia (taifa)
+    - Cape Verde (colonial nation)
+  estates:
+    - name: Crown
+      power: 28.77
+    - name: Nobility
+      power: 18.67
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 13.31
+      mood: 50
+    - name: Burghers
+      power: 24.95
+      mood: 55
+    - name: Commoners
+      power: 3.15
+      mood: 51
+    - name: Dhimmī
+      power: 11.16
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 1137692
+    Catalan: 772409
+    Portuguese: 545024
+    Castilian: 519072
+    Sephardi: 224391
+    Leonese: 178350
+  faiths:
+    Sunni: 2094018
+    Catholic: 1121332
+    Jewish: 199583
+    Guanche_religion: 27650
+    Bori_Religion: 573
+map:
+  ours:
+    - GRA
+  subjects:
+    - ARA
+    - ABA60
+    - POR
+    - ABA42
+    - ABA49
+    - ABA55
+    - GLC
+    - AAA52
+  allies:
+    - MAM
+    - MOR
+    - TUN
+beats:
+  - id: 1449-08-03-battle-al-muazzam
+    'on': '1449-08-03'
+    kind: battle
+    what: 'At al-Muazzam the Mamlūk side (Döger, 784) attacks Dawasir (1,942) and loses: 784 lost against 19'
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 29 November 1450
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Döger: 784
+      oursTotal: 784
+      oursLost: 784
+      theirs:
+        Dawasir: 1942
+      theirsTotal: 1942
+      theirsLost: 19
+      location: al-Muazzam
+      side: allies attacking
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1449-08-07-battle-al-ukhaydir
+    'on': '1449-08-07'
+    kind: battle
+    what: >-
+      At al-Ukhaydir the Mamlūk side (Mamluks, 616) is attacked by Dawasir (1,922) and loses: 616 lost against
+      16
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 29 November 1450
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Mamluks: 616
+      oursTotal: 616
+      oursLost: 616
+      theirs:
+        Dawasir: 1922
+      theirsTotal: 1922
+      theirsLost: 16
+      location: al-Ukhaydir
+      side: enemy attacking
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1449-09-02-battle-al-huwayyit
+    'on': '1449-09-02'
+    kind: battle
+    what: 'At al-Huwayyit the Mamlūk side (Mamluks, 42) is attacked by Lām (4,400) and loses: 42 lost against 0'
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 29 November 1450
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Mamluks: 42
+      oursTotal: 42
+      oursLost: 42
+      theirs:
+        Lām: 4400
+      theirsTotal: 4400
+      theirsLost: 0
+      location: al-Huwayyit
+      side: enemy attacking
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1449-09-04-battle-kaf
+    'on': '1449-09-04'
+    kind: battle
+    what: 'At Kaf the Mamlūk side (Mamluks, 10,768) is attacked by Lām (2,273) and wins: 183 lost against 2,273'
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 29 November 1450
+    detail:
+      result: allied victory
+      naval: false
+      ours:
+        Mamluks: 10768
+      oursTotal: 10768
+      oursLost: 183
+      theirs:
+        Lām: 2273
+      theirsTotal: 2273
+      theirsLost: 2273
+      location: Kaf
+      side: enemy attacking
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1449-09-17-the-fall-of-bastia
+    'on': '1449-09-17'
+    kind: battle
+    what: Bastia falls after a siege of 265 days
+    who:
+      - abu-al-hasan-ali-ibn-ahmad
+    threads:
+      - tunisian-war-for-palermo
+    from:
+      - told
+    cite: Trent's account (12 November 2026)
+    detail:
+      days: 265
+  - id: 1449-10-09-battle-al-muwaylih
+    'on': '1449-10-09'
+    kind: battle
+    what: 'At al-Muwaylih the Mamlūk side (Mamluks, 21,339) attacks Lām (5,643) and wins: 723 lost against 5,643'
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 29 November 1450
+    detail:
+      result: allied victory
+      naval: false
+      ours:
+        Mamluks: 21339
+      oursTotal: 21339
+      oursLost: 723
+      theirs:
+        Lām: 5643
+      theirsTotal: 5643
+      theirsLost: 5643
+      location: al-Muwaylih
+      side: allies attacking
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1449-10-19-battle-al-maramiyah
+    'on': '1449-10-19'
+    kind: battle
+    what: >-
+      At al-Maramiyah the Mamlūk side (AAA00, 663) is attacked by Dawasir (1,787) and loses: 509 lost against
+      50
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 29 November 1450
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        AAA00: 663
+      oursTotal: 663
+      oursLost: 509
+      theirs:
+        Dawasir: 1787
+      theirsTotal: 1787
+      theirsLost: 50
+      location: al-Maramiyah
+      side: enemy attacking
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1449-10-25-the-thughur-raised
+    'on': '1449-10-25'
+    kind: note
+    what: >-
+      The first true enlargement of the army in decades: the two princes raise 4,000 more men of the thughūr
+      for a landing in Sicily
+    who:
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+    threads:
+      - tunisian-war-for-palermo
+      - two-princes
+    from:
+      - told
+    cite: Trent's account (12 November 2026)
+    detail:
+      when: late October 1449 (Trent)
+      men: 4,000 thughūr ('Tagri')
+      aim: a landing in Sicily
+  - id: 1449-11-11-battle-az-zubayir
+    'on': '1449-11-11'
+    kind: battle
+    what: 'At az-Zubayir the Mamlūk side (Barqa, 5,355) attacks Dawasir (1,736) and wins: 780 lost against 1,093'
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 29 November 1450
+    detail:
+      result: allied victory
+      naval: false
+      ours:
+        Barqa: 5355
+      oursTotal: 5355
+      oursLost: 780
+      theirs:
+        Dawasir: 1736
+      theirsTotal: 1736
+      theirsLost: 1093
+      location: az-Zubayir
+      side: allies attacking
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1449-11-14-battle-gulf-oristano
+    'on': '1449-11-14'
+    kind: battle
+    what: In the Gulf of Oristano a single Genoese ship sinks one each of Burgos's and Galicia's
+    minor: true
+    threads:
+      - tunisian-war-for-palermo
+    from:
+      - save
+    cite: autosave of 1 February 1450
+    detail:
+      result: allied defeat
+      naval: true
+      ours:
+        Taifa of Burgos: 1
+        Galicia: 1
+      oursTotal: 2
+      oursLost: 2
+      theirs:
+        Genoa: 1
+      theirsTotal: 1
+      theirsLost: 0
+      location: Gulf of Oristano
+      side: enemy attacking
+      units: ships
+      commanders:
+        ours: Khālid, lord of Burghush
+        theirs: Raymond#79697
+  - id: 1449-12-13-battle-catania
+    'on': '1449-12-13'
+    kind: battle
+    what: >-
+      Before Catania 2,113 Tripolitanians attack the Sicilian king's army of 8,558 and are beaten, losing
+      1,641
+    minor: true
+    threads:
+      - tunisian-war-for-palermo
+    from:
+      - save
+    cite: autosave of 1 February 1450
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Tripoli: 2113
+      oursTotal: 2113
+      oursLost: 1641
+      theirs:
+        Sicily: 8558
+      theirsTotal: 8558
+      theirsLost: 571
+      location: Catania
+      side: allies attacking
+      commanders:
+        ours: Abu Tashufin#88637
+        theirs: King Peter of Sicily
+  - id: 1449-12-15-battle-al-maramiyah
+    'on': '1449-12-15'
+    kind: battle
+    what: 'At al-Maramiyah the Mamlūk side (Barqa, 4,454) attacks Yemen (3,143) and wins: 559 lost against 503'
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 29 November 1450
+    detail:
+      result: allied victory
+      naval: false
+      ours:
+        Barqa: 4454
+      oursTotal: 4454
+      oursLost: 559
+      theirs:
+        Yemen: 3143
+      theirsTotal: 3143
+      theirsLost: 503
+      location: al-Maramiyah
+      side: allies attacking
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1449-12-18-battle-al-marwa
+    'on': '1449-12-18'
+    kind: battle
+    what: 'At al-Marwa the Mamlūk side (Mamluks, 20,613) attacks Lām (7,830) and wins: 1,676 lost against 2,751'
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 29 November 1450
+    detail:
+      result: allied victory
+      naval: false
+      ours:
+        Mamluks: 20613
+      oursTotal: 20613
+      oursLost: 1676
+      theirs:
+        Lām: 7830
+      theirsTotal: 7830
+      theirsLost: 2751
+      location: al-Marwa
+      side: allies attacking
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1450-01-01-battle-al-maramiyah
+    'on': '1450-01-01'
+    kind: battle
+    what: >-
+      At al-Maramiyah the Mamlūk side (Barqa, 3,838) is attacked by Lām (3,914) and wins: 1,264 lost against
+      705
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 29 November 1450
+    detail:
+      result: allied victory
+      naval: false
+      ours:
+        Barqa: 3838
+      oursTotal: 3838
+      oursLost: 1264
+      theirs:
+        Lām: 3914
+      theirsTotal: 3914
+      theirsLost: 705
+      location: al-Maramiyah
+      side: enemy attacking
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1450-01-30-battle-al-manjur
+    'on': '1450-01-30'
+    kind: battle
+    what: >-
+      At al-Manjur the Mamlūk side (Barqa, 2,530) is attacked by Yemen (19,606) and loses: 2,530 lost against
+      179
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 29 November 1450
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Barqa: 2530
+      oursTotal: 2530
+      oursLost: 2530
+      theirs:
+        Yemen: 19606
+      theirsTotal: 19606
+      theirsLost: 179
+      location: al-Manjur
+      side: enemy attacking
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+tellings:
+  - id: 0853-07-29-of-sardinia-and-the-siege-of-bastia
+    'on': '1449-09-17'
+    title: Of Sardinia and the Siege of Bastia
+    verse: 8:66
+    who:
+      - abu-al-hasan-ali-ibn-ahmad
+      - yusuf-ibn-ismail-ibn-muhammad
+      - ahmad-ibn-yusuf-ibn-ismail
+      - abu-al-hasan-ali-of-banbaluna
+      - muhammad-ibn-ismail-ibn-saad
+      - amie-of-mali
+    covers:
+      - 1448-09-26-battle-seddori
+      - 1448-10-21-battle-corsica-channel
+      - 1448-11-05-the-call-of-the-mamluks
+      - 1449-02-18-death-of-ahmad-of-banbaluna
+      - 1449-04-23-birth-of-aram-ibn-yusuf
+      - 1449-06-30-corsica-overrun
+      - 1449-09-17-the-fall-of-bastia
+    text: >
+      The army that [Abū al-Ḥasan ʿAlī](person:abu-al-hasan-ali-ibn-ahmad) landed on Sardinia was the first
+      the Emperor had sent overseas in this war. It was not large: some five thousand men, nearly half of them
+      light horse, with a few hundred of Banbalūna's among them. For three weeks it marched inland while
+      Arborea gathered what it had. On 27 Rajab 852, at Seddori, the Arboreans attacked it with fifteen
+      hundred archers. They were all killed or taken. Al-Andalus lost two hundred and ninety-one men, most of
+      them foot. It was the first victory of the Emperor's own army in the war.
+
+
+      Twenty-five days later the prince [Yūsuf](person:yusuf-ibn-ismail-ibn-muhammad) took twenty-one galleys
+      into the channel between Corsica and the Tuscan shore and found five Genoese ships there. He sank all
+      five and lost none. The captains who had called him an accomplished sailor in the winter now called him
+      lucky as well, which sailors value more.
+
+
+      On 8 Ramaḍān the Mamlūks of Miṣr went to war with the Banū Lām of Najd and called their allies in. The
+      Emperor answered as he always answered Cairo, and al-Andalus was at war in Arabia. It sent no one there.
+      The news that came back through the year was bad for Cairo. The Banū Lām and their friends beat the
+      Sharīf's men at Makka itself and won fight after fight in the Ḥijāz. In Rabīʿ al-Thānī 853 they routed
+      the main Mamlūk army in the desert between ash-Shamlī and Taymāʾ. The Mamlūks had meant to make
+      themselves masters of the Red Sea coast, and they were not managing it.
+
+
+      [Aḥmad](person:ahmad-ibn-yusuf-ibn-ismail), lord of Banbalūna, did not see the end of the Sardinian war.
+      He had taken the field again after Grasse. On 24 Dhū al-Ḥijja 852 he died in camp of the fever that
+      kills more soldiers than any enemy. He was fifty-three. His son [Abū al-Ḥasan
+      ʿAlī](person:abu-al-hasan-ali-of-banbaluna) succeeded him. The men of Banbalūna who had come back from
+      Grasse said that the son was a gentler man than his father had become, and that this was no bad thing.
+
+
+      Before the year was out the army crossed from Sardinia to Corsica. At the end of Dhū al-Qaʿda 852 it sat
+      down before Bastia, a Genoese fortress on a rock above the harbour with the sea at its back, and through
+      the winter and spring the rest of the island fell around it. By 9 Jumādā al-Ūlā 853 Ajaccio had been
+      taken, and Aleria, Calvi, Corte, Bonifacio, Sartène and Vico were held, and in Sardinia five of
+      Arborea's towns, Oristano among them. Only Bastia held out, and the army was still before it in the
+      summer. In Ṣafar a son was born to Yūsuf and [Amie](person:amie-of-mali) of Mālī, and they called him
+      Āram. The general Abū al-Ḥasan ʿAlī was still in the trenches before Bastia when the news reached him.
+
+
+      Bastia fell on 29 Rajab 853, after two hundred and sixty-five days. With it went the last of Corsica. In
+      Ishbīliya the [Emperor](person:muhammad-ibn-ismail-ibn-saad) had the keys of the fortress hung in the
+      palace by the river. The court began to ask where the army should go next: to the Genoese coast, where
+      the enemy's strength lay, or to Sicily, which was the point of the war.
+
+
+      *Now God has lightened the burden for you, and He knows that among you is weakness. So if there are from
+      you one hundred who are steadfast, they will overcome two hundred. And if there are among you a
+      thousand, they will overcome two thousand by permission of God. And God is with the steadfast.*
+questions:
+  - >-
+    The treasury rose from 175 in August 1449 to 2,990 by February 1450, the same kind of jump as in 1447.
+    What pays for these?

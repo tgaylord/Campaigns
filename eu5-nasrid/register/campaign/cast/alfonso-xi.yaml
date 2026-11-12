@@ -1,0 +1,25 @@
+name: Alfonso XI of Castile
+house: Castilian royal house
+tier: key
+born: '1311-08-13'
+died: '1366-03-29'
+roles:
+  - king of Castile
+stations:
+  - role: admiral
+    from: '1363-01-02'
+    to: '1363-03-03'
+    source: save
+    approx: false
+  - role: general
+    from: '1366-01-02'
+    to: '1366-03-29'
+    source: save
+    approx: false
+note: >-
+  King of Castile, Granada's overlord; husband of Maria, queen of Portugal. He died on campaign on 29 March
+  1366, a week before the peace that freed Granada (save of 13 September 1370), and his son Jerónimo succeeded
+  him.
+game:
+  id: 1193
+  name: Alfonso

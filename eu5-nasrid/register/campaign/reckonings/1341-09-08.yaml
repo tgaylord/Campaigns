@@ -1,0 +1,259 @@
+date: '1341-09-08'
+title: A year of the ṭāʾifas
+source:
+  save: SP_GRA_1341_09_08 (compressed)
+  game: 1.4.5
+summary: >-
+  Shares of power are estimated from the 11 August 1340 reading. Ibn al-Khaṭīb is no longer at Granada's
+  court: the save has him as a Castilian admiral.
+realm:
+  towns: 18
+  souls: 492264
+  treasury: 10
+  income: 26
+  expenses: 29.6
+  debt: 764
+  stability: 33
+  prestige: 22
+  regiments: 3
+  ships: 5
+  manpower: 4112
+court:
+  ruler: yusuf-i
+  heir: faraj-ibn-ismail
+  capital: gharnata
+  council:
+    - who: faraj-ibn-ismail
+      seat: Increase control in Mālaqa
+    - who: ismail-ibn-ismail
+      seat: Strengthen the government
+standing:
+  allies:
+    - Morocco
+    - Tunis
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+  estates:
+    - name: Crown
+      power: 13.97
+    - name: Nobility
+      power: 54.14
+      mood: 38
+    - name: ʿUlamāʾ
+      power: 13.64
+      mood: 50
+    - name: Burghers
+      power: 11.51
+      mood: 38
+    - name: Commoners
+      power: 4.16
+      mood: 54
+    - name: Dhimmī
+      power: 2.58
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 478658
+    Sephardi: 12407
+    Ligurian: 1188
+    Mandinka: 12
+  faiths:
+    Sunni: 478658
+    Jewish: 12407
+    Catholic: 1188
+    Nyama: 12
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+  allies:
+    - MOR
+    - TUN
+beats:
+  - id: 1340-11-22-royal-marriage-valencia
+    'on': '1340-11-22'
+    kind: marriage
+    what: >-
+      A royal marriage binds Granada to the house of the Ṭāʾifa of Balansiyya: Fāṭima, the amir's younger
+      sister, is married into it
+    minor: true
+    who:
+      - fatima-bint-ismail
+    where:
+      - balansiyya
+    threads:
+      - house
+    from:
+      - save
+      - told
+    cite: checkpoint 1341-09-08 (treaty record of 22 November 1340); who married is Trent's account
+    detail:
+      with: VAL
+  - id: 1341-07-08-ibn-al-khatib-castile
+    'on': '1341-07-08'
+    kind: note
+    what: >-
+      Ibn al-Khaṭīb, the victor of Uryūla, is found in Castilian service: Catholic, Castilian, named
+      Frederick, an admiral of Qashtāla from 8 July 1341
+    who:
+      - ibn-al-khatib
+    from:
+      - save
+    cite: checkpoint 1341-09-08 (character record; how and why he left is not in the save)
+    detail:
+      left_granada: between 30 October 1340 and 8 July 1341
+      now:
+        country: CAS
+        religion: catholic
+        culture: castilian
+        first_name: Frederick
+        role: admiral
+        since: '1341-07-08'
+  - id: 1341-09-08-burghers
+    'on': '1341-09-08'
+    kind: realm
+    what: >-
+      The burghers sour, satisfaction falling from 59 to 38 since the autumn: the crown squeezes every source
+      of revenue (higher tariffs, small cuts), and the merchants have not forgiven the break with the Catalan
+      traders in the war with Aragon
+    threads:
+      - estates
+    from:
+      - save
+      - told
+    cite: checkpoint 1341-09-08; the cause is Trent's account
+    detail:
+      satisfaction:
+        from: 59
+        to: 38
+      cause: >-
+        revenue drive (tariffs raised, minor reductions) and the Catalan trade ties broken during the
+        Aragonese war, only starting to recover by 1346
+  - id: 1341-09-08-cabinet
+    'on': '1341-09-08'
+    kind: office
+    what: >-
+      By this checkpoint Ismāʿīl ibn Ismāʿīl holds the dīwān's seat for strengthening the government, in place
+      of Yūsuf ibn Muḥammad
+    who:
+      - ismail-ibn-ismail
+      - yusuf-ibn-muhammad
+    from:
+      - save
+    cite: checkpoint 1341-09-08
+  - id: 1341-09-08-loans
+    'on': '1341-09-08'
+    kind: realm
+    what: 'Three more estate loans repaid: the debt is down to 764 ducats, and the treasury to 10'
+    threads:
+      - estates
+    from:
+      - save
+    cite: checkpoint 1341-09-08
+    detail:
+      debt:
+        from: 843.2
+        to: 763.6
+      loans:
+        from: 33
+        to: 30
+      treasury: 10.1
+  - id: 1341-09-08-sovereignty
+    'on': '1341-09-08'
+    kind: land
+    what: >-
+      Granadan sovereignty slips to 51.6, close to the line of 50; influence drifts back toward Morocco, to
+      −20
+    threads:
+      - strait
+    from:
+      - save
+    cite: checkpoint 1341-09-08
+    detail:
+      sovereignty:
+        from: 54.2
+        to: 51.6
+      influence:
+        from: -24.3
+        to: -20.2
+  - id: 1341-09-08-valencia-conversion
+    'on': '1341-09-08'
+    kind: note
+    what: >-
+      In the Ṭāʾifa of Balansiyya the Muslims grow from 45,000 to 52,000 and the Christians fall from 138,000
+      to 130,000
+    where:
+      - balansiyya
+    from:
+      - save
+    cite: checkpoints 1340-08-28 and 1341-09-08
+    detail:
+      sunni:
+        from: 45398
+        to: 52233
+      catholic:
+        from: 138005
+        to: 129809
+tellings:
+  - id: 0742-03-25-the-defection-of-ibn-al-khatib
+    'on': '1341-09-08'
+    title: Of the Defection of Ibn al-Khaṭīb
+    verse: '3:8'
+    who:
+      - ibn-al-khatib
+      - yusuf-i
+      - ismail-ibn-ismail
+      - yusuf-ibn-muhammad
+    where:
+      - uryula
+      - balansiyya
+      - gharnata
+    covers:
+      - 1341-07-08-ibn-al-khatib-castile
+      - 1341-09-08-cabinet
+      - 1341-09-08-loans
+      - 1341-09-08-burghers
+      - 1341-09-08-sovereignty
+      - 1341-09-08-valencia-conversion
+    text: >
+      The chronicler must now set down what he would rather leave out.
+
+
+      [Muḥammad ibn al-Khaṭīb](person:ibn-al-khatib) was the ablest man at the court of Gharnāṭa. In counsel,
+      in letters and in war there was no one to match him. It was he who led the host down the road through
+      Mursiyya and broke the Aragonese on the Day of [Uryūla](place:uryula). If the Peace of
+      [Balansiyya](place:balansiyya) had a father after Allāh and the sultan, it was he. In Ṣafar of 741 he
+      came home with the army, and the people of [Gharnāṭa](place:gharnata) threw flowers under his horse.
+
+
+      Some time in the winter or the spring that followed he left the realm. He did not go to Fās, as an
+      unhappy courtier of Gharnāṭa might, or to Tilimsān or Tūnis. He went north to Qashtāla. In Muḥarram of
+      the year 742 he appears in the rolls of the Christian king's fleet as an admiral of Qashtāla. He had
+      taken the faith of the Cross, and with it a Christian name, Frederick.
+
+
+      The chronicle does not know why. No letter of his survives in the dīwān, and the sultan has not spoken
+      of it in the hearing of any scribe. Some at court say he was slighted after the peace, when the honours
+      went to princes of the blood and not to the man who had won the war. Others say Qashtāla had been paying
+      him all along, and that the bluff before Shāṭiba was his to expose and he chose not to. Still others say
+      only that a man of such gifts was too large for so small a kingdom. Allāh knows best what is hidden in
+      the hearts. The chronicler records the fact and leaves the judgment to the One who judges.
+
+
+      The court went on without him. [Ismāʿīl ibn Ismāʿīl](person:ismail-ibn-ismail), the sultan's young
+      brother, took the seat in the dīwān for strengthening the government, in place of their cousin [Yūsuf
+      ibn Muḥammad](person:yusuf-ibn-muhammad). Three more loans were repaid to the estates, and the debt fell
+      to seven hundred and sixty-four. The treasury held ten dīnārs. The burghers soured that year, from
+      content to sullen, and they had cause. The crown, hungry for every dīnār, had raised the tariffs at the
+      ports and the gates and trimmed what it paid out wherever it could, and it was the merchants who paid.
+      Nor had they forgiven the war with Arghūn. It had broken the ties with the Catalan traders through which
+      so much of the silk of Gharnāṭa was sold, and those ties were slow to mend. The realm's sovereignty
+      slipped to within a breath of the half. In the Ṭāʾifa of Balansiyya the call to prayer was heard in more
+      streets every month: fifty-two thousand Muslims now, where there had been forty-five, and the Christians
+      fewer by eight thousand.
+
+
+      *Our Lord, let not our hearts deviate after You have guided us.*

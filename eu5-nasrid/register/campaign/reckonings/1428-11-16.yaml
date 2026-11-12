@@ -1,0 +1,287 @@
+date: '1428-11-16'
+title: The Estates of 832
+source:
+  save: SP_ADU_1428_11_16 (compressed)
+  game: 1.4.7
+summary: >-
+  The estates panel of 16 November 1428 (7 Ṣafar 832), read with every estate's power tooltip on the day of
+  this save: the crown 29.5% of the power of the state, the burghers 21.4%, the umarāʾ 17.1%, the dhimmī
+  16.7%, the ʿulamāʾ 12.5%, the commoners 2.8%. Six months after losing the Primacy the umarāʾ are a third
+  content and rising. The rural works of 1428 stand in the save: village granaries in 167 of the crown's 194
+  towns, 41 acequias, 7 windmills. Treasury 540; income 356 against 279; stability 2; manpower 14,000 of
+  15,500.
+realm:
+  towns: 194
+  souls: 2557867
+  treasury: 540
+  income: 355.7
+  expenses: 279.3
+  stability: 1.6
+  prestige: 65
+  regiments: 9
+  ships: 50
+  manpower: 13979
+court:
+  ruler: ismail-ibn-saad
+  heir: muhammad-ibn-ismail-ibn-saad
+  capital: ishbiliyya
+  council:
+    - who: saad-ibn-yusuf-ibn-saad
+      seat: Promoting Andalusī culture
+    - who: muhammad-ibn-yusuf-ibn-faraj
+      seat: Integrating the new lands
+    - who: umm-al-fath-bint-muhammad
+      seat: Integrating the new lands
+    - who: yusuf-ibn-saad
+      seat: Promoting Andalusī culture
+    - who: jadila-bint-saad-ibn-faraj
+      seat: Developing the provinces
+standing:
+  allies:
+    - Mamluks
+    - Morocco
+    - Tunis
+  subjects:
+    - Catalonia (taifa)
+    - Aragon (taifa)
+    - Taifa of Cuenca (taifa)
+    - Kingdom of Portugal (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+  estates:
+    - name: Crown
+      power: 29.54
+    - name: Nobility
+      power: 17.06
+      mood: 34
+    - name: ʿUlamāʾ
+      power: 12.52
+      mood: 50
+    - name: Burghers
+      power: 21.35
+      mood: 48
+    - name: Commoners
+      power: 2.8
+      mood: 50
+    - name: Dhimmī
+      power: 16.66
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 783545
+    Castilian: 723423
+    Portuguese: 483676
+    Sephardi: 185111
+    Catalan: 176117
+    Leonese: 161988
+  faiths:
+    Sunni: 1218066
+    Catholic: 1147731
+    Jewish: 176711
+    Guanche_religion: 12982
+    Rogo_miki_religion: 683
+map:
+  ours:
+    - GRA
+  subjects:
+    - CAT
+    - ARA
+    - ABA60
+    - POR
+    - ABA42
+    - ABA49
+    - ABA55
+  allies:
+    - MAM
+    - MOR
+    - TUN
+beats:
+  - id: 1428-06-03-embassy-to-niani
+    'on': '1428-06-03'
+    kind: world
+    what: >-
+      Andalusī envoys sail the new sea roads and travel inland to Niani, the city of Mansa Tiramakhan of Mālī.
+      The two empires exchange gifts, and the Mansa exempts Andalusī traders from tariffs throughout his
+      empire. Expeditions are already being planned to bring the gold of Mālī north, to the jewellers of
+      al-Andalus and for resale to the Europeans
+    who:
+      - ismail-ibn-saad
+      - tiramakhan-mali
+    threads:
+      - europe
+    from:
+      - told
+    cite: Trent's account, 3 June 1428
+    detail:
+      route: by the new naval routes, then inland (Trent)
+      result: Andalusī traders exempt from tariffs in the Mali Empire (Trent)
+      plans: >-
+        expeditions to bring Mali's gold north for the Andalusī jewellery market and for resale to Europe
+        (Trent)
+      mali: >-
+        14th in the world, 82 towns and 92 in subjects; Mansa Tiramakhan since 1410, heir Majan born 1405
+        (world file of 25 May 1428)
+  - id: 1428-06-03-farms-mills-and-acequias
+    'on': '1428-06-03'
+    kind: realm
+    what: >-
+      Wheat farms, windmills and acequias are built across several rural regions to fill the new granaries,
+      and lumber mills to build them and, in time, renew them, all at very little cost to the umarāʾ or the
+      peasants
+    who:
+      - ismail-ibn-saad
+    threads:
+      - towns
+    from:
+      - save
+      - told
+    cite: Trent's account, 3 June 1428; save of 16 November 1428
+    detail:
+      buildings:
+        - wheat farms
+        - windmills
+        - acequias
+        - lumber mills
+      cost: very low cost to the nobility and peasantry (Trent)
+      when: the first half of 1428
+      inSave: >-
+        by 16 November 1428: acequias 12 → 41, windmills 0 → 7 (in the Alentejo, Ocaña, Toledo, Huelva and
+        Granada country), lumber mills 24 → 29
+  - id: 1428-06-03-the-village-granaries
+    'on': '1428-06-03'
+    kind: realm
+    what: >-
+      At the Emperor's insistence, and to answer the anger of the umarāʾ, a great campaign of rural renewal
+      begins: in nearly every large village of the empire a granary is built, a safe communal store where
+      farming settlements can set aside part of each harvest. The Emperor remembers how lean and dear bread
+      could be in the hard years of the wars with Qashtāla
+    who:
+      - ismail-ibn-saad
+    threads:
+      - towns
+    from:
+      - save
+      - told
+    cite: Trent's account, 3 June 1428; save of 16 November 1428
+    detail:
+      buildings: village granaries in nearly every major village
+      purpose: to counter the nobility's mass frustration; safe communal stores for part of each harvest (Trent)
+      memory: how lean and expensive food could get during the leaner years against the Castilians (Trent)
+      when: the first half of 1428
+      inSave: village granaries in 167 of the crown's 194 towns by 16 November 1428 (1 in May)
+  - id: 1428-07-27-death-of-jadila-bint-saad
+    'on': '1428-07-27'
+    kind: death
+    what: >-
+      Jadīla bint Saʿd, daughter of the Emperor Saʿd and Aiman the Mamlūk, and the Emperor's half-sister, dies
+      of a sudden illness at fifty-nine
+    who:
+      - jadila-bint-saad
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 16 November 1428
+    detail:
+      cause: sudden illness
+  - id: 1428-11-16-the-estates
+    'on': '1428-11-16'
+    kind: realm
+    what: >-
+      The estates six months after the Jamāʿa of 831: the crown holds three tenths of the power of the state,
+      the burghers a fifth, the umarāʾ and the dhimmī a sixth each, the ʿulamāʾ an eighth. The umarāʾ, one in
+      six content after losing the Primacy, are back above a third and rising
+    who:
+      - ismail-ibn-saad
+    threads:
+      - estates
+    from:
+      - told
+    cite: Trent's estates panel and tooltips, 16 November 1428
+    detail:
+      power:
+        crown: 29.54
+        nobles: 17.06
+        clergy: 12.52
+        burghers: 21.35
+        peasants: 2.8
+        dhimmi: 16.66
+        tribes: under 1%
+      satisfaction:
+        nobles: 34.05% rising to 36.05%
+        clergy: 50.01%
+        burghers: 48.19% rising to 50.01%
+        commoners: 50.01%
+        dhimmi: 50.01%
+        tribes: 44.85% falling to 44.09%
+      crownLegitimacy: 40% (the key figure beside the crown's power)
+      reforms: 5 of 5
+      nobleModifiers: >-
+        Aristocracy +31%, economic base of subjects +25%, Vizierate +25%, Land Rights +75%, Royal Marriage
+        Rights +50%, Noble Navy +33%, Court Financier Charter +25%, Physician Exemption +25%, Communal Lands
+        −5%, Catalan Merchant Privileges −20%, Curtail the Nobility −10%
+      crownModifiers: >-
+        Favor the Ruler +33%, the Emperor in command +25%, Al-Ḥamrāʾ +15%, Dīwān al-Mustaklaṣ +14.07%, Hijaba
+        +12%, the ruler's administration +11.5%, legitimacy, Sovereignty, the kūras, Royal Court, Autocracy,
+        Royal Decree and Powerful Harem +10% each, five dīwān members +5% each, the crown prince in command
+        +4%
+      peniscola: the burghers' mansion at Peñíscola, the nobles' agenda at the Jamāʿa, is gone by November
+tellings:
+  - id: 0831-08-19-of-the-village-granaries-and-the-road-to-niani
+    'on': '1428-06-03'
+    title: Of the Village Granaries, and the Road to Niani
+    verse: '12:47'
+    who:
+      - ismail-ibn-saad
+      - tiramakhan-mali
+      - khayr-al-din-al-jayyani
+    where:
+      - ishbiliyya
+      - qurtuba
+    covers:
+      - 1428-06-03-the-village-granaries
+      - 1428-06-03-farms-mills-and-acequias
+      - 1428-06-03-embassy-to-niani
+      - 1428-05-25-primacy-revoked
+      - 1391-07-coast-to-mali
+    text: >
+      The Emperor [Ismāʿīl](person:ismail-ibn-saad) had taken the umarāʾ's equality from them at the Jamāʿa of
+      831, and he knew it would not be forgotten. He did not try to win back the great houses. He went around
+      them, to the people who lived on their lands. In the first half of that year, at his insistence, the
+      crown began to build a granary in nearly every large village of the empire: a stone store, held in
+      common, where a farming settlement could set aside part of each harvest against a bad year. The Emperor
+      told the dīwān why. He was old enough to remember the wars with Qashtāla, when armies ate the harvest
+      before it was in, bread doubled in price in a season, and the villages of the frontier went hungry while
+      their lords sold grain in the cities. A village with its own store would not go hungry again, and it
+      would know who had built the store.
+
+
+      The granaries had to be filled. Across several of the farming countries the crown laid out new wheat
+      fields, built windmills on the ridges to grind them, and dug acequias to water them, in the manner of
+      the canals the Emperor's father had dug along the great river from Ishbīliya to
+      [Qurṭuba](place:qurtuba). Lumber mills went up beside them to cut the timber for the granaries and, when
+      the time came, to rebuild them. The work cost the umarāʾ almost nothing and the peasants less, and that
+      was the point: the villages would owe their bread to the crown, and the lords could not even complain of
+      the price.
+
+
+      The other half of his plan lay across the sea. Thirty-seven years earlier, as crown prince, Ismāʿīl had
+      sent [Khayr al-Dīn al-Jayyānī](person:khayr-al-din-al-jayyani) to find a road to Mālī by water, so that
+      the gold of the south would no longer pay a toll at every well of the Ṣaḥrāʾ. Now the road was there, by
+      way of the islands of the Green Cape, and in the spring of 831 his envoys took it. They sailed south to
+      the coast and went inland, up the rivers and across the savanna, to Niani, the city of Mansa
+      [Tiramakhan](person:tiramakhan-mali), who had ruled the gold country for eighteen years. They carried
+      gifts from Ishbīliya, and they came home with gifts from Niani and with something worth more: the
+      Mansa's word that Andalusī merchants would pay no tariff anywhere in his empire.
+
+
+      Before the envoys had finished their report, the merchants of Ishbīliya were fitting out expeditions to
+      bring the gold north. Some of it would go to the jewellers of the capital, whose work was already sold
+      from Cairo to Bruges. The rest would be sold on to the Christians, who had no road to Mālī of their own
+      and would have to buy its gold from the Emperor. The court said that the Emperor had spent the umarāʾ's
+      privileges on the villages and would get them back from the Franks.
+
+
+      *He said: You will plant for seven years consecutively; and what you harvest, leave in its spikes,
+      except a little from which you will eat.*

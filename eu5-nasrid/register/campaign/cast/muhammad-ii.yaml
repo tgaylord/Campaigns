@@ -1,0 +1,17 @@
+name: Muḥammad II al-Faqīh
+arabic: محمد الثاني الفقيه
+house: Naṣrid
+born: '1236-10-08'
+died: '1302-04-07'
+father: muhammad-i
+reigns:
+  - from: '1273-01-20'
+    to: '1302-01-20'
+roles:
+  - sultan
+traits:
+  - lawgiver
+  - intricate_web_weaver
+game:
+  id: 3525
+  name: Muhammad

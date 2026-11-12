@@ -1,0 +1,601 @@
+date: '1438-01-16'
+title: The Admiral Prince
+source:
+  save: SP_ADU_1438_01_16 (compressed)
+  game: 1.4.7
+summary: >-
+  Catalonia is in the crown (221 towns, 3.25 million people), the realm's temper has tipped from the land to
+  the sea for the first time, and harbours are rising in the Catalan ports. The Emperor's grandson Yūsuf,
+  sixteen and thrice married, is made admiral of the fleet. Burghush has its own lord again, and the Emperor's
+  mother Bernarda has died. Stability 24.2, the highest yet, treasury 1,653, and the New World institution was
+  born in Ishbīliya. Estates estimated from the reading of 16 November 1428.
+realm:
+  towns: 221
+  souls: 3246583
+  treasury: 1653
+  income: 391.3
+  expenses: 366
+  stability: 24.2
+  prestige: 89
+  regiments: 9
+  ships: 58
+  manpower: 25021
+court:
+  ruler: muhammad-ibn-ismail-ibn-saad
+  heir: ismail-ibn-muhammad-ibn-ismail
+  capital: ishbiliyya
+  council:
+    - who: ismail-ibn-muhammad-ibn-ismail
+      seat: Assimilating the new lands
+    - who: ahmad-ibn-muhammad-ibn-ismail
+      seat: Changing the societal values
+    - who: umm-al-fath-bint-muhammad
+      seat: Encouraging migration
+    - who: shams-bint-muhammad
+      seat: Promoting Andalusī culture
+    - who: jadila-bint-saad-ibn-faraj
+      seat: Developing the provinces
+standing:
+  allies:
+    - Mamluks
+    - Morocco
+    - Tunis
+  subjects:
+    - Aragon (taifa)
+    - Taifa of Cuenca (taifa)
+    - Kingdom of Portugal (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+    - Taifa of Galicia (taifa)
+    - Cape Verde (colonial nation)
+  estates:
+    - name: Crown
+      power: 27.37
+    - name: Nobility
+      power: 19.68
+      mood: 41
+    - name: ʿUlamāʾ
+      power: 13.93
+      mood: 50
+    - name: Burghers
+      power: 23.84
+      mood: 50
+    - name: Commoners
+      power: 3.26
+      mood: 50
+    - name: Dhimmī
+      power: 11.92
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 906252
+    Catalan: 732332
+    Castilian: 667628
+    Portuguese: 509712
+    Sephardi: 203405
+    Leonese: 169042
+  faiths:
+    Sunni: 1921059
+    Catholic: 1117721
+    Jewish: 187884
+    Guanche_religion: 18691
+    Orthodox: 543
+map:
+  ours:
+    - GRA
+  subjects:
+    - ARA
+    - ABA60
+    - POR
+    - ABA42
+    - ABA49
+    - ABA55
+    - GLC
+    - AAA52
+  allies:
+    - MAM
+    - MOR
+    - TUN
+beats:
+  - id: 1436-05-01-the-two-explorers
+    'on': '1436-05-01'
+    kind: note
+    what: >-
+      The empire's two great explorers, both of al-Ushbūna, push its expeditions forward: ʿAbd al-Jalīl
+      al-Qbasī, an Andalusī of nineteen, and Dom Raimundo Coimbra, a Portuguese Muslim of twenty-six, out on
+      the Eastern Atlantic
+    who:
+      - abd-al-jalil-al-qbasai
+      - raimundo-coimbra
+    where:
+      - al-ushbuna
+    threads:
+      - voyages
+    from:
+      - seen
+      - told
+    cite: Trent's screenshots and account, 1 May 1436
+    detail:
+      abdAlJalil: Andalusī, Sunni, 19, 50/8/80, courtier at El-Qbasa, explorer
+      raimundo: Portuguese, Sunni, 26, 34/39/63, explorer, at sea in the Eastern Atlantic High Sea
+  - id: 1436-06-01-catalonia-annexed
+    'on': '1436-06-01'
+    kind: land
+    what: The Ṭāʾifa of Catalonia is annexed into the crown, a year before the court expected
+    who:
+      - francesc-de-montsoriu
+    where:
+      - barshaluna
+    from:
+      - told
+    cite: Trent's account
+    detail:
+      expected: the middle of 1437 (Trent, December 1428)
+  - id: 1437-01-01-cultural-hegemon
+    'on': '1437-01-01'
+    kind: note
+    what: Al-Andalus claims the title of Cultural Hegemon as the renewed Andalusī golden age continues
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+    where:
+      - ishbiliyya
+    from:
+      - told
+    cite: Trent's account
+    detail:
+      title: Cultural Hegemon
+  - id: 1437-01-01-the-age-of-discovery
+    'on': '1437-01-01'
+    kind: world
+    what: The Age of Discovery opens
+    from:
+      - told
+    cite: Trent's account
+    detail:
+      age: Age of Discovery, after the Age of Renaissance
+  - id: 1437-03-01-the-new-world-institution
+    'on': '1437-03-01'
+    kind: world
+    what: >-
+      The New World institution appears in the world, and its origin is Ishbīliya. No new world has been found
+      yet, but the culture of exploration and expeditions, backed by the crown, has taken root in the capital
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+    where:
+      - ishbiliyya
+    threads:
+      - voyages
+    from:
+      - seen
+      - told
+    cite: Trent's screenshot and account, 1 March 1437
+    detail:
+      institution: New World
+      origin: Šbilya (Ishbīliya)
+      state: >-
+        treasury 1,750, 3.246 million people, stability 21; Ishbīliya, Barcelona and Lisbon each the first
+        market of their region
+      discovered: no new world yet (Trent)
+  - id: 1437-06-11-khalid-comes-of-age
+    'on': '1437-06-11'
+    kind: crown
+    what: >-
+      Khālid ibn Abī Ḥammū comes of age at sixteen and takes the Ṭāʾifa of Burghush into his own hands, ending
+      the Emperor's regency
+    who:
+      - khalid-ibn-abi-hammu
+      - muhammad-ibn-ismail-ibn-saad
+    threads:
+      - house
+    from:
+      - save
+    cite: saves of 10 October 1435 and 16 January 1438
+    detail:
+      regency: 21 January 1431 to 11 June 1437
+  - id: 1437-11-06-death-of-bernarda
+    'on': '1437-11-06'
+    kind: death
+    what: >-
+      Bernarda of Murcia, widow of the Emperor Ismāʿīl and mother of the Emperor Muḥammad, dies of old age at
+      seventy
+    who:
+      - bernarda-of-murcia
+      - muhammad-ibn-ismail-ibn-saad
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 16 January 1438
+    detail:
+      reason: old age
+  - id: 1438-01-16-the-admiral-prince
+    'on': '1438-01-16'
+    kind: office
+    what: >-
+      The Emperor makes his grandson Yūsuf, sixteen, eldest son of the heir Ismāʿīl and second in line,
+      admiral of the fleet, as he himself had been made at twenty-five. Yūsuf has married three wives: Amie,
+      daughter of Mansa Tiramakhan of Mālī; Fāṭima, daughter of the late lord of Banbalūna, to tie the ṭāʾifas
+      to the crown; and Muʾmina, of the court
+    who:
+      - yusuf-ibn-ismail-ibn-muhammad
+      - muhammad-ibn-ismail-ibn-saad
+      - ismail-ibn-muhammad-ibn-ismail
+      - amie-of-mali
+      - fatima-bint-yusuf-ibn-ismail
+      - mumina-bint-muslih-al-din
+    where:
+      - gharnata
+    from:
+      - save
+      - seen
+      - told
+    cite: Trent's screenshot and account; save of 16 January 1438
+    detail:
+      yusuf: born 6 January 1422 at Gharnāṭa, 66/59/52, shrewd as a child, an expensive in-depth education
+      wives:
+        Amie: born 1418, daughter of Mansa Tiramakhan of Mālī, Mandinka by culture and a Sunni
+        Fāṭima: born 1419, daughter of Yūsuf ibn Ismāʿīl, lord of Banbalūna (d. 1428)
+        Muʾmina: born 1416, daughter of Muṣliḥ al-Dīn, a Naṣrid of the court
+      reason: >-
+        the admiralty had done the Emperor good in his own mind, and he imagined it would do his grandson the
+        same (Trent)
+  - id: 1438-01-16-the-realm-turns-to-the-sea
+    'on': '1438-01-16'
+    kind: realm
+    what: >-
+      For the first time the realm's temper leans to the sea rather than the land, and protected harbours are
+      being built in the newly annexed Catalan ports: Barcelona, Girona, Tarragona, Tortosa and Perpignan
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+    where:
+      - barshaluna
+    threads:
+      - towns
+    from:
+      - save
+    cite: saves of 10 October 1435 and 16 January 1438
+    detail:
+      landVsNaval:
+        '1432-07-27': -26.4
+        '1435-10-10': -10.2
+        '1438-01-16': 1.1
+        note: negative is land, positive is sea
+      harbours:
+        - Barcelona
+        - Girona
+        - Tarragona
+        - Tortosa
+        - Perpignan (and a dock)
+      realm: >-
+        221 towns and 3.25 million people after Catalonia's annexation; stability 24.2; treasury 1,653, no
+        debt
+tellings:
+  - id: 0839-10-14-of-the-arsenals-finished-and-the-turn-to-the-sea
+    'on': '1436-05-01'
+    title: Of the Arsenals Finished, and the Turn to the Sea
+    verse: 55:19-20
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - berenguer-ramon-de-montsoriu
+      - francesc-de-montsoriu
+      - vukmir-jankovic
+      - abd-al-jalil-al-qbasai
+      - raimundo-coimbra
+    where:
+      - ishbiliyya
+      - malaqa
+      - al-mariyya
+      - al-ushbuna
+      - balansiyya
+      - mursiyya
+    covers:
+      - 1435-10-10-the-turn-to-the-sea
+      - 1432-08-30-death-of-berenguer-ramon
+      - 1435-04-09-death-of-vukmir
+      - 1433-03-19-the-emperor-leaves-the-admiralty
+      - 1436-05-01-the-two-explorers
+      - 1432-05-the-dar-al-sinaa
+    text: >
+      The crusade ended, and the arsenals went on rising. Two years after the Emperor
+      [Muḥammad](person:muhammad-ibn-ismail-ibn-saad) had signed the orders, all seven were finished, at
+      [Ishbīliya](place:ishbiliyya), [Mālaqa](place:malaqa), [al-Mariyya](place:al-mariyya),
+      [al-Ushbūna](place:al-ushbuna), [Balansiyya](place:balansiyya), Cartagena and
+      [Mursiyya](place:mursiyya). Their first work was already at sea: eight war galleys of a new Andalusī
+      pattern, long, low and fast under oar, the first warships of the empire not copied from the Christians.
+      They sailed beside the fifty caravels the fleet already had. A new guild of naval chandlers was licensed
+      at Cáceres, far inland, to send pitch and cordage down the river roads to the ports, and the treasurers,
+      who had complained of every arsenal, found that the realm took in ninety dīnārs a month more than it
+      spent.
+
+
+      The Emperor had given up the admiral's command before his pilgrimage, but he had not given up the sea,
+      and he did not let the realm give it up either. He gave the arsenals' masters seats at his audiences. He
+      gave his prizes for poetry to poems about ships. He sent the sons of the umarāʾ to serve a season with
+      the fleet before he would give them a command on land. In the three years after the crusade the court's
+      talk, and the talk of the cities, turned further from the land to the sea than in all the reign of his
+      father. The young men of Lisbon and the Algarve wanted to be pilots. The merchants of Ishbīliya wanted
+      ships of their own. In Mālaqa the ʿulamāʾ were heard to preach that al-Andalus lay between two seas as
+      the believer lies between fear and hope, and that it would live by both.
+
+
+      The sea took its price. [Berenguer Ramon](person:berenguer-ramon-de-montsoriu) of Catalonia, who had
+      beaten the Mecklenburgers off Cape Mondego, was lost at sea two months later, in Muḥarram 836, and his
+      son [Francesc](person:francesc-de-montsoriu) took his seat in Barshalūna. Less than three years later
+      the sea took the crusaders' admiral [Vukmir Janković](person:vukmir-jankovic) too, and the captains of
+      Ishbīliya drank to him in their own fashion, with sherbet.
+
+
+      By Shawwāl 839 the Emperor's ships were reaching further than they had ever gone. A new town of the
+      crown had been planted at Ipalán on La Gomera in the Canaries, and an expedition was fitting out at
+      Ishbīliya for the open Ocean. Two men of al-Ushbūna led the work. [ʿAbd al-Jalīl
+      al-Qbasī](person:abd-al-jalil-al-qbasai) was an Andalusī of nineteen, a born soldier with the explorer's
+      eye. Dom [Raimundo Coimbra](person:raimundo-coimbra) was a Portuguese Muslim of twenty-six, and in that
+      month he was somewhere out on the high sea of the eastern Ocean, beyond sight of any land, toward the
+      waters where the pilots of Flores had said that the sun set over nothing at all.
+
+
+      *He released the two seas, meeting side by side; between them is a barrier which neither of them
+      transgresses. So which of the favours of your Lord would you deny? From both of them emerge pearl and
+      coral.*
+    behind: >-
+      This note covers three entries: the pilgrimage and the Shaykh al-Islām, the turn to the sea, and
+      Barshalūna and the hegemony.
+
+
+      **What the save of 10 October 1435 shows.**
+
+      - The seven arsenals are complete.
+
+      - The fleet is 50 caravels and 8 of the mod's Andalusī war galleys.
+
+      - There's a new naval supplies guild at Cáceres, and a sea exploration is being prepared at Seville.
+
+      - Hipalan in the Canaries is a new crown town. The game's Canary province lists it beside Aguere and
+      Tedote, and the chronicle places it at Ipalán on La Gomera.
+
+      - The realm's land-versus-naval value moved from −26.4 (July 1432) to −10.2. Negative means land, so the
+      realm moved toward the sea, as Trent describes. The entry shows that shift as the court's and the
+      cities' talk turning to the sea.
+
+
+      **The Emperor and the court, from the same save.**
+
+      - The Emperor's admiral role ended on 19 March 1433.
+
+      - His hajji modifier dates from 23 November 1433, which the entry takes as his return from the
+      pilgrimage of Dhū al-Ḥijja 836.
+
+      - His Ṣūfī modifier from 27 September 1434 confirms the Ṣūfī Shaykh al-Islām.
+
+      - He has been regent of Burghush since 21 January 1431.
+
+      - The deaths come from the same save. The game gives Abū Ḥammū's death as a suicide; the chronicle tells
+      the court's version.
+
+
+      **From Trent's account, with no save yet.** The annexation of Catalonia (1 June 1436), the explorers (1
+      May 1436), the Age of Discovery and the Cultural Hegemon title (1 January 1437), and the New World
+      institution appearing in Ishbīliya (screenshot of 1 March 1437).
+
+
+      **Invented colour.**
+
+      - *Pilgrimage entry:* the fever of the chest, the sea route and Jyral receiving the Emperor, the news of
+      Temür reaching the pilgrims, the welcome at the river, the Ṣūfīs at ʿArafa, the ʿulamāʾ's expectations,
+      and the brotherhoods' prayers.
+
+      - *Sea entry:* the galleys' look, the Cáceres guild's river roads, the Emperor's patronage of masters,
+      poets and young nobles, the pilots and merchants, the sermon at Mālaqa, and the sherbet.
+
+      - *Hegemony entry:* the scholars' stocktaking, the books, gardens and masons abroad, the tax-collector,
+      the Emperor's reading habits, and the life of the city in the New World paragraph (its pilots, funduqs,
+      shares and scholars).
+
+
+      **The admiral prince entry (save of 16 January 1438).** Yūsuf's birth, education, traits and three wives
+      come from the save, and their fathers identify them. Amie is Mansa Tiramakhan's daughter. Fāṭima is the
+      daughter of Yūsuf ibn Ismāʿīl of Banbalūna. Muʾmina is the daughter of Muṣliḥ al-Dīn, a Naṣrid courtier.
+      The admiralty is Trent's account; the save doesn't list the role yet. Also from the save:
+
+      - the land-versus-naval value crossed to +1.1;
+
+      - protected harbours are under construction in five Catalan ports;
+
+      - Burghush's regency ended on 11 June 1437;
+
+      - Bernarda died on 6 November 1437.
+
+
+      Invented colour: the Emperor's lessons at sea, his reason for the appointment, Amie's journey and dowry,
+      and the court reading the marriages as a map.
+
+
+      **The charter of Majrīṭ (8 April 1438).** This is Trent's account, with no save yet. The Emperor's words
+      are Trent's. The Land Rights terms come from Trent's screenshot of the privilege. Invented colour:
+      Majrīṭ's trades, the burghers' journey, the northern umarāʾ's stake in the market, the clerks' name for
+      the stipend, and the princes' winter of reckoning.
+
+
+      **The scholar Emperor (15 July 1439).** The Scholar trait and the state of the realm come from Trent's
+      screenshot: stability −6, Majrīṭ's city rights still in progress, and the crown appeasing the estates.
+      That stability fell because of the land-rights concession is an inference from Trent's account, not
+      something the game states. The save dates the trait to 15 July 1439 itself, so the entry has his reading
+      begin in 842 AH (from June 1438), after the hegemony entry's line that he had never read for pleasure;
+      earlier wording that set it in the years after the pilgrimage was corrected. Invented colour: what the
+      Emperor read and whom he questioned, his seat at the back of the lectures, his sayings, and the
+      comparison with the risings of 807.
+
+
+      **The trade war (early June 1440).** The Catalan privileges complaint, the Genoese embargo under Angevin
+      pressure, and the Andalusī embargo of Angevin merchants are Trent's account, with no save yet. The
+      markets' ranks come from Trent's screenshot of 1 March 1437. Invented colour: the Catalan houses'
+      consuls and courts, the dīwān's reasoning, London leaning on Genoa "all spring", Prince Yūsuf enforcing
+      the embargo, the merchants' arguments, the Venetians, and the monthly accounting.
+
+
+      **The Jamāʿa of 846 (1 June 1442).** The reform, the burghers' seat and the two privileges are from
+      Trent's account and screenshots. The satisfaction changes on the privilege tooltips are previews taken
+      before each grant. The Emperor's line about city walls echoes the Urban Development Grants text.
+      Invented colour: the Emperor's reading of Rome and Baghdad, his words to the princes, the estates'
+      particular complaints, and the princes' private reaction.
+
+
+      **The princes' mending and the Golden Century (save of 11 June 1442; screenshots of 7 August 1442).**
+
+      - The save shows the nobles' Land Rights gone and the two burgher privileges in place. It has the
+      National Assemblies advance, but the reform doesn't yet appear among the implemented reforms.
+
+      - Also in the save: estate satisfaction (burghers 74, umarāʾ 32, commoners 34, ʿulamāʾ 44, dhimmī 45),
+      legitimacy 65, and the land-versus-naval value at +26.3.
+
+      - The princes' rallying of the commoners and their promise to the ʿulamāʾ are Trent's account.
+
+      - The Golden Century wording follows the game's event text.
+
+      - The Thalassocracy decision was open on 7 August, but the screenshot doesn't show whether it was taken.
+
+      - Invented colour: the princes' ride to the villages, the ʿulamāʾ's grumbling, the shipyards' speed, the
+      readings in the mosques, the secretaries' warning (it paraphrases the Grand Alliance rules), and the
+      Emperor's reply.
+
+      - The Jamāʿa entry moved from Book VI into Book VIII, the Golden Century, which opens with it.
+
+
+      **The Jamāʿa of 847 (26 June 1443).** This is Trent's account: a noble agenda to expand colonization,
+      the burghers' support, and Fernando Po as the target. Invented colour: the lords' motives, the vote
+      before noon, the island's description beyond its mountain and people, and the princes' and the Emperor's
+      reactions.
+
+
+      **The Radiant City and the Thalassocracy (Trent).** The restoration of Madīnat al-Zahrāʾ (event of 1
+      October 1440, "They will see our prestige!", 117 gold) and the Thalassocracy, taken on the same day as
+      the Golden Century, are confirmed by Trent. The building takes 365 days, so the chronicle has it
+      standing by the autumn of 1441. The history of the caliphal city is drawn from the historical record.
+      Invented colour: the sheepfold, the Emperor's day among the ruins, his answer to the dīwān, paying from
+      his own purse, the merchants' cheap cloth, and the court's two symbols.
+  - id: 0840-08-22-of-barshaluna-returned-the-hegemony-of-letters-and-the-new-world
+    'on': '1437-03-01'
+    title: Of Barshalūna Returned to the Crown, the Hegemony of Letters, and the New World
+    verse: 2:143
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - francesc-de-montsoriu
+      - ismail-ibn-saad
+    where:
+      - barshaluna
+      - ishbiliyya
+      - qurtuba
+    covers:
+      - 1436-06-01-catalonia-annexed
+      - 1437-01-01-the-age-of-discovery
+      - 1437-01-01-cultural-hegemon
+      - 1437-03-01-the-new-world-institution
+      - 1428-12-01-catalonia-to-the-crown
+    text: >
+      The Emperor [Ismāʿīl](person:ismail-ibn-saad) had told the dīwān that Catalonia must come into the crown
+      within nine years, and he had not lived to see it. His son did it within eight. On 16 Dhū al-Qaʿda 839
+      (1 June 1436) the Ṭāʾifa of Catalonia was annexed, a year before the court had expected, and
+      [Barshalūna](place:barshaluna), the great port on the English border, was ruled from
+      [Ishbīliya](place:ishbiliyya) for the first time. Its lord [Francesc](person:francesc-de-montsoriu), son
+      of the Berenguer Ramon who had died at sea, was a Muslim and a grandson of the house of Naṣr through his
+      grandmother. He gave up his throne without a war. The Catalans had been accepted at court for thirteen
+      years, and the merchants of Barshalūna had been trading under the Emperor's peace for sixty. Most of
+      them found that very little changed except the address of the tax-collector.
+
+
+      At the turn of the year 840 the scholars of the court took stock, as they did at the end of every age.
+      They agreed that the age of the rebirth of learning, which the Franks had called the Renaissance, was
+      over, and that a new age had begun, the age of the discovery of the world. The ships of al-Andalus were
+      already in it. They also agreed, more quietly, on something that would not have been believed in
+      [Qurṭuba](place:qurtuba) a hundred years before. The learning, the poetry, the music, the buildings and
+      the manners of al-Andalus were once more what the rest of the world imitated. The books copied in the
+      madrasas of Ishbīliya were read in Cairo and Fās and, in translation, in Paris and Bologna. The courts
+      of Christendom built their gardens with Andalusī water and hired Andalusī masons. In the chanceries of
+      the world al-Andalus was named the first of all realms in culture.
+
+
+      Two months later the new age found its name in Ishbīliya itself. No one had yet found land beyond the
+      Ocean. But the city was full of men who meant to: pilots home from the Azores and the Green Cape arguing
+      over charts in the funduqs by the river, merchants buying shares in voyages that had not yet sailed,
+      scholars of the madrasas asking what the ancients had meant by the Isles of the Blessed, and the crown
+      paying for all of it. By Shaʿbān 840 the scholars of other realms had begun to call it a new way of
+      thinking about the world, and to say that it had been born on the banks of the Wādī al-Kabīr. Perhaps
+      the captains would find something out there.
+
+
+      The old men of the court said that it was the age of the caliphs come again. The Emperor
+      [Muḥammad](person:muhammad-ibn-ismail-ibn-saad), who had never read a book for pleasure in his life,
+      accepted the compliment on behalf of his grandfather, his father and the madrasas they had built in
+      every town, and went back to his ships.
+
+
+      *And thus We have made you a middle nation, that you will be witnesses over the people, and the
+      Messenger will be a witness over you.*
+  - id: 0841-07-19-of-the-admiral-prince-and-his-three-wives
+    'on': '1438-01-16'
+    title: Of the Admiral Prince, and His Three Wives
+    verse: 6:165
+    who:
+      - yusuf-ibn-ismail-ibn-muhammad
+      - muhammad-ibn-ismail-ibn-saad
+      - ismail-ibn-muhammad-ibn-ismail
+      - amie-of-mali
+      - fatima-bint-yusuf-ibn-ismail
+      - mumina-bint-muslih-al-din
+      - tiramakhan-mali
+      - yusuf-ibn-ismail
+      - bernarda-of-murcia
+      - khalid-ibn-abi-hammu
+    where:
+      - gharnata
+      - ishbiliyya
+      - barshaluna
+      - banbaluna
+    covers:
+      - 1438-01-16-the-admiral-prince
+      - 1438-01-16-the-realm-turns-to-the-sea
+      - 1437-06-11-khalid-comes-of-age
+      - 1437-11-06-death-of-bernarda
+    text: >
+      The Emperor [Muḥammad](person:muhammad-ibn-ismail-ibn-saad) had been twenty-five, and judged unfit to
+      rule by everyone who knew him, when he was given the fleet. He had never forgotten what it had done for
+      him. The court had called him slow; the captains had called him admiral. He had learned the names of
+      harbour-masters, the price of pitch and the turn of the winds off Cape Saint Vincent, and he had come
+      back from the sea a man who could win a battle at the mouth of the Duero. In the winter of 841 he did
+      for his grandson what had been done for him.
+
+
+      [Yūsuf](person:yusuf-ibn-ismail-ibn-muhammad) was the eldest son of the heir
+      [Ismāʿīl](person:ismail-ibn-muhammad-ibn-ismail), by Tella of the house of Fās, and second in line to
+      the throne after his father. He was sixteen. He had been born at [Gharnāṭa](place:gharnata) and given
+      the most expensive schooling the realm could buy, and his tutors had called him shrewd before he could
+      ride. He was not slow, and he had not been judged unfit by anyone. The Emperor made him admiral of the
+      fleet anyway, because, he said, a prince who had never been to sea did not know what his empire was made
+      of.
+
+
+      Yūsuf had already married three wives, and the court read them as a map of the realm his grandfather
+      meant him to rule. The first was [Amie](person:amie-of-mali), a daughter of Mansa
+      [Tiramakhan](person:tiramakhan-mali) of Mālī, who had come north by the sea road to Ishbīliya with a
+      dowry the treasurers spoke of for a month. The second was [Fāṭima](person:fatima-bint-yusuf-ibn-ismail),
+      daughter of the late [Yūsuf ibn Ismāʿīl](person:yusuf-ibn-ismail), lord of [Banbalūna](place:banbaluna),
+      so that the heir's heir was bound by marriage to the ṭāʾifas of the north at the moment the Emperor was
+      demanding more of them. The third was [Muʾmina](person:mumina-bint-muslih-al-din), daughter of Muṣliḥ
+      al-Dīn, a Naṣrid of the court, so that Ishbīliya would not feel left out. The gold country, the frontier
+      and the palace now shared a household.
+
+
+      The realm the young admiral would sail for had changed again. [Barshalūna](place:barshaluna) and all of
+      Catalonia had come into the crown, and the Emperor was building protected harbours at Barcelona, Girona,
+      Tarragona, Tortosa and Perpignan. For the first time in the memory of the court, the temper of
+      al-Andalus leaned more to the sea than to the land. In Burghush the boy
+      [Khālid](person:khalid-ibn-abi-hammu) had come of age and taken back his ṭāʾifa from the Emperor's
+      regency. And on 7 Jumādā al-Ūlā 841 the Emperor's mother [Bernarda](person:bernarda-of-murcia) died at
+      seventy. She had been born an heiress of Mursiyya, Castilian in speech, and raised at the court of
+      Qashtāla, she had been the wife of one Emperor and the mother of another, and she had lived to see
+      Qashtāla vanish from the map.
+
+
+      *It is He who has made you successors upon the earth and has raised some of you above others in degrees,
+      that He may try you through what He has given you.*

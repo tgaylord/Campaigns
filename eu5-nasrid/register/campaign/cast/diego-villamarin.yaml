@@ -1,0 +1,28 @@
+name: Diego Villamarín
+tier: key
+born: '1391-09-15'
+roles:
+  - king of Galicia (1420–1430)
+  - exile at Augsburg (from 1430)
+traits:
+  - careful
+  - naval_engineer
+  - calm
+stations:
+  - role: admiral
+    from: '1420-12-02'
+    to: '1430-09-16'
+    source: save
+    approx: false
+note: >-
+  A Galician noble and a soldier of rare gifts (89 in war). On 4 September 1420, when the Kingdom of Castile
+  fell apart, he became king of Galicia: 23 towns from Santiago and A Coruña to Lugo, Ourense and Tui, some
+  380,000 Galicians, all Catholic (save of 4 September 1420). On 25 March 1425 he made peace with Asturias and
+  took all eight of its towns; Galicia then held 31 (save of 25 May 1428). In the War of Shant Yāqub he had no
+  army to meet the Emperor's: Santiago fell on 15 July 1430 and his last 3,229 men died at Oviedo on 5 August.
+  At the Peace of Ṣafar on 3 November 1430 Galicia was annexed whole, and he left the peninsula; that day's
+  save shows him at Augsburg, a man of its burghers' estate, careful, calm and a builder of ships (saves of 17
+  August and 3 November 1430).
+game:
+  id: 88869
+  name: Diego Villamarin

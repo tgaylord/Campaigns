@@ -1,0 +1,15 @@
+name: Peter of Castile
+house: Castilian royal house
+born: '1334-08-30'
+died: '1351-08-11'
+father: alfonso-xi
+mother: maria-of-portugal
+roles:
+  - heir of Castile
+  - heir of Portugal
+note: >-
+  Son of Alfonso XI and Queen Maria, heir to both Castile and Portugal (the 20 May 1343 save). He died of a
+  fever on 11 August 1351, and the double inheritance passed in time to his younger brother Jerónimo.
+game:
+  id: 1198
+  name: Peter

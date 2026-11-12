@@ -1,0 +1,31 @@
+name: Bernarda of Murcia
+sex: f
+house: Murcia
+tier: key
+born: '1367-01-09'
+died: '1437-11-06'
+roles:
+  - heir of Murcia
+  - betrothed of Prince Ismāʿīl
+  - member of the dīwān (1435–1437)
+traits:
+  - gifted child
+stations:
+  - role: dīwān
+    from: '1435-06-09'
+    to: '1437-11-06'
+    source: save
+    approx: false
+note: >-
+  Daughter of Dolça d'Oriola and Blai Manrique de Lara, Sunni, heir of the Ṭāʾifa of Mursiyya; a gifted child,
+  Castilian by culture like her father. Murcia's court ties itself closely to the Catalans through its
+  traders. Betrothed to the heir Ismāʿīl ibn Saʿd when Murcia was taken into the crown on 16 March 1375. She
+  is being raised at the Castilian court for now, something to watch, though the betrothal holds (Trent's
+  account; save of 16 March 1375, where she sits in Castile). Married to the crown prince Ismāʿīl by 1 October
+  1387 (save of that date). Mother of Yūsuf (1383–1384) and Muḥammad (born 25 October 1385). On 9 June 1435, a
+  week after the death of Prince Yūsuf ibn Saʿd, the queen mother took his seat in the dīwān, and held it
+  until her death on 6 November 1437, aged seventy; her granddaughter Shams succeeded her (saves of 10 October
+  1435 and 11 June 1442).
+game:
+  id: 16830196
+  name: Bernadette

@@ -1,0 +1,32 @@
+name: Aḥmad ibn Ismāʿīl ibn Yūsuf
+arabic: أحمد بن إسماعيل
+house: Naṣrid
+born: '1377-09-15'
+father: ismail-ibn-yusuf
+roles:
+  - ruler of the Ṭāʾifa of Burtuqāl
+  - king of Portugal (from 1421), the Emperor's ṭāʾifa
+traits:
+  - just
+  - zealot
+stations:
+  - role: admiral
+    from: '1415-04-02'
+    to: '1415-04-03'
+    source: save
+    approx: false
+  - role: general
+    from: '1431-11-20'
+    to: '1431-12-21'
+    source: save
+    approx: false
+note: >-
+  Son of Ismāʿīl ibn Yūsuf, the old Emperor's brother: a cousin of the Emperor Ismāʿīl. Married to a daughter
+  of Maryam bint Yūsuf and to a daughter of Khālid ibn Yaḥyā Raḥḥū. On 1 November 1411 he was made ruler of
+  the new Ṭāʾifa of Burtuqāl, the 34 towns of the old Kingdom of Portugal, with his seat at Barcelos (save of
+  1 November 1411). On 4 November 1421 he proclaimed his ṭāʾifa the Kingdom of Portugal and took the crown of
+  the old kings, still the Emperor's ṭāʾifa; the new kingdom's state faith is Catholic, though he is a Muslim.
+  By 1423 the game also marks him a zealot (save of 5 November 1423).
+game:
+  id: 64963
+  name: Ahmad

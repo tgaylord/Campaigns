@@ -1,0 +1,36 @@
+name: Shaykh Ramaḍān of Barqa
+arabic: رمضان
+house: Baḥrī
+born: '1320-01-01'
+died: '1387-01-02'
+roles:
+  - shaykh of Barqa
+  - Mamlūk vassal
+stations:
+  - role: dīwān
+    from: '1349-12-01'
+    to: '1351-01-31'
+    source: save
+    approx: false
+  - role: general
+    from: '1375-07-02'
+    to: '1379-01-01'
+    source: save
+    approx: false
+  - role: admiral
+    from: '1379-03-02'
+    to: '1379-08-29'
+    source: save
+    approx: false
+note: >-
+  Ruler of the Sheikhdom of Barqa, a vassal of the Mamlūks, of the Baḥrī house (Baḥriyya) of the Mamlūk
+  sultans; Crimean by culture, Sunnī, 54 years old in 1374, with four wives and eight children. In late
+  October 1374 his army took Malta from Sicily during the War of the Upper March (Trent's account and
+  screenshots). He led Barqa's army in person at Zuwāra (23 May 1374) and Gharyān (24 June 1374), where he
+  destroyed the army of the Jabal Nafūsa, a Sicilian subject (autosave of 1 November 1374). His fleet of eight
+  was sunk by Sicily's off Malta on 12 November 1374. Shortly before the peace of 15 March 1375 he landed
+  3,000 men in Sicily and stormed Siracusa, which helped persuade King Joan to give up Aragon (Trent's
+  account). Died 1387-01-02 (save of 24 October 1414).
+game:
+  id: 3632
+  name: Ramazan

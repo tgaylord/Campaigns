@@ -1,0 +1,417 @@
+date: '1349-01-27'
+title: The Peace of Qurtuba
+source:
+  save: SP_GRA_1349_01_27_0, made after the peace (compressed)
+  game: 1.4.5
+summary: >-
+  Castile, broken by the plague, makes a separate peace with Granada alone. Granada takes 23 locations from
+  Qurṭuba and Ishbīliya to Jayyān and Úbeda, the Ṭāʾifa of Mursiyya receives the Murcia area, Castile pays
+  reparations and annuls its treaties with Aragon, and Granada returns to the name of Castile's tributary.
+  Shares of power are estimated from the 11 August 1340 reading; with the realm doubled in size they are
+  rougher than usual.
+realm:
+  towns: 41
+  souls: 754263
+  treasury: 1629
+  income: 18.6
+  expenses: 52.2
+  debt: 127
+  stability: -1.6
+  prestige: 15
+  regiments: 15
+  ships: 5
+  manpower: 3951
+court:
+  ruler: yusuf-i
+  heir: faraj-ibn-ismail
+  capital: gharnata
+  council:
+    - who: faraj-ibn-ismail
+      seat: Increase control in Mālaqa
+    - who: ismail-ibn-ismail
+      seat: Promote Granadan sovereignty
+standing:
+  allies:
+    - Morocco
+    - Tunis
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+  estates:
+    - name: Crown
+      power: 24.03
+    - name: Nobility
+      power: 32.38
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 8.96
+      mood: 50
+    - name: Burghers
+      power: 5.75
+      mood: 50
+    - name: Commoners
+      power: 3.31
+      mood: 42
+    - name: Dhimmī
+      power: 25.57
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 388753
+    Castilian: 337737
+    Sephardi: 25165
+    Mustaarabi: 780
+    Ligurian: 734
+    Hausa: 699
+  faiths:
+    Sunni: 386351
+    Catholic: 341068
+    Jewish: 25905
+    Bori_Religion: 699
+    Nyama: 240
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+  allies:
+    - MOR
+    - TUN
+beats:
+  - id: 1348-09-01-expired-medicaments
+    'on': '1348-09-01'
+    kind: note
+    what: >-
+      Physicians warn that half the medicaments in the markets are expired or cut with filler and may spread
+      the plague; the amir orders them burned
+    from:
+      - seen
+    cite: Trent's screenshot of his choice
+    detail:
+      event: Expired Medicaments
+      choice: Burn the expired medicine!
+      gold: -19.28
+      sevillaMarketMedicaments: -45
+  - id: 1348-09-02-portugal-peace
+    'on': '1348-09-02'
+    kind: world
+    what: >-
+      Portugal makes a separate peace with Morocco and leaves the war: it annuls every treaty with Castile for
+      ten years, pays war reparations, and gives 142 gold to Morocco and its allies
+    threads:
+      - second-moroccan-war
+    from:
+      - seen
+    cite: Trent's screenshot of the peace
+    detail:
+      leaves: POR
+      terms:
+        - Portugal annuls all treaties with Castile for 120 months
+        - Portugal pays war reparations to Morocco
+        - Portugal gives 142.03 gold to Morocco and its allies
+      sideCasualties:
+        ours:
+          army: 25423
+          navy: 5
+          civil: 34871
+        portugal:
+          army: 0
+          navy: 1
+          civil: 55154
+  - id: 1348-11-01-maid-draft
+    'on': '1348-11-01'
+    kind: realm
+    what: >-
+      The Maid Draft: no wage will tempt servants into the houses of sick noblemen, and the nobility demand
+      the right to draft commoners into service; the amir grants it
+    threads:
+      - estates
+    from:
+      - seen
+    cite: Trent's screenshot of his choice
+    detail:
+      event: The Maid Draft
+      choice: Institute the draft!
+      favours: nobles
+      against: peasants
+  - id: 1348-11-02-plague-toll
+    'on': '1348-11-02'
+    kind: world
+    what: >-
+      The pestilence has now struck 11 of the realm's locations and killed 9,055 of its people; across the
+      known world it has carried off more than twenty million since it rose at Yaik
+    from:
+      - seen
+    cite: Trent's screenshot of the Black Death panel
+    detail:
+      affectedLocations: 11
+      countryDeaths: 9055
+      worldDeaths: 20256000
+      origin: yaik
+      start: '1346-08-01'
+      responses:
+        - segregate_the_infected
+  - id: 1349-01-27-peace-of-qurtuba
+    'on': '1349-01-27'
+    kind: peace
+    what: >-
+      The Peace of Qurṭuba: Castile, its armies and its spirit broken by the plague, begs a separate peace of
+      Granada alone, and to the court's surprise accepts its sharp demands
+    who:
+      - yusuf-i
+      - alfonso-xi
+    where:
+      - qurtuba
+      - ishbiliyya
+      - jayyan
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+      - seen
+      - told
+    cite: Trent's account and screenshot; checkpoint 1349-01-27 (saves before and after the peace)
+    detail:
+      terms:
+        - Granada takes 23 locations, from Qurṭuba and Ishbīliya to Jayyān, Úbeda, Baeza and Écija
+        - the Ṭāʾifa of Mursiyya takes the Murcia area, eleven more locations
+        - Castile pays war reparations to Granada
+        - Castile annuls all treaties with Aragon
+        - Granada returns to the name of Castile's tributary
+      gold: 844.83
+      locationsGained:
+        - cordoba
+        - sevilla
+        - sanlucar_la_mayor
+        - carpio
+        - cazorla
+        - santa_eufemia
+        - coria_del_rio
+        - espiel
+        - ubeda
+        - ecija
+        - jaen
+        - lucena
+        - martos
+        - osuna
+        - andujar
+        - olvera
+        - moron
+        - baena
+        - baeza
+        - fuenteovejuna
+        - pedroche
+        - palma_del_rio
+        - jodar
+  - id: 1349-01-27-realm-doubled
+    'on': '1349-01-27'
+    kind: land
+    what: >-
+      The realm doubles: 754,000 souls in 41 locations, and nearly half of them Castilian Christians; the
+      Ṭāʾifa of Mursiyya now holds Mursiyya, Qarṭājanna, Lawraqa and the whole Murcia area
+    where:
+      - qurtuba
+      - ishbiliyya
+      - jayyan
+      - wubira
+    from:
+      - save
+    cite: checkpoint 1349-01-27
+    detail:
+      locations:
+        from: 18
+        to: 41
+      population:
+        from: 376661
+        to: 754263
+      catholic: 341068
+      MUC:
+        locations:
+          from: 1
+          to: 12
+  - id: 1349-01-27-tributary-in-name
+    'on': '1349-01-27'
+    kind: land
+    what: >-
+      Granada is again Castile's tributary, though only in name: it holds 53 of the 72 locations of the
+      Strait's three areas, against 19 before the war
+    threads:
+      - strait
+    from:
+      - save
+      - told
+    cite: Trent's account; checkpoint 1349-01-27
+    detail:
+      overlord:
+        from: null
+        to: CAS
+      areasHeld:
+        from: 19
+        to: 53
+        total: 72
+      influence: 13.3
+      sovereignty: 41.6
+  - id: 1349-01-27-unrest
+    'on': '1349-01-27'
+    kind: note
+    what: 'Plague and war have left the realm unsettled: stability stands below zero, at −1.6'
+    from:
+      - save
+    cite: checkpoint 1349-01-27
+    detail:
+      stability: -1.6
+tellings:
+  - id: 0749-08-09-of-wages-medicines-and-maids
+    'on': '1348-11-02'
+    title: Of Wages, Medicines and Maids
+    verse: '9:51'
+    who:
+      - yusuf-i
+    where:
+      - washqa
+      - antaqira
+      - balansiyya
+      - shatiba
+      - qandiya
+      - muyaqar
+      - ishbiliyya
+    covers:
+      - 1348-07-01-plague-spread
+      - 1348-07-01-wage-fixing
+      - 1348-09-01-expired-medicaments
+      - 1348-11-01-maid-draft
+      - 1348-11-02-plague-toll
+    text: >
+      By the beginning of Rabīʿ al-Thānī the pestilence was in [Washqa](place:washqa) in the north and
+      [Antaqīra](place:antaqira) in the west, and in the mountain villages of the Alpujarra. In
+      [Balansiyya](place:balansiyya) it was in [Shāṭiba](place:shatiba) and [Qandiya](place:qandiya). The
+      realm counted seventeen thousand fewer souls than in the autumn before. That was only the beginning,
+      though no one yet knew it.
+
+
+      The plague killed the poor first and fastest, for they lived closest together. Within a season the
+      masters of the workshops and the owners of the fields were crying that there were no hands to hire.
+      Those labourers who were left knew their worth and asked double. In [Muyaqar](place:muyaqar) and the
+      towns around it the guilds agreed among themselves to hold wages where they had been, and the labourers
+      came to the governor to complain of it. The sultan was asked to judge. He sided with the guilds, for a
+      realm at war cannot let its wages run wild, and the judgment went out in the words the guild masters had
+      asked for: the labourers must be shown their place. Those about him said he gave it with a heavy face,
+      and that winter bread was handed out at the gates of Muyaqar, paid for from his own purse and not the
+      treasury's. The labourers went back to work. They did not forget, and their grumbling spread across the
+      realm further than the governor reported.
+
+
+      In Jumādā al-Ākhira the physicians of the houses of healing came to the sultan with a darker complaint.
+      Half the medicines sold in the markets were spoiled, they said, or cut with chalk and flour by merchants
+      who had seen that a frightened man will pay anything. Worse, such filth might itself carry the sickness
+      from house to house. The sultan ordered them burned. Officers went through the markets of the realm,
+      whose trade all answers to the great market of [Ishbīliya](place:ishbiliyya) beyond the frontier, and
+      nearly half the medicines in that whole trade went onto the fires. The merchants wept and the crown paid
+      them a little to quiet them. The physicians said it was the best order of the year.
+
+
+      In Shaʿbān the nobles came to the sultan with their own complaint. No servant would enter the house of a
+      sick nobleman for any wage, and the great houses were left with no one to carry the water or wash the
+      dying. They asked for the right to draft servants from among the common people. The sultan needed the
+      nobles, who led his levies, more than he needed the goodwill of the villages. He granted it, and of all
+      his orders that year it was the one he liked least. Men and women of the villages were taken from their
+      fields to serve in houses where the plague already was.
+
+
+      On the ninth of Shaʿbān the dīwān's account stood thus. The sickness had touched eleven of the realm's
+      towns and the pestilence itself had killed nine thousand of its people. In all the known world it had
+      carried off more than twenty million since it rose at Yāyiq. Some at court hoped the worst had passed.
+
+
+      They were wrong.
+
+
+      *Say: Never will we be struck except by what Allāh has decreed for us. He is our protector, and upon
+      Allāh let the believers rely.*
+  - id: 0749-11-07-the-peace-of-qurtuba
+    'on': '1349-01-27'
+    title: Of the Peace of Qurṭuba
+    verse: 8:61
+    who:
+      - yusuf-i
+      - alfonso-xi
+    where:
+      - qurtuba
+      - ishbiliyya
+      - jayyan
+      - istijja
+      - al-qusayr
+      - balma
+      - wubira
+      - mursiyya
+      - gharnata
+    covers:
+      - 1348-09-02-portugal-peace
+      - 1349-01-27-peace-of-qurtuba
+      - 1349-01-27-tributary-in-name
+      - 1349-01-27-realm-doubled
+      - 1349-01-27-unrest
+    text: >
+      In Jumādā al-Ākhira of the year 749 the first crown fell away. Portugal had lost no army and hardly a
+      ship, but fifty-five thousand of its people had died in the years of the war. It made a separate peace
+      with the Marīnids and annulled for ten years every treaty it had with Qashtāla. It paid reparations and
+      gave a hundred and forty gold pieces to the allies besides. [Alfonso](person:alfonso-xi) of Qashtāla was
+      left with Arghūn alone beside him, and Arghūn's best fleet lay at the bottom of the sea off Cape Ben
+      Sakka.
+
+
+      The pestilence did not take sides. It came into Qashtāla as it had come into [Gharnāṭa](place:gharnata),
+      and it found the Castilian armies in their winter camps, crowded, hungry and beaten. The levies deserted
+      to bury their families. The captains wrote to the king that they could not hold the frontier. And at the
+      beginning of Dhū al-Qaʿda in the year 749 the envoys of Alfonso came, not to the Marīnid sultan, who had
+      begun the war, but to our lord [Yūsuf](person:yusuf-i), who had won it. They asked for a separate peace
+      with Gharnāṭa alone.
+
+
+      The sultan received the envoys standing, with the scar of al-Manṣūra still red across his face. He named
+      his terms once, town by town, in a level voice, and when the Castilians began to bargain he left them
+      with his secretary and went out to his other business. The dīwān expected the terms to be refused.
+      Before evening the envoys had sent after him. On the seventh of Dhū al-Qaʿda the Peace of
+      [Qurṭuba](place:qurtuba) was sealed. Qashtāla gave up twenty-three towns along the river and in the
+      hills of the frontier:
+
+
+      - Qurṭuba of the caliphs, lost a hundred and twelve years before;
+
+      - [Ishbīliya](place:ishbiliyya), lost a hundred years before;
+
+      - [Jayyān](place:jayyan), where the tyrant had been broken;
+
+      - Ubbadha al-ʿArab, Bayyāsa and [Istijja](place:istijja), and al-Yusāna, Martush and Ūshūna;
+
+      - [al-Quṣayr](place:al-qusayr) and [Balma](place:balma), where the sultan had won his victories;
+
+      - [Wubīra](place:wubira) of the old Naṣrid claim, and others besides.
+
+
+      The Ṭāʾifa of [Mursiyya](place:mursiyya) took the whole of its own land, eleven towns more. Qashtāla
+      paid reparations in gold and annulled its treaties with Arghūn. In return Gharnāṭa took again the name
+      of Qashtāla's tributary.
+
+
+      It was only a name. The realm that had held nineteen of the seventy-two towns of the Strait's three
+      lands now held fifty-three. It had been eighteen towns and was now forty-one. Its souls had been three
+      hundred and seventy-seven thousand, after the plague's first year, and were now seven hundred and
+      fifty-four thousand. But nearly half of them were Castilian Christians who had gone to sleep subjects of
+      Alfonso and woken subjects of the house of Naṣr. They had not been asked, and they had buried their own
+      dead that winter.
+
+
+      The realm was greater than at any time since the house of Naṣr was founded, and it was not at peace with
+      itself. War and plague had shaken every estate, and the realm was more unsettled than at any time in the
+      reign. In the new lands the bells still rang for the Christian dead. The Marīnids fought on alone. The
+      sultan had made the peace his victories had earned, and Fās would have to make its own.
+
+
+      *And if they incline to peace, then incline to it also, and rely upon Allāh.*
+    behind: >-
+      Battle numbers are from the saves of 14 September 1347, 1 July 1348 and 27 January 1349; battles got
+      prose by size, since the save doesn't record war score per battle. The turns of the story are Trent's
+      reading. The deserting levies, the guards at al-Manṣūra, the sultan's manner with the envoys and
+      Sulaymān Bey's courtesy are colour; the Ottoman reply is quoted from the event.

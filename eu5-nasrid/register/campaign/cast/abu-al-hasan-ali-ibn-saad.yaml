@@ -1,0 +1,23 @@
+name: Abū al-Ḥasan ʿAlī ibn Saʿd
+arabic: أبو الحسن علي بن سعد
+house: Naṣrid
+born: '1410-04-17'
+father: saad-ibn-ismail-ibn-saad
+mother: maryam-bint-saad-ibn-faraj
+roles:
+  - Shaykh of the Ṭāʾifa of Qūnka (from 1448)
+traits:
+  - entrepreneur
+stations:
+  - role: dīwān
+    from: '1428-04-08'
+    to: '1448-06-28'
+    source: save
+    approx: false
+note: >-
+  First son of the Emperor's son Saʿd and of Maryam, Shaykha of Qūnka; born 17 April 1410. Through his mother,
+  heir to the frontier ṭāʾifa of Qūnka (save of 29 June 1410). He succeeded his mother as Shaykh of Qūnka on
+  her death, 28 June 1448; by 1449 the save marks him an entrepreneur (saves of 1 February and 2 August 1449).
+game:
+  id: 33593956
+  name: Abu al-Hasan Ali

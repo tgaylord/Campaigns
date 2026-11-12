@@ -1,0 +1,24 @@
+name: Joan d'Oriola
+house: Oriola
+born: '1315-05-21'
+died: '1368-07-31'
+roles:
+  - ruler of the Ṭāʾifa of Balansiyya
+stations:
+  - role: admiral
+    from: '1353-02-16'
+    to: '1353-09-14'
+    source: save
+    approx: false
+  - role: general
+    from: '1363-06-26'
+    to: '1366-01-24'
+    source: save
+    approx: false
+note: >-
+  Ruler of Valencia from its release as a ṭāʾifa on 23 August 1340: a Catalan, Sunni, of the house the game
+  calls Orihuela. The chronicle keeps the Christian name he was born with, as the game does (Trent's
+  decision), so he stays recognisable later. Died 1368-07-31 (save of 24 October 1414).
+game:
+  id: 27869
+  name: Joan

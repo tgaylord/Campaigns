@@ -1,0 +1,210 @@
+date: '1375-06-05'
+title: The War of the Aragonese Restoration
+source:
+  save: SP_ADU_1375_06_05 (compressed)
+  game: 1.4.6
+summary: >-
+  On 5 June 1375, the day the Castilian truce runs out, al-Andalus declares war on Castile under the
+  Reconquest of Iberia claim, framed as the restoration of Aragon. With France pushing England into the sea,
+  the Emperor will not wait for Rome to rally the French. A levy of gold and men on the nobles and the ṭāʾifas
+  fills the treasury: 1,579 against 286 in March. Portugal and the Papal States join Castile; the Mamlūks and
+  the four ṭāʾifas join al-Andalus. At the declaration al-Andalus has 3,300 regulars and 4 ships against
+  Castile's 1,750 men, Portugal's 1,050 and Rome's 684; the Mamlūks have 3,930. Maryam has sat in the dīwān
+  since 17 March. The game now ranks al-Andalus 13th among the powers. Shares of power are estimated from the
+  1 June 1349 reading.
+realm:
+  towns: 72
+  souls: 875059
+  treasury: 1579
+  income: 94
+  expenses: 78.7
+  stability: 37.5
+  prestige: 46
+  regiments: 5
+  ships: 4
+  manpower: 3811
+court:
+  ruler: saad-ibn-yusuf
+  heir: ismail-ibn-saad
+  capital: gharnata
+  council:
+    - who: dua-marinid
+      seat: Promoting Andalusī culture
+    - who: sayyida-of-fezzan
+      seat: Promoting Andalusī culture
+    - who: maryam-bint-yusuf
+      seat: Changing the societal values
+standing:
+  wars:
+    - war-of-the-aragonese-restoration
+  allies:
+    - Mamluks
+  subjects:
+    - Valencia (taifa)
+    - Taifa of the Algarve (taifa)
+    - Catalonia (taifa)
+    - Aragon (taifa)
+  estates:
+    - name: Crown
+      power: 31.72
+    - name: Nobility
+      power: 30.8
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 8.88
+      mood: 53
+    - name: Burghers
+      power: 10.35
+      mood: 50
+    - name: Commoners
+      power: 4.92
+      mood: 50
+    - name: Dhimmī
+      power: 13.33
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 452329
+    Castilian: 358064
+    Sephardi: 54648
+    Mustaarabi: 4039
+    Sardinian: 2537
+    Ligurian: 609
+  faiths:
+    Sunni: 491139
+    Catholic: 326201
+    Jewish: 56918
+    Bori_Religion: 547
+    Nyama: 253
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - ALV
+    - CAT
+    - ARA
+  allies:
+    - MAM
+beats:
+  - id: 1375-03-17-maryam-to-the-diwan
+    'on': '1375-03-17'
+    kind: office
+    what: >-
+      In the reorganisation of the realm the Emperor's younger sister Maryam, eighteen and the ablest mind at
+      court, is appointed to the dīwān. Aiman, his principal wife, holds no formal seat, since the game bars
+      the consort from the council, but sits there all the same by the strength of the harem
+    who:
+      - maryam-bint-yusuf
+      - saad-ibn-yusuf
+      - aiman-mamluk
+    from:
+      - save
+      - told
+    cite: Trent's account; save of 5 June 1375 (her seat in the dīwān from 17 March)
+    detail:
+      appointed: maryam-bint-yusuf
+      stats:
+        - 99
+        - 58
+        - 84
+      consort: >-
+        Aiman: no formal office (the game bars the consort from the council); a member in the chronicle by the
+        harem's strength (Trent's ruling)
+      action: changing the realm's societal values (from 17 March 1375)
+  - id: 1375-04-15-catalan-marriage
+    'on': '1375-04-15'
+    kind: marriage
+    what: >-
+      The Emperor's sister Fāṭima, seventeen, is married to Francesc de Montsoriu, the ḥājib of the new Ṭāʾifa
+      of Catalonia: the house of Naṣr is bound to Barcelona
+    who:
+      - fatima-bint-yusuf
+      - francesc-de-montsoriu
+      - saad-ibn-yusuf
+    threads:
+      - house
+    from:
+      - save
+      - told
+    cite: Trent's account; save of 5 June 1375
+    detail:
+      with: CAT
+      kind: royal marriage
+      bride: fatima-bint-yusuf
+      groom: francesc-de-montsoriu
+  - id: 1375-06-05-rome-and-lisbon
+    'on': '1375-06-05'
+    kind: war
+    what: >-
+      Rome and Lisbon answer the Castilian call: Portugal, Castile's partner in the union, and the Papal
+      States with their vassals Faenza, Siena and a third. Egypt answers ours, with its vassals
+    threads:
+      - war-of-the-aragonese-restoration
+    from:
+      - save
+      - told
+    cite: Trent's account; save of 5 June 1375
+    detail:
+      castile:
+        - POR
+        - PAP
+        - FAE
+        - SIE
+        - AAA02
+      alAndalus:
+        - ARA
+        - CAT
+        - VAL
+        - ALV
+        - MAM
+        - DUL
+        - MEC
+        - MDA
+        - AAL
+        - AMR
+        - DGE
+        - FDL
+        - BQA
+        - SKN
+        - AAA00
+  - id: 1375-06-05-war-on-castile
+    'on': '1375-06-05'
+    kind: war
+    what: >-
+      The truce with Qashtāla runs out, and the Emperor does not wait. The French are pushing the English into
+      the sea; wait, and Rome will rally France to blunt the advance. War is declared on Castile under the
+      Reconquest of Iberia, framed as the restoration of Aragon, and a levy of gold and men is laid on the
+      nobles and the ṭāʾifas
+    who:
+      - saad-ibn-yusuf
+      - jeronimo-of-castile
+    threads:
+      - war-of-the-aragonese-restoration
+    from:
+      - save
+      - told
+    cite: Trent's account; save of 5 June 1375
+    detail:
+      cb: cb_reconquer_iberia
+      target: CAS
+      framing: 'the Aragonese restoration: Zaragoza, Huesca, Teruel and the Aragonese heartland, held by Castile'
+      treasury:
+        - 286
+        - 1579
+      forces:
+        al-Andalus: 3300
+        Castile: 1750
+        Portugal: 1050
+        Papal States: 684
+        Mamluks: 3930
+      ships:
+        al-Andalus: 4
+        Castile: 10
+        Portugal: 6
+        Papal States: 4
+      levy: on the nobles and the ṭāʾifas, in gold and men (Trent)
+      greatPowerRank:
+        - 17
+        - 13
+      franceVsEngland: +25% for France

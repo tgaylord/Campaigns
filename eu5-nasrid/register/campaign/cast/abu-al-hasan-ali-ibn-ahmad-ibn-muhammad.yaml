@@ -1,0 +1,14 @@
+name: Abū al-Ḥasan ʿAlī ibn Aḥmad ibn Muḥammad
+arabic: أبو الحسن علي بن أحمد بن محمد
+house: Naṣrid
+born: '1433-03-12'
+father: ahmad-ibn-muhammad-ibn-ismail
+traits:
+  - child_intelligent
+note: >-
+  Son of Prince Aḥmad by Muʾmina, born at Ishbīliya on 12 March 1433, named after the general of Shant Yāqub.
+  One of the nine grandchildren born to the Emperor Muḥammad in the first years of his reign. Intelligent as a
+  child. (save of 11 June 1442)
+game:
+  id: 16841664
+  name: Abu al-Hasan Ali

@@ -1,0 +1,25 @@
+name: Saʿd ibn Faraj
+arabic: سعد بن فرج
+house: Naṣrid
+born: '1358-07-11'
+died: '1408-02-20'
+father: faraj-ibn-ismail
+mother: shama-sahara
+roles:
+  - ruler of the Ṭāʾifa of Qūnka
+stations:
+  - role: general
+    from: '1398-03-22'
+    to: '1398-08-19'
+    source: save
+    approx: false
+note: >-
+  Cousin of the Emperor Saʿd: son of his late uncle Faraj ibn Ismāʿīl and of Shamʿa of the central Sahara.
+  Husband of the Emperor's daughter Umm al-Fatḥ, who sits in the dīwān; their daughters were Maryam
+  (1390–1394) and Jadīla (born 1393). On 5 August 1395 he was made ruler of the new Ṭāʾifa of Qūnka, 20 towns
+  of the Castilian east taken at the Peace of Ramaḍān, with his brother Yūsuf (born 1360) as heir. He is also
+  heir to the Ṭāʾifa of Shalamanka (save of 5 August 1395). He died on 20 February 1408, aged forty-nine, and
+  his daughter Maryam succeeded him as Shaykha of Qūnka (save of 5 August 1408).
+game:
+  id: 45679
+  name: Saad

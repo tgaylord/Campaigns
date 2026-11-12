@@ -1,0 +1,103 @@
+date: '1451-02-01'
+title: The Year of Peace in the West
+source:
+  save: autosave of 1 February 1451 (compressed)
+  game: 1.4.7
+summary: >-
+  From an autosave, two months after the peace of Palermo. Sicily's twenty-two towns are held by the crown;
+  Athens and Negroponte are vassals. The Mamlūks' war on the Banū Lām goes on, with Mecca and Medina in Lām's
+  hands. Treasury 2,812; stability 23.6. Estate power estimated from the reading of 16 November 1428.
+realm:
+  towns: 244
+  souls: 3867234
+  treasury: 2812
+  income: 467.9
+  expenses: 447
+  stability: 23.6
+  prestige: 94
+  regiments: 13
+  ships: 97
+  manpower: 26458
+court:
+  ruler: muhammad-ibn-ismail-ibn-saad
+  heir: ismail-ibn-muhammad-ibn-ismail
+  capital: ishbiliyya
+  council:
+    - who: ismail-ibn-muhammad-ibn-ismail
+      seat: Assimilating the new lands
+    - who: ahmad-ibn-muhammad-ibn-ismail
+      seat: Changing the societal values
+    - who: umm-al-fath-bint-muhammad
+      seat: Strengthening the government
+    - who: shams-bint-muhammad
+      seat: Promoting Andalusī culture
+    - who: jadila-bint-saad-ibn-faraj
+      seat: Developing the provinces
+standing:
+  wars:
+    - mamluk-war-on-lam
+  allies:
+    - Mamluks
+    - Morocco
+    - Tunis
+  subjects:
+    - Aragon (taifa)
+    - Taifa of Cuenca (taifa)
+    - Kingdom of Portugal (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+    - Taifa of Galicia (taifa)
+    - Cape Verde (colonial nation)
+    - Athens (vassal)
+    - Negroponte (vassal)
+  estates:
+    - name: Crown
+      power: 28.78
+    - name: Nobility
+      power: 17.45
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 12.39
+      mood: 50
+    - name: Burghers
+      power: 24
+      mood: 55
+    - name: Commoners
+      power: 2.92
+      mood: 51
+    - name: Dhimmī
+      power: 14.47
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 1151990
+    Catalan: 775488
+    Portuguese: 548040
+    Castilian: 511629
+    Sicilian: 393418
+    Sephardi: 226179
+  faiths:
+    Sunni: 2107642
+    Catholic: 1528693
+    Jewish: 200545
+    Guanche_religion: 27801
+    Orthodox: 1743
+map:
+  ours:
+    - GRA
+  subjects:
+    - ARA
+    - ABA60
+    - POR
+    - ABA42
+    - ABA49
+    - ABA55
+    - GLC
+    - AAA52
+    - ATH
+    - NEG
+  allies:
+    - MAM
+    - MOR
+    - TUN

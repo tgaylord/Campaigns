@@ -1,0 +1,25 @@
+name: Fernando of Castile
+house: Castilian royal house
+born: '1364-10-11'
+died: '1424-10-17'
+father: jeronimo-of-castile
+roles:
+  - king of Portugal
+traits:
+  - deceitful
+  - babbling_buffoon
+stations:
+  - role: dīwān
+    from: '1402-02-03'
+    to: '1402-04-29'
+    source: save
+    approx: false
+note: >-
+  Jerónimo's son and heir, six years old in September 1370. King of Portugal from his father's death on 29
+  April 1402. In June 1410, at forty-five, he took Portugal into Qashtāla's war against the Emperor Ismāʿīl.
+  His heir is his daughter Joana (save of 29 June 1410). He lost Porto on 7 October 1411 and his kingdom with
+  it: at the peace of 1 November 1411 Portugal was annexed whole by al-Andalus, and Fernando is found at the
+  court of Castile (saves of 1 November 1411).
+game:
+  id: 52443
+  name: Fernando

@@ -1,0 +1,179 @@
+date: '1346-08-01'
+title: The debt paid down, the plague rumoured
+source:
+  save: autosave, 1 August 1346 (compressed)
+  game: 1.4.5
+summary: >-
+  Autosave of 1 August 1346, the day the game opens the Black Death. The loans the save still holds come to 96
+  in principal; Trent's reading of the debt in August is 122. Shares of power are estimated from the 11 August
+  1340 reading; no law or privilege has changed since January 1345.
+realm:
+  towns: 18
+  souls: 489571
+  treasury: 5
+  income: 31
+  expenses: 27.8
+  debt: 96
+  stability: 10
+  prestige: 11
+  regiments: 3
+  ships: 5
+  manpower: 4144
+court:
+  ruler: yusuf-i
+  heir: faraj-ibn-ismail
+  capital: gharnata
+  council:
+    - who: faraj-ibn-ismail
+      seat: Increase control in Mālaqa
+    - who: ismail-ibn-ismail
+      seat: Promote Granadan sovereignty
+standing:
+  allies:
+    - Morocco
+    - Tunis
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+  estates:
+    - name: Crown
+      power: 21.75
+    - name: Nobility
+      power: 48.51
+      mood: 45
+    - name: ʿUlamāʾ
+      power: 12.53
+      mood: 50
+    - name: Burghers
+      power: 11.28
+      mood: 50
+    - name: Commoners
+      power: 3.68
+      mood: 52
+    - name: Dhimmī
+      power: 2.24
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 475748
+    Sephardi: 11534
+    Ligurian: 1120
+    Hausa: 754
+    Mustaarabi: 232
+    Mandinka: 183
+  faiths:
+    Sunni: 475749
+    Jewish: 11765
+    Catholic: 1120
+    Bori_Religion: 754
+    Nyama: 183
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+  allies:
+    - MOR
+    - TUN
+beats:
+  - id: 1345-07-23-betrothal-tunis
+    'on': '1345-07-23'
+    kind: world
+    what: A Naṣrid betrothal is agreed with the Ḥafṣids of Tunis
+    from:
+      - save
+    cite: checkpoint 1346-08-01
+    detail:
+      with: TUN
+  - id: 1345-09-08-betrothal-ghana
+    'on': '1345-09-08'
+    kind: world
+    what: A second betrothal is agreed, with Ghana beyond the desert
+    from:
+      - save
+    cite: checkpoint 1346-08-01
+    detail:
+      with: GHA
+  - id: 1346-08-01-black-death
+    'on': '1346-08-01'
+    kind: world
+    what: >-
+      The Black Death: a great pestilence breaks out at Yaik, in the lands of the Golden Horde, and rumours of
+      it run west
+    from:
+      - save
+      - told
+    cite: Trent's account; checkpoint 1346-08-01
+    detail:
+      situation: black_death
+      origin: yaik
+      originOwner: GLH
+      disease: bubonic_plague
+  - id: 1346-08-01-conversion
+    'on': '1346-08-01'
+    kind: note
+    what: >-
+      Balansiyya now has more Muslims than Christians, 92,000 to 90,000; Mursiyya is nineteen parts in twenty
+      Muslim
+    where:
+      - balansiyya
+      - jumalla
+    from:
+      - save
+    cite: checkpoint 1346-08-01
+    detail:
+      VAL:
+        sunni: 92275
+        catholic: 90110
+      MUC:
+        sunni: 8496
+        catholic: 567
+  - id: 1346-08-01-debt
+    'on': '1346-08-01'
+    kind: realm
+    what: 'The debt is mostly paid: 122 ducats remain by Trent''s reading, four loans in the save'
+    threads:
+      - estates
+    from:
+      - save
+      - told
+    cite: Trent's account; checkpoint 1346-08-01
+    detail:
+      debt:
+        from: 287.8
+        to: 95.7
+        trent: 122
+      loans:
+        from: 12
+        to: 4
+  - id: 1346-08-01-sovereignty
+    'on': '1346-08-01'
+    kind: land
+    what: Sovereignty slips below 50 for the first time, to 48.6; influence drifts back toward Castile, −6.5
+    threads:
+      - strait
+    from:
+      - save
+    cite: checkpoint 1346-08-01
+    detail:
+      sovereignty:
+        from: 50.15
+        to: 48.65
+      influence:
+        from: -3.6
+        to: -6.5
+  - id: 1346-08-01-stability
+    'on': '1346-08-01'
+    kind: note
+    what: 'The realm begins to steady as the reforms gather power to the crown: stability back up to 10'
+    who:
+      - yusuf-i
+    from:
+      - save
+      - told
+    cite: Trent's account; checkpoint 1346-08-01
+    detail:
+      stability:
+        from: 7
+        to: 10

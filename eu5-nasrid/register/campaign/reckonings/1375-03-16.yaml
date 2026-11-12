@@ -1,0 +1,358 @@
+date: '1375-03-16'
+title: The Restoration of al-Andalus
+source:
+  save: SP_ADU_1375_03_16 (compressed)
+  game: 1.4.6
+summary: >-
+  On 16 March 1375 the sultan reorders the realm and proclaims the Restoration of al-Andalus. Murcia's twelve
+  towns pass directly to the crown and its heir Bernarda is betrothed to Prince Ismāʿīl. The conquered lands
+  of Aragon become two ṭāʾifas: Catalonia (28 towns around Barcelona) and a renewed Aragon (6 towns around
+  Benabarre). Granada becomes al-Andalus (the game's ADU; the campaign keeps the realm as GRA), with the rank
+  of an empire. The sultan chooses the convivencia: the Ornament of the World runs for 30 years. The crown
+  holds 72 towns and 874,000 people, Muslims a majority again; its four ṭāʾifas hold 64 more. Shares of power
+  are estimated from the 1 June 1349 reading.
+realm:
+  towns: 72
+  souls: 873610
+  treasury: 286
+  income: 94.5
+  expenses: 77.1
+  stability: 37.4
+  prestige: 42
+  regiments: 5
+  ships: 4
+  manpower: 2731
+court:
+  ruler: saad-ibn-yusuf
+  heir: ismail-ibn-saad
+  capital: gharnata
+  council:
+    - who: dua-marinid
+      seat: Promoting Andalusī culture
+    - who: sayyida-of-fezzan
+      seat: Promoting Andalusī culture
+standing:
+  allies:
+    - Mamluks
+  subjects:
+    - Valencia (taifa)
+    - Taifa of the Algarve (taifa)
+    - Catalonia (taifa)
+    - Aragon (taifa)
+  estates:
+    - name: Crown
+      power: 31.62
+    - name: Nobility
+      power: 31.01
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 8.83
+      mood: 55
+    - name: Burghers
+      power: 10.33
+      mood: 50
+    - name: Commoners
+      power: 4.9
+      mood: 50
+    - name: Dhimmī
+      power: 13.32
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 450278
+    Castilian: 359041
+    Sephardi: 54267
+    Mustaarabi: 4041
+    Sardinian: 2537
+    Ligurian: 610
+  faiths:
+    Sunni: 489580
+    Catholic: 326672
+    Jewish: 56558
+    Bori_Religion: 547
+    Nyama: 253
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - ALV
+    - CAT
+    - ARA
+  allies:
+    - MAM
+beats:
+  - id: 1375-03-16-bernarda-betrothed
+    'on': '1375-03-16'
+    kind: marriage
+    what: >-
+      The heir Ismāʿīl, nine, is betrothed to Bernarda of Murcia, eight, the gifted daughter of Dolça and heir
+      of the old ṭāʾifa: Murcia's house is bound to the throne as its land is bound to the crown. One thing to
+      watch: the girl is being raised at the Castilian court for now, though the betrothal holds
+    who:
+      - ismail-ibn-saad
+      - bernarda-of-murcia
+      - dolca-of-murcia
+    threads:
+      - house
+    from:
+      - save
+      - told
+    cite: save of 16 March 1375; Trent's account
+    detail:
+      kind: betrothal
+      raisedAt: the Castilian court (she sits in Castile in the save)
+      culture: Castilian, like her father; Murcia's court is tied to the Catalans through its traders (Trent)
+  - id: 1375-03-16-murcia-into-the-crown
+    'on': '1375-03-16'
+    kind: land
+    what: >-
+      Mursiyya, one of the first ṭāʾifas, is taken into the crown: its twelve towns, from Murcia and Cartagena
+      to Albacete and Lorca, pass directly to the sultan. Its ḥājiba Dolça is granted lands and titles and
+      confirmed as a governor. The crown's reach there will be limited at first, and the autonomy and
+      friendship of its Catalan court and traders are carefully kept, their institutions accepted within the
+      state rather than ignored
+    who:
+      - saad-ibn-yusuf
+      - dolca-of-murcia
+      - bernarda-of-murcia
+    from:
+      - save
+      - told
+    cite: save of 16 March 1375; Trent's account
+    detail:
+      from: MUC
+      to: GRA
+      locations:
+        - Murcia
+        - Cartagena
+        - Lorca
+        - Mula
+        - Caravaca
+        - Cieza
+        - Jumilla
+        - Hellín
+        - Albacete
+        - Chinchilla
+        - Villena
+        - Segura de la Sierra
+      annexationBegan: '1370-09-20'
+      taifaSince: '1340-08-23'
+  - id: 1375-03-16-restoration-of-al-andalus
+    'on': '1375-03-16'
+    kind: realm
+    what: >-
+      The Restoration of al-Andalus. The sultan no longer calls himself a successor: the Emirate of Granada
+      becomes al-Andalus, an empire, one continuation reaching back hundreds of years. Offered the convivencia
+      of the Umayyads or the sword of the Almohads, he chooses the first: let Qurṭuba shine again as the
+      ornament of the world. Tolerance, wealth and learning are to stand level with the Word
+    who:
+      - saad-ibn-yusuf
+    threads:
+      - umayyad-claim
+    from:
+      - save
+      - seen
+      - told
+    cite: Trent's account and screenshot of the event, 16 March 1375; save of 16 March 1375
+    detail:
+      formed: Al-Andalus
+      gameTag: ADU
+      previousTag: GRA
+      rank:
+        - duchy
+        - empire
+      choice: >-
+        Let Cordoba shine again as the ornament of the world (against: The sword of the Maghreb shall unite
+        the faithful)
+      modifier:
+        name: Ornament of the World
+        until: '1405-03-16'
+        culturalTradition: +20%
+        researchProgress: +15%
+        literacy: +0.02 a month
+        diplomaticReputation: 3
+        stabilityInvestmentEfficiency: +15%
+        toleranceHeretic: 1
+        toleranceHeathen: 1
+      unlocks: the convivencia destiny path in the Traditions tab
+      realm:
+        locations: 72
+        population: 873610
+        sunni: 489580
+        catholic: 326672
+        jewish: 56558
+        subjects: 4
+        subjectLocations: 64
+        stability:
+          - 30.4
+          - 37.4
+  - id: 1375-03-16-two-new-taifas
+    'on': '1375-03-16'
+    kind: land
+    what: >-
+      Two ṭāʾifas are carved from the conquered lands of Aragon. In the east, the Catalans are freed from the
+      Aragonese as a strong Ṭāʾifa of Catalonia: 28 towns and 453,000 people around Barcelona, under Francesc
+      de Montsoriu. In the west, at the edges, a renewed Aragon is proclaimed: six towns and 52,000 people
+      around Benabarre and Monzón, an Islamic state dressed as the old crown's successor, under King Alfons de
+      Borja, whom the game counts the fifth of his name
+    who:
+      - saad-ibn-yusuf
+      - francesc-de-montsoriu
+      - alfons-de-borja
+    from:
+      - save
+      - told
+    cite: save of 16 March 1375; Trent's account
+    detail:
+      CAT:
+        towns:
+          - Barcelona
+          - Tarragona
+          - Girona
+          - Lleida
+          - Tortosa
+          - Perpignan
+          - Vic
+          - Manresa
+          - Terrassa
+          - Vilafranca del Penedès
+          - Sant Feliu
+          - Berga
+          - Cardona
+          - Cervera
+          - Tàrrega
+          - Balaguer
+          - Agramunt
+          - Montblanc
+          - Prades
+          - Flix
+          - Talarn
+          - Vielha
+          - La Seu d'Urgell
+          - Puigcerdà
+          - Ripoll
+          - Besalú
+          - Castelló d'Empúries
+          - Sitges
+        population: 452700
+        capital: Barcelona
+        rank: duchy
+        culture: Catalan
+        religion: Sunni
+        ruler: Francesc de Montsoriu
+      ARA:
+        towns:
+          - Benabarre
+          - Monzón
+          - Barbastro
+          - Fraga
+          - Aínsa
+          - Sariñena
+        population: 52000
+        capital: Benabarre
+        rank: kingdom
+        culture: Catalan
+        religion: Sunni
+        ruler: Alfons de Borja (Alfons V)
+      note: >-
+        ARA is the old Kingdom of Aragon's own tag, landless since the peace of 15 March, now a ṭāʾifa of the
+        sultan
+tellings:
+  - id: 0776-10-12-of-the-restoration-of-al-andalus
+    'on': '1375-03-16'
+    title: Of the Reordering of the Realm, and the Restoration of al-Andalus
+    verse: 7:128
+    who:
+      - saad-ibn-yusuf
+      - dolca-of-murcia
+      - bernarda-of-murcia
+      - ismail-ibn-saad
+      - francesc-de-montsoriu
+      - alfons-de-borja
+      - maryam-bint-yusuf
+      - aiman-mamluk
+      - fatima-bint-yusuf
+      - dua-marinid
+    where:
+      - mursiyya
+      - barshaluna
+      - qurtuba
+      - gharnata
+    covers:
+      - 1375-03-15-the-new-taifas
+      - 1375-03-16-murcia-into-the-crown
+      - 1375-03-16-bernarda-betrothed
+      - 1375-03-16-two-new-taifas
+      - 1375-03-16-restoration-of-al-andalus
+      - 1375-03-17-maryam-to-the-diwan
+      - 1375-04-15-catalan-marriage
+    text: >
+      The ink on the peace with Arghūn was hardly dry when our lord [Saʿd](person:saad-ibn-yusuf) reordered
+      the realm. He did it in three parts, and the court said afterwards that the third was the one the first
+      two had been for.
+
+
+      The first part was [Mursiyya](place:mursiyya). It had been one of the first ṭāʾifas, under the sultan's
+      protection for thirty-five years, and the crown now took it into its own hands. Its towns, from Mursiyya
+      and Qarṭājanna to Lūrqa and the hills of Albacete, passed to the sultan directly. Its ḥājiba,
+      [Dolça](person:dolca-of-murcia), the old house of Oriola's daughter, was not cast aside. She was granted
+      lands and titles and confirmed as a governor. Her daughter [Bernarda](person:bernarda-of-murcia), eight
+      years old and gifted beyond her years, was betrothed to the heir [Ismāʿīl](person:ismail-ibn-saad). The
+      boy was nine and charmed everyone who met him. His tutors noted that he had already learned to tell each
+      of his elders what that elder wished to hear, and they did not all count it a virtue. The crown's reach
+      in Mursiyya would be short at first, and the sultan meant it to be. Mursiyya's traders were bound to the
+      Catalans of the coast, and its court had a Catalan cast to it, so he let its institutions stand inside
+      the state instead of ignoring them. There was one thing the dīwān watched. Bernarda, a Castilian by her
+      father's blood, was being raised at the court of Qashtāla. The betrothal held all the same.
+
+
+      The second part was the conquered land itself. The sultan did not keep it. In the east he freed the
+      Catalans from the Aragonese, as his heralds put it, and made a strong ṭāʾifa of them around
+      [Barshalūna](place:barshaluna): twenty-eight towns and four hundred and fifty thousand souls under a
+      Catalan of their own, [Francesc de Montsoriu](person:francesc-de-montsoriu), whom the court called the
+      ḥājib. In the west, on the edge of the Aragonese hills, he proclaimed a renewed Arghūn: six towns around
+      Benabarre and Munt Shūn, under a king of the house of Borja, [Alfons](person:alfons-de-borja), whom the
+      scribes counted the fifth Alfons to wear that crown. It was an Islamic state remade from the old one,
+      dressed as its successor. The kings of Ifranja and the Pope at Avignon could say that the sultan had
+      swallowed a Christian kingdom. They could not easily say it of a sultan who had given Arghūn back to a
+      king of Arghūn.
+
+
+      The third part was the restoration. Ever since the first war against the Aragonese, the sultan had
+      called himself the successor of the caliphs. Now he gave up the word successor. On 12 Shawwāl 776 the
+      dīwān proclaimed the restoration of al-Andalus: not a new state that inherited the old one, but the old
+      one itself, a single line running back through the Naṣrids and the ṭāʾifas to the Umayyads of
+      [Qurṭuba](place:qurtuba) and the conquest, more than six hundred years. The sultanate of
+      [Gharnāṭa](place:gharnata) was no more. In its place stood al-Andalus, and its lord was Emperor and
+      Sultan. Woe to those who denied it.
+
+
+      The scholars put a question to him that al-Andalus had faced since the days of the Umayyads. Would he
+      revive the convivencia of the caliphs, when mosques stood beside synagogues and churches, Ibn Rushd
+      argued with Aristotle and Maimonides found refuge under Muslim rule? Or would he take the road of the
+      Almohads and the Almoravids, who crossed the Strait with armies of Berber cavalry and built an empire on
+      military piety and strict doctrine? The Emperor did not hesitate. *Let Qurṭuba shine again as the
+      ornament of the world.* Tolerance, wealth and learning were to stand level with the Word. The realm
+      would feel it for thirty years, in its scholars and its markets and in the ease of its Christians and
+      Jews.
+
+
+      The dīwān changed with the realm. The next day the Emperor's younger sister
+      [Maryam](person:maryam-bint-yusuf) took a seat in it, eighteen years old and the ablest mind at court,
+      set to reshaping the realm's ideals. His principal wife, [Aiman](person:aiman-mamluk), held no office
+      there, for no custom allowed a consort to sit on the council. Everyone at court knew she sat there all
+      the same, by the strength of the harem. [Duʿāʾ](person:dua-marinid), who held her seat by law and had
+      held it for twenty years, was heard to say that she had never needed to sit anywhere by strength. Aiman
+      was heard to answer that she had never needed the law. A month later his sister
+      [Fāṭima](person:fatima-bint-yusuf) was married to the ḥājib of Barshalūna, and the house of Naṣr was
+      bound to the Catalans.
+
+
+      Much work remained. The bureaucracy would have to stretch over the new lands, and Qashtāla watched the
+      consolidation greedily from behind a truce with three months left to run. But the empire had been
+      proclaimed, and it was not waiting for the Christians' permission.
+
+
+      *Indeed, the earth belongs to Allāh. He causes to inherit it whom He wills of His servants, and the best
+      outcome is for the righteous.*

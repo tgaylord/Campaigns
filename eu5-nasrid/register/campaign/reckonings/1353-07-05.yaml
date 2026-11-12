@@ -1,0 +1,249 @@
+date: '1353-07-05'
+title: The old border reaffirmed
+source:
+  save: SP_GRA_1353_07_05 (compressed)
+  game: 1.4.5
+summary: >-
+  The revolt of the Kingdom of Sevilla is over. Granada crushed the rebel armies at Sharīsh and Shalūqa
+  al-Kubrā before the Castilians could arrive, and at the peace Qashtāla reaffirmed the border of the Peace of
+  Qurṭuba: all 25 locations return to Granada. Shares of power are estimated from the 1 June 1349 reading.
+realm:
+  towns: 43
+  souls: 600584
+  treasury: 273
+  income: 30.1
+  expenses: 33.8
+  stability: 17.5
+  prestige: 46
+  regiments: 5
+  ships: 5
+  manpower: 3047
+court:
+  ruler: yusuf-i
+  heir: saad-ibn-yusuf
+  capital: gharnata
+  council:
+    - who: faraj-ibn-ismail
+      seat: Idle
+    - who: ismail-ibn-ismail
+      seat: Idle
+standing:
+  allies:
+    - Mamluks
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+  estates:
+    - name: Crown
+      power: 36.48
+    - name: Nobility
+      power: 24
+      mood: 44
+    - name: ʿUlamāʾ
+      power: 6.47
+      mood: 50
+    - name: Burghers
+      power: 8.88
+      mood: 41
+    - name: Commoners
+      power: 4.61
+      mood: 57
+    - name: Dhimmī
+      power: 19.56
+      mood: 57
+peoples:
+  cultures:
+    Andalusi: 285676
+    Castilian: 282828
+    Sephardi: 24149
+    Mustaarabi: 3032
+    Sardinian: 1686
+    Catalan: 843
+  faiths:
+    Sunni: 286927
+    Catholic: 286799
+    Jewish: 25984
+    Bori_Religion: 657
+    Nyama: 218
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+  allies:
+    - MAM
+beats:
+  - id: 1353-06-06-battle-jerez
+    'on': '1353-06-06'
+    kind: battle
+    what: >-
+      The rebels of the Kingdom of Sevilla fall on the Granadan army at Sharīsh and are thrown back: 4,400
+      rebels against 6,250 Granadans, and 2,300 of them lost for 1,700 of ours
+    who:
+      - yusuf-i
+    threads:
+      - sevillan-revolt
+    from:
+      - save
+    cite: save of 3 July 1353
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 6252
+      oursTotal: 6252
+      oursLost: 1674
+      theirs:
+        Kingdom of Sevilla: 4425
+      theirsTotal: 4425
+      theirsLost: 2292
+      location: Sharīsh (Jerez)
+      side: Granada defending
+  - id: 1353-06-27-battle-sanlucar-la-mayor
+    'on': '1353-06-27'
+    kind: battle
+    what: >-
+      The rebel army is destroyed at Shalūqa al-Kubrā: 4,600 Granadans fall on the last 2,100 rebels and kill
+      or take every one, for 13 of their own
+    who:
+      - yusuf-i
+    threads:
+      - sevillan-revolt
+    from:
+      - save
+    cite: save of 3 July 1353
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 4577
+      oursTotal: 4577
+      oursLost: 13
+      theirs:
+        Kingdom of Sevilla: 2126
+      theirsTotal: 2126
+      theirsLost: 2126
+      location: Shalūqa al-Kubrā (Sanlúcar la Mayor)
+  - id: 1353-07-03-state
+    'on': '1353-07-03'
+    kind: land
+    what: >-
+      Days before the end, the rebels still hold their 25 locations but have no army left; sovereignty 71.3,
+      Morocco's influence 7.0, stability 17.5
+    threads:
+      - strait
+    from:
+      - save
+    cite: save of 3 July 1353
+    detail:
+      sovereignty: 71.34
+      influence: 7.02
+      stability: 17.5
+  - id: 1353-07-05-revolt-ends
+    'on': '1353-07-05'
+    kind: peace
+    what: >-
+      The Kingdom of Sevilla is no more. The revolt ends with the rebels crushed before the Castilians could
+      come, and Qashtāla reaffirms the old border: all 25 locations, Qurṭuba, Ishbīliya, Jayyān and the silver
+      of Qusanṭīna among them, return to Granada
+    who:
+      - yusuf-i
+      - alfonso-xi
+    where:
+      - qurtuba
+      - ishbiliyya
+      - jayyan
+      - qusantina
+      - qarmuna
+    threads:
+      - sevillan-revolt
+    from:
+      - save
+      - told
+    cite: save of 5 July 1353; Trent's account
+    detail:
+      locations:
+        from: 18
+        to: 43
+      population:
+        from: 270227
+        to: 600584
+      straitAreasHeld:
+        from: 30
+        to: 55
+      border: Peace of Qurṭuba (1349) and the cession of 1351
+tellings:
+  - id: 0754-06-02-the-kingdom-of-ishbiliyya
+    'on': '1353-07-05'
+    title: Of the So-Called Kingdom of Ishbīliya, and the Old Border Reaffirmed
+    verse: 2:216
+    who:
+      - yusuf-i
+      - alfonso-xi
+    where:
+      - ishbiliyya
+      - qurtuba
+      - jayyan
+      - qarmuna
+      - qusantina
+      - gharnata
+      - balansiyya
+      - sharish
+      - shaluqa-al-kubra
+    covers:
+      - 1353-02-01-kingdom-of-sevilla
+      - 1353-02-01-castile-answers
+      - 1353-02-02-state
+      - 1353-06-06-battle-jerez
+      - 1353-06-27-battle-sanlucar-la-mayor
+      - 1353-07-03-state
+      - 1353-07-05-revolt-ends
+    text: >
+      The sultan had doubted that a remitted tax would buy a loyal heart, and he was right. On the
+      twenty-fifth of Dhū al-Ḥijja in the year 753, as the year ran out, the Castilian peasants of the new
+      lands rose together. In [Ishbīliya](place:ishbiliyya) they proclaimed a kingdom of their own, which they
+      called the Kingdom of Sevilla. In a single day every town won at the Peace of Qurṭuba, and the two
+      bought in 752, went over to it. [Qurṭuba](place:qurtuba), Ishbīliya and [Jayyān](place:jayyan) were
+      lost, and [Qarmūna](place:qarmuna) and the silver of [Qusanṭīna](place:qusantina) with them: twenty-five
+      towns and three hundred and twenty-eight thousand souls. [Gharnāṭa](place:gharnata) woke to find itself
+      what it had been before the war with the three crowns, eighteen towns in the mountains and on the sea.
+
+
+      Then came the thing that made the court laugh in the middle of its fear. The rebels were Castilians who
+      had risen against a Muslim lord. Yet the tyrant of Qashtāla, [Alfonso](person:alfonso-xi), did not march
+      to help them. He marched against them, for Gharnāṭa was still his tributary in name, and a lord who will
+      not defend his tributary will soon have none. The ṭāʾifas of [Balansiyya](place:balansiyya) and Mursiyya
+      took the field beside us as well. But the laughter did not last long, for the dīwān saw the danger at
+      once. If the Castilian host reached Ishbīliya first, it would not take the city back for Gharnāṭa. It
+      would take the city back for Qashtāla, and the Peace of Qurṭuba would be undone by the very king who had
+      sealed it.
+
+
+      So our lord [Yūsuf](person:yusuf-i) did not wait for his overlord. The rebels had taken the land, but
+      they could not raise men to hold it, for the plague had emptied their villages as it had emptied ours.
+      On the third of Jumādā al-Ūlā in the year 754 they gathered what they had, some four and a half
+      thousand, and fell on the army of Gharnāṭa at [Sharīsh](place:sharish). They broke against it and left
+      two thousand three hundred on the field. On the twenty-fourth of that month the sultan's horse caught
+      their last army, two thousand men, at [Shalūqa al-Kubrā](place:shaluqa-al-kubra) on the road below
+      Ishbīliya. Not one of them came away, and the sultan lost thirteen men. When the captives were brought
+      before him, he had their wounds dressed before their names were written down, and said that a beaten man
+      needs no further punishment to remember it.
+
+
+      The so-called kingdom had no army left, and its towns opened their gates. On the second of Jumādā
+      al-Ākhira the revolt was ended. Qashtāla came to the peace with nothing in its hands, since Gharnāṭa had
+      done the fighting, and it could only reaffirm the border it had sealed four years before. All
+      twenty-five towns returned to the house of Naṣr. The realm was forty-three towns again, six hundred
+      thousand souls, and fifty-five of the seventy-two towns of the Strait's three lands. Its sovereignty
+      stood higher than it had ever stood in the reign.
+
+
+      The court praised the speed of the sultan's horse. Older men remembered how the revolt had begun. The
+      Castilians of the valley had not been won by the remitted tax and would not be won by the victory. They
+      had been beaten, and that is not the same thing. The sultan's thoughts of moving his throne to Qurṭuba
+      were not abandoned. But no one now imagined it would be easy to sit there.
+
+
+      *Perhaps you dislike a thing and it is good for you, and perhaps you love a thing and it is bad for you.
+      And Allāh knows, while you know not.*

@@ -1,0 +1,29 @@
+name: Yūsuf ibn Ismāʿīl
+arabic: يوسف بن إسماعيل
+house: Naṣrid
+born: '1372-02-19'
+died: '1428-04-30'
+father: ismail-ibn-yusuf
+mother: hippolyte-of-villa-di-chiesa
+roles:
+  - ruler of the Ṭāʾifa of Banbalūna
+traits:
+  - industrious
+  - intricate_web_weaver
+stations:
+  - role: general
+    from: '1423-11-02'
+    to: '1428-04-30'
+    source: save
+    approx: false
+note: >-
+  Son of Ismāʿīl ibn Yūsuf and Hippolyte of Villa di Chiesa, born 19 February 1372 (save of 16 January 1373).
+  A cousin of the Emperor Ismāʿīl. On 1 November 1411 he was made ruler of the new Ṭāʾifa of Banbalūna, 18
+  towns of Navarre and the upper Duero, from Pamplona and Tudela to Soria and Medinaceli (save of 1 November
+  1411). On 1 November 1411 he became ruler of Banbalūna; his son Aḥmad sits in the dīwān. His wives bore him
+  Fāṭima (8 June 1419) and Muḥammad (18 November 1419) (save of 11 August 1420). By 1423 the game marks him
+  industrious and an intricate web-weaver (save of 5 November 1423). He died of a camp fever on 30 April 1428,
+  at fifty-six; his son Aḥmad succeeded him in Banbalūna (save of 25 May 1428).
+game:
+  id: 16808225
+  name: Joseph

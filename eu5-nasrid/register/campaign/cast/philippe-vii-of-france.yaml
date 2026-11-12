@@ -1,0 +1,16 @@
+name: Philippe VII of France
+born: '1398-06-02'
+roles:
+  - king of France (1421–1428)
+stations:
+  - role: dīwān
+    from: '1417-10-01'
+    to: '1421-04-06'
+    source: save
+    approx: false
+note: >-
+  King of France from 6 April 1421. He lost the Hundred Years' War at the peace of 28 November 1428, and on 1
+  December his crown passed to Edward of England; he kept a seat in the French council (saves of 1428).
+game:
+  id: 16801116
+  name: Philippe

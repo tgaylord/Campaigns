@@ -1,0 +1,15 @@
+name: Umm al-Fatḥ bint Ismāʿīl ibn Muḥammad
+arabic: أم الفتح بنت إسماعيل بن محمد
+sex: f
+house: Naṣrid
+born: '1433-09-16'
+father: ismail-ibn-muhammad-ibn-ismail
+traits:
+  - child_rowdy
+note: >-
+  Daughter of the heir Ismāʿīl by Khadīja, born at Ishbīliya on 16 September 1433, named for her aunt and
+  great-grandmother. One of the nine grandchildren born to the Emperor Muḥammad in the first years of his
+  reign. Rowdy as a child. (save of 11 June 1442)
+game:
+  id: 33575526
+  name: Umm al-Fath

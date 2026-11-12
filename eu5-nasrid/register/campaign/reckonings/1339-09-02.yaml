@@ -1,0 +1,252 @@
+date: '1339-09-02'
+title: The Ghuzāt al-Mujāhidīn
+source:
+  save: SP_GRA_1339_09_02 (compressed)
+  game: 1.4.5
+summary: >-
+  Three months into the war on Aragon, the day after the Ghuzāt al-Mujāhidīn event. Trent let the volunteers
+  serve and hired their company just after this save (his account; the save shows the company, unhired, under
+  Yaḥyā Raḥḥū at Gharnāṭa). Shares of power are estimated (calibrated on 16 November 1337); the Catalan
+  merchant privileges have lapsed since that reading, so the nobles and burghers may be a little
+  underestimated.
+realm:
+  towns: 18
+  souls: 484812
+  treasury: 207
+  income: 27.1
+  expenses: 50.9
+  debt: 362
+  stability: 38
+  prestige: 21
+  regiments: 28
+  ships: 5
+  manpower: 3979
+court:
+  ruler: yusuf-i
+  heir: faraj-ibn-ismail
+  capital: gharnata
+  council:
+    - who: faraj-ibn-ismail
+      seat: Increase control in Mālaqa
+    - who: yusuf-ibn-muhammad
+      seat: Promote Granadan sovereignty
+standing:
+  wars:
+    - war-on-aragon
+  allies:
+    - Morocco
+    - Tunis
+  estates:
+    - name: Crown
+      power: 24.76
+    - name: Nobility
+      power: 45.62
+      mood: 51
+    - name: ʿUlamāʾ
+      power: 12.38
+      mood: 50
+    - name: Burghers
+      power: 10.76
+      mood: 51
+    - name: Commoners
+      power: 4.34
+      mood: 59
+    - name: Dhimmī
+      power: 2.13
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 471254
+    Sephardi: 12343
+    Ligurian: 1203
+    Mandinka: 12
+  faiths:
+    Sunni: 471254
+    Jewish: 12343
+    Catholic: 1203
+    Nyama: 12
+map:
+  ours:
+    - GRA
+  allies:
+    - MOR
+    - TUN
+beats:
+  - id: 1339-06-13-battle-shaluqa
+    'on': '1339-06-13'
+    kind: battle
+    what: Morocco wins at last, at Shalūqa
+    minor: true
+    where:
+      - shaluqa
+    threads:
+      - moroccan-castilian-war
+    from:
+      - save
+    cite: checkpoint 1339-09-02
+    detail:
+      result: victory
+      ours: 6056
+      theirs: 5432
+      ourLosses: 372
+      theirLosses: 2735
+      side: Morocco's side (Granada not engaged)
+  - id: 1339-08-12-battle-muntil
+    'on': '1339-08-12'
+    kind: battle
+    what: A Tunisian column broken at Munṭīl
+    minor: true
+    where:
+      - muntil
+    threads:
+      - moroccan-castilian-war
+    from:
+      - save
+    cite: checkpoint 1339-09-02
+    detail:
+      result: defeat
+      ours: 327
+      theirs: 2692
+      ourLosses: 229
+      theirLosses: 118
+      side: Tunis (Granada not engaged)
+  - id: 1339-08-18-battle-jumalla
+    'on': '1339-08-18'
+    kind: battle
+    what: First blood at Jumalla
+    minor: true
+    where:
+      - jumalla
+    threads:
+      - war-on-aragon
+    from:
+      - save
+    cite: checkpoint 1339-09-02
+    detail:
+      result: victory
+      ours: 500
+      theirs: 5
+      ourLosses: 0
+      theirLosses: 5
+  - id: 1339-08-23-battle-al-karash
+    'on': '1339-08-23'
+    kind: battle
+    what: Tlemcen holds al-Karash against Castile
+    minor: true
+    where:
+      - al-karash
+    threads:
+      - moroccan-castilian-war
+    from:
+      - save
+    cite: checkpoint 1339-09-02
+    detail:
+      result: victory
+      ours: 443
+      theirs: 2572
+      ourLosses: 88
+      theirLosses: 132
+      side: Tlemcen (Granada not engaged)
+  - id: 1339-09-01-ghuzat
+    'on': '1339-09-01'
+    kind: world
+    what: 'The Ghuzāt al-Mujāhidīn: Amazigh volunteers come to Granada; the sultan lets them all serve'
+    who:
+      - yahya-rahhu
+    from:
+      - told
+    cite: Trent's account
+    detail:
+      event: Al-Ghuzāt al-Mujāhidīn
+      choice: Let these men serve, all of them.
+  - id: 1339-09-01-yahya-general
+    'on': '1339-09-01'
+    kind: office
+    what: Yaḥyā Raḥḥū made general of the Volunteers of the Faith
+    who:
+      - yahya-rahhu
+    from:
+      - save
+    cite: checkpoint 1339-09-02
+    detail:
+      role: GENERAL
+  - id: 1339-09-02-volunteers-hired
+    'on': '1339-09-02'
+    kind: office
+    what: 'The Volunteers of the Faith taken into pay: 10,000 foot and 1,200 tornadizo horse'
+    who:
+      - yahya-rahhu
+    threads:
+      - war-on-aragon
+    from:
+      - told
+    cite: Trent's account
+    detail:
+      footmen: 10000
+      tornadizos: 1200
+tellings:
+  - id: 0740-02-26-the-ghuzat-al-mujahidin
+    'on': '1339-09-02'
+    title: Of the First Blood at Jumalla, and the Coming of the Ghuzāt
+    verse: '9:41'
+    who:
+      - yusuf-i
+      - ibn-al-khatib
+      - yahya-rahhu
+    where:
+      - gharnata
+      - mursiyya
+      - jumalla
+      - al-mariyya
+      - shaluqa
+      - muntil
+      - tilimsan
+      - al-karash
+    covers:
+      - 1339-05-24-war-on-aragon
+      - 1339-05-24-aragon-allies
+      - 1339-06-13-battle-shaluqa
+      - 1339-08-12-battle-muntil
+      - 1339-08-18-battle-jumalla
+      - 1339-08-23-battle-al-karash
+      - 1339-09-01-ghuzat
+      - 1339-09-01-yahya-general
+      - 1339-09-02-volunteers-hired
+    text: >
+      When the war against Arghūn was proclaimed, the Christian kings came to stand beside their kinsman as
+      crows gather to one carcass: the king of Mayūrqa, the king of Nabarra, and the lord of Qalyari across
+      the sea. [Ibn al-Khaṭīb](person:ibn-al-khatib) led the host out by the road through
+      [Mursiyya](place:mursiyya) and made his camp there, twelve thousand six hundred strong. Most of them
+      were *mutaṭawwiʿa*, volunteers of the towns who take up the sword for the faith.
+
+
+      The first blood of the war was shed at [Jumalla](place:jumalla) on the eleventh of Ṣafar in the year
+      740. A company of five hundred levies from [al-Mariyya](place:al-mariyya) came upon five men of Arghūn.
+      Not one of the five lived to carry the news home, and not one of ours was scratched. It was a small
+      thing. The poets of the court have nonetheless made a great deal of it, and the chronicle records it so
+      that the reader may smile.
+
+
+      The war of the Marīnids went a little better that summer. At [Shalūqa](place:shaluqa), on the fourth of
+      Dhū al-Ḥijja 739, the men of Fās broke a Castilian army at last. They lost three hundred and seventy and
+      killed two thousand seven hundred. In Ṣafar, though, a Tunisian column was cut down at
+      [Munṭīl](place:muntil). Five days after Jumalla the men of [Tilimsān](place:tilimsan), fewer than five
+      hundred, held [al-Karash](place:al-karash) against two and a half thousand Castilians.
+
+
+      On the twenty-fifth of Ṣafar there came to [Gharnāṭa](place:gharnata) a great company of volunteers for
+      the jihad, the *Ghuzāt al-Mujāhidīn*, most of them Amazigh from across the water. At their head was
+      [Yaḥyā Raḥḥū](person:yahya-rahhu) of the Zanāta, a man of nine and thirty, bold in the fight and able in
+      counsel, but known to bend with the wind. The dīwān warned that such men are kingmakers, and that in the
+      contest for the Strait whoever pays their wages may come to hold the throne. Some urged the sultan to
+      keep only those whose loyalty was certain. Our lord answered: *let these men serve, all of them.* On the
+      next day he took the Volunteers of the Faith into his pay, ten thousand foot and twelve hundred
+      *tornadizo* horse, and Yaḥyā rode at their head as a general of Gharnāṭa.
+
+
+      The treasury groans under it. Even before the volunteers came, the realm was spending fifty-one dīnārs a
+      month against an income of twenty-seven. But the sultan has an army now such as Gharnāṭa has not seen in
+      a generation, and he means to use it before the road through Mursiyya closes.
+
+
+      *Go forth, whether light or heavy, and strive with your wealth and your lives in the cause of Allāh.*

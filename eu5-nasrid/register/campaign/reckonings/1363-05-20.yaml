@@ -1,0 +1,734 @@
+date: '1363-05-20'
+title: The truce runs out
+source:
+  save: SP_GRA_1363_05_20 (compressed)
+  game: 1.4.5
+summary: >-
+  The day the truce with Qashtāla ends, Granada holds its casus belli (the game's reclaim al-Andalus) and goes
+  to war for its independence. Qashtāla is still at war with Morocco, which holds 58 of its towns as far as
+  Toledo; Aragon has come in on Qashtāla's side against Morocco, and Portugal has made its peace with Fās.
+  Shares of power are estimated from the 1 June 1349 reading.
+realm:
+  towns: 43
+  souls: 632410
+  treasury: 57
+  income: 73
+  expenses: 63.9
+  stability: 40
+  prestige: 51
+  regiments: 5
+  ships: 5
+  manpower: 1946
+court:
+  ruler: yusuf-i
+  heir: saad-ibn-yusuf
+  capital: gharnata
+  council:
+    - who: dua-marinid
+      seat: Integrating the new lands
+    - who: khalid-ibn-yahya
+      seat: Promoting Andalusī culture
+standing:
+  wars:
+    - war-of-independence
+  allies:
+    - Mamluks
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+  estates:
+    - name: Crown
+      power: 36.62
+    - name: Nobility
+      power: 24.16
+      mood: 38
+    - name: ʿUlamāʾ
+      power: 6.25
+      mood: 40
+    - name: Burghers
+      power: 11.28
+      mood: 51
+    - name: Commoners
+      power: 3.98
+      mood: 58
+    - name: Dhimmī
+      power: 17.71
+      mood: 87
+peoples:
+  cultures:
+    Andalusi: 325488
+    Castilian: 268294
+    Sephardi: 30052
+    Mustaarabi: 4023
+    Sardinian: 1733
+    Catalan: 716
+  faiths:
+    Sunni: 304454
+    Catholic: 293190
+    Jewish: 33887
+    Bori_Religion: 660
+    Nyama: 220
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+  allies:
+    - MAM
+beats:
+  - id: 1360-08-13-battle-strait
+    'on': '1360-08-13'
+    kind: battle
+    what: A Castilian squadron beats off a Marīnid one in the Strait
+    minor: true
+    threads:
+      - marinid-submission-war
+    from:
+      - save
+    cite: save of 10 June 1362
+    detail:
+      result: allied victory
+      naval: true
+      ours:
+        Castile: 7000
+      oursLost: 1000
+      theirs:
+        Morocco: 4000
+      theirsLost: 1000
+      location: the Strait
+  - id: 1360-09-01-battle-strait
+    'on': '1360-09-01'
+    kind: battle
+    what: The Marīnid fleet, 17,000 strong, worsts the Castilians in the Strait
+    minor: true
+    threads:
+      - marinid-submission-war
+    from:
+      - save
+    cite: save of 10 June 1362
+    detail:
+      result: defeat
+      naval: true
+      ours:
+        Castile: 6000
+      oursLost: 1000
+      theirs:
+        Morocco: 17000
+      theirsLost: 0
+      location: the Strait
+  - id: 1360-09-13-battle-costa-sol
+    'on': '1360-09-13'
+    kind: battle
+    what: Off the coast of Mālaqa the great Marīnid fleet of 61,000 destroys a Portuguese squadron
+    minor: true
+    threads:
+      - marinid-submission-war
+    from:
+      - save
+    cite: save of 10 June 1362
+    detail:
+      result: defeat
+      naval: true
+      ours:
+        Portugal: 2000
+      oursLost: 2000
+      theirs:
+        Morocco: 61000
+      theirsLost: 1000
+      location: the Costa del Sol
+  - id: 1360-10-28-battle-bay-cadiz
+    'on': '1360-10-28'
+    kind: battle
+    what: Tilimsān's fleet sinks a Castilian squadron in the bay of Qādis
+    minor: true
+    threads:
+      - marinid-submission-war
+    from:
+      - save
+    cite: save of 10 June 1362
+    detail:
+      result: defeat
+      naval: true
+      ours:
+        Castile: 6000
+      oursLost: 6000
+      theirs:
+        Tlemcen: 48000
+      theirsLost: 1000
+      location: the bay of Qādis
+  - id: 1360-11-07-battle-almeria
+    'on': '1360-11-07'
+    kind: battle
+    what: >-
+      Victory at al-Mariyya: a Tilimsānī landing of 2,000 is thrown back into the sea by 10,500 Granadans,
+      losing 1,700 men to our 1,000
+    who:
+      - yusuf-i
+    where:
+      - al-mariyya
+    threads:
+      - marinid-submission-war
+    from:
+      - save
+    cite: save of 10 June 1362
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 10571
+      oursLost: 1023
+      theirs:
+        Tlemcen: 2052
+      theirsLost: 1665
+      location: al-Mariyya
+  - id: 1360-11-14-diwan-al-mustakhlas
+    'on': '1360-11-14'
+    kind: realm
+    what: >-
+      The Dīwān al-Mustakhlaṣ is founded to administer the sultan's private domain, the estates, mills and
+      revenues set apart from the public treasury to fund the court and al-Ḥamrāʾ. A new bureaucracy grows
+      from the harem's widening influence, in the middle of the Marīnid war
+    who:
+      - yusuf-i
+    where:
+      - gharnata
+    threads:
+      - towns
+    from:
+      - seen
+      - told
+    cite: Trent's screenshot of the bureaucracy choice and his account
+    detail:
+      bureaucracy: Dīwān al-Mustakhlaṣ
+      cost: 43.58 political influence
+      positive:
+        crownPower: +10%
+      constant:
+        taxEfficiency: +5%
+      negative:
+        estateEnrichment: +15%
+      likes:
+        burghers: +1% satisfaction equilibrium
+      dislikes:
+        nobles: -1% satisfaction equilibrium
+      maxCost: 5.45
+  - id: 1361-02-03-castile-turns-south
+    'on': '1361-02-03'
+    kind: peace
+    what: Qashtāla ends its war in Arghūn and turns its armies south against the Marīnids
+    threads:
+      - marinid-submission-war
+    from:
+      - told
+    cite: Trent's account
+  - id: 1361-02-03-marinid-landings
+    'on': '1361-02-03'
+    kind: note
+    what: >-
+      Four Marīnid armies of some 2,000 men each have crossed the Strait: one at Qādis and two at Walba on the
+      Castilian coast, which the court watches closely, while the one that landed at al-Mariyya in November
+      had been thrown back into the sea
+    where:
+      - qadis
+      - al-mariyya
+    threads:
+      - marinid-submission-war
+    from:
+      - save
+      - told
+    cite: >-
+      Trent's account; the al-Mariyya battle (7 November 1360, a Tilimsānī landing) from the save of 10 June
+      1362
+    detail:
+      landings:
+        Qādis (CAS): 1
+        Walba / Huelva (CAS): 2
+        al-Mariyya (GRA): 1, defeated
+      armySize: 2000
+  - id: 1361-02-16-battle-almonaster
+    'on': '1361-02-16'
+    kind: battle
+    what: A Portuguese column is cut up by the Marīnids at Almonaster in the hills of Walba
+    minor: true
+    threads:
+      - marinid-submission-war
+    from:
+      - save
+    cite: save of 10 June 1362
+    detail:
+      result: defeat
+      naval: false
+      ours:
+        Portugal: 500
+      oursLost: 388
+      theirs:
+        Morocco: 2617
+      theirsLost: 8
+      location: Almonaster la Real
+  - id: 1361-03-09-battle-bay-cadiz
+    'on': '1361-03-09'
+    kind: battle
+    what: Another Castilian squadron lost to Tilimsān in the bay of Qādis
+    minor: true
+    threads:
+      - marinid-submission-war
+    from:
+      - save
+    cite: save of 10 June 1362
+    detail:
+      result: defeat
+      naval: true
+      ours:
+        Castile: 1000
+      oursLost: 1000
+      theirs:
+        Tlemcen: 44000
+      theirsLost: 1000
+      location: the bay of Qādis
+  - id: 1361-03-23-battle-jerez
+    'on': '1361-03-23'
+    kind: battle
+    what: 'Victory at Sharīsh: a Marīnid army of 2,200 attacks 9,700 Granadans and loses 1,500 men to our 560'
+    who:
+      - yusuf-i
+    threads:
+      - marinid-submission-war
+    from:
+      - save
+    cite: save of 10 June 1362
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 9701
+      oursLost: 564
+      theirs:
+        Morocco: 2218
+      theirsLost: 1543
+      location: Sharīsh
+  - id: 1361-10-21-battle-herrera
+    'on': '1361-10-21'
+    kind: battle
+    what: >-
+      At Herrera, deep in Castile, the Marīnids attack a Castilian army and are thrown back, though Castile
+      loses more men (3,600) than Morocco (2,600)
+    minor: true
+    threads:
+      - marinid-submission-war
+    from:
+      - save
+    cite: save of 10 June 1362
+    detail:
+      result: allied victory
+      naval: false
+      ours:
+        Castile: 9663
+      oursLost: 3637
+      theirs:
+        Morocco: 5617
+      theirsLost: 2580
+      location: Herrera
+  - id: 1361-12-10-battle-escurial
+    'on': '1361-12-10'
+    kind: battle
+    what: >-
+      The Marīnids break a Castilian army of 6,000 at El Escorial in the heart of Castile; 4,000 Castilians
+      fall
+    minor: true
+    threads:
+      - marinid-submission-war
+    from:
+      - save
+    cite: save of 10 June 1362
+    detail:
+      result: defeat
+      naval: false
+      ours:
+        Castile: 6019
+      oursLost: 4017
+      theirs:
+        Morocco: 4777
+      theirsLost: 323
+      location: El Escorial
+  - id: 1361-12-13-battle-sevilla
+    'on': '1361-12-13'
+    kind: battle
+    what: 'Victory before Ishbīliya: 2,200 Marīnids attack 9,300 Granadans and lose 1,300 to our 1,100'
+    who:
+      - yusuf-i
+    where:
+      - ishbiliyya
+    threads:
+      - marinid-submission-war
+    from:
+      - save
+    cite: save of 10 June 1362
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 9304
+      oursLost: 1138
+      theirs:
+        Morocco: 2179
+      theirsLost: 1331
+      location: Ishbīliya
+  - id: 1362-03-11-battle-bay-cadiz
+    'on': '1362-03-11'
+    kind: battle
+    what: At last a Castilian squadron sinks a Tilimsānī one in the bay of Qādis
+    minor: true
+    threads:
+      - marinid-submission-war
+    from:
+      - save
+    cite: save of 10 June 1362
+    detail:
+      result: allied victory
+      naval: true
+      ours:
+        Castile: 2000
+      oursLost: 0
+      theirs:
+        Tlemcen: 2000
+      theirsLost: 2000
+      location: the bay of Qādis
+  - id: 1362-04-08-battle-sevilla
+    'on': '1362-04-08'
+    kind: battle
+    what: 'Victory before Ishbīliya again: 2,300 Marīnids throw themselves at 17,000 Granadans and lose 1,750'
+    who:
+      - yusuf-i
+    where:
+      - ishbiliyya
+    threads:
+      - marinid-submission-war
+    from:
+      - save
+    cite: save of 10 June 1362
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 16938
+      oursLost: 1133
+      theirs:
+        Morocco: 2328
+      theirsLost: 1757
+      location: Ishbīliya
+  - id: 1362-05-09-battle-caceres
+    'on': '1362-05-09'
+    kind: battle
+    what: The Marīnids rout a Castilian army at Cáceres in Extremadura, 1,500 Castilians lost for 80
+    minor: true
+    threads:
+      - marinid-submission-war
+    from:
+      - save
+    cite: save of 10 June 1362
+    detail:
+      result: defeat
+      naval: false
+      ours:
+        Castile: 2122
+      oursLost: 1540
+      theirs:
+        Morocco: 5248
+      theirsLost: 81
+      location: Cáceres
+  - id: 1362-06-10-state
+    'on': '1362-06-10'
+    kind: land
+    what: >-
+      Two years into the war: every Marīnid attempt on Granada has broken (four defeats at al-Mariyya, Sharīsh
+      and twice before Ishbīliya, 6,300 of their men lost to our 3,860), while the Marīnids range through
+      Castile to El Escorial and Cáceres and rule the sea. The war costs 76 a month against an income of 60;
+      sovereignty 99.7, Morocco's influence −13.4
+    threads:
+      - marinid-submission-war
+      - strait
+    from:
+      - save
+      - told
+    cite: save of 10 June 1362; Trent's account
+    detail:
+      granadaBattles:
+        won: 4
+        lost: 0
+        enemyLosses: 6296
+        ourLosses: 3858
+      sovereignty: 99.74
+      influence: -13.44
+      income: 59.8
+      expenses: 76.5
+      regiments: 15
+      manpower:
+        - 2226
+        - 6482
+  - id: 1362-07-30-white-peace-morocco
+    'on': '1362-07-30'
+    kind: peace
+    what: >-
+      A separate peace with the Marīnids. The court lets Fās understand that if Gharnāṭa throws its full
+      weight into the war, Fās will lose it; if Gharnāṭa stands aside, Fās will win against Qashtāla. The
+      Marīnids take the point: a white peace for Gharnāṭa, and their promise to respect its lands. Qashtāla is
+      left to fight on alone
+    who:
+      - yusuf-i
+    threads:
+      - marinid-submission-war
+    from:
+      - save
+      - told
+    cite: Trent's account; the date from the save of 5 April 1366 (Granada left the war on 30 July 1362)
+    detail:
+      terms:
+        - white peace
+        - Morocco promises to respect Granada's territory
+      method: threat of full intervention
+      leaves: GRA
+  - id: 1362-11-01-qasr-al-riyad
+    'on': '1362-11-01'
+    kind: realm
+    what: >-
+      Qaṣr al-Riyāḍ al-Saʿīd: not content with the glory al-Ḥamrāʾ already brings, the amir hires the finest
+      architects to raise a palace in its heart, filled with lion statues and muqarnas vaults, to show the
+      glory of the house of Naṣr to the whole Muslim world
+    who:
+      - yusuf-i
+    where:
+      - gharnata
+    threads:
+      - towns
+    from:
+      - seen
+    cite: Trent's screenshot of the event, with the option's tooltip open
+    detail:
+      event: Qaṣr ar-Riyāḍ as-Saʿīd
+      choice: Let the world behold the glory of the Nasrid!
+      alhambraMaxLevel: '+1'
+      gold: -9.1
+      prestige: 10
+      innovative: 5
+      historical: the Palace of the Lions, begun under Muḥammad V
+  - id: 1362-11-01-state
+    'on': '1362-11-01'
+    kind: note
+    what: >-
+      Peace at home: the dīwān works to assimilate Ishbīliya and Qurṭuba, the mines of Qusanṭīna are being
+      expanded, and the diplomats are at work on the matter of independence
+    where:
+      - ishbiliyya
+      - qurtuba
+      - qusantina
+    from:
+      - seen
+    cite: Trent's screenshot, 1 November 1362
+    detail:
+      cabinet:
+        - assimilating Sevilla
+        - assimilating Córdoba
+      constructions:
+        - mines, Qusanṭīna
+        - farms, Yuz Aryuba, Basṭa, Wādī Āsh
+      diplomacy:
+        - Independence
+        - Building Spy Network
+  - id: 1363-05-20-portugal-first
+    'on': '1363-05-20'
+    kind: note
+    what: >-
+      The court's first aim in the war: to knock Portugal out, as it had already made its own peace with the
+      Marīnids
+    threads:
+      - war-of-independence
+    from:
+      - told
+    cite: Trent's account
+  - id: 1363-05-20-state
+    'on': '1363-05-20'
+    kind: land
+    what: >-
+      At the outbreak: the Marīnids hold 58 Castilian towns as far as Toledo, and Qashtāla has 183 men in its
+      pool; Portugal 3,700. Gharnāṭa has 1,900 of 6,400 and only 57 in the treasury. Sovereignty 100,
+      influence −12.2
+    threads:
+      - war-of-independence
+      - strait
+    from:
+      - save
+    cite: save of 20 May 1363
+    detail:
+      manpower:
+        GRA:
+          - 1946
+          - 6361
+        CAS:
+          - 183
+          - 2759
+        POR:
+          - 3687
+          - 4550
+        MOR:
+          - 2486
+          - 2486
+      moroccanOccupation: 58
+      treasury: 57
+      sovereignty: 100
+      influence: -12.2
+  - id: 1363-05-20-taifas-untouched
+    'on': '1363-05-20'
+    kind: note
+    what: >-
+      The gain of the Marīnid war: the court kept the ṭāʾifas of Balansiyya and Mursiyya out of it, and they
+      come to the war of independence untouched
+    where:
+      - balansiyya
+      - mursiyya
+    threads:
+      - war-of-independence
+    from:
+      - told
+    cite: Trent's account
+  - id: 1363-05-20-war-of-independence
+    'on': '1363-05-20'
+    kind: war
+    what: >-
+      The truce with Qashtāla runs out, Gharnāṭa holds a just cause, and the amir declares war for the realm's
+      independence and marches north
+    who:
+      - yusuf-i
+    threads:
+      - war-of-independence
+    from:
+      - save
+      - told
+    cite: Trent's account; the casus belli from the save of 20 May 1363
+    detail:
+      casusBelli: cb_reclaim_andalucia
+      claimBegun: '1361-12-31'
+      target: CAS
+  - id: 1363-05-baena-andalusi
+    'on': '1363-05-20'
+    kind: note
+    what: >-
+      Baena becomes the first town of the reconquered valley whose people count themselves Andalusī again.
+      They are still Christian
+    from:
+      - save
+    cite: save of 20 May 1363 (the change falls between the saves of 26 June 1360 and 20 May 1363)
+    detail:
+      location: baena
+      culture: andalusi
+      religion: catholic
+tellings:
+  - id: 0763-10-07-the-marinid-demand
+    'on': '1362-07-30'
+    title: Of the Marīnid Demand, and the Peace Bought with a Warning
+    verse: '47:35'
+    who:
+      - yusuf-i
+      - ismail-ibn-ismail
+      - sayyida-of-fezzan
+      - khalid-ibn-yahya
+      - aisha-bint-yusuf
+      - saad-ibn-yusuf
+      - tizemt-hafsid
+      - umm-al-fath-bint-yusuf
+    where:
+      - gharnata
+      - qurtuba
+      - fas
+      - tilimsan
+      - al-mariyya
+      - sharish
+      - ishbiliyya
+      - qadis
+      - walba
+      - balansiyya
+    covers:
+      - 1354-03-16-betrothal-aydinids
+      - 1359-03-15-castile-aragon-war
+      - 1359-ismail-to-aydin
+      - 1359-04-khalid-council
+      - 1359-07-01-funduq
+      - 1360-06-26-state
+      - 1360-06-26-marinid-war
+      - 1360-06-26-chance-lost
+      - 1360-11-07-battle-almeria
+      - 1360-11-14-diwan-al-mustakhlas
+      - 1361-02-03-marinid-landings
+      - 1361-03-23-battle-jerez
+      - 1361-12-13-battle-sevilla
+      - 1362-04-08-battle-sevilla
+      - 1362-06-10-state
+      - 1362-07-30-white-peace-morocco
+    text: >
+      For twenty years the court had worked to set the Christian crowns against one another. In Rabīʿ al-Thānī
+      of the year 760 the work bore fruit. Qashtāla and Portugal marched east together into Arghūn, and Arghūn
+      called Savoy and Sicily to its side. The dīwān counted the dead of that war as the reports came in, ten
+      thousand Castilians and thirty thousand Portuguese, and began to speak openly of independence.
+      [Gharnāṭa](place:gharnata) was still Qashtāla's tributary in name. If the Christians bled each other
+      white, it would strike for its freedom.
+
+
+      The house of Naṣr lost another prince to a foreign court that spring. [Ismāʿīl ibn
+      Ismāʿīl](person:ismail-ibn-ismail), the sultan's brother, married the bride of the house of Aydīn
+      promised to him five years before, and went east to live in her father's palace in Anatolia. As with
+      Faraj, the harem was blamed for it. The sultan would have given his brother's seat to
+      [Sayyida](person:sayyida-of-fezzan), his first wife, but it was not to be. It went to
+      [Khālid](person:khalid-ibn-yahya), son of the late Yaḥyā Raḥḥū. He was sixteen years old and one of the
+      ablest men the court had seen in a generation.
+
+
+      That summer the merchants, the Italians above all, who carried the better part of the realm's trade,
+      pressed the sultan for a walled inn where their wares might lie under lock and their factors sleep under
+      guard. He built them a *funduq* beside the silk market and chose the ground for it himself. The burghers
+      were delighted, and the trade of Gharnāṭa and [Qurṭuba](place:qurtuba) ran more freely through its
+      gates. In the winter Sayyida bore the sultan another daughter, [ʿĀʾisha](person:aisha-bint-yusuf).
+
+
+      Then [Fās](place:fas) spoiled everything. On the tenth of Shaʿbān 761, with the friendship between the
+      two courts at its warmest, the Marīnid sultan declared war on Gharnāṭa to demand its submission as his
+      subject. [Tilimsān](place:tilimsan), Tāfīlālt and Tuwāt marched with him. The court could hardly believe
+      it. The ambassadors had been feasted in Fās that very spring. But a sultan who sees two crowns exhausted
+      and a third alone does not care what his ambassadors ate. By the reckoning of the dīwān that very day,
+      Gharnāṭa had never been so wholly its own master, and Qashtāla's overlordship had shrunk to a word on
+      parchment. Fās had chosen that day to demand that it become a subject. Qashtāla, as Gharnāṭa's overlord,
+      came into the war to defend it. The bitterest men at court said that the great chance had been thrown
+      away. Instead of striking at an exhausted Qashtāla, Gharnāṭa would spend its men holding off the
+      Marīnids until Qashtāla recovered.
+
+
+      The Marīnids found the shore of al-Andalus harder to hold than their fleet had promised. The first
+      landing, two thousand men of Tilimsān at [al-Mariyya](place:al-mariyya), was thrown back into the sea by
+      ten thousand Granadans on the twenty-sixth of Dhū al-Ḥijja. A week later, in the first days of 762, the
+      sultan founded the Dīwān al-Mustakhlaṣ to keep his private domain, the estates, mills and revenues set
+      apart from the public treasury to pay for the court and al-Ḥamrāʾ. It grew out of the harem's widening
+      hand in the palace. The burghers liked it, and the nobles did not. At [Sharīsh](place:sharish), in
+      Jumādā al-Ūlā 762, the Marīnids attacked an army four times their number and left fifteen hundred dead.
+      Twice before [Ishbīliya](place:ishbiliyya) they broke themselves on the sultan's lines. Elsewhere they
+      did as they pleased. They landed at [Qādis](place:qadis) and on the coast of [Walba](place:walba), and
+      their horsemen rode through Qashtāla as far as El Escorial and Cáceres, breaking every Castilian army
+      they met. Their fleets ruled the sea.
+
+
+      So in the summer of 763 our lord sent a message to Fās, and it was not a plea. If Gharnāṭa threw its
+      full weight into this war, he wrote, Fās would lose it. If Gharnāṭa stood aside, Fās would very likely
+      beat Qashtāla. The young [Saʿd](person:saad-ibn-yusuf), fourteen that summer, sat at his father's side
+      while the letter was drafted. He asked only how many men the Marīnids had lost on this shore. When he
+      was told more than six thousand, he said that the number was the letter and the rest was courtesy. The
+      Marīnids understood. On the seventh of Shawwāl they granted a white peace and promised to respect the
+      lands of Gharnāṭa. Qashtāla was left to fight on alone. The ṭāʾifas of [Balansiyya](place:balansiyya)
+      and Mursiyya had been kept out of the war entirely, and they would come untouched to the war that the
+      court still meant to fight.
+
+
+      Three weeks before the peace [Tizemt](person:tizemt-hafsid) had borne the sultan a daughter, and he had
+      named her [Umm al-Fatḥ](person:umm-al-fath-bint-yusuf), the mother of victory. The court took the name
+      for an omen.
+
+
+      *So do not weaken and call for peace while you are superior; and Allāh is with you and will never
+      deprive you of the reward of your deeds.*

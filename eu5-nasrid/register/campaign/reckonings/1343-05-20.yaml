@@ -1,0 +1,303 @@
+date: '1343-05-20'
+title: Eyes on Portugal
+source:
+  save: SP_GRA_1343_05_20 (compressed)
+  game: 1.4.5
+summary: >-
+  Portugal is at war with itself, and its queen is the wife of the king of Castile. Shares of power are
+  estimated from the 11 August 1340 reading, with the restored Catalan privileges and the Royal Decree folded
+  in.
+realm:
+  towns: 18
+  souls: 490374
+  treasury: 4
+  income: 32.8
+  expenses: 29.1
+  debt: 437
+  stability: 34
+  prestige: 17
+  regiments: 3
+  ships: 5
+  manpower: 4123
+court:
+  ruler: yusuf-i
+  heir: faraj-ibn-ismail
+  capital: gharnata
+  council:
+    - who: faraj-ibn-ismail
+      seat: Increase control in Mālaqa
+    - who: ismail-ibn-ismail
+      seat: Promote Granadan sovereignty
+standing:
+  allies:
+    - Morocco
+    - Tunis
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+  estates:
+    - name: Crown
+      power: 15.9
+    - name: Nobility
+      power: 52.58
+      mood: 42
+    - name: ʿUlamāʾ
+      power: 13.47
+      mood: 60
+    - name: Burghers
+      power: 11.45
+      mood: 46
+    - name: Commoners
+      power: 4.08
+      mood: 55
+    - name: Dhimmī
+      power: 2.52
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 476490
+    Sephardi: 12012
+    Ligurian: 1153
+    Hausa: 521
+    Mandinka: 198
+  faiths:
+    Sunni: 476490
+    Jewish: 12012
+    Catholic: 1153
+    Bori_Religion: 521
+    Nyama: 198
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+  allies:
+    - MOR
+    - TUN
+beats:
+  - id: 1342-01-01-renaissance
+    'on': '1342-01-01'
+    kind: world
+    what: The Age of the Renaissance begins
+    from:
+      - told
+    cite: Trent's account
+    detail:
+      age: age_2_renaissance
+  - id: 1342-02-07-promote-sovereignty
+    'on': '1342-02-07'
+    kind: office
+    what: Ismāʿīl ibn Ismāʿīl turns the dīwān's second seat back to promoting Granadan sovereignty
+    who:
+      - ismail-ibn-ismail
+    from:
+      - save
+    cite: checkpoint 1343-05-20
+    detail:
+      action: gra_promote_sovereignty
+  - id: 1342-05-02-hafsid-gift
+    'on': '1342-05-02'
+    kind: world
+    what: >-
+      Granada appeals across the sea for help in the struggle for the Strait, and the Ḥafṣid sultan of Tūnis
+      answers with a gift of 258 gold
+    from:
+      - told
+    cite: Trent's account; the event is the Strait's "Help From Maghreb" (game files)
+    detail:
+      from: TUN
+      gold: 258
+      event: flavor_gra.1200 (Help From Maghreb)
+  - id: 1342-08-14-catalan-privileges-restored
+    'on': '1342-08-14'
+    kind: realm
+    what: The Catalan Merchant Privileges, re-enacted after the peace with Aragon, come back into force
+    from:
+      - save
+    cite: checkpoint 1343-05-20 (reform dated 14 August 1340, two years to implement)
+    detail:
+      reform: catalan_merchant_privileges
+      enacted: '1340-08-14'
+      effects: nobles power -20%, burghers power -10%
+  - id: 1342-10-01-independence-cb
+    'on': '1342-10-01'
+    kind: world
+    what: The casus belli for a war of independence against Castile is ready
+    from:
+      - save
+    cite: checkpoint 1343-05-20
+    detail:
+      casus_belli: cb_independence_war
+      target: Castile
+      begun: '1340-08-14'
+  - id: 1342-12-30-birth-khalid
+    'on': '1342-12-30'
+    kind: birth
+    what: Khālid is born to Yaḥyā Raḥḥū and Qamar, mother of Ismāʿīl ibn Ismāʿīl
+    who:
+      - khalid-ibn-yahya
+      - yahya-rahhu
+      - qamar
+    from:
+      - save
+    cite: checkpoint 1343-05-20
+  - id: 1343-01-27-royal-decree
+    'on': '1343-01-27'
+    kind: realm
+    what: 'The Royal Decree: crown power +10%, and a steady pull toward centralisation and absolutism'
+    from:
+      - save
+    cite: checkpoint 1343-05-20; effects from the game files
+    detail:
+      reform: royal_decree
+  - id: 1343-05-20-conversion
+    'on': '1343-05-20'
+    kind: note
+    what: >-
+      Conversion runs on in the ṭāʾifas: Balansiyya now 66,000 Muslims to 116,000 Christians, Mursiyya nearly
+      half Muslim
+    where:
+      - balansiyya
+      - jumalla
+    from:
+      - save
+    cite: checkpoint 1343-05-20
+    detail:
+      VAL:
+        sunni: 65674
+        catholic: 115856
+      MUC:
+        sunni: 4023
+        catholic: 4447
+  - id: 1343-05-20-loans
+    'on': '1343-05-20'
+    kind: realm
+    what: >-
+      Twelve more estate loans repaid: the debt falls from 764 to 437 ducats, with the treasury near empty at
+      4
+    threads:
+      - estates
+    from:
+      - save
+    cite: checkpoint 1343-05-20
+    detail:
+      debt:
+        from: 763.6
+        to: 436.8
+      loans:
+        from: 30
+        to: 18
+  - id: 1343-05-20-shared-heir
+    'on': '1343-05-20'
+    kind: note
+    what: >-
+      The emirate's eyes turn to Portugal and its civil war; but Queen Maria is the wife of Alfonso of
+      Castile, and their son Peter is heir to both crowns
+    who:
+      - maria-of-portugal
+      - alfonso-xi
+      - peter-of-castile
+    from:
+      - save
+      - told
+    cite: Trent's account; heirs from checkpoint 1343-05-20
+  - id: 1343-05-20-sovereignty
+    'on': '1343-05-20'
+    kind: land
+    what: >-
+      Sovereignty stands at 50.7, a hair above the line; influence swings toward the middle of the channel, to
+      −10
+    threads:
+      - strait
+    from:
+      - save
+    cite: checkpoint 1343-05-20
+    detail:
+      sovereignty:
+        from: 51.6
+        to: 50.7
+      influence:
+        from: -20.2
+        to: -10.4
+tellings:
+  - id: 0743-12-24-the-lean-years
+    'on': '1343-05-20'
+    title: Of the Lean Years, the Gold of Tūnis, and the Royal Decree
+    verse: '11:6'
+    who:
+      - yusuf-i
+      - ismail-ibn-ismail
+      - yahya-rahhu
+      - qamar
+      - khalid-ibn-yahya
+      - maria-of-portugal
+      - alfonso-xi
+      - peter-of-castile
+    where:
+      - gharnata
+      - malaqa
+      - balansiyya
+    covers:
+      - 1342-01-01-renaissance
+      - 1342-02-07-promote-sovereignty
+      - 1342-05-02-hafsid-gift
+      - 1342-08-14-catalan-privileges-restored
+      - 1342-10-01-independence-cb
+      - 1342-12-30-birth-khalid
+      - 1343-01-27-royal-decree
+      - 1343-05-20-loans
+      - 1343-05-20-sovereignty
+      - 1343-05-20-shared-heir
+      - 1343-05-20-conversion
+    text: >
+      The years 742 and 743 have no battles in them, and so the chroniclers of other courts would pass over
+      them in a line. This chronicle will not, for in those years the state was mended. Mending is slower work
+      than war and harder to praise.
+
+
+      The debt to the estates was the first matter. It had been taken on in the war with Arghūn and it hung on
+      the crown like a chain, for every dīnār owed to the nobles was a dīnār's worth of their say in the
+      realm's affairs. Year by year the sultan paid it down, and year by year the treasury stood empty to do
+      it. By Dhū al-Ḥijja of 743 twelve more loans had been repaid, and the debt stood at four hundred and
+      thirty-seven, less than half what it had been when the war with Arghūn ended. The treasury held four
+      dīnārs.
+
+
+      In Dhū al-Qaʿda of 742 the sultan wrote across the sea to the Ḥafṣid sultan of Tūnis. He spoke of the
+      struggle for the Strait and of the burden of a lone Muslim kingdom on the Christian shore. The Ḥafṣid
+      answered as a brother and sent two hundred and fifty-eight gold pieces. It was not a great sum, but he
+      asked nothing in return, and the court did not forget it.
+
+
+      In Rabīʿ al-Awwal of 743 the Catalan merchant privileges came back into force. They had been granted
+      again in the days after the peace with Arghūn, and the merchants of Barshalūna returned to the silk
+      markets of [Gharnāṭa](place:gharnata) and [Mālaqa](place:malaqa) with their ships and their credit. The
+      nobles and the burghers both lost some of their weight in the realm by it, and so the crown weighed more
+      beside them. In Rabīʿ al-Thānī the dīwān's quiet grievance against Qashtāla was complete: the realm now
+      had a just cause for a war of independence, written and sealed, whenever it should choose to use it. It
+      was locked away.
+
+
+      In Shaʿbān the sultan issued the Royal Decree, by which the crown might command where before it had only
+      asked. The crown's hand grew firmer by it, and the realm began, slowly, to bend toward the throne.
+      Meanwhile [Ismāʿīl ibn Ismāʿīl](person:ismail-ibn-ismail) had turned his seat in the dīwān back to the
+      defence of the realm's sovereignty. It stood a hair above the half, and Qashtāla's pull on the realm had
+      eased.
+
+
+      In the house of Raḥḥū a son was born. [Khālid](person:khalid-ibn-yahya) was the child of [Yaḥyā
+      Raḥḥū](person:yahya-rahhu), the commander of the Volunteers, and the lady [Qamar](person:qamar), widow
+      of the sultan Ismāʿīl and mother of Ismāʿīl ibn Ismāʿīl. So the house of the Volunteers' general was
+      joined to the house of Naṣr through the old sultan's widow. The court was of two minds about it.
+
+
+      In the West the Portuguese war went on, and some in the dīwān hoped it might be turned to the realm's
+      use. But Queen [Maria](person:maria-of-portugal) was the wife of [Alfonso](person:alfonso-xi) of
+      Qashtāla, and their son [Peter](person:peter-of-castile) was heir to both crowns. Any blow at Portugal
+      was a blow at the house of Qashtāla. And in the Ṭāʾifas the call to prayer spread on.
+      [Balansiyya](place:balansiyya) now counted sixty-six thousand Muslims, and Mursiyya was nearly half
+      Muslim.
+
+
+      *And there is no creature on earth but that upon Allāh is its provision.*

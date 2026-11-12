@@ -1,0 +1,12 @@
+name: Fāṭima bint al-Aḥmar
+arabic: فاطمة بنت الأحمر
+sex: f
+house: Naṣrid
+born: '1261-01-01'
+died: '1337-04-03'
+father: muhammad-ii
+traits:
+  - architectural_visionary
+game:
+  id: 3527
+  name: Fatima

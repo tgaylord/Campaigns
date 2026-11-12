@@ -1,0 +1,69 @@
+name: Aḥmad ibn Muḥammad
+arabic: أحمد بن محمد
+house: Naṣrid
+tier: central
+born: '1403-06-10'
+father: muhammad-ibn-ismail-ibn-saad
+mother: isabel-de-montsoriu
+roles:
+  - member of the dīwān (from 1429)
+traits:
+  - architect
+drives:
+  - from: '1408-08-05'
+    text: 'Raised beside his half-brother Ismāʿīl, both gifted: a bond and an alliance from childhood.'
+    by: trent
+    source: Trent's account, 1408; Trent's direction, November 2026
+  - from: '1429-06-28'
+    text: Carries the state with Ismāʿīl, and is expected to head his council when Ismāʿīl reigns.
+    by: trent
+    source: Trent, June 1430; Trent's direction, November 2026
+  - from: '1430-06-01'
+    text: >-
+      An architect, building the realm stronger for the new century: cities, bridges, roads, the towns'
+      trades.
+    by: trent
+    source: Trent's account and screenshot, June 1430; Trent's direction
+  - from: '1442-06-11'
+    text: Mends the damage of the Jamāʿa of 846, appeasing the estates.
+    by: chronicle
+    source: Of the Princes' Mending
+  - from: '1444-08-27'
+    text: The towns' specialisation and the bridges of the 840s are his work, even in his father's reign.
+    by: trent
+    source: Trent's direction; the saves of 1442–1447
+  - from: '1447-08-19'
+    text: >-
+      Mourns his mother Isabel by building: six bridges in the west, the gunsmiths, the glassworks and the
+      foundries of 851.
+    by: chronicle
+    source: Of the Lady Isabel and the Bridges of the West
+  - from: '1448-09-02'
+    text: >-
+      The commons given seats in the Jamāʿa are the craftsmen his building made; he says nothing, and is
+      noticed.
+    by: chronicle
+    source: Of the Jamāʿa of the Commons
+  - from: '1451-12-21'
+    text: >-
+      Argues for a governor in Sicily, so that the island is built for the realm rather than for a ṭāʾifa
+      king; spends the year's treasury on paper mills, jewellers, a library and roads.
+    by: chronicle
+    source: Of the Governor of Balarm and the Holy Cities
+stations:
+  - role: dīwān
+    from: '1429-07-02'
+    to: null
+    source: save
+    approx: false
+note: >-
+  Second son of the heir Muḥammad, by Isabel de Montsoriu; born 10 June 1403. Gifted, like his elder
+  half-brother Ismāʿīl (save of 5 August 1408). Grown, by August 1420, into a man of 75/79/70; the childhood
+  gift has lapsed with no adult trait yet in its place (save of 11 August 1420). By 1423 he had married Dīma,
+  daughter of Abū Ḥammū of the Ḥafṣids of Tūnis; Muʾmina, daughter of Aḥmad of Burtuqāl; and ʿĀʾisha bint
+  Saʿd. Children: Saʿd (29 April 1423) by Muʾmina, Muʾmina (14 June 1423) by ʿĀʾisha, Ismāʿīl (1 August 1424)
+  by Dīma (saves of 1423 and 1424). In June 1430 the game marked him an architect; like his forebears a
+  builder, he imagined the greatest structures for the capital (Trent's account and screenshot).
+game:
+  id: 16805391
+  name: Ahmad

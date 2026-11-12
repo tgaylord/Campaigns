@@ -1,0 +1,373 @@
+date: '1423-11-05'
+title: The Call of Cairo
+source:
+  save: SP_ADU_1423_11_05 (compressed)
+  game: 1.4.7
+summary: >-
+  Five weeks after the Mamlūks went to war with the Ottomans, and a month after al-Andalus answered their call
+  with all seven ṭāʾifas. The Ṭāʾifa of Burtuqāl has been the Kingdom of Portugal since 4 November 1421, still
+  the Emperor's. Catalans and Sephardim are now accepted cultures beside the Portuguese. The crown holds 189
+  towns, with new settlements on Gran Canaria, the Cape Verde islands and Flores. Estates estimated from the
+  reading of 31 December 1415. Treasury 232; stability 17.
+realm:
+  towns: 189
+  souls: 2486174
+  treasury: 232
+  income: 283.6
+  expenses: 260.6
+  stability: 17.4
+  prestige: 68
+  regiments: 9
+  ships: 47
+  manpower: 9973
+court:
+  ruler: ismail-ibn-saad
+  heir: muhammad-ibn-ismail-ibn-saad
+  capital: ishbiliyya
+  council:
+    - who: saad-ibn-yusuf-ibn-saad
+      seat: Integrating the new lands
+    - who: muhammad-ibn-yusuf-ibn-faraj
+      seat: Integrating the new lands
+    - who: ahmad-ibn-yusuf-ibn-ismail
+      seat: Integrating the new lands
+    - who: yusuf-ibn-saad
+      seat: Encouraging migration
+    - who: jadila-bint-saad-ibn-faraj
+      seat: Developing the provinces
+standing:
+  wars:
+    - mamluk-ottoman-war
+  allies:
+    - Mamluks
+    - Morocco
+    - Tunis
+  subjects:
+    - Catalonia (taifa)
+    - Aragon (taifa)
+    - Taifa of Cuenca (taifa)
+    - Kingdom of Portugal (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+  estates:
+    - name: Crown
+      power: 27.06
+    - name: Nobility
+      power: 20.98
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 11.88
+      mood: 50
+    - name: Burghers
+      power: 20.83
+      mood: 47
+    - name: Commoners
+      power: 2.38
+      mood: 50
+    - name: Dhimmī
+      power: 16.86
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 735253
+    Castilian: 733559
+    Portuguese: 469148
+    Sephardi: 177224
+    Catalan: 170407
+    Leonese: 158808
+  faiths:
+    Sunni: 1153093
+    Catholic: 1150737
+    Jewish: 170499
+    Guanche_religion: 10427
+    Bori_Religion: 430
+map:
+  ours:
+    - GRA
+  subjects:
+    - CAT
+    - ARA
+    - ABA60
+    - POR
+    - ABA42
+    - ABA49
+    - ABA55
+  allies:
+    - MAM
+    - MOR
+    - TUN
+beats:
+  - id: 1421-02-01-yusuf-to-migration
+    'on': '1421-02-01'
+    kind: office
+    what: >-
+      Prince Yūsuf ibn Saʿd leaves the appeasing of the estates, which he had done since the Jamāʿa of 817,
+      and turns to drawing settlers to Ishbīliya
+    who:
+      - yusuf-ibn-saad
+    where:
+      - ishbiliyya
+    threads:
+      - estates
+    from:
+      - save
+    cite: save of 5 November 1423
+    detail:
+      from: appeasing the estates (from 27 October 1414)
+      to: encouraging migration to Ishbīliya
+  - id: 1421-02-11-jadila-to-development
+    'on': '1421-02-11'
+    kind: office
+    what: Jadīla bint Saʿd leaves the stabilising of the realm and turns to developing Ishbīliya
+    who:
+      - jadila-bint-saad-ibn-faraj
+    where:
+      - ishbiliyya
+    from:
+      - save
+    cite: save of 5 November 1423
+    detail:
+      from: stabilizing the country (from 29 September 1416)
+      to: developing Ishbīliya
+  - id: 1421-06-01-tamaraceite
+    'on': '1421-06-01'
+    kind: land
+    what: >-
+      Tamaraceite on Gran Canaria becomes a settlement of the crown, the second in the Canaries: 8,500 Guanche
+      islanders of their own faith
+    threads:
+      - voyages
+    from:
+      - save
+    cite: save of 5 November 1423
+    detail:
+      province: Canaries
+      population: 8483
+  - id: 1421-08-01-the-secret-of-the-naft
+    'on': '1421-08-01'
+    kind: world
+    what: >-
+      The Secret of the Naft. Ethiopia offers the Emperor a sum of money for the empire's naft, its fire
+      weapons. To sell is to let them be used against al-Andalus one day; the court answers that it will never
+      backfire
+    who:
+      - ismail-ibn-saad
+    from:
+      - seen
+    cite: Trent's screenshot, 1 August 1421
+    detail:
+      event: The Secret of the Naft
+      text: >-
+        Ethiopia has offered us a sum of money if we are to sell them some of our weaponry, specifically the
+        nafts. We can accept, but that will allow them to potentially use them against us (the game's text)
+      choice: >-
+        It will never backfire (the option whose tooltip is open; the other was 'They will not have our
+        weapons!')
+      effects:
+        Ethiopia: unlocks the Naft Throwers unit type
+        al-Andalus: receives 419.55 gold from Ethiopia, 200% of yearly income
+      realm:
+        treasury: 610 before the sale
+        population: 2.459 million
+        army: 4,900
+        fleets: six squadrons of 7–8 ships
+      diwan:
+        - integrating Trujillo
+        - integrating Ocaña
+        - integrating Cáceres
+        - encouraging migration to Ishbīliya
+        - developing Ishbīliya
+  - id: 1421-11-04-kingdom-of-burtuqal
+    'on': '1421-11-04'
+    kind: realm
+    what: >-
+      The Ṭāʾifa of Burtuqāl proclaims itself the Kingdom of Portugal. Its lord Aḥmad ibn Ismāʿīl, the
+      Emperor's cousin, takes the crown of the old kings and remains the Emperor's ṭāʾifa; the new kingdom's
+      state faith is Catholic, the faith of its people, though its king is a Muslim
+    who:
+      - ahmad-ibn-ismail-ibn-yusuf
+      - ismail-ibn-saad
+    from:
+      - save
+    cite: save of 5 November 1423
+    detail:
+      rank: county to kingdom
+      tag: ABA10 to POR
+      stateReligion: Catholic (Sunni before)
+      ruler: Aḥmad ibn Ismāʿīl ibn Yūsuf, Sunni
+      towns: 34
+      population: 698000
+  - id: 1422-04-18-death-of-umm-al-fath-bint-yusuf
+    'on': '1422-04-18'
+    kind: death
+    what: >-
+      Umm al-Fatḥ bint Yūsuf, the youngest and last of the children of Yūsuf I, dies of dysentery at
+      fifty-nine
+    who:
+      - umm-al-fath-bint-yusuf
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 5 November 1423
+    detail:
+      cause: dysentery
+  - id: 1422-08-12-death-of-caterina-de-borja
+    'on': '1422-08-12'
+    kind: death
+    what: Caterina de Borja, heir of the Ṭāʾifa of Aragon, is killed in a hunting accident
+    who:
+      - caterina-de-borja
+    from:
+      - save
+    cite: save of 10 October 1435
+    detail:
+      reason: hunting accident (the game)
+  - id: 1422-09-01-santo-antao
+    'on': '1422-09-01'
+    kind: land
+    what: >-
+      Santo Antão in the Cape Verde islands becomes a settlement of the crown, the empire's first town in the
+      southern sea: 1,700 Andalusī settlers
+    threads:
+      - voyages
+    from:
+      - save
+    cite: save of 5 November 1423
+    detail:
+      province: Cape Verde
+      population: 1687
+      culture: Andalusī
+      religion: Catholic in the save (a mixed settlement; the town's majority faith as the game records it)
+  - id: 1422-10-14-death-of-pedro-of-castile
+    'on': '1422-10-14'
+    kind: crown
+    what: >-
+      King Pedro of Castile dies at Santander, from a fall down a flight of stairs, at fifty-one. His son
+      Fernando succeeds to the four towns of the Cantabrian coast
+    who:
+      - pedro-of-castile
+    from:
+      - save
+    cite: save of 5 November 1423
+    detail:
+      cause: fell down stairs
+      successor: Fernando, born 10 March 1392 (65/71/46), a glory seeker
+  - id: 1423-02-01-santa-cruz-das-flores
+    'on': '1423-02-01'
+    kind: land
+    what: >-
+      Santa Cruz on Flores, the westernmost of the Azores, becomes a settlement of the crown: 1,300 Andalusī
+      settlers
+    threads:
+      - voyages
+    from:
+      - save
+    cite: save of 5 November 1423
+    detail:
+      province: Azores
+      population: 1263
+  - id: 1423-03-26-the-three-brides
+    'on': '1423-03-26'
+    kind: marriage
+    what: >-
+      By 1423 the heir's sons are married. Ismāʿīl has taken three princesses of the three Muslim empires
+      around him: Tella of Fās, sister of the sultan Yaḥyā; Ayaulym of Miṣr, daughter of the Mamlūk sultan
+      Aqṭāy; and Khadīja, daughter of the Ottoman sultan Aḥmad. His brother Aḥmad has married Dīma of the
+      Ḥafṣids of Tūnis, Muʾmina of Burtuqāl and ʿĀʾisha bint Saʿd. Their first children are born in 1422
+    who:
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+      - yahya-marinid
+      - aktai-mamluk
+      - ahmad-ottoman
+      - ahmad-ibn-ismail-ibn-yusuf
+    threads:
+      - two-princes
+      - house
+    from:
+      - save
+    cite: save of 5 November 1423
+    detail:
+      date: >-
+        not in the save; the marriages lie between September 1420 and January 1422, when the first children
+        were born. Dated here to the first save that shows them
+      children:
+        - Yūsuf, son of Ismāʿīl and Tella, 6 January 1422
+        - ʿĀʾisha, daughter of Ismāʿīl and Khadīja, 24 January 1422
+        - Jadīla, daughter of Ismāʿīl and Ayaulym, 29 June 1422
+        - Saʿd, son of Aḥmad and Muʾmina, 29 April 1423
+        - Muʾmina, daughter of Aḥmad and ʿĀʾisha, 14 June 1423
+  - id: 1423-09-19-mamluks-declare-war
+    'on': '1423-09-19'
+    kind: war
+    what: >-
+      The Mamlūk sultan Aqṭāy declares war on the Ottomans and Nafusa, with all his vassals from the Ḥijāz to
+      Cilicia
+    who:
+      - aktai-mamluk
+      - ahmad-ottoman
+    threads:
+      - mamluk-ottoman-war
+    from:
+      - save
+    cite: save of 5 November 1423
+    detail:
+      cb: attack_threat
+      attackers: >-
+        Egypt and its vassals: Mecca, Medina, the Ḥijāz lords and Cilicia; al-Andalus and its seven ṭāʾifas
+        from 1 October
+      defenders:
+        - the Ottomans
+        - Nafusa
+  - id: 1423-10-01-call-of-the-mamluks
+    'on': '1423-10-01'
+    kind: war
+    what: >-
+      The Mamlūks go to war with the Ottomans and Nafusa and call the Emperor to arms. Al-Andalus answers the
+      call of its oldest ally, and the court hopes Cairo does not expect much of it
+    who:
+      - ismail-ibn-saad
+      - aktai-mamluk
+      - ahmad-ottoman
+    threads:
+      - mamluk-ottoman-war
+    from:
+      - seen
+      - told
+    cite: Trent's screenshot and account, 1 October 1423
+    detail:
+      call: >-
+        Egypt calls upon us to join them in their 1st Egypt–Ottomans War against the Ottomans and Nafusa. This
+        is a war that they have started (the game's text)
+      costs:
+        refuse: Mamlūk opinion −20, trust −5
+        join: trust with the Ottomans and Nafusa −20; no truce broken
+      choice: 'Accept Offer (Trent: ''we will answer'')'
+      court: the court hopes they don't expect much from us (Trent)
+      realm:
+        population: 2.490 million
+        army: 4,900
+        stability: 17
+        markets: Ishbīliya and al-Ushbūna first, Barcelona and Fās second
+  - id: 1423-11-05-catalans-and-sephardim
+    'on': '1423-11-05'
+    kind: realm
+    what: >-
+      By November 1423 the Catalans stand at court beside the Andalusīs and the Portuguese as an accepted
+      culture, as the dīwān intended once Balansiyya was integrated, and the Sephardim, long tolerated and
+      under the Emperor's protection since the year of Avignon, are accepted with them
+    who:
+      - ismail-ibn-saad
+    where:
+      - balansiyya
+    from:
+      - save
+    cite: save of 5 November 1423
+    detail:
+      accepted:
+        - Portuguese
+        - Catalan
+        - Sephardi
+      date: not in the save; between 4 September 1420 and 5 November 1423

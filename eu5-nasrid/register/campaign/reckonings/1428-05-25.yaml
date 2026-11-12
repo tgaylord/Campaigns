@@ -1,0 +1,598 @@
+date: '1428-05-25'
+title: The Jamāʿa of 831
+source:
+  save: SP_ADU_1428_05_25 (compressed)
+  game: 1.4.7
+summary: >-
+  The day of the Jamāʿa of 831, which revoked the Primacy of Nobility. The umarāʾ are one in six content and
+  the realm's peace is all but gone (stability 1). The crown holds 194 towns and 2,552,000 people, with
+  armouries in ten of its cities and settlements now on four islands of the Azores, four of the Canaries and
+  three of the Cape Verdes. Seven ṭāʾifas; Banbalūna has a new lord, Aḥmad ibn Yūsuf. The truce with Castile
+  ran out in 1426, and Galicia has swallowed Asturias. Estates estimated from the reading of 16 November 1428,
+  six months later, after the Primacy was gone. Treasury 201; manpower full at 13,700.
+realm:
+  towns: 194
+  souls: 2551631
+  treasury: 201
+  income: 313.8
+  expenses: 268.4
+  stability: 0.8
+  prestige: 65
+  regiments: 9
+  ships: 50
+  manpower: 13705
+court:
+  ruler: ismail-ibn-saad
+  heir: muhammad-ibn-ismail-ibn-saad
+  capital: ishbiliyya
+  council:
+    - who: saad-ibn-yusuf-ibn-saad
+      seat: Promoting Andalusī culture
+    - who: muhammad-ibn-yusuf-ibn-faraj
+      seat: Integrating the new lands
+    - who: umm-al-fath-bint-muhammad
+      seat: Integrating the new lands
+    - who: yusuf-ibn-saad
+      seat: Promoting Andalusī culture
+    - who: jadila-bint-saad-ibn-faraj
+      seat: Developing the provinces
+standing:
+  allies:
+    - Mamluks
+    - Morocco
+    - Tunis
+  subjects:
+    - Catalonia (taifa)
+    - Aragon (taifa)
+    - Taifa of Cuenca (taifa)
+    - Kingdom of Portugal (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+  estates:
+    - name: Crown
+      power: 29.59
+    - name: Nobility
+      power: 17.21
+      mood: 16
+    - name: ʿUlamāʾ
+      power: 12.54
+      mood: 50
+    - name: Burghers
+      power: 21.2
+      mood: 50
+    - name: Commoners
+      power: 2.79
+      mood: 50
+    - name: Dhimmī
+      power: 16.67
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 771535
+    Castilian: 731144
+    Portuguese: 482205
+    Sephardi: 185319
+    Catalan: 175528
+    Leonese: 161632
+  faiths:
+    Sunni: 1211334
+    Catholic: 1148669
+    Jewish: 176301
+    Guanche_religion: 12915
+    Rogo_miki_religion: 674
+map:
+  ours:
+    - GRA
+  subjects:
+    - CAT
+    - ARA
+    - ABA60
+    - POR
+    - ABA42
+    - ABA49
+    - ABA55
+  allies:
+    - MAM
+    - MOR
+    - TUN
+beats:
+  - id: 1424-10-17-death-of-fernando-of-castile
+    'on': '1424-10-17'
+    kind: death
+    what: Fernando, the last king of Portugal before the Peace of Rajab, is killed in a hunting accident
+    who:
+      - fernando-of-castile
+    from:
+      - save
+    cite: save of 10 October 1435
+    detail:
+      reason: hunting accident (the game)
+  - id: 1425-03-01-fogo
+    'on': '1425-03-01'
+    kind: land
+    what: 'Fogo, the fire island of the Cape Verdes, becomes a settlement of the crown: 1,800 Andalusī settlers'
+    threads:
+      - voyages
+    from:
+      - save
+    cite: save of 25 May 1428
+    detail:
+      province: Cape Verde
+      population: 1821
+  - id: 1425-03-25-galicia-takes-asturias
+    'on': '1425-03-25'
+    kind: land
+    what: >-
+      Diego of Galicia makes peace with Asturias and takes all eight of its towns, Oviedo among them. Galicia
+      now holds 31 towns from Santiago to Llanes
+    who:
+      - diego-villamarin
+      - jose-fernando-tunon
+    from:
+      - save
+    cite: save of 25 May 1428
+    detail:
+      towns: 8
+      truce: Galicia–Asturias to 25 January 1435
+  - id: 1425-04-24-muhammad-ibn-yusuf-new-task
+    'on': '1425-04-24'
+    kind: office
+    what: Muḥammad ibn Yūsuf of the dīwān is given new lands to integrate
+    minor: true
+    who:
+      - muhammad-ibn-yusuf-ibn-faraj
+    from:
+      - save
+    cite: save of 25 May 1428
+  - id: 1425-06-01-tedote
+    'on': '1425-06-01'
+    kind: land
+    what: 'Tedote on La Palma becomes a settlement of the crown, the third in the Canaries: 5,500 Guanche islanders'
+    threads:
+      - voyages
+    from:
+      - save
+    cite: save of 25 May 1428
+    detail:
+      province: Canaries
+      population: 5523
+  - id: 1425-07-01-horta
+    'on': '1425-07-01'
+    kind: land
+    what: 'Horta on Faial becomes a settlement of the crown in the Azores: 1,300 Andalusī settlers'
+    threads:
+      - voyages
+    from:
+      - save
+    cite: save of 25 May 1428
+    detail:
+      province: Azores
+      population: 1322
+  - id: 1425-12-17-umm-al-fath-to-the-diwan
+    'on': '1425-12-17'
+    kind: office
+    what: >-
+      Umm al-Fatḥ bint Muḥammad, fourteen, the heir's daughter by Jadīla bint Saʿd, takes Aḥmad ibn Yūsuf's
+      seat in the dīwān, integrating the new lands
+    who:
+      - umm-al-fath-bint-muhammad
+      - ahmad-ibn-yusuf-ibn-ismail
+      - jadila-bint-saad-ibn-faraj
+      - muhammad-ibn-ismail-ibn-saad
+    from:
+      - save
+    cite: save of 25 May 1428
+    detail:
+      born: '1411-07-10'
+      stats: 62/66/77
+  - id: 1426-02-01-truce-with-castile-ends
+    'on': '1426-02-01'
+    kind: world
+    what: >-
+      The truce of the Peace of Rajab with Castile runs out. For the first time in fifteen years nothing binds
+      al-Andalus to peace with any Christian kingdom of the peninsula
+    who:
+      - ismail-ibn-saad
+    from:
+      - save
+    cite: save of 25 May 1428
+    detail:
+      truce: Peace of Rajab, 1 November 1411 – 1 February 1426
+  - id: 1426-06-04-death-of-jadila-bint-ismail
+    'on': '1426-06-04'
+    kind: death
+    what: >-
+      Jadīla, daughter of the heir's son Ismāʿīl and of Ayaulym the Mamlūk princess, dies of a sickness at not
+      quite four
+    who:
+      - ismail-ibn-muhammad-ibn-ismail
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 25 May 1428
+    detail:
+      born: '1422-06-29'
+      cause: disease
+  - id: 1426-07-04-saad-ibn-yusuf-promotes-culture
+    'on': '1426-07-04'
+    kind: office
+    what: Saʿd ibn Yūsuf of the dīwān leaves the work of integration and turns to promoting Andalusī culture
+    who:
+      - saad-ibn-yusuf-ibn-saad
+    from:
+      - save
+    cite: save of 25 May 1428
+  - id: 1427-04-28-war-in-france
+    'on': '1427-04-28'
+    kind: world
+    what: >-
+      England goes to war with France again, with its vassals and with Castile beside it; Bohemia stands with
+      France. Castile makes a separate peace on 1 March 1428
+    from:
+      - save
+    cite: save of 25 May 1428
+    detail:
+      attackers: England, Burgundy, Brittany, Normandy, Aquitaine, Flanders, Ireland, Wales and others, with Castile
+      defenders: France and its appanages, Bohemia and the Bohemian vassals, Dauphiné
+      cb: conquer province
+  - id: 1427-08-01-santiago-cape-verde
+    'on': '1427-08-01'
+    kind: land
+    what: >-
+      Santiago, the largest of the Cape Verde islands, becomes a settlement of the crown: 1,700 settlers,
+      Portuguese in speech and Muslim in faith
+    threads:
+      - voyages
+    from:
+      - save
+    cite: save of 25 May 1428
+    detail:
+      province: Cape Verde
+      population: 1670
+  - id: 1427-12-01-ponta-delgada
+    'on': '1427-12-01'
+    kind: land
+    what: >-
+      Ponta Delgada on São Miguel becomes a settlement of the crown, the fourth in the Azores: 1,200 Andalusī
+      settlers
+    threads:
+      - voyages
+    from:
+      - save
+    cite: save of 25 May 1428
+    detail:
+      province: Azores
+      population: 1208
+  - id: 1428-04-08-yusuf-promotes-culture
+    'on': '1428-04-08'
+    kind: office
+    what: Prince Yūsuf ibn Saʿd leaves the settling of Ishbīliya and turns to promoting Andalusī culture
+    who:
+      - yusuf-ibn-saad
+    from:
+      - save
+    cite: save of 25 May 1428
+  - id: 1428-04-30-death-of-yusuf-of-banbaluna
+    'on': '1428-04-30'
+    kind: crown
+    what: >-
+      Yūsuf ibn Ismāʿīl, lord of the Ṭāʾifa of Banbalūna since 1411, dies of a camp fever at fifty-six. His
+      son Aḥmad, once of the dīwān and one of the ablest men of the house, succeeds him
+    who:
+      - yusuf-ibn-ismail
+      - ahmad-ibn-yusuf-ibn-ismail
+    where:
+      - banbaluna
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 25 May 1428
+    detail:
+      cause: camp (the game's death reason)
+      successor: Aḥmad ibn Yūsuf, born 27 January 1396 (84/56/70)
+  - id: 1428-05-25-jamaa-against-primacy
+    'on': '1428-05-25'
+    kind: realm
+    what: >-
+      In preparation for the war a Jamāʿa is called, and with it another chance to take a privilege from the
+      umarāʾ: the Primacy of Nobility, by which the great houses count themselves the Emperor's equals and
+      must be consulted before every important decision
+    who:
+      - ismail-ibn-saad
+    threads:
+      - estates
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshot, 25 May 1428
+    detail:
+      privilege: Primacy of Nobility (nobles, held since 1333)
+      text: >-
+        The Nobility of our country has proven to be key allies, as they support most of our enterprises and
+        are the backbone of our armies. For this reason, they consider themselves our equals, and they have
+        become so crucial to the government that we must consult with them before making important decisions
+        (the game's text)
+      effects:
+        nobles: +2% satisfaction, +100% power
+        modifiers: political influence gain −15%, discipline +5%, monthly progress to aristocracy +0.10
+      costToRevoke: 33.87 political influence and −32.5% noble satisfaction
+      outcome: revoked (the privilege is gone in the save of 25 May 1428)
+  - id: 1428-05-25-primacy-revoked
+    'on': '1428-05-25'
+    kind: realm
+    what: >-
+      The Primacy of Nobility, held by the umarāʾ since the founding of the realm, is revoked. The great
+      houses no longer count themselves the Emperor's equals or must be consulted on his decisions. Their
+      content falls to about one in six, and the realm's peace to almost nothing
+    who:
+      - ismail-ibn-saad
+    threads:
+      - estates
+    from:
+      - save
+    cite: save of 25 May 1428
+    detail:
+      privilege: Primacy of Nobility (from 1333)
+      nobleSatisfaction: about 41% (August 1424) to 16%
+      stability: 20 (August 1424) to 1
+      politicalInfluence: back to 100
+      jamaa: >-
+        called 25 May 1428; the nobles' agenda is to remove the burghers' mansions, the ʿulamāʾ's a change of
+        policy
+  - id: 1428-05-25-the-andalusi-madrasa
+    'on': '1428-05-25'
+    kind: realm
+    what: >-
+      By 1428 Ishbīliya has the Andalusī madrasa, a great school of the empire's own (nd_adu_madrasa, a
+      building of the Al-Andalus formation)
+    who:
+      - ismail-ibn-saad
+    where:
+      - ishbiliyya
+    threads:
+      - towns
+    from:
+      - save
+    cite: save of 25 May 1428
+    detail:
+      date: built between August 1424 and May 1428
+  - id: 1428-05-25-the-armouries
+    'on': '1428-05-25'
+    kind: realm
+    what: >-
+      The Emperor begins a great expansion of the army: armouries are built in a dozen towns and cities across
+      the empire, so that each can raise men of its own
+    who:
+      - ismail-ibn-saad
+    where:
+      - uryula
+      - yabura
+      - al-ushbuna
+      - shantarin
+      - tulaytula
+      - qurtuba
+      - istijja
+      - al-mariyya
+      - gharnata
+      - malaqa
+    threads:
+      - towns
+    from:
+      - save
+      - told
+    cite: Trent's account; save of 25 May 1428
+    detail:
+      buildings: armouries in about a dozen towns and cities
+      purpose: to draw in manpower independently (Trent)
+      inSave: >-
+        armouries at Orihuela, Évora, Lisbon, Santarém, Toledo, Córdoba, Écija, Almería, Granada and Málaga
+        (save of 25 May 1428)
+  - id: 1428-05-25-the-spies-go-north
+    'on': '1428-05-25'
+    kind: world
+    what: >-
+      The Emperor's spies travel north to the three kingdoms, proclaiming to every Iberian the return of
+      al-Andalus, while the casus belli for the next war is prepared
+    who:
+      - ismail-ibn-saad
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshot, 25 May 1428
+    detail:
+      targets:
+        - Galicia
+        - Navarre
+        - Castile
+      account: >-
+        our spies travel north to the three remaining Kingdoms ... proclaiming the return of Al-Andalus to all
+        Iberians as our casus belli is prepared (Trent)
+  - id: 1428-05-25-war-in-france
+    'on': '1428-05-25'
+    kind: note
+    what: War rages in France again
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshot, 25 May 1428
+    detail:
+      account: War rages in France again (Trent); the sides aren't in the account
+tellings:
+  - id: 0831-02-11-of-the-islands-of-the-ocean-and-the-naft-of-ethiopia
+    'on': '1427-12-01'
+    title: Of the Islands of the Ocean, and the Naft of Ethiopia
+    verse: '16:15'
+    who:
+      - ismail-ibn-saad
+    where:
+      - ishbiliyya
+    covers:
+      - 1421-06-01-tamaraceite
+      - 1421-08-01-the-secret-of-the-naft
+      - 1422-09-01-santo-antao
+      - 1423-02-01-santa-cruz-das-flores
+      - 1425-03-01-fogo
+      - 1425-06-01-tedote
+      - 1425-07-01-horta
+      - 1427-08-01-santiago-cape-verde
+      - 1427-12-01-ponta-delgada
+      - 1420-08-01-angra
+    text: >
+      When Angra was founded on Terceira in 823, the empire had three towns in the Ocean. Seven years later it
+      had eleven, and the clerks of the Dīwān al-Inshāʾ had to keep a separate register for them, because the
+      islands were too far apart to be written up with any province of the mainland.
+
+
+      In the Canaries the settlers went where the islanders already were. Tamaraceite on Gran Canaria became a
+      town of the crown in Jumādā al-Ūlā 824, with eight and a half thousand Guanches, and Tedote on La Palma
+      followed in Rajab 828 with five and a half thousand more. Like the people of Maxorata, they were left to
+      their own customs and their own gods, and they paid their dues to the Emperor's governor and were
+      otherwise left alone.
+
+
+      The Green Cape was empty, and there the empire had to bring its own people. Santo Antão, the
+      northernmost of the islands, became the empire's first town in the southern sea in Ramaḍān 825, with
+      seventeen hundred Andalusī settlers. Fogo, the island of the fire mountain, followed in Rabīʿ al-Thānī
+      828. Santiago, the largest of the islands, followed in Shawwāl 830, settled by Portuguese-speaking
+      Muslims of al-Gharb and Burtuqāl. The dīwān had told the first fleet that the islands were to be a land
+      of their own one day, and the captains now spoke of them as the halfway house to Mālī and the Gulf,
+      where a ship bound south could take on water, salt and goats.
+
+
+      The Azores filled from the west. After Angra came Santa Cruz on Flores, the furthest island of all, in
+      Ṣafar 826; Horta on Faial in Shaʿbān 828; and on 11 Ṣafar 831 Ponta Delgada on São Miguel, the largest
+      of the islands, each with twelve or thirteen hundred settlers. Unlike the Christian farmers of Angra,
+      nearly all of them were Andalusīs and Muslims, and the first building in each town was a mosque. The
+      pilots said that from Flores the sun set over nothing at all, and that no one knew how far the nothing
+      went.
+
+
+      The Ocean paid for itself in unexpected ways. In Shaʿbān 824 envoys came to
+      [Ishbīliya](place:ishbiliyya) from Ethiopia, the Christian kingdom beyond Egypt, wanting to buy naft,
+      the fire weapons the armies of al-Andalus had used since the days of the sultans. The dīwān warned that
+      a weapon once sold could one day be turned against the seller. The Emperor
+      [Ismāʿīl](person:ismail-ibn-saad) asked how far Ethiopia was from Ishbīliya and how much it was
+      offering. It was a very long way, and the offer was four hundred and nineteen pieces of gold, which the
+      treasurers reckoned at twice the crown's yearly income. He said that it would never backfire, and took
+      the gold.
+
+
+      *And He has cast into the earth firmly set mountains, lest it shift with you, and rivers and roads, that
+      you may be guided.*
+  - id: 0831-08-10-of-the-jamaa-of-831-and-the-armouries
+    'on': '1428-05-25'
+    title: Of the Jamāʿa of 831, the Armouries, and the Spies of the North
+    verse: '4:58'
+    who:
+      - ismail-ibn-saad
+      - diego-villamarin
+      - yusuf-ibn-ismail
+      - ahmad-ibn-yusuf-ibn-ismail
+      - umm-al-fath-bint-muhammad
+      - jadila-bint-saad-ibn-faraj
+      - saad-ibn-yusuf-ibn-saad
+      - yusuf-ibn-saad
+    where:
+      - ishbiliyya
+      - banbaluna
+      - al-ushbuna
+      - tulaytula
+      - qurtuba
+      - gharnata
+      - malaqa
+      - al-mariyya
+      - yabura
+      - shantarin
+      - istijja
+      - uryula
+    covers:
+      - 1425-03-25-galicia-takes-asturias
+      - 1426-02-01-truce-with-castile-ends
+      - 1427-04-28-war-in-france
+      - 1425-12-17-umm-al-fath-to-the-diwan
+      - 1428-04-30-death-of-yusuf-of-banbaluna
+      - 1428-05-25-the-spies-go-north
+      - 1428-05-25-the-armouries
+      - 1428-05-25-jamaa-against-primacy
+      - 1428-05-25-primacy-revoked
+    text: >
+      The petty kings of the mountains did not stay four for long. In Jumādā al-Ūlā 828
+      [Diego](person:diego-villamarin) of Galicia, the soldier king, made war on Asturias and took all of it,
+      Oviedo and its eight towns, and Galicia stretched from Santiago to Llanes. Three Christian kingdoms were
+      left in the north: Galicia, Navarre on the Basque coast, and what remained of Qashtāla at Santander. In
+      Rabīʿ al-Awwal 829 the truce of the Peace of Rajab ran out, and for the first time in fifteen years
+      nothing bound the empire to peace with any of them. A year later the English went to war with France
+      again, and King Fernando of Qashtāla went with them, until in Jumādā al-Ūlā 831 he made a peace of his
+      own with the French and came home.
+
+
+      The Emperor [Ismāʿīl](person:ismail-ibn-saad) was sixty-two. He had never been a soldier, and he had
+      always known what he wanted. He wanted the last war of the Istirdād fought in his own lifetime, and he
+      set about it as he had set about everything, by making sure that when it came it would be short. In the
+      spring of 831 his spies went north into all three kingdoms. They did not go to count soldiers. They went
+      to talk, in the markets and the monasteries and the lords' halls, about the return of al-Andalus: that
+      it was not a conquest but a homecoming, that the Portuguese and the Catalans now sat in the Emperor's
+      dīwān, and that every Iberian, whatever he prayed, had a place in it. The secretaries who wrote their
+      instructions remembered what the Emperor had said after Fermoselle, that four small kingdoms were easier
+      to take one at a time, and they noticed that the spies were told to say something a little different in
+      each.
+
+
+      At home he began to build an army that would not need the umarāʾ to raise it. In a dozen towns and
+      cities of the empire, from Lisbon, Évora and Santarém to Toledo, Córdoba, Granada, Málaga and Almería,
+      the crown built armouries, so that each could arm its own men and fill the ranks without waiting on any
+      lord's levy. The umarāʾ watched the walls go up and understood exactly what they were for.
+
+
+      The house changed in those years too. In Ṣafar 829 the heir's daughter [Umm
+      al-Fatḥ](person:umm-al-fath-bint-muhammad), fourteen years old and named for her grandmother, took a
+      seat in the dīwān beside her mother [Jadīla](person:jadila-bint-saad-ibn-faraj), and the clerks said she
+      was already abler than her father had ever been. Saʿd ibn Yūsuf and then Prince Yūsuf himself turned
+      from settling the new lands to spreading the tongue and learning of al-Andalus through them. And on 15
+      Rajab 831 [Yūsuf ibn Ismāʿīl](person:yusuf-ibn-ismail), lord of [Banbalūna](place:banbaluna) since the
+      Peace of Rajab, died of a fever in camp at fifty-six. His son
+      [Aḥmad](person:ahmad-ibn-yusuf-ibn-ismail), who had sat in the dīwān for thirteen years and was one of
+      the ablest men of the house, succeeded him on the Navarrese frontier.
+
+
+      Then the Emperor called the Jamāʿa. It met at [Ishbīliya](place:ishbiliyya) on 10 Shaʿbān 831, and the
+      Emperor told it that a war was coming and the empire must be ready. He asked the assembly for one thing.
+      Since the days of the first sultans the great houses had held the Primacy of Nobility: they counted
+      themselves the ruler's equals, and no important decision could be made without them. The Emperor said
+      that an empire about to go to war could not wait for every lord in it to be consulted, and that the
+      caliphs of Qurṭuba had consulted no one. The ʿulamāʾ, the merchants and the dhimmī voted with the crown,
+      and the Primacy was revoked.
+
+
+      The umarāʾ had lost their mercenaries in 817 and their lordships with them. Now they had lost their
+      equality. Barely one great house in six was content with the crown, and the peace of the realm, which
+      had been mended slowly for fourteen years, was worn through. The Emperor did not send them gifts this
+      time. He had armouries now, and a war to fight, and he seemed to think the umarāʾ would come round once
+      they had castles in Galicia to quarrel over.
+
+
+      *Indeed, Allāh commands you to render trusts to whom they are due, and when you judge between people, to
+      judge with justice.*
+    behind: >-
+      The save of 25 May 1428 was made on the day of the Jamāʿa. In it the Primacy of Nobility is already
+      gone, noble satisfaction is at 16% (41% in August 1424) and stability is at 1. Ten armouries stand in
+      the save, against Trent's dozen; others may still be under construction. The spies and their message are
+      Trent's account. Galicia's conquest of Asturias is dated by Oviedo's change of owner. The Andalusī
+      madrasa at Ishbīliya (the game's nd_adu_madrasa) went up between the saves of 1424 and 1428 and isn't in
+      the prose yet.
+
+
+      The estates were recalibrated on 16 November 1428 from Trent's full panel and tooltips. With the Primacy
+      gone, the umarāʾ have 17% of the power of the state, and the May checkpoint is now estimated from that
+      reading.
+
+
+      Invented colour: the spies' talk in markets and monasteries and the different message for each kingdom;
+      the Emperor's speech to the Jamāʿa and the estates' votes; the umarāʾ watching the armouries go up; the
+      clerks' opinion of Umm al-Fatḥ; the Emperor's expectation of castles in Galicia. In the islands entry:
+      the separate register, the captains' halfway house, the mosques of the Azores towns and the pilots'
+      sunset at Flores. Santo Antão and Fogo appear in the save as Andalusī settlements whose faith is
+      Catholic, so the chronicle doesn't describe their faith.

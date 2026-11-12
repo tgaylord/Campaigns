@@ -1,0 +1,23 @@
+name: Diego Sotomaior
+born: '1398-12-17'
+roles:
+  - ruler of the Ṭāʾifa of Jillīqiya (from 1430)
+stations:
+  - role: general
+    from: '1444-04-06'
+    to: '1450-08-02'
+    source: save
+    approx: true
+  - role: general
+    from: '1450-08-02'
+    to: null
+    source: save
+    approx: false
+note: >-
+  A Galician noble and a Muslim, set over the 23 towns of Galicia proper, from Santiago, A Coruña and Lugo to
+  Ourense and Tui, when they were made a ṭāʾifa of the Emperor on 3 November 1430, two days' work after the
+  Peace of Ṣafar: some 518,000 people, Galician in speech and Catholic in faith, with 2,400 regulars and three
+  ships (save of 5 November 1430).
+game:
+  id: 92039
+  name: Diego Sotomaior

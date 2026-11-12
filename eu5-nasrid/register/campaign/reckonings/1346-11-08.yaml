@@ -1,0 +1,102 @@
+date: '1346-11-08'
+title: Against the three crowns
+source:
+  save: SP_GRA_1346_11_08 (compressed)
+  game: 1.4.5
+summary: >-
+  Granada has answered Morocco's call and stands at war with Castile, Portugal and Aragon; taking up arms
+  against its overlord has suspended the tributary bond to Castile; the war will decide whether Granada keeps
+  its independence. The Volunteers of the Faith have risen again under Yaḥyā Raḥḥū. Shares of power are
+  estimated from the 11 August 1340 reading; no law or privilege has changed since January 1345.
+realm:
+  towns: 18
+  souls: 480314
+  treasury: 55
+  income: 26.9
+  expenses: 40.9
+  debt: 24
+  stability: 11
+  prestige: 1
+  regiments: 25
+  ships: 5
+  manpower: 4137
+court:
+  ruler: yusuf-i
+  heir: faraj-ibn-ismail
+  capital: gharnata
+  council:
+    - who: faraj-ibn-ismail
+      seat: Increase control in Mālaqa
+    - who: ismail-ibn-ismail
+      seat: Promote Granadan sovereignty
+standing:
+  wars:
+    - second-moroccan-war
+  allies:
+    - Morocco
+    - Tunis
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+  estates:
+    - name: Crown
+      power: 22.09
+    - name: Nobility
+      power: 46.57
+      mood: 43
+    - name: ʿUlamāʾ
+      power: 13.21
+      mood: 60
+    - name: Burghers
+      power: 11.96
+      mood: 50
+    - name: Commoners
+      power: 3.8
+      mood: 52
+    - name: Dhimmī
+      power: 2.36
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 466385
+    Sephardi: 11365
+    Ligurian: 1120
+    Hausa: 780
+    Mustaarabi: 480
+    Mandinka: 183
+  faiths:
+    Sunni: 466386
+    Jewish: 11846
+    Catholic: 1119
+    Bori_Religion: 780
+    Nyama: 183
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+  allies:
+    - MOR
+    - TUN
+beats:
+  - id: 1346-11-08-mobilisation
+    'on': '1346-11-08'
+    kind: note
+    what: >-
+      The army is raised: seventeen regiments of mutaṭawwiʿa beside the feudal levies, the knights and the
+      jinetes, and a second company hired on 6 November
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+      - told
+    cite: Trent's account; checkpoint 1346-11-08
+    detail:
+      mutatawwia: 17
+      secondCompany:
+        hired: '1346-11-06'
+        regiments: 8
+      treasury: 55
+      income: 26.9
+      expenses: 40.9

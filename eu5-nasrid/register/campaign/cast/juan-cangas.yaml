@@ -1,0 +1,22 @@
+name: Juan Cangas
+born: '1399-07-07'
+roles:
+  - general of the Ṭāʾifa of Liyūn
+stations:
+  - role: general
+    from: '1444-01-01'
+    to: '1444-01-01'
+    source: save
+    approx: false
+  - role: general
+    from: '1447-07-02'
+    to: '1447-12-01'
+    source: save
+    approx: false
+note: >-
+  A Leonese Muslim, general of the Ṭāʾifa of Liyūn. On 5 August 1430, in the War of Shant Yāqub, he held
+  Oviedo with 5,602 men against the last army of Galicia and destroyed all 3,229 without loss (save of 17
+  August 1430).
+game:
+  id: 91269
+  name: John Cangas

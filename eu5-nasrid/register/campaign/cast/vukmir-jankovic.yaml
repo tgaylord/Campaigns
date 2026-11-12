@@ -1,0 +1,19 @@
+name: Vukmir Janković
+died: '1435-04-09'
+roles:
+  - papal admiral
+stations:
+  - role: admiral
+    from: '1432-09-02'
+    to: '1435-04-09'
+    source: save
+    approx: false
+note: >-
+  Admiral of the Papal States in the Crusade of 835, a Slav in the Pope's service. With six ships he destroyed
+  fourteen Tripolitan ships in the Gulf of Talamone on 5 December 1431, and with fifteen Genoese ships beside
+  his own he sank or took fifteen of twenty-four Tunisian ships off Lazio on 20 December. On 14 March 1432 he
+  attacked 45 Moroccan and Catalan ships in the Corsica Channel with his last five and lost them all (save of
+  1 May 1432).
+game:
+  id: 90159
+  name: Vukmir Jankovic

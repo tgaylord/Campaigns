@@ -1,0 +1,591 @@
+date: '1370-09-13'
+title: The Peace of the North Shore
+source:
+  save: SP_GRA_1370_09_13 (the second of the two; compressed)
+  game: 1.4.5
+summary: >-
+  The Second Marīnid War is won. Morocco gave up the whole north shore, Ronda, Marbella and the so-called
+  Kingdom of Sevilla, and with its ṭāʾifas Granada holds every town of the Strait's three lands. The war cost
+  about 14,000 men on Granada's side and 23,000 on Morocco's. The estate loans are still owed. Shares of power
+  are estimated from the 1 June 1349 reading.
+realm:
+  towns: 60
+  souls: 748976
+  treasury: 160
+  income: 62.8
+  expenses: 144.5
+  debt: 469
+  stability: 32
+  prestige: 41
+  regiments: 5
+  ships: 4
+  manpower: 730
+court:
+  ruler: saad-ibn-yusuf
+  heir: ismail-ibn-saad
+  capital: gharnata
+  council:
+    - who: dua-marinid
+      seat: Promoting Andalusī culture
+    - who: maryam-bint-ismail
+      seat: Integrating the new lands
+standing:
+  allies:
+    - Mamluks
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+    - Taifa of the Algarve (taifa)
+  estates:
+    - name: Crown
+      power: 34.07
+    - name: Nobility
+      power: 26.73
+      mood: 41
+    - name: ʿUlamāʾ
+      power: 7.12
+      mood: 50
+    - name: Burghers
+      power: 10.49
+      mood: 50
+    - name: Commoners
+      power: 4.46
+      mood: 50
+    - name: Dhimmī
+      power: 17.14
+      mood: 69
+peoples:
+  cultures:
+    Andalusi: 407257
+    Castilian: 288709
+    Sephardi: 42938
+    Mustaarabi: 4079
+    Sardinian: 2316
+    Ligurian: 624
+  faiths:
+    Sunni: 368009
+    Catholic: 333462
+    Jewish: 46711
+    Bori_Religion: 544
+    Nyama: 250
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+    - ALV
+  allies:
+    - MAM
+beats:
+  - id: 1369-11-21-battle-adra
+    'on': '1369-11-21'
+    kind: battle
+    what: At Adra Khālid's 7,180 fall on the Marīnid landing force of 970 and destroy it, for 5 of ours
+    who:
+      - khalid-ibn-yahya
+    threads:
+      - second-marinid-submission-war
+    from:
+      - save
+    cite: autosave of 1 July 1370
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 7178
+      oursTotal: 7178
+      oursLost: 5
+      theirs:
+        Morocco: 970
+      theirsTotal: 970
+      theirsLost: 970
+      location: Adra
+  - id: 1369-12-16-battle-malaga
+    'on': '1369-12-16'
+    kind: battle
+    what: >-
+      At Málaga a Marīnid force of 750 attacks the joined army of Granada, the Mamlūks and Valencia, 15,700
+      strong, and is destroyed. The first battle where Egyptian soldiers stand in the Granadan line
+    who:
+      - khalid-ibn-yahya
+    threads:
+      - second-marinid-submission-war
+    from:
+      - save
+    cite: autosave of 1 July 1370
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 8130
+        Mamluks: 5687
+        Valencia: 1851
+        Taifa of the Algarve: 23
+      oursTotal: 15691
+      oursLost: 0
+      theirs:
+        Morocco: 753
+      theirsTotal: 753
+      theirsLost: 753
+      location: Málaga
+      side: Granada defending
+  - id: 1370-03-08-battle-malaga
+    'on': '1370-03-08'
+    kind: battle
+    what: >-
+      A second Marīnid army, 3,300 under Muṣliḥ al-Dīn, attacks Khālid's 8,100 at Málaga and is broken: 2,440
+      of theirs lost for 370 of ours
+    who:
+      - khalid-ibn-yahya
+    threads:
+      - second-marinid-submission-war
+    from:
+      - save
+    cite: autosave of 1 July 1370
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 8127
+      oursTotal: 8127
+      oursLost: 373
+      theirs:
+        Morocco: 3315
+      theirsTotal: 3315
+      theirsLost: 2436
+      location: Málaga
+      side: Granada defending
+  - id: 1370-03-31-battle-jerez
+    'on': '1370-03-31'
+    kind: battle
+    what: >-
+      The Mamlūk army, 5,650 with Valencians beside them, attacks Osman's 3,870 at Jerez and is thrown back:
+      3,110 lost against 845
+    who:
+      - osman-marinid
+    threads:
+      - second-marinid-submission-war
+    from:
+      - save
+    cite: autosave of 1 July 1370
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Mamluks: 5653
+        Valencia: 1850
+        Taifa of the Algarve: 23
+      oursTotal: 7526
+      oursLost: 3110
+      theirs:
+        Morocco: 3869
+      theirsTotal: 3869
+      theirsLost: 845
+      location: Jerez
+  - id: 1370-04-06-battle-jerez
+    'on': '1370-04-06'
+    kind: battle
+    what: >-
+      Six days later Khālid avenges the Mamlūks at Jerez: 7,260 Granadans against Osman's 3,015, of whom 1,870
+      fall, for 173 of ours
+    who:
+      - khalid-ibn-yahya
+      - osman-marinid
+    threads:
+      - second-marinid-submission-war
+    from:
+      - save
+    cite: autosave of 1 July 1370
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 7261
+      oursTotal: 7261
+      oursLost: 173
+      theirs:
+        Morocco: 3015
+      theirsTotal: 3015
+      theirsLost: 1870
+      location: Jerez
+  - id: 1370-05-31-battle-beja
+    'on': '1370-05-31'
+    kind: battle
+    what: >-
+      A Marīnid army of 3,380 under Aghlab lands in al-Gharb. Khālid marches west and destroys it at Beja:
+      2,260 of theirs lost for 480 of ours
+    who:
+      - khalid-ibn-yahya
+    threads:
+      - second-marinid-submission-war
+    from:
+      - save
+    cite: autosave of 1 July 1370
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 7088
+      oursTotal: 7088
+      oursLost: 480
+      theirs:
+        Morocco: 3382
+      theirsTotal: 3382
+      theirsLost: 2262
+      location: Beja
+  - id: 1370-06-morocco-near-defeat
+    'on': '1370-06-01'
+    kind: note
+    what: >-
+      After several more battles, Morocco is nearly beaten by June 1370. The victory has cost a great many
+      lives
+    who:
+      - saad-ibn-yusuf
+    threads:
+      - second-marinid-submission-war
+    from:
+      - save
+      - told
+    cite: Trent's account (by June 1370; no save yet; the battles will be filled in from the save at the peace)
+  - id: 1370-09-12-battle-malaga
+    'on': '1370-09-12'
+    kind: battle
+    what: >-
+      The last battle of the war, at Mālaqa. 8,370 Granadans meet 2,890 Moroccans and break them: 1,040 of
+      theirs lost for 154 of ours
+    threads:
+      - second-marinid-submission-war
+    from:
+      - seen
+    cite: Trent's screenshot of the battle report (12 September 1370)
+    detail:
+      result: victory
+      naval: false
+      ours:
+        Granada: 8366
+      oursTotal: 8366
+      oursLost: 154
+      theirs:
+        Morocco: 2887
+      theirsTotal: 2887
+      theirsLost: 1036
+      location: Málaga
+      warScore: 4.2
+      composition:
+        ours:
+          archers: 1214
+          infantry: 2000
+          lightCavalry: 1580
+          heavyCavalry: 3430
+          supply: 142
+        theirs:
+          archers: 1108
+          lightCavalry: 1752
+          heavyCavalry: 27
+          supply: 50
+  - id: 1370-09-12-peace-morocco
+    'on': '1370-09-12'
+    kind: peace
+    what: >-
+      Peace with Fās. Morocco gives up the whole north shore of the Strait, eleven towns: Ronda and Marbella,
+      and the nine of its puppet Kingdom of Sevilla, which ceases to exist, from Cádiz and Jerez to Gibraltar,
+      Tarifa and Algeciras. Morocco also pays reparations and signs an agreement against piracy. With its
+      ṭāʾifas, Granada now holds all 72 towns of the Strait's three lands
+    who:
+      - saad-ibn-yusuf
+      - abu-inan-faris
+    threads:
+      - second-marinid-submission-war
+    from:
+      - save
+      - seen
+    cite: saves of 13 September 1370 and 1 July 1370; Trent's screenshot of the terms
+    detail:
+      with: MOR
+      ceded:
+        - Ronda
+        - Marbella
+        - Cádiz
+        - Gibraltar
+        - Tarifa
+        - Algeciras
+        - Jerez de la Frontera
+        - Niebla
+        - Sanlúcar
+        - Medina Sidonia
+        - Arcos de la Frontera
+      population: 84370
+      reparations: true
+      antiPiracy: true
+      straitHeld: 72
+      warDead:
+        granadaSide: 14154
+        of which Granada: 9915
+        Mamluks: 2336
+        moroccanSide: 22942
+        of which Morocco: 22142
+        note: >-
+          battle losses from 22 battles; Granada's total of about 13,000 is from Trent's war screen and
+          includes attrition
+        granadaWarScreen: 13000
+  - id: 1370-09-13-state
+    'on': '1370-09-13'
+    kind: realm
+    what: >-
+      After the peace the realm is 60 towns and 749,000 people, 368,000 Sunnīs to 333,000 Catholics. The
+      estate loans of 1369, 469 dīnārs, are still owed. Expenses are 144 a month against an income of 63 while
+      the mercenaries are still on the books
+    who:
+      - saad-ibn-yusuf
+    threads:
+      - estates
+    from:
+      - save
+    cite: save of 13 September 1370
+    detail:
+      locations: 60
+      population: 748976
+      religions:
+        Sunni: 368000
+        Catholic: 333000
+      loans: 469
+      income: 62.8
+      expenses: 144.5
+      treasurySources: >-
+        Trent: the war chest came mainly from bullying the estates, Moroccan concessions, bullying the
+        vassals, and Egypt
+  - id: 1370-09-13-the-world
+    'on': '1370-09-13'
+    kind: world
+    what: >-
+      The world at the peace of Fās: Granada stands 13th among the powers of the world and is a Regional
+      Power, 16 points short of the last Great Power (Bohemia, 46). Castile is 8th, its ally Egypt 7th,
+      Morocco 11th; France and England, 4th and 5th, lead Christendom. The Ottomans hold Constantinople, and
+      no war touches Iberia or the Maghrib
+    who:
+      - saad-ibn-yusuf
+      - bolot-mamluk
+      - jeronimo-of-castile
+      - abu-inan-faris
+      - muhammad-ottoman
+      - charles-of-bohemia
+    from:
+      - save
+    cite: save of 13 September 1370 (tools/world_powers.py)
+    detail:
+      ladder:
+        MNG:
+          - 1
+          - 164
+        CHI:
+          - 2
+          - 153
+        JAP:
+          - 3
+          - 102
+        FRA:
+          - 4
+          - 85
+        ENG:
+          - 5
+          - 83
+        WUU:
+          - 6
+          - 60
+        MAM:
+          - 7
+          - 54
+        CAS:
+          - 8
+          - 53
+        BOH:
+          - 9
+          - 46
+        HUN:
+          - 10
+          - 36
+        MOR:
+          - 11
+          - 35
+        DLH:
+          - 12
+          - 31
+        GRA:
+          - 13
+          - 30
+        MAL:
+          - 16
+          - 27
+        NAP:
+          - 17
+          - 26
+        TUN:
+          - 21
+          - 22
+        TUR:
+          - 27
+          - 17
+        ARA:
+          - 47
+          - 8
+        POR:
+          - 48
+          - 8
+      greatPowers: the nine ranked above the first Regional Power
+      unions:
+        - Castile and Portugal (from 4 October 1367)
+        - Aragon and Sicily
+        - Hungary, Naples and Croatia
+        - France and the Dauphiné
+      emperor: Charles of Bohemia
+      pope: Abundius, at Avignon
+      wars:
+        - Hungary and Naples against Halych and Volhynia (from 14 October 1369)
+        - the Ottomans against Karaman and the Anatolian beyliks (from 10 October 1369)
+        - Mali against Ouagadougou (from 4 September 1369)
+      menUnderArms:
+        MAM: 60599
+        TUR: 27569
+        NAP: 16695
+        HUN: 13763
+        TLE: 11340
+        MAL: 10456
+        GRA: 3382
+        MOR: 1495
+        POR: 1050
+        CAS: 0
+      ships:
+        MOR: 80
+        TUR: 73
+        NAP: 32
+        MAM: 25
+        ENG: 25
+        TUN: 12
+        CAS: 9
+        POR: 6
+        GRA: 4
+  - id: 1370-09-conversion-reading
+    'on': '1370-09-13'
+    kind: note
+    what: >-
+      Twenty-one years after the Peace of Qurṭuba, the lands of the great river are coming back: Andalusīs
+      have gone from 7% to 33% of their people, and Muslims from 8% to 25%. Twelve towns of the valley are
+      Andalusī by culture, and Qurṭuba is Muslim by faith. Ishbīliya has gone from 14% Muslim to 31%, Jayyān
+      from none to 30%
+    from:
+      - save
+    cite: the extracted checkpoints of 4 June 1349 to 13 September 1370
+    detail:
+      area: andalusia_area
+      andalusi:
+        '1349-06-04': 6.7
+        '1360-06-26': 12.8
+        '1364-09-11': 24.9
+        '1368-10-24': 32.6
+        '1370-09-13': 33.3
+      sunni:
+        '1349-06-04': 7.9
+        '1360-06-26': 11.2
+        '1364-09-11': 13.4
+        '1368-10-24': 18.7
+        '1370-09-13': 24.6
+      cities:
+        Qurṭuba:
+          - 27
+          - 59
+        Ishbīliya:
+          - 14
+          - 31
+        Jayyān:
+          - 0
+          - 30
+        Qarmūna:
+          - 6
+          - 16
+        Úbeda:
+          - 0
+          - 10
+      andalusiTowns: 12
+      note: the 1370 figures include the north shore, taken from Morocco and already mostly Muslim
+tellings:
+  - id: 0772-02-20-the-reckoning-of-the-faithful
+    'on': '1370-09-13'
+    title: Of the Reckoning of the Faithful, in the Year the Strait Was Won
+    verse: 16:125
+    who:
+      - saad-ibn-yusuf
+    where:
+      - fas
+      - qurtuba
+      - qarmuna
+      - ishbiliyya
+      - jayyan
+      - qadis
+      - sharish
+      - shaluqa
+      - jabal-tariq
+      - al-jazira-al-khadra
+      - gharnata
+    covers:
+      - 1370-09-conversion-reading
+      - 1370-09-13-state
+      - 1366-qurtuba-muslim
+    text: >
+      When the peace with [Fās](place:fas) was sealed, our lord [Saʿd](person:saad-ibn-yusuf) ordered a count
+      of the realm, as his grandfather's grandfathers had done after every war: how many souls, of what
+      tongue, of what faith. The scribes worked through Ṣafar, and their reckoning is set down here, because
+      it is the measure of everything this book is about.
+
+
+      In the valley of the great river, the lands won from Qashtāla in 749, seven of every hundred souls had
+      been Andalusī at the Peace of [Qurṭuba](place:qurtuba). On the eve of the Marīnid war it was
+      thirty-three. In faith the change was slower: eight in a hundred had been Muslim in 749, and nineteen
+      were by the eve of the war. Twelve towns of the valley now counted themselves Andalusī,
+      [Qarmūna](place:qarmuna) the latest of them, on the eve of the war. Only one was yet Muslim by the
+      greater part of its people, and that one was Qurṭuba. There the faithful had been twenty-seven in a
+      hundred at the peace and were now fifty-nine. [Ishbīliya](place:ishbiliyya) had gone from fourteen to
+      thirty-one and [Jayyān](place:jayyan) from none to thirty. Úbeda, at the far end of the valley, had gone
+      from none to ten. It had heard the call last.
+
+
+      The northern shore taught the scribes something they did not like. [Qādis](place:qadis),
+      [Sharīsh](place:sharish), [Shalūqa](place:shaluqa), [Jabal Ṭāriq](place:jabal-tariq) and [al-Jazīra
+      al-Khaḍrāʾ](place:al-jazira-al-khadra) had been Castilian towns when Fās took them five years before.
+      They came back to the house of Naṣr already Muslim by the greater part of their people. In five years
+      the Marīnids had done there what twenty years of libraries and madrasas had not done in the valley. The
+      ʿulamāʾ of [Gharnāṭa](place:gharnata) praised it. The older men of the dīwān asked how it had been done.
+      They reminded the court that there is no compulsion in religion, and that what is made by the sword can
+      be unmade by the sword.
+
+
+      Across the whole realm the count was this. Of seven hundred and forty-nine thousand souls, three hundred
+      and sixty-eight thousand were Muslims and three hundred and thirty-three thousand Christians, with
+      forty-seven thousand Jews beside them. Four hundred and seven thousand were Andalusīs and two hundred
+      and eighty-nine thousand Castilians. The Muslims had been the larger faith before, by a few thousand,
+      and lost that place when the Portuguese south came in. Now they held it by thirty-five thousand. The
+      realm of Gharnāṭa was Muslim by the count of its own people, and not only by the faith of its prince.
+
+
+      The call has been made. It is being answered, slowly, in Arabic first and in prayer after, and town by
+      town. The madrasas will go on teaching for a hundred years. This book will go on as long as they do.
+
+
+      *Invite to the way of your Lord with wisdom and good instruction.*
+    behind: >-
+      The figures in Book IV come from the population of every location Granada held at each checkpoint from
+      June 1349 to September 1370, summed by culture and religion. "The valley of the great river" means the
+      locations of the game's Andalusia area that Granada held at the time. The 1370 figures also include the
+      north shore taken from Morocco, which is why the valley's Muslim share jumps from 19% to 25% in the last
+      two years.
+
+
+      A town "turns" when the game changes its main culture or religion, and the date given is the first save
+      that shows the change. In Qurṭuba, Muslims outnumbered Christians on 2 October 1366 (18,239 to 17,968)
+      and became an outright majority by May 1368. The mosque-cathedral is the game's cathedral building,
+      which Qurṭuba had in 1370.
+
+
+      Invented colour: Saʿd's question about the cathedral and his remark about silver left in the ground, the
+      Badr answer to the ʿulamāʾ, Yūsuf's answer to the nobles about Khadīja and ʿĀʾisha, and the court's
+      unease about how Fās converted the north shore. The save shows that it did, but not how.

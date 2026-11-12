@@ -1,0 +1,22 @@
+name: Muḥammad ibn Yūsuf
+arabic: محمد بن يوسف
+house: Naṣrid
+born: '1389-11-21'
+roles:
+  - member of the dīwān
+traits:
+  - fickle
+stations:
+  - role: dīwān
+    from: '1408-05-29'
+    to: '1429-07-02'
+    source: save
+    approx: false
+note: >-
+  Son of Yūsuf ibn Faraj, the late Faraj ibn Ismāʿīl's son, and of Jadīla, daughter of the Emperor Saʿd: a
+  nephew of the Emperor Ismāʿīl. He took a seat in the dīwān on 24 August 1405, in place of Ismāʿīl ibn Yūsuf,
+  set to integrating the lands won back from the risings (save of 5 August 1408). He left the dīwān at the
+  accession of Muḥammad V, and by 1429 the game marks him fickle (save of 2 July 1429).
+game:
+  id: 75017
+  name: Muhammad

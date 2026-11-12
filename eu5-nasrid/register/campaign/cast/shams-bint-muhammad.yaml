@@ -1,0 +1,26 @@
+name: Shams bint Muḥammad
+arabic: شمس بنت محمد
+sex: f
+house: Naṣrid
+tier: key
+born: '1407-08-10'
+father: muhammad-ibn-ismail-ibn-saad
+roles:
+  - member of the dīwān (from 1437)
+traits:
+  - deceitful
+stations:
+  - role: dīwān
+    from: '1437-11-15'
+    to: null
+    source: save
+    approx: false
+note: >-
+  Daughter of the Emperor Muḥammad by Isabel de Montsoriu, born at Ishbīliya on 10 August 1407. Married to her
+  cousin Ismāʿīl, son of the admiral prince Yūsuf ibn Ismāʿīl; their children include Aḥmad (1427), Jadīla
+  (1430) and Abū al-Ḥasan ʿAlī (1441). On 15 November 1437, nine days after the death of her grandmother
+  Bernarda, the queen mother, she took Bernarda's seat in the dīwān, promoting Andalusī culture. Deceitful.
+  (save of 11 June 1442)
+game:
+  id: 82785
+  name: Sun

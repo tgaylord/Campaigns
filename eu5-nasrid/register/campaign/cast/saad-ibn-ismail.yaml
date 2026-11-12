@@ -1,0 +1,24 @@
+name: Saʿd ibn Ismāʿīl
+arabic: سعد بن إسماعيل
+house: Naṣrid
+born: '1361-04-03'
+died: '1415-03-15'
+father: ismail-ibn-ismail
+roles:
+  - ruler of the Ṭāʾifa of Shalamanka
+stations:
+  - role: general
+    from: '1404-05-02'
+    to: '1404-05-03'
+    source: save
+    approx: false
+note: >-
+  Cousin of the Emperor Saʿd: son of his late uncle Ismāʿīl ibn Ismāʿīl and of Sevilay, the Aydınid princess
+  Ismāʿīl married in 1359, and raised at least partly at the Aydınid court. On 5 August 1395 he was made ruler
+  of the new Ṭāʾifa of Shalamanka, 21 towns of the Leonese west taken from Castile at the Peace of Ramaḍān,
+  with his cousin Saʿd ibn Faraj as his heir. Unmarried and childless in August 1395 (save of 5 August 1395).
+  He died on 15 March 1415, aged fifty-three, and on 11 June 1415 his ṭāʾifa was taken into the crown (save of
+  1 January 1416).
+game:
+  id: 16793142
+  name: Saad

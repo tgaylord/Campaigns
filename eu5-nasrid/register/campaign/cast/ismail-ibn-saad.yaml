@@ -1,0 +1,149 @@
+name: Ismāʿīl ibn Saʿd
+arabic: إسماعيل بن سعد
+house: Naṣrid
+tier: central
+born: '1366-03-08'
+died: '1429-06-28'
+father: saad-ibn-yusuf
+mother: dua-marinid
+reigns:
+  - from: '1405-03-02'
+    to: '1429-06-28'
+roles:
+  - admiral
+  - heir
+  - member of the dīwān
+  - regent (1385–1386)
+  - emperor and sultan of al-Andalus (1405–1429)
+traits:
+  - deceitful
+  - goal_oriented
+  - just
+  - greedy
+drives:
+  - from: '1374-12-01'
+    text: 'His mother Duʿāʾ''s son: she wanted the costly tutors for him alone.'
+    by: trent
+    source: Trent's account, late 1374
+  - from: '1374-12-01'
+    text: >-
+      Raised as his mother's candidate against Aiman's son Yūsuf; he learns early to tell each elder what that
+      elder wishes to hear.
+    by: trent
+    source: Trent's account; Of the Reordering of the Realm
+  - from: '1385-08-23'
+    text: Holds the realm as regent while his father makes the Ḥajj, between two queens quarrelling at court.
+    by: trent
+    source: Trent's account
+  - from: '1387-01-22'
+    text: Takes a seat in the dīwān to help his father's project of scholars and builders.
+    by: trent
+    source: Trent's account
+  - from: '1405-03-02'
+    text: Tells men in private what they wish to hear and judges fairly in public.
+    by: chronicle
+    source: traits deceitful, just, goal-oriented; diplomacy 100
+  - from: '1408-08-05'
+    text: 'Sets aside any thought of changing the succession: Muḥammad''s gifted sons will carry the line.'
+    by: trent
+    source: Trent's account, August 1408
+  - from: '1411-01-13'
+    text: Leads the army himself in the fourth war of the Istirdād, and ends Portugal.
+    by: chronicle
+    source: Of the War of Jillīqiya, the Gates of Porto, and the Peace of Rajab
+  - from: '1414-10-24'
+    text: His eye on the treasury hardens into greed.
+    by: trent
+    source: Trent's screen, late 1414
+  - from: '1414-10-24'
+    text: >-
+      Breaks the umarāʾ step by step: their mercenaries, then their lordships, then their equality, and never
+      lets them rise.
+    by: chronicle
+    source: Of the Death of the Emperor Ismāʿīl, and the Two Princes
+ties:
+  - with: yusuf-ibn-saad
+    kind: rival
+    from: '1374-12-01'
+    to: '1398-09-03'
+    text: Half-brothers raised as rivals by their mothers, Duʿāʾ and Aiman.
+    by: trent
+  - with: yusuf-ibn-saad
+    kind: ally
+    from: '1398-09-03'
+    to: '1429-06-28'
+    text: The half-brother who came home from Benabarre and served him in the dīwān for thirty years.
+    by: chronicle
+  - with: khayr-al-din-al-jayyani
+    kind: patron
+    from: '1392-02-21'
+    text: Sent to find the sea road to Mālī.
+    by: chronicle
+  - with: tiramakhan-mali
+    kind: ally
+    from: '1428-01-01'
+    text: 'The Mansa''s word: no tariff on Andalusī merchants anywhere in Mālī.'
+    by: trent
+  - with: khalid-ibn-yahya
+    kind: ally
+    from: '1405-07-02'
+    to: '1412-09-02'
+    text: His father's favourite commands the joint host that breaks the rising at Granadilla.
+    by: chronicle
+stations:
+  - role: heir
+    from: '1366-10-02'
+    to: '1405-03-31'
+    source: checkpoints
+    approx: true
+  - role: admiral
+    from: '1383-06-10'
+    to: '1387-01-22'
+    source: save
+    approx: false
+  - role: dīwān
+    from: '1387-01-22'
+    to: '1405-03-01'
+    source: save
+    approx: false
+  - role: general
+    from: '1405-03-03'
+    to: '1429-06-28'
+    source: save
+    approx: false
+note: >-
+  Son and heir of Sultan Saʿd, born to Duʿāʾ the Marīnid on 8 March 1366, a month before the Peace of
+  Independence. At eight he was already a silver tongue (63 in diplomacy). In late 1374 he and his
+  half-brother Yūsuf were both given the costly tutors their father had had; his mother Duʿā had wanted them
+  for him alone (Trent's account). On 16 March 1375 he was betrothed to Bernarda of Murcia, the gifted heir of
+  the Ṭāʾifa of Mursiyya, as Murcia was taken into the crown (Trent's account). From 23 August 1385 he ruled
+  as regent while his father made the Hajj, with his mother Duʿā and Aiman quarrelling at court (Trent's
+  account). Before that he had served as an admiral, to carry the crown's authority over the seas: his first
+  command, from 17 June 1383 (save of 1 October 1387) until he joined the dīwān. In 1386 he was brought home,
+  and on 22 January 1387 he took the seat in the dīwān created by the Ḥijāba, to help his father's
+  scholar-building project (Trent's account). He had married Bernarda of Murcia by 1 October 1387. In May 1391
+  he took a second wife, ʿĀʾisha of the house of ʿOthmān. His sons: Yūsuf (1383–1384) and Muḥammad (born 25
+  October 1385) by Bernarda; Saʿd (born 17 June 1392) and Aḥmad (born 21 October 1393) by ʿĀʾisha (save of 2
+  January 1394). By 1398 his sons were Muḥammad, the eldest, judged unfit to rule; Saʿd, intelligent and
+  studious; and Aḥmad, ambitious (Trent's account; save of 3 September 1398). He became Emperor on 2 March
+  1405, at thirty-eight, when his father died on the march through Moya, and sixteen days later won his first
+  battle as Emperor before Qūnka, destroying the army of the rebel Kingdom of Toledo (Trent's account and
+  screens). On 10 July 1405 he beat the remnant of the Toledo army before Qūnka a second time, and by 24
+  August 1405 the risings of 807 were over; on 1 September 1405 the Ṭāʾifa of al-Gharb was taken into the
+  crown. On 1 March 1408 he resolved to raise Qurṭuba as the Capital of the Old Caliphate but kept his court
+  at Ishbīliya (Trent's screen). By August 1408 the game counted him just as well as deceitful and
+  goal-oriented, and he had set aside any thought of changing the succession: his heir Muḥammad's sons would
+  carry the line if he reigned long (Trent's account; save of 5 August 1408). In the fourth war of the
+  Istirdād he led the army himself: at Cuéllar on 13 January 1411 (17 Ramaḍān 813, the day of Badr), 25,700
+  against Castile's 19,300, and at Toro on 15 May 1411, 20,900 against 11,100; both were victories (Trent's
+  battle screens). He also won at Ledesma (7 March 1411), Besteiros (28 August 1411) and Guimarães (27 October
+  1411). At the peace of 1 November 1411 he annexed Portugal and took 63 towns from Castile, raising the crown
+  from 161 towns to 258 and its people from 2.04 to 3.96 million (saves of 1 November 1411). Shortly after the
+  Jamāʿa of October 1414 the game also counted him greedy, a ruler who grows iron-fisted and short-sighted in
+  collecting revenue: just in public, deceitful in private, goal-oriented, and now greedy (Trent's screen; the
+  save of 24 October 1414 does not yet show it). His 'silver tongue' is his diplomacy of 100, not a trait. He
+  died on 28 June 1429 (25 Ramaḍān 832), at sixty-three, while the army was camped at Ishbīliya, after a reign
+  of twenty-four years; the game remembered him for his fair and impartial rulings (Trent's screenshot).
+game:
+  id: 16803514
+  name: Ismail

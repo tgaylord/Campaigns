@@ -1,0 +1,196 @@
+date: '1430-05-18'
+title: The War of Shant Yāqub
+source:
+  save: SP_ADU_1430_05_18 (compressed)
+  game: 1.4.7
+summary: >-
+  The day al-Andalus declared war on Galicia, the fifth war of the Istirdād, steered there by the two princes
+  when their father wanted Castile. All seven ṭāʾifas march with the crown; Galicia, 31 towns and no army,
+  stands alone. The crown holds 196 towns and 2,585,000 people (São Nicolau in the Cape Verdes settled on 1
+  January). Muḥammad V's first year: political influence back to 42, stability 9, the umarāʾ two in five
+  content. Estates estimated from the reading of 16 November 1428. Treasury 591; income 280 against 291;
+  manpower 17,000 of 18,800.
+realm:
+  towns: 196
+  souls: 2585227
+  treasury: 591
+  income: 280.4
+  expenses: 291.1
+  stability: 8.7
+  prestige: 63
+  regiments: 9
+  ships: 50
+  manpower: 16981
+court:
+  ruler: muhammad-ibn-ismail-ibn-saad
+  heir: ismail-ibn-muhammad-ibn-ismail
+  capital: ishbiliyya
+  council:
+    - who: ismail-ibn-muhammad-ibn-ismail
+      seat: Promoting Andalusī culture
+    - who: ahmad-ibn-muhammad-ibn-ismail
+      seat: Integrating the new lands
+    - who: umm-al-fath-bint-muhammad
+      seat: Integrating the new lands
+    - who: yusuf-ibn-saad
+      seat: Promoting Andalusī culture
+    - who: jadila-bint-saad-ibn-faraj
+      seat: Developing the provinces
+standing:
+  wars:
+    - war-of-shant-yaqub
+  allies:
+    - Mamluks
+    - Morocco
+    - Tunis
+  subjects:
+    - Catalonia (taifa)
+    - Aragon (taifa)
+    - Taifa of Cuenca (taifa)
+    - Kingdom of Portugal (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+  estates:
+    - name: Crown
+      power: 29.19
+    - name: Nobility
+      power: 17.39
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 12.58
+      mood: 50
+    - name: Burghers
+      power: 21.8
+      mood: 50
+    - name: Commoners
+      power: 2.87
+      mood: 50
+    - name: Dhimmī
+      power: 16.17
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 810549
+    Castilian: 710815
+    Portuguese: 487953
+    Sephardi: 186849
+    Catalan: 177910
+    Leonese: 163974
+  faiths:
+    Sunni: 1240834
+    Catholic: 1146828
+    Jewish: 178849
+    Guanche_religion: 15655
+    Rogo_miki_religion: 811
+map:
+  ours:
+    - GRA
+  subjects:
+    - CAT
+    - ARA
+    - ABA60
+    - POR
+    - ABA42
+    - ABA49
+    - ABA55
+  allies:
+    - MAM
+    - MOR
+    - TUN
+beats:
+  - id: 1430-01-01-sao-nicolau
+    'on': '1430-01-01'
+    kind: land
+    what: 'São Nicolau in the Cape Verde islands becomes a settlement of the crown: 1,700 Andalusī settlers'
+    threads:
+      - voyages
+    from:
+      - save
+    cite: save of 18 May 1430
+    detail:
+      province: Cape Verde
+      population: 1687
+  - id: 1430-01-06-birth-sun
+    'on': '1430-01-06'
+    kind: birth
+    what: A daughter, Sun, is born to the heir Ismāʿīl
+    who:
+      - ismail-ibn-muhammad-ibn-ismail
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 10 October 1435
+    detail:
+      name: Sun
+  - id: 1430-03-01-birth-aisha
+    'on': '1430-03-01'
+    kind: birth
+    what: A daughter, ʿĀʾisha, is born to Prince Aḥmad
+    who:
+      - ahmad-ibn-muhammad-ibn-ismail
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 10 October 1435
+    detail:
+      name: ʿĀʾisha
+  - id: 1430-05-18-take-the-capital
+    'on': '1430-05-18'
+    kind: note
+    what: 'The war plan is as plain as the Emperor''s demand: take the capital. The armies march north on Santiago'
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+    threads:
+      - war-of-shant-yaqub
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshots, June 1430
+    detail:
+      account: There is now careful plan to the Emperor's demand. Take the capital. So the armies march north (Trent)
+  - id: 1430-05-18-the-princes-counsel
+    'on': '1430-05-18'
+    kind: note
+    what: >-
+      The first test of the new reign. The Emperor Muḥammad, wanting to finish his father's work and prove
+      himself a worthy heir, orders the army north for a swift conquest of Castile. The princes Ismāʿīl and
+      Aḥmad talk him round: Galicia would be the nobler and harder conquest, and Navarre after it, for the
+      Basques are a far more redoubtable people than the Castilians. For now the Emperor is convinced
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+    threads:
+      - war-of-shant-yaqub
+      - two-princes
+    from:
+      - told
+    cite: Trent's account, May 1430
+    detail:
+      account: Trent's account, May 1430
+      context: Castile is allied to the Angevin Empire and Navarre; Galicia has no allies (world file of 2 July 1429)
+  - id: 1430-05-18-war-on-galicia
+    'on': '1430-05-18'
+    kind: war
+    what: >-
+      Al-Andalus declares war on Galicia, the greatest of the successor states of Castile: the fifth war of
+      the Istirdād, the War of Shant Yāqub
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - diego-villamarin
+    threads:
+      - war-of-shant-yaqub
+    from:
+      - save
+      - told
+    cite: Trent's account; save of 18 May 1430
+    detail:
+      target: Galicia, King Diego Villamarín (31 towns in July 1429)
+      series: 5
+      cb: cb_reconquer_iberia
+      attackers: al-Andalus and all seven ṭāʾifas; the Mamlūks, Morocco and Tunis called (potential)
+      defenders: Galicia alone
+      forces: al-Andalus 4,619 regulars and 50 ships; Galicia no men under arms, 2 ships

@@ -1,0 +1,27 @@
+date: '1337-04-01'
+title: start
+source:
+  save: SP_GRA_1337_04_01 (text and compressed, same moment)
+  game: 1.4.5
+summary: >-
+  The start of the campaign, saved before the first day passed. Economy, estates, levies and the cabinet are
+  not recorded: the game only settles them after a few monthly ticks. The Battle for the Strait has not begun
+  yet.
+realm:
+  towns: 18
+  souls: 448698
+court:
+  ruler: yusuf-i
+  capital: gharnata
+peoples:
+  cultures:
+    Andalusi: 438630
+    Sephardi: 8860
+    Ligurian: 1207
+  faiths:
+    Sunni: 438631
+    Jewish: 8860
+    Catholic: 1207
+map:
+  ours:
+    - GRA

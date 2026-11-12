@@ -1,0 +1,200 @@
+date: '1365-07-01'
+title: The Portuguese south
+source:
+  save: autosave of 1 July 1365 (compressed)
+  game: 1.4.5
+summary: >-
+  Portugal made a separate peace on 11 September 1364 and gave up the Algarve and the lower Alentejo, thirteen
+  towns, which the court means to make a vassal after the war. Saʿd is now called Conqueror and has a daughter
+  by Aiman. The realm is 56 towns and 709,000 people, majority Catholic again with the Portuguese. Castile and
+  Aragon fight on. Shares of power are estimated from the 1 June 1349 reading.
+realm:
+  towns: 56
+  souls: 708707
+  treasury: 169
+  income: 50.5
+  expenses: 93.3
+  stability: 25.5
+  prestige: 44
+  regiments: 14
+  ships: 5
+  manpower: 2045
+court:
+  ruler: saad-ibn-yusuf
+  heir: ismail-ibn-yusuf
+  capital: gharnata
+  council:
+    - who: dua-marinid
+      seat: Promoting Andalusī culture
+    - who: khalid-ibn-yahya
+      seat: Promoting Andalusī culture
+standing:
+  wars:
+    - war-of-independence
+    - mamluk-cilician-war
+  allies:
+    - Mamluks
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+  estates:
+    - name: Crown
+      power: 34.58
+    - name: Nobility
+      power: 24.39
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 6.19
+      mood: 50
+    - name: Burghers
+      power: 10.46
+      mood: 50
+    - name: Commoners
+      power: 4.09
+      mood: 50
+    - name: Dhimmī
+      power: 20.29
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 356680
+    Castilian: 237580
+    Portuguese: 73086
+    Sephardi: 32985
+    Mustaarabi: 3923
+    Sardinian: 1740
+  faiths:
+    Catholic: 359960
+    Sunni: 311921
+    Jewish: 36056
+    Bori_Religion: 552
+    Nyama: 219
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+  allies:
+    - MAM
+beats:
+  - id: 1364-09-25-battle-gulf-valencia
+    'on': '1364-09-25'
+    kind: battle
+    what: >-
+      In the gulf of Valencia a single Aragonese ship falls on the Valencian squadron of five and sinks one of
+      them
+    minor: true
+    threads:
+      - war-of-independence
+    from:
+      - save
+    cite: autosave of 1 July 1365
+    detail:
+      result: allied defeat
+      naval: true
+      ours:
+        Valencia: 5000
+      oursLost: 1000
+      theirs:
+        Aragon: 1000
+      theirsLost: 0
+      location: the gulf of Valencia
+  - id: 1364-12-13-birth-umm-al-fath-bint-saad
+    'on': '1364-12-13'
+    kind: birth
+    what: Aiman the Mamlūk bears Sultan Saʿd his first child, a daughter, Umm al-Fatḥ, 'mother of victory'
+    who:
+      - umm-al-fath-bint-saad
+      - saad-ibn-yusuf
+      - aiman-mamluk
+    threads:
+      - house
+    from:
+      - save
+    cite: autosave of 1 July 1365
+  - id: 1365-03-09-battle-tortosa
+    'on': '1365-03-09'
+    kind: battle
+    what: A small Aragonese company of 55 attacks the Valencian army at Tortosa and is wiped out
+    who:
+      - joan-doriola
+    threads:
+      - war-of-independence
+    from:
+      - save
+    cite: autosave of 1 July 1365
+    detail:
+      result: allied victory
+      naval: false
+      ours:
+        Valencia: 1001
+      oursLost: 0
+      theirs:
+        Aragon: 55
+      theirsLost: 55
+      location: Tortosa
+  - id: 1365-03-saad-conqueror
+    'on': '1365-03-11'
+    kind: note
+    what: The chancellor reports that the sultan has earned the name of Conqueror
+    who:
+      - saad-ibn-yusuf
+    threads:
+      - war-of-independence
+    from:
+      - save
+      - told
+    cite: >-
+      Trent's account (about half a year after the Portuguese peace; the exact date isn't given). The autosave
+      of 1 July 1365 has the trait
+    detail:
+      trait: conqueror
+      effects:
+        commanderCombatBonus: 1
+        separatism: -0.1
+        monthlyProgressToBelligerent: 0.1
+  - id: 1365-06-27-battle-cuenca
+    'on': '1365-06-27'
+    kind: battle
+    what: The Murcian host, 330 men, attacks 1,600 Aragonese at Cuenca and is destroyed
+    who:
+      - juan-manuel-enriquez
+    threads:
+      - war-of-independence
+    from:
+      - save
+    cite: autosave of 1 July 1365
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Murcia: 330
+      oursLost: 330
+      theirs:
+        Aragon: 1589
+      theirsLost: 18
+      location: Cuenca
+  - id: 1365-07-01-state
+    'on': '1365-07-01'
+    kind: realm
+    what: >-
+      With the Portuguese south the realm is 56 towns and 709,000 people, and Catholics outnumber Sunnīs
+      again, 360,000 to 312,000. The treasury has fallen to 169 against a deficit of 43 a month
+    who:
+      - saad-ibn-yusuf
+    threads:
+      - war-of-independence
+      - estates
+    from:
+      - save
+    cite: autosave of 1 July 1365
+    detail:
+      locations: 56
+      population: 708707
+      religions:
+        Catholic: 359960
+        Sunni: 311921
+      treasury: 169
+      income: 50.5
+      expenses: 93.3

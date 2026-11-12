@@ -1,0 +1,1009 @@
+date: '1411-11-01'
+title: The Peace of Rajab
+source:
+  save: SP_ADU_1411_11_01 (compressed)
+  game: 1.4.7
+summary: >-
+  On 1 November 1411 (14 Rajab 814) the War of Jillīqiya, the fourth war of the Istirdād, ended with the Peace
+  of Rajab. Portugal was annexed whole and Qashtāla gave up 63 towns, Old Castile, León and Navarre; what is
+  left of Qashtāla, 45 towns, is ruled from Oviedo. The conquests were given out at once as four new ṭāʾifas:
+  Burtuqāl (the old Portugal) to the Emperor's cousin Aḥmad, Liyūn to the Emperor's son Aḥmad, Burghush (Old
+  Castile) to Khālid ibn Yaḥyā Raḥḥū, and Banbalūna (Navarre) to the Emperor's cousin Yūsuf. The crown keeps
+  161 towns and 2,042,000 people, with nine ṭāʾifas under it. Europe is horrified, all but Paris. Treasury
+  816, income 220 against 303. Shares of power are estimated from the 1 June 1349 reading.
+realm:
+  towns: 161
+  souls: 2042050
+  treasury: 816
+  income: 220.2
+  expenses: 303.2
+  stability: 24.5
+  prestige: 83
+  regiments: 9
+  ships: 47
+  manpower: 2032
+court:
+  ruler: ismail-ibn-saad
+  heir: muhammad-ibn-ismail-ibn-saad
+  capital: ishbiliyya
+  council:
+    - who: umm-al-fath-bint-saad
+      seat: Integrating the new lands
+    - who: muhammad-ibn-yusuf-ibn-faraj
+      seat: Integrating the new lands
+    - who: maryam-bint-yusuf
+      seat: Integrating the new lands
+    - who: yusuf-ibn-saad
+      seat: Improving the realm’s standing abroad
+standing:
+  allies:
+    - Mamluks
+    - Morocco
+  subjects:
+    - Valencia (taifa)
+    - Catalonia (taifa)
+    - Aragon (taifa)
+    - Taifa of Salamanca (taifa)
+    - Taifa of Cuenca (taifa)
+    - Taifa of Minho (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+  estates:
+    - name: Crown
+      power: 34.35
+    - name: Nobility
+      power: 21.98
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 9.21
+      mood: 50
+    - name: Burghers
+      power: 10.94
+      mood: 50
+    - name: Commoners
+      power: 3.95
+      mood: 50
+    - name: Dhimmī
+      power: 19.57
+      mood: 50
+peoples:
+  cultures:
+    Castilian: 668652
+    Andalusi: 642208
+    Portuguese: 435725
+    Sephardi: 152929
+    Leonese: 132508
+    Mustaarabi: 3624
+  faiths:
+    Catholic: 1090328
+    Sunni: 800513
+    Jewish: 150208
+    Bori_Religion: 628
+    Nyama: 239
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - CAT
+    - ARA
+    - AAA98
+    - ABA60
+    - ABA10
+    - ABA42
+    - ABA49
+    - ABA55
+  allies:
+    - MAM
+    - MOR
+beats:
+  - id: 1410-09-01-catalan-privileges-return
+    'on': '1410-09-01'
+    kind: realm
+    what: >-
+      The Catalan Merchant Privileges come back into force, sixty-four years after the war of the three crowns
+      ended them. With Catalonia, Aragon and Valencia all ṭāʾifas of the crown, al-Andalus can no longer be at
+      war with the Catalans, and the privileges can no longer be lost
+    who:
+      - ismail-ibn-saad
+    where:
+      - barshaluna
+    from:
+      - save
+      - told
+    cite: saves of 29 June 1410 and 1 November 1411; Trent's account
+    detail:
+      reform: catalan_merchant_privileges
+      effects: nobles power −20%, burghers power −10% (crown power +30% scaled by Farfanes in the army)
+      history:
+        held: from the start of the game
+        lost: 1339 (war with Aragon); restored 1340
+        lostAgain: by November 1346, in the war of the three crowns
+        restored: 1 September 1410 (the save's reform date)
+      why: >-
+        the privileges need peace with Aragon; now that Catalonia and Aragon are subjects, war with them is
+        impossible (Trent)
+  - id: 1410-09-16-battle-cape-mondego
+    'on': '1410-09-16'
+    kind: battle
+    what: >-
+      Off Cape Mondego the Castilian admiral Pedro, with 14 ships, falls on the fleet of Tilimsān, 13 sail,
+      and sinks every one of them without loss
+    minor: true
+    threads:
+      - war-of-jilliqiya
+      - voyages
+    from:
+      - save
+    cite: autosave of 1 March 1411 (the war's battle list)
+    detail:
+      result: allied defeat
+      naval: true
+      ours:
+        Tlemcen: 13
+      oursTotal: 13
+      oursLost: 13
+      theirs:
+        Castile: 14
+      theirsTotal: 14
+      theirsLost: 0
+      location: Cape Mondego, off Portugal
+      side: Castile attacking
+      units: ships
+      commanders:
+        Castile: Pedro, an accomplished sailor (93/80/75)
+        Tlemcen: Kuri
+  - id: 1410-10-09-battle-penafiel
+    'on': '1410-10-09'
+    kind: battle
+    what: >-
+      At Peñafiel on the Duero the 970 men of the Ṭāʾifa of Qūnka attack the main Castilian host of 19,800 and
+      are destroyed to the last man
+    minor: true
+    threads:
+      - war-of-jilliqiya
+    from:
+      - save
+    cite: autosave of 1 March 1411 (the war's battle list)
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Ṭāʾifa of Qūnka: 973
+      oursTotal: 973
+      oursLost: 973
+      theirs:
+        Castile: 19805
+      theirsTotal: 19805
+      theirsLost: 0
+      location: Peñafiel
+      side: Qūnka attacking
+      commanders:
+        Qūnka: Eusebius
+        Castile: Crisanto, a defensive planner (94/35/69)
+  - id: 1410-12-07-battle-segovia
+    'on': '1410-12-07'
+    kind: battle
+    what: >-
+      At Segovia the Aragonese, 1,035 under Ṭahmāsp, beat 500 Castilians led by the heir of Castile, Prince
+      Fernando: 311 of theirs lost for 150
+    minor: true
+    threads:
+      - war-of-jilliqiya
+    from:
+      - save
+    cite: autosave of 1 March 1411 (the war's battle list)
+    detail:
+      result: allied victory
+      naval: false
+      ours:
+        Aragon: 1035
+      oursTotal: 1035
+      oursLost: 150
+      theirs:
+        Castile: 500
+      theirsTotal: 500
+      theirsLost: 311
+      location: Segovia
+      side: Aragon attacking
+      commanders:
+        Aragon: Ṭahmāsp, goal-oriented (58/58/59)
+        Castile: Prince Fernando, heir of Castile
+  - id: 1410-12-11-battle-cuellar
+    'on': '1410-12-11'
+    kind: battle
+    what: >-
+      At Cuéllar the Castilian host, 21,300 under Crisanto, attacks the Catalan army of 9,370 and breaks it:
+      5,400 Catalans lost for 2,000 Castilians
+    minor: true
+    threads:
+      - war-of-jilliqiya
+    from:
+      - save
+    cite: autosave of 1 March 1411 (the war's battle list)
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Catalonia: 9372
+      oursTotal: 9372
+      oursLost: 5398
+      theirs:
+        Castile: 21301
+      theirsTotal: 21301
+      theirsLost: 2004
+      location: Cuéllar
+      side: Castile attacking
+      commanders:
+        Castile: Crisanto
+        Catalonia: Chandra, ruthless
+  - id: 1411-01-02-battle-mouth-douro
+    'on': '1411-01-02'
+    kind: battle
+    what: >-
+      At the mouth of the Duero the Castilian admiral Pedro, with 14 ships, attacks the joined fleets of
+      Catalonia and Fās, 124 sail under the Marīnid prince Khālid. He is driven off without losing a ship, but
+      the allies lose 29, most of them transports, and two are taken
+    minor: true
+    threads:
+      - war-of-jilliqiya
+    from:
+      - save
+    cite: autosave of 1 March 1411 (the war's battle list)
+    detail:
+      result: allied victory
+      naval: true
+      ours:
+        Catalonia: 33
+        Morocco: 91
+      oursTotal: 124
+      oursLost: 29
+      theirs:
+        Castile: 14
+      theirsTotal: 14
+      theirsLost: 0
+      location: the mouth of the Duero
+      side: Castile attacking
+      units: ships
+      commanders:
+        Castile: Pedro
+        allies: Khālid, a Marīnid prince, a naval showman (37/60/72)
+      note: >-
+        the battle is counted a win for the allies; the allied losses include 23 transports, 2 of them
+        captured
+  - id: 1411-01-13-battle-cuellar-ii
+    'on': '1411-01-13'
+    kind: battle
+    what: >-
+      The Emperor's first great battle. On 17 Ramaḍān, the day of Badr, the Emperor Ismāʿīl with 25,730 men,
+      Andalusīs and Marīnids, attacks Crisanto's 19,290 at Cuéllar, where the Catalans had been broken a month
+      before. It is a hard day: 9,590 of ours fall for 8,450 of theirs, but the field is ours
+    who:
+      - ismail-ibn-saad
+    threads:
+      - war-of-jilliqiya
+    from:
+      - save
+      - seen
+    cite: Trent's battle screen, 13 January 1411; autosave of 1 March 1411
+    detail:
+      result: victory
+      naval: false
+      ours:
+        al-Andalus: 22671
+        Morocco: 3063
+      oursTotal: 25734
+      oursLost: 9586
+      theirs:
+        Castile: 19288
+      theirsTotal: 19288
+      theirsLost: 8446
+      location: Cuéllar
+      side: al-Andalus attacking
+      warScore: 25
+      warScoreAfter: 47
+      commanders:
+        al-Andalus: the Emperor Ismāʿīl
+        Castile: Crisanto
+      composition:
+        ours:
+          archers: 16799
+          infantry: 2484
+          lightCavalry: 5463
+          heavyCavalry: 988
+        theirs:
+          archers: 18449
+          lightCavalry: 170
+          heavyCavalry: 618
+          supply: 50
+      losses:
+        ours:
+          archers: 6880
+          infantry: 1149
+          lightCavalry: 1434
+          heavyCavalry: 125
+        theirs:
+          archers: 7961
+          lightCavalry: 67
+          heavyCavalry: 368
+          supply: 50
+  - id: 1411-02-10-battle-coimbra
+    'on': '1411-02-10'
+    kind: battle
+    what: At Coimbra 940 Marīnids attack the Portuguese army of 13,440 and are destroyed
+    minor: true
+    threads:
+      - war-of-jilliqiya
+    from:
+      - save
+    cite: autosave of 1 March 1411 (the war's battle list)
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Morocco: 942
+      oursTotal: 942
+      oursLost: 942
+      theirs:
+        Portugal: 13437
+      theirsTotal: 13437
+      theirsLost: 0
+      location: Coimbra
+      side: Morocco attacking
+      commanders:
+        Morocco: ʿAbd al-Ḥaqq, a Marīnid prince
+        Portugal: Ponce, an inspiring leader (67/55/89)
+  - id: 1411-03-07-battle-ledesma
+    'on': '1411-03-07'
+    kind: battle
+    what: >-
+      At Ledesma the Emperor's army of 14,500 catches the 320 men of Castile's heir, Prince Fernando, and
+      kills 130; the prince escapes
+    who:
+      - ismail-ibn-saad
+    threads:
+      - war-of-jilliqiya
+    from:
+      - save
+    cite: save of 1 November 1411, before the peace (the war's battle list)
+    detail:
+      result: victory
+      naval: false
+      ours:
+        al-Andalus: 14507
+      oursTotal: 14507
+      oursLost: 0
+      theirs:
+        Castile: 324
+      theirsTotal: 324
+      theirsLost: 130
+      location: Ledesma
+      side: al-Andalus attacking
+      commanders:
+        al-Andalus: the Emperor Ismāʿīl
+        Castile: Prince Fernando, heir of Castile
+  - id: 1411-03-10-battle-bay-setubal
+    'on': '1411-03-10'
+    kind: battle
+    what: >-
+      The great sea battle off al-Ushbūna. In the bay of Setúbal the Castilian admiral Pedro, with 14 ships,
+      attacks the joined fleets of al-Andalus and Fās, 107 sail under the Marīnid prince Aḥmad, and loses
+      every ship; the allies lose 12
+    threads:
+      - war-of-jilliqiya
+    from:
+      - save
+    cite: save of 1 November 1411, before the peace (the war's battle list)
+    detail:
+      result: victory
+      naval: true
+      ours:
+        al-Andalus: 32
+        Morocco: 75
+      oursTotal: 107
+      oursLost: 12
+      theirs:
+        Castile: 14
+      theirsTotal: 14
+      theirsLost: 14
+      location: the bay of Setúbal, south of al-Ushbūna
+      side: Castile attacking
+      units: ships
+      commanders:
+        allies: Aḥmad, a Marīnid prince, a naval showman and battlefield medic (57/50/56)
+        Castile: Pedro, an accomplished sailor (93/80/75)
+      note: Trent's major sea battle off the shores of Lisbon
+  - id: 1411-05-15-battle-toro
+    'on': '1411-05-15'
+    kind: battle
+    what: >-
+      On the outskirts of Zamora the Emperor meets Crisanto's host again at Toro, 20,890 against 11,110, and
+      breaks it: 5,120 Castilians lost for 4,280 of ours
+    who:
+      - ismail-ibn-saad
+    threads:
+      - war-of-jilliqiya
+    from:
+      - seen
+    cite: Trent's battle screen, 15 May 1411
+    detail:
+      result: victory
+      naval: false
+      ours:
+        al-Andalus: 20890
+      oursTotal: 20890
+      oursLost: 4282
+      theirs:
+        Castile: 11111
+      theirsTotal: 11111
+      theirsLost: 5121
+      location: Toro
+      side: al-Andalus attacking
+      warScore: 20.52
+      warScoreAfter: 73
+      commanders:
+        al-Andalus: the Emperor Ismāʿīl
+        Castile: Crisanto
+      composition:
+        ours:
+          archers: 9919
+          infantry: 2042
+          lightCavalry: 8066
+          heavyCavalry: 863
+        theirs:
+          archers: 10580
+          lightCavalry: 158
+          heavyCavalry: 360
+          supply: 13
+      losses:
+        ours:
+          archers: 3848
+          infantry: 180
+          lightCavalry: 254
+        theirs:
+          archers: 4734
+          lightCavalry: 93
+          heavyCavalry: 296
+  - id: 1411-05-30-battle-cape-mondego-ii
+    'on': '1411-05-30'
+    kind: battle
+    what: >-
+      Off Cape Mondego the three Catalan ships of Berenguer Ramon, ruler of Catalonia, attack the Portuguese
+      fleet of 17 and lose two
+    minor: true
+    threads:
+      - war-of-jilliqiya
+      - voyages
+    from:
+      - save
+    cite: save of 1 November 1411, before the peace (the war's battle list)
+    detail:
+      result: allied defeat
+      naval: true
+      ours:
+        Catalonia: 3
+      oursTotal: 3
+      oursLost: 2
+      theirs:
+        Portugal: 17
+      theirsTotal: 17
+      theirsLost: 0
+      location: Cape Mondego
+      side: Catalonia attacking
+      units: ships
+      commanders:
+        Catalonia: Berenguer Ramon de Montsoriu
+        Portugal: Afonso
+  - id: 1411-06-13-battle-coimbra-ii
+    'on': '1411-06-13'
+    kind: battle
+    what: >-
+      At Coimbra the Portuguese army, 13,380 under Ponce, attacks 5,850 Marīnids under Ṭālib and is thrown
+      back: 4,510 Portuguese lost for 2,560
+    minor: true
+    threads:
+      - war-of-jilliqiya
+    from:
+      - save
+    cite: save of 1 November 1411, before the peace (the war's battle list)
+    detail:
+      result: allied victory
+      naval: false
+      ours:
+        Morocco: 5845
+      oursTotal: 5845
+      oursLost: 2558
+      theirs:
+        Portugal: 13383
+      theirsTotal: 13383
+      theirsLost: 4508
+      location: Coimbra
+      side: Portugal attacking
+      commanders:
+        Morocco: Ṭālib, an Andalusī, born to the saddle
+        Portugal: Ponce, an inspiring leader
+  - id: 1411-06-21-battle-mouth-douro-ii
+    'on': '1411-06-21'
+    kind: battle
+    what: >-
+      The crown prince's first sea battle. At the mouth of the Duero the Portuguese fleet of 17 attacks 34
+      ships, 23 of al-Andalus under the crown prince Muḥammad and 11 of Valencia under their own admiral, and
+      loses 15 of them for 3 of ours
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+    threads:
+      - war-of-jilliqiya
+    from:
+      - save
+      - seen
+      - told
+    cite: Trent's battle screen (breakdown) and account, 21 June 1411; save of 1 November 1411
+    detail:
+      result: victory
+      naval: true
+      ours:
+        al-Andalus: 23
+        Valencia: 11
+      oursTotal: 34
+      oursLost: 3
+      theirs:
+        Portugal: 17
+      theirsTotal: 17
+      theirsLost: 15
+      location: the mouth of the Duero
+      side: Portugal attacking
+      units: ships
+      warScore: 25
+      commanders:
+        al-Andalus: the crown prince Muḥammad, in his first sea battle (Trent)
+        Valencia: >-
+          Otto, the Valencian admiral, an aggressive commander (76/62/43), whom the save lists as commander of
+          the allied side
+        Portugal: Afonso, level-headed (66/89/53)
+  - id: 1411-08-03-battle-moncorvo
+    'on': '1411-08-03'
+    kind: battle
+    what: >-
+      At Moncorvo the Marīnid prince Fāris, son of the sultan of Fās, with 3,000 attacks Crisanto's 6,380 and
+      is beaten off; each side loses about 600
+    minor: true
+    threads:
+      - war-of-jilliqiya
+    from:
+      - save
+    cite: save of 1 November 1411, before the peace (the war's battle list)
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Morocco: 2995
+      oursTotal: 2995
+      oursLost: 597
+      theirs:
+        Castile: 6381
+      theirsTotal: 6381
+      theirsLost: 671
+      location: Moncorvo
+      side: Morocco attacking
+      commanders:
+        Morocco: Fāris, son of Abū al-Faḍl of Fās, a hardy warrior
+        Castile: Crisanto
+  - id: 1411-08-28-battle-besteiros
+    'on': '1411-08-28'
+    kind: battle
+    what: >-
+      At Besteiros, between Viseu and Coimbra, the Emperor with 11,370 destroys more than half the Portuguese
+      army of 9,670: 5,280 of theirs lost for 1,920 of ours
+    who:
+      - ismail-ibn-saad
+    threads:
+      - war-of-jilliqiya
+    from:
+      - save
+    cite: save of 1 November 1411, before the peace (the war's battle list)
+    detail:
+      result: victory
+      naval: false
+      ours:
+        al-Andalus: 11368
+      oursTotal: 11368
+      oursLost: 1919
+      theirs:
+        Portugal: 9668
+      theirsTotal: 9668
+      theirsLost: 5280
+      location: Besteiros
+      side: al-Andalus attacking
+      commanders:
+        al-Andalus: the Emperor Ismāʿīl
+        Portugal: Bernardo, an ironside
+  - id: 1411-09-02-castile-capitulates
+    'on': '1411-09-02'
+    kind: war
+    what: >-
+      Qashtāla surrenders unconditionally. Its armies gone and its lands occupied from Zamora to Galicia, the
+      Crown of Castile capitulates to the Emperor, who may now dictate the terms of peace. War score stands at
+      100
+    who:
+      - ismail-ibn-saad
+      - pedro-of-castile
+    threads:
+      - war-of-jilliqiya
+    from:
+      - seen
+    cite: Trent's screen, 2 September 1411
+    detail:
+      event: >-
+        Capitulation! (the game's notice: Castile has unconditionally surrendered in the Reconquest of Iberia;
+        we control their lands and may dictate the terms of peace)
+      warScore: 100
+      armiesOnScreen: >-
+        our armies of 3,035, 5,588, 1,809, 2,169, 1,303 and 1,399 across León and Galicia, with Santiago de
+        Compostela, Ponferrada and Zamora flying the Emperor's flag; the main army 9,437
+      realm:
+        population: 2.041 million
+        stability: 24
+  - id: 1411-09-the-march-on-porto
+    'on': '1411-09-03'
+    kind: note
+    what: >-
+      With Qashtāla at his mercy, the Emperor turns on Portugal and marches on Porto, its capital, while the
+      crown prince Muḥammad brings the fleet round to blockade the city from the sea. Portugal has not
+      surrendered. A separate peace with it is possible, but the Emperor wants no concessions from Portugal:
+      this war is to be the end of it
+    who:
+      - ismail-ibn-saad
+      - muhammad-ibn-ismail-ibn-saad
+    threads:
+      - war-of-jilliqiya
+    from:
+      - told
+    cite: Trent's account, September 1411
+    detail:
+      target: Porto, capital of Portugal
+      army: the Emperor in person
+      fleet: the crown prince Muḥammad, blockading
+      warAim: no separate peace for concessions; the end of Portugal as a kingdom (Trent)
+  - id: 1411-09-11-battle-cape-sao-vicente
+    'on': '1411-09-11'
+    kind: battle
+    what: >-
+      Off Cape São Vicente the Marīnid fleet, 14 sail under Prince Khālid, catches the last three Castilian
+      ships under Pedro and sinks two
+    minor: true
+    threads:
+      - war-of-jilliqiya
+      - voyages
+    from:
+      - save
+    cite: save of 1 November 1411, before the peace (the war's battle list)
+    detail:
+      result: allied victory
+      naval: true
+      ours:
+        Morocco: 14
+      oursTotal: 14
+      oursLost: 0
+      theirs:
+        Castile: 3
+      theirsTotal: 3
+      theirsLost: 2
+      location: Cape São Vicente
+      side: Morocco attacking
+      units: ships
+      commanders:
+        Morocco: Khālid
+        Castile: Pedro
+  - id: 1411-10-07-porto-falls
+    'on': '1411-10-07'
+    kind: battle
+    what: >-
+      Porto falls. Starved by the Emperor's siege on land and the crown prince's blockade at sea, its people
+      rise and throw open the gates to the army. So ends the Kingdom of Portugal
+    who:
+      - ismail-ibn-saad
+      - muhammad-ibn-ismail-ibn-saad
+      - fernando-of-castile
+    threads:
+      - war-of-jilliqiya
+    from:
+      - told
+    cite: Trent's account, 7 October 1411
+    detail:
+      result: taken
+      location: Porto, capital of Portugal
+      how: the city was starving; a revolt of the populace opened the gates (Trent)
+      blockade: the crown prince Muḥammad's fleet
+  - id: 1411-10-27-battle-guimaraes
+    'on': '1411-10-27'
+    kind: battle
+    what: >-
+      The last battle. Three weeks after Porto fell, the last Portuguese army, 4,800 under Bernardo, marches
+      on a force of Marīnid levies; the Emperor intercepts it at Guimarães, the cradle of the kingdom, with
+      9,450 men and kills or scatters 3,160 for the loss of 1,150
+    who:
+      - ismail-ibn-saad
+    threads:
+      - war-of-jilliqiya
+    from:
+      - save
+      - seen
+    cite: Trent's battle screen, 27 October 1411; save of 1 November 1411
+    detail:
+      result: victory
+      naval: false
+      ours:
+        al-Andalus: 9446
+      oursTotal: 9446
+      oursLost: 1154
+      theirs:
+        Portugal: 4803
+      theirsTotal: 4803
+      theirsLost: 3162
+      location: Guimarães
+      side: >-
+        al-Andalus attacking: the Emperor intercepted the Portuguese as they moved against a Marīnid force of
+        levies (Trent)
+      warScore: 9.42
+      commanders:
+        al-Andalus: the Emperor Ismāʿīl
+        Portugal: Bernardo, an ironside and defensive planner (83/84/56)
+      composition:
+        ours:
+          archers: 4232
+          infantry: 1979
+          lightCavalry: 2396
+          heavyCavalry: 839
+        theirs:
+          archers: 4601
+          lightCavalry: 129
+          supply: 73
+      losses:
+        ours:
+          archers: 1124
+          lightCavalry: 25
+          heavyCavalry: 6
+        theirs:
+          archers: 3059
+          lightCavalry: 103
+  - id: 1411-11-01-europe-horrified
+    'on': '1411-11-01'
+    kind: world
+    what: >-
+      Europe is horrified by the conquest of Portugal and Old Castile, all but Paris. The Holy Roman Emperor
+      can do little about it, with France and England at war again
+    who:
+      - ismail-ibn-saad
+    from:
+      - told
+    cite: Trent's account, November 1411; world data of 1 November 1411
+    detail:
+      exception: France, a friend since 1395
+      constraint: the war of England and its allies against France, from 1 October 1409 (excommunication cb)
+  - id: 1411-11-01-four-new-taifas
+    'on': '1411-11-01'
+    kind: realm
+    what: >-
+      The conquests of Jillīqiya are given out as four new ṭāʾifas. The Emperor's cousin Aḥmad takes the old
+      Kingdom of Portugal as the Ṭāʾifa of Burtuqāl; the Emperor's son Aḥmad, eighteen, takes León; Khālid ibn
+      Yaḥyā Raḥḥū, sixty-eight, takes Old Castile as the Ṭāʾifa of Burghush; and the Emperor's cousin Yūsuf
+      takes Navarre as the Ṭāʾifa of Banbalūna. The crown keeps its 161 towns
+    who:
+      - ismail-ibn-saad
+      - ahmad-ibn-ismail-ibn-yusuf
+      - ahmad-ibn-ismail-ibn-saad
+      - khalid-ibn-yahya
+      - yusuf-ibn-ismail
+    where:
+      - banbaluna
+    threads:
+      - towns
+    from:
+      - save
+    cite: save of 1 November 1411, after the organisation of the conquests (Trent)
+    detail:
+      taifas:
+        Burtuqāl (ABA10), seat Barcelos: 34 towns, 675,000 people, Portuguese; Aḥmad ibn Ismāʿīl ibn Yūsuf, 34 (58/41/72)
+        Liyūn (ABA42), seat León: 17 towns, 387,000 people, Leonese; Aḥmad ibn Ismāʿīl ibn Saʿd, the Emperor's son, 18 (47/64/35)
+        Burghush (ABA49), seat Burgos: 28 towns, 584,000 people, Castilian; Khālid ibn Yaḥyā Raḥḥū, 68 (81/85/78), heir Abū Ḥammū
+        Banbalūna (ABA55), seat Pamplona: 18 towns, 271,000 people, Basque; Yūsuf ibn Ismāʿīl ibn Yūsuf, 39 (56/30/63)
+      realm:
+        towns:
+          - 258
+          - 161
+        subjects: 9
+      note: >-
+        the game reuses the tag ABA55, held by the rebel Kingdom of Estremadura in 1405, for the Ṭāʾifa of
+        Banbalūna
+  - id: 1411-11-01-the-end-of-portugal
+    'on': '1411-11-01'
+    kind: peace
+    what: >-
+      The Peace of Rajab (14 Rajab 814). Portugal ceases to be: all 34 of its towns, from Porto, Braga and
+      Guimarães to Coimbra, Viseu and Bragança, pass to the crown. Qashtāla gives up 63 towns, the heart of
+      Old Castile, León and Navarre: Valladolid, Burgos, León, Zamora, Toro, Palencia, Segovia, Soria and
+      Logroño, and Pamplona, Tudela and Estella. What is left of Qashtāla, 45 towns in Galicia, Asturias,
+      Cantabria and the Basque country, is ruled from Oviedo
+    who:
+      - ismail-ibn-saad
+      - pedro-of-castile
+      - fernando-of-castile
+    threads:
+      - war-of-jilliqiya
+    from:
+      - save
+      - told
+    cite: saves of 1 November 1411, before and after the peace; Trent's account
+    detail:
+      portugal:
+        ceded: 34
+        towns: >-
+          Aguiar, Barcelos, Besteiros, Braga, Bragança, Castelo Branco, Chão de Couce, Chaves, Coimbra,
+          Covilhã, Esgueira, Feira, Figueira, Guarda, Guimarães, Idanha, Lamego, Leiria, Macedo, Meda, Miranda
+          do Douro, Mirandela, Moncorvo, Montalegre, Pinhel, Porto, Proença-a-Nova, Sabugal, Seia, Trancoso,
+          Valença, Viana do Castelo, Vila Real, Viseu
+        fate: the kingdom is annexed; King Fernando is at the Castilian court
+      castile:
+        ceded: 63
+        before: 108
+        after: 45
+        newCapital: Oviedo
+        towns: >-
+          Ágreda, Aguilar de Campoo, Alba de Aliste, Alcañices, Almazán, Aranda de Duero, Arnedo, Astorga,
+          Benavente, Berlanga, Briviesca, Burgo de Osma, Burgos, Calahorra, Calatañazor, Carrión de los
+          Condes, Castrocalbón, Castrojeriz, Cuéllar, Elizondo, Estella, Fermoselle, Fuentidueña, León, Lerma,
+          Logroño, Mansilla, Medina de Rioseco, Medina del Campo, Medinaceli, Miranda de Ebro, Monzón de
+          Campos, Nájera, Olite, Palencia, Palenzuela, Pamplona, Pedraza, Peñafiel, Ponferrada, Puebla de
+          Sanabria, Reinosa, Riaño, Roncesvalles, Sahagún, Saint-Jean-Pied-de-Port, Saldaña, Sangüesa,
+          Segovia, Sepúlveda, Soria, Santo Domingo de Silos, Tordesillas, Toro, Tudela, Valladolid, Viana,
+          Villablino, Villadiego, Villafranca del Bierzo, Villalpando, Villarcayo, Zamora
+      realm:
+        towns:
+          - 161
+          - 258
+        population:
+          - 2038440
+          - 3955683
+        cultures:
+          Castilian: 1376218
+          Portuguese: 1077292
+          Andalusī: 640884
+          Leonese: 520675
+          Sephardi: 172450
+          Basque: 146046
+        religions:
+          Catholic: 2988008
+          Sunni: 797899
+          Jewish: 168774
+        treasury:
+          - 303
+          - 816
+        income: 220.2
+        expenses: 303.2
+        rank: 5
+      battles: 17 in the war's list, from Cape Mondego (16 September 1410) to Guimarães (27 October 1411)
+      name: the Peace of Rajab, signed in one of the sacred months (Trent, November 1411)
+tellings:
+  - id: 0814-07-14-of-cuellar-porto-and-the-end-of-portugal
+    'on': '1411-11-01'
+    title: Of the War of Jillīqiya, the Gates of Porto, and the Peace of Rajab
+    verse: 110:1-2
+    who:
+      - ismail-ibn-saad
+      - muhammad-ibn-ismail-ibn-saad
+      - pedro-of-castile
+      - fernando-of-castile
+      - abu-al-fadl-marinid
+      - ahmad-ibn-ismail-ibn-yusuf
+      - ahmad-ibn-ismail-ibn-saad
+      - yusuf-ibn-ismail
+      - khalid-ibn-yahya
+    where:
+      - ishbiliyya
+      - al-ushbuna
+      - qunka
+      - fas
+      - banbaluna
+    covers:
+      - 1410-06-29-war-on-castile
+      - 1410-09-16-battle-cape-mondego
+      - 1410-10-09-battle-penafiel
+      - 1410-12-11-battle-cuellar
+      - 1411-01-13-battle-cuellar-ii
+      - 1411-03-10-battle-bay-setubal
+      - 1411-05-15-battle-toro
+      - 1411-06-21-battle-mouth-douro-ii
+      - 1411-08-28-battle-besteiros
+      - 1411-09-02-castile-capitulates
+      - 1411-09-the-march-on-porto
+      - 1411-10-07-porto-falls
+      - 1411-10-27-battle-guimaraes
+      - 1411-11-01-the-end-of-portugal
+      - 1411-11-01-four-new-taifas
+      - 1411-11-01-europe-horrified
+    text: >
+      The truce of the Peace of Ramaḍān ran out on 25 Ṣafar 813, and the Emperor
+      [Ismāʿīl](person:ismail-ibn-saad) declared war on Qashtāla the same day. It was the fourth war of the
+      Istirdād, and the Emperor named it himself, in letters the Dīwān al-Inshāʾ carried to every court from
+      Fās to Paris. He did not call it a war for towns. He called it the War of Jillīqiya, by the name the
+      first Arabs had given to the whole Christian country beyond the Duero. Mūsā ibn Nuṣayr had ridden into
+      Jillīqiya in the first years of al-Andalus, he wrote, and al-Manṣūr had marched across it to Shant Yāqub
+      and carried the bells of its church back to Qurṭuba to hang as lamps in the Great Mosque. What they had
+      begun, the house of Naṣr would finish. The ʿulamāʾ read the letters aloud in the mosques. Portugal stood
+      with Qashtāla, as it always had. The sultan [Abū al-Faḍl](person:abu-al-fadl-marinid) of
+      [Fās](place:fas) sent his armies and his fleet, with the men of Tilimsān and Tafilalt. The Mamlūks were
+      busy putting the Fertile Crescent in order, and the Emperor did not ask them to leave it.
+
+
+      The war began badly. Off Cape Mondego the Castilian admiral Pedro, a seaman of real skill, sent the
+      whole fleet of Tilimsān to the bottom without losing a ship. At Peñafiel the little army of
+      [Qūnka](place:qunka) threw itself on the Castilian host and was destroyed. And in Shaʿbān the Castilian
+      general Crisanto, a careful man who never fought on ground he had not chosen, broke the Catalan army at
+      Cuéllar, south of the Duero.
+
+
+      The Emperor had never been taken for a soldier, and he knew it. He was a man who set himself one aim and
+      gave every order to it, and his aim that winter was Crisanto. He took the army north himself and found
+      the Castilians on the same field at Cuéllar. He attacked on 17 Ramaḍān 813, the anniversary of Badr,
+      with twenty-five thousand Andalusīs and Marīnids against nineteen thousand. It was the hardest day of
+      his life. Nearly ten thousand of ours fell, and more than eight thousand of theirs. At nightfall the
+      field was his, and the preachers of [Ishbīliya](place:ishbiliyya) had their sermon for the next Friday.
+
+
+      The sea turned next. In Dhū al-Qaʿda the admiral Pedro tried his luck once more, with fourteen ships
+      against the joined fleets of al-Andalus and Fās, a hundred and seven sail under the Marīnid prince
+      Aḥmad, in the bay of Setúbal below [al-Ushbūna](place:al-ushbuna). None of the fourteen came home. In
+      Muḥarram 814 the Emperor met Crisanto a second time, at Toro outside Zamora, and broke him again. In
+      Ṣafar the Portuguese fleet came out against thirty-four ships at the mouth of the Duero: eleven of
+      Balansiyya under their own admiral, and twenty-three of al-Andalus under the crown prince
+      [Muḥammad](person:muhammad-ibn-ismail-ibn-saad), in his first command. Fifteen Portuguese ships were
+      sunk or taken, for three of ours. The prince had never shone in the dīwān, but on a deck he was another
+      man, and he would talk of ships for the rest of his life. In Jumādā al-Ūlā the Emperor caught the
+      Portuguese army at Besteiros and destroyed more than half of it.
+
+
+      On 13 Jumādā al-Ūlā 814 Qashtāla surrendered without conditions. Its armies were gone, and the Emperor's
+      flags flew from Zamora to Shant Yāqub, as al-Manṣūr's had four hundred years before. Portugal fought on.
+      The dīwān told the Emperor he could have a separate peace with it whenever he wished, and a province for
+      the asking. He refused. He had not come for a province, and this war would be the end of Portugal. He
+      marched on Porto, its capital, and sent the crown prince round with the fleet to close the river mouth
+      behind it. Porto held out for a month. Then the grain ran out. On 18 Jumādā al-Ākhira the starving city
+      rose against its own garrison, and the townsmen threw open the gates to the army.
+
+
+      The nobles of Portugal had one army left. In Rajab it came down from the hills to fall on a camp of
+      Marīnid levies, and the Emperor caught it on the march at Guimarães, where their first king had been
+      born. On 9 Rajab he fell on it with twice its number and broke it, and Portugal had no army left.
+
+
+      Five days later, on 14 Rajab 814, the peace was signed. Rajab is one of the sacred months, in which the
+      Prophet forbade war, and the court called it the Peace of Rajab and said it was fitting that this war
+      should end in it. Portugal ceased to be. Its thirty-four towns, from Porto and Braga to Coimbra and
+      Viseu, passed to the crown, and its king [Fernando](person:fernando-of-castile) went into exile at the
+      court of the man who had dragged him into the war. Qashtāla gave up sixty-three towns, the whole of Old
+      Castile, León and Navarre, from Valladolid and Burgos to Segovia, Soria and Pamplona. King
+      [Pedro](person:pedro-of-castile) kept forty-five towns in the rain of the north, in Galicia, Asturias
+      and the Basque hills, and moved his court to Oviedo. The Christians had always said their reconquest
+      began in those mountains, when a Gothic lord held a cave against the first governors of al-Andalus.
+      Seven hundred years later they had been driven back to the same mountains.
+
+
+      On the day of the peace the crown ruled two hundred and fifty-eight towns and nearly four million souls,
+      three of every four of them Christians. It did not keep them long. The Emperor had learned from his
+      father that Christians obey a lord who owes his crown to the Emperor more readily than a governor, and
+      he gave out the conquests at once as four new ṭāʾifas. His cousin
+      [Aḥmad](person:ahmad-ibn-ismail-ibn-yusuf) took the old kingdom of Portugal as the Ṭāʾifa of Burtuqāl,
+      after the old name of Porto, Portucale, which the Arabs said as Burtuqāl and from which the Christians
+      had named their kingdom. His own son [Aḥmad](person:ahmad-ibn-ismail-ibn-saad), eighteen, took León. His
+      cousin [Yūsuf](person:yusuf-ibn-ismail) took Navarre, with [Banbalūna](place:banbaluna). And Old
+      Castile, from Burgos to Valladolid and Segovia, went to [Khālid ibn Yaḥyā
+      Raḥḥū](person:khalid-ibn-yahya), sixty-eight years old, the general of the Marīnid war, the captain of
+      the prospectors and the victor of Granadilla, the first man outside the house of Naṣr to be given a
+      ṭāʾifa. Europe was horrified, all but Paris, and the Emperor of the Germans could do nothing while
+      France and England were at war again. The ʿulamāʾ said the Istirdād was not finished. Qashtāla still
+      held the mountains of the north, and one more war would push it into the sea.
+
+
+      *When the victory of Allāh has come and the conquest, and you see the people entering into the religion
+      of Allāh in multitudes, then exalt with praise of your Lord and ask forgiveness of Him.*

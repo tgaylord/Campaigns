@@ -1,0 +1,343 @@
+date: '1451-12-21'
+title: The Governor of Palermo
+source:
+  save: SP_ADU_1451_12_21 (compressed)
+  game: 1.4.7
+summary: >-
+  From a save. Sicily stays under the crown, with a governor at Palermo, for now (Trent). The New World is
+  embraced among the realm's institutions (26 November). The treasury has been spent from 2,812 to 26 on paper
+  mills (Seville, Almería, Xàtiva, Santarém), jewellers, a library at Lisbon, a quarry at Palermo and paved
+  roads. Stability has fallen from 23.6 to 16.1, for reasons the save doesn't give. The Mamlūk war is in its
+  fourth year, and the Banū Lām still hold the Holy Cities. Estate power estimated from the reading of 16
+  November 1428.
+realm:
+  towns: 244
+  souls: 3881949
+  treasury: 26
+  income: 459.3
+  expenses: 437.6
+  stability: 16.1
+  prestige: 93
+  regiments: 13
+  ships: 97
+  manpower: 27911
+court:
+  ruler: muhammad-ibn-ismail-ibn-saad
+  heir: ismail-ibn-muhammad-ibn-ismail
+  capital: ishbiliyya
+  council:
+    - who: ismail-ibn-muhammad-ibn-ismail
+      seat: Assimilating the new lands
+    - who: ahmad-ibn-muhammad-ibn-ismail
+      seat: Changing the societal values
+    - who: umm-al-fath-bint-muhammad
+      seat: Strengthening the government
+    - who: shams-bint-muhammad
+      seat: Promoting Andalusī culture
+    - who: jadila-bint-saad-ibn-faraj
+      seat: Developing the provinces
+standing:
+  wars:
+    - mamluk-war-on-lam
+  allies:
+    - Mamluks
+    - Morocco
+    - Tunis
+  subjects:
+    - Aragon (taifa)
+    - Taifa of Cuenca (taifa)
+    - Kingdom of Portugal (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+    - Taifa of Galicia (taifa)
+    - Cape Verde (colonial nation)
+    - Athens (vassal)
+    - Negroponte (vassal)
+  estates:
+    - name: Crown
+      power: 28.87
+    - name: Nobility
+      power: 17.4
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 12.38
+      mood: 50
+    - name: Burghers
+      power: 24.03
+      mood: 55
+    - name: Commoners
+      power: 2.91
+      mood: 50
+    - name: Dhimmī
+      power: 14.41
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 1165928
+    Catalan: 778370
+    Portuguese: 550251
+    Castilian: 504727
+    Sicilian: 394456
+    Sephardi: 227072
+  faiths:
+    Sunni: 2119765
+    Catholic: 1530275
+    Jewish: 201276
+    Guanche_religion: 27943
+    Orthodox: 1864
+map:
+  ours:
+    - GRA
+  subjects:
+    - ARA
+    - ABA60
+    - POR
+    - ABA42
+    - ABA49
+    - ABA55
+    - GLC
+    - AAA52
+    - ATH
+    - NEG
+  allies:
+    - MAM
+    - MOR
+    - TUN
+beats:
+  - id: 1451-07-24-battle-al-ukhaydir
+    'on': '1451-07-24'
+    kind: battle
+    what: >-
+      At al-Ukhaydir the Mamlūk army, 9,408 strong, attacks 2,368 of the Banū Lām and beats them: 1,508 lost
+      against 243
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 21 December 1451
+    detail:
+      result: allied victory
+      naval: false
+      ours:
+        Mamluks: 9408
+      oursTotal: 9408
+      oursLost: 243
+      theirs:
+        Lām: 2368
+      theirsTotal: 2368
+      theirsLost: 1508
+      location: al-Ukhaydir
+      side: allies attacking
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1451-11-26-the-new-world
+    'on': '1451-11-26'
+    kind: world
+    what: >-
+      The ideas of the far voyages take root: al-Andalus embraces the New World among its institutions, with
+      no new land found, only the ways of thinking that exploration has brought
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+    threads:
+      - voyages
+    from:
+      - seen
+      - told
+    cite: Trent's screenshot and account, 26 November 1451
+    detail:
+      institution: New World, fully embraced
+      trent: no discovery- just the entrenchment of exploration ideals
+      realm:
+        population: 3.889 million
+        stability: 15
+        army: 8,900
+  - id: 1451-12-16-birth-of-ahmad-ibn-muhammad
+    'on': '1451-12-16'
+    kind: birth
+    what: 'A grandson for the prince Aḥmad: Aḥmad, son of his son Muḥammad'
+    who:
+      - ahmad-ibn-muhammad-ibn-ismail
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 21 December 1451
+    detail:
+      father: Muḥammad ibn Aḥmad, born 30 December 1426
+      others: >-
+        also born in 1451: Zaynab (30 January) and Muʾmina (26 December 1450) to Saʿd ibn Aḥmad of Banbalūna,
+        the first by the prince Aḥmad's daughter Muʾmina
+  - id: 1451-12-21-sicily-under-the-crown
+    'on': '1451-12-21'
+    kind: note
+    what: >-
+      A second idea wins the court: instead of a new ṭāʾifa, Sicily is kept under the crown, with a governor
+      at Palermo, for now
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+    threads:
+      - sicily
+      - two-princes
+    from:
+      - save
+      - told
+    cite: Trent's account (12 November 2026); save of 21 December 1451
+    detail:
+      trent: It's go towards the crown, for now.
+      save: Sicily's 22 towns are still held directly in December 1451; no new subject
+  - id: 1451-12-21-the-paper-of-shatiba
+    'on': '1451-12-21'
+    kind: realm
+    what: >-
+      The treasury, 2,812 at the start of the year, is spent down to 26: new paper mills at Ishbīliya,
+      al-Mariyya, Shāṭiba and Shantarīn, jewellers at Qurṭuba, Jayyān and Sharīsh, a library at al-Ushbūna, a
+      quarry at Palermo, and paved roads
+    who:
+      - ahmad-ibn-muhammad-ibn-ismail
+    where:
+      - ishbiliyya
+      - al-mariyya
+      - shatiba
+      - shantarin
+      - qurtuba
+      - jayyan
+      - sharish
+      - al-ushbuna
+    threads:
+      - towns
+    from:
+      - save
+      - seen
+    cite: saves of 1 February and 21 December 1451; Trent's screenshot of 26 November 1451
+    detail:
+      paper: Seville, Almería, Xàtiva, Santarém (5 levels)
+      jewellers: Córdoba, Jaén, Jerez
+      library: Lisbon
+      quarry: Palermo
+      also: >-
+        a cannon foundry at Jaén, lumber mills at Córdoba and Messina, a weapons guild at Murcia, cloth at
+        Badajoz
+      roads: paved roads under way in November 1451 (Trent's screenshot)
+      treasury: 2,812 on 1 February 1451, 26 on 21 December 1451
+      stability: 23.6 in February, 16.1 in December; the save doesn't say why
+tellings:
+  - id: 0855-11-27-of-the-governor-of-balarm-and-the-holy-cities
+    'on': '1451-12-21'
+    title: Of the Governor of Balarm and the Holy Cities
+    verse: '22:46'
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+      - abd-al-jalil-al-qubbasi
+    where:
+      - ishbiliyya
+      - shatiba
+      - al-mariyya
+      - shantarin
+      - al-ushbuna
+      - qurtuba
+      - jayyan
+      - sharish
+    covers:
+      - 1450-11-29-the-holy-cities-held-by-lam
+      - 1451-07-24-battle-al-ukhaydir
+      - 1451-11-26-the-new-world
+      - 1451-12-16-birth-of-ahmad-ibn-muhammad
+      - 1451-12-21-sicily-under-the-crown
+      - 1451-12-21-the-paper-of-shatiba
+    text: >
+      The dīwān had agreed in the year of the conquest that Sicily should have a ṭāʾifa of its own when the
+      Mamlūks' war was over. The Mamlūks' war was not over. Over the year 855 a second idea came to the court,
+      and it grew stronger with every month the first was put off.
+
+
+      [Ismāʿīl](person:ismail-ibn-muhammad-ibn-ismail) argued for the ṭāʾifa. That was how the realm had
+      always held what it took: under a house of the blood, bound by marriage, with its own court and its own
+      levies. It was how the north had been held for forty years.
+      [Aḥmad](person:ahmad-ibn-muhammad-ibn-ismail) argued for the crown. A ṭāʾifa king would build for
+      himself, he said. A governor would build for the realm, and Sicily needed roads, mills and harbours more
+      than it needed another court. The [Emperor](person:muhammad-ibn-ismail-ibn-saad) settled it, as he
+      settled most things, by what pleased him. He did not want to give away the palace of the Norman kings,
+      the cathedral, the harbour of Balarm and the wheat of the island to a cousin. Sicily would have a
+      governor, answerable to the dīwān, and the ṭāʾifa would wait. Everyone at court understood "for now" in
+      his own way.
+
+
+      Through all that year the news from the east was bad. The Mamlūks' war on the Banū Lām had gone wrong in
+      the Ḥijāz. By the end of 854 the men of the Banū Lām held Makka and Madīna, with Jeddah and Yanbuʿ,
+      their ports on the Red Sea. The Holy Cities were in the hands of the Mamlūks' enemies. The Mamlūks had
+      gone to war to make themselves masters of the Red Sea coast, and they had lost the cities whose
+      protection was their first title to rule. In Jumādā al-Ākhira 855 their army caught a column of the Banū
+      Lām at al-Ukhaydir and destroyed it, but the cities were not retaken. The Emperor had stood in the Ḥaram
+      himself eighteen years before. He took the news harder than anyone at court. Al-Andalus was at war
+      beside Cairo and had not sent one ship or one man. Ismāʿīl said that Cairo had not asked. The Emperor
+      said that Cairo should not have had to.
+
+
+      Meanwhile the treasury, which had been full at the start of the year, was spent almost to nothing. Most
+      of it went where Aḥmad's gold always went. There were new paper mills at [Ishbīliya](place:ishbiliyya),
+      [al-Mariyya](place:al-mariyya) and [Shantarīn](place:shantarin), and above all at
+      [Shāṭiba](place:shatiba). Shāṭiba had made the best paper in the west since before the Christians took
+      it, and it was making it again under the crown. There were jewellers at [Qurṭuba](place:qurtuba),
+      [Jayyān](place:jayyan) and [Sharīsh](place:sharish), a library at [al-Ushbūna](place:al-ushbuna), a
+      quarry at Balarm for the governor's builders, and paved roads where there had been tracks. On 22 Dhū
+      al-Qaʿda a grandson was born to Aḥmad, the son of his son Muḥammad. They named him Aḥmad.
+
+
+      No new land was found that year. The explorer [ʿAbd al-Jalīl](person:abd-al-jalil-al-qubbasi) was
+      somewhere beyond the Cape, and the ships of the Kongo trade came and went. But by the turn of the year
+      the voyages had changed the way the realm thought. In the madrasas of Ishbīliya students argued over the
+      maps the pilots brought home. The merchants priced the wares of lands no Andalusī had seen, and the
+      jurists asked what the law owed to peoples it had never heard of. By 2 Dhū al-Qaʿda 855 the court was
+      speaking of the world as larger than the books had said. It did not yet know how much larger.
+
+
+      *Have they not travelled through the land and have hearts by which to reason and ears by which to hear?
+      For indeed, it is not eyes that are blinded, but blinded are the hearts which are within the breasts.*
+    behind: >-
+      **What the saves show.** This note draws on an autosave of 1 February 1451 and a save of 21 December
+      1451.
+
+      - *Sicily:* its 22 towns are still held directly in December, and there is no new subject. Trent's
+      account explains why: the crown, "for now". The court's debate and who argued what are invented, but
+      they follow the princes' arcs.
+
+      - *The Holy Cities:* the Banū Lām's occupation of Mecca, Medina, Jeddah, Yanbuʿ, Khaybar and the rest
+      shows in every save from 29 November 1450 to 21 December 1451. The August 1449 save doesn't have it. The
+      Mamlūks' victory at al-Ukhaydir (24 July 1451) is the war's only battle that year. Trent had said the
+      Mamlūks were failing on the Red Sea coast; the saves show how badly.
+
+      - *The treasury:* 2,812 in February, 26 in December. The building difference covers most of it: paper
+      mills (Seville, Almería, Xàtiva, Santarém), jewellers, a library at Lisbon, a quarry at Palermo, a
+      cannon foundry at Jaén, lumber mills and cloth. Trent's screenshot of 26 November shows paved roads
+      under construction. Two armouries and a grand palace are gone from the count, and the save doesn't say
+      why.
+
+      - *Stability:* it fell from 23.6 to 16.1, and the saves don't explain it either.
+
+      - *The New World:* the institution and its date come from Trent's screenshot, and "no discovery, just
+      the entrenchment of exploration ideals" is his account.
+
+      - *The house:* the prince Aḥmad's grandson Aḥmad was born on 16 December 1451.
+
+
+      **Invented colour.**
+
+      - *Sicily:* the "second idea" growing as the first was put off; Ismāʿīl's and Aḥmad's arguments; the
+      Emperor deciding by what pleased him; "for now" read differently by everyone.
+
+      - *The Holy Cities:* the Emperor taking the news hardest, and the exchange with Ismāʿīl about Cairo.
+
+      - *Xàtiva:* its paper is real history.
+
+      - *The New World:* the students, the merchants and the jurists.
+questions:
+  - Stability fell from 23.6 to 16.1 during 1451. Why?
+  - >-
+    Two armouries and a grand palace are gone from the building count since November 1450. What happened to
+    them?
+  - 'Sicily: a governor ''for now''. What would make the court raise a ṭāʾifa after all?'

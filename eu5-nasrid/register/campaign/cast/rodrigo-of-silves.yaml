@@ -1,0 +1,19 @@
+name: Rodrigo of Silves
+house: of Silves
+born: '1332-10-22'
+died: '1375-01-24'
+roles:
+  - ruler of the Ṭāʾifa of al-Gharb
+stations:
+  - role: admiral
+    from: '1366-05-13'
+    to: '1375-01-24'
+    source: save
+    approx: false
+note: >-
+  A Portuguese lord, now a Muslim, set over the Ṭāʾifa of al-Gharb when Granada released the Portuguese south
+  as its vassal on 13 April 1366 (save of 6 November 1366). In September 1368 Castile guaranteed his ṭāʾifa's
+  independence, and Granada backed the loyalists against it. Died 1375-01-24 (save of 24 October 1414).
+game:
+  id: 16791515
+  name: Roderick

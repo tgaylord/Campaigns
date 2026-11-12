@@ -1,0 +1,232 @@
+date: '1366-10-02'
+title: After the peace
+source:
+  save: SP_GRA_1366_10_02 (compressed)
+  game: 1.4.5
+summary: >-
+  Six months after the Peace of Independence. The Ṭāʾifa of al-Gharb has been released, and the treasury of
+  1,131 has gone into the Great Madrasa of Ishbīliya, the silver of Qusanṭīna and the farms of Úbeda. The game
+  still lists Granada as Castile's tributary, which Trent removed with the console soon after; the chronicle
+  treats Granada as free. Shares of power are estimated from the 1 June 1349 reading.
+realm:
+  towns: 49
+  souls: 658652
+  treasury: 175
+  income: 76.6
+  expenses: 66.7
+  stability: 32.8
+  prestige: 40
+  regiments: 5
+  ships: 5
+  manpower: 2320
+court:
+  ruler: saad-ibn-yusuf
+  heir: ismail-ibn-saad
+  capital: gharnata
+  council:
+    - who: dua-marinid
+      seat: Promoting Andalusī culture
+    - who: maryam-bint-ismail
+      seat: Integrating the new lands
+standing:
+  allies:
+    - Mamluks
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+    - Taifa of the Algarve (taifa)
+  estates:
+    - name: Crown
+      power: 34.67
+    - name: Nobility
+      power: 25.57
+      mood: 41
+    - name: ʿUlamāʾ
+      power: 6.1
+      mood: 50
+    - name: Burghers
+      power: 9.83
+      mood: 50
+    - name: Commoners
+      power: 4.29
+      mood: 59
+    - name: Dhimmī
+      power: 19.54
+      mood: 51
+peoples:
+  cultures:
+    Andalusi: 356666
+    Castilian: 255825
+    Sephardi: 38234
+    Mustaarabi: 3765
+    Sardinian: 1689
+    Catalan: 610
+  faiths:
+    Sunni: 308109
+    Catholic: 307939
+    Jewish: 41856
+    Bori_Religion: 539
+    Nyama: 208
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+    - ALV
+  allies:
+    - MAM
+beats:
+  - id: 1366-04-10-maryam-diwan
+    'on': '1366-04-10'
+    kind: office
+    what: >-
+      The sultan's aunt Maryam bint Ismāʿīl, back at court after three marriages abroad, takes Khālid ibn
+      Yaḥyā's seat in the dīwān and is set to integrating the new lands
+    who:
+      - maryam-bint-ismail
+      - khalid-ibn-yahya
+      - saad-ibn-yusuf
+    from:
+      - save
+    cite: save of 6 November 1366
+    detail:
+      replaces: khalid-ibn-yahya
+      action: integrate_province
+  - id: 1366-04-13-taifa-al-gharb
+    'on': '1366-04-13'
+    kind: land
+    what: >-
+      Eight days after the peace, the Portuguese south is released as the Ṭāʾifa of al-Gharb: thirteen towns
+      from Silves to Mértola, with its seat at Faro, under Rodrigo of the house of Silves, a Portuguese lord
+      who has embraced Islam. It is Granada's third ṭāʾifa, beside Balansiyya and Mursiyya
+    who:
+      - rodrigo-of-silves
+      - saad-ibn-yusuf
+    from:
+      - save
+    cite: save of 6 November 1366; Trent's plan of September 1364
+    detail:
+      tag: ALV
+      type: taifa
+      capital: Faro
+      locations:
+        - Silves
+        - Faro
+        - Tavira
+        - Lagos
+        - Beja
+        - Mértola
+        - Serpa
+        - Moura
+        - Ourique
+        - Odemira
+        - Alvalade
+        - Alvito
+        - Sines
+      ruler: rodrigo-of-silves
+  - id: 1366-05-12-castile-courts
+    'on': '1366-05-12'
+    kind: world
+    what: Five weeks after the peace, Castile begins courting Granada's favour
+    from:
+      - save
+    cite: save of 2 October 1366
+    detail:
+      from: CAS
+      relation: opinion_improvement
+  - id: 1366-qurtuba-muslim
+    'on': '1366-10-02'
+    kind: note
+    what: >-
+      In Qurṭuba of the caliphs Muslims outnumber Christians again, 18,200 to 18,000, the first of the
+      reconquered towns where Islam is the larger faith. By May 1368 they are an outright majority
+    where:
+      - qurtuba
+    from:
+      - save
+    cite: save of 2 October 1366 (between the saves of 5 April and 2 October 1366)
+    detail:
+      location: cordoba
+      religion: sunni
+      sunniShare:
+        '1349-06-04': 27
+        '1363-05-20': 37
+        '1366-04-05': 46
+        '1368-05-13': 52
+        '1370-09-13': 59
+      counts:
+        '1366-10-02':
+          sunni: 18239
+          catholic: 17968
+          jewish: 3428
+tellings:
+  - id: 0768-01-26-the-slow-return
+    'on': '1366-10-02'
+    title: Of the Slow Return, and the Day Qurṭuba Turned
+    verse: 2:256
+    who:
+      - saad-ibn-yusuf
+    where:
+      - qurtuba
+      - al-qusayr
+      - balma
+      - istijja
+      - qusantina
+      - ishbiliyya
+      - jayyan
+      - gharnata
+    covers:
+      - 1363-05-baena-andalusi
+      - 1364-05-19-jamaa-summoned
+      - 1364-09-11-andalusi-majority
+      - 1366-04-qurtuba-andalusi
+      - 1366-qurtuba-muslim
+      - 1366-11-06-state
+    text: >
+      The return of al-Andalus did not happen in the mosques first. It happened in the kitchens and the
+      markets, in the songs mothers sang over cradles and the words men used to haggle over wool. The tongue
+      came back before the faith.
+
+
+      The first town to turn was Baena, in the hills south of [Qurṭuba](place:qurtuba), some time in the years
+      of the Marīnid war. The dīwān's surveyors found that its people now counted themselves Andalusīs and not
+      Castilians. They spoke the Arabic of the south, kept its feasts and wore its clothes, and they still
+      went to Mass on Sundays. Over the next three years the surveyors found the same thing again and again.
+      [al-Quṣayr](place:al-qusayr) turned in 764, [Balma](place:balma) in 765, and [Istijja](place:istijja),
+      [Qusanṭīna](place:qusantina) and Fuenteovejuna in 766. Towns that had been Castilian for a century
+      became Andalusī within a single generation, and stayed Christian. The jurists did not know what to make
+      of them. Some said they were halfway to Islam. Others said they were Mozarabs again, the Christians of
+      al-Andalus who had lived under the caliphs and spoken their tongue, as their ancestors had been before
+      Qashtāla came. Both may be true.
+
+
+      Faith came more slowly, and it needed help. In Shaʿbān 765 the Jamāʿa restored the jizya and began a new
+      campaign of preaching. The jizya is a hard teacher but a patient one. A Christian of
+      [Ishbīliya](place:ishbiliyya) who paid it every year was reminded every year what conversion would save
+      him. When the campaign began, thirteen in every hundred souls of Ishbīliya were Muslims. A year later it
+      was twenty-six. In [Jayyān](place:jayyan), where scarcely one soul in fifty had prayed toward Makka when
+      the war began, three in ten did so by the time it ended.
+
+
+      Then Qurṭuba turned. In the spring of 767, in the weeks of the peace, the surveyors counted more
+      Andalusīs in the city than Castilians, for the first time since Ferdinand of Qashtāla took it a hundred
+      and thirty years before. In 749 there had been thirty-four thousand Castilians to six thousand
+      Andalusīs. Now there were nineteen thousand five hundred Andalusīs to sixteen thousand three hundred
+      Castilians. Six months later, on the twenty-sixth of Muḥarram 768, the count of the faithful was
+      finished. Eighteen thousand two hundred Muslims, eighteen thousand Christians and three thousand four
+      hundred Jews lived in the city of the caliphs. By the narrowest of margins, Qurṭuba was a Muslim city
+      again.
+
+
+      Our lord [Saʿd](person:saad-ibn-yusuf) was told in [Gharnāṭa](place:gharnata). He is said to have asked
+      only one question: whether the great mosque was still a cathedral. It was. He said that he could wait.
+      The mosque had waited a hundred and thirty years, and the people of Qurṭuba would give it back
+      themselves when they were ready. He was less patient with the treasury. It had been filled at the peace,
+      and the young sultan, who read the dīwān's ledgers line by line himself, would not let it sit idle. That
+      same year it opened new silver mines at Qusanṭīna, laid out new farms at Úbeda at the head of the
+      valley, and paid for another Great Madrasa, this one at Ishbīliya. A mosque could wait for its people,
+      he told the treasurers, but silver left in the ground earned nothing for anyone.
+
+
+      *There is no compulsion in religion. The right way has become distinct from the wrong.*

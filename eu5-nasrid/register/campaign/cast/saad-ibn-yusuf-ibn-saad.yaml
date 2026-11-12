@@ -1,0 +1,30 @@
+name: Saʿd ibn Yūsuf ibn Saʿd
+arabic: سعد بن يوسف
+house: Naṣrid
+tier: key
+born: '1394-02-18'
+father: yusuf-ibn-saad
+mother: caterina-de-borja
+roles:
+  - member of the dīwān
+traits:
+  - deceitful
+stations:
+  - role: dīwān
+    from: '1416-04-03'
+    to: '1429-07-02'
+    source: save
+    approx: false
+note: >-
+  Son of Prince Yūsuf and Caterina de Borja, heir of Aragon; born 18 February 1394 and raised at the Aragonese
+  court at Benabarre with the costly in-depth education. At four he outshines both of the crown prince's sons,
+  and the Emperor wants him raised at his own court (Trent's account; save of 3 September 1398). In September
+  1398 he was brought to Ishbīliya with his father, to be raised at the Emperor's court (Trent's account). At
+  nine, in July 1403, he stood at 26/24/37, still gifted, now on a military education at the Emperor's court
+  (save of 18 July 1403). He grew up with no adult trait until his twenties; by August 1420 the game marks him
+  deceitful. On 15 December 1417 he took his great-aunt Umm al-Fatḥ's seat in the dīwān, integrating the new
+  lands (save of 11 August 1420). He left the dīwān at the accession of Muḥammad V in June 1429 (save of 2
+  July 1429).
+game:
+  id: 16836662
+  name: Saad

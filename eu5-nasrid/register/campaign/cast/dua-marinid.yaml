@@ -1,0 +1,93 @@
+name: Duʿāʾ
+arabic: دعاء
+sex: f
+house: Marīnid
+tier: central
+born: '1338-08-10'
+died: '1388-12-28'
+drives:
+  - from: '1354-08-12'
+    text: >-
+      A Marīnid princess married into a court at odds with Fās: she brings the Maghrib with her, its manners,
+      its scholars and its learning, and makes it fashionable in Gharnāṭa.
+    by: trent
+    source: Trent's direction, November 2026
+  - from: '1355-03-10'
+    text: >-
+      Rises the moment the amir's brother Faraj leaves: she takes a seat in the dīwān under the harem law, the
+      most capable and soon the most influential of the wives.
+    by: trent
+    source: Trent's direction; her record
+  - from: '1358-08-01'
+    text: Her Maghribī learning, the court's 'foreign wisdom', wins the scholars and angers the nobles.
+    by: chronicle
+    source: the game's Foreign Wisdom
+  - from: '1363-08-01'
+    text: >-
+      Outlasts three reigns: widowed, she marries the regent, and widowed again, the young Sultan Saʿd. The
+      Maghrib's voice at court survives every change of master.
+    by: trent
+    source: Trent's direction; her record
+  - from: '1366-04-05'
+    text: >-
+      Fights Aiman for the court once Granada is free: the Maghrib against Egypt, her son Ismāʿīl against
+      Aiman's daughters. The quarrel is the court's weather for twenty years.
+    by: trent
+    source: Trent's direction, November 2026
+  - from: '1368-10-24'
+    text: >-
+      Her loyalty is whispered about while Fās makes war on Granada, and she answers by being more Andalusī
+      than the Andalusīs.
+    by: trent
+    source: Trent's direction (invented colour)
+  - from: '1374-06-01'
+    text: >-
+      Runs the court while Saʿd campaigns, summons the Jamāʿa to give the ʿulamāʾ power over the dhimmī, and
+      wants the costly tutors for her son alone.
+    by: trent
+    source: Trent's account, 1374
+  - from: '1385-08-23'
+    text: With her son regent, the quarrel with Aiman comes into the open.
+    by: trent
+    source: Trent's account
+ties:
+  - with: aiman-mamluk
+    kind: rival
+    from: '1364-01-18'
+    to: '1388-12-28'
+    text: The Maghrib against Egypt, for the sultan's court and his heir.
+    by: trent
+  - with: sayyida-of-fezzan
+    kind: rival
+    from: '1354-08-12'
+    to: '1380-11-19'
+    text: The matriarch never forgave the Marīnid wife, nor her marriage to her son.
+    by: trent
+  - with: abu-inan-faris
+    kind: kin
+    from: '1354-08-12'
+    text: A daughter of his house, married into the court he twice made war on.
+    by: chronicle
+stations:
+  - role: dīwān
+    from: '1355-02-20'
+    to: '1388-12-28'
+    source: save
+    approx: false
+note: >-
+  A princess of the Marīnid house of Fās, betrothed to Granada on 18 January 1348 and married to Yūsuf I about
+  12 August 1354: the one Marīnid bond that outlived Morocco's annulment of its treaties with Granada in 1351.
+  The most capable of the amir's wives, she took Yaḥyā Raḥḥū's seat in the dīwān about 10 March 1355, after
+  his death, under the Powerful Harem law that let women sit in the cabinet. By August 1358 she was widely
+  praised for bringing fresh ideas and practices to the court (the game's 'Foreign Wisdom'), to the nobility's
+  displeasure. Mother of Yūsuf's son Muḥammad (1356–1358). Widowed on 1 August 1363, she married the regent
+  Naṣr al-Istijjī within days. Widowed again a few days after 18 January 1364, when Naṣr died of 'sickness',
+  she then married the young Sultan Saʿd, her late husband Yūsuf's son. That made her his second wife, beside
+  Aiman the Mamlūk. Mother of Saʿd's son and heir Ismāʿīl (born 8 March 1366). While Saʿd campaigned in Aragon
+  in 1374 she ran the court in Gharnāṭa, and with his support by letter summoned the Jamāʿa to give the
+  ʿulamāʾ more power to regulate and tax the dhimmīs (Trent's account). She died on 28 December 1388, aged
+  fifty, after a short illness as the court tells it (the game's death notice gives suicide; the chronicle
+  keeps the court's version, by Trent's ruling).
+game:
+  id: 24887
+  name: Dua

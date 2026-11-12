@@ -1,0 +1,563 @@
+date: '1442-06-11'
+title: The Princes Mend the Damage
+source:
+  save: SP_ADU_1442_06_11 (compressed)
+  game: 1.4.7
+summary: >-
+  Ten days after the Jamāʿa of 846 seated the burghers as equals. The princes have rallied the commoners and
+  affirmed the ʿulamāʾ's rights, and the realm's peace holds at 14, but only the burghers are content (74);
+  the umarāʾ (32), commoners (34), ʿulamāʾ (44) and dhimmī (45) are angry. The nobles' Land Rights are gone
+  and the burghers hold Shipwright Contracts and Urban Development Grants. The realm's temper is now firmly
+  seaward (+26). Treasury 1,767. Estate power estimated from the reading of 16 November 1428.
+realm:
+  towns: 222
+  souls: 3327740
+  treasury: 1767
+  income: 412.9
+  expenses: 373.3
+  stability: 14.2
+  prestige: 86
+  regiments: 9
+  ships: 58
+  manpower: 25352
+court:
+  ruler: muhammad-ibn-ismail-ibn-saad
+  heir: ismail-ibn-muhammad-ibn-ismail
+  capital: ishbiliyya
+  council:
+    - who: ismail-ibn-muhammad-ibn-ismail
+      seat: Assimilating the new lands
+    - who: ahmad-ibn-muhammad-ibn-ismail
+      seat: Changing the societal values
+    - who: umm-al-fath-bint-muhammad
+      seat: Strengthening the government
+    - who: shams-bint-muhammad
+      seat: Promoting Andalusī culture
+    - who: jadila-bint-saad-ibn-faraj
+      seat: Developing the provinces
+standing:
+  allies:
+    - Mamluks
+    - Morocco
+    - Tunis
+  subjects:
+    - Aragon (taifa)
+    - Taifa of Cuenca (taifa)
+    - Kingdom of Portugal (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+    - Taifa of Galicia (taifa)
+    - Cape Verde (colonial nation)
+  estates:
+    - name: Crown
+      power: 28.01
+    - name: Nobility
+      power: 19.23
+      mood: 32
+    - name: ʿUlamāʾ
+      power: 13.51
+      mood: 44
+    - name: Burghers
+      power: 24.15
+      mood: 74
+    - name: Commoners
+      power: 3.21
+      mood: 34
+    - name: Dhimmī
+      power: 11.9
+      mood: 45
+peoples:
+  cultures:
+    Andalusi: 997168
+    Catalan: 748060
+    Castilian: 610839
+    Portuguese: 523132
+    Sephardi: 210696
+    Leonese: 172486
+  faiths:
+    Sunni: 1988537
+    Catholic: 1119093
+    Jewish: 192367
+    Guanche_religion: 26498
+    Orthodox: 541
+map:
+  ours:
+    - GRA
+  subjects:
+    - ARA
+    - ABA60
+    - POR
+    - ABA42
+    - ABA49
+    - ABA55
+    - GLC
+    - AAA52
+  allies:
+    - MAM
+    - MOR
+    - TUN
+beats:
+  - id: 1438-04-08-land-rights-unravelled
+    'on': '1438-04-08'
+    kind: realm
+    what: >-
+      The price of Majrīṭ's charter: the umarāʾ concede the slow unravelling of their Land Rights in the
+      integrated territories. In return they are granted a stipend for their arts and culture, in truth a fund
+      to keep them from open mutiny as the two princes carry on their grandfather's reform
+    who:
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+    threads:
+      - estates
+      - two-princes
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshot of the Land Rights privilege, 8 April 1438
+    detail:
+      privilege: >-
+        Land Rights (nobles): +5% satisfaction and +75% power for the nobility; peasant enfranchisement −10%;
+        nobles allowed to expand R.G.O.s; monthly progress +0.05 to land, +0.10 to aristocracy, +0.10 to
+        serfdom; allows the noble villa (the game's tooltip)
+      concession: its slow unravelling in the integrated territories
+      compensation: a stipend for the nobility's arts and culture
+  - id: 1438-04-08-the-charter-of-majrit
+    'on': '1438-04-08'
+    kind: realm
+    what: >-
+      Majrīṭ, grown rapidly beside Ṭulayṭula into one of the most important towns of the interior, is granted
+      a city charter. The Emperor opposed it, asking why he should favour a town so far from the sea, but the
+      two princes pressed for it
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+    where:
+      - majrit
+      - tulaytula
+    threads:
+      - towns
+      - two-princes
+    from:
+      - told
+    cite: Trent's account, 8 April 1438
+    detail:
+      emperor: '''Why should I grant such favour so far from the sea? Won''t the city merely wither and die?'' (Trent)'
+      granted: at the two princes' urging, with a major concession from the northern nobility
+  - id: 1439-07-15-the-emperor-a-scholar
+    'on': '1439-07-15'
+    kind: note
+    what: >-
+      The Emperor Muḥammad, at fifty-three, gains the Scholar trait: his ambition to learn about the world and
+      the principles that govern men and nature lets the realm take up new knowledge far faster
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+    where:
+      - ishbiliyya
+    from:
+      - seen
+      - told
+    cite: Trent's screenshot and account, 15 July 1439
+    detail:
+      trait: 'Scholar: monthly literacy +0.02%, monthly progress to innovative +0.05 (the game)'
+      state: >-
+        stability −6 (24.2 in January 1438), 3.283 million people; Majrīṭ's city rights still being granted, a
+        wharf building at Tarragona; the crown assimilating Toledo, encouraging the navy, encouraging
+        migration to and developing Seville, and appeasing the estates
+  - id: 1440-06-the-catalan-privileges
+    'on': '1440-06-01'
+    kind: note
+    what: >-
+      The Andalusī merchants of the crown complain about the privileges still held by the Catalan merchants of
+      the Ṭāʾifa of Aragon. Their complaints are ignored
+    who:
+      - rodrigo-de-borja
+    from:
+      - told
+    cite: Trent's account
+    detail:
+      when: early June 1440
+  - id: 1440-06-the-genoese-embargo
+    'on': '1440-06-01'
+    kind: world
+    what: >-
+      The trade wars escalate in the western Mediterranean: leaned on by the Angevins, Genoa embargoes
+      Andalusī merchants in Italy. Al-Andalus answers by closing its ports to Angevin merchants
+    threads:
+      - europe
+    from:
+      - told
+    cite: Trent's account
+    detail:
+      embargoBy: Genoa, under Angevin pressure, against al-Andalus
+      reply: al-Andalus embargoes the Angevin Empire's merchants in its ports
+      when: early June 1440
+  - id: 1440-10-01-the-palace-city-of-qurtuba
+    'on': '1440-10-01'
+    kind: note
+    what: >-
+      The Emperor orders Madīnat al-Zahrāʾ, the palace-city of the caliphs on the western edge of Qurṭuba,
+      lost in the fitna of the eleventh century, to be rebuilt, to set himself above every ruler and pretender
+      who might challenge him
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+    where:
+      - qurtuba
+    from:
+      - seen
+      - told
+    cite: Trent's screenshots of 1 October 1440 and account
+    detail:
+      event: The Palace-City of Qrṭuba
+      options:
+        - They will see our prestige! (starts a Madīna az-Zahrāʾ building in Qurṭuba; costs 117 gold)
+        - No need to restore old ruins.
+      chosen: They will see our prestige! The Madīnat al-Zahrāʾ was reconstructed (Trent)
+      building: >-
+        Madīna az-Zahrāʾ, a cultural building: 'Known as The Radiant City, it will allow us to further expand
+        our prestige within Iberia.' In the capital or historical capital: political influence +0.05 and
+        prestige +0.10 a month; in the town, crown power +100% and prosperity +0.10% a month. Takes lumber,
+        tools, glass, fine cloth and gold; 365 days; 200 gold at market
+      state: treasury 1,220, stability −1, 3.311 million people
+  - id: 1442-06-01-national-assemblies
+    'on': '1442-06-01'
+    kind: realm
+    what: >-
+      The Emperor calls the Jamāʿa to Ishbīliya and, without consulting the princes, announces reform: the
+      realm's assembly becomes a national assembly, and the burghers sit in it as co-equal members
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+    where:
+      - ishbiliyya
+    threads:
+      - estates
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshot, 1 June 1442
+    detail:
+      advance: National Assemblies, researched 1 June 1442
+      reform: >-
+        National Assemblies (government reform): change policy cost −10%, parliament issue support needed −5%,
+        monthly progress to innovative +0.10 and to free subjects +0.10 (the game)
+      reason: >-
+        a state not in touch with its merchants is doomed to stagnation; the Emperor has studied the empires
+        of old (Trent)
+      princes: not consulted
+      court: incensed
+      save: >-
+        the save of 11 June 1442 has the National Assemblies advance; the reform does not yet appear among the
+        implemented reforms
+  - id: 1442-06-01-privileges-for-the-burghers
+    'on': '1442-06-01'
+    kind: realm
+    what: >-
+      The burghers are granted privileges on top of their seat: Shipwright Contracts, state contracts for the
+      shipyards, and Urban Development Grants for the towns
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+    threads:
+      - estates
+    from:
+      - save
+      - seen
+    cite: Trent's screenshots, 1 June 1442; save of 11 June 1442
+    detail:
+      shipwrightContracts: >-
+        burghers +5% satisfaction, +33% power; navy maintenance efficiency +10%, ship-building speed +20%,
+        monthly progress to naval +0.05; on granting, burghers +15% (to 59%), umarāʾ −2.6%, ʿulamāʾ −2.2%,
+        dhimmī −2.0%; 18 political influence
+      urbanDevelopmentGrants: >-
+        burghers +5% satisfaction, +50% power; monthly development +0.001, progress to innovative +0.10; on
+        granting, burghers +15%, umarāʾ −3.9%, ʿulamāʾ −3.4%, dhimmī −3.0%; 18 political influence
+      note: the satisfaction figures are the tooltips' previews, each taken before the other grant
+      confirmed: >-
+        the save of 11 June 1442 shows Shipwright Contracts and Urban Development Grants among the privileges,
+        and the nobles' Land Rights gone
+  - id: 1442-06-11-the-princes-mend-the-damage
+    'on': '1442-06-11'
+    kind: realm
+    what: >-
+      The two princes act quickly after their father's reforms: they rally the commoners so the hinterlands do
+      not rise, and affirm the rights of the ʿulamāʾ upon the heir's accession to keep them in line. By the
+      end, the crown's legitimacy has recovered a little and the realm's peace is acceptable, but every estate
+      except the burghers is deeply angry
+    who:
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+    threads:
+      - estates
+      - two-princes
+    from:
+      - save
+      - told
+    cite: Trent's account; save of 11 June 1442
+    detail:
+      satisfaction:
+        burghers: 74
+        ʿulamāʾ: 44
+        dhimmī: 45
+        commoners: 34
+        umarāʾ: 32
+      legitimacy: 65
+      stability: 14.2
+      landVsNaval: 26.3
+      treasury: 1,767 (income 413, expenses 373), no debt
+tellings:
+  - id: 0841-10-12-of-the-charter-of-majrit-and-the-land-rights-of-the-umara
+    'on': '1438-04-08'
+    title: Of the Charter of Majrīṭ, and the Land Rights of the Umarāʾ
+    verse: '28:57'
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+      - ismail-ibn-saad
+    where:
+      - majrit
+      - tulaytula
+      - ishbiliyya
+    covers:
+      - 1438-04-08-the-charter-of-majrit
+      - 1438-04-08-land-rights-unravelled
+      - 1428-05-25-primacy-revoked
+    text: >
+      [Majrīṭ](place:majrit) had been a frontier fort when the amīr Muḥammad I built it on the Manzanares, to
+      guard the road to [Ṭulayṭula](place:tulaytula) against the Christians of the north. Nearly six hundred
+      years later it had become something else. The road it guarded now ran through the middle of the empire,
+      and the town had grown along it faster than any other in the interior, a market of wool, grain and
+      leather where the drovers of the meseta met the merchants of Ṭulayṭula. In the spring of 841 its
+      burghers came to [Ishbīliya](place:ishbiliyya) to ask the Emperor for a city charter.
+
+
+      The Emperor [Muḥammad](person:muhammad-ibn-ismail-ibn-saad) did not want to give it. "Why should I grant
+      such a favour so far from the sea?" he asked the dīwān. "Won't the city merely wither and die?" Every
+      dirham the crown spent, in his view, should float.
+
+
+      The two princes saw a different chance. [Ismāʿīl](person:ismail-ibn-muhammad-ibn-ismail) and
+      [Aḥmad](person:ahmad-ibn-muhammad-ibn-ismail) had taken up the work their grandfather
+      [Ismāʿīl](person:ismail-ibn-saad) had begun and never finished: the breaking of the umarāʾ. The great
+      houses had lost their mercenaries, their lordships and their equality with the crown. They had kept
+      their land. In the integrated territories of the north they still held their estates by right, could
+      open new mines and fields as they pleased, raise villas, and bind the peasants a little tighter to the
+      soil every year. The northern umarāʾ wanted Majrīṭ's charter to fail as little as the burghers did,
+      because their wool and grain went through its market, and the princes made them pay for it. In Shawwāl
+      841 the charter was granted, and the umarāʾ of the north agreed in return that their Land Rights in the
+      integrated territories would be unravelled, slowly, one estate at a time.
+
+
+      Nobody at court pretended that this was a fair bargain. To soften it, the crown granted the great houses
+      a yearly stipend for the patronage of the arts, so that every noble household might keep its poets,
+      musicians and copyists. The clerks of the treasury, who paid it, called it by its real name, the fund
+      that kept the umarāʾ from open mutiny. The Emperor signed both orders without much interest. The princes
+      had spent the winter working out exactly what each one was worth.
+
+
+      *Have We not established for them a safe sanctuary, to which are brought the fruits of all things as
+      provision from Us?*
+  - id: 0843-02-02-of-the-emperor-who-became-a-scholar
+    'on': '1439-07-15'
+    title: Of the Emperor Who Became a Scholar
+    verse: '39:9'
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - ismail-ibn-saad
+      - saad-ibn-yusuf
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+    where:
+      - ishbiliyya
+      - majrit
+    covers:
+      - 1439-07-15-the-emperor-a-scholar
+      - 1438-04-08-land-rights-unravelled
+      - 1437-03-01-the-new-world-institution
+    text: >
+      The Emperor [Muḥammad](person:muhammad-ibn-ismail-ibn-saad) had been told all his life that he was not
+      the man his forebears were. His grandfather [Saʿd](person:saad-ibn-yusuf) had restored al-Andalus and
+      his father [Ismāʿīl](person:ismail-ibn-saad) had built it a madrasa in every town, and the court had
+      judged him unfit at twelve and said so again when he took the throne. He had never argued. He had gone
+      to sea instead, and then to Makka, and only two years before, when the old men hailed the age of the
+      caliphs come again, he had accepted the compliment for his forebears and gone back to his ships. Then,
+      in the year 842, past fifty, he did something no one at court had expected of him: he began to read.
+
+
+      He read the way he did everything, slowly and without shame. He had the pilots of the Ocean voyages
+      brought to him to explain their charts, and kept them until he understood the charts himself. He sat in
+      on the lectures of the madrasa of Ishbīliya, at the back, and asked the questions the students were too
+      proud to ask. He had the astronomers explain the instruments by which a ship found its latitude, and the
+      physicians explain the plagues that came in with the ships, and the engineers of the arsenals explain
+      why one hull was faster than another. Within the year, by Ṣafar 843, the scholars of the court had
+      stopped humouring him and begun to argue with him, and they agreed among themselves that he understood a
+      new idea, once he had it, better and faster than most of them. Under him the realm took up new learning
+      more readily than it ever had, and the madrasas taught more children to read.
+
+
+      He did not pretend to be his father. He said that his father had known things and he had to find them
+      out, and that the finding out was the part he enjoyed. The court noticed that he had begun to say "the
+      old Emperors" with less weight in his voice than before.
+
+
+      It was a hard year at home. The umarāʾ had not taken the loss of their land rights quietly, the stipend
+      for their poets notwithstanding, and the peace of the realm had fallen further in a year than in any
+      year since the risings of 807. The princes [Ismāʿīl](person:ismail-ibn-muhammad-ibn-ismail) and
+      [Aḥmad](person:ahmad-ibn-muhammad-ibn-ismail) spent it appeasing the estates while the charter of
+      [Majrīṭ](place:majrit) worked its way through the chancery. The Emperor left that to them and went back
+      to his books.
+
+
+      *Say: Are those who know equal to those who do not know? Only they will remember who are people of
+      understanding.*
+  - id: 0844-01-09-of-the-trade-war-with-genoa-and-the-angevins
+    'on': '1440-06-10'
+    title: Of the Trade War with Genoa and the Angevins
+    verse: 83:1-3
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - rodrigo-de-borja
+      - edward-v-of-england
+    where:
+      - ishbiliyya
+      - barshaluna
+    covers:
+      - 1440-06-the-catalan-privileges
+      - 1440-06-the-genoese-embargo
+      - 1432-05-01-trading-posts
+      - 1432-07-27-peace-with-the-pope
+    text: >
+      The crusade had been fought with ships and swords. The war that followed it was fought with ledgers, and
+      it had been coming for years. The merchants of Ishbīliya had outgrown the western sea. Their offices ran
+      from Niani to Cairo, the Emperor's arsenals had given them a fleet, and the markets of Ishbīliya,
+      [Barshalūna](place:barshaluna) and al-Ushbūna were each the first of their region. The merchants of
+      Genoa, who had been the masters of that sea before them, had watched every one of those offices open.
+
+
+      The first quarrel was at home. In the last days of Dhū al-Ḥijja 843 the Andalusī merchants of the crown
+      brought a complaint to the dīwān. In the Ṭāʾifa of Arghūn, under King [Rodrigo de
+      Borja](person:rodrigo-de-borja), the Catalan merchant houses still kept the privileges they had held
+      since before the Restoration: their own consuls, their own courts, their own rates at the customs. Now
+      that Barshalūna itself belonged to the crown, the merchants asked why the Catalans of Arghūn should
+      trade on better terms than the Emperor's own subjects. The dīwān heard them and did nothing. The king of
+      Arghūn was the Empress's brother, and the Emperor had a larger quarrel on his hands.
+
+
+      In the same weeks Genoa closed Italy to the merchants of al-Andalus. The Genoese did not do it alone.
+      The court of King [Edward](person:edward-v-of-england) in London, which ruled France as well, had leaned
+      on them all spring, and the embargo they proclaimed reached every port and market where Genoa's word
+      counted. The answer from Ishbīliya came within days, in the first week of Muḥarram 844. No merchant of
+      the Angevin crowns, English, French or Gascon, would be received in any port of the Emperor. The admiral
+      prince Yūsuf was given the order to enforce it at sea.
+
+
+      The old merchants of the capital said that a trade war hurt both sides and helped neither, and that the
+      Venetians would be the only ones to profit. The young ones said that the Franks would need Andalusī
+      sugar, gold and paper long before al-Andalus needed English wool. The Emperor, who had read a good deal
+      about trade by then, agreed with the young ones. He also ordered the treasurers to tell him every month
+      what it was costing.
+
+
+      *Woe to those who give less than due, who, when they take a measure from people, take in full. But if
+      they give by measure or by weight to them, they cause loss.*
+  - id: 0844-05-04-of-the-radiant-city-restored
+    'on': '1440-10-01'
+    title: Of the Radiant City Restored
+    verse: 26:128-129
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+    where:
+      - qurtuba
+      - ishbiliyya
+    covers:
+      - 1440-10-01-the-palace-city-of-qurtuba
+      - 1439-07-15-the-emperor-a-scholar
+      - 1437-01-01-cultural-hegemon
+    text: >
+      Three miles west of [Qurṭuba](place:qurtuba), on the slope where the Sierra Morena comes down to the
+      plain, the caliph ʿAbd al-Raḥmān III had built a city for himself and named it Madīnat al-Zahrāʾ, the
+      Radiant City. It had palaces of marble and onyx, a hall whose roof was said to be made of gold and
+      silver tiles, gardens watered from the mountains, a mosque, a mint and barracks for the caliph's guard.
+      Ambassadors from Constantinople and the German emperor had been received there and told to wait in halls
+      designed to make them feel small. It had stood for less than eighty years. In the fitna of the eleventh
+      century, when the caliphate tore itself apart, the Berber soldiers sacked it, and for four hundred years
+      its stones had been carried off to build other men's houses. By the time the house of Naṣr took Qurṭuba
+      back, it was a field of broken columns that the shepherds of the Sierra used as a sheepfold.
+
+
+      The Emperor [Muḥammad](person:muhammad-ibn-ismail-ibn-saad) went to see it in Jumādā al-Ūlā 844. He had
+      been reading the histories of the caliphate, as he now read everything, and he walked the ruins for a
+      whole day with the old books in the hands of a secretary, matching the descriptions to the stones. When
+      he came back to [Ishbīliya](place:ishbiliyya) he told the dīwān that he would rebuild it. Some in the
+      dīwān said that a ruin was a ruin and that the money would be better spent on ships. He answered that
+      every king and pretender in Christendom who doubted the empire's right to the peninsula should be made
+      to wait in its halls, as their ancestors had waited. He paid for the first year's work out of his own
+      treasury.
+
+
+      The masons, glassmakers and goldsmiths came from every city of the empire, and the merchants of
+      Ishbīliya sent fine cloth for the hangings at prices that the clerks thought suspiciously low. A year
+      later the halls of the Radiant City were standing again on the slope above Qurṭuba, built over the old
+      foundations and as close to the old descriptions as the Emperor and his secretaries could make them. The
+      court began to receive ambassadors there. The crown's hold on the country around it tightened, and the
+      town below grew prosperous on the custom of the court. Across the peninsula, the court noticed, people
+      had begun to speak of the Emperor as the caliphs' heir, which was what the court had intended.
+
+
+      *Do you construct on every elevation a sign, amusing yourselves, and take for yourselves palaces that
+      you might abide eternally?*
+  - id: 0846-01-21-of-the-jamaa-of-846-and-the-burghers
+    'on': '1442-06-01'
+    title: Of the Jamāʿa of 846, and the Burghers
+    verse: '42:38'
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+      - ismail-ibn-saad
+    where:
+      - ishbiliyya
+    covers:
+      - 1442-06-01-national-assemblies
+      - 1442-06-01-privileges-for-the-burghers
+      - 1428-05-25-jamaa-against-primacy
+      - 1439-07-15-the-emperor-a-scholar
+      - 1440-06-the-genoese-embargo
+    text: >
+      The Emperor [Muḥammad](person:muhammad-ibn-ismail-ibn-saad) called the Jamāʿa to
+      [Ishbīliya](place:ishbiliyya) in Muḥarram 846, and for once he did not tell his sons what he meant to
+      say to it. The princes [Ismāʿīl](person:ismail-ibn-muhammad-ibn-ismail) and
+      [Aḥmad](person:ahmad-ibn-muhammad-ibn-ismail) had steered the realm for thirteen years. They had argued
+      him out of Qashtāla, bargained Majrīṭ's charter out of the umarāʾ, and spent a year of their lives
+      appeasing the estates. They learned what he intended at the same moment as the assembly did. He was the
+      Emperor, he told them afterwards, and he had read more about the empires of old than either of them.
+
+
+      What he had read was this. The empires that lasted were the ones that listened to the men who made their
+      money, and the ones that fell were the ones whose princes and lords had stopped listening. Rome had been
+      ruined by its senators, and Baghdad by its soldiers. He did not intend al-Andalus to be ruined by its
+      umarāʾ. The realm already had the first market of the Middle Sea, a fleet of its own building and
+      trading offices from Niani to Cairo, and it was fighting a trade war with Genoa and the Angevins. The
+      men who would win or lose that war were not in the Jamāʿa as anything more than petitioners.
+
+
+      So he changed the Jamāʿa. From that session it was to be an assembly of the whole realm, and the
+      burghers of the cities were to sit in it as the equals of the umarāʾ and the ʿulamāʾ, with their own
+      voice in every matter put to it. Then, before the shock had passed, he gave them two privileges as well.
+      The first was the Shipwright Contracts, which handed the building of the empire's ships to merchant
+      houses under state contract, freed from the old regulations of the arsenals. The second was the Urban
+      Development Grants, which put crown money into the walls, streets and markets of the towns. "The
+      future," the Emperor said, quoting no one in particular, "will dawn within city walls."
+
+
+      The court was, as the clerks put it, incensed. The umarāʾ had lost their equality to his father's Jamāʿa
+      of 831. Now they had lost it again, this time to men who sold cloth. The ʿulamāʾ, who had voted with the
+      crown in 831, found that they had voted themselves into a chamber full of merchants. Even the dhimmī,
+      who had always sided with the crown against the lords, complained that the merchants were getting more
+      than their share. Only the burghers were pleased, and they were very pleased. As for the princes, they
+      said nothing in public. In private the dīwān heard them say that their father had finally done something
+      they had not planned for him, and that they were not yet sure whether to be proud of him.
+
+
+      *And those who have responded to their Lord and established prayer, and whose affair is consultation
+      among themselves, and from what We have provided them, they spend.*

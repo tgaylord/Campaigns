@@ -1,0 +1,31 @@
+name: Fernando of Castile
+house: Castilian royal house
+born: '1392-03-10'
+father: pedro-of-castile
+roles:
+  - king of Castile (1422–1430)
+  - the last king of Castile
+traits:
+  - glory_seeker
+  - malevolent
+stations:
+  - role: general
+    from: '1432-02-06'
+    to: '1432-06-13'
+    source: save
+    approx: false
+  - role: admiral
+    from: '1434-04-27'
+    to: '1443-08-30'
+    source: save
+    approx: false
+note: >-
+  Son of King Pedro, the last king of Castile. He succeeded his father on 14 October 1422 to four towns on the
+  Cantabrian coast, ruling from Santander, under England's protection (save of 5 November 1423). He went to
+  war in France beside the English in 1427 and made his own peace with the French in 1428. When al-Andalus
+  declared war on Navarre on 17 August 1430 he alone answered Navarre's call, and at the Peace of Ṣafar on 3
+  November 1430 Castile was annexed and ceased to exist. He and his son Juan are afterwards of the court of
+  the Ṭāʾifa of Burghush (saves of 17 August, 3 and 5 November 1430).
+game:
+  id: 16809663
+  name: Fernando

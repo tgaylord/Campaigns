@@ -1,0 +1,28 @@
+name: Muḥammad of the Ottomans
+arabic: محمد
+house: Ottoman
+born: '1348-09-15'
+died: '1412-10-01'
+roles:
+  - Ottoman sultan
+traits:
+  - craven
+  - offensive_planner
+stations:
+  - role: general
+    from: '1403-04-17'
+    to: '1403-06-01'
+    source: save
+    approx: false
+  - role: admiral
+    from: '1412-04-02'
+    to: '1412-04-18'
+    source: save
+    approx: false
+note: >-
+  Ottoman sultan from 15 September 1364, at sixteen, ruling from Constantinople. In 1370 he was at war with
+  the Anatolian beyliks, with 27,000 men under arms and 73 ships; his brother Murād is his heir. Died
+  1412-10-01 (save of 24 October 1414).
+game:
+  id: 36567
+  name: Muhammad

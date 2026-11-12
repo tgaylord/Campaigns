@@ -1,0 +1,30 @@
+{
+  "name": "andalus-register",
+  "version": "1.0.0",
+  "scripts": {
+    "data": "node tools/build-data.mjs",
+    "dev": "node tools/build-data.mjs && vite",
+    "build": "node tools/build-data.mjs && tsc --noEmit && vite build && node tools/make-artifact.mjs",
+    "import": "node tools/import-chronicle.mjs"
+  },
+  "dependencies": {
+    "js-yaml": "^5.5.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@fontsource-variable/reem-kufi": "^5.3.0",
+    "@fontsource/alegreya": "^5.3.0",
+    "@fontsource/alegreya-sans": "^5.3.0",
+    "@types/js-yaml": "^4.0.9",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^6.3.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vite-plugin-singlefile": "^2.3.4"
+  },
+  "private": true,
+  "type": "module"
+}

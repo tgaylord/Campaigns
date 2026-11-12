@@ -1,0 +1,464 @@
+date: '1355-06-16'
+title: The governor at Qurṭuba
+source:
+  save: SP_GRA_1355_06_16 (compressed)
+  game: 1.4.5
+summary: >-
+  The new lands held and calming: the governor seated at Qurṭuba, Duʿāʾ in the dīwān, the Powerful Harem, the
+  jizya remitted, and a second Castilian rising stopped before it began. Sovereignty stands at 81. Shares of
+  power are estimated from the 1 June 1349 reading; the estates panel of 19 March 1355 (crown 32.4, nobility
+  26.2, ʿulamāʾ 7.0, burghers 10.7, commoners 4.1) agrees with them to within a point.
+realm:
+  towns: 43
+  souls: 606503
+  treasury: 237
+  income: 54
+  expenses: 45.1
+  stability: 28
+  prestige: 44
+  regiments: 5
+  ships: 5
+  manpower: 2608
+court:
+  ruler: yusuf-i
+  heir: saad-ibn-yusuf
+  capital: gharnata
+  council:
+    - who: dua-marinid
+      seat: Integrating the new lands
+    - who: ismail-ibn-ismail
+      seat: Integrating the new lands
+standing:
+  allies:
+    - Mamluks
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+  estates:
+    - name: Crown
+      power: 31.43
+    - name: Nobility
+      power: 26.5
+      mood: 42
+    - name: ʿUlamāʾ
+      power: 6.46
+      mood: 50
+    - name: Burghers
+      power: 10.68
+      mood: 50
+    - name: Commoners
+      power: 4.75
+      mood: 48
+    - name: Dhimmī
+      power: 20.19
+      mood: 75
+peoples:
+  cultures:
+    Andalusi: 286575
+    Castilian: 285052
+    Sephardi: 25523
+    Mustaarabi: 3889
+    Sardinian: 2069
+    Catalan: 979
+  faiths:
+    Catholic: 289266
+    Sunni: 288082
+    Jewish: 28276
+    Bori_Religion: 659
+    Nyama: 220
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+  allies:
+    - MAM
+beats:
+  - id: 1353-07-21-control-after-revolt
+    'on': '1353-07-21'
+    kind: note
+    what: >-
+      Two weeks after the revolt, the crown's grip on the new lands: Qurṭuba holds at 53% control and its
+      neighbours at 20–50%, but around Ishbīliya and down to the river mouth control has fallen to nothing
+      (0–2%). The old realm about Gharnāṭa and Mālaqa stands at 70–84%. The court weighs a local governor at
+      Qurṭuba, from where control would run both up and down the river
+    where:
+      - qurtuba
+      - ishbiliyya
+      - gharnata
+      - malaqa
+    from:
+      - seen
+      - told
+    cite: Trent's screenshot of the control map mode, 21 July 1353, and his account
+    detail:
+      qurtuba: 53
+      lowerGuadalquivir: 0-2
+      oldRealm: 70-84
+      plan: local governor at Qurṭuba (needs a road connected to the capital)
+  - id: 1353-08-02-royal-marriage-karasids
+    'on': '1353-08-02'
+    kind: world
+    what: Maryam, the amir's younger sister, is married into the Karasids of Anatolia
+    who:
+      - maryam-bint-ismail
+    from:
+      - save
+      - told
+    cite: save of 16 June 1355 (treaty record); who married is Trent's account
+    detail:
+      with: KRD
+  - id: 1354-03-01-royal-marriage-central-sahara
+    'on': '1354-03-01'
+    kind: world
+    what: >-
+      Faraj ibn Ismāʿīl, the amir's elder brother, takes his first wife, Shamʿa, of a ruling house of the
+      central Sahara
+    who:
+      - faraj-ibn-ismail
+      - shama-sahara
+    from:
+      - save
+      - told
+    cite: save of 16 June 1355 (treaty record); who married is Trent's account
+    detail:
+      with: AAA43
+  - id: 1354-03-16-betrothal-aydinids
+    'on': '1354-03-16'
+    kind: world
+    what: Ismāʿīl ibn Ismāʿīl, the amir's brother, is betrothed to a daughter of the Aydınids of Anatolia
+    who:
+      - ismail-ibn-ismail
+    from:
+      - save
+      - told
+    cite: save of 16 June 1355 (treaty record); who married is Trent's account
+    detail:
+      with: AYD
+  - id: 1354-07-governor-begun
+    'on': '1354-07-08'
+    kind: realm
+    what: Work begins on a local governor's seat at Qurṭuba, the old capital, whose road to Gharnāṭa still stands
+    who:
+      - yusuf-i
+    where:
+      - qurtuba
+    threads:
+      - towns
+    from:
+      - told
+    cite: Trent's account (about 250 days before the seating on 15 March 1355; the day is approximate)
+    detail:
+      building: local_governor
+      location: cordoba
+      completes: '1355-03-15'
+  - id: 1354-08-12-marinid-marriage
+    'on': '1354-08-12'
+    kind: marriage
+    what: >-
+      The amir marries his Marīnid bride, Duʿāʾ, fulfilling the betrothal agreed with the house of Fās in
+      January 1348
+    who:
+      - yusuf-i
+      - dua-marinid
+    threads:
+      - house
+    from:
+      - told
+    cite: Trent's account (about 12 August 1354)
+    detail:
+      with: MOR
+      betrothed: '1348-01-18'
+  - id: 1354-11-19-hafsid-marriage
+    'on': '1354-11-19'
+    kind: marriage
+    what: >-
+      The amir marries his Ḥafṣid bride, Tizemt, fulfilling the betrothal agreed with Tūnis in July 1345: his
+      third wife, and his second bride from the Maghrib in three months
+    who:
+      - yusuf-i
+      - tizemt-hafsid
+    threads:
+      - house
+    from:
+      - told
+    cite: Trent's account
+    detail:
+      with: TUN
+      betrothed: '1345-07-23'
+  - id: 1355-ghana-marriage
+    'on': '1355-01-01'
+    kind: marriage
+    what: >-
+      The Ghana betrothal is fulfilled, though not as the court intended: Faraj ibn Ismāʿīl, the amir's elder
+      brother and lately his regent, marries Fatiu, daughter of the old ruler of Ghana, and goes south across
+      the desert to live in her land
+    who:
+      - faraj-ibn-ismail
+      - fatiu-ghana
+    threads:
+      - house
+    from:
+      - told
+    cite: Trent's account (around the new year of 1355; the exact day isn't given)
+    detail:
+      with: GHA
+      betrothed: '1345-09-08'
+      residence: Ghana
+  - id: 1355-yahya-council
+    'on': '1355-01-15'
+    kind: office
+    what: >-
+      With Faraj gone south, his seat in the dīwān goes to Yaḥyā Raḥḥū, the Zenata general who led the
+      Volunteers of the Faith against Arghūn and the three crowns
+    who:
+      - yahya-rahhu
+      - faraj-ibn-ismail
+    from:
+      - told
+    cite: Trent's account (early 1355; the exact day isn't given)
+    detail:
+      replaces: faraj-ibn-ismail
+  - id: 1355-powerful-harem
+    'on': '1355-02-06'
+    kind: realm
+    what: >-
+      The Powerful Harem: as the harem grows with the amir's Marīnid and Ḥafṣid brides, it becomes an
+      institution of the crown. The amir is no puppet of it, but cunning concubines flood the court and draw
+      power inward around the throne, to the nobles' chagrin; women may now sit in the dīwān
+    who:
+      - yusuf-i
+      - sayyida-of-fezzan
+      - dua-marinid
+      - tizemt-hafsid
+    threads:
+      - estates
+    from:
+      - save
+      - seen
+      - told
+    cite: Trent's screenshot of the Harem Laws screen and his account; date from the save of 16 June 1355
+    detail:
+      law: harem_laws
+      from: null
+      to: powerful_harem
+      effects:
+        crownPower: +10%
+        nobleSatisfactionEquilibrium: -5%
+        femalesInCabinet: true
+        societalDrift: conciliatory +0.05/month
+      alternatives:
+        dispersed_harem: education of heirs +5%, court spending efficiency +20%, toward decentralization
+        extravagant_harem: prestige +0.10/month, new artists' skill +10%, court spending efficiency −10%
+        public_harem: legitimacy +0.10/month, counterespionage −20%, toward aristocracy
+        secluded_harem: counterespionage +20%, court spending efficiency +10%, toward traditionalist
+  - id: 1355-yahya-dies
+    'on': '1355-02-18'
+    kind: death
+    what: >-
+      Yaḥyā Raḥḥū dies of an illness, aged 54, only lately seated in the dīwān. The court calls it a
+      coincidence
+    who:
+      - yahya-rahhu
+    from:
+      - save
+      - told
+    cite: Trent's account; date from the save of 16 June 1355
+    detail:
+      cause: illness
+      age: 54
+  - id: 1355-dua-council
+    'on': '1355-03-10'
+    kind: office
+    what: >-
+      Duʿāʾ, the Marīnid wife and the most capable of the amir's wives, takes the empty seat in the dīwān: the
+      first woman of the harem to sit in the council
+    who:
+      - dua-marinid
+      - yahya-rahhu
+      - yusuf-i
+    from:
+      - told
+    cite: Trent's account (about 10 March 1355)
+    detail:
+      replaces: yahya-rahhu
+      law: powerful_harem
+  - id: 1355-03-15-governor-qurtuba
+    'on': '1355-03-15'
+    kind: realm
+    what: >-
+      The local governor at Qurṭuba is seated, after some 250 days of building begun in the summer of 1354:
+      from the old seat of the caliphs the crown's authority now runs up and down the great river through the
+      lands won in 1349
+    who:
+      - yusuf-i
+    where:
+      - qurtuba
+    threads:
+      - towns
+    from:
+      - told
+    cite: Trent's account (seated 15 March 1355, after about 250 days of construction)
+    detail:
+      building: local_governor
+      location: cordoba
+      modifier:
+        localProximitySource: 80
+      begun: about July 1354 (some 250 days before)
+  - id: 1355-03-19-calm
+    'on': '1355-03-19'
+    kind: note
+    what: >-
+      The remission of the jizya and the new governor at Qurṭuba stop a second Castilian rising in its tracks.
+      The realm is stable, control is growing, and the reconquered lands are being integrated
+    who:
+      - yusuf-i
+    where:
+      - qurtuba
+      - ishbiliyya
+      - jayyan
+    from:
+      - told
+    cite: Trent's account
+  - id: 1355-03-19-estates-reading
+    'on': '1355-03-19'
+    kind: realm
+    what: >-
+      The estates read off the panel: the crown at 32.4%, the nobility down to 26.2%, the ʿulamāʾ 7.0%, the
+      burghers 10.7%, the commoners 4.1% and the Dhimmī about 19.66%
+    who:
+      - yusuf-i
+    threads:
+      - estates
+    from:
+      - seen
+    cite: >-
+      Trent's screenshot of the estate power panel, 19 March 1355 (the Dhimmī share is the remainder; it was
+      off the screen)
+    detail:
+      power:
+        crown: 32.43
+        nobles: 26.17
+        clergy: 6.98
+        burghers: 10.7
+        peasants: 4.06
+        dhimmi: 19.66
+      dhimmiDerived: true
+  - id: 1355-03-28-birth-aisha
+    'on': '1355-03-28'
+    kind: birth
+    what: >-
+      A daughter, ʿĀʾisha, is born in Granada to Shamʿa, the wife Faraj left behind when he went south to
+      Ghana
+    who:
+      - aisha-bint-faraj
+      - faraj-ibn-ismail
+      - shama-sahara
+    threads:
+      - house
+    from:
+      - save
+      - told
+    cite: save of 16 June 1355; that Shamʿa stayed is Trent's account
+  - id: 1355-06-16-state
+    'on': '1355-06-16'
+    kind: land
+    what: >-
+      Sovereignty reaches 81, Morocco's influence 4.5; stability 28, income 54 against expenses 45, and the
+      treasury owes nothing
+    threads:
+      - strait
+    from:
+      - save
+    cite: save of 16 June 1355
+    detail:
+      sovereignty: 81.1
+      influence: 4.54
+      stability: 28
+tellings:
+  - id: 0756-03-04-the-governor-and-the-harem
+    'on': '1355-03-19'
+    title: Of the Governor of Qurṭuba, and the Brides from Across the Sea
+    verse: 16:72
+    who:
+      - yusuf-i
+      - dua-marinid
+      - tizemt-hafsid
+      - sayyida-of-fezzan
+      - faraj-ibn-ismail
+      - fatiu-ghana
+      - shama-sahara
+      - aisha-bint-faraj
+      - yahya-rahhu
+    where:
+      - qurtuba
+      - gharnata
+      - ishbiliyya
+      - fas
+    covers:
+      - 1354-03-01-royal-marriage-central-sahara
+      - 1354-07-governor-begun
+      - 1354-08-12-marinid-marriage
+      - 1354-11-19-hafsid-marriage
+      - 1355-ghana-marriage
+      - 1355-yahya-council
+      - 1355-powerful-harem
+      - 1355-yahya-dies
+      - 1355-dua-council
+      - 1355-03-15-governor-qurtuba
+      - 1355-03-19-calm
+      - 1355-03-28-birth-aisha
+    text: >
+      The so-called kingdom had been beaten, but our lord [Yūsuf](person:yusuf-i) knew that the valley of the
+      great river had not been won. A man who means to keep a valley must sit in it. So on the sixteenth of
+      Jumādā al-Ākhira in the year 755 the masons began work on a governor's seat in [Qurṭuba](place:qurtuba),
+      the old city of the Umayyads. The road from [Gharnāṭa](place:gharnata), built when Qurṭuba was the
+      capital, still ran through the hills. For two hundred and fifty days the court's men rebuilt halls that
+      had stood empty since the Castilians came. On the twenty-ninth of Ṣafar 756 the governor took his seat.
+      From that day the crown's word went up and down the river as easily as the barges, as far as
+      [Ishbīliya](place:ishbiliyya).
+
+
+      While the masons worked, the sultan kept two promises made long before. On the twenty-second of Rajab
+      755 he married [Duʿāʾ](person:dua-marinid) of the house of [Fās](place:fas). She had been promised to
+      him in the year of the war with the three crowns, and she was the one thread to Fās that had not been
+      cut when Qashtāla made the Marīnids tear up their treaties. On the third of Dhū al-Qaʿda he married
+      [Tizemt](person:tizemt-hafsid) of Tūnis. In three months two daughters of the Maghrib had come to the
+      Alhambra to stand beside [Sayyida](person:sayyida-of-fezzan), the first wife. The harem grew, and with
+      it a new kind of power. The *ḥarīm* had always been a household. Now it became a court within the court,
+      full of women who had learned statecraft in the palaces of Fās and Tūnis, and their clients and their
+      whispers. The nobles complained that power was flowing inward, to the throne and to the women around it,
+      and no one at court troubled to deny it.
+
+
+      Not every marriage went as the court intended. [Faraj](person:faraj-ibn-ismail), the sultan's elder
+      brother and lately regent, married [Fatiu](person:fatiu-ghana), a princess of Ghāna, and went south
+      across the desert to live at her father's court. The court said it was the harem's work: a brother who
+      might have been a rival was now a guest at the edge of the world. Those who knew him said he went
+      gladly. Faraj had always looked south. He kept Saharan guides at his table, he had married into the
+      desert once already, and he talked of the salt roads and the gold of the Niger the way other princes
+      talked of horses. He left behind in Gharnāṭa his first wife, [Shamʿa](person:shama-sahara), of a ruling
+      house of the Sahara, whom he had married the spring before, and she was with child. Three months after
+      he had gone she bore him a daughter, [ʿĀʾisha](person:aisha-bint-faraj). His seat in the dīwān went to
+      [Yaḥyā Raḥḥū](person:yahya-rahhu), the Zanāta general who had led the Volunteers of the Faith against
+      Arghūn. Yaḥyā sat there barely a month. On the fourth of Ṣafar he died of an illness, at fifty-four. The
+      court called it a coincidence, and said so a little too often.
+
+
+      Twenty days later the empty seat went to Duʿāʾ. She was the most capable of the sultan's wives, and the
+      law of the harem now allowed a woman to sit in the council. The great houses watched a Marīnid princess
+      take her place among the viziers and said nothing in public. [Sayyida](person:sayyida-of-fezzan), the
+      first wife and the mother of the heir, said one thing, to her women, and it went round the palace by
+      evening: that the law of the harem had been made for the women of the house, not for the daughters of
+      its enemies.
+
+
+      By Rabīʿ al-Awwal the fruit of all this was plain. The remitted tax and the new governor together had
+      stopped a second Castilian rising before it began. The valley paid its dues, the crown's hold on it grew
+      month by month, and for the first time since the Peace of Qurṭuba the sultan could look at the map
+      without counting the towns he might lose.
+
+
+      *And Allāh has made for you from yourselves mates and has made for you from your mates sons and
+      grandchildren.*

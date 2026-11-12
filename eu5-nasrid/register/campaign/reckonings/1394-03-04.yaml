@@ -1,0 +1,1587 @@
+date: '1394-03-04'
+title: The War of the League
+source:
+  save: SP_ADU_1394_03_04 (compressed)
+  game: 1.4.6
+summary: >-
+  On 4 March 1394 al-Andalus declares war on Castile under the Reconquest of Iberia, the third war of the
+  Istirdād, with Morocco, the Mamlūks and the four ṭāʾifas; Portugal, Rome and Andorra stand with Castile's
+  new king Pedro. Since 1379: the capital at Ishbīliya, the Toledan and Teruel risings crushed, the Hajj made
+  at the second attempt, and the bureaucracy grown to three offices. The realm has 118 towns and 1,438,000
+  people; the game ranks it ninth. Prestige stands at 95 and the treasury at 568. Shares of power are
+  estimated from the 1 June 1349 reading.
+realm:
+  towns: 118
+  souls: 1438319
+  treasury: 568
+  income: 145.1
+  expenses: 136.1
+  stability: 38.5
+  prestige: 95
+  regiments: 9
+  ships: 16
+  manpower: 2015
+court:
+  ruler: saad-ibn-yusuf
+  heir: ismail-ibn-saad
+  capital: ishbiliyya
+  council:
+    - who: umm-al-fath-bint-saad
+      seat: Integrating the new lands
+    - who: ismail-ibn-yusuf
+      seat: Integrating the new lands
+    - who: maryam-bint-yusuf
+      seat: Integrating the new lands
+    - who: ismail-ibn-saad
+      seat: Promoting Andalusī culture
+standing:
+  wars:
+    - war-of-the-league
+  allies:
+    - Mamluks
+    - Morocco
+  subjects:
+    - Valencia (taifa)
+    - Taifa of the Algarve (taifa)
+    - Catalonia (taifa)
+    - Aragon (taifa)
+  estates:
+    - name: Crown
+      power: 33.62
+    - name: Nobility
+      power: 27.66
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 9.56
+      mood: 50
+    - name: Burghers
+      power: 9.75
+      mood: 50
+    - name: Commoners
+      power: 4
+      mood: 50
+    - name: Dhimmī
+      power: 15.41
+      mood: 36
+peoples:
+  cultures:
+    Castilian: 694847
+    Andalusi: 549200
+    Sephardi: 117412
+    Leonese: 66443
+    Mustaarabi: 3788
+    Sardinian: 2053
+  faiths:
+    Catholic: 720206
+    Sunni: 601341
+    Jewish: 115995
+    Bori_Religion: 527
+    Nyama: 249
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - ALV
+    - CAT
+    - ARA
+  allies:
+    - MAM
+    - MOR
+beats:
+  - id: 1380-gharnata-historical-capital
+    'on': '1380-05-03'
+    kind: note
+    what: >-
+      Gharnāṭa keeps the honours of a capital. The old seat of the house of Naṣr is recognised as the realm's
+      historical capital, and the court of al-Ḥamrāʾ keeps its full weight: the fortress its strength, the
+      crown its power, the realm its culture and legitimacy
+    who:
+      - saad-ibn-yusuf
+    where:
+      - gharnata
+      - ishbiliyya
+    from:
+      - save
+    cite: save of 3 May 1380; Trent's console fix
+    detail:
+      historicalCapital: Granada (location 2894)
+      alhambra:
+        level: 3
+        effects:
+          fortDefense: +10% at Granada
+          crownPower: +5%
+          culturalInfluence: +5%
+          monthlyLegitimacy: '+0.025'
+        condition: counts_as_capital (capital or historical capital)
+      ooc: >-
+        The game recorded no historical capital when the capital moved to Seville in November 1379 (likely
+        because of the Al-Andalus formation), which left al-Ḥamrāʾ inactive. Trent restored it from the
+        console on 3 May 1380 with set_capital to Granada and straight back to Seville; the save of 3 May 1380
+        shows historical_capitals={2894}.
+  - id: 1380-11-19-death-of-sayyida
+    'on': '1380-11-19'
+    kind: death
+    what: >-
+      Sayyida of Fezzan, the Emperor's mother, dies at fifty-two. She had come to Gharnāṭa as a child bride of
+      nine, sat in the dīwān through her son's reign, and lived to see him Emperor in Ishbīliya
+    who:
+      - sayyida-of-fezzan
+      - saad-ibn-yusuf
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 8 December 1382
+    detail:
+      age: 52
+      born: '1328-10-27'
+  - id: 1381-10-07-death-of-abu-inan
+    'on': '1381-10-07'
+    kind: death
+    what: >-
+      Abū ʿInān Fāris, sultan of Fās for thirty-six years and twice the Emirate's enemy, dies. His son Abū
+      al-Faḍl succeeds him, and the Emperor's sister Jadīla becomes queen of the Marīnids
+    who:
+      - abu-inan-faris
+      - abu-al-fadl-marinid
+      - jadila-bint-yusuf
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 1 October 1387
+    detail:
+      died: '1381-10-07'
+      successor: Abū al-Faḍl (born 1359)
+      consort: Jadīla bint Yūsuf
+  - id: 1382-12-01-ismail-to-the-diwan
+    'on': '1382-12-01'
+    kind: office
+    what: >-
+      The Emperor's brother Ismāʿīl, twenty-eight, takes the seat in the dīwān left empty by their mother
+      Sayyida
+    who:
+      - ismail-ibn-yusuf
+      - saad-ibn-yusuf
+    from:
+      - save
+    cite: save of 8 December 1382
+    detail:
+      stats:
+        - 33
+        - 71
+        - 62
+  - id: 1382-12-01-revolt-of-tulaytula
+    'on': '1382-12-01'
+    kind: war
+    what: >-
+      Another so-called kingdom rises against the Emperor's rule, and this time Ṭulayṭula itself leads it. The
+      city drives out its governor and damages the madrasa built in its heart, and the revolt sweeps 58 towns
+      into a Kingdom of Toledo: the Middle March and La Mancha, the hills of Extremadura, and even Mursiyya,
+      Jayyān, Ubbadha and Bayyāsa in the old lands. It raises 5,900 men against the Emperor's 3,700 regulars
+    who:
+      - saad-ibn-yusuf
+    where:
+      - tulaytula
+    threads:
+      - revolt-of-tulaytula
+    from:
+      - save
+      - told
+    cite: save of 8 December 1382; Trent's account
+    detail:
+      cb: cb_independence_war
+      rebel: TOL (Kingdom of Toledo)
+      towns: 58
+      locations:
+        - albacete
+        - alcaraz
+        - alcazar_de_san_juan
+        - alhambra_location
+        - almaden
+        - almodovar_del_campo
+        - almonaster_la_real
+        - aroche
+        - ayamonte
+        - azuaga
+        - baeza
+        - belalcazar
+        - calatrava
+        - caravaca
+        - cartagena
+        - chinchilla
+        - chinchon
+        - cieza
+        - ciudad_real
+        - consuegra
+        - escurial
+        - guadalupe
+        - hellin
+        - herrera
+        - huelva
+        - illescas
+        - jaen
+        - jumilla
+        - lezuza
+        - llerena
+        - lorca
+        - los_yebenes
+        - malagon
+        - manzanares
+        - medellin
+        - monesterio
+        - montiel
+        - mula
+        - murcia
+        - navalucillos
+        - ocana
+        - puebla_de_alcocer
+        - puebla_de_guzman
+        - puebla_de_montalban
+        - puente_arzobispo
+        - puertollano
+        - segura_de_la_sierra
+        - talavera_de_la_reina
+        - toledo
+        - tomelloso
+        - ubeda
+        - ucles
+        - villanueva_de_la_serena
+        - villapalacios
+        - villarobledo
+        - villena
+        - zafra
+        - zalamea
+      population: about 520,000 (1379 figures)
+      people:
+        Castilian: 472900
+        Andalusi: 24200
+        Sephardi: 20600
+      faith:
+        Catholic: 387600
+        Sunni: 112100
+        Jewish: 20400
+      forces:
+        Toledo: 5,871 (451 regulars, 5,420 levies), 1 ship
+        al-Andalus: 3,719 regulars, 16 ships
+        ṭāʾifas: no men raised
+      crown:
+        towns:
+          - 118
+          - 60
+        stability: 15
+        treasury: 610
+        manpower: 690
+      madrasa: damaged in the rising (Trent's account)
+  - id: 1383-02-22-battle-munt-shaqir
+    'on': '1383-02-22'
+    kind: battle
+    what: >-
+      The one great battle of the revolt. The Toledan host, 4,900 strong, comes against the Emperor's 10,600
+      at Munt Šāqir in the hills of Extremadura, and is broken
+    who:
+      - saad-ibn-yusuf
+    threads:
+      - revolt-of-tulaytula
+    from:
+      - seen
+      - told
+    cite: Trent's account and battle screen, 22 February 1383
+    detail:
+      result: victory
+      naval: false
+      ours:
+        al-Andalus: 10588
+      oursTotal: 10588
+      oursLost: 106
+      theirs:
+        Toledo: 4911
+      theirsTotal: 4911
+      theirsLost: 545
+      location: Montánchez (Munt Šāqir)
+      side: Toledo attacking
+      commanders:
+        al-Andalus: the Emperor Saʿd (100/68/100)
+        Toledo: a rebel captain (36/51/43)
+      note: >-
+        losses are those on Trent's screen while the battle was under way on 22 February; the outcome is from
+        Trent's account
+      warScoreBefore: -22
+  - id: 1383-04-30-battle-jaen
+    'on': '1383-04-30'
+    kind: battle
+    what: >-
+      At Jayyān the Emperor runs down the last Toledan army: all 1,807 are lost, for 44 of ours. The revolt
+      ends the same day
+    who:
+      - saad-ibn-yusuf
+    where:
+      - jayyan
+    threads:
+      - revolt-of-tulaytula
+    from:
+      - seen
+      - told
+    cite: Trent's account and battle screen, 30 April 1383
+    detail:
+      result: victory
+      naval: false
+      ours:
+        al-Andalus: 10438
+      oursTotal: 10438
+      oursLost: 44
+      theirs:
+        Toledo: 1807
+      theirsTotal: 1807
+      theirsLost: 1807
+      location: Jaén
+      side: al-Andalus attacking
+      units:
+        ours:
+          infantry:
+            - 5285
+            - 34
+          heavyInfantry:
+            - 2105
+            - 0
+          lightCavalry:
+            - 2400
+            - 12
+          heavyCavalry:
+            - 648
+            - 0
+        theirs:
+          infantry:
+            - 1807
+            - 1807
+  - id: 1383-04-30-hajj-planned
+    'on': '1383-04-30'
+    kind: note
+    what: >-
+      With the realm finally secure, the Emperor takes up the pilgrimage he put off in 774 until the truces
+      had run out and the wars were fought. The next Hajj falls in Dhū al-Ḥijja 785, at the start of February
+      1384
+    who:
+      - saad-ibn-yusuf
+    from:
+      - told
+    cite: Trent's account, April 1383
+    detail:
+      postponed: 1373-01-16 (see that entry)
+      nextHajj:
+        start: '1384-02-01'
+        arafa: '1384-02-02'
+        eid: '1384-02-03'
+        end: '1384-02-06'
+        hijri: 8–13 Dhū al-Ḥijja 785 (tabular calendar; may be a day or two off)
+      truces: Castile, Portugal and Rome to 6 April 1393; Sicily to 15 April 1386; no truce ends near the pilgrimage
+      outcome: put off again by rebellion; the pilgrimage of 785 did not take place (Trent, May 1385)
+  - id: 1383-04-30-revolt-crushed
+    'on': '1383-04-30'
+    kind: peace
+    what: >-
+      The so-called Kingdom of Toledo is no more. With its last army destroyed at Jayyān, the revolt ends,
+      five months after it began, and its towns return to the Emperor
+    who:
+      - saad-ibn-yusuf
+    where:
+      - tulaytula
+    threads:
+      - revolt-of-tulaytula
+    from:
+      - told
+    cite: Trent's account, 30 April 1383
+    detail:
+      warScore: 50
+      towns: 58
+      note: the lands of the revolt are back in the realm on Trent's map of 3 May 1385 (no save taken)
+  - id: 1383-06-17-ismail-admiral
+    'on': '1383-06-17'
+    kind: office
+    what: >-
+      The crown prince Ismāʿīl, seventeen, takes his first command, as admiral of the fleet. He holds it for
+      three and a half years, until he takes the Ḥijāba seat in the dīwān in January 1387
+    who:
+      - ismail-ibn-saad
+    from:
+      - save
+      - told
+    cite: saves of 8 December 1382 and 1 October 1387; Trent's account
+    detail:
+      role: admiral
+      from: '1383-06-17'
+      to: '1387-01-22'
+      note: >-
+        the date is the game's leader date for him in the save of 1 October 1387; he was not yet a commander
+        in the save of 8 December 1382
+  - id: 1385-05-03-county-of-teruel
+    'on': '1385-05-03'
+    kind: war
+    what: >-
+      Rebellion puts off the Hajj once more. Now it is the Ṭāʾifa of Aragon that splits: a so-called County of
+      Teruel rises against King Alfons and holds the inner country of the kingdom, from Teruel north toward
+      Saraqusṭa, leaving him the north. Another minor rising
+    who:
+      - alfons-de-borja
+    where:
+      - saraqusta
+    from:
+      - seen
+      - told
+    cite: Trent's account and map screenshot, 3 May 1385
+    detail:
+      rebel: County of Teruel
+      against: ARA (the Ṭāʾifa of Aragon)
+      held: most of inner Aragon on Trent's map; Aragon keeps the north
+      hajj: >-
+        postponed by rebellion; the next pilgrimage falls on 8–13 Dhū al-Ḥijja 787, about 10–15 January 1386
+        (tabular calendar)
+      realm: the lands of the Toledan revolt are all back within al-Andalus on the same map
+      save: 'none taken (Trent: a minor rising)'
+  - id: 1385-08-23-teruel-crushed
+    'on': '1385-08-23'
+    kind: peace
+    what: The County of Teruel is crushed and its lands returned to the Ṭāʾifa of Aragon
+    who:
+      - alfons-de-borja
+    from:
+      - told
+    cite: Trent's account, 23 August 1385
+    detail:
+      rebel: County of Teruel
+      outcome: crushed; the lands returned to Aragon
+  - id: 1385-08-23-the-emperor-departs-on-hajj
+    'on': '1385-08-23'
+    kind: note
+    what: >-
+      With the last rising put down, the Emperor sets out on the Hajj at last, twelve years after he first put
+      it off. His caravan is as exquisite as his father's was. The heir, Prince Ismāʿīl, rules as regent,
+      while his mother Duʿā and Aiman, the Emperor's principal wife, squabble in his absence
+    who:
+      - saad-ibn-yusuf
+      - ismail-ibn-saad
+      - dua-marinid
+      - aiman-mamluk
+    where:
+      - ishbiliyya
+    from:
+      - told
+    cite: Trent's account, 23 August 1385
+    detail:
+      departure: 1385-08-23 (16 Rajab 787)
+      hajj: 8–13 Dhū al-Ḥijja 787, about 10–15 January 1386 (tabular calendar)
+      firstPostponed: '1373-01-16'
+      regent: Ismāʿīl ibn Saʿd, the heir, aged nineteen
+      court: Duʿā (the regent's mother) and Aiman (mother of Prince Yūsuf) at odds, the factions of 1375 again
+      caravan: as exquisite as Yūsuf I's on his royal Hajj
+  - id: 1385-10-28-al-qahira
+    'on': '1385-10-28'
+    kind: note
+    what: >-
+      In al-Qāhira, the city of a thousand minarets, the Emperor pauses on the road to Makka. He sits for a
+      month with the scholars of al-Azhar and treats with his brother-in-law the Mamlūk sultan Būlād, Aiman's
+      brother
+    who:
+      - saad-ibn-yusuf
+      - bolot-mamluk
+      - aiman-mamluk
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshot of the event, 28 October 1385
+    detail:
+      event: 'The Royal Ḥajj: The City of a Thousand Minarets'
+      choice: Sit with the scholars of al-Azhar while we can
+      effects:
+        pause: 30 days
+        gold: -28.49
+        legitimacy: 5
+        prestige: 5
+        researchProgress: 2.5
+      otherChoices:
+        - resupply and go
+        - bear the maḥmal openly
+        - hire more guards
+        - adorn the caravan in banners and silk, then wait
+      date: 23 Ramaḍān 787
+  - id: 1386-01-06-the-season-passed
+    'on': '1386-01-06'
+    kind: note
+    what: >-
+      The season passes. The caravan comes too late: the year has turned and the standing at ʿArafāt has gone
+      by, the afternoon beneath the Mount of Mercy that is the Hajj itself. The month among the scholars of
+      al-Azhar cost the Emperor the pilgrimage. The caravan disperses and turns for home; the journey must be
+      made again from the beginning
+    who:
+      - saad-ibn-yusuf
+    from:
+      - seen
+    cite: Trent's screenshot of the event, 6 January 1386
+    detail:
+      event: 'The Royal Ḥajj: The Season Passed'
+      choice: We tarried too long. It must be undertaken again.
+      cause: the 30-day pause in al-Qāhira (28 October 1385)
+      calendar: >-
+        the game counts the season as over by 6 January 1386; the chronicle's tabular reckoning had put ʿArafa
+        near 11 January, so the game's Hajj calendar runs earlier than the arithmetic one
+  - id: 1386-jamaa-theological-seminaries
+    'on': '1386-01-06'
+    kind: realm
+    what: >-
+      Misfortune turns to fortune on the road home: the Emperor recruits many of the scholars of al-Azhar he
+      sat with to fill the halls of the capital. The Jamāʿa must be persuaded to fund them, and the ʿulamāʾ
+      back the measure: sponsor theological seminaries. The Jamāʿa passes it: the realm gains theological
+      seminaries for ten years
+    who:
+      - saad-ibn-yusuf
+    where:
+      - ishbiliyya
+    threads:
+      - estates
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshot, early 1386
+    detail:
+      assembly: Jamāʿa
+      issue: Sponsor Theological Seminaries (a clergy issue)
+      clergySupport: +11.19% to the assembly's support
+      whileDebated:
+        researchProgress: +5%
+      ifPasses:
+        modifier: Theological Seminaries, 10 years
+        researchProgress: +10%
+        literacy: +0.01 a month
+        innovative: +2 (now 10.1, rising 0.25 a month)
+      ifFails:
+        prestige: -10
+        stability: -7
+        legitimacy: -10
+      outlook: relatively doable (Trent)
+      date: on the way home from the Hajj, early 1386; the day awaits a save
+      outcome: >-
+        passed (Trent's account): Theological Seminaries for 10 years, +10% research, +0.01 literacy a month,
+        +2 Innovative
+  - id: 1387-01-22-ismail-to-the-diwan
+    'on': '1387-01-22'
+    kind: office
+    what: >-
+      The crown prince Ismāʿīl, twenty, who ruled as regent through his father's pilgrimage, is brought home
+      from the fleet, where he served as an admiral to carry the crown's authority over the seas, and takes
+      the new seat in the dīwān that the Ḥijāba creates, to help his father fill the capital with scholars
+    who:
+      - ismail-ibn-saad
+      - saad-ibn-yusuf
+    from:
+      - save
+      - told
+    cite: Trent's account; save of 1 October 1387
+    detail:
+      seat: the cabinet seat added by the Ḥijāba
+      age: 20
+      date: 22 January 1387 (save of 1 October 1387)
+      before: admiral, extending crown control over the seas (Trent)
+      task: the Emperor's scholar-building project, the seminaries and the scholars of al-Azhar (Trent)
+      action: changing the realm's societal values
+  - id: 1387-01-22-the-hijaba
+    'on': '1387-01-22'
+    kind: realm
+    what: >-
+      A second office of the bureaucracy, inspired by the Mamlūk court and the lore of the old caliphates the
+      Emperor met in al-Qāhira: the Ḥijāba, the chamberlainship of Umayyad Qurṭuba, whose ḥājib headed his own
+      council, received petitioners and embassies and drafted decrees in the caliph's name. While the crown
+      pays for it, it strengthens the crown and its legitimacy, and it gives the dīwān another seat
+    who:
+      - saad-ibn-yusuf
+    where:
+      - ishbiliyya
+    threads:
+      - umayyad-claim
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshot, 1386
+    detail:
+      office: Ḥijāba (bureaucracy)
+      whenFunded:
+        crownPower: +10%
+        monthlyLegitimacy: 0.05
+      always:
+        cabinetSeats: 1
+        headOfCabinetPromotionCost: −25%
+      whenUnfunded:
+        nobleSatisfactionDecay: +2%
+        monthlyInflation: +0.5%
+      likedBy:
+        crown: +1%
+      dislikedBy:
+        nobility: −1%
+      cost: up to 6.45 a month
+      selectCost: 43.47
+      precedent: >-
+        the ḥājib of the Cordoban court, raised under the caliphate of 929; under al-Manṣūr (978–1002) the
+        office became royal power in all but name, centralising rule through the palace at the price of a
+        nobility shut out of the caliph's counsel (the game's text)
+      date: >-
+        chosen 18 January 1387 (the bureaucracy record in the save of 5 August 1395); its seat was filled on
+        22 January
+  - id: 1387-10-01-castile-and-france
+    'on': '1387-10-01'
+    kind: note
+    what: >-
+      Beyond the Pyrenees, Castile is losing a war it chose to join. France fell on the little county of Chiny
+      in the Ardennes in August 1385 over trade, and Castile came in on Chiny's side with Savoy and the lords
+      of the Rhône and the Rhineland. Two Castilian armies sent into France were destroyed, at
+      Châteauneuf-de-Randon and at Viviers, while France keeps 40,800 men in the field
+    who:
+      - jeronimo-of-castile
+    from:
+      - save
+      - told
+    cite: save of 1 October 1387 (a reading); Trent's account
+    detail:
+      war:
+        started: '1385-08-27'
+        attacker: France
+        defender: Chiny
+        cb: trade conflict
+        castileSide: defenders, with Savoy, Metz, Hainaut, Lausanne and others
+      castileBattles:
+        - place: Châteauneuf-de-Randon
+          date: '1387-02-21'
+          castileLost: 1076
+        - place: Viviers
+          date: '1387-03-12'
+          castileLost: 1258
+      forces:
+        France: 40,803 (37,254 levies)
+        Castile: 17,082 (16,582 levies), 15 ships
+        al-Andalus: 4,900 regulars, 16 ships
+      castileRank:
+        - 8
+        - 18
+      castileLand: no Castilian town occupied
+  - id: 1387-10-01-state
+    'on': '1387-10-01'
+    kind: note
+    what: >-
+      The realm whole again after the risings: 118 towns and 1,367,000 people, 557,000 of them Muslim. The
+      game ranks al-Andalus tenth among the powers. The crown prince Ismāʿīl is married to Bernarda of Murcia,
+      and is now counted a master of diplomacy
+    who:
+      - saad-ibn-yusuf
+      - ismail-ibn-saad
+      - bernarda-of-murcia
+    from:
+      - save
+    cite: save of 1 October 1387 (a reading)
+    detail:
+      towns: 118
+      population: 1367123
+      religions:
+        Catholic: 716576
+        Sunni: 556482
+        Jewish: 93279
+      cultures:
+        Castilian: 695915
+        Andalusi: 505394
+        Sephardi: 93451
+      rank: 10
+      treasury: 165
+      income: 110.6
+      expenses: 88.2
+      stability: 16.8
+      manpower: 116
+      diwan:
+        Duʿā: integrating the new lands
+        Ismāʿīl ibn Yūsuf: integrating the new lands (from 30 April 1383)
+        Maryam: integrating the new lands (from 22 January 1387)
+        Ismāʿīl ibn Saʿd: societal values (from 22 January 1387)
+      crownPrince:
+        married: Bernarda of Murcia (by 1 October 1387)
+        stats:
+          - 47
+          - 100
+          - 38
+      morocco: Abū al-Faḍl sultan since 7 October 1381, Jadīla queen
+  - id: 1387-hammams
+    'on': '1387-10-01'
+    kind: realm
+    what: >-
+      Another strand of the spread of Andalusī culture, and another lesson from the east: bathhouses are being
+      raised across the realm, beginning at Ishbīliya. The hammam is a cornerstone of Andalusī town life, for
+      washing, company and ritual purity
+    who:
+      - saad-ibn-yusuf
+    where:
+      - ishbiliyya
+    threads:
+      - towns
+    from:
+      - save
+      - seen
+      - told
+    cite: Trent's account and screenshot; save of 1 October 1387
+    detail:
+      building: Hammam (infrastructure)
+      effects:
+        popPromotion: '+2'
+        monthlyProsperity: +0.1%
+        diseaseResistance: +5%
+        burghersFoodConsumption: +10%
+      input: 0.1 lumber, 0.1 copper and 0.1 coal a level
+      cost: 50, 0.75 masonry and 0.2 glass; a year to build
+      first: Seville, under construction (none finished by the save of 1 October 1387)
+  - id: 1388-12-28-death-of-dua
+    'on': '1388-12-28'
+    kind: death
+    what: >-
+      Duʿā the Marīnid, the Emperor's wife and mother of the crown prince, dies at fifty after a short
+      illness, as the court tells it. She had sat in the dīwān for thirty-three years, under two husbands and
+      two reigns, and ruled the court as regent through the War of the Upper March. The physicians were not
+      summoned until the end, and the court did not ask why
+    who:
+      - dua-marinid
+      - saad-ibn-yusuf
+      - ismail-ibn-saad
+    threads:
+      - house
+    from:
+      - save
+      - seen
+    cite: >-
+      Trent's screenshot of the death notice, 28 December 1387; dated to 1388 from the death date in the save
+      of 3 September 1398 (first logged as 1387)
+    detail:
+      age: 50
+      cause: >-
+        the court's account: a short illness. The game's death notice says suicide; by Trent's ruling the
+        chronicle keeps the court's version, as with earlier deaths given out as hunting accidents and
+        illnesses
+      roles: wife of Yūsuf I and of Saʿd; member of the dīwān from about 1355; regent 1373–1375
+      parents: Abū al-Ḥasan ʿAlī, sultan of Fās, and Fāṭima the Ḥafṣid
+      culture: Zanāta
+      stats:
+        - 43
+        - 38
+        - 54
+      seatLeft: her seat in the dīwān is vacant
+  - id: 1388-12-mamluk-desert-war
+    'on': '1388-12-28'
+    kind: note
+    what: >-
+      The Mamlūks are at war with some desert tribes. As their ally al-Andalus is counted in it, but no help
+      is sent
+    who:
+      - bolot-mamluk
+    from:
+      - save
+      - seen
+      - told
+    cite: >-
+      Trent's account and screenshot, 28 December 1387; dated to 1388 from the death date in the save of 3
+      September 1398 (first logged as 1387)
+    detail:
+      involvement: 'nominal: allied, no forces sent (Trent)'
+      gameName: begins "1st Eg…" on Trent's screen; the full name awaits a save
+  - id: 1389-05-01-castile-portugal-split
+    'on': '1389-05-01'
+    kind: crown
+    what: >-
+      The union of Castile and Portugal breaks. From 1 May 1389 Castile has a king of its own, Fernando, a man
+      of fifty-four, while Jerónimo keeps Portugal. The two crowns remain allies, but for the first time since
+      1367 they are truly split
+    who:
+      - jeronimo-of-castile
+    from:
+      - save
+      - told
+    cite: save of 2 January 1394; Trent's account
+    detail:
+      castile: >-
+        Fernando (born 1334; not Jerónimo's son of the same name), king from 1389-05-01 until his death on
+        1394-01-06
+      portugal: Jerónimo, king since 1367-10-04
+      alliance: Castile and Portugal still allied (save of 2 January 1394)
+  - id: 1389-08-09-the-hisba
+    'on': '1389-08-09'
+    kind: realm
+    what: >-
+      A third office of the bureaucracy, as the empire turns slowly toward trade: the Ḥisba, under the
+      muḥtasib, who polices the markets and the public morals of the Islamic city, checks weights and
+      measures, puts down fraud and enforces honest dealing. While the crown pays for it, al-Andalus sells
+      better and its economy moves toward capital
+    who:
+      - saad-ibn-yusuf
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshot, 9 August 1389
+    detail:
+      office: Ḥisba (bureaucracy)
+      whenFunded:
+        sellingEfficiency: +10%
+        monthlyProgressToCapitalEconomy: 0.1
+      always:
+        productionEfficiency: +2.5%
+      whenUnfunded:
+        burghersGrowth: −20%
+        tradeIncome: −10%
+      likedBy:
+        clergy: +1%
+      dislikedBy:
+        burghers: −1%
+      cost: up to 7.44 a month
+      selectCost: 43.47
+      precedent: >-
+        a well-run inspectorate keeps commerce honest and gives the state the authority of the devout; a
+        corrupt one is felt only as meddling, and merchants withdraw into networks beyond its reach (the
+        game's text)
+      bureaucracy:
+        - Count of the Christians (1378)
+        - Ḥijāba (by January 1387)
+        - Ḥisba (August 1389)
+  - id: 1391-05-11-second-hajj-departs
+    'on': '1391-05-11'
+    kind: note
+    what: >-
+      The Emperor sets out for Makka a second time, and leaves early. He stays at court just long enough for
+      his son's wedding to an Ottoman princess, then rides east; the crown prince Ismāʿīl rules as regent.
+      Five years ago the season passed him by in the desert; this time he means to stand at ʿArafāt with time
+      to spare
+    who:
+      - saad-ibn-yusuf
+      - ismail-ibn-saad
+    where:
+      - ishbiliyya
+    from:
+      - told
+    cite: Trent's account, 11 May 1391
+    detail:
+      departure: '1391-05-11'
+      previous: 1385-08-23, the season missed on 6 January 1386
+      lesson: >-
+        the game appears to close the Hajj season with the turn of the year; leaving in May allows for pauses
+        on the road
+      regent: the crown prince Ismāʿīl ibn Saʿd
+      wedding: the crown prince Ismāʿīl to ʿĀʾisha, an Ottoman princess, just before the Emperor left
+  - id: 1391-05-ottoman-marriage
+    'on': '1391-05-11'
+    kind: marriage
+    what: >-
+      The crown prince Ismāʿīl takes a second wife, ʿĀʾisha, a princess of the house of ʿOthmān, the rising
+      sultans of Anatolia; his father stays at court for the wedding before setting out on pilgrimage
+    who:
+      - ismail-ibn-saad
+      - aisha-ottoman
+      - saad-ibn-yusuf
+    threads:
+      - house
+    from:
+      - save
+      - told
+    cite: Trent's account, May 1391; save of 2 January 1394
+    detail:
+      with: TUR
+      bride: ʿĀʾisha, born 15 May 1375, Turkish
+      groom: Ismāʿīl ibn Saʿd (his second wife, beside Bernarda of Murcia)
+  - id: 1391-06-08-guns-for-mali
+    'on': '1391-06-08'
+    kind: world
+    what: >-
+      Merchants sent by the Mansa of Mali himself ask to buy the empire's madāfiʿ, the fire-tubes and small
+      bombards of its arsenals, and the craft of casting them. The crown prince Ismāʿīl, ruling as regent,
+      judges it profitable business: Mali pays a fifth of a year's income for the privilege and becomes a
+      grateful friend in western Africa
+    who:
+      - ismail-ibn-saad
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshot of the event, 8 June 1391
+    detail:
+      with: Mali
+      choice: This might be a profitable business
+      effects:
+        maliOpinion: 100
+        paymentFromMali: 161.94
+        capitalEconomy: +10 (now 60.2, rising 0.15 a month)
+      rejected: There is no benefit to us to sell guns to them
+      history: >-
+        not as early as it sounds: the Naṣrids are said to have used gunpowder engines at Huéscar in 1324 and
+        Alicante in 1331, and hand-guns were spreading through the Mediterranean by the 1380s; in the
+        chronicle these are madāfiʿ, fire-tubes, not muskets
+      regent: decided by the crown prince Ismāʿīl as regent, while the Emperor was on the road to Makka (Trent)
+      weapons: 'madāfiʿ: fire-tubes and small bombards (the game says firearms)'
+  - id: 1391-07-01-merchant-at-sea
+    'on': '1391-07-01'
+    kind: note
+    what: >-
+      This time the pilgrimage goes by sea. Off the coast of the Maghrib a merchant ship hails the Emperor's
+      vessels, her decks stacked with silk and fine cloth from distant ports, and the Emperor buys the finest
+      aboard after a merchant's unhurried haggling. The caravan grows more splendid
+    who:
+      - saad-ibn-yusuf
+    from:
+      - seen
+    cite: Trent's screenshot of the event, 1 July 1391
+    detail:
+      event: 'The Royal Ḥajj: A Merchant at Sea'
+      choice: Buy the finest cloth aboard (the option on Trent's screen)
+      effects:
+        gold: -32.86
+        splendor: 20
+        pause: 10 days
+      other: No time to haggle. Wave them on.
+  - id: 1391-07-coast-to-mali
+    'on': '1391-07-01'
+    kind: office
+    what: >-
+      Under the contract with Mali, the court sends the courtier Khayr al-Dīn al-Jayyānī to chart the way to
+      the Mansa's lands along the Atlantic coast, by sea, rather than by the caravan roads across the desert
+    who:
+      - khayr-al-din-al-jayyani
+      - ismail-ibn-saad
+    where:
+      - gharnata
+      - jayyan
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshot, summer 1391
+    detail:
+      explorer: Khayr al-Dīn al-Jayyānī, 40, of Jaén (53/93/35)
+      route: along the West African coast, not inland
+      purpose: the trade in madāfiʿ agreed with Mali on 8 June 1391
+      date: summer 1391; the day awaits a save
+  - id: 1391-07-25-al-qahira-again
+    'on': '1391-07-25'
+    kind: note
+    what: >-
+      A creature of habit, the Emperor sits again with the scholars of al-Azhar for a month. It was this same
+      pause that cost him ʿArafāt six years ago; this time he arrived in al-Qāhira in July, with five months
+      to spare
+    who:
+      - saad-ibn-yusuf
+      - bolot-mamluk
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshot, 25 July 1391
+    detail:
+      event: 'The Royal Ḥajj: The City of a Thousand Minarets'
+      choice: Sit with the scholars of al-Azhar while we can
+      effects:
+        pause: 30 days
+        gold: -32.86
+        legitimacy: 5
+        prestige: 5
+        researchProgress: 2.5
+      previous: 1385-10-28, the same choice, three months later in the year
+      pausesSoFar: 40 days (10 at sea, 30 in al-Qāhira)
+  - id: 1391-10-14-death-of-aiman
+    'on': '1391-10-14'
+    kind: death
+    what: >-
+      While the Emperor is in Makka, Aiman of the Baḥrī house, his first wife, consort of the empire and
+      sister of the Mamlūk sultan, dies at forty-seven. She had gone home to Miṣr on a visit to her family,
+      and the court's letter says a beast of the Nile took her by the river. Three years after Duʿā, the
+      second of his great wives is gone, and both times the Emperor was far away. Aiman's son Yūsuf, twenty,
+      now has no mother at court. Nobody at court said aloud what some of them thought
+    who:
+      - aiman-mamluk
+      - saad-ibn-yusuf
+      - yusuf-ibn-saad
+      - bolot-mamluk
+    threads:
+      - house
+    from:
+      - save
+      - seen
+    cite: >-
+      Trent's screenshot of the death notice, 23 October 1391; the day is from the death date in the save of 3
+      September 1398 (first logged as 23 October)
+    detail:
+      age: 47
+      cause: 'the game''s death notice: attacked by a crocodile'
+      whereabouts: not stated; the Emperor was on pilgrimage
+      roles: consort of al-Andalus; mother of Prince Yūsuf, Umm al-Fatḥ and Jadīla bint Saʿd
+      telling: >-
+        Trent's ruling: the chronicle plants a suspicion and leaves it there. In the story she died on the
+        Nile while visiting her family in Egypt; the game's notice says attacked by a crocodile
+  - id: 1391-10-the-kaaba
+    'on': '1391-10-23'
+    kind: note
+    what: >-
+      The Emperor reaches Makka at last. The Grand Mosque opens before him and the Kaʿba stands at its heart,
+      black-draped and older than memory, with the white-robed faithful circling it from every land where the
+      call to prayer is heard; sultan and shepherd dress alike. Twenty years after he first meant to go, he
+      completes the Hajj, and he distributes gold freely, so that no pilgrim in Makka goes hungry
+    who:
+      - saad-ibn-yusuf
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshot of the event, October 1391
+    detail:
+      event: 'The Royal Ḥajj: The Kaʿba'
+      choice: Distribute gold freely. Let no pilgrim here go hungry (the option on Trent's screen)
+      effects:
+        gold: -102.61
+        toMeccaCommoners: 102.61
+        prestige: 15
+        legitimacy: 10
+      otherChoices:
+        - endow the mosques and their scholars
+        - perform the rites quietly
+        - spare no expense, deck the caravan in gold
+      date: arrival by 23 October 1391 (Trent's screen is undated)
+      firstPlanned: '1373-01-16'
+  - id: 1392-02-20-hajji
+    'on': '1392-02-20'
+    kind: note
+    what: >-
+      The caravan comes home, its stores lighter and its pilgrims changed. Word has run ahead of the camels,
+      and crowds gather at Ishbīliya to welcome a ruler who stood before the Kaʿba. From this day the Emperor
+      bears the title Ḥājjī, earned and not granted. Let it be known: Makka and back, by the grace of Allāh
+    who:
+      - saad-ibn-yusuf
+    where:
+      - ishbiliyya
+    from:
+      - seen
+    cite: Trent's screenshot of the event, 20 February 1392
+    detail:
+      event: 'Expedition: Ḥājjī'
+      effects:
+        legitimacy: 10
+        modifier: 'Blessings of the Ḥajj, 5 years: +5% clergy satisfaction equilibrium'
+        muslimOpinion: +10 with every known Muslim country
+        trait: 'Ḥājjī: +0.1 prestige and +0.1 legitimacy a month'
+      journey: 11 May 1391 to 20 February 1392
+  - id: 1392-02-atlantic-expeditions
+    'on': '1392-02-20'
+    kind: note
+    what: >-
+      The empire turns to the Atlantic. Beside Khayr al-Dīn's voyage down the African coast toward Mali, two
+      more expeditions set out with new explorers: one to chart the sea of the Azores, the other to Madeira
+    who:
+      - khayr-al-din-al-jayyani
+    threads:
+      - voyages
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshot, February 1392
+    detail:
+      expeditions:
+        - the African coast to Mali (Khayr al-Dīn al-Jayyānī, 1391)
+        - the sea of the Azores
+        - Madeira
+      explorers: new explorers for the Azores and Madeira; names await a save
+      history: >-
+        the Azores and Madeira were known to Genoese and Portuguese sailors by the mid-fourteenth century, but
+        not settled until the 1420s; Arab geographers had written of islands in the western Ocean
+  - id: 1392-11-banking
+    'on': '1392-11-01'
+    kind: realm
+    what: >-
+      A year after Aiman's death the Emperor meets grief as he always has, with innovation. Banking and
+      moneylending are formalised in the empire and made more permissive: al-Andalus embraces the new
+      institution of banking, born among the Genoese
+    who:
+      - saad-ibn-yusuf
+    where:
+      - ishbiliyya
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshot, November 1392
+    detail:
+      institution: Banking
+      origin: Genoa (Zêna)
+      spread: 20.62% of the realm's locations when embraced
+      cost: 80.5 gold and 30.19 (Trent's screen)
+      thread: the moneylenders of Ishbīliya, whom the ʿulamāʾ protested in 1371 (see 1371-02-24-spread-of-usury)
+      date: November 1392 (Trent); the day awaits a save
+  - id: 1393-02-24-death-of-alfons
+    'on': '1393-02-24'
+    kind: death
+    what: King Alfons of the Ṭāʾifa of Aragon dies at Benabarre. His son Rodrigo, a boy of eleven, succeeds him
+    who:
+      - alfons-de-borja
+      - rodrigo-de-borja
+    from:
+      - save
+    cite: save of 3 September 1398 (people.json records of Alfons and Rodrigo)
+  - id: 1393-coalition
+    'on': '1393-05-03'
+    kind: world
+    what: >-
+      Fear of al-Andalus binds its neighbours: Castile (3 May), Portugal (6 May) and Andorra (17 August) take
+      up a coalition casus belli against the empire. The court calls it the League, and the war it brings will
+      carry its name
+    from:
+      - save
+    cite: save of 2 January 1394
+    detail:
+      members:
+        Castile: '1393-05-03'
+        Portugal: '1393-05-06'
+        Andorra: '1393-08-17'
+      cb: cb_coalition
+  - id: 1394-01-02-eve-of-war
+    'on': '1394-01-02'
+    kind: note
+    what: >-
+      The truce with Castile is long over and a new claim, the Reconquest of Iberia, has been ready since New
+      Year's Day. The Emperor marches north for another war with the Iberians, and the Moors and the Egyptians
+      join him
+    who:
+      - saad-ibn-yusuf
+      - ismail-ibn-saad
+    from:
+      - save
+      - told
+    cite: save of 2 January 1394 (a reading, before the declaration); Trent's account
+    detail:
+      cb: cb_reconquer_iberia (from 1394-01-01)
+      spyNetwork: on Castile since 1391-05-01
+      allies:
+        - Morocco
+        - Mamluks
+      forces:
+        al-Andalus: 4,900 regulars, 16 ships
+        Castile: 750 men, 19 ships
+        Portugal: 1,550 men, 7 ships
+        Morocco: 1,900, 30 ships
+        Mamluks: 4,050, 4 ships
+      realm:
+        towns: 118
+        population: 1436883
+        rank: 9
+        treasury: 550
+        income: 142.1
+        expenses: 117.1
+        loans: 0
+        stability: 38.5
+        prestige: 95
+      diwan:
+        Umm al-Fatḥ (the Emperor's daughter by Aiman): integrating the new lands, in Duʿā's old seat
+        Ismāʿīl ibn Yūsuf: integrating the new lands
+        Maryam: integrating the new lands
+        Ismāʿīl ibn Saʿd: promoting Andalusī culture (from 21 November 1390)
+      castileFrance: truce with France to 12 September 1397 (peace of 12 March 1388)
+      declaration: declared 4 March 1394
+  - id: 1394-01-06-pedro-of-castile
+    'on': '1394-01-06'
+    kind: crown
+    what: >-
+      King Fernando of Castile dies at fifty-nine, two months before the Emperor's declaration. His son Pedro,
+      twenty-three, takes the throne
+    from:
+      - save
+    cite: save of 4 March 1394
+    detail:
+      died: Fernando (1334–1394)
+      successor: Pedro, born 1370-12-03 (44/51/61)
+      mother: Catalina
+  - id: 1394-03-04-war-on-castile
+    'on': '1394-03-04'
+    kind: war
+    what: >-
+      The Emperor declares war on Castile under the Reconquest of Iberia, opening the third war of the
+      Istirdād, which the court names the War of the League after the coalition sworn against the empire.
+      Portugal, the Pope with his vassals Faenza and Siena, and Andorra stand with the young King Pedro; the
+      four ṭāʾifas, the Moors of Fās with their vassals and the Mamlūks with theirs stand with the Emperor
+    who:
+      - saad-ibn-yusuf
+      - jeronimo-of-castile
+    threads:
+      - war-of-the-league
+    from:
+      - save
+      - told
+    cite: save of 4 March 1394; Trent's account
+    detail:
+      cb: cb_reconquer_iberia
+      target: CAS
+      castileSide:
+        - Portugal
+        - Papal States
+        - Faenza
+        - Siena
+        - Andorra
+      ourSide:
+        - Aragon
+        - Catalonia
+        - Valencia
+        - Algarve
+        - Morocco and its vassals (Tafilalt, Touat, Tlemcen)
+        - the Mamlūks and their vassals
+      forces:
+        al-Andalus: 4,900 regulars, 16 ships
+        Castile: 750, 19 ships
+        Portugal: 1,550, 7 ships
+        Papal States: 1,750, 14 ships
+        Morocco: 1,900, 30 ships
+        Mamluks: 4,050, 4 ships
+      treasury: 568
+tellings:
+  - id: 0785-02-26-of-the-kingdom-of-tulaytula
+    'on': '1383-04-30'
+    title: Of the Deaths of Sayyida and Abū ʿInān, and the So-Called Kingdom of Ṭulayṭula
+    verse: 3:139
+    who:
+      - saad-ibn-yusuf
+      - sayyida-of-fezzan
+      - yusuf-i
+      - abu-inan-faris
+      - abu-al-fadl-marinid
+      - jadila-bint-yusuf
+      - dua-marinid
+      - ismail-ibn-yusuf
+      - aiman-mamluk
+    where:
+      - gharnata
+      - fas
+      - tulaytula
+      - jayyan
+      - mursiyya
+      - ishbiliyya
+    covers:
+      - 1380-11-19-death-of-sayyida
+      - 1381-10-07-death-of-abu-inan
+      - 1382-12-01-revolt-of-tulaytula
+      - 1382-12-01-ismail-to-the-diwan
+      - 1383-02-22-battle-munt-shaqir
+      - 1383-04-30-battle-jaen
+      - 1383-04-30-revolt-crushed
+    text: >
+      In Shaʿbān 782 the Emperor's mother died. [Sayyida](person:sayyida-of-fezzan), daughter of the lords of
+      Fezzan, had been betrothed to [Yūsuf](person:yusuf-i) at nine years old. She came to
+      [Gharnāṭa](place:gharnata) across the desert and the sea and outlived her husband by seventeen years.
+      She sat in her son's dīwān through the worst of his wars and lived to see him proclaimed Emperor. She
+      was fifty-two. The court mourned her as a mother of the dynasty. Her son mourned her as his mother, and
+      for some weeks he would see no one. [Duʿāʾ](person:dua-marinid) and [Aiman](person:aiman-mamluk) walked
+      behind the bier, in the order of their marriages, which put the Mamlūk first. The harem said that
+      Sayyida would have approved of the order, and that it was the one thing the three women had ever agreed
+      on: the house came first.
+
+
+      A year later news came from [Fās](place:fas) that [Abū ʿInān Fāris](person:abu-inan-faris) was dead. He
+      had ruled the Marīnids for thirty-six years and twice made war on the house of Naṣr to bring it to heel,
+      and twice failed. His son [Abū al-Faḍl](person:abu-al-fadl-marinid) took the throne, and with him the
+      Emperor's sister [Jadīla](person:jadila-bint-yusuf) became queen of the Marīnids. The alliance
+      [Duʿāʾ](person:dua-marinid) had argued for was now a family matter on both sides of the Strait.
+
+
+      The peace held for four years and then broke from inside. On 24 Ramaḍān 784, as the city kept the last
+      nights of the fast, [Ṭulayṭula](place:tulaytula) rose. The Castilians of the old Visigothic capital
+      drove the Emperor's governor out of the city and wrecked the madrasa the crown had built in its heart.
+      They proclaimed a Kingdom of Ṭulayṭula, and the country followed them. Fifty-eight towns went over: the
+      Middle March and La Mancha, the hills of Extremadura, and even the lands of [Mursiyya](place:mursiyya)
+      and [Jayyān](place:jayyan), Ubbadha and Bayyāsa, and the coast of Walba. Half a million souls were in
+      revolt, most of them Castilians and three in four of them Christians. The rebels raised nearly six
+      thousand men, most of them peasant levies, against the Emperor's thirty-seven hundred regulars. The
+      court called it another so-called kingdom, as it had called the rising of [Ishbīliya](place:ishbiliyya)
+      thirty years before. It was no small matter.
+
+
+      The Emperor's younger brother [Ismāʿīl](person:ismail-ibn-yusuf), twenty-eight, took their mother's
+      empty seat in the dīwān as the revolt began. The Emperor took the field. The rebels came to him in Dhū
+      al-Ḥijja, at Munt Shāqir in the hills above the Guadiana, four thousand nine hundred against his ten
+      thousand six hundred, and he broke them there. It was the only real battle of the revolt. The rest was a
+      hunt. On 26 Ṣafar 785 the Emperor caught the last rebel host, one thousand eight hundred and seven men,
+      outside the walls of Jayyān, and destroyed it to the last man. Forty-four of his own fell. The rebels'
+      kingdom had lasted five months.
+
+
+      The towns came back to their obedience one by one. The governor went back to Ṭulayṭula, and the masons
+      went back to the madrasa. The Emperor, with the realm secure for the first time in ten years, began to
+      plan the pilgrimage he had put off since 774.
+
+
+      *So do not weaken and do not grieve, and you will be superior if you are believers.*
+  - id: 0787-12-04-of-the-pilgrimage-that-came-too-late
+    'on': '1386-01-06'
+    title: Of the County of Teruel, and the Pilgrimage That Came Too Late
+    verse: 2:286
+    who:
+      - saad-ibn-yusuf
+      - alfons-de-borja
+      - ismail-ibn-saad
+      - dua-marinid
+      - aiman-mamluk
+      - bolot-mamluk
+    where:
+      - ishbiliyya
+    covers:
+      - 1383-04-30-hajj-planned
+      - 1385-05-03-county-of-teruel
+      - 1385-08-23-teruel-crushed
+      - 1385-08-23-the-emperor-departs-on-hajj
+      - 1385-10-28-al-qahira
+      - 1386-01-06-the-season-passed
+      - 1386-jamaa-theological-seminaries
+    text: >
+      The pilgrimage was put off once more. In Rabīʿ al-Awwal 787 the lords of the Aragonese uplands rose
+      against King [Alfons](person:alfons-de-borja) of the renewed Arghūn, and proclaimed a County of Teruel
+      in the inner country of his kingdom. It was a small rising, but it was a rising in a ṭāʾifa the Emperor
+      had made and promised to protect, and he would not leave for Makka with it unsettled. It took the
+      summer. On 16 Rajab 787 the County of Teruel was crushed and its towns returned to King Alfons. That
+      same day the Emperor's caravan left [Ishbīliya](place:ishbiliyya) for the east.
+
+
+      It was as fine as the caravan his father had led thirty-four years before. There were camels and horses
+      and the scholars of the court, gifts for the sharīf of Makka, and alms for the poor of the two holy
+      cities. The crown prince [Ismāʿīl](person:ismail-ibn-saad), nineteen years old, ruled as regent in his
+      father's absence. He ruled well, by the dīwān's account. He had a gift for sending a minister away from
+      an audience sure that the prince agreed with him, whatever the prince meant to do. That gift did not
+      serve him in the harem. His mother [Duʿāʾ](person:dua-marinid) and the Emperor's first wife
+      [Aiman](person:aiman-mamluk) had been rivals since the princes were children, and with the Emperor gone
+      they quarrelled openly. They argued over precedence and households, and over whose son the court should
+      look to. The regent learned that it was easier to govern an empire than to keep peace between two women
+      who had each borne the Emperor a son.
+
+
+      In Ramaḍān the caravan reached al-Qāhira, the city of a thousand minarets, which swallows a caravan the
+      moment it passes the northern gate. Above the noise and spice and roasting meat rose the mosque of
+      al-Azhar, whose scholars were counted among the finest in the Muslim world. The Emperor lingered. He sat
+      with them for a month, and he held long talks with his brother-in-law the sultan
+      [Būlād](person:bolot-mamluk) about the fleet, the Maghrib and the Christians of the north. He said
+      afterwards that it was the best month of his reign. Then he pushed on for Makka.
+
+
+      He came too late. When the caravan reached the holy city, the standing at ʿArafāt had passed: the hours
+      between noon and sunset when every pilgrim of the season stands together on the plain beneath the Mount
+      of Mercy, praying and asking forgiveness. A saying of the Prophet holds that the Ḥajj is nothing more or
+      less than that single afternoon, and no rite performed afterwards can complete the pilgrimage. The
+      Emperor heard the news in silence. Then he gave the order the caravan dreaded: they had tarried too
+      long, and it must all be done again. The caravan broke up and turned for home.
+
+
+      But misfortune turned to fortune on the road back. The scholars the Emperor had sat with in al-Qāhira
+      had taken his measure as he had taken theirs. When he offered them halls, stipends and students in
+      Ishbīliya, many of them came west with him. The Jamāʿa had to be persuaded to pay for them. The ʿulamāʾ
+      backed the measure warmly, since it was their own order the Emperor proposed to enlarge, and the
+      assembly voted to sponsor theological seminaries across the realm for ten years. A pilgrimage that never
+      reached ʿArafāt had brought al-Azhar to Ishbīliya.
+
+
+      *Allāh does not charge a soul except with that within its capacity.*
+  - id: 0791-08-15-of-the-hijaba-the-hisba-and-the-death-of-dua
+    'on': '1389-08-09'
+    title: Of the Ḥijāba and the Ḥisba, and the Death of Duʿāʾ
+    verse: 89:27-28
+    who:
+      - saad-ibn-yusuf
+      - ismail-ibn-saad
+      - bernarda-of-murcia
+      - dua-marinid
+      - maryam-bint-yusuf
+      - ismail-ibn-yusuf
+      - aiman-mamluk
+    where:
+      - ishbiliyya
+      - qurtuba
+    covers:
+      - 1387-01-22-the-hijaba
+      - 1387-01-22-ismail-to-the-diwan
+      - 1387-hammams
+      - 1387-10-01-castile-and-france
+      - 1387-10-01-state
+      - 1388-12-28-death-of-dua
+      - 1389-08-09-the-hisba
+    text: >
+      The Emperor returned from al-Qāhira with his head full of what he had seen there: the Mamlūk court with
+      its offices and ranks, and the books the scholars of al-Azhar had opened for him on the government of
+      the old caliphs. He meant to build on them. The first fruit was the Ḥijāba. Under the Umayyads of
+      [Qurṭuba](place:qurtuba) the ḥājib had been the chamberlain of the court. He presided over his own
+      council, received petitioners and embassies, and drafted decrees in the caliph's name. Under al-Manṣūr
+      he became the caliph's power in all but name. The Emperor revived the office. It made the throne
+      stronger and gave it something of the dignity of the caliphs' own court. Like the ḥājibs of old, it
+      would also stand between the throne and the great lords, and the nobles noticed.
+
+
+      The Ḥijāba brought a new seat in the dīwān, and the Emperor filled it with his heir. The crown prince
+      [Ismāʿīl](person:ismail-ibn-saad) had been at sea as an admiral, carrying the crown's authority over the
+      coasts. Nobody took him for a fighting sailor, and he did not pretend to be one; he governed the coasts
+      by persuasion and left the fighting to his captains. His father called him home, and on the first day of
+      Muḥarram 789 he took his seat beside his aunt [Maryam](person:maryam-bint-yusuf), his uncle
+      [Ismāʿīl](person:ismail-ibn-yusuf) and his mother. He was set to the Emperor's great project: the
+      seminaries, the scholars, and the shaping of what the realm should prize. He was twenty, married now to
+      [Bernarda](person:bernarda-of-murcia) of Mursiyya, and the court said he could talk a bird down from a
+      tree.
+
+
+      Other lessons from the east took root in the towns. Across the realm the crown began to build hammams,
+      beginning at [Ishbīliya](place:ishbiliyya): bathhouses for washing, company and ritual purity, a
+      cornerstone of Andalusī town life that the Castilians had let fall into ruin. From beyond the Pyrenees
+      came news the court did not pretend to regret. Qashtāla had joined a war in the north on the side of a
+      little Ardennes county against the king of France, and lost two armies in the hills of the Rhône.
+
+
+      In Dhū al-Ḥijja 790, in the last days of the year, [Duʿāʾ](person:dua-marinid) the Marīnid died. She was
+      fifty years old. She had sat in the dīwān for thirty-three years, under two husbands and two reigns. She
+      had brought the court foreign learning and kept the realm through the War of the Upper March as regent,
+      and she had seen her son made heir. The court gave out that she died of a short illness. It was very
+      short. The physicians were not called until it was over, and the household was quiet for a long time
+      afterwards. The Emperor ordered her buried with every honour, in the Rawḍa beside the kings of the
+      house, and he did not speak of her again in the dīwān. [Aiman](person:aiman-mamluk) wore white for the
+      forty days, as the women of Miṣr do for the dead, and received the court's condolences as though they
+      were hers. The court could not decide whether it was mourning or a victory, and suspected that Aiman
+      could not either.
+
+
+      More than seven months later, in Shaʿbān 791, the bureaucracy gained a third office, as the empire
+      turned slowly toward the sea and its trade. This was the Ḥisba, the old inspectorate of the Islamic
+      city. Its muḥtasib walked the markets, checked the weights and the measures, put down fraud and enforced
+      honest dealing. The ʿulamāʾ approved, since the muḥtasib was one of their own. The merchants did not,
+      since he was not one of theirs. The Emperor gave the first muḥtasib of Ishbīliya one order in his own
+      words: to begin with the crown's warehouses, and to hold the Emperor's weights to the same measure as
+      any grocer's in the sūq. The merchants still grumbled, but none of them could say the scales were
+      weighted for the crown. The empire's goods sold better for being honestly weighed, and its markets moved
+      a little further from barter and a little nearer to coin.
+
+
+      *O reassured soul, return to your Lord, well-pleased and pleasing to Him.*
+  - id: 0794-03-25-of-al-hajj-saad
+    'on': '1392-02-20'
+    title: Of the Second Pilgrimage, the Death of Aiman, and al-Ḥājj Saʿd
+    verse: 3:97
+    who:
+      - saad-ibn-yusuf
+      - ismail-ibn-saad
+      - aisha-ottoman
+      - bernarda-of-murcia
+      - aiman-mamluk
+      - dua-marinid
+      - yusuf-ibn-saad
+      - bolot-mamluk
+    where:
+      - ishbiliyya
+      - fas
+    covers:
+      - 1391-05-ottoman-marriage
+      - 1391-05-11-second-hajj-departs
+      - 1391-07-01-merchant-at-sea
+      - 1391-07-25-al-qahira-again
+      - 1391-10-the-kaaba
+      - 1391-10-14-death-of-aiman
+      - 1392-02-20-hajji
+      - 1392-11-banking
+      - 1371-02-24-spread-of-usury
+    text: >
+      Five years after the season passed him by, the Emperor set out again, and this time he left in spring.
+      He stayed at court only long enough for one more marriage. A princess of the house of ʿOthmān, the
+      sultans rising in Anatolia, came west to marry his son: [ʿĀʾisha](person:aisha-ottoman), fifteen years
+      old, who became the crown prince's second wife beside [Bernarda](person:bernarda-of-murcia). The wedding
+      was hardly over before the caravan moved. On 6 Jumādā al-Ākhira 793 he left
+      [Ishbīliya](place:ishbiliyya) with half a year in hand, and the crown prince
+      [Ismāʿīl](person:ismail-ibn-saad) took up the regency a second time.
+
+
+      This time the pilgrimage went by sea along the coast of the Maghrib. Off that coast a merchant ship
+      hailed the Emperor's galleys, her decks stacked with bolts of silk and fine cloth from distant ports,
+      and her captain would sell only after a merchant's unhurried haggling. The Emperor bought the finest
+      cloth aboard for the caravan, and lost ten days to the bargaining. In Shaʿbān he came again to
+      al-Qāhira, and the court that had watched him the first time watched him now. He was a creature of
+      habit. He sat with the scholars of al-Azhar for another month, and took up with the sultan
+      [Būlād](person:bolot-mamluk) where they had left off. But it was summer, not autumn, and when he rode
+      out of the northern gate there were months to spare.
+
+
+      In the last days of Dhū al-Qaʿda 793 the Grand Mosque of Makka opened before him. The Kaʿba stood at its
+      heart, black-draped, older than memory, with the white-robed faithful moving round it in patient
+      circles, thousands of them from every land where the call to prayer is heard. Sultan and shepherd
+      dressed alike. On the ninth of Dhū al-Ḥijja the Emperor stood with them on the plain of ʿArafāt beneath
+      the Mount of Mercy, from noon until the sun went down, and the pilgrimage he had first meant to make in
+      774 was complete. He had been asked what kind of pilgrim he would be, since what a king gives in Makka
+      is told in every market of Islam for a generation. He answered by distributing his gold freely, so that
+      no pilgrim in the city went hungry that season.
+
+
+      He was in the holy city when the letter from Ishbīliya found him. [Aiman](person:aiman-mamluk) of the
+      Baḥrī house, his first wife, sister of the Mamlūk sultan and mother of his son
+      [Yūsuf](person:yusuf-ibn-saad), was dead at forty-seven. She had gone home to Miṣr to see her family
+      while the caravan was on the road, and the letter said a beast of the Nile had taken her by the river.
+      The Emperor read it twice and gave the order for prayers. Courts keep count of such things, and this one
+      counted two great wives lost in three years: [Duʿāʾ](person:dua-marinid) while the Emperor was at court,
+      and now Aiman while he was half the world away at Makka. It noted too that Aiman's son, twenty years
+      old, now had no mother to speak for him, and that there were those in the crown prince's household who
+      did not seem sorry. Nobody at court said any of this aloud.
+
+
+      On 25 Rabīʿ al-Awwal 794 the caravan came home. Its stores were lighter and its pilgrims were changed,
+      and word had outpaced the camels. Crowds filled the road into Ishbīliya to welcome a ruler who had stood
+      before the Kaʿba and come back to tell of it. From that day he bore the title al-Ḥājj, earned and not
+      granted, as his father had. *Let it be known*, the heralds cried, *Makka and back, by the grace of
+      Allāh.* The ʿulamāʾ were content with him as they had not been in years, and every Muslim court from
+      [Fās](place:fas) to al-Qāhira sent its congratulations.
+
+
+      He met his grief as he always had, with work. Before the year was out he did a thing that would have
+      been unthinkable twenty years earlier, when the ʿulamāʾ had come to him about the moneylenders of
+      Ishbīliya. He gave moneylending a form and a law. Banking, the new craft of the Genoese and the
+      Florentines, was admitted into the empire and set under rules, so that the houses of credit of Ishbīliya
+      could stand beside those of Janawa. The ʿulamāʾ, freshly content with their Ḥājj, let it pass.
+
+
+      *And pilgrimage to the House is a duty owed to Allāh by all people who are able to find a way there.*
+  - id: 0794-03-26-of-the-western-ocean
+    'on': '1392-02-21'
+    title: Of the Mansa's Merchants, and the Ships Sent into the Western Ocean
+    verse: '55:24'
+    who:
+      - ismail-ibn-saad
+      - khayr-al-din-al-jayyani
+      - saad-ibn-yusuf
+      - faraj-ibn-ismail
+    where:
+      - ishbiliyya
+      - jayyan
+      - washqa
+    covers:
+      - 1391-06-08-guns-for-mali
+      - 1391-07-coast-to-mali
+      - 1392-02-atlantic-expeditions
+    text: >
+      While the Emperor was on the road to Makka, merchants arrived at [Ishbīliya](place:ishbiliyya) from the
+      far side of the desert. The old men of the court remembered that the first of the house of Naṣr to cross
+      that desert had been [Faraj](person:faraj-ibn-ismail), the old sultan's brother, who married into Ghāna
+      forty years before and died on the far side of the sands. The guides who brought these merchants north
+      knew his name, and some had learned the road from men who had travelled with him. They had been sent by
+      the Mansa of Mali himself, the lord of the gold country, whose forebear Mansa Mūsā had passed through
+      al-Qāhira on pilgrimage spending so much gold that its price fell for years. They had come to buy the
+      *madāfiʿ* of the empire's arsenals: the fire-tubes and small bombards whose roar the Naṣrids had first
+      loosed at the walls of [Washqa](place:washqa) nearly seventy years before. They wanted the craft of
+      casting them as well. The crown prince [Ismāʿīl](person:ismail-ibn-saad), ruling as regent, weighed it.
+      Some in the dīwān warned that arms sold to a friend can be turned against a friend's trade. The prince
+      judged otherwise. Mali was far away and rich, and it would pay a fifth of a year's income for the
+      privilege. It would also become a grateful friend in the lands where the gold came from. He sold, and
+      the Mansa's merchants went home content.
+
+
+      A friendship with Mali needed a road to Mali, and the prince did not want it to be the old one. For six
+      hundred years the gold had come north on camels across the Ṣaḥrāʾ, through Sijilmāsa and the oases,
+      paying a toll at every well. The prince sent instead a courtier of [Jayyān](place:jayyan), [Khayr al-Dīn
+      al-Jayyānī](person:khayr-al-din-al-jayyani), a man of forty with a gift for talking to strangers, to
+      find the way by sea: down the Atlantic coast of Africa, past the last towns the merchants knew, to
+      wherever the shore turned toward the Mansa's country.
+
+
+      When the Emperor returned from Makka he did not undo his son's work. He added to it. Two more
+      expeditions were fitted out with new captains. One was to chart the sea around the Azores, the scattered
+      islands the Genoese had glimpsed in the western Ocean. The other was to Madeira, the wooded island the
+      Arab geographers had heard of and the Portuguese had not yet claimed. The Catalan shipwrights were set
+      to building ships for the Ocean.
+
+
+      The scholars of the court muttered about the Sea of Darkness. The Emperor had all three expeditions
+      entered in the dīwān's registers, with their stores, their wages and their cost to the last dirham, for
+      he meant to know what the Ocean gave back for what he spent on it.
+
+
+      *And His are the ships raised high in the sea like mountains.*

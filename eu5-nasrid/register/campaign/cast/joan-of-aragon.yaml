@@ -1,0 +1,30 @@
+name: Joan of Aragon
+house: House of Barcelona
+tier: key
+born: '1349-11-02'
+died: '1410-04-27'
+roles:
+  - king of Aragon
+  - king of Sicily
+traits:
+  - greedy
+stations:
+  - role: general
+    from: '1404-04-22'
+    to: '1404-11-18'
+    source: save
+    approx: false
+  - role: admiral
+    from: '1407-07-06'
+    to: '1410-04-27'
+    source: save
+    approx: false
+note: >-
+  King of Aragon and of Sicily (the two crowns in a union since 1343) from 24 April 1368; the game gives him
+  the Catalan form of Juan. His heir in 1370 is his infant daughter Violant. He lost Aragon to the Naṣrids at
+  the peace of 15 March 1375, after the battles of Barcelona and Tarragona and a siege of 282 days, and was
+  let go unharmed to Palermo as a term of the peace, keeping Sicily less Malta. He died on 27 April 1410, aged
+  sixty (save of 29 June 1410).
+game:
+  id: 37633
+  name: Joan

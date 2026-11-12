@@ -1,0 +1,105 @@
+date: '1337-11-16'
+title: Yūsuf betrothed
+source:
+  save: SP_GRA_1337_11_16 (compressed), with estates-screen screenshots
+  game: 1.4.5
+summary: >-
+  Shares of power are read off the estates screen at the moment of the save (the save itself doesn't hold
+  them). Satisfaction and everything else come from the save.
+realm:
+  towns: 18
+  souls: 477976
+  treasury: 177
+  income: 35.7
+  expenses: 35.8
+  stability: 37
+  prestige: 25
+  regiments: 3
+  ships: 5
+  manpower: 3299
+court:
+  ruler: yusuf-i
+  heir: faraj-ibn-ismail
+  capital: gharnata
+  council:
+    - who: faraj-ibn-ismail
+      seat: Strengthen the government
+    - who: yusuf-ibn-muhammad
+      seat: Promote Granadan sovereignty
+standing:
+  allies:
+    - Morocco
+  estates:
+    - name: Crown
+      power: 22.99
+    - name: Nobility
+      power: 47.73
+      mood: 53
+    - name: ʿUlamāʾ
+      power: 12.09
+      mood: 41
+    - name: Burghers
+      power: 10.74
+      mood: 52
+    - name: Commoners
+      power: 4.28
+      mood: 60
+    - name: Dhimmī
+      power: 2.13
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 464432
+    Sephardi: 12337
+    Ligurian: 1206
+  faiths:
+    Sunni: 464432
+    Jewish: 12337
+    Catholic: 1206
+map:
+  ours:
+    - GRA
+  allies:
+    - MOR
+beats:
+  - id: 1337-08-25-spies-in-castile
+    'on': '1337-08-25'
+    kind: world
+    what: A spy network is begun in Castile
+    from:
+      - save
+    cite: checkpoint 1337-11-16
+    detail:
+      treaty: building_spy_network
+      target: CAS
+  - id: 1337-11-16-betrothal-fezzan
+    'on': '1337-11-16'
+    kind: marriage
+    what: Yūsuf betrothed to Sayyida, daughter of the lord of Fezzan
+    who:
+      - yusuf-i
+      - sayyida-of-fezzan
+    threads:
+      - house
+    from:
+      - save
+    cite: checkpoint 1337-11-16
+    detail:
+      kind: betrothal
+      with: FZA
+  - id: 1337-11-16-ulama-discontent
+    'on': '1337-11-16'
+    kind: realm
+    what: 'The ʿulamāʾ grow restless: satisfaction down from 50 to 41 since August'
+    threads:
+      - estates
+    from:
+      - save
+    cite: checkpoint 1337-11-16
+    detail:
+      estate: clergy
+      from: 50
+      to: 41
+      between:
+        - '1337-08-18'
+        - '1337-11-16'

@@ -1,0 +1,413 @@
+date: '1432-07-27'
+title: The Pope Sues for Peace
+source:
+  save: SP_ADU_1432_07_27 (compressed)
+  game: 1.4.7
+summary: >-
+  The morning of the peace that ended the second crusade, at war score 5. The Pope, fighting Milan and Mantua
+  as well, sues for terms. He will pay reparations and break with Genoa, Siena and Aquileia, and no land
+  changes hands, so there is no save after the peace. The arsenals are still building. Stability 6.8, prestige
+  96, treasury 1,520. Estates estimated from the reading of 16 November 1428.
+realm:
+  towns: 192
+  souls: 2608489
+  treasury: 1520
+  income: 281.5
+  expenses: 325.7
+  stability: 6.8
+  prestige: 96
+  regiments: 9
+  ships: 50
+  manpower: 21433
+court:
+  ruler: muhammad-ibn-ismail-ibn-saad
+  heir: ismail-ibn-muhammad-ibn-ismail
+  capital: ishbiliyya
+  council:
+    - who: ismail-ibn-muhammad-ibn-ismail
+      seat: Promoting Andalusī culture
+    - who: ahmad-ibn-muhammad-ibn-ismail
+      seat: Changing the societal values
+    - who: umm-al-fath-bint-muhammad
+      seat: Integrating the new lands
+    - who: yusuf-ibn-saad
+      seat: Promoting the faith
+    - who: jadila-bint-saad-ibn-faraj
+      seat: Integrating the new lands
+standing:
+  wars:
+    - crusade-of-835
+  allies:
+    - Mamluks
+    - Morocco
+    - Tunis
+  subjects:
+    - Catalonia (taifa)
+    - Aragon (taifa)
+    - Taifa of Cuenca (taifa)
+    - Kingdom of Portugal (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+    - Taifa of Galicia (taifa)
+    - Cape Verde (colonial nation)
+  estates:
+    - name: Crown
+      power: 29.13
+    - name: Nobility
+      power: 17.68
+      mood: 48
+    - name: ʿUlamāʾ
+      power: 12.69
+      mood: 44
+    - name: Burghers
+      power: 21.85
+      mood: 51
+    - name: Commoners
+      power: 2.9
+      mood: 50
+    - name: Dhimmī
+      power: 15.75
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 834020
+    Castilian: 698281
+    Portuguese: 493133
+    Sephardi: 191736
+    Catalan: 180395
+    Leonese: 165303
+  faiths:
+    Sunni: 1266621
+    Catholic: 1142705
+    Jewish: 182153
+    Guanche_religion: 15895
+    Orthodox: 488
+map:
+  ours:
+    - GRA
+  subjects:
+    - CAT
+    - ARA
+    - ABA60
+    - POR
+    - ABA42
+    - ABA49
+    - ABA55
+    - GLC
+    - AAA52
+  allies:
+    - MAM
+    - MOR
+    - TUN
+beats:
+  - id: 1432-05-17-battle-terracina
+    'on': '1432-05-17'
+    kind: battle
+    what: >-
+      At Terracina 17,082 men of the Pope, Arezzo, Faenza, Principato Ultra and Pitigliano under Gaston fall
+      on the last 274 Tunisians in Lazio and destroy them without loss
+    minor: true
+    threads:
+      - crusade-of-835
+    from:
+      - save
+    cite: save of 27 July 1432
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Tunis: 274
+      oursTotal: 274
+      oursLost: 274
+      theirs:
+        Papal States: 12283
+        Pitigliano: 1127
+        Faenza: 1872
+        Arezzo: 1048
+        Principato Ultra: 752
+      theirsTotal: 17082
+      theirsLost: 0
+      location: Terracina
+      side: crusaders attacking
+      commanders:
+        theirs: Gaston
+  - id: 1432-06-01-battle-viterbo
+    'on': '1432-06-01'
+    kind: battle
+    what: >-
+      At Viterbo Khalīl's 2,436 Moroccans attack 16,928 men of Campagna, the Pope, Arborea and Siena and are
+      beaten off, losing 1,738 for 1,086
+    minor: true
+    threads:
+      - crusade-of-835
+    from:
+      - save
+    cite: save of 27 July 1432
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Morocco: 2436
+      oursTotal: 2436
+      oursLost: 1738
+      theirs:
+        Campagna: 8332
+        Papal States: 6200
+        Arborea: 2121
+        Siena: 275
+      theirsTotal: 16928
+      theirsLost: 1086
+      location: Viterbo
+      side: allies attacking
+      commanders:
+        ours: Khalīl of Morocco
+        theirs: Alexander
+  - id: 1432-06-03-battle-maria-leuca-cape
+    'on': '1432-06-03'
+    kind: battle
+    what: Off Cape Santa Maria di Leuca 17 ships of Tlemcen attack 17 Genoese and lose five, for one
+    minor: true
+    threads:
+      - crusade-of-835
+      - voyages
+    from:
+      - save
+    cite: save of 27 July 1432
+    detail:
+      result: allied defeat
+      naval: true
+      units: ships
+      ours:
+        Tlemcen: 17
+      oursTotal: 17
+      oursLost: 5
+      theirs:
+        Genoa: 17
+      theirsTotal: 17
+      theirsLost: 1
+      location: Cape Santa Maria di Leuca
+      side: allies attacking
+  - id: 1432-06-27-battle-cape-mondego
+    'on': '1432-06-27'
+    kind: battle
+    what: >-
+      Off Cape Mondego the Mecklenburg fleet of 29 attacks 32 ships of Catalonia and 8 of the crown under
+      Berenguer Ramon of Catalonia and loses 18 of them without sinking one. It is the first time the
+      Emperor's own ships fight in the crusade
+    who:
+      - berenguer-ramon-de-montsoriu
+    threads:
+      - crusade-of-835
+      - voyages
+    from:
+      - save
+    cite: save of 27 July 1432
+    detail:
+      result: victory
+      naval: true
+      units: ships
+      ours:
+        Catalonia: 32
+        al-Andalus: 8
+      oursTotal: 40
+      oursLost: 0
+      theirs:
+        Mecklenburg: 29
+      theirsTotal: 29
+      theirsLost: 18
+      location: Cape Mondego
+      side: crusaders attacking
+      commanders:
+        ours: Berenguer Ramon de Montsoriu, lord of Catalonia
+        theirs: John of Mecklenburg
+  - id: 1432-07-12-battle-gulf-talamone
+    'on': '1432-07-12'
+    kind: battle
+    what: In the Gulf of Talamone two Genoese ships attack 21 of Tunis under Jalīl and are lost
+    minor: true
+    threads:
+      - crusade-of-835
+    from:
+      - save
+    cite: save of 27 July 1432
+    detail:
+      result: allied victory
+      naval: true
+      units: ships
+      ours:
+        Tunis: 21
+      oursTotal: 21
+      oursLost: 0
+      theirs:
+        Genoa: 2
+      theirsTotal: 2
+      theirsLost: 2
+      location: Gulf of Talamone
+      side: crusaders attacking
+      commanders:
+        ours: Jalīl of Tunis
+  - id: 1432-07-17-birth-ahmad
+    'on': '1432-07-17'
+    kind: birth
+    what: A son, Aḥmad, is born to the heir Ismāʿīl
+    who:
+      - ismail-ibn-muhammad-ibn-ismail
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 10 October 1435
+    detail:
+      name: Aḥmad
+  - id: 1432-07-27-peace-with-the-pope
+    'on': '1432-07-27'
+    kind: peace
+    what: >-
+      The Pope, at war with Milan and Mantua on another front, sues for peace. He pays al-Andalus 114.64 gold
+      at once and a tenth of his income for five years in reparations, 36.45 gold a month at the time, and
+      annuls all his treaties with Genoa, Siena and Aquileia. No land changes hands, and the second crusade is
+      over
+    who:
+      - pope-fabrizio-ricci
+      - muhammad-ibn-ismail-ibn-saad
+    threads:
+      - crusade-of-835
+      - europe
+    from:
+      - save
+      - seen
+      - told
+    cite: Trent's account and screenshot of the peace terms; save of 27 July 1432 (before the peace)
+    detail:
+      terms:
+        - the Papal States pay 114.64 gold at once
+        - >-
+          the Papal States pay war reparations to al-Andalus: 10% of their income for five years (36.45 gold a
+          month at the peace)
+        - the Papal States annul all treaties with Aquileia
+        - the Papal States annul all treaties with Genoa
+        - the Papal States annul all treaties with Siena
+      warScore: 5
+      peaceScreen: acceptance +26 ('They will accept')
+      otherWar: >-
+        Mantua and Milan had been at war with the Pope's ally Faenza since 6 March 1432, with the Pope, Genoa
+        and their subjects defending
+      lateJoiners: Friuli and Lower Carinthia joined the crusade on 3 and 4 July 1432
+      hijri: 28 Dhū al-Qaʿda 835
+  - id: 1432-07-the-decree-on-the-taifas
+    'on': '1432-07-27'
+    kind: realm
+    what: >-
+      Emboldened by the crusade's end, the Emperor decrees that the ṭāʾifas of Aragon, Qūnka, Banbalūna,
+      Burghush and Liyūn, once well enough integrated, must impose the ways of al-Andalus on their remaining
+      Christians, so that no enemies can gather in the empire's rear. Only Aragon and Qūnka qualify yet, and
+      their courts are ordered to act. There is more than a little grumbling
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - rodrigo-de-borja
+      - maryam-bint-saad-ibn-faraj
+    threads:
+      - europe
+    from:
+      - told
+    cite: Trent's account
+    detail:
+      taifas:
+        - Aragon
+        - Qūnka
+        - Banbalūna
+        - Burghush
+        - Liyūn
+      actingNow:
+        - Aragon
+        - Qūnka
+      condition: sufficient integration
+      break: his forebears had left the ṭāʾifas to manage their own courts
+      when: after the peace of 27 July 1432; no save shows the order
+tellings:
+  - id: 0835-11-28-of-the-peace-of-the-pope-and-the-decree-on-the-taifas
+    'on': '1432-07-27'
+    title: Of the Peace of the Pope, and the Decree on the Ṭāʾifas
+    verse: 10:99
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - pope-fabrizio-ricci
+      - berenguer-ramon-de-montsoriu
+      - rodrigo-de-borja
+      - magdalena-de-borja
+      - maryam-bint-saad-ibn-faraj
+      - jadila-bint-saad-ibn-faraj
+      - saad-ibn-ismail-ibn-saad
+    where:
+      - ishbiliyya
+    covers:
+      - 1432-05-17-battle-terracina
+      - 1432-06-01-battle-viterbo
+      - 1432-06-27-battle-cape-mondego
+      - 1432-07-27-peace-with-the-pope
+      - 1432-07-the-decree-on-the-taifas
+    text: >
+      By the summer of 835 the crusade had run out of crusaders. The Ḥafṣid landings in Lazio ended at
+      Terracina, where the Pope's army caught two hundred and seventy Tunisians and killed them all, and the
+      Moroccans who had marched on Viterbo were beaten off by an army seven times their size. But the Pope's
+      army could not stay in Lazio. Since Rajab the lords of Mantua and Milan had been at war with Faenza, his
+      vassal, and the Pope, Genoa and every subject of Genoa were bound to defend it. The court of
+      [Ishbīliya](place:ishbiliyya) watched the princes of Christendom fight a crusade against al-Andalus with
+      one hand and each other with the other, and found it very satisfying.
+
+
+      The war at sea ended in the Ocean, where it had never been expected. On 27 Shawwāl a fleet of
+      twenty-nine ships from Mecklenburg, on the Baltic, came down the coast of Burtuqāl and attacked a fleet
+      off Cape Mondego. It was [Berenguer Ramon](person:berenguer-ramon-de-montsoriu) of Catalonia with
+      thirty-two Catalan ships and eight of the Emperor's own. The Mecklenburgers lost eighteen ships and did
+      not sink one. It was the first time in the war that the Emperor's ships had fought, and the Emperor had
+      the report read to him more than once.
+
+
+      In Dhū al-Qaʿda the Pope's envoys came to Ishbīliya asking for peace. The Emperor's terms were short.
+      The Pope would pay a hundred and fifteen dīnārs at once and a tenth of his income for five years, some
+      thirty-six dīnārs a month, in reparation for the war he had begun, and he would annul every treaty he
+      had with Genoa, Siena and Aquileia, so that the next pope who preached a crusade would have to find his
+      allies again from the beginning. No town changed hands. [Fabrizio Ricci](person:pope-fabrizio-ricci)
+      accepted on 28 Dhū al-Qaʿda 835 (27 July 1432), and the Crusade of 835 was over ten months after it
+      began. The court called it the Peace of Dhū al-Qaʿda. It said that the Christians could not even keep
+      their own quarrels in check long enough to fight the Muslims.
+
+
+      The peace changed the Emperor. His father and grandfather had left the ṭāʾifas to rule their own courts
+      in their own way, Christian subjects and all, and had been content with tribute, loyalty and soldiers.
+      Muḥammad was no longer content. A crusade had been preached against his realm and fought in the name of
+      its Christians, and he did not mean to leave enemies in his rear for the next one. He decreed that the
+      ṭāʾifas of Arghūn, Qūnka, Banbalūna, Burghush and Liyūn, each as soon as it was bound closely enough to
+      the crown, were to impose the ways of al-Andalus on the Christians who remained in their lands.
+
+
+      Only two were bound closely enough yet, and both were ruled by the Emperor's own family by marriage.
+      Arghūn belonged to [Rodrigo de Borja](person:rodrigo-de-borja), the brother of the Empress
+      [Magdalena](person:magdalena-de-borja), a gentle and talkative man whose kingdom had just been the
+      target of the crusade. Qūnka belonged to the Shaykha [Maryam](person:maryam-bint-saad-ibn-faraj), sister
+      of the Empress [Jadīla](person:jadila-bint-saad-ibn-faraj) and married to the Emperor's brother
+      [Saʿd](person:saad-ibn-ismail-ibn-saad). Their courts were ordered to act, and they obeyed. They also
+      complained, and in the ṭāʾifas of the north, which knew their turn would come, the complaints were
+      louder. For three generations the house of Naṣr had told the Christians of Iberia that its coming was a
+      homecoming. Some of the old men of the dīwān wondered what the Christians would call it now.
+
+
+      *And had your Lord willed, those on earth would have believed, all of them entirely. Then will you
+      compel the people in order that they become believers?*
+    behind: >-
+      The peace terms are from Trent's screenshot, and the save of 27 July 1432 was taken just before the
+      peace. There's no save after it, because no land changed hands. The war score in that save is 5 in the
+      defenders' favour. The peace screen's gold line, +114.64, is the immediate payment. The reparations are
+      a tenth of the Pope's income for five years, 36.45 gold a month at the time of the peace (Trent). The
+      war with Mantua and Milan (started 6 March 1432, against Faenza, with the Pope and Genoa defending) and
+      the late joining of Friuli and Lower Carinthia are from the save. The decree on the ṭāʾifas is Trent's
+      account and has no save of its own. It is dated to the day of the peace, and the order may have been
+      given a little later.
+
+
+      Invented colour: the court's satisfaction at Christendom's two wars, the Emperor rereading the Mondego
+      report, the Pope's envoys coming to Ishbīliya, the purpose behind the treaty clause, the name "Peace of
+      Dhū al-Qaʿda", the louder complaints in the northern ṭāʾifas, and the old men of the dīwān at the end.
+      Who complained, and how loudly, is Trent's "more than a little grumbling", given a shape.

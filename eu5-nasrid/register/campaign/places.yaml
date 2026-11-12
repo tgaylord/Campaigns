@@ -1,0 +1,781 @@
+- id: gharnata
+  name: Gharnāṭa
+  plain: Ḡrnaṭa
+  arabic: غرناطة
+  kind: location
+  major: true
+  held:
+    - from: '1337-04-01'
+      to: null
+  game: granada
+- id: al-mariyya
+  name: al-Mariyya
+  plain: El-Mariyya
+  arabic: المرية
+  kind: location
+  major: true
+  held:
+    - from: '1337-04-01'
+      to: null
+  game: almeria
+- id: al-mansura
+  name: al-Manṣūra
+  plain: El-Mnṣura
+  arabic: المنصورة
+  kind: location
+  held:
+    - from: '1337-04-01'
+      to: null
+  game: almanzora
+- id: basta
+  name: Basṭa
+  plain: Mdina Bstha
+  arabic: بسطة
+  kind: location
+  major: true
+  held:
+    - from: '1337-04-01'
+      to: null
+  game: baza
+- id: jarghal
+  name: Jarghāl
+  plain: Jrgal
+  arabic: جرغال
+  kind: location
+  held:
+    - from: '1337-04-01'
+      to: null
+  game: gergal
+- id: washqa
+  name: Washqa
+  plain: Wšqa
+  arabic: وشقة
+  kind: location
+  held:
+    - from: '1337-04-01'
+      to: null
+  game: huescar
+- id: muyaqar
+  name: Muyaqar
+  plain: Myaqar
+  arabic: مويقر
+  kind: location
+  held:
+    - from: '1337-04-01'
+      to: null
+  game: mojacar
+- id: ballish-al-ahmar
+  name: Ballish al-Aḥmar
+  plain: Blliš el-Aḥmar
+  arabic: بلش الأحمر
+  kind: location
+  held:
+    - from: '1337-04-01'
+      to: null
+  game: velez_rubio
+- id: abdara
+  name: Abdara
+  plain: Bdara
+  arabic: أبدرة
+  kind: location
+  held:
+    - from: '1337-04-01'
+      to: null
+  game: adra
+- id: hisn-al-munakkab
+  name: Ḥiṣn al-Munakkab
+  plain: Ḥṣn el-Mnakkab
+  arabic: حصن المنكب
+  kind: location
+  held:
+    - from: '1337-04-01'
+      to: null
+  game: almunecar
+- id: wadi-ash
+  name: Wādī Āsh
+  plain: Wadi Aš
+  arabic: وادي آش
+  kind: location
+  major: true
+  held:
+    - from: '1337-04-01'
+      to: null
+  game: guadix
+- id: illura
+  name: Illūra
+  plain: Llura
+  arabic: إلورة
+  kind: location
+  held:
+    - from: '1337-04-01'
+      to: null
+  game: illora
+- id: lawsha
+  name: Lawsha
+  plain: Lawša
+  arabic: لوشة
+  kind: location
+  major: true
+  held:
+    - from: '1337-04-01'
+      to: null
+  game: loja
+- id: binar
+  name: Bīnār
+  plain: Bnar
+  arabic: بينار
+  kind: location
+  held:
+    - from: '1337-04-01'
+      to: null
+  game: pinar
+- id: urjuba
+  name: Yuz Aryuba
+  plain: Yuz Aryuba
+  kind: location
+  held:
+    - from: '1337-04-01'
+      to: null
+  game: orgiva
+- id: malaqa
+  name: Mālaqa
+  plain: Malaqa
+  arabic: مالقة
+  kind: location
+  major: true
+  held:
+    - from: '1337-04-01'
+      to: null
+  game: malaga
+- id: antaqira
+  name: Antaqīra
+  plain: Mdina Ntakira
+  arabic: أنتقيرة
+  kind: location
+  held:
+    - from: '1337-04-01'
+      to: null
+  game: antequera
+- id: ballash
+  name: Ballash
+  plain: Ballax
+  arabic: بلش
+  kind: location
+  held:
+    - from: '1337-04-01'
+      to: null
+  game: velez_malaga
+- id: marballa
+  name: Marballa
+  plain: Marballa
+  arabic: مربلة
+  kind: location
+  held:
+    - from: '1370-09-12'
+      to: null
+  game: marbella
+- id: runda
+  name: Runda
+  plain: Ḥṣn er-Runda
+  arabic: رندة
+  kind: location
+  major: true
+  held:
+    - from: '1370-09-12'
+      to: null
+  game: ronda
+- id: jabal-tariq
+  name: Jabal Ṭāriq
+  plain: Jbal Ṭariq
+  arabic: جبل طارق
+  kind: location
+  major: true
+  held:
+    - from: '1370-09-12'
+      to: null
+  game: gibraltar
+- id: al-jazira-al-khadra
+  name: al-Jazīra al-Khaḍrāʾ
+  plain: El-Jzira el-Ḵaḍra
+  arabic: الجزيرة الخضراء
+  kind: location
+  major: true
+  held:
+    - from: '1370-09-12'
+      to: null
+  game: algeciras
+- id: tarifa
+  name: Ṭarīfa
+  plain: Ṭrifa
+  arabic: طريفة
+  kind: location
+  major: true
+  held:
+    - from: '1370-09-12'
+      to: null
+  game: tarifa
+- id: wubira
+  name: Wubīra
+  plain: Wbira
+  kind: location
+  held:
+    - from: '1349-01-27'
+      to: '1353-02-01'
+    - from: '1353-07-05'
+      to: null
+  game: olvera
+- id: qadis
+  name: Qādis
+  plain: Qadis
+  arabic: قادس
+  kind: location
+  major: true
+  held:
+    - from: '1370-09-12'
+      to: null
+  game: cadiz
+- id: ishbiliyya
+  name: Ishbīliya
+  plain: Šbilya
+  arabic: إشبيلية
+  kind: location
+  major: true
+  held:
+    - from: '1349-01-27'
+      to: '1353-02-01'
+    - from: '1353-07-05'
+      to: null
+  game: sevilla
+- id: qurtuba
+  name: Qurṭuba
+  plain: Qrṭuba
+  arabic: قرطبة
+  kind: location
+  major: true
+  held:
+    - from: '1349-01-27'
+      to: '1353-02-01'
+    - from: '1353-07-05'
+      to: null
+  game: cordoba
+- id: jayyan
+  name: Jayyān
+  plain: Jayyan
+  arabic: جيان
+  kind: location
+  major: true
+  held:
+    - from: '1349-01-27'
+      to: '1353-02-01'
+    - from: '1353-07-05'
+      to: null
+  game: jaen
+- id: mursiyya
+  name: Mursiyya
+  plain: Mursiyya
+  arabic: مرسية
+  kind: location
+  major: true
+  held:
+    - from: '1349-01-27'
+      to: null
+      via: MUC
+  game: murcia
+- id: sabta
+  name: Sabta
+  plain: Sabta
+  arabic: سبتة
+  kind: location
+  major: true
+  game: ceuta
+- id: tanja
+  name: Ṭanja
+  plain: Ṭanja
+  arabic: طنجة
+  kind: location
+  major: true
+  game: tangier
+- id: fas
+  name: Fās
+  plain: Fas
+  arabic: فاس
+  kind: location
+  major: true
+  game: fez
+- id: tilimsan
+  name: Tilimsān
+  plain: Tlemsan
+  arabic: تلمسان
+  kind: location
+  major: true
+  game: tlemcen
+- id: shaluqa
+  name: Shalūqa
+  plain: Šaluqa
+  arabic: شلوقة
+  kind: location
+  held:
+    - from: '1370-09-12'
+      to: null
+  game: sanlucar
+- id: qarmuna
+  name: Qarmūna
+  plain: Qrmuna
+  arabic: قرمونة
+  kind: location
+  held:
+    - from: '1351-05-21'
+      to: '1353-02-01'
+    - from: '1353-07-05'
+      to: null
+  game: carmona
+- id: jumalla
+  name: Jumalla
+  plain: Jmalla
+  arabic: جملة
+  kind: location
+  held:
+    - from: '1340-08-11'
+      to: '1340-08-23'
+    - from: '1340-08-23'
+      to: null
+      via: MUC
+  game: jumilla
+- id: muntil
+  name: Munṭīl
+  plain: Mnṭil
+  kind: location
+  game: montiel
+- id: al-karash
+  name: al-Karash
+  plain: Alcaraz
+  kind: location
+  game: alcaraz
+- id: uryula
+  name: Uryūla
+  plain: Oriola
+  arabic: أوريولة
+  kind: location
+  major: true
+  held:
+    - from: '1340-08-11'
+      to: '1340-08-23'
+    - from: '1340-08-23'
+      to: '1420-08-01'
+      via: VAL
+    - from: '1420-08-01'
+      to: null
+  game: orihuela
+- id: balansiyya
+  name: Balansiyya
+  plain: Blansiya
+  arabic: بلنسية
+  kind: location
+  major: true
+  held:
+    - from: '1340-08-11'
+      to: '1340-08-23'
+    - from: '1340-08-23'
+      to: '1420-08-01'
+      via: VAL
+    - from: '1420-08-01'
+      to: null
+  game: valencia
+- id: shatiba
+  name: Shāṭiba
+  plain: Šaṭba
+  arabic: شاطبة
+  kind: location
+  major: true
+  held:
+    - from: '1340-08-11'
+      to: '1340-08-23'
+    - from: '1340-08-23'
+      to: '1420-08-01'
+      via: VAL
+    - from: '1420-08-01'
+      to: null
+  game: jativa
+- id: daniya
+  name: Dāniya
+  plain: Daniyya
+  arabic: دانية
+  kind: location
+  major: true
+  held:
+    - from: '1340-08-11'
+      to: '1340-08-23'
+    - from: '1340-08-23'
+      to: '1420-08-01'
+      via: VAL
+    - from: '1420-08-01'
+      to: null
+  game: denia
+- id: al-qant
+  name: al-Qant
+  plain: Al-Qant
+  arabic: لقنت
+  kind: location
+  major: true
+  held:
+    - from: '1340-08-11'
+      to: '1340-08-23'
+    - from: '1340-08-23'
+      to: '1420-08-01'
+      via: VAL
+    - from: '1420-08-01'
+      to: null
+  game: alicante
+- id: alsh
+  name: Alsh
+  plain: Alš
+  arabic: ألش
+  kind: location
+  held:
+    - from: '1340-08-11'
+      to: '1340-08-23'
+    - from: '1340-08-23'
+      to: '1420-08-01'
+      via: VAL
+    - from: '1420-08-01'
+      to: null
+  game: elche
+- id: qandiya
+  name: Qandiya
+  plain: Qandia
+  arabic: قندية
+  kind: location
+  held:
+    - from: '1340-08-11'
+      to: '1340-08-23'
+    - from: '1340-08-23'
+      to: '1420-08-01'
+      via: VAL
+    - from: '1420-08-01'
+      to: null
+  game: gandia
+- id: al-quy
+  name: al-Qūy
+  plain: Al-Quy
+  arabic: القوي
+  kind: location
+  held:
+    - from: '1340-08-11'
+      to: '1340-08-23'
+    - from: '1340-08-23'
+      to: '1420-08-01'
+      via: VAL
+    - from: '1420-08-01'
+      to: null
+  game: alcoy
+- id: ayura
+  name: Ayūra
+  plain: Ayūra
+  arabic: أيورة
+  kind: location
+  held:
+    - from: '1340-08-11'
+      to: '1340-08-23'
+    - from: '1340-08-23'
+      to: '1420-08-01'
+      via: VAL
+    - from: '1420-08-01'
+      to: null
+  game: ayora
+- id: bunyul
+  name: Bunyūl
+  plain: Bnyul
+  arabic: بنيول
+  kind: location
+  held:
+    - from: '1340-08-11'
+      to: '1340-08-23'
+    - from: '1340-08-23'
+      to: '1420-08-01'
+      via: VAL
+    - from: '1420-08-01'
+      to: null
+  game: bunol
+- id: shalba
+  name: Shalba
+  plain: Šalba
+  arabic: شلبة
+  kind: location
+  held:
+    - from: '1340-08-11'
+      to: '1340-08-23'
+    - from: '1340-08-23'
+      to: '1420-08-01'
+      via: VAL
+    - from: '1420-08-01'
+      to: null
+  game: chelva
+- id: liriya
+  name: Līriya
+  plain: Līriya
+  arabic: ليرية
+  kind: location
+  held:
+    - from: '1340-08-11'
+      to: '1340-08-23'
+    - from: '1340-08-23'
+      to: '1420-08-01'
+      via: VAL
+    - from: '1420-08-01'
+      to: null
+  game: lliria
+- id: qusantina
+  name: Qusanṭīna
+  plain: Qsanṭina
+  arabic: قسنطينة
+  kind: location
+  held:
+    - from: '1351-05-21'
+      to: '1353-02-01'
+    - from: '1353-07-05'
+      to: null
+  game: constantina
+- id: al-qusayr
+  name: al-Quṣayr
+  plain: El-Qṣayr
+  arabic: القصير
+  kind: location
+  held:
+    - from: '1349-01-27'
+      to: '1353-02-01'
+    - from: '1353-07-05'
+      to: null
+  game: carpio
+- id: balma
+  name: Balma
+  plain: Balma
+  kind: location
+  held:
+    - from: '1349-01-27'
+      to: '1353-02-01'
+    - from: '1353-07-05'
+      to: null
+  game: palma_del_rio
+- id: istijja
+  name: Istijja
+  plain: Stijja
+  arabic: إستجة
+  kind: location
+  held:
+    - from: '1349-01-27'
+      to: '1353-02-01'
+    - from: '1353-07-05'
+      to: null
+  game: ecija
+- id: sharish
+  name: Sharīsh
+  plain: Jerez de la Frontera
+  arabic: شريش
+  kind: location
+  major: true
+  held:
+    - from: '1370-09-12'
+      to: null
+  game: jerez_de_la_frontera
+- id: labla
+  name: Labla
+  plain: Niebla
+  arabic: لبلة
+  kind: location
+  held:
+    - from: '1370-09-12'
+      to: null
+  game: niebla
+- id: shidhuna
+  name: Shidhūna
+  plain: Medina Sidonia
+  arabic: شذونة
+  kind: location
+  held:
+    - from: '1370-09-12'
+      to: null
+  game: medina_sidonia
+- id: arkush
+  name: Arkush
+  plain: Arcos de la Frontera
+  arabic: أركش
+  kind: location
+  held:
+    - from: '1370-09-12'
+      to: null
+  game: arcos_de_la_frontera
+- id: ayamunt
+  name: Ayamūnt
+  plain: Ayamonte
+  arabic: أيامونت
+  kind: location
+  held:
+    - from: '1366-04-05'
+      to: null
+  game: ayamonte
+- id: walba
+  name: Walba
+  plain: Huelva
+  arabic: ولبة
+  kind: location
+  held:
+    - from: '1366-04-05'
+      to: null
+  game: huelva
+- id: shilb
+  name: Shilb
+  plain: Silves
+  arabic: شلب
+  kind: location
+  major: true
+  held:
+    - from: '1364-09-11'
+      to: '1366-04-13'
+    - from: '1366-04-13'
+      to: null
+      via: ALV
+  game: silves
+- id: ukshunuba
+  name: Ukshūnuba
+  plain: Faro
+  arabic: أكشونبة
+  kind: location
+  held:
+    - from: '1364-09-11'
+      to: '1366-04-13'
+    - from: '1366-04-13'
+      to: null
+      via: ALV
+  game: faro
+- id: baja
+  name: Bāja
+  plain: Beja
+  arabic: باجة
+  kind: location
+  held:
+    - from: '1364-09-11'
+      to: '1366-04-13'
+    - from: '1366-04-13'
+      to: null
+      via: ALV
+  game: beja
+- id: al-ushbuna
+  name: al-Ushbūna
+  plain: Lisbon
+  arabic: الأشبونة
+  kind: location
+  major: true
+  held:
+    - from: '1395-06-22'
+      to: null
+  game: lisbon
+- id: tulaytula
+  name: Ṭulayṭula
+  plain: Toledo
+  arabic: طليطلة
+  kind: location
+  major: true
+  game: toledo
+- id: barshaluna
+  name: Barshalūna
+  plain: Barcelona
+  arabic: برشلونة
+  kind: location
+  major: true
+  game: barcelona
+- id: tarrakuna
+  name: Ṭarrakūna
+  plain: Tarragona
+  arabic: طركونة
+  kind: location
+  game: tarragona
+- id: jarunda
+  name: Jarunda
+  plain: Girona
+  arabic: جرندة
+  kind: location
+  game: girona
+- id: larida
+  name: Lārida
+  plain: Lleida
+  arabic: لاردة
+  kind: location
+  game: lleida
+- id: turtusha
+  name: Ṭurṭūsha
+  plain: Tortosa
+  arabic: طرطوشة
+  kind: location
+  game: tortosa
+- id: saraqusta
+  name: Saraqusṭa
+  plain: Zaragoza
+  arabic: سرقسطة
+  kind: location
+  game: zaragoza
+- id: qalat-ayyub
+  name: Qalʿat Ayyūb
+  plain: Calatayud
+  arabic: قلعة أيوب
+  kind: location
+  game: calatayud
+- id: shaluqa-al-kubra
+  name: Shalūqa al-Kubrā
+  plain: Šaluqa el-Kubra
+  arabic: شلوقة الكبرى
+  kind: location
+  game: sanlucar_la_mayor
+- id: batalyaws
+  name: Baṭalyaws
+  plain: Badajoz
+  arabic: بطليوس
+  kind: location
+  game: badajoz
+- id: marida
+  name: Mārida
+  plain: Mérida
+  arabic: ماردة
+  kind: location
+  game: merida
+- id: banbaluna
+  name: Banbalūna
+  plain: Pamplona
+  arabic: بنبلونة
+  kind: location
+  game: pamplona
+- id: majrit
+  name: Majrīṭ
+  plain: Madrid
+  arabic: مجريط
+  kind: location
+  game: madrid
+- id: shalamanka
+  name: Shalamanka
+  plain: Salamanca
+  arabic: شلمنقة
+  kind: location
+  game: salamanca
+- id: qunka
+  name: Qūnka
+  plain: Cuenca
+  arabic: قونكة
+  kind: location
+  game: cuenca
+- id: yabura
+  name: Yābura
+  plain: Évora
+  arabic: يابرة
+  kind: location
+  game: evora
+- id: shantarin
+  name: Shantarīn
+  plain: Santarém
+  arabic: شنترين
+  kind: location
+  game: santarem
+- id: shant-yaqub
+  name: Shant Yāqub
+  plain: Santiago de Compostela
+  arabic: شنت ياقب
+  kind: location
+  game: santiago_compostela

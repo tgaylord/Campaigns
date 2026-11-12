@@ -1,0 +1,35 @@
+name: Ismāʿīl ibn Yūsuf
+arabic: إسماعيل بن يوسف
+house: Naṣrid
+tier: key
+born: '1354-05-05'
+died: '1408-05-27'
+father: yusuf-i
+mother: sayyida-of-fezzan
+traits:
+  - child_gallant
+stations:
+  - role: heir
+    from: '1364-09-11'
+    to: '1366-10-02'
+    source: checkpoints
+    approx: true
+  - role: general
+    from: '1370-11-17'
+    to: '1373-09-19'
+    source: save
+    approx: false
+  - role: dīwān
+    from: '1380-12-04'
+    to: '1408-05-27'
+    source: save
+    approx: false
+note: >-
+  Heir to his brother Saʿd until Saʿd's son Ismāʿīl was born on 8 March 1366 (saves of 11 September 1364 and 6
+  November 1366). Married Hippolyte of Villa di Chiesa, a Sardinian of Cagliari, on 14 September 1370. He took
+  a seat in the dīwān on 1 December 1382, as the revolt of Ṭulayṭula broke out (save of 8 December 1382). He
+  left the dīwān in August 1405, when Muḥammad ibn Yūsuf took his seat, and died on 27 May 1408, aged
+  fifty-four (save of 5 August 1408).
+game:
+  id: 41904
+  name: Ismail

@@ -1,0 +1,32 @@
+name: Berenguer Ramon de Montsoriu
+house: Montsoriu
+born: '1380-12-02'
+died: '1432-08-30'
+father: francesc-de-montsoriu
+mother: fatima-bint-yusuf
+roles:
+  - ruler of the Ṭāʾifa of Catalonia
+traits:
+  - careful
+  - naval_engineer
+  - kind_hearted
+  - loose_lips
+stations:
+  - role: general
+    from: '1398-03-26'
+    to: '1404-06-02'
+    source: save
+    approx: false
+  - role: admiral
+    from: '1404-06-02'
+    to: '1432-08-30'
+    source: save
+    approx: false
+note: >-
+  Son of Francesc de Montsoriu, ḥājib of Catalonia, and Fāṭima bint Yūsuf, daughter of Yūsuf I, so a first
+  cousin of the Emperor Ismāʿīl; a Muslim. He rules the Ṭāʾifa of Catalonia from Barshalūna. In December 1428
+  the court made the integration of his ṭāʾifa into the crown a first concern, expected to be complete by the
+  middle of 1437 (save of 1 December 1428; Trent's account).
+game:
+  id: 67961
+  name: Berengar Raymond

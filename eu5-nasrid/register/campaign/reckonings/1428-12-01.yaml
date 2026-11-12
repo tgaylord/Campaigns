@@ -1,0 +1,259 @@
+date: '1428-12-01'
+title: The English Crown of France
+source:
+  save: SP_ADU_1428_12_01 (compressed)
+  game: 1.4.7
+summary: >-
+  A save for Europe: three days after the peace that ended the Hundred Years' War, Edward of England is king
+  of France as well. English Toulouse holds Languedoc along the Pyrenees, beside the Ṭāʾifa of Catalonia, and
+  England, Castile's one ally, is the second power of the world. Al-Andalus is unchanged: 194 towns, seven
+  ṭāʾifas, third in the world with 108 points. Estates estimated from the reading of 16 November. Treasury
+  611; stability 2; manpower 14,100 of 15,700.
+realm:
+  towns: 194
+  souls: 2558953
+  treasury: 611
+  income: 348.8
+  expenses: 277.7
+  stability: 2.1
+  prestige: 65
+  regiments: 9
+  ships: 50
+  manpower: 14117
+court:
+  ruler: ismail-ibn-saad
+  heir: muhammad-ibn-ismail-ibn-saad
+  capital: ishbiliyya
+  council:
+    - who: saad-ibn-yusuf-ibn-saad
+      seat: Promoting Andalusī culture
+    - who: muhammad-ibn-yusuf-ibn-faraj
+      seat: Integrating the new lands
+    - who: umm-al-fath-bint-muhammad
+      seat: Integrating the new lands
+    - who: yusuf-ibn-saad
+      seat: Promoting Andalusī culture
+    - who: jadila-bint-saad-ibn-faraj
+      seat: Developing the provinces
+standing:
+  allies:
+    - Mamluks
+    - Morocco
+    - Tunis
+  subjects:
+    - Catalonia (taifa)
+    - Aragon (taifa)
+    - Taifa of Cuenca (taifa)
+    - Kingdom of Portugal (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+  estates:
+    - name: Crown
+      power: 29.55
+    - name: Nobility
+      power: 17.02
+      mood: 34
+    - name: ʿUlamāʾ
+      power: 12.58
+      mood: 50
+    - name: Burghers
+      power: 21.4
+      mood: 49
+    - name: Commoners
+      power: 2.81
+      mood: 50
+    - name: Dhimmī
+      power: 16.64
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 785263
+    Castilian: 722309
+    Portuguese: 483909
+    Sephardi: 185151
+    Catalan: 176209
+    Leonese: 162085
+  faiths:
+    Sunni: 1219252
+    Catholic: 1147419
+    Jewish: 176897
+    Guanche_religion: 12989
+    Rogo_miki_religion: 684
+map:
+  ours:
+    - GRA
+  subjects:
+    - CAT
+    - ARA
+    - ABA60
+    - POR
+    - ABA42
+    - ABA49
+    - ABA55
+  allies:
+    - MAM
+    - MOR
+    - TUN
+beats:
+  - id: 1428-11-28-peace-of-the-hundred-years-war
+    'on': '1428-11-28'
+    kind: world
+    what: >-
+      The Hundred Years' War ends in an English victory. France gives up eighty towns: the whole of Languedoc,
+      from Toulouse and Narbonne to Carcassonne, Montpellier, Nîmes and Foix, to a new English dominion of
+      Toulouse; Picardy and Poitou, from Amiens and Saint-Quentin to Poitiers, to England itself; the Agenais
+      to English Aquitaine; the Bassigny and Langres to Burgundy, England's vassal. Castile, England's ally,
+      is part of the peace
+    who:
+      - edward-v-of-england
+      - philippe-vii-of-france
+    from:
+      - save
+    cite: save of 1 December 1428
+    detail:
+      war: 'England against France, from 28 April 1427 (Trent: the end of the Hundred Years'' War)'
+      towns:
+        Toulouse (new English dominion, capital Narbonne): 42
+        England: 24
+        Burgundy (English vassal; with 13 more from Franche-Comté): 10
+        Aquitaine (English fief): 9
+        Armagnac: 3
+      toulouse: >-
+        42 towns, about 790,000 people; English as its state culture, Catholic; it borders the Ṭāʾifa of
+        Catalonia along the Pyrenees
+      france: 212 towns and 45 in subjects before, 131 and 29 after
+      truces: England, Castile and Bohemia with France to 28 February 1440 (about 92 war score)
+  - id: 1428-12-01-catalonia-to-the-crown
+    'on': '1428-12-01'
+    kind: land
+    what: >-
+      The integration of the Ṭāʾifa of Catalonia into the crown becomes a first concern of the court. It is
+      expected to be complete in the middle of 1437, when the twenty-eight towns of the Catalans, from
+      Barshalūna and Perpignan to Talarn and Puigcerdà, will be the Emperor's own
+    who:
+      - ismail-ibn-saad
+      - berenguer-ramon-de-montsoriu
+    where:
+      - barshaluna
+    from:
+      - told
+    cite: Trent's account, December 1428
+    detail:
+      taifa: >-
+        Catalonia, a ṭāʾifa since 16 March 1375; 28 towns, about 540,000 people; ruler Berenguer Ramon de
+        Montsoriu, son of Fāṭima bint Yūsuf, born 1380
+      expected: mid-1437 (Trent)
+      emphasis: the annexation of Catalonia now has a much greater emphasis at court (Trent)
+  - id: 1428-12-01-forts-of-jaca-and-talarn
+    'on': '1428-12-01'
+    kind: realm
+    what: >-
+      Two new fortresses are ordered in the Pyrenees, at Jaca in the Ṭāʾifa of Arghūn and at Talarn in the
+      Ṭāʾifa of Catalonia. Since the peace of November the far side of those mountains has been English
+      Toulouse
+    who:
+      - ismail-ibn-saad
+    from:
+      - told
+    cite: Trent's account, December 1428
+    detail:
+      forts:
+        Jaca: Ṭāʾifa of Aragon, the Aragonese Pyrenees
+        Talarn: Ṭāʾifa of Catalonia, the Pallars
+      when: ordered after the save of 1 December 1428 (Trent's account)
+      context: >-
+        Foix and Fenouillet across the mountains passed to English Toulouse on 28 November 1428 (save of 1
+        December 1428)
+  - id: 1428-12-01-the-english-crown-of-france
+    'on': '1428-12-01'
+    kind: world
+    what: >-
+      Three days after the peace, Edward, king of England, is made king of France as well. England, France and
+      the Dauphiné have one crown; the French king Philippe, who had reigned since 1421, keeps a seat in his
+      conqueror's French council. England becomes the second power of the world by a widening margin, and the
+      only great power that counts al-Andalus an enemy is now master of both shores of the Channel and of the
+      Pyrenees beyond Catalonia
+    who:
+      - edward-v-of-england
+      - philippe-vii-of-france
+    from:
+      - save
+    cite: save of 1 December 1428
+    detail:
+      union: England, France and the Dauphiné, from 1 December 1428
+      edward: >-
+        born 29 November 1400; king of England from 18 April 1423 (Edward V), king of France and lord of
+        Toulouse from 1 December 1428 (56/38/47); heir Richard
+      philippe: >-
+        Philippe VII, born 2 June 1398, king of France from 6 April 1421; in the French cabinet after the
+        union
+      england: 2nd in the world, 119 points (108 before the peace); 273 towns and 280 in subjects
+      allies: England is allied to Castile, and names France, Hungary and al-Andalus as its rivals
+      why: which matters for us because the English are allied with the Castilians (Trent)
+tellings:
+  - id: 0832-02-22-of-the-english-crown-of-france
+    'on': '1428-12-01'
+    title: Of the English Crown of France
+    verse: 30:2-4
+    who:
+      - ismail-ibn-saad
+      - edward-v-of-england
+      - philippe-vii-of-france
+    where:
+      - ishbiliyya
+      - balansiyya
+      - barshaluna
+    covers:
+      - 1427-04-28-war-in-france
+      - 1428-11-28-peace-of-the-hundred-years-war
+      - 1428-12-01-the-english-crown-of-france
+      - 1428-05-25-the-spies-go-north
+      - 1419-09-the-road-to-balansiyya
+    text: >
+      The kings of England and France had been at war, on and off, since before the house of Naṣr had a sultan
+      old enough to remember it. The scribes of the first survey had written in 772 that the two hated each
+      other, and that the French king was losing his kingdom slowly. In Rajab 830 the English went to war
+      again, with all their vassals in France behind them and King Fernando of Qashtāla beside them, and this
+      time the losing was not slow. Fernando made his own peace with the French in the spring and went home.
+      The English did not.
+
+
+      On 19 Ṣafar 832 France made peace. It gave up eighty towns. Picardy and Poitou, from Amiens and
+      Saint-Quentin to Poitiers, went to England itself. The Agenais went to the English duke of Aquitaine,
+      and the country of Langres to the duke of Burgundy, who was England's vassal. The whole of Languedoc,
+      forty-two towns from Toulouse to Carcassonne, Montpellier, Nîmes and Foix, became a new dominion of the
+      English crown, ruled from Narbonne. The ʿulamāʾ of [Ishbīliya](place:ishbiliyya) knew both names.
+      Narbonne was Arbūna, which the armies of the first governors of al-Andalus had taken and held for forty
+      years. Poitiers was the field the Arabs called the Pavement of the Martyrs, where the advance of Islam
+      into the land of the Franks had stopped seven hundred years before. Now both belonged to the king of
+      England.
+
+
+      Three days later the French crown went with them. On 22 Ṣafar 832 Edward of England, twenty-eight years
+      old and five years a king, was made king of France as well. England, France and the Dauphiné had one
+      ruler. [Philippe](person:philippe-vii-of-france), the French king who had lost the war, was allowed to
+      keep a seat in his conqueror's French council, and the court of Ishbīliya thought that the most
+      humiliating part of the peace.
+
+
+      The dīwān heard the news in silence. The Emperor [Ismāʿīl](person:ismail-ibn-saad) had spent six months
+      sending spies into the north to prepare the last war of the Istirdād, and he had counted on Qashtāla
+      being alone. Qashtāla was four towns on the Cantabrian coast with no army, but it had one ally, and that
+      ally was [Edward](person:edward-v-of-england). England was now the second power of the world and
+      stronger with every treaty. It was the only great power that named al-Andalus among its enemies, and its
+      lands now ran along the Pyrenees beside the Ṭāʾifa of Catalonia, within a few days' march of
+      [Barshalūna](place:barshaluna). The great road to [Balansiyya](place:balansiyya) had been built to carry
+      an army to the French border should the Pope ever preach another crusade. The border at its end was now
+      English.
+
+
+      The secretaries of the Dīwān al-Inshāʾ pointed out that England and France would need years to digest
+      each other, that the French nobles had not accepted an English king out of love, and that every English
+      soldier in Languedoc was a soldier who would be needed there. The Emperor listened. Then he ordered his
+      envoys to London and Paris, which now meant the same thing, with letters of congratulation. He also
+      asked the treasurers how many more armouries the empire could afford.
+
+
+      *The Romans have been defeated, in the nearest land. But they, after their defeat, will overcome, within
+      three to nine years.*

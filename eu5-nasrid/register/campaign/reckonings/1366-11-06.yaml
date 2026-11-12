@@ -1,0 +1,108 @@
+date: '1366-11-06'
+title: The independent realm
+source:
+  save: SP_GRA_1366_11_06 (compressed)
+  game: 1.4.5
+summary: >-
+  Seven months after the Peace of Independence. Granada has no overlord, and the Portuguese south is now the
+  Ṭāʾifa of al-Gharb. The army is stood down and the budget balances. A Great Madrasa is rising at Ishbīliya.
+  Saʿd has a son and heir, Ismāʿīl, by Duʿāʾ. Sunnīs and Catholics are exactly even. The alliance with the
+  Mamlūks, in force since 1349, has lapsed since April. The Marīnids still hold the Strait's north shore.
+  Shares of power are estimated from the 1 June 1349 reading.
+realm:
+  towns: 49
+  souls: 658430
+  treasury: 177
+  income: 67.4
+  expenses: 66
+  stability: 32.8
+  prestige: 40
+  regiments: 5
+  ships: 5
+  manpower: 2342
+court:
+  ruler: saad-ibn-yusuf
+  heir: ismail-ibn-saad
+  capital: gharnata
+  council:
+    - who: dua-marinid
+      seat: Promoting Andalusī culture
+    - who: maryam-bint-ismail
+      seat: Integrating the new lands
+standing:
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+    - Taifa of the Algarve (taifa)
+  estates:
+    - name: Crown
+      power: 34.78
+    - name: Nobility
+      power: 25.63
+      mood: 41
+    - name: ʿUlamāʾ
+      power: 6.11
+      mood: 50
+    - name: Burghers
+      power: 9.82
+      mood: 50
+    - name: Commoners
+      power: 4.25
+      mood: 58
+    - name: Dhimmī
+      power: 19.4
+      mood: 52
+peoples:
+  cultures:
+    Andalusi: 356892
+    Castilian: 255305
+    Sephardi: 38275
+    Mustaarabi: 3764
+    Sardinian: 1725
+    Catalan: 605
+  faiths:
+    Sunni: 307986
+    Catholic: 307801
+    Jewish: 41896
+    Bori_Religion: 539
+    Nyama: 208
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+    - ALV
+beats:
+  - id: 1366-11-06-state
+    'on': '1366-11-06'
+    kind: realm
+    what: >-
+      The independent realm, seven months on. The army is stood down from fifteen regiments to five and the
+      budget balances (income 67 against expenses 66). The treasury has gone into the land: the silver mines
+      of Qusanṭīna, the farms of Úbeda, and a Great Madrasa rising at Ishbīliya. Sunnīs and Catholics are
+      exactly even, 308,000 each. The Mamlūk alliance of 1349 is no longer in force. It was still in place on
+      2 October and disappeared along with the tributary link Trent removed with the console, so it was most
+      likely lost in the fix
+    who:
+      - saad-ibn-yusuf
+    threads:
+      - estates
+    from:
+      - save
+    cite: save of 6 November 1366
+    detail:
+      treasury: 177
+      income: 67.4
+      expenses: 66
+      regiments: 5
+      construction:
+        great_madrasa: Ishbīliya (79%)
+        silver_mines: Qusanṭīna
+        farmland: Úbeda
+      religions:
+        Sunni: 308000
+        Catholic: 308000
+        Jewish: 42000
+      straitInfluence: 2.8
+      mamlukAlliance: lapsed between 2 October and 6 November 1366, most likely with the console fix

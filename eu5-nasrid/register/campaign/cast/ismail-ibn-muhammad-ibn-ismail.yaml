@@ -1,0 +1,93 @@
+name: Ismāʿīl ibn Muḥammad
+arabic: إسماعيل بن محمد
+house: Naṣrid
+tier: central
+born: '1402-10-04'
+father: muhammad-ibn-ismail-ibn-saad
+mother: magdalena-de-borja
+roles:
+  - heir of al-Andalus (from 1429)
+  - member of the dīwān (from 1429)
+drives:
+  - from: '1408-08-05'
+    text: 'Raised beside his half-brother Aḥmad, both gifted: a bond and an alliance from childhood.'
+    by: trent
+    source: Trent's account, 1408; Trent's direction, November 2026
+  - from: '1422-01-01'
+    text: >-
+      The silver tongue, deceitful when it serves: he ties the realm to its allies, marrying princesses of
+      Fās, Egypt and the Ottomans.
+    by: trent
+    source: Trent's direction; saves of 1423 and 1424
+  - from: '1429-06-28'
+    text: >-
+      Heir to a father whose eyes are on the sea, he and Aḥmad carry the state between them; when he reigns,
+      Aḥmad is to head his council, a second seat of power.
+    by: trent
+    source: Trent, June 1430; Trent's direction, November 2026
+  - from: '1432-05-01'
+    text: >-
+      The great projects of state are his: the conversion of the north to the faith and to Andalusī culture,
+      and the binding of realm and allies together.
+    by: trent
+    source: Trent's direction; his dīwān seat (Andalusī culture, then assimilating the new lands from 1437)
+  - from: '1442-06-11'
+    text: Mends the damage of the Jamāʿa of 846, appeasing the estates.
+    by: chronicle
+    source: Of the Princes' Mending
+  - from: '1447-08-01'
+    text: >-
+      Reads the claim to the Umayyad borders, which run through his wives' homelands, as a sword that never
+      leaves the scabbard and is still a sword.
+    by: chronicle
+    source: Of the Envoys of Europe and the Borders of the Umayyads
+  - from: '1448-09-02'
+    text: Talks the estates round after his father's decree on the commons.
+    by: chronicle
+    source: Of the Jamāʿa of the Commons
+  - from: '1449-10-25'
+    text: >-
+      With Aḥmad, raises the first new army in a generation, 4,000 men of the thughūr, to finish the war in
+      Sicily.
+    by: trent
+    source: Trent's account, late October 1449
+  - from: '1450-09-28'
+    text: Carries to Tunis the Emperor's claim to all of Sicily as compensation, and Tunis understands.
+    by: chronicle
+    source: Of Catania and the Battle before Balarm
+  - from: '1451-12-21'
+    text: >-
+      Argues for a ṭāʾifa in Sicily, the way the realm has always bound its conquests; loses to his father and
+      brother.
+    by: chronicle
+    source: Of the Governor of Balarm and the Holy Cities
+ties:
+  - with: ahmad-ibn-muhammad-ibn-ismail
+    kind: bond
+    from: '1408-08-05'
+    text: 'Half-brothers bound from childhood: Ismāʿīl the tongue, Aḥmad the builder; Aḥmad to head his council.'
+    by: trent
+stations:
+  - role: dīwān
+    from: '1429-07-02'
+    to: null
+    source: save
+    approx: false
+  - role: heir
+    from: '1429-07-02'
+    to: null
+    source: checkpoints
+    approx: true
+note: >-
+  Eldest son of the heir Muḥammad, by Magdalena de Borja; born 4 October 1402, the Emperor's grandson and
+  great-grandson of the Emperor Saʿd. Gifted, and with his half-brother Aḥmad enough at five to set aside the
+  thought of changing the succession (Trent's account; save of 5 August 1408, taken before the boys'
+  educations were set). Grown, by August 1420, into a man of 70/73/63; the childhood gift has lapsed with no
+  adult trait yet in its place (save of 11 August 1420). By 1422 he had married three princesses of the Muslim
+  empires: Tella of Fās, daughter of Abū Ḥammū and sister of the sultan Yaḥyā; Ayaulym, daughter of the Mamlūk
+  sultan Aqṭāy; and Khadīja, daughter of the Ottoman sultan Aḥmad. Children: Yūsuf (6 January 1422) by Tella,
+  ʿĀʾisha (24 January 1422) by Khadīja, Jadīla (29 June 1422) by Ayaulym, Muʾmina (8 August 1424) by Tella
+  (saves of 1423 and 1424).
+game:
+  id: 16790180
+  name: Ismail

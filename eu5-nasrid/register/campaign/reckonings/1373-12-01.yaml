@@ -1,0 +1,1217 @@
+date: '1373-12-01'
+title: The War of the Upper March
+source:
+  save: SP_GRA_1373_12_01 (compressed)
+  game: 1.4.6
+summary: >-
+  On 1 December 1373 Granada declares war on Aragon under the Reconquest of Iberia claim, six months after the
+  truce ran out. Aragon fights with only the crown its king also wears, Sicily, and Sicily's three subjects;
+  Sicily's allies Genoa (at war with Bologna and Pisa since May) and the Pope stay out. The Mamlūks answer the
+  call with their vassals, their galleys pointed at Sicily (Trent's account). The sultan leads the regulars
+  himself and raises no levies: 3,300 men under arms against Aragon's 400. The debts are paid, the treasury
+  holds 344, and the Castilian truce holds until June 1375. Shares of power are estimated from the 1 June 1349
+  reading.
+realm:
+  towns: 60
+  souls: 765231
+  treasury: 344
+  income: 90.4
+  expenses: 71.3
+  stability: 32.3
+  prestige: 39
+  regiments: 5
+  ships: 4
+  manpower: 1393
+court:
+  ruler: saad-ibn-yusuf
+  heir: ismail-ibn-saad
+  capital: gharnata
+  council:
+    - who: dua-marinid
+      seat: Promoting Andalusī culture
+    - who: sayyida-of-fezzan
+      seat: Promoting Andalusī culture
+standing:
+  wars:
+    - war-of-the-upper-march
+  allies:
+    - Mamluks
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+    - Taifa of the Algarve (taifa)
+  estates:
+    - name: Crown
+      power: 34.63
+    - name: Nobility
+      power: 28
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 7.48
+      mood: 50
+    - name: Burghers
+      power: 10.71
+      mood: 50
+    - name: Commoners
+      power: 4.34
+      mood: 50
+    - name: Dhimmī
+      power: 14.83
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 439743
+    Castilian: 267641
+    Sephardi: 48146
+    Mustaarabi: 4011
+    Sardinian: 2302
+    Ligurian: 615
+  faiths:
+    Sunni: 389849
+    Catholic: 323318
+    Jewish: 51269
+    Bori_Religion: 545
+    Nyama: 250
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+    - ALV
+  allies:
+    - MAM
+beats:
+  - id: 1370-09-14-ismail-marries
+    'on': '1370-09-14'
+    kind: marriage
+    what: >-
+      The day the Strait is won, the sultan's brother Ismāʿīl ibn Yūsuf, sixteen, is married to Hippolyte of
+      Villa di Chiesa, eighteen, a Sunnī Sardinian, daughter of Xavier, lord of Cagliari, a vassal of Tūnis.
+      The old royal marriage of 1354 has lapsed, and this one takes its place
+    minor: true
+    who:
+      - ismail-ibn-yusuf
+      - hippolyte-of-villa-di-chiesa
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 1 November 1370
+    detail:
+      with: CAG
+      overlordOfBride: TUN
+      bride: Hippolyte (game name), born 1352, Sardinian culture, Sunni
+      replaces: the royal marriage with AAA43 of 1 March 1354
+  - id: 1370-09-14-strait-ends
+    'on': '1370-09-14'
+    kind: world
+    what: >-
+      The Battle for the Strait is over: the Throne of Granada endures. Qashtāla has stopped sending demands,
+      Fās has failed to cross, and the throne in Gharnāṭa has the same occupant it began with. Granada stands
+      free
+    who:
+      - saad-ibn-yusuf
+    from:
+      - seen
+    cite: Trent's screenshots of the event (14 September 1370)
+    detail:
+      situation: battle_for_the_strait
+      ending: The Throne of Granada Endures
+      option: Granada stands free
+      effects:
+        - 'Consolidated Governance for 100 years: +0.5% monthly control, +25% speed of integration'
+        - Al-Andalus can be formed while holding fewer Iberian territories
+        - the Reconquest of Iberia can be fabricated at reduced cost
+        - every location held in Granada, Andalusia and Murcia raised to core integration
+        - every ṭāʾifa being annexed gains 25% annexation progress
+        - enables the decision Usher in the Golden Century, which starts the Golden Century situation
+  - id: 1370-09-18-death-of-faraj
+    'on': '1370-09-18'
+    kind: death
+    what: >-
+      Faraj ibn Ismāʿīl, elder brother of Yūsuf I and once regent of Granada, dies far from Gharnāṭa in the
+      south beyond the desert, where he had lived since his Ghana marriage of 1355
+    who:
+      - faraj-ibn-ismail
+    threads:
+      - house
+    from:
+      - save
+    cite: people.json record (death date from the save of 13 September 1370 onward)
+    detail:
+      age: 53
+  - id: 1370-09-20-murcia-annexation
+    'on': '1370-09-20'
+    kind: world
+    what: >-
+      The sultan begins to absorb the Ṭāʾifa of Mursiyya into the realm. The annexation runs at 1.4 a month
+      and stands at 2.8 on 1 November. Qashtāla takes a claim to prevent it, and Mursiyya one to resist it
+    who:
+      - saad-ibn-yusuf
+    from:
+      - save
+    cite: save of 1 November 1370
+    detail:
+      target: MUC
+      monthly: 1.4039
+      progress: 2.80491
+      counterClaims:
+        CAS: cb_prevent_annexation
+        MUC: cb_resist_annexation
+  - id: 1370-09-26-reconquest-claim
+    'on': '1370-09-26'
+    kind: world
+    what: >-
+      The dīwān begins to draw up the claim for the Reconquest of Iberia against Qashtāla, the war goal the
+      victory in the Strait opened. By 1 November it is 44% made
+    who:
+      - saad-ibn-yusuf
+    from:
+      - save
+    cite: save of 1 November 1370
+    detail:
+      cb: cb_reconquer_iberia
+      name: Reconquest of Iberia
+      target: CAS
+      progress: 43.57
+      speed: 10
+      unlockedBy: >-
+        the variable can_reconquer_iberia, set by the outcome of the Battle for the Strait (Across the
+        Pillars)
+  - id: 1370-10-01-maryam-culture
+    'on': '1370-10-01'
+    kind: office
+    what: >-
+      Maryam bint Ismāʿīl leaves the integration of the new lands and joins Duʿā in promoting Andalusī
+      culture: both seats of the dīwān now work for the Call
+    who:
+      - maryam-bint-ismail
+      - dua-marinid
+    from:
+      - save
+    cite: save of 1 November 1370
+    detail:
+      from: integrate_province
+      to: promote_culture
+  - id: 1370-11-01-state
+    'on': '1370-11-01'
+    kind: realm
+    what: >-
+      Seven weeks after the peace the mercenaries are paid off: expenses fall from 144 a month to 71, against
+      an income of 73, and the treasury holds 156. The seven estate loans are still owed. Granada has opened
+      its granaries to Egypt and the three ṭāʾifas, and rises to 12th in the world
+    who:
+      - saad-ibn-yusuf
+    threads:
+      - estates
+    from:
+      - save
+    cite: save of 1 November 1370
+    detail:
+      income: 72.9
+      expenses: 71.1
+      treasury: 156.4
+      mercenaryCompanies:
+        '1370-09-13': 3
+        '1370-11-01': 0
+      loans: 7
+      foodAccess:
+        MAM: '1370-09-23'
+        VAL: '1370-10-12'
+        ALV: '1370-10-13'
+        MUC: '1370-10-14'
+      rank:
+        - 12
+        - 31
+      world: >-
+        Morocco rises to 10th (37 points); Egypt and Tlemcen have stood down the hosts raised for the war
+        (Egypt from 60,600 men under arms to 1,700, Tlemcen from 11,300 to 30)
+      gameVersion: 1.4.6
+  - id: 1370-11-01-the-north
+    'on': '1370-11-01'
+    kind: world
+    what: >-
+      The state of the lands won since 1366. Ishbīliya is the realm's greatest city, with 77,700 souls to
+      Gharnāṭa's 71,100, still Castilian and mostly Catholic, with 24,400 Muslims (20,300 in 1366) and the
+      crown's grip at 51% (44% in 1366). The eleven towns of the north shore, 85,000 souls and more than half
+      of them Muslim, are poor and barely held: prosperity below zero, control about 2%, and 0.14 of a
+      possible 17.2 in tax reaching the treasury
+    who:
+      - saad-ibn-yusuf
+      - dua-marinid
+      - maryam-bint-ismail
+    from:
+      - save
+    cite: save of 1 November 1370
+    detail:
+      ishbiliyya:
+        population:
+          '1366-11-06': 78210
+          '1370-11-01': 77704
+        muslims:
+          '1366-11-06': 20300
+          '1370-11-01': 24400
+        control:
+          '1366-11-06': 44
+          '1370-11-01': 51
+        prosperity:
+          '1366-11-06': 38
+          '1370-11-01': 40
+        culture: castilian
+        religion: catholic
+        guilds:
+          - cloth
+          - fine cloth
+          - weapons
+          - tools
+          - pottery
+          - paper
+          - scriptorium
+      gharnata:
+        population: 71136
+      byArea:
+        granada_area:
+          towns: 18
+          population: 256400
+          muslimShare: 93
+          control: 74
+          tax: 87.1
+          possibleTax: 121.8
+        andalusia_area:
+          towns: 31
+          population: 408500
+          muslimShare: 20
+          control: 51
+          prosperity: 35
+          tax: 66.9
+          possibleTax: 111.1
+        north_shore_1370:
+          towns: 11
+          population: 84900
+          muslimShare: 56
+          control: 2
+          prosperity: -4
+          tax: 0.14
+          possibleTax: 17.18
+          worst: Runda, prosperity −13%
+      constructionUnderWay: 0
+  - id: 1371-01-29-murcia-dolca
+    'on': '1371-01-29'
+    kind: crown
+    what: >-
+      Dolça, daughter of the old house of Orihuela, becomes ruler of the Ṭāʾifa of Mursiyya, the ṭāʾifa the
+      sultan is absorbing into the realm
+    from:
+      - save
+    cite: save of 16 January 1373
+    detail:
+      country: MUC
+      ruler: Dolça (game name Douce), born 1343, Sunni
+      gameId: 31540
+  - id: 1371-02-24-spread-of-usury
+    'on': '1371-02-24'
+    kind: realm
+    what: >-
+      The Spread of Usury: Muslim merchant families of the growing towns have begun to lend at interest, and
+      the ʿulamāʾ demand that it be stopped. The sultan answers that the ʿulamāʾ are overreacting. The ʿulamāʾ
+      lose 10% satisfaction
+    who:
+      - saad-ibn-yusuf
+    threads:
+      - estates
+    from:
+      - seen
+    cite: Trent's screenshot of 24 February 1371 (the option with its tooltip open is the one chosen)
+    detail:
+      event: Spread of Usury
+      choice: The 'Ulamā' are clearly overreacting.
+      rejected: These vultures shall not steer us away from the light of Allāh.
+      effects:
+        - '''Ulamā'' −10% estate satisfaction'
+        - a second effect, cut off in the screenshot, changes another estate's satisfaction by 5%
+      theme: 'Trent: the growth of urbanization in the Emirate'
+  - id: 1371-02-24-state
+    'on': '1371-02-24'
+    kind: note
+    what: >-
+      On 7 Shaʿbān 772 the treasury holds 96 dīnārs and gains 10.7 a month; the realm counts 755,000 souls,
+      growing by 445 a month. The market of Ishbīliya stands first in the outliner's list of markets, ahead of
+      Fās and Niani. Duʿā and Maryam are assimilating Ishbīliya and Jayyān, Castilian Patriots are in arms in
+      the realm, and the claim to reconquer Iberia, a spy network and the annexation of Mursiyya are all under
+      way
+    who:
+      - saad-ibn-yusuf
+      - dua-marinid
+      - maryam-bint-ismail
+    from:
+      - seen
+    cite: Trent's screenshot of 24 February 1371
+    detail:
+      treasury: 95.98
+      monthly: 10.69
+      population: 755000
+      populationMonthly: 445
+      stability: 31
+      menUnderArms: 3300
+      markets:
+        Šbilya: 1st
+        Fas: 3rd
+        Niani: 8th
+      cabinet:
+        - Assimilating Sevilla
+        - Assimilating Jaén
+      rebels:
+        - Castilian Patriots
+      diplomacy:
+        - Reconquest of Iberia
+        - Building Spy Network
+        - Annexation
+  - id: 1371-03-01-reconquest-claim-ready
+    'on': '1371-03-01'
+    kind: world
+    what: >-
+      The claim for the Reconquest of Iberia against Qashtāla is complete. It cannot be pressed honourably
+      before the truce ends on 5 June 1375
+    who:
+      - saad-ibn-yusuf
+    from:
+      - save
+    cite: save of 16 January 1373
+    detail:
+      cb: cb_reconquer_iberia
+      target: CAS
+      truceUntil: '1375-06-05'
+  - id: 1371-10-15-birth-yusuf-ibn-saad
+    'on': '1371-10-15'
+    kind: birth
+    what: A son, Yūsuf, is born to the sultan and Aiman the Mamlūk, named for his grandfather
+    who:
+      - yusuf-ibn-saad
+      - saad-ibn-yusuf
+      - aiman-mamluk
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 16 January 1373
+    detail:
+      gameId: 59587
+  - id: 1372-02-01-france-england
+    'on': '1372-02-01'
+    kind: world
+    what: >-
+      The war of France and England breaks out again: Jean of France declares war on Edward of England to take
+      back the kingdom, and by January 1373 each has some twenty thousand men under arms
+    who:
+      - jean-of-france
+      - edward-of-england
+    from:
+      - save
+    cite: save of 16 January 1373
+    detail:
+      cb: cb_hundred_years_war_fra
+      attacker: FRA
+      defender: ENG
+      men:
+        FRA: 20455
+        ENG: 22996
+  - id: 1372-02-19-birth-yusuf-ibn-ismail
+    'on': '1372-02-19'
+    kind: birth
+    what: A son, Yūsuf, is born to the sultan's brother Ismāʿīl and Hippolyte of Villa di Chiesa
+    minor: true
+    who:
+      - yusuf-ibn-ismail
+      - ismail-ibn-yusuf
+      - hippolyte-of-villa-di-chiesa
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 16 January 1373
+    detail:
+      gameId: 16808225
+  - id: 1372-04-03-jadila-betrothed
+    'on': '1372-04-03'
+    kind: marriage
+    what: >-
+      Eighteen months after the peace, the sultan's sister Jadīla bint Yūsuf, sixteen, is betrothed to Abū
+      al-Faḍl, twelve, the son and heir of Abū ʿInān Fāris of Fās
+    who:
+      - jadila-bint-yusuf
+      - abu-al-fadl-marinid
+      - abu-inan-faris
+      - saad-ibn-yusuf
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 16 January 1373
+    detail:
+      with: MOR
+      kind: betrothal
+  - id: 1372-11-16-birth-muhammad-ibn-ismail
+    'on': '1372-11-16'
+    kind: birth
+    what: A son, Muḥammad, is born to Ismāʿīl ibn Yūsuf and his second wife, his cousin ʿĀʾisha bint Faraj
+    minor: true
+    who:
+      - muhammad-ibn-ismail-ibn-yusuf
+      - ismail-ibn-yusuf
+      - aisha-bint-faraj
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 16 January 1373
+    detail:
+      gameId: 60713
+  - id: 1372-12-13-murcia-fezzan
+    'on': '1372-12-13'
+    kind: world
+    what: >-
+      A marriage joins the Ṭāʾifa of Mursiyya to Fezzan, the Saharan homeland of the sultan's mother, in a
+      marriage union
+    who:
+      - sayyida-of-fezzan
+    from:
+      - save
+    cite: save of 16 January 1373
+    detail:
+      union:
+        - MUC
+        - FZA
+      kind: marriage_union
+      FZA: ruled by ʿUmar
+  - id: 1373-01-16-court
+    'on': '1373-01-16'
+    kind: office
+    what: >-
+      By the winter of 774 the sultan's mother, Sayyida of Fezzan, has taken Maryam bint Ismāʿīl's seat in the
+      dīwān and works beside Duʿā to make the new towns Andalusī. Ismāʿīl ibn Yūsuf has married a second wife,
+      his cousin ʿĀʾisha bint Faraj, and the general Khālid ibn Yaḥyā has married Charlotte of Crato, a Sunnī
+      noblewoman of Portuguese birth and an architect of vision
+    who:
+      - sayyida-of-fezzan
+      - maryam-bint-ismail
+      - dua-marinid
+      - ismail-ibn-yusuf
+      - aisha-bint-faraj
+      - khalid-ibn-yahya
+      - charlotte-of-crato
+    from:
+      - save
+    cite: save of 16 January 1373 (the dates of these changes are not in the save)
+    detail:
+      cabinet:
+        - person: dua-marinid
+          action: promote_culture
+        - person: sayyida-of-fezzan
+          action: promote_culture
+      left: maryam-bint-ismail
+      newAtCourt:
+        - Ṭālib of Baena (born 1340, a proselytizer)
+        - ʿĀlim (born 1352, of the burghers, 66/56/68)
+  - id: 1373-01-16-hajj
+    'on': '1373-01-16'
+    kind: note
+    what: >-
+      With the debt repaid, the sultan begins to prepare for the Hajj, then puts it off: the pilgrimage of 774
+      (8–13 Dhū al-Ḥijja, 31 May – 5 June 1373) would have kept him at Minā on the day the truce with Arghūn
+      ends, 2 June 1373. He will go when the truces have run out and the wars that follow are fought
+    who:
+      - saad-ibn-yusuf
+    from:
+      - told
+    cite: Trent's account, January 1373
+    detail:
+      hajj:
+        start: '1373-05-31'
+        arafa: '1373-06-01'
+        eid: '1373-06-02'
+        end: '1373-06-05'
+      note: the game lets the Hajj be taken at any time; the chronicle keeps the season
+      postponed: >-
+        until after the truces (Aragon 2 June 1373, Castile and Portugal 5 June 1375) and the wars that follow
+        (Trent)
+  - id: 1373-01-16-state
+    'on': '1373-01-16'
+    kind: realm
+    what: >-
+      The debts are paid: the seven loans of the war are gone. Income is 91 a month against 59 in expenses,
+      the treasury holds 176, and every estate pays more (the nobles 33% where they paid 28%, the dhimmīs 22%
+      where they paid nothing). The annexation of Mursiyya stands at 39. The north shore is mending: the
+      crown's grip there has risen from 2% to 19%, its prosperity from below zero to 6%, and its people from
+      85,000 to 91,000
+    who:
+      - saad-ibn-yusuf
+    threads:
+      - estates
+    from:
+      - save
+    cite: save of 16 January 1373
+    detail:
+      loans:
+        '1370-11-01': 7
+        '1373-01-16': 0
+      income: 90.8
+      expenses: 59.5
+      treasury: 175.5
+      taxRates:
+        nobles:
+          - 28
+          - 33
+        clergy:
+          - 15
+          - 20
+        burghers:
+          - 28
+          - 32
+        peasants:
+          - 38
+          - 43
+        dhimmi:
+          - null
+          - 22
+      annexation:
+        target: MUC
+        progress: 39.1
+        monthly: 1.39
+      northShore:
+        control:
+          - 1.7
+          - 18.9
+        prosperity:
+          - -3.9
+          - 6.1
+        population:
+          - 84900
+          - 90700
+        tax:
+          - 0.14
+          - 2.9
+        possibleTax:
+          - 17.18
+          - 16.76
+        jerez:
+          - 9782
+          - 15127
+      valley:
+        control:
+          - 51.4
+          - 55.7
+        andalusiShare:
+          - 35.8
+          - 40.1
+        muslimShare:
+          - 20.4
+          - 22.4
+        tax:
+          - 66.9
+          - 71.2
+      ishbiliyya:
+        muslims:
+          - 24400
+          - 27500
+        control:
+          - 51
+          - 59
+      newBuildings: 0
+      population: 760769
+  - id: 1373-01-16-world
+    'on': '1373-01-16'
+    kind: world
+    what: >-
+      The world in the winter of 774: Granada has slipped to 14th as others rise (Mālī to 12th, Hungary to
+      10th). France and England are at war again, the Ottomans are still fighting Karaman, and no war touches
+      Iberia or the Maghrib
+    from:
+      - save
+    cite: save of 16 January 1373 (tools/world_powers.py)
+    detail:
+      GRA:
+        - 14
+        - 31
+      risers:
+        MAL:
+          - 12
+          - 32
+        HUN:
+          - 10
+          - 44
+      wars:
+        - France against England (from 1 February 1372)
+        - Serbia against Ragusa (from 24 May 1372)
+        - the Ottomans against Karaman (from 10 October 1369)
+  - id: 1373-10-01-march-on-valencia
+    'on': '1373-10-01'
+    kind: note
+    what: >-
+      Early in Rabīʿ al-Thānī 775 a second claim is ready, against Arghūn, whose truce ran out in June. The
+      sultan himself marches the armies of the realm to Balansiyya as the court turns its eyes on Arghūn. The
+      Catalans stand alone, their one ally the Sicilian crown their king also wears, and so weakened that the
+      sultan means to fight with his regulars and raise no levies unless he must
+    who:
+      - saad-ibn-yusuf
+      - joan-of-aragon
+    from:
+      - told
+    cite: Trent's account, early October 1373
+    detail:
+      target: ARA
+      truceEnded: '1373-06-02'
+      aragonAllies: >-
+        only the union with Sicily (Trent); in the January 1373 save Aragon had no allies of its own, 400 men
+        under arms and 3 ships, and Sicily was allied to Genoa and the Pope
+      granada:
+        menUnderArms: 3300
+        levies: not to be raised unless needed
+  - id: 1373-12-01-mamluks-join
+    'on': '1373-12-01'
+    kind: war
+    what: >-
+      The Mamlūks answer the call to arms with their vassals, and their galleys turn toward the shores of
+      Sicily
+    who:
+      - bolot-mamluk
+    threads:
+      - war-of-the-upper-march
+    from:
+      - save
+      - told
+    cite: save of 1 December 1373; Trent's account
+    detail:
+      joined:
+        - MAM
+        - DUL
+        - MEC
+        - MDA
+        - AAL
+        - AMR
+        - DGE
+        - FDL
+        - BQA
+        - SKN
+        - AAA00
+  - id: 1373-12-01-war-on-aragon
+    'on': '1373-12-01'
+    kind: war
+    what: >-
+      Gharnāṭa declares war on Arghūn to reconquer the Upper March. Arghūn stands with Sicily alone; Genoa and
+      the Pope stay out
+    who:
+      - saad-ibn-yusuf
+      - joan-of-aragon
+    threads:
+      - war-of-the-upper-march
+    from:
+      - save
+    cite: save of 1 December 1373
+    detail:
+      cb: cb_reconquer_iberia
+      attacker: GRA
+      defender: ARA
+      defenders:
+        - ARA
+        - SIC
+        - ATH
+        - NEG
+        - ABA90
+      men:
+        GRA: 3300
+        ARA: 400
+        SIC: 0
+        MAM: 4050
+      ships:
+        GRA: 4
+        ARA: 3
+        SIC: 3
+        MAM: 1
+      stayedOut:
+        GEN: allied to Sicily; at war with Bologna and Pisa since 20 May 1373
+        PAP: allied to Sicily
+tellings:
+  - id: 0772-02-21-the-throne-that-endures
+    'on': '1370-09-14'
+    title: Of the Last Battles, the Peace of the Northern Shore, and the Throne That Endures
+    verse: 3:200
+    who:
+      - saad-ibn-yusuf
+      - khalid-ibn-yahya
+      - osman-marinid
+      - abu-inan-faris
+    where:
+      - antaqira
+      - abdara
+      - malaqa
+      - balansiyya
+      - sharish
+      - gharnata
+      - baja
+      - fas
+      - runda
+      - marballa
+      - qadis
+      - labla
+      - shaluqa
+      - shidhuna
+      - arkush
+      - jabal-tariq
+      - tarifa
+      - al-jazira-al-khadra
+    covers:
+      - 1369-11-21-battle-adra
+      - 1369-12-16-battle-malaga
+      - 1370-03-08-battle-malaga
+      - 1370-03-31-battle-jerez
+      - 1370-04-06-battle-jerez
+      - 1370-05-31-battle-beja
+      - 1370-06-morocco-near-defeat
+      - 1370-09-12-battle-malaga
+      - 1370-09-12-peace-morocco
+      - 1370-09-14-strait-ends
+    text: >
+      After [Antaqīra](place:antaqira) the war belonged to [Khālid](person:khalid-ibn-yahya). On the twentieth
+      of Rabīʿ al-Thānī 771 he fell on a Marīnid landing at [Abdara](place:abdara) and left none of its nine
+      hundred and seventy alive. In Jumādā al-Ūlā the Egyptians came down from Jarghal and joined him before
+      [Mālaqa](place:malaqa). It was a strange army: Andalusīs, men of [Balansiyya](place:balansiyya),
+      mercenaries from every shore of the sea, and the soldiers of the Mamlūk sultan in their quilted coats.
+      When seven hundred and fifty Marīnids were foolish enough to attack it, they were destroyed without the
+      loss of a single man. In Shaʿbān the Marīnid general Muṣliḥ al-Dīn tried again at Mālaqa with three
+      thousand three hundred and left two thousand four hundred and forty of them under its walls.
+
+
+      In Ramaḍān the Egyptians wanted a victory of their own. With the men of Balansiyya beside them, five
+      thousand six hundred and fifty Mamlūks attacked [ʿUthmān](person:osman-marinid) at
+      [Sharīsh](place:sharish) on the third of the month. They were thrown back, and three thousand one
+      hundred and ten of them were left in the vineyards. Six days later Khālid came to Sharīsh with seven
+      thousand two hundred and sixty. ʿUthmān lost eighteen hundred and seventy men and Sharīsh, and the
+      Egyptians were avenged. In Dhū al-Qaʿda a last Marīnid army of three thousand three hundred and eighty
+      landed in al-Gharb, hoping to find [Gharnāṭa](place:gharnata)'s newest ṭāʾifa undefended. Khālid marched
+      the length of the south to meet it at [Bāja](place:baja), and two thousand two hundred and sixty of the
+      invaders never saw the sea again.
+
+
+      By the summer [Fās](place:fas) was finished, though it did not yet admit it. One more battle was needed.
+      On the nineteenth of Ṣafar 772 two thousand eight hundred and ninety Marīnids met eight thousand three
+      hundred and seventy Granadans at Mālaqa, where so much of the war had been fought. They lost a thousand
+      and forty men, and we lost a hundred and fifty-four. That same day the envoys of [Abū
+      ʿInān](person:abu-inan-faris) sealed the peace.
+
+
+      Fās gave up the whole northern shore. [Runda](place:runda) and [Marballa](place:marballa) came back to
+      the house of Naṣr, and so did the nine towns of the so-called Kingdom of Sevilla, which ceased to exist:
+      [Qādis](place:qadis), Sharīsh, [Labla](place:labla), [Shalūqa](place:shaluqa),
+      [Shidhūna](place:shidhuna), [Arkush](place:arkush), [Jabal Ṭāriq](place:jabal-tariq),
+      [Ṭarīfa](place:tarifa) and [al-Jazīra al-Khaḍrāʾ](place:al-jazira-al-khadra). That was eighty-four
+      thousand souls, many of them already Muslims after five years under Fās. The Marīnids would pay
+      reparations and swore to keep the sea free of their corsairs. With its ṭāʾifas, Gharnāṭa held every one
+      of the seventy-two towns of the Strait's three lands, both of its shores. The price was written in the
+      dīwān's registers: some thirteen thousand of the sultan's own men dead in two years of war, and
+      twenty-three thousand of the enemy.
+
+
+      Two days later, on the twenty-first of Ṣafar, the chancellor read a reckoning to the court. The crown of
+      Qashtāla had stopped sending demands. Fās had tried twice to cross and failed both times. The throne in
+      Gharnāṭa had the same occupant it had begun the war with. For a generation every court of Christendom
+      and the Maghrib had expected the house of Naṣr to fall, and it had outlasted them all. Our lord
+      [Saʿd](person:saad-ibn-yusuf) answered in three words, and the scribes wrote them at the head of the
+      register: *Gharnāṭa stands free.* Every town of the old kingdom and the valley of the great river was
+      made a part of the realm for good, the government of the realm was confirmed for a hundred years, and
+      the ṭāʾifas were drawn closer to the throne.
+
+
+      So the scale that had hung between Qashtāla and Fās for twenty-four years came to rest, and it came to
+      rest in Gharnāṭa. Al-Ḥājj Yūsuf began this book as the tributary of one and the prey of the other. His
+      son ended it as the master of the Strait. What the house of Naṣr does with that freedom belongs to
+      another book.
+
+
+      Here ends the Book of the Balance.
+
+
+      *O you who have believed, persevere and endure and remain stationed, and fear Allāh that you may
+      succeed.*
+    behind: >-
+      Book II now runs complete from 1346 to 1370.
+
+
+      **Kept out of the text**
+
+      - **The tributary glitch.** At the peace of 5 April 1366 the game put Granada back under Castile as a
+      tributary, although Trent had declared independence. He removed it with the console before 6 November
+      1366. The chronicle treats Granada as free from the peace. The Mamlūk alliance vanished in the same
+      window and was most likely lost in the fix. The chronicle has it lapse and Saʿd renew it in January
+      1367, which the save shows.
+
+      - **The missing battles.** The game drops a war's battle records at the peace. The second Marīnid war's
+      battles come from the saves of 18 November 1369 and the 1 July 1370 autosave, plus Trent's screenshot of
+      the last battle at Málaga. Anything fought between July and September 1370 is lost. Granada's dead,
+      about 13,000, are from Trent's war screen and include attrition. The 23,000 Moroccan dead are battle
+      losses only.
+
+
+      **From the game, with the chronicle's reading**
+
+      - Naṣr al-Istijjī died the day the regency ended. The game says hunting accident, and Trent's account
+      says "sickness". The text follows the rule for deaths the court keeps quiet (SYSTEMS §5): the court's
+      "sickness" in the prose, with the huntsmen's story as the hint.
+
+      - Saʿd married Duʿāʾ, his father's widow. The game allows it. The Qurʾān (al-Nisāʾ 4:22) forbids it, so
+      the chronicle makes the ʿulamāʾ's anger (37% in May 1364, from Trent) about the marriage, and the
+      Jamāʿa's restored jizya the price of their silence.
+
+
+      **Invented colour**
+
+      - The fever on Yūsuf's last march.
+
+      - The huntsmen's story.
+
+      - Murād's flank attack at Zafra.
+
+      - The mercenaries giving way and Khālid's guard at Antequera.
+
+      - Aiman's letter to Cairo, her answer about Umm al-Fatḥ's name, and Saʿd's "Let them come".
+
+      - Saʿd taking the blame for the Cádiz assault before the dīwān.
+
+      - Ibn al-Khaṭīb's escape at San Clemente. The save shows him alive.
+
+      - The Egyptians' quilted coats.
+
+      - In the Book V entries of 1374–1378: Saʿd breaking the fast with his soldiers and standing in the line
+      at Shalūqa, his letters home from the camp, the letters between Duʿāʾ and the camp, the envoys' threat
+      of a war in Ṣiqilliya, the sultan's "for now", the tutors' remark on Ismāʿīl, and the reasons given for
+      the shipwrights. The events and figures are the game's.
+  - id: 0772-02-22-of-the-three-marches
+    'on': '1370-09-15'
+    title: Of the Three Marches, and What Lies North of Them
+    verse: '28:5'
+    who:
+      - saad-ibn-yusuf
+      - rodrigo-of-silves
+      - maria-of-portugal
+      - jeronimo-of-castile
+      - faraj-ibn-ismail
+    where:
+      - gharnata
+      - baja
+      - batalyaws
+      - marida
+      - tulaytula
+      - saraqusta
+      - al-ushbuna
+      - balansiyya
+      - barshaluna
+      - qurtuba
+      - mursiyya
+      - fas
+      - malaqa
+      - qadis
+      - antaqira
+    covers:
+      - 1370-09-14-strait-ends
+      - 1370-09-13-state
+      - 1366-04-05-the-south-burned
+      - 1367-10-04-castile-portugal-union
+      - 1370-09-18-death-of-faraj
+    text: >
+      The day after the reckoning of the Strait was read, our lord [Saʿd](person:saad-ibn-yusuf) had the great
+      map of al-Andalus brought out of the treasury of [Gharnāṭa](place:gharnata). It had been drawn in the
+      days of the caliphs, and no sultan of the house of Naṣr had unrolled it in living memory, because it
+      only showed what had been lost. Across its northern half ran three lines in red ink, the *thughūr*: the
+      marches where the land of Islam met the kingdoms of the Christians. The Lower March ran from
+      [Bāja](place:baja) to [Baṭalyaws](place:batalyaws) and [Mārida](place:marida). The Middle March was the
+      march of [Ṭulayṭula](place:tulaytula). The Upper March was the march of [Saraqusṭa](place:saraqusta) on
+      the Ebro. In the caliphs' day the marches had been the realm's shield. For a hundred and fifty years
+      since, they had been the roads by which the Christians came south.
+
+
+      Now the sultan laid the map beside the dīwān's own, and the court saw how far the frontier had moved.
+      The ṭāʾifa of al-Gharb under [Rodrigo of Silves](person:rodrigo-of-silves) looked across the Tagus at
+      [al-Ushbūna](place:al-ushbuna). The ṭāʾifa of [Balansiyya](place:balansiyya) looked north up the coast
+      toward [Barshalūna](place:barshaluna), the city of the Catalans. Between them the realm's own lands,
+      from [Qurṭuba](place:qurtuba) to the hills of [Mursiyya](place:mursiyya), faced the long border of
+      Qashtāla. The thughūr were the frontier again, and for the first time since the caliphs they faced the
+      other way.
+
+
+      The dīwān's reckoners laid out the balance, and they began with a marriage of crowns. Three years
+      before, in Ṣafar of the year 769, Queen [Maria of Portugal](person:maria-of-portugal) had died, and her
+      crown had passed to her son [Jerónimo](person:jeronimo-of-castile), who had been king of Qashtāla since
+      his father Alfonso fell on the march in the last war. Maria and Alfonso had joined their crowns by
+      marriage a quarter of a century before; now the son wore both. Each kingdom kept its own council and its
+      own law of succession, and the Portuguese still called themselves a free people. But al-Ushbūna and
+      Ṭulayṭula now sent their letters to one court, and the frontier from the Tagus to the hills of Mursiyya
+      answered to one king. For a generation the reckoners did not count Portugal as a separate realm.
+
+
+      Arghūn had thirty-six towns and had lost its nerve, and its young king wore the crown of Ṣiqilliya as
+      well. [Fās](place:fas), across the water, had ninety and had been beaten twice. The two crowns of
+      Jerónimo together held two hundred and eighty-three towns and four million souls: two hundred and
+      twenty-nine towns and three million in Qashtāla, fifty-four towns and nine hundred thousand in Portugal.
+      Gharnāṭa with its ṭāʾifas had a hundred and two towns and one million one hundred thousand. On paper the
+      north was nearly four to one. But Qashtāla had bled for twenty years. It had lost its southern shore to
+      the Marīnids, its south to Gharnāṭa, and a fifth of the people of Extremadura and the lands of Ṭulayṭula
+      to the wars that burned across them. Portugal had lost its south to the ṭāʾifa of al-Gharb. The
+      reckoners' spies found that Jerónimo kept no army in the field at all, only nine ships, while the sultan
+      still kept his regulars under arms. Its king no longer sent demands. The court judged it an even fight,
+      if Gharnāṭa struck before the two crowns learned to fight as one.
+
+
+      The reckoning of the Strait had left the sultan more than a title. The old kingdom and the valley were
+      his for good. The jurists said the claim to all al-Andalus could now be pressed at less cost than ever
+      before. And the ṭāʾifas had been drawn closer to the throne. The sultan had been made heir, in the eyes
+      of his court, to the caliphs whose map lay on his table. One more war might be enough to make that claim
+      true.
+
+
+      There were reasons for patience. The estates were still owed four hundred and sixty-nine dīnārs. The
+      mercenaries still had to be paid. Thirteen thousand of the sultan's men lay in the soil of
+      [Mālaqa](place:malaqa), [Qādis](place:qadis) and [Antaqīra](place:antaqira). And Saʿd was twenty-two,
+      with a lifetime before him. The court remembered what his father had learned: a war of freedom cannot be
+      fought from the treasury, but a war of conquest must be.
+
+
+      The sultan had the old map hung in the Hall of Ambassadors, under the cedar heavens his uncle
+      [Faraj](person:faraj-ibn-ismail) had raised as regent, where every envoy from the north would see it.
+      Three days later, on the twenty-fifth of Ṣafar, Faraj himself died far beyond the desert, where he had
+      lived since his marriage in the land of Ghāna fifteen years before. He was fifty-three. The news was
+      months on the road, and few at court still remembered his face, though every envoy who came to Gharnāṭa
+      would stand under his ceiling. The sultan went back to the business of the treasury. Here begins the
+      Book of the Marches.
+
+
+      *And We wanted to confer favour upon those who were oppressed in the land and make them leaders and make
+      them inheritors.*
+  - id: 0772-02-27-the-survey-of-the-kingdoms
+    'on': '1370-09-20'
+    title: The Survey of the Kingdoms, After the Manner of the Roads of the Eyes
+    verse: '49:13'
+    who:
+      - saad-ibn-yusuf
+      - aiman-mamluk
+      - bolot-mamluk
+      - muhammad-ottoman
+      - jean-of-france
+      - edward-of-england
+      - charles-of-bohemia
+      - pope-abundius
+      - robert-of-anjou
+      - abu-inan-faris
+      - abu-ishaq-ibrahim
+      - jeronimo-of-castile
+      - joan-of-aragon
+    where:
+      - gharnata
+      - fas
+      - tilimsan
+    covers:
+      - 1370-09-13-the-world
+      - 1367-10-04-castile-portugal-union
+      - 1367-01-30-mamluk-alliance
+      - 1370-09-12-peace-morocco
+    text: >
+      When the map of the caliphs hung in the Hall of Ambassadors, our lord [Saʿd](person:saad-ibn-yusuf) saw
+      that it showed only al-Andalus, and he asked for the rest of the world. He told the chancery to make him
+      a survey of the kingdoms like the one Ibn Faḍl Allāh al-ʿUmarī wrote in Cairo a generation before, *The
+      Roads of the Eyes through the Kingdoms of the Cities*. It was to say who ruled each kingdom, how many
+      towns and men it had, whom it loved and whom it hated. The scribes questioned the Genoese factors in
+      [Gharnāṭa](place:gharnata), the Mamlūk envoys, the captives of the last war and the pilgrims coming home
+      from the East. At the end of Ṣafar 772 they laid before him a list of the powers of the world in order
+      of their weight, and this is its substance.
+
+
+      **Of the far East.** The three heaviest kingdoms of the earth lie beyond India, in al-Ṣīn and the
+      islands past it. The reckoners set them down with care, because the numbers were hard to believe: the
+      first of them counts its people in tens of millions. None of them has ever heard of Gharnāṭa, and the
+      sultan said it was a comfort to know that some empires are too far away to be a danger.
+
+
+      **Of Miṣr, the sultan's friend.** The seventh kingdom of the world is the realm of the Mamlūks, and it
+      is the only crown that stands with Gharnāṭa. Its sultan is [Būlād](person:bolot-mamluk), who took the
+      throne when his father Jamāl died in Ṣafar 770. He is twenty-six, and he is the half-brother of the
+      sultan's wife [Aiman](person:aiman-mamluk), so the alliance now runs through the household as well as
+      through the treaty. Miṣr has a hundred and fifty towns of its own and nearly as many again in its
+      subjects, from the Ḥijāz to the Taurus, and some sixty thousand men under arms. Its weakness is at home:
+      the envoys admitted that Cairo has been restless since the old sultan died.
+
+
+      **Of the house of ʿUthmān.** The Ottoman Turks have done what the Companions of the Prophet could not
+      do, and taken Constantinople. Their sultan [Muḥammad](person:muhammad-ottoman) is twenty-two, the same
+      age as our lord. He is a careful governor and a timid soldier, and the second is said of him more
+      quietly. He is at war with Karaman and the beyliks of Anatolia, with twenty-seven thousand men in the
+      field and seventy-three ships at sea. The Rūm who once ruled from Constantinople keep only twenty-five
+      towns around Demetrias in Thessaly. The ʿulamāʾ wept when they heard it. A courtier pointed out that the
+      Turks are twenty-seventh among the powers and nowhere near the Strait.
+
+
+      **Of the Franks.** France and England are the fourth and fifth kingdoms of the world, and they hate each
+      other. [Jean of France](person:jean-of-france) has reigned for twenty-eight years and is losing his
+      kingdom slowly. His realm is in disorder, and England's vassals hold Aquitaine, Burgundy, Flanders and
+      Brittany. England has a new king, [Edward](person:edward-of-england), crowned in Dhū al-Ḥijja. His crown
+      rules more land through its subjects than in England itself. The scribe noted that the king of France
+      also counts Qashtāla among his enemies, and he wrote that line in red.
+
+
+      East of France sits [Charles of Bohemia](person:charles-of-bohemia), Emperor over three hundred and
+      nineteen princes and cities. He is fifty-four, and by every report the ablest prince in Christendom. For
+      reasons no envoy could explain, he names [Fās](place:fas) and Tūnis among his rivals. The
+      [Pope](person:pope-abundius), an old man of sixty, sits at Avignon rather than Rome, and of all the
+      princes of the north he is the only friend of Qashtāla. Italy is divided between two leagues. The
+      Guelphs follow Naples, the Pope and Genoa. The Ghibellines follow Florence, Venice, Milan and Ṣiqilliya.
+      Naples, Hungary and Croatia have one king, [Robert of Anjou](person:robert-of-anjou), a scholar of
+      nineteen. His armies are far away in Halych and Volhynia. Genoa has only six towns of its own. But the
+      scribe counted its trade and found it worth twice the trade of all Qashtāla, and he advised the sultan
+      never to quarrel with a Genoese he owed money to.
+
+
+      **Of the Maghrib.** Fās is eleventh in the world, two places above Gharnāṭa. It is twice beaten but not
+      broken. [Abū ʿInān Fāris](person:abu-inan-faris) rules [Tilimsān](place:tilimsan) as his fief, and
+      Tilimsān still had eleven thousand men under arms when the peace was sealed. The Marīnid fleet is the
+      true danger: eighty ships, against the sultan's four. The reckoners also found that Fās names Qashtāla,
+      Portugal and Naples as its rivals, and not Gharnāṭa. The dīwān argued over whether this meant
+      forgiveness or contempt. Beyond Fās, the Ḥafṣid [Ibrāhīm](person:abu-ishaq-ibrahim) rules Tūnis and nine
+      subject lands, the twenty-first power of the world. His realm is close to disorder and his quarrel is
+      with Tilimsān, so the Marīnids have an enemy at their back.
+
+
+      **Of the Land of the Blacks.** South of the sands, Mālī is sixteenth in the world, and every caravan of
+      gold that reaches the Maghrib comes from its mines. Its throne stood empty when the scribes wrote, its
+      heir is a boy of seven, and its armies are at war with the Mossi. Merchants said the gold still came
+      north.
+
+
+      **Of the Peninsula.** Last the scribes came home. Qashtāla is eighth in the world, and with the
+      Portuguese crown on its king's head since Ṣafar 769 it is the greatest power any sultan of Gharnāṭa has
+      faced. But among the great powers it stands second from the last, barely ahead of Bohemia, and no
+      stronger. [Jerónimo](person:jeronimo-of-castile) kept no army in the field. Arghūn, forty-seventh in the
+      world, has a king of twenty, [Joan](person:joan-of-aragon), who also rules Ṣiqilliya, and Arghūn itself
+      has spent its strength.
+
+
+      **Of Gharnāṭa.** Then the scribes wrote the realm itself into the list: thirteenth among the powers of
+      the world, not yet counted among the great powers, but in the company of Delhi and of Majapahit in the
+      islands of the Indies. Twenty years before, Gharnāṭa had no place on the list at all, because the
+      reckoners only count sovereign kingdoms, and Gharnāṭa paid tribute to Qashtāla. The scribes judged that
+      the distance between it and the last of the great powers was no longer great.
+
+
+      The sultan read the whole survey in one sitting. Then he asked for three things to be copied out on a
+      single leaf: the king of France is Qashtāla's enemy, Fās does not count Gharnāṭa among its enemies, and
+      Miṣr is ruled by his wife's brother. He kept that leaf with him. The rest of the survey went to the
+      treasury beside the map of the caliphs.
+
+
+      *O mankind, We have created you from male and female and made you peoples and tribes, that you may know
+      one another.*
+    behind: >-
+      The survey's order is the game's great-power ladder in the save of 13 September 1370, read by
+      `tools/world_powers.py`, and the Kingdoms hall shows the same ladder at every checkpoint. The game ranks
+      only sovereign countries, which is why Granada has no place on it in its tributary years. The Great
+      Powers are the ranked countries above the first Regional Power: nine in 1370, seven to ten over the
+      campaign. "Men under arms" means regulars and raised levies on the map. In peacetime most countries
+      stand their levies down, so a zero for Castile means no army in the field, not none to raise. Egypt's
+      60,000 are mostly raised levies.
+
+
+      Invented colour: the commission and the scribes' sources, the sultan's leaf of three lines, the court's
+      tears for Constantinople and its argument over Fās, the Genoese advice, and Cairo's restlessness (the
+      save shows Egypt's stability low, not its cause). Bolot's father Jamāl and his kinship with Aiman come
+      from the save.
+  - id: 0772-08-07-the-moneylenders-of-ishbiliya
+    'on': '1371-02-24'
+    title: Of the Towns of the North, and the Moneylenders of Ishbīliya
+    verse: '4:29'
+    who:
+      - saad-ibn-yusuf
+      - maryam-bint-ismail
+      - dua-marinid
+      - dolca-of-murcia
+    where:
+      - gharnata
+      - malaqa
+      - fas
+      - runda
+      - ishbiliyya
+      - jayyan
+      - mursiyya
+      - uryula
+    covers:
+      - 1370-11-01-the-north
+      - 1371-02-24-spread-of-usury
+      - 1371-02-24-state
+      - 1370-11-01-state
+      - 1370-10-01-maryam-culture
+      - 1370-09-26-reconquest-claim
+      - 1370-09-20-murcia-annexation
+      - 1371-01-29-murcia-dolca
+    text: >
+      When the war chest was empty and the mercenaries had gone home, our lord [Saʿd](person:saad-ibn-yusuf)
+      turned to the lands he had won. He did not like what the dīwān's reckoners showed him. Three realms were
+      living under one crown, and only one of them was rich.
+
+
+      The first was the old kingdom of the mountains and the coast, from [Gharnāṭa](place:gharnata) to
+      [Mālaqa](place:malaqa): eighteen towns and a quarter of a million souls, nearly all of them Muslim, and
+      nearly three-quarters of what the land could yield reaching the treasury. The second was the valley of
+      the great river, won from Qashtāla in the wars of the last twenty years: thirty-one towns and four
+      hundred thousand souls, one in five of them Muslim, held by the crown with half a grip and yielding
+      three-fifths of what it might. The third was the north shore of the Strait, taken from [Fās](place:fas)
+      only months before. There were eleven towns and eighty-five thousand souls, more than half of them
+      Muslims, because the Marīnids had converted them. They had been fought over again and again in twenty
+      years of war. Their fields were poorer than when the wars began, [Runda](place:runda) poorest of all. Of
+      every hundred dīnārs the north shore could have paid, less than one came to Gharnāṭa.
+
+
+      Then there was [Ishbīliya](place:ishbiliyya). The reckoners counted seventy-seven thousand seven hundred
+      souls in it, more than in Gharnāṭa itself, so the greatest city of the realm was not the sultan's
+      capital. Its weavers made cloth fine enough for kings, its smiths made arms, and its paper-makers and
+      copyists kept a scriptorium. It was still a Christian city in its tongue and in most of its prayers. But
+      in the last four years the Muslims within its walls had grown from twenty thousand to twenty-four
+      thousand, and the crown's hold on it had risen from less than half to more than half. In the merchants'
+      reckoning its market had become the first in all the West, ahead of Fās. The sultan said that a city
+      like that was worth more than a province of wheat, and that he would rebuild the north around it.
+
+
+      He began with the dīwān. [Maryam bint Ismāʿīl](person:maryam-bint-ismail), who had spent four years
+      binding the new lands to the crown, was set to the same work as [Duʿāʾ](person:dua-marinid): making the
+      conquered towns Andalusī again. Duʿāʾ took Ishbīliya and Maryam took [Jayyān](place:jayyan), which
+      already had its madrasa. The sultan told them he did not want the Castilians driven out, because a
+      weaver who left took his loom with him. He wanted their children to speak Arabic.
+
+
+      In Shaʿbān 772 the ʿulamāʾ came to him about the moneylenders. In the towns of the valley, they said,
+      Muslim merchant families had begun to lend at interest, as the Jews and the Genoese did, and the
+      practice was spreading. The qāḍī recited the verse: *Allāh has permitted trade and forbidden usury.* The
+      court waited. The sultan had sat through every war of his reign in debt to his own estates, and he still
+      owed seven loans. He answered that the ʿulamāʾ were overreacting, and that he would sooner have Muslims
+      lending in Ishbīliya than Genoese. The ʿulamāʾ went away displeased, and they did not forget it.
+
+
+      The treasury now gained a little over ten dīnārs a month, and the sultan meant to spend all of it in the
+      north. There were Castilian rebels in arms in the hills and a claim against Qashtāla to be drawn up.
+      There was also [Mursiyya](place:mursiyya), one of the two oldest ṭāʾifas, which the crown had begun to
+      draw into its own hands; its new ḥājiba, [Dolça](person:dolca-of-murcia) of the old house of
+      [Uryūla](place:uryula), had taken her seat only that winter. None of it would come cheap. But the court
+      noted that this was the first sultan of the house of Naṣr to talk about rebuilding the towns of the
+      valley instead of defending the passes against them.
+
+
+      *O you who have believed, do not consume one another's wealth unjustly, but only in lawful business by
+      mutual consent.*
+    behind: >-
+      The three realms are the game's areas in the save of 1 November 1370: the Granada area (the old
+      kingdom), the Andalusia area (the valley), and the eleven towns taken from Morocco on 12 September 1370
+      (the north shore). "What the land could yield" is the save's possible tax, and "reaching the treasury"
+      its tax: 87 of 122 in the old kingdom, 67 of 111 in the valley, 0.14 of 17 on the north shore.
+      Ishbīliya's market as "first in all the West" is the market list in Trent's screenshot of 24 February
+      1371, which ranks Šbilya 1st, Fās 3rd and Niani 8th.
+
+
+      The Spread of Usury and the sultan's answer are the game's event and Trent's choice. Invented colour:
+      the sultan's remarks about wheat, looms and Genoese lenders, the qāḍī reciting the verse, and the
+      assignment of Ishbīliya to Duʿāʾ and Jayyān to Maryam (the game says only that the two are assimilating
+      them).

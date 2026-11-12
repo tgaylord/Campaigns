@@ -1,0 +1,14 @@
+name: ʿĀʾisha bint Yūsuf
+arabic: عائشة بنت يوسف
+sex: f
+house: Naṣrid
+born: '1359-12-03'
+died: '1419-08-29'
+father: yusuf-i
+mother: sayyida-of-fezzan
+traits:
+  - child_intelligent
+note: She died on 29 August 1419, at fifty-nine (save of 11 August 1420).
+game:
+  id: 47424
+  name: Aisha

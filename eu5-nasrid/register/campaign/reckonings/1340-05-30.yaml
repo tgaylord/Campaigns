@@ -1,0 +1,326 @@
+date: '1340-05-30'
+title: The fall of Uryūla
+source:
+  save: SP_GRA_1340_05_30 (compressed)
+  game: 1.4.5
+summary: >-
+  The day Uryūla fell, as Castile laid siege to Mursiyya and cut the road home (Trent's account). Both armies
+  stand at Uryūla. Shares of power are estimated, calibrated on Trent's 2 May 1340 reading (the 1 May
+  autosave); the nobility's satisfaction has fallen to 33.
+realm:
+  towns: 18
+  souls: 485485
+  treasury: 121
+  income: 31.5
+  expenses: 62.2
+  debt: 964
+  stability: 32
+  prestige: 22
+  regiments: 20
+  ships: 5
+  manpower: 4299
+court:
+  ruler: yusuf-i
+  heir: faraj-ibn-ismail
+  capital: gharnata
+  council:
+    - who: faraj-ibn-ismail
+      seat: Increase control in Mālaqa
+    - who: yusuf-ibn-muhammad
+      seat: Promote Granadan sovereignty
+standing:
+  wars:
+    - war-on-aragon
+  allies:
+    - Morocco
+    - Tunis
+  estates:
+    - name: Crown
+      power: 14.71
+    - name: Nobility
+      power: 52.78
+      mood: 33
+    - name: ʿUlamāʾ
+      power: 14.22
+      mood: 50
+    - name: Burghers
+      power: 11.55
+      mood: 63
+    - name: Commoners
+      power: 4.33
+      mood: 57
+    - name: Dhimmī
+      power: 2.42
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 471919
+    Sephardi: 12352
+    Ligurian: 1202
+    Mandinka: 12
+  faiths:
+    Sunni: 471919
+    Jewish: 12352
+    Catholic: 1201
+    Nyama: 12
+map:
+  ours:
+    - GRA
+  allies:
+    - MOR
+    - TUN
+beats:
+  - id: 1339-11-01-shadhili-order
+    'on': '1339-11-01'
+    kind: world
+    what: >-
+      The Shādhilī order arrives at court, sent from the zāwiyas of Salā and Tiṭwān with the Marīnid sultan's
+      letters, and is welcomed
+    from:
+      - seen
+    cite: Trent's screenshots
+    detail:
+      event: The Shadhili Order Arrives
+      choice: Welcome them to our Court.
+      effect: unlocks Patronization of the Shadhili Order in the Battle for the Strait; mysticism +33
+  - id: 1339-11-08-battle-uryula
+    'on': '1339-11-08'
+    kind: battle
+    what: 'The Day of Uryūla: Ibn al-Khaṭīb routs the Aragonese'
+    who:
+      - ibn-al-khatib
+    where:
+      - uryula
+    threads:
+      - war-on-aragon
+    from:
+      - seen
+    cite: Trent's screenshots
+    detail:
+      result: victory
+      ours: 24342
+      theirs: 11217
+      ourLosses: 4502
+      theirLosses: 6025
+      warScore: 25
+      onTheMap:
+        ours: 20971
+        theirs: 8071
+  - id: 1339-11-08-siege-uryula
+    'on': '1339-11-08'
+    kind: battle
+    what: The siege of Uryūla goes on
+    where:
+      - uryula
+    threads:
+      - war-on-aragon
+    from:
+      - seen
+    cite: Trent's screenshots
+    detail:
+      result: under way
+  - id: 1339-11-08-volunteers-withdraw
+    'on': '1339-11-08'
+    kind: note
+    what: >-
+      Short of supply, the Volunteers of the Faith fall back while the main army keeps the siege of Uryūla;
+      more baggage mercenaries are raised to feed the host
+    who:
+      - yahya-rahhu
+      - ibn-al-khatib
+    where:
+      - uryula
+    threads:
+      - war-on-aragon
+    from:
+      - told
+    cite: Trent's account
+    detail:
+      after: the Day of Uryūla; exact date to come from the next save
+  - id: 1340-03-09-estate-loans
+    'on': '1340-03-09'
+    kind: realm
+    what: >-
+      The war is paid for with loans from the estates: about 1,350 ducats owed, and the estates willing to
+      lend more; the debt cuts the crown's power by two thirds
+    threads:
+      - war-on-aragon
+      - estates
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshots
+    detail:
+      debt: 1351.73
+      interestPerMonth: 7.43
+      bankInterest: 9.35%
+      bondInterest: 5.28%
+      creditworthiness:
+        rating: 42
+        target: 51
+        monthly: 0.86
+      furtherCredit: 2,300 offered (Trent's account); 25.67 borrowable on the credit screen
+      foreignLoans: 0
+      bonds: 0
+      impactOfDebtToTheEstate:
+        crownPower: -65.81%
+        monthlyRighteousness: -0.02
+        monthlyDoom: 0.13
+  - id: 1340-04-16-battle-jerez
+    'on': '1340-04-16'
+    kind: battle
+    what: Morocco holds at Jerez
+    minor: true
+    threads:
+      - moroccan-castilian-war
+    from:
+      - save
+    cite: checkpoint 1340-08-11
+    detail:
+      result: victory
+      ours: 5156
+      theirs: 12837
+      ourLosses: 1252
+      theirLosses: 1807
+      side: Morocco (Granada not engaged)
+  - id: 1340-04-17-battle-ishbiliyya
+    'on': '1340-04-17'
+    kind: battle
+    what: Tlemcen wins before Ishbīliya
+    minor: true
+    where:
+      - ishbiliyya
+    threads:
+      - moroccan-castilian-war
+    from:
+      - save
+    cite: checkpoint 1340-08-11
+    detail:
+      result: victory
+      ours: 1797
+      theirs: 1500
+      ourLosses: 45
+      theirLosses: 735
+      side: Tlemcen (Granada not engaged)
+  - id: 1340-04-30-battle-ishbiliyya
+    'on': '1340-04-30'
+    kind: battle
+    what: Castile scatters the men of Gabès at Ishbīliya
+    minor: true
+    where:
+      - ishbiliyya
+    threads:
+      - moroccan-castilian-war
+    from:
+      - save
+    cite: checkpoint 1340-08-11
+    detail:
+      result: defeat
+      ours: 970
+      theirs: 11024
+      ourLosses: 205
+      theirLosses: 11
+      side: Gabès (Granada not engaged)
+  - id: 1340-05-26-battle-mursiyya
+    'on': '1340-05-26'
+    kind: battle
+    what: Castile destroys the Tlemceni garrison of Mursiyya
+    minor: true
+    where:
+      - mursiyya
+    threads:
+      - moroccan-castilian-war
+    from:
+      - save
+    cite: checkpoint 1340-08-11
+    detail:
+      result: defeat
+      ours: 716
+      theirs: 6710
+      ourLosses: 716
+      theirLosses: 55
+      side: Tlemcen (Granada not engaged)
+  - id: 1340-05-30-nobles-discontent
+    'on': '1340-05-30'
+    kind: realm
+    what: 'The nobility grow restless: satisfaction down to 33'
+    threads:
+      - estates
+    from:
+      - save
+    cite: checkpoint 1340-05-30
+    detail:
+      estate: nobles
+      from: 51
+      to: 33
+      between:
+        - '1339-09-02'
+        - '1340-05-30'
+  - id: 1340-05-30-road-cut
+    'on': '1340-05-30'
+    kind: note
+    what: 'Castile besieges Mursiyya, cutting the road home: the host must stand and fight in Aragon'
+    where:
+      - mursiyya
+      - uryula
+    threads:
+      - war-on-aragon
+      - moroccan-castilian-war
+    from:
+      - told
+    cite: Trent's account
+  - id: 1340-05-30-uryula-falls
+    'on': '1340-05-30'
+    kind: battle
+    what: Uryūla falls to Ibn al-Khaṭīb after a siege of nearly seven months
+    who:
+      - ibn-al-khatib
+    where:
+      - uryula
+    threads:
+      - war-on-aragon
+    from:
+      - save
+      - told
+    cite: Trent's account; the 30 May 1340 save has both armies at Uryūla
+    detail:
+      result: taken
+      begun: '1339-11-08'
+tellings:
+  - id: 0740-05-05-the-day-of-uryula
+    'on': '1339-11-08'
+    title: Of the Day of Uryūla
+    verse: 3:126
+    who:
+      - ibn-al-khatib
+      - yusuf-i
+    where:
+      - uryula
+    covers:
+      - 1339-11-01-shadhili-order
+      - 1339-11-08-battle-uryula
+      - 1339-11-08-siege-uryula
+    text: >
+      At the end of Rabīʿ al-Thānī in the year 740 there came to the court a delegation of the Shādhilī
+      shaykhs, sent from the great zāwiyas of Salā and Tiṭwān with letters from the chamber of the Marīnid
+      sultan. They are not wanderers of the desert but men of the law and of the *Ḥikam* of Ibn ʿAṭāʾ Allāh,
+      as easy at a merchant's table as at a palace door. They offered to found a zāwiya in our land and to
+      lend us their brotherhood on both shores of the Strait. Our lord welcomed them, for theirs is a coin
+      that the Christian kings cannot mint.
+
+
+      Then Allāh gave the victory. On the fifth of Jumādā al-Ūlā the host of [Muḥammad ibn
+      al-Khaṭīb](person:ibn-al-khatib) came down upon the Aragonese before the walls of
+      [Uryūla](place:uryula). The infidel had eight thousand men in the field and fed more into the fight. Our
+      army was twenty-one thousand: the *mutaṭawwiʿa* and the Volunteers of the Faith, the sultan's horse and
+      the hired camel-riders. Their commander knew his trade, but the weight of our numbers told, and at last
+      the Aragonese line broke and fled.
+
+
+      Six thousand of the enemy fell or were lost, more than half his army, against four and a half thousand
+      of ours, nearly all of them *mutaṭawwiʿa*, who stood in the first line and bore the brunt. It was the
+      greatest victory of the reign, and the dīwān reckons that it turned the war plainly in our favour. The
+      siege of Uryūla began that same day.
+
+
+      *And victory comes only from Allāh, the Mighty, the Wise.*

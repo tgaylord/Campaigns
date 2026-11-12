@@ -1,0 +1,22 @@
+name: Jean II of France
+house: Valois
+born: '1319-04-26'
+died: '1375-07-19'
+roles:
+  - king of France
+traits:
+  - obsessive_perfectionist
+  - malevolent
+  - greedy
+stations:
+  - role: admiral
+    from: '1339-04-15'
+    to: '1342-05-17'
+    source: save
+    approx: false
+note: >-
+  King of France from 17 May 1342. By 1370 England's vassals hold much of the old kingdom, his own realm is in
+  disorder (stability below zero), and Castile is his rival. Died 1375-07-19 (save of 24 October 1414).
+game:
+  id: 924
+  name: Jehan

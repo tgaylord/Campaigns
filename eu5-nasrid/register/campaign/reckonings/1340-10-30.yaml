@@ -1,0 +1,169 @@
+date: '1340-10-30'
+title: Morocco driven from Iberia
+source:
+  save: SP_GRA_1340_10_30 (compressed)
+  game: 1.4.5
+summary: >-
+  Two days after Morocco's defeat: Castile now holds Runda, Marballa, al-Jazīra al-Khaḍrāʾ and Jabal Ṭāriq.
+  Shares of power are estimated from the 11 August reading.
+realm:
+  towns: 18
+  souls: 490404
+  treasury: 97
+  income: 34.3
+  expenses: 38.7
+  debt: 843
+  stability: 32
+  prestige: 20
+  regiments: 3
+  ships: 5
+  manpower: 4194
+court:
+  ruler: yusuf-i
+  heir: faraj-ibn-ismail
+  capital: gharnata
+  council:
+    - who: faraj-ibn-ismail
+      seat: Increase control in Mālaqa
+    - who: yusuf-ibn-muhammad
+      seat: Strengthen the government
+standing:
+  allies:
+    - Morocco
+    - Tunis
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+  estates:
+    - name: Crown
+      power: 14.35
+    - name: Nobility
+      power: 53.99
+      mood: 35
+    - name: ʿUlamāʾ
+      power: 13.7
+      mood: 50
+    - name: Burghers
+      power: 11.14
+      mood: 59
+    - name: Commoners
+      power: 4.19
+      mood: 56
+    - name: Dhimmī
+      power: 2.62
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 476790
+    Sephardi: 12401
+    Ligurian: 1200
+    Mandinka: 12
+  faiths:
+    Sunni: 476791
+    Jewish: 12400
+    Catholic: 1200
+    Nyama: 12
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+  allies:
+    - MOR
+    - TUN
+beats:
+  - id: 1340-10-25-portuguese-civil-war
+    'on': '1340-10-25'
+    kind: world
+    what: 'Civil war in Portugal: Peter, the queen''s younger brother, rises against Queen Maria'
+    who:
+      - peter-of-portugal
+      - maria-of-portugal
+    from:
+      - save
+    cite: checkpoint 1343-05-20 (war record)
+    detail:
+      rebels: AAA49
+      target: POR
+  - id: 1340-10-28-moroccan-peace
+    'on': '1340-10-28'
+    kind: peace
+    what: >-
+      Morocco loses its war on Castile and gives up all its land on the Iberian side of the Strait: Runda,
+      Marballa, al-Jazīra al-Khaḍrāʾ and Jabal Ṭāriq pass to Castile
+    where:
+      - runda
+      - marballa
+      - al-jazira-al-khadra
+      - jabal-tariq
+    threads:
+      - moroccan-castilian-war
+    from:
+      - save
+      - told
+    cite: Trent's account; checkpoint 1340-10-30 (all four Castilian)
+    detail:
+      to: Castile
+      locations:
+        - ronda
+        - marbella
+        - algeciras
+        - gibraltar
+tellings:
+  - id: 0741-05-06-the-marinids-lose-the-shore
+    'on': '1340-10-28'
+    title: Of the Marīnids' Defeat, and the Shore They Lost
+    verse: 3:140
+    who:
+      - maria-of-portugal
+      - peter-of-portugal
+      - fatima-bint-ismail
+    where:
+      - gharnata
+      - fas
+      - runda
+      - marballa
+      - al-jazira-al-khadra
+      - jabal-tariq
+      - balansiyya
+    covers:
+      - 1340-10-25-portuguese-civil-war
+      - 1340-10-28-moroccan-peace
+      - 1340-11-22-royal-marriage-valencia
+    text: >
+      While [Gharnāṭa](place:gharnata) won its war in the east, the Marīnids lost theirs in the west. For
+      three years the lion of [Fās](place:fas) had fought Qashtāla to reclaim al-Andalus, and Gharnāṭa, bound
+      by tribute to the one side and by its word to the other, had watched from the mountains and was never
+      drawn in. When the reckoning came, it did not have to share it.
+
+
+      On the sixth of Jumādā al-Ūlā in the year 741 Abū al-Ḥasan made his peace with Qashtāla, and he paid for
+      it with everything his house still held on the Iberian shore. [Runda](place:runda) on its gorge passed
+      to the Christians, and [Marballa](place:marballa) on the coast. So did [al-Jazīra
+      al-Khaḍrāʾ](place:al-jazira-al-khadra), the green island where Ṭāriq's army first came ashore, and
+      [Jabal Ṭāriq](place:jabal-tariq) itself, the mountain that bears his name. For six hundred years Muslims
+      had crossed the Strait and found Muslim harbours waiting. Now every harbour between Mālaqa and the Ocean
+      flew the castle of Qashtāla. Gharnāṭa was the last Muslim crown in al-Andalus, and Qashtāla held towns
+      inside the realm's own mountains, Runda and Marballa, like thorns in a hand.
+
+
+      The court mourned the towns and did not mourn the lesson. The Marīnids, it was said, are a great help to
+      have across the water and a poor one to have on the same shore. They had lost al-Andalus once already.
+      The scales of the Strait swung far toward Qashtāla that year, and the sultan resolved that Gharnāṭa
+      would be its own weight on them and not a counterweight in another man's hand.
+
+
+      Three days before the peace, word came from the west that Portugal had fallen into civil war. Queen
+      [Maria](person:maria-of-portugal), who is also the wife of Alfonso of Qashtāla, faced a rising by her
+      own younger brother, [Peter](person:peter-of-portugal). The dīwān watched it closely. A crown fighting
+      itself cannot lend its spears to its neighbours.
+
+
+      And on the first of Jumādā al-Ākhira a royal marriage bound the house of Naṣr to the princely house of
+      the Ṭāʾifa of [Balansiyya](place:balansiyya): the lady [Fāṭima](person:fatima-bint-ismail), the sultan's
+      sister, was given in marriage into it. What had been made by treaty was now sealed in blood, so that the
+      prince of the ṭāʾifa might count himself kin to the sultan and not only his servant.
+
+
+      *And these days We alternate among the people.*

@@ -1,0 +1,293 @@
+date: '1340-08-28'
+title: The ṭāʾifas of Balansiyya and Mursiyya
+source:
+  save: SP_GRA_1340_08_28 (compressed)
+  game: 1.4.5
+summary: >-
+  Five days after Valencia and Murcia were released as ṭāʾifas. No month has turned since the peace, so
+  income, expenses, estate satisfaction and the Strait read as on 11 August. Shares of power are estimated
+  from the 11 August reading; with Valencia's Christians gone from Granada's own lands, the dhimmī share falls
+  back and the nobility's rises.
+realm:
+  towns: 18
+  souls: 490028
+  treasury: 107
+  income: 29.9
+  expenses: 54
+  debt: 843
+  stability: 32
+  prestige: 20
+  regiments: 3
+  ships: 5
+  manpower: 4322
+court:
+  ruler: yusuf-i
+  heir: faraj-ibn-ismail
+  capital: gharnata
+  council:
+    - who: faraj-ibn-ismail
+      seat: Increase control in Mālaqa
+    - who: yusuf-ibn-muhammad
+      seat: Strengthen the government
+standing:
+  allies:
+    - Morocco
+    - Tunis
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+  estates:
+    - name: Crown
+      power: 14.37
+    - name: Nobility
+      power: 53.91
+      mood: 34
+    - name: ʿUlamāʾ
+      power: 13.71
+      mood: 50
+    - name: Burghers
+      power: 11.18
+      mood: 60
+    - name: Commoners
+      power: 4.2
+      mood: 57
+    - name: Dhimmī
+      power: 2.63
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 476417
+    Sephardi: 12398
+    Ligurian: 1201
+    Mandinka: 12
+  faiths:
+    Sunni: 476417
+    Jewish: 12398
+    Catholic: 1201
+    Nyama: 12
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+  allies:
+    - MOR
+    - TUN
+beats:
+  - id: 1340-08-14-cb-independence
+    'on': '1340-08-14'
+    kind: world
+    what: Granada begins building a casus belli for a war of independence against Castile
+    from:
+      - save
+    cite: checkpoint 1340-08-28 (treaty record started 14 August 1340)
+    detail:
+      casus_belli: cb_independence_war
+      target: Castile
+  - id: 1340-08-14-demobilised
+    'on': '1340-08-14'
+    kind: note
+    what: >-
+      The mercenaries are paid off early and dismissed and the army returns to peacetime pay: the treasury
+      falls to 469 and the monthly deficit narrows from 24 to under 5
+    threads:
+      - war-on-aragon
+    from:
+      - seen
+      - told
+    cite: Trent's account and his budget screenshot of 14 August 1340
+    detail:
+      treasury: 468.87
+      income: 30.66
+      expenses: 35.54
+      balance: -4.87
+  - id: 1340-08-23-strengthen-government
+    'on': '1340-08-23'
+    kind: office
+    what: Yūsuf ibn Muḥammad turns from promoting Granadan sovereignty to strengthening the government
+    minor: true
+    who:
+      - yusuf-ibn-muhammad
+    from:
+      - save
+    cite: checkpoint 1340-08-28
+    detail:
+      from: gra_promote_sovereignty
+      to: strengthen_government
+  - id: 1340-08-23-taifa-rulers
+    'on': '1340-08-23'
+    kind: office
+    what: >-
+      Joan d'Oriola rules the Ṭāʾifa of Balansiyya, Juan Manuel Enríquez the Ṭāʾifa of Mursiyya; Granada sets
+      out to improve relations with both
+    who:
+      - joan-doriola
+      - juan-manuel-enriquez
+    where:
+      - balansiyya
+      - jumalla
+    from:
+      - save
+    cite: checkpoint 1340-08-28
+  - id: 1340-08-23-taifas
+    'on': '1340-08-23'
+    kind: land
+    what: >-
+      Valencia and Murcia released as ṭāʾifas of Granada: Balansiyya takes the twelve Valencian towns,
+      Mursiyya takes Jumalla; both are Sunni and of duchy rank
+    who:
+      - yusuf-i
+      - joan-doriola
+      - juan-manuel-enriquez
+    where:
+      - balansiyya
+      - shatiba
+      - daniya
+      - al-qant
+      - alsh
+      - qandiya
+      - al-quy
+      - ayura
+      - bunyul
+      - shalba
+      - liriya
+      - uryula
+      - jumalla
+    from:
+      - save
+      - told
+    cite: Trent's account; checkpoint 1340-08-28
+    detail:
+      subjects:
+        VAL:
+          type: taifa
+          rank: duchy
+          culture: catalan
+          religion: sunni
+          locations: 12
+          population: 189682
+        MUC:
+          type: taifa
+          rank: duchy
+          culture: castilian
+          religion: sunni
+          locations: 1
+          population: 8283
+      locations:
+        from: 31
+        to: 18
+      population:
+        from: 683503
+        to: 490028
+  - id: 1340-08-28-demobilised
+    'on': '1340-08-28'
+    kind: note
+    what: 'The host stands down: three regiments remain of nineteen'
+    from:
+      - save
+    cite: checkpoint 1340-08-28
+    detail:
+      regiments:
+        from: 19
+        to: 3
+  - id: 1340-08-28-loans-repaid
+    'on': '1340-08-28'
+    kind: realm
+    what: 'Five of the estate loans repaid: the debt falls from 964 to 843 ducats, and the treasury to 107'
+    threads:
+      - estates
+    from:
+      - save
+    cite: checkpoint 1340-08-28
+    detail:
+      debt:
+        from: 963.9
+        to: 843.2
+      loans:
+        from: 38
+        to: 33
+      treasury: 106.7
+  - id: 1340-08-28-taifa-loyalty
+    'on': '1340-08-28'
+    kind: world
+    what: >-
+      Both ṭāʾifas begin below 50 loyalty, and so as disloyal subjects: Balansiyya at 47 and rising, Mursiyya
+      at 27 and rising more slowly
+    who:
+      - joan-doriola
+      - juan-manuel-enriquez
+    where:
+      - balansiyya
+      - jumalla
+    from:
+      - save
+      - told
+    cite: Trent's account (loyalty is not in the save)
+    detail:
+      loyalty:
+        VAL: 47
+        MUC: 27
+      disloyal_below: 50
+tellings:
+  - id: 0741-02-28-the-two-taifas
+    'on': '1340-08-23'
+    title: Of the Two Ṭāʾifas
+    verse: '13:11'
+    who:
+      - yusuf-i
+      - joan-doriola
+      - juan-manuel-enriquez
+      - yusuf-ibn-muhammad
+    where:
+      - gharnata
+      - balansiyya
+      - jumalla
+      - shatiba
+      - uryula
+    covers:
+      - 1340-08-14-cb-independence
+      - 1340-08-23-taifas
+      - 1340-08-23-taifa-rulers
+      - 1340-08-23-strengthen-government
+      - 1340-08-28-loans-repaid
+      - 1340-08-28-demobilised
+      - 1340-08-28-taifa-loyalty
+    text: >
+      The thirteen towns won from Arghūn were a gift that could choke the one who swallowed it. Nearly two
+      hundred thousand souls lived in them, and three in four were Christians, Catalans and Aragonese who had
+      never known a Muslim lord. The dīwān of [Gharnāṭa](place:gharnata) had neither the clerks nor the
+      soldiers to govern them from the Alhambra. The sultan's counsellors remembered how the old caliphate had
+      fallen. The great city had tried to hold everything, and in the end it held nothing.
+
+
+      So our lord [Yūsuf](person:yusuf-i) chose the way of the old kings of al-Andalus, before the caliphs and
+      after them. On the twenty-eighth of Ṣafar in the year 741 he raised two ṭāʾifas, two lesser kingdoms
+      bound to Gharnāṭa by oath and tribute and ruled by their own princes. The first was the Ṭāʾifa of
+      [Balansiyya](place:balansiyya), twelve towns with the great city among them, from
+      [Shāṭiba](place:shatiba) to [Uryūla](place:uryula). Over it he set [Joan d'Oriola](person:joan-doriola),
+      a Catalan lord of that land who had taken the faith of Islam. The second was the Ṭāʾifa of Mursiyya,
+      which for now was only the one town of [Jumalla](place:jumalla). Over it he set [Juan Manuel
+      Enríquez](person:juan-manuel-enriquez), a Castilian and likewise a convert, a hard soldier with no gift
+      for words. Both princes kept the Christian names they were born with, for their people knew them by
+      those names and would follow them more readily. So the crown's own towns, thirty-one on the day of the
+      peace, were eighteen again, the old realm of the mountains and the sea, with two tributary kingdoms at
+      its side.
+
+
+      Neither ṭāʾifa loved its new master. The prince of Balansiyya was near content and growing more so. The
+      prince of Mursiyya was a Castilian, and his loyalty was thin. The sultan's envoys went to both with
+      gifts and assurances, and the dīwān settled down to the long work of making friends of them.
+
+
+      At home the realm put down its arms. The host of nineteen regiments was sent back to its villages until
+      three remained. Five of the loans owed to the estates were repaid from the gold of the peace, and the
+      debt fell from nine hundred and sixty-four dīnārs to eight hundred and forty-three. The treasury was
+      left almost bare again. The sultan's cousin [Yūsuf ibn Muḥammad](person:yusuf-ibn-muhammad), who had
+      spent three years defending the realm's sovereignty, was turned to strengthening the government. Within
+      days of the peace the clerks of the dīwān began, very quietly, to set down the realm's claims against
+      Qashtāla, the long grievance of tribute and lost lands that would one day justify a war of independence.
+      No one spoke of it aloud. The scales were not ready.
+
+
+      *Allāh does not change the condition of a people until they change what is in themselves.*

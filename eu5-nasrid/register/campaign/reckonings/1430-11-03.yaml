@@ -1,0 +1,524 @@
+date: '1430-11-03'
+title: The Peace of Ṣafar
+source:
+  save: SP_ADU_1430_11_03 (compressed)
+  game: 1.4.7
+summary: >-
+  The day of the two peaces, 16 Ṣafar 834, after the battle before Bilbao. Galicia, beaten at 82 war score, is
+  annexed whole; Navarre and Castile, at 59, go with it, and the Kingdom of Castile is no more. For the length
+  of this save the crown holds 241 towns and 3.37 million people, from the Algarve to San Sebastián, before
+  the north is handed out. Seven ṭāʾifas, no wars, stability 0.6. Estates estimated from the reading of 16
+  November 1428. Treasury 753.
+realm:
+  towns: 241
+  souls: 3372385
+  treasury: 753
+  income: 271.5
+  expenses: 289.2
+  stability: 0.6
+  prestige: 64
+  regiments: 9
+  ships: 50
+  manpower: 17915
+court:
+  ruler: muhammad-ibn-ismail-ibn-saad
+  heir: ismail-ibn-muhammad-ibn-ismail
+  capital: ishbiliyya
+  council:
+    - who: ismail-ibn-muhammad-ibn-ismail
+      seat: Promoting Andalusī culture
+    - who: ahmad-ibn-muhammad-ibn-ismail
+      seat: Integrating the new lands
+    - who: umm-al-fath-bint-muhammad
+      seat: Integrating the new lands
+    - who: yusuf-ibn-saad
+      seat: Promoting Andalusī culture
+    - who: jadila-bint-saad-ibn-faraj
+      seat: Developing the provinces
+standing:
+  allies:
+    - Mamluks
+    - Morocco
+    - Tunis
+  subjects:
+    - Catalonia (taifa)
+    - Aragon (taifa)
+    - Taifa of Cuenca (taifa)
+    - Kingdom of Portugal (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+  estates:
+    - name: Crown
+      power: 30.96
+    - name: Nobility
+      power: 15.37
+      mood: 42
+    - name: ʿUlamāʾ
+      power: 11.11
+      mood: 50
+    - name: Burghers
+      power: 19.28
+      mood: 50
+    - name: Commoners
+      power: 2.54
+      mood: 50
+    - name: Dhimmī
+      power: 20.74
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 816686
+    Castilian: 765937
+    Portuguese: 489463
+    Galician: 390298
+    Leonese: 326321
+    Sephardi: 192725
+  faiths:
+    Catholic: 1922234
+    Sunni: 1246986
+    Jewish: 184392
+    Guanche_religion: 15713
+    Rogo_miki_religion: 821
+map:
+  ours:
+    - GRA
+  subjects:
+    - CAT
+    - ARA
+    - ABA60
+    - POR
+    - ABA42
+    - ABA49
+    - ABA55
+  allies:
+    - MAM
+    - MOR
+    - TUN
+beats:
+  - id: 1430-11-03-all-three-fall
+    'on': '1430-11-03'
+    kind: note
+    what: >-
+      By 3 November the Castilians have been swept aside by the advance and the armies of al-Andalus are at
+      the gates of Bilbao. All three states, Galicia, Navarre and Castile, fall
+    threads:
+      - war-of-the-mountains
+      - war-of-shant-yaqub
+    from:
+      - told
+    cite: Trent's account
+    detail:
+      account: Trent, 3 November 1430
+  - id: 1430-11-03-battle-bilbo
+    'on': '1430-11-03'
+    kind: battle
+    what: >-
+      Before Bilbao the army of al-Andalus, 4,673 strong, breaks 3,580 Navarrese, killing or taking 2,756 for
+      the loss of 191
+    who:
+      - alfonso-gaston
+    threads:
+      - war-of-the-mountains
+    from:
+      - seen
+    cite: Trent's battle screen, 3 November 1430
+    detail:
+      result: victory
+      naval: false
+      ours:
+        al-Andalus: 4673
+      oursTotal: 4673
+      oursLost: 191
+      theirs:
+        Navarre: 3580
+      theirsTotal: 3580
+      theirsLost: 2756
+      location: Bilbao
+      warScore: 25
+      composition:
+        ours: 2,000 infantry, 2,221 light horse, 452 heavy horse
+        theirs: 3,462 levy archers, 86 infantry, 32 horse
+  - id: 1430-11-03-iberia-is-conquered
+    'on': '1430-11-03'
+    kind: note
+    what: >-
+      Iberia is conquered. With Galicia, Navarre and Castile gone, every town of the peninsula belongs to the
+      Emperor or to one of his ṭāʾifas: the Istirdād is complete
+    threads:
+      - war-of-shant-yaqub
+      - war-of-the-mountains
+    from:
+      - told
+    cite: Trent's account
+  - id: 1430-11-03-peace-with-galicia
+    'on': '1430-11-03'
+    kind: peace
+    what: >-
+      The Peace of Ṣafar with Galicia: at 82 war score the kingdom is annexed whole, its 31 towns from
+      Santiago and A Coruña to Oviedo and Llanes. King Diego Villamarín goes into exile at Augsburg
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - diego-villamarin
+    threads:
+      - war-of-shant-yaqub
+    from:
+      - save
+    cite: save of 3 November 1430
+    detail:
+      warScore: 82
+      towns: 31
+      examples:
+        - Santiago de Compostela
+        - A Coruña
+        - Lugo
+        - Ourense
+        - Pontevedra
+        - Tui
+        - Ferrol
+        - Oviedo
+        - Avilés
+        - Llanes
+      hijri: 16 Ṣafar 834
+      exile: Diego Villamarín appears in the save of 3 November as a man of the burghers' estate of Augsburg
+  - id: 1430-11-03-peace-with-navarre-and-castile
+    'on': '1430-11-03'
+    kind: peace
+    what: >-
+      The Peace of Ṣafar with Navarre and Castile: at 59 war score both are annexed, Navarre's ten Basque
+      towns from Bilbao and San Sebastián to Vitoria and Castile's last four on the Cantabrian coast,
+      Santander, Laredo, Potes and San Vicente. The Kingdom of Castile is no more
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - alfonso-gaston
+      - fernando-son-of-pedro
+      - juan-son-of-fernando
+    threads:
+      - war-of-the-mountains
+    from:
+      - save
+    cite: save of 3 November 1430
+    detail:
+      warScore: 59
+      towns:
+        Navarre: 10
+        Castile: 4
+      Navarre:
+        - Bilbao
+        - San Sebastián
+        - Vitoria
+        - Durango
+        - Oñate
+        - Tolosa
+        - Salvatierra
+        - Laguardia
+        - Añana
+        - Valmaseda
+      Castile:
+        - Santander
+        - Laredo
+        - Potes
+        - San Vicente de la Barquera
+      angevins: the Angevin Empire, Castile's ally, never entered the war
+      kings: >-
+        Fernando of Castile and his heir Juan are afterwards of the court of the Ṭāʾifa of Burghush, Alfonso
+        Gastón of Navarre of the Ṭāʾifa of Banbalūna
+      realm:
+        towns:
+          - 196
+          - 241
+        population:
+          - 2592000
+          - 3372000
+      hijri: 16 Ṣafar 834
+  - id: 1430-11-03-taifa-of-galicia
+    'on': '1430-11-03'
+    kind: land
+    what: >-
+      The other 23 towns of Galicia, from Santiago, A Coruña and Lugo to Ourense and Tui, are made a ṭāʾifa of
+      the Emperor under Diego Sotomaior, a Galician noble of the faith, thirty-one years old. The empire now
+      has eight ṭāʾifas
+    who:
+      - diego-sotomaior
+    from:
+      - save
+    cite: saves of 3 and 5 November 1430
+    detail:
+      towns: 23
+      population: 518000
+      capital: Santiago de Compostela
+      culture: Galician
+      religion: Sunni (the state; the people Catholic)
+      rank: kingdom
+      army: 2,400 regulars, 3 ships
+      ruler: Diego Sotomaior, born 17 December 1398 (57/42/58)
+      taifas:
+        - Catalonia
+        - Aragon
+        - Qūnka
+        - the Kingdom of Portugal
+        - Liyūn
+        - Burghush
+        - Banbalūna
+        - Jillīqiya
+      realm:
+        crown:
+          towns: 196
+          population: 2592000
+        taifas:
+          towns: 236
+          population: 3967000
+  - id: 1430-11-03-the-north-divided
+    'on': '1430-11-03'
+    kind: land
+    what: >-
+      The conquered north is shared among the ṭāʾifas of the frontier: the eight towns of old Asturias, from
+      Oviedo, go to Liyūn; the four of Cantabria, from Santander, to Burghush; the ten of the Basque coast,
+      from Bilbao, to Banbalūna
+    who:
+      - ahmad-ibn-ismail-ibn-saad
+      - abu-hammu-rahhu
+      - ahmad-ibn-yusuf-ibn-ismail
+    where:
+      - banbaluna
+    from:
+      - save
+    cite: saves of 3 and 5 November 1430
+    detail:
+      toLiyun:
+        - Oviedo
+        - Avilés
+        - Cangas
+        - Castropol
+        - Llanes
+        - Mieres
+        - Tineo
+        - Villaviciosa
+      toBurghush:
+        - Santander
+        - Laredo
+        - Potes
+        - San Vicente de la Barquera
+      toBanbaluna:
+        - Bilbao
+        - San Sebastián
+        - Vitoria
+        - Durango
+        - Oñate
+        - Tolosa
+        - Salvatierra
+        - Laguardia
+        - Añana
+        - Valmaseda
+      after:
+        Liyun: 35
+        Burghush: 38
+        Banbaluna: 28
+      note: >-
+        made after the save of 3 November and before that of 5 November; the Galician ṭāʾifa's records date it
+        to 3 November
+tellings:
+  - id: 0834-02-16-of-the-war-of-the-mountains-and-the-peace-of-safar
+    'on': '1430-11-03'
+    title: Of the War of the Mountains, and the Peace of Ṣafar
+    verse: '59:2'
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+      - juan-cangas
+      - ahmad-ibn-ismail-ibn-saad
+      - diego-villamarin
+      - alfonso-gaston
+      - fernando-son-of-pedro
+      - juan-son-of-fernando
+      - edward-v-of-england
+      - abu-hammu-rahhu
+      - ahmad-ibn-yusuf-ibn-ismail
+      - diego-sotomaior
+    where:
+      - shant-yaqub
+      - banbaluna
+      - ishbiliyya
+    covers:
+      - 1430-08-05-battle-oviedo
+      - 1430-08-17-the-princes-opening
+      - 1430-08-17-war-on-navarre
+      - 1430-11-03-battle-bilbo
+      - 1430-11-03-all-three-fall
+      - 1430-11-03-peace-with-galicia
+      - 1430-11-03-peace-with-navarre-and-castile
+      - 1430-11-03-iberia-is-conquered
+      - 1430-11-03-the-north-divided
+      - 1430-11-03-taifa-of-galicia
+    text: >
+      King Diego had lost his capital, but he had not yet lost his kingdom. He gathered what men he still had
+      in the east of it, three thousand two hundred, and in Dhū al-Qaʿda 833 he threw them at Oviedo, where
+      the host of the Ṭāʾifa of Liyūn lay in the old capital of the Asturian kings. Liyūn's general was [Juan
+      Cangas](person:juan-cangas), a Leonese of the faith, and he had five thousand six hundred men behind
+      good walls. On 15 Dhū al-Qaʿda the Galicians came at him, and by evening there were none of them left.
+      Not one man of Liyūn was lost. Jillīqiya had no army now, and its annexation was a question only of the
+      day on which the Emperor would accept it.
+
+
+      The princes did not want to accept it yet. Their father had never given up his hatred of Qashtāla, and
+      he would not rest while a Castilian king sat in Santander. But Qashtāla was under the protection of
+      London, and the empire was not ready for a war with the English, who held France and Languedoc and the
+      passes of the Pyrenees beside Catalonia. Then the princes saw an opening. King
+      [Alfonso](person:alfonso-gaston) of Nabarra had allied himself with Qashtāla. Qashtāla had the
+      protection of London, but Nabarra had none. If the empire made war on Nabarra, Qashtāla would be bound
+      to come in on Nabarra's side, and London would have to decide whether it was bound to follow. The armies
+      of al-Andalus were already in the north, and the war with Jillīqiya was not yet closed. If they moved
+      before King [Edward](person:edward-v-of-england)'s council had made up its mind, they could overwhelm
+      both kingdoms and present London with a peace already made.
+
+
+      On 27 Dhū al-Qaʿda 833 (17 August 1430), with the Galician war still open, the Emperor declared war on
+      Nabarra. It was the sixth war of the Istirdād. [Fernando](person:fernando-son-of-pedro) of Qashtāla
+      answered his ally's call as the princes had expected, and the English did not answer his. Neither Basque
+      nor Castilian had a man under arms on the day of the declaration. The war is called the War of the
+      Mountains, after the country it was fought in, the wet green hills of Cantabria and the Basque coast
+      where the Christians said their kingdoms had first been born.
+
+
+      It took eleven weeks. The armies of the empire swept through Qashtāla's four towns without a battle
+      worth the name, and came down the valley of the Nervión to the gates of Bilbao. There, on 16 Ṣafar 834
+      (3 November 1430), Nabarra made its stand with three thousand five hundred Basques, most of them archers
+      from the villages, against four thousand six hundred and seventy of ours. The Basques were brave, as the
+      princes had said they would be, and it did them no good. They broke under the charge of the horse, and
+      two thousand seven hundred and fifty of them were killed or taken, for a hundred and ninety-one of ours.
+
+
+      That same day all three kingdoms fell. Jillīqiya, beaten past any hope, was annexed whole: its
+      thirty-one towns, from Shant Yāqub and A Coruña to Oviedo and Llanes, passed to the crown. Nabarra and
+      Qashtāla were annexed with it: the ten Basque towns from Bilbao and San Sebastián to Vitoria, and the
+      last four of Qashtāla on the Cantabrian shore, Santander, Laredo, Potes and San Vicente. The court
+      called it the Peace of Ṣafar. For a day the crown ruled two hundred and forty-one towns and three
+      million three hundred and seventy thousand souls, from the Algarve to San Sebastián.
+
+
+      The kings went their separate ways. King Diego, the soldier, left the peninsula altogether and turned up
+      at Augsburg in the German lands, among its merchants and shipwrights, a careful and quiet man of
+      thirty-nine who now built ships instead of armies. King Alfonso of Nabarra stayed at the court of the
+      Ṭāʾifa of [Banbalūna](place:banbaluna), where he was said to drink more than was good for him. King
+      Fernando, the last king of Qashtāla, son of the Pedro who had lost the War of the League and the War of
+      Jillīqiya, went with his son [Juan](person:juan-son-of-fernando) to the court of the Ṭāʾifa of Burghush.
+      Juan was eighteen and wore the garter of the English king's order of knighthood. In Burghush, the old
+      capital of his ancestors, he was a guest of a Muslim lord.
+
+
+      The new lands were not kept by the crown. The rule of the house since the Peace of Rajab had been that
+      the far north, where the Christians were many and the Muslims few, would be held through ṭāʾifas, and
+      the princes saw it done the same day. The eight towns of old Ashturiyās, Oviedo and Cangas among them,
+      went to the Emperor's brother [Aḥmad](person:ahmad-ibn-ismail-ibn-saad) of Liyūn, whose son had won the
+      battle before Shant Yāqub and whose general had won the battle at Oviedo. Santander and the Cantabrian
+      coast went to [Abū Ḥammū](person:abu-hammu-rahhu) of Burghush, and the Basque coast to [Aḥmad ibn
+      Yūsuf](person:ahmad-ibn-yusuf-ibn-ismail) of Banbalūna, so that the old Navarre and the new were joined
+      under one lord of the house of Naṣr. The other twenty-three towns of Jillīqiya, from Shant Yāqub, A
+      Coruña and Lugo to Ourense and Tui, were made a ṭāʾifa of their own and given to [Diego
+      Sotomaior](person:diego-sotomaior), a Galician noble of the faith, thirty-one years old. He ruled half a
+      million Galicians from the city whose shrine the Emperor had pulled down, and the court did not envy
+      him.
+
+
+      That left the crown a hundred and ninety-six towns and two and a half million subjects of its own, and
+      eight ṭāʾifas with two hundred and thirty-six towns and nearly four million more. Every town of the
+      peninsula from Finisterre to the Pyrenees, and from the Cantabrian Sea to the Strait, now belonged to
+      the Emperor or to a lord who owed his throne to him. The courts of the world ranked al-Andalus third
+      among the powers, after al-Ṣīn and the Angevins.
+
+
+      *It is He who expelled the ones who disbelieved among the People of the Scripture from their homes at
+      the first gathering. You did not think that they would leave, and they thought that their fortresses
+      would protect them from Allāh; but Allāh came upon them from where they had not expected.*
+    behind: >-
+      Four saves cover the two wars: the declaration on Galicia (18 May), the declaration on Navarre (17
+      August), the day of the peaces (3 November) and the settled north two days later (5 November). Ended
+      wars drop out of the save's war list, so the war scores (82 for Galicia, 59 for Navarre and Castile)
+      come from the peace records. Both peaces fall on 3 November, and the save doesn't say which was signed
+      first. In the 3 November save all 45 conquered towns belong to the crown. By 5 November they've been
+      handed out, and the Galician ṭāʾifa's records date the handover to the 3rd as well. The kings' fates are
+      where the 3 November save puts them: Diego Villamarín is a burgher of Augsburg, with new traits
+      (careful, calm, naval engineer), Alfonso Gastón is at the court of Banbalūna, and Fernando of Castile
+      and his son Juan, a knight of the Garter, are at the court of Burghush. The destroyed cathedral is still
+      listed in the save as a work of art, destroyed on 15 July 1430, and the Pórtico de la Gloria is listed
+      at Ishbīliya. The holy site of Santiago is still there.
+
+
+      Invented colour. Shant Yāqub entry: the princes arguing in private, the Emperor hearing the news among
+      his ships, Abū al-Ḥasan's flanking ride and breaking the archers before noon, the garrison marching out
+      under its banners, the masons told to save the porch, and the ʿulamāʾ divided between praise and
+      silence. Mountains entry: the march down the Nervión, the Basques breaking under the horse, and the
+      court not envying Diego Sotomaior. Closing entry: the Pórtico waiting in a storeroom, and the news the
+      merchant ships bring. Al-Manṣūr's bells and the monk at the tomb are from the Arabic and Latin
+      histories, and so is the return of the bells to Santiago after Córdoba fell in 1236. The location Cangas
+      in the game's East Asturias is Cangas de Onís, below Covadonga.
+  - id: 0834-02-16-the-close-of-the-book-of-the-marches
+    'on': '1430-11-03'
+    title: The Close of the Book of the Marches
+    verse: 21:105
+    who:
+      - saad-ibn-yusuf
+      - ismail-ibn-saad
+      - muhammad-ibn-ismail-ibn-saad
+      - ahmad-ibn-ismail-ibn-saad
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+    where:
+      - gharnata
+      - ishbiliyya
+      - shant-yaqub
+      - qurtuba
+    covers:
+      - 1430-11-03-iberia-is-conquered
+      - 1430-11-03-the-north-divided
+      - 1430-11-03-taifa-of-galicia
+      - 1430-07-15-santiago-falls
+    text: >
+      Here ends the Book of the Marches.
+
+
+      It opened sixty-two years ago by the reckoning of the Hijra, on 21 Ṣafar 772, on the day the Marīnids
+      gave up the north shore and the throne of [Gharnāṭa](place:gharnata) was secure at last. The Emir
+      [Saʿd](person:saad-ibn-yusuf) then ruled sixty towns and three quarters of a million people from the
+      Alhambra. The old thughūr of al-Andalus, the Lower March of Badajoz, the Middle March of Toledo and the
+      Upper March of Zaragoza, had been Christian country for two and three centuries, and Qashtāla was the
+      greatest kingdom of the peninsula. The ʿulamāʾ of that day prayed for the restoration of al-Andalus as
+      men pray for rain in a drought, without much expecting it.
+
+
+      Six wars brought it. The War of the Upper March broke Aragon and brought Barshalūna and Catalonia under
+      the crown, and on 16 March 1375 Saʿd proclaimed the restoration of al-Andalus and took the title of
+      Emperor. The War of the Aragonese Restoration, the War of the League and the War of Jillīqiya broke
+      Qashtāla piece by piece, ended Portugal, and drove the Castilians back into the mountains of the north.
+      The War of Shant Yāqub and the War of the Mountains finished them. Three Emperors fought those wars.
+      Saʿd won the marches, his son [Ismāʿīl](person:ismail-ibn-saad) the heartland of Old Castile, and his
+      grandson [Muḥammad](person:muhammad-ibn-ismail-ibn-saad) the mountains.
+
+
+      The Christians had always said that their reconquest began in those mountains, when a Gothic lord named
+      Pelayo held a cave at Covadonga against the first governors of al-Andalus, above the town the Asturians
+      call Cangas. On 16 Ṣafar 834 Cangas was given with the rest of Ashturiyās to the Emperor's brother
+      [Aḥmad](person:ahmad-ibn-ismail-ibn-saad) of Liyūn, a prince of the house of Naṣr. In 814 the ʿulamāʾ
+      had said that one more war would push Qashtāla into the sea. Its last king rode out of Santander to live
+      as a guest in Burghush, and the sea he left behind him was the empire's.
+
+
+      The empire that closes the book has four hundred and thirty-two towns, the crown's and the ṭāʾifas'
+      together, and six and a half million people, from the Bay of Biscay to the Green Cape. There are no
+      marches left in Iberia, only borders: with the English along the Pyrenees, and the open sea everywhere
+      else.
+
+
+      The court has not forgotten Shant Yāqub. In [Ishbīliya](place:ishbiliyya) the Pórtico de la Gloria waits
+      in a storeroom for the Emperor to decide where to set it up, and every merchant ship from the north
+      brings word of what the Christians are saying about the Apostle's tomb. In 387 al-Manṣūr carried the
+      bells of Shant Yāqub to [Qurṭuba](place:qurtuba) and left the tomb untouched. The Christians took
+      Qurṭuba back two and a half centuries later, and they carried the bells back to Shant Yāqub on Muslim
+      shoulders. The princes [Ismāʿīl](person:ismail-ibn-muhammad-ibn-ismail) and
+      [Aḥmad](person:ahmad-ibn-muhammad-ibn-ismail) know that story, as every child of the house does. Their
+      father looks at the sea.
+
+
+      *And We have already written in the Book, after the Reminder, that the land is inherited by My righteous
+      servants.*

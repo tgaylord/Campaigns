@@ -1,0 +1,21 @@
+name: Fāṭima bint Yūsuf
+arabic: فاطمة بنت يوسف
+sex: f
+house: Naṣrid
+born: '1358-03-03'
+died: '1409-09-18'
+father: yusuf-i
+mother: tizemt-hafsid
+roles:
+  - wife of the ḥājib of Catalonia
+traits:
+  - child_gallant
+note: >-
+  Daughter of Yūsuf I and Tizemt the Ḥafṣid, full sister of Maryam and younger half-sister of the Emperor
+  Saʿd. Married on 15 April 1375 to Francesc de Montsoriu, the ḥājib of the new Ṭāʾifa of Catalonia, binding
+  the house of Naṣr to Barcelona (Trent's account; save of 5 June 1375). Mother of Berenguer Ramon de
+  Montsoriu, ruler of Catalonia, of Isabel, wife of the heir Muḥammad, and of a daughter married to Saʿd ibn
+  Ismāʿīl of Shalamanka. She died on 18 September 1409, aged fifty-one (save of 29 June 1410).
+game:
+  id: 16797380
+  name: Fatima

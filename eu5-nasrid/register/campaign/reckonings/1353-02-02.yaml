@@ -1,0 +1,621 @@
+date: '1353-02-02'
+title: The Kingdom of Sevilla
+source:
+  save: SP_GRA_1353_02_02 (compressed)
+  game: 1.4.5
+summary: >-
+  The Castilian peasants of the new lands rise and declare a Kingdom of Sevilla, taking all 25 locations won
+  in 1349 and 1351, Qurṭuba, Ishbīliya, Jayyān and the silver of Qusanṭīna among them. Qashtāla, as overlord,
+  takes the field on Granada's side. Granada is back to its 18 old locations. Shares of power are estimated
+  from the 1 June 1349 reading.
+realm:
+  towns: 18
+  souls: 274147
+  treasury: 210
+  income: 47.8
+  expenses: 51.5
+  stability: 16.5
+  prestige: 43
+  regiments: 5
+  ships: 5
+  manpower: 2983
+court:
+  ruler: yusuf-i
+  heir: saad-ibn-yusuf
+  capital: gharnata
+  council:
+    - who: faraj-ibn-ismail
+      seat: Idle (integration ended with the revolt)
+    - who: ismail-ibn-ismail
+      seat: Idle (integration ended with the revolt)
+standing:
+  wars:
+    - sevillan-revolt
+  allies:
+    - Mamluks
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+  estates:
+    - name: Crown
+      power: 30.16
+    - name: Nobility
+      power: 37.05
+      mood: 41
+    - name: ʿUlamāʾ
+      power: 9.07
+      mood: 50
+    - name: Burghers
+      power: 13.33
+      mood: 50
+    - name: Commoners
+      power: 6.94
+      mood: 55
+    - name: Dhimmī
+      power: 3.45
+      mood: 55
+peoples:
+  cultures:
+    Andalusi: 255157
+    Castilian: 7024
+    Sephardi: 6075
+    Mustaarabi: 2338
+    Sardinian: 1195
+    Ligurian: 643
+  faiths:
+    Sunni: 256831
+    Catholic: 8422
+    Jewish: 8101
+    Bori_Religion: 580
+    Nyama: 213
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+  allies:
+    - MAM
+beats:
+  - id: 1351-08-09-hajj-departs
+    'on': '1351-08-09'
+    kind: note
+    what: >-
+      The amir sets out east to make the Hajj, half a year ahead of the pilgrimage season in Dhū al-Ḥijja
+      (about 2 February 1352), for the road is long. His elder brother Faraj ibn Ismāʿīl governs as regent in
+      his absence; the caravan is stocked and guarded, and it bears the maḥmal in all manner of splendour
+    who:
+      - yusuf-i
+      - faraj-ibn-ismail
+    where:
+      - gharnata
+    from:
+      - told
+    cite: >-
+      Trent's account. The game names a Naṣr al-Stijjai as regent; the chronicle makes Faraj the regent at
+      Trent's direction
+    detail:
+      departs: '1351-08-09'
+      hajjDay: '1352-02-02'
+      regent: faraj-ibn-ismail
+  - id: 1351-10-01-great-madrasa
+    'on': '1351-10-01'
+    kind: note
+    what: >-
+      A House of Learning: while the amir is on the Hajj, the regent Faraj founds the Great Madrasa of
+      Gharnāṭa beside the great mosque, where the law will be taught under one roof as in the cities of the
+      East, to draw students and jurists from across the Strait and bind the learning of the cities to the
+      service of the amir
+    who:
+      - faraj-ibn-ismail
+      - yusuf-i
+    where:
+      - gharnata
+    from:
+      - seen
+    cite: Trent's screenshot of the event, with the chosen option's tooltip open
+    detail:
+      event: A House of Learning
+      choice: Found the Great Madrasa beside the great mosque.
+      cost: 218
+      building: Great Madrasa in Gharnāṭa
+      modifier:
+        name: Center of Higher Learning
+        years: 20
+        researchProgress: +10%
+        monthlyLiteracy: +0.02%
+        monthlySovereignty: 0.1
+      politicalInfluence: -10
+      historical: Yūsuf I founded the Madrasa Yūsufiyya beside the great mosque in 1349
+  - id: 1351-10-06-najib-to-castile
+    'on': '1351-10-06'
+    kind: note
+    what: >-
+      Another traitor: Najīb al-ʿĀbidīn of the ʿulamāʾ, handed over to Qashtāla at its demand as Granada's
+      overlord, takes baptism before the cathedral chapter as Ramiro, a Castilian, carrying the letters,
+      treatises and reckoning tables of the libraries of Qurṭuba with him, five days after the Great Madrasa
+      was founded
+    who:
+      - najib
+      - faraj-ibn-ismail
+    from:
+      - seen
+    cite: Trent's screenshots of Castile's event and its breakdown; Trent calls him a traitor
+    detail:
+      event: A Convert at Our Court (Castile)
+      castileChoice: A useful soul gained for the faith.
+      newName: Ramiro
+      culture: castilian
+      castileGains:
+        researchProgress: 12.85
+        innovative: 12.85
+      gameName: Abuna Najīb al-ʿĀbidīn
+  - id: 1351-10-07-hajj-al-qahira
+    'on': '1351-10-07'
+    kind: note
+    what: >-
+      The Royal Hajj reaches al-Qāhira, the City of a Thousand Minarets, under the shadow of al-Azhar. The
+      amir has the caravan adorned in banners and silk and waits ten days in the city, so that Cairo may see
+      the splendour of the Emirate
+    who:
+      - yusuf-i
+    from:
+      - seen
+    cite: Trent's screenshot of the event, with the chosen option's tooltip open
+    detail:
+      event: 'The Royal Ḥajj: The City of a Thousand Minarets'
+      choice: Adorn the caravan in banners and silk, then wait.
+      gold: -13.06
+      splendor: 20
+      pausedDays: 10
+  - id: 1351-11-08-unlimited-export
+    'on': '1351-11-08'
+    kind: realm
+    what: >-
+      With the silver of Qusanṭīna now the Emirate's own, the court sets its first policy for precious metals:
+      Unlimited Export, opening the floodgates for gold and silver to flow to foreign markets
+    who:
+      - faraj-ibn-ismail
+    where:
+      - qusantina
+    threads:
+      - estates
+    from:
+      - seen
+    cite: Trent's screenshot of the policy screen and confirmation
+    detail:
+      law: precious_metal_distribution
+      from: null
+      to: unlimited_export
+      effects:
+        tradeAdvantage: +10%
+        goldOutput: +5%
+        silverOutput: +5%
+        incomeFromMinting: -33%
+      alternatives:
+        export_ban: gold and silver output −5%, export impact on demand +5%, minting income +33%
+        regulated_export: selling efficiency +2%
+  - id: 1352-01-01-hajj-makka
+    'on': '1352-01-01'
+    kind: note
+    what: >-
+      The Royal Hajj reaches Makka and the Kaʿba. The amir distributes gold freely, that no pilgrim there go
+      hungry, and remains in the holy city for the pilgrimage itself, the days of Dhū al-Ḥijja at the end of
+      January, before turning for home
+    who:
+      - yusuf-i
+    from:
+      - seen
+      - told
+    cite: >-
+      Trent's screenshot of the event, with the chosen option's tooltip open (game date 1 January 1352); the
+      month in Makka is Trent's direction
+    detail:
+      event: 'The Royal Ḥajj: The Kaʿba'
+      choice: Distribute gold freely. Let no pilgrim here go hungry.
+      gold: -39.16
+      toMeccaCommoners: 39.16
+      prestige: 15
+      legitimacy: 10
+      chronicleNote: >-
+        The game resumes the expedition at once; the chronicle has him stay about a month for the rites (8–13
+        Dhū al-Ḥijja 752, about 26–31 January 1352 by the tabular calendar)
+  - id: 1352-01-01-hall-of-ambassadors
+    'on': '1352-01-01'
+    kind: note
+    what: >-
+      The Hall of the Ambassadors: within the great tower of the palace on the Sabīka, the regent Faraj raises
+      a throne hall to receive the envoys of kings, its cedar ceiling carved with the seven heavens above the
+      throne
+    who:
+      - faraj-ibn-ismail
+    where:
+      - gharnata
+    threads:
+      - europe
+    from:
+      - seen
+    cite: Trent's screenshot of the event, with the chosen option's tooltip open
+    detail:
+      event: The Hall of the Ambassadors
+      choice: Raise the hall and seat our throne beneath it.
+      gold: -100.48
+      modifier:
+        name: Hall of the Ambassadors
+        years: 20
+        monthlyPoliticalInfluence: 0.1
+        monthlyDiplomats: 0.2
+        monthlySovereignty: 0.1
+  - id: 1352-01-27-plague-gone
+    'on': '1352-01-27'
+    kind: world
+    what: >-
+      The pestilence has left the realm: no town of Granada is touched any longer. It killed 221,000 of the
+      realm's people, and 52 million across the known world since it rose at Yāyiq. The Black Death has not
+      yet formally ended
+    from:
+      - seen
+    cite: Trent's screenshot of the Black Death panel
+    detail:
+      affectedLocations: 0
+      countryDeaths: 221000
+      worldDeaths: 52006000
+      situationOpen: true
+      responses:
+        - segregate_the_infected
+        - present_scapegoats
+  - id: 1352-04-07-hajj-return
+    'on': '1352-04-07'
+    kind: note
+    what: >-
+      The amir comes home from Makka, and from this day he bears the title Ḥājjī. The regency of Faraj ends;
+      word of the pilgrimage has run ahead of the caravan to every Muslim court
+    who:
+      - yusuf-i
+      - faraj-ibn-ismail
+    where:
+      - gharnata
+    from:
+      - seen
+    cite: Trent's screenshot of the event, with the option's tooltip open
+    detail:
+      event: 'Expedition: the Royal Ḥajj returns'
+      choice: 'Let it be known: Makka and back, by grace of Allāh.'
+      legitimacy: 10
+      modifier:
+        name: Blessings of the Ḥajj
+        years: 5
+        clergySatisfactionEquilibrium: +5%
+      muslimCountriesOpinion: 10
+      trait:
+        name: Ḥājjī
+        monthlyPrestige: 0.1
+        monthlyLegitimacy: 0.1
+      regencyEnds: true
+  - id: 1352-04-capital-qurtuba
+    'on': '1352-04-07'
+    kind: note
+    what: >-
+      Home from the Hajj, the amir begins to weigh moving the capital back to Qurṭuba, the old seat of the
+      caliphs
+    who:
+      - yusuf-i
+    where:
+      - qurtuba
+      - gharnata
+    from:
+      - told
+    cite: Trent's account
+    detail:
+      status: under consideration
+  - id: 1352-04-castilian-unrest
+    'on': '1352-04-07'
+    kind: note
+    what: >-
+      The gravest matter awaiting the amir: a rebellion brewing among the Castilian peasants of the new lands,
+      where the Castilian Patriots have gathered since 1349
+    who:
+      - yusuf-i
+    where:
+      - jayyan
+      - ishbiliyya
+    from:
+      - told
+    cite: Trent's account; the rebels appear in the game's panel
+    detail:
+      rebels: Castilian Patriots
+  - id: 1352-04-jizya-remitted
+    'on': '1352-04-07'
+    kind: realm
+    what: >-
+      To head off a rising of the Castilian peasants, the crown offers a concession: the tax on the dhimmīs is
+      lifted for a time. The ʿulamāʾ grumble; the amir doubts it will be enough
+    who:
+      - yusuf-i
+    threads:
+      - estates
+    from:
+      - told
+    cite: Trent's account (April 1352; the exact day isn't given)
+    detail:
+      concession: temporary removal of the dhimmī tax
+      against: clergy
+      aim: prevent the Castilian peasant rebellion
+  - id: 1353-02-01-castile-answers
+    'on': '1353-02-01'
+    kind: war
+    what: >-
+      Qashtāla, Granada's overlord, answers the call and takes the field on Granada's side against the rebels,
+      with the ṭāʾifas of Balansiyya and Mursiyya. The court is amused, and alarmed: will the tyrant help put
+      down the revolt, or use it to take back what he gave up at the Peace of Qurṭuba?
+    who:
+      - alfonso-xi
+    threads:
+      - sevillan-revolt
+    from:
+      - save
+      - told
+    cite: save of 2 February 1353; Trent's account
+    detail:
+      defenders:
+        - GRA
+        - CAS
+        - VAL
+        - MUC
+      attackers:
+        - SEV
+  - id: 1353-02-01-kingdom-of-sevilla
+    'on': '1353-02-01'
+    kind: war
+    what: >-
+      The Castilian peasants of the new lands rise and declare a so-called Kingdom of Sevilla. All 25
+      locations won in 1349 and 1351 go over to it, among them Qurṭuba, Ishbīliya, Jayyān and the silver of
+      Qusanṭīna, and Granada is left with its 18 old locations. The remission of the jizya was not enough, as
+      the amir feared
+    who:
+      - yusuf-i
+    where:
+      - ishbiliyya
+      - qurtuba
+      - jayyan
+      - qusantina
+      - qarmuna
+    threads:
+      - sevillan-revolt
+    from:
+      - save
+      - told
+    cite: save of 2 February 1353 (war dated 1 February); Trent's account
+    detail:
+      rebels: SEV
+      locations: 25
+      population: 327800
+      granada:
+        locations:
+          from: 43
+          to: 18
+        population: 274147
+      straitAreasHeld:
+        from: 55
+        to: 30
+  - id: 1353-02-02-state
+    'on': '1353-02-02'
+    kind: land
+    what: >-
+      Sovereignty stands at 69.8, the highest of the reign, and Morocco's influence at 7.5; but Granada now
+      holds only 30 of the Strait's 72 locations
+    threads:
+      - strait
+    from:
+      - save
+    cite: save of 2 February 1353
+    detail:
+      sovereignty: 69.85
+      influence: 7.5
+      areasHeld: 30
+tellings:
+  - id: 0752-12-09-the-departing-of-the-pestilence
+    'on': '1352-01-27'
+    title: Of the Departing of the Pestilence
+    verse: 2:155
+    who:
+      - yusuf-i
+    where:
+      - gharnata
+      - malaqa
+      - al-mariyya
+    covers:
+      - 1352-01-27-plague-gone
+      - 1350-09-02-great-dying-census
+      - 1350-09-02-cities-emptied
+    text: >
+      On the ninth of Dhū al-Ḥijja in the year 752, the Day of ʿArafa, while our lord stood on the plain
+      beyond Makka, the pestilence left the last town of the realm. No messenger brought word of it, for there
+      was no one moment of its going. A physician in a mountain village found one morning that there was no
+      new swelling to lance. A grave-digger in [Mālaqa](place:malaqa) found that no one came to him that day.
+      The bells of the Christians fell silent, and the muezzins called the prayer to mosques that were fuller
+      than they had been in years. Only later, when the scribes of the dīwān went through their reports, did
+      they find that the last house had been cleared on that day.
+
+
+      The reckoning was made, and it is written in this book. Two hundred and twenty-one thousand of the
+      realm's people were dead. Fifty-two million were dead in the whole known world from Yāyiq to the Ocean.
+      Of every five souls in the old realm of Gharnāṭa, two were in the ground. The cities had suffered most,
+      [Gharnāṭa](place:gharnata), Mālaqa and [al-Mariyya](place:al-mariyya), with their alleys and their
+      markets. The houses of healing had slowed the sickness but could not stop it. It took the burghers and
+      the scholars hardest of all, the very men who had made those cities the light of the West.
+
+
+      In the years that followed, the dead were not replaced. Four years after the pestilence left, the old
+      lands of the realm counted fewer souls than they had at the reckoning. The empty houses of the Albayzín
+      stayed empty. The realm that came out of the plague years was not the realm that went in. It was smaller
+      in its cities and larger in its lands, more rural and more martial than before, and nearly half
+      Christian. It had been won in the field by the sword while it was being emptied at home by the sickness.
+
+
+      The physicians say the pestilence has not left the world. It lingers in the East and may come again. But
+      in Gharnāṭa no one has died of it in four years, and the court has decided that this book may be closed.
+      What comes next must be a book of filling what was emptied, of the madrasas and the libraries, of the
+      call to prayer carried back into the towns that had forgotten it.
+
+
+      Here ends the Book of the Pestilence.
+
+
+      *And We will surely test you with something of fear and hunger and a loss of wealth and lives and
+      fruits, but give good tidings to the patient.*
+  - id: 0753-02-20-the-royal-hajj
+    'on': '1352-04-07'
+    title: Of the Royal Ḥajj
+    verse: 2:201
+    who:
+      - yusuf-i
+      - faraj-ibn-ismail
+    where:
+      - gharnata
+    covers:
+      - 1351-08-09-hajj-departs
+      - 1351-10-07-hajj-al-qahira
+      - 1352-01-01-hajj-makka
+      - 1352-01-27-plague-gone
+      - 1352-04-07-hajj-return
+    text: >
+      *And proclaim to the people the Ḥajj; they will come to you on foot and on every lean camel, coming from
+      every distant pass.*
+
+
+      No reigning sultan of the house of Naṣr, it was said, had ever made the pilgrimage. The road from
+      [Gharnāṭa](place:gharnata) to Makka is the longest in the Muslim world: across the whole sea, the whole
+      of Egypt and the whole of the Ḥijāz. A prince of al-Andalus who leaves his throne for a year leaves it
+      within a day's ride of Qashtāla. But the war was won and the pestilence was passing, and our lord
+      [Yūsuf](person:yusuf-i) resolved to go. On the fifteenth of Jumādā al-Ākhira in the year 752, half a
+      year before the season of the pilgrimage, he took ship for the East. His elder brother [Faraj ibn
+      Ismāʿīl](person:faraj-ibn-ismail) governed the realm as regent. The caravan was stocked for a year and
+      guarded like an army, and at its head went the *maḥmal* of Gharnāṭa, the empty litter that is the banner
+      of a prince's pilgrimage. It was hung with brocade and carried in all the splendour the treasury could
+      bear.
+
+
+      On the fifteenth of Shaʿbān, the night of the middle of the month, when the faithful say the record of
+      the year is written, the caravan came through the northern gate of al-Qāhira. The city swallowed it at
+      once: the noise, the spice, the tanneries and the roasting meat. Over the roofs rose al-Azhar, whose
+      scholars are counted among the finest in Islam. The sultan might have sat with them, or pushed on at
+      once for Makka. He did neither. He had the caravan dressed in banners and silk and kept it ten days in
+      the city of the Mamlūks, so that the court whose daughter was promised to his son might see what the
+      house of Naṣr could still put on the road.
+
+
+      On the thirteenth of Dhū al-Qaʿda the caravan came down into Makka, and the Grand Mosque opened before
+      it. The Kaʿba stood at its heart, draped in black, older than memory, and the white-robed faithful moved
+      around it in their patient circles. There a sultan and a shepherd dress alike. Our lord asked himself
+      what kind of pilgrim he would be, for what a king does in Makka is talked of in every market of Islam
+      for a generation. He chose to be a generous one. He gave gold freely in the streets of the holy city,
+      that no pilgrim there should go hungry while the lord of Gharnāṭa was among them.
+
+
+      Then he waited a month for the days of the pilgrimage. On the eighth of Dhū al-Ḥijja he went out to Minā
+      with the multitude. On the ninth he stood on the plain of ʿArafa from noon until the sun went down,
+      among a hundred thousand voices crying *labbayka*, and asked Allāh's forgiveness for himself and his
+      people. The scribes of the dīwān later found that on that same day, far away in the West, the pestilence
+      left the last town of the realm. Not one house in Gharnāṭa was still touched by it. The chronicler sets
+      the two facts side by side and draws no conclusion.
+
+
+      He came home on the twentieth of Ṣafar in the year 753, eight months after he had left. Word had outrun
+      the caravan. Every court of Islam had heard of the sultan of al-Andalus who stood at ʿArafa and fed the
+      poor of Makka, and they thought better of Gharnāṭa for it. The *ʿulamāʾ* were content as they had not
+      been for years. Faraj handed back the seal of the regency. And from that day our lord carried a title
+      that no victory could have given him: al-Ḥājj Yūsuf.
+
+
+      *Our Lord, give us in this world good and in the Hereafter good, and protect us from the punishment of
+      the Fire.*
+  - id: 0753-02-20-the-works-of-the-regency
+    'on': '1352-04-07'
+    title: Of the Works of the Regency, the Thought of Qurṭuba, and the Murmuring of the Castilians
+    verse: 3:103
+    who:
+      - faraj-ibn-ismail
+      - nasr-al-istijji
+      - yusuf-i
+      - najib
+    where:
+      - istijja
+      - gharnata
+      - qurtuba
+      - qusantina
+      - jayyan
+      - ishbiliyya
+    covers:
+      - 1351-10-01-great-madrasa
+      - 1351-10-06-najib-to-castile
+      - 1351-11-08-unlimited-export
+      - 1352-01-01-hall-of-ambassadors
+      - 1352-04-capital-qurtuba
+      - 1352-04-castilian-unrest
+      - 1352-04-jizya-remitted
+    text: >
+      While the sultan walked toward Makka, the regent [Faraj](person:faraj-ibn-ismail) did not sit idle in
+      the Alhambra. He governed as his brother would have wished, which is to say he built. His audiences were
+      crowded with the lords of the realm, and loudest among them was [Naṣr
+      al-Istijjī](person:nasr-al-istijji), of the house that takes its name from [Istijja](place:istijja), a
+      man who could talk through a whole afternoon of council and leave it no wiser than he found it.
+
+
+      On the ninth of Shaʿbān in the year 752 he founded the Great Madrasa of [Gharnāṭa](place:gharnata)
+      beside the great mosque. For years the scholars of the city had begged for a college where the law might
+      be taught under one roof, as it is in Fās and al-Qāhira. The pestilence had taken more than half of
+      them, and those who remained pressed the harder for it, lest the learning of al-Andalus die with them.
+      The regent paid two hundred and eighteen dīnārs, and the walls began to rise. It was meant to draw
+      students and jurists from across the Strait and to bind the learning of the cities to the service of the
+      sultan.
+
+
+      Five days later Allāh showed how much such a house was needed. [Najīb al-ʿĀbidīn](person:najib) of the
+      *ʿulamāʾ*, the most gifted mind left at court, was claimed by Qashtāla at its demand as overlord. He
+      went north without a struggle. There, before the cathedral chapter of the Christians, he was baptised
+      and took the name Ramiro. He carried with him in his saddlebags the letters, treatises and reckoning
+      tables that were the inheritance of the libraries of [Qurṭuba](place:qurtuba). The Christian scholars
+      rejoiced over what he brought them. This was the second great mind of Gharnāṭa to go over to the Cross,
+      after Ibn al-Khaṭīb. The court began to say bitterly that Qashtāla no longer needed to take our towns
+      when it could take our men.
+
+
+      In Ramaḍān the regent turned to the silver of [Qusanṭīna](place:qusantina), which was the realm's own at
+      last. He opened the treasuries to the merchants. Gold and silver were to flow out freely to the markets
+      of the world, where they would buy more than they could ever buy as coin in the mint at home. And on the
+      thirteenth of Dhū al-Qaʿda, in the days when the sultan came down into Makka, Faraj raised within the
+      great tower of the palace a hall to receive the envoys of kings. Its cedar ceiling was carved with the
+      seven heavens, thousands of pieces set above the throne, so that every embassy might see the order of
+      creation under which the house of Naṣr sits. It cost a hundred dīnārs, a fifth of a year's income. It
+      speaks for Gharnāṭa more plainly than any letter.
+
+
+      So when al-Ḥājj Yūsuf came home in Ṣafar 753, he found his city richer in learning and in splendour,
+      though poorer by one great scholar. He stood a long while under the cedar ceiling of the new hall,
+      following the seven heavens with his eyes, and said only that he would have hung the stars a little
+      higher. Then he called for the masons' drawings of the madrasa and sat over them half the night. And he
+      found himself looking north. Gharnāṭa had been the capital of a mountain kingdom of eighteen towns. The
+      realm was now forty-three towns, its heart lay in the valley of the great river, and its greatest cities
+      were Qurṭuba and Ishbīliya. Qurṭuba had been the seat of the caliphs when al-Andalus was the light of
+      the West. The sultan began to speak of moving the throne back to it. The court was divided, and the old
+      families of Gharnāṭa were alarmed.
+
+
+      But one matter outweighed all the others, and it was not in Gharnāṭa. In the new lands, in the villages
+      around [Jayyān](place:jayyan) and [Ishbīliya](place:ishbiliyya), the Castilian peasants were murmuring.
+      They had buried a third of their people in the plague years, and they paid their taxes to a Muslim lord.
+      They had not been asked whether they wished to change masters. The Castilian patriots who had gathered
+      in the hills since the peace were no longer a band of malcontents. They were becoming a cause. A throne
+      in Qurṭuba would sit in the middle of it.
+
+
+      So the crown offered a concession. For a time the *jizya*, the tax that the dhimmīs pay for the
+      protection of the Muslim state, would not be collected. The Christians of the new lands would keep in
+      their own purses what they had paid to Gharnāṭa every year since the peace. The *ʿulamāʾ* grumbled that
+      the law of Allāh was not the sultan's to suspend, and that a tax forgiven to rebels is a reward for
+      rebellion. The sultan heard them and did it anyway. But he told those closest to him that he doubted it
+      would be enough. A man who hates his master, he said, does not love him more for being charged less.
+
+
+      *And hold firmly to the rope of Allāh all together, and do not become divided.*

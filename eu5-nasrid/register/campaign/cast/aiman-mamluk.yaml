@@ -1,0 +1,50 @@
+name: Aiman
+sex: f
+house: Baḥrī
+tier: central
+born: '1344-04-06'
+died: '1391-10-14'
+drives:
+  - from: '1364-01-18'
+    text: Saʿd's first wife, a princess of the Mamlūk house, mother of his first child.
+    by: chronicle
+    source: her record
+  - from: '1366-04-05'
+    text: >-
+      Leads the Mamlūk faction at court: Egypt's alliance, Egypt's money and Egypt's soldiers, against Duʿāʾ's
+      Maghrib. As Granada grows stronger, it becomes worth fighting over.
+    by: trent
+    source: Trent's direction, November 2026
+  - from: '1374-06-01'
+    text: 'Her faction earns its place: Mamlūk men fight for Granada in Malta and Catalonia.'
+    by: trent
+    source: Trent's account, 1374–1375
+  - from: '1375-03-16'
+    text: Sits in the dīwān by the strength of the harem, without a formal office.
+    by: trent
+    source: Trent's ruling, March 1375
+  - from: '1385-08-23'
+    text: Quarrels openly with Duʿāʾ while Ismāʿīl is regent.
+    by: trent
+    source: Trent's account
+ties:
+  - with: bolot-mamluk
+    kind: faction
+    from: '1368-10-03'
+    to: '1391-10-14'
+    text: 'Her half-brother on the throne of Egypt: the Mamlūk alliance is her party''s.'
+    by: chronicle
+note: >-
+  Daughter of the Mamluk Sultan, betrothed to Saʿd ibn Yūsuf, heir of Granada, on 19 January 1351. Married to
+  Saʿd before he came of age; at his majority in January 1364 she was his only wife, until he also married
+  Duʿāʾ. Mother of Saʿd's first child, Umm al-Fatḥ (born 13 December 1364). Mother of Jadīla bint Saʿd (born
+  13 December 1368). Of the Baḥrī house (the game calls her Aiman Baḥriyya), the house of the Mamlūk sultans:
+  in 1374–1375 its men fought for Granada in Malta and Catalonia, and at court she led the faction of the
+  Mamlūk alliance (Trent's account). As the Emperor's principal wife (consort) the game will not seat her in
+  the dīwān. The chronicle holds that she sits there anyway, by the strength of the harem, without a formal
+  office (Trent's ruling, March 1375). She died on 14 October 1391, aged forty-seven, while the Emperor was on
+  pilgrimage; in the chronicle she died by the Nile on a visit to her family in Egypt (the game's notice says
+  she was attacked by a crocodile), and the court wondered.
+game:
+  id: 32464
+  name: Aiman

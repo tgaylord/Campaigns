@@ -1,0 +1,19 @@
+name: Abū Ḥammū ibn Khālid Raḥḥū
+arabic: أبو حمو بن خالد
+house: Raḥḥū
+tier: key
+born: '1380-02-26'
+died: '1431-01-21'
+father: khalid-ibn-yahya
+roles:
+  - ruler of the Ṭāʾifa of Burghush
+traits:
+  - malevolent
+note: >-
+  Son of Khālid ibn Yaḥyā Raḥḥū. He succeeded his father as ruler of the Ṭāʾifa of Burghush on 2 September
+  1412 (save of 24 October 1414). He received the four Cantabrian towns at the Peace of Ṣafar and died on 21
+  January 1431. The game gives a suicide; the chronicle keeps the court's version, a sudden illness. The
+  Emperor ruled Burghush as regent for his son Khālid (save of 10 October 1435).
+game:
+  id: 16808621
+  name: Abu Hammu

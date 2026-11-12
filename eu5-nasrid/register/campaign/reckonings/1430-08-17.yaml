@@ -1,0 +1,423 @@
+date: '1430-08-17'
+title: The War of the Mountains
+source:
+  save: SP_ADU_1430_08_17 (compressed)
+  game: 1.4.7
+summary: >-
+  The day of the declaration on Navarre, with Galicia beaten but not yet at peace: Santiago taken and its
+  cathedral destroyed, the last Galician army wiped out at Oviedo. Navarre and Castile have no men under arms;
+  the Angevin Empire, Castile's ally, stays out. The crown holds 196 towns, seven ṭāʾifas march with it, and
+  stability has fallen below nothing (−0.4) with the new war. Estates estimated from the reading of 16
+  November 1428. Treasury 581; manpower 17,300 of 19,000.
+realm:
+  towns: 196
+  souls: 2588621
+  treasury: 581
+  income: 280.3
+  expenses: 286.7
+  stability: -0.4
+  prestige: 64
+  regiments: 9
+  ships: 50
+  manpower: 17295
+court:
+  ruler: muhammad-ibn-ismail-ibn-saad
+  heir: ismail-ibn-muhammad-ibn-ismail
+  capital: ishbiliyya
+  council:
+    - who: ismail-ibn-muhammad-ibn-ismail
+      seat: Promoting Andalusī culture
+    - who: ahmad-ibn-muhammad-ibn-ismail
+      seat: Integrating the new lands
+    - who: umm-al-fath-bint-muhammad
+      seat: Integrating the new lands
+    - who: yusuf-ibn-saad
+      seat: Promoting Andalusī culture
+    - who: jadila-bint-saad-ibn-faraj
+      seat: Developing the provinces
+standing:
+  wars:
+    - war-of-shant-yaqub
+    - war-of-the-mountains
+  allies:
+    - Mamluks
+    - Morocco
+    - Tunis
+  subjects:
+    - Catalonia (taifa)
+    - Aragon (taifa)
+    - Taifa of Cuenca (taifa)
+    - Kingdom of Portugal (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+  estates:
+    - name: Crown
+      power: 29.17
+    - name: Nobility
+      power: 17.34
+      mood: 41
+    - name: ʿUlamāʾ
+      power: 12.62
+      mood: 50
+    - name: Burghers
+      power: 21.85
+      mood: 50
+    - name: Commoners
+      power: 2.88
+      mood: 50
+    - name: Dhimmī
+      power: 16.14
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 813654
+    Castilian: 709466
+    Portuguese: 488693
+    Sephardi: 187313
+    Catalan: 178211
+    Leonese: 164128
+  faiths:
+    Sunni: 1243923
+    Catholic: 1146806
+    Jewish: 179142
+    Guanche_religion: 15685
+    Rogo_miki_religion: 816
+map:
+  ours:
+    - GRA
+  subjects:
+    - CAT
+    - ARA
+    - ABA60
+    - POR
+    - ABA42
+    - ABA49
+    - ABA55
+  allies:
+    - MAM
+    - MOR
+    - TUN
+beats:
+  - id: 1430-05-25-birth-fatima
+    'on': '1430-05-25'
+    kind: birth
+    what: A daughter, Fāṭima, is born to Umm al-Fatḥ, the Emperor's daughter
+    minor: true
+    who:
+      - umm-al-fath-bint-muhammad
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 10 October 1435
+    detail:
+      name: Fāṭima
+  - id: 1430-06-30-ahmad-the-architect
+    'on': '1430-06-30'
+    kind: note
+    what: >-
+      Prince Aḥmad of the dīwān is now counted an architect. He takes after his forebears, a builder imagining
+      the greatest structures for the capital
+    who:
+      - ahmad-ibn-muhammad-ibn-ismail
+    where:
+      - ishbiliyya
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshots, June 1430
+    detail:
+      trait: >-
+        Architect: buildings construction efficiency +10%; from the smallest hut to the loftiest halls, no
+        building is too insignificant to spark this individual's architectural curiosity (the game's text)
+      account: >-
+        Aḥmad takes after his forebearers. A builder, imagining the greatest structures for the capital
+        (Trent)
+  - id: 1430-06-30-battle-santiago
+    'on': '1430-06-30'
+    kind: battle
+    what: >-
+      Before Santiago de Compostela the Emperor's nephew Abū al-Ḥasan ʿAlī, seventeen, with 4,900 men, breaks
+      7,000 Galicians, killing or taking 3,800 for the loss of 230
+    who:
+      - abu-al-hasan-ali-ibn-ahmad
+      - diego-villamarin
+    threads:
+      - war-of-shant-yaqub
+    from:
+      - seen
+    cite: Trent's battle screen, 30 June 1430
+    detail:
+      result: victory
+      naval: false
+      ours:
+        al-Andalus: 4900
+      oursTotal: 4900
+      oursLost: 227
+      theirs:
+        Galicia: 7018
+      theirsTotal: 7018
+      theirsLost: 3788
+      location: Santiago de Compostela
+      warScore: 25
+      composition:
+        ours: 2,000 infantry, 2,400 light horse, 500 heavy horse
+        theirs: 6,884 levy archers, 45 infantry, 89 horse
+      commanders:
+        al-Andalus: Abū al-Ḥasan ʿAlī ibn Aḥmad, the Emperor's nephew (56/60/37)
+  - id: 1430-06-30-the-emperor-worldly
+    'on': '1430-06-30'
+    kind: note
+    what: >-
+      The Emperor Muḥammad is now counted worldly: the years he spent with the fleets, in harbours and among
+      fishermen and travellers, have taught him how things get done. His eyes are still on the sea
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshots, June 1430
+    detail:
+      trait: >-
+        Worldly: practical experience gathered firsthand in workshops, harbours and counting-houses has taught
+        our ruler how to get things done; military tactics +0.05 (the game's text)
+      account: >-
+        his grandfather put him in charge of the Empire's navies from a young age; that respect for fishermen,
+        harbours and those who travel has not left him, as his eyes remain locked on the sea (Trent)
+  - id: 1430-06-30-the-emperors-household
+    'on': '1430-06-30'
+    kind: note
+    what: >-
+      One of the most purposeful things the late Emperors did was to surround Muḥammad with able counsel. His
+      three wives, Magdalena, Isabel and Jadīla, were chosen for their blood but also for their minds, and
+      with his two eldest sons they carry great weight at court while the Emperor's eyes wander to his own
+      projects
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - isabel-de-montsoriu
+      - magdalena-de-borja
+      - jadila-bint-saad-ibn-faraj
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+    threads:
+      - two-princes
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshots, June 1430
+    detail:
+      wives:
+        Magdalena de Borja: 55/57/43
+        Isabel de Montsoriu: 75/30/51
+        Jadīla bint Saʿd: 75/42/43, honest; in the dīwān
+      account: Trent, June 1430
+  - id: 1430-07-15-santiago-falls
+    'on': '1430-07-15'
+    kind: battle
+    what: >-
+      Santiago de Compostela falls after a siege of fifteen days, its garrison broken by hunger and disease
+      and allowed to march out. On the Emperor's direct orders the Cathedral of Santiago, the shrine of the
+      Apostle and the end of the pilgrim road of all Christendom, is destroyed; its Pórtico de la Gloria is
+      carried off to Ishbīliya. The consequences remain to be seen
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+    threads:
+      - war-of-shant-yaqub
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshot, 15 July 1430
+    detail:
+      siege: 15 days; the garrison succumbed to hunger and disease and was allowed to march out (the game's text)
+      destroyed: >-
+        Cathedral of Santiago de Compostela, a work of art (monument, masterpiece 85%), begun in 1075 under
+        Alfonso VI; 'the culmination of the Camino de Santiago, the most travelled Christian pilgrimage route
+        of the medieval world, believed to enshrine the tomb of the Apostle James the Great' (the game's text)
+      captured: the Pórtico de la Gloria, taken to Ishbīliya
+      orders: destroyed on the direct orders of the Emperor (Trent)
+      history: al-Manṣūr took Santiago in 997 and carried its bells to Córdoba, but left the tomb
+  - id: 1430-08-05-battle-oviedo
+    'on': '1430-08-05'
+    kind: battle
+    what: >-
+      At Oviedo the last army of Galicia, 3,229 men, attacks the host of the Ṭāʾifa of Liyūn, 5,602 under Juan
+      Cangas, and is destroyed to the last man without loss to the defenders
+    who:
+      - juan-cangas
+    threads:
+      - war-of-shant-yaqub
+    from:
+      - save
+    cite: save of 17 August 1430 (the war's battle list)
+    detail:
+      result: allied victory
+      naval: false
+      ours:
+        Ṭāʾifa of Liyūn: 5602
+      oursTotal: 5602
+      oursLost: 0
+      theirs:
+        Galicia: 3229
+      theirsTotal: 3229
+      theirsLost: 3229
+      location: Oviedo
+      side: Galicia attacking
+      commanders:
+        Liyūn: Juan Cangas (43/73/87)
+  - id: 1430-08-17-the-princes-opening
+    'on': '1430-08-17'
+    kind: note
+    what: >-
+      The peace with Galicia is not so simple. Its annexation is beyond question, but the two princes are not
+      done in the north: their father is set on destroying the Castilians, and the realm is not ready for a
+      war with the Angevins. Then an opening: Navarre has allied itself to Castile, and while Castile is under
+      London's protection, Navarre is not. If the armies already in the north overwhelm both before London
+      decides whether it must help, the crown has its chance
+    who:
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+      - muhammad-ibn-ismail-ibn-saad
+    threads:
+      - war-of-the-mountains
+      - europe
+      - two-princes
+    from:
+      - told
+    cite: Trent's account
+    detail:
+      account: Trent, August 1430
+  - id: 1430-08-17-war-on-navarre
+    'on': '1430-08-17'
+    kind: war
+    what: >-
+      Al-Andalus declares war on Navarre, the sixth war of the Istirdād. Castile alone answers Navarre's call;
+      the Angevin Empire stays out
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - alfonso-gaston
+    threads:
+      - war-of-the-mountains
+      - europe
+    from:
+      - save
+      - told
+    cite: Trent's account; save of 17 August 1430
+    detail:
+      cb: cb_reconquer_iberia
+      attackers: al-Andalus and all seven ṭāʾifas
+      defenders:
+        - Navarre
+        - Castile
+      forces: al-Andalus 4,674 men under arms; Navarre and Castile none, 9 ships between them
+      angevins: allied to Castile, not in the war
+tellings:
+  - id: 0833-10-23-of-the-war-of-shant-yaqub-and-the-shrine-of-the-apostle
+    'on': '1430-07-15'
+    title: Of the War of Shant Yāqub, and the Shrine of the Apostle
+    verse: '22:40'
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+      - abu-al-hasan-ali-ibn-ahmad
+      - ahmad-ibn-ismail-ibn-saad
+      - diego-villamarin
+      - magdalena-de-borja
+      - isabel-de-montsoriu
+      - jadila-bint-saad-ibn-faraj
+    where:
+      - shant-yaqub
+      - ishbiliyya
+      - qurtuba
+    covers:
+      - 1430-05-18-the-princes-counsel
+      - 1430-05-18-war-on-galicia
+      - 1430-05-18-take-the-capital
+      - 1430-06-30-battle-santiago
+      - 1430-06-30-the-emperor-worldly
+      - 1430-06-30-ahmad-the-architect
+      - 1430-06-30-the-emperors-household
+      - 1430-07-15-santiago-falls
+      - 1420-09-04-the-fall-of-qashtala
+      - 1425-03-25-galicia-takes-asturias
+    text: >
+      The Emperor [Muḥammad](person:muhammad-ibn-ismail-ibn-saad) had been on the throne less than a year when
+      he called for war, and he called for it the way he did everything, all at once. His father had died with
+      the work of the Istirdād unfinished, and the son meant to finish it and be done. He ordered the army
+      north against Qashtāla, which had begun every war of the house of Naṣr for a hundred years, and he
+      wanted it gone by the end of the summer.
+
+
+      His sons talked him out of it. The princes [Ismāʿīl](person:ismail-ibn-muhammad-ibn-ismail) and
+      [Aḥmad](person:ahmad-ibn-muhammad-ibn-ismail) did not argue with their father in the dīwān, where he did
+      not like to be argued with. They argued with him in private, and they argued for a greater war, not a
+      lesser one. Qashtāla was four towns and a king who sheltered behind the English, they said. The greatest
+      of the kingdoms of the mountains was Jillīqiya, thirty-one towns from Shant Yāqub to the sea at Llanes,
+      ruled by [Diego Villamarín](person:diego-villamarin), the best soldier left in the Christian north.
+      Jillīqiya would be the nobler conquest and the harder one. After it would come Nabarra on the Basque
+      coast, whose people the princes reckoned far more formidable than any Castilian. Qashtāla could wait for
+      last. The Emperor liked the sound of a nobler conquest, and for now he was persuaded.
+
+
+      On 24 Shaʿbān 833 (18 May 1430) war was declared on Jillīqiya. It was the fifth war of the Istirdād, and
+      it was named for the city at its end, Shant Yāqub, which the Christians call Santiago de Compostela. All
+      seven ṭāʾifas marched with the crown. The Emperor's orders to his generals ran to one line: take the
+      capital. The princes added the rest. Jillīqiya had no army in the field and two ships; the empire had
+      four thousand six hundred regulars and fifty sail. The princes meant to reach Shant Yāqub before Diego
+      could raise one.
+
+
+      He very nearly raised one in time. On 8 Shawwāl 833 the Galicians met the vanguard before the walls of
+      Shant Yāqub: seven thousand men, nearly all of them levied archers called in from the villages. Against
+      them stood four thousand nine hundred under [Abū al-Ḥasan ʿAlī](person:abu-al-hasan-ali-ibn-ahmad), the
+      son of the Emperor's brother [Aḥmad](person:ahmad-ibn-ismail-ibn-saad) of Liyūn. He was seventeen years
+      old. He sent his light horse around the archers' flanks, rode the heavy horse into them, and broke them
+      before noon. Three thousand eight hundred Galicians were killed or taken, for two hundred and
+      twenty-seven of ours. The way to the city was open, and the court reckoned the war a quarter won in a
+      single day.
+
+
+      The Emperor heard the news among his ships. The court said that his years with the fleet had made him
+      another man from the slow boy of the dīwān. He knew fishermen and harbour-masters and the captains of
+      every merchant house in Ishbīliya by name, and he understood how things were actually done in the world
+      better than many cleverer men. His eyes, all the same, were on the sea, and the state was carried by
+      those around him. His three wives, [Magdalena](person:magdalena-de-borja) of the Borja,
+      [Isabel](person:isabel-de-montsoriu) of the Montsoriu and [Jadīla](person:jadila-bint-saad-ibn-faraj) of
+      his own house, had been chosen by his father and grandfather for their minds as well as their blood.
+      With the two princes they did most of the governing, and the old Emperors had meant them to. Prince
+      Aḥmad had begun to draw buildings, as his forebears had, and to talk of the great works he would raise
+      in the capital one day.
+
+
+      Shant Yāqub held out for fifteen days. Its garrison was broken by hunger and sickness, not by assault,
+      and on 23 Shawwāl 833 (15 July 1430) it was allowed to march out under its own banners. Then the Emperor
+      gave the order that will be remembered longer than the battle.
+
+
+      The cathedral of Shant Yāqub was the greatest church of the Christian West outside Rome. It had been
+      raised over the tomb the Christians believed was that of the Apostle James, whom they called their
+      patron and the Moor-slayer, and it stood at the end of the pilgrim road that ran across all of
+      Christendom from the Rhine and the Alps. Every year tens of thousands walked that road to touch the
+      stone. When al-Manṣūr took the city in 387 he carried its bells back to [Qurṭuba](place:qurtuba) on the
+      backs of Christian captives, to be hung upside down as lamps in the Great Mosque. But he left the tomb
+      alone. The chroniclers said he found a single old monk sitting beside it and told his men to leave the
+      man in peace.
+
+
+      The Emperor Muḥammad did not leave the tomb alone. On his direct orders the cathedral was pulled down.
+      The masons of the army were told to save one thing. The great carved porch of the west front, the
+      Pórtico de la Gloria, with its two hundred figures of prophets, elders and the saved, was taken down
+      stone by stone and carted south to [Ishbīliya](place:ishbiliyya). The rest became a field of rubble.
+
+
+      No one in the dīwān asked the Emperor why. Some of the ʿulamāʾ praised the deed from the pulpit, and
+      others kept silent, and the silent ones were the more learned. The princes did not speak of it at all.
+      The court had seen what happened to Christendom when a pope preached a crusade, and it knew that the
+      Christians of the north, who had been told for two years that the Emperor's coming was a homecoming, now
+      had a different story to tell. What the destruction of the Apostle's shrine would cost al-Andalus, and
+      when, and to whom it would be paid, remains to be seen.
+
+
+      *And were it not that Allāh checks the people, some by means of others, there would have been demolished
+      monasteries, churches, synagogues, and mosques in which the name of Allāh is much mentioned.*

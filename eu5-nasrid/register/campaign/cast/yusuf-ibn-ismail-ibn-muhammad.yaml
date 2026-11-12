@@ -1,0 +1,73 @@
+name: Yūsuf ibn Ismāʿīl ibn Muḥammad
+arabic: يوسف بن إسماعيل بن محمد
+house: Naṣrid
+tier: central
+born: '1422-01-06'
+father: ismail-ibn-muhammad-ibn-ismail
+roles:
+  - second in line to the throne
+  - admiral of the fleet (from 1438)
+traits:
+  - child_shrewd
+  - accomplished_sailor
+drives:
+  - from: '1438-01-16'
+    text: >-
+      Made admiral at sixteen by his grandfather, who believes the post made a man of him and will make one of
+      the boy.
+    by: trent
+    source: Trent's account, January 1438
+  - from: '1438-01-16'
+    text: 'His three marriages are a map of the realm: Mālī''s gold, the ṭāʾifas of the north, the court.'
+    by: chronicle
+    source: Of the Admiral Prince
+  - from: '1440-06-12'
+    text: Enforces the Emperor's embargo on the Angevins at sea.
+    by: chronicle
+    source: Of the Trade War with Genoa
+  - from: '1443-07-24'
+    text: 'A prince of two shores: two of his sons by Amie are born at Niani, at the Mansa''s court.'
+    by: chronicle
+    source: autosave of 1 February 1447
+  - from: '1448-01-13'
+    text: >-
+      Proves himself raiding the coast of Naples in the war for Palermo; his captains call him an accomplished
+      sailor.
+    by: trent
+    source: Trent's account and screenshot, 13 January 1448
+  - from: '1448-10-21'
+    text: Sinks five Genoese ships in the Corsica Channel without loss.
+    by: chronicle
+    source: Trent's battle screen, 21 October 1448
+  - from: '1450-11-29'
+    text: Speaks for the duke of Athens, the admiral he once beat off Terracina, when Athens offers fealty.
+    by: chronicle
+    source: Of the Peace of Balarm and the Duke of Athens
+ties:
+  - with: tiramakhan-mali
+    kind: kin
+    from: '1438-01-16'
+    text: His father-in-law; two of his sons are born at the Mansa's court at Niani.
+    by: chronicle
+stations:
+  - role: admiral
+    from: '1438-01-16'
+    to: null
+    source: save
+    approx: false
+note: >-
+  Eldest son of the heir Ismāʿīl by Tella, born at Gharnāṭa on 6 January 1422, and second in line behind his
+  father. Given an expensive, in-depth education, and shrewd as a child. By January 1438 he had married three
+  wives: Amie, daughter of Mansa Tiramakhan of Mālī; Fāṭima, daughter of the late Yūsuf ibn Ismāʿīl of
+  Banbalūna, to tie the ṭāʾifas to the crown; and Muʾmina, daughter of Muṣliḥ al-Dīn of the court. At sixteen
+  his grandfather the Emperor made him admiral of the fleet, believing the post had made a man of him and
+  would do the same for his grandson (Trent's screenshot and account; save of 16 January 1438). In January
+  1448, admiral of the eleventh fleet in the Tunisian war for Palermo, he proved himself raiding along the
+  coast of Naples, and the chancellor reported him an accomplished sailor (Trent's account and screenshot, 13
+  January 1448). His squadron sank an Athenian ship off Terracina (5 January 1448) and two Sicilian ships in
+  the Gulf of Termini (13 January), and on 21 October 1448, with 21 galleys, sank all five Genoese ships it
+  met in the Corsica Channel without loss. His son Āram by Amie was born on 23 April 1449 (save of 2 August
+  1449; Trent's battle screen).
+game:
+  id: 16866443
+  name: Yūsuf Nasrid

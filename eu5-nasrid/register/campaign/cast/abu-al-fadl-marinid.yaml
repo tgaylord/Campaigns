@@ -1,0 +1,30 @@
+name: Abū al-Faḍl
+arabic: أبو الفضل
+house: Marīnid
+tier: key
+born: '1359-07-02'
+died: '1417-03-19'
+father: abu-inan-faris
+roles:
+  - sultan of Fās (1381–1417)
+traits:
+  - charismatic_negotiator
+  - worldly
+  - careful
+stations:
+  - role: general
+    from: '1411-07-19'
+    to: '1411-08-03'
+    source: save
+    approx: false
+note: >-
+  Son and heir of Abū ʿInān Fāris of Fās. Betrothed to Jadīla bint Yūsuf, the sultan's sister, on 3 April 1372
+  (save of 16 January 1373). Married Jadīla by January 1376 (Trent's account). Sultan of Fās from 7 October
+  1381. In June 1410 he answered the Emperor Ismāʿīl's call against Qashtāla with his vassals of Tilimsān and
+  Tafilalt (save of 29 June 1410; Trent's account). He died of pneumonia on 19 March 1417, at fifty-seven,
+  after thirty-five years on the throne. His son and heir Abū Ḥammū, Jadīla's son, had died in a hunting
+  accident on 14 September 1410, during the War of Jillīqiya, so the throne passed to Abū Ḥammū's son Yaḥyā,
+  fifteen, who ruled in his own name from his sixteenth birthday, 14 July 1417 (save of 11 August 1420).
+game:
+  id: 46824
+  name: Abul Fadl

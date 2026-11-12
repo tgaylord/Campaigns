@@ -1,0 +1,25 @@
+name: Alfons de Borja
+house: Borja
+tier: key
+born: '1346-07-23'
+died: '1393-02-24'
+roles:
+  - king of the renewed Aragon
+  - ruler of a ṭāʾifa
+stations:
+  - role: general
+    from: '1388-12-02'
+    to: '1390-07-02'
+    source: save
+    approx: false
+note: >-
+  A Catalan, Sunni, of the house of Borja; proclaimed king of a renewed Aragon, a ṭāʾifa of the sultan in the
+  interior, on 16 March 1375. The game counts him the fifth Alfons of Aragon, and gives his small kingdom the
+  rank of a kingdom and its seat at Benabarre. The sultan dressed it as a successor to the old crown (Trent's
+  account; save of 16 March 1375). At the peace of 6 April 1378 Castile restored the Aragonese heartland to
+  him, 24 towns with Zaragoza, Huesca, Jaca and Teruel, and his kingdom grew from 6 towns to 30. He died on 24
+  February 1393. His son Rodrigo (born 1381) succeeded him, with his daughter Caterina as heir (save of 3
+  September 1398).
+game:
+  id: 33566788
+  name: Alfons

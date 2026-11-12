@@ -1,0 +1,31 @@
+name: Khālid ibn Abī Ḥammū
+arabic: خالد بن أبي حمو
+born: '1421-06-11'
+father: abu-hammu-rahhu
+roles:
+  - ruler of the Ṭāʾifa of Burghush (from 1437)
+traits:
+  - child_prodigy
+stations:
+  - role: admiral
+    from: '1440-01-27'
+    to: '1447-08-02'
+    source: save
+    approx: true
+  - role: admiral
+    from: '1447-08-02'
+    to: '1449-11-14'
+    source: save
+    approx: false
+  - role: general
+    from: '1450-05-02'
+    to: null
+    source: save
+    approx: false
+note: >-
+  Son of Abū Ḥammū of Burghush, nine when his father died on 21 January 1431. A child prodigy. The Emperor
+  rules Burghush as his regent until he comes of age on 11 June 1437 (save of 10 October 1435). He came of age
+  and took his throne on 11 June 1437 (save of 16 January 1438).
+game:
+  id: 16821913
+  name: Khalid

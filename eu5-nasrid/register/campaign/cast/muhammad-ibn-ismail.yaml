@@ -1,0 +1,24 @@
+name: Muḥammad ibn Ismāʿīl al-Aḥmar
+arabic: محمد بن إسماعيل الأحمر
+house: Naṣrid
+born: '1333-03-18'
+died: '1398-07-24'
+father: ismail-ibn-muhammad
+roles:
+  - explorer (from 1396)
+stations:
+  - role: explorer
+    from: '1396-02-10'
+    to: '1398-07-24'
+    source: save
+    approx: false
+note: >-
+  Grandson of Muḥammad ibn Faraj of the house of Naṣr, son of Ismāʿīl ibn Muḥammad (died of the plague, 19
+  January 1351); called al-Aḥmar, 'the Red', by the game. Husband of the Emperor's half-sister Maryam bint
+  Yūsuf of the dīwān. On 10 February 1396, at sixty-two, he was made an explorer, and by 1 June 1397 he was
+  charting the Canary Islands, sailing from Ishbīliya and lying off Aguere on Tenerife (autosave of 1 June
+  1397). He died on 24 July 1398, aged sixty-five, a year after he had charted the Canaries (save of 24
+  October 1414).
+game:
+  id: 3546
+  name: Muhammad

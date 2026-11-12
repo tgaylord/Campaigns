@@ -1,0 +1,1159 @@
+date: '1432-05-01'
+title: The Arsenals
+source:
+  save: SP_ADU_1432_05_01 (compressed)
+  game: 1.4.7
+summary: >-
+  Seven months into the Crusade of 835. The war has been fought at sea and in Italy and Sardinia by the
+  allies' fleets and armies; al-Andalus's own army hasn't fought, and the war score stands at 4 in the allies'
+  favour. Seven arsenals and seven war galleys are under construction. The four Cape Verde towns have just
+  become a colonial dominion, leaving the crown 192 towns. Stability 6.2, prestige 96, treasury 1,878. Estates
+  estimated from the reading of 16 November 1428.
+realm:
+  towns: 192
+  souls: 2605969
+  treasury: 1878
+  income: 286.5
+  expenses: 326
+  stability: 6.2
+  prestige: 96
+  regiments: 9
+  ships: 50
+  manpower: 20937
+court:
+  ruler: muhammad-ibn-ismail-ibn-saad
+  heir: ismail-ibn-muhammad-ibn-ismail
+  capital: ishbiliyya
+  council:
+    - who: ismail-ibn-muhammad-ibn-ismail
+      seat: Promoting Andalusī culture
+    - who: ahmad-ibn-muhammad-ibn-ismail
+      seat: Changing the societal values
+    - who: umm-al-fath-bint-muhammad
+      seat: Integrating the new lands
+    - who: yusuf-ibn-saad
+      seat: Promoting the faith
+    - who: jadila-bint-saad-ibn-faraj
+      seat: Integrating the new lands
+standing:
+  wars:
+    - crusade-of-835
+  allies:
+    - Mamluks
+    - Morocco
+    - Tunis
+  subjects:
+    - Catalonia (taifa)
+    - Aragon (taifa)
+    - Taifa of Cuenca (taifa)
+    - Kingdom of Portugal (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+    - Taifa of Galicia (taifa)
+    - Cape Verde (colonial nation)
+  estates:
+    - name: Crown
+      power: 29.15
+    - name: Nobility
+      power: 17.68
+      mood: 48
+    - name: ʿUlamāʾ
+      power: 12.63
+      mood: 43
+    - name: Burghers
+      power: 21.82
+      mood: 51
+    - name: Commoners
+      power: 2.89
+      mood: 50
+    - name: Dhimmī
+      power: 15.82
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 831849
+    Castilian: 699098
+    Portuguese: 492613
+    Sephardi: 191411
+    Catalan: 180201
+    Leonese: 165164
+  faiths:
+    Sunni: 1261676
+    Catholic: 1145285
+    Jewish: 182016
+    Guanche_religion: 15878
+    Orthodox: 487
+map:
+  ours:
+    - GRA
+  subjects:
+    - CAT
+    - ARA
+    - ABA60
+    - POR
+    - ABA42
+    - ABA49
+    - ABA55
+    - GLC
+    - AAA52
+  allies:
+    - MAM
+    - MOR
+    - TUN
+beats:
+  - id: 1431-10-03-genoa-joins-the-crusade
+    'on': '1431-10-03'
+    kind: war
+    what: >-
+      Two days in, the crusade widens: the Pope's allies Genoa, Siena and Aquileia join it, and Genoa brings
+      its subjects, Orange, Arborea in Sardinia, Corsica, Cuneo and Gazaria on the Black Sea. The Genoese
+      fleet, 24 ships, is the crusade's real strength at sea
+    threads:
+      - crusade-of-835
+      - europe
+    from:
+      - save
+      - told
+    cite: Trent's account; autosave of 1 December 1431
+    detail:
+      joined:
+        - Genoa
+        - Siena
+        - Aquileia
+      genoeseSubjects:
+        - Orange
+        - Arborea
+        - Corsica
+        - Cuneo
+        - Gazaria
+      genoa: 11 towns, 3,000 men, 24 ships; its doge Raimondo (28/81/46) favours the Ghibellines
+  - id: 1431-10-08-death-of-muhammad-ibn-ismail-ibn-yusuf
+    'on': '1431-10-08'
+    kind: death
+    what: Muḥammad ibn Ismāʿīl ibn Yūsuf, a prince of the house, is killed in a hunting accident
+    who:
+      - muhammad-ibn-ismail-ibn-yusuf
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 10 October 1435
+    detail:
+      reason: hunting accident (the game)
+  - id: 1431-11-20-battle-oristano
+    'on': '1431-11-20'
+    kind: battle
+    what: >-
+      In Sardinia the Tunisians, 1,374 men, attack the Arboreans at Oristano and are thrown back with the loss
+      of 863, against 261 of Arborea's 4,279
+    minor: true
+    threads:
+      - crusade-of-835
+    from:
+      - save
+    cite: autosave of 1 December 1431
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Tunis: 1374
+      oursTotal: 1374
+      oursLost: 863
+      theirs:
+        Arborea: 4279
+      theirsTotal: 4279
+      theirsLost: 261
+      location: Oristano
+      side: Tunis attacking
+  - id: 1431-11-26-battle-gulf-talamone
+    'on': '1431-11-26'
+    kind: battle
+    what: >-
+      In the Gulf of Talamone off Tuscany six papal ships under Vukmir catch five ships of Tunis under al-Faḍl
+      and take or sink one of them without loss
+    minor: true
+    threads:
+      - crusade-of-835
+    from:
+      - save
+    cite: autosave of 1 December 1431
+    detail:
+      result: allied defeat
+      naval: true
+      ours:
+        Tunis: 5
+      theirs:
+        Papal States: 6
+      oursLost: 1
+      theirsLost: 0
+      location: Gulf of Talamone
+      units: ships
+  - id: 1431-12-05-battle-gulf-talamone
+    'on': '1431-12-05'
+    kind: battle
+    what: >-
+      In the Gulf of Talamone fourteen ships of Tripoli fall on the papal squadron of six under Vukmir
+      Janković and every one of them is sunk or taken, without the loss of a papal ship
+    minor: true
+    threads:
+      - crusade-of-835
+    from:
+      - save
+    cite: save of 1 May 1432
+    detail:
+      result: allied defeat
+      naval: true
+      ours:
+        Tripoli: 14
+      oursTotal: 14
+      oursLost: 14
+      theirs:
+        Papal States: 6
+      theirsTotal: 6
+      theirsLost: 0
+      location: Gulf of Talamone
+      side: allies attacking
+      units: ships
+      commanders:
+        ours: Abū Tāshufīn of Tripoli
+        theirs: Vukmir Janković (papal admiral)
+  - id: 1431-12-09-battle-jaca
+    'on': '1431-12-09'
+    kind: battle
+    what: >-
+      Under the walls of Jaca, 516 men of Marsan attack 2,372 of Aragon and are destroyed to the last man, for
+      55 Aragonese
+    minor: true
+    threads:
+      - crusade-of-835
+    from:
+      - save
+    cite: save of 1 May 1432
+    detail:
+      result: allied victory
+      naval: false
+      ours:
+        Aragon: 2372
+      oursTotal: 2372
+      oursLost: 55
+      theirs:
+        Marsan: 516
+      theirsTotal: 516
+      theirsLost: 516
+      location: Jaca
+      side: crusaders attacking
+      commanders:
+        ours: name_philip#33570086
+        theirs: name_anthony#16830138
+  - id: 1431-12-10-battle-bracciano
+    'on': '1431-12-10'
+    kind: battle
+    what: In Lazio, 912 men of Arezzo attack 2,492 Tunisians at Bracciano and are destroyed, for 12 Tunisians
+    minor: true
+    threads:
+      - crusade-of-835
+    from:
+      - save
+    cite: save of 1 May 1432
+    detail:
+      result: allied victory
+      naval: false
+      ours:
+        Tunis: 2492
+      oursTotal: 2492
+      oursLost: 12
+      theirs:
+        Arezzo: 912
+      theirsTotal: 912
+      theirsLost: 912
+      location: Bracciano
+      side: crusaders attacking
+      commanders:
+        ours: name_abu.name_john#86899
+  - id: 1431-12-17-battle-thiesi
+    'on': '1431-12-17'
+    kind: battle
+    what: In Sardinia, 1,027 men of Gallura attack 4,017 Arboreans at Thiesi and are destroyed, for 61 of Arborea
+    minor: true
+    threads:
+      - crusade-of-835
+    from:
+      - save
+    cite: save of 1 May 1432
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Gallura: 1027
+      oursTotal: 1027
+      oursLost: 1027
+      theirs:
+        Arborea: 4017
+      theirsTotal: 4017
+      theirsLost: 61
+      location: Thiesi
+      side: allies attacking
+      commanders:
+        theirs: name_benedict#16832034
+  - id: 1431-12-20-battle-coast-lazio
+    'on': '1431-12-20'
+    kind: battle
+    what: >-
+      Off the coast of Lazio Vukmir Janković, with 6 papal and 15 Genoese ships, attacks 22 ships of Tunis and
+      2 of Gabès and sinks or takes 15 of them for the loss of one
+    minor: true
+    threads:
+      - crusade-of-835
+    from:
+      - save
+    cite: save of 1 May 1432
+    detail:
+      result: allied defeat
+      naval: true
+      ours:
+        Gabès: 2
+        Tunis: 22
+      oursTotal: 24
+      oursLost: 15
+      theirs:
+        Papal States: 6
+        Genoa: 15
+      theirsTotal: 21
+      theirsLost: 1
+      location: Coast of Lazio
+      side: crusaders attacking
+      units: ships
+      commanders:
+        ours: Abū al-Faḍl of Tunis
+        theirs: Vukmir Janković (papal admiral)
+  - id: 1431-12-31-battle-tivoli
+    'on': '1431-12-31'
+    kind: battle
+    what: >-
+      At Tivoli 14,623 men of Campagna and Siena under the Andalusī mercenary Khayr al-Dīn Khayyām attack
+      2,479 Tunisians and drive them off, killing or taking 1,586 for 1,193
+    who:
+      - khayr-al-din-khayyam
+    threads:
+      - crusade-of-835
+    from:
+      - save
+    cite: save of 1 May 1432
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Tunis: 2479
+      oursTotal: 2479
+      oursLost: 1586
+      theirs:
+        Campagna: 13976
+        Siena: 647
+      theirsTotal: 14623
+      theirsLost: 1193
+      location: Tivoli
+      side: crusaders attacking
+      commanders:
+        ours: name_abu.name_john#86899
+        theirs: Khayr al-Dīn Khayyām, an Andalusī Muslim mercenary captain in the crusaders' pay
+  - id: 1432-01-01-battle-eolie-islands
+    'on': '1432-01-01'
+    kind: battle
+    what: Off the Aeolian Islands two ships of Val di Noto attack 17 of Aquileia and Genoa and are lost
+    minor: true
+    threads:
+      - crusade-of-835
+    from:
+      - save
+    cite: save of 1 May 1432
+    detail:
+      result: allied defeat
+      naval: true
+      ours:
+        Val di Noto: 2
+      oursTotal: 2
+      oursLost: 2
+      theirs:
+        Aquileia: 2
+        Genoa: 15
+      theirsTotal: 17
+      theirsLost: 0
+      location: Aeolian Islands
+      side: allies attacking
+      units: ships
+      commanders:
+        ours: Dagale#60721
+        theirs: name_sancho#33573004
+  - id: 1432-01-05-battle-orosei
+    'on': '1432-01-05'
+    kind: battle
+    what: >-
+      In Sardinia 3,955 Arboreans attack 420 men of Gallura at Orosei and scatter them, killing or taking 368
+      for 70
+    minor: true
+    threads:
+      - crusade-of-835
+    from:
+      - save
+    cite: save of 1 May 1432
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Gallura: 420
+      oursTotal: 420
+      oursLost: 368
+      theirs:
+        Arborea: 3955
+      theirsTotal: 3955
+      theirsLost: 70
+      location: Orosei
+      side: crusaders attacking
+      commanders:
+        ours: name_kubad#33570617
+        theirs: name_benedict#16832034
+  - id: 1432-01-19-battle-gulf-of-lion
+    'on': '1432-01-19'
+    kind: battle
+    what: In the Gulf of Lion 19 ships of Tlemcen catch a single ship of Provence and sink it
+    minor: true
+    threads:
+      - crusade-of-835
+    from:
+      - save
+    cite: save of 1 May 1432
+    detail:
+      result: allied victory
+      naval: true
+      ours:
+        Tlemcen: 19
+      oursTotal: 19
+      oursLost: 0
+      theirs:
+        Provence: 1
+      theirsTotal: 1
+      theirsLost: 1
+      location: Gulf of Lion
+      side: allies attacking
+      units: ships
+      commanders:
+        ours: Muḥammad Abū Yaḥyā of Tlemcen
+        theirs: name_roger#16801817
+  - id: 1432-01-27-battle-gulf-olbia
+    'on': '1432-01-27'
+    kind: battle
+    what: >-
+      In the Gulf of Olbia nine papal ships attack the joined fleets of Morocco and Barqa, 115 sail under Abū
+      Bakr, and all nine are sunk or taken, for four of ours
+    minor: true
+    threads:
+      - crusade-of-835
+    from:
+      - save
+    cite: save of 1 May 1432
+    detail:
+      result: allied victory
+      naval: true
+      ours:
+        Morocco: 99
+        Barqa: 16
+      oursTotal: 115
+      oursLost: 4
+      theirs:
+        Papal States: 9
+      theirsTotal: 9
+      theirsLost: 9
+      location: Gulf of Olbia
+      side: crusaders attacking
+      units: ships
+      commanders:
+        ours: Abū Bakr of Morocco
+        theirs: Svyatoslav (papal)
+  - id: 1432-01-28-battle-orosei
+    'on': '1432-01-28'
+    kind: battle
+    what: At Orosei 2,530 Tunisians attack 3,885 Arboreans and beat them, killing or taking 694 for 226
+    minor: true
+    threads:
+      - crusade-of-835
+    from:
+      - save
+    cite: save of 1 May 1432
+    detail:
+      result: allied victory
+      naval: false
+      ours:
+        Tunis: 2530
+      oursTotal: 2530
+      oursLost: 226
+      theirs:
+        Arborea: 3885
+      theirsTotal: 3885
+      theirsLost: 694
+      location: Orosei
+      side: allies attacking
+      commanders:
+        ours: name_john#71297
+        theirs: name_benedict#16832034
+  - id: 1432-02-01-battle-gulf-orosei
+    'on': '1432-02-01'
+    kind: battle
+    what: >-
+      In the Gulf of Orosei 28 ships of Aquileia attack 185 of Morocco, Tunis and Barqa under Abū Bakr and
+      lose 17, for 6 of ours
+    minor: true
+    threads:
+      - crusade-of-835
+    from:
+      - save
+    cite: save of 1 May 1432
+    detail:
+      result: allied victory
+      naval: true
+      ours:
+        Barqa: 16
+        Tunis: 74
+        Morocco: 95
+      oursTotal: 185
+      oursLost: 6
+      theirs:
+        Aquileia: 28
+      theirsTotal: 28
+      theirsLost: 17
+      location: Gulf of Orosei
+      side: crusaders attacking
+      units: ships
+      commanders:
+        ours: Abū Bakr of Morocco
+        theirs: name_aleramo#79767
+  - id: 1432-02-19-battle-ushant
+    'on': '1432-02-19'
+    kind: battle
+    what: >-
+      Off Ushant 27 ships of Mecklenburg attack six of the Kingdom of Portugal under Rodrigo de Lima and win,
+      sinking one and damaging another
+    minor: true
+    threads:
+      - crusade-of-835
+    from:
+      - save
+    cite: save of 1 May 1432
+    detail:
+      result: allied defeat
+      naval: true
+      ours:
+        Kingdom of Portugal: 6
+      oursTotal: 6
+      oursLost: 1.4
+      theirs:
+        Mecklenburg: 27
+      theirsTotal: 27
+      theirsLost: 0
+      location: Ushant
+      side: crusaders attacking
+      units: ships
+      commanders:
+        ours: Rodrigo de Lima of Portugal
+        theirs: name_john#33563941
+  - id: 1432-02-21-battle-ushant
+    'on': '1432-02-21'
+    kind: battle
+    what: >-
+      Off Ushant a single ship of the Ṭāʾifa of Burghush attacks the Mecklenburg fleet of 29 and is beaten
+      off, damaged
+    minor: true
+    threads:
+      - crusade-of-835
+    from:
+      - save
+    cite: save of 1 May 1432
+    detail:
+      result: allied defeat
+      naval: true
+      ours:
+        Ṭāʾifa of Burghush: 1
+      oursTotal: 1
+      oursLost: 0.2
+      theirs:
+        Mecklenburg: 29
+      theirsTotal: 29
+      theirsLost: 0
+      location: Ushant
+      side: allies attacking
+      units: ships
+      commanders:
+        ours: name_chrysanthos#16863515
+        theirs: name_john#33563941
+  - id: 1432-02-28-battle-terracina
+    'on': '1432-02-28'
+    kind: battle
+    what: At Terracina 832 Tunisians attack 6,138 papal troops and are thrown back, losing 403 for 55
+    minor: true
+    threads:
+      - crusade-of-835
+    from:
+      - save
+    cite: save of 1 May 1432
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Tunis: 832
+      oursTotal: 832
+      oursLost: 403
+      theirs:
+        Papal States: 6138
+      theirsTotal: 6138
+      theirsLost: 55
+      location: Terracina
+      side: allies attacking
+      commanders:
+        ours: name_abu.name_john#86899
+        theirs: name_benvenuto#16847475
+  - id: 1432-03-02-battle-gulf-talamone
+    'on': '1432-03-02'
+    kind: battle
+    what: >-
+      In the Gulf of Talamone 22 ships of Faenza attack 79 of Tunis and Barqa under Almaz and lose five
+      without sinking one
+    minor: true
+    threads:
+      - crusade-of-835
+    from:
+      - save
+    cite: save of 1 May 1432
+    detail:
+      result: allied victory
+      naval: true
+      ours:
+        Tunis: 63
+        Barqa: 16
+      oursTotal: 79
+      oursLost: 0
+      theirs:
+        Faenza: 22
+      theirsTotal: 22
+      theirsLost: 5
+      location: Gulf of Talamone
+      side: crusaders attacking
+      units: ships
+      commanders:
+        ours: Almaz
+        theirs: name_john#64895
+  - id: 1432-03-14-battle-corsica-channel
+    'on': '1432-03-14'
+    kind: battle
+    what: >-
+      In the Corsica Channel Vukmir Janković's last five papal ships attack 45 of Morocco and Catalonia under
+      ʿAbd al-ʿAzīz and all five are lost
+    minor: true
+    threads:
+      - crusade-of-835
+    from:
+      - save
+    cite: save of 1 May 1432
+    detail:
+      result: allied victory
+      naval: true
+      ours:
+        Morocco: 39
+        Catalonia: 6
+      oursTotal: 45
+      oursLost: 0
+      theirs:
+        Papal States: 5
+      theirsTotal: 5
+      theirsLost: 5
+      location: Corsica Channel
+      side: crusaders attacking
+      units: ships
+      commanders:
+        ours: ʿAbd al-ʿAzīz of Morocco
+        theirs: Vukmir Janković (papal admiral)
+  - id: 1432-03-15-battle-castelsardo
+    'on': '1432-03-15'
+    kind: battle
+    what: At Castelsardo 510 Tunisians attack 3,162 Arboreans and are destroyed, losing 422 for 41
+    minor: true
+    threads:
+      - crusade-of-835
+    from:
+      - save
+    cite: save of 1 May 1432
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Tunis: 510
+      oursTotal: 510
+      oursLost: 422
+      theirs:
+        Arborea: 3162
+      theirsTotal: 3162
+      theirsLost: 41
+      location: Castelsardo
+      side: allies attacking
+      commanders:
+        ours: name_john#71297
+        theirs: name_benedict#16832034
+  - id: 1432-03-19-battle-gaeta
+    'on': '1432-03-19'
+    kind: battle
+    what: At Gaeta 650 men of Principato Ultra beat 428 Tunisians, killing or taking 113 for 47
+    minor: true
+    threads:
+      - crusade-of-835
+    from:
+      - save
+    cite: save of 1 May 1432
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Tunis: 428
+      oursTotal: 428
+      oursLost: 113
+      theirs:
+        Principato Ultra: 650
+      theirsTotal: 650
+      theirsLost: 47
+      location: Gaeta
+      side: crusaders attacking
+      commanders:
+        ours: name_abu.name_john#86899
+        theirs: name_adolf.name_frederick#16838124
+  - id: 1432-03-26-battle-pitigliano
+    'on': '1432-03-26'
+    kind: battle
+    what: >-
+      At Pitigliano Khayr al-Dīn Khayyām leads 16,964 men of Campagna, Siena and Faenza against 4,567
+      Moroccans under Khalīl and is broken, losing 6,528 for 2,122
+    who:
+      - khayr-al-din-khayyam
+    threads:
+      - crusade-of-835
+    from:
+      - save
+    cite: save of 1 May 1432
+    detail:
+      result: allied victory
+      naval: false
+      ours:
+        Morocco: 4567
+      oursTotal: 4567
+      oursLost: 2122
+      theirs:
+        Campagna: 12779
+        Siena: 647
+        Faenza: 3538
+      theirsTotal: 16964
+      theirsLost: 6528
+      location: Pitigliano
+      side: crusaders attacking
+      commanders:
+        ours: Khalīl of Morocco
+        theirs: Khayr al-Dīn Khayyām, an Andalusī Muslim mercenary captain in the crusaders' pay
+  - id: 1432-04-02-battle-cape-sicie
+    'on': '1432-04-02'
+    kind: battle
+    what: Off Cape Sicié seven ships of Provence attack 19 of Tlemcen and lose six of them, for one
+    minor: true
+    threads:
+      - crusade-of-835
+      - voyages
+    from:
+      - save
+    cite: save of 1 May 1432
+    detail:
+      result: allied victory
+      naval: true
+      ours:
+        Tlemcen: 19
+      oursTotal: 19
+      oursLost: 1
+      theirs:
+        Provence: 7
+      theirsTotal: 7
+      theirsLost: 6
+      location: Cape Sicié
+      side: crusaders attacking
+      units: ships
+      commanders:
+        ours: Muḥammad Abū Yaḥyā of Tlemcen
+        theirs: name_charles#16832503
+  - id: 1432-04-19-battle-gulf-castellammare
+    'on': '1432-04-19'
+    kind: battle
+    what: >-
+      In the Gulf of Castellammare 39 Moroccan and 6 Catalan ships under ʿAbd al-ʿAzīz sink all four ships of
+      an Aquileian squadron
+    minor: true
+    threads:
+      - crusade-of-835
+    from:
+      - save
+    cite: save of 1 May 1432
+    detail:
+      result: allied victory
+      naval: true
+      ours:
+        Catalonia: 6
+        Morocco: 39
+      oursTotal: 45
+      oursLost: 0
+      theirs:
+        Aquileia: 4
+      theirsTotal: 4
+      theirsLost: 4
+      location: Gulf of Castellammare
+      side: allies attacking
+      units: ships
+      commanders:
+        ours: ʿAbd al-ʿAzīz of Morocco
+        theirs: name_sancho#33573004
+  - id: 1432-04-30-battle-saint-malo-gulf
+    'on': '1432-04-30'
+    kind: battle
+    what: >-
+      In the Gulf of Saint-Malo the Irish fleet of 33 catches the single ship of the Ṭāʾifa of Burghush and
+      damages it
+    minor: true
+    threads:
+      - crusade-of-835
+    from:
+      - save
+    cite: save of 1 May 1432
+    detail:
+      result: allied defeat
+      naval: true
+      ours:
+        Ṭāʾifa of Burghush: 1
+      oursTotal: 1
+      oursLost: 0.2
+      theirs:
+        Ireland: 33
+      theirsTotal: 33
+      theirsLost: 0
+      location: Gulf of Saint-Malo
+      side: crusaders attacking
+      units: ships
+      commanders:
+        ours: name_chrysanthos#16863515
+        theirs: name_richard#76196
+  - id: 1432-05-01-the-green-cape
+    'on': '1432-05-01'
+    kind: land
+    what: >-
+      The four towns of the Cape Verde islands, Santiago, Fogo, Santo Antão and São Nicolau, are made a land
+      of their own: a colonial dominion of the Emperor ruled from Santiago by ʿAbd al-Wahhāb Barakat, an
+      Andalusī of the faith
+    who:
+      - abd-al-wahhab-barakat
+    threads:
+      - voyages
+    from:
+      - save
+    cite: save of 1 May 1432
+    detail:
+      towns:
+        - Santiago
+        - Fogo
+        - Santo Antão
+        - São Nicolau
+      subjectType: colonial nation
+      capital: Santiago (Cape Verde)
+      culture: Andalusī
+      religion: Sunni
+      ruler: ʿAbd al-Wahhāb Barakat, born 30 August 1402 (50/32/31)
+      since: '1432-05-01'
+      realm:
+        towns:
+          - 196
+          - 192
+  - id: 1432-05-01-trading-posts
+    'on': '1432-05-01'
+    kind: realm
+    what: >-
+      War or no war, the Emperor's merchants build abroad: eight overseas trading posts on the coast of Kaabu,
+      Mali's vassal on the Gambia and the rivers of Guinea, a trade office at Cairo, and new stages of the
+      trade offices at Marrakesh and Sijilmasa. The aim is gold from Mali and spices from the East
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - tiramakhan-mali
+    threads:
+      - towns
+    from:
+      - save
+      - told
+    cite: Trent's account; saves of 1 October 1431 and 1 May 1432
+    detail:
+      overseasTradingPosts:
+        country: Kaabu (KAB), a vassal of Mali
+        towns:
+          - Bafatá
+          - Bintang
+          - Bissau
+          - Cacheu
+          - Casamance
+          - Diaboudior
+          - Gambia
+          - Tankular
+      tradeOffices:
+        Cairo (Mamlūks): new, with 22 stages of construction queued
+        Marrakesh (Morocco): level 3, 9 more stages queued
+        Sijilmasa (Morocco): level 4, 6 more stages queued
+      existing: >-
+        trade offices at Niani and Timbuktu (level 4), Sijilmasa (4), Fez and Marrakesh (3), Meknes (2), and
+        at level 1 in Alexandria, Tunis, Bejaia, Constantinople, Messina, Palermo, Trapani, Pisa and Genoa; an
+        embassy at Cairo
+      aims: gold from Mali and spices from the East (Trent)
+      notBefore: none of the new buildings is in the save of 1 October 1431
+  - id: 1432-05-the-dar-al-sinaa
+    'on': '1432-05-01'
+    kind: realm
+    what: >-
+      The Emperor orders seven arsenals, the dār al-ṣināʿa of the old caliphs, at Ishbīliya, Mālaqa,
+      al-Mariyya, al-Ushbūna, Balansiyya, Cartagena and Mursiyya, and seven war galleys laid down beside them,
+      to build a navy that can match the Genoese fleet
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+    where:
+      - ishbiliyya
+      - malaqa
+      - al-mariyya
+      - al-ushbuna
+      - balansiyya
+      - mursiyya
+    threads:
+      - crusade-of-835
+      - towns
+    from:
+      - save
+      - seen
+      - told
+    cite: Trent's account and screenshot; save of 1 May 1432
+    detail:
+      building: >-
+        Dar al-Sina'a, a naval building: 'a state naval arsenal producing war galleys and merchant vessels,
+        the backbone of Andalusi maritime power' (the game's text)
+      effects: >-
+        navy repair speed +1%, monthly sailors +10, local ship-building speed +15%, ship-building capacity +1,
+        can build ships
+      cost: 400 gold at market; 730 days to build; 3,000 workers; takes lumber, naval supplies, tools and masonry
+      when: under construction in the save of 1 May 1432, none begun in that of 1 October 1431
+      arsenals:
+        - Ishbīliya (Seville)
+        - Mālaqa (Málaga)
+        - al-Mariyya (Almería)
+        - al-Ushbūna (Lisbon)
+        - Balansiyya (Valencia)
+        - Cartagena
+        - Mursiyya (Murcia)
+      galleys: >-
+        seven Andalusī war galleys (the game's n_nd_adu_war_galley), a year each to build, at Lisbon, Murcia,
+        Faro, Orihuela, Málaga, Seville and Almería
+      spent: some 1,760 gold paid for the seven arsenals by 1 May 1432; treasury 1,878 after it
+tellings:
+  - id: 0835-08-29-of-the-trading-posts-of-the-gold-coast-and-the-spice-road
+    'on': '1432-05-01'
+    title: Of the Trading Posts of the Gold Coast, and the Spice Road
+    verse: 106:1-2
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - tiramakhan-mali
+      - ismail-ibn-saad
+    where:
+      - ishbiliyya
+    covers:
+      - 1432-05-01-trading-posts
+      - 1428-06-03-embassy-to-niani
+      - 1432-05-the-dar-al-sinaa
+    text: >
+      A crusade was being fought in the waters of Sardinia, and the Emperor
+      [Muḥammad](person:muhammad-ibn-ismail-ibn-saad) was thinking about the rivers of Guinea. His father
+      [Ismāʿīl](person:ismail-ibn-saad) had sent envoys to Niani and won the Mansa's word that Andalusī
+      merchants would pay no tariff anywhere in Mālī. The son meant to use it. In the spring of 835 the crown
+      began eight trading posts on the coast of Kaabu, the Mansa's vassal on the Gambia and the rivers south
+      of it: at the mouth of the Gambia, at Bintang, on the Casamance and at Diaboudior, at Cacheu and Bissau,
+      and at Bafatá and Tankular. They were stores and wharves more than towns, where the ships that watered
+      at the islands of the Green Cape could load the gold that came down the rivers from the mines of the
+      interior without sending a single caravan across the Ṣaḥrāʾ.
+
+
+      The caravans were not forgotten either. The empire already kept trade offices at Niani and at Timbuktu,
+      at the ports of Ifrīqiya and Sicily, and in the cities of the Marīnids. Now the offices at Marrakesh and
+      at Sijilmasa, where the gold of the desert road came out of the sands, were ordered enlarged again and
+      again, and a new office was opened at Cairo, beside the Emperor's embassy there, with a plan for its
+      growth that ran to more than twenty stages. Cairo was where the pepper, cloves and cinnamon of the
+      Indies came up the Red Sea from the ports of Yemen, and the Emperor wanted the spices of the East to
+      reach Ishbīliya through the hands of his own merchants and those of his Mamlūk allies, with no Venetian
+      or Genoese in between.
+
+
+      The treasurers asked whether this was the time. The fleet had seven arsenals to pay for, and the crusade
+      was not over. The Emperor said that the war would end and the trade would not, and that the Genoese were
+      at war with him for the same reason he was building in Cairo. The empire still kept a trade office in
+      Genoa itself, and he gave no order to close it.
+
+
+      *For the accustomed security of the Quraysh, their accustomed security in the caravan of winter and of
+      summer, let them worship the Lord of this House, who has fed them against hunger and made them safe from
+      fear.*
+  - id: 0835-08-29-of-the-warmongers-name-the-crusade-of-835-and-the-arsenals
+    'on': '1432-05-01'
+    title: Of the Warmonger's Name, the Crusade of 835, and the Arsenals
+    verse: 42:32-33
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - pope-fabrizio-ricci
+      - vukmir-jankovic
+      - khayr-al-din-khayyam
+      - abd-al-wahhab-barakat
+      - rodrigo-de-borja
+      - magdalena-de-borja
+      - ismail-ibn-muhammad-ibn-ismail
+      - diego-sotomaior
+      - saad-ibn-yusuf
+    where:
+      - ishbiliyya
+      - shant-yaqub
+      - malaqa
+      - al-mariyya
+      - al-ushbuna
+      - balansiyya
+      - mursiyya
+    covers:
+      - 1431-06-24-the-warmongers-name
+      - 1431-10-01-the-second-crusade
+      - 1431-10-03-genoa-joins-the-crusade
+      - 1431-11-20-battle-oristano
+      - 1431-11-26-battle-gulf-talamone
+      - 1431-12-05-battle-gulf-talamone
+      - 1431-12-20-battle-coast-lazio
+      - 1431-12-31-battle-tivoli
+      - 1432-01-27-battle-gulf-olbia
+      - 1432-02-01-battle-gulf-orosei
+      - 1432-03-14-battle-corsica-channel
+      - 1432-03-26-battle-pitigliano
+      - 1432-05-the-dar-al-sinaa
+      - 1432-05-01-the-green-cape
+      - 1430-07-15-santiago-falls
+      - 1404-02-01-the-crusade
+    text: >
+      Here begins the Book of the Franks.
+
+
+      For seven hundred years, since the first governors of al-Andalus failed to take a cave in the Asturian
+      hills, there had always been some corner of the peninsula where a Christian king still ruled. After the
+      Peace of Ṣafar there was none. Every town from Finisterre to the Pyrenees belonged to the Emperor or to
+      a lord who owed his throne to him. The courts of Christendom had watched al-Andalus come north for sixty
+      years, one war at a time. Now they had to decide what to do about it, and the answer began with the
+      rubble of Shant Yāqub.
+
+
+      The first sign came from inside the palace. In Shawwāl 834 a pamphlet began to pass from hand to hand at
+      court in [Ishbīliya](place:ishbiliyya). It said that the Emperor
+      [Muḥammad](person:muhammad-ibn-ismail-ibn-saad) was a ruthless warmonger, a man who had destroyed the
+      shrine of an Apostle out of spite and who would drag the realm into war with all of Christendom. No one
+      knew who had written it. The dīwān expected the Emperor to find someone to hang for it, and offered him
+      several names. He refused them all. He had the pamphlet read to him, and he told the dīwān that it was
+      true and that he did not mind who knew it. A man who sold his estates' grain for every dirham it would
+      fetch had never cared to be loved, and a warmonger, he said, was what the Christians called a Muslim who
+      won. The courts of Europe heard of his answer within the month, and they did not take it as a joke.
+
+
+      On 23 Muḥarram 835 (1 October 1431) the Pope at Rome, [Fabrizio Ricci](person:pope-fabrizio-ricci),
+      proclaimed a crusade against al-Andalus, the second to be preached against the empire by name. The
+      first, in 806, had ended with the Emperor [Saʿd](person:saad-ibn-yusuf) in the Pope's own city of
+      Avignon. This Pope was sixty, a careful and hard-working man, and his crusade fell where the first one
+      had. He declared war on the Ṭāʾifa of Arghūn and its king [Rodrigo de Borja](person:rodrigo-de-borja),
+      who was the brother of the Empress [Magdalena](person:magdalena-de-borja) and the uncle of the heir
+      [Ismāʿīl](person:ismail-ibn-muhammad-ibn-ismail), and he named Barbastro as the crusade's prize. The
+      Pope himself held three towns and had thirteen ships and no army. The Church's call brought him
+      Provence, the archbishops of Cologne and Trier, a dozen lords of the German and French lands, and from
+      the far edge of the world Ireland and Iceland. The English king, who now ruled France, did not come. The
+      court said that he had heard what had happened at Avignon.
+
+
+      Every ally of al-Andalus answered on the same day. All eight ṭāʾifas came in, the new Ṭāʾifa of
+      Jillīqiya among them, so that [Diego Sotomaior](person:diego-sotomaior) of Shant Yāqub marched against a
+      crusade preached in revenge for his own city. With them came the Mamlūks of Miṣr and all their vassals
+      from Makka to Suakin, the Marīnids of Fās, and the Ḥafṣids of Tūnis.
+
+
+      Two days later the crusade found its real strength. Genoa joined it, with Siena and Aquileia. Genoa had
+      eleven towns, Corsica and Arborea in Sardinia, a trading colony on the Black Sea, and twenty-four war
+      galleys. Its merchants had been the rivals of the merchants of Ishbīliya on the western sea for as long
+      as the empire had had a fleet. Its doge Raimondo was a clever diplomat who would not trouble the Pope
+      for long if the trade turned against him, but while the war lasted the western sea was no longer the
+      empire's own.
+
+
+      The war that winter was fought far from al-Andalus, and the Emperor's own army never left its camps. The
+      fleets of the Maghrib carried it to Italy. The Ḥafṣids landed men in Sardinia and on the coast of Lazio,
+      within a few days' march of Rome, and won and lost by turns. The Pope had found himself an admiral, a
+      Slav named [Vukmir Janković](person:vukmir-jankovic), and in Rabīʿ al-Awwal and Rabīʿ al-Thānī he showed
+      what one good seaman could do. With six ships he destroyed a squadron of fourteen from Tripoli in the
+      Gulf of Talamone. Then, with fifteen Genoese galleys beside his own, he fell on the fleet of Tūnis off
+      Lazio and sank or took fifteen of its twenty-four ships for the loss of one. That was the high-water
+      mark of the crusade at sea. In Jumādā al-Ūlā the Marīnids came up, and with the ships of Tūnis and Barqa
+      they put a hundred and eighty-five sail into the waters off Sardinia. Nine papal ships that attacked
+      them in the Gulf of Olbia were lost to the last one, and seventeen of Aquileia's twenty-eight in the
+      Gulf of Orosei. In Rajab Vukmir attacked again in the Corsica Channel with the five ships he had left,
+      and lost them all. On land the crusaders had the stranger captain. Their army in Tuscany was led by
+      [Khayr al-Dīn Khayyām](person:khayr-al-din-khayyam), an Andalusī and a Muslim, who sold his company of
+      jinetes to whoever paid. He beat the Tunisians at Tivoli, and in Rajab at Pitigliano the Moroccans broke
+      his army of seventeen thousand with four and a half thousand. The court of Ishbīliya was not sure
+      whether to be ashamed of him or proud.
+
+
+      The Emperor had waited his whole life for a war at sea. The fleets of Fās and Tūnis had won the winter,
+      and he did not mean to owe the next war to them. In Shaʿbān 835 he ordered arsenals built in seven ports
+      of the empire, of the kind the caliphs of Qurṭuba had called the dār al-ṣināʿa, the house of making: at
+      [Ishbīliya](place:ishbiliyya), [Mālaqa](place:malaqa), [al-Mariyya](place:al-mariyya),
+      [al-Ushbūna](place:al-ushbuna), [Balansiyya](place:balansiyya), Cartagena and
+      [Mursiyya](place:mursiyya). The Christians had taken the word along with the thing and called it the
+      arsenal. Each one would take two years to finish, and the treasurers reminded him what seven of them
+      would cost. He signed the orders anyway, and had seven war galleys laid down on the slipways beside them
+      before a single arsenal wall was up. In the same month the four towns of the islands of the Green Cape
+      were made a land of their own, as the dīwān had promised the first settlers, under an Andalusī governor,
+      [ʿAbd al-Wahhāb Barakat](person:abd-al-wahhab-barakat), at Santiago. The Emperor's eyes were on the sea
+      in every direction. The admirals of Ishbīliya said that it was the first time since his accession that
+      they had seen him look happy.
+
+
+      *And of His signs are the ships in the sea, like mountains. If He willed, He could still the wind, and
+      they would remain motionless on its surface. Indeed in that are signs for everyone patient and
+      grateful.*
+    behind: >-
+      The reputation event is from Trent's screenshot of 24 June 1431. The save of 1 October 1431 holds an
+      "embraced antagonism" bias against al-Andalus, so the Emperor embraced the name. The crusade's
+      participants come from that save. Genoa, Siena and Aquileia joining on 3 October, with Genoa's subjects,
+      and the two small actions of November come from the autosave of 1 December 1431, which isn't a
+      checkpoint. The Pope is Fabrice Ricci in the game; the chronicle gives him the Italian form of his name,
+      as the game's own localization does for other languages. The arsenals are Trent's account and his
+      screenshot of the game's Dar al-Sina'a building. The save of 1 May 1432 shows seven under construction
+      (Seville, Málaga, Almería, Lisbon, Valencia, Cartagena and Murcia), about 1,760 gold already paid for
+      them, and seven of the mod's Andalusī war galleys queued at Lisbon, Murcia, Faro, Orihuela, Málaga,
+      Seville and Almería. The same save carries the winter's 23 battles, all fought by allies and subjects,
+      and a war score of 4 in the allies' favour. It also shows Cape Verde made a colonial nation on 1 May
+      1432, which Trent's account doesn't mention. Naval losses in the war tables are in ships; a fraction
+      means ships damaged, not sunk. Khayr al-Dīn Khayyām is a character of the game's mercenary pool,
+      Andalusī and Sunni, commanding the Campagna army.
+
+
+      Invented colour: what the pamphlet said beyond "ruthless warmonger", the names the dīwān offered and the
+      Emperor's reply, Europe hearing of it within the month, the court's reason for the English king staying
+      out, the old rivalry between the merchants of Genoa and Ishbīliya, the doge's readiness to leave the war
+      if trade turned against him, the treasurers' reminder, the admirals' remark, and the court's mixed
+      feelings about Khayr al-Dīn.
+
+
+      The trading posts entry (Book VI) is from Trent's account and the save of 1 May 1432. That save shows
+      eight overseas trading posts under construction in Kaabu, a vassal of Mali, at Bafatá, Bintang, Bissau,
+      Cacheu, Casamance, Diaboudior, Gambia and Tankular. It also shows a new trade office at Cairo with 22
+      construction stages queued, 9 more stages for Marrakesh (level 3) and 6 for Sijilmasa (level 4). None of
+      these is in the save of 1 October 1431. The office in Genoa (level 1) is in both saves. Invented colour:
+      the posts as wharves and stores, the treasurers' question and the Emperor's answer, and his reason for
+      keeping the Genoa office open. The Red Sea route of the spices is history, not the save.

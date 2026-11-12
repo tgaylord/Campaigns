@@ -1,0 +1,661 @@
+date: '1449-08-02'
+title: Corsica and Sardinia Held
+source:
+  save: SP_ADU_1449_08_02 (compressed)
+  game: 1.4.7
+summary: >-
+  From a save. Al-Andalus holds seven Corsican towns (Aleria, Calvi, Corte, Ajaccio, Bonifacio, Sartène, Vico)
+  and five of Arborea's in Sardinia (Oristano, Ales, Sorgono, Terralba, Thiesi); Bastia is under siege. The
+  allies' attacks on Palermo itself have failed four times, and Gabès left the war in December. Aḥmad, lord of
+  Banbalūna, died of camp fever on campaign (18 February 1449) and his son succeeded him. In the Mamlūks' war
+  on the Banū Lām, in which al-Andalus has not fought, the Mamlūk side has lost most of its battles in the
+  Ḥijāz and Najd. Further north, Bohemia's war for the Hungarian throne (from September 1447) has overrun
+  eastern Hungary. Stability 19.3, political influence at its cap of 100, prestige 93; treasury 175. Since
+  October 1447: gunsmiths at Jaén and Santarém, tanneries at Córdoba, masons, scriptoria, distilleries,
+  potteries, a paper mill at Lleida, a bridge at Vielha, and the Jamāʿa's urban seat at al-Ushbūna. Estate
+  power estimated from the reading of 16 November 1428.
+realm:
+  towns: 222
+  souls: 3436016
+  treasury: 175
+  income: 470
+  expenses: 403.3
+  stability: 19.3
+  prestige: 93
+  regiments: 9
+  ships: 87
+  manpower: 28148
+court:
+  ruler: muhammad-ibn-ismail-ibn-saad
+  heir: ismail-ibn-muhammad-ibn-ismail
+  capital: ishbiliyya
+  council:
+    - who: ismail-ibn-muhammad-ibn-ismail
+      seat: Assimilating the new lands
+    - who: ahmad-ibn-muhammad-ibn-ismail
+      seat: Changing the societal values
+    - who: umm-al-fath-bint-muhammad
+      seat: Strengthening the government
+    - who: shams-bint-muhammad
+      seat: Promoting Andalusī culture
+    - who: jadila-bint-saad-ibn-faraj
+      seat: Developing the provinces
+standing:
+  wars:
+    - tunisian-war-for-palermo
+    - mamluk-war-on-lam
+  allies:
+    - Mamluks
+    - Morocco
+    - Tunis
+  subjects:
+    - Aragon (taifa)
+    - Taifa of Cuenca (taifa)
+    - Kingdom of Portugal (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+    - Taifa of Galicia (taifa)
+    - Cape Verde (colonial nation)
+  estates:
+    - name: Crown
+      power: 28.8
+    - name: Nobility
+      power: 18.66
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 13.32
+      mood: 50
+    - name: Burghers
+      power: 24.87
+      mood: 56
+    - name: Commoners
+      power: 3.15
+      mood: 54
+    - name: Dhimmī
+      power: 11.2
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 1129587
+    Catalan: 770884
+    Portuguese: 543391
+    Castilian: 523814
+    Sephardi: 223497
+    Leonese: 177958
+  faiths:
+    Sunni: 2087024
+    Catholic: 1120995
+    Jewish: 199126
+    Guanche_religion: 27580
+    Bori_Religion: 583
+map:
+  ours:
+    - GRA
+  subjects:
+    - ARA
+    - ABA60
+    - POR
+    - ABA42
+    - ABA49
+    - ABA55
+    - GLC
+    - AAA52
+  allies:
+    - MAM
+    - MOR
+    - TUN
+beats:
+  - id: 1449-02-10-battle-salemi
+    'on': '1449-02-10'
+    kind: battle
+    what: 'At Salemi, Sicily (8,436 men) attacks Tunis (170), who are beaten: 170 lost against 0'
+    minor: true
+    threads:
+      - tunisian-war-for-palermo
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Tunis: 170
+      oursTotal: 170
+      oursLost: 170
+      theirs:
+        Sicily: 8436
+      theirsTotal: 8436
+      theirsLost: 0
+      location: Salemi
+      side: enemy attacking
+      commanders:
+        ours: Al-Fadl#91991
+        theirs: Peter#16802169
+  - id: 1449-02-18-battle-al-ajfar
+    'on': '1449-02-18'
+    kind: battle
+    what: 'At al-Ajfar, Lām (4,041 men) attacks ABA52 (821), who are beaten: 821 lost against 41'
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        ABA52: 821
+      oursTotal: 821
+      oursLost: 821
+      theirs:
+        Lām: 4041
+      theirsTotal: 4041
+      theirsLost: 41
+      location: al-Ajfar
+      side: enemy attacking
+      commanders:
+        ours: Aghlab#91413
+        theirs: Aram#33609309
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1449-02-18-death-of-ahmad-of-banbaluna
+    'on': '1449-02-18'
+    kind: death
+    what: >-
+      Aḥmad ibn Yūsuf, lord of Banbalūna, dies of camp fever on campaign at fifty-three, sixteen months after
+      Grasse. His son Abū al-Ḥasan ʿAlī succeeds him
+    who:
+      - ahmad-ibn-yusuf-ibn-ismail
+      - abu-al-hasan-ali-of-banbaluna
+    threads:
+      - tunisian-war-for-palermo
+      - house
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      cause: camp fever (the save's 'camp')
+      command: general again from 1 January 1448 until his death
+      successor: Abū al-Ḥasan ʿAlī, born 16 February 1417
+  - id: 1449-02-26-battle-toulon
+    'on': '1449-02-26'
+    kind: battle
+    what: >-
+      At Toulon, Genoa and Dignois and Cuneo (17,069 men) attack Taifa of Pamplona (281), who are beaten: 281
+      lost against 0
+    minor: true
+    threads:
+      - tunisian-war-for-palermo
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Taifa of Pamplona: 281
+      oursTotal: 281
+      oursLost: 281
+      theirs:
+        Genoa: 16635
+        Dignois: 36
+        Cuneo: 398
+      theirsTotal: 17069
+      theirsLost: 0
+      location: Toulon
+      side: enemy attacking
+      commanders:
+        ours: Ogier#16861014
+        theirs: Julius Caesar#16801655
+  - id: 1449-03-11-battle-al-hegrieah
+    'on': '1449-03-11'
+    kind: battle
+    what: 'At al-Hegrieah, Lām (6,084 men) attacks Medina (26), who are beaten: 26 lost against 0'
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Medina: 26
+      oursTotal: 26
+      oursLost: 26
+      theirs:
+        Lām: 6084
+      theirsTotal: 6084
+      theirsLost: 0
+      location: al-Hegrieah
+      side: enemy attacking
+      commanders:
+        ours: Khayr Al Din#16802361
+        theirs: Muzaffar Al Din#80721
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1449-03-30-battle-toulon
+    'on': '1449-03-30'
+    kind: battle
+    what: >-
+      At Toulon, Taifa of Pamplona (500 men) attacks Genoa and Dignois and Cuneo and Corsica (18,108) and are
+      beaten: 200 lost against 0
+    minor: true
+    threads:
+      - tunisian-war-for-palermo
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Taifa of Pamplona: 500
+      oursTotal: 500
+      oursLost: 200
+      theirs:
+        Genoa: 16608
+        Dignois: 36
+        Cuneo: 398
+        Corsica: 1066
+      theirsTotal: 18108
+      theirsLost: 0
+      location: Toulon
+      side: allies attacking
+      commanders:
+        ours: Anthony#16829913
+        theirs: Julius Caesar#16801655
+  - id: 1449-04-03-battle-al-muthainiyah
+    'on': '1449-04-03'
+    kind: battle
+    what: 'At al-Muthainiyah, Medina and Mecca (1,719 men) attack Otaibah (450) and win: 209 lost against 338'
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      result: allied victory
+      naval: false
+      ours:
+        Medina: 782
+        Mecca: 937
+      oursTotal: 1719
+      oursLost: 209
+      theirs:
+        Otaibah: 450
+      theirsTotal: 450
+      theirsLost: 338
+      location: al-Muthainiyah
+      side: allies attacking
+      commanders:
+        ours: Sadiq#16794381
+        theirs: Muslih Al Din#33575422
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1449-04-08-battle-ash-shamli
+    'on': '1449-04-08'
+    kind: battle
+    what: 'At ash-Shamli, Lām (3,999 men) attacks Hutaym (273), who are beaten: 273 lost against 0'
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Hutaym: 273
+      oursTotal: 273
+      oursLost: 273
+      theirs:
+        Lām: 3999
+      theirsTotal: 3999
+      theirsLost: 0
+      location: ash-Shamli
+      side: enemy attacking
+      commanders:
+        ours: Alim#80177
+        theirs: Aram#33609309
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1449-04-09-battle-palermo
+    'on': '1449-04-09'
+    kind: battle
+    what: 'At Palermo, Kingdom of Portugal (429 men) attacks Sicily (8,436) and are beaten: 172 lost against 0'
+    minor: true
+    threads:
+      - tunisian-war-for-palermo
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Kingdom of Portugal: 429
+      oursTotal: 429
+      oursLost: 172
+      theirs:
+        Sicily: 8436
+      theirsTotal: 8436
+      theirsLost: 0
+      location: Palermo
+      side: allies attacking
+      commanders:
+        ours: Roderick#16848370
+        theirs: Peter#16802169
+  - id: 1449-04-15-battle-barahrah
+    'on': '1449-04-15'
+    kind: battle
+    what: 'At Barahrah, Lām (3,433 men) attacks Mecca (7), who are beaten: 7 lost against 0'
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Mecca: 7
+      oursTotal: 7
+      oursLost: 7
+      theirs:
+        Lām: 3433
+      theirsTotal: 3433
+      theirsLost: 0
+      location: Barahrah
+      side: enemy attacking
+      commanders:
+        ours: Nizam#16794585
+        theirs: Abd Al Wahhab#16860694
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1449-04-15-battle-qudayd
+    'on': '1449-04-15'
+    kind: battle
+    what: 'At Qudayd, Otaibah (3,597 men) attacks Medina (646), who are beaten: 646 lost against 57'
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Medina: 646
+      oursTotal: 646
+      oursLost: 646
+      theirs:
+        Otaibah: 3597
+      theirsTotal: 3597
+      theirsLost: 57
+      location: Qudayd
+      side: enemy attacking
+      commanders:
+        ours: Zayd#16832959
+        theirs: Bahir#16848506
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1449-04-16-battle-al-mahani
+    'on': '1449-04-16'
+    kind: battle
+    what: 'At al-Mahani, Dawasir (1,983 men) attacks Mecca (864), who are beaten: 70 lost against 17'
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Mecca: 864
+      oursTotal: 864
+      oursLost: 70
+      theirs:
+        Dawasir: 1983
+      theirsTotal: 1983
+      theirsLost: 17
+      location: al-Mahani
+      side: enemy attacking
+      commanders:
+        ours: Sadiq#16794381
+        theirs: Abdullah#16801356
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1449-04-16-battle-ash-shamli
+    'on': '1449-04-16'
+    kind: battle
+    what: 'At ash-Shamli, Al Mira (3,687 men) attacks Lām (3,999) and win: 1,230 lost against 149'
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      result: allied victory
+      naval: false
+      ours:
+        Al Mira: 3687
+      oursTotal: 3687
+      oursLost: 1230
+      theirs:
+        Lām: 3999
+      theirsTotal: 3999
+      theirsLost: 149
+      location: ash-Shamli
+      side: allies attacking
+      commanders:
+        ours: Alacan#16812846
+        theirs: Aram#33609309
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1449-04-23-birth-of-aram-ibn-yusuf
+    'on': '1449-04-23'
+    kind: birth
+    what: A son, Āram, is born to the prince Yūsuf and Amie of Mālī
+    who:
+      - yusuf-ibn-ismail-ibn-muhammad
+      - amie-of-mali
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      name: Aram, as the save has it
+      others: >-
+        in 1447–1449 the house also gained Zaynab (25 October 1447) and Abū al-Ḥasan ʿAlī (11 June 1449),
+        children of the heir's daughter Shams; Saʿd (16 December 1447), son of the prince Aḥmad's son
+        Muḥammad; and a dozen other children of the house
+  - id: 1449-04-26-battle-gulf-genoa
+    'on': '1449-04-26'
+    kind: battle
+    what: 'At Gulf of Genoa, Taifa of Burgos (3 ships) attacks Genoa (1) and win: 0 lost against 1'
+    minor: true
+    threads:
+      - tunisian-war-for-palermo
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      result: allied victory
+      naval: true
+      ours:
+        Taifa of Burgos: 3
+      oursTotal: 3
+      oursLost: 0
+      theirs:
+        Genoa: 1
+      theirsTotal: 1
+      theirsLost: 1
+      location: Gulf of Genoa
+      side: allies attacking
+      units: ships
+      commanders:
+        ours: Pelagius#90130
+        theirs: Baptiste#90935
+  - id: 1449-04-28-battle-taif
+    'on': '1449-04-28'
+    kind: battle
+    what: 'At al-Ṭāʾif, Mecca (794 men) attacks Dawasir (1,961) and are beaten: 794 lost against 3'
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Mecca: 794
+      oursTotal: 794
+      oursLost: 794
+      theirs:
+        Dawasir: 1961
+      theirsTotal: 1961
+      theirsLost: 3
+      location: al-Ṭāʾif
+      side: allies attacking
+      commanders:
+        ours: Sadiq#16794381
+        theirs: Abdullah#16801356
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1449-05-05-battle-angelokastron
+    'on': '1449-05-05'
+    kind: battle
+    what: >-
+      At Angelokastron, Athens and Negroponte (9,837 men) attack Tunis (330), who are beaten: 211 lost against
+      0
+    minor: true
+    threads:
+      - tunisian-war-for-palermo
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Tunis: 330
+      oursTotal: 330
+      oursLost: 211
+      theirs:
+        Athens: 7555
+        Negroponte: 2282
+      theirsTotal: 9837
+      theirsLost: 0
+      location: Angelokastron
+      side: enemy attacking
+      commanders:
+        ours: Ali#16804056
+        theirs: Nicetas#16840896
+  - id: 1449-05-10-battle-ash-shamli
+    'on': '1449-05-10'
+    kind: battle
+    what: 'At ash-Shamli, Lām (3,848 men) attacks Al Mira (2,456), who are beaten: 1,272 lost against 348'
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Al Mira: 2456
+      oursTotal: 2456
+      oursLost: 1272
+      theirs:
+        Lām: 3848
+      theirsTotal: 3848
+      theirsLost: 348
+      location: ash-Shamli
+      side: enemy attacking
+      commanders:
+        ours: Alacan#16812846
+        theirs: Aram#33609309
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1449-06-10-battle-ash-shamli-tayma-corridor
+    'on': '1449-06-10'
+    kind: battle
+    what: >-
+      In the ash-Shamli–Tayma corridor 3,497 men of Lām attack the Mamlūk army, 24,021 strong, and carry the
+      field, though they lose 1,221 to the Mamlūks' 836
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Al ʿAlī: 1226
+        Mamluks: 22795
+      oursTotal: 24021
+      oursLost: 836
+      theirs:
+        Lām: 3497
+      theirsTotal: 3497
+      theirsLost: 1221
+      location: ash-Shamli–Tayma corridor
+      side: enemy attacking
+      commanders:
+        ours: Abu Bakr#50350471
+        theirs: Aram#33609309
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought
+  - id: 1449-06-30-corsica-overrun
+    'on': '1449-06-30'
+    kind: note
+    what: >-
+      The army has crossed from Sardinia to Corsica, taken Ajaccio and laid siege to the fortress of Bastia;
+      the rest of the island is occupied. Sardinia and Corsica are on the brink, and the court looks next to
+      Genoa's mainland or to Sicily
+    who:
+      - abu-al-hasan-ali-ibn-ahmad
+    threads:
+      - tunisian-war-for-palermo
+    from:
+      - save
+      - told
+    cite: Trent's account (12 November 2026); save of 2 August 1449
+    detail:
+      occupied (save of 2 August 1449): >-
+        Corsica: Aleria, Calvi, Corte, Ajaccio, Bonifacio, Sartène, Vico; Arborea: Oristano, Ales, Sorgono,
+        Terralba, Thiesi
+  - id: 1449-07-06-battle-khulays
+    'on': '1449-07-06'
+    kind: battle
+    what: 'At Khulays, Lām (3,433 men) attacks Al Mira (1,182), who are beaten: 1,182 lost against 0'
+    minor: true
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 2 August 1449
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Al Mira: 1182
+      oursTotal: 1182
+      oursLost: 1182
+      theirs:
+        Lām: 3433
+      theirsTotal: 3433
+      theirsLost: 0
+      location: Khulays
+      side: enemy attacking
+      commanders:
+        ours: Alacan#16812846
+        theirs: Abd Al Wahhab#16860694
+      note: a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought

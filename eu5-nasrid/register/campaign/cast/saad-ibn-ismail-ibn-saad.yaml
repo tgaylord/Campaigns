@@ -1,0 +1,29 @@
+name: Saʿd ibn Ismāʿīl ibn Saʿd
+arabic: سعد بن إسماعيل
+house: Naṣrid
+tier: key
+born: '1392-06-17'
+died: '1443-09-03'
+father: ismail-ibn-saad
+mother: aisha-ottoman
+stations:
+  - role: general
+    from: '1441-09-02'
+    to: '1442-01-11'
+    source: save
+    approx: false
+note: >-
+  Second son of the crown prince Ismāʿīl, by the Ottoman princess ʿĀʾisha; born 17 June 1392. Intelligent and
+  studious, and given the costly in-depth education of the heirs (Trent's account; save of 3 September 1398).
+  In 1398 the Emperor leaves the succession law as it stands, watching whether this Saʿd grows into a worthy
+  ruler; if not, he means to choose an heir himself (Trent). At eleven, in July 1403, he stood at 56/35/36,
+  still intelligent and on the in-depth education (save of 18 July 1403). At twelve, in March 1405, he stood
+  at 70/37/45, second in line behind his elder brother Muḥammad when their father became Emperor (save of 31
+  March 1405). By August 1408, at sixteen, he stood at 83/43/61 and was married to his cousin Maryam bint
+  Saʿd, Shaykha of Qūnka, the Emperor's niece; his children, as Trent put it, will rule the frontier. Behind
+  his brother Muḥammad and Muḥammad's sons he is no longer the answer to the succession (Trent's account; save
+  of 5 August 1408). His first son, Abū al-Ḥasan ʿAlī, was born to Maryam on 17 April 1410 (save of 29 June
+  1410). He died on 3 September 1443, aged fifty-one (autosave of 1 February 1447).
+game:
+  id: 16792888
+  name: Saad

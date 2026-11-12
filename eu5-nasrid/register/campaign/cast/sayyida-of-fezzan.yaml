@@ -1,0 +1,50 @@
+name: Sayyida of Fezzan
+arabic: سيدة
+sex: f
+house: Murzuq
+tier: central
+born: '1328-10-27'
+died: '1380-11-19'
+roles:
+  - wife of Yūsuf I
+  - in the dīwān
+traits:
+  - child_gregarious
+drives:
+  - from: '1344-10-01'
+    text: Her marriage to Yūsuf helps bring about the royal harem law.
+    by: trent
+    source: Trent's account, 1344
+  - from: '1354-08-12'
+    text: The matriarch of the house, who never forgives the Marīnid wife Yūsuf brings home.
+    by: trent
+    source: Trent's direction, November 2026
+  - from: '1364-01-18'
+    text: 'Her son marries her late husband''s widow: the matriarch and Duʿāʾ now share a court and a son''s ear.'
+    by: trent
+    source: Trent's direction, November 2026
+  - from: '1373-01-16'
+    text: Sits in her son's dīwān beside Duʿāʾ, keeping the court Andalusī and keeping watch on her.
+    by: trent
+    source: Trent's direction; save of 16 January 1373
+  - from: '1378-03-08'
+    text: Turns to the realm's diplomacy in the dīwān in her last years.
+    by: chronicle
+    source: save of 6 April 1378
+stations:
+  - role: dīwān
+    from: '1373-12-01'
+    to: '1394-03-04'
+    source: checkpoints
+    approx: true
+note: >-
+  Daughter of the ruler of Fezzan, of the house of Murzuq. Betrothed to Yūsuf on 16 November 1337, aged nine.
+  Her father's name is the game's (name_salmama); its proper form is unconfirmed. Married to Yūsuf I while the
+  Jamāʿa of 1344 sat (Trent's account), a marriage that helped inspire the royal harem law of that October.
+  Mother of Sultan Saʿd, Ismāʿīl and Jadīla. By January 1373 she sat in her son's dīwān, promoting Andalusī
+  culture beside Duʿā (save of 16 January 1373). From 8 March 1378 she worked in the dīwān on the realm's
+  diplomatic endeavours (save of 6 April 1378). She died on 19 November 1380, aged fifty-two (save of 8
+  December 1382).
+game:
+  id: 15115
+  name: Sayyida

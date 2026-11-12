@@ -1,0 +1,33 @@
+name: Aqṭāy
+arabic: أقطاي
+house: Mamlūk
+tier: key
+born: '1375-07-18'
+died: '1432-10-16'
+father: bolot-mamluk
+roles:
+  - Mamlūk sultan of Egypt (from 1396)
+traits:
+  - inspiring_leader
+  - worldly
+stations:
+  - role: admiral
+    from: '1393-08-22'
+    to: '1429-08-22'
+    source: save
+    approx: false
+  - role: general
+    from: '1431-11-02'
+    to: '1432-10-16'
+    source: save
+    approx: false
+note: >-
+  Son of the sultan Būlād, whom he succeeded on 16 June 1396. Al-Andalus's one ally in the East since 1367. In
+  1420 he ruled 191 towns from Cairo and 103 more through vassals from the Ḥijāz to the Taurus, ninth in the
+  world; Hungary, the Ottomans and the Tīmūrids are his rivals. His heir is his son Jyral, born 30 December
+  1401 (world file of 11 August 1420). His daughter Ayaulym married the Emperor's grandson Ismāʿīl by 1422. On
+  19 September 1423 he went to war with the Ottomans and called al-Andalus to arms; the peace of 8 August 1424
+  gave him 37 towns of central Anatolia (saves of 1423 and 1424).
+game:
+  id: 63037
+  name: Aktai

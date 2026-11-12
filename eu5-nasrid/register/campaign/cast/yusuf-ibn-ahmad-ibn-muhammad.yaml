@@ -1,0 +1,13 @@
+name: Yūsuf ibn Aḥmad ibn Muḥammad
+arabic: يوسف بن أحمد بن محمد
+house: Naṣrid
+born: '1433-08-14'
+father: ahmad-ibn-muhammad-ibn-ismail
+traits:
+  - child_prodigy
+note: >-
+  Son of Prince Aḥmad by Dīma, born at Ishbīliya on 14 August 1433. One of the nine grandchildren born to the
+  Emperor Muḥammad in the first years of his reign. A prodigy as a child. (save of 11 June 1442)
+game:
+  id: 16807215
+  name: Joseph

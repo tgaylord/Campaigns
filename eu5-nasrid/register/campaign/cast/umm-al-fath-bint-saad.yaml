@@ -1,0 +1,26 @@
+name: Umm al-Fatḥ bint Saʿd
+arabic: أم الفتح بنت سعد
+sex: f
+house: Naṣrid
+tier: key
+born: '1364-12-13'
+died: '1416-03-25'
+father: saad-ibn-yusuf
+mother: aiman-mamluk
+stations:
+  - role: dīwān
+    from: '1389-01-04'
+    to: '1416-03-25'
+    source: save
+    approx: false
+note: >-
+  First child of Sultan Saʿd, born to Aiman the Mamlūk three months after the Portuguese peace. She shares her
+  name, 'mother of victory', with her aunt, Yūsuf I's youngest daughter. By January 1394 she sat in the dīwān,
+  in Duʿā's old seat, integrating the new lands (saves of 1394). She is married to her cousin Saʿd ibn Faraj,
+  who on 5 August 1395 became ruler of the Ṭāʾifa of Qūnka (save of 5 August 1395). Widowed on 20 February
+  1408, when Saʿd ibn Faraj died; their daughter Maryam succeeded him in Qūnka. From 24 August 1405 she was
+  integrating the lands won back from the risings (save of 5 August 1408). She died on 25 March 1416, at
+  fifty-one, still in the dīwān (save of 11 August 1420).
+game:
+  id: 52696
+  name: Umm al-Fath

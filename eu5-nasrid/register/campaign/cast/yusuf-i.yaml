@@ -1,0 +1,93 @@
+name: Yūsuf I
+arabic: يوسف الأول
+house: Naṣrid
+tier: central
+born: '1318-06-29'
+died: '1363-08-01'
+father: ismail-i
+mother: bahar
+reigns:
+  - from: '1333-08-25'
+    to: '1363-08-01'
+roles:
+  - commander of the army
+  - sultan
+traits:
+  - architectural_visionary
+  - scarred
+  - fierce_negotiator
+  - battlefield_medic
+  - hajji
+  - benevolent
+drives:
+  - from: '1337-04-01'
+    text: >-
+      A young sultan, tributary to Qashtāla and in debt, who means to put the state in order before he risks
+      it in war.
+    by: chronicle
+    source: Book I, The Mending of the State
+  - from: '1339-05-24'
+    text: Means to reclaim from Arghūn what belongs to al-Andalus, and makes his first war in his own name.
+    by: trent
+    source: Trent's account, May 1339
+  - from: '1339-09-02'
+    text: >-
+      Takes the Volunteers of the Faith into his pay against the dīwān's warning: an army now, the treasury
+      later.
+    by: chronicle
+    source: Of the First Blood at Jumalla
+  - from: '1343-01-27'
+    text: 'Pays down the debt to the estates loan by loan: the state mended before it is risked.'
+    by: chronicle
+    source: Of the Lean Years, the Gold of Tūnis, and the Royal Decree
+  - from: '1346-08-01'
+    text: >-
+      Keeps Granada alive on the scales between the three crowns and the Marīnids, negotiating where he cannot
+      fight.
+    by: chronicle
+    source: Book II, The Balance; traits fierce negotiator
+  - from: '1348-07-01'
+    text: 'The healer and builder: through the Pestilence he founds houses of healing and keeps building.'
+    by: chronicle
+    source: traits battlefield medic, architectural visionary
+  - from: '1351-08-09'
+    text: Makes the Ḥajj and leaves his brother Faraj to hold the throne.
+    by: chronicle
+    source: Of the Royal Ḥajj
+ties:
+  - with: alfonso-xi
+    kind: rival
+    from: '1337-04-01'
+    to: '1363-08-01'
+    text: The Castilian overlord to whom Gharnāṭa paid tribute, his rival for the whole of his reign.
+    by: chronicle
+  - with: yahya-rahhu
+    kind: ally
+    from: '1339-09-02'
+    to: '1355-02-18'
+    text: The kingmaker he took into his pay against the dīwān's warning.
+    by: chronicle
+  - with: ibn-al-khatib
+    kind: ally
+    from: '1339-05-24'
+    to: '1341-07-08'
+    text: His ablest man, given the host against Arghūn.
+    by: trent
+  - with: ibn-al-khatib
+    kind: rival
+    from: '1341-07-08'
+    text: Gone over to Qashtāla.
+    by: chronicle
+stations:
+  - role: general
+    from: '1352-08-23'
+    to: '1363-08-01'
+    source: save
+    approx: false
+note: >-
+  Died on 1 August 1363 at Ayamonte, on the march into Portugal in the War of Independence, aged 45, after a
+  reign of thirty years. Father of Saʿd, Ismāʿīl, Abū al-Ḥasan ʿAlī, Muḥammad, Jadīla, Maryam, Fāṭima, ʿĀʾisha
+  and Umm al-Fatḥ.
+game:
+  id: 3537
+  name: Yusuf

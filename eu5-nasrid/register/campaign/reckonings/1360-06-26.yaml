@@ -1,0 +1,236 @@
+date: '1360-06-26'
+title: The Marīnids demand submission
+source:
+  save: SP_GRA_1360_06_26 (compressed)
+  game: 1.4.5
+summary: >-
+  Morocco declares war on Granada itself, under the Strait's casus belli to demand Andalusī submission, with
+  Tlemcen, Tafilalt and Touat beside it; Qashtāla defends its tributary and Portugal comes in with Qashtāla,
+  though Qashtāla has almost no men left after its war in Arghūn. Granadan sovereignty stands at 100. Khālid
+  Raḥḥū sits in the dīwān. Shares of power are estimated from the 1 June 1349 reading.
+realm:
+  towns: 43
+  souls: 625383
+  treasury: 179
+  income: 68.6
+  expenses: 50.3
+  stability: 29.2
+  prestige: 37
+  regiments: 5
+  ships: 5
+  manpower: 2311
+court:
+  ruler: yusuf-i
+  heir: saad-ibn-yusuf
+  capital: gharnata
+  council:
+    - who: dua-marinid
+      seat: Integrating the new lands
+    - who: khalid-ibn-yahya
+      seat: Promoting Andalusī culture
+standing:
+  wars:
+    - marinid-submission-war
+  allies:
+    - Mamluks
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+  estates:
+    - name: Crown
+      power: 36.69
+    - name: Nobility
+      power: 23.37
+      mood: 47
+    - name: ʿUlamāʾ
+      power: 6.03
+      mood: 50
+    - name: Burghers
+      power: 11.26
+      mood: 59
+    - name: Commoners
+      power: 4.2
+      mood: 57
+    - name: Dhimmī
+      power: 18.44
+      mood: 90
+peoples:
+  cultures:
+    Andalusi: 302717
+    Castilian: 284803
+    Sephardi: 28804
+    Mustaarabi: 4032
+    Sardinian: 1945
+    Catalan: 836
+  faiths:
+    Sunni: 299050
+    Catholic: 292959
+    Jewish: 32495
+    Bori_Religion: 660
+    Nyama: 220
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+  allies:
+    - MAM
+beats:
+  - id: 1359-ismail-to-aydin
+    'on': '1359-03-20'
+    kind: marriage
+    what: >-
+      Ismāʿīl ibn Ismāʿīl, the amir's brother and his minister, marries his Aydınid bride and goes to live at
+      her father's court in Anatolia. After Faraj, it is the second brother of the amir to leave Gharnāṭa by
+      marriage, and the court whispers that the harem prefers the throne to have no grown brothers about it
+    who:
+      - ismail-ibn-ismail
+      - yusuf-i
+    threads:
+      - house
+    from:
+      - told
+    cite: >-
+      Trent's account (about March 1359); the harem as the cause is the chronicle's reading, at Trent's
+      direction
+    detail:
+      with: AYD
+      betrothed: '1354-03-16'
+      residence: Aydın
+      cabinetSeatVacated: true
+  - id: 1359-04-khalid-council
+    'on': '1359-04-02'
+    kind: office
+    what: >-
+      Ismāʿīl's empty seat in the dīwān goes to Khālid Raḥḥū, son of the late general Yaḥyā Raḥḥū and of
+      Qamar, at sixteen, to promote Andalusī culture in the new lands. The amir would have given it to
+      Sayyida, his first wife, but it was not to be
+    who:
+      - khalid-ibn-yahya
+      - sayyida-of-fezzan
+    from:
+      - save
+      - told
+    cite: save of 26 June 1360 (cabinet action since 2 April 1359); Trent's account
+    detail:
+      replaces: ismail-ibn-ismail
+      action: promote_culture
+  - id: 1359-07-01-funduq
+    'on': '1359-07-01'
+    kind: realm
+    what: >-
+      The New Caravanserai: at the merchants' pressing, above all the Italians who carry the better part of
+      the realm's trade, the amir has a funduq built beside the silk market, a walled inn where wares are kept
+      under lock and traders lodged under guard. The burghers are delighted, and the trade of Gharnāṭa and
+      Qurṭuba flows more freely
+    who:
+      - yusuf-i
+    where:
+      - malaqa
+      - gharnata
+      - qurtuba
+    threads:
+      - towns
+    from:
+      - seen
+    cite: Trent's screenshot of the event, with the option's tooltip open
+    detail:
+      event: The New Caravanserai
+      choice: Build it, and let the trade flow through our gates.
+      cost: 44.4
+      building: funduq
+      location: malaqa (per the tooltip)
+      burghersSatisfaction: +20%
+      modifier:
+        name: Trade Infrastructure
+        years: 20
+        locations:
+          - granada
+          - cordoba
+        localTradeCapacity: 5
+        marketAccess: +25%
+        burghersUnrest: -10%
+      historical: al-Funduq al-Jadīda (the Corral del Carbón) in Granada, held by the wives of the Naṣrid sultans
+  - id: 1359-07-01-spies
+    'on': '1359-07-01'
+    kind: world
+    what: >-
+      The dīwān is building a network of spies, while a Castilian army of 6,000, with 500 Portuguese,
+      campaigns toward Arghūn
+    from:
+      - seen
+    cite: Trent's screenshot, 1 July 1359
+    detail:
+      castileArmy: 6056
+      portugalArmy: 500
+  - id: 1360-06-26-chance-lost
+    'on': '1360-06-26'
+    kind: note
+    what: >-
+      The court's bitterness: Qashtāla and Portugal had bled in Arghūn (their losses reckoned at 10,000 and
+      30,000) and lay open to a war of independence. Instead Gharnāṭa must spend its own men throwing back the
+      Marīnids until Qashtāla can send its levies south
+    who:
+      - yusuf-i
+    threads:
+      - marinid-submission-war
+    from:
+      - told
+    cite: Trent's account
+    detail:
+      castilePortugalLossesInAragon: 10k/30k (Trent's figures)
+  - id: 1360-06-26-marinid-war
+    'on': '1360-06-26'
+    kind: war
+    what: >-
+      The Marīnids declare war on Gharnāṭa itself, demanding its submission as their subject, with Tilimsān,
+      Tāfīlālt and Tuwāt beside them. Qashtāla takes the field to defend its tributary, and Portugal with it.
+      It comes a year before the court meant to seek the Marīnids' alliance for a war of independence, and
+      with relations between the two courts at their warmest
+    who:
+      - yusuf-i
+    threads:
+      - marinid-submission-war
+    from:
+      - save
+      - seen
+      - told
+    cite: save of 26 June 1360; Trent's screenshot and account
+    detail:
+      casusBelli: cb_demand_andalusi_submission
+      attackers:
+        - MOR
+        - TLE
+        - TFL
+        - TAT
+      defenders:
+        - GRA
+        - CAS
+        - POR
+      relationsWithMorocco: 150
+      manpower:
+        GRA:
+          - 2311
+          - 6506
+        CAS:
+          - 87
+          - 3289
+        POR:
+          - 4276
+          - 4259
+        MOR:
+          - 2171
+          - 2490
+  - id: 1360-06-26-state
+    'on': '1360-06-26'
+    kind: land
+    what: Granadan sovereignty reaches 100, the full measure; influence −3.1, tipping just toward Qashtāla
+    threads:
+      - strait
+    from:
+      - save
+    cite: save of 26 June 1360
+    detail:
+      sovereignty: 100
+      influence: -3.07

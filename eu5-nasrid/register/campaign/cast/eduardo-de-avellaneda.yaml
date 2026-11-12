@@ -1,0 +1,18 @@
+name: Eduardo de Avellaneda
+roles:
+  - rebel lord of Zamora (1420)
+traits:
+  - defensive_planner
+stations:
+  - role: general
+    from: '1440-10-24'
+    to: '1440-11-13'
+    source: save
+    approx: false
+note: >-
+  A Castilian Catholic noble who led the rising of the province of Zamora against the Ṭāʾifa of Liyūn on 1
+  June 1420. The Emperor Ismāʿīl destroyed his 370 men at Fermoselle on 10 August 1420 without the loss of a
+  man (save of 11 August 1420).
+game:
+  id: 33578486
+  name: Edward de Avellaneda

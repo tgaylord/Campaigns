@@ -1,0 +1,25 @@
+name: Francesc de Montsoriu
+house: de Montsoriu
+tier: key
+born: '1342-05-10'
+died: '1394-03-20'
+roles:
+  - ḥājib of the Ṭāʾifa of Qaṭalūniya
+stations:
+  - role: general
+    from: '1389-02-09'
+    to: '1390-07-04'
+    source: save
+    approx: false
+  - role: admiral
+    from: '1390-11-01'
+    to: '1394-03-20'
+    source: save
+    approx: false
+note: >-
+  A Catalan, Sunni, first ruler of the Ṭāʾifa of Catalonia, the ḥājib in the court's word, carved from the
+  conquered lands of Aragon around Barcelona on 16 March 1375. On 15 April 1375 he married the Emperor's
+  sister Fāṭima bint Yūsuf (save of 5 June 1375; Trent's account). Died 1394-03-20 (save of 24 October 1414).
+game:
+  id: 16788597
+  name: Francesc

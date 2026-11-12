@@ -1,0 +1,485 @@
+date: '1379-12-02'
+title: The Capital at Ishbīliya
+source:
+  save: SP_ADU_1379_12_02 (compressed)
+  game: 1.4.6
+summary: >-
+  By the end of November 1379 the capital has moved from Gharnāṭa to Ishbīliya, decided by the Jamāʿa in
+  April. New roads tie the city to Sharīsh, Mālaqa, Baṭalyaws and Ṭulayṭula, paid for with five loans from the
+  estates (565 in all); seven stretches are finished. The crown's grip on Seville has risen from 60% to 67%;
+  it will take years to spread. The whole dīwān is integrating the new lands. The game recorded no historical
+  capital at Gharnāṭa. Shares of power are estimated from the 1 June 1349 reading.
+realm:
+  towns: 118
+  souls: 1293827
+  treasury: 50
+  income: 101.4
+  expenses: 93.2
+  debt: 565
+  stability: 38.3
+  prestige: 63
+  regiments: 9
+  ships: 4
+  manpower: 3499
+court:
+  ruler: saad-ibn-yusuf
+  heir: ismail-ibn-saad
+  capital: ishbiliyya
+  council:
+    - who: dua-marinid
+      seat: Integrating the new lands
+    - who: sayyida-of-fezzan
+      seat: Integrating the new lands
+    - who: maryam-bint-yusuf
+      seat: Integrating the new lands
+standing:
+  allies:
+    - Mamluks
+    - Morocco
+  subjects:
+    - Valencia (taifa)
+    - Taifa of the Algarve (taifa)
+    - Catalonia (taifa)
+    - Aragon (taifa)
+  estates:
+    - name: Crown
+      power: 29.47
+    - name: Nobility
+      power: 27.51
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 8.69
+      mood: 50
+    - name: Burghers
+      power: 9.43
+      mood: 50
+    - name: Commoners
+      power: 4.36
+      mood: 50
+    - name: Dhimmī
+      power: 20.54
+      mood: 50
+peoples:
+  cultures:
+    Castilian: 677054
+    Andalusi: 478913
+    Sephardi: 73064
+    Leonese: 53980
+    Mustaarabi: 3991
+    Sardinian: 2528
+  faiths:
+    Catholic: 706041
+    Sunni: 512643
+    Jewish: 74350
+    Bori_Religion: 540
+    Nyama: 253
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - ALV
+    - CAT
+    - ARA
+  allies:
+    - MAM
+    - MOR
+beats:
+  - id: 1378-05-01-gem-of-iberia
+    'on': '1378-05-01'
+    kind: world
+    what: >-
+      The Gem of Iberia. Ṭulayṭula, at the centre of Iberia and long a meeting place of Christian, Muslim and
+      Jewish cultures, is in the Emperor's hands, and the court and all the estates set out to make it the gem
+      of Iberia. The city gains half a point of development and 30% prosperity, and it and the towns of its
+      land become cores of al-Andalus
+    who:
+      - saad-ibn-yusuf
+    where:
+      - tulaytula
+    from:
+      - seen
+    cite: Trent's screenshot of the event, 1 May 1378
+    detail:
+      choice: Let Ṭlayṭla prosper!
+      toledo:
+        development: 0.5
+        prosperity: +30%
+      cores:
+        - Toledo (Ṭlayṭla)
+        - Wad el-Lub
+        - Illescas (Illīška)
+        - Los Yébenes (Al-Yabānis)
+        - Navalucillos (Nbalusilyuš)
+        - Puebla de Montalbán (Mnṭalban)
+        - and others below the fold of Trent's screen
+      date: 1 May 1378 (Trent's screen)
+  - id: 1378-05-count-of-the-christians
+    'on': '1378-05-01'
+    kind: realm
+    what: >-
+      The first new office of the expanded bureaucracy: the Count of the Christians, the qūmis of the caliphs'
+      Córdoba, to administer and integrate the conquered Christian lands. As long as the crown pays for it, it
+      raises tax efficiency and tolerance and keeps the dhimmīs content without costing the ʿulamāʾ their
+      patience or slowing conversion
+    who:
+      - saad-ibn-yusuf
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshot, May 1378
+    detail:
+      office: Count of the Christians (bureaucracy)
+      whenFunded:
+        taxEfficiency: +5%
+        toleranceHeretic: 1
+        toleranceHeathen: 1
+      always:
+        dhimmiSatisfactionEquilibrium: +2.5%
+      whenUnfunded:
+        clergySatisfactionDecay: +2%
+        conversionSpeed: −20%
+      likedBy:
+        crown: +1%
+        dhimmi: +1%
+      dislikedBy:
+        clergy: −1%
+      cost: up to 6.56 a month
+      selectCost: 43.47
+      precedent: >-
+        the qūmis of the Christians of Córdoba, with a Christian judge under Visigothic law and a head of the
+        Jews such as Ḥasdai ibn Shaprūṭ under ʿAbd al-Raḥmān III (the game's text)
+      note: >-
+        the negative effects apply only when the bureaucracy is unfunded, the positive only when it is funded
+        (Trent)
+  - id: 1378-05-governor-of-tulaytula
+    'on': '1378-05-01'
+    kind: office
+    what: >-
+      As part of the integration of the new lands, and beside the Count of the Christians, a governor is
+      placed in Ṭulayṭula
+    who:
+      - saad-ibn-yusuf
+    where:
+      - tulaytula
+    from:
+      - told
+    cite: Trent's account, May 1378
+    detail:
+      office: governor of Toledo
+      purpose: integrating the conquered Christian lands
+  - id: 1378-05-khilafat-qurtuba-renewed
+    'on': '1378-05-01'
+    kind: realm
+    what: >-
+      The scholars of the realm work toward Khilāfat Qurṭuba Renewed: the ceremonial of ʿAbd al-Raḥmān III
+      revived, the throne hall of a rebuilt Madīnat al-Zahrāʾ, ṭirāz robes worked in gold thread with the
+      ruler's regnal year, the Friday sermon in the Great Mosque of Qurṭuba, dīnārs of West African gold,
+      investiture banners for the Maghribī sultans, and the Mamlūks received as equals; the dhimma covenant
+      over the realm's Christians and Jews formalised
+    who:
+      - saad-ibn-yusuf
+    where:
+      - qurtuba
+    threads:
+      - towns
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshot, spring 1378
+    detail:
+      advance: Khilāfat Qurṭuba Renewed
+      progress: 84% (Trent's screen)
+      effects:
+        separatism: −5%
+        toleranceHeathen: 1
+      note: >-
+        part of the reforms and the integration of the new lands (Trent); the step toward the caliphate the
+        Emperor may one day claim
+  - id: 1378-05-silk-of-gharnata
+    'on': '1378-05-01'
+    kind: realm
+    what: >-
+      With Castile's gold, the Emperor expands the famed silk of Gharnāṭa into Mursiyya, now in the crown's
+      own hands, to export still more of it to the rest of Europe: 500 from the treasury for a permanent rise
+      in Murcia's silk
+    who:
+      - saad-ibn-yusuf
+    where:
+      - mursiyya
+    threads:
+      - towns
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshot of the decision, spring 1378
+    detail:
+      decision: Expand the Silk of Gharnāṭa
+      cost: 500
+      treasuryBefore: 669.43
+      murcia:
+        maxRgoSize: +5,000
+        rawMaterialsOutput: +10%
+        rgoExpansionTime: −20%
+        lasts: until the land ceases to be
+      requirements:
+        - own Murcia
+        - at peace
+        - 500 in the treasury
+      funding: Castile's war reparations (Trent)
+  - id: 1378-07-09-tunis-marriage
+    'on': '1378-07-09'
+    kind: marriage
+    what: A royal marriage binds al-Andalus to the Ḥafṣids of Tunis
+    minor: true
+    from:
+      - save
+    cite: save of 2 December 1379
+    detail:
+      with: TUN
+  - id: 1379-04-jamaa-of-the-capital
+    'on': '1379-04-25'
+    kind: realm
+    what: >-
+      The Jamāʿa of 1379 takes up the question of the capital. The expansion north has left Gharnāṭa isolated,
+      a long ride from the frontier, and the court finds itself cut off from its slowly integrating lands. The
+      old idea of a capital at Qurṭuba is raised again, and then a second proposal: invest in the sea, set the
+      Catalan shipwrights, now the Emperor's subjects, to building a trading fleet, and move the capital to
+      Ishbīliya, where its power would reach furthest. The assembly and the Emperor choose Ishbīliya
+    who:
+      - saad-ibn-yusuf
+    where:
+      - gharnata
+      - qurtuba
+      - ishbiliyya
+    threads:
+      - estates
+    from:
+      - told
+    cite: Trent's account, 1379
+    detail:
+      assembly: Jamāʿa of 1379
+      proposals:
+        Qurṭuba: 'the old idea: the caliphs'' capital, at the centre of al-Andalus'
+        Ishbīliya: a capital on the river and the sea, with a trading fleet built by the Catalan shipwrights
+      why: >-
+        Gharnāṭa is far from the northern frontier and from the new lands; the court is decentralised from
+        them
+      outcome: >-
+        the assembly and the Emperor decide to move the capital to Ishbīliya; the move is due to be complete
+        by the end of November 1379 (Trent's account)
+      date: late April 1379 (Trent); the exact day awaits a save
+  - id: 1379-04-roads-to-ishbiliya
+    'on': '1379-04-25'
+    kind: realm
+    what: >-
+      Ishbīliya will be the capital by the end of November. To tie it into the realm the Emperor orders new
+      roads at great cost, to Sharīsh and Mālaqa and north to Baṭalyaws and Ṭulayṭula, and borrows from the
+      estates to pay for them
+    who:
+      - saad-ibn-yusuf
+    where:
+      - ishbiliyya
+      - sharish
+      - malaqa
+      - batalyaws
+      - tulaytula
+      - gharnata
+    threads:
+      - towns
+    from:
+      - save
+      - told
+    cite: Trent's account, 1379; save of 2 December 1379
+    detail:
+      newCapital: Seville (Ishbīliya)
+      oldCapital: Granada (Gharnāṭa)
+      by: the end of November 1379
+      roads:
+        - Jerez (Sharīsh)
+        - Málaga (Mālaqa)
+        - Badajoz (Baṭalyaws)
+        - Toledo (Ṭulayṭula)
+      funding: loans from the estates
+      date: begun late April 1379 (Trent)
+      roadsDone: each road on its own schedule, by its length and the ground it crosses (Trent)
+      loans: five loans of 113 each, 565 in all, at about 8.7% over five years (save of 2 December 1379)
+      roadsBuilt: >-
+        by 2 December 1379 seven new stretches of road were finished, among them Seville–Morón, Carmona–Écija,
+        Jerez–Sanlúcar and Badajoz–Barcarrota; the rest are still under way
+  - id: 1379-11-capital-at-ishbiliya
+    'on': '1379-11-24'
+    kind: realm
+    what: >-
+      The court moves to Ishbīliya. After a hundred and forty years at Gharnāṭa the capital of the house of
+      Naṣr stands in the greatest city of the realm, on the river to the Atlantic, with the first market in
+      the world. Its grip on the city has already risen from 60% to 67%; on the far provinces it will take
+      months and years
+    who:
+      - saad-ibn-yusuf
+    where:
+      - ishbiliyya
+      - gharnata
+    from:
+      - save
+      - told
+    cite: saves of 24 November and 2 December 1379; Trent's account
+    detail:
+      capital:
+        - Granada
+        - Seville
+      seville:
+        population: 78205
+        control:
+          - 59.9
+          - 67.4
+        newBuildings:
+          - jewelry guild
+          - marketplace (level 5)
+          - fruit orchard
+      granada:
+        population: 67366
+        control: 99.5
+        historicalCapital: >-
+          not recorded in the save: the game kept no historical capital for al-Andalus after the move, though
+          other powers that moved (the Ottomans from Bursa, the Habsburgs from Vienna, Athens from Thebes)
+          have theirs
+      dīwān: all three councillors, Duʿā, Sayyida and Maryam, have been integrating the new lands since the peace
+      treasury: 49.7
+      income: 101.4
+      expenses: 93.2
+      politicalInfluence: 58.8
+tellings:
+  - id: 0780-01-02-of-tulaytula-and-the-count-of-the-christians
+    'on': '1378-05-01'
+    title: Of Ṭulayṭula, the Gem of Iberia, and the Count of the Christians
+    verse: '5:48'
+    who:
+      - saad-ibn-yusuf
+    where:
+      - tulaytula
+      - qurtuba
+      - mursiyya
+      - gharnata
+    covers:
+      - 1378-05-01-gem-of-iberia
+      - 1378-05-count-of-the-christians
+      - 1378-05-khilafat-qurtuba-renewed
+      - 1378-05-governor-of-tulaytula
+      - 1378-05-silk-of-gharnata
+      - 1378-04-06-peace-castile
+    text: >
+      The year 780 opened with the Emperor in [Ṭulayṭula](place:tulaytula). The city stands on its rock in a
+      bend of the Tagus at the centre of Iberia. It had been the capital of the Visigoths, then a city of
+      Islam for three hundred and seventy years, and the seat of a ṭāʾifa king of our own faith, before
+      Alfonso of Qashtāla took it in the year 478. For three centuries since, Christians, Muslims and Jews had
+      lived in it side by side, more or less, and scholars of all three had sat in its libraries putting the
+      books of the Arabs into Latin. Now it was the Emperor's again. Twenty-nine thousand souls lived in it,
+      nearly all of them Christian.
+
+
+      The court did not mean to hold it as a conquered city. On 2 Muḥarram 780 the Emperor declared that
+      Ṭulayṭula would become the gem of Iberia, and every estate was set to the work: the ʿulamāʾ, the nobles,
+      the merchants and the dhimmīs. The city's markets were rebuilt, and before the year was out its streets
+      were busier and its merchants richer than they had been under Qashtāla. Ṭulayṭula and the towns of its
+      land, Wādī al-Lubb, Illīshka, al-Yabānis, Muntalbān and the rest, were declared lands of al-Andalus in
+      full, no longer conquests held by the sword. A governor was set over the city to see it done.
+
+
+      The harder question was how to govern four hundred thousand Christians who had been Castilians a month
+      before. The Emperor answered it from the history of [Qurṭuba](place:qurtuba). Under the Umayyads, the
+      Christians of the capital had answered to the emir through one of their own: the *qūmis*, from the Latin
+      *comes*, the Count of the Christians, who spoke for his community and was held to account for its taxes.
+      A Christian judge beside him heard their cases by the old law of the Visigoths, and the Jews had a head
+      of their own, the office Ḥasdai ibn Shaprūṭ had held under ʿAbd al-Raḥmān III. The treasury of the
+      caliphs had found the arrangement cheap and sure. The Mālikī jurists had found it hard to bear that a
+      Christian or a Jew should be set over revenue. The scholars of the court were already at work reviving
+      the ceremonial of ʿAbd al-Raḥmān III, his robes of ṭirāz and his Friday sermon in the Great Mosque, and
+      the count belonged to the same revival: the covenant of the dhimma, as the caliphs had kept it, set down
+      again over the realm's Christians and Jews.
+
+
+      The Emperor revived the office as the first new branch of the bureaucracy he had promised the conquered
+      lands. He was clear about its terms. The counts would gather the dhimmīs' taxes more fully, their
+      communities would be treated with more tolerance, and the ʿulamāʾ, though they would grumble, would have
+      no real cause for complaint, since the call to Islam would not slow in the new lands. But the office had
+      to be paid for, every year. If the crown let it starve, the jurists' objection would come back, the
+      scholars' patience would wear thin, and conversion would falter. The Emperor meant to keep paying, and
+      he meant to see what he paid for. Each count's books were to come to the dīwān once a year, to be
+      audited by its own scribes dirham by dirham. He would not take a false account from his own treasurers,
+      and he would not take one from a Christian count. The dhimmīs were glad to answer to one of their own.
+
+
+      There was money for it, for once, because Qashtāla was paying reparations. Part of it went south. In the
+      spring the Emperor spent five hundred dīnārs of Castilian gold to carry the famous silk of
+      [Gharnāṭa](place:gharnata) into [Mursiyya](place:mursiyya), now in the crown's own hands: more mulberry
+      groves, more silkworm houses, and more silk sent on to the markets of Europe, which had always paid well
+      for it. Qashtāla, which had once taken tribute from the house of Naṣr, was now paying for its silk.
+
+
+      *To each of you We prescribed a law and a way. Had Allāh willed, He would have made you one nation.*
+  - id: 0781-08-13-of-the-move-to-ishbiliya
+    'on': '1379-11-24'
+    title: Of the Jamāʿa of 781, and the Court's Removal to Ishbīliya
+    verse: '67:15'
+    who:
+      - saad-ibn-yusuf
+    where:
+      - gharnata
+      - qurtuba
+      - ishbiliyya
+      - barshaluna
+      - sharish
+      - malaqa
+      - batalyaws
+      - tulaytula
+    covers:
+      - 1379-04-jamaa-of-the-capital
+      - 1379-04-roads-to-ishbiliya
+      - 1379-11-capital-at-ishbiliya
+      - 1380-gharnata-historical-capital
+    text: >
+      When the Jamāʿa met in Muḥarram 781, the question before it was the one the conquests had been asking
+      for ten years. The house of Naṣr had ruled from [Gharnāṭa](place:gharnata) for a hundred and forty
+      years. The city had been chosen because the mountains defended it, and the mountains had kept the
+      Christians out of it through every war since. But the frontier was no longer in the mountains. It ran
+      now past [Ṭulayṭula](place:tulaytula) and [Baṭalyaws](place:batalyaws), many days' ride north, and the
+      lands won from Qashtāla were still only half held. The court found itself far from the provinces it most
+      needed to govern. A governor's letter took a week to reach the dīwān, and the answer took another week
+      to go back.
+
+
+      The elders of the court spoke first, for [Qurṭuba](place:qurtuba), seat of the caliphs, at the heart of
+      al-Andalus, with the Great Mosque of ʿAbd al-Raḥmān still standing in it. It was the capital a restored
+      al-Andalus seemed to call for, and for a time the assembly leaned toward it. Then a second proposal was
+      put. The empire should invest in the sea. The Catalan shipwrights of [Barshalūna](place:barshaluna), who
+      had built galleys for the Mamlūks at al-Iskandariyya, were the Emperor's own subjects now, and they
+      could build the empire a merchant fleet. If the empire was going to live by trade, its capital belonged
+      where the trade was. [Ishbīliya](place:ishbiliyya) was the greatest city of the realm, with
+      seventy-eight thousand souls and the first market in the world, and its river ran down to the Ocean. The
+      assembly agreed, and so did the Emperor, who had always read a ledger as closely as a map: he chose the
+      river and the market over the prestige of Qurṭuba. The court would move to Ishbīliya before the year was
+      out.
+
+
+      The move would not be cheap. A capital needs roads, and the Emperor ordered them in every direction:
+      south to [Sharīsh](place:sharish), east to [Mālaqa](place:malaqa), and north across the Guadiana to
+      Baṭalyaws and to Ṭulayṭula itself. Each road would take as long as its length and its ground required.
+      To pay for them the crown borrowed from the estates, five loans of a hundred and thirteen dīnārs each.
+      The nobles and the merchants lent willingly enough, since the roads would carry their goods as well as
+      the Emperor's letters.
+
+
+      In Shaʿbān 781 the court came down from the hills. The dīwān sat in the palaces of Ishbīliya, and the
+      Emperor's grip on the city, which had never been more than half certain, tightened within months. By the
+      end of the year seven stretches of new road were finished, and the rest were under way.
+
+
+      Gharnāṭa was not abandoned. The Emperor decreed that the city of his fathers would keep the honours of a
+      capital. Al-Ḥamrāʾ still stood on its hill, and the court that sat there kept its full weight: the
+      fortress its strength, the crown its authority, and the realm the learning and the dignity that had been
+      gathering in those halls for a century and a half. Gharnāṭa had become the realm's ancestral seat, and
+      in a realm that called itself a restoration, that was worth a great deal.
+
+
+      *It is He who made the earth tame for you, so walk among its slopes and eat of His provision.*

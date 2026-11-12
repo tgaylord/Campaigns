@@ -1,0 +1,16 @@
+name: Fāṭima bint Saʿd ibn Aḥmad
+arabic: فاطمة بنت سعد بن أحمد
+sex: f
+house: Naṣrid
+born: '1430-05-25'
+mother: umm-al-fath-bint-muhammad
+traits:
+  - child_ambitious
+  - healthy
+note: >-
+  Daughter of the Emperor's daughter Umm al-Fatḥ and her husband Saʿd, son of Aḥmad ibn Ismāʿīl ibn Saʿd, born
+  at Jaraicejo on 25 May 1430. One of the nine grandchildren born to the Emperor Muḥammad in the first years
+  of his reign. Ambitious as a child, and healthy. (save of 11 June 1442)
+game:
+  id: 33591515
+  name: Fatima

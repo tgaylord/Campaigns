@@ -1,0 +1,24 @@
+name: Maryam bint Ismāʿīl
+arabic: مريم بنت إسماعيل
+sex: f
+house: Naṣrid
+born: '1320-01-01'
+died: '1382-11-02'
+father: ismail-i
+mother: alwa
+stations:
+  - role: dīwān
+    from: '1366-06-11'
+    to: '1370-11-18'
+    source: save
+    approx: false
+note: >-
+  Married into the Karasids of Anatolia (royal marriage of 2 August 1353). Married three times. Back at the
+  court of Gharnāṭa, she took a seat in the dīwān on 10 April 1366, in place of Khālid ibn Yaḥyā, and was set
+  to integrating the new lands (save of 6 November 1366). On 1 October 1370 she turned to promoting Andalusī
+  culture beside Duʿā; by January 1373 she had left the dīwān, and the sultan's mother Sayyida of Fezzan held
+  her seat. Her son by Muḥammad ibn Aḥmad of the Banū al-ʿĀbid, Ismāʿīl, became one of the empire's explorers
+  in 1396. She died on 2 November 1382 (autosave of 1 June 1397).
+game:
+  id: 3539
+  name: Mary

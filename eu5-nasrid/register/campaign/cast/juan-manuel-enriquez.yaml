@@ -1,0 +1,26 @@
+name: Juan Manuel Enríquez
+house: Enríquez
+tier: key
+born: '1313-03-29'
+died: '1370-06-03'
+roles:
+  - ruler of the Ṭāʾifa of Mursiyya
+stations:
+  - role: general
+    from: '1368-12-02'
+    to: '1369-09-16'
+    source: save
+    approx: false
+  - role: admiral
+    from: '1369-09-29'
+    to: '1370-06-03'
+    source: save
+    approx: false
+note: >-
+  Ruler of Murcia from its release as a ṭāʾifa on 23 August 1340: a Castilian, Sunni. The chronicle keeps the
+  Christian name he was born with, as the game does (Trent's decision), so he stays recognisable later. His
+  host of 410 was destroyed by a Moroccan landing at Málaga on 16 September 1369. Died 1370-06-03 (save of 24
+  October 1414).
+game:
+  id: 27873
+  name: Juan Manuel

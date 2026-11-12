@@ -1,0 +1,1438 @@
+date: '1378-04-06'
+title: The Peace of the Restoration
+source:
+  save: SP_ADU_1378_04_06 (compressed)
+  game: 1.4.6
+summary: >-
+  On 6 April 1378 Castile and Portugal make peace. The Aragonese heartland, 24 towns with Zaragoza, is
+  restored to the Ṭāʾifa of Aragon, which grows to 30 towns; 46 towns of the Middle and Lower Marches, with
+  Toledo, Badajoz and Mérida, pass to al-Andalus; Castile pays reparations and falls from 229 towns to 159.
+  The crown now holds 118 towns and 1,287,000 people. Castilians are again its largest people and Catholics
+  outnumber Muslims, 713,000 to 503,000. The mercenaries still cost dearly: 133 a month out against 80 in,
+  with 1,016 in the treasury. Truces run with Castile, Portugal and Rome to April 1393. Shares of power are
+  estimated from the 1 June 1349 reading.
+realm:
+  towns: 118
+  souls: 1286924
+  treasury: 1016
+  income: 79.9
+  expenses: 133.3
+  stability: 38.7
+  prestige: 61
+  regiments: 11
+  ships: 4
+  manpower: 944
+court:
+  ruler: saad-ibn-yusuf
+  heir: ismail-ibn-saad
+  capital: gharnata
+  council:
+    - who: dua-marinid
+      seat: Promoting Andalusī culture
+    - who: sayyida-of-fezzan
+      seat: Diplomatic endeavours
+    - who: maryam-bint-yusuf
+      seat: Changing the societal values
+standing:
+  allies:
+    - Mamluks
+    - Morocco
+  subjects:
+    - Valencia (taifa)
+    - Taifa of the Algarve (taifa)
+    - Catalonia (taifa)
+    - Aragon (taifa)
+  estates:
+    - name: Crown
+      power: 30.85
+    - name: Nobility
+      power: 27.33
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 8.13
+      mood: 50
+    - name: Burghers
+      power: 8.94
+      mood: 50
+    - name: Commoners
+      power: 4.14
+      mood: 50
+    - name: Dhimmī
+      power: 20.61
+      mood: 50
+peoples:
+  cultures:
+    Castilian: 682196
+    Andalusi: 472525
+    Sephardi: 68339
+    Leonese: 53052
+    Mustaarabi: 4010
+    Sardinian: 2539
+  faiths:
+    Catholic: 712779
+    Sunni: 503387
+    Jewish: 69956
+    Bori_Religion: 549
+    Nyama: 253
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - ALV
+    - CAT
+    - ARA
+  allies:
+    - MAM
+    - MOR
+beats:
+  - id: 1375-12-12-catalans-ambushed
+    'on': '1375-12-12'
+    kind: battle
+    what: >-
+      The campaign opens in the east. Alfonso de Oñate's Castilians fall on the Catalan army of the ḥājib
+      Francesc himself on the outskirts of Valencia, at Šalba: 24,800 against 6,100. The Catalans lose 3,190
+      men to Castile's 860 and break before the Emperor's army can reach them
+    who:
+      - francesc-de-montsoriu
+      - alfonso-de-onate
+    where:
+      - shalba
+    threads:
+      - war-of-the-aragonese-restoration
+    from:
+      - save
+      - seen
+      - told
+    cite: >-
+      save of 13 January 1377 (the war's battle list); Trent's account and screenshots of 9 and 13 December
+      1375
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Catalonia: 5757
+        Algarve: 361
+      oursTotal: 6118
+      oursLost: 3186
+      theirs:
+        Castile: 24768
+      theirsTotal: 24768
+      theirsLost: 862
+      location: Chelva (Xelva), Valencia
+      side: Castile attacking
+      commanders:
+        Catalonia: Francesc de Montsoriu
+        Castile: Alfonso de Oñate
+      note: >-
+        the Emperor's 10,533 and Valencia's 3,309 were marching to it on 9 December; the Catalans fell back
+        with 2,567 (Trent's screenshots)
+  - id: 1376-01-14-battle-xelva
+    'on': '1376-01-14'
+    kind: battle
+    what: >-
+      The Battle of Šalba (Xelva). With the Catalans broken, the Emperor must give battle on bad ground,
+      hills, forest and a river, against nearly twice his numbers. His horse tries to sweep away both
+      Castilian flanks before their numbers tell, and the centre holds by a thread; but the wings are worn
+      down and the field is lost. A month of fighting costs al-Andalus, Valencia, Aragon and the Algarve 8,170
+      men against Castile's 7,520, and 12 points of war score
+    who:
+      - saad-ibn-yusuf
+      - alfonso-de-onate
+    where:
+      - shalba
+    threads:
+      - war-of-the-aragonese-restoration
+    from:
+      - seen
+      - told
+    cite: Trent's account and battle screens, 13 December 1375 to 14 January 1376
+    detail:
+      result: defeat
+      naval: false
+      ours:
+        al-Andalus: 10533
+        Valencia: 2288
+        Aragon: 639
+        Algarve: 383
+      oursTotal: 13842
+      oursLost: 8169
+      theirs:
+        Castile: 23902
+      theirsTotal: 23902
+      theirsLost: 7517
+      location: Chelva (Xelva), Valencia
+      side: al-Andalus attacking
+      warScore: -12.04
+      units:
+        ours:
+          infantry:
+            - 7691
+            - 4859
+          heavyInfantry:
+            - 2207
+            - 1373
+          lightCavalry:
+            - 2400
+            - 1397
+          heavyCavalry:
+            - 694
+            - 340
+          support:
+            - 850
+            - 200
+        theirs:
+          infantry:
+            - 22890
+            - 7025
+          heavyInfantry:
+            - 505
+            - 252
+          lightCavalry:
+            - 200
+            - 87
+          heavyCavalry:
+            - 257
+            - 155
+          support:
+            - 50
+            - 0
+      commanders:
+        al-Andalus: the Emperor Saʿd (100/68/100)
+        Castile: Alfonso de Oñate (53/54/89)
+      terrain: the defender had +5 from the ground; dice ran 8–7 and 4–5
+      began: 1375-12-13 (13,504 against 23,562)
+  - id: 1376-01-14-envoys-to-fas
+    'on': '1376-01-14'
+    kind: world
+    what: >-
+      Envoys ride for Fās. Since the last war there has been a warm silence between the courts: not hostile,
+      but distrustful on ours, for the Marīnids courted the Emirate and then stabbed it in the back the moment
+      they could. Now Duʿā argues for renewing the alliance; the expanded bureaucracy can bear it, and the
+      first Mamlūk army is months away. The crown prince of Fās, Abū al-Faḍl, has lately married the Emperor's
+      sister Jadīla, and that and Duʿā open the dialogue. A pact is offered. Morocco's truce with Castile runs
+      to September 1377, but if its words are to be believed, and that is questionable, it is willing to help.
+      The alliance is signed on 16 January
+    who:
+      - dua-marinid
+      - saad-ibn-yusuf
+      - abu-al-fadl-marinid
+      - jadila-bint-yusuf
+      - abu-inan-faris
+    threads:
+      - war-of-the-aragonese-restoration
+      - europe
+    from:
+      - told
+    cite: Trent's account, January 1376
+    detail:
+      with: MOR
+      proposal: alliance
+      advocate: Duʿā the Marīnid
+      ties:
+        - Jadīla bint Yūsuf married to Abū al-Faḍl, heir of Fās
+        - Duʿā, a Marīnid princess
+      obstacle: Morocco's truce with Castile until 30 September 1377 (save of 5 June 1375)
+      trust: questionable (Trent)
+      pastWars:
+        - '1368-1370: the Second Marīnid War for the Submission of Granada'
+      concluded: alliance signed on 16 January 1376 (save of 13 January 1377)
+  - id: 1376-01-14-jadila-married
+    'on': '1376-01-14'
+    kind: marriage
+    what: By now the Emperor's sister Jadīla, betrothed in 1372, is married to Abū al-Faḍl, crown prince of Fās
+    minor: true
+    who:
+      - jadila-bint-yusuf
+      - abu-al-fadl-marinid
+    threads:
+      - house
+    from:
+      - told
+    cite: Trent's account, January 1376
+    detail:
+      betrothed: '1372-04-03'
+      date: recently, before January 1376 (Trent); the exact day awaits a save
+  - id: 1376-01-14-second-levy
+    'on': '1376-01-14'
+    kind: realm
+    what: After Šalba another 2,000 men are levied from the nobles
+    who:
+      - saad-ibn-yusuf
+    threads:
+      - war-of-the-aragonese-restoration
+      - estates
+    from:
+      - told
+    cite: Trent's account, January 1376
+    detail:
+      estate: nobles
+      men: 2000
+  - id: 1376-01-21-catalans-destroyed-at-barcelona
+    'on': '1376-01-21'
+    kind: battle
+    what: >-
+      A week after Šalba the Pope's 2,000, landed on the Catalan coast, catch the 2,570 Catalans who escaped
+      the ambush before Barcelona and destroy them to the last man without loss
+    who:
+      - francesc-de-montsoriu
+    where:
+      - barshaluna
+    threads:
+      - war-of-the-aragonese-restoration
+    from:
+      - save
+    cite: save of 13 January 1377 (the war's battle list)
+    detail:
+      result: allied defeat
+      naval: false
+      ours:
+        Catalonia: 2567
+      oursTotal: 2567
+      oursLost: 2567
+      theirs:
+        Papal States: 2000
+      theirsTotal: 2000
+      theirsLost: 0
+      location: Barcelona
+      side: Papal States attacking
+      commanders:
+        Catalonia: Francesc de Montsoriu
+        Papal States: Reginald, a papal general
+  - id: 1376-03-01-battle-cape-ben-sakka
+    'on': '1376-03-01'
+    kind: battle
+    what: >-
+      Off Cape Ben Sakka, on the coast of Ifrīqiya, the Portuguese and Castilian fleets, 28 sail under Rafael
+      Araújo, fall on the Catalan fleet of 20 and sink or take 19 of them without loss. The sea belongs to
+      Iberia
+    minor: true
+    threads:
+      - war-of-the-aragonese-restoration
+      - voyages
+    from:
+      - save
+    cite: save of 13 January 1377 (the war's battle list)
+    detail:
+      result: allied defeat
+      naval: true
+      ours:
+        Catalonia: 20
+      oursTotal: 20
+      oursLost: 19
+      theirs:
+        Portugal: 23
+        Castile: 5
+      theirsTotal: 28
+      theirsLost: 0
+      location: Cape Ben Sakka (Ras Ben Sakka, by Bizerte)
+      side: Portugal attacking
+      units: ships
+      commanders:
+        Catalonia: Berenguer Ramon Crespí (74/69/18)
+        Portugal: Rafael Araújo (78/70/73)
+  - id: 1376-05-25-battle-girona
+    'on': '1376-05-25'
+    kind: battle
+    what: >-
+      Defeat in detail. The Pope lands an army on the Catalan coast, a foolish venture, and the Emperor falls
+      on it before Girona: 8,400 against 2,900. In a day 2,250 of the Pope's men are lost for 234 of ours
+    who:
+      - saad-ibn-yusuf
+    where:
+      - jarunda
+    threads:
+      - war-of-the-aragonese-restoration
+    from:
+      - seen
+      - told
+    cite: Trent's account and battle screens, 24–25 May 1376
+    detail:
+      result: victory
+      naval: false
+      ours:
+        al-Andalus: 7198
+        Valencia: 1002
+        Aragon: 136
+        Algarve: 46
+      oursTotal: 8381
+      oursLost: 234
+      theirs:
+        Papal States: 2940
+      theirsTotal: 2940
+      theirsLost: 2252
+      location: Girona
+      side: al-Andalus attacking
+      warScore: 3.05
+      began: '1376-05-24'
+      commanders:
+        al-Andalus: the Emperor Saʿd (100/68/100)
+        Papal States: Anthony, a papal general (41/77/28)
+      units:
+        ours:
+          infantry:
+            - 2831
+            - 204
+          heavyInfantry:
+            - 2000
+            - 0
+          lightCavalry:
+            - 2400
+            - 31
+          heavyCavalry:
+            - 500
+            - 0
+          support:
+            - 650
+            - 0
+        theirs:
+          infantry:
+            - 2940
+            - 2253
+  - id: 1376-06-12-second-battle-girona
+    'on': '1376-06-12'
+    kind: battle
+    what: >-
+      Siena follows its master's footsteps. Before Girona again, the Sienese come against the Emperor's 8,200
+      with 1,560 and are destroyed to the last man, for 101 of ours
+    who:
+      - saad-ibn-yusuf
+    where:
+      - jarunda
+    threads:
+      - war-of-the-aragonese-restoration
+    from:
+      - seen
+      - told
+    cite: Trent's account and battle screen, 12 June 1376
+    detail:
+      result: victory
+      naval: false
+      ours:
+        al-Andalus: 7198
+        Valencia: 962
+        Aragon: 13
+        Algarve: 4
+      oursTotal: 8176
+      oursLost: 101
+      theirs:
+        Siena: 1558
+      theirsTotal: 1558
+      theirsLost: 1558
+      location: Girona
+      side: Siena attacking
+      warScore: 2.03
+      units:
+        ours:
+          infantry:
+            - 2626
+            - 88
+          heavyInfantry:
+            - 2000
+            - 0
+          lightCavalry:
+            - 2400
+            - 13
+          heavyCavalry:
+            - 500
+            - 0
+          support:
+            - 650
+            - 0
+        theirs:
+          infantry:
+            - 1545
+            - 1545
+          heavyInfantry:
+            - 4
+            - 4
+          heavyCavalry:
+            - 9
+            - 9
+      commanders:
+        al-Andalus: the Emperor Saʿd
+        Siena: Lionel Piazza (66/57/41)
+  - id: 1376-06-mercenaries-and-the-faithful
+    'on': '1376-06-12'
+    kind: note
+    what: >-
+      A Castilian army has Barcelona under siege. The Emperor turns to a well-tried strategy, the mercenaries
+      and the faithful of the wars of 1339 and after, and raises more than 7,000 veterans from the Marches to
+      break the siege
+    who:
+      - saad-ibn-yusuf
+    where:
+      - barshaluna
+    threads:
+      - war-of-the-aragonese-restoration
+    from:
+      - told
+    cite: Trent's account, June 1376
+    detail:
+      raised: 7,000+ veterans from the Marches (mercenaries and volunteers of the faith)
+      purpose: to relieve Barcelona, under siege by a Castilian army
+      precedent: the mercenaries and mutaṭawwiʿa of the 1339 host
+      date: June 1376, after the second battle of Girona (Trent); the exact size awaits a save or screen
+  - id: 1376-08-moroccan-gift
+    'on': '1376-08-16'
+    kind: world
+    what: >-
+      The Moors cannot join the war while their truce with Castile holds, but they send a gift of gold into
+      the Emperor's treasury, freely given. The mercenaries are expensive, and the gift keeps them in the
+      field
+    who:
+      - abu-inan-faris
+      - dua-marinid
+    threads:
+      - war-of-the-aragonese-restoration
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshots of 12 June and 16 August 1376
+    detail:
+      from: MOR
+      treasury:
+        '1376-06-12': 662
+        '1376-08-16': 1510
+      monthlyBalance: -70.26
+      note: >-
+        the gift's exact size is not on the screens; the treasury rose by about 850 in two months while paying
+        the mercenaries
+  - id: 1376-09-01-battle-agramunt
+    'on': '1376-09-01'
+    kind: battle
+    what: >-
+      Slaughter at Agramunt. In the Catalan plain the Emperor's 15,000, the mercenaries of the Marches at
+      their heart, meet 19,000 Castilians under Alfonso de Oñate, the general of Šalba. After a fortnight
+      12,700 of Castile's men are dead or scattered, against 2,840 of ours, and the war swings by 19 points
+    who:
+      - saad-ibn-yusuf
+      - alfonso-de-onate
+    threads:
+      - war-of-the-aragonese-restoration
+    from:
+      - seen
+      - told
+    cite: Trent's account and battle screens, 16 August to 1 September 1376
+    detail:
+      result: victory
+      naval: false
+      ours:
+        al-Andalus: 14060
+        Valencia: 962
+        Aragon: 13
+        Algarve: 4
+      oursTotal: 15038
+      oursLost: 2839
+      theirs:
+        Castile: 17073
+        Papal States: 2000
+      theirsTotal: 19073
+      theirsLost: 12724
+      location: Agramunt, Catalonia
+      side: al-Andalus attacking
+      warScore: 19.09
+      began: 1376-08-16 (13,392 against 18,350)
+      commanders:
+        al-Andalus: the Emperor Saʿd (100/68/100)
+        Castile: Alfonso de Oñate (53/54/89)
+      units:
+        ours:
+          infantry:
+            - 4538
+            - 1403
+          heavyInfantry:
+            - 6000
+            - 256
+          lightCavalry:
+            - 2800
+            - 990
+          heavyCavalry:
+            - 1000
+            - 99
+          support:
+            - 700
+            - 93
+        theirs:
+          infantry:
+            - 18022
+            - 12030
+          heavyInfantry:
+            - 500
+            - 329
+          lightCavalry:
+            - 400
+            - 266
+          heavyCavalry:
+            - 101
+            - 101
+          support:
+            - 50
+            - 0
+  - id: 1376-12-catalan-shipwrights
+    'on': '1376-12-01'
+    kind: world
+    what: >-
+      The Mamlūks are stuck across the sea: the Iberian fleets far outnumber theirs. This will not do. In
+      early December the crown sends Catalan shipwrights to five Mamlūk ports, al-Iskandariyya, Dimyāṭ, ʿAkkā,
+      Anṭākiya and Ṭarsūs, to build proper shipbuilding wharves with the Mamlūks' coin and to teach them the
+      first modern galleys
+    who:
+      - saad-ibn-yusuf
+      - bolot-mamluk
+    threads:
+      - war-of-the-aragonese-restoration
+    from:
+      - save
+      - told
+    cite: Trent's account, December 1376; save of 13 January 1377
+    detail:
+      with: MAM
+      ports:
+        - Alexandria (al-Iskandariyya)
+        - Damietta (Dimyāṭ)
+        - Acre (ʿAkkā)
+        - Antioch (Anṭākiya)
+        - Tarsus (Ṭarsūs)
+      built: shipbuilding wharves, paid for by the Mamlūks
+      taught: the first modern galleys
+      by: Catalan shipwrights sent by the crown
+      why: the Iberian fleets far outnumber the Mamlūk navy, leaving the Mamlūk armies trapped across the sea
+      date: early December 1376 (Trent)
+      confirmed: >-
+        wharves stand in all five ports by 13 January 1377, where there were none in June 1375; the Mamlūk
+        fleet has grown from 1 ship to 22 (saves of 5 June 1375 and 13 January 1377)
+  - id: 1377-01-13-the-eve-of-zaragoza
+    'on': '1377-01-13'
+    kind: note
+    what: >-
+      On the eve of the battle for Zaragoza. Alfonso de Oñate has rebuilt his army; Portugal has 11,300 in the
+      field and the Mamlūks 56,000, most of them levies still across the sea, but now with 22 ships where they
+      had one. The mercenaries cost dearly: 123 a month going out against 78 coming in, the treasury at 1,213,
+      and the realm's manpower nearly spent
+    who:
+      - saad-ibn-yusuf
+      - alfonso-de-onate
+      - bolot-mamluk
+    threads:
+      - war-of-the-aragonese-restoration
+    from:
+      - save
+      - told
+    cite: save of 13 January 1377 (a reading); Trent's account
+    detail:
+      forces:
+        al-Andalus: 5,320 (4,831 regulars, 488 levies), the mercenaries besides
+        Castile: 6,866 (5,215 levies), 14 ships
+        Portugal: 11,316 (10,326 levies), 23 ships
+        Papal States: 3,916, 13 ships
+        Mamluks: 56,124 (52,633 levies), 22 ships
+        Morocco (allied, at truce with Castile): 950, 28 ships
+        Valencia: 962
+      treasury: 1213
+      income: 78.2
+      expenses: 122.9
+      manpower: 306
+      warExhaustion: 4.8
+      stability: 38.2
+      prestige: 54
+      moroccanAlliance: since 16 January 1376
+      iberia: no town has changed hands since the declaration
+  - id: 1377-01-31-battle-zaragoza
+    'on': '1377-01-31'
+    kind: battle
+    what: >-
+      Before Saraqusṭa, the old capital of the Upper March, the Emperor meets the rebuilt Castilian army, with
+      the Pope's men beside it, and breaks it: 13,200 against 7,400, with 5,675 of theirs lost for 705 of ours
+    who:
+      - saad-ibn-yusuf
+    where:
+      - saraqusta
+    threads:
+      - war-of-the-aragonese-restoration
+    from:
+      - save
+      - told
+    cite: Trent's account and battle breakdown, 31 January 1377; save of 6 April 1378
+    detail:
+      result: victory
+      naval: false
+      ours:
+        al-Andalus, Valencia and the Algarve: 13193
+      oursTotal: 13193
+      oursLost: 705
+      theirs:
+        Castile and the Papal States: 7402
+      theirsTotal: 7402
+      theirsLost: 5675
+      location: Zaragoza
+      warScore: 7.82
+      commanders:
+        al-Andalus: the Emperor Saʿd (100/68/100)
+        Castile: Alfonso Yáñez (84/63/47)
+  - id: 1377-06-13-battle-calatayud
+    'on': '1377-06-13'
+    kind: battle
+    what: >-
+      At Qalʿat Ayyūb the last Castilian army is crushed: 2,340 against the Emperor's 12,400, and 2,030 of
+      them fall for 385 of ours. With Castile beaten in the field, the Emperor's eyes turn to the Portuguese
+    who:
+      - saad-ibn-yusuf
+    where:
+      - qalat-ayyub
+    threads:
+      - war-of-the-aragonese-restoration
+    from:
+      - save
+      - seen
+      - told
+    cite: Trent's account and battle screen, 13 June 1377; save of 6 April 1378
+    detail:
+      result: victory
+      naval: false
+      ours:
+        al-Andalus, Valencia and the Algarve: 12395
+      oursTotal: 12395
+      oursLost: 385
+      theirs:
+        Castile: 2343
+      theirsTotal: 2343
+      theirsLost: 2030
+      location: Calatayud
+      side: al-Andalus attacking
+      warScore: 2.96
+      units:
+        ours:
+          infantry:
+            - 2670
+            - 229
+          heavyInfantry:
+            - 5976
+            - 92
+          lightCavalry:
+            - 2305
+            - 64
+          heavyCavalry:
+            - 863
+            - 0
+          support:
+            - 581
+            - 0
+        theirs:
+          infantry:
+            - 1878
+            - 1617
+          heavyInfantry:
+            - 254
+            - 254
+          lightCavalry:
+            - 161
+            - 159
+          support:
+            - 50
+            - 0
+      after:
+        warScore: 10
+        treasury: 1060
+        manpower: 165
+      commanders:
+        al-Andalus: the Emperor Saʿd (100/68/100)
+        Castile: Alfonso Yáñez (84/63/47)
+  - id: 1377-06-24-calatayud-remnant
+    'on': '1377-06-24'
+    kind: battle
+    what: >-
+      At Qalʿat Ayyūb the Emperor runs down the last 314 Castilians of Alfonso Yáñez's army, who had fallen on
+      a handful of Algarvian stragglers there six days before
+    who:
+      - saad-ibn-yusuf
+    where:
+      - qalat-ayyub
+    threads:
+      - war-of-the-aragonese-restoration
+    from:
+      - save
+    cite: save of 6 April 1378 (the war's battle list)
+    detail:
+      result: victory
+      naval: false
+      ours:
+        al-Andalus: 10511
+      oursTotal: 10511
+      oursLost: 0
+      theirs:
+        Castile: 314
+      theirsTotal: 314
+      theirsLost: 156
+      location: Calatayud
+      side: al-Andalus attacking
+  - id: 1377-09-30-morocco-joins
+    'on': '1377-09-30'
+    kind: war
+    what: >-
+      On 30 September, the day Morocco's truce with Castile runs out, the court asks the Moors to join the
+      war, and Fās answers with a call to arms. The ally the Emperor doubted keeps its word
+    who:
+      - abu-inan-faris
+      - abu-al-fadl-marinid
+      - jadila-bint-yusuf
+      - dua-marinid
+    threads:
+      - war-of-the-aragonese-restoration
+    from:
+      - told
+    cite: Trent's account, 30 September 1377
+    detail:
+      joined: MOR
+      truceEnded: '1377-09-30'
+      alliance: since 16 January 1376
+  - id: 1377-10-19-battle-cape-sao-vicente
+    'on': '1377-10-19'
+    kind: battle
+    what: >-
+      Three weeks after Fās enters the war, the Moroccan fleet, 18 sail under Abū Ḥammū, meets 5 Castilian
+      ships off Cape São Vicente and sinks them all without loss. The Moors begin to clear a path through the
+      sea
+    minor: true
+    threads:
+      - war-of-the-aragonese-restoration
+      - voyages
+    from:
+      - save
+    cite: save of 6 April 1378 (the war's battle list)
+    detail:
+      result: allied victory
+      naval: true
+      ours:
+        Morocco: 18
+      oursTotal: 18
+      oursLost: 0
+      theirs:
+        Castile: 5
+      theirsTotal: 5
+      theirsLost: 5
+      location: Cape São Vicente
+      side: Castile attacking
+      units: ships
+      commanders:
+        Morocco: Abū Ḥammū
+        Castile: Félix Godoy
+  - id: 1377-11-01-battle-coast-lazio
+    'on': '1377-11-01'
+    kind: battle
+    what: Off the coast of Lazio two ships of Barqa, raiding toward Rome, are lost to two papal galleys
+    minor: true
+    threads:
+      - war-of-the-aragonese-restoration
+    from:
+      - save
+    cite: save of 6 April 1378 (the war's battle list)
+    detail:
+      result: allied defeat
+      naval: true
+      ours:
+        Barqa: 2
+      oursTotal: 2
+      oursLost: 2
+      theirs:
+        Papal States: 2
+      theirsTotal: 2
+      theirsLost: 0
+      location: the coast of Lazio
+      side: Barqa attacking
+      units: ships
+  - id: 1377-11-04-battle-bay-setubal
+    'on': '1377-11-04'
+    kind: battle
+    what: In the bay of Setúbal the Iberian fleets, 32 sail, sink the last ship of Catalonia
+    who:
+      - francesc-de-montsoriu
+    threads:
+      - war-of-the-aragonese-restoration
+    from:
+      - save
+    cite: save of 6 April 1378 (the war's battle list)
+    detail:
+      result: allied defeat
+      naval: true
+      ours:
+        Catalonia: 1
+      oursTotal: 1
+      oursLost: 1
+      theirs:
+        Portugal: 23
+        Castile: 9
+      theirsTotal: 32
+      theirsLost: 0
+      location: the bay of Setúbal
+      side: Castile attacking
+      units: ships
+  - id: 1377-11-22-battle-cape-mondego
+    'on': '1377-11-22'
+    kind: battle
+    what: >-
+      Off Cape Mondego the Portuguese fleet of 23 under Rafael Araújo sinks three ships of Tlemcen, Morocco's
+      vassal
+    minor: true
+    threads:
+      - war-of-the-aragonese-restoration
+      - voyages
+    from:
+      - save
+    cite: save of 6 April 1378 (the war's battle list)
+    detail:
+      result: allied defeat
+      naval: true
+      ours:
+        Tlemcen: 3
+      oursTotal: 3
+      oursLost: 3
+      theirs:
+        Portugal: 23
+      theirsTotal: 23
+      theirsLost: 0
+      location: Cape Mondego
+      side: Portugal attacking
+      units: ships
+  - id: 1378-01-17-battle-shaluqa
+    'on': '1378-01-17'
+    kind: battle
+    what: >-
+      With Castile beaten in the field and its army besieging Valladolid, the Emperor turns on the Portuguese,
+      who have come down on Ishbīliya. At Shalūqa al-Kubrā on the city's outskirts he meets them, 10,300
+      against 11,300, and throws them back across the border: 8,343 of theirs lost for 1,069 of ours
+    who:
+      - saad-ibn-yusuf
+    where:
+      - shaluqa-al-kubra
+      - ishbiliyya
+    threads:
+      - war-of-the-aragonese-restoration
+    from:
+      - seen
+      - told
+    cite: Trent's account and battle screens, 7–17 January 1378
+    detail:
+      result: victory
+      naval: false
+      ours:
+        al-Andalus: 10302
+      oursTotal: 10302
+      oursLost: 1069
+      theirs:
+        Portugal: 11269
+      theirsTotal: 11269
+      theirsLost: 8343
+      location: Sanlúcar la Mayor (Šaluqa el-Kubra), by Seville
+      side: al-Andalus attacking
+      warScore: 11.54
+      began: 1378-01-07 (10,109 against 10,528)
+      commanders:
+        al-Andalus: the Emperor Saʿd (100/68/100)
+        Portugal: Diego de Escobar (49/63/78)
+      units:
+        ours:
+          infantry:
+            - 940
+            - 304
+          heavyInfantry:
+            - 5892
+            - 209
+          lightCavalry:
+            - 2498
+            - 233
+          heavyCavalry:
+            - 967
+            - 323
+          support:
+            - 5
+            - 0
+        theirs:
+          infantry:
+            - 10721
+            - 7891
+          heavyInfantry:
+            - 176
+            - 176
+          heavyCavalry:
+            - 327
+            - 276
+          support:
+            - 45
+            - 0
+      after:
+        warScore: 58
+      elsewhere: al-Andalus besieging Valladolid
+  - id: 1378-04-06-sayyida-diplomacy
+    'on': '1378-03-08'
+    kind: office
+    what: The Emperor's mother Sayyida turns from promoting Andalusī culture to the realm's diplomatic endeavours
+    who:
+      - sayyida-of-fezzan
+    from:
+      - save
+    cite: save of 6 April 1378
+    detail:
+      action: diplomatic_endeavors
+      since: '1378-03-08'
+  - id: 1378-04-06-castles-razed
+    'on': '1378-04-06'
+    kind: land
+    what: >-
+      By the peace Castile razes seven of its castles in the lands it keeps, opening the road to its heart:
+      León, Zamora, Valladolid, Segovia, Cuenca, Pamplona and Laguardia
+    who:
+      - jeronimo-of-castile
+    threads:
+      - war-of-the-aragonese-restoration
+    from:
+      - save
+      - told
+    cite: saves of 6 April 1378 before and after the peace (buildings compared); Trent's account
+    detail:
+      razed:
+        - location: León
+          building: castle
+        - location: Zamora
+          building: castle
+        - location: Valladolid
+          building: castle
+        - location: Segovia
+          building: castle
+        - location: Cuenca
+          building: castle
+        - location: Pamplona
+          building: castle
+        - location: Laguardia
+          building: castle
+  - id: 1378-04-06-peace-castile
+    'on': '1378-04-06'
+    kind: peace
+    what: >-
+      Peace with Castile and Portugal. Valladolid is weeks from falling, the Emperor's army is marching on
+      Lisbon, the Moors have cleared a path through the sea, and the first Mamlūk army is off the coast of
+      Tunis. Offered the choice the Aragonese were given, peace or blood, the Iberians choose peace. The
+      Aragonese heartland, 24 towns from Jaca to Teruel with Zaragoza at its heart, is restored to the renewed
+      Kingdom of Aragon; 46 towns of the Middle and Lower Marches, Toledo, Badajoz and Mérida among them, pass
+      to al-Andalus; Castile pays reparations. The war score stands at +100%. The castles of León, Zamora,
+      Valladolid, Segovia, Cuenca, Pamplona and Laguardia, in the lands Castile keeps, are to be razed
+    who:
+      - saad-ibn-yusuf
+      - jeronimo-of-castile
+      - alfons-de-borja
+    threads:
+      - war-of-the-aragonese-restoration
+    from:
+      - save
+      - told
+    cite: saves of 6 April 1378 before and after the peace; Trent's account
+    detail:
+      with:
+        - CAS
+        - POR
+      toAragon:
+        - Zaragoza
+        - Huesca
+        - Jaca
+        - Teruel
+        - Calatayud
+        - Tarazona
+        - Daroca
+        - Alcañiz
+        - Caspe
+        - Albarracín
+        - Ejea de los Caballeros
+        - Belchite
+        - Cariñena
+        - Almudévar
+        - Ansó
+        - Sos
+        - Zuera
+        - Pina de Ebro
+        - Ariza
+        - Montalbán
+        - Alfambra
+        - Cantavieja
+        - Mora de Rubielos
+        - Valderrobres
+      toAlAndalus:
+        - Toledo
+        - Talavera de la Reina
+        - Ocaña
+        - Uclés
+        - Consuegra
+        - Puebla de Montalbán
+        - Badajoz
+        - Mérida
+        - Medellín
+        - Trujillo
+        - Montánchez
+        - Albuquerque
+        - Jerez de los Caballeros
+        - Zafra
+        - Llerena
+        - Azuaga
+        - Barcarrota
+        - Villanueva del Fresno
+        - Villanueva de la Serena
+        - Zalamea
+        - Belalcázar
+        - Puebla de Alcocer
+        - Herrera
+        - Guadalupe
+        - Monesterio
+        - Ciudad Real
+        - Almodóvar del Campo
+        - Puertollano
+        - Almadén
+        - Calatrava
+        - Malagón
+        - Manzanares
+        - Alcázar de San Juan
+        - Tomelloso
+        - Villarrobledo
+        - Montiel
+        - Villapalacios
+        - Alcaraz
+        - Lezuza
+        - Alhambra
+        - Los Yébenes
+        - Chinchón
+        - Illescas
+        - El Escorial
+        - Puente del Arzobispo
+        - Navalucillos
+      populationToAlAndalus: 403400
+      aragon:
+        towns:
+          - 6
+          - 30
+        population: 267000
+      cededPeople:
+        Castilian: 336200
+        Leonese: 53000
+        Sephardi: 9100
+        Catholic: 392400
+        Jewish: 9000
+      reparations: Castile pays war reparations
+      warScore: 100
+      truces: with Castile, Portugal, the Papal States and its vassals to 6 April 1393
+      castile:
+        towns:
+          - 229
+          - 159
+        rank: 8
+      realm:
+        towns:
+          - 72
+          - 118
+        population:
+          - 883492
+          - 1286924
+        catholic: 712779
+        sunni: 503387
+        castilian: 682196
+        andalusi: 472525
+      battleDead:
+        ourSide: 19256
+        theirSide: 41121
+        note: >-
+          losses in the war's land battles from the save's battle list, ours with the ṭāʾifas; attrition and
+          sieges not counted
+      fortsRazed:
+        - León
+        - Zamora
+        - Valladolid
+        - Segovia
+        - Cuenca
+        - Pamplona
+        - Laguardia
+      alsoGone: >-
+        in the ceded towns the military orders' commanderies at Consuegra and Alcázar de San Juan and six
+        rotten boroughs vanished with the change of owner
+tellings:
+  - id: 0777-08-20-of-the-war-of-restoration-and-the-day-of-shalba
+    'on': '1376-01-14'
+    title: Of the War of the Aragonese Restoration, and the Day of Shalba
+    verse: '47:7'
+    who:
+      - saad-ibn-yusuf
+      - francesc-de-montsoriu
+      - alfonso-de-onate
+      - dua-marinid
+      - abu-inan-faris
+      - abu-al-fadl-marinid
+      - jadila-bint-yusuf
+    where:
+      - saraqusta
+      - balansiyya
+      - shalba
+      - barshaluna
+      - gharnata
+      - fas
+    covers:
+      - 1371-03-01-reconquest-claim-ready
+      - 1375-06-05-war-on-castile
+      - 1375-06-05-rome-and-lisbon
+      - 1375-12-12-catalans-ambushed
+      - 1376-01-14-battle-xelva
+      - 1376-01-14-second-levy
+      - 1376-01-14-envoys-to-fas
+      - 1376-01-14-jadila-married
+    text: >
+      The truce with Qashtāla ran out on 4 Muḥarram 777, and the Emperor [Saʿd](person:saad-ibn-yusuf) did not
+      let a day of the new year pass. Beyond the Pyrenees the French were pushing the English into the sea.
+      Once they had finished, the Pope at Avignon would rally them against al-Andalus, and every advance the
+      Emperor made after that would be blunted by French lances. *We cannot afford to wait*, he told the
+      dīwān. War was declared on Qashtāla that day. The claim the dīwān had drawn up four years before reached
+      to all the peninsula the Christians had taken, but the heralds proclaimed the war as the Aragonese
+      restoration. [Saraqusṭa](place:saraqusta) and the heart of old Arghūn, from Jaca to Teruel, lay in
+      Castilian hands, and the renewed kingdom had a right to them.
+
+
+      A levy was laid on the nobles and on the ṭāʾifas, in gold and in men. The treasury, which had held two
+      hundred and eighty-six dīnārs in Shawwāl, held fifteen hundred and seventy-nine by the declaration.
+      Al-Ushbūna and Avignon answered the Castilian call: al-Burtughāl, whose king was also king of Qashtāla,
+      and the Pope with his vassals of Faenza and Siena. Miṣr answered ours, and the four ṭāʾifas marched
+      beside the Emperor. At the declaration he had three thousand three hundred regulars under arms, and the
+      Castilian king had seventeen hundred and fifty. Nobody had yet called out the levies.
+
+
+      They were called out over the summer and autumn. The campaign opened in the east in Rajab. The ḥājib
+      [Francesc](person:francesc-de-montsoriu) had brought six thousand Catalans and Algarvians to the
+      outskirts of [Balansiyya](place:balansiyya), and on 17 Rajab, at [Shalba](place:shalba) in the hills
+      behind the coast, the Castilian general [Alfonso de Oñate](person:alfonso-de-onate) fell on them with
+      nearly twenty-five thousand. The Emperor was marching to them with ten thousand five hundred, and
+      Balansiyya's levies with him, but the Catalans did not hold until he came. They lost three thousand two
+      hundred men to Qashtāla's eight hundred and sixty and broke for the coast.
+
+
+      That left the Emperor facing Oñate's whole army on Oñate's chosen ground: hills, forest and a river,
+      everything that hobbles horse and favours the defender. Retreat would give up the country around
+      Balansiyya. On 18 Rajab he gave battle, thirteen thousand eight hundred against twenty-three thousand
+      nine hundred.
+
+
+      It went on for a month, into Shaʿbān. The Emperor did what the Andalusī horse had always done. He threw
+      his cavalry at both Castilian flanks to sweep them away before the weight of the Castilian foot could
+      tell. On the open plain before [Barshalūna](place:barshaluna) two years earlier that had won the day. In
+      the broken country of Shalba the horse could not close the jaws fast enough. The centre held, by a
+      thread, through weeks of grinding, while the wings were worn down against twice their numbers. On 20
+      Shaʿbān the Emperor drew off what was left. He had lost eight thousand one hundred and seventy men,
+      against seven thousand five hundred and twenty of Oñate's. Qashtāla had lost nearly as many as he had,
+      and it could spare them; he could not. The old soldiers said it was the price of fighting on unsuitable
+      ground, and the Emperor did not argue with them.
+
+
+      He levied two thousand more men from the nobles, and he listened to [Duʿāʾ](person:dua-marinid). Since
+      the last war there had been a warm silence between [Gharnāṭa](place:gharnata) and [Fās](place:fas). It
+      was not hostile, but on our side it was distrustful. The Marīnids had courted Gharnāṭa and then stabbed
+      it in the back the moment they could, and the court had a long memory. Duʿāʾ argued that the time had
+      come to renew the alliance all the same. The dīwān's clerks had grown with the realm and could carry the
+      embassy, she said, and it would be months before the first Mamlūk army could reach Iberia. There was a
+      bond now as well. [Abū ʿInān](person:abu-inan-faris)'s heir, [Abū al-Faḍl](person:abu-al-fadl-marinid),
+      had lately married the Emperor's sister [Jadīla](person:jadila-bint-yusuf). Between Jadīla and Duʿāʾ
+      there was enough to open a dialogue between what had once been good friends.
+
+
+      The envoys rode for Fās, and a pact was offered. On 22 Shaʿbān the alliance was signed. Fās had a truce
+      with Qashtāla that would not end until the autumn of the year after next, so it could not join the war
+      before then. Its envoys swore it would help when it could. The Emperor's council was not sure their word
+      was worth believing.
+
+
+      *O you who have believed, if you support Allāh, He will support you and plant firmly your feet.*
+  - id: 0778-04-15-of-the-mercenaries-and-the-slaughter-at-agramunt
+    'on': '1376-09-01'
+    title: Of Defeat in Detail, the Mercenaries of the Marches, and the Slaughter at Agramunt
+    verse: 8:60
+    who:
+      - francesc-de-montsoriu
+      - saad-ibn-yusuf
+      - abu-inan-faris
+      - dua-marinid
+      - alfonso-de-onate
+      - bolot-mamluk
+    where:
+      - shalba
+      - barshaluna
+      - gharnata
+      - jarunda
+      - fas
+    covers:
+      - 1376-01-21-catalans-destroyed-at-barcelona
+      - 1376-03-01-battle-cape-ben-sakka
+      - 1376-05-25-battle-girona
+      - 1376-06-12-second-battle-girona
+      - 1376-06-mercenaries-and-the-faithful
+      - 1376-08-moroccan-gift
+      - 1376-09-01-battle-agramunt
+      - 1376-12-catalan-shipwrights
+    text: >
+      The spring of 777 was the worst of the war. A week after [Shalba](place:shalba), the Pope at Avignon put
+      two thousand men ashore on the Catalan coast. On 27 Shaʿbān they caught the Catalans of
+      [Francesc](person:francesc-de-montsoriu) who had escaped Shalba, two thousand five hundred and
+      sixty-seven of them, before the walls of [Barshalūna](place:barshaluna), and killed or took every one
+      without losing a man. On 8 Shawwāl, off Cape Ben Sakka on the coast of Ifrīqiya, the fleets of
+      al-Burtughāl and Qashtāla, twenty-eight sail under the Portuguese admiral Rafael Araújo, found the
+      Catalan fleet of twenty and sank or took nineteen. After that the sea belonged to the Iberians. By the
+      spring a Castilian army had Barshalūna itself under siege, the war was going plainly against us, and men
+      in the markets of [Gharnāṭa](place:gharnata) asked one another whether the Emperor
+      [Saʿd](person:saad-ibn-yusuf) had overreached.
+
+
+      The Emperor had an answer, and he gave it a soldier's name: *defeat in detail.* The enemy had more men,
+      but they were scattered across the Peninsula, landed in pieces and marching in pieces. He meant to meet
+      each piece alone. The Pope's army was the first. In Muḥarram 778 the Emperor came on it before
+      [Jarunda](place:jarunda), eight thousand four hundred against two thousand nine hundred, and in a day
+      two thousand two hundred and fifty-two of the Pope's men were lost for two hundred and thirty-four of
+      ours. The court called the papal landing a foolish venture, and nobody defended it. Eighteen days later
+      the men of Siena followed their master's footsteps to the same field. Fifteen hundred and fifty-eight
+      came against the Emperor, and every one of them fell, for one hundred and one of ours.
+
+
+      That cleared the north of the Pope's men. It did not lift the siege of Barshalūna. For that the Emperor
+      went back to a remedy the house of Naṣr had used in its first war, nearly forty years before:
+      mercenaries and the faithful. He raised more than seven thousand veterans from the Marches, hard men who
+      had fought on the frontier all their lives and would fight wherever they were paid. They were expensive.
+      The treasury paid out seventy dīnārs a month more than it took in. Then help came from an unexpected
+      quarter. [Abū ʿInān](person:abu-inan-faris) of [Fās](place:fas), who could not join the war while his
+      truce held, sent a gift of gold into the Emperor's treasury, freely given. The councillors who had
+      doubted his word found that [Duʿāʾ](person:dua-marinid) had been right about her own house, and she let
+      them find it without any help from her.
+
+
+      In Rabīʿ al-Awwal the Emperor brought fifteen thousand men, the veterans of the Marches at their heart,
+      against [Alfonso de Oñate](person:alfonso-de-onate) in the Catalan plain at Agramunt. Oñate had nineteen
+      thousand Castilians and papal troops, and he had beaten the Emperor at Shalba. This time the ground was
+      open. The Emperor's heavy foot held the centre, and his horse had room to work. They fought for a
+      fortnight. When it ended on 15 Rabīʿ al-Thānī, twelve thousand seven hundred of Oñate's men were dead or
+      scattered, against two thousand eight hundred and thirty-nine of ours. It was not a victory, the
+      soldiers said; it was a slaughter. A war that had looked all but lost when the battle began was in the
+      balance again, though the balance still leaned against us.
+
+
+      There was still the sea. The armies of Miṣr, tens of thousands of them, waited on the far shore because
+      the Mamlūks had almost no ships, and the Iberian fleets would sink anything they sent. *This will not
+      do*, the Emperor said. In Rajab 778 the crown sent Catalan shipwrights east, to five ports of the Mamlūk
+      sultan [Būlād](person:bolot-mamluk): al-Iskandariyya, Dimyāṭ, ʿAkkā, Anṭākiya and Ṭarsūs. They were to
+      build proper shipbuilding wharves there with the Mamlūks' coin, and to teach the Egyptians to build
+      galleys of the new Catalan kind. The plan was the Emperor's own, and so was the reckoning behind it: the
+      Mamlūks would pay for the wharves, and the sea would be cleared at little cost to the treasury of
+      al-Andalus. By the next winter the Mamlūks had twenty-two ships, where eighteen months before they had
+      had one.
+
+
+      *And prepare against them whatever you are able of power and of steeds of war, by which you may terrify
+      the enemy of Allāh and your enemy.*
+  - id: 0779-12-07-of-saraqusta-and-the-peace-of-the-restoration
+    'on': '1378-04-06'
+    title: Of Saraqusṭa, the Day of Shalūqa, and the Peace of the Restoration
+    verse: '61:13'
+    who:
+      - saad-ibn-yusuf
+      - abu-inan-faris
+      - jeronimo-of-castile
+      - alfons-de-borja
+      - sayyida-of-fezzan
+    where:
+      - saraqusta
+      - qalat-ayyub
+      - fas
+      - barshaluna
+      - tilimsan
+      - ishbiliyya
+      - shaluqa-al-kubra
+      - al-ushbuna
+      - tulaytula
+      - batalyaws
+      - marida
+      - gharnata
+      - qurtuba
+    covers:
+      - 1378-04-06-castles-razed
+      - 1377-01-31-battle-zaragoza
+      - 1377-06-13-battle-calatayud
+      - 1377-09-30-morocco-joins
+      - 1377-10-19-battle-cape-sao-vicente
+      - 1377-11-04-battle-bay-setubal
+      - 1378-01-17-battle-shaluqa
+      - 1378-04-06-peace-castile
+      - 1378-04-06-sayyida-diplomacy
+      - 1378-05-khilafat-qurtuba-renewed
+      - 1378-07-09-tunis-marriage
+    text: >
+      Qashtāla raised another army over the winter, and the Emperor [Saʿd](person:saad-ibn-yusuf) went to meet
+      it in the country it was fighting for. On 20 Ramaḍān 778 he found it before [Saraqusṭa](place:saraqusta)
+      on the Ebro, the old capital of the Upper March, which no Muslim army had seen for two hundred and fifty
+      years. The Castilians were led now by Alfonso Yáñez, a capable administrator but no great general, and
+      they numbered seven thousand four hundred, with the Pope's men among them. The Emperor had thirteen
+      thousand two hundred. Five thousand six hundred and seventy-five of theirs fell or fled, for seven
+      hundred and five of ours. In Ṣafar 779 he caught the last of that army at [Qalʿat
+      Ayyūb](place:qalat-ayyub) on the Jalón, the fortress of Ayyūb, and destroyed it: two thousand and
+      twenty-nine of theirs against three hundred and eighty-five of ours. Qashtāla had no field army left,
+      and the war ran in our favour again. The Emperor turned his attention west, to the Portuguese.
+
+
+      The Marīnids kept their word. On 26 Jumādā al-Ūlā 779, the day their truce with Qashtāla ended, the
+      court asked [Fās](place:fas) to join the war, and [Abū ʿInān](person:abu-inan-faris) answered with a
+      call to arms. Three weeks later the fleet of Fās, eighteen sail under Abū Ḥammū, met five Castilian
+      ships off Cape São Vicente and sent all five to the bottom without losing one. The Iberian fleets still
+      had teeth. They sank the last ship of [Barshalūna](place:barshaluna) in the bay of Setúbal and three
+      ships of [Tilimsān](place:tilimsan), Fās's vassal, off Cape Mondego. But they were no longer alone on
+      the sea, and the ships of Fās began to clear a path through it.
+
+
+      In Ramaḍān the Portuguese came down out of the west on [Ishbīliya](place:ishbiliyya), eleven thousand
+      three hundred of them, while another of the Emperor's armies lay before Valladolid in the heart of
+      Qashtāla. The Emperor met them at [Shalūqa al-Kubrā](place:shaluqa-al-kubra), on the edge of the
+      greatest city of the realm, with ten thousand three hundred. For ten days he stood with the heavy foot
+      of the centre, slept on the ground among them and kept the fast as they kept it, and the soldiers said
+      afterwards that wherever the line thinned, his banner was there. The battle ended on the seventeenth of
+      Ramaḍān, the day of Badr, and the army knew it. Eight thousand three hundred and forty-three Portuguese
+      were lost to their king, against one thousand and sixty-nine of ours, and the rest were driven back
+      across the border. After that day the Iberians could no longer hope to win the war, only to end it.
+
+
+      By Dhū al-Ḥijja Valladolid was weeks from falling. The Emperor's army was marching on
+      [al-Ushbūna](place:al-ushbuna). The fleet of Fās had cleared the sea, and the first Mamlūk army,
+      carried, the court said, in galleys from the new wharves, lay off the coast of Tūnis. The Emperor's
+      envoys went to [Jerónimo](person:jeronimo-of-castile), king of Qashtāla and al-Burtughāl, with the offer
+      the king of Arghūn had been given three years before: peace, or blood. The Iberians knew when they were
+      beaten. On 7 Dhū al-Ḥijja 779, two days before the pilgrims stood at ʿArafa, they chose peace.
+
+
+      The heartland of Arghūn, twenty-four towns from Jaca under the Pyrenees to Teruel, with Saraqusṭa,
+      Huesca and Qalʿat Ayyūb, was restored to the renewed kingdom of [Alfons](person:alfons-de-borja), whose
+      six towns became thirty. The Upper March had its capital again, and the war had earned its name. To the
+      crown itself passed forty-six towns of the Middle and Lower Marches: [Ṭulayṭula](place:tulaytula), the
+      old capital of the Visigoths and of a ṭāʾifa of our own faith, with Ṭalabayra and the towns of La
+      Mancha, and in the west [Baṭalyaws](place:batalyaws), [Mārida](place:marida), Turjāla and the hills of
+      the Guadiana. Four hundred thousand souls came with them, nearly all Castilian and Christian. Qashtāla
+      paid reparations besides, and razed seven of its own castles, at León, Zamora, Valladolid, Segovia,
+      Cuenca, Pamplona and Laguardia, so that the road to its heart would lie open if it ever broke the peace.
+      It had held two hundred and twenty-nine towns when the war began and now held one hundred and
+      fifty-nine.
+
+
+      Seven years earlier our lord Saʿd had unrolled the great map of the caliphs from the treasury of
+      [Gharnāṭa](place:gharnata) and looked at its three red lines, the thughūr. Now every one of them lay
+      within the realm of al-Andalus or of its ṭāʾifas: the Upper March of Saraqusṭa, the Middle March of
+      Ṭulayṭula, the Lower March of Baṭalyaws and Mārida. The cost was written in the dīwān's ledgers.
+      Nineteen thousand two hundred and fifty-six of our side had fallen in the field, and forty-one thousand
+      one hundred and twenty-one of theirs. The truce would hold for fifteen years.
+
+
+      The Emperor meant the peace to be used. A month before it was sealed his mother
+      [Sayyida](person:sayyida-of-fezzan) had left the work of the new towns for the embassies of the realm.
+      In the months after it the scholars set to work at his command on the renewal of the caliphate of
+      [Qurṭuba](place:qurtuba): the ceremonial of ʿAbd al-Raḥmān III, a throne hall in a rebuilt Madīnat
+      al-Zahrāʾ, robes of ṭirāz with the regnal year worked in gold thread, and dīnārs struck from the gold of
+      the Land of the Blacks. With it went a covenant setting down in writing what the Christians and Jews of
+      the realm owed and what they were owed. He wanted it written, he said, so that no governor could take
+      from a dhimmī a dirham more than the law allowed. In the summer a royal marriage bound al-Andalus to the
+      Ḥafṣids of Tūnis.
+
+
+      *And another favour that you love: victory from Allāh and an imminent conquest; and give good tidings to
+      the believers.*

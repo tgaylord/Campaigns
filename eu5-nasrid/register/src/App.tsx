@@ -1,0 +1,526 @@
+import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
+import raw from "./data.json";
+import { md } from "./md";
+import { formatHijri, formatWestern, toHijri, HIJRI_MONTHS } from "./hijri";
+
+/* ------------------------------------------------------------------ the data */
+type Beat = { id: string; on: string; kind: string; what: string; minor?: boolean; who?: string[]; where?: string[]; threads?: string[]; from?: string[]; cite?: string; detail?: Record<string, unknown>; r: string };
+type Telling = { id: string; on: string; title: string; verse?: string; who?: string[]; covers?: string[]; text: string; behind?: string; r: string };
+type Person = { name: string; arabic?: string; sex?: string; house?: string; tier?: string; born?: string; died?: string; father?: string; mother?: string; reigns?: { from: string; to: string | null }[]; roles?: string[]; traits?: string[]; drives?: { from: string; text: string; by: string; source?: string }[]; ties?: { with: string; kind: string; from: string; to?: string; text: string }[]; note?: string };
+type Thread = { id: string; kind: "story" | "war"; title: string; state: string; from?: string; to?: string; premise?: string; outcome?: string; part?: string; sides?: Record<string, string[]>; note?: string; game?: string };
+type Reckoning = { date: string; title: string; summary?: string; realm: Record<string, number>; court?: { ruler?: string; heir?: string; regent?: string; council?: { who: string; seat: string }[] }; standing?: { wars?: string[]; allies?: string[]; subjects?: string[]; estates?: { name: string; power?: number; mood?: number }[] }; questions?: string[] };
+type Data = {
+  campaign: { title: string; arabic?: string; subtitle: string; game: string; player: string; start: string; measures: { key: string; label: string; format?: string }[]; kinds: Record<string, { label: string; tone: string }>; tones: Record<string, string>; from: Record<string, string>; eras: { id: string; title: string; from: string; to?: string; summary?: string }[] };
+  threads: Thread[]; cast: Record<string, Person>; places: Record<string, { name: string; plain?: string }>; reckonings: Reckoning[]; beats: Beat[]; tellings: Telling[];
+  map: { view: number[]; labels: Record<string, string>; realms: { t: string; d: string; c: number[]; role: string }[] } | null;
+};
+const D = raw as unknown as Data;
+const { campaign, cast, threads, reckonings, beats, tellings } = D;
+const threadById = new Map(threads.map((t) => [t.id, t]));
+const beatById = new Map(beats.map((b) => [b.id, b]));
+const now = reckonings.at(-1)!;
+const before = reckonings.at(-2);
+const Y0 = +campaign.start.slice(0, 4), Y1 = +now.date.slice(0, 4);
+
+/* ------------------------------------------------------------------ small helpers */
+const nf = new Intl.NumberFormat("en-GB");
+const cf = new Intl.NumberFormat("en-GB", { notation: "compact", maximumFractionDigits: 2 });
+const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const dayMonth = (d: string) => `${+d.slice(8, 10)} ${MON[+d.slice(5, 7) - 1]}`;
+const hijriSpan = (y: number) => { const a = toHijri(`${y}-01-01`).y, b = toHijri(`${y}-12-31`).y; return a === b ? `${a}` : `${a}–${String(b).slice(-2)}`; };
+const short = (id: string) => { const n = cast[id]?.name ?? id; return n.split(/ (?:ibn|bint) /).slice(0, 2).join(n.includes(" bint ") ? " bint " : " ibn "); };
+const first = (id: string) => (cast[id]?.name ?? id).split(/ (?:ibn|bint|of|de) /)[0];
+const age = (p: Person, at: string) => (p.born ? Math.floor((Date.parse(p.died && p.died < at ? p.died : at) - Date.parse(p.born)) / 31557600000) : null);
+const rulerAt = (d: string) => Object.entries(cast).find(([, p]) => p.reigns?.some((r) => r.from <= d && (!r.to || r.to > d)));
+const ordinal = (n: number) => `${n}${n % 100 >= 11 && n % 100 <= 13 ? "th" : ["th", "st", "nd", "rd"][n % 10] ?? "th"}`;
+const fmt = (m: { format?: string }, v: number) => (m.format === "compact" ? cf.format(v) : nf.format(Math.round(v * 10) / 10));
+const tone = (kind: string) => campaign.kinds[kind]?.tone ?? "abroad";
+const Who = ({ id, full }: { id: string; full?: boolean }) => <a href={`#who-${id}`}>{full ? cast[id]?.name ?? id : short(id)}</a>;
+
+/* ------------------------------------------------------------------ routing: one plain word after the # */
+type Route = { view: string; arg?: string };
+const parse = (h: string): Route => {
+  const s = h.replace(/^#/, "");
+  const m = s.match(/^(line|thread|who|telling)-(.+)$/);
+  if (m) return { view: m[1], arg: m[2] };
+  return { view: ["line", "threads", "people", "about"].includes(s) ? s : "now" };
+};
+function useRoute(): Route {
+  const [r, setR] = useState(() => parse(location.hash));
+  useEffect(() => { const f = () => setR(parse(location.hash)); addEventListener("hashchange", f); return () => removeEventListener("hashchange", f); }, []);
+  useEffect(() => {
+    if (r.view === "line" && r.arg) requestAnimationFrame(() => document.getElementById(`y${r.arg}`)?.scrollIntoView({ block: "start" }));
+    else scrollTo(0, 0);
+  }, [r.view, r.arg]);
+  return r;
+}
+
+/* ------------------------------------------------------------------ the frieze: every year of the campaign as one tile */
+const yearCount = new Map<number, number>();
+for (const b of beats) if (!b.minor) yearCount.set(+b.on.slice(0, 4), (yearCount.get(+b.on.slice(0, 4)) ?? 0) + 1);
+const maxCount = Math.max(...yearCount.values());
+const yearsWithTelling = new Set(tellings.map((t) => +t.on.slice(0, 4)));
+const frac = (d: string) => +d.slice(0, 4) + (+d.slice(5, 7) - 1) / 12 + (+d.slice(8, 10) - 1) / 365;
+const ourWars = threads.filter((t) => t.kind === "war" && !t.part && (t.to ?? now.date) >= campaign.start);
+const lanes: Thread[][] = [];
+for (const w of ourWars) { const lane = lanes.find((l) => frac(l.at(-1)!.to ?? now.date) + 0.6 < frac(w.from!)); if (lane) lane.push(w); else lanes.push([w]); }
+const reigns = Object.entries(cast).flatMap(([id, p]) => (p.reigns ?? []).map((r) => ({ id, ...r }))).filter((r) => (r.to ?? "9999") > campaign.start).sort((a, b) => a.from.localeCompare(b.from));
+
+function Frieze({ at }: { at?: number }) {
+  const cell = 10, pad = 14, W = (Y1 - Y0 + 1) * cell + pad * 2;
+  const x = (y: number) => pad + (y - Y0) * cell;
+  const xf = (d: string) => pad + (Math.max(frac(d), Y0) - Y0) * cell;
+  const laneY = (i: number) => 58 + i * 7;
+  const H = laneY(lanes.length) + 18;
+  const box = useRef<HTMLDivElement>(null);
+  // on a narrow screen the band scrolls sideways: open it at the year in question, or at the present
+  useEffect(() => { const el = box.current; if (el && el.scrollWidth > el.clientWidth) el.scrollLeft = ((x(at ?? Y1) + cell / 2) / W) * el.scrollWidth - el.clientWidth / 2; }, [at]);
+  return (
+    <div className="frieze" ref={box} role="navigation" aria-label="The years of the campaign">
+      <svg viewBox={`0 0 ${W} ${H}`}>
+        {reigns.map((r) => {
+          const a = xf(r.from), b = r.to ? xf(r.to) : x(Y1) + cell;
+          return (
+            <g key={r.id + r.from}>
+              <line className="fz-reign" x1={a + 1} x2={b - 2} y1={22} y2={22} />
+              <line className="fz-reign" x1={a + 1} x2={a + 1} y1={18} y2={26} />
+              <a href={`#who-${r.id}`}><text className="fz-name" x={a + 5} y={13}>{first(r.id)}</text></a>
+            </g>
+          );
+        })}
+        {Array.from({ length: Y1 - Y0 + 1 }, (_, i) => Y0 + i).map((y) => {
+          const n = yearCount.get(y) ?? 0, cx = x(y) + cell / 2, s = n ? 2.4 + 2.4 * Math.sqrt(n / maxCount) : 1.2;
+          return (
+            <a key={y} href={`#line-${y}`} aria-label={`${y}: ${n} entries`}>
+              <title>{`${y} (${hijriSpan(y)} AH): ${n} ${n === 1 ? "entry" : "entries"}${yearsWithTelling.has(y) ? ", with a telling" : ""}`}</title>
+              <rect className="fz-hit" x={x(y)} y={28} width={cell} height={24} />
+              <rect className={`fz-tile${n ? "" : " empty"}${at === y ? " at" : ""}`} x={cx - s} y={40 - s} width={s * 2} height={s * 2} transform={`rotate(45 ${cx} 40)`} style={n ? { fillOpacity: 0.35 + 0.65 * Math.sqrt(n / maxCount) } : undefined} />
+            </a>
+          );
+        })}
+        {lanes.map((l, i) => l.map((w) => (
+          <a key={w.id} href={`#thread-${w.id}`}>
+            <title>{`${w.title}, ${w.from!.slice(0, 4)}–${w.to ? w.to.slice(0, 4) : "still fought"}`}</title>
+            <rect className={`fz-war${w.to ? "" : " open"}`} x={xf(w.from!)} y={laneY(i)} width={Math.max(3, xf(w.to ?? now.date) - xf(w.from!))} height={4} rx={2} />
+          </a>
+        )))}
+        {Array.from({ length: Y1 - Y0 + 1 }, (_, i) => Y0 + i).filter((y) => y % 10 === 0).map((y) => (
+          <g key={y}><line className="fz-tick" x1={x(y) + cell / 2} x2={x(y) + cell / 2} y1={H - 16} y2={H - 12} /><text className="fz-year" x={x(y) + cell / 2} y={H - 2} textAnchor="middle">{y}</text></g>
+        ))}
+      </svg>
+    </div>
+  );
+}
+const FriezeKey = () => <p className="key">Each tile is a year, larger and darker the more was recorded. The line above is the reign; the bars below are the wars al-Andalus fought. Choose a year to read it.</p>;
+
+/* ------------------------------------------------------------------ where a beat comes from */
+const FromMarks = ({ from }: { from?: string[] }) => (
+  <span className="marks" title={(from ?? []).map((f) => campaign.from[f]).join("; ")}>
+    {Object.keys(campaign.from).map((k) => <i key={k} className={`mk mk-${k}${from?.includes(k) ? " on" : ""}`} />)}
+    <span className="sr">{(from ?? []).map((f) => campaign.from[f]).join("; ")}</span>
+  </span>
+);
+const FromKey = () => (
+  <span className="fromkey">
+    {Object.entries(campaign.from).map(([k, v]) => <span key={k}><i className={`mk mk-${k} on`} />{v}</span>)}
+  </span>
+);
+
+/* ------------------------------------------------------------------ the line */
+function BeatRow({ b, year }: { b: Beat; year?: boolean }) {
+  const detail = Object.entries(b.detail ?? {}).filter(([, v]) => v !== null && v !== "" && typeof v !== "boolean");
+  return (
+    <details className={`beat t-${tone(b.kind)}${b.minor ? " minor" : ""}`}>
+      <summary>
+        <span className="b-date" title={formatHijri(b.on)}>{dayMonth(b.on)}{year ? ` ${b.on.slice(0, 4)}` : ""}</span>
+        <span className="b-kind"><i className="dot" />{campaign.kinds[b.kind]?.label}</span>
+        <span className="b-what">{b.what}</span>
+        <FromMarks from={b.from} />
+      </summary>
+      <div className="b-more">
+        <p className="b-when">{formatHijri(b.on)}, {formatWestern(b.on)}</p>
+        {!!b.who?.length && <p><span className="lab">Who</span>{b.who.map((w, i) => <span key={w}>{i ? ", " : ""}<Who id={w} /></span>)}</p>}
+        {!!b.where?.length && <p><span className="lab">Where</span>{b.where.map((w) => D.places[w]?.name ?? w).join(", ")}</p>}
+        {!!b.threads?.length && <p><span className="lab">Threads</span>{b.threads.map((t, i) => <span key={t}>{i ? ", " : ""}<a href={`#thread-${t}`}>{threadById.get(t)?.title}</a></span>)}</p>}
+        {detail.length > 0 && (
+          <dl>{detail.map(([k, v]) => <div key={k}><dt>{k.replace(/([a-z])([A-Z])/g, "$1 $2").toLowerCase()}</dt><dd>{typeof v === "object" ? Object.entries(v as object).map(([a, c]) => `${a}: ${typeof c === "object" ? JSON.stringify(c) : c}`).join("; ") : String(v)}</dd></div>)}</dl>
+        )}
+        <p className="b-cite"><span className="lab">Known from</span>{b.cite ?? (b.from ?? []).map((f) => campaign.from[f]).join("; ")}</p>
+      </div>
+    </details>
+  );
+}
+const plain = (s: string) => s.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/[*_]/g, "");
+function TellingCard({ t }: { t: Telling }) {
+  return (
+    <a className="tcard" href={`#telling-${t.id}`}>
+      <span className="tc-label">A telling, {formatHijri(t.on)}</span>
+      <span className="tc-title">{t.title}</span>
+      <span className="tc-lede">{plain(t.text).slice(0, 210).replace(/\s+\S*$/, "")}…</span>
+    </a>
+  );
+}
+function Line({ items, tales, filters, startOpen }: { items: Beat[]; tales: Telling[]; filters?: boolean; startOpen?: boolean }) {
+  const [all, setAll] = useState(!!startOpen);
+  const [thread, setThread] = useState("");
+  const shown = items.filter((b) => (all || !b.minor) && (!thread || b.threads?.includes(thread)));
+  const tshown = thread ? tales.filter((t) => t.covers?.some((c) => beatById.get(c)?.threads?.includes(thread))) : tales;
+  const years = useMemo(() => {
+    const m = new Map<number, (Beat | Telling)[]>();
+    for (const x of [...shown, ...tshown].sort((a, b) => a.on.localeCompare(b.on) || ("what" in a ? -1 : 1))) { const y = +x.on.slice(0, 4); m.set(y, [...(m.get(y) ?? []), x]); }
+    return [...m.entries()];
+  }, [shown.length, tshown.length, thread, all]);
+  const hidden = items.filter((b) => b.minor).length;
+  return (
+    <div className="line">
+      <div className="line-bar">
+        {filters && (
+          <label>Follow <select id="thread-filter" value={thread} onChange={(e) => setThread(e.target.value)}>
+            <option value="">everything</option>
+            <optgroup label="Stories">{threads.filter((t) => t.kind === "story").map((t) => <option key={t.id} value={t.id}>{t.title}</option>)}</optgroup>
+            <optgroup label="Wars">{threads.filter((t) => t.kind === "war").map((t) => <option key={t.id} value={t.id}>{t.title}</option>)}</optgroup>
+          </select></label>
+        )}
+        {hidden > 0 && <label className="check"><input id="show-minor" type="checkbox" checked={all} onChange={(e) => setAll(e.target.checked)} /> Show the {hidden} lesser entries</label>}
+        <FromKey />
+      </div>
+      {years.map(([y, xs]) => {
+        const r = rulerAt(`${y}-07-01`);
+        const reign = r?.[1].reigns?.find((g) => g.from <= `${y}-12-31` && (!g.to || g.to > `${y}-01-01`));
+        return (
+          <section className="year" key={y} id={`y${y}`}>
+            <header>
+              <h3>{y}</h3>
+              <p>{hijriSpan(y)} AH</p>
+              {r && reign && <p><a href={`#who-${r[0]}`}>{first(r[0])}</a>, {ordinal(y - +reign.from.slice(0, 4) + 1)} year</p>}
+            </header>
+            <div className="rows">{xs.map((x) => ("what" in x ? <BeatRow key={x.id} b={x} /> : <TellingCard key={x.id} t={x} />))}</div>
+          </section>
+        );
+      })}
+      {!years.length && <p className="empty">Nothing on this thread yet. Choose another, or show the lesser entries.</p>}
+    </div>
+  );
+}
+
+/* ------------------------------------------------------------------ now */
+function Spark({ k }: { k: string }) {
+  const pts = reckonings.filter((r) => typeof r.realm?.[k] === "number").map((r) => [frac(r.date), r.realm[k]] as const);
+  if (pts.length < 3) return null;
+  const xs = pts.map((p) => p[0]), ys = pts.map((p) => p[1]);
+  const x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys);
+  const P = pts.map(([x, y]) => `${(2 + ((x - x0) / (x1 - x0)) * 116).toFixed(1)},${(22 - ((y - y0) / (y1 - y0 || 1)) * 20).toFixed(1)}`);
+  return <svg className="spark" viewBox="0 0 120 24" width="120" height="24" aria-hidden="true"><polyline points={P.join(" ")} /><circle cx={P.at(-1)!.split(",")[0]} cy={P.at(-1)!.split(",")[1]} r="2.2" /></svg>;
+}
+function RealmMap() {
+  const m = D.map;
+  if (!m) return null;
+  return (
+    <figure className="map">
+      <svg viewBox={m.view.join(" ")} role="img" aria-label="The realm, its subjects and its allies at the last reckoning">
+        {m.realms.filter((r) => r.role === "other").map((r) => <path key={r.t} className="m-other" d={r.d} />)}
+        {m.realms.filter((r) => r.role !== "other").map((r) => <path key={r.t} className={`m-${r.role}`} d={r.d} />)}
+        {m.realms.filter((r) => m.labels[r.t]).map((r) => <text key={r.t} x={r.t === "GRA" ? 1600 : r.c[0]} y={r.t === "GRA" ? 1500 : r.c[1]} textAnchor="middle">{m.labels[r.t]}</text>)}
+      </svg>
+      <figcaption><span><i className="sw m-ours" />The crown</span><span><i className="sw m-subject" />Ṭāʾifas and vassals</span><span><i className="sw m-ally" />Allies</span></figcaption>
+    </figure>
+  );
+}
+function Now() {
+  const since = beats.filter((b) => b.r === now.date && !b.minor);
+  const told = tellings.filter((t) => t.r === now.date);
+  const ruler = now.court?.ruler, reign = ruler ? cast[ruler].reigns?.at(-1) : undefined;
+  const open = threads.filter((t) => t.state === "open").map((t) => ({ t, last: beats.filter((b) => b.threads?.includes(t.id) && !b.minor).at(-1), n: beats.filter((b) => b.threads?.includes(t.id)).length }))
+    .filter((x) => x.last).sort((a, b) => b.last!.on.localeCompare(a.last!.on));
+  const questions = reckonings.flatMap((r) => (r.questions ?? []).map((q) => ({ q, r: r.date }))).reverse();
+  return (
+    <>
+      <header className="now-head">
+        <p className="eyebrow">The realm as last reckoned</p>
+        <h1>{formatHijri(now.date)}</h1>
+        <p className="sub">{formatWestern(now.date)}. {now.title}.</p>
+        {ruler && <p className="sub"><Who id={ruler} full />{reign ? `, in the ${ordinal(+now.date.slice(0, 4) - +reign.from.slice(0, 4) + 1)} year of his reign` : ""}{now.court?.heir ? <>. Heir: <Who id={now.court.heir} /></> : null}.</p>}
+      </header>
+      <Frieze at={Y1} />
+      <FriezeKey />
+      <div className="now-grid">
+        <div className="main">
+          <section>
+            <h2>Since the reckoning of {before ? formatWestern(before.date) : "the start"}</h2>
+            <div className="rows">{since.map((b) => <BeatRow key={b.id} b={b} year />)}</div>
+            {told.map((t) => <TellingCard key={t.id} t={t} />)}
+          </section>
+          <section>
+            <h2>Open threads</h2>
+            <ul className="threads">
+              {open.map(({ t, last, n }) => (
+                <li key={t.id}>
+                  <a className="th-title" href={`#thread-${t.id}`}>{t.title}</a>
+                  <span className={`pill ${t.kind}`}>{t.kind === "war" ? "War" : "Story"}</span>
+                  <p className="th-premise">{t.premise}</p>
+                  <p className="th-last"><span className="lab">Last, {dayMonth(last!.on)} {last!.on.slice(0, 4)}</span>{last!.what}</p>
+                  <p className="th-n">{n} entries since {(t.from ?? beats.find((b) => b.threads?.includes(t.id))!.on).slice(0, 4)}</p>
+                </li>
+              ))}
+            </ul>
+          </section>
+          {questions.length > 0 && (
+            <section>
+              <h2>Unanswered</h2>
+              <p className="key">Things the saves show but don't explain. An answer from the player closes one.</p>
+              <ul className="questions">{questions.map((x) => <li key={x.q}>{x.q} <span className="q-when">Asked at the reckoning of {formatWestern(x.r)}.</span></li>)}</ul>
+            </section>
+          )}
+        </div>
+        <aside>
+          <RealmMap />
+          <section>
+            <h2>The count</h2>
+            <table className="count">
+              <tbody>
+                {campaign.measures.filter((m) => typeof now.realm[m.key] === "number").map((m) => {
+                  const v = now.realm[m.key], p = before?.realm?.[m.key], d = typeof p === "number" ? v - p : 0;
+                  return (
+                    <tr key={m.key}>
+                      <th scope="row">{m.label}</th>
+                      <td className="num">{fmt(m, v)}</td>
+                      <td className={`delta ${d > 0 ? "up" : d < 0 ? "down" : ""}`}>{d ? `${d > 0 ? "+" : "−"}${fmt(m, Math.abs(d))}` : ""}</td>
+                      <td><Spark k={m.key} /></td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+            <p className="key">Change since the last reckoning; the line runs from {Y0}.</p>
+          </section>
+          <section>
+            <h2>The court</h2>
+            <dl className="court">
+              {ruler && <div><dt>Emperor</dt><dd><Who id={ruler} />, aged {age(cast[ruler], now.date)}</dd></div>}
+              {now.court?.heir && <div><dt>Heir</dt><dd><Who id={now.court.heir} />, aged {age(cast[now.court.heir], now.date)}</dd></div>}
+              {(now.court?.council ?? []).map((c) => <div key={c.who + c.seat}><dt>{c.seat}</dt><dd><Who id={c.who} /></dd></div>)}
+            </dl>
+          </section>
+          <section>
+            <h2>Friends and wars</h2>
+            <dl className="court">
+              <div><dt>At war</dt><dd>{(now.standing?.wars ?? []).map((w, i) => <span key={w}>{i ? ", " : ""}<a href={`#thread-${w}`}>{threadById.get(w)?.title}</a></span>)}{!now.standing?.wars?.length && "At peace"}</dd></div>
+              <div><dt>Allies</dt><dd>{(now.standing?.allies ?? []).join(", ")}</dd></div>
+              <div><dt>Subjects</dt><dd>{(now.standing?.subjects ?? []).map((s) => s.replace(/ \((\w+)\)$/, "")).join(", ")}</dd></div>
+            </dl>
+          </section>
+        </aside>
+      </div>
+      {now.summary && <section className="summary"><h2>The reckoning in full</h2><p>{now.summary}</p></section>}
+    </>
+  );
+}
+
+/* ------------------------------------------------------------------ a telling */
+function TellingPage({ id }: { id: string }) {
+  const i = tellings.findIndex((t) => t.id === id), t = tellings[i];
+  if (!t) return <Missing />;
+  const body = md(t.text, (p) => !!cast[p]);
+  const rests = (t.covers ?? []).map((c) => beatById.get(c)).filter(Boolean) as Beat[];
+  const r = rulerAt(t.on);
+  return (
+    <article className="telling">
+      <header>
+        <p className="eyebrow">A telling{r ? <>, in the reign of <Who id={r[0]} /></> : null}</p>
+        <h1>{t.title}</h1>
+        <p className="sub">{formatHijri(t.on)}, {formatWestern(t.on)}</p>
+      </header>
+      <div className="t-grid">
+        <div className="prose">
+          <div dangerouslySetInnerHTML={{ __html: body.html }} />
+          {body.verse && <blockquote className="verse"><p dangerouslySetInnerHTML={{ __html: body.verse }} />{t.verse && <footer>Qurʾān {t.verse}</footer>}</blockquote>}
+        </div>
+        <aside>
+          {rests.length > 0 && (
+            <section>
+              <h2>What it rests on</h2>
+              <p className="key">The record behind this telling. Anything in the prose that isn't here was invented for colour.</p>
+              <div className="rows compact">{rests.map((b) => <BeatRow key={b.id} b={b} year />)}</div>
+            </section>
+          )}
+          {t.behind && (
+            <details className="behind">
+              <summary>The writer's note: what was recorded and what was invented</summary>
+              <div dangerouslySetInnerHTML={{ __html: md(t.behind).html }} />
+            </details>
+          )}
+        </aside>
+      </div>
+      <nav className="pager">
+        {tellings[i - 1] ? <a href={`#telling-${tellings[i - 1].id}`}><span className="lab">Before</span>{tellings[i - 1].title}</a> : <span />}
+        {tellings[i + 1] ? <a href={`#telling-${tellings[i + 1].id}`}><span className="lab">After</span>{tellings[i + 1].title}</a> : <span />}
+      </nav>
+    </article>
+  );
+}
+
+/* ------------------------------------------------------------------ threads */
+function Threads() {
+  const count = (id: string) => beats.filter((b) => b.threads?.includes(id)).length;
+  return (
+    <>
+      <header className="page-head"><h1>Threads</h1><p className="sub">Every entry belongs to the line of years. Some also belong to a story that runs across them. Follow one on its own.</p></header>
+      <section>
+        <h2>Stories</h2>
+        <ul className="threads two">
+          {threads.filter((t) => t.kind === "story").map((t) => (
+            <li key={t.id}><a className="th-title" href={`#thread-${t.id}`}>{t.title}</a><span className={`pill state-${t.state}`}>{t.state === "standing" ? "Always running" : t.state === "open" ? "Open" : "Settled"}</span><p className="th-premise">{t.premise}</p><p className="th-n">{count(t.id)} entries</p></li>
+          ))}
+        </ul>
+      </section>
+      <section>
+        <h2>Wars</h2>
+        <div className="scroll-x">
+          <table className="wars">
+            <thead><tr><th>War</th><th>Years</th><th>Entries</th><th>How it ended</th></tr></thead>
+            <tbody>
+              {threads.filter((t) => t.kind === "war").reverse().map((t) => (
+                <tr key={t.id}><th scope="row"><a href={`#thread-${t.id}`}>{t.title}</a>{t.part && <span className="pill">{t.part}</span>}</th><td className="num">{t.from?.slice(0, 4)}–{t.to?.slice(0, 4) ?? ""}</td><td className="num">{count(t.id)}</td><td>{t.to ? (t.outcome ?? "").split(/(?<=\.)\s/)[0] : "Still fought"}</td></tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </>
+  );
+}
+function ThreadPage({ id }: { id: string }) {
+  const t = threadById.get(id);
+  if (!t) return <Missing />;
+  const bs = beats.filter((b) => b.threads?.includes(id));
+  const ts = tellings.filter((x) => x.covers?.some((c) => beatById.get(c)?.threads?.includes(id)));
+  const who = new Map<string, number>();
+  for (const b of bs) for (const w of b.who ?? []) who.set(w, (who.get(w) ?? 0) + 1);
+  const from = t.from ?? bs[0]?.on, to = t.to ?? (t.state === "closed" ? bs.at(-1)?.on : undefined);
+  return (
+    <>
+      <header className="page-head">
+        <p className="eyebrow">{t.kind === "war" ? "A war" : "A story"}{t.game ? `, the game's “${t.game}”` : ""}</p>
+        <h1>{t.title}</h1>
+        <p className="sub">{from ? formatWestern(from) : ""}{to ? ` to ${formatWestern(to)}` : t.state === "standing" ? ", always running" : ", still open"}</p>
+        {t.premise && <p className="lede">{t.premise}</p>}
+        {t.outcome && <p className="lede"><span className="lab">How it ended</span>{t.outcome}</p>}
+        {t.sides && <dl className="sides">{Object.entries(t.sides).map(([k, v]) => <div key={k}><dt>{k}</dt><dd>{v.join(", ")}</dd></div>)}</dl>}
+        {who.size > 0 && <p className="sub"><span className="lab">In it</span>{[...who.entries()].sort((a, b) => b[1] - a[1]).slice(0, 8).map(([w], i) => <span key={w}>{i ? ", " : ""}<Who id={w} /></span>)}</p>}
+      </header>
+      <Line items={bs} tales={ts} startOpen={bs.filter((b) => !b.minor).length < 8} />
+    </>
+  );
+}
+
+/* ------------------------------------------------------------------ people */
+const lifespan = (p: Person) => `${p.born ? p.born.slice(0, 4) : "?"}–${p.died ? p.died.slice(0, 4) : ""}`;
+function People() {
+  const by = (tier?: string) => Object.entries(cast).filter(([, p]) => p.tier === tier).sort((a, b) => (a[1].born ?? "").localeCompare(b[1].born ?? ""));
+  const Card = ({ id, p }: { id: string; p: Person }) => (
+    <li><a className="th-title" href={`#who-${id}`}>{p.name}</a>{p.arabic && <bdi className="ar" lang="ar" dir="rtl">{p.arabic}</bdi>}<p className="th-n">{lifespan(p)}{p.died ? "" : `, aged ${age(p, now.date)}`}</p><p className="th-premise">{(p.drives?.at(-1)?.text ?? p.roles?.[0] ?? "")}</p></li>
+  );
+  return (
+    <>
+      <header className="page-head"><h1>People</h1><p className="sub">The story is told through a few of them. The rest are on record.</p></header>
+      <section><h2>The story's centre</h2><ul className="threads two">{by("central").map(([id, p]) => <Card key={id} id={id} p={p} />)}</ul></section>
+      <section><h2>Often on the page</h2><ul className="names">{by("key").map(([id, p]) => <li key={id}><Who id={id} full /> <span className="th-n">{lifespan(p)}</span></li>)}</ul></section>
+      <details className="everyone"><summary>Everyone else on record ({by(undefined).length})</summary><ul className="names">{by(undefined).map(([id, p]) => <li key={id}><Who id={id} full /> <span className="th-n">{lifespan(p)}</span></li>)}</ul></details>
+    </>
+  );
+}
+function PersonPage({ id }: { id: string }) {
+  const p = cast[id];
+  if (!p) return <Missing />;
+  const bs = beats.filter((b) => b.who?.includes(id));
+  const ts = tellings.filter((t) => t.who?.includes(id));
+  const children = Object.entries(cast).filter(([, c]) => c.father === id || c.mother === id).sort((a, b) => (a[1].born ?? "").localeCompare(b[1].born ?? ""));
+  const ties = [...(p.ties ?? []).map((t) => ({ ...t, other: t.with })), ...Object.entries(cast).flatMap(([o, c]) => (c.ties ?? []).filter((t) => t.with === id).map((t) => ({ ...t, other: o })))];
+  const alive = !p.died;
+  return (
+    <>
+      <header className="page-head person">
+        {p.arabic && <p className="ar big" lang="ar" dir="rtl">{p.arabic}</p>}
+        <h1>{p.name}</h1>
+        <p className="sub">{p.born ? `Born ${formatWestern(p.born)}` : "Birth unrecorded"}{p.died ? `, died ${formatWestern(p.died)}, aged ${age(p, p.died)}` : p.born ? `, aged ${age(p, now.date)} at the last reckoning` : ""}{p.house ? `. Of the ${p.house} house` : ""}.</p>
+        {!!p.roles?.length && <p className="sub">{p.roles.join("; ")}</p>}
+        <dl className="sides">
+          {(p.father || p.mother) && <div><dt>Parents</dt><dd>{[p.father, p.mother].filter(Boolean).map((x, i) => <span key={x}>{i ? " and " : ""}<Who id={x!} full /></span>)}</dd></div>}
+          {children.length > 0 && <div><dt>Children</dt><dd>{children.map(([c], i) => <span key={c}>{i ? ", " : ""}<Who id={c} /></span>)}</dd></div>}
+          {(p.reigns ?? []).map((r) => <div key={r.from}><dt>Reigned</dt><dd>{formatWestern(r.from)} to {r.to ? formatWestern(r.to) : alive ? "the present" : ""}</dd></div>)}
+        </dl>
+      </header>
+      {!!p.drives?.length && (
+        <section>
+          <h2>What drives {p.sex === "f" ? "her" : "him"}</h2>
+          <ol className="drives">{p.drives.map((d) => <li key={d.from + d.text}><span className="b-date">{d.from.slice(0, 4)}</span><span>{d.text} <span className="th-n">{d.by === "trent" ? "The player's reading." : "The telling's reading."}</span></span></li>)}</ol>
+        </section>
+      )}
+      {ties.length > 0 && (
+        <section>
+          <h2>Allies and rivals</h2>
+          <ul className="ties">{ties.map((t) => <li key={t.other + t.from + t.kind}><span className={`pill tie-${t.kind}`}>{t.kind}</span><Who id={t.other} /> <span className="th-n">{t.from.slice(0, 4)}{t.to ? `–${t.to.slice(0, 4)}` : ""}</span><p className="th-premise">{t.text}</p></li>)}</ul>
+        </section>
+      )}
+      <section>
+        <h2>On the record</h2>
+        {bs.length + ts.length ? <Line items={bs} tales={ts} startOpen /> : <p className="empty">No entry names {p.sex === "f" ? "her" : "him"} yet.</p>}
+      </section>
+      {p.note && <details className="behind"><summary>The long note carried over from the old Chronicle</summary><p>{p.note}</p></details>}
+    </>
+  );
+}
+
+/* ------------------------------------------------------------------ about */
+function About() {
+  return (
+    <article className="about prose">
+      <h1>How the Register is kept</h1>
+      <p>The Register is a prototype of a different companion to the campaign. It holds the same history as the Chronicle, {reckonings.length} reckonings, {beats.length} entries and {tellings.length} tellings, rebuilt around three questions: where does the realm stand, what happened, and how do we know.</p>
+      <h2>Three kinds of thing</h2>
+      <p><strong>A reckoning</strong> is one reading of a save: the count of the realm, the court, and everything learned since the last one. <strong>An entry</strong> is one dated fact in one sentence. <strong>A telling</strong> is the story written over a handful of entries, in the chronicle's voice, and it lists the entries it rests on.</p>
+      <h2>How we know</h2>
+      <p>Every entry carries up to three marks: <FromKey /></p>
+      <p>A telling may invent colour. Whatever it says that isn't among the entries it rests on is invented, and the writer's note under each telling says so in detail.</p>
+      <h2>One file per reckoning</h2>
+      <p>Logging a session means adding one file, <code>reckonings/1451-12-21.yaml</code>, with the count, the entries and any telling. People, wars and stories are small files of their own. Every page here, the line, the threads, each person's record, the open threads on the front, is worked out from those files. Nothing is written twice.</p>
+      <p>The same folder layout would hold any campaign in any game: the measures in the count, the kinds of entry and the calendar are settings in one file.</p>
+      <p className="th-n">{campaign.game}. Played by {campaign.player}. Months of the Hijri year: {HIJRI_MONTHS.slice(0, 3).join(", ")} and the rest, reckoned by the tabular calendar.</p>
+    </article>
+  );
+}
+const Missing = () => <div className="page-head"><h1>Nothing is recorded here</h1><p className="sub"><a href="#now">Go to the realm as it stands</a></p></div>;
+
+/* ------------------------------------------------------------------ the frame */
+export function App() {
+  const r = useRoute();
+  const tab = r.view === "thread" ? "threads" : r.view === "who" ? "people" : r.view === "telling" ? "line" : r.view;
+  const link = (v: string, label: ReactNode) => <a href={`#${v}`} aria-current={tab === v ? "page" : undefined}>{label}</a>;
+  return (
+    <>
+      <header className="top">
+        <div className="wrap">
+          <a className="mark" href="#now"><span>{campaign.title}</span>{campaign.arabic && <bdi className="ar" lang="ar" dir="rtl">{campaign.arabic}</bdi>}</a>
+          <nav aria-label="Sections">{link("now", "Now")}{link("line", "The line")}{link("threads", "Threads")}{link("people", "People")}{link("about", "About")}</nav>
+        </div>
+      </header>
+      <main className="wrap">
+        {r.view === "now" && <Now />}
+        {r.view === "line" && (
+          <>
+            <header className="page-head"><h1>The line of years</h1><p className="sub">{campaign.subtitle}. {beats.length} entries and {tellings.length} tellings, {Y0} to {Y1}.</p></header>
+            <div className="sticky"><Frieze at={r.arg ? +r.arg : undefined} /></div>
+            <Line items={beats} tales={tellings} filters />
+          </>
+        )}
+        {r.view === "threads" && <Threads />}
+        {r.view === "thread" && <ThreadPage id={r.arg!} key={r.arg} />}
+        {r.view === "people" && <People />}
+        {r.view === "who" && <PersonPage id={r.arg!} key={r.arg} />}
+        {r.view === "telling" && <TellingPage id={r.arg!} key={r.arg} />}
+        {r.view === "about" && <About />}
+      </main>
+      <footer className="foot wrap"><p>The Register, a prototype. Reckoned to {formatWestern(now.date)}.</p></footer>
+    </>
+  );
+}

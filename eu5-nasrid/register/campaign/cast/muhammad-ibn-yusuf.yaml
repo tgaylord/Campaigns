@@ -1,0 +1,12 @@
+name: Muḥammad ibn Yūsuf
+arabic: محمد بن يوسف
+house: Naṣrid
+born: '1356-02-26'
+died: '1358-03-15'
+father: yusuf-i
+mother: dua-marinid
+traits:
+  - sickly
+game:
+  id: 16799810
+  name: Muhammad

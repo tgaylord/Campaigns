@@ -1,0 +1,425 @@
+date: '1346-10-18'
+title: Morocco calls
+source:
+  save: SP_GRA_1346_10_18 (compressed)
+  game: 1.4.5
+summary: >-
+  Two days after Morocco declared its war to reclaim al-Andalus on Castile, Portugal and Aragon, with
+  Granada's call to arms unanswered. Shares of power are estimated from the 11 August 1340 reading; no law or
+  privilege has changed since January 1345.
+realm:
+  towns: 18
+  souls: 489849
+  treasury: 29
+  income: 32.9
+  expenses: 27.3
+  debt: 24
+  stability: 10
+  prestige: 1
+  regiments: 3
+  ships: 5
+  manpower: 4138
+court:
+  ruler: yusuf-i
+  heir: faraj-ibn-ismail
+  capital: gharnata
+  council:
+    - who: faraj-ibn-ismail
+      seat: Increase control in Mālaqa
+    - who: ismail-ibn-ismail
+      seat: Promote Granadan sovereignty
+standing:
+  allies:
+    - Morocco
+    - Tunis
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+  estates:
+    - name: Crown
+      power: 21.74
+    - name: Nobility
+      power: 48.51
+      mood: 44
+    - name: ʿUlamāʾ
+      power: 12.54
+      mood: 63
+    - name: Burghers
+      power: 11.31
+      mood: 50
+    - name: Commoners
+      power: 3.67
+      mood: 52
+    - name: Dhimmī
+      power: 2.24
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 475890
+    Sephardi: 11396
+    Ligurian: 1120
+    Hausa: 780
+    Mustaarabi: 480
+    Mandinka: 183
+  faiths:
+    Sunni: 475892
+    Jewish: 11875
+    Catholic: 1119
+    Bori_Religion: 780
+    Nyama: 183
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+  allies:
+    - MOR
+    - TUN
+beats:
+  - id: 1346-10-16-moroccan-war
+    'on': '1346-10-16'
+    kind: war
+    what: >-
+      Morocco declares war again to reclaim al-Andalus, and Castile's alliances bring Portugal and Aragon in
+      beside it: all three crowns of Iberia
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+    cite: checkpoint 1346-10-18
+    detail:
+      casusBelli: cb_reclaim_andalucia
+      attacker: MOR
+      defenders:
+        - CAS
+        - POR
+        - ARA
+        - MLL
+        - CAG
+  - id: 1346-10-18-call-to-arms
+    'on': '1346-10-18'
+    kind: note
+    what: Morocco calls Granada to war, though Granada stands alone on this side of the Strait
+    who:
+      - yusuf-i
+    threads:
+      - second-moroccan-war
+    from:
+      - told
+    cite: >-
+      Trent's account: "The Moroccans are insane. Madness. They have declared another war, dragging all three
+      crowns into the war against the Castilians. And they expect us to join, when we are the only ones on
+      this side of the strait."
+    detail:
+      status: potential
+  - id: 1346-10-18-debt
+    'on': '1346-10-18'
+    kind: realm
+    what: One loan of 24 ducats is all that is left of the debt
+    threads:
+      - estates
+    from:
+      - save
+    cite: checkpoint 1346-10-18
+    detail:
+      debt:
+        from: 95.7
+        to: 23.9
+      loans:
+        from: 4
+        to: 1
+  - id: 1346-10-18-granada-joins
+    'on': '1346-10-18'
+    kind: war
+    what: >-
+      Granada answers Morocco's call and goes to war with Castile, Portugal and Aragon, and the Ṭāʾifa of
+      Balansiyya marches with it
+    who:
+      - yusuf-i
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+    cite: checkpoint 1346-11-08 (joined 18 October 1346)
+    detail:
+      joined:
+        - GRA
+        - VAL
+  - id: 1346-10-18-hospitals
+    'on': '1346-10-18'
+    kind: note
+    what: >-
+      Against the rumoured pestilence the amir is building hospitals in the three great cities, Gharnāṭa,
+      Mālaqa and al-Mariyya
+    who:
+      - yusuf-i
+    where:
+      - gharnata
+      - malaqa
+      - al-mariyya
+    from:
+      - save
+      - told
+    cite: Trent's account; checkpoint 1346-10-18
+    detail:
+      building: hospital
+      locations:
+        - granada
+        - malaga
+        - almeria
+  - id: 1346-10-18-sovereignty
+    'on': '1346-10-18'
+    kind: land
+    what: Sovereignty 48.4, influence −6.8
+    threads:
+      - strait
+    from:
+      - save
+    cite: checkpoint 1346-10-18
+    detail:
+      sovereignty:
+        from: 48.65
+        to: 48.36
+      influence:
+        from: -6.5
+        to: -6.8
+  - id: 1346-10-18-tributary-ends
+    'on': '1346-10-18'
+    kind: land
+    what: >-
+      In taking up arms against Castile, Granada breaks with its overlord: the tributary bond and the parias
+      are suspended while the war decides its independence, and Aragon's reparations cease
+    threads:
+      - second-moroccan-war
+      - strait
+    from:
+      - save
+    cite: checkpoint 1346-11-08; the save of 1347-09-14
+    detail:
+      overlord:
+        from: CAS
+        to: null
+      parias: ended
+      warReparationsFromARA: ended
+      yearsSubject:
+        from: 25
+        to: 0
+      status: fighting for independence (the war lists Granada among subjects fighting for independence)
+  - id: 1346-10-18-tunis-joins
+    'on': '1346-10-18'
+    kind: war
+    what: Tunis and its marches join Morocco's war
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+    cite: checkpoint 1346-10-18
+    detail:
+      joined:
+        - TUN
+        - TRP
+        - GBS
+        - GFS
+        - BIJ
+        - AAA73
+  - id: 1346-10-18-volunteers-rise
+    'on': '1346-10-18'
+    kind: note
+    what: >-
+      The Volunteers of the Faith rise again: the Ghuzāt who broke Aragon return under Yaḥyā Raḥḥū to stand
+      against the united crowns
+    who:
+      - yahya-rahhu
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+      - told
+    cite: Trent's account; the company's strength and its hire date from checkpoint 1346-11-08
+    detail:
+      regiments: 24
+tellings:
+  - id: 0747-06-28-the-debt-paid
+    'on': '1346-10-16'
+    title: Of the Unquiet Years, the Debt Paid, and the End of the Mending
+    verse: 94:5-6
+    who:
+      - yusuf-i
+      - najib
+      - joan-doriola
+      - juan-manuel-enriquez
+    where:
+      - balansiyya
+      - jumalla
+      - gharnata
+    covers:
+      - 1345-01-27-stability
+      - 1345-01-27-loans
+      - 1345-01-27-sovereignty
+      - 1345-01-27-taifa-loyalty
+      - 1345-01-27-court
+      - 1345-01-27-conversion
+      - 1345-07-23-betrothal-tunis
+      - 1345-09-08-betrothal-ghana
+      - 1346-08-01-debt
+      - 1346-08-01-stability
+      - 1346-10-16-moroccan-war
+    text: >
+      A state cannot be remade without being shaken. In the year after the Jamāʿa the realm grew unquiet. The
+      calm that had held through the lean years was gone by Ramaḍān of 745, and the old men of the court could
+      not remember the realm so restless in peace. The cause was the mending itself. The Jamāʿa's reforms were
+      tearing down the old order of the realm and raising a new one in its place: a new Distribution of Power,
+      a new custom at court, old offices and old rights unsettled. And all the while the debt to the estates
+      gnawed at the crown's authority, for a lord who owes his nobles money cannot command them as a lord who
+      does not. The realm was being rebuilt with the roof still on, and everyone under it felt the walls move.
+
+
+      Through it all the sultan held to his course. Six more loans were repaid in that year, and the debt fell
+      to two hundred and eighty-eight dīnārs. The crown now took in more each month than it spent, by nine
+      dīnārs. The realm's sovereignty stood at the barest margin above the half, and the pull of the two
+      shores hung almost even. [Gharnāṭa](place:gharnata) leaned neither toward Qashtāla nor toward Fās.
+
+
+      In the Ṭāʾifas the work of the sultan's envoys bore fruit. [Joan d'Oriola](person:joan-doriola) of
+      [Balansiyya](place:balansiyya) was counted a loyal servant of the throne, and the land he ruled counted
+      eighty thousand Muslims to a hundred and one thousand Christians. [Juan Manuel
+      Enríquez](person:juan-manuel-enriquez), whose Ṭāʾifa of Mursiyya was still only
+      [Jumalla](place:jumalla), was still sullen, though two in three of his people now prayed toward Makka.
+      At court a man of the *ʿulamāʾ* named [Najīb](person:najib) came to notice. He was a man of rare gifts
+      in counsel, in diplomacy and in arms, and stubborn in all three, and the court marked him as one to
+      watch.
+
+
+      The house of Naṣr cast its net wide. In Rabīʿ al-Awwal of 746 a betrothal was agreed with the Ḥafṣids of
+      Tūnis, who had sent gold when gold was needed. In Jumādā al-Ūlā another was agreed with the kings of
+      Ghāna, beyond the great desert, whose gold comes up the caravan roads to the markets of the Maghrib. The
+      sultan meant to have friends on every shore.
+
+
+      By Rabīʿ al-Thānī of 747 the debt was all but gone. Four small loans remained, a hundred and twenty
+      dīnārs or less, where once there had been nearly a thousand. The reforms had gathered power to the
+      crown, and the realm began at last to steady. The state the young sultan had found in debt and tribute
+      ten years before was mended. It was not healed, but it was whole and it was standing.
+
+
+      It was given eleven weeks to enjoy it. On the twenty-eighth of Jumādā al-Ākhira in the year 747 the
+      Marīnid sultan declared war on Qashtāla once again, and the three crowns of the Christians answered as
+      one. Here ends the Book of the Mending of the State.
+
+
+      *So verily, with hardship there is ease. Verily, with hardship there is ease.*
+    behind: >-
+      Book I is written in full now. Two causes come from Trent, not the saves. Stability fell from 34 to 7
+      because of the Jamāʿa's reforms while the debt chipped away at the crown's authority. The burghers
+      soured in 1341 because the crown was squeezing every source of revenue (higher tariffs, small cuts) and
+      the war with Aragon had broken the ties with the Catalan traders, which were only starting to recover in
+      1346. Why Ibn al-Khaṭīb went over to Castile stays open on purpose. The save only shows him as
+      Frederick, Catholic, a Castilian admiral from 8 July 1341. The court's three rumours are invented, and
+      Trent chose to keep them as the chronicle's answer. Also invented colour: the flowers at Ibn al-Khaṭīb's
+      homecoming, the debate in the Jamāʿa, and the wedding in the Alhambra. The Jamāʿa's change of purpose
+      and the marriage during it are Trent's.
+  - id: 0747-07-01-the-houses-of-healing
+    'on': '1346-10-18'
+    title: Of the Rumour out of the East, and the Houses of Healing
+    verse: '57:22'
+    who:
+      - yusuf-i
+    where:
+      - gharnata
+      - malaqa
+      - al-mariyya
+    covers:
+      - 1346-08-01-black-death
+      - 1346-10-18-hospitals
+    text: >
+      In the month of Rabīʿ al-Thānī in the year 747 the merchants who come by sea from Alexandria and Tūnis
+      brought a tale that the court at first took for a sailors' fable. At Yāyiq, they said, far beyond the
+      Sea of the Khazars in the lands of the Golden Horde, a sickness had risen that no physician could name.
+      It came with swellings under the arm and in the groin and with fever and black blood. A man was well at
+      the dawn prayer and dead by the evening one, and whole towns were given over to the dogs. The sickness
+      moved along the roads of the caravans and the lanes of the ships, westward, as a fire moves along a dry
+      slope.
+
+
+      The sultan did not dismiss the tale. He remembered that a plague goes where trade goes, and that no
+      realm in al-Andalus lives by trade as [Gharnāṭa](place:gharnata) does. The Christians of Qashtāla live
+      in villages and walled farms; our people live crowded in the great cities, in the alleys of the
+      Albayzín, in the markets of [Mālaqa](place:malaqa), in the harbour quarter of
+      [al-Mariyya](place:al-mariyya), where every ship from the east puts in. If the sickness came, it would
+      find us first and find us thick on the ground.
+
+
+      So at the beginning of Rajab, in the same days that Fās called the realm to war, our lord
+      [Yūsuf](person:yusuf-i) ordered houses of healing (*bīmāristānāt*) raised in the three great cities,
+      Gharnāṭa, Mālaqa and al-Mariyya. They were to have wards for the sick, cisterns of running water, and
+      physicians paid from the treasury, Muslim and Jewish alike. The debt had been all but paid that summer
+      and the treasury could bear the cost. The nobles grumbled that silver spent on a rumour was silver not
+      spent on lances. The sultan answered that a lance will not turn a fever.
+
+
+      Those who mocked the order would remember it within two years. Those who praised it would learn that
+      walls and wards slow a pestilence but do not stop it, for Allāh's decree outruns the builder.
+
+
+      *No disaster strikes upon the earth or among yourselves except that it is in a register before We bring
+      it into being. Indeed that, for Allāh, is easy.*
+  - id: 0747-07-01-the-summons-of-the-marinids
+    'on': '1346-10-18'
+    title: Of the Summons of the Marīnids, and the Volunteers' Return
+    verse: 55:7-8
+    who:
+      - yusuf-i
+      - yahya-rahhu
+    where:
+      - gharnata
+      - balansiyya
+    covers:
+      - 1346-08-01-sovereignty
+      - 1346-08-01-conversion
+      - 1346-10-16-moroccan-war
+      - 1346-10-18-tunis-joins
+      - 1346-10-18-call-to-arms
+      - 1346-10-18-granada-joins
+      - 1346-10-18-tributary-ends
+      - 1346-10-18-volunteers-rise
+      - 1346-11-08-mobilisation
+    text: >
+      *And the heaven He raised and imposed the balance, that you not transgress within the balance.* So Allāh
+      has set a balance over all things, and over the Strait of the Pillars more than most. On one pan of the
+      scales sit the three crowns of the Christians and on the other the Marīnids of Fās, and between them
+      [Gharnāṭa](place:gharnata), the smallest weight, which both would gladly throw onto their own side. In
+      the summer of 747 the scales began to tip. The realm's own sovereignty, the measure of how far it was
+      master of itself, slipped below the half for the first time in the reign. The dīwān marked it, and did
+      not yet know what it foretold.
+
+
+      On the twenty-eighth of Jumādā al-Ākhira the Marīnid sultan declared war on Qashtāla to reclaim
+      al-Andalus, six years after his host had been broken. The king of Qashtāla called on his friends, and
+      Portugal came in, and Arghūn with Mayūrqa and Qalyari. For the first time all three crowns of Iberia
+      stood in one line. With Fās marched Tāfīlālt, Tuwāt and Tilimsān, and two days later Tūnis and its
+      marches. Then the Marīnid's letter came to Gharnāṭa: our brother in faith expected us to take the field.
+
+
+      The council was divided. We were the only Muslim power on this side of the water and the only one that
+      would face all three crowns at once. We were Qashtāla's tributary and paid its *parias*. The debt to the
+      estates had only just been paid. The Catalan traders, driven off by the war with Arghūn, had only just
+      begun to come back to the markets, and a new war with Arghūn would drive them off again. And the old men
+      remembered that the Marīnids had dragged the realm into its quarrels before and then left it to bear the
+      cost.
+
+
+      But the sultan weighed it and judged that the war would not wait on Gharnāṭa's caution. On the first of
+      Rajab he answered the summons. The Ṭāʾifa of [Balansiyya](place:balansiyya) marched with us, and the
+      land there now held more Muslims than Christians, ninety-two thousand to ninety. Taking up arms against
+      our overlord suspended the tribute, and the war itself would decide the realm's independence. The
+      reparations Arghūn had paid since the peace of 741 ceased the same day.
+
+
+      Then the Volunteers of the Faith rose again. These were the same Ghuzāt who had broken Arghūn at Uryūla,
+      and their old commander [Yaḥyā Raḥḥū](person:yahya-rahhu) led them once more: twenty-four companies of
+      men who wanted nothing so much as the war against the united crowns. By the twenty-second of Rajab the
+      host was raised. There were seventeen regiments of the *mutaṭawwiʿa*, the feudal levies of the nobles,
+      the knights and the jinetes, and a second company of hired soldiers taken on two days before. The
+      treasury held fifty-five dīnārs. The war was costing forty a month against an income of twenty-seven. No
+      one in the dīwān pretended that the realm could bear it for long.

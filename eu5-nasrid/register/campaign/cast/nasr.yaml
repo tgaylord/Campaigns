@@ -1,0 +1,14 @@
+name: Naṣr
+arabic: نصر
+house: Naṣrid
+born: '1287-01-01'
+died: '1322-11-16'
+father: muhammad-ii
+reigns:
+  - from: '1309-03-14'
+    to: '1314-02-08'
+roles:
+  - sultan
+game:
+  id: 3528
+  name: Nasr

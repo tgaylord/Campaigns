@@ -1,0 +1,566 @@
+date: '1414-10-24'
+title: The Jamāʿa of 817
+source:
+  save: SP_ADU_1414_10_24 (compressed)
+  game: 1.4.7
+summary: >-
+  On 24 October 1414 (9 Shaʿbān 817) a Jamāʿa took the empire's mercenary contracts from the umarāʾ, passed a
+  law to curtail them, and bought their votes with estates in the north that made them landlords, not lords.
+  Wrapped in the Umayyad order of the kūras and the new doctrine of the sovereign, it left the nobles
+  near-mutinous, one in ten content, and the realm shaken. The crown holds 162 towns and 2,078,000 people,
+  with nine ṭāʾifas; Abū Ḥammū has ruled Burghush since his father Khālid's death in 1412. Treasury 697,
+  income 284 against 239. Shares of power are estimated from the 31 December 1415 reading.
+realm:
+  towns: 162
+  souls: 2077886
+  treasury: 697
+  income: 283.8
+  expenses: 239
+  stability: -13.1
+  prestige: 87
+  regiments: 9
+  ships: 47
+  manpower: 2676
+court:
+  ruler: ismail-ibn-saad
+  heir: muhammad-ibn-ismail-ibn-saad
+  capital: ishbiliyya
+  council:
+    - who: umm-al-fath-bint-saad
+      seat: Integrating the new lands
+    - who: muhammad-ibn-yusuf-ibn-faraj
+      seat: Integrating the new lands
+    - who: ahmad-ibn-yusuf-ibn-ismail
+      seat: Integrating the new lands
+    - who: yusuf-ibn-saad
+      seat: Developing the provinces
+    - who: jadila-bint-saad-ibn-faraj
+      seat: Encouraging migration
+standing:
+  allies:
+    - Mamluks
+    - Morocco
+    - Tunis
+  subjects:
+    - Valencia (taifa)
+    - Catalonia (taifa)
+    - Aragon (taifa)
+    - Taifa of Salamanca (taifa)
+    - Taifa of Cuenca (taifa)
+    - Taifa of Minho (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+  estates:
+    - name: Crown
+      power: 27.54
+    - name: Nobility
+      power: 19.09
+      mood: 11
+    - name: ʿUlamāʾ
+      power: 10.85
+      mood: 50
+    - name: Burghers
+      power: 20.58
+      mood: 50
+    - name: Commoners
+      power: 2.16
+      mood: 50
+    - name: Dhimmī
+      power: 19.77
+      mood: 50
+peoples:
+  cultures:
+    Castilian: 672580
+    Andalusi: 657682
+    Portuguese: 443038
+    Sephardi: 159778
+    Leonese: 134571
+    Mustaarabi: 3661
+  faiths:
+    Catholic: 1090864
+    Sunni: 829108
+    Jewish: 156837
+    Bori_Religion: 628
+    Nyama: 236
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - CAT
+    - ARA
+    - AAA98
+    - ABA60
+    - ABA10
+    - ABA42
+    - ABA49
+    - ABA55
+  allies:
+    - MAM
+    - MOR
+    - TUN
+beats:
+  - id: 1411-11-27-alliance-of-tunis
+    'on': '1411-11-27'
+    kind: world
+    what: >-
+      Four weeks after the Peace of Rajab the Ḥafṣids of Tūnis enter an alliance with al-Andalus. With Fās and
+      Miṣr, the empire is now allied to every great Muslim power of the Maghrib and to the Mamlūks
+    who:
+      - ismail-ibn-saad
+    from:
+      - save
+    cite: save of 11 August 1420 (the treaty list; the snapshots of 1414 and 1416 were corrected)
+    detail:
+      treaty: alliance, mutual, from 27 November 1411
+  - id: 1412-01-01-funchal
+    'on': '1412-01-01'
+    kind: land
+    what: >-
+      Funchal on Madeira becomes a town of the crown: the empire's first settlement beyond the sea, 1,800
+      souls, peasants and slaves, Castilian by tongue and Muslim by faith
+    who:
+      - ismail-ibn-saad
+    threads:
+      - voyages
+    from:
+      - save
+      - told
+    cite: save of 24 October 1414; Trent's account
+    detail:
+      location: Funchal, Madeira
+      population: 1841
+      popTypes:
+        peasants: 1250
+        slaves: 574
+      culture: Castilian
+      religion: Sunni
+      note: owned from 1 January 1412 by the save's ownership record
+  - id: 1412-01-02-jadila-to-the-diwan
+    'on': '1412-01-02'
+    kind: office
+    what: >-
+      Jadīla bint Saʿd, the heir's young wife and sister of the Shaykha of Qūnka, takes a fifth seat in the
+      dīwān, set to drawing settlers to the realm
+    who:
+      - jadila-bint-saad-ibn-faraj
+      - muhammad-ibn-ismail-ibn-saad
+    from:
+      - save
+    cite: save of 24 October 1414
+    detail:
+      task: encouraging migration
+  - id: 1412-06-24-spice-trade
+    'on': '1412-06-24'
+    kind: world
+    what: >-
+      The age of the spice trade. Word comes that a sea road to the Indies has been found, and pepper and
+      cinnamon are worth more than ever. Ishbīliya and al-Ushbūna are among the seven markets of the West that
+      become ports of the spice trade, with Genoa, Constantinople, Barcelona, Bordeaux and Naples
+    where:
+      - ishbiliyya
+      - al-ushbuna
+    from:
+      - seen
+    cite: Trent's screenshot, 24 June 1412
+    detail:
+      event: >-
+        Spice Trade: the discovery of the East Indian Trade Route has ushered in the age of the Spice Trade;
+        with new trade routes available, controlling the flow of spices like pepper or cinnamon has become
+        more important than ever (the game's text)
+      effects:
+        markets: >-
+          Spice Trade for 20 years in the markets of Genoa, Constantinople, Barcelona, Ishbīliya, Bordeaux,
+          Naples and al-Ushbūna
+        prices: the price of spices rises
+        prestige: '+20'
+      realm:
+        population: 2.051 million
+        stability: 25
+      note: who found the route is not on the screen
+  - id: 1412-08-29-death-of-maryam-bint-yusuf
+    'on': '1412-08-29'
+    kind: death
+    what: >-
+      Maryam bint Yūsuf, daughter of Yūsuf I and the ablest mind of the dīwān for a generation, dies at
+      fifty-five. Her seat passes to Aḥmad ibn Yūsuf, grandson of her brother Ismāʿīl
+    who:
+      - maryam-bint-yusuf
+      - ahmad-ibn-yusuf-ibn-ismail
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 24 October 1414
+    detail:
+      age: 55
+      diwan: from 1396; integrating the new lands
+  - id: 1412-09-02-death-of-khalid
+    'on': '1412-09-02'
+    kind: death
+    what: >-
+      Khālid ibn Yaḥyā Raḥḥū, general of the Marīnid war, captain of the prospectors, victor of Granadilla and
+      first lord of Burghush, dies at sixty-nine. His son Abū Ḥammū succeeds him in Burghush
+    who:
+      - khalid-ibn-yahya
+      - abu-hammu-rahhu
+    from:
+      - save
+    cite: save of 24 October 1414
+    detail:
+      age: 69
+  - id: 1413-01-14-madrasas-everywhere
+    'on': '1413-01-14'
+    kind: realm
+    what: >-
+      With the riches taken from Qashtāla, the Emperor Ismāʿīl orders a madrasa built in every town and city
+      of the empire, not only in the lands the crown holds directly but in the ṭāʾifas too
+    who:
+      - ismail-ibn-saad
+    threads:
+      - towns
+    from:
+      - told
+    cite: Trent's account, 14 January 1413
+    detail:
+      funding: >-
+        the wealth taken from Castile in the War of Jillīqiya (the treasury stood at 816 after the Peace of
+        Rajab)
+      scope: >-
+        every town and city, the ṭāʾifas included (Trent's account, read as 'not just the ones held directly
+        by the crown')
+  - id: 1413-05-01-education-of-the-people
+    'on': '1413-05-01'
+    kind: realm
+    what: >-
+      The Emperor's second order, made in honour of his father: the law of the Education of the People.
+      Knowledge is declared the right of every subject, burgher, peasant, labourer and soldier alike, to the
+      displeasure of the umarāʾ and the ʿulamāʾ
+    who:
+      - ismail-ibn-saad
+      - saad-ibn-yusuf
+    threads:
+      - estates
+    from:
+      - seen
+      - told
+    cite: Trent's screenshot and account, 1 May 1413
+    detail:
+      law: Education of the People (education of the masses)
+      text: >-
+        knowledge and education are two of the most enriching aspects in anyone's life, and therefore the
+        state must ensure our people have access to both. We are all born with free will and free thought, and
+        it is the state's duty to preserve these natural rights, which are held by all our people (the game's
+        text)
+      effects:
+        maxLiteracy: +5% for burghers, peasants, labourers and soldiers
+        nobleSatisfactionEquilibrium: -5%
+        clergySatisfactionEquilibrium: -5%
+        monthlyProgressToInnovative: 0.05
+        monthlyProgressToHumanist: 0.1
+      cost: 20 political influence
+      previously: >-
+        a new law in the slot for the education of the elites; basic religious education for the masses stays
+        in force (save of 24 October 1414)
+      honours: the Emperor Saʿd, his father (Trent)
+  - id: 1414-10-24-jamaa-of-the-mercenaries
+    'on': '1414-10-24'
+    kind: realm
+    what: >-
+      The Emperor calls a Jamāʿa and, in the pomp of victory, takes from the umarāʾ the right to raise and
+      manage the empire's mercenaries, with several smaller reforms against their power. To win their votes he
+      offers dozens of noble families land in the north, or claims on lands still held by Qashtāla for after
+      the next war. The grants make them landlords, not lords: the conquests remain the property of the crown
+      and the house of Naṣr
+    who:
+      - ismail-ibn-saad
+    threads:
+      - estates
+    from:
+      - seen
+      - told
+    cite: Trent's screenshot and account, 24 October 1414
+    detail:
+      assembly: Jamāʿa of 1414
+      revoked:
+        privilege: Feudal Mercenary Contracts (nobles)
+        effects: >-
+          hire mercenary premium cost −20%, mercenary maintenance efficiency +10%, nobles' satisfaction +5%,
+          nobles' power +100%
+        text: >-
+          the armies levied by our people often leave a lot to be desired; in order to protect our people and
+          best our rivals, we must rely on foreign mercenaries, whose contracts will be managed by the elite
+          members of our society (the game's text)
+        costToRemove: 38.91 political influence and −40% nobles' satisfaction
+      otherReforms: several minor reforms to chip away at the power of the umarāʾ (Trent)
+      sweetener: >-
+        settlement of noble families in the north and claims on Castilian-held lands after the next war, with
+        rights resembling landlords rather than feudal lords; the new conquests remain the property of the
+        crown and the family (Trent)
+      thread: 'the crown and the umarāʾ: from 1402 the crown''s aim is to break the power of the nobles'
+  - id: 1414-10-24-rising-at-pamplona
+    'on': '1414-10-24'
+    kind: note
+    what: >-
+      A small and short-lived rising at Pamplona, in the Ṭāʾifa of Banbalūna, gives the Emperor the occasion
+      he wants
+    where:
+      - banbaluna
+    from:
+      - told
+    cite: Trent's account, 24 October 1414
+    detail:
+      note: minor and inconsequential (Trent)
+  - id: 1414-10-24-the-umara-mutinous
+    'on': '1414-10-24'
+    kind: realm
+    what: >-
+      When the umarāʾ read the terms, they turn near-mutinous: their content falls from four in ten to one in
+      ten, and the realm's peace is badly shaken. The crown passes a law to curtail the nobles, and frames the
+      whole as the old Umayyad order of the kūras and the new doctrine of the sovereign. The Emperor sets out
+      to cool tempers through the ṭāʾifas and his diplomacy
+    who:
+      - ismail-ibn-saad
+    threads:
+      - estates
+      - umayyad-claim
+    from:
+      - save
+      - seen
+      - told
+    cite: save of 24 October 1414; Trent's screens and account
+    detail:
+      nobles:
+        satisfaction:
+          - 0.4
+          - 0.107
+        gold: 4620.6
+      stability:
+        - 25
+        - -13.1
+      laws:
+        nobles_rights_laws: >-
+          Curtail the Nobles (from 24 October 1414): as the state grows, it is becoming apparent that the old
+          noble families have too much influence and power (the game's text)
+      advances:
+        Governors of the Kuras (researched): >-
+          crown power +10%, cabinet efficiency +10%: the Umayyads divided al-Andalus into kūras, each under a
+          governor named and recalled by Córdoba, and into three marches under commanders on the frontier; tax
+          registers and judges answer to the capital, not to the governor (the game's text)
+        Sovereignty (next, requires Permanent Cabinet): >-
+          crown power +10%: modern theories of government establish the ruler as supreme authority within the
+          realm, above all other institutions, estates and subjects, while bowing to no earthly power (the
+          game's text)
+      plan: tempers to be cooled through the ṭāʾifas and skilled diplomacy (Trent)
+      diwan:
+        Umm al-Fatḥ: integrating
+        Muḥammad ibn Yūsuf: integrating
+        Aḥmad ibn Yūsuf: integrating
+        Yūsuf ibn Saʿd: developing the provinces (from 1 November 1411)
+        Jadīla bint Saʿd: encouraging migration (from 2 January 1412)
+      realm:
+        towns: 162
+        population: 2077886
+        income: 283.8
+        expenses: 239
+        treasury: 697
+tellings:
+  - id: 0815-03-14-of-the-captains-of-811-and-the-pepper-of-the-indies
+    'on': '1412-06-24'
+    title: Of the Captains of 811, and the Pepper of the Indies
+    verse: '31:31'
+    who:
+      - ismail-ibn-saad
+    where:
+      - ishbiliyya
+      - al-ushbuna
+    covers:
+      - 1408-10-11-expeditions
+      - 1412-01-01-funchal
+      - 1412-06-24-spice-trade
+      - 1397-08-14-explorers-push-south
+    text: >
+      The old Emperor had sent his kinsmen to sea. His son sent whoever would serve him best. In Jumādā al-Ūlā
+      811, while the dīwān was still busy with the lands of the north, four expeditions put to sea from the
+      ports of [Ishbīliya](place:ishbiliyya) and the coast. One went south, to follow the coast of Africa
+      further than any ship of al-Andalus had gone. One went to the islands that had been found off the
+      western coast, beyond Mali. And two went to the islands the Christian sailors called the Canaries and
+      Madeira, which the geographers called the Eternal Isles. A fifth captain was at sea already: ʿAbd
+      al-Ghafūr, an Andalusī of the merchant class with a rare gift for talking to strangers, had been in the
+      sea of the Azores since before the year began.
+
+
+      The captain who went south was a Sephardi named Daniel, who had come to Islam and kept the name he was
+      born with. The Sephardim had been under the Emperor's protection since the year of Avignon, and the
+      scribes recorded with some pride that the first of them to command a ship of the empire had sailed
+      further from home than anyone. By 813 he was in the gulf below the bulge of Africa, where the coast
+      turns east and the stars of the north sink into the sea.
+
+
+      The captain who went to the islands beyond Mali was stranger still. He was García of Ponte de Sor, a
+      Portuguese noble and a Christian, who in 808 had led the rebels of Estremadura against the walls of
+      [al-Ushbūna](place:al-ushbuna) and been thrown back. Three years later he sailed under the Emperor's
+      flag. The Emperor [Ismāʿīl](person:ismail-ibn-saad) had a way of turning men, and he never explained to
+      the dīwān how he had turned this one. By 813 García was off the islands of the Green Cape, charting
+      their harbours.
+
+
+      The voyages to the islands did more than chart them. On the first day of 1412 by the Christian
+      reckoning, Funchal on Madeira became a town of the crown, the first the empire had ever held beyond the
+      sea: eighteen hundred souls, peasants and slaves, who spoke Castilian and prayed as Muslims.
+
+
+      In Rabīʿ al-Awwal 815 news reached Ishbīliya that changed the worth of everything the captains were
+      doing. A sea road to the Indies had been found. For as long as anyone remembered, the pepper and
+      cinnamon of the East had come overland, through the hands of the Mamlūks and the Venetians, and every
+      hand had taken its share. Now there was another way. The price of spices rose in every market of the
+      West, and seven markets became the ports of the new trade: Genoa, Constantinople, Barcelona, Bordeaux,
+      Naples, and two of the Emperor's own, Ishbīliya and al-Ushbūna. The merchants of the capital said the
+      Emperor's father had moved the court to the river for exactly this day, and that he had only been thirty
+      years early.
+
+
+      *Do you not see that the ships sail through the sea by the favour of Allāh, that He may show you of His
+      signs?*
+  - id: 0816-01-29-of-the-madrasas-of-815
+    'on': '1413-05-01'
+    title: Of the Madrasas of 815, and the Children of the House
+    verse: 20:114
+    who:
+      - ismail-ibn-saad
+      - saad-ibn-yusuf
+      - fatima-bint-yusuf
+      - isabel-de-montsoriu
+      - saad-ibn-ismail-ibn-saad
+      - maryam-bint-saad-ibn-faraj
+      - abu-al-hasan-ali-ibn-saad
+    where:
+      - qunka
+      - al-ushbuna
+      - shantarin
+    covers:
+      - 1409-09-18-death-of-fatima
+      - 1410-04-17-birth-of-abu-al-hasan-ali
+      - 1411-11-01-the-end-of-portugal
+      - 1413-01-14-madrasas-everywhere
+      - 1413-05-01-education-of-the-people
+      - 1397-08-14-infrastructure
+    text: >
+      In Jumādā al-Ūlā 812 the house of Naṣr lost [Fāṭima](person:fatima-bint-yusuf), the daughter of Yūsuf I
+      who had married into the Catalan house of Montsoriu. She had been given to Francesc de Montsoriu in the
+      year of the Restoration, when the Ṭāʾifa of Catalonia was made, and she left behind a son who ruled
+      Catalonia, a daughter married to the lord of Shalamanka, and another,
+      [Isabel](person:isabel-de-montsoriu), who was the wife of the heir. So the blood of Yūsuf I ran in three
+      of the ṭāʾifas and in the crown itself. In Dhū al-Ḥijja of the same year a son was born to the Emperor's
+      son [Saʿd](person:saad-ibn-ismail-ibn-saad) and the Shaykha [Maryam](person:maryam-bint-saad-ibn-faraj)
+      of [Qūnka](place:qunka). They named him [Abū al-Ḥasan ʿAlī](person:abu-al-hasan-ali-ibn-saad), and the
+      frontier had its first heir of the new line.
+
+
+      The Peace of Rajab had filled the treasury and emptied the kingdom of Portugal, and it left the Emperor
+      [Ismāʿīl](person:ismail-ibn-saad) ruling more Christians than any Muslim prince since the conquest. His
+      father had answered the north with madrasas at [al-Ushbūna](place:al-ushbuna) and
+      [Shantarīn](place:shantarin) and a handful of other towns. Ismāʿīl meant to answer it everywhere. On 11
+      Shawwāl 815, ten days after the feast at the end of Ramaḍān, he ordered a madrasa built in every town
+      and city of the empire, and he did not stop at the crown's own lands. The ṭāʾifas were to have them too,
+      from Burtuqāl to Banbalūna, and the gold taken from Qashtāla would pay for them.
+
+
+      The ʿulamāʾ had never been given so much at once, and they said so from every minbar. The lords of the
+      ṭāʾifas were less pleased to find the Emperor's teachers in their towns, but none of them could refuse a
+      gift paid for by the Emperor's own treasury. In the dīwān the Emperor gave his reasons in the plain way
+      he kept for matters he meant to see done. A conquered town that has a garrison obeys while the garrison
+      is there, he said. A town that has a madrasa will obey after the garrison has gone, and its children
+      will not need to be conquered at all.
+
+
+      His second order came on 29 Muḥarram 816, and he made it in honour of his father. The Emperor
+      [Saʿd](person:saad-ibn-yusuf) had sent the costliest tutors in the Islamic world to his sons and paid
+      the estates every dirham he owed them, and the clerks had written of him that he left the country a more
+      honest place. Ismāʿīl now gave his father's realm a law of the Education of the People. Its preamble
+      said that knowledge was the right of every subject, and that all men are born with free will and free
+      thought, which the state must protect. The burgher, the peasant, the labourer and the soldier were all
+      to have their chance at letters. The umarāʾ grumbled that a ploughman who could read would soon stop
+      ploughing. The ʿulamāʾ, who had just been given a madrasa in every town, grumbled that the law spoke of
+      free thought and not of faith. The Emperor told them both that his father would have signed it, and
+      signed it.
+
+
+      *And say: My Lord, increase me in knowledge.*
+  - id: 0817-08-09-of-the-jamaa-of-817-and-the-landlords-of-the-north
+    'on': '1414-10-24'
+    title: Of the Jamāʿa of 817, and the Landlords of the North
+    verse: 12:76
+    who:
+      - ismail-ibn-saad
+      - saad-ibn-yusuf
+    where:
+      - banbaluna
+      - ishbiliyya
+      - qurtuba
+    covers:
+      - 1410-09-01-catalan-privileges-return
+      - 1414-10-24-rising-at-pamplona
+      - 1414-10-24-jamaa-of-the-mercenaries
+      - 1414-10-24-the-umara-mutinous
+      - 1402-08-the-umara
+      - 1402-09-jamaa-of-the-markets
+    text: >
+      In Shaʿbān 817 a handful of malcontents rose at [Banbalūna](place:banbaluna) and were put down before
+      the news of their rising had crossed the Ebro. It was nothing, and the Emperor
+      [Ismāʿīl](person:ismail-ibn-saad) made a great deal of it. He told the dīwān that the north was
+      restless, that the empire's armies must be ready to march at a word, and that the old ways of raising
+      them would not serve. He called a Jamāʿa at [Ishbīliya](place:ishbiliyya) for 9 Shaʿbān.
+
+
+      For a generation the hiring of foreign soldiers had been the business of the umarāʾ. The great families
+      signed the contracts, paid the captains and kept the companies, and every mercenary in the empire's
+      service owed his wages, and so his loyalty, to some lord of the Andalusī houses before he owed it to the
+      crown. The Emperor [Saʿd](person:saad-ibn-yusuf) had seen the danger in that, and from the year 805 the
+      dīwān's policy had been to break the power of the umarāʾ now that the state was built. Ismāʿīl now laid
+      before the Jamāʿa a law to take the contracts away from them, and with it several smaller reforms, each
+      of which took a little more. He had an old ally in it. In Jumādā al-Ūlā 813 the Catalan merchant
+      privileges had come back into force, sixty-four years after the war of the three crowns had ended them.
+      They had always been the first thing lost whenever al-Andalus went to war with the Catalans, and they
+      had always weakened the great lords in favour of the crown. Now Catalonia, Arghūn and Balansiyya were
+      all ṭāʾifas of the Emperor, there could be no more wars with the Catalans, and the privileges were the
+      crown's for good.
+
+
+      He did not present it as a loss. He came to the assembly with the banners of Cuéllar and Toro carried
+      before him and the keys of Porto on a cushion, and he spoke of the north. The empire had won more land
+      in the War of Jillīqiya than the house of Naṣr had held when he was born, he said, and it needed men of
+      good family to settle it. He offered dozens of the noble houses estates in the conquered lands, and to
+      others he offered claims on lands Qashtāla still held, to be theirs when the next war was won. The
+      umarāʾ had been grumbling for twelve years. Now they went home talking of the castles they would build
+      in León and the vineyards they would have on the Ebro, and they voted for the law.
+
+
+      It was some time before they read the grants closely. The lands were theirs to live on and to draw rents
+      from, but the grants gave them no courts, no levies and no lordship over the people who worked the land.
+      They had become landlords, not lords. The conquests of Jillīqiya were still the property of the crown
+      and the house of Naṣr, and the mercenaries now drew their pay from the Emperor's treasury. The court
+      remembered that the Emperor's tutors had once said he could tell every man what he wished to hear, and
+      the umarāʾ, who had heard exactly what they wished, had only themselves to blame.
+
+
+      When they understood, the umarāʾ came very near to rising. Not one great house in ten was content with
+      the crown, and the peace of the realm was more shaken than it had been since the risings of 807. The
+      Emperor had expected it. He had dressed the law in the oldest authority al-Andalus knew. The Umayyads,
+      he reminded the dīwān, had divided the land into kūras, each under a governor named and recalled by
+      [Qurṭuba](place:qurtuba), with the tax registers and the qāḍīs answering to the capital and not to the
+      governor. That was the order of the caliphs, and he was only restoring it. To the younger men of the
+      chancery he spoke of a newer idea, that a sovereign stands above every estate and bows to no earthly
+      power. The old families heard the first argument and the young secretaries the second, and he meant both
+      to be heard.
+
+
+      Then he set about cooling tempers. He sent the angriest lords north to the ṭāʾifas, where kinsmen of the
+      house of Naṣr sat on most of the thrones and could give them honours, wives and offices that cost the
+      crown nothing. He wrote to each great house himself, in the style the Dīwān al-Inshāʾ had taught a
+      generation of secretaries, and to each he said something a little different. In the dīwān a law to
+      curtail the nobles was passed with little noise while the letters were still on the road.
+
+
+      *We raise in degrees whom We will, and over every possessor of knowledge is one more knowing.*

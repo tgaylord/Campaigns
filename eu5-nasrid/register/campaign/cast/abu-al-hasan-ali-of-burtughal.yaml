@@ -1,0 +1,25 @@
+name: Abū al-Ḥasan ʿAlī ibn Aḥmad of al-Burtughāl
+arabic: أبو الحسن علي بن أحمد
+house: Naṣrid
+born: '1394-08-05'
+died: '1448-06-01'
+father: ahmad-ibn-ismail-ibn-yusuf
+roles:
+  - king of the Ṭāʾifa of al-Burtughāl
+traits:
+  - level_headed
+stations:
+  - role: admiral
+    from: '1447-07-02'
+    to: '1448-06-01'
+    source: save
+    approx: false
+note: >-
+  Son of Aḥmad ibn Ismāʿīl, the first ṭāʾifa king of al-Burtughāl, whom he succeeded as king. In the Tunisian
+  war for Palermo he commanded his own ships: on 9 September 1447 two Sicilian ships drove three of his off
+  western Corsica. He died at sea on 1 June 1448. His widow Christine bore him a daughter, ʿĀʾisha, the next
+  day, and has ruled as regent for their elder daughter Fāṭima, born 31 December 1440, since his death (saves
+  of 5 October 1447 and 1 February 1449).
+game:
+  id: 16791257
+  name: Abu al-Hasan Ali

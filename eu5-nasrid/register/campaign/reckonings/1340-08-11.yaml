@@ -1,0 +1,347 @@
+date: '1340-08-11'
+title: The peace with Aragon
+source:
+  save: SP_GRA_1340_08_11 (compressed)
+  game: 1.4.5
+summary: >-
+  The day of the peace with Aragon: thirteen locations ceded, from Balansiyya south, and war reparations for
+  ten years. The dhimmī share is read off Trent's tooltip (140.53 of 961.60); the other shares are estimated
+  and scaled to that screen's total.
+realm:
+  towns: 31
+  souls: 683503
+  treasury: 674
+  income: 29.9
+  expenses: 54
+  debt: 964
+  stability: 32
+  prestige: 25
+  regiments: 19
+  ships: 5
+  manpower: 4322
+court:
+  ruler: yusuf-i
+  heir: faraj-ibn-ismail
+  capital: gharnata
+  council:
+    - who: faraj-ibn-ismail
+      seat: Increase control in Mālaqa
+    - who: yusuf-ibn-muhammad
+      seat: Promote Granadan sovereignty
+standing:
+  allies:
+    - Morocco
+    - Tunis
+  estates:
+    - name: Crown
+      power: 14.15
+    - name: Nobility
+      power: 45.18
+      mood: 34
+    - name: ʿUlamāʾ
+      power: 12.13
+      mood: 50
+    - name: Burghers
+      power: 9.89
+      mood: 60
+    - name: Commoners
+      power: 4.03
+      mood: 57
+    - name: Dhimmī
+      power: 14.61
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 527035
+    Catalan: 96249
+    Aragonese: 25489
+    Sephardi: 19045
+    Castilian: 13875
+    Ligurian: 1799
+  faiths:
+    Sunni: 517395
+    Catholic: 147290
+    Jewish: 18806
+    Nyama: 12
+map:
+  ours:
+    - GRA
+  allies:
+    - MOR
+    - TUN
+beats:
+  - id: 1340-06-07-battle-moron
+    'on': '1340-06-07'
+    kind: battle
+    what: Morocco wins at Morón
+    minor: true
+    threads:
+      - moroccan-castilian-war
+    from:
+      - save
+    cite: checkpoint 1340-08-11
+    detail:
+      result: victory
+      ours: 5442
+      theirs: 11012
+      ourLosses: 2071
+      theirLosses: 4309
+      side: Morocco (Granada not engaged)
+  - id: 1340-06-20-second-battle-uryula
+    'on': '1340-06-20'
+    kind: battle
+    what: 'The second battle of Uryūla: Navarre, Majorca and Aragon fail to throw the host into the sea'
+    who:
+      - ibn-al-khatib
+    where:
+      - uryula
+    threads:
+      - war-on-aragon
+    from:
+      - seen
+    cite: Trent's screenshots
+    detail:
+      result: victory
+      defending: true
+      ended: '1340-07-01'
+      ours: 18028
+      theirs: 13071
+      ourLosses: 2304
+      theirLosses: 7539
+      warScore: 25
+      enemyLead: Navarre
+      treasuryAfter: 65.7
+      monthlyBalanceAfter: -21.21
+  - id: 1340-07-04-battle-siyasa
+    'on': '1340-07-04'
+    kind: battle
+    what: Tunis beaten at Siyāsa
+    minor: true
+    threads:
+      - moroccan-castilian-war
+    from:
+      - save
+    cite: checkpoint 1340-08-11
+    detail:
+      result: defeat
+      ours: 2521
+      theirs: 6161
+      ourLosses: 1155
+      theirLosses: 221
+      side: Tunis (Granada not engaged)
+  - id: 1340-07-27-hunger
+    'on': '1340-07-27'
+    kind: note
+    what: Cut off from home, the host holds off starvation, but only barely
+    threads:
+      - war-on-aragon
+    from:
+      - told
+    cite: Trent's account
+  - id: 1340-07-27-jumalla-falls
+    'on': '1340-07-27'
+    kind: battle
+    what: Jumalla falls to the main army
+    who:
+      - ibn-al-khatib
+    where:
+      - jumalla
+    threads:
+      - war-on-aragon
+    from:
+      - told
+    cite: Trent's account
+    detail:
+      result: taken
+      owner: ARA
+  - id: 1340-08-11-bluff
+    'on': '1340-08-11'
+    kind: note
+    what: >-
+      The bluff: the sultan threatens to march on Barcelona, though the host could scarcely have passed
+      Shāṭiba
+    where:
+      - shatiba
+    threads:
+      - war-on-aragon
+    from:
+      - told
+    cite: Trent's account
+    detail:
+      ours: 16000
+      theirs: 6000
+  - id: 1340-08-11-peace-aragon
+    'on': '1340-08-11'
+    kind: peace
+    what: 'Peace with Aragon: thirteen locations ceded from Balansiyya south, and reparations for ten years'
+    where:
+      - balansiyya
+      - shatiba
+      - daniya
+      - al-qant
+      - alsh
+      - qandiya
+      - al-quy
+      - ayura
+      - bunyul
+      - shalba
+      - liriya
+      - uryula
+      - jumalla
+    threads:
+      - war-on-aragon
+    from:
+      - save
+    cite: checkpoint 1340-08-11
+    detail:
+      ceded:
+        - valencia
+        - jativa
+        - denia
+        - alicante
+        - elche
+        - gandia
+        - alcoy
+        - ayora
+        - bunol
+        - chelva
+        - lliria
+        - orihuela
+        - jumilla
+      reparationsUntil: '1350-08-11'
+      treasury:
+        before: 121
+        after: 674
+  - id: 1340-08-11-territory
+    'on': '1340-08-11'
+    kind: land
+    what: >-
+      Granada grows from 18 locations to 31 and from 485,000 souls to 683,500, with 96,000 Catalans, 25,000
+      Aragonese and 147,000 Christians
+    from:
+      - save
+    cite: checkpoint 1340-08-11
+    detail:
+      locations:
+        from: 18
+        to: 31
+      population:
+        from: 485485
+        to: 683503
+tellings:
+  - id: 0741-01-05-the-second-battle-of-uryula
+    'on': '1340-07-01'
+    title: Of the Winter before Uryūla, the Closing of the Road, and the Second Battle
+    verse: 2:250
+    who:
+      - ibn-al-khatib
+      - yahya-rahhu
+      - yusuf-i
+    where:
+      - uryula
+      - mursiyya
+    covers:
+      - 1339-11-08-volunteers-withdraw
+      - 1340-03-09-estate-loans
+      - 1340-05-26-battle-mursiyya
+      - 1340-05-30-uryula-falls
+      - 1340-05-30-road-cut
+      - 1340-05-30-nobles-discontent
+      - 1340-06-20-second-battle-uryula
+    text: >
+      All that winter the host lay before [Uryūla](place:uryula). When the supplies ran short, the Volunteers
+      of the Faith under [Yaḥyā Raḥḥū](person:yahya-rahhu) drew back to find bread, while [Ibn
+      al-Khaṭīb](person:ibn-al-khatib) kept the siege lines with the rest. The sultan raised more men to carry
+      food and paid for everything with borrowed gold. By the ninth of Ramaḍān in the year 740 the treasury
+      owed the estates of the realm more than thirteen hundred and fifty dīnārs. The estates lent freely and
+      asked their price in return. With every dīnār lent, their voice in the dīwān grew louder and the crown's
+      grew fainter. By spring the nobles spoke louder in the affairs of the state than all the rest together,
+      and the crown's own voice was barely heard.
+
+
+      On the second of Dhū al-Ḥijja, after nearly seven months, Uryūla opened its gates. That same week came
+      the news that undid the joy of it. Four days earlier the Castilians had fallen on the Tlemcenī garrison
+      of [Mursiyya](place:mursiyya) and killed seven hundred of them, and now they besieged the town. The road
+      by which the host had come was closed. There was no way home but through the enemy, so the host stood
+      where it was and made ready. And in the realm the nobles, their satisfaction worn thin, began to mutter
+      in their castles.
+
+
+      They did not have to wait long. On the twenty-third of Dhū al-Ḥijja the kings of Nabarra, Mayūrqa and
+      Arghūn came down together to throw the Muslims into the sea, thirteen thousand of them under the same
+      captain who had been beaten before the same walls. Eighteen thousand of ours held the ground and the
+      town behind them. The fight lasted into the new year. On the fifth of Muḥarram 741 the Christians broke,
+      leaving seven and a half thousand of their number on the field. We lost two thousand three hundred.
+      Twice now Ibn al-Khaṭīb had beaten that captain before Uryūla, and the war turned further in our favour.
+
+
+      *Our Lord, pour upon us patience and plant firmly our feet and give us victory over the disbelieving
+      people.*
+  - id: 0741-02-16-the-peace-of-balansiyya
+    'on': '1340-08-11'
+    title: Of the Bluff before Shāṭiba, and the Peace of Balansiyya
+    verse: '3:26'
+    who:
+      - yusuf-i
+      - ibn-al-khatib
+    where:
+      - jumalla
+      - shatiba
+      - balansiyya
+      - daniya
+      - al-qant
+      - alsh
+      - qandiya
+      - al-quy
+      - ayura
+      - bunyul
+      - shalba
+      - liriya
+      - uryula
+      - gharnata
+    covers:
+      - 1340-07-27-jumalla-falls
+      - 1340-07-27-hunger
+      - 1340-08-11-bluff
+      - 1340-08-11-peace-aragon
+      - 1340-08-11-territory
+      - 1340-08-14-demobilised
+    text: >
+      On the first of Ṣafar in the year 741 [Jumalla](place:jumalla) fell to the main army, the same town
+      where the war had first drawn blood a year before. The host had won every battle it fought, but it was
+      starving. Each day the quartermasters found less to put in the pot, and the road home was still closed
+      at Mursiyya.
+
+
+      But the enemy did not know it. The army of Arghūn and its allies had dwindled to some six thousand men,
+      and ours stood near sixteen thousand: the Volunteers at Alsh, [Ibn al-Khaṭīb](person:ibn-al-khatib)'s
+      host at Jumalla. So the sultan wrote to the Aragonese king in his own hand. He did not ask for peace. He
+      named the towns he would take in it, and told the king plainly that unless he made it, the army of
+      [Gharnāṭa](place:gharnata) would march up the coast and burn Barshalūna to the ground. In truth the host
+      would hardly have passed the fortress of [Shāṭiba](place:shatiba). Had the king known it, the war would
+      have ended in ruin instead of glory. He did not know it. Allāh veiled our hunger from his eyes and
+      showed him only our banners.
+
+
+      On the sixteenth of Ṣafar 741 the peace was sealed. Arghūn gave up everything south of al-Qasṭalyūn and
+      Tīrwāl. That meant [Balansiyya](place:balansiyya) the great city, lost to the Christians a hundred and
+      two years before, and Shāṭiba of the fortress, [Dāniya](place:daniya) and [Qandiya](place:qandiya) on
+      the coast, [al-Qant](place:al-qant) and [Alsh](place:alsh), [al-Qūy](place:al-quy),
+      [Ayūra](place:ayura), [Bunyūl](place:bunyul), [Shalba](place:shalba) and [Līriya](place:liriya),
+      together with [Uryūla](place:uryula) and Jumalla, where our men had bled. He agreed as well to pay
+      reparations for ten years, and the treasury, which had held a hundred and twenty dīnārs in Dhū al-Ḥijja,
+      held six hundred and seventy by the day of the peace.
+
+
+      So the realm that had been eighteen towns grew to thirty-one, and its souls from four hundred and
+      eighty-five thousand to six hundred and eighty-three thousand. Among them now are a hundred and
+      forty-seven thousand Christians, Catalans and Aragonese and Castilians, who must be ruled justly if they
+      are to be ruled at all. Three days after the peace the sultan paid the hired companies their wages early
+      and sent them away, and put the host back on peacetime pay. The treasury fell to four hundred and
+      seventy, but the monthly loss shrank from twenty-four dīnārs to five. The debt to the estates remains,
+      and the nobles remain sullen. But Gharnāṭa is no longer only a jewel in a narrow ring. *Say: O Allāh,
+      Owner of Sovereignty, You give sovereignty to whom You will.*
+    behind: >-
+      From the saves: the estate loans, Uryūla, the garrison lost at Murcia, both battles of Uryūla, the towns
+      ceded, the reparations, the treasury and the population. From Trent's account: the road cut, the hunger,
+      Jumilla's fall, the bluff and the armies behind it, and the paying-off of the mercenaries.

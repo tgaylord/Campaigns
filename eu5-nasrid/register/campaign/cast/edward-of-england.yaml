@@ -1,0 +1,28 @@
+name: Edward IV of England
+house: Plantagenet
+born: '1330-06-15'
+died: '1386-07-10'
+roles:
+  - king of England
+traits:
+  - embezzler
+  - battlefield_medic
+  - silver_tongue
+stations:
+  - role: admiral
+    from: '1378-03-31'
+    to: '1378-04-12'
+    source: save
+    approx: false
+  - role: general
+    from: '1379-02-24'
+    to: '1379-03-25'
+    source: save
+    approx: false
+note: >-
+  King of England from 18 July 1370. His crown holds more land through its subjects (Wales, Ireland,
+  Aquitaine, Burgundy, Flanders, Brittany and more) than in England itself. Died 1386-07-10 (save of 24
+  October 1414).
+game:
+  id: 98
+  name: Edward

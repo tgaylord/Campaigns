@@ -1,0 +1,897 @@
+date: '1404-02-03'
+title: The Crusade of 806
+source:
+  save: SP_ADU_1404_02_03 (compressed)
+  game: 1.4.6
+summary: >-
+  On 1 February 1404 the Pope proclaims the first crusade against al-Andalus and declares war on the Ṭāʾifa of
+  Aragon; the Emperor answers for his subject, with the Mamlūks, Morocco and all six ṭāʾifas beside him.
+  Against him stand the Papal States, Faenza, Siena and a few German princes, some 5,100 men. Since 1395: the
+  two ṭāʾifas of Shalamanka and Qūnka, the Dīwān al-Inshāʾ, the Highland Survey's silver and iron, the
+  burghers' privileges and the jewellers' charter. The realm holds 148 towns and 1,833,000 people; the game
+  ranks it fourth. Income 200 a month against 165; the treasury stands at 51. Shares of power are estimated
+  from the 1 June 1349 reading.
+realm:
+  towns: 148
+  souls: 1832665
+  treasury: 51
+  income: 199.6
+  expenses: 164.6
+  stability: 22
+  prestige: 97
+  regiments: 9
+  ships: 32
+  manpower: 2571
+court:
+  ruler: saad-ibn-yusuf
+  heir: ismail-ibn-saad
+  capital: ishbiliyya
+  council:
+    - who: umm-al-fath-bint-saad
+      seat: Integrating the new lands
+    - who: ismail-ibn-yusuf
+      seat: Integrating the new lands
+    - who: maryam-bint-yusuf
+      seat: Integrating the new lands
+    - who: ismail-ibn-saad
+      seat: Promoting Andalusī culture
+standing:
+  wars:
+    - crusade-of-806
+  allies:
+    - Mamluks
+    - Morocco
+  subjects:
+    - Valencia (taifa)
+    - Taifa of the Algarve (taifa)
+    - Catalonia (taifa)
+    - Aragon (taifa)
+    - Taifa of Salamanca (taifa)
+    - Taifa of Cuenca (taifa)
+  estates:
+    - name: Crown
+      power: 33.13
+    - name: Nobility
+      power: 23.09
+      mood: 40
+    - name: ʿUlamāʾ
+      power: 9.07
+      mood: 50
+    - name: Burghers
+      power: 9.87
+      mood: 52
+    - name: Commoners
+      power: 3.41
+      mood: 50
+    - name: Dhimmī
+      power: 21.45
+      mood: 50
+peoples:
+  cultures:
+    Castilian: 658208
+    Andalusi: 606570
+    Portuguese: 291312
+    Sephardi: 138010
+    Leonese: 128775
+    Mustaarabi: 3596
+  faiths:
+    Catholic: 1089342
+    Sunni: 605743
+    Jewish: 136599
+    Bori_Religion: 614
+    Nyama: 237
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - ALV
+    - CAT
+    - ARA
+    - AAA98
+    - ABA60
+  allies:
+    - MAM
+    - MOR
+beats:
+  - id: 1396-03-13-majrit-and-tulaytula
+    'on': '1396-03-13'
+    kind: note
+    what: >-
+      Majrīṭ and Ṭulayṭula: a rising town and a growing industry. On the flat plains of the Tagus and the
+      Manzanares the crown is building another centre of Andalusī power in the heart of the peninsula:
+      weaponsmiths at Ṭulayṭula, mines, wheat farms and lumber mills in the country between the two cities and
+      up to the Guadarrama
+    who:
+      - saad-ibn-yusuf
+    where:
+      - majrit
+      - tulaytula
+    from:
+      - seen
+      - told
+    cite: Trent's account and map screen, 13 March 1396
+    detail:
+      underConstruction:
+        - weaponsmiths at Ṭulayṭula
+        - >-
+          a mine and a lumber mill toward the Guadarrama, by Colmenar (the game's Qelmnar) and Buitrago del
+          Lozoya
+        - wheat farms on the plain
+        - further works between Toledo and Madrid (Trent's map screen shows seven building sites in progress)
+      note: >-
+        Trent's map screen of 13 March 1396 uses the game's Arabic-style names Ṭlayṭla and Qelmnar; Madrid
+        itself is the 'new rising town'
+  - id: 1397-08-14-explorers-push-south
+    'on': '1397-08-14'
+    kind: note
+    what: >-
+      The explorations go on as the empire's explorers round the coast of Africa and push south. Two of the
+      Emperor's kin lead them: his brother-in-law Muḥammad al-Aḥmar charts the Canary Islands, and his cousin
+      Ismāʿīl ibn Muḥammad al-ʿĀbid the seas of southern Macaronesia toward Cape Verde
+    who:
+      - muhammad-ibn-ismail
+      - ismail-ibn-muhammad-al-abid
+    threads:
+      - voyages
+    from:
+      - save
+      - told
+    cite: Trent's account, August 1397; autosave of 1 June 1397
+    detail:
+      explorations:
+        Canary Islands:
+          explorer: Muḥammad ibn Ismāʿīl al-Aḥmar, 64 (51/70/60), explorer from 10 February 1396
+          from: Ishbīliya
+          position: off Aguere, Tenerife (1 June 1397)
+        southern Macaronesia (Cape Verde):
+          explorer: Ismāʿīl ibn Muḥammad al-ʿĀbid, 47 (40/36/66), explorer from 19 February 1396
+          from: Coria del Río
+          position: off Funchal, Madeira (1 June 1397)
+      alreadyKnown: the north-west African coast and the seas of the Azores and Madeira
+      rivals: Castile is exploring the Azores; another power is in the Madeira sea
+      note: >-
+        Khayr al-Dīn al-Jayyānī's voyage of 1391 and the Azores and Madeira expeditions of 1392 are no longer
+        active in the save; their explorers' names are not recorded there
+  - id: 1397-08-14-infrastructure
+    'on': '1397-08-14'
+    kind: realm
+    what: >-
+      A new round of building across the empire. Bridges and madrasas go up in the new lands, a madrasa among
+      them at al-Ushbūna, and a chain of acequias, irrigation canals fed from the hills, is dug along the
+      great river from the capital to Qurṭuba to feed the growing population
+    who:
+      - saad-ibn-yusuf
+    where:
+      - ishbiliyya
+      - qurtuba
+      - qarmuna
+      - istijja
+      - shaluqa-al-kubra
+      - al-ushbuna
+      - shantarin
+      - malaqa
+      - al-mariyya
+      - batalyaws
+      - jayyan
+      - majrit
+      - tulaytula
+      - binar
+    threads:
+      - towns
+    from:
+      - seen
+      - told
+    cite: Trent's account, construction list and map screen, 14 August 1397
+    detail:
+      acequias:
+        - Qarmūna
+        - Istija
+        - Shalūqa al-Kubrā
+        - Qurṭuba
+      irrigation:
+        - Bīnār
+      madrasas:
+        - al-Ushbūna
+        - al-Qalʿa (the game's El-qlaʿâ)
+        - Mālaqa
+        - Shantarīn
+        - al-Mariyya
+      bridges:
+        - Illīška
+        - Qalʿat Rabaḥ
+        - Nduyar
+        - Baṭalyaws
+        - Mnṭalban
+        - Mdint el-Malik
+        - Bayyāsa
+        - Jayyān
+        - al-Quṣayr
+        - El-Qraṭu
+        - Ruyu el-Frasnu
+        - Brṭ el-Gadir
+        - Nbalusilyuš
+        - Šinšūn
+      workshops:
+        tools guild, Majrīṭ: (+6 on the screen)
+        tannery, Ṭulayṭula: (+3 on the screen)
+      acequia:
+        effects:
+          localMonthlyProsperity: +0.10%
+          localPopulationCapacity: 500
+          localFoodProduction: +4%
+        employs: 250
+        inputs: stone 0.10, lumber 0.10, tools 0.05; masonry 0.25
+        buildTime: 365 days
+        cost: 50
+        text: >-
+          a sophisticated irrigation canal system bringing water from mountain streams to fields and gardens,
+          enabling intensive agriculture (the game's text)
+      note: >-
+        names as the game shows them on Trent's construction list, which runs on beyond the screen; completion
+        due 136 to 291 days after the order
+  - id: 1398-09-03-the-grandsons
+    'on': '1398-09-03'
+    kind: note
+    what: >-
+      The question of the sons. With the two mothers dead and Prince Yūsuf away at the court of Aragon, the
+      old quarrel between Ismāʿīl's party and Yūsuf's has cooled. The next generation is harder. The crown
+      prince's eldest, Muḥammad, is stubborn and unfit to rule; his second, Saʿd, is intelligent and studious.
+      But Yūsuf's son, another Saʿd, four years old and raised at Benabarre, outshines them both, and the
+      Emperor has grown set on raising this grandson at his own court
+    who:
+      - saad-ibn-yusuf
+      - ismail-ibn-saad
+      - yusuf-ibn-saad
+      - muhammad-ibn-ismail-ibn-saad
+      - saad-ibn-ismail-ibn-saad
+      - saad-ibn-yusuf-ibn-saad
+      - caterina-de-borja
+    from:
+      - save
+      - told
+    cite: Trent's account; save of 3 September 1398
+    detail:
+      crownPrinceSons:
+        Muḥammad (b. 1385, by Bernarda): child_idiot, 14/18/14, balanced education
+        Saʿd (b. 1392, by ʿĀʾisha): child_intelligent, 27/16/21, expensive in-depth education
+        Aḥmad (b. 1393, by ʿĀʾisha): child_ambitious, 13/17/7
+      yusufsSon:
+        Saʿd (b. 1394, by Caterina de Borja): child_gifted, 11/14/18, expensive in-depth education, at the Aragonese court
+      aragon: >-
+        King Rodrigo (b. 1381); heir his sister Caterina, Yūsuf's wife, who is with child; the boy's own place
+        in the Aragonese succession is not shown in the save
+      yusuf: >-
+        living at the Aragonese court since his marriage (by January 1394); Trent counts the move a quirk of
+        the game's marriages and is looking at moving him back
+      succession:
+        law: cognatic primogeniture (save of 3 September 1398)
+        line:
+          - Ismāʿīl ibn Saʿd (the crown prince)
+          - his son Muḥammad (b. 1385)
+          - his son Saʿd (b. 1392)
+          - his son Aḥmad (b. 1393)
+          - Prince Yūsuf
+          - Yūsuf's son Saʿd (b. 1394)
+        note: >-
+          the line as primogeniture orders it, sons before daughters and the elder line first; the game's
+          other heir selections include Favored Son Succession, in which the ruler names any of his sons
+          regardless of age
+        favoredSonOption: >-
+          open to al-Andalus, at a cost of 50 stability and 50 legitimacy (Trent); in September 1398 stability
+          stood at 13.3 and legitimacy at 100
+        decision: >-
+          the Emperor leaves the law as it stands for now. If the crown prince's son Saʿd grows into a worthy
+          ruler, the question waits for Ismāʿīl's reign; if not, the Emperor will choose himself (Trent)
+  - id: 1398-09-03-yusuf-comes-home
+    'on': '1398-09-03'
+    kind: note
+    what: >-
+      The Emperor calls his son Yūsuf and his grandson Saʿd home from Benabarre to the court at Ishbīliya,
+      where the boy will be raised under his grandfather's eye. Caterina, heir of Aragon, stays at her
+      brother's court
+    who:
+      - saad-ibn-yusuf
+      - yusuf-ibn-saad
+      - saad-ibn-yusuf-ibn-saad
+      - caterina-de-borja
+    from:
+      - told
+    cite: Trent's account, September 1398
+    detail:
+      how: >-
+        moved back with the Script Runner (move_country), undoing the game's move of a husband to his wife's
+        court (Trent)
+      staysInAragon: Caterina de Borja, heir to King Rodrigo, with child by Yūsuf
+  - id: 1402-01-17-highland-prospecting-survey
+    'on': '1402-01-17'
+    kind: note
+    what: >-
+      A Highland Prospecting Survey goes into the hills under Khālid ibn Yaḥyā Raḥḥū, fifty-nine, once of the
+      dīwān, son of the old captain of the Volunteers of the Faith: prospectors and assayers to walk the
+      streambeds, hammer the outcrops and test the rocks for metal. At Almonaster in the Sierra the copper
+      workings throw up acrid yellow smoke that drives the workers off the slope and wilts the grass downwind,
+      and the farmers bring a formal complaint. The court sides with the farmers and the copper prospect is
+      abandoned
+    who:
+      - khalid-ibn-yahya
+    where:
+      - qusantina
+      - ishbiliyya
+    from:
+      - seen
+    cite: Trent's screens, 17 January 1402
+    detail:
+      expedition: Highland Prospecting Survey (exploration expedition)
+      leader: Khālid ibn Yaḥyā Raḥḥū, Zenati, Sunni, 59 (80/85/78), architect, hardy warrior
+      route:
+        at: El-Mnastir (Almonaster, the game's name)
+        next: Eš-Šeršna, 20 January 1402
+        then:
+          - Al-Iskuriyāl (El Escorial)
+          - Qusanṭīna
+          - Qrabaqa
+          - Ishbīliya
+      event:
+        name: Toxic Smoke from the Workings
+        text: >-
+          the copper prospect yields ore of unexpected character; the first roasting heap, set to drive off
+          the sulphides before smelting, gives off acrid yellow smoke; the metallurgist offers to build proper
+          roasting kilns at unbudgeted cost
+        choiceOnScreen: Abandon the prospect. Locals are not wrong about the air (the option Trent had chosen on screen)
+      otherExpeditions:
+        - Circumnavigation (west, round the southern cape and home by the Cape of Good Hope)
+        - The Royal Ḥajj
+        - Voyage into the Western Ocean
+      state:
+        treasury: 342.75
+        monthly: 24.53
+        stability: 23
+        population: 1807000
+        legitimacy: 100
+        prestige: 91
+        army: 4900
+        ships: 28
+        age: the Age of Renaissance has begun
+  - id: 1402-01-18-prospecting-commission
+    'on': '1402-01-18'
+    kind: note
+    what: >-
+      The Prospecting Commission: the crown spares no expense, and sends skilled assayers and gold for samples
+      with Khālid's prospectors, who will walk the highlands for a year testing streambeds for placer gold,
+      hammering at quartz veins and asking shepherds which valleys give up colour in the pan
+    who:
+      - khalid-ibn-yahya
+    from:
+      - seen
+    cite: Trent's screens of the Highland Prospecting Survey, 1402
+    detail:
+      choice: Spare no expense. Send skilled assayers, gold for samples (the option on Trent's screen)
+      effects:
+        gold: -83.61
+        prestige: 5
+        pause: 10 days
+      alternative: A modest fee will do. Headmen provide guides and shelter
+  - id: 1402-03-09-iron-at-al-iskuriyal
+    'on': '1402-03-09'
+    kind: note
+    what: >-
+      A seam of iron at al-Iskuriyāl (El Escorial): high-grade ore running deep into the mountain, the rock
+      streaked black and red, perhaps old workings reopened that the village headman's grandfather spoke of.
+      The crown develops it quietly; rival foundries need not hear of it yet
+    who:
+      - khalid-ibn-yahya
+    from:
+      - seen
+    cite: Trent's screens of the Highland Prospecting Survey, 1402
+    detail:
+      find: Iron
+      place: Al-Iskuriyāl (El Escorial)
+      choice: Develop it quietly
+      effects:
+        modifier: 'Rich Iron Seam, 18 years, decaying: local iron output +50%'
+        gold: 41.53
+      alternative: Announce the find
+  - id: 1402-04-26-silver-at-qusantina
+    'on': '1402-04-26'
+    kind: note
+    what: >-
+      Silver in the rock at Qusanṭīna, the old silver town of the house of Naṣr: a vein wide enough to swing a
+      pick in and pure enough to polish straight from the rock, the shaft timbered and the first cartloads
+      hauled up by windlass. The crown keeps it quiet; foreign eyes on al-Andalus's silver bring trouble
+    who:
+      - khalid-ibn-yahya
+    where:
+      - qusantina
+    from:
+      - seen
+    cite: Trent's screens of the Highland Prospecting Survey, 1402
+    detail:
+      find: Silver
+      place: Qusanṭīna (Constantina)
+      choice: Keep it quiet
+      effects:
+        modifier: 'Rich Silver Vein, 20 years, decaying: local silver output +75%'
+        gold: 83.27
+      alternative: Announce it to the Empire
+  - id: 1402-06-11-gems-at-qrabaqa
+    'on': '1402-06-11'
+    kind: note
+    what: >-
+      Stones that catch the light at Qrabaqa: gem-bearing gravels in a streambed, traced up to a pocket of
+      crystal-shot pegmatite in the hillside, and a cuttable fraction the lapidaries call exceptional. The
+      gems are kept for the imperial coffers, quietly
+    who:
+      - khalid-ibn-yahya
+    from:
+      - seen
+    cite: Trent's screens of the Highland Prospecting Survey, 1402
+    detail:
+      find: Gems
+      place: Qrabaqa (the game's name)
+      choice: Keep the gems for imperial coffers, quietly kept
+      effects:
+        modifier: 'Productive Gem Workings, 20 years, decaying: local gems output +75%'
+        gold: 100.02
+      alternative: Announce the find
+  - id: 1402-08-03-survey-returns
+    'on': '1402-08-03'
+    kind: note
+    what: >-
+      The Highland Prospecting Survey comes home to Ishbīliya after seven months in the hills. It found iron
+      at al-Iskuriyāl, silver at Qusanṭīna and gems at Qrabaqa, and the court kept all three quiet
+    who:
+      - khalid-ibn-yahya
+    where:
+      - ishbiliyya
+    from:
+      - seen
+    cite: Trent's screens of the Highland Prospecting Survey, 1402
+    detail:
+      effects:
+        modifier: 'Highland Survey Returned, 20 years, decaying: raw materials output +5%'
+        prestige: 10
+      goldFromFinds: 224.82
+      spentOnAssayers: 83.61
+  - id: 1402-08-burghers-privileges
+    'on': '1402-08-03'
+    kind: realm
+    what: >-
+      With the mines found, the burghers are given two privileges: control over the coinage, to cut and
+      circulate good coin from the new silver and gold, and urban development grants, to raise the cities. The
+      burghers are delighted; the umarāʾ, the ʿulamāʾ and the dhimmīs less so
+    who:
+      - saad-ibn-yusuf
+    threads:
+      - estates
+    from:
+      - seen
+      - told
+    cite: Trent's account and screens, 1402
+    detail:
+      estate: burghers
+      privileges:
+        Control over the Coinage:
+          effects:
+            politicalInfluenceGain: −10%
+            copperOutput: +5%
+            goldOutput: +5%
+            silverOutput: +5%
+            mintingThreshold: +1%
+          burghersSatisfaction: +5%
+          burghersPower: +50%
+          cost: 18
+          text: >-
+            cutting and circulating new coins of adequate quality ... by taking control of the coinage, we
+            will strengthen our economic foundations and consolidate our authority (the game's text)
+        Urban Development Grants:
+          effects:
+            monthlyDevelopment: 0.001
+            monthlyProgressToInnovative: 0.1
+          burghersSatisfaction: +5%
+          burghersPower: +50%
+          cost: 18
+          text: the future will dawn within city walls (the game's text)
+      satisfactionPerGrant:
+        burghers: +15% (to 65%)
+        umara (nobles): −6.5% (to 33.6%)
+        ulama (clergy): −2.7% (to 47.3%)
+        commoners: −0.5% (to 49.5%)
+        dhimmi: −5.4% (to 44.7%)
+      note: >-
+        the satisfaction figures are the game's preview for a single grant; the day is taken as the survey's
+        return
+  - id: 1402-08-the-umara
+    'on': '1402-08-03'
+    kind: note
+    what: >-
+      The umarāʾ are given gifts to bring their temper back up after the burghers' privileges. But the court's
+      long view has changed: now that the state is built, breaking the power of the umarāʾ is the easiest road
+      to a stronger crown
+    who:
+      - saad-ibn-yusuf
+    from:
+      - told
+    cite: Trent's account, 1402
+    detail:
+      policy: gifts to the nobles for now; in the long run, reduce the umarāʾ to grow the crown's power (Trent)
+      context: the nobles stood at about a third satisfied after the burghers' grants, the lowest of the estates
+  - id: 1402-09-jamaa-of-the-markets
+    'on': '1402-09-01'
+    kind: realm
+    what: >-
+      The crown calls a Jamāʿa. The umarāʾ are given a ten-year monopoly on the land trade routes, the gift
+      that brings them back to the table. In exchange for their support and their new privileges, the burghers
+      invest heavily in building up the markets of southern Iberia
+    who:
+      - saad-ibn-yusuf
+    threads:
+      - estates
+    from:
+      - told
+    cite: Trent's account, 1402
+    detail:
+      assembly: Jamāʿa of 1402
+      nobles: 10-year monopoly on land trade routes
+      burghers: >-
+        a very significant investment in the markets of southern Iberia, in exchange for their support and the
+        privileges of coinage and urban grants
+      note: early September 1402 (Trent's account)
+  - id: 1402-09-jewellery-charter
+    'on': '1402-09-02'
+    kind: realm
+    what: >-
+      A jewellers' charter is granted to Ishbīliya, the first step of an investment to double the city's
+      jewellery trade, fed by the new silver of Qusanṭīna and the markets the burghers are building
+    who:
+      - saad-ibn-yusuf
+    where:
+      - ishbiliyya
+      - qusantina
+    threads:
+      - towns
+    from:
+      - told
+    cite: Trent's account, September 1402
+    detail:
+      charter: jewellery charter, Ishbīliya
+      aim: to double the industry (Trent)
+      inputs: >-
+        silver from the Rich Silver Vein at Qusanṭīna (+75% output from April 1402); the burghers' investment
+        in the southern markets
+      context: >-
+        Ishbīliya already held most of the realm's jewellers' guilds, which went from 7 to 15 between 1379 and
+        1395
+      note: early September 1402, just after the Jamāʿa (Trent's account)
+  - id: 1403-07-18-state
+    'on': '1403-07-18'
+    kind: note
+    what: >-
+      The jewellers' charter at work: Ishbīliya's jewellers are being doubled, eight levels standing and nine
+      more under construction, to seventeen; at Istija two stand and three more are building, to five. Three
+      new levels of Ishbīliya's great market are going up beside them
+    who:
+      - saad-ibn-yusuf
+      - saad-ibn-ismail-ibn-saad
+      - saad-ibn-yusuf-ibn-saad
+      - muhammad-ibn-ismail-ibn-saad
+    where:
+      - ishbiliyya
+      - istijja
+    from:
+      - save
+      - told
+    cite: save of 18 July 1403; Trent's account
+    detail:
+      jewellers:
+        Ishbīliya:
+          now: 8
+          building: 9
+          target: 17
+        Istija:
+          now: 2
+          building: 3
+          target: 5
+      markets:
+        Ishbīliya marketplace: level 14, 3 more under construction
+        Istija: marketplace level 4, 1 more under construction; a hospital building
+      realm:
+        income: 199.1
+        expenses: 147.6
+        monthlyTradeBalance: 26.4
+        treasury: 32.1
+        stability: 21.7
+        population: 1826112
+      estates:
+        umara (nobles):
+          satisfaction: 0.384
+          estimatedPower: 23.3
+          gold: 1880
+        burghers:
+          satisfaction: 0.554
+          estimatedPower: 9.9
+        ulama:
+          satisfaction: 0.5
+        dhimmi:
+          satisfaction: 0.5
+      grandsons:
+        Muḥammad ibn Ismāʿīl (17): 16/20/17; the childhood 'dull' trait has lapsed with age, no adult traits; married, two children
+        Saʿd ibn Ismāʿīl (11): '56/35/36, intelligent, expensive in-depth education: developing well'
+        Aḥmad ibn Ismāʿīl (9): 30/43/19, ambitious
+        Saʿd ibn Yūsuf (9): 26/24/37, gifted, now on a military education at the Emperor's court
+  - id: 1404-02-01-the-crusade
+    'on': '1404-02-01'
+    kind: war
+    what: >-
+      The long peace is broken. The Pope proclaims a crusade against al-Andalus, the first, and declares war
+      on the Ṭāʾifa of Aragon; the Emperor answers for his subject. The crusade's temporal support is thin:
+      the Pope's own vassals and a handful of German bishops and princes, some five thousand men at the
+      declaration, most of them levies
+    who:
+      - saad-ibn-yusuf
+      - rodrigo-de-borja
+    threads:
+      - crusade-of-806
+      - europe
+    from:
+      - save
+      - seen
+      - told
+    cite: save of 3 February 1404; Trent's account and screen
+    detail:
+      cb: cb_crusade
+      target: ARA (the Borja Sultanate of Aragon, as the game styles it)
+      gameName: The 1st Crusade against Andalusia
+      crusaders:
+        Papal States: >-
+          270 men under arms on 3 February (four regiments far under strength: crossbowmen at 10%, men-at-arms
+          at 5%), 26 ships; the Pope's manpower pool stood near 2,000
+        Faenza: 358
+        Siena: 373
+        Magdeburg: 950
+        Mainz: 2,741 (444 regulars)
+        Cologne: 0
+        others: three minor vassals, about 400
+      defenders:
+        al-Andalus: 4,900 regulars, 32 ships
+        the ṭāʾifas: Aragon, Catalonia (400), Valencia (450), the Algarve, Salamanca, Cuenca
+        Mamlūks: >-
+          4,050 men, with Mecca, Medina, the Dulkadirids, Hutaym, Barqa, Banū Kanz, Suakin, the Western Oases,
+          Val di Noto, Zubāla, Nafūsa and others
+        Morocco: 2,400 men, 30 ships, with Tafilalt, Touat and Tlemcen
+      realm:
+        towns: 148
+        population: 1832665
+        treasury: 51
+        income: 199.6
+        expenses: 164.6
+        stability: 22
+        rank: 4
+      peace: the first war since the Peace of Ramaḍān in 1395, nearly nine years
+tellings:
+  - id: 0799-11-19-of-majrit-the-acequias-and-the-eternal-isles
+    'on': '1397-08-14'
+    title: Of Majrīṭ, the Acequias, and the Eternal Isles
+    verse: '21:30'
+    who:
+      - saad-ibn-yusuf
+      - muhammad-ibn-ismail
+      - maryam-bint-yusuf
+      - ismail-ibn-muhammad-al-abid
+    where:
+      - majrit
+      - tulaytula
+      - qarmuna
+      - istijja
+      - shaluqa-al-kubra
+      - qurtuba
+      - binar
+      - al-ushbuna
+      - malaqa
+      - shantarin
+      - al-mariyya
+      - ishbiliyya
+    covers:
+      - 1396-03-13-majrit-and-tulaytula
+      - 1397-08-14-infrastructure
+      - 1397-08-14-explorers-push-south
+    text: >
+      The amīr Muḥammad had built [Majrīṭ](place:majrit) as a watchtower, to guard the road to
+      [Ṭulayṭula](place:tulaytula) from the Christians beyond the mountains. Five hundred years later the
+      Emperor [Saʿd](person:saad-ibn-yusuf) looked at it with a merchant's eye. It stood in the middle of the
+      peninsula, where the roads from the four quarters crossed, with the Guadarrama behind it for timber and
+      iron and the plain before it for wheat. A town at a crossroads, he told the dīwān, will grow whether a
+      king helps it or not, and a king who helps it will be paid back many times over. In Jumādā al-Ākhira 798
+      he set the crown to building a second heart for al-Andalus on the Tagus and the Manzanares. Ṭulayṭula,
+      which had made blades since before the Arabs came, was given weaponsmiths. Mines and lumber mills went
+      up toward the Guadarrama, and wheat farms on the plain, and seven building sites stood open between the
+      two cities at once.
+
+
+      In Dhū al-Qaʿda 799 a new round of building began across the empire. Across the valley and the new lands
+      of the north the crown threw fourteen bridges, and it raised madrasas at [al-Ushbūna](place:al-ushbuna)
+      and [Shantarīn](place:shantarin), so that the children of the converts would learn their religion from
+      Andalusī teachers. In the old lands [Mālaqa](place:malaqa) and [al-Mariyya](place:al-mariyya) were given
+      madrasas too. Majrīṭ was given a guild of toolmakers and Ṭulayṭula a tannery. Along the great river,
+      from the capital to [Qurṭuba](place:qurtuba), the crown dug a chain of acequias at
+      [Qarmūna](place:qarmuna), [Istijja](place:istijja), [Shalūqa al-Kubrā](place:shaluqa-al-kubra) and
+      Qurṭuba itself, canals that carried water from the hills to the fields and gardens. Another watered the
+      fields of [Bīnār](place:binar). The Castilians had kept the old canals of the caliphs and called them by
+      their Arabic name, acequia, from al-sāqiya. Now the Arabic word was spoken over them again. The Emperor
+      rode out to see the first water come down the channel at Qarmūna, and asked the engineers what each
+      cubit of it had cost before he praised them.
+
+
+      The same years carried the empire's ships further south than they had gone before. The geographers
+      called the islands off the coast of the Maghrib al-Jazāʾir al-Khālidāt, the Eternal Isles, and placed
+      the edge of the known world there. Two men of the Emperor's own family went to find them. [Muḥammad ibn
+      Ismāʿīl al-Aḥmar](person:muhammad-ibn-ismail), the husband of his half-sister
+      [Maryam](person:maryam-bint-yusuf), took ship from [Ishbīliya](place:ishbiliyya) in Rabīʿ al-Thānī 798
+      at the age of sixty-two, an age at which most men of the house asked only for a garden. By the summer of
+      799 he was charting the Canaries and lay off Aguere on Tenerife, where the islanders still went about in
+      goatskins and had never heard the call to prayer. His cousin [Ismāʿīl ibn Muḥammad
+      al-ʿĀbid](person:ismail-ibn-muhammad-al-abid) sailed from Coria on the river for the seas beyond, toward
+      the green cape far down the African coast, and in the summer of 799 he lay off Funchal on Madeira,
+      gathering water for the long run south.
+
+
+      They were not alone on the Ocean. The ships of Qashtāla were in the sea of the Azores, and the sails of
+      another kingdom had been seen off Madeira. The Christians of the north had begun to look at the
+      Encircling Sea as the Emperor did.
+
+
+      *And We made from water every living thing. Then will they not believe?*
+  - id: 0800-12-20-of-the-grandsons-and-the-prince-from-benabarre
+    'on': '1398-09-03'
+    title: Of the Grandsons, and the Prince Who Came Home from Benabarre
+    verse: 25:74
+    who:
+      - saad-ibn-yusuf
+      - yusuf-ibn-saad
+      - caterina-de-borja
+      - alfons-de-borja
+      - rodrigo-de-borja
+      - ismail-ibn-saad
+      - bernarda-of-murcia
+      - aisha-ottoman
+      - muhammad-ibn-ismail-ibn-saad
+      - saad-ibn-ismail-ibn-saad
+      - saad-ibn-yusuf-ibn-saad
+      - dua-marinid
+      - aiman-mamluk
+    where:
+      - ishbiliyya
+    covers:
+      - 1393-02-24-death-of-alfons
+      - 1398-09-03-the-grandsons
+      - 1398-09-03-yusuf-comes-home
+    text: >
+      The Emperor's second son, [Yūsuf](person:yusuf-ibn-saad), had married twice: Madīna, of a house of the
+      Mamlūk lands, and [Caterina](person:caterina-de-borja), daughter of King
+      [Alfons](person:alfons-de-borja) of the Ṭāʾifa of Arghūn. The Christians of the north have a custom that
+      a prince who marries an heiress goes to live at her father's court, and Yūsuf went. By the year 796 he
+      was living at Benabarre in the Aragonese hills, a guest of the house of Borja, and in the spring of 800
+      he led its soldiers in the field. King Alfons had died in Rabīʿ al-Thānī 795, and his son
+      [Rodrigo](person:rodrigo-de-borja), a boy of eleven then, had worn the little crown since. Rodrigo had
+      no son, and Caterina was his heir.
+
+
+      So the old quarrel of the harem ended without anyone winning it. [Duʿāʾ](person:dua-marinid) and
+      [Aiman](person:aiman-mamluk), who had fought for the better part of twenty years over whose son would
+      inherit, were both in their graves. The crown prince [Ismāʿīl](person:ismail-ibn-saad) was heir beyond
+      dispute, and his brother was across the mountains. But the question did not die. It went down a
+      generation.
+
+
+      Ismāʿīl had three sons. The eldest, [Muḥammad](person:muhammad-ibn-ismail-ibn-saad), son of
+      [Bernarda](person:bernarda-of-murcia) of Mursiyya, was twelve, stubborn and slow, and his tutors had
+      given up making excuses for him. The second, [Saʿd](person:saad-ibn-ismail-ibn-saad), son of the Ottoman
+      princess [ʿĀʾisha](person:aisha-ottoman), was six. He was quick, he loved his books, and he had been
+      given the costliest teachers in the realm. The third, Aḥmad, was four and wanted everything his brothers
+      had. By the law of the house, which the Emperor had inherited and never changed, the crown would pass
+      from Ismāʿīl to Muḥammad.
+
+
+      Then there was Yūsuf's son, another [Saʿd](person:saad-ibn-yusuf-ibn-saad), born at Benabarre in Rabīʿ
+      al-Thānī 796 to the heiress of Arghūn. He was four, and his teachers wrote that they had never seen a
+      child like him. The old men of the court remembered another boy named Saʿd of whom the same had been
+      said, fifty years before, and they looked at the Emperor when they said it. The Emperor did not hide
+      that he had grown fond of the boy. He stood sixth in the line of succession.
+
+
+      The law could be changed. A sultan of the house could name whichever son he chose, as the caliphs had
+      done. But a crown that changed its law for a favourite would shake the realm from end to end, and the
+      realm had only just steadied itself after the giving of the ṭāʾifas. The umarāʾ would ask what other law
+      the Emperor might change for his pleasure. The Emperor had spent thirty-five years telling the qāḍīs,
+      the counts and the tax-farmers that the law bound everyone, and he would not now make himself the
+      exception. He left the law as it stood. If Ismāʿīl's son Saʿd grew into a man fit to rule, the question
+      would wait for Ismāʿīl's reign. If not, the Emperor would decide it himself, and pay the price.
+
+
+      What he did not leave was the boy. In Dhū al-Ḥijja 800 he sent to Benabarre and called his son Yūsuf
+      home to [Ishbīliya](place:ishbiliyya), and the little Saʿd with him, to be raised at his grandfather's
+      court and under his grandfather's eye. Caterina stayed at her brother's court, with child by Yūsuf
+      again. The crown prince welcomed his brother and his nephew with the fairest words in the dīwān, and
+      everyone who heard them agreed that nobody could have said it better.
+
+
+      *Our Lord, grant us from among our wives and offspring comfort to our eyes, and make us a leader for the
+      righteous.*
+  - id: 0805-12-27-of-the-prospectors-and-the-jamaa-of-the-markets
+    'on': '1403-07-18'
+    title: Of the Prospectors, the Silver of Qusanṭīna, and the Jamāʿa of the Markets
+    verse: '17:35'
+    who:
+      - saad-ibn-yusuf
+      - khalid-ibn-yahya
+    where:
+      - ishbiliyya
+      - qusantina
+      - istijja
+    covers:
+      - 1402-01-17-highland-prospecting-survey
+      - 1402-01-18-prospecting-commission
+      - 1402-03-09-iron-at-al-iskuriyal
+      - 1402-04-26-silver-at-qusantina
+      - 1402-06-11-gems-at-qrabaqa
+      - 1402-08-03-survey-returns
+      - 1402-08-burghers-privileges
+      - 1402-08-the-umara
+      - 1402-09-jamaa-of-the-markets
+      - 1402-09-jewellery-charter
+      - 1403-07-18-state
+    text: >
+      The hills of al-Andalus had fed the caliphs with silver and iron, and the Emperor
+      [Saʿd](person:saad-ibn-yusuf) wanted to know what they still held. In Jumādā al-Ākhira 804 he sent a
+      survey into the highlands: prospectors to walk the streambeds and hammer the outcrops, and assayers to
+      test what they found. He gave the command to [Khālid ibn Yaḥyā Raḥḥū](person:khalid-ibn-yahya),
+      fifty-nine years old, son of the captain of the Volunteers of the Faith, once of the dīwān and once the
+      general who won the second half of the Marīnid war. Khālid had a builder's training and a soldier's
+      legs, and he was the man the court sent whenever no prince of the house could go himself. When the
+      treasurers asked how much the assayers might spend, the Emperor told them to spare nothing: a survey
+      done cheaply would find only what it was paid to find.
+
+
+      The first find was a warning. At Almonaster in the Sierra a new copper prospect was set to roast its
+      first heap of ore, and it gave off a yellow smoke that drove the men off the slope and withered the
+      grass downwind. The farmers of the valley brought a complaint to the governor. The metallurgist offered
+      to build kilns that would keep the smoke in, at a cost no one had counted. The court sided with the
+      farmers, and the copper was left in the ground.
+
+
+      The hills paid for it afterwards. In Shaʿbān the prospectors found a seam of iron at al-Iskuriyāl in the
+      Guadarrama, the rock streaked black and red and running deep into the mountain, where the headman's
+      grandfather had spoken of old workings. In Ramaḍān they found silver at [Qusanṭīna](place:qusantina),
+      the old silver town of the house of Naṣr: a vein wide enough to swing a pick in, so pure it could be
+      polished straight from the rock. In Dhū al-Qaʿda, at Qrabaqa, they traced a scatter of bright gravel up
+      a streambed to a pocket of crystal in the hillside, and the lapidaries called the stones exceptional.
+      The Emperor ordered all three kept quiet. A merchant who tells the market what he has found, he said,
+      sells it for less. Khālid's men came home to [Ishbīliya](place:ishbiliyya) in Muḥarram 805, after seven
+      months in the hills, and the finds had already repaid the assayers nearly three times over.
+
+
+      Silver needed coiners, and the Emperor gave the coinage to the burghers. They would strike good coin of
+      honest weight from the new silver and gold, under the eye of the Ḥisba, and with it they were given
+      grants to raise the cities. The burghers were delighted. The umarāʾ were not, nor were the ʿulamāʾ and
+      the dhimmīs, and of all the estates the nobles were now the least content. The court sent them gifts to
+      keep their temper. But the dīwān had already set its course. The state was built: its offices, its
+      chancery, its inspectors and its banks no longer needed the great lords. From now on the crown would
+      grow by taking from the umarāʾ, as gently as it could, and the burghers would rise in their place.
+
+
+      In the first days of Ṣafar 805 the Emperor called a Jamāʿa at Ishbīliya. The umarāʾ came for their gift,
+      a monopoly on the land roads of trade for ten years. The burghers came to pay for their privileges, and
+      they pledged a great sum to build up the markets of the south. On the day after the assembly rose, the
+      Emperor granted Ishbīliya a charter for its jewellers, to double their trade with the silver of
+      Qusanṭīna.
+
+
+      By Dhū al-Ḥijja of that year the workshops were rising. Ishbīliya had eight halls of jewellers and nine
+      more half-built, and [Istijja](place:istijja) two and three more, and the great market of the capital
+      was being enlarged again beside them. The treasury took in far more each month than it had on the eve of
+      the War of the League, and spent a quarter less than it took. And still the umarāʾ, between them, sat on
+      many times the gold the treasury held.
+
+
+      *And give full measure when you measure, and weigh with an even balance. That is the best way and best
+      in result.*

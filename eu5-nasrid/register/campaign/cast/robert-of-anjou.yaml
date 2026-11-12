@@ -1,0 +1,22 @@
+name: Robert of Anjou
+house: Anjou
+born: '1351-01-05'
+died: '1406-06-16'
+roles:
+  - king of Hungary
+  - king of Naples
+traits:
+  - scholar
+stations:
+  - role: general
+    from: '1405-10-02'
+    to: '1405-10-16'
+    source: save
+    approx: false
+note: >-
+  King of Hungary, Naples and Croatia, three crowns in one union, from 5 January 1367. Naples leads the Guelph
+  league of Italy; in 1370 his crowns are at war with Halych and Volhynia. Died 1406-06-16 (save of 24 October
+  1414).
+game:
+  id: 16814624
+  name: Róbert

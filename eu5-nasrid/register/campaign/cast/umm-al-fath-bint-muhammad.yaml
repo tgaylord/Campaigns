@@ -1,0 +1,23 @@
+name: Umm al-Fatḥ bint Muḥammad
+arabic: أم الفتح بنت محمد
+sex: f
+house: Naṣrid
+tier: key
+born: '1411-07-10'
+father: muhammad-ibn-ismail-ibn-saad
+mother: jadila-bint-saad-ibn-faraj
+roles:
+  - member of the dīwān (from 1425)
+stations:
+  - role: dīwān
+    from: '1428-05-13'
+    to: null
+    source: save
+    approx: false
+note: >-
+  Daughter of the heir Muḥammad and his third wife Jadīla bint Saʿd, named for her grandmother Umm al-Fatḥ. On
+  17 December 1425, at fourteen, she took a seat in the dīwān, integrating the new lands; she sits there
+  beside her mother (save of 25 May 1428).
+game:
+  id: 16795814
+  name: Umm al-Fath

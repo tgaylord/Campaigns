@@ -1,0 +1,17 @@
+name: Ismāʿīl I
+arabic: إسماعيل الأول
+house: Naṣrid
+born: '1279-03-03'
+died: '1325-07-08'
+father: abu-said-faraj
+mother: fatima-bint-al-ahmar
+reigns:
+  - from: '1314-02-08'
+    to: '1325-07-08'
+roles:
+  - sultan
+traits:
+  - architectural_visionary
+game:
+  id: 3531
+  name: Ismail

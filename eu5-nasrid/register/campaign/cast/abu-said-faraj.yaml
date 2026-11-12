@@ -1,0 +1,11 @@
+name: Abū Saʿīd Faraj
+arabic: أبو سعيد فرج
+house: Naṣrid
+born: '1248-01-01'
+died: '1320-04-24'
+father: ismail-ibn-nasr
+traits:
+  - intricate_web_weaver
+game:
+  id: 3530
+  name: Faraj

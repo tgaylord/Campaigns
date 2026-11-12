@@ -1,0 +1,654 @@
+date: '1351-06-03'
+title: The silver of Qusanṭīna
+source:
+  save: SP_GRA_1351_06_03 (compressed)
+  game: 1.4.5
+summary: >-
+  The Second Moroccan War ends. With Castile at the tipping point, Granada sold its promise not to fund the
+  Marīnids for Qarmūna and the silver mines of Qusanṭīna (21 May); on 3 June Morocco surrendered to Castile,
+  and the peace annulled Morocco's treaties with Granada. The Mamlūks remain the only ally. Shares of power
+  are estimated from the 1 June 1349 reading.
+realm:
+  towns: 43
+  souls: 599989
+  treasury: 912
+  income: 37.7
+  expenses: 41.3
+  stability: 13.9
+  prestige: 10
+  regiments: 5
+  ships: 5
+  manpower: 4229
+court:
+  ruler: yusuf-i
+  heir: saad-ibn-yusuf
+  capital: gharnata
+  council:
+    - who: faraj-ibn-ismail
+      seat: Increase control in Mālaqa
+    - who: ismail-ibn-ismail
+      seat: Promote Granadan sovereignty
+standing:
+  allies:
+    - Mamluks
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+  estates:
+    - name: Crown
+      power: 27.32
+    - name: Nobility
+      power: 30.27
+      mood: 48
+    - name: ʿUlamāʾ
+      power: 7.51
+      mood: 50
+    - name: Burghers
+      power: 7.5
+      mood: 50
+    - name: Commoners
+      power: 5.52
+      mood: 50
+    - name: Dhimmī
+      power: 21.89
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 289331
+    Castilian: 282244
+    Sephardi: 22882
+    Mustaarabi: 2058
+    Sardinian: 1394
+    Ligurian: 585
+  faiths:
+    Sunni: 292622
+    Catholic: 282542
+    Jewish: 24061
+    Bori_Religion: 546
+    Nyama: 219
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+  allies:
+    - MAM
+beats:
+  - id: 1349-11-07-plague-toll
+    'on': '1349-11-07'
+    kind: world
+    what: >-
+      The Great Dying: the pestilence has now killed 210,000 of the realm's people, against 9,000 a year
+      before, and lies over 17 locations, worst across the newly won lands of Andalusia; across the known
+      world nearly 44 million are dead
+    from:
+      - seen
+    cite: Trent's screenshot of the Black Death panel
+    detail:
+      affectedLocations: 17
+      countryDeaths: 210000
+      worldDeaths: 43853000
+      population: 612000
+      populationChangePerMonth: -5938
+  - id: 1350-07-the-war-turns
+    'on': '1350-07-01'
+    kind: note
+    what: >-
+      The war shifts: Castile has raised some 5,000 men and drives the Moroccans back from raiding its
+      heartlands, while in Aragon and on the islands Tunisian and other Moorish raiders sack the countryside
+      freely
+    threads:
+      - second-moroccan-war
+    from:
+      - told
+    cite: Trent's account (by July 1350; the exact day isn't given)
+    detail:
+      castileRaised: 5000
+  - id: 1350-09-02-cities-emptied
+    'on': '1350-09-02'
+    kind: world
+    what: >-
+      The cities bore the worst of it. Granada was the most urban realm in Iberia, with 41% of its people in
+      cities against Castile's 5%, and its cities lost 45% of their people despite the hospitals. Burghers
+      fell by 60% and the clergy and scholars by 53%, while the soldiers in camp lost only 15%. Castile's few
+      cities lost only 22%
+    from:
+      - save
+    cite: saves of 1346-08-01 and 1350-09-02, populations by settlement rank and pop type over the same lands
+    detail:
+      sameLandsSince: '1346-08-01'
+      byRank:
+        GRA:
+          city:
+            share: 41
+            pct: -45
+          town:
+            share: 4
+            pct: -43
+          rural:
+            share: 55
+            pct: -40
+        CAS:
+          city:
+            share: 5
+            pct: -22
+          town:
+            share: 11
+            pct: -37
+          rural:
+            share: 84
+            pct: -35
+        ARA+VAL+MLL:
+          city:
+            share: 10
+            pct: -42
+          town:
+            share: 26
+            pct: -41
+          rural:
+            share: 64
+            pct: -29
+        POR:
+          city:
+            share: 5
+            pct: -39
+          town:
+            share: 15
+            pct: -37
+          rural:
+            share: 81
+            pct: -28
+        MOR:
+          city:
+            share: 11
+            pct: -11
+          town:
+            share: 7
+            pct: 9
+          rural:
+            share: 82
+            pct: -22
+      granadaByEstate:
+        burghers: -60
+        clergy: -53
+        nobles: -49
+        peasants: -44
+        laborers: -27
+        soldiers: -15
+  - id: 1350-09-02-great-dying-census
+    'on': '1350-09-02'
+    kind: world
+    what: >-
+      As the pestilence fades, the reckoning: the old lands of Granada have lost 42% of their people since
+      August 1346, among the worst in the world; Iberia as a whole a third, Castile 35%, Aragon 33%, Portugal
+      30%; Morocco only 19% and Tunis 7%; the world some 46 million souls
+    from:
+      - save
+      - seen
+    cite: saves of 1346-08-01 and 1350-09-02 (same lands compared); Trent's screenshot of the Black Death panel
+    detail:
+      sameLandsSince: '1346-08-01'
+      granadaOldLands:
+        from: 489.6
+        to: 284.3
+        pct: -41.9
+      iberia:
+        from: 8334
+        to: 5476
+        pct: -34.3
+      byCountry:
+        CAS: -35.1
+        ARA: -33.3
+        POR: -29.8
+        NAV: -28.1
+        MLL: -39.3
+        VAL: -30.4
+        MOR: -18.5
+        TLE: -17.7
+        TUN: -7.4
+        MAM: -15.1
+        FRA: -33.3
+        ENG: -31
+        NAP: -35.7
+        BYZ: -26.3
+        TUR: -23
+        GLH: -32.7
+      world:
+        from: 396116
+        to: 350008
+        unit: thousands, every location
+      realmNow:
+        population: 595292
+        sinceJan1349: 754263
+      affectedLocations: 4
+      countryDeaths: 221000
+      worldDeaths: 47460000
+  - id: 1350-09-02-recovery
+    'on': '1350-09-02'
+    kind: land
+    what: 'The realm steadies as the plague passes: stability back to 12.6, and sovereignty climbing to 58.8'
+    threads:
+      - strait
+    from:
+      - save
+    cite: save of 1350-09-02
+    detail:
+      stability: 12.6
+      sovereignty: 58.76
+      influence: 11.8
+  - id: 1350-12-aragon-peace
+    'on': '1350-12-08'
+    kind: note
+    what: >-
+      Aragon makes peace with the Moorish powers: Morocco takes the Balearic Islands and Tunis subjugates
+      Aragon's Sardinian vassal, the County of Cagliari. All eyes turn to the Strait, where Castile has pushed
+      south to Cádiz
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+      - told
+    cite: Trent's account; date from the save of 3 June 1351 (the Balearics changed hands on 8 December 1350)
+    detail:
+      gains:
+        MOR: Balearic Islands
+        TUN: County of Cagliari (as subject)
+      castileFront: Cádiz
+  - id: 1351-01-01-majorca-mainland
+    'on': '1351-01-01'
+    kind: land
+    what: >-
+      The Kingdom of Majorca's lands on the mainland (Perpinyà, Prades, Puigcerdà and Montpellier) pass to
+      Aragon; with the Balearics gone to Morocco, the kingdom is no more
+    from:
+      - save
+    cite: save of 3 June 1351
+    detail:
+      to: ARA
+  - id: 1351-01-19-mamluk-betrothal
+    'on': '1351-01-19'
+    kind: world
+    what: >-
+      The Sultan of the Mamluks agrees to betroth his daughter Aiman to Saʿd, heir of Granada: the alliance
+      with Cairo is now a bond of blood
+    who:
+      - saad-ibn-yusuf
+      - aiman-mamluk
+    from:
+      - told
+    cite: Trent's account
+    detail:
+      with: MAM
+  - id: 1351-01-saad-prodigy
+    'on': '1351-01-19'
+    kind: note
+    what: >-
+      The Chancellor reports that the heir Saʿd, not yet three, is a Prodigy, and the court begins to whisper
+      that he may be the ruler to lead the Emirate out of the darkness
+    who:
+      - saad-ibn-yusuf
+    from:
+      - seen
+      - told
+    cite: Trent's screenshot of the event and his account (January 1351)
+    detail:
+      trait: prodigy
+      educationAbilityIncrease: 0.55
+      educationGrowthRate: 0.25
+  - id: 1351-01-saad-tutors
+    'on': '1351-01-19'
+    kind: note
+    what: >-
+      The finest tutors of the Islamic world, and several Christians among them, are summoned to Gharnāṭa to
+      begin the extensive education of the heir Saʿd
+    who:
+      - saad-ibn-yusuf
+    from:
+      - told
+    cite: Trent's account (January 1351)
+  - id: 1351-01-silver-for-silence
+    'on': '1351-01-20'
+    kind: world
+    what: >-
+      With Castile at a tipping point, Gharnāṭa makes a quiet offer: it will not fund the Moroccans, in
+      exchange for a mild shift of the border along the river toward Ishbīliya, giving it Qarmūna and, north
+      of it, the silver mines of Qusanṭīna
+    where:
+      - qarmuna
+      - qusantina
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+      - told
+    cite: Trent's account (January 1351, day approximate); tax figures from the save of 1350-09-02
+    detail:
+      asks:
+        carmona:
+          owner: CAS
+          possibleTax: 0.61
+        constantina:
+          owner: CAS
+          possibleTax: 8.04
+          raw: silver
+      status: accepted 21 May 1351
+  - id: 1351-05-21-qarmuna-qusantina
+    'on': '1351-05-21'
+    kind: land
+    what: >-
+      Castile pays for Granada's silence: Qarmūna and the silver mines of Qusanṭīna are ceded to Gharnāṭa,
+      moving the border down the river toward Ishbīliya. Granada now holds 55 of the 72 locations of the
+      Strait
+    where:
+      - qarmuna
+      - qusantina
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+      - told
+    cite: save of 3 June 1351; Trent's account
+    detail:
+      from: CAS
+      locations:
+        - carmona
+        - constantina
+      straitAreas:
+        held: 55
+        total: 72
+  - id: 1351-06-03-moroccan-surrender
+    'on': '1351-06-03'
+    kind: peace
+    what: >-
+      Morocco surrenders to Castile, ending the Second Moroccan War. By the peace's terms Morocco gives up its
+      treaties with Granada: Castile has done Granada's dirty work, and the alliance with the Marīnids is
+      ended without Granada breaking it
+    threads:
+      - second-moroccan-war
+    from:
+      - save
+      - told
+    cite: save of 3 June 1351; Trent's account
+    detail:
+      annulled: MOR–GRA treaties
+      granadaAllies:
+        - MAM
+  - id: 1351-06-03-state
+    'on': '1351-06-03'
+    kind: land
+    what: >-
+      After the war: sovereignty 61.2 and Morocco's influence over Granada 11.1; stability 13.9, the treasury
+      912 and no debt; the Mamlūks the only ally
+    threads:
+      - strait
+    from:
+      - save
+    cite: save of 3 June 1351
+    detail:
+      sovereignty: 61.24
+      influence: 11.14
+      stability: 13.9
+tellings:
+  - id: 0750-08-24-the-great-dying
+    'on': '1349-11-07'
+    title: Of the Great Dying
+    verse: 2:156
+    who:
+      - yusuf-i
+    where:
+      - qurtuba
+      - ishbiliyya
+      - jayyan
+      - gharnata
+      - malaqa
+    covers:
+      - 1349-06-01-castilian-patriots
+      - 1349-11-07-plague-toll
+    text: >
+      The peace brought no peace from the pestilence. Through the summer and autumn of the year 750 it came
+      back stronger than before, as a flood that has drawn back comes again over the same ground. It settled
+      worst on the lands newly won, on [Qurṭuba](place:qurtuba) and [Ishbīliya](place:ishbiliyya) and the
+      river towns between them. Their walls held a hundred years of Christian crowding and their people were
+      weak from the war that had passed over them twice. Then it climbed back over the mountains into the old
+      realm, into [Gharnāṭa](place:gharnata) and [Mālaqa](place:malaqa), where the houses of healing were full
+      and the cemeteries were fuller.
+
+
+      By the twenty-fourth of Shaʿbān the dīwān had stopped counting by the week and begun counting by the
+      month. The sickness lay over seventeen of the realm's towns. It had killed two hundred and ten thousand
+      of its people, where a year before the toll had been nine thousand. Each month nearly six thousand more
+      were lost. Of the seven hundred and fifty-four thousand who had been the sultan's subjects on the day of
+      the Peace of Qurṭuba, six hundred and twelve thousand remained. In all the known world forty-four
+      million were dead.
+
+
+      These are numbers, and a chronicle can set them down in a line. What they meant is harder to write. It
+      meant the call to prayer given by a boy because the muezzin was dead and his son with him. It meant the
+      *qāḍī*'s court closed for want of witnesses. It meant fields of ripe wheat in the Vega with no one to
+      cut them, and the price of bread rising while the price of land fell. It meant the bells of the
+      Christians in [Jayyān](place:jayyan) tolling from dawn to dusk. It meant that Muslim and Christian and
+      Jew were washed and wrapped by the same hands and laid in trenches side by side, because there was no
+      one left to dig them apart.
+
+
+      The physicians did what they could, and it was not enough.
+
+
+      *Indeed we belong to Allāh, and indeed to Him we will return.*
+  - id: 0751-06-28-the-emptied-cities
+    'on': '1350-09-02'
+    title: Of the Emptied Cities
+    verse: '57:23'
+    who:
+      - yusuf-i
+    where:
+      - gharnata
+      - malaqa
+      - al-mariyya
+    covers:
+      - 1350-09-02-great-dying-census
+      - 1350-09-02-cities-emptied
+      - 1350-09-02-recovery
+    text: >
+      At the end of Jumādā al-Ākhira in the year 751 the pestilence was at last withdrawing. It touched only
+      four towns of the realm now, and the physicians of the houses of healing began to send their assistants
+      home. So the sultan ordered the dīwān to make a reckoning. It was to cover not only the realm as it now
+      stood, but the old realm as it had been in the summer of 747, when the rumour first came out of the
+      East, and every land beside it that had sent word.
+
+
+      The reckoning was this. The old lands of Gharnāṭa, which had held four hundred and ninety thousand souls
+      when the merchants first spoke of Yāyiq, now held two hundred and eighty-four thousand. Two in every
+      five had died. Of all the realms of which word came, only one far in the East had lost a greater share.
+      Qashtāla had lost a little more than a third of its people, and Arghūn a third. Portugal had lost nearly
+      as many. But Morocco had lost fewer than one in five, and Tūnis fewer than one in thirteen. The Mamlūks
+      had lost fewer than one in six. Across the whole world some forty-six million had died.
+
+
+      Why had Gharnāṭa suffered worse than the Christians it had beaten? The dīwān found the answer in its own
+      ledgers, and it was bitter. Gharnāṭa was a realm of cities as Qashtāla was not. Two of every five of the
+      sultan's subjects lived within the walls of [Gharnāṭa](place:gharnata), [Mālaqa](place:malaqa),
+      [al-Mariyya](place:al-mariyya) and the other great towns. In Qashtāla it was one in twenty. The
+      Castilians live scattered in hamlets and walled farms, where a sickness can burn out in a single
+      household. Our people live in the alleys of the Albayzín and the markets of the coast, where it ran from
+      door to door. The cities of the realm lost almost half their people, the houses of healing
+      notwithstanding. The few cities of Qashtāla lost one in five.
+
+
+      And it took the people who had made the cities what they were. The burghers, the merchants of silk and
+      sugar and the masters of the guilds, fell by three in five. The *ʿulamāʾ*, the scholars and the judges
+      and the teachers of the madrasa, fell by more than half. The nobles fell by nearly half, the common folk
+      of the fields by a little less. The soldiers, who had spent those years in camp on the frontier and not
+      in the crowded streets, lost only one in seven. The old Gharnāṭa of the scholars and the silk merchants
+      was gone. The realm that remained was smaller, more rural and more martial, and nearly half of it was
+      Christian.
+
+
+      Yet the realm steadied. With the sickness passing, the realm grew quieter than it had been since the war
+      began, and its sovereignty, so long hovering about the half, climbed well above it. The dead could not
+      be recalled, but the living could still be ruled.
+
+
+      *In order that you not despair over what has eluded you and not exult over what He has given you. And
+      Allāh does not like everyone self-deluded and boastful.*
+    behind: >-
+      The dīwān's reckoning compares the same lands in two saves, 1 August 1346 (the day the Black Death rose
+      at Yaik) and 2 September 1350. Each location's population is the sum of its pops. "The old lands of
+      Gharnāṭa" means the 1346 realm only. Lands won since aren't counted, so conquest doesn't hide the
+      losses. The city-against-countryside split uses the game's own rank for each location (city, town or
+      rural settlement), and the losses by estate use each pop's type. The worse-hit realm "far in the East"
+      is the tag KUT, the only country of over 300,000 people that lost a larger share (−47.8%). The panel
+      figures (221,000 dead in the realm, 47.46 million in the world, 4 locations still affected) are from
+      Trent's screenshot of the same day; the prose's world toll ("some forty-six million") is the fall in
+      world population between the two saves, not the panel's figure.
+  - id: 0751-10-07-the-islands
+    'on': '1350-12-08'
+    title: Of the Islands, and the Eyes Turned to the Strait
+    verse: '45:12'
+    where:
+      - gharnata
+      - qadis
+    covers:
+      - 1350-07-the-war-turns
+      - 1350-12-aragon-peace
+      - 1351-01-01-majorca-mainland
+    text: >
+      While [Gharnāṭa](place:gharnata) buried its dead, the war it had left went on without it. By Rabīʿ
+      al-Thānī of the year 751 Qashtāla had found five thousand men among the living. With them it drove the
+      Marīnid raiders back from its heartlands, where they had burned and taken captives at will for two
+      summers. Yet in the lands of Arghūn and on its islands the ships of Tūnis and the other lords of the
+      Maghrib went where they pleased, and sacked the countryside from the Ebro to Mayūrqa. Arghūn had won
+      every battle at sea in the war's first years, and since the day off Cape Ben Sakka it had no fleet to
+      stop them.
+
+
+      On the seventh of Shawwāl Arghūn made its peace with the Muslim powers. Fās took the Balearic Islands,
+      Mayūrqa, Manūrqa and Yābisa, which had been lost to the Christians more than a century before. Tūnis
+      took Arghūn's vassal in Sardinia, the county of Qalyari, and made it its own subject. On the first day
+      of the new Christian year the mainland lands of the king of Mayūrqa, Perpinyà, Prades and Puigcerdà in
+      the mountains, and Montpellier, passed to Arghūn. So the kingdom of Mayūrqa was no more, divided between
+      the Cross and the Crescent.
+
+
+      The Marīnids had their islands, and they had them because Gharnāṭa had broken Qashtāla's armies in the
+      field. They did not say so. Now there was only Qashtāla left in the war, and all eyes turned to the
+      Strait. The Castilians pushed south to [Qādis](place:qadis) and the ports of the Strait, and drove the
+      men of Fās from this shore. The Marīnid sultan, who had begun the war to reclaim al-Andalus, held
+      islands in the sea and no foot of al-Andalus itself.
+
+
+      *It is Allāh who subjected to you the sea, so that the ships may sail upon it by His command, and that
+      you may seek of His bounty; and perhaps you will be grateful.*
+  - id: 0751-11-20-the-prodigy-and-the-daughter-of-cairo
+    'on': '1351-01-19'
+    title: Of the Prodigy, and the Daughter of al-Qāhira
+    verse: 2:269
+    who:
+      - saad-ibn-yusuf
+      - aiman-mamluk
+      - yusuf-i
+    where:
+      - gharnata
+      - fas
+      - tilimsan
+    covers:
+      - 1351-01-19-mamluk-betrothal
+      - 1351-01-saad-prodigy
+      - 1351-01-saad-tutors
+    text: >
+      In Dhū al-Qaʿda of the year 751 a letter came from al-Qāhira, sealed with the seal of the Mamlūk sultan.
+      Jamāl al-Dīn agreed to give his daughter [Aiman](person:aiman-mamluk) in marriage to
+      [Saʿd](person:saad-ibn-yusuf), son of our lord [Yūsuf](person:yusuf-i) and heir to the throne of
+      [Gharnāṭa](place:gharnata), when the two came of age. So the alliance made in the embassy of 750 became
+      a bond of blood between the house of Naṣr and the lords of Egypt and Syria. So the heir's bride would
+      come from the East, while the Marīnid girl promised to his father in the year of Saʿd's birth was still
+      growing up in [Fās](place:fas).
+
+
+      In that same month the chancellor brought the sultan a report on his son, who was not yet three years
+      old. The tutors of the nursery said the child learned as other children breathe. He knew his letters
+      before he could run, and he asked questions about the stars and the Qurʾān that his teachers could not
+      always answer. The chancellor wrote that his future was bright, and that his name would be written in
+      the books of history. The court began to whisper what no one had dared say aloud in the plague years:
+      that this child might be the prince to lead the realm out of the darkness.
+
+
+      The sultan answered as a father and as a king. He sent to every corner of the Islamic world for the
+      finest teachers that silver could bring to Gharnāṭa. There were grammarians and jurists of the Mālikī
+      school, astronomers and physicians, masters of the Qurʾān and of poetry, from Fās and
+      [Tilimsān](place:tilimsan), from Tūnis and al-Qāhira and Dimashq. And because the realm now held nearly
+      as many Christians as Muslims, he sent too for several learned Christians. They were to teach the heir
+      the tongues and laws and customs of the people he would one day rule. Some of the *ʿulamāʾ* frowned at
+      it. The sultan said that a prince who would rule Castilians must first understand them.
+
+
+      The plague had taken the scholars of Gharnāṭa by the half. Now the scholars of the world came to
+      Gharnāṭa for the sake of one small boy. The education of Saʿd would be long and thorough, and the court
+      watched it as a farmer watches the first green shoot after a hard winter.
+
+
+      *He gives wisdom to whom He wills, and whoever has been given wisdom has certainly been given much
+      good.*
+  - id: 0752-04-07-the-silver-of-qusantina
+    'on': '1351-06-03'
+    title: Of the Silver of Qusanṭīna, and the Surrender of the Marīnids
+    verse: '12:21'
+    who:
+      - yusuf-i
+      - alfonso-xi
+      - abu-inan-faris
+    where:
+      - gharnata
+      - ishbiliyya
+      - qarmuna
+      - qusantina
+      - qadis
+      - runda
+      - marballa
+    covers:
+      - 1351-01-silver-for-silence
+      - 1351-05-21-qarmuna-qusantina
+      - 1351-06-03-moroccan-surrender
+      - 1351-06-03-state
+    text: >
+      The dīwān of [Gharnāṭa](place:gharnata) watched the last year of the war as a merchant watches two men
+      bidding against each other for the same bale. Qashtāla was bled white by the pestilence and stood at the
+      very edge of defeat. A little gold sent to the Marīnids might have pushed it over: gold for ships and
+      for the wages of the raiders on the coast of Arghūn. Fās was bled less, but it was beaten on this shore
+      and ruled now by the young sultan [Abū ʿInān Fāris](person:abu-inan-faris). And Gharnāṭa, which had made
+      its own peace, held the balance between them.
+
+
+      So in Dhū al-Qaʿda of the year 751 the sultan's envoys went quietly to the court of
+      [Alfonso](person:alfonso-xi). They made no threat, for a threat can be answered. They spoke instead of
+      what the sultan might do and had not yet done. Gharnāṭa, they said, had no wish to see Qashtāla humbled
+      further. It would send no silver across the Strait, so long as the border between the two realms were
+      made a little more just: a mild shift along the river below [Ishbīliya](place:ishbiliyya). They asked
+      for [Qarmūna](place:qarmuna) on its hill, and north of it, in the dark hills of the Sierra Morena,
+      [Qusanṭīna](place:qusantina).
+
+
+      They called the shift mild, and the Castilians may have believed it. Qarmūna is a small town of potters.
+      But the hills of Qusanṭīna are full of silver, and the dīwān had reckoned that their mines could yield
+      the crown more than all of Ishbīliya. On the twenty-fourth of Rabīʿ al-Awwal 752 the king of Qashtāla,
+      with the Marīnids at his throat and no silver to spare for pride, set his seal to it.
+
+
+      Thirteen days later, on the seventh of Rabīʿ al-Thānī, the Marīnids surrendered to Qashtāla. They kept
+      the islands they had taken from Arghūn. And among the terms the Castilians demanded was one the court
+      had not looked for: Fās was to annul its treaties with Gharnāṭa. The alliance that had dragged the realm
+      into the war, which the sultan had kept only to see what Fās would do, was broken for him by the hand of
+      his enemy. Qashtāla had done Gharnāṭa's work for it, and perhaps believed it had wounded Gharnāṭa.
+
+
+      When the war of 747 began, the realm held nineteen towns of the Strait's three lands, and its
+      sovereignty was slipping below the half. At its end the realm held fifty-five of the seventy-two. Its
+      sovereignty stood well above the half, the realm was quiet, and the treasury owed nothing to anyone. Its
+      only ally now was the lord of Egypt, whose daughter would marry its heir. It was still Qashtāla's
+      tributary in name. But the balance had moved, and it had moved toward Gharnāṭa. The last seventeen towns
+      of the Strait still flew the banners of Qashtāla, from [Qādis](place:qadis) on the coast to
+      [Runda](place:runda) and [Marballa](place:marballa) within the realm's own mountains.
+
+
+      *And Allāh is predominant over His affair, but most of the people do not know.*

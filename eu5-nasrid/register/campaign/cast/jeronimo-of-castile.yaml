@@ -1,0 +1,43 @@
+name: Jerónimo of Castile
+house: Castilian royal house
+tier: key
+born: '1343-01-15'
+died: '1402-04-29'
+father: alfonso-xi
+mother: maria-of-portugal
+roles:
+  - king of Castile
+  - king of Portugal
+traits:
+  - worldly
+stations:
+  - role: admiral
+    from: '1359-04-02'
+    to: '1359-04-07'
+    source: save
+    approx: false
+  - role: dīwān
+    from: '1361-12-01'
+    to: '1366-03-29'
+    source: save
+    approx: false
+  - role: general
+    from: '1385-09-26'
+    to: '1385-11-21'
+    source: save
+    approx: false
+  - role: rebel
+    from: '1389-05-01'
+    to: '1402-04-29'
+    source: save
+    approx: false
+note: >-
+  King of Castile from his father's death on 29 March 1366, and of Portugal from his mother's on 4 October
+  1367: the two crowns in a personal union, each keeping its own government. In September 1370 he had no army
+  in the field (save of 13 September 1370). When the union broke in 1389 he kept Portugal. In the War of the
+  League he stood with Castile, and at the Peace of Ramaḍān (22 June 1395) he gave up Lisbon and 19 other
+  towns to al-Andalus (save of 22 June 1395). He died on 29 April 1402, aged fifty-nine, and his son Fernando
+  succeeded him in Portugal (save of 29 June 1410).
+game:
+  id: 33577055
+  name: Jerónimo

@@ -1,0 +1,122 @@
+name: Saʿd ibn Yūsuf
+arabic: سعد بن يوسف
+house: Naṣrid
+tier: central
+born: '1348-01-18'
+died: '1405-03-02'
+father: yusuf-i
+mother: sayyida-of-fezzan
+reigns:
+  - from: '1363-08-01'
+    to: '1405-03-02'
+roles:
+  - sultan
+  - emperor and sultan of al-Andalus (from 1375)
+traits:
+  - conqueror
+  - entrepreneur
+  - hardy_warrior
+  - incorruptible
+drives:
+  - from: '1351-01-19'
+    text: >-
+      A prodigy the court expects to leave his name in the histories; his father brings him the finest tutors
+      of the Islamic world.
+    by: chronicle
+    source: save of 1351; the Chancellor's report
+  - from: '1364-01-18'
+    text: >-
+      Takes his personal rule hard and fast: the regent dies the day the regency ends, and Saʿd marries his
+      father's widow Duʿāʾ.
+    by: trent
+    source: Trent; Of the Regent Who Did Not Last, and the Sultan's Second Wife
+  - from: '1364-01-18'
+    text: The soldier who shares the camp, with a merchant's eye and honest books.
+    by: chronicle
+    source: traits conqueror, entrepreneur, hardy warrior, incorruptible
+  - from: '1364-09-11'
+    text: Means to break Qashtāla's hold on Granada for good, and does, in the War of Independence.
+    by: chronicle
+    source: Of the Conqueror, the Renegade at San Clemente, and the Peace of Independence
+  - from: '1366-04-05'
+    text: >-
+      His reign is fought over at home: once Granada is free and worth the having, his two queens pull the
+      court between them, Duʿāʾ for the Maghrib and Aiman for Egypt. He rules by keeping both close and
+      neither satisfied.
+    by: trent
+    source: Trent's direction, November 2026
+  - from: '1375-03-16'
+    text: >-
+      Restores al-Andalus and takes the style of Emperor: the peninsula is to be taken back from the north,
+      war by war (the Istirdād).
+    by: chronicle
+    source: Of the Reordering of the Realm, and the Restoration of al-Andalus
+  - from: '1379-04-25'
+    text: Turns the realm to the sea and to trade, and moves the court to Ishbīliya for its river and its market.
+    by: trent
+    source: Trent's account, April 1379
+  - from: '1387-01-22'
+    text: 'The Conqueror becomes the realm''s greatest builder: the Ḥijāba, the scholars, the madrasas.'
+    by: trent
+    source: Trent's reading
+ties:
+  - with: nasr-al-istijji
+    kind: rival
+    from: '1363-08-01'
+    to: '1364-01-18'
+    text: The regent who did not last.
+    by: chronicle
+  - with: murad
+    kind: ally
+    from: '1364-08-03'
+    text: His general of the War of Independence and the Marīnid war.
+    by: chronicle
+  - with: ibn-al-khatib
+    kind: rival
+    from: '1366-01-06'
+    text: The renegade who led Qashtāla's last army against him.
+    by: chronicle
+  - with: abu-inan-faris
+    kind: rival
+    from: '1368-10-24'
+    to: '1370-09-12'
+    text: The Marīnid sultan who came across the Strait to bring Gharnāṭa to heel, and failed.
+    by: chronicle
+  - with: khalid-ibn-yahya
+    kind: ally
+    from: '1369-10-15'
+    text: The favourite, sent wherever the house does not go itself.
+    by: trent
+stations:
+  - role: heir
+    from: '1351-06-03'
+    to: '1363-08-02'
+    source: checkpoints
+    approx: true
+  - role: general
+    from: '1394-01-02'
+    to: '1405-03-01'
+    source: save
+    approx: false
+note: >-
+  First son of Yūsuf I and Sayyida of Fezzan, born 18 January 1348 in the second year of the war with the
+  three crowns. Betrothed on 19 January 1351 to Aiman, daughter of the Mamluk Sultan. The same winter the
+  Chancellor reported him a Prodigy: a child predestined, the court said, to leave his name in the history
+  books. His father brought the finest tutors of the Islamic world to Gharnāṭa for him, several Christians
+  among them. Succeeded his father on 1 August 1363 at fifteen, under the regency of Naṣr al-Istijjī until he
+  came of age on 18 January 1364. At his accession his abilities stood at 100/69/100, the prodigy fulfilled.
+  His accession was not clean. Naṣr died on the very day the regency ended, of 'sickness' as the court gave
+  out (a hunting accident, the game says), and Saʿd then married Naṣr's widow Duʿāʾ, his father's Marīnid
+  widow and minister. He began his personal rule with two wives, Aiman the Mamlūk and Duʿāʾ the Marīnid. He
+  knocked Portugal out of the War of Independence on 11 September 1364 and took its south, and by 1365 the
+  court called him Conqueror. His first child, Umm al-Fatḥ, was born to Aiman on 13 December 1364. His son and
+  heir Ismāʿīl was born to Duʿāʾ on 8 March 1366. He won the War of Independence on 5 April 1366. He completed
+  the Hajj in 1391 and returned on 20 February 1392 as al-Ḥājj Saʿd. He proclaimed the Restoration of
+  al-Andalus on 16 March 1375 and took the style of Emperor, moved the capital to Ishbīliya in 1379, and
+  fought the three wars of the Istirdād and the crusade of 1404, in which he took Avignon from the Pope. He
+  died on 2 March 1405 (29 Shaʿbān 807), aged fifty-seven, while marching an army through Moya against the
+  risings of 807, after a reign of forty-one years. The game's notice says his strong character had made the
+  country a more honest place (save-day notice of 2 March 1405).
+game:
+  id: 16811483
+  name: Saad

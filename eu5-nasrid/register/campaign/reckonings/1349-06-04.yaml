@@ -1,0 +1,273 @@
+date: '1349-06-04'
+title: Brothers in faith
+source:
+  save: SP_GRA_1349_06_04 (compressed)
+  game: 1.4.5
+summary: >-
+  The Mamlūk sultan answers the embassy to al-Qāhira with an alliance, soldiers and gold, and Granadan
+  sovereignty stands above 50 again. Shares of power are calibrated on Trent's estates panel of 1 June 1349,
+  three days before the save.
+realm:
+  towns: 41
+  souls: 661331
+  treasury: 1808
+  income: 36.1
+  expenses: 46.3
+  stability: -0.7
+  prestige: 16
+  regiments: 5
+  ships: 5
+  manpower: 4155
+court:
+  ruler: yusuf-i
+  heir: faraj-ibn-ismail
+  capital: gharnata
+  council:
+    - who: faraj-ibn-ismail
+      seat: Increase control in Mālaqa
+    - who: ismail-ibn-ismail
+      seat: Promote Granadan sovereignty
+standing:
+  allies:
+    - Morocco
+    - Tunis
+    - Mamluks
+  subjects:
+    - Valencia (taifa)
+    - Murcia (taifa)
+  estates:
+    - name: Crown
+      power: 27.55
+    - name: Nobility
+      power: 31.63
+      mood: 41
+    - name: ʿUlamāʾ
+      power: 8.17
+      mood: 50
+    - name: Burghers
+      power: 5.1
+      mood: 50
+    - name: Commoners
+      power: 6.12
+      mood: 45
+    - name: Dhimmī
+      power: 21.43
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 330470
+    Castilian: 306187
+    Sephardi: 22533
+    Mustaarabi: 690
+    Ligurian: 636
+    Hausa: 439
+  faiths:
+    Sunni: 334660
+    Catholic: 303712
+    Jewish: 22281
+    Bori_Religion: 439
+    Nyama: 239
+map:
+  ours:
+    - GRA
+  subjects:
+    - VAL
+    - MUC
+  allies:
+    - MOR
+    - TUN
+    - MAM
+beats:
+  - id: 1349-06-01-castilian-patriots
+    'on': '1349-06-01'
+    kind: note
+    what: >-
+      In the conquered lands Castilian patriots are gathering in rebellion, while the dīwān works to integrate
+      Jayyān and Ishbīliya and the plague goes on taking the people
+    from:
+      - seen
+    cite: Trent's screenshot, 1 June 1349
+    detail:
+      rebels: Castilian Patriots
+      cabinet:
+        - Integrating Jaén
+        - Integrating Sevilla
+      population: 663000
+  - id: 1349-06-01-embassy-to-cairo
+    'on': '1349-06-01'
+    kind: world
+    what: >-
+      An Embassy to al-Qāhira: Yūsuf sends an envoy across the sea to Sultan Jamāl al-Dīn of Egypt, keeper of
+      the holy cities, at the cost of a quarter of a year's income
+    who:
+      - yusuf-i
+    threads:
+      - europe
+    from:
+      - seen
+    cite: Trent's screenshot of his choice
+    detail:
+      event: battle_for_the_strait_events.55
+      choice: Send an envoy across the sea to Al-Qāhira.
+      gold: -107.13
+      followUp: A Plea from the West (Egypt's answer pending)
+  - id: 1349-06-01-estates-reading
+    'on': '1349-06-01'
+    kind: realm
+    what: >-
+      The estates read off the panel after the peace: the crown at 27%, the nobility down to 31%, and the
+      Dhimmī, swollen by the Christians of the new lands, at 21%
+    threads:
+      - estates
+    from:
+      - seen
+    cite: Trent's screenshot of the estates panel, 1 June 1349
+    detail:
+      power:
+        crown: 27
+        nobles: 31
+        clergy: 8
+        burghers: 5
+        peasants: 6
+        dhimmi: 21
+      satisfaction:
+        nobles: 40.78
+        clergy: 50.01
+        burghers: 50.02
+        peasants: 45.49
+        dhimmi: 50.02
+      note: screen values; the first full reading since 11 August 1340
+  - id: 1349-alhambra-foundations
+    'on': '1349-06-01'
+    kind: realm
+    what: >-
+      With the gold of the peace, Yūsuf lays the foundations of a new wing of al-Ḥamrāʾ on the Sabīka hill,
+      its vaults in muqarnas and its walls cut with verse, to tell Castile and Morocco alike that the house of
+      Naṣr means to stay
+    who:
+      - yusuf-i
+    where:
+      - gharnata
+    from:
+      - seen
+      - told
+    cite: Trent's account and screenshots (under construction by 1 June 1349; the day the works began isn't given)
+    detail:
+      event: Expand the Al-Ḥamrāʾ
+      choice: Lay the foundations.
+      construction: Al-Ḥamrāʾ in Gharnāṭa
+      strait: each completed tier adds 0.05 sovereignty a month (game files)
+  - id: 1349-06-02-mamluk-alliance
+    'on': '1349-06-02'
+    kind: world
+    what: >-
+      The Mamlūks answer as brothers in faith: an alliance with Granada, Mamlūk horse and foot sent to
+      Gharnāṭa, and yearly gold and men
+    from:
+      - save
+      - told
+    cite: Trent's account; checkpoint 1349-06-04
+    detail:
+      event: battle_for_the_strait_events.56
+      answer: alliance, soldiers, gold and men
+      units:
+        - a_mamluk_horsemen_traditions
+        - a_mamluk_unit_traditions
+  - id: 1349-06-04-sovereignty
+    'on': '1349-06-04'
+    kind: land
+    what: >-
+      Sovereignty rises above 50 again, to 53.4, for the first time since August 1346; influence stands at
+      +5.5
+    threads:
+      - strait
+    from:
+      - save
+    cite: checkpoint 1349-06-04
+    detail:
+      sovereignty:
+        from: 41.61
+        to: 53.45
+      influence:
+        from: 13.3
+        to: 5.5
+  - id: 1349-06-tunis-alliance-ends
+    'on': '1349-06-04'
+    kind: world
+    what: >-
+      With the Mamlūk alliance stretching the court's diplomacy far beyond its means (10.65 of 6.07), Yūsuf
+      lets the alliance with Tunis lapse; the Moroccan alliance stands for now
+    from:
+      - seen
+      - told
+    cite: >-
+      Trent's account and screenshot of the diplomatic capacity (the exact day isn't given; just after 4 June
+      1349)
+    detail:
+      ended: TUN
+      diplomaticCapacity:
+        before:
+          used: 10.65
+          max: 6.07
+        after:
+          used: 8.35
+          max: 6.07
+      overLimitPenalty: 'half the overage: crown power −37.6% falls to about −18.8%'
+tellings:
+  - id: 0750-03-16-the-embassy-to-al-qahira
+    'on': '1349-06-04'
+    title: Of the Foundations on the Sabīka, and the Embassy to al-Qāhira
+    verse: '49:10'
+    who:
+      - yusuf-i
+    where:
+      - gharnata
+      - jayyan
+      - ishbiliyya
+    covers:
+      - 1349-alhambra-foundations
+      - 1349-06-01-estates-reading
+      - 1349-06-01-castilian-patriots
+      - 1349-06-01-embassy-to-cairo
+      - 1349-06-02-mamluk-alliance
+      - 1349-06-04-sovereignty
+      - 1349-06-tunis-alliance-ends
+    text: >
+      With the gold of the peace our lord [Yūsuf](person:yusuf-i) did what the princes of his house have
+      always done when Allāh gave them a season of fortune. He built. In Rabīʿ al-Awwal of the year 750 the
+      masons laid the foundations of a new wing of al-Ḥamrāʾ on the Sabīka hill above
+      [Gharnāṭa](place:gharnata). Its vaults were to be hung with *muqarnas* like the cells of a honeycomb,
+      and its walls cut with verses in praise of the house of Naṣr. The sultan meant it as a letter to
+      Qashtāla and to Fās alike. The house of Naṣr is not a guest in al-Andalus that may be asked to leave. It
+      means to stay, and it builds as those who mean to stay build.
+
+
+      The realm needed telling, for its sovereignty had fallen far below the half and the Strait leaned toward
+      Fās. The estates were weighed that month after the peace. The crown's voice in the realm had grown, and
+      the nobles, once the loudest, had lost much of theirs. The dhimmīs, swollen by the Christians of the new
+      lands, now spoke with a weight no one in the dīwān could ignore. In those lands Castilian patriots were
+      gathering in the hills of [Jayyān](place:jayyan) and [Ishbīliya](place:ishbiliyya). The two princes of
+      the cabinet were sent to bind those cities to the realm, while the plague went on taking their people.
+
+
+      So the sultan sought a weight to set on his own side of the scales. He sent an envoy across the whole
+      length of the sea to al-Qāhira, to the Mamlūk sultan Jamāl al-Dīn, keeper of the two holy cities and
+      lord of Egypt and Syria. The embassy cost a hundred and seven dīnārs, a quarter of a year's income. The
+      envoy carried a plea: the last Muslim kingdom of the West stood alone between the Christian crowns and a
+      Marīnid ally who wished to be its master.
+
+
+      The answer came on the fourteenth of Rabīʿ al-Awwal, and it was more than the court had dared hope. The
+      Mamlūk wrote as a brother in faith. He granted an alliance with Gharnāṭa, and sent Mamlūk horsemen and
+      foot to stand in the sultan's army, the slave-soldiers who had broken the Mongols at ʿAyn Jālūt. He
+      promised gold and men every year besides. Within three days the realm's sovereignty rose above the half
+      again, for the first time since the summer of 747.
+
+
+      But friendship has its price. The court's envoys were stretched across too many courts: Fās, Tūnis and
+      now al-Qāhira, with too few clerks and too little silver to keep them all. The strain fell on the crown
+      itself. The sultan let the alliance with Tūnis lapse quietly, and kept the Marīnid one for now, to see
+      what the Marīnids would do.
+
+
+      *The believers are but brothers, so make settlement between your brothers.*

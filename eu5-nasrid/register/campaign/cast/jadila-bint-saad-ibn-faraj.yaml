@@ -1,0 +1,27 @@
+name: Jadīla bint Saʿd
+arabic: جديلة بنت سعد
+sex: f
+house: Naṣrid
+tier: key
+born: '1393-07-26'
+father: saad-ibn-faraj
+mother: umm-al-fath-bint-saad
+roles:
+  - member of the dīwān
+traits:
+  - honest
+stations:
+  - role: dīwān
+    from: '1412-01-02'
+    to: null
+    source: save
+    approx: false
+note: >-
+  Younger daughter of Saʿd ibn Faraj of Qūnka and Umm al-Fatḥ, sister of the Shaykha Maryam. Married to the
+  heir Muḥammad ibn Ismāʿīl, his third wife. On 2 January 1412 she took a seat in the dīwān, set to
+  encouraging migration (save of 24 October 1414). From 29 September 1416 she sat in the dīwān as its steward
+  of the realm's peace, stabilising the country. She bore the heir two children: Yūsuf, on 10 July 1416, and
+  Fāṭima, on 9 April 1418 (save of 11 August 1420).
+game:
+  id: 76996
+  name: Jadila

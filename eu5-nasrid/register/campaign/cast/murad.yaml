@@ -1,0 +1,19 @@
+name: Murād
+tier: key
+born: '1332-03-14'
+roles:
+  - general
+traits:
+  - hermit
+  - offensive_planner
+note: >-
+  Granadan general in the War of Independence. He chased the joined armies of Portugal and Aragon halfway
+  across Iberia and broke them at Zafra on 3 August 1364. Then, on 10 and 11 September, he destroyed their
+  remnants one after the other before Lisbon (save of 11 September 1364). He threw back the Aragonese at
+  Cañete (14 July 1365). At San Clemente (6 January 1366) he destroyed the last Castilian army in the field,
+  commanded by the renegade Ibn al-Khaṭīb (save of 5 April 1366). In the Second Marīnid War he destroyed the
+  sultan of Fās's own force at Cádiz (11 November 1368), threw the first Marīnid landing back into the sea at
+  Marbella (8 February 1369) and retook Jerez (28 April).
+game:
+  id: 16806806
+  name: Murad

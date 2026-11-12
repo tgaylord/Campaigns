@@ -1,0 +1,35 @@
+name: Tīmūr
+arabic: تيمور
+born: '1336-04-08'
+died: '1433-07-26'
+roles:
+  - Emperor of the Tīmūrids (from 1360)
+traits:
+  - conqueror
+  - tactical_genius
+  - cruel
+  - strategist
+stations:
+  - role: dīwān
+    from: '1357-04-13'
+    to: '1357-04-21'
+    source: save
+    approx: false
+  - role: admiral
+    from: '1429-09-19'
+    to: '1429-09-25'
+    source: save
+    approx: false
+  - role: general
+    from: '1429-10-02'
+    to: '1433-07-26'
+    source: save
+    approx: false
+note: >-
+  Lord of Samarqand from 25 October 1360. Between 1394 and 1420 his realm grew from 234 towns to 707, the
+  fourth power of the world: Herat, Iṣfahān and Tabrīz by 1407, Kāshghar and Farghāna in February 1414, Fārs,
+  Kirmān and Hurmuz in 1415. In August 1420 he was eighty-four and still on the throne; his chosen heir was
+  Köke, a conqueror and army reformer of forty-eight (world files of 1394–1420).
+game:
+  id: 7112
+  name: Temür

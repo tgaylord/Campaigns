@@ -1,0 +1,181 @@
+date: '1431-10-01'
+title: The Second Crusade
+source:
+  save: SP_ADU_1431_10_01 (compressed)
+  game: 1.4.7
+summary: >-
+  The day the Pope proclaims the second crusade against al-Andalus, sparked by the destruction of Santiago,
+  and declares war on the Ṭāʾifa of Aragon. Every ally answers: eight ṭāʾifas, the Mamlūks, Morocco and Tunis.
+  The Emperor has embraced the name of warmonger that his enemies gave him in June. Stability has recovered to
+  4 and prestige to 82; the courts of the world still rank al-Andalus third. Treasury 784. Estates estimated
+  from the reading of 16 November 1428.
+realm:
+  towns: 196
+  souls: 2605769
+  treasury: 784
+  income: 318.4
+  expenses: 317.8
+  stability: 4
+  prestige: 82
+  regiments: 9
+  ships: 50
+  manpower: 19367
+court:
+  ruler: muhammad-ibn-ismail-ibn-saad
+  heir: ismail-ibn-muhammad-ibn-ismail
+  capital: ishbiliyya
+  council:
+    - who: ismail-ibn-muhammad-ibn-ismail
+      seat: Promoting Andalusī culture
+    - who: ahmad-ibn-muhammad-ibn-ismail
+      seat: Integrating the new lands
+    - who: umm-al-fath-bint-muhammad
+      seat: Integrating the new lands
+    - who: yusuf-ibn-saad
+      seat: Promoting Andalusī culture
+    - who: jadila-bint-saad-ibn-faraj
+      seat: Developing the provinces
+standing:
+  wars:
+    - crusade-of-835
+  allies:
+    - Mamluks
+    - Morocco
+    - Tunis
+  subjects:
+    - Catalonia (taifa)
+    - Aragon (taifa)
+    - Taifa of Cuenca (taifa)
+    - Kingdom of Portugal (taifa)
+    - Taifa of León (taifa)
+    - Taifa of Burgos (taifa)
+    - Taifa of Pamplona (taifa)
+    - Taifa of Galicia (taifa)
+  estates:
+    - name: Crown
+      power: 29.13
+    - name: Nobility
+      power: 17.57
+      mood: 45
+    - name: ʿUlamāʾ
+      power: 12.62
+      mood: 39
+    - name: Burghers
+      power: 21.83
+      mood: 53
+    - name: Commoners
+      power: 2.9
+      mood: 50
+    - name: Dhimmī
+      power: 15.95
+      mood: 50
+peoples:
+  cultures:
+    Andalusi: 827568
+    Castilian: 703480
+    Portuguese: 492232
+    Sephardi: 190113
+    Catalan: 179572
+    Leonese: 164761
+  faiths:
+    Sunni: 1257307
+    Catholic: 1148537
+    Jewish: 181150
+    Guanche_religion: 15815
+    Rogo_miki_religion: 840
+map:
+  ours:
+    - GRA
+  subjects:
+    - CAT
+    - ARA
+    - ABA60
+    - POR
+    - ABA42
+    - ABA49
+    - ABA55
+    - GLC
+  allies:
+    - MAM
+    - MOR
+    - TUN
+beats:
+  - id: 1431-01-21-death-of-abu-hammu
+    'on': '1431-01-21'
+    kind: death
+    what: >-
+      Abū Ḥammū, lord of the Ṭāʾifa of Burghush, dies two months after receiving Cantabria. His heir Khālid is
+      nine, and the Emperor rules Burghush as his regent until June 1437
+    who:
+      - abu-hammu-rahhu
+      - khalid-ibn-abi-hammu
+      - muhammad-ibn-ismail-ibn-saad
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 10 October 1435
+    detail:
+      reason: suicide (the game); the court's version is a sudden illness
+      regency: overlord regency by the Emperor Muḥammad, 21 January 1431 to 11 June 1437
+      heir: Khālid ibn Abī Ḥammū, born 11 June 1421, a child prodigy (69/75/55)
+  - id: 1431-06-24-the-warmongers-name
+    'on': '1431-06-24'
+    kind: note
+    what: >-
+      A pamphlet goes round the court calling the Emperor Muḥammad a ruthless warmonger. Offered the choice of
+      embracing the name or executing someone for it, he embraces it
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+    where:
+      - ishbiliyya
+    from:
+      - save
+      - seen
+    cite: Trent's screenshot of 24 June 1431; save of 1 October 1431
+    detail:
+      event: Emperor's Reputation Tarnished!
+      text: >-
+        Some sort of propaganda text is circulating in the Court about how Emperor Muḥammad V Nasrid is a
+        ruthless warmonger. This might impact our relations with our subjects and other countries (the game's
+        text)
+      options:
+        - Embrace the reputation! (+2 antagonism towards us, centred on Ishbīliya)
+        - Execute someone for this!
+      chosen: >-
+        Embrace the reputation (the save of 1 October 1431 holds an 'embraced antagonism' bias against
+        al-Andalus)
+  - id: 1431-10-01-the-second-crusade
+    'on': '1431-10-01'
+    kind: war
+    what: >-
+      Sparked by the destruction of Santiago, the Pope proclaims the second crusade against al-Andalus and
+      declares war on the Ṭāʾifa of Aragon, aiming at Barbastro. The Emperor answers for his subject, and all
+      his allies come in: the eight ṭāʾifas, the Mamlūks, Morocco and Tunis with all their vassals
+    who:
+      - pope-fabrizio-ricci
+      - rodrigo-de-borja
+      - muhammad-ibn-ismail-ibn-saad
+    threads:
+      - crusade-of-835
+      - europe
+    from:
+      - save
+      - seen
+      - told
+    cite: Trent's account and screenshot; save of 1 October 1431
+    detail:
+      cb: cb_crusade
+      target: >-
+        ARA, the Borja Sultanate of Aragon (King Rodrigo de Borja, brother of the Emperor's wife Magdalena);
+        the crusade's goal is the province of Barbastro
+      crusaders: >-
+        the Pope (3 towns, no army, 13 ships) with his vassals Arezzo and Faenza, and from the Church's call
+        Provence, Ireland with Desmond and Clanwilliam, Iceland, the archbishops of Cologne and Trier,
+        Magdeburg, Bremen, Mecklenburg, Świdnica, Toggenburg, Bentheim, Marsan, Aumale and some lesser lords
+      defenders: >-
+        al-Andalus (4,900 regulars, 50 ships), the eight ṭāʾifas, the Mamlūks (10,850 men) and their vassals
+        from Mecca and Medina to Barqa and Suakin, Morocco (7,050 men, 57 ships) with Touat and Tlemcen, Tunis
+        (3,600 men, 22 ships) with Tripoli, Gabès, Touggourt and Gallura
+      angevins: the Angevin Empire stays out
+      previous: the first crusade against al-Andalus, 1404, was also declared on Aragon

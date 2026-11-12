@@ -1,0 +1,29 @@
+name: Ibrāhīm II of Tūnis
+arabic: إبراهيم
+house: Ḥafṣid
+born: '1336-01-01'
+died: '1399-10-06'
+roles:
+  - sultan of Tunis
+traits:
+  - industrious
+  - battlefield_medic
+  - sinner
+stations:
+  - role: admiral
+    from: '1352-06-27'
+    to: '1352-07-06'
+    source: save
+    approx: false
+  - role: general
+    from: '1369-04-02'
+    to: '1373-11-09'
+    source: save
+    approx: false
+note: >-
+  Ḥafṣid sultan of Tūnis, in his current reign from 6 November 1358. In 1370 he ruled the third Regional Power
+  of the Maghrib, with nine subjects, a realm close to disorder (stability near zero), and the Marīnids' fief
+  of Tlemcen as his rival. Died 1399-10-06 (save of 24 October 1414).
+game:
+  id: 3338
+  name: Ibrahim
