@@ -3254,6 +3254,12 @@
     "text": "Tells the envoys of Europe 'We have arrived', and hangs the map of the Umayyad borders in the dīwān without saying what it is for.",
     "by": "chronicle",
     "source": "Of the Envoys of Europe and the Borders of the Umayyads"
+   },
+   {
+    "from": "1448-09-02",
+    "text": "Decrees, at a Jamāʿa the princes had called, that the commons sit in every Jamāʿa as an estate equal to the others, and enjoys the uproar.",
+    "by": "trent",
+    "source": "Trent's account, 2 September 1448"
    }
   ],
   "ties": [
@@ -3420,7 +3426,8 @@
    "entrepreneur",
    "free_thinker"
   ],
-  "note": "Daughter of Saʿd ibn Faraj, ruler of the Ṭāʾifa of Qūnka, and of Umm al-Fatḥ, the late Emperor Saʿd's daughter: a niece of the Emperor Ismāʿīl. Married to her cousin Saʿd ibn Ismāʿīl, the Emperor's second son. On her father's death on 20 February 1408 she became Shaykha of Qūnka, at seventeen (save of 5 August 1408; Trent's account). Mother of Abū al-Ḥasan ʿAlī, born 17 April 1410. By then the game counted her a free thinker (save of 29 June 1410). By August 1420 the game also marks her an entrepreneur (save of 11 August 1420)."
+  "note": "Daughter of Saʿd ibn Faraj, ruler of the Ṭāʾifa of Qūnka, and of Umm al-Fatḥ, the late Emperor Saʿd's daughter: a niece of the Emperor Ismāʿīl. Married to her cousin Saʿd ibn Ismāʿīl, the Emperor's second son. On her father's death on 20 February 1408 she became Shaykha of Qūnka, at seventeen (save of 5 August 1408; Trent's account). Mother of Abū al-Ḥasan ʿAlī, born 17 April 1410. By then the game counted her a free thinker (save of 29 June 1410). By August 1420 the game also marks her an entrepreneur (save of 11 August 1420). She died of a burst ulcer on 28 June 1448, after forty years as Shaykha; her son Abū al-Ḥasan ʿAlī ibn Saʿd succeeded her (autosave of 1 February 1449).",
+  "died": "1448-06-28"
  },
  {
   "id": "ismail-ibn-muhammad-ibn-ismail",
@@ -3496,6 +3503,18 @@
     "text": "Reads the claim to the Umayyad borders, which run through his wives' homelands, as a sword that never leaves the scabbard and is still a sword.",
     "by": "chronicle",
     "source": "Of the Envoys of Europe and the Borders of the Umayyads"
+   },
+   {
+    "from": "1448-09-02",
+    "text": "Talks the estates round after his father's decree on the commons.",
+    "by": "chronicle",
+    "source": "Of the Jamāʿa of the Commons"
+   },
+   {
+    "from": "1449-10-25",
+    "text": "With Aḥmad, raises the first new army in a generation, 4,000 men of the thughūr, to finish the war in Sicily.",
+    "by": "trent",
+    "source": "Trent's account, late October 1449"
    }
   ],
   "ties": [
@@ -3576,6 +3595,12 @@
     "text": "Mourns his mother Isabel by building: six bridges in the west, the gunsmiths, the glassworks and the foundries of 851.",
     "by": "chronicle",
     "source": "Of the Lady Isabel and the Bridges of the West"
+   },
+   {
+    "from": "1448-09-02",
+    "text": "The commons given seats in the Jamāʿa are the craftsmen his building made; he says nothing, and is noticed.",
+    "by": "chronicle",
+    "source": "Of the Jamāʿa of the Commons"
    }
   ]
  },
@@ -3658,14 +3683,18 @@
   "born": "1410-04-17",
   "father": "saad-ibn-ismail-ibn-saad",
   "mother": "maryam-bint-saad-ibn-faraj",
-  "roles": [],
-  "traits": [],
-  "note": "First son of the Emperor's son Saʿd and of Maryam, Shaykha of Qūnka; born 17 April 1410. Through his mother, heir to the frontier ṭāʾifa of Qūnka (save of 29 June 1410).",
+  "roles": [
+   "Shaykh of the Ṭāʾifa of Qūnka (from 1448)"
+  ],
+  "traits": [
+   "entrepreneur"
+  ],
+  "note": "First son of the Emperor's son Saʿd and of Maryam, Shaykha of Qūnka; born 17 April 1410. Through his mother, heir to the frontier ṭāʾifa of Qūnka (save of 29 June 1410). He succeeded his mother as Shaykh of Qūnka on her death, 28 June 1448; by 1449 the save marks him an entrepreneur (saves of 1 February and 2 August 1449).",
   "stations": [
    {
     "role": "dīwān",
     "from": "1428-04-08",
-    "to": null,
+    "to": "1448-06-28",
     "source": "save",
     "approx": false
    }
@@ -3801,7 +3830,7 @@
    "well_advised",
    "ruthless"
   ],
-  "note": "Son of Yūsuf ibn Ismāʿīl, ruler of the Ṭāʾifa of Banbalūna; one of the ablest men of the house. He took Maryam bint Yūsuf's seat in the dīwān after her death in August 1412, set to integrating the new lands (save of 24 October 1414). By 1420 he was married to two daughters of his cousin Aḥmad of Burtuqāl, Fāṭima and Maryam, and had three children: Abū al-Ḥasan ʿAlī (16 February 1417), Muʾmina (13 August 1417) and Saʿd (27 July 1419). The game marks him unmotivated (save of 11 August 1420). He left the dīwān by December 1425, and on 30 April 1428 succeeded his father as lord of Banbalūna (save of 25 May 1428). In the Tunisian war for Palermo he led 385 men of Banbalūna against 4,200 Genoese at Grasse in Provence on 5 October 1447 and lost all but 29; the save of that day marks him ruthless. His son Saʿd is married to Muʾmina, daughter of the prince Aḥmad, and their daughter Fāṭima was born on 29 June 1447 (save of 5 October 1447).",
+  "note": "Son of Yūsuf ibn Ismāʿīl, ruler of the Ṭāʾifa of Banbalūna; one of the ablest men of the house. He took Maryam bint Yūsuf's seat in the dīwān after her death in August 1412, set to integrating the new lands (save of 24 October 1414). By 1420 he was married to two daughters of his cousin Aḥmad of Burtuqāl, Fāṭima and Maryam, and had three children: Abū al-Ḥasan ʿAlī (16 February 1417), Muʾmina (13 August 1417) and Saʿd (27 July 1419). The game marks him unmotivated (save of 11 August 1420). He left the dīwān by December 1425, and on 30 April 1428 succeeded his father as lord of Banbalūna (save of 25 May 1428). In the Tunisian war for Palermo he led 385 men of Banbalūna against 4,200 Genoese at Grasse in Provence on 5 October 1447 and lost all but 29; the save of that day marks him ruthless. His son Saʿd is married to Muʾmina, daughter of the prince Aḥmad, and their daughter Fāṭima was born on 29 June 1447 (save of 5 October 1447). He took the field again from January 1448 and died of camp fever on 18 February 1449, aged fifty-three; his son Abū al-Ḥasan ʿAlī succeeded him in Banbalūna (save of 2 August 1449).",
   "stations": [
    {
     "role": "dīwān",
@@ -3816,9 +3845,17 @@
     "to": "1447-10-05",
     "source": "save",
     "approx": false
+   },
+   {
+    "role": "general",
+    "from": "1448-01-01",
+    "to": "1449-02-18",
+    "source": "save",
+    "approx": false
    }
   ],
-  "tier": "key"
+  "tier": "key",
+  "died": "1449-02-18"
  },
  {
   "id": "abu-hammu-rahhu",
@@ -4360,7 +4397,7 @@
    "mil": 37
   },
   "traits": [],
-  "note": "Son of Aḥmad ibn Ismāʿīl, ruler of the Ṭāʾifa of Liyūn, and so a nephew of the Emperor Muḥammad V; married. At seventeen, on 30 June 1430, he commanded the army of al-Andalus before Santiago de Compostela in the War of Shant Yāqub and broke 7,000 Galicians, killing or taking 3,800 for the loss of 230 (+25 war score) (Trent's battle screen; save of 18 May 1430).",
+  "note": "Son of Aḥmad ibn Ismāʿīl, ruler of the Ṭāʾifa of Liyūn, and so a nephew of the Emperor Muḥammad V; married. At seventeen, on 30 June 1430, he commanded the army of al-Andalus before Santiago de Compostela in the War of Shant Yāqub and broke 7,000 Galicians, killing or taking 3,800 for the loss of 230 (+25 war score) (Trent's battle screen; save of 18 May 1430). Still the realm's general in 1448: he landed the army on Sardinia in September 1448 and won at Seddori on 26 September, then crossed to Corsica, took Ajaccio and besieged Bastia, which fell on 17 September 1449 after 265 days (Trent's account and battle screen).",
   "stations": [
    {
     "role": "general",
@@ -4398,7 +4435,7 @@
    {
     "role": "general",
     "from": "1447-07-02",
-    "to": null,
+    "to": "1447-12-01",
     "source": "save",
     "approx": false
    }
@@ -4673,7 +4710,7 @@
    "child_shrewd",
    "accomplished_sailor"
   ],
-  "note": "Eldest son of the heir Ismāʿīl by Tella, born at Gharnāṭa on 6 January 1422, and second in line behind his father. Given an expensive, in-depth education, and shrewd as a child. By January 1438 he had married three wives: Amie, daughter of Mansa Tiramakhan of Mālī; Fāṭima, daughter of the late Yūsuf ibn Ismāʿīl of Banbalūna, to tie the ṭāʾifas to the crown; and Muʾmina, daughter of Muṣliḥ al-Dīn of the court. At sixteen his grandfather the Emperor made him admiral of the fleet, believing the post had made a man of him and would do the same for his grandson (Trent's screenshot and account; save of 16 January 1438). In January 1448, admiral of the eleventh fleet in the Tunisian war for Palermo, he proved himself raiding along the coast of Naples, and the chancellor reported him an accomplished sailor (Trent's account and screenshot, 13 January 1448).",
+  "note": "Eldest son of the heir Ismāʿīl by Tella, born at Gharnāṭa on 6 January 1422, and second in line behind his father. Given an expensive, in-depth education, and shrewd as a child. By January 1438 he had married three wives: Amie, daughter of Mansa Tiramakhan of Mālī; Fāṭima, daughter of the late Yūsuf ibn Ismāʿīl of Banbalūna, to tie the ṭāʾifas to the crown; and Muʾmina, daughter of Muṣliḥ al-Dīn of the court. At sixteen his grandfather the Emperor made him admiral of the fleet, believing the post had made a man of him and would do the same for his grandson (Trent's screenshot and account; save of 16 January 1438). In January 1448, admiral of the eleventh fleet in the Tunisian war for Palermo, he proved himself raiding along the coast of Naples, and the chancellor reported him an accomplished sailor (Trent's account and screenshot, 13 January 1448). His squadron sank an Athenian ship off Terracina (5 January 1448) and two Sicilian ships in the Gulf of Termini (13 January), and on 21 October 1448, with 21 galleys, sank all five Genoese ships it met in the Corsica Channel without loss. His son Āram by Amie was born on 23 April 1449 (save of 2 August 1449; Trent's battle screen).",
   "stations": [
    {
     "role": "admiral",
@@ -4714,6 +4751,12 @@
     "text": "Proves himself raiding the coast of Naples in the war for Palermo; his captains call him an accomplished sailor.",
     "by": "trent",
     "source": "Trent's account and screenshot, 13 January 1448"
+   },
+   {
+    "from": "1448-10-21",
+    "text": "Sinks five Genoese ships in the Corsica Channel without loss.",
+    "by": "chronicle",
+    "source": "Trent's battle screen, 21 October 1448"
    }
   ],
   "ties": [
@@ -5029,8 +5072,47 @@
     "to": "1447-10-01",
     "source": "save",
     "approx": false
+   },
+   {
+    "role": "explorer",
+    "from": "1448-04-17",
+    "to": null,
+    "source": "save",
+    "approx": false
    }
   ],
   "tier": "key"
+ },
+ {
+  "id": "abu-al-hasan-ali-of-burtughal",
+  "name": "Abū al-Ḥasan ʿAlī ibn Aḥmad of al-Burtughāl",
+  "nameArabic": "أبو الحسن علي بن أحمد",
+  "nameGame": "Abu al-Hasan Ali",
+  "gameId": 16791257,
+  "dynasty": "Naṣrid",
+  "born": "1394-08-05",
+  "died": "1448-06-01",
+  "father": "ahmad-ibn-ismail-ibn-yusuf",
+  "roles": [
+   "king of the Ṭāʾifa of al-Burtughāl"
+  ],
+  "traits": [
+   "level_headed"
+  ],
+  "note": "Son of Aḥmad ibn Ismāʿīl, the first ṭāʾifa king of al-Burtughāl, whom he succeeded as king. In the Tunisian war for Palermo he commanded his own ships: on 9 September 1447 two Sicilian ships drove three of his off western Corsica. He died at sea on 1 June 1448. His widow Christine bore him a daughter, ʿĀʾisha, the next day, and has ruled as regent for their elder daughter Fāṭima, born 31 December 1440, since his death (saves of 5 October 1447 and 1 February 1449)."
+ },
+ {
+  "id": "abu-al-hasan-ali-of-banbaluna",
+  "name": "Abū al-Ḥasan ʿAlī ibn Aḥmad of Banbalūna",
+  "nameArabic": "أبو الحسن علي بن أحمد",
+  "nameGame": "Abu al-Hasan Ali",
+  "gameId": 16830052,
+  "dynasty": "Naṣrid",
+  "born": "1417-02-16",
+  "father": "ahmad-ibn-yusuf-ibn-ismail",
+  "roles": [
+   "lord of the Ṭāʾifa of Banbalūna (from 1449)"
+  ],
+  "note": "Eldest son of Aḥmad ibn Yūsuf, lord of the Ṭāʾifa of Banbalūna, whom he succeeded when his father died of camp fever on 18 February 1449; his son Aḥmad was born on 18 April 1448 (save of 2 August 1449)."
  }
 ]

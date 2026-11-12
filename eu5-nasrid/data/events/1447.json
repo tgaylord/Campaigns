@@ -198,15 +198,33 @@
   "source": "save of 5 October 1447"
  },
  {
+  "id": "1447-09-07-the-hungarian-succession",
+  "date": "1447-09-07",
+  "type": "diplomacy",
+  "people": [],
+  "places": [],
+  "wars": [],
+  "title": "Bohemia goes to war with Hungary to claim its throne, with Poland and the princes of the Empire behind it; Naples, Croatia and Albania stand with Hungary. By August 1449 Bohemia holds 94 Hungarian towns and Poland 14",
+  "data": {
+   "war": "a war of succession (casus belli 'claim throne'), begun 7 September 1447",
+   "attackers": "Bohemia, Poland, Brandenburg, Saxony, Moldavia and some thirty smaller princes",
+   "defenders": "Hungary, Naples, Croatia, Albania, Achaea and others",
+   "occupied": "94 Hungarian locations by Bohemia, 14 by Poland, 1 by Saxony (save of 2 August 1449)"
+  },
+  "source": "Trent's account (12 November 2026); saves of 1 February 1448 to 2 August 1449"
+ },
+ {
   "id": "1447-09-09-battle-corsica-west-coast",
   "date": "1447-09-09",
   "type": "battle",
-  "people": [],
+  "people": [
+   "abu-al-hasan-ali-of-burtughal"
+  ],
   "places": [],
   "wars": [
    "tunisian-war-for-palermo"
   ],
-  "title": "Off the west coast of Corsica two Sicilian ships fall on three of the ṭāʾifa of al-Burtughāl and drive them off without loss",
+  "title": "Off the west coast of Corsica two Sicilian ships fall on three of the ṭāʾifa of al-Burtughāl, led by its king Abū al-Ḥasan ʿAlī, and drive them off without loss",
   "data": {
    "result": "allied defeat",
    "naval": true,
@@ -224,7 +242,7 @@
    "side": "enemy attacking",
    "units": "ships (losses in ship-equivalents)",
    "commanders": {
-    "ours": "Abū al-Ḥasan ʿAlī#16791257",
+    "ours": "Abū al-Ḥasan ʿAlī, king of the Ṭāʾifa of al-Burtughāl",
     "theirs": "Demetrius#16842749"
    }
   },
@@ -350,5 +368,140 @@
    "aim": "an outpost at or near the cape (Trent)"
   },
   "source": "Trent's account, 5 October 1447; save of 5 October 1447"
+ },
+ {
+  "id": "1447-10-30-battle-oristano",
+  "date": "1447-10-30",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "At Oristano, Tunis and Gallura (2,408 men) attack Arborea (3,865) and are beaten: 1,484 lost against 761",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Tunis": 1605,
+    "Gallura": 803
+   },
+   "oursTotal": 2408,
+   "oursLost": 1484,
+   "theirs": {
+    "Arborea": 3865
+   },
+   "theirsTotal": 3865,
+   "theirsLost": 761,
+   "location": "Oristano",
+   "side": "allies attacking",
+   "commanders": {
+    "ours": "Kubad#33570617",
+    "theirs": "Benedict#16832034"
+   }
+  },
+  "source": "save of 2 August 1449"
+ },
+ {
+  "id": "1447-11-25-battle-gulf-asinara",
+  "date": "1447-11-25",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "In the Gulf of Asinara, off northern Sardinia, 31 Genoese and 28 Sicilian ships destroy Annaba's whole fleet of 21 without loss",
+  "data": {
+   "result": "allied defeat",
+   "naval": true,
+   "ours": {
+    "Annaba": 21
+   },
+   "oursTotal": 21,
+   "oursLost": 21,
+   "theirs": {
+    "Genoa": 31,
+    "Sicily": 28
+   },
+   "theirsTotal": 59,
+   "theirsLost": 0,
+   "location": "Gulf of Asinara",
+   "side": "enemy attacking",
+   "units": "ships",
+   "commanders": {
+    "ours": "Abdullah#33613047",
+    "theirs": "Arnold#16822078"
+   }
+  },
+  "source": "save of 2 August 1449"
+ },
+ {
+  "id": "1447-12-16-battle-gulf-oristano",
+  "date": "1447-12-16",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "In the Gulf of Oristano Genoa's 31 ships attack the fleet of Tunis, 88 sail with three of Burgos's: the allies lose 17 ships, Genoa 26, and the Genoese attack fails",
+  "data": {
+   "result": "allied victory",
+   "naval": true,
+   "ours": {
+    "Tunis": 88,
+    "Taifa of Burgos": 3
+   },
+   "oursTotal": 91,
+   "oursLost": 17,
+   "theirs": {
+    "Genoa": 31
+   },
+   "theirsTotal": 31,
+   "theirsLost": 26,
+   "location": "Gulf of Oristano",
+   "side": "enemy attacking",
+   "units": "ships",
+   "commanders": {
+    "ours": "Ishmael#16852775",
+    "theirs": "Arnold#16822078"
+   }
+  },
+  "source": "save of 2 August 1449"
+ },
+ {
+  "id": "1447-12-22-battle-toulon",
+  "date": "1447-12-22",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "At Toulon, Genoa and Dignois and Cuneo (4,714 men) attack Taifa of Burgos (867), who are beaten: 766 lost against 86",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Taifa of Burgos": 867
+   },
+   "oursTotal": 867,
+   "oursLost": 766,
+   "theirs": {
+    "Genoa": 4227,
+    "Dignois": 82,
+    "Cuneo": 405
+   },
+   "theirsTotal": 4714,
+   "theirsLost": 86,
+   "location": "Toulon",
+   "side": "enemy attacking",
+   "commanders": {
+    "ours": "Hernan#95710",
+    "theirs": "Julius Caesar#16801655"
+   }
+  },
+  "source": "save of 2 August 1449"
  }
 ]

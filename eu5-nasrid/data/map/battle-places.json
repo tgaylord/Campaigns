@@ -899,6 +899,181 @@
    "grasse",
    8005.3,
    2318.3
+  ],
+  "1447-10-30-battle-oristano": [
+   "oristano",
+   8084.0,
+   2556.5
+  ],
+  "1447-11-25-battle-gulf-asinara": [
+   "gulf_asinara",
+   8067.2,
+   2466.0
+  ],
+  "1447-12-16-battle-gulf-oristano": [
+   "gulf_oristano",
+   8052.3,
+   2563.5
+  ],
+  "1447-12-22-battle-toulon": [
+   "toulon",
+   7970.7,
+   2353.4
+  ],
+  "1448-01-03-battle-gulf-termini": [
+   "gulf_termini",
+   8324.8,
+   2649.9
+  ],
+  "1448-01-05-battle-gulf-terracina": [
+   "gulf_terracina",
+   8267.3,
+   2491.3
+  ],
+  "1448-01-09-battle-oristano": [
+   "oristano",
+   8084.0,
+   2556.5
+  ],
+  "1448-01-13-battle-gulf-termini": [
+   "gulf_termini",
+   8324.8,
+   2649.9
+  ],
+  "1448-03-02-battle-nice": [
+   "nice",
+   8024.4,
+   2308.6
+  ],
+  "1448-05-15-battle-oristano": [
+   "oristano",
+   8084.0,
+   2556.5
+  ],
+  "1448-08-14-battle-ales": [
+   "ales",
+   8097.1,
+   2567.5
+  ],
+  "1448-09-26-battle-seddori": [
+   "seddori",
+   8108.6,
+   2584.1
+  ],
+  "1448-09-27-battle-palermo": [
+   "palermo",
+   8295.3,
+   2674.9
+  ],
+  "1448-10-21-battle-corsica-channel": [
+   "corsica_channel",
+   8144.3,
+   2366.6
+  ],
+  "1448-11-12-battle-palermo": [
+   "palermo",
+   8295.3,
+   2674.9
+  ],
+  "1448-12-16-battle-mecca": [
+   "mecca",
+   9509.2,
+   3662.4
+  ],
+  "1449-01-14-battle-palermo": [
+   "palermo",
+   8295.3,
+   2674.9
+  ],
+  "1449-02-10-battle-salemi": [
+   "salemi",
+   8280.1,
+   2685.8
+  ],
+  "1449-02-18-battle-al-ajfar": [
+   "al_ajfar",
+   9655.3,
+   3312.2
+  ],
+  "1449-02-26-battle-toulon": [
+   "toulon",
+   7970.7,
+   2353.4
+  ],
+  "1449-03-11-battle-al-hegrieah": [
+   "al_hegrieah",
+   9520.3,
+   3509.2
+  ],
+  "1449-03-30-battle-toulon": [
+   "toulon",
+   7970.7,
+   2353.4
+  ],
+  "1449-04-03-battle-al-muthainiyah": [
+   "al_muthainiyah",
+   9510.7,
+   3599.7
+  ],
+  "1449-04-08-battle-ash-shamli": [
+   "ash_shamli",
+   9515.2,
+   3350.3
+  ],
+  "1449-04-09-battle-palermo": [
+   "palermo",
+   8295.3,
+   2674.9
+  ],
+  "1449-04-15-battle-barahrah": [
+   "barahrah",
+   9578.9,
+   3705.1
+  ],
+  "1449-04-15-battle-qudayd": [
+   "qudayd",
+   9488.9,
+   3587.5
+  ],
+  "1449-04-16-battle-al-mahani": [
+   "al_mahani",
+   9534.7,
+   3605.9
+  ],
+  "1449-04-16-battle-ash-shamli": [
+   "ash_shamli",
+   9515.2,
+   3350.3
+  ],
+  "1449-04-26-battle-gulf-genoa": [
+   "gulf_genoa",
+   8095.8,
+   2301.5
+  ],
+  "1449-04-28-battle-taif": [
+   "taif",
+   9540.7,
+   3648.1
+  ],
+  "1449-05-05-battle-angelokastron": [
+   "angelokastron",
+   8664.9,
+   2642.1
+  ],
+  "1449-05-10-battle-ash-shamli": [
+   "ash_shamli",
+   9515.2,
+   3350.3
+  ],
+  "1449-06-10-battle-ash-shamli-tayma-corridor": [
+   "ash_shamli_tayma_corridor",
+   9477.3,
+   3330.4
+  ],
+  "1449-07-06-battle-khulays": [
+   "khulays",
+   9486.8,
+   3613.0
   ]
  },
  "unplaced": {

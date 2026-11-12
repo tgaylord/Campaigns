@@ -923,9 +923,9 @@
  {
   "id": "2026-11-12",
   "date": "2026-11-12",
-  "commits": 9,
+  "commits": 10,
   "firstCommit": "e4cb054",
-  "lastCommit": "432d9c5",
+  "lastCommit": "06c87b6",
   "uncommitted": true,
   "claudeSessions": [
    "session_01BjCUTWMwSncdsoun2VQ9xv"
@@ -939,11 +939,12 @@
    "[eu5-nasrid] Folio and names switch: fixes from a fresh-eyes review",
    "[eu5-nasrid] Tiers, dated stations and arcs for the Hourglass",
    "[eu5-nasrid] Arcs revised from Trent's direction: the queens' rivalry, the matriarch, Faraj's desert, the two princes",
-   "[eu5-nasrid] The court of Sa'd's reign: the two queens, the matriarch, Faraj's desert, the two princes"
+   "[eu5-nasrid] The court of Sa'd's reign: the two queens, the matriarch, Faraj's desert, the two princes",
+   "[eu5-nasrid] 1447: the envoys and the Umayyad claim, Isabel's death, the war for Palermo"
   ],
   "reached": {
    "from": "1368-11-20",
-   "to": "1448-01-13"
+   "to": "1450-02-15"
   },
   "entries": [
    "0770-04-08-of-the-two-queens-in-the-autumn-fas-came-again",
@@ -952,12 +953,16 @@
    "0850-10-20-of-the-closed-ports-of-the-franks",
    "0851-05-18-of-the-envoys-of-europe-and-the-borders-of-the-umayyads",
    "0851-07-24-of-the-lady-isabel-and-the-bridges-of-the-west",
-   "0851-11-06-of-the-war-for-balarm-and-the-prince-at-sea"
+   "0851-11-06-of-the-war-for-balarm-and-the-prince-at-sea",
+   "0852-07-03-of-the-jamaa-of-the-commons",
+   "0853-07-29-of-sardinia-and-the-siege-of-bastia",
+   "0854-01-02-of-the-thughur-and-the-landing-at-saraqusa"
   ],
   "notes": [
    "0770-04-09-ooc-the-court-of-saads-reign-revised",
    "0850-11-15-ooc-the-saves-of-1442-to-1447",
-   "0851-11-07-ooc-the-saves-of-1447-and-the-umayyad-claim"
+   "0851-11-07-ooc-the-saves-of-1447-and-the-umayyad-claim",
+   "0854-01-03-ooc-the-saves-of-1448-and-1449"
   ],
   "checkpoints": [
    "1442-08-29",
@@ -965,20 +970,26 @@
    "1444-08-27",
    "1447-02-01",
    "1447-03-28",
-   "1447-10-05"
+   "1447-10-05",
+   "1448-02-01",
+   "1449-02-01",
+   "1449-08-02"
   ],
   "people": [
    "abd-al-jalil-al-qubbasi",
    "abu-al-hasan-ali-ibn-yusuf-ibn-ismail",
+   "abu-al-hasan-ali-of-banbaluna",
+   "abu-al-hasan-ali-of-burtughal",
    "aisha-bint-yusuf-ibn-ismail-ibn-muhammad",
    "faruq-ibn-yusuf-ibn-ismail",
    "saad-ibn-yusuf-ibn-ismail"
   ],
   "wars": [
+   "mamluk-war-on-lam",
    "tunisian-war-for-palermo"
   ],
   "places": [],
-  "events": 22,
+  "events": 70,
   "removed": {
    "entries": [],
    "checkpoints": [],

@@ -1040,10 +1040,74 @@
     "Arezzo"
    ]
   },
-  "note": "Tunis, the ally of al-Andalus since the last century, declared war on Sicily on 13 June 1447 (28 Rabīʿ al-Awwal 851) for the province of Palermo, and called the Emperor to arms the same day. Trent: 'We are accepting.' Al-Andalus came in with its ṭāʾifas, and Tunis with Tripoli, Gabès, Touggourt, Gallura in Sardinia and its two governorships of Annaba and Constantine. Sicily brought Athens and Negroponte; its allies Genoa and the Pope came in, Genoa with Arborea, Corsica, Cuneo, Gazaria and Dignois (Trent's screenshot of 13 June 1447; save of 5 October 1447). By October the fighting had gone against the allies: Arborea beat the Gallurese at Ozieri (6 August), two Sicilian ships drove off three of Portugal's off western Corsica (9 September), the fleets of Tunis, Tripoli and Gabès lost nineteen of their twenty-eight ships to six of Genoa's in the Gulf of Termini (11 September), and Aḥmad of Banbalūna's 385 men were cut down by 4,200 Genoese at Grasse in Provence (5 October). Al-Andalus's own armies and fleets had not yet fought (save of 5 October 1447). In January 1448 the Emperor's grandson Yūsuf was raiding the coast of Naples with the fleet (Trent's account, 13 January 1448).",
+  "note": "Tunis, the ally of al-Andalus since the last century, declared war on Sicily on 13 June 1447 (28 Rabīʿ al-Awwal 851) for the province of Palermo, and called the Emperor to arms the same day. Trent: 'We are accepting.' Al-Andalus came in with its ṭāʾifas, and Tunis with Tripoli, Gabès, Touggourt, Gallura in Sardinia and its two governorships of Annaba and Constantine. Sicily brought Athens and Negroponte; its allies Genoa and the Pope came in, Genoa with Arborea, Corsica, Cuneo, Gazaria and Dignois (Trent's screenshot of 13 June 1447; save of 5 October 1447). By October the fighting had gone against the allies: Arborea beat the Gallurese at Ozieri (6 August), two Sicilian ships drove off three of Portugal's off western Corsica (9 September), the fleets of Tunis, Tripoli and Gabès lost nineteen of their twenty-eight ships to six of Genoa's in the Gulf of Termini (11 September), and Aḥmad of Banbalūna's 385 men were cut down by 4,200 Genoese at Grasse in Provence (5 October). Al-Andalus's own armies and fleets had not yet fought (save of 5 October 1447). In January 1448 the Emperor's grandson Yūsuf was raiding the coast of Naples with the fleet (Trent's account, 13 January 1448). Through the winter of 1447–48 the war went on at sea: 31 Genoese and 28 Sicilian ships destroyed Annaba's fleet of 21 in the Gulf of Asinara (25 November 1447), but when Genoa's 31 attacked the Tunisian fleet of 88 in the Gulf of Oristano (16 December) it lost 26 ships to the allies' 17. Gabès made its peace on 1 December 1448. In September 1448 the army of al-Andalus landed on Sardinia under Abū al-Ḥasan ʿAlī and destroyed Arborea's army at Seddori (26 September); Yūsuf's galleys sank five Genoese ships in the Corsica Channel (21 October). The allies' attacks on Palermo itself failed four times between September 1448 and April 1449. By August 1449 al-Andalus held seven Corsican towns and five of Arborea's (save of 2 August 1449). Bastia fell on 17 September 1449 after 265 days, and on 15 February 1450 8,700 professional soldiers of al-Andalus landed at Syracuse (Trent's account).",
   "outcome": null,
   "joined": {
    "from": "1447-06-13",
+   "to": null
+  },
+  "score": []
+ },
+ {
+  "id": "mamluk-war-on-lam",
+  "name": "The Mamlūk War on the Banū Lām",
+  "gameName": "1st Egypt–Lam War",
+  "start": "1448-11-05",
+  "end": null,
+  "goal": "The Mamlūks' claim, backed by their assembly, to al-Ghazāla and al-Rawḍa in the country of the Banū Lām in Najd (the casus belli 'conquer province')",
+  "allies": [
+   "Mamluks",
+   "Mecca",
+   "Medina",
+   "Hutaym",
+   "Al ʿAlī",
+   "Al Mira",
+   "Döger",
+   "Barqa",
+   "Banu Kanz",
+   "Suakin"
+  ],
+  "enemies": [
+   "Lām",
+   "Yemen",
+   "Dhofar",
+   "Otaibah",
+   "Dawasir",
+   "Dobeʿa",
+   "Tanade"
+  ],
+  "involvement": "belligerent",
+  "sides": {
+   "attackers": [
+    "Mamluks",
+    "Mecca",
+    "Medina",
+    "Hutaym",
+    "Al ʿAlī",
+    "Al Mira",
+    "Döger",
+    "Barqa",
+    "Banu Kanz",
+    "Suakin",
+    "the Mamlūks' other vassals",
+    "al-Andalus",
+    "the seven ṭāʾifas"
+   ],
+   "defenders": [
+    "Lām",
+    "Yemen",
+    "Dhofar",
+    "Dobeʿa",
+    "Tanade",
+    "Otaibah",
+    "Dawasir",
+    "and two lesser lords"
+   ]
+  },
+  "note": "The Mamlūks of Miṣr, allies of al-Andalus since 1367, went to war with the Banū Lām of Najd on 5 November 1448 (8 Ramaḍān 852), and al-Andalus and its ṭāʾifas came in the same day. Al-Andalus is in it in name (Trent). By August 1449 it had gone badly for the Mamlūk side: Otaibah beat Mecca's army at Mecca itself (16 December 1448), Lām won six fights between February and July 1449 across the Ḥijāz and northern Najd, and on 10 June 1449 a Lām force of 3,497 carried the field against the main Mamlūk army of 22,800 in the corridor between ash-Shamli and Tayma. The Mamlūks held one of Lām's towns, Lām six of the Mamlūk vassals' (save of 2 August 1449). Trent: the Mamlūks are trying, and so far failing, to extend their hold along the Red Sea coast.",
+  "outcome": null,
+  "joined": {
+   "from": "1448-11-05",
    "to": null
   },
   "score": []

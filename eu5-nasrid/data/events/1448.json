@@ -1,5 +1,141 @@
 [
  {
+  "id": "1448-01-03-battle-gulf-termini",
+  "date": "1448-01-03",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "At Gulf of Termini, Sicily (2 ships) attacks Tripoli (1), who are beaten: 1 lost against 0",
+  "data": {
+   "result": "allied defeat",
+   "naval": true,
+   "ours": {
+    "Tripoli": 1
+   },
+   "oursTotal": 1,
+   "oursLost": 1,
+   "theirs": {
+    "Sicily": 2
+   },
+   "theirsTotal": 2,
+   "theirsLost": 0,
+   "location": "Gulf of Termini",
+   "side": "enemy attacking",
+   "units": "ships",
+   "commanders": {
+    "ours": "Abd Al-Wahid#93093",
+    "theirs": "Cyrus#50362395"
+   }
+  },
+  "source": "save of 2 August 1449"
+ },
+ {
+  "id": "1448-01-05-battle-gulf-terracina",
+  "date": "1448-01-05",
+  "type": "battle",
+  "people": [
+   "yusuf-ibn-ismail-ibn-muhammad"
+  ],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "In the Gulf of Terracina, off the coast of Naples, a single Athenian ship attacks the prince Yūsuf's eight and is sunk",
+  "data": {
+   "result": "allied victory",
+   "naval": true,
+   "ours": {
+    "al-Andalus": 8
+   },
+   "oursTotal": 8,
+   "oursLost": 0,
+   "theirs": {
+    "Athens": 1
+   },
+   "theirsTotal": 1,
+   "theirsLost": 1,
+   "location": "Gulf of Terracina",
+   "side": "enemy attacking",
+   "units": "ships",
+   "commanders": {
+    "ours": "the prince Yūsuf ibn Ismāʿīl",
+    "theirs": "Peter#79415"
+   }
+  },
+  "source": "save of 2 August 1449"
+ },
+ {
+  "id": "1448-01-09-battle-oristano",
+  "date": "1448-01-09",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "At Oristano, Tunis and Gallura (913 men) attack Arborea (3,103) and are beaten: 847 lost against 135",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Tunis": 589,
+    "Gallura": 324
+   },
+   "oursTotal": 913,
+   "oursLost": 847,
+   "theirs": {
+    "Arborea": 3103
+   },
+   "theirsTotal": 3103,
+   "theirsLost": 135,
+   "location": "Oristano",
+   "side": "allies attacking",
+   "commanders": {
+    "ours": "Kubad#33570617",
+    "theirs": "Benedict#16832034"
+   }
+  },
+  "source": "save of 2 August 1449"
+ },
+ {
+  "id": "1448-01-13-battle-gulf-termini",
+  "date": "1448-01-13",
+  "type": "battle",
+  "people": [
+   "yusuf-ibn-ismail-ibn-muhammad"
+  ],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "In the Gulf of Termini the prince Yūsuf's eight ships fall on two Sicilian ships and sink both, the day the chancellor calls him an accomplished sailor",
+  "data": {
+   "result": "allied victory",
+   "naval": true,
+   "ours": {
+    "al-Andalus": 8
+   },
+   "oursTotal": 8,
+   "oursLost": 0,
+   "theirs": {
+    "Sicily": 2
+   },
+   "theirsTotal": 2,
+   "theirsLost": 2,
+   "location": "Gulf of Termini",
+   "side": "allies attacking",
+   "units": "ships",
+   "commanders": {
+    "ours": "the prince Yūsuf ibn Ismāʿīl",
+    "theirs": "Cyrus#50362395"
+   }
+  },
+  "source": "save of 2 August 1449"
+ },
+ {
   "id": "1448-01-13-the-prince-raids-naples",
   "date": "1448-01-13",
   "type": "player_note",
@@ -18,5 +154,386 @@
    "reportedBy": "the chancellor (the game's report)"
   },
   "source": "Trent's account and screenshot, 13 January 1448"
+ },
+ {
+  "id": "1448-03-02-battle-nice",
+  "date": "1448-03-02",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "At Nice, Genoa (4,225 men) attacks Taifa of Pamplona (346), who are beaten: 138 lost against 0",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Taifa of Pamplona": 346
+   },
+   "oursTotal": 346,
+   "oursLost": 138,
+   "theirs": {
+    "Genoa": 4225
+   },
+   "theirsTotal": 4225,
+   "theirsLost": 0,
+   "location": "Nice",
+   "side": "enemy attacking",
+   "commanders": {
+    "ours": "Peter#88980",
+    "theirs": "Paul#33612419"
+   }
+  },
+  "source": "save of 2 August 1449"
+ },
+ {
+  "id": "1448-05-15-battle-oristano",
+  "date": "1448-05-15",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "At Oristano, Taifa of Cuenca (3,199 men) attacks Arborea (2,968) and win: 831 lost against 1,443",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Taifa of Cuenca": 3199
+   },
+   "oursTotal": 3199,
+   "oursLost": 831,
+   "theirs": {
+    "Arborea": 2968
+   },
+   "theirsTotal": 2968,
+   "theirsLost": 1443,
+   "location": "Oristano",
+   "side": "allies attacking",
+   "commanders": {
+    "ours": "Husam#16848453",
+    "theirs": "Benedict#16832034"
+   }
+  },
+  "source": "save of 2 August 1449"
+ },
+ {
+  "id": "1448-06-01-death-of-the-king-of-portugal",
+  "date": "1448-06-01",
+  "type": "death",
+  "people": [
+   "abu-al-hasan-ali-of-burtughal",
+   "ahmad-ibn-ismail-ibn-yusuf"
+  ],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "Abū al-Ḥasan ʿAlī, king of the Ṭāʾifa of al-Burtughāl, dies at sea in command of his fleet. His widow Christine gives birth to a daughter the next day, and rules as regent for their seven-year-old daughter Fāṭima",
+  "data": {
+   "born": "1394-08-05",
+   "cause": "lost at sea",
+   "father": "Aḥmad ibn Ismāʿīl, the first ṭāʾifa king of Portugal",
+   "heir": "Fāṭima, born 31 December 1440",
+   "regency": "Christine, his widow (born 1416), from 1 June 1448 until the end of 1456",
+   "posthumous": "ʿĀʾisha, born 2 June 1448"
+  },
+  "source": "autosave of 1 February 1449"
+ },
+ {
+  "id": "1448-06-28-death-of-maryam-of-qunka",
+  "date": "1448-06-28",
+  "type": "death",
+  "people": [
+   "maryam-bint-saad-ibn-faraj",
+   "abu-al-hasan-ali-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Maryam bint Saʿd, Shaykha of the Ṭāʾifa of Qūnka for forty years, dies of a burst ulcer at fifty-seven. Her son Abū al-Ḥasan ʿAlī ibn Saʿd succeeds her",
+  "data": {
+   "born": "1390-11-05",
+   "cause": "burst ulcer",
+   "successor": "Abū al-Ḥasan ʿAlī ibn Saʿd, born 17 April 1410, the Emperor's nephew"
+  },
+  "source": "autosave of 1 February 1449"
+ },
+ {
+  "id": "1448-08-14-battle-ales",
+  "date": "1448-08-14",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "At Ales, Gallura (28 men) attacks Arborea (1,523) and are beaten: 28 lost against 0",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Gallura": 28
+   },
+   "oursTotal": 28,
+   "oursLost": 28,
+   "theirs": {
+    "Arborea": 1523
+   },
+   "theirsTotal": 1523,
+   "theirsLost": 0,
+   "location": "Ales",
+   "side": "allies attacking",
+   "commanders": {
+    "ours": "Kubad#33570617",
+    "theirs": "Benedict#16832034"
+   }
+  },
+  "source": "save of 2 August 1449"
+ },
+ {
+  "id": "1448-09-02-the-jamaa-of-the-commons",
+  "date": "1448-09-02",
+  "type": "estate_change",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad",
+   "ismail-ibn-muhammad-ibn-ismail",
+   "ahmad-ibn-muhammad-ibn-ismail"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "A Jamāʿa called by the two princes ends in uproar when the Emperor decrees that the commons, the middling craftsmen and the small-town notables, will sit in every future Jamāʿa as an estate equal to the others",
+  "data": {
+   "privilege": "peasants represented in parliament (in force by the autosave of 1 February 1449)",
+   "calledBy": "the two princes, Ismāʿīl and Aḥmad (Trent)",
+   "commons": "satisfaction 50 before, 59 in February 1449 and 54 in August 1449",
+   "burghers": "54 to 56",
+   "parliamentSeat": "an urban seat in the Jamāʿa at al-Ushbūna by August 1449"
+  },
+  "source": "Trent's account (12 November 2026); autosave of 1 February 1449; save of 2 August 1449"
+ },
+ {
+  "id": "1448-09-02-the-landing-on-sardinia",
+  "date": "1448-09-02",
+  "type": "player_note",
+  "people": [
+   "abu-al-hasan-ali-ibn-ahmad"
+  ],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "The army of al-Andalus under Abū al-Ḥasan ʿAlī lands on Sardinia",
+  "data": {
+   "army": "about 4,900 men (the battle screen of 26 September shows 2,467 infantry, 2,370 light and 493 heavy horse)"
+  },
+  "source": "Trent's account (12 November 2026)"
+ },
+ {
+  "id": "1448-09-26-battle-seddori",
+  "date": "1448-09-26",
+  "type": "battle",
+  "people": [
+   "abu-al-hasan-ali-ibn-ahmad"
+  ],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "At Seddori in Sardinia the army of al-Andalus, with Banbalūna's men, 5,368 in all, is attacked by 1,523 Arboreans and destroys them for the loss of 291",
+  "data": {
+   "result": "allied victory",
+   "naval": false,
+   "ours": {
+    "Taifa of Pamplona": 524,
+    "al-Andalus": 4844
+   },
+   "oursTotal": 5368,
+   "oursLost": 291,
+   "theirs": {
+    "Arborea": 1523
+   },
+   "theirsTotal": 1523,
+   "theirsLost": 1523,
+   "location": "Seddori",
+   "side": "enemy attacking",
+   "commanders": {
+    "ours": "Peter#88980, general of Banbalūna (the save's commander of the joined armies); al-Andalus's army under Abū al-Ḥasan ʿAlī ibn Aḥmad (Trent)",
+    "theirs": "Benedict#16832034"
+   },
+   "composition": {
+    "ours": "2,467 infantry (−281), 2,370 light horse (−10), 493 heavy horse, 36 support (Trent's battle screen)",
+    "theirs": "1,523 levy archers, all lost"
+   },
+   "warScore": 3.97
+  },
+  "source": "Trent's battle screen, 26 September 1448; save of 2 August 1449"
+ },
+ {
+  "id": "1448-09-27-battle-palermo",
+  "date": "1448-09-27",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "At Palermo, Kingdom of Portugal (188 men) attacks Sicily (9,756) and are beaten: 188 lost against 0",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Kingdom of Portugal": 188
+   },
+   "oursTotal": 188,
+   "oursLost": 188,
+   "theirs": {
+    "Sicily": 9756
+   },
+   "theirsTotal": 9756,
+   "theirsLost": 0,
+   "location": "Palermo",
+   "side": "allies attacking",
+   "commanders": {
+    "ours": null,
+    "theirs": "Peter#16802169"
+   }
+  },
+  "source": "save of 2 August 1449"
+ },
+ {
+  "id": "1448-10-21-battle-corsica-channel",
+  "date": "1448-10-21",
+  "type": "battle",
+  "people": [
+   "yusuf-ibn-ismail-ibn-muhammad"
+  ],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "In the Corsica Channel the prince Yūsuf's 21 galleys attack five Genoese ships and sink all five without loss",
+  "data": {
+   "result": "allied victory",
+   "naval": true,
+   "ours": {
+    "al-Andalus": 21
+   },
+   "oursTotal": 21,
+   "oursLost": 0,
+   "theirs": {
+    "Genoa": 5
+   },
+   "theirsTotal": 5,
+   "theirsLost": 5,
+   "location": "Corsica Channel",
+   "side": "allies attacking",
+   "units": "ships",
+   "commanders": {
+    "ours": "the prince Yūsuf ibn Ismāʿīl",
+    "theirs": "Raymond#79697"
+   },
+   "warScore": 3.29
+  },
+  "source": "Trent's battle screen, 21 October 1448; save of 2 August 1449"
+ },
+ {
+  "id": "1448-11-05-the-call-of-the-mamluks",
+  "date": "1448-11-05",
+  "type": "war_joined",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [
+   "mamluk-war-on-lam"
+  ],
+  "title": "The Mamlūks go to war with the Banū Lām of Najd and their friends in Yemen and Arabia, and al-Andalus, their ally, comes in with its ṭāʾifas the same day, in name more than in deed",
+  "data": {
+   "target": "al-Ghazāla and al-Rawḍa, in Lām's country (the casus belli 'conquer province')",
+   "theMamluksSide": "Mecca, Medina, Hutaym, Al ʿAlī, Al Mira, Döger, Barqa, the Banū Kanz, Suakin",
+   "theirs": "Lām, Yemen, Dhofar, Otaibah, the Dawāsir and others",
+   "ours": "nominal (Trent): al-Andalus has fought no battle in it"
+  },
+  "source": "Trent's account (12 November 2026); autosave of 1 February 1449"
+ },
+ {
+  "id": "1448-11-12-battle-palermo",
+  "date": "1448-11-12",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "At Palermo, Gabès (2,732 men) attacks Sicily (9,756) and are beaten: 1,760 lost against 898",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Gabès": 2732
+   },
+   "oursTotal": 2732,
+   "oursLost": 1760,
+   "theirs": {
+    "Sicily": 9756
+   },
+   "theirsTotal": 9756,
+   "theirsLost": 898,
+   "location": "Palermo",
+   "side": "allies attacking",
+   "commanders": {
+    "ours": "Omar#16809993",
+    "theirs": "Peter#16802169"
+   }
+  },
+  "source": "save of 2 August 1449"
+ },
+ {
+  "id": "1448-12-01-gabes-makes-peace",
+  "date": "1448-12-01",
+  "type": "diplomacy",
+  "people": [],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "Gabès, Tunis's vassal, leaves the war for Palermo",
+  "data": {},
+  "source": "save of 2 August 1449"
+ },
+ {
+  "id": "1448-12-16-battle-mecca",
+  "date": "1448-12-16",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "mamluk-war-on-lam"
+  ],
+  "title": "At Mecca, Otaibah (3,634 men) attacks Mecca (1,894), who are beaten: 1,894 lost against 35",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Mecca": 1894
+   },
+   "oursTotal": 1894,
+   "oursLost": 1894,
+   "theirs": {
+    "Otaibah": 3634
+   },
+   "theirsTotal": 3634,
+   "theirsLost": 35,
+   "location": "Mecca",
+   "side": "enemy attacking",
+   "commanders": {
+    "ours": "Nizam#16794585",
+    "theirs": "Bahir#16848506"
+   },
+   "note": "a battle of the Mamlūks' war; al-Andalus is in it as an ally and has not fought"
+  },
+  "source": "save of 2 August 1449"
  }
 ]

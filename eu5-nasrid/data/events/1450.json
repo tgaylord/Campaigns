@@ -1,0 +1,22 @@
+[
+ {
+  "id": "1450-02-15-the-landing-at-saraqusa",
+  "date": "1450-02-15",
+  "type": "player_note",
+  "people": [
+   "ismail-ibn-muhammad-ibn-ismail",
+   "ahmad-ibn-muhammad-ibn-ismail"
+  ],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "8,700 men of al-Andalus land at Saraqūsa in Sicily: a wholly professional army",
+  "data": {
+   "men": 8700,
+   "where": "Syracuse (Saraqūsa)",
+   "army": "fully professional (Trent)"
+  },
+  "source": "Trent's account (12 November 2026)"
+ }
+]
