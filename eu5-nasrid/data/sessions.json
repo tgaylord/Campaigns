@@ -923,9 +923,9 @@
  {
   "id": "2026-11-12",
   "date": "2026-11-12",
-  "commits": 8,
+  "commits": 9,
   "firstCommit": "e4cb054",
-  "lastCommit": "68fb049",
+  "lastCommit": "432d9c5",
   "uncommitted": true,
   "claudeSessions": [
    "session_01BjCUTWMwSncdsoun2VQ9xv"
@@ -938,27 +938,34 @@
    "[eu5-nasrid] Phase two: the glossed folio on every leaf, and the names switch",
    "[eu5-nasrid] Folio and names switch: fixes from a fresh-eyes review",
    "[eu5-nasrid] Tiers, dated stations and arcs for the Hourglass",
-   "[eu5-nasrid] Arcs revised from Trent's direction: the queens' rivalry, the matriarch, Faraj's desert, the two princes"
+   "[eu5-nasrid] Arcs revised from Trent's direction: the queens' rivalry, the matriarch, Faraj's desert, the two princes",
+   "[eu5-nasrid] The court of Sa'd's reign: the two queens, the matriarch, Faraj's desert, the two princes"
   ],
   "reached": {
    "from": "1368-11-20",
-   "to": "1447-02-01"
+   "to": "1448-01-13"
   },
   "entries": [
    "0770-04-08-of-the-two-queens-in-the-autumn-fas-came-again",
    "0848-10-20-of-the-palace-on-the-river-and-the-harbours-of-the-crown",
    "0849-12-16-of-the-cape-where-africa-ends-and-the-island-given-up",
-   "0850-10-20-of-the-closed-ports-of-the-franks"
+   "0850-10-20-of-the-closed-ports-of-the-franks",
+   "0851-05-18-of-the-envoys-of-europe-and-the-borders-of-the-umayyads",
+   "0851-07-24-of-the-lady-isabel-and-the-bridges-of-the-west",
+   "0851-11-06-of-the-war-for-balarm-and-the-prince-at-sea"
   ],
   "notes": [
    "0770-04-09-ooc-the-court-of-saads-reign-revised",
-   "0850-11-15-ooc-the-saves-of-1442-to-1447"
+   "0850-11-15-ooc-the-saves-of-1442-to-1447",
+   "0851-11-07-ooc-the-saves-of-1447-and-the-umayyad-claim"
   ],
   "checkpoints": [
    "1442-08-29",
    "1444-02-06",
    "1444-08-27",
-   "1447-02-01"
+   "1447-02-01",
+   "1447-03-28",
+   "1447-10-05"
   ],
   "people": [
    "abd-al-jalil-al-qubbasi",
@@ -967,9 +974,11 @@
    "faruq-ibn-yusuf-ibn-ismail",
    "saad-ibn-yusuf-ibn-ismail"
   ],
-  "wars": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
   "places": [],
-  "events": 10,
+  "events": 22,
   "removed": {
    "entries": [],
    "checkpoints": [],

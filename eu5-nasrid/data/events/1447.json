@@ -60,5 +60,295 @@
    "period": "saves of 11 June 1442 to 1 February 1447"
   },
   "source": "Trent's account (12 November 2026); the buildings from the saves of 11 June 1442, 27 August 1444 and the autosave of 1 February 1447"
+ },
+ {
+  "id": "1447-03-27-the-timurid-stagnation",
+  "date": "1447-03-27",
+  "type": "situation",
+  "people": [],
+  "places": [],
+  "wars": [],
+  "title": "Thirteen years after Temür's death no successor has filled his place, and the Tīmūrid empire turns in on itself and stagnates",
+  "data": {
+   "event": "Stagnation of the Timurid Empire",
+   "founder": "Emperor Temür Lang Borjigin, 'died 13 years ago' (the game's text)",
+   "emperor": "Okhotur Borjigin",
+   "crownPrince": "Aepak Borjigin (seen 13 June 1447)",
+   "standing": "the Tīmūrids are still the world's fourth great power in October 1447, behind China, the Angevins and al-Andalus"
+  },
+  "source": "Trent's screenshot, 27 March 1447; save of 5 October 1447"
+ },
+ {
+  "id": "1447-06-13-the-call-of-tunis",
+  "date": "1447-06-13",
+  "type": "war_joined",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "Tunis goes to war with Sicily for Palermo and calls the Emperor to arms. Al-Andalus accepts, and its seven ṭāʾifas come in with it the same day",
+  "data": {
+   "call": "Tunis calls upon us to join them in their 2nd Tunis–Sicily War against Sicily, Athens, Negroponte, Genoa, Arborea, Corsica, Cuneo, Gazaria, Dignois, the Papal States and Arezzo. This is a war that they have started (the game's text, as Trent's screenshot shows it)",
+   "choice": "accept (Trent: 'We are accepting')",
+   "target": "the province of Palermo",
+   "alliesOfTunis": "Tripoli, Gabès, Touggourt, Gallura, Annaba, Constantine"
+  },
+  "source": "Trent's screenshot and account, 13 June 1447; save of 5 October 1447"
+ },
+ {
+  "id": "1447-06-29-birth-of-fatima-bint-saad",
+  "date": "1447-06-29",
+  "type": "birth",
+  "people": [
+   "ahmad-ibn-muhammad-ibn-ismail",
+   "ahmad-ibn-yusuf-ibn-ismail",
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "A daughter, Fāṭima, is born to Saʿd son of Aḥmad of Banbalūna and Muʾmina daughter of the prince Aḥmad: the Emperor's great-granddaughter, joining the crown's line and the ṭāʾifa's again",
+  "data": {
+   "father": "Saʿd ibn Aḥmad (born 27 July 1419), son of Aḥmad ibn Yūsuf, lord of the Ṭāʾifa of Banbalūna",
+   "mother": "Muʾmina bint Aḥmad (born 14 June 1423), daughter of the prince Aḥmad by ʿĀʾisha bint Saʿd",
+   "siblings": "Muʾmina's third child, Saʿd's sixth"
+  },
+  "source": "save of 5 October 1447"
+ },
+ {
+  "id": "1447-08-01-presence-in-europe",
+  "date": "1447-08-01",
+  "type": "situation",
+  "people": [
+   "muhammad-ibn-ismail-ibn-saad"
+  ],
+  "places": [
+   "ishbiliyya"
+  ],
+  "wars": [],
+  "title": "The envoys of the Christian princes come to Ishbīliya with gifts and careful compliments. The Emperor answers 'We have arrived': al-Andalus keeps its seat at Europe's table, and opens a claim to the borders of the Umayyad caliphate",
+  "data": {
+   "event": "Presence in Europe",
+   "text": "the Christian princes had written al-Andalus off as a chapter concluded; now their envoys come with gifts and careful compliments, curious what the Emperor intends. 'We hold no mastery yet, only a seat regained at a table we once headed... this time we do not mean to leave it' (the game's text)",
+   "precedent": "ʿAbd al-Raḥmān II and the embassy of Theophilos, 840 (the game's historical note)",
+   "choice": "We have arrived",
+   "effects": "while al-Andalus keeps 25 European dominance for the rest of the Golden Century, it keeps the benefits of the Restoration of al-Andalus; unlocks the casus belli 'Restore the Umayyad Caliphate Borders' and the ṭāʾifa subject type",
+   "claim": "the game's 'Umayyad Caliphate' term: 2,816 locations in 17 areas, among them Sūs, al-Maghrib al-Aqṣā, the Atlas high plateau and the rest of the Maghrib, and five regions: Iberia, the Fertile Crescent, Egypt, Arabia and Persia (Trent's screenshot)",
+   "realm": {
+    "treasury": "236.66 (+43.69 a month)",
+    "stability": 10,
+    "population": "3.416 million",
+    "legitimacy": 100,
+    "prestige": 88
+   }
+  },
+  "source": "Trent's screenshots, 1 August and October 1447"
+ },
+ {
+  "id": "1447-08-06-battle-ozieri",
+  "date": "1447-08-06",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "At Ozieri in Sardinia Genoa's vassal Arborea, 4,290 men, beats 1,655 of Tunis's vassal Gallura, which loses half its army",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Gallura": 1655
+   },
+   "oursTotal": 1655,
+   "oursLost": 842,
+   "theirs": {
+    "Arborea": 4290
+   },
+   "theirsTotal": 4290,
+   "theirsLost": 424,
+   "location": "Ozieri",
+   "side": "enemy attacking",
+   "commanders": {
+    "ours": "Kubad#33570617",
+    "theirs": "Benedict#16832034"
+   }
+  },
+  "source": "save of 5 October 1447"
+ },
+ {
+  "id": "1447-08-19-death-of-isabel-de-montsoriu",
+  "date": "1447-08-19",
+  "type": "death",
+  "people": [
+   "isabel-de-montsoriu",
+   "muhammad-ibn-ismail-ibn-saad",
+   "ahmad-ibn-muhammad-ibn-ismail"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "Isabel de Montsoriu, wife of the Emperor Muḥammad for more than forty years and mother of the prince Aḥmad, dies of old age on her sixty-fifth birthday",
+  "data": {
+   "born": "1382-08-19",
+   "cause": "old age",
+   "children": "Aḥmad (1403), ʿĀʾisha (1405) and two daughters"
+  },
+  "source": "save of 5 October 1447"
+ },
+ {
+  "id": "1447-09-09-battle-corsica-west-coast",
+  "date": "1447-09-09",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "Off the west coast of Corsica two Sicilian ships fall on three of the ṭāʾifa of al-Burtughāl and drive them off without loss",
+  "data": {
+   "result": "allied defeat",
+   "naval": true,
+   "ours": {
+    "Portugal": 3
+   },
+   "oursTotal": 3,
+   "oursLost": 0.4,
+   "theirs": {
+    "Sicily": 2
+   },
+   "theirsTotal": 2,
+   "theirsLost": 0,
+   "location": "Corsica west coast",
+   "side": "enemy attacking",
+   "units": "ships (losses in ship-equivalents)",
+   "commanders": {
+    "ours": "Abū al-Ḥasan ʿAlī#16791257",
+    "theirs": "Demetrius#16842749"
+   }
+  },
+  "source": "save of 5 October 1447"
+ },
+ {
+  "id": "1447-09-11-battle-gulf-termini",
+  "date": "1447-09-11",
+  "type": "battle",
+  "people": [],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "In the Gulf of Termini, off Sicily, six Genoese ships attack the combined fleet of Tunis, Tripoli and Gabès, twenty-eight ships, which loses nineteen of them for one of Genoa's",
+  "data": {
+   "result": "allied disaster (the save records the Genoese attack as not carrying the day, but the losses are the allies')",
+   "naval": true,
+   "ours": {
+    "Tunis": 9,
+    "Tripoli": 16,
+    "Gabès": 3
+   },
+   "oursTotal": 28,
+   "oursLost": 19,
+   "theirs": {
+    "Genoa": 6
+   },
+   "theirsTotal": 6,
+   "theirsLost": 1,
+   "location": "Gulf of Termini",
+   "side": "enemy attacking",
+   "units": "ships",
+   "commanders": {
+    "ours": "ʿAbd al-Wāḥid#93093",
+    "theirs": "Raymond#16822192"
+   }
+  },
+  "source": "save of 5 October 1447"
+ },
+ {
+  "id": "1447-10-05-battle-grasse",
+  "date": "1447-10-05",
+  "type": "battle",
+  "people": [
+   "ahmad-ibn-yusuf-ibn-ismail"
+  ],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "At Grasse in Provence Aḥmad, lord of the Ṭāʾifa of Banbalūna, fifty-one years old, attacks 4,200 Genoese with 385 men and loses all but 29 of them",
+  "data": {
+   "result": "allied defeat",
+   "naval": false,
+   "ours": {
+    "Taifa of Pamplona": 385
+   },
+   "oursTotal": 385,
+   "oursLost": 356,
+   "theirs": {
+    "Genoa": 4200
+   },
+   "theirsTotal": 4200,
+   "theirsLost": 0,
+   "location": "Grasse",
+   "side": "allies attacking",
+   "commanders": {
+    "ours": "Aḥmad ibn Yūsuf, lord of Banbalūna",
+    "theirs": "Simeon#33589959"
+   },
+   "afterwards": "his command ends that day; the save marks him ruthless"
+  },
+  "source": "save of 5 October 1447"
+ },
+ {
+  "id": "1447-10-05-the-bridges-of-the-wadi-ana",
+  "date": "1447-10-05",
+  "type": "reform",
+  "people": [
+   "ahmad-ibn-muhammad-ibn-ismail"
+  ],
+  "places": [
+   "batalyaws",
+   "jayyan",
+   "shantarin",
+   "qurtuba",
+   "larida",
+   "ishbiliyya",
+   "sharish",
+   "istijja",
+   "jarunda"
+  ],
+  "wars": [],
+  "title": "The treasury goes into the towns again: six bridges in the country of the Tagus and the Guadiana, at Alcántara, Medellín, Villanueva de la Serena, Valencia de Alcántara, Brozas and Jaraicejo, and new gunsmiths, tanneries, glassworks and a cannon foundry",
+  "data": {
+   "bridges": "Alcántara, Medellín, Villanueva de la Serena, Valencia de Alcántara, Brozas, Jaraicejo",
+   "gunsmiths": "Jaén, Santarém, Badajoz",
+   "tanneries": "Córdoba, Lleida",
+   "glass": "Seville (two)",
+   "distillery": "Jerez",
+   "lumber mill": "Écija",
+   "winery": "Castellón de la Plana",
+   "cannon foundry": "Girona",
+   "earlier in 1447": "potteries at Valencia, cloth and a tannery at Córdoba, a furniture workshop at Cervera (by 28 March)",
+   "treasury": "2,680 on 28 March, 216 on 5 October",
+   "period": "saves of 28 March and 5 October 1447"
+  },
+  "source": "saves of 1 February (autosave), 28 March and 5 October 1447"
+ },
+ {
+  "id": "1447-10-05-the-explorer-turns-to-the-cape",
+  "date": "1447-10-05",
+  "type": "player_note",
+  "people": [
+   "abd-al-jalil-al-qubbasi"
+  ],
+  "places": [],
+  "wars": [],
+  "title": "ʿAbd al-Jalīl al-Qubbāṣī's voyage of discovery ends on 1 October; four days later he sails again for the cape where Africa ends, to find a place to leave an outpost",
+  "data": {
+   "explorerRole": "30 October 1445 to 1 October 1447 (save)",
+   "aim": "an outpost at or near the cape (Trent)"
+  },
+  "source": "Trent's account, 5 October 1447; save of 5 October 1447"
  }
 ]

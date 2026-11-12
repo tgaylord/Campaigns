@@ -980,5 +980,72 @@
     "value": 5
    }
   ]
+ },
+ {
+  "id": "tunisian-war-for-palermo",
+  "name": "The Tunisian War for Palermo",
+  "gameName": "2nd Tunis–Sicily War",
+  "start": "1447-06-13",
+  "end": null,
+  "goal": "Tunis's claim, backed by its assembly, to the province of Palermo in Sicily (the casus belli 'conquer province')",
+  "allies": [
+   "Tunis",
+   "Tripoli",
+   "Gabès",
+   "Touggourt",
+   "Gallura",
+   "Annaba",
+   "Constantine",
+   "Kingdom of Portugal",
+   "Aragon",
+   "Galicia",
+   "Taifa of León",
+   "Taifa of Burgos",
+   "Taifa of Pamplona",
+   "Taifa of Cuenca"
+  ],
+  "enemies": [
+   "Sicily",
+   "Athens",
+   "Negroponte",
+   "Genoa",
+   "Arborea",
+   "Corsica",
+   "Cuneo",
+   "Gazaria",
+   "Dignois",
+   "Papal States",
+   "Arezzo"
+  ],
+  "involvement": "belligerent",
+  "sides": {
+   "attackers": [
+    "Tunis",
+    "Tripoli",
+    "Gabès",
+    "Touggourt",
+    "Gallura",
+    "Annaba",
+    "Constantine",
+    "al-Andalus",
+    "the seven ṭāʾifas (Portugal, Aragon, Galicia, León, Burgos, Pamplona, Cuenca)"
+   ],
+   "defenders": [
+    "Sicily",
+    "Athens",
+    "Negroponte",
+    "Genoa",
+    "Genoa's subjects Arborea, Corsica, Cuneo, Gazaria and Dignois",
+    "the Papal States",
+    "Arezzo"
+   ]
+  },
+  "note": "Tunis, the ally of al-Andalus since the last century, declared war on Sicily on 13 June 1447 (28 Rabīʿ al-Awwal 851) for the province of Palermo, and called the Emperor to arms the same day. Trent: 'We are accepting.' Al-Andalus came in with its ṭāʾifas, and Tunis with Tripoli, Gabès, Touggourt, Gallura in Sardinia and its two governorships of Annaba and Constantine. Sicily brought Athens and Negroponte; its allies Genoa and the Pope came in, Genoa with Arborea, Corsica, Cuneo, Gazaria and Dignois (Trent's screenshot of 13 June 1447; save of 5 October 1447). By October the fighting had gone against the allies: Arborea beat the Gallurese at Ozieri (6 August), two Sicilian ships drove off three of Portugal's off western Corsica (9 September), the fleets of Tunis, Tripoli and Gabès lost nineteen of their twenty-eight ships to six of Genoa's in the Gulf of Termini (11 September), and Aḥmad of Banbalūna's 385 men were cut down by 4,200 Genoese at Grasse in Provence (5 October). Al-Andalus's own armies and fleets had not yet fought (save of 5 October 1447). In January 1448 the Emperor's grandson Yūsuf was raiding the coast of Naples with the fleet (Trent's account, 13 January 1448).",
+  "outcome": null,
+  "joined": {
+   "from": "1447-06-13",
+   "to": null
+  },
+  "score": []
  }
 ]

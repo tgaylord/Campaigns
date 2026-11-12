@@ -14,7 +14,9 @@ Two sources, the save first:
   first that no longer does, so they are marked approx: the change fell somewhere in between.
 
 usage:  character_roles.py SECTIONS     (a decoded save, the latest one: it remembers the most)
-Re-run it after each new checkpoint; it replaces `stations` and leaves everything else alone.
+Re-run it after each new checkpoint; it rebuilds `stations` and leaves everything else alone. Because a
+save keeps only each character's latest role of a kind, stations dated from an earlier save are kept
+when the new save no longer remembers them.
 """
 import json, os, re, sys, glob
 
@@ -65,6 +67,16 @@ n_save = n_cp = 0
 for p in people:
     gids = [g for g in [p.get('gameId')] + (p.get('gameIds') or []) if g]
     st = [x for g in gids for x in save_roles(g)]
+    # the save keeps only the latest role of each kind, so a station an earlier save dated is kept when
+    # this one has replaced it; one it left open closes when the newer one of its kind begins (approx)
+    for old in (p.get('stations') or []):
+        if old['source'] != 'save' or any(x['role'] == old['role'] and x['from'] == old['from'] for x in st):
+            continue
+        old = dict(old)
+        later = sorted(x['from'] for x in st if x['role'] == old['role'] and x['from'] > old['from'])
+        if old['to'] is None and later:
+            old['to'], old['approx'] = later[0], True
+        st.append(old)
     have_cabinet = any(x['role'] == 'dīwān' for x in st)
     cps = []
     for role, seat in (('heir', lambda s: {s.get('heir')}), ('regent', lambda s: {s.get('regent')})) + ((() if have_cabinet else (('dīwān', lambda s: {c['person'] for c in s.get('cabinet', [])}),))):

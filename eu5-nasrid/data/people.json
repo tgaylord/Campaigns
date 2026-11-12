@@ -3248,6 +3248,12 @@
     "text": "Gives up some of his power elsewhere to bring the ports under the crown.",
     "by": "trent",
     "source": "Trent, on Harbor Administration"
+   },
+   {
+    "from": "1447-08-01",
+    "text": "Tells the envoys of Europe 'We have arrived', and hangs the map of the Umayyad borders in the dīwān without saying what it is for.",
+    "by": "chronicle",
+    "source": "Of the Envoys of Europe and the Borders of the Umayyads"
    }
   ],
   "ties": [
@@ -3380,6 +3386,13 @@
     "to": "1441-12-14",
     "source": "save",
     "approx": false
+   },
+   {
+    "role": "general",
+    "from": "1447-07-02",
+    "to": "1447-08-05",
+    "source": "save",
+    "approx": false
    }
   ],
   "tier": "key"
@@ -3477,6 +3490,12 @@
     "text": "Mends the damage of the Jamāʿa of 846, appeasing the estates.",
     "by": "chronicle",
     "source": "Of the Princes' Mending"
+   },
+   {
+    "from": "1447-08-01",
+    "text": "Reads the claim to the Umayyad borders, which run through his wives' homelands, as a sword that never leaves the scabbard and is still a sword.",
+    "by": "chronicle",
+    "source": "Of the Envoys of Europe and the Borders of the Umayyads"
    }
   ],
   "ties": [
@@ -3551,6 +3570,12 @@
     "text": "The towns' specialisation and the bridges of the 840s are his work, even in his father's reign.",
     "by": "trent",
     "source": "Trent's direction; the saves of 1442–1447"
+   },
+   {
+    "from": "1447-08-19",
+    "text": "Mourns his mother Isabel by building: six bridges in the west, the gunsmiths, the glassworks and the foundries of 851.",
+    "by": "chronicle",
+    "source": "Of the Lady Isabel and the Bridges of the West"
    }
   ]
  },
@@ -3588,9 +3613,10 @@
    "mil": 51
   },
   "traits": [],
-  "note": "Daughter of Francesc de Montsoriu, founder of the house that rules the Ṭāʾifa of Catalonia. Wife of the heir Muḥammad ibn Ismāʿīl and mother of his son Aḥmad (1403) and two daughters (save of 5 August 1408). Her mother was Fāṭima bint Yūsuf, daughter of Yūsuf I, so Isabel is a granddaughter of the house of Naṣr (save of 29 June 1410).",
+  "note": "Daughter of Francesc de Montsoriu, founder of the house that rules the Ṭāʾifa of Catalonia. Wife of the heir Muḥammad ibn Ismāʿīl and mother of his son Aḥmad (1403) and two daughters (save of 5 August 1408). Her mother was Fāṭima bint Yūsuf, daughter of Yūsuf I, so Isabel is a granddaughter of the house of Naṣr (save of 29 June 1410). She died of old age on 19 August 1447, her sixty-fifth birthday, after more than forty years as Muḥammad's wife (save of 5 October 1447).",
   "mother": "fatima-bint-yusuf",
-  "tier": "key"
+  "tier": "key",
+  "died": "1447-08-19"
  },
  {
   "id": "muhammad-ibn-yusuf-ibn-faraj",
@@ -3772,9 +3798,10 @@
   },
   "traits": [
    "unmotivated",
-   "well_advised"
+   "well_advised",
+   "ruthless"
   ],
-  "note": "Son of Yūsuf ibn Ismāʿīl, ruler of the Ṭāʾifa of Banbalūna; one of the ablest men of the house. He took Maryam bint Yūsuf's seat in the dīwān after her death in August 1412, set to integrating the new lands (save of 24 October 1414). By 1420 he was married to two daughters of his cousin Aḥmad of Burtuqāl, Fāṭima and Maryam, and had three children: Abū al-Ḥasan ʿAlī (16 February 1417), Muʾmina (13 August 1417) and Saʿd (27 July 1419). The game marks him unmotivated (save of 11 August 1420). He left the dīwān by December 1425, and on 30 April 1428 succeeded his father as lord of Banbalūna (save of 25 May 1428).",
+  "note": "Son of Yūsuf ibn Ismāʿīl, ruler of the Ṭāʾifa of Banbalūna; one of the ablest men of the house. He took Maryam bint Yūsuf's seat in the dīwān after her death in August 1412, set to integrating the new lands (save of 24 October 1414). By 1420 he was married to two daughters of his cousin Aḥmad of Burtuqāl, Fāṭima and Maryam, and had three children: Abū al-Ḥasan ʿAlī (16 February 1417), Muʾmina (13 August 1417) and Saʿd (27 July 1419). The game marks him unmotivated (save of 11 August 1420). He left the dīwān by December 1425, and on 30 April 1428 succeeded his father as lord of Banbalūna (save of 25 May 1428). In the Tunisian war for Palermo he led 385 men of Banbalūna against 4,200 Genoese at Grasse in Provence on 5 October 1447 and lost all but 29; the save of that day marks him ruthless. His son Saʿd is married to Muʾmina, daughter of the prince Aḥmad, and their daughter Fāṭima was born on 29 June 1447 (save of 5 October 1447).",
   "stations": [
    {
     "role": "dīwān",
@@ -3786,7 +3813,7 @@
    {
     "role": "general",
     "from": "1428-05-11",
-    "to": null,
+    "to": "1447-10-05",
     "source": "save",
     "approx": false
    }
@@ -4367,6 +4394,13 @@
     "to": "1444-01-01",
     "source": "save",
     "approx": false
+   },
+   {
+    "role": "general",
+    "from": "1447-07-02",
+    "to": null,
+    "source": "save",
+    "approx": false
    }
   ]
  },
@@ -4604,6 +4638,13 @@
    {
     "role": "admiral",
     "from": "1440-01-27",
+    "to": "1447-08-02",
+    "source": "save",
+    "approx": true
+   },
+   {
+    "role": "admiral",
+    "from": "1447-08-02",
     "to": null,
     "source": "save",
     "approx": false
@@ -4629,9 +4670,10 @@
    "mil": 52
   },
   "traits": [
-   "child_shrewd"
+   "child_shrewd",
+   "accomplished_sailor"
   ],
-  "note": "Eldest son of the heir Ismāʿīl by Tella, born at Gharnāṭa on 6 January 1422, and second in line behind his father. Given an expensive, in-depth education, and shrewd as a child. By January 1438 he had married three wives: Amie, daughter of Mansa Tiramakhan of Mālī; Fāṭima, daughter of the late Yūsuf ibn Ismāʿīl of Banbalūna, to tie the ṭāʾifas to the crown; and Muʾmina, daughter of Muṣliḥ al-Dīn of the court. At sixteen his grandfather the Emperor made him admiral of the fleet, believing the post had made a man of him and would do the same for his grandson (Trent's screenshot and account; save of 16 January 1438).",
+  "note": "Eldest son of the heir Ismāʿīl by Tella, born at Gharnāṭa on 6 January 1422, and second in line behind his father. Given an expensive, in-depth education, and shrewd as a child. By January 1438 he had married three wives: Amie, daughter of Mansa Tiramakhan of Mālī; Fāṭima, daughter of the late Yūsuf ibn Ismāʿīl of Banbalūna, to tie the ṭāʾifas to the crown; and Muʾmina, daughter of Muṣliḥ al-Dīn of the court. At sixteen his grandfather the Emperor made him admiral of the fleet, believing the post had made a man of him and would do the same for his grandson (Trent's screenshot and account; save of 16 January 1438). In January 1448, admiral of the eleventh fleet in the Tunisian war for Palermo, he proved himself raiding along the coast of Naples, and the chancellor reported him an accomplished sailor (Trent's account and screenshot, 13 January 1448).",
   "stations": [
    {
     "role": "admiral",
@@ -4666,6 +4708,12 @@
     "text": "A prince of two shores: two of his sons by Amie are born at Niani, at the Mansa's court.",
     "by": "chronicle",
     "source": "autosave of 1 February 1447"
+   },
+   {
+    "from": "1448-01-13",
+    "text": "Proves himself raiding the coast of Naples in the war for Palermo; his captains call him an accomplished sailor.",
+    "by": "trent",
+    "source": "Trent's account and screenshot, 13 January 1448"
    }
   ],
   "ties": [
@@ -4973,12 +5021,12 @@
   "traits": [
    "curious_adventurer"
   ],
-  "note": "An Andalusī of the umarāʾ, born at al-Qubbāṣa (Alcobaça, in the old lands of Portugal) on 1 April 1416, two years after Portugal ended, and the founder of his own house, which the game names for his birthplace (El-Qbasa; Trent read it as al-El-Qhawai). A curious adventurer, a soldier more than a courtier. Made one of the empire's explorers on 30 October 1445; in mid-March 1446 he reached a cape where Africa seemed to come to an end (Trent's account; autosave of 1 February 1447).",
+  "note": "An Andalusī of the umarāʾ, born at al-Qubbāṣa (Alcobaça, in the old lands of Portugal) on 1 April 1416, two years after Portugal ended, and the founder of his own house, which the game names for his birthplace (El-Qbasa; Trent read it as al-El-Qhawai). A curious adventurer, a soldier more than a courtier. Made one of the empire's explorers on 30 October 1445; in mid-March 1446 he reached a cape where Africa seemed to come to an end (Trent's account; autosave of 1 February 1447). His commission as explorer ended on 1 October 1447; on 5 October he sailed again for the cape, to find a place to leave an outpost (save and Trent's account of 5 October 1447).",
   "stations": [
    {
     "role": "explorer",
     "from": "1445-10-30",
-    "to": null,
+    "to": "1447-10-01",
     "source": "save",
     "approx": false
    }

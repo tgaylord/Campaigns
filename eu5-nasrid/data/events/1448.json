@@ -1,0 +1,22 @@
+[
+ {
+  "id": "1448-01-13-the-prince-raids-naples",
+  "date": "1448-01-13",
+  "type": "player_note",
+  "people": [
+   "yusuf-ibn-ismail-ibn-muhammad",
+   "ismail-ibn-muhammad-ibn-ismail"
+  ],
+  "places": [],
+  "wars": [
+   "tunisian-war-for-palermo"
+  ],
+  "title": "The prince Yūsuf, the heir's eldest son, proves himself raiding along the coast of Naples, and his captains call him an accomplished sailor",
+  "data": {
+   "trait": "Accomplished Sailor: navy movement speed +10% ('personal sailing expertise allows this leader to enhance the skills of all captains under him', the game's text)",
+   "command": "admiral of the eleventh fleet (Sṭul 11, as the game names it; usṭūl, 'fleet')",
+   "reportedBy": "the chancellor (the game's report)"
+  },
+  "source": "Trent's account and screenshot, 13 January 1448"
+ }
+]
