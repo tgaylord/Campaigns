@@ -4,6 +4,8 @@ Working rules for the Granada campaign. Every chat in this Project should read t
 
 **Canonical copy:** `tgaylord/Campaigns` → `eu5-nasrid/SYSTEMS.md`. The copy in the Claude Project's docs is a mirror. If the two disagree, the repo wins.
 
+**Status, November 2026: the Chronicle is frozen and the Register is on trial.** The Chronicle site and its data (§4 to §7) stop at the save of 21 December 1451. They stay published and are not updated. New saves go into the Register, a lighter site on the branch `register-prototype`, by the workflow in §11. Until the trial is settled, §11 is the working rule for a new save and §7 is kept as the record of how the Chronicle was fed.
+
 ---
 
 ## 1. The campaign
@@ -236,6 +238,8 @@ Set down at the Golden Century, when the realm stopped being an Iberian story, a
 
 ## 7. A session, step by step
 
+*Frozen with the Chronicle. For a new save, follow §11.*
+
 1. Trent plays and makes an ordinary checkpoint save (compressed). If the estates matter at that checkpoint, he screenshots the estate power panel at the same moment, since the save doesn't store the shares.
 2. He opens the chat on the gaming PC (or links that computer) and gives his account of what happened, including anything screenshots show that a save can't. When a screenshot shows an event with several options, the option whose tooltip is open is the one he picked (nine times in ten; he says when it isn't).
 3. Claude parses the save into a snapshot and new events, then checks them against the previous snapshot. For each new checkpoint it also redraws the realm outlines (`tools/build_map.py --owners`), writes the Atlas's lenses (`tools/map_layers.py`), reads the world beyond the realm (`tools/world_powers.py`) and the realm's reach and temper (`tools/realm_extras.py`, then `tools/realm_names.py`), draws the realms on the World chart (`tools/build_map.py --lite` with `--realms-dir data/map/world`), and once the events are written places the battles (`tools/battle_places.py`). A power that becomes worth following is added to a circle in `data/powers.json` and named in `data/countries.json`; its ruler gets a record in `people.json` when the chronicle names him.
@@ -270,3 +274,36 @@ This campaign follows the repo-wide rules in `/CLAUDE.md`:
 4. Place names the game files leave doubtful: Órgiva (the game has "Yuz Aryuba"), Olvera (no Arabic script), and the Arabic script for Gérgal, Mojácar, Vélez-Rubio, Adra, Íllora, Píñar, Antequera and Vélez-Málaga, which the chronicle supplies itself. Each is marked in `data/gazetteer.json`.
 5. ~~Heir~~: settled. Faraj ibn Ismāʿīl, Yūsuf's elder half-brother, is heir from the August 1337 save.
 6. ~~Deriving estate power~~: settled. `tools/estate_power.py` rebuilds the shares from the save, within about a point uncalibrated; readings from the estate power panel calibrate it (see `tools/README.md`).
+
+---
+
+## 11. The Register (on trial)
+
+The Register is a second site for this campaign, built to replace the Chronicle if the trial goes well. It is lighter, it leads with the story, and it has its own pipeline from the save. It lives at `eu5-nasrid/register/` on the branch `register-prototype`; `main` does not hold it yet. Its own `README.md` and `DESIGN.md` are the detailed reference. This section is the working summary.
+
+### What is different
+
+- **`register/campaign/` is the source of truth**: `campaign.yaml` (settings), `threads.yaml` (wars and stories), `places.yaml`, one file per person in `cast/`, and the reckonings. It was filled once from the Chronicle's data and has been written directly since.
+- **A reckoning is two files.** `reckonings/<date>.save.yaml` is written by the tool from the save and never edited. `reckonings/<date>.yaml` is written by hand: title, summary, beats (the Chronicle's events), tellings (its chronicle entries) and questions. Where both speak, the hand file wins.
+- **Not collected any more:** the realm's extras, the name tables, the government catalogue, the Chronicle's first map frame, the session log and the estate power model. The raw extracted file is still kept for every save, so any of them can be rebuilt later.
+- **Estate power** comes only from Trent's screenshot of the estate power panel, and is written into the hand file. Estate mood still comes from the save.
+
+### A save, step by step
+
+1. Trent plays, saves, and gives his account, as in §7 steps 1 and 2.
+2. Claude stages a copy of the save and runs `python3 tools/reckon.py SAVE.eu5 --game GAME` from `eu5-nasrid/register/` on the branch. It takes about five minutes. It decodes the save, keeps the facts in `data/extracted/<date>.json`, draws the three map files the site reads, writes `<date>.save.yaml`, and writes `campaign/reports/<date>.md`.
+3. Claude reads the report. **To settle by hand** lists what the tool could not match: a person not in the cast, a war with no thread, a country the game leaves unnamed, a council action with no wording. Claude fixes each in `campaign/` and runs the tool again on the extracted file. **Ask before writing** lists what the save cannot explain, such as a treasury that moved further than income accounts for or a swing in stability. Claude asks Trent before writing those up.
+4. Claude writes `<date>.yaml` from the report and Trent's account. The rules of the story log (§5) still hold for tellings: Hijri dates first, never "the game" in-world, a closing Qurʾān verse not used before, and what was invented listed in the telling's `behind` note. A save in which little happened gets beats and a summary and no telling.
+5. `npm run build` checks the data and builds the site. Claude looks at the result, commits on the branch with the `[eu5-nasrid]` prefix, pushes, and republishes the Register's page.
+
+### What the trial has shown so far
+
+- Regenerating 21 December 1451 from the save matched the hand-made reckoning, and corrected two council seats the hand-made one had carried forward wrongly.
+- The report raised, unprompted, the treasury jump of March 1447 and the stability fall of 1451, and listed the terms of the peace of November 1450 from the map and the treaties.
+- The save of 1 January 1452 was the first logged Register-only. Little had happened, so a save with a new war, new land or a new face at court is still to be tried.
+
+### Still to decide
+
+- Whether the Register replaces the Chronicle, and if so when its branch is merged and which site the Pages address serves.
+- Whether its generic parts move to `shared/` as a base for other campaigns. That needs Trent's approval and a transition doc (§9).
+
