@@ -184,7 +184,10 @@ else:
     pcur, peco = PC.get('currency') or {}, PC.get('economy') or {}
     y0, m0, d0 = map(int, pd.split('-')); y1, m1, d1 = map(int, date.split('-'))
     months = max(1, (y1 - y0) * 12 + (m1 - m0))
-    L += [f'Compared with the save of {pd}, {months} month{"s" if months != 1 else ""} earlier. Every line is a candidate beat: keep it, merge it or drop it.', '']
+    import datetime
+    days = (datetime.date(y1, m1, d1) - datetime.date(y0, m0, d0)).days
+    gap_txt = f'{days} day{"s" if days != 1 else ""}' if days < 45 else f'{months} months'
+    L += [f'Compared with the save of {pd}, {gap_txt} earlier. Every line is a candidate beat: keep it, merge it or drop it.', '']
     since = lambda d: d is not None and pd < iso(d) <= date
     flags, sec = [], {}
     add = lambda head, line: sec.setdefault(head, []).append(line)

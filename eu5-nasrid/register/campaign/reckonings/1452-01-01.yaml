@@ -1,0 +1,19 @@
+date: '1452-01-01'
+title: The Turn of the Year 1452
+summary: >-
+  From a save, eleven days after the last. Nothing has moved but the cradle: a son, Yūsuf, was born on 23
+  December to Shams, daughter of the heir Ismāʿīl. The treasury is still empty at 26, with income and
+  expenses now level at about 456 a month. The Mamlūks' war on the Banū Lām goes on.
+beats:
+  - id: 1451-12-23-birth-of-yusuf-ibn-saad
+    'on': '1451-12-23'
+    kind: birth
+    what: 'A grandson for the heir Ismāʿīl: Yūsuf, son of his daughter Shams and her husband Saʿd'
+    who:
+      - shams-bint-ismail-ibn-muhammad
+      - ismail-ibn-muhammad-ibn-ismail
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 1 January 1452
