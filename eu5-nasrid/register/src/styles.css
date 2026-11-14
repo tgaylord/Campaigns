@@ -551,3 +551,5 @@ main.wrap:has(.chapter) { gap: 1.6rem; }
   .tree svg { min-width: 60rem !important; }
   .battlemap .hero-ctl button { flex: 1 1 auto; }
 }
+
+.es-mood { color: var(--ink-3); font-size: 0.9em; }

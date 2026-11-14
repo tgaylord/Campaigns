@@ -1,0 +1,180 @@
+date: '1453-03-06'
+title: The Death of the Emperor Muḥammad
+summary: >-
+  From a save and Trent's screens. The Emperor Muḥammad died of old age on 5 March 1453, aged 67, in the
+  24th year of his reign. His son Ismāʿīl was proclaimed the next day, with Yūsuf, Ismāʿīl's eldest, as heir.
+  The fourteen months before were quiet (Trent): steady building, the treasury back from 26 to 583, thirteen
+  new ships, and the start of Sicily's integration. Portugal's integration is expected soon (Trent). The
+  Mamlūks' war on the Banū Lām goes on.
+beats:
+  - id: 1452-05-03-yusuf-ibn-ahmad-joins-the-diwan
+    'on': '1452-05-03'
+    kind: office
+    what: Yūsuf, the prince Aḥmad's son, joins the dīwān at eighteen to work on the integration of Sicily
+    who:
+      - yusuf-ibn-ahmad-ibn-muhammad
+      - ahmad-ibn-muhammad-ibn-ismail
+    threads:
+      - sicily
+      - house
+    from:
+      - save
+    cite: save of 6 March 1453
+    detail:
+      abilities: 58 / 97 / 81, honest
+      seat: integrating the new lands, beside Umm al-Fatḥ and Shams
+  - id: 1452-11-01-the-mamluk-war-in-1452
+    'on': '1452-11-01'
+    kind: war
+    minor: true
+    what: 'The Mamlūks'' war on the Banū Lām: nine more battles between February and November 1452, and none since'
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 6 March 1453
+  - id: 1452-12-05-genoa-closes-its-markets
+    'on': '1452-12-05'
+    kind: world
+    what: Genoa closes its markets to the merchants of al-Andalus
+    threads:
+      - europe
+    from:
+      - save
+    cite: save of 6 March 1453
+  - id: 1453-03-05-death-of-the-emperor-muhammad
+    'on': '1453-03-05'
+    kind: death
+    what: The Emperor Muḥammad dies of old age at sixty-seven, in the twenty-fourth year of his reign
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+    threads:
+      - house
+      - two-princes
+    from:
+      - save
+      - seen
+    cite: save of 6 March 1453; Trent's screen of 6 March 1453
+    detail:
+      date: the save dates the death 5 March; the court's report is of 6 March
+      report: '"His Scholarly pursuits brought both innovation and fame to our realm."'
+      the realm he took: 195 towns, 2.57 million souls, 50 ships (July 1429)
+      the realm he left: 244 towns, 3.90 million souls, 110 ships
+  - id: 1453-03-06-ismail-proclaimed
+    'on': '1453-03-06'
+    kind: crown
+    what: Ismāʿīl is proclaimed Emperor at fifty, with his wife Tella as consort and his eldest son Yūsuf as heir
+    who:
+      - ismail-ibn-muhammad-ibn-ismail
+      - yusuf-ibn-ismail-ibn-muhammad
+    threads:
+      - house
+      - two-princes
+    from:
+      - save
+      - seen
+    cite: save of 6 March 1453; Trent's screen of 6 March 1453
+    detail:
+      abilities: 70 / 73 / 63, "balanced"; the save marks him deceitful
+      report: '"great cunning and silver tongue shall aid us in forming strong alliances"'
+      heir: Yūsuf, 31, admiral of the fleet, 66 / 59 / 52
+      also: the royal marriage with Aragon lapsed with the old Emperor
+  - id: 1453-03-06-the-diwan-under-ismail
+    'on': '1453-03-06'
+    kind: office
+    what: >-
+      Ismāʿīl's seat on the dīwān passes to Abū al-Ḥasan ʿAlī, nineteen, the late Emperor's grandson. Aḥmad
+      keeps his own seat
+    who:
+      - abu-al-hasan-ali-ibn-saad-ibn-ahmad
+      - ahmad-ibn-muhammad-ibn-ismail
+      - ismail-ibn-muhammad-ibn-ismail
+    threads:
+      - two-princes
+    from:
+      - save
+    cite: save of 6 March 1453
+    detail:
+      abilities: 84 / 81 / 67
+      seat: assimilating the new lands, as Ismāʿīl had
+      when: between January 1452 and March 1453; the save does not date it
+  - id: 1453-03-06-fourteen-quiet-months
+    'on': '1453-03-06'
+    kind: realm
+    what: >-
+      Fourteen quiet months of building: the treasury recovers from 26 to 583, the fleet grows from 97 ships
+      to 110, more paper mills rise, and the integration of Sicily begins
+    who:
+      - ahmad-ibn-muhammad-ibn-ismail
+    threads:
+      - towns
+      - sicily
+    from:
+      - save
+      - told
+    cite: saves of 1 January 1452 and 6 March 1453; Trent's account
+    detail:
+      built: paper mills (5 levels), a madrasa, a scriptorium, a jeweller, a mason, a lumber mill
+      income: 456 a month to 516; expenses 456 to 490
+      stability: 16.3 to 19.6
+      society: a small move toward free subjects
+      Portugal: 'its integration is "coming soon" (Trent)'
+tellings:
+  - id: 0857-02-24-of-the-death-of-the-emperor-muhammad
+    'on': '1453-03-06'
+    title: Of the Death of the Emperor Muḥammad
+    book: book-of-the-franks
+    verse: '31:27'
+    who:
+      - muhammad-ibn-ismail-ibn-saad
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+      - yusuf-ibn-ismail-ibn-muhammad
+      - yusuf-ibn-ahmad-ibn-muhammad
+      - abu-al-hasan-ali-ibn-saad-ibn-ahmad
+    where:
+      - ishbiliyya
+    covers:
+      - 1452-05-03-yusuf-ibn-ahmad-joins-the-diwan
+      - 1452-11-01-the-mamluk-war-in-1452
+      - 1452-12-05-genoa-closes-its-markets
+      - 1453-03-05-death-of-the-emperor-muhammad
+      - 1453-03-06-ismail-proclaimed
+      - 1453-03-06-the-diwan-under-ismail
+      - 1453-03-06-fourteen-quiet-months
+    text: |
+      The year 856 was a quiet one, and the court was glad of it. The treasury had been spent to nothing on paper mills and roads, and it filled again. The yards launched thirteen ships. There were more mills at the end of the year than at the start, and a new madrasa. The governor's men in Sicily began the slow work of making the island a province like any other, and three seats of the dīwān were given to it. One of them went, on 13 Rabīʿ al-Thānī, to [Yūsuf](person:yusuf-ibn-ahmad-ibn-muhammad), the son of the prince [Aḥmad](person:ahmad-ibn-muhammad-ibn-ismail), who was eighteen and already spoken of as the best tongue in the family.
+
+      Abroad little changed. The Mamlūks and the Banū Lām fought nine times between the winter and the autumn and settled nothing, and al-Andalus, at war beside Cairo in name, sent no one. On 23 Dhū al-Qaʿda the Genoese, who had not forgotten Corsica, closed their markets to Andalusī merchants. In the dīwān men had begun to say that Burtuqāl, ruled by a regent for a child, should come under the crown as Sicily had.
+
+      On 23 Ṣafar 857 the Emperor [Muḥammad](person:muhammad-ibn-ismail-ibn-saad) ibn Ismāʿīl died at [Ishbīliya](place:ishbiliyya). He was sixty-seven, and he died of his years and of nothing else. He had reigned since 25 Ramaḍān 832.
+
+      At twelve he had been judged unfit to rule, stubborn and slow in the dīwān, and he never became quick there. He liked ships, harbours and the look of things. He left the work of the state to his wives and to his two eldest sons, and he knew that he did. But the things he cared for, he saw done. He made the pilgrimage and stood in the Ḥaram. Past fifty he taught himself to read as scholars read, and the court's report of his death says that his learning brought the realm both new things and fame. He seated the burghers in the Jamāʿa as equals, and then the commons. He put the ports under the crown. He told the envoys of Europe that al-Andalus had arrived, and hung a map of the Umayyad borders in the dīwān without saying what it was for. In his last years Sicily was taken, and Balarm governed again in the name of a Muslim prince, and his pilots came home with word of a world larger than the books allowed. He took a realm of a hundred and ninety-five towns and fifty ships. He left one of two hundred and forty-four towns and a hundred and ten ships, and nearly four million souls.
+
+      His son [Ismāʿīl](person:ismail-ibn-muhammad-ibn-ismail) was proclaimed the next day, 24 Ṣafar. He was fifty years old and had been heir for twenty-four of them, and for most of those he had done an emperor's talking. His wife Tella stood as consort. His eldest son [Yūsuf](person:yusuf-ibn-ismail-ibn-muhammad), the admiral, was named heir.
+
+      Ismāʿīl's own seat on the dīwān was now empty, and it went to [Abū al-Ḥasan ʿAlī](person:abu-al-hasan-ali-ibn-saad-ibn-ahmad), a grandson of the dead Emperor through his daughter Muʾmina, and so Aḥmad's nephew. He was nineteen. With Aḥmad's son already seated, two of the Emperor's grandsons now sat where his sons had. It had been said for twenty years that when Ismāʿīl reigned, Aḥmad would stand at the head of his council. On the day of the proclamation no such thing was announced. Aḥmad kept the seat he had always had, and the court waited to see what the brothers had agreed.
+
+      *And if whatever trees upon the earth were pens and the sea was ink, replenished thereafter by seven more seas, the words of God would not be exhausted. Indeed, God is Exalted in Might and Wise.*
+    behind: |
+      **What the save shows.** This note draws on the saves of 1 January 1452 and 6 March 1453, and on Trent's two screens of 6 March 1453.
+      - *The death:* the save dates it 5 March 1453, of old age; the court's report on screen is dated 6 March and gives his age as 67. The entry puts the death on the 5th and the proclamation on the 6th.
+      - *The succession:* Ismāʿīl is ruler, Tella his consort and Yūsuf his heir. The screen gives Ismāʿīl 70 / 73 / 63 and calls him balanced; the save marks him deceitful. "Ismāʿīl III" and "Muḥammad V" are the numbers on the screens.
+      - *The dīwān:* Yūsuf ibn Aḥmad has held a seat since 3 May 1452 (58 / 97 / 81, honest). Abū al-Ḥasan ʿAlī (84 / 81 / 67) holds the seat Ismāʿīl held in January 1452; the save doesn't say when he took it, and the entry puts it at the succession. Aḥmad's seat is unchanged since 1448.
+      - *The quiet year:* treasury 26 to 583; ships 97 to 110; five more levels of paper mill, a madrasa, a scriptorium; stability 16.3 to 19.6. Nine battles in the Mamlūk war between 1 February and 1 November 1452. Genoa's embargo dates from 5 December 1452. The royal marriage with Aragon is gone from the save, and so is Portugal's claim to resist annexation.
+      - *The reign in numbers:* 195 towns, 2.57 million souls and 50 ships in the save of 2 July 1429; 244 towns, 3.90 million souls and 110 ships now.
+
+      **From Trent's account.** Nothing in particular happened in these fourteen months: steady building, the start of integrating Sicily, and the integration of Portugal coming soon.
+
+      **Invented colour.**
+      - That he died at Ishbīliya. The save doesn't give a place.
+      - The court being glad of a quiet year, and Yūsuf ibn Aḥmad's reputation as the family's best tongue (his diplomacy is 97).
+      - The Genoese remembering Corsica as the reason for the embargo.
+      - Men in the dīwān speaking of Burtuqāl coming under the crown. Trent says only that its integration is coming.
+      - The judgement of the reign. Its facts are from earlier entries; the weighing of them is the chronicler's.
+      - Ismāʿīl having "done an emperor's talking".
+      - The court waiting to see what the brothers had agreed. The save shows only that Aḥmad's seat did not change.
+questions:
+  - Now that Ismāʿīl reigns, does Aḥmad head his council as long expected? The save shows no change in his seat.
+  - 'Portugal: how is it brought under the crown, and what becomes of the child-queen Fāṭima and her mother the regent?'
+  - "Sicily: a governor 'for now'. Does Ismāʿīl, who argued for a ṭāʾifa, keep his father's choice?"

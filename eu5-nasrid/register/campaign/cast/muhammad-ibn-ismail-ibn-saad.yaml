@@ -3,14 +3,15 @@ arabic: محمد بن إسماعيل
 house: Naṣrid
 tier: central
 born: '1385-10-25'
+died: '1453-03-05'
 father: ismail-ibn-saad
 mother: bernarda-of-murcia
 reigns:
   - from: '1429-06-28'
-    to: null
+    to: '1453-03-05'
 roles:
   - heir of al-Andalus (1405–1429)
-  - emperor and sultan of al-Andalus as Muḥammad V (from 1429)
+  - emperor and sultan of al-Andalus as Muḥammad V (1429–1453)
 traits:
   - extortioner
   - worldly

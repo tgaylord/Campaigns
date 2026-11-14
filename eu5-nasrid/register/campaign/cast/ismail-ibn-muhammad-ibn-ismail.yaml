@@ -5,9 +5,15 @@ tier: central
 born: '1402-10-04'
 father: muhammad-ibn-ismail-ibn-saad
 mother: magdalena-de-borja
+reigns:
+  - from: '1453-03-06'
+    to: null
 roles:
-  - heir of al-Andalus (from 1429)
-  - member of the dīwān (from 1429)
+  - heir of al-Andalus (1429–1453)
+  - member of the dīwān (1429–1453)
+  - emperor and sultan of al-Andalus as Ismāʿīl III (from 1453)
+traits:
+  - deceitful
 stats:
   adm: 70
   dip: 73

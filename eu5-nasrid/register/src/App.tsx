@@ -279,16 +279,24 @@ function Now() {
             <p className="key">Change since the last reckoning; the line runs from {Y0}.</p>
           </section>
           <Powers r={now} />
-          {!!now.standing?.estates?.length && (
+          {(() => {
+            // the shares of power are read from a screen, not the save: show the last reading there is, and say when
+            const read = [...reckonings].reverse().find((r) => r.standing?.estates?.some((e) => typeof e.power === "number"));
+            if (!read) return null;
+            const stale = read.date !== now.date, mood = new Map((now.standing?.estates ?? []).map((e) => [e.name, e.mood]));
+            const now_ = { standing: { estates: read.standing!.estates!.map((e) => ({ ...e, mood: mood.get(e.name) ?? e.mood })) } };
+            return (
             <section>
               <h2>The crown and the estates</h2>
+              {stale && <p className="key">Shares of power as last recorded, on {formatWestern(read.date)}. Moods are from this reckoning.</p>}
               <div className="es-stack" role="img" aria-label="Shares of power at the last reckoning">
-                {now.standing.estates.map((e) => <i key={e.name} className={`es-${({ Crown: "crown", Nobility: "e0", "ʿUlamāʾ": "e1", Burghers: "e2", Commoners: "e3", "Dhimmī": "e4" } as Record<string, string>)[e.name] ?? "e4"}`} style={{ flexGrow: e.power ?? 0 }} title={`${e.name}: ${e.power?.toFixed(1)}%`} />)}
+                {now_.standing.estates.map((e) => <i key={e.name} className={`es-${({ Crown: "crown", Nobility: "e0", "ʿUlamāʾ": "e1", Burghers: "e2", Commoners: "e3", "Dhimmī": "e4" } as Record<string, string>)[e.name] ?? "e4"}`} style={{ flexGrow: e.power ?? 0 }} title={`${e.name}: ${e.power?.toFixed(1)}%`} />)}
               </div>
-              <ul className="es-legend">{now.standing.estates.map((e) => <li key={e.name}><i className={`sw es-${({ Crown: "crown", Nobility: "e0", "ʿUlamāʾ": "e1", Burghers: "e2", Commoners: "e3", "Dhimmī": "e4" } as Record<string, string>)[e.name] ?? "e4"}`} />{e.name === "Crown" ? "The crown" : e.name} <span className="num">{Math.round(e.power ?? 0)}%</span></li>)}</ul>
+              <ul className="es-legend">{now_.standing.estates.map((e) => <li key={e.name}><i className={`sw es-${({ Crown: "crown", Nobility: "e0", "ʿUlamāʾ": "e1", Burghers: "e2", Commoners: "e3", "Dhimmī": "e4" } as Record<string, string>)[e.name] ?? "e4"}`} />{e.name === "Crown" ? "The crown" : e.name} <span className="num">{Math.round(e.power ?? 0)}%</span>{typeof e.mood === "number" && e.name !== "Crown" ? <span className="es-mood"> mood {e.mood}</span> : null}</li>)}</ul>
               <p className="key"><a href="#thread-estates">How the shares have moved since 1346</a></p>
             </section>
-          )}
+            );
+          })()}
           <section>
             <h2>The court</h2>
             <dl className="court">
