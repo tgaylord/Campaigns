@@ -208,12 +208,12 @@ else:
     for n, x, y in rows:
         if x is None or y is None or abs(y - x) < 0.05: continue
         add('The numbers', f'- {n}: {fnum(x)} to {fnum(y)} ({"+" if y > x else "−"}{fnum(abs(y - x))})')
+    money = None
     g0, g1 = f(pcur, 'gold'), f(cur, 'gold')
     if g0 is not None and g1 is not None and f(peco, 'income') is not None and f(eco, 'income') is not None:
         net = ((f(peco, 'income') - (f(peco, 'expense') or 0)) + (f(eco, 'income') - (f(eco, 'expense') or 0))) / 2
         gap = (g1 - g0) - net * months
-        if abs(gap) > max(500, 4 * abs(net)):
-            flags.append(f'**The treasury moved by {fnum(g1 - g0)} in {months} month{'s' if months != 1 else ''}, but income less expenses would account for about {fnum(net * months)}.** About {fnum(abs(gap))} was {"gained" if gap > 0 else "spent"} some other way. Ask Trent.')
+        if abs(gap) > max(500, 4 * abs(net)): money = (g1 - g0, net * months, gap)
     s0, s1 = f(pcur, 'stability'), f(cur, 'stability')
     if s0 is not None and s1 is not None and abs(s1 - s0) >= 5: flags.append(f'**Stability {"rose" if s1 > s0 else "fell"} from {fnum(s0)} to {fnum(s1)}.** The save does not say why. Ask Trent.')
 
@@ -242,6 +242,15 @@ else:
     ups = sorted(((kn.get(k, 0) - kp.get(k, 0), k) for k in kn.keys() | kp.keys() if kn.get(k, 0) != kp.get(k, 0)), reverse=True)
     nice = lambda k: k.replace('nd_adu_', '').replace('_', ' ')
     if [u for u in ups if u[0] > 0]: add('Building', '- Built or enlarged in towns already held: ' + ', '.join([f'{nice(k)} +{d}' for d, k in ups if d > 0][:18]) + '.')
+    raised = sum(d for d, k in ups if d > 0) + sum(1 for k in ln - lp)
+    if money:
+        moved, expect, gap = money
+        if gap > 0:
+            flags.append(f'**The treasury moved by {fnum(moved)} in {months} month{"s" if months != 1 else ""}, but income less expenses would account for about {fnum(expect)}.** About {fnum(gap)} was gained some other way. Ask Trent.')
+        elif raised >= 3:
+            add('The numbers', f'- About {fnum(-gap)} left the treasury beyond running costs. {sum(d for d, k in ups if d > 0)} building levels were added, which is the likely reason.')
+        else:
+            flags.append(f'**The treasury moved by {fnum(moved)} in {months} month{"s" if months != 1 else ""}, but income less expenses would account for about {fnum(expect)}.** About {fnum(-gap)} was spent some other way, and little was built. Ask Trent.')
     gone = [(d, k) for d, k in ups if d < 0]
     if gone:
         add('Building', '- Fewer than before in towns already held: ' + ', '.join(f'{nice(k)} {d}' for d, k in gone) + '.')

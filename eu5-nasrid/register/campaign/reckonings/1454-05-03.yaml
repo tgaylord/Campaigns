@@ -1,0 +1,172 @@
+date: '1454-05-03'
+title: The End of the Ṭāʾifa of Portugal
+summary: >-
+  From a save, a screen and Trent's account. On 1 May 1454 the ṭāʾifa of Portugal, a subject since 1411, was
+  integrated into the crown: 34 towns and some 800,000 souls. The realm now counts 278 towns and 4.72 million
+  people. The Portuguese are its largest people, and Catholics (49%) now outnumber Muslims (46%). The
+  child-queen Fāṭima and her mother stay on as nobles. Ismāʿīl has become a charismatic negotiator. The
+  Mamlūks' war on the Banū Lām is over; its terms are not yet known.
+beats:
+  - id: 1453-05-19-birth-in-banbaluna
+    'on': '1453-05-19'
+    kind: birth
+    minor: true
+    what: A son, Ismāʿīl, is born to Abū al-Ḥasan ʿAlī, king of Banbalūna
+    who:
+      - abu-al-hasan-ali-of-banbaluna
+    from:
+      - save
+    cite: save of 3 May 1454
+  - id: 1454-04-01-ismail-the-negotiator
+    'on': '1454-04-01'
+    kind: crown
+    what: A year into his reign, Ismāʿīl is known as a charismatic negotiator who handles the realm's diplomacy in person
+    who:
+      - ismail-ibn-muhammad-ibn-ismail
+    threads:
+      - two-princes
+    from:
+      - seen
+      - save
+    cite: Trent's screen of 1 April 1454; save of 3 May 1454
+    detail:
+      trait: charismatic negotiator
+      report: '"Through personal involvement in state diplomacy and negotiations our ruler is able to make others see things our way."'
+      political influence: 82 in March 1453, 39 on 1 April 1454
+  - id: 1454-05-01-portugal-integrated
+    'on': '1454-05-01'
+    kind: land
+    what: >-
+      The ṭāʾifa of Portugal is integrated into the crown after forty-two years as a subject: 34 towns from
+      Porto and Braga to Coimbra and Leiria, and some 800,000 souls
+    who:
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+    from:
+      - told
+      - save
+    cite: Trent's account; save of 3 May 1454
+    detail:
+      towns: 244 to 278
+      souls: 3.90 million to 4.72 million
+      provinces: Minho, Trás-os-Montes, Beira Alta, Beira Baixa, Beira Litoral
+      the ṭāʾifa: a subject since 1 November 1411; its capital was Barcelos
+      its house: Fāṭima, 13, and her mother Christine, 37, are now nobles of al-Andalus
+      how: as Barcelona and Valencia were integrated; the removal of autonomy (Trent)
+  - id: 1454-05-03-catholics-outnumber-muslims
+    'on': '1454-05-03'
+    kind: realm
+    what: >-
+      With Portugal counted in, the Portuguese are the realm's largest people (28%, to the Andalusīs' 25%),
+      and Catholics (49%) outnumber Muslims (46%) for the first time in a generation
+    threads:
+      - towns
+    from:
+      - save
+    cite: saves of 6 March 1453 and 3 May 1454
+    detail:
+      earlier: Catholics were the larger faith from the 1360s into the 1420s; Muslims have led since about 1430
+      before: Andalusī 30%, Catalan 20%, Portuguese 14%, Castilian 13%, Sicilian 10%; Muslim 55%, Catholic 39%, Jewish 5%
+      after: Portuguese 28%, Andalusī 25%, Catalan 17%, Castilian 10%, Sicilian 8%; Catholic 49%, Muslim 46%, Jewish 4%
+  - id: 1454-05-03-ahmad-ibn-ismail-joins-the-diwan
+    'on': '1454-05-03'
+    kind: office
+    what: >-
+      The Emperor's son Aḥmad, twenty-one, takes the seat for developing the provinces that the lady Jadīla
+      had held since 1435
+    who:
+      - ahmad-ibn-ismail-ibn-muhammad
+      - jadila-bint-saad-ibn-faraj
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 3 May 1454
+    detail:
+      abilities: 88 / 30 / 45
+      Jadīla: sixty, alive and at court
+      when: between March 1453 and May 1454; the save does not date it
+  - id: 1454-05-03-the-mamluk-war-over
+    'on': '1454-05-03'
+    kind: peace
+    what: The Mamlūks' war on the Banū Lām is over. Al-Andalus fought no battle in its five years
+    threads:
+      - mamluk-war-on-lam
+    from:
+      - save
+    cite: save of 3 May 1454
+    detail:
+      when: the war is gone from the save; it ended some time after March 1453
+      terms: not known
+  - id: 1454-05-03-banks-and-paper
+    'on': '1454-05-03'
+    kind: realm
+    minor: true
+    what: >-
+      Another year of building: four banking offices, more paper mills and jewellers, fourteen new ships.
+      Income reaches 573 a month
+    who:
+      - ahmad-ibn-muhammad-ibn-ismail
+    threads:
+      - towns
+    from:
+      - save
+    cite: saves of 6 March 1453 and 3 May 1454
+    detail:
+      built: banking office +4, paper guild +5, jewellers +2, fibre farms +3
+      fleet: 110 ships to 124
+      treasury: 583 to 692
+      society: free subjects 5.8 to 12.2
+tellings:
+  - id: 0858-05-03-of-the-end-of-the-taifa-of-burtuqal
+    'on': '1454-05-03'
+    title: Of the End of the Ṭāʾifa of Burtuqāl
+    book: book-of-the-franks
+    verse: '5:8'
+    who:
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-ismail-ibn-muhammad
+      - jadila-bint-saad-ibn-faraj
+    where:
+      - ishbiliyya
+    covers:
+      - 1454-04-01-ismail-the-negotiator
+      - 1454-05-01-portugal-integrated
+      - 1454-05-03-catholics-outnumber-muslims
+      - 1454-05-03-ahmad-ibn-ismail-joins-the-diwan
+      - 1454-05-03-the-mamluk-war-over
+      - 1454-05-03-banks-and-paper
+    text: |
+      The first year of the Emperor [Ismāʿīl](person:ismail-ibn-muhammad-ibn-ismail) was spent in talk, which was his trade. His father had left the envoys to others. Ismāʿīl received them himself, and wrote to their masters in his own hand, and by Rabīʿ al-Thānī of 858 it was said in the dīwān and outside it that there was no man in the west harder to refuse. His brother [Aḥmad](person:ahmad-ibn-muhammad-ibn-ismail), at the head of the council, went on building. That year it was counting-houses, four of them, and more paper, and fourteen ships.
+
+      The great business of the year was Burtuqāl. It had been a ṭāʾifa since 14 Rajab 814, close on forty-four years by the reckoning of the Hijra: a kingdom of the north with its own court at Barcelos, its own levies and a house of the blood on its throne. Its last king had died at sea six years before. Since then it had been ruled by his widow for their daughter Fāṭima, who was thirteen.
+
+      On 3 Jumādā al-Ūlā 858 it ceased to be a kingdom. It was done as Barshalūna and Balansiyya had been done before it, by the dīwān's clerks and not by soldiers. The court at Barcelos was dissolved and its offices passed to the crown's governors. Thirty-four towns came under the Emperor's direct rule, from Porto and Braga in the north to Coimbra and Leiria, with Viseu, Guarda and Bragança in the hills behind them. Fāṭima was not harmed and not sent away. She and her mother kept their place among the nobles of the country, and lost the rest.
+
+      Then the dīwān counted what it had. The realm was now two hundred and seventy-eight towns and more than four and a half million souls, and the count gave the court two things to think about. The first was that the Portuguese, and not the Andalusīs, were now the most numerous people under the Emperor: twenty-eight in every hundred, to the Andalusīs' twenty-five. The second was that the Christians of the realm now outnumbered its Muslims, forty-nine in the hundred to forty-six. It had been so once before, in the years after the north was taken, but not in the last reign: under Muḥammad the Muslims had been the greater part for a quarter of a century. The Emperor, who had lately confirmed the Sicilians in their laws, was not seen to be troubled by it.
+
+      Two smaller things belong to the same season. The lady [Jadīla](person:jadila-bint-saad-ibn-faraj), the old Emperor's widow, who had held her seat on the dīwān for nineteen years, gave it up at sixty, and it went to the Emperor's son [Aḥmad](person:ahmad-ibn-ismail-ibn-muhammad), who was twenty-one and had a head for accounts. And word came from the east that the Mamlūks' war with the Banū Lām was over. It had lasted five years. Al-Andalus had been a party to it from the first day and had not fought in it once.
+
+      *O you who have believed, be persistently standing firm for God, witnesses in justice, and do not let the hatred of a people prevent you from being just. Be just; that is nearer to righteousness. And fear God; indeed, God is Acquainted with what you do.*
+    behind: |
+      **What the save shows.** This note draws on the saves of 6 March 1453 and 3 May 1454, and on Trent's screen of 1 April 1454.
+      - *Portugal:* it is no longer a subject, and its 34 towns (Minho, Trás-os-Montes, the three Beiras) are the crown's. It had been a ṭāʾifa since 1 November 1411, with its capital at Barcelos. Fāṭima (born 31 December 1440) and her mother Christine (born 1416) are now in al-Andalus's own court, in the nobles' estate. Trent dates the integration 1 May 1454.
+      - *The count:* 244 towns to 278; 3.90 million souls to 4.72 million. Portuguese 14% to 28%, Andalusī 30% to 25%; Muslim 55% to 46%, Catholic 39% to 49%. In the earlier reckonings Catholics were the larger faith from the 1360s into the 1420s, and Muslims have led since about 1430.
+      - *Ismāʿīl:* the screen of 1 April 1454 gives him the trait "charismatic negotiator". Political influence stood at 82 in March 1453 and 39 on the screen.
+      - *The dīwān:* Aḥmad ibn Ismāʿīl (88 / 30 / 45) holds the seat Jadīla held from October 1435. She is alive. The save doesn't date the change.
+      - *The Mamlūk war:* gone from the save, so it ended between March 1453 and May 1454. The save doesn't give its terms or say who holds the Holy Cities.
+      - *Building:* banking offices +4, paper +5, jewellers +2; ships 110 to 124; treasury 583 to 692, income 573 a month.
+
+      **From Trent's account.** Portugal is integrated like Barcelona and Valencia were: the removal of autonomy, with the child-queen remaining a noble in the area. Done 1 May 1454.
+
+      **Invented colour.**
+      - Ismāʿīl receiving envoys and writing in his own hand, and what was said of him. The screen says only that he involves himself in diplomacy.
+      - The integration done by clerks, the court at Barcelos dissolved, and its offices passing to governors.
+      - Fāṭima and her mother keeping "their place" and losing "the rest".
+      - The dīwān counting, and the Emperor untroubled. The numbers are the save's.
+      - Jadīla giving up her seat of her own accord, and the younger Aḥmad's head for accounts (his administration is 88).
+      - Word of the peace arriving in this season.
+questions:
+  - How did the Mamlūks' war on the Banū Lām end, and who holds Makka and Madīna now?
+  - Catholics now outnumber Muslims in the realm (49% to 46%). Does the court treat that as a problem, and does Ismāʿīl's tolerance extend to Portugal's laws as it did to Sicily's?
