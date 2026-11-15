@@ -10,7 +10,7 @@
   from: '1408-08-05'
   premise: >-
     Ismāʿīl and Aḥmad, half-brothers bound since childhood: Ismāʿīl talks, allies and converts; Aḥmad builds.
-    Aḥmad is expected to head Ismāʿīl's council when Ismāʿīl reigns.
+    From March 1453 Ismāʿīl reigns and Aḥmad heads his council, as was long expected.
 - kind: story
   id: towns
   title: The towns and the bridges
@@ -54,8 +54,9 @@
   state: open
   from: '1450-09-28'
   premise: >-
-    Won in 1450 and kept under the crown with a governor at Palermo, for now. A ṭāʾifa is the alternative;
-    Naples holds a claim across the strait of Messina.
+    Won in 1450 and kept under the crown with a governor at Palermo. Ismāʿīl, who once argued for a ṭāʾifa,
+    keeps the governor in 1453, tolerates the island's traditions and confirms many of its laws. Naples holds
+    a claim across the strait of Messina.
 - id: fate-of-tlemcen
   kind: war
   title: The Fate of Tlemcen

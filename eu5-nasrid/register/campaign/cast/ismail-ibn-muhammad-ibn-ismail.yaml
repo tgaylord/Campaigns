@@ -71,6 +71,12 @@ drives:
       brother.
     by: chronicle
     source: Of the Governor of Balarm and the Holy Cities
+  - from: '1453-03-06'
+    text: >-
+      Emperor at fifty. Keeps his father's governor in Sicily, but rules it his own way: wide tolerance for
+      Sicilian traditions and many of their laws confirmed, as for the Portuguese and the Catalans.
+    by: trent
+    source: Trent's account, November 2026
 ties:
   - with: ahmad-ibn-muhammad-ibn-ismail
     kind: bond

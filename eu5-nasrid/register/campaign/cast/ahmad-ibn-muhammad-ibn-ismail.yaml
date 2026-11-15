@@ -7,6 +7,7 @@ father: muhammad-ibn-ismail-ibn-saad
 mother: isabel-de-montsoriu
 roles:
   - member of the dīwān (from 1429)
+  - head of the Emperor Ismāʿīl's council (from 1453)
 traits:
   - architect
 stats:
@@ -54,6 +55,10 @@ drives:
       king; spends the year's treasury on paper mills, jewellers, a library and roads.
     by: chronicle
     source: Of the Governor of Balarm and the Holy Cities
+  - from: '1453-03-06'
+    text: 'Heads his brother''s council: the second seat of power, as planned since they were boys.'
+    by: trent
+    source: Trent's account, November 2026
 stations:
   - role: dīwān
     from: '1429-07-02'
