@@ -36,6 +36,15 @@
     Crusades, embargoes and envoys: how Christendom has treated a Muslim Iberia, from the crusade of 806 to
     'We have arrived'.
 - kind: story
+  id: grand-alliance
+  title: The Grand Alliance
+  state: open
+  from: '1447-08-01'
+  premise: >-
+    A league of Christian powers against al-Andalus, called together by the Angevins in 1447 and grown after
+    the conquest of Sicily. Its members embargo al-Andalus and stand together if it attacks any of them; they
+    may make war on it only once its mastery of Europe or of the seas grows past bearing.
+- kind: story
   id: voyages
   title: The voyages
   state: open

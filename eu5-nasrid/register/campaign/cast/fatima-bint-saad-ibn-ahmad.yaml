@@ -3,6 +3,7 @@ arabic: فاطمة بنت سعد بن أحمد
 sex: f
 house: Naṣrid
 born: '1430-05-25'
+father: saad-ibn-ahmad-ibn-ismail
 mother: umm-al-fath-bint-muhammad
 traits:
   - child_ambitious

@@ -1,0 +1,198 @@
+date: '1456-03-07'
+title: The Grand Alliance
+summary: >-
+  From a save, a screen and Trent's account. By March 1456 the Christian league the Angevins founded in 1447
+  stands eight strong: the Angevins, Hungary, Viennois, Savoy, Arborea, Genoa, Montferrat and Mondovì. The court
+  reads it as a threat and sends envoys to Istanbul (Trent). Meanwhile the ʿulamāʾ built eleven madrasas in
+  Portugal and Sicily, Cuenca's integration began, and Aḥmad, ruler of the Ṭāʾifa of Liyūn, died after a fall
+  and was succeeded by his son Saʿd.
+beats:
+  - id: 1447-08-01-the-grand-alliance-founded
+    'on': '1447-08-01'
+    kind: world
+    what: >-
+      On the day the Emperor tells Europe's envoys 'We have arrived', the Angevins found a league against
+      al-Andalus. For three years they are its only member
+    threads:
+      - grand-alliance
+      - europe
+    from:
+      - save
+    cite: save of 7 March 1456
+    detail:
+      founded: 1 August 1447, by the Angevins, who have led it ever since
+  - id: 1451-02-17-hungary-joins-the-alliance
+    'on': '1451-02-17'
+    kind: world
+    minor: true
+    what: Three months after the conquest of Sicily, Hungary joins the Angevins' league, the first to follow them
+    threads:
+      - grand-alliance
+    from:
+      - save
+    cite: save of 7 March 1456
+    detail:
+      after: Viennois (December 1451), Savoy (March 1452), Arborea (August 1452), Genoa (July 1453), Montferrat
+        (April 1454), Mondovì (October 1454)
+  - id: 1454-06-02-cuenca-to-come-under-the-crown
+    'on': '1454-06-02'
+    kind: land
+    what: A month after Portugal, the integration of the Ṭāʾifa of Qūnka into the crown begins
+    where:
+      - qunka
+    from:
+      - save
+    cite: save of 7 March 1456
+  - id: 1454-12-18-an-envoy-at-istanbul
+    'on': '1454-12-18'
+    kind: world
+    minor: true
+    what: An Andalusī envoy begins to cultivate the Ottoman court, kin to the Naṣrids by marriage since 1421
+    threads:
+      - europe
+    from:
+      - save
+    cite: save of 7 March 1456
+  - id: 1456-01-04-death-of-ahmad-of-liyun
+    'on': '1456-01-04'
+    kind: death
+    what: >-
+      Aḥmad ibn Ismāʿīl, ruler of the Ṭāʾifa of Liyūn for forty-four years and son of the Ottoman princess
+      ʿĀʾisha, dies at sixty-two after a fall down a stair. His son Saʿd succeeds him
+    who:
+      - ahmad-ibn-ismail-ibn-saad
+      - saad-ibn-ahmad-ibn-ismail
+    from:
+      - save
+    cite: save of 7 March 1456
+  - id: 1456-03-07-births-of-1454-and-1455
+    'on': '1456-03-07'
+    kind: birth
+    minor: true
+    what: >-
+      Five children born in the house since 1454, among them a daughter, Shams, to the heir Yūsuf, and a son and
+      a daughter to the Emperor's son Aḥmad
+    who:
+      - yusuf-ibn-ismail-ibn-muhammad
+      - ahmad-ibn-ismail-ibn-muhammad
+      - yusuf-ibn-ahmad-ibn-muhammad
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 7 March 1456
+    detail:
+      Yūsuf ibn Aḥmad: a son, Muḥammad, by Umm al-Fatḥ bint Ismāʿīl (8 November 1454)
+      Aḥmad ibn Ismāʿīl: a son, Yūsuf (18 May 1455), and a daughter, Shams (19 July 1455)
+      Yūsuf the heir: a daughter, Shams, by Fāṭima bint Yūsuf (23 December 1455)
+      Banbalūna: a son, Muḥammad, to its king Abū al-Ḥasan ʿAlī (16 February 1456)
+  - id: 1456-03-07-the-madrasas-of-burtuqal-and-sicily
+    'on': '1456-03-07'
+    kind: realm
+    what: >-
+      The ʿulamāʾ make use of their new right: eleven madrasas rise, three in Burtuqāl and eight in Sicily, one
+      in each of the island's great towns
+    threads:
+      - estates
+      - sicily
+    from:
+      - save
+    cite: saves of 3 May 1454 and 7 March 1456
+    detail:
+      Burtuqāl: Porto, Coimbra, Viseu
+      Sicily: Messina, Catania, Syracuse, Modica, Girgenti, Cefalù, Mazara, Trapani
+      also built: ten protected harbours, seven banking offices, five wharves
+      treasury: about 2,100 spent on building over and above running costs
+  - id: 1456-03-07-the-alliance-eight-strong
+    'on': '1456-03-07'
+    kind: world
+    what: >-
+      The Grand Alliance stands eight strong, every member Catholic and hostile, and the court takes it for a
+      threat
+    threads:
+      - grand-alliance
+      - europe
+    from:
+      - save
+      - seen
+      - told
+    cite: save of 7 March 1456; Trent's screen of 7 March 1456; Trent's account
+    detail:
+      members: the Angevins (leader, second among the great powers), Hungary, Viennois, Savoy, Arborea, Genoa,
+        Montferrat, Mondovì
+      its terms: members embargo al-Andalus, feed and give passage to one another, and join any war al-Andalus
+        makes on one of them; they may declare war on al-Andalus only when its mastery of Europe or of the
+        seas reaches three-quarters
+      how near: al-Andalus's mastery of Europe stands at about 48 in 100, of the seas at about 25
+  - id: 1456-03-07-envoys-to-istanbul
+    'on': '1456-03-07'
+    kind: world
+    what: >-
+      Ismāʿīl answers by sending envoys to Istanbul. If the Christians mean to outflank al-Andalus, it can
+      outflank them
+    who:
+      - ismail-ibn-muhammad-ibn-ismail
+    threads:
+      - grand-alliance
+      - europe
+    from:
+      - told
+    cite: Trent's account, November 2026
+tellings:
+  - id: 0860-03-29-of-the-grand-alliance
+    'on': '1456-03-07'
+    title: Of the Grand Alliance
+    book: book-of-the-franks
+    verse: '3:173'
+    who:
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-ismail-ibn-saad
+      - saad-ibn-ahmad-ibn-ismail
+    where:
+      - ishbiliyya
+      - qunka
+    covers:
+      - 1447-08-01-the-grand-alliance-founded
+      - 1451-02-17-hungary-joins-the-alliance
+      - 1454-06-02-cuenca-to-come-under-the-crown
+      - 1454-12-18-an-envoy-at-istanbul
+      - 1456-01-04-death-of-ahmad-of-liyun
+      - 1456-03-07-the-madrasas-of-burtuqal-and-sicily
+      - 1456-03-07-the-alliance-eight-strong
+      - 1456-03-07-envoys-to-istanbul
+    text: |
+      The league had been made long before anyone at court took it seriously. On 18 Jumādā al-Ūlā 851, the day the Emperor Muḥammad told the envoys of Europe that al-Andalus had arrived, the Angevin king had answered him in the only way a Frankish king could. He swore himself into a league against al-Andalus, and for three years he was its only member. The dīwān heard of it and laughed. A league of one was a grudge with a seal on it.
+
+      Then Sicily fell, and the laughing stopped. Three months after the peace of Balarm the king of Hungary joined the Angevin, and after Hungary came the others, one or two a year, as if each had been waiting to see who would go first: the Dauphin's country of Viennois, then Savoy, then Arborea, which had lost half of Sardinia, then Genoa, which had lost Corsica and its fleets, then Montferrat and Mondovì in the hills behind it. By the spring of 860 there were eight of them. Every one was Catholic, and not one of them had a good word to say of the Emperor.
+
+      The dīwān's clerks copied out the league's terms and laid them before [Ismāʿīl](person:ismail-ibn-muhammad-ibn-ismail) in Rabīʿ al-Awwal. Its members would buy nothing from Andalusī merchants and sell them nothing. They would feed one another's armies and let them pass. If al-Andalus made war on any one of them, the rest would come in. And when the power of al-Andalus in Europe, or on the seas, had grown past what Christendom could bear, the Angevin might call them all to war. The clerks judged that day not yet come. The Emperor did not think it far off.
+
+      He had spent three years persuading men to see things his way, and here were eight princes he could not persuade. So he did what his father's map had always suggested and nobody had said aloud. The Christians had built a wall of kingdoms at the back of al-Andalus. Al-Andalus would find a friend at theirs. An envoy had been at the Ottoman court since the end of 858, smoothing the way. Now the Emperor sent a full embassy to Istanbul, with gifts and letters in his own hand. The Naṣrids and the house of ʿOthmān were kin already: ʿĀʾisha, an Ottoman princess, had been the wife of the Emperor Ismāʿīl, the present Emperor's grandfather.
+
+      Her son did not live to see it. [Aḥmad](person:ahmad-ibn-ismail-ibn-saad) ibn Ismāʿīl had ruled the Ṭāʾifa of Liyūn since he was eighteen, forty-four years in all. On 25 Muḥarram 860 he fell on a stair in his own house and died of it, at sixty-two. His son [Saʿd](person:saad-ibn-ahmad-ibn-ismail), who was married to two of the old Emperor's daughters, took his place at Liyūn.
+
+      The rest of the realm went on with its work. The ʿulamāʾ, given leave to build in the new provinces, built quickly: three madrasas in Burtuqāl, at Porto, Coimbra and Viseu, and eight in Sicily, one in every great town of the island from Messina to Trapani. [Aḥmad](person:ahmad-ibn-muhammad-ibn-ismail) built harbours and counting-houses. And a month after Burtuqāl, the dīwān began the same slow work with the Ṭāʾifa of [Qūnka](place:qunka).
+
+      *Those to whom the people said, "Indeed, the people have gathered against you, so fear them." But it only increased them in faith, and they said, "Sufficient for us is God, and He is the best Disposer of affairs."*
+    behind: |
+      **What the save shows.** This note draws on the saves of 3 May 1454 and 7 March 1456, on Trent's screen of the alliance's members, and on the game's definition of the Grand Alliance.
+      - *The alliance:* founded 1 August 1447 with the Angevins as its only member and leader. It is the same day as 'We have arrived'; in the game, the alliance targets the winner of the Battle for the Strait during the Golden Century. Members joined on these dates: Hungary 17 February 1451, Viennois (Dauphiné) 14 December 1451, Savoy 10 March 1452, Arborea 13 August 1452, Genoa 3 July 1453, Montferrat 6 April 1454, Mondovì 2 October 1454. Trent's screen lists the eight, all Catholic, opinion of al-Andalus between −176 and −200.
+      - *Its terms:* the game's definition gives the alliance an embargo on its target, food and military access among members, and automatic entry into any defensive war against the target. Its leader may declare war on al-Andalus only when al-Andalus's European or colonial dominance (two meters in the Golden Century situation) reaches 75. In this save they stand at 47.9 and 25.1. The alliance's bonuses grow at 25, 50, 75 and 100 on each meter. Leadership goes to the strongest great power, reviewed yearly.
+      - *Istanbul:* al-Andalus has been improving relations with the Ottomans since 18 December 1454; the royal marriage between the houses dates from 1421.
+      - *Liyūn:* Aḥmad died on 4 January 1456; the save gives the cause as falling down stairs. His son Saʿd (born 1411) now rules. Saʿd's wives are Umm al-Fatḥ and Muʾmina, both daughters of the Emperor Muḥammad.
+      - *Qūnka:* integration began 2 June 1454.
+      - *Madrasas:* eleven new, all in Portugal and Sicily, at the towns listed.
+      - *Births:* five in the house since May 1454 (see the record).
+
+      **From Trent's account.** The Angevins called the alliance together. The court takes it as a threat and sends envoys to Istanbul: if the Christians want to outflank us, two can play that game. Trent dates the creation 7 March 1456; the save dates the founding to 1447 and the last member's joining to October 1454, so the entry takes 7 March 1456 as the day the court took its measure.
+
+      **Invented colour.**
+      - The dīwān laughing at a league of one, and the laughing stopping after Sicily.
+      - The clerks laying out the terms, and the Emperor's judgement that war was not far off.
+      - The embassy's gifts and letters, and the idea coming from the old Emperor's map.
+      - Where Aḥmad fell. The save says only that he fell down stairs.
+      - Aḥmad ibn Muḥammad as the builder of the harbours and banks. He heads the council; the save doesn't say who ordered them.
+questions:
+  - The save dates the Grand Alliance's founding to 1 August 1447 and its eighth member to October 1454. Is 7 March 1456 the day you first saw it, or did something happen to it that day?
+  - What did the embassy to Istanbul ask the Ottomans for, and what did they answer?
