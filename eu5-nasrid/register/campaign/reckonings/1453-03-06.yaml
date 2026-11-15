@@ -149,7 +149,7 @@ beats:
     cite: Trent's account, November 2026
     detail:
       why the governor stays: the crown is successfully extending its control to the island
-      control: '"max control of Balarm is 50% right now, once cored it should jump to 30%" (Trent)'
+      control: the most the crown can hold of Balarm is 50% for now; once the island is integrated that should rise by 30, to about 80% (Trent)
       date: Trent gives no date; placed at the accession
   - id: 1453-03-06-portugal-to-come-under-the-crown
     'on': '1453-03-06'
@@ -215,7 +215,7 @@ tellings:
       - *The quiet year:* treasury 26 to 583; ships 97 to 110; five more levels of paper mill, a madrasa, a scriptorium; stability 16.3 to 19.6. Nine battles in the Mamlūk war between 1 February and 1 November 1452. Genoa's embargo dates from 5 December 1452. The royal marriage with Aragon is gone from the save, and so is Portugal's claim to resist annexation.
       - *The reign in numbers:* 195 towns, 2.57 million souls and 50 ships in the save of 2 July 1429; 244 towns, 3.90 million souls and 110 ships now.
 
-      **From Trent's account.** Nothing in particular happened in these fourteen months: steady building and the start of integrating Sicily. Under Ismāʿīl, Aḥmad does head the council. Sicily keeps its governor because control is being extended to the island successfully, and Ismāʿīl greatly increases the tolerance of Sicilian traditions and grants continuity for many of their laws, as for the Portuguese and Catalans. Portugal is being integrated as Barcelona and Valencia were, roughly done by May 1454; it is the removal of autonomy, and the child-queen remains a noble in the area. May 1454 falls in Jumādā al-Ūlā 858.
+      **From Trent's account.** Nothing in particular happened in these fourteen months: steady building and the start of integrating Sicily. Under Ismāʿīl, Aḥmad does head the council. Sicily keeps its governor because control is being extended to the island successfully (the ceiling at Balarm is 50% now, and should rise by 30 to about 80% once the island is integrated), and Ismāʿīl greatly increases the tolerance of Sicilian traditions and grants continuity for many of their laws, as for the Portuguese and Catalans. Portugal is being integrated as Barcelona and Valencia were, roughly done by May 1454; it is the removal of autonomy, and the child-queen remains a noble in the area. May 1454 falls in Jumādā al-Ūlā 858.
 
       **Invented colour.**
       - That he died at Ishbīliya. The save doesn't give a place.
@@ -226,5 +226,3 @@ tellings:
       - Nobody at court being surprised at Aḥmad's place.
       - Ismāʿīl's toleration and the confirming of the laws placed among his first acts; Trent gives no date. That he "did not overrule his father" is the chronicler's reading of the governor staying.
       - Fāṭima keeping her lands and rank. Trent says she remains a noble in the area.
-questions:
-  - 'Sicily: once Balarm is fully integrated, how far is the crown''s control expected to reach? (Trent: "max control is 50% right now, once cored it should jump to 30%".)'
