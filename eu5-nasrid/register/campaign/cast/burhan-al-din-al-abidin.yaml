@@ -1,6 +1,8 @@
 name: Burhān al-Dīn al-ʿĀbidīn
 arabic: برهان الدين العابدين
 born: '1436-05-24'
+traits:
+  - treasure_hunter
 roles:
   - explorer (from 1456)
 stats:

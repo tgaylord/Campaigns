@@ -48,7 +48,9 @@
   id: voyages
   title: The voyages
   state: open
-  premise: The islands, the African coast, the Cape and whatever lies beyond it.
+  premise: >-
+    The islands, the African coast, the Cape and whatever lies beyond it; from 1458, the islands across the
+    Western Ocean and the first settlements there.
 - kind: story
   id: umayyad-claim
   title: The borders of the Umayyads

@@ -1,0 +1,228 @@
+date: '1458-06-24'
+title: The Western Ocean
+summary: >-
+  From a save, Trent's screens and his account. ʿAbd al-Jalīl al-Qubbasī sailed west from the Algarve in July
+  1457 with four ships, faced down a crew that wanted to turn back, was becalmed, towed his ships by oar, and
+  in February 1458 made land beyond the ocean. Another expedition had come home on 1 January with word of an
+  island of people wearing gold. By June settlers were going out to Cuba and the Bahamas. At home the crown
+  nearly tripled its army, from 13 regiments to 42, under new laws of levy and a centralised bureaucracy, while
+  the Grand Alliance looked on. The Galician nobles' war is over. Stability fell from 25.7 to 16.3.
+beats:
+  - id: 1455-02-23-the-emperors-hajj-turns-back
+    'on': '1455-02-23'
+    kind: crown
+    minor: true
+    what: The Emperor Ismāʿīl sets out to lead the Hajj caravan himself, with a regency at home, but the caravan fails and turns back
+    who:
+      - ismail-ibn-muhammad-ibn-ismail
+    from:
+      - save
+    cite: save of 24 June 1458
+    detail:
+      set out: 16 September 1454, when a regency began
+      failed: 23 February 1455
+  - id: 1457-04-03-the-new-army-laws
+    'on': '1457-04-03'
+    kind: realm
+    what: >-
+      Against the Angevins' league, the crown changes its laws of war: wider levies, a centralised bureaucracy,
+      fewer mercenaries. Over the next year the army grows from thirteen regiments to forty-two
+    who:
+      - ismail-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+    threads:
+      - grand-alliance
+    from:
+      - save
+      - told
+    cite: save of 24 June 1458; Trent's account of 15 March 1457
+    detail:
+      laws: expanded levies, centralised bureaucracy, restricted mercenary market (3 April 1457); shipwright standard regulation (16 June 1458)
+      army: 13 regiments to 42; two armies of 12,800 and 9,500 on Trent's screens of 1457 and 1458
+      armouries: sixteen more levels built
+      manpower: 31,800 to 20,700
+      fleet: 131 ships to 144, with a fleet expansion expected (Trent)
+  - id: 1457-07-04-the-voyage-into-the-western-ocean
+    'on': '1457-07-04'
+    kind: world
+    what: ʿAbd al-Jalīl al-Qubbasī sails west from Šanta Maryat el-Ġarb with four ships, to look for a sea road to the Indies
+    who:
+      - abd-al-jalil-al-qubbasi
+    threads:
+      - voyages
+    from:
+      - told
+      - seen
+      - save
+    cite: Trent's account and screen of 4 July 1457; save of 24 June 1458
+  - id: 1457-10-29-the-crew-wants-to-turn-back
+    'on': '1457-10-29'
+    kind: world
+    what: >-
+      Weed, an old chart of Antillia, mouldy bread and fever: the crews tell ʿAbd al-Jalīl they will turn east.
+      He buys three more days with a promise of a share in whatever they find
+    who:
+      - abd-al-jalil-al-qubbasi
+    threads:
+      - voyages
+    from:
+      - seen
+    cite: Trent's screens of 1, 17 and 29 October 1457
+  - id: 1458-01-01-word-of-the-gold-island
+    'on': '1458-01-01'
+    kind: world
+    what: >-
+      Another expedition comes home with word of a small island across the ocean, and people there who wear gold
+      and speak no tongue anyone knows. Some say it is the Indies; some say it is a land no one has heard of
+    who:
+      - burhan-al-din-al-abidin
+    threads:
+      - voyages
+    from:
+      - seen
+    cite: Trent's screen of 1 January 1458
+    detail:
+      who: the screen does not name the explorer; Burhān, swept west in 1456, is now called a treasure hunter
+      the same day: ʿAbd al-Jalīl's ships lie becalmed, and he puts the boats out to tow them
+  - id: 1458-02-19-land-beyond-the-ocean
+    'on': '1458-02-19'
+    kind: land
+    what: >-
+      Just before dawn ʿAbd al-Jalīl's lookouts see trees, a shore and green hills. He plants the flag: whatever
+      this place is, it belongs to al-Andalus
+    who:
+      - abd-al-jalil-al-qubbasi
+    threads:
+      - voyages
+    from:
+      - seen
+    cite: Trent's screens of 19 February 1458
+    detail:
+      the islanders: they point inland and south, toward mountains and rivers no one aboard has seen; the pilots mark it on the chart with the interpreters' contradictions left in
+      after: rotten stores, rationed anyway (1 April)
+  - id: 1458-02-09-manars-survey-returns
+    'on': '1458-02-09'
+    kind: world
+    minor: true
+    what: Mänär's survey of the African coasts comes home to Ishbīliya with better charts than the pilots have had
+    who:
+      - manar-yavantey
+    where:
+      - ishbiliyya
+    threads:
+      - voyages
+    from:
+      - seen
+      - save
+    cite: Trent's screen of 9 February 1458; save of 24 June 1458
+  - id: 1458-05-10-death-of-saad-ibn-yusuf
+    'on': '1458-05-10'
+    kind: death
+    minor: true
+    what: Saʿd ibn Yūsuf, the old Emperor's cousin, raised at the Aragonese court, dies in a hunting accident at sixty-four
+    who:
+      - saad-ibn-yusuf-ibn-saad
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 24 June 1458
+  - id: 1458-05-26-the-account-read-at-court
+    'on': '1458-05-26'
+    kind: world
+    what: >-
+      ʿAbd al-Jalīl's battered ships make harbour, and his account is read aloud at court: the islands, the
+      crossing, strange birds and stranger fruit, and gold worn by people who had never heard of al-Andalus.
+      Some doubt it. All of it is written down
+    who:
+      - abd-al-jalil-al-qubbasi
+      - ismail-ibn-muhammad-ibn-ismail
+    threads:
+      - voyages
+    from:
+      - seen
+      - save
+    cite: Trent's screen of 26 May 1458; save of 24 June 1458
+  - id: 1458-06-24-settlers-for-cuba
+    'on': '1458-06-24'
+    kind: land
+    what: >-
+      The first settlers go out across the ocean: five settlements in Cuba, at Havana, Morón, Camagüey, Bayamo
+      and Baracoa, and one in the Bahamas
+    threads:
+      - voyages
+    from:
+      - save
+      - told
+    cite: save of 24 June 1458; Trent's account
+    detail:
+      begun: about three months before the save
+      Africa: settlements at Bonny on the Niger delta (since late 1454) and Kabinda on the Kongo coast (since 1456) go on
+      buildings: six settlement buildings raised this year
+  - id: 1458-06-24-the-galician-war-over
+    'on': '1458-06-24'
+    kind: peace
+    minor: true
+    what: The Galician nobles' war is over; Louis keeps his seat
+    threads:
+      - galician-nobles-war
+    from:
+      - save
+    cite: save of 24 June 1458
+    detail:
+      when: gone from the save, so ended between January 1457 and June 1458
+tellings:
+  - id: 0862-07-12-of-the-western-ocean
+    'on': '1458-05-26'
+    title: Of the Western Ocean
+    book: book-of-the-franks
+    verse: '10:22'
+    who:
+      - abd-al-jalil-al-qubbasi
+      - ismail-ibn-muhammad-ibn-ismail
+      - burhan-al-din-al-abidin
+      - ahmad-ibn-muhammad-ibn-ismail
+    where:
+      - ishbiliyya
+    covers:
+      - 1457-04-03-the-new-army-laws
+      - 1457-07-04-the-voyage-into-the-western-ocean
+      - 1457-10-29-the-crew-wants-to-turn-back
+      - 1458-01-01-word-of-the-gold-island
+      - 1458-02-19-land-beyond-the-ocean
+      - 1458-05-26-the-account-read-at-court
+      - 1458-06-24-settlers-for-cuba
+    text: |
+      In the spring of 861 the Emperor made ready for war, though no one had declared one. The Angevin's league had grown to eight, and the dīwān no longer laughed at it. On 8 Jumādā al-Ūlā the laws of the levy were widened, the offices of the bureaucracy brought under one hand at [Ishbīliya](place:ishbiliyya), and the hiring of foreign swords cut back. Over the year that followed the army went from thirteen regiments to forty-two, and the armouries worked through the nights. [Aḥmad](person:ahmad-ibn-muhammad-ibn-ismail) paid for it.
+
+      In the same season the court sent [ʿAbd al-Jalīl](person:abd-al-jalil-al-qubbasi) al-Qubbasī west. He was forty-one, the oldest of the pilots still at sea, and the first of them to have seen the Cape. Young Burhān had been carried west against his will the year before and not come back. ʿAbd al-Jalīl meant to go on purpose. He left Šanta Maryat in the Algarve on 11 Shaʿbān 861 with four ships, put in at Fuerteventura, and turned his bows into the empty ocean.
+
+      For three months there was nothing. There was weed, so thick in places that it held the hulls back, and the old hands swore it meant shallows; he hove to and sounded, and found none. There was an old chart someone had brought aboard, showing Antillia, the island of seven cities, which the Christians said their bishops had founded when they fled the armies of the Umayyads. He laid his course by it. Nobody aboard missed the joke. On 10 Dhū al-Ḥijja the bread was green, the water stank, three men had fever, and the crews came to him together and said they were turning east, with his leave or without it. He asked for three days and promised every man a share of whatever they found. They gave him the three days, and then more.
+
+      On 14 Ṣafar 862 the wind died. The sails hung, the sea lay like glass, and the men said they had sailed off the edge of the world's winds. ʿAbd al-Jalīl put the boats out and had the ships towed by oars. That same day, though he could not know it, another Andalusī ship came home to the Algarve from the west. Its crew told of a small island across the ocean, and of people there who wore gold and spoke no tongue anyone knew. Some said it was the Indies. Some said it was not.
+
+      On 4 Rabīʿ al-Thānī, just before dawn, a cry came from the masthead, then another, and then every man on deck was shouting. There were trees, a shore, green hills, and water gone from blue to green to turquoise, and birds no one could name. ʿAbd al-Jalīl stood at the bow and said nothing for a long time. Then he went ashore and planted the flag. Whatever this place was, he said, it belonged to al-Andalus. The people of the island wore gold, and when the interpreters asked where it came from they pointed inland and to the south. The interpreters could not agree on what they meant, and ʿAbd al-Jalīl had the pilots write it all down, the contradictions with it.
+
+      He came home on 12 Rajab, with salt on the hulls and the men thin from eating stores that had rotted in the heat. His account was read aloud before the Emperor. Some of the court believed none of it. [Ismāʿīl](person:ismail-ibn-muhammad-ibn-ismail) had it copied into the dīwān's books as it stood, and the map-makers began, carefully, to draw on the western edge of their charts, where until then there had been nothing. By the end of Shaʿbān the first settlers were on their way across the ocean, to Havana and Bayamo and three other places on the great island the people there called Cuba, and to the Bahamas.
+
+      *It is He who enables you to travel on land and sea until, when you are in the ships and they sail with them by a good wind and they rejoice therein, there comes a storm wind and the waves come upon them from everywhere and they assume that they are surrounded, supplicating God, sincere to Him in religion, "If You should save us from this, we will surely be among the thankful."*
+    behind: |
+      **What the save and the screens show.** This note draws on the saves of 2 January 1457 and 24 June 1458, and on Trent's screens of the voyage from July 1457 to May 1458.
+      - *The voyage:* the expedition "Voyage into the Western Ocean", led by ʿAbd al-Jalīl, began 4 July 1457 from Faro and ended 26 May 1458. The screens show each event and the choice made: sound the depths in the weed; chart the course by Antillia (the legend of the seven bishops who fled the Umayyad conquest is the game's and real history's); promise three more days and a share; tow the ships when becalmed; plant the flag; note the islanders' directions with contradictions included; ration the rotten stores; let the account stand as written. Four ships throughout.
+      - *The first word of the island:* the "Discovery of a New World" screen of 1 January 1458 says one of our expeditions returned having met islanders wearing gold. It doesn't name the explorer. Burhān now has the treasure-hunter trait, so the record leans to him; this is a guess.
+      - *Settlement:* colonial efforts at Havana, Morón, Camagüey, Bayamo and Baracoa (Cuba) and in the Bahamas, each about three months old in June 1458. Bonny (since late 1454) and Kabinda (since 1456) in Africa are older.
+      - *The army:* expanded levies, centralised bureaucracy and restricted mercenaries from 3 April 1457; shipwright standard from 16 June 1458. Regiments 13 to 42; manpower 31,800 to 20,700; armouries +16; ships 131 to 144.
+      - *Also:* the Galician war is gone from the save. Saʿd ibn Yūsuf died 10 May 1458 in a hunting accident. The Emperor led a Hajj caravan from 16 September 1454 (a regency began that day) that failed on 23 February 1455. Stability fell from 25.7 to 16.3; the save doesn't say why.
+
+      **From Trent's account.** On 15 March 1457 the tension with the Angevins spurred change at court; the crown raised a much larger force, nearly doubling the land army, with the fleet to follow. On 4 July 1457 another voyage west, four ships. On 24 June 1458 further expeditions and colonisation efforts are starting.
+
+      **Invented colour.**
+      - Aḥmad paying for the army, the armouries working at night, the dīwān no longer laughing.
+      - ʿAbd al-Jalīl's age as "the oldest of the pilots still at sea"; "Nobody aboard missed the joke."
+      - The other ship coming home to the Algarve on the same day. The screen says only that it returned to al-Andalus.
+      - The islanders' name for Cuba.
+      - The court's reactions to the account beyond the screen's "some doubt most of what is said".
+questions:
+  - Stability fell from 25.7 to 16.3 between January 1457 and June 1458. What drove it?
+  - Which explorer brought home the first word of the gold island on 1 January 1458? Burhān?
+  - The save shows the Emperor leading a Hajj caravan in 1454–55 that failed. Do you remember what happened?
