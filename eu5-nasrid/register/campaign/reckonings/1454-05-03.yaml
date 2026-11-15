@@ -4,8 +4,10 @@ summary: >-
   From a save, a screen and Trent's account. On 1 May 1454 the ṭāʾifa of Portugal, a subject since 1411, was
   integrated into the crown: 34 towns and some 800,000 souls. The realm now counts 278 towns and 4.72 million
   people. The Portuguese are its largest people, and Catholics (49%) now outnumber Muslims (46%). The
-  child-queen Fāṭima and her mother stay on as nobles. Ismāʿīl has become a charismatic negotiator. The
-  Mamlūks' war on the Banū Lām is over; its terms are not yet known.
+  child-queen Fāṭima and her mother stay on as nobles. Ismāʿīl gives the new Portuguese the tolerance their
+  southern kin already had, and grants the ʿulamāʾ the right to build madrasas in Portugal and Sicily
+  (Trent). He has become a charismatic negotiator. The Mamlūks' war on the Banū Lām ended with the Mamlūks
+  pushing into the desert and holding Makka and Madīna again (Trent).
 beats:
   - id: 1453-05-19-birth-in-banbaluna
     'on': '1453-05-19'
@@ -89,15 +91,35 @@ beats:
   - id: 1454-05-03-the-mamluk-war-over
     'on': '1454-05-03'
     kind: peace
-    what: The Mamlūks' war on the Banū Lām is over. Al-Andalus fought no battle in its five years
+    what: >-
+      The Mamlūks' war on the Banū Lām ends with the Mamlūks pushing into the desert and holding Makka and
+      Madīna again. Al-Andalus fought no battle in its five years
     threads:
       - mamluk-war-on-lam
     from:
       - save
-    cite: save of 3 May 1454
+      - told
+    cite: save of 3 May 1454; Trent's account
     detail:
       when: the war is gone from the save; it ended some time after March 1453
-      terms: not known
+      outcome: the Mamlūks pushed into the desert and asserted their control over Medina and Mecca (Trent)
+  - id: 1454-05-03-tolerance-for-portugal-madrasas-for-the-ulama
+    'on': '1454-05-03'
+    kind: realm
+    what: >-
+      Ismāʿīl extends to the newly integrated Portuguese the tolerance their southern kin already had, and
+      grants the ʿulamāʾ the right to build madrasas in Portugal and Sicily to spread the faith
+    who:
+      - ismail-ibn-muhammad-ibn-ismail
+    threads:
+      - estates
+      - sicily
+    from:
+      - told
+    cite: Trent's account, November 2026
+    detail:
+      why: the Portuguese of the south already had it and stayed loyal, more so than the Castilians broadly (Trent)
+      date: Trent gives no date; placed with the integration
   - id: 1454-05-03-banks-and-paper
     'on': '1454-05-03'
     kind: realm
@@ -137,6 +159,7 @@ tellings:
       - 1454-05-03-ahmad-ibn-ismail-joins-the-diwan
       - 1454-05-03-the-mamluk-war-over
       - 1454-05-03-banks-and-paper
+      - 1454-05-03-tolerance-for-portugal-madrasas-for-the-ulama
     text: |
       The first year of the Emperor [Ismāʿīl](person:ismail-ibn-muhammad-ibn-ismail) was spent in talk, which was his trade. His father had left the envoys to others. Ismāʿīl received them himself, and wrote to their masters in his own hand, and by Rabīʿ al-Thānī of 858 it was said in the dīwān and outside it that there was no man in the west harder to refuse. His brother [Aḥmad](person:ahmad-ibn-muhammad-ibn-ismail), at the head of the council, went on building. That year it was counting-houses, four of them, and more paper, and fourteen ships.
 
@@ -146,7 +169,9 @@ tellings:
 
       Then the dīwān counted what it had. The realm was now two hundred and seventy-eight towns and more than four and a half million souls, and the count gave the court two things to think about. The first was that the Portuguese, and not the Andalusīs, were now the most numerous people under the Emperor: twenty-eight in every hundred, to the Andalusīs' twenty-five. The second was that the Christians of the realm now outnumbered its Muslims, forty-nine in the hundred to forty-six. It had been so once before, in the years after the north was taken, but not in the last reign: under Muḥammad the Muslims had been the greater part for a quarter of a century. The Emperor, who had lately confirmed the Sicilians in their laws, was not seen to be troubled by it.
 
-      Two smaller things belong to the same season. The lady [Jadīla](person:jadila-bint-saad-ibn-faraj), the old Emperor's widow, who had held her seat on the dīwān for nineteen years, gave it up at sixty, and it went to the Emperor's son [Aḥmad](person:ahmad-ibn-ismail-ibn-muhammad), who was twenty-one and had a head for accounts. And word came from the east that the Mamlūks' war with the Banū Lām was over. It had lasted five years. Al-Andalus had been a party to it from the first day and had not fought in it once.
+      He had his reasons. The Portuguese of the south, of al-Ushbūna and the country round it, had lived under the crown for a generation with their customs and their laws left to them, and they had been loyal. The same could not be said so easily of the Castilians. So Ismāʿīl gave the Portuguese of the north what their kin in the south already had. But he gave the ʿulamāʾ something too. They were granted the right to build madrasas in Burtuqāl and in Sicily, and to teach the faith there to whoever would come and hear it. The Christians were to be left their laws, and the ʿulamāʾ were to be free to preach to them.
+
+      Two smaller things belong to the same season. The lady [Jadīla](person:jadila-bint-saad-ibn-faraj), the old Emperor's widow, who had held her seat on the dīwān for nineteen years, gave it up at sixty, and it went to the Emperor's son [Aḥmad](person:ahmad-ibn-ismail-ibn-muhammad), who was twenty-one and had a head for accounts. And word came from the east that the Mamlūks' war with the Banū Lām was over. It had lasted five years. In the end the armies of Cairo had pushed out into the desert, and Makka and Madīna were again under the sultan's hand. Al-Andalus had been a party to the war from the first day and had not fought in it once.
 
       *O you who have believed, be persistently standing firm for God, witnesses in justice, and do not let the hatred of a people prevent you from being just. Be just; that is nearer to righteousness. And fear God; indeed, God is Acquainted with what you do.*
     behind: |
@@ -155,10 +180,10 @@ tellings:
       - *The count:* 244 towns to 278; 3.90 million souls to 4.72 million. Portuguese 14% to 28%, Andalusī 30% to 25%; Muslim 55% to 46%, Catholic 39% to 49%. In the earlier reckonings Catholics were the larger faith from the 1360s into the 1420s, and Muslims have led since about 1430.
       - *Ismāʿīl:* the screen of 1 April 1454 gives him the trait "charismatic negotiator". Political influence stood at 82 in March 1453 and 39 on the screen.
       - *The dīwān:* Aḥmad ibn Ismāʿīl (88 / 30 / 45) holds the seat Jadīla held from October 1435. She is alive. The save doesn't date the change.
-      - *The Mamlūk war:* gone from the save, so it ended between March 1453 and May 1454. The save doesn't give its terms or say who holds the Holy Cities.
+      - *The Mamlūk war:* gone from the save, so it ended between March 1453 and May 1454. The outcome is from Trent's account.
       - *Building:* banking offices +4, paper +5, jewellers +2; ships 110 to 124; treasury 583 to 692, income 573 a month.
 
-      **From Trent's account.** Portugal is integrated like Barcelona and Valencia were: the removal of autonomy, with the child-queen remaining a noble in the area. Done 1 May 1454.
+      **From Trent's account.** Portugal is integrated like Barcelona and Valencia were: the removal of autonomy, with the child-queen remaining a noble in the area. Done 1 May 1454. Ismāʿīl extends to Portugal the same tolerance he gave Sicily; it was already granted to the Portuguese in the south, and they remained loyal compared to the Castilians broadly. The ʿulamāʾ have been granted the right to build madrasas in Portugal and Sicily to spread the word. The Mamlūk war ended with the Mamlūks pushing into the desert and asserting their control over Medina and Mecca.
 
       **Invented colour.**
       - Ismāʿīl receiving envoys and writing in his own hand, and what was said of him. The screen says only that he involves himself in diplomacy.
@@ -167,6 +192,5 @@ tellings:
       - The dīwān counting, and the Emperor untroubled. The numbers are the save's.
       - Jadīla giving up her seat of her own accord, and the younger Aḥmad's head for accounts (his administration is 88).
       - Word of the peace arriving in this season.
-questions:
-  - How did the Mamlūks' war on the Banū Lām end, and who holds Makka and Madīna now?
-  - Catholics now outnumber Muslims in the realm (49% to 46%). Does the court treat that as a problem, and does Ismāʿīl's tolerance extend to Portugal's laws as it did to Sicily's?
+      - "A generation" for how long the southern Portuguese had kept their customs, and the tolerance and the madrasas placed with the integration; Trent gives no dates.
+      - The closing sentence on what each side was given. It is the chronicler's summary of Trent's account.
