@@ -66,6 +66,29 @@
     Won in 1450 and kept under the crown with a governor at Palermo. Ismāʿīl, who once argued for a ṭāʾifa,
     keeps the governor in 1453, tolerates the island's traditions and confirms many of its laws. Naples holds
     a claim across the strait of Messina.
+- id: galician-nobles-war
+  kind: war
+  title: The Galician Nobles' War
+  state: open
+  from: '1456-05-03'
+  premise: >-
+    The nobles of Galicia rise against Louis, the young ruler of the Ṭāʾifa of Galicia, and al-Andalus with all
+    its subjects stands by him
+  sides:
+    attackers:
+      - the Galician nobles
+    defenders:
+      - Taifa of Galicia
+      - al-Andalus
+      - Taifa of León
+      - Aragon
+      - Taifa of Burgos
+      - Taifa of Pamplona
+      - Taifa of Cuenca
+      - Athens
+      - Negroponte
+      - Cape Verde
+  game: 1st Galician Nobles Civil War
 - id: fate-of-tlemcen
   kind: war
   title: The Fate of Tlemcen

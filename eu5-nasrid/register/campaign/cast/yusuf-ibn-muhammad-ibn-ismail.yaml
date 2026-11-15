@@ -1,0 +1,31 @@
+name: Yūsuf ibn Muḥammad ibn Ismāʿīl
+arabic: يوسف بن محمد بن إسماعيل
+house: Naṣrid
+born: '1416-07-10'
+father: muhammad-ibn-ismail-ibn-saad
+mother: jadila-bint-saad-ibn-faraj
+roles:
+  - the Emperor Ismāʿīl's half-brother, at Gharnāṭa
+  - prominent leader, invited to serve the realm (from 1456)
+traits:
+  - prominent_leader
+stats:
+  adm: 53
+  dip: 65
+  mil: 38
+drives:
+  - from: '1456-12-01'
+    text: >-
+      Known across al-Andalus as a leader who can inspire men by the thousands, and of an ambition that worries
+      those around the Emperor. Ismāʿīl brings him closer to the court anyway.
+    by: trent
+    source: Trent's screen of 1 December 1456
+note: >-
+  Son of the Emperor Muḥammad by the lady Jadīla, born 10 July 1416; full brother of Umm al-Fatḥ and Fāṭima,
+  half-brother of the Emperor Ismāʿīl and of Aḥmad. Lives at Gharnāṭa; two wives, nine children. On 1 December
+  1456 the Emperor invited him to serve, and he holds the distinction of a prominent leader for life (+10 war,
+  +5% morale to the armies), though the court expects his ambition to turn against the throne. (Trent's
+  screens of 1 December 1456; save of 2 January 1457)
+game:
+  id: 33573236
+  name: Joseph

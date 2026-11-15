@@ -1,0 +1,94 @@
+# Written by tools/reckon.py from the save of 1457-01-02. Do not edit: run the tool again,
+# or override a value in 1457-01-02.yaml beside this file.
+date: '1457-01-02'
+source:
+  save: SP_ADU_1457_01_02
+  game: 1.4.7
+realm:
+  towns: 278
+  souls: 4787921
+  treasury: 593
+  income: 735.6
+  expenses: 577.6
+  stability: 25.7
+  prestige: 100
+  regiments: 13
+  ships: 131
+  manpower: 31835
+court:
+  ruler: ismail-ibn-muhammad-ibn-ismail
+  heir: yusuf-ibn-ismail-ibn-muhammad
+  capital: ishbiliyya
+  council:
+  - who: abu-al-hasan-ali-ibn-saad-ibn-ahmad
+    seat: Assimilating the new lands
+  - who: ahmad-ibn-muhammad-ibn-ismail
+    seat: Changing the societal values
+  - who: umm-al-fath-bint-muhammad
+    seat: Integrating the new lands
+  - who: shams-bint-muhammad
+    seat: Integrating the new lands
+  - who: ahmad-ibn-ismail-ibn-muhammad
+    seat: Developing the provinces
+  - who: yusuf-ibn-ahmad-ibn-muhammad
+    seat: Integrating the new lands
+standing:
+  wars:
+  - galician-nobles-war
+  allies:
+  - Mamluks
+  - Morocco
+  - Tunis
+  subjects:
+  - Aragon (taifa)
+  - Taifa of Cuenca (taifa)
+  - Taifa of León (taifa)
+  - Taifa of Burgos (taifa)
+  - Taifa of Pamplona (taifa)
+  - Taifa of Galicia (taifa)
+  - Cape Verde (colonial nation)
+  - Athens (vassal)
+  - Negroponte (vassal)
+  estates:
+  - name: Crown
+  - name: Nobility
+    mood: 40
+  - name: ʿUlamāʾ
+    mood: 50
+  - name: Burghers
+    mood: 60
+  - name: Commoners
+    mood: 55
+  - name: Dhimmī
+    mood: 50
+peoples:
+  cultures:
+    Portuguese: 1342439
+    Andalusi: 1235132
+    Catalan: 797743
+    Castilian: 473686
+    Sicilian: 402536
+    Sephardi: 246575
+  faiths:
+    Catholic: 2336389
+    Sunni: 2207525
+    Jewish: 212675
+    Guanche_religion: 28798
+    Orthodox: 1823
+map:
+  ours:
+  - GRA
+  subjects:
+  - ARA
+  - ABA60
+  - ABA42
+  - ABA49
+  - ABA55
+  - GLC
+  - AAA52
+  - ATH
+  - NEG
+  allies:
+  - MAM
+  - MOR
+  - TUN

@@ -1,0 +1,171 @@
+date: '1457-01-02'
+title: The Prominent Prince
+summary: >-
+  From a save, Trent's screens and his account. A new generation of explorers sailed from Ishbīliya in 1456;
+  Burhān, sent south for the Cape, was swept west. The nobles of Galicia rose against their young ruler and
+  the whole realm took his side. On 1 December the Emperor brought his half-brother Yūsuf, a famous leader of
+  men and a famously ambitious one, closer to the court, and ordered a census of the realm. The Emperor's
+  mother, Magdalena de Borja, died after a fall in April.
+beats:
+  - id: 1456-04-05-death-of-magdalena-de-borja
+    'on': '1456-04-05'
+    kind: death
+    what: Magdalena de Borja, mother of the Emperor Ismāʿīl, dies at seventy-three after a fall down a stair
+    who:
+      - magdalena-de-borja
+      - ismail-ibn-muhammad-ibn-ismail
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 2 January 1457
+  - id: 1456-05-03-the-galician-nobles-rise
+    'on': '1456-05-03'
+    kind: war
+    what: >-
+      The nobles of Galicia rise against Louis, the twenty-year-old ruler of the Ṭāʾifa of Galicia. Al-Andalus
+      and all its subjects stand with him
+    threads:
+      - galician-nobles-war
+    from:
+      - save
+      - seen
+    cite: save of 2 January 1457; Trent's screen of 1 December 1456
+  - id: 1456-06-20-first-battle-against-the-galician-nobles
+    'on': '1456-06-20'
+    kind: battle
+    minor: true
+    what: The first battle against the Galician nobles is won
+    won: true
+    threads:
+      - galician-nobles-war
+    from:
+      - save
+    cite: save of 2 January 1457
+  - id: 1456-06-02-a-new-generation-of-explorers
+    'on': '1456-06-02'
+    kind: world
+    what: >-
+      A new generation of explorers sails from Ishbīliya. Burhān al-Dīn, sent south to find a faster, safer
+      road to the Cape, is swept west into the open ocean
+    who:
+      - burhan-al-din-al-abidin
+      - uways-hakimi
+      - manar-yavantey
+    where:
+      - ishbiliyya
+    threads:
+      - voyages
+    from:
+      - told
+      - seen
+      - save
+    cite: Trent's account and screen; save of 2 January 1457
+    detail:
+      explorers: Burhān al-Dīn al-ʿĀbidīn (20; 60 / 28 / 96), Uways Ḥakīmī (26; 41 / 58 / 33), Ramon Berenguer de Solanell (22; 63 / 58 / 68), and by December Mänär (34; 78 / 52 / 76)
+      January 1457: Burhān in the north equatorial Atlantic, Ramon in the equatorial countercurrent, Mänär off Benin
+  - id: 1456-12-01-yusuf-brought-to-court
+    'on': '1456-12-01'
+    kind: crown
+    what: >-
+      The Emperor brings his half-brother Yūsuf, famed across al-Andalus as a leader of men and feared at court
+      for his ambition, closer to the throne
+    who:
+      - ismail-ibn-muhammad-ibn-ismail
+      - yusuf-ibn-muhammad-ibn-ismail
+    threads:
+      - house
+      - two-princes
+    from:
+      - seen
+      - save
+    cite: Trent's screen of 1 December 1456; save of 2 January 1457
+    detail:
+      the choice: '"Great people belong to this great country", over "It is better to not take risks like that"'
+      what it gives him: prominent leader for life (+10 war, +5% army morale, more political influence)
+      the warning: inviting him "will most likely lead to him attempting to overthrow" the Emperor
+  - id: 1456-12-01-the-census-ordered
+    'on': '1456-12-01'
+    kind: realm
+    what: >-
+      The secretaries urge, and the Emperor orders, a census and survey of the whole realm, as the dīwān of old
+      kept them from Córdoba to Baghdad
+    who:
+      - ismail-ibn-muhammad-ibn-ismail
+    threads:
+      - umayyad-claim
+    from:
+      - seen
+      - save
+    cite: Trent's screen of 1 December 1456; save of 2 January 1457
+    detail:
+      effect: ten years of better tax collection and faster growth, fading over the decade
+  - id: 1457-01-02-the-year-861-opens
+    'on': '1457-01-02'
+    kind: realm
+    minor: true
+    what: >-
+      Four more children born in the house in 1456, and the Emperor's son Aḥmad, on the dīwān, has become a
+      careful keeper of the treasury
+    who:
+      - ahmad-ibn-ismail-ibn-muhammad
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 2 January 1457
+    detail:
+      income: 671 a month to 736
+      stability: 24.1 to 25.7
+tellings:
+  - id: 0861-02-05-of-the-prominent-prince
+    'on': '1457-01-02'
+    title: Of the Prominent Prince
+    book: book-of-the-franks
+    verse: '4:59'
+    who:
+      - ismail-ibn-muhammad-ibn-ismail
+      - yusuf-ibn-muhammad-ibn-ismail
+      - ahmad-ibn-muhammad-ibn-ismail
+      - magdalena-de-borja
+      - burhan-al-din-al-abidin
+    where:
+      - ishbiliyya
+    covers:
+      - 1456-04-05-death-of-magdalena-de-borja
+      - 1456-05-03-the-galician-nobles-rise
+      - 1456-06-02-a-new-generation-of-explorers
+      - 1456-12-01-yusuf-brought-to-court
+      - 1456-12-01-the-census-ordered
+    text: |
+      In Rabīʿ al-Thānī of 860 the Emperor's mother died. [Magdalena](person:magdalena-de-borja) de Borja had come to the court of Gharnāṭa as a Christian bride more than fifty years before. She lived to see her son made Emperor, and she was seventy-three when she fell on a stair and did not get up. It was the second death on a stair in the family in three months, after Aḥmad of Liyūn. Nobody said anything about it aloud.
+
+      A month later the nobles of Galicia rose against their young lord Louis, who had come to his seat at Santiago at twenty and had not yet learned to be feared. Every ṭāʾifa of the north, and the crown with them, declared for him. The first battle went to his side in Rajab.
+
+      That summer a new generation of pilots went down the river from [Ishbīliya](place:ishbiliyya). The old men who had first rounded the Cape were ashore now, and the young ones had their own ideas. [Burhān al-Dīn](person:burhan-al-din-al-abidin), who was twenty, was sent south to find a road to the Cape that was faster than the coast and safer than the open sea. The open sea had its own opinion. His ship was caught by the winds and carried west, and by the turn of the year he was somewhere in the great ocean below the line, far from any coast the books knew. Others followed him: Uways Ḥakīmī, a Catalan named Ramon de Solanell, and a hard Turk called [Mänär](person:manar-yavantey), who had found his way into the Emperor's service and out along the coast of Benin.
+
+      On 3 Muḥarram 861 two matters came before the Emperor. The first was his half-brother. [Yūsuf](person:yusuf-ibn-muhammad-ibn-ismail) was the old Emperor's son by the lady Jadīla, forty years old, with a house at Gharnāṭa, two wives and nine children. Through the years of trouble on the borders his name had gone round the realm as a man the soldiers would follow anywhere. He wanted, by every account, a great deal more than he had. Those closest to [Ismāʿīl](person:ismail-ibn-muhammad-ibn-ismail) told him to leave Yūsuf in Gharnāṭa and keep him there. Ismāʿīl heard them and decided the other way. Great men, he said, belonged to a great country, and a man the army loved was safer at court than away from it. He brought Yūsuf close, gave him the standing of a leader of the realm for the rest of his life, and watched him. So did [Aḥmad](person:ahmad-ibn-muhammad-ibn-ismail).
+
+      The second matter was a happier one. The secretaries of the dīwān asked the Emperor to set the registers in order again, to number the people and their holdings as the dīwān of old had done from Qurṭuba to Baghdād. A ledger honestly kept, they said, was the foundation every strong reign had stood on. Ismāʿīl ordered the survey the same day, and the clerks went out into the provinces with their books.
+
+      *O you who have believed, obey God and obey the Messenger and those in authority among you. And if you disagree over anything, refer it to God and the Messenger, if you should believe in God and the Last Day. That is the best way and best in result.*
+    behind: |
+      **What the save and the screens show.** This note draws on the saves of 7 March 1456 and 2 January 1457, and on Trent's screens of June and December 1456.
+      - *Magdalena de Borja:* died 5 April 1456; the save gives the cause as falling down stairs. Born 1382. Aḥmad of Liyūn died the same way on 4 January 1456.
+      - *Galicia:* a civil war ('1st Galician Nobles Civil War') began 3 May 1456, the Galician nobles against the ṭāʾifa's ruler Louis (born 1435). Al-Andalus and all its subjects are defenders. One battle so far, 20 June 1456, won.
+      - *The explorers:* Burhān al-Dīn al-ʿĀbidīn, Uways Ḥakīmī and Ramon Berenguer de Solanell on Trent's screen of June 1456; Mänär on the screen of December (the save gives his name as Mänär Yavantey, of Turkic culture, malevolent). In January 1457 the save has Burhān exploring the north equatorial Atlantic, Ramon the equatorial countercurrent and Mänär the Benin coast.
+      - *Yūsuf:* the event "A Prominent Figure", 1 December 1456. The save shows he was invited: he carries the prominent-leader modifier from that date. His own abilities are 53 / 65 / 38.
+      - *The census:* the event "A Reckoning of the Realm", same day; the save carries the census-and-cadaster modifier.
+      - *Also:* four births in the house; the Emperor's son Aḥmad gained the fiscal hawk trait. Income 736 a month, stability 25.7.
+
+      **From Trent's account.** A new generation of explorers spreads from Seville in June 1456. Burhān travels south looking for a faster, safer route to the Cape when his ship is swept west.
+
+      **Invented colour.**
+      - Magdalena's arrival as a Christian bride; that nobody said anything aloud about the two falls.
+      - Louis not yet having learned to be feared.
+      - The old pilots ashore and the young with their own ideas; Mänär as a "hard Turk".
+      - Those close to Ismāʿīl advising him to keep Yūsuf at Gharnāṭa (the event says they worry), and Ismāʿīl's reasoning; Aḥmad watching.
+      - The clerks going out with their books.
+questions:
+  - Is the second fall on a stair (Aḥmad of Liyūn in January, Magdalena in April) worth anything to the story, or just the game's dice?
+  - Where did Burhān's westward voyage end up, if anywhere?
