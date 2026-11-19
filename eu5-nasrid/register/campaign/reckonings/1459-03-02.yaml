@@ -1,0 +1,115 @@
+date: '1459-03-02'
+title: The End of the Ṭāʾifa of Qūnka
+summary: >-
+  From a save and Trent's account. On 1 March 1459 the Ṭāʾifa of Qūnka, a subject since 1395, was folded into
+  the crown: twenty towns from Qūnka and Alarcón to Guadalajara and Sigüenza, and some 300,000 souls. Its last
+  shaykh, Abū al-Ḥasan ʿAlī, stays on as a noble. The realm now counts 298 towns and 5.2 million people.
+  Stability rose from 16 to 48. The Angevins have held a claim of conquest on al-Andalus since November 1458.
+  The settlements in Cuba and the Bahamas are a year old.
+beats:
+  - id: 1458-11-15-the-angevins-claim-conquest
+    'on': '1458-11-15'
+    kind: world
+    what: The Angevins, at the head of the Grand Alliance, put on record a claim to make war on al-Andalus for conquest
+    threads:
+      - grand-alliance
+      - europe
+    from:
+      - save
+    cite: save of 2 March 1459
+    detail:
+      the meters: al-Andalus's mastery of Europe has fallen from about 48 to 31 since March 1456, and of the seas risen from 25 to 57; the league may declare war at 75 on either
+  - id: 1458-07-08-a-daughter-for-yusuf-ibn-ahmad
+    'on': '1458-07-08'
+    kind: birth
+    minor: true
+    what: A daughter, Shams, is born to Yūsuf, son of the prince Aḥmad, and Umm al-Fatḥ, the Emperor's daughter
+    who:
+      - yusuf-ibn-ahmad-ibn-muhammad
+    threads:
+      - house
+    from:
+      - save
+    cite: save of 2 March 1459
+  - id: 1459-03-01-qunka-integrated
+    'on': '1459-03-01'
+    kind: land
+    what: >-
+      The Ṭāʾifa of Qūnka, a subject for sixty-three years, is integrated into the crown: twenty towns and some
+      300,000 souls. Its shaykh, Abū al-Ḥasan ʿAlī, stays on as a noble
+    who:
+      - abu-al-hasan-ali-ibn-saad
+      - ismail-ibn-muhammad-ibn-ismail
+    where:
+      - qunka
+    from:
+      - told
+      - save
+    cite: Trent's account; save of 2 March 1459
+    detail:
+      towns: Alarcón, Belmonte, Iniesta, Jorquera, Moya, Requena; Beteta, Cañete, Qūnka, Huete, Molina de Aragón, Pareja; Brihuega, Buitrago, Cobeta, Guadalajara, Sigüenza, Zorita, and two more
+      realm: 278 towns to 298; 4.88 million souls to 5.20 million
+      peoples: Castilians up 4.5 points of the realm's people
+      begun: 2 June 1454
+  - id: 1459-03-02-the-settlements-a-year-old
+    'on': '1459-03-02'
+    kind: realm
+    minor: true
+    what: The settlements in Cuba and the Bahamas are a year old; Kabinda on the Kongo coast two and a half
+    threads:
+      - voyages
+    from:
+      - save
+    cite: save of 2 March 1459
+  - id: 1459-03-02-stability-recovers
+    'on': '1459-03-02'
+    kind: realm
+    minor: true
+    what: The realm's stability recovers from 16 to 48
+    from:
+      - save
+    cite: saves of 24 June 1458 and 2 March 1459
+tellings:
+  - id: 0863-04-26-of-the-end-of-the-taifa-of-qunka
+    'on': '1459-03-02'
+    title: Of the End of the Ṭāʾifa of Qūnka
+    book: book-of-the-franks
+    verse: '8:63'
+    who:
+      - abu-al-hasan-ali-ibn-saad
+      - ismail-ibn-muhammad-ibn-ismail
+    where:
+      - qunka
+      - ishbiliyya
+    covers:
+      - 1458-11-15-the-angevins-claim-conquest
+      - 1459-03-01-qunka-integrated
+      - 1459-03-02-the-settlements-a-year-old
+      - 1459-03-02-stability-recovers
+    text: |
+      [Qūnka](place:qunka) had been a ṭāʾifa for sixty-three years. It had been made in 797 for Saʿd ibn Faraj, a prince of the house, to hold the frontier against Toledo when the frontier still ran through it. His daughter Maryam had ruled it after him as shaykha, married to a son of the Emperor Ismāʿīl, and then her son [Abū al-Ḥasan ʿAlī](person:abu-al-hasan-ali-ibn-saad), a merchant's mind in a frontier lord's house. He was a nephew of the lady Jadīla, the old Emperor's widow. The frontier had long since moved north, to the Pyrenees and the sea. Qūnka was in the middle of the realm, and a court there had become a court for its own sake.
+
+      The dīwān had begun to fold it in on the same pattern as Burtuqāl, a month after Burtuqāl was done. It took nearly five years. On 25 Rabīʿ al-Thānī 863 it was finished: twenty towns, from Qūnka itself and Huete in the hills to Alarcón and Requena on the road to Balansiyya, and north to Guadalajara and Sigüenza, passed under the Emperor's governors. Abū al-Ḥasan ʿAlī was forty-eight. He kept his lands and his rank and came to court as a noble of al-Andalus, which is what he had been all along, the dīwān said, only with fewer ceremonies.
+
+      The realm the dīwān counted that spring was larger than it had ever been, two hundred and ninety-eight towns and more than five million souls. It was quieter, too. The disorder of the year before had passed, though nobody could quite say what had ended it, and the provinces were calmer than they had been in a generation.
+
+      The quiet did not reach beyond the frontier. On 8 Muḥarram 863 the Angevin king, at the head of his league of eight, had put on record his claim to make war on al-Andalus for conquest. In [Ishbīliya](place:ishbiliyya) the clerks noted it. The new regiments drilled. Across the ocean, the first settlers in Cuba had come through their first year.
+
+      *And He brought together their hearts. If you had spent all that is in the earth, you could not have brought their hearts together; but God brought them together. Indeed, He is Exalted in Might and Wise.*
+    behind: |
+      **What the save shows.** This note draws on the saves of 24 June 1458 and 2 March 1459.
+      - *Qūnka:* the ṭāʾifa (subject since 5 August 1395) is gone, and its 20 towns in the Alarcón, Cuenca and Guadalajara provinces are the crown's. Integration began 2 June 1454; Trent dates the end 1 March 1459. Its ruler, Abū al-Ḥasan ʿAlī ibn Saʿd (born 1410), is now in al-Andalus's own court, in the nobles' estate. Towns 278 to 298; souls 4.88 to 5.20 million; Castilians up 4.5 points.
+      - *The Angevins:* a casus belli for conquest against al-Andalus since 15 November 1458. In the Golden Century situation, al-Andalus's European dominance is 31.3 (47.9 in March 1456) and its colonial dominance 57.2 (25.1). The Grand Alliance may declare war when either reaches 75.
+      - *Stability:* 16.3 to 47.7. The save doesn't say why.
+      - *Settlement:* the six colonies in Cuba and the Bahamas are a year along; Kabinda two and a half years. Bonny no longer appears among the settlements.
+      - *Also:* a daughter for Yūsuf ibn Aḥmad and Umm al-Fatḥ (8 July 1458). Abū al-Ḥasan ʿAlī ibn Saʿd (of the dīwān) gained the trait calm; the king of Banbalūna, bold fighter.
+
+      **From Trent's account.** Cuenca is annexed, 1 March 1459.
+
+      **Invented colour.**
+      - Qūnka as a frontier ṭāʾifa against Toledo, and "a court for its own sake". Its founding for Saʿd ibn Faraj in 1395, Maryam's rule and her marriage are on record from earlier saves.
+      - Abū al-Ḥasan ʿAlī as "a merchant's mind" (the save gives him the entrepreneur trait) and the dīwān's remark.
+      - The new regiments drilling.
+questions:
+  - Stability rose from 16 to 48 between June 1458 and March 1459, after falling from 26 to 16 the year before. What happened?
+  - The Angevins now hold a claim of conquest on al-Andalus. Has the court done anything about it, beyond the embassy to Istanbul?
